@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AnalogLocationInputFactory } from "../../../../org/allbinary/game/input/analog/AnalogLocationInputFactory.js";
 
     

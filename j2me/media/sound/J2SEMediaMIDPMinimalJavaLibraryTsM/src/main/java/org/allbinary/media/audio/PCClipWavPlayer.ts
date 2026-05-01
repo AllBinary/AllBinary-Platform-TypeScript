@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
     
@@ -87,15 +91,10 @@ import { MusicThreadPool } from "../../../../org/allbinary/thread/MusicThreadPoo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicPlayer } from "./BasicPlayer.js";
-
+        import { BasicPlayer } from "./BasicPlayer.js";
 import { NullAudioFormat } from "./NullAudioFormat.js";
-
 import { NullClip } from "./NullClip.js";
-
 import { NullControl } from "./NullControl.js";
-
 import { Math } from "./Math.js";
 
 export class PCClipWavPlayer extends BasicPlayer implements LineListener {

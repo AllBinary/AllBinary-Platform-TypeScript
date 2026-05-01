@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 

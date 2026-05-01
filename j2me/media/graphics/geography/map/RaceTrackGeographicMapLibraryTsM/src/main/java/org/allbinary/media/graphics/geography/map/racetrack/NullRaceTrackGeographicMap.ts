@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
@@ -59,11 +63,8 @@ import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
-
+        import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
 import { RaceTrackInfo } from "./RaceTrackInfo.js";
-
 import { RaceTrackData } from "./RaceTrackData.js";
 
 export class NullRaceTrackGeographicMap

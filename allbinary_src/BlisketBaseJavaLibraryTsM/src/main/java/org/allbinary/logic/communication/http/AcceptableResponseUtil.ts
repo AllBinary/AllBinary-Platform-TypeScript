@@ -18,10 +18,14 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
-import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
 
     
 
@@ -42,8 +46,7 @@ import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AcceptableResponseFactory } from "./AcceptableResponseFactory.js";
+        import { AcceptableResponseFactory } from "./AcceptableResponseFactory.js";
 
 export class AcceptableResponseUtil
             extends Object

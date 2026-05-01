@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
@@ -65,8 +69,7 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WeblisketSessionData } from "./WeblisketSessionData.js";
+        import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 export class BasicWeblisketSession
             extends Object

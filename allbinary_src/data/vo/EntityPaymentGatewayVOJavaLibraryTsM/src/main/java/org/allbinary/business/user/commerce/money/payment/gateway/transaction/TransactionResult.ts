@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -66,9 +70,7 @@ import { BasicArrayListD } from "../../../../../../../../../org/allbinary/util/B
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransactionResultInterface } from "./TransactionResultInterface.js";
-
+        import { TransactionResultInterface } from "./TransactionResultInterface.js";
 import { PaymentTransactionKeysFactory } from "./PaymentTransactionKeysFactory.js";
 
 export class TransactionResult

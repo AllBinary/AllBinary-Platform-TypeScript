@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -63,8 +67,7 @@ import { InvalidContentTypeException } from "../../../../../../org/apache/common
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RequestParams } from "./RequestParams.js";
+        import { RequestParams } from "./RequestParams.js";
 
 export class MultipartRequestParams extends RequestParams {
         

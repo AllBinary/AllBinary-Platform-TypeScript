@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { MultiGeographicMapBehavior } from "../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js";
 
     
@@ -60,9 +64,7 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapTopViewLayerBehavior } from "./GeographicMapTopViewLayerBehavior.js";
-
+        import { GeographicMapTopViewLayerBehavior } from "./GeographicMapTopViewLayerBehavior.js";
 import { TopViewCharacterInterface } from "./TopViewCharacterInterface.js";
 
 export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopViewLayerBehavior {

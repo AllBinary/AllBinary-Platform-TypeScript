@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { swing } from "../../../../../../../../../javax/swing.js";
@@ -47,11 +51,8 @@ import { KeySingletonFactory } from "../../../../../../../../../org/allbinary/in
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-
+        import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
 import { KeyStroke } from "./KeyStroke.js";
-
 import { Character } from "./Character.js";
 
 export class KeyCharDefaultComboBoxModelFactory

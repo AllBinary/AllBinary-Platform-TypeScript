@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Displayable } from "../../../../javax/microedition/lcdui/Displayable.js";
 
     
@@ -84,9 +88,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseScalable } from "./BaseScalable.js";
-
+        import { BaseScalable } from "./BaseScalable.js";
 import { ScalableListener } from "./ScalableListener.js";
 
 export class DisplayInfoSingleton

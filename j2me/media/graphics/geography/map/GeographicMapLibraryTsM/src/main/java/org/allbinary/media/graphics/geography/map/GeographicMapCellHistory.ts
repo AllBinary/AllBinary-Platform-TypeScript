@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -78,9 +82,7 @@ import { BasicDecimal } from "../../../../../../org/allbinary/logic/math/BasicDe
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
-
+        import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 export class GeographicMapCellHistory

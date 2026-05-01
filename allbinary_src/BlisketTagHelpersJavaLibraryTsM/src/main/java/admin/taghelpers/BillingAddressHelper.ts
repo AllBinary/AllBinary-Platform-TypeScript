@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../java/lang/Integer.js";
         
 import { HashMap } from "../../java/util/HashMap.js";
@@ -80,8 +84,7 @@ import { StringUtil } from "../../org/allbinary/logic/string/StringUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Table } from "./Table.js";
+        import { Table } from "./Table.js";
 
 export class BillingAddressHelper extends Table {
         

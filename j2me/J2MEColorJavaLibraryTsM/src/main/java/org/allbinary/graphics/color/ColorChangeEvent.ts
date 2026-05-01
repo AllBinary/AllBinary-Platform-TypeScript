@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -39,9 +43,7 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicColorFactory } from "./BasicColorFactory.js";
-
+        import { BasicColorFactory } from "./BasicColorFactory.js";
 import { BasicColor } from "./BasicColor.js";
 
 export class ColorChangeEvent extends AllBinaryEventObject {

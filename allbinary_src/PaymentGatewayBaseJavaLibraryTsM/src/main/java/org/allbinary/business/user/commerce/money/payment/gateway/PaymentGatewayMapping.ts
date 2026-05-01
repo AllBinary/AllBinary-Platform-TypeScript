@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -45,8 +49,7 @@ import { TableMappingInterface } from "../../../../../../../../org/allbinary/dat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
+        import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
 
 export class PaymentGatewayMapping
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { swing } from "../../../../../javax/swing.js";
 
     
@@ -81,25 +85,15 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { JTree } from "./JTree.js";
-
 import { MouseAdapter } from "./MouseAdapter.js";
-
 import { MouseEvent } from "./MouseEvent.js";
-
 import { JPopupMenu } from "./JPopupMenu.js";
-
 import { JMenuItem } from "./JMenuItem.js";
-
 import { JScrollPane } from "./JScrollPane.js";
-
 import { PopupMenuListener } from "./PopupMenuListener.js";
-
 import { PopupMenuEvent } from "./PopupMenuEvent.js";
-
 import { GridLayout } from "./GridLayout.js";
 
 export class WorkAreaJTreeJPanel extends javax.swing.JPanel {

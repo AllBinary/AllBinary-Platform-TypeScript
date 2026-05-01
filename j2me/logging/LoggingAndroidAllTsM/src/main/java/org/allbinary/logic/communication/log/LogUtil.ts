@@ -20,12 +20,16 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
-import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
 
     
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -52,9 +56,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogFormatUtil } from "./LogFormatUtil.js";
-
+        import { LogFormatUtil } from "./LogFormatUtil.js";
 import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil

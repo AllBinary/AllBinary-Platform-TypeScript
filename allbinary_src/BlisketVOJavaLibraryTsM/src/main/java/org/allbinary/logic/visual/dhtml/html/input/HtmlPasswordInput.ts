@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 
@@ -38,9 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HtmlLengthInput } from "./HtmlLengthInput.js";
-
+        import { HtmlLengthInput } from "./HtmlLengthInput.js";
 import { HtmlInputData } from "./HtmlInputData.js";
 
 export class HtmlPasswordInput extends HtmlLengthInput {

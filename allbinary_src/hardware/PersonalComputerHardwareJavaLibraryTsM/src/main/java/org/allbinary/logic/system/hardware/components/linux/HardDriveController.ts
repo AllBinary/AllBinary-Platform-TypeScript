@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { HardDriveControllerInterface } from "../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardDriveControllerInterface.js";
 
     

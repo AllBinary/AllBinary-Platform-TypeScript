@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -48,13 +52,9 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicGeographicMap } from "./BasicGeographicMap.js";
-
+        import { BasicGeographicMap } from "./BasicGeographicMap.js";
 import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPositionFactoryInterface.js";
-
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
-
 import { GeographicMapCellPositionFactoryInitVisitorInterface } from "./GeographicMapCellPositionFactoryInitVisitorInterface.js";
 
 export class BasicGeographicMapCellPositionFactory

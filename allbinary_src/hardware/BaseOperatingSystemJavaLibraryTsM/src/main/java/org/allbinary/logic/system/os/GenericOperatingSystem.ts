@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CharacterSet } from "../../../../../org/allbinary/logic/java/character/CharacterSet.js";
 
     
@@ -51,9 +55,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OperatingSystemInterface } from "./OperatingSystemInterface.js";
-
+        import { OperatingSystemInterface } from "./OperatingSystemInterface.js";
 import { SystemProperties } from "./SystemProperties.js";
 
 export class GenericOperatingSystem

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CategoryFactoryInterface } from "../../../../../org/allbinary/business/category/CategoryFactoryInterface.js";
 
     
@@ -54,9 +58,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CategoryPrivateTree } from "./CategoryPrivateTree.js";
-
+        import { CategoryPrivateTree } from "./CategoryPrivateTree.js";
 import { CategoryModifierTreeInterface } from "./CategoryModifierTreeInterface.js";
 
 export class CategoryModifierTree extends CategoryPrivateTree implements CategoryModifierTreeInterface {

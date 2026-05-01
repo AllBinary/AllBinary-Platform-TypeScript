@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { ContextConfigurationInterface } from "../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
 
     

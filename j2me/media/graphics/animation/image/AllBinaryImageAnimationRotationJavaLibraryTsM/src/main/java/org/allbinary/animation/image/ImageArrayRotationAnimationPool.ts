@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BasicArrayListResetablePool } from "../../../../org/allbinary/logic/util/cache/BasicArrayListResetablePool.js";
 
     
@@ -48,11 +52,8 @@ import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolIn
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageArrayRotationAnimationCacheableInterfaceFactory } from "./ImageArrayRotationAnimationCacheableInterfaceFactory.js";
-
+        import { ImageArrayRotationAnimationCacheableInterfaceFactory } from "./ImageArrayRotationAnimationCacheableInterfaceFactory.js";
 import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
-
 import { ImageArrayRotationAnimationCacheable } from "./ImageArrayRotationAnimationCacheable.js";
 
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {

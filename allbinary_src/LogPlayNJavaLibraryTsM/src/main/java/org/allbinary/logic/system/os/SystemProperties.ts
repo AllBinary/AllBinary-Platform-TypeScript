@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 
 

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../../../java/util/Calendar.js";
@@ -65,8 +69,7 @@ import { TimeUtil } from "../../../../../../../../org/allbinary/time/TimeUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DownloadItemData } from "./DownloadItemData.js";
+        import { DownloadItemData } from "./DownloadItemData.js";
 
 export class DownloadableItem
             extends Object

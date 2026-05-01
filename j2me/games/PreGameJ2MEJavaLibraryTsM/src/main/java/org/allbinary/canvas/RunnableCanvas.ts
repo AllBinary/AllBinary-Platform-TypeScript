@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
             import { Thread } from "../../../java/lang/Thread.js";
         
@@ -79,9 +83,7 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Processor } from "./Processor.js";
-
+        import { Processor } from "./Processor.js";
 import { RunnableCanvasRefreshHelper } from "./RunnableCanvasRefreshHelper.js";
 
 export class RunnableCanvas extends MyCanvas implements RunnableInterface {

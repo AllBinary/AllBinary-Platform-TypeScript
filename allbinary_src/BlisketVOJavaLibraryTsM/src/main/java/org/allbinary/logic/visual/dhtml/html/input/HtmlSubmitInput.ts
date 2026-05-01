@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HtmlValueInput } from "./HtmlValueInput.js";
-
+        import { HtmlValueInput } from "./HtmlValueInput.js";
 import { HtmlInputData } from "./HtmlInputData.js";
 
 export class HtmlSubmitInput extends HtmlValueInput {

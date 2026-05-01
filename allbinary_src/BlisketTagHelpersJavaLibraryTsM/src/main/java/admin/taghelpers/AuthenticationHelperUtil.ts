@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../java/util/Vector.js";
 
     
@@ -63,8 +67,7 @@ import { CommonLabels } from "../../org/allbinary/string/CommonLabels.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AuthenticationHelper } from "./AuthenticationHelper.js";
+        import { AuthenticationHelper } from "./AuthenticationHelper.js";
 
 export class AuthenticationHelperUtil
             extends Object

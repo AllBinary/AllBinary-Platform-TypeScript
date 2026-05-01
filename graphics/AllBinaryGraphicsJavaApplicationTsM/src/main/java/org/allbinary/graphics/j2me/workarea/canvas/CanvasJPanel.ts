@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -140,33 +144,19 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { MouseListener } from "./MouseListener.js";
-
 import { MouseMotionListener } from "./MouseMotionListener.js";
-
 import { KeyListener } from "./KeyListener.js";
-
 import { IntegerDimension } from "./IntegerDimension.js";
-
 import { CanvasTreeLabel } from "./CanvasTreeLabel.js";
-
 import { Color } from "./Color.js";
-
 import { Grid } from "./Grid.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { CanvasDom } from "./CanvasDom.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { Graphics } from "./Graphics.js";
-
 import { MouseEvent } from "./MouseEvent.js";
-
 import { KeyEvent } from "./KeyEvent.js";
 
 export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {

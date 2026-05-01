@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
@@ -65,11 +69,8 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaymentInterface } from "./PaymentInterface.js";
-
+        import { PaymentInterface } from "./PaymentInterface.js";
 import { PaymentData } from "./PaymentData.js";
-
 import { CreditCardType } from "./CreditCardType.js";
 
 export class Payment

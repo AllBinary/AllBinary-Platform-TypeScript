@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BufferedWriter } from "../../../../java/io/BufferedWriter.js";
 
     

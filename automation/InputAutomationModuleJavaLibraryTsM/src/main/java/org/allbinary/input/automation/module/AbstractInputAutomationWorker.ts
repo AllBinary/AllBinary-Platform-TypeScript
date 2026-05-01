@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { CaptureWorkerInterface } from "../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js";
@@ -62,8 +66,7 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationActionInterface } from "./InputAutomationActionInterface.js";
+        import { InputAutomationActionInterface } from "./InputAutomationActionInterface.js";
 
 export class AbstractInputAutomationWorker
             extends Object

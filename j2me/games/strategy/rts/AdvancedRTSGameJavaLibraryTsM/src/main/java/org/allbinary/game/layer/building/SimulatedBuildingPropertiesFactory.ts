@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -57,9 +61,7 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BuildingPropertiesFactory } from "./BuildingPropertiesFactory.js";
-
+        import { BuildingPropertiesFactory } from "./BuildingPropertiesFactory.js";
 import { BuildingLayer } from "./BuildingLayer.js";
 
 export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactory {

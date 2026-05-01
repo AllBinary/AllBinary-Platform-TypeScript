@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -42,9 +46,7 @@ import { Features } from "../../../../org/allbinary/game/configuration/feature/F
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLConfiguration } from "./OpenGLConfiguration.js";
-
+        import { OpenGLConfiguration } from "./OpenGLConfiguration.js";
 import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 
 export class OpenGLFeatureUtil

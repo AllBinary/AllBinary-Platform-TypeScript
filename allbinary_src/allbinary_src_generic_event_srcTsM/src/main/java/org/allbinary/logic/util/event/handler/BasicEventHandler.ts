@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -63,8 +67,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicEventHandlerInterface } from "./BasicEventHandlerInterface.js";
+        import { BasicEventHandlerInterface } from "./BasicEventHandlerInterface.js";
 
 export class BasicEventHandler
             extends Object

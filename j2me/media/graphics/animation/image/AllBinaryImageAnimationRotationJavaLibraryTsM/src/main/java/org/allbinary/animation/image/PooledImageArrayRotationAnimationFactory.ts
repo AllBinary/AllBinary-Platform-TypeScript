@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -63,9 +67,7 @@ import { ImageToRotationImageArrayUtil } from "../../../../org/allbinary/media/i
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
-
+        import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
 import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotationAnimation.js";
 
 export class PooledImageArrayRotationAnimationFactory

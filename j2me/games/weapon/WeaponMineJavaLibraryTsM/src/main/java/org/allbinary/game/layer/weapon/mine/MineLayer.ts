@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
 
     
@@ -69,8 +73,7 @@ import { DropWeaponSound } from "../../../../../../org/allbinary/weapon/media/au
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MineWeaponResources } from "./MineWeaponResources.js";
+        import { MineWeaponResources } from "./MineWeaponResources.js";
 
 export class MineLayer extends SimpleWeaponLayer {
         

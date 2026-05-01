@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
@@ -50,11 +54,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
-
+        import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
-
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class SimpleGeographicMap

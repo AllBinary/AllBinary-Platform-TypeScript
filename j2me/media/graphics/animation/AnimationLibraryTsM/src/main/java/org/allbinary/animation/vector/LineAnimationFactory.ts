@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
@@ -48,8 +52,7 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LineAnimation } from "./LineAnimation.js";
+        import { LineAnimation } from "./LineAnimation.js";
 
 export class LineAnimationFactory
             extends Object

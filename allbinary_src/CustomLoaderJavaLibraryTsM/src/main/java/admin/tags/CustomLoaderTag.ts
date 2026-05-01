@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { Method } from "../../java/lang/reflect/Method.js";
 
     

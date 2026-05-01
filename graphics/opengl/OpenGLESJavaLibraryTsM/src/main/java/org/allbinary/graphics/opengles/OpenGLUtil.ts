@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
@@ -84,9 +88,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLCapabilities } from "./OpenGLCapabilities.js";
-
+        import { OpenGLCapabilities } from "./OpenGLCapabilities.js";
 import { OpenGLLogUtil } from "./OpenGLLogUtil.js";
 
 export class OpenGLUtil

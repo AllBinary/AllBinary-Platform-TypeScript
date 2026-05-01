@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Bundle } from "../../../../../../org/osgi/framework/Bundle.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
@@ -89,9 +93,7 @@ import { StringValidationUtil } from "../../../../../../../org/allbinary/logic/s
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WeblisketSessionInterface } from "./WeblisketSessionInterface.js";
-
+        import { WeblisketSessionInterface } from "./WeblisketSessionInterface.js";
 import { WeblisketSessionData } from "./WeblisketSessionData.js";
 
 export class WeblisketSession

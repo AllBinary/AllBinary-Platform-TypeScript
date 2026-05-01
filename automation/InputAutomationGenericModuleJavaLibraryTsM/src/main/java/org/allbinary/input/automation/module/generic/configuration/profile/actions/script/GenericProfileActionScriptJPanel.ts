@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { MouseEvent } from "../../../../../../../../../../java/awt/event/MouseEvent.js";
 
     
@@ -63,23 +67,14 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { GenericProfileActionScript } from "./GenericProfileActionScript.js";
-
 import { JTree } from "./JTree.js";
-
 import { JScrollPane } from "./JScrollPane.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { MouseAdapter } from "./MouseAdapter.js";
-
 import { JPopupMenu } from "./JPopupMenu.js";
-
 import { JComponent } from "./JComponent.js";
 
 export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {

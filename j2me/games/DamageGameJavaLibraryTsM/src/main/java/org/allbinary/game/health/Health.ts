@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
 
     
@@ -45,11 +49,8 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HealthInterface } from "./HealthInterface.js";
-
+        import { HealthInterface } from "./HealthInterface.js";
 import { NullHealthListener } from "./NullHealthListener.js";
-
 import { HealthListenerInterface } from "./HealthListenerInterface.js";
 
 export class Health

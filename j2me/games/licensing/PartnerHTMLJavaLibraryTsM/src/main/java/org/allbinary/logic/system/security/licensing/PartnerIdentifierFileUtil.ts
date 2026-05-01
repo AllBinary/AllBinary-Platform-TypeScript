@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { ResourceUtil } from "../../../../../../org/allbinary/data/resource/ResourceUtil.js";
 
     

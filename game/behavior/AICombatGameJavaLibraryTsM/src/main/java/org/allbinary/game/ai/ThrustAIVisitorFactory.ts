@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,8 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ThrustAIVisitor } from "./ThrustAIVisitor.js";
+        import { ThrustAIVisitor } from "./ThrustAIVisitor.js";
 
 export class ThrustAIVisitorFactory
             extends Object

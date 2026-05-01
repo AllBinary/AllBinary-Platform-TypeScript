@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { MutableTreeNode } from "../../../../../../../javax/swing/tree/MutableTreeNode.js";
 
     
@@ -39,9 +43,7 @@ import { MutableTreeNode } from "../../../../../../../javax/swing/tree/MutableTr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { EventObject } from "./EventObject.js";
-
+        import { EventObject } from "./EventObject.js";
 import { MyGraphicItemEventSource } from "./MyGraphicItemEventSource.js";
 
 export class MyGraphicItemEvent extends java.util.EventObject {

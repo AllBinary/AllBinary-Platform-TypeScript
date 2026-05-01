@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GPoint } from "./GPoint.js";
-
+        import { GPoint } from "./GPoint.js";
 import { PointFactory } from "./PointFactory.js";
 
 export class Line

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
@@ -53,23 +57,14 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SimpleGeographicMap } from "./SimpleGeographicMap.js";
-
+        import { SimpleGeographicMap } from "./SimpleGeographicMap.js";
 import { GeographicMapInterface } from "./GeographicMapInterface.js";
-
 import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-
 import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPositionFactoryInterface.js";
-
 import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
-
 import { GeographicMapCellPositionBaseFactory } from "./GeographicMapCellPositionBaseFactory.js";
-
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
-
 import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
-
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
 export class BasicGeographicMap extends SimpleGeographicMap implements GeographicMapInterface {

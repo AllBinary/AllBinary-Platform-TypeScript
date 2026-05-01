@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
 
     
@@ -54,8 +58,7 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DestroyedEventHandler } from "./DestroyedEventHandler.js";
+        import { DestroyedEventHandler } from "./DestroyedEventHandler.js";
 
 export class DestroyedEvent extends AllBinaryEventObject {
         

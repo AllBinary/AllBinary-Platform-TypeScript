@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
             import { Thread } from "../../../../../../../../../java/lang/Thread.js";
@@ -55,8 +59,7 @@ import { TimeDelayHelper } from "../../../../../../../../../org/allbinary/time/T
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
+        import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
 
 export class KeyboardInputAutomationProcessor
             extends Object

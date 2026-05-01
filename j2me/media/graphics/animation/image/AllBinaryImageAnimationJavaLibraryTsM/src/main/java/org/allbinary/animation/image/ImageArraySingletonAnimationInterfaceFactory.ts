@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -54,8 +58,7 @@ import { IndexedAnimationToImageArrayUtil } from "../../../../org/allbinary/imag
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
+        import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
 
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {
         

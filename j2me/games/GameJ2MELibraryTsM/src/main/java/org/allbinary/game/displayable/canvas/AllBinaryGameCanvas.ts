@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
             import { Integer } from "../../../../../java/lang/Integer.js";
         
@@ -410,63 +414,34 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryGameCanvasInterface } from "./AllBinaryGameCanvasInterface.js";
-
+        import { AllBinaryGameCanvasInterface } from "./AllBinaryGameCanvasInterface.js";
 import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
-
 import { MenuListener } from "./MenuListener.js";
-
 import { PopupMenuInterface } from "./PopupMenuInterface.js";
-
 import { GameCanvasRunnable } from "./GameCanvasRunnable.js";
-
 import { GameCanvasPauseRunnable } from "./GameCanvasPauseRunnable.js";
-
 import { EndGameInfo } from "./EndGameInfo.js";
-
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
-
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
-
 import { DemoGameBehavior } from "./DemoGameBehavior.js";
-
 import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
-
 import { BaseGameBehavior } from "./BaseGameBehavior.js";
-
 import { InGameMenuBehavior } from "./InGameMenuBehavior.js";
-
 import { FormUtil } from "./FormUtil.js";
-
 import { BasicPopupMenuPaintable } from "./BasicPopupMenuPaintable.js";
-
 import { PopupMenuInputProcessor } from "./PopupMenuInputProcessor.js";
-
 import { GameLimitedCommandTextItemArrayFactory } from "./GameLimitedCommandTextItemArrayFactory.js";
-
 import { PopupCommandFormInputProcessor } from "./PopupCommandFormInputProcessor.js";
-
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
 import { GameProcessor } from "./GameProcessor.js";
-
 import { CheatGameInputProcessor } from "./CheatGameInputProcessor.js";
-
 import { EndGameProcessor } from "./EndGameProcessor.js";
-
 import { StartIntermissionProcessor } from "./StartIntermissionProcessor.js";
-
 import { EndGamePaintable } from "./EndGamePaintable.js";
-
 import { NullDemoPaintable } from "./NullDemoPaintable.js";
-
 import { DemoPaintableInterface } from "./DemoPaintableInterface.js";
-
 import { GameCanvasInputProcessor } from "./GameCanvasInputProcessor.js";
-
 import { FormInputProcessor } from "./FormInputProcessor.js";
-
 import { SaveHighScoreRunnable } from "./SaveHighScoreRunnable.js";
 
 export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGameCanvasInterface, GameCanvasRunnableInterface, MenuListener, IntermissionCompositeInterface, IntermissionEnableListenerInterface, PopupMenuInterface, DisplayChangeEventListener {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -51,8 +55,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Group } from "./Group.js";
+        import { Group } from "./Group.js";
 
 export class GroupFactory
             extends Object

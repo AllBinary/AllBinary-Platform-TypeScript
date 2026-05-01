@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { View } from "../../../../android/view/View.js";
 
     
@@ -39,8 +43,7 @@ import { View } from "../../../../android/view/View.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseViewWrapper } from "./BaseViewWrapper.js";
+        import { BaseViewWrapper } from "./BaseViewWrapper.js";
 
 export class ViewWrapper extends BaseViewWrapper {
         

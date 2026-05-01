@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -90,8 +94,7 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
+        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
 export class LazyImageRotationAnimation extends RotationAnimation {
         

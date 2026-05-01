@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { V } from "../../../org/allbinary/graph/V.js";
 
     

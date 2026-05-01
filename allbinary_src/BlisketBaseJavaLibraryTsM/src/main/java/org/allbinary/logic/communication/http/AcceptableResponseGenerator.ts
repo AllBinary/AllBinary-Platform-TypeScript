@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HttpServletRequest } from "../../../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AcceptableResponseUtil } from "./AcceptableResponseUtil.js";
+        import { AcceptableResponseUtil } from "./AcceptableResponseUtil.js";
 
 export class AcceptableResponseGenerator
             extends Object

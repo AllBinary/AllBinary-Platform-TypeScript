@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,11 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameInitializationInterfaceFactoryInterface } from "./GameInitializationInterfaceFactoryInterface.js";
-
+        import { GameInitializationInterfaceFactoryInterface } from "./GameInitializationInterfaceFactoryInterface.js";
 import { BaseGameInitialization } from "./BaseGameInitialization.js";
-
 import { GameInitializationInterface } from "./GameInitializationInterface.js";
 
 export class BasicBuildGameInitializerFactory

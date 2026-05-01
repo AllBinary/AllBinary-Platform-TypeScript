@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Enumeration } from "../../../../../../java/util/Enumeration.js";
@@ -59,8 +63,7 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbeHttpRequestInfoData } from "./AbeHttpRequestInfoData.js";
+        import { AbeHttpRequestInfoData } from "./AbeHttpRequestInfoData.js";
 
 export class AbeHttpRequestInfo
             extends Object

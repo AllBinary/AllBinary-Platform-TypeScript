@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { StreetAddressesEntity } from "../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ShippingAddressesEntity } from "./ShippingAddressesEntity.js";
+        import { ShippingAddressesEntity } from "./ShippingAddressesEntity.js";
 
 export class ShippingAddressesEntityFactory
             extends Object

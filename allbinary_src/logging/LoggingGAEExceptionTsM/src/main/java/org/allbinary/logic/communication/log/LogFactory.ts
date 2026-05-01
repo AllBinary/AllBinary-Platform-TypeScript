@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -39,8 +43,7 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Log } from "./Log.js";
+        import { Log } from "./Log.js";
 
 export class LogFactory
             extends Object

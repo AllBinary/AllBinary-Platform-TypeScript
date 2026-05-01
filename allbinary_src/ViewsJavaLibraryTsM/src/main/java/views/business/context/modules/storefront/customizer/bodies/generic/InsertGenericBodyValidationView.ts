@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -72,8 +76,7 @@ import { StoreCustomizerComponentUtil } from "../../../../../../../../views/busi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GenericBodyCustomizerView } from "./GenericBodyCustomizerView.js";
+        import { GenericBodyCustomizerView } from "./GenericBodyCustomizerView.js";
 
 export class InsertGenericBodyValidationView extends GenericBodyCustomizerView implements ValidationComponentInterface {
         

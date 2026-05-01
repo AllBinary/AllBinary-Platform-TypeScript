@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AdvancedPlayerOwnedRTSLayers } from "../../../../../org/allbinary/game/layer/AdvancedPlayerOwnedRTSLayers.js";
 
     
@@ -98,8 +102,7 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BuildingRTSFormInput } from "./BuildingRTSFormInput.js";
+        import { BuildingRTSFormInput } from "./BuildingRTSFormInput.js";
 
 export class BuildingAdvancedRTSFormInput extends BuildingRTSFormInput {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -45,9 +49,7 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TickableLayerManager } from "./TickableLayerManager.js";
-
+        import { TickableLayerManager } from "./TickableLayerManager.js";
 import { TickableInterface } from "./TickableInterface.js";
 
 export class TickableLayerProcessor extends LayerProcessor {

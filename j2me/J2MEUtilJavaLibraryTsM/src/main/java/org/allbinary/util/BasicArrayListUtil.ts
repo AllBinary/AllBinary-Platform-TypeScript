@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
 import { MyRandomFactory } from "../../../org/allbinary/game/rand/MyRandomFactory.js";
 
@@ -50,11 +54,8 @@ import { CommonPhoneStrings } from "../../../org/allbinary/string/CommonPhoneStr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImmutableBasicArrayList } from "./ImmutableBasicArrayList.js";
-
+        import { ImmutableBasicArrayList } from "./ImmutableBasicArrayList.js";
 import { BasicArrayList } from "./BasicArrayList.js";
-
 import { BasicArrayListD } from "./BasicArrayListD.js";
 
 export class BasicArrayListUtil

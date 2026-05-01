@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfo } from "./TransformInfo.js";
-
+        import { TransformInfo } from "./TransformInfo.js";
 import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 export class CustomTransformInfo extends TransformInfo implements TransformInfoInterface {

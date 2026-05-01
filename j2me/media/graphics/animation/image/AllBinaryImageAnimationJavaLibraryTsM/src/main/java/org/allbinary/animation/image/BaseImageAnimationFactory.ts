@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -66,8 +70,7 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnimationFactoryInitializationVisitor } from "./AnimationFactoryInitializationVisitor.js";
+        import { AnimationFactoryInitializationVisitor } from "./AnimationFactoryInitializationVisitor.js";
 
 export class BaseImageAnimationFactory
             extends Object

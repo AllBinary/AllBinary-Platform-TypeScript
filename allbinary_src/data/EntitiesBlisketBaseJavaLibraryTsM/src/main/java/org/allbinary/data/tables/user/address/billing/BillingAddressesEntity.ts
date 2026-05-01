@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { StreetAddressesEntity } from "../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js";
 
     

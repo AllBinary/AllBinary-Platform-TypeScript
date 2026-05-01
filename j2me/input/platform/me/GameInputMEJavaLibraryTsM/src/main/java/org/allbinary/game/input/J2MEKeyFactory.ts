@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,13 +40,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameKeyFactory } from "./GameKeyFactory.js";
-
+        import { GameKeyFactory } from "./GameKeyFactory.js";
 import { GameKey } from "./GameKey.js";
-
 import { InputFactory } from "./InputFactory.js";
-
 import { Input } from "./Input.js";
 
 export class J2MEKeyFactory

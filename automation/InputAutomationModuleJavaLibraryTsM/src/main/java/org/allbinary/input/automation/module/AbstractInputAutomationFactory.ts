@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { URL } from "../../../../../java/net/URL.js";
 
     
@@ -48,9 +52,7 @@ import { JavaHelpUtil } from "../../../../../org/allbinary/logic/java/help/JavaH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
-
+        import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
 import { JPanel } from "./JPanel.js";
 
 export class AbstractInputAutomationFactory extends InputAutomationModuleFactoryInterface {

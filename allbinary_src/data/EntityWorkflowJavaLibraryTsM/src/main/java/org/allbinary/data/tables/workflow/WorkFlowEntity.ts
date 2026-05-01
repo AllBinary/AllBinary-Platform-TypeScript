@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -81,8 +85,7 @@ import { ServiceClientInformationInterfaceFactory } from "../../../../../org/all
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WorkFlowEntityInterface } from "./WorkFlowEntityInterface.js";
+        import { WorkFlowEntityInterface } from "./WorkFlowEntityInterface.js";
 
 export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface {
         

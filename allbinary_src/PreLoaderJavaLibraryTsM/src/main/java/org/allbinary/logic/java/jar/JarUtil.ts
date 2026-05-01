@@ -18,9 +18,14 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
         
-import { IOException } from "../../../../../java/io/IOException.js";
+            import { System } from "../../../../../java/lang/System.js";
+        
+
+//import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { URL } from "../../../../../java/net/URL.js";

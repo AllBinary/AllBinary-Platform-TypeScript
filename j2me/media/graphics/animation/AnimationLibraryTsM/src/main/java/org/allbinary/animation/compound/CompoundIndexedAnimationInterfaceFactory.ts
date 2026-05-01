@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
@@ -48,9 +52,7 @@ import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAni
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceFactory.js";
-
+        import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceFactory.js";
 import { CompoundIndexedAnimation } from "./CompoundIndexedAnimation.js";
 
 export class CompoundIndexedAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {

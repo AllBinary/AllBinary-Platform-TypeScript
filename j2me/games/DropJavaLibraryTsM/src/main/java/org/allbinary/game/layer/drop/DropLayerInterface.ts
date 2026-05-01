@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { PickedUpLayerInterface } from "../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js";
 
     

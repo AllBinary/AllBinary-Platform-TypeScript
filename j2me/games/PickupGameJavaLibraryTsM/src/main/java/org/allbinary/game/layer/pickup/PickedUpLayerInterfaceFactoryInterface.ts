@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -42,8 +46,7 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PickedUpLayerType } from "./PickedUpLayerType.js";
+        import { PickedUpLayerType } from "./PickedUpLayerType.js";
 
 export interface PickedUpLayerInterfaceFactoryInterface {
         

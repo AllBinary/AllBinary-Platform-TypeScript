@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -54,9 +58,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ShippingMethodsInterface } from "./ShippingMethodsInterface.js";
-
+        import { ShippingMethodsInterface } from "./ShippingMethodsInterface.js";
 import { ShippingMethodsFactory } from "./ShippingMethodsFactory.js";
 
 export class ShippingMethods

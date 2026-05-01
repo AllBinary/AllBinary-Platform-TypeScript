@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -59,8 +63,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
+        import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
 
 export class NullGameCanvasRunnable
             extends Object

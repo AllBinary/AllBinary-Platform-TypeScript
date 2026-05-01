@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { WeaponLayerCircularPool } from "../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js";
 
     
@@ -42,9 +46,7 @@ import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MineCountedPickedUpLayerInterfaceFactory } from "./MineCountedPickedUpLayerInterfaceFactory.js";
-
+        import { MineCountedPickedUpLayerInterfaceFactory } from "./MineCountedPickedUpLayerInterfaceFactory.js";
 import { MineLayerFactory } from "./MineLayerFactory.js";
 
 export class MineLayerCircularStaticPool

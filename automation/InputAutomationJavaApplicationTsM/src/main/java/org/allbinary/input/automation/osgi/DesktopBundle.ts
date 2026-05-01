@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { swing } from "../../../../../javax/swing.js";
 
     
@@ -51,8 +55,7 @@ import { BasicTextJDialog } from "../../../../../org/allbinary/gui/dialog/BasicT
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JDialog } from "./JDialog.js";
+        import { JDialog } from "./JDialog.js";
 
 export class DesktopBundle
             extends Object

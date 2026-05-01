@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -50,8 +54,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CategoryHierarchyInterface } from "./CategoryHierarchyInterface.js";
+        import { CategoryHierarchyInterface } from "./CategoryHierarchyInterface.js";
 
 export class CategoryHierarchy
             extends Object

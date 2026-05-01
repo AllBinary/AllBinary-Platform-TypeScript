@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { GL10 } from "../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -31,8 +35,7 @@ import { PlatformTextureBaseFactory } from "../../../org/allbinary/platform/open
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLGLUUtils } from "./OpenGLGLUUtils.js";
+        import { OpenGLGLUUtils } from "./OpenGLGLUUtils.js";
 
 export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
         

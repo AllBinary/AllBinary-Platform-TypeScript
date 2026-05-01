@@ -4,7 +4,11 @@
 
 
 
-            import { System } from "../../../../../../java/lang/System";
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../../java/lang/System.js";
         
 import { BufferedReader } from "../../../../../../java/io/BufferedReader.js";
 
@@ -48,9 +52,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Process } from "./Process.js";
-
+        import { Process } from "./Process.js";
 import { Runtime } from "./Runtime.js";
 
 export class RuntimeEnvironmentVariables

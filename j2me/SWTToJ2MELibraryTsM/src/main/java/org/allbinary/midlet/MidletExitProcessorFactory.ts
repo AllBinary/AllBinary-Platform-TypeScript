@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
 
     
@@ -48,8 +52,7 @@ import { Processor } from "../../../org/allbinary/canvas/Processor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MidletExitProcessor } from "./MidletExitProcessor.js";
+        import { MidletExitProcessor } from "./MidletExitProcessor.js";
 
 export class MidletExitProcessorFactory
             extends Object

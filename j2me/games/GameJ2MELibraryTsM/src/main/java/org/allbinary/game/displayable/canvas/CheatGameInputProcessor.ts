@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameKeyFactory } from "../../../../../org/allbinary/game/input/GameKeyFactory.js";
 
     
@@ -69,8 +73,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
 
 export class CheatGameInputProcessor extends PlayerGameInput {
         

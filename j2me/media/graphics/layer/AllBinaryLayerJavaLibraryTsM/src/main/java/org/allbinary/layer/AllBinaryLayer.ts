@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
@@ -41,7 +45,7 @@ import { RectangleFactory } from "../../../org/allbinary/graphics/RectangleFacto
 import { OpenGLFeatureUtil } from "../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js";
 
     
-import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../org/allbinary/TsUtil.js";
 
     
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
@@ -83,9 +87,7 @@ import { ViewPositionEvent } from "../../../org/allbinary/view/event/ViewPositio
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Layer } from "./Layer.js";
-
+        import { Layer } from "./Layer.js";
 import { LayerInterface } from "./LayerInterface.js";
 
 export class AllBinaryLayer extends Layer implements LayerInterface {

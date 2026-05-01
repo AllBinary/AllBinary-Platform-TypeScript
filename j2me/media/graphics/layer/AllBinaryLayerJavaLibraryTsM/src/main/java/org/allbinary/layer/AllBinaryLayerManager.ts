@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { LayerManagerEvent } from "../../../org/allbinary/layer/event/LayerManagerEvent.js";
 
     
@@ -42,13 +46,9 @@ import { LayerManagerEventHandler } from "../../../org/allbinary/layer/event/Lay
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerManager } from "./LayerManager.js";
-
+        import { LayerManager } from "./LayerManager.js";
 import { LayerProcessor } from "./LayerProcessor.js";
-
 import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
-
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
 export class AllBinaryLayerManager extends LayerManager {

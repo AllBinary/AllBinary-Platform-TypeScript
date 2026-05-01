@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -65,9 +69,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NumberInSameGroupSequence } from "./NumberInSameGroupSequence.js";
-
+        import { NumberInSameGroupSequence } from "./NumberInSameGroupSequence.js";
 import { NumberOnOwnGroupSequenceAI } from "./NumberOnOwnGroupSequenceAI.js";
 
 export class NumberOnOwnGroupSequenceAIFactory

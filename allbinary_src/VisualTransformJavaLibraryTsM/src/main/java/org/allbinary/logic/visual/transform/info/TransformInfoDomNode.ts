@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { DomNodeHelper } from "../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
 
     
@@ -60,11 +64,8 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoInterface } from "./TransformInfoInterface.js";
-
+        import { TransformInfoInterface } from "./TransformInfoInterface.js";
 import { TransformInfoData } from "./TransformInfoData.js";
-
 import { TransformInfo } from "./TransformInfo.js";
 
 export class TransformInfoDomNode

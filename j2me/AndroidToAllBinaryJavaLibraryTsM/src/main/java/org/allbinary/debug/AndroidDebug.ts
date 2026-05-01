@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
             import { Long } from "../../../java/lang/Long.js";
         
@@ -43,8 +47,7 @@ import { Debug } from "../../../android/os/Debug.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DebugInterface } from "./DebugInterface.js";
+        import { DebugInterface } from "./DebugInterface.js";
 
 export class AndroidDebug
             extends Object

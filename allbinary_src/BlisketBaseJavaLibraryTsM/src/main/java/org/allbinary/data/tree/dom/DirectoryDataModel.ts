@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { DomDocumentHelper } from "../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -66,9 +70,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DomNodeInterface } from "./DomNodeInterface.js";
-
+        import { DomNodeInterface } from "./DomNodeInterface.js";
 import { FileDomDataModel } from "./FileDomDataModel.js";
 
 export class DirectoryDataModel

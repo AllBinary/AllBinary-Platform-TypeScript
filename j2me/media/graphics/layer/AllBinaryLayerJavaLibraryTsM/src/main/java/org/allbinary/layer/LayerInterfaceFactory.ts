@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../java/util/Hashtable.js";
@@ -62,11 +66,8 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Layer } from "./Layer.js";
-
+        import { Layer } from "./Layer.js";
 import { LayerInterfaceFactoryInterface } from "./LayerInterfaceFactoryInterface.js";
-
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
 export class LayerInterfaceFactory

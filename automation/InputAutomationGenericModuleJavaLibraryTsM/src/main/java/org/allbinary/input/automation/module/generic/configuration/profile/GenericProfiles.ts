@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { DataOutputStream } from "../../../../../../../../java/io/DataOutputStream.js";
 
     
@@ -84,11 +88,8 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GenericProfilesData } from "./GenericProfilesData.js";
-
+        import { GenericProfilesData } from "./GenericProfilesData.js";
 import { GenericProfileData } from "./GenericProfileData.js";
-
 import { GenericProfile } from "./GenericProfile.js";
 
 export class GenericProfiles

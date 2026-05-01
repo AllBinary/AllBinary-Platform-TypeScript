@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { awt } from "../../../../java/awt.js";
@@ -71,29 +75,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { JLayeredPane } from "./JLayeredPane.js";
-
 import { ButtonGroup } from "./ButtonGroup.js";
-
 import { Graphics } from "./Graphics.js";
-
 import { JCheckBox } from "./JCheckBox.js";
-
 import { JButton } from "./JButton.js";
-
 import { JRadioButton } from "./JRadioButton.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
 
 export class MirrorImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

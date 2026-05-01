@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
@@ -83,11 +87,8 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PathGeneratorInterface } from "./PathGeneratorInterface.js";
-
+        import { PathGeneratorInterface } from "./PathGeneratorInterface.js";
 import { PathCacheFactory } from "./PathCacheFactory.js";
-
 import { PathFindingInfo } from "./PathFindingInfo.js";
 
 export class StaticPathGenerator

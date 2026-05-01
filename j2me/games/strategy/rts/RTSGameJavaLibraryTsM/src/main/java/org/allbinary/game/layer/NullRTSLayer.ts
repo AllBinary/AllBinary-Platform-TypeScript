@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DestroyedEvent } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js";
 
     
@@ -66,11 +70,8 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
-
+        import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
-
 import { PlayerOwnedRTSLayers } from "./PlayerOwnedRTSLayers.js";
 
 export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {

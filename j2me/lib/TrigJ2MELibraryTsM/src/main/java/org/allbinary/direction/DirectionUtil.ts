@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Angle } from "../../../org/allbinary/math/Angle.js";
 
     
@@ -42,9 +46,7 @@ import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DirectionFactory } from "./DirectionFactory.js";
-
+        import { DirectionFactory } from "./DirectionFactory.js";
 import { Direction } from "./Direction.js";
 
 export class DirectionUtil

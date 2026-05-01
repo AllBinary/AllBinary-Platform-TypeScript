@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { InitInfoEntity } from "../../../../org/allbinary/business/init/InitInfoEntity.js";
 
     

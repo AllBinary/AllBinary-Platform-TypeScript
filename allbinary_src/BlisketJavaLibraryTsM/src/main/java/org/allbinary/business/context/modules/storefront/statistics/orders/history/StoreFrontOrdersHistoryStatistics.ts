@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
@@ -59,9 +63,7 @@ import { OrderHistoryEntityInterface } from "../../../../../../../../../org/allb
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreFrontOrdersHistoryStatisticsInterface } from "./StoreFrontOrdersHistoryStatisticsInterface.js";
-
+        import { StoreFrontOrdersHistoryStatisticsInterface } from "./StoreFrontOrdersHistoryStatisticsInterface.js";
 import { StoreFrontOrdersHistoryStatisticsData } from "./StoreFrontOrdersHistoryStatisticsData.js";
 
 export class StoreFrontOrdersHistoryStatistics

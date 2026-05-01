@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -57,8 +61,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OSGIServiceUtil } from "./OSGIServiceUtil.js";
+        import { OSGIServiceUtil } from "./OSGIServiceUtil.js";
 
 export class InputAutomationServiceConsumer
             extends Object

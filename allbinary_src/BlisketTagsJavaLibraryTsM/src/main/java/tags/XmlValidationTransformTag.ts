@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../java/lang/Object.js";
+
+
+        
 import { Method } from "../java/lang/reflect/Method.js";
 
     
@@ -51,8 +55,7 @@ import { LicensingException } from "../org/allbinary/logic/system/security/licen
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformTag } from "./TransformTag.js";
+        import { TransformTag } from "./TransformTag.js";
 
 export class XmlValidationTransformTag extends TransformTag {
         

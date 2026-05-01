@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { PreLogUtil } from "../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
@@ -51,8 +55,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DatabaseEncoder } from "./DatabaseEncoder.js";
+        import { DatabaseEncoder } from "./DatabaseEncoder.js";
 
 export class WeakCrypt
             extends Object

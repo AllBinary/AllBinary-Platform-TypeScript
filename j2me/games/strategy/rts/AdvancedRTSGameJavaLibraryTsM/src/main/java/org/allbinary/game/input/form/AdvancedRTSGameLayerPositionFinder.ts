@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { LayerPositionFinderInterface } from "../../../../../org/allbinary/game/input/LayerPositionFinderInterface.js";
 
     

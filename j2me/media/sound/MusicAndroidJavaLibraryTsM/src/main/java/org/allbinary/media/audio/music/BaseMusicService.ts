@@ -4,7 +4,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
             import { Thread } from "../../../../../java/lang/Thread.js";
         
@@ -58,8 +62,7 @@ import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MusicStrings } from "./MusicStrings.js";
+        import { MusicStrings } from "./MusicStrings.js";
 
 export class BaseMusicService extends Service {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { StreetAddressData } from "../../../org/allbinary/business/user/address/StreetAddressData.js";
 
     

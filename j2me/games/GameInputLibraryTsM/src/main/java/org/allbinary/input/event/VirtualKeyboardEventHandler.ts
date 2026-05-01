@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -56,9 +60,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VirtualKeyboardEvent } from "./VirtualKeyboardEvent.js";
-
+        import { VirtualKeyboardEvent } from "./VirtualKeyboardEvent.js";
 import { VirtualKeyboardEventListenerInterface } from "./VirtualKeyboardEventListenerInterface.js";
 
 export class VirtualKeyboardEventHandler extends BasicEventHandler {

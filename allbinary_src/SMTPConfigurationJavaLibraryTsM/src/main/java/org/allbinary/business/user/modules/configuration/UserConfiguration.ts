@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -54,8 +58,7 @@ import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
+        import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
 
 export class UserConfiguration
             extends Object

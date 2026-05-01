@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -45,8 +49,7 @@ import { DropCellPositionHistory } from "../../../../org/allbinary/media/graphic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js";
+        import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js";
 
 export class RTSGameLayerPositionFinder
             extends Object

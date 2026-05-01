@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../java/util/Hashtable.js";
@@ -53,17 +57,11 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameTypeFactory } from "./GameTypeFactory.js";
-
+        import { GameTypeFactory } from "./GameTypeFactory.js";
 import { GameMode } from "./GameMode.js";
-
 import { PlayerTypesFactory } from "./PlayerTypesFactory.js";
-
 import { GameInfoData } from "./GameInfoData.js";
-
 import { GameType } from "./GameType.js";
-
 import { PlayerType } from "./PlayerType.js";
 
 export class GameInfo

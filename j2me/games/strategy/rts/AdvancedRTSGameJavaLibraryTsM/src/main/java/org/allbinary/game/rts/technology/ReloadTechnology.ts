@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { RTSInterface } from "../../../../../org/allbinary/game/layer/RTSInterface.js";
 
     
@@ -39,8 +43,7 @@ import { RTSInterface } from "../../../../../org/allbinary/game/layer/RTSInterfa
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UnitTechnologySingletonFactory } from "./UnitTechnologySingletonFactory.js";
+        import { UnitTechnologySingletonFactory } from "./UnitTechnologySingletonFactory.js";
 
 export class ReloadTechnology
             extends Object

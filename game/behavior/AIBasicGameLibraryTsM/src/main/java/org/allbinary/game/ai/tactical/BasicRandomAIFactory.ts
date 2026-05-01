@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -60,8 +64,7 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicRandomAI } from "./BasicRandomAI.js";
+        import { BasicRandomAI } from "./BasicRandomAI.js";
 
 export class BasicRandomAIFactory
             extends Object

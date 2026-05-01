@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -66,8 +70,7 @@ import { BasicGeographicMap } from "../../../../../../../org/allbinary/media/gra
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseDropCellPositionGenerator } from "./BaseDropCellPositionGenerator.js";
+        import { BaseDropCellPositionGenerator } from "./BaseDropCellPositionGenerator.js";
 
 export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGenerator {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AdvertisementAreaData } from "../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js";
 
     

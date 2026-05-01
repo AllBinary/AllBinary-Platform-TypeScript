@@ -10,6 +10,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { InetAddress } from "../../../../../java/net/InetAddress.js";
 
     
@@ -46,8 +50,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbSqlBean } from "./AbSqlBean.js";
+        import { AbSqlBean } from "./AbSqlBean.js";
 
 export class AbDatabaseManagement extends AbSqlBean {
         

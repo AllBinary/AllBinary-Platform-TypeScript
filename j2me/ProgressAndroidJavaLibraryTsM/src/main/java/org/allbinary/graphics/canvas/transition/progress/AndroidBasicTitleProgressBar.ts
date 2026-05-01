@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
@@ -119,15 +123,10 @@ import { NullRunnable } from "../../../../../../org/allbinary/thread/NullRunnabl
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProgressCanvas } from "./ProgressCanvas.js";
-
+        import { ProgressCanvas } from "./ProgressCanvas.js";
 import { ShowTitleProgressBarRunnable } from "./ShowTitleProgressBarRunnable.js";
-
 import { DismissTitleProgressBarRunnable } from "./DismissTitleProgressBarRunnable.js";
-
 import { TitleProgressBarSetProgressRunnable } from "./TitleProgressBarSetProgressRunnable.js";
-
 import { TitleProgressBarPortionSetProgressRunnable } from "./TitleProgressBarPortionSetProgressRunnable.js";
 
 export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {

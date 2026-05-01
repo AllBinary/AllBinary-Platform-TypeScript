@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { TouchScreenTypeFactory } from "../../../../org/allbinary/input/motion/button/TouchScreenTypeFactory.js";
 
     

@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     

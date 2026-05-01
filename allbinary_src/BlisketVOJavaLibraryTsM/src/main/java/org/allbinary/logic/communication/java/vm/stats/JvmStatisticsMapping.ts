@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -45,9 +49,7 @@ import { TableMappingInterface } from "../../../../../../../org/allbinary/data/t
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JvmStatistics } from "./JvmStatistics.js";
-
+        import { JvmStatistics } from "./JvmStatistics.js";
 import { JvmStatisticsData } from "./JvmStatisticsData.js";
 
 export class JvmStatisticsMapping extends JvmStatistics implements TableMappingInterface {

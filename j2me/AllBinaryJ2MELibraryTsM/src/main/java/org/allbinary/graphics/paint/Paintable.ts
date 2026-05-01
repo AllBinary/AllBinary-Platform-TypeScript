@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -42,8 +46,7 @@ import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaintableInterface } from "./PaintableInterface.js";
+        import { PaintableInterface } from "./PaintableInterface.js";
 
 export class Paintable
             extends Object

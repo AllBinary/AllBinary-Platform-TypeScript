@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -44,8 +48,7 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TechEventListenerInterface } from "./TechEventListenerInterface.js";
+        import { TechEventListenerInterface } from "./TechEventListenerInterface.js";
 
 export class TechEventHandler extends BasicEventHandler {
         

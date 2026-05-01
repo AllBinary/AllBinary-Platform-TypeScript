@@ -20,6 +20,10 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -38,9 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogFormatUtil } from "./LogFormatUtil.js";
-
+        import { LogFormatUtil } from "./LogFormatUtil.js";
 import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil

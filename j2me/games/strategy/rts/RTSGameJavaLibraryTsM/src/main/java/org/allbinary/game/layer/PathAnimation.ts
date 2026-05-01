@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -72,15 +76,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LinePathAnimation } from "./LinePathAnimation.js";
-
+        import { LinePathAnimation } from "./LinePathAnimation.js";
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
-
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
-
 import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
-
 import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
 
 export class PathAnimation extends Animation {

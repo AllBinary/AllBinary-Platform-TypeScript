@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
 
     
@@ -31,9 +35,7 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RotationAnimation } from "./RotationAnimation.js";
-
+        import { RotationAnimation } from "./RotationAnimation.js";
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class NullRotationAnimation extends RotationAnimation {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Money } from "../../../../../../../org/allbinary/business/user/commerce/money/Money.js";
 
     

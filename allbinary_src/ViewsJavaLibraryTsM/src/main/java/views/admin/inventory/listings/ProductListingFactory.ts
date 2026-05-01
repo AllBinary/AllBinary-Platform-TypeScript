@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -45,9 +49,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProductListing } from "./ProductListing.js";
-
+        import { ProductListing } from "./ProductListing.js";
 import { ProductListingInterface } from "./ProductListingInterface.js";
 
 export class ProductListingFactory

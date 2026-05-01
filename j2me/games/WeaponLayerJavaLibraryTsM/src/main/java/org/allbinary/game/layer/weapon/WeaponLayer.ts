@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -96,8 +100,7 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableWeaponBehavior } from "./CollidableWeaponBehavior.js";
+        import { CollidableWeaponBehavior } from "./CollidableWeaponBehavior.js";
 
 export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterface {
         

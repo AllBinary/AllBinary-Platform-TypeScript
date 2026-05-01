@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { CellPositionFactory } from "../../../../../../../org/allbinary/graphics/CellPositionFactory.js";
 
     
@@ -42,9 +46,7 @@ import { GeographicMapCellPositionTracking } from "../../../../../../../org/allb
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPositionEvent } from "./GeographicMapCellPositionEvent.js";
-
+        import { GeographicMapCellPositionEvent } from "./GeographicMapCellPositionEvent.js";
 import { GeographicMapCellPositionEventHandler } from "./GeographicMapCellPositionEventHandler.js";
 
 export class GeographicMapCellPositionEventUtil

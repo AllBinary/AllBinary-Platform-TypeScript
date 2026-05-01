@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -54,15 +58,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
-
+        import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
 import { CommonButtons } from "./CommonButtons.js";
-
 import { TouchButton } from "./TouchButton.js";
-
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
-
 import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
 
 export class TouchButtonsMappingPaintable extends Paintable {

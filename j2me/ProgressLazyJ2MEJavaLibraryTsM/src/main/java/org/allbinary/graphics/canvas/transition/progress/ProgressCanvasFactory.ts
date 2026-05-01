@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -45,9 +49,7 @@ import { PaintableInterface } from "../../../../../../org/allbinary/graphics/pai
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LazyProgressCanvas } from "./LazyProgressCanvas.js";
-
+        import { LazyProgressCanvas } from "./LazyProgressCanvas.js";
 import { ProgressCanvas } from "./ProgressCanvas.js";
 
 export class ProgressCanvasFactory

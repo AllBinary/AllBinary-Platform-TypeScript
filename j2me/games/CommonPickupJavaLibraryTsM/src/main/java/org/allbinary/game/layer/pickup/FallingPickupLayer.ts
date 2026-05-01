@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -66,9 +70,7 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PickupLayer } from "./PickupLayer.js";
-
+        import { PickupLayer } from "./PickupLayer.js";
 import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
 
 export class FallingPickupLayer extends PickupLayer implements TickableInterface {

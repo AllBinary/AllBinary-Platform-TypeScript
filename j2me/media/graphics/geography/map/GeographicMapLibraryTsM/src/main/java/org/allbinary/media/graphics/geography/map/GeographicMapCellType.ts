@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -44,8 +48,7 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
+        import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
 
 export class GeographicMapCellType
             extends Object

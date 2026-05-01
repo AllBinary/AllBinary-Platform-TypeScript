@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformDocument } from "./TransformDocument.js";
-
+        import { TransformDocument } from "./TransformDocument.js";
 import { TransformDocumentInterface } from "./TransformDocumentInterface.js";
 
 export class TransformDocumentFactory

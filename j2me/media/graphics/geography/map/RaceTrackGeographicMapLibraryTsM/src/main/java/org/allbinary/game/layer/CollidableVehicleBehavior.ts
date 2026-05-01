@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { PickedUpLayerInterface } from "../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js";
 
     
@@ -57,13 +61,9 @@ import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
-
+        import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
 import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
-
 import { VehicleProperties } from "./VehicleProperties.js";
-
 import { VehicleFrictionProperties } from "./VehicleFrictionProperties.js";
 
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {

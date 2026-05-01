@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -42,9 +46,7 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VectorAnimation } from "./VectorAnimation.js";
-
+        import { VectorAnimation } from "./VectorAnimation.js";
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class AdjustedVectorAnimation extends VectorAnimation {

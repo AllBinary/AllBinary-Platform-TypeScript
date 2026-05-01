@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { PaymentProcessorInterface } from "../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterface.js";
 
     

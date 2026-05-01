@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NullPaintable } from "./NullPaintable.js";
-
+        import { NullPaintable } from "./NullPaintable.js";
 import { Paintable } from "./Paintable.js";
 
 export class PaintableFactory

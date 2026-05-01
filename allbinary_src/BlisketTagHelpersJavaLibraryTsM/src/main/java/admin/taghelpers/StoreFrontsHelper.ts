@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -72,8 +76,7 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTable } from "./BasicTable.js";
+        import { BasicTable } from "./BasicTable.js";
 
 export class StoreFrontsHelper extends BasicTable {
         

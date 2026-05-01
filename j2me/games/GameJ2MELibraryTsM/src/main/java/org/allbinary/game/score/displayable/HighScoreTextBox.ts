@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -99,8 +103,7 @@ import { InApplicationPurchaseFactory } from "../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HighScoreUtil } from "./HighScoreUtil.js";
+        import { HighScoreUtil } from "./HighScoreUtil.js";
 
 export class HighScoreTextBox extends CustomTextBox {
         

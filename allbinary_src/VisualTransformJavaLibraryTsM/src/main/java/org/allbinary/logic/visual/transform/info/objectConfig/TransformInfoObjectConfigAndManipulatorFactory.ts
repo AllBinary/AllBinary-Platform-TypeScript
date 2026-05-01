@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { DomDocumentHelper } from "../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -60,15 +64,10 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoObjectConfigAndManipulatorFactoryBase } from "./TransformInfoObjectConfigAndManipulatorFactoryBase.js";
-
+        import { TransformInfoObjectConfigAndManipulatorFactoryBase } from "./TransformInfoObjectConfigAndManipulatorFactoryBase.js";
 import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
-
 import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
-
 import { TransformInfoObjectConfig } from "./TransformInfoObjectConfig.js";
-
 import { GenericStoreTransformInfoObjectConfig } from "./GenericStoreTransformInfoObjectConfig.js";
 
 export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInfoObjectConfigAndManipulatorFactoryBase {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CollidableInterfaceCompositeInterface } from "../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js";
 
     
@@ -48,9 +52,7 @@ import { LayerProcessor } from "../../../../../org/allbinary/layer/LayerProcesso
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableInterfaceLayerManager } from "./CollidableInterfaceLayerManager.js";
-
+        import { CollidableInterfaceLayerManager } from "./CollidableInterfaceLayerManager.js";
 import { AllBinaryCollisionManager } from "./AllBinaryCollisionManager.js";
 
 export class CollidableInterfaceLayerProcessor extends LayerProcessor {

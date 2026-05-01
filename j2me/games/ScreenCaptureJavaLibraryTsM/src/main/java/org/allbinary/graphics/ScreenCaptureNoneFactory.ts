@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,8 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScreenCapture } from "./ScreenCapture.js";
+        import { ScreenCapture } from "./ScreenCapture.js";
 
 export class ScreenCaptureNoneFactory
             extends Object

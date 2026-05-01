@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
@@ -45,11 +49,8 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UserRole } from "./UserRole.js";
-
+        import { UserRole } from "./UserRole.js";
 import { BasicUserRole } from "./BasicUserRole.js";
-
 import { UserRoleFactory } from "./UserRoleFactory.js";
 
 export class UserRoleB extends UserRole {

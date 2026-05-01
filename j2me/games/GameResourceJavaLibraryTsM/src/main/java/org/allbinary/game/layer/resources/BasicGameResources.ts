@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameConfigurationCentral } from "../../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
 
     
@@ -51,8 +55,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameGraphicsResourceUtil } from "./GameGraphicsResourceUtil.js";
+        import { GameGraphicsResourceUtil } from "./GameGraphicsResourceUtil.js";
 
 export class BasicGameResources
             extends Object

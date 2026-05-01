@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -51,8 +55,7 @@ import { AbeClientInformationInterface } from "../../../../../../../../org/allbi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
+        import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
 
 export interface UserEmailEventsConfigurationInterface {
         

@@ -3,6 +3,10 @@
         
 
 
+            import { Object } from "java/lang/Object.js";
+
+
+        
 import { Assertions } from "org/junit/jupiter/api/Assertions.js";
 
     

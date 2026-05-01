@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -53,8 +57,7 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicAI } from "./BasicAI.js";
+        import { BasicAI } from "./BasicAI.js";
 
 export class KeyPressesAI extends BasicAI {
         
@@ -90,7 +93,7 @@ this.keys= new Array(hashtable.length);
     var index: number = 0;
 index < size; index++)
         {
-this.keys[index]= hashtable.get(objectArray[index]! as Object); as Integer;
+this.keys[index]= hashtable.get(objectArray[index]! as Object) as Integer;
     
 }
 

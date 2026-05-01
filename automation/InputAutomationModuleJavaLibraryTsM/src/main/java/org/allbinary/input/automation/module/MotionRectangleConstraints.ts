@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -47,9 +51,7 @@ import { MotionRectangleConstraintsInterface } from "../../../../../org/allbinar
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Dimension } from "./Dimension.js";
-
+        import { Dimension } from "./Dimension.js";
 import { Rectangle } from "./Rectangle.js";
 
 export class MotionRectangleConstraints

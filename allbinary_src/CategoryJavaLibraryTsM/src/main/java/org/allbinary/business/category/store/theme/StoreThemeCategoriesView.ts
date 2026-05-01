@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { CategoryInterface } from "../../../../../../org/allbinary/business/category/CategoryInterface.js";
 
     
@@ -48,9 +52,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
-
+        import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 import { StoreThemeCategoryView } from "./StoreThemeCategoryView.js";
 
 export class StoreThemeCategoriesView

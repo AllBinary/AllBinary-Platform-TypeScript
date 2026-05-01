@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -108,8 +112,7 @@ import { Node } from "../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ModifyTable } from "./ModifyTable.js";
+        import { ModifyTable } from "./ModifyTable.js";
 
 export class CategoryRequestHelper extends ModifyTable {
         
@@ -139,7 +142,7 @@ public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 var pageContext = pageContext
 
         try {
-            this.request= pageContext!.getRequest(); as HttpServletRequest;
+            this.request= pageContext!.getRequest() as HttpServletRequest;
     
 this.pageContext= pageContext;
     
@@ -250,7 +253,7 @@ this.setCategoryLoader(requestNode);
 ;
     
 this.categoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getRootInstanceFromNode(categoryNode); as CategoryInterface;
+                            getRootInstanceFromNode(categoryNode) as CategoryInterface;
     
 this.categoryInterface= this.categoryLoaderInterface!.get(this.categoryInterface);
     
@@ -285,7 +288,7 @@ this.logUtil!.putF("Loaded Parent Category", this, "getXmlData()");
                                     }
                                 
 this.childCategoryInterface= new StoreCategoryFactory(this.transformInfoInterface).
-                            getInstance(childCategoryNode); as CategoryInterface;
+                            getInstance(childCategoryNode) as CategoryInterface;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPER))

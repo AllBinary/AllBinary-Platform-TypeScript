@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -51,8 +55,7 @@ import { PaymentProcessorComponent } from "../../views/admin/payment/PaymentProc
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TagHelper } from "./TagHelper.js";
+        import { TagHelper } from "./TagHelper.js";
 
 export class PaymentProcessHelper extends TagHelper {
         

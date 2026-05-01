@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
 
     

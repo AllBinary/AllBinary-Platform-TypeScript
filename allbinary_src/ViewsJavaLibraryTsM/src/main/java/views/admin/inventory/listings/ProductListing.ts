@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../java/util/HashMap.js";
@@ -140,8 +144,7 @@ import { InventorySearchUtil } from "../../../../views/generic/inventory/Invento
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProductListingInterface } from "./ProductListingInterface.js";
+        import { ProductListingInterface } from "./ProductListingInterface.js";
 
 export class ProductListing
             extends Object

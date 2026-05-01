@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -338,37 +342,21 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
-
+        import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
 import { MenuListener } from "./MenuListener.js";
-
 import { DemoPaintableInterface } from "./DemoPaintableInterface.js";
-
 import { NullGameCanvas } from "./NullGameCanvas.js";
-
 import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
-
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
-
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
-
 import { DemoGameStartupRunnable } from "./DemoGameStartupRunnable.js";
-
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
 import { GameRunnable } from "./GameRunnable.js";
-
 import { FormUtil } from "./FormUtil.js";
-
 import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
-
 import { DemoLimitedCommandTextItemArrayFactory } from "./DemoLimitedCommandTextItemArrayFactory.js";
-
 import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
-
 import { DemoCanvasProgressUtil } from "./DemoCanvasProgressUtil.js";
-
 import { DemoGameRunnable } from "./DemoGameRunnable.js";
 
 export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener, DemoPaintableInterface {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { FileNotFoundException } from "../../../../java/io/FileNotFoundException.js";
 
     
@@ -45,8 +49,7 @@ import { AbFileNativeUtil } from "../../../../org/allbinary/logic/io/file/AbFile
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFileInputStream } from "./AbFileInputStream.js";
+        import { AbFileInputStream } from "./AbFileInputStream.js";
 
 export class AbFileLocalInputStream extends AbFileInputStream {
         

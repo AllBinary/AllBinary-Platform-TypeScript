@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FilePathData } from "../../../../../org/allbinary/logic/io/file/FilePathData.js";
 
     
@@ -45,11 +49,8 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbPathData } from "./AbPathData.js";
-
+        import { AbPathData } from "./AbPathData.js";
 import { AbFilePath } from "./AbFilePath.js";
-
 import { AbPath } from "./AbPath.js";
 
 export class PathUtil

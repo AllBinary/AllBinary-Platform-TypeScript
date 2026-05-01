@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -45,8 +49,7 @@ import { AnimationBehavior } from "../../../../org/allbinary/animation/Animation
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageAnimation } from "./ImageAnimation.js";
+        import { ImageAnimation } from "./ImageAnimation.js";
 
 export class AdjustedImageAnimation extends ImageAnimation {
         

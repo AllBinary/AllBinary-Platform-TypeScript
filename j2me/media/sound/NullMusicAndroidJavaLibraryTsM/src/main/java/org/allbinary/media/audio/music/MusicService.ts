@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BaseMusicService } from "../../../../../org/allbinary/media/audio/music/BaseMusicService.js";
 
     

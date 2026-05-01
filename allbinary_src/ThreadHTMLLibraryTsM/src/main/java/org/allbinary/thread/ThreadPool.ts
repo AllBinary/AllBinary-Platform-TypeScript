@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -50,13 +54,9 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NullRunnable } from "./NullRunnable.js";
-
+        import { NullRunnable } from "./NullRunnable.js";
 import { ThreadPoolStrings } from "./ThreadPoolStrings.js";
-
 import { ThreadObjectUtil } from "./ThreadObjectUtil.js";
-
 import { PriorityRunnable } from "./PriorityRunnable.js";
 
 export class ThreadPool
@@ -64,7 +64,7 @@ export class ThreadPool
          {
         
 
-    public NORMAL_PRIORITY: number = 5;
+    public static readonly NORMAL_PRIORITY: number = 5;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

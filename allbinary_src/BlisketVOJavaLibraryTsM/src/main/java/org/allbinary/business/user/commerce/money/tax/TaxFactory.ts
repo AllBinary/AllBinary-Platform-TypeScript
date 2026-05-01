@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { DynamicObjectData } from "../../../../../../../org/allbinary/business/DynamicObjectData.js";
 
     

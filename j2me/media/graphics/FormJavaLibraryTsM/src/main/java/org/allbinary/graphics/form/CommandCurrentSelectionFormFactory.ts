@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -51,13 +55,9 @@ import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomI
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScrollSelectionFormNoneFactory } from "./ScrollSelectionFormNoneFactory.js";
-
+        import { ScrollSelectionFormNoneFactory } from "./ScrollSelectionFormNoneFactory.js";
 import { CommandCurrentSelectionForm } from "./CommandCurrentSelectionForm.js";
-
 import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
-
 import { FormType } from "./FormType.js";
 
 export class CommandCurrentSelectionFormFactory

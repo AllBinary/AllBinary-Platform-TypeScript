@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,11 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Sound } from "./Sound.js";
-
+        import { Sound } from "./Sound.js";
 import { PlayerComposite } from "./PlayerComposite.js";
-
 import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
 
 export class CompositeSound extends Sound {

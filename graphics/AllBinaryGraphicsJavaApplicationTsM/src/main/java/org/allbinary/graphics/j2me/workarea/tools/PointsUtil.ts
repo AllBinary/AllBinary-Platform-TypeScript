@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { VectorRotationGenerator } from "../../../../../../org/allbinary/animation/VectorRotationGenerator.js";
 
     

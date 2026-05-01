@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CompleteMotionGestureInputEvent } from "../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js";
 
     
@@ -90,8 +94,7 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonsMappingPaintable } from "./TouchButtonsMappingPaintable.js";
+        import { TouchButtonsMappingPaintable } from "./TouchButtonsMappingPaintable.js";
 
 export class TouchButtonsPaintableComposite extends ProcessPaintable implements CompleteMotionGestureInputEventListenerInterface {
         

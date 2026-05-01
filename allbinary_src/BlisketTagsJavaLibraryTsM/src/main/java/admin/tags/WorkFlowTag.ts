@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { WorkFlowHelperFactory } from "../../admin/taghelpers/WorkFlowHelperFactory.js";
 
     
@@ -39,8 +43,7 @@ import { WorkFlowHelperFactory } from "../../admin/taghelpers/WorkFlowHelperFact
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TableTag } from "./TableTag.js";
+        import { TableTag } from "./TableTag.js";
 
 export class WorkFlowTag extends TableTag {
         

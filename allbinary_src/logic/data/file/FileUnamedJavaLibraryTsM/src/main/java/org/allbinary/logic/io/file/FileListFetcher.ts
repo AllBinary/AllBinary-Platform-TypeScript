@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 import { DirectoryBooleanFileVisitor } from "../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js";
 
@@ -56,8 +60,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFile } from "./AbFile.js";
+        import { AbFile } from "./AbFile.js";
 
 export class FileListFetcher
             extends Object

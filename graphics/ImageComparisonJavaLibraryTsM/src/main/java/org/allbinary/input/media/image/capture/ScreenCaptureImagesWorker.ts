@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
             import { Thread } from "../../../../../../java/lang/Thread.js";
@@ -61,15 +65,10 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CaptureWorkerInterface } from "./CaptureWorkerInterface.js";
-
+        import { CaptureWorkerInterface } from "./CaptureWorkerInterface.js";
 import { ScreenScavangerRobot } from "./ScreenScavangerRobot.js";
-
 import { ProcessingFrameIndexFactory } from "./ProcessingFrameIndexFactory.js";
-
 import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
-
 import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
 
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {

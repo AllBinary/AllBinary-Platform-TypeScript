@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../java/lang/Long.js";
         
 import { Calendar } from "../../java/util/Calendar.js";
@@ -77,8 +81,7 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ModifyTable } from "./ModifyTable.js";
+        import { ModifyTable } from "./ModifyTable.js";
 
 export class CustomItemsRequestHelper extends ModifyTable {
         

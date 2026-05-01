@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { SimpleTiledLayer } from "../../../../../javax/microedition/lcdui/game/SimpleTiledLayer.js";
 
     

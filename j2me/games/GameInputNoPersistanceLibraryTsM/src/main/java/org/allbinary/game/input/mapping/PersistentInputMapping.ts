@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
@@ -81,8 +85,7 @@ import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputToGameKeyMapping } from "./InputToGameKeyMapping.js";
+        import { InputToGameKeyMapping } from "./InputToGameKeyMapping.js";
 
 export class PersistentInputMapping
             extends Object

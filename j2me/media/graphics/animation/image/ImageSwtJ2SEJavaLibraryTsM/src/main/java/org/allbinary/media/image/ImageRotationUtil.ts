@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -60,8 +64,7 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageSwtRotationUtil } from "./ImageSwtRotationUtil.js";
+        import { ImageSwtRotationUtil } from "./ImageSwtRotationUtil.js";
 
 export class ImageRotationUtil
             extends Object

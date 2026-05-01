@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CategoryComponent } from "../../../../../org/allbinary/business/category/CategoryComponent.js";
 
     

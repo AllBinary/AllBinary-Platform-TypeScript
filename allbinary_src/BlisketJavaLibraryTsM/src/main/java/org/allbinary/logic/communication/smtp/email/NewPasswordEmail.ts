@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { UserInterface } from "../../../../../../org/allbinary/business/user/UserInterface.js";
 
     

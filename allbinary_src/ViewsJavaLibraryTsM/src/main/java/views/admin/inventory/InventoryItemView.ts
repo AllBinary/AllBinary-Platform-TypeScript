@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
@@ -105,8 +109,7 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InventoryUploadMediaUtil } from "./InventoryUploadMediaUtil.js";
+        import { InventoryUploadMediaUtil } from "./InventoryUploadMediaUtil.js";
 
 export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         

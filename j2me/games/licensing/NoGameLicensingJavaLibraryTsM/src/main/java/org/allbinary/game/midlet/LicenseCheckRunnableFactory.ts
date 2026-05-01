@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ABRunnable } from "../../../../org/allbinary/thread/ABRunnable.js";
 
     
@@ -42,8 +46,7 @@ import { NullABRunnable } from "../../../../org/allbinary/thread/NullABRunnable.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpecialDemoGameMidlet } from "./SpecialDemoGameMidlet.js";
+        import { SpecialDemoGameMidlet } from "./SpecialDemoGameMidlet.js";
 
 export class LicenseCheckRunnableFactory
             extends Object

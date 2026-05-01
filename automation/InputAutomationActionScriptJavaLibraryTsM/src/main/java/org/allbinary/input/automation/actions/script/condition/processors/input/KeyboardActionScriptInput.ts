@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../../../java/lang/Long.js";
@@ -82,15 +86,10 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
-
+        import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
 import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
-
 import { KeyboardActionScriptInputJPanel } from "./KeyboardActionScriptInputJPanel.js";
-
 import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
-
 import { KeyboardInputAutomationProcessor } from "./KeyboardInputAutomationProcessor.js";
 
 export class KeyboardActionScriptInput extends BasicProfileActionScriptInput implements KeyboardActionScriptInputInterface {

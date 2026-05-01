@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -63,9 +67,7 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-
+        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 import { ImageAnimation } from "./ImageAnimation.js";
 
 export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends BaseImageAnimationFactory {

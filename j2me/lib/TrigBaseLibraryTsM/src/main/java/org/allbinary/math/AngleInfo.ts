@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -45,11 +49,8 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AngleIncrementInfo } from "./AngleIncrementInfo.js";
-
+        import { AngleIncrementInfo } from "./AngleIncrementInfo.js";
 import { AngleIncrementInfoFactory } from "./AngleIncrementInfoFactory.js";
-
 import { FrameUtil } from "./FrameUtil.js";
 
 export class AngleInfo

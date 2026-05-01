@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -48,8 +52,7 @@ import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosit
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+        import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class GeographicMapDirectionUtil
             extends Object

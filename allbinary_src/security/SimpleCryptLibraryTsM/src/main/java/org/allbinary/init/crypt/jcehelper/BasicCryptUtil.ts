@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -48,8 +52,7 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CryptInterface } from "./CryptInterface.js";
+        import { CryptInterface } from "./CryptInterface.js";
 
 export class BasicCryptUtil
             extends Object

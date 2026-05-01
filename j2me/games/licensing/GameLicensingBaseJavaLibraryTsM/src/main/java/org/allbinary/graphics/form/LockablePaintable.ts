@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -51,8 +55,7 @@ import { LockedUtil } from "../../../../org/allbinary/logic/system/security/lice
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ItemPaintable } from "./ItemPaintable.js";
+        import { ItemPaintable } from "./ItemPaintable.js";
 
 export class LockablePaintable extends ItemPaintable {
         

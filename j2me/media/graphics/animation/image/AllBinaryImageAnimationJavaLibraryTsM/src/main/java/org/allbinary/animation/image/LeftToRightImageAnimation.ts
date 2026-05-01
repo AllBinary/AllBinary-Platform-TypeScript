@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -51,8 +55,7 @@ import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageSegmentAnimation } from "./ImageSegmentAnimation.js";
+        import { ImageSegmentAnimation } from "./ImageSegmentAnimation.js";
 
 export class LeftToRightImageAnimation extends ImageSegmentAnimation {
         

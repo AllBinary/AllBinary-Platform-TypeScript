@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -51,9 +55,7 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLImageFactory } from "./OpenGLImageFactory.js";
-
+        import { OpenGLImageFactory } from "./OpenGLImageFactory.js";
 import { OpenGLESGL10Image } from "./OpenGLESGL10Image.js";
 
 export class OpenGLESGL10ImageFactory extends OpenGLImageFactory {

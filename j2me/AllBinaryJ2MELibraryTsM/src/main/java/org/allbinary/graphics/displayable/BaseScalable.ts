@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,8 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScalableListener } from "./ScalableListener.js";
+        import { ScalableListener } from "./ScalableListener.js";
 
 export class BaseScalable
             extends Object

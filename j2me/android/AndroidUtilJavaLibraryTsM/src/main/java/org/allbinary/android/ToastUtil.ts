@@ -6,6 +6,10 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { Context } from "../../../android/content/Context.js";
@@ -41,8 +45,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MakeToast } from "./MakeToast.js";
+        import { MakeToast } from "./MakeToast.js";
 
 export class ToastUtil
             extends Object

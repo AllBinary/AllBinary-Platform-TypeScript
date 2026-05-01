@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../../../../java/util/Calendar.js";
@@ -77,8 +81,7 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransactionResultEntityInterface } from "./TransactionResultEntityInterface.js";
+        import { TransactionResultEntityInterface } from "./TransactionResultEntityInterface.js";
 
 export class TransactionResultEntity extends AbSqlBean implements TransactionResultEntityInterface {
         

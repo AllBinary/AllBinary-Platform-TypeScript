@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -60,9 +64,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageUtil } from "./ImageUtil.js";
-
+        import { ImageUtil } from "./ImageUtil.js";
 import { ImageCreationUtil } from "./ImageCreationUtil.js";
 
 export class ImageModifierUtil
@@ -296,7 +298,7 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
     //var imageIndex = imageIndex
     //var alphaInt = alphaInt
 
-    var alpha: number = alphaInt.toByte();
+    var alpha: number = alphaInt;
 ;
     
 

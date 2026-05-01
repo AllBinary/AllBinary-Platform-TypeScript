@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { ProgressCanvasFactory } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
@@ -56,13 +60,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DemoGameMidlet } from "./DemoGameMidlet.js";
-
+        import { DemoGameMidlet } from "./DemoGameMidlet.js";
 import { DemoGameMidletEvent } from "./DemoGameMidletEvent.js";
-
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
-
 import { DemoGameMidletEventHandler } from "./DemoGameMidletEventHandler.js";
 
 export class DemoRunnable

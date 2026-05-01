@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
@@ -45,9 +49,7 @@ import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFileInputStream } from "./AbFileInputStream.js";
-
+        import { AbFileInputStream } from "./AbFileInputStream.js";
 import { AbFileLocalInputStream } from "./AbFileLocalInputStream.js";
 
 export class CloudStreamUtil

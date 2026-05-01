@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -39,8 +43,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PickedUpLayerType } from "./PickedUpLayerType.js";
+        import { PickedUpLayerType } from "./PickedUpLayerType.js";
 
 export class PickedUpLayerTypeFactory
             extends Object

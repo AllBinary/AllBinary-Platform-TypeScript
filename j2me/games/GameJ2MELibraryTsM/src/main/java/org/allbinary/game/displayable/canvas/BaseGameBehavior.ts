@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameAdStateFactory } from "../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js";
 
     
@@ -54,9 +58,7 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DemoGameBehavior } from "./DemoGameBehavior.js";
-
+        import { DemoGameBehavior } from "./DemoGameBehavior.js";
 import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
 
 export class BaseGameBehavior extends DemoGameBehavior {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -66,7 +70,7 @@ export class BooleanFactory
 
     public readonly NO: string = "no";
 
-    public toString(bool: boolean): string{
+    public toStringb(bool: boolean): string{
 var bool = bool
 
                         if(bool)

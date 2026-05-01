@@ -18,10 +18,15 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FileInputStream } from "../../../../../java/io/FileInputStream.js";
 
     
-import { IOException } from "../../../../../java/io/IOException.js";
+
+//import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -69,9 +74,7 @@ import { AbCryptUtil } from "../../../../../org/allbinary/logic/system/security/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ClassLoader } from "./ClassLoader.js";
-
+        import { ClassLoader } from "./ClassLoader.js";
 import { NoClassDefFoundError } from "./NoClassDefFoundError.js";
 
 export class AbeClassLoader extends ClassLoader {

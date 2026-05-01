@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -69,8 +73,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdvertisementsEntityInterface } from "./AdvertisementsEntityInterface.js";
+        import { AdvertisementsEntityInterface } from "./AdvertisementsEntityInterface.js";
 
 export class AdvertisementsEntity extends AbSqlBean implements AdvertisementsEntityInterface {
         

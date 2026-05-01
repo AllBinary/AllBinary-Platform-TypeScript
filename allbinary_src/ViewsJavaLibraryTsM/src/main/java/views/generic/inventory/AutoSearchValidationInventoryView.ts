@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { SearchRequest } from "../../../org/allbinary/logic/control/search/SearchRequest.js";
 
     
@@ -45,8 +49,7 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InventorySearch } from "./InventorySearch.js";
+        import { InventorySearch } from "./InventorySearch.js";
 
 export class AutoSearchValidationInventoryView extends InventorySearch {
         

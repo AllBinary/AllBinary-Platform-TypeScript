@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../java/util/Calendar.js";
@@ -137,9 +141,7 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreFrontInterface } from "./StoreFrontInterface.js";
-
+        import { StoreFrontInterface } from "./StoreFrontInterface.js";
 import { StoreFrontData } from "./StoreFrontData.js";
 
 export class StoreFront

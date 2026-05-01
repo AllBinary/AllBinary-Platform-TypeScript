@@ -18,10 +18,15 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { ByteArrayOutputStream } from "../../../java/io/ByteArrayOutputStream.js";
 
     
-import { IOException } from "../../../java/io/IOException.js";
+
+//import { IOException } from "../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../java/io/InputStream.js";
@@ -75,8 +80,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BlisketServletUtil } from "./BlisketServletUtil.js";
+        import { BlisketServletUtil } from "./BlisketServletUtil.js";
 
 export class ImageServlet extends HttpServlet {
         

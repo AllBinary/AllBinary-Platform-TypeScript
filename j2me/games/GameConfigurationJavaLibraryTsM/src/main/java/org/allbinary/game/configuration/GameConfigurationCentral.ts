@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -68,8 +72,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameConfiguration } from "./GameConfiguration.js";
+        import { GameConfiguration } from "./GameConfiguration.js";
 
 export class GameConfigurationCentral
             extends Object

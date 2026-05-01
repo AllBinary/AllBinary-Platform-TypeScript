@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { VirtualKeyboard } from "../../../../../org/allbinary/android/input/VirtualKeyboard.js";
 
     

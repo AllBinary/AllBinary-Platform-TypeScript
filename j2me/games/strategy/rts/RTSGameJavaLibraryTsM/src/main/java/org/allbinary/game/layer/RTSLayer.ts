@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -168,27 +172,16 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSInterface } from "./RTSInterface.js";
-
+        import { RTSInterface } from "./RTSInterface.js";
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
-
 import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
-
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
-
 import { GeographicMapCellPositionArea } from "./GeographicMapCellPositionArea.js";
-
 import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
-
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
-
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
-
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
-
 import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
-
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {

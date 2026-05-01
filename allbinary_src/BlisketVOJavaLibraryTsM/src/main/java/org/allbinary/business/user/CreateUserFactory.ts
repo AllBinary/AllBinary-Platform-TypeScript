@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -51,8 +55,7 @@ import { StringValidationUtil } from "../../../../org/allbinary/logic/string/Str
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UserInterface } from "./UserInterface.js";
+        import { UserInterface } from "./UserInterface.js";
 
 export class CreateUserFactory
             extends Object

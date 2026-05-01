@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
@@ -134,53 +138,29 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JFrame } from "./JFrame.js";
-
+        import { JFrame } from "./JFrame.js";
 import { ImageIcon } from "./ImageIcon.js";
-
 import { JDialog } from "./JDialog.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JTabbedPane } from "./JTabbedPane.js";
-
 import { JPanel } from "./JPanel.js";
-
 import { JScrollPane } from "./JScrollPane.js";
-
 import { JList } from "./JList.js";
-
 import { JMenuBar } from "./JMenuBar.js";
-
 import { JMenu } from "./JMenu.js";
-
 import { JMenuItem } from "./JMenuItem.js";
-
 import { JCheckBoxMenuItem } from "./JCheckBoxMenuItem.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
 import { WindowFocusListener } from "./WindowFocusListener.js";
-
 import { WindowEvent } from "./WindowEvent.js";
-
 import { FocusAdapter } from "./FocusAdapter.js";
-
 import { FocusEvent } from "./FocusEvent.js";
-
 import { ListSelectionListener } from "./ListSelectionListener.js";
-
 import { ListSelectionEvent } from "./ListSelectionEvent.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { Desktop } from "./Desktop.js";
 
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {

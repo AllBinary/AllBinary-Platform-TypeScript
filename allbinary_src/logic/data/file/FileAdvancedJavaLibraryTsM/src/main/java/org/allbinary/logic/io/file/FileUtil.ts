@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FileInputStream } from "../../../../../java/io/FileInputStream.js";
 
     
@@ -102,11 +106,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFile } from "./AbFile.js";
-
+        import { AbFile } from "./AbFile.js";
 import { FileWrapperUtil } from "./FileWrapperUtil.js";
-
 import { FileUtil2 } from "./FileUtil2.js";
 
 export class FileUtil

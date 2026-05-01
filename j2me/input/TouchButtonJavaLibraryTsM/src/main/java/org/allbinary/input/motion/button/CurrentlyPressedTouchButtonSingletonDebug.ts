@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -48,9 +52,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CurrentlyPressedTouchButtonSingleton } from "./CurrentlyPressedTouchButtonSingleton.js";
-
+        import { CurrentlyPressedTouchButtonSingleton } from "./CurrentlyPressedTouchButtonSingleton.js";
 import { TouchButtonInput } from "./TouchButtonInput.js";
 
 export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedTouchButtonSingleton {

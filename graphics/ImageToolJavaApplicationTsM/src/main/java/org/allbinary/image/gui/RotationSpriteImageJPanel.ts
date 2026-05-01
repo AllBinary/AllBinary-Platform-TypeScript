@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
             import { Thread } from "../../../../java/lang/Thread.js";
@@ -82,27 +86,16 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { Graphics } from "./Graphics.js";
-
 import { JComboBox } from "./JComboBox.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JButton } from "./JButton.js";
-
 import { JCheckBox } from "./JCheckBox.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
 import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
 
 export class RotationSpriteImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

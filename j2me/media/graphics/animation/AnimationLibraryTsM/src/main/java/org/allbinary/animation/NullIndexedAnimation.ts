@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -22,9 +26,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { IndexedAnimation } from "./IndexedAnimation.js";
-
+        import { IndexedAnimation } from "./IndexedAnimation.js";
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class NullIndexedAnimation extends IndexedAnimation {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Command } from "../../../javax/microedition/lcdui/Command.js";
@@ -68,11 +72,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NotificationBuilder } from "./NotificationBuilder.js";
-
+        import { NotificationBuilder } from "./NotificationBuilder.js";
 import { NotificationBuilderAPI23 } from "./NotificationBuilderAPI23.js";
-
 import { CommandUriAction } from "./CommandUriAction.js";
 
 export class NotificationUtil

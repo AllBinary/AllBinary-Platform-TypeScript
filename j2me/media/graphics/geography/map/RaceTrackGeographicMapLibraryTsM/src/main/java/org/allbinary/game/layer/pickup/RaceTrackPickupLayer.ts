@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
 
     
@@ -66,9 +70,7 @@ import { ViewPositionEventHandler } from "../../../../../org/allbinary/view/even
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PickupLayer } from "./PickupLayer.js";
-
+        import { PickupLayer } from "./PickupLayer.js";
 import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
 
 export class RaceTrackPickupLayer extends PickupLayer {

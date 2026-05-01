@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Portion } from "../../../../../org/allbinary/business/installer/Portion.js";
 
     
@@ -51,9 +55,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SqlStrings } from "./SqlStrings.js";
-
+        import { SqlStrings } from "./SqlStrings.js";
 import { AbSqlTable } from "./AbSqlTable.js";
 
 export class AbSqlTableUtil

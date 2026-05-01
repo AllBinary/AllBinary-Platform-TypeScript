@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
@@ -63,9 +67,7 @@ import { HashtableUtil } from "../../../../../../../org/allbinary/util/Hashtable
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTopViewGeographicMapCellType } from "./BasicTopViewGeographicMapCellType.js";
-
+        import { BasicTopViewGeographicMapCellType } from "./BasicTopViewGeographicMapCellType.js";
 import { BasicTopViewGeographicMapStrings } from "./BasicTopViewGeographicMapStrings.js";
 
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {

@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
 
@@ -71,13 +75,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NoOperatingSystem } from "./NoOperatingSystem.js";
-
+        import { NoOperatingSystem } from "./NoOperatingSystem.js";
 import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
-
 import { OperatingSystems } from "./OperatingSystems.js";
-
 import { SystemProperties } from "./SystemProperties.js";
 
 export class OperatingSystemFactory

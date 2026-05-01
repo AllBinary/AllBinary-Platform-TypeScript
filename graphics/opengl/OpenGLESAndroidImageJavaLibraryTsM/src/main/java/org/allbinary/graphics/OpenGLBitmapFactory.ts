@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
@@ -16,7 +20,8 @@ import { Bitmap } from "../../../android/graphics/Bitmap.js";
 import { BitmapFactory } from "../../../android/graphics/BitmapFactory.js";
 
     
-import { IOException } from "../../../java/io/IOException.js";
+
+//import { IOException } from "../../../java/io/IOException.js";
 
     
 import { PlatformBitmapBaseFactory } from "../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js";
@@ -46,9 +51,7 @@ import { AndroidImageInterface } from "../../../org/microemu/android/device/Andr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Config } from "./Config.js";
-
+        //import { Config } from "./Config.js";
 import { OpenGLBitmap } from "./OpenGLBitmap.js";
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {

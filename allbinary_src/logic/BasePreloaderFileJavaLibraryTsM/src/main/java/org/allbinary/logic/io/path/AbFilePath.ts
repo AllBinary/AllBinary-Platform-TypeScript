@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbPath } from "./AbPath.js";
-
+        import { AbPath } from "./AbPath.js";
 import { PathUtil } from "./PathUtil.js";
 
 export class AbFilePath extends AbPath {

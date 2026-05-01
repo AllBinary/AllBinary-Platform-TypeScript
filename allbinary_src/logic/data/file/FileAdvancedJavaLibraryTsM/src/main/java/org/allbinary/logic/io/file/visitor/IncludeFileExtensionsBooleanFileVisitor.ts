@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
@@ -42,8 +46,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BooleanFileVisitor } from "./BooleanFileVisitor.js";
+        import { BooleanFileVisitor } from "./BooleanFileVisitor.js";
 
 export class IncludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor {
         

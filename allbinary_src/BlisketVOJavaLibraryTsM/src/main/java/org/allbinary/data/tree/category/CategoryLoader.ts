@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
 
     
@@ -78,9 +82,7 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CategoryModifierTree } from "./CategoryModifierTree.js";
-
+        import { CategoryModifierTree } from "./CategoryModifierTree.js";
 import { CategoryLoaderInterface } from "./CategoryLoaderInterface.js";
 
 export class CategoryLoader extends CategoryModifierTree implements CategoryLoaderInterface {

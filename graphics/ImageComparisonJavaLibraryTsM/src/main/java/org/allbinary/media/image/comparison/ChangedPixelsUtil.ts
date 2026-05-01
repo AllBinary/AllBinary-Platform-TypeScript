@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
@@ -62,8 +66,7 @@ import { PixelDelta } from "../../../../../org/allbinary/media/image/comparison/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageComparisonResult } from "./ImageComparisonResult.js";
+        import { ImageComparisonResult } from "./ImageComparisonResult.js";
 
 export class ChangedPixelsUtil
             extends Object

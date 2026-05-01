@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { MESSAGES } from "../../../../org/allbinary/globals/MESSAGES.js";
 
     
@@ -45,11 +49,8 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OrderHistoryView } from "./OrderHistoryView.js";
-
+        import { OrderHistoryView } from "./OrderHistoryView.js";
 import { Document } from "./Document.js";
-
 import { Node } from "./Node.js";
 
 export class ValidationView extends OrderHistoryView implements ValidationComponentInterface {

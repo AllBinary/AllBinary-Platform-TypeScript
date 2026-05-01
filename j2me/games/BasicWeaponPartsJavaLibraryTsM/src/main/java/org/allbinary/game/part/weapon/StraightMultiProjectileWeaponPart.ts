@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -66,8 +70,7 @@ import { NoDecimalTrigTable } from "../../../../../org/allbinary/math/NoDecimalT
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicWeaponPart } from "./BasicWeaponPart.js";
+        import { BasicWeaponPart } from "./BasicWeaponPart.js";
 
 export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
         

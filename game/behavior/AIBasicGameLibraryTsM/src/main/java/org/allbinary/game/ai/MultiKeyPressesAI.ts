@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -62,8 +66,7 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { KeyPressesAI } from "./KeyPressesAI.js";
+        import { KeyPressesAI } from "./KeyPressesAI.js";
 
 export class MultiKeyPressesAI extends KeyPressesAI {
         

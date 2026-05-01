@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -54,8 +58,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageCopyUtil } from "./ImageCopyUtil.js";
+        import { ImageCopyUtil } from "./ImageCopyUtil.js";
 
 export class ImageScaleUtil
             extends Object

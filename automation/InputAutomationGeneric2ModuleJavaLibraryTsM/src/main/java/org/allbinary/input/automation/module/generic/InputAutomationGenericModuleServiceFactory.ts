@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { InputAutomationModuleFactoryInterface } from "../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js";
 
     
@@ -45,8 +49,7 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GenericModuleFactory } from "./GenericModuleFactory.js";
+        import { GenericModuleFactory } from "./GenericModuleFactory.js";
 
 export class InputAutomationGenericModuleServiceFactory extends InputAutomationModuleServiceFactory {
         

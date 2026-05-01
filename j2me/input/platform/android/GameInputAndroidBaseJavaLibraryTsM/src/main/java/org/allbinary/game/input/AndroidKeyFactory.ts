@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { KeyEvent } from "../../../../android/view/KeyEvent.js";
 
     
@@ -40,9 +44,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AndroidGameKey } from "./AndroidGameKey.js";
-
+        import { AndroidGameKey } from "./AndroidGameKey.js";
 import { Input } from "./Input.js";
 
 export class AndroidKeyFactory extends ActivityFractureUtil {

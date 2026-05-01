@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -66,11 +70,8 @@ import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-
+        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 import { AllBinaryJ2SEImageRotationAnimation } from "./AllBinaryJ2SEImageRotationAnimation.js";
-
 import { AllBinaryAdjustedJ2SEImageRotationAnimation } from "./AllBinaryAdjustedJ2SEImageRotationAnimation.js";
 
 export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimationFactory {

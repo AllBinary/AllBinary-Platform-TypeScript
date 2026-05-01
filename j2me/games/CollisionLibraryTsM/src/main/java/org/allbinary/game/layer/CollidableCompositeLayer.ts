@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ArtificialIntelligence } from "../../../../org/allbinary/ai/ArtificialIntelligence.js";
 
     
@@ -72,8 +76,7 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
+        import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
 
 export class CollidableCompositeLayer extends AllBinaryGameLayer implements CollidableInterfaceCompositeInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -57,11 +61,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CompleteMotionGestureInputEventListener } from "./CompleteMotionGestureInputEventListener.js";
-
+        import { CompleteMotionGestureInputEventListener } from "./CompleteMotionGestureInputEventListener.js";
 import { CompleteMotionGestureInputEvent } from "./CompleteMotionGestureInputEvent.js";
-
 import { CompleteMotionGestureInputEventListenerInterface } from "./CompleteMotionGestureInputEventListenerInterface.js";
 
 export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {

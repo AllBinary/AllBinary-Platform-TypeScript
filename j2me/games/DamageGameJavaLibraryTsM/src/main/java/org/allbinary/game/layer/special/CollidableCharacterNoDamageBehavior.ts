@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CollidableInterfaceCompositeInterface } from "../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js";
 
     
@@ -54,9 +58,7 @@ import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableDestroyableDamageableBehavior } from "./CollidableDestroyableDamageableBehavior.js";
-
+        import { CollidableDestroyableDamageableBehavior } from "./CollidableDestroyableDamageableBehavior.js";
 import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDamageableLayer.js";
 
 export class CollidableCharacterNoDamageBehavior extends CollidableDestroyableDamageableBehavior {

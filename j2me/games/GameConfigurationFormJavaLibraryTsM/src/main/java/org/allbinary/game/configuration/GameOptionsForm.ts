@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -104,17 +108,11 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
-
+        import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
 import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
-
 import { GameConfiguration } from "./GameConfiguration.js";
-
 import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
-
 import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
-
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
 export class GameOptionsForm extends CommandForm {

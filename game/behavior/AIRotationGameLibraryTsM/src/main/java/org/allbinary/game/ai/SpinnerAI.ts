@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -48,8 +52,7 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicAI } from "./BasicAI.js";
+        import { BasicAI } from "./BasicAI.js";
 
 export class SpinnerAI extends BasicAI {
         

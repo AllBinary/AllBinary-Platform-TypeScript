@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { DefaultListModelHelper } from "../../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js";
 
     
@@ -45,39 +49,22 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { GenericProfileActions } from "./GenericProfileActions.js";
-
 import { GenericProfileActionJPanel } from "./GenericProfileActionJPanel.js";
-
 import { JDialog } from "./JDialog.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JButton } from "./JButton.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { JScrollPane } from "./JScrollPane.js";
-
 import { JList } from "./JList.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
 import { ListSelectionListener } from "./ListSelectionListener.js";
-
 import { ListSelectionEvent } from "./ListSelectionEvent.js";
-
 import { GenericProfileAction } from "./GenericProfileAction.js";
 
 export class GenericProfileActionsJPanel extends javax.swing.JPanel {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { swing } from "../../../../../../../../../javax/swing.js";
@@ -65,41 +69,23 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
-
 import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-
 import { KeyNameDefaultComboBoxModelFactory } from "./KeyNameDefaultComboBoxModelFactory.js";
-
 import { KeyCharDefaultComboBoxModelFactory } from "./KeyCharDefaultComboBoxModelFactory.js";
-
 import { ComboBoxModel } from "./ComboBoxModel.js";
-
 import { JDialog } from "./JDialog.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JComboBox } from "./JComboBox.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { JRadioButton } from "./JRadioButton.js";
-
 import { JButton } from "./JButton.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { Insets } from "./Insets.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
 
 export class KeyboardActionScriptInputJPanel extends javax.swing.JPanel {

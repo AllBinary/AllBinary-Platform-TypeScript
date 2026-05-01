@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { File } from "../../../../../java/io/File.js";
 
     
@@ -69,8 +73,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationConfiguration } from "./InputAutomationConfiguration.js";
+        import { InputAutomationConfiguration } from "./InputAutomationConfiguration.js";
 
 export class InputAutomationConfigurationFactory
             extends Object

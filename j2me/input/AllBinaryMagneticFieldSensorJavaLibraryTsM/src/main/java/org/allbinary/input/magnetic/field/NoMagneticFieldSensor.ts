@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinarySensorListener } from "../../../../../org/allbinary/input/AllBinarySensorListener.js";
 
     
@@ -42,8 +46,7 @@ import { Orientation } from "../../../../../org/allbinary/logic/math/Orientation
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryMagneticFieldSensor } from "./AllBinaryMagneticFieldSensor.js";
+        import { AllBinaryMagneticFieldSensor } from "./AllBinaryMagneticFieldSensor.js";
 
 export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor implements AllBinarySensorListener {
         

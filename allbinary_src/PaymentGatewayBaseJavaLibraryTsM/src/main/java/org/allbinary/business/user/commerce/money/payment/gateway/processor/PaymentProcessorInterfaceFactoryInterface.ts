@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { PaymentTransactionInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js";
 
     
@@ -42,8 +46,7 @@ import { TransformInfoInterface } from "../../../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaymentProcessorInterface } from "./PaymentProcessorInterface.js";
+        import { PaymentProcessorInterface } from "./PaymentProcessorInterface.js";
 
 export interface PaymentProcessorInterfaceFactoryInterface {
         

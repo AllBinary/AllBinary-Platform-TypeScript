@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -75,11 +79,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
-
+        import { TouchMotionGestureFactory } from "./TouchMotionGestureFactory.js";
 import { MotionGestureInput } from "./MotionGestureInput.js";
-
 import { Math } from "./Math.js";
 
 export class MotionGestureRecognizer

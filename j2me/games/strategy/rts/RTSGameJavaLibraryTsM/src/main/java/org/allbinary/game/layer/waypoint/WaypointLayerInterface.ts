@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CaptionAnimationHelperBase } from "../../../../../org/allbinary/animation/caption/CaptionAnimationHelperBase.js";
 
     
@@ -57,11 +61,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WaypointLogHelper } from "./WaypointLogHelper.js";
-
+        import { WaypointLogHelper } from "./WaypointLogHelper.js";
 import { Waypoint2LogHelper } from "./Waypoint2LogHelper.js";
-
 import { WaypointRunnableLogHelper } from "./WaypointRunnableLogHelper.js";
 
 export interface WaypointLayerInterface {

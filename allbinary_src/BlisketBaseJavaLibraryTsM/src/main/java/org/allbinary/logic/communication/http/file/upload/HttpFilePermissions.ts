@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -54,8 +58,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { FileUploadData } from "./FileUploadData.js";
+        import { FileUploadData } from "./FileUploadData.js";
 
 export class HttpFilePermissions
             extends Object

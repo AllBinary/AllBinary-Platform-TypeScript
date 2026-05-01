@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { GameAdStateBase } from "../../../org/allbinary/business/advertisement/GameAdStateBase.js";
 
     

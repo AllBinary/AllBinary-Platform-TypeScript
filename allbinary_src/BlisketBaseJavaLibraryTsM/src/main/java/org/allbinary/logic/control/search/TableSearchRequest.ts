@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ModDomHelper } from "../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
 
     
@@ -51,9 +55,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SearchParams } from "./SearchParams.js";
-
+        import { SearchParams } from "./SearchParams.js";
 import { SearchData } from "./SearchData.js";
 
 export class TableSearchRequest

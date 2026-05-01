@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../java/lang/Long.js";
         
 
@@ -38,8 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScaleFactorFactory } from "./ScaleFactorFactory.js";
+        import { ScaleFactorFactory } from "./ScaleFactorFactory.js";
 
 export class BasicDecimal
             extends Object

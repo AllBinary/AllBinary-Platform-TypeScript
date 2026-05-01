@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
@@ -51,8 +55,7 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SimultaneousCompoundIndexAnimation } from "./SimultaneousCompoundIndexAnimation.js";
+        import { SimultaneousCompoundIndexAnimation } from "./SimultaneousCompoundIndexAnimation.js";
 
 export class SimultaneousCompoundIndexAnimationInterfaceFactory
             extends Object

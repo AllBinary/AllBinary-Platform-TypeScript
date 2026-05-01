@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { FeatureResourceAnimationInterfaceFactoryInterface } from "../../../org/allbinary/animation/resource/FeatureResourceAnimationInterfaceFactoryInterface.js";
 
     
@@ -69,13 +73,9 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
-
+        import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
 import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
-
 import { BasicAnimationInterfaceFactoryInterface } from "./BasicAnimationInterfaceFactoryInterface.js";
-
 import { NullAnimationFactory } from "./NullAnimationFactory.js";
 
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {

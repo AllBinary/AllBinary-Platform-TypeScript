@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { GameNotificationEvent } from "../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
 
     
@@ -60,8 +64,7 @@ import { PrimaryPlayerQueueFactory } from "../../../../../../org/allbinary/media
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LicenseStrings } from "./LicenseStrings.js";
+        import { LicenseStrings } from "./LicenseStrings.js";
 
 export class LockedFeatureNotificationUtil
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { DisplayInBrowserContraintsInterface } from "../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js";
 
     

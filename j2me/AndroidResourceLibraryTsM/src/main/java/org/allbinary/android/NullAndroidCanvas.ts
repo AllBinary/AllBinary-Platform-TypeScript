@@ -20,6 +20,10 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../android/graphics/Canvas.js";
 
     

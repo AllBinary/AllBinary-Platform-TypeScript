@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -63,9 +67,7 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinarySpriteRotationAnimation } from "./AllBinarySpriteRotationAnimation.js";
-
+        import { AllBinarySpriteRotationAnimation } from "./AllBinarySpriteRotationAnimation.js";
 import { AllBinaryAdjustedSpriteRotationAnimation } from "./AllBinaryAdjustedSpriteRotationAnimation.js";
 
 export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {

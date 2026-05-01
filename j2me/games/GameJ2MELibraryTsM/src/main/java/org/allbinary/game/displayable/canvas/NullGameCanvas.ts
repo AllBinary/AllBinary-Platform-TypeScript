@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -60,8 +64,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
 
 export class NullGameCanvas extends AllBinaryGameCanvas {
         

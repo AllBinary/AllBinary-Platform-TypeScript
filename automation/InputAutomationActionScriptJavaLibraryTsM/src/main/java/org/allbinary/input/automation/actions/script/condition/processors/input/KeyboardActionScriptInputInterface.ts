@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 
@@ -38,8 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProfileActionScriptInputInterface } from "./ProfileActionScriptInputInterface.js";
+        import { ProfileActionScriptInputInterface } from "./ProfileActionScriptInputInterface.js";
 
 export interface KeyboardActionScriptInputInterface extends ProfileActionScriptInputInterface {
         

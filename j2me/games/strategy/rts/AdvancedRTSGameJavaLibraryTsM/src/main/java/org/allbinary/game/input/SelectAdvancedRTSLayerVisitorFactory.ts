@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
     
@@ -39,11 +43,8 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
-
+        import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
 import { SelectAdvancedRTSLayerVisitor } from "./SelectAdvancedRTSLayerVisitor.js";
-
 import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
 
 export class SelectAdvancedRTSLayerVisitorFactory

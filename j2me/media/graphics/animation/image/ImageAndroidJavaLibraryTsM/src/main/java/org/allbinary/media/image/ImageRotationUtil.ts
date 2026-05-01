@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -54,8 +58,7 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageCreationUtil } from "./ImageCreationUtil.js";
+        import { ImageCreationUtil } from "./ImageCreationUtil.js";
 
 export class ImageRotationUtil
             extends Object

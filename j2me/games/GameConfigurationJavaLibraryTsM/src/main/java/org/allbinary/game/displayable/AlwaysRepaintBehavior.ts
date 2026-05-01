@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
@@ -62,8 +66,7 @@ import { NullRunnable } from "../../../../org/allbinary/thread/NullRunnable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RepaintBehavior } from "./RepaintBehavior.js";
+        import { RepaintBehavior } from "./RepaintBehavior.js";
 
 export class AlwaysRepaintBehavior extends RepaintBehavior {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -99,9 +103,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { EmailInterface } from "./EmailInterface.js";
-
+        import { EmailInterface } from "./EmailInterface.js";
 import { EmailData } from "./EmailData.js";
 
 export class Email

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -92,23 +96,14 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
-
+        import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
 import { MotionRectanglesResultsFrameCacheable } from "./MotionRectanglesResultsFrameCacheable.js";
-
 import { MotionRectangles } from "./MotionRectangles.js";
-
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
-
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
-
 import { Graphics } from "./Graphics.js";
-
 import { MotionRectangle } from "./MotionRectangle.js";
-
 import { Rectangle } from "./Rectangle.js";
-
 import { Color } from "./Color.js";
 
 export class MotionRectanglesImageInputOutput

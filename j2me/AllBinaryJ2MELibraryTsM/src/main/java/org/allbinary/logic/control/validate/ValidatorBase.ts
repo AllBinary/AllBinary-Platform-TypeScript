@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -54,8 +58,7 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ValidatorBaseInterface } from "./ValidatorBaseInterface.js";
+        import { ValidatorBaseInterface } from "./ValidatorBaseInterface.js";
 
 export class ValidatorBase
             extends Object

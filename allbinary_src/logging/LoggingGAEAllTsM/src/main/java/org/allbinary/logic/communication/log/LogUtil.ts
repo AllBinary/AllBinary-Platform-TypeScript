@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Level } from "../../../../../java/util/logging/Level.js";
 
     
@@ -48,9 +52,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogFormatUtil } from "./LogFormatUtil.js";
-
+        import { LogFormatUtil } from "./LogFormatUtil.js";
 import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil

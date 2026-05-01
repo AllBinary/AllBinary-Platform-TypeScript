@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -60,8 +64,7 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AboutCommandProcessor } from "./AboutCommandProcessor.js";
+        import { AboutCommandProcessor } from "./AboutCommandProcessor.js";
 
 export class WebCommandProcessor
             extends Object

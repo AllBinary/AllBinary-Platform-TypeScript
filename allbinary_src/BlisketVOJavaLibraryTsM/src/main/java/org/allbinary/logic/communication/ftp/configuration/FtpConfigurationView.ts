@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -57,13 +61,9 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
-
+        import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
 import { FtpConfiguration } from "./FtpConfiguration.js";
-
 import { FtpConfigurationData } from "./FtpConfigurationData.js";
-
 import { FtpConfigurationMapping } from "./FtpConfigurationMapping.js";
 
 export class FtpConfigurationView

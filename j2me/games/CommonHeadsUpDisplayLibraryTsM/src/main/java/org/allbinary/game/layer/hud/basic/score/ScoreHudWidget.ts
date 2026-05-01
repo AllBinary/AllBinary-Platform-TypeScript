@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { NumberStringHud } from "../../../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js";
 
     

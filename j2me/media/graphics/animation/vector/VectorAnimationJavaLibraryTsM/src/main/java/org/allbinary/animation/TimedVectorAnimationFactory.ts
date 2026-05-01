@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
 
     
@@ -39,13 +43,9 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
-
+        import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
 import { TimedVectorAnimation } from "./TimedVectorAnimation.js";
-
 import { AnimationBehavior } from "./AnimationBehavior.js";
-
 import { VectorAnimation } from "./VectorAnimation.js";
 
 export class TimedVectorAnimationFactory

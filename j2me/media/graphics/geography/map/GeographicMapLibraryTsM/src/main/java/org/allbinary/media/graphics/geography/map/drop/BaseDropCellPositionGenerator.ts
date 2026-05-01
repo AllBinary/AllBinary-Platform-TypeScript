@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameLayerManager } from "../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
 
     
@@ -48,8 +52,7 @@ import { BasicGeographicMap } from "../../../../../../../org/allbinary/media/gra
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DropCellPositionGeneratorInterface } from "./DropCellPositionGeneratorInterface.js";
+        import { DropCellPositionGeneratorInterface } from "./DropCellPositionGeneratorInterface.js";
 
 export class BaseDropCellPositionGenerator
             extends Object

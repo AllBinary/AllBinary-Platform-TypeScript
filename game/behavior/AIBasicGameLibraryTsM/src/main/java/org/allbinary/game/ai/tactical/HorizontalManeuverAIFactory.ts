@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -51,8 +55,7 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HorizontalManeuverAI } from "./HorizontalManeuverAI.js";
+        import { HorizontalManeuverAI } from "./HorizontalManeuverAI.js";
 
 export class HorizontalManeuverAIFactory
             extends Object

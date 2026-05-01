@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameInputProcessor } from "../../../../../org/allbinary/game/input/GameInputProcessor.js";
 
     
@@ -39,8 +43,7 @@ import { GameInputProcessor } from "../../../../../org/allbinary/game/input/Game
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
+        import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
 
 export class SpecialGameInputInterfaceProcessor extends GameInputProcessor {
         

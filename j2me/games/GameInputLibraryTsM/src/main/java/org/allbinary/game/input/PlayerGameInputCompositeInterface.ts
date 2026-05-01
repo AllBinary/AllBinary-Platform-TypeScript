@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameInputInterface } from "./GameInputInterface.js";
-
+        import { GameInputInterface } from "./GameInputInterface.js";
 import { PlayerGameInput } from "./PlayerGameInput.js";
 
 export interface PlayerGameInputCompositeInterface extends GameInputInterface {

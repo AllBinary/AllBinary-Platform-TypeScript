@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -48,11 +52,8 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-
+        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 import { RightToLeftImageAnimation } from "./RightToLeftImageAnimation.js";
-
 import { AdjustedRightToLeftImageAnimation } from "./AdjustedRightToLeftImageAnimation.js";
 
 export class RightToLeftImageAnimationFactory extends BaseImageAnimationFactory {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
@@ -56,9 +60,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbeClientInformation } from "./AbeClientInformation.js";
-
+        import { AbeClientInformation } from "./AbeClientInformation.js";
 import { PartnerIdentifierFileUtil } from "./PartnerIdentifierFileUtil.js";
 
 export class MobileClientInformation extends AbeClientInformation {

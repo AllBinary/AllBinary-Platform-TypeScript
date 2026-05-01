@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLayerManager.js";
 
     
@@ -39,8 +43,7 @@ import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLay
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ArtificialIntelligenceInterface } from "./ArtificialIntelligenceInterface.js";
+        import { ArtificialIntelligenceInterface } from "./ArtificialIntelligenceInterface.js";
 
 export class ArtificialIntelligence
             extends Object

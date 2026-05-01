@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -42,11 +46,8 @@ import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoFactoryInterface } from "./TransformInfoFactoryInterface.js";
-
+        import { TransformInfoFactoryInterface } from "./TransformInfoFactoryInterface.js";
 import { TransformInfoHttpStore } from "./TransformInfoHttpStore.js";
-
 import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 export class TransformInfoHttpStoreFactory

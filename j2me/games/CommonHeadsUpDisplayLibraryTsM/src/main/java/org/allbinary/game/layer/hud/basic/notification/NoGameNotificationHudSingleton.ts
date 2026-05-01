@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicHudFactory } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js";
 
     
@@ -48,8 +52,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameNotificationHud } from "./GameNotificationHud.js";
+        import { GameNotificationHud } from "./GameNotificationHud.js";
 
 export class NoGameNotificationHudSingleton
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Collection } from "../../../../../java/util/Collection.js";
 
     
@@ -75,11 +79,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DefaultListModelHelper } from "./DefaultListModelHelper.js";
-
+        import { DefaultListModelHelper } from "./DefaultListModelHelper.js";
 import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
-
 import { ListModel } from "./ListModel.js";
 
 export class InputAutomationModuleFactoryFactory

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
@@ -47,9 +51,7 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MeteredGameObject } from "./MeteredGameObject.js";
-
+        import { MeteredGameObject } from "./MeteredGameObject.js";
 import { MagicGameObjectInterface } from "./MagicGameObjectInterface.js";
 
 export class MagicGameObject extends MeteredGameObject implements MagicGameObjectInterface {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
@@ -48,8 +52,7 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdvertisementCampaignsInterface } from "./AdvertisementCampaignsInterface.js";
+        import { AdvertisementCampaignsInterface } from "./AdvertisementCampaignsInterface.js";
 
 export class AdvertisementCampaigns
             extends Object

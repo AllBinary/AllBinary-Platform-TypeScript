@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BasketData } from "../../../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js";
 
     

@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Source } from "../../../../../javax/xml/transform/Source.js";
 
     
@@ -75,7 +79,7 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { URIResolverStrings } from "./URIResolverStrings.js";
 import { BasicUriResolver } from "./BasicUriResolver.js";
 
 export class ContextUriResolver
@@ -84,6 +88,8 @@ export class ContextUriResolver
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly uriResolverStrings: URIResolverStrings = URIResolverStrings.getInstance()!;
 
     private basicURIResolver: BasicUriResolver
 public constructor (basicURIResolver: BasicUriResolver){
@@ -126,29 +132,29 @@ stringBuffer!.append(href);
                                     {
                                     stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append("attempt to use xsl:import: href=");
+stringBuffer!.append(this.uriResolverStrings!.ATTEMPT);
     
 stringBuffer!.append(href);
     
-stringBuffer!.append("\nBase= ");
+stringBuffer!.append(this.uriResolverStrings!.BASE);
     
 stringBuffer!.append(base);
     
-stringBuffer!.append("\nNew path= ");
+stringBuffer!.append(this.uriResolverStrings!.NEW_PATH);
     
 stringBuffer!.append(fileAbPath!.toString());
     
-stringBuffer!.append("\nNote: ");
+stringBuffer!.append(this.uriResolverStrings!.NOTE);
     
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
     
-stringBuffer!.append(" is a urlglobal");
+stringBuffer!.append(this.uriResolverStrings!.URL_GLOBAL);
     
-stringBuffer!.append("\nRequired Extension: ");
+stringBuffer!.append(this.uriResolverStrings!.REQUIRED_EXTENSION);
     
 stringBuffer!.append(this.basicURIResolver!.getExtension());
     
-this.logUtil!.putF(stringBuffer!.toString(), this, "resolve");
+this.logUtil!.putF(stringBuffer!.toString(), this, this.uriResolverStrings!.RESOLVE);
     
 
                                     }
@@ -191,7 +197,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "resolve");
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH +"/{import url}";
+                        return URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.INSTALLPATH +this.uriResolverStrings!.IMPORT_URL;
     
 
                 //: 

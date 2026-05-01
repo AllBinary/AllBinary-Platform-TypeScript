@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,8 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
+        import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
 
 export class NoOperatingSystem extends GenericOperatingSystem {
         

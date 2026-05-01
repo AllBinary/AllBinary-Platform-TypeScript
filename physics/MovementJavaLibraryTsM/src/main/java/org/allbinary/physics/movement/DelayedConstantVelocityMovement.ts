@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -51,8 +55,7 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.js";
+        import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.js";
 
 export class DelayedConstantVelocityMovement extends BasicConstantVelocityMovement {
         

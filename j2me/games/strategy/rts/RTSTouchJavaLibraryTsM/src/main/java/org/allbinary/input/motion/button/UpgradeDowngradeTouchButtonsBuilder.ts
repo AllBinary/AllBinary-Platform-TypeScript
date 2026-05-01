@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { TouchButtonDowngradeResource } from "../../../../../org/allbinary/game/input/resource/TouchButtonDowngradeResource.js";
 
     
@@ -57,17 +61,11 @@ import { CellPositionFactory } from "../../../../../org/allbinary/graphics/CellP
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseTouchInput } from "./BaseTouchInput.js";
-
+        import { BaseTouchInput } from "./BaseTouchInput.js";
 import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
-
 import { BasicTouchButtonCellPositionFactory } from "./BasicTouchButtonCellPositionFactory.js";
-
 import { CommonButtons } from "./CommonButtons.js";
-
 import { TouchButton } from "./TouchButton.js";
-
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {

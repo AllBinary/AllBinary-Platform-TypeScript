@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { RTSGameStrings } from "../../../../../org/allbinary/game/layer/RTSGameStrings.js";
 
     
@@ -105,8 +109,7 @@ import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/me
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSFormInput } from "./RTSFormInput.js";
+        import { RTSFormInput } from "./RTSFormInput.js";
 
 export class TechRTSFormInput extends RTSFormInput {
         

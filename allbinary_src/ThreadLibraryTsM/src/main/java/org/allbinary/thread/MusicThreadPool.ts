@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
             import { Runnable } from "../../../java/lang/Runnable.js";
         
@@ -49,8 +53,7 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ThreadPool } from "./ThreadPool.js";
+        import { ThreadPool } from "./ThreadPool.js";
 
 export class MusicThreadPool extends ThreadPool {
         
@@ -91,7 +94,7 @@ super.runTask(task);
     startTask(task: Runnable){
 var task = task
 this.logUtil!.putF(new StringMaker().
-                            append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
+                            append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, this.commonStrings!.RUN);
     
 }
 
@@ -99,7 +102,7 @@ this.logUtil!.putF(new StringMaker().
     completedTask(task: Runnable){
 var task = task
 this.logUtil!.putF(new StringMaker().
-                            append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
+                            append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, this.commonStrings!.RUN);
     
 }
 

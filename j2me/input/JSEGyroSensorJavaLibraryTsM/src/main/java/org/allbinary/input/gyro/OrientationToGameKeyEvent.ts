@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -45,9 +49,7 @@ import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryOrientationSensor } from "./AllBinaryOrientationSensor.js";
-
+        import { AllBinaryOrientationSensor } from "./AllBinaryOrientationSensor.js";
 import { NoGyroSensor } from "./NoGyroSensor.js";
 
 export class OrientationToGameKeyEvent

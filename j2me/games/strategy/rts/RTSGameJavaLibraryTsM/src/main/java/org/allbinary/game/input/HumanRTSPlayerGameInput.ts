@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -168,11 +172,8 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
-
+        import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
 import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js";
-
 import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
 
 export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseMotionGestureEventListener {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Direction } from "../../../org/allbinary/direction/Direction.js";
 
     
@@ -51,9 +55,7 @@ import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VectorBaseRotationAnimation } from "./VectorBaseRotationAnimation.js";
-
+        import { VectorBaseRotationAnimation } from "./VectorBaseRotationAnimation.js";
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {

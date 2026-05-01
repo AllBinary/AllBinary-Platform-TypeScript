@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BillingAddressesEntity } from "../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js";
 
     
@@ -51,8 +55,7 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BillingAddressesView } from "./BillingAddressesView.js";
+        import { BillingAddressesView } from "./BillingAddressesView.js";
 
 export class ValidationView extends BillingAddressesView implements ValidationComponentInterface {
         

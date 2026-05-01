@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { SelectionHudPaintable } from "../../../../../../org/allbinary/game/layer/SelectionHudPaintable.js";
 
     
@@ -60,9 +64,7 @@ import { RemoteInfo } from "../../../../../../org/allbinary/game/multiplayer/lay
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeologicalResourceInfoHudPaintableSingleton } from "./GeologicalResourceInfoHudPaintableSingleton.js";
-
+        import { GeologicalResourceInfoHudPaintableSingleton } from "./GeologicalResourceInfoHudPaintableSingleton.js";
 import { GeologicalResourceInfoHudPaintable } from "./GeologicalResourceInfoHudPaintable.js";
 
 export class ResourceWaypointLayer extends WaypointLayer {

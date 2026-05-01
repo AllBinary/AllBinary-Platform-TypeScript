@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DestroyableInterface } from "../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js";
 
     
@@ -51,11 +55,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
-
+        import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-
 import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
 export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {

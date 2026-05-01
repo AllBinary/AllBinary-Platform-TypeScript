@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { DownGameKeyEventHandler } from "../../../../../org/allbinary/game/input/event/DownGameKeyEventHandler.js";
 
     
@@ -60,23 +64,14 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
-
+        import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 import { TouchButtonInput } from "./TouchButtonInput.js";
-
 import { CurrentlyPressedTouchButtonSingleton } from "./CurrentlyPressedTouchButtonSingleton.js";
-
 import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
-
-import { ReleaseHelper } from "./ReleaseHelper.js";
-
+//import { ReleaseHelper } from "./ReleaseHelper.js";
 import { TouchScreenFactory } from "./TouchScreenFactory.js";
-
-import { MultitouchReleaseHelper } from "./MultitouchReleaseHelper.js";
-
+//import { MultitouchReleaseHelper } from "./MultitouchReleaseHelper.js";
 import { TouchButtonFactory } from "./TouchButtonFactory.js";
-
 import { TouchButton } from "./TouchButton.js";
 
 export class TouchButtonRecognizer

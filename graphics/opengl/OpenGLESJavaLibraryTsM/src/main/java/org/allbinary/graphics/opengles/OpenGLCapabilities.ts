@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
@@ -86,9 +90,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
+        import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 import { OpenGLFeature } from "./OpenGLFeature.js";
 
 export class OpenGLCapabilities

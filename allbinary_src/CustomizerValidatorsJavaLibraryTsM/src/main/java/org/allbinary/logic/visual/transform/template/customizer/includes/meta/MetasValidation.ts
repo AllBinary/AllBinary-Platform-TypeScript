@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
@@ -75,8 +79,7 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MetaValidation } from "./MetaValidation.js";
+        import { MetaValidation } from "./MetaValidation.js";
 
 export class MetasValidation extends Validation implements DomNodeInterface {
         

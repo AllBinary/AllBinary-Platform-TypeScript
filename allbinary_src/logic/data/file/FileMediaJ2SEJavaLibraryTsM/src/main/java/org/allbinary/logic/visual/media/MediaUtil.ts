@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -52,9 +56,7 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageIOUtil } from "./ImageIOUtil.js";
-
+        import { ImageIOUtil } from "./ImageIOUtil.js";
 import { MediaData } from "./MediaData.js";
 
 export class MediaUtil

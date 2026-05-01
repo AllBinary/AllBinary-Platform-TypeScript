@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ArtificialIntelligence } from "../../../../org/allbinary/ai/ArtificialIntelligence.js";
 
     

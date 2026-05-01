@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { TouchButtonBlankResource } from "../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js";
 
     

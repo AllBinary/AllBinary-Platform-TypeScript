@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Control } from "../../../../javax/microedition/media/Control.js";
 
     
@@ -63,8 +67,7 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Controllable2 } from "./Controllable2.js";
+        import { Controllable2 } from "./Controllable2.js";
 
 export class PlayerComposite
             extends Object

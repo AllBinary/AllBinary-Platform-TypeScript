@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryOrientationSensor } from "../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js";
 
     

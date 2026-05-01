@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -63,9 +67,7 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
-
+        import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 import { OpenGLFeature } from "./OpenGLFeature.js";
 
 export class OpenGLConfiguration

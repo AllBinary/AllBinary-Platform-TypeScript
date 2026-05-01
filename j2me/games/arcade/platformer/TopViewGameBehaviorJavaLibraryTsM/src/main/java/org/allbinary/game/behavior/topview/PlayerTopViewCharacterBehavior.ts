@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
 
     
@@ -66,8 +70,7 @@ import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/gr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TopViewCharacterBehavior } from "./TopViewCharacterBehavior.js";
+        import { TopViewCharacterBehavior } from "./TopViewCharacterBehavior.js";
 
 export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         

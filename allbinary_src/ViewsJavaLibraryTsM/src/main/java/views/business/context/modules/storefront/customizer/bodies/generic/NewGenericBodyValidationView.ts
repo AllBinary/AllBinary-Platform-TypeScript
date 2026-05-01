@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { DomNodeInterface } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -63,8 +67,7 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GenericBodyCustomizerView } from "./GenericBodyCustomizerView.js";
+        import { GenericBodyCustomizerView } from "./GenericBodyCustomizerView.js";
 
 export class NewGenericBodyValidationView extends GenericBodyCustomizerView implements ValidationComponentInterface {
         

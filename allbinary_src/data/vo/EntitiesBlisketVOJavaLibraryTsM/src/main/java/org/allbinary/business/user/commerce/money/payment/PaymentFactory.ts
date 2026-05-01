@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { ServletRequest } from "../../../../../../../javax/servlet/ServletRequest.js";
 
     
@@ -45,9 +49,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Payment } from "./Payment.js";
-
+        import { Payment } from "./Payment.js";
 import { PaymentInterface } from "./PaymentInterface.js";
 
 export class PaymentFactory

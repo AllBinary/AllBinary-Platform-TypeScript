@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics2D } from "../../../../java/awt/Graphics2D.js";
 
     
@@ -531,7 +535,7 @@ g2d.dispose();
     var j2seImage: J2SEMutableImage = image as J2SEMutableImage;
 ;
     
-bufferedImage= j2seImage!.getImage(); as BufferedImage;
+bufferedImage= j2seImage!.getImage() as BufferedImage;
     
 
                                     }
@@ -541,7 +545,7 @@ bufferedImage= j2seImage!.getImage(); as BufferedImage;
     var j2seImage: J2SEImmutableImage = image as J2SEImmutableImage;
 ;
     
-bufferedImage= j2seImage!.getImage(); as BufferedImage;
+bufferedImage= j2seImage!.getImage() as BufferedImage;
     
 
                         }

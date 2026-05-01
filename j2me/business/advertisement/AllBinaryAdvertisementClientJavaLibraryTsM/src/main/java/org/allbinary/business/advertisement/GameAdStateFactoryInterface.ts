@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { SoftwareInformation } from "../../../../org/allbinary/logic/system/SoftwareInformation.js";
 
     
@@ -39,8 +43,7 @@ import { SoftwareInformation } from "../../../../org/allbinary/logic/system/Soft
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameAdStateBase } from "./GameAdStateBase.js";
+        import { GameAdStateBase } from "./GameAdStateBase.js";
 
 export interface GameAdStateFactoryInterface {
         

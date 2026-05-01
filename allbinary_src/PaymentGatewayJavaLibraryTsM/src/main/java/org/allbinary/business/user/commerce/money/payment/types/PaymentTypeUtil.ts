@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
@@ -93,8 +97,7 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaymentType } from "./PaymentType.js";
+        import { PaymentType } from "./PaymentType.js";
 
 export class PaymentTypeUtil
             extends Object

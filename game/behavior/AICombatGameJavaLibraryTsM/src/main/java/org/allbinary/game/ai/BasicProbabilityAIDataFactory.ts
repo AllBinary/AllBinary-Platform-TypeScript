@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -50,8 +54,7 @@ import { NoTimeDelayHelper } from "../../../../org/allbinary/time/NoTimeDelayHel
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputProbability } from "./InputProbability.js";
+        import { InputProbability } from "./InputProbability.js";
 
 export class BasicProbabilityAIDataFactory
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -53,8 +57,7 @@ import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Math } from "./Math.js";
+        import { Math } from "./Math.js";
 
 export class BasicDirectionAIHelper
             extends Object

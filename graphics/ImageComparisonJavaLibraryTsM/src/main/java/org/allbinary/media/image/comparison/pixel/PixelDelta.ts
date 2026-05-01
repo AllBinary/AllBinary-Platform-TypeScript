@@ -18,10 +18,14 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
 
     
-import { TsUtil } from "../../../../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../../../../org/allbinary/TsUtil.js";
 
     
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";

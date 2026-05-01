@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -39,8 +43,7 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HardwareComponentInterface } from "./HardwareComponentInterface.js";
+        import { HardwareComponentInterface } from "./HardwareComponentInterface.js";
 
 export class NoHardwareComponent
             extends Object

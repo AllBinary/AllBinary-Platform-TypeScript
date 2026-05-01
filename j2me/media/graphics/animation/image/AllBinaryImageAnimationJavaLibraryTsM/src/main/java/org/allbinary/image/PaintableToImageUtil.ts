@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -45,8 +49,7 @@ import { PaintableInterface } from "../../../org/allbinary/graphics/paint/Painta
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameFeatureImageCacheFactory } from "./GameFeatureImageCacheFactory.js";
+        import { GameFeatureImageCacheFactory } from "./GameFeatureImageCacheFactory.js";
 
 export class PaintableToImageUtil
             extends Object

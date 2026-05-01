@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -63,8 +67,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HighScoresCanvasInputProcessor } from "./HighScoresCanvasInputProcessor.js";
+        import { HighScoresCanvasInputProcessor } from "./HighScoresCanvasInputProcessor.js";
 
 export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasInputProcessor {
         

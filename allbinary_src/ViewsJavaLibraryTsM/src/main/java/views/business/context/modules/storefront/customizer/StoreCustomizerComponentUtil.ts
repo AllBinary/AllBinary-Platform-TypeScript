@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -57,8 +61,7 @@ import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomizerUtil } from "./CustomizerUtil.js";
+        import { CustomizerUtil } from "./CustomizerUtil.js";
 
 export class StoreCustomizerComponentUtil
             extends Object

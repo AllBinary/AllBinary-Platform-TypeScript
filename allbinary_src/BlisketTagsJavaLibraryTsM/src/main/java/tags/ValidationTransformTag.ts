@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../java/lang/Object.js";
+
+
+        
 import { Method } from "../java/lang/reflect/Method.js";
 
     
@@ -60,8 +64,7 @@ import { ValidatedViewHelperFactory } from "../taghelpers/ValidatedViewHelperFac
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformTag } from "./TransformTag.js";
+        import { TransformTag } from "./TransformTag.js";
 
 export class ValidationTransformTag extends TransformTag {
         

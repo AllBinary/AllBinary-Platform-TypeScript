@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -51,8 +55,7 @@ import { RequestParams } from "../../../../../../../org/allbinary/logic/communic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Item } from "./Item.js";
+        import { Item } from "./Item.js";
 
 export class ItemFactoryUnused
             extends Object

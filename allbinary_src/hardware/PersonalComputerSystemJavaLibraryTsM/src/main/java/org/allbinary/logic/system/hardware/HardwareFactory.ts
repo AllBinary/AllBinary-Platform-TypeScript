@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GenericOperatingSystem } from "../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
 
     
@@ -48,8 +52,7 @@ import { WindowsHardware } from "../../../../../org/allbinary/logic/system/hardw
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HardwareInterface } from "./HardwareInterface.js";
+        import { HardwareInterface } from "./HardwareInterface.js";
 
 export class HardwareFactory
             extends Object

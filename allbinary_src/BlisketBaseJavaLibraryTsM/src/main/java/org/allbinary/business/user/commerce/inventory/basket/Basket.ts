@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { Serializable } from "../../../../../../../java/io/Serializable.js";
@@ -62,8 +66,7 @@ import { InventoryEntityFactory } from "../../../../../../../org/allbinary/data/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasketInterface } from "./BasketInterface.js";
+        import { BasketInterface } from "./BasketInterface.js";
 
 export class Basket
             extends Object

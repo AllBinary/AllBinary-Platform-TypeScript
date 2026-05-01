@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -57,8 +61,7 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Movement } from "./Movement.js";
+        import { Movement } from "./Movement.js";
 
 export class BasicConstantVelocityMovement extends Movement implements VelocityInterfaceCompositeInterface {
         

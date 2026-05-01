@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { DomNodeInterface } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -60,8 +64,7 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GlobalsView } from "./GlobalsView.js";
+        import { GlobalsView } from "./GlobalsView.js";
 
 export class NewGlobalsValidationView extends GlobalsView implements ValidationComponentInterface {
         

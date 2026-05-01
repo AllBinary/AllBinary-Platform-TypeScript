@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GL10 } from "../../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -45,17 +49,11 @@ import { NullOpenGLProcessorFactory } from "../../../../../org/allbinary/graphic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Shader } from "./Shader.js";
-
+        import { Shader } from "./Shader.js";
 import { ShaderInitializer } from "./ShaderInitializer.js";
-
 import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
-
 import { ModelViewProjection } from "./ModelViewProjection.js";
-
 import { NullOpenGLTextureProcessor } from "./NullOpenGLTextureProcessor.js";
-
 import { OpenGLObject3dProcessor } from "./OpenGLObject3dProcessor.js";
 
 export class ShaderComposite

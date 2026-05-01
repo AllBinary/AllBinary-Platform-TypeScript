@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -45,8 +49,7 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
+        import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
 
 export class SpecialGameInput
             extends Object

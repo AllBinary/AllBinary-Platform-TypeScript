@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { CategoryView } from "../../../../../../org/allbinary/business/category/CategoryView.js";
 
     
@@ -57,8 +61,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
+        import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 
 export class StoreThemeCategoryPathView extends CategoryView implements DomNodeInterface {
         

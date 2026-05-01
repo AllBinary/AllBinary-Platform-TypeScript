@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { RTSLayerEvent } from "../../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
 
     

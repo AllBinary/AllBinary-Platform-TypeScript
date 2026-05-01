@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
 
     
@@ -96,8 +100,7 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TaxModuleInterface } from "./TaxModuleInterface.js";
+        import { TaxModuleInterface } from "./TaxModuleInterface.js";
 
 export class SimpleStateTaxModule
             extends Object

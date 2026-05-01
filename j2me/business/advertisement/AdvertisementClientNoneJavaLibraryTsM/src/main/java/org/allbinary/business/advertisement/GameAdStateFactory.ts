@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GameAdState } from "../../../../org/allbinary/game/GameAdState.js";
 
     
@@ -28,9 +32,7 @@ import { SoftwareInformation } from "../../../../org/allbinary/logic/system/Soft
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameAdStateFactoryInterface } from "./GameAdStateFactoryInterface.js";
-
+        import { GameAdStateFactoryInterface } from "./GameAdStateFactoryInterface.js";
 import { AppNameLicensingAdConfiguration } from "./AppNameLicensingAdConfiguration.js";
 
 export class GameAdStateFactory

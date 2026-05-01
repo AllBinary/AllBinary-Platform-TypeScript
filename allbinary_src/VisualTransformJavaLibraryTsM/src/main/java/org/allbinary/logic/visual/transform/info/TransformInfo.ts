@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../java/util/Calendar.js";
@@ -125,9 +129,7 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoInterface } from "./TransformInfoInterface.js";
-
+        import { TransformInfoInterface } from "./TransformInfoInterface.js";
 import { TransformInfoData } from "./TransformInfoData.js";
 
 export class TransformInfo

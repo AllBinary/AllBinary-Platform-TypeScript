@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -69,8 +73,7 @@ import { HelperTag } from "../../tags/HelperTag.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InventoryItemViewParentTagHelper } from "./InventoryItemViewParentTagHelper.js";
+        import { InventoryItemViewParentTagHelper } from "./InventoryItemViewParentTagHelper.js";
 
 export class MultipartRequestParamForwardHelper
             extends Object

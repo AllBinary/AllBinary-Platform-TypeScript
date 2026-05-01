@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { File } from "../../../../../java/io/File.js";
 
     
@@ -48,8 +52,7 @@ import { ResourceUtil } from "../../../../../org/allbinary/data/resource/Resourc
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFile } from "./AbFile.js";
+        import { AbFile } from "./AbFile.js";
 
 export class FileFactory
             extends Object

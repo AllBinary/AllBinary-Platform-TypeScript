@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
@@ -62,13 +66,9 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
-
+        import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
 import { AlwaysActionScriptConditionInterface } from "./AlwaysActionScriptConditionInterface.js";
-
 import { AlwaysActionScriptConditionJPanel } from "./AlwaysActionScriptConditionJPanel.js";
-
 import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
 
 export class AlwaysActionScriptCondition extends BasicProfileActionScriptCondition implements AlwaysActionScriptConditionInterface {

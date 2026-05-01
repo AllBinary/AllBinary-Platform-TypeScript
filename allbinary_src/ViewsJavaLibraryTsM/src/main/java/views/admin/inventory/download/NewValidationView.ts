@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BasicItem } from "../../../../org/allbinary/business/user/commerce/inventory/item/BasicItem.js";
 
     
@@ -60,8 +64,7 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DownloadableInventoryItemView } from "./DownloadableInventoryItemView.js";
+        import { DownloadableInventoryItemView } from "./DownloadableInventoryItemView.js";
 
 export class NewValidationView extends DownloadableInventoryItemView implements ValidationComponentInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
@@ -95,43 +99,24 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { ImageIconUnique } from "./ImageIconUnique.js";
-
 import { DefaultListModel } from "./DefaultListModel.js";
-
 import { ImageIcon } from "./ImageIcon.js";
-
 import { Icon } from "./Icon.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JScrollPane } from "./JScrollPane.js";
-
 import { JList } from "./JList.js";
-
 import { JButton } from "./JButton.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { PropertyChangeListener } from "./PropertyChangeListener.js";
-
 import { PropertyChangeEvent } from "./PropertyChangeEvent.js";
-
 import { KeyAdapter } from "./KeyAdapter.js";
-
 import { KeyEvent } from "./KeyEvent.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
 
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

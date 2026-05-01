@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CustomGPoint } from "../../../../../org/allbinary/graphics/CustomGPoint.js";
 
     

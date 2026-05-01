@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { DomNodeInterface } from "../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UrlGlobalsView } from "./UrlGlobalsView.js";
+        import { UrlGlobalsView } from "./UrlGlobalsView.js";
 
 export class UrlGlobalsViewFactory
             extends Object

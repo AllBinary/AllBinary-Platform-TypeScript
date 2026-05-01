@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { PickedUpLayerInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js";
 
     
@@ -69,8 +73,7 @@ import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackDropCellPositionGenerator } from "./RaceTrackDropCellPositionGenerator.js";
+        import { RaceTrackDropCellPositionGenerator } from "./RaceTrackDropCellPositionGenerator.js";
 
 export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         

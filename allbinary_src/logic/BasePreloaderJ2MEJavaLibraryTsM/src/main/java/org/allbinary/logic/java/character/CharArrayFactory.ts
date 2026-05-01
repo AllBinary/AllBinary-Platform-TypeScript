@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -64,7 +68,7 @@ export class CharArrayFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return zeroCharArray;
+                        return this.zeroCharArray;
     
 }
 

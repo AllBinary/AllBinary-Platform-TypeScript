@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";

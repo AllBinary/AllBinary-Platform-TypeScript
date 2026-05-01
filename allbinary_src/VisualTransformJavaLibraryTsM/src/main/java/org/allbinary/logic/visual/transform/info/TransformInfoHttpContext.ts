@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -63,8 +67,7 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoHttp } from "./TransformInfoHttp.js";
+        import { TransformInfoHttp } from "./TransformInfoHttp.js";
 
 export class TransformInfoHttpContext extends TransformInfoHttp {
         

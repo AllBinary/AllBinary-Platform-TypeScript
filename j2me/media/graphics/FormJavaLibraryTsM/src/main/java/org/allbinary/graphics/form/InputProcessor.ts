@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CollisionType } from "../../../../org/allbinary/game/collision/CollisionType.js";
 
     
@@ -45,8 +49,7 @@ import { CollidableDestroyableDamageableBehavior } from "../../../../org/allbina
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
+        import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
 
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -54,8 +58,7 @@ import { PaymentGatewayViewAbstract } from "../../../../views/admin/payment/gate
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaymentGatewaysView } from "./PaymentGatewaysView.js";
+        import { PaymentGatewaysView } from "./PaymentGatewaysView.js";
 
 export class SelectExistingView extends PaymentGatewayViewAbstract {
         

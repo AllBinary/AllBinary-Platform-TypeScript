@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../java/lang/System";
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../java/lang/System.js";
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
@@ -72,27 +76,16 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JComboBox } from "./JComboBox.js";
-
 import { JButton } from "./JButton.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
 
 export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Cipher } from "../../../../../../../javax/crypto/Cipher.js";
 
     
@@ -48,8 +52,7 @@ import { ByteUtil } from "../../../../../../../org/allbinary/logic/java/byteutil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseSecretComposite } from "./BaseSecretComposite.js";
+        import { BaseSecretComposite } from "./BaseSecretComposite.js";
 
 export class SecretComposite extends BaseSecretComposite {
         

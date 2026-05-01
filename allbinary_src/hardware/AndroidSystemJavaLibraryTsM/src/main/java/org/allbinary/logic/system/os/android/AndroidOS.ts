@@ -20,6 +20,10 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AndroidInfoFactory } from "../../../../../../org/allbinary/android/AndroidInfoFactory.js";
 
     
@@ -50,8 +54,7 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AndroidSystemProperties } from "./AndroidSystemProperties.js";
+        import { AndroidSystemProperties } from "./AndroidSystemProperties.js";
 
 export class AndroidOS extends GenericOperatingSystem {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -72,9 +76,7 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLESImage } from "./OpenGLESImage.js";
-
+        import { OpenGLESImage } from "./OpenGLESImage.js";
 import { OpenGLESImageDraw } from "./OpenGLESImageDraw.js";
 
 export class OpenGLESGL10Image extends OpenGLESImage {

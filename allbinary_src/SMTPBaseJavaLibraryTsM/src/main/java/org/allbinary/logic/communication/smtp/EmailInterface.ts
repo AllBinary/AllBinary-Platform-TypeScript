@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { MimeMessage } from "../../../../../javax/mail/internet/MimeMessage.js";
 
     

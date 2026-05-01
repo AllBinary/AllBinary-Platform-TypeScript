@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { CssPropertyView } from "../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js";
 
     
@@ -42,8 +46,7 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { FontFamilyData } from "./FontFamilyData.js";
+        import { FontFamilyData } from "./FontFamilyData.js";
 
 export class FontFamilyView extends CssPropertyView {
         

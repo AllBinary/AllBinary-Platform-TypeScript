@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -69,11 +73,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
-
+        import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
 import { HighScores } from "./HighScores.js";
-
 import { HighScore } from "./HighScore.js";
 
 export class HighScoresPaintable extends Paintable implements ColorChangeListener {

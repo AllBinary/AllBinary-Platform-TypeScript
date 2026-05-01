@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -51,9 +55,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonFactory } from "./TouchButtonFactory.js";
-
+        import { TouchButtonFactory } from "./TouchButtonFactory.js";
 import { TouchButton } from "./TouchButton.js";
 
 export class TouchButtonsPaintable extends Paintable {

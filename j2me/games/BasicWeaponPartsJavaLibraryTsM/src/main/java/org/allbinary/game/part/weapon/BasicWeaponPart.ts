@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -72,8 +76,7 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SalvoInterface } from "./SalvoInterface.js";
+        import { SalvoInterface } from "./SalvoInterface.js";
 
 export class BasicWeaponPart
             extends Object

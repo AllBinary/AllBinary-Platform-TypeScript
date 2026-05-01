@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DomNodeHelper } from "../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
 
     
@@ -63,8 +67,7 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CategoryData } from "./CategoryData.js";
+        import { CategoryData } from "./CategoryData.js";
 
 export class CategoryUtil
             extends Object

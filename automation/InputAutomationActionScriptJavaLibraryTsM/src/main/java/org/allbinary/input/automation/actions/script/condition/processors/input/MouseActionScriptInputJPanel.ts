@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { InputEvent } from "../../../../../../../../../java/awt/event/InputEvent.js";
@@ -68,37 +72,21 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
-
 import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-
 import { ComboBoxModel } from "./ComboBoxModel.js";
-
 import { JDialog } from "./JDialog.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JButton } from "./JButton.js";
-
 import { JCheckBox } from "./JCheckBox.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { JComboBox } from "./JComboBox.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { Insets } from "./Insets.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
 
 export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
@@ -239,7 +227,7 @@ this.logUtil!.putF("Button 1 Selected: " +this.mouseActionScriptInputInterface!.
                         if((this.mouseActionScriptInputInterface!.getButtonClicks()&InputEvent.BUTTON1_MASK) != 0)
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON1_MASK);
+                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() ^ InputEvent.BUTTON1_MASK);
     
 this.logUtil!.putF("Button 1 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
     
@@ -272,7 +260,7 @@ this.logUtil!.putF("Button 2 Selected: " +this.mouseActionScriptInputInterface!.
                         if((this.mouseActionScriptInputInterface!.getButtonClicks()&InputEvent.BUTTON2_MASK) != 0)
                         
                                     {
-                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() xor InputEvent.BUTTON2_MASK);
+                                    this.mouseActionScriptInputInterface!.setButtonClicks(this.mouseActionScriptInputInterface!.getButtonClicks() ^ InputEvent.BUTTON2_MASK);
     
 this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface!.getButtonClicks(), this, "update");
     

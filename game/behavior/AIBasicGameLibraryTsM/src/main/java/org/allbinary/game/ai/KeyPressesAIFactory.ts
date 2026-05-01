@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -51,11 +55,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
-
+        import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
 import { MultiKeyPressesAI } from "./MultiKeyPressesAI.js";
-
 import { KeyPressesAI } from "./KeyPressesAI.js";
 
 export class KeyPressesAIFactory

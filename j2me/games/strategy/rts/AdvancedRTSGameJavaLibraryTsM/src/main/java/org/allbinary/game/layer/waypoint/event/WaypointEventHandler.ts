@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { RTSLayerEvent } from "../../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
 
     
@@ -47,8 +51,7 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WaypointEventListenerInterface } from "./WaypointEventListenerInterface.js";
+        import { WaypointEventListenerInterface } from "./WaypointEventListenerInterface.js";
 
 export class WaypointEventHandler extends BasicEventHandler {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -60,8 +64,7 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSInterface } from "./RTSInterface.js";
+        import { RTSInterface } from "./RTSInterface.js";
 
 export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
         

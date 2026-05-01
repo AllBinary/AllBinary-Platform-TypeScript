@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Angle } from "../../../../org/allbinary/math/Angle.js";
 
     

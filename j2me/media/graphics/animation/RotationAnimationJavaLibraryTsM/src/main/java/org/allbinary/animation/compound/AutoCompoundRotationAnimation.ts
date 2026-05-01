@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -69,8 +73,7 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CompoundAnimationInterface } from "./CompoundAnimationInterface.js";
+        import { CompoundAnimationInterface } from "./CompoundAnimationInterface.js";
 
 export class AutoCompoundRotationAnimation extends RotationAnimation implements CompoundAnimationInterface {
         

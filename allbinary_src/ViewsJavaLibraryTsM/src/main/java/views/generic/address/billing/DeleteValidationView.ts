@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { StreetAddressData } from "../../../../org/allbinary/business/user/address/StreetAddressData.js";
@@ -59,8 +63,7 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BillingAddressView } from "./BillingAddressView.js";
+        import { BillingAddressView } from "./BillingAddressView.js";
 
 export class DeleteValidationView extends BillingAddressView implements ValidationComponentInterface {
         

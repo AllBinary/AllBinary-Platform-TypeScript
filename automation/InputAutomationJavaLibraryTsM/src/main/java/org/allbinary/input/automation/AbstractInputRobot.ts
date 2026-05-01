@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../java/awt.js";
@@ -47,11 +51,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Point } from "./Point.js";
-
+        import { Point } from "./Point.js";
 import { PointHelper } from "./PointHelper.js";
-
 import { Rectangle } from "./Rectangle.js";
 
 export class AbstractInputRobot

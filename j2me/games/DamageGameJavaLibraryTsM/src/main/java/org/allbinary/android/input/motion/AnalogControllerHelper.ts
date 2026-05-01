@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
 
     
@@ -42,8 +46,7 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnalogControllerConfigurationFactory } from "./AnalogControllerConfigurationFactory.js";
+        import { AnalogControllerConfigurationFactory } from "./AnalogControllerConfigurationFactory.js";
 
 export class AnalogControllerHelper
             extends Object

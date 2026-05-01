@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -66,9 +70,7 @@ import { DownloadableInventoryItemView } from "../../views/admin/inventory/downl
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ModifyTable } from "./ModifyTable.js";
-
+        import { ModifyTable } from "./ModifyTable.js";
 import { InventoryItemViewParentTagHelper } from "./InventoryItemViewParentTagHelper.js";
 
 export class DownloadItemsRequestHelper extends ModifyTable {

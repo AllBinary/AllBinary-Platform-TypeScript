@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Player } from "../../../../javax/microedition/media/Player.js";
@@ -62,11 +66,8 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SoundStrings } from "./SoundStrings.js";
-
+        import { SoundStrings } from "./SoundStrings.js";
 import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
-
 import { Sound } from "./Sound.js";
 
 export class Sounds

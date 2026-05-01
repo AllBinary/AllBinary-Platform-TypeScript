@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { PersistentInputMapping } from "../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NormalJ2MEGameInputMapping } from "./NormalJ2MEGameInputMapping.js";
+        import { NormalJ2MEGameInputMapping } from "./NormalJ2MEGameInputMapping.js";
 
 export class PlatformInputMappingFactory
             extends Object

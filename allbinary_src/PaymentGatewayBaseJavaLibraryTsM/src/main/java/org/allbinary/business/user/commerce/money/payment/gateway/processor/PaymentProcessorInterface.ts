@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { PaymentException } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentException.js";
 
     

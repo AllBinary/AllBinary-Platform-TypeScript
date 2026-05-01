@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 import { ActionEvent } from "../../../../../../../java/awt/event/ActionEvent.js";
@@ -98,21 +102,13 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProfileActionScriptConditionInterface } from "./ProfileActionScriptConditionInterface.js";
-
+        import { ProfileActionScriptConditionInterface } from "./ProfileActionScriptConditionInterface.js";
 import { GenericProfileActionScriptConditionData } from "./GenericProfileActionScriptConditionData.js";
-
 import { ProfileActionScriptConditionFactory } from "./ProfileActionScriptConditionFactory.js";
-
 import { JMenu } from "./JMenu.js";
-
 import { JMenuItem } from "./JMenuItem.js";
-
 import { TimeIntervalActionScriptCondition } from "./TimeIntervalActionScriptCondition.js";
-
 import { AlwaysActionScriptCondition } from "./AlwaysActionScriptCondition.js";
-
 import { ColorAtActionScriptCondition } from "./ColorAtActionScriptCondition.js";
 
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {

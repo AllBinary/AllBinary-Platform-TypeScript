@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { MinMaxDoubleConstraintInterface } from "../../../../../../org/allbinary/logic/control/contraints/MinMaxDoubleConstraintInterface.js";
 
     

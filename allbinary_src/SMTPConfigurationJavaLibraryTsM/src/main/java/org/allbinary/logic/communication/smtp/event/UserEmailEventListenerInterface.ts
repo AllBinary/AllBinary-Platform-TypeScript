@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { EventListener } from "../../../../../../java/util/EventListener.js";
 
     
@@ -39,8 +43,7 @@ import { EventListener } from "../../../../../../java/util/EventListener.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { EmailEvent } from "./EmailEvent.js";
+        import { EmailEvent } from "./EmailEvent.js";
 
 export interface UserEmailEventListenerInterface extends EventListener {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameKeyEventSourceInterface } from "../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js";
 
     
@@ -51,8 +55,7 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameKeyEvent } from "./GameKeyEvent.js";
+        import { GameKeyEvent } from "./GameKeyEvent.js";
 
 export class GameKeyEventFactory
             extends Object

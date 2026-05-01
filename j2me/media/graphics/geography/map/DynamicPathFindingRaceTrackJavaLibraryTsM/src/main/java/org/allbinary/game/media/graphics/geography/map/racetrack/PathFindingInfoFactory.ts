@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
 import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
@@ -95,8 +99,7 @@ import { BasicArrayListS } from "../../../../../../../../org/allbinary/util/Basi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SimplePathFinderGraphVisitorFactory } from "./SimplePathFinderGraphVisitorFactory.js";
+        import { SimplePathFinderGraphVisitorFactory } from "./SimplePathFinderGraphVisitorFactory.js";
 
 export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
         

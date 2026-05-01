@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -42,8 +46,7 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicArrayList } from "./BasicArrayList.js";
+        import { BasicArrayList } from "./BasicArrayList.js";
 
 export class BasicArrayListS extends BasicArrayList {
         

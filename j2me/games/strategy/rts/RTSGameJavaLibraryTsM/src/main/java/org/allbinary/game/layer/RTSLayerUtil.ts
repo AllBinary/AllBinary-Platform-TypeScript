@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -77,11 +81,8 @@ import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/grap
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSLayer } from "./RTSLayer.js";
-
+        import { RTSLayer } from "./RTSLayer.js";
 import { FakeLayerManager } from "./FakeLayerManager.js";
-
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 export class RTSLayerUtil

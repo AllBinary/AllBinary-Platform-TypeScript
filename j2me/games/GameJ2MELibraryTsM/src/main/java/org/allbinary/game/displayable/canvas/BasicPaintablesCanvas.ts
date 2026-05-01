@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -54,8 +58,7 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameCommandCanvas } from "./GameCommandCanvas.js";
+        import { GameCommandCanvas } from "./GameCommandCanvas.js";
 
 export class BasicPaintablesCanvas extends GameCommandCanvas {
         

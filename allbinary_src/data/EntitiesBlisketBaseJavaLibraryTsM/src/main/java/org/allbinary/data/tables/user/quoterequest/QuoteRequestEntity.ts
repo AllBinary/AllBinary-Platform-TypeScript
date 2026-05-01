@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../java/util/HashMap.js";
@@ -68,8 +72,7 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { QuoteRequestEntityInterface } from "./QuoteRequestEntityInterface.js";
+        import { QuoteRequestEntityInterface } from "./QuoteRequestEntityInterface.js";
 
 export class QuoteRequestEntity extends AbSqlBean implements QuoteRequestEntityInterface {
         

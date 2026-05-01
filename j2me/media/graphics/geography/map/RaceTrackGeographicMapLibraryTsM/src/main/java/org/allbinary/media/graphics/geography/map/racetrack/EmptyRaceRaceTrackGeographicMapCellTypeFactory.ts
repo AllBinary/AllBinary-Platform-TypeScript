@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -42,9 +46,7 @@ import { PathFindingNodeCostInfoData } from "../../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackGeographicMapCellTypeFactory } from "./RaceTrackGeographicMapCellTypeFactory.js";
-
+        import { RaceTrackGeographicMapCellTypeFactory } from "./RaceTrackGeographicMapCellTypeFactory.js";
 import { RaceTrackGeographicMapCellType } from "./RaceTrackGeographicMapCellType.js";
 
 export class EmptyRaceRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {

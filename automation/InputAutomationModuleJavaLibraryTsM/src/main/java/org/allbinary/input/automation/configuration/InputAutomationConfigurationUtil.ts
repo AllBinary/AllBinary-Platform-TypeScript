@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { InputAutomationModuleFactoryInterface } from "../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js";
 
     
@@ -42,8 +46,7 @@ import { InputAutomationModuleConfiguration } from "../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationConfigurationModuleChangeEvent } from "./InputAutomationConfigurationModuleChangeEvent.js";
+        import { InputAutomationConfigurationModuleChangeEvent } from "./InputAutomationConfigurationModuleChangeEvent.js";
 
 export class InputAutomationConfigurationUtil
             extends Object

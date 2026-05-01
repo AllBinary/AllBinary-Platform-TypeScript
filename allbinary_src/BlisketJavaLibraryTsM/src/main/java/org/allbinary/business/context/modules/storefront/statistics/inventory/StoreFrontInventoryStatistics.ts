@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../../java/lang/Long.js";
@@ -61,9 +65,7 @@ import { InventoryEntityInterface } from "../../../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreFrontInventoryStatisticsInterface } from "./StoreFrontInventoryStatisticsInterface.js";
-
+        import { StoreFrontInventoryStatisticsInterface } from "./StoreFrontInventoryStatisticsInterface.js";
 import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
 
 export class StoreFrontInventoryStatistics

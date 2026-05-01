@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
 
     
@@ -39,8 +43,7 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { FormType } from "./FormType.js";
+        import { FormType } from "./FormType.js";
 
 export class FormTypeFactory
             extends Object

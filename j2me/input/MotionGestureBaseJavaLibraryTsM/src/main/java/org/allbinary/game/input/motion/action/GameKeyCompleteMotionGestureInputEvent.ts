@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { CompleteMotionGestureInputEvent } from "../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js";
 
     
@@ -60,8 +64,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameKeyCompleteMotionGestureInputEventFactory } from "./GameKeyCompleteMotionGestureInputEventFactory.js";
+        import { GameKeyCompleteMotionGestureInputEventFactory } from "./GameKeyCompleteMotionGestureInputEventFactory.js";
 
 export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent implements GameKeyEventSourceInterface {
         

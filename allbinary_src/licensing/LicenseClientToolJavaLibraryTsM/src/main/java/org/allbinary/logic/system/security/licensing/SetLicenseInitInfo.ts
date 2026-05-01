@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../../java/lang/System";
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../../java/lang/System.js";
         
 import { BufferedReader } from "../../../../../../java/io/BufferedReader.js";
 
@@ -68,9 +72,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicArrayListD } from "./BasicArrayListD.js";
-
+        import { BasicArrayListD } from "./BasicArrayListD.js";
 import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
 
 export class SetLicenseInitInfo

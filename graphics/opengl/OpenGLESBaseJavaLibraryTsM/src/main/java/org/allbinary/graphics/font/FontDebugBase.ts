@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Font } from "../../../../javax/microedition/lcdui/Font.js";
 
     

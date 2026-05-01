@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -78,8 +82,7 @@ import { CommonPhoneStrings } from "../../org/allbinary/string/CommonPhoneString
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TagHelper } from "./TagHelper.js";
+        import { TagHelper } from "./TagHelper.js";
 
 export class OrderHistoryRequestHelper extends TagHelper {
         

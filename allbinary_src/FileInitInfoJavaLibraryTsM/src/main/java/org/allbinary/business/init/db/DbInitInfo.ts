@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FREEBLISKET_PATH_GLOBALS } from "../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
 
     
@@ -90,8 +94,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DbConnectionInfo } from "./DbConnectionInfo.js";
+        import { DbConnectionInfo } from "./DbConnectionInfo.js";
 
 export class DbInitInfo extends DbConnectionInfo {
         

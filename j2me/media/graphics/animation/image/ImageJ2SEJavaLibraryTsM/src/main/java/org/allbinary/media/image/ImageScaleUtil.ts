@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics2D } from "../../../../java/awt/Graphics2D.js";
 
     
@@ -51,11 +55,8 @@ import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageUtil } from "./ImageUtil.js";
-
+        import { ImageUtil } from "./ImageUtil.js";
 import { ImageJ2SEUtil } from "./ImageJ2SEUtil.js";
-
 import { ImageCreationUtil } from "./ImageCreationUtil.js";
 
 export class ImageScaleUtil

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { StringBufferInputStream } from "../../../../../java/io/StringBufferInputStream.js";
 
     
@@ -57,8 +61,7 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { XslHelper } from "./XslHelper.js";
+        import { XslHelper } from "./XslHelper.js";
 
 export class SimpleTransform
             extends Object

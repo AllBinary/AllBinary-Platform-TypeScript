@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DataInputStream } from "../../../../java/io/DataInputStream.js";
 
     
@@ -48,8 +52,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFileInputStream } from "./AbFileInputStream.js";
+        import { AbFileInputStream } from "./AbFileInputStream.js";
 
 export class LineReader
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -78,21 +82,13 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PlayerGameInput } from "./PlayerGameInput.js";
-
+        import { PlayerGameInput } from "./PlayerGameInput.js";
 import { InputFactory } from "./InputFactory.js";
-
 import { GameInputProcessor } from "./GameInputProcessor.js";
-
 import { ScrollMapUpGameInputProcessor } from "./ScrollMapUpGameInputProcessor.js";
-
 import { ScrollMapDownGameInputProcessor } from "./ScrollMapDownGameInputProcessor.js";
-
 import { ScrollMapRightGameInputProcessor } from "./ScrollMapRightGameInputProcessor.js";
-
 import { ScrollMapLeftGameInputProcessor } from "./ScrollMapLeftGameInputProcessor.js";
-
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 export class ScrollMapPlayerGameInput extends PlayerGameInput {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -45,8 +49,7 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TerrainEvent } from "./TerrainEvent.js";
+        import { TerrainEvent } from "./TerrainEvent.js";
 
 export class TerrainEventFactory
             extends Object

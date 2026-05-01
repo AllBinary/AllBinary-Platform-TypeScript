@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { ShippingMethodData } from "../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js";
 
     
@@ -57,8 +61,7 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicWeightShippingModule } from "./BasicWeightShippingModule.js";
+        import { BasicWeightShippingModule } from "./BasicWeightShippingModule.js";
 
 export class BasicWeightShippingModuleView extends BasicWeightShippingModule implements DomNodeInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
 
     
@@ -72,8 +76,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameCommandCanvas } from "./GameCommandCanvas.js";
+        import { GameCommandCanvas } from "./GameCommandCanvas.js";
 
 export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
         

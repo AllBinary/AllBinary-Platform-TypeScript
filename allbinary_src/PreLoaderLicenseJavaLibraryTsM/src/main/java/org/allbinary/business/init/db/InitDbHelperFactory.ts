@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AbeFactory } from "../../../../../org/allbinary/logic/system/loader/AbeFactory.js";
 
     
@@ -45,8 +49,7 @@ import { LicensingException } from "../../../../../org/allbinary/logic/system/se
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DatabaseConnectionInfoInterface } from "./DatabaseConnectionInfoInterface.js";
+        import { DatabaseConnectionInfoInterface } from "./DatabaseConnectionInfoInterface.js";
 
 export class InitDbHelperFactory
             extends Object

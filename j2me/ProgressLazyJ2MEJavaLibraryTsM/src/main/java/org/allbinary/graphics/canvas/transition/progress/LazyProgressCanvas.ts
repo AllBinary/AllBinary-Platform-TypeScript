@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Processor } from "../../../../../../org/allbinary/canvas/Processor.js";
 
     
@@ -51,8 +55,7 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProgressCanvas } from "./ProgressCanvas.js";
+        import { ProgressCanvas } from "./ProgressCanvas.js";
 
 export class LazyProgressCanvas extends ProgressCanvas {
         

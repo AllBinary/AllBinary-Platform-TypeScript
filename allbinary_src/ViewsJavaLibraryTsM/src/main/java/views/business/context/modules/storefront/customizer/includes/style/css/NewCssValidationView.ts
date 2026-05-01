@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -63,8 +67,7 @@ import { CustomizerUtil } from "../../../../../../../../../views/business/contex
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CssCustomizerView } from "./CssCustomizerView.js";
+        import { CssCustomizerView } from "./CssCustomizerView.js";
 
 export class NewCssValidationView extends CssCustomizerView implements ValidationComponentInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -63,8 +67,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WorkFlowInterface } from "./WorkFlowInterface.js";
+        import { WorkFlowInterface } from "./WorkFlowInterface.js";
 
 export class TagWorkFlowFactory
             extends Object

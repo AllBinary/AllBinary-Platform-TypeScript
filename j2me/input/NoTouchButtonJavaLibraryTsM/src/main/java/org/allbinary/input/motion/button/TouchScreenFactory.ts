@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
-
+        import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
 import { TouchScreenType } from "./TouchScreenType.js";
 
 export class TouchScreenFactory

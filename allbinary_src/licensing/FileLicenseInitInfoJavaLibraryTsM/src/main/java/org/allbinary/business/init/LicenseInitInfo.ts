@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DebugFactory } from "../../../../org/allbinary/debug/DebugFactory.js";
 
     

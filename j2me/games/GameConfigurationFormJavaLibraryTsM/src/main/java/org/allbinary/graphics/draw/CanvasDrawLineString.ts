@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -42,8 +46,7 @@ import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DrawStringUtil } from "./DrawStringUtil.js";
+        import { DrawStringUtil } from "./DrawStringUtil.js";
 
 export class CanvasDrawLineString
             extends Object

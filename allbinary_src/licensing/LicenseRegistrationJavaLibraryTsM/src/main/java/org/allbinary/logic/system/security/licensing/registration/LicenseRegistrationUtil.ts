@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
 
     
@@ -54,9 +58,7 @@ import { CommonLabels } from "../../../../../../../org/allbinary/string/CommonLa
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
-
+        import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
 import { XmlRpcRemoteLicenseRegistrationClient } from "./XmlRpcRemoteLicenseRegistrationClient.js";
 
 export class LicenseRegistrationUtil

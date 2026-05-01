@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
@@ -89,13 +93,9 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameInputProcessorInterface } from "./GameInputProcessorInterface.js";
-
+        import { GameInputProcessorInterface } from "./GameInputProcessorInterface.js";
 import { PlayerGameInputCompositeInterface } from "./PlayerGameInputCompositeInterface.js";
-
 import { PlayerGameInput } from "./PlayerGameInput.js";
-
 import { GameInputProcessorComposite } from "./GameInputProcessorComposite.js";
 
 export class PreGameSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {

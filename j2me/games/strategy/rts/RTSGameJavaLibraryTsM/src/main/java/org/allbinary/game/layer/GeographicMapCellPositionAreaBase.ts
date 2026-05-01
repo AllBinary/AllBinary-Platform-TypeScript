@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -45,8 +49,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPositionAreaInterface } from "./GeographicMapCellPositionAreaInterface.js";
+        import { GeographicMapCellPositionAreaInterface } from "./GeographicMapCellPositionAreaInterface.js";
 
 export class GeographicMapCellPositionAreaBase
             extends Object

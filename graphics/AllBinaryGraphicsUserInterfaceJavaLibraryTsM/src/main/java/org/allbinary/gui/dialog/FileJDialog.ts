@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
     
@@ -45,23 +49,14 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JDialog } from "./JDialog.js";
-
+        import { JDialog } from "./JDialog.js";
 import { FileJDialogListenerInterface } from "./FileJDialogListenerInterface.js";
-
 import { Frame } from "./Frame.js";
-
 import { JFileChooser } from "./JFileChooser.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
 import { JFrame } from "./JFrame.js";
 
 export class FileJDialog extends javax.swing.JDialog {

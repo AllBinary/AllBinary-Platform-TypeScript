@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -95,27 +99,16 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GraphicItemInterface } from "./GraphicItemInterface.js";
-
+        import { GraphicItemInterface } from "./GraphicItemInterface.js";
 import { Color } from "./Color.js";
-
 import { Points } from "./Points.js";
-
 import { PointsDomUtil } from "./PointsDomUtil.js";
-
 import { Math } from "./Math.js";
-
 import { Graphics2D } from "./Graphics2D.js";
-
 import { BasicStroke } from "./BasicStroke.js";
-
 import { PointsUtil } from "./PointsUtil.js";
-
 import { Graphics } from "./Graphics.js";
-
 import { MouseEvent } from "./MouseEvent.js";
-
 import { KeyEvent } from "./KeyEvent.js";
 
 export class LinesGraphicItem

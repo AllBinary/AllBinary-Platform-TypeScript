@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../com/jogamp/opengl/GL.js";
 
     
@@ -42,13 +46,9 @@ import { GL2 } from "../../../com/jogamp/opengl/GL2.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GL11 } from "./GL11.js";
-
+        import { GL11 } from "./GL11.js";
 import { Buffer } from "./Buffer.js";
-
 import { FloatBuffer } from "./FloatBuffer.js";
-
 import { IntBuffer } from "./IntBuffer.js";
 
 export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengles.GL11 {

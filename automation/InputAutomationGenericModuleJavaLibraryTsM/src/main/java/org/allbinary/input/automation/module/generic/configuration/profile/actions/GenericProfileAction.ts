@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -63,9 +67,7 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GenericProfileActionJPanel } from "./GenericProfileActionJPanel.js";
-
+        import { GenericProfileActionJPanel } from "./GenericProfileActionJPanel.js";
 import { GenericProfileActionData } from "./GenericProfileActionData.js";
 
 export class GenericProfileAction

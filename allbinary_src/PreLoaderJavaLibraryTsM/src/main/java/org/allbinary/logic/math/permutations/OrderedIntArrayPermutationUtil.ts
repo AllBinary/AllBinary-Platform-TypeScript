@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
@@ -41,8 +45,7 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { IntPermutationVisitor } from "./IntPermutationVisitor.js";
+        import { IntPermutationVisitor } from "./IntPermutationVisitor.js";
 
 export class OrderedIntArrayPermutationUtil
             extends Object

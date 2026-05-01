@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Features } from "../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -51,8 +55,7 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameStatisticsFactory } from "./GameStatisticsFactory.js";
+        import { GameStatisticsFactory } from "./GameStatisticsFactory.js";
 
 export class SpecialMessageUtil
             extends Object

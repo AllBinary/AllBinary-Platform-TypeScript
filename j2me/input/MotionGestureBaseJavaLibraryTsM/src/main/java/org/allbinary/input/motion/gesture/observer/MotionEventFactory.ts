@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Input } from "../../../../../../org/allbinary/game/input/Input.js";
 
     
@@ -54,8 +58,7 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allb
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionGestureEvent } from "./MotionGestureEvent.js";
+        import { MotionGestureEvent } from "./MotionGestureEvent.js";
 
 export class MotionEventFactory
             extends Object

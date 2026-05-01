@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { PATH_GLOBALS } from "../../../../org/allbinary/globals/PATH_GLOBALS.js";
 
     
@@ -45,8 +49,7 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UniqueIdGenerator } from "./UniqueIdGenerator.js";
+        import { UniqueIdGenerator } from "./UniqueIdGenerator.js";
 
 export class PaymentIdGenerator extends UniqueIdGenerator {
         

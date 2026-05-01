@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../java/lang/Object.js";
+
+
+        
             import { Integer } from "../java/lang/Integer.js";
         
 import { Method } from "../java/lang/reflect/Method.js";
@@ -59,8 +63,7 @@ import { StoreTagWorkFlowHelperFactory } from "../taghelpers/StoreTagWorkFlowHel
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HelperTag } from "./HelperTag.js";
+        import { HelperTag } from "./HelperTag.js";
 
 export class StoreWorkFlowTag extends HelperTag {
         

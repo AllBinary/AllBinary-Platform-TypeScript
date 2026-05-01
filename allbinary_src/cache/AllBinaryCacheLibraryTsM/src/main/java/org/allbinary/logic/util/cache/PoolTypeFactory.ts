@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -22,9 +26,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PoolType } from "./PoolType.js";
-
+        import { PoolType } from "./PoolType.js";
 import { CacheTypeFactory } from "./CacheTypeFactory.js";
 
 export class PoolTypeFactory

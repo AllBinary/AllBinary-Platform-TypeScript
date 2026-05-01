@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
 
     
@@ -63,8 +67,7 @@ import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+        import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 export class WaypointBehaviorBase
             extends Object

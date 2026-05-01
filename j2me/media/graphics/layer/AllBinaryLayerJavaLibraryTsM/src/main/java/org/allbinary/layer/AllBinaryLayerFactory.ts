@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
 
     
@@ -45,9 +49,7 @@ import { ViewPosition } from "../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryLayerFactoryInterface } from "./AllBinaryLayerFactoryInterface.js";
-
+        import { AllBinaryLayerFactoryInterface } from "./AllBinaryLayerFactoryInterface.js";
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
 export class AllBinaryLayerFactory

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BoundsVisitorInterface } from "../../../../org/allbinary/bounds/BoundsVisitorInterface.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { InputFactory } from "../../../../../../org/allbinary/game/input/InputFactory.js";
 
     
@@ -48,9 +52,7 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionEventFactory } from "./MotionEventFactory.js";
-
+        import { MotionEventFactory } from "./MotionEventFactory.js";
 import { MotionGestureEvent } from "./MotionGestureEvent.js";
 
 export class MotionEventCircularPool

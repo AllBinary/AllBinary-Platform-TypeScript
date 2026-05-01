@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { TiledLayer } from "../../../../javax/microedition/lcdui/game/TiledLayer.js";
 
     
@@ -57,9 +61,7 @@ import { TiledLayerFactory } from "../../../../org/allbinary/media/graphics/geog
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
-
+        import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
 import { AllBinaryJ2METiledLayer } from "./AllBinaryJ2METiledLayer.js";
 
 export class AllBinaryTiledLayerFactory

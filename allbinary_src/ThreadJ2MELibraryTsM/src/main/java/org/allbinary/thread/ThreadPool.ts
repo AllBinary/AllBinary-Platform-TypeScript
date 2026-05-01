@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../java/lang/Runnable.js";
@@ -26,9 +30,6 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 
     
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
-
-    
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
     
 import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
@@ -61,15 +62,10 @@ import { BasicArrayListUtil } from "../../../org/allbinary/util/BasicArrayListUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NullRunnable } from "./NullRunnable.js";
-
+        import { NullRunnable } from "./NullRunnable.js";
 import { ThreadPoolStrings } from "./ThreadPoolStrings.js";
-
 import { ThreadObjectUtil } from "./ThreadObjectUtil.js";
-
 import { PooledThread } from "./PooledThread.js";
-
 import { PriorityRunnable } from "./PriorityRunnable.js";
 
 export class ThreadPool
@@ -79,7 +75,7 @@ export class ThreadPool
 
     private static readonly ROOT_NAME: string = "-PooledThread-";
 
-    public NORMAL_PRIORITY: number = Thread.NORM_PRIORITY;
+    public static readonly NORMAL_PRIORITY: number = Thread.NORM_PRIORITY;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -102,6 +98,8 @@ export class ThreadPool
     private threadID: number= 0
 
     private numThreads: number
+
+    runningTask: boolean= false
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
@@ -138,7 +136,7 @@ this.taskQueue= new BasicArrayListD();
     var i: number = 0;
 i < this.numThreads; i++)
         {
-pooledThread= new PooledThread();
+pooledThread= new PooledThread(this);
     
 pooledThread!.setPriority(this.priority);
     
@@ -242,7 +240,7 @@ this.taskQueue!.addAt(index, task);
 
                         }
                             
-notify();
+this.notify();
     
 
                                     }
@@ -278,7 +276,7 @@ notify();
                                     {
                                     this.taskQueue!.add(task);
     
-notify();
+this.notify();
     
 
                                     }
@@ -391,7 +389,7 @@ this.isAlive= false;
     
 this.taskQueue!.clear();
     
-notifyAll();
+this.notifyAll();
     
 
 
@@ -476,104 +474,17 @@ this.taskQueue!.clear();
 }
 
 
-    private runningTask: boolean= false
+    public createName(): string{
 
-export inner class PooledThread extends Thread {
-        
-/*Static stuff is not allowed for Typescript inner classes*//**/
 
-public constructor (){
-            super(new StringMaker().
-                            append(poolName)!.append(ROOT_NAME)!.appendint(threadID++)!.toString());
-                    
 
-                            //For kotlin this is before the body of the constructor.
-                    
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
-    
-logUtil!.putF(commonStrings!.CONSTRUCTOR, this, commonStrings!.CONSTRUCTOR);
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return new StringMaker().
+                            append(this.poolName)!.append(ThreadPool.ROOT_NAME)!.appendint(this.threadID++)!.toString();;
     
 }
 
 
-    private readonly INTERRUPT_EXCEPTION: string = "Exit InterruptedException";
-
-    public run(){
-threadStarted();
-    
-
-        while(true)
-        {
-
-    var task2: Runnable = threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
-;
-    
-
-        try {
-            task2= getTask();
-    
-runningTask= true;
-    
-startTask(task2);
-    
-
-                //: 
-} catch(ex) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
-    
-logUtil!.putF(INTERRUPT_EXCEPTION, this, commonStrings!.RUN);
-    
-break;
-
-                    
-}
-
-
-                        if(task2 == threadObjectUtil!.NULL_PRIORITY_RUNNABLE)
-                        
-                                    {
-                                    break;
-
-                    
-
-                                    }
-                                
-
-        try {
-            task2.run();
-    
-completedTask(task2);
-    
-runningTask= false;
-    
-
-                //: 
-} catch(e) 
-            {
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
-    
-logUtil!.put(new StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(StringUtil.getInstance()!.toString(task2))!.toString(), this, commonStrings!.RUN, e);
-    
-}
-
-}
-
-threadStopped();
-    
-}
-
-
-}
-                
-            
 }
                 
             

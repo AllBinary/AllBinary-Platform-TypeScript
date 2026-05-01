@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { DirectionFactory } from "../../../../org/allbinary/direction/DirectionFactory.js";
@@ -41,8 +45,7 @@ import { DirectionFactory } from "../../../../org/allbinary/direction/DirectionF
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerPlacementType } from "./LayerPlacementType.js";
+        import { LayerPlacementType } from "./LayerPlacementType.js";
 
 export class LayerPlacementTypeFactory
             extends Object

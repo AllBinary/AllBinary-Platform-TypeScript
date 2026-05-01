@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -54,17 +58,11 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PickedUpLayerInterfaceFactory } from "./PickedUpLayerInterfaceFactory.js";
-
+        import { PickedUpLayerInterfaceFactory } from "./PickedUpLayerInterfaceFactory.js";
 import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
-
 import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
-
 import { IconLayer } from "./IconLayer.js";
-
 import { CountedPickedUpLayerInterfaceFactoryPool } from "./CountedPickedUpLayerInterfaceFactoryPool.js";
-
 import { PickedUpLayerType } from "./PickedUpLayerType.js";
 
 export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements CountedPickedUpLayerInterfaceFactoryInterface {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { RecordFilter } from "../../../../../javax/microedition/rms/RecordFilter.js";
 
     

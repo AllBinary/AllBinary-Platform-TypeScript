@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Control } from "../../../../javax/microedition/media/Control.js";
 
     
@@ -60,11 +64,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TimeBaseInterface } from "./TimeBaseInterface.js";
-
+        import { TimeBaseInterface } from "./TimeBaseInterface.js";
 import { Controllable2 } from "./Controllable2.js";
-
 import { NullControl } from "./NullControl.js";
 
 export class BasicPlayer

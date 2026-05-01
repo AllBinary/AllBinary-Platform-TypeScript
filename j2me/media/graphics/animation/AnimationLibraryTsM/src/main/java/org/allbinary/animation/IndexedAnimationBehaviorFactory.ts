@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,11 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
-
+        import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
 import { IndexedAnimationBehavior } from "./IndexedAnimationBehavior.js";
-
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class IndexedAnimationBehaviorFactory extends AnimationBehaviorFactory {

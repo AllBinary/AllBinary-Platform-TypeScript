@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
@@ -66,9 +70,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CommandTextItem } from "./CommandTextItem.js";
-
+        import { CommandTextItem } from "./CommandTextItem.js";
 import { CustomItem } from "./CustomItem.js";
 
 export class CommandTextItemArrayFactory

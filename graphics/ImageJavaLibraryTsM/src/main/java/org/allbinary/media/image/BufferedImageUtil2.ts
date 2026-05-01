@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../java/awt.js";
 
     
@@ -28,9 +32,7 @@ import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageUtil } from "./ImageUtil.js";
-
+        import { ImageUtil } from "./ImageUtil.js";
 import { Graphics2D } from "./Graphics2D.js";
 
 export class BufferedImageUtil2

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -48,8 +52,7 @@ import { AnimationBehavior } from "../../../../../org/allbinary/animation/Animat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinarySpriteRotationAnimation } from "./AllBinarySpriteRotationAnimation.js";
+        import { AllBinarySpriteRotationAnimation } from "./AllBinarySpriteRotationAnimation.js";
 
 export class AllBinaryAdjustedSpriteRotationAnimation extends AllBinarySpriteRotationAnimation {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -72,8 +76,7 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLESImage } from "./OpenGLESImage.js";
+        import { OpenGLESImage } from "./OpenGLESImage.js";
 
 export class OpenGLESGL11ExtImage extends OpenGLESImage {
         

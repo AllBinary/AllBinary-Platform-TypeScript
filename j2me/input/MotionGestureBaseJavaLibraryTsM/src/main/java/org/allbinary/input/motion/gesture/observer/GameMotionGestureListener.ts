@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { MotionGestureInput } from "../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
 
     
@@ -66,11 +70,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionGestureEventListener } from "./MotionGestureEventListener.js";
-
+        import { MotionGestureEventListener } from "./MotionGestureEventListener.js";
 import { CompleteMotionGestureListenerInterface } from "./CompleteMotionGestureListenerInterface.js";
-
 import { MotionGestureEvent } from "./MotionGestureEvent.js";
 
 export class GameMotionGestureListener

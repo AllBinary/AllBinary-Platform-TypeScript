@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { OpenGLProcessor } from "../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js";
 
     

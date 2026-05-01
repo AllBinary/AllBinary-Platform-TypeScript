@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -53,8 +57,7 @@ import { AutomaticCacheInterface } from "../../../../../../org/allbinary/logic/u
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Color } from "./Color.js";
+        import { Color } from "./Color.js";
 
 export class GraphicsAnalysisUtil
             extends Object

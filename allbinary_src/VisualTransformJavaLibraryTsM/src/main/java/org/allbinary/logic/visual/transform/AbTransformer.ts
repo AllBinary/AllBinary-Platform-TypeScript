@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { InputStream } from "../../../../../java/io/InputStream.js";
 
     
@@ -66,8 +70,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTransformerInterface } from "./BasicTransformerInterface.js";
+        import { BasicTransformerInterface } from "./BasicTransformerInterface.js";
 
 export class AbTransformer
             extends Object

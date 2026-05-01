@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Displayable } from "../../../javax/microedition/lcdui/Displayable.js";
 
     
@@ -42,8 +46,7 @@ import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { EmulatorViewInterface } from "./EmulatorViewInterface.js";
+        import { EmulatorViewInterface } from "./EmulatorViewInterface.js";
 
 export class NullEmulatorView
             extends Object

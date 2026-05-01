@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../java/lang/Object.js";
+
+
+        
 import { DomDocumentHelper } from "../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     

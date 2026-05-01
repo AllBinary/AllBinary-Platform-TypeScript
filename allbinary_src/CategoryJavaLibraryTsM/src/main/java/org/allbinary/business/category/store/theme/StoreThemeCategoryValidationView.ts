@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { ValidationInterface } from "../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
 
     
@@ -45,9 +49,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreThemeCategoryView } from "./StoreThemeCategoryView.js";
-
+        import { StoreThemeCategoryView } from "./StoreThemeCategoryView.js";
 import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 
 export class StoreThemeCategoryValidationView extends StoreThemeCategoryView implements ValidationInterface {

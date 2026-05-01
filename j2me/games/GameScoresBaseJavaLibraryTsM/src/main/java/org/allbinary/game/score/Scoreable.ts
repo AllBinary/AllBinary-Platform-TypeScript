@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
@@ -41,8 +45,7 @@ import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/ma
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScoreableInterface } from "./ScoreableInterface.js";
+        import { ScoreableInterface } from "./ScoreableInterface.js";
 
 export class Scoreable
             extends Object

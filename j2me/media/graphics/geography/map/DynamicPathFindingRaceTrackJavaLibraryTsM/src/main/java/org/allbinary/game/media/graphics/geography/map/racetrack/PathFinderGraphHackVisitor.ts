@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { GraphPath } from "../../../../../../../../org/jgrapht/GraphPath.js";
 
     
@@ -75,9 +79,7 @@ import { PathFindingNode } from "../../../../../../../../org/allbinary/media/gra
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
-
+        import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
 import { CellPositionArray } from "./CellPositionArray.js";
 
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor<V, E> {

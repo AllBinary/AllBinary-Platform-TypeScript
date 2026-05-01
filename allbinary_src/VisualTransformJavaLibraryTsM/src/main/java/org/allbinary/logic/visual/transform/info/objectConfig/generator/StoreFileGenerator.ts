@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { ByteArrayInputStream } from "../../../../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -99,8 +103,7 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
+        import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
 
 export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
         

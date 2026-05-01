@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -48,9 +52,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PlayerGameInput } from "./PlayerGameInput.js";
-
+        import { PlayerGameInput } from "./PlayerGameInput.js";
 import { GameInputProcessorInterface } from "./GameInputProcessorInterface.js";
 
 export class GameInputProcessorComposite extends PlayerGameInput {

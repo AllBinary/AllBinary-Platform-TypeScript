@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { DestroyEventCircularStaticPool } from "../../../../../org/allbinary/game/combat/destroy/event/DestroyEventCircularStaticPool.js";
 
     

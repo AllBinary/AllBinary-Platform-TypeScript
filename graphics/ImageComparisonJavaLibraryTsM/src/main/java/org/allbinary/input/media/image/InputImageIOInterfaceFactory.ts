@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CapturedImageInputOutput } from "../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js";
 
     
@@ -48,8 +52,7 @@ import { ImageIOInterface } from "../../../../../org/allbinary/media/image/io/Im
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputImageType } from "./InputImageType.js";
+        import { InputImageType } from "./InputImageType.js";
 
 export class InputImageIOInterfaceFactory
             extends Object

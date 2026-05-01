@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomTagSupport } from "./CustomTagSupport.js";
-
+        import { CustomTagSupport } from "./CustomTagSupport.js";
 import { TagStrings } from "./TagStrings.js";
 
 export class CommandTag extends CustomTagSupport {

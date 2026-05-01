@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicProfileActionScriptProcessor } from "../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/BasicProfileActionScriptProcessor.js";
 
     
@@ -45,9 +49,7 @@ import { Node } from "../../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProfileActionScriptOutputInterface } from "./ProfileActionScriptOutputInterface.js";
-
+        import { ProfileActionScriptOutputInterface } from "./ProfileActionScriptOutputInterface.js";
 import { GenericProfileActionScriptOutputData } from "./GenericProfileActionScriptOutputData.js";
 
 export class BasicProfileActionScriptOutput extends BasicProfileActionScriptProcessor implements ProfileActionScriptOutputInterface {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -75,8 +79,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TextFieldItem } from "./TextFieldItem.js";
+        import { TextFieldItem } from "./TextFieldItem.js";
 
 export class CustomTextBox extends GameCommandCanvas {
         

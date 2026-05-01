@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
 
     
@@ -45,8 +49,7 @@ import { IndexedAnimationBehavior } from "../../../../org/allbinary/animation/In
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpecialAnimationInterface } from "./SpecialAnimationInterface.js";
+        import { SpecialAnimationInterface } from "./SpecialAnimationInterface.js";
 
 export class SpecialAnimation extends IndexedAnimation implements SpecialAnimationInterface {
         

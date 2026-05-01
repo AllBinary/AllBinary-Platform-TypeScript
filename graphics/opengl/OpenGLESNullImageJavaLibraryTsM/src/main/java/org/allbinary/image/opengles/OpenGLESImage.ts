@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -66,13 +70,9 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLSurfaceChangedInterface } from "./OpenGLSurfaceChangedInterface.js";
-
+        import { OpenGLSurfaceChangedInterface } from "./OpenGLSurfaceChangedInterface.js";
 import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
-
 import { OpenGLESImageTranslate } from "./OpenGLESImageTranslate.js";
-
 import { OpenGLESImageProperties } from "./OpenGLESImageProperties.js";
 
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {

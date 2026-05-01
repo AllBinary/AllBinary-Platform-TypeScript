@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
@@ -63,11 +67,8 @@ import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerPlacementInterface } from "./LayerPlacementInterface.js";
-
+        import { LayerPlacementInterface } from "./LayerPlacementInterface.js";
 import { LayerPlacementType } from "./LayerPlacementType.js";
-
 import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
 
 export class LayerPlacer

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
@@ -86,55 +90,30 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JFrame } from "./JFrame.js";
-
+        import { JFrame } from "./JFrame.js";
 import { JDialog } from "./JDialog.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { JButton } from "./JButton.js";
-
 import { JPanel } from "./JPanel.js";
-
 import { JMenuBar } from "./JMenuBar.js";
-
 import { JMenu } from "./JMenu.js";
-
 import { JMenuItem } from "./JMenuItem.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { ImageUnifierJPanel } from "./ImageUnifierJPanel.js";
-
 import { ImageAnalysisResultsJPanel } from "./ImageAnalysisResultsJPanel.js";
-
 import { RotationSpriteImageJPanel } from "./RotationSpriteImageJPanel.js";
-
 import { SpriteSplitterImageJPanel } from "./SpriteSplitterImageJPanel.js";
-
 import { RotationImageJPanel } from "./RotationImageJPanel.js";
-
 import { ResizeImageJPanel } from "./ResizeImageJPanel.js";
-
 import { CreateIconImagesJPanel } from "./CreateIconImagesJPanel.js";
-
 import { CanvasImageJPanel } from "./CanvasImageJPanel.js";
-
 import { MirrorSpriteImageJPanel } from "./MirrorSpriteImageJPanel.js";
-
 import { MirrorImageJPanel } from "./MirrorImageJPanel.js";
 
 export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {

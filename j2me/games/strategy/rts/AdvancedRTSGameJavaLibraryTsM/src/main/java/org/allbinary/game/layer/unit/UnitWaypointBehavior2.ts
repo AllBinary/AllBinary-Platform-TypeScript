@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { J2MEUtil } from "../../../../../org/allbinary/J2MEUtil.js";
@@ -125,14 +129,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UnitWaypointBehavior } from "./UnitWaypointBehavior.js";
-
+        import { UnitWaypointBehavior } from "./UnitWaypointBehavior.js";
 import { UnitWaypointStrings } from "./UnitWaypointStrings.js";
-
 import { UnitLayer } from "./UnitLayer.js";
-
-import { BuildingSteeringVisitor } from "./BuildingSteeringVisitor.js";
+//import { BuildingSteeringVisitor } from "./BuildingSteeringVisitor.js";
 
 export class UnitWaypointBehavior2 extends UnitWaypointBehavior {
         

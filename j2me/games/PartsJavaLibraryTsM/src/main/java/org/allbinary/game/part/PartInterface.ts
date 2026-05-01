@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AnimationInterfaceCompositeInterface } from "../../../../org/allbinary/animation/AnimationInterfaceCompositeInterface.js";
 
     

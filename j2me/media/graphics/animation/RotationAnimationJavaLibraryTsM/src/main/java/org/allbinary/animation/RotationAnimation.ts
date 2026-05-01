@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Direction } from "../../../org/allbinary/direction/Direction.js";
 
     
@@ -57,11 +61,8 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { IndexedAnimation } from "./IndexedAnimation.js";
-
+        import { IndexedAnimation } from "./IndexedAnimation.js";
 import { RotationAnimationInterface } from "./RotationAnimationInterface.js";
-
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class RotationAnimation extends IndexedAnimation implements RotationAnimationInterface {

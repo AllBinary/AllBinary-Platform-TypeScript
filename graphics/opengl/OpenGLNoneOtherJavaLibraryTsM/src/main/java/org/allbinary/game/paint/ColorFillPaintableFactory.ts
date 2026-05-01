@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
@@ -45,11 +49,8 @@ import { OperatingSystemFactory } from "../../../../org/allbinary/logic/system/o
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ColorFillPaintable } from "./ColorFillPaintable.js";
-
+        import { ColorFillPaintable } from "./ColorFillPaintable.js";
 import { OverScanColorFillPaintable } from "./OverScanColorFillPaintable.js";
-
 import { ColorFillBasePaintable } from "./ColorFillBasePaintable.js";
 
 export class ColorFillPaintableFactory

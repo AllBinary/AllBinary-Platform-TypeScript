@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -48,9 +52,7 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameSkillType } from "./GameSkillType.js";
-
+        import { GameSkillType } from "./GameSkillType.js";
 import { GameSkillPropertyInterface } from "./GameSkillPropertyInterface.js";
 
 export class GameSkill

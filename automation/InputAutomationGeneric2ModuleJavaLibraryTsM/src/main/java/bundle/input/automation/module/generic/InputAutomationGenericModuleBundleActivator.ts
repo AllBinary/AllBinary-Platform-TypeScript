@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { InputAutomationGenericModuleServiceFactory } from "../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js";
 
     

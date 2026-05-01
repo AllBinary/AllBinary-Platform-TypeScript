@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
 
     
@@ -42,9 +46,7 @@ import { WeblisketSession } from "../../../../../../org/allbinary/logic/communic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformHttpRequestDocument } from "./TransformHttpRequestDocument.js";
-
+        import { TransformHttpRequestDocument } from "./TransformHttpRequestDocument.js";
 import { TransformDocumentInterface } from "./TransformDocumentInterface.js";
 
 export class TransformHttpRequestDocumentFactory

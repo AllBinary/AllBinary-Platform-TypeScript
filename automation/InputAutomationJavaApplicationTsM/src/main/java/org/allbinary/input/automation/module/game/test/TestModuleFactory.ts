@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { swing } from "../../../../../../../javax/swing.js";
 
     
@@ -51,8 +55,7 @@ import { RunnableInterface } from "../../../../../../../org/allbinary/thread/Run
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
+        import { JPanel } from "./JPanel.js";
 
 export class TestModuleFactory extends AbstractInputAutomationFactory {
         

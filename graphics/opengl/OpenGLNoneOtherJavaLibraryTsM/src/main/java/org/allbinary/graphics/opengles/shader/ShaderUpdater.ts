@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { EGLConfig } from "../../../../../javax/microedition/khronos/egl/EGLConfig.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AboutPaintable } from "../../../../../org/allbinary/game/paint/AboutPaintable.js";
 
     

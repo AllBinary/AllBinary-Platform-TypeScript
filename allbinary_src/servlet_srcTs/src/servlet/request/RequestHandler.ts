@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { io } from "../../java/io.js";
 
     
@@ -60,19 +64,12 @@ import { RequestWorkFlowFactory } from "../../org/allbinary/logic/control/workfl
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HttpServlet } from "./HttpServlet.js";
-
+        import { HttpServlet } from "./HttpServlet.js";
 import { ServletConfig } from "./ServletConfig.js";
-
 import { PrintWriter } from "./PrintWriter.js";
-
 import { ServletRequest } from "./ServletRequest.js";
-
 import { ServletResponse } from "./ServletResponse.js";
-
 import { HttpServletRequest } from "./HttpServletRequest.js";
-
 import { HttpServletResponse } from "./HttpServletResponse.js";
 
 export class RequestHandler extends HttpServlet {

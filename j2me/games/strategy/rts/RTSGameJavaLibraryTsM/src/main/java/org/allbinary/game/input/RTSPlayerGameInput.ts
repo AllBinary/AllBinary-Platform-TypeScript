@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -132,27 +136,16 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PlayerGameInput } from "./PlayerGameInput.js";
-
+        import { PlayerGameInput } from "./PlayerGameInput.js";
 import { InputFactory } from "./InputFactory.js";
-
 import { GameInputProcessor } from "./GameInputProcessor.js";
-
 import { ScrollMapPlayerGameInput } from "./ScrollMapPlayerGameInput.js";
-
 import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
-
 import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js";
-
 import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
-
 import { RTSPlayerLeftGameInputProcessor } from "./RTSPlayerLeftGameInputProcessor.js";
-
 import { RTSPlayerRightGameInputProcessor } from "./RTSPlayerRightGameInputProcessor.js";
-
 import { RTSPlayerFireGameInputProcessor } from "./RTSPlayerFireGameInputProcessor.js";
-
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 export class RTSPlayerGameInput extends PlayerGameInput {

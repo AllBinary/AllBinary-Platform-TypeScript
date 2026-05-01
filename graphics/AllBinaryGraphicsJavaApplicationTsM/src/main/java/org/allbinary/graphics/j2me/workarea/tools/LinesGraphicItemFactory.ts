@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { CanvasJPanel } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js";
 
     
@@ -39,11 +43,8 @@ import { CanvasJPanel } from "../../../../../../org/allbinary/graphics/j2me/work
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
-
+        import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
 import { LinesGraphicItem } from "./LinesGraphicItem.js";
-
 import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class LinesGraphicItemFactory

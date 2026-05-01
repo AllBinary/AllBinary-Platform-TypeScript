@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameLayerBehavior } from "../../../../../org/allbinary/game/layer/behavior/GameLayerBehavior.js";
 
     
@@ -45,8 +49,7 @@ import { VelocityProperties } from "../../../../../org/allbinary/game/physics/ve
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InitialJumpBehavior } from "./InitialJumpBehavior.js";
+        import { InitialJumpBehavior } from "./InitialJumpBehavior.js";
 
 export class TopViewGameLayerBehavior extends GameLayerBehavior {
         

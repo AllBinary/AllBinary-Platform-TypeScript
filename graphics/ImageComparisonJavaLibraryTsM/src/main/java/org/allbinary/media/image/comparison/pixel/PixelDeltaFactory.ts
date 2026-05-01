@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -66,8 +70,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PixelDelta } from "./PixelDelta.js";
+        import { PixelDelta } from "./PixelDelta.js";
 
 export class PixelDeltaFactory
             extends Object

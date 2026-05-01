@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Bundle } from "../../../../../../org/osgi/framework/Bundle.js";
 
     
@@ -51,8 +55,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CryptService } from "./CryptService.js";
+        import { CryptService } from "./CryptService.js";
 
 export class CryptServiceFactory
             extends Object

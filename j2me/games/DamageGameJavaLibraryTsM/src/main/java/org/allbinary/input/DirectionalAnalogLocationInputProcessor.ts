@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { AnalogLocationInputProcessor } from "../../../org/allbinary/android/input/motion/AnalogLocationInputProcessor.js";
 
     

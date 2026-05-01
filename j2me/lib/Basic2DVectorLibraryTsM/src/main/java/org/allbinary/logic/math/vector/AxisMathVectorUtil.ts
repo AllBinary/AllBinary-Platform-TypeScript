@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { NoDecimalTrigTable } from "../../../../../org/allbinary/math/NoDecimalTrigTable.js";
 
     

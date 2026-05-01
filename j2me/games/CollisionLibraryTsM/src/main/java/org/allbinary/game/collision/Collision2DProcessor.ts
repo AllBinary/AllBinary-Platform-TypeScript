@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -25,8 +29,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollisionProcessor } from "./CollisionProcessor.js";
+        import { CollisionProcessor } from "./CollisionProcessor.js";
 
 export class Collision2DProcessor extends CollisionProcessor {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { ConstructorUtil } from "../../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js";
 
     

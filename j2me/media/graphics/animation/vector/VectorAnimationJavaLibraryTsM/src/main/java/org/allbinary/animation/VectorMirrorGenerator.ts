@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { PointFactory } from "../../../org/allbinary/graphics/PointFactory.js";
 
     
@@ -57,8 +61,7 @@ import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
+        import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
 
 export class VectorMirrorGenerator
             extends Object

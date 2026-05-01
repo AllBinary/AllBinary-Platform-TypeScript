@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -121,11 +125,8 @@ import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/me
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSFormInput } from "./RTSFormInput.js";
-
+        import { RTSFormInput } from "./RTSFormInput.js";
 import { AssignWaypointsUtil } from "./AssignWaypointsUtil.js";
-
 import { PlayersSingletonFactory } from "./PlayersSingletonFactory.js";
 
 export class UnitRTSFormInput extends RTSFormInput {

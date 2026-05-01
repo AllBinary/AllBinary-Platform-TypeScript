@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -42,9 +46,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicStoreFrontsEntity } from "./BasicStoreFrontsEntity.js";
-
+        import { BasicStoreFrontsEntity } from "./BasicStoreFrontsEntity.js";
 import { BasicStoreFrontInterface } from "./BasicStoreFrontInterface.js";
 
 export class BasicStoreFrontFactory

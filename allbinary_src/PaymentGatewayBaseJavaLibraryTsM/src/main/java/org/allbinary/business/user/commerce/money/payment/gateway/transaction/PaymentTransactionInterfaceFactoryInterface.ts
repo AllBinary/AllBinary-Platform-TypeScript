@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { OrderHistory } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js";
 
     
@@ -42,8 +46,7 @@ import { TenderType } from "../../../../../../../../../org/allbinary/business/us
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaymentTransactionInterface } from "./PaymentTransactionInterface.js";
+        import { PaymentTransactionInterface } from "./PaymentTransactionInterface.js";
 
 export interface PaymentTransactionInterfaceFactoryInterface {
         

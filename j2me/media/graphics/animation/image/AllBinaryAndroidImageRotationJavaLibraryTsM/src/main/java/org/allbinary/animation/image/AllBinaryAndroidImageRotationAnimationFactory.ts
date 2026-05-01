@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -66,11 +70,8 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-
+        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 import { AllBinaryFlickerAndroidImageRotationAnimation } from "./AllBinaryFlickerAndroidImageRotationAnimation.js";
-
 import { AllBinaryAdjustedAndroidImageRotationAnimation } from "./AllBinaryAdjustedAndroidImageRotationAnimation.js";
 
 export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnimationFactory {

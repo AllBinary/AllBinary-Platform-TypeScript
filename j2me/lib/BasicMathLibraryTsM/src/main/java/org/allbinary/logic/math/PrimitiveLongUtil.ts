@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -45,9 +49,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PrimitiveLongSingleton } from "./PrimitiveLongSingleton.js";
-
+        import { PrimitiveLongSingleton } from "./PrimitiveLongSingleton.js";
 import { MathUtil } from "./MathUtil.js";
 
 export class PrimitiveLongUtil

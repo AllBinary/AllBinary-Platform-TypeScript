@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -22,13 +26,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ActivityFractureControllerUtilFactory } from "./ActivityFractureControllerUtilFactory.js";
-
+        import { ActivityFractureControllerUtilFactory } from "./ActivityFractureControllerUtilFactory.js";
 import { AndroidKeyFactory } from "./AndroidKeyFactory.js";
-
 import { AndroidGameKey } from "./AndroidGameKey.js";
-
 import { Input } from "./Input.js";
 
 export class PlatformKeyFactory

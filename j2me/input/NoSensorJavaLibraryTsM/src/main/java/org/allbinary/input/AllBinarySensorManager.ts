@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { AccelerometerSensorFactory } from "../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js";
 
     

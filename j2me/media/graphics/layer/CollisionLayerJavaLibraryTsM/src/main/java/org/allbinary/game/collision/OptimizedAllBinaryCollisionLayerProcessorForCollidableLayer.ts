@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
 
     
@@ -51,9 +55,7 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OptimizedAllBinaryCollisionLayerManager } from "./OptimizedAllBinaryCollisionLayerManager.js";
-
+        import { OptimizedAllBinaryCollisionLayerManager } from "./OptimizedAllBinaryCollisionLayerManager.js";
 import { CollidableBaseBehavior } from "./CollidableBaseBehavior.js";
 
 export class OptimizedAllBinaryCollisionLayerProcessorForCollidableLayer extends LayerProcessor {

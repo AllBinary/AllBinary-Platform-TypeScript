@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { ActionEvent } from "../../../../../../java/awt/event/ActionEvent.js";
@@ -59,11 +63,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProfileActionScriptItemInterface } from "./ProfileActionScriptItemInterface.js";
-
+        import { ProfileActionScriptItemInterface } from "./ProfileActionScriptItemInterface.js";
 import { JPopupMenu } from "./JPopupMenu.js";
-
 import { JMenuItem } from "./JMenuItem.js";
 
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {

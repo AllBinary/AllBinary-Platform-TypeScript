@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -57,8 +61,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoInterface } from "./TransformInfoInterface.js";
+        import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 export class TransformInfoObjectFactory
             extends Object

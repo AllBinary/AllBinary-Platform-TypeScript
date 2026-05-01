@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { InputAutomationModuleConfiguration } from "../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js";
 
     

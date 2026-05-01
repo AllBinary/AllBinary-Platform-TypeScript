@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Source } from "../../../../../javax/xml/transform/Source.js";
 
     
@@ -72,7 +76,8 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { URIResolverStrings } from "./URIResolverStrings.js";
+
 export class BasicUriResolver
             extends Object
          implements URIResolver {
@@ -80,21 +85,7 @@ export class BasicUriResolver
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly IMPORT_URL: string = "/{import url}";
-
-    private readonly ATTEMPT: string = "attempt to use xsl:import: href=";
-
-    private readonly BASE: string = "\nBase= ";
-
-    private readonly NEW_PATH: string = "\nNew path= ";
-
-    private readonly NOTE: string = "\nNote: ";
-
-    private readonly URL_GLOBAL: string = " is a urlglobal";
-
-    private readonly REQUIRED_EXTENSION: string = "\nRequired Extension: ";
-
-    private readonly RESOLVE: string = "resolve";
+    private readonly uriResolverStrings: URIResolverStrings = URIResolverStrings.getInstance()!;
 
     private extension: string
 public constructor (extension: string){
@@ -143,29 +134,29 @@ stringBuffer!.append(href);
                                     {
                                     stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(this.ATTEMPT);
+stringBuffer!.append(this.uriResolverStrings!.ATTEMPT);
     
 stringBuffer!.append(href);
     
-stringBuffer!.append(this.BASE);
+stringBuffer!.append(this.uriResolverStrings!.BASE);
     
 stringBuffer!.append(base);
     
-stringBuffer!.append(this.NEW_PATH);
+stringBuffer!.append(this.uriResolverStrings!.NEW_PATH);
     
 stringBuffer!.append(abPath!.toString());
     
-stringBuffer!.append(this.NOTE);
+stringBuffer!.append(this.uriResolverStrings!.NOTE);
     
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
     
-stringBuffer!.append(this.URL_GLOBAL);
+stringBuffer!.append(this.uriResolverStrings!.URL_GLOBAL);
     
-stringBuffer!.append(this.REQUIRED_EXTENSION);
+stringBuffer!.append(this.uriResolverStrings!.REQUIRED_EXTENSION);
     
 stringBuffer!.append(this.extension);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, RESOLVE);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.uriResolverStrings!.RESOLVE);
     
 
                                     }
@@ -212,7 +203,7 @@ stringBuffer!.append(URLGLOBALS.getMainPath());
     
 stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
     
-stringBuffer!.append(this.IMPORT_URL);
+stringBuffer!.append(this.uriResolverStrings!.IMPORT_URL);
     
 
 

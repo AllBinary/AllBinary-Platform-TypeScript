@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
 
     
@@ -51,9 +55,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
-
+        import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
 import { GameCommandCanvas } from "./GameCommandCanvas.js";
 
 export class ImmediateCommandFormInputProcessor extends CommandFormInputProcessor {

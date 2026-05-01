@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
 
     

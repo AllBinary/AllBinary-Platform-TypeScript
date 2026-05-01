@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../java/lang/System";
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../java/lang/System.js";
         
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 

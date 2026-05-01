@@ -20,6 +20,10 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -56,8 +60,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AndroidOS } from "./AndroidOS.js";
+        import { AndroidOS } from "./AndroidOS.js";
 
 export class AndroidOperatingSystemFactory
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -57,8 +61,7 @@ import { AbSqlTableUtil } from "../../org/allbinary/logic/communication/sql/AbSq
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTable } from "./BasicTable.js";
+        import { BasicTable } from "./BasicTable.js";
 
 export class BasicOptionItemsHelper extends BasicTable {
         

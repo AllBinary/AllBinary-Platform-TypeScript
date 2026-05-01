@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -27,7 +31,8 @@ import { DataInputStream } from "../../../../java/io/DataInputStream.js";
 import { EOFException } from "../../../../java/io/EOFException.js";
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+
+//import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -105,11 +110,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HighScores } from "./HighScores.js";
-
+        import { HighScores } from "./HighScores.js";
 import { HighScore } from "./HighScore.js";
-
 import { ScoreComparator } from "./ScoreComparator.js";
 
 export class RecordStoreHighScores extends HighScores {

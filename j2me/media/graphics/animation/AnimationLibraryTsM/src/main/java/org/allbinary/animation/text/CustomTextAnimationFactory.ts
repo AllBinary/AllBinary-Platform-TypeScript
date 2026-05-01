@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Font } from "../../../../javax/microedition/lcdui/Font.js";
 
     
@@ -60,8 +64,7 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomTextAnimation } from "./CustomTextAnimation.js";
+        import { CustomTextAnimation } from "./CustomTextAnimation.js";
 
 export class CustomTextAnimationFactory
             extends Object

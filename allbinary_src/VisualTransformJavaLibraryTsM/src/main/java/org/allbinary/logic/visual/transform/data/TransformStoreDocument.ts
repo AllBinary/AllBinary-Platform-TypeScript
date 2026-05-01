@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -57,8 +61,7 @@ import { SearchRequest } from "../../../../../../org/allbinary/logic/control/sea
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformHttpRequestDocument } from "./TransformHttpRequestDocument.js";
+        import { TransformHttpRequestDocument } from "./TransformHttpRequestDocument.js";
 
 export class TransformStoreDocument extends TransformHttpRequestDocument {
         

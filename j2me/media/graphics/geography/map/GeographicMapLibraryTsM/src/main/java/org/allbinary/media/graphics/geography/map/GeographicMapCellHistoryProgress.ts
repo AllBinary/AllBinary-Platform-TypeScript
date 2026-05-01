@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -39,9 +43,7 @@ import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellHistoryProgressBase } from "./GeographicMapCellHistoryProgressBase.js";
-
+        import { GeographicMapCellHistoryProgressBase } from "./GeographicMapCellHistoryProgressBase.js";
 import { GeographicMapCellHistory } from "./GeographicMapCellHistory.js";
 
 export class GeographicMapCellHistoryProgress extends GeographicMapCellHistoryProgressBase {

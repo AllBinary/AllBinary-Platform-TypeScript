@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../java/lang/Long.js";
@@ -67,13 +71,9 @@ import { PixelDeltaFactory } from "../../../../../org/allbinary/media/image/comp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
-
+        import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
 import { Color } from "./Color.js";
-
 import { Math } from "./Math.js";
-
 import { ImageComparisonResult } from "./ImageComparisonResult.js";
 
 export class ImageComparator

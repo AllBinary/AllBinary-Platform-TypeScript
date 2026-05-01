@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { NoShakeAnimationListener } from "../../../../org/allbinary/animation/transition/shake/NoShakeAnimationListener.js";
 
     
@@ -60,8 +64,7 @@ import { AllBinaryVibrationME } from "../../../../org/allbinary/media/AllBinaryV
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+        import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
 export class AdvancedRTSProperties
             extends Object

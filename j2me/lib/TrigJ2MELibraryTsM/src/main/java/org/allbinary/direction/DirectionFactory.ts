@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -45,8 +49,7 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Direction } from "./Direction.js";
+        import { Direction } from "./Direction.js";
 
 export class DirectionFactory
             extends Object

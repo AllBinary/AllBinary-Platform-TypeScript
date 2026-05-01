@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { Method } from "../../java/lang/reflect/Method.js";
 
     
@@ -63,8 +67,7 @@ import { TransformInfoData } from "../../org/allbinary/logic/visual/transform/in
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TableTag } from "./TableTag.js";
+        import { TableTag } from "./TableTag.js";
 
 export class StaticPagesTag extends TableTag {
         

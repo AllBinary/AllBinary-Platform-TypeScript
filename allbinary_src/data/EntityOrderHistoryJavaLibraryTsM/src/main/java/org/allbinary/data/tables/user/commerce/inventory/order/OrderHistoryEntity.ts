@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../../java/lang/Long.js";
@@ -154,8 +158,7 @@ import { ServiceClientInformationInterfaceFactory } from "../../../../../../../.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OrderHistoryEntityInterface } from "./OrderHistoryEntityInterface.js";
+        import { OrderHistoryEntityInterface } from "./OrderHistoryEntityInterface.js";
 
 export class OrderHistoryEntity extends AbSqlBean implements OrderHistoryEntityInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -66,19 +70,12 @@ import { ImageRotationUtil } from "../../../../org/allbinary/media/image/ImageRo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
-
+        import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
 import { ModifierBaseProcessor } from "./ModifierBaseProcessor.js";
-
 import { ScaleProcessor } from "./ScaleProcessor.js";
-
 import { ScaleBaseProcessor } from "./ScaleBaseProcessor.js";
-
 import { SetColorProcessor } from "./SetColorProcessor.js";
-
 import { ChangeColorProcessor } from "./ChangeColorProcessor.js";
-
 import { AlphaProcessor } from "./AlphaProcessor.js";
 
 export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimation {

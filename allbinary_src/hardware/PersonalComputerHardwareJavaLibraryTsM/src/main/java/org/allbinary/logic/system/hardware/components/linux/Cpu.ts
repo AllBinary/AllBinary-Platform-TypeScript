@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { FileReader } from "../../../../../../../java/io/FileReader.js";
 
     
@@ -84,8 +88,7 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CpuInfo } from "./CpuInfo.js";
+        import { CpuInfo } from "./CpuInfo.js";
 
 export class Cpu
             extends Object

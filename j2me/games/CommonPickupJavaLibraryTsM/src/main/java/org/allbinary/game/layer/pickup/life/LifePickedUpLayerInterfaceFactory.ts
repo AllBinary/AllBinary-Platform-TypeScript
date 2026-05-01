@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
 
     
@@ -60,11 +64,8 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LifeLayerCircularStaticPool } from "./LifeLayerCircularStaticPool.js";
-
+        import { LifeLayerCircularStaticPool } from "./LifeLayerCircularStaticPool.js";
 import { LifeLayerFactory } from "./LifeLayerFactory.js";
-
 import { LifeResources } from "./LifeResources.js";
 
 export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {

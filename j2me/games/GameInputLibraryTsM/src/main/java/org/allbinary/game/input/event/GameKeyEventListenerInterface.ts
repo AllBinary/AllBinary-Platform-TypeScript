@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,11 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DownGameKeyEventListenerInterface } from "./DownGameKeyEventListenerInterface.js";
-
+        import { DownGameKeyEventListenerInterface } from "./DownGameKeyEventListenerInterface.js";
 import { UpGameKeyEventListenerInterface } from "./UpGameKeyEventListenerInterface.js";
-
 import { PressGameKeyEventListenerInterface } from "./PressGameKeyEventListenerInterface.js";
 
 export interface GameKeyEventListenerInterface extends DownGameKeyEventListenerInterface, UpGameKeyEventListenerInterface, PressGameKeyEventListenerInterface {

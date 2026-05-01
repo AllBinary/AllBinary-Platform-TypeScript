@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Displayable } from "../../../../javax/microedition/lcdui/Displayable.js";
 
     
@@ -105,8 +109,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+        import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
 
 export class CurrentDisplayableFactory
             extends Object

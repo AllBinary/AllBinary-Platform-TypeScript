@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -69,8 +73,7 @@ import { StaticViewPosition } from "../../../../org/allbinary/view/StaticViewPos
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
+        import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
 
 export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements PlayerGameInputCompositeInterface {
         

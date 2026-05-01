@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 
@@ -38,8 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CachePolicy } from "./CachePolicy.js";
+        import { CachePolicy } from "./CachePolicy.js";
 
 export class CachePolicyFactory
             extends Object

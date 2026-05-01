@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -51,13 +55,9 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdvertisementAreaInterface } from "./AdvertisementAreaInterface.js";
-
+        import { AdvertisementAreaInterface } from "./AdvertisementAreaInterface.js";
 import { AdvertisementAreaConstraintsInterface } from "./AdvertisementAreaConstraintsInterface.js";
-
 import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
-
 import { AdvertisementAreaConstraints } from "./AdvertisementAreaConstraints.js";
 
 export class AdvertisementArea

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GL10 } from "../../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -42,8 +46,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Shader } from "./Shader.js";
+        import { Shader } from "./Shader.js";
 
 export class ShaderInitializer
             extends Object

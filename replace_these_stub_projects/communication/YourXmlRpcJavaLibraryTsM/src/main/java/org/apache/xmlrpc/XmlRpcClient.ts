@@ -4,7 +4,12 @@
 
 
 
-import { IOException } from "../../../java/io/IOException.js";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+
+//import { IOException } from "../../../java/io/IOException.js";
 
     
 import { MalformedURLException } from "../../../java/net/MalformedURLException.js";
@@ -40,8 +45,7 @@ import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { XmlRpcHandler } from "./XmlRpcHandler.js";
+        import { XmlRpcHandler } from "./XmlRpcHandler.js";
 
 export class XmlRpcClient
             extends Object

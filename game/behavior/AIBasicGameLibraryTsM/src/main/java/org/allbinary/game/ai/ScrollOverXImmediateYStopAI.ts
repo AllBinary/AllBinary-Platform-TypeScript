@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
 
     
@@ -48,8 +52,7 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicAI } from "./BasicAI.js";
+        import { BasicAI } from "./BasicAI.js";
 
 export class ScrollOverXImmediateYStopAI extends BasicAI {
         

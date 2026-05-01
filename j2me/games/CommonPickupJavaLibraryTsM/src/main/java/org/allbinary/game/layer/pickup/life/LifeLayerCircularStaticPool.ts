@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Life } from "../../../../../../org/allbinary/game/life/Life.js";
 
     
@@ -51,8 +55,7 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LifeLayer } from "./LifeLayer.js";
+        import { LifeLayer } from "./LifeLayer.js";
 
 export class LifeLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         

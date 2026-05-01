@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { Player } from "../../../../javax/microedition/media/Player.js";
@@ -47,9 +51,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SoundInterface } from "./SoundInterface.js";
-
+        import { SoundInterface } from "./SoundInterface.js";
 import { NoPlayer } from "./NoPlayer.js";
 
 export class Sound

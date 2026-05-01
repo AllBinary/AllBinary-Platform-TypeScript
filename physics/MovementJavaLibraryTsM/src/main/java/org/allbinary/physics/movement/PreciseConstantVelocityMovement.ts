@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -37,8 +41,7 @@ import { ScaleFactorFactory } from "../../../../org/allbinary/logic/math/ScaleFa
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.js";
+        import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.js";
 
 export class PreciseConstantVelocityMovement extends BasicConstantVelocityMovement {
         

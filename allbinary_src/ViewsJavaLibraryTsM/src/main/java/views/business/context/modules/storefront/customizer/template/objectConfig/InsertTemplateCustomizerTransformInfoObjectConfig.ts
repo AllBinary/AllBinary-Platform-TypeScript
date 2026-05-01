@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -60,8 +64,7 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NoTemplateTransformInfoObjectConfig } from "./NoTemplateTransformInfoObjectConfig.js";
+        import { NoTemplateTransformInfoObjectConfig } from "./NoTemplateTransformInfoObjectConfig.js";
 
 export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplateTransformInfoObjectConfig {
         

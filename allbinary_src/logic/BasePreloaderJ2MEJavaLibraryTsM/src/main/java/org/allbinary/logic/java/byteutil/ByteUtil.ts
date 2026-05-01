@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -84,7 +88,7 @@ private constructor (){
         {
 currentByte= array[index]!;
     
-bytes[index]= (currentByte xor mask).toByte();
+bytes[index]= (currentByte ^ mask);
     
 index++;
     
@@ -117,7 +121,7 @@ index++;
 
         while(index < size)
         {
-bytes[index]= array[index].inv().toByte();
+bytes[index]= ~array[index];
     
 index++;
     
@@ -229,7 +233,7 @@ index < size; index++)
 }
 
 
-    public compare(newByteArray: number[], newSize: number, oldByteArray: number[], stats: number[]): boolean{
+    public compareWithStats(newByteArray: number[], newSize: number, oldByteArray: number[], stats: number[]): boolean{
     //var newByteArray = newByteArray
     //var newSize = newSize
     //var oldByteArray = oldByteArray

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -75,23 +79,14 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GraphicItemInterface } from "./GraphicItemInterface.js";
-
+        import { GraphicItemInterface } from "./GraphicItemInterface.js";
 import { Color } from "./Color.js";
-
 import { Points } from "./Points.js";
-
 import { Math } from "./Math.js";
-
 import { LinesGraphicItem } from "./LinesGraphicItem.js";
-
 import { Graphics } from "./Graphics.js";
-
 import { MouseEvent } from "./MouseEvent.js";
-
 import { MouseStrings } from "./MouseStrings.js";
-
 import { KeyEvent } from "./KeyEvent.js";
 
 export class SelectionTool

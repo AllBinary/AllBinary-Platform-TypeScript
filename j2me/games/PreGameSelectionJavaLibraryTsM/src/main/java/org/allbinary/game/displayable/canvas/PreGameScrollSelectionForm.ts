@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/CustomItem.js";
 
     

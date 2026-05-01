@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { ActionEvent } from "../../../../../../../../java/awt/event/ActionEvent.js";
 
     
@@ -54,9 +58,7 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProfileActionScriptProcessorInterface } from "./ProfileActionScriptProcessorInterface.js";
-
+        import { ProfileActionScriptProcessorInterface } from "./ProfileActionScriptProcessorInterface.js";
 import { GenericProfileActionScriptProcessorData } from "./GenericProfileActionScriptProcessorData.js";
 
 export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem implements ProfileActionScriptProcessorInterface {

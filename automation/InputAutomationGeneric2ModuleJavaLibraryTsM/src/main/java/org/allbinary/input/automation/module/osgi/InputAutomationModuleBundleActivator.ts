@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BundleActivator } from "../../../../../../org/osgi/framework/BundleActivator.js";
 
     

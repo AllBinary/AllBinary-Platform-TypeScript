@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -48,9 +52,7 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UpgradableRTSLayerHudPaintable } from "./UpgradableRTSLayerHudPaintable.js";
-
+        import { UpgradableRTSLayerHudPaintable } from "./UpgradableRTSLayerHudPaintable.js";
 import { RTSLayer } from "./RTSLayer.js";
 
 export class RTSLayerCompositePaintable extends Paintable {

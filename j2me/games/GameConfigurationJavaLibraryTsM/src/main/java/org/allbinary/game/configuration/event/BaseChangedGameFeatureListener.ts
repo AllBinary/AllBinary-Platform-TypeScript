@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Feature } from "../../../../../org/allbinary/game/configuration/feature/Feature.js";
 
     
@@ -69,9 +73,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameFeatureListenerInterface } from "./GameFeatureListenerInterface.js";
-
+        import { GameFeatureListenerInterface } from "./GameFeatureListenerInterface.js";
 import { GameFeatureEvent } from "./GameFeatureEvent.js";
 
 export class BaseChangedGameFeatureListener

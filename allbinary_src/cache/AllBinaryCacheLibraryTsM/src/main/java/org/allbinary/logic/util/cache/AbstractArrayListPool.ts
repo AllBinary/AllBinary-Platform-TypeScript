@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -45,11 +49,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PoolInterface } from "./PoolInterface.js";
-
+        import { PoolInterface } from "./PoolInterface.js";
 import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
-
 import { CacheableInterface } from "./CacheableInterface.js";
 
 export class AbstractArrayListPool

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -60,8 +64,7 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TopBarView } from "./TopBarView.js";
+        import { TopBarView } from "./TopBarView.js";
 
 export class EditHeaderValidationView extends TopBarView implements ValidationComponentInterface {
         

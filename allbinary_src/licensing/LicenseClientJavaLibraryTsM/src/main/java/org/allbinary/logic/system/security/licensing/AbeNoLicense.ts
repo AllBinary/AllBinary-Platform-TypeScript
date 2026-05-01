@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -45,11 +49,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
-
+        import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
 import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
-
 import { LicenseType } from "./LicenseType.js";
 
 export class AbeNoLicense

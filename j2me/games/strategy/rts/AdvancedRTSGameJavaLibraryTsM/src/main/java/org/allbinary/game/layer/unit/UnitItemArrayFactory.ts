@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     

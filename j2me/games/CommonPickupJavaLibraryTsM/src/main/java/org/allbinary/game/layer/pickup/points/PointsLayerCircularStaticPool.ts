@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { ScoreableInterface } from "../../../../../../org/allbinary/game/score/ScoreableInterface.js";
 
     
@@ -48,8 +52,7 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PointsLayer } from "./PointsLayer.js";
+        import { PointsLayer } from "./PointsLayer.js";
 
 export class PointsLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         

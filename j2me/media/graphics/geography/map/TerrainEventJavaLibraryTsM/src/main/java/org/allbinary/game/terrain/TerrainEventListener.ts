@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
 
     
@@ -37,9 +41,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TerrainEventListenerInterface } from "./TerrainEventListenerInterface.js";
-
+        import { TerrainEventListenerInterface } from "./TerrainEventListenerInterface.js";
 import { TerrainEvent } from "./TerrainEvent.js";
 
 export class TerrainEventListener

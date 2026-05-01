@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AngleFactory } from "./AngleFactory.js";
-
+        import { AngleFactory } from "./AngleFactory.js";
 import { AngleIncrementInfo } from "./AngleIncrementInfo.js";
 
 export class AngleIncrementInfoFactory

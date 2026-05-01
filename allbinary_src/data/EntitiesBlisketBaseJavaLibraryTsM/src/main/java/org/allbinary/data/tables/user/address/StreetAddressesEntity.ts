@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../java/lang/Long.js";
@@ -79,8 +83,7 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StreetAddressesEntityInterface } from "./StreetAddressesEntityInterface.js";
+        import { StreetAddressesEntityInterface } from "./StreetAddressesEntityInterface.js";
 
 export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesEntityInterface {
         

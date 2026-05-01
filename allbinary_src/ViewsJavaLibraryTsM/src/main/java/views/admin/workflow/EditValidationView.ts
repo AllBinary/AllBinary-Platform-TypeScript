@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { WorkFlowEntityFactory } from "../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js";
 
     
@@ -63,8 +67,7 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WorkFlowView } from "./WorkFlowView.js";
+        import { WorkFlowView } from "./WorkFlowView.js";
 
 export class EditValidationView extends WorkFlowView implements ValidationComponentInterface {
         

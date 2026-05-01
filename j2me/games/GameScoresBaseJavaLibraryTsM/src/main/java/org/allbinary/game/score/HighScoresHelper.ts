@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
 
     
@@ -39,9 +43,7 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
-
+        import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
 import { HighScores } from "./HighScores.js";
 
 export class HighScoresHelper extends HighScoresHelperBase {

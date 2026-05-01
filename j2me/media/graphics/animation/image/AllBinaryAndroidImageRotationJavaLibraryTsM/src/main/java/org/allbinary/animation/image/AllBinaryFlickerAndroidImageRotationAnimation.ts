@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Matrix } from "../../../../android/graphics/Matrix.js";
 
     
@@ -57,8 +61,7 @@ import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageMo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
+        import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
 
 export class AllBinaryFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {
         

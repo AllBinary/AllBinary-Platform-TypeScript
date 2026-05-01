@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -39,8 +43,7 @@ import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
+        import { OpenGLESImageProcessor } from "./OpenGLESImageProcessor.js";
 
 export class ModifierOpenGLESImageProcessor extends OpenGLESImageProcessor {
         

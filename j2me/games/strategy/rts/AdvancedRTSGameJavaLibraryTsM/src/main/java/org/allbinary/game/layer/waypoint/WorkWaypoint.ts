@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
@@ -65,9 +69,7 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Waypoint } from "./Waypoint.js";
-
+        import { Waypoint } from "./Waypoint.js";
 import { WaypointInfoHudPaintable } from "./WaypointInfoHudPaintable.js";
 
 export class WorkWaypoint extends Waypoint {

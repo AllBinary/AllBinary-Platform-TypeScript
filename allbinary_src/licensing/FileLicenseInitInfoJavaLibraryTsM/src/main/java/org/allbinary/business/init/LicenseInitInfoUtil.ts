@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { PATH_GLOBALS } from "../../../../org/allbinary/globals/PATH_GLOBALS.js";
 
     
@@ -69,8 +73,7 @@ import { WeakCrypt } from "../../../../org/allbinary/logic/system/security/crypt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LicenseInitInfo } from "./LicenseInitInfo.js";
+        import { LicenseInitInfo } from "./LicenseInitInfo.js";
 
 export class LicenseInitInfoUtil
             extends Object

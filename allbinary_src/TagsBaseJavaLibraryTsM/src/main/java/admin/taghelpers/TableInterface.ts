@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTableInterface } from "./BasicTableInterface.js";
-
+        import { BasicTableInterface } from "./BasicTableInterface.js";
 import { ModifyTableInterface } from "./ModifyTableInterface.js";
 
 export interface TableInterface extends BasicTableInterface, ModifyTableInterface {

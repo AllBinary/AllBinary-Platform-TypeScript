@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { AppletUtil } from "../../../org/allbinary/AppletUtil.js";
 
     

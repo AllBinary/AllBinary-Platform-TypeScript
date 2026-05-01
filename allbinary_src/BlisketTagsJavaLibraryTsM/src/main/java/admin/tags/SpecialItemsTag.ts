@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { SpecialItemsHelperFactory } from "../../admin/taghelpers/SpecialItemsHelperFactory.js";
 
     
@@ -42,8 +46,7 @@ import { SpecialItemsRequestHelperFactory } from "../../admin/taghelpers/Special
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TableTag } from "./TableTag.js";
+        import { TableTag } from "./TableTag.js";
 
 export class SpecialItemsTag extends TableTag {
         

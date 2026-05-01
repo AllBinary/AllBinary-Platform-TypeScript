@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -93,9 +97,7 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
-
+        import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
 import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
 export class TransformInfoObjectConfig

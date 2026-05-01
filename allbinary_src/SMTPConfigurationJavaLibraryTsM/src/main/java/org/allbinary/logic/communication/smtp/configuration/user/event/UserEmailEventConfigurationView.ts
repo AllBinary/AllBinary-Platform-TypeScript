@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -57,13 +61,9 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
-
+        import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
-
 import { UserEmailEventConfiguration } from "./UserEmailEventConfiguration.js";
-
 import { UserEmailEventConfigurationMapping } from "./UserEmailEventConfigurationMapping.js";
 
 export class UserEmailEventConfigurationView

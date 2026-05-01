@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
@@ -68,8 +72,7 @@ import { EventStrings } from "../../../../../../../org/allbinary/logic/util/even
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameNotification } from "./GameNotification.js";
+        import { GameNotification } from "./GameNotification.js";
 
 export class GameNotificationHud extends BasicHud implements GameNotificationListenerInterface {
         

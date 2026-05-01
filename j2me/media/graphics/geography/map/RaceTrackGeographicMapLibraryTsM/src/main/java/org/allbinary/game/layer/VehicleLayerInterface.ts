@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -54,8 +58,7 @@ import { GeographicMapCellPositionTracking } from "../../../../org/allbinary/med
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
+        import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
 
 export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         

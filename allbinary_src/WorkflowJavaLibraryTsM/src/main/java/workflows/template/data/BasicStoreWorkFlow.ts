@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
@@ -48,8 +52,7 @@ import { StoreWorkFlowInterface } from "../../../org/allbinary/logic/control/wor
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicWorkFlow } from "./BasicWorkFlow.js";
+        import { BasicWorkFlow } from "./BasicWorkFlow.js";
 
 export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowInterface {
         

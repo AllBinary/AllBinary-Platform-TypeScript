@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -57,11 +61,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Toolkit } from "./Toolkit.js";
-
+        import { Toolkit } from "./Toolkit.js";
 import { Dimension } from "./Dimension.js";
-
 import { Rectangle } from "./Rectangle.js";
 
 export class ScreenScavangerRobot

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Arrays } from "../../../java/util/Arrays.js";
 
     

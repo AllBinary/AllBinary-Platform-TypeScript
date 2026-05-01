@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { ContextConfigurationInterface } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
 
     
@@ -51,8 +55,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicEmailInfo } from "./BasicEmailInfo.js";
+        import { BasicEmailInfo } from "./BasicEmailInfo.js";
 
 export class StoreEmailInfo extends BasicEmailInfo {
         

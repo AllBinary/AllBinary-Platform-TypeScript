@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { Enumeration } from "../../../../java/util/Enumeration.js";
@@ -296,13 +300,9 @@ import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameMidletStateFactory } from "./GameMidletStateFactory.js";
-
+        import { GameMidletStateFactory } from "./GameMidletStateFactory.js";
 import { GameMidletEventHandler } from "./GameMidletEventHandler.js";
-
 import { DemoGameMidletEvent } from "./DemoGameMidletEvent.js";
-
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
 
 export class GameMidlet extends ProgressMidlet implements CommandListener {

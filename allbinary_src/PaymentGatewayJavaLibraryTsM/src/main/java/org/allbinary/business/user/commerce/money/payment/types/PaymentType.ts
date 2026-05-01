@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -51,9 +55,7 @@ import { PaymentTransactionInterfaceFactoryInterface } from "../../../../../../.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicPaymentType } from "./BasicPaymentType.js";
-
+        import { BasicPaymentType } from "./BasicPaymentType.js";
 import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
 
 export class PaymentType

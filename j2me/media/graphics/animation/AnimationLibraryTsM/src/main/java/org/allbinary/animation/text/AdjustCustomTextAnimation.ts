@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -42,8 +46,7 @@ import { AnimationBehavior } from "../../../../org/allbinary/animation/Animation
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomTextAnimation } from "./CustomTextAnimation.js";
+        import { CustomTextAnimation } from "./CustomTextAnimation.js";
 
 export class AdjustCustomTextAnimation extends CustomTextAnimation {
         

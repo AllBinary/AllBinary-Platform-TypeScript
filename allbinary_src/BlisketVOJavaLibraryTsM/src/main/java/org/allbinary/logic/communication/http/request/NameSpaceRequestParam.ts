@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../java/util/HashMap.js";
@@ -62,8 +66,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+        import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
 
 export class NameSpaceRequestParam
             extends Object

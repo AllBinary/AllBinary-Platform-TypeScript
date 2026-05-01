@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -63,9 +67,7 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicItem } from "./BasicItem.js";
-
+        import { BasicItem } from "./BasicItem.js";
 import { OrderItemInterface } from "./OrderItemInterface.js";
 
 export class Item extends BasicItem implements OrderItemInterface {

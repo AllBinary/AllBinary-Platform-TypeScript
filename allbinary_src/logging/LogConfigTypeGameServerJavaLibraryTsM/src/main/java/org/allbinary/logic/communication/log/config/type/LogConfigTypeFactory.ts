@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { LogConfigTypes } from "../../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
 
     
@@ -42,8 +46,7 @@ import { LogConfigTypeFactory } from "../../../../../../../org/allbinary/logic/c
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogConfigType } from "./LogConfigType.js";
+        import { LogConfigType } from "./LogConfigType.js";
 
 export class LogConfigTypeFactory
             extends Object

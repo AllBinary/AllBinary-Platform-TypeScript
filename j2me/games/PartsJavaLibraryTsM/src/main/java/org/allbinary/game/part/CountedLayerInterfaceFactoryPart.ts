@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -63,8 +67,7 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PartInterface } from "./PartInterface.js";
+        import { PartInterface } from "./PartInterface.js";
 
 export class CountedLayerInterfaceFactoryPart
             extends Object

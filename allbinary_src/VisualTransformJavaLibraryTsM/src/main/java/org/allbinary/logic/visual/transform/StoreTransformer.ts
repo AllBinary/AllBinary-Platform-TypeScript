@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
 
     
@@ -51,8 +55,7 @@ import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visua
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTransformer } from "./BasicTransformer.js";
+        import { BasicTransformer } from "./BasicTransformer.js";
 
 export class StoreTransformer extends BasicTransformer {
         

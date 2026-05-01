@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { NullCanvas } from "../../../javax/microedition/lcdui/NullCanvas.js";
@@ -50,8 +54,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
+        import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
 
 export class ExitRunnable
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { TextFieldItem } from "../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js";
 
     

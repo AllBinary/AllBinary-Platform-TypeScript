@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { MIDlet } from "../../../../javax/microedition/midlet/MIDlet.js";
@@ -41,8 +45,7 @@ import { MIDlet } from "../../../../javax/microedition/midlet/MIDlet.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GLHolder } from "./GLHolder.js";
+        import { GLHolder } from "./GLHolder.js";
 
 export class SWTJOGLProcessor
             extends Object

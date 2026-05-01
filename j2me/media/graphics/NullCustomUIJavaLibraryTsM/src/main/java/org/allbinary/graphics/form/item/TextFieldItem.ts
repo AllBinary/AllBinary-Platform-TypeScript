@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -37,8 +41,7 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TextItem } from "./TextItem.js";
+        import { TextItem } from "./TextItem.js";
 
 export class TextFieldItem extends TextItem {
         

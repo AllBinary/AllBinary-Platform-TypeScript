@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { OrderHistoryFactory } from "../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryFactory.js";
 
     
@@ -60,8 +64,7 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OrderView } from "./OrderView.js";
+        import { OrderView } from "./OrderView.js";
 
 export class ValidationView extends OrderView implements ValidationComponentInterface {
         

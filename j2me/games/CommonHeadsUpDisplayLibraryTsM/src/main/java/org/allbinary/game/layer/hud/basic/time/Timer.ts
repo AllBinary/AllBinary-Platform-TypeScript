@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js";
 
     

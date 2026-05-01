@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -78,9 +82,7 @@ import { VectorInfo } from "../../../../org/allbinary/vector/VectorInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-
+        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotationAnimation.js";
 
 export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimationFactory {

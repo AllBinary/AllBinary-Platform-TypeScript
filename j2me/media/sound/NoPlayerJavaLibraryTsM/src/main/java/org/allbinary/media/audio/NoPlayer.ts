@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Control } from "../../../../javax/microedition/media/Control.js";
 
     
@@ -42,9 +46,7 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicPlayer } from "./BasicPlayer.js";
-
+        import { BasicPlayer } from "./BasicPlayer.js";
 import { NullControl } from "./NullControl.js";
 
 export class NoPlayer extends BasicPlayer {

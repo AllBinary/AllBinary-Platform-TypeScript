@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -63,9 +67,7 @@ import { HelperTag } from "../../tags/HelperTag.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ParentInventoryTagHelper } from "./ParentInventoryTagHelper.js";
-
+        import { ParentInventoryTagHelper } from "./ParentInventoryTagHelper.js";
 import { AbTagData } from "./AbTagData.js";
 
 export class MultipartRequestParamForwardTag extends CustomTagSupport {

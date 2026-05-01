@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -69,8 +73,7 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageComparisonSearchConstraintsInterface } from "./ImageComparisonSearchConstraintsInterface.js";
+        import { ImageComparisonSearchConstraintsInterface } from "./ImageComparisonSearchConstraintsInterface.js";
 
 export class ImageComparisonSearchWorker extends BasicEventHandler implements ImageComparisonResultsListener {
         

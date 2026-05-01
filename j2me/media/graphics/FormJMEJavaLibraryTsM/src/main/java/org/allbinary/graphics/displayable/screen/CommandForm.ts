@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Stack } from "../../../../../java/util/Stack.js";
 
     
@@ -75,8 +79,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScreenRepaintProcessorFactory } from "./ScreenRepaintProcessorFactory.js";
+        import { ScreenRepaintProcessorFactory } from "./ScreenRepaintProcessorFactory.js";
 
 export class CommandForm extends Form implements MyCommandInterface, MenuListener {
         

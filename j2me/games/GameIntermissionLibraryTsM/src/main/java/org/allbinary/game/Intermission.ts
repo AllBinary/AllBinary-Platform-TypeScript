@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js";
 
     
@@ -39,11 +43,8 @@ import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { IntermissionInterface } from "./IntermissionInterface.js";
-
+        import { IntermissionInterface } from "./IntermissionInterface.js";
 import { NullIntermissionEnableListener } from "./NullIntermissionEnableListener.js";
-
 import { IntermissionEnableListenerInterface } from "./IntermissionEnableListenerInterface.js";
 
 export class Intermission

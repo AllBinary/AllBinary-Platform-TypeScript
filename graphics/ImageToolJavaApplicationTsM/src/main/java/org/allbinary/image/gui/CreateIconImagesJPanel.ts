@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../java/lang/System";
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../java/lang/System.js";
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
@@ -84,17 +88,11 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { JButton } from "./JButton.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
 
 export class CreateIconImagesJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {

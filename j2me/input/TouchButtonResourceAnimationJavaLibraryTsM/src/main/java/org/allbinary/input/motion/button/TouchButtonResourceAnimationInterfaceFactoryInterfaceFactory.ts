@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -84,25 +88,15 @@ import { ImageCompleteUtil } from "../../../../../org/allbinary/media/image/Imag
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
-
+        import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
 import { TouchButtonResource } from "./TouchButtonResource.js";
-
 import { TouchButtonGenericActionResource } from "./TouchButtonGenericActionResource.js";
-
 import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
-
 import { TouchButtonUpResource } from "./TouchButtonUpResource.js";
-
 import { TouchButtonDownResource } from "./TouchButtonDownResource.js";
-
 import { TouchButtonTurnLeftResource } from "./TouchButtonTurnLeftResource.js";
-
 import { TouchButtonTurnRightResource } from "./TouchButtonTurnRightResource.js";
-
 import { TouchButtonStrafeLeftResource } from "./TouchButtonStrafeLeftResource.js";
-
 import { TouchButtonStrafeRightResource } from "./TouchButtonStrafeRightResource.js";
 
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
@@ -51,8 +55,7 @@ import { LicensingException } from "../../../org/allbinary/logic/system/security
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoRequestHelper } from "./TransformInfoRequestHelper.js";
+        import { TransformInfoRequestHelper } from "./TransformInfoRequestHelper.js";
 
 export class TransformInfoRequestHelperFactory extends TagHelperFactory {
         

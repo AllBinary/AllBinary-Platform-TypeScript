@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AndroidOperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/android/AndroidOperatingSystemFactory.js";
 
     
@@ -48,13 +52,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NoOperatingSystem } from "./NoOperatingSystem.js";
-
+        import { NoOperatingSystem } from "./NoOperatingSystem.js";
 import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
-
 import { SystemProperties } from "./SystemProperties.js";
-
 import { OperatingSystems } from "./OperatingSystems.js";
 
 export class OperatingSystemFactory

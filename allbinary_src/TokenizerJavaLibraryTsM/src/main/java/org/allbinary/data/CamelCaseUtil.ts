@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -57,8 +61,7 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Character } from "./Character.js";
+        import { Character } from "./Character.js";
 
 export class CamelCaseUtil
             extends Object

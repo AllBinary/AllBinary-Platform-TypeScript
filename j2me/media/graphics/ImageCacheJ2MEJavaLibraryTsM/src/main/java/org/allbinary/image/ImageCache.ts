@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
             import { Thread } from "../../../java/lang/Thread.js";
         
@@ -67,8 +71,7 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageCacheBase } from "./ImageCacheBase.js";
+        import { ImageCacheBase } from "./ImageCacheBase.js";
 
 export class ImageCache extends ImageCacheBase {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { UserDomNode } from "../../../org/allbinary/business/user/UserDomNode.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -39,9 +43,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MusicManager } from "./MusicManager.js";
-
+        import { MusicManager } from "./MusicManager.js";
 import { MusicService } from "./MusicService.js";
 
 export class MusicManagerFactory

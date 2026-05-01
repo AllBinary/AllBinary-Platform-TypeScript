@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -59,15 +63,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageAnalysisResults } from "./ImageAnalysisResults.js";
-
+        import { ImageAnalysisResults } from "./ImageAnalysisResults.js";
 import { ColorRangeInterface } from "./ColorRangeInterface.js";
-
 import { Color } from "./Color.js";
-
 import { ColorAverage } from "./ColorAverage.js";
-
 import { ImageColorResults } from "./ImageColorResults.js";
 
 export class ImageAnalysis

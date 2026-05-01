@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
 
     
@@ -51,9 +55,7 @@ import { GeographicMapCellPositionFactoryInterface } from "../../../../../../org
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeologicalGeographicMapCellPosition } from "./GeologicalGeographicMapCellPosition.js";
-
+        import { GeologicalGeographicMapCellPosition } from "./GeologicalGeographicMapCellPosition.js";
 import { GeologicalResource } from "./GeologicalResource.js";
 
 export class GeologicalGeographicMapCellPositionFactory

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Category } from "../../../../../org/allbinary/business/category/Category.js";
 
     

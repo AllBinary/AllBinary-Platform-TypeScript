@@ -4,7 +4,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
@@ -33,9 +37,7 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ArrayUtil } from "./ArrayUtil.js";
-
+        import { ArrayUtil } from "./ArrayUtil.js";
 import { BasicArrayListS } from "./BasicArrayListS.js";
 
 export class BasicArrayList

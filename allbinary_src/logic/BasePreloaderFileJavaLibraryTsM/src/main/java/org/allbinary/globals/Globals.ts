@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -54,9 +58,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AppUrlGlobals } from "./AppUrlGlobals.js";
-
+        import { AppUrlGlobals } from "./AppUrlGlobals.js";
 import { ClassLoader } from "./ClassLoader.js";
 
 export class Globals

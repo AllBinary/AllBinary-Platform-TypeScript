@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -63,9 +67,7 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CaptionAnimationHelperBase } from "./CaptionAnimationHelperBase.js";
-
+        import { CaptionAnimationHelperBase } from "./CaptionAnimationHelperBase.js";
 import { CaptionAnimation } from "./CaptionAnimation.js";
 
 export class CaptionAnimationHelper extends CaptionAnimationHelperBase {

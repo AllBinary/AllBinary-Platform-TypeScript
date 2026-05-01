@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CollidableHelperFactory } from "../../../../../org/allbinary/game/collision/CollidableHelperFactory.js";
 
     

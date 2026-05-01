@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -48,8 +52,7 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageAnimation } from "./ImageAnimation.js";
+        import { ImageAnimation } from "./ImageAnimation.js";
 
 export class ImageSegmentAnimation extends ImageAnimation {
         

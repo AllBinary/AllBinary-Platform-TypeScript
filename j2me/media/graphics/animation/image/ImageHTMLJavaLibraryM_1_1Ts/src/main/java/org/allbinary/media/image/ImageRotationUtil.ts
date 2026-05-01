@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -51,9 +55,7 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Math } from "./Math.js";
-
+        import { Math } from "./Math.js";
 import { ImageCreationUtil } from "./ImageCreationUtil.js";
 
 export class ImageRotationUtil

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { HashSet } from "../../../../../java/util/HashSet.js";
@@ -62,8 +66,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Tokenizer } from "./Tokenizer.js";
+        import { Tokenizer } from "./Tokenizer.js";
 
 export class UniqueTokens
             extends Object

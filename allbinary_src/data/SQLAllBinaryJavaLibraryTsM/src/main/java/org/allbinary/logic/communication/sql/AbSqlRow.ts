@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
 
     
@@ -69,8 +73,7 @@ import { Replace } from "../../../../../org/allbinary/logic/string/regex/replace
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbSqlColumn } from "./AbSqlColumn.js";
+        import { AbSqlColumn } from "./AbSqlColumn.js";
 
 export class AbSqlRow extends AbSqlColumn {
         

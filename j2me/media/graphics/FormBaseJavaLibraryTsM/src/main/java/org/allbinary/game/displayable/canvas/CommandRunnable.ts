@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Runnable } from "../../../../../java/lang/Runnable.js";
         
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
@@ -53,8 +57,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
+        import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
 
 export class CommandRunnable
             extends Object

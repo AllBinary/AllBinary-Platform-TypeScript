@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
@@ -65,8 +69,7 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ClassLoader } from "./ClassLoader.js";
+        import { ClassLoader } from "./ClassLoader.js";
 
 export class ResourceUtil
             extends Object

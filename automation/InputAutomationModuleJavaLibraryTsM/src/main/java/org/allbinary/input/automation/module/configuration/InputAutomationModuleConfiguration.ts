@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { XmlAccessType } from "../../../../../../javax/xml/bind/annotation/XmlAccessType.js";
 
     

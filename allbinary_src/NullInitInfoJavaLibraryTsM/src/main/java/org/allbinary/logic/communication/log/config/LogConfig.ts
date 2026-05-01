@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
 
     
@@ -57,8 +61,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogConfigData } from "./LogConfigData.js";
+        import { LogConfigData } from "./LogConfigData.js";
 
 export class LogConfig
             extends Object

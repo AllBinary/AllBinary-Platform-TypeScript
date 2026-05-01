@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
             import { Integer } from "../../../java/lang/Integer.js";
         
@@ -49,17 +53,11 @@ import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Context } from "./Context.js";
-
+        import { Context } from "./Context.js";
 import { NotificationManager } from "./NotificationManager.js";
-
 import { CommandUriAction } from "./CommandUriAction.js";
-
 import { Intent } from "./Intent.js";
-
 import { Notification } from "./Notification.js";
-
 import { PendingIntent } from "./PendingIntent.js";
 
 export class NotificationUtil

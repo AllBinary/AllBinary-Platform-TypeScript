@@ -10,7 +10,7 @@
                 *  You may obtain the AllBinary Open License Version 1 legal agreement from
                 *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
                 *  
-                *  Created By: Travis Berthelot  
+                *  Created By: Travis Berthelot   
         */
         
         /* Generated Code Do Not Modify */
@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Source } from "../../../../../javax/xml/transform/Source.js";
 
     
@@ -51,6 +55,9 @@ import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
 import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
 
     
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { TransformInfoHttpStoreInterface } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreInterface.js";
 
     
@@ -78,7 +85,7 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { URIResolverStrings } from "./URIResolverStrings.js";
 import { BasicUriResolver } from "./BasicUriResolver.js";
 
 export class StoreUriResolver
@@ -87,6 +94,8 @@ export class StoreUriResolver
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly uriResolverStrings: URIResolverStrings = URIResolverStrings.getInstance()!;
 
     private basicURIResolver: BasicUriResolver
 
@@ -111,18 +120,48 @@ var base = base
 
         try {
             
-    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;
+    var stringBuffer: StringMaker = new StringMaker();
 ;
     
 
-    var fileAbPath: AbPath = new AbFilePath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +transformInfoHttpStoreInterface!.getStoreName() +AbPathData.getInstance()!.SEPARATOR +href) as AbPath;
+    var transformInfoHttpStoreInterface: TransformInfoHttpStoreInterface = this.parentTransformInfoInterface as TransformInfoHttpStoreInterface;
+;
+    
+stringBuffer!.append(URLGLOBALS.getMainPath())!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH)!.append(transformInfoHttpStoreInterface!.getStoreName())!.append(AbPathData.getInstance()!.SEPARATOR)!.append(href);
+    
+
+    var fileAbPath: AbPath = new AbFilePath(stringBuffer!.toString()) as AbPath;
 ;
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.XMLLOGGING))
                         
                                     {
-                                    this.logUtil!.putF("attempt to use xsl:import: href=" +href +"\nBase= " +base +"\nNew path= " +fileAbPath!.toString() +"\nNote: " +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH +" is a urlglobal" +"\nRequired Extension: " +this.basicURIResolver!.getExtension(), this, "resolve");
+                                    stringBuffer!.delete(0, stringBuffer!.length());
+    
+stringBuffer!.append(this.uriResolverStrings!.ATTEMPT);
+    
+stringBuffer!.append(href);
+    
+stringBuffer!.append(this.uriResolverStrings!.BASE);
+    
+stringBuffer!.append(base);
+    
+stringBuffer!.append(this.uriResolverStrings!.NEW_PATH);
+    
+stringBuffer!.append(fileAbPath!.toString());
+    
+stringBuffer!.append(this.uriResolverStrings!.NOTE);
+    
+stringBuffer!.append(FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH);
+    
+stringBuffer!.append(this.uriResolverStrings!.URL_GLOBAL);
+    
+stringBuffer!.append(this.uriResolverStrings!.REQUIRED_EXTENSION);
+    
+stringBuffer!.append(this.basicURIResolver!.getExtension());
+    
+this.logUtil!.putF(stringBuffer!.toString(), this, this.uriResolverStrings!.RESOLVE);
     
 
                                     }

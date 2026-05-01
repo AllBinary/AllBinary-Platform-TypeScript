@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -54,8 +58,7 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasePatrolAI } from "./BasePatrolAI.js";
+        import { BasePatrolAI } from "./BasePatrolAI.js";
 
 export class RandomPatrolAI extends BasePatrolAI {
         

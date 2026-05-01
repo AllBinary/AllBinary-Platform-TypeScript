@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GameInputProcessor } from "../../../../org/allbinary/game/input/GameInputProcessor.js";
 
     
@@ -39,8 +43,7 @@ import { GameInputProcessor } from "../../../../org/allbinary/game/input/GameInp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
+        import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
 
 export class RTSPlayerGameInputProcessor extends GameInputProcessor {
         

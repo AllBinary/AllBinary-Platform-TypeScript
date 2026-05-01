@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
             import { Thread } from "../../../../../java/lang/Thread.js";
@@ -102,27 +106,16 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { WorkAreaJPanelInterface } from "./WorkAreaJPanelInterface.js";
-
 import { WorkAreaJTreeJPanel } from "./WorkAreaJTreeJPanel.js";
-
 import { Component } from "./Component.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { WorkAreaDom } from "./WorkAreaDom.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { GridBagLayout } from "./GridBagLayout.js";
-
 import { GridBagConstraints } from "./GridBagConstraints.js";
-
 import { KeyAdapter } from "./KeyAdapter.js";
-
 import { KeyEvent } from "./KeyEvent.js";
 
 export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, MyCanvasEventListener, EventListener, Runnable {

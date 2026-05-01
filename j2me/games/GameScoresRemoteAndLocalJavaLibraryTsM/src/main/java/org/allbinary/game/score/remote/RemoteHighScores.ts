@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
@@ -74,11 +78,8 @@ import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RemoteHighScoresProcessorFactory } from "./RemoteHighScoresProcessorFactory.js";
-
+        import { RemoteHighScoresProcessorFactory } from "./RemoteHighScoresProcessorFactory.js";
 import { RemoteHighScoresSubmissionProcessorFactory } from "./RemoteHighScoresSubmissionProcessorFactory.js";
-
 import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
 
 export class RemoteHighScores extends HighScores {

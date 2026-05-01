@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { DomDocumentHelper } from "../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -54,11 +58,8 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
-
+        import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 import { TransformInfoObjectConfig } from "./TransformInfoObjectConfig.js";
-
 import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
 
 export class TransformInfoObjectConfigNoManipulationFactory

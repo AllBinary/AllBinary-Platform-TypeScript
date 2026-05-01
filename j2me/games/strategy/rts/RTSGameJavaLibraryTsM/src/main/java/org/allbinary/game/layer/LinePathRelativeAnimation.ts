@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -45,8 +49,7 @@ import { Layer } from "../../../../org/allbinary/layer/Layer.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LinePathAnimation } from "./LinePathAnimation.js";
+        import { LinePathAnimation } from "./LinePathAnimation.js";
 
 export class LinePathRelativeAnimation extends LinePathAnimation {
         

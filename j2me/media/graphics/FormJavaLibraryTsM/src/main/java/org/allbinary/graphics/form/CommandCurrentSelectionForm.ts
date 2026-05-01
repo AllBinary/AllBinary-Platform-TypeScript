@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Command } from "../../../../javax/microedition/lcdui/Command.js";
 
     
@@ -75,11 +79,8 @@ import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/ite
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScrollCurrentSelectionForm } from "./ScrollCurrentSelectionForm.js";
-
+        import { ScrollCurrentSelectionForm } from "./ScrollCurrentSelectionForm.js";
 import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-
 import { FormType } from "./FormType.js";
 
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {

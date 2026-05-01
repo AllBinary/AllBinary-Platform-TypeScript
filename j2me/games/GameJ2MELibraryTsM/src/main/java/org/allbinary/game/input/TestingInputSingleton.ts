@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -69,15 +73,10 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameInputInterface } from "./GameInputInterface.js";
-
+        import { GameInputInterface } from "./GameInputInterface.js";
 import { InputFactory } from "./InputFactory.js";
-
 import { GameInputProcessor } from "./GameInputProcessor.js";
-
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
-
 import { TestInputInterface } from "./TestInputInterface.js";
 
 export class TestingInputSingleton extends AllBinaryGameLayer implements GameInputInterface {

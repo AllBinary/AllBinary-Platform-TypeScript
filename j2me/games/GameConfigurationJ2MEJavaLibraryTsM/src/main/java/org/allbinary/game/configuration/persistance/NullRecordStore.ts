@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { RecordStore } from "../../../../../javax/microedition/rms/RecordStore.js";
 
     

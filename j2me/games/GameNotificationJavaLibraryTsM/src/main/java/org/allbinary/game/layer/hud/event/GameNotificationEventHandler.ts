@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -54,9 +58,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameNotificationListenerInterface } from "./GameNotificationListenerInterface.js";
-
+        import { GameNotificationListenerInterface } from "./GameNotificationListenerInterface.js";
 import { GameNotificationEvent } from "./GameNotificationEvent.js";
 
 export class GameNotificationEventHandler extends BasicEventHandler {

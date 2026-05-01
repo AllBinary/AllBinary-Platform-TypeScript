@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -60,8 +64,7 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
+        import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
 
 export class TransformInfoBasic extends AbContext implements TransformInfoHttpInterface {
         

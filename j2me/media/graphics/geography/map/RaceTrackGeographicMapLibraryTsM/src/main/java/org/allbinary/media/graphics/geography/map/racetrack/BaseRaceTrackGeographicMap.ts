@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -60,11 +64,8 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
-
+        import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
 import { RaceTrackInfo } from "./RaceTrackInfo.js";
-
 import { RaceTrackData } from "./RaceTrackData.js";
 
 export class BaseRaceTrackGeographicMap extends BasicGeographicMap implements RaceTrackGeographicMapInterface {

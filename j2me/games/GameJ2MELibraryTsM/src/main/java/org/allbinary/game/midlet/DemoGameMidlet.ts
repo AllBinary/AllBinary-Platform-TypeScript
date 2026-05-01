@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -60,11 +64,8 @@ import { PrimaryThreadPool } from "../../../../org/allbinary/thread/PrimaryThrea
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameMidlet } from "./GameMidlet.js";
-
+        import { GameMidlet } from "./GameMidlet.js";
 import { DemoRunnable } from "./DemoRunnable.js";
-
 import { CreateGameRunnable } from "./CreateGameRunnable.js";
 
 export class DemoGameMidlet extends GameMidlet {

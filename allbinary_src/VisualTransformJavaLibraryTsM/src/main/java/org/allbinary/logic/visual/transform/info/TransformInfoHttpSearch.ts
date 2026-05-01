@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { FREEBLISKET_PATH_GLOBALS } from "../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
 
     
@@ -57,8 +61,7 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoHttp } from "./TransformInfoHttp.js";
+        import { TransformInfoHttp } from "./TransformInfoHttp.js";
 
 export class TransformInfoHttpSearch extends TransformInfoHttp {
         

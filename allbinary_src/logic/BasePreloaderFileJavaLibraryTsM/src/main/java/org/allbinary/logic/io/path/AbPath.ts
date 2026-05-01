@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FilePathData } from "../../../../../org/allbinary/logic/io/file/FilePathData.js";
 
     
@@ -54,9 +58,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbPathData } from "./AbPathData.js";
-
+        import { AbPathData } from "./AbPathData.js";
 import { PathUtil } from "./PathUtil.js";
 
 export class AbPath

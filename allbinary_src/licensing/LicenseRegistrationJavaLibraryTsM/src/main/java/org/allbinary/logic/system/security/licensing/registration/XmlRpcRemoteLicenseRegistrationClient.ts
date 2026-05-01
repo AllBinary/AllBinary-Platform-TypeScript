@@ -18,7 +18,12 @@
 
 
 
-import { IOException } from "../../../../../../../java/io/IOException.js";
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
+
+//import { IOException } from "../../../../../../../java/io/IOException.js";
 
     
 import { Hashtable } from "../../../../../../../java/util/Hashtable.js";

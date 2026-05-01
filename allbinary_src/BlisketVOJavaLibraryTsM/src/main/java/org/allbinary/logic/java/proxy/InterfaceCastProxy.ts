@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Method } from "../../../../../java/lang/reflect/Method.js";
 
     
@@ -42,8 +46,7 @@ import { Proxy } from "../../../../../java/lang/reflect/Proxy.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InvocationHandler } from "./InvocationHandler.js";
+        import { InvocationHandler } from "./InvocationHandler.js";
 
 export class InterfaceCastProxy
             extends Object

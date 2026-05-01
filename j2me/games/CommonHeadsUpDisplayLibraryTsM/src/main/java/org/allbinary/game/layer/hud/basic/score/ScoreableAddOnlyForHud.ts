@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Scoreable } from "../../../../../../../org/allbinary/game/score/Scoreable.js";
 
     
@@ -39,8 +43,7 @@ import { Scoreable } from "../../../../../../../org/allbinary/game/score/Scoreab
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScoreHudWidget } from "./ScoreHudWidget.js";
+        import { ScoreHudWidget } from "./ScoreHudWidget.js";
 
 export class ScoreableAddOnlyForHud extends Scoreable {
         

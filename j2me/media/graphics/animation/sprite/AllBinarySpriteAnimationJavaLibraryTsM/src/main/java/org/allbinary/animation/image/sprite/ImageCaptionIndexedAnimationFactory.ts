@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -78,8 +82,7 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
+        import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
 
 export class ImageCaptionIndexedAnimationFactory
             extends Object

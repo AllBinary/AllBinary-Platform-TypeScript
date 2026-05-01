@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
 
     
@@ -54,11 +58,8 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackInfo } from "./RaceTrackInfo.js";
-
+        import { RaceTrackInfo } from "./RaceTrackInfo.js";
 import { RaceTrackData } from "./RaceTrackData.js";
-
 import { AllBinaryTiledLayerFactoryInterface } from "./AllBinaryTiledLayerFactoryInterface.js";
 
 export class BasicGeographicMapFactory

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { InitInterface } from "../../../../org/allbinary/init/InitInterface.js";
 
     
@@ -42,8 +46,7 @@ import { UpdateInterface } from "../../../../org/allbinary/init/UpdateInterface.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaintableInterface } from "./PaintableInterface.js";
+        import { PaintableInterface } from "./PaintableInterface.js";
 
 export interface InitUpdatePaintableInterface extends InitInterface, UpdateInterface, PaintableInterface {
         

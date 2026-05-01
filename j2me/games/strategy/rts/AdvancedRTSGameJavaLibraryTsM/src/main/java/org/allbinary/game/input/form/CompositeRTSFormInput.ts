@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { RTSPlayerLayerInterface } from "../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js";
 
     
@@ -72,11 +76,8 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSFormInput } from "./RTSFormInput.js";
-
+        import { RTSFormInput } from "./RTSFormInput.js";
 import { WaypointRTSFormInput } from "./WaypointRTSFormInput.js";
-
 import { UnitRTSFormInput } from "./UnitRTSFormInput.js";
 
 export class CompositeRTSFormInput extends RTSFormInput {

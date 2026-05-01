@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { Tag } from "../../javax/servlet/jsp/tagext/Tag.js";
 
     
@@ -42,8 +46,7 @@ import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HelperTag } from "./HelperTag.js";
+        import { HelperTag } from "./HelperTag.js";
 
 export class ParentInventoryTagHelper
             extends Object

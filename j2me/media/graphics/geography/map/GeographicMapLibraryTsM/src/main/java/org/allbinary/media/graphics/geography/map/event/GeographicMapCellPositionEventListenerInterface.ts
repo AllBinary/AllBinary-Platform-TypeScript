@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { EventListenerInterface } from "../../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
 
     
@@ -39,8 +43,7 @@ import { EventListenerInterface } from "../../../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPositionEvent } from "./GeographicMapCellPositionEvent.js";
+        import { GeographicMapCellPositionEvent } from "./GeographicMapCellPositionEvent.js";
 
 export interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
         

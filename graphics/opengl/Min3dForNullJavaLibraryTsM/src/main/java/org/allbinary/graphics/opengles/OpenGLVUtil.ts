@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,8 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLVUtilBase } from "./OpenGLVUtilBase.js";
+        import { OpenGLVUtilBase } from "./OpenGLVUtilBase.js";
 
 export class OpenGLVUtil extends OpenGLVUtilBase {
         

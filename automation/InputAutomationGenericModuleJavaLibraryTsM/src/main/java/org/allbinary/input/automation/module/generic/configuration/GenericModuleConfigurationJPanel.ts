@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -63,47 +67,26 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { GenericModuleConfigurationInterface } from "./GenericModuleConfigurationInterface.js";
-
 import { JDialog } from "./JDialog.js";
-
 import { JButton } from "./JButton.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { ButtonGroup } from "./ButtonGroup.js";
-
 import { JTabbedPane } from "./JTabbedPane.js";
-
 import { JScrollPane } from "./JScrollPane.js";
-
 import { JList } from "./JList.js";
-
 import { JRadioButton } from "./JRadioButton.js";
-
 import { JCheckBox } from "./JCheckBox.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { ListSelectionListener } from "./ListSelectionListener.js";
-
 import { ListSelectionEvent } from "./ListSelectionEvent.js";
-
 import { Insets } from "./Insets.js";
 
 export class GenericModuleConfigurationJPanel extends javax.swing.JPanel implements GenericModuleConfigurationInterface {

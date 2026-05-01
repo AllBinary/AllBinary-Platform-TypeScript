@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { ByteArrayInputStream } from "../../../../../../java/io/ByteArrayInputStream.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AssignWaypointsUtil } from "../../../../org/allbinary/game/input/form/AssignWaypointsUtil.js";
 
     
@@ -63,8 +67,7 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
+        import { SelectedRTSLayersPlayerGameInput } from "./SelectedRTSLayersPlayerGameInput.js";
 
 export class SelectAdvancedRTSLayerVisitor extends Visitor {
         

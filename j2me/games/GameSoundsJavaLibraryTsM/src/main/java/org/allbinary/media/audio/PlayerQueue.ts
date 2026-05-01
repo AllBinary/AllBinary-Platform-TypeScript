@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
@@ -54,9 +58,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Sound } from "./Sound.js";
-
+        import { Sound } from "./Sound.js";
 import { NoSound } from "./NoSound.js";
 
 export class PlayerQueue

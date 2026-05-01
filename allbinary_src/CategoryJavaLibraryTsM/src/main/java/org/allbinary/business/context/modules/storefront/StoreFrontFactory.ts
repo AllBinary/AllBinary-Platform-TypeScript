@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { StoreFrontsEntity } from "../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js";
 
     
@@ -48,8 +52,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreFront } from "./StoreFront.js";
+        import { StoreFront } from "./StoreFront.js";
 
 export class StoreFrontFactory
             extends Object

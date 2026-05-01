@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,13 +40,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PoolInterface } from "./PoolInterface.js";
-
+        import { PoolInterface } from "./PoolInterface.js";
 import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
-
 import { PoolType } from "./PoolType.js";
-
 import { CachePolicy } from "./CachePolicy.js";
 
 export class PoolInterfaceFactory

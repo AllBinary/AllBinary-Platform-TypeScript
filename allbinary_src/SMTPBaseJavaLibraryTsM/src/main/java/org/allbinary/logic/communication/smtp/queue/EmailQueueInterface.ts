@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { EmailInterface } from "../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js";
 
     

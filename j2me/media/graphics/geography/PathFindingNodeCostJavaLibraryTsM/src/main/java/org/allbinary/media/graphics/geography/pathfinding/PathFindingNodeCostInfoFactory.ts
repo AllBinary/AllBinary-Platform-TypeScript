@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -42,9 +46,7 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PathFindingNodeCostInfoFactoryBase } from "./PathFindingNodeCostInfoFactoryBase.js";
-
+        import { PathFindingNodeCostInfoFactoryBase } from "./PathFindingNodeCostInfoFactoryBase.js";
 import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
 
 export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFactoryBase {

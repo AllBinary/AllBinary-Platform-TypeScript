@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -150,9 +154,7 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../org/allbin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSFormInput } from "./RTSFormInput.js";
-
+        import { RTSFormInput } from "./RTSFormInput.js";
 import { PrimaryWaypointHelper } from "./PrimaryWaypointHelper.js";
 
 export class WaypointRTSFormInput extends RTSFormInput {

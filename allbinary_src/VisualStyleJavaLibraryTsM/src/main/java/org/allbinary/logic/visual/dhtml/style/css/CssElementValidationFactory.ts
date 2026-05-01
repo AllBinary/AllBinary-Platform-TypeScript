@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { ValidationInterface } from "../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
 
     
@@ -42,8 +46,7 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CssElementValidation } from "./CssElementValidation.js";
+        import { CssElementValidation } from "./CssElementValidation.js";
 
 export class CssElementValidationFactory
             extends Object

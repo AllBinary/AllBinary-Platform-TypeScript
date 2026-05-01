@@ -18,9 +18,14 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../java/lang/Long.js";
         
-import { IOException } from "../../../../java/io/IOException.js";
+
+//import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -68,8 +73,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { IdGeneratorInterface } from "./IdGeneratorInterface.js";
+        import { IdGeneratorInterface } from "./IdGeneratorInterface.js";
 
 export class UniqueIdGenerator
             extends Object

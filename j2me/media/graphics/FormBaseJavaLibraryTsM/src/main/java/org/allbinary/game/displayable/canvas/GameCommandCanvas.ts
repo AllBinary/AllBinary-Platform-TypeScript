@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
@@ -183,13 +187,9 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MenuListener } from "./MenuListener.js";
-
+        import { MenuListener } from "./MenuListener.js";
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
-
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
-
 import { ImmediateCommandFormInputProcessor } from "./ImmediateCommandFormInputProcessor.js";
 
 export class GameCommandCanvas extends MyCanvas implements MenuListener, DisplayChangeEventListener {

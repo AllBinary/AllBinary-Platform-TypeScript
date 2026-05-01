@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Buffer } from "../../../../java/nio/Buffer.js";
 
     
@@ -31,8 +35,7 @@ import { IntBuffer } from "../../../../java/nio/IntBuffer.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GL } from "./GL.js";
+        import { GL } from "./GL.js";
 
 export interface GL10 extends GL {
         

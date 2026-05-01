@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js";
 
     
@@ -39,8 +43,7 @@ import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdvertisementImageInterface } from "./AdvertisementImageInterface.js";
+        import { AdvertisementImageInterface } from "./AdvertisementImageInterface.js";
 
 export class AdvertisementImage
             extends Object

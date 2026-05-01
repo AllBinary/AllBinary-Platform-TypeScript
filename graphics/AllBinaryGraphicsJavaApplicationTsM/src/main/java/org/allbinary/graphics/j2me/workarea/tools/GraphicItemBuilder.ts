@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
@@ -39,11 +43,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PointsDomUtil } from "./PointsDomUtil.js";
-
+        import { PointsDomUtil } from "./PointsDomUtil.js";
 import { LinesGraphicItem } from "./LinesGraphicItem.js";
-
 import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class GraphicItemBuilder

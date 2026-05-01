@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../java/lang/System";
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../java/lang/System.js";
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
@@ -116,47 +120,26 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JFrame } from "./JFrame.js";
-
+        import { JFrame } from "./JFrame.js";
 import { KeyListener } from "./KeyListener.js";
-
 import { Dimension } from "./Dimension.js";
-
 import { JToolBar } from "./JToolBar.js";
-
 import { JButton } from "./JButton.js";
-
 import { JPanel } from "./JPanel.js";
-
 import { JTabbedPane } from "./JTabbedPane.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { JMenuBar } from "./JMenuBar.js";
-
 import { JMenu } from "./JMenu.js";
-
 import { JMenuItem } from "./JMenuItem.js";
-
 import { WindowAdapter } from "./WindowAdapter.js";
-
 import { WindowEvent } from "./WindowEvent.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
-
 import { MouseAdapter } from "./MouseAdapter.js";
-
 import { MouseEvent } from "./MouseEvent.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { ChangeListener } from "./ChangeListener.js";
-
 import { ChangeEvent } from "./ChangeEvent.js";
-
 import { KeyEvent } from "./KeyEvent.js";
 
 export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerInterface, HashMapJDialogListenerInterface, java.awt.event.KeyListener {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -54,15 +58,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Color } from "./Color.js";
-
+        import { Color } from "./Color.js";
 import { Points } from "./Points.js";
-
 import { Graphics } from "./Graphics.js";
-
 import { MouseEvent } from "./MouseEvent.js";
-
 import { KeyEvent } from "./KeyEvent.js";
 
 export interface GraphicItemInterface {

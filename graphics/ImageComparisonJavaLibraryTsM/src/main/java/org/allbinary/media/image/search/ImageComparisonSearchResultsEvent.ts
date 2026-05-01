@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -39,8 +43,7 @@ import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/ev
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageComparisonSearch } from "./ImageComparisonSearch.js";
+        import { ImageComparisonSearch } from "./ImageComparisonSearch.js";
 
 export class ImageComparisonSearchResultsEvent extends AllBinaryEventObject {
         

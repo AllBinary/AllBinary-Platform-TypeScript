@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
     
@@ -51,8 +55,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+        import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 export class RTSLayerLogHelper
             extends Object

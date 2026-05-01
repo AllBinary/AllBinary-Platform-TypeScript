@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { GameFeatureEvent } from "../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js";
@@ -56,8 +60,7 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
+        import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 
 export class GameConfiguration
             extends Object

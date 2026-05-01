@@ -18,12 +18,16 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 import { Arrays } from "../../../../../java/util/Arrays.js";
 
     
-import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
 
     
 import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
@@ -47,9 +51,7 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ComparableObject } from "./ComparableObject.js";
-
+        import { ComparableObject } from "./ComparableObject.js";
 import { ObjectPermutationVisitor } from "./ObjectPermutationVisitor.js";
 
 export class OrderedObjectArrayPermutationUtil

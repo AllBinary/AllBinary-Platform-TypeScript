@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -45,9 +49,7 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BoundsChangeEventListener } from "./BoundsChangeEventListener.js";
-
+        import { BoundsChangeEventListener } from "./BoundsChangeEventListener.js";
 import { BoundsChangeEvent } from "./BoundsChangeEvent.js";
 
 export class BoundsChangeEventHandler extends BasicEventHandler {

@@ -18,7 +18,11 @@
 
 
 
-            import { Integer } from "../../../../../../../../../java/lang/Thread.js";
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
+            import { Thread } from "../../../../../../../../../java/lang/Thread.js";
         
 import { InputRobotInterface } from "../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
 
@@ -50,8 +54,7 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
+        import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
 
 export class MouseInputAutomationProcessor
             extends Object

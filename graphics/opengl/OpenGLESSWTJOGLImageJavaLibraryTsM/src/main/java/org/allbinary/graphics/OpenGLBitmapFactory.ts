@@ -4,7 +4,12 @@
 
 
 
-import { IOException } from "../../../java/io/IOException.js";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+
+//import { IOException } from "../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../java/io/InputStream.js";
@@ -37,9 +42,7 @@ import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/Pla
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Config } from "./Config.js";
-
+        //import { Config } from "./Config.js";
 import { OpenGLBitmap } from "./OpenGLBitmap.js";
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {

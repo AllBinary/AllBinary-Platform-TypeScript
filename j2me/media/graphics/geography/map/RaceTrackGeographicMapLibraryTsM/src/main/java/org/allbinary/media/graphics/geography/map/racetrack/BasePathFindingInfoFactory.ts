@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -69,9 +73,7 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackRoadsGeographicMapCellHistoryFactory } from "./RaceTrackRoadsGeographicMapCellHistoryFactory.js";
-
+        import { RaceTrackRoadsGeographicMapCellHistoryFactory } from "./RaceTrackRoadsGeographicMapCellHistoryFactory.js";
 import { RaceTrackGeographicMapCellPositionFactoryInitVisitor } from "./RaceTrackGeographicMapCellPositionFactoryInitVisitor.js";
 
 export class BasePathFindingInfoFactory

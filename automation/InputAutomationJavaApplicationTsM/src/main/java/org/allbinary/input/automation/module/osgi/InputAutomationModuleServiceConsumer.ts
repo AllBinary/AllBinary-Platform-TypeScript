@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BundleContext } from "../../../../../../org/osgi/framework/BundleContext.js";
 
     
@@ -45,8 +49,7 @@ import { InputAutomationServiceConsumer } from "../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationModuleOSGIServiceVisitor } from "./InputAutomationModuleOSGIServiceVisitor.js";
+        import { InputAutomationModuleOSGIServiceVisitor } from "./InputAutomationModuleOSGIServiceVisitor.js";
 
 export class InputAutomationModuleServiceConsumer extends InputAutomationServiceConsumer {
         

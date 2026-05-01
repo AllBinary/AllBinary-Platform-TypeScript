@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Security } from "../../../../../../../java/security/Security.js";
 
     
@@ -69,11 +73,8 @@ import { BouncyCastleProvider } from "../../../../../../../org/bouncycastle/jce/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseSecretComposite } from "./BaseSecretComposite.js";
-
+        import { BaseSecretComposite } from "./BaseSecretComposite.js";
 import { KeySpecFactory } from "./KeySpecFactory.js";
-
 import { SecretComposite } from "./SecretComposite.js";
 
 export class AbCrypt

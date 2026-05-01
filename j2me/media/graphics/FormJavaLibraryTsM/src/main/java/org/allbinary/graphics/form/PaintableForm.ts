@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -52,11 +56,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomForm } from "./CustomForm.js";
-
+        import { CustomForm } from "./CustomForm.js";
 import { FormTypeFactory } from "./FormTypeFactory.js";
-
 import { FormType } from "./FormType.js";
 
 export class PaintableForm extends CustomForm {

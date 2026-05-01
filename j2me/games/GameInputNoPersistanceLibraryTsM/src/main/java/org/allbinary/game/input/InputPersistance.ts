@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -75,8 +79,7 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Input } from "./Input.js";
+        import { Input } from "./Input.js";
 
 export class InputPersistance extends BasicPersitance {
         

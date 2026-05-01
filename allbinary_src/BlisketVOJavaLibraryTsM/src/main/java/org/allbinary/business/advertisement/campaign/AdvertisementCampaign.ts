@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -48,9 +52,7 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdvertisementCampaignInterface } from "./AdvertisementCampaignInterface.js";
-
+        import { AdvertisementCampaignInterface } from "./AdvertisementCampaignInterface.js";
 import { AdvertisementCampaignData } from "./AdvertisementCampaignData.js";
 
 export class AdvertisementCampaign

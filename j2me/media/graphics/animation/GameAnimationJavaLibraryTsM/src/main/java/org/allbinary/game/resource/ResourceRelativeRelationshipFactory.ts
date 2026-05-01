@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -51,8 +55,7 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ResourceRelativeRelationshipFactoryInterface } from "./ResourceRelativeRelationshipFactoryInterface.js";
+        import { ResourceRelativeRelationshipFactoryInterface } from "./ResourceRelativeRelationshipFactoryInterface.js";
 
 export class ResourceRelativeRelationshipFactory
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { GraphPath } from "../../../../../../../../org/jgrapht/GraphPath.js";
 
     

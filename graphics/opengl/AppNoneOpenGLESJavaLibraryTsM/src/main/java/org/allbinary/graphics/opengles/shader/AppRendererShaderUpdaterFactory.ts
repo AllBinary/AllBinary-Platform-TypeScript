@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,11 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ShaderUpdater } from "./ShaderUpdater.js";
-
+        import { ShaderUpdater } from "./ShaderUpdater.js";
 import { ShaderComposite } from "./ShaderComposite.js";
-
 import { ShaderOpenGLProcessor } from "./ShaderOpenGLProcessor.js";
 
 export class AppRendererShaderUpdaterFactory extends ShaderUpdater {

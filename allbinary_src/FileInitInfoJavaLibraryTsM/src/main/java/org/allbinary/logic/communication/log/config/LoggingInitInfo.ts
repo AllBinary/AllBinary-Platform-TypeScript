@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -75,11 +79,8 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogConfigsData } from "./LogConfigsData.js";
-
+        import { LogConfigsData } from "./LogConfigsData.js";
 import { LogConfigData } from "./LogConfigData.js";
-
 import { LogConfig } from "./LogConfig.js";
 
 export class LoggingInitInfo

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -93,8 +97,7 @@ import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TagHelper } from "./TagHelper.js";
+        import { TagHelper } from "./TagHelper.js";
 
 export class AuthenticationRequestHelper extends TagHelper {
         

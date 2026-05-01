@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
 
     
@@ -39,8 +43,7 @@ import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BooleanFactory } from "./BooleanFactory.js";
+        import { BooleanFactory } from "./BooleanFactory.js";
 
 export class BooleanUtil
             extends Object

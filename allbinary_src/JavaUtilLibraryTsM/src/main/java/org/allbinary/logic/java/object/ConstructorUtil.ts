@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Constructor } from "../../../../../java/lang/reflect/Constructor.js";
 
     

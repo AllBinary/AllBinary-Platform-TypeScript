@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ProgressCanvas } from "../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
 
     
@@ -48,8 +52,7 @@ import { PaintableInterface } from "../../../../../org/allbinary/graphics/paint/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DemoCanvas } from "./DemoCanvas.js";
+        import { DemoCanvas } from "./DemoCanvas.js";
 
 export class DemoCanvasProgressUtil
             extends Object

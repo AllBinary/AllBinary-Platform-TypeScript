@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AndroidInfoFactory } from "../../../../org/allbinary/android/AndroidInfoFactory.js";
 
     
@@ -48,8 +52,7 @@ import { Activity } from "../../../../android/app/Activity.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VirtualKeyboard } from "./VirtualKeyboard.js";
+        import { VirtualKeyboard } from "./VirtualKeyboard.js";
 
 export class VirtualKeyboardFactory
             extends Object

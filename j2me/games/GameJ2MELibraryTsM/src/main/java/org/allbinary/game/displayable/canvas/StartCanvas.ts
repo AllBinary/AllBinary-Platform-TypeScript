@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -288,21 +292,13 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
-
+        import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
 import { MenuListener } from "./MenuListener.js";
-
 import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
-
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
-
 import { NullWaitGameRunnable } from "./NullWaitGameRunnable.js";
-
 import { GameRunnable } from "./GameRunnable.js";
-
 import { FormUtil } from "./FormUtil.js";
-
 import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
 
 export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener {

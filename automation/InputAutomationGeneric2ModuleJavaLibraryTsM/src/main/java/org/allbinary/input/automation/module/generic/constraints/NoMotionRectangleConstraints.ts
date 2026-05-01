@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../java/lang/Long.js";
@@ -49,9 +53,7 @@ import { MotionRectangleConstraints } from "../../../../../../../org/allbinary/i
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Dimension } from "./Dimension.js";
-
+        import { Dimension } from "./Dimension.js";
 import { Rectangle } from "./Rectangle.js";
 
 export class NoMotionRectangleConstraints extends MotionRectangleConstraints {

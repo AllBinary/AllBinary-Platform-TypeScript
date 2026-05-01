@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 import { ProfileActionScriptItemInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js";
@@ -47,8 +51,7 @@ import { ProfileActionScriptProcessorInterface } from "../../../../../../../org/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomTreeNodeInterface } from "./CustomTreeNodeInterface.js";
+        import { CustomTreeNodeInterface } from "./CustomTreeNodeInterface.js";
 
 export interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
         

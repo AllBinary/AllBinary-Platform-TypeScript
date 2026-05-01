@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { File } from "../../../../../java/io/File.js";
 
     
@@ -27,13 +31,14 @@ import { FileFilter } from "../../../../../java/io/FileFilter.js";
 import { FilenameFilter } from "../../../../../java/io/FilenameFilter.js";
 
     
-import { IOException } from "../../../../../java/io/IOException.js";
+
+//import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { URI } from "../../../../../java/net/URI.js";
 
     
-import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
 
     
 import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
@@ -60,8 +65,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFileInterface } from "./AbFileInterface.js";
+        import { AbFileInterface } from "./AbFileInterface.js";
 
 export class AbFile
             extends Object

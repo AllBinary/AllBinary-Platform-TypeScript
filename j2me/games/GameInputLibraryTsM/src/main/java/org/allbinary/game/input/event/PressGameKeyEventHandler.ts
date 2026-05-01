@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { PlayerGameInput } from "../../../../../org/allbinary/game/input/PlayerGameInput.js";
 
     
@@ -60,9 +64,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameKeyEvent } from "./GameKeyEvent.js";
-
+        import { GameKeyEvent } from "./GameKeyEvent.js";
 import { PressGameKeyEventListenerInterface } from "./PressGameKeyEventListenerInterface.js";
 
 export class PressGameKeyEventHandler extends BasicEventHandler {

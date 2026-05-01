@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
 
     
@@ -45,17 +49,11 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
-
+        import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
 import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
-
 import { VectorRotationGenerator } from "./VectorRotationGenerator.js";
-
 import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
-
 import { IndexedAnimation } from "./IndexedAnimation.js";
-
 import { Animation } from "./Animation.js";
 
 export class IndependentVectorExplosionRotationAnimationFactory

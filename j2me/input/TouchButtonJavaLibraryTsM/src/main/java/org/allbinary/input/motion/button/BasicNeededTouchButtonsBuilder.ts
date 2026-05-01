@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -54,17 +58,11 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseTouchInput } from "./BaseTouchInput.js";
-
+        import { BaseTouchInput } from "./BaseTouchInput.js";
 import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
-
 import { BasicTouchButtonCellPositionFactory } from "./BasicTouchButtonCellPositionFactory.js";
-
 import { CommonButtons } from "./CommonButtons.js";
-
 import { TouchButton } from "./TouchButton.js";
-
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 
 export class BasicNeededTouchButtonsBuilder extends BaseTouchInput {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 
@@ -96,13 +100,9 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Order } from "./Order.js";
-
+        import { Order } from "./Order.js";
 import { OrderHistoryInterface } from "./OrderHistoryInterface.js";
-
 import { OrderData } from "./OrderData.js";
-
 import { OrderHistoryData } from "./OrderHistoryData.js";
 
 export class OrderHistory extends Order implements OrderHistoryInterface {

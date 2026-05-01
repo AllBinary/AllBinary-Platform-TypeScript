@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { MyRandomFactory } from "../../../../org/allbinary/game/rand/MyRandomFactory.js";
 
     
@@ -48,8 +52,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdvertisementProcessorInterface } from "./AdvertisementProcessorInterface.js";
+        import { AdvertisementProcessorInterface } from "./AdvertisementProcessorInterface.js";
 
 export class Advertisements
             extends Object

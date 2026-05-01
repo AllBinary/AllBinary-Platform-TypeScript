@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { UpdateOrderHelperFactory } from "../../admin/taghelpers/UpdateOrderHelperFactory.js";
 
     
@@ -39,8 +43,7 @@ import { UpdateOrderHelperFactory } from "../../admin/taghelpers/UpdateOrderHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TableTag } from "./TableTag.js";
+        import { TableTag } from "./TableTag.js";
 
 export class UpdateOrderTag extends TableTag {
         

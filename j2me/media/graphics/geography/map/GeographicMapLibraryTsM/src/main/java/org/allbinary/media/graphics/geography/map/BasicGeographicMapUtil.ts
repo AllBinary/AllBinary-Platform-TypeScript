@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Layer } from "../../../../../../org/allbinary/layer/Layer.js";
 
     
@@ -42,9 +46,7 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
-
+        import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 export class BasicGeographicMapUtil

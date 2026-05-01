@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -63,8 +67,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputToGameKeyMapping } from "./InputToGameKeyMapping.js";
+        import { InputToGameKeyMapping } from "./InputToGameKeyMapping.js";
 
 export class InputMapping
             extends Object

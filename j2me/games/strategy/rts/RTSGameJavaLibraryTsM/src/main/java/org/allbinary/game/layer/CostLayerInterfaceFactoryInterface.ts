@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LayerInterfaceFactoryInterface } from "../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js";
 
     

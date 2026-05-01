@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
 
     
@@ -42,8 +46,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollisionHelper } from "./CollisionHelper.js";
+        import { CollisionHelper } from "./CollisionHelper.js";
 
 export class SourceCollisionHelper extends CollisionHelper {
         

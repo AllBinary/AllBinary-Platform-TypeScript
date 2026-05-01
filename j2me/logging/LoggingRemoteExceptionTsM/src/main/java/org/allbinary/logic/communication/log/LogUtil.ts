@@ -18,9 +18,14 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
         
-import { IOException } from "../../../../../java/io/IOException.js";
+            import { System } from "../../../../../java/lang/System.js";
+        
+
+//import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -65,11 +70,8 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Log } from "./Log.js";
-
+        import { Log } from "./Log.js";
 import { LogFormatUtil } from "./LogFormatUtil.js";
-
 import { XmlRpcRemoteLogClient } from "./XmlRpcRemoteLogClient.js";
 
 /*actual*/ export class LogUtil

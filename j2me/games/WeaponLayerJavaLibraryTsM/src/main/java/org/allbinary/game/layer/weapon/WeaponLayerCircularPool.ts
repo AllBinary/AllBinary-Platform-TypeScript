@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
 
     
@@ -48,8 +52,7 @@ import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WeaponLayer } from "./WeaponLayer.js";
+        import { WeaponLayer } from "./WeaponLayer.js";
 
 export class WeaponLayerCircularPool extends AllBinaryLayerCircularPool {
         

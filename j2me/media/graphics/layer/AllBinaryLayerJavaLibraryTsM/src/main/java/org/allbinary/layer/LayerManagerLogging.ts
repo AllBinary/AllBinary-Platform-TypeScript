@@ -18,9 +18,13 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
-import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../org/allbinary/TsUtil.js";
 
     
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -53,11 +57,8 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
-
+        import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
-
 import { LayerManager } from "./LayerManager.js";
 
 export class LayerManagerLogging extends LayerManagerLoggingBase {

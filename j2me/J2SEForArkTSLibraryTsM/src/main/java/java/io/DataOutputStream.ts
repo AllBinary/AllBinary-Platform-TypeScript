@@ -1,11 +1,6 @@
-/*actual*/ export class InputStream
-            extends Object
-         {
-    
-}
+/*actual*/ export class DataOutputStream
+            extends Object implements Closeable
+{
 
 
 }
-                
-            
-

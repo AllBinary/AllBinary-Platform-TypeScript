@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -54,9 +58,7 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasePatrolAI } from "./BasePatrolAI.js";
-
+        import { BasePatrolAI } from "./BasePatrolAI.js";
 import { TerrainPatrolAI } from "./TerrainPatrolAI.js";
 
 export class TerrainPatrolAIFactory

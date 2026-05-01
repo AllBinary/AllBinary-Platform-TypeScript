@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../java/lang/Integer.js";
         
 import { Calendar } from "../../java/util/Calendar.js";
@@ -95,8 +99,7 @@ import { StringUtil } from "../../org/allbinary/logic/string/StringUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TagHelper } from "./TagHelper.js";
+        import { TagHelper } from "./TagHelper.js";
 
 export class AuthenticationHelper extends TagHelper {
         

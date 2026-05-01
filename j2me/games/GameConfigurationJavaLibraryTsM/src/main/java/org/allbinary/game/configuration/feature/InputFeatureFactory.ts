@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputFeature } from "./InputFeature.js";
-
+        import { InputFeature } from "./InputFeature.js";
 import { Features } from "./Features.js";
 
 export class InputFeatureFactory

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -48,9 +52,7 @@ import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TagHelperFactoryInterface } from "./TagHelperFactoryInterface.js";
-
+        import { TagHelperFactoryInterface } from "./TagHelperFactoryInterface.js";
 import { HelperFactory } from "./HelperFactory.js";
 
 export class AuthenticationRequestHelperFactory

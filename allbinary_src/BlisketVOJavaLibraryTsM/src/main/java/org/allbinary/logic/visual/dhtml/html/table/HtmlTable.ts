@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -48,8 +52,7 @@ import { CommonPhoneStrings } from "../../../../../../../org/allbinary/string/Co
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HtmlRow } from "./HtmlRow.js";
+        import { HtmlRow } from "./HtmlRow.js";
 
 export class HtmlTable extends HtmlTag {
         

@@ -10,13 +10,18 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
 import { File } from "../../../../java/io/File.js";
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+
+//import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { Iterator } from "../../../../java/util/Iterator.js";

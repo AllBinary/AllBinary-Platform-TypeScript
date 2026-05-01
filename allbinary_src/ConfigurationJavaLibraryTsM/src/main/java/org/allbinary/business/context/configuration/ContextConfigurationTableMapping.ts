@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -45,9 +49,7 @@ import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
-
+        import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
 import { ContextConfigurationData } from "./ContextConfigurationData.js";
 
 export class ContextConfigurationTableMapping

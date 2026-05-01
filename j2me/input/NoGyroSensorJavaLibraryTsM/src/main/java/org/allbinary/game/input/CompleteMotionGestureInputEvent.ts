@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { MotionGestureInput } from "../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
 
     
@@ -54,8 +58,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CompleteMotionGestureInputInterface } from "./CompleteMotionGestureInputInterface.js";
+        import { CompleteMotionGestureInputInterface } from "./CompleteMotionGestureInputInterface.js";
 
 export class CompleteMotionGestureInputEvent extends AllBinaryEventObject implements CompleteMotionGestureInputInterface {
         

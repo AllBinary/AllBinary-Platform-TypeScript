@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -72,8 +76,7 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HealthBarAnimation } from "./HealthBarAnimation.js";
+        import { HealthBarAnimation } from "./HealthBarAnimation.js";
 
 export class HealthBarThreedAnimation extends HealthBarAnimation {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../../java/awt.js";
 
     
@@ -69,13 +73,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Point } from "./Point.js";
-
+        import { Point } from "./Point.js";
 import { Dimension } from "./Dimension.js";
-
 import { JLabel } from "./JLabel.js";
-
 import { DisplayHelpFromSource } from "./DisplayHelpFromSource.js";
 
 export class JavaHelpUtil

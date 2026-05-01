@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -60,11 +64,8 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
-
+        import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
 import { ContextConfiguration } from "./ContextConfiguration.js";
-
 import { ContextConfigurationData } from "./ContextConfigurationData.js";
 
 export class ContextConfigurationView

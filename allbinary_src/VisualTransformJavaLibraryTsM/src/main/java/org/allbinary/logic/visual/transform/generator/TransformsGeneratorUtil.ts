@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -57,8 +61,7 @@ import { TransformInfoObjectConfigInterface } from "../../../../../../org/allbin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformGeneratorUtil } from "./TransformGeneratorUtil.js";
+        import { TransformGeneratorUtil } from "./TransformGeneratorUtil.js";
 
 export class TransformsGeneratorUtil
             extends Object

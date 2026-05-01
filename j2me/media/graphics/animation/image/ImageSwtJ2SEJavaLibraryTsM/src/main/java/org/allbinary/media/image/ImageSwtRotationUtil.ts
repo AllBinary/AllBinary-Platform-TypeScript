@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -57,9 +61,7 @@ import { ImageData } from "../../../../org/eclipse/swt/graphics/ImageData.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageUtil } from "./ImageUtil.js";
-
+        import { ImageUtil } from "./ImageUtil.js";
 import { Image } from "./Image.js";
 
 export class ImageSwtRotationUtil

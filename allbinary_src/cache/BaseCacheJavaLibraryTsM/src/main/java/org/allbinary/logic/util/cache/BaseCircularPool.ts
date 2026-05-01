@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -42,8 +46,7 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryObjectFactoryInterface } from "./AllBinaryObjectFactoryInterface.js";
+        import { AllBinaryObjectFactoryInterface } from "./AllBinaryObjectFactoryInterface.js";
 
 export class BaseCircularPool
             extends Object

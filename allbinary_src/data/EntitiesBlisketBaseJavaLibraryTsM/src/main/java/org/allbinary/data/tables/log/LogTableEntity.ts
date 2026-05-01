@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
 
     
@@ -51,8 +55,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogTableEntityInterface } from "./LogTableEntityInterface.js";
+        import { LogTableEntityInterface } from "./LogTableEntityInterface.js";
 
 export class LogTableEntity extends AbSqlBean implements LogTableEntityInterface {
         

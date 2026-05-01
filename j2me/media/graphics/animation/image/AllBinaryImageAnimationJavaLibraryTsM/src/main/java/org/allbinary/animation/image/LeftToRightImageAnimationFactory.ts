@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -45,11 +49,8 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-
+        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 import { LeftToRightImageAnimation } from "./LeftToRightImageAnimation.js";
-
 import { AdjustedLeftToRightImageAnimation } from "./AdjustedLeftToRightImageAnimation.js";
 
 export class LeftToRightImageAnimationFactory extends BaseImageAnimationFactory {

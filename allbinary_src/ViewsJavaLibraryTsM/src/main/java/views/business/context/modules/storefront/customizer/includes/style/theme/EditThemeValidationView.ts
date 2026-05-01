@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { CategoryFactoryInterface } from "../../../../../../../../../org/allbinary/business/category/CategoryFactoryInterface.js";
 
     
@@ -81,8 +85,7 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ThemeCustomizerView } from "./ThemeCustomizerView.js";
+        import { ThemeCustomizerView } from "./ThemeCustomizerView.js";
 
 export class EditThemeValidationView extends ThemeCustomizerView implements ValidationComponentInterface {
         

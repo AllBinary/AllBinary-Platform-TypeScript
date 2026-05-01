@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -63,8 +67,7 @@ import { GeographicMapCellPathHistoryInfo } from "../../../../../org/allbinary/m
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicDirectionAIHelper } from "./BasicDirectionAIHelper.js";
+        import { BasicDirectionAIHelper } from "./BasicDirectionAIHelper.js";
 
 export class BasicAIProcessor
             extends Object

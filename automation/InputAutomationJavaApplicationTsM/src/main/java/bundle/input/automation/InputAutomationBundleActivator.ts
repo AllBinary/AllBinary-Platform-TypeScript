@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../java/lang/Thread.js";
         
 import { BundleActivator } from "../../../org/osgi/framework/BundleActivator.js";
@@ -74,8 +78,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationBundleActivatorListenerInterface } from "./InputAutomationBundleActivatorListenerInterface.js";
+        import { InputAutomationBundleActivatorListenerInterface } from "./InputAutomationBundleActivatorListenerInterface.js";
 
 export class InputAutomationBundleActivator
             extends Object

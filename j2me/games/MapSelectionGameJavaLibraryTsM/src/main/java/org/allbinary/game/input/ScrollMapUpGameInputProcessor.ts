@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GameKeyEvent } from "../../../../org/allbinary/game/input/event/GameKeyEvent.js";
 
     
@@ -42,9 +46,7 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScrollMapGameInputProcessor } from "./ScrollMapGameInputProcessor.js";
-
+        import { ScrollMapGameInputProcessor } from "./ScrollMapGameInputProcessor.js";
 import { ScrollMapPlayerGameInput } from "./ScrollMapPlayerGameInput.js";
 
 export class ScrollMapUpGameInputProcessor extends ScrollMapGameInputProcessor {

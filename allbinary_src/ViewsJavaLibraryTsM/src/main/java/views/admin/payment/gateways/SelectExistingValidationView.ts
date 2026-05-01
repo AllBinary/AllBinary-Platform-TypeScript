@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { ValidationComponentInterface } from "../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
 
     
@@ -51,8 +55,7 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SelectExistingView } from "./SelectExistingView.js";
+        import { SelectExistingView } from "./SelectExistingView.js";
 
 export class SelectExistingValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         

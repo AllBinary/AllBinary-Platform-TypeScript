@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -45,8 +49,7 @@ import { OpenGLImageCacheFactory } from "../../../../../org/allbinary/image/open
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory } from "./TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory.js";
+        import { TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory } from "./TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory.js";
 
 export class TouchButtonResourceOpenGLESAnimationInterfaceFactoryInterfaceFactory extends TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory {
         

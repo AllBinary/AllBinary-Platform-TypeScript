@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js";
 
     
@@ -39,13 +43,9 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
-
+        import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
 import { BasicAnimationInterfaceFactoryInterface } from "./BasicAnimationInterfaceFactoryInterface.js";
-
 import { NullAnimationFactory } from "./NullAnimationFactory.js";
-
 import { Animation } from "./Animation.js";
 
 export class BaseAnimationInterfaceFactoryInterfaceComposite

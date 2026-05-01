@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameTypeFactory } from "../../../../../org/allbinary/game/GameTypeFactory.js";
 
     
@@ -51,8 +55,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
 
 export class DemoGameBehavior
             extends Object

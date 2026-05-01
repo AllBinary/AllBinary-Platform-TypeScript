@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BooleanFactory } from "../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
 
     

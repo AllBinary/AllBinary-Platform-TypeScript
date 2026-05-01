@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { InputFactory } from "../../../../../org/allbinary/game/input/InputFactory.js";
 
     
@@ -57,9 +61,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonInput } from "./TouchButtonInput.js";
-
+        import { TouchButtonInput } from "./TouchButtonInput.js";
 import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
 
 export class BasicTouchInputFactory

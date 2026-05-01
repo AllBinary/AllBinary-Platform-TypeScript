@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -72,8 +76,7 @@ import { SwtMutableImage } from "../../../../org/microemu/device/swt/SwtMutableI
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageCopyUtil } from "./ImageCopyUtil.js";
+        import { ImageCopyUtil } from "./ImageCopyUtil.js";
 
 export class ImageModifierUtil
             extends Object
@@ -207,11 +210,11 @@ bx= (imageData!.data[index3 +2]&0xFF);
                         if(rx != 0 || gx != 0 || bx != 0)
                         
                                     {
-                                    imageData!.data[index3]= r.toByte();
+                                    imageData!.data[index3]= r;
     
-imageData!.data[index3 +1]= g.toByte();
+imageData!.data[index3 +1]= g;
     
-imageData!.data[index3 +2]= b.toByte();
+imageData!.data[index3 +2]= b;
     
 
                                     }
@@ -350,11 +353,11 @@ gx *= g;
     
 bx *= b;
     
-imageData!.data[index]= rx.toByte();
+imageData!.data[index]= rx;
     
-imageData!.data[index +1]= gx.toByte();
+imageData!.data[index +1]= gx;
     
-imageData!.data[index +2]= bx.toByte();
+imageData!.data[index +2]= bx;
     
 }
 
@@ -406,7 +409,7 @@ this.setAlphaSWT(image, alphaInt);
     //var image = image
     //var alphaInt = alphaInt
 
-    var alpha: number = alphaInt.toByte();
+    var alpha: number = alphaInt;
 ;
     
 

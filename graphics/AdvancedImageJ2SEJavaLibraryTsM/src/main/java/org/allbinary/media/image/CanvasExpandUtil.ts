@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -45,11 +49,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageUtil } from "./ImageUtil.js";
-
+        import { ImageUtil } from "./ImageUtil.js";
 import { ImageProcessorInput } from "./ImageProcessorInput.js";
-
 import { ImageProcessedVisitor } from "./ImageProcessedVisitor.js";
 
 export class CanvasExpandUtil

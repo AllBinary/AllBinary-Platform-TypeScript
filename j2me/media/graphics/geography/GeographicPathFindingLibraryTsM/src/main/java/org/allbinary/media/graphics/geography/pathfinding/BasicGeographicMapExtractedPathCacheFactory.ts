@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BaseBasicArrayListCache } from "../../../../../../org/allbinary/logic/util/cache/BaseBasicArrayListCache.js";
 
     

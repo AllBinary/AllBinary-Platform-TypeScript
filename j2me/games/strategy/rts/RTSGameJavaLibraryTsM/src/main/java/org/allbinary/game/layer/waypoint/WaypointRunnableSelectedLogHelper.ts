@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
 
     
@@ -48,8 +52,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WaypointRunnableLogHelper } from "./WaypointRunnableLogHelper.js";
+        import { WaypointRunnableLogHelper } from "./WaypointRunnableLogHelper.js";
 
 export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper {
         

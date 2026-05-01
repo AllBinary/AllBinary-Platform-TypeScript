@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GamePersistanceStrings } from "../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
 
     
@@ -45,9 +49,7 @@ import { PersistentInputMapping } from "../../../../org/allbinary/game/input/map
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PCKeyFactory } from "./PCKeyFactory.js";
-
+        import { PCKeyFactory } from "./PCKeyFactory.js";
 import { GameKeyFactory } from "./GameKeyFactory.js";
 
 export class LaptopDefaultGameInputMapping extends PersistentInputMapping {

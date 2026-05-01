@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { UserFactory } from "../../../../../org/allbinary/business/user/modules/UserFactory.js";
 
     
@@ -84,11 +88,8 @@ import { WholesaleUserFactory } from "../../../../../org/allbinary/business/user
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicUserRoleFactory } from "./BasicUserRoleFactory.js";
-
+        import { BasicUserRoleFactory } from "./BasicUserRoleFactory.js";
 import { UserRoleB } from "./UserRoleB.js";
-
 import { UserRole } from "./UserRole.js";
 
 export class UserRoleFactory

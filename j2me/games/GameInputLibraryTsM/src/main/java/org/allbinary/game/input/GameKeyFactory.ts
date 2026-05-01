@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -42,9 +46,7 @@ import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhone
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameKey } from "./GameKey.js";
-
+        import { GameKey } from "./GameKey.js";
 import { InputFactory } from "./InputFactory.js";
 
 export class GameKeyFactory

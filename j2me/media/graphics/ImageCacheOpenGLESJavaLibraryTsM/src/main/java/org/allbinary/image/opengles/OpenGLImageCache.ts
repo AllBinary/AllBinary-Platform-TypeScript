@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
@@ -72,8 +76,7 @@ import { SynchObject } from "../../../../org/allbinary/thread/SynchObject.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OpenGLESImage } from "./OpenGLESImage.js";
+        import { OpenGLESImage } from "./OpenGLESImage.js";
 
 export class OpenGLImageCache extends ImageCache {
         

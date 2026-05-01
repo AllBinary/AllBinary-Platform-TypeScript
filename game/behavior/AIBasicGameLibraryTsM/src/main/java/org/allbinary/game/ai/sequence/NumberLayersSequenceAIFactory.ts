@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ArtificialIntelligenceInterface } from "../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
 
     
@@ -45,8 +49,7 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NumberLayersSequenceAI } from "./NumberLayersSequenceAI.js";
+        import { NumberLayersSequenceAI } from "./NumberLayersSequenceAI.js";
 
 export class NumberLayersSequenceAIFactory
             extends Object

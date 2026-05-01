@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { File } from "../../../../../../java/io/File.js";
 
     
@@ -72,8 +76,7 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationModuleConfiguration } from "./InputAutomationModuleConfiguration.js";
+        import { InputAutomationModuleConfiguration } from "./InputAutomationModuleConfiguration.js";
 
 export class InputAutomationModuleConfigurations
             extends Object

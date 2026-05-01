@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../java/lang/System";
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../java/lang/System.js";
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
@@ -67,8 +71,7 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpecialAnimation } from "./SpecialAnimation.js";
+        import { SpecialAnimation } from "./SpecialAnimation.js";
 
 export class TitleAnimation extends SpecialAnimation {
         

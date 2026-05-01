@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,23 +40,14 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { JButton } from "./JButton.js";
-
 import { JList } from "./JList.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { Font } from "./Font.js";
-
 import { LinesGraphicItem } from "./LinesGraphicItem.js";
-
 import { MouseAdapter } from "./MouseAdapter.js";
-
 import { MouseEvent } from "./MouseEvent.js";
-
 import { ToolFactory } from "./ToolFactory.js";
 
 export class ToolJPanel extends javax.swing.JPanel {

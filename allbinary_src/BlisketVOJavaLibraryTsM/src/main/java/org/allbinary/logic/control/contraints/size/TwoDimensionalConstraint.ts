@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
@@ -39,9 +43,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TwoDimensionalConstraintInterface } from "./TwoDimensionalConstraintInterface.js";
-
+        import { TwoDimensionalConstraintInterface } from "./TwoDimensionalConstraintInterface.js";
 import { SizeConstraintInterface } from "./SizeConstraintInterface.js";
 
 export class TwoDimensionalConstraint

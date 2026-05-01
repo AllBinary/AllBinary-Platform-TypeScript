@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -72,8 +76,7 @@ import { StoreCustomizerComponentUtil } from "../../../../../../../../../views/b
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TitleBodyCustomizerView } from "./TitleBodyCustomizerView.js";
+        import { TitleBodyCustomizerView } from "./TitleBodyCustomizerView.js";
 
 export class InsertTitleBodyValidationView extends TitleBodyCustomizerView implements ValidationComponentInterface {
         

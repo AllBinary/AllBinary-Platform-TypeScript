@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FileLog } from "../../../../../org/allbinary/log/FileLog.js";
 
     
@@ -48,8 +52,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Log } from "./Log.js";
+        import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil
             extends Object

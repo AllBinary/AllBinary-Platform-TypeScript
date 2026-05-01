@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     

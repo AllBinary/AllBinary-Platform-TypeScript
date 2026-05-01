@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -57,15 +61,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableInterface } from "./CollidableInterface.js";
-
+        import { CollidableInterface } from "./CollidableInterface.js";
 import { LayerCollisionUtil } from "./LayerCollisionUtil.js";
-
 import { CollidableInterfaceCompositeInterface } from "./CollidableInterfaceCompositeInterface.js";
-
 import { CollisionTypeFactory } from "./CollisionTypeFactory.js";
-
 import { CollisionType } from "./CollisionType.js";
 
 export class CollidableBaseBehavior

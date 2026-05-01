@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
@@ -101,9 +105,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameCommandCanvas } from "./GameCommandCanvas.js";
-
+        import { GameCommandCanvas } from "./GameCommandCanvas.js";
 import { GameInputMappingInstructionsCanvas } from "./GameInputMappingInstructionsCanvas.js";
 
 export class GameInputMappingCanvas extends GameCommandCanvas implements InputMappingInterface {

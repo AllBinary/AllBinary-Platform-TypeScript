@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -39,8 +43,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Component } from "./Component.js";
+        import { Component } from "./Component.js";
 
 export class ComponentFactory
             extends Object

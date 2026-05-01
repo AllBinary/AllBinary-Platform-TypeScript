@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FileChannel } from "../../../../../java/nio/channels/FileChannel.js";
 
     
@@ -54,8 +58,7 @@ import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFile } from "./AbFile.js";
+        import { AbFile } from "./AbFile.js";
 
 export class FileLockUtil
             extends Object

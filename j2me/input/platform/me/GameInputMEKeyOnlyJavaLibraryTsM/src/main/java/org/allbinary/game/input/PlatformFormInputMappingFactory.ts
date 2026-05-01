@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameKeyFactory } from "./GameKeyFactory.js";
+        import { GameKeyFactory } from "./GameKeyFactory.js";
 
 export class PlatformFormInputMappingFactory
             extends Object

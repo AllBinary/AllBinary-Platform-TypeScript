@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -39,9 +43,7 @@ import { HashMap } from "../../../../../java/util/HashMap.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MediaTypeData } from "./MediaTypeData.js";
-
+        import { MediaTypeData } from "./MediaTypeData.js";
 import { MediaDataFactory } from "./MediaDataFactory.js";
 
 export class MediaData

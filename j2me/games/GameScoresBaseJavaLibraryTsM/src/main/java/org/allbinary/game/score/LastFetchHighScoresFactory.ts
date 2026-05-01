@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NoHighScoresFactory } from "./NoHighScoresFactory.js";
-
+        import { NoHighScoresFactory } from "./NoHighScoresFactory.js";
 import { HighScores } from "./HighScores.js";
 
 export class LastFetchHighScoresFactory

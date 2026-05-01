@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -57,9 +61,7 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UserInterface } from "./UserInterface.js";
-
+        import { UserInterface } from "./UserInterface.js";
 import { CreateUserFactory } from "./CreateUserFactory.js";
 
 export class NewUserFactory

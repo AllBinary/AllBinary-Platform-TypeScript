@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -60,8 +64,7 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicPaymentTypeUtil } from "./BasicPaymentTypeUtil.js";
+        import { BasicPaymentTypeUtil } from "./BasicPaymentTypeUtil.js";
 
 export class BasicPaymentType
             extends Object

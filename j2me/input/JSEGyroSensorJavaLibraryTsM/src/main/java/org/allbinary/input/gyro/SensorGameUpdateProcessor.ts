@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { NoCompleteMotionGestureInputEventListener } from "../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js";
 
     
@@ -48,8 +52,7 @@ import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/acce
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GyroSensorFactory } from "./GyroSensorFactory.js";
+        import { GyroSensorFactory } from "./GyroSensorFactory.js";
 
 export class SensorGameUpdateProcessor
             extends Object

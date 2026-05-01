@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { PrimaryWaypointHelper } from "../../../../../org/allbinary/game/input/form/PrimaryWaypointHelper.js";
@@ -110,8 +114,7 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UnitLayer } from "./UnitLayer.js";
+        import { UnitLayer } from "./UnitLayer.js";
 
 export class UnitWaypointBehavior extends WaypointBehaviorBase implements WaypointEventListenerInterface {
         

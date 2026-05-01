@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
 
     
@@ -99,8 +103,7 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WaypointBase } from "./WaypointBase.js";
+        import { WaypointBase } from "./WaypointBase.js";
 
 export class NoCacheWaypoint extends WaypointBase implements BuildingEventListenerInterface {
         

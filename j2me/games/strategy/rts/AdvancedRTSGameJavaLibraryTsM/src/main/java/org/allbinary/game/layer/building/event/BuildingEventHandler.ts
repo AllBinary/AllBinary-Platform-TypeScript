@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { RTSLayerEvent } from "../../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
 
     
@@ -48,8 +52,7 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BuildingEventListenerInterface } from "./BuildingEventListenerInterface.js";
+        import { BuildingEventListenerInterface } from "./BuildingEventListenerInterface.js";
 
 export class BuildingEventHandler extends BasicEventHandler {
         

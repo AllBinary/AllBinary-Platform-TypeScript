@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -45,9 +49,7 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DisplayChangeEventListener } from "./DisplayChangeEventListener.js";
-
+        import { DisplayChangeEventListener } from "./DisplayChangeEventListener.js";
 import { DisplayChangeEvent } from "./DisplayChangeEvent.js";
 
 export class DisplayChangeEventHandler extends BasicEventHandler {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Color } from "../../../../org/eclipse/swt/graphics/Color.js";
 
     

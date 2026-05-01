@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -45,13 +49,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
-
+        import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
-
 import { HighScores } from "./HighScores.js";
-
 import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
 
 export class HighScoresHelperBase

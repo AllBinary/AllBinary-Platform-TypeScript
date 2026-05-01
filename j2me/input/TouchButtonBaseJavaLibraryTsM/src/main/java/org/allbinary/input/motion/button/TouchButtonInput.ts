@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameKey } from "../../../../../org/allbinary/game/input/GameKey.js";
 
     

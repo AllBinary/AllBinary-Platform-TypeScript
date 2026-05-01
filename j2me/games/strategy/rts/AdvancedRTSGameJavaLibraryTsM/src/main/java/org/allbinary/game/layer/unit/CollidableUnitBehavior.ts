@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -87,10 +91,8 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UnitLayer } from "./UnitLayer.js";
-
-import { SimpleSteeringVisitor } from "./SimpleSteeringVisitor.js";
+        import { UnitLayer } from "./UnitLayer.js";
+//import { SimpleSteeringVisitor } from "./SimpleSteeringVisitor.js";
 
 export class CollidableUnitBehavior extends CollidableRTSBehavior {
         

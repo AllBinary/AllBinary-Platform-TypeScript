@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { NullCanvas } from "../../../../../javax/microedition/lcdui/NullCanvas.js";
 
     
@@ -60,8 +64,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
+        import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
 export class DemoCanvasBasicStartInputProcessor extends BasicMenuInputProcessor {
         

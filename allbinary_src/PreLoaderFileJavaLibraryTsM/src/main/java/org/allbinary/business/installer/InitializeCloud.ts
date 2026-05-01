@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { PATH_GLOBALS } from "../../../../org/allbinary/globals/PATH_GLOBALS.js";
 
     

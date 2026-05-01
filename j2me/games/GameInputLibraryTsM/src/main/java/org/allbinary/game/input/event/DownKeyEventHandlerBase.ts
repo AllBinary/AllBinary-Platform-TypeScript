@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { PlayerGameInput } from "../../../../../org/allbinary/game/input/PlayerGameInput.js";
@@ -59,9 +63,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameKeyEvent } from "./GameKeyEvent.js";
-
+        import { GameKeyEvent } from "./GameKeyEvent.js";
 import { DownKeyEventListenerInterface } from "./DownKeyEventListenerInterface.js";
 
 export class DownKeyEventHandlerBase extends BasicEventHandler {

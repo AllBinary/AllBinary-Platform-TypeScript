@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { BasketInterface } from "../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js";
 
     
@@ -48,8 +52,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ShippingInterface } from "./ShippingInterface.js";
+        import { ShippingInterface } from "./ShippingInterface.js";
 
 export class BasicWeightShippingModule
             extends Object

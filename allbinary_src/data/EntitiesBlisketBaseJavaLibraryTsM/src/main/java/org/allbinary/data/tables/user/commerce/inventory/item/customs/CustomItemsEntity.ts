@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -66,8 +70,7 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomItemsEntityInterface } from "./CustomItemsEntityInterface.js";
+        import { CustomItemsEntityInterface } from "./CustomItemsEntityInterface.js";
 
 export class CustomItemsEntity extends AbSqlBean implements CustomItemsEntityInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { LocalPlayerInputIdFactory } from "../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js";
 
     
@@ -42,8 +46,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DownKeyEventHandlerBase } from "./DownKeyEventHandlerBase.js";
+        import { DownKeyEventHandlerBase } from "./DownKeyEventHandlerBase.js";
 
 export class DownKeyEventHandler extends DownKeyEventHandlerBase {
         

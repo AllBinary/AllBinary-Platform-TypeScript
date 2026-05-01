@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { MyRandomFactory } from "../../../../org/allbinary/game/rand/MyRandomFactory.js";
 
     
@@ -45,8 +49,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicGraphicsPipeline } from "./BasicGraphicsPipeline.js";
+        import { BasicGraphicsPipeline } from "./BasicGraphicsPipeline.js";
 
 export class RandomRotationFactory
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -45,8 +49,7 @@ import { PathFinderGraphVisitorBase } from "../../../../../../../../org/allbinar
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
+        import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
 
 export class SimplePathFinderGraphVisitorFactory extends PathFinderGraphVisitorFactoryBase {
         

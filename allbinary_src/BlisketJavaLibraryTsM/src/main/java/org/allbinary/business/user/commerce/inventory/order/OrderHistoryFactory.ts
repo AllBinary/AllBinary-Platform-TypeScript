@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { OrderHistoryEntity } from "../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OrderHistory } from "./OrderHistory.js";
+        import { OrderHistory } from "./OrderHistory.js";
 
 export class OrderHistoryFactory
             extends Object

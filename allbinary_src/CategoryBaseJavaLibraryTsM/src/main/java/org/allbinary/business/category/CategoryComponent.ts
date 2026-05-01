@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DomDocumentHelper } from "../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -51,9 +55,7 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CategoryView } from "./CategoryView.js";
-
+        import { CategoryView } from "./CategoryView.js";
 import { CategoryInterface } from "./CategoryInterface.js";
 
 export class CategoryComponent extends CategoryView implements TransformInterface {

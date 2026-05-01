@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CaptionAnimationHelperBase } from "../../../../org/allbinary/animation/caption/CaptionAnimationHelperBase.js";
 
     
@@ -66,15 +70,10 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
-
+        import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
-
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-
 import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
-
 import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
 export class NullPathFindingLayer

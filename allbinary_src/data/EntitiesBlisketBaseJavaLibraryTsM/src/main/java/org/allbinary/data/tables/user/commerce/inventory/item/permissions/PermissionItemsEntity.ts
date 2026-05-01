@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -63,8 +67,7 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PermissionItemsEntityInterface } from "./PermissionItemsEntityInterface.js";
+        import { PermissionItemsEntityInterface } from "./PermissionItemsEntityInterface.js";
 
 export class PermissionItemsEntity extends AbSqlBean implements PermissionItemsEntityInterface {
         

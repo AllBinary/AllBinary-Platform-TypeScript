@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinarySensorListener } from "../../../../org/allbinary/input/AllBinarySensorListener.js";
 
     
@@ -45,8 +49,7 @@ import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryOrientationSensor } from "./AllBinaryOrientationSensor.js";
+        import { AllBinaryOrientationSensor } from "./AllBinaryOrientationSensor.js";
 
 export class NoGyroSensor extends AllBinaryOrientationSensor implements AllBinarySensorListener {
         

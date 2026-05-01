@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
@@ -53,8 +57,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbSqlTable } from "./AbSqlTable.js";
+        import { AbSqlTable } from "./AbSqlTable.js";
 
 export class AbSqlColumn extends AbSqlTable {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
 
     
@@ -57,8 +61,7 @@ import { TransformInfoObjectConfigInterface } from "../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicTransformer } from "./BasicTransformer.js";
+        import { BasicTransformer } from "./BasicTransformer.js";
 
 export class TransformInfoCustomUriTransformer extends BasicTransformer {
         

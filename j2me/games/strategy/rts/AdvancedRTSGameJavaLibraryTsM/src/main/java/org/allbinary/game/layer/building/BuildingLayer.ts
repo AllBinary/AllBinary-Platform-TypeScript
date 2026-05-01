@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -174,11 +178,8 @@ import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SimulatedBuildingPropertiesFactory } from "./SimulatedBuildingPropertiesFactory.js";
-
+        import { SimulatedBuildingPropertiesFactory } from "./SimulatedBuildingPropertiesFactory.js";
 import { BuildingPropertiesFactory } from "./BuildingPropertiesFactory.js";
-
 import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
 
 export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnimationInterfaceCompositeInterface, TrackingEventListenerInterface {

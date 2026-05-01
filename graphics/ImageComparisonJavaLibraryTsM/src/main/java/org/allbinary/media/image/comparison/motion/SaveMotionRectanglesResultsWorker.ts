@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -54,13 +58,9 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListener.js";
-
+        import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListener.js";
 import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
-
 import { MotionRectangles } from "./MotionRectangles.js";
-
 import { MotionRectanglesImageInputOutput } from "./MotionRectanglesImageInputOutput.js";
 
 export class SaveMotionRectanglesResultsWorker

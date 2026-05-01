@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     

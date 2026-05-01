@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { InitInfo } from "../../../org/allbinary/business/init/InitInfo.js";
 
     
@@ -42,8 +46,7 @@ import { StringValidationUtil } from "../../../org/allbinary/logic/string/String
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UrlGlobalsInterface } from "./UrlGlobalsInterface.js";
+        import { UrlGlobalsInterface } from "./UrlGlobalsInterface.js";
 
 export class WebAppUrlGlobals extends UrlGlobalsInterface {
         

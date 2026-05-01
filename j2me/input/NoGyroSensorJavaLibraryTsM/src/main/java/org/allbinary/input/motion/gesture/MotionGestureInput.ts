@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Input } from "../../../../../org/allbinary/game/input/Input.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -54,13 +58,9 @@ import { CommonButtons } from "../../../../org/allbinary/input/motion/button/Com
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-
+        import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 import { RTSLayerCompositePaintable } from "./RTSLayerCompositePaintable.js";
-
 import { UpgradableWideRTSLayerPaintable } from "./UpgradableWideRTSLayerPaintable.js";
-
 import { RTSLayer } from "./RTSLayer.js";
 
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {

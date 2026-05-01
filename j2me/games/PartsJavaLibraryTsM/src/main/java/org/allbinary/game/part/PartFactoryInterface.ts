@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { RelativeRelationship } from "../../../../org/allbinary/graphics/RelativeRelationship.js";
 
     
@@ -42,8 +46,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PartInterface } from "./PartInterface.js";
+        import { PartInterface } from "./PartInterface.js";
 
 export interface PartFactoryInterface {
         

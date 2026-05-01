@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { Set } from "../../../../../../../../../java/util/Set.js";
 
     
@@ -45,8 +49,7 @@ import { InputRobotFactory } from "../../../../../../../../../org/allbinary/inpu
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
+        import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
 
 export class InputAutomationTypeDefaultComboBoxModelFactory
             extends Object

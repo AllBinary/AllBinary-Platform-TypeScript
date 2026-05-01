@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
 
     
@@ -45,8 +49,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DatabaseConnectionInfoInterface } from "./DatabaseConnectionInfoInterface.js";
+        import { DatabaseConnectionInfoInterface } from "./DatabaseConnectionInfoInterface.js";
 
 export class DbConnectionInfo
             extends Object

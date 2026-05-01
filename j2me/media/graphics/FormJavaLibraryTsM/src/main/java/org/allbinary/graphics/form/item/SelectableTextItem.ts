@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -42,9 +46,7 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TextItem } from "./TextItem.js";
-
+        import { TextItem } from "./TextItem.js";
 import { StringComponent } from "./StringComponent.js";
 
 export class SelectableTextItem extends TextItem {

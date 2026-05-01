@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,11 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbstractArrayListPool } from "./AbstractArrayListPool.js";
-
+        import { AbstractArrayListPool } from "./AbstractArrayListPool.js";
 import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryInterface.js";
-
 import { CacheableInterface } from "./CacheableInterface.js";
 
 export class BasicArrayListResetablePool extends AbstractArrayListPool {

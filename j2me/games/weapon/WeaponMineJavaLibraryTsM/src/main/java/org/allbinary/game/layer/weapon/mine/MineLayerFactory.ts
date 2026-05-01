@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -45,8 +49,7 @@ import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MineLayer } from "./MineLayer.js";
+        import { MineLayer } from "./MineLayer.js";
 
 export class MineLayerFactory
             extends Object

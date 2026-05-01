@@ -4,6 +4,13 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+import { TsUtil } from "../../../org/allbinary/TsUtil.js";
+
+    
 
 
 
@@ -22,9 +29,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { NullPriorityRunnable } from "./NullPriorityRunnable.js";
-
+        import { NullPriorityRunnable } from "./NullPriorityRunnable.js";
 import { PriorityRunnable } from "./PriorityRunnable.js";
 
 export class ThreadObjectUtil
@@ -67,7 +72,7 @@ anyType!.wait();
     public waitObjectFor(anyType: Object, delay: number){
 var anyType = anyType
 var delay = delay
-anyType!.wait(delay);
+TsUtil.getInstance()!.waitFor(anyType, delay);
     
 }
 

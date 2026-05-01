@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -45,8 +49,7 @@ import { ABRunnable } from "../../../../../org/allbinary/thread/ABRunnable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DemoCanvas } from "./DemoCanvas.js";
+        import { DemoCanvas } from "./DemoCanvas.js";
 
 export class DemoGameStartupRunnable extends ABRunnable {
         

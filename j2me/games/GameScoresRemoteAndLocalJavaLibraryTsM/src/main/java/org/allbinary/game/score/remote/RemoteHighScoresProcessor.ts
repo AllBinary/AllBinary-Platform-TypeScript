@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -72,13 +76,9 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RemoteHighScoresProcessorInterface } from "./RemoteHighScoresProcessorInterface.js";
-
+        import { RemoteHighScoresProcessorInterface } from "./RemoteHighScoresProcessorInterface.js";
 import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
-
 import { XmlRpcRemoteHighScoresClient } from "./XmlRpcRemoteHighScoresClient.js";
-
 import { RemoteHighScores } from "./RemoteHighScores.js";
 
 export class RemoteHighScoresProcessor
@@ -124,7 +124,7 @@ hashtable.put(remoteHighScores!.ASCENDING, remoteHighScores!.getAscending()!.toS
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
     
-hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toString(displayInfoSingleton!.isPortrait()));
+hashtable.put(displayInfoSingleton!.ORIENTATION, BooleanFactory.getInstance()!.toStringb(displayInfoSingleton!.isPortrait()));
     
 hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfigurationCentral.getInstance()!.toString());
     

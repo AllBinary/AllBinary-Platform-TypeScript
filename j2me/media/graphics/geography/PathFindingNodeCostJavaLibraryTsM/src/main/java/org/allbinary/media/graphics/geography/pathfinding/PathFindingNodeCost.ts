@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -48,11 +52,8 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PathFindingNode } from "./PathFindingNode.js";
-
+        import { PathFindingNode } from "./PathFindingNode.js";
 import { Comparable } from "./Comparable.js";
-
 import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
 
 export class PathFindingNodeCost extends PathFindingNode implements Comparable<PathFindingNodeCost> {

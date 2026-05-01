@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
 
     
@@ -50,8 +54,7 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
+        import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
 
 export class FakeLayerManager extends AllBinaryGameLayerManager implements GeographicMapCompositeInterface {
         

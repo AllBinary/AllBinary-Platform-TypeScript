@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -22,8 +26,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MIDlet } from "./MIDlet.js";
+        import { MIDlet } from "./MIDlet.js";
 
 export class NullMIDlet extends MIDlet {
         

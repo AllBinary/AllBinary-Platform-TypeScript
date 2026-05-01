@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -48,13 +52,9 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseTouchInput } from "./BaseTouchInput.js";
-
+        import { BaseTouchInput } from "./BaseTouchInput.js";
 import { BasicTouchButtonsBuilder } from "./BasicTouchButtonsBuilder.js";
-
 import { BuildingScrollTouchButtonsBuilder } from "./BuildingScrollTouchButtonsBuilder.js";
-
 import { UpgradeDowngradeTouchButtonsBuilder } from "./UpgradeDowngradeTouchButtonsBuilder.js";
 
 export class RTSTouchButtonsBuilder extends BaseTouchInput {

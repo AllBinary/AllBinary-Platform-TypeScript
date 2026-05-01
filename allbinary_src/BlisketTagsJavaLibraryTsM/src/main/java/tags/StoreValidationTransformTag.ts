@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../java/lang/Object.js";
+
+
+        
 import { JspTagException } from "../javax/servlet/jsp/JspTagException.js";
 
     
@@ -48,8 +52,7 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ValidationTransformTag } from "./ValidationTransformTag.js";
+        import { ValidationTransformTag } from "./ValidationTransformTag.js";
 
 export class StoreValidationTransformTag extends ValidationTransformTag {
         

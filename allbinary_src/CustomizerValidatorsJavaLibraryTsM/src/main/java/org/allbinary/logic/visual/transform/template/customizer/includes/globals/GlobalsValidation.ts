@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { StoreFrontFactory } from "../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
 
     
@@ -66,8 +70,7 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GlobalsData } from "./GlobalsData.js";
+        import { GlobalsData } from "./GlobalsData.js";
 
 export class GlobalsValidation extends Validation implements DomNodeInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { BuildMenuCompositeInterface } from "../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js";
 
     
@@ -60,9 +64,7 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
-
+        import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 import { PlayerOwnedRTSLayers } from "./PlayerOwnedRTSLayers.js";
 
 export interface RTSPlayerLayerInterface extends GameNotificationHudCompositeInterface, BuildMenuCompositeInterface, PlayerGameInputCompositeInterface, DestroyedEventListenerInterface, TickableInterface, PathFindingLayerInterface {

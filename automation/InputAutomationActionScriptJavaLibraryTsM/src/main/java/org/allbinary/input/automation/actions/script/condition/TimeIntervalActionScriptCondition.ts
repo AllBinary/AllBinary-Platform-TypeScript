@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../java/lang/Long.js";
@@ -67,13 +71,9 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
-
+        import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
 import { TimeIntervalActionScriptConditionInterface } from "./TimeIntervalActionScriptConditionInterface.js";
-
 import { TimeIntervalActionScriptConditionJPanel } from "./TimeIntervalActionScriptConditionJPanel.js";
-
 import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
 
 export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptCondition implements TimeIntervalActionScriptConditionInterface {

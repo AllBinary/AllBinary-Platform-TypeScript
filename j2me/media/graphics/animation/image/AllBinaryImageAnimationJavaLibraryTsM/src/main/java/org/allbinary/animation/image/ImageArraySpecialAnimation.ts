@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -57,8 +61,7 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
+        import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
 
 export class ImageArraySpecialAnimation extends ImageArrayAnimation implements SpecialAnimationInterface {
         

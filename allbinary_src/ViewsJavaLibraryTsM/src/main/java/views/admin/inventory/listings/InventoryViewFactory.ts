@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -51,8 +55,7 @@ import { InventorySearch } from "../../../../views/generic/inventory/InventorySe
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InventoryViewSearchInterface } from "./InventoryViewSearchInterface.js";
+        import { InventoryViewSearchInterface } from "./InventoryViewSearchInterface.js";
 
 export class InventoryViewFactory
             extends Object

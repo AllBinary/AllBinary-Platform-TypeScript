@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -63,8 +67,7 @@ import { AngleFactory } from "../../../../../org/allbinary/math/AngleFactory.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicWeaponPart } from "./BasicWeaponPart.js";
+        import { BasicWeaponPart } from "./BasicWeaponPart.js";
 
 export class ArcedMultiBeamWeaponPart extends BasicWeaponPart {
         

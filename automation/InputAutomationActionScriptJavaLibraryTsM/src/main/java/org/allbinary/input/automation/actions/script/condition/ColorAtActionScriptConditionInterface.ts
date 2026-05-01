@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../../../../java/awt.js";
 
     
@@ -42,8 +46,7 @@ import { ColorRangeInterface } from "../../../../../../../org/allbinary/media/im
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Point } from "./Point.js";
+        import { Point } from "./Point.js";
 
 export interface ColorAtActionScriptConditionInterface {
         

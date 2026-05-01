@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CellPosition } from "../../../../../org/allbinary/graphics/CellPosition.js";
 
     
@@ -48,8 +52,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
+        import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
 
 export class BasicTouchButtonCellPositionFactory
             extends Object

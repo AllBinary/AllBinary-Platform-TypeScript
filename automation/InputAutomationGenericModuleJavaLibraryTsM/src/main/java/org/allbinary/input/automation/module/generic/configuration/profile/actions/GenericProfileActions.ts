@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { DataOutputStream } from "../../../../../../../../../java/io/DataOutputStream.js";
 
     
@@ -84,13 +88,9 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GenericProfileActionsJPanel } from "./GenericProfileActionsJPanel.js";
-
+        import { GenericProfileActionsJPanel } from "./GenericProfileActionsJPanel.js";
 import { GenericProfileActionsData } from "./GenericProfileActionsData.js";
-
 import { GenericProfileActionData } from "./GenericProfileActionData.js";
-
 import { GenericProfileAction } from "./GenericProfileAction.js";
 
 export class GenericProfileActions

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Context } from "../../../android/content/Context.js";
 
     
@@ -48,9 +52,7 @@ import { GameConfigurationCentral } from "../../../org/allbinary/game/configurat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryVibrationME } from "./AllBinaryVibrationME.js";
-
+        import { AllBinaryVibrationME } from "./AllBinaryVibrationME.js";
 import { AllBinaryNoVibration } from "./AllBinaryNoVibration.js";
 
 export class AllBinaryVibration extends AllBinaryVibrationME {

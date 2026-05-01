@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../../../../../../java/util/HashMap.js";
@@ -65,17 +69,11 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicProfileActionScriptOutput } from "./BasicProfileActionScriptOutput.js";
-
+        import { BasicProfileActionScriptOutput } from "./BasicProfileActionScriptOutput.js";
 import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
-
 import { ImageTypes } from "./ImageTypes.js";
-
 import { ImageActionScriptOutputJPanel } from "./ImageActionScriptOutputJPanel.js";
-
 import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
-
 import { ImageActionScriptOutputProcessor } from "./ImageActionScriptOutputProcessor.js";
 
 export class ImageActionScriptOutput extends BasicProfileActionScriptOutput implements ImageActionScriptOutputInterface {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -42,8 +46,7 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryJ2SEImageRotationAnimationFactory } from "./AllBinaryJ2SEImageRotationAnimationFactory.js";
+        import { AllBinaryJ2SEImageRotationAnimationFactory } from "./AllBinaryJ2SEImageRotationAnimationFactory.js";
 
 export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryJ2SEImageRotationAnimationFactory {
         

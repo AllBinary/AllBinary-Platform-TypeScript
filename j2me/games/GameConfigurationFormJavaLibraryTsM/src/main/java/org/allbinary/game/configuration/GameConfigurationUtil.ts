@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Item } from "../../../../javax/microedition/lcdui/Item.js";
@@ -53,15 +57,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
-
+        import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
 import { GameConfiguration } from "./GameConfiguration.js";
-
 import { GameOptionsForm } from "./GameOptionsForm.js";
-
 import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
-
 import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
 
 export class GameConfigurationUtil

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
@@ -57,13 +61,9 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
-
+        import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
 import { LicenseType } from "./LicenseType.js";
-
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
-
 import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
 
 export class AbeClientLicense

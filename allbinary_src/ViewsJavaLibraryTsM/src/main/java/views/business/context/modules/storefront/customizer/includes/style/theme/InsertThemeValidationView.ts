@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -72,8 +76,7 @@ import { StoreCustomizerComponentUtil } from "../../../../../../../../../views/b
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ThemeCustomizerView } from "./ThemeCustomizerView.js";
+        import { ThemeCustomizerView } from "./ThemeCustomizerView.js";
 
 export class InsertThemeValidationView extends ThemeCustomizerView implements ValidationComponentInterface {
         

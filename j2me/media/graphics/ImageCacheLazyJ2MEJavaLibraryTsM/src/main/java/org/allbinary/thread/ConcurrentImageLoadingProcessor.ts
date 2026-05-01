@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { ProgressCanvas } from "../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
 
     
@@ -51,11 +55,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BaseImageLoadingProcessor } from "./BaseImageLoadingProcessor.js";
-
+        import { BaseImageLoadingProcessor } from "./BaseImageLoadingProcessor.js";
 import { ABRunnable } from "./ABRunnable.js";
-
 import { ImageThreadPool } from "./ImageThreadPool.js";
 
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {

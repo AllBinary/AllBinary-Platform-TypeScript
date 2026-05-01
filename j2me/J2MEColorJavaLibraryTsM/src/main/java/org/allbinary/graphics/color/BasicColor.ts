@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -39,8 +43,7 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicColorUtil } from "./BasicColorUtil.js";
+        import { BasicColorUtil } from "./BasicColorUtil.js";
 
 export class BasicColor
             extends Object

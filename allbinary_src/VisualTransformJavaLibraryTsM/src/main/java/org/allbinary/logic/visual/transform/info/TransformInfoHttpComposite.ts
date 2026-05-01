@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -51,9 +55,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
-
+        import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
 import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 export class TransformInfoHttpComposite

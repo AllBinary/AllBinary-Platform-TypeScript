@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -69,8 +73,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PacePatrolAI } from "./PacePatrolAI.js";
+        import { PacePatrolAI } from "./PacePatrolAI.js";
 
 export class TerrainPatrolAI extends PacePatrolAI {
         

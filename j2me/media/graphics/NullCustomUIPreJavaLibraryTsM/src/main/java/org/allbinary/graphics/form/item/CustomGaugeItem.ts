@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
@@ -31,8 +35,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomItem } from "./CustomItem.js";
+        import { CustomItem } from "./CustomItem.js";
 
 export class CustomGaugeItem extends CustomItem {
         

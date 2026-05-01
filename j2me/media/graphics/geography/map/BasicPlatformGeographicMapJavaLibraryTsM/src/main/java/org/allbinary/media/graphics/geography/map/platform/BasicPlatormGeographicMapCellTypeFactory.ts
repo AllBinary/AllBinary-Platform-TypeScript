@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Enumeration } from "../../../../../../../java/util/Enumeration.js";
 
     
@@ -57,8 +61,7 @@ import { EnumerationUtil } from "../../../../../../../org/allbinary/util/Enumera
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicPlatormGeographicMapCellType } from "./BasicPlatormGeographicMapCellType.js";
+        import { BasicPlatormGeographicMapCellType } from "./BasicPlatormGeographicMapCellType.js";
 
 export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         

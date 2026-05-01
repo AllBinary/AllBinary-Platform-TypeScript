@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -60,11 +64,8 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CapturedImageWorkerResultsListener } from "./CapturedImageWorkerResultsListener.js";
-
+        import { CapturedImageWorkerResultsListener } from "./CapturedImageWorkerResultsListener.js";
 import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
-
 import { CapturedImageInputOutput } from "./CapturedImageInputOutput.js";
 
 export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
 
     
@@ -45,9 +49,7 @@ import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VectorAnimation } from "./VectorAnimation.js";
-
+        import { VectorAnimation } from "./VectorAnimation.js";
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class TimedVectorAnimation extends VectorAnimation {

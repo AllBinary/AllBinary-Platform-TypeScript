@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { CacheableInterface } from "../../../../../org/allbinary/logic/util/cache/CacheableInterface.js";
 
     
@@ -42,9 +46,7 @@ import { CacheableInterfaceFactoryInterface } from "../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BufferedImageCacheable } from "./BufferedImageCacheable.js";
-
+        import { BufferedImageCacheable } from "./BufferedImageCacheable.js";
 import { BufferedImageInfo } from "./BufferedImageInfo.js";
 
 export class BufferedImageCacheableFactory

@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -47,8 +51,7 @@ import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/grap
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSLayerUtil } from "./RTSLayerUtil.js";
+        import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
 export class AdvancedRTSLayerUtil
             extends Object

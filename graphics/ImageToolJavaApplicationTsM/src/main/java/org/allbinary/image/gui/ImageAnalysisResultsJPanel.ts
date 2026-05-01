@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../java/lang/Long.js";
         
 import { ImageAnalysisResults } from "../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js";
@@ -50,19 +54,12 @@ import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhone
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { JLabel } from "./JLabel.js";
-
 import { JTextField } from "./JTextField.js";
-
 import { JComboBox } from "./JComboBox.js";
-
 import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-
 import { GroupLayout } from "./GroupLayout.js";
-
 import { Short } from "./Short.js";
 
 export class ImageAnalysisResultsJPanel extends javax.swing.JPanel {

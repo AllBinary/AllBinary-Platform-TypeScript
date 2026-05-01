@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { ProfileActionScriptConditionInterface } from "../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js";
 
     
@@ -48,15 +52,10 @@ import { LogUtil } from "../../../../../../../../../../org/allbinary/logic/commu
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Panel } from "./Panel.js";
-
+        import { Panel } from "./Panel.js";
 import { JButton } from "./JButton.js";
-
 import { GridLayout } from "./GridLayout.js";
-
 import { ActionListener } from "./ActionListener.js";
-
 import { ActionEvent } from "./ActionEvent.js";
 
 export class RemoveActionScriptItemJPanel extends java.awt.Panel {

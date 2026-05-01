@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -72,13 +76,9 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
-
+        import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
 import { PickupableInterface } from "./PickupableInterface.js";
-
 import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
-
 import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
 
 export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerInterface, PickupableInterface {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AdvancedRTSGameLayer } from "../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js";
 
     
@@ -69,8 +73,7 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PrimaryWaypointHelper } from "./PrimaryWaypointHelper.js";
+        import { PrimaryWaypointHelper } from "./PrimaryWaypointHelper.js";
 
 export class AssignWaypointsUtil
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,15 +40,10 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerProcessor } from "./LayerProcessor.js";
-
+        import { LayerProcessor } from "./LayerProcessor.js";
 import { SingleLayerLayerManager } from "./SingleLayerLayerManager.js";
-
 import { LayerManager } from "./LayerManager.js";
-
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
-
 import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
 
 export class SingleLayerLayerProcessor extends LayerProcessor {

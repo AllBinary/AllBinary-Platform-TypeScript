@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
@@ -71,9 +75,7 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MineLayerCircularStaticPool } from "./MineLayerCircularStaticPool.js";
-
+        import { MineLayerCircularStaticPool } from "./MineLayerCircularStaticPool.js";
 import { MineWeaponResources } from "./MineWeaponResources.js";
 
 export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLayerInterfaceFactory {

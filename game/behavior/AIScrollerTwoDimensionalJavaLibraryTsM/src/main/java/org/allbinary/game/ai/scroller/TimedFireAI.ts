@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
@@ -62,8 +66,7 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TimeFiredInterface } from "./TimeFiredInterface.js";
+        import { TimeFiredInterface } from "./TimeFiredInterface.js";
 
 export class TimedFireAI extends BasicAI {
         

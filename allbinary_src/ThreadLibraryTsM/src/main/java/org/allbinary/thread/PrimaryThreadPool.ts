@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
             import { Runnable } from "../../../java/lang/Runnable.js";
         
@@ -49,8 +53,7 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ThreadPool } from "./ThreadPool.js";
+        import { ThreadPool } from "./ThreadPool.js";
 
 export class PrimaryThreadPool extends ThreadPool {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Provider } from "../../../../../../../java/security/Provider.js";
 
     
@@ -63,9 +67,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SunJCE } from "./SunJCE.js";
-
+        import { SunJCE } from "./SunJCE.js";
 import { KeySpecFactory } from "./KeySpecFactory.js";
 
 export class AbBasicCrypt

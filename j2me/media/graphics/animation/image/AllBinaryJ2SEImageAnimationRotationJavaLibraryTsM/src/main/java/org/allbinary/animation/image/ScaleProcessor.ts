@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -48,8 +52,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScaleBaseProcessor } from "./ScaleBaseProcessor.js";
+        import { ScaleBaseProcessor } from "./ScaleBaseProcessor.js";
 
 export class ScaleProcessor extends ScaleBaseProcessor {
         

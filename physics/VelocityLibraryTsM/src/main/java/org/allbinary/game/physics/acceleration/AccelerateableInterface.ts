@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecimal.js";
 
     

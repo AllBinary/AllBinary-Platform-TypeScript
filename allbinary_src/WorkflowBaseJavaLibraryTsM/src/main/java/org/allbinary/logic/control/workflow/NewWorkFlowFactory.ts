@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -63,9 +67,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WorkFlowWrapper } from "./WorkFlowWrapper.js";
-
+        import { WorkFlowWrapper } from "./WorkFlowWrapper.js";
 import { WorkFlowInterface } from "./WorkFlowInterface.js";
 
 export class NewWorkFlowFactory

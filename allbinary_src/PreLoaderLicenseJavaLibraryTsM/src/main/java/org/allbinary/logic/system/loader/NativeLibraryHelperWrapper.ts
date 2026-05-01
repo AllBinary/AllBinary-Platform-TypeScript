@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 import { Constructor } from "../../../../../java/lang/reflect/Constructor.js";
 
@@ -47,9 +51,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ClassLoader } from "./ClassLoader.js";
-
+        import { ClassLoader } from "./ClassLoader.js";
 import { NativeLibraryClassLoader } from "./NativeLibraryClassLoader.js";
 
 export class NativeLibraryHelperWrapper

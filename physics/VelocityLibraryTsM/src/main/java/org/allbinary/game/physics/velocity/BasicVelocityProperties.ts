@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
 
     
@@ -66,8 +70,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicVelocityInterface } from "./BasicVelocityInterface.js";
+        import { BasicVelocityInterface } from "./BasicVelocityInterface.js";
 
 export class BasicVelocityProperties
             extends Object

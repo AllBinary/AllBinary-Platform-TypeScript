@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameKey } from "../../../../../org/allbinary/game/input/GameKey.js";
 
     
@@ -69,8 +73,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HelpPaintable } from "./HelpPaintable.js";
+        import { HelpPaintable } from "./HelpPaintable.js";
 
 export class BasicInputMappingHelpPaintable extends HelpPaintable {
         

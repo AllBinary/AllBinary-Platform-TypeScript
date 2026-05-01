@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { EGLConfig } from "../../../../../javax/microedition/khronos/egl/EGLConfig.js";
@@ -56,8 +60,7 @@ import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RendererStrings } from "./RendererStrings.js";
+        import { RendererStrings } from "./RendererStrings.js";
 
 export class EmulatorCustomRenderer
             extends Object

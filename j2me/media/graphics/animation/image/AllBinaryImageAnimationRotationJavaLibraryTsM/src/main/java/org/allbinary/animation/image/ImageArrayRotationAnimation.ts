@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -45,9 +49,7 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageArrayBaseRotationAnimation } from "./ImageArrayBaseRotationAnimation.js";
-
+        import { ImageArrayBaseRotationAnimation } from "./ImageArrayBaseRotationAnimation.js";
 import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
 
 export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation {

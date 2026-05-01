@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { GameConfigurationCentral } from "../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
 
     
@@ -48,15 +52,10 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
-
+        import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
-
 import { NullRotationAnimation } from "./NullRotationAnimation.js";
-
 import { AnimationBehavior } from "./AnimationBehavior.js";
-
 import { Animation } from "./Animation.js";
 
 export class RotationAnimationFactory

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Method } from "../../../../../java/lang/reflect/Method.js";
@@ -47,8 +51,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { WorkFlowInterface } from "./WorkFlowInterface.js";
+        import { WorkFlowInterface } from "./WorkFlowInterface.js";
 
 export class WorkFlowWrapper
             extends Object

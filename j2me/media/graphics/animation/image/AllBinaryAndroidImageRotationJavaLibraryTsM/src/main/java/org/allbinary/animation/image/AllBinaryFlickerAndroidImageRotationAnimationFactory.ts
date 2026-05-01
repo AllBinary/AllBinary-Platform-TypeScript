@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -63,8 +67,7 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryFlickerAndroidImageRotationAnimation } from "./AllBinaryFlickerAndroidImageRotationAnimation.js";
+        import { AllBinaryFlickerAndroidImageRotationAnimation } from "./AllBinaryFlickerAndroidImageRotationAnimation.js";
 
 export class AllBinaryFlickerAndroidImageRotationAnimationFactory
             extends Object

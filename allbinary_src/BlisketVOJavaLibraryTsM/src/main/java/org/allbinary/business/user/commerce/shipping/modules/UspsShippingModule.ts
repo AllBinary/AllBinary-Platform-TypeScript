@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { OrderInterface } from "../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js";
 
     
@@ -42,8 +46,7 @@ import { Money } from "../../../../../../../org/allbinary/business/user/commerce
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ShippingInterface } from "./ShippingInterface.js";
+        import { ShippingInterface } from "./ShippingInterface.js";
 
 export class UspsShippingModule
             extends Object

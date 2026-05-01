@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { VisitorInterface } from "../../../org/allbinary/logic/util/visitor/VisitorInterface.js";
 
     
@@ -39,8 +43,7 @@ import { VisitorInterface } from "../../../org/allbinary/logic/util/visitor/Visi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OSGIServiceInterface } from "./OSGIServiceInterface.js";
+        import { OSGIServiceInterface } from "./OSGIServiceInterface.js";
 
 export interface OSGIServiceVisitorInterface extends VisitorInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { InputAutomationModuleService } from "../../../../../../bundle/input/automation/module/InputAutomationModuleService.js";
 
     

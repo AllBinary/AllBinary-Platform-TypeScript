@@ -17,6 +17,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { EventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
 
     
@@ -38,8 +42,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CapitalEvent } from "./CapitalEvent.js";
+        import { CapitalEvent } from "./CapitalEvent.js";
 
 export interface CapitalEventListenerInterface extends EventListenerInterface {
         

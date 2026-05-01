@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -39,8 +43,7 @@ import { Hashtable } from "../../../../java/util/Hashtable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerPlacementType } from "./LayerPlacementType.js";
+        import { LayerPlacementType } from "./LayerPlacementType.js";
 
 export interface LayerPlacementInterface {
         

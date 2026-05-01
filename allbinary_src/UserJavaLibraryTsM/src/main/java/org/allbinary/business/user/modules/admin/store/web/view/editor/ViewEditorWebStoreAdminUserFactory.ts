@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../../java/util/HashMap.js";
 
     
@@ -45,8 +49,7 @@ import { UserInterface } from "../../../../../../../../../../org/allbinary/busin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ViewEditorWebStoreAdminUser } from "./ViewEditorWebStoreAdminUser.js";
+        import { ViewEditorWebStoreAdminUser } from "./ViewEditorWebStoreAdminUser.js";
 
 export class ViewEditorWebStoreAdminUserFactory
             extends Object

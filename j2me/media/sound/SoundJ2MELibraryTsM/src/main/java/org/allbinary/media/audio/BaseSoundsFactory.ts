@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,9 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
-
+        import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 import { Sound } from "./Sound.js";
 
 export class BaseSoundsFactory

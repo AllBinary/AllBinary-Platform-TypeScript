@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { InputRobotInterface } from "../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
 
     
@@ -39,8 +43,7 @@ import { InputRobotInterface } from "../../../../org/allbinary/input/automation/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputAutomationRobotServiceInterface } from "./InputAutomationRobotServiceInterface.js";
+        import { InputAutomationRobotServiceInterface } from "./InputAutomationRobotServiceInterface.js";
 
 export class InputAutomationRobotService
             extends Object

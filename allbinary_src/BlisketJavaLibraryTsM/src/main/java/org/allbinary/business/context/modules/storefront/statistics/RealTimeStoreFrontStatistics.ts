@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { StoreFrontInterface } from "../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
 
     
@@ -63,8 +67,7 @@ import { StoreFrontUsersStatisticsInterface } from "../../../../../../../org/all
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreFrontStatisticsInterface } from "./StoreFrontStatisticsInterface.js";
+        import { StoreFrontStatisticsInterface } from "./StoreFrontStatisticsInterface.js";
 
 export class RealTimeStoreFrontStatistics
             extends Object

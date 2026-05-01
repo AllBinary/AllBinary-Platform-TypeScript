@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,11 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JPanel } from "./JPanel.js";
-
+        import { JPanel } from "./JPanel.js";
 import { JColorChooser } from "./JColorChooser.js";
-
 import { BorderLayout } from "./BorderLayout.js";
 
 export class ColorChooser extends javax.swing.JPanel {

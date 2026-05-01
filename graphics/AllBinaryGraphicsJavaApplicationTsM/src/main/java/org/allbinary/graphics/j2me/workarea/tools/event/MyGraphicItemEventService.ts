@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,13 +40,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { EventListenerList } from "./EventListenerList.js";
-
+        import { EventListenerList } from "./EventListenerList.js";
 import { EventListener } from "./EventListener.js";
-
 import { MyGraphicItemEventListener } from "./MyGraphicItemEventListener.js";
-
 import { MyGraphicItemEvent } from "./MyGraphicItemEvent.js";
 
 export class MyGraphicItemEventService

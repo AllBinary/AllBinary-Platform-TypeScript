@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js";
 
     
@@ -39,9 +43,7 @@ import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PCGameInputMapping } from "./PCGameInputMapping.js";
-
+        import { PCGameInputMapping } from "./PCGameInputMapping.js";
 import { MotionLaptopDefaultGameInputMapping } from "./MotionLaptopDefaultGameInputMapping.js";
 
 export class MotionLaptopGameInputMapping extends PCGameInputMapping {

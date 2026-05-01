@@ -4,9 +4,13 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
         
-import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+            import { System } from "../../../../../java/lang/System.js";
+        
+import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
 
     
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";

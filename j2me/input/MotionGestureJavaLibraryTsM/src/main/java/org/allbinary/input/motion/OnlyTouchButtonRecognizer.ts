@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { TouchButtonRecognizer } from "../../../../org/allbinary/input/motion/button/TouchButtonRecognizer.js";
 
     
@@ -39,8 +43,7 @@ import { TouchButtonRecognizer } from "../../../../org/allbinary/input/motion/bu
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionRecognizer } from "./MotionRecognizer.js";
+        import { MotionRecognizer } from "./MotionRecognizer.js";
 
 export class OnlyTouchButtonRecognizer extends MotionRecognizer {
         

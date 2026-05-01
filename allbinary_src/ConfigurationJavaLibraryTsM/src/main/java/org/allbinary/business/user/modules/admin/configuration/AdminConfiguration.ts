@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -72,9 +76,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdminConfigurationInterface } from "./AdminConfigurationInterface.js";
-
+        import { AdminConfigurationInterface } from "./AdminConfigurationInterface.js";
 import { AdminConfigurationData } from "./AdminConfigurationData.js";
 
 export class AdminConfiguration

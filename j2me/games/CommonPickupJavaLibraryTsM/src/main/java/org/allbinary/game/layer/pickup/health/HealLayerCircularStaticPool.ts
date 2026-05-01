@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HealthInterface } from "../../../../../../org/allbinary/game/health/HealthInterface.js";
 
     
@@ -51,8 +55,7 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HealLayer } from "./HealLayer.js";
+        import { HealLayer } from "./HealLayer.js";
 
 export class HealLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         

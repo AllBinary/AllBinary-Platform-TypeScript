@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { NewUserFactory } from "../../../org/allbinary/business/user/NewUserFactory.js";
 
     
@@ -57,8 +61,7 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { UserView } from "./UserView.js";
+        import { UserView } from "./UserView.js";
 
 export class NewUserView extends UserView implements ValidationComponentInterface {
         

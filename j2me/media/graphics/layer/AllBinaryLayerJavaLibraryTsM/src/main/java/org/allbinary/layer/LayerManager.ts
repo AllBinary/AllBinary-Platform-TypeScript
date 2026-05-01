@@ -4,7 +4,11 @@
 
 
 
-            import { System } from "../../../java/lang/System";
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../java/lang/System.js";
         
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
@@ -42,11 +46,8 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
-
+        import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
 import { AllBinaryLayer } from "./AllBinaryLayer.js";
-
 import { Layer } from "./Layer.js";
 
 export class LayerManager

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -96,8 +100,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TrueTypeFontUtilBase } from "./TrueTypeFontUtilBase.js";
+        import { TrueTypeFontUtilBase } from "./TrueTypeFontUtilBase.js";
 
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         

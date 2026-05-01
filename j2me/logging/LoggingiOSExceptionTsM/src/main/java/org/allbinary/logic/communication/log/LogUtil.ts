@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
@@ -41,11 +45,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogFormatUtil } from "./LogFormatUtil.js";
-
+        import { LogFormatUtil } from "./LogFormatUtil.js";
 import { LogFactory } from "./LogFactory.js";
-
 import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -42,8 +46,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MultipassState } from "./MultipassState.js";
+        import { MultipassState } from "./MultipassState.js";
 
 export class GeographicPathFinderBase
             extends Object

@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
 
     
@@ -25,9 +29,7 @@ import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/lay
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackInfo } from "./RaceTrackInfo.js";
-
+        import { RaceTrackInfo } from "./RaceTrackInfo.js";
 import { RaceTrackData } from "./RaceTrackData.js";
 
 export interface AllBinaryTiledLayerFactoryInterface {

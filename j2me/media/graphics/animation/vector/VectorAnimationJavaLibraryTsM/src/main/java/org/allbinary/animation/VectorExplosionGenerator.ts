@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -57,9 +61,7 @@ import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { VectorExplosionType } from "./VectorExplosionType.js";
-
+        import { VectorExplosionType } from "./VectorExplosionType.js";
 import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
 
 export class VectorExplosionGenerator

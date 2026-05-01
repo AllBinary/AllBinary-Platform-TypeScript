@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -60,8 +64,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicStoreFrontInterface } from "./BasicStoreFrontInterface.js";
+        import { BasicStoreFrontInterface } from "./BasicStoreFrontInterface.js";
 
 export class BasicStoreFront
             extends Object

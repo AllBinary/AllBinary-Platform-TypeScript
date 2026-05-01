@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { VelocityProperties } from "../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js";
 
     
@@ -57,8 +61,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TopViewGameLayerBehavior } from "./TopViewGameLayerBehavior.js";
+        import { TopViewGameLayerBehavior } from "./TopViewGameLayerBehavior.js";
 
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {
         

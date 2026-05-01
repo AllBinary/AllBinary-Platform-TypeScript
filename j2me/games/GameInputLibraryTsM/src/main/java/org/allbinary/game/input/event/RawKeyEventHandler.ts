@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -54,8 +58,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RawKeyEventListener } from "./RawKeyEventListener.js";
+        import { RawKeyEventListener } from "./RawKeyEventListener.js";
 
 export class RawKeyEventHandler
             extends Object

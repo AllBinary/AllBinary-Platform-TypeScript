@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,13 +40,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameInfo } from "./GameInfo.js";
-
+        import { GameInfo } from "./GameInfo.js";
 import { GameTypeFactory } from "./GameTypeFactory.js";
-
 import { GameMode } from "./GameMode.js";
-
 import { PlayerTypesFactory } from "./PlayerTypesFactory.js";
 
 export class BasicHighScoresGameInfoFactory

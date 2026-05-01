@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
 
     
@@ -42,8 +46,7 @@ import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonsPaintable } from "./TouchButtonsPaintable.js";
+        import { TouchButtonsPaintable } from "./TouchButtonsPaintable.js";
 
 export class TouchButtonsPaintableFactory
             extends Object

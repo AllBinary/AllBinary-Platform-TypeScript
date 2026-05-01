@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Displayable } from "../../../../../javax/microedition/lcdui/Displayable.js";
 
     
@@ -42,8 +46,7 @@ import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScreenRepaintUtil } from "./ScreenRepaintUtil.js";
+        import { ScreenRepaintUtil } from "./ScreenRepaintUtil.js";
 
 export class ScreenRepaintProcessor extends Processor {
         

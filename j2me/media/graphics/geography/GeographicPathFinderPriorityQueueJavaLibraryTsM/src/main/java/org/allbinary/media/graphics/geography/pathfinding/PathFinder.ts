@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashSet } from "../../../../../../java/util/HashSet.js";
 
     
@@ -81,15 +85,10 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
-
+        import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
 import { PathFindingNodeCost } from "./PathFindingNodeCost.js";
-
 import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
-
 import { PathFindingNode } from "./PathFindingNode.js";
-
 import { MultipassState } from "./MultipassState.js";
 
 export class PathFinder extends GeographicPathFinderBase {

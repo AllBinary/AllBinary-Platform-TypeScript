@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -45,11 +49,8 @@ import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-
+        import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
-
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 export class CellPositionsUtil

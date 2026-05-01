@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Globals } from "../../../org/allbinary/globals/Globals.js";
 
     
@@ -39,8 +43,7 @@ import { Globals } from "../../../org/allbinary/globals/Globals.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ClassLoader } from "./ClassLoader.js";
+        import { ClassLoader } from "./ClassLoader.js";
 
 export class NoLicense
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -45,8 +49,7 @@ import { NullInitUpdatePaintable } from "../../../../org/allbinary/graphics/pain
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
+        import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
 export class RTSLayerInfoPaintable extends InitUpdatePaintable {
         

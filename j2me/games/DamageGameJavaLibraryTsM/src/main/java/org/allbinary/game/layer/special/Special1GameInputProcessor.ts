@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
 
     
@@ -42,9 +46,7 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpecialGameInputProcessor } from "./SpecialGameInputProcessor.js";
-
+        import { SpecialGameInputProcessor } from "./SpecialGameInputProcessor.js";
 import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDamageableLayer.js";
 
 export class Special1GameInputProcessor extends SpecialGameInputProcessor {

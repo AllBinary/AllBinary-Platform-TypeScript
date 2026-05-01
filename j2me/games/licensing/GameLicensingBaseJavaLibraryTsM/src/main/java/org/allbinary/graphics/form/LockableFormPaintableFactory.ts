@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -36,13 +40,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-
+        import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
 import { LockablePaintable } from "./LockablePaintable.js";
-
 import { ItemPaintable } from "./ItemPaintable.js";
-
 import { PaintableForm } from "./PaintableForm.js";
 
 export class LockableFormPaintableFactory extends ItemPaintableFactory {

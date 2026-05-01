@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { PaymentTransactionInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js";
 
     
@@ -60,9 +64,7 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaymentProcessorInterfaceFactoryInterface } from "./PaymentProcessorInterfaceFactoryInterface.js";
-
+        import { PaymentProcessorInterfaceFactoryInterface } from "./PaymentProcessorInterfaceFactoryInterface.js";
 import { PaymentProcessorInterface } from "./PaymentProcessorInterface.js";
 
 export class PaymentProcessorInterfaceFactory

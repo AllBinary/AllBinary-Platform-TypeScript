@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
 
     
@@ -42,11 +46,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HighScoresFactoryInterface } from "./HighScoresFactoryInterface.js";
-
+        import { HighScoresFactoryInterface } from "./HighScoresFactoryInterface.js";
 import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
-
 import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
 
 export class HighScoresBase

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../java/lang/Long.js";
@@ -97,17 +101,11 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
-
+        import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
 import { ColorAtActionScriptConditionInterface } from "./ColorAtActionScriptConditionInterface.js";
-
 import { ColorAtActionScriptConditionJPanel } from "./ColorAtActionScriptConditionJPanel.js";
-
 import { Point } from "./Point.js";
-
 import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-
 import { Color } from "./Color.js";
 
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {

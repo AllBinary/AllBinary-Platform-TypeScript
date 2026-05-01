@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { RecordStore } from "../../../../../javax/microedition/rms/RecordStore.js";
@@ -65,9 +69,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PersistanceStrings } from "./PersistanceStrings.js";
-
+        import { PersistanceStrings } from "./PersistanceStrings.js";
 import { NullRecordStore } from "./NullRecordStore.js";
 
 export class BasicPersitance

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -69,8 +73,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ResourceLoadingLevelFactory } from "./ResourceLoadingLevelFactory.js";
+        import { ResourceLoadingLevelFactory } from "./ResourceLoadingLevelFactory.js";
 
 export class FeaturedResourceFactory
             extends Object

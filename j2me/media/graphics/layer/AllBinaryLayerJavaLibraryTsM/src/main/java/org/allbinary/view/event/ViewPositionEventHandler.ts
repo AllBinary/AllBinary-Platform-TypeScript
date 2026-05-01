@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -60,9 +64,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ViewPositionEvent } from "./ViewPositionEvent.js";
-
+        import { ViewPositionEvent } from "./ViewPositionEvent.js";
 import { ViewPositionEventListenerInterface } from "./ViewPositionEventListenerInterface.js";
 
 export class ViewPositionEventHandler extends BasicEventHandler {

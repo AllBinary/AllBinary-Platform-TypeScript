@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -51,8 +55,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameOptionsForm } from "./GameOptionsForm.js";
+        import { GameOptionsForm } from "./GameOptionsForm.js";
 
 export class GameOptionsFormFactory
             extends Object

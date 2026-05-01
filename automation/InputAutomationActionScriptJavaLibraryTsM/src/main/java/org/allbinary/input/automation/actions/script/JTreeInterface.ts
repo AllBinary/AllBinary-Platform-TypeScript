@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -22,8 +26,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JTree } from "./JTree.js";
+        import { JTree } from "./JTree.js";
 
 export interface JTreeInterface {
         

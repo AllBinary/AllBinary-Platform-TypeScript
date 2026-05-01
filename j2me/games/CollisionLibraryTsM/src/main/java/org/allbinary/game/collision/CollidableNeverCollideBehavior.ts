@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
 
     
@@ -48,11 +52,8 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableBaseBehavior } from "./CollidableBaseBehavior.js";
-
+        import { CollidableBaseBehavior } from "./CollidableBaseBehavior.js";
 import { CollidableNeverCollideBehaviorFactory } from "./CollidableNeverCollideBehaviorFactory.js";
-
 import { CollidableInterfaceCompositeInterface } from "./CollidableInterfaceCompositeInterface.js";
 
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {

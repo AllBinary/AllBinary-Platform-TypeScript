@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicGameResources } from "../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js";
 
     

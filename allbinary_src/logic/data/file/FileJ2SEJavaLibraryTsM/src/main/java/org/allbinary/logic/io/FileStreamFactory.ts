@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
@@ -42,9 +46,7 @@ import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbFileInputStream } from "./AbFileInputStream.js";
-
+        import { AbFileInputStream } from "./AbFileInputStream.js";
 import { AbFileOutputStream } from "./AbFileOutputStream.js";
 
 export class FileStreamFactory

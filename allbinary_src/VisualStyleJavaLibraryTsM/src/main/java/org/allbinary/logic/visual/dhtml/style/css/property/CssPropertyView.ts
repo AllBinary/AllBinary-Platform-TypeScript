@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { DomNodeInterface } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -48,8 +52,7 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CssProperty } from "./CssProperty.js";
+        import { CssProperty } from "./CssProperty.js";
 
 export class CssPropertyView
             extends Object

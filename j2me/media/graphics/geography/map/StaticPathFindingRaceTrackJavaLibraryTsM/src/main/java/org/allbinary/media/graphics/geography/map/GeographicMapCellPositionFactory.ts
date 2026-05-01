@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
@@ -51,11 +55,8 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeographicMapCellPositionBaseFactory } from "./GeographicMapCellPositionBaseFactory.js";
-
+        import { GeographicMapCellPositionBaseFactory } from "./GeographicMapCellPositionBaseFactory.js";
 import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {

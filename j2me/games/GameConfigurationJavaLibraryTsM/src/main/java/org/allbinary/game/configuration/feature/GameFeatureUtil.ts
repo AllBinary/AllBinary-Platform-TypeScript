@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
@@ -63,11 +67,8 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Features } from "./Features.js";
-
+        import { Features } from "./Features.js";
 import { Feature } from "./Feature.js";
-
 import { GameFeatureChoiceGroups } from "./GameFeatureChoiceGroups.js";
 
 export class GameFeatureUtil

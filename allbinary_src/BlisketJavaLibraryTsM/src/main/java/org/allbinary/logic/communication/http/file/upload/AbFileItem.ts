@@ -18,10 +18,15 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { File } from "../../../../../../../java/io/File.js";
 
     
-import { IOException } from "../../../../../../../java/io/IOException.js";
+
+//import { IOException } from "../../../../../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../../../../../java/io/InputStream.js";

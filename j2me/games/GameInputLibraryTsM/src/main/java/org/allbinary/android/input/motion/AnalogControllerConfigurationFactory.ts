@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AnalogControllerConfigurationEvent } from "../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEvent.js";
 
     

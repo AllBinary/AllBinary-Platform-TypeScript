@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Connection } from "../../../../../java/sql/Connection.js";
@@ -71,11 +75,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SqlTypeStrings } from "./SqlTypeStrings.js";
-
+        import { SqlTypeStrings } from "./SqlTypeStrings.js";
 import { SqlStrings } from "./SqlStrings.js";
-
 import { ClassLoader } from "./ClassLoader.js";
 
 export class AbSqlBasic

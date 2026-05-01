@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Thread } from "../../../../../../java/lang/Thread.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -77,13 +81,9 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListener.js";
-
+        import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListener.js";
 import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
-
 import { MotionRectangles } from "./MotionRectangles.js";
-
 import { Rectangle } from "./Rectangle.js";
 
 export class TestInputForMotionRectanglesResultsWorker

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
 
     
@@ -66,8 +70,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Waypoint2LogHelper } from "./Waypoint2LogHelper.js";
+        import { Waypoint2LogHelper } from "./Waypoint2LogHelper.js";
 
 export class Waypoint2SelectedLogHelper extends Waypoint2LogHelper {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -45,11 +49,8 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionRectangles } from "./MotionRectangles.js";
-
+        import { MotionRectangles } from "./MotionRectangles.js";
 import { MotionRectangle } from "./MotionRectangle.js";
-
 import { Rectangle } from "./Rectangle.js";
 
 export class ConsolidateMotionRectangles extends MotionRectangles {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -60,8 +64,7 @@ import { CustomizerUtil } from "../../../../../../../../../views/business/contex
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CssCustomizerView } from "./CssCustomizerView.js";
+        import { CssCustomizerView } from "./CssCustomizerView.js";
 
 export class EditCssValidationView extends CssCustomizerView implements ValidationComponentInterface {
         

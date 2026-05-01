@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -57,8 +61,7 @@ import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HackRotationSpriteIndexedAnimation } from "./HackRotationSpriteIndexedAnimation.js";
+        import { HackRotationSpriteIndexedAnimation } from "./HackRotationSpriteIndexedAnimation.js";
 
 export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedAnimation {
         

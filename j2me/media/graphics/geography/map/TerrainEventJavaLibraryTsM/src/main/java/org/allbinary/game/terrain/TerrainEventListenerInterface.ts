@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { EventListenerInterface } from "../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
 
     
@@ -39,8 +43,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TerrainEvent } from "./TerrainEvent.js";
+        import { TerrainEvent } from "./TerrainEvent.js";
 
 export interface TerrainEventListenerInterface extends EventListenerInterface {
         

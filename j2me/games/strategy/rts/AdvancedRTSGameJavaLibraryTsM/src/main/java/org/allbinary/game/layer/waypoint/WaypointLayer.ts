@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -81,11 +85,8 @@ import { AttackSound } from "../../../../../org/allbinary/media/audio/AttackSoun
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CollidableWaypointBehavior } from "./CollidableWaypointBehavior.js";
-
+        import { CollidableWaypointBehavior } from "./CollidableWaypointBehavior.js";
 import { Waypoint } from "./Waypoint.js";
-
 import { WaypointCellPositionHistory } from "./WaypointCellPositionHistory.js";
 
 export class WaypointLayer extends AdvancedRTSGameLayer {

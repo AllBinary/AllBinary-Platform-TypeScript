@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -63,8 +67,7 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AffiliateSalesEntityInterface } from "./AffiliateSalesEntityInterface.js";
+        import { AffiliateSalesEntityInterface } from "./AffiliateSalesEntityInterface.js";
 
 export class AffiliateSalesEntity extends AbSqlBean implements AffiliateSalesEntityInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -81,9 +85,7 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CssElementData } from "./CssElementData.js";
-
+        import { CssElementData } from "./CssElementData.js";
 import { CssElementsValidationFactory } from "./CssElementsValidationFactory.js";
 
 export class CssElementView

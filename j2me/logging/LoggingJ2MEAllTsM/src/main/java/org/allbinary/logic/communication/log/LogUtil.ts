@@ -18,11 +18,15 @@
 
 
 
-            import { System } from "../../../../../java/lang/System";
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../../java/lang/System.js";
         
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
 
     
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -52,9 +56,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { LogFormatUtil } from "./LogFormatUtil.js";
-
+        import { LogFormatUtil } from "./LogFormatUtil.js";
 import { Log } from "./Log.js";
 
 /*actual*/ export class LogUtil

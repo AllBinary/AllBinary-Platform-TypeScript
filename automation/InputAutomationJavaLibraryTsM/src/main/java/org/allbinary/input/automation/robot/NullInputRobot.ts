@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -56,13 +60,9 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { InputRobotInterface } from "./InputRobotInterface.js";
-
+        import { InputRobotInterface } from "./InputRobotInterface.js";
 import { Point } from "./Point.js";
-
 import { Rectangle } from "./Rectangle.js";
-
 import { Color } from "./Color.js";
 
 export class NullInputRobot extends AbstractInputRobot implements InputRobotInterface {

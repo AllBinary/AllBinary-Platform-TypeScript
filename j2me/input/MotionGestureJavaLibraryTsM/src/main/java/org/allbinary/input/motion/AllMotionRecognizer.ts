@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { CustomGPoint } from "../../../../org/allbinary/graphics/CustomGPoint.js";
 
     
@@ -51,8 +55,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionRecognizer } from "./MotionRecognizer.js";
+        import { MotionRecognizer } from "./MotionRecognizer.js";
 
 export class AllMotionRecognizer extends MotionRecognizer {
         

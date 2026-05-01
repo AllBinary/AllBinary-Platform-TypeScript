@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { Vector } from "../../../../../java/util/Vector.js";
@@ -68,17 +72,11 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
-
+        import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
 import { ImageComparator } from "./ImageComparator.js";
-
 import { ImageComparisonResult } from "./ImageComparisonResult.js";
-
 import { ImageComparisonResultFrameCacheable } from "./ImageComparisonResultFrameCacheable.js";
-
 import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
-
 import { ImageComparisonResultsEvent } from "./ImageComparisonResultsEvent.js";
 
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {

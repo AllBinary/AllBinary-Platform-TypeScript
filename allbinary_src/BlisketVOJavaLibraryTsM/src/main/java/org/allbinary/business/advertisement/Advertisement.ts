@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AdvertisementImageInterface } from "../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js";
 
     
@@ -51,8 +55,7 @@ import { DisplayInBrowserContraintsInterface } from "../../../../org/allbinary/l
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AdvertisementInterface } from "./AdvertisementInterface.js";
+        import { AdvertisementInterface } from "./AdvertisementInterface.js";
 
 export class Advertisement
             extends Object

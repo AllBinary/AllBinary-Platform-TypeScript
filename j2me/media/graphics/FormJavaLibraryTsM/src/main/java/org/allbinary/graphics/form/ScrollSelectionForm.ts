@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -78,15 +82,10 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PaintableForm } from "./PaintableForm.js";
-
+        import { PaintableForm } from "./PaintableForm.js";
 import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-
 import { FormType } from "./FormType.js";
-
 import { FormTypeFactory } from "./FormTypeFactory.js";
-
 import { ItemPaintable } from "./ItemPaintable.js";
 
 export class ScrollSelectionForm extends PaintableForm {

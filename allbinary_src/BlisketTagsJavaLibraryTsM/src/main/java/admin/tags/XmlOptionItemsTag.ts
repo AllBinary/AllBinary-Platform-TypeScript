@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { XmlOptionItemsHelperFactory } from "../../admin/taghelpers/XmlOptionItemsHelperFactory.js";
 
     
@@ -42,8 +46,7 @@ import { XmlOptionItemsRequestHelperFactory } from "../../admin/taghelpers/XmlOp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TableTag } from "./TableTag.js";
+        import { TableTag } from "./TableTag.js";
 
 export class XmlOptionItemsTag extends TableTag {
         

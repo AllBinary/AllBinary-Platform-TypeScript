@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -54,8 +58,7 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GeneratorStoreFrontContextView } from "./GeneratorStoreFrontContextView.js";
+        import { GeneratorStoreFrontContextView } from "./GeneratorStoreFrontContextView.js";
 
 export class PreviewGeneratorStoreFrontContextView extends GeneratorStoreFrontContextView {
         

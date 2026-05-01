@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { HighScoresCanvas } from "../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js";
 
     
@@ -39,8 +43,7 @@ import { HighScoresCanvas } from "../../../../org/allbinary/game/score/displayab
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HighScoresCanvasInputProcessor } from "./HighScoresCanvasInputProcessor.js";
+        import { HighScoresCanvasInputProcessor } from "./HighScoresCanvasInputProcessor.js";
 
 export interface HighScoresCanvasInputProcessorFactoryInterface {
         

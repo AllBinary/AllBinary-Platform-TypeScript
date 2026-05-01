@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -42,11 +46,8 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
-
+        import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
-
 import { Animation } from "./Animation.js";
 
 export class NullAnimationFactory

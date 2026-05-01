@@ -12,10 +12,10 @@
                 *   
                 *  Created By: Travis Berthelot    
         */
-
+import { Object } from "../../java/lang/Object.js";
 
 export class TsUtil
-            extends Object
+            //extends Object
          {
         
 
@@ -43,8 +43,9 @@ var anyType = anyType
     
 }
 
+   public waitFor(object: Object, timeInMillis: number) {
+      object.waitFor(timeInMillis);
+   }
 
 }
                 
-            
-

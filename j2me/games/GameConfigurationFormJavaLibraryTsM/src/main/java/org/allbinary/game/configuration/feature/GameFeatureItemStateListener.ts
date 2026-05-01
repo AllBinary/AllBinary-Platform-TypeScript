@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
 
     
@@ -72,11 +76,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameFeatureFactory } from "./GameFeatureFactory.js";
-
+        import { GameFeatureFactory } from "./GameFeatureFactory.js";
 import { GameFeature } from "./GameFeature.js";
-
 import { GameFeatureUtil } from "./GameFeatureUtil.js";
 
 export class GameFeatureItemStateListener

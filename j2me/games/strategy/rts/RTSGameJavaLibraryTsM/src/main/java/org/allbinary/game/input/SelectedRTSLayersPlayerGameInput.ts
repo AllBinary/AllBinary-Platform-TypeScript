@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -117,21 +121,13 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PlayerGameInput } from "./PlayerGameInput.js";
-
+        import { PlayerGameInput } from "./PlayerGameInput.js";
 import { InputFactory } from "./InputFactory.js";
-
 import { GameInputProcessor } from "./GameInputProcessor.js";
-
 import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
-
 import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
-
 import { SelectedRTSLayersPlayerUpgradeGameInputProcessor } from "./SelectedRTSLayersPlayerUpgradeGameInputProcessor.js";
-
 import { SelectedRTSLayersPlayerDowngradeGameInputProcessor } from "./SelectedRTSLayersPlayerDowngradeGameInputProcessor.js";
-
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -95,11 +99,8 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SqlStrings } from "./SqlStrings.js";
-
+        import { SqlStrings } from "./SqlStrings.js";
 import { StringBuilder } from "./StringBuilder.js";
-
 import { AbSqlTable } from "./AbSqlTable.js";
 
 export class AbSqlTableUtil

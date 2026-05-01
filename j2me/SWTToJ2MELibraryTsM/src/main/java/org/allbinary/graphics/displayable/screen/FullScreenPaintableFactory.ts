@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { FullScreenPaintable } from "../../../../../org/allbinary/game/paint/FullScreenPaintable.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { DefaultFileItemFactory } from "../../../../../org/apache/commons/fileupload/DefaultFileItemFactory.js";
 
     

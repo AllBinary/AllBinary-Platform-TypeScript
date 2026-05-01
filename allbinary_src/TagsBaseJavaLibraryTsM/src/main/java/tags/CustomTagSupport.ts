@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../java/lang/Object.js";
+
+
+        
 import { TagSupport } from "../javax/servlet/jsp/tagext/TagSupport.js";
 
     
@@ -42,8 +46,7 @@ import { CommonStrings } from "../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TagStrings } from "./TagStrings.js";
+        import { TagStrings } from "./TagStrings.js";
 
 export class CustomTagSupport extends TagSupport {
         

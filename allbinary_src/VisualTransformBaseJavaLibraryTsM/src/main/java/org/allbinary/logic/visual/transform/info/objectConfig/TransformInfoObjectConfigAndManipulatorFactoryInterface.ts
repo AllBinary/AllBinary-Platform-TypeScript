@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { AbPath } from "../../../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
@@ -48,8 +52,7 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
+        import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
 
 export interface TransformInfoObjectConfigAndManipulatorFactoryInterface {
         

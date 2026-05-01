@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
 
     
@@ -45,9 +49,7 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DestroyEventFactory } from "./DestroyEventFactory.js";
-
+        import { DestroyEventFactory } from "./DestroyEventFactory.js";
 import { DestroyedEvent } from "./DestroyedEvent.js";
 
 export class DestroyEventCircularStaticPool

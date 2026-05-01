@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Angle } from "../../../org/allbinary/math/Angle.js";
 
     
@@ -39,8 +43,7 @@ import { Angle } from "../../../org/allbinary/math/Angle.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Direction } from "./Direction.js";
+        import { Direction } from "./Direction.js";
 
 export interface DirectionalInterface {
         

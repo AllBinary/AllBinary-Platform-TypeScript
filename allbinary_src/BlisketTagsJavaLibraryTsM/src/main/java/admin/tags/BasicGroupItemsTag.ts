@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -45,8 +49,7 @@ import { BasicGroupItemsRequestHelperFactory } from "../../admin/taghelpers/Basi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TableTag } from "./TableTag.js";
+        import { TableTag } from "./TableTag.js";
 
 export class BasicGroupItemsTag extends TableTag {
         

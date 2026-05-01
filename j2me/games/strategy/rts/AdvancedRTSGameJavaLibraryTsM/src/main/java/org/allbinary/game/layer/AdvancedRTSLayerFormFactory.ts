@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { RTSLayerFormFactory } from "../../../../org/allbinary/game/input/RTSLayerFormFactory.js";
 
     
@@ -54,9 +58,7 @@ import { ItemArraySingletonFactoryInterface } from "../../../../org/allbinary/gr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSScrollSelectionFormFactory } from "./RTSScrollSelectionFormFactory.js";
-
+        import { RTSScrollSelectionFormFactory } from "./RTSScrollSelectionFormFactory.js";
 import { RTSLayer } from "./RTSLayer.js";
 
 export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {

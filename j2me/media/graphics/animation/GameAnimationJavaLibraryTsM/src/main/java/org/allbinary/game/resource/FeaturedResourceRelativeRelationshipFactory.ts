@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
 
     
@@ -60,9 +64,7 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { FeaturedResourceFactory } from "./FeaturedResourceFactory.js";
-
+        import { FeaturedResourceFactory } from "./FeaturedResourceFactory.js";
 import { ResourceRelativeRelationshipFactoryInterface } from "./ResourceRelativeRelationshipFactoryInterface.js";
 
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {

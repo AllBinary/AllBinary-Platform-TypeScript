@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -168,21 +172,13 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSLayer } from "./RTSLayer.js";
-
+        import { RTSLayer } from "./RTSLayer.js";
 import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
-
 import { AdvancedRTSProperties } from "./AdvancedRTSProperties.js";
-
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
-
 import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
-
 import { AdvancedRTSPlayerLayerInterface } from "./AdvancedRTSPlayerLayerInterface.js";
-
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
-
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {

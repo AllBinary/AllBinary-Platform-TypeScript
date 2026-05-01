@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -51,17 +55,11 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
-
+        import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
 import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
-
 import { RotationAnimation } from "./RotationAnimation.js";
-
 import { NullRotationAnimation } from "./NullRotationAnimation.js";
-
 import { AnimationBehavior } from "./AnimationBehavior.js";
-
 import { Animation } from "./Animation.js";
 
 export class NullRotationAnimationFactory

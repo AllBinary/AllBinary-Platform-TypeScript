@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { MyCanvas } from "../../../org/allbinary/graphics/displayable/MyCanvas.js";
 
     
@@ -39,8 +43,7 @@ import { MyCanvas } from "../../../org/allbinary/graphics/displayable/MyCanvas.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Processor } from "./Processor.js";
+        import { Processor } from "./Processor.js";
 
 export class RunnableCanvasRefreshHelper extends Processor {
         

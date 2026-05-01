@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { BasicEventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js";
 
     
@@ -39,8 +43,7 @@ import { BasicEventListenerInterface } from "../../../../../../org/allbinary/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
+        import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
 
 export interface CapturedImageWorkerResultsListener extends BasicEventListenerInterface {
         

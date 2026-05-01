@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -75,8 +79,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchButtonInput } from "./TouchButtonInput.js";
+        import { TouchButtonInput } from "./TouchButtonInput.js";
 
 export class TouchButton extends Paintable {
         

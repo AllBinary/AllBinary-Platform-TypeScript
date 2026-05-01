@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { BasicColor } from "../../../../../../../org/allbinary/graphics/color/BasicColor.js";
@@ -41,8 +45,7 @@ import { BasicColor } from "../../../../../../../org/allbinary/graphics/color/Ba
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RaceTrackFrictionProperties } from "./RaceTrackFrictionProperties.js";
+        import { RaceTrackFrictionProperties } from "./RaceTrackFrictionProperties.js";
 
 export class RaceTrackInfo
             extends Object

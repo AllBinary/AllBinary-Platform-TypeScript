@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../../../java/lang/Long.js";
@@ -76,17 +80,11 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
-
+        import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
 import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
-
 import { Point } from "./Point.js";
-
 import { MouseActionScriptInputJPanel } from "./MouseActionScriptInputJPanel.js";
-
 import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-
 import { MouseInputAutomationProcessor } from "./MouseInputAutomationProcessor.js";
 
 export class MouseActionScriptInput extends BasicProfileActionScriptInput implements MouseActionScriptInputInterface {

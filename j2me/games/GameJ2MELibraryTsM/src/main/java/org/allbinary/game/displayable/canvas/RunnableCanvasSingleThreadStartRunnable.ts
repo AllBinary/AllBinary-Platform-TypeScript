@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { RunnableCanvas } from "../../../../../org/allbinary/canvas/RunnableCanvas.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { GameRunnable } from "./GameRunnable.js";
+        import { GameRunnable } from "./GameRunnable.js";
 
 export class RunnableCanvasSingleThreadStartRunnable extends GameRunnable {
         

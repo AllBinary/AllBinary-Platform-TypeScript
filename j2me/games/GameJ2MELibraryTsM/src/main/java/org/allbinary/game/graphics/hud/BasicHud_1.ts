@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -81,9 +85,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HudGraphicsPosition } from "./HudGraphicsPosition.js";
-
+        import { HudGraphicsPosition } from "./HudGraphicsPosition.js";
 import { BasicHudFactory } from "./BasicHudFactory.js";
 
 export class BasicHud_1

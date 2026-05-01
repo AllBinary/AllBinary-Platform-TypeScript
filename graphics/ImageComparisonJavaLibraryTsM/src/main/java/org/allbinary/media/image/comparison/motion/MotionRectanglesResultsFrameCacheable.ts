@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -44,8 +48,7 @@ import { CacheableInterface } from "../../../../../../org/allbinary/logic/util/c
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MotionRectangles } from "./MotionRectangles.js";
+        import { MotionRectangles } from "./MotionRectangles.js";
 
 export class MotionRectanglesResultsFrameCacheable
             extends Object

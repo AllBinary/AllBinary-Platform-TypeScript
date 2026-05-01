@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -54,8 +58,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ThemesData } from "./ThemesData.js";
+        import { ThemesData } from "./ThemesData.js";
 
 export class ThemesValidation extends Validation implements DomNodeInterface {
         

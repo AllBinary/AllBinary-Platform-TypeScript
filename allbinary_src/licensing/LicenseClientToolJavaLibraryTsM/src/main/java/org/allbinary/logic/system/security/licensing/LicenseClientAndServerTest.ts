@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { File } from "../../../../../../java/io/File.js";
 
     
@@ -66,15 +70,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { BasicArrayListD } from "./BasicArrayListD.js";
-
+        import { BasicArrayListD } from "./BasicArrayListD.js";
 import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
-
 import { AbeClientInformationInterfaceFactory } from "./AbeClientInformationInterfaceFactory.js";
-
 import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
-
 import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
 
 export class LicenseClientAndServerTest

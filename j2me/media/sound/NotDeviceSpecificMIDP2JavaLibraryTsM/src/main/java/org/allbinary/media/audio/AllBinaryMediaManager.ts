@@ -18,7 +18,11 @@
 
 
 
-            import { System } from "../../../../java/lang/System";
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
+            import { System } from "../../../../java/lang/System.js";
         
 import { InputStream } from "../../../../java/io/InputStream.js";
 
@@ -71,11 +75,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Sounds } from "./Sounds.js";
-
+        import { Sounds } from "./Sounds.js";
 import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
-
 import { NoPlayer } from "./NoPlayer.js";
 
 export class AllBinaryMediaManager

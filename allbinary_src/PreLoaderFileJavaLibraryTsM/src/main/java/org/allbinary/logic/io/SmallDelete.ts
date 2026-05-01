@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { DataOutputStream } from "../../../../java/io/DataOutputStream.js";
 
     

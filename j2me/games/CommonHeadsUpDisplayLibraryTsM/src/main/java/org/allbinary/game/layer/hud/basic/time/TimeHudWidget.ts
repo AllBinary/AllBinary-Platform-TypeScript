@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -54,8 +58,7 @@ import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { Timer } from "./Timer.js";
+        import { Timer } from "./Timer.js";
 
 export class TimeHudWidget extends BasicHud {
         

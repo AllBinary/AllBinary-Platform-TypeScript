@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../java/lang/Object.js";
+
+
+        
 import { AdvancedRTSGameLayer } from "../../../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js";
 
     
@@ -57,9 +61,7 @@ import { DropCellPositionHistory } from "../../../../../../../org/allbinary/medi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
-
+        import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
 import { RaceTrackGeographicMap } from "./RaceTrackGeographicMap.js";
 
 export class CustomMapGenerator extends CustomMapGeneratorBase {

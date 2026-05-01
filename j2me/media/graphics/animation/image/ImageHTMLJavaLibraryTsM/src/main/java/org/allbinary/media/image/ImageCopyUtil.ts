@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -57,8 +61,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageCreationUtil } from "./ImageCreationUtil.js";
+        import { ImageCreationUtil } from "./ImageCreationUtil.js";
 
 export class ImageCopyUtil
             extends Object

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -42,9 +46,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
-
+        import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
 import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
 export class AllBinaryMediaManagerShutdown

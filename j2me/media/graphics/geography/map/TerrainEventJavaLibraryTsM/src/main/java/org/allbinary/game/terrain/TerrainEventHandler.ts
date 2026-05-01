@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -60,11 +64,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TerrainEventListener } from "./TerrainEventListener.js";
-
+        import { TerrainEventListener } from "./TerrainEventListener.js";
 import { TerrainEvent } from "./TerrainEvent.js";
-
 import { TerrainEventListenerInterface } from "./TerrainEventListenerInterface.js";
 
 export class TerrainEventHandler extends BasicEventHandler {

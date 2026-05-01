@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { awt } from "../../../../../java/awt.js";
 
     
@@ -45,9 +49,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ColorRangeInterface } from "./ColorRangeInterface.js";
-
+        import { ColorRangeInterface } from "./ColorRangeInterface.js";
 import { Color } from "./Color.js";
 
 export class ColorRange

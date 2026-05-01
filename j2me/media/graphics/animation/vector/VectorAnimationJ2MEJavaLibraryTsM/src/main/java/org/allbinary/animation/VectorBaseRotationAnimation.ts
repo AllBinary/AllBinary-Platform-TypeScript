@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -57,11 +61,8 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RotationAnimation } from "./RotationAnimation.js";
-
+        import { RotationAnimation } from "./RotationAnimation.js";
 import { VectorAnimationInterface } from "./VectorAnimationInterface.js";
-
 import { AnimationBehavior } from "./AnimationBehavior.js";
 
 export class VectorBaseRotationAnimation extends RotationAnimation implements VectorAnimationInterface {

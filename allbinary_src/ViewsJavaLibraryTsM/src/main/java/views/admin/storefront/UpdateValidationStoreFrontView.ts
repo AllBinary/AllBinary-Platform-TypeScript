@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { StoreFrontFactory } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
 
     
@@ -57,8 +61,7 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { StoreFrontComponent } from "./StoreFrontComponent.js";
+        import { StoreFrontComponent } from "./StoreFrontComponent.js";
 
 export class UpdateValidationStoreFrontView extends StoreFrontComponent implements ValidationComponentInterface {
         

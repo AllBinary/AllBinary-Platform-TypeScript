@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -69,11 +73,8 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
-
+        import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
 import { AlphaBaseProcessor } from "./AlphaBaseProcessor.js";
-
 import { AlphaProcessor } from "./AlphaProcessor.js";
 
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {

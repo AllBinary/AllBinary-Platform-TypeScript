@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { AnalogLocationInput } from "../../../../../org/allbinary/game/input/analog/AnalogLocationInput.js";
 
     
@@ -48,9 +52,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AnalogControllerVisitor } from "./AnalogControllerVisitor.js";
-
+        import { AnalogControllerVisitor } from "./AnalogControllerVisitor.js";
 import { AnalogLocationInputProcessor } from "./AnalogLocationInputProcessor.js";
 
 export class AllAnalogControllerVisitor extends AnalogControllerVisitor {

@@ -20,6 +20,10 @@
 
             import hilog from '@ohos.hilog';
         
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Closeable } from "../../../../../../java/io/Closeable.js";
 
     
@@ -143,7 +147,7 @@ public constructor (){
                 //: 
 } catch(e) 
             {
-this.logUtil!.put("Hardware Data: " +this.toString(), this, commonStrings!.INIT, e);
+this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.INIT, e);
     
 
 
@@ -184,7 +188,7 @@ this.componentInterfaceVector= new BasicArrayListD();
     var lineNumberReader: LineNumberReader = new LineNumberReader(pciFile);
 ;
     
-this.logUtil!.putF("File Found", this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("File Found", this, this.commonStrings!.CONSTRUCTOR);
     
 
     var nextLine: string = lineNumberReader!.readLine()!;

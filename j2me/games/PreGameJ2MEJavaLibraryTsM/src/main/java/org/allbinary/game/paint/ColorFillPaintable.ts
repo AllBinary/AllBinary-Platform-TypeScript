@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -45,8 +49,7 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ColorFillBasePaintable } from "./ColorFillBasePaintable.js";
+        import { ColorFillBasePaintable } from "./ColorFillBasePaintable.js";
 
 export class ColorFillPaintable extends ColorFillBasePaintable {
         

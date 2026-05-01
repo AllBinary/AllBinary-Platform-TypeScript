@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -56,8 +60,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { IdGeneratorEntityInterface } from "./IdGeneratorEntityInterface.js";
+        import { IdGeneratorEntityInterface } from "./IdGeneratorEntityInterface.js";
 
 export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInterface {
         

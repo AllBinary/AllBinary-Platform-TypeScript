@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -39,8 +43,7 @@ import { Vector } from "../../../../../../java/util/Vector.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { HtmlTag } from "./HtmlTag.js";
+        import { HtmlTag } from "./HtmlTag.js";
 
 export class HtmlTags
             extends Object

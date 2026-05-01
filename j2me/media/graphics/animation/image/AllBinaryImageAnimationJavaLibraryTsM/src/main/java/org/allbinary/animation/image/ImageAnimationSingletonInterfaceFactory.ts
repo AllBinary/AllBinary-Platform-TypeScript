@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
@@ -48,8 +52,7 @@ import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/Anima
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageAnimation } from "./ImageAnimation.js";
+        import { ImageAnimation } from "./ImageAnimation.js";
 
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         

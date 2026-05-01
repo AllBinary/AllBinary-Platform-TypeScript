@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -42,8 +46,7 @@ import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { MovementInterface } from "./MovementInterface.js";
+        import { MovementInterface } from "./MovementInterface.js";
 
 export class Movement
             extends Object

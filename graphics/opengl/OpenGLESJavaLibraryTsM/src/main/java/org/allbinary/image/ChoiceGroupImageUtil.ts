@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { GL } from "../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -54,8 +58,7 @@ import { Features } from "../../../org/allbinary/game/configuration/feature/Feat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
+        import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
 
 export class ChoiceGroupImageUtil
             extends Object

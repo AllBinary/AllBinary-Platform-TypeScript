@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -63,8 +67,7 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { XmlOptionItemsEntityInterface } from "./XmlOptionItemsEntityInterface.js";
+        import { XmlOptionItemsEntityInterface } from "./XmlOptionItemsEntityInterface.js";
 
 export class XmlOptionItemsEntity extends AbSqlBean implements XmlOptionItemsEntityInterface {
         

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { LayerManager } from "../../../../org/allbinary/layer/LayerManager.js";
 
     

@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -60,8 +64,7 @@ import { TransformInfoObjectFactory } from "../../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformTemplateInterface } from "./TransformTemplateInterface.js";
+        import { TransformTemplateInterface } from "./TransformTemplateInterface.js";
 
 export class TransformTemplateFactory
             extends Object

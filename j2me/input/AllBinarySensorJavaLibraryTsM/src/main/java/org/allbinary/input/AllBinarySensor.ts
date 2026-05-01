@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../java/lang/Object.js";
+
+
+        
 import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
 
     
@@ -45,8 +49,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AllBinarySensorListener } from "./AllBinarySensorListener.js";
+        import { AllBinarySensorListener } from "./AllBinarySensorListener.js";
 
 export class AllBinarySensor
             extends Object

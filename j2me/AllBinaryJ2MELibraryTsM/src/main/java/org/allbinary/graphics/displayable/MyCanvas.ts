@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Stack } from "../../../../java/util/Stack.js";
 
     
@@ -78,11 +82,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { DisplayableInterface } from "./DisplayableInterface.js";
-
+        import { DisplayableInterface } from "./DisplayableInterface.js";
 import { CanvasStrings } from "./CanvasStrings.js";
-
 import { DisplayInfoSingleton } from "./DisplayInfoSingleton.js";
 
 export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandInterface {

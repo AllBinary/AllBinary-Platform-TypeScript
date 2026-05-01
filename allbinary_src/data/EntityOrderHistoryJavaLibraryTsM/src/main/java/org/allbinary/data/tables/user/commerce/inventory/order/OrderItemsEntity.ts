@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -114,8 +118,7 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { OrderItemsEntityInterface } from "./OrderItemsEntityInterface.js";
+        import { OrderItemsEntityInterface } from "./OrderItemsEntityInterface.js";
 
 export class OrderItemsEntity extends AbSqlBean implements OrderItemsEntityInterface {
         

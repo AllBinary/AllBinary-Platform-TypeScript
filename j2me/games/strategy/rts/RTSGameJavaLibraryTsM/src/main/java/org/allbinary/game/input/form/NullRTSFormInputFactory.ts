@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { BasicGroupFactory } from "../../../../../org/allbinary/game/identification/BasicGroupFactory.js";
 
     
@@ -39,8 +43,7 @@ import { BasicGroupFactory } from "../../../../../org/allbinary/game/identificat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { RTSFormInput } from "./RTSFormInput.js";
+        import { RTSFormInput } from "./RTSFormInput.js";
 
 export class NullRTSFormInputFactory
             extends Object

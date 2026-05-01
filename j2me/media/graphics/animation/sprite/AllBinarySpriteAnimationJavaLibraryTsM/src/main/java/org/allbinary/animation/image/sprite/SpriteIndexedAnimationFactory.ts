@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -69,9 +73,7 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
-
+        import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
 import { AdjustedSpriteIndexedAnimation } from "./AdjustedSpriteIndexedAnimation.js";
 
 export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {

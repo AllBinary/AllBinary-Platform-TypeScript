@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { HealthInterfaceCompositeInterface } from "../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js";
 
     
@@ -60,21 +64,13 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { PickupBehaviorInterface } from "./PickupBehaviorInterface.js";
-
+        import { PickupBehaviorInterface } from "./PickupBehaviorInterface.js";
 import { PickupProcessorInterface } from "./PickupProcessorInterface.js";
-
 import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
-
 import { PickedUpLayerType } from "./PickedUpLayerType.js";
-
 import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
-
 import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
-
 import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
-
 import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
 
 export class PickupBehavior

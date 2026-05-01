@@ -4,6 +4,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -52,13 +56,9 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
-
+        import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
 import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-
 import { FormType } from "./FormType.js";
-
 import { FormTypeFactory } from "./FormTypeFactory.js";
 
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {

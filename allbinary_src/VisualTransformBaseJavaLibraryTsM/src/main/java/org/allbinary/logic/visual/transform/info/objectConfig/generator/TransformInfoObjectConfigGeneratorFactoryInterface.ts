@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { TransformInfoInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
 
     
@@ -39,8 +43,7 @@ import { TransformInfoInterface } from "../../../../../../../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
+        import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
 
 export interface TransformInfoObjectConfigGeneratorFactoryInterface {
         

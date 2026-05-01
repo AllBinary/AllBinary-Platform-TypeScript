@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -90,8 +94,7 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { AbTransformer } from "./AbTransformer.js";
+        import { AbTransformer } from "./AbTransformer.js";
 
 export class BasicTransformer extends AbTransformer {
         

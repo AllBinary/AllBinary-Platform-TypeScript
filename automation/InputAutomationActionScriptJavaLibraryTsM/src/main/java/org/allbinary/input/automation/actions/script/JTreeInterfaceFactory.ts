@@ -10,6 +10,10 @@
 
 
 
+            import { Object } from "../../../../../../java/lang/Object.js";
+
+
+        
 
 
 
@@ -28,8 +32,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { JTreeInterface } from "./JTreeInterface.js";
+        import { JTreeInterface } from "./JTreeInterface.js";
 
 export class JTreeInterfaceFactory
             extends Object

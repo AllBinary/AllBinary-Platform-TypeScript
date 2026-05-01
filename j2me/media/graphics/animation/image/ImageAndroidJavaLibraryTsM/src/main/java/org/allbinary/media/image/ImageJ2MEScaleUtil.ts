@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../java/lang/Object.js";
+
+
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -42,8 +46,7 @@ import { GameFeatureImageCacheFactory } from "../../../../org/allbinary/image/Ga
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { ImageScaleUtil } from "./ImageScaleUtil.js";
+        import { ImageScaleUtil } from "./ImageScaleUtil.js";
 
 export class ImageJ2MEScaleUtil
             extends Object

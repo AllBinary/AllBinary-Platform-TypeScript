@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -48,13 +52,9 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TransformInfoObjectConfigGeneratorFactoryInterface } from "./TransformInfoObjectConfigGeneratorFactoryInterface.js";
-
+        import { TransformInfoObjectConfigGeneratorFactoryInterface } from "./TransformInfoObjectConfigGeneratorFactoryInterface.js";
 import { StoreFileGenerator } from "./StoreFileGenerator.js";
-
 import { BasicGenerator } from "./BasicGenerator.js";
-
 import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
 
 export class TransformInfoObjectConfigGeneratorFactory

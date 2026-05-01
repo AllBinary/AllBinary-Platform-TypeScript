@@ -18,6 +18,10 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -48,9 +52,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
-
+        import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
 import { TouchScreenType } from "./TouchScreenType.js";
 
 export class TouchScreenFactory

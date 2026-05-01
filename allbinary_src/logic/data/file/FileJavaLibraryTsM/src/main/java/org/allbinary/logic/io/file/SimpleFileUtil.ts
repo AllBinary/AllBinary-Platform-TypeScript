@@ -18,10 +18,17 @@
 
 
 
+            import { Object } from "../../../../../java/lang/Object.js";
+
+
+        
+            import { CharSequence } from "../../../../../java/lang/CharSequence.js";
+        
 import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
 
     
-import { IOException } from "../../../../../java/io/IOException.js";
+
+//import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../../../java/io/InputStream.js";
@@ -79,8 +86,6 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { CharSequence } from "./CharSequence.js";
-
 export class SimpleFileUtil
             extends Object
          {
@@ -376,7 +381,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
 startIndex= index;
     
 
-        while(index < size -1 && byteArray[index] != .code'\n'.code.toByte())
+        while(index < size -1 && byteArray[index] != .code'\n'.code)
         {
 index++;
     
@@ -387,7 +392,7 @@ index++;
                         
                                     {
                                     
-                        if(index > 0 && byteArray[index -1] == .code'\r'.code.toByte())
+                        if(index > 0 && byteArray[index -1] == .code'\r'.code)
                         
                                     {
                                     returnLine= 1;
