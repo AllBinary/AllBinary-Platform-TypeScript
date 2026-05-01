@@ -211,7 +211,7 @@ i < size; i++)
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(new User(userHashMap));
+                        usersVector!.add(new User(userHashMap))
 }
 
 
@@ -273,7 +273,7 @@ index < size; index++)
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(new User(userHashMap));
+                        usersVector!.add(new User(userHashMap))
 }
 
 
@@ -323,7 +323,7 @@ index < size; index++)
                         if(userHashMap != 
                                     null
                                 )
-                        usersVector!.add(new User(userHashMap));
+                        usersVector!.add(new User(userHashMap))
 }
 
 

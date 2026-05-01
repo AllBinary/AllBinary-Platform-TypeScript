@@ -120,7 +120,7 @@ export class ImageModifierUtil
     var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
 
                                     }
@@ -130,7 +130,7 @@ newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     var swtImage: SwtImmutableImage = image as SwtImmutableImage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
 
                         }
@@ -275,7 +275,7 @@ openGLESImage!.openGLESImageProperties!.bluef= basicColor!.getBlueComponent();
     var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
 
                                     }
@@ -285,7 +285,7 @@ newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     var swtImage: SwtImmutableImage = image as SwtImmutableImage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
 
                         }
@@ -421,7 +421,7 @@ this.setAlphaSWT(image, alphaInt);
     var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
 
                                     }
@@ -431,7 +431,7 @@ newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
     var swtImage: SwtImmutableImage = image as SwtImmutableImage;
 ;
     
-newBufferedImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+newBufferedImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
 
                         }

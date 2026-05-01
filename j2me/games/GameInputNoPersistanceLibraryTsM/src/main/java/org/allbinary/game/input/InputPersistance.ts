@@ -185,7 +185,7 @@ index < size; index++)
         {
 gameActionInput= inputObjectArray[index]! as Input;
     
-list= hashtable.get(inputObjectArray[index]!); as BasicArrayList;
+list= hashtable.get(inputObjectArray[index]!) as BasicArrayList;
     
 
 
@@ -195,7 +195,7 @@ list= hashtable.get(inputObjectArray[index]!); as BasicArrayList;
     var index2: number = 0;
 index2 < list.size(); index2++)
         {
-input= list.get(index2); as Input;
+input= list.get(index2) as Input;
     
 }
 

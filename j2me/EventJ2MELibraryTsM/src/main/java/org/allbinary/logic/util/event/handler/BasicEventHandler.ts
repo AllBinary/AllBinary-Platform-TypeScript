@@ -107,7 +107,7 @@ this.eventListenerInterfaceList= new BasicArrayListD();
     var index: number = 0;
 index < size; index++)
         {
-eventListenerInterface= vector.get(index); as EventListenerInterface;
+eventListenerInterface= vector.get(index) as EventListenerInterface;
     
 this.addListener(eventListenerInterface);
     
@@ -134,7 +134,7 @@ this.addListener(eventListenerInterface);
     var index: number = 0;
 index < size; index++)
         {
-eventListenerInterface= vector.get(index); as EventListenerInterface;
+eventListenerInterface= vector.get(index) as EventListenerInterface;
     
 this.removeListener(eventListenerInterface);
     
@@ -146,7 +146,7 @@ this.removeListener(eventListenerInterface);
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -160,7 +160,7 @@ this.removeListener(eventListenerInterface);
     public addListener(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -202,7 +202,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -210,7 +210,7 @@ this.process(eventObject, eventListenerInterface);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, eventStrings!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.eventStrings!.FIRE_EVENT, e);
     
 }
 
@@ -263,7 +263,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
 stringBuffer!.append(this.eventStrings!.LISTENER_LABEL);
     
@@ -273,7 +273,7 @@ stringBuffer!.append(eventListenerInterface!.toString());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.TOSTRING, e);
     
 }
 

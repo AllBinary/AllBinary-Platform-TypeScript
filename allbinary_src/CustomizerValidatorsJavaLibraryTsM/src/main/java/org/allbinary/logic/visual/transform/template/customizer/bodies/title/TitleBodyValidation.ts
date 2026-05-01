@@ -204,7 +204,7 @@ this.getFormData(hashMap);
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME); as string;
+this.body= hashMap!.get(BodyData.getInstance()!.NAME) as string;
     
 this.titleValidation= new TitleNotRequiredValidation(hashMap);
     
@@ -228,7 +228,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB);)
+                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB))
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -237,7 +237,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                                     }
                                 
 
-                        if(!this.titleValidation!.isValid().valueOf();)
+                        if(!this.titleValidation!.isValid().valueOf())
                         
                                     {
                                     isValid= Boolean.FALSE;

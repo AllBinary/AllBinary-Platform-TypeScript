@@ -133,7 +133,7 @@ public constructor (ownerLayer: PathFindingLayerInterface){
     var index: number = occupyList!.size()!;
 --index >= 0; )
         {
-geologicalGeographicMapCellPosition= occupyList!.get(index); as GeologicalGeographicMapCellPosition;
+geologicalGeographicMapCellPosition= occupyList!.get(index) as GeologicalGeographicMapCellPosition;
     
 geologicalResource= geologicalGeographicMapCellPosition!.getGeologicalResource();
     
@@ -184,7 +184,7 @@ unitLayer!.setLoad(maxResourceLoad);
 
         while(this.getConnectedWaypointList()!.size() > 0)
         {
-rtsLayer= this.getConnectedWaypointList()!.get(0); as RTSLayer;
+rtsLayer= this.getConnectedWaypointList()!.get(0) as RTSLayer;
     
 
                         if(rtsLayer!.isDestroyed())

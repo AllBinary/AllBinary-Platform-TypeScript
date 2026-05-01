@@ -193,7 +193,7 @@ this.userName= new UserName(hashMap).
                         if(user == 
                                     null
                                 )
-                        stringBuffer!.append("User does not exist.<br />");
+                        stringBuffer!.append("User does not exist.<br />")
 
                                     }
                                 

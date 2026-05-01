@@ -89,7 +89,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
     var httpTransformInfoInterface: TransformInfoHttpInterface = this.getTransformInfoInterface() as TransformInfoHttpInterface;
 ;
     
-this.request= httpTransformInfoInterface!.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request= httpTransformInfoInterface!.getPageContext()!.getRequest() as HttpServletRequest;
     
 }
 

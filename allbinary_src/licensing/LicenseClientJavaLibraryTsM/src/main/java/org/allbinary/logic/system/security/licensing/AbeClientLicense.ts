@@ -144,7 +144,7 @@ this.hashtable= new Hashtable<any, any>();
 
                                     }
                                 
-this.id= hashtable.get(abeClientInformationData!.LICENSEID); as string;
+this.id= hashtable.get(abeClientInformationData!.LICENSEID) as string;
     
 
     var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS) as Vector;
@@ -230,7 +230,7 @@ var keyName = keyName
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY));)
+                        if(!stringValidationUtil!.isEmpty(this.getKey(AbeClientInformationData.getInstance()!.KEY)))
                         
                                     {
                                     

@@ -1203,7 +1203,7 @@ index < size; index++)
         {
 key= keyArray[index]! as string;
     
-value= whereKeyValuePairs!.get(key); as string;
+value= whereKeyValuePairs!.get(key) as string;
     
 stringBuffer!.append(key);
     

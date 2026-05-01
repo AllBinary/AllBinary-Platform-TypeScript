@@ -105,7 +105,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(gatewayName))
                         
                                     {
                                     

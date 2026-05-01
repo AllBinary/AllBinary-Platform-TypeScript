@@ -114,7 +114,7 @@ private constructor (){
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
@@ -166,7 +166,7 @@ private constructor (){
     //var canvasScale = canvasScale
     //var resize = resize
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());

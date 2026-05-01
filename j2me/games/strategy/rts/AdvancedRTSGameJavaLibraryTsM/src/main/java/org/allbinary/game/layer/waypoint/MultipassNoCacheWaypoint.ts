@@ -357,7 +357,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
     var index: number = endList!.size() -1;
 index >= 0; index--)
         {
-endGeographicMapCellPosition= endList!.get(index); as GeographicMapCellPosition;
+endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition;
     
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)

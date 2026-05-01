@@ -135,7 +135,7 @@ this.list.clear();
     var index: number = 0;
 index < size; index++)
         {
-command= vector.elementAt(index); as Command;
+command= vector.elementAt(index) as Command;
     
 
                         if(command.getPriority() < priorityLimit)

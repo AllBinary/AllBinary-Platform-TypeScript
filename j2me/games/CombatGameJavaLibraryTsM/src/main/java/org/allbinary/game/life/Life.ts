@@ -126,7 +126,7 @@ this.lives= this.startLives;
     public add(lives: number){
 var lives = lives
 
-                        if(!this.reachedLimit();)
+                        if(!this.reachedLimit())
                         
                                     {
                                     
@@ -217,7 +217,7 @@ var lives = lives
     public deaths(lives: number){
 var lives = lives
 
-                        if(!this.reachedLimit();)
+                        if(!this.reachedLimit())
                         
                                     {
                                     

@@ -138,7 +138,7 @@ this.storeName= weblisketSession!.getStoreName();
                             toHashMap()!;
 ;
     
-this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME); as string;
+this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
     
 this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as string);
     
@@ -148,9 +148,9 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME); as string;
+this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
     
-this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as string;
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
     
 this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA) as string);
     
@@ -422,7 +422,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         if(this.workFlowName == 
                                     null
                                 )
-                        stringBuffer!.append("No WorkFlow name specified.");
+                        stringBuffer!.append("No WorkFlow name specified.")
 
 
 

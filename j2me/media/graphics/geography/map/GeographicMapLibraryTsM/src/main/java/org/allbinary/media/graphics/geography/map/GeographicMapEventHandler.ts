@@ -80,7 +80,7 @@ private constructor (){
     public addListener(gameLayer: AllBinaryGameLayer){
 var gameLayer = gameLayer
 
-                        if(!this.list.contains(gameLayer);)
+                        if(!this.list.contains(gameLayer))
                         
                                     {
                                     this.list.add(gameLayer);

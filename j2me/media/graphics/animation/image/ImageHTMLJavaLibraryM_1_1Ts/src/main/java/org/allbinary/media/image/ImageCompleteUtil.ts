@@ -111,13 +111,13 @@ var name = name
                                     }
                                 
 
-                        if(!image.isReady();)
+                        if(!image.isReady())
                         
                                     {
                                     image.init(image.getImage());
     
 
-                        if(!image.isReady();)
+                        if(!image.isReady())
                         
                                     {
                                     PreLogUtil.put("Waiting for Not Ready Image: " +image.getName(), this, ISREADY);

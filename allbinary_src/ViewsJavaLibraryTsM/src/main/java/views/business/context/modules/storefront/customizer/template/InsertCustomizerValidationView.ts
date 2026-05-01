@@ -127,7 +127,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                             toHashMap()!;
 ;
     
-this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME); as string;
+this.viewName= requestHashMap!.get(TransformInfoData.getInstance()!.NAME) as string;
     
 }
 

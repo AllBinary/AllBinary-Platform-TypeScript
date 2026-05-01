@@ -88,7 +88,7 @@ private constructor (){
     public addListener(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
-                        if(!this.list.contains(collidableDestroyableDamageableLayer);)
+                        if(!this.list.contains(collidableDestroyableDamageableLayer))
                         
                                     {
                                     this.list.add(collidableDestroyableDamageableLayer);

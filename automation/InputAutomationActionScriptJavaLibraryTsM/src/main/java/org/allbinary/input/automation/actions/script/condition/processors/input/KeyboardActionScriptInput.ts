@@ -401,7 +401,7 @@ var keyArray = keyArray
                         if(keyArray != 
                                     null
                                 )
-                        this.logUtil!.putF(CommonLabels.getInstance()!.START +keyArray!.length, this, "setKeyArray");
+                        this.logUtil!.putF(CommonLabels.getInstance()!.START +keyArray!.length, this, "setKeyArray")
 this.keyArray= keyArray;
     
 }

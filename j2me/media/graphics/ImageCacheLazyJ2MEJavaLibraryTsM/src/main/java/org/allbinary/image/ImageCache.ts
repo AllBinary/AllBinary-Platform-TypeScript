@@ -20,7 +20,7 @@
 
             import { System } from "../../../java/lang/System";
         
-            import { Integer } from "../../../java/lang/Thread.js";
+            import { Thread } from "../../../java/lang/Thread.js";
         
 import { InputStream } from "../../../java/io/InputStream.js";
 
@@ -399,7 +399,7 @@ this.firstTime= false;
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation= this.loadAfterList!.get(0); as LazyImageRotationAnimation;
+                            lazyImageRotationAnimation= this.loadAfterList!.get(0) as LazyImageRotationAnimation;
     
 
                         if(this.loadImageForLazyAnimation(lazyImageRotationAnimation))
@@ -417,7 +417,7 @@ this.firstTime= false;
                                     }
                                 
                         else {
-                            lazyImageRotationAnimation= this.loadSoonList!.get(0); as LazyImageRotationAnimation;
+                            lazyImageRotationAnimation= this.loadSoonList!.get(0) as LazyImageRotationAnimation;
     
 
                         if(this.loadImageForLazyAnimation(lazyImageRotationAnimation))
@@ -440,7 +440,7 @@ this.firstTime= false;
 
                                     }
                                 
-lazyImageRotationAnimation= this.loadNowList!.get(0); as LazyImageRotationAnimation;
+lazyImageRotationAnimation= this.loadNowList!.get(0) as LazyImageRotationAnimation;
     
 
 
@@ -547,7 +547,7 @@ this.loadNextImage();
             
     public loadImageForAnimations(){
 
-        while(!this.loadNowList!.isEmpty();)
+        while(!this.loadNowList!.isEmpty())
         {
 this.loadImageForAnimation();
     
@@ -563,7 +563,7 @@ this.loadImageForAnimation();
         while(!this.loadAfterList!.isEmpty(); || !this.loadNowList!.isEmpty();)
         {
 
-        while(!this.loadNowList!.isEmpty();)
+        while(!this.loadNowList!.isEmpty())
         {
 this.loadImageForAnimation();
     
@@ -583,8 +583,8 @@ this.loadImageForAnimation();
         //mutex.withLock
         
 
-                        if(!this.loadAfterList!.isEmpty();)
-                        lazyImageRotationAnimation= this.loadAfterList!.removeAt(0); as LazyImageRotationAnimation
+                        if(!this.loadAfterList!.isEmpty())
+                        lazyImageRotationAnimation= this.loadAfterList!.removeAt(0) as LazyImageRotationAnimation
 
 
 
@@ -664,7 +664,7 @@ this.loadImageForAnimation();
 
                                     }
                                 
-image= this.loadList!.removeAt(0); as Image;
+image= this.loadList!.removeAt(0) as Image;
     
 
 
@@ -1093,7 +1093,7 @@ this.loadList!.add(image);
     var index: number = 0;
 index < size; index++)
         {
-lazyImageRotationAnimation2= this.loadAfterList!.get(index); as LazyImageRotationAnimation;
+lazyImageRotationAnimation2= this.loadAfterList!.get(index) as LazyImageRotationAnimation;
     
 
                         if(lazyImageRotationAnimation2!.instanceId == lazyImageRotationAnimation!.instanceId)

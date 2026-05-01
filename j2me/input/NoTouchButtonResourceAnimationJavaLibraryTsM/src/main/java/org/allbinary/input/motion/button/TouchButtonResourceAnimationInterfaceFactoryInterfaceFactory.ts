@@ -146,7 +146,7 @@ var level = level
 
     public isFeature(): boolean{
 
-                        if(!Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
+                        if(!Features.getInstance()!.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     

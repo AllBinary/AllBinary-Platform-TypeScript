@@ -234,7 +234,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
                         
                                     {
                                     
-                        if(!this.targetList!.contains(advancedRTSGameLayer);)
+                        if(!this.targetList!.contains(advancedRTSGameLayer))
                         
                                     {
                                     this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding(this.associatedAdvancedRTSGameLayer, advancedRTSGameLayer);

@@ -430,7 +430,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD);
     var index: number = rtsLayerList!.size() -1;
 index >= 0; index--)
         {
-rtsLayer= rtsLayerList!.get(index); as RTSLayer;
+rtsLayer= rtsLayerList!.get(index) as RTSLayer;
     
 stringBuffer!.delete(0, stringBuffer!.length());
     

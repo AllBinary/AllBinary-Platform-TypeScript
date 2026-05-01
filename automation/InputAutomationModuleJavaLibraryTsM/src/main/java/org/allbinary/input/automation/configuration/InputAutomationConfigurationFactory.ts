@@ -119,7 +119,7 @@ export class InputAutomationConfigurationFactory
     var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration::class)!;
 ;
     
-InputAutomationConfigurationFactory.inputAutomationConfiguration= root.getValue(); as InputAutomationConfiguration;
+InputAutomationConfigurationFactory.inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration;
     
 
     var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = InputAutomationConfigurationFactory.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;

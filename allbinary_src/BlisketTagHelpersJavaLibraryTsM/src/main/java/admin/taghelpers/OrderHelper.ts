@@ -119,14 +119,14 @@ this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
     var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(storeName);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(storeName))
                         
                                     {
                                     this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
@@ -155,7 +155,7 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(requestPaymentGateway);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(requestPaymentGateway))
                         
                                     {
                                     this.weblisketSession!.setPaymentMethod(requestPaymentGateway);

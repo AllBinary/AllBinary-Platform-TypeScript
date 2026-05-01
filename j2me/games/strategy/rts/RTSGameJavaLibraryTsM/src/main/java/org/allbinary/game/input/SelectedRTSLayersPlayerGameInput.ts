@@ -287,7 +287,7 @@ rtsLayer!.upgrade();
 capital.removeMoney(upgradeCost);
     
 
-                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.upgradeGameNotificationEvent);
@@ -302,7 +302,7 @@ capital.removeMoney(upgradeCost);
                             this.rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.noMoneyGameNotificationEvent);
@@ -374,7 +374,7 @@ rtsLayer!.downgrade();
 capital.addMoney(downgradeCost);
     
 
-                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!this.rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.downgradeGameNotificationEvent);
@@ -516,7 +516,7 @@ this.selectedRTSLayersList!.clear();
                                 
                         else {
                             
-                        if(!this.selectedRTSLayersList!.contains(selectedLayer);)
+                        if(!this.selectedRTSLayersList!.contains(selectedLayer))
                         
                                     {
                                     this.selectedRTSLayersList!.add(selectedLayer);

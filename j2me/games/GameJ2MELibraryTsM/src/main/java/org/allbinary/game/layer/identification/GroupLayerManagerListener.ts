@@ -313,7 +313,7 @@ index2 < size2; index2++)
         {
 groupInterface= groupInterfaceArray[index2]!;
     
-groupId= Math.round(groupInterface!.getGroupId(););
+groupId= Math.round(groupInterface!.getGroupId());
     
 
                         if(groupId == id)
@@ -357,7 +357,7 @@ groupId= Math.round(groupInterface!.getGroupId(););
 index >= 0; index--)
         {
 
-                        if(!this.isIdInList(index, excludeGroupList);)
+                        if(!this.isIdInList(index, excludeGroupList))
                         
                                     {
                                     
@@ -443,7 +443,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     var index: number = 0;
 index < size; index++)
         {
-id= Math.round(groupInterfaceArray[index]!.getGroupId(););
+id= Math.round(groupInterfaceArray[index]!.getGroupId());
     
 groupList= this.list.objectArray[id]! as BasicArrayList;
     
@@ -460,7 +460,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
                                     }
                                 
 
-                        if(!groupList!.contains(layerInterface);)
+                        if(!groupList!.contains(layerInterface))
                         
                                     {
                                     groupList!.add(layerInterface);
@@ -510,7 +510,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
     var index: number = 0;
 index < size; index++)
         {
-id= Math.round(groupInterfaceArray[index]!.getGroupId(););
+id= Math.round(groupInterfaceArray[index]!.getGroupId());
     
 groupList= this.list.objectArray[id]! as BasicArrayList;
     

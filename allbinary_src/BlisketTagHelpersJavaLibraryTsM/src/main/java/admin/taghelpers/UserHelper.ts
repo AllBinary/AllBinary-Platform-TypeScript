@@ -116,7 +116,7 @@ this.hashMap= hashMap;
     
 this.pageContext= pageContext;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request= pageContext!.getRequest() as HttpServletRequest;
     
 this.path= URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.XSLPATH;
     
@@ -214,7 +214,7 @@ stringBuffer!.append(" from to the user table");
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(enable);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(enable))
                         
                                     {
                                     userInterface!.setEnable(enable);

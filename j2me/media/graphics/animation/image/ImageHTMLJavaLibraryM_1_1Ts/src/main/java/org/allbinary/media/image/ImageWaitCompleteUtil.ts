@@ -142,7 +142,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                        if(!image.isReady();)
+                        if(!image.isReady())
                         
                                     {
                                     image.init(image.getImage());

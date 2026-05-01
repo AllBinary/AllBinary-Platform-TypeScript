@@ -140,7 +140,7 @@ this.getFormData(hashMap);
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME); as string;
+this.body= hashMap!.get(BodyData.getInstance()!.NAME) as string;
     
 }
 
@@ -162,7 +162,7 @@ this.body= hashMap!.get(BodyData.getInstance()!.NAME); as string;
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB);)
+                        if(!StringValidationUtil.getInstance()!.isValidNotRequired(this.body, BodyData.getInstance()!.MIN, AbSqlData.MAXBLOB))
                         
                                     {
                                     isValid= Boolean.FALSE;

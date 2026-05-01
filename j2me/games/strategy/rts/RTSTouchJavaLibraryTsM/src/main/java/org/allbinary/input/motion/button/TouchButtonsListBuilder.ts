@@ -68,7 +68,7 @@ export class TouchButtonsListBuilder extends BaseTouchInput {
     var index: number = 0;
 index < size; index++)
         {
-baseTouchInput= this.baseTouchInputList!.get(index); as BaseTouchInput;
+baseTouchInput= this.baseTouchInputList!.get(index) as BaseTouchInput;
     
 list.addAllList(baseTouchInput!.getList());
     

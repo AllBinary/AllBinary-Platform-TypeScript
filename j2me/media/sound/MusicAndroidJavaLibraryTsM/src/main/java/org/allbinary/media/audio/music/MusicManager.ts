@@ -293,7 +293,7 @@ PreLogUtil.put(new StringMaker().
                         if(this.nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound= this.basicArrayListUtil!.getRandom(this.songList); as Sound;
+                                    this.currentSongSound= this.basicArrayListUtil!.getRandom(this.songList) as Sound;
     
 
                                     }

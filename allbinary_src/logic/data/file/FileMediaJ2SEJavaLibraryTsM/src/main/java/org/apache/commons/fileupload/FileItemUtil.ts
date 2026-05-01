@@ -150,7 +150,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "write()");
 
                         }
                             
-outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384)); as ByteArrayOutputStream;
+outputStream= streamUtil!.get(inputStream, outputStream, new Array(16384)) as ByteArrayOutputStream;
     
 
 

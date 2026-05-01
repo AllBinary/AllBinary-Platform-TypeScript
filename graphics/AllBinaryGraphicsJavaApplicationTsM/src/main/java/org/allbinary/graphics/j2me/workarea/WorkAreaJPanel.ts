@@ -20,7 +20,7 @@
 
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-            import { Integer } from "../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../../../java/lang/Runnable.js";
         
@@ -981,7 +981,7 @@ this.center();
 index < size; index++)
         {
 
-                        if(!this.isPlaying();)
+                        if(!this.isPlaying())
                         
                                     {
                                     break;

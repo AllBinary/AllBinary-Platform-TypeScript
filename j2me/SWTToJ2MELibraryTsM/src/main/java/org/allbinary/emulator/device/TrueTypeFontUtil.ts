@@ -191,7 +191,7 @@ this.widthScale= (this.scale == 2)
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
     
 
                                     }
@@ -210,7 +210,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
     
 
                                     }
@@ -226,7 +226,7 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
     
 image.setName(canvasStrings!.FONT_ATLAS);
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
     
 
                         }

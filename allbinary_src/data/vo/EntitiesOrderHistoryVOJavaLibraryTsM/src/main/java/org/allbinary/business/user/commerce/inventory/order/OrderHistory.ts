@@ -200,17 +200,17 @@ this.billingAddress= new StreetAddress(orderHistoryHashMap!.get(BillingAddressDa
     
 this.payment= new Payment(orderHistoryHashMap);
     
-this.userName= orderHistoryHashMap!.get(UserData.USERNAME); as string;
+this.userName= orderHistoryHashMap!.get(UserData.USERNAME) as string;
     
-this.orderDate= orderHistoryHashMap!.get(OrderHistoryData.ORDERDATE); as string;
+this.orderDate= orderHistoryHashMap!.get(OrderHistoryData.ORDERDATE) as string;
     
-this.shipDate= orderHistoryHashMap!.get(OrderHistoryData.SHIPPEDDATE); as string;
+this.shipDate= orderHistoryHashMap!.get(OrderHistoryData.SHIPPEDDATE) as string;
     
-this.transDate= orderHistoryHashMap!.get(OrderHistoryData.TRANSDATE); as string;
+this.transDate= orderHistoryHashMap!.get(OrderHistoryData.TRANSDATE) as string;
     
-this.cancelDate= orderHistoryHashMap!.get(OrderHistoryData.CANCELDATE); as string;
+this.cancelDate= orderHistoryHashMap!.get(OrderHistoryData.CANCELDATE) as string;
     
-this.status= orderHistoryHashMap!.get(OrderHistoryData.STATUS); as string;
+this.status= orderHistoryHashMap!.get(OrderHistoryData.STATUS) as string;
     
 this.subTotal= new Money(orderHistoryHashMap!.get(OrderHistoryData.SUBTOTAL) as string);
     

@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../java/lang/Thread.js";
+            import { Thread } from "../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../java/lang/Runnable.js";
         
@@ -207,7 +207,7 @@ pooledThread!.start();
     var index: number = 0;
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index); as PriorityRunnable;
+runnable= this.taskQueue!.get(index) as PriorityRunnable;
     
 
                         if(runnable.getPriority() > task.getPriority())

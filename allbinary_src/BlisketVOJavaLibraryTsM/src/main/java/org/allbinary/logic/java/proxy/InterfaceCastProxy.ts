@@ -86,8 +86,8 @@ var proxyArgs = proxyArgs
 ;
     
 
-                        if(!realMethod!.isAccessible();)
-                        realMethod!.setAccessible(true);
+                        if(!realMethod!.isAccessible())
+                        realMethod!.setAccessible(true)
 
 
 

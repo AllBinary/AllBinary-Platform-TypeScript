@@ -87,7 +87,7 @@ export class ColorDeltaFactory
         try {
             logUtil!.putF(commonStrings!.START, instance, STATIC_BLOCK);
     
-ColorDeltaFactory.cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX); as AutomaticCacheInterface;
+ColorDeltaFactory.cacheInterface= CacheInterfaceFactory.getInstance(CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX) as AutomaticCacheInterface;
     
 logUtil!.putF(commonStrings!.END, instance, STATIC_BLOCK);
     

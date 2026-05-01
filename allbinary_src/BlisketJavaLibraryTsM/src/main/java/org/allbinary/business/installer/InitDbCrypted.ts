@@ -181,7 +181,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDbUser(CUSTOMERDB, CUSTOMERDBUSER, CUSTOMERDBPASSWORD);)
+                        if(!this.addDbUser(CUSTOMERDB, CUSTOMERDBUSER, CUSTOMERDBPASSWORD))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +CUSTOMERDBUSER, this, this.METHOD_ADD_USERS);
@@ -208,7 +208,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDbUser(INVENTORYDB, INVENTORYDBUSER, INVENTORYDBPASSWORD);)
+                        if(!this.addDbUser(INVENTORYDB, INVENTORYDBUSER, INVENTORYDBPASSWORD))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +INVENTORYDBUSER, this, this.METHOD_ADD_USERS);
@@ -235,7 +235,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDbUser(HISTORYDB, HISTORYDBUSER, HISTORYDBPASSWORD);)
+                        if(!this.addDbUser(HISTORYDB, HISTORYDBUSER, HISTORYDBPASSWORD))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +HISTORYDBUSER, this, this.METHOD_ADD_USERS);
@@ -262,7 +262,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDbUser(STATICPAGESDB, STATICPAGESDBUSER, STATICPAGESDBPASSWORD);)
+                        if(!this.addDbUser(STATICPAGESDB, STATICPAGESDBUSER, STATICPAGESDBPASSWORD))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +STATICPAGESDBUSER, this, this.METHOD_ADD_USERS);
@@ -289,7 +289,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDbUser(LOGDB, LOGDBUSER, LOGDBPASSWORD);)
+                        if(!this.addDbUser(LOGDB, LOGDBUSER, LOGDBPASSWORD))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_USER +LOGDBUSER, this, this.METHOD_ADD_USERS);
@@ -348,7 +348,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDb(CUSTOMERDB);)
+                        if(!this.addDb(CUSTOMERDB))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +CUSTOMERDB, this, this.METHOD_ADD_DATABASES);
@@ -367,7 +367,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDb(INVENTORYDB);)
+                        if(!this.addDb(INVENTORYDB))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +INVENTORYDB, this, this.METHOD_ADD_DATABASES);
@@ -386,7 +386,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDb(HISTORYDB);)
+                        if(!this.addDb(HISTORYDB))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +HISTORYDB, this, this.METHOD_ADD_DATABASES);
@@ -405,7 +405,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDb(STATICPAGESDB);)
+                        if(!this.addDb(STATICPAGESDB))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +STATICPAGESDB, this, this.METHOD_ADD_DATABASES);
@@ -424,7 +424,7 @@ this.logDbInitInfo= new LogDbInitInfo();
 ;
     
 
-                        if(!this.addDb(LOGDB);)
+                        if(!this.addDb(LOGDB))
                         
                                     {
                                     this.logUtil!.putF(this.UNABLE_TO_CREATE_DATABASE +LOGDB, this, this.METHOD_ADD_DATABASES);

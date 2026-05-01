@@ -436,7 +436,7 @@ var list = list
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-rtsLayer= list.get(index); as RTSLayer;
+rtsLayer= list.get(index) as RTSLayer;
     
 rtsLayer!.setDestroyed(true);
     

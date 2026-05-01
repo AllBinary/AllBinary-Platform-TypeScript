@@ -63,7 +63,7 @@ export class Advertisements
     public addPage(advertisementProcessorInterface: AdvertisementProcessorInterface){
 var advertisementProcessorInterface = advertisementProcessorInterface
 
-                        if(!this.pageList!.contains(advertisementProcessorInterface);)
+                        if(!this.pageList!.contains(advertisementProcessorInterface))
                         
                                     {
                                     this.pageList!.add(advertisementProcessorInterface);
@@ -156,7 +156,7 @@ advertisementProcessorInterface!.stop();
     public addBanner(advertisementProcessorInterface: AdvertisementProcessorInterface){
 var advertisementProcessorInterface = advertisementProcessorInterface
 
-                        if(!this.bannerList!.contains(advertisementProcessorInterface);)
+                        if(!this.bannerList!.contains(advertisementProcessorInterface))
                         
                                     {
                                     this.bannerList!.add(advertisementProcessorInterface);

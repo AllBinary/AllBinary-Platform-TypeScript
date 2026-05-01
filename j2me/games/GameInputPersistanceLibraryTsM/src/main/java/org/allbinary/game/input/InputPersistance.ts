@@ -401,7 +401,7 @@ index < size; index++)
         {
 gameActionInput= inputObjectArray[index]! as Input;
     
-list= hashtable.get(inputObjectArray[index]! as Object); as BasicArrayList;
+list= hashtable.get(inputObjectArray[index]! as Object) as BasicArrayList;
     
 
 

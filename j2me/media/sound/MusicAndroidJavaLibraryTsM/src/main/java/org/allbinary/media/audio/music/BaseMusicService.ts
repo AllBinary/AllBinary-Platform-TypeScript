@@ -6,7 +6,7 @@
 
             import { System } from "../../../../../java/lang/System";
         
-            import { Integer } from "../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../../../java/lang/Runnable.js";
         

@@ -153,7 +153,7 @@ openGLESImage!.openGLESImageProperties!.angle= totalAngle;
     var swtImage: SwtMutableImage = image as SwtMutableImage;
 ;
     
-copySwtImage= swtImage!.getImage(); as org.eclipse.swt.graphics.Image;
+copySwtImage= swtImage!.getImage() as org.eclipse.swt.graphics.Image;
     
 gc= swtImage!.getGc();
     

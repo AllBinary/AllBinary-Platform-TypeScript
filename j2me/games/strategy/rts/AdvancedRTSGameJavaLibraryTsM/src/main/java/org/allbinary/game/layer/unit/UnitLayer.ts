@@ -532,9 +532,9 @@ this.damageFloaters= new DamageFloaters();
 
                         }
                             
-this.decalAnimation= decalAnimationInterfaceFactoryInterface!.getInstance(0); as RotationAnimation;
+this.decalAnimation= decalAnimationInterfaceFactoryInterface!.getInstance(0) as RotationAnimation;
     
-this.initResourceAnimation= resourceAnimationInterfaceFactoryInterface!.getInstance(0); as RotationAnimation;
+this.initResourceAnimation= resourceAnimationInterfaceFactoryInterface!.getInstance(0) as RotationAnimation;
     
 this.initResourceAnimation!.setFrameByDirection(direction);
     
@@ -749,7 +749,7 @@ index2 >= firstRow; index2--)
 ;
     
 
-                        if(!this.sensorGeographicMapCellPositionList!.contains(geographicMapCellPosition);)
+                        if(!this.sensorGeographicMapCellPositionList!.contains(geographicMapCellPosition))
                         
                                     {
                                     this.sensorGeographicMapCellPositionList!.add(geographicMapCellPosition);
@@ -993,7 +993,7 @@ this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime();));
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(!this.getHealthInterface()!.isAlive();)
+                        if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     
@@ -1013,7 +1013,7 @@ this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime();));
                         
                                     {
                                     
-                        if(!this.getHealthInterface()!.isAlive();)
+                        if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     this.setDestroyed(true);
@@ -1094,7 +1094,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 ;
     
 
-                        if(!raceTrackGeographicMap!.isValid(geographicMapCellPosition);)
+                        if(!raceTrackGeographicMap!.isValid(geographicMapCellPosition))
                         
                                     {
                                     
@@ -1167,7 +1167,7 @@ this.rotationAnimationInterfaceP!.nextRotation();
 ;
     
 
-                        if(!velocityProperties!.isOverXYMaxForwardVelocity();)
+                        if(!velocityProperties!.isOverXYMaxForwardVelocity())
                         
                                     {
                                     this.accelerate(this.decelerationBasicDecimal);
@@ -1184,7 +1184,7 @@ this.rotationAnimationInterfaceP!.nextRotation();
 ;
     
 
-                        if(!velocityProperties!.isOverXYMaxForwardVelocity();)
+                        if(!velocityProperties!.isOverXYMaxForwardVelocity())
                         
                                     {
                                     this.accelerate(this.accelerationBasicDecimal);
@@ -1718,7 +1718,7 @@ this.fireOrMove();
                                     }
                                 
                              else 
-                        if(!this.turnTo(dx, dy, targetAngle);)
+                        if(!this.turnTo(dx, dy, targetAngle))
                         
                                     {
                                     this.fireOrMove();
@@ -2019,7 +2019,7 @@ TrackingEventHandler.getInstance()!.removeListener(this);
 BuildingEventHandler.getInstance()!.removeListener(this);
     
 
-                        if(!this.getHealthInterface()!.isAlive();)
+                        if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     
@@ -2090,7 +2090,7 @@ vibration.vibrate(duration *4, 0, 0);
                 //@Throws(Error::class)
             
     public clearResourceAnimation(){
-this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0); as IndexedAnimation;
+this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
     
 }
 

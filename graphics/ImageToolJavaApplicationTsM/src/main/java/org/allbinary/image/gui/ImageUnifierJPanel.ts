@@ -293,7 +293,7 @@ this.avgRatioJTextField!.setText(averageRatioString);
 this.fudgeItJButton!.setEnabled(false);
     
 
-                        if(!this.imagesRatioUtil!.isEqual(tempBufferedImageArray, totalImages);)
+                        if(!this.imagesRatioUtil!.isEqual(tempBufferedImageArray, totalImages))
                         
                                     {
                                     

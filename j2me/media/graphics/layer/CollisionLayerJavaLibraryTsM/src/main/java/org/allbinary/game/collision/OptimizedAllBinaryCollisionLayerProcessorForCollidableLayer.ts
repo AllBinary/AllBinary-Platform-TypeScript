@@ -109,7 +109,7 @@ var startIndex = startIndex
     var index: number = startIndex +1;
 index < size; index++)
         {
-collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index); as CollidableCompositeLayer;
+collidableInterfaceCompositeInterface2= layerManager!.getLayerAt(index) as CollidableCompositeLayer;
     
 collidableBase2= collidableInterfaceCompositeInterface2!.getCollidableInferface();
     

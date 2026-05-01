@@ -368,7 +368,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                                     }
                                 
 
-                        if(!this.getHealthInterface()!.isAlive();)
+                        if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     
@@ -388,7 +388,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-                        if(!this.getHealthInterface()!.isAlive();)
+                        if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     this.setDestroyed(true);
@@ -612,7 +612,7 @@ index2 >= 0; index2--)
         {
 pathsList= new BasicArrayListD();
     
-occupyGeographicMapCellPosition= occupyList!.get(index2); as GeographicMapCellPosition;
+occupyGeographicMapCellPosition= occupyList!.get(index2) as GeographicMapCellPosition;
     
 
 
@@ -622,7 +622,7 @@ occupyGeographicMapCellPosition= occupyList!.get(index2); as GeographicMapCellPo
     var index: number = surroundList!.size() -1;
 index >= 0; index--)
         {
-surroundGeographicMapCellPosition= surroundList!.get(index); as GeographicMapCellPosition;
+surroundGeographicMapCellPosition= surroundList!.get(index) as GeographicMapCellPosition;
     
 
                         if(geographicMapDirectionUtil!.getEightDirectionFromCellPositionToAdjacentCellPosition(surroundGeographicMapCellPosition, occupyGeographicMapCellPosition) != NO_DIRECTION)
@@ -710,7 +710,7 @@ this.damageFloaters!.add(damage);
     
 
                         if(damage > 0)
-                        this.getHealthInterface()!.damage(damage);
+                        this.getHealthInterface()!.damage(damage)
 }
 
 
@@ -787,7 +787,7 @@ TrackingEventHandler.getInstance()!.removeListener(this);
                                     }
                                 
 
-                        if(!this.getHealthInterface()!.isAlive();)
+                        if(!this.getHealthInterface()!.isAlive())
                         
                                     {
                                     

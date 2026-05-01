@@ -193,7 +193,7 @@ mimeBodyParts[0]= new MimeBodyPart();
 mimeBodyParts[0]!.setText(textBody);
     
 
-                        if(!stringValidationUtil!.isEmpty(htmlAttachment);)
+                        if(!stringValidationUtil!.isEmpty(htmlAttachment))
                         
                                     {
                                     
@@ -203,7 +203,7 @@ mimeBodyParts[0]!.setText(textBody);
 internetHeaders!.addHeader("Content-Type", "text/html");
     
 
-                        if(!stringValidationUtil!.isEmpty(contentBase);)
+                        if(!stringValidationUtil!.isEmpty(contentBase))
                         
                                     {
                                     internetHeaders!.addHeader("Content-Base", contentBase);

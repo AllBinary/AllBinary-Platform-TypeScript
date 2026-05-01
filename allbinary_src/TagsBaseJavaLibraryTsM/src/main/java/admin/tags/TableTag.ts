@@ -117,7 +117,7 @@ this.enabled= enabled;
             
     public isEnabled(): boolean{
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(this.enabled);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(this.enabled))
                         
                                     {
                                     

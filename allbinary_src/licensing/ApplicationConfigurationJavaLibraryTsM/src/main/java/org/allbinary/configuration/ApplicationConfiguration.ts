@@ -354,7 +354,7 @@ var gameFeature = gameFeature
                         
                                     {
                                     
-                        if(!this.isFullscreen();)
+                        if(!this.isFullscreen())
                         
                                     {
                                     this.setFullscreen(true);

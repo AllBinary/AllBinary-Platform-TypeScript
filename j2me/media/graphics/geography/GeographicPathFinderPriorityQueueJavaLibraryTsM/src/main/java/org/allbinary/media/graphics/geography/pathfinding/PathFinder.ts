@@ -501,7 +501,7 @@ calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.
 neighbor.parent= current;
     
 
-                        if(!this.openPriorityQueue!.contains(neighbor);)
+                        if(!this.openPriorityQueue!.contains(neighbor))
                         
                                     {
                                     
@@ -528,7 +528,7 @@ neighbor.parent= current;
 
 }
 
-        while(!this.openPriorityQueue!.isEmpty();)
+        while(!this.openPriorityQueue!.isEmpty())
     
 
 
@@ -721,7 +721,7 @@ calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.
 neighbor.parent= current;
     
 
-                        if(!this.openPriorityQueue!.contains(neighbor);)
+                        if(!this.openPriorityQueue!.contains(neighbor))
                         
                                     {
                                     
@@ -763,7 +763,7 @@ total++;
                                 
 }
 
-        while(!this.openPriorityQueue!.isEmpty();)
+        while(!this.openPriorityQueue!.isEmpty())
     
 
 

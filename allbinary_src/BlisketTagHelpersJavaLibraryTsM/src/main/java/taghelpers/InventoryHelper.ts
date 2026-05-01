@@ -115,9 +115,9 @@ public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageConte
             super();
         var propertiesHashMap = propertiesHashMap
 var pageContext = pageContext
-this.response= pageContext!.getResponse(); as HttpServletResponse;
+this.response= pageContext!.getResponse() as HttpServletResponse;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request= pageContext!.getRequest() as HttpServletRequest;
     
 
     var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;

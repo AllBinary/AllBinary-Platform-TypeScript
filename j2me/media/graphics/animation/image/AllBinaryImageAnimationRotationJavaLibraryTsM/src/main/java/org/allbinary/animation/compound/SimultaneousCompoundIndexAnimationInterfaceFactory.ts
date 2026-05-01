@@ -95,7 +95,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     var index: number = 0;
 index < size; index++)
         {
-animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId); as IndexedAnimation;
+animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArray[index]!.getInstance(instanceId) as IndexedAnimation;
     
 }
 

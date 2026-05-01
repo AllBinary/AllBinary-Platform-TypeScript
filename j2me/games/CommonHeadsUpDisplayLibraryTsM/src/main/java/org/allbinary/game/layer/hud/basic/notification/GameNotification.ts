@@ -81,7 +81,7 @@ var string = string
 var seconds = seconds
 var basicColor = basicColor
 
-                        if(!this.stringList!.contains(string);)
+                        if(!this.stringList!.contains(string))
                         
                                     {
                                     this.stringList!.add(string);

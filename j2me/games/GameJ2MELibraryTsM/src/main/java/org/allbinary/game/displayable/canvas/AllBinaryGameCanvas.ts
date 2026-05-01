@@ -22,7 +22,7 @@
         
             import { Integer } from "../../../../../java/lang/Integer.js";
         
-            import { Integer } from "../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../../../java/lang/Runnable.js";
         
@@ -780,7 +780,7 @@ super.processSleep();
                         
                                     {
                                     
-                        if(!this.primaryPlayerQueue!.process();)
+                        if(!this.primaryPlayerQueue!.process())
                         
                                     {
                                     this.secondaryPlayerQueue!.process();
@@ -1963,7 +1963,7 @@ this.updateColor();
 this.getStartIntermissionPaintable()!.update();
     
 
-                        if(!this.isRunningInAnotherThread();)
+                        if(!this.isRunningInAnotherThread())
                         
                                     {
                                     
@@ -2050,7 +2050,7 @@ PreLogUtil.put(new StringMaker().
     var index: number = this.localPlayerGameInputList!.size() -1;
 index >= 0; index--)
         {
-playerGameInput= this.localPlayerGameInputList!.get(index); as PlayerGameInput;
+playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
 PreLogUtil.put(new StringMaker().
                             append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME);
@@ -2365,7 +2365,7 @@ super.process();
                         
                                     {
                                     
-                        if(!this.primaryPlayerQueue!.process();)
+                        if(!this.primaryPlayerQueue!.process())
                         
                                     {
                                     this.secondaryPlayerQueue!.process();
@@ -2973,7 +2973,7 @@ this.highScoresPaintable= highScoresPaintable;
     var index: number = this.localPlayerGameInputList!.size() -1;
 index >= 0; index--)
         {
-playerGameInput= this.localPlayerGameInputList!.get(index); as PlayerGameInput;
+playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
 this.gameKeyEventHandler!.removeListener(playerGameInput);
     

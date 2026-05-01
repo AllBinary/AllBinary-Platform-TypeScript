@@ -112,13 +112,13 @@ var directory = directory
 ;
     
 
-                        if(!directoryFile!.isDirectory();)
+                        if(!directoryFile!.isDirectory())
                         
                                     {
                                     PreLogUtil.put("Creating Directories: " +directory, this, "create");
     
 
-                        if(!directoryFile!.mkdirs();)
+                        if(!directoryFile!.mkdirs())
                         
                                     {
                                     

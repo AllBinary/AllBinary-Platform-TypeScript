@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { CaptureWorkerInterface } from "../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js";
 
@@ -151,7 +151,7 @@ this.running= running;
 
     startDataWorkers(){
 
-                        if(!isAnyDataWorkerRunning();)
+                        if(!isAnyDataWorkerRunning())
                         
                                     {
                                     this.captureThread= new Thread(this.getCaptureWorker());

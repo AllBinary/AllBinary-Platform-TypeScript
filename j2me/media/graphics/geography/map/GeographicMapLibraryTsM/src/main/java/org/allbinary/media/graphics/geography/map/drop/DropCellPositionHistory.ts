@@ -217,7 +217,7 @@ index >= 0; index--)
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-cellPosition= list.get(index); as CellPosition;
+cellPosition= list.get(index) as CellPosition;
     
 
                         if(this.isCellPositionWithDrop(cellPosition))

@@ -20,7 +20,7 @@
 
             import { Long } from "../../../../../../java/lang/Long.js";
         
-            import { Integer } from "../../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../../java/lang/Thread.js";
         
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
 

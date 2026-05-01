@@ -224,7 +224,7 @@ super.processKeyAI(Canvas.KEY_NUM1);
     var index: number = 0;
 index < size; index++)
         {
-lastTrackingEvent= this.trackingList!.get(0); as TrackingEvent;
+lastTrackingEvent= this.trackingList!.get(0) as TrackingEvent;
     
 lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
     
@@ -260,7 +260,7 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                         if(absXDistance < getFiringDistance() /2)
                         
                                     {
-                                    directionCompositeInterface= this.getOwnerLayerInterface(); as DirectionCompositeInterface;
+                                    directionCompositeInterface= this.getOwnerLayerInterface() as DirectionCompositeInterface;
     
 
                         if(xDistance < 0 && directionCompositeInterface!.getDirection() == directionFactory!.RIGHT)

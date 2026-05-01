@@ -116,7 +116,7 @@ private constructor (){
     public addListener(terrainEventListener: TerrainEventListener){
     //var terrainEventListener = terrainEventListener
 
-                        if(!this.list.contains(terrainEventListener);)
+                        if(!this.list.contains(terrainEventListener))
                         
                                     {
                                     this.list.add(terrainEventListener);

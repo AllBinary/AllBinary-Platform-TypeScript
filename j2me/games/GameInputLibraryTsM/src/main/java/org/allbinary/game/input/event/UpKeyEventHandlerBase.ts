@@ -82,7 +82,7 @@ export class UpKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!this.list.contains(playerGameInput);)
+                        if(!this.list.contains(playerGameInput))
                         
                                     {
                                     this.list.add(playerGameInput);
@@ -163,7 +163,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     

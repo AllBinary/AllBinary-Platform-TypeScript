@@ -208,7 +208,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
                         
                                     {
                                     this.keyActionScriptInputInterface!.setInputRobotInterface(InputRobotFactory.getInstance()!.get(selectedItem));
@@ -229,7 +229,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
                         
                                     {
                                     

@@ -40,7 +40,7 @@ import { AdminConfigurationRequestHelperFactory } from "../../admin/taghelpers/A
 
 
 
-                                                                                                       
+
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 import { TableTag } from "./TableTag.js";

@@ -371,7 +371,7 @@ var itemLabel = itemLabel
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-name= this.enumerationUtil!.nextElement(enumeration)!; as string;
+name= this.enumerationUtil!.nextElement(enumeration)! as string;
     
 
                         if(itemLabel!.localeCompare(name) == 0)
@@ -439,7 +439,7 @@ index < size; index++)
         {
 anyType= objectArray[index]! as Object;
     
-basicArrayList= hashtable.get(anyType as Object); as BasicArrayList;
+basicArrayList= hashtable.get(anyType as Object) as BasicArrayList;
     
 this.updateExclusiveList(gameFeature, basicArrayList);
     

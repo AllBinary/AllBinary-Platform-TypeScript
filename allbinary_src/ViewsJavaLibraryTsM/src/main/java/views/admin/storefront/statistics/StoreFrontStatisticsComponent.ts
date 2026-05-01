@@ -76,7 +76,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.newStoreFrontInterface= StoreFrontFactory.getInstance(transformInfoInterface!.getStoreName()); as StoreFrontInterface;
+this.newStoreFrontInterface= StoreFrontFactory.getInstance(transformInfoInterface!.getStoreName()) as StoreFrontInterface;
     
 this.domNodeInterface= new RealTimeStoreFrontStatisticsView(new RealTimeStoreFrontStatistics(this.newStoreFrontInterface), this.getWeblisketSession()!.getRole());
     

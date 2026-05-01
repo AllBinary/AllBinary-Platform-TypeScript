@@ -72,7 +72,7 @@ this.layerInterface= layerInterface;
     var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;
 ;
     
-this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties(); as VelocityInterface;
+this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties() as VelocityInterface;
     
 }
 
@@ -100,28 +100,28 @@ this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperti
     public minX(){
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() < 0)
-                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiplyint( -1);
+                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiplyint( -1)
 }
 
 
     public maxX(){
 
                         if(this.velocityInterface!.getVelocityXBasicDecimalP()!.getUnscaled() > 0)
-                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiplyint( -1);
+                        this.velocityInterface!.getVelocityXBasicDecimalP()!.multiplyint( -1)
 }
 
 
     public minY(){
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() < 0)
-                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiplyint( -1);
+                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiplyint( -1)
 }
 
 
     public maxY(){
 
                         if(this.velocityInterface!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
-                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiplyint( -1);
+                        this.velocityInterface!.getVelocityYBasicDecimalP()!.multiplyint( -1)
 }
 
 

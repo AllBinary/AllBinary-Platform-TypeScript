@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../java/lang/Thread.js";
         
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
@@ -552,7 +552,7 @@ var unconditional = unconditional
 gameAdState!.getAdvertisements()!.stopAll();
     
 
-                        if(!this.isDestroyed();)
+                        if(!this.isDestroyed())
                         
                                     {
                                     this.stopGameCanvasRunnableInterface();

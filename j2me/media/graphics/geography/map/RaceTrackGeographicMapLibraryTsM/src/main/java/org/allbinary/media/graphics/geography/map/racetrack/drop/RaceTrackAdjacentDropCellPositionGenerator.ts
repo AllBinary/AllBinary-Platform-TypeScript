@@ -182,10 +182,10 @@ this.surroundingCellPositions[3]= geographicMapCellPositionFactory!.getAt(column
         {
 geographicMapCellPosition= this.surroundingCellPositions[index]!;
     
-raceTrackGeographicMapCellType= raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition); as RaceTrackGeographicMapCellType;
+raceTrackGeographicMapCellType= raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition) as RaceTrackGeographicMapCellType;
     
 
-                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(raceTrackGeographicMapCellType);)
+                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(raceTrackGeographicMapCellType))
                         
                                     {
                                     nonRoadGeographicMapCellPosition= geographicMapCellPosition;
@@ -256,7 +256,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
 ;
     
 
-                        if(!dropCellPositionHistory!.isCellPositionWithDrop(geographicMapCellPosition);)
+                        if(!dropCellPositionHistory!.isCellPositionWithDrop(geographicMapCellPosition))
                         
                                     {
                                     

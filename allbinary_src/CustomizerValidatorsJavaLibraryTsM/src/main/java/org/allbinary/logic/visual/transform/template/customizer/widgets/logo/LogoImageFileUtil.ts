@@ -96,7 +96,7 @@ this.imageFileAbPath= imageAbPath;
                                     }
                                 
 
-                        if(!this.directory.create(this.imageFileAbPath);)
+                        if(!this.directory.create(this.imageFileAbPath))
                         
                                     {
                                     

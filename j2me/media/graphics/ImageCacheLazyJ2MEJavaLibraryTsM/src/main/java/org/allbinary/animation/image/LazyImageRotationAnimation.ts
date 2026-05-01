@@ -138,7 +138,7 @@ imageCache!.add(this);
     
 this.scaleProperties= scaleProperties;
     
-this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0); as IndexedAnimation;
+this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
     
 this.animation= new RotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior)
                                 {
@@ -224,7 +224,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     
 this.animationInterfaceFactoryInterface!.setInitialScale(this.scaleProperties);
     
-this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId); as IndexedAnimation;
+this.animation= this.animationInterfaceFactoryInterface!.getInstance(this.instanceId) as IndexedAnimation;
     
 this.animation.setState(animation);
     

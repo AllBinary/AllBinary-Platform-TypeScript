@@ -408,7 +408,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 ;
     
 
-                        if(!this.directory.create(staticPath);)
+                        if(!this.directory.create(staticPath))
                         
                                     {
                                     
@@ -658,7 +658,7 @@ stringBuffer!.append("<br />");
     var index: number = 0;
 index < size; index++)
         {
-storeName= storeFrontVector!.get(index); as string;
+storeName= storeFrontVector!.get(index) as string;
     
 this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));
     

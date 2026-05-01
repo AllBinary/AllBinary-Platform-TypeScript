@@ -166,7 +166,7 @@ var command = command
     public addCommand(command: Command){
 var command = command
 
-                        if(!this.commandStack!.contains(command);)
+                        if(!this.commandStack!.contains(command))
                         
                                     {
                                     this.commandStack!.push(command);

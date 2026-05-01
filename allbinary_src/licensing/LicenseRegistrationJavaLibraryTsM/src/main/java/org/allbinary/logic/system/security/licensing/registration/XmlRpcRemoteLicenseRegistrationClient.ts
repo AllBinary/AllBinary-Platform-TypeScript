@@ -172,7 +172,7 @@ isOnline= true;
 this.logUtil!.putF(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET);
     
 
-                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);)
+                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
                         
                                     {
                                     

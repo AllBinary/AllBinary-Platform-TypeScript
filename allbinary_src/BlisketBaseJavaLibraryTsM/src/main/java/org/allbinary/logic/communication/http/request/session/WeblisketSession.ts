@@ -331,7 +331,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(basketName);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(basketName))
                         
                                     {
                                     
@@ -421,7 +421,7 @@ this.session.removeAttribute(UserData.USERNAME);
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(basketName);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(basketName))
                         
                                     {
                                     this.session.removeAttribute(basketName);

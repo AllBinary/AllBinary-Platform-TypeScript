@@ -221,7 +221,7 @@ var max = max
                                     }
                                 
 
-                        if(!this.isNumber(value);)
+                        if(!this.isNumber(value))
                         
                                     {
                                     
@@ -301,7 +301,7 @@ var max = max
                                     }
                                 
 
-                        if(!this.isNumber(value);)
+                        if(!this.isNumber(value))
                         
                                     {
                                     

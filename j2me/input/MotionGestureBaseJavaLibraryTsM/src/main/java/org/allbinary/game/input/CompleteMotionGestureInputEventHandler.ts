@@ -89,7 +89,7 @@ private constructor (){
     public addListener(completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener){
 var completeMotionGestureInputEventListener = completeMotionGestureInputEventListener
 
-                        if(!this.list.contains(completeMotionGestureInputEventListener);)
+                        if(!this.list.contains(completeMotionGestureInputEventListener))
                         
                                     {
                                     this.list.add(completeMotionGestureInputEventListener);

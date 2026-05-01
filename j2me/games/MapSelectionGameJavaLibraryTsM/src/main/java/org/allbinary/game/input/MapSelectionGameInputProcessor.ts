@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../java/lang/Thread.js";
         
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
@@ -249,7 +249,7 @@ break;
                         
                                     {
                                     
-                        if(!abRunnable!.isRunning();)
+                        if(!abRunnable!.isRunning())
                         
                                     {
                                     abRunnable!.setRunning(true);

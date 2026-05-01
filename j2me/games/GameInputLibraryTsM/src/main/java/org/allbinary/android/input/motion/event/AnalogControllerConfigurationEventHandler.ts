@@ -87,7 +87,7 @@ private constructor (){
     public addListener(analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface){
 var analogControllerConfigurationEventListenerInterface = analogControllerConfigurationEventListenerInterface
 
-                        if(!this.list.contains(analogControllerConfigurationEventListenerInterface);)
+                        if(!this.list.contains(analogControllerConfigurationEventListenerInterface))
                         
                                     {
                                     this.list.add(analogControllerConfigurationEventListenerInterface);

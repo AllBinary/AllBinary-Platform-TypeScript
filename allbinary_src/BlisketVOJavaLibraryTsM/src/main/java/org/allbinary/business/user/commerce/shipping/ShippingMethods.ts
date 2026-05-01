@@ -115,7 +115,7 @@ var name = name
     var index: number = 0;
 index < size; index++)
         {
-shipping= this.shippingVector!.get(index); as ShippingInterface;
+shipping= this.shippingVector!.get(index) as ShippingInterface;
     
 
                         if(name.localeCompare(shipping.getName()) == 0)

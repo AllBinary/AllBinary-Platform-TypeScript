@@ -303,7 +303,7 @@ lineNumberReader= new LineNumberReader(pciFile);
 ;
     
 
-                        if(!fileVector!.isEmpty();)
+                        if(!fileVector!.isEmpty())
                         
                                     {
                                     
@@ -464,7 +464,7 @@ lineNumberReader!.close();
                         if(lineNumberReader != 
                                     null
                                 )
-                        lineNumberReader!.close();
+                        lineNumberReader!.close()
 
          }
         

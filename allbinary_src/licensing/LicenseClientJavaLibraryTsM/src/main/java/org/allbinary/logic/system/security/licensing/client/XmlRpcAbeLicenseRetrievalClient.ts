@@ -151,7 +151,7 @@ this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
 ;
     
 
-                        if(!AbeClientLicense.hasRequiredKeys(resultHashtable);)
+                        if(!AbeClientLicense.hasRequiredKeys(resultHashtable))
                         
                                     {
                                     this.logUtil!.putF(INVALID, this, commonStrings!.GET);
@@ -188,7 +188,7 @@ this.logUtil!.put(EXCEPTION_IN_CLIENT, this, commonStrings!.GET, e);
 this.logUtil!.putF(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET);
     
 
-                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);)
+                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
                         
                                     {
                                     

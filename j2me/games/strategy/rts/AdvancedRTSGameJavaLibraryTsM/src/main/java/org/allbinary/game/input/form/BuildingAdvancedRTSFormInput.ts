@@ -192,7 +192,7 @@ var layerInterface = layerInterface
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.atLeastOneHouseGameNotificationEvent);

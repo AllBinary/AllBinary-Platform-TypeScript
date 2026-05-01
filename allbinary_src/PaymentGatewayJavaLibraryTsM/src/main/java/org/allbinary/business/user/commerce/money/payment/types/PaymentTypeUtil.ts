@@ -299,7 +299,7 @@ index < nodeList!.getLength(); index++)
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(defaultPaymentGatewayNodeValue);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(defaultPaymentGatewayNodeValue))
                         
                                     {
                                     this.defaultName= defaultPaymentGatewayNodeValue;
@@ -331,7 +331,7 @@ var storeName = storeName
 this.initDefault(storeName);
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(this.defaultName))
                         
                                     {
                                     
@@ -385,8 +385,8 @@ i < size; i++)
 ;
     
 
-                        if(!a_PaymentTypeVector!.contains(paymentType);)
-                        diff.add(paymentType);
+                        if(!a_PaymentTypeVector!.contains(paymentType))
+                        diff.add(paymentType)
 }
 
 

@@ -100,7 +100,7 @@ this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
 this.costY1= (y +((this.weaponProperties!.length +1) *charHeight));
     
 
-                        if(!AndroidUtil.isAndroid();)
+                        if(!AndroidUtil.isAndroid())
                         
                                     {
                                     this.costY= this.costY1;

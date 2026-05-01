@@ -182,7 +182,7 @@ index < size; index++)
                                 
 
                         if(!isTooSmall && !isAreaTooSmall && !isTooBig && isValid)
-                        vector.add(motionRectangle);
+                        vector.add(motionRectangle)
 }
 
 this.setVector(vector);

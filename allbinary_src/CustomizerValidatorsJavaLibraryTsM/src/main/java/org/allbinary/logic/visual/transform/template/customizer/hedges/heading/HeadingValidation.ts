@@ -162,7 +162,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.title.isValid().valueOf();)
+                        if(!this.title.isValid().valueOf())
                         
                                     {
                                     titleValid= Boolean.FALSE;
@@ -171,7 +171,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.logo.isValid().valueOf();)
+                        if(!this.logo.isValid().valueOf())
                         
                                     {
                                     logoValid= Boolean.FALSE;
@@ -253,7 +253,7 @@ this.logo= new LogoValidation(hashMap);
 ;
     
 
-                        if(!this.title.isValid().valueOf();)
+                        if(!this.title.isValid().valueOf())
                         
                                     {
                                     titleValid= Boolean.FALSE;
@@ -262,7 +262,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!this.logo.isValid().valueOf();)
+                        if(!this.logo.isValid().valueOf())
                         
                                     {
                                     logoValid= Boolean.FALSE;
@@ -280,7 +280,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!valid.valueOf();)
+                        if(!valid.valueOf())
                         
                                     {
                                     stringBuffer!.append("Include a title and/or logo for the header.");

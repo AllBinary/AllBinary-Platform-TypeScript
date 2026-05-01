@@ -275,7 +275,7 @@ this.list.clear();
         //mutex.withLock
         
 
-                        if(!this.runnableList!.contains(runnable);)
+                        if(!this.runnableList!.contains(runnable))
                         
                                     {
                                     this.runnableList!.add(runnable);
@@ -314,7 +314,7 @@ this.displayInfoSingleton!.add(this.canvasStrings!.SCALED_IMAGES);
     var index: number = 0;
 index < size; index++)
         {
-runnable= this.runnableList!.get(index); as Runnable;
+runnable= this.runnableList!.get(index) as Runnable;
     
 runnable.run();
     

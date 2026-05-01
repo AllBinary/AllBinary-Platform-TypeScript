@@ -491,7 +491,7 @@ var actionEvent = actionEvent
                         
                                     {
                                     
-                        if(this.getParent(); is ProfileActionScriptNodeInterface)
+                        if(this.getParent() is ProfileActionScriptNodeInterface)
                         
                                     {
                                     
@@ -639,7 +639,7 @@ index < size; index++)
 ;
     
 
-                        if(!profileActionScriptConditionInterface!.shouldProcess(frame);)
+                        if(!profileActionScriptConditionInterface!.shouldProcess(frame))
                         
                                     {
                                     

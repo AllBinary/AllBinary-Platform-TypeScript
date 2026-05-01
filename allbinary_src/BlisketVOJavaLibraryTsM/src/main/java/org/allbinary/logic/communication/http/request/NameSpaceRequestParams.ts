@@ -886,7 +886,7 @@ i < keySize; i++)
                                     }
                                 
 
-                        if(this.getMap()!.get(key); is String)
+                        if(this.getMap()!.get(key) is String)
                         
                                     {
                                     
@@ -929,7 +929,7 @@ hashMap!.put(key.toCharArray()
                                     }
                                 
                              else 
-                        if(this.getMap()!.get(key); is )
+                        if(this.getMap()!.get(key) is )
                         
                                     {
                                     

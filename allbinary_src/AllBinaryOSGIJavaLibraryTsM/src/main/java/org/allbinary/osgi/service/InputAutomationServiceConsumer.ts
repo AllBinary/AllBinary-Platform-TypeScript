@@ -118,10 +118,10 @@ this.logUtil!.putF("Processing " +vector.length +" Services", this, commonString
     var index: number = 0;
 index < size; index++)
         {
-osgiServiceInterface= vector.get(index); as OSGIServiceInterface;
+osgiServiceInterface= vector.get(index) as OSGIServiceInterface;
     
 
-                        if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface);)
+                        if(!getOsgiServiceVisitorInterface()!.visit(osgiServiceInterface))
                         
                                     {
                                     

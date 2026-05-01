@@ -225,7 +225,7 @@ i < size; i++)
 ;
     
 
-                        if(!sqlConnection!.isClosed();)
+                        if(!sqlConnection!.isClosed())
                         
                                     {
                                     connectionVector!.remove(sqlConnection);
@@ -305,7 +305,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
 var url = url
 var sqlConnection = sqlConnection
 
-                        if(!sqlConnection!.isClosed();)
+                        if(!sqlConnection!.isClosed())
                         
                                     {
                                     
@@ -328,7 +328,7 @@ connectionVector!.add(sqlConnection);
                                     }
                                 
                         else {
-                            connectionVector= this.connectionHashMap!.get(url as Object); as Vector;
+                            connectionVector= this.connectionHashMap!.get(url as Object) as Vector;
     
 
                         if(connectionVector == 

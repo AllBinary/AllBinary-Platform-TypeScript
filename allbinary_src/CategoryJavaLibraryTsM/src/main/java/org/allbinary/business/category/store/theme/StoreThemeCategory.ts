@@ -219,7 +219,7 @@ this.themeVector!.add(themeValidation);
             
     public isValid(): Boolean{
 
-                        if(!super.isValid().valueOf();)
+                        if(!super.isValid().valueOf())
                         
                                     {
                                     

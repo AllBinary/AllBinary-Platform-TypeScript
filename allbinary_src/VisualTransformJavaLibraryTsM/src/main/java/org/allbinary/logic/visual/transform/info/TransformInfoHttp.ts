@@ -251,7 +251,7 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT) as string);
                         }
                             
 
-                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string);)
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string))
                         
                                     {
                                     this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string);

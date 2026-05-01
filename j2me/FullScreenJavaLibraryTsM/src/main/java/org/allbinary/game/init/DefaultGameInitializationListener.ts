@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../java/lang/Thread.js";
         
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
@@ -115,7 +115,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             this.logUtil!.putF(commonStrings!.START, this, ON_GAME_INITIALIZED);
     
 
-        while(!this.swtJOGLProcessor!.isHolderCreated();)
+        while(!this.swtJOGLProcessor!.isHolderCreated())
         {
 this.logUtil!.putF(commonStrings!.UPDATE, this, ON_GAME_INITIALIZED);
     

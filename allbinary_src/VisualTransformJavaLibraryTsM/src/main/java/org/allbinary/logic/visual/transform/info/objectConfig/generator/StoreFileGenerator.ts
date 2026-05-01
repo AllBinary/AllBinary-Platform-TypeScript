@@ -256,7 +256,7 @@ var input = input
                                     }
                                 
 
-                        if(!this.file.exists();)
+                        if(!this.file.exists())
                         
                                     {
                                     this.file.createNewFile();

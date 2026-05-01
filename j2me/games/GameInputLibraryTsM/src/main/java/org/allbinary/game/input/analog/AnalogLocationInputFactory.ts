@@ -65,7 +65,7 @@ var playerInputId = playerInputId
                         if(playerInputId < this.list.size())
                         
                                     {
-                                    analogLocationInput= this.list.get(playerInputId); as AnalogLocationInput;
+                                    analogLocationInput= this.list.get(playerInputId) as AnalogLocationInput;
     
 
                                     }

@@ -372,7 +372,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                         
                                     {
                                     
-                        if(!this.addItemToBasket();)
+                        if(!this.addItemToBasket())
                         
                                     {
                                     this.pageContext!.getOut()!.println("Item is not currently being sold.<p/>");

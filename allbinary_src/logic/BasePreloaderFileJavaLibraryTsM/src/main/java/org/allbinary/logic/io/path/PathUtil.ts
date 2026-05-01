@@ -336,7 +336,7 @@ var path = path
     public adjustStart(path: string): string{
 var path = path
 
-                        if(!this.isValidStart(path);)
+                        if(!this.isValidStart(path))
                         
                                     {
                                     path= this.abPathData!.SEPARATOR +path;
@@ -356,7 +356,7 @@ var path = path
     public adjustEnd(path: string): string{
 var path = path
 
-                        if(!this.isValidEnd(path);)
+                        if(!this.isValidEnd(path))
                         
                                     {
                                     path= path +this.abPathData!.SEPARATOR;

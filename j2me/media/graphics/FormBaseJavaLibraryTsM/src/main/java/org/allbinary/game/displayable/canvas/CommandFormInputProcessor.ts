@@ -448,7 +448,7 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-                        if(!this.doubleClickTimeHelper!.isTimeTNT();)
+                        if(!this.doubleClickTimeHelper!.isTimeTNT())
                         
                                     {
                                     this.logUtil!.putF("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT);

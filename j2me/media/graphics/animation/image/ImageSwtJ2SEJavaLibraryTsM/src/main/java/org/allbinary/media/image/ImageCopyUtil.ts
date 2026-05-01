@@ -170,7 +170,7 @@ image= this.openGLUtil!.add(image);
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -260,7 +260,7 @@ image= this.openGLUtil!.add(image);
 ;
     
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -409,7 +409,7 @@ image= this.openGLUtil!.add(image);
 ;
     
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -654,7 +654,7 @@ image= this.openGLUtil!.add(image);
     //var canvasScale = canvasScale
     //var resize = resize
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);

@@ -172,7 +172,7 @@ var gl = gl
     initTexture(gl: GL10): boolean{
 var gl = gl
 
-                        if(!OpenGLESImage.texture2dList!.contains(this);)
+                        if(!OpenGLESImage.texture2dList!.contains(this))
                         
                                     {
                                     OpenGLESImage.texture2dList!.add(this);

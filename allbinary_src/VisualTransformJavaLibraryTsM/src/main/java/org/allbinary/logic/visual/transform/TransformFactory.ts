@@ -232,7 +232,7 @@ transformInfoInterface!.setChild();
                                     }
                                 
                         else {
-                            transformInfoInterface= TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext); as TransformInfoInterface;
+                            transformInfoInterface= TransformInfoHttpFactory.getInstance(propertiesHashMap, pageContext) as TransformInfoInterface;
     
 
                         }

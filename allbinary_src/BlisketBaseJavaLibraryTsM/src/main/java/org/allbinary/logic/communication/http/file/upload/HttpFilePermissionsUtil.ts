@@ -69,7 +69,7 @@ var path = path
 ;
     
 
-                        if(!file.isFile();)
+                        if(!file.isFile())
                         
                                     {
                                     file.createNewFile();

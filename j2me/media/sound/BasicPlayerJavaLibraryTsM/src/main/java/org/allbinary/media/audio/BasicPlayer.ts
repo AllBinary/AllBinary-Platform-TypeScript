@@ -128,7 +128,7 @@ var controlType = controlType
     public addPlayerListener(playerListener: PlayerListener){
 var playerListener = playerListener
 
-                        if(!this.listenersList!.contains(playerListener);)
+                        if(!this.listenersList!.contains(playerListener))
                         
                                     {
                                     this.listenersList!.add(playerListener);

@@ -235,7 +235,7 @@ this.save(abeClientInformation);
     var index: number = 0;
 index < size; index++)
         {
-gameConfigurationTextInput= hashtable.get(objectArray[index]! as Object); as GameConfigurationTextInput;
+gameConfigurationTextInput= hashtable.get(objectArray[index]! as Object) as GameConfigurationTextInput;
     
 textField= new TextField(gameConfigurationTextInput!.getLabel(), gameConfigurationTextInput!.getText(), 30, TextField.ANY);
     

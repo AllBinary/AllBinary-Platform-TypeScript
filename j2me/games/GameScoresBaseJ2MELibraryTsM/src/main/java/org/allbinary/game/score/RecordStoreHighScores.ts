@@ -648,7 +648,7 @@ var newHighScore = newHighScore
 
         try {
             
-                        if(!this.isTooManyHighScores();)
+                        if(!this.isTooManyHighScores())
                         
                                     {
                                     this.logUtil!.putF("Slot Available for a High Score", this, "isBestScore");

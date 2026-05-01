@@ -277,7 +277,7 @@ this.line.setP2(current);
                                     {
                                     diagonalToleranceHigher= (90 -conf.getDiagonalTolerance());
     
-diagonalToleranceLower= conf.getDiagonalTolerance();;
+diagonalToleranceLower= conf.getDiagonalTolerance();
     
 
                                     }

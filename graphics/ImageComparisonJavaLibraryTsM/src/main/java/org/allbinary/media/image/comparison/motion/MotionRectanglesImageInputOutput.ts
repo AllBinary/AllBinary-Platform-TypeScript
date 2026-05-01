@@ -151,14 +151,14 @@ var frame = frame
 this.save(motionRectangles, frame);
     
 motionRectanglesResultsFrameCacheable= 
-                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
+                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
 this.save(motionRectangles, frame);
     
 motionRectanglesResultsFrameCacheable= 
-                                    (getInstance as AutomaticCacheInterface).get(frame); as MotionRectanglesResultsFrameCacheable;
+                                    (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
     
@@ -259,7 +259,7 @@ this.logUtil!.putF("Motion Image File Path 2: " +filePathStringBuffer3!.toString
     var index: number = 0;
 index < this.NUMBER_OF_IMAGES; index++)
         {
-bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo); as BufferedImageCacheable;
+bufferedImageCacheables[index]= poolInterface!.remove(bufferedImageInfo) as BufferedImageCacheable;
     
 }
 

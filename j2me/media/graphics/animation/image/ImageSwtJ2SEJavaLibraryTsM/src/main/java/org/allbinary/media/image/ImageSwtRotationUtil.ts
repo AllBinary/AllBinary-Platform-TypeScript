@@ -100,7 +100,7 @@ private constructor (){
     //var bufferedImage = bufferedImage
     //var totalAngle = totalAngle
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);
@@ -129,7 +129,7 @@ private constructor (){
     //var gc = gc
     //var angle = angle
 
-                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION);)
+                        if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
                                     this.logUtil!.putF(this.NO_COPY, this, commonStrings!.CONSTRUCTOR);

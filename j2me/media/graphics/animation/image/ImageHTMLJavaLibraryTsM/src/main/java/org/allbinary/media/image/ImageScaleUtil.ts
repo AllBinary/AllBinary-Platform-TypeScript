@@ -177,7 +177,7 @@ var scaleY = scaleY
     var originalHTMLImage: PlaynMutableImage = originalImage as PlaynMutableImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
 
                                     }
@@ -187,7 +187,7 @@ originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     var originalHTMLImage: PlaynImmutableImage = originalImage as PlaynImmutableImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
 
                         }

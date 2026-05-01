@@ -20,7 +20,7 @@
 
             import { Integer } from "../../../../java/lang/Integer.js";
         
-            import { Integer } from "../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../java/lang/Thread.js";
         
 import { awt } from "../../../../java/awt.js";
 
@@ -181,7 +181,7 @@ this@RotationSpriteImageJPanel.getParent()!.repaint();
 ;
     
 
-                        if(!this@RotationSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected();)
+                        if(!this@RotationSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     

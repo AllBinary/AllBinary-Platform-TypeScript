@@ -139,32 +139,32 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.id= hashMap!.get(DownloadItemData.ID); as string;
+this.id= hashMap!.get(DownloadItemData.ID) as string;
     
-this.basicItemId= hashMap!.get(BasicItemData.ID); as string;
+this.basicItemId= hashMap!.get(BasicItemData.ID) as string;
     
-this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE); as string;
+this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE) as string;
     
-this.system= hashMap!.get(DownloadItemData.SYSTEM); as string;
+this.system= hashMap!.get(DownloadItemData.SYSTEM) as string;
     
-this.platform= hashMap!.get(DownloadItemData.PLATFORM); as string;
+this.platform= hashMap!.get(DownloadItemData.PLATFORM) as string;
     
-this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME); as string;
+this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME) as string;
     
-this.version= hashMap!.get(DownloadItemData.VERSION); as string;
+this.version= hashMap!.get(DownloadItemData.VERSION) as string;
     
-this.changes= hashMap!.get(DownloadItemData.CHANGES); as string;
+this.changes= hashMap!.get(DownloadItemData.CHANGES) as string;
     
-this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE); as string;
+this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE) as string;
     
-this.file= hashMap!.get(DownloadItemData.FILE); as string;
+this.file= hashMap!.get(DownloadItemData.FILE) as string;
     
 
     var value: string = hashMap!.get(DownloadItemData.SIZE) as string;
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(value);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(value))
                         
                                     {
                                     this.size= (value).toLong();
@@ -183,7 +183,7 @@ this.file= hashMap!.get(DownloadItemData.FILE); as string;
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(validTime);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(validTime))
                         
                                     {
                                     this.validTime= (validTime).toLong();
@@ -225,7 +225,7 @@ this.validTime= totalTime;
 
                         }
                             
-this.retries= hashMap!.get(DownloadItemData.RETRIES); as string;
+this.retries= hashMap!.get(DownloadItemData.RETRIES) as string;
     
 }
 

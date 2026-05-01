@@ -74,7 +74,7 @@ this.circularIndexUtil!.setIndex(0);
     var index: number = 0;
 index < size; index++)
         {
-OBJECT_ARRAY[index]= allBinaryEventObjectFactoryInterface!.getInstance();
+this.OBJECT_ARRAY[index]= allBinaryEventObjectFactoryInterface!.getInstance();
     
 }
 

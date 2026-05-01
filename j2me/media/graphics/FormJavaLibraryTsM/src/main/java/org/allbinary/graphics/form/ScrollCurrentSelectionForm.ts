@@ -144,7 +144,7 @@ this.dy= y;
     var index: number = 0;
 index < size; index++)
         {
-item= this.get(index); as CustomItemInterface;
+item= this.get(index) as CustomItemInterface;
     
 totalWidth += item.getMinimumWidth() +border;
     
@@ -301,7 +301,7 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
     var index: number = 0;
 index < size; index++)
         {
-item= this.get(index); as CustomItemInterface;
+item= this.get(index) as CustomItemInterface;
     
 
     var diffX: number = 0;

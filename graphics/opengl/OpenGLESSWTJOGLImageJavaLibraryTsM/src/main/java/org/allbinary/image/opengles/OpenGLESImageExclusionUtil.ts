@@ -112,7 +112,7 @@ private constructor (){
     var index: number = 0;
 index < size; index++)
         {
-name= this.list.get(index); as string;
+name= this.list.get(index) as string;
     
 
                         if(imageName!.startsWith(name))

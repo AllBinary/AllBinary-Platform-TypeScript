@@ -183,7 +183,7 @@ motionRectangle!.getRectangle()!.setSize(newWidth, newHeight);
     addPixelDeltaToAMotionRectangle(pixelDelta: PixelDelta){
 var pixelDelta = pixelDelta
 
-                        if(!addPixelDeltaToExistingMotionRectangle(pixelDelta);)
+                        if(!addPixelDeltaToExistingMotionRectangle(pixelDelta))
                         
                                     {
                                     

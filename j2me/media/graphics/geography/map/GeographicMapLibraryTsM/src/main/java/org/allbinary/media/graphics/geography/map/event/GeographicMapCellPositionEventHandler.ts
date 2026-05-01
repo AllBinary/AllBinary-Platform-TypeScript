@@ -87,7 +87,7 @@ private constructor (){
     public addListener(miniMapLayer: MiniMapLayer){
 var miniMapLayer = miniMapLayer
 
-                        if(!this.list.contains(miniMapLayer);)
+                        if(!this.list.contains(miniMapLayer))
                         
                                     {
                                     this.list.add(miniMapLayer);
@@ -207,7 +207,7 @@ index < size; index++)
         {
 
         try {
-            eventListenerInterface= list.get(index); as EventListenerInterface;
+            eventListenerInterface= list.get(index) as EventListenerInterface;
     
 geographicMapCellPositionEventListenerInterface= (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
     

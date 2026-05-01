@@ -247,7 +247,7 @@ this.itemInterface= inventoryEntity!.getItem(id);
 ;
     
 
-                        if(!categoryFile!.isDirectory();)
+                        if(!categoryFile!.isDirectory())
                         
                                     {
                                     
@@ -629,7 +629,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-                        if(!categoryFile!.isDirectory();)
+                        if(!categoryFile!.isDirectory())
                         
                                     {
                                     stringBuffer!.append("Category ");
@@ -819,7 +819,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     
@@ -946,7 +946,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     stringBuffer!.append("File Name must be more than ");

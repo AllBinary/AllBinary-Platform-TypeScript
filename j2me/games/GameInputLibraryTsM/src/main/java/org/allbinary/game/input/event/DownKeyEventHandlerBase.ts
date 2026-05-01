@@ -81,7 +81,7 @@ export class DownKeyEventHandlerBase extends BasicEventHandler {
     public addListener(playerGameInput: PlayerGameInput){
     //var playerGameInput = playerGameInput
 
-                        if(!this.list.contains(playerGameInput);)
+                        if(!this.list.contains(playerGameInput))
                         
                                     {
                                     this.list.add(playerGameInput);
@@ -162,7 +162,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
 this.process(eventObject, eventListenerInterface);
     
@@ -228,7 +228,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as EventListenerInterface;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as EventListenerInterface;
     
 this.processEvent(eventObject, eventListenerInterface);
     
@@ -300,7 +300,7 @@ index < this.list.size(); index++)
         {
 
         try {
-            eventListenerInterface= this.list.get(index); as EventListenerInterface;
+            eventListenerInterface= this.list.get(index) as EventListenerInterface;
     
 stringBuffer!.append(LISTENER_LABEL);
     

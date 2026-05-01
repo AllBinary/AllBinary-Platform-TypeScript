@@ -143,7 +143,7 @@ protected constructor (){
     var index: number = 0;
 index < size; index++)
         {
-basicGeographicMapCellPosition= pathList!.get(index); as CellPosition;
+basicGeographicMapCellPosition= pathList!.get(index) as CellPosition;
     
 geographicMapCellPosition= geographicMapCellPositionFactory!.getAt(basicGeographicMapCellPosition!.getColumn(), basicGeographicMapCellPosition!.getRow());
     

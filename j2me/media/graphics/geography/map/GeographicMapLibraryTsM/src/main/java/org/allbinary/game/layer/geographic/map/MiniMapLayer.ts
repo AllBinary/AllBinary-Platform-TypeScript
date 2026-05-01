@@ -220,7 +220,7 @@ this.positionList!.removeAt(index);
     var index: number = 0;
 index < size; index++)
         {
-nextColorCompositeInterface= this.list.get(index); as ColorCompositeInterface;
+nextColorCompositeInterface= this.list.get(index) as ColorCompositeInterface;
     
 
                         if(nextColorCompositeInterface == colorCompositeInterface)
@@ -302,9 +302,9 @@ var graphics = graphics
     var index: number = length;
 --index >= 0; )
         {
-point= localPositionList!.get(index); as GPoint;
+point= localPositionList!.get(index) as GPoint;
     
-basicColor= localBasicColorList!.get(index); as BasicColor;
+basicColor= localBasicColorList!.get(index) as BasicColor;
     
 graphics.setColor(basicColor!.toInt());
     

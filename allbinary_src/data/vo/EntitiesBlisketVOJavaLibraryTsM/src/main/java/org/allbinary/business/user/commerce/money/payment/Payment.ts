@@ -114,19 +114,19 @@ public constructor (payment: HashMap<any, any>){
 
             super();
         var payment = payment
-this.name= payment.get(PaymentData.NAME); as string;
+this.name= payment.get(PaymentData.NAME) as string;
     
-this.type= payment.get(PaymentData.TYPE); as string;
+this.type= payment.get(PaymentData.TYPE) as string;
     
-this.expiration= payment.get(PaymentData.EXPIRATION); as string;
+this.expiration= payment.get(PaymentData.EXPIRATION) as string;
     
-this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION); as string;
+this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION) as string;
     
 this.number= new SuperCrypt(this.encryption.
                             toInt()).
-                            decrypt(payment.get(PaymentData.NUMBER) as string); as string;
+                            decrypt(payment.get(PaymentData.NUMBER) as string) as string;
     
-this.id= payment.get(PaymentData.ID); as string;
+this.id= payment.get(PaymentData.ID) as string;
     
 
     var def: string = payment.get(EntryData.getInstance()!.DEFAULT) as string;
@@ -149,25 +149,25 @@ this.id= payment.get(PaymentData.ID); as string;
 
                         }
                             
-this.tenderType= payment.get(PaymentData.TENDERTYPE); as string;
+this.tenderType= payment.get(PaymentData.TENDERTYPE) as string;
     
-this.transactionType= payment.get(PaymentData.TRANSACTIONTYPE); as string;
+this.transactionType= payment.get(PaymentData.TRANSACTIONTYPE) as string;
     
-this.aba= payment.get(PaymentData.ABA); as string;
+this.aba= payment.get(PaymentData.ABA) as string;
     
-this.account= payment.get(PaymentData.ACCOUNT); as string;
+this.account= payment.get(PaymentData.ACCOUNT) as string;
     
-this.accountType= payment.get(PaymentData.ACCOUNTTYPE); as string;
+this.accountType= payment.get(PaymentData.ACCOUNTTYPE) as string;
     
-this.authorizationCode= payment.get(PaymentData.AUTHORIZATIONCODE); as string;
+this.authorizationCode= payment.get(PaymentData.AUTHORIZATIONCODE) as string;
     
-this.checkNumber= payment.get(PaymentData.CHECKNUMBER); as string;
+this.checkNumber= payment.get(PaymentData.CHECKNUMBER) as string;
     
-this.checkType= payment.get(PaymentData.CHECKTYPE); as string;
+this.checkType= payment.get(PaymentData.CHECKTYPE) as string;
     
-this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE); as string;
+this.driversLicense= payment.get(PaymentData.DRIVERSLICENSE) as string;
     
-this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER); as string;
+this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER) as string;
     
 }
 

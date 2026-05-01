@@ -153,8 +153,8 @@ i < size; i++)
 ;
     
 
-                        if(!a_PaymentTypeVector!.contains(paymentType);)
-                        diff.add(paymentType);
+                        if(!a_PaymentTypeVector!.contains(paymentType))
+                        diff.add(paymentType)
 }
 
 

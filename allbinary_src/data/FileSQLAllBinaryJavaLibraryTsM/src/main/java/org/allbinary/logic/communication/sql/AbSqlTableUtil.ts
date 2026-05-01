@@ -426,7 +426,7 @@ var abSqlTable = abSqlTable
 ;
     
 
-                        if(!Directory.create(new AbPath(path));)
+                        if(!Directory.create(new AbPath(path)))
                         
                                     {
                                     

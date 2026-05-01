@@ -133,7 +133,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
     
 this.getFormData();
     
@@ -147,7 +147,7 @@ var empty = empty
 
                             //For kotlin this is before the body of the constructor.
                     
-this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
+this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
     
 }
 
@@ -249,7 +249,7 @@ this.itemInterface= new BasicItem(this.getRequestHashMap()) as ItemInterface;
     var index: number = 0;
 index < size; index++)
         {
-downloadableItem= this.downloadableItemVector!.get(index); as DownloadableItem;
+downloadableItem= this.downloadableItemVector!.get(index) as DownloadableItem;
     
 vector.add(new DownloadableItemView(downloadableItem));
     

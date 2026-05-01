@@ -90,7 +90,7 @@ private constructor (){
     public addListener(playerGameInput: PlayerGameInput){
 var playerGameInput = playerGameInput
 
-                        if(!this.list.contains(playerGameInput);)
+                        if(!this.list.contains(playerGameInput))
                         
                                     {
                                     this.list.add(playerGameInput);

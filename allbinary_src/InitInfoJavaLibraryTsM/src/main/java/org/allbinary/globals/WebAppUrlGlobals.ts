@@ -100,7 +100,7 @@ this.isWebappPathSet= true;
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mainPath);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mainPath))
                         
                                     {
                                     

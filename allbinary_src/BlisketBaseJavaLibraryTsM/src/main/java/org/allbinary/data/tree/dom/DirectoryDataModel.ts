@@ -85,7 +85,7 @@ public constructor (file: AbFile){
             //var file = file
 this.fileBasicArrayList= Directory.getInstance()!.search(file);
     
-this.transformDocumentInterface= TransformDocumentFactory.getInstance(); as TransformDocumentInterface;
+this.transformDocumentInterface= TransformDocumentFactory.getInstance() as TransformDocumentInterface;
     
 }
 
@@ -159,7 +159,7 @@ this.transformDocumentInterface= transformDocumentInterface;
     var index: number = 0;
 index < size; index++)
         {
-nextFile= this.fileBasicArrayList!.get(index); as AbFile;
+nextFile= this.fileBasicArrayList!.get(index) as AbFile;
     
 fileNode= new FileDomDataModel(nextFile).
                             toXmlNode(document);

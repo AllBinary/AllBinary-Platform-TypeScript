@@ -317,7 +317,7 @@ layerManager!.appendAt(layerInterface, PlayersSingletonFactory.total);
 advancedPlayerOwnedRTSLayers!.addUnit(layerInterface);
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.newUnitGameNotificationEvent);
@@ -332,7 +332,7 @@ advancedPlayerOwnedRTSLayers!.addUnit(layerInterface);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.noMoneyGameNotificationEvent);

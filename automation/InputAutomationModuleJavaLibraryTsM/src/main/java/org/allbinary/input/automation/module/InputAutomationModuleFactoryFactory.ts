@@ -123,7 +123,7 @@ this.hashMap= new HashMap<any, any>();
 
         while(iterator.hasNext())
         {
-inputAutomationModuleConfiguration= iterator.next(); as InputAutomationModuleConfiguration;
+inputAutomationModuleConfiguration= iterator.next() as InputAutomationModuleConfiguration;
     
 this.add(inputAutomationModuleConfiguration);
     
@@ -151,7 +151,7 @@ this.defaultListModelHelper!.add(inputAutomationModuleConfiguration!.getName());
 ;
     
 
-                        if(!JavaHelpSetNotifier.isNotified(helpSet);)
+                        if(!JavaHelpSetNotifier.isNotified(helpSet))
                         
                                     {
                                     

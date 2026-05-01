@@ -224,19 +224,19 @@ public constructor (address: HashMap<any, any>){
 
             super();
             //var address = address
-this.id= address.get(StreetAddressData.ID); as string;
+this.id= address.get(StreetAddressData.ID) as string;
     
-this.name= address.get(StreetAddressData.NAME); as string;
+this.name= address.get(StreetAddressData.NAME) as string;
     
-this.street= address.get(StreetAddressData.STREET); as string;
+this.street= address.get(StreetAddressData.STREET) as string;
     
-this.city= address.get(StreetAddressData.CITY); as string;
+this.city= address.get(StreetAddressData.CITY) as string;
     
-this.state= address.get(StreetAddressData.STATE); as string;
+this.state= address.get(StreetAddressData.STATE) as string;
     
-this.code= address.get(StreetAddressData.CODE); as string;
+this.code= address.get(StreetAddressData.CODE) as string;
     
-this.country= address.get(StreetAddressData.COUNTRY); as string;
+this.country= address.get(StreetAddressData.COUNTRY) as string;
     
 
     var def: string = address.get(StreetAddressData.DEFAULT) as string;
@@ -496,7 +496,7 @@ stringBuffer!.append("Address Failed To Validate - All fields must contain data.
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.getName(), StreetAddressData.MIN, StreetAddressData.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.getName(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid name");
@@ -507,7 +507,7 @@ stringBuffer!.append("<br></br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getStreet(), StreetAddressData.MIN, StreetAddressData.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.getStreet(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid street");
@@ -518,7 +518,7 @@ stringBuffer!.append("<br></br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getCity(), StreetAddressData.MIN, StreetAddressData.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.getCity(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid city");
@@ -529,7 +529,7 @@ stringBuffer!.append("<br></br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getState(), StreetAddressData.MIN, StreetAddressData.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.getState(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid state");
@@ -540,7 +540,7 @@ stringBuffer!.append("<br></br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getCode(), StreetAddressData.MIN, StreetAddressData.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.getCode(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid zipcode");
@@ -551,7 +551,7 @@ stringBuffer!.append("<br></br>");
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.getCountry(), StreetAddressData.MIN, StreetAddressData.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.getCountry(), StreetAddressData.MIN, StreetAddressData.MAX))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid country");

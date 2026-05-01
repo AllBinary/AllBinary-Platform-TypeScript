@@ -361,7 +361,7 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
                         
                                     {
                                     
-                        if(!this.isPositionBlocked();)
+                        if(!this.isPositionBlocked())
                         
                                     {
                                     
@@ -373,7 +373,7 @@ LockedFeatureNotificationUtil.getInstance()!.fireWithColor(geographicMapInterfac
 ;
     
 
-                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType);)
+                        if(!raceTrackGeographicMapCellTypeFactory!.isPath(geographicMapCellType))
                         
                                     {
                                     
@@ -414,7 +414,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.buildOnPathGameNotificationEvent);
@@ -432,7 +432,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.spotTakenGameNotificationEvent);
@@ -450,7 +450,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.selectBuildSpotGameNotificationEvent);
@@ -483,7 +483,7 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-                        if(!this.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface);)
+                        if(!this.isBuildAttemptValid(rtsPlayerLayerInterface, layerInterface))
                         
                                     {
                                     
@@ -528,7 +528,7 @@ geographicMapCellType= geographicMapInterface!.getCellTypeAt(occupyList!.get(ind
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.roadCollisionGameNotificationEvent);
@@ -598,7 +598,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                             rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.noMoneyGameNotificationEvent);
@@ -638,7 +638,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.buildingCollisionGameNotificationEvent);
@@ -662,7 +662,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.structureToCloseCollisionGameNotificationEvent);
@@ -687,7 +687,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                                     rtsPlayerLayerInterface!.add(ErrorSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.mapEdgeGameNotificationEvent);
@@ -743,7 +743,7 @@ layerManager!.append(layerInterface);
 rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
     
 
-                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface();)
+                        if(!rtsPlayerLayerInterface!.implmentsArtificialIntelligenceCompositeInterface())
                         
                                     {
                                     GameNotificationEventHandler.getInstance()!.fireEvent(this.buildingGameNotificationEvent);

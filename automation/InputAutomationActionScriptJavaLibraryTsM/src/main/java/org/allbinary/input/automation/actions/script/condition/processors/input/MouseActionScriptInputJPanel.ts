@@ -196,7 +196,7 @@ this.mouseActionScriptInputInterface!.log();
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(selectedItem))
                         
                                     {
                                     this.mouseActionScriptInputInterface!.setInputRobotInterface(InputRobotFactory.getInstance()!.get(selectedItem));

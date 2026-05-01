@@ -20,7 +20,7 @@
 
             import { System } from "../../../java/lang/System";
         
-            import { Integer } from "../../../java/lang/Thread.js";
+            import { Thread } from "../../../java/lang/Thread.js";
         
 import { CommandListener } from "../../../javax/microedition/lcdui/CommandListener.js";
 
@@ -451,7 +451,7 @@ this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(Date.now())
 this.processSleep();
     
 
-                        if(!this.isPausable();)
+                        if(!this.isPausable())
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());

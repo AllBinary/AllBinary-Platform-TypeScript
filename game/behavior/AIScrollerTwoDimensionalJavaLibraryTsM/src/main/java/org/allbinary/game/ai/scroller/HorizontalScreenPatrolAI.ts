@@ -110,7 +110,7 @@ var gameInput = gameInput
 
                             //For kotlin this is before the body of the constructor.
                     
-this.sound= hashtable.get(HorizontalScreenPatrolAI.SOUND); as Sound;
+this.sound= hashtable.get(HorizontalScreenPatrolAI.SOUND) as Sound;
     
 
                         if(this.sound == 

@@ -209,7 +209,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 ;
     
 
-                        if(!list.contains(mappedToInput);)
+                        if(!list.contains(mappedToInput))
                         
                                     {
                                     list.add(mappedToInput);

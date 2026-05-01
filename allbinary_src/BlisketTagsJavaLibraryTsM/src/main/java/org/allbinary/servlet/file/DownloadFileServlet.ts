@@ -169,7 +169,7 @@ var response = response
 ;
     
 
-                        if(!file.exists();)
+                        if(!file.exists())
                         
                                     {
                                     response.sendError(HttpServletResponse.SC_NOT_FOUND);
@@ -280,7 +280,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
             StreamUtil.getInstance()!.close(response.getOutputStream());
     
 
-                        if(!StreamUtil.getInstance()!.close(inputStream);)
+                        if(!StreamUtil.getInstance()!.close(inputStream))
                         
                                     {
                                     

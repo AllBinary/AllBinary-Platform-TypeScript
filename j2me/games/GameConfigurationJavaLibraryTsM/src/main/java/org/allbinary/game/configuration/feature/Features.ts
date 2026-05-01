@@ -125,7 +125,7 @@ this.init();
 this.add(gameFeature);
     
 
-                        if(!this.defaultList!.contains(gameFeature);)
+                        if(!this.defaultList!.contains(gameFeature))
                         
                                     {
                                     this.defaultList!.add(gameFeature);
@@ -141,7 +141,7 @@ this.add(gameFeature);
     public add(gameFeature: Feature){
     //var gameFeature = gameFeature
 
-                        if(!this.list.contains(gameFeature);)
+                        if(!this.list.contains(gameFeature))
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().

@@ -151,7 +151,7 @@ this.eventListenerInterfaceList= new BasicArrayListD();
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -166,7 +166,7 @@ var eventListenerInterface = eventListenerInterface
     public addListener(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);

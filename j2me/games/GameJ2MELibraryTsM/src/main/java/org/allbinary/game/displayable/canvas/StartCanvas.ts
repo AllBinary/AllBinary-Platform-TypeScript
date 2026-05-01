@@ -953,7 +953,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
                         
                                     {
                                     
-                        if(!this.highScoresHelper!.isAnyHighScores();)
+                        if(!this.highScoresHelper!.isAnyHighScores())
                         
                                     {
                                     newState= 0;

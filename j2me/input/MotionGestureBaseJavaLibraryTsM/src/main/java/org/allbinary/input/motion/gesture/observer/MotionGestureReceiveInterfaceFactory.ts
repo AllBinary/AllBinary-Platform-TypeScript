@@ -60,7 +60,7 @@ export class MotionGestureReceiveInterfaceFactory
 ;
     
 
-                        if(!configuration.isExecutingActionsAllowed();)
+                        if(!configuration.isExecutingActionsAllowed())
                         
                                     {
                                     

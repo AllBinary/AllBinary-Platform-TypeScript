@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 

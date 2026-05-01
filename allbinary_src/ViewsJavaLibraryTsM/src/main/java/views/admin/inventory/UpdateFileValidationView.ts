@@ -198,7 +198,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
 ;
     
 
-                        if(!categoryFile!.isDirectory();)
+                        if(!categoryFile!.isDirectory())
                         
                                     {
                                     
@@ -457,7 +457,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     
@@ -539,7 +539,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     stringBuffer!.append("FileName must be >");

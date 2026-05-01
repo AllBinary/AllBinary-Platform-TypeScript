@@ -118,7 +118,7 @@ this.totalMoney= new Money();
     var index: number = 0;
 index < size; index++)
         {
-orderHistoryInterface= orderHistoryInterfaceVector!.get(index); as OrderHistoryInterface;
+orderHistoryInterface= orderHistoryInterfaceVector!.get(index) as OrderHistoryInterface;
     
 numberOfOrders= numberOfOrders +1;
     

@@ -74,7 +74,7 @@ var hashMap = hashMap
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(roleString);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(roleString))
                         
                                     {
                                     

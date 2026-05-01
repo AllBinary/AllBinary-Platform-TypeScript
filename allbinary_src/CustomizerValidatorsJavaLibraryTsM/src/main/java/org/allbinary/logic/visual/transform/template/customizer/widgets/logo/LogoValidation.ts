@@ -140,7 +140,7 @@ this.getFormData(hashMap);
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE); as FileItem;
+this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE) as FileItem;
     
 this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as string);
     
@@ -200,7 +200,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoAbPath!.toString(), 0, 512);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoAbPath!.toString(), 0, 512))
                         
                                     {
                                     
@@ -222,7 +222,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getFormData()");
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoFile, fileData!.MINLEN, fileData!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.logoFile, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     

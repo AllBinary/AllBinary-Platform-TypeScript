@@ -130,11 +130,11 @@ new GeographicMapCellType(0, 0);
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-key= this.enumerationUtil!.nextElement(enumeration)!; as string;
+key= this.enumerationUtil!.nextElement(enumeration)! as string;
     
 this.logUtil!.putF(key, this, commonStrings!.INIT);
     
-idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
+idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList;
     
 basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWithTypeList);
     

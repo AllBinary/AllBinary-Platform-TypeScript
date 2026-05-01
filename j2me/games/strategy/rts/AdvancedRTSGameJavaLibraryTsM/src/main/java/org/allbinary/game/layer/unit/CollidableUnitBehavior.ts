@@ -277,7 +277,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
                         
                                     {
                                     
-                        if(!this.simpleSteeringVisitor!.getList()!.contains(collidableInterfaceCompositeInterface);)
+                        if(!this.simpleSteeringVisitor!.getList()!.contains(collidableInterfaceCompositeInterface))
                         
                                     {
                                     this.simpleSteeringVisitor!.getList()!.add(collidableInterfaceCompositeInterface);
@@ -294,7 +294,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 ;
     
 
-                        if(!list.contains(this.simpleSteeringVisitor);)
+                        if(!list.contains(this.simpleSteeringVisitor))
                         
                                     {
                                     list.add(this.simpleSteeringVisitor);
@@ -355,7 +355,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
                                     
@@ -378,7 +378,7 @@ this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
 this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, unitLayer, diff, 0, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
                                     
@@ -412,7 +412,7 @@ unitLayer!.setPosition(x, y, unitLayer!.getZP());
 this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
                                     
@@ -435,7 +435,7 @@ this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
 this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, unitLayer, 0, diff, partialPositionList);
     
 
-                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList);)
+                        if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
                                     

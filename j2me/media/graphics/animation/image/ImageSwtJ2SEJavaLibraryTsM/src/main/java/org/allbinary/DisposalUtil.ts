@@ -110,7 +110,7 @@ this.disposeResource(mutableImage!.getImage() as Resource);
     public disposeResource(resource: Resource){
     //var resource = resource
 
-                        if(!resource.isDisposed();)
+                        if(!resource.isDisposed())
                         
                                     {
                                     console.log(this.commonStrings!.CLOSE);

@@ -205,7 +205,7 @@ var inputStream = inputStream
 var dataOutputStream = dataOutputStream
 
         try {
-            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384)); as AbDataOutputStream;
+            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
@@ -227,7 +227,7 @@ var dataOutputStream = dataOutputStream
 var buffer = buffer
 
         try {
-            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer); as AbDataOutputStream;
+            dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
@@ -248,7 +248,7 @@ var dataInputStream = dataInputStream
 var dataOutputStream = dataOutputStream
 
         try {
-            dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384)); as AbDataOutputStream;
+            dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
     
 dataOutputStream!.flush();
     
@@ -347,7 +347,7 @@ var overwriteAll = overwriteAll
 ;
     
 
-                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll);)
+                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
                         
                                     {
                                     
@@ -453,7 +453,7 @@ var overwriteAll = overwriteAll
 ;
     
 
-                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll);)
+                        if(!this.copyPrepare(file, outFile, overwriteNewer, overwriteAll))
                         
                                     {
                                     
@@ -711,7 +711,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
                                     }
                                 
 
-                        if(!this.copyPrepare(fromFile, toFile, overwriteNewer, overwriteAll);)
+                        if(!this.copyPrepare(fromFile, toFile, overwriteNewer, overwriteAll))
                         
                                     {
                                     
@@ -782,7 +782,7 @@ var total = total
 ;
     
 
-                        if(!file.isDirectory();)
+                        if(!file.isDirectory())
                         
                                     {
                                     
@@ -945,7 +945,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyDirectory");
 ;
     
 
-                        if(!this.directory.create(newDirectoryAbPath);)
+                        if(!this.directory.create(newDirectoryAbPath))
                         
                                     {
                                     

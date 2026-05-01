@@ -136,7 +136,7 @@ i < size; i++)
 ;
     
 
-                        if(!styleValidationInterface!.isValid().valueOf();)
+                        if(!styleValidationInterface!.isValid().valueOf())
                         
                                     {
                                     isValid= Boolean.FALSE;

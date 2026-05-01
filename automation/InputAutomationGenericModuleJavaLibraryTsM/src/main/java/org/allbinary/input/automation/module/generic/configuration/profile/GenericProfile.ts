@@ -148,8 +148,8 @@ this.vector= new Vector();
     public add(genericProfileDataWorkerType: GenericProfileDataWorkerType){
 var genericProfileDataWorkerType = genericProfileDataWorkerType
 
-                        if(!this.vector.contains(genericProfileDataWorkerType);)
-                        this.vector.add(genericProfileDataWorkerType);
+                        if(!this.vector.contains(genericProfileDataWorkerType))
+                        this.vector.add(genericProfileDataWorkerType)
 }
 
 

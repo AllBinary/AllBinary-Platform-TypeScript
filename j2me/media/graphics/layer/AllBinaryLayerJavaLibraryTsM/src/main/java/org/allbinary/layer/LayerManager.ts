@@ -105,7 +105,7 @@ this.layerManagerLogging= layerManagerLogging;
     var index: number = 0;
 index < size; index++)
         {
-nextLayerInterface= this.list.get(index); as AllBinaryLayer;
+nextLayerInterface= this.list.get(index) as AllBinaryLayer;
     
 
                         if(layerInterface!.getZP() > nextLayerInterface!.getZP())

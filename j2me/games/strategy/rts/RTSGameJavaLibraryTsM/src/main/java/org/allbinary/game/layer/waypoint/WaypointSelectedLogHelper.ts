@@ -288,7 +288,7 @@ this.logUtil!.putF(new StringMaker().
                                     null
                                 )
                         this.logUtil!.putF(new StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" currentPathGeographicMapCellPosition: ")!.append(this.stringUtil!.toString(currentPathGeographicMapCellPosition))!.toString(), this, "setCurrentPathGeographicMapCellPosition");
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" currentPathGeographicMapCellPosition: ")!.append(this.stringUtil!.toString(currentPathGeographicMapCellPosition))!.toString(), this, "setCurrentPathGeographicMapCellPosition")
 }
 
 
@@ -299,7 +299,7 @@ this.logUtil!.putF(new StringMaker().
 
                         if(existingNextUnvisitedPathGeographicMapCellPosition != nextUnvisitedPathGeographicMapCellPosition)
                         this.logUtil!.putF(new StringMaker().
-                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" nextUnvisitedPathGeographicMapCellPosition: ")!.append(this.stringUtil!.toString(nextUnvisitedPathGeographicMapCellPosition))!.toString(), this, "setNextUnvisitedPathGeographicMapCellPosition");
+                            append(associatedAdvancedRTSGameLayer!.getName())!.append(" nextUnvisitedPathGeographicMapCellPosition: ")!.append(this.stringUtil!.toString(nextUnvisitedPathGeographicMapCellPosition))!.toString(), this, "setNextUnvisitedPathGeographicMapCellPosition")
 }
 
 

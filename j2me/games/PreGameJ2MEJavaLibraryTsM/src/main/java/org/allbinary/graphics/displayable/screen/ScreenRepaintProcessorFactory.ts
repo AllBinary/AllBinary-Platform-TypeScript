@@ -73,7 +73,7 @@ private constructor (){
     public create(displayable: Displayable): Processor{
     //var displayable = displayable
 
-                        if(!J2MEUtil.isJ2ME();)
+                        if(!J2MEUtil.isJ2ME())
                         
                                     {
                                     

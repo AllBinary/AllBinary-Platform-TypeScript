@@ -20,7 +20,7 @@
 
             import { System } from "../../../java/lang/System";
         
-            import { Integer } from "../../../java/lang/Thread.js";
+            import { Thread } from "../../../java/lang/Thread.js";
         
 import { InputStream } from "../../../java/io/InputStream.js";
 

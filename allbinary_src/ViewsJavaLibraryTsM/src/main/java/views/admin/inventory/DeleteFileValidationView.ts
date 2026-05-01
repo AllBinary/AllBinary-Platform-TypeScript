@@ -103,7 +103,7 @@ this.getFormData();
                         
                                     throw new Error("No Request Params Found");
                                 
-this.id= hashMap!.get(BasicItemData.ID); as string;
+this.id= hashMap!.get(BasicItemData.ID) as string;
     
 }
 

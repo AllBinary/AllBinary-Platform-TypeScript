@@ -384,7 +384,7 @@ point= rectangle.getPoint();
                                     touchButtonInput= touchButton!.getTouchButtonInput();
     
 
-                        if(!this.currentlyPressedTouchButtonSingleton!.contains(touchButtonInput);)
+                        if(!this.currentlyPressedTouchButtonSingleton!.contains(touchButtonInput))
                         
                                     {
                                     this.releaseHelper!.release(touchButtonInput, deviceId);

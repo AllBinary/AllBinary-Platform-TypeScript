@@ -364,19 +364,19 @@ this.rtsFormInput= rtsFormInput;
     
 this.setPosition(x, y, z);
     
-this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
+this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation;
     
 this.buildAnimationInterface= buildAnimationInterfaceFactoryInterface!.getInstance(0);
     
 this.baseAnimationInterface= baseAnimationInterfaceFactoryInterface!.getInstance(0);
     
-this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
+this.emptyAnimationInterface= emptyAnimationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation;
     
-this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0); as IndexedAnimation;
+this.indexedButShouldBeRotationAnimationInterface= animationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation;
     
 this.initAnimationInterface= this.indexedButShouldBeRotationAnimationInterface;
     
-this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstanceAnimation(this.indexedButShouldBeRotationAnimationInterface); as IndexedAnimation;
+this.destroyAnimationInterface= proceduralAnimationInterfaceFactoryInterface!.getInstanceAnimation(this.indexedButShouldBeRotationAnimationInterface) as IndexedAnimation;
     
 
     var animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;

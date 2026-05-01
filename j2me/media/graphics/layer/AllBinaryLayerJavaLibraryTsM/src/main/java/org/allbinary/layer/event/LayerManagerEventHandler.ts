@@ -89,7 +89,7 @@ private constructor (){
     public addListener(layerManagerEventListener: LayerManagerEventListener){
     //var layerManagerEventListener = layerManagerEventListener
 
-                        if(!this.list.contains(layerManagerEventListener);)
+                        if(!this.list.contains(layerManagerEventListener))
                         
                                     {
                                     this.list.add(layerManagerEventListener);

@@ -72,7 +72,7 @@ protected constructor (){
     public add(layerInterface: AllBinaryLayer){
 var layerInterface = layerInterface
 
-                        if(!this.list.contains(layerInterface);)
+                        if(!this.list.contains(layerInterface))
                         
                                     {
                                     this.list.add(layerInterface);

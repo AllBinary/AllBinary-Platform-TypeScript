@@ -105,7 +105,7 @@ index >= 0; index--)
 ;
     
 
-                        if(!this.rootNameList!.contains(rtsLayer!.getRootName());)
+                        if(!this.rootNameList!.contains(rtsLayer!.getRootName()))
                         
                                     {
                                     this.rootNameList!.add(rtsLayer!.getRootName());

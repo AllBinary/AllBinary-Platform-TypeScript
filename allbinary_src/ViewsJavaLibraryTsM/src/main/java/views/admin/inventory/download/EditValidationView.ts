@@ -130,9 +130,9 @@ this.getFormData();
 
                                     }
                                 
-this.id= hashMap!.get(BasicItemData.ID); as string;
+this.id= hashMap!.get(BasicItemData.ID) as string;
     
-this.downloadItemId= hashMap!.get(DownloadItemData.ID); as string;
+this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
     
 }
 
@@ -201,7 +201,7 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
                                     }
                                 
-this.downloadableItem= vector.get(0); as DownloadableItem;
+this.downloadableItem= vector.get(0) as DownloadableItem;
     
 
                                     }

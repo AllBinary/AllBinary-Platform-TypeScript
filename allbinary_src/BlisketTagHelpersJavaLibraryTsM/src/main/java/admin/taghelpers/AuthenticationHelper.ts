@@ -542,7 +542,7 @@ index < size; index++)
 ;
     
 
-                        if(!userInterface!.isSessionValid().valueOf();)
+                        if(!userInterface!.isSessionValid().valueOf())
                         
                                     {
                                     

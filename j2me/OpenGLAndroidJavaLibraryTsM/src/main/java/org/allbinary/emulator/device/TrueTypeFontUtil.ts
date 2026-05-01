@@ -355,7 +355,7 @@ canvas.save();
     var image: Image = AndroidImmutableImage.create(bitmap)!;
 ;
     
-this.fontImage= this.preResourceImageUtil!.encapsulate(image); as OpenGLESImage;
+this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
     
 
 

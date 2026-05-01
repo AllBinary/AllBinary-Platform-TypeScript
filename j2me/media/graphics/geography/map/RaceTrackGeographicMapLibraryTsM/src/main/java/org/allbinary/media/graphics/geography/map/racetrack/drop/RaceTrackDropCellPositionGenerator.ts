@@ -167,7 +167,7 @@ this.init();
     
 this.raceTrackGeographicMap= baseRaceTrackGeographicMap;
     
-this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory(); as RaceTrackGeographicMapCellTypeFactory;
+this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeographicMapCellTypeFactory() as RaceTrackGeographicMapCellTypeFactory;
     
 
     var roadGeographicMapCellHistory: GeographicMapCellHistory = RaceTrackRoadsGeographicMapCellHistoryFactory.getInstance()!;
@@ -201,7 +201,7 @@ this.raceTrackGeographicMapCellTypeFactory= baseRaceTrackGeographicMap!.getGeogr
     var index: number = lastIndex;
 index > 0; index--)
         {
-geographicMapCellPosition= trackedList!.get(index); as GeographicMapCellPosition;
+geographicMapCellPosition= trackedList!.get(index) as GeographicMapCellPosition;
     
 total= 0;
     

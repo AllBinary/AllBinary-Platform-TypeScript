@@ -20,7 +20,7 @@
 
             import { Integer } from "../../../../java/lang/Integer.js";
         
-            import { Integer } from "../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../java/lang/Thread.js";
         
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
 

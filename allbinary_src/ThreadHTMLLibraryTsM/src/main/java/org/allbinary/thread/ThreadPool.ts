@@ -98,7 +98,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
             
     public runAPriorityTask(){
 
-                        if(!this.currentPriorityRunnable!.isDone();)
+                        if(!this.currentPriorityRunnable!.isDone())
                         
                                     {
                                     this.currentPriorityRunnable!.run();
@@ -217,7 +217,7 @@ this.taskQueue= new BasicArrayListD();
     var index: number = 0;
 index < size; index++)
         {
-runnable= this.taskQueue!.get(index); as PriorityRunnable;
+runnable= this.taskQueue!.get(index) as PriorityRunnable;
     
 
                         if(runnable.getPriority() > task.getPriority())

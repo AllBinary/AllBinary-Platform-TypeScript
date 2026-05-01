@@ -170,7 +170,7 @@ graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
     var index: number = start;
 index < size; index++)
         {
-item= this.get(index); as CustomItemInterface;
+item= this.get(index) as CustomItemInterface;
     
 
                         if(dx >= this.rectangle.getMaxX())

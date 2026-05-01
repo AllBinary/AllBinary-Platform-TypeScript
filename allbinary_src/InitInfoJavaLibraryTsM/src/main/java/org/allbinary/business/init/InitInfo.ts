@@ -119,7 +119,7 @@ private constructor (){
                                     }
                                 
 
-                        if(!initInfoEntity!.is();)
+                        if(!initInfoEntity!.is())
                         
                                     {
                                     
@@ -176,7 +176,7 @@ this.hasRead= false;
 var hashMap = hashMap
 
         try {
-            this.testing= hashMap!.get(this.TESTING); as string;
+            this.testing= hashMap!.get(this.TESTING) as string;
     
 this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as string);
     

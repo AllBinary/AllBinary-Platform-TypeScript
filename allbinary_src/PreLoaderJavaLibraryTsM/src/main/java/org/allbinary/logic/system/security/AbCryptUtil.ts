@@ -89,7 +89,7 @@ private constructor (){
     
 
         try {
-            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384)); as ByteArrayOutputStream;
+            outputStream= this.streamUtil!.get(inputStream, new ByteArrayOutputStream(), new Array(16384)) as ByteArrayOutputStream;
     
 
     var abCrypt: AbCrypt = new AbCrypt(KeySpecFactory.getInstance()!.DESEDE);

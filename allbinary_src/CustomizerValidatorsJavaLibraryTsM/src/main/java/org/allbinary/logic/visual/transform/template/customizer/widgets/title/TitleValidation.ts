@@ -110,7 +110,7 @@ public constructor (hashMap: HashMap<any, any>){
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.getTitle(), 1, TitleData.getInstance()!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.getTitle(), 1, TitleData.getInstance()!.MAXLEN))
                         
                                     {
                                     valid= Boolean.FALSE;

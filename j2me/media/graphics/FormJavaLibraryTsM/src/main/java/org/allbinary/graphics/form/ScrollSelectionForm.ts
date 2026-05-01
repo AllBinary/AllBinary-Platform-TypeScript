@@ -346,7 +346,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     var index: number = start;
 index < size; index++)
         {
-item= this.get(index); as CustomItemInterface;
+item= this.get(index) as CustomItemInterface;
     
 width= item.getMinimumWidth();
     

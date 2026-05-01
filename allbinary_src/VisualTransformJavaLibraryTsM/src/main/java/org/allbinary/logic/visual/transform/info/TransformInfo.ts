@@ -213,7 +213,7 @@ var hashMap = hashMap
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aName);)
+                        if(!stringValidationUtil!.isEmpty(aName))
                         
                                     {
                                     this.name= aName;
@@ -247,7 +247,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aStoreName);)
+                        if(!stringValidationUtil!.isEmpty(aStoreName))
                         
                                     {
                                     this.storeName= aStoreName;
@@ -260,7 +260,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aObjectFileName);)
+                        if(!stringValidationUtil!.isEmpty(aObjectFileName))
                         
                                     {
                                     this.objectFileName= aObjectFileName;
@@ -289,7 +289,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aObject);)
+                        if(!stringValidationUtil!.isEmpty(aObject))
                         
                                     {
                                     
@@ -321,7 +321,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG) as string);)
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG) as string))
                         
                                     {
                                     
@@ -343,7 +343,7 @@ this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as string);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(objectConfigFileName);)
+                        if(!stringValidationUtil!.isEmpty(objectConfigFileName))
                         
                                     {
                                     
@@ -365,7 +365,7 @@ this.setObjectConfigFile(objectConfigFileName);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(type);)
+                        if(!stringValidationUtil!.isEmpty(type))
                         
                                     {
                                     
@@ -389,7 +389,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aTemplateFileName);)
+                        if(!stringValidationUtil!.isEmpty(aTemplateFileName))
                         
                                     {
                                     this.templateFileName= aTemplateFileName;
@@ -402,7 +402,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aTemplate);)
+                        if(!stringValidationUtil!.isEmpty(aTemplate))
                         
                                     {
                                     
@@ -420,7 +420,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(fileDataString);)
+                        if(!stringValidationUtil!.isEmpty(fileDataString))
                         
                                     {
                                     this.template= fileDataString;
@@ -436,7 +436,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aDataFileName);)
+                        if(!stringValidationUtil!.isEmpty(aDataFileName))
                         
                                     {
                                     this.dataFileName= aDataFileName;
@@ -449,7 +449,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aData);)
+                        if(!stringValidationUtil!.isEmpty(aData))
                         
                                     {
                                     
@@ -467,7 +467,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(fileDataString);)
+                        if(!stringValidationUtil!.isEmpty(fileDataString))
                         
                                     {
                                     this.data= fileDataString;
@@ -782,7 +782,7 @@ this.data= value;
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(dataFileString);)
+                        if(!stringValidationUtil!.isEmpty(dataFileString))
                         
                                     {
                                     
@@ -793,7 +793,7 @@ this.data= value;
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(this.data);)
+                        if(!stringValidationUtil!.isEmpty(this.data))
                         
                                     {
                                     
@@ -831,7 +831,7 @@ this.data= fileData;
 
         try {
             
-                        if(!stringValidationUtil!.isEmpty(this.data);)
+                        if(!stringValidationUtil!.isEmpty(this.data))
                         
                                     {
                                     

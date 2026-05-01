@@ -210,7 +210,7 @@ this.itemInterface!.setCategory(storeFrontInterface!.getCategoryPath() +this.ite
 ;
     
 
-                        if(!categoryFile!.isDirectory();)
+                        if(!categoryFile!.isDirectory())
                         
                                     {
                                     
@@ -406,7 +406,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-                        if(!categoryFile!.isDirectory();)
+                        if(!categoryFile!.isDirectory())
                         
                                     {
                                     stringBuffer!.append("Category ");
@@ -523,7 +523,7 @@ var size = size
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     
@@ -665,7 +665,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                         
                                     {
                                     
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(fileName, fileData!.MINLEN, fileData!.MAXLEN))
                         
                                     {
                                     stringBuffer!.append("FileName must be >");

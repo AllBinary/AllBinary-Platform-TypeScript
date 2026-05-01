@@ -258,7 +258,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
                 //@Throws(Error::class)
             
     setAndRemove(){
-this.string= this.gameNotification!.stringList!.removeAt(0); as string;
+this.string= this.gameNotification!.stringList!.removeAt(0) as string;
     
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;

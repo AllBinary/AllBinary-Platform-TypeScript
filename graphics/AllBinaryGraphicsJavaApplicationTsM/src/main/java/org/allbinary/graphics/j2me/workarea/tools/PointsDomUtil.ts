@@ -138,9 +138,9 @@ var pointVector = pointVector
                         if(index < size && index < size2)
                         
                                     {
-                                    rotatedFirstPoint= tempPointVector!.get(index); as GPoint;
+                                    rotatedFirstPoint= tempPointVector!.get(index) as GPoint;
     
-firstPoint= pointVector!.get(index); as GPoint;
+firstPoint= pointVector!.get(index) as GPoint;
     
 index++;
     

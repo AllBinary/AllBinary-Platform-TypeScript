@@ -272,7 +272,7 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
     var index: number = this.endList!.size() -1;
 index >= 0; index--)
         {
-endGeographicMapCellPosition= this.endList!.get(index); as GeographicMapCellPosition;
+endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosition;
     
 
                         if(startGeographicMapCellPosition != endGeographicMapCellPosition)

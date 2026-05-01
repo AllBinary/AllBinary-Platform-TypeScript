@@ -142,7 +142,7 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
         var rootCategoryInterface = rootCategoryInterface
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance(); as CategoryPropertiesInterface;
+this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance() as CategoryPropertiesInterface;
     
 this.categoryHierarchyInterface= new CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface;
     
@@ -564,7 +564,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 
     public isValid(): Boolean{
 
-                        if(!this.categoryPropertiesInterface!.isValid().valueOf();)
+                        if(!this.categoryPropertiesInterface!.isValid().valueOf())
                         
                                     {
                                     
@@ -601,7 +601,7 @@ index < size; index++)
 ;
     
 
-                        if(!categoryPropertiesInterface!.isValid().valueOf();)
+                        if(!categoryPropertiesInterface!.isValid().valueOf())
                         
                                     {
                                     
@@ -625,7 +625,7 @@ index < size; index++)
 ;
     
 
-                        if(!categoryInterface!.isValid().valueOf();)
+                        if(!categoryInterface!.isValid().valueOf())
                         
                                     {
                                     

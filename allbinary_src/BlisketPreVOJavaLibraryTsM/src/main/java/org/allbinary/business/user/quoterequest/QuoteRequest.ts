@@ -143,7 +143,7 @@ public constructor (hashMap: HashMap<any, any>){
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
 ;
     
-this.id= hashMap!.get(quoteRequestData!.ID); as string;
+this.id= hashMap!.get(quoteRequestData!.ID) as string;
     
 this.setUserName(hashMap!.get(UserData.USERNAME) as string);
     

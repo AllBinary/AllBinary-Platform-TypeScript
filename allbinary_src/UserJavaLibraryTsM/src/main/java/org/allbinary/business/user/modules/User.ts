@@ -301,7 +301,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
 ;
     
 
-                        if(!UserName.getInstance()!.isValid(this.userName).valueOf();)
+                        if(!UserName.getInstance()!.isValid(this.userName).valueOf())
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -310,7 +310,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                                     }
                                 
 
-                        if(!this.password.isValid().valueOf();)
+                        if(!this.password.isValid().valueOf())
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -323,7 +323,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);)
+                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN))
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -332,7 +332,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);)
+                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN))
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -399,7 +399,7 @@ stringBuffer!.append(UserName.getValidationInfo(this.userName));
 stringBuffer!.append(this.password.getValidationInfo());
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN);)
+                        if(!stringValidationUtil!.isValidRequired(this.firstName, 1, UserData.MAXLEN))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid First Name.<br />");
@@ -408,7 +408,7 @@ stringBuffer!.append(this.password.getValidationInfo());
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN);)
+                        if(!stringValidationUtil!.isValidRequired(this.lastName, 1, UserData.MAXLEN))
                         
                                     {
                                     stringBuffer!.append("Please enter a valid Last Name.<br />");

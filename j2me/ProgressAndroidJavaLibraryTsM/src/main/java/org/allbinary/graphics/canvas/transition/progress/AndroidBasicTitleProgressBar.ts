@@ -261,7 +261,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 
         try {
             
-                        if(!this.isBackground();)
+                        if(!this.isBackground())
                         
                                     {
                                     this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);

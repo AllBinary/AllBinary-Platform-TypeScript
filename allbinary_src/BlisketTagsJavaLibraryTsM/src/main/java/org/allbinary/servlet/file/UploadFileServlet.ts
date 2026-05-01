@@ -237,7 +237,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
                                     }
                                 
 
-                        if(!StreamUtil.getInstance()!.close(inputStream);)
+                        if(!StreamUtil.getInstance()!.close(inputStream))
                         
                                     {
                                     

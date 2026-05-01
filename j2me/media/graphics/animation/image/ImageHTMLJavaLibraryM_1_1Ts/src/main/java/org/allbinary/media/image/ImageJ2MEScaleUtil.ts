@@ -131,7 +131,7 @@ scaledImages[index]= this.scale(images[index]!, width, height);
     var originalHTMLImage: PlaynMutableImage = image as PlaynMutableImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
 
                                     }
@@ -141,7 +141,7 @@ originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
     var originalHTMLImage: PlaynImmutableImage = image as PlaynImmutableImage;
 ;
     
-originalPlayNImage= originalHTMLImage!.getImage(); as playn.core.Image;
+originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
     
 
                         }

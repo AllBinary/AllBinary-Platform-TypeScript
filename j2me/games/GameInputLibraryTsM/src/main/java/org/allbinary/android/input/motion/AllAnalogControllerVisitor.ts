@@ -75,7 +75,7 @@ export class AllAnalogControllerVisitor extends AnalogControllerVisitor {
     var index: number = analogLocationInputList!.size() -1;
 index >= 0; index--)
         {
-analogLocationInput= analogLocationInputList!.get(index); as AnalogLocationInput;
+analogLocationInput= analogLocationInputList!.get(index) as AnalogLocationInput;
     
 analogLocationInputProcessor!.process(allbinaryLayerManager, analogLocationInput);
     

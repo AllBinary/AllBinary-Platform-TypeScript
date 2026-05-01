@@ -113,7 +113,7 @@ this.eventListenerInterfaceList= new BasicArrayListD();
     var index: number = 0;
 index < size; index++)
         {
-eventListenerInterface= vector.get(index); as RawKeyEventListener;
+eventListenerInterface= vector.get(index) as RawKeyEventListener;
     
 this.addListener(eventListenerInterface);
     
@@ -125,7 +125,7 @@ this.addListener(eventListenerInterface);
     public addListenerSingleThreaded(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -139,7 +139,7 @@ this.addListener(eventListenerInterface);
     public addListener(eventListenerInterface: RawKeyEventListener){
     //var eventListenerInterface = eventListenerInterface
 
-                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface);)
+                        if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
                                     {
                                     this.eventListenerInterfaceList!.add(eventListenerInterface);
@@ -183,7 +183,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as RawKeyEventListener;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener;
     
 this.process(keyCode, deviceId, repeated, eventListenerInterface);
     
@@ -250,7 +250,7 @@ stringBuffer!.appendint(this.eventListenerInterfaceList!.size());
         {
 
         try {
-            eventListenerInterface= this.eventListenerInterfaceList!.get(index); as RawKeyEventListener;
+            eventListenerInterface= this.eventListenerInterfaceList!.get(index) as RawKeyEventListener;
     
 stringBuffer!.append(LISTENER_LABEL);
     

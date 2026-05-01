@@ -165,7 +165,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
     var index: number = 0;
 index < newSize; index++)
         {
-newPartInterfaceArray[index]= this.list.get(index); as PartInterface;
+newPartInterfaceArray[index]= this.list.get(index) as PartInterface;
     
 }
 

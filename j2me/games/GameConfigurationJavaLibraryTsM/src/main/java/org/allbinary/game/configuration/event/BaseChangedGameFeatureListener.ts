@@ -125,7 +125,7 @@ this.list.remove(gameFeature);
 this.changed= initialized;
     
 
-                        if(!this.isChanged();)
+                        if(!this.isChanged())
                         
                                     {
                                     this.list.clear();

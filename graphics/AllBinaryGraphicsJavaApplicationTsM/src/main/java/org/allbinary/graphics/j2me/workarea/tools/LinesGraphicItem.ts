@@ -429,7 +429,7 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
     var lastPoint: number = this.points.getSize() -1;
 ;
     
-point= this.points.getPoints()!.removeAt(lastPoint); as GPoint;
+point= this.points.getPoints()!.removeAt(lastPoint) as GPoint;
     
 
     var index: number = this.pointTreeNodeVector!.length -1;
@@ -594,7 +594,7 @@ graphics.setStroke(new BasicStroke(x));
                                 )
                         
                                     {
-                                    this.currentMousePoint= this.points.getPoints()!.removeAt(this.points.getSize() -1); as GPoint;
+                                    this.currentMousePoint= this.points.getPoints()!.removeAt(this.points.getSize() -1) as GPoint;
     
 
                                     }
@@ -613,7 +613,7 @@ graphics.setStroke(new BasicStroke(x));
                         if(size > 0)
                         
                                     {
-                                    firstPoint= tempPointVector!.get(0); as GPoint;
+                                    firstPoint= tempPointVector!.get(0) as GPoint;
     
 
                                     }

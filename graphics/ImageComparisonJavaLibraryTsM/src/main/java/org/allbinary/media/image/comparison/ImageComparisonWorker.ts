@@ -173,9 +173,9 @@ timeHelper!.setStartTimeTNT();
     var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent[] = new Array(2);
 ;
     
-capturedImageWorkerResultsEvent[0]= this.bufferedImageVector!.get(0); as CapturedImageWorkerResultsEvent;
+capturedImageWorkerResultsEvent[0]= this.bufferedImageVector!.get(0) as CapturedImageWorkerResultsEvent;
     
-capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1); as CapturedImageWorkerResultsEvent;
+capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1) as CapturedImageWorkerResultsEvent;
     
 
                         if(this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[0]!.getBufferedImage()) && this.imageComparatorConstraintsInterface!.isImageValid(capturedImageWorkerResultsEvent[1]!.getBufferedImage()))

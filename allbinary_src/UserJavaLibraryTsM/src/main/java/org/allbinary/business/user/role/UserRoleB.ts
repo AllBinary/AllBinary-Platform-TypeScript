@@ -65,7 +65,7 @@ var role = role
 UserRoleFactory.getInstance();
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(role);)
+                        if(!StringValidationUtil.getInstance()!.isEmpty(role))
                         
                                     {
                                     

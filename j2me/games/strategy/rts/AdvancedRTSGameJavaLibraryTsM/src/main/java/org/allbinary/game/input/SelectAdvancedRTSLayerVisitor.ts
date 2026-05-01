@@ -117,7 +117,7 @@ var anyType = anyType
     var index: number = list.size() -1;
 index >= 0; index--)
         {
-currentRTSLayer= list.get(index); as RTSLayer;
+currentRTSLayer= list.get(index) as RTSLayer;
     
 
                         if(currentRTSLayer!.getType() == UnitLayer.getStaticType())

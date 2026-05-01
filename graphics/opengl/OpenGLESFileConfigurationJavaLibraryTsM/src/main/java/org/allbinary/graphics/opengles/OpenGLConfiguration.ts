@@ -441,7 +441,7 @@ dataOutputStream!.flush();
                         
                                     {
                                     
-                        if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
+                        if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     this.logUtil!.putF("Turning on OpenGL", this, commonStrings!.INIT);
@@ -523,7 +523,7 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
                         
                                     {
                                     
-                        if(!this.isOpenGL();)
+                        if(!this.isOpenGL())
                         
                                     {
                                     this.setOpenGL(true);

@@ -238,7 +238,7 @@ this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
                         
                                     {
                                     
-                        if(!JavaHelpSetNotifier.isNotified(helpSet);)
+                        if(!JavaHelpSetNotifier.isNotified(helpSet))
                         
                                     {
                                     

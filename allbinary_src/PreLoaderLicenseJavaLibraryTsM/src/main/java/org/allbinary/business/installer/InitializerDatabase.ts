@@ -278,7 +278,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 ;
     
 
-                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);)
+                        if(!this.isJdbcDriverValid(this.adminJdbcDriver))
                         
                                     {
                                     isValid= false;
@@ -291,7 +291,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX))
                         
                                     {
                                     isValid= false;
@@ -300,7 +300,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, InitializerDatabase.MINPASSWORD, InitializerDatabase.MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, InitializerDatabase.MINPASSWORD, InitializerDatabase.MAX))
                         
                                     {
                                     isValid= false;
@@ -352,7 +352,7 @@ stringBuffer!.append(") you have provided is not valid.<br/>");
 ;
     
 
-                        if(!this.isJdbcDriverValid(this.adminJdbcDriver);)
+                        if(!this.isJdbcDriverValid(this.adminJdbcDriver))
                         
                                     {
                                     isJdbcDriversValid= false;
@@ -367,7 +367,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
 ;
     
 
-                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX);)
+                        if(!stringValidationUtil!.isValidRequired(this.adminDbUserName, InitializerDatabase.MIN, InitializerDatabase.MAX))
                         
                                     {
                                     stringBuffer!.append("Admin username should be < " +MAX +" and > " +MIN +" characters in length.<br />");
@@ -376,7 +376,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.getAdminJdbcDriver())
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, InitializerDatabase.MINPASSWORD, InitializerDatabase.MAX);)
+                        if(!stringValidationUtil!.isValidNotRequired(this.adminDbPassword, InitializerDatabase.MINPASSWORD, InitializerDatabase.MAX))
                         
                                     {
                                     stringBuffer!.append("Admin password should be < " +MAX +" and > " +MINPASSWORD +" characters in length.<br />");

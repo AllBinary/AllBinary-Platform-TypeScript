@@ -89,7 +89,7 @@ export class GameFeatureItemStateListener
     public static add(gameFeature: GameFeature){
 var gameFeature = gameFeature
 
-                        if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature);)
+                        if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature))
                         
                                     {
                                     GameFeatureItemStateListener.toggleList!.add(gameFeature);

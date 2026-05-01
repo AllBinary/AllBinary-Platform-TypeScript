@@ -132,7 +132,7 @@ console.log("Result: \n" +result.toString());
 console.log("IOException Trying Other Servers");
     
 
-                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED);)
+                        if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
                         
                                     {
                                     

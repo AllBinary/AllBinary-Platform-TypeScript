@@ -189,7 +189,7 @@ index < size; index++)
         {
 key= keyArray[index]! as string;
     
-idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
+idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList;
     
 
                         if(key.equals(basicTopViewGeographicMapStrings!.WALL))

@@ -20,7 +20,7 @@
 
             import { System } from "../../../../../../java/lang/System";
         
-            import { Integer } from "../../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../../java/lang/Thread.js";
         
 import { File } from "../../../../../../java/io/File.js";
 
@@ -240,10 +240,10 @@ this.logUtil!.putF("Jar Module Files: " +jarFileBasicArrayList, this, "getAllJar
     var index: number = 0;
 index < size; index++)
         {
-file= jarFileBasicArrayList!.get(index); as File;
+file= jarFileBasicArrayList!.get(index) as File;
     
 
-                        if(!file.isDirectory();)
+                        if(!file.isDirectory())
                         
                                     {
                                     
@@ -276,7 +276,7 @@ file= jarFileBasicArrayList!.get(index); as File;
                         if(symbolicName != 
                                     null
                                 )
-                        hashMap!.put(symbolicName, new URL(FILE +file.getAbsolutePath()));
+                        hashMap!.put(symbolicName, new URL(FILE +file.getAbsolutePath()))
 
                         }
                             
@@ -414,7 +414,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isIns
     var index: number = 0;
 index < size; index++)
         {
-nextSymbolicName= list.get(index); as string;
+nextSymbolicName= list.get(index) as string;
     
 
                         if(nextSymbolicName!.localeCompare(symbolicName) == 0)
@@ -481,7 +481,7 @@ index < size; index++)
 ;
     
 
-                        if(!this.isInstalled(symbolicName);)
+                        if(!this.isInstalled(symbolicName))
                         
                                     {
                                     vector.add(hashMap!.get(symbolicName as Object));

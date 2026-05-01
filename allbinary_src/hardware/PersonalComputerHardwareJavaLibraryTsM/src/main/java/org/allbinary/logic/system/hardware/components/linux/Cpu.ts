@@ -189,7 +189,7 @@ this.cpuHashMap= new HashMap<any, any>();
                                     }
                                 
 
-                        if(!fileVector!.isEmpty();)
+                        if(!fileVector!.isEmpty())
                         
                                     {
                                     
@@ -243,28 +243,28 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
     
 
                         if(key.indexOf(CpuInfo.PROCESSOR.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.PROCESSOR, value);
+                        this.cpuHashMap!.put(CpuInfo.PROCESSOR, value)
 
                         if(key.indexOf(CpuInfo.VENDORID.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.VENDORID, value);
+                        this.cpuHashMap!.put(CpuInfo.VENDORID, value)
 
                         if(key.indexOf(CpuInfo.CPUFAMILY.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.CPUFAMILY, value);
+                        this.cpuHashMap!.put(CpuInfo.CPUFAMILY, value)
 
                         if(key.indexOf(CpuInfo.MODEL.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.MODEL, value);
+                        this.cpuHashMap!.put(CpuInfo.MODEL, value)
 
                         if(key.indexOf(CpuInfo.MODELNAME.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.MODELNAME, value);
+                        this.cpuHashMap!.put(CpuInfo.MODELNAME, value)
 
                         if(key.indexOf(CpuInfo.STEPPING.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.STEPPING, value);
+                        this.cpuHashMap!.put(CpuInfo.STEPPING, value)
 
                         if(key.indexOf(CpuInfo.CPUMHZ.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.CPUMHZ, value);
+                        this.cpuHashMap!.put(CpuInfo.CPUMHZ, value)
 
                         if(key.indexOf(CpuInfo.CACHESIZE.toString()) >= 0)
-                        this.cpuHashMap!.put(CpuInfo.CACHESIZE, value);
+                        this.cpuHashMap!.put(CpuInfo.CACHESIZE, value)
 
                                     }
                                 
@@ -281,7 +281,7 @@ nextLine= lineNumberReader!.readLine();
                         if(lineNumberReader != 
                                     null
                                 )
-                        lineNumberReader!.close();
+                        lineNumberReader!.close()
 
          }
         

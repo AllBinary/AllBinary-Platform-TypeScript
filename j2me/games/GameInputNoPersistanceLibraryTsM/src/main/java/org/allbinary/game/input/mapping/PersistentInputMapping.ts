@@ -256,9 +256,9 @@ enumeration= hashtable.keys();
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-mappedToInput= this.enumerationUtil!.nextElement(enumeration)!; as Input;
+mappedToInput= this.enumerationUtil!.nextElement(enumeration)! as Input;
     
-gameActionInput= hashtable.get(mappedToInput as Object); as Input;
+gameActionInput= hashtable.get(mappedToInput as Object) as Input;
     
 totalMappedTo++;
     

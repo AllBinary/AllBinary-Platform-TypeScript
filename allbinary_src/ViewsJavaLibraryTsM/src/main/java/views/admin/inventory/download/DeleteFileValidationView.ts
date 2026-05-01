@@ -125,9 +125,9 @@ this.getFormData();
 
                                     }
                                 
-this.id= hashMap!.get(BasicItemData.ID); as string;
+this.id= hashMap!.get(BasicItemData.ID) as string;
     
-this.downloadItemId= hashMap!.get(DownloadItemData.ID); as string;
+this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
     
 }
 

@@ -166,7 +166,7 @@ this.multiPlayerType= multiPlayerType;
 var collidableInferface = collidableInferface
 super.setCollidableInferface(collidableInferface);
     
-this.collidableWeaponBehavior= this.getCollidableInferface(); as CollidableWeaponBehavior;
+this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeaponBehavior;
     
 }
 
@@ -381,7 +381,7 @@ this.scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompe
     public getDamage(damageType: number): number{
 var damageType = damageType
 
-                        if(!this.isExhausted();)
+                        if(!this.isExhausted())
                         
                                     {
                                     

@@ -918,7 +918,7 @@ this.nextAttempt();
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
     
-this.request= pageContext!.getRequest(); as HttpServletRequest;
+this.request= pageContext!.getRequest() as HttpServletRequest;
     
 this.weblisketSession= new BasicWeblisketSession(pageContext);
     
@@ -953,7 +953,7 @@ this.getFormData();
                                     }
                                 
 
-                        if(!this.changePassword();)
+                        if(!this.changePassword())
                         
                                     {
                                     pageContext!.getOut()!.print("Password Change Attempt Failed.<p>");

@@ -4,7 +4,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
 
@@ -245,7 +245,7 @@ this.nextSongSound= NoSound.getInstance();
                         if(nextSongSound == NoSound.getInstance())
                         
                                     {
-                                    this.currentSongSound= BasicArrayListUtil.getInstance()!.getRandom(this.songList); as Sound;
+                                    this.currentSongSound= BasicArrayListUtil.getInstance()!.getRandom(this.songList) as Sound;
     
 
                                     }

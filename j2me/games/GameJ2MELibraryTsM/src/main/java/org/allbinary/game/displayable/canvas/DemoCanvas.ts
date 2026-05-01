@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
@@ -1103,7 +1103,7 @@ this.logUtil!.putF("Not Implemented since not a game", this, "setGameOver");
                         
                                     {
                                     
-                        if(!this.highScoresHelper!.isAnyHighScores();)
+                        if(!this.highScoresHelper!.isAnyHighScores())
                         
                                     {
                                     newState= 0;
@@ -1244,7 +1244,7 @@ this.highScoresPaintable= NullPaintable.getInstance();
     var randomLevel: number = this.getNextRandom()!;
 ;
     
-this.gameCanvas= this.createRunnable(randomLevel); as AllBinaryGameCanvas;
+this.gameCanvas= this.createRunnable(randomLevel) as AllBinaryGameCanvas;
     
 this.basicColor= this.gameCanvas!.getLayerManager()!.getForegroundBasicColor();
     
@@ -1299,7 +1299,7 @@ this.threadFactoryUtil!.start(this.canvasThread);
                         
                                     {
                                     
-                        if(!PrimaryPlayerQueueFactory.getInstance()!.process();)
+                        if(!PrimaryPlayerQueueFactory.getInstance()!.process())
                         
                                     {
                                     SecondaryPlayerQueueFactory.getInstance()!.process();
@@ -1376,7 +1376,7 @@ this.start();
                         
                                     {
                                     
-                        if(!this.demoGameRunnable!.isRunning();)
+                        if(!this.demoGameRunnable!.isRunning())
                         
                                     {
                                     this.startDemoGame();

@@ -310,7 +310,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 this.processTargetList();
     
 
-                        if(!this.waypointPathRunnable!.isRunning();)
+                        if(!this.waypointPathRunnable!.isRunning())
                         
                                     {
                                     this.processWaypoint();
@@ -329,7 +329,7 @@ this.processTargetList();
                         }
                             
 
-                        if(!this.waypointPathRunnable!.isRunning();)
+                        if(!this.waypointPathRunnable!.isRunning())
                         
                                     {
                                     this.processTargeting();
@@ -348,7 +348,7 @@ this.processTargetList();
                         }
                             
 
-                        if(!this.waypointPathRunnable!.isRunning();)
+                        if(!this.waypointPathRunnable!.isRunning())
                         
                                     {
                                     this.teleportIfNoProgress();
@@ -1383,7 +1383,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
     //var allbinaryLayer = allbinaryLayer
     //var cellPosition = cellPosition
 
-                        if(!this.buildingSteeringVisitor!.getList()!.contains(allbinaryLayer);)
+                        if(!this.buildingSteeringVisitor!.getList()!.contains(allbinaryLayer))
                         
                                     {
                                     this.buildingSteeringVisitor!.getList()!.add(allbinaryLayer);
@@ -1394,7 +1394,7 @@ this.buildingSteeringVisitor!.getPositionList()!.add(cellPosition);
                                     }
                                 
 
-                        if(!this.getSteeringVisitorList()!.contains(this.buildingSteeringVisitor);)
+                        if(!this.getSteeringVisitorList()!.contains(this.buildingSteeringVisitor))
                         
                                     {
                                     this.getSteeringVisitorList()!.add(this.buildingSteeringVisitor);

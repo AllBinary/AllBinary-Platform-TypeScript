@@ -156,7 +156,7 @@ var bufferedImage = bufferedImage
 ;
     
 
-                        if(!iter.hasNext();)
+                        if(!iter.hasNext())
                         
                                     {
                                     this.logUtil!.putF("Unable to save image to jpeg file type.", this, commonStrings!.SAVE);
@@ -170,7 +170,7 @@ var bufferedImage = bufferedImage
 
                                     }
                                 
-writer= iter.next(); as ImageWriter;
+writer= iter.next() as ImageWriter;
     
 ios= ImageIO.createImageOutputStream(file);
     

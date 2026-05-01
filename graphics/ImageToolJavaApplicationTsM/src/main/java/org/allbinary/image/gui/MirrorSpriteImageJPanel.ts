@@ -18,7 +18,7 @@
 
 
 
-            import { Integer } from "../../../../java/lang/Thread.js";
+            import { Thread } from "../../../../java/lang/Thread.js";
         
 import { awt } from "../../../../java/awt.js";
 
@@ -165,7 +165,7 @@ this@MirrorSpriteImageJPanel.getParent()!.repaint();
 ;
     
 
-                        if(!this@MirrorSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected();)
+                        if(!this@MirrorSpriteImageJPanel.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     

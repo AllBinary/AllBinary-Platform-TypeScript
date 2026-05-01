@@ -101,7 +101,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
                         if(this.newStoreFrontInterface!.getName() == 
                                     null
                                 )
-                        this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName());
+                        this.newStoreFrontInterface!.setName(this.getWeblisketSession()!.getStoreName())
 }
 
 

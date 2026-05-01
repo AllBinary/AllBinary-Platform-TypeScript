@@ -226,7 +226,7 @@ stringBuffer!.append(imageType!.getName());
     
 
                         if(index < size -1)
-                        stringBuffer!.append(", ");
+                        stringBuffer!.append(", ")
 }
 
 

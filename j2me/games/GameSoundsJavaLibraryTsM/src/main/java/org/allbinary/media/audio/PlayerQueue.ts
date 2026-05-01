@@ -85,7 +85,7 @@ var sound = sound
 
         try {
             
-                        if(!this.list.contains(sound);)
+                        if(!this.list.contains(sound))
                         
                                     {
                                     this.list.add(sound);
@@ -119,7 +119,7 @@ PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
                         if(this.list.size() > 0)
                         
                                     {
-                                    sound= this.list.removeAt(0); as Sound;
+                                    sound= this.list.removeAt(0) as Sound;
     
 
                         if(sound != 

@@ -391,7 +391,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.categoryAbPath!.toString(), AbSqlData.MINSTRING, AbSqlData.MAXSTRING);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.categoryAbPath!.toString(), AbSqlData.MINSTRING, AbSqlData.MAXSTRING))
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -400,7 +400,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                                     }
                                 
 
-                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.themeName, AbSqlData.MINSTRING, AbSqlData.MAXSTRING);)
+                        if(!StringValidationUtil.getInstance()!.isValidRequired(this.themeName, AbSqlData.MINSTRING, AbSqlData.MAXSTRING))
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -409,7 +409,7 @@ this.styleValidationInterface= new CssStyleValidation(document);
                                     }
                                 
 
-                        if(!this.getCssStyleValidation()!.isValid().valueOf();)
+                        if(!this.getCssStyleValidation()!.isValid().valueOf())
                         
                                     {
                                     isValid= Boolean.FALSE;

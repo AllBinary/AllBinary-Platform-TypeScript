@@ -99,7 +99,7 @@ public constructor (aPath: string){
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aPath);)
+                        if(!stringValidationUtil!.isEmpty(aPath))
                         
                                     {
                                     this.schema= this.getSchema(aPath);
@@ -129,7 +129,7 @@ var name = name
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(aPath);)
+                        if(!stringValidationUtil!.isEmpty(aPath))
                         
                                     {
                                     this.schema= this.getSchema(aPath);
@@ -145,7 +145,7 @@ this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath
                             this.init();
     
 
-                        if(!stringValidationUtil!.isEmpty(name);)
+                        if(!stringValidationUtil!.isEmpty(name))
                         
                                     {
                                     this.nameP= name;
@@ -224,7 +224,7 @@ var aPath = aPath
 ;
     
 
-                        if(!this.hasSchema();)
+                        if(!this.hasSchema())
                         
                                     {
                                     tempPath= this.abPathUtil!.adjustStart(tempPath);

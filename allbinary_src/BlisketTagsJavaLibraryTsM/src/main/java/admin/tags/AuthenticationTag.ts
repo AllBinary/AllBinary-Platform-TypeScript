@@ -885,7 +885,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(!this.newPassword();)
+                        if(!this.newPassword())
                         
                                     {
                                     pageContext!.getOut()!.print("New Password Request Failed.<p/>");
@@ -928,7 +928,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(!this.changePassword();)
+                        if(!this.changePassword())
                         
                                     {
                                     pageContext!.getOut()!.print("Password Change Attempt Failed.<p/>");
