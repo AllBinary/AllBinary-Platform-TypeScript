@@ -65,7 +65,7 @@ export class MotionEventFactory
     private readonly source: any
 
     private readonly id: number
-public constructor (source: any, id: number){
+public constructor (source: any = {}, id: number){
 
             super();
         var source = source

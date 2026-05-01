@@ -48,7 +48,7 @@ export class ArtificialIntelligenceFactory
 
                 //@Throws(Error::class)
             
-    public getInstance(anyType: any): ArtificialIntelligence{
+    public getInstance(anyType: any = {}): ArtificialIntelligence{
 var anyType = anyType
 
 

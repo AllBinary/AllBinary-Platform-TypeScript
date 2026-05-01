@@ -54,7 +54,7 @@ export class TsUtil
 }
 
 
-    public hashCode(anyType: any): number{
+    public hashCode(anyType: any = {}): number{
 var anyType = anyType
 
 

@@ -108,7 +108,7 @@ protected constructor (){
 
                 //@Throws(Error::class)
             
-    public init(geographicMapInterface: any, totalPaths: number){
+    public init(geographicMapInterface: any = {}, totalPaths: number){
     //var geographicMapInterface = geographicMapInterface
     //var totalPaths = totalPaths
 }

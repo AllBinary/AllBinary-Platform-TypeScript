@@ -87,7 +87,7 @@ var log = log
 }
 
 
-    public putF(specialMessage: string, anyType: any, functionName: string){
+    public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -99,7 +99,7 @@ var log = log
 }
 
 
-    public put(specialMessage: string, anyType: any, functionName: string, exception: any){
+    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName

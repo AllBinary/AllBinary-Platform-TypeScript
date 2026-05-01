@@ -76,7 +76,7 @@ public constructor (dbConnectionInfo: DbConnectionInfo){
 }
 
 
-    setHelper(anyType: any){
+    setHelper(anyType: any = {}){
 var anyType = anyType
 this.anyType= anyType;
     

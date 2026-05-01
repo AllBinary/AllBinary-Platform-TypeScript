@@ -74,7 +74,7 @@ export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
 }
 
 
-    public setShaderComposite(object3d: any){
+    public setShaderComposite(object3d: any = {}){
     //var object3d = object3d
 }
 

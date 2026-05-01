@@ -55,7 +55,7 @@ protected constructor (){
                 //@Throws(Error::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    offer(anyType: any): boolean{
+    offer(anyType: any = {}): boolean{
 var anyType = anyType
 this.queueVector!.add(anyType);
     
@@ -69,7 +69,7 @@ this.queueVector!.add(anyType);
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    remove(anyType: any){
+    remove(anyType: any = {}){
 var anyType = anyType
 this.queueVector!.remove(anyType);
     

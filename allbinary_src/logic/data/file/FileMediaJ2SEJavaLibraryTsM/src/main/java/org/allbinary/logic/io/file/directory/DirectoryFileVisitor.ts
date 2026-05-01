@@ -69,7 +69,7 @@ visit.
 }
 
 
-    public visit(anyType: any): any{
+    public visit(anyType: any = {}): any{
 var anyType = anyType
 
     var file: File = anyType as File;

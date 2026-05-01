@@ -64,7 +64,7 @@ export class PathFindingNodeCost extends PathFindingNode implements Comparable<P
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
     public pathFindingNodeCostInfoP: PathFindingNodeCostInfo
-public constructor (parent: any, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
+public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
             super(parent, geographicMapCellPosition);
                         //var parent = parent
     //var geographicMapCellPosition = geographicMapCellPosition

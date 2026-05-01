@@ -51,7 +51,7 @@ export class PlatformImage
          {
         
 
-    public getImage(graphicsSurface2: any): any{
+    public getImage(graphicsSurface2: any = {}): any{
     //var graphicsSurface2 = graphicsSurface2
 
 
@@ -62,7 +62,7 @@ export class PlatformImage
 }
 
 
-    public getSurfaceWidth(graphicsSurface2: any, width: number): number{
+    public getSurfaceWidth(graphicsSurface2: any = {}, width: number): number{
     //var graphicsSurface2 = graphicsSurface2
     //var width = width
 
@@ -74,7 +74,7 @@ export class PlatformImage
 }
 
 
-    public getSurfaceHeight(graphicsSurface2: any, height: number): number{
+    public getSurfaceHeight(graphicsSurface2: any = {}, height: number): number{
     //var graphicsSurface2 = graphicsSurface2
     //var height = height
 
@@ -110,7 +110,7 @@ export class PlatformImage
 }
 
 
-    public getGraphics(graphicsSurface: any, width: number, height: number, image: Image): javax.microedition.lcdui.Graphics{
+    public getGraphics(graphicsSurface: any = {}, width: number, height: number, image: Image): javax.microedition.lcdui.Graphics{
     //var graphicsSurface = graphicsSurface
     //var width = width
     //var height = height
@@ -123,7 +123,7 @@ export class PlatformImage
 }
 
 
-    public drawImage(image: Image, x: number, y: number, anchor: number, g2: javax.microedition.lcdui.Graphics, g: any){
+    public drawImage(image: Image, x: number, y: number, anchor: number, g2: javax.microedition.lcdui.Graphics, g: any = {}){
     //var image = image
     //var x = x
     //var y = y

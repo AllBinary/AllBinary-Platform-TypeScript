@@ -96,7 +96,7 @@ export class MusicManager
     private readonly playerListener: PlayerListener = new PlayerListener()
                                 {
                                 
-    public playerUpdate(player: Player, event: string, eventData: any){
+    public playerUpdate(player: Player, event: string, eventData: any = {}){
     //var player = player
     //var event = event
     //var eventData = eventData

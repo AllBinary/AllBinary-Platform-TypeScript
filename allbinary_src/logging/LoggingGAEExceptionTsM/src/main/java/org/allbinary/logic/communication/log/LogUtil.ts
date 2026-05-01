@@ -150,7 +150,7 @@ this.logger.log(Level.INFO, message);
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
+    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName

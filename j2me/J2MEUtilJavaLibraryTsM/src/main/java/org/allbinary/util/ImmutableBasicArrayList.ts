@@ -59,7 +59,7 @@ this.name= name;
 }
 
 
-    public add(e: any): boolean{
+    public add(e: any = {}): boolean{
 var e = e
 ForcedLogUtil.log(this.name, this);
     
@@ -72,7 +72,7 @@ ForcedLogUtil.log(this.name, this);
 }
 
 
-    public addAt(index: number, element: any){
+    public addAt(index: number, element: any = {}){
 var index = index
 var element = element
 ForcedLogUtil.log(this.name, this);

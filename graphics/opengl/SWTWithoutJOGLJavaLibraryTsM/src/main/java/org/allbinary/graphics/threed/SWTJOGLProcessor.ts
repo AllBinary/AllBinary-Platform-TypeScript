@@ -64,14 +64,14 @@ export class SWTJOGLProcessor
     public glHolder: GLHolder = new GLHolder()
                                 {
                                 
-    public run(renderer: any){
+    public run(renderer: any = {}){
 var renderer = renderer
 }
 
                                 }
                             ;
 
-    public init(display: any, comp: any){
+    public init(display: any = {}, comp: any = {}){
     //var display = display
     //var comp = comp
 }
@@ -87,7 +87,7 @@ var renderer = renderer
 }
 
 
-    public setRenderer(renderer: any){
+    public setRenderer(renderer: any = {}){
     //var renderer = renderer
 }
 
@@ -110,7 +110,7 @@ var renderer = renderer
 }
 
 
-    public onSurfaceChanged(event: any){
+    public onSurfaceChanged(event: any = {}){
     //var event = event
 }
 

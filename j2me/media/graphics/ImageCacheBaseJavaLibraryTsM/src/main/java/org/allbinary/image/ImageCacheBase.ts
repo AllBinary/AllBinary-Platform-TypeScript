@@ -119,7 +119,7 @@ this.availableListOfList[index]= new BasicArrayListD();
 }
 
 
-    getImage(resourceId: any): Image{
+    getImage(resourceId: any = {}): Image{
     //var resourceId = resourceId
 
     var imageCanBeNull: any = this.hashtable.get(resourceId as Object);
@@ -269,7 +269,7 @@ index < size; index++)
 
                 //@Throws(Error::class)
             
-    public getWithKey(key: any): Image{
+    public getWithKey(key: any = {}): Image{
     //var key = key
 
 
@@ -296,7 +296,7 @@ index < size; index++)
 
                 //@Throws(Error::class)
             
-    createImageFromInputStream(key: any, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key
     //var inputStream = inputStream
 

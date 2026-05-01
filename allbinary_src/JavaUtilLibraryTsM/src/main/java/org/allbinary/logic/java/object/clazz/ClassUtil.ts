@@ -54,7 +54,7 @@ export class ClassUtil
          {
         
 
-    public static viewAll(anyType: any, lineBreak: string): string{
+    public static viewAll(anyType: any = {}, lineBreak: string): string{
 var anyType = anyType
 var lineBreak = lineBreak
 

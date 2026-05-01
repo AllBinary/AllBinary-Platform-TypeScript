@@ -51,7 +51,7 @@ export class CapturedImageWorkerResultsEvent extends AllBinaryEventObject {
     private readonly frame: number
 
     private bufferedImage: BufferedImage
-public constructor (anyType: any, frame: number, bufferedImage: BufferedImage){
+public constructor (anyType: any = {}, frame: number, bufferedImage: BufferedImage){
             super(anyType);
                     var anyType = anyType
 var frame = frame

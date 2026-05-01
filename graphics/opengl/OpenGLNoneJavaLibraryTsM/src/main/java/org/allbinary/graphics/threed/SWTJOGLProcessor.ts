@@ -59,7 +59,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public init(display: any, comp: any){
+    public init(display: any = {}, comp: any = {}){
     //var display = display
     //var comp = comp
 }
@@ -75,7 +75,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public setRenderer(renderer: any){
+    public setRenderer(renderer: any = {}){
     //var renderer = renderer
 }
 
@@ -98,7 +98,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public onSurfaceChanged(event: any){
+    public onSurfaceChanged(event: any = {}){
     //var event = event
 }
 

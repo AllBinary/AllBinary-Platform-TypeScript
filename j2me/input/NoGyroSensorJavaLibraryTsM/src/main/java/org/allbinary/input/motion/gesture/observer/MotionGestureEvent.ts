@@ -80,7 +80,7 @@ export class MotionGestureEvent extends AllBinaryEventObject {
     private previousPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
 
     private currentPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
-public constructor (source: any, id: number, motionGesture: MotionGestureInput){
+public constructor (source: any = {}, id: number, motionGesture: MotionGestureInput){
             super(source);
                     var source = source
 var id = id

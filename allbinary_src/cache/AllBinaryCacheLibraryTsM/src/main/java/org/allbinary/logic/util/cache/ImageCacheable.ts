@@ -46,7 +46,7 @@ export class ImageCacheable
         
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
-public constructor (name: string, anyType: any){
+public constructor (name: string, anyType: any = {}){
 
             super();
         var name = name

@@ -100,7 +100,7 @@ logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRU
     private currentTotalDigits: number= 0
 
     private readonly primitiveLongSingleton: PrimitiveLongSingleton = PrimitiveLongSingleton.getInstance()!;
-public constructor (powerOfTen: number, unused: any){
+public constructor (powerOfTen: number, unused: any = {}){
 
             super();
         var powerOfTen = powerOfTen

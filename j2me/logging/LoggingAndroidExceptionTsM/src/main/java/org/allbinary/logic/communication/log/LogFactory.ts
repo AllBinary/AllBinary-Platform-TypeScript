@@ -44,7 +44,7 @@ import { Log } from "./Log.js";
          {
         
 
-    /*actual*/ public static getInstance(specialMessage: string, anyType: any, functionName: string, exception: any): Log{
+    /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -58,7 +58,7 @@ var exception = exception
 }
 
 
-    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any, functionName: string): Log{
+    /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -71,7 +71,7 @@ var functionName = functionName
 }
 
 
-    /*actual*/ public static getInstanceSE(specialMessage: string, className: string, functionName: string, exception: any): Log{
+    /*actual*/ public static getInstanceSE(specialMessage: string, className: string, functionName: string, exception: any = {}): Log{
 var specialMessage = specialMessage
 var className = className
 var functionName = functionName

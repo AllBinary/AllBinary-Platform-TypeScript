@@ -46,7 +46,7 @@ export class CapitalEvent extends AllBinaryEventObject {
         
 
     private value: number= 0
-public constructor (anyType: any){
+public constructor (anyType: any = {}){
             super(anyType);
                     var anyType = anyType
 

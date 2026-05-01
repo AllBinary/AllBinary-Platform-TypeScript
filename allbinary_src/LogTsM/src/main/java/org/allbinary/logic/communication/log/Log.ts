@@ -57,7 +57,7 @@ export class Log
     private readonly functionName: string
 
     private readonly exception: any
-public constructor (specialMessage: string, anyType: any, functionName: string, exception: any){
+public constructor (specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
             super();
             //var specialMessage = specialMessage

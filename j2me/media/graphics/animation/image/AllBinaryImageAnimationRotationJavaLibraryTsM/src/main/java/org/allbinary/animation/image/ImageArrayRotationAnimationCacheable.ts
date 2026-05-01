@@ -53,7 +53,7 @@ import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotatio
 
 export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {
         
-public constructor (anyType: any, animationBehavior: AnimationBehavior){
+public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
             super(
                                     (anyType as ImageArrayRotationAnimationInfo).getImageArray(), 
                                     (anyType as ImageArrayRotationAnimationInfo).getAngleInfoP(), 

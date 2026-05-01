@@ -55,7 +55,7 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
 
                 //@Throws(Error::class)
             
-    static createAnimation(anyType: any, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
+    static createAnimation(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
     //var anyType = anyType
     //var animationBehavior = animationBehavior
 

@@ -296,7 +296,7 @@ public constructor (){
         }
 
 
-    public addListener(renderer: any){
+    public addListener(renderer: any = {}){
 var renderer = renderer
 }
 
@@ -858,7 +858,7 @@ listOfList[foundIndex]!.add(image);
 
                 //@Throws(Error::class)
             
-    public getWithKey(key: any): Image{
+    public getWithKey(key: any = {}): Image{
     //var key = key
 
     var image: Image = this.getImage(key)!;
@@ -913,7 +913,7 @@ this.hashtable.put(key, image);
 }
 
 
-    public getIndex(key: any): number{
+    public getIndex(key: any = {}): number{
     //var key = key
 
     var gdResources: GDResources = GDResources.getInstance()!;
@@ -964,7 +964,7 @@ this.logUtil!.putF(new StringMaker().
 
                 //@Throws(Error::class)
             
-    createImageFromInputStream(key: any, inputStream: InputStream): Image{
+    createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key
     //var inputStream = inputStream
 

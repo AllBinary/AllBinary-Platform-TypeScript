@@ -42,7 +42,7 @@ import { EventObject } from "../../../../../java/util/EventObject.js";
         
 export class AllBinaryEventObject extends EventObject {
         
-public constructor (anyType: any){
+public constructor (anyType: any = {}){
             super(anyType);
                     var anyType = anyType
 

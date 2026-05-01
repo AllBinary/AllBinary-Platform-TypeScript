@@ -78,7 +78,7 @@ export class OpenGLVersionValidator
 }
 
 
-    public setShaderComposite(shaderComposite: ShaderComposite, anyType: any){
+    public setShaderComposite(shaderComposite: ShaderComposite, anyType: any = {}){
     //var shaderComposite = shaderComposite
     //var anyType = anyType
 }

@@ -46,7 +46,7 @@ import { MyGraphicItemEventSource } from "./MyGraphicItemEventSource.js";
 
 export class MyGraphicItemEvent extends java.util.EventObject {
         
-public constructor (source: any){
+public constructor (source: any = {}){
             super(source);
                     var source = source
 

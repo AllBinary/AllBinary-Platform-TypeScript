@@ -140,14 +140,14 @@ this.put(specialMessage, anyType, functionName, exception);
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
 }
 
 
-    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
+    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName

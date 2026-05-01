@@ -82,7 +82,7 @@ this.maxPathWeight= maxPathWeight;
 
                 //@Throws(Error::class)
             
-    public visit(graph: any, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
+    public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
     //var graph = graph
     //var startPathFindingNodeList = startPathFindingNodeList
     //var endPathFindingNodeList = endPathFindingNodeList
@@ -118,7 +118,7 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 }
 
 
-    public isValid(graphPath: any): boolean{
+    public isValid(graphPath: any = {}): boolean{
     //var graphPath = graphPath
 
 
@@ -129,7 +129,7 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 }
 
 
-    public getInvalidReason(graphPath: any): string{
+    public getInvalidReason(graphPath: any = {}): string{
     //var graphPath = graphPath
 
 

@@ -153,7 +153,7 @@ listOfList[foundIndex]!.add(image);
 
                 //@Throws(Error::class)
             
-    public get(key: any): Image{
+    public get(key: any = {}): Image{
     //var key = key
 
     var resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
@@ -218,7 +218,7 @@ this.hashtable.put(resourceId, image);
 }
 
 
-    public getIndex(key: any): number{
+    public getIndex(key: any = {}): number{
     //var key = key
 
     var gdResources: GDResources = GDResources.getInstance()!;
@@ -269,7 +269,7 @@ this.logUtil!.putF(new StringMaker().
 
                 //@Throws(Error::class)
             
-    createImage(key: any, inputStream: InputStream): Image{
+    createImage(key: any = {}, inputStream: InputStream): Image{
     //var key = key
     //var inputStream = inputStream
 

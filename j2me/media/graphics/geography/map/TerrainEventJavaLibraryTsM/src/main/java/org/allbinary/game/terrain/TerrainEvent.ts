@@ -52,7 +52,7 @@ export class TerrainEvent extends AllBinaryEventObject {
         
 
     private basicTerrainInfo: BasicTerrainInfo = BasicTerrainInfo.NULL_BASIC_TERRAIN_INFO;
-public constructor (basicTerrainInfo: any){
+public constructor (basicTerrainInfo: any = {}){
             super(basicTerrainInfo);
                         //var basicTerrainInfo = basicTerrainInfo
 

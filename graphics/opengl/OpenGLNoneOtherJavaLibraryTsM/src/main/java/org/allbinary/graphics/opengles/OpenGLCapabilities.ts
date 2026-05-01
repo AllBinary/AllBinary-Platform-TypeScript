@@ -84,7 +84,7 @@ private constructor (){
         }
 
 
-    public initCapabilities(gl: any){
+    public initCapabilities(gl: any = {}){
 var gl = gl
 }
 

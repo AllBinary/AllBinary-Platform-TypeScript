@@ -104,7 +104,7 @@ this.put(specialMessage, anyType, functionName, exception);
 }
 
 
-    /*actual*/ public putF(specialMessage: string, anyType: any, functionName: string){
+    /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -135,7 +135,7 @@ console.log(this.LOG_SUCCESS + message);
 
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
 
-    /*actual*/ public put(specialMessage: string, anyType: any, functionName: string, exception: any){
+    /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName

@@ -59,7 +59,7 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
          {
         
 
-    /*actual*/ public static put(specialMessage: string, anyType: any, functionName: string){
+    /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -92,7 +92,7 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
 
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
 
-    /*actual*/ public static putOE(specialMessage: string, anyType: any, functionName: string, exception: any){
+    /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var anyType = anyType
     //var functionName = functionName
@@ -137,7 +137,7 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
 }
 
 
-    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any){
+    /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
     //var specialMessage = specialMessage
     //var className = className
     //var functionName = functionName
@@ -151,7 +151,7 @@ PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Error);
 }
 
 
-    /*actual*/ public static getClassName(anyType: any): string
+    /*actual*/ public static getClassName(anyType: any = {}): string
                 //native - START
                 {
                     

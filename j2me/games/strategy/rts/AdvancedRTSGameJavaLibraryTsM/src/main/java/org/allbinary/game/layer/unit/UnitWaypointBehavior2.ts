@@ -1285,7 +1285,7 @@ export inner class BuildingSteeringVisitor extends SteeringVisitor {
 
     private readonly positionList: BasicArrayList = new BasicArrayListD();
 
-    public visit(anyType: any): any{
+    public visit(anyType: any = {}): any{
 var anyType = anyType
 
     var logUtil: LogUtil = LogUtil.getInstance()!;

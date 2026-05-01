@@ -187,7 +187,7 @@ private constructor (){
 
                 //@Throws(Error::class)
             
-    public isValid(anyType: any): boolean{
+    public isValid(anyType: any = {}): boolean{
 var anyType = anyType
 
                         if(anyType != 

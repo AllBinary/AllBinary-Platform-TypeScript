@@ -42,7 +42,7 @@ export class OpenGLBitmap extends PlatformBitmapBase {
         
 
     public readonly image: Image
-public constructor (bitmap: any){
+public constructor (bitmap: any = {}){
 
             super();
             //var bitmap = bitmap

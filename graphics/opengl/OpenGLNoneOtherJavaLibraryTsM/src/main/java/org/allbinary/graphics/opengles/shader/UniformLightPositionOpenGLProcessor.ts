@@ -54,7 +54,7 @@ public constructor (shaderComposite: ShaderComposite, handleIndex: number){
 }
 
 
-    public process(gl: GL10, unused: any){
+    public process(gl: GL10, unused: any = {}){
     //var gl = gl
     //var unused = unused
 }

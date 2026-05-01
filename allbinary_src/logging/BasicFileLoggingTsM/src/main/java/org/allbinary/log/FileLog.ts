@@ -223,7 +223,7 @@ console.log("Error Creating Backup: " +e);
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, anyType: any, functionName: string): string{
+    public static put(specialMessage: string, anyType: any = {}, functionName: string): string{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -238,7 +238,7 @@ var functionName = functionName
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, anyType: any, functionName: string, exception: Error): string{
+    public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Error): string{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName

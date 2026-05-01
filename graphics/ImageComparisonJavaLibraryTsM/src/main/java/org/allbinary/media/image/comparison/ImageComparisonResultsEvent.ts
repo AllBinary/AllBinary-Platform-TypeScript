@@ -46,7 +46,7 @@ export class ImageComparisonResultsEvent extends AllBinaryEventObject {
         
 
     private imageComparisonResult: ImageComparisonResult
-public constructor (anyType: any, imageComparisonInfo: ImageComparisonResult){
+public constructor (anyType: any = {}, imageComparisonInfo: ImageComparisonResult){
             super(anyType);
                     var anyType = anyType
 var imageComparisonInfo = imageComparisonInfo
