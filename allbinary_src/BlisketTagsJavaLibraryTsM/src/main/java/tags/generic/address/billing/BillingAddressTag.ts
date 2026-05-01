@@ -72,7 +72,7 @@ public constructor (){
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     this.setName("Basic Billing Address View");
@@ -83,7 +83,7 @@ this.setObjectFile("views.generic.address.billing.ValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
                                     this.setName("Basic Billing Address View");
@@ -94,7 +94,7 @@ this.setObjectFile("views.generic.address.billing.EditValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
                                     this.setName("Basic Billing Address View");
@@ -105,7 +105,7 @@ this.setObjectFile("views.generic.address.billing.NewValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0)
                         
                                     {
                                     this.setName("Basic Billing Address View");
@@ -116,7 +116,7 @@ this.setObjectFile("views.generic.address.billing.AddValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.DELETE) == 0)
                         
                                     {
                                     this.setName("Basic Billing Address View");
@@ -127,7 +127,7 @@ this.setObjectFile("views.generic.address.billing.DeleteValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(BillingAddressData.SELECT) == 0)
+                        if(this.getCommand()!.localeCompare(BillingAddressData.SELECT) == 0)
                         
                                     {
                                     this.setName("Basic Billing Address View");
@@ -138,7 +138,7 @@ this.setObjectFile("views.generic.address.billing.SelectValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(BillingAddressData.SETTOSHIPPINGADDRESS) == 0)
+                        if(this.getCommand()!.localeCompare(BillingAddressData.SETTOSHIPPINGADDRESS) == 0)
                         
                                     {
                                     this.setName("Basic Billing Address View");

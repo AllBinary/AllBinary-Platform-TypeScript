@@ -42,6 +42,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { PointsDomUtil } from "./PointsDomUtil.js";
 
+import { LinesGraphicItem } from "./LinesGraphicItem.js";
+
 import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class GraphicItemBuilder
@@ -58,7 +60,7 @@ var node = node
 ;
     
 
-                        if(graphicItemName!.compareTo(PointsDomUtil.getInstance()!.LINES) == 0)
+                        if(graphicItemName!.localeCompare(PointsDomUtil.getInstance()!.LINES) == 0)
                         
                                     {
                                     

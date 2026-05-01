@@ -66,6 +66,10 @@ import { ImageToRotationImageArrayUtil } from "../../../../org/allbinary/media/i
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { ImageArrayRotationAnimation } from "./ImageArrayRotationAnimation.js";
+
+import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotationAnimation.js";
+
 export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

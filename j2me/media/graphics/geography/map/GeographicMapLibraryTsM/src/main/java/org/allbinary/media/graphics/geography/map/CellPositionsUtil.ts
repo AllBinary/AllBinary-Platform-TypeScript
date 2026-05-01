@@ -48,9 +48,9 @@ import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArray
         
 import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
 
-import { BasicGeographicMap } from "./BasicGeographicMap.js";
-
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 export class CellPositionsUtil
             extends Object

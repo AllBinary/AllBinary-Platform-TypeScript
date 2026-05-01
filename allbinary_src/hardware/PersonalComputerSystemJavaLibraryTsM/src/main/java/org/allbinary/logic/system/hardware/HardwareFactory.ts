@@ -67,7 +67,7 @@ var os = os
 ;
     
 
-                        if(os.getName()!.compareTo(operatingSystems!.LINUX) == 0)
+                        if(os.getName()!.localeCompare(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     

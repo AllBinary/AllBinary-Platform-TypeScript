@@ -56,6 +56,8 @@ import { BaseRaceTrackGeographicMap } from "./BaseRaceTrackGeographicMap.js";
 
 import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
 
+import { BasicGeographicMapFactory } from "./BasicGeographicMapFactory.js";
+
 import { RaceTrackInfo } from "./RaceTrackInfo.js";
 
 import { RaceTrackData } from "./RaceTrackData.js";

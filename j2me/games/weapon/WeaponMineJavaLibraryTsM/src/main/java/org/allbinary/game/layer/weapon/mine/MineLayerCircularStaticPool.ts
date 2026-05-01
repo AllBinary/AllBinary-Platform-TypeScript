@@ -45,6 +45,8 @@ import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/vi
         
 import { MineCountedPickedUpLayerInterfaceFactory } from "./MineCountedPickedUpLayerInterfaceFactory.js";
 
+import { MineLayerFactory } from "./MineLayerFactory.js";
+
 export class MineLayerCircularStaticPool
             extends Object
          {

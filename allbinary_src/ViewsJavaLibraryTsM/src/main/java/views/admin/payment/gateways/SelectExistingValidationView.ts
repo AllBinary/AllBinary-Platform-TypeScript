@@ -52,6 +52,8 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { SelectExistingView } from "./SelectExistingView.js";
+
 export class SelectExistingValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         
 public constructor (transformInfoInterface: TransformInfoInterface){

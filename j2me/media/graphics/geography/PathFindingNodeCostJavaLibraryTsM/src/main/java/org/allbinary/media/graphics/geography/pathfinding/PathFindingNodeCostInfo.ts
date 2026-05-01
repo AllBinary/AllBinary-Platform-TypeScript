@@ -123,7 +123,7 @@ this.costFromStartP += cost;
 }
 
 
-    public compareTo(pathFindingNodeCostInfo: PathFindingNodeCostInfo): number{
+    public localeCompare(pathFindingNodeCostInfo: PathFindingNodeCostInfo): number{
 var pathFindingNodeCostInfo = pathFindingNodeCostInfo
 
 

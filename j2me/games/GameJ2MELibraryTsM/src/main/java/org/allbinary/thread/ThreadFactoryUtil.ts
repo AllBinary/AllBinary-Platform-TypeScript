@@ -78,6 +78,8 @@ import { ABRunnable } from "./ABRunnable.js";
 
 import { PrimaryThreadPool } from "./PrimaryThreadPool.js";
 
+import { ThreadPool } from "./ThreadPool.js";
+
 export class ThreadFactoryUtil
             extends Object
          {

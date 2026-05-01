@@ -298,7 +298,7 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 i < size; i++)
         {
 
-    var key: string = keyArray[i]! as String;
+    var key: string = keyArray[i]! as string;
 ;
     
 
@@ -475,7 +475,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;
 ;
     
 
@@ -578,7 +578,7 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 i < size -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i) as String)!;
+    var value: string = this.getValue(values.get(i) as string)!;
 ;
     
 stringBuffer!.append(value);
@@ -588,7 +588,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement() as String)!;
+    var value: string = this.getValue(values.lastElement() as string)!;
 ;
     
 stringBuffer!.append(value);
@@ -781,7 +781,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", 
     var jdbcDriver: string = this.databaseConnectionInfoInterface!.getJdbcDriver()!;
 ;
     
-PreLogUtil.put(new StringBuilder().
+PreLogUtil.put(new StringMaker().
                             append("Loading DbConnnectionInfo: ")!.append(this.databaseConnectionInfoInterface!.constructor.name.toString()!)!.append(" Driver: ")!.append(jdbcDriver)!.toString(), this.INIT_SQL, "initialize()");
     
 Class.forName(jdbcDriver)!.newInstance();

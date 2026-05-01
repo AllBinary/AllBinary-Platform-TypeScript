@@ -82,6 +82,10 @@ import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListen
 
 import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
 
+import { MotionRectangles } from "./MotionRectangles.js";
+
+import { Rectangle } from "./Rectangle.js";
+
 export class TestInputForMotionRectanglesResultsWorker
             extends Object
          implements MotionRectanglesResultsListener {
@@ -210,7 +214,7 @@ index < size; index++)
 inputRobotInterface!.mouseMoveToTarget(rectangle);
     
 
-                        if(inputRobotInterface!.getName()!.compareTo(TempInputRobotNames.DX_NAME) == 0)
+                        if(inputRobotInterface!.getName()!.localeCompare(TempInputRobotNames.DX_NAME) == 0)
                         
                                     {
                                     inputRobotInterface!.mousePress(InputEvent.BUTTON1_MASK);

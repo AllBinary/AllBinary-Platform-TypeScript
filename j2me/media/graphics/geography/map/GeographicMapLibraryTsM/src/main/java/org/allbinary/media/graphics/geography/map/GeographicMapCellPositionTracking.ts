@@ -51,6 +51,8 @@ import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
 import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
+import { GeographicMapCompositeInterface } from "./GeographicMapCompositeInterface.js";
+
 export class GeographicMapCellPositionTracking
             extends Object
          {

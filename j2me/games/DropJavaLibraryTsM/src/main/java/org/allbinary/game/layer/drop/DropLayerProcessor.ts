@@ -49,6 +49,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DropLayerInterface } from "./DropLayerInterface.js";
+
 export class DropLayerProcessor extends BasicLayerProcessor {
         
 

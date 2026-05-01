@@ -98,6 +98,8 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
         
 import { SqlStrings } from "./SqlStrings.js";
 
+import { StringBuilder } from "./StringBuilder.js";
+
 import { AbSqlTable } from "./AbSqlTable.js";
 
 export class AbSqlTableUtil

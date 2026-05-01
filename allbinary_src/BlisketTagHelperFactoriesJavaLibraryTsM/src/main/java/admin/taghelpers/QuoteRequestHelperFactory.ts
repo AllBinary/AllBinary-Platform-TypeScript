@@ -51,6 +51,8 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
         
 import { TagHelperFactory } from "./TagHelperFactory.js";
 
+import { QuoteRequestHelper } from "./QuoteRequestHelper.js";
+
 export class QuoteRequestHelperFactory extends TagHelperFactory {
         
 

@@ -52,6 +52,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameOptionsForm } from "./GameOptionsForm.js";
+
 export class GameOptionsFormFactory
             extends Object
          {

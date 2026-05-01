@@ -57,6 +57,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
         
 import { GameNotificationListenerInterface } from "./GameNotificationListenerInterface.js";
 
+import { GameNotificationEvent } from "./GameNotificationEvent.js";
+
 export class GameNotificationEventHandler extends BasicEventHandler {
         
 

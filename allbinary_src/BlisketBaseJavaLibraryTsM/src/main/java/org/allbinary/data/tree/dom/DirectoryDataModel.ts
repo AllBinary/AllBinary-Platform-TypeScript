@@ -69,6 +69,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { DomNodeInterface } from "./DomNodeInterface.js";
 
+import { FileDomDataModel } from "./FileDomDataModel.js";
+
 export class DirectoryDataModel
             extends Object
          implements DomNodeInterface, TransformInterface {

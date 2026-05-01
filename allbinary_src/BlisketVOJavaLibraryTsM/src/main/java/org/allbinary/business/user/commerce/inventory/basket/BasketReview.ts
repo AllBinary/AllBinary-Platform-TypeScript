@@ -125,7 +125,7 @@ index < size; index++)
 ;
     
 
-                        if(item.getId()!.compareTo(id) == 0)
+                        if(item.getId()!.localeCompare(id) == 0)
                         
                                     {
                                     this.items.remove(item);
@@ -163,7 +163,7 @@ index < size; index++)
 ;
     
 
-                        if(item.getId()!.compareTo(id) == 0)
+                        if(item.getId()!.localeCompare(id) == 0)
                         
                                     {
                                     item.setNumber(num);
@@ -290,7 +290,7 @@ index < size; index++)
 ;
     
 
-                        if(item.getId()!.compareTo(id) == 0)
+                        if(item.getId()!.localeCompare(id) == 0)
                         
                                     {
                                     

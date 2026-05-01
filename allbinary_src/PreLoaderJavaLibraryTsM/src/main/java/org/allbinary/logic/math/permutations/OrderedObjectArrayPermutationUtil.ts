@@ -48,6 +48,8 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ComparableObject } from "./ComparableObject.js";
+
 import { ObjectPermutationVisitor } from "./ObjectPermutationVisitor.js";
 
 export class OrderedObjectArrayPermutationUtil

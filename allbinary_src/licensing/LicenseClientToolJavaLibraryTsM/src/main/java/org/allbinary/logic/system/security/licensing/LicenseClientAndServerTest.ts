@@ -73,6 +73,10 @@ import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
 
 import { AbeClientInformationInterfaceFactory } from "./AbeClientInformationInterfaceFactory.js";
 
+import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
+
+import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
+
 export class LicenseClientAndServerTest
             extends Object
          {

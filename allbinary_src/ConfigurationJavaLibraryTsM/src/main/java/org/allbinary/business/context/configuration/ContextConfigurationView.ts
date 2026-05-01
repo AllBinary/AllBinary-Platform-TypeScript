@@ -63,6 +63,8 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
         
 import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
 
+import { ContextConfiguration } from "./ContextConfiguration.js";
+
 import { ContextConfigurationData } from "./ContextConfigurationData.js";
 
 export class ContextConfigurationView

@@ -151,7 +151,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
+                                 || this.getId()!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
                         
                                     {
                                     
@@ -190,7 +190,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.compareTo(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
+                                 || this.getId()!.localeCompare(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
                         
                                     {
                                     

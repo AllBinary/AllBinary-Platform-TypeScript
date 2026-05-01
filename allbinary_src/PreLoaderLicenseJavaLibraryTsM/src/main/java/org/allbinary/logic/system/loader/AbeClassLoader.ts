@@ -72,6 +72,8 @@ import { AbCryptUtil } from "../../../../../org/allbinary/logic/system/security/
         
 import { ClassLoader } from "./ClassLoader.js";
 
+import { NoClassDefFoundError } from "./NoClassDefFoundError.js";
+
 export class AbeClassLoader extends ClassLoader {
         
 

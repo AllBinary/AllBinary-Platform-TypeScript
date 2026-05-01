@@ -53,9 +53,9 @@ import { BasicGeographicMap } from "./BasicGeographicMap.js";
 
 import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPositionFactoryInterface.js";
 
-import { GeographicMapCellPositionFactoryInitVisitorInterface } from "./GeographicMapCellPositionFactoryInitVisitorInterface.js";
-
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+
+import { GeographicMapCellPositionFactoryInitVisitorInterface } from "./GeographicMapCellPositionFactoryInitVisitorInterface.js";
 
 export class BasicGeographicMapCellPositionFactory
             extends Object

@@ -48,6 +48,8 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
         
 import { DemoGameMidletEventListener } from "./DemoGameMidletEventListener.js";
 
+import { DemoGameMidletEvent } from "./DemoGameMidletEvent.js";
+
 export class DemoGameMidletEventHandler extends BasicEventHandler {
         
 

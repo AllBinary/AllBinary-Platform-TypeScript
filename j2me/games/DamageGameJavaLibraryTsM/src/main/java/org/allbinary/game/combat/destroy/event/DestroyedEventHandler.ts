@@ -58,6 +58,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { DestroyedEvent } from "./DestroyedEvent.js";
+
 import { DestroyedEventListenerInterface } from "./DestroyedEventListenerInterface.js";
 
 export class DestroyedEventHandler extends BasicEventHandler {

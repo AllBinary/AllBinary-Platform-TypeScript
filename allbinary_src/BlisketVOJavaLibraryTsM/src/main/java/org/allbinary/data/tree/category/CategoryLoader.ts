@@ -412,7 +412,7 @@ index < categoryNodeList!.getLength(); index++)
 
                         if(categoryNode != 
                                     null
-                                 && categoryNode!.getNodeName()!.compareTo(CategoryData.getInstance()!.NAME) == 0)
+                                 && categoryNode!.getNodeName()!.localeCompare(CategoryData.getInstance()!.NAME) == 0)
                         
                                     {
                                     
@@ -486,7 +486,7 @@ index < categoryNodeList!.getLength(); index++)
 
                         if(categoryNode != 
                                     null
-                                 && categoryNode!.getNodeName()!.compareTo(CategoryData.getInstance()!.NAME) == 0)
+                                 && categoryNode!.getNodeName()!.localeCompare(CategoryData.getInstance()!.NAME) == 0)
                         
                                     {
                                     

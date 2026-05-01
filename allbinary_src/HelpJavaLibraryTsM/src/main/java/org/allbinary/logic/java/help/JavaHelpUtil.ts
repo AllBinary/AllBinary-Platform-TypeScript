@@ -74,6 +74,10 @@ import { Point } from "./Point.js";
 
 import { Dimension } from "./Dimension.js";
 
+import { JLabel } from "./JLabel.js";
+
+import { DisplayHelpFromSource } from "./DisplayHelpFromSource.js";
+
 export class JavaHelpUtil
             extends Object
          {

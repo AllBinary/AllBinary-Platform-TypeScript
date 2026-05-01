@@ -61,6 +61,8 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { RootStoreCategoryProperties } from "./RootStoreCategoryProperties.js";
+
 export class RootStoreCategoryPropertiesFactory
             extends Object
          implements CategoryPropertiesFactoryInterface {

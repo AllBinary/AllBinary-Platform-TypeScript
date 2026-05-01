@@ -46,6 +46,8 @@ import { InputAutomationServiceConsumer } from "../../../../../../org/allbinary/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InputAutomationModuleOSGIServiceVisitor } from "./InputAutomationModuleOSGIServiceVisitor.js";
+
 export class InputAutomationModuleServiceConsumer extends InputAutomationServiceConsumer {
         
 public constructor (bundleContext: BundleContext){

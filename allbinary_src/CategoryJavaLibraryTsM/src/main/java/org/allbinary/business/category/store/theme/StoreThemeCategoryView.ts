@@ -57,6 +57,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 
+import { ThemeComparator } from "./ThemeComparator.js";
+
 export class StoreThemeCategoryView extends CategoryView implements DomNodeInterface {
         
 public constructor (categoryInterface: StoreThemeCategoryInterface){

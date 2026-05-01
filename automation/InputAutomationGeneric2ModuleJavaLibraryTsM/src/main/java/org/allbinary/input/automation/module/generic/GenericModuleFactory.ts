@@ -61,6 +61,10 @@ import { RunnableInterface } from "../../../../../../org/allbinary/thread/Runnab
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GenericInputAutomationAction } from "./GenericInputAutomationAction.js";
+
+import { GenericInputAutomationWorker } from "./GenericInputAutomationWorker.js";
+
 export class GenericModuleFactory extends AbstractInputAutomationFactory {
         
 

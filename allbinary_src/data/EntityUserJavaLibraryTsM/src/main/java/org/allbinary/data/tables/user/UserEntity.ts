@@ -431,8 +431,8 @@ var password = password
 
                         if(encryption != 
                                     null
-                                 && encryption.compareTo(this.stringUtil!.EMPTY_STRING) != 0)
-                        isUserNameAndPasswordCorrect= result.compareTo(new SuperCrypt(encryption.
+                                 && encryption.localeCompare(this.stringUtil!.EMPTY_STRING) != 0)
+                        isUserNameAndPasswordCorrect= result.localeCompare(new SuperCrypt(encryption.
                             toInt()).
                             encrypt(password))
                         else {

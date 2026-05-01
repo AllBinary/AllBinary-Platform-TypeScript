@@ -51,6 +51,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
 
+import { UserConfigurationView } from "./UserConfigurationView.js";
+
 export class UserConfigurationDomDocumentMapping
             extends Object
          implements DomDocumentMappingInterface {

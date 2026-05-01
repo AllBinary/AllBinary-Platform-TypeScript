@@ -73,6 +73,8 @@ import { ReleaseHelper } from "./ReleaseHelper.js";
 
 import { TouchScreenFactory } from "./TouchScreenFactory.js";
 
+import { MultitouchReleaseHelper } from "./MultitouchReleaseHelper.js";
+
 import { TouchButtonFactory } from "./TouchButtonFactory.js";
 
 import { TouchButton } from "./TouchButton.js";

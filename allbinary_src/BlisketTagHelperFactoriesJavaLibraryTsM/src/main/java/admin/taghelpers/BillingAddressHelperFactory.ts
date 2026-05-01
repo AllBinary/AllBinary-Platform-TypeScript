@@ -51,6 +51,8 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
         
 import { TagHelperFactory } from "./TagHelperFactory.js";
 
+import { BillingAddressHelper } from "./BillingAddressHelper.js";
+
 export class BillingAddressHelperFactory extends TagHelperFactory {
         
 

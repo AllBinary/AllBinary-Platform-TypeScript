@@ -70,6 +70,8 @@ import { PixelDeltaFactory } from "../../../../../org/allbinary/media/image/comp
         
 import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
 
+import { Color } from "./Color.js";
+
 import { Math } from "./Math.js";
 
 import { ImageComparisonResult } from "./ImageComparisonResult.js";

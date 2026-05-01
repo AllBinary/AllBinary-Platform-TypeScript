@@ -143,7 +143,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || command.compareTo(this.commonStrings!.UPDATE) != 0)
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || command.localeCompare(this.commonStrings!.UPDATE) != 0)
                         
                                     {
                                     
@@ -552,7 +552,7 @@ var document = document
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || command.compareTo(this.commonStrings!.UPDATE) != 0)
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || command.localeCompare(this.commonStrings!.UPDATE) != 0)
                         
                                     {
                                     

@@ -6,6 +6,9 @@
 
             import { System } from "../../../../../java/lang/System";
         
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
     
@@ -31,8 +34,6 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { StringBuilder } from "./StringBuilder.js";
-
 export class IntPermutationVisitor extends Visitor {
         
 
@@ -40,16 +41,16 @@ export class IntPermutationVisitor extends Visitor {
 public constructor (data: number[]){
 
             super();
-        var data = data
+            //var data = data
 this.data= data;
     
 }
 
 
-    private stringBuilder: StringBuilder = new StringBuilder();
+    private stringBuilder: StringMaker = new StringMaker();
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
+    //var anyType = anyType
 this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.print(this.data, stringBuilder);
@@ -64,9 +65,9 @@ this.print(this.data, stringBuilder);
 
 
     public print(data: number[]){
-var data = data
+    //var data = data
 
-    var stringBuilder: StringBuilder = new StringBuilder();
+    var stringBuilder: StringMaker = new StringMaker();
 ;
     
 this.print(data, stringBuilder);
@@ -74,9 +75,13 @@ this.print(data, stringBuilder);
 }
 
 
-    public print(data: number[], stringBuilder: StringBuilder){
-var data = data
-var stringBuilder = stringBuilder
+    public print(data: number[], stringBuilder: StringMaker){
+    //var data = data
+    //var stringBuilder = stringBuilder
+
+    var commonSeps: CommonSeps = CommonSeps.getInstance()!;
+;
+    
 
     var size: number = data.length
                 ;
@@ -90,9 +95,9 @@ var stringBuilder = stringBuilder
     var i: number = 0;
 i < size; i++)
         {
-stringBuilder!.append(data[i]!);
+stringBuilder!.appendint(data[i]!);
     
-stringBuilder!.append(CommonSeps.getInstance()!.SPACE);
+stringBuilder!.append(commonSeps!.SPACE);
     
 }
 

@@ -54,6 +54,8 @@ import { GeographicMapCellPositionFactoryInterface } from "../../../../../../org
         
 import { GeologicalGeographicMapCellPosition } from "./GeologicalGeographicMapCellPosition.js";
 
+import { GeologicalResource } from "./GeologicalResource.js";
+
 export class GeologicalGeographicMapCellPositionFactory
             extends Object
          implements GeographicMapCellPositionFactoryInterface {

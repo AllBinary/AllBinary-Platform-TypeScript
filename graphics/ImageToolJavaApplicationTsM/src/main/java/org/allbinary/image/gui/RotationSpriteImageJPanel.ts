@@ -85,19 +85,25 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
+import { Graphics } from "./Graphics.js";
+
+import { JComboBox } from "./JComboBox.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JButton } from "./JButton.js";
+
+import { JCheckBox } from "./JCheckBox.js";
+
 import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
+import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
+
+import { ActionListener } from "./ActionListener.js";
+
 import { ActionEvent } from "./ActionEvent.js";
-
-import { JButton } from "./JButton.js";
-
-import { JLabel } from "./JLabel.js";
-
-import { JComboBox } from "./JComboBox.js";
-
-import { JCheckBox } from "./JCheckBox.js";
 
 export class RotationSpriteImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

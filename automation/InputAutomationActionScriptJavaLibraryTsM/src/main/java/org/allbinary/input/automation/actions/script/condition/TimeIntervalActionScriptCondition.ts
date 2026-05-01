@@ -120,7 +120,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.compareTo(TimeIntervalActionScriptConditionData.TIME) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(TimeIntervalActionScriptConditionData.TIME) == 0)
                         
                                     {
                                     

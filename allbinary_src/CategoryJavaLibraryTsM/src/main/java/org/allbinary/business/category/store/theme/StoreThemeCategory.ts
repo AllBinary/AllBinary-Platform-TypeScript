@@ -185,7 +185,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(themeNode!.getNodeName()!.compareTo(ThemeData.getInstance()!.NAME) == 0)
+                        if(themeNode!.getNodeName()!.localeCompare(ThemeData.getInstance()!.NAME) == 0)
                         
                                     {
                                     this.themeVector!.add(new ThemeValidation(this, themeNode));

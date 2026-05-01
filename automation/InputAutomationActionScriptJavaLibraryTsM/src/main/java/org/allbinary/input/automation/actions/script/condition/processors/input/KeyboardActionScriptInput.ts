@@ -210,7 +210,7 @@ vector.add(keyString.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS) == 0)
                         
                                     {
                                     
@@ -223,7 +223,7 @@ this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.PRESS) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(KeyboardActionScriptInputData.PRESS) == 0)
                         
                                     {
                                     
@@ -238,7 +238,7 @@ this.setPress(value.concatToString()
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.RELEASE) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(KeyboardActionScriptInputData.RELEASE) == 0)
                         
                                     {
                                     

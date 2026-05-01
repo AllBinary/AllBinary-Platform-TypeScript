@@ -86,9 +86,11 @@ import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
 
 import { PathFindingNodeCost } from "./PathFindingNodeCost.js";
 
-import { MultipassState } from "./MultipassState.js";
+import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
 
 import { PathFindingNode } from "./PathFindingNode.js";
+
+import { MultipassState } from "./MultipassState.js";
 
 export class PathFinder extends GeographicPathFinderBase {
         

@@ -289,7 +289,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 ;
     
 
-                        if(this.getCommand()!.compareTo(storeFrontData!.SELECT) == 0)
+                        if(this.getCommand()!.localeCompare(storeFrontData!.SELECT) == 0)
                         
                                     {
                                     this.pageContext!.getOut()!.print(this.generateSelect());
@@ -298,7 +298,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(storeFrontData!.INSTALL) == 0)
+                        if(this.getCommand()!.localeCompare(storeFrontData!.INSTALL) == 0)
                         
                                     {
                                     this.getPropertiesHashMap()!.put("current", this.getCurrent());
@@ -324,7 +324,7 @@ this.install();
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(storeFrontData!.INSTALL_COMPLETE) == 0)
+                        if(this.getCommand()!.localeCompare(storeFrontData!.INSTALL_COMPLETE) == 0)
                         
                                     {
                                     this.sendStoreCreatedEmails();

@@ -141,7 +141,7 @@ URLGLOBALS.init(urlGlobals);
                         
                                     {
                                     
-                        if(this.command.compareTo(GLOBALS2.SET) == 0)
+                        if(this.command.localeCompare(GLOBALS2.SET) == 0)
                         
                                     {
                                     this.setCustomLoaderWebappPath();

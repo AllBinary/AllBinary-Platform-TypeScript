@@ -629,7 +629,7 @@ var storeName = storeName
                         
                                     {
                                     
-                        if(storeName!.compareTo(GLOBALS2.GENERATEALLSTORES) != 0)
+                        if(storeName!.localeCompare(GLOBALS2.GENERATEALLSTORES) != 0)
                         
                                     {
                                     this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));

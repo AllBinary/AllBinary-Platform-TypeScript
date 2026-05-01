@@ -57,6 +57,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
         
 import { ShippingMethodsInterface } from "./ShippingMethodsInterface.js";
 
+import { ShippingMethodsFactory } from "./ShippingMethodsFactory.js";
+
 export class ShippingMethods
             extends Object
          implements ShippingMethodsInterface {
@@ -116,7 +118,7 @@ index < size; index++)
 shipping= this.shippingVector!.get(index); as ShippingInterface;
     
 
-                        if(name.compareTo(shipping.getName()) == 0)
+                        if(name.localeCompare(shipping.getName()) == 0)
                         
 
 

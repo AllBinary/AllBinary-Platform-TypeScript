@@ -235,7 +235,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 ;
     
 
-                        if(newPassword!.compareTo(newReenteredPassword) != 0)
+                        if(newPassword!.localeCompare(newReenteredPassword) != 0)
                         
                                     {
                                     
@@ -765,9 +765,9 @@ index < size; index++)
 
                         if(this.userName != 
                                     null
-                                 && this.userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && this.password != 
+                                 && this.userName!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0 && this.password != 
                                     null
-                                 && this.password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
+                                 && this.password.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
                                     
@@ -794,7 +794,7 @@ index < size; index++)
                         }
                             
 
-                        if(login.compareTo(org.allbinary.globals.GLOBALS2.LOGINSUCCESS) == 0)
+                        if(login.localeCompare(org.allbinary.globals.GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
                                     this.weblisketSession!.setAttempts(0);
@@ -940,7 +940,7 @@ this.getFormData();
                         
                                     {
                                     
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.CHANGEPASSWORD) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.CHANGEPASSWORD) == 0)
                         
                                     {
                                     
@@ -983,7 +983,7 @@ this.getFormData();
                                     }
                                 
                              else 
-                        if(this.command.compareTo(WeblisketSessionData.INVALIDATESESSION) == 0)
+                        if(this.command.localeCompare(WeblisketSessionData.INVALIDATESESSION) == 0)
                         
                                     {
                                     
@@ -1025,7 +1025,7 @@ this.getFormData();
 pageContext!.getOut()!.print("Please login again.<p>");
     
 
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1061,7 +1061,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1092,9 +1092,9 @@ pageContext!.getOut()!.print("Please login again.<p>");
 
                         if((this.userName == 
                                     null
-                                 || this.userName!.compareTo(stringUtil!.EMPTY_STRING) == 0) && (this.password == 
+                                 || this.userName!.localeCompare(stringUtil!.EMPTY_STRING) == 0) && (this.password == 
                                     null
-                                 || this.password.compareTo(stringUtil!.EMPTY_STRING) == 0) && this.roles != 
+                                 || this.password.localeCompare(stringUtil!.EMPTY_STRING) == 0) && this.roles != 
                                     null
                                  && this.isAuthenticationSessionValid())
                         
@@ -1109,7 +1109,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
                                     }
                                 
 
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1167,7 +1167,7 @@ pageContext!.getOut()!.print("Please login again.<p>");
 pageContext!.getOut()!.print(validRole());
     
 
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1205,7 +1205,7 @@ pageContext!.getOut()!.print(validRole());
 pageContext!.getOut()!.print(invalidRole());
     
 
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     
@@ -1246,9 +1246,9 @@ pageContext!.getOut()!.print(invalidRole());
 
                         if(this.userName != 
                                     null
-                                 && this.userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && this.password != 
+                                 && this.userName!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0 && this.password != 
                                     null
-                                 && this.password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
+                                 && this.password.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
                                     pageContext!.getOut()!.print("Sorry your username and/or password is invalid.<p>");
@@ -1285,7 +1285,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.PROCESSBODYIFAUTHENTICATED) == 0)
                         
                                     {
                                     

@@ -72,6 +72,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Sounds } from "./Sounds.js";
+
 import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
 import { NoPlayer } from "./NoPlayer.js";
@@ -154,7 +156,7 @@ var resource = resource
                         
                                     {
                                     
-                        if(resource.compareTo(Manager.TONE_DEVICE_LOCATOR) == 0)
+                        if(resource.localeCompare(Manager.TONE_DEVICE_LOCATOR) == 0)
                         
                                     {
                                     

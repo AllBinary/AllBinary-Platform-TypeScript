@@ -50,6 +50,8 @@ import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graph
         
 import { WaypointPathRunnableBase } from "./WaypointPathRunnableBase.js";
 
+import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+
 export class WaypointPathRunnable extends WaypointPathRunnableBase {
         
 

@@ -52,6 +52,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreFrontView } from "./StoreFrontView.js";
+
 export class StoreFrontViewFactory
             extends Object
          {

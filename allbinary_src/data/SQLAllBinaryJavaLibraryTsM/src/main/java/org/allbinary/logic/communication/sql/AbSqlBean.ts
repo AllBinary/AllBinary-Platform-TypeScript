@@ -420,7 +420,7 @@ columnName= keyArray2[i]!.toString();
 field= rset.getObject(columnName)!.toString();
     
 
-                        if(field.compareTo(columnsAndValues!.get(columnName) as string) != 0)
+                        if(field.localeCompare(columnsAndValues!.get(columnName) as string) != 0)
                         
                                     {
                                     

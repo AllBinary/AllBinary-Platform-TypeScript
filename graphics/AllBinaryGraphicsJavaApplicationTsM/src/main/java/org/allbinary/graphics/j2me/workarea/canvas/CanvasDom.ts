@@ -133,7 +133,7 @@ this.dimension= new IntegerDimension(0, 0);
 ;
     
 
-                        if(name.compareTo(CanvasDom.FRAME) == 0)
+                        if(name.localeCompare(CanvasDom.FRAME) == 0)
                         
                                     {
                                     this.graphicItemHashMap= new HashMap<any, any>();

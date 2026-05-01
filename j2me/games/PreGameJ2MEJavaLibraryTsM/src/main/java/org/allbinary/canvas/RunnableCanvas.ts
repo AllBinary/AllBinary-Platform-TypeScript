@@ -82,6 +82,8 @@ import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
         
 import { Processor } from "./Processor.js";
 
+import { RunnableCanvasRefreshHelper } from "./RunnableCanvasRefreshHelper.js";
+
 export class RunnableCanvas extends MyCanvas implements RunnableInterface {
         
 

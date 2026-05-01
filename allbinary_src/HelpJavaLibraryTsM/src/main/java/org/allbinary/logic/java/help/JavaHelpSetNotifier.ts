@@ -94,7 +94,7 @@ i < size; i++)
 ;
     
 
-                        if(url.toString()!.compareTo(nextURL!.toString()) == 0)
+                        if(url.toString()!.localeCompare(nextURL!.toString()) == 0)
                         
                                     {
                                     isNotified= true;

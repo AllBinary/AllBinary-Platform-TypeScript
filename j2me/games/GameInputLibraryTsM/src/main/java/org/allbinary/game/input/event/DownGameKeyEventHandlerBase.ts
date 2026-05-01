@@ -64,6 +64,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { GameKeyEvent } from "./GameKeyEvent.js";
+
 import { DownGameKeyEventListenerInterface } from "./DownGameKeyEventListenerInterface.js";
 
 export class DownGameKeyEventHandlerBase extends BasicEventHandler {

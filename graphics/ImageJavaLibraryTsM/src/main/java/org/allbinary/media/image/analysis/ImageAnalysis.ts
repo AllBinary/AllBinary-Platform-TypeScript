@@ -64,9 +64,9 @@ import { ImageAnalysisResults } from "./ImageAnalysisResults.js";
 
 import { ColorRangeInterface } from "./ColorRangeInterface.js";
 
-import { ColorAverage } from "./ColorAverage.js";
-
 import { Color } from "./Color.js";
+
+import { ColorAverage } from "./ColorAverage.js";
 
 import { ImageColorResults } from "./ImageColorResults.js";
 

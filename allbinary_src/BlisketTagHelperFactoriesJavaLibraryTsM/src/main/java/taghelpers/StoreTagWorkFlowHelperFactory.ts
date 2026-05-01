@@ -52,6 +52,8 @@ import { LicensingException } from "../org/allbinary/logic/system/security/licen
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { StoreTagWorkFlowHelper } from "./StoreTagWorkFlowHelper.js";
+
 export class StoreTagWorkFlowHelperFactory extends TagHelperFactory {
         
 

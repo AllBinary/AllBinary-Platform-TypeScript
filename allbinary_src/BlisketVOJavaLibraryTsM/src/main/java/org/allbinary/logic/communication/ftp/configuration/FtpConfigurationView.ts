@@ -60,6 +60,8 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
         
 import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
 
+import { FtpConfiguration } from "./FtpConfiguration.js";
+
 import { FtpConfigurationData } from "./FtpConfigurationData.js";
 
 import { FtpConfigurationMapping } from "./FtpConfigurationMapping.js";

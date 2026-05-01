@@ -152,7 +152,7 @@ var anyType = anyType
 index < classes.length; index++)
         {
 
-                        if(clazz.toString()!.compareTo(classes[index]!.getName()) == 0)
+                        if(clazz.toString()!.localeCompare(classes[index]!.getName()) == 0)
                         
 
 

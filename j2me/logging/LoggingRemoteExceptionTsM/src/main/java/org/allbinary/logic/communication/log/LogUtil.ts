@@ -70,6 +70,8 @@ import { Log } from "./Log.js";
 
 import { LogFormatUtil } from "./LogFormatUtil.js";
 
+import { XmlRpcRemoteLogClient } from "./XmlRpcRemoteLogClient.js";
+
 /*actual*/ export class LogUtil
             extends Object
          {
@@ -159,7 +161,7 @@ this.put(specialMessage, anyType, functionName, exception);
                         
                                     {
                                     
-                        if(exception.constructor.name.toString()!.compareTo(XmlRpcException::class.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.localeCompare(XmlRpcException::class.toString()!) == 0)
                         
                                     {
                                     
@@ -172,7 +174,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-                        if(exception.constructor.name.toString()!.compareTo(IOException::class.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.localeCompare(IOException::class.toString()!) == 0)
                         
                                     {
                                     

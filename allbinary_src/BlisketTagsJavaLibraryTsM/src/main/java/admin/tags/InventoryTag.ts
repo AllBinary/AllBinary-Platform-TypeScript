@@ -101,7 +101,7 @@ this.storeName= value;
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) != 0 && this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) != 0 && this.getCommand()!.compareTo(this.commonStrings!.CREATE) != 0 && this.getCommand()!.compareTo(this.commonStrings!.DROP) != 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.BACKUP) != 0 && this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.RESTORE) != 0 && this.getCommand()!.localeCompare(this.commonStrings!.CREATE) != 0 && this.getCommand()!.localeCompare(this.commonStrings!.DROP) != 0)
                         
                                     {
                                     

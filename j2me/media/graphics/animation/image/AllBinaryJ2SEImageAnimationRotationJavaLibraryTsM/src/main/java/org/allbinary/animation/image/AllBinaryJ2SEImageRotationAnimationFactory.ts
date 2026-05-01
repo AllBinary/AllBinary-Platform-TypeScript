@@ -69,6 +69,10 @@ import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUt
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { AllBinaryJ2SEImageRotationAnimation } from "./AllBinaryJ2SEImageRotationAnimation.js";
+
+import { AllBinaryAdjustedJ2SEImageRotationAnimation } from "./AllBinaryAdjustedJ2SEImageRotationAnimation.js";
+
 export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

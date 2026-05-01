@@ -664,9 +664,9 @@ var password = password
 
                         if(userName != 
                                     null
-                                 && userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
+                                 && userName!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
                                     null
-                                 && password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
+                                 && password.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
                                     
@@ -680,7 +680,7 @@ var password = password
 login= userEntityInterface!.login(userName, password);
     
 
-                        if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
+                        if(login.localeCompare(GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
                                     

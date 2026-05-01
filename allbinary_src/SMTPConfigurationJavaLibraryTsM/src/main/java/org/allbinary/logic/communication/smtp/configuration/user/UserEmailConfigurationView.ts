@@ -75,6 +75,8 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
         
 import { UserEmailConfigurationInterface } from "./UserEmailConfigurationInterface.js";
 
+import { UserEmailConfiguration } from "./UserEmailConfiguration.js";
+
 import { UserEmailConfigurationMapping } from "./UserEmailConfigurationMapping.js";
 
 import { UserEmailConfigurationData } from "./UserEmailConfigurationData.js";

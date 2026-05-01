@@ -51,8 +51,6 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { StringBuilder } from "./StringBuilder.js";
-
 import { AndroidSystemProperties } from "./AndroidSystemProperties.js";
 
 export class AndroidOS extends GenericOperatingSystem {
@@ -61,7 +59,7 @@ export class AndroidOS extends GenericOperatingSystem {
             static readonly PUBLIC: string = '%{public}s';
             
 
-    private stringBuffer: StringBuilder = new StringBuilder();
+    private stringBuffer: StringMaker = new StringMaker();
 
     private readonly DEVICE_ID: string = "DeviceId";
 
@@ -144,7 +142,7 @@ this.stringBuffer!.append("NetworkType");
     
 this.stringBuffer!.append(commonStrings!.EQUALS);
     
-this.stringBuffer!.append(properties.getNetworkType());
+this.stringBuffer!.appendint(properties.getNetworkType());
     
 this.stringBuffer!.append(commonStrings!.SPACE);
     
@@ -152,7 +150,7 @@ this.stringBuffer!.append("PhoneType");
     
 this.stringBuffer!.append(commonStrings!.EQUALS);
     
-this.stringBuffer!.append(properties.getPhoneType());
+this.stringBuffer!.appendint(properties.getPhoneType());
     
 this.stringBuffer!.append(commonStrings!.SPACE);
     
@@ -223,7 +221,7 @@ this.stringBuffer!.append(commonStrings!.SPACE);
 ;
     
 
-                        if(properties.getDevice()!.lowercase()!.indexOf(this.OUYA) >= 0)
+                        if(properties.getDevice()!.toLowerCase()!.indexOf(this.OUYA) >= 0)
                         
                                     {
                                     

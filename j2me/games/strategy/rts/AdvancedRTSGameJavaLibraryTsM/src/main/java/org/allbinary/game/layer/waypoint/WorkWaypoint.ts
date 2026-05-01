@@ -68,6 +68,8 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
         
 import { Waypoint } from "./Waypoint.js";
 
+import { WaypointInfoHudPaintable } from "./WaypointInfoHudPaintable.js";
+
 export class WorkWaypoint extends Waypoint {
         
 

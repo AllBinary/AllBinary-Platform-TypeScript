@@ -52,6 +52,8 @@ import { RequestParams } from "../../../../../../../org/allbinary/logic/communic
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Item } from "./Item.js";
+
 export class ItemFactoryUnused
             extends Object
          {

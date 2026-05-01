@@ -47,6 +47,8 @@ import { ProfileActionScriptOutputInterface } from "./ProfileActionScriptOutputI
 
 import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
 
+import { ImageActionScriptOutput } from "./ImageActionScriptOutput.js";
+
 export class ProfileActionScriptOutputFactory
             extends Object
          {

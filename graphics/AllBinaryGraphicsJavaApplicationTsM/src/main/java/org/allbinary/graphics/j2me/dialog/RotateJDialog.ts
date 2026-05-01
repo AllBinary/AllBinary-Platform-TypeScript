@@ -60,19 +60,27 @@ import { JDialog } from "./JDialog.js";
 
 import { Frame } from "./Frame.js";
 
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Short } from "./Short.js";
-
-import { ActionEvent } from "./ActionEvent.js";
-
 import { JTextField } from "./JTextField.js";
-
-import { JButton } from "./JButton.js";
 
 import { JLabel } from "./JLabel.js";
 
 import { JPanel } from "./JPanel.js";
+
+import { JButton } from "./JButton.js";
+
+import { ActionListener } from "./ActionListener.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { JFrame } from "./JFrame.js";
+
+import { WindowAdapter } from "./WindowAdapter.js";
+
+import { WindowEvent } from "./WindowEvent.js";
 
 export class RotateJDialog extends javax.swing.JDialog {
         

@@ -63,6 +63,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { TerrainEventListener } from "./TerrainEventListener.js";
 
+import { TerrainEvent } from "./TerrainEvent.js";
+
 import { TerrainEventListenerInterface } from "./TerrainEventListenerInterface.js";
 
 export class TerrainEventHandler extends BasicEventHandler {

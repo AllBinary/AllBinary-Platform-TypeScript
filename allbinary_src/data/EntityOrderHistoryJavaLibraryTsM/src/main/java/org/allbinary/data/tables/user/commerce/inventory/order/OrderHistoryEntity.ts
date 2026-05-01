@@ -500,7 +500,7 @@ var status = status
 updateHashMap!.put(OrderHistoryData.STATUS, status);
     
 
-                        if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
+                        if(status.localeCompare(OrderHistoryData.CANCELLED) == 0)
                         
                                     {
                                     updateHashMap!.put(OrderHistoryData.CANCELDATE, time);
@@ -509,7 +509,7 @@ updateHashMap!.put(OrderHistoryData.STATUS, status);
                                     }
                                 
                              else 
-                        if(status.compareTo(OrderHistoryData.SHIPPED) == 0)
+                        if(status.localeCompare(OrderHistoryData.SHIPPED) == 0)
                         
                                     {
                                     updateHashMap!.put(OrderHistoryData.SHIPPEDDATE, time);

@@ -51,6 +51,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { LazyImageRotationAnimation } from "./LazyImageRotationAnimation.js";
+
 export class LazyImageRotationAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

@@ -55,7 +55,7 @@ this.name= name;
     public isEqual(tenderType: TenderType): boolean{
 var tenderType = tenderType
 
-                        if(this.toString()!.compareTo(tenderType!.toString()) == 0)
+                        if(this.toString()!.localeCompare(tenderType!.toString()) == 0)
                         
                                     {
                                     

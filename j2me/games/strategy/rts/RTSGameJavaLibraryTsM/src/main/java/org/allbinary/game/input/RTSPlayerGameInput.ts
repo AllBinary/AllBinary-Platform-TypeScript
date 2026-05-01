@@ -147,6 +147,12 @@ import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js"
 
 import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
 
+import { RTSPlayerLeftGameInputProcessor } from "./RTSPlayerLeftGameInputProcessor.js";
+
+import { RTSPlayerRightGameInputProcessor } from "./RTSPlayerRightGameInputProcessor.js";
+
+import { RTSPlayerFireGameInputProcessor } from "./RTSPlayerFireGameInputProcessor.js";
+
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 export class RTSPlayerGameInput extends PlayerGameInput {

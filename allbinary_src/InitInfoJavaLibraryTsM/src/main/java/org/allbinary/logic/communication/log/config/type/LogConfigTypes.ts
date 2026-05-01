@@ -165,7 +165,7 @@ index < size; index++)
 logConfigType= availableLogConfigTypes!.get(index); as LogConfigType;
     
 
-                        if(logConfigType!.getName()!.compareTo(name) == 0)
+                        if(logConfigType!.getName()!.localeCompare(name) == 0)
                         
                                     {
                                     

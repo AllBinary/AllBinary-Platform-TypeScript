@@ -62,6 +62,8 @@ import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurat
 
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
 
+import { UserEmailEventConfiguration } from "./UserEmailEventConfiguration.js";
+
 import { UserEmailEventConfigurationMapping } from "./UserEmailEventConfigurationMapping.js";
 
 export class UserEmailEventConfigurationView

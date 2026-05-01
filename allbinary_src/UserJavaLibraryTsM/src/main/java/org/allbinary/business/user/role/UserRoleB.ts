@@ -89,7 +89,7 @@ index < size; index++)
 ;
     
 
-                        if(role.compareTo(userRole!.toString()) == 0)
+                        if(role.localeCompare(userRole!.toString()) == 0)
                         
                                     {
                                     

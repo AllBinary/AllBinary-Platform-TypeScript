@@ -40,7 +40,7 @@
 export interface HardwareComponentInterface {
         
 
-    compareTo(componentInterface: HardwareComponentInterface): boolean
+    localeCompare(componentInterface: HardwareComponentInterface): boolean
 
     toString(): string
 

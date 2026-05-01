@@ -39,9 +39,13 @@
         
 import { JPanel } from "./JPanel.js";
 
+import { GridLayout } from "./GridLayout.js";
+
 import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
+
+import { Dimension } from "./Dimension.js";
 
 export class ActionScriptItemJPanel extends javax.swing.JPanel {
         

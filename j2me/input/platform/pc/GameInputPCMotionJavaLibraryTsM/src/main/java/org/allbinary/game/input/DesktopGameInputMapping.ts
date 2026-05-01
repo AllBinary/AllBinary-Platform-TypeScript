@@ -42,6 +42,8 @@ import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapp
         
 import { PCGameInputMapping } from "./PCGameInputMapping.js";
 
+import { DesktopDefaultGameInputMapping } from "./DesktopDefaultGameInputMapping.js";
+
 export class DesktopGameInputMapping extends PCGameInputMapping {
         
 

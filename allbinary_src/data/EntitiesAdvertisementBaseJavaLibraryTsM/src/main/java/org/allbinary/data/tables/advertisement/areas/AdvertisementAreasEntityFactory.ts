@@ -43,6 +43,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AdvertisementAreasEntity } from "./AdvertisementAreasEntity.js";
+
 import { AdvertisementAreasEntityInterface } from "./AdvertisementAreasEntityInterface.js";
 
 export class AdvertisementAreasEntityFactory

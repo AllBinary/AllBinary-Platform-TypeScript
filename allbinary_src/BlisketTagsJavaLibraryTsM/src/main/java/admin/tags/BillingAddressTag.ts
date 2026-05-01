@@ -235,7 +235,7 @@ this.value= value;
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(BillingAddressData.SELECT) == 0)
+                        if(this.getCommand()!.localeCompare(BillingAddressData.SELECT) == 0)
                         
                                     {
                                     this.set();
@@ -250,7 +250,7 @@ this.value= value;
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(BillingAddressData.SETTOSHIPPINGADDRESS) == 0)
+                        if(this.getCommand()!.localeCompare(BillingAddressData.SETTOSHIPPINGADDRESS) == 0)
                         
                                     {
                                     this.setToShippingAddress();

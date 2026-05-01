@@ -277,7 +277,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "view");
 
                         if(this.preprocessing != 
                                     null
-                                 && this.preprocessing.compareTo(this.ON) == 0)
+                                 && this.preprocessing.localeCompare(this.ON) == 0)
                         
                                     {
                                     
@@ -319,7 +319,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 
                         if(this.shipped != 
                                     null
-                                 && this.shipped.compareTo(this.ON) == 0)
+                                 && this.shipped.localeCompare(this.ON) == 0)
                         
                                     {
                                     
@@ -361,7 +361,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 
                         if(this.partiallyShipped != 
                                     null
-                                 && this.partiallyShipped!.compareTo(this.ON) == 0)
+                                 && this.partiallyShipped!.localeCompare(this.ON) == 0)
                         
                                     {
                                     
@@ -403,7 +403,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 
                         if(this.processing != 
                                     null
-                                 && this.processing.compareTo(this.ON) == 0)
+                                 && this.processing.localeCompare(this.ON) == 0)
                         
                                     {
                                     
@@ -445,7 +445,7 @@ node.appendChild(orderHistory!.toXmlNode(document));
 
                         if(this.cancelled != 
                                     null
-                                 && this.cancelled.compareTo(this.ON) == 0)
+                                 && this.cancelled.localeCompare(this.ON) == 0)
                         
                                     {
                                     
@@ -536,7 +536,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
                         if(this.dateType == 
                                     null
-                                 || (this.dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && this.dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
+                                 || (this.dateType!.localeCompare(OrderHistoryData.TYPELONG) != 0 && this.dateType!.localeCompare(OrderHistoryData.TYPECAESAR) != 0))
                         
                                     {
                                     isValid= Boolean.FALSE;
@@ -551,7 +551,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
                         
                                     {
                                     
-                        if(this.dateType!.compareTo(OrderHistoryData.TYPELONG) == 0)
+                        if(this.dateType!.localeCompare(OrderHistoryData.TYPELONG) == 0)
                         
                                     {
                                     
@@ -567,7 +567,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 ;
     
 
-                        if(this.command.compareTo(this.VIEWORDERSINLASTHOUR) == 0)
+                        if(this.command.localeCompare(this.VIEWORDERSINLASTHOUR) == 0)
                         
                                     {
                                     
@@ -581,7 +581,7 @@ rangeDate= oneHour.
                                     }
                                 
                              else 
-                        if(this.command.compareTo(this.VIEWORDERSINLASTDAY) == 0)
+                        if(this.command.localeCompare(this.VIEWORDERSINLASTDAY) == 0)
                         
                                     {
                                     
@@ -595,7 +595,7 @@ rangeDate= oneDay.
                                     }
                                 
                              else 
-                        if(this.command.compareTo(this.VIEWORDERSINLASTWEEK) == 0)
+                        if(this.command.localeCompare(this.VIEWORDERSINLASTWEEK) == 0)
                         
                                     {
                                     
@@ -609,7 +609,7 @@ rangeDate= oneWeek.
                                     }
                                 
                              else 
-                        if(this.command.compareTo(this.VIEWORDERSINLAST30DAYS) == 0)
+                        if(this.command.localeCompare(this.VIEWORDERSINLAST30DAYS) == 0)
                         
                                     {
                                     
@@ -623,7 +623,7 @@ rangeDate= thirtyDays.
                                     }
                                 
                              else 
-                        if(this.command.compareTo(this.VIEWALLORDERS) == 0)
+                        if(this.command.localeCompare(this.VIEWALLORDERS) == 0)
                         
                                     {
                                     rangeDate= currentTime.
@@ -651,7 +651,7 @@ this.toDate= time;
                                     }
                                 
                              else 
-                        if(this.dateType!.compareTo(OrderHistoryData.TYPECAESAR) == 0)
+                        if(this.dateType!.localeCompare(OrderHistoryData.TYPECAESAR) == 0)
                         
                                     {
                                     
@@ -778,7 +778,7 @@ var document = document
 
                         if(this.dateType == 
                                     null
-                                 || (this.dateType!.compareTo(OrderHistoryData.TYPELONG) != 0 && this.dateType!.compareTo(OrderHistoryData.TYPECAESAR) != 0))
+                                 || (this.dateType!.localeCompare(OrderHistoryData.TYPELONG) != 0 && this.dateType!.localeCompare(OrderHistoryData.TYPECAESAR) != 0))
                         
                                     {
                                     result.append("DATETYPE not recognized");

@@ -50,6 +50,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { ClassLoader } from "./ClassLoader.js";
 
+import { NativeLibraryClassLoader } from "./NativeLibraryClassLoader.js";
+
 export class NativeLibraryHelperWrapper
             extends Object
          {

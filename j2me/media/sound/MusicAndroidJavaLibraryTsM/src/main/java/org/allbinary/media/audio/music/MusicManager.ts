@@ -22,6 +22,9 @@ import { ResourceUtil } from "../../../../../org/allbinary/data/resource/Resourc
 import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -273,8 +276,8 @@ this.timeDelayHelper!.delay= 0;
     var duration: number = sound.getDuration();
 ;
     
-PreLogUtil.put(new StringBuilder().
-                            append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
+PreLogUtil.put(new StringMaker().
+                            append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
     
 }
 
@@ -307,8 +310,8 @@ this.nextSongSound= NoSound.getInstance();
     var duration: number = this.currentSongSound!.getDuration();
 ;
     
-PreLogUtil.put(new StringBuilder().
-                            append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.append(duration)!.toString(), this, commonStrings!.PROCESS);
+PreLogUtil.put(new StringMaker().
+                            append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
     
 this.timeDelayHelper!.delay= Math.round(duration);
     

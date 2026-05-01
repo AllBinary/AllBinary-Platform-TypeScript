@@ -46,6 +46,8 @@ import { CacheableInterfaceFactoryInterface } from "./CacheableInterfaceFactoryI
 
 import { CacheableInterface } from "./CacheableInterface.js";
 
+import { BasicArrayListCacheable } from "./BasicArrayListCacheable.js";
+
 export class BasicArrayListPool extends AbstractArrayListPool {
         
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){

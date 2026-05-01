@@ -60,6 +60,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
+
+import { AdjustedImageBaseRotationAnimation } from "./AdjustedImageBaseRotationAnimation.js";
+
 export class ImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

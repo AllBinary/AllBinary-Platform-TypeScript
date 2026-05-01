@@ -49,6 +49,8 @@ import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/Anima
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ImageAnimation } from "./ImageAnimation.js";
+
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
 public constructor (animationInterface: Animation, width: number, height: number){

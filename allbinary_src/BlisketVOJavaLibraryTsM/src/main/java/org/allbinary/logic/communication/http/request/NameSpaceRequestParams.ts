@@ -233,7 +233,7 @@ var packagePropertiesHashMap = packagePropertiesHashMap
 ;
     
 
-                        if(propertyValue!.compareTo(NameSpaceRequestParamData.VALUE) != 0)
+                        if(propertyValue!.localeCompare(NameSpaceRequestParamData.VALUE) != 0)
                         
                                     {
                                     selectedValue= propertyValue;
@@ -409,7 +409,7 @@ index < size; index++)
                                     }
                                 
 
-                        if(propertyValue!.compareTo(existingElementNodeTextNodeValue) != 0)
+                        if(propertyValue!.localeCompare(existingElementNodeTextNodeValue) != 0)
                         
                                     {
                                     
@@ -495,7 +495,7 @@ var node = node
 ;
     
 
-                        if(propertyValue!.compareTo(existingElementNodeTextNodeValue) == 0)
+                        if(propertyValue!.localeCompare(existingElementNodeTextNodeValue) == 0)
                         
                                     {
                                     

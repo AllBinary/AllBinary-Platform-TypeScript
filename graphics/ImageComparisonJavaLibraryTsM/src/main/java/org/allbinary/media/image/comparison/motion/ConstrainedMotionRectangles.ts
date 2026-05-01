@@ -53,6 +53,10 @@ import { MotionRectangles } from "./MotionRectangles.js";
 
 import { MotionRectangleConstraintsInterface } from "./MotionRectangleConstraintsInterface.js";
 
+import { MotionRectangle } from "./MotionRectangle.js";
+
+import { Rectangle } from "./Rectangle.js";
+
 export class ConstrainedMotionRectangles extends MotionRectangles {
         
 

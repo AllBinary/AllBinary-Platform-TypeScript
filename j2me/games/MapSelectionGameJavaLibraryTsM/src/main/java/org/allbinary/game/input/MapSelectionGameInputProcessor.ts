@@ -96,6 +96,8 @@ import { PlayerGameInputCompositeInterface } from "./PlayerGameInputCompositeInt
 
 import { PlayerGameInput } from "./PlayerGameInput.js";
 
+import { GameInputProcessorComposite } from "./GameInputProcessorComposite.js";
+
 export class MapSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         
 

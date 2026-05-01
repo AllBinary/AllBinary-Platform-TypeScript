@@ -177,6 +177,8 @@ import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
 
+import { GeographicMapCellPositionArea } from "./GeographicMapCellPositionArea.js";
+
 import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
 
 import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";

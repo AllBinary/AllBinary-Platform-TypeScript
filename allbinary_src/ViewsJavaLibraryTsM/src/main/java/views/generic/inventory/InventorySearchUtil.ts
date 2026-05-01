@@ -355,7 +355,7 @@ var column = column
     var iter: ListIterator = column.listIterator()!;
 ;
     
-keyword= keyword.uppercase();
+keyword= keyword.toUpperCase();
     
 
     var lastPage: number =  -1;
@@ -412,7 +412,7 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
     var keywords: string = itemInterface!.getKeywords()!;
 ;
     
-keywords= keywords.uppercase();
+keywords= keywords.toUpperCase();
     
 
                         if(keywords.indexOf(keyword) !=  -1)

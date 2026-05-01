@@ -65,6 +65,12 @@ import { HttpServlet } from "./HttpServlet.js";
 
 import { ServletConfig } from "./ServletConfig.js";
 
+import { PrintWriter } from "./PrintWriter.js";
+
+import { ServletRequest } from "./ServletRequest.js";
+
+import { ServletResponse } from "./ServletResponse.js";
+
 import { HttpServletRequest } from "./HttpServletRequest.js";
 
 import { HttpServletResponse } from "./HttpServletResponse.js";

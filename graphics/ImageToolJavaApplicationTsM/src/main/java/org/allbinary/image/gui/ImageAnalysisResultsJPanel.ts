@@ -53,15 +53,17 @@ import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhone
         
 import { JPanel } from "./JPanel.js";
 
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Short } from "./Short.js";
+import { JLabel } from "./JLabel.js";
 
 import { JTextField } from "./JTextField.js";
 
 import { JComboBox } from "./JComboBox.js";
 
-import { JLabel } from "./JLabel.js";
+import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
 
 export class ImageAnalysisResultsJPanel extends javax.swing.JPanel {
         

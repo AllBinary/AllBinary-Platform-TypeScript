@@ -61,6 +61,8 @@ import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
 
 import { MidletExitProcessorFactory } from "./MidletExitProcessorFactory.js";
 
+import { ExitRunnable } from "./ExitRunnable.js";
+
 export class ProgressMidlet extends AllBinaryMidlet {
         
 

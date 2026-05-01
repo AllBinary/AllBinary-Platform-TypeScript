@@ -45,6 +45,8 @@ import { CacheableInterfaceFactoryInterface } from "../../../../../org/allbinary
         
 import { BufferedImageCacheable } from "./BufferedImageCacheable.js";
 
+import { BufferedImageInfo } from "./BufferedImageInfo.js";
+
 export class BufferedImageCacheableFactory
             extends Object
          implements CacheableInterfaceFactoryInterface {

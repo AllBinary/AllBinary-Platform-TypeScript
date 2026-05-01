@@ -74,6 +74,8 @@ import { BaseSecretComposite } from "./BaseSecretComposite.js";
 
 import { KeySpecFactory } from "./KeySpecFactory.js";
 
+import { SecretComposite } from "./SecretComposite.js";
+
 export class AbCrypt
             extends Object
          implements CryptInterface {

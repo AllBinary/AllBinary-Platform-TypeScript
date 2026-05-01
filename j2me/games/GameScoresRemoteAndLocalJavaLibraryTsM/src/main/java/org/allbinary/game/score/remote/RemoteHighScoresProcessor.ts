@@ -77,6 +77,8 @@ import { RemoteHighScoresProcessorInterface } from "./RemoteHighScoresProcessorI
 
 import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
 
+import { XmlRpcRemoteHighScoresClient } from "./XmlRpcRemoteHighScoresClient.js";
+
 import { RemoteHighScores } from "./RemoteHighScores.js";
 
 export class RemoteHighScoresProcessor

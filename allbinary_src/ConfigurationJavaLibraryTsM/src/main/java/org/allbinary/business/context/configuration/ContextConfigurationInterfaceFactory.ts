@@ -57,6 +57,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { ContextConfigurationData } from "./ContextConfigurationData.js";
 
+import { ContextConfigurationView } from "./ContextConfigurationView.js";
+
 import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
 
 import { ContextConfigurationPathUtil } from "./ContextConfigurationPathUtil.js";

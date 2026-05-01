@@ -62,6 +62,8 @@ import { EmailServerConfigurationInterface } from "./EmailServerConfigurationInt
 
 import { EmailServerConfigurationData } from "./EmailServerConfigurationData.js";
 
+import { EmailServerConfiguration } from "./EmailServerConfiguration.js";
+
 import { EmailServerConfigurationMapping } from "./EmailServerConfigurationMapping.js";
 
 export class EmailServerConfigurationView

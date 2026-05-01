@@ -39,6 +39,8 @@
         
 import { EventListenerList } from "./EventListenerList.js";
 
+import { EventListener } from "./EventListener.js";
+
 import { MyCanvasEventListener } from "./MyCanvasEventListener.js";
 
 import { MyCanvasEvent } from "./MyCanvasEvent.js";
@@ -102,7 +104,7 @@ i < listeners.length; )
                         
                                     {
                                     
-                        if(evt.getCommand()!.compareTo(MyCanvasEventService.DELETE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.DELETE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -113,7 +115,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyCanvasEventService.DUPLICATE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.DUPLICATE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -124,7 +126,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyCanvasEventService.SELECT) == 0)
+                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.SELECT) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -135,7 +137,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyCanvasEventService.ROTATE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.ROTATE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -146,7 +148,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyCanvasEventService.EXPLODE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.EXPLODE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -157,7 +159,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyCanvasEventService.AUTOEXPLODE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.AUTOEXPLODE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -168,7 +170,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyCanvasEventService.CENTER) == 0)
+                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.CENTER) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener

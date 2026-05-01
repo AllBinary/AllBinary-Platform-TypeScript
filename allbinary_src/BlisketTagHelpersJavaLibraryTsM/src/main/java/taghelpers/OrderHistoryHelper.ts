@@ -180,7 +180,7 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
 ;
     
 
-                        if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
+                        if(status.localeCompare(OrderHistoryData.CANCELLED) == 0)
                         
                                     {
                                     
@@ -193,7 +193,7 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
                                     }
                                 
                              else 
-                        if(status.compareTo(OrderHistoryData.SHIPPED) == 0)
+                        if(status.localeCompare(OrderHistoryData.SHIPPED) == 0)
                         
                                     {
                                     
@@ -206,7 +206,7 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
                                     }
                                 
                              else 
-                        if(status.compareTo(OrderHistoryData.PREPROCESSING) == 0)
+                        if(status.localeCompare(OrderHistoryData.PREPROCESSING) == 0)
                         
                                     {
                                     
@@ -219,7 +219,7 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
                                     }
                                 
                              else 
-                        if(status.compareTo(OrderHistoryData.PARTIALLYSHIPPED) == 0)
+                        if(status.localeCompare(OrderHistoryData.PARTIALLYSHIPPED) == 0)
                         
                                     {
                                     
@@ -232,7 +232,7 @@ this.groupId= this.request.getParameter(ShippingMethodData.GROUP);
                                     }
                                 
                              else 
-                        if(status.compareTo(OrderHistoryData.PROCESSING) == 0)
+                        if(status.localeCompare(OrderHistoryData.PROCESSING) == 0)
                         
                                     {
                                     

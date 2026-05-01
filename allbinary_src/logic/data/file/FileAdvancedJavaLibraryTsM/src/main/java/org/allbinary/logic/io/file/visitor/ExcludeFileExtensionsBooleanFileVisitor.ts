@@ -101,7 +101,7 @@ var fileNameString = fileNameString
 ;
     
 
-                        if(fileName!.compareTo(fileNameString) == 0)
+                        if(fileName!.localeCompare(fileNameString) == 0)
                         
                                     {
                                     

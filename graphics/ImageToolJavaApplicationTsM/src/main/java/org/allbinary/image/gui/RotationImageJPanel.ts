@@ -41,6 +41,9 @@ import { ImageIO } from "../../../../javax/imageio/ImageIO.js";
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { ImageArrayRotationUtil } from "../../../../org/allbinary/media/image/ImageArrayRotationUtil.js";
 
     
@@ -80,19 +83,25 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
-import { GroupLayout } from "./GroupLayout.js";
-
-import { Short } from "./Short.js";
-
-import { ActionEvent } from "./ActionEvent.js";
-
-import { JButton } from "./JButton.js";
+import { Graphics } from "./Graphics.js";
 
 import { JLabel } from "./JLabel.js";
+
+import { JButton } from "./JButton.js";
 
 import { JComboBox } from "./JComboBox.js";
 
 import { JCheckBox } from "./JCheckBox.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
+
+import { ActionListener } from "./ActionListener.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
+import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
 
 export class RotationImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         
@@ -348,7 +357,7 @@ this.getParent()!.repaint();
     var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
 ;
     
-filePath= new StringBuilder().
+filePath= new StringMaker().
                             append(filePath!.substring(0, extensionIndex))!.append(CommonSeps.getInstance()!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
 file= new File(filePath);

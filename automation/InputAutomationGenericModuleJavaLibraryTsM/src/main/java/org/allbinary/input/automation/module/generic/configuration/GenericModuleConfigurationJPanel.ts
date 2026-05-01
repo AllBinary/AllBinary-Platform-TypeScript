@@ -68,33 +68,43 @@ import { JPanel } from "./JPanel.js";
 
 import { GenericModuleConfigurationInterface } from "./GenericModuleConfigurationInterface.js";
 
+import { JDialog } from "./JDialog.js";
+
+import { JButton } from "./JButton.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JTextField } from "./JTextField.js";
+
+import { ButtonGroup } from "./ButtonGroup.js";
+
+import { JTabbedPane } from "./JTabbedPane.js";
+
+import { JScrollPane } from "./JScrollPane.js";
+
+import { JList } from "./JList.js";
+
+import { JRadioButton } from "./JRadioButton.js";
+
+import { JCheckBox } from "./JCheckBox.js";
+
+import { Dimension } from "./Dimension.js";
+
+import { ActionListener } from "./ActionListener.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
 import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
-import { ActionEvent } from "./ActionEvent.js";
+import { GridLayout } from "./GridLayout.js";
+
+import { ListSelectionListener } from "./ListSelectionListener.js";
 
 import { ListSelectionEvent } from "./ListSelectionEvent.js";
 
-import { ButtonGroup } from "./ButtonGroup.js";
-
-import { JCheckBox } from "./JCheckBox.js";
-
-import { JButton } from "./JButton.js";
-
-import { JTabbedPane } from "./JTabbedPane.js";
-
-import { JList } from "./JList.js";
-
-import { JScrollPane } from "./JScrollPane.js";
-
-import { JLabel } from "./JLabel.js";
-
-import { JDialog } from "./JDialog.js";
-
-import { JTextField } from "./JTextField.js";
-
-import { JRadioButton } from "./JRadioButton.js";
+import { Insets } from "./Insets.js";
 
 export class GenericModuleConfigurationJPanel extends javax.swing.JPanel implements GenericModuleConfigurationInterface {
         

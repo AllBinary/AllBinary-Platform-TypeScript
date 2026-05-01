@@ -63,6 +63,8 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
         
 import { HealLayerCircularStaticPool } from "./HealLayerCircularStaticPool.js";
 
+import { HealLayerFactory } from "./HealLayerFactory.js";
+
 import { HealthResources } from "./HealthResources.js";
 
 export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {

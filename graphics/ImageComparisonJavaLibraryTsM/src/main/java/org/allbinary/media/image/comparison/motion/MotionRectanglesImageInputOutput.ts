@@ -97,15 +97,19 @@ import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesR
 
 import { MotionRectanglesResultsFrameCacheable } from "./MotionRectanglesResultsFrameCacheable.js";
 
+import { MotionRectangles } from "./MotionRectangles.js";
+
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
 
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
 
 import { Graphics } from "./Graphics.js";
 
-import { Color } from "./Color.js";
+import { MotionRectangle } from "./MotionRectangle.js";
 
-import { MotionRectangles } from "./MotionRectangles.js";
+import { Rectangle } from "./Rectangle.js";
+
+import { Color } from "./Color.js";
 
 export class MotionRectanglesImageInputOutput
             extends Object

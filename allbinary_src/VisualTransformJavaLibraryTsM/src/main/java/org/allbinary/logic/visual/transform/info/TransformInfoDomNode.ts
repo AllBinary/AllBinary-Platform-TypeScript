@@ -65,6 +65,8 @@ import { TransformInfoInterface } from "./TransformInfoInterface.js";
 
 import { TransformInfoData } from "./TransformInfoData.js";
 
+import { TransformInfo } from "./TransformInfo.js";
+
 export class TransformInfoDomNode
             extends Object
          {

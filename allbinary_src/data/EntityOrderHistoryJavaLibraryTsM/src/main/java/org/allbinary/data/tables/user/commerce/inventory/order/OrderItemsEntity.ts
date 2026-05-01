@@ -368,7 +368,7 @@ var orderId = orderId
 ;
     
 
-                        if(status.compareTo(OrderHistoryData.SHIPPED) != 0)
+                        if(status.localeCompare(OrderHistoryData.SHIPPED) != 0)
                         
                                     {
                                     

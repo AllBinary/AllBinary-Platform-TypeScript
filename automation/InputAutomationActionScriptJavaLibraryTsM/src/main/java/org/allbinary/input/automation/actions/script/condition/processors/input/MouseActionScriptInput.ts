@@ -139,7 +139,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.BUTTONS) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(MouseActionScriptInputData.BUTTONS) == 0)
                         
                                     {
                                     
@@ -152,7 +152,7 @@ this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.MOVE) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(MouseActionScriptInputData.MOVE) == 0)
                         
                                     {
                                     

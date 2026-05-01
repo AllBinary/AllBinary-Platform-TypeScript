@@ -121,7 +121,7 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
 
         try {
             
-                        if(this.groupId!.compareTo(CommonPhoneStrings.getInstance()!.ZERO) != 0)
+                        if(this.groupId!.localeCompare(CommonPhoneStrings.getInstance()!.ZERO) != 0)
                         
                                     {
                                     

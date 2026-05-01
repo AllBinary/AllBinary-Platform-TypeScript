@@ -48,6 +48,10 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { LeftToRightImageAnimation } from "./LeftToRightImageAnimation.js";
+
+import { AdjustedLeftToRightImageAnimation } from "./AdjustedLeftToRightImageAnimation.js";
+
 export class LeftToRightImageAnimationFactory extends BaseImageAnimationFactory {
         
 public constructor (image: Image, sequenceArray: number[], dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){

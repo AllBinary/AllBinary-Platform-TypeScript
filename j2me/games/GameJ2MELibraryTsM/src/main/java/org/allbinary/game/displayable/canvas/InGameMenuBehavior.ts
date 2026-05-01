@@ -44,6 +44,8 @@ import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
 
 import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
 
+import { GameCanvasNonBotPaintable } from "./GameCanvasNonBotPaintable.js";
+
 export class InGameMenuBehavior extends BaseMenuBehavior {
         
 

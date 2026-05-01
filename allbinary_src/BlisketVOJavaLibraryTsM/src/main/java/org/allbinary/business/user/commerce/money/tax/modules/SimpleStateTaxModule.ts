@@ -54,6 +54,9 @@ import { CryptFileReader } from "../../../../../../../../org/allbinary/logic/con
 import { AbPath } from "../../../../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
+import { StringMaker } from "../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { StringValidationUtil } from "../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
 
     
@@ -159,7 +162,7 @@ this.document= DomDocumentHelper.create(data);
     var country: string = this.streetAddress!.getCountry()!;
 ;
     
-state= state.uppercase();
+state= state.toUpperCase();
     
 
     var nodeList: NodeList = this.document.getElementsByTagName(TaxData.NAME)!;
@@ -194,7 +197,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
+                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && country.localeCompare(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     
@@ -202,7 +205,7 @@ index < nodeList!.getLength(); index++)
                                     null
                                  && taxableStreetAddress!.getState() != 
                                     null
-                                 && state.compareTo(taxableStreetAddress!.getState()) == 0)
+                                 && state.localeCompare(taxableStreetAddress!.getState()) == 0)
                         
                                     {
                                     
@@ -307,7 +310,7 @@ index < nodeList!.getLength(); index++)
                         
                                     {
                                     
-    var stringBuffer: StringBuilder = new StringBuilder();
+    var stringBuffer: StringMaker = new StringMaker();
 ;
     
 stringBuffer!.append("StreetAddress Node: ");
@@ -320,7 +323,7 @@ stringBuffer!.append(streetAddressNode!.getNodeValue());
     
 stringBuffer!.append(" Number Of Children: ");
     
-stringBuffer!.append(streetAddressNode!.getChildNodes()!.getLength());
+stringBuffer!.appendint(streetAddressNode!.getChildNodes()!.getLength());
     
 this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
     
@@ -336,7 +339,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && taxableStreetAddress!.getCountry()!.compareTo(this.ALL) == 0)
+                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && taxableStreetAddress!.getCountry()!.localeCompare(this.ALL) == 0)
                         
                                     {
                                     
@@ -349,7 +352,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
+                        if(!stringValidationUtil!.isEmpty(country); && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()); && country.localeCompare(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     

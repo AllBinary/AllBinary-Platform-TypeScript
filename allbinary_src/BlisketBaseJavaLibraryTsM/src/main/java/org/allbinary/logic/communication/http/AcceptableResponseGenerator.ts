@@ -122,7 +122,7 @@ var httpServletRequest = httpServletRequest
 index < size; index++)
         {
 
-                        if(acceptable.compareTo(acceptableResponseUtil!.get(index)) == 0)
+                        if(acceptable.localeCompare(acceptableResponseUtil!.get(index)) == 0)
                         
                                     {
                                     result= acceptableResponseUtil!.getTagName(index);

@@ -64,7 +64,7 @@ public constructor (sep: string){
 
                         if(sep == 
                                     null
-                                 || sep.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
+                                 || sep.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0)
                         
                                     {
                                     

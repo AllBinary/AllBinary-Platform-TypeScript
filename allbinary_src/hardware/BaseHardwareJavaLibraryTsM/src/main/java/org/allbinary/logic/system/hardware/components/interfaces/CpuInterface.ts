@@ -56,7 +56,7 @@ export interface CpuInterface {
 
     getCacheSize(): string
 
-    compareTo(cpuInterface: CpuInterface): boolean
+    localeCompare(cpuInterface: CpuInterface): boolean
 
 }
                 

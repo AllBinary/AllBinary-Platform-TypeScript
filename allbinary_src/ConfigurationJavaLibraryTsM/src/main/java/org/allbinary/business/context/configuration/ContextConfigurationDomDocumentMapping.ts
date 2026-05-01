@@ -51,6 +51,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
 
+import { ContextConfigurationView } from "./ContextConfigurationView.js";
+
 export class ContextConfigurationDomDocumentMapping
             extends Object
          implements DomDocumentMappingInterface {

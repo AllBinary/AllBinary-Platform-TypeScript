@@ -365,7 +365,11 @@ import { GameInputMappingCanvas } from "./GameInputMappingCanvas.js";
 
 import { DemoLimitedCommandTextItemArrayFactory } from "./DemoLimitedCommandTextItemArrayFactory.js";
 
+import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
+
 import { DemoCanvasProgressUtil } from "./DemoCanvasProgressUtil.js";
+
+import { DemoGameRunnable } from "./DemoGameRunnable.js";
 
 export class DemoCanvas extends RunnableCanvas implements GameCanvasRunnableInterface, MenuListener, DisplayChangeEventListener, DemoPaintableInterface {
         

@@ -248,7 +248,7 @@ clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
     public isSameId(alicenseId: string): boolean{
 var alicenseId = alicenseId
 
-                        if(this.getLicenseId()!.compareTo(alicenseId) == 0)
+                        if(this.getLicenseId()!.localeCompare(alicenseId) == 0)
                         
                                     {
                                     
@@ -321,7 +321,7 @@ index2 >= 0; index2--)
 ;
     
 
-                        if(newServerName!.compareTo(nextOldServerName) != 0)
+                        if(newServerName!.localeCompare(nextOldServerName) != 0)
                         
                                     {
                                     

@@ -85,6 +85,14 @@ import { InputFactory } from "./InputFactory.js";
 
 import { GameInputProcessor } from "./GameInputProcessor.js";
 
+import { ScrollMapUpGameInputProcessor } from "./ScrollMapUpGameInputProcessor.js";
+
+import { ScrollMapDownGameInputProcessor } from "./ScrollMapDownGameInputProcessor.js";
+
+import { ScrollMapRightGameInputProcessor } from "./ScrollMapRightGameInputProcessor.js";
+
+import { ScrollMapLeftGameInputProcessor } from "./ScrollMapLeftGameInputProcessor.js";
+
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 export class ScrollMapPlayerGameInput extends PlayerGameInput {

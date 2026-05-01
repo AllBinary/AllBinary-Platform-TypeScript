@@ -70,6 +70,8 @@ import { ProcessingFrameIndexFactory } from "./ProcessingFrameIndexFactory.js";
 
 import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
 
+import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
+
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 

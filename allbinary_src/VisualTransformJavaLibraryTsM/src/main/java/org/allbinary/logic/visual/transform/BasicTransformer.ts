@@ -339,7 +339,7 @@ this.streamUtil!.close(inputStream);
                                     }
                                 
 
-                        if(extension.compareTo(transformInfoTemplateData!.UNCRYPTED_EXTENSION) == 0)
+                        if(extension.localeCompare(transformInfoTemplateData!.UNCRYPTED_EXTENSION) == 0)
                         
                                     {
                                     
@@ -461,7 +461,7 @@ this.setURIResolver(new BasicUriResolver(transformInfoTemplateData!.UNCRYPTED_EX
                                     }
                                 
                              else 
-                        if(extension.compareTo(transformInfoTemplateData!.ENCRYPTED_EXTENSION) == 0)
+                        if(extension.localeCompare(transformInfoTemplateData!.ENCRYPTED_EXTENSION) == 0)
                         
                                     {
                                     

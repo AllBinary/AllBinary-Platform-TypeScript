@@ -39,7 +39,11 @@
         
 import { LayerProcessor } from "./LayerProcessor.js";
 
+import { SingleLayerLayerManager } from "./SingleLayerLayerManager.js";
+
 import { LayerManager } from "./LayerManager.js";
+
+import { AllBinaryLayer } from "./AllBinaryLayer.js";
 
 import { AllBinaryLayerManager } from "./AllBinaryLayerManager.js";
 

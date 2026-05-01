@@ -75,19 +75,25 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
-import { GroupLayout } from "./GroupLayout.js";
+import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
 
-import { Short } from "./Short.js";
+import { JLabel } from "./JLabel.js";
 
-import { ActionEvent } from "./ActionEvent.js";
+import { JComboBox } from "./JComboBox.js";
 
 import { JButton } from "./JButton.js";
 
 import { JTextField } from "./JTextField.js";
 
-import { JComboBox } from "./JComboBox.js";
+import { ActionListener } from "./ActionListener.js";
 
-import { JLabel } from "./JLabel.js";
+import { ActionEvent } from "./ActionEvent.js";
+
+import { Dimension } from "./Dimension.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
 
 export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

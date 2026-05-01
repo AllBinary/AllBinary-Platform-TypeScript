@@ -59,6 +59,8 @@ import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
 import { RTSLayerCompositePaintable } from "./RTSLayerCompositePaintable.js";
 
+import { UpgradableWideRTSLayerPaintable } from "./UpgradableWideRTSLayerPaintable.js";
+
 import { RTSLayer } from "./RTSLayer.js";
 
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {

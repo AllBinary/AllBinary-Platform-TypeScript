@@ -90,11 +90,11 @@ private constructor (){
                                     }
                                 
 
-    var booleanStringLowerCase: string = booleanString!.lowercase()!;
+    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;
 ;
     
 
-                        if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0)
+                        if(booleanStringLowerCase!.localeCompare(booleanFactory!.TRUE_STRING) == 0)
                         
                                     {
                                     
@@ -107,7 +107,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)
+                        if(booleanStringLowerCase!.localeCompare(booleanFactory!.FALSE_STRING) == 0)
                         
                                     {
                                     
@@ -140,11 +140,11 @@ private constructor (){
 ;
     
 
-    var booleanStringLowerCase: string = booleanString!.lowercase()!;
+    var booleanStringLowerCase: string = booleanString!.toLowerCase()!;
 ;
     
 
-                        if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)
+                        if(booleanStringLowerCase!.localeCompare(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.localeCompare(booleanFactory!.FALSE_STRING) == 0)
                         
                                     {
                                     

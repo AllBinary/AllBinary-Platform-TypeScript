@@ -9,6 +9,9 @@
 import { TsUtil } from "../../../../../org/allbinary/logic/TsUtil.js";
 
     
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
 
     
@@ -34,8 +37,6 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { StringBuilder } from "./StringBuilder.js";
-
 export class ObjectPermutationVisitor extends Visitor {
         
 
@@ -43,16 +44,16 @@ export class ObjectPermutationVisitor extends Visitor {
 public constructor (data: any[]){
 
             super();
-        var data = data
+            //var data = data
 this.data= data;
     
 }
 
 
-    private stringBuilder: StringBuilder = new StringBuilder();
+    private stringBuilder: StringMaker = new StringMaker();
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
+    //var anyType = anyType
 this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.print(this.data, stringBuilder);
@@ -67,9 +68,9 @@ this.print(this.data, stringBuilder);
 
 
     public print(data: any[]){
-var data = data
+    //var data = data
 
-    var stringBuilder: StringBuilder = new StringBuilder();
+    var stringBuilder: StringMaker = new StringMaker();
 ;
     
 this.print(data, stringBuilder);
@@ -77,9 +78,9 @@ this.print(data, stringBuilder);
 }
 
 
-    public print(data: any[], stringBuilder: StringBuilder){
-var data = data
-var stringBuilder = stringBuilder
+    public print(data: any[], stringBuilder: StringMaker){
+    //var data = data
+    //var stringBuilder = stringBuilder
 
     var tsUtil: TsUtil = TsUtil.getInstance()!;
 ;
@@ -97,7 +98,7 @@ var stringBuilder = stringBuilder
     var i: number = 0;
 i < size; i++)
         {
-stringBuilder!.append(tsUtil!.hashCode(data[i]!));
+stringBuilder!.appendint(tsUtil!.hashCode(data[i]!));
     
 stringBuilder!.append(CommonSeps.getInstance()!.SPACE);
     

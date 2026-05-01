@@ -131,7 +131,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.localeCompare(AddFileValidationView.ADDPRODUCT) != 0 && command.localeCompare(NEXTSTEP) != 0))
                         
                                     {
                                     
@@ -356,7 +356,7 @@ var document = document
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.localeCompare(AddFileValidationView.ADDPRODUCT) != 0 && command.localeCompare(NEXTSTEP) != 0))
                         
                                     {
                                     
@@ -657,7 +657,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
                         
                                     {
                                     
-                        if(fileItemFieldName!.compareTo(BasicItemData.IMAGE) == 0)
+                        if(fileItemFieldName!.localeCompare(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     

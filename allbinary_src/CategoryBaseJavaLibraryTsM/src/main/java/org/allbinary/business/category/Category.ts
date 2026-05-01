@@ -331,7 +331,7 @@ index < size; index++)
 ;
     
 
-                        if(currentCategoryInterface!.getProperties()!.getValue()!.compareTo(categoryInterface!.getProperties()!.getValue()) == 0)
+                        if(currentCategoryInterface!.getProperties()!.getValue()!.localeCompare(categoryInterface!.getProperties()!.getValue()) == 0)
                         
                                     {
                                     removalVector!.add(currentCategoryInterface);
@@ -424,7 +424,7 @@ index < size; index++)
 ;
     
 
-                        if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
+                        if(categoryInterface!.getProperties()!.getValue()!.localeCompare(categoryPropertiesInterface!.getValue()) == 0)
                         
                                     {
                                     removalVector!.add(categoryPropertiesInterface);
@@ -453,7 +453,7 @@ break;
 ;
     
 
-                        if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
+                        if(categoryInterface!.getProperties()!.getValue()!.localeCompare(categoryPropertiesInterface!.getValue()) == 0)
                         
                                     {
                                     removalVector!.add(existingCategoryInterface);

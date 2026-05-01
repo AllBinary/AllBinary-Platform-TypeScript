@@ -94,19 +94,23 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { JPanel } from "./JPanel.js";
 
-import { GroupLayout } from "./GroupLayout.js";
+import { JCheckBox } from "./JCheckBox.js";
 
-import { Short } from "./Short.js";
-
-import { ActionEvent } from "./ActionEvent.js";
+import { Graphics } from "./Graphics.js";
 
 import { JButton } from "./JButton.js";
 
-import { JTextField } from "./JTextField.js";
-
 import { JLabel } from "./JLabel.js";
 
-import { JCheckBox } from "./JCheckBox.js";
+import { JTextField } from "./JTextField.js";
+
+import { ActionListener } from "./ActionListener.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
+import { GroupLayout } from "./GroupLayout.js";
+
+import { Short } from "./Short.js";
 
 export class CanvasImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         
@@ -450,7 +454,7 @@ this.getParent()!.repaint();
     var extensionIndex: number = filePath!.indexOf(this.imageStrings!.PNG_EXTENSION)!;
 ;
     
-filePath= new StringBuilder().
+filePath= new StringMaker().
                             append(filePath!.substring(0, extensionIndex))!.append(this.commonSeps!.UNDERSCORE)!.append(name)!.append(this.imageStrings!.PNG_EXTENSION)!.toString();
     
 file= new File(filePath);

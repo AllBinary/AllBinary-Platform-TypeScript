@@ -55,6 +55,8 @@ import { IndexedAnimationToImageArrayUtil } from "../../../../org/allbinary/imag
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
+
 export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnimationInterfaceFactory {
         
 public constructor (imageArray: Image[]){

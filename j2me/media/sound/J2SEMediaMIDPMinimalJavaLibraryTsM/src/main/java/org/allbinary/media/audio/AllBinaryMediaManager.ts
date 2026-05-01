@@ -84,9 +84,13 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Sounds } from "./Sounds.js";
+
 import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
 import { NoPlayer } from "./NoPlayer.js";
+
+import { PCClipWavPlayer } from "./PCClipWavPlayer.js";
 
 export class AllBinaryMediaManager
             extends Object

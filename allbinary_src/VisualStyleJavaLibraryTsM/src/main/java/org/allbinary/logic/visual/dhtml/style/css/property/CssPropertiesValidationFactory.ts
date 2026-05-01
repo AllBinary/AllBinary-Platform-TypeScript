@@ -82,7 +82,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(node.getNodeName()!.compareTo(CssPropertyData.getInstance()!.NAME) == 0)
+                        if(node.getNodeName()!.localeCompare(CssPropertyData.getInstance()!.NAME) == 0)
                         
                                     {
                                     

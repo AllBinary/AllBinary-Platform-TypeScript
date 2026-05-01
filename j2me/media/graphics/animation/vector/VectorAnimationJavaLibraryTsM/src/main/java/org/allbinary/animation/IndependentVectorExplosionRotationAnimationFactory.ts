@@ -54,6 +54,8 @@ import { VectorRotationGenerator } from "./VectorRotationGenerator.js";
 
 import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
 
+import { IndexedAnimation } from "./IndexedAnimation.js";
+
 import { Animation } from "./Animation.js";
 
 export class IndependentVectorExplosionRotationAnimationFactory

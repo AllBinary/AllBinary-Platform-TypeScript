@@ -65,6 +65,8 @@ import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
 
 import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
+import { PaymentGatewayPrimaryKey } from "./PaymentGatewayPrimaryKey.js";
+
 export class PaymentGateway
             extends Object
          implements PaymentGatewayInterface {

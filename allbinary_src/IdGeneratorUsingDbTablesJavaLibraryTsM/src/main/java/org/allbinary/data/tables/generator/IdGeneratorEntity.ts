@@ -20,16 +20,10 @@
 
             import { Long } from "../../../../../java/lang/Long.js";
         
-import { Calendar } from "../../../../../java/util/Calendar.js";
-
-    
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
 import { Vector } from "../../../../../java/util/Vector.js";
-
-    
-import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
 
     
 import { UserDbInitInfo } from "../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
@@ -39,6 +33,9 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
     
 import { AbSqlBean } from "../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+
+    
+import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
 
@@ -80,7 +77,7 @@ public constructor (){
 
                             //For kotlin this is before the body of the constructor.
                     
-this.tableData= new StringBuilder().
+this.tableData= new StringMaker().
                             append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(this.sqlStrings!.START)!.append(NAME)!.append(this.sqlTypeStrings!.MAX_CHAR_COLUMN_NOT_NULL)!.append(VALUE)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNSIGNED_NOT_NULL)!.append(this.sqlStrings!.PRIMARY_KEY)!.append(NAME)!.append(this.sqlStrings!.END)!.toString();
     
 super.setTableName(this.tableName);
@@ -104,7 +101,7 @@ keysAndValues!.put(this.NAME, name);
     
 
                         if(
-                                    (get as String).compareTo(name) != 0)
+                                    (get as String).localeCompare(name) != 0)
                         
                                     {
                                     

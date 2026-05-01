@@ -115,7 +115,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.compareTo(AlwaysActionScriptConditionData.IS_ON) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(AlwaysActionScriptConditionData.IS_ON) == 0)
                         
                                     {
                                     

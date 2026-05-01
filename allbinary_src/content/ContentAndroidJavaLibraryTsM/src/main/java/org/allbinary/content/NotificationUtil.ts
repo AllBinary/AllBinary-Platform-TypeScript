@@ -71,6 +71,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
         
 import { NotificationBuilder } from "./NotificationBuilder.js";
 
+import { NotificationBuilderAPI23 } from "./NotificationBuilderAPI23.js";
+
 import { CommandUriAction } from "./CommandUriAction.js";
 
 export class NotificationUtil

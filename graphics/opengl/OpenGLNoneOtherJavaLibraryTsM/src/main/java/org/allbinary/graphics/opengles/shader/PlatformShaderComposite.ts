@@ -45,6 +45,8 @@ import { OpenGLProcessor } from "../../../../../org/allbinary/graphics/opengles/
         
 import { ShaderComposite } from "./ShaderComposite.js";
 
+import { Shader } from "./Shader.js";
+
 import { CompositeShaderUpdater } from "./CompositeShaderUpdater.js";
 
 import { ShaderInitializer } from "./ShaderInitializer.js";

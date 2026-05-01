@@ -40,6 +40,8 @@ import { AllBinaryEventCircularPool } from "../../../../org/allbinary/logic/util
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TerrainEventFactory } from "./TerrainEventFactory.js";
+
 import { TerrainEvent } from "./TerrainEvent.js";
 
 import { BasicTerrainInfo } from "./BasicTerrainInfo.js";

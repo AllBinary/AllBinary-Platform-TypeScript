@@ -57,7 +57,13 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
         
 import { BaseTouchInput } from "./BaseTouchInput.js";
 
+import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
+
+import { BasicTouchButtonCellPositionFactory } from "./BasicTouchButtonCellPositionFactory.js";
+
 import { CommonButtons } from "./CommonButtons.js";
+
+import { TouchButton } from "./TouchButton.js";
 
 import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
 

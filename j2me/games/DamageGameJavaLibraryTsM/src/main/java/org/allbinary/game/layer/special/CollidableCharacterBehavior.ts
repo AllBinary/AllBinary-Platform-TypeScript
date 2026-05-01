@@ -57,6 +57,8 @@ import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/
         
 import { CollidableDestroyableDamageableBehavior } from "./CollidableDestroyableDamageableBehavior.js";
 
+import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDamageableLayer.js";
+
 export class CollidableCharacterBehavior extends CollidableDestroyableDamageableBehavior {
         
 public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){

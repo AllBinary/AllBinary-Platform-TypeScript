@@ -43,6 +43,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { BasicStoreFrontsEntity } from "./BasicStoreFrontsEntity.js";
+
 import { BasicStoreFrontInterface } from "./BasicStoreFrontInterface.js";
 
 export class BasicStoreFrontFactory

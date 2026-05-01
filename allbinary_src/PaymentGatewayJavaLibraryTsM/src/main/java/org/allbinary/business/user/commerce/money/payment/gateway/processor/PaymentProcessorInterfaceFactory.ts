@@ -61,6 +61,8 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { PaymentProcessorInterfaceFactoryInterface } from "./PaymentProcessorInterfaceFactoryInterface.js";
+
 import { PaymentProcessorInterface } from "./PaymentProcessorInterface.js";
 
 export class PaymentProcessorInterfaceFactory

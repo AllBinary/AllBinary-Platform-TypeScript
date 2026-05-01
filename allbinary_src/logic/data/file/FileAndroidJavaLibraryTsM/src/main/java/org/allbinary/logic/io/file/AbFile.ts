@@ -454,13 +454,13 @@ var time = time
 }
 
 
-    public compareTo(pathname: File): number{
+    public localeCompare(pathname: File): number{
 var pathname = pathname
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.compareTo(pathname);;
+                        return this.file.localeCompare(pathname);;
     
 }
 

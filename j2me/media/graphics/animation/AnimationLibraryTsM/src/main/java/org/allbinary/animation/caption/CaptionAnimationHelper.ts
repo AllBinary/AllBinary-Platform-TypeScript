@@ -66,6 +66,8 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
         
 import { CaptionAnimationHelperBase } from "./CaptionAnimationHelperBase.js";
 
+import { CaptionAnimation } from "./CaptionAnimation.js";
+
 export class CaptionAnimationHelper extends CaptionAnimationHelperBase {
         
 

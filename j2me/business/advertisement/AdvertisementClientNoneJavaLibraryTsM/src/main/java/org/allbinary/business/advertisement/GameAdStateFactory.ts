@@ -31,6 +31,8 @@ import { SoftwareInformation } from "../../../../org/allbinary/logic/system/Soft
         
 import { GameAdStateFactoryInterface } from "./GameAdStateFactoryInterface.js";
 
+import { AppNameLicensingAdConfiguration } from "./AppNameLicensingAdConfiguration.js";
+
 export class GameAdStateFactory
             extends Object
          implements GameAdStateFactoryInterface {

@@ -118,6 +118,12 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
         
 import { ImageCacheBase } from "./ImageCacheBase.js";
 
+import { NotHTMLEndProcessor } from "./NotHTMLEndProcessor.js";
+
+import { NotHTMLProcessor } from "./NotHTMLProcessor.js";
+
+import { HTMLEndProcessor } from "./HTMLEndProcessor.js";
+
 import { FirstProcessor } from "./FirstProcessor.js";
 
 export class ImageCache extends ImageCacheBase {

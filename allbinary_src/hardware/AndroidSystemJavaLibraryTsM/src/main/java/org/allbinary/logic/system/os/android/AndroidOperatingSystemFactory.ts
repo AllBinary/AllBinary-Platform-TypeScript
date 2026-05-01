@@ -57,6 +57,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AndroidOS } from "./AndroidOS.js";
+
 export class AndroidOperatingSystemFactory
             extends Object
          {
@@ -102,7 +104,7 @@ private constructor (){
 ;
     
 
-                        if(osName!.compareTo(OperatingSystems.getInstance()!.ANDROID) == 0)
+                        if(osName!.localeCompare(OperatingSystems.getInstance()!.ANDROID) == 0)
                         
                                     {
                                     GenericOperatingSystem= new AndroidOS();

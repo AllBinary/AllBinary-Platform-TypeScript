@@ -42,6 +42,8 @@ import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapp
         
 import { PCGameInputMapping } from "./PCGameInputMapping.js";
 
+import { MotionLaptopDefaultGameInputMapping } from "./MotionLaptopDefaultGameInputMapping.js";
+
 export class MotionLaptopGameInputMapping extends PCGameInputMapping {
         
 

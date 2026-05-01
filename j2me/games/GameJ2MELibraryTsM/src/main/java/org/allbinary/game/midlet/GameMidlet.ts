@@ -301,6 +301,8 @@ import { GameMidletStateFactory } from "./GameMidletStateFactory.js";
 
 import { GameMidletEventHandler } from "./GameMidletEventHandler.js";
 
+import { DemoGameMidletEvent } from "./DemoGameMidletEvent.js";
+
 import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
 
 export class GameMidlet extends ProgressMidlet implements CommandListener {
@@ -1381,7 +1383,7 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
                                     }
                                 
                              else 
-                        if(command.getLabel()!.compareTo(gameCommandsFactory!.TOGGLE_FULLSCREEN.getLabel()) == 0)
+                        if(command.getLabel()!.localeCompare(gameCommandsFactory!.TOGGLE_FULLSCREEN.getLabel()) == 0)
                         
                                     {
                                     

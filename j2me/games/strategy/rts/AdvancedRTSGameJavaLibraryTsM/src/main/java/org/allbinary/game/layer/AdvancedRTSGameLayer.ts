@@ -177,13 +177,13 @@ import { AdvancedRTSProperties } from "./AdvancedRTSProperties.js";
 
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
+import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+
 import { AdvancedRTSPlayerLayerInterface } from "./AdvancedRTSPlayerLayerInterface.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
 import { RTSLayerUtil } from "./RTSLayerUtil.js";
-
-import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         

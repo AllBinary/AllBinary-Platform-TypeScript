@@ -74,6 +74,8 @@ import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory
 
 import { HighScores } from "./HighScores.js";
 
+import { HighScore } from "./HighScore.js";
+
 export class HighScoresPaintable extends Paintable implements ColorChangeListener {
         
 

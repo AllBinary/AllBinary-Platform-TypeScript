@@ -69,7 +69,7 @@ public constructor (){
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     this.setName("Basic Shipping Address View");
@@ -80,7 +80,7 @@ this.setObjectFile("views.generic.address.shipping.TaxValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
                                     this.setName("Basic Shipping Address View");
@@ -91,7 +91,7 @@ this.setObjectFile("views.generic.address.shipping.NewValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0)
                         
                                     {
                                     this.setName("Basic Shipping Address View");
@@ -102,7 +102,7 @@ this.setObjectFile("views.generic.address.shipping.AddTaxValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.UPDATE) == 0)
                         
                                     {
                                     this.setName("Basic Shipping Address View");

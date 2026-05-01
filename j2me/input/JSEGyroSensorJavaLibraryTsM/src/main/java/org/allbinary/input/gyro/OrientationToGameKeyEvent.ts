@@ -48,6 +48,8 @@ import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js
         
 import { AllBinaryOrientationSensor } from "./AllBinaryOrientationSensor.js";
 
+import { NoGyroSensor } from "./NoGyroSensor.js";
+
 export class OrientationToGameKeyEvent
             extends Object
          {

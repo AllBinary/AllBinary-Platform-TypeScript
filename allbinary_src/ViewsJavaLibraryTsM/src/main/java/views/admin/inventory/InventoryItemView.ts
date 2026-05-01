@@ -106,6 +106,8 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { InventoryUploadMediaUtil } from "./InventoryUploadMediaUtil.js";
+
 export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         
 
@@ -333,7 +335,7 @@ index < size; index++)
 ;
     
 
-                        if(fieldName!.compareTo(BasicItemData.IMAGE) == 0)
+                        if(fieldName!.localeCompare(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     

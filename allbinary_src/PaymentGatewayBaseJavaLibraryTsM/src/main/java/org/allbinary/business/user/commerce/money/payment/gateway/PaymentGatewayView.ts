@@ -60,6 +60,8 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
         
 import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
 
+import { PaymentGatewayMapping } from "./PaymentGatewayMapping.js";
+
 import { PaymentGatewayData } from "./PaymentGatewayData.js";
 
 export class PaymentGatewayView

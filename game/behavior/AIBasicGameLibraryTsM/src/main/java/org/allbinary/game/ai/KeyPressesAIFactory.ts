@@ -54,6 +54,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
 
+import { MultiKeyPressesAI } from "./MultiKeyPressesAI.js";
+
+import { KeyPressesAI } from "./KeyPressesAI.js";
+
 export class KeyPressesAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

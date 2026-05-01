@@ -86,7 +86,7 @@ var actionEvent = actionEvent
 super.actionPerformed(actionEvent);
     
 
-                        if(actionEvent!.getActionCommand()!.compareTo(DELETE) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(DELETE) == 0)
                         
                                     {
                                     

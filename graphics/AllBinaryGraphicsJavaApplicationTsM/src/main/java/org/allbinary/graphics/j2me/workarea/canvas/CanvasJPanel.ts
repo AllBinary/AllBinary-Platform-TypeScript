@@ -104,6 +104,9 @@ import { GuiLog } from "../../../../../../org/allbinary/logic/communication/log/
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { PositionStrings } from "../../../../../../org/allbinary/math/PositionStrings.js";
 
     
@@ -158,11 +161,11 @@ import { Dimension } from "./Dimension.js";
 
 import { CanvasDom } from "./CanvasDom.js";
 
+import { GridLayout } from "./GridLayout.js";
+
 import { Graphics } from "./Graphics.js";
 
 import { MouseEvent } from "./MouseEvent.js";
-
-import { StringBuilder } from "./StringBuilder.js";
 
 import { KeyEvent } from "./KeyEvent.js";
 
@@ -1242,20 +1245,20 @@ this.repaint();
 
 
     logMouseEvent(mouseEvent: java.awt.event.MouseEvent): string{
-var mouseEvent = mouseEvent
+    //var mouseEvent = mouseEvent
 
-    var stringBuffer: StringBuilder = new StringBuilder();
+    var stringBuffer: StringMaker = new StringMaker();
 ;
     
 stringBuffer!.append(PositionStrings.getInstance()!.X_LABEL);
     
-stringBuffer!.append(mouseEvent!.getX() /this.getXPixelsPerWorkAreaPixel());
+stringBuffer!.appendint(mouseEvent!.getX() /this.getXPixelsPerWorkAreaPixel());
     
 stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
 stringBuffer!.append(PositionStrings.getInstance()!.Y_LABEL);
     
-stringBuffer!.append(mouseEvent!.getY() /this.getYPixelsPerWorkAreaPixel());
+stringBuffer!.appendint(mouseEvent!.getY() /this.getYPixelsPerWorkAreaPixel());
     
 
 

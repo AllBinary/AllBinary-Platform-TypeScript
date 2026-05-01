@@ -117,7 +117,7 @@ var componentData = componentData
                         
                                     {
                                     
-                        if(component.compareTo(this.componentFactory!.ETHERNET.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.ETHERNET.toString()) == 0)
                         
                                     {
                                     
@@ -130,7 +130,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.BRIDGE.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.BRIDGE.toString()) == 0)
                         
                                     {
                                     
@@ -143,7 +143,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.IDE.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.IDE.toString()) == 0)
                         
                                     {
                                     
@@ -156,7 +156,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.MULTIMEDIA.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.MULTIMEDIA.toString()) == 0)
                         
                                     {
                                     
@@ -169,7 +169,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.SCSI.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.SCSI.toString()) == 0)
                         
                                     {
                                     
@@ -182,7 +182,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.USB.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.USB.toString()) == 0)
                         
                                     {
                                     
@@ -195,7 +195,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.VGA.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.VGA.toString()) == 0)
                         
                                     {
                                     
@@ -208,7 +208,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.PCI.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.PCI.toString()) == 0)
                         
                                     {
                                     
@@ -351,7 +351,7 @@ var component = component
                                     }
                                 
                              else 
-                        if(component.compareTo(this.componentFactory!.PCI.toString()) == 0)
+                        if(component.localeCompare(this.componentFactory!.PCI.toString()) == 0)
                         
                                     {
                                     

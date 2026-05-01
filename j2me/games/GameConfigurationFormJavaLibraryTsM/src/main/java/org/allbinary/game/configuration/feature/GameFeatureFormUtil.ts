@@ -72,6 +72,8 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
         
 import { Features } from "./Features.js";
 
+import { Feature } from "./Feature.js";
+
 import { GameFeatureUtil } from "./GameFeatureUtil.js";
 
 export class GameFeatureFormUtil

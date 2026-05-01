@@ -80,7 +80,7 @@ this.list.add(PNG);
 
     public isSupported(mediaFileType: string): boolean{
 var mediaFileType = mediaFileType
-mediaFileType= mediaFileType!.lowercase();
+mediaFileType= mediaFileType!.toLowerCase();
     
 
 
@@ -95,7 +95,7 @@ index >= 0; index--)
 ;
     
 
-                        if(mediaFileType!.compareTo(name) == 0)
+                        if(mediaFileType!.localeCompare(name) == 0)
                         
                                     {
                                     

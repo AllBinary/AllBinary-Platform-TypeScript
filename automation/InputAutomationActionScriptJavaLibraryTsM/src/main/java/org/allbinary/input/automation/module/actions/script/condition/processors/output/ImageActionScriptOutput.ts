@@ -128,7 +128,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.SAVE) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.SAVE) == 0)
                         
                                     {
                                     
@@ -142,7 +142,7 @@ this.setSaved(.
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.DISPLAY) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.DISPLAY) == 0)
                         
                                     {
                                     
@@ -156,7 +156,7 @@ this.setSaved(.
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPES) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.TYPES) == 0)
                         
                                     {
                                     this.setImageTypes(new ImageTypes(childNode));

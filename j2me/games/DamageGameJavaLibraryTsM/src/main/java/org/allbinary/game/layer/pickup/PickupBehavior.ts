@@ -65,11 +65,15 @@ import { PickupBehaviorInterface } from "./PickupBehaviorInterface.js";
 
 import { PickupProcessorInterface } from "./PickupProcessorInterface.js";
 
+import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
+
+import { PickedUpLayerType } from "./PickedUpLayerType.js";
+
 import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
 
-import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
-
 import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
+
+import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
 
 import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
 

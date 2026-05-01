@@ -63,6 +63,10 @@ import { PrimaryThreadPool } from "../../../../org/allbinary/thread/PrimaryThrea
         
 import { GameMidlet } from "./GameMidlet.js";
 
+import { DemoRunnable } from "./DemoRunnable.js";
+
+import { CreateGameRunnable } from "./CreateGameRunnable.js";
+
 export class DemoGameMidlet extends GameMidlet {
         
 public constructor (clientInformationFactory: ClientInformationFactory){

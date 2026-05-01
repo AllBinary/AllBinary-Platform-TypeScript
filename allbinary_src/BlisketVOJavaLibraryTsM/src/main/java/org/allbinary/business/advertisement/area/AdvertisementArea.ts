@@ -58,6 +58,8 @@ import { AdvertisementAreaConstraintsInterface } from "./AdvertisementAreaConstr
 
 import { AdvertisementAreaData } from "./AdvertisementAreaData.js";
 
+import { AdvertisementAreaConstraints } from "./AdvertisementAreaConstraints.js";
+
 export class AdvertisementArea
             extends Object
          implements AdvertisementAreaInterface {

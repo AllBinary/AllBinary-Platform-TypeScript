@@ -48,6 +48,8 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
         
 import { Serializable } from "./Serializable.js";
 
+import { PaymentGateway } from "./PaymentGateway.js";
+
 export class PaymentGatewayPrimaryKey
             extends Object
          implements java.io.Serializable {

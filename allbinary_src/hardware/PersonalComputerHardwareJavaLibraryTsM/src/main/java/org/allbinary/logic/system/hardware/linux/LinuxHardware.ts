@@ -645,7 +645,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public compareTo(hardwareInterface: HardwareInterface): boolean{
+    public localeCompare(hardwareInterface: HardwareInterface): boolean{
 var hardwareInterface = hardwareInterface
 
 

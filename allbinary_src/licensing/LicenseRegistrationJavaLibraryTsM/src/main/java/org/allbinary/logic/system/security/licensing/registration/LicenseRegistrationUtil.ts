@@ -57,6 +57,8 @@ import { CommonLabels } from "../../../../../../../org/allbinary/string/CommonLa
         
 import { RegistrationConfiguration } from "./RegistrationConfiguration.js";
 
+import { XmlRpcRemoteLicenseRegistrationClient } from "./XmlRpcRemoteLicenseRegistrationClient.js";
+
 export class LicenseRegistrationUtil
             extends Object
          {

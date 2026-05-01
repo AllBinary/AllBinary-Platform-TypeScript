@@ -53,6 +53,8 @@ import { CategoryPropertiesFactoryInterface } from "./CategoryPropertiesFactoryI
 
 import { CategoryPropertiesInterface } from "./CategoryPropertiesInterface.js";
 
+import { CategoryProperties } from "./CategoryProperties.js";
+
 export class CategoryPropertiesFactory
             extends Object
          implements CategoryPropertiesFactoryInterface {

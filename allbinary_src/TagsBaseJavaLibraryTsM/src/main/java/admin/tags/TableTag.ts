@@ -121,7 +121,7 @@ this.enabled= enabled;
                         
                                     {
                                     
-                        if(BooleanUtil.getInstance()!.getFromString(this.enabled) || this.enabled.compareTo("on") == 0)
+                        if(BooleanUtil.getInstance()!.getFromString(this.enabled) || this.enabled.localeCompare("on") == 0)
                         
                                     {
                                     
@@ -681,7 +681,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0 || this.getCommand()!.compareTo(commonStrings!.DELETE) == 0 || this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.INSERT) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.INSERT_INTO) == 0 || this.getCommand()!.localeCompare(commonStrings!.DELETE) == 0 || this.getCommand()!.localeCompare(commonStrings!.UPDATE) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
                                     this.requestObject= this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext);
@@ -690,7 +690,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.INSERT_INTO) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.INSERT) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.INSERT_INTO) == 0)
                         
                                     {
                                     this.insert();
@@ -699,7 +699,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.DELETE) == 0)
                         
                                     {
                                     this.delete();
@@ -708,7 +708,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0 || this.getCommand()!.compareTo(SqlStrings.getInstance()!.UPDATE) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.UPDATE) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
                                     this.update();
@@ -717,7 +717,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
                         
                                     {
                                     
@@ -743,7 +743,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
                         
                                     {
                                     this.getPropertiesHashMap()!.put("current", this.getCurrent());
@@ -773,7 +773,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(commonStrings!.DROP) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.DROP) == 0)
                         
                                     {
                                     
@@ -799,7 +799,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(commonStrings!.CREATE) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.CREATE) == 0)
                         
                                     {
                                     
@@ -825,7 +825,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.INSERT) == 0)
                         
                                     {
                                     
@@ -845,7 +845,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.DELETE) == 0)
                         
                                     {
                                     
@@ -865,7 +865,7 @@ this.getPropertiesHashMap()!.put("total", this.getTotal());
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0)
+                        if(this.getCommand()!.localeCompare(commonStrings!.UPDATE) == 0)
                         
                                     {
                                     

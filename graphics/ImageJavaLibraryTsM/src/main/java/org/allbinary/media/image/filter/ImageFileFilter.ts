@@ -74,7 +74,7 @@ var f = f
                         
                                     {
                                     
-    var ext: string = s.substring(i +1)!.lowercase()!;
+    var ext: string = s.substring(i +1)!.toLowerCase()!;
 ;
     
 

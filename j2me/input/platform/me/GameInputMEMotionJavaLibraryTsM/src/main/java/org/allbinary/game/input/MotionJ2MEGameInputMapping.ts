@@ -42,6 +42,8 @@ import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapp
         
 import { J2MEGameInputMapping } from "./J2MEGameInputMapping.js";
 
+import { MotionJ2MEDefaultGameInputMapping } from "./MotionJ2MEDefaultGameInputMapping.js";
+
 export class MotionJ2MEGameInputMapping extends J2MEGameInputMapping {
         
 

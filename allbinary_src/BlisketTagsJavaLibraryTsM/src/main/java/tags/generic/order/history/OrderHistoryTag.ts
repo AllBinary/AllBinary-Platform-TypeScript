@@ -164,7 +164,7 @@ this.setObjectFile("views.generic.order.history.ValidationView");
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
+                        if(this.getCommand()!.localeCompare(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
                                     this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status);
@@ -175,7 +175,7 @@ pageContext!.getOut()!.print(this.setOrderStatus());
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     

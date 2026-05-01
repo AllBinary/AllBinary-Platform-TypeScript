@@ -76,6 +76,8 @@ import { SqlTypeStrings } from "./SqlTypeStrings.js";
 
 import { SqlStrings } from "./SqlStrings.js";
 
+import { ClassLoader } from "./ClassLoader.js";
+
 export class AbSqlBasic
             extends Object
          {

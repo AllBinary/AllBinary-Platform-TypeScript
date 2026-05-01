@@ -51,6 +51,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
 
+import { StoreThemeCategoryView } from "./StoreThemeCategoryView.js";
+
 export class StoreThemeCategoriesView
             extends Object
          implements DomNodeInterface {

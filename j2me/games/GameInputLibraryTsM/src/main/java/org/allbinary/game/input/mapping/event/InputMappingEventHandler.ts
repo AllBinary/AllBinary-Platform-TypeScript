@@ -48,6 +48,8 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
         
 import { InputMappingEventListenerInterface } from "./InputMappingEventListenerInterface.js";
 
+import { InputMappingEvent } from "./InputMappingEvent.js";
+
 export class InputMappingEventHandler extends BasicEventHandler {
         
 

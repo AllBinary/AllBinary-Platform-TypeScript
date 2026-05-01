@@ -49,6 +49,8 @@ import { LayerProcessor } from "../../../../org/allbinary/layer/LayerProcessor.j
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { OptimizedTickableLayerManager } from "./OptimizedTickableLayerManager.js";
+
 export class OptimizedTickableLayerProcessor extends LayerProcessor {
         
 public constructor (){

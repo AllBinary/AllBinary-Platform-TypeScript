@@ -39,6 +39,8 @@
         
 import { EventListenerList } from "./EventListenerList.js";
 
+import { EventListener } from "./EventListener.js";
+
 import { MyGraphicItemEventListener } from "./MyGraphicItemEventListener.js";
 
 import { MyGraphicItemEvent } from "./MyGraphicItemEvent.js";
@@ -98,7 +100,7 @@ i < listeners.length; )
                         
                                     {
                                     
-                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.SELECT) == 0)
+                        if(evt.getCommand()!.localeCompare(MyGraphicItemEventService.SELECT) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
@@ -109,7 +111,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.DESELECT) == 0)
+                        if(evt.getCommand()!.localeCompare(MyGraphicItemEventService.DESELECT) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
@@ -120,7 +122,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.DELETE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyGraphicItemEventService.DELETE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
@@ -131,7 +133,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.DUPLICATE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyGraphicItemEventService.DUPLICATE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener
@@ -142,7 +144,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.compareTo(MyGraphicItemEventService.ROTATE) == 0)
+                        if(evt.getCommand()!.localeCompare(MyGraphicItemEventService.ROTATE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyGraphicItemEventListener

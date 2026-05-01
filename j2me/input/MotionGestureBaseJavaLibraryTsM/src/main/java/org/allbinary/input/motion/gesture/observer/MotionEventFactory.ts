@@ -55,6 +55,8 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allb
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MotionGestureEvent } from "./MotionGestureEvent.js";
+
 export class MotionEventFactory
             extends Object
          implements AllBinaryEventObjectFactoryInterface {

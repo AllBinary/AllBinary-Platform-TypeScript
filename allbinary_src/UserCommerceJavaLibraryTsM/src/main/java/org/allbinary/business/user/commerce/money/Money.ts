@@ -175,7 +175,7 @@ var currency = currency
 ;
     
 
-                        if(currency.compareTo(this.DEFAULT_CURRENCY) == 0)
+                        if(currency.localeCompare(this.DEFAULT_CURRENCY) == 0)
                         
                                     {
                                     

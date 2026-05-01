@@ -84,6 +84,8 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
         
 import { LogoData } from "./LogoData.js";
 
+import { LogoImageFileUtil } from "./LogoImageFileUtil.js";
+
 export class LogoValidation extends Validation implements DomNodeInterface {
         
 

@@ -62,6 +62,8 @@ import { CategoryFactoryInterface } from "./CategoryFactoryInterface.js";
 
 import { CategoryInterface } from "./CategoryInterface.js";
 
+import { Category } from "./Category.js";
+
 export class CategoryAbstractFactory
             extends Object
          implements CategoryFactoryInterface {

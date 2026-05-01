@@ -226,7 +226,7 @@ this.shippingVector!.add(shippingMethodInterface);
 
                         if(defaultShippingMethodNameNodeValue != 
                                     null
-                                 && defaultShippingMethodNameNodeValue!.compareTo(ShippingMethodData.DEFAULT) == 0)
+                                 && defaultShippingMethodNameNodeValue!.localeCompare(ShippingMethodData.DEFAULT) == 0)
                         this.defaultShippingMethodInterface= shippingMethodInterface
 }
 

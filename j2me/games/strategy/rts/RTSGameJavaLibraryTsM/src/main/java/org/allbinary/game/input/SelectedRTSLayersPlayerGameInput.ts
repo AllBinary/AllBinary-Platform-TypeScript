@@ -126,6 +126,12 @@ import { GameInputProcessor } from "./GameInputProcessor.js";
 
 import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
 
+import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
+
+import { SelectedRTSLayersPlayerUpgradeGameInputProcessor } from "./SelectedRTSLayersPlayerUpgradeGameInputProcessor.js";
+
+import { SelectedRTSLayersPlayerDowngradeGameInputProcessor } from "./SelectedRTSLayersPlayerDowngradeGameInputProcessor.js";
+
 import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
 
 export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {

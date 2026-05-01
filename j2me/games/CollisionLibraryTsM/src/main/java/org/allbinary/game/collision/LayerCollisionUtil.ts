@@ -51,6 +51,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
         
 import { CollisionProcessor } from "./CollisionProcessor.js";
 
+import { Collision2DProcessor } from "./Collision2DProcessor.js";
+
+import { CollisionThreedProcessor } from "./CollisionThreedProcessor.js";
+
 export class LayerCollisionUtil
             extends Object
          {

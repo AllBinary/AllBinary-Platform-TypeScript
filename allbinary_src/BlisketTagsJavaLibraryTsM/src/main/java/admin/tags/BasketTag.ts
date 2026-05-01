@@ -368,7 +368,7 @@ this.storeName= value;
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
 
-                        if(this.command.compareTo(BasketData.INSERT) == 0)
+                        if(this.command.localeCompare(BasketData.INSERT) == 0)
                         
                                     {
                                     
@@ -384,7 +384,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     }
                                 
                              else 
-                        if(this.command.compareTo(BasketData.DELETE) == 0)
+                        if(this.command.localeCompare(BasketData.DELETE) == 0)
                         
                                     {
                                     this.removeItemFromBasket();
@@ -393,7 +393,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     }
                                 
                              else 
-                        if(this.command.compareTo(BasketData.ADJUST) == 0)
+                        if(this.command.localeCompare(BasketData.ADJUST) == 0)
                         
                                     {
                                     this.adjustBasket();
@@ -402,7 +402,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     }
                                 
                              else 
-                        if(this.command.compareTo(BasketData.ISEMPTY) == 0)
+                        if(this.command.localeCompare(BasketData.ISEMPTY) == 0)
                         
                                     {
                                     

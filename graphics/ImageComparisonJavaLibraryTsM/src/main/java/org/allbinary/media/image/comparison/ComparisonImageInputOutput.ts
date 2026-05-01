@@ -74,9 +74,11 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
 
-import { ChangedPixelsUtil } from "./ChangedPixelsUtil.js";
+import { ImageComparisonResultFrameCacheable } from "./ImageComparisonResultFrameCacheable.js";
 
 import { ImageComparisonResult } from "./ImageComparisonResult.js";
+
+import { ChangedPixelsUtil } from "./ChangedPixelsUtil.js";
 
 export class ComparisonImageInputOutput
             extends Object

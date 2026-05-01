@@ -56,7 +56,7 @@ public constructor (){
         }
 
 
-    public compareTo(componentInterface: HardwareComponentInterface): boolean{
+    public localeCompare(componentInterface: HardwareComponentInterface): boolean{
 var componentInterface = componentInterface
 
 

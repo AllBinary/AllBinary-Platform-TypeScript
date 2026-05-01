@@ -74,6 +74,8 @@ import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialInt
 
 import { BoundBounceAI } from "./BoundBounceAI.js";
 
+import { ReverseVelocityBoundsVisitor } from "./ReverseVelocityBoundsVisitor.js";
+
 export class TopUBoundBounceAIFactory
             extends Object
          implements ArtificialIntelligenceInterfaceFactoryInterface {

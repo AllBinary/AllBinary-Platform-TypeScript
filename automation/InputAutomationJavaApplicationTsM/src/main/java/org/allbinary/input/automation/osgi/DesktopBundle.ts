@@ -52,6 +52,8 @@ import { BasicTextJDialog } from "../../../../../org/allbinary/gui/dialog/BasicT
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { JDialog } from "./JDialog.js";
+
 export class DesktopBundle
             extends Object
          {
@@ -94,7 +96,7 @@ index < bundleArray!.length; index++)
 ;
     
 
-                        if(symbolicName!.compareTo(DesktopBundle.DESKTOP_SYMBOLIC_NAME) == 0)
+                        if(symbolicName!.localeCompare(DesktopBundle.DESKTOP_SYMBOLIC_NAME) == 0)
                         
                                     {
                                     this.bundle= bundle;

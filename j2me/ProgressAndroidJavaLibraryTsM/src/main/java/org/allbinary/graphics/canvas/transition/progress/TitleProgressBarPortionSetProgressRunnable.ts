@@ -50,6 +50,8 @@ import { ProgressRunnable } from "./ProgressRunnable.js";
 
 import { ProgressCanvas } from "./ProgressCanvas.js";
 
+import { AndroidBasicTitleProgressBar } from "./AndroidBasicTitleProgressBar.js";
+
 export class TitleProgressBarPortionSetProgressRunnable extends ProgressRunnable {
         
 

@@ -213,7 +213,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
 ;
     
 
-                        if(version.compareTo(openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
+                        if(version.localeCompare(openGLFeatureFactory!.OPENGL_AUTO_SELECT.getName()) == 0)
                         
                                     {
                                     this.setVersionSelector(openGLFeatureFactory!.OPENGL_AUTO_SELECT);
@@ -222,7 +222,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                                     }
                                 
                              else 
-                        if(version.compareTo(openGLFeatureFactory!.OPENGL_MINIMUM.getName()) == 0)
+                        if(version.localeCompare(openGLFeatureFactory!.OPENGL_MINIMUM.getName()) == 0)
                         
                                     {
                                     this.setVersionSelector(openGLFeatureFactory!.OPENGL_MINIMUM);
@@ -244,7 +244,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
 ;
     
 
-                        if(type.compareTo(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
+                        if(type.localeCompare(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName()) == 0)
                         
                                     {
                                     this.setType(openGLFeatureFactory!.OPENGL_AS_GAME_THREAD);
@@ -253,7 +253,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                                     }
                                 
                              else 
-                        if(type.compareTo(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName()) == 0)
+                        if(type.localeCompare(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName()) == 0)
                         
                                     {
                                     this.setType(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS);
@@ -275,7 +275,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
 ;
     
 
-                        if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
+                        if(imageColor!.localeCompare(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
@@ -284,7 +284,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                                     }
                                 
                              else 
-                        if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
+                        if(imageColor!.localeCompare(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
@@ -293,7 +293,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                                     }
                                 
                              else 
-                        if(imageColor!.compareTo(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
+                        if(imageColor!.localeCompare(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setImageColor(openGLFeatureFactory!.IMAGE_COLOR_DEPTH_4444);
@@ -315,7 +315,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
 ;
     
 
-                        if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
+                        if(color.localeCompare(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444.getName()) == 0)
                         
                                     {
                                     this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_4444);
@@ -324,7 +324,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                                     }
                                 
                              else 
-                        if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565.getName()) == 0)
+                        if(color.localeCompare(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565.getName()) == 0)
                         
                                     {
                                     this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_565);
@@ -333,7 +333,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                                     }
                                 
                              else 
-                        if(color.compareTo(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888.getName()) == 0)
+                        if(color.localeCompare(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888.getName()) == 0)
                         
                                     {
                                     this.setColor(openGLFeatureFactory!.OPENGL_COLOR_DEPTH_8888);

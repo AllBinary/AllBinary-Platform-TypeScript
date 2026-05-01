@@ -65,6 +65,8 @@ import { CapturedImageWorkerResultsListener } from "./CapturedImageWorkerResults
 
 import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
 
+import { CapturedImageInputOutput } from "./CapturedImageInputOutput.js";
+
 export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         
 

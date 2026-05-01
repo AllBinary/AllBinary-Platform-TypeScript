@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformDocument } from "./TransformDocument.js";
+
 import { TransformDocumentInterface } from "./TransformDocumentInterface.js";
 
 export class TransformDocumentFactory

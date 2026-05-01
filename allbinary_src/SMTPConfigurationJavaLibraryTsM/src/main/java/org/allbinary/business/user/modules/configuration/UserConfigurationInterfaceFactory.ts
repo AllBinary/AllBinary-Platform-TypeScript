@@ -69,6 +69,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { UserConfigurationData } from "./UserConfigurationData.js";
 
+import { UserConfigurationView } from "./UserConfigurationView.js";
+
 import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
 
 import { UserConfiguration } from "./UserConfiguration.js";

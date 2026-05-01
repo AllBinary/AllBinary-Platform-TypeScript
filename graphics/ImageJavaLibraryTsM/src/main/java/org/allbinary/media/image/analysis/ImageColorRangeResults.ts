@@ -39,6 +39,8 @@
         
 import { ColorRangeInterface } from "./ColorRangeInterface.js";
 
+import { ColorRange } from "./ColorRange.js";
+
 export class ImageColorRangeResults
             extends Object
          {

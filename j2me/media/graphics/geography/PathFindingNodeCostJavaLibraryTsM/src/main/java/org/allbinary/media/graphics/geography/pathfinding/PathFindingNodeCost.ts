@@ -123,13 +123,13 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
 }
 
 
-    public compareTo(pathFindingNodeCost: PathFindingNodeCost): number{
+    public localeCompare(pathFindingNodeCost: PathFindingNodeCost): number{
 var pathFindingNodeCost = pathFindingNodeCost
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.pathFindingNodeCostInfoP!.compareTo(pathFindingNodeCost!.pathFindingNodeCostInfoP);;
+                        return this.pathFindingNodeCostInfoP!.localeCompare(pathFindingNodeCost!.pathFindingNodeCostInfoP);;
     
 }
 

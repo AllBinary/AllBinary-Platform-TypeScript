@@ -72,6 +72,16 @@ import { JTree } from "./JTree.js";
 
 import { JScrollPane } from "./JScrollPane.js";
 
+import { GridLayout } from "./GridLayout.js";
+
+import { Dimension } from "./Dimension.js";
+
+import { MouseAdapter } from "./MouseAdapter.js";
+
+import { JPopupMenu } from "./JPopupMenu.js";
+
+import { JComponent } from "./JComponent.js";
+
 export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {
         
 

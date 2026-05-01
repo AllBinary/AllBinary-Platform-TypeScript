@@ -67,6 +67,10 @@ import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.j
 
 import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
 
+import { TransformInfoObjectConfig } from "./TransformInfoObjectConfig.js";
+
+import { GenericStoreTransformInfoObjectConfig } from "./GenericStoreTransformInfoObjectConfig.js";
+
 export class TransformInfoObjectConfigAndManipulatorFactory extends TransformInfoObjectConfigAndManipulatorFactoryBase {
         
 

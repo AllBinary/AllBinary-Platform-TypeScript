@@ -48,6 +48,8 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
         
 import { BaseMotionGestureEventListener } from "./BaseMotionGestureEventListener.js";
 
+import { MotionGestureEvent } from "./MotionGestureEvent.js";
+
 export class MovedMotionGesturesHandler extends BasicEventHandler {
         
 

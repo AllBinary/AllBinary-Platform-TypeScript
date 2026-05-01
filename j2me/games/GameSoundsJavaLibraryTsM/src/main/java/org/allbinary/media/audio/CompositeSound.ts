@@ -39,6 +39,8 @@
         
 import { Sound } from "./Sound.js";
 
+import { PlayerComposite } from "./PlayerComposite.js";
+
 import { AllBinaryMediaManager } from "./AllBinaryMediaManager.js";
 
 export class CompositeSound extends Sound {

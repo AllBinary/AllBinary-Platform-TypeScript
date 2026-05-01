@@ -72,6 +72,8 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
         
 import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
 
+import { UserConfiguration } from "./UserConfiguration.js";
+
 import { UserConfigurationData } from "./UserConfigurationData.js";
 
 export class UserConfigurationView

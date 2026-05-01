@@ -78,7 +78,11 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
         
 import { GraphicsEnvironment } from "./GraphicsEnvironment.js";
 
+import { GraphicsDevice } from "./GraphicsDevice.js";
+
 import { InputRobotInterface } from "./InputRobotInterface.js";
+
+import { InputRobot } from "./InputRobot.js";
 
 export class InputRobotFactory
             extends Object

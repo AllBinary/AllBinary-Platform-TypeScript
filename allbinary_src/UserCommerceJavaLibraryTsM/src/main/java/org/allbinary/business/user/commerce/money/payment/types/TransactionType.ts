@@ -55,7 +55,7 @@ this.name= name;
     public isEqual(transactionType: TransactionType): boolean{
 var transactionType = transactionType
 
-                        if(this.toString()!.compareTo(transactionType!.toString()) == 0)
+                        if(this.toString()!.localeCompare(transactionType!.toString()) == 0)
                         
 
 

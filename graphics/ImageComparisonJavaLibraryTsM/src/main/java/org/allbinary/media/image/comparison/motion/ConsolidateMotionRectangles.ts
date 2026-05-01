@@ -48,6 +48,10 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
         
 import { MotionRectangles } from "./MotionRectangles.js";
 
+import { MotionRectangle } from "./MotionRectangle.js";
+
+import { Rectangle } from "./Rectangle.js";
+
 export class ConsolidateMotionRectangles extends MotionRectangles {
         
 

@@ -51,6 +51,12 @@ import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScrip
 
 import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
 
+import { AlwaysActionScriptCondition } from "./AlwaysActionScriptCondition.js";
+
+import { TimeIntervalActionScriptCondition } from "./TimeIntervalActionScriptCondition.js";
+
+import { ColorAtActionScriptCondition } from "./ColorAtActionScriptCondition.js";
+
 export class ProfileActionScriptConditionFactory
             extends Object
          {

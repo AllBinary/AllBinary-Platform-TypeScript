@@ -179,7 +179,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(PaymentData.SELECT) == 0)
+                        if(this.getCommand()!.localeCompare(PaymentData.SELECT) == 0)
                         
                                     {
                                     

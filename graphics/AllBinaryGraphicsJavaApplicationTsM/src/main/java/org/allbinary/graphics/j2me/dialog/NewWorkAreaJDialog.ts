@@ -69,6 +69,16 @@ import { Dimension } from "./Dimension.js";
 
 import { JTextField } from "./JTextField.js";
 
+import { Frame } from "./Frame.js";
+
+import { JButton } from "./JButton.js";
+
+import { GridLayout } from "./GridLayout.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { WindowAdapter } from "./WindowAdapter.js";
+
 import { WindowEvent } from "./WindowEvent.js";
 
 export class NewWorkAreaJDialog extends javax.swing.JDialog {

@@ -60,6 +60,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { CompleteMotionGestureInputEventListener } from "./CompleteMotionGestureInputEventListener.js";
 
+import { CompleteMotionGestureInputEvent } from "./CompleteMotionGestureInputEvent.js";
+
 import { CompleteMotionGestureInputEventListenerInterface } from "./CompleteMotionGestureInputEventListenerInterface.js";
 
 export class CompleteMotionGestureInputEventHandler extends BasicEventHandler {

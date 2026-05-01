@@ -57,6 +57,8 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
         
 import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
 
+import { TransformInfoObjectConfig } from "./TransformInfoObjectConfig.js";
+
 import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
 
 export class TransformInfoObjectConfigNoManipulationFactory

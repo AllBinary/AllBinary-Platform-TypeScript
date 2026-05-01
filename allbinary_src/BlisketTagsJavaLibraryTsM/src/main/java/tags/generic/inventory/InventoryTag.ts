@@ -241,7 +241,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.SEARCH) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.SEARCH) == 0)
                         
                                     {
                                     this.setName("Basic Search Inventory View");
@@ -260,7 +260,7 @@ this.search();
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEWSUMMARY) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEWSUMMARY) == 0)
                         
                                     {
                                     this.setName("Basic Inventory View");
@@ -279,7 +279,7 @@ this.viewSummary();
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     this.setName("Basic Inventory View");

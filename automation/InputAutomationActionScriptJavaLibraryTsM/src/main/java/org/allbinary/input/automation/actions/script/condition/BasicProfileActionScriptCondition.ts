@@ -109,6 +109,12 @@ import { JMenu } from "./JMenu.js";
 
 import { JMenuItem } from "./JMenuItem.js";
 
+import { TimeIntervalActionScriptCondition } from "./TimeIntervalActionScriptCondition.js";
+
+import { AlwaysActionScriptCondition } from "./AlwaysActionScriptCondition.js";
+
+import { ColorAtActionScriptCondition } from "./ColorAtActionScriptCondition.js";
+
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {
         
 
@@ -148,7 +154,7 @@ index < nodeList!.getLength(); index++)
                         
                                     {
                                     
-                        if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptConditionData.NAME) == 0)
+                        if(actionItemNode!.getNodeName()!.localeCompare(GenericProfileActionScriptConditionData.NAME) == 0)
                         
                                     {
                                     this.addCondition(ProfileActionScriptConditionFactory.getInstance(actionItemNode));
@@ -157,7 +163,7 @@ index < nodeList!.getLength(); index++)
                                     }
                                 
                              else 
-                        if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptInputData.NAME) == 0)
+                        if(actionItemNode!.getNodeName()!.localeCompare(GenericProfileActionScriptInputData.NAME) == 0)
                         
                                     {
                                     this.addProcessor(ProfileActionScriptInputFactory.getInstance(actionItemNode));
@@ -166,7 +172,7 @@ index < nodeList!.getLength(); index++)
                                     }
                                 
                              else 
-                        if(actionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptOutputData.NAME) == 0)
+                        if(actionItemNode!.getNodeName()!.localeCompare(GenericProfileActionScriptOutputData.NAME) == 0)
                         
                                     {
                                     this.addProcessor(ProfileActionScriptOutputFactory.getInstance(actionItemNode));
@@ -203,7 +209,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(processorActionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptInputData.NAME) == 0)
+                        if(processorActionItemNode!.getNodeName()!.localeCompare(GenericProfileActionScriptInputData.NAME) == 0)
                         
                                     {
                                     this.addProcessor(ProfileActionScriptInputFactory.getInstance(processorActionItemNode));
@@ -212,7 +218,7 @@ index < nodeList!.getLength(); index++)
                                     }
                                 
                              else 
-                        if(processorActionItemNode!.getNodeName()!.compareTo(GenericProfileActionScriptOutputData.NAME) == 0)
+                        if(processorActionItemNode!.getNodeName()!.localeCompare(GenericProfileActionScriptOutputData.NAME) == 0)
                         
                                     {
                                     this.addProcessor(ProfileActionScriptOutputFactory.getInstance(processorActionItemNode));
@@ -481,7 +487,7 @@ var actionEvent = actionEvent
             super.actionPerformed(actionEvent);
     
 
-                        if(actionEvent!.getActionCommand()!.compareTo(DELETE) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(DELETE) == 0)
                         
                                     {
                                     
@@ -503,7 +509,7 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
                                     }
                                 
                              else 
-                        if(actionEvent!.getActionCommand()!.compareTo(NEW_COLOR_AT) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(NEW_COLOR_AT) == 0)
                         
                                     {
                                     this.addCondition(new ColorAtActionScriptCondition());
@@ -514,7 +520,7 @@ this.updateTree();
                                     }
                                 
                              else 
-                        if(actionEvent!.getActionCommand()!.compareTo(NEW_ALWAYS) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(NEW_ALWAYS) == 0)
                         
                                     {
                                     this.addCondition(new AlwaysActionScriptCondition());
@@ -525,7 +531,7 @@ this.updateTree();
                                     }
                                 
                              else 
-                        if(actionEvent!.getActionCommand()!.compareTo(NEW_TIME_INTERVAL) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(NEW_TIME_INTERVAL) == 0)
                         
                                     {
                                     this.addCondition(new TimeIntervalActionScriptCondition());
@@ -536,7 +542,7 @@ this.updateTree();
                                     }
                                 
                              else 
-                        if(actionEvent!.getActionCommand()!.compareTo(NEW_KEY_INPUT) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(NEW_KEY_INPUT) == 0)
                         
                                     {
                                     this.addProcessor(new KeyboardActionScriptInput());
@@ -547,7 +553,7 @@ this.updateTree();
                                     }
                                 
                              else 
-                        if(actionEvent!.getActionCommand()!.compareTo(NEW_MOUSE_INPUT) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(NEW_MOUSE_INPUT) == 0)
                         
                                     {
                                     this.addProcessor(new MouseActionScriptInput());
@@ -558,7 +564,7 @@ this.updateTree();
                                     }
                                 
                              else 
-                        if(actionEvent!.getActionCommand()!.compareTo(NEW_IMAGE_OUTPUT) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(NEW_IMAGE_OUTPUT) == 0)
                         
                                     {
                                     this.addProcessor(new ImageActionScriptOutput());

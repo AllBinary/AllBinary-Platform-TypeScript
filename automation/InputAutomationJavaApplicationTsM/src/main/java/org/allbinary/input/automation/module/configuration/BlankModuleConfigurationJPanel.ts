@@ -39,11 +39,11 @@
         
 import { JPanel } from "./JPanel.js";
 
+import { JLabel } from "./JLabel.js";
+
 import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
-
-import { JLabel } from "./JLabel.js";
 
 export class BlankModuleConfigurationJPanel extends javax.swing.JPanel {
         

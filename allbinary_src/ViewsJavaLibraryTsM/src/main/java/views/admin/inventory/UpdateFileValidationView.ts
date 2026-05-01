@@ -131,7 +131,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                         if(command == 
                                     null
-                                 || command.compareTo(UpdateFileValidationView.UPDATEPRODUCT) != 0)
+                                 || command.localeCompare(UpdateFileValidationView.UPDATEPRODUCT) != 0)
                         
                                     {
                                     
@@ -341,7 +341,7 @@ var document = document
 
                         if(command == 
                                     null
-                                 || command.compareTo(UpdateFileValidationView.UPDATEPRODUCT) != 0)
+                                 || command.localeCompare(UpdateFileValidationView.UPDATEPRODUCT) != 0)
                         
                                     {
                                     
@@ -531,7 +531,7 @@ var size = size
                         
                                     {
                                     
-                        if(fileItemFieldName!.compareTo(BasicItemData.IMAGE) == 0)
+                        if(fileItemFieldName!.localeCompare(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     

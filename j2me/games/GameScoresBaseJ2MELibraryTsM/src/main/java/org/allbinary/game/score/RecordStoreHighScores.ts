@@ -110,6 +110,8 @@ import { HighScores } from "./HighScores.js";
 
 import { HighScore } from "./HighScore.js";
 
+import { ScoreComparator } from "./ScoreComparator.js";
+
 export class RecordStoreHighScores extends HighScores {
         
 

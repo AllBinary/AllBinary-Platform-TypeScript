@@ -48,6 +48,8 @@ import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event
         
 import { DisplayChangeEventListener } from "./DisplayChangeEventListener.js";
 
+import { DisplayChangeEvent } from "./DisplayChangeEvent.js";
+
 export class DisplayChangeEventHandler extends BasicEventHandler {
         
 

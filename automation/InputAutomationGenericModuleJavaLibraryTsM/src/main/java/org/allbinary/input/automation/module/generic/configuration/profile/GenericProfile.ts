@@ -106,7 +106,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(profileNode!.getNodeName()!.compareTo(GenericProfileDataWorkerData.NAME) == 0)
+                        if(profileNode!.getNodeName()!.localeCompare(GenericProfileDataWorkerData.NAME) == 0)
                         
                                     {
                                     

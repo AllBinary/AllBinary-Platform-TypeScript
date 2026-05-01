@@ -46,6 +46,10 @@ import { JButton } from "./JButton.js";
 
 import { JTextField } from "./JTextField.js";
 
+import { GridLayout } from "./GridLayout.js";
+
+import { Font } from "./Font.js";
+
 export class PropertiesJPanel extends javax.swing.JPanel {
         
 public constructor (){

@@ -75,6 +75,10 @@ import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.j
         
 import { RTSFormInput } from "./RTSFormInput.js";
 
+import { WaypointRTSFormInput } from "./WaypointRTSFormInput.js";
+
+import { UnitRTSFormInput } from "./UnitRTSFormInput.js";
+
 export class CompositeRTSFormInput extends RTSFormInput {
         
 

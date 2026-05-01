@@ -60,6 +60,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
         
 import { AnalogControllerConfigurationEventListenerInterface } from "./AnalogControllerConfigurationEventListenerInterface.js";
 
+import { AnalogControllerConfigurationEvent } from "./AnalogControllerConfigurationEvent.js";
+
 export class AnalogControllerConfigurationEventHandler extends BasicEventHandler {
         
 

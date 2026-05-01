@@ -39,6 +39,8 @@
         
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
+import { BasicGeographicMap } from "./BasicGeographicMap.js";
+
 import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
 
 export class MultiGeographicMapBehavior

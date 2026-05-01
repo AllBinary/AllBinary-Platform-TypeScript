@@ -417,7 +417,7 @@ index < size; index++)
 nextSymbolicName= list.get(index); as string;
     
 
-                        if(nextSymbolicName!.compareTo(symbolicName) == 0)
+                        if(nextSymbolicName!.localeCompare(symbolicName) == 0)
                         
                                     {
                                     

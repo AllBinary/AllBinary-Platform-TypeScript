@@ -316,7 +316,7 @@ this.glExtensions= gl.glGetString(GL10.GL_EXTENSIONS);
                                     }
                                 
 
-                        if(this.glRenderer!.lowercase()!.indexOf("pixelflinger") >= 0)
+                        if(this.glRenderer!.toLowerCase()!.indexOf("pixelflinger") >= 0)
                         
                                     {
                                     this.acceleratedString= "Probably Not for " +this.glRenderer;

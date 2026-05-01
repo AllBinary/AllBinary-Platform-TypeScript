@@ -60,6 +60,10 @@ import { CellPositionFactory } from "../../../../../org/allbinary/graphics/CellP
         
 import { BaseTouchInput } from "./BaseTouchInput.js";
 
+import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
+
+import { BasicTouchButtonCellPositionFactory } from "./BasicTouchButtonCellPositionFactory.js";
+
 import { CommonButtons } from "./CommonButtons.js";
 
 import { TouchButton } from "./TouchButton.js";

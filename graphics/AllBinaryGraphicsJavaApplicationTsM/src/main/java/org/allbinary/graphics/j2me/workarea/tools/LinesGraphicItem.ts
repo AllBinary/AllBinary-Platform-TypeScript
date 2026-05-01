@@ -106,6 +106,10 @@ import { PointsDomUtil } from "./PointsDomUtil.js";
 
 import { Math } from "./Math.js";
 
+import { Graphics2D } from "./Graphics2D.js";
+
+import { BasicStroke } from "./BasicStroke.js";
+
 import { PointsUtil } from "./PointsUtil.js";
 
 import { Graphics } from "./Graphics.js";

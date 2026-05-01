@@ -48,6 +48,8 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
         
 import { BoundsChangeEventListener } from "./BoundsChangeEventListener.js";
 
+import { BoundsChangeEvent } from "./BoundsChangeEvent.js";
+
 export class BoundsChangeEventHandler extends BasicEventHandler {
         
 

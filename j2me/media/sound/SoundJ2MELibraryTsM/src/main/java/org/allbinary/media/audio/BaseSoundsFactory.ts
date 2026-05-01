@@ -39,6 +39,8 @@
         
 import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
 
+import { Sound } from "./Sound.js";
+
 export class BaseSoundsFactory
             extends Object
          implements SoundsFactoryInterface {

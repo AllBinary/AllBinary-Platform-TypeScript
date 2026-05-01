@@ -49,6 +49,8 @@ import { HttpStoreComponentView } from "../../views/business/context/modules/sto
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { CompoundTransform } from "./CompoundTransform.js";
+
 export class CompoundComponentView extends HttpStoreComponentView {
         
 

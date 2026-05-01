@@ -51,6 +51,8 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
         
 import { TagHelperFactory } from "./TagHelperFactory.js";
 
+import { BasicOptionItemsHelper } from "./BasicOptionItemsHelper.js";
+
 export class BasicOptionItemsHelperFactory extends TagHelperFactory {
         
 

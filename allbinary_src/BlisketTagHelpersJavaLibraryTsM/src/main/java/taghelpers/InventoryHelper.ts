@@ -229,7 +229,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 
                         if(keywords == 
                                     null
-                                 || keywords.compareTo(stringUtil!.EMPTY_STRING) == 0)
+                                 || keywords.localeCompare(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     

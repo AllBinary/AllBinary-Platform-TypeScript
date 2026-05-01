@@ -48,6 +48,8 @@ import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/ha
         
 import { TrackingEventListenerInterface } from "./TrackingEventListenerInterface.js";
 
+import { TrackingEvent } from "./TrackingEvent.js";
+
 export class TrackingEventHandler extends BasicEventHandler {
         
 

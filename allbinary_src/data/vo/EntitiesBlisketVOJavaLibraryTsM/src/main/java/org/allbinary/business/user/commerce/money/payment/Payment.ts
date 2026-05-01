@@ -135,7 +135,7 @@ this.id= payment.get(PaymentData.ID); as string;
 
                         if(def != 
                                     null
-                                 && def.compareTo(EntryData.getInstance()!.DEFAULT) == 0)
+                                 && def.localeCompare(EntryData.getInstance()!.DEFAULT) == 0)
                         
                                     {
                                     this.isDefault= true;
@@ -223,7 +223,7 @@ public constructor (){
 
                         if(this.name == 
                                     null
-                                 || this.name.compareTo(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.name.localeCompare(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -238,7 +238,7 @@ public constructor (){
 
                         if(this.type == 
                                     null
-                                 || this.type.compareTo(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.type.localeCompare(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -253,7 +253,7 @@ public constructor (){
 
                         if(this.expiration == 
                                     null
-                                 || this.expiration.compareTo(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.expiration.localeCompare(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -268,7 +268,7 @@ public constructor (){
 
                         if(this.number == 
                                     null
-                                 || this.number.compareTo(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.number.localeCompare(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     

@@ -282,7 +282,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
     isColumn(columnName: string): boolean{
 var columnName = columnName
 
-                        if(columnName!.compareTo(StoreFrontData.getInstance()!.NAME) == 0 || columnName!.compareTo(UserData.MAINEMAIL) == 0)
+                        if(columnName!.localeCompare(StoreFrontData.getInstance()!.NAME) == 0 || columnName!.localeCompare(UserData.MAINEMAIL) == 0)
                         
                                     {
                                     
@@ -488,7 +488,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as 
 ;
     
 
-                        if(this.name.compareTo(storeNameEscaped) != 0)
+                        if(this.name.localeCompare(storeNameEscaped) != 0)
                         
                                     {
                                     isEscapedCharactersContained= true;

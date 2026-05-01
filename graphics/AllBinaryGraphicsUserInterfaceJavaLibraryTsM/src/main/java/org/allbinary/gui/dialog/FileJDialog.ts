@@ -52,13 +52,17 @@ import { FileJDialogListenerInterface } from "./FileJDialogListenerInterface.js"
 
 import { Frame } from "./Frame.js";
 
+import { JFileChooser } from "./JFileChooser.js";
+
+import { ActionListener } from "./ActionListener.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
 import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
-import { ActionEvent } from "./ActionEvent.js";
-
-import { JFileChooser } from "./JFileChooser.js";
+import { JFrame } from "./JFrame.js";
 
 export class FileJDialog extends javax.swing.JDialog {
         

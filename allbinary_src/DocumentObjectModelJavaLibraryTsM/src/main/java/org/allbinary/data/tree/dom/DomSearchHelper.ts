@@ -71,7 +71,7 @@ index < numberOfNodes; index++)
 ;
     
 
-                        if(node.getNodeName()!.compareTo(nodeName) == 0)
+                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
                         
                                     {
                                     
@@ -208,7 +208,7 @@ index < numberOfNodes; index++)
 ;
     
 
-                        if(node.getNodeName()!.compareTo(nodeName) == 0)
+                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
                         
                                     {
                                     nodeVector!.add(node);

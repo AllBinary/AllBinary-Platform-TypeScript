@@ -60,6 +60,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
         
 import { LayerManagerEventListener } from "./LayerManagerEventListener.js";
 
+import { LayerManagerEvent } from "./LayerManagerEvent.js";
+
 import { LayerManagerEventListenerInterface } from "./LayerManagerEventListenerInterface.js";
 
 export class LayerManagerEventHandler extends BasicEventHandler {

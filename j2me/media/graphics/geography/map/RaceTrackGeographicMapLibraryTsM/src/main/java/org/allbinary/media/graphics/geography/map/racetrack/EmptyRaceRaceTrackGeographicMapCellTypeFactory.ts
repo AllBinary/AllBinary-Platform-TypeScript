@@ -45,6 +45,8 @@ import { PathFindingNodeCostInfoData } from "../../../../../../../org/allbinary/
         
 import { RaceTrackGeographicMapCellTypeFactory } from "./RaceTrackGeographicMapCellTypeFactory.js";
 
+import { RaceTrackGeographicMapCellType } from "./RaceTrackGeographicMapCellType.js";
+
 export class EmptyRaceRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         
 

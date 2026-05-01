@@ -69,11 +69,23 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
         
 import { MotionRectangleConstraintsInterface } from "./MotionRectangleConstraintsInterface.js";
 
+import { AllMotionRectangles } from "./AllMotionRectangles.js";
+
 import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
+
+import { MotionRectanglesResultsFrameCacheable } from "./MotionRectanglesResultsFrameCacheable.js";
+
+import { ConsolidateMotionRectangles } from "./ConsolidateMotionRectangles.js";
 
 import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
 
+import { ConstrainedMotionRectangles } from "./ConstrainedMotionRectangles.js";
+
 import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
+
+import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
+
+import { MotionRectangles } from "./MotionRectangles.js";
 
 export class MotionRectanglesWorker extends BasicEventHandler implements ImageComparisonResultsListener {
         

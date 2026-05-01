@@ -61,6 +61,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { WindowsOS } from "./WindowsOS.js";
+
 export class WindowsOperatingSystemFactory
             extends Object
          {
@@ -101,7 +103,7 @@ private constructor (){
 ;
     
 
-                        if(osName!.compareTo(operatingSystems!.WINDOWS_NT) == 0)
+                        if(osName!.localeCompare(operatingSystems!.WINDOWS_NT) == 0)
                         
                                     {
                                     operatingSystemInterface= new WindowsOS();
@@ -110,7 +112,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(osName!.compareTo(operatingSystems!.WINDOWS_10) == 0)
+                        if(osName!.localeCompare(operatingSystems!.WINDOWS_10) == 0)
                         
                                     {
                                     operatingSystemInterface= new WindowsOS();
@@ -119,7 +121,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(osName!.compareTo(operatingSystems!.WINDOWS_11) == 0)
+                        if(osName!.localeCompare(operatingSystems!.WINDOWS_11) == 0)
                         
                                     {
                                     operatingSystemInterface= new WindowsOS();
@@ -128,7 +130,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(osName!.compareTo(operatingSystems!.WINDOWS2000) == 0)
+                        if(osName!.localeCompare(operatingSystems!.WINDOWS2000) == 0)
                         
                                     {
                                     operatingSystemInterface= new WindowsOS();
@@ -137,7 +139,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(osName!.compareTo(operatingSystems!.WINDOWS_XP) == 0)
+                        if(osName!.localeCompare(operatingSystems!.WINDOWS_XP) == 0)
                         
                                     {
                                     operatingSystemInterface= new WindowsOS();
@@ -146,7 +148,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(osName!.compareTo(operatingSystems!.WINDOWS_VISTA) == 0)
+                        if(osName!.localeCompare(operatingSystems!.WINDOWS_VISTA) == 0)
                         
                                     {
                                     operatingSystemInterface= new WindowsOS();

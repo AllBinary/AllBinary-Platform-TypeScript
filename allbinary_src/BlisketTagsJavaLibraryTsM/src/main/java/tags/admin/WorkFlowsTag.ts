@@ -66,7 +66,7 @@ public constructor (){
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
                                     this.setName("New WorkFlow View");
@@ -77,7 +77,7 @@ this.setObjectFile("views.admin.workflow.NewView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0)
                         
                                     {
                                     this.setName("Add Validation WorkFlow View");
@@ -88,7 +88,7 @@ this.setObjectFile("views.admin.workflow.AddValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     this.setName("Validation WorkFlow View");
@@ -99,7 +99,7 @@ this.setObjectFile("views.admin.workflow.WorkflowsValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
                                     this.setName("Validation WorkFlow View");
@@ -110,7 +110,7 @@ this.setObjectFile("views.admin.workflow.EditValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.UPDATE) == 0)
                         
                                     {
                                     this.setName("Update Validation WorkFlow View");
@@ -121,7 +121,7 @@ this.setObjectFile("views.admin.workflow.UpdateValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.DELETE) == 0)
                         
                                     {
                                     this.setName("Delete Validation WorkFlow View");
@@ -132,7 +132,7 @@ this.setObjectFile("views.admin.workflow.DeleteValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
                         
                                     {
                                     
@@ -144,7 +144,7 @@ this.setObjectFile("views.admin.workflow.DeleteValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
                         
                                     {
                                     
@@ -156,7 +156,7 @@ this.setObjectFile("views.admin.workflow.DeleteValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.DROP) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.DROP) == 0)
                         
                                     {
                                     
@@ -168,7 +168,7 @@ this.setObjectFile("views.admin.workflow.DeleteValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.CREATE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.CREATE) == 0)
                         
                                     {
                                     

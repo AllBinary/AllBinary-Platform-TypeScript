@@ -51,6 +51,10 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
         
 import { TouchButtonsListBuilder } from "./TouchButtonsListBuilder.js";
 
+import { BasicTouchButtonsBuilder } from "./BasicTouchButtonsBuilder.js";
+
+import { BuildingScrollTouchButtonsBuilder } from "./BuildingScrollTouchButtonsBuilder.js";
+
 export class EndLevelNoBuildingSelectedTouchButtonsBuilder extends TouchButtonsListBuilder {
         
 

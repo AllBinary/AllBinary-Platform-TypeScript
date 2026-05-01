@@ -66,6 +66,8 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
         
 import { PointsLayerCircularStaticPool } from "./PointsLayerCircularStaticPool.js";
 
+import { PointsLayerFactory } from "./PointsLayerFactory.js";
+
 import { PointsResources } from "./PointsResources.js";
 
 export class Points20kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {

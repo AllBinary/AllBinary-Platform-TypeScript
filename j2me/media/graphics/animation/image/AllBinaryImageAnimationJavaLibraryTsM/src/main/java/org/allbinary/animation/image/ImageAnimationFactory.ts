@@ -54,6 +54,10 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { ImageAnimation } from "./ImageAnimation.js";
+
+import { AdjustedImageAnimation } from "./AdjustedImageAnimation.js";
+
 export class ImageAnimationFactory extends BaseImageAnimationFactory {
         
 

@@ -63,6 +63,8 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
         
 import { LifeLayerCircularStaticPool } from "./LifeLayerCircularStaticPool.js";
 
+import { LifeLayerFactory } from "./LifeLayerFactory.js";
+
 import { LifeResources } from "./LifeResources.js";
 
 export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {

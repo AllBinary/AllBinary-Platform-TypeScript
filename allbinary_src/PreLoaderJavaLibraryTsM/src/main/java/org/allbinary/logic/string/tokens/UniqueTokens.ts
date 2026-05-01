@@ -63,6 +63,8 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Tokenizer } from "./Tokenizer.js";
+
 export class UniqueTokens
             extends Object
          {
@@ -278,7 +280,7 @@ var subCleaningString = subCleaningString
 index < this.specialCharacters!.length; index++)
         {
 
-                        if(subCleaningString!.compareTo(this.specialCharacters!.elementAt(index) as string) == 0)
+                        if(subCleaningString!.localeCompare(this.specialCharacters!.elementAt(index) as string) == 0)
                         
 
 

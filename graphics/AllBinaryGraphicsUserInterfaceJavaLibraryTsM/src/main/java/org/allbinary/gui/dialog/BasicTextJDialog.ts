@@ -46,15 +46,19 @@ import { CloseJDialogListenerInterface } from "./CloseJDialogListenerInterface.j
 
 import { Frame } from "./Frame.js";
 
+import { JButton } from "./JButton.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { ActionListener } from "./ActionListener.js";
+
+import { ActionEvent } from "./ActionEvent.js";
+
 import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
-import { ActionEvent } from "./ActionEvent.js";
-
-import { JButton } from "./JButton.js";
-
-import { JLabel } from "./JLabel.js";
+import { JFrame } from "./JFrame.js";
 
 export class BasicTextJDialog extends javax.swing.JDialog {
         

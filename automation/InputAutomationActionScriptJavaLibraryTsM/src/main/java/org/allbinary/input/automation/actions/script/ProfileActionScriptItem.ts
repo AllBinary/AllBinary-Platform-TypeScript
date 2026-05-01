@@ -182,7 +182,7 @@ var frame = frame
     public actionPerformed(actionEvent: ActionEvent){
 var actionEvent = actionEvent
 
-                        if(actionEvent!.getActionCommand()!.compareTo(ProfileActionScriptItem.EDIT) == 0)
+                        if(actionEvent!.getActionCommand()!.localeCompare(ProfileActionScriptItem.EDIT) == 0)
                         
                                     {
                                     this.showDialog();

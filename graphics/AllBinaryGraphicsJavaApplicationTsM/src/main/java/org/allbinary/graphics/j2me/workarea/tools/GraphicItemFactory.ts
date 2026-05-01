@@ -55,7 +55,11 @@ import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFa
 
 import { LinesGraphicItem } from "./LinesGraphicItem.js";
 
+import { LinesGraphicItemFactory } from "./LinesGraphicItemFactory.js";
+
 import { GraphicItemBuilder } from "./GraphicItemBuilder.js";
+
+import { GraphicItemInterface } from "./GraphicItemInterface.js";
 
 export class GraphicItemFactory
             extends Object

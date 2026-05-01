@@ -183,7 +183,7 @@ i < attributeKeys!.length; i++)
 
                         if(value != 
                                     null
-                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += key;

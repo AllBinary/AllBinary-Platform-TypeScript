@@ -49,6 +49,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Process } from "./Process.js";
+
 import { Runtime } from "./Runtime.js";
 
 export class RuntimeEnvironmentVariables
@@ -126,7 +128,7 @@ var var = var
 ;
     
 
-                        if(osName!.compareTo(operatingSystems!.LINUX) == 0)
+                        if(osName!.localeCompare(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     process= Runtime.getRuntime()!.exec(linuxCommand);
@@ -144,7 +146,7 @@ var var = var
                                     }
                                 
                              else 
-                        if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
+                        if(osName!.localeCompare(operatingSystems!.SOLARIS) == 0)
                         
                                     {
                                     process= Runtime.getRuntime()!.exec(solarisCommand);
@@ -464,7 +466,7 @@ var val = val
 ;
     
 
-                        if(osName!.compareTo(operatingSystems!.LINUX) == 0)
+                        if(osName!.localeCompare(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     
@@ -485,7 +487,7 @@ var val = val
                                     }
                                 
                              else 
-                        if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
+                        if(osName!.localeCompare(operatingSystems!.SOLARIS) == 0)
                         
                                     {
                                     

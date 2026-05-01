@@ -56,6 +56,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { ImageUtil } from "./ImageUtil.js";
 
+import { ImageUnifierProperties } from "./ImageUnifierProperties.js";
+
+import { ImageUnifierCell } from "./ImageUnifierCell.js";
+
 import { ImageUnifierUtil } from "./ImageUnifierUtil.js";
 
 import { ImageProcessorInput } from "./ImageProcessorInput.js";

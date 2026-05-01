@@ -199,7 +199,7 @@ i < size; i++)
 ;
     
 
-                        if(paymentType!.getBasicPaymentType()!.getName()!.compareTo(paymentTypeString) == 0)
+                        if(paymentType!.getBasicPaymentType()!.getName()!.localeCompare(paymentTypeString) == 0)
                         
                                     {
                                     

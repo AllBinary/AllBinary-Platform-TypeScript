@@ -105,6 +105,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
         
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
+import { CommandRunnable } from "./CommandRunnable.js";
+
 export class CommandFormInputProcessor extends BasicMenuInputProcessor {
         
 

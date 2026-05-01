@@ -158,7 +158,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_X) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.LOCATION_X) == 0)
                         
                                     {
                                     
@@ -171,7 +171,7 @@ this.point.x= Integer(Integer.valueOf(locationX));
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_Y) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.LOCATION_Y) == 0)
                         
                                     {
                                     
@@ -184,7 +184,7 @@ this.point.y= Integer(Integer.valueOf(locationY));
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_RED) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MIN_RED) == 0)
                         
                                     {
                                     
@@ -197,7 +197,7 @@ this.getColorRangeInterface()!.setMinRed(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_RED) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MAX_RED) == 0)
                         
                                     {
                                     
@@ -210,7 +210,7 @@ this.getColorRangeInterface()!.setMaxRed(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_GREEN) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MIN_GREEN) == 0)
                         
                                     {
                                     
@@ -223,7 +223,7 @@ this.getColorRangeInterface()!.setMinGreen(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_GREEN) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MAX_GREEN) == 0)
                         
                                     {
                                     
@@ -236,7 +236,7 @@ this.getColorRangeInterface()!.setMaxGreen(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_BLUE) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MIN_BLUE) == 0)
                         
                                     {
                                     
@@ -249,7 +249,7 @@ this.getColorRangeInterface()!.setMinBlue(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_BLUE) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MAX_BLUE) == 0)
                         
                                     {
                                     

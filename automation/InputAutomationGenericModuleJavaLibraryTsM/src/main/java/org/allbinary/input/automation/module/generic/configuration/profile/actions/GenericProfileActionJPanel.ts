@@ -66,13 +66,17 @@ import { GroupLayout } from "./GroupLayout.js";
 
 import { Short } from "./Short.js";
 
-import { ActionEvent } from "./ActionEvent.js";
-
 import { JScrollPane } from "./JScrollPane.js";
 
 import { JLabel } from "./JLabel.js";
 
 import { JButton } from "./JButton.js";
+
+import { Dimension } from "./Dimension.js";
+
+import { ActionListener } from "./ActionListener.js";
+
+import { ActionEvent } from "./ActionEvent.js";
 
 export class GenericProfileActionJPanel extends javax.swing.JPanel {
         

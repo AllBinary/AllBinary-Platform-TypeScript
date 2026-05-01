@@ -43,6 +43,8 @@ import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
 
+import { ScoreComparator } from "./ScoreComparator.js";
+
 import { HighScoresHelper2 } from "./HighScoresHelper2.js";
 
 import { HighScoresHelperBase } from "./HighScoresHelperBase.js";

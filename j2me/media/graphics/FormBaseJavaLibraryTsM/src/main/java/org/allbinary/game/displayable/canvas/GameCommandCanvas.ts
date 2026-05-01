@@ -190,6 +190,8 @@ import { NoMenuInputProcessor } from "./NoMenuInputProcessor.js";
 
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
+import { ImmediateCommandFormInputProcessor } from "./ImmediateCommandFormInputProcessor.js";
+
 export class GameCommandCanvas extends MyCanvas implements MenuListener, DisplayChangeEventListener {
         
 

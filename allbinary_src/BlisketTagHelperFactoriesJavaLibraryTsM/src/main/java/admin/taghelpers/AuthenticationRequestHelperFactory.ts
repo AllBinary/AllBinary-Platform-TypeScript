@@ -54,6 +54,8 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
         
 import { TagHelperFactory } from "./TagHelperFactory.js";
 
+import { AuthenticationRequestHelper } from "./AuthenticationRequestHelper.js";
+
 export class AuthenticationRequestHelperFactory extends TagHelperFactory {
         
 

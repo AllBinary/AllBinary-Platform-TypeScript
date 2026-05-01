@@ -46,6 +46,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { MotionLaptopGameInputMapping } from "./MotionLaptopGameInputMapping.js";
+
 export class PlatformInputMappingFactory
             extends Object
          {

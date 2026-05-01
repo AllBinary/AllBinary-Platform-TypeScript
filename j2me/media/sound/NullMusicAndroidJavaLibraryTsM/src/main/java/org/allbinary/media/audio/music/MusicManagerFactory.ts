@@ -42,6 +42,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
         
 import { MusicManager } from "./MusicManager.js";
 
+import { MusicService } from "./MusicService.js";
+
 export class MusicManagerFactory
             extends Object
          {

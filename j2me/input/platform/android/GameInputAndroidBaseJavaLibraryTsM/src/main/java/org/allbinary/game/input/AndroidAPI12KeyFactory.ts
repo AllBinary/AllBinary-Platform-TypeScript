@@ -28,6 +28,8 @@ import { KeyEvent } from "../../../../android/view/KeyEvent.js";
         
 import { AndroidAPI9KeyFactory } from "./AndroidAPI9KeyFactory.js";
 
+import { AndroidGameKey } from "./AndroidGameKey.js";
+
 export class AndroidAPI12KeyFactory extends AndroidAPI9KeyFactory {
         
 

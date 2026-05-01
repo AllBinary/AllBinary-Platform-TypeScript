@@ -241,7 +241,7 @@ this.xslFile= value;
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(SearchData.GENERATESTATICPAGES) == 0)
+                        if(this.getCommand()!.localeCompare(SearchData.GENERATESTATICPAGES) == 0)
                         
                                     {
                                     this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xslFile);
@@ -263,7 +263,7 @@ this.xslFile= value;
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(SearchData.MAKEPUBLIC) == 0)
+                        if(this.getCommand()!.localeCompare(SearchData.MAKEPUBLIC) == 0)
                         
                                     {
                                     

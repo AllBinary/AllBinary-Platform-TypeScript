@@ -60,6 +60,8 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
         
 import { PaymentGatewayViewAbstract } from "./PaymentGatewayViewAbstract.js";
 
+import { PaymentGatewayComponent } from "./PaymentGatewayComponent.js";
+
 export class GatewayView extends PaymentGatewayViewAbstract {
         
 

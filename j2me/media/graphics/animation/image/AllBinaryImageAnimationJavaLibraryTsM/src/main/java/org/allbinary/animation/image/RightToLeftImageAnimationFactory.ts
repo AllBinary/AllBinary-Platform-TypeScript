@@ -51,6 +51,10 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { RightToLeftImageAnimation } from "./RightToLeftImageAnimation.js";
+
+import { AdjustedRightToLeftImageAnimation } from "./AdjustedRightToLeftImageAnimation.js";
+
 export class RightToLeftImageAnimationFactory extends BaseImageAnimationFactory {
         
 public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){

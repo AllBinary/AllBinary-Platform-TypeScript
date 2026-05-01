@@ -78,6 +78,8 @@ import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
 
+import { ScoreComparator } from "./ScoreComparator.js";
+
 import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
 
 import { HighScoresHelper2 } from "./HighScoresHelper2.js";

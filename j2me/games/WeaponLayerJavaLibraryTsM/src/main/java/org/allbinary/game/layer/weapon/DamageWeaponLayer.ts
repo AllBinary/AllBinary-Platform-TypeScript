@@ -54,6 +54,8 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
         
 import { WeaponLayer } from "./WeaponLayer.js";
 
+import { CollidableDamageWeaponBehavior } from "./CollidableDamageWeaponBehavior.js";
+
 export class DamageWeaponLayer extends WeaponLayer {
         
 public constructor (name: string, remoteInfo: RemoteInfo, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, username: string, actorSessionId: number, id: number, multiPlayerType: number){

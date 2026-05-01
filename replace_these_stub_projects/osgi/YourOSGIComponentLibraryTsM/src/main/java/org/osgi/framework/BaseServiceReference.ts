@@ -63,7 +63,7 @@ var key = key
 }
 
 
-    public compareTo(o: any = {}): number{
+    public localeCompare(o: any = {}): number{
 var o = o
 
 

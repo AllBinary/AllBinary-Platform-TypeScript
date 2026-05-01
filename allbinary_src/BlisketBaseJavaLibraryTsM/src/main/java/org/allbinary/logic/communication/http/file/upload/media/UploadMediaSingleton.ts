@@ -287,7 +287,7 @@ var hashMap = hashMap
 ;
     
 
-                        if(mediaType!.compareTo(aMediaType) == 0)
+                        if(mediaType!.localeCompare(aMediaType) == 0)
                         
                                     {
                                     

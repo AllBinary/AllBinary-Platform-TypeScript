@@ -288,7 +288,7 @@ index < numberOfNodes; index++)
 ;
     
 
-                        if(node.getNodeName()!.compareTo(nodeName) == 0)
+                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
                         
                                     {
                                     
@@ -427,7 +427,7 @@ index < numberOfNodes; index++)
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
 
-                        if(node.getNodeName()!.compareTo(nodeName) == 0)
+                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
                         
                                     {
                                     
@@ -473,7 +473,7 @@ index < numberOfNodes; index++)
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
 
-                        if(node.getNodeName()!.compareTo(nodeName) == 0)
+                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
                         
                                     {
                                     

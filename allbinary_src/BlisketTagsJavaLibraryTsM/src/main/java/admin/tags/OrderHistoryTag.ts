@@ -224,7 +224,7 @@ this.status= value;
                                     this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status);
     
 
-                        if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
+                        if(this.getCommand()!.localeCompare(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
                                     this.setOrderStatus();

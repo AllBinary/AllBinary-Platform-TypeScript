@@ -48,6 +48,8 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
         
 import { CategoryInterface } from "./CategoryInterface.js";
 
+import { CategoryView } from "./CategoryView.js";
+
 export class CategoriesView
             extends Object
          implements DomNodeInterface {

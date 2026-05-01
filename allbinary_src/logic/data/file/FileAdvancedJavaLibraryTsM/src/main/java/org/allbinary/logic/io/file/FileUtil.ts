@@ -1453,7 +1453,7 @@ index < size; index++)
 skipFile= skipFiles[index]!;
     
 
-                        if(file.getPath()!.compareTo(skipFile) == 0)
+                        if(file.getPath()!.localeCompare(skipFile) == 0)
                         
                                     {
                                     
@@ -1495,7 +1495,7 @@ var string = string
     
 
         try {
-            PreLogUtil.put(new StringBuilder().
+            PreLogUtil.put(new StringMaker().
                             append(this.WRITE_LABEL)!.append(filePath)!.append(this.DATA_LABEL)!.append(string)!.toString(), this, this.WRITE_METHOD);
     
 

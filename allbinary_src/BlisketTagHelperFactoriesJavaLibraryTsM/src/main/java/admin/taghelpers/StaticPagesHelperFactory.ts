@@ -51,6 +51,8 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
         
 import { TagHelperFactory } from "./TagHelperFactory.js";
 
+import { StaticPagesHelper } from "./StaticPagesHelper.js";
+
 export class StaticPagesHelperFactory extends TagHelperFactory {
         
 

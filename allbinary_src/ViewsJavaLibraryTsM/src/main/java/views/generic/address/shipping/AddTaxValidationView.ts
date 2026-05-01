@@ -178,7 +178,7 @@ index < size; index++)
 ;
     
 
-                        if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
+                        if(aStreetAddress!.getName()!.localeCompare(ShippingAddressData.TAX) == 0)
                         
                                     {
                                     
@@ -288,7 +288,7 @@ index < size; index++)
 ;
     
 
-                        if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
+                        if(aStreetAddress!.getName()!.localeCompare(ShippingAddressData.TAX) == 0)
                         
                                     {
                                     stringBuffer!.append("Not a valid tax location<br/>");

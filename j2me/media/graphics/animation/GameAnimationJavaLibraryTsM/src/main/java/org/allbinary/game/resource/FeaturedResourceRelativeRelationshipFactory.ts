@@ -63,6 +63,8 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
         
 import { FeaturedResourceFactory } from "./FeaturedResourceFactory.js";
 
+import { ResourceRelativeRelationshipFactoryInterface } from "./ResourceRelativeRelationshipFactoryInterface.js";
+
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {
         
 

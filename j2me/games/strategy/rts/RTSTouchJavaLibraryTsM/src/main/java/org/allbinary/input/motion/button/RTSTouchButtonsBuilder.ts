@@ -51,6 +51,12 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
         
 import { BaseTouchInput } from "./BaseTouchInput.js";
 
+import { BasicTouchButtonsBuilder } from "./BasicTouchButtonsBuilder.js";
+
+import { BuildingScrollTouchButtonsBuilder } from "./BuildingScrollTouchButtonsBuilder.js";
+
+import { UpgradeDowngradeTouchButtonsBuilder } from "./UpgradeDowngradeTouchButtonsBuilder.js";
+
 export class RTSTouchButtonsBuilder extends BaseTouchInput {
         
 

@@ -357,7 +357,7 @@ index < numberOfViews; index++)
 ;
     
 
-                        if(transformInfoInterface!.getName()!.compareTo(attrNode!.getValue()) == 0)
+                        if(transformInfoInterface!.getName()!.localeCompare(attrNode!.getValue()) == 0)
                         
                                     {
                                     
@@ -633,7 +633,7 @@ index < length; index++)
 ;
     
 
-                        if(value.compareTo(group) == 0)
+                        if(value.localeCompare(group) == 0)
                         
                                     {
                                     componentsNode= node;

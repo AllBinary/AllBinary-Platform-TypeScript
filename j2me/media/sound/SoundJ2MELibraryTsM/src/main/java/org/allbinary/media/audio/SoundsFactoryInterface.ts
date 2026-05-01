@@ -37,6 +37,8 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { Sound } from "./Sound.js";
+
 export interface SoundsFactoryInterface {
         
 

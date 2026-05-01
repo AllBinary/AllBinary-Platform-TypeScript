@@ -73,7 +73,13 @@ import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraint
 
 import { ImageComparator } from "./ImageComparator.js";
 
+import { ImageComparisonResult } from "./ImageComparisonResult.js";
+
+import { ImageComparisonResultFrameCacheable } from "./ImageComparisonResultFrameCacheable.js";
+
 import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
+
+import { ImageComparisonResultsEvent } from "./ImageComparisonResultsEvent.js";
 
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         

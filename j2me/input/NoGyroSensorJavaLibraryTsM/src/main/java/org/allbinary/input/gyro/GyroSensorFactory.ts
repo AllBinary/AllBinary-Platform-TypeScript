@@ -39,6 +39,8 @@
         
 import { AllBinaryOrientationSensor } from "./AllBinaryOrientationSensor.js";
 
+import { NoGyroSensor } from "./NoGyroSensor.js";
+
 export class GyroSensorFactory
             extends Object
          {

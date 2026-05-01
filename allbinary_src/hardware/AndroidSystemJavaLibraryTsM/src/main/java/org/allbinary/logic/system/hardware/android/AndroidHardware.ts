@@ -41,6 +41,9 @@ import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
+import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+
+    
 import { HardwareInterface } from "../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js";
 
     
@@ -81,8 +84,6 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { StringBuilder } from "./StringBuilder.js";
-
 export class AndroidHardware
             extends Object
          implements HardwareInterface {
@@ -222,7 +223,7 @@ var index = index
 
     public toString(): string{
 
-    var hardwareBuffer: StringBuilder = new StringBuilder();
+    var hardwareBuffer: StringMaker = new StringMaker();
 ;
     
 
@@ -256,7 +257,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public compareTo(hardwareInterface: HardwareInterface): boolean{
+    public localeCompare(hardwareInterface: HardwareInterface): boolean{
 var hardwareInterface = hardwareInterface
 
 

@@ -252,7 +252,7 @@ this.storeName= value;
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
 
-                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.PROCESS) == 0)
+                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.PROCESS) == 0)
                         
                                     {
                                     this.process();
@@ -261,7 +261,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     }
                                 
                              else 
-                        if(this.command.compareTo(PaymentGatewayData.NAME.toString()) == 0)
+                        if(this.command.localeCompare(PaymentGatewayData.NAME.toString()) == 0)
                         
                                     {
                                     

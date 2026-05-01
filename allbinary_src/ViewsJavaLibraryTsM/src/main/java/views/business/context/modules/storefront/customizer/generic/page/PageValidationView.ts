@@ -225,7 +225,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
 ;
     
 
-                        if(title.compareTo("index") == 0)
+                        if(title.localeCompare("index") == 0)
                         
                                     {
                                     hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page");
@@ -382,7 +382,7 @@ index < size; index++)
 ;
     
 
-                        if(title.compareTo("index") == 0)
+                        if(title.localeCompare("index") == 0)
                         
                                     {
                                     hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page");

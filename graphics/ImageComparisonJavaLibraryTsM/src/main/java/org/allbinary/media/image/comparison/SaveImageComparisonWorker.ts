@@ -59,6 +59,10 @@ import { ImageComparisonResultsListener } from "./ImageComparisonResultsListener
 
 import { ImageComparisonResultsEvent } from "./ImageComparisonResultsEvent.js";
 
+import { ImageComparisonResult } from "./ImageComparisonResult.js";
+
+import { ComparisonImageInputOutput } from "./ComparisonImageInputOutput.js";
+
 export class SaveImageComparisonWorker
             extends Object
          implements ImageComparisonResultsListener {

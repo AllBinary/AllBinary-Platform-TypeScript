@@ -61,6 +61,8 @@ import { BasicAI } from "./BasicAI.js";
 
 import { ThrustAIVisitorFactory } from "./ThrustAIVisitorFactory.js";
 
+import { BasicProbabilityAIDataFactory } from "./BasicProbabilityAIDataFactory.js";
+
 import { LastKeyAIVisitorFactory } from "./LastKeyAIVisitorFactory.js";
 
 import { DiveAndDirectionalTrackingAI } from "./DiveAndDirectionalTrackingAI.js";

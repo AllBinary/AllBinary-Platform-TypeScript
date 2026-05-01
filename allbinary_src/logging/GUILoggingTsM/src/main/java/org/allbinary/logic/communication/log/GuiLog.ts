@@ -52,6 +52,14 @@ import { LogFormatUtil } from "./LogFormatUtil.js";
 
 import { JDialog } from "./JDialog.js";
 
+import { GridLayout } from "./GridLayout.js";
+
+import { JScrollPane } from "./JScrollPane.js";
+
+import { JLabel } from "./JLabel.js";
+
+import { JTextArea } from "./JTextArea.js";
+
 import { PreLogUtil } from "./PreLogUtil.js";
 
 export class GuiLog

@@ -86,7 +86,7 @@ var keyData = keyData
 
         try {
             
-                        if(algorithm.compareTo(this.DES) == 0)
+                        if(algorithm.localeCompare(this.DES) == 0)
                         
                                     {
                                     
@@ -99,7 +99,7 @@ var keyData = keyData
                                     }
                                 
                              else 
-                        if(algorithm.compareTo(this.DESEDE) == 0)
+                        if(algorithm.localeCompare(this.DESEDE) == 0)
                         
                                     {
                                     

@@ -51,6 +51,10 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
         
 import { TransformInfoObjectConfigGeneratorFactoryInterface } from "./TransformInfoObjectConfigGeneratorFactoryInterface.js";
 
+import { StoreFileGenerator } from "./StoreFileGenerator.js";
+
+import { BasicGenerator } from "./BasicGenerator.js";
+
 import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
 
 export class TransformInfoObjectConfigGeneratorFactory
@@ -101,7 +105,7 @@ this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.
 
                         if(type == 
                                     null
-                                 || type.compareTo(InputOutputTypeData.getInstance()!.RESPONSE) == 0 || transformInfoInterface!.isChild())
+                                 || type.localeCompare(InputOutputTypeData.getInstance()!.RESPONSE) == 0 || transformInfoInterface!.isChild())
                         
                                     {
                                     
@@ -114,7 +118,7 @@ this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.
                                     }
                                 
                              else 
-                        if(type.compareTo(InputOutputTypeData.getInstance()!.FILE) == 0)
+                        if(type.localeCompare(InputOutputTypeData.getInstance()!.FILE) == 0)
                         
                                     {
                                     

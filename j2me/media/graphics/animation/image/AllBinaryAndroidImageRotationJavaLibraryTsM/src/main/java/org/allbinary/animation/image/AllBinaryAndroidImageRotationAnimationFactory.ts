@@ -69,6 +69,10 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
         
 import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
 
+import { AllBinaryFlickerAndroidImageRotationAnimation } from "./AllBinaryFlickerAndroidImageRotationAnimation.js";
+
+import { AllBinaryAdjustedAndroidImageRotationAnimation } from "./AllBinaryAdjustedAndroidImageRotationAnimation.js";
+
 export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 

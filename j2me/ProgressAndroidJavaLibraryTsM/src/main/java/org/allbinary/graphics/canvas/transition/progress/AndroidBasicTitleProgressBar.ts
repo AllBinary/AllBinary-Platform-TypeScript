@@ -122,6 +122,14 @@ import { NullRunnable } from "../../../../../../org/allbinary/thread/NullRunnabl
         
 import { ProgressCanvas } from "./ProgressCanvas.js";
 
+import { ShowTitleProgressBarRunnable } from "./ShowTitleProgressBarRunnable.js";
+
+import { DismissTitleProgressBarRunnable } from "./DismissTitleProgressBarRunnable.js";
+
+import { TitleProgressBarSetProgressRunnable } from "./TitleProgressBarSetProgressRunnable.js";
+
+import { TitleProgressBarPortionSetProgressRunnable } from "./TitleProgressBarPortionSetProgressRunnable.js";
+
 export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {
         
 

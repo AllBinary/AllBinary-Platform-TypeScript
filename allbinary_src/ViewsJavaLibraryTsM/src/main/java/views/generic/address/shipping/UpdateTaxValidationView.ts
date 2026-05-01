@@ -150,7 +150,7 @@ index < size; index++)
 ;
     
 
-                        if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
+                        if(aStreetAddress!.getName()!.localeCompare(ShippingAddressData.TAX) == 0)
                         
                                     {
                                     count++;

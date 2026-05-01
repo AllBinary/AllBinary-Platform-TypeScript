@@ -63,6 +63,8 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
         
 import { WeaponLayer } from "./WeaponLayer.js";
 
+import { CollidableWeaponBehavior } from "./CollidableWeaponBehavior.js";
+
 export class SimpleWeaponLayer extends WeaponLayer {
         
 

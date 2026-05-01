@@ -68,6 +68,8 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
         
 import { WaypointPathRunnableBase } from "./WaypointPathRunnableBase.js";
 
+import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         
 

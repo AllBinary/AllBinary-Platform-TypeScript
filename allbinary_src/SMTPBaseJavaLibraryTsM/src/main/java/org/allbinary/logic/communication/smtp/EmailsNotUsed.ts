@@ -60,6 +60,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { EmailData } from "./EmailData.js";
 
+import { Email } from "./Email.js";
+
 export class EmailsNotUsed
             extends Object
          implements DomNodeInterface {

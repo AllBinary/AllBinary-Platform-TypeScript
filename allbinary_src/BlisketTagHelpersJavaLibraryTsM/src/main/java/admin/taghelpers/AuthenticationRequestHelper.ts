@@ -210,13 +210,13 @@ this.request= httpServletRequest;
 ;
     
 
-                        if(userInterface!.getMainEmail()!.compareTo(email) != 0)
+                        if(userInterface!.getMainEmail()!.localeCompare(email) != 0)
                         
                                     {
                                     
                         if(userInterface!.getSecondaryEmail() != 
                                     null
-                                 && userInterface!.getSecondaryEmail()!.compareTo(email) != 0)
+                                 && userInterface!.getSecondaryEmail()!.localeCompare(email) != 0)
                         
                                     {
                                     
@@ -349,7 +349,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                                     }
                                 
 
-                        if(newPassword!.compareTo(newReenteredPassword) != 0)
+                        if(newPassword!.localeCompare(newReenteredPassword) != 0)
                         
                                     {
                                     
@@ -387,7 +387,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
 ;
     
 
-                        if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
+                        if(login.localeCompare(GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
                                     

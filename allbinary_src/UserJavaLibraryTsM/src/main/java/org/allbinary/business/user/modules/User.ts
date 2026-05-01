@@ -275,7 +275,7 @@ this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString()) as s
 this.permissions= stringUtil!.getNonNull(userHashMap!.get(UserData.PERMISSIONS) as string);
     
 
-                        if(!stringValidationUtil!.isEmpty(this.permissions); && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
+                        if(!stringValidationUtil!.isEmpty(this.permissions); && this.permissions.localeCompare(StoreFrontData.getInstance()!.NAME) == 0)
                         this.permissions= stringUtil!.getNonNull(userHashMap!.get(StoreFrontData.getInstance()!.NAME) as string)
                              else 
                         if(this.permissions == 

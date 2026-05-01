@@ -52,6 +52,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { NoHardware } from "./NoHardware.js";
+
 import { HardwareInterface } from "./HardwareInterface.js";
 
 export class HardwareFactory
@@ -85,7 +87,7 @@ var os = os
 
         try {
             
-                        if(os.getName()!.compareTo(OperatingSystems.getInstance()!.ANDROID) == 0)
+                        if(os.getName()!.localeCompare(OperatingSystems.getInstance()!.ANDROID) == 0)
                         
                                     {
                                     

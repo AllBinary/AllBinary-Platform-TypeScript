@@ -51,7 +51,11 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
         
 import { BaseTouchInput } from "./BaseTouchInput.js";
 
+import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
+
 import { CommonButtons } from "./CommonButtons.js";
+
+import { BasicTouchButtonCellPositionFactory } from "./BasicTouchButtonCellPositionFactory.js";
 
 import { TouchButton } from "./TouchButton.js";
 

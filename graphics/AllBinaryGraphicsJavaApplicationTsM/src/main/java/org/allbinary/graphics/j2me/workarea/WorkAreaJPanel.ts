@@ -109,13 +109,19 @@ import { WorkAreaJPanelInterface } from "./WorkAreaJPanelInterface.js";
 
 import { WorkAreaJTreeJPanel } from "./WorkAreaJTreeJPanel.js";
 
+import { Component } from "./Component.js";
+
 import { Dimension } from "./Dimension.js";
 
 import { WorkAreaDom } from "./WorkAreaDom.js";
 
+import { GridLayout } from "./GridLayout.js";
+
 import { GridBagLayout } from "./GridBagLayout.js";
 
 import { GridBagConstraints } from "./GridBagConstraints.js";
+
+import { KeyAdapter } from "./KeyAdapter.js";
 
 import { KeyEvent } from "./KeyEvent.js";
 

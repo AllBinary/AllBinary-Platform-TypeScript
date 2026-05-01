@@ -59,6 +59,10 @@ import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListen
 
 import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
 
+import { MotionRectangles } from "./MotionRectangles.js";
+
+import { MotionRectanglesImageInputOutput } from "./MotionRectanglesImageInputOutput.js";
+
 export class SaveMotionRectanglesResultsWorker
             extends Object
          implements MotionRectanglesResultsListener {

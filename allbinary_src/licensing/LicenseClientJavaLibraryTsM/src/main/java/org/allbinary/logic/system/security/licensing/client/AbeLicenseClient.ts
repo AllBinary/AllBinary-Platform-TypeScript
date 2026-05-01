@@ -64,6 +64,8 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { XmlRpcAbeLicenseRetrievalClient } from "./XmlRpcAbeLicenseRetrievalClient.js";
+
 export class AbeLicenseClient
             extends Object
          {

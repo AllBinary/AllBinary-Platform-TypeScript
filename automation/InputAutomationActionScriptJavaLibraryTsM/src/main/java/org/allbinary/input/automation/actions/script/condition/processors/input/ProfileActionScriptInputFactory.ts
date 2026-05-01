@@ -49,6 +49,10 @@ import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.j
 
 import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
 
+import { MouseActionScriptInput } from "./MouseActionScriptInput.js";
+
+import { KeyboardActionScriptInput } from "./KeyboardActionScriptInput.js";
+
 export class ProfileActionScriptInputFactory
             extends Object
          {

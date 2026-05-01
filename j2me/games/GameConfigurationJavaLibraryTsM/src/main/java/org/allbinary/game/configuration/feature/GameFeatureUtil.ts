@@ -374,7 +374,7 @@ var itemLabel = itemLabel
 name= this.enumerationUtil!.nextElement(enumeration)!; as string;
     
 
-                        if(itemLabel!.compareTo(name) == 0)
+                        if(itemLabel!.localeCompare(name) == 0)
                         
                                     {
                                     

@@ -288,7 +288,7 @@ var max = max
                         
                                     {
                                     
-                        if(value.compareTo(this.stringUtil!.NULL_STRING) == 0 || value.length < min || value.length > max)
+                        if(value.localeCompare(this.stringUtil!.NULL_STRING) == 0 || value.length < min || value.length > max)
                         
                                     {
                                     
@@ -330,7 +330,7 @@ var string = string
 
                         if(string != 
                                     null
-                                 && string.compareTo(stringUtil!.NULL_STRING) != 0 && string.compareTo(stringUtil!.EMPTY_STRING) != 0)
+                                 && string.localeCompare(stringUtil!.NULL_STRING) != 0 && string.localeCompare(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     

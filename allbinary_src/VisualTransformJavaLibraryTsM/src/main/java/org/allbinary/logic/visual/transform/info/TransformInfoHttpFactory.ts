@@ -61,7 +61,11 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { TransformInfoHttpContext } from "./TransformInfoHttpContext.js";
+
 import { TransformInfoInterface } from "./TransformInfoInterface.js";
+
+import { TransformInfoHttpStore } from "./TransformInfoHttpStore.js";
 
 export class TransformInfoHttpFactory
             extends Object

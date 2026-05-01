@@ -167,7 +167,7 @@ var transformInfoInterface = transformInfoInterface
 
                         if(command != 
                                     null
-                                 && command.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEFORMEVALBODYONERROR) == 0)
+                                 && command.localeCompare(org.allbinary.globals.GLOBALS2.AUTHORIZEFORMEVALBODYONERROR) == 0)
                         
                                     {
                                     
@@ -339,7 +339,7 @@ orderReview!.setUserName("testing");
 
                         if(orderId == 
                                     null
-                                 || orderId!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
+                                 || orderId!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0)
                         
                                     {
                                     orderId= new OrderIdGenerator().

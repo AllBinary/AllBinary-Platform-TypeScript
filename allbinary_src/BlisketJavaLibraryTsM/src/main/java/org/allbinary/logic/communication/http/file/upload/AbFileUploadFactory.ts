@@ -64,7 +64,11 @@ import { FileItemUtil } from "../../../../../../../org/apache/commons/fileupload
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+import { AbFileUpload } from "./AbFileUpload.js";
+
 import { HttpFileUploadUtil } from "./HttpFileUploadUtil.js";
+
+import { AbFileItem } from "./AbFileItem.js";
 
 export class AbFileUploadFactory
             extends Object

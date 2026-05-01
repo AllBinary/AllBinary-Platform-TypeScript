@@ -328,9 +328,9 @@ this.updateIfNeeded();
 
                         if(this.userName != 
                                     null
-                                 && this.userName!.compareTo(userName) == 0 && this.password != 
+                                 && this.userName!.localeCompare(userName) == 0 && this.password != 
                                     null
-                                 && this.password.compareTo(password) == 0)
+                                 && this.password.localeCompare(password) == 0)
                         
                                     {
                                     

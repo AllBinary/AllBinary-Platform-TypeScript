@@ -53,6 +53,8 @@ import { MotionRectangles } from "./MotionRectangles.js";
 
 import { MotionRectangle } from "./MotionRectangle.js";
 
+import { Rectangle } from "./Rectangle.js";
+
 export class AllMotionRectangles extends MotionRectangles {
         
 

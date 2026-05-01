@@ -66,6 +66,8 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
         
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
+import { RTSLayer } from "./RTSLayer.js";
+
 export class MultiSelectPaintable extends SelectionHudPaintable {
         
 

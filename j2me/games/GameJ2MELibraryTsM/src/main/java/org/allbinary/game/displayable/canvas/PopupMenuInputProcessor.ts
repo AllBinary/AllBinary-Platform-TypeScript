@@ -75,6 +75,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
         
 import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
 
+import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+
 export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
         
 

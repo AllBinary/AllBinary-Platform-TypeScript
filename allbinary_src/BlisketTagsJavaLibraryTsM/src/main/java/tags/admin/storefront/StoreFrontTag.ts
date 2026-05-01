@@ -69,7 +69,7 @@ public constructor (){
                         
                                     {
                                     
-                        if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0)
                         
                                     {
                                     this.setName("Add Validation StoreFront View");
@@ -80,7 +80,7 @@ this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     
@@ -92,7 +92,7 @@ this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
                                     this.setName("Edit Validation StoreFront View");
@@ -103,7 +103,7 @@ this.setObjectFile("views.admin.storefront.EditValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.UPDATE) == 0)
                         
                                     {
                                     this.setName("Update Validation StoreFront View");
@@ -114,7 +114,7 @@ this.setObjectFile("views.admin.storefront.UpdateValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.DELETE) == 0)
                         
                                     {
                                     this.setName("Delete Validation StoreFront View");
@@ -125,7 +125,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.BACKUP) == 0)
                         
                                     {
                                     
@@ -137,7 +137,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
+                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.RESTORE) == 0)
                         
                                     {
                                     
@@ -149,7 +149,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.DROP) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.DROP) == 0)
                         
                                     {
                                     
@@ -161,7 +161,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.compareTo(this.commonStrings!.CREATE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.CREATE) == 0)
                         
                                     {
                                     

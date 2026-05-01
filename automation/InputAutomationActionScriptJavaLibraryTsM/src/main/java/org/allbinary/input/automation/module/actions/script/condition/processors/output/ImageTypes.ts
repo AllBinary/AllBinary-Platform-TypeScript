@@ -126,7 +126,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPE) == 0)
+                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.TYPE) == 0)
                         
                                     {
                                     

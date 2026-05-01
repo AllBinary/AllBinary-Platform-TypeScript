@@ -54,6 +54,8 @@ import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomI
         
 import { ScrollSelectionFormNoneFactory } from "./ScrollSelectionFormNoneFactory.js";
 
+import { CommandCurrentSelectionForm } from "./CommandCurrentSelectionForm.js";
+
 import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
 
 import { FormType } from "./FormType.js";

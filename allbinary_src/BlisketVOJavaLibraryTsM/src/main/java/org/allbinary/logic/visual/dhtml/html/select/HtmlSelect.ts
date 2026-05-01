@@ -197,7 +197,7 @@ i < optionsSize; i++)
 
                         if(value != 
                                     null
-                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += this.STARTOPTION;
@@ -275,7 +275,7 @@ i < attributeSize; i++)
 
                         if(value != 
                                     null
-                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += key;

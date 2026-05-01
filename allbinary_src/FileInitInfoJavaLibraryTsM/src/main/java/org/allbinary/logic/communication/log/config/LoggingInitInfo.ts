@@ -80,6 +80,8 @@ import { LogConfigsData } from "./LogConfigsData.js";
 
 import { LogConfigData } from "./LogConfigData.js";
 
+import { LogConfig } from "./LogConfig.js";
+
 export class LoggingInitInfo
             extends Object
          {

@@ -139,7 +139,7 @@ word= stringValidationUtil!.isEmpty(word)
                                 :
 
                             new StringMaker().
-                            appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.lowercase())!.toString();
+                            appendchar(Character.toUpperCase(word[0]))!.append(word.substring(1)!.toLowerCase())!.toString();
 
     ;
     

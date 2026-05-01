@@ -368,7 +368,7 @@ nextLine= lineNumberReader!.readLine();
 }
 
 
-    public compareTo(cpuInterface: CpuInterface): boolean{
+    public localeCompare(cpuInterface: CpuInterface): boolean{
 var cpuInterface = cpuInterface
 
 
@@ -379,7 +379,7 @@ var cpuInterface = cpuInterface
 }
 
 
-    public compareTo(componentInterface: HardwareComponentInterface): boolean{
+    public localeCompare(componentInterface: HardwareComponentInterface): boolean{
 var componentInterface = componentInterface
 
 

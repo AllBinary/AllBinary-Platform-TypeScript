@@ -69,11 +69,17 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
         
 import { UserEmailEventsConfigurationInterface } from "./UserEmailEventsConfigurationInterface.js";
 
+import { UserEmailEventsConfiguration } from "./UserEmailEventsConfiguration.js";
+
 import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
+
+import { UserEmailEventConfigurationView } from "./UserEmailEventConfigurationView.js";
 
 import { UserEmailEventsConfigurationMapping } from "./UserEmailEventsConfigurationMapping.js";
 
 import { UserEmailEventsConfigurationData } from "./UserEmailEventsConfigurationData.js";
+
+import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
 
 export class UserEmailEventsConfigurationView
             extends Object

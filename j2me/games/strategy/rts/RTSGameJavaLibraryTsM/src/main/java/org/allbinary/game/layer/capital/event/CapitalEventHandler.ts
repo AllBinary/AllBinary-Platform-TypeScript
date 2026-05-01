@@ -47,6 +47,8 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
         
 import { CapitalEventListenerInterface } from "./CapitalEventListenerInterface.js";
 
+import { CapitalEvent } from "./CapitalEvent.js";
+
 export class CapitalEventHandler extends BasicEventHandler {
         
 public constructor (){
