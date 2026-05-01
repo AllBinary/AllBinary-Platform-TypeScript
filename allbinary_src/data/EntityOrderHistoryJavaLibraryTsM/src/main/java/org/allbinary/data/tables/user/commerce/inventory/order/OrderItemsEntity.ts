@@ -181,7 +181,7 @@ var order = order
 i < itemsSize; i++)
         {
 
-    var item: string = itemsArray[i]! as String;
+    var item: string = itemsArray[i]! as string;
 ;
     
 
@@ -364,7 +364,7 @@ var orderId = orderId
         while(itemStatusIter!.hasNext())
         {
 
-    var status: string = itemStatusIter!.next() as String;
+    var status: string = itemStatusIter!.next() as string;
 ;
     
 

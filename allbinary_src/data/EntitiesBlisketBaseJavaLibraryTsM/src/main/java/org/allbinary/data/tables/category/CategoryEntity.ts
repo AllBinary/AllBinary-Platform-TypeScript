@@ -218,7 +218,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(CategoryData.getInstance()!.NAME, updatedValues!.get(CategoryData.getInstance()!.NAME) as String, updatedValues);
+super.updateWhere(CategoryData.getInstance()!.NAME, updatedValues!.get(CategoryData.getInstance()!.NAME) as string, updatedValues);
     
 }
 

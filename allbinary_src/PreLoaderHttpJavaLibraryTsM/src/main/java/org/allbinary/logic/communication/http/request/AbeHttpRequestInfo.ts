@@ -89,17 +89,17 @@ public constructor (hashMap: HashMap<any, any>){
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
     
-this.httpUserAgent= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.HTTP_USER_AGENT) as String);
+this.httpUserAgent= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.HTTP_USER_AGENT) as string);
     
-this.remoteAddress= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_ADDRESS) as String);
+this.remoteAddress= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_ADDRESS) as string);
     
-this.remoteHost= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_HOST) as String);
+this.remoteHost= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_HOST) as string);
     
-this.remoteHostByAddr= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS) as String);
+this.remoteHostByAddr= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_HOST_BY_ADDRESS) as string);
     
-this.remotePort= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_PORT) as String);
+this.remotePort= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REMOTE_PORT) as string);
     
-this.requestedFilePath= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REQUEST_FILE_PATH) as String);
+this.requestedFilePath= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestInfoData!.REQUEST_FILE_PATH) as string);
     
 }
 
@@ -121,7 +121,7 @@ this.httpUserAgent= stringUtil!.EMPTY_STRING;
         while(enumuration.hasMoreElements())
         {
 
-    var key: string = enumuration.nextElement()! as String;
+    var key: string = enumuration.nextElement()! as string;
 ;
     
 

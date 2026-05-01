@@ -130,7 +130,7 @@ this.writerFileTypesHashMap= new HashMap<any, any>();
 index < size; index++)
         {
 
-    var mediaDataName: string = mediaDataNameArray[index]! as String;
+    var mediaDataName: string = mediaDataNameArray[index]! as string;
 ;
     
 
@@ -283,7 +283,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType as Object) as String;
+    var mediaType: string = hashMap!.get(mediaFileType as Object) as string;
 ;
     
 

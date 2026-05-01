@@ -200,7 +200,7 @@ timeHelper!.setStartTimeTNT();
 index < size; index++)
         {
 
-    var inputTypeNameString: string = inputTypeNameArray[index]! as String;
+    var inputTypeNameString: string = inputTypeNameArray[index]! as string;
 ;
     
 

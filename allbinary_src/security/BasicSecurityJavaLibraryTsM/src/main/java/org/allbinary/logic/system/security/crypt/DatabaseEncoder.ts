@@ -162,7 +162,7 @@ var value = value
     var index: number = 0;
 index < size; index++)
         {
-byteOfData= vector.objectArray[index]! as String;
+byteOfData= vector.objectArray[index]! as string;
     
 byteVector!.add(byteOfData.toByte());
     

@@ -230,7 +230,7 @@ keysAndValues!.put(transformInfoData!.NAME, name);
                         
                                     {
                                     
-    var string: string = anyType as String;
+    var string: string = anyType as string;
 ;
     
 hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
@@ -249,7 +249,7 @@ hashMap!.put(transformInfoData!.OBJECTCONFIG, decode.toCharArray());
                         
                                     {
                                     
-    var string: string = objectData as String;
+    var string: string = objectData as string;
 ;
     
 hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
@@ -304,7 +304,7 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var objectConfigString: string = objectConfigColumnVector!.get(i) as String;
+    var objectConfigString: string = objectConfigColumnVector!.get(i) as string;
 ;
     
 objectConfigString= decode.toCharArray();
@@ -347,7 +347,7 @@ var storeName = storeName
 i < size; i++)
         {
 
-    var viewNameString: string = columnVector!.get(i) as String;
+    var viewNameString: string = columnVector!.get(i) as string;
 ;
     
 viewNameVector!.add(viewNameString);
@@ -451,7 +451,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as String, updatedValues);
+super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as string, updatedValues);
     
 }
 

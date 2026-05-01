@@ -34,8 +34,6 @@ import { PlatformTextureBaseFactory } from "../../../org/allbinary/platform/open
         
 import { OpenGLGLUUtils } from "./OpenGLGLUUtils.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
         
 

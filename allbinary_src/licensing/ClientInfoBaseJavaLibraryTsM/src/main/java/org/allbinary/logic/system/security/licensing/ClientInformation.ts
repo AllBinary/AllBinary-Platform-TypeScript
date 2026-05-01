@@ -182,7 +182,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.licenseServers!.objectArray[index]! as String;
+                        return this.licenseServers!.objectArray[index]! as string;
     
 }
 
@@ -203,6 +203,10 @@ var index = index
 ;
     
 
+    var genericOperatingSystem: GenericOperatingSystem = this.getOperatingSystemInterface()!;
+;
+    
+
     var clientInfoHashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
@@ -214,16 +218,16 @@ clientInfoHashtable!.put(abeClientInformationData!.SPECIALNAME, this.specialName
     
 clientInfoHashtable!.put(abeClientInformationData!.LICENSEID, this.getLicenseId());
     
-clientInfoHashtable!.put(abeClientInformationData!.OSNAME, this.getOperatingSystemInterface()!.getName());
+clientInfoHashtable!.put(abeClientInformationData!.OSNAME, genericOperatingSystem!.getName());
     
-clientInfoHashtable!.put(abeClientInformationData!.OSARCH, this.getOperatingSystemInterface()!.getArch());
+clientInfoHashtable!.put(abeClientInformationData!.OSARCH, genericOperatingSystem!.getArch());
     
-clientInfoHashtable!.put(abeClientInformationData!.OSVERSION, this.getOperatingSystemInterface()!.getVersion());
+clientInfoHashtable!.put(abeClientInformationData!.OSVERSION, genericOperatingSystem!.getVersion());
     
-clientInfoHashtable!.put(abeClientInformationData!.OS, this.getOperatingSystemInterface()!.toString());
+clientInfoHashtable!.put(abeClientInformationData!.OS, genericOperatingSystem!.toString());
     
 
-    var hardwareInterface: HardwareInterface = SystemHardwareFactory.getInstance()!.getInstance(getOperatingSystemInterface())!;
+    var hardwareInterface: HardwareInterface = SystemHardwareFactory.getInstance()!.getInstance(genericOperatingSystem)!;
 ;
     
 
@@ -301,7 +305,7 @@ var list = list
 index >= 0; index--)
         {
 
-    var newServerName: string = list.objectArray[index]! as String;
+    var newServerName: string = list.objectArray[index]! as string;
 ;
     
 
@@ -313,7 +317,7 @@ index >= 0; index--)
 index2 >= 0; index2--)
         {
 
-    var nextOldServerName: string = this.licenseServers!.objectArray[index]! as String;
+    var nextOldServerName: string = this.licenseServers!.objectArray[index]! as string;
 ;
     
 

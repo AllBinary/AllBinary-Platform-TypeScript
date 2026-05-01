@@ -137,7 +137,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, map: Ma
 index < size; index++)
         {
 
-    var key: string = keyArray[index]! as String;
+    var key: string = keyArray[index]! as string;
 ;
     
 
@@ -185,17 +185,17 @@ this.getFormData(abeClientInformation, initHashMap);
     var initializerData: InitializerData = InitializerData.getInstance()!;
 ;
     
-this.setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as String);
+this.setAdminDbUserName(hashMap!.get(initializerData!.DBUSER) as string);
     
-this.setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD) as String);
+this.setAdminDbPassword(hashMap!.get(initializerData!.DBPASSWORD) as string);
     
-this.setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER) as String);
+this.setAdminJdbcDriver(hashMap!.get(initializerData!.ADMINJDBCDRIVER) as string);
     
-this.setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA) as String);
+this.setAdminSchema(hashMap!.get(initializerData!.ADMINSCHEMA) as string);
     
-this.setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as String);
+this.setAdminServer(hashMap!.get(initializerData!.ADMINSERVER) as string);
     
-this.setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as String);
+this.setAdminPort(hashMap!.get(initializerData!.ADMINPORT) as string);
     
 
     var dbConnectionInfo: DbConnectionInfo = new DbConnectionInfo();

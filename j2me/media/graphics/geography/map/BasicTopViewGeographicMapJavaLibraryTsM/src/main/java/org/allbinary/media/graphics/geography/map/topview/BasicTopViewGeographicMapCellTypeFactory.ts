@@ -187,7 +187,7 @@ this.maxTileId= maxTileId;
     var index: number = 0;
 index < size; index++)
         {
-key= keyArray[index]! as String;
+key= keyArray[index]! as string;
     
 idsWithTypeList= tileTypeToTileIdsMap!.get(key); as BasicArrayList;
     

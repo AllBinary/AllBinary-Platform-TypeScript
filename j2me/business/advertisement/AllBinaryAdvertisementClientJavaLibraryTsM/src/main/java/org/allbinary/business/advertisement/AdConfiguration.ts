@@ -57,11 +57,11 @@ public constructor (advertIdArray: any[]){
 
             super();
             //var advertIdArray = advertIdArray
-this.INNERACTIVE= advertIdArray[0]! as String;
+this.INNERACTIVE= advertIdArray[0]! as string;
     
-this.ADMOB= advertIdArray[1]! as String;
+this.ADMOB= advertIdArray[1]! as string;
     
-this.LEADBOLT= advertIdArray[2]! as String;
+this.LEADBOLT= advertIdArray[2]! as string;
     
 }
 

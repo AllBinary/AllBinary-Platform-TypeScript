@@ -64,8 +64,6 @@ import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { RuntimeException } from "./RuntimeException.js";
-
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
 export class WaypointBehaviorBase

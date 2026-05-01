@@ -46,8 +46,6 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { RuntimeException } from "./RuntimeException.js";
-
 export class OpenGLImageFactory
             extends Object
          {

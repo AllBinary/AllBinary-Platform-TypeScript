@@ -48,8 +48,6 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
         
 import { ValidationInterface } from "./ValidationInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class Validation
             extends Object
          implements ValidationInterface {

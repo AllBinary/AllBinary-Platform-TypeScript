@@ -166,7 +166,7 @@ super.deleteWhere(BasicItemData.KEYWORDS, keywords);
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) as String, updatedValues);
+super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) as string, updatedValues);
     
 }
 

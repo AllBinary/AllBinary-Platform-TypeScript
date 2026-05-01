@@ -196,7 +196,7 @@ PreLogUtil.put("Total: " +size, this, "waitForAll");
     var index: number = 0;
 index < size; index++)
         {
-this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as String, this.allTimeDelayHelper);
+this.waitForATime(hashtable.get(objectArray[index]!) as Image, objectArray[index]! as string, this.allTimeDelayHelper);
     
 }
 

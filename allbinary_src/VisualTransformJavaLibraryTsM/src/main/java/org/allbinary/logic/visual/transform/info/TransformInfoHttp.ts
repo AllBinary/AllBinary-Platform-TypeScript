@@ -218,20 +218,20 @@ var hashMap = hashMap
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
 ;
     
-this.setName(hashMap!.get(transformInfoData!.NAME) as String);
+this.setName(hashMap!.get(transformInfoData!.NAME) as string);
     
-this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as String);
+this.setStoreName(hashMap!.get(StoreFrontData.getInstance()!.NAME) as string);
     
-this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as String);
+this.setObjectFile(hashMap!.get(transformInfoData!.OBJECTFILENAME) as string);
     
-this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String);
+this.setObject(hashMap!.get(transformInfoData!.OBJECT) as string);
     
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
 ;
     
 
-    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG) as String;
+    var objectConfigString: string = hashMap!.get(transformInfoData!.OBJECTCONFIG) as string;
 ;
     
 
@@ -251,21 +251,21 @@ this.setObject(hashMap!.get(transformInfoData!.OBJECT) as String);
                         }
                             
 
-                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String);)
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string);)
                         
                                     {
-                                    this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String);
+                                    this.setObjectConfigFile(hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string);
     
 
                                     }
                                 
-this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String);
+this.setTemplateFile(hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as string);
     
-this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as String);
+this.setTemplate(hashMap!.get(transformInfoData!.TEMPLATE) as string);
     
-this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as String);
+this.setDataFile(hashMap!.get(transformInfoData!.DATAFILENAME) as string);
     
-this.setData(hashMap!.get(transformInfoData!.DATA) as String);
+this.setData(hashMap!.get(transformInfoData!.DATA) as string);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORY))

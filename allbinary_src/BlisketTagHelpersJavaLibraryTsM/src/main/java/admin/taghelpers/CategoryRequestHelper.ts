@@ -194,7 +194,7 @@ this.getXmlData();
                         
                                     {
                                     
-    var xmlRequest: string = keyArray[0]! as String;
+    var xmlRequest: string = keyArray[0]! as string;
 ;
     
 
@@ -204,7 +204,7 @@ this.getXmlData();
 
         while(index < size && !xmlRequest!.startsWith(CategoryRequestHelper.categoryRequest);)
         {
-xmlRequest= keyArray[index]! as String;
+xmlRequest= keyArray[index]! as string;
     
 
                         if(xmlRequest!.startsWith(CategoryRequestHelper.categoryRequest))

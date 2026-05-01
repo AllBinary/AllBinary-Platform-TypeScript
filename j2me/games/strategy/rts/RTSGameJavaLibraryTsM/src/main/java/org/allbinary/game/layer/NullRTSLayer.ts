@@ -71,8 +71,6 @@ import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
 
 import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { PlayerOwnedRTSLayers } from "./PlayerOwnedRTSLayers.js";
 
 export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {

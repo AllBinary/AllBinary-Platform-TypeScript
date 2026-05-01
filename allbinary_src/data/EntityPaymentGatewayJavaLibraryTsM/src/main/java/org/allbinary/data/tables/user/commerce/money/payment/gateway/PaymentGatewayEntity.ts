@@ -286,47 +286,47 @@ paymentGatewayHashMap= super.getRow(whereKeyAndValue);
                         
                                     {
                                     
-    var userName: string = paymentGatewayHashMap!.get(UserData.USERNAME.toString()) as String;
+    var userName: string = paymentGatewayHashMap!.get(UserData.USERNAME.toString()) as string;
 ;
     
 
-    var password: string = paymentGatewayHashMap!.get(UserData.PASSWORD.toString()) as String;
+    var password: string = paymentGatewayHashMap!.get(UserData.PASSWORD.toString()) as string;
 ;
     
 
-    var special1: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString()) as String;
+    var special1: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL1.toString()) as string;
 ;
     
 
-    var special2: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString()) as String;
+    var special2: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL2.toString()) as string;
 ;
     
 
-    var special3: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString()) as String;
+    var special3: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL3.toString()) as string;
 ;
     
 
-    var special4: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString()) as String;
+    var special4: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL4.toString()) as string;
 ;
     
 
-    var special5: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString()) as String;
+    var special5: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL5.toString()) as string;
 ;
     
 
-    var special6: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString()) as String;
+    var special6: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL6.toString()) as string;
 ;
     
 
-    var special7: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString()) as String;
+    var special7: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL7.toString()) as string;
 ;
     
 
-    var special8: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString()) as String;
+    var special8: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL8.toString()) as string;
 ;
     
 
-    var special9: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString()) as String;
+    var special9: string = paymentGatewayHashMap!.get(PaymentGatewayData.SPECIAL9.toString()) as string;
 ;
     
 
@@ -446,7 +446,7 @@ paymentGatewayNameVector= super.getColumnWhere(PaymentGatewayData.NAME.toString(
 i < size; i++)
         {
 
-    var paymentTypeString: string = paymentGatewayNameVector!.get(i) as String;
+    var paymentTypeString: string = paymentGatewayNameVector!.get(i) as string;
 ;
     
 

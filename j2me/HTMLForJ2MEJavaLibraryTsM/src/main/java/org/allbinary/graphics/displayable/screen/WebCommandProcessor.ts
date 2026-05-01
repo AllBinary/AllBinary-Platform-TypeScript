@@ -92,7 +92,7 @@ export class WebCommandProcessor
     //var canvas = canvas
 
         try {
-            PlayN.openURL(this.list.removeAt(0) as String);
+            PlayN.openURL(this.list.removeAt(0) as string);
     
 
                 //: 

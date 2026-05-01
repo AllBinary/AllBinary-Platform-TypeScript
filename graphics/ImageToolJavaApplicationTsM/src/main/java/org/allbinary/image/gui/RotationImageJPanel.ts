@@ -132,7 +132,7 @@ new Thread()
 
         try {
             
-    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem() as String;
+    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem() as string;
 ;
     
 ImageArrayRotationUtil.getInstance()!.process(this@RotationImageJPanel.getImageProcessorInput(), angleAsString, this@RotationImageJPanel);

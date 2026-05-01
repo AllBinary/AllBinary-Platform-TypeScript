@@ -75,9 +75,11 @@ export class SystemHardwareFactory
 }
 
 
-    private hardwareInterface: HardwareInterface = NoHardware.getInstance()!;
-
     public static static_toString(): string{
+
+    var systemHardwareFactory: SystemHardwareFactory = SystemHardwareFactory.getInstance()!;
+;
+    
 
     var osBuffer: StringMaker = new StringMaker();
 ;
@@ -85,12 +87,12 @@ export class SystemHardwareFactory
 osBuffer!.append("Hardware Info: \n");
     
 
-                        if(SystemHardwareFactory.hardwareInterface != 
+                        if(systemHardwareFactory!.hardwareInterface != 
                                     null
                                 )
                         
                                     {
-                                    osBuffer!.append(hardwareInterface!.toString());
+                                    osBuffer!.append(systemHardwareFactory!.hardwareInterface!.toString());
     
 
                                     }
@@ -113,6 +115,8 @@ osBuffer!.append("Hardware Info: \n");
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
+    private hardwareInterface: HardwareInterface = NoHardware.getInstance()!;
 private constructor (){
 
             super();
@@ -124,21 +128,21 @@ var operatingSystemInterface = operatingSystemInterface
 
         try {
             
-                        if(SystemHardwareFactory.hardwareInterface == NoHardware.getInstance())
+                        if(this.hardwareInterface == NoHardware.getInstance())
                         
                                     {
-                                    SystemHardwareFactory.hardwareInterface= HardwareFactory.getInstance()!.getInstance(operatingSystemInterface);
+                                    this.hardwareInterface= HardwareFactory.getInstance()!.getInstance(operatingSystemInterface);
     
 
                                     }
                                 
-this.logUtil!.putF("Found Hardware", this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF("Found Hardware", this, this.commonStrings!.CONSTRUCTOR);
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
 }
 
@@ -146,7 +150,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SystemHardwareFactory.hardwareInterface;
+                        return this.hardwareInterface;
     
 }
 

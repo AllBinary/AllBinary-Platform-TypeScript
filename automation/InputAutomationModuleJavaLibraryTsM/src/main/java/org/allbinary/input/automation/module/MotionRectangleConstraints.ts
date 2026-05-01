@@ -52,8 +52,6 @@ import { Dimension } from "./Dimension.js";
 
 import { Rectangle } from "./Rectangle.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class MotionRectangleConstraints
             extends Object
          implements MotionRectangleConstraintsInterface {

@@ -567,7 +567,7 @@ this.genericProfilesJList!.setModel(this.getGenericProfiles()!.getDefaultListMod
                                     {
                                     this.genericProfilesJList!.setSelectedValue(this.genericProfilesJList!.getModel()!.getElementAt(0), true);
     
-this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as String);
+this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as string);
     
 
                                     }
@@ -732,7 +732,7 @@ var evt = evt
 
         try {
             
-    var profileNameString: string = this.genericProfilesJList!.getSelectedValue() as String;
+    var profileNameString: string = this.genericProfilesJList!.getSelectedValue() as string;
 ;
     
 this.updateProfileUI(profileNameString);
@@ -765,7 +765,7 @@ var evt = evt
 index < anyType!.length; index++)
         {
 
-    var nextSelectedValueString: string = anyType[index]! as String;
+    var nextSelectedValueString: string = anyType[index]! as string;
 ;
     
 this.getGenericProfiles()!.remove(nextSelectedValueString);

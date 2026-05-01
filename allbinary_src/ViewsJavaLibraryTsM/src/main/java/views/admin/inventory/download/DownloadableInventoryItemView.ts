@@ -164,7 +164,7 @@ this.request= this.getPageContext()!.getRequest(); as HttpServletRequest;
 this.setRequestHashMap(new MultipartRequestParams(this.request).
                             toHashMap());
     
-this.id= this.getRequestHashMap()!.get(BasicItemData.ID); as String;
+this.id= this.getRequestHashMap()!.get(BasicItemData.ID); as string;
     
 }
 

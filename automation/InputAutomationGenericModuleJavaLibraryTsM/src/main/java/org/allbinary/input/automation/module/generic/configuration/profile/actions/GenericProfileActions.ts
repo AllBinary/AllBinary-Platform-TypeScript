@@ -447,7 +447,7 @@ var document = document
 index < size; index++)
         {
 
-    var nextActionName: string = actionNameArray[index]! as String;
+    var nextActionName: string = actionNameArray[index]! as string;
 ;
     
 

@@ -91,7 +91,7 @@ mediaFileType= mediaFileType!.lowercase();
 index >= 0; index--)
         {
 
-    var name: string = this.list.objectArray[index]! as String;
+    var name: string = this.list.objectArray[index]! as string;
 ;
     
 

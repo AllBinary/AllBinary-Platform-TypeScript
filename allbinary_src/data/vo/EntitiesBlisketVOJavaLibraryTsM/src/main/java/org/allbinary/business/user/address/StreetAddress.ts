@@ -223,22 +223,22 @@ public constructor (address: HashMap<any, any>){
 
             super();
         var address = address
-this.id= address.get(StreetAddressData.ID); as String;
+this.id= address.get(StreetAddressData.ID); as string;
     
-this.name= address.get(StreetAddressData.NAME); as String;
+this.name= address.get(StreetAddressData.NAME); as string;
     
-this.street= address.get(StreetAddressData.STREET); as String;
+this.street= address.get(StreetAddressData.STREET); as string;
     
-this.city= address.get(StreetAddressData.CITY); as String;
+this.city= address.get(StreetAddressData.CITY); as string;
     
-this.state= address.get(StreetAddressData.STATE); as String;
+this.state= address.get(StreetAddressData.STATE); as string;
     
-this.code= address.get(StreetAddressData.CODE); as String;
+this.code= address.get(StreetAddressData.CODE); as string;
     
-this.country= address.get(StreetAddressData.COUNTRY); as String;
+this.country= address.get(StreetAddressData.COUNTRY); as string;
     
 
-    var def: string = address.get(StreetAddressData.DEFAULT) as String;
+    var def: string = address.get(StreetAddressData.DEFAULT) as string;
 ;
     
 
@@ -689,11 +689,11 @@ var document = document
 i < size; i++)
         {
 
-    var name: string = keyArray[i]! as String;
+    var name: string = keyArray[i]! as string;
 ;
     
 
-    var value: string = stringUtil!.getNonNull(hashMap!.get(name as Object) as String)!;
+    var value: string = stringUtil!.getNonNull(hashMap!.get(name as Object) as string)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));

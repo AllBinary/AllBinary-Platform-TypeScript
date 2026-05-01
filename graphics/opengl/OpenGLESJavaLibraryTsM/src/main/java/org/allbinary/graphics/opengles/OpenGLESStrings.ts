@@ -43,8 +43,6 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { RuntimeException } from "./RuntimeException.js";
-
 export class OpenGLESStrings
             extends Object
          {

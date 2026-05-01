@@ -144,7 +144,7 @@ var pageContext = pageContext
                     
 this.request= pageContext!.getRequest(); as HttpServletRequest;
     
-this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as String;
+this.xslFile= propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME); as string;
     
 this.getFormData();
     

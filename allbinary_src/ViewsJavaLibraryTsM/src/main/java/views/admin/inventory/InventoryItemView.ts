@@ -329,7 +329,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 index < size; index++)
         {
 
-    var fieldName: string = fieldNameArray[index]! as String;
+    var fieldName: string = fieldNameArray[index]! as string;
 ;
     
 

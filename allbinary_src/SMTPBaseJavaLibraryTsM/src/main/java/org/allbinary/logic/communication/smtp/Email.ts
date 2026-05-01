@@ -430,7 +430,7 @@ this.msg.setContent(mimeMultipart);
     var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST) as String);
+hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST) as string);
     
 
     var addresses: Address[] = this.msg.getFrom()!;
@@ -547,7 +547,7 @@ hashMap!.put(EmailData.SUBJECT, msg.getSubject());
 index < mimeMultipart!.getCount(); index++)
         {
 
-    var content: string = mimeMultipart!.getBodyPart(index)!.getContent() as String;
+    var content: string = mimeMultipart!.getBodyPart(index)!.getContent() as string;
 ;
     
 hashMap!.put(EmailData.CONTENT, content);

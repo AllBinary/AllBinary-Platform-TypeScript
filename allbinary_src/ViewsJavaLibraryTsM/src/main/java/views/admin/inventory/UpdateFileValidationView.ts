@@ -125,7 +125,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
         try {
             
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;
 ;
     
 
@@ -335,7 +335,7 @@ var document = document
 ;
     
 
-    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as String;
+    var command: string = this.getRequestHashMap()!.get(GLOBALS2.ADMINCOMMAND) as string;
 ;
     
 
@@ -361,7 +361,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
 ;
     
 
-    var fullCategory: string = URLGLOBALS.getWebappPath(); as String +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
+    var fullCategory: string = URLGLOBALS.getWebappPath(); as string +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
 ;
     
 

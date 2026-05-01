@@ -187,8 +187,6 @@ import { RTSLayerUtil } from "./RTSLayerUtil.js";
 
 import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {

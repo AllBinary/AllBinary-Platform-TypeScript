@@ -85,8 +85,6 @@ import { VideoInterface } from "../../../../../../org/allbinary/logic/system/har
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { RuntimeException } from "./RuntimeException.js";
-
 export class WindowsHardware
             extends Object
          implements HardwareInterface {

@@ -209,7 +209,7 @@ var hashMap = hashMap
 ;
     
 
-    var aName: string = hashMap!.get(transformInfoData!.NAME) as String;
+    var aName: string = hashMap!.get(transformInfoData!.NAME) as string;
 ;
     
 
@@ -243,7 +243,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+    var aStoreName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 ;
     
 
@@ -256,7 +256,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "override(HashMap hashMap)");
                                     }
                                 
 
-    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME) as String;
+    var aObjectFileName: string = hashMap!.get(transformInfoData!.OBJECTFILENAME) as string;
 ;
     
 
@@ -285,7 +285,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 ;
     
 
-    var aObject: string = hashMap!.get(transformInfoData!.OBJECT) as String;
+    var aObject: string = hashMap!.get(transformInfoData!.OBJECT) as string;
 ;
     
 
@@ -321,7 +321,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);)
+                        if(!stringValidationUtil!.isEmpty(hashMap!.get(transformInfoData!.OBJECTCONFIG) as string);)
                         
                                     {
                                     
@@ -333,13 +333,13 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 
                                     }
                                 
-this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as String);
+this.setObjectConfig(hashMap!.get(transformInfoData!.OBJECTCONFIG) as string);
     
 
                                     }
                                 
 
-    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as String;
+    var objectConfigFileName: string = hashMap!.get(transformInfoData!.OBJECTCONFIGFILENAME) as string;
 ;
     
 
@@ -361,7 +361,7 @@ this.setObjectConfigFile(objectConfigFileName);
                                     }
                                 
 
-    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME) as String;
+    var type: string = hashMap!.get(OutputTypeData.getInstance()!.NAME) as string;
 ;
     
 
@@ -385,7 +385,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as String;
+    var aTemplateFileName: string = hashMap!.get(transformInfoData!.TEMPLATEFILENAME) as string;
 ;
     
 
@@ -398,7 +398,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE) as String;
+    var aTemplate: string = hashMap!.get(transformInfoData!.TEMPLATE) as string;
 ;
     
 
@@ -432,7 +432,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME) as String;
+    var aDataFileName: string = hashMap!.get(transformInfoData!.DATAFILENAME) as string;
 ;
     
 
@@ -445,7 +445,7 @@ this.getObjectConfigInterface()!.setOutputTypeName(type);
                                     }
                                 
 
-    var aData: string = hashMap!.get(transformInfoData!.DATA) as String;
+    var aData: string = hashMap!.get(transformInfoData!.DATA) as string;
 ;
     
 

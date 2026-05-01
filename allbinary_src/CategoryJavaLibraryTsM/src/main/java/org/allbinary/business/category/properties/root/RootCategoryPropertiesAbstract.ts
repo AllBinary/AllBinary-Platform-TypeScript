@@ -63,8 +63,6 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
         
 import { RootCategoryPropertiesInterface } from "./RootCategoryPropertiesInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class RootCategoryPropertiesAbstract
             extends Object
          implements RootCategoryPropertiesInterface {

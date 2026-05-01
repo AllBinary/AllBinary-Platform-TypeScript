@@ -45,8 +45,6 @@ import { TagStrings } from "../../tags/TagStrings.js";
         
 import { ModifyTableInterface } from "./ModifyTableInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class ModifyTable
             extends Object
          implements ModifyTableInterface {

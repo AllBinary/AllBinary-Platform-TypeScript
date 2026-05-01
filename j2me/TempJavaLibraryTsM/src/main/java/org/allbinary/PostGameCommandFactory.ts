@@ -40,8 +40,6 @@ import { Canvas } from "../../javax/microedition/lcdui/Canvas.js";
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { RuntimeException } from "./RuntimeException.js";
-
 export class PostGameCommandFactory
             extends Object
          {

@@ -258,7 +258,7 @@ public constructor (hashMap: HashMap<any, any>){
 this.getFormData(hashMap);
     
 
-    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as String;
+    var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as string;
 ;
     
 
@@ -353,7 +353,7 @@ var append = append
 var key = key
 var hashMap = hashMap
 
-    var path: string = hashMap!.get(key as Object) as String;
+    var path: string = hashMap!.get(key as Object) as string;
 ;
     
 
@@ -378,7 +378,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(path as Object); as String +append;
+                        return hashMap!.get(path as Object); as string +append;
     
 
                                     }
@@ -407,23 +407,23 @@ var storeHashMap = storeHashMap
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
 ;
     
-this.name= storeHashMap!.get(storeFrontData!.NAME); as String;
+this.name= storeHashMap!.get(storeFrontData!.NAME); as string;
     
-this.basketName= storeHashMap!.get(storeFrontData!.NAME); as String;
+this.basketName= storeHashMap!.get(storeFrontData!.NAME); as string;
     
-this.homeHostName= storeHashMap!.get(storeFrontData!.HOMEHOSTNAME); as String;
+this.homeHostName= storeHashMap!.get(storeFrontData!.HOMEHOSTNAME); as string;
     
 this.homeHostNamePath= this.createPath(storeFrontData!.HOMEHOSTNAMEPATH, storeHashMap);
     
-this.hostName= storeHashMap!.get(storeFrontData!.HOSTNAME); as String;
+this.hostName= storeHashMap!.get(storeFrontData!.HOSTNAME); as string;
     
 this.hostNamePath= this.createPath(storeFrontData!.HOSTNAMEPATH, storeHashMap);
     
-this.testHomeHostName= storeHashMap!.get(storeFrontData!.TESTHOMEHOSTNAME); as String;
+this.testHomeHostName= storeHashMap!.get(storeFrontData!.TESTHOMEHOSTNAME); as string;
     
 this.testHomeHostNamePath= this.createPath(storeFrontData!.TESTHOMEHOSTNAMEPATH, storeHashMap);
     
-this.testHostName= storeHashMap!.get(storeFrontData!.TESTHOSTNAME); as String;
+this.testHostName= storeHashMap!.get(storeFrontData!.TESTHOSTNAME); as string;
     
 this.testHostNamePath= this.createPath(storeFrontData!.TESTHOSTNAMEPATH, storeHashMap);
     
@@ -433,33 +433,33 @@ this.staticPath= this.createPath(" Products" +AbPathData.getInstance()!.SEPARATO
     
 this.categoryPath= this.createPath(StoreFront.RESOURCES, storeFrontData!.CATEGORYPATH, storeHashMap);
     
-this.inventoryControl= storeHashMap!.get(storeFrontData!.INVENTORYCONTROL); as String;
+this.inventoryControl= storeHashMap!.get(storeFrontData!.INVENTORYCONTROL); as string;
     
-this.subStores= storeHashMap!.get(storeFrontData!.SUBSTORES); as String;
+this.subStores= storeHashMap!.get(storeFrontData!.SUBSTORES); as string;
     
-this.tagLocation= storeHashMap!.get(storeFrontData!.TAGLOCATION); as String;
+this.tagLocation= storeHashMap!.get(storeFrontData!.TAGLOCATION); as string;
     
-this.packageLocation= storeHashMap!.get(storeFrontData!.PACKAGELOCATION); as String;
+this.packageLocation= storeHashMap!.get(storeFrontData!.PACKAGELOCATION); as string;
     
-this.ftp= storeHashMap!.get(storeFrontData!.FTP); as String;
+this.ftp= storeHashMap!.get(storeFrontData!.FTP); as string;
     
 this.ftpPath= this.createPath(storeFrontData!.FTPPATH, storeHashMap);
     
-this.ftpUserName= storeHashMap!.get(storeFrontData!.FTPUSERNAME); as String;
+this.ftpUserName= storeHashMap!.get(storeFrontData!.FTPUSERNAME); as string;
     
-this.ftpPassword= storeHashMap!.get(storeFrontData!.FTPPASSWORD); as String;
+this.ftpPassword= storeHashMap!.get(storeFrontData!.FTPPASSWORD); as string;
     
-this.testFtp= storeHashMap!.get(storeFrontData!.TESTFTP); as String;
+this.testFtp= storeHashMap!.get(storeFrontData!.TESTFTP); as string;
     
 this.testFtpPath= this.createPath(storeFrontData!.TESTFTPPATH, storeHashMap);
     
-this.testFtpUserName= storeHashMap!.get(storeFrontData!.TESTFTPUSERNAME); as String;
+this.testFtpUserName= storeHashMap!.get(storeFrontData!.TESTFTPUSERNAME); as string;
     
-this.testFtpPassword= storeHashMap!.get(storeFrontData!.TESTFTPPASSWORD); as String;
+this.testFtpPassword= storeHashMap!.get(storeFrontData!.TESTFTPPASSWORD); as string;
     
-this.timeCreated= storeHashMap!.get(EntryData.getInstance()!.TIMECREATED); as String;
+this.timeCreated= storeHashMap!.get(EntryData.getInstance()!.TIMECREATED); as string;
     
-this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as String;
+this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as string;
     
 }
 

@@ -198,7 +198,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;
 ;
     
 
@@ -219,7 +219,7 @@ this.keyActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;
 ;
     
 

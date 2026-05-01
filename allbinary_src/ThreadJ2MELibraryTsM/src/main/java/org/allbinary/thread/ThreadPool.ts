@@ -68,8 +68,6 @@ import { ThreadPoolStrings } from "./ThreadPoolStrings.js";
 
 import { ThreadObjectUtil } from "./ThreadObjectUtil.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { PriorityRunnable } from "./PriorityRunnable.js";
 
 export class ThreadPool

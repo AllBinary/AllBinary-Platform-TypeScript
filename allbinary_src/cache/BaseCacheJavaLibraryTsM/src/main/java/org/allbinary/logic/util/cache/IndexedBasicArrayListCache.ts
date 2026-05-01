@@ -49,6 +49,25 @@ import { CacheableInterface } from "./CacheableInterface.js";
 export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implements CacheInterface {
         
 
+                //@Throws(Error::class)
+            
+    public static createCache(size: number): IndexedBasicArrayListCache{
+var size = size
+
+    var indexedBasicArrayListCache: IndexedBasicArrayListCache = new IndexedBasicArrayListCache();
+;
+    
+indexedBasicArrayListCache!.init(size);
+    
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return indexedBasicArrayListCache;
+    
+}
+
+
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private size: number = 0;
@@ -58,14 +77,6 @@ public constructor (){
 
             super();
         }
-
-public constructor (size: number){
-
-            super();
-        var size = size
-this.init(size);
-    
-}
 
 
                 //@Throws(Error::class)
@@ -86,7 +97,7 @@ var size = size
     var index: number = size -1;
 index >= this.size; index--)
         {
-this.add();
+this.addDefault();
     
 }
 
@@ -98,7 +109,7 @@ this.size= size;
 }
 
 
-    public get(index: number): any{
+    public getAt(index: number): any{
 var index = index
 
 
@@ -111,13 +122,13 @@ var index = index
 
                 //@Throws(Error::class)
             
-    public add(){
+    public addDefault(){
 }
 
 
                 //@Throws(Error::class)
             
-    public add(anyType: any){
+    public addObject(anyType: Object){
 var anyType = anyType
 this.list.add(anyType);
     
@@ -135,7 +146,7 @@ this.list.add(cacheableInterface);
 
                 //@Throws(Error::class)
             
-    public add(cacheableInterfaces: CacheableInterface[]){
+    public addArray(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces
 
 

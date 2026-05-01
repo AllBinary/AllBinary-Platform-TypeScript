@@ -181,11 +181,11 @@ var packagePropertiesHashMap = packagePropertiesHashMap
 index < size; index++)
         {
 
-    var propertyName: string = propertyKeySetArray[index]! as String;
+    var propertyName: string = propertyKeySetArray[index]! as string;
 ;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(propertyName as Object) as String;
+    var propertyValue: string = packagePropertiesHashMap!.get(propertyName as Object) as string;
 ;
     
 
@@ -229,7 +229,7 @@ var packagePropertiesHashMap = packagePropertiesHashMap
 ;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(DomData.VALUE) as String;
+    var propertyValue: string = packagePropertiesHashMap!.get(DomData.VALUE) as string;
 ;
     
 
@@ -378,11 +378,11 @@ var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
 index < size; index++)
         {
 
-    var nextPropertyName: string = propertyNameSetArray[index]! as String;
+    var nextPropertyName: string = propertyNameSetArray[index]! as string;
 ;
     
 
-    var propertyValue: string = StringUtil.getInstance()!.getNonNull(nextPackagePropertiesHashMap!.get(nextPropertyName as Object) as String)!;
+    var propertyValue: string = StringUtil.getInstance()!.getNonNull(nextPackagePropertiesHashMap!.get(nextPropertyName as Object) as string)!;
 ;
     
 
@@ -477,7 +477,7 @@ var node = node
                                     }
                                 
 
-    var propertyValue: string = nextPackagePropertiesHashMap!.get(DomData.VALUE) as String;
+    var propertyValue: string = nextPackagePropertiesHashMap!.get(DomData.VALUE) as string;
 ;
     
 
@@ -619,7 +619,7 @@ var nameSpaceRequestParam = nameSpaceRequestParam
 index < size; index++)
         {
 
-    var nextPackageName: string = packageVector!.get(index) as String;
+    var nextPackageName: string = packageVector!.get(index) as string;
 ;
     
 
@@ -788,7 +788,7 @@ var document = document
 index < size; index++)
         {
 
-    var packageName: string = packageVector!.get(index) as String;
+    var packageName: string = packageVector!.get(index) as string;
 ;
     
 
@@ -865,7 +865,7 @@ index < size; index++)
 i < keySize; i++)
         {
 
-    var key: string = keyArray[i]! as String;
+    var key: string = keyArray[i]! as string;
 ;
     
 
@@ -873,7 +873,7 @@ i < keySize; i++)
 ;
     
 
-    var className: string = anyType!.constructor.name.toString()! as String;
+    var className: string = anyType!.constructor.name.toString()! as string;
 ;
     
 
@@ -890,7 +890,7 @@ i < keySize; i++)
                         
                                     {
                                     
-    var value: string = this.getMap()!.get(key) as String;
+    var value: string = this.getMap()!.get(key) as string;
 ;
     
 

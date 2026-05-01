@@ -45,8 +45,6 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
         
 import { Log } from "./Log.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 expect export class LogFactory
             extends Object
          {

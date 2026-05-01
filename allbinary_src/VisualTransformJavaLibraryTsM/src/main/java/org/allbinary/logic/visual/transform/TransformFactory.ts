@@ -217,7 +217,7 @@ transformInfoInterface!.setChild();
 ;
     
 
-    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as String, propertiesHashMap, pageContext)!;
+    var transformInfoInterface: TransformInfoInterface = transformInfoEntity!.get(propertiesHashMap!.get(transformInfoData!.NAME) as string, propertiesHashMap, pageContext)!;
 ;
     
 
@@ -270,7 +270,7 @@ transformInfoInterface!.setChild();
     
 stringBuffer!.append("Failed To Get Instance: ");
     
-stringBuffer!.append(propertiesHashMap!.get(TransformInfoData.getInstance()!.NAME) as String);
+stringBuffer!.append(propertiesHashMap!.get(TransformInfoData.getInstance()!.NAME) as string);
     
 stringBuffer!.append("->TransformFactory");
     

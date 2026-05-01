@@ -104,7 +104,7 @@ var file = file
     var index: number = 0;
 index < size; index++)
         {
-nextFileFilterString= list.get(index); as String;
+nextFileFilterString= list.get(index); as string;
     
 
                         if(this.visit(file, nextFileFilterString).valueOf())

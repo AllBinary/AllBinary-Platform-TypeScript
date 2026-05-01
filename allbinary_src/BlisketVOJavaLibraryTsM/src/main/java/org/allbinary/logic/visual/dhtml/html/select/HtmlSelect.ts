@@ -191,7 +191,7 @@ this.isMultipleSelect= value;
 i < optionsSize; i++)
         {
 
-    var value: string = optionsArray[i]! as String;
+    var value: string = optionsArray[i]! as string;
 ;
     
 
@@ -265,11 +265,11 @@ result += "\" ";
 i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as String;
+    var key: string = attributeKeys[i]! as string;
 ;
     
 
-    var value: string = otherAttributes!.get(key) as String;
+    var value: string = otherAttributes!.get(key) as string;
 ;
     
 

@@ -258,7 +258,7 @@ i < size; i++)
 ;
     
 
-    var name: string = objectKey as String;
+    var name: string = objectKey as string;
 ;
     
 
@@ -285,7 +285,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                         
                                     {
                                     
-    var value: string = stringUtil!.getNonNull(anyType as String)!;
+    var value: string = stringUtil!.getNonNull(anyType as string)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
@@ -350,7 +350,7 @@ var valueVector = valueVector
 i < size; i++)
         {
 
-    var value: string = stringUtil!.getNonNull(valueVector!.get(i) as String)!;
+    var value: string = stringUtil!.getNonNull(valueVector!.get(i) as string)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, value));
@@ -394,7 +394,7 @@ var valueVector = valueVector
 index < size; index++)
         {
 
-    var value: string = stringUtil!.getNonNull(valueVector!.get(index) as String)!;
+    var value: string = stringUtil!.getNonNull(valueVector!.get(index) as string)!;
 ;
     
 node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeName, index, value));
@@ -461,7 +461,7 @@ var hashMap = hashMap
 i < size; i++)
         {
 
-    var name: string = keyArray[i]! as String;
+    var name: string = keyArray[i]! as string;
 ;
     
 
@@ -469,7 +469,7 @@ i < size; i++)
 ;
     
 
-    var value: string = stringUtil!.getNonNull(anyType as String)!;
+    var value: string = stringUtil!.getNonNull(anyType as string)!;
 ;
     
 node.appendChild(ModDomHelper.createTextNode(document, name, value));

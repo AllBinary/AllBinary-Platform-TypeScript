@@ -72,8 +72,6 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
         
 import { ImageCacheBase } from "./ImageCacheBase.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class ImageCache extends ImageCacheBase {
         
 
@@ -211,7 +209,7 @@ listOfList[foundIndex]!.add(image);
 ;
     
 
-    var resourceId: number = resourceUtil!.getResourceId(key as String)!;
+    var resourceId: number = resourceUtil!.getResourceId(key as string)!;
 ;
     
 
@@ -223,7 +221,7 @@ listOfList[foundIndex]!.add(image);
                         
                                     {
                                     
-    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as String)!;
+    var inputStream: InputStream = resourceUtil!.getResourceAsStream(key as string)!;
 ;
     
 

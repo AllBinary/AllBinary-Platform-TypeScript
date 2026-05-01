@@ -48,8 +48,6 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { GeographicMapCellPositionAreaInterface } from "./GeographicMapCellPositionAreaInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class GeographicMapCellPositionAreaBase
             extends Object
          implements GeographicMapCellPositionAreaInterface {

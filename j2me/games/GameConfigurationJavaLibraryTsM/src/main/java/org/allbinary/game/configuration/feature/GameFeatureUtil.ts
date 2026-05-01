@@ -371,7 +371,7 @@ var itemLabel = itemLabel
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-name= this.enumerationUtil!.nextElement(enumeration)!; as String;
+name= this.enumerationUtil!.nextElement(enumeration)!; as string;
     
 
                         if(itemLabel!.compareTo(name) == 0)

@@ -168,7 +168,7 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
     var iterator: Iterator = set.iterator()!;
 ;
     
-this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as String));
+this.setInputRobotInterface(inputRobotFactory!.get(iterator.next() as string));
     
 this.setTime(0);
     

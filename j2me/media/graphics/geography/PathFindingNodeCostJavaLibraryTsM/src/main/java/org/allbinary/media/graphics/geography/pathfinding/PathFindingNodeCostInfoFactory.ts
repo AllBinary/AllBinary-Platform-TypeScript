@@ -55,7 +55,7 @@ public constructor (max: number){
 
             super();
         var max = max
-this.pathFindingNodeCostInfoAdjacencyList= Array(max) { arrayOfNulls<PathFindingNodeCostInfo?>(max) }
+this.pathFindingNodeCostInfoAdjacencyList= new Array(max) [max]
                                                             ;
     
 }

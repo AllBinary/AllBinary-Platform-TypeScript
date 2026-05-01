@@ -390,9 +390,9 @@ var replace = replace
     var index2: number = 0;
 index2 < size; index2++)
         {
-key= keyArray[index2]! as String;
+key= keyArray[index2]! as string;
     
-value= this.hashMap!.get(key as Object); as String;
+value= this.hashMap!.get(key as Object); as string;
     
 
     var index: number = 0;

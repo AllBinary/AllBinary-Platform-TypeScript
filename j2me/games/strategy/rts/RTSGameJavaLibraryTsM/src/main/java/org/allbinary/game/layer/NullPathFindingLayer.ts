@@ -69,8 +69,6 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
 
 import { SelectionHudPaintable } from "./SelectionHudPaintable.js";

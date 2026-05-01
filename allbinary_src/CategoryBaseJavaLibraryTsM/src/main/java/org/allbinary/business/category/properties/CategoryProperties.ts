@@ -269,7 +269,7 @@ pathStringBuffer!.append(abPathData!.SEPARATOR)!.append(this.getValue());
     var index: number = 0;
 index < size; index++)
         {
-pathStringBuffer!.append(list.get(index) as String);
+pathStringBuffer!.append(list.get(index) as string);
     
 }
 

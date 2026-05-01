@@ -45,8 +45,6 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
         
 import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { PickedUpLayerType } from "./PickedUpLayerType.js";
 
 export class PickedUpLayerInterfaceFactoryBase

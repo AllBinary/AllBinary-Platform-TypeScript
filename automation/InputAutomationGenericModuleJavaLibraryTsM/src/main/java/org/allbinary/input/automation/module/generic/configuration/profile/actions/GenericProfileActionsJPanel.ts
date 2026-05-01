@@ -311,7 +311,7 @@ var evt = evt
 
         try {
             
-    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue() as String;
+    var profileActionNameString: string = this.genericProfileActionsJList!.getSelectedValue() as string;
 ;
     
 this.updateProfileActionUI(profileActionNameString);
@@ -373,7 +373,7 @@ var evt = evt
 index < anyType!.length; index++)
         {
 
-    var nextSelectedValueString: string = anyType[index]! as String;
+    var nextSelectedValueString: string = anyType[index]! as string;
 ;
     
 this.getGenericProfileActions()!.remove(nextSelectedValueString);
@@ -404,7 +404,7 @@ this.setModel();
                                     {
                                     this.genericProfileActionsJList!.setSelectedValue(this.genericProfileActionsJList!.getModel()!.getElementAt(0), true);
     
-this.updateProfileActionUI(this.genericProfileActionsJList!.getModel()!.getElementAt(0) as String);
+this.updateProfileActionUI(this.genericProfileActionsJList!.getModel()!.getElementAt(0) as string);
     
 
                                     }

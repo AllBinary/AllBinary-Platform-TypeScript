@@ -144,7 +144,7 @@ this.hashtable= new Hashtable<any, any>();
 
                                     }
                                 
-this.id= hashtable.get(abeClientInformationData!.LICENSEID); as String;
+this.id= hashtable.get(abeClientInformationData!.LICENSEID); as string;
     
 
     var vector: Vector = hashtable.get(abeClientInformationData!.LICENSESERVERS) as Vector;
@@ -172,10 +172,10 @@ this.servers.add(vector.get(index));
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
     
-this.setSpecial(stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.SPECIAL) as String));
+this.setSpecial(stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.SPECIAL) as string));
     
 
-    var licenseTypeString: string = stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as String)!;
+    var licenseTypeString: string = stringUtil!.getNonNull(hashtable.get(abeClientInformationData!.LICENSE_TYPE) as string)!;
 ;
     
 this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeString);
@@ -199,7 +199,7 @@ var keyName = keyName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.get(keyName as Object) as String;
+                        return this.hashtable.get(keyName as Object) as string;
     
 }
 
@@ -295,7 +295,7 @@ stringBuffer!.append(BREAK);
 index < size; index++)
         {
 
-    var nextServerString: string = serverVector!.get(index) as String;
+    var nextServerString: string = serverVector!.get(index) as string;
 ;
     
 stringBuffer!.append("Server: ");

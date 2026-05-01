@@ -193,7 +193,7 @@ public constructor (map: Map){
 index < size; index++)
         {
 
-    var key: string = keyArray[index]! as String;
+    var key: string = keyArray[index]! as string;
 ;
     
 
@@ -239,75 +239,75 @@ var hashMap = hashMap
     var initializerData: InitializerData = InitializerData.getInstance()!;
 ;
     
-this.userJdbcDriver= hashMap!.get(initializerData!.CUSTOMERJDBCDRIVER); as String;
+this.userJdbcDriver= hashMap!.get(initializerData!.CUSTOMERJDBCDRIVER); as string;
     
-this.userName= hashMap!.get(initializerData!.CUSTOMERNAME); as String;
+this.userName= hashMap!.get(initializerData!.CUSTOMERNAME); as string;
     
-this.userUserName= hashMap!.get(initializerData!.CUSTOMERUSERNAME); as String;
+this.userUserName= hashMap!.get(initializerData!.CUSTOMERUSERNAME); as string;
     
-this.userPassword= hashMap!.get(initializerData!.CUSTOMERPASSWORD); as String;
+this.userPassword= hashMap!.get(initializerData!.CUSTOMERPASSWORD); as string;
     
-this.userSchema= hashMap!.get(initializerData!.CUSTOMERSCHEMA); as String;
+this.userSchema= hashMap!.get(initializerData!.CUSTOMERSCHEMA); as string;
     
-this.userServer= hashMap!.get(initializerData!.CUSTOMERSERVER); as String;
+this.userServer= hashMap!.get(initializerData!.CUSTOMERSERVER); as string;
     
-this.userPort= hashMap!.get(initializerData!.CUSTOMERPORT); as String;
+this.userPort= hashMap!.get(initializerData!.CUSTOMERPORT); as string;
     
-this.historyJdbcDriver= hashMap!.get(initializerData!.HISTORYJDBCDRIVER); as String;
+this.historyJdbcDriver= hashMap!.get(initializerData!.HISTORYJDBCDRIVER); as string;
     
-this.historyName= hashMap!.get(initializerData!.HISTORYNAME); as String;
+this.historyName= hashMap!.get(initializerData!.HISTORYNAME); as string;
     
-this.historyUserName= hashMap!.get(initializerData!.HISTORYUSERNAME); as String;
+this.historyUserName= hashMap!.get(initializerData!.HISTORYUSERNAME); as string;
     
-this.historyPassword= hashMap!.get(initializerData!.HISTORYPASSWORD); as String;
+this.historyPassword= hashMap!.get(initializerData!.HISTORYPASSWORD); as string;
     
-this.historySchema= hashMap!.get(initializerData!.HISTORYSCHEMA); as String;
+this.historySchema= hashMap!.get(initializerData!.HISTORYSCHEMA); as string;
     
-this.historyServer= hashMap!.get(initializerData!.HISTORYSERVER); as String;
+this.historyServer= hashMap!.get(initializerData!.HISTORYSERVER); as string;
     
-this.historyPort= hashMap!.get(initializerData!.HISTORYPORT); as String;
+this.historyPort= hashMap!.get(initializerData!.HISTORYPORT); as string;
     
-this.logJdbcDriver= hashMap!.get(initializerData!.LOGJDBCDRIVER); as String;
+this.logJdbcDriver= hashMap!.get(initializerData!.LOGJDBCDRIVER); as string;
     
-this.logName= hashMap!.get(initializerData!.LOGNAME); as String;
+this.logName= hashMap!.get(initializerData!.LOGNAME); as string;
     
-this.logUserName= hashMap!.get(initializerData!.LOGUSERNAME); as String;
+this.logUserName= hashMap!.get(initializerData!.LOGUSERNAME); as string;
     
-this.logPassword= hashMap!.get(initializerData!.LOGPASSWORD); as String;
+this.logPassword= hashMap!.get(initializerData!.LOGPASSWORD); as string;
     
-this.logSchema= hashMap!.get(initializerData!.LOGSCHEMA); as String;
+this.logSchema= hashMap!.get(initializerData!.LOGSCHEMA); as string;
     
-this.logServer= hashMap!.get(initializerData!.LOGSERVER); as String;
+this.logServer= hashMap!.get(initializerData!.LOGSERVER); as string;
     
-this.logPort= hashMap!.get(initializerData!.LOGPORT); as String;
+this.logPort= hashMap!.get(initializerData!.LOGPORT); as string;
     
-this.inventoryJdbcDriver= hashMap!.get(initializerData!.INVENTORYJDBCDRIVER); as String;
+this.inventoryJdbcDriver= hashMap!.get(initializerData!.INVENTORYJDBCDRIVER); as string;
     
-this.inventoryName= hashMap!.get(initializerData!.INVENTORYNAME); as String;
+this.inventoryName= hashMap!.get(initializerData!.INVENTORYNAME); as string;
     
-this.inventoryUserName= hashMap!.get(initializerData!.INVENTORYUSERNAME); as String;
+this.inventoryUserName= hashMap!.get(initializerData!.INVENTORYUSERNAME); as string;
     
-this.inventoryPassword= hashMap!.get(initializerData!.INVENTORYPASSWORD); as String;
+this.inventoryPassword= hashMap!.get(initializerData!.INVENTORYPASSWORD); as string;
     
-this.inventorySchema= hashMap!.get(initializerData!.INVENTORYSCHEMA); as String;
+this.inventorySchema= hashMap!.get(initializerData!.INVENTORYSCHEMA); as string;
     
-this.inventoryServer= hashMap!.get(initializerData!.INVENTORYSERVER); as String;
+this.inventoryServer= hashMap!.get(initializerData!.INVENTORYSERVER); as string;
     
-this.inventoryPort= hashMap!.get(initializerData!.INVENTORYPORT); as String;
+this.inventoryPort= hashMap!.get(initializerData!.INVENTORYPORT); as string;
     
-this.staticPagesJdbcDriver= hashMap!.get(initializerData!.STATICPAGESJDBCDRIVER); as String;
+this.staticPagesJdbcDriver= hashMap!.get(initializerData!.STATICPAGESJDBCDRIVER); as string;
     
-this.staticPagesName= hashMap!.get(initializerData!.STATICPAGESNAME); as String;
+this.staticPagesName= hashMap!.get(initializerData!.STATICPAGESNAME); as string;
     
-this.staticPagesUserName= hashMap!.get(initializerData!.STATICPAGESUSERNAME); as String;
+this.staticPagesUserName= hashMap!.get(initializerData!.STATICPAGESUSERNAME); as string;
     
-this.staticPagesPassword= hashMap!.get(initializerData!.STATICPAGESPASSWORD); as String;
+this.staticPagesPassword= hashMap!.get(initializerData!.STATICPAGESPASSWORD); as string;
     
-this.staticPagesSchema= hashMap!.get(initializerData!.STATICPAGESSCHEMA); as String;
+this.staticPagesSchema= hashMap!.get(initializerData!.STATICPAGESSCHEMA); as string;
     
-this.staticPagesServer= hashMap!.get(initializerData!.STATICPAGESSERVER); as String;
+this.staticPagesServer= hashMap!.get(initializerData!.STATICPAGESSERVER); as string;
     
-this.staticPagesPort= hashMap!.get(initializerData!.STATICPAGESPORT); as String;
+this.staticPagesPort= hashMap!.get(initializerData!.STATICPAGESPORT); as string;
     
 
                 //: 

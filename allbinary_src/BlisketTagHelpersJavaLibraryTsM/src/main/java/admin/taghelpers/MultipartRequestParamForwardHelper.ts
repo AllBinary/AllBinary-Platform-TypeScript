@@ -195,11 +195,11 @@ this.pageContext!.forward(stringBuffer!.toString());
 index < size; index++)
         {
 
-    var key: string = this.paramVector!.get(index) as String;
+    var key: string = this.paramVector!.get(index) as string;
 ;
     
 
-    var value: string = hashMap!.get(key as Object) as String;
+    var value: string = hashMap!.get(key as Object) as string;
 ;
     
 
@@ -240,7 +240,7 @@ stringBuffer!.append(value);
 ;
     
 
-    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND) as String;
+    var requestCommand: string = hashMap!.get(GLOBALS2.ADMINCOMMAND) as string;
 ;
     
 

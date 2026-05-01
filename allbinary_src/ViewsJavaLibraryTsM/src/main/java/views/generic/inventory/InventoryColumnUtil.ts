@@ -105,7 +105,7 @@ index < size; index++)
 ;
     
 
-    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY) as String;
+    var categoryName: string = hashMap!.get(BasicItemData.CATEGORY) as string;
 ;
     
 

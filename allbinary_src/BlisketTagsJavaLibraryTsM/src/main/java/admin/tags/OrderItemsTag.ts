@@ -113,7 +113,7 @@ this.status= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -149,7 +149,7 @@ this.status= value;
 ;
     
 
-    var result: string = method.invoke(anyType, methodArgs) as String;
+    var result: string = method.invoke(anyType, methodArgs) as string;
 ;
     
 

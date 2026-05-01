@@ -150,7 +150,7 @@ this.setGenericProfileActions(genericProfileActions);
 index < size; index++)
         {
 
-    var actionNameString: string = actionNameArray[index]! as String;
+    var actionNameString: string = actionNameArray[index]! as string;
 ;
     
 

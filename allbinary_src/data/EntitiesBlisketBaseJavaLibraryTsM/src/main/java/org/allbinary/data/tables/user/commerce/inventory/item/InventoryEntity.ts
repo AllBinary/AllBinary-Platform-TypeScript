@@ -209,7 +209,7 @@ i < size; i++)
                         
                                     {
                                     
-    var category: string = itemHashMap!.get(BasicItemData.CATEGORY) as String;
+    var category: string = itemHashMap!.get(BasicItemData.CATEGORY) as string;
 ;
     
 
@@ -442,7 +442,7 @@ stringBuffer!.append(this.sqlStrings!.END);
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as String, updatedValues);
+super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as string, updatedValues);
     
 }
 

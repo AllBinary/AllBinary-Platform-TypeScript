@@ -62,15 +62,6 @@ public constructor (){
             super();
         }
 
-public constructor (size: number){
-            super(size);
-                    var size = size
-
-
-                            //For kotlin this is before the body of the constructor.
-                    
-}
-
 
     public get(): BasicArrayList{
 
@@ -79,13 +70,13 @@ public constructor (size: number){
                         if(this.index >= this.list.size())
                         
                                     {
-                                    this.add();
+                                    this.addDefault();
     
 
                                     }
                                 
 
-    var list: BasicArrayList = this.get(this.index++) as BasicArrayList;
+    var list: BasicArrayList = this.getAt(this.index++) as BasicArrayList;
 ;
     
 
@@ -98,7 +89,7 @@ public constructor (size: number){
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET, e);
     
 
 

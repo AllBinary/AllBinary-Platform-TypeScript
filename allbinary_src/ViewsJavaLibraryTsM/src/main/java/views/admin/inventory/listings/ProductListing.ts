@@ -205,7 +205,7 @@ var storeFront = storeFront
 index < size; index++)
         {
 
-    var subStore: string = subStoreVector!.get(index) as String;
+    var subStore: string = subStoreVector!.get(index) as string;
 ;
     
 
@@ -455,11 +455,11 @@ index < size; index++)
 ;
     
 
-    var keywordData: string = keywordArray[index]! as String;
+    var keywordData: string = keywordArray[index]! as string;
 ;
     
 
-    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object) as String;
+    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object) as string;
 ;
     
 insertVector!.add(storeFront!.getName());
@@ -564,7 +564,7 @@ stringBuffer!.append(" Store Not Found");
 index < size; index++)
         {
 
-    var keywordData: string = keywordArray[index]! as String;
+    var keywordData: string = keywordArray[index]! as string;
 ;
     
 
@@ -658,7 +658,7 @@ stringBuffer!.append("<br />");
     var index: number = 0;
 index < size; index++)
         {
-storeName= storeFrontVector!.get(index); as String;
+storeName= storeFrontVector!.get(index); as string;
     
 this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));
     

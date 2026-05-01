@@ -120,7 +120,7 @@ export class InputMappingHelpPaintable extends HelpPaintable {
 
     private actionBasicColor: BasicColor[] = [];
 
-    private inputBasicColorArray: BasicColor[][] = Array(0) { arrayOfNulls<BasicColor?>(0) }
+    private inputBasicColorArray: BasicColor[][] = new Array(0) [0]
                                                             ;
 
     private selectedBasicColor: BasicColor
@@ -190,7 +190,7 @@ this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!
 ;
     
 
-    var inputBasicColorArray: BasicColor[][] = arrayOfNulls<Array<BasicColor?>>(size)
+    var inputBasicColorArray: BasicColor[][] = new Array(size)
                                                             ;
 ;
     

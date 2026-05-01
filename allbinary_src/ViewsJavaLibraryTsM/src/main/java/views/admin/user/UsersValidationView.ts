@@ -85,7 +85,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as String;
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;
 ;
     
 

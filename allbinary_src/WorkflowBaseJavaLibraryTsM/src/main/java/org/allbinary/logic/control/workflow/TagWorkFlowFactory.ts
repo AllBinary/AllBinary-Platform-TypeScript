@@ -99,7 +99,7 @@ private constructor (){
 
         try {
             
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
 ;
     
 
@@ -133,7 +133,7 @@ params[1]= pageContext as Object;
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
 ;
     
 
@@ -172,7 +172,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
                         
                                     {
                                     
-    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as String;
+    var workFlowClassName: string = propertiesHashMap!.get(DynamicObjectData.NAME) as string;
 ;
     
 

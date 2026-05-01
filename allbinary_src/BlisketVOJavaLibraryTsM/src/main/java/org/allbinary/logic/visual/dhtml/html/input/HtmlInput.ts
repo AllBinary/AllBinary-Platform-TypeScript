@@ -124,11 +124,11 @@ result += "\" ";
 i < attributeSize; i++)
         {
 
-    var key: string = attributeKeys[i]! as String;
+    var key: string = attributeKeys[i]! as string;
 ;
     
 
-    var value: string = otherAttributes!.get(key) as String;
+    var value: string = otherAttributes!.get(key) as string;
 ;
     
 

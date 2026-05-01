@@ -111,7 +111,7 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.userName= hashMap!.get(UserData.USERNAME); as String;
+this.userName= hashMap!.get(UserData.USERNAME); as string;
     
 }
 

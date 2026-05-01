@@ -42,8 +42,6 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
         
 import { BasicTableInterface } from "./BasicTableInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class BasicTable
             extends Object
          implements BasicTableInterface {

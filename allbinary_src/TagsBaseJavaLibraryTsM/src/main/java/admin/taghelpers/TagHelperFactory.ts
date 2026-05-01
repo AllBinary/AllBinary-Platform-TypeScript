@@ -51,8 +51,6 @@ import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
         
 import { TagHelperFactoryInterface } from "./TagHelperFactoryInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class TagHelperFactory
             extends Object
          implements TagHelperFactoryInterface {

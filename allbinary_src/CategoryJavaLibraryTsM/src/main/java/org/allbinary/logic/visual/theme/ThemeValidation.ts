@@ -180,7 +180,7 @@ var hashMap = hashMap
 this.transformInfoInterface= transformInfoInterface;
     
 
-    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as String);
+    var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as string);
 ;
     
 

@@ -96,7 +96,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 this.quoteRequest= new QuoteRequest(this.weblisketSession!.getUserName(), request);
     
 
-    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+    var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 ;
     
 

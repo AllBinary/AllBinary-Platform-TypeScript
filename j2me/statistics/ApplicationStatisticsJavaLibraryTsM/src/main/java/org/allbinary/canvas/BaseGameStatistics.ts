@@ -128,7 +128,7 @@ this.totalRefreshes++;
                         
                                     {
                                     
-    var time: number = (this.totalRefreshes /(elapsed>>DEFAULT_SCALE_FACTOR));
+    var time: number = (this.totalRefreshes /(elapsed>>this.DEFAULT_SCALE_FACTOR));
 ;
     
 
@@ -196,7 +196,7 @@ this.totalRefreshes++;
     var totalTime: number = this.timeDelayHelper!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
 ;
     
-totalTime= (totalTime>>DEFAULT_SCALE_FACTOR);
+totalTime= (totalTime>>this.DEFAULT_SCALE_FACTOR);
     
 
                         if(totalTime > 0 && this.updateDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
@@ -355,15 +355,15 @@ var totalTime = totalTime
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(STRING_ARRAY[0]!);
+stringBuffer!.append(this.STRING_ARRAY[0]!);
     
 stringBuffer!.appendlong(totalTime);
     
-stringBuffer!.append(STRING_ARRAY[2]!);
+stringBuffer!.append(this.STRING_ARRAY[2]!);
     
 stringBuffer!.appendlong(this.totalFrames);
     
-stringBuffer!.append(STRING_ARRAY[4]!);
+stringBuffer!.append(this.STRING_ARRAY[4]!);
     
 stringBuffer!.appendlong(this.totalFrames /totalTime);
     
@@ -371,11 +371,11 @@ stringBuffer!.appendlong(this.totalFrames /totalTime);
                         if(this.totalRefreshes > 0)
                         
                                     {
-                                    stringBuffer!.append(STRING_ARRAY[6]!);
+                                    stringBuffer!.append(this.STRING_ARRAY[6]!);
     
 stringBuffer!.appendlong(this.totalRefreshes);
     
-stringBuffer!.append(STRING_ARRAY[8]!);
+stringBuffer!.append(this.STRING_ARRAY[8]!);
     
 stringBuffer!.appendlong(this.totalRefreshes /totalTime);
     

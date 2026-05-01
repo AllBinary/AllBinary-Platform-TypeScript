@@ -122,7 +122,7 @@ this.pageContext= pageContext;
 this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 ;
     
 
@@ -151,7 +151,7 @@ this.weblisketSession= new WeblisketSession(this.propertiesHashMap, this.pageCon
 ;
     
 
-    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()) as String;
+    var requestPaymentGateway: string = this.request.getParameter(PaymentGatewayData.NAME.toString()) as string;
 ;
     
 

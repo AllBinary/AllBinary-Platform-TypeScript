@@ -60,7 +60,7 @@ export class BasicProbabilityAIDataFactory
 
     public getInstance(): Hashtable<any, any>{
 
-    var likelyhoodIntegerArray: number[][] = Array(Canvas.KEY_NUM9 +1) { arrayOfNulls<Integer?>(2) }
+    var likelyhoodIntegerArray: number[][] = new Array(Canvas.KEY_NUM9 +1) [2]
                                                             ;
 ;
     

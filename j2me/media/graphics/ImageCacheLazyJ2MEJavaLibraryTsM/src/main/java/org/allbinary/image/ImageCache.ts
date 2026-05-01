@@ -120,8 +120,6 @@ import { ImageCacheBase } from "./ImageCacheBase.js";
 
 import { FirstProcessor } from "./FirstProcessor.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class ImageCache extends ImageCacheBase {
         
 
@@ -998,7 +996,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.creatImage(key as String);;
+                        return this.creatImage(key as string);;
     
 
                                     }
@@ -1020,7 +1018,7 @@ this.runTask();
 ;
     
 
-    var image: Image = this.createImageLater(key as String, width, height)!;
+    var image: Image = this.createImageLater(key as string, width, height)!;
 ;
     
 

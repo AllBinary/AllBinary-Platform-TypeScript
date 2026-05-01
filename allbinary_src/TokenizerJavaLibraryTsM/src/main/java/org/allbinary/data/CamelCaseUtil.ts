@@ -131,7 +131,7 @@ tokenizer.getTokens(string, list);
     var i: number = 0;
 i < size; i++)
         {
-word= list.get(i); as String;
+word= list.get(i); as string;
     
 word= stringValidationUtil!.isEmpty(word)
                         ?       

@@ -75,8 +75,6 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
         
 import { ImageCacheBase } from "./ImageCacheBase.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class ImageCache extends ImageCacheBase {
         
 
@@ -162,7 +160,7 @@ listOfList[foundIndex]!.add(image);
 ;
     
 
-    var resourceId: number = resourceUtil!.getResourceId(key as String)!;
+    var resourceId: number = resourceUtil!.getResourceId(key as string)!;
 ;
     
 
@@ -278,7 +276,7 @@ this.logUtil!.putF(new StringMaker().
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Image.createImageLater(key as String,  -1,  -1);;
+                        return Image.createImageLater(key as string,  -1,  -1);;
     
 }
 

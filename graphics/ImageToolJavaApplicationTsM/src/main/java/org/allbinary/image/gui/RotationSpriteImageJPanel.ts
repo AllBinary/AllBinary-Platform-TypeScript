@@ -157,11 +157,11 @@ new Thread()
 index < bufferedImageArray!.length; index++)
         {
 
-    var totalFrames: number = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem() as String))!;
+    var totalFrames: number = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalFramesJComboBox!.getSelectedItem() as string))!;
 ;
     
 
-    var totalAngle: number = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem() as String))!;
+    var totalAngle: number = Integer(Integer.valueOf(this@RotationSpriteImageJPanel.totalAngleJComboBox!.getSelectedItem() as string))!;
 ;
     
 generatedBufferedImageArray= ImageJ2SERotationUtil.getInstance()!.getRotatedImages(bufferedImageArray[index]!, totalFrames, totalAngle);

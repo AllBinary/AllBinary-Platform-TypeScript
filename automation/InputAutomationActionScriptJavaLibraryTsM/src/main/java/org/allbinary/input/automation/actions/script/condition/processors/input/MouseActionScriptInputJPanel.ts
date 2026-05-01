@@ -186,7 +186,7 @@ this.mouseActionScriptInputInterface!.log();
 ;
     
 
-    var selectedItem: string = comboBoxModel!.getSelectedItem() as String;
+    var selectedItem: string = comboBoxModel!.getSelectedItem() as string;
 ;
     
 

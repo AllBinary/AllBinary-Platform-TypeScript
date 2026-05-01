@@ -69,7 +69,7 @@ export class CellPositionFactory
 
     public readonly NONE: CellPosition = new CellPosition( -1,  -1,  -1,  -1);
 
-    private cellPositionArray: CellPosition[][] = Array(0) { arrayOfNulls<CellPosition?>(0) }
+    private cellPositionArray: CellPosition[][] = new Array(0) [0]
                                                             ;
 
     private columns: number= 0
@@ -84,7 +84,7 @@ private constructor (){
     public init(columns: number, rows: number){
 var columns = columns
 var rows = rows
-this.cellPositionArray= Array(columns) { arrayOfNulls<CellPosition?>(rows) }
+this.cellPositionArray= new Array(columns) [rows]
                                                             ;
     
 this.columns= columns;

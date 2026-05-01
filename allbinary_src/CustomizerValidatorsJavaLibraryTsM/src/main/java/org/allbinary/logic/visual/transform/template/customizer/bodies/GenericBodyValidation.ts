@@ -140,7 +140,7 @@ this.getFormData(hashMap);
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-this.body= hashMap!.get(BodyData.getInstance()!.NAME); as String;
+this.body= hashMap!.get(BodyData.getInstance()!.NAME); as string;
     
 }
 

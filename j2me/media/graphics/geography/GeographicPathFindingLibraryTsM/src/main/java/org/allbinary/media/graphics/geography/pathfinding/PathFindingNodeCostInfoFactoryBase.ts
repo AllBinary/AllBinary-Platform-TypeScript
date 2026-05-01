@@ -45,8 +45,6 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
         
 import { PathFindingNodeCostInfoFactoryBaseInterface } from "./PathFindingNodeCostInfoFactoryBaseInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class PathFindingNodeCostInfoFactoryBase
             extends Object
          implements PathFindingNodeCostInfoFactoryBaseInterface {

@@ -168,7 +168,7 @@ new Thread()
 ;
     
 
-    var percent: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jComboBox1!.getSelectedItem() as String))!;
+    var percent: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jComboBox1!.getSelectedItem() as string))!;
 ;
     
 
@@ -209,11 +209,11 @@ new Thread()
                                 
                         else {
                             
-    var width: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField1!.getText() as String))!;
+    var width: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField1!.getText() as string))!;
 ;
     
 
-    var height: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField2!.getText() as String))!;
+    var height: number = Integer(Integer.valueOf(this@ResizeImageJPanel.jTextField2!.getText() as string))!;
 ;
     
 generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true);

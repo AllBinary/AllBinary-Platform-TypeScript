@@ -174,11 +174,11 @@ this.hasRead= false;
 var hashMap = hashMap
 
         try {
-            this.testing= hashMap!.get(this.TESTING); as String;
+            this.testing= hashMap!.get(this.TESTING); as string;
     
-this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as String);
+this.mainPath= new AbPath(hashMap!.get(this.MAINPATH) as string);
     
-this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as String);
+this.testHtmlPath= new AbPath(hashMap!.get(this.TESTHTMLPATH) as string);
     
 
                 //: 

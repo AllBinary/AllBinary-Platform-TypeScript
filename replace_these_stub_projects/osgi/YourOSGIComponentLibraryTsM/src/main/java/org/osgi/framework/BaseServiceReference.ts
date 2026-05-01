@@ -39,8 +39,6 @@
         
 import { ServiceReference } from "./ServiceReference.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class BaseServiceReference
             extends Object
          implements ServiceReference {

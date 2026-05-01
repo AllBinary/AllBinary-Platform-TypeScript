@@ -293,7 +293,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.PROCESSOR) as String;
+                        return this.cpuHashMap!.get(CpuInfo.PROCESSOR) as string;
     
 }
 
@@ -303,7 +303,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.VENDORID) as String;
+                        return this.cpuHashMap!.get(CpuInfo.VENDORID) as string;
     
 }
 
@@ -313,7 +313,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.CPUFAMILY) as String;
+                        return this.cpuHashMap!.get(CpuInfo.CPUFAMILY) as string;
     
 }
 
@@ -323,7 +323,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.MODEL) as String;
+                        return this.cpuHashMap!.get(CpuInfo.MODEL) as string;
     
 }
 
@@ -333,7 +333,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.MODELNAME) as String;
+                        return this.cpuHashMap!.get(CpuInfo.MODELNAME) as string;
     
 }
 
@@ -343,7 +343,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.STEPPING) as String;
+                        return this.cpuHashMap!.get(CpuInfo.STEPPING) as string;
     
 }
 
@@ -353,7 +353,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.CPUMHZ) as String;
+                        return this.cpuHashMap!.get(CpuInfo.CPUMHZ) as string;
     
 }
 
@@ -363,7 +363,7 @@ nextLine= lineNumberReader!.readLine();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.cpuHashMap!.get(CpuInfo.CACHESIZE) as String;
+                        return this.cpuHashMap!.get(CpuInfo.CACHESIZE) as string;
     
 }
 

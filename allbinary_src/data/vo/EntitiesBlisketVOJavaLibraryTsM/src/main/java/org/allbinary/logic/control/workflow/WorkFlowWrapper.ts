@@ -95,7 +95,7 @@ this.anyType= anyType;
     
 
     var result: string = method.invoke(this.anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -147,7 +147,7 @@ this.anyType= anyType;
     
 
     var result: string = method.invoke(this.anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 

@@ -138,9 +138,9 @@ this.storeName= weblisketSession!.getStoreName();
                             toHashMap()!;
 ;
     
-this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME); as String;
+this.workFlowName= requestHashMap!.get(WorkFlowData.getInstance()!.NAME); as string;
     
-this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as String);
+this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getInstance()!.DATA) as string);
     
 }
 
@@ -148,11 +148,11 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME); as String;
+this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME); as string;
     
-this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as string;
     
-this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA) as String);
+this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance()!.DATA) as string);
     
 }
 
@@ -289,11 +289,11 @@ var document = document
 index < size; index++)
         {
 
-    var name: string = nameArray[index]! as String;
+    var name: string = nameArray[index]! as string;
 ;
     
 
-    var value: string = hashMap!.get(name as Object) as String;
+    var value: string = hashMap!.get(name as Object) as string;
 ;
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));

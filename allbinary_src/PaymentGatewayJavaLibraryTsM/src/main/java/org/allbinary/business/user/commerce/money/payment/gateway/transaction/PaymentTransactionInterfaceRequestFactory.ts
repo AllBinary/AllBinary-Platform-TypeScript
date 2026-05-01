@@ -294,7 +294,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var gatewayName: string = weblisketSession!.getPaymentMethod() as String;
+    var gatewayName: string = weblisketSession!.getPaymentMethod() as string;
 ;
     
 

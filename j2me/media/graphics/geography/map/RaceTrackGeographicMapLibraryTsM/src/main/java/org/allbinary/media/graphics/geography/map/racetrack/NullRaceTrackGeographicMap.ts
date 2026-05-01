@@ -62,8 +62,6 @@ import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/
         
 import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { RaceTrackInfo } from "./RaceTrackInfo.js";
 
 import { RaceTrackData } from "./RaceTrackData.js";

@@ -2080,7 +2080,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
                         
                                     {
                                     
-    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object) as String;
+    var levelAsString: string = hashtable.get(GameInfo.LEVEL_NAME as Object) as string;
 ;
     
 

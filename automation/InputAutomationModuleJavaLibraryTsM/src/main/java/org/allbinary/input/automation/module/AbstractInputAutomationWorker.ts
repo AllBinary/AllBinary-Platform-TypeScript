@@ -65,8 +65,6 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
         
 import { InputAutomationActionInterface } from "./InputAutomationActionInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class AbstractInputAutomationWorker
             extends Object
          implements RunnableInterface {

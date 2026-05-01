@@ -60,8 +60,6 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
         
 import { VehicleLayerInterface } from "./VehicleLayerInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { VehicleProperties } from "./VehicleProperties.js";
 
 export class NullVehicleLayer

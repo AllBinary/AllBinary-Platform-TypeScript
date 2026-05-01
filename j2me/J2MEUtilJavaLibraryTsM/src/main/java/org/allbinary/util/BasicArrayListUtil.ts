@@ -104,12 +104,12 @@ list.add(commonPhoneStrings!.NINE);
     
 BasicArrayListUtil.getInstance()!.reverse(list);
     
-console.log(list);
+console.log(list.toString());
     
 }
 
 
-    public readonly NULL_ARRAY_OF_ARRAY: BasicArrayList[][] = Array(0) { arrayOfNulls<BasicArrayList?>(0) }
+    public readonly NULL_ARRAY_OF_ARRAY: BasicArrayList[][] = new Array(0) [0]
                                                             ;
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;

@@ -196,7 +196,7 @@ TransformInfoEntityBuilder.getInstance()!.insert(values);
     var success: string = "Delete Successfully";
 ;
     
-TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as String);
+TransformInfoEntityBuilder.getInstance()!.delete(this.transformInfoInterface!.getKey() as string);
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

@@ -207,7 +207,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String, updatedValues);
+super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as string, updatedValues);
     
 }
 

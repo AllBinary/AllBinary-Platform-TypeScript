@@ -83,7 +83,7 @@ var anyType = anyType
 index < anyType!.length; index++)
         {
 
-    var imageType: InputImageType = InputImageType.getInstance(anyType[index]! as String)!;
+    var imageType: InputImageType = InputImageType.getInstance(anyType[index]! as string)!;
 ;
     
 imageTypes!.getVector()!.add(imageType);

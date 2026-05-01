@@ -168,7 +168,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
                                 
 this.endList= this.ownerLayer!.getEndGeographicMapCellPositionList();
     
-this.paths= Array(tiledLayer!.getColumns()) { arrayOfNulls<BasicArrayList?>(tiledLayer!.getRows()) }
+this.paths= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
                                                             ;
     
 }

@@ -502,7 +502,7 @@ this.roles= values;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -570,7 +570,7 @@ this.roles= values;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 

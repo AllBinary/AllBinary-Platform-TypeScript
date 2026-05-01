@@ -216,7 +216,7 @@ index < size; index++)
 stringBuffer!.append(TESTING);
     
 
-    var serverName: string = this.vector.get(index) as String;
+    var serverName: string = this.vector.get(index) as string;
 ;
     
 

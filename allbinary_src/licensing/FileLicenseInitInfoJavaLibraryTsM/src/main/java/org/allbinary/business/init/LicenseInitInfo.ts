@@ -82,7 +82,7 @@ var index = index
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.serverVector!.objectArray[index]! as String;
+                        return this.serverVector!.objectArray[index]! as string;
     
 }
 

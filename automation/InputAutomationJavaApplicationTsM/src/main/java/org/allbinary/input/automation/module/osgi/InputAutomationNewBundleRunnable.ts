@@ -414,7 +414,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isIns
     var index: number = 0;
 index < size; index++)
         {
-nextSymbolicName= list.get(index); as String;
+nextSymbolicName= list.get(index); as string;
     
 
                         if(nextSymbolicName!.compareTo(symbolicName) == 0)
@@ -477,7 +477,7 @@ this.logUtil!.putF("All: " +hashMap, this, "findNewModules");
 index < size; index++)
         {
 
-    var symbolicName: string = symbolicNameArray[index]! as String;
+    var symbolicName: string = symbolicNameArray[index]! as string;
 ;
     
 

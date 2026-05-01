@@ -162,7 +162,7 @@ this.logic= logic;
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
+                            null) as string;
 ;
     
 

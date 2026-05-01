@@ -66,8 +66,6 @@ import { JPopupMenu } from "./JPopupMenu.js";
 
 import { JMenuItem } from "./JMenuItem.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
         
 

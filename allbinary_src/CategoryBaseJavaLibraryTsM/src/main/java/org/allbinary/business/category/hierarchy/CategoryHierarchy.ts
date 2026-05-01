@@ -97,7 +97,7 @@ public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInte
 var parentCategoryInterface = parentCategoryInterface
 var categoryPropertiesHashMap = categoryPropertiesHashMap
 
-    var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as String)!;
+    var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;
 ;
     
 this.level= Integer.valueOf(levelString)!.toInt();

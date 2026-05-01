@@ -139,7 +139,7 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 index < size; index++)
         {
 
-    var viewName: string = this.customizersVector!.get(index) as String;
+    var viewName: string = this.customizersVector!.get(index) as string;
 ;
     
 
@@ -168,7 +168,7 @@ Arrays.sort(objectArray, new StringComparator());
 index < objectArray!.length; index++)
         {
 
-    var viewName: string = objectArray[index]! as String;
+    var viewName: string = objectArray[index]! as string;
 ;
     
 

@@ -48,7 +48,7 @@ export interface CacheInterface {
 
                 //@Throws(Error::class)
             
-    add(cacheableInterfaces: CacheableInterface[])
+    addArray(cacheableInterfaces: CacheableInterface[])
 
                 //@Throws(Error::class)
             

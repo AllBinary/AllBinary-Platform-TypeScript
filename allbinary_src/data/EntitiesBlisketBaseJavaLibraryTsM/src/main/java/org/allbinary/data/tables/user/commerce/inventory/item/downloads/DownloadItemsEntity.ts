@@ -154,7 +154,7 @@ var value = value
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as String, updatedValues);
+super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as string, updatedValues);
     
 }
 

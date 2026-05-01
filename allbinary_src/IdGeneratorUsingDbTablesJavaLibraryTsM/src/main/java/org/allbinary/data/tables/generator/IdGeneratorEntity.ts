@@ -116,7 +116,7 @@ keysAndValues!.put(this.NAME, name);
                                     }
                                 
 
-    var value: string = hashMap!.get(this.VALUE) as String;
+    var value: string = hashMap!.get(this.VALUE) as string;
 ;
     
 
@@ -184,7 +184,7 @@ this.update(map);
 
     public update(hashMap: HashMap<any, any>){
 var hashMap = hashMap
-super.updateWhere(this.NAME, hashMap!.get(this.NAME) as String, hashMap);
+super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
     
 }
 

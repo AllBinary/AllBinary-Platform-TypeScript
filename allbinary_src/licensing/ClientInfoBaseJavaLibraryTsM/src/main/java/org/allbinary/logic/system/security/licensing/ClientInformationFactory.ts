@@ -37,8 +37,6 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { RuntimeException } from "./RuntimeException.js";
-
 import { ClientInformation } from "./ClientInformation.js";
 
 export class ClientInformationFactory

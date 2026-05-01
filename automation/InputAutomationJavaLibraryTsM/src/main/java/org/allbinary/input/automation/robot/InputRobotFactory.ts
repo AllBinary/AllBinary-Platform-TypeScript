@@ -294,7 +294,7 @@ this.logUtil!.putF("Loading Libraries", this, "loadLibraries");
 index < size; index++)
         {
 
-    var inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get(nameArray[index]! as String)!;
+    var inputRobotInterface: InputRobotInterface = InputRobotFactory.getInstance()!.get(nameArray[index]! as string)!;
 ;
     
 InputRobotFactory.loadLibrary(inputRobotInterface);
@@ -334,7 +334,7 @@ this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
     var index: number = 0;
 index < size; index++)
         {
-inputRobotInterface= this.get(inputRobotArray[index]! as String);
+inputRobotInterface= this.get(inputRobotArray[index]! as string);
     
 
                         if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface::class, inputRobotInterface))

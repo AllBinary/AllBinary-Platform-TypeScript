@@ -332,7 +332,7 @@ var document = document
 index < size; index++)
         {
 
-    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as String) as GenericProfile;
+    var genericProfile: GenericProfile = this.hashMap!.get(nameArray[index]! as string) as GenericProfile;
 ;
     
 node.appendChild(genericProfile!.toXmlNode(document));

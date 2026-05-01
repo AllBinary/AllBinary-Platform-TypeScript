@@ -105,7 +105,7 @@ this.buffers.add(cacheableInterface);
 
                 //@Throws(Error::class)
             
-    public add(cacheableInterfaces: CacheableInterface[]){
+    public addArray(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces
 
 

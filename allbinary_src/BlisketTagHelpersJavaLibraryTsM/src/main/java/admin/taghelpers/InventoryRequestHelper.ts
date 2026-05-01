@@ -171,7 +171,7 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
 ;
     
 
-    var id: string = dataMappingInterface!.getKey() as String;
+    var id: string = dataMappingInterface!.getKey() as string;
 ;
     
 InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.deleteWhere(BasicItemData.ID, id);

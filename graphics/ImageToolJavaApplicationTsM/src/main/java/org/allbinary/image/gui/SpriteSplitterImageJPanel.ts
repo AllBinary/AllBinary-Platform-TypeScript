@@ -151,15 +151,15 @@ new Thread()
 ;
     
 
-    var spriteType: string = spriteTypeJComboBox!.getSelectedItem() as String;
+    var spriteType: string = spriteTypeJComboBox!.getSelectedItem() as string;
 ;
     
 
-    var totalFrames: number = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as String))!;
+    var totalFrames: number = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string))!;
 ;
     
 
-    var totalAnimations: number = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as String))!;
+    var totalAnimations: number = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string))!;
 ;
     
 

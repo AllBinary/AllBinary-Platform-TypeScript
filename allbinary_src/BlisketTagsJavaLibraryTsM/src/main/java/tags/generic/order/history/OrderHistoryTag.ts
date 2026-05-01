@@ -101,7 +101,7 @@ this.status= value;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 

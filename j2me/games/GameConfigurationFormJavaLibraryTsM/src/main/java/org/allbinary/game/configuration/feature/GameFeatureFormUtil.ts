@@ -196,7 +196,7 @@ var option = option
 index < size; index++)
         {
 
-    var name: string = objectArray[index]! as String;
+    var name: string = objectArray[index]! as string;
 ;
     
 stringMaker!.delete(0, stringMaker!.length());

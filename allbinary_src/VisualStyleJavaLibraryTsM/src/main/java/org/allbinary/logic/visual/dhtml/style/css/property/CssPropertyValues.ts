@@ -179,7 +179,7 @@ index < size2; index++)
 ;
     
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt) as String;
+    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt) as string;
 ;
     
 this.propertyValueVector!.add(propertyValue);
@@ -219,7 +219,7 @@ this.propertyValueVector!.add(propertyValue);
 index < size; index++)
         {
 
-    var value: string = this.propertyValueVector!.get(index) as String;
+    var value: string = this.propertyValueVector!.get(index) as string;
 ;
     
 stringBuffer!.delete(0, stringBuffer!.length());

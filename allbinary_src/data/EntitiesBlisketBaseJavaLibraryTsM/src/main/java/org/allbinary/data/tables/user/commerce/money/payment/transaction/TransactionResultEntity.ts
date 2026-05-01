@@ -106,7 +106,7 @@ var orderNumber = orderNumber
     var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-whereHashMap!.put(OrderData.ID, orderNumber as String);
+whereHashMap!.put(OrderData.ID, orderNumber as string);
     
 whereHashMap!.put(UserData.USERNAME, userName);
     

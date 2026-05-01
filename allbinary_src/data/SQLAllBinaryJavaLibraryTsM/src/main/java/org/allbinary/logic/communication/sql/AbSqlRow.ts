@@ -188,7 +188,7 @@ stringBuffer!.append(columnName);
 stringBuffer!.append(this.EQUAL_QUOTE);
     
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;
 ;
     
 
@@ -322,7 +322,7 @@ stringBuffer!.append(this.EQUAL_QUOTE);
                                     }
                                 
 
-    var columnValue: string = updatedKeyValuePairs!.get(columnName) as String;
+    var columnValue: string = updatedKeyValuePairs!.get(columnName) as string;
 ;
     
 
@@ -382,11 +382,11 @@ stringBuffer!.append(sqlStrings!.WHERE);
 i < size2; i++)
         {
 
-    var key: string = keyArray2[i]! as String;
+    var key: string = keyArray2[i]! as string;
 ;
     
 
-    var value: string = whereKeyValuePairs!.get(key) as String;
+    var value: string = whereKeyValuePairs!.get(key) as string;
 ;
     
 
@@ -550,7 +550,7 @@ stringBuffer!.append(this.sqlStrings!.WHERE);
 i < size; i++)
         {
 
-    var key: string = keyArray[i]! as String;
+    var key: string = keyArray[i]! as string;
 ;
     
 
@@ -632,7 +632,7 @@ stringBuffer!.append(this.sqlStrings!.VALUES);
 i < values.length -1; i++)
         {
 
-    var value: string = this.getValue(values.get(i) as String)!;
+    var value: string = this.getValue(values.get(i) as string)!;
 ;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
@@ -645,7 +645,7 @@ stringBuffer!.append(this.sqlStrings!.SINGLE_QUOTE_COMMA_SEP);
 }
 
 
-    var value: string = this.getValue(values.lastElement() as String)!;
+    var value: string = this.getValue(values.lastElement() as string)!;
 ;
     
 value= new Replace(this.sqlStrings!.ESCAPE, this.sqlStrings!.DOUBLE_ESCAPE).
@@ -730,7 +730,7 @@ stringBuffer!.append(sqlStrings!.WHERE);
 index < size; index++)
         {
 
-    var key: string = keyArray[index]! as String;
+    var key: string = keyArray[index]! as string;
 ;
     
 
@@ -914,7 +914,7 @@ stringBuffer!.append(sqlStrings!.WHERE);
 index < size; index++)
         {
 
-    var key: string = keyArray[index]! as String;
+    var key: string = keyArray[index]! as string;
 ;
     
 
@@ -1201,9 +1201,9 @@ stringBuffer!.append(sqlStrings!.WHERE);
     var index: number = 0;
 index < size; index++)
         {
-key= keyArray[index]! as String;
+key= keyArray[index]! as string;
     
-value= whereKeyValuePairs!.get(key); as String;
+value= whereKeyValuePairs!.get(key); as string;
     
 stringBuffer!.append(key);
     

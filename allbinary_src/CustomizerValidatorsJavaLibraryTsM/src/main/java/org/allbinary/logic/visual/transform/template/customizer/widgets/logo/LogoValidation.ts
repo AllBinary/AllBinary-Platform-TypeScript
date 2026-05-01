@@ -140,7 +140,7 @@ this.getFormData(hashMap);
 var hashMap = hashMap
 this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE); as FileItem;
     
-this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as String);
+this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as string);
     
 
                         if(this.logoFileItem != 

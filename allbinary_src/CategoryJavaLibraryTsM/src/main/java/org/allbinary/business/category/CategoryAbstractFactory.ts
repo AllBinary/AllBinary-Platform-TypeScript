@@ -60,8 +60,6 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
         
 import { CategoryFactoryInterface } from "./CategoryFactoryInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { CategoryInterface } from "./CategoryInterface.js";
 
 export class CategoryAbstractFactory

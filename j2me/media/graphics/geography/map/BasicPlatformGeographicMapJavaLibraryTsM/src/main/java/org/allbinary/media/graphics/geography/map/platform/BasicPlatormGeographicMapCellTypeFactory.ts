@@ -130,7 +130,7 @@ new GeographicMapCellType(0, 0);
 
         while(this.enumerationUtil!.hasMoreElements(enumeration))
         {
-key= this.enumerationUtil!.nextElement(enumeration)!; as String;
+key= this.enumerationUtil!.nextElement(enumeration)!; as string;
     
 this.logUtil!.putF(key, this, commonStrings!.INIT);
     

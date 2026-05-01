@@ -165,7 +165,7 @@ var document = document
 i < size; i++)
         {
 
-    var key: string = keyArray[i]! as String;
+    var key: string = keyArray[i]! as string;
 ;
     
 
@@ -246,7 +246,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 i < size; i++)
         {
 
-    var key: string = keyArray[i]! as String;
+    var key: string = keyArray[i]! as string;
 ;
     
 

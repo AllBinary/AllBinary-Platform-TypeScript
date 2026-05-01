@@ -358,7 +358,7 @@ var index = index
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(PaymentData.ID, index as String);
+whereHashMap!.put(PaymentData.ID, index as string);
     
 super.deleteWhere(whereHashMap);
     

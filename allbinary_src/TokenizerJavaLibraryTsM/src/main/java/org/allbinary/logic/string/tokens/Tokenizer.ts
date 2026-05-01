@@ -230,7 +230,7 @@ var stringVector = stringVector
     var index: number = 0;
 index < size; index++)
         {
-string= stringVector!.objectArray[index]! as String;
+string= stringVector!.objectArray[index]! as string;
     
 end= string.indexOf(this.sep);
     

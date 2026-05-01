@@ -130,7 +130,7 @@ index >= 0; index--)
 index >= 0; index--)
         {
 
-    var rootName: string = this.rootNameList!.get(index) as String;
+    var rootName: string = this.rootNameList!.get(index) as string;
 ;
     
 stringBuffer!.append(rootName);

@@ -139,28 +139,28 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.id= hashMap!.get(DownloadItemData.ID); as String;
+this.id= hashMap!.get(DownloadItemData.ID); as string;
     
-this.basicItemId= hashMap!.get(BasicItemData.ID); as String;
+this.basicItemId= hashMap!.get(BasicItemData.ID); as string;
     
-this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE); as String;
+this.enabled= hashMap!.get(EntryData.getInstance()!.ENABLE); as string;
     
-this.system= hashMap!.get(DownloadItemData.SYSTEM); as String;
+this.system= hashMap!.get(DownloadItemData.SYSTEM); as string;
     
-this.platform= hashMap!.get(DownloadItemData.PLATFORM); as String;
+this.platform= hashMap!.get(DownloadItemData.PLATFORM); as string;
     
-this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME); as String;
+this.specialName= hashMap!.get(DownloadItemData.SPECIAL_NAME); as string;
     
-this.version= hashMap!.get(DownloadItemData.VERSION); as String;
+this.version= hashMap!.get(DownloadItemData.VERSION); as string;
     
-this.changes= hashMap!.get(DownloadItemData.CHANGES); as String;
+this.changes= hashMap!.get(DownloadItemData.CHANGES); as string;
     
-this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE); as String;
+this.licenseFile= hashMap!.get(DownloadItemData.LICENSE_FILE); as string;
     
-this.file= hashMap!.get(DownloadItemData.FILE); as String;
+this.file= hashMap!.get(DownloadItemData.FILE); as string;
     
 
-    var value: string = hashMap!.get(DownloadItemData.SIZE) as String;
+    var value: string = hashMap!.get(DownloadItemData.SIZE) as string;
 ;
     
 
@@ -179,7 +179,7 @@ this.file= hashMap!.get(DownloadItemData.FILE); as String;
                         }
                             
 
-    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as String;
+    var validTime: string = hashMap!.get(DownloadItemData.VALID_TIME) as string;
 ;
     
 
@@ -193,27 +193,27 @@ this.file= hashMap!.get(DownloadItemData.FILE); as String;
                                 
                         else {
                             
-    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as String;
+    var totalYears: string = hashMap!.get(DownloadItemData.VALID_TIME_YEARS) as string;
 ;
     
 
-    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as String;
+    var totalMonths: string = hashMap!.get(DownloadItemData.VALID_TIME_MONTHS) as string;
 ;
     
 
-    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as String;
+    var totalDays: string = hashMap!.get(DownloadItemData.VALID_TIME_DAYS) as string;
 ;
     
 
-    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as String;
+    var totalHours: string = hashMap!.get(DownloadItemData.VALID_TIME_HOURS) as string;
 ;
     
 
-    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as String;
+    var totalMinutes: string = hashMap!.get(DownloadItemData.VALID_TIME_MINUTES) as string;
 ;
     
 
-    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as String;
+    var totalSeconds: string = hashMap!.get(DownloadItemData.VALID_TIME_SECONDS) as string;
 ;
     
 
@@ -225,7 +225,7 @@ this.validTime= totalTime;
 
                         }
                             
-this.retries= hashMap!.get(DownloadItemData.RETRIES); as String;
+this.retries= hashMap!.get(DownloadItemData.RETRIES); as string;
     
 }
 

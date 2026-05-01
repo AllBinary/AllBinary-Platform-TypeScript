@@ -43,8 +43,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { CustomScreen } from "./CustomScreen.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class CustomForm extends CustomScreen {
         
 

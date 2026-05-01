@@ -45,8 +45,6 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
         
 import { HighScoresFactoryInterface } from "./HighScoresFactoryInterface.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
 
 import { HighScoresHelperBase } from "./HighScoresHelperBase.js";

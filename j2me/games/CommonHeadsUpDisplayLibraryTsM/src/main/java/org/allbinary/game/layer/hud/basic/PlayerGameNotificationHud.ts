@@ -258,7 +258,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
                 //@Throws(Error::class)
             
     setAndRemove(){
-this.string= this.gameNotification!.stringList!.removeAt(0); as String;
+this.string= this.gameNotification!.stringList!.removeAt(0); as string;
     
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;
@@ -301,7 +301,7 @@ this.setBasicColorP(this.gameNotification!.colorList!.removeAt(0) as BasicColor)
     var index: number = this.circularIndexUtil!.getIndex()!;
 ;
     
-this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as String;
+this.string= this.permanentGameNotification!.stringList!.objectArray[index]! as string;
     
 
     var width: number = MyFont.getInstance()!.stringWidth2(this.string)!;

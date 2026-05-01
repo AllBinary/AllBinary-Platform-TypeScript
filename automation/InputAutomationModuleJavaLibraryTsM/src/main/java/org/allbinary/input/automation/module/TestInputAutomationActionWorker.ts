@@ -126,7 +126,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
 index < size; index++)
         {
 
-    var inputTypeNameString: string = inputTypeNameArray[index]! as String;
+    var inputTypeNameString: string = inputTypeNameArray[index]! as string;
 ;
     
 

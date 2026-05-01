@@ -42,8 +42,6 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
         
 import { GeographicMapCellType } from "./GeographicMapCellType.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class GeographicMapCellTypeFactory
             extends Object
          {

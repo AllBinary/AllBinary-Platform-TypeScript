@@ -124,7 +124,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(HashMap, HashMap
 
                                     }
                                 
-this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as String);
+this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as string);
     
 }
 

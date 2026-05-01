@@ -54,8 +54,6 @@ import { HighScores } from "./HighScores.js";
 
 import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class HighScoresHelperBase
             extends Object
          implements HighScoresResultsListener {

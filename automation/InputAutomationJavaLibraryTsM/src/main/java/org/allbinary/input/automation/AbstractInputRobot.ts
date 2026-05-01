@@ -54,8 +54,6 @@ import { PointHelper } from "./PointHelper.js";
 
 import { Rectangle } from "./Rectangle.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class AbstractInputRobot
             extends Object
          {

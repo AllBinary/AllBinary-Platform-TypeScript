@@ -353,11 +353,11 @@ var document = document
 index < size; index++)
         {
 
-    var key: string = searchValueArray[index]! as String;
+    var key: string = searchValueArray[index]! as string;
 ;
     
 
-    var searchValue: string = this.columnsAndSearchValues!.get(key) as String;
+    var searchValue: string = this.columnsAndSearchValues!.get(key) as string;
 ;
     
 fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.FIELD, key, ToDomHelper.convertNull(searchValue)));

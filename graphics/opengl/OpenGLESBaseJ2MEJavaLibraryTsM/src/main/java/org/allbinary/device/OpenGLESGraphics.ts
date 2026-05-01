@@ -45,8 +45,6 @@ import { GraphicsInterface } from "./GraphicsInterface.js";
 
 import { NullGL10 } from "./NullGL10.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class OpenGLESGraphics
             extends Object
          implements OpenGLSurfaceChangedInterface, GraphicsInterface {

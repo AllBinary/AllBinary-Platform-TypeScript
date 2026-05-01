@@ -40,8 +40,6 @@ import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphi
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-import { RuntimeException } from "./RuntimeException.js";
-
 import { PathFinderGraphVisitorBase } from "./PathFinderGraphVisitorBase.js";
 
 export class PathFinderGraphVisitorFactoryBase

@@ -131,11 +131,11 @@ node.appendChild(basicItemView!.toXmlNode(document));
 index < size; index++)
         {
 
-    var name: string = nameArray[index]! as String;
+    var name: string = nameArray[index]! as string;
 ;
     
 
-    var value: string = hashMap!.get(name as Object) as String;
+    var value: string = hashMap!.get(name as Object) as string;
 ;
     
 value= stringUtil!.getNonNull(value);

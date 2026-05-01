@@ -191,7 +191,7 @@ var document = document
 index < size; index++)
         {
 
-    var eventName: string = eventNameArray[index]! as String;
+    var eventName: string = eventNameArray[index]! as string;
 ;
     
 

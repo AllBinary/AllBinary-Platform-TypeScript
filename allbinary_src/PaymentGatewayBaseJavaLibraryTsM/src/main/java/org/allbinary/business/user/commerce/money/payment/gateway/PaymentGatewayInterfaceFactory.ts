@@ -155,7 +155,7 @@ var hashMap = hashMap
 
         try {
             
-    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()) as String;
+    var gatewayName: string = hashMap!.get(PaymentGatewayData.NAME.toString()) as string;
 ;
     
 

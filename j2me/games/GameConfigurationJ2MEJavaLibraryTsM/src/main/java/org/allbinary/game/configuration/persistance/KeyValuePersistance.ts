@@ -293,13 +293,13 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
     var index: number = 0;
 index < size; index++)
         {
-outputStream!.writeUTF(objectArray[index]! as String);
+outputStream!.writeUTF(objectArray[index]! as string);
     
 outputStream!.writeUTF(commonSeps!.EQUALS);
     
 anyType= objectArray[index]! as Object;
     
-value= hashtable.get(anyType as Object); as String;
+value= hashtable.get(anyType as Object); as string;
     
 outputStream!.writeUTF(value);
     

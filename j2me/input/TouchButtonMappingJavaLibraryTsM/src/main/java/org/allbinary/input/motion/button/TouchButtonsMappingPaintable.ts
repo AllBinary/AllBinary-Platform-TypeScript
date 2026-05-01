@@ -72,7 +72,7 @@ export class TouchButtonsMappingPaintable extends Paintable {
 
     foregroundColor: number
 
-    private paintableTable: Paintable[][] = Array(0) { arrayOfNulls<Paintable?>(0) }
+    private paintableTable: Paintable[][] = new Array(0) [0]
                                                             ;
 
     private touchButtonLocationHelper: TouchButtonLocationHelper = new TouchButtonLocationHelper();
@@ -119,7 +119,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
 ;
     
 
-    var paintableTable: Paintable[][] = Array(totalColumns) { arrayOfNulls<Paintable?>(totalRows) }
+    var paintableTable: Paintable[][] = new Array(totalColumns) [totalRows]
                                                             ;
 ;
     

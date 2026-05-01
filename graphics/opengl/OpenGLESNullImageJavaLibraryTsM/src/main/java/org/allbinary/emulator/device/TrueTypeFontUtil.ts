@@ -51,8 +51,6 @@ import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLES
         
 import { TrueTypeFontUtilBase } from "./TrueTypeFontUtilBase.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         
 

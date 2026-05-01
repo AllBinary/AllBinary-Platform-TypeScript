@@ -140,7 +140,7 @@ this.requestHashMap= new MultipartRequestParams(request).
                             toHashMap();
     
 
-    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as String;
+    var filePath: string = this.requestHashMap!.get(FileUploadData.getInstance()!.UPLOAD_TO_FILE_PATH) as string;
 ;
     
 

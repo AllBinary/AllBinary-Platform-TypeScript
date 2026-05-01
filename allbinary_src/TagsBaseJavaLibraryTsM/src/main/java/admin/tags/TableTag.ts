@@ -233,7 +233,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -290,7 +290,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -347,7 +347,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -404,7 +404,7 @@ this.total= total;
     
 
     var result: string = method.invoke(anyType, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -457,7 +457,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -510,7 +510,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -563,7 +563,7 @@ this.total= total;
     
 
     var result: string = method.invoke(this.requestObject, 
-                            null) as String;
+                            null) as string;
 ;
     
 

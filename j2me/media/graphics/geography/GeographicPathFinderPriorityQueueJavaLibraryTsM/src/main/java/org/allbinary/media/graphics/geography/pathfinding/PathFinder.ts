@@ -90,8 +90,6 @@ import { MultipassState } from "./MultipassState.js";
 
 import { PathFindingNode } from "./PathFindingNode.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class PathFinder extends GeographicPathFinderBase {
         
 
@@ -119,7 +117,7 @@ this.geographicMapInterface= geographicMapInterface;
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
 ;
     
-this.costArray= Array(tiledLayer!.getColumns()) { arrayOfNulls<PathFindingNodeCost?>(tiledLayer!.getRows()) }
+this.costArray= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
                                                             ;
     
 

@@ -783,7 +783,7 @@ var evt = evt
 
         try {
             
-    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as String;
+    var gameAutomationRobotModuleNameString: string = this.inputAutomationModuleJList!.getSelectedValue() as string;
 ;
     
 

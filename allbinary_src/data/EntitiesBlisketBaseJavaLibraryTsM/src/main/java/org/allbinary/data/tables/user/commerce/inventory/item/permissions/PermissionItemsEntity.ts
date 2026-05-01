@@ -179,7 +179,7 @@ stringBuffer!.append(PermissionItemData.WHO)!.append(this.sqlTypeStrings!.MAX_CH
 
     public update(updatedValues: HashMap<any, any>){
 var updatedValues = updatedValues
-super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as String, updatedValues);
+super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as string, updatedValues);
     
 }
 

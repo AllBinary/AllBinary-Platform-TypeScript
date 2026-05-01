@@ -120,11 +120,11 @@ this.response= pageContext!.getResponse(); as HttpServletResponse;
 this.request= pageContext!.getRequest(); as HttpServletRequest;
     
 
-    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as String;
+    var storeName: string = propertiesHashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 ;
     
 
-    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as String;
+    var xslFile: string = propertiesHashMap!.get(TransformInfoData.getInstance()!.TEMPLATEFILENAME) as string;
 ;
     
 
@@ -223,7 +223,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 ;
     
 
-    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS) as String;
+    var keywords: string = this.searchRequest!.getParams()!.get()!.get(BasicItemData.KEYWORDS) as string;
 ;
     
 

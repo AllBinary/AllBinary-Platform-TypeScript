@@ -76,14 +76,14 @@ public constructor (hashMap: HashMap<any, any>){
 
             super();
         var hashMap = hashMap
-this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME); as String;
+this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME); as string;
     
-this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as String;
+this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME); as string;
     
-this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION); as String;
+this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION); as string;
     
 
-    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as String;
+    var constraintsDomString: string = hashMap!.get(AdvertisementAreaData.getInstance()!.CONSTRAINTS) as string;
 ;
     
 
@@ -92,7 +92,7 @@ this.description= hashMap!.get(AdvertisementAreaData.getInstance()!.DESCRIPTION)
     
 this.advertisementAreaConstraintsInterface= new AdvertisementAreaConstraints(document);
     
-this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME); as String;
+this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME); as string;
     
 }
 

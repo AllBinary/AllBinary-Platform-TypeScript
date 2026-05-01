@@ -242,11 +242,11 @@ index < size; index++)
 ;
     
 
-    var displayName: string = highScoreVector!.elementAt(0) as String;
+    var displayName: string = highScoreVector!.elementAt(0) as string;
 ;
     
 
-    var score: string = highScoreVector!.elementAt(1) as String;
+    var score: string = highScoreVector!.elementAt(1) as string;
 ;
     
 

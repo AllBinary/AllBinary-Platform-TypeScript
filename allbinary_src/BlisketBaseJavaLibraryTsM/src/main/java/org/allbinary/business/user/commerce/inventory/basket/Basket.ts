@@ -244,7 +244,7 @@ totalWeight!.add(weightFloat!.toString());
     public getNumberOf(product: string): number{
 var product = product
 
-    var numStr: string = this.items.get(product) as String;
+    var numStr: string = this.items.get(product) as string;
 ;
     
 

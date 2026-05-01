@@ -334,9 +334,9 @@ var updatedValues = updatedValues
     var wherekeysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as String);
+wherekeysAndValues!.put(WorkFlowData.getInstance()!.NAME, updatedValues!.get(WorkFlowData.getInstance()!.NAME) as string);
     
-wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as String);
+wherekeysAndValues!.put(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as string);
     
 super.updateWhere(wherekeysAndValues, updatedValues);
     

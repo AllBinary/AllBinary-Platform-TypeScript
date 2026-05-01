@@ -162,63 +162,63 @@ public constructor (itemHashMap: HashMap<any, any>){
 
                                     }
                                 
-this.itemId= itemHashMap!.get(BasicItemData.ID); as String;
+this.itemId= itemHashMap!.get(BasicItemData.ID); as string;
     
-this.number= itemHashMap!.get(BasicItemData.NUMBER); as String;
+this.number= itemHashMap!.get(BasicItemData.NUMBER); as string;
     
-this.inBaskets= itemHashMap!.get(BasicItemData.INBASKETS); as String;
+this.inBaskets= itemHashMap!.get(BasicItemData.INBASKETS); as string;
     
-this.weight= itemHashMap!.get(BasicItemData.WEIGHT); as String;
+this.weight= itemHashMap!.get(BasicItemData.WEIGHT); as string;
     
-this.enabled= itemHashMap!.get(EntryData.getInstance()!.ENABLE); as String;
+this.enabled= itemHashMap!.get(EntryData.getInstance()!.ENABLE); as string;
     
-this.newOrUsed= itemHashMap!.get(BasicItemData.NEWORUSED); as String;
+this.newOrUsed= itemHashMap!.get(BasicItemData.NEWORUSED); as string;
     
-this.summary= itemHashMap!.get(BasicItemData.SUMMARY); as String;
+this.summary= itemHashMap!.get(BasicItemData.SUMMARY); as string;
     
-this.distributor= itemHashMap!.get(BasicItemData.DISTRIBUTOR); as String;
+this.distributor= itemHashMap!.get(BasicItemData.DISTRIBUTOR); as string;
     
-this.idUsedByDistributor= itemHashMap!.get(BasicItemData.IDUSEDBYDISTRIBUTOR); as String;
+this.idUsedByDistributor= itemHashMap!.get(BasicItemData.IDUSEDBYDISTRIBUTOR); as string;
     
-this.producedBy= itemHashMap!.get(BasicItemData.PRODUCEDBY); as String;
+this.producedBy= itemHashMap!.get(BasicItemData.PRODUCEDBY); as string;
     
-this.productionDate= itemHashMap!.get(BasicItemData.PRODUCTIONDATE); as String;
+this.productionDate= itemHashMap!.get(BasicItemData.PRODUCTIONDATE); as string;
     
-this.startProductionDate= itemHashMap!.get(BasicItemData.STARTPRODUCTIONDATE); as String;
+this.startProductionDate= itemHashMap!.get(BasicItemData.STARTPRODUCTIONDATE); as string;
     
-this.description= itemHashMap!.get(BasicItemData.DESCRIPTION); as String;
+this.description= itemHashMap!.get(BasicItemData.DESCRIPTION); as string;
     
-this.keywords= itemHashMap!.get(BasicItemData.KEYWORDS); as String;
+this.keywords= itemHashMap!.get(BasicItemData.KEYWORDS); as string;
     
-this.category= itemHashMap!.get(BasicItemData.CATEGORY); as String;
+this.category= itemHashMap!.get(BasicItemData.CATEGORY); as string;
     
-this.type= itemHashMap!.get(BasicItemData.TYPE); as String;
+this.type= itemHashMap!.get(BasicItemData.TYPE); as string;
     
-this.smallImage= itemHashMap!.get(BasicItemData.SMALLIMAGE); as String;
+this.smallImage= itemHashMap!.get(BasicItemData.SMALLIMAGE); as string;
     
-this.mediumImage= itemHashMap!.get(BasicItemData.MEDIUMIMAGE); as String;
+this.mediumImage= itemHashMap!.get(BasicItemData.MEDIUMIMAGE); as string;
     
-this.largeImage= itemHashMap!.get(BasicItemData.LARGEIMAGE); as String;
+this.largeImage= itemHashMap!.get(BasicItemData.LARGEIMAGE); as string;
     
-this.timeEntered= itemHashMap!.get(EntryData.getInstance()!.TIMECREATED); as String;
+this.timeEntered= itemHashMap!.get(EntryData.getInstance()!.TIMECREATED); as string;
     
-this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as String;
+this.lastModified= itemHashMap!.get(EntryData.getInstance()!.LASTMODIFIED); as string;
     
-this.price= new Money(itemHashMap!.get(BasicItemData.PRICE) as String);
+this.price= new Money(itemHashMap!.get(BasicItemData.PRICE) as string);
     
-this.comment= itemHashMap!.get(BasicItemData.COMMENT); as String;
+this.comment= itemHashMap!.get(BasicItemData.COMMENT); as string;
     
-this.customs= itemHashMap!.get(BasicItemData.CUSTOMS); as String;
+this.customs= itemHashMap!.get(BasicItemData.CUSTOMS); as string;
     
-this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as String);
+this.setDownloads(itemHashMap!.get(BasicItemData.DOWNLOADS) as string);
     
-this.groups= itemHashMap!.get(BasicItemData.GROUPS); as String;
+this.groups= itemHashMap!.get(BasicItemData.GROUPS); as string;
     
-this.options= itemHashMap!.get(BasicItemData.OPTIONS); as String;
+this.options= itemHashMap!.get(BasicItemData.OPTIONS); as string;
     
-this.permissions= itemHashMap!.get(BasicItemData.PERMISSIONS); as String;
+this.permissions= itemHashMap!.get(BasicItemData.PERMISSIONS); as string;
     
-this.specials= itemHashMap!.get(BasicItemData.SPECIALS); as String;
+this.specials= itemHashMap!.get(BasicItemData.SPECIALS); as string;
     
 }
 

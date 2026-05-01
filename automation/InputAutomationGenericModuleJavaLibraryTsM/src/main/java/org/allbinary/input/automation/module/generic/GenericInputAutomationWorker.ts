@@ -227,7 +227,7 @@ this.logUtil!.putF("Processing " +set.size() +"Actions", this, this.PROCESS_DATA
 index < size; index++)
         {
 
-    var actionNameString: string = actionNameArray[index]! as String;
+    var actionNameString: string = actionNameArray[index]! as string;
 ;
     
 this.logUtil!.putF("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS);

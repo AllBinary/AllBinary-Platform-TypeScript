@@ -105,7 +105,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -158,7 +158,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
+                            null) as string;
 ;
     
 
@@ -211,7 +211,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
     
 
     var result: string = method.invoke(this.getHelper(), 
-                            null) as String;
+                            null) as string;
 ;
     
 

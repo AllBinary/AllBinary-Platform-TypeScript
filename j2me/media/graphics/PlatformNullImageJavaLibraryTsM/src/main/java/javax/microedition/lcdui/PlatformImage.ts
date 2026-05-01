@@ -44,8 +44,6 @@ import { NullCanvas } from "./NullCanvas.js";
 
 import { Image } from "./Image.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 import { Graphics } from "./Graphics.js";
 
 export class PlatformImage

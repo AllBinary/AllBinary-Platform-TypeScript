@@ -210,7 +210,7 @@ stringBuffer!.append(" from to the user table");
 ;
     
 
-    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as String;
+    var enable: string = this.hashMap!.get(EntryData.getInstance()!.ENABLE) as string;
 ;
     
 

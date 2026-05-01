@@ -97,7 +97,7 @@ var transformInfoInterface = transformInfoInterface
 ;
     
 
-    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as String;
+    var role: string = httpTransformInfoInterface!.getPropertiesHashMap()!.get(UserRoleData.NAME.toString()) as string;
 ;
     
 hashMap!.put(UserRoleData.NAME.toString(), role);
@@ -128,7 +128,7 @@ var propertiesHashMap = propertiesHashMap
 ;
     
 
-    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as String;
+    var roleString: string = propertiesHashMap!.get(UserRoleData.NAME.toString()) as string;
 ;
     
 requestHashMap!.put(UserRoleData.NAME.toString(), roleString);

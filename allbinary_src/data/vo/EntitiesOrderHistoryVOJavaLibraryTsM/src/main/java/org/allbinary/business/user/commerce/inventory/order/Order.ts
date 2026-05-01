@@ -475,11 +475,11 @@ var document = document
 i < size; i++)
         {
 
-    var name: string = keyArray[i]! as String;
+    var name: string = keyArray[i]! as string;
 ;
     
 
-    var value: string = hashMap!.get(name as Object) as String;
+    var value: string = hashMap!.get(name as Object) as string;
 ;
     
 value= StringUtil.getInstance()!.getNonNull(value);

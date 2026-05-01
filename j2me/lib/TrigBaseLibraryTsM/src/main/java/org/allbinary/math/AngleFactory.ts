@@ -58,8 +58,6 @@ import { NamedAngle } from "./NamedAngle.js";
 
 import { FrameUtil } from "./FrameUtil.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class AngleFactory
             extends Object
          {

@@ -121,7 +121,7 @@ var servletContext = servletContext
 var hashMap = hashMap
 var pageContext = pageContext
 
-    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as String;
+    var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as string;
 ;
     
 

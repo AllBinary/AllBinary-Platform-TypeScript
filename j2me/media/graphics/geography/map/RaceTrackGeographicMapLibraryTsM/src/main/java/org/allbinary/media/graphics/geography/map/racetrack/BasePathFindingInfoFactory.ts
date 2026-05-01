@@ -72,8 +72,6 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
         
 import { RaceTrackRoadsGeographicMapCellHistoryFactory } from "./RaceTrackRoadsGeographicMapCellHistoryFactory.js";
 
-import { RuntimeException } from "./RuntimeException.js";
-
 export class BasePathFindingInfoFactory
             extends Object
          {
