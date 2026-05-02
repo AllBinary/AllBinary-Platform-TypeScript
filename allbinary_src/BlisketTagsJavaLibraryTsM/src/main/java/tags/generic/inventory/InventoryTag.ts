@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Method } from "../../../java/lang/reflect/Method.js";
 
     
@@ -303,7 +305,7 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand());
+                            throw new Exception("No Such View Command: " +this.getCommand());
                     
 
                         }
@@ -314,7 +316,7 @@ this.setObjectFile("views.generic.inventory.AutoValidationInventoryView");
 
 
 
-                            throw new Error("Command Null");
+                            throw new Exception("Command Null");
                     
 
                 //: 

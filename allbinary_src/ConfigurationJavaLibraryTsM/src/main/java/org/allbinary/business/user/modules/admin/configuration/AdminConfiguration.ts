@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -120,7 +122,7 @@ this.getFormData(storeHashMap);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
@@ -131,7 +133,7 @@ this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(){

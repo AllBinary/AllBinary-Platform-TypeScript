@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { J2MEUtil } from "../../../../../org/allbinary/J2MEUtil.js";
@@ -250,7 +252,7 @@ this.associatedAdvancedRTSGameLayer!.waypoint2LogHelperP!.initRange(this.associa
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -286,7 +288,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                             
 
 
-                            throw new Error("Should not happen");
+                            throw new Exception("Should not happen");
                     
 
                         }
@@ -369,7 +371,7 @@ this.processTargetList();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onEnemyMovement(layerInterface: AdvancedRTSGameLayer){
 var layerInterface = layerInterface
@@ -395,7 +397,7 @@ var layerInterface = layerInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processPossibleTarget(layerInterface: AdvancedRTSGameLayer, anotherTargetDistance: number){
     //var layerInterface = layerInterface
@@ -435,7 +437,7 @@ this.setTarget(layerInterface, anotherTargetDistance);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     teleportIfNoProgress(){
 
@@ -470,7 +472,7 @@ this.associatedAdvancedRTSGameLayer!.teleportTo(geographicMapCellPosition);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setTarget(layerInterface: AdvancedRTSGameLayer, anotherTargetDistance: number){
     //var layerInterface = layerInterface
@@ -537,7 +539,7 @@ this.setWaypointPathsList(list);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setTargetPath(){
 
@@ -582,7 +584,7 @@ this.setRandomGeographicMapCellHistory(this.waypointPathsListP);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
@@ -595,7 +597,7 @@ super.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processWaypoint(){
 
@@ -710,7 +712,7 @@ this.setWaypointPath(targetLayer);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     wander(){
 
@@ -858,7 +860,7 @@ this.associatedAdvancedRTSGameLayer!.trackTo(this.unitWaypointStrings!.NEXT_PATH
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processTargetList(){
 this.targetWithoutCachedPathLayerInterface= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
@@ -910,7 +912,7 @@ this.getPossibleTargetList()!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processTargeting(){
 
@@ -1030,7 +1032,7 @@ this.afterNextUnvisitedPathGeographicMapCellPosition= this.currentGeographicMapC
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setWaypointPath(waypointLayer: AdvancedRTSGameLayer){
     //var waypointLayer = waypointLayer
@@ -1064,7 +1066,7 @@ this.removeWaypoint(waypointLayer, this.unitWaypointStrings!.ALREADY_THERE);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     runWaypointPathTask(waypointLayer: AdvancedRTSGameLayer){
     //var waypointLayer = waypointLayer
@@ -1077,7 +1079,7 @@ setWaypointPathsList(runningWaypointPathList);
                                     
 
 
-                            throw new Error("Should never be running here");
+                            throw new Exception("Should never be running here");
                     
 
                                     }
@@ -1093,7 +1095,7 @@ this.pathFindingThreadPool!.runTask(this.waypointPathRunnable);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     removeWaypoint(waypointLayer: RTSLayer, reason: string){
     //var waypointLayer = waypointLayer
@@ -1118,7 +1120,7 @@ this.clearTarget();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public clearTarget(){
 this.associatedAdvancedRTSGameLayer!.waypoint2LogHelperP!.clearTarget(this.associatedAdvancedRTSGameLayer);
@@ -1251,7 +1253,7 @@ stringBuffer!.appendint(getCurrentTargetDistance());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addWaypointFromUser(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
@@ -1262,7 +1264,7 @@ stringBuffer!.appendint(getCurrentTargetDistance());
                                     
 
 
-                            throw new Error("Trying to add a dead: " +advancedRTSGameLayer);
+                            throw new Exception("Trying to add a dead: " +advancedRTSGameLayer);
                     
 
                                     }
@@ -1377,7 +1379,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
             
     private readonly buildingSteeringVisitor: BuildingSteeringVisitor = new BuildingSteeringVisitor();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addBuildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition){
     //var allbinaryLayer = allbinaryLayer
@@ -1405,7 +1407,7 @@ this.buildingSteeringVisitor!.getPositionList()!.add(cellPosition);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
     //var allbinaryLayer = allbinaryLayer

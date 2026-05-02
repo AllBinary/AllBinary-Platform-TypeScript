@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ArtificialIntelligence } from "../../../../org/allbinary/ai/ArtificialIntelligence.js";
 
     
@@ -55,7 +57,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

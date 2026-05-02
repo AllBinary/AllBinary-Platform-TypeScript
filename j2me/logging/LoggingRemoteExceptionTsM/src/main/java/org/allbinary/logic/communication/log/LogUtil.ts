@@ -22,10 +22,13 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
-
-//import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { Hashtable } from "../../../../../java/util/Hashtable.js";

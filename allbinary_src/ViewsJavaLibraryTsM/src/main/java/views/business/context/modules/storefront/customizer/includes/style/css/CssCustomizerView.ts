@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -72,7 +74,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addDomNodeInterfaces(){
 this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
@@ -80,7 +82,7 @@ this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

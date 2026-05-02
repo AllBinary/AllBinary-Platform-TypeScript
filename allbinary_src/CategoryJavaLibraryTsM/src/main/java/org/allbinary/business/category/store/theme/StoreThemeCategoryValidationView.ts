@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { ValidationInterface } from "../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
 
     
@@ -64,7 +66,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 
@@ -76,7 +78,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -88,7 +90,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -101,7 +103,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 

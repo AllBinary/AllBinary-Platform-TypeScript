@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -56,14 +58,14 @@ export class LayerManagerEventListener
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent

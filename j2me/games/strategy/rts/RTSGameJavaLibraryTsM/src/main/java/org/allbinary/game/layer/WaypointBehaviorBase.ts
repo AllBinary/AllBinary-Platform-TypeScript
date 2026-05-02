@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
 
     
@@ -107,7 +111,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -272,7 +276,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setTarget(layerInterface: PathFindingLayerInterface){
     //var layerInterface = layerInterface
@@ -284,7 +288,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setTargetWithDistance(layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
     //var layerInterface = layerInterface
@@ -297,7 +301,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public clearTarget(){
 
@@ -308,7 +312,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updatePathOnTargetMove(reason: string){
     //var reason = reason

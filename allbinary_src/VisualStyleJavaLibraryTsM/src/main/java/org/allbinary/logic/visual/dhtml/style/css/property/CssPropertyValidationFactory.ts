@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { ValidationInterface } from "../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
 
     
@@ -55,7 +57,7 @@ export class CssPropertyValidationFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(node: Node): ValidationInterface{
 var node = node

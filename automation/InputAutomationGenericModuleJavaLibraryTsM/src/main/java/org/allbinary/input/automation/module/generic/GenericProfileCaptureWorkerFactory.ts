@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -65,7 +67,7 @@ export class GenericProfileCaptureWorkerFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(genericProfile: GenericProfile): CaptureWorkerInterface{
 var genericProfile = genericProfile
@@ -120,7 +122,7 @@ index < size; index++)
 
 
 
-                            throw new Error("No CaptureWorkerInterface specified in GenericProfile");
+                            throw new Exception("No CaptureWorkerInterface specified in GenericProfile");
                     
 }
 

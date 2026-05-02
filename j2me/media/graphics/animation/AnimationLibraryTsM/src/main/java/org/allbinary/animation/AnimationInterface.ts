@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -50,7 +52,7 @@ import { LocationPaintableInterface } from "../../../org/allbinary/graphics/pain
 export interface AnimationInterface extends LocationPaintableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     nextFrame()
 

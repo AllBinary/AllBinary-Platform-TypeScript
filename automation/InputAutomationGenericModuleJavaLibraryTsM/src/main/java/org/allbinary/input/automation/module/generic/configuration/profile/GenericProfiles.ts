@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { DataOutputStream } from "../../../../../../../../java/io/DataOutputStream.js";
 
     
@@ -170,7 +172,7 @@ this.logUtil!.putF("Number Of Profiles Specified: " +nodeList!.getLength(), this
                             
 
 
-                            throw new Error(GenericProfileActionData.NAME +" Name Node Node Children");
+                            throw new Exception(GenericProfileActionData.NAME +" Name Node Node Children");
                     
 
                         }
@@ -191,7 +193,7 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initProfiles(node: Node){
 var node = node
@@ -241,7 +243,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(name: string): GenericProfile{
 var name = name
@@ -273,7 +275,7 @@ this.logUtil!.putF("No Generic Profile Named: " +name +" availability was: " +th
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(name: string){
 var name = name
@@ -288,7 +290,7 @@ this.save();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(name: string){
 var name = name
@@ -303,7 +305,7 @@ this.save();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -349,7 +351,7 @@ node.appendChild(genericProfile!.toXmlNode(document));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -371,7 +373,7 @@ document.appendChild(node);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(){
 

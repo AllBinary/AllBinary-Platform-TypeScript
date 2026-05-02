@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Constructor } from "../../../../../java/lang/reflect/Constructor.js";
 
     

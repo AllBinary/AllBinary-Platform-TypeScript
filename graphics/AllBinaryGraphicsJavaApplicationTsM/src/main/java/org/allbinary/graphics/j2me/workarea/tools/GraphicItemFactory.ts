@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -115,7 +117,7 @@ var itemName = itemName
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
 var graphicItemNodeList = graphicItemNodeList

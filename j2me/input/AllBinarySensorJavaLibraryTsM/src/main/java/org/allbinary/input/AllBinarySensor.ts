@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
 
     
@@ -90,7 +92,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(){
 }

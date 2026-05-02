@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { InputStream } from "../../../../java/io/InputStream.js";
@@ -79,7 +81,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getResourceAsStream(resource: string): InputStream{
 var resource = resource
@@ -226,7 +228,7 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
 
 
 
-                            throw new Error(stringMaker!.append("Unable to obtain: ")!.append(resource)!.toString());
+                            throw new Exception(stringMaker!.append("Unable to obtain: ")!.append(resource)!.toString());
                     
 
                                     }
@@ -270,7 +272,7 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
 var resource = resource

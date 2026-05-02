@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
 
     
@@ -49,7 +51,7 @@ import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
 export interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNodeCostInfoFactoryBaseInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../java/util/HashMap.js";
@@ -84,7 +86,7 @@ export class VectorCenterGenerator
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static translate(list: BasicArrayList, x: number, y: number): BasicArrayList{
 var list = list
@@ -132,7 +134,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public calculate(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -217,7 +219,7 @@ this.dy= middle -currentMiddleY;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public transform(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -264,7 +266,7 @@ item.setPointsInterface(newPoints);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(pointVector: BasicArrayList){
 var pointVector = pointVector

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { InputRobotInterface } from "../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
 
     
@@ -51,7 +53,7 @@ export class InputAutomationRobotUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getChangeEvent(inputRobotInterface: InputRobotInterface): InputAutomationRobotChangeEvent{
 var inputRobotInterface = inputRobotInterface

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
 
     

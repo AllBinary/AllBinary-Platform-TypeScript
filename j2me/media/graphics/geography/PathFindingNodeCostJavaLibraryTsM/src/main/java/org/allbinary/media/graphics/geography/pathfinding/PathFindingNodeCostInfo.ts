@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -91,7 +93,7 @@ this.totalCostP= totalCost;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setCalculatedTotalCost(){
 this.totalCostP= this.costFromStartP +this.costToEndP;
@@ -103,7 +105,7 @@ this.totalCostP= this.costFromStartP +this.costToEndP;
                                     
 
 
-                            throw new Error("Max Cost Exceeded");
+                            throw new Exception("Max Cost Exceeded");
                     
 
                                     }

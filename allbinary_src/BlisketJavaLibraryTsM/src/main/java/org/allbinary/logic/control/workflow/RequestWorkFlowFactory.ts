@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -81,7 +83,7 @@ export class RequestWorkFlowFactory
          {
         
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     public static getInstance(request: ServletRequest, response: ServletResponse, servletConfig: ServletConfig, servletContext: ServletContext): WorkFlowInterface{
 var request = request
@@ -117,7 +119,7 @@ var servletContext = servletContext
 }
 
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 var hashMap = hashMap

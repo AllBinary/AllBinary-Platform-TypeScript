@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -57,7 +59,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -67,7 +69,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -77,7 +79,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -87,7 +89,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x

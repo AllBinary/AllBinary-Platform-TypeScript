@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -83,7 +85,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(inputStream: InputStream, outputStream: OutputStream, buffer: number[]): OutputStream{
     //var inputStream = inputStream
@@ -125,7 +127,7 @@ outputStream!.write(buffer, 0, len);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getByteArray(inputStream: InputStream, outputStream2: ByteArrayOutputStream, byteArray: number[]): number[]{
     //var inputStream = inputStream

@@ -1,4 +1,4 @@
-import { Enumeration } from "../../../java/util/Enumeration";
+import { Enumeration } from "../../../java/util/Enumeration.js";
 
 export class EnumerationUtil {
 

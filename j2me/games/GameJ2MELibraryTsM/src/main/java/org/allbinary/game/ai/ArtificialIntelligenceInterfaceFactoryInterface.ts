@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -56,7 +58,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 export interface ArtificialIntelligenceInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface
 

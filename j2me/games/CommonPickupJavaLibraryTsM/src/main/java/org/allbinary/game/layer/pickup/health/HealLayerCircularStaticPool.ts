@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HealthInterface } from "../../../../../../org/allbinary/game/health/HealthInterface.js";
 
     
@@ -69,7 +71,7 @@ super.init(allbinaryLayerFactoryInterface, total);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface

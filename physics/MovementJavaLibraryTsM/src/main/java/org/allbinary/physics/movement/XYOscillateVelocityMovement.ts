@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -77,7 +79,7 @@ this.oscillateMax= oscillateMax;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer

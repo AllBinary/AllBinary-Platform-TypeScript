@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -49,7 +51,7 @@ export class CustomMapGeneratorBase
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public copyMapIntoCustomMap(){
 }
@@ -65,7 +67,7 @@ export class CustomMapGeneratorBase
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCustomType(column: number, row: number, currentType: number): number{
     //var column = column

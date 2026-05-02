@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../java/lang/System.js";
         
             import { Integer } from "../../../../java/lang/Integer.js";
@@ -1125,7 +1127,7 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -1191,7 +1193,7 @@ workAreaJPanel!.deselect();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(newCanvasInterface: WorkAreaJPanelInterface){
 var newCanvasInterface = newCanvasInterface
@@ -1206,7 +1208,7 @@ var newCanvasInterface = newCanvasInterface
                                     
 
 
-                            throw new Error();
+                            throw new Exception();
                     
 
                                     }

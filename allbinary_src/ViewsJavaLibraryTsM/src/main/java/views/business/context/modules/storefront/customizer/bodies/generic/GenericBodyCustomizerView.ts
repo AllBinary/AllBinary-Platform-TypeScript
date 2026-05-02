@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { PageData } from "../../../../../../../../org/allbinary/business/page/PageData.js";
 
     
@@ -101,7 +103,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addDomNodeInterfaces(){
 this.addDomNodeInterface(this.body as DomNodeInterface);
@@ -111,7 +113,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -137,7 +139,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

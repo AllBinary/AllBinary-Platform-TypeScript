@@ -22,6 +22,8 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
 import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
     
@@ -122,7 +124,7 @@ className= new StringMaker().
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
 ;
     
-PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Error);
+PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Throwable);
     
 }
 
@@ -149,7 +151,7 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
 ;
     
-PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Error);
+PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Throwable);
     
 }
 

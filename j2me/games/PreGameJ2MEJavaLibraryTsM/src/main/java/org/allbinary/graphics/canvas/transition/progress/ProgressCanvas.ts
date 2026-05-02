@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { CommandListener } from "../../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -149,7 +151,7 @@ paint2(graphics);
                                 
     var private readonly pathFindingThreadPool: ThreadPool = PathFindingThreadPool.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 pathFindingThreadPool!.runAPriorityTask();
@@ -183,7 +185,7 @@ this.allbinaryMidlet= gameMidlet;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(graphics: Graphics){
 var graphics = graphics

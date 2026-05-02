@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -91,7 +93,7 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GameAdState } from "../../../../org/allbinary/game/GameAdState.js";
 
     
@@ -69,7 +71,7 @@ export class GameAdStateFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceForApp(softwareInformation: SoftwareInformation): GameAdState{
     //var softwareInformation = softwareInformation

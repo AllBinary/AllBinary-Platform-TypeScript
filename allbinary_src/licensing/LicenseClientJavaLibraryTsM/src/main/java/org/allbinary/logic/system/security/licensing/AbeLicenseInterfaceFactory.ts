@@ -22,8 +22,9 @@
 
 
         
-
-//import { IOException } from "../../../../../../java/io/IOException.js";
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+import { IOException } from "../../../../../../java/io/IOException.js";
 
     
 import { Calendar } from "../../../../../../java/util/Calendar.js";
@@ -60,6 +61,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
 import { AbeNoLicense } from "./AbeNoLicense.js";
 import { AbeClientInformationData } from "./AbeClientInformationData.js";
+import { LicensingException } from "./LicensingException.js";
 
 export class AbeLicenseInterfaceFactory
             extends Object

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { StringBufferInputStream } from "../../../../../java/io/StringBufferInputStream.js";
 
     
@@ -83,7 +85,7 @@ this.dataFilePath= dataFilePath;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public transform(): string{
 

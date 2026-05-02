@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -33,7 +35,7 @@ import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 export interface OpenGLSurfaceChangedInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     set(gl: GL)
 

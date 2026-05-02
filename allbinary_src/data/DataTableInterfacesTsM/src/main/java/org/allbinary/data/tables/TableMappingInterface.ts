@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -50,15 +52,15 @@ import { Vector } from "../../../../java/util/Vector.js";
 export interface TableMappingInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getKey(): any
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     toVector(): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     toHashMap(): HashMap<any, any>
 

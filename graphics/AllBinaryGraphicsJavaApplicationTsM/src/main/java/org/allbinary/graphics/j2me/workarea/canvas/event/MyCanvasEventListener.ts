@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -47,7 +49,7 @@ export interface MyCanvasEventListener {
 
     delete(evt: MyCanvasEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     duplicate(evt: MyCanvasEvent)
 
@@ -57,11 +59,11 @@ export interface MyCanvasEventListener {
 
     explode(evt: MyCanvasEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     autoExplode(evt: MyCanvasEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     center(evt: MyCanvasEvent)
 

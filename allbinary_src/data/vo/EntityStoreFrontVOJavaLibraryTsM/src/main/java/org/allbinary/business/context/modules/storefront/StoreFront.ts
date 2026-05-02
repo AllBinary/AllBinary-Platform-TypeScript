@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../java/util/Calendar.js";
@@ -309,7 +311,7 @@ var columnName = columnName
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createPath(key: string, hashMap: HashMap<any, any>): AbPath{
 var key = key
@@ -323,7 +325,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createPath(append: string, key: string, hashMap: HashMap<any, any>): AbPath{
 var append = append
@@ -401,7 +403,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
@@ -1371,7 +1373,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getSubStores(): BasicArrayList{
 
@@ -1545,7 +1547,7 @@ this.homeHostName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setHomeHostNamePath(value: string){
 var value = value
@@ -1561,7 +1563,7 @@ this.hostName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setHostNamePath(value: string){
 var value = value
@@ -1577,7 +1579,7 @@ this.testHomeHostName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setTestHomeHostNamePath(value: string){
 var value = value
@@ -1593,7 +1595,7 @@ this.testHostName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setTestHostNamePath(value: string){
 var value = value
@@ -1602,7 +1604,7 @@ this.testHostNamePath= new AbPath(value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setImagePath(value: string){
 var value = value
@@ -1611,7 +1613,7 @@ this.imagePath= new AbPath(value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setStaticPath(value: string){
 var value = value
@@ -1620,7 +1622,7 @@ this.staticPath= new AbPath(value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setCategoryPath(value: string){
 var value = value
@@ -1720,7 +1722,7 @@ this.lastModified= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setFtpPath(value: string){
     //var value = value
@@ -1729,7 +1731,7 @@ this.ftpPath= new AbPath(value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setTestFtpPath(value: string){
     //var value = value
@@ -1738,7 +1740,7 @@ this.testFtpPath= new AbPath(value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createDirectories(): boolean{
 
@@ -1793,7 +1795,7 @@ this.testFtpPath= new AbPath(value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public install(current: number, total: number){
     //var current = current
@@ -1807,7 +1809,7 @@ this.testFtpPath= new AbPath(value);
                                     
 
 
-                            throw new Error("Unable to create store directories");
+                            throw new Exception("Unable to create store directories");
                     
 
                                     }
@@ -1871,7 +1873,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                                     
 
 
-                            throw new Error("Unable to create store view directory: " +toDirectoryAbPath!.toString());
+                            throw new Exception("Unable to create store view directory: " +toDirectoryAbPath!.toString());
                     
 
                                     }
@@ -1971,7 +1973,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     installViews(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -1983,7 +1985,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbP
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     installResources(fromDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -2024,7 +2026,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPa
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     installMedia(fromDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -2057,7 +2059,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, sto
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 
@@ -2140,7 +2142,7 @@ dataVector!.add(time);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 

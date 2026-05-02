@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -176,7 +178,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getStoreViewsPath(): string{
 
@@ -286,7 +288,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

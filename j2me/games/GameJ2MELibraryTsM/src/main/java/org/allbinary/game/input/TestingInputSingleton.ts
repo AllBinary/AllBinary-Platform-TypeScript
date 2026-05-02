@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -123,7 +125,7 @@ this.paintable= testInputInterface;
 this.inputProcessorArray[Canvas.UP]= new GameInputProcessor()
                                 {
                                 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -138,7 +140,7 @@ testInputInterface!.up();
 this.inputProcessorArray[Canvas.DOWN]= new GameInputProcessor()
                                 {
                                 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -153,7 +155,7 @@ testInputInterface!.down();
 this.inputProcessorArray[Canvas.LEFT]= new GameInputProcessor()
                                 {
                                 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -168,7 +170,7 @@ testInputInterface!.left();
 this.inputProcessorArray[Canvas.RIGHT]= new GameInputProcessor()
                                 {
                                 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -183,7 +185,7 @@ testInputInterface!.right();
 this.inputProcessorArray[Canvas.KEY_NUM7]= new GameInputProcessor()
                                 {
                                 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -198,7 +200,7 @@ testInputInterface!.strafeLeft();
 this.inputProcessorArray[Canvas.KEY_NUM9]= new GameInputProcessor()
                                 {
                                 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -215,7 +217,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInputList(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
@@ -252,7 +254,7 @@ inputProcessorArray[key]!.processEvent(allbinaryLayerManager, GameKeyEvent.NONE)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){

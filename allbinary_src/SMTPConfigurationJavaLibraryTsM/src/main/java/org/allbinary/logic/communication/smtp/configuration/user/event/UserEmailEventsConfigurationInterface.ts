@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -64,7 +66,7 @@ export interface UserEmailEventsConfigurationInterface {
 
     addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -64,7 +66,7 @@ export interface MotionGestureEventListener extends BaseMotionGestureEventListen
 
     onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     released(ev: MotionGestureEvent)
 

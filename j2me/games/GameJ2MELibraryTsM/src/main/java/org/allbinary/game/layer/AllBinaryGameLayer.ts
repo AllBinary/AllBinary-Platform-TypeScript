@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -146,14 +148,14 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL){
     //var gl = gl
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -172,26 +174,26 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -203,7 +205,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onViewPositionChangeEvent(){
 this.onChangeEvent(this.viewPositionEvent);
@@ -211,7 +213,7 @@ this.onChangeEvent(this.viewPositionEvent);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
     //var layerManagerEvent = layerManagerEvent

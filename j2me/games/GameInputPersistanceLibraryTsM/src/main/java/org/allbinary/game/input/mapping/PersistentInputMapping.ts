@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
@@ -144,7 +146,7 @@ this.inputPersistance= new InputPersistance(name);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDefault(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -157,7 +159,7 @@ this.save(abeClientInformation);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -170,7 +172,7 @@ this.save(abeClientInformation);
 
     private inputMappingEvent: InputMappingEvent = new InputMappingEvent(this);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -192,7 +194,7 @@ this.inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -315,26 +317,26 @@ this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isDelete(input: Input): boolean{
 var input = input
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isSystemInput(input: Input): boolean{
 var input = input
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

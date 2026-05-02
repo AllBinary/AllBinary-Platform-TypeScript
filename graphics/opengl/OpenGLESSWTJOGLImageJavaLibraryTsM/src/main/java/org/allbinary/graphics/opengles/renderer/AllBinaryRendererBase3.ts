@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GL10 } from "../../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -63,7 +65,7 @@ export class AllBinaryRendererBase3
 
     public readonly list: BasicArrayList = new BasicArrayListD();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(gl: GL10){
     //var gl = gl

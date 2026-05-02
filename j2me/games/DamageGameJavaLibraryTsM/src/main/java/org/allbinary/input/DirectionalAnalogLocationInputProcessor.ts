@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { AnalogLocationInputProcessor } from "../../../org/allbinary/android/input/motion/AnalogLocationInputProcessor.js";
 
     

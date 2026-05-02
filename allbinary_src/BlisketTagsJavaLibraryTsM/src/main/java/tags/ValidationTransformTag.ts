@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { Method } from "../java/lang/reflect/Method.js";
 
     
@@ -101,7 +103,7 @@ this.logic= logic;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isValid(): boolean{
 
@@ -149,7 +151,7 @@ this.logic= logic;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     validationInfo(): string{
 

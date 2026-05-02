@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { File } from "../../../../../java/io/File.js";
@@ -129,7 +131,7 @@ this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(){
 

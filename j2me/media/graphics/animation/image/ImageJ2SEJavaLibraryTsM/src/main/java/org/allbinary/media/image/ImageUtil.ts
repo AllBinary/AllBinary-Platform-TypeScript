@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics2D } from "../../../../java/awt/Graphics2D.js";
 
     
@@ -147,7 +149,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImageForResize(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -197,7 +199,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage2(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -247,7 +249,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage3(bufferedImageArray: BufferedImage[], width: number, height: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -284,7 +286,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[ind
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImageForSave(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -299,7 +301,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -315,7 +317,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImageAllowTranslate(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -406,7 +408,7 @@ graphics.drawRenderedImage(bufferedImage, affineTransform);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImageWithLargerCanvas(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
     //var bufferedImage = bufferedImage

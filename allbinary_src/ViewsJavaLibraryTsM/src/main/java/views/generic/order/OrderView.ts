@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -103,7 +105,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFormData(){
 
@@ -180,7 +182,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

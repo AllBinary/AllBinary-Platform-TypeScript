@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 
@@ -502,7 +504,7 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

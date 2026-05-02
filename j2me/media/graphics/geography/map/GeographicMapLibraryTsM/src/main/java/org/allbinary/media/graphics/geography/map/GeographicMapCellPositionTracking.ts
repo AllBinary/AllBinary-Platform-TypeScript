@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameCanvasInterface } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvasInterface.js";
 
     
@@ -70,7 +72,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCurrentOverCellType(geographicMap: BasicGeographicMap): GeographicMapCellType{
     //var geographicMap = geographicMap
@@ -96,7 +98,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateStart(gameCanvasInterface: AllBinaryGameCanvasInterface, layer: AllBinaryLayer): boolean{
     //var gameCanvasInterface = gameCanvasInterface

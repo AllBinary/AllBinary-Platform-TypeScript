@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -56,7 +58,7 @@ import { BasicDataTableInterface } from "../../../../../../org/allbinary/data/ta
 export interface QuoteRequestEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     get(userName: string, id: number): QuoteRequest
 

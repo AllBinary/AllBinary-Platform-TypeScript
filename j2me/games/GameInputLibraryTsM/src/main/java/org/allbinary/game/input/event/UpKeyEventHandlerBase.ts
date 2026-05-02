@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { PlayerGameInput } from "../../../../../org/allbinary/game/input/PlayerGameInput.js";
@@ -123,7 +125,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireEvent(eventObject: number){
     //var eventObject = eventObject
@@ -185,7 +187,7 @@ index++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(eventObject: number, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

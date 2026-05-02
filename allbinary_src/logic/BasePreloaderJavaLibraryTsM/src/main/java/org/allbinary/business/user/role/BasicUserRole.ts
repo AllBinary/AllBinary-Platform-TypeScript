@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Serializable } from "../../../../../java/io/Serializable.js";
 
     
@@ -54,7 +56,7 @@ export class BasicUserRole
 
     private static readonly roleVector: Vector<any> = new Vector<any>();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): BasicUserRole{
@@ -97,7 +99,7 @@ index < size; index++)
 
 
 
-                            throw new Error("Unable to get role - Unknown Role");
+                            throw new Exception("Unable to get role - Unknown Role");
                     
 }
 

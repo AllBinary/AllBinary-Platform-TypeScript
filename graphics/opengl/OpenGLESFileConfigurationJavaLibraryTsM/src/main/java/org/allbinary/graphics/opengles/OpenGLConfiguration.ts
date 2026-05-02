@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Closeable } from "../../../../java/io/Closeable.js";
 
     
@@ -160,7 +162,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     read(){
 
@@ -205,7 +207,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                             
 
 
-                            throw new Error("Invalid OpenGL Setting");
+                            throw new Exception("Invalid OpenGL Setting");
                     
 
                         }
@@ -236,7 +238,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading version selector: " +version);
+                            throw new Exception("OpenGLConfiguration: Error reading version selector: " +version);
                     
 
                         }
@@ -267,7 +269,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading image color");
+                            throw new Exception("OpenGLConfiguration: Error reading image color");
                     
 
                         }
@@ -307,7 +309,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading image color: " +imageColor);
+                            throw new Exception("OpenGLConfiguration: Error reading image color: " +imageColor);
                     
 
                         }
@@ -347,7 +349,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
                             
 
 
-                            throw new Error("OpenGLConfiguration: Error reading color: " +color);
+                            throw new Exception("OpenGLConfiguration: Error reading color: " +color);
                     
 
                         }
@@ -357,7 +359,7 @@ PreLogUtil.put("Read Configuration: " +this.toString(), this, "read");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(){
 
@@ -427,7 +429,7 @@ dataOutputStream!.flush();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 
@@ -499,7 +501,7 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(gameFeature: Feature, colorLocked: boolean){
     //var gameFeature = gameFeature

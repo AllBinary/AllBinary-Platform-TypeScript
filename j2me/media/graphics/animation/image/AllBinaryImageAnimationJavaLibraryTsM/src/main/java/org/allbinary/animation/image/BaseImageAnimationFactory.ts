@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -77,7 +79,7 @@ export class BaseImageAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactory(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
     //var image = image
@@ -134,7 +136,7 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

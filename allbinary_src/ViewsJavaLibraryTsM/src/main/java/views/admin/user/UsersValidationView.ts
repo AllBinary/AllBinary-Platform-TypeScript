@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { UserRole } from "../../../org/allbinary/business/user/role/UserRole.js";
 
     

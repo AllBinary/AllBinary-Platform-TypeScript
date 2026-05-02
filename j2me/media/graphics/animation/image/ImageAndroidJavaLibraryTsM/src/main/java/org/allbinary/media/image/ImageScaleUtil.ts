@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Bitmap } from "../../../../android/graphics/Bitmap.js";
 
     
@@ -113,7 +115,7 @@ private constructor (){
 
     private readonly scaleYBasicArrayList: BasicArrayList = new BasicArrayListD();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -132,7 +134,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
@@ -160,7 +162,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -262,7 +264,7 @@ this.scaleYBasicArrayList!.add(scaleY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getScaledImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, width: number, height: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -316,7 +318,7 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
                             
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                         }

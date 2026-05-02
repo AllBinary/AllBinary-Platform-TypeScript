@@ -28,8 +28,7 @@ import { FileNotFoundException } from "../../../../java/io/FileNotFoundException
 import { FileOutputStream } from "../../../../java/io/FileOutputStream.js";
 
     
-
-//import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { OutputStream } from "../../../../java/io/OutputStream.js";

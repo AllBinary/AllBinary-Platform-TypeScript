@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 
@@ -46,11 +48,11 @@
 export interface WorkFlowInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getName(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(): number
 

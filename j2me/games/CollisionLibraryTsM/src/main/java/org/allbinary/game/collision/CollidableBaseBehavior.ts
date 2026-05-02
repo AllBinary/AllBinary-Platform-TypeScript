@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -122,14 +124,14 @@ this.collidable= collidable;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collide(allbinaryCollidableLayer: CollidableCompositeLayer){
 var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(thisconstructor.name.toString()!)!.toString());
                     
 }
@@ -159,14 +161,14 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

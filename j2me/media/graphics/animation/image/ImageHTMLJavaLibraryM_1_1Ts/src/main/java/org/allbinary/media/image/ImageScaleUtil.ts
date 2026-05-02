@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -82,7 +84,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -101,7 +103,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
     //var imageCache = imageCache
@@ -129,7 +131,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, cached: boolean): Image{
     //var imageCache = imageCache
@@ -146,7 +148,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageInternal(originalImage: Image, scaleX: number, scaleY: number): Image{
     //var originalImage = originalImage
@@ -216,7 +218,7 @@ canvasSurface!.drawImage(originalPlayNImage, 0, 0, image.getWidth(), image.getHe
                             
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                         }

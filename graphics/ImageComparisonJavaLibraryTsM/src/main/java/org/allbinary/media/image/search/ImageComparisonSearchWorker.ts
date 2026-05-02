@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     

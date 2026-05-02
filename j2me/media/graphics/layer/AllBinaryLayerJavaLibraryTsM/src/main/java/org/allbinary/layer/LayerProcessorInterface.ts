@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -50,11 +52,11 @@ export interface LayerProcessorInterface extends BasicLayerProcessorInterface {
 
     getLayerManager(): LayerManager
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isProcessorLayer(layerInterface: AllBinaryLayer): boolean
 

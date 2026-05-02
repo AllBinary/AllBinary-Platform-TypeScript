@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 
 
 
@@ -44,15 +46,15 @@
 export interface ModifyTableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     insert(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     delete(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(): string
 

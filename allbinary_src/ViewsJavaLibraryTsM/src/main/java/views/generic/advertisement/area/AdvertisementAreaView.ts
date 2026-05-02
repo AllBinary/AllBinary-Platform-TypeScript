@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AdvertisementAreaData } from "../../../../org/allbinary/business/advertisement/area/AdvertisementAreaData.js";
 
     
@@ -89,7 +91,7 @@ this.advertisementAreaName= this.getPropertiesHashMap()!.get(AdvertisementAreaDa
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -138,7 +140,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -260,7 +262,7 @@ this.animation.setScale(scaleX, scaleY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL){
     //var gl = gl
@@ -423,7 +425,7 @@ this.animation.changeBasicColor(basicColor);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public nextFrame(){
 this.animation.nextFrame();
@@ -454,7 +456,7 @@ this.animation.setFrame(index);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAnimationSize(): number{
 

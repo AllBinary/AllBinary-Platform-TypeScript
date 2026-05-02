@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
     
@@ -53,7 +55,7 @@ export class StaticTileLayerViewPositionFactory
          implements ViewPositionFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(): ViewPosition{
 

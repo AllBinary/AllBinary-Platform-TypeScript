@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -76,7 +80,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapInterface: any = {}, totalPaths: number){
     //var geographicMapInterface = geographicMapInterface
@@ -84,7 +88,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceNoCache(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -103,7 +107,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -118,7 +122,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     create(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -149,7 +153,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createN(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number, multipassState: MultipassState): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -181,7 +185,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isValid(pathList: BasicArrayList, geographicMapCellHistory: GeographicMapCellHistory): boolean{
     //var pathList = pathList

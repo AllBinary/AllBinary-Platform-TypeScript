@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -75,7 +77,7 @@ this.setTable(this.tableName);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
 var name = name
@@ -94,7 +96,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
                                     null
                                 )
                         
-                                    throw new Error("No Such Store: " +name);
+                                    throw new Exception("No Such Store: " +name);
                                 
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.FACTORYERROR))

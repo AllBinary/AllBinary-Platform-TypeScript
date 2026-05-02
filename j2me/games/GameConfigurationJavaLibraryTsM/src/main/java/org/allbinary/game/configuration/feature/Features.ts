@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameFeatureEvent } from "../../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js";
 
     
@@ -116,7 +118,7 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -134,7 +136,7 @@ this.add(gameFeature);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -155,7 +157,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeatur
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public removeDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -169,7 +171,7 @@ this.defaultList!.remove(gameFeature);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -286,7 +288,7 @@ var gameFeature = gameFeature
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toggle(gameFeature: Feature){
 var gameFeature = gameFeature

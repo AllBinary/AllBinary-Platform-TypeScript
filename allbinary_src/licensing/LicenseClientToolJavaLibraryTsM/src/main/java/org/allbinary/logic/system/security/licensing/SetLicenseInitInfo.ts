@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../../java/lang/System.js";
         
 import { BufferedReader } from "../../../../../../java/io/BufferedReader.js";
@@ -82,7 +84,7 @@ export class SetLicenseInitInfo
 
     private stdinput: BufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static main(args: string[]){
 var args = args
@@ -117,7 +119,7 @@ this.vector.add(options[index]!);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getLicenseInitInfo(): LicenseInitInfo{
 
@@ -163,7 +165,7 @@ var licenceServerVector = licenceServerVector
                                     
 
 
-                            throw new Error("null Vector Passed - Just Make Empty if you want");
+                            throw new Exception("null Vector Passed - Just Make Empty if you want");
                     
 
                                     }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -62,27 +64,27 @@ import { BasicDataTableInterface } from "../../../../../org/allbinary/data/table
 export interface UserEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getAdministrators(): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCustomers(): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getUsersWithRole(userRole: UserRole): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getUsers(storeFrontInterface: StoreFrontInterface): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getUser(userName: string): UserInterface
 

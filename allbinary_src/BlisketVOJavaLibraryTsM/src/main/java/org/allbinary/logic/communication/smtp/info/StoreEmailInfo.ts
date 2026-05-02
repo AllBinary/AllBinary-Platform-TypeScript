@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { ContextConfigurationInterface } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
 
     
@@ -92,7 +94,7 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 

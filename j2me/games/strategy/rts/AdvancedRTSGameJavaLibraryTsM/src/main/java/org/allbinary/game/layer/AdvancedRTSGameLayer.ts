@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -184,7 +186,7 @@ import { RTSLayerUtil } from "./RTSLayerUtil.js";
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createSimulated(): AdvancedRTSGameLayer{
 
@@ -252,7 +254,7 @@ this.setParentLayer(parentLayer);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -287,7 +289,7 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -300,7 +302,7 @@ BuildingEventHandler.getInstance()!.addListener(this.getWaypointBehavior()!.getW
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
@@ -445,7 +447,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
     //var allbinaryLayer = allbinaryLayer
@@ -705,7 +707,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 

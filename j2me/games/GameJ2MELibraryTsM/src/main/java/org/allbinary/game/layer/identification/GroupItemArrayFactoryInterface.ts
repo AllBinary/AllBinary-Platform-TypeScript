@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
 
     
@@ -50,7 +52,7 @@ import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/Cust
 export interface GroupItemArrayFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(groupInterface: Group): CustomItem[]
 

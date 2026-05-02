@@ -20,8 +20,7 @@ import { Bitmap } from "../../../android/graphics/Bitmap.js";
 import { BitmapFactory } from "../../../android/graphics/BitmapFactory.js";
 
     
-
-//import { IOException } from "../../../java/io/IOException.js";
+import { IOException } from "../../../java/io/IOException.js";
 
     
 import { PlatformBitmapBaseFactory } from "../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js";

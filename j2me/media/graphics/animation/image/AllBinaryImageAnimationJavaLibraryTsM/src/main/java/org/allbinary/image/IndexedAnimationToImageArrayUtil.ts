@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Image } from "../../../javax/microedition/lcdui/Image.js";
 
     
@@ -53,7 +55,7 @@ export class IndexedAnimationToImageArrayUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(width: number, height: number, sequentialAnimationInterface: IndexedAnimation): Image[]{
 var width = width

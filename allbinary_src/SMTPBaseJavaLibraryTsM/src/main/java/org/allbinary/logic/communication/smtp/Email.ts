@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -168,7 +170,7 @@ this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
 var from = from
@@ -411,7 +413,7 @@ this.msg.setContent(mimeMultipart);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public log(): string{
 
@@ -423,7 +425,7 @@ this.msg.setContent(mimeMultipart);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -588,7 +590,7 @@ hashMap!.put(EmailData.CONTENT, content);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -605,13 +607,13 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                            throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
 }
 

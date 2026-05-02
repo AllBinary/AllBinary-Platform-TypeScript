@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { awt } from "../../../../java/awt.js";

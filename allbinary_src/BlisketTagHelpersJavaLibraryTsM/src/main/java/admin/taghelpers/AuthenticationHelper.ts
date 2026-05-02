@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
             import { Integer } from "../../java/lang/Integer.js";
         
 import { Calendar } from "../../java/util/Calendar.js";
@@ -148,7 +150,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFormData(){
 this.authenticated= this.weblisketSession!.getAuthentication();
@@ -164,7 +166,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public invalidateSession(): number{
 
@@ -454,7 +456,7 @@ stringBuffer!.append("Trying New login<p/>");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isAuthenticated(): boolean{
 

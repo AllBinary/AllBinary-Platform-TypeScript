@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Document } from "../../../../../org/w3c/dom/Document.js";
 
     
@@ -58,15 +60,15 @@ export interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
 
     explodeAll()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     autoRotate(increments: number, totalAngle: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     autoExplode(numberOfFrames: number, explodeType: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     autoMirror()
 
@@ -76,7 +78,7 @@ export interface WorkAreaJPanelInterface extends java.awt.event.KeyListener {
 
     isPlaying(): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     toDocument(): Document
 

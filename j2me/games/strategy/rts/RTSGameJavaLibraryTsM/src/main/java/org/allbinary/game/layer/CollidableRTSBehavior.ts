@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CollisionType } from "../../../../org/allbinary/game/collision/CollisionType.js";
 
     
@@ -130,7 +132,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -167,7 +169,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     collideNone(collidableInterface: CollidableCompositeLayer){
     //var collidableInterface = collidableInterface

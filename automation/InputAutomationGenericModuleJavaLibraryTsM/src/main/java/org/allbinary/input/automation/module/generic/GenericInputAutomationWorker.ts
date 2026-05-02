@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../../java/util/HashMap.js";
@@ -172,7 +174,7 @@ this.logUtil!.putF("Adding Listener: " +genericProfileDataWorkerType, this, this
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processDataWorkerResults(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RESULTS);
@@ -267,7 +269,7 @@ this.lastFrame= this.getFrame();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);

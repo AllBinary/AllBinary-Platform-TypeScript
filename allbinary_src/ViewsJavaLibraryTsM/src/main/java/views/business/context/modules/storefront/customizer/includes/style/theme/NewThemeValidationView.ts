@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
 
     
@@ -87,7 +89,7 @@ this.styleValidationInterface= new CssStyleValidation();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -194,7 +196,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

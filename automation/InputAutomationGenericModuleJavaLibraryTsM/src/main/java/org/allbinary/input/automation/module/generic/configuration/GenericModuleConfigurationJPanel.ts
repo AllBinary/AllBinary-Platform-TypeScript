@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -501,7 +503,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckB
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     updateProfileUI(profileNameString: string){
 var profileNameString = profileNameString
@@ -549,7 +551,7 @@ this.logUtil!.putF("Setting Configuration Profile JPanel", this, "updateProfileU
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     selectFirstElement(){
 this.genericProfilesJList!.setModel(this.getGenericProfiles()!.getDefaultListModelHelper()!.getListModel());
@@ -568,7 +570,7 @@ this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as s
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     updateProfileOptions(){
 this.logUtil!.putF(this.commonStrings!.START, this, "updateProfileOptions");

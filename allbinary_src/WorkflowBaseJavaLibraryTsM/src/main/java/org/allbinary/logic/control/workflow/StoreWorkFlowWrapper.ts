@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Method } from "../../../../../java/lang/reflect/Method.js";
 
     
@@ -65,7 +67,7 @@ public constructor (anyType: any = {}){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStoreName(): string{
 
@@ -114,7 +116,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getStoreName()", e);
 
 
 
-                            throw new Error(error);
+                            throw new Exception(error);
                     
 }
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
     
@@ -47,7 +49,7 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 export interface DomDocumentMappingInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     toXmlDoc(): Document
 

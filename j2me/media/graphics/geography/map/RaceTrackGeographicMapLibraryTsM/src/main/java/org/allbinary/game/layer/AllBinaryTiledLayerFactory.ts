@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { TiledLayer } from "../../../../javax/microedition/lcdui/game/TiledLayer.js";
 
     
@@ -69,7 +71,7 @@ export class AllBinaryTiledLayerFactory
          implements AllBinaryTiledLayerFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
     //var raceTrackInfo = raceTrackInfo
@@ -96,7 +98,7 @@ allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer{
 var raceTrackData = raceTrackData

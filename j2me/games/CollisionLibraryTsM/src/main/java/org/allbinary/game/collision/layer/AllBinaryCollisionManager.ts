@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CollidableBaseBehavior } from "../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js";
 
     
@@ -72,7 +74,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, startIndex: number){
 var layerManager = layerManager
@@ -101,7 +103,7 @@ this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInte
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     collide(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface){
 var layerManager = layerManager

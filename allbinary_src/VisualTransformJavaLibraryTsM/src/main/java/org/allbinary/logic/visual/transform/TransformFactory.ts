@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -107,7 +109,7 @@ private constructor (){
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, viewName: string, ownerTransformInfoInterface: TransformInfoInterface): TransformInterface{
     //var abeClientInformation = abeClientInformation
@@ -145,7 +147,7 @@ private constructor (){
                                     
 
 
-                            throw new Error("No Such View In DB: " +viewName);
+                            throw new Exception("No Such View In DB: " +viewName);
                     
 
                                     }
@@ -194,7 +196,7 @@ transformInfoInterface!.setChild();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInterface{
     //var abeClientInformation = abeClientInformation
@@ -292,7 +294,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
     //var abeClientInformation = abeClientInformation

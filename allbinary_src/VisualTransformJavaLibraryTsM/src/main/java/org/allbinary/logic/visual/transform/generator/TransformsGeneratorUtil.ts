@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -87,7 +89,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoInterface: Object, group: string): string{
     //var abeClientInformation = abeClientInformation
@@ -128,7 +130,7 @@ var group = group
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoObjectConfigInterface: Object, transformInfoInterface: Object, group: string): string{
     //var abeClientInformation = abeClientInformation
@@ -176,7 +178,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generateComponentsFromObject
                                     
 
 
-                            throw new Error("No Pages Generated For Template.");
+                            throw new Exception("No Pages Generated For Template.");
                     
 
                                     }

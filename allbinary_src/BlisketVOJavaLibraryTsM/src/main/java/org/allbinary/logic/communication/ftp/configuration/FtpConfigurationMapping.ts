@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -89,7 +91,7 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 
@@ -101,7 +103,7 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 

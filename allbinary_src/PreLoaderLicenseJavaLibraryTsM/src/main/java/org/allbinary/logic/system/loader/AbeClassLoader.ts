@@ -22,11 +22,14 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { ClassNotFoundException } from "../../../../../java/lang/ClassNotFoundException.js";
+        
 import { FileInputStream } from "../../../../../java/io/FileInputStream.js";
 
     
-
-//import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { HashMap } from "../../../../../java/util/HashMap.js";

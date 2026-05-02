@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -78,7 +80,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
@@ -86,7 +88,7 @@ var initData = initData
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public read(): LicenseInitInfo{
@@ -99,7 +101,7 @@ var initData = initData
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{

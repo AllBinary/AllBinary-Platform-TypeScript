@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
@@ -144,7 +146,7 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo){
     //var abeClientInformation = abeClientInformation
@@ -185,7 +187,7 @@ this.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public delete(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, deleteId: number){
     //var abeClientInformation = abeClientInformation

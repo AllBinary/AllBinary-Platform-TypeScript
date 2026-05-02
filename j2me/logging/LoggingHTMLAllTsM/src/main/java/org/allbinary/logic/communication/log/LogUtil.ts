@@ -22,6 +22,8 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -157,7 +159,7 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
                                 )
                         
                                     {
-                                    PlayN.log()!.error(this.LOG_SUCCESS +message, exception as Error);
+                                    PlayN.log()!.error(this.LOG_SUCCESS +message, exception as Throwable);
     
 
                                     }

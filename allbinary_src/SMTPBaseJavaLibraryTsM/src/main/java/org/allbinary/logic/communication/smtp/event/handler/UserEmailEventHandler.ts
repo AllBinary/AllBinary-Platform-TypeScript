@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -74,7 +76,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public receiveEmailInfo(userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo){
@@ -131,7 +133,7 @@ this.emailVector!.remove(emailEventListenerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireEmailEvent(){

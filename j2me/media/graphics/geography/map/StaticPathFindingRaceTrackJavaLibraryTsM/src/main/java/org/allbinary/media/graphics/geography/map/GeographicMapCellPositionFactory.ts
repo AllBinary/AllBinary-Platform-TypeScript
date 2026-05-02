@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
@@ -76,7 +78,7 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(geographicMapInterface: BasicGeographicMap): BasicGeographicMapCellPositionFactory{
     //var geographicMapInterface = geographicMapInterface

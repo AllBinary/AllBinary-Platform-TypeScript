@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -213,7 +215,7 @@ form.append(this.getChoiceGroup(hashtable, name, option));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDefault(form: CommandForm){
 var form = form

@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
@@ -114,7 +118,7 @@ reset2();
                                     
 
 
-                            throw new Error("Should never be running here");
+                            throw new Exception("Should never be running here");
                     
 
                                     }

@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -52,7 +56,7 @@ export class OpenGLESStrings
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL10){
     //var gl = gl
@@ -76,7 +80,7 @@ export class OpenGLESStrings
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(gl: GL10, width: number, height: number){
     //var gl = gl

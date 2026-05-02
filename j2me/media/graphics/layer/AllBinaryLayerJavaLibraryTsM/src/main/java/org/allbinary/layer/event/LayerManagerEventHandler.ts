@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -118,7 +120,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -157,7 +159,7 @@ super.fireEvent(eventObject);
 
     public readonly DELETE: string = "Delete";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireDeleteEvent(eventObject: AllBinaryEventObject){
@@ -230,7 +232,7 @@ index++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

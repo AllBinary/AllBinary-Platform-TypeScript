@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 import { ActionEvent } from "../../../../../../../java/awt/event/ActionEvent.js";
@@ -184,7 +186,7 @@ index < nodeList!.getLength(); index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addProcessorNodes(node: Node){
 var node = node
@@ -394,7 +396,7 @@ this.add(profileActionScriptNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -610,7 +612,7 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public shouldProcess(frame: number): boolean{
 var frame = frame
@@ -658,7 +660,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(frame: number){
 var frame = frame

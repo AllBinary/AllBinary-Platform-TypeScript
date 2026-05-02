@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -65,7 +67,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public create(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
     //var raceTrackGeographicMap = raceTrackGeographicMap

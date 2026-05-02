@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -55,41 +57,41 @@ export interface TransformInfoObjectConfigInterface extends DomDocumentMappingIn
 
     containsView(transformInfoInterface: TransformInfoInterface): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getName(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getTransformsGroup(group: string): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getTransforms(): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getParentTransforms(): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getGroupTransforms(): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getOutputTypeName(): string
 
     setOutputTypeName(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInputOutputTypeName(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInputOutputTypeFile(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getImportUriPath(): string
 

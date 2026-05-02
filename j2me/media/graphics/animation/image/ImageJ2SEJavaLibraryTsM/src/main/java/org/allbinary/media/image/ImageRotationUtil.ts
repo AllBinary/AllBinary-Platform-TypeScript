@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -133,7 +135,7 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
                                     }
                                 
                         else {
-                            PreLogUtil.putOE("Not Mutable", this, "getRotatedImage", new Error());
+                            PreLogUtil.putOE("Not Mutable", this, "getRotatedImage", new Exception());
     
 
                         }
@@ -141,7 +143,7 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 var originalImage = originalImage
@@ -208,7 +210,7 @@ originalAwtImage= originalJ2SEImage!.getImage() as java.awt.Image;
                             
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                         }

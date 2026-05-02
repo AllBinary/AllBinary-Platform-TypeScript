@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -104,7 +106,7 @@ export class UserEmailEventNameData
 
     public static readonly NEWPASSWORD: UserEmailEventNameData = new UserEmailEventNameData("New Password");
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
@@ -122,7 +124,7 @@ var userEmailEventNameString = userEmailEventNameString
                                     
 
 
-                            throw new Error();
+                            throw new Exception();
                     
 
                                     }

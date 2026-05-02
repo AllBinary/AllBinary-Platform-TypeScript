@@ -22,6 +22,8 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
 import { FileLog } from "../../../../../org/allbinary/log/FileLog.js";
 
     
@@ -113,7 +115,7 @@ var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
 var exception = exception
-FileLog.put(specialMessage, anyType, functionName, exception as Error);
+FileLog.put(specialMessage, anyType, functionName, exception as Throwable);
     
 }
 

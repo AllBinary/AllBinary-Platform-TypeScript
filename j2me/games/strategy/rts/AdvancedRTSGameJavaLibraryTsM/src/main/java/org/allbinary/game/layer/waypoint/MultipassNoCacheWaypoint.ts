@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
 
     
@@ -133,7 +135,7 @@ this.ownerLayer= ownerLayer;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -146,7 +148,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPathFindingInfo(geographicMapCellPosition: GeographicMapCellPosition): PathFindingInfo{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -194,7 +196,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
                             
 
 
-                            throw new Error("Start should not be End: " +endGeographicMapCellPosition);
+                            throw new Exception("Start should not be End: " +endGeographicMapCellPosition);
                     
 
                         }
@@ -245,7 +247,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPathsList(geographicMapCellPosition: GeographicMapCellPosition, pathFindingInfo: PathFindingInfo, multipassState: MultipassState): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -295,7 +297,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
                                     
 
 
-                            throw new Error("Path may have been cleared by clearing caching");
+                            throw new Exception("Path may have been cleared by clearing caching");
                     
 
                                     }
@@ -336,7 +338,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
@@ -393,7 +395,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onBuildingEvent(event: RTSLayerEvent){
     //var event = event
@@ -406,7 +408,7 @@ this.getConnectedWaypointList()!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(unitLayer: PathFindingLayerInterface){
     //var unitLayer = unitLayer

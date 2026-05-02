@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -167,7 +169,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireEvent(keyCode: number, deviceId: number, repeated: boolean){
     //var keyCode = keyCode
@@ -209,7 +211,7 @@ index++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(keyCode: number, deviceId: number, repeated: boolean, eventListenerInterface: RawKeyEventListener){
     //var keyCode = keyCode

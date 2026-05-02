@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../java/util/HashMap.js";
@@ -163,7 +165,7 @@ export class InventorySearchUtil
 
     private readonly commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getBasicItemIdColumn(searchRequest: SearchRequest): Vector{
 var searchRequest = searchRequest
@@ -238,7 +240,7 @@ column.addAll(substoreIdColumn);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getNoResults(viewDocumentInterface: TransformDocumentInterface, inventoryNode: Node): string{
 var viewDocumentInterface = viewDocumentInterface

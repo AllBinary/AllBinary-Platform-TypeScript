@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -85,7 +87,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface

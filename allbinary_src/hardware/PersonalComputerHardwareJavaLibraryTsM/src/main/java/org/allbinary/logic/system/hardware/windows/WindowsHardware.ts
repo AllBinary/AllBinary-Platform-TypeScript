@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
@@ -164,7 +166,7 @@ this.monitorInterfaceVector= new Vector();
 
                         if(this.componentInterfaceVector!.length < this.MINHARDWARE)
                         
-                                    throw new Error("Not Enough Data For A Valid License On Windows");
+                                    throw new Exception("Not Enough Data For A Valid License On Windows");
                                 
 
                 //: 

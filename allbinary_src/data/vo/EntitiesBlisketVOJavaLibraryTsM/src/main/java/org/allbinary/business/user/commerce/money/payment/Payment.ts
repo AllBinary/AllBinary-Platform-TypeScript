@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
@@ -646,7 +648,7 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

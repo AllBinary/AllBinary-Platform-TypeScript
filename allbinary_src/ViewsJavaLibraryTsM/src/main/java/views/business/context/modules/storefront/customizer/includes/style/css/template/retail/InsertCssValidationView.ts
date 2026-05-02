@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../../../../java/util/HashMap.js";
 
     
@@ -101,7 +103,7 @@ this.styleValidationInterface= new CssStyleValidation(requestHashMap);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -226,7 +228,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

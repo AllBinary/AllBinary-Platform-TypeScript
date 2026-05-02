@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../java/util/HashMap.js";
@@ -276,7 +278,7 @@ this.grid.isGridPossible= .
                             
 
 
-                            throw new Error("Frame Element Not Found but Found: " +name);
+                            throw new Exception("Frame Element Not Found but Found: " +name);
                     
 
                         }
@@ -327,7 +329,7 @@ this.angle= angle;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setWorkArea(x: number, y: number){
 var x = x
@@ -337,7 +339,7 @@ this.setDimension(new IntegerDimension(x, y));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setGrid(gridX: number, gridY: number){
 var gridX = gridX
@@ -391,7 +393,7 @@ pointNode!.appendChild(yNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDom(): Node{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -101,7 +103,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAnimationSize(): number{
 
@@ -140,7 +142,7 @@ this.animationInterfaceArray[index]!.previousFrame();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public nextFrame(){
 
@@ -215,7 +217,7 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL){
     //var gl = gl

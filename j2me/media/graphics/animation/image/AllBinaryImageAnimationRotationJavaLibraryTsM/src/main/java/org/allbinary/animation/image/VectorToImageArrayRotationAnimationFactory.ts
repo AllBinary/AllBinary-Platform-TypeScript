@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -105,7 +107,7 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 
@@ -119,7 +121,7 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

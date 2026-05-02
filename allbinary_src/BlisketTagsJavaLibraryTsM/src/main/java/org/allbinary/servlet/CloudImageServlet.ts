@@ -22,11 +22,12 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../java/io/ByteArrayOutputStream.js";
 
     
-
-//import { IOException } from "../../../java/io/IOException.js";
+import { IOException } from "../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../java/io/InputStream.js";

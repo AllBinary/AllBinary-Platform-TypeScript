@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { Player } from "../../../../javax/microedition/media/Player.js";
@@ -98,7 +100,7 @@ this.player= player;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 }

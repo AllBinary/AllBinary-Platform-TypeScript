@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -64,7 +66,7 @@ export class DocumentToNode
 
     private static readonly XMLJSPROOTENDSTART: string = "</jsp:root";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static convertDocumentToNodeString(documentString: string): string{
 var documentString = documentString

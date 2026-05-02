@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { DomDocumentHelper } from "../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -104,7 +106,7 @@ this.transformDocumentInterface= TransformDocumentFactory.getInstance() as Trans
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 
@@ -133,7 +135,7 @@ this.transformDocumentInterface= transformDocumentInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
     //var document = document
@@ -179,7 +181,7 @@ dirNode!.appendChild(fileNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -191,7 +193,7 @@ dirNode!.appendChild(fileNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

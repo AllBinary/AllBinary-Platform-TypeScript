@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
 
     
@@ -63,7 +65,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
     //var i_column = i_column

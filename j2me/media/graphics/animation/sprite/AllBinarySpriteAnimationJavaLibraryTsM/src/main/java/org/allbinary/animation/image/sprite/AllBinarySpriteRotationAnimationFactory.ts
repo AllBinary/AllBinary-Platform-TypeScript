@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -73,7 +75,7 @@ import { AllBinaryAdjustedSpriteRotationAnimation } from "./AllBinaryAdjustedSpr
 export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createWHDY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
     //var image = image
@@ -95,7 +97,7 @@ spriteRotationAnimationFactory!.initWH(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createWH(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
     //var image = image
@@ -109,7 +111,7 @@ spriteRotationAnimationFactory!.initWH(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
     //var image = image
@@ -131,7 +133,7 @@ spriteRotationAnimationFactory!.init(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createDXYQ(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
     //var image = image
@@ -153,7 +155,7 @@ spriteRotationAnimationFactory!.init(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createQ(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
     //var image = image
@@ -167,7 +169,7 @@ spriteRotationAnimationFactory!.init(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createWHF(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
     //var image = image
@@ -220,7 +222,7 @@ this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitial
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -254,7 +256,7 @@ this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitial
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

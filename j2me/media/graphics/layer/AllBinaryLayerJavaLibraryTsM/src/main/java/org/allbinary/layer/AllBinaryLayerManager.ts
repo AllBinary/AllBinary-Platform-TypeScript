@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { LayerManagerEvent } from "../../../org/allbinary/layer/event/LayerManagerEvent.js";
 
     
@@ -110,7 +112,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -128,7 +130,7 @@ super.append(layerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
@@ -147,7 +149,7 @@ super.appendAt(layerInterface, index);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     appendProcessors(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -184,7 +186,7 @@ layerProcessorInterface= this.basicLayerProcessorArray[index]!;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public remove(layerInterface: AllBinaryLayer){
@@ -217,7 +219,7 @@ super.remove(layerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 
@@ -246,7 +248,7 @@ layerProcessorInterface!.process(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public cleanup(){
 

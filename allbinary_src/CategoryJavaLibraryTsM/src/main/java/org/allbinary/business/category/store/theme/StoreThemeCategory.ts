@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -163,7 +165,7 @@ this.addThemes(node);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addThemes(node: Node){
 var node = node
@@ -218,7 +220,7 @@ this.themeVector!.add(themeValidation);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 
@@ -243,7 +245,7 @@ this.themeVector!.add(themeValidation);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -261,7 +263,7 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 

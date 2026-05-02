@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { TransformInfoInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
 
     
@@ -48,7 +50,7 @@ import { TransformInfoInterface } from "../../../../../../../../org/allbinary/lo
 export interface TransformInfoObjectConfigGeneratorFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator
 

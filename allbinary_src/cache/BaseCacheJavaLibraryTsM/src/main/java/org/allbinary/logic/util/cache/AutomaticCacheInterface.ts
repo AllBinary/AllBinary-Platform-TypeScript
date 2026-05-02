@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -46,7 +48,7 @@ import { CacheableInterface } from "./CacheableInterface.js";
 export interface AutomaticCacheInterface extends CacheInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     get(key: any): CacheableInterface
 

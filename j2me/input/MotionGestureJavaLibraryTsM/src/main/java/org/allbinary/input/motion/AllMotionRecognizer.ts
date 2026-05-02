@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CustomGPoint } from "../../../../org/allbinary/graphics/CustomGPoint.js";
 
     
@@ -85,7 +87,7 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -121,7 +123,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -164,7 +166,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -204,7 +206,7 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
 
     private lastY: number= 0
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x

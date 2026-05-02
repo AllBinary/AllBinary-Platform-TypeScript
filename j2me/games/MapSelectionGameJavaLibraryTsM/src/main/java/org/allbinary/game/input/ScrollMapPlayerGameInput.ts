@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -129,7 +131,7 @@ this.init();
 
     private readonly scrollMapEvent: ScrollMapEvent = new ScrollMapEvent(this);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     move(dx: number, dy: number){
 var dx = dx
@@ -155,7 +157,7 @@ this.maxRight= this.getSpecialWidth();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public scrollMiddleX(){
 
@@ -194,7 +196,7 @@ this.move(diffX, 0);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public scrollY(anchor: number){
 var anchor = anchor
@@ -249,7 +251,7 @@ this.move(0, diffY);
                             
 
 
-                            throw new Error("No Such Anchor Supported");
+                            throw new Exception("No Such Anchor Supported");
                     
 
                         }
@@ -257,7 +259,7 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     up(){
 
@@ -276,7 +278,7 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     down(){
 
@@ -295,7 +297,7 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     right(){
 
@@ -314,7 +316,7 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     left(){
 
@@ -347,7 +349,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInputKey(key: number){
 var key = key
@@ -356,7 +358,7 @@ this.inputProcessorArray[key]!.processEvent(AllBinaryGameLayerManager.NULL_ALLBI
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

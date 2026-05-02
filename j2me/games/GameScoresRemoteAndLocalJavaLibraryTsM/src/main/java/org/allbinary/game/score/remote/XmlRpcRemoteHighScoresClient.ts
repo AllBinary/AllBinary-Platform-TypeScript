@@ -22,8 +22,9 @@
 
 
         
-
-//import { IOException } from "../../../../../java/io/IOException.js";
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -97,7 +98,7 @@ this.setServer(0);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(anyType: any = {}, cryptInterface: CryptInterface): any{
     //var anyType = anyType
@@ -187,7 +188,7 @@ this.logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTra
                             
 
 
-                            throw new Error(HOST_NOT_RESOLVED_MSG);
+                            throw new Exception(HOST_NOT_RESOLVED_MSG);
                     
 
                         }

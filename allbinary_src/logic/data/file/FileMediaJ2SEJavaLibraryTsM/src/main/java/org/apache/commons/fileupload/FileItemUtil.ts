@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -71,7 +73,7 @@ export class FileItemUtil
 
     public readonly DEFAULT_CHARSET: string = "ISO-8859-1";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getString(byteArray: number[]): string{
 var byteArray = byteArray
@@ -84,7 +86,7 @@ var byteArray = byteArray
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getString(fileItem: FileItemStream): string{
 var fileItem = fileItem
@@ -99,7 +101,7 @@ var fileItem = fileItem
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getBytes(fileItem: FileItemStream): number[]{
 var fileItem = fileItem
@@ -172,7 +174,7 @@ streamUtil!.close(inputStream);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(fileItem: FileItem, file: AbFile){
 var fileItem = fileItem

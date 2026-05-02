@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -101,7 +103,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -150,7 +152,7 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 
 
 
@@ -44,19 +46,19 @@
 export interface BasicTableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     drop(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     create(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     restore(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     backup(): string
 

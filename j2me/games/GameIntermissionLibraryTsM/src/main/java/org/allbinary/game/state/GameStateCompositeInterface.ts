@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -45,7 +47,7 @@
 export interface GameStateCompositeInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setGameState(gameState: GameState)
 

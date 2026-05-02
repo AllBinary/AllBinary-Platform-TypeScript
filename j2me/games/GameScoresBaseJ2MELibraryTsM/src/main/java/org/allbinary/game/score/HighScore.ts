@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../java/lang/Long.js";
         
 import { ByteArrayOutputStream } from "../../../../java/io/ByteArrayOutputStream.js";
@@ -122,7 +124,7 @@ this.scoreString= (this.score).toString();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAsBytes(): number[]{
 

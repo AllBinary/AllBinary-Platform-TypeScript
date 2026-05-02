@@ -24,6 +24,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Closeable } from "../../../../../../java/io/Closeable.js";
 
     
@@ -123,7 +125,7 @@ public constructor (){
                                     
 
 
-                            throw new Error("Not Enough Data For A Valid License On Linux");
+                            throw new Exception("Not Enough Data For A Valid License On Linux");
                     
 
                                     }
@@ -131,7 +133,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(filePath: string){
     //var filePath = filePath
@@ -174,7 +176,7 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     get(filePath: string): LineNumberReader{
     //var filePath = filePath

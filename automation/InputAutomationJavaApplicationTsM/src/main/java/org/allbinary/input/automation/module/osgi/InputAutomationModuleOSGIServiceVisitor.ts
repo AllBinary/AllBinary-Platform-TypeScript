@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { InputAutomationModuleService } from "../../../../../../bundle/input/automation/module/InputAutomationModuleService.js";
 
     

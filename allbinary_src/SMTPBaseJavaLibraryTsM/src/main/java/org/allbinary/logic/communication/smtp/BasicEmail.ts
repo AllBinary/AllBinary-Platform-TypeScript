@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -112,7 +114,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public log(): string{
 
@@ -124,7 +126,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -136,7 +138,7 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -149,7 +151,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -93,7 +95,7 @@ public constructor (){
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public start(context: BundleContext){
 var context = context
@@ -121,7 +123,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public registerAsService(){
 
@@ -143,12 +145,12 @@ serviceReference= AllBinaryPreloaderActivator.context.getServiceReference(CRYPT_
                                     null
                                 )
                         
-                                    throw new Error("No Such Service Reference");
+                                    throw new Exception("No Such Service Reference");
                                 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public stop(context: BundleContext){
 var context = context

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { ArrayList } from "../../../../../../../java/util/ArrayList.js";
 
     
@@ -95,7 +97,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileItemStreamList(httpServletRequest: HttpServletRequest): List{
 var httpServletRequest = httpServletRequest
@@ -163,7 +165,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileItemList(httpServletRequest: HttpServletRequest): List{
 var httpServletRequest = httpServletRequest

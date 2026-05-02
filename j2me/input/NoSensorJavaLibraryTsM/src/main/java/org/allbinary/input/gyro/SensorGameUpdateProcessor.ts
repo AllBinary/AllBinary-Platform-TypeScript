@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinarySensor } from "../../../../org/allbinary/input/AllBinarySensor.js";
 
     
@@ -71,14 +73,14 @@ this.inputSensor= inputSensor;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(anyType: any = {}){
 var anyType = anyType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public sendNotifications(anyType: any = {}){
 var anyType = anyType

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -97,7 +99,7 @@ hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegaby
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 
@@ -109,7 +111,7 @@ hashMap!.put(JvmStatisticsData.TOTAL_MEMORY_MEGABYTES, this.getTotalMemoryMegaby
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 

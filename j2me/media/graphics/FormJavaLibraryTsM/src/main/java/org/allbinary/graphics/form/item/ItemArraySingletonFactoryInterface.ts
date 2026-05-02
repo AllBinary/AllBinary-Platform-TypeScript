@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -45,7 +47,7 @@
 export interface ItemArraySingletonFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getItems(): CustomItem[]
 

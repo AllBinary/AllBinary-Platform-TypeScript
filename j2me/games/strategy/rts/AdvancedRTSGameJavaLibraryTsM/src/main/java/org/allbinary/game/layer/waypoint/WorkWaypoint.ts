@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
@@ -86,7 +88,7 @@ public constructor (ownerLayer: PathFindingLayerInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(unitLayer: UnitLayer){
     //var unitLayer = unitLayer

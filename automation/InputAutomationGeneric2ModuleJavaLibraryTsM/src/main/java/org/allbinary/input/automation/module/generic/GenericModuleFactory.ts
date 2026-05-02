@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AbstractInputAutomationFactory } from "../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js";
 
     
@@ -80,7 +82,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(): RunnableInterface{

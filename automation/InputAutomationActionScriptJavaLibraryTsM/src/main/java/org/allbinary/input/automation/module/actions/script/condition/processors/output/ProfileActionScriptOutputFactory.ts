@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+        
 import { DomSearchHelper } from "../../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
 
     
@@ -55,7 +57,7 @@ export class ProfileActionScriptOutputFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(node: Node): ProfileActionScriptOutputInterface{
 var node = node
@@ -80,7 +82,7 @@ var node = node
                             
 
 
-                            throw new Error("No Such ActionScript Output");
+                            throw new Exception("No Such ActionScript Output");
                     
 
                         }

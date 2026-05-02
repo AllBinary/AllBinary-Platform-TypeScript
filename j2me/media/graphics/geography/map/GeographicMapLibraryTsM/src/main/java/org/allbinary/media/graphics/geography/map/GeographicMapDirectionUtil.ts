@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -78,7 +80,7 @@ private constructor (){
 
     private readonly MESSAGE: string = "Cell Position should have been cached!!!";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -175,7 +177,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw new Error(this.MESSAGE);
+                            throw new Exception(this.MESSAGE);
                     
 
                                     }
@@ -189,7 +191,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getEightDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -359,7 +361,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                                     
 
 
-                            throw new Error(this.MESSAGE);
+                            throw new Exception(this.MESSAGE);
                     
 
                                     }
@@ -373,7 +375,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -463,7 +465,7 @@ stringMaker!.delete(0, stringMaker!.length());
 
 
 
-                            throw new Error(stringMaker!.append("Error: ")!.append(string)!.toString());
+                            throw new Exception(stringMaker!.append("Error: ")!.append(string)!.toString());
                     
 }
 
@@ -472,7 +474,7 @@ stringMaker!.delete(0, stringMaker!.length());
 
     private readonly EQUAL: string = " == ";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getEightDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -650,7 +652,7 @@ stringBuffer!.append(CellPosition.toStringCellPosition(toGeographicMapCellPositi
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 }
 

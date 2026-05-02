@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -153,7 +155,7 @@ this.setStoreName(storeFrontInterface!.getName());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getPath(): string{
 
@@ -177,7 +179,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -189,7 +191,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -201,7 +203,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDataFilePath(): AbPath{
 

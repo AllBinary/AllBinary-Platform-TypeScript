@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -69,7 +71,7 @@ export class DamageableBaseBehavior
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public damage(damage: number, damageType: number){
 var damage = damage
@@ -77,7 +79,7 @@ var damageType = damageType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDamage(damageType: number): number{
 var damageType = damageType

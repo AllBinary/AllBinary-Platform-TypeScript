@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -81,7 +83,7 @@ this.dataMappingInterface= dataMappingInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -108,7 +110,7 @@ hashMap!.put(UserData.PASSWORD, EMPTY_STRING);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -120,7 +122,7 @@ hashMap!.put(UserData.PASSWORD, EMPTY_STRING);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

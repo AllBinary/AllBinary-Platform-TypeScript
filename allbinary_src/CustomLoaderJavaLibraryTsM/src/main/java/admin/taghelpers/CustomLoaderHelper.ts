@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -80,7 +82,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWebappPath(): string{
 
@@ -106,7 +108,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setWebappPath(path: string){
 var path = path

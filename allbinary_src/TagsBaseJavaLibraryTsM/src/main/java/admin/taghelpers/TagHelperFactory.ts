@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../java/lang/RuntimeException.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -61,7 +65,7 @@ export class TagHelperFactory
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
     //var hashMap = hashMap

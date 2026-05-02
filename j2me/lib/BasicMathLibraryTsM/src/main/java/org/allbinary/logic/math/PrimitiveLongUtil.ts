@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -75,7 +77,7 @@ var powerOfTen = powerOfTen
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRUCTOR, new Error("Max must be power of 10"));
+logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRUCTOR, new Exception("Max must be power of 10"));
     
 
                                     }

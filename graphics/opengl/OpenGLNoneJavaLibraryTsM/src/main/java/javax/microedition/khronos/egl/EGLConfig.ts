@@ -8,6 +8,8 @@
 
 
         
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 
 
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { GameNotificationEvent } from "../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
@@ -84,7 +86,7 @@ export class TextNotificationUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireError(message: string){
 var message = message
@@ -95,7 +97,7 @@ this.fire(message);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireNew(message: string){
 var message = message
@@ -106,7 +108,7 @@ this.fire(message);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireSuccess(message: string){
 var message = message
@@ -123,7 +125,7 @@ this.fire(message);
 
     private readonly gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fire(message: string){
 var message = message

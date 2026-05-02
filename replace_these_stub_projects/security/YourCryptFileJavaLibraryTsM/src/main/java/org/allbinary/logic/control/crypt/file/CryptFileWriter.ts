@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
@@ -45,7 +47,7 @@ var encryptedExtension = encryptedExtension
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(fileAbPath: AbPath, document: Document){
 var fileAbPath = fileAbPath

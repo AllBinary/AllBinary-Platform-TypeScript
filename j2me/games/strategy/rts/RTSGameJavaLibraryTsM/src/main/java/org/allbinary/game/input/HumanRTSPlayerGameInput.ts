@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -221,7 +223,7 @@ BasicMotionGesturesHandler.getInstance()!.addListener(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -238,7 +240,7 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processDraggingMotionInput(layerManager: AllBinaryLayerManager): boolean{
     //var layerManager = layerManager
@@ -498,7 +500,7 @@ this.updatePaintable();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processSelectionBoxMotionInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -559,7 +561,7 @@ this.endPoint= PointFactory.getInstance()!.ZERO_ZERO;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processMotionInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -655,7 +657,7 @@ this.setSelectedRtsFormInput(rtfFormInput);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setSelectedRTSLayer(rtSLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
     //var rtSLayer = rtSLayer

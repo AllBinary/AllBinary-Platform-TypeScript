@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -64,7 +66,7 @@ import { FormTypeFactory } from "./FormTypeFactory.js";
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createForm(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): MultipleScrollSelectionHorizontalForm{
     //var title = title
@@ -225,7 +227,7 @@ this.paintable.paint(graphics, index, dx, dy);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }

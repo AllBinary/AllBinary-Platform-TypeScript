@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { InputMappingEvent } from "../../../../../org/allbinary/game/input/mapping/event/InputMappingEvent.js";
 
     
@@ -68,7 +70,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onInputMappingEvent(inputMappingEvent: InputMappingEvent){
 var inputMappingEvent = inputMappingEvent

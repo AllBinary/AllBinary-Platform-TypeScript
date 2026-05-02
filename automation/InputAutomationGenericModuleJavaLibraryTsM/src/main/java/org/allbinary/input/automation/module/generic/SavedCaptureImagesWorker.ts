@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
             import { Thread } from "../../../../../../java/lang/Thread.js";
@@ -126,7 +128,7 @@ index= ProcessingFrameIndexFactory.next();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setThread(thread: Thread){
 var thread = thread

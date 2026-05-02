@@ -21,6 +21,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { RTSLayerEvent } from "../../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
 
     
@@ -49,7 +51,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 export interface WaypointEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onWaypointEvent(event: RTSLayerEvent)
 

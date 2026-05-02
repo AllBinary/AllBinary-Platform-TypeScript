@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
@@ -58,7 +60,7 @@ export class UserRoleB extends UserRole {
 
     public roleVector: Vector = new Vector();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): UserRole{
@@ -110,7 +112,7 @@ index < size; index++)
 
 
 
-                            throw new Error("Unable to get role - Unknown Role = " +role);
+                            throw new Exception("Unable to get role - Unknown Role = " +role);
                     
 }
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { CompleteMotionGestureInputEventHandler } from "../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js";
 
     
@@ -89,7 +91,7 @@ CompleteMotionGestureInputEventHandler.getInstance()!.addListener(new GameKeyFro
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onMotionGestureCompleted(list: BasicArrayList){
 var list = list

@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { CaptureWorkerInterface } from "../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js";
@@ -97,7 +101,7 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -149,7 +153,7 @@ this.running= running;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     startDataWorkers(){
@@ -169,7 +173,7 @@ this.captureThread!.start();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     waitForDataWorkers(){
@@ -185,7 +189,7 @@ Thread.sleep(250);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     stopDataWorkers(){
 this.getCaptureWorker()!.setRunning(false);
@@ -193,7 +197,7 @@ this.getCaptureWorker()!.setRunning(false);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 

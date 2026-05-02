@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -66,7 +68,7 @@ export interface InventoryEntityInterface extends BasicDataTableInterface {
             
     getItem(id: string): ItemInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getItems(storeFrontInterface: StoreFrontInterface): Vector
 

@@ -22,10 +22,11 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
-
-//import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -82,7 +83,7 @@ public constructor (clientInfo: AbeClientInformationInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(anyType: any = {}): any{
     //var anyType = anyType
@@ -153,7 +154,7 @@ console.log("IOException Trying Other Servers");
                             
 
 
-                            throw new Error(HOST_NOT_RESOLVED_MSG);
+                            throw new Exception(HOST_NOT_RESOLVED_MSG);
                     
 
                         }

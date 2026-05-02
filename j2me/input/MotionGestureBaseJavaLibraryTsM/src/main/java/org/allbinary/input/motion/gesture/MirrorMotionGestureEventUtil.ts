@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
@@ -81,7 +83,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mirrorVerticle(motionGestureEvent: MotionGestureEvent, halfWidth: number): MotionGestureEvent{
     //var motionGestureEvent = motionGestureEvent

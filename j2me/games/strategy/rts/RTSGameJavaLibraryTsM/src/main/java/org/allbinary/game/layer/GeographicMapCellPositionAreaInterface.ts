@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -59,7 +61,7 @@ export interface GeographicMapCellPositionAreaInterface {
 
     getSurroundingGeographicMapCellPositionList(): BasicArrayList
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(geographicMapInterface: BasicGeographicMap)
 

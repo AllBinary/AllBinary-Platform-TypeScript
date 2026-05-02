@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -81,7 +83,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 var transformInfoInterface = transformInfoInterface
@@ -134,7 +136,7 @@ this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.
                             
 
 
-                            throw new Error("No Such TransformInfoObjectConfigGenerator Type");
+                            throw new Exception("No Such TransformInfoObjectConfigGenerator Type");
                     
 
                         }

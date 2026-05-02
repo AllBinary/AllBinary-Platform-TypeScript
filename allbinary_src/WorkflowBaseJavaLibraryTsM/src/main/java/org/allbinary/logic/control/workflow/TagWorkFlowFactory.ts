@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -93,7 +95,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -171,7 +173,7 @@ this.color= basicColor!.toInt();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getHudGraphicsPositionWH(width: number, height: number): HudGraphicsPosition{
 var width = width

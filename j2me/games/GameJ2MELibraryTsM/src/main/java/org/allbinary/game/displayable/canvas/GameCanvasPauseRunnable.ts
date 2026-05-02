@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AndroidUtil } from "../../../../../org/allbinary/AndroidUtil.js";
 
     
@@ -77,7 +79,7 @@ this.allBinaryGameCanvas= allBinaryGameCanvas;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processLoopSleep(){
 

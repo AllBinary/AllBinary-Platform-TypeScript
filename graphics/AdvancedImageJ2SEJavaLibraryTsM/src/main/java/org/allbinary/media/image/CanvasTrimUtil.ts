@@ -25,8 +25,7 @@
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
-
-//import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";

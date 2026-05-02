@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
@@ -173,7 +175,7 @@ this.lockedIndex= lockedIndex;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 this.getPlayerGameInput()!.update();
@@ -181,7 +183,7 @@ this.getPlayerGameInput()!.update();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onInput(list: BasicArrayList){
 var list = list
@@ -285,7 +287,7 @@ list.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

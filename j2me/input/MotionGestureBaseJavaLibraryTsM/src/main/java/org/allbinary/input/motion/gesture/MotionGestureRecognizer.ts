@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -144,7 +146,7 @@ this.movedMotionGesturesHandler= movedMotionGesturesHandler;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processPressedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current
@@ -173,7 +175,7 @@ this.motionGesturesHandler!.fireEvent(event);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processReleasedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current
@@ -198,7 +200,7 @@ this.motionGesturesHandler!.fireEvent(event);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processDraggedMotionEvent(current: GPoint, deviceId: number, buttonMask: number){
     //var current = current
@@ -399,7 +401,7 @@ this.motionGesturesHandler!.fireEvent(event);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processMovedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current

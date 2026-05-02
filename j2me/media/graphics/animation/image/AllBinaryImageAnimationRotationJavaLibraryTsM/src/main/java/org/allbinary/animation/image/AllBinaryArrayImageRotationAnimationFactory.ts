@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -74,7 +76,7 @@ import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotatio
 export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactory(image: Image, dx: number, dy: number): AllBinaryArrayImageRotationAnimationFactory{
     //var image = image
@@ -95,7 +97,7 @@ arrayImageRotationAnimationFactory!.initDXY(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactoryA(image: Image, dx: number, dy: number, angleIncrement: number): AllBinaryArrayImageRotationAnimationFactory{
     //var image = image
@@ -138,7 +140,7 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE)));
@@ -160,7 +162,7 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -448,7 +450,7 @@ var abPath = abPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isTestingValid(testing: string): boolean{
 var testing = testing

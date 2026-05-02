@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { DestroyableInterface } from "../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js";
 
     
@@ -62,7 +64,7 @@ import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getEndGeographicMapCellPositionList(): BasicArrayList
 
@@ -72,7 +74,7 @@ export interface PathFindingLayerInterface extends WaypointLayerInterface, GameK
 
     getHudPaintable(): SelectionHudPaintable
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     handleCost(ownerLayer: PathFindingLayerInterface)
 
@@ -80,7 +82,7 @@ export interface PathFindingLayerInterface extends WaypointLayerInterface, GameK
 
     getRTSLayer2LogHelper(): RTSLayer2LogHelper
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setTarget(targetGameLayer: PathFindingLayerInterface)
 

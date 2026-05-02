@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { File } from "../../../../../java/io/File.js";
 
     
@@ -149,7 +151,7 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(){
 

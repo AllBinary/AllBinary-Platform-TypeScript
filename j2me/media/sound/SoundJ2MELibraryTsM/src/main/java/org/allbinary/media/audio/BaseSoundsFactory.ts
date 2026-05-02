@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -54,7 +56,7 @@ export class BaseSoundsFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getSoundInterfaceArray(): Sound[]{
 

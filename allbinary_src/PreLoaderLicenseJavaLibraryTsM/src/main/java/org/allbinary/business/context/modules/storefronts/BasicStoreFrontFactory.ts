@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -73,7 +75,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(storeName: string): BasicStoreFrontInterface{
 var storeName = storeName

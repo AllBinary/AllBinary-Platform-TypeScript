@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../java/util/Vector.js";
 
     
@@ -55,7 +57,7 @@ export class NullXmlRpcHandler
 
     public static readonly NULL_XML_RPC_HANDLER: NullXmlRpcHandler = new NullXmlRpcHandler();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public execute(method: string, params: Vector<any>): any{
 var method = method

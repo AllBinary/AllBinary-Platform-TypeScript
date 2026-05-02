@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
 
     
@@ -56,7 +58,7 @@ export class FallingPickupLayerFactory
          implements AllBinaryLayerFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(): AllBinaryLayer{
 

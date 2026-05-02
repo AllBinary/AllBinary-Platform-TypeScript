@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -109,7 +111,7 @@ this.total= total;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable
@@ -135,7 +137,7 @@ var z = z
                             
 
 
-                            throw new Error("No more left. Could use a listener to automatically remove");
+                            throw new Exception("No more left. Could use a listener to automatically remove");
                     
 
                         }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -238,7 +240,7 @@ canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth(); /2,  -
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage
@@ -260,7 +262,7 @@ canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth(); /2,  -
                                     
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                                     }

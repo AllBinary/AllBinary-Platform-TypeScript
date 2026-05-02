@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -85,7 +87,7 @@ import { TouchButtonResource } from "./TouchButtonResource.js";
 export class TouchButton extends Paintable {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createButton(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): TouchButton{
     //var touchButtonInput = touchButtonInput

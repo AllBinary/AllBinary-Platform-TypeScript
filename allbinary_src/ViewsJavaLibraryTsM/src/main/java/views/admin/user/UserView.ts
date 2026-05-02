@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { UserDomNode } from "../../../org/allbinary/business/user/UserDomNode.js";
 
     
@@ -81,7 +83,7 @@ this.addDomNodeInterface(new UserDomNode(this.user) as DomNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

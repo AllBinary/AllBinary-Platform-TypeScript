@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
@@ -390,7 +392,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateCommand(command: Command){
 var command = command

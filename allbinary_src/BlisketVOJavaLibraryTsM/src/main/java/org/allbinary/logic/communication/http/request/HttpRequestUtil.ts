@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AbPathData } from "../../../../../../org/allbinary/logic/io/path/AbPathData.js";
 
     
@@ -90,7 +92,7 @@ var requestPath = requestPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generateFileName(requestPath: string): string{
 var requestPath = requestPath

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";

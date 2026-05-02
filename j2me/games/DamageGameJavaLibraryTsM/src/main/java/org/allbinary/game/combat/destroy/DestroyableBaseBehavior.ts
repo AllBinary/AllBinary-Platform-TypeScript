@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -72,13 +74,13 @@ export class DestroyableBaseBehavior
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isDestroyed(): boolean{
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                            throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
 }
 

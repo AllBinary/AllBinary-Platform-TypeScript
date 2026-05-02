@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
             import { Thread } from "../../../../../java/lang/Thread.js";
@@ -522,7 +524,7 @@ this.select(this.canvasJPanelList!.size() -1);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     duplicate(treeNode: MutableTreeNode){
 var treeNode = treeNode
@@ -550,7 +552,7 @@ this.initDuplicate(canvasJPanel!.duplicate());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public autoRotate(increments: number, totalAngle: number){
 var increments = increments
@@ -594,7 +596,7 @@ canvasJPanel!.explodeAll();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public autoExplode(numberOfFrames: number, explodeType: number){
 var numberOfFrames = numberOfFrames
@@ -624,7 +626,7 @@ this.initDuplicate(newCanvasJPanel);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public autoMirror(){
 
@@ -704,7 +706,7 @@ var treeNode = treeNode
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDocument(): Document{
 document= DomHelper.getInstance()!.createDocument();
@@ -860,7 +862,7 @@ this.select(frameInt);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicate(evt: MyCanvasEvent){
 var evt = evt
@@ -921,7 +923,7 @@ this.explodeAll();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public autoExplode(evt: MyCanvasEvent){
 var evt = evt
@@ -930,7 +932,7 @@ this.autoExplode(10, 0);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public center(){
 
@@ -942,7 +944,7 @@ canvasJPanel!.center();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public center(evt: MyCanvasEvent){
 var evt = evt

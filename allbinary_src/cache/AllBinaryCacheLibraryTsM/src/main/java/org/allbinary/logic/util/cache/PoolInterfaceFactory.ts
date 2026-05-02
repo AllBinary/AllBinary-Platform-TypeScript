@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -50,7 +52,7 @@ export class PoolInterfaceFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface, poolType: PoolType, cachePolicy: CachePolicy): PoolInterface{
 var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
@@ -59,7 +61,7 @@ var cachePolicy = cachePolicy
 
 
 
-                            throw new Error("No Such PoolType: " +poolType!.toString());
+                            throw new Exception("No Such PoolType: " +poolType!.toString());
                     
 }
 

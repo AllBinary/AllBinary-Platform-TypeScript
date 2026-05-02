@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CollidableBaseBehavior } from "../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js";
 
     
@@ -96,7 +98,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -126,7 +128,7 @@ ForcedLogUtil.log("No Longer Used", this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -94,7 +96,7 @@ this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
@@ -130,7 +132,7 @@ osgiServiceInterface= vector.get(index) as OSGIServiceInterface;
                                     
 
 
-                            throw new Error("Unable to process service: " +osgiServiceInterface);
+                            throw new Exception("Unable to process service: " +osgiServiceInterface);
                     
 
                                     }
@@ -140,7 +142,7 @@ osgiServiceInterface= vector.get(index) as OSGIServiceInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getServiceReferences(): ServiceReference[]{
 

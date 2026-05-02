@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -97,7 +99,7 @@ this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFront
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getShippingInterface(name: string): ShippingInterface{
 var name = name
@@ -145,12 +147,12 @@ shipping= this.shippingVector!.get(index) as ShippingInterface;
 
 
 
-                            throw new Error(error);
+                            throw new Exception(error);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDefault(): ShippingInterface{
 

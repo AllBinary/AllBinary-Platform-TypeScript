@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -45,15 +47,15 @@
 export interface CacheInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     add(cacheableInterface: CacheableInterface)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addArray(cacheableInterfaces: CacheableInterface[])
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     clear()
 

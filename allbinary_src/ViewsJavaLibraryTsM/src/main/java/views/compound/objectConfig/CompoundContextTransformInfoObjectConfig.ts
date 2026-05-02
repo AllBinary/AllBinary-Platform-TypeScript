@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../java/io/ByteArrayInputStream.js";
 
     
@@ -140,7 +142,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(): string{
 
@@ -283,7 +285,7 @@ rootView= replace.all(rootView);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createInputStream(): InputStream{
 

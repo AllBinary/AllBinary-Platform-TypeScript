@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -76,7 +78,7 @@ public constructor (){
                             
 
 
-                            throw new Error("Not Such Feature");
+                            throw new Exception("Not Such Feature");
                     
 
                         }
@@ -101,13 +103,13 @@ this.allBinaryGyroSensor= allBinaryGyroSensor;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     updateGameKeyEvents(orientation: Orientation, yaw: number, pitch: number, roll: number){
 var orientation = orientation

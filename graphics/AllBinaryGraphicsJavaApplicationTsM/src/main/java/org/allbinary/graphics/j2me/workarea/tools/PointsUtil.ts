@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { VectorRotationGenerator } from "../../../../../../org/allbinary/animation/VectorRotationGenerator.js";
 
     
@@ -70,7 +72,7 @@ export class PointsUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public doTransforms(pointVector: BasicArrayList, angle: number, fulcrumPoint: GPoint): BasicArrayList{
 var pointVector = pointVector

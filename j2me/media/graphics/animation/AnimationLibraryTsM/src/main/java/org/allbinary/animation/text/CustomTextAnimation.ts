@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { Font } from "../../../../javax/microedition/lcdui/Font.js";
 
     

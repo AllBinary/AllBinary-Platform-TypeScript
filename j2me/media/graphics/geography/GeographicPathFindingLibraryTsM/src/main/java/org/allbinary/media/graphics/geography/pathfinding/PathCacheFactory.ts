@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
@@ -103,7 +105,7 @@ this.hashtable.remove(pathId);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public removeAll(){
 this.hashtable.clear();
@@ -115,7 +117,7 @@ this.hashtable.clear();
                                     
 
 
-                            throw new Error("Did not clear");
+                            throw new Exception("Did not clear");
                     
 
                                     }
@@ -123,7 +125,7 @@ this.hashtable.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrCreate(pathIdInteger: number): BasicArrayList{
     //var pathIdInteger = pathIdInteger

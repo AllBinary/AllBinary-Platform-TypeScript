@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -192,14 +194,14 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addMapping(inputToGameKeyMapping: InputToGameKeyMapping){
     //var inputToGameKeyMapping = inputToGameKeyMapping
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

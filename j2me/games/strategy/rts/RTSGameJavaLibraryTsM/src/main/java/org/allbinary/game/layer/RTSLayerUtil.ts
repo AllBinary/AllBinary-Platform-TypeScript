@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -421,7 +423,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public destroyAndClear(list: BasicArrayList){
 var list = list

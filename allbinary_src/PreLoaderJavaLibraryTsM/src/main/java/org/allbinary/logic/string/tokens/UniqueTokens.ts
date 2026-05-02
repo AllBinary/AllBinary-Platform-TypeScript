@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { NumberFormatException } from "../../../../../java/lang/NumberFormatException.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { HashSet } from "../../../../../java/util/HashSet.js";
@@ -128,7 +132,7 @@ this.specialCharacters!.add("`");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWhithoutDashesAndSkipNumberOnlyTokens(stringVector: Vector): HashSet{
 var stringVector = stringVector

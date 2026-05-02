@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -74,7 +76,7 @@ this.file= file;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 
@@ -86,7 +88,7 @@ this.file= file;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 
@@ -112,7 +114,7 @@ filePropertyVector!.add(this.file.getPath());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 

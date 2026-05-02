@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../java/lang/Long.js";
@@ -136,7 +138,7 @@ this.setTimeDelayHelper(new TimeDelayHelper(Integer(Integer.valueOf(interval))))
                             
 
 
-                            throw new Error("Time Interval Action Script Condition Unknown Node");
+                            throw new Exception("Time Interval Action Script Condition Unknown Node");
                     
 
                         }
@@ -150,7 +152,7 @@ this.setTimeDelayHelper(new TimeDelayHelper(Integer(Integer.valueOf(interval))))
                             
 
 
-                            throw new Error("Time Interval Action Script Condition Node Null");
+                            throw new Exception("Time Interval Action Script Condition Node Null");
                     
 
                         }
@@ -202,7 +204,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -244,7 +246,7 @@ this.timeHelper= timeHelper;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public shouldProcess(frame: number): boolean{
 var frame = frame

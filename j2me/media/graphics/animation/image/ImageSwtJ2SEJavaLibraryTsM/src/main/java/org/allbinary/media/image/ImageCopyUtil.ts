@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -133,7 +135,7 @@ private constructor (){
 
     private readonly NO_COPY: string = "SWT should not copy images after initial loading as the alpha is not honored";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -169,7 +171,7 @@ image= this.openGLUtil!.add(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -252,7 +254,7 @@ image= this.openGLUtil!.add(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageWH(originalImage: Image, width: number, height: number, mutable: boolean): Image{
     //var originalImage = originalImage
@@ -401,7 +403,7 @@ image= this.openGLUtil!.add(image);
 
     private readonly LEADERBOARD: string = "leaderboard";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage2(originalImage: Image, width: number, height: number, mutable: boolean): Image{
     //var originalImage = originalImage
@@ -651,7 +653,7 @@ image= this.openGLUtil!.add(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage

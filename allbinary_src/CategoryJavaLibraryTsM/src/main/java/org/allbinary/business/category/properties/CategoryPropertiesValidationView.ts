@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -72,7 +74,7 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 
@@ -84,7 +86,7 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 
@@ -125,7 +127,7 @@ stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -137,7 +139,7 @@ stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document

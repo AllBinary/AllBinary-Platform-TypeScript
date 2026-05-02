@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { XmlAccessType } from "../../../../../../javax/xml/bind/annotation/XmlAccessType.js";
 
     
@@ -151,7 +155,7 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(abeClientInformation: AbeClientInformationInterface, node: Node){
     //var abeClientInformation = abeClientInformation
@@ -227,7 +231,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDomNode(document: Document): Node{
 var document = document

@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -103,7 +105,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle

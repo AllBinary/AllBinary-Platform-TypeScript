@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Item } from "../../../../javax/microedition/lcdui/Item.js";
@@ -84,7 +86,7 @@ export class GameConfigurationUtil
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public change(gameOptionsForm: GameOptionsForm, gauge: GameConfigurationGauge){
 var gameOptionsForm = gameOptionsForm
@@ -110,7 +112,7 @@ this.updateChallange(gameOptionsForm, gameConfiguration);
 
     private readonly TO: string = " to: ";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(gauge: GameConfigurationGauge){
 var gauge = gauge
@@ -153,7 +155,7 @@ gameConfiguration!.setValue(value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDefault(gauge: GameConfigurationGauge){
 var gauge = gauge
@@ -186,7 +188,7 @@ gameConfiguration!.setValue(gameConfiguration!.getDefaultValue());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateChallange(gameOptionsForm: GameOptionsForm, gameConfiguration: GameConfiguration){
 var gameOptionsForm = gameOptionsForm

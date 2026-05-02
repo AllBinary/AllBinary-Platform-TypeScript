@@ -22,10 +22,11 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../java/lang/Long.js";
         
-
-//import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { Vector } from "../../../../java/util/Vector.js";
@@ -119,7 +120,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFile(filePathName: string, name: string){

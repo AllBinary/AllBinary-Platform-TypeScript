@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryTiledLayer } from "../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
 
     
@@ -108,7 +110,7 @@ this.pathFinder= new PathFinder();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, mapArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
@@ -134,7 +136,7 @@ pathFindingInfo!.setPathFinder(this.pathFinder);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
@@ -147,7 +149,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     buildPathFindingNodesForCellPosition(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][], cellPosition: GeographicMapCellPosition){
     //var geographicMapInterface = geographicMapInterface
@@ -157,7 +159,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface

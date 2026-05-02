@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
 import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
@@ -200,7 +202,7 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
                             
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("OS Not Supported: ")!.append(osName)!.toString());
                     
 

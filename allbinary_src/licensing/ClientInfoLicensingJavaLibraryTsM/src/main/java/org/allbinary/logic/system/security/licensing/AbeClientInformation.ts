@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LicenseInitInfo } from "../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
 
     

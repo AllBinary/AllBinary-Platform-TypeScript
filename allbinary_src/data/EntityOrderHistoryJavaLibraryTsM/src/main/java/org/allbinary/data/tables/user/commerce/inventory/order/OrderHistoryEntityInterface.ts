@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -68,23 +70,23 @@ export interface OrderHistoryEntityInterface extends BasicDataTableInterface {
 
     setPaymentMethod(orderId: string, status: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getOrders(userName: string): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getOrders(status: string, fromDate: string, toDate: string): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getOrder(id: string): OrderHistory
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
 

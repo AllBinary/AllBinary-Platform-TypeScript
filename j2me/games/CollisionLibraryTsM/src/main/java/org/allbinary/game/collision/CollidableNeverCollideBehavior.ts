@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
 
     
@@ -79,7 +81,7 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collide(allbinaryCollidableLayer: CollidableCompositeLayer){
 var allbinaryCollidableLayer = allbinaryCollidableLayer

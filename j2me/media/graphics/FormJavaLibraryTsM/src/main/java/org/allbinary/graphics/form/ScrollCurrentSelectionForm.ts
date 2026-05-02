@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -92,7 +94,7 @@ this.initForm();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle
@@ -336,7 +338,7 @@ item= this.get(index) as CustomItemInterface;
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }
@@ -389,7 +391,7 @@ this.paintable.paint(graphics, index, deltaX +diffX, deltaY);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }

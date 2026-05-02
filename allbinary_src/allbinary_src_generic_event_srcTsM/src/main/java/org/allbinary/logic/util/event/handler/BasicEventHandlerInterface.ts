@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -52,7 +54,7 @@ export interface BasicEventHandlerInterface {
 
     addListener(eventListenerInterface: EventListenerInterface)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fireEvent(eventObject: AllBinaryEventObject)
 

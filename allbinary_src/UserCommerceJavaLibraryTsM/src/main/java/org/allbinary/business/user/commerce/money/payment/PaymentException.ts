@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -41,7 +43,7 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class PaymentException extends Error {
+export class PaymentException extends Exception {
         
 public constructor (error: string){
             super(error);

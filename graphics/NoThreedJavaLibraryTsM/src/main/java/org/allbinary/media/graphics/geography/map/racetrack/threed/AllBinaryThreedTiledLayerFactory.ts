@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryTiledLayer } from "../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
 
     
@@ -67,7 +69,7 @@ export class AllBinaryThreedTiledLayerFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
 var raceTrackInfo = raceTrackInfo
@@ -75,7 +77,7 @@ var raceTrackData = raceTrackData
 
 
 
-                            throw new Error("No Threed");
+                            throw new Exception("No Threed");
                     
 }
 

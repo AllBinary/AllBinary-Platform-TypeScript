@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -162,7 +166,7 @@ this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initPosition(){
 this.setPosition(this.initX, this.initY, this.initZ);
@@ -170,7 +174,7 @@ this.setPosition(this.initX, this.initY, this.initZ);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initPositionXYZ(x: number, y: number, z: number){
     //var x = x
@@ -192,7 +196,7 @@ super.paint(graphics);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -200,30 +204,30 @@ super.paint(graphics);
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDamage(damageType: number): number{
     //var damageType = damageType
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isDestroyed(): boolean{
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -245,7 +249,7 @@ this.groupInterface= teamInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -325,43 +329,43 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public up(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public down(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public right(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public left(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public strafeLeft(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public strafeRight(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -369,7 +373,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -377,7 +381,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -385,7 +389,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -393,7 +397,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -401,7 +405,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -409,35 +413,35 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public upAnalog(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public downAnalog(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public rightAnalog(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public leftAnalog(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public rightTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
     //var layerManager = layerManager
@@ -446,7 +450,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public leftTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
     //var layerManager = layerManager
@@ -477,7 +481,7 @@ this.pickupBehavior= pickupBehavior;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addPart(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface){
     //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface

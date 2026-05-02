@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { DomDocumentHelper } from "../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -167,7 +169,7 @@ this.transformInfoInterface= transformInfoInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDoc(): Document{
 
@@ -198,7 +200,7 @@ this.transformInfoInterface= transformInfoInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

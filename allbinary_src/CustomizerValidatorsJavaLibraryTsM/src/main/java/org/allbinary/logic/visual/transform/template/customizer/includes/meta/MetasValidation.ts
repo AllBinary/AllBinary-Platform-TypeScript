@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../../../java/util/Vector.js";
 
     
@@ -128,7 +130,7 @@ public constructor (document: Document){
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                            throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
 }
 
@@ -228,7 +230,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

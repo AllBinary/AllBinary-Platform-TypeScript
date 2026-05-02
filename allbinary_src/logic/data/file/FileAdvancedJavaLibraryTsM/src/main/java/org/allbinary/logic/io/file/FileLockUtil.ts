@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { FileChannel } from "../../../../../java/nio/channels/FileChannel.js";
 
     
@@ -84,7 +86,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAll(vector: Vector, isReturnOnFailure: boolean): Vector{
 var vector = vector
@@ -154,7 +156,7 @@ this.logUtil!.putF("Total Locks Obtained: " +fileLockVector!.length, this, "getA
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAllPossible(vector: Vector): Vector{
 var vector = vector
@@ -167,7 +169,7 @@ var vector = vector
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAllOrNone(vector: Vector): Vector{
 var vector = vector
@@ -201,7 +203,7 @@ var vector = vector
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getLock(file: AbFile): FileLock{
 var file = file
@@ -234,7 +236,7 @@ this.logUtil!.put("Exception returns null", this, "getLock", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getLock(fileOutputStream: AbFileOutputStream): FileLock{
 var fileOutputStream = fileOutputStream
@@ -275,7 +277,7 @@ StreamUtil.getInstance()!.close(fileOutputStream);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getLock(fileChannel: FileChannel): FileLock{
 var fileChannel = fileChannel

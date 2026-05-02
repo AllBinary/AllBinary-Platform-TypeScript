@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -44,11 +46,11 @@
 export interface InputAutomationBundleActivatorListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     registerAsService()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     useServices()
 

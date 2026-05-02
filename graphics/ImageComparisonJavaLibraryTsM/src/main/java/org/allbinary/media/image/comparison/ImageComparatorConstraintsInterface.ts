@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../../java/awt.js";
 
     
@@ -63,7 +65,7 @@ export interface ImageComparatorConstraintsInterface {
 
     isColorAllowed(frame: number, point: GPoint, color: Color): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isImageValid(bufferedImage: BufferedImage): boolean
 

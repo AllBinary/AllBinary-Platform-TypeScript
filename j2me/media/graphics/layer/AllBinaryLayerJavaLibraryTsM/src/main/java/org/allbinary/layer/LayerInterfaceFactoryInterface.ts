@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
@@ -48,7 +50,7 @@ import { Hashtable } from "../../../java/util/Hashtable.js";
 export interface LayerInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer
 

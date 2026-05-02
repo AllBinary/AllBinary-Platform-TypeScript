@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -156,14 +158,14 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL){
 var gl = gl
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

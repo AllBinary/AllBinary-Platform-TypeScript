@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
@@ -71,7 +73,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileInputStreamInstance(path: string, fileName: string): AbFileInputStream{
 var path = path
@@ -93,7 +95,7 @@ var fileName = fileName
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
 var path = path
@@ -126,7 +128,7 @@ file.createNewFile();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public delete(path: string, fileName: string){
 var path = path

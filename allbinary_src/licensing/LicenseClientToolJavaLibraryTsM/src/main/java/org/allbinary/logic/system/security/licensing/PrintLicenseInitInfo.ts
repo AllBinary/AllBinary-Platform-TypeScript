@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../../java/lang/System.js";
         
 import { LicenseInitInfo } from "../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
@@ -65,7 +67,7 @@ export class PrintLicenseInitInfo
 
     public static readonly PATH: string = "G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static main(args: string[]){
 var args = args
@@ -86,7 +88,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_G
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getLicenseInitInfo(): LicenseInitInfo{
 

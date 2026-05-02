@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
 
     
@@ -54,7 +56,7 @@ export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
 
     private readonly gyroSensorUpdateProcessor: Processor = new GyroSensorUpdateProcessor();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(anyType: any = {}){
 var anyType = anyType
@@ -63,7 +65,7 @@ this.setNoSensors();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public sendNotifications(anyType: any = {}){
 var anyType = anyType

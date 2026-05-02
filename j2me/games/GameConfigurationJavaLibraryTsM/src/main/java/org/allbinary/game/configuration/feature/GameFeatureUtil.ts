@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Enumeration } from "../../../../../java/util/Enumeration.js";
 
     
@@ -96,7 +98,7 @@ export class GameFeatureUtil
 
     public readonly GAME_FEATURE_CHANGED: string = "Game Feature Changed: ";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDefault(choiceGroup: ChoiceGroup){
 var choiceGroup = choiceGroup
@@ -190,7 +192,7 @@ choiceGroup!.setSelectedIndex(index, false);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateMultiple(choiceGroup: ChoiceGroup){
 var choiceGroup = choiceGroup
@@ -283,7 +285,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateExclusiveForChoiceGroup(choiceGroup: ChoiceGroup){
 var choiceGroup = choiceGroup
@@ -398,7 +400,7 @@ name= this.enumerationUtil!.nextElement(enumeration)! as string;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     updateExclusive(selectedChoiceLabel: string){
     //var selectedChoiceLabel = selectedChoiceLabel
@@ -449,7 +451,7 @@ this.updateExclusiveList(gameFeature, basicArrayList);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateExclusiveList(gameFeature: Feature, list: BasicArrayList){
 var gameFeature = gameFeature

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
@@ -155,7 +157,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
                                     
 
 
-                            throw new Error("Help Paintable Exception");
+                            throw new Exception("Help Paintable Exception");
                     
 
                                     }
@@ -264,7 +266,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -317,7 +319,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     gameActionCrud(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -391,7 +393,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addNewMapping(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -444,7 +446,7 @@ this.setSelectedAction(gameKey);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     deleteCurrentMapping(){
 
@@ -493,7 +495,7 @@ this.update();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDefault(){
 this.inputMapping!.setDefault(this.abeClientInformation);
@@ -505,7 +507,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(){
 this.inputMapping!.update(this.abeClientInformation);

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -61,7 +63,7 @@ export class ImageCompleteUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitFor(image: Image, name: string){
 var image = image

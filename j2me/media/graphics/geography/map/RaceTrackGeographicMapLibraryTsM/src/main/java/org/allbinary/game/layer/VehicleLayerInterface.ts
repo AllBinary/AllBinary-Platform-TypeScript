@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -79,7 +81,7 @@ export interface VehicleLayerInterface extends LayerInterface, VehicleProperties
 
     getFinalPosition(): number
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     handleFinish()
 

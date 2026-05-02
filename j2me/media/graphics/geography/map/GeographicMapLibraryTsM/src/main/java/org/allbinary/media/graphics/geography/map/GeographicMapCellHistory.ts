@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -490,7 +492,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isAllVisited(): boolean{
 
@@ -519,7 +521,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isAllVisited2(): boolean{
 
@@ -548,7 +550,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isPortionVisited(basicDecimal: BasicDecimal): boolean{
     //var basicDecimal = basicDecimal
@@ -590,7 +592,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public reset(){
 

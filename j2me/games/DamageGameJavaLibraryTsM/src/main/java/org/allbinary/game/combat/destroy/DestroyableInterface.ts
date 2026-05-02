@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { NamedInterface } from "../../../../../org/allbinary/layer/NamedInterface.js";
 
     
@@ -47,7 +49,7 @@ import { NamedInterface } from "../../../../../org/allbinary/layer/NamedInterfac
 export interface DestroyableInterface extends NamedInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isDestroyed(): boolean
 

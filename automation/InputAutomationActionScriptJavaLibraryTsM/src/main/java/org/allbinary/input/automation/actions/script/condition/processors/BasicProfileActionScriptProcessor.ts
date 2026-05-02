@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { ActionEvent } from "../../../../../../../../java/awt/event/ActionEvent.js";
 
     
@@ -112,7 +114,7 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

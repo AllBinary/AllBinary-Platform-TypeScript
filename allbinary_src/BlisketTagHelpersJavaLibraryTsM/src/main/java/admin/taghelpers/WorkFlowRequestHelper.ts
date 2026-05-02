@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -90,7 +92,7 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public delete(): string{
 
@@ -142,7 +144,7 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
 
 
 
-                            throw new Error(e);
+                            throw new Exception(e);
                     
 
                 //: 

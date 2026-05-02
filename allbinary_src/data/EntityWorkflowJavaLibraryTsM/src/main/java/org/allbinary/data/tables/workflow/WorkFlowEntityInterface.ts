@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -61,7 +63,7 @@ export interface WorkFlowEntityInterface extends BasicDataTableInterface {
 
     get(storeName: string): Vector
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     get(name: string, storeName: string): WorkFlowInterface
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -56,7 +58,7 @@ export class AllBinaryMediaManagerShutdown
 
     private static readonly instance: AllBinaryMediaManagerShutdown = new AllBinaryMediaManagerShutdown();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface

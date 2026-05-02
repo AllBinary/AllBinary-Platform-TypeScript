@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -44,7 +46,7 @@
 export interface UpdateInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update()
 

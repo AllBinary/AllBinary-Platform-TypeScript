@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Command } from "../../../../javax/microedition/lcdui/Command.js";
 
     
@@ -294,7 +296,7 @@ super.set(itemNum, item);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -313,7 +315,7 @@ this.selectedAnimationArray[index]!.paintXY(graphics, x, y);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics

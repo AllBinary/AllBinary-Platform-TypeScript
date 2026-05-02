@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
 
     
@@ -54,15 +56,15 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 export interface CollidableInterface extends NamedInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isCollidable(): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isCollision(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer)
 

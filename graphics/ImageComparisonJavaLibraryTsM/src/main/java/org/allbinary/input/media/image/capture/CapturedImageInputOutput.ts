@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
@@ -87,7 +89,7 @@ export class CapturedImageInputOutput
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(frame: number){
 var frame = frame

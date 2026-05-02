@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
@@ -181,7 +183,7 @@ this.paymentTypeVector!.add(paymentType);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(paymentTypeString: string): PaymentType{
 var paymentTypeString = paymentTypeString
@@ -219,12 +221,12 @@ i < size; i++)
 
 
 
-                            throw new Error("Unknown PaymentType: " +paymentTypeString);
+                            throw new Exception("Unknown PaymentType: " +paymentTypeString);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initDefault(storeName: string){
 var storeName = storeName
@@ -318,7 +320,7 @@ index < nodeList!.getLength(); index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDefault(storeName: string): PaymentType{
 var storeName = storeName
@@ -349,7 +351,7 @@ this.initDefault(storeName);
 
 
 
-                            throw new Error("No Default: " +this.defaultName);
+                            throw new Exception("No Default: " +this.defaultName);
                     
 }
 

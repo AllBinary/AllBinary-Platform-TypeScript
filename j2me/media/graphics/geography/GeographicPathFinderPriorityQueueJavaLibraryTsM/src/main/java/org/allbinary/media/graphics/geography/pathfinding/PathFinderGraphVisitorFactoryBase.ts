@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -109,7 +111,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     collideNone(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -206,7 +208,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
             
     private readonly simpleSteeringVisitor: SimpleSteeringVisitor = new SimpleSteeringVisitor();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     steer(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -261,12 +263,12 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 
 
 
-                            throw new Error("Error");
+                            throw new Exception("Error");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     chase(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -310,7 +312,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     collideUnit(unitLayer: UnitLayer){
     //var unitLayer = unitLayer

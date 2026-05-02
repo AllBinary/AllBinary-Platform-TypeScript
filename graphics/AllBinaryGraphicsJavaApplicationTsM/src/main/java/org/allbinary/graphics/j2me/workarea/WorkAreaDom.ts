@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { DomHelper } from "../../../../../org/allbinary/dom/DomHelper.js";
 
     
@@ -113,7 +115,7 @@ this.name= nameTextNode!.getNodeValue();
                             
 
 
-                            throw new Error("Wrong Number of WorkAreas: " +numberOfworkAreas);
+                            throw new Exception("Wrong Number of WorkAreas: " +numberOfworkAreas);
                     
 
                         }
@@ -127,7 +129,7 @@ this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.F
                             
 
 
-                            throw new Error("workArea Node Not Found");
+                            throw new Exception("workArea Node Not Found");
                     
 
                         }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { NewUserFactory } from "../../../org/allbinary/business/user/NewUserFactory.js";
 
     
@@ -246,7 +248,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

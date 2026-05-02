@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
 
     
@@ -85,7 +87,7 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo);
@@ -95,7 +97,7 @@ this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vector
 
     private readonly vectorExplosionGenerator: VectorExplosionGenerator = VectorExplosionGenerator.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

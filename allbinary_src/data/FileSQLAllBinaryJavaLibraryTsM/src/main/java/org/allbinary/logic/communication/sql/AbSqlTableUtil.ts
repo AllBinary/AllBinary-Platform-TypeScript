@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";

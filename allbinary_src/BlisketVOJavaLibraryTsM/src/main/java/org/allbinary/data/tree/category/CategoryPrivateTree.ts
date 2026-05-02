@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CategoryComponent } from "../../../../../org/allbinary/business/category/CategoryComponent.js";
 
     
@@ -98,7 +100,7 @@ this.categoryFactoryInterface= categoryFactoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     save(categoryInterface: CategoryInterface){
@@ -135,7 +137,7 @@ cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     delete(categoryInterface: CategoryInterface){

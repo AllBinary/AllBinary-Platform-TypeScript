@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -69,7 +71,7 @@ this.logUtil!.putF("Null Gesture Reciever", this, commonStrings!.CONSTRUCTOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onMotionGestureCompleted(list: BasicArrayList){
 var list = list

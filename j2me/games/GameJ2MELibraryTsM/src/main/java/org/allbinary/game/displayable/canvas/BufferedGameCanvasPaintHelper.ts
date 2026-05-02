@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -87,7 +89,7 @@ public constructor (gameCanvas: AllBinaryGameCanvas){
 
 
 
-                            throw new Error("No Longer Used");
+                            throw new Exception("No Longer Used");
                     
 }
 

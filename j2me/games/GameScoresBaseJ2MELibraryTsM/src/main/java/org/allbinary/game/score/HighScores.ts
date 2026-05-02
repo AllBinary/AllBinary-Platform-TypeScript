@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -161,7 +163,7 @@ this.orderedHighScoresList!.add(newHighScore);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isBestScore(newHighScore: HighScore): boolean{
 var newHighScore = newHighScore

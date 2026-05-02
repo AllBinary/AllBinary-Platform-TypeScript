@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -50,7 +52,7 @@ import { CacheableInterface } from "./CacheableInterface.js";
 export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implements CacheInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createCache(size: number): IndexedBasicArrayListCache{
 var size = size
@@ -80,7 +82,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(size: number){
 var size = size
@@ -121,13 +123,13 @@ var index = index
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addDefault(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addObject(anyType: Object){
 var anyType = anyType
@@ -136,7 +138,7 @@ this.list.add(anyType);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
@@ -145,14 +147,14 @@ this.list.add(cacheableInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addArray(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces
 
 
 
-                            throw new Error("No Imple");
+                            throw new Exception("No Imple");
                     
 }
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../java/lang/Runnable.js";
@@ -52,7 +54,7 @@ export interface RunnableInterface extends Runnable {
 
     setRunning(isRunning: boolean)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setThread(thread: Thread)
 

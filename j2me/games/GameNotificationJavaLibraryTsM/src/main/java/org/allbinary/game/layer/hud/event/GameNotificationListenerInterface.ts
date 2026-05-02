@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { EventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
 
     
@@ -48,7 +50,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 export interface GameNotificationListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent)
 

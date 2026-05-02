@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { MyRandomFactory } from "../../../../../org/allbinary/game/rand/MyRandomFactory.js";
 
     
@@ -176,7 +178,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(anyType: any = {}): any{
 var anyType = anyType
@@ -191,7 +193,7 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     tryAnother(anyType: any = {}): any{
 var anyType = anyType
@@ -232,7 +234,7 @@ var anyType = anyType
 
 
 
-                            throw new Error("Tried All Servers But Still Failed");
+                            throw new Exception("Tried All Servers But Still Failed");
                     
 }
 

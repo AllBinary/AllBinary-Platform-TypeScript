@@ -22,11 +22,14 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../../java/lang/RuntimeException.js";
+        
 import { File } from "../../../../../../../java/io/File.js";
 
     
-
-//import { IOException } from "../../../../../../../java/io/IOException.js";
+import { IOException } from "../../../../../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../../../../../java/io/InputStream.js";
@@ -220,26 +223,26 @@ var encoding = encoding
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(file: File){
 var file = file
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(file: AbFile){
 var file = file
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

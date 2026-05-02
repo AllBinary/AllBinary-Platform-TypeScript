@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
     
@@ -52,7 +54,7 @@ export class GraphicItemBuilder
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(node: Node): GraphicItemInterface{
 var node = node
@@ -77,7 +79,7 @@ var node = node
                             
 
 
-                            throw new Error("Graphic Item Does Not Exist: " +graphicItemName);
+                            throw new Exception("Graphic Item Does Not Exist: " +graphicItemName);
                     
 
                         }

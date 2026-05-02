@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { CssPropertyView } from "../../../../../../../../../org/allbinary/logic/visual/dhtml/style/css/property/CssPropertyView.js";
 
     

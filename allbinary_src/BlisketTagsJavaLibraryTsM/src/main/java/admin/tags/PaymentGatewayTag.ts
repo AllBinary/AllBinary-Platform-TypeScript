@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { Method } from "../../java/lang/reflect/Method.js";
 
     
@@ -74,7 +76,7 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
 }
 
 
-                //@Throws(LicensingException::class, Error::class)
+                //@Throws(LicensingException::class, Exception::class)
             
     public process(): string{
 

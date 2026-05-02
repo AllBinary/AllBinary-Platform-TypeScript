@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -98,7 +100,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 
@@ -225,7 +227,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 

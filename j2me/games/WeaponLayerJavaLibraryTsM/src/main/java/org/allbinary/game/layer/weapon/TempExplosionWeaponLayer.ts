@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -78,7 +80,7 @@ this.timeDelayHelper!.delay= timeDelay;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

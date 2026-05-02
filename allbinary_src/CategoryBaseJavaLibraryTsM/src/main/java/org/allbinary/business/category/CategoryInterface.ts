@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -70,7 +72,7 @@ export interface CategoryInterface extends TableMappingInterface, ValidationInte
 
     removeChild(categoryInterface: CategoryInterface): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isLeaf(): boolean
 
@@ -82,23 +84,23 @@ export interface CategoryInterface extends TableMappingInterface, ValidationInte
 
     setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getPath(): AbPath
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFilePath(): AbPath
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getWebAppPath(): AbPath
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getRootFilePath(): AbPath
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     log()
 

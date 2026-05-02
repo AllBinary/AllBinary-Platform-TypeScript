@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { StreetAddress } from "../../../../org/allbinary/business/user/address/StreetAddress.js";
 
     
@@ -69,7 +71,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 this.streetAddress= new StreetAddress(this.getRequest());

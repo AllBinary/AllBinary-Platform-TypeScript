@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../java/util/Vector.js";
 
     
@@ -109,7 +111,7 @@ export class InventorySearchProductUtil
 
     private readonly ITEM_NOT_FOUND: string = "Item Not Found.";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getProduct(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, product: string): string{
     //var abeClientInformation = abeClientInformation
@@ -182,7 +184,7 @@ viewDocumentInterface!.getBaseNode()!.appendChild(new BasicItemView(itemInterfac
 
 
 
-                            throw new Error("Failed to getProduct");
+                            throw new Exception("Failed to getProduct");
                     
 }
 

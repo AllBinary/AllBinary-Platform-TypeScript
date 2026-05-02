@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -105,7 +107,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(aParentViewName: string){
 var aParentViewName = aParentViewName

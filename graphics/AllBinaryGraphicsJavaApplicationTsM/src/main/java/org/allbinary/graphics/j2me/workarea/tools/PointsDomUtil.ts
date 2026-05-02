@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
@@ -95,7 +97,7 @@ export class PointsDomUtil
 
     private readonly LINE: string = "line";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDom(canvasDom: CanvasDom, pointVector: BasicArrayList): Node{
 var canvasDom = canvasDom

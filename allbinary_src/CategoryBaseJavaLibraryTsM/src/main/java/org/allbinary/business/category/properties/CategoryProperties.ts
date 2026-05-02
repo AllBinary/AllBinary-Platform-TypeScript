@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -165,7 +167,7 @@ this.category= .toCharArray();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
 var categoryHierarchyInterface = categoryHierarchyInterface
@@ -246,7 +248,7 @@ depthIndex++;
                                     
 
 
-                            throw new Error("Probably Major Error");
+                            throw new Exception("Probably Major Error");
                     
 
                                     }
@@ -306,13 +308,13 @@ pathStringBuffer!.append(abPathData!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWebAppPath(): AbPath{
 
 
 
-                            throw new Error("Not Root");
+                            throw new Exception("Not Root");
                     
 }
 
@@ -379,7 +381,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -391,7 +393,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -404,7 +406,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 

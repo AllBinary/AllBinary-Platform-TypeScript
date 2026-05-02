@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { DataInputStream } from "../../../../../../../java/io/DataInputStream.js";
 
     
@@ -136,7 +138,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     read(){
 
@@ -159,7 +161,7 @@ PreLogUtil.put(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(){
 

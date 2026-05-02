@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -118,7 +120,7 @@ this.trackingList= new BasicArrayListD();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

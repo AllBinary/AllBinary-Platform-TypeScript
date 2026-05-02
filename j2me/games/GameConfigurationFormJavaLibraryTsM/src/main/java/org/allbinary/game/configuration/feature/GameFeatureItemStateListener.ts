@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
 
     

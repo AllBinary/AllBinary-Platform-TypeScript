@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -63,7 +65,7 @@ import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic
 export class TimeHudWidget extends BasicHud {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(location: number, direction: number, basicColor: BasicColor, timer: Timer): TimeHudWidget{
 var location = location
@@ -120,7 +122,7 @@ this.offset= myFont!.stringWidth(this.TIME_STRING) +myFont!.defaultStringWidth(3
                                     
 
 
-                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
+                            throw new Exception(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
                     
 
                                     }

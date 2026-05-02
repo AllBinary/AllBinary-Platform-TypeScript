@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BillingAddressesEntity } from "../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js";
 
     

@@ -22,6 +22,8 @@
 
 
         
+            import { IllegalArgumentException } from "../../../java/lang/IllegalArgumentException.js";
+        
 import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
     

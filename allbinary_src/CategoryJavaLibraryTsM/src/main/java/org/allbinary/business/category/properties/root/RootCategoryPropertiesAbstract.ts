@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -100,19 +104,19 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setValue(value: string){
 var value = value
 
 
 
-                            throw new Error("No Value Allowed");
+                            throw new Exception("No Value Allowed");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setRootFilePath(value: AbPath){
 var value = value
@@ -124,59 +128,59 @@ var value = value
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setRootFilePath(value: string){
 var value = value
 
 
 
-                            throw new Error("No Value Allowed");
+                            throw new Exception("No Value Allowed");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRootFilePath(): AbPath{
 
 
 
-                            throw new Error("No Value Allowed");
+                            throw new Exception("No Value Allowed");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isRealRoot(): boolean{
 
 
 
-                            throw new Error("No A Real Root");
+                            throw new Exception("No A Real Root");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isRoot(): boolean{
 
 
 
-                            throw new Error("Root but not implemented");
+                            throw new Exception("Root but not implemented");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWebAppPath(categoryHierarchyInterface: CategoryHierarchyInterface): string{
 var categoryHierarchyInterface = categoryHierarchyInterface
 
 
 
-                            throw new Error("Not Root");
+                            throw new Exception("Not Root");
                     
 }
 
@@ -244,7 +248,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -256,7 +260,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -269,7 +273,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 

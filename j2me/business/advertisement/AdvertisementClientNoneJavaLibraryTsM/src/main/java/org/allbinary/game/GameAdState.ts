@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { GameAdStateBase } from "../../../org/allbinary/business/advertisement/GameAdStateBase.js";
 
     
@@ -70,7 +72,7 @@ VirtualKeyboardEventHandler.getInstance()!.addListener(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
 var virtualKeyboardEvent = virtualKeyboardEvent

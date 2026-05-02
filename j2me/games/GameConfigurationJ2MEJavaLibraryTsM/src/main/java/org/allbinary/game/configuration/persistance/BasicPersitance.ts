@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { RecordStore } from "../../../../../javax/microedition/rms/RecordStore.js";
@@ -99,7 +101,7 @@ this.recordId= recordId;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public deleteRecoreStore(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -108,7 +110,7 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -137,7 +139,7 @@ this.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public delete(abeClientInformation: AbeClientInformationInterface, deleteId: number){
     //var abeClientInformation = abeClientInformation

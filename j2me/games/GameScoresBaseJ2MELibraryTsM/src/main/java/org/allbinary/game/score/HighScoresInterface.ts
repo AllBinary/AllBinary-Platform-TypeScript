@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -54,7 +56,7 @@ export interface HighScoresInterface {
 
     getTotal(): number
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isBestScore(newHighScore: HighScore): boolean
 

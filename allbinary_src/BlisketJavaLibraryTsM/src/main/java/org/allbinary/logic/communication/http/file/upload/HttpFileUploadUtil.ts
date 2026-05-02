@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -76,7 +78,7 @@ export class HttpFileUploadUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static log(fileItem: FileItemStream){
 var fileItem = fileItem
@@ -189,7 +191,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(anyType: any = {}): boolean{
 var anyType = anyType
@@ -216,7 +218,7 @@ var anyType = anyType
                             
 
 
-                            throw new Error("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE));
+                            throw new Exception("Object Not Instance Of FileItem but is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE));
                     
 
                         }

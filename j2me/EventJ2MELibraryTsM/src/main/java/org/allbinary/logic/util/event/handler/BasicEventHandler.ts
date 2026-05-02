@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -188,7 +190,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -224,7 +226,7 @@ index++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

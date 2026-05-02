@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Player } from "../../../../javax/microedition/media/Player.js";
 
     
@@ -51,7 +53,7 @@ export interface SoundInterface {
 
     getPlayerP(): Player
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init()
 

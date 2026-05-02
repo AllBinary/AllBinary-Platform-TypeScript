@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { OpenGLFeatureUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js";
 
     
@@ -59,7 +61,7 @@ export class HealthBarFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number): HealthBar{
 var layerInterface = layerInterface

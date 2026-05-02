@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -85,14 +87,14 @@ var layerInterface = layerInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                            throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
 }
 

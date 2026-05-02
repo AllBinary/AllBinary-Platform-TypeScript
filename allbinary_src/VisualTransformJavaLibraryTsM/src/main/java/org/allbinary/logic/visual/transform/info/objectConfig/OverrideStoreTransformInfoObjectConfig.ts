@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { AbeClientInformationInterface } from "../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
 
     
@@ -91,7 +93,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generate(objectConfigDocument: Document): Document{
 var objectConfigDocument = objectConfigDocument

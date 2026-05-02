@@ -22,10 +22,11 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
-
-//import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { URL } from "../../../../../java/net/URL.js";
@@ -64,7 +65,7 @@ export class JarUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static main(args: string[]){
 var args = args

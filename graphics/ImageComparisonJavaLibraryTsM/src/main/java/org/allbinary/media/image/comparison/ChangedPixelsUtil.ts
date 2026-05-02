@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
@@ -83,7 +85,7 @@ export class ChangedPixelsUtil
 
     private static readonly CLEAR_INT_ARRAY: number[] = new Array(1800 *1600);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static generateBufferedImageChacheables(imageComparisonInfo: ImageComparisonResult): BufferedImageCacheable[]{
 var imageComparisonInfo = imageComparisonInfo

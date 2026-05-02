@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -99,7 +101,7 @@ graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rect
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

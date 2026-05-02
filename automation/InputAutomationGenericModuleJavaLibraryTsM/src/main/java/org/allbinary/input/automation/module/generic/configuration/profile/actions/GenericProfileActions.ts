@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { DataOutputStream } from "../../../../../../../../../java/io/DataOutputStream.js";
 
     
@@ -166,7 +168,7 @@ this.fileInit(fileInputStream);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(genericProfileActionsJPanel: GenericProfileActionsJPanel){
 var genericProfileActionsJPanel = genericProfileActionsJPanel
@@ -179,7 +181,7 @@ this.setHashMap(new HashMap<any, any>());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(){
 
@@ -195,7 +197,7 @@ idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     load(){
 
@@ -224,7 +226,7 @@ this.fileInit(idFile);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fileInit(fileInputStream: FileInputStream){
 var fileInputStream = fileInputStream
@@ -285,7 +287,7 @@ index < nameNodeList!.getLength(); index++)
                             
 
 
-                            throw new Error(GenericProfileActionData.NAME +" Name Node Node Children");
+                            throw new Exception(GenericProfileActionData.NAME +" Name Node Node Children");
                     
 
                         }
@@ -299,7 +301,7 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initActions(nodeList: NodeList){
 var nodeList = nodeList
@@ -336,7 +338,7 @@ this.getDefaultListModelHelper()!.add(genericConfigurationProfileAction!.getName
                             
 
 
-                            throw new Error(GenericProfileActionData.NAME +" Node Null");
+                            throw new Exception(GenericProfileActionData.NAME +" Node Null");
                     
 
                         }
@@ -367,7 +369,7 @@ var string = string
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(name: string){
 var name = name
@@ -386,7 +388,7 @@ this.save();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(name: string){
 var name = name
@@ -417,7 +419,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -467,7 +469,7 @@ node.appendChild(nextGenericProfileAction!.toXmlNode(document));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 

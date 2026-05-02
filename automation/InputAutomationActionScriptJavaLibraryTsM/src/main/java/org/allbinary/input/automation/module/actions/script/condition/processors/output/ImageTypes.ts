@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../../../../java/util/Vector.js";
 
     
@@ -145,7 +147,7 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
                             
 
 
-                            throw new Error("ImageTypes Unknown Node");
+                            throw new Exception("ImageTypes Unknown Node");
                     
 
                         }
@@ -165,7 +167,7 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

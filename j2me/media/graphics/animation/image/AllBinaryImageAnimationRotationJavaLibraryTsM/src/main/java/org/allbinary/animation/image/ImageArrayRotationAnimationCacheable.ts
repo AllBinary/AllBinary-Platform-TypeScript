@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
 
     

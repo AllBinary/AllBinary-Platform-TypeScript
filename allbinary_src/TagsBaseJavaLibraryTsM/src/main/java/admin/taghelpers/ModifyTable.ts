@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../java/lang/RuntimeException.js";
+        
 import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
 
     
@@ -57,7 +61,7 @@ export class ModifyTable
 
     readonly tagStrings: TagStrings = TagStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public insert(): string{
 
@@ -68,7 +72,7 @@ export class ModifyTable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public delete(): string{
 
@@ -79,7 +83,7 @@ export class ModifyTable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(): string{
 

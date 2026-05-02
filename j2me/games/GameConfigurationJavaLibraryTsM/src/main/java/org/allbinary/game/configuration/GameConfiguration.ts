@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { GameFeatureEvent } from "../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js";
@@ -100,7 +102,7 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setValue(value: number){
     //var value = value
@@ -201,7 +203,7 @@ this.defaultValue= defaultValue;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDefault(){
 this.setValue(this.getDefaultValue());

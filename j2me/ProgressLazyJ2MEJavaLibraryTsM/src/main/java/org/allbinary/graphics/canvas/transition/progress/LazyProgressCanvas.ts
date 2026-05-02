@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Processor } from "../../../../../../org/allbinary/canvas/Processor.js";
 
     

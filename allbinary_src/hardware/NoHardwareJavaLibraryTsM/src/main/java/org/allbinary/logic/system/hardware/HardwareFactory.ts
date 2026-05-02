@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { OperatingSystemInterface } from "../../../../../org/allbinary/logic/system/os/OperatingSystemInterface.js";
 
     
@@ -70,7 +72,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(os: OperatingSystemInterface): HardwareInterface{
 var os = os

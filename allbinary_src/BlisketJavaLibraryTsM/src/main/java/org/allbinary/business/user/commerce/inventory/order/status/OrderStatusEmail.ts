@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { StoreFrontFactory } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
 
     
@@ -128,7 +130,7 @@ this.user= UserEntityFactory.getInstance()!.getUser(orderHistory!.getUserName())
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 this.notifyStoreAdmin();
@@ -138,7 +140,7 @@ this.notifyUser();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     notifyStoreAdmin(){
 
@@ -210,7 +212,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     notifyUser(){
 

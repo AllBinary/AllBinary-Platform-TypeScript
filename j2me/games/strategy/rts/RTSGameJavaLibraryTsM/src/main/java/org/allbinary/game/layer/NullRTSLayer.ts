@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { DestroyedEvent } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js";
 
     
@@ -88,7 +92,7 @@ export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -165,7 +169,7 @@ var eventObject = eventObject
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onDestroyed(destroyedEvent: DestroyedEvent){
 var destroyedEvent = destroyedEvent
@@ -177,7 +181,7 @@ var destroyedEvent = destroyedEvent
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

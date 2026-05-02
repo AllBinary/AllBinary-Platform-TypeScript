@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -113,7 +115,7 @@ this.resources= resources;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
     //var flagResources = flagResources
@@ -144,7 +146,7 @@ this.resources= resources;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
     //var flagResources = flagResources
@@ -174,7 +176,7 @@ this.resources= resources;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getItems(): CustomItem[]{
 

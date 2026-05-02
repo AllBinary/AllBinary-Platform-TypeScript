@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -53,14 +55,14 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(key: any = {}): CacheableInterface{
 var key = key
 
 
 
-                            throw new Error("This Factory Does Not");
+                            throw new Exception("This Factory Does Not");
                     
 }
 

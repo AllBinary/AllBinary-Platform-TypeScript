@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
 
     

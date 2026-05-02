@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -87,7 +89,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
     //var abeClientInformation = abeClientInformation
@@ -152,7 +154,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 
                                     }
@@ -161,7 +163,7 @@ stringBuffer!.append(transformInfoInterface!.getObjectFile());
                             
 
 
-                            throw new Error("No Such View Object since transformInfo is null");
+                            throw new Exception("No Such View Object since transformInfo is null");
                     
 
                         }

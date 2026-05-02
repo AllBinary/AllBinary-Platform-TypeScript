@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -185,7 +187,7 @@ import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
 export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnimationInterfaceCompositeInterface, TrackingEventListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createSimulated(): BuildingLayer{
 
@@ -314,7 +316,7 @@ super.initVisibility(rtsPlayerLayerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -355,7 +357,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
 
     readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(3000);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -568,7 +570,7 @@ this.efficiency= efficiency;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generateMoveOutOfBuildAreaPaths(){
 
@@ -700,7 +702,7 @@ this.healthBar!.paint(graphics);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -715,7 +717,7 @@ this.damageFloaters!.add(damage);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDamage(damageType: number): number{
 var damageType = damageType
@@ -764,7 +766,7 @@ VisibleCellPositionsSingleton.getInstance()!.removeStationaryCellPositions(surro
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed

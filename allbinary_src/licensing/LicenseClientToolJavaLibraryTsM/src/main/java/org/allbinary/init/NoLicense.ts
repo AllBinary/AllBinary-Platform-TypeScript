@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Globals } from "../../../org/allbinary/globals/Globals.js";
 
     
@@ -50,7 +52,7 @@ export class NoLicense
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(classLoader: ClassLoader, pathString: string){
 var classLoader = classLoader

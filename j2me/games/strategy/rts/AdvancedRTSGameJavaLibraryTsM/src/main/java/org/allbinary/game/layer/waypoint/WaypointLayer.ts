@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -172,7 +174,7 @@ var damageType = damageType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDamage(damageType: number): number{
 var damageType = damageType
@@ -185,7 +187,7 @@ var damageType = damageType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed

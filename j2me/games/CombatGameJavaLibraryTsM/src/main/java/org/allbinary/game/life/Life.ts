@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 
 
 
@@ -91,7 +95,7 @@ this.maxlives= maxlives;
                                     
 
 
-                            throw new Error("To Many Lives");
+                            throw new Exception("To Many Lives");
                     
 
                                     }

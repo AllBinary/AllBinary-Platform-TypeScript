@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -63,7 +65,7 @@ public constructor (max: number){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -74,7 +76,7 @@ public constructor (max: number){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number{
     //var geographicMapInterface = geographicMapInterface

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -66,7 +68,7 @@ this.viewPositionFactoryInterface= viewPositionFactoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(): AllBinaryLayer{
 

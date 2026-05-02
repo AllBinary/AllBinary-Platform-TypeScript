@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { DefaultListModelHelper } from "../../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js";
 
     
@@ -388,7 +390,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteActionJButtonActio
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public selectFirstElement(){
 this.setModel();

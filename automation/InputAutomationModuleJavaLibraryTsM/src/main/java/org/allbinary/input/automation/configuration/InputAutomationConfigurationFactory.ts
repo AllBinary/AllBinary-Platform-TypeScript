@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { File } from "../../../../../java/io/File.js";
 
     
@@ -84,7 +86,7 @@ export class InputAutomationConfigurationFactory
                 null
             ;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation

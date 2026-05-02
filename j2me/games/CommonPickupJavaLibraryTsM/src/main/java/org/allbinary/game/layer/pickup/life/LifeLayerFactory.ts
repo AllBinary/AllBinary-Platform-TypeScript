@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -53,7 +55,7 @@ export class LifeLayerFactory
          implements AllBinaryLayerFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(): AllBinaryLayer{
 

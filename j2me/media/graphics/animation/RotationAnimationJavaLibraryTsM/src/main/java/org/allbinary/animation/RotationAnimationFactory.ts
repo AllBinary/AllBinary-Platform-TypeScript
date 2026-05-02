@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { GameConfigurationCentral } from "../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
 
     
@@ -92,7 +94,7 @@ this.angleIncrement= angleIncrement;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -105,7 +107,7 @@ this.angleIncrement= angleIncrement;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -104,7 +106,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 
 }
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(rgb1: number, rgb2: number): ColorDelta{
 var rgb1 = rgb1

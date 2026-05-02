@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../java/lang/Long.js";
@@ -268,7 +270,7 @@ this.getColorRangeInterface()!.setMaxBlue(string.valueOf());
                             
 
 
-                            throw new Error("Color At Action Script Condition Node Null");
+                            throw new Exception("Color At Action Script Condition Node Null");
                     
 
                         }
@@ -351,7 +353,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -370,7 +372,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public shouldProcess(frame: number): boolean{
 var frame = frame

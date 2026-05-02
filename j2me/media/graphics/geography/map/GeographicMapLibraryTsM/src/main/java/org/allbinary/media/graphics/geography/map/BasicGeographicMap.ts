@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
@@ -103,7 +105,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPosition(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var direction = direction
@@ -142,7 +144,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 else -> {
 
 
-                            throw new Error("Only Four Directions");
+                            throw new Exception("Only Four Directions");
                     
 }
 
@@ -152,7 +154,7 @@ else -> {
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPositionNoThrow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var direction = direction
@@ -270,7 +272,7 @@ else -> {
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isOfFourDirections(oldGeographicMapCellPosition: GeographicMapCellPosition, newGeographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
@@ -307,7 +309,7 @@ index < 4; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
     //var x = x
@@ -388,7 +390,7 @@ index < 4; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isOnMap(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -430,7 +432,7 @@ index < 4; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPositionAtNoThrow(x: number, y: number, x2: number, y2: number, geographicMapCellPositionList: BasicArrayList): BasicArrayList{
     //var x = x
@@ -498,7 +500,7 @@ rowIndex < i_rowMax; rowIndex++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean{
     //var layer = layer
@@ -574,7 +576,7 @@ cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
 var x = x

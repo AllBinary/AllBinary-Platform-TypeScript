@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -47,7 +49,7 @@ export class ImageIOUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static read(file: AbFile): BufferedImage{
 var file = file
@@ -60,7 +62,7 @@ var file = file
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static write(renderedImage: RenderedImage, name: string, file: AbFile): boolean{
 var renderedImage = renderedImage

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -94,7 +96,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processLoopSleep(){
 this.demoCanvas!.processLoopSleep();

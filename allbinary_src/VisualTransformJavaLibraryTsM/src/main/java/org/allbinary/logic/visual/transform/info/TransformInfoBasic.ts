@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -204,13 +206,13 @@ var transformInfoObjectConfigInterface = transformInfoObjectConfigInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDataDocument(): Document{
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -289,7 +291,7 @@ var importUriPath = importUriPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 
@@ -301,7 +303,7 @@ var importUriPath = importUriPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 
@@ -313,7 +315,7 @@ var importUriPath = importUriPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 

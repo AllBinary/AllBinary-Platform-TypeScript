@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -82,7 +84,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<*>, list
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static fire(evt: MyCanvasEvent){

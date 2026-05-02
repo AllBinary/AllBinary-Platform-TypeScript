@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -85,7 +89,7 @@ export class GeographicMapCellPositionAreaBase
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface

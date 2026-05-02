@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CompleteMotionGestureInputEventListenerInterface } from "../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js";
 
     
@@ -72,13 +74,13 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrientation(): Orientation{
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

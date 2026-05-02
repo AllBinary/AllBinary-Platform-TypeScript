@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularIndexUtil.js";
 
     
@@ -110,7 +112,7 @@ this.ALL_WEAPONLAYER_ARRAY[3]= THREE_WEAPONLAYER_ARRAY;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstanceArray(size: number): WeaponLayer[]{

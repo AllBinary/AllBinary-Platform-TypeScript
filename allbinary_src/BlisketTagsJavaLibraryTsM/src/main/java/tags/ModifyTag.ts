@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { Method } from "../java/lang/reflect/Method.js";
 
     

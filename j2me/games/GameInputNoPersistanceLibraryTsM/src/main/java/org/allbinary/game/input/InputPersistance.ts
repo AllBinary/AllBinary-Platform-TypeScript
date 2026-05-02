@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -95,7 +97,7 @@ public constructor (name: string){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -145,7 +147,7 @@ recordStore!.closeRecordStore();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation

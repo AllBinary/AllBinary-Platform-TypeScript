@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -79,7 +81,7 @@ import { AdjustedSpriteIndexedAnimation } from "./AdjustedSpriteIndexedAnimation
 export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createCWHDXY(image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
     //var image = image
@@ -98,7 +100,7 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createCWH(image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
     //var image = image
@@ -121,7 +123,7 @@ spriteIndexedAnimationFactory!.initHWH();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
     //var image = image
@@ -176,7 +178,7 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -210,7 +212,7 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

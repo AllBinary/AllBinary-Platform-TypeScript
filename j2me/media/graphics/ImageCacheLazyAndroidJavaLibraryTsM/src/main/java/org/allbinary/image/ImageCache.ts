@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
             import { System } from "../../../java/lang/System.js";
         
             import { Integer } from "../../../java/lang/Integer.js";
@@ -92,7 +96,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -154,7 +158,7 @@ listOfList[foundIndex]!.add(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(key: any = {}): Image{
     //var key = key
@@ -270,7 +274,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createImage(key: any = {}, inputStream: InputStream): Image{
     //var key = key

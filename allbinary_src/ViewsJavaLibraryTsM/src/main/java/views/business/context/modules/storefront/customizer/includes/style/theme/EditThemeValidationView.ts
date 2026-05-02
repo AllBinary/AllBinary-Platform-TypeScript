@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { CategoryFactoryInterface } from "../../../../../../../../../org/allbinary/business/category/CategoryFactoryInterface.js";
 
     

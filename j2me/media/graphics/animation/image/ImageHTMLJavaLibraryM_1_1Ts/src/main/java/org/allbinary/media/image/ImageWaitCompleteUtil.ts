@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -82,7 +84,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitFor(image: Image, name: string){
     //var image = image
@@ -94,7 +96,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public handleTimeout(name: string){
     //var name = name
@@ -105,7 +107,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
                                     
 
 
-                            throw new Error("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
+                            throw new Exception("isReady: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
                     
 
                                     }
@@ -113,7 +115,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
     //var image = image
@@ -137,7 +139,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
                                     
 
 
-                            throw new Error("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
+                            throw new Exception("waitFor: Timeout Waiting or GameHtmlHasLoadedResourcesProcessor does not have this Image: " +name);
                     
 
                                     }
@@ -156,7 +158,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitForAll(){
 this.allTimeDelayHelper!.setStartTimeTNT();

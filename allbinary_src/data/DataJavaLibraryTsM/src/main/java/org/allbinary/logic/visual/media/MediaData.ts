@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -53,7 +55,7 @@ export class MediaData
 
     private hashMap: HashMap<any, any> = new HashMap<any, any>();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static get(a_Name: string): MediaData{
 var a_Name = a_Name
@@ -80,7 +82,7 @@ var a_Name = a_Name
                             
 
 
-                            throw new Error("No Such MediaData");
+                            throw new Exception("No Such MediaData");
                     
 
                         }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -136,7 +138,7 @@ this.relativeRelationship= relativeRelationship;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -147,7 +149,7 @@ this.processScore(allbinaryLayerManager, angle, otherAngle, this.getWeaponProper
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -158,7 +160,7 @@ this.processScore(allbinaryLayerManager, angle, otherAngle, this.getWeaponProper
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                            throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
 }
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -77,7 +79,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(validationComponentInterface: ValidationComponentInterface): string{
 var validationComponentInterface = validationComponentInterface

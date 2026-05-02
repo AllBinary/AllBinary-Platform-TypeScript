@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -107,7 +109,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getHealthBar(buildingLayer: BuildingLayer): Paintable{
     //var buildingLayer = buildingLayer

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { File } from "../../../../../java/io/File.js";
 
     
@@ -81,7 +83,7 @@ this.context= context;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isFile(path: string): boolean{
 var path = path
@@ -120,7 +122,7 @@ var path = path
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFile(filePath: string): AbFile{
 var filePath = filePath
@@ -133,7 +135,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(file: AbFile, childFilePath: string): AbFile{
 var file = file

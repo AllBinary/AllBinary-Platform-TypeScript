@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
@@ -105,7 +109,7 @@ this.renderer= renderer as AllBinaryRendererBase3;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(gl: GL10){
     //var gl = gl
@@ -146,7 +150,7 @@ index >= 0; index--)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createImage(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -211,7 +215,7 @@ height= textureSize;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key

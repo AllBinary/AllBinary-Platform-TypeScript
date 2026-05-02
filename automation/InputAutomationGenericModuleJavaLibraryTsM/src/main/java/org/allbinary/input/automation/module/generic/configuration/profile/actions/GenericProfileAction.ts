@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -106,7 +108,7 @@ var node = node
                             
 
 
-                            throw new Error("Profile Action Name Node Null");
+                            throw new Exception("Profile Action Name Node Null");
                     
 
                         }
@@ -161,7 +163,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

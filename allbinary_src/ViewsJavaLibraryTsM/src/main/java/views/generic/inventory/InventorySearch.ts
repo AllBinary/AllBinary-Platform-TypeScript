@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
@@ -119,7 +121,7 @@ this.searchRequest= searchRequest;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchSingleStaticPage(): string{
 
@@ -204,14 +206,14 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
 
-                            throw new Error("Failed retrieve Single Product Page Static");
+                            throw new Exception("Failed retrieve Single Product Page Static");
                     
 }
 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchSingleDynamicPage(): string{
 
@@ -242,14 +244,14 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
 
-                            throw new Error("Failed retrieve Single Product Page Dynamically");
+                            throw new Exception("Failed retrieve Single Product Page Dynamically");
                     
 }
 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public search(): string[]{
 
@@ -273,7 +275,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getProduct(product: string): string{
 var product = product

@@ -8,6 +8,10 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
 import { Stack } from "../../../java/util/Stack.js";
 
     
@@ -134,7 +138,7 @@ var l = l
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(){
 }

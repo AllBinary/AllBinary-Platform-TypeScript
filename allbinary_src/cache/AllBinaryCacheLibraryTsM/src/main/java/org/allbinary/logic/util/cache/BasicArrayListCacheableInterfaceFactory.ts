@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -49,7 +51,7 @@ export class BasicArrayListCacheableInterfaceFactory
          implements CacheableInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(key: any = {}): CacheableInterface{
 var key = key

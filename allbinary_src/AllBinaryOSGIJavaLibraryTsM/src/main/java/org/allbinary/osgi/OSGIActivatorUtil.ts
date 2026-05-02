@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
@@ -61,7 +63,7 @@ export class OSGIActivatorUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string){
     //var bundleContext = bundleContext
@@ -72,7 +74,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Has
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
     //var bundleContext = bundleContext
@@ -96,7 +98,7 @@ serviceReference= bundleContext!.getServiceReference(serviceName);
                                     
 
 
-                            throw new Error("No Such Service Reference");
+                            throw new Exception("No Such Service Reference");
                     
 
                                     }

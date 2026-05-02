@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -51,11 +53,11 @@ import { InputAutomationActionInterface } from "../../../../../../org/allbinary/
 export interface BasicGameInputAutomationActionInterface extends InputAutomationActionInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     attack(rectangle: Rectangle)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     target(rectangle: Rectangle)
 

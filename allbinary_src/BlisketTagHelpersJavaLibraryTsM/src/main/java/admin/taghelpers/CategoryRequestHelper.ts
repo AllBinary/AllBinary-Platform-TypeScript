@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -331,7 +333,7 @@ this.logUtil!.putF("Loaded Child Category", this, "getXmlData()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setCategoryLoader(requestNode: Node){
 var requestNode = requestNode
@@ -370,7 +372,7 @@ this.transformInfoInterface= new TransformInfoBasic(storeFrontInterface, this.ha
                                     
 
 
-                            throw new Error("TransformInfo null");
+                            throw new Exception("TransformInfo null");
                     
 
                                     }
@@ -388,7 +390,7 @@ this.categoryLoaderInterface= CategoryLoaderFactory.getInstance(storeCategoryFac
                             
 
 
-                            throw new Error("Store Name Error: " +storeName);
+                            throw new Exception("Store Name Error: " +storeName);
                     
 
                         }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -144,7 +146,7 @@ private constructor (){
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 var transformInfoInterface = transformInfoInterface
@@ -265,7 +267,7 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generateFromTestData(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 var transformInfoInterface = transformInfoInterface

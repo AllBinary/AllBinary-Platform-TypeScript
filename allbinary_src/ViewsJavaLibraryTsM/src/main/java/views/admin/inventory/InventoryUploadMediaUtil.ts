@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../java/io/ByteArrayInputStream.js";
 
     
@@ -128,7 +130,7 @@ this.itemInterface= itemInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public saveFiles(byteArray: number[], fileName: string, mediaData: MediaData): ItemInterface{
 var byteArray = byteArray
@@ -150,7 +152,7 @@ var mediaData = mediaData
                                     
 
 
-                            throw new Error("Image File Name Was Null");
+                            throw new Exception("Image File Name Was Null");
                     
 
                                     }
@@ -184,7 +186,7 @@ stringBuffer!.append(this.itemInterface!.getCategory());
                                     
 
 
-                            throw new Error("Unable to save file to non existant directory");
+                            throw new Exception("Unable to save file to non existant directory");
                     
 
                                     }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -78,7 +80,7 @@ var viewPosition = viewPosition
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 

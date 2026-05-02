@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Control } from "../../../../javax/microedition/media/Control.js";
 
     

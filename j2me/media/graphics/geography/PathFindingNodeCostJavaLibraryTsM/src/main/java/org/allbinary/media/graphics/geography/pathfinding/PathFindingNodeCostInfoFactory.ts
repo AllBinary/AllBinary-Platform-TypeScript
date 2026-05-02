@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -63,7 +65,7 @@ this.pathFindingNodeCostInfoAdjacencyList= new Array(max) [max]
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -76,7 +78,7 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo{
     //var goingToGeographicMapCellPosition = goingToGeographicMapCellPosition

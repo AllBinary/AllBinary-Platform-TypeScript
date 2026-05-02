@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { ZipEntry } from "../../../../../../java/util/zip/ZipEntry.js";
 
     
@@ -225,7 +227,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public unzip(path: string, zipFile: AbFile, fileName: string){
 var path = path

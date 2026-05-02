@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -80,7 +82,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isContinue(): boolean{
 
@@ -125,30 +127,30 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createDemoGameCanvasRunnableInterface(): GameCanvasRunnableInterface{
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createGameCanvasRunnable(allBinaryGameLayerManager: AllBinaryGameLayerManager): GameCanvasRunnableInterface{
 var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createGameCanvasRunnableInterface(): GameCanvasRunnableInterface{
 
@@ -168,7 +170,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setDemo(){
@@ -185,7 +187,7 @@ PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public createGame(){

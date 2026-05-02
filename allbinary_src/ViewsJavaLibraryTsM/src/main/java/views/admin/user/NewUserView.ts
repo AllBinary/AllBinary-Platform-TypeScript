@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { NewUserFactory } from "../../../org/allbinary/business/user/NewUserFactory.js";
 
     

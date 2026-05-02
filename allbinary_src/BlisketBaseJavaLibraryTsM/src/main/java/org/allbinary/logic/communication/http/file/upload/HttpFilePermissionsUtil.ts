@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { AbFile } from "../../../../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
@@ -64,7 +66,7 @@ export class HttpFilePermissionsUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public create(path: AbPath){
 var path = path

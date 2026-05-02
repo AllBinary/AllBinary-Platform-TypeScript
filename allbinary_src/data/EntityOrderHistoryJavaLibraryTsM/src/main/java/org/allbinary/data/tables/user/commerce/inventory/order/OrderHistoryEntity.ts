@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../../java/lang/Long.js";
@@ -582,7 +584,7 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -633,7 +635,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrders(userName: string): Vector{
 var userName = userName
@@ -684,7 +686,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrders(status: string, fromDate: string, toDate: string): Vector{
 var status = status
@@ -737,7 +739,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrders(fromDate: string, toDate: string): Vector{
 var fromDate = fromDate
@@ -783,7 +785,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrder(id: string): OrderHistory{
 var id = id
@@ -1027,7 +1029,7 @@ stringBuffer!.append(") )");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>){
 var whereHashMap = whereHashMap

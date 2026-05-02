@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -44,13 +46,13 @@
 export interface PopupMenuInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     popupMenu()
 
     closeMenu()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     toggleMenu()
 

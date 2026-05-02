@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CountedPickedUpLayerInterfaceFactory } from "../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js";
 
     
@@ -88,7 +90,7 @@ export class MakeCountedPartsSingletonArrayFactory
 
     private list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getUpdated(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray

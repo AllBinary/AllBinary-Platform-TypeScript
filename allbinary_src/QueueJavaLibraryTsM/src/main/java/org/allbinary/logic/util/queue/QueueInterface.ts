@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -44,15 +46,15 @@
 export interface QueueInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     offer(anyType: any): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     remove(anyType: any)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     remove(): any
 

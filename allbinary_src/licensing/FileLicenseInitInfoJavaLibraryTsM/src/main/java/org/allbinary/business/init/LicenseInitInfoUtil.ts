@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { PATH_GLOBALS } from "../../../../org/allbinary/globals/PATH_GLOBALS.js";
 
     
@@ -112,7 +114,7 @@ this.filePath= filePath;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
@@ -182,7 +184,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public read(): LicenseInitInfo{
@@ -195,7 +197,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
@@ -294,7 +296,7 @@ this.logUtil!.putF(NEXT_FILE +initInfo!.getServer(index), this, METHOD_NAME);
                             
 
 
-                            throw new Error("Could Not Load License InitInfo: " +INITFILENAME);
+                            throw new Exception("Could Not Load License InitInfo: " +INITFILENAME);
                     
 
                         }
@@ -318,7 +320,7 @@ this.logUtil!.put("LicenseInitInfo Read Retry: " +INITFILENAME, this, "readAgain
 
 
 
-                            throw new Error("LicenseInitInfo Read Error: " +INITFILENAME);
+                            throw new Exception("LicenseInitInfo Read Error: " +INITFILENAME);
                     
 }
 

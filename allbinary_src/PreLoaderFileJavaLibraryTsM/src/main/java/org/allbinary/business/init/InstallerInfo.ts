@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { PATH_GLOBALS } from "../../../../org/allbinary/globals/PATH_GLOBALS.js";
 
     
@@ -109,7 +111,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(){
@@ -168,7 +170,7 @@ InstallerInfo.hasRead= false;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     read(){
@@ -256,7 +258,7 @@ InstallerInfo.password= password;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     updateIfNeeded(){
@@ -294,7 +296,7 @@ this.read();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getUserName(): string{
 this.updateIfNeeded();
@@ -308,7 +310,7 @@ this.updateIfNeeded();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPassword(): string{
 this.updateIfNeeded();
@@ -322,7 +324,7 @@ this.updateIfNeeded();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(userName: string, password: string): boolean{
 var userName = userName

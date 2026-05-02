@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { PickedUpLayerInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js";
 
     
@@ -109,7 +111,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
 var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -127,7 +129,7 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
 var allBinaryLayerManager = allBinaryLayerManager

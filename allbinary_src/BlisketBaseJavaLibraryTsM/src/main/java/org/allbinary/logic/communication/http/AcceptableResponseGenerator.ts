@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HttpServletRequest } from "../../../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -75,7 +77,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(httpServletRequest: HttpServletRequest): string{
 var httpServletRequest = httpServletRequest

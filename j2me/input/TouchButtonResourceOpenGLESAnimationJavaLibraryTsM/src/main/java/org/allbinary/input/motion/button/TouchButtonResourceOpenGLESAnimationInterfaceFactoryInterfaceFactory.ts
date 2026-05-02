@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -62,7 +64,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(level: number){
 var level = level

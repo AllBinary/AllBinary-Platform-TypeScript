@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -71,7 +73,7 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
 
     private readonly factorValue: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_VALUE;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(layer: AllBinaryGameLayer){
     //var layer = layer

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { DomDocumentMappingInterface } from "../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js";
 
     
@@ -59,7 +61,7 @@ export interface TransformInterface extends DomDocumentMappingInterface, Composi
 
     getTransformDocumentInterface(): TransformDocumentInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     view(): string
 

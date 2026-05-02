@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -84,7 +86,7 @@ public constructor (name: string){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(level: number){
 var level = level
@@ -93,7 +95,7 @@ this.initImageCache(ImageCacheFactory.getInstance(), level);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initImageCache(imageCache: ImageCache, level: number){
 var imageCache = imageCache

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameConfigurationCentral } from "../../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
 
     
@@ -97,7 +99,7 @@ var SIZE = SIZE
                             
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("Invalid Value: ")!.appendint(scale)!.toString());
                     
 
@@ -118,7 +120,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     append(ROOT: string, sizeString: string){
 var ROOT = ROOT
@@ -156,7 +158,7 @@ this.RESOURCE_DESTROY= BasicGameResources.stringBuffer!.toString();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getString(): string{
 

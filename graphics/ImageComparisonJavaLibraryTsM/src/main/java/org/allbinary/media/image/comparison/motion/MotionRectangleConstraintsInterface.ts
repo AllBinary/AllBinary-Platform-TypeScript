@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -68,7 +70,7 @@ export interface MotionRectangleConstraintsInterface {
 
     isTooBig(rectangle: Rectangle): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isValid(frame: number, bufferedImage: BufferedImage, rectangle: Rectangle): boolean
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { MyRandomFactory } from "../../../../org/allbinary/game/rand/MyRandomFactory.js";
 
     
@@ -53,7 +55,7 @@ export class RandomTranslation
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
 var vector = vector

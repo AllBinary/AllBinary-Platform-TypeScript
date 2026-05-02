@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { HashMap } from "../java/util/HashMap.js";
 
     
@@ -70,7 +72,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
 var hashMap = hashMap

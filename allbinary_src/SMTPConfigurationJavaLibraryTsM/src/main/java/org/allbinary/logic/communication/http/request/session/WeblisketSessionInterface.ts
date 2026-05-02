@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { OrderInterface } from "../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js";
@@ -64,7 +66,7 @@ export interface WeblisketSessionInterface {
 
     getLastAccessedTime(): number
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getOrder(): OrderInterface
 
@@ -72,7 +74,7 @@ export interface WeblisketSessionInterface {
 
     getPaymentMethod(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getRole(): UserRole
 

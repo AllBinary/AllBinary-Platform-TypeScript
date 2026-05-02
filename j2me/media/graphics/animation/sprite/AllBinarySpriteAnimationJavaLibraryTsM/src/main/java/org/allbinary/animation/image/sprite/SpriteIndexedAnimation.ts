@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -105,7 +109,7 @@ this.basicColorArray= basicColorArray;
                                     
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append(CommonLabels.getInstance()!.TOTAL_LABEL)!.appendint(this.getSize())!.append("!=")!.appendint(this.basicColorArray!.length)!.toString());
                     
 
@@ -114,7 +118,7 @@ this.basicColorArray= basicColorArray;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAnimationSize(): number{
 
@@ -307,7 +311,7 @@ this.sprite.setFrame(frame);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Throwable::class)
             
     finalize(){
 }

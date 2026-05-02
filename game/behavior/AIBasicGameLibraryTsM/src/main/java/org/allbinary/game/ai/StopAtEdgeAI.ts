@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
 
     
@@ -73,7 +75,7 @@ var gameInput = gameInput
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { CategoryInterface } from "../../../../../../org/allbinary/business/category/CategoryInterface.js";
 
     
@@ -70,7 +72,7 @@ this.categoryInterface= categoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

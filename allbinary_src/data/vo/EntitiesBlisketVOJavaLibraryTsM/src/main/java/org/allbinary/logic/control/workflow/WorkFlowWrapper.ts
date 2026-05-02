@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Method } from "../../../../../java/lang/reflect/Method.js";
@@ -82,7 +84,7 @@ this.anyType= anyType;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getName(): string{
 
@@ -127,14 +129,14 @@ this.anyType= anyType;
 
 
 
-                            throw new Error(error);
+                            throw new Exception(error);
                     
 }
 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStoreName(): string{
 
@@ -179,14 +181,14 @@ this.anyType= anyType;
 
 
 
-                            throw new Error(error);
+                            throw new Exception(error);
                     
 }
 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(): number{
 
@@ -231,7 +233,7 @@ this.anyType= anyType;
 
 
 
-                            throw new Error(error);
+                            throw new Exception(error);
                     
 }
 

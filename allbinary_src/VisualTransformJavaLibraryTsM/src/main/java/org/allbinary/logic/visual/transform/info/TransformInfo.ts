@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../java/util/Calendar.js";
@@ -198,7 +200,7 @@ this.setDataFile(dataFileName);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public override(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -631,7 +633,7 @@ this.templateFileName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setObjectConfigFileName(value: string){
 var value = value
@@ -640,7 +642,7 @@ this.objectConfigFileName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setObjectConfigFile(value: string){
 var value = value
@@ -651,7 +653,7 @@ this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.get
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setObjectConfig(value: string){
 var value = value
@@ -728,7 +730,7 @@ this.data= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -740,7 +742,7 @@ this.data= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -752,7 +754,7 @@ this.data= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDataFilePath(): AbPath{
 
@@ -908,7 +910,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDataDocument(): Document{
 

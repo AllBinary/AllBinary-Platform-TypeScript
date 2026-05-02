@@ -8,8 +8,9 @@
 
 
         
-
-//import { IOException } from "../../../java/io/IOException.js";
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
+import { IOException } from "../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../java/io/InputStream.js";

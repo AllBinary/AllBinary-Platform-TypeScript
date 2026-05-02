@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { TagHelperFactoryInterface } from "../admin/taghelpers/TagHelperFactoryInterface.js";
 
     
@@ -74,7 +76,7 @@ this.tagHelperFactoryInterface= tagHelperFactoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setHelper(){
 

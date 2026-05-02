@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -67,7 +69,7 @@ export class RaceTrackStartPointUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static get(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, index: number): GPoint{
     //var geographicMapInterface = geographicMapInterface

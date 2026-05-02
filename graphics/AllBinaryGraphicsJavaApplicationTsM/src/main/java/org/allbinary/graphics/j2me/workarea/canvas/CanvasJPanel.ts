@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -304,7 +306,7 @@ this.workAreaJTreeJPanel!.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initMyComponents(){
 this.frameLabel= new CanvasTreeLabel("FrameLabel" +CanvasJPanel.frame.
@@ -353,7 +355,7 @@ setLayout(new java.awt.GridLayout(1, 1));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setCanvasSize(x: number, y: number){
 var x = x
@@ -462,7 +464,7 @@ this.grid.isChanged= true;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDefaultGrid(){
 
@@ -608,7 +610,7 @@ this.workAreaJTreeJPanel!.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public explode(howMuch: number, explosionType: number){
 var howMuch = howMuch
@@ -659,7 +661,7 @@ this.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mirror(){
 
@@ -706,7 +708,7 @@ this.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public center(){
 new VectorCenterGenerator().
@@ -755,7 +757,7 @@ this.canvasTreeNode!.add(newNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicateGraphicItem(graphicItem: GraphicItemInterface){
 var graphicItem = graphicItem
@@ -770,7 +772,7 @@ this.canvasTreeNode!.add(graphicItemClone!.getTreeNode());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicateGraphicItemHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -1036,7 +1038,7 @@ super.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDom(): Node{
 
@@ -1448,7 +1450,7 @@ this.workAreaJTreeJPanel!.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicate(): CanvasJPanel{
 
@@ -1476,7 +1478,7 @@ this.workAreaJTreeJPanel!.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicate(event: MyGraphicItemEvent){
 var event = event

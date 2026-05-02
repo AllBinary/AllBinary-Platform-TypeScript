@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { GL10 } from "../../../javax/microedition/khronos/opengles/GL10.js";
 
     
@@ -49,7 +51,7 @@ export class LoadTextures
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public load(gl: GL10){
     //var gl = gl

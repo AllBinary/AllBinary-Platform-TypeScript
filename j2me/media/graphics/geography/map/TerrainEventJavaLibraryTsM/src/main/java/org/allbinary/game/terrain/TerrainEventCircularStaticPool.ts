@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryEventCircularPool } from "../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js";
 
     
@@ -72,7 +74,7 @@ this.EVENT_POOL.init(new TerrainEventFactory());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNext(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{

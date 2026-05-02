@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayerManager } from "../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
 
     
@@ -58,15 +60,15 @@ export interface DropCellPositionGeneratorInterface {
 
     getName(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processTick(allBinaryLayerManager: AllBinaryLayerManager)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean
 

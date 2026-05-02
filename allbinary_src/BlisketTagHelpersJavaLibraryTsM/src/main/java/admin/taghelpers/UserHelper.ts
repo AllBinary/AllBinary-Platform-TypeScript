@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -203,7 +205,7 @@ stringBuffer!.append(" from to the user table");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public insert(): string{
 

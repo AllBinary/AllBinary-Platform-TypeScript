@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -57,7 +59,7 @@ export class BaseCircularPool
 
     OBJECT_ARRAY: any[] = NullUtil.getInstance()!.NULL_OBJECT_ARRAY;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(): any{
@@ -99,7 +101,7 @@ this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(index: number): any{
 var index = index

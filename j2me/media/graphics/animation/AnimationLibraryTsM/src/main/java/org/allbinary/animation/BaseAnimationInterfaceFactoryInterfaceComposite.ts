@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js";
 
     
@@ -63,7 +65,7 @@ this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
@@ -71,7 +73,7 @@ export class CloudStreamUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFile(file: AbFile): InputStream{
 var file = file
@@ -108,7 +110,7 @@ var file = file
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileAnyWhere(file: AbFile): InputStream{
 var file = file
@@ -169,7 +171,7 @@ available= inputStream!.available();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileLocal(file: AbFile): InputStream{
 var file = file

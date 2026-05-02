@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -96,11 +98,11 @@ export interface InputRobotInterface {
 
     mouseMove(point: Point)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     mouseMoveToTarget(rectangle: Rectangle)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     mouseMoveToTarget(rectangle: Rectangle, x: number, y: number)
 

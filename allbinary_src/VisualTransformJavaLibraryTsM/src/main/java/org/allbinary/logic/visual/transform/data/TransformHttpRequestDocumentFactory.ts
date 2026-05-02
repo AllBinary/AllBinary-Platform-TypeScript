@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
 
     
@@ -54,7 +56,7 @@ export class TransformHttpRequestDocumentFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(pageContext: PageContext, weblisketSession: WeblisketSession): TransformDocumentInterface{
 var pageContext = pageContext

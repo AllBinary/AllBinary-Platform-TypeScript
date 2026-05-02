@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -53,7 +55,7 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 export interface TagHelperFactoryInterface {
         
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any
 

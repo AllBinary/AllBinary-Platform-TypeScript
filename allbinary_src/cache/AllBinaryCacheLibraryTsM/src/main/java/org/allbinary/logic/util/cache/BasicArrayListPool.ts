@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -66,7 +68,7 @@ this.buffers.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key
@@ -100,7 +102,7 @@ var key = key
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addAll(usedList: BasicArrayList){
 var usedList = usedList
@@ -125,7 +127,7 @@ usedList!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public releaseUsedBackToPool(usedList: BasicArrayList){
 var usedList = usedList

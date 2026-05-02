@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -117,7 +119,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -152,7 +154,7 @@ super.fireEvent(eventObject);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireRemoveEvent(eventObject: AllBinaryEventObject){
@@ -228,7 +230,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject

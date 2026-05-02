@@ -22,6 +22,8 @@
 
 
         
+            import { InterruptedException } from "../../java/lang/InterruptedException.js";
+        
 
 
 

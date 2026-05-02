@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -106,7 +108,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createPaintableTable(): Paintable[][]{
 

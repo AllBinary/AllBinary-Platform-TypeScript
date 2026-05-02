@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { System } from "../../../java/lang/System.js";
         
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
@@ -86,7 +88,7 @@ this.layerManagerLogging= layerManagerLogging;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public insert(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -130,7 +132,7 @@ this.append(layerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -141,7 +143,7 @@ this.list.add(layerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
@@ -153,7 +155,7 @@ this.list.addAt(index, layerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -198,7 +200,7 @@ this.layerManagerLogging!.removeResult(this, layerInterface, result);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public cleanup(){
 

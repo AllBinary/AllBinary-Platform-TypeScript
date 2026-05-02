@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
@@ -94,7 +96,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(frame: number){
     //var frame = frame
@@ -144,7 +146,7 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(imageComparisonResult: ImageComparisonResult, frame: number){
     //var imageComparisonResult = imageComparisonResult

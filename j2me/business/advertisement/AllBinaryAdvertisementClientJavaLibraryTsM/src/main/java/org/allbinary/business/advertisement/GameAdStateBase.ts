@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GameType } from "../../../../org/allbinary/game/GameType.js";
 
     
@@ -139,13 +141,13 @@ var gameType = gameType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public playingAdState(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public playingAdState(width: number, height: number){
 var width = width
@@ -153,7 +155,7 @@ var height = height
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public notPlayingAdState(){
 }

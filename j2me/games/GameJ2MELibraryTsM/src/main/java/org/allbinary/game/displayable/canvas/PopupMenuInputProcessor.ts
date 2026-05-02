@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -111,7 +113,7 @@ this.rectangle= rectangle;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(key: number): number{
     //var key = key
@@ -143,7 +145,7 @@ gameCanvas!.toggleMenu();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInputList(): number{
 
@@ -243,7 +245,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processMotionInputs(): number{
 
@@ -274,7 +276,7 @@ motionGestureEventList!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent

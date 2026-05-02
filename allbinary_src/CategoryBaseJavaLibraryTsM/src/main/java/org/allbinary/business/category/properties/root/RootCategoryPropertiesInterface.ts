@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
@@ -47,11 +49,11 @@ import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js"
 export interface RootCategoryPropertiesInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setRootFilePath(value: AbPath)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getRootFilePath(): AbPath
 

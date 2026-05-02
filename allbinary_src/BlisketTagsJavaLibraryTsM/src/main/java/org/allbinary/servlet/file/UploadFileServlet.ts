@@ -22,8 +22,9 @@
 
 
         
-
-//import { IOException } from "../../../../java/io/IOException.js";
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../../java/io/InputStream.js";
@@ -254,7 +255,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     saveFile(filePath: string){
 var filePath = filePath

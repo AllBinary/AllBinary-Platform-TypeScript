@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { ResourceUtil } from "../../../../../../org/allbinary/data/resource/ResourceUtil.js";
 
     

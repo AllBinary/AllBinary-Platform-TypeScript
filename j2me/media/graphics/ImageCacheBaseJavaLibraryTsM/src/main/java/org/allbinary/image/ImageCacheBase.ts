@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
 import { InputStream } from "../../../java/io/InputStream.js";
 
     
@@ -257,7 +261,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -271,7 +275,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithKey(key: any = {}): Image{
     //var key = key
@@ -283,7 +287,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createImage(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -298,7 +302,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key

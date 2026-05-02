@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameTickDisplayInfoSingleton } from "../../../../../org/allbinary/graphics/displayable/GameTickDisplayInfoSingleton.js";
 
     
@@ -101,7 +103,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processLoopSleep(){
 this.allBinaryGameCanvas!.processLoopSleep();

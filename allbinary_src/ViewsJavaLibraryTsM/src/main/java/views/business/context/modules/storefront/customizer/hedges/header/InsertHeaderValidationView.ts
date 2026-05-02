@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -120,7 +122,7 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 

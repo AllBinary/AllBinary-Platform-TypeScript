@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ModDomHelper } from "../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
 
     
@@ -147,7 +149,7 @@ this.contentType= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getXslFile(): string{
 
@@ -183,7 +185,7 @@ this.contentType= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileBaseNameNode(document: Document): Node{
 var document = document

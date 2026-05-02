@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -193,7 +197,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getSelectedItem(point: GPoint): CustomItem{
     //var point = point
@@ -227,7 +231,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getItemIndex(item: CustomItem): number{
     //var item = item
@@ -281,7 +285,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getSelectedIndex(point: GPoint): number{
     //var point = point
@@ -377,7 +381,7 @@ height= item.getMinimumHeight();
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }
@@ -451,7 +455,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }
@@ -467,7 +471,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(gameKeyCode: number): number{
     //var gameKeyCode = gameKeyCode
@@ -546,7 +550,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }
@@ -615,7 +619,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -688,7 +692,7 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }
@@ -696,7 +700,7 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -763,7 +767,7 @@ item.paintUnselected(graphics, x, y);
                             
 
 
-                            throw new Error(formTypeFactory!.UNK);
+                            throw new Exception(formTypeFactory!.UNK);
                     
 
                         }

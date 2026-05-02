@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { swing } from "../../../../../../../../../javax/swing.js";
@@ -182,7 +184,7 @@ this.keyActionScriptInputInterface!.log();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     updateInputType(){
 
@@ -246,7 +248,7 @@ this.keyActionScriptInputInterface!.setText(text);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(){
 this.updateInputType();

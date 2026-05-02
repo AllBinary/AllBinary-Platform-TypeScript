@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { OrderIdGenerator } from "../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js";
 
     
@@ -70,7 +72,7 @@ export class OrderProcessorUtil
 
     private readonly ORDER_PROCESSED: string = "Order Processed";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(userName: string, order: Order): string{
 var userName = userName

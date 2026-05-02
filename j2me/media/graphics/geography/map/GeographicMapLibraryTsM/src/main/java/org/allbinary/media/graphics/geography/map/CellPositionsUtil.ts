@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -70,7 +72,7 @@ export class CellPositionsUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAll(geographicMapInterface: BasicGeographicMap, topRightGeographicMapCellPosition: GeographicMapCellPosition, columns: number, rows: number, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -142,7 +144,7 @@ reusableList!.add(geographicMapCellPosition);
 
     private readonly reusableSingleThreadedSurroundingList: BasicArrayList = new BasicArrayListS(8);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAllSurrounding(geographicMapInterface: BasicGeographicMap, occupyList: BasicArrayList, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -213,7 +215,7 @@ index2 >= 0; index2--)
 
                                                         ];
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAllSurroundingAt(geographicMapInterface: BasicGeographicMap, layerGeographicMapCellPosition: GeographicMapCellPosition, reusableSurroundingList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface

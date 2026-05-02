@@ -25,8 +25,7 @@
 import { FilenameFilter } from "../../../../../java/io/FilenameFilter.js";
 
     
-
-//import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from "../../../../../java/io/IOException.js";
 
     
 import { URI } from "../../../../../java/net/URI.js";

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { PickedUpLayerInterface } from "../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js";
 
     
@@ -81,7 +83,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface

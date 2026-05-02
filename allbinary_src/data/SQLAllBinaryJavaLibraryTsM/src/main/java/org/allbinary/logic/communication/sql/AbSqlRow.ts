@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ResultSet } from "../../../../../java/sql/ResultSet.js";
 
     
@@ -270,7 +272,7 @@ this.executeSQLStatement(sqlStatement);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){

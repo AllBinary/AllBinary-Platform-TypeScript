@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -77,7 +79,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(httpServletRequest: HttpServletRequest): PaymentGatewayInterface{
 var httpServletRequest = httpServletRequest
@@ -126,7 +128,7 @@ var httpServletRequest = httpServletRequest
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 var paymentType = paymentType
@@ -145,7 +147,7 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
 var hashMap = hashMap

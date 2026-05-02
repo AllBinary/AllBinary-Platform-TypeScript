@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -94,7 +96,7 @@ super.getFormData(request);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

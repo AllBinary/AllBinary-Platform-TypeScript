@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -48,7 +50,7 @@ import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 export interface PaymentGatewayInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface
 

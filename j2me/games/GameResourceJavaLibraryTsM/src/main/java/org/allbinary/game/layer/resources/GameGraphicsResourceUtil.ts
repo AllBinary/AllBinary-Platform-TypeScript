@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -114,7 +116,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getString(): string{
 
@@ -174,7 +176,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStringForFeature(graphicsFeature: GraphicsFeature): string{
     //var graphicsFeature = graphicsFeature
@@ -234,7 +236,7 @@ stringBuffer!.append(this.SPRITE);
                             
 
 
-                            throw new Error("None/Unknown Sub Image Resource Type Specified");
+                            throw new Exception("None/Unknown Sub Image Resource Type Specified");
                     
 
                         }
@@ -255,7 +257,7 @@ stringBuffer!.append(this.SPRITE);
                             
 
 
-                            throw new Error("None/Unknown Main Image Resource Type Specified");
+                            throw new Exception("None/Unknown Main Image Resource Type Specified");
                     
 
                         }

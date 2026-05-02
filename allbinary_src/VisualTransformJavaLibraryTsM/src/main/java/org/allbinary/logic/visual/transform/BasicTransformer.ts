@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -119,7 +121,7 @@ this.setTemplateAsInputStream();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setEncryptedTemplateFileAsInputStream(file: AbFile){
     //var file = file
@@ -209,7 +211,7 @@ this.streamUtil!.close(inputStream);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setEncryptedTemplateAsInputStream(){
 
@@ -284,7 +286,7 @@ this.streamUtil!.close(inputStream);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setTemplateAsInputStream(){
 
@@ -497,7 +499,7 @@ stringBuffer!.append(transformInfoTemplateData!.ENCRYPTED_EXTENSION);
                             
 
 
-                            throw new Error("View Template File Type Is Not Recognized: " +this.getTransformInfoInterface()!.getTemplateFilePath());
+                            throw new Exception("View Template File Type Is Not Recognized: " +this.getTransformInfoInterface()!.getTemplateFilePath());
                     
 
                         }
@@ -542,7 +544,7 @@ this.streamUtil!.close(inputStream);
 
 
 
-                            throw new Error("Error setTemplateAsInputStream()");
+                            throw new Exception("Error setTemplateAsInputStream()");
                     
 }
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { InputStream } from "../../../../java/io/InputStream.js";
 
     
@@ -64,7 +66,7 @@ export class PlatformAssetManager
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource

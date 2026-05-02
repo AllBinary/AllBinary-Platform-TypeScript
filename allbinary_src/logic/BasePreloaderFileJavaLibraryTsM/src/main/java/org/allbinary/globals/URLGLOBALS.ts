@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -87,7 +89,7 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getMainPath(): string{
 

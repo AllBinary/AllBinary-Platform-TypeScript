@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -31,8 +33,7 @@ import { DataInputStream } from "../../../../java/io/DataInputStream.js";
 import { EOFException } from "../../../../java/io/EOFException.js";
 
     
-
-//import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -642,7 +643,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isBestScore(newHighScore: HighScore): boolean{

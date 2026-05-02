@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -104,7 +106,7 @@ this.linePathAnimation= linePathAnimation;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -113,7 +115,7 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public nextFrame(){
 }

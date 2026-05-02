@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -120,14 +122,14 @@ export class NullGameCanvasRunnable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setHighScoreSubmitted(highScoreSubmitted: boolean){
 var highScoreSubmitted = highScoreSubmitted
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processGameOver(){
 }
@@ -148,7 +150,7 @@ var cmdListener = cmdListener
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 
@@ -160,7 +162,7 @@ var cmdListener = cmdListener
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
 
@@ -172,7 +174,7 @@ var cmdListener = cmdListener
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
@@ -189,7 +191,7 @@ var hashtable = hashtable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setGameState(gameState: GameState){
 var gameState = gameState
@@ -236,7 +238,7 @@ var isRunning = isRunning
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setThread(thread: Thread){
 var thread = thread

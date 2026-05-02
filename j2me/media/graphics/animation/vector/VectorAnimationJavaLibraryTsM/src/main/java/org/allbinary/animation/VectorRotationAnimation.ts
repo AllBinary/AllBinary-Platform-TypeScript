@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Direction } from "../../../org/allbinary/direction/Direction.js";
 
     

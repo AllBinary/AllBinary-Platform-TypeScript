@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
 
     
@@ -83,7 +85,7 @@ this.setTimeLastModified(new TimeLastModified(DomNodeHelper.getTextNodeValue(nod
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

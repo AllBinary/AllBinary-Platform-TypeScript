@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { Vector } from "../../java/util/Vector.js";
 
     
@@ -88,7 +90,7 @@ export class AuthenticationHelperUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isAuthorized(authenticationHelper: AuthenticationHelper, filePath: string): boolean{
 var authenticationHelper = authenticationHelper

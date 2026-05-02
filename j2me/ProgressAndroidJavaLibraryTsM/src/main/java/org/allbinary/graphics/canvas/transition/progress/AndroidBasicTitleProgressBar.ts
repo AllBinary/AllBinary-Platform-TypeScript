@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { IllegalArgumentException } from "../../../../../../java/lang/IllegalArgumentException.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
@@ -571,7 +575,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setImages(index: number, lastWidth: number, lastHeight: number){
 var index = index
@@ -624,7 +628,7 @@ var lastHeight = lastHeight
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initOpenGL(graphics: Graphics){
 var graphics = graphics
@@ -665,7 +669,7 @@ this.updateCurrent();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(graphics: Graphics){
 var graphics = graphics
@@ -706,7 +710,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getImage(index: number): Image{
 var index = index

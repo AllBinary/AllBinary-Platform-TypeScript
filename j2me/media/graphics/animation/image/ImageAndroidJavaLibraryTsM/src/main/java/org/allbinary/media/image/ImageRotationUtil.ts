@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -86,7 +88,7 @@ private constructor (){
 
     private anchor: number = Anchor.TOP_LEFT;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 var originalImage = originalImage
@@ -136,7 +138,7 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
                             
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                         }

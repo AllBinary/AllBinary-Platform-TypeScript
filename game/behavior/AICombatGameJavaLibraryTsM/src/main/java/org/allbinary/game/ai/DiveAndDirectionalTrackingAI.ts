@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -196,7 +198,7 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -243,7 +245,7 @@ TrackingEventHandler.getInstance()!.addListener(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     target(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -397,7 +399,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     verticalTargeting(x: number){
 var x = x
@@ -435,7 +437,7 @@ var x = x
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     horizontalTargeting(y: number){
 var y = y
@@ -483,7 +485,7 @@ TrackingEventHandler.getInstance()!.removeListener(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     moveRight(){
 this.setLastDirection(this.directionFactory!.RIGHT);
@@ -495,7 +497,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     moveLeft(){
 this.setLastDirection(this.directionFactory!.LEFT);
@@ -507,7 +509,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     moveDown(){
 this.setLastDirection(this.directionFactory!.DOWN);
@@ -519,7 +521,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     moveUp(){
 this.setLastDirection(this.directionFactory!.UP);
@@ -531,7 +533,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     dive(){
 this.directionalInterface!.setFrameByDirection(this.directionOfTarget);
@@ -541,7 +543,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     attack(){
 super.processKeyAI(Canvas.KEY_NUM1);
@@ -549,7 +551,7 @@ super.processKeyAI(Canvas.KEY_NUM1);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     drop(){
 

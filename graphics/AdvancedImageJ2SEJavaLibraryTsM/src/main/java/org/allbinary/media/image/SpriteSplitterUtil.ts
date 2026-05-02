@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
@@ -105,7 +107,7 @@ export class SpriteSplitterUtil
 
     private readonly _ROW: string = "_row";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(imageProcessorInput: ImageProcessorInput, totalFrames: number, totalAnimations: number, widthReduction: number, heightReduction: number, increaseWidth: number, increaseHeight: number, spriteType: string, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput

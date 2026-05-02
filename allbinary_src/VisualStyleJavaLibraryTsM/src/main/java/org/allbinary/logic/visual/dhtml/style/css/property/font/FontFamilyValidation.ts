@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -79,7 +81,7 @@ public constructor (node: Node){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 
@@ -136,7 +138,7 @@ public constructor (node: Node){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 
@@ -177,7 +179,7 @@ stringBuffer!.append("Css Font Family Property Validation Error");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -189,7 +191,7 @@ stringBuffer!.append("Css Font Family Property Validation Error");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document

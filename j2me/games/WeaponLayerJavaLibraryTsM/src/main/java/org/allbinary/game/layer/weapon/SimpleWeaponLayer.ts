@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -70,7 +72,7 @@ import { CollidableWeaponBehavior } from "./CollidableWeaponBehavior.js";
 export class SimpleWeaponLayer extends WeaponLayer {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createDestroyed(): Animation{
 

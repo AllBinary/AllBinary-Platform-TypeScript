@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
 
     

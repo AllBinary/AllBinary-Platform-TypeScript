@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -121,7 +123,7 @@ this.name= name;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(level: number){
     //var level = level
@@ -137,7 +139,7 @@ this.setInitialized(true);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initImageCache(imageCache: ImageCache, level: number){
     //var imageCache = imageCache
@@ -145,7 +147,7 @@ this.setInitialized(true);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(resource: string, animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface){
     //var resource = resource
@@ -157,7 +159,7 @@ this.setInitialized(true);
                                     
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("Resource Already Created: ")!.append(resource)!.toString());
                     
 
@@ -168,7 +170,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
@@ -200,7 +202,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRectangle(resource: string): Rectangle{
     //var resource = resource
@@ -232,7 +234,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addRectangle(resource: string, rectangle: Rectangle){
     //var resource = resource
@@ -242,7 +244,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRectangleArrayOfArrays(resource: string): Rectangle[][]{
     //var resource = resource
@@ -255,7 +257,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addRectangleArrayOfArrays(resource: string, rectangleArrayOfArrays: Rectangle[][]){
     //var resource = resource

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
 
     
@@ -53,51 +55,51 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 export interface SpecialGameInputInterface extends PaintableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     up()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     down()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     right()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     left()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     strafeLeft()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     strafeRight()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 

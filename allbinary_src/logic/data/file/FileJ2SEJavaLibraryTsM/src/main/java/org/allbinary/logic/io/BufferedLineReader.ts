@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BufferedReader } from "../../../../java/io/BufferedReader.js";
 
     
@@ -73,7 +75,7 @@ var readAheadIndex = readAheadIndex
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public readLine(): string{
 

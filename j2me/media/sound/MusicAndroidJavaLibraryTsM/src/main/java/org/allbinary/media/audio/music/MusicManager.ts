@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Activity } from "../../../../../android/app/Activity.js";
 
     
@@ -352,7 +354,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public stop(){
 this.resourceUtil!.getContext()!.stopService(this.currentIntent);

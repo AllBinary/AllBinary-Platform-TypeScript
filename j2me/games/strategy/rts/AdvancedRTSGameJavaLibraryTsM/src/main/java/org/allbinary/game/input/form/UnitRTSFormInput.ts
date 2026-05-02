@@ -21,6 +21,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
@@ -161,7 +163,7 @@ this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getAt(50
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -182,7 +184,7 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -257,7 +259,7 @@ this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rt
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     attemptBuild(associatedRtsLayer: RTSLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer

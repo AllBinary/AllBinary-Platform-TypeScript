@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";

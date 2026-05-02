@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -48,7 +50,7 @@ export class TestRemoteHighScoresNotFinished
 
     public static readonly PATH: string = "G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static main(args: string[]){
 var args = args

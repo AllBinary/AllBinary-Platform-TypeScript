@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { LayerInterfaceFactoryInterface } from "../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js";
 
     
@@ -47,7 +49,7 @@ import { LayerInterfaceFactoryInterface } from "../../../../org/allbinary/layer/
 export interface CostLayerInterfaceFactoryInterface extends LayerInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCost(): number
 

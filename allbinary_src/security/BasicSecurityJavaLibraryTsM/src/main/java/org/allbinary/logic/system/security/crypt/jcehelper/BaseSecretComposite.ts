@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -51,7 +53,7 @@ export class BaseSecretComposite
 
     public static readonly NULL_SECRET_COMPOSITE: BaseSecretComposite = new BaseSecretComposite();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public encrypt(array: number[]): number[]{
     //var array = array
@@ -64,7 +66,7 @@ export class BaseSecretComposite
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public decrypt(array: number[]): number[]{
 var array = array

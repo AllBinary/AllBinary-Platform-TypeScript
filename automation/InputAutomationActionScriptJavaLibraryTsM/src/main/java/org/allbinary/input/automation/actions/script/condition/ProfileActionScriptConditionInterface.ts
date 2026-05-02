@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 import { ProfileActionScriptItemInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js";
@@ -60,7 +62,7 @@ export interface ProfileActionScriptConditionInterface extends ProfileActionScri
 
     removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     shouldProcess(frame: number): boolean
 

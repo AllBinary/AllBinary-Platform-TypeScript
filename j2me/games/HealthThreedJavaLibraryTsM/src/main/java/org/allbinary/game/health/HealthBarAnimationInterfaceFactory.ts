@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
@@ -68,7 +70,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceByLocation(layerInterface: AllBinaryLayer, location: number): HealthBarAnimation{
 var layerInterface = layerInterface
@@ -82,7 +84,7 @@ var location = location
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -95,7 +97,7 @@ var location = location
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

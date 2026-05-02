@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { GL } from "../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -89,7 +91,7 @@ this.alphaP= alpha;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public nextFrame(){
 }
@@ -192,7 +194,7 @@ this.changeColorP= this.changeBasicColorP!.toInt();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL){
 var gl = gl

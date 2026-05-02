@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -63,11 +67,11 @@ private constructor (){
         }
 
 
-    /*actual*/ public readonly PRETEND_EXCEPTION: Error = new Error("Not Really An Exception");
+    /*actual*/ public readonly PRETEND_EXCEPTION: Exception = new Exception("Not Really An Exception");
 
     private readonly NONE: string = "No Stack Trace";
 
-    /*actual*/ public getStackTrace(e: Error): string{
+    /*actual*/ public getStackTrace(e: Throwable): string{
 var e = e
         //TypeScript
         if (e.stack) { //ArkTs

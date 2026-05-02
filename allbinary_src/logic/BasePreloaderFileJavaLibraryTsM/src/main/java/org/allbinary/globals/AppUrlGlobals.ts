@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -99,7 +101,7 @@ this.path= path;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getMainPath(): string{
 

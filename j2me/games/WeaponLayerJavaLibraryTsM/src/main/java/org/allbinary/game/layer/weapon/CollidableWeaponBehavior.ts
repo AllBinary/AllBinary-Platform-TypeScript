@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CollidableHelperFactory } from "../../../../../org/allbinary/game/collision/CollidableHelperFactory.js";
 
     
@@ -139,7 +141,7 @@ var collisionLayer = collisionLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collide(collisionLayer: CollidableCompositeLayer){
 var collisionLayer = collisionLayer
@@ -194,7 +196,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface

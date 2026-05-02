@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../java/util/HashMap.js";
@@ -115,7 +117,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getName(): string{
 
@@ -147,7 +149,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(): number{
 

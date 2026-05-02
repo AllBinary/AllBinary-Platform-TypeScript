@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
 
     
@@ -73,7 +75,7 @@ this.reduceTimeFactor= reduceTimeFactor;
 
     private readonly upTimeElapsedHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public right(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
@@ -92,7 +94,7 @@ this.rightTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.redu
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public left(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
@@ -111,7 +113,7 @@ this.leftTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduc
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public up(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
@@ -130,7 +132,7 @@ this.upTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceT
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public down(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
 var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer

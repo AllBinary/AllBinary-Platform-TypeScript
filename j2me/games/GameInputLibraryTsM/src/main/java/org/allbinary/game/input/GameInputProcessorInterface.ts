@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -47,7 +49,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 export interface GameInputProcessorInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onInput(list: BasicArrayList)
 

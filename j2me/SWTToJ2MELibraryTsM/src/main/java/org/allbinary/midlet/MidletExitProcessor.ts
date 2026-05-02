@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { System } from "../../../java/lang/System.js";
         
 import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
@@ -62,7 +64,7 @@ this.midlet= midlet;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 System.exit(0);

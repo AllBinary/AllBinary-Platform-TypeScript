@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { AbPath } from "../../../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
@@ -57,15 +59,15 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 export interface TransformInfoObjectConfigAndManipulatorFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface
 

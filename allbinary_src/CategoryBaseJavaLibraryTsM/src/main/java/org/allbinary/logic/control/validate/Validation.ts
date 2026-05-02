@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -58,7 +62,7 @@ export class Validation
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 
@@ -69,7 +73,7 @@ export class Validation
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -81,7 +85,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -92,7 +96,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { TsUtil } from "../../../org/allbinary/TsUtil.js";
@@ -98,7 +100,7 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
 
     private readonly CLEAR: string = " Clear List";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface

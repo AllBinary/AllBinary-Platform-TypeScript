@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -88,7 +90,7 @@ super.setTableName(this.tableName);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(name: string): number{
 var name = name
@@ -110,7 +112,7 @@ keysAndValues!.put(this.NAME, name);
                                     
 
 
-                            throw new Error("results do not match");
+                            throw new Exception("results do not match");
                     
 
                                     }

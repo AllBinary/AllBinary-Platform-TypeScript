@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../java/util/HashMap.js";
@@ -102,7 +104,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFormData(){
 
@@ -115,14 +117,14 @@ this.getFormData();
                                     null
                                 )
                         
-                                    throw new Error("No Request Params Found");
+                                    throw new Exception("No Request Params Found");
                                 
 this.id= hashMap!.get(BasicItemData.ID) as string;
     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(): Boolean{
 

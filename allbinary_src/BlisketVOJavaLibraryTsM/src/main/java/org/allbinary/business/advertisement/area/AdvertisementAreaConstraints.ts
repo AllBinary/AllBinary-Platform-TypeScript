@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { DomSearchHelper } from "../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
 
     

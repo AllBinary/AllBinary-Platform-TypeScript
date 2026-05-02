@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { UserInterface } from "../../../../../../../../org/allbinary/business/user/UserInterface.js";
 
     
@@ -59,7 +61,7 @@ export class UserEmailEventListenerFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface, userInterface: UserInterface): UserEmailEventListenerInterface{
     //var abeClientInformation = abeClientInformation

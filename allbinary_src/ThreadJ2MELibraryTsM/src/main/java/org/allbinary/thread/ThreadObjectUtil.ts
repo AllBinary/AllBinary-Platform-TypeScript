@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { TsUtil } from "../../../org/allbinary/TsUtil.js";
 
     
@@ -58,7 +60,7 @@ anyType!.notify();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitObject(anyType: Object){
 var anyType = anyType
@@ -67,7 +69,7 @@ anyType!.wait();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitObjectFor(anyType: Object, delay: number){
 var anyType = anyType

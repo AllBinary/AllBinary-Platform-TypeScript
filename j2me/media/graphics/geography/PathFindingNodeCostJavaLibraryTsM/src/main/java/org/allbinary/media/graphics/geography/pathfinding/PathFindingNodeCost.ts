@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -85,7 +87,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
                                     
 
 
-                            throw new Error("No GeographicMapCellPosition");
+                            throw new Exception("No GeographicMapCellPosition");
                     
 
                                     }
@@ -99,7 +101,7 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
                                     
 
 
-                            throw new Error("No PathFindingNodeCostInfo");
+                            throw new Exception("No PathFindingNodeCostInfo");
                     
 
                                     }

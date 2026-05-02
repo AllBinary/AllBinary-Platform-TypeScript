@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
@@ -658,7 +660,7 @@ bufferedImageArray[index]= ImageIO.read(files[index]!);
                                     
 
 
-                            throw new Error("Unable to read file: " +files[index]!.getPath());
+                            throw new Exception("Unable to read file: " +files[index]!.getPath());
                     
 
                                     }

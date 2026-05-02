@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BasicGameResources } from "../../../../../org/allbinary/game/layer/resources/BasicGameResources.js";
 
     
@@ -76,7 +78,7 @@ export class DecalAnimationInterfaceFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAnimationFactory(basicGameResources: BasicGameResources, basicColor: BasicColor): AnimationInterfaceFactoryInterface{
     //var basicGameResources = basicGameResources

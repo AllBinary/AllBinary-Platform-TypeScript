@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { StreetAddressData } from "../../../org/allbinary/business/user/address/StreetAddressData.js";
 
     

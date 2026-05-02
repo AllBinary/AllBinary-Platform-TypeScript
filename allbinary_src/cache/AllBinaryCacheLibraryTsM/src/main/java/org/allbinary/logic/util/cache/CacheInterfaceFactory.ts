@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -49,7 +51,7 @@ export class CacheInterfaceFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(cacheType: CacheType, cachePolicy: CachePolicy): CacheInterface{
 var cacheType = cacheType
@@ -57,7 +59,7 @@ var cachePolicy = cachePolicy
 
 
 
-                            throw new Error("No such " +cacheType!.toString());
+                            throw new Exception("No such " +cacheType!.toString());
                     
 }
 

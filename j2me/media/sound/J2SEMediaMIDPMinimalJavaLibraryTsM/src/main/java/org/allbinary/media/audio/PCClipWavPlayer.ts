@@ -22,6 +22,12 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
+            import { IllegalArgumentException } from "../../../../java/lang/IllegalArgumentException.js";
+        
 import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
     
@@ -129,7 +135,7 @@ clip= this.create(audioInputStream);
                                 )
                         
                                     {
-                                    this.logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put("Clip was null", this, commonStrings!.CONSTRUCTOR, new Exception());
     
 
 
@@ -179,7 +185,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     close2(){
 this.clip.drain();
@@ -229,7 +235,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     start2(){
 this.clip.setFramePosition(0);
@@ -243,7 +249,7 @@ super.start();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     create(audioInputStream: AudioInputStream): Clip{
 var audioInputStream = audioInputStream
@@ -292,7 +298,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     stop2(){
 this.clip.stop();

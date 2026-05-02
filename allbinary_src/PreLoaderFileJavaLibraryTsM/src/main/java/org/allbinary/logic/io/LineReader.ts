@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { DataInputStream } from "../../../../java/io/DataInputStream.js";
 
     
@@ -156,7 +158,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public next(): string{
 
@@ -172,7 +174,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
                                     
 
 
-                            throw new Error("next() should have been called first");
+                            throw new Exception("next() should have been called first");
                     
 
                                     }

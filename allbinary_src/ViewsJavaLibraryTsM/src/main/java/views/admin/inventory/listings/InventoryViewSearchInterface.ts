@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -44,19 +46,19 @@
 export interface InventoryViewSearchInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     searchSingleStaticPage(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     searchSingleDynamicPage(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     search(): string[]
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getProduct(product: string): string
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GameFeatureControlledInterface } from "../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js";
 
     
@@ -53,11 +55,11 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 export interface ResourceRelativeRelationshipFactoryInterface extends GameFeatureControlledInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getResourceRelativeRelationshipList(resource: string): BasicArrayList
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addResourceRelativeRelationship(resource: string, relativeRelationship: RelativeRelationship)
 

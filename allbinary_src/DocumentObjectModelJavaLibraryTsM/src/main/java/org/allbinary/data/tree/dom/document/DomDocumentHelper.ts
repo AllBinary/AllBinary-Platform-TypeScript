@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -112,7 +114,7 @@ export class DomDocumentHelper
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static create(inputStream: InputStream): Document{
 var inputStream = inputStream
@@ -150,7 +152,7 @@ var inputStream = inputStream
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static create(xmlString: string): Document{
 var xmlString = xmlString
@@ -188,7 +190,7 @@ var xmlString = xmlString
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static toString(document: Document): string{
 var document = document

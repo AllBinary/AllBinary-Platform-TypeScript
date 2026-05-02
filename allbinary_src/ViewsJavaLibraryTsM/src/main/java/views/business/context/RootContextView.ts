@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../java/util/Vector.js";
 
     
@@ -94,7 +96,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 
@@ -145,7 +147,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getName(): string{
 
@@ -165,7 +167,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     
 
 
-                            throw new Error("Template View Not Set - No Components");
+                            throw new Exception("Template View Not Set - No Components");
                     
 
                                     }
@@ -177,7 +179,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     
 
 
-                            throw new Error("To Many Root Template Views: " +componentsVector!.length);
+                            throw new Exception("To Many Root Template Views: " +componentsVector!.length);
                     
 
                                     }
@@ -206,7 +208,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                                     
 
 
-                            throw new Error("Template View Not Set - No View Name");
+                            throw new Exception("Template View Not Set - No View Name");
                     
 
                                     }

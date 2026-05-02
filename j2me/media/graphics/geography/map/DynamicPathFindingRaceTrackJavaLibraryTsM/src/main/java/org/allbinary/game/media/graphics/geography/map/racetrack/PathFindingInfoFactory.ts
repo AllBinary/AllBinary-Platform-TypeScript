@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../../java/lang/Integer.js";
         
 import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
@@ -154,7 +156,7 @@ this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterf
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, mapArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
@@ -180,7 +182,7 @@ pathFindingInfo!.setPathFinder(this.basicGeographicMapPathFinder);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
@@ -193,7 +195,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     buildPathFindingNodesForCellPosition(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][], cellPosition: GeographicMapCellPosition){
     //var geographicMapInterface = geographicMapInterface
@@ -280,7 +282,7 @@ pathFindingNodeCostInfoFactoryInterface!.create(geographicMapInterface, goingToG
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface

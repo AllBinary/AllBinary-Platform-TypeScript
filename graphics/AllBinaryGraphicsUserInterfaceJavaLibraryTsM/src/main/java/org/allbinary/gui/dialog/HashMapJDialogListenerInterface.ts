@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -47,7 +49,7 @@ import { HashMap } from "../../../../java/util/HashMap.js";
 export interface HashMapJDialogListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onHashMap(hashMap: HashMap<any, any>)
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -52,7 +54,7 @@ export class Init
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 }

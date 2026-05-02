@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -47,7 +49,7 @@ export class TouchButtonVisitor
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(touchButtonInput: TouchButtonInput, string: string){
 var touchButtonInput = touchButtonInput

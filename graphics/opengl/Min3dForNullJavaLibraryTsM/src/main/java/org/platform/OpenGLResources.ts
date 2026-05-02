@@ -8,6 +8,10 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../java/lang/RuntimeException.js";
+        
 import { InputStream } from "../../java/io/InputStream.js";
 
     
@@ -73,7 +77,7 @@ export class OpenGLResources
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public openRawResource(id: number): InputStream{
     //var id = id
@@ -85,7 +89,7 @@ export class OpenGLResources
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public openRawResourceFromName(resourceName: string): InputStream{
     //var resourceName = resourceName
@@ -97,7 +101,7 @@ export class OpenGLResources
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getResourceAsStream(resourceName: string): InputStream{
     //var resourceName = resourceName

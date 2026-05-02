@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -72,7 +74,7 @@ this.createMotionRectangles(imageComparisonResult);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createMotionRectangles(imageComparisonInfo: ImageComparisonResult){
 var imageComparisonInfo = imageComparisonInfo
@@ -103,7 +105,7 @@ this.addPixelDeltaToAMotionRectangle(pixelDelta);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addPixelDeltaToExistingMotionRectangle(pixelDelta: PixelDelta): boolean{
 var pixelDelta = pixelDelta
@@ -179,7 +181,7 @@ motionRectangle!.getRectangle()!.setSize(newWidth, newHeight);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addPixelDeltaToAMotionRectangle(pixelDelta: PixelDelta){
 var pixelDelta = pixelDelta
@@ -205,7 +207,7 @@ this.getVector()!.add(motionRectangle);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     shouldPixelDeltaPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
 var motionRectangle = motionRectangle
@@ -221,7 +223,7 @@ var pixelDelta = pixelDelta
                                     
 
 
-                            throw new Error("PixelAboveTheRectangle");
+                            throw new Exception("PixelAboveTheRectangle");
                     
 
                                     }
@@ -257,7 +259,7 @@ var pixelDelta = pixelDelta
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
 var motionRectangle = motionRectangle

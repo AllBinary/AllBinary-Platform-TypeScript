@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { URLGLOBALS } from "../../../../org/allbinary/globals/URLGLOBALS.js";
 
     

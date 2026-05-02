@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BasicGameResources } from "../../../../../org/allbinary/game/layer/resources/BasicGameResources.js";
 
     
@@ -106,7 +108,7 @@ super.init(ROOT, SIZE);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     append(ROOT: string, sizeString: string){
 var ROOT = ROOT
@@ -116,7 +118,7 @@ super.append(ROOT, sizeString);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getString(): string{
 

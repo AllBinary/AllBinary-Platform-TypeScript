@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -102,7 +104,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager

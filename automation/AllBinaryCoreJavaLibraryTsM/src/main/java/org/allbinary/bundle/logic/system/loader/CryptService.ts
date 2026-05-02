@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -150,7 +152,7 @@ this.showLicenseDialog(abeClientInformation, e);
 }
 
 
-    showLicenseDialog(abeClientInformation: AbeClientInformationInterface, e: Error){
+    showLicenseDialog(abeClientInformation: AbeClientInformationInterface, e: Exception){
     //var abeClientInformation = abeClientInformation
     //var e = e
 

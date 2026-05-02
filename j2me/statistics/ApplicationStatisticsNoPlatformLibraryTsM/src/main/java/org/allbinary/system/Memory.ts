@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
     

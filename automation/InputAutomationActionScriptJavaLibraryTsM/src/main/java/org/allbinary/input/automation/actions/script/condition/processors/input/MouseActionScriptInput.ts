@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../../../java/lang/Long.js";
@@ -190,7 +192,7 @@ this.setPoint(newPoint);
                             
 
 
-                            throw new Error("Action Script Input Unknown Node");
+                            throw new Exception("Action Script Input Unknown Node");
                     
 
                         }
@@ -204,7 +206,7 @@ this.setPoint(newPoint);
                             
 
 
-                            throw new Error("Action Script Input Node Null");
+                            throw new Exception("Action Script Input Node Null");
                     
 
                         }
@@ -288,7 +290,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -321,7 +323,7 @@ mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(frame: number){
 var frame = frame

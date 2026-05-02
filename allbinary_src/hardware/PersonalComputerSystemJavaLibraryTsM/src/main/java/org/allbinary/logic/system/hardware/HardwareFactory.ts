@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GenericOperatingSystem } from "../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
 
     
@@ -59,7 +61,7 @@ export class HardwareFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(os: GenericOperatingSystem): HardwareInterface{
 var os = os
@@ -98,7 +100,7 @@ var os = os
 
 
 
-                            throw new Error("No Hardware Imp for: " +os.getName());
+                            throw new Exception("No Hardware Imp for: " +os.getName());
                     
 
                 //: 

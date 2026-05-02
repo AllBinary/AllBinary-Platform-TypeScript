@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -254,7 +256,7 @@ this.fileName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getDoc(): Document{
 
@@ -284,7 +286,7 @@ stringBuffer!.append(this.getFileName());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTypeVector(): BasicArrayList{
 

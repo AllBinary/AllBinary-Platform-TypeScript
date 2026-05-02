@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -79,7 +81,7 @@ export class NumberOnOwnGroupSequenceAIFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable
@@ -149,7 +151,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     
 
 
-                            throw new Error("Not enough AI properties.");
+                            throw new Exception("Not enough AI properties.");
                     
 
                                     }
@@ -161,7 +163,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     
 
 
-                            throw new Error("Too Many AI properties.");
+                            throw new Exception("Too Many AI properties.");
                     
 
                                     }

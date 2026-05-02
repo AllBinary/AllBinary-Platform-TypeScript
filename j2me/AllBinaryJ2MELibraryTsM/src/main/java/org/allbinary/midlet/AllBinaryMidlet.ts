@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../java/util/Hashtable.js";
 
     
@@ -248,7 +250,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setStartStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
@@ -260,7 +262,7 @@ this.hashtable= hashtable;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStartStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(new StringMaker().
@@ -275,7 +277,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");

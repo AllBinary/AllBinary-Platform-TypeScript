@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Globals } from "../../../../../org/allbinary/globals/Globals.js";
 
     
@@ -55,7 +57,7 @@ export class TestRemoteLogUtil
 
     public static readonly PATH: string = "G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static main(args: string[]){
 var args = args
@@ -76,7 +78,7 @@ public constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-this.logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Error("Pretend Exception"));
+this.logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Exception("Pretend Exception"));
     
 }
 

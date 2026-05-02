@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
@@ -165,7 +167,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFormData(){
 this.setRequestHashMap(new MultipartRequestParams(this.request).
@@ -273,7 +275,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 
@@ -309,7 +311,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processImageFiles(){
 

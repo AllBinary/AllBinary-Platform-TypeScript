@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
 
     
@@ -53,11 +55,11 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 export interface SalvoInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface)
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Layer } from "../../../../../../org/allbinary/layer/Layer.js";
 
     
@@ -68,7 +70,7 @@ export class BasicGeographicMapUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getBorderingRow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
     //var direction = direction
@@ -111,7 +113,7 @@ export class BasicGeographicMapUtil
 else -> {
 
 
-                            throw new Error("Only Four Directions");
+                            throw new Exception("Only Four Directions");
                     
 }
 
@@ -121,7 +123,7 @@ else -> {
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getBorderingColumn(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
     //var direction = direction
@@ -164,7 +166,7 @@ else -> {
 else -> {
 
 
-                            throw new Error("Only Four Directions");
+                            throw new Exception("Only Four Directions");
                     
 }
 
@@ -174,7 +176,7 @@ else -> {
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isSameCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var fromGeographicMapCellPosition = fromGeographicMapCellPosition

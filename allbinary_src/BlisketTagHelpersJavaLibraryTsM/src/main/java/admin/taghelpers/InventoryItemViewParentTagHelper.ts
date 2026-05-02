@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { RequestMapInterface } from "../../org/allbinary/logic/communication/http/request/RequestMapInterface.js";
 
     
@@ -79,7 +81,7 @@ export class InventoryItemViewParentTagHelper
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInventoryItemView(inventoryTag: HelperTag): InventoryItemView{
 var inventoryTag = inventoryTag
@@ -116,7 +118,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 
                                     }
@@ -134,7 +136,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                             
 
 
-                            throw new Error("Must have parent tag.");
+                            throw new Exception("Must have parent tag.");
                     
 
                         }
@@ -142,7 +144,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDownloadableInventoryItemView(inventoryTag: HelperTag): DownloadableInventoryItemView{
 var inventoryTag = inventoryTag
@@ -179,7 +181,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 
                                     }
@@ -197,7 +199,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                             
 
 
-                            throw new Error("Must have parent tag.");
+                            throw new Exception("Must have parent tag.");
                     
 
                         }
@@ -205,7 +207,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRequestMapInterface(inventoryTag: HelperTag): RequestMapInterface{
 var inventoryTag = inventoryTag
@@ -242,7 +244,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 
                                     }
@@ -260,7 +262,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                             
 
 
-                            throw new Error("Must have parent tag.");
+                            throw new Exception("Must have parent tag.");
                     
 
                         }
@@ -268,7 +270,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public checkForValidationViewHelper(helperObject: any = {}){
 var helperObject = helperObject
@@ -291,7 +293,7 @@ stringBuffer!.append(helperObject!.constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 
                                     }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BufferedWriter } from "../../../../java/io/BufferedWriter.js";
 
     
@@ -70,7 +72,7 @@ export class BufferedWriterUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public overwrite(path: string, data: string){
     //var path = path
@@ -93,7 +95,7 @@ this.write(abFile, data);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public overwrite(abFile: AbFile, data: string){
     //var abFile = abFile
@@ -112,7 +114,7 @@ this.write(abFile, data);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(abFile: AbFile, data: string){
     //var abFile = abFile

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
 
     

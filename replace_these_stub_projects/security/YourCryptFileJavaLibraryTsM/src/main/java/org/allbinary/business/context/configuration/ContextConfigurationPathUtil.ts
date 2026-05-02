@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
@@ -38,7 +40,7 @@ export class ContextConfigurationPathUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getAbFile(contextName: string): AbFile{
 var contextName = contextName
@@ -51,7 +53,7 @@ var contextName = contextName
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getAbPath(contextName: string): AbPath{
 var contextName = contextName
@@ -64,7 +66,7 @@ var contextName = contextName
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     static getPath(): string{
 

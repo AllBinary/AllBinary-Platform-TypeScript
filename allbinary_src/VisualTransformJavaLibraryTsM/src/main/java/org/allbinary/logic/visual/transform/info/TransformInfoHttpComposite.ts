@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -86,7 +88,7 @@ this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterfac
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameAdStateFactory } from "../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js";
 
     
@@ -76,7 +78,7 @@ export class BaseGameBehavior extends DemoGameBehavior {
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 
@@ -130,7 +132,7 @@ currentDisplayableFactory!.setDisplayable(allBinaryGameCanvas);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateTouch(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -139,7 +141,7 @@ allBinaryGameCanvas!.updateTouch2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateScreenButtonPaintable(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -148,7 +150,7 @@ allBinaryGameCanvas!.updateScreenButtonPaintable2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setGameState(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -164,7 +166,7 @@ allBinaryGameCanvas!.removeAllGameKeyInputListeners2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateEndGameProcessor(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -173,7 +175,7 @@ allBinaryGameCanvas!.updateEndGameProcessor2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public buildGame(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -182,7 +184,7 @@ allBinaryGameCanvas!.buildGame2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public run(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -191,7 +193,7 @@ allBinaryGameCanvas!.run2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setHighScore(abeClientInformation: AbeClientInformationInterface, allBinaryGameCanvas: AllBinaryGameCanvas, name: string, score: number, autoSubmit: boolean, isLast: boolean){
     //var abeClientInformation = abeClientInformation

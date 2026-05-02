@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -45,14 +47,14 @@
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(anyType: any = {}){
 var anyType = anyType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public sendNotifications(anyType: any = {}){
 var anyType = anyType

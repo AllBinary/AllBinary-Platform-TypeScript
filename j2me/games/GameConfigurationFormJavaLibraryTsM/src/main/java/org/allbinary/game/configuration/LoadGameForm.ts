@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
@@ -121,7 +123,7 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(){
 

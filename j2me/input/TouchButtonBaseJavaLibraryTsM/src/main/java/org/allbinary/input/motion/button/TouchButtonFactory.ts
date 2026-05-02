@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -146,7 +148,7 @@ this.saved= false;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setList(list: BasicArrayList){
 var list = list
@@ -159,7 +161,7 @@ var list = list
                                     
 
 
-                            throw new Error("Null List");
+                            throw new Exception("Null List");
                     
 
                                     }

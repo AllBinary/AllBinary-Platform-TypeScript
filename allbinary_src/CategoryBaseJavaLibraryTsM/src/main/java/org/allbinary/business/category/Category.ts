@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../java/util/HashMap.js";
@@ -154,7 +156,7 @@ this.log();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 
@@ -166,7 +168,7 @@ this.log();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRootFilePath(): AbPath{
 
@@ -199,7 +201,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFilePath(): AbPath{
 
@@ -211,7 +213,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWebAppPath(): AbPath{
 
@@ -227,7 +229,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPath(): AbPath{
 
@@ -485,7 +487,7 @@ this.removal(removalVector);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isLeaf(): boolean{
 
@@ -497,7 +499,7 @@ this.removal(removalVector);
                                     
 
 
-                            throw new Error("Category Error");
+                            throw new Exception("Category Error");
                     
 
                                     }
@@ -562,7 +564,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isValid(): Boolean{
@@ -654,7 +656,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -666,7 +668,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -679,7 +681,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 
@@ -691,7 +693,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -707,7 +709,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 
@@ -725,7 +727,7 @@ categoryVector!.add(this.childCategoryVector);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public log(){
 

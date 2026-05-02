@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { TouchButtonDowngradeResource } from "../../../../../org/allbinary/game/input/resource/TouchButtonDowngradeResource.js";
 
     

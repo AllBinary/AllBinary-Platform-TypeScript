@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { Set } from "../../../../../../../../../java/util/Set.js";
 
     
@@ -56,7 +58,7 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(): DefaultComboBoxModel{
 

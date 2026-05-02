@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { NullUtil } from "../../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -83,7 +85,7 @@ this.setGeographicMapCellPositionP(geographicMapCellPosition);
                                     
 
 
-                            throw new Error("No GeographicMapCellPosition");
+                            throw new Exception("No GeographicMapCellPosition");
                     
 
                                     }

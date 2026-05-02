@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
 
     

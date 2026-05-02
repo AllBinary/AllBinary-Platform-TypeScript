@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
 
     
@@ -58,7 +60,7 @@ export class AccelerometerSensorFactory
 
     private allBinaryAccelerometerSensor: AllBinaryOrientationSensor = AllBinaryOrientationSensor.NULL_ALLBINARY_ORIENTATION_SENSOR;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(){
 
@@ -76,7 +78,7 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw new Error("No Orientation Sensors");
+                            throw new Exception("No Orientation Sensors");
                     
 
                                     }
@@ -88,7 +90,7 @@ export class AccelerometerSensorFactory
                                     
 
 
-                            throw new Error("No Simulation Sensors");
+                            throw new Exception("No Simulation Sensors");
                     
 
                                     }
@@ -106,7 +108,7 @@ export class AccelerometerSensorFactory
                             
 
 
-                            throw new Error("Not Such SensorFeature");
+                            throw new Exception("Not Such SensorFeature");
                     
 
                         }

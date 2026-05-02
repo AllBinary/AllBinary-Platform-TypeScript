@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -83,7 +85,7 @@ export interface BasicStoreFrontInterface {
 
     getCategoryPath(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getSubStores(): BasicArrayList
 

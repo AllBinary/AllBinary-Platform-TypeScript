@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../java/util/HashMap.js";
 
     
@@ -67,7 +69,7 @@ var pageContext = pageContext
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStoreName(): string{
 

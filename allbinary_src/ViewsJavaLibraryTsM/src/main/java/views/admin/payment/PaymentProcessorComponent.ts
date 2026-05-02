@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { PaymentProcessorInterface } from "../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterface.js";
 
     
@@ -76,7 +78,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addDomNodeInterfaces(){
 
@@ -96,7 +98,7 @@ this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

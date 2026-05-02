@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -202,7 +204,7 @@ this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropert
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     set(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -310,7 +312,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as string);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -322,7 +324,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as string);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -334,7 +336,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as string);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDataFilePath(): AbPath{
 

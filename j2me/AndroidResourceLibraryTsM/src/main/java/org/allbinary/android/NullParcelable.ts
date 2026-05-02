@@ -24,6 +24,8 @@
 
 
         
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
 import { Parcelable } from "../../../android/os/Parcelable.js";
 
     

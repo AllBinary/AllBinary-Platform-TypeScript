@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -74,7 +76,7 @@ export class AbXslHelper
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public translate(xslFile: AbFile, xmlFile: AbFile): string{
     //var xslFile = xslFile
@@ -88,7 +90,7 @@ export class AbXslHelper
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public translate(xslPath: AbPath, xmlPath: AbPath): string{
     //var xslPath = xslPath
@@ -102,7 +104,7 @@ export class AbXslHelper
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public translate(xsltFilePath: string, xmlFilePath: string): string{
     //var xsltFilePath = xsltFilePath

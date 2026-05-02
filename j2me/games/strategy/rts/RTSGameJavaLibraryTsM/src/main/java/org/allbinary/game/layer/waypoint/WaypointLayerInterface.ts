@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CaptionAnimationHelperBase } from "../../../../../org/allbinary/animation/caption/CaptionAnimationHelperBase.js";
 
     
@@ -68,23 +70,23 @@ import { WaypointRunnableLogHelper } from "./WaypointRunnableLogHelper.js";
 export interface WaypointLayerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList)
 
     getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setClosestGeographicMapCellHistory(pathsList: BasicArrayList)
 
     teleportTo(geographicMapCellPosition: GeographicMapCellPosition)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setLoad(resource: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getSurroundingGeographicMapCellPositionList(): BasicArrayList
 
@@ -94,15 +96,15 @@ export interface WaypointLayerInterface {
 
     isShowMoreCaptionStates(): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     trackTo(reason: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     trackToDXY(dx: number, dy: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean
 
@@ -112,11 +114,11 @@ export interface WaypointLayerInterface {
 
     isWaypointListEmptyOrOnlyTargets(): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCurrentGeographicMapCellPosition(): GeographicMapCellPosition
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition
 

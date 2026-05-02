@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -210,7 +212,7 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -239,7 +241,7 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
@@ -321,7 +323,7 @@ this.processCellPosition(rtsPlayerLayerInterface, layerManager, geographicMapCel
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processCellPosition(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, geographicMapCellPosition: GeographicMapCellPosition){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -369,7 +371,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRT
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -392,7 +394,7 @@ this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     attemptBuild(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number): boolean{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -407,7 +409,7 @@ this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
                                 )
                         
                                     {
-                                    this.logUtil!.put("Layer was null", this, "attemptBuild", new Error());
+                                    this.logUtil!.put("Layer was null", this, "attemptBuild", new Exception());
     
 
 
@@ -612,7 +614,7 @@ rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addWayPoint(layerInterface: WaypointLayer){
     //var layerInterface = layerInterface

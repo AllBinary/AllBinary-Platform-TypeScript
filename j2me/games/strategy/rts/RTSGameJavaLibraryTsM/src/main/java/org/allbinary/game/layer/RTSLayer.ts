@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -187,7 +191,7 @@ import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
 export class RTSLayer extends MultiPlayerGameLayer implements TickableInterface, GameInputInterface, GameKeyEventSourceInterface, RTSInterface, PathFindingLayerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createSimulatedInstance(remoteInfo: RemoteInfo): RTSLayer{
     //var remoteInfo = remoteInfo
@@ -390,7 +394,7 @@ this.geographicMapCellPositionAreaBase= new GeographicMapCellPositionArea(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -419,7 +423,7 @@ this.updateWaypointBehavior(geographicMapInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -428,7 +432,7 @@ this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -508,7 +512,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -547,7 +551,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -563,7 +567,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onMovementFound(trackingEvent: TrackingEvent){
     //var trackingEvent = trackingEvent
@@ -591,7 +595,7 @@ this.getAnimationInterface()!.paintXY(graphics, viewX, viewY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -650,7 +654,7 @@ this.rtsLayerUtil!.upgrade(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     build(){
 
@@ -813,7 +817,7 @@ this.animationInterface= animationInterface;
 
     private readonly layerDistanceUtil: LayerDistanceUtil = LayerDistanceUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setTarget(targetGameLayer: PathFindingLayerInterface){
     //var targetGameLayer = targetGameLayer
@@ -892,7 +896,7 @@ this.healthInterface= healthInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isDestroyed(): boolean{
 
@@ -904,7 +908,7 @@ this.healthInterface= healthInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
@@ -954,7 +958,7 @@ ViewPositionEventHandler.getInstance()!.removeListener(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
 var ownerLayer = ownerLayer
@@ -1048,7 +1052,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellHistory = geographicMapCellHistory
@@ -1056,7 +1060,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -1067,7 +1071,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -1088,7 +1092,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -1100,14 +1104,14 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setLoad(resource: number){
 var resource = resource
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
@@ -1118,14 +1122,14 @@ var resource = resource
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public trackTo(reason: string){
     //var reason = reason
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public trackToDXY(dx: number, dy: number){
     //var dx = dx
@@ -1152,7 +1156,7 @@ var resource = resource
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
     //var allbinaryLayer = allbinaryLayer

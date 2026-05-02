@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GameKeyEvent } from "../../../../org/allbinary/game/input/event/GameKeyEvent.js";
 
     
@@ -61,7 +63,7 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager

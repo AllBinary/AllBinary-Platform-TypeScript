@@ -22,6 +22,8 @@
 
 
         
+            import { NumberFormatException } from "../../../../../../java/lang/NumberFormatException.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Vector } from "../../../../../../java/util/Vector.js";

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -52,11 +54,11 @@ export interface ShippingMethodsInterface {
 
     get(): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getShippingInterface(name: string): ShippingInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getDefault(): ShippingInterface
 

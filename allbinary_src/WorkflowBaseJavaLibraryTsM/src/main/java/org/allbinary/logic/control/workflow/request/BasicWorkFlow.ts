@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../java/util/Calendar.js";
@@ -191,7 +193,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 
@@ -226,7 +228,7 @@ values.add(time);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -52,7 +54,7 @@ export interface MovementInterface {
 
     init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(layer: AllBinaryGameLayer)
 

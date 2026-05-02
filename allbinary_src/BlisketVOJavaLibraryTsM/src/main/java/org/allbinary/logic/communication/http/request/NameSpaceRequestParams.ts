@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -150,7 +152,7 @@ public constructor (pageContext: PageContext){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createPackageNode(document: Document, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
 var document = document
@@ -206,7 +208,7 @@ node.appendChild(propertyNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createPackageMultiNode(document: Document, nameSpaceRequestParam: NameSpaceRequestParam, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
 var document = document
@@ -270,7 +272,7 @@ nextNode!.appendChild(indexNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getRootNode(rootElementPackage: string, packagePropertiesHashMap: HashMap<any, any>, document: Document): Node{
 var rootElementPackage = rootElementPackage
@@ -341,7 +343,7 @@ document.appendChild(node);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addNewProperties(document: Document, node: Node, nextPackagePropertiesHashMap: HashMap<any, any>): Node{
 var document = document
@@ -425,7 +427,7 @@ index < size; index++)
 
 
 
-                            throw new Error("Property Modifications Should Not Occur");
+                            throw new Exception("Property Modifications Should Not Occur");
                     
 
                                     }
@@ -463,7 +465,7 @@ node.appendChild(newPropertyNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isElementValueTextNodeEqual(nextPackagePropertiesHashMap: HashMap<any, any>, node: Node): boolean{
 var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
@@ -539,7 +541,7 @@ var node = node
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isElementValueTextNodeUnique(nextPackagePropertiesHashMap: HashMap<any, any>, elementNodeVector: Vector): number{
 var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
@@ -593,7 +595,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addChildren(document: Document, rootNode: Node, nameSpaceRequestParam: NameSpaceRequestParam): Document{
 var document = document
@@ -752,7 +754,7 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addNameSpace(key: string, value: string, document: Document): Document{
 var key = key
@@ -824,7 +826,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 

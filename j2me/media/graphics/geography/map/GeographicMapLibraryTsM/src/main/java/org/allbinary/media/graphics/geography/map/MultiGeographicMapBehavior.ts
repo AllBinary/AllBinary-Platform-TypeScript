@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -49,7 +51,7 @@ export class MultiGeographicMapBehavior
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellTypeAt(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType[]{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray

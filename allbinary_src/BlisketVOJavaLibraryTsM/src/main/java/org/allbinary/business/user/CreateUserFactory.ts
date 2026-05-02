@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -62,7 +64,7 @@ export class CreateUserFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(hashMap: HashMap<any, any>): UserInterface{
 var hashMap = hashMap
@@ -97,7 +99,7 @@ var hashMap = hashMap
                             
 
 
-                            throw new Error("No Role Specified");
+                            throw new Exception("No Role Specified");
                     
 
                         }
@@ -109,7 +111,7 @@ var hashMap = hashMap
                             
 
 
-                            throw new Error("Null HashMap");
+                            throw new Exception("Null HashMap");
                     
 
                         }

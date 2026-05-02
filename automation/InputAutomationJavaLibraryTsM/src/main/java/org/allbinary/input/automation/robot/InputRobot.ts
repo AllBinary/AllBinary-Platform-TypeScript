@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -124,7 +126,7 @@ this.robot= new Robot(graphicsDevice);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mouseMoveToTarget(rectangle: Rectangle, x: number, y: number){
     //var rectangle = rectangle
@@ -168,7 +170,7 @@ this.logUtil!.putF(message, this, "moveMouse");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle

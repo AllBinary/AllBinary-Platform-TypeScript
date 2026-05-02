@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -70,7 +72,7 @@ this.userConfigurationInterface= userConfigurationInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -93,7 +95,7 @@ document.appendChild(node);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDomDocumentString(): string{
 

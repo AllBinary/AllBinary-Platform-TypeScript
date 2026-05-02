@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -149,7 +153,7 @@ this.value= 0;
                                     
 
 
-                            throw new Error(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
+                            throw new Exception(BasicHudFactory.getInstance()!.DIRECTION_EXCEPTION);
                     
 
                                     }

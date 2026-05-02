@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -58,7 +60,7 @@ export class PaintableToImageUtil
 
     private static readonly instance: PaintableToImageUtil = new PaintableToImageUtil();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getImage(paintableInterface: PaintableInterface, width: number, height: number): Image{
 var paintableInterface = paintableInterface

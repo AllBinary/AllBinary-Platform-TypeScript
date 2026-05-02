@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
 
 
 
@@ -48,7 +52,7 @@ export class ArtificialIntelligenceFactory
          implements ArtificialIntelligenceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(anyType: any = {}): ArtificialIntelligence{
 var anyType = anyType

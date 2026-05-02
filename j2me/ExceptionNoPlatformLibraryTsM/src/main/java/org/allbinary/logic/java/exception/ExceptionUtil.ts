@@ -22,6 +22,12 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 
 
 
@@ -50,8 +56,8 @@ expect export class ExceptionUtil
     public static getInstance(): ExceptionUtil
 
 
-    public readonly PRETEND_EXCEPTION: Error
-    public getStackTrace(e: Error): string
+    public readonly PRETEND_EXCEPTION: Exception
+    public getStackTrace(e: Throwable): string
 
 }
                 

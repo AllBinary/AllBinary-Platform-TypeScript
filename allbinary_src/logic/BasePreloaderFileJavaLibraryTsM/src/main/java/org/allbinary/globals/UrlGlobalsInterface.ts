@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -49,7 +51,7 @@ export class UrlGlobalsInterface
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getMainPath(): string{
 

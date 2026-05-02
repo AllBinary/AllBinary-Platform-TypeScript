@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -280,7 +284,7 @@ index < this.platformToGameKeyMapping!.length; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initGameKey(canvas: Canvas, gameKey: GameKey){
 var canvas = canvas
@@ -316,7 +320,7 @@ var gameKey = gameKey
                                 
                         else {
                             PreLogUtil.putOE(new StringMaker().
-                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, new Error());
+                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, new Exception());
     
 
                         }
@@ -324,7 +328,7 @@ var gameKey = gameKey
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getSmallestCanvasGameKeyCode(canvas: Canvas): number{
 var canvas = canvas

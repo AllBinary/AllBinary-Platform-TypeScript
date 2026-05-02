@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Player } from "../../../../javax/microedition/media/Player.js";
@@ -91,7 +93,7 @@ this.soundsFactoryInterface= soundsFactoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
@@ -177,7 +179,7 @@ this.logUtil!.putF(commonStrings!.END, this, commonStrings!.INIT);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public stopAll(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.STOP_ALL);
@@ -231,7 +233,7 @@ progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public closeAll(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
@@ -79,7 +81,7 @@ this.paymentTypeVector!.add(paymentType);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(paymentTypeString: string): BasicPaymentType{
 var paymentTypeString = paymentTypeString
@@ -117,7 +119,7 @@ i < size; i++)
 
 
 
-                            throw new Error("Unknown PaymentType: " +paymentTypeString);
+                            throw new Exception("Unknown PaymentType: " +paymentTypeString);
                     
 }
 

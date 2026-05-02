@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -65,7 +67,7 @@ this.layerManager= layerManager;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -74,19 +76,19 @@ var index = index
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -101,7 +103,7 @@ var layerInterface = layerInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

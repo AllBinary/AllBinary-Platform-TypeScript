@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -116,7 +118,7 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
 
 }
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(x: number, y: number, rgb1: number, rgb2: number): PixelDelta{
 var x = x

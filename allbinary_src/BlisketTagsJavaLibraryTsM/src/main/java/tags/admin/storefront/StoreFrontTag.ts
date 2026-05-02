@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { JspTagException } from "../../../javax/servlet/jsp/JspTagException.js";
 
     
@@ -90,7 +92,7 @@ this.setObjectFile("views.admin.storefront.AddValidationStoreFrontView");
                                     
 
 
-                            throw new Error("View not implemented");
+                            throw new Exception("View not implemented");
                     
 
                                     }
@@ -135,7 +137,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     
 
 
-                            throw new Error("View not implemented");
+                            throw new Exception("View not implemented");
                     
 
                                     }
@@ -147,7 +149,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     
 
 
-                            throw new Error("View not implemented");
+                            throw new Exception("View not implemented");
                     
 
                                     }
@@ -159,7 +161,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     
 
 
-                            throw new Error("View not implemented");
+                            throw new Exception("View not implemented");
                     
 
                                     }
@@ -171,7 +173,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                                     
 
 
-                            throw new Error("View not implemented");
+                            throw new Exception("View not implemented");
                     
 
                                     }
@@ -180,7 +182,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand());
+                            throw new Exception("No Such View Command: " +this.getCommand());
                     
 
                         }
@@ -197,7 +199,7 @@ this.setObjectFile("views.admin.storefront.DeleteValidationStoreFrontView");
 
 
 
-                            throw new Error("Command Null");
+                            throw new Exception("Command Null");
                     
 
                 //: 

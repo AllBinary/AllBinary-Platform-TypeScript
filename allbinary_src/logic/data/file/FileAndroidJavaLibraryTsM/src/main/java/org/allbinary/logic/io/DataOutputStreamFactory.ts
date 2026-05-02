@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
     
@@ -64,7 +66,7 @@ export class DataOutputStreamFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(file: AbFile): AbDataOutputStream{
 var file = file
@@ -85,7 +87,7 @@ var file = file
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(filePath: string, fileName: string): AbDataOutputStream{
 var filePath = filePath

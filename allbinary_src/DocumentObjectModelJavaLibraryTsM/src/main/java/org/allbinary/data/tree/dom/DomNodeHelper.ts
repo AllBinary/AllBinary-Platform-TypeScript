@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -143,7 +145,7 @@ var node = node
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getTextNodeValue(nodeName: string, nodeList: NodeList): string{
 var nodeName = nodeName

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -48,11 +50,11 @@ export interface FullScreenInterface {
 
     setFullScreenMode(mode: boolean)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     stopWaiting()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     waitOnNotify(wait: number)
 

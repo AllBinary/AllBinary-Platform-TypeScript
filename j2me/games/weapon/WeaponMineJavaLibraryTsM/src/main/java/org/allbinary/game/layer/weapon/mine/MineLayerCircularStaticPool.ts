@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { WeaponLayerCircularPool } from "../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js";
 
     
@@ -56,7 +58,7 @@ export class MineLayerCircularStaticPool
 
     private WEAPON_LAYER_CIRCULAR_STATIC_POOL: WeaponLayerCircularPool = new WeaponLayerCircularPool();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(viewPositionFactoryInterface: ViewPositionFactoryInterface){
 var viewPositionFactoryInterface = viewPositionFactoryInterface

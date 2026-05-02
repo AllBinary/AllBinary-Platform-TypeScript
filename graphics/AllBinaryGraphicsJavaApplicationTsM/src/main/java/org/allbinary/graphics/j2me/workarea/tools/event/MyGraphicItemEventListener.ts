@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -47,7 +49,7 @@ export interface MyGraphicItemEventListener {
 
     delete(evt: MyGraphicItemEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     duplicate(evt: MyGraphicItemEvent)
 

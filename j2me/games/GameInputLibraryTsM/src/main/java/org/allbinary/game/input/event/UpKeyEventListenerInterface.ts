@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
@@ -49,7 +51,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 export interface UpKeyEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onUpKeyEvent(keyAsInteger: number)
 

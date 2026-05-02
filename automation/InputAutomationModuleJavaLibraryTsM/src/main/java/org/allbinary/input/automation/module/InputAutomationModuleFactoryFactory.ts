@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Collection } from "../../../../../java/util/Collection.js";
 
     

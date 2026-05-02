@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { SimpleTiledLayer } from "../../../../../javax/microedition/lcdui/game/SimpleTiledLayer.js";
 
     
@@ -155,7 +157,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
@@ -164,7 +166,7 @@ this.paintSimpleTiledLayer= this.simpleTiledLayer;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onMoveEvent(scrollMapEvent: ScrollMapEvent){
 var scrollMapEvent = scrollMapEvent

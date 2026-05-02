@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { System } from "../../../java/lang/System.js";
         
             import { Thread } from "../../../java/lang/Thread.js";
@@ -346,7 +348,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "showNotify", e);
 
     private notified: boolean = false;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     stopWaiting(){
 this.notified= true;
@@ -367,7 +369,7 @@ this.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public waitOnNotify(wait: number){
@@ -399,7 +401,7 @@ var wait = wait
 
     private readonly PAUSE_SLEEP: string = "pause sleep";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processSleep(){
 Thread.sleep(this.pauseWait);
@@ -417,7 +419,7 @@ Thread.sleep(this.pauseWait);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processGameSleep(sleep: number){
 var sleep = sleep
@@ -432,7 +434,7 @@ Thread.sleep(sleep);
 
     private readonly PROCESS_LOOP_SLEEP: string = "processLoopSleep";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processLoopSleep(){
 this.runnableCanvasRefreshHelper!.process();
@@ -516,7 +518,7 @@ this.setCurrentThread();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public end2(){
 }

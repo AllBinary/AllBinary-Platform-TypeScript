@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -74,11 +76,11 @@ export interface GameCanvasRunnableInterface extends RunnableInterface, Paintabl
 
     isHighScoreSubmitted(): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setHighScoreSubmitted(highScoreSubmitted: boolean)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processGameOver()
 
@@ -86,15 +88,15 @@ export interface GameCanvasRunnableInterface extends RunnableInterface, Paintabl
 
     initCommands(cmdListener: CommandListener)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCurrentStateHashtable(): Hashtable<any, any>
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getLoadStateHashtable(): Hashtable<any, any>
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setLoadStateHashtable(hashtable: Hashtable<any, any>)
 

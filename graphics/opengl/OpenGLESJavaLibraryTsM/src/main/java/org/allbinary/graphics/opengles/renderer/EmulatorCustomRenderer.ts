@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { EGLConfig } from "../../../../../javax/microedition/khronos/egl/EGLConfig.js";

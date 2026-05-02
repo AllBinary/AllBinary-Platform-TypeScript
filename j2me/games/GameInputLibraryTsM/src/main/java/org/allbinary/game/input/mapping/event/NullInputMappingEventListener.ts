@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
 
     
@@ -53,7 +55,7 @@ export class NullInputMappingEventListener
 
     public static readonly NULL_INPUT_MAPPING_EVENT_LISTENER: NullInputMappingEventListener = new NullInputMappingEventListener();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onInputMappingEvent(inputMappingEvent: InputMappingEvent){
     //var inputMappingEvent = inputMappingEvent

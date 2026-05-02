@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -47,7 +49,7 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 export interface PickupProcessorInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(sourceLayerInterface: AllBinaryLayer)
 

@@ -8,6 +8,8 @@
 
 
         
+            import { IndexOutOfBoundsException } from "../../../java/lang/IndexOutOfBoundsException.js";
+        
             import { System } from "../../../java/lang/System.js";
         
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";

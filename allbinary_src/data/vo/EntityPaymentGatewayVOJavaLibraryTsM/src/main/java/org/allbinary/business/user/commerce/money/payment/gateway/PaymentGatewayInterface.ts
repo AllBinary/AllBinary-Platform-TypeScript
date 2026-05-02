@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -189,7 +191,7 @@ export interface PaymentGatewayInterface extends TableMappingInterface {
 
     setTimeEntered(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     toHashMap(isEncrypted: boolean): HashMap<any, any>
 

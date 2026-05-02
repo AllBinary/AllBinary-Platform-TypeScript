@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -96,7 +98,7 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.create(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition

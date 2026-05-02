@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -103,7 +105,7 @@ PaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPaymentTransactionInterfaceFactoryInterface(): PaymentTransactionInterfaceFactoryInterface{
 
@@ -115,7 +117,7 @@ PaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentTransactionInterfaceFactoryInterface is Null");
+                            throw new Exception("PaymentTransactionInterfaceFactoryInterface is Null");
                     
 
                                     }
@@ -129,7 +131,7 @@ PaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPaymentProcessorInterfaceFactoryInterface(): PaymentProcessorInterfaceFactoryInterface{
 
@@ -141,7 +143,7 @@ PaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentProcessorInterfaceFactoryInterface is Null");
+                            throw new Exception("PaymentProcessorInterfaceFactoryInterface is Null");
                     
 
                                     }

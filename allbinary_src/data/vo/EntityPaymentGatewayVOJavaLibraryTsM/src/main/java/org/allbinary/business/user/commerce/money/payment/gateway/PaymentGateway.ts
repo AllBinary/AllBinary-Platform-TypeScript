@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -938,7 +940,7 @@ this.timeEntered= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -950,7 +952,7 @@ this.timeEntered= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(isEncrypted: boolean): HashMap<any, any>{
 var isEncrypted = isEncrypted
@@ -1224,7 +1226,7 @@ updateVector!.add(this.special9);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 

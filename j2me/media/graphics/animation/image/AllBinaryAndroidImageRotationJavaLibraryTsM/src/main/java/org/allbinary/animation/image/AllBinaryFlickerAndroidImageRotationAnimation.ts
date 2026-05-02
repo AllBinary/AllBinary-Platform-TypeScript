@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Matrix } from "../../../../android/graphics/Matrix.js";
 
     

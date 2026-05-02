@@ -1,6 +1,6 @@
-import util from '@ohos.util';
+import util from "@ohos.util";
 
-import { OutputStream } from "./OutputStream";
+import { OutputStream } from "./OutputStream.js";
 
 /*actual*/ export class ByteArrayOutputStream
   extends OutputStream {

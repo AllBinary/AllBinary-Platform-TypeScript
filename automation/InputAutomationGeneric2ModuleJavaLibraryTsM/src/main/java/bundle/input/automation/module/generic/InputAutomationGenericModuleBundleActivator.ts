@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { InputAutomationGenericModuleServiceFactory } from "../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js";
 
     
@@ -55,7 +57,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 

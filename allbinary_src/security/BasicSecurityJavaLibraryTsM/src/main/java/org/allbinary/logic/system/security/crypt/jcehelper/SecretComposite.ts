@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Cipher } from "../../../../../../../javax/crypto/Cipher.js";
 
     
@@ -79,7 +81,7 @@ this.key= key;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public encrypt(array: number[]): number[]{
 var array = array
@@ -96,7 +98,7 @@ this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public decrypt(array: number[]): number[]{
 var array = array

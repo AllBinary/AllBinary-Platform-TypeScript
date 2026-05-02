@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Serializable } from "../../../../../../../java/io/Serializable.js";
 
     
@@ -442,7 +444,7 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

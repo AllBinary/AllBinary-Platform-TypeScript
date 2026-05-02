@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -125,14 +127,14 @@ this.portion= portion;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initKey(portion: number){
 var portion = portion
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initKeyMapping(abeClientInformation: AbeClientInformationInterface, portion: number){
     //var abeClientInformation = abeClientInformation
@@ -153,7 +155,7 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
     //var abeClientInformation = abeClientInformation
@@ -218,7 +220,7 @@ this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
 
     private allLoaded: boolean= false
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public resourceInitialization(level: number){
 var level = level

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { PaymentException } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentException.js";
 
     
@@ -50,7 +52,7 @@ import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/
 export interface PaymentProcessorInterface extends DomNodeInterface {
         
 
-                //@Throws(PaymentException::class, Error::class)
+                //@Throws(PaymentException::class, Exception::class)
             
     process()
 

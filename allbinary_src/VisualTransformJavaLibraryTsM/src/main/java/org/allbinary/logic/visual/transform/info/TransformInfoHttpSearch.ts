@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { FREEBLISKET_PATH_GLOBALS } from "../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
 
     
@@ -98,7 +100,7 @@ this.setTemplateFile(dataFileName);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getPath(): string{
 
@@ -122,7 +124,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTemplateFilePath(): AbPath{
 
@@ -134,7 +136,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -146,7 +148,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDataFilePath(): AbPath{
 

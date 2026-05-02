@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
 
     
@@ -50,11 +52,11 @@ import { StreetAddress } from "../../../../../../../../org/allbinary/business/us
 export interface TaxModuleInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean
 

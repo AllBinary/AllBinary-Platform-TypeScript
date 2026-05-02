@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
 
     
@@ -61,7 +63,7 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAnalog(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
 var allbinaryLayerManager = allbinaryLayerManager

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -223,7 +225,7 @@ this.layerPositionFinderInterface= layerPositionFinderInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -260,7 +262,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     left(){
 this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.LEFT);
@@ -268,7 +270,7 @@ this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canv
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     right(){
 this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.RIGHT);
@@ -306,7 +308,7 @@ GameInputProcessorUtil.init(this.removeInputProcessorArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -372,14 +374,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPU
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processMotionInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     select(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent
@@ -459,7 +461,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setSelectedRTSLayer(rtsLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
 var rtsLayer = rtsLayer

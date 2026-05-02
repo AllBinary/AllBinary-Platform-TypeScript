@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -74,7 +76,7 @@ export class CanvasExpandUtil
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(imageProcessorInput: ImageProcessorInput, increaseX: number, increaseY: number, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput

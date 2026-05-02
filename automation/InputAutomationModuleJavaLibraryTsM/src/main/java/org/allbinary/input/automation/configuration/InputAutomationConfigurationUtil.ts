@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { InputAutomationModuleFactoryInterface } from "../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js";
 
     
@@ -53,7 +55,7 @@ export class InputAutomationConfigurationUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getChangeEvent(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface): InputAutomationConfigurationModuleChangeEvent{
 var inputAutomationModuleInterface = inputAutomationModuleInterface

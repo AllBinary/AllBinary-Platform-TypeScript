@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { EmailInterface } from "../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js";
 
     
@@ -47,11 +49,11 @@ import { EmailInterface } from "../../../../../../org/allbinary/logic/communicat
 export interface EmailQueueInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     offer(emailInterface: EmailInterface): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     remove(): EmailInterface
 

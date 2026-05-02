@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
@@ -98,7 +100,7 @@ index < numberOfNodes; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getNode(nodeName: string, nodeList: NodeList): Node{
 var nodeName = nodeName
@@ -126,7 +128,7 @@ var nodeList = nodeList
                             
 
 
-                            throw new Error(nodeName +" Node Not Found in search");
+                            throw new Exception(nodeName +" Node Not Found in search");
                     
 
                         }
@@ -134,7 +136,7 @@ var nodeList = nodeList
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 var nodeName = nodeName
@@ -152,7 +154,7 @@ var nodeList = nodeList
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getAllNodes(nodeName: string, nodeList: NodeList): Vector{
 var nodeName = nodeName
@@ -170,7 +172,7 @@ var nodeList = nodeList
                                     
 
 
-                            throw new Error(nodeName +" Node Not Found in search");
+                            throw new Exception(nodeName +" Node Not Found in search");
                     
 
                                     }

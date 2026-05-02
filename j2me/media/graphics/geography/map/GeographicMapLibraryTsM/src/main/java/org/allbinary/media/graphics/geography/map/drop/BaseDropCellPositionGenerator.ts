@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayerManager } from "../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
 
     
@@ -69,7 +71,7 @@ export class BaseDropCellPositionGenerator
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -77,7 +79,7 @@ export class BaseDropCellPositionGenerator
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -90,7 +92,7 @@ export class BaseDropCellPositionGenerator
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
@@ -203,7 +205,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(){
 
@@ -259,7 +261,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setAndRemove(){
 this.string= this.gameNotification!.stringList!.removeAt(0) as string;
@@ -298,7 +300,7 @@ this.setBasicColorP(this.gameNotification!.colorList!.removeAt(0) as BasicColor)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setNextUnremoveable(){
 

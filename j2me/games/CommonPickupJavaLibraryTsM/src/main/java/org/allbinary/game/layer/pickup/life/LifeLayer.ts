@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
 
     

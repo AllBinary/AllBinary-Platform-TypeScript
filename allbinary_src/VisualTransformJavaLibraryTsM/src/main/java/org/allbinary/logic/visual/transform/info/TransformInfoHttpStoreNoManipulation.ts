@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -64,7 +66,7 @@ var pageContext = pageContext
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setObjectConfigFile(value: string){
 var value = value
@@ -75,14 +77,14 @@ this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.get
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setObjectConfig(value: string){
 var value = value
 
 
 
-                            throw new Error("Should not set from config");
+                            throw new Exception("Should not set from config");
                     
 }
 

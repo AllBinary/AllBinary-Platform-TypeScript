@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -112,7 +114,7 @@ export class BlisketBackupFactory
 
     private readonly directory: Directory = Directory.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFileBasicArrayList(pathString: string): BasicArrayList{
 var pathString = pathString

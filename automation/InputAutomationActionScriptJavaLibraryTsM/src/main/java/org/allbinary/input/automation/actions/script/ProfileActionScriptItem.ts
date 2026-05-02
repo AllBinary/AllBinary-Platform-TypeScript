@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { ActionEvent } from "../../../../../../java/awt/event/ActionEvent.js";
@@ -149,7 +153,7 @@ this.getJPopupMenu()!.add(jMenuItemDelete);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(frame: number){
 var frame = frame

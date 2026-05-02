@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
 
     
@@ -83,7 +85,7 @@ this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
 var layerInterface = layerInterface

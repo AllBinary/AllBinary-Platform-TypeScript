@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
@@ -386,7 +388,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     waitForStateChange(endingCurrentSongSound: Sound, startingCurrentSongSound: Sound){
     //var endingCurrentSongSound = endingCurrentSongSound
@@ -408,7 +410,7 @@ startingCurrentSongSound!.getPlayerP()!.start();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public stop(){
 

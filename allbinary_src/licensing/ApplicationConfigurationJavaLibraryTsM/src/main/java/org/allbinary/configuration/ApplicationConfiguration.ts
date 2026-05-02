@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Closeable } from "../../../java/io/Closeable.js";
 
     
@@ -136,7 +138,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     read(){
 
@@ -177,7 +179,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("Invalid FullScreen ActivityConfiguration");
+                            throw new Exception("Invalid FullScreen ActivityConfiguration");
                     
 
                         }
@@ -208,7 +210,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("Invalid ProgressBarView ActivityConfiguration");
+                            throw new Exception("Invalid ProgressBarView ActivityConfiguration");
                     
 
                         }
@@ -239,7 +241,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                             
 
 
-                            throw new Error("Invalid ShowTitleBar ActivityConfiguration");
+                            throw new Exception("Invalid ShowTitleBar ActivityConfiguration");
                     
 
                         }
@@ -249,7 +251,7 @@ this.logUtil!.putF("Read Configuration: " +this.toString(), this, "read");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(){
 
@@ -341,7 +343,7 @@ dataOutputStream!.flush();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(gameFeature: Feature){
 var gameFeature = gameFeature

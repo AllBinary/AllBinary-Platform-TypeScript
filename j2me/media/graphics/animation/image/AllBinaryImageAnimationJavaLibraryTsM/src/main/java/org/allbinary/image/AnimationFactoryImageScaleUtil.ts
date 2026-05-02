@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Image } from "../../../javax/microedition/lcdui/Image.js";
 
     
@@ -75,7 +77,7 @@ export class AnimationFactoryImageScaleUtil
 
     private readonly imageScaleUtil: ImageJ2MEScaleUtil = ImageJ2MEScaleUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Image{
     //var image = image
@@ -132,7 +134,7 @@ export class AnimationFactoryImageScaleUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAdjust(baseImageAnimationFactory: BaseImageAnimationFactory){
     //var baseImageAnimationFactory = baseImageAnimationFactory

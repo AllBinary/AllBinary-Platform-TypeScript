@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -156,7 +158,7 @@ var functionName = functionName
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: Error): string{
+    public put(specialMessage: string, anyType: any = {}, functionName: string, exception: Exception): string{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -210,7 +212,7 @@ var functionName = functionName
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public put(specialMessage: string, className: string, functionName: string, exception: Error): string{
+    public put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
 var specialMessage = specialMessage
 var className = className
 var functionName = functionName

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -88,7 +90,7 @@ this.update();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -97,7 +99,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(){
 
@@ -173,7 +175,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toggle(){
 
@@ -190,7 +192,7 @@ this.update();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public disable(){
 
@@ -207,7 +209,7 @@ this.update();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public enable(){
 

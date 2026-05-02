@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { swing } from "../../../../../javax/swing.js";
 
     
@@ -125,7 +127,7 @@ textJDialog!.setVisible(true);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public start(){
 this.bundle.start();

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../../../java/lang/Long.js";
@@ -1027,7 +1029,7 @@ values.add(this.specials);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 

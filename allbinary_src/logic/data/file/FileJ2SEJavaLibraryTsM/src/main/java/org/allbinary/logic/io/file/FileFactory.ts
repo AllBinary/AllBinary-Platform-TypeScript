@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -59,7 +61,7 @@ export class FileFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(filePath: string): AbFile{
 var filePath = filePath
@@ -72,7 +74,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(file: AbFile, childFilePath: string): AbFile{
 var file = file
@@ -86,7 +88,7 @@ var childFilePath = childFilePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isFile(path: string): boolean{
 var path = path

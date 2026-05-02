@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { BundleActivator } from "../../../../../../org/osgi/framework/BundleActivator.js";
 
     
@@ -93,7 +97,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 
@@ -104,7 +108,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public registerAsService(bundleContext: BundleContext){
 var bundleContext = bundleContext
@@ -113,7 +117,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInputAutomationRobotChangeListener(context: BundleContext): InputAutomationRobotChangeListener{
 var context = context
@@ -136,7 +140,7 @@ var context = context
                                     null
                                 )
                         
-                                    throw new Error("No Service For ServiceReference");
+                                    throw new Exception("No Service For ServiceReference");
                                 
 
 
@@ -254,7 +258,7 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeRobots");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public start(context: BundleContext){
 var context = context
@@ -267,7 +271,7 @@ this.registerAsService(context);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public stop(context: BundleContext){
 var context = context

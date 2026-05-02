@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+        
 import { BasicProfileActionScriptProcessor } from "../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/BasicProfileActionScriptProcessor.js";
 
     
@@ -74,7 +76,7 @@ public constructor (label: string){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

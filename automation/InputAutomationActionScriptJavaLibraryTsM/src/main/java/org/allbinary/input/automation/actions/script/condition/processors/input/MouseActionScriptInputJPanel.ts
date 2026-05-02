@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../../../java/lang/Integer.js";
         
 import { InputEvent } from "../../../../../../../../../java/awt/event/InputEvent.js";
@@ -172,7 +174,7 @@ this.mouseActionScriptInputInterface!.log();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     updateInputType(){
 
@@ -195,7 +197,7 @@ this.mouseActionScriptInputInterface!.log();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     update(){
 this.updateInputType();

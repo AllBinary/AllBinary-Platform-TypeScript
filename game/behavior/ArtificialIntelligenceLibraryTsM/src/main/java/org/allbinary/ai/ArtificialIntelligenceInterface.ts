@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { IdentifierInterface } from "../../../org/allbinary/graphics/IdentifierInterface.js";
 
     
@@ -50,7 +52,7 @@ import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLay
 export interface ArtificialIntelligenceInterface extends IdentifierInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processAI(layerManager: AllBinaryLayerManager)
 

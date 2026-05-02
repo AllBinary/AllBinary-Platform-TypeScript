@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { JspTagException } from "../../../../javax/servlet/jsp/JspTagException.js";
 
     
@@ -158,7 +160,7 @@ this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView");
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand());
+                            throw new Exception("No Such View Command: " +this.getCommand());
                     
 
                         }
@@ -175,7 +177,7 @@ this.setObjectFile("views.generic.address.shipping.SetShippingAddressesView");
 
 
 
-                            throw new Error("Command Null");
+                            throw new Exception("Command Null");
                     
 
                 //: 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -75,7 +77,7 @@ export class PooledImageArrayRotationAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
     //var image = image
@@ -97,7 +99,7 @@ export class PooledImageArrayRotationAnimationFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
     //var image = image
@@ -149,7 +151,7 @@ this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(im
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

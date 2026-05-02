@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { RTSLayer } from "../../../../org/allbinary/game/layer/RTSLayer.js";
 
     

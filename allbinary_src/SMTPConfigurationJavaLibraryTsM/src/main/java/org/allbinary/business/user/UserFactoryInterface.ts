@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Serializable } from "../../../../java/io/Serializable.js";
 
     
@@ -51,7 +53,7 @@ import { HashMap } from "../../../../java/util/HashMap.js";
 export interface UserFactoryInterface extends Serializable {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(hashMap: HashMap<any, any>): UserInterface
 

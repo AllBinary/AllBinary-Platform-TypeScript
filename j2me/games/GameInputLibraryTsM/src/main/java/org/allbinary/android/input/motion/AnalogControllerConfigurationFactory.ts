@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AnalogControllerConfigurationEvent } from "../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEvent.js";
 
     
@@ -90,7 +92,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAvailable(available: boolean){
 var available = available

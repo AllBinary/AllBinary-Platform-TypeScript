@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
@@ -107,7 +109,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapInterface: any = {}, totalPaths: number){
     //var geographicMapInterface = geographicMapInterface
@@ -115,7 +117,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory, pathList: BasicArrayList): BasicArrayList{
     //var geographicMapCellPositionFactory = geographicMapCellPositionFactory
@@ -161,7 +163,7 @@ list.add(geographicMapCellPosition);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface

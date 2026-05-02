@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -190,7 +192,7 @@ this.downgradeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStri
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -239,7 +241,7 @@ var rtsLayer = rtsLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     upgrade(){
 
@@ -330,7 +332,7 @@ rtsPlayerGameInput!.updatePaintable();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     downgrade(){
 
@@ -409,7 +411,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInputKey(key: number){
 var key = key
@@ -427,7 +429,7 @@ var key = key
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

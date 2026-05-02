@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Level } from "../../../../../java/util/logging/Level.js";
 
     

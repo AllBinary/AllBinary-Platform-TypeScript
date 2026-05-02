@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 import { awt } from "../../../../../java/awt.js";
 
     
@@ -262,7 +266,7 @@ this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageC
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isImageValid(bufferedImage: BufferedImage): boolean{
 var bufferedImage = bufferedImage

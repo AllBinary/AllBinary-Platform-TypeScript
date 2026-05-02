@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { UserRole } from "../../../../../../org/allbinary/business/user/role/UserRole.js";
 
     
@@ -82,7 +84,7 @@ export class UserConfigurationInterfaceFactory
 
     private static readonly configurationName: string = "DefaultUserConfiguration";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(document: Document): UserConfigurationInterface{
 var document = document
@@ -100,7 +102,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(userRole: UserRole): UserConfigurationInterface{
 var userRole = userRole
@@ -126,7 +128,7 @@ var userRole = userRole
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(): UserConfigurationInterface{
 

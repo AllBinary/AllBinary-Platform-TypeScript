@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -77,7 +79,7 @@ export class PrimitiveLongSingleton
                                                         [this.NUMBER_CHAR_ARRAY[0]]
                                                     ;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getNumberFromChar(numberAsChar: string): number{
 var numberAsChar = numberAsChar
@@ -112,7 +114,7 @@ index < size; index++)
 
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("numberAsChar was not in array: ")!.appendchar(numberAsChar)!.toString());
                     
 }

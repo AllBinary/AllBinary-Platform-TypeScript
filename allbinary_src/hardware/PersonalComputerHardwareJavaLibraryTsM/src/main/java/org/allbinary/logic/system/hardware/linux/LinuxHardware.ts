@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { FileReader } from "../../../../../../java/io/FileReader.js";
 
     
@@ -187,7 +189,7 @@ public constructor (){
                                     
 
 
-                            throw new Error("Not Enough Data For A Valid License On Linux");
+                            throw new Exception("Not Enough Data For A Valid License On Linux");
                     
 
                                     }
@@ -221,7 +223,7 @@ this.componentInterfaceVector!.add(cpu);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(filePath: string){
 var filePath = filePath
@@ -258,7 +260,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(lineNumberReader: LineNumberReader, filePath: string){
 var lineNumberReader = lineNumberReader
@@ -327,7 +329,7 @@ lineNumberReader= new LineNumberReader(new FileReader(file.getPath()));
                                     
 
 
-                            throw new Error("No Linux File Data");
+                            throw new Exception("No Linux File Data");
                     
 
                                     }

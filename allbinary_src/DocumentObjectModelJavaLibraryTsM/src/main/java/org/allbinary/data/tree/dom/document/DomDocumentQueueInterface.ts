@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { DomDocumentMappingInterface } from "../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js";
 
     
@@ -47,11 +49,11 @@ import { DomDocumentMappingInterface } from "../../../../../../org/allbinary/dat
 export interface DomDocumentQueueInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     offer(domDocumentMappingInterface: DomDocumentMappingInterface): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     remove(): DomDocumentMappingInterface
 

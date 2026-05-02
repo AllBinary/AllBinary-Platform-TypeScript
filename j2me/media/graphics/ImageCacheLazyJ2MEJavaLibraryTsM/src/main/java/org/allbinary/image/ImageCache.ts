@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
             import { System } from "../../../java/lang/System.js";
         
             import { Thread } from "../../../java/lang/Thread.js";
@@ -306,7 +310,7 @@ var renderer = renderer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitForLoadNow(){
 
@@ -338,7 +342,7 @@ this.firstTime= false;
 
     private readonly LOAD_IMAGE_FOR_ANIMATION: string = "Load Image Animation";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public loadImageForAnimation(){
 
@@ -527,7 +531,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public loadImages(){
 
@@ -542,7 +546,7 @@ this.loadNextImage();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public loadImageForAnimations(){
 
@@ -555,7 +559,7 @@ this.loadImageForAnimation();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public loadRemainingAnimations(){
 
@@ -602,7 +606,7 @@ this.loadImageForAnimation();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     loadImageForLazyAnimation(lazyImageRotationAnimation: LazyImageRotationAnimation): boolean{
     //var lazyImageRotationAnimation = lazyImageRotationAnimation
@@ -634,7 +638,7 @@ this.loadImageForAnimation();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     loadNextImage(){
 
@@ -672,7 +676,7 @@ this.loadImage(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     loadImage(image: Image): boolean{
     //var image = image
@@ -759,7 +763,7 @@ this.loadImage(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(image: Image, image2: Image){
     //var image = image
@@ -769,7 +773,7 @@ image.init(image2.getImage());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     creatImage(key: string): Image{
     //var key = key
@@ -792,7 +796,7 @@ image.setName(key);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -861,7 +865,7 @@ listOfList[foundIndex]!.add(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithKey(key: any = {}): Image{
     //var key = key
@@ -967,7 +971,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key
@@ -1046,7 +1050,7 @@ this.loadList!.add(image);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createImageLater(key: string, width: number, height: number): Image{
     //var key = key
@@ -1148,7 +1152,7 @@ this.loadAfterList!.add(lazyImageRotationAnimation);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public insertFirst(lazyImageRotationAnimation: LazyImageRotationAnimation){
     //var lazyImageRotationAnimation = lazyImageRotationAnimation
@@ -1187,7 +1191,7 @@ this.progressEnded= true;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public runTask(){
 this.processor.process();

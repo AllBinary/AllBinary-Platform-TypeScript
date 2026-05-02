@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -80,7 +82,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public decrypt(inputStream: InputStream, key: string): number[]{
     //var inputStream = inputStream

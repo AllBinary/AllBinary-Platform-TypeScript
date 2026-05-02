@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
 
     
@@ -139,7 +143,7 @@ this.ownerLayer= ownerLayer;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -216,7 +220,7 @@ this.paths= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPathsListFromCacheOnly(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -229,7 +233,7 @@ this.paths= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPathsListRunnable(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -301,7 +305,7 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createPaths(startGeographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
@@ -358,7 +362,7 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
                             
 
 
-                            throw new Error("Start should not be End: " +this.endList!.size());
+                            throw new Exception("Start should not be End: " +this.endList!.size());
                     
 
                         }
@@ -411,7 +415,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
                                     
 
 
-                            throw new Error("Path may have been cleared by clearing caching");
+                            throw new Exception("Path may have been cleared by clearing caching");
                     
 
                                     }
@@ -432,7 +436,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onBuildingEvent(event: RTSLayerEvent){
     //var event = event
@@ -471,7 +475,7 @@ this.releaseCachedPaths();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(unitLayer: PathFindingLayerInterface){
     //var unitLayer = unitLayer

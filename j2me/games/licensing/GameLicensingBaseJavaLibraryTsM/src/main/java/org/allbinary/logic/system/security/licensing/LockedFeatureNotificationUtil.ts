@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { GameNotificationEvent } from "../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
 
     
@@ -85,7 +87,7 @@ export class LockedFeatureNotificationUtil
 
     private readonly gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, LicenseStrings.getInstance()!.LOCKED, SmallIntegerSingletonFactory.getInstance()!.getAt(3), BasicColorFactory.getInstance()!.RED, BooleanFactory.getInstance()!.FALSE);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fire(){
 PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
@@ -95,7 +97,7 @@ GameNotificationEventHandler.getInstance()!.fireEvent(this.gameNotificationEvent
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fireWithColor(basicColor: BasicColor){
 var basicColor = basicColor

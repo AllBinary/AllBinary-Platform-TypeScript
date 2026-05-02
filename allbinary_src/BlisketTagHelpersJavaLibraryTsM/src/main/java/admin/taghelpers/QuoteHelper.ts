@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
             import { Integer } from "../../java/lang/Integer.js";
         
 import { HashMap } from "../../java/util/HashMap.js";
@@ -170,7 +172,7 @@ this.portion= new Portion(hashMap);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     emailUser(quoteRequest: QuoteRequest){
 var quoteRequest = quoteRequest
@@ -213,7 +215,7 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, ema
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     emailAdmins(quoteRequest: QuoteRequest){
 var quoteRequest = quoteRequest
@@ -276,7 +278,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public email(): string{
 
@@ -353,7 +355,7 @@ this.emailAdmins(quoteRequest);
                             
 
 
-                            throw new Error("No Quote Request");
+                            throw new Exception("No Quote Request");
                     
 
                         }

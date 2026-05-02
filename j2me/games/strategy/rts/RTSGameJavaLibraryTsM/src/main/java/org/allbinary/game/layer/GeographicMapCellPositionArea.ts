@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -98,7 +100,7 @@ this.layerInterface= layerInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface

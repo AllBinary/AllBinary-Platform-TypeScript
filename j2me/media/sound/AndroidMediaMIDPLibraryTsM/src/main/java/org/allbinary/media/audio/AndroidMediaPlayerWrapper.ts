@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { MediaException } from "../../../../javax/microedition/media/MediaException.js";
 
     
@@ -134,7 +138,7 @@ public constructor (resource: string){
                                     
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("Failed to create media player for: ")!.append(resource)!.append(" with id: ")!.append(resourceUtil!.getResourceId(resource)!.toString())!.toString());
                     
 

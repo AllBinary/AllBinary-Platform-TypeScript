@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
 
     
@@ -88,7 +90,7 @@ private constructor (){
 
     private anchor: number = Anchor.TOP_LEFT;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -101,7 +103,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -128,7 +130,7 @@ private constructor (){
                             
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                         }
@@ -136,7 +138,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage

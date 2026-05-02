@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Enumeration } from "../../../../java/util/Enumeration.js";
 
     
@@ -93,7 +95,7 @@ this.dimension= dimension;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processList(list: BasicArrayList){
     //var list = list
@@ -122,7 +124,7 @@ this.process(layerPlacementInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(layerPlacementInterface: LayerPlacementInterface){
     //var layerPlacementInterface = layerPlacementInterface
@@ -188,7 +190,7 @@ this.layerInterfaceVisitor!.visit(layerInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPoint(layerPlacementInterface: LayerPlacementInterface): GPoint{
     //var layerPlacementInterface = layerPlacementInterface
@@ -262,7 +264,7 @@ this.layerInterfaceVisitor!.visit(layerInterface);
                             
 
 
-                            throw new Error("PlacementType Not Recognized");
+                            throw new Exception("PlacementType Not Recognized");
                     
 
                         }

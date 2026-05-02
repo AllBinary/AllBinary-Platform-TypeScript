@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../../../../java/util/Hashtable.js";
 
     
@@ -136,7 +138,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFirstNonRoadAdjacentCellPosition(column: number, row: number): GeographicMapCellPosition{
     //var column = column
@@ -211,7 +213,7 @@ break;
 
     private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -225,7 +227,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
 
     private readonly geographicMapDirectionUtil: GeographicMapDirectionUtil = GeographicMapDirectionUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
     //var allBinaryLayerManager = allBinaryLayerManager

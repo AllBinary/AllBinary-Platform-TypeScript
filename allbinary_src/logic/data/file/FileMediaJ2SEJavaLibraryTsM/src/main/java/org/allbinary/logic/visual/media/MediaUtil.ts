@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
 
     
@@ -127,7 +129,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public saveImageFile(originalImageFile: AbFile, newImageFileName: string, category: string, mediaData: MediaData, newWidth: number, newHeight: number){
 var originalImageFile = originalImageFile
@@ -145,7 +147,7 @@ var newHeight = newHeight
                                     
 
 
-                            throw new Error("Original Image File Does Not Exist.");
+                            throw new Exception("Original Image File Does Not Exist.");
                     
 
                                     }
@@ -163,7 +165,7 @@ var newHeight = newHeight
                                     
 
 
-                            throw new Error("Unable to find ImageReader for this file.");
+                            throw new Exception("Unable to find ImageReader for this file.");
                     
 
                                     }
@@ -206,7 +208,7 @@ imageFile!.createNewFile();
                                     
 
 
-                            throw new Error("Unable to write.");
+                            throw new Exception("Unable to write.");
                     
 
                                     }

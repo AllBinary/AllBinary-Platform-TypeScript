@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
@@ -117,7 +119,7 @@ public constructor (name: string){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -332,7 +334,7 @@ recordStore!.closeRecordStore();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation

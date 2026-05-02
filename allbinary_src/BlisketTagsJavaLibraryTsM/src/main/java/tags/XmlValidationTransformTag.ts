@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { Method } from "../java/lang/reflect/Method.js";
 
     
@@ -67,7 +69,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isValid(): boolean{
 

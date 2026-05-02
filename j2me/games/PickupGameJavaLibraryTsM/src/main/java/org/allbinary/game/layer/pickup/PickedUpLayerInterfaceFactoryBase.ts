@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     

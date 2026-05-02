@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -128,7 +130,7 @@ private constructor (){
                             
 
 
-                            throw new Error("Specific Solaris OS Not Supported: " +osName);
+                            throw new Exception("Specific Solaris OS Not Supported: " +osName);
                     
 
                         }

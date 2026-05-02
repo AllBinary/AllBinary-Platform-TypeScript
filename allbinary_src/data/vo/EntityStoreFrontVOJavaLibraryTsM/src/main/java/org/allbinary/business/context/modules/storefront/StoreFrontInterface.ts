@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { ContextConfigurationInterface } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
 
     
@@ -95,7 +97,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     getCategoryPath(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getSubStores(): BasicArrayList
 
@@ -135,37 +137,37 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setHomeHostName(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setHomeHostNamePath(value: string)
 
     setHostName(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setHostNamePath(value: string)
 
     setTestHomeHostName(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setTestHomeHostNamePath(value: string)
 
     setTestHostName(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setTestHostNamePath(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setImagePath(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setStaticPath(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setCategoryPath(value: string)
 
@@ -175,7 +177,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setFtp(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setFtpPath(value: string)
 
@@ -185,7 +187,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setTestFtp(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setTestFtpPath(value: string)
 
@@ -197,7 +199,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setLastModified(value: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     install(current: number, total: number)
 

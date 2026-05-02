@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BasicGameResources } from "../../../../../org/allbinary/game/layer/resources/BasicGameResources.js";
 
     
@@ -76,7 +78,7 @@ protected constructor (){
 
     private readonly ICON_SIZE: string = "_64_by_64.png";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     append(ROOT: string, sizeString: string){
 var ROOT = ROOT

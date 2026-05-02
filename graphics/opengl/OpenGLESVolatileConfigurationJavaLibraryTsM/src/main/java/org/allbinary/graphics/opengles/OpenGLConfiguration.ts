@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -110,7 +112,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 
@@ -182,7 +184,7 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(gameFeature: Feature, colorLocked: boolean){
     //var gameFeature = gameFeature

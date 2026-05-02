@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { PrimaryWaypointHelper } from "../../../../../org/allbinary/game/input/form/PrimaryWaypointHelper.js";
@@ -190,7 +192,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onWaypointEvent(event: RTSLayerEvent){
     //var event = event
@@ -221,14 +223,14 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addWaypointFromUser(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addWaypointFromBuilding(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
@@ -249,7 +251,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
                                     
 
 
-                            throw new Error("Trying to add a dead: " +advancedRTSGameLayer);
+                            throw new Exception("Trying to add a dead: " +advancedRTSGameLayer);
                     
 
                                     }
@@ -277,7 +279,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public insertWaypoint(index: number, rtsLayer: CollidableDestroyableDamageableLayer): boolean{
     //var index = index
@@ -295,7 +297,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding
                                     
 
 
-                            throw new Error("Trying to add a dead: " +rtsLayer);
+                            throw new Exception("Trying to add a dead: " +rtsLayer);
                     
 
                                     }
@@ -343,7 +345,7 @@ this.setMoving(false);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setRandomGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -369,7 +371,7 @@ this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
@@ -431,7 +433,7 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addBuildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition){
     //var allbinaryLayer = allbinaryLayer
@@ -439,7 +441,7 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     moveAwayFromBuilding(buildingLayer: BuildingLayer){
     //var buildingLayer = buildingLayer

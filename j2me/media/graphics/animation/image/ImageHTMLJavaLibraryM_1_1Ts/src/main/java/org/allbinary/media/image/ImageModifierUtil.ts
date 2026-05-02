@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -289,7 +293,7 @@ copy(imageArray, index, image, image3);
     
 }
 
-    public error(e: Error){
+    public error(e: Throwable){
 var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;

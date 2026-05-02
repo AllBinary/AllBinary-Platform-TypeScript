@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
 
     
@@ -67,7 +69,7 @@ export class BasicGeographicMapFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory: GeographicMapCellTypeFactory): BasicGeographicMap{
     //var raceTrackInfo = raceTrackInfo

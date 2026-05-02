@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLayerManager.js";
 
     
@@ -67,7 +69,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

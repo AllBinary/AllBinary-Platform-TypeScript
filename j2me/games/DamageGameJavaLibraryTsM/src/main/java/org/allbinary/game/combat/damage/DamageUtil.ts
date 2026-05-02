@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CollidableCompositeLayer } from "../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
 
     
@@ -80,7 +82,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(damageableInterface: DamageableInterface, damageableInterface2: DamageableInterface){
 var damageableInterface = damageableInterface
@@ -90,7 +92,7 @@ damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public debugDamage(collidableInterfaceCompositeInterface1: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 var collidableInterfaceCompositeInterface1 = collidableInterfaceCompositeInterface1

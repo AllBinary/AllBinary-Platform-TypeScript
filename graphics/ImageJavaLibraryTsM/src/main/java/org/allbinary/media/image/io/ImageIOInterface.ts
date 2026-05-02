@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 
@@ -46,7 +48,7 @@
 export interface ImageIOInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     save(frame: number)
 

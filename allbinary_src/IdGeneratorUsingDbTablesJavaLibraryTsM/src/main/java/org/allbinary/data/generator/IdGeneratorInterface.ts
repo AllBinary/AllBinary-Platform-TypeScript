@@ -22,8 +22,7 @@
 
 
         
-
-//import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 

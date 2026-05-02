@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { EventListener } from "../../../../../java/util/EventListener.js";
 
     
@@ -48,7 +50,7 @@ import { EventListener } from "../../../../../java/util/EventListener.js";
 export interface EventListenerInterface extends EventListener {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onEvent(eventObject: AllBinaryEventObject)
 

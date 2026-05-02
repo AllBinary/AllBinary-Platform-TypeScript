@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -104,7 +108,7 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAnimationSize(): number{
 
@@ -262,7 +266,7 @@ disposalUtil!.disposeImage(this.currentImage);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Throwable::class)
             
     finalize(){
 

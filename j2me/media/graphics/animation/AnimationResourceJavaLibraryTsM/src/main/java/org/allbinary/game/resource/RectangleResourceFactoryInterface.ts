@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
 
     
@@ -47,11 +49,11 @@ import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
 export interface RectangleResourceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getRectangle(resource: string): Rectangle
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getRectangleArrayOfArrays(resource: string): Rectangle[][]
 

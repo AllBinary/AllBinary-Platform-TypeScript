@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { DomDocumentHelper } from "../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -68,7 +70,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

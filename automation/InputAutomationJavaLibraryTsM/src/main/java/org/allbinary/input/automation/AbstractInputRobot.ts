@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../java/awt.js";
@@ -91,7 +95,7 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveM
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mouseMoveToTarget(rectangle: Rectangle, x: number, y: number){
 var rectangle = rectangle
@@ -108,7 +112,7 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the mid
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -58,7 +60,7 @@ this.lockedIndex= lockedIndex;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceItemPaintable(paintableForm: PaintableForm): ItemPaintable{
 var paintableForm = paintableForm

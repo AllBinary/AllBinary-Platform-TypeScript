@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GuiLog } from "../../../../org/allbinary/logic/communication/log/GuiLog.js";
 
     
@@ -47,7 +49,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class GraphicsException extends java.lang.Error {
+export class GraphicsException extends java.lang.Exception {
         
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;

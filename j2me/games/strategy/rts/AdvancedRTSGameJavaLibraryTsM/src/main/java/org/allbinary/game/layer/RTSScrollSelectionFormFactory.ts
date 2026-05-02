@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
 
     
@@ -73,7 +75,7 @@ export class RTSScrollSelectionFormFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(formLabel: string, items: CustomItem[]): MultipleScrollSelectionHorizontalForm{
     //var formLabel = formLabel

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -258,7 +260,7 @@ this.init(storeThemeCategoryInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 
@@ -278,7 +280,7 @@ this.init(rootStoreThemeCategoryInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(storeThemeCategoryInterface: StoreThemeCategoryInterface){
 var storeThemeCategoryInterface = storeThemeCategoryInterface
@@ -289,7 +291,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 
@@ -341,7 +343,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCssStyleValidation(): CssStyleValidation{
 
@@ -576,7 +578,7 @@ hashMap!.put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

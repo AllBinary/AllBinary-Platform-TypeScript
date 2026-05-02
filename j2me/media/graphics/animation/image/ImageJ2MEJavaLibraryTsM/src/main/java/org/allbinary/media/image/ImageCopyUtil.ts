@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -99,7 +101,7 @@ private constructor (){
 
     private readonly NO_COPY: string = "J2ME does not need to copy images after initial loading";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -112,7 +114,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -120,7 +122,7 @@ private constructor (){
                         if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Exception());
     
 
 
@@ -154,7 +156,7 @@ private constructor (){
                             
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                         }
@@ -162,7 +164,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage
@@ -172,7 +174,7 @@ private constructor (){
                         if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
                                     {
-                                    this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Error());
+                                    this.logUtil!.put(this.NO_COPY, this, commonStrings!.CONSTRUCTOR, new Exception());
     
 
 
@@ -251,7 +253,7 @@ graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor);
                             
 
 
-                            throw new Error("Not Mutable");
+                            throw new Exception("Not Mutable");
                     
 
                         }

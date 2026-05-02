@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { DomNodeHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
 
     
@@ -114,7 +116,7 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(node: Node): LogConfigType{
     //var node = node
@@ -183,7 +185,7 @@ logConfigType= availableLogConfigTypes!.get(index) as LogConfigType;
 
 
 
-                            throw new Error("No Such LogConfigType: " +name);
+                            throw new Exception("No Such LogConfigType: " +name);
                     
 }
 

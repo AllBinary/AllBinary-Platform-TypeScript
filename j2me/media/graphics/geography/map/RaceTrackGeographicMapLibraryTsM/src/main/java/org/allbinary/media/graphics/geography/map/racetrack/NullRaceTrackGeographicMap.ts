@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../../java/lang/RuntimeException.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
@@ -110,7 +114,7 @@ export class NullRaceTrackGeographicMap
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean{
 var layer = layer
@@ -124,7 +128,7 @@ var cellPositionArray = cellPositionArray
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
 var x = x
@@ -137,7 +141,7 @@ var y = y
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition{
 var x = x
@@ -160,7 +164,7 @@ var cellTypeId = cellTypeId
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
 var x = x
@@ -173,7 +177,7 @@ var y = y
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCellTypeAt(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType{
 var geographicMapCellPosition = geographicMapCellPosition

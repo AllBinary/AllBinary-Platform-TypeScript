@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BasicItem } from "../../../../org/allbinary/business/user/commerce/inventory/item/BasicItem.js";
 
     

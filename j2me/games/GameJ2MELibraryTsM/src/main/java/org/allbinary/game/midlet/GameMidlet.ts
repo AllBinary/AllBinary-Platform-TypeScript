@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { Enumeration } from "../../../../java/util/Enumeration.js";
@@ -390,35 +392,35 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setDemo(){
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createGame(){
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     mediaShutdown(){
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -1470,7 +1472,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInputMappingInstructionsCanvas(): MyCanvas{
 
@@ -1482,7 +1484,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInputMappingCanvas(): MyCanvas{
 
@@ -1494,7 +1496,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getAboutCanvas(): MyCanvas{
 
@@ -1506,29 +1508,29 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getHelpPaintable(): HelpPaintable{
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createHighScoresCanvas(): HighScoresCanvas{
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public startGameCanvasRunnableInterface(){
 
@@ -1547,7 +1549,7 @@ threadFactoryUtil!.start(this.thread);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     stopGameCanvasRunnableInterface(){
 this.logUtil!.putF(commonStrings!.START, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
@@ -1650,7 +1652,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(){
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.SAVE);
@@ -1664,7 +1666,7 @@ GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");

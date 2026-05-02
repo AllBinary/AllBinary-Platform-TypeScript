@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { LicenseInitInfo } from "../../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
 
     
@@ -85,7 +87,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{

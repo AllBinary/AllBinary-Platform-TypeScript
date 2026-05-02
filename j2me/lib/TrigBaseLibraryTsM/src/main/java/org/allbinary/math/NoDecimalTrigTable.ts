@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { PreLogUtil } from "../../../org/allbinary/logic/communication/log/PreLogUtil.js";
@@ -2302,7 +2304,7 @@ var angle = angle
 
     public SCALE: number = 10000;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public antiTan(dx: number, dy: number): number{
 var dx = dx
@@ -2524,12 +2526,12 @@ stringBuffer!.appendint(dy);
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public antiTanDebug(screenX: number, screenY: number, targetX: number, targetY: number): number{
 var screenX = screenX

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -144,7 +146,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generate(objectConfigDocument: Document): Document{
     //var objectConfigDocument = objectConfigDocument
@@ -201,7 +203,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
@@ -235,7 +237,7 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
@@ -307,7 +309,7 @@ hashMap!.put(templateNameKey, selectedTemplate);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generate(objectConfigDocumentString: string, hashMap: HashMap<any, any>): Document{
 var objectConfigDocumentString = objectConfigDocumentString

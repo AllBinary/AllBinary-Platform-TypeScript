@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { InputStream } from "../../../../../../java/io/InputStream.js";
 
     
@@ -45,7 +47,7 @@ var encryptedExtension = encryptedExtension
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(fileAbPath: AbPath): string{
 var fileAbPath = fileAbPath
@@ -58,7 +60,7 @@ var fileAbPath = fileAbPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInputStream(fileAbPath: AbPath): InputStream{
 var fileAbPath = fileAbPath

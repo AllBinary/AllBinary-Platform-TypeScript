@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -66,7 +68,7 @@ export class GraphicsAnalysisUtil
 
     private static readonly MAX: number = 122;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getNominator(bufferedImage: BufferedImage, min_x: number, max_x: number, y: number): number{
 var bufferedImage = bufferedImage

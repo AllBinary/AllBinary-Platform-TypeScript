@@ -22,6 +22,12 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
+            import { InterruptedException } from "../../../java/lang/InterruptedException.js";
+        
             import { Thread } from "../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../java/lang/Runnable.js";
@@ -150,7 +156,7 @@ pooledThread!.start();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public runAPriorityTask(){
 

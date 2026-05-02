@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -45,7 +47,7 @@
 export interface MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface extends RaceTrackGeographicMapInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFirstWaveWithTrack(track: number): number
 

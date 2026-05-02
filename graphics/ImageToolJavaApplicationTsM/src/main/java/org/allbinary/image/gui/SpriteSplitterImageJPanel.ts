@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
             import { Thread } from "../../../../java/lang/Thread.js";
@@ -38,8 +40,7 @@ import { RenderedImage } from "../../../../java/awt/image/RenderedImage.js";
 import { File } from "../../../../java/io/File.js";
 
     
-
-//import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { ImageIO } from "../../../../javax/imageio/ImageIO.js";

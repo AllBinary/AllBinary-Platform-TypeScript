@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { PreLogUtil } from "../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
 
     

@@ -15,7 +15,7 @@
 
 /* Generated Code Do Not Modify */
 
-import deviceInfo from '@ohos.deviceInfo';
+import deviceInfo from "@ohos.deviceInfo";
 
 import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";

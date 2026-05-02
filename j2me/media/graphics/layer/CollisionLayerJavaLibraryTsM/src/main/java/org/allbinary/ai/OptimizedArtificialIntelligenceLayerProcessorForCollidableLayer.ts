@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { CollidableCompositeLayer } from "../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
 
     
@@ -65,7 +67,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -80,7 +82,7 @@ artificialIntelligenceCompositeInterface!.getArtificialIntelligenceInterface()!.
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface

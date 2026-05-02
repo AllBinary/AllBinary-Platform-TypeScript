@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HealthInterfaceCompositeInterface } from "../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js";
 
     
@@ -301,7 +303,7 @@ countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCount
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCountedLayerInterfaceFactoryForSlot(slotIndex: number): CountedLayerInterfaceFactoryPart{
 var slotIndex = slotIndex

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -73,7 +75,7 @@ export class TransformInfoHttpFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var propertiesHashMap = propertiesHashMap
@@ -115,7 +117,7 @@ var pageContext = pageContext
                             
 
 
-                            throw new Error("No StoreFront with: " +weblisketSession!.getStoreName());
+                            throw new Exception("No StoreFront with: " +weblisketSession!.getStoreName());
                     
 
                         }

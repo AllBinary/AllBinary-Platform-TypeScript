@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Transport } from "../../../../../../javax/mail/Transport.js";
 
     
@@ -90,7 +92,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public offer(emailInterface: EmailInterface): boolean{
@@ -127,7 +129,7 @@ this.remove(emailInterface as Object);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     post(emailInterface: EmailInterface){
@@ -146,7 +148,7 @@ this.processAllUnsent();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     processAllUnsent(){

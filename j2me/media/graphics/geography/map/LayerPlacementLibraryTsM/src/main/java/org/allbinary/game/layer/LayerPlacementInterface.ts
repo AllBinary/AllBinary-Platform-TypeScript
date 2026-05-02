@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -54,7 +56,7 @@ export interface LayerPlacementInterface {
 
     getLayerType(): LayerPlacementType
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(): Hashtable<any, any>
 

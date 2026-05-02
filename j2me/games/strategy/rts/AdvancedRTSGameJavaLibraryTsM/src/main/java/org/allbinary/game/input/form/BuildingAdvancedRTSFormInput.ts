@@ -21,6 +21,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AdvancedPlayerOwnedRTSLayers } from "../../../../../org/allbinary/game/layer/AdvancedPlayerOwnedRTSLayers.js";
 
     
@@ -125,7 +127,7 @@ this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Buil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -171,7 +173,7 @@ this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -223,7 +225,7 @@ var layerInterface = layerInterface
 
     private readonly BUILD_BUILDING_RTS_LAYER_EVENT: RTSLayerEvent = new RTSLayerEvent(NullPathFindingLayer.NULL_PATH_FINDING_LAYER);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     add(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface

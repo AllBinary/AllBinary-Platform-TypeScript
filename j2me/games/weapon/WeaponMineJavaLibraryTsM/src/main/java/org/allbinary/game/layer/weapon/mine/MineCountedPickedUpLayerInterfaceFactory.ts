@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../../../java/util/Hashtable.js";
@@ -83,7 +85,7 @@ export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLay
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(){
 pickedUpLayerInterfaceFactoryInterface= new MineCountedPickedUpLayerInterfaceFactory();
@@ -125,7 +127,7 @@ private constructor (){
 
     private readonly smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable

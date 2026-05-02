@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -53,14 +55,14 @@ var anyType = anyType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitObject(anyType: Object){
 var anyType = anyType
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitObjectFor(anyType: Object, delay: number){
 var anyType = anyType

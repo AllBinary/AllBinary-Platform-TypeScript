@@ -22,6 +22,8 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
 import { Method } from "../../../../../java/lang/reflect/Method.js";
 
     
@@ -74,7 +76,7 @@ this.anyType= anyType;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Throwable::class)
             
     public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any{
 var proxyObject = proxyObject

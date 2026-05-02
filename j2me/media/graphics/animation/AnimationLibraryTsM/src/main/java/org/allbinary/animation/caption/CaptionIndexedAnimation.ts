@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -137,7 +139,7 @@ this.player.start();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public nextFrame(){
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -70,13 +72,13 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     read(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(){
 }

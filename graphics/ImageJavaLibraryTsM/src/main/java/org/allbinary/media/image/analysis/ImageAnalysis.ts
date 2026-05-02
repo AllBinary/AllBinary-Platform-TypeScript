@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -86,7 +88,7 @@ export class ImageAnalysis
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static process(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
 var bufferedImage = bufferedImage
@@ -262,7 +264,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(bufferedImageArray: BufferedImage[], colorRangeInterface: ColorRangeInterface): ImageAnalysisResults[]{
 var bufferedImageArray = bufferedImageArray

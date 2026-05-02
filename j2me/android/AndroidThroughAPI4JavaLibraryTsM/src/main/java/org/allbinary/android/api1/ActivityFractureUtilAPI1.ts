@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ActivityFractureUtil } from "../../../../org/allbinary/android/ActivityFractureUtil.js";
 
     
@@ -65,7 +67,7 @@ export class ActivityFractureUtilAPI1 extends ActivityFractureUtil {
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(activity: Activity){
     //var activity = activity

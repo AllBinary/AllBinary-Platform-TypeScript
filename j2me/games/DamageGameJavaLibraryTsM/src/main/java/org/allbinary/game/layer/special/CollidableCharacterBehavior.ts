@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CollidableInterfaceCompositeInterface } from "../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js";
 
     
@@ -74,7 +76,7 @@ var collidable = collidable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -108,7 +110,7 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface

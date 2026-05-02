@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -97,7 +99,7 @@ this.init();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 
@@ -145,7 +147,7 @@ this.createInstance(column, row, width, height);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(geographicMapCelPositionFactoryInitVisitorInterface: GeographicMapCellPositionFactoryInitVisitorInterface){
     //var geographicMapCelPositionFactoryInitVisitorInterface = geographicMapCelPositionFactoryInitVisitorInterface
@@ -212,7 +214,7 @@ this.logUtil!.put(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAt(i_column: number, i_row: number): GeographicMapCellPosition{
     //var i_column = i_column
@@ -226,7 +228,7 @@ this.logUtil!.put(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(anotherMapGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var anotherMapGeographicMapCellPosition = anotherMapGeographicMapCellPosition
@@ -239,7 +241,7 @@ this.logUtil!.put(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
     //var i_column = i_column

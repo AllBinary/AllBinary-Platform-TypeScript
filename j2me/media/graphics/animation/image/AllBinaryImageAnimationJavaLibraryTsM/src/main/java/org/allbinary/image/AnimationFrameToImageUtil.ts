@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -68,7 +70,7 @@ export class AnimationFrameToImageUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceTranslate(width: number, height: number, animationInterface: Animation): Image{
 var width = width
@@ -105,7 +107,7 @@ graphics.translate( -tranlateX,  -tranlateY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceWH(width: number, height: number, animationInterface: Animation): Image{
 var width = width

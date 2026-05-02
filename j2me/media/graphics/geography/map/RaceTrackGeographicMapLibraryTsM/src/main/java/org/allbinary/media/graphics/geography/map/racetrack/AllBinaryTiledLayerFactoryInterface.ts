@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
 
     
@@ -35,11 +37,11 @@ import { RaceTrackData } from "./RaceTrackData.js";
 export interface AllBinaryTiledLayerFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer
 

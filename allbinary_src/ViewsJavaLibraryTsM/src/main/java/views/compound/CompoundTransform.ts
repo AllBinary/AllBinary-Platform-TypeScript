@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { InputStream } from "../../java/io/InputStream.js";
 
     

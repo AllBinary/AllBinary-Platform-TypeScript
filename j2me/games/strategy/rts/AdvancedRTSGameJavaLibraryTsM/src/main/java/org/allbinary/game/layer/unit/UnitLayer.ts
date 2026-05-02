@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -555,7 +557,7 @@ this.initPathAnimation= new PathAnimation(this, LinePathRelativeAnimation.getIns
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -566,7 +568,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -606,7 +608,7 @@ this.initRangeHack();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -629,7 +631,7 @@ this.getUnitWaypointBehavior()!.setLastPathGeographicMapCellPosition(this.getUni
 
     private readonly sensorGeographicMapCellPositionList: BasicArrayList = new BasicArrayListD();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateSensorGeographicMapCellPositionList(){
 
@@ -833,7 +835,7 @@ this.rtsLayer2LogHelper= RTSLayer2LogHelper.getInstance();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -902,7 +904,7 @@ this.teleportTo(geographicMapCellPosition);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellHistory = geographicMapCellHistory
@@ -942,7 +944,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onMovementFound(trackingEvent: TrackingEvent){
     //var trackingEvent = trackingEvent
@@ -988,7 +990,7 @@ this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime();));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -1074,7 +1076,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -1100,7 +1102,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
                                     
 
 
-                            throw new Error("Position is not really on the map: " +geographicMapCellPosition);
+                            throw new Exception("Position is not really on the map: " +geographicMapCellPosition);
                     
 
                                     }
@@ -1114,7 +1116,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -1137,7 +1139,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public left(){
 this.initResourceAnimation!.previousRotation();
@@ -1149,7 +1151,7 @@ this.rotationAnimationInterfaceP!.previousRotation();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public right(){
 this.initResourceAnimation!.nextRotation();
@@ -1213,7 +1215,7 @@ super.initInputProcessors();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -1261,7 +1263,7 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.ge
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fireAll(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -1315,7 +1317,7 @@ this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVe
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public trackTo(reason: string){
     //var reason = reason
@@ -1346,7 +1348,7 @@ this.trackToDXY(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public trackToDXY(dx: number, dy: number){
     //var dx = dx
@@ -1360,7 +1362,7 @@ this.trackToDXYTargetAngle(dx, dy, angleOfTarget);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     turnTo(dx: number, dy: number, targetAngle: number): boolean{
     //var dx = dx
@@ -1669,7 +1671,7 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     trackToDXYTargetAngle(dx: number, dy: number, targetAngle: number){
     //var dx = dx
@@ -1729,7 +1731,7 @@ this.fireOrMove();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fireOrMove(){
 
@@ -1943,7 +1945,7 @@ this.resourceAnimation!.paintXY(graphics, viewX, viewY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
@@ -1966,7 +1968,7 @@ this.getUnitWaypointBehavior()!.moveAwayFromBuilding(buildingLayer);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -1987,7 +1989,7 @@ this.damageFloaters!.add(damage);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDamage(damageType: number): number{
     //var damageType = damageType
@@ -2000,7 +2002,7 @@ this.damageFloaters!.add(damage);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
@@ -2087,7 +2089,7 @@ vibration.vibrate(duration *4, 0, 0);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public clearResourceAnimation(){
 this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
@@ -2095,7 +2097,7 @@ this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getIns
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setLoad(resource: number){
 var resource = resource
@@ -2128,7 +2130,7 @@ this.resourceLoad += resource;
 
     private readonly CAPITAL_EVENT: CapitalEvent = new CapitalEvent(this);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
 var ownerLayer = ownerLayer

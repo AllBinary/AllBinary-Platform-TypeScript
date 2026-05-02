@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -84,7 +86,7 @@ export class StupidTimer
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(visitorInterface: Visitor, timeDelayHelper: TimeDelayHelper){
     //var visitorInterface = visitorInterface
@@ -148,7 +150,7 @@ break;
                         if(tookTooLong)
                         
                                     {
-                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.VISIT, new Error(new StringMaker().
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.VISIT, new Exception(new StringMaker().
                             append("Took Too Long: ")!.append(StringUtil.getInstance()!.toString(visitorInterface))!.toString()));
     
 
@@ -163,7 +165,7 @@ break;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public stopWaiting(){
 

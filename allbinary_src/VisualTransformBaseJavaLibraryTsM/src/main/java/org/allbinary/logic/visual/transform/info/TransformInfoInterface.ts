@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -61,7 +63,7 @@ export interface TransformInfoInterface extends TableMappingInterface {
 
     log(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     override(hashMap: HashMap<any, any>)
 
@@ -75,7 +77,7 @@ export interface TransformInfoInterface extends TableMappingInterface {
 
     getObject(): any
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getTemplateFilePath(): AbPath
 
@@ -83,13 +85,13 @@ export interface TransformInfoInterface extends TableMappingInterface {
 
     getTemplate(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getDataFilePath(): AbPath
 
     getDataFile(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getDataDocument(): Document
 
@@ -99,11 +101,11 @@ export interface TransformInfoInterface extends TableMappingInterface {
 
     setObject(anyType: Object)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     setObjectConfigInterface(transformInfoObjectConfigInterface: Object)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getObjectConfigInterface(): TransformInfoObjectConfigInterface
 

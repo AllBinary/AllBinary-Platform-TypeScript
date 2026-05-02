@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -75,7 +77,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Error::class, MoneyException::class)
+                //@Throws(Exception::class, MoneyException::class)
             
     public static getInstance(request: HttpServletRequest): TableMappingInterface{
 var request = request

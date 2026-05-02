@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -111,7 +113,7 @@ this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testin
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(myManager: AllBinaryLayerManager){
 var myManager = myManager

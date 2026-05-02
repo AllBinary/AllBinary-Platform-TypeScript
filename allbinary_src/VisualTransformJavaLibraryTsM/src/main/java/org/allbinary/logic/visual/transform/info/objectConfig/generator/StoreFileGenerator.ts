@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -187,7 +189,7 @@ fileName= replace.all(fileName);
                                     
 
 
-                            throw new Error("TransformInfoObjectConfigGenerator FileName Not Specified");
+                            throw new Exception("TransformInfoObjectConfigGenerator FileName Not Specified");
                     
 
                                     }
@@ -214,7 +216,7 @@ this.output= tempOutput;
                                     
 
 
-                            throw new Error("TransformInfoObjectConfigGenerator Output=extension Not Specified");
+                            throw new Exception("TransformInfoObjectConfigGenerator Output=extension Not Specified");
                     
 
                                     }
@@ -245,7 +247,7 @@ this.file= new AbFile(this.fileAbPath);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(input: string): string{
 var input = input
@@ -284,7 +286,7 @@ FileUtil.getInstance()!.write(inputStream, this.file);
                             
 
 
-                            throw new Error("Could Not Create: " +this.fileAbPath!.toString());
+                            throw new Exception("Could Not Create: " +this.fileAbPath!.toString());
                     
 
                         }

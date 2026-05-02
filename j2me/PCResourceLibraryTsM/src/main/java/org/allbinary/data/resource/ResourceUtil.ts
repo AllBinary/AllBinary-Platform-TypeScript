@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
@@ -114,7 +116,7 @@ this.ext= ext;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
@@ -139,7 +141,7 @@ this.ext= ext;
                                     
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("Unable to obtain: ")!.append(resource)!.toString());
                     
 
@@ -157,7 +159,7 @@ this.ext= ext;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
     //var resource = resource

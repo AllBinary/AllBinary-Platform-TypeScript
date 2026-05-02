@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { GameKeyEvent } from "../../../../org/allbinary/game/input/event/GameKeyEvent.js";
@@ -71,7 +73,7 @@ protected constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -79,7 +81,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processReleasedEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -87,7 +89,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAnalog(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, analogValue: number){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -96,7 +98,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: number){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -104,7 +106,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processReleased(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: number){
     //var allbinaryLayerManager = allbinaryLayerManager

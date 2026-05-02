@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
             import { Thread } from "../../../../java/lang/Thread.js";
@@ -97,7 +99,7 @@ ResourceUtil.classLoader= classLoader;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
@@ -122,7 +124,7 @@ ResourceUtil.classLoader= classLoader;
                                     
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("Unable to obtain: ")!.append(resource)!.toString());
                     
 
@@ -140,7 +142,7 @@ ResourceUtil.classLoader= classLoader;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
     //var resource = resource

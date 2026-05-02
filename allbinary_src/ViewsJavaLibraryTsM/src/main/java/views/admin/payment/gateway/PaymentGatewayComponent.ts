@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { PaymentGatewayInterface } from "../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js";
 
     
@@ -84,7 +86,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addDomNodeInterfaces(){
 

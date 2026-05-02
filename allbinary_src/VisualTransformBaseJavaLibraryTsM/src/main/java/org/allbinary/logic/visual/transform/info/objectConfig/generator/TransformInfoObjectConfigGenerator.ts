@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../../../java/lang/RuntimeException.js";
+        
 import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -52,7 +56,7 @@ export class TransformInfoObjectConfigGenerator
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(input: string): string{
 var input = input

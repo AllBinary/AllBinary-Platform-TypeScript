@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -101,7 +103,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoInterfaceToCustomize(customizerTransformInfoInterface: TransformInfoInterface, transformInfoInterface: TransformInfoInterface): TransformInfoInterface{
 var customizerTransformInfoInterface = customizerTransformInfoInterface
@@ -140,7 +142,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoObjectConfigComponentNodesToCustomize(customizerTransformInfoInterface: Object, transformInfoInterface: Object): Vector{
 var customizerTransformInfoInterface = customizerTransformInfoInterface
@@ -179,7 +181,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoObjectConfigComponentNodes(transformInfoInterface: Object): Vector{
 var transformInfoInterface = transformInfoInterface
@@ -205,7 +207,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface: Object): Vector{
 var transformInfoInterface = transformInfoInterface
@@ -231,7 +233,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public insert(transformInfoInterface: TransformInfoInterface, domNodeInterface: DomNodeInterface){
 var transformInfoInterface = transformInfoInterface
@@ -400,7 +402,7 @@ this.write(specifiedTransformInfoInterface, documentString);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(specifiedTransformInfoInterface: TransformInfoInterface, documentString: string){
 var specifiedTransformInfoInterface = specifiedTransformInfoInterface
@@ -425,7 +427,7 @@ transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap(
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getViewDataForComponentsInObjectConfig(transformInfoInterface: Object): Document{
 var transformInfoInterface = transformInfoInterface
@@ -489,7 +491,7 @@ index < size; index++)
 
 
 
-                            throw new Error("No Components Specified in ObjectConfig");
+                            throw new Exception("No Components Specified in ObjectConfig");
                     
 }
 

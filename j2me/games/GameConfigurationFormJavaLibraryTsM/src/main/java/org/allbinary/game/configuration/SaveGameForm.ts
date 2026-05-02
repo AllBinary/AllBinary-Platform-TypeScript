@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../java/lang/System.js";
         
             import { Long } from "../../../../java/lang/Long.js";
@@ -65,7 +67,7 @@ export class SaveGameForm extends CommandForm {
 
     private FORM: CommandForm = CommandForm.NULL_COMMAND_FORM;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createForm(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{
 var commandListener = commandListener

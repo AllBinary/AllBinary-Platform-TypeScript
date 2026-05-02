@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -349,7 +353,7 @@ var animationInterface = animationInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public handleFinish(){
 

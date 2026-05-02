@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CapturedImageInputOutput } from "../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js";
 
     
@@ -59,7 +61,7 @@ export class InputImageIOInterfaceFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(imageType: InputImageType): ImageIOInterface{
 var imageType = imageType
@@ -106,7 +108,7 @@ var imageType = imageType
                             
 
 
-                            throw new Error("No ImageIOInterface for: " +imageType!.toString());
+                            throw new Exception("No ImageIOInterface for: " +imageType!.toString());
                     
 
                         }

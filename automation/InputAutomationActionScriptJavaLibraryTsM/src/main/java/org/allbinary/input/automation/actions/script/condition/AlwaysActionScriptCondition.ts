@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
@@ -132,7 +134,7 @@ this.setIsOn(.
                             
 
 
-                            throw new Error("Action Script Condition Unknown Node");
+                            throw new Exception("Action Script Condition Unknown Node");
                     
 
                         }
@@ -146,7 +148,7 @@ this.setIsOn(.
                             
 
 
-                            throw new Error("Action Script Condition Node Null");
+                            throw new Exception("Action Script Condition Node Null");
                     
 
                         }
@@ -213,7 +215,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -232,7 +234,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScr
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public shouldProcess(frame: number): boolean{
 var frame = frame

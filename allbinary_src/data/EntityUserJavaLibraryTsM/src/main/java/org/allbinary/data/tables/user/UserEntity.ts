@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -162,7 +164,7 @@ var values = values
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAdministrators(): Vector{
 
@@ -174,7 +176,7 @@ var values = values
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -226,7 +228,7 @@ i < size; i++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCustomers(): Vector{
 
@@ -238,7 +240,7 @@ i < size; i++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getUsersWithRole(userRole: UserRole): Vector{
 var userRole = userRole
@@ -288,7 +290,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -338,7 +340,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getUser(userName: string): UserInterface{
 var userName = userName

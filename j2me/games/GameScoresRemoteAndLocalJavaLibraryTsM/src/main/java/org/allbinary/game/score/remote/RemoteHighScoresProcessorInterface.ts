@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
 
     
@@ -51,7 +53,7 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 export interface RemoteHighScoresProcessorInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo)
 

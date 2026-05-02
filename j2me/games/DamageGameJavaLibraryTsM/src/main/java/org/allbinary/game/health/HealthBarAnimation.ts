@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Animation } from "../../../../org/allbinary/animation/Animation.js";
 
     
@@ -85,7 +87,7 @@ this.location= location;
                                     
 
 
-                            throw new Error("Location Not Valid");
+                            throw new Exception("Location Not Valid");
                     
 
                                     }

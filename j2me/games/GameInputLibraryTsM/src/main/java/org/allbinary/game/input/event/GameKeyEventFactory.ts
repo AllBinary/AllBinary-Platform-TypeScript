@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameKeyEventSourceInterface } from "../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js";
 
     
@@ -124,7 +126,7 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceForKey(anyType: GameKeyEventSourceInterface, key: number): GameKeyEvent{
     //var anyType = anyType
@@ -142,7 +144,7 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceForInput(anyType: GameKeyEventSourceInterface, input: Input): GameKeyEvent{
     //var anyType = anyType

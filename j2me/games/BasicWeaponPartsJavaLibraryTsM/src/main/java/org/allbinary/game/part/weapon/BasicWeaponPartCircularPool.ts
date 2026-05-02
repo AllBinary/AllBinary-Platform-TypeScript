@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
 
     
@@ -64,7 +66,7 @@ export class BasicWeaponPartCircularPool
 
     private basicWeaponPart: BasicWeaponPart = BasicWeaponPart.NULL_BASIC_WEAPON_PART;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(basicWeaponPartFactoryInterface: BasicWeaponPartFactoryInterface){
     //var basicWeaponPartFactoryInterface = basicWeaponPartFactoryInterface
@@ -73,7 +75,7 @@ basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship): BasicWeaponPart{

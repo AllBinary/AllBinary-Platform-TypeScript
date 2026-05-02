@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
             import { Thread } from "../../../../java/lang/Thread.js";
@@ -91,7 +93,7 @@ this.runningP= isRunning;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setThread(thread: Thread){
     //var thread = thread

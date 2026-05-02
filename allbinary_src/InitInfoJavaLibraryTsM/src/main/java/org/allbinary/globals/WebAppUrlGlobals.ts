@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { InitInfo } from "../../../org/allbinary/business/init/InitInfo.js";
 
     
@@ -95,7 +97,7 @@ this.isWebappPathSet= true;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getMainPath(): string{
 
@@ -132,7 +134,7 @@ this.isWebappPathSet= true;
                             
 
 
-                            throw new Error("Webapp Path is not set");
+                            throw new Exception("Webapp Path is not set");
                     
 
                         }

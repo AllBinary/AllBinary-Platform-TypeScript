@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -41,7 +43,7 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class LicensingException extends java.lang.Error {
+export class LicensingException extends java.lang.Exception {
         
 
     public static readonly serialVersionUID: number = 1L;

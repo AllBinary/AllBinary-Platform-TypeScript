@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { MyRandomFactory } from "../../../../org/allbinary/game/rand/MyRandomFactory.js";
 
     
@@ -72,7 +74,7 @@ export class RandomRotationFactory
 
     private readonly angleFactory: AngleFactory = AngleFactory.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceList(vector: BasicArrayList, howMuch: number): BasicArrayList{
 var vector = vector

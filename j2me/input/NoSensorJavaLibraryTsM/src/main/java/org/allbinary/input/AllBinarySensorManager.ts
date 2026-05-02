@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { AccelerometerSensorFactory } from "../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js";
 
     

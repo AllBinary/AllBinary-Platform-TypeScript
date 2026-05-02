@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../java/lang/System.js";
         
 import { BufferedInputStream } from "../../../../java/io/BufferedInputStream.js";
@@ -30,8 +32,7 @@ import { BufferedInputStream } from "../../../../java/io/BufferedInputStream.js"
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
-
-//import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from "../../../../java/io/IOException.js";
 
     
 import { InputStream } from "../../../../java/io/InputStream.js";
@@ -125,7 +126,7 @@ export class AllBinaryMediaManager
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
@@ -147,7 +148,7 @@ new Sounds(soundsFactoryInterface).
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
@@ -164,7 +165,7 @@ System.gc();
 
     private static readonly CREATE_PLAYER: string = "createPlayer";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createPlayer(resource: string): Player{
     //var resource = resource

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Connection } from "../../../../java/sql/Connection.js";
 
     
@@ -661,7 +663,7 @@ var value = value
 }
 
 
-                //@Throws(Error::class, SQLException::class)
+                //@Throws(Exception::class, SQLException::class)
             
     public executeSQLStatement(statement: string): ResultSet{
 var statement = statement
@@ -774,7 +776,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initialize(){
 

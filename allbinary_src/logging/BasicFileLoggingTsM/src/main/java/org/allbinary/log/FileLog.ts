@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { System } from "../../../java/lang/System.js";
         
 import { BufferedReader } from "../../../java/io/BufferedReader.js";
@@ -249,7 +253,7 @@ var functionName = functionName
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Error): string{
+    public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Throwable): string{
 var specialMessage = specialMessage
 var anyType = anyType
 var functionName = functionName
@@ -368,7 +372,7 @@ FileLog.fileOut!.flush();
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public static put(specialMessage: string, className: string, functionName: string, exception: Error): string{
+    public static put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
 var specialMessage = specialMessage
     //var className = className
 var functionName = functionName

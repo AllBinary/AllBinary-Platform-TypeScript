@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -96,7 +98,7 @@ export class StylesValidationFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(hashMap: HashMap<any, any>): Vector{
 var hashMap = hashMap
@@ -120,7 +122,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(document: Document): Vector{
 var document = document

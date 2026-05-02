@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
 
     
@@ -56,7 +58,7 @@ export class ImageArrayRotationAnimationCacheableInterfaceFactory
          implements CacheableInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(key: any = {}): CacheableInterface{
     //var key = key

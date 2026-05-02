@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -225,7 +227,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(){
 

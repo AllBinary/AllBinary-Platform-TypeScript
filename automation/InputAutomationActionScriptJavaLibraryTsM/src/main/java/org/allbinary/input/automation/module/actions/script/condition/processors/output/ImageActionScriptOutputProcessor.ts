@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../../../../../java/lang/Long.js";
         
 import { Vector } from "../../../../../../../../../../java/util/Vector.js";
@@ -68,7 +70,7 @@ export class ImageActionScriptOutputProcessor
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static process(imageActionScriptOutputInterface: ImageActionScriptOutputInterface, frame: number){
     //var imageActionScriptOutputInterface = imageActionScriptOutputInterface

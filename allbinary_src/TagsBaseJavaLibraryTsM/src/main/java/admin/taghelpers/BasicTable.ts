@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../java/lang/RuntimeException.js";
+        
 import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
 
     
@@ -52,7 +56,7 @@ export class BasicTable
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public drop(): string{
 
@@ -63,7 +67,7 @@ export class BasicTable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public create(): string{
 
@@ -74,7 +78,7 @@ export class BasicTable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public restore(): string{
 
@@ -85,7 +89,7 @@ export class BasicTable
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public backup(): string{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ErrorData } from "../../../../../org/allbinary/business/error/ErrorData.js";
 
     
@@ -56,7 +58,7 @@ export class BasicErrorNodeUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static get(document: Document, errorText: string): Node{
 var document = document
@@ -82,7 +84,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, ErrorData.getInstan
 
 
 
-                            throw new Error("Error Node Creation Failure");
+                            throw new Exception("Error Node Creation Failure");
                     
 }
 

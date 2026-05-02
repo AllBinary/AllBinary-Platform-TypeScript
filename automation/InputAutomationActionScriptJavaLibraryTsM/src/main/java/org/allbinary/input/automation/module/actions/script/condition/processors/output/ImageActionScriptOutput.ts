@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../../../../../../java/util/HashMap.js";
@@ -166,7 +168,7 @@ this.setSaved(.
                             
 
 
-                            throw new Error("Action Script Output Unknown Node");
+                            throw new Exception("Action Script Output Unknown Node");
                     
 
                         }
@@ -180,7 +182,7 @@ this.setSaved(.
                             
 
 
-                            throw new Error("Action Script Output Node Null");
+                            throw new Exception("Action Script Output Node Null");
                     
 
                         }
@@ -236,7 +238,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -261,7 +263,7 @@ node.appendChild(newNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(frame: number){
 var frame = frame

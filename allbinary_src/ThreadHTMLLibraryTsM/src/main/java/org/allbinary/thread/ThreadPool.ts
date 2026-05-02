@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { InterruptedException } from "../../../java/lang/InterruptedException.js";
+        
             import { Runnable } from "../../../java/lang/Runnable.js";
         
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -94,7 +98,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
     private currentPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public runAPriorityTask(){
 
@@ -143,7 +147,7 @@ this.currentPriorityRunnable!.run();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public runATask(){
 

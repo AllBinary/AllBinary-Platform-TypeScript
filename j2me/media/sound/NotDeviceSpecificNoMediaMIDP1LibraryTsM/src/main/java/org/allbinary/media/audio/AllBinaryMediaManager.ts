@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../java/lang/System.js";
         
 import { InputStream } from "../../../../java/io/InputStream.js";
@@ -96,7 +98,7 @@ var aMuted = aMuted
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -118,7 +120,7 @@ new Sounds(soundsFactoryInterface).
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface

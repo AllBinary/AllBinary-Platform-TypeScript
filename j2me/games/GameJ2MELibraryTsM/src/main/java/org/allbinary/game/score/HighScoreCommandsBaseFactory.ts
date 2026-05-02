@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Command } from "../../../../javax/microedition/lcdui/Command.js";
 
     
@@ -118,7 +120,7 @@ index >= 0; index--)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getIndex(command: Command): number{
 var command = command
@@ -148,7 +150,7 @@ index >= 0; index--)
 
 
 
-                            throw new Error("No Such Command");
+                            throw new Exception("No Such Command");
                     
 }
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/CustomItem.js";
 
     
@@ -76,7 +78,7 @@ var foregroundBasicColor = foregroundBasicColor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(rectangle: Rectangle){
 var rectangle = rectangle

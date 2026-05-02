@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -69,7 +71,7 @@ export class NewUserFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(): UserInterface{
 
@@ -81,7 +83,7 @@ export class NewUserFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(transformInfoInterface: TransformInfoInterface): UserInterface{
 var transformInfoInterface = transformInfoInterface
@@ -113,7 +115,7 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<any, any>): UserInterface{
 var httpServletRequest = httpServletRequest
@@ -148,7 +150,7 @@ requestHashMap!.put(UserRoleData.NAME.toString(), roleString);
                             
 
 
-                            throw new Error("Null HashMap");
+                            throw new Exception("Null HashMap");
                     
 
                         }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
 
     
@@ -64,7 +66,7 @@ export class TopViewCharacterBehavior
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellPosition: GeographicMapCellPosition){
     //var layer = layer

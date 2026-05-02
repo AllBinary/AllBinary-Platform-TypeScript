@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { InputStream } from "../../../../../java/io/InputStream.js";
 
     
@@ -149,7 +151,7 @@ this.uriResolver= uriResolver;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public translate(xmlDocumentStr: string): string{
 var xmlDocumentStr = xmlDocumentStr
@@ -173,7 +175,7 @@ var xmlDocumentStr = xmlDocumentStr
                                     
 
 
-                            throw new Error("No URIResolver");
+                            throw new Exception("No URIResolver");
                     
 
                                     }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Arrays } from "../../../../../../java/util/Arrays.js";
 
     
@@ -73,7 +75,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
     //var document = document

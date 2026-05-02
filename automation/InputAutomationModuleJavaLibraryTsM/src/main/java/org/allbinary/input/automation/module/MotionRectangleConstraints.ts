@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { awt } from "../../../../../java/awt.js";
@@ -176,7 +180,7 @@ var rectangle = rectangle
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(frame: number, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
 var frame = frame

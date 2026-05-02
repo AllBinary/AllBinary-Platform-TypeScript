@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { UserEntityFactory } from "../../../org/allbinary/data/tables/user/UserEntityFactory.js";
 
     

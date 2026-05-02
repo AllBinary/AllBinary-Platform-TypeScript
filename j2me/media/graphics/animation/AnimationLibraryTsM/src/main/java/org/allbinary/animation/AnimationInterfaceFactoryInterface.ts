@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js";
 
     
@@ -49,7 +51,7 @@ import { Animation } from "./Animation.js";
 export interface AnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(instanceId: number): Animation
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { BaseCircularPool } from "../../../org/allbinary/logic/util/cache/BaseCircularPool.js";
 
     
@@ -56,7 +58,7 @@ protected constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
 var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface

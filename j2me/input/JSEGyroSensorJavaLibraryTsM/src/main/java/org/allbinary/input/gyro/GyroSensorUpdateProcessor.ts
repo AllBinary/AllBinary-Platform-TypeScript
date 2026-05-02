@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
 
     
@@ -47,7 +49,7 @@ import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
 export class GyroSensorUpdateProcessor extends Processor {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 }

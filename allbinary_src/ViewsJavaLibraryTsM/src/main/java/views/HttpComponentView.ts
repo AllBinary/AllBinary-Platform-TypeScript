@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { Vector } from "../java/util/Vector.js";
 
     
@@ -155,7 +157,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -209,7 +211,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDoc(): Document{
 
@@ -253,7 +255,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 

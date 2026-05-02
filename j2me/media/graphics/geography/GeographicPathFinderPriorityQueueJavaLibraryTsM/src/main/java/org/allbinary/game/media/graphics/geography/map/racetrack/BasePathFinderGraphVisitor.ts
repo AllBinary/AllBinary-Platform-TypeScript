@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/StringUtil.js";
 
     
@@ -84,7 +86,7 @@ this.maxPathWeight= maxPathWeight;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
     //var graph = graph
@@ -93,7 +95,7 @@ this.maxPathWeight= maxPathWeight;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
     //var startPathFindingNodeList = startPathFindingNodeList

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -128,7 +130,7 @@ var value = value
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(storeName: string): Vector{
 var storeName = storeName
@@ -184,7 +186,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface{
 var storeName = storeName

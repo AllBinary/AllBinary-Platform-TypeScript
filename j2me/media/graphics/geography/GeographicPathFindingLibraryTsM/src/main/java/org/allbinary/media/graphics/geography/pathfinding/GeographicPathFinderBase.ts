@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -57,7 +61,7 @@ export class GeographicPathFinderBase
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchTotalPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList
@@ -71,7 +75,7 @@ var totalPaths = totalPaths
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchTotalPathN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { FilePathData } from "../../../../../org/allbinary/logic/io/file/FilePathData.js";
 
     
@@ -174,7 +176,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithoutExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -187,7 +189,7 @@ var abFilePath = abFilePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithoutExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -200,7 +202,7 @@ var abPath = abPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithoutExtension(filePath: string): string{
 var filePath = filePath
@@ -469,7 +471,7 @@ var categoryPath = categoryPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNameFromPath(path: string): AbPath{

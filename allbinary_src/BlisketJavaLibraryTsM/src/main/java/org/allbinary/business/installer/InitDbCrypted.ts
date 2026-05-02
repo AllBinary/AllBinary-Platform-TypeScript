@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { InitInfoEntity } from "../../../../org/allbinary/business/init/InitInfoEntity.js";
 
     

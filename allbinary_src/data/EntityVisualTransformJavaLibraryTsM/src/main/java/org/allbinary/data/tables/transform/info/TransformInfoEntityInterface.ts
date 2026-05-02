@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -59,15 +61,15 @@ import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/vi
 export interface TransformInfoEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getObjectConfigs(storeName: string): Vector
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getNames(storeName: string): Vector
 

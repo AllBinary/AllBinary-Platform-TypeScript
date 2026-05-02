@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { RequestDispatcher } from "../../../../../../javax/servlet/RequestDispatcher.js";
 
     
@@ -78,7 +80,7 @@ export class AbResponseHandler
 
                 //@Throws(JspTagException::class)
             
-    public static sendJspTagRedirect(pageContext: PageContext, e: Error){
+    public static sendJspTagRedirect(pageContext: PageContext, e: Exception){
     //var pageContext = pageContext
     //var e = e
 
@@ -123,7 +125,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
                 //@Throws(ServletException::class)
             
-    public static sendServletRedirect(pageContext: PageContext, e: Error){
+    public static sendServletRedirect(pageContext: PageContext, e: Exception){
     //var pageContext = pageContext
     //var e = e
 
@@ -168,7 +170,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
                 //@Throws(JspTagException::class)
             
-    public static sendJspTagLicensingRedirect(pageContext: PageContext, e: Error){
+    public static sendJspTagLicensingRedirect(pageContext: PageContext, e: Exception){
     //var pageContext = pageContext
     //var e = e
 
@@ -213,7 +215,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 
                 //@Throws(ServletException::class)
             
-    public static sendServletLicensingRedirect(pageContext: PageContext, e: Error){
+    public static sendServletLicensingRedirect(pageContext: PageContext, e: Exception){
     //var pageContext = pageContext
     //var e = e
 
@@ -256,7 +258,7 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static sendRedirect(pageContext: PageContext, page: string){
     //var pageContext = pageContext

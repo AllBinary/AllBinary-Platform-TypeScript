@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { DomSearchHelper } from "../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
 
     
@@ -85,7 +87,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(document: Document): ContextConfigurationInterface{
     //var document = document
@@ -107,7 +109,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(contextName: string): ContextConfigurationInterface{
     //var contextName = contextName

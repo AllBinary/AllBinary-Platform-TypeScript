@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -78,7 +80,7 @@ this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public applyMotionRectangleConstraints(motionRectangles: MotionRectangles){
     //var motionRectangles = motionRectangles

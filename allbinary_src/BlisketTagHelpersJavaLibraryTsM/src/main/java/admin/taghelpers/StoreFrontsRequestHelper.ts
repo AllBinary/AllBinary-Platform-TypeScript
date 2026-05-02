@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -141,7 +143,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFormData(){
 this.storeName= this.weblisketSession!.getStoreName();
@@ -207,7 +209,7 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(h
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public sendStoreCreatedEmails(){
 

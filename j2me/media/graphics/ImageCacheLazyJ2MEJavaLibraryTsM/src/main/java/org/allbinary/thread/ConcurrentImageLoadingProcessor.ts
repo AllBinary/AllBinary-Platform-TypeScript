@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ProgressCanvas } from "../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
 
     

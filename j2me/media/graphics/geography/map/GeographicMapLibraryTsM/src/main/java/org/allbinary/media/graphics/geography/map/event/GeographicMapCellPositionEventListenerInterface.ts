@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { EventListenerInterface } from "../../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
 
     
@@ -48,11 +50,11 @@ import { EventListenerInterface } from "../../../../../../../org/allbinary/logic
 export interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent)
 

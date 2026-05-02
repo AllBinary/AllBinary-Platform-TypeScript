@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { DomDocumentHelper } from "../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -109,7 +111,7 @@ public constructor (transformInfoInterface: Object){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 
@@ -161,7 +163,7 @@ stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
                             
 
 
-                            throw new Error("Override Currently Not Supported");
+                            throw new Exception("Override Currently Not Supported");
                     
 
                         }

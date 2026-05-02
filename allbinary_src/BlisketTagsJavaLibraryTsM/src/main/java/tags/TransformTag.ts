@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { JspTagException } from "../javax/servlet/jsp/JspTagException.js";
 
     
@@ -105,7 +107,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     view(): string{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../java/util/HashMap.js";
@@ -179,7 +181,7 @@ this.inventory= new InventoryEntity();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getHashSet(storeFront: StoreFrontInterface): HashSet{
 var storeFront = storeFront
@@ -236,7 +238,7 @@ keywords.addAll(substoreKeywords);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     savePage(file: string, data: string){
 var file = file
@@ -295,7 +297,7 @@ StreamUtil.getInstance()!.close(idOutData);
                             
 
 
-                            throw new Error("Could Not Create: " +file);
+                            throw new Exception("Could Not Create: " +file);
                     
 
                         }
@@ -303,7 +305,7 @@ StreamUtil.getInstance()!.close(idOutData);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: Vector, staticPath: AbPath){
 var keywordData = keywordData
@@ -417,7 +419,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
                                     
 
 
-                            throw new Error("Could Not Create Directory: " +staticPath);
+                            throw new Exception("Could Not Create Directory: " +staticPath);
                     
 
                                     }
@@ -478,7 +480,7 @@ this.staticPages!.insert(insertVector);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generateAll(): string{
 
@@ -615,7 +617,7 @@ stringBuffer!.append(this.INVENTORY);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generateAll(storeName: string): string{
 var storeName = storeName

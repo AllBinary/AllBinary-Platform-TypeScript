@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../../java/lang/RuntimeException.js";
+        
 import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -83,7 +87,7 @@ export class BasePathFindingInfoFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
@@ -112,7 +116,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
     //var tiledLayer = tiledLayer
@@ -216,7 +220,7 @@ geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(new RaceTra
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addStartPathFindingNode(pathFindingInfo: PathFindingInfo, startGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
@@ -226,7 +230,7 @@ pathFindingInfo!.addStartPathFindingNode(new PathFindingNode(NullUtil.getInstanc
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addEndPathFindingNode(pathFindingInfo: PathFindingInfo, endGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
@@ -236,7 +240,7 @@ pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance(
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface

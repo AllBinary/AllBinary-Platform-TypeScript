@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../../../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -81,7 +83,7 @@ this.imageFileAbPath= imageAbPath;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public saveFiles(fileItem: FileItem){
     //var fileItem = fileItem
@@ -94,7 +96,7 @@ this.imageFileAbPath= imageAbPath;
                                     
 
 
-                            throw new Error("Image File Name Was Null");
+                            throw new Exception("Image File Name Was Null");
                     
 
                                     }
@@ -106,7 +108,7 @@ this.imageFileAbPath= imageAbPath;
                                     
 
 
-                            throw new Error("Unable to save file to non creatable directory");
+                            throw new Exception("Unable to save file to non creatable directory");
                     
 
                                     }

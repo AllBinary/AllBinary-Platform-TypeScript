@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BufferedReader } from "../../../../java/io/BufferedReader.js";
 
     
@@ -67,7 +69,7 @@ export class BufferedIOUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static copy(backupFile: AbFile, backupFileBak: AbFile){
 var backupFile = backupFile

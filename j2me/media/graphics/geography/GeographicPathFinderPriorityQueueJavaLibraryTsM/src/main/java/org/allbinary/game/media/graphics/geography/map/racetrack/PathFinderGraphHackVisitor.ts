@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -63,7 +65,7 @@ var maxPathWeight = maxPathWeight
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -78,7 +80,7 @@ this.fixOverPassEdges(graph);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fixStart(graph: any = {}, startPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -86,7 +88,7 @@ var startPathFindingNodeList = startPathFindingNodeList
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fixEnd(graph: any = {}, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -94,14 +96,14 @@ var endPathFindingNodeList = endPathFindingNodeList
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fixOverPassEdges(graph: any = {}){
 var graph = graph
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 var startPathFindingNodeList = startPathFindingNodeList
@@ -110,7 +112,7 @@ var pathList = pathList
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     removeOverPassEdges(pathList: BasicArrayList){
 var pathList = pathList

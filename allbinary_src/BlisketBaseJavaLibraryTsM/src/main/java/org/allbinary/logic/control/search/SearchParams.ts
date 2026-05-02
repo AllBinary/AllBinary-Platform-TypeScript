@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -300,7 +302,7 @@ this.endPage= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getParamsNode(document: Document): Node{
 var document = document
@@ -325,7 +327,7 @@ paramsNode!.appendChild(this.getLengthNode(document));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFieldsNode(document: Document): Node{
 var document = document
@@ -376,7 +378,7 @@ fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.F
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getOrderNode(document: Document): Node{
 var document = document
@@ -389,7 +391,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getSortByNode(document: Document): Node{
 var document = document
@@ -402,7 +404,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getLengthNode(document: Document): Node{
 var document = document

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../../java/lang/System.js";
         
             import { Integer } from "../../../../../../java/lang/Integer.js";

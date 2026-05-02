@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -65,7 +67,7 @@ import { TouchButtonResource } from "./TouchButtonResource.js";
 export class FullTouchButton extends TouchButton {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createButton(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): FullTouchButton{
     //var touchButtonInput = touchButtonInput

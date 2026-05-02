@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -72,30 +74,30 @@ this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public clear(){
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
@@ -104,7 +106,7 @@ this.buffers.add(cacheableInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addArray(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces

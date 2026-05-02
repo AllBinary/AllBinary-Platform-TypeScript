@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -87,7 +89,7 @@ hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfiguratio
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 
@@ -99,7 +101,7 @@ hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfiguratio
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -97,7 +99,7 @@ this.categoryInterface= categoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -170,7 +172,7 @@ categoryPropertiesInterface= categoryInterface!.getProperties();
 
 
 
-                            throw new Error("CategoryView found unknown object.\n" +"Show Testing:" +isImpl);
+                            throw new Exception("CategoryView found unknown object.\n" +"Show Testing:" +isImpl);
                     
 
                         }

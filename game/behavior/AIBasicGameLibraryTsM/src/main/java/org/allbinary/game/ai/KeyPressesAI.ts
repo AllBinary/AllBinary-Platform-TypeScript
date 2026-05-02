@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../../java/util/Hashtable.js";
@@ -100,7 +102,7 @@ this.keys[index]= hashtable.get(objectArray[index]! as Object) as Integer;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -126,7 +128,7 @@ super.processKeyAI(this.keys[index]!.toInt());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toggle(){
 
@@ -147,7 +149,7 @@ super.processKeyAI(this.keys[index]!.toInt());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public disable(){
 this.setOn(false);
@@ -155,7 +157,7 @@ this.setOn(false);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public enable(){
 this.setOn(true);

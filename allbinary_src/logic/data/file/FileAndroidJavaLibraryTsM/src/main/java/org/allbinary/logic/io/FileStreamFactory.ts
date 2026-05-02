@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Context } from "../../../../android/content/Context.js";
 
     
@@ -79,7 +81,7 @@ this.context= context;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileInputStreamInstance(path: string, fileName: string): AbFileInputStream{
     //var path = path
@@ -93,7 +95,7 @@ this.context= context;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
     //var path = path
@@ -113,7 +115,7 @@ context.deleteFile(fileName);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public delete(path: string, fileName: string){
     //var path = path

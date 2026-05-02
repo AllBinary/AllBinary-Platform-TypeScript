@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { OrderHistory } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js";
 
     
@@ -82,7 +84,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(orderReview: OrderHistory): PaymentTransactionInterface{
 var orderReview = orderReview
@@ -122,7 +124,7 @@ var orderReview = orderReview
 
 
 
-                            throw new Error("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName);
+                            throw new Exception("Failed to create PaymentTransactionInterface: " +"GatewayName is: " +gatewayName);
                     
 
                 //: 

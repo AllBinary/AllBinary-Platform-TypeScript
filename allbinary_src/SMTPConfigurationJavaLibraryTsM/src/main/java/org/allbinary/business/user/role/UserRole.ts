@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Serializable } from "../../../../../java/io/Serializable.js";
 
     
@@ -88,7 +90,7 @@ this.userFactoryInterface= aUserFactoryInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getUserFactory(): UserFactoryInterface{
 

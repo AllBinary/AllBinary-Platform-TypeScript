@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
@@ -249,7 +251,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static main(args: string[]){
 var args = args
@@ -314,7 +316,7 @@ this.helpSet!.remove(helpSetEvent!.getHelpSet());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(){
 InputAutomationConfigurationFactory.init(InputAutomationClientInformationFactory.getInstance());

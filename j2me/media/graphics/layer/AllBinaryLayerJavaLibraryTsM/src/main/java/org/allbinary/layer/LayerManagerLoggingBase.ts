@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -48,7 +50,7 @@ export class LayerManagerLoggingBase
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface

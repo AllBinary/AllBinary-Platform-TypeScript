@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../../java/lang/RuntimeException.js";
+        
 import { AbPath } from "../../../../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
@@ -65,7 +69,7 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -79,7 +83,7 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -92,7 +96,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation

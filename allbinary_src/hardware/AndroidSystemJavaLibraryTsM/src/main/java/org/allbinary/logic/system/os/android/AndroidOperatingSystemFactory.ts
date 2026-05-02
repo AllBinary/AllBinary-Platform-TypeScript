@@ -24,6 +24,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -89,7 +91,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOperatingSystemInstance(): GenericOperatingSystem{
 
@@ -129,7 +131,7 @@ private constructor (){
                             
 
 
-                            throw new Error("Specific Android OS Not Supported: " +osName);
+                            throw new Exception("Specific Android OS Not Supported: " +osName);
                     
 
                         }

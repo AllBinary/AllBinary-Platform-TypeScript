@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { GraphPath } from "../../../../../../../../org/jgrapht/GraphPath.js";
 
     
@@ -99,7 +101,7 @@ var maxPathWeight = maxPathWeight
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(graph: SimpleWeightedGraph, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -114,7 +116,7 @@ this.fixOverPassEdges(graph);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fixStart(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, startPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -173,7 +175,7 @@ graph.removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fixEnd(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -234,7 +236,7 @@ graph.addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     fixOverPassEdges(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>){
 var graph = graph
@@ -291,7 +293,7 @@ graph.addEdge(overPassGeographicMapCellPosition, leftUnderPassGeographicMapCellP
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 var startPathFindingNodeList = startPathFindingNodeList
@@ -338,7 +340,7 @@ this.removeOverPassEdges(pathList);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     removeOverPassEdges(pathList: BasicArrayList){
 var pathList = pathList

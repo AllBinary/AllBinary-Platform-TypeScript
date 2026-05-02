@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -62,7 +64,7 @@ import { AdjustedImageAnimation } from "./AdjustedImageAnimation.js";
 export class ImageAnimationFactory extends BaseImageAnimationFactory {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactory(image: Image): ImageAnimationFactory{
     //var image = image
@@ -89,7 +91,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../../java/util/Vector.js";
 
     
@@ -161,7 +163,7 @@ this.vector.remove(genericProfileDataWorkerType);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

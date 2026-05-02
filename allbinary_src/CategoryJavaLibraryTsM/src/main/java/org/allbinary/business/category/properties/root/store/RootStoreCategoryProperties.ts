@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -233,7 +235,7 @@ this.log();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initPath(){
 
@@ -323,7 +325,7 @@ this.fileAbPath= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWebAppPath(): AbPath{
 
@@ -405,7 +407,7 @@ categoryVector!.add(this.getValue());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoDoc(): Document{
 
@@ -417,7 +419,7 @@ categoryVector!.add(this.getValue());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -430,7 +432,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 

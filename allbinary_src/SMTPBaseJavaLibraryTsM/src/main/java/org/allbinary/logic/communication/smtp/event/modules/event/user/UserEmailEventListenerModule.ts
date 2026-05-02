@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { UserInterface } from "../../../../../../../../../org/allbinary/business/user/UserInterface.js";
 
     
@@ -79,7 +81,7 @@ this.userInterface= userInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onEmailSendFailure(emailEvent: EmailEvent){
 var emailEvent = emailEvent
@@ -96,7 +98,7 @@ EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onEmailSendRequest(emailEvent: EmailEvent){
 var emailEvent = emailEvent

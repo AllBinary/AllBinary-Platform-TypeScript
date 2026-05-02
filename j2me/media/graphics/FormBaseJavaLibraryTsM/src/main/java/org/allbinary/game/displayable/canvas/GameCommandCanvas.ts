@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 import { Vector } from "../../../../../java/util/Vector.js";
 
     
@@ -320,7 +324,7 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initMenu(){
 
@@ -345,7 +349,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createForm(): ScrollSelectionForm{
 
@@ -421,7 +425,7 @@ DisplayChangeEventHandler.getInstance()!.removeListener(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(){
 this.repaintProcessor!.process();

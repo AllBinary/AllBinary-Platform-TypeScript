@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../java/lang/Integer.js";
         
 import { InputStream } from "../../../../java/io/InputStream.js";
@@ -260,7 +262,7 @@ this.resources= resources;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource

@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
 
     
@@ -76,7 +78,7 @@ protected constructor (angleInfo: AngleInfo, circularIndexUtil: CircularIndexUti
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAnimationSize(): number{
 

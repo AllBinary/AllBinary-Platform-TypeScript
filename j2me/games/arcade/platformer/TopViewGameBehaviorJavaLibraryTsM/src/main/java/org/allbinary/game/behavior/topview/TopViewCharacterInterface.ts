@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -55,7 +57,7 @@ export interface TopViewCharacterInterface {
 
     terrainMove(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], x: number, y: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     terrainEvent(x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition)
 
@@ -67,7 +69,7 @@ export interface TopViewCharacterInterface {
 
     rightp()
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     reset()
 

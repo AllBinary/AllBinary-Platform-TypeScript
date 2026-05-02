@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
 
     
@@ -74,7 +76,7 @@ public constructor (sep: string){
                                     
 
 
-                            throw new Error("Sep provided is not valid");
+                            throw new Exception("Sep provided is not valid");
                     
 
                                     }

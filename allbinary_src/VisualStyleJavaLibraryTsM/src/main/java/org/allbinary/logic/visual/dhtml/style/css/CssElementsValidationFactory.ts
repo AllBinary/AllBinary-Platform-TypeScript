@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -59,7 +61,7 @@ export class CssElementsValidationFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(cssElementStyleNodeList: Vector): Vector{
     //var cssElementStyleNodeList = cssElementStyleNodeList

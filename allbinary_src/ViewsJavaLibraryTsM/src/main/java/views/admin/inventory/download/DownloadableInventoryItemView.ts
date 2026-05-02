@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -162,7 +164,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFormData(){
 this.setRequestHashMap(new MultipartRequestParams(this.request).
@@ -194,7 +196,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 
@@ -230,7 +232,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processFile(fileItem: FileItem){
     //var fileItem = fileItem
@@ -275,7 +277,7 @@ FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     unzip(fileItem: FileItem){
     //var fileItem = fileItem

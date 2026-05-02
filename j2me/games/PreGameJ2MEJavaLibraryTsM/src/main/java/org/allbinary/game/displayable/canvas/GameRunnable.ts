@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
             import { Runnable } from "../../../../../java/lang/Runnable.js";
@@ -70,7 +72,7 @@ DisplayInfoSingleton.getInstance()!.process();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processLoopSleep(){
 Thread.sleep(this.wait);

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { CellPositionFactory } from "../../../../../../../org/allbinary/graphics/CellPositionFactory.js";
 
     
@@ -66,7 +68,7 @@ this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType,
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
@@ -77,7 +79,7 @@ this.geographicMapCellPositionEventHandler!.fireEvent(this.geographicMapCellPosi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking

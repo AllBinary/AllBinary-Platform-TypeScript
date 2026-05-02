@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -111,7 +113,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(index
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAnimationSize(): number{
 
@@ -141,7 +143,7 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.previousFrame(
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public nextFrame(){
 this.circularIndexUtil!.next();
@@ -299,7 +301,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL){
     //var gl = gl

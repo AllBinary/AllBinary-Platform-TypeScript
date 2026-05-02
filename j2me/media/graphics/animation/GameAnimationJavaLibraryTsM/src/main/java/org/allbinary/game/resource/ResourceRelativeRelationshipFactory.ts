@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
@@ -68,7 +70,7 @@ export class ResourceRelativeRelationshipFactory
 
     private initialized: boolean= false
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(level: number){
 var level = level
@@ -77,7 +79,7 @@ this.setInitialized(true);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getResourceRelativeRelationshipList(resource: string): BasicArrayList{
 var resource = resource
@@ -109,7 +111,7 @@ var resource = resource
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public addResourceRelativeRelationship(resource: string, hardPoint: RelativeRelationship){
 var resource = resource

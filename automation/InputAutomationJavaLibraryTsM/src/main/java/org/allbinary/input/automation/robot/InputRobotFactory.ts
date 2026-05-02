@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../../java/awt.js";
 
     
@@ -91,7 +93,7 @@ export class InputRobotFactory
 
     private static readonly inputRobotFactory: InputRobotFactory = new InputRobotFactory();
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(): InputRobotFactory{
 
@@ -103,7 +105,7 @@ export class InputRobotFactory
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static loadLibraries(collection: Collection){
 var collection = collection
@@ -127,7 +129,7 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static loadLibrary(inputRobotInterface: InputRobotInterface){
     //var inputRobotInterface = inputRobotInterface
@@ -213,7 +215,7 @@ this.helpSetListenerInterface= helpSetListenerInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public add(inputRobotInterface: InputRobotInterface){
     //var inputRobotInterface = inputRobotInterface
@@ -271,7 +273,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public loadLibraries(){
 
@@ -308,7 +310,7 @@ InputRobotFactory.loadLibrary(inputRobotInterface);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public unloadLibraries(){
 this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
@@ -360,7 +362,7 @@ securedNativeLibraryInterface!.unload();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(): Hashtable<any, any>{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { StoreFrontFactory } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
 
     
@@ -330,7 +332,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public validationInfo(): string{
 
@@ -442,7 +444,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isValid(fileName: string, size: number): Boolean{
 var fileName = fileName

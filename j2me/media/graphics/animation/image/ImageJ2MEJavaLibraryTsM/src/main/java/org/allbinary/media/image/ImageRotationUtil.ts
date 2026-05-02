@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -71,7 +73,7 @@ private constructor (){
 
     private anchor: number = Anchor.TOP_LEFT;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage

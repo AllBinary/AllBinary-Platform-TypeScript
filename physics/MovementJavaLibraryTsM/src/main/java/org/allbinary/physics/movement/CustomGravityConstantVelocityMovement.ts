@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -73,7 +75,7 @@ this.customGravity= customGravity;
 
     private readonly gravityUtil: GravityUtil = GravityUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer

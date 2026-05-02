@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { DisplayChangeEvent } from "../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js";
 
     
@@ -62,7 +64,7 @@ export class InGameMenuBehavior extends BaseMenuBehavior {
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onDisplayChangeEvent(allBinaryGameCanvas: AllBinaryGameCanvas, displayChangeEvent: DisplayChangeEvent){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -79,7 +81,7 @@ allBinaryGameCanvas!.setNonBotPaintableP(new GameCanvasNonBotPaintable(allBinary
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -88,7 +90,7 @@ allBinaryGameCanvas!.initMenu2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -97,7 +99,7 @@ allBinaryGameCanvas!.initMenu2();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public popupMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas

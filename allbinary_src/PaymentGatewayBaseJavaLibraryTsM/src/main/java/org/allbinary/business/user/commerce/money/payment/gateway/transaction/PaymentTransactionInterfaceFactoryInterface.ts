@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { OrderHistory } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js";
 
     
@@ -51,31 +53,31 @@ import { TenderType } from "../../../../../../../../../org/allbinary/business/us
 export interface PaymentTransactionInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstance(orderHistory: OrderHistory): PaymentTransactionInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getSaleTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCreditTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getAuthorizationTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCaptureDelayedTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getVoidTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInquiryTransaction(tenderType: TenderType): PaymentTransactionInterface
 

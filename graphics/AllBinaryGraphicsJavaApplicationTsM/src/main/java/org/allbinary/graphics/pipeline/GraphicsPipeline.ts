@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -67,7 +69,7 @@ public constructor (points: BasicArrayList){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public rotateTheta(aTheta: number){
 var aTheta = aTheta

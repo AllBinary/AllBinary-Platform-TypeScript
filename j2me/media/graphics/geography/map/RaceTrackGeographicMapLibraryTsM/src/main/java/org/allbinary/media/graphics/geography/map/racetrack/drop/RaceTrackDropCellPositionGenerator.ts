@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -124,7 +126,7 @@ this.list.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -158,7 +160,7 @@ this.list.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -265,7 +267,7 @@ this.drop(allBinaryGameLayerManager, index);
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -285,7 +287,7 @@ this.drop(allBinaryLayerManager, index);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -293,7 +295,7 @@ this.drop(allBinaryLayerManager, index);
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                            throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
 }
 

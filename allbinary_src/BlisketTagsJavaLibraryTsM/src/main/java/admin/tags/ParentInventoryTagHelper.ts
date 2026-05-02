@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { Tag } from "../../javax/servlet/jsp/tagext/Tag.js";
 
     
@@ -65,7 +67,7 @@ export class ParentInventoryTagHelper
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isValid(tagClass: any = {}, parentTag: Tag){
 var tagClass = tagClass
@@ -79,7 +81,7 @@ var parentTag = parentTag
                                     
 
 
-                            throw new Error("Must have parent tag.");
+                            throw new Exception("Must have parent tag.");
                     
 
                                     }
@@ -105,7 +107,7 @@ stringBuffer!.append(parentTag!.constructor.name.toString()!);
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 
                                     }

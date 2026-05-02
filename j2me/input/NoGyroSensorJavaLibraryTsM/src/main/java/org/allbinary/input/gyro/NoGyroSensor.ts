@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinarySensorListener } from "../../../../org/allbinary/input/AllBinarySensorListener.js";
 
     
@@ -61,7 +63,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrientation(): Orientation{
 

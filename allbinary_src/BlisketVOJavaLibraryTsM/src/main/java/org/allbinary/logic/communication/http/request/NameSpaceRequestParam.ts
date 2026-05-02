@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../java/util/HashMap.js";
@@ -102,7 +104,7 @@ this.value= value;
                                     
 
 
-                            throw new Error("Not a NameSpaceRequest");
+                            throw new Exception("Not a NameSpaceRequest");
                     
 
                                     }
@@ -187,7 +189,7 @@ list.clear();
                                     
 
 
-                            throw new Error("Package Name Is Null");
+                            throw new Exception("Package Name Is Null");
                     
 
                                     }
@@ -303,7 +305,7 @@ var packageIndex = packageIndex
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generatePackagePropertiesHashMap(properties: string): HashMap<any, any>{
 var properties = properties

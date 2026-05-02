@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
 
     
@@ -230,7 +232,7 @@ this.document.appendChild(contentTypeNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public log(): string{
 

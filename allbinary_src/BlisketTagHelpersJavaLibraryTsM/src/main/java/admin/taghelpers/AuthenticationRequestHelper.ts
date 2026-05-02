@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -132,7 +134,7 @@ this.request= httpServletRequest;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generateNewPassword(): string{
 
@@ -164,7 +166,7 @@ this.request= httpServletRequest;
                             
 
 
-                            throw new Error("Error Generating New Password");
+                            throw new Exception("Error Generating New Password");
                     
 
                         }
@@ -176,7 +178,7 @@ this.request= httpServletRequest;
                             
 
 
-                            throw new Error("No Session Available For Generating New Password");
+                            throw new Exception("No Session Available For Generating New Password");
                     
 
                         }

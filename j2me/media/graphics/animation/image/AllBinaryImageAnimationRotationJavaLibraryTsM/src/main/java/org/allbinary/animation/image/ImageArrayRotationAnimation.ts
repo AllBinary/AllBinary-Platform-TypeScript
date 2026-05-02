@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -55,7 +57,7 @@ import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationIn
 export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     static createAnimation(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
     //var anyType = anyType
@@ -89,7 +91,7 @@ this.init(imageArray, angleInfo, totalAngle);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(imageArray: Image[], angleInfo: AngleInfo, totalAngle: number){
     //var imageArray = imageArray
@@ -106,7 +108,7 @@ this.angleInfo!.adjustAngle(0);
                                     
 
 
-                            throw new Error("Wrong Number of Frames");
+                            throw new Exception("Wrong Number of Frames");
                     
 
                                     }

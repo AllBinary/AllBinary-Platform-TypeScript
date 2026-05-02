@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../java/util/Calendar.js";
@@ -204,7 +206,7 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFormData(userHashMap: HashMap<any, any>){
     //var userHashMap = userHashMap
@@ -835,7 +837,7 @@ this.enable= enable;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toVector(): Vector{
 
@@ -910,7 +912,7 @@ values.add(time);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -1028,7 +1030,7 @@ var weblisketSession = weblisketSession
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getKey(): any{
 

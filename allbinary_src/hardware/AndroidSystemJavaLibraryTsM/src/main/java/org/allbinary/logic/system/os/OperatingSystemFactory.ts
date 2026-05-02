@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AndroidOperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/android/AndroidOperatingSystemFactory.js";
 
     
@@ -125,7 +127,7 @@ this.logUtil!.putF(new StringMaker().
                             
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("OS Not Supported: ")!.append(osName)!.toString());
                     
 

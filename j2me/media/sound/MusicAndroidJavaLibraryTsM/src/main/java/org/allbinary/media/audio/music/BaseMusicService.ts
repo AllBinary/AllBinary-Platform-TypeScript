@@ -8,6 +8,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
             import { System } from "../../../../../java/lang/System.js";
         
             import { Thread } from "../../../../../java/lang/Thread.js";

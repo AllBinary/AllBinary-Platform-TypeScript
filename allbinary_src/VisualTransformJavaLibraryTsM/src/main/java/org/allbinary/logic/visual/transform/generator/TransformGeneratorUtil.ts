@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -92,7 +94,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, ownerTransformInfoInterface: TransformInfoInterface){
     //var abeClientInformation = abeClientInformation
@@ -166,7 +168,7 @@ new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoDomNode: TransformInfoDomNode, ownerTransformInfoInterface: TransformInfoInterface){
     //var abeClientInformation = abeClientInformation

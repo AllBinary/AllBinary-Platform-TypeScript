@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
 
     
@@ -140,7 +142,7 @@ var categoryInterface = categoryInterface
                                     
 
 
-                            throw new Error("Could Not Create Directory");
+                            throw new Exception("Could Not Create Directory");
                     
 
                                     }
@@ -178,7 +180,7 @@ this.save(categoryInterface);
                             
 
 
-                            throw new Error("Null Category");
+                            throw new Exception("Null Category");
                     
 
                         }

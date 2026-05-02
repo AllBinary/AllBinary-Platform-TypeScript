@@ -1,6 +1,6 @@
 
 /*actual*/ export interface Closeable
 {
-    close();
+    close(): void;
 }
 

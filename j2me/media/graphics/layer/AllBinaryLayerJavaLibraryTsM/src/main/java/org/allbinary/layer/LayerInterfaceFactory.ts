@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Hashtable } from "../../../java/util/Hashtable.js";
@@ -99,7 +101,7 @@ this.list= new BasicArrayListD();
 
     private readonly HASHTABLE_LABEL: string = "Hashtable: ";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getNexInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable

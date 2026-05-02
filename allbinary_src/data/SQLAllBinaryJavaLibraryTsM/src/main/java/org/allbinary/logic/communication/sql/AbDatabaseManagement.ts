@@ -14,6 +14,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { InetAddress } from "../../../../../java/net/InetAddress.js";
 
     
@@ -143,7 +145,7 @@ this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     addDbUser(hostName: string, db: string, userName: string, password: string): boolean{
 var hostName = hostName

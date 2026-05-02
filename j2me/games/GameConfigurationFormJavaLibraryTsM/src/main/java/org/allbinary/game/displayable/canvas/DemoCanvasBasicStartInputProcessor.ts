@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { NullCanvas } from "../../../../../javax/microedition/lcdui/NullCanvas.js";
 
     
@@ -79,7 +81,7 @@ var gameCanvas = gameCanvas
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInputList(): number{
 

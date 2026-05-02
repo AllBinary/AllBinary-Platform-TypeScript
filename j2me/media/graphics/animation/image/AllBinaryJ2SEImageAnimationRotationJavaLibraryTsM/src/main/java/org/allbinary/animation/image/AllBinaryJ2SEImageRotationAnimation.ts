@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -391,7 +395,7 @@ disposalUtil!.disposeImage(this.imageToShow);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Throwable::class)
             
     finalize(){
 super.finalize();

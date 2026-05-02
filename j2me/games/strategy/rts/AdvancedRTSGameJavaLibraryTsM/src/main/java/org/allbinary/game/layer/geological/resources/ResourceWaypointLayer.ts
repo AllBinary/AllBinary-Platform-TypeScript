@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { SelectionHudPaintable } from "../../../../../../org/allbinary/game/layer/SelectionHudPaintable.js";
 
     

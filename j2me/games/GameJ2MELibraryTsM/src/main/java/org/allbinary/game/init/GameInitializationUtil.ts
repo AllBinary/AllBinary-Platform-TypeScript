@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { ChangedGameFeatureListener } from "../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js";
 
     
@@ -86,7 +88,7 @@ export class GameInitializationUtil
 
     public readonly EVENT: GameInitializedEvent = new GameInitializedEvent(this);
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initDemo(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
     //var abeClientInformation = abeClientInformation
@@ -136,7 +138,7 @@ this.EVENT.setResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_EARLY);
                             
 
 
-                            throw new Error("No Loading Feature Available");
+                            throw new Exception("No Loading Feature Available");
                     
 
                         }
@@ -149,7 +151,7 @@ GameInitializedEventHandler.getInstance()!.fireEvent(this.EVENT);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initGame(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
     //var abeClientInformation = abeClientInformation

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -98,7 +100,7 @@ export class LoggingInitInfo
 
     private hasRead: boolean = false;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getDoc(): Document{
@@ -127,7 +129,7 @@ export class LoggingInitInfo
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static write(){
@@ -149,7 +151,7 @@ export class LoggingInitInfo
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static read(){
@@ -219,7 +221,7 @@ LoggingInitInfo.hasRead= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static updateIfNeeded(){
@@ -240,7 +242,7 @@ LoggingInitInfo.hasRead= true;
                                     
 
 
-                            throw new Error("Read Failed");
+                            throw new Exception("Read Failed");
                     
 
                                     }
@@ -259,7 +261,7 @@ LoggingInitInfo.logConfigInfoList= logConfigInfoVector;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static get(): BasicArrayList{
 LoggingInitInfo.updateIfNeeded();
@@ -273,7 +275,7 @@ LoggingInitInfo.updateIfNeeded();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getTypeNameList(): BasicArrayList{
 LoggingInitInfo.updateIfNeeded();
@@ -322,7 +324,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getTypeList(): BasicArrayList{
 LoggingInitInfo.updateIfNeeded();
@@ -400,7 +402,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getNumberOfLogConfigs(): number{
 

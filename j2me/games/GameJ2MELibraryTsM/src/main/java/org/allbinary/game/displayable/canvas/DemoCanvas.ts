@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -679,13 +681,13 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initPostPaint(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mediaInit(){
 AllBinaryMediaManager.init(EarlySoundsFactory.getInstance());
@@ -700,7 +702,7 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initMenu(){
 this.close();
@@ -995,7 +997,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
@@ -1004,7 +1006,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
@@ -1018,7 +1020,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable");
@@ -1186,42 +1188,42 @@ gameAdState!.processPageAdState();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getNextRandom(): number{
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createGameLayerManager(randomValue: number): AllBinaryGameLayerManager{
 var randomValue = randomValue
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createRunnable(randomLevel: number): GameCanvasRunnableInterface{
 var randomLevel = randomLevel
 
 
 
-                            throw new Error(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     create(){
 PreLogUtil.put(commonStrings!.START, this, "create");
@@ -1249,7 +1251,7 @@ this.getHighScoresFactoryInterface()!.fetchHighScores(gameInfo, this.highScoresH
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     start(){
 
@@ -1306,7 +1308,7 @@ this.overlayPaintable!.update();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 super.process();
@@ -1391,7 +1393,7 @@ this.threadFactoryUtil!.start(thread);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     startDemoGame(){
 DemoCanvasProgressUtil.showProgress(this);
@@ -1399,7 +1401,7 @@ DemoCanvasProgressUtil.showProgress(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     stopGameDemo(){
 
@@ -1465,7 +1467,7 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processGame(){
 this.gameRunnable!.run();
@@ -1620,7 +1622,7 @@ this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public run3(){
 this.loopTimeHelper!.setStartTimeTNT();
@@ -1685,7 +1687,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
 
     private readonly baseGameStatistics: BaseGameStatistics = GameStatisticsFactory.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public end(){
 

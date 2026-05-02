@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
 
     
@@ -61,7 +63,7 @@ export interface InitInfoInterface {
 
     setMainPath(value: AbPath)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isTestingValid(testing: string): boolean
 

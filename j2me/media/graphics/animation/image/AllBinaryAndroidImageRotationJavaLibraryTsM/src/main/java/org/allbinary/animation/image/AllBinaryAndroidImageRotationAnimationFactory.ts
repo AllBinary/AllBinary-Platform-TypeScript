@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -77,7 +79,7 @@ import { AllBinaryAdjustedAndroidImageRotationAnimation } from "./AllBinaryAdjus
 export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactory(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -93,7 +95,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactoryA(image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -110,7 +112,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactoryU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -130,7 +132,7 @@ androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.get
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactoryDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -188,7 +190,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCanvasImage(): Image{
 
@@ -221,7 +223,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

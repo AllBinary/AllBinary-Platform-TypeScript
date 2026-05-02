@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { FeatureResourceAnimationInterfaceFactoryInterface } from "../../../org/allbinary/animation/resource/FeatureResourceAnimationInterfaceFactoryInterface.js";
 
     
@@ -98,7 +100,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRectangle(resource: string): Rectangle{
 var resource = resource
@@ -111,7 +113,7 @@ var resource = resource
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRectangleXY(resource: string, x: number, y: number): Rectangle{
     //var resource = resource
@@ -174,13 +176,13 @@ index < size; index++)
 
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("No rectangle available for current feature selection or Resource: ")!.append(resource)!.toString());
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getProcedural(resource: string): ProceduralAnimationInterfaceFactoryInterface{
 var resource = resource
@@ -193,7 +195,7 @@ var resource = resource
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(resource: string): AnimationInterfaceFactoryInterface{
 var resource = resource
@@ -206,7 +208,7 @@ var resource = resource
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
@@ -358,7 +360,7 @@ stringBuffer!.append(RESOURCES_LABEL);
 
 
 
-                            throw new Error(stringBuffer!.toString());
+                            throw new Exception(stringBuffer!.toString());
                     
 
                                     }
@@ -393,7 +395,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
 
 
 
-                            throw new Error(stringBuffer!.append("No feature resource type available for Resource: ")!.append(resource)!.append(" Resource Factories Available: ")!.append(result)!.toString());
+                            throw new Exception(stringBuffer!.append("No feature resource type available for Resource: ")!.append(resource)!.append(" Resource Factories Available: ")!.append(result)!.toString());
                     
 
                         }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../../java/lang/System.js";
         
             import { Thread } from "../../../../../../java/lang/Thread.js";
@@ -144,7 +146,7 @@ this.fileBasicArrayList= new BasicArrayListD();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -170,7 +172,7 @@ this.running= running;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     updateModules(){
 this.logUtil!.putF(this.commonStrings!.START, this, "updateModules");
@@ -213,7 +215,7 @@ bundle= this.install(list.get(index) as URL);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getAllJarSymbolicNameHashMap(): HashMap<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap");
@@ -339,7 +341,7 @@ this.logUtil!.putF("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstalledJarSymbolicNameBasicArrayList(): BasicArrayList{
 this.logUtil!.putF(this.commonStrings!.START, this, "getInstalledJarSymbolicNameBasicArrayList");
@@ -392,7 +394,7 @@ vector.add(bundle.getSymbolicName());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isInstalled(symbolicName: string): boolean{
 var symbolicName = symbolicName
@@ -444,7 +446,7 @@ nextSymbolicName= list.get(index) as string;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     findNewModules(): BasicArrayList{
 this.logUtil!.putF(this.commonStrings!.START, this, "findNewModules");
@@ -504,7 +506,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     install(url: URL): Bundle{
 var url = url

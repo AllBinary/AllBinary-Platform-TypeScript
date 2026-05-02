@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
 
     
@@ -119,7 +121,7 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
 
-                            throw new Error(error);
+                            throw new Exception(error);
                     
 
                                     }
@@ -141,7 +143,7 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
 
-                            throw new Error(error);
+                            throw new Exception(error);
                     
 
                                     }

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../../java/util/Vector.js";
 
     
@@ -92,7 +94,7 @@ export class EmailEventHandlerUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getUserEmailEventListenerVector(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): Vector{
     //var abeClientInformation = abeClientInformation
@@ -136,7 +138,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getEventHandler(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userVector: Vector): UserEmailEventHandler{
     //var abeClientInformation = abeClientInformation

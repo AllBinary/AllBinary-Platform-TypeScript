@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { JspTagException } from "../../../javax/servlet/jsp/JspTagException.js";
 
     

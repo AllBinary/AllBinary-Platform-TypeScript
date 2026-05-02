@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { BasicArrayListResetablePool } from "../../../../org/allbinary/logic/util/cache/BasicArrayListResetablePool.js";
 
     
@@ -80,7 +82,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key

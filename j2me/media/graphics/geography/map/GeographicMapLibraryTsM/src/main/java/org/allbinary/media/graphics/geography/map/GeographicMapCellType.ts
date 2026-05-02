@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";

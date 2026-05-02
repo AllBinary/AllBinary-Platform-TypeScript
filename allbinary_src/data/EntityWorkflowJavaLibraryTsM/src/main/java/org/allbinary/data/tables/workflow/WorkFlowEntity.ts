@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../java/util/HashMap.js";
 
     
@@ -185,7 +187,7 @@ super.deleteWhere(keysAndValues);
 }
 
 
-                //@Throws(Error::class, LicensingException::class)
+                //@Throws(Exception::class, LicensingException::class)
             
     public get(name: string, storeName: string): WorkFlowInterface{
     //var name = name

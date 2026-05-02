@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GameTypeFactory } from "../../../../../org/allbinary/game/GameTypeFactory.js";
 
     
@@ -76,7 +78,7 @@ export class DemoGameBehavior
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 }
@@ -92,14 +94,14 @@ export class DemoGameBehavior
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateTouch(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateScreenButtonPaintable(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -108,7 +110,7 @@ allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setGameState(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -120,21 +122,21 @@ allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public updateEndGameProcessor(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public buildGame(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public run(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -147,7 +149,7 @@ this.logUtil!.putF(GameTypeFactory.getInstance()!.BOT.toString(), this, commonSt
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public setHighScore(abeClientInformation: AbeClientInformationInterface, allBinaryGameCanvas: AllBinaryGameCanvas, name: string, score: number, autoSubmit: boolean, isLast: boolean){
     //var abeClientInformation = abeClientInformation

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../java/lang/Long.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -120,7 +122,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(frame: number){
 var frame = frame
@@ -171,7 +173,7 @@ this.save(motionRectangles, frame);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(motionRectangles: MotionRectangles, frame: number){
 var motionRectangles = motionRectangles

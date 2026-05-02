@@ -8,6 +8,10 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+        
 import { GL } from "../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -71,13 +75,13 @@ var gl = gl
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(){
 }

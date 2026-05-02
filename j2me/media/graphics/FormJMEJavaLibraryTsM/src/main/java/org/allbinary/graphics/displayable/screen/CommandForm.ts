@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Stack } from "../../../../../java/util/Stack.js";
 
     
@@ -137,7 +139,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.CLOSE);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(){
 this.repaintProcessor!.process();

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -54,7 +56,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 export interface PathGeneratorInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList
 

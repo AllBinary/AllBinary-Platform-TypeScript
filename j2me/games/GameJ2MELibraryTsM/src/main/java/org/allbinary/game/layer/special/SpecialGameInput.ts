@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -56,43 +58,43 @@ export class SpecialGameInput
          implements SpecialGameInputInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public up(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public down(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public right(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public left(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public strafeLeft(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public strafeRight(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -100,7 +102,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -108,7 +110,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -116,7 +118,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -124,7 +126,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -132,7 +134,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager

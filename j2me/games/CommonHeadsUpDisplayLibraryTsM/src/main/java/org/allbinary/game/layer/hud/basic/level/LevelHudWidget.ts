@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -65,7 +67,7 @@ import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math
 export class LevelHudWidget extends BasicHud implements PaintableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createHud(maxlevel: number, location: number, direction: number): LevelHudWidget{
 var maxlevel = maxlevel

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../../java/lang/Thread.js";
         
 import { Hashtable } from "../../../../../java/util/Hashtable.js";
@@ -89,7 +91,7 @@ this.sleep= sleep;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processBetweenWorkers(){
 Thread.sleep(2000);
@@ -97,7 +99,7 @@ Thread.sleep(2000);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);

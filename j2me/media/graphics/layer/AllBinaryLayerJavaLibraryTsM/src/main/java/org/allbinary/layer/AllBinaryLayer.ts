@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
@@ -156,7 +158,7 @@ this.viewPosition!.setAllbinaryLayer(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
     //var layerManagerEvent = layerManagerEvent

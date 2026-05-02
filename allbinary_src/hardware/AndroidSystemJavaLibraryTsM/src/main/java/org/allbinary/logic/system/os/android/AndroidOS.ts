@@ -24,6 +24,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AndroidInfoFactory } from "../../../../../../org/allbinary/android/AndroidInfoFactory.js";
 
     

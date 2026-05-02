@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
 
     
@@ -73,7 +75,7 @@ export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFac
 
     private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(){
 pickedUpLayerInterfaceFactoryInterface= new LifePickedUpLayerInterfaceFactory();
@@ -111,7 +113,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface

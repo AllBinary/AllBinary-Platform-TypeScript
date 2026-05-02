@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -472,7 +474,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getSubStores(): BasicArrayList{
 

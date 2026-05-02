@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { OrderHistoryEntity } from "../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js";
 
     

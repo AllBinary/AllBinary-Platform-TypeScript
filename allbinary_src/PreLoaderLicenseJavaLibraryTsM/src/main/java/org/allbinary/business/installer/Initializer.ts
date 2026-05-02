@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../java/util/HashMap.js";
 
     
@@ -835,7 +837,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(){
 this.logUtil!.putF("Creating DB connection files", this, "set()");

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
 
     
@@ -82,7 +84,7 @@ export class CamelCaseUtil
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAsCamelCase(string: string, stringBuilder: StringMaker): string{
     //var string = string

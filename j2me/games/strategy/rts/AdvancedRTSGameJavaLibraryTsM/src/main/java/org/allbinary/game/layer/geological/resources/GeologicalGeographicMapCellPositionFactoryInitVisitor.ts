@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
 
     
@@ -56,7 +58,7 @@ export class GeologicalGeographicMapCellPositionFactoryInitVisitor
          implements GeographicMapCellPositionFactoryInitVisitorInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
 var tiledLayer = tiledLayer

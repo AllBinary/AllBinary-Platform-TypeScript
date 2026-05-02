@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -70,7 +72,7 @@ import { AdjustedSpriteIndexedAnimation } from "./AdjustedSpriteIndexedAnimation
 export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFactory {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactoryDX(image: Image, dx: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
@@ -91,7 +93,7 @@ oneRowSpriteIndexedAnimationFactory!.initW(dx);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactoryDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
@@ -113,7 +115,7 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactoryWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
@@ -129,7 +131,7 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
     //var image = image
@@ -179,7 +181,7 @@ this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitia
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

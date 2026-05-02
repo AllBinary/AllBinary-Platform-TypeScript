@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../java/util/HashMap.js";
@@ -804,7 +806,7 @@ stringBuffer!.append("<br/>");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isValid(fileName: string, size: number): Boolean{
 var fileName = fileName

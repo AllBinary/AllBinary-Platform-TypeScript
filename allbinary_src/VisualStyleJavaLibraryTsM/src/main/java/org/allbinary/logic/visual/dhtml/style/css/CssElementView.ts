@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -233,7 +235,7 @@ this.cssPropertyVector= CssPropertiesValidationFactory.getInstance(nodeList);
 
 
 
-                            throw new Error("CssElementView");
+                            throw new Exception("CssElementView");
                     
 }
 
@@ -270,7 +272,7 @@ hashMap!.put(this.DESCRIPTION, this.description);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

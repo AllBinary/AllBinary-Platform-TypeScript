@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -87,7 +89,7 @@ var portion = portion
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
     //var abeClientInformation = abeClientInformation
@@ -133,13 +135,13 @@ super.resourceInitialization(level);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initGame(){
 
 
 
-                            throw new Error(this.commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

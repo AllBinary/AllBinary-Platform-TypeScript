@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -44,11 +46,11 @@
 export interface ProductListingInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generateAll(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generateAll(storeName: string): string
 

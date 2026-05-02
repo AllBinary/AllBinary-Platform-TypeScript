@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../java/util/Vector.js";
 
     
@@ -80,7 +82,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getServicesObjectVector(bundleContext: Object, serviceReferences: ServiceReference[]): Vector{
     //var bundleContext = bundleContext
@@ -133,7 +135,7 @@ index < size; index++)
                                     
 
 
-                            throw new Error("No Service For Reference");
+                            throw new Exception("No Service For Reference");
                     
 
                                     }

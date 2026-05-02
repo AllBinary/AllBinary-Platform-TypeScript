@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../../../../../java/lang/Long.js";
         
 import { Calendar } from "../../../../../../../../../java/util/Calendar.js";
@@ -224,7 +226,7 @@ whereKeyValuePairs!.put(PaymentGatewayData.NAME.toString(), paymentGatewayInterf
                                     
 
 
-                            throw new Error("Don't update TimeCreated for update");
+                            throw new Exception("Don't update TimeCreated for update");
                     
 
                                     }

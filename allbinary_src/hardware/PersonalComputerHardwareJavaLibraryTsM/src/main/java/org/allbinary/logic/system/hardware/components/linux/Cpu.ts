@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { FileReader } from "../../../../../../../java/io/FileReader.js";
 
     
@@ -118,7 +120,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(filePath: string){
 var filePath = filePath
@@ -156,7 +158,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(lineNumberReader: LineNumberReader, filePath: string){
 var lineNumberReader = lineNumberReader

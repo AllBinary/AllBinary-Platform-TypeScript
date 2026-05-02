@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { awt } from "../../../../../../java/awt.js";
@@ -244,7 +246,7 @@ this.addPoint(pointTwoNode!.getChildNodes());
                                     
 
 
-                            throw new Error("Lines node does not contain a line");
+                            throw new Exception("Lines node does not contain a line");
                     
 
                                     }
@@ -252,7 +254,7 @@ this.addPoint(pointTwoNode!.getChildNodes());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(){
 this.treeNode= new DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +LinesGraphicItem.item);
@@ -268,7 +270,7 @@ this.fulcrumPoint= PointFactory.getInstance()!.createXY(0, 0);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public translate(x: number, y: number){
 var x = x
@@ -350,7 +352,7 @@ this.setRotate(this.theta +Math.toRadians(angle));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     addPoint(pointNodes: NodeList){
@@ -473,7 +475,7 @@ this.active= true;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicatePoints(list: BasicArrayList){
 var list = list
@@ -513,7 +515,7 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicate(): GraphicItemInterface{
 
@@ -640,7 +642,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDom(canvasDom: CanvasDom): Node{
 var canvasDom = canvasDom

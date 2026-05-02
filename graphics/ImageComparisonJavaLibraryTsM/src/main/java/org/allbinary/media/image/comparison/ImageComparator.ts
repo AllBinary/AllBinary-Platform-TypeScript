@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
             import { Long } from "../../../../../java/lang/Long.js";
@@ -91,7 +93,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(imageComparisonInfo: ImageComparisonResult, point: GPoint){
     //var imageComparisonInfo = imageComparisonInfo
@@ -174,7 +176,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
@@ -191,7 +193,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number, name: string): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
@@ -211,7 +213,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
                                     
 
 
-                            throw new Error("Input images must not be null.");
+                            throw new Exception("Input images must not be null.");
                     
 
                                     }

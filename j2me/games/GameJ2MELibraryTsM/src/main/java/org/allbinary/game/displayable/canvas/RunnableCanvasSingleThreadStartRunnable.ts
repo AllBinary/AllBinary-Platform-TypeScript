@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { RunnableCanvas } from "../../../../../org/allbinary/canvas/RunnableCanvas.js";
 
     
@@ -86,7 +88,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processLoopSleep(){
 this.runnableCanvas!.processLoopSleep();

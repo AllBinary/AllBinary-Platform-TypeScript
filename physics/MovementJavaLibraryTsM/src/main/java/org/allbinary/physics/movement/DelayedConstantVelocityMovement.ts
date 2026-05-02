@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
 
     
@@ -79,7 +81,7 @@ var otherAngle = otherAngle
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer

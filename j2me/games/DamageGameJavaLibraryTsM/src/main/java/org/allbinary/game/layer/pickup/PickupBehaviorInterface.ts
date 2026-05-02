@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -46,7 +48,7 @@ import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
 export interface PickupBehaviorInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     doPickup(pickupProcessorInterface: PickupProcessorInterface)
 

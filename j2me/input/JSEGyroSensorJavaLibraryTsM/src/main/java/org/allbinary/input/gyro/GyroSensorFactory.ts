@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 
 
 
@@ -50,7 +52,7 @@ export class GyroSensorFactory
 
     private allBinaryGyroSensor: AllBinaryOrientationSensor
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static init(){
 GyroSensorFactory.allBinaryGyroSensor= new NoGyroSensor();

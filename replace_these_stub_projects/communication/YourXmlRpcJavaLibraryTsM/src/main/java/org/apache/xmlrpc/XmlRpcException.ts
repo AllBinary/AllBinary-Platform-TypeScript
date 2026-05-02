@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -27,7 +29,7 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class XmlRpcException extends Error {
+export class XmlRpcException extends Exception {
         
 public constructor (code: number, message: string){
             super(message);

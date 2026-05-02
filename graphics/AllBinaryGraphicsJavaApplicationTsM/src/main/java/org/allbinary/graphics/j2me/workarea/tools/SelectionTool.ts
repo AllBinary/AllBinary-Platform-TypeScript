@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -185,7 +187,7 @@ var point = point
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public translate(x: number, y: number){
 var x = x
@@ -386,7 +388,7 @@ g.drawRect(xRect, yRect, width, height);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toDom(canvasDom: CanvasDom): Node{
 var canvasDom = canvasDom
@@ -522,7 +524,7 @@ var keyEvent = keyEvent
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public duplicate(): GraphicItemInterface{
 

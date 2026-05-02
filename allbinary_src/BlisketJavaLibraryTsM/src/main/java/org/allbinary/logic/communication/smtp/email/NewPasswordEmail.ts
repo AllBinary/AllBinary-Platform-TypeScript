@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { UserInterface } from "../../../../../../org/allbinary/business/user/UserInterface.js";
 
     
@@ -103,7 +105,7 @@ this.newPassword= newPassword;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 this.notifyStoreAdmin();
@@ -113,7 +115,7 @@ this.notifyUser();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     notifyStoreAdmin(){
 
@@ -167,7 +169,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     notifyUser(){
 

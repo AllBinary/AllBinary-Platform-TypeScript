@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { SoftwareInformation } from "../../../../org/allbinary/logic/system/SoftwareInformation.js";
 
     
@@ -48,7 +50,7 @@ import { SoftwareInformation } from "../../../../org/allbinary/logic/system/Soft
 export interface GameAdStateFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getInstanceForApp(softwareInformation: SoftwareInformation): GameAdStateBase
 

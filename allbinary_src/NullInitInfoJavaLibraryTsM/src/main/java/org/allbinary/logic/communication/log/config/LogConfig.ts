@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
 
     
@@ -215,7 +217,7 @@ this.fileName= value;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTypeVector(): BasicArrayList{
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -89,7 +91,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -102,7 +104,7 @@ var abFilePath = abFilePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -115,7 +117,7 @@ var abPath = abPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getExtension(filePath: string): string{
 var filePath = filePath
@@ -126,7 +128,7 @@ var filePath = filePath
                                     
 
 
-                            throw new Error("Could not be a file path since its less that 4 characters");
+                            throw new Exception("Could not be a file path since its less that 4 characters");
                     
 
                                     }
@@ -157,7 +159,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithoutExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -170,7 +172,7 @@ var abFilePath = abFilePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithoutExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -183,7 +185,7 @@ var abPath = abPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithoutExtension(filePath: string): string{
 var filePath = filePath
@@ -194,7 +196,7 @@ var filePath = filePath
                                     
 
 
-                            throw new Error("Could not be a file path since its less that 4 characters");
+                            throw new Exception("Could not be a file path since its less that 4 characters");
                     
 
                                     }
@@ -456,7 +458,7 @@ var categoryPath = categoryPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNameFromPath(categoryPath: string): AbPath{

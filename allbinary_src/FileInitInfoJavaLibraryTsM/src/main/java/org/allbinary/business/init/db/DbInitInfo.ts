@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { FREEBLISKET_PATH_GLOBALS } from "../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
 
     
@@ -163,7 +165,7 @@ this.initFileName= initFileName;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public write(){
 
@@ -266,7 +268,7 @@ this.hasRead= false;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     load(){
 

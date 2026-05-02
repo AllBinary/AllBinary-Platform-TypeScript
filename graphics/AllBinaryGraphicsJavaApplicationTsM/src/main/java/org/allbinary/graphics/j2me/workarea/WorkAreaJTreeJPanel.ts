@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { swing } from "../../../../../javax/swing.js";
 
     
@@ -233,7 +235,7 @@ var treePath = treePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public deselectAll(){
 
@@ -263,7 +265,7 @@ this.highlightedBasicArrayList!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public selectGraphicItem(node: DefaultMutableTreeNode){
 var node = node
@@ -274,7 +276,7 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public removeGraphicItem(node: DefaultMutableTreeNode){
 var node = node
@@ -283,7 +285,7 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public removeCanvas(node: DefaultMutableTreeNode){
 var node = node
@@ -292,7 +294,7 @@ MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEven
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(treePath: TreePath){
 var treePath = treePath
@@ -333,7 +335,7 @@ parent.remove(node);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     copy(){
 
@@ -351,7 +353,7 @@ this.repaint();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     copy(treePath: TreePath){
 var treePath = treePath
@@ -386,7 +388,7 @@ var treePath = treePath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public rotate(treePath: TreePath, angle: number){
 var treePath = treePath

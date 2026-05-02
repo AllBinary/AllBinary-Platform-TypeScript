@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -73,7 +75,7 @@ export class ModDomHelper
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createTextNode(document: Document, name: string, text: string): Node{
 var document = document
@@ -98,7 +100,7 @@ newValueNode!.appendChild(newValueTextNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createValueNode(document: Document, text: string): Node{
 var document = document
@@ -112,7 +114,7 @@ var text = text
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameNode(document: Document, text: string): Node{
 var document = document
@@ -126,7 +128,7 @@ var text = text
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createIndexNode(document: Document, index: number): Node{
 var document = document
@@ -141,7 +143,7 @@ var index = index
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameValueNodes(document: Document, elementName: string, nameText: string, valueText: string): Node{
 var document = document
@@ -165,7 +167,7 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameValueNodes(document: Document, elementNameAndNameText: string, valueText: string): Node{
 var document = document
@@ -184,7 +186,7 @@ var valueText = valueText
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameValueIndexNodes(document: Document, elementNameAndNameText: string, index: number, valueText: string): Node{
 var document = document
@@ -206,7 +208,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 var document = document
@@ -225,7 +227,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 var document = document
@@ -309,7 +311,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                             
 
 
-                            throw new Error("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE));
+                            throw new Exception("HashMap value is the wrong instance and is: " +ClassUtil.viewAll(anyType, CommonSeps.getInstance()!.NEW_LINE));
                     
 
                         }
@@ -325,7 +327,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameValueNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 var document = document
@@ -369,7 +371,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, 
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNameValueIndexNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 var document = document
@@ -413,7 +415,7 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 var document = document
@@ -432,7 +434,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 var document = document

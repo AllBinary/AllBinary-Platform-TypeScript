@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -48,7 +50,7 @@ import { RaceTrackGeographicMap } from "./RaceTrackGeographicMap.js";
 export class CustomMapGeneratorFactory extends CustomMapGeneratorBaseFactory {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public create(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
     //var raceTrackGeographicMap = raceTrackGeographicMap

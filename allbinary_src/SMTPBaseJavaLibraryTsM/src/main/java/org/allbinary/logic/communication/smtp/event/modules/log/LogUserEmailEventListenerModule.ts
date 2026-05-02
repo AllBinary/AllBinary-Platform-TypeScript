@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
 
     
@@ -62,7 +64,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onEmailSendRequest(userEmailInfoEvent: EmailEvent){
 var userEmailInfoEvent = userEmailInfoEvent

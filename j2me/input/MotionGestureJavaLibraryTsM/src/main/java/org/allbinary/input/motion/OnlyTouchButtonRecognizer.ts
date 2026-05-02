@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { TouchButtonRecognizer } from "../../../../org/allbinary/input/motion/button/TouchButtonRecognizer.js";
 
     
@@ -59,7 +61,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -78,7 +80,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -110,7 +112,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x

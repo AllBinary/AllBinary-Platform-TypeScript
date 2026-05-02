@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
@@ -286,7 +288,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRole(): UserRole{
 
@@ -321,7 +323,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrder(): OrderInterface{
 
@@ -366,7 +368,7 @@ this.session.setAttribute(basketName, orderInterface);
                             
 
 
-                            throw new Error("Basket Name Not Found");
+                            throw new Exception("Basket Name Not Found");
                     
 
                         }

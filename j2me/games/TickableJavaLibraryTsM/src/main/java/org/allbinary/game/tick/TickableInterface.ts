@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
 
     
@@ -50,7 +52,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 export interface TickableInterface extends NamedInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processTick(allBinaryLayerManager: AllBinaryLayerManager)
 

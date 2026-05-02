@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Vector } from "../../../../../../java/util/Vector.js";
 
     
@@ -87,7 +89,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): string{
     //var abeClientInformation = abeClientInformation
@@ -151,7 +153,7 @@ this.generate(abeClientInformation, transformInfoInterface, allViewsToBeModified
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: Vector){
     //var abeClientInformation = abeClientInformation

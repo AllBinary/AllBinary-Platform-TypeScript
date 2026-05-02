@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -112,7 +114,7 @@ ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Destroy Events");
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initApp(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -161,7 +163,7 @@ CombatGameCanvas.basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processPlayingGame(){
 super.processPlayingGame();
@@ -182,7 +184,7 @@ CombatGameCanvas.basicLayerProcessor[index]!.process(this.gameLayerManager);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     cleanupGame(){
 super.cleanupGame();
@@ -211,7 +213,7 @@ this.cleanupManager();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     cleanupManager(){
 this.gameLayerManager!.cleanup();

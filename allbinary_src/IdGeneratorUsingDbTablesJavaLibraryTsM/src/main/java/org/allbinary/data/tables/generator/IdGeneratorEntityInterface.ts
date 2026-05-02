@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
             import { Long } from "../../../../../java/lang/Long.js";
         
 import { HashMap } from "../../../../../java/util/HashMap.js";
@@ -55,7 +57,7 @@ import { BasicDataTableInterface } from "../../../../../org/allbinary/data/table
 export interface IdGeneratorEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     get(name: string): number
 

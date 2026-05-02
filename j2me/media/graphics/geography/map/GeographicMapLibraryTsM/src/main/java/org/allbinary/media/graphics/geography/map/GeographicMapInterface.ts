@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../java/lang/Integer.js";
         
 import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
@@ -67,25 +69,25 @@ export interface GeographicMapInterface {
 
     getAllBinaryTiledLayer(): AllBinaryTiledLayer
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition
 
     getCellTypeFromMapCellTypeInt(cellTypeId: number): number
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCellTypeAtXY(x: number, y: number): GeographicMapCellType
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getCellTypeAt(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType
 

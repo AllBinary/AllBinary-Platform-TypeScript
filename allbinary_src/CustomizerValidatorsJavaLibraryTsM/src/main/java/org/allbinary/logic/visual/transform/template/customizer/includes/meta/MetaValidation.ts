@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -127,7 +129,7 @@ public constructor (document: Document){
 
 
 
-                            throw new Error(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
+                            throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
                     
 }
 
@@ -253,7 +255,7 @@ hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document

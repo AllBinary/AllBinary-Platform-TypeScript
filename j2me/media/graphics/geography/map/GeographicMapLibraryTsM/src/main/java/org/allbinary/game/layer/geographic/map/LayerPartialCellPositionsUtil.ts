@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -73,7 +75,7 @@ export class LayerPartialCellPositionsUtil
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, reusableList: BasicArrayList): BasicArrayList{
 var geographicMapInterface = geographicMapInterface
@@ -142,7 +144,7 @@ reusableList!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getAllDXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, dx: number, dy: number, reusableList: BasicArrayList): BasicArrayList{
 var geographicMapInterface = geographicMapInterface

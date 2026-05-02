@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -47,7 +49,7 @@ export class ClassLoaderUtil
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getName(anyType: any = {}): string{
 var anyType = anyType
@@ -73,7 +75,7 @@ var anyType = anyType
 
 
 
-                            throw new Error("Unable to get ClassLoader");
+                            throw new Exception("Unable to get ClassLoader");
                     
 }
 

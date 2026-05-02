@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -60,7 +62,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key

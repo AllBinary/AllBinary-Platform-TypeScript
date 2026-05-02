@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
 
     
@@ -74,7 +76,7 @@ this.EVENT_POOL.init(new TrackingEventFactory());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(layerInterface: AllBinaryLayer): TrackingEvent{

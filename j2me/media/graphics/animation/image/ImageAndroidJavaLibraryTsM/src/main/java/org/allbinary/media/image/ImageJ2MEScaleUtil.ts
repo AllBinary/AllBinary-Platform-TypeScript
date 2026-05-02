@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -70,7 +72,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public scaleArray(images: Image[], width: number, height: number): Image[]{
 var images = images
@@ -101,7 +103,7 @@ images[index]= ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheF
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public scale(image: Image, width: number, height: number): Image{
 var image = image

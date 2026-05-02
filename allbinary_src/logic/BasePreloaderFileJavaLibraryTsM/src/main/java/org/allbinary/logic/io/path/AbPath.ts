@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { FilePathData } from "../../../../../org/allbinary/logic/io/file/FilePathData.js";
 
     
@@ -213,7 +215,7 @@ this.hasSchema= false;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPath(aPath: string): string{
 var aPath = aPath
@@ -259,7 +261,7 @@ this.numberOfSeps++;
                                     
 
 
-                            throw new Error("Should Not Have More Than Two Seps");
+                            throw new Exception("Should Not Have More Than Two Seps");
                     
 
                                     }

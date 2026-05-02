@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { PaymentTransactionInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js";
 
     
@@ -91,7 +93,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(transformInfoInterface: TransformInfoInterface): PaymentProcessorInterface{
@@ -130,7 +132,7 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw new Error("Error Getting PaymentProcessorInterface");
+                            throw new Exception("Error Getting PaymentProcessorInterface");
                     
 
                 //: 

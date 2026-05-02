@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -79,7 +81,7 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
 
     geographicMapInterface: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -142,7 +144,7 @@ geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getAt(randomCo
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

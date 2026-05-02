@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
@@ -104,7 +106,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     private lastGameNotificationEvent: GameNotificationEvent = GameNotification.NULL_GAME_NOTIFICATION_EVENT;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent){
     //var gameNotificationEvent = gameNotificationEvent
@@ -132,7 +134,7 @@ var permanent = permanent
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(){
 }

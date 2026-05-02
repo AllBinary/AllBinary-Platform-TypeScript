@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
 
     
@@ -414,7 +416,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent
@@ -481,7 +483,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent

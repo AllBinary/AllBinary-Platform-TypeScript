@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
 
     
@@ -56,7 +58,7 @@ export interface GenericProfileDataWorkerTypeInterface {
 
     toString(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     toXmlNode(document: Document): Node
 

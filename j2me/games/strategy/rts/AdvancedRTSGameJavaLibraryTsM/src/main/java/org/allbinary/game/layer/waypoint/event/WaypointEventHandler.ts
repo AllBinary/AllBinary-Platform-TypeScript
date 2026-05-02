@@ -21,6 +21,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { RTSLayerEvent } from "../../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
 
     
@@ -61,7 +63,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject

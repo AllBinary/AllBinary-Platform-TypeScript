@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
             import { System } from "../../../../../../java/lang/System.js";
         
 import { BufferedReader } from "../../../../../../java/io/BufferedReader.js";
@@ -160,7 +162,7 @@ var var = var
                             
 
 
-                            throw new Error();
+                            throw new Exception();
                     
 
                         }
@@ -474,7 +476,7 @@ var val = val
                                     
 
 
-                            throw new Error();
+                            throw new Exception();
                     
 
                                     }
@@ -495,7 +497,7 @@ var val = val
                                     
 
 
-                            throw new Error();
+                            throw new Exception();
                     
 
                                     }
@@ -504,7 +506,7 @@ var val = val
                             
 
 
-                            throw new Error();
+                            throw new Exception();
                     
 
                         }

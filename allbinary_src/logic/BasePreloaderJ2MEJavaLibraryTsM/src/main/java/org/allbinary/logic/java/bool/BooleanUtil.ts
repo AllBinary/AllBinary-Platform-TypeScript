@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
 
     
@@ -67,7 +69,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFromString(booleanString: string): boolean{
     //var booleanString = booleanString
@@ -126,7 +128,7 @@ private constructor (){
                             
 
 
-                            throw new Error("Invalid booleanString - Must be true or false");
+                            throw new Exception("Invalid booleanString - Must be true or false");
                     
 
                         }
@@ -134,7 +136,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isStringBoolean(booleanString: string): boolean{
     //var booleanString = booleanString

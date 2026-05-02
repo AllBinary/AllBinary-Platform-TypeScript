@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { GL } from "../../../../../javax/microedition/khronos/opengles/GL.js";
 
     
@@ -174,7 +176,7 @@ this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeapon
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public initXYZ(x: number, y: number, z: number){
 var x = x
@@ -189,7 +191,7 @@ this.z= z;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(sourceLayerInterface: AllBinaryLayer, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface){
 var sourceLayerInterface = sourceLayerInterface
@@ -254,7 +256,7 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -586,7 +588,7 @@ this.weaponProperties= weaponProperties;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public set(gl: GL){
 var gl = gl

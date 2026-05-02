@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../../../java/awt.js";
 
     
@@ -79,7 +81,7 @@ public constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getScreenAsBufferedImages(): BufferedImage[]{
 this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages");

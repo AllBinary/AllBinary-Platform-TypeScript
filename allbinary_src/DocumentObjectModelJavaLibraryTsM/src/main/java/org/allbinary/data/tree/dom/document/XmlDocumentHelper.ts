@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { StringReader } from "../../../../../../java/io/StringReader.js";
 
     
@@ -161,7 +163,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public format(xmlString: string): string{
     //var xmlString = xmlString

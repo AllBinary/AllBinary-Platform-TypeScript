@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { GraphPath } from "../../../../../../../../org/jgrapht/GraphPath.js";
 
     
@@ -90,7 +92,7 @@ this.maxPathWeight= maxPathWeight;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public visit(graph: SimpleWeightedGraph, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -99,7 +101,7 @@ var endPathFindingNodeList = endPathFindingNodeList
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 var startPathFindingNodeList = startPathFindingNodeList

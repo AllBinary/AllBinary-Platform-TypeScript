@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
 
     
@@ -75,7 +77,7 @@ export class BasicCryptUtil
 
     private readonly XML_START: string = "<?xml";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getDecryptedInputStream(inputStream: InputStream, cryptInterface: CryptInterface): InputStream{
 var inputStream = inputStream

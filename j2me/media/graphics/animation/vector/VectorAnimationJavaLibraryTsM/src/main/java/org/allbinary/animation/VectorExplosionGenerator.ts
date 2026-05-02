@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -92,7 +94,7 @@ private constructor (){
         }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createList(list: BasicArrayList, howMuch: number, type: VectorExplosionType): BasicArrayList{
     //var list = list
@@ -135,7 +137,7 @@ points[index]![1]= point.getY();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{
     //var points = points
@@ -162,7 +164,7 @@ points[index]![1]= point.getY();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstanceStartFrame(points: number[][], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
     //var points = points
@@ -233,7 +235,7 @@ frameIndex++;
 
     private readonly randomRotationFactory: RandomRotationFactory = RandomRotationFactory.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createListFromPoints(tempBasicArrayList: BasicArrayList, points: number[][], howMuch: number, type: VectorExplosionType): BasicArrayList{
     //var tempBasicArrayList = tempBasicArrayList
@@ -335,7 +337,7 @@ index++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     createPointsBasicArrayList(points: number[][]): BasicArrayList{
     //var points = points
@@ -346,7 +348,7 @@ index++;
                                     
 
 
-                            throw new Error("Not Points Provided");
+                            throw new Exception("Not Points Provided");
                     
 
                                     }

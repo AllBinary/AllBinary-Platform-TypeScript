@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
 import { HashMap } from "../java/util/HashMap.js";
 
     
@@ -108,7 +110,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public view(): string{
 
@@ -154,7 +156,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlDoc(): Document{
 
@@ -162,7 +164,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
             
 
 
-                            throw new Error("Hmm: " +this.componentInterface!.getTransformDocumentInterface()!.getDoc());
+                            throw new Exception("Hmm: " +this.componentInterface!.getTransformDocumentInterface()!.getDoc());
                     
 
                 //: 
@@ -209,7 +211,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 

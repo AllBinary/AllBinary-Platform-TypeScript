@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { MimeMessage } from "../../../../../javax/mail/internet/MimeMessage.js";
 
     
@@ -57,7 +59,7 @@ export interface EmailInterface extends DomNodeInterface, DomDocumentMappingInte
 
     getMimeMessage(): MimeMessage
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     log(): string
 

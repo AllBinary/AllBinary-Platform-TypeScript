@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { SWT } from "../../../../org/eclipse/swt/SWT.js";
 
     
@@ -147,7 +149,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -203,7 +205,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage2(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -259,7 +261,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage3(bufferedImageArray: org.eclipse.swt.graphics.Image[], width: number, height: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -296,7 +298,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImageArray[in
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage4(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -311,7 +313,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage5(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -327,7 +329,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createBufferedImage6(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage

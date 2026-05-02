@@ -1,4 +1,5 @@
-import { Closeable } from "./Closeable";
+import { Object } from "../../java/lang/Object.js";
+import type { Closeable } from "./Closeable.js";
 
 /*actual*/ export class OutputStream
             extends Object implements Closeable

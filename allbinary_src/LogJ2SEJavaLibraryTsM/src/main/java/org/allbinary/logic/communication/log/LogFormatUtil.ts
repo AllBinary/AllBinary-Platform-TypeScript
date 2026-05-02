@@ -22,6 +22,8 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
 import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
     
@@ -237,7 +239,7 @@ stringBuffer!.append(this.STACK_TRACE);
                         if(exception != this.nullUtil!.NULL_OBJECT)
                         
                                     {
-                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Error));
+                                    stringBuffer!.append(this.exceptionUtil!.getStackTrace(exception as Throwable));
     
 
                                     }

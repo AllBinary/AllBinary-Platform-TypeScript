@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../java/lang/Exception.js";
+        
             import { Integer } from "../java/lang/Integer.js";
         
 import { HashMap } from "../java/util/HashMap.js";
@@ -94,7 +96,7 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(): number{
 

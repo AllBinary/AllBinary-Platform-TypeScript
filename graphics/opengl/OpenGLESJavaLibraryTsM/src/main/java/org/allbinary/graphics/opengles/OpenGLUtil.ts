@@ -8,6 +8,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
@@ -178,7 +180,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE
 
     private surfaceCreatedAndInitialized: boolean = false;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public onSurfaceChanged(gl: GL10, graphics: OpenGLESGraphics){
     //var gl = gl
@@ -329,7 +331,7 @@ this.runnableList!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     set(gl: GL10){
 var gl = gl

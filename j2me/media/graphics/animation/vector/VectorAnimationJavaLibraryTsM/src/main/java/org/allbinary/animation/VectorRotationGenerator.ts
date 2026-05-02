@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { PointFactory } from "../../../org/allbinary/graphics/PointFactory.js";
 
     
@@ -199,7 +201,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getListAtAngle(width: number, height: number, pointBasicArrayList: BasicArrayList, angle: Angle): BasicArrayList{
     //var width = width

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js";
 
     
@@ -98,7 +100,7 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(imageCache: ImageCache, level: number, loadingString: string){
     //var imageCache = imageCache
@@ -146,7 +148,7 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initAll(imageCache: ImageCache, loadingString: string){
     //var imageCache = imageCache
@@ -187,7 +189,7 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface, imageCache: ImageCache, level: number, loadingString: string){
     //var layerPlacementInterfaceBasicArrayListFactoryInterface = layerPlacementInterfaceBasicArrayListFactoryInterface

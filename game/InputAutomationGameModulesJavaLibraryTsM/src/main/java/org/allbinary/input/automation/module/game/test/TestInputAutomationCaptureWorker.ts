@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../java/util/HashMap.js";
 
     
@@ -111,7 +113,7 @@ this.setGenericProfileActions(genericProfileActions);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processDataWorkerResults(){
 
@@ -185,7 +187,7 @@ cacheInterface!.get(anyType);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.PROCESS);

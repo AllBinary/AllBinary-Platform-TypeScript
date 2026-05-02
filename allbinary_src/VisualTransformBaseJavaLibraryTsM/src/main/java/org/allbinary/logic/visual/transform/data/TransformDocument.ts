@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
 
     
@@ -139,7 +141,7 @@ this.document.appendChild(this.baseNode);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public log(): string{
 

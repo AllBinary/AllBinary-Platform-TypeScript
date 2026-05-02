@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { FileFilter } from "../../../../../../java/io/FileFilter.js";
 
     
@@ -98,7 +100,7 @@ var directoryAbPath = directoryAbPath
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public remove(existingDirectoryAbPath: AbPath){
 var existingDirectoryAbPath = existingDirectoryAbPath
@@ -160,7 +162,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     remove(existingDirectory: string){
 var existingDirectory = existingDirectory
@@ -179,7 +181,7 @@ var existingDirectory = existingDirectory
                                     
 
 
-                            throw new Error("Did not remove category: " +existingDirectory +" because files exist");
+                            throw new Exception("Did not remove category: " +existingDirectory +" because files exist");
                     
 
                                     }
@@ -200,7 +202,7 @@ var existingDirectory = existingDirectory
                             
 
 
-                            throw new Error("Category Directory Is Missing:" +existingDirectory);
+                            throw new Exception("Category Directory Is Missing:" +existingDirectory);
                     
 
                         }

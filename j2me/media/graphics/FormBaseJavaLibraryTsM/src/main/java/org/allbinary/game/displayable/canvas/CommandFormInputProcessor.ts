@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
 
     
@@ -142,7 +144,7 @@ this.form= form;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(key: number): number{
     //var key = key
@@ -250,7 +252,7 @@ this.logUtil!.putF(command.toString(), this, PROCESS_COMMAND);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInputList(): number{
 
@@ -348,7 +350,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processMotionInputs(): number{
 
@@ -379,7 +381,7 @@ motionGestureEventList!.clear();
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent

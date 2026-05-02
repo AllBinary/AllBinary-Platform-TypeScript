@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { MediaPlayer } from "../../../../android/media/MediaPlayer.js";
@@ -68,7 +70,7 @@ export class MediaPlayerUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public wait(mediaPlayer: MediaPlayer){
 var mediaPlayer = mediaPlayer

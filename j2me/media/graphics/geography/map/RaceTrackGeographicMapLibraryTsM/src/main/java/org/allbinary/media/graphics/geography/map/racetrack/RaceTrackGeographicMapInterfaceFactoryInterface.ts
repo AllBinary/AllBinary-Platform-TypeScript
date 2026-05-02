@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
             import { Integer } from "../../../../../../../java/lang/Integer.js";
         
 
@@ -47,11 +49,11 @@
 export interface RaceTrackGeographicMapInterfaceFactoryInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getLevelInstance(id: number): RaceTrackGeographicMap
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getTrackInstance(id: number): RaceTrackGeographicMap
 

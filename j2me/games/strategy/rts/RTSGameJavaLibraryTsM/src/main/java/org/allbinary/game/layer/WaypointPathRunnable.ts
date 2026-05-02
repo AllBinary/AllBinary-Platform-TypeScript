@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../java/lang/Thread.js";
         
 import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -86,7 +88,7 @@ public constructor (){
                                     
 
 
-                            throw new Error("Should never be running here");
+                            throw new Exception("Should never be running here");
                     
 
                                     }

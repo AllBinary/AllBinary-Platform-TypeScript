@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { awt } from "../../../../java/awt.js";
 
     
@@ -163,7 +165,7 @@ ratio += (bufferedImageArray[index]!.getWidth(); /bufferedImageArray[index]!.get
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fudge(bufferedImage: BufferedImage, ratio: number): BufferedImage{
 var bufferedImage = bufferedImage
@@ -295,7 +297,7 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public fudge(bufferedImageArray: BufferedImage[], totalImages: number, ratio: number): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray

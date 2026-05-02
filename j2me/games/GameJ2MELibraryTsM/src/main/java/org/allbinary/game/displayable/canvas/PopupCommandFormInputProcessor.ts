@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { MyCanvas } from "../../../../../org/allbinary/graphics/displayable/MyCanvas.js";
 
     
@@ -74,7 +76,7 @@ var popupMenuInputProcessor = popupMenuInputProcessor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processInput(key: number): number{
 var key = key
@@ -87,7 +89,7 @@ var key = key
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
 var motionGestureEvent = motionGestureEvent

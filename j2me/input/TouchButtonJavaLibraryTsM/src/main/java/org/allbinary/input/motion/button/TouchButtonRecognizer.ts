@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { DownGameKeyEventHandler } from "../../../../../org/allbinary/game/input/event/DownGameKeyEventHandler.js";
 
     
@@ -106,7 +108,7 @@ this.touchButtonRecognizer= touchButtonRecognizer;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public release(touchButtonInput: TouchButtonInput, deviceId: number){
 var touchButtonInput = touchButtonInput
@@ -153,7 +155,7 @@ public constructor (touchButtonRecognizer: TouchButtonRecognizer){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public release(touchButtonInput: TouchButtonInput, deviceId: number){
 var touchButtonInput = touchButtonInput
@@ -221,7 +223,7 @@ public constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     processRelease(touchButtonInput: TouchButtonInput, deviceId: number){
 var touchButtonInput = touchButtonInput
@@ -241,7 +243,7 @@ this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public releaseTouchButtonInput(x: number, y: number, deviceId: number): boolean{
@@ -331,7 +333,7 @@ this.processRelease(touchButtonInput, deviceId);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pressTouchButtonInput(x: number, y: number, deviceId: number): boolean{

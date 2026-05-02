@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
             import { Integer } from "../../java/lang/Integer.js";
         
 import { Method } from "../../java/lang/reflect/Method.js";
@@ -117,7 +119,7 @@ this.enabled= enabled;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isEnabled(): boolean{
 

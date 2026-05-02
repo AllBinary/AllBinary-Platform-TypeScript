@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { Transformer } from "../../../../../../javax/xml/transform/Transformer.js";
 
     
@@ -77,7 +79,7 @@ export class DomDocumentFileHelper
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createDocument(xmlFile: AbFile): Document{
 var xmlFile = xmlFile
@@ -103,7 +105,7 @@ var xmlFile = xmlFile
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static save(file: AbFile, document: Document){
 var file = file

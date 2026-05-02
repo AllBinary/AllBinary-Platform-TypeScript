@@ -22,6 +22,8 @@
 
 
         
+            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+        
 import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
 
     

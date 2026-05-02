@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Method } from "../../../../java/lang/reflect/Method.js";
 
     
@@ -189,7 +191,7 @@ pageContext!.getOut()!.print(this.setOrderStatus());
                             
 
 
-                            throw new Error("No Such View Command: " +this.getCommand());
+                            throw new Exception("No Such View Command: " +this.getCommand());
                     
 
                         }
@@ -206,7 +208,7 @@ pageContext!.getOut()!.print(this.setOrderStatus());
 
 
 
-                            throw new Error("Command Null");
+                            throw new Exception("Command Null");
                     
 
                 //: 

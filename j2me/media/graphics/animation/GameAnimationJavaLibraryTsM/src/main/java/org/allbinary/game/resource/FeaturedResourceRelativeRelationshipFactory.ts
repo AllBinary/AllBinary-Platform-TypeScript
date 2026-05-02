@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
 
     
@@ -89,7 +91,7 @@ private constructor (){
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getRelativeRelationshipList(resource: string, layer: AllBinaryLayer): BasicArrayList{
 var resource = resource
@@ -143,13 +145,13 @@ index < size; index++)
 
 
 
-                            throw new Error(new StringMaker().
+                            throw new Exception(new StringMaker().
                             append("Not available for current feature selection or Resource: ")!.append(resource)!.toString());
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     duplicate(list: BasicArrayList, layer: AllBinaryLayer): BasicArrayList{
     //var list = list

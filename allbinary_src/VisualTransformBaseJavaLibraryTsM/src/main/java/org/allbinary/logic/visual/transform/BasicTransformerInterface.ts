@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { InputStream } from "../../../../../java/io/InputStream.js";
 
     
@@ -66,7 +68,7 @@ export interface BasicTransformerInterface extends CompositeTransformInfoInterfa
 
     getURIResolver(): URIResolver
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     translate(xmlDocumentStr: string): string
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
 
     
@@ -62,7 +64,7 @@ import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/acce
 export class AccelerometerSensorUpdateProcessor extends Processor {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 
@@ -100,7 +102,7 @@ export class AccelerometerSensorUpdateProcessor extends Processor {
                             
 
 
-                            throw new Error("Sensor Feature Not Set");
+                            throw new Exception("Sensor Feature Not Set");
                     
 
                         }

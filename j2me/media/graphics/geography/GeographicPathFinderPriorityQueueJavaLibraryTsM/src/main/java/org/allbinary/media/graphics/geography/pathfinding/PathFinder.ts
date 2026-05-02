@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+        
 import { HashSet } from "../../../../../../java/util/HashSet.js";
 
     
@@ -108,7 +112,7 @@ export class PathFinder extends GeographicPathFinderBase {
 
     private costArray: PathFindingNodeCost[][] = PathFindingNodeCost.NULL_PATH_FINDING_NODE_COST_ARRAY_ARRAY;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -207,7 +211,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchTotalPathN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList
@@ -254,7 +258,7 @@ var totalPaths = totalPaths
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public search(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode): BasicArrayList{
     //var startPathFindingNode = startPathFindingNode
@@ -278,7 +282,7 @@ pathList!.add(list);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchStart(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode, multipassState: MultipassState){
     //var startPathFindingNode = startPathFindingNode
@@ -289,7 +293,7 @@ this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindi
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchN(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode, multipassState: MultipassState): BasicArrayList{
     //var startPathFindingNode = startPathFindingNode
@@ -333,7 +337,7 @@ multipassState!.step= 0;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public findPath(start: GeographicMapCellPosition, target: GeographicMapCellPosition): BasicArrayList{
     //var start = start
@@ -537,7 +541,7 @@ neighbor.parent= current;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public findPathStart(start: GeographicMapCellPosition, target: GeographicMapCellPosition, multipassState: MultipassState){
     //var start = start
@@ -612,7 +616,7 @@ multipassState!.step++;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public findPathEnd(start: GeographicMapCellPosition, target: GeographicMapCellPosition, multipassState: MultipassState): BasicArrayList{
     //var start = start

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { CategoryHierarchyInterface } from "../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js";
 
     
@@ -60,23 +62,23 @@ export interface CategoryPropertiesInterface extends TableMappingInterface, Vali
 
     getValue(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getWebAppPath(): AbPath
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getFileName(): string
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isRoot(): boolean
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     isRealRoot(): boolean
 

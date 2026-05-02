@@ -8,8 +8,7 @@
 
 
         
-
-//import { IOException } from "../../../java/io/IOException.js";
+import { IOException } from "../../../java/io/IOException.js";
 
     
 import { MalformedURLException } from "../../../java/net/MalformedURLException.js";

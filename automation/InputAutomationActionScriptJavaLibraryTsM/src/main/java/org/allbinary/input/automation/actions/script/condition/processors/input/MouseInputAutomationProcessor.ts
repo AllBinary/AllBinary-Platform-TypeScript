@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../../../../../../../java/lang/Thread.js";
         
 import { InputRobotInterface } from "../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
@@ -61,7 +63,7 @@ export class MouseInputAutomationProcessor
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static process(mouseActionScriptInputInterface: MouseActionScriptInputInterface){
 var mouseActionScriptInputInterface = mouseActionScriptInputInterface

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 
 
 
@@ -58,13 +60,13 @@ export class Processor
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processt(timeDelta: number){
     //var timeDelta = timeDelta

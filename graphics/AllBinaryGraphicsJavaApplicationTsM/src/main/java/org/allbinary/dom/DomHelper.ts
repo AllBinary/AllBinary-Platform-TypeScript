@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { ByteArrayOutputStream } from "../../../java/io/ByteArrayOutputStream.js";
 
     
@@ -143,7 +145,7 @@ private constructor (){
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public createDocument(xmlFile: File): Document{
 var xmlFile = xmlFile
@@ -181,7 +183,7 @@ var xmlFile = xmlFile
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toString(document: Document): string{
 var document = document
@@ -229,7 +231,7 @@ copyTransformer!.transform(domSource, streamResult);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public save(file: File, document: Document){
 var file = file
@@ -270,7 +272,7 @@ copyTransformer!.transform(domSource, streamResult);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 var nodeName = nodeName
@@ -309,12 +311,12 @@ index < numberOfNodes; index++)
 
 
 
-                            throw new Error(nodeName +" Node Not Found");
+                            throw new Exception(nodeName +" Node Not Found");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getChildrenWithoutTextNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
 var nodeName = nodeName
@@ -363,7 +365,7 @@ index < numberOfChildren; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getWithoutTextNodes(nodeList: NodeList): BasicArrayList{
 var nodeList = nodeList
@@ -407,7 +409,7 @@ index < numberOfChildren; index++)
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchNodeList(nodeName: string, nodeList: NodeList): Node{
 var nodeName = nodeName
@@ -448,12 +450,12 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 
-                            throw new Error(nodeName +" Node Not Found in search");
+                            throw new Exception(nodeName +" Node Not Found in search");
                     
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public searchNodeList(nodeName: string, nodeList: BasicArrayList): Node{
 var nodeName = nodeName
@@ -494,7 +496,7 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 
 
 
-                            throw new Error(nodeName +" Node Not Found in search");
+                            throw new Exception(nodeName +" Node Not Found in search");
                     
 }
 

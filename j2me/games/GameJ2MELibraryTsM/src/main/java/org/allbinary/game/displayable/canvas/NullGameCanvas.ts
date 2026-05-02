@@ -22,6 +22,10 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
+            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+        
 import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -106,7 +110,7 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static createCanvas(gameLayerManager: AllBinaryGameLayerManager): NullGameCanvas{
     //var gameLayerManager = gameLayerManager
@@ -196,7 +200,7 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public buildGameInit(isProgress: boolean){
     //var isProgress = isProgress

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { AllBinarySensorListener } from "../../../../../org/allbinary/input/AllBinarySensorListener.js";
 
     
@@ -51,7 +53,7 @@ import { Orientation } from "../../../../../org/allbinary/logic/math/Orientation
 export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor implements AllBinarySensorListener {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getOrientation(): Orientation{
 

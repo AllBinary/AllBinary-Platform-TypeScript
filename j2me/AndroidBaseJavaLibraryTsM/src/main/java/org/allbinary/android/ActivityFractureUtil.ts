@@ -24,6 +24,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { Activity } from "../../../android/app/Activity.js";
 
     
@@ -54,7 +56,7 @@ export class ActivityFractureUtil
             static readonly PUBLIC: string = '%{public}s';
             
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(activity: Activity){
     //var activity = activity

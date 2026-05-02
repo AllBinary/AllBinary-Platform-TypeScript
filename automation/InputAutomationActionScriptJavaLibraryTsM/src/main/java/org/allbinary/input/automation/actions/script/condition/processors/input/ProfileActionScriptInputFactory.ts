@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { DomSearchHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
 
     
@@ -57,7 +59,7 @@ export class ProfileActionScriptInputFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(node: Node): ProfileActionScriptInputInterface{
 var node = node
@@ -93,7 +95,7 @@ var node = node
                             
 
 
-                            throw new Error("No Such ActionScript Input");
+                            throw new Exception("No Such ActionScript Input");
                     
 
                         }

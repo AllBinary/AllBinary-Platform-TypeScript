@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
     
@@ -75,7 +77,7 @@ export class ImageCompleteUtil
 
     readonly ISREADY: string = "isReady";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitFor(image: Image, name: string){
 var image = image
@@ -85,7 +87,7 @@ var name = name
 
     private readonly COMPLETE: string = "Image loading complete for: ";
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
     //var image = image
@@ -147,14 +149,14 @@ PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public handleTimeout(name: string){
     //var name = name
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public waitForAll(){
 }

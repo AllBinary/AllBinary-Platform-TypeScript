@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
 
     
@@ -135,7 +137,7 @@ this.update();
 
     private readonly geographicMapDirectionUtil: GeographicMapDirectionUtil = GeographicMapDirectionUtil.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 var currentGeographicMapCellPosition = currentGeographicMapCellPosition
@@ -179,7 +181,7 @@ this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosit
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processAI(myManager: AllBinaryLayerManager, currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 var myManager = myManager

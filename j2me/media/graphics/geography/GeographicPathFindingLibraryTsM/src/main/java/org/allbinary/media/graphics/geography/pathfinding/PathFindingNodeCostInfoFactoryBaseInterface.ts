@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
 
     
@@ -50,11 +52,11 @@ import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media
 export interface PathFindingNodeCostInfoFactoryBaseInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     create(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number
 

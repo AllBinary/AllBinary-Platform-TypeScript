@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { UserName } from "../../../org/allbinary/business/user/username/UserName.js";
 
     

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Stack } from "../../../../java/util/Stack.js";
 
     
@@ -275,7 +277,7 @@ this.setPaused(false);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     process(){
 this.displayInfoSingleton!.process();

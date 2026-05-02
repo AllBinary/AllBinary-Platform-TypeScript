@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
 
     
@@ -85,7 +87,7 @@ this.pointBasicArrayList= points;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public translate(x: number, y: number){
 var x = x
@@ -138,7 +140,7 @@ this.pointBasicArrayList= newBasicArrayList;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public rotateToAngle(angle: Angle){
 var angle = angle
@@ -149,7 +151,7 @@ this.rotate(Math.round(angle.getValue()));
 
     private readonly noDecimalTrigTable: NoDecimalTrigTable = NoDecimalTrigTable.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     rotate(angle: number){
 var angle = angle
@@ -237,7 +239,7 @@ this.pointBasicArrayList= newBasicArrayList;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public mirror(width: number){
 var width = width

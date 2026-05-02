@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../java/lang/Exception.js";
+        
 import { HashMap } from "../../java/util/HashMap.js";
 
     
@@ -92,7 +94,7 @@ this.hashMap= hashMap;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public send(){
 

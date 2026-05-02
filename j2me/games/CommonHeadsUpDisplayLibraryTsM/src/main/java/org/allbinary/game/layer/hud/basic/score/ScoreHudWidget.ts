@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../java/lang/Exception.js";
+        
 import { NumberStringHud } from "../../../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js";
 
     
@@ -56,7 +58,7 @@ import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.
 export class ScoreHudWidget extends NumberStringHud {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(maxscore: number, location: number, direction: number): ScoreHudWidget{
     //var maxscore = maxscore

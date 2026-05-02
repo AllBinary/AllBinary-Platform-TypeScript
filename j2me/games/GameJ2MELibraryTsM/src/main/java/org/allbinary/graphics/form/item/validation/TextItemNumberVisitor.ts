@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { TextNotificationUtil } from "../../../../../../org/allbinary/game/input/TextNotificationUtil.js";
 
     

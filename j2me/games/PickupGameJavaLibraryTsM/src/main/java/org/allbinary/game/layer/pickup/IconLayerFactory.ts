@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
 
     
@@ -50,7 +52,7 @@ export class IconLayerFactory
          {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public static getInstance(animationInterface: Animation, width: number, height: number): IconLayer{
 var animationInterface = animationInterface

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
             import { Runnable } from "../../../../java/lang/Runnable.js";
         
 
@@ -48,15 +50,15 @@ export interface SimpleProgressActivityInterface {
 
     runOnUiThread(action: Runnable)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onSetProgress(value: number, text: string)
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onDismissProgress(animationSequence: number[])
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     onShowProgress(indeterminate: boolean, animationSequence: number[])
 

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../java/util/HashMap.js";
 
     
@@ -196,7 +198,7 @@ var value = value
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var name = name
@@ -282,7 +284,7 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getObjectConfigs(storeName: string): Vector{
 var storeName = storeName
@@ -325,7 +327,7 @@ objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInter
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getNames(storeName: string): Vector{
 var storeName = storeName

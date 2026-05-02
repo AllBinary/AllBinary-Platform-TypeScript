@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../java/lang/Thread.js";
         
 import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
@@ -97,7 +99,7 @@ var thread = thread
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public join(thread: Thread){
 var thread = thread

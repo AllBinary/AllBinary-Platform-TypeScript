@@ -22,6 +22,10 @@
 
 
         
+            import { Throwable } from "../../../../../java/lang/Throwable.js";
+        
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 
 
 
@@ -58,7 +62,7 @@
 }
 
 
-    /*actual*/ public static readonly PRETEND_EXCEPTION: Error = new Error("Not Really An Exception");
+    /*actual*/ public static readonly PRETEND_EXCEPTION: Exception = new Exception("Not Really An Exception");
 private constructor (){
 
             super();
@@ -67,7 +71,7 @@ private constructor (){
 
     private readonly NONE: string = "No Stack Trace";
 
-    /*actual*/ public getStackTrace(e: Error): string{
+    /*actual*/ public getStackTrace(e: Throwable): string{
 var e = e
 e.printStackTrace();
     

@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
     
@@ -78,7 +80,7 @@ this.init(dx, dy);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public init(dx: number, dy: number){
     //var dx = dx

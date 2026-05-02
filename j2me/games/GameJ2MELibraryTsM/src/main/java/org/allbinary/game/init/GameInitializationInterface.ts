@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../java/lang/Exception.js";
+        
 import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
 
     
@@ -50,7 +52,7 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 export interface GameInitializationInterface {
         
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number)
 

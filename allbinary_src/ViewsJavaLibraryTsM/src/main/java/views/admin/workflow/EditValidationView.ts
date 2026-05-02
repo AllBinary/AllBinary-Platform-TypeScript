@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
 import { WorkFlowEntityFactory } from "../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js";
 
     

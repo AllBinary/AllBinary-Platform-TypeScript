@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../java/lang/Exception.js";
+        
             import { Thread } from "../../../java/lang/Thread.js";
         
 import { BundleActivator } from "../../../org/osgi/framework/BundleActivator.js";
@@ -103,7 +105,7 @@ export class InputAutomationBundleActivator
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public start(bundleContext: BundleContext){
     //var bundleContext = bundleContext
@@ -135,7 +137,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public registerAsService(){
 OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener::class.toString()!);
@@ -145,7 +147,7 @@ OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServ
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public useServices(){
 new InputAutomationRobotServiceConsumer(this.getBundleContext()).
@@ -157,7 +159,7 @@ new InputAutomationModuleServiceConsumer(this.getBundleContext()).
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public stop(context: BundleContext){
     //var context = context

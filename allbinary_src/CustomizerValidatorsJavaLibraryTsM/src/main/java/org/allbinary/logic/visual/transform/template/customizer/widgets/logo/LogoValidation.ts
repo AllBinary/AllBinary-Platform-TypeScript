@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
 
     
@@ -138,7 +140,7 @@ this.getFormData(hashMap);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -430,7 +432,7 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -447,7 +449,7 @@ var document = document
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public processLogoFile(){
 

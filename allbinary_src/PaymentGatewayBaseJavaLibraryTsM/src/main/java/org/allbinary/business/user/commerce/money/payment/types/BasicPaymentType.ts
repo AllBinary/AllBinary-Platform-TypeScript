@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+        
 import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
     
@@ -150,7 +152,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPaymentGatewayInterfaceFactoryInterface(): PaymentGatewayInterfaceFactoryInterface{
 
@@ -162,7 +164,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentGatewayInterfaceFactoryInterface is Null");
+                            throw new Exception("PaymentGatewayInterfaceFactoryInterface is Null");
                     
 
                                     }
@@ -176,7 +178,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getPaymentGatewayDomNodeFactoryInterface(): PaymentGatewayDomNodeFactoryInterface{
 
@@ -188,7 +190,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
                                     
 
 
-                            throw new Error("PaymentGatewayDomNodeFactoryInterface is Null");
+                            throw new Exception("PaymentGatewayDomNodeFactoryInterface is Null");
                     
 
                                     }

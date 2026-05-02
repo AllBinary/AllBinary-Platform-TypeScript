@@ -1,5 +1,5 @@
-import { Integer } from '../lang/Integer';
-//import Prando from 'prando';
+import { Integer } from "../lang/Integer.js";
+//import Prando from "prando";
 
 export class Random {
     //private rng: Prando;

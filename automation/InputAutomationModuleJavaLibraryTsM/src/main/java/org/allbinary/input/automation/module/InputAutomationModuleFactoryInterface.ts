@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { HelpSet } from "../../../../../javax/help/HelpSet.js";
 
     
@@ -86,7 +88,7 @@ export class InputAutomationModuleFactoryInterface
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public getInstance(): RunnableInterface{
 

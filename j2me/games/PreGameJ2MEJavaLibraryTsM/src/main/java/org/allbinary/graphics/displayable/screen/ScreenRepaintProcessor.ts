@@ -22,6 +22,8 @@
 
 
         
+            import { Exception } from "../../../../../java/lang/Exception.js";
+        
 import { Displayable } from "../../../../../javax/microedition/lcdui/Displayable.js";
 
     
@@ -61,7 +63,7 @@ this.displayable= displayable;
 }
 
 
-                //@Throws(Error::class)
+                //@Throws(Exception::class)
             
     public process(){
 ScreenRepaintUtil.repaint(this.displayable);
