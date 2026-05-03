@@ -50,11 +50,11 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 export interface LayerManagerEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent)
 

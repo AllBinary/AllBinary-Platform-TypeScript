@@ -83,7 +83,7 @@ import { NullAnimationFactory } from "./NullAnimationFactory.js";
 export class FeaturedAnimationInterfaceFactoryInterfaceFactory extends FeaturedResourceFactory {
         
 
-    private INSTANCE: FeaturedAnimationInterfaceFactoryInterfaceFactory = new FeaturedAnimationInterfaceFactoryInterfaceFactory();
+    private static INSTANCE: FeaturedAnimationInterfaceFactoryInterfaceFactory = new FeaturedAnimationInterfaceFactoryInterfaceFactory();
 
     public static getInstance(): FeaturedAnimationInterfaceFactoryInterfaceFactory{
 
@@ -100,7 +100,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRectangle(resource: string): Rectangle{
 var resource = resource
@@ -113,7 +113,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRectangleXY(resource: string, x: number, y: number): Rectangle{
     //var resource = resource
@@ -182,7 +182,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getProcedural(resource: string): ProceduralAnimationInterfaceFactoryInterface{
 var resource = resource
@@ -195,7 +195,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(resource: string): AnimationInterfaceFactoryInterface{
 var resource = resource
@@ -208,7 +208,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource

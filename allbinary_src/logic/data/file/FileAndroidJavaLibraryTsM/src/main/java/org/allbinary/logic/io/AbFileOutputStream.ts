@@ -107,7 +107,7 @@ this.fileOutputStream!.close();
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(buffer: number[]){
 var buffer = buffer
@@ -116,7 +116,7 @@ this.fileOutputStream!.write(buffer);
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(buffer: number[], offset: number, count: number){
 var buffer = buffer
@@ -127,7 +127,7 @@ this.fileOutputStream!.write(buffer, offset, count);
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(b: number){
 var b = b

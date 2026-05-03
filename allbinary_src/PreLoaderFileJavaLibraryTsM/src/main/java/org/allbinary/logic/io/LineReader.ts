@@ -158,7 +158,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "hasNext", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public next(): string{
 

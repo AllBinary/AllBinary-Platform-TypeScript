@@ -68,7 +68,7 @@ this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType,
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking
@@ -79,7 +79,7 @@ this.geographicMapCellPositionEventHandler!.fireEvent(this.geographicMapCellPosi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
 var geographicMapCellPositionTracking = geographicMapCellPositionTracking

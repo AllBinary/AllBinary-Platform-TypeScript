@@ -116,7 +116,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getString(): string{
 
@@ -176,7 +176,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStringForFeature(graphicsFeature: GraphicsFeature): string{
     //var graphicsFeature = graphicsFeature

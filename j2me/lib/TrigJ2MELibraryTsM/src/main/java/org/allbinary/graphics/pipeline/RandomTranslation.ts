@@ -55,7 +55,7 @@ export class RandomTranslation
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
 var vector = vector

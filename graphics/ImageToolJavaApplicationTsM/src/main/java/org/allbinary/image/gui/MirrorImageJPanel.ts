@@ -119,7 +119,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -211,7 +211,7 @@ jLayeredPane1= new javax.swing.JLayeredPane();
     
 this.buttonGroup= new javax.swing.ButtonGroup();
     
-this.jPanel1= new javax.swing.JPanel()
+this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
@@ -273,7 +273,7 @@ this.verticleJCheckBox!.setEnabled(false);
     
 this.generateJButton!.setText("Generate");
     
-this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -287,7 +287,7 @@ generateJButtonActionPerformed(evt);
     
 this.renameJRadioButton!.setText("Save As filename_mirror");
     
-this.renameJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.renameJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

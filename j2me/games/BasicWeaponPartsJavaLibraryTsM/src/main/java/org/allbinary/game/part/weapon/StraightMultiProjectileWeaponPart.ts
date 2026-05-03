@@ -114,7 +114,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 
     private readonly noDecimalTrigTable: NoDecimalTrigTable = NoDecimalTrigTable.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager

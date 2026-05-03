@@ -94,7 +94,7 @@ this.hashMap= hashMap;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public send(){
 

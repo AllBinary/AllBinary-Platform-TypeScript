@@ -54,9 +54,14 @@ export class BasicPaymentTypeUtil
 
     private static readonly instance: BasicPaymentTypeUtil = new BasicPaymentTypeUtil();
 
-                init{
-}
+                private static initResult: number = BasicPaymentTypeUtil.init();
+                private static init(): number { 
+                    
 
+
+                    return 0;
+                }
+            
     public static getInstance(): BasicPaymentTypeUtil{
 
 
@@ -81,7 +86,7 @@ this.paymentTypeVector!.add(paymentType);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(paymentTypeString: string): BasicPaymentType{
 var paymentTypeString = paymentTypeString

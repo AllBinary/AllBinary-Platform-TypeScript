@@ -77,7 +77,7 @@ public constructor (){
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     search(){
 
@@ -156,7 +156,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     viewSummary(){
 
@@ -235,7 +235,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

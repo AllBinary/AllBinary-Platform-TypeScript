@@ -66,7 +66,7 @@ export class TopViewCharacterBehavior
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellPosition: GeographicMapCellPosition){
     //var layer = layer

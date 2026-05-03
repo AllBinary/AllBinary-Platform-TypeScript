@@ -80,7 +80,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 export class CheatGameInputProcessor extends PlayerGameInput {
         
 
-    public inputProcessor: SpecialGameInputInterface = SpecialGameInputFactory.NO_SPECIAL_GAME_INPUT;
+    public static inputProcessor: SpecialGameInputInterface = SpecialGameInputFactory.NO_SPECIAL_GAME_INPUT;
 
     private readonly PROCESS_GAME: string = "processGame";
 

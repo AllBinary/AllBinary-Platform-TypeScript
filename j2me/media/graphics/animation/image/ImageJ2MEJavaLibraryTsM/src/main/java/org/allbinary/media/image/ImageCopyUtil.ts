@@ -101,7 +101,7 @@ private constructor (){
 
     private readonly NO_COPY: string = "J2ME does not need to copy images after initial loading";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -114,7 +114,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -164,7 +164,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage

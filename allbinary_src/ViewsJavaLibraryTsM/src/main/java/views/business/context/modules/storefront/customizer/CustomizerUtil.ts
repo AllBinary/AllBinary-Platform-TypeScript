@@ -103,7 +103,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoInterfaceToCustomize(customizerTransformInfoInterface: TransformInfoInterface, transformInfoInterface: TransformInfoInterface): TransformInfoInterface{
 var customizerTransformInfoInterface = customizerTransformInfoInterface
@@ -142,7 +142,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoObjectConfigComponentNodesToCustomize(customizerTransformInfoInterface: Object, transformInfoInterface: Object): Vector{
 var customizerTransformInfoInterface = customizerTransformInfoInterface
@@ -181,7 +181,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoObjectConfigComponentNodes(transformInfoInterface: Object): Vector{
 var transformInfoInterface = transformInfoInterface
@@ -207,7 +207,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface: Object): Vector{
 var transformInfoInterface = transformInfoInterface
@@ -233,7 +233,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public insert(transformInfoInterface: TransformInfoInterface, domNodeInterface: DomNodeInterface){
 var transformInfoInterface = transformInfoInterface
@@ -402,7 +402,7 @@ this.write(specifiedTransformInfoInterface, documentString);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(specifiedTransformInfoInterface: TransformInfoInterface, documentString: string){
 var specifiedTransformInfoInterface = specifiedTransformInfoInterface
@@ -427,7 +427,7 @@ transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap(
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getViewDataForComponentsInObjectConfig(transformInfoInterface: Object): Document{
 var transformInfoInterface = transformInfoInterface

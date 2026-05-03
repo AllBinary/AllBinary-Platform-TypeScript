@@ -185,7 +185,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

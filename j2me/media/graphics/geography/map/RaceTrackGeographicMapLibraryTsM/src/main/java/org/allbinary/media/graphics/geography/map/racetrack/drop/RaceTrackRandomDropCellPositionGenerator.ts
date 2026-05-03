@@ -80,7 +80,7 @@ import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary
 export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         
 
-    private SINGLETON: RaceTrackRandomDropCellPositionGenerator = new RaceTrackRandomDropCellPositionGenerator();
+    private static SINGLETON: RaceTrackRandomDropCellPositionGenerator = new RaceTrackRandomDropCellPositionGenerator();
 
     public static getInstance(): RaceTrackRandomDropCellPositionGenerator{
 
@@ -111,7 +111,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
 var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -129,7 +129,7 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
 var allBinaryLayerManager = allBinaryLayerManager

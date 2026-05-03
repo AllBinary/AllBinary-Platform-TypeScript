@@ -174,7 +174,7 @@ this.mouseActionScriptInputInterface!.log();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateInputType(){
 
@@ -197,7 +197,7 @@ this.mouseActionScriptInputInterface!.log();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update(){
 this.updateInputType();
@@ -277,7 +277,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString); && StringValidationUtil.getInstance()!.isNumber(mouseXString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseXString) && StringValidationUtil.getInstance()!.isNumber(mouseXString))
                         
                                     {
                                     this.mouseActionScriptInputInterface!.getPoint()!.x= Integer.parseInt(mouseXString);
@@ -290,7 +290,7 @@ this.logUtil!.putF("Button 2 Deselected: " +this.mouseActionScriptInputInterface
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString); && StringValidationUtil.getInstance()!.isNumber(mouseYString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(mouseYString) && StringValidationUtil.getInstance()!.isNumber(mouseYString))
                         
                                     {
                                     this.mouseActionScriptInputInterface!.getPoint()!.y= Integer.parseInt(mouseYString);
@@ -361,7 +361,7 @@ this.titleJLabel!.setText("Mouse Input Options");
     
 this.okJButton!.setText("OK");
     
-this.okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -389,7 +389,7 @@ this.button2JCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 
     
 this.button2JCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.button2JCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.button2JCheckBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -429,7 +429,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.mouseActionJButton!.setText("Edit");
     
-this.mouseActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.mouseActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

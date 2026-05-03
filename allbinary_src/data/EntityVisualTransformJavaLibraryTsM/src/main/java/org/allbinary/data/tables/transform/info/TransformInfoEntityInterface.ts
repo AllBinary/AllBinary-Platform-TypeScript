@@ -61,15 +61,15 @@ import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/vi
 export interface TransformInfoEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getObjectConfigs(storeName: string): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getNames(storeName: string): Vector
 

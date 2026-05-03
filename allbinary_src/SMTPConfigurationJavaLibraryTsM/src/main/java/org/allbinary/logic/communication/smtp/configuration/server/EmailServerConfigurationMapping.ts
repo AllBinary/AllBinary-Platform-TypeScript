@@ -89,7 +89,7 @@ hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfiguratio
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 
@@ -101,7 +101,7 @@ hashMap!.put(EmailServerConfigurationData.PASSWORD, this.emailServerConfiguratio
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 

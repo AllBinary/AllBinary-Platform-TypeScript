@@ -52,7 +52,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 export interface TickableInterface extends NamedInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processTick(allBinaryLayerManager: AllBinaryLayerManager)
 

@@ -112,7 +112,7 @@ export class PathFinder extends GeographicPathFinderBase {
 
     private costArray: PathFindingNodeCost[][] = PathFindingNodeCost.NULL_PATH_FINDING_NODE_COST_ARRAY_ARRAY;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -211,7 +211,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchTotalPathN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList
@@ -258,7 +258,7 @@ var totalPaths = totalPaths
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public search(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode): BasicArrayList{
     //var startPathFindingNode = startPathFindingNode
@@ -282,7 +282,7 @@ pathList!.add(list);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchStart(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode, multipassState: MultipassState){
     //var startPathFindingNode = startPathFindingNode
@@ -293,7 +293,7 @@ this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchN(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode, multipassState: MultipassState): BasicArrayList{
     //var startPathFindingNode = startPathFindingNode
@@ -337,7 +337,7 @@ multipassState!.step= 0;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public findPath(start: GeographicMapCellPosition, target: GeographicMapCellPosition): BasicArrayList{
     //var start = start
@@ -388,7 +388,7 @@ column < sizeX; column++)
     var row: number = 0;
 row < sizeY; row++)
         {
-discoveryCalculation= this.mathUtil!.abs(column -targetColumn); +this.mathUtil!.abs(row -targetRow);
+discoveryCalculation= this.mathUtil!.abs(column -targetColumn) +this.mathUtil!.abs(row -targetRow);
     
 node= this.costArray[column]![row]!;
     
@@ -434,7 +434,7 @@ current= this.openPriorityQueue!.poll();
 this.closedSet!.add(current);
     
 
-                        if(current.equals(targetNode))
+                        if(current === targetNode)
                         
                                     {
                                     
@@ -496,7 +496,7 @@ neighborInfo= neighbor.pathFindingNodeCostInfoP;
 calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.pathFindingNodeCostInfoP!.totalCostP;
     
 
-                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor);)
+                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor))
                         
                                     {
                                     neighborInfo!.totalCostP= calculatedCost;
@@ -541,7 +541,7 @@ neighbor.parent= current;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public findPathStart(start: GeographicMapCellPosition, target: GeographicMapCellPosition, multipassState: MultipassState){
     //var start = start
@@ -593,7 +593,7 @@ column < sizeX; column++)
     var row: number = 0;
 row < sizeY; row++)
         {
-discoveryCalculation= this.mathUtil!.abs(column -targetColumn); +this.mathUtil!.abs(row -targetRow);
+discoveryCalculation= this.mathUtil!.abs(column -targetColumn) +this.mathUtil!.abs(row -targetRow);
     
 node= this.costArray[column]![row]!;
     
@@ -616,7 +616,7 @@ multipassState!.step++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public findPathEnd(start: GeographicMapCellPosition, target: GeographicMapCellPosition, multipassState: MultipassState): BasicArrayList{
     //var start = start
@@ -654,7 +654,7 @@ current= this.openPriorityQueue!.poll();
 this.closedSet!.add(current);
     
 
-                        if(current.equals(targetNode))
+                        if(current === targetNode)
                         
                                     {
                                     
@@ -716,7 +716,7 @@ neighborInfo= neighbor.pathFindingNodeCostInfoP;
 calculatedCost= neighborInfo!.costToEndP +neighborInfo!.costFromStartP +current.pathFindingNodeCostInfoP!.totalCostP;
     
 
-                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor);)
+                        if(calculatedCost < neighborInfo!.totalCostP || !this.openPriorityQueue!.contains(neighbor))
                         
                                     {
                                     neighborInfo!.totalCostP= calculatedCost;

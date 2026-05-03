@@ -129,7 +129,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public saveImageFile(originalImageFile: AbFile, newImageFileName: string, category: string, mediaData: MediaData, newWidth: number, newHeight: number){
 var originalImageFile = originalImageFile
@@ -141,7 +141,7 @@ var newHeight = newHeight
 
                         if(originalImageFile == 
                                     null
-                                 || !originalImageFile!.isFile();)
+                                 || !originalImageFile!.isFile())
                         
                                     {
                                     

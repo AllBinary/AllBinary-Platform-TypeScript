@@ -127,7 +127,7 @@ this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Buil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -173,7 +173,7 @@ this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -225,7 +225,7 @@ var layerInterface = layerInterface
 
     private readonly BUILD_BUILDING_RTS_LAYER_EVENT: RTSLayerEvent = new RTSLayerEvent(NullPathFindingLayer.NULL_PATH_FINDING_LAYER);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     add(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface

@@ -168,7 +168,7 @@ import { Desktop } from "./Desktop.js";
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         
 
-    private INPUTAUTOMATION_JFRAME: InputAutomationJFrame
+    private static INPUTAUTOMATION_JFRAME: InputAutomationJFrame
 
     public static getInstance(): InputAutomationJFrame{
 
@@ -200,7 +200,7 @@ URLGLOBALS.init(appUrlGlobals);
     
 WebappClassLoaderInfo.setLoader(appUrlGlobals!.constructor.name.java.classLoader);
     
-java.awt.EventQueue.invokeLater(new ARunnable()
+java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -251,7 +251,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static main(args: string[]){
 var args = args
@@ -316,7 +316,7 @@ this.helpSet!.remove(helpSetEvent!.getHelpSet());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 InputAutomationConfigurationFactory.init(InputAutomationClientInformationFactory.getInstance());
@@ -393,7 +393,7 @@ this.setMinimumSize(new java.awt.Dimension(325, 215));
     
 setResizable(false);
     
-addWindowFocusListener(new java.awt.event.WindowFocusListener()
+addWindowFocusListener(new class extends java.awt.event.WindowFocusListener
                                 {
                                 
     public windowGainedFocus(evt: java.awt.event.WindowEvent){
@@ -411,7 +411,7 @@ formWindowLostFocus(evt);
                                 }
                             );
     
-addFocusListener(new java.awt.event.FocusAdapter()
+addFocusListener(new class extends java.awt.event.FocusAdapter
                                 {
                                 
     public focusGained(evt: java.awt.event.FocusEvent){
@@ -433,7 +433,7 @@ this.gameRobotJTabbedPane!.setMinimumSize(new java.awt.Dimension(320, 200));
     
 this.inputAutomationModuleJList!.setMinimumSize(new java.awt.Dimension(200, 0));
     
-this.inputAutomationModuleJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
+this.inputAutomationModuleJList!.addListSelectionListener(new class extends javax.swing.event.ListSelectionListener
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -477,7 +477,7 @@ this.processingJMenu!.setToolTipText("Set module processing state");
     
 this.startJMenuItem!.setText(this.commonStrings!.START);
     
-this.startJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.startJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -493,7 +493,7 @@ this.processingJMenu!.add(this.startJMenuItem);
     
 this.stopJMenuItem!.setText("Stop");
     
-this.stopJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.stopJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -511,7 +511,7 @@ this.mainJMenuBar!.add(this.processingJMenu);
     
 this.optionsJMenu!.setText("Options");
     
-this.optionsJMenu!.addActionListener(new java.awt.event.ActionListener()
+this.optionsJMenu!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -529,7 +529,7 @@ this.stopOnFocusJCheckBoxMenuItem!.setEnabled(false);
     
 this.stopOnFocusJCheckBoxMenuItem!.setLabel("Stop Module On Focus");
     
-this.stopOnFocusJCheckBoxMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.stopOnFocusJCheckBoxMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -549,7 +549,7 @@ this.toolsJMenu!.setText("Help");
     
 this.helpJMenuItem!.setText("Help");
     
-this.helpJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.helpJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -565,7 +565,7 @@ this.toolsJMenu!.add(this.helpJMenuItem);
     
 this.updatesJMenuItem!.setText("Updates");
     
-this.updatesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.updatesJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -581,7 +581,7 @@ this.toolsJMenu!.add(this.updatesJMenuItem);
     
 this.subscriptionJMenuItem!.setText("Subscription");
     
-this.subscriptionJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.subscriptionJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -597,7 +597,7 @@ this.toolsJMenu!.add(this.subscriptionJMenuItem);
     
 this.modulesJMenuItem!.setText("Module Manager");
     
-this.modulesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.modulesJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -613,7 +613,7 @@ this.toolsJMenu!.add(this.modulesJMenuItem);
     
 this.aboutJMenuItem!.setText("About");
     
-this.aboutJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.aboutJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

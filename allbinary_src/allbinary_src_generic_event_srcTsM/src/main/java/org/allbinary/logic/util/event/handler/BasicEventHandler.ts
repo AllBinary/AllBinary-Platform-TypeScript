@@ -197,7 +197,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireEvent(eventObject: AllBinaryEventObject){
@@ -238,7 +238,7 @@ index++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject

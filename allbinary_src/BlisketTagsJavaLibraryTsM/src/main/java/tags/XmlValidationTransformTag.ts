@@ -69,7 +69,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(): boolean{
 
@@ -117,7 +117,7 @@ public constructor (){
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

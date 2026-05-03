@@ -89,7 +89,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): string{
     //var abeClientInformation = abeClientInformation
@@ -153,7 +153,7 @@ this.generate(abeClientInformation, transformInfoInterface, allViewsToBeModified
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: Vector){
     //var abeClientInformation = abeClientInformation

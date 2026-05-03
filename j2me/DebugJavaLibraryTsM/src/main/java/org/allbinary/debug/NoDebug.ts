@@ -47,7 +47,7 @@ export class NoDebug
          implements DebugInterface {
         
 
-    private SINGLETON: DebugInterface = new NoDebug();
+    private static SINGLETON: DebugInterface = new NoDebug();
 
     public static getInstance(): DebugInterface{
 

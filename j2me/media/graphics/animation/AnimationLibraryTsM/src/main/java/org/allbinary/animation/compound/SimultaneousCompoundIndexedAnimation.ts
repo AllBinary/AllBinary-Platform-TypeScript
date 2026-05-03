@@ -165,7 +165,7 @@ indexedAnimation!.previousFrame();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public nextFrame(){
 

@@ -77,7 +77,7 @@ export class LayerCoveringCellPositionsUtil
 
     private readonly cellPositionsUtil: CellPositionsUtil = CellPositionsUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAllXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, x: number, y: number, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -98,7 +98,7 @@ export class LayerCoveringCellPositionsUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAll(geographicMapInterface: BasicGeographicMap, topLeftGeographicMapCellPosition: GeographicMapCellPosition, layerInterface: AllBinaryLayer, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface

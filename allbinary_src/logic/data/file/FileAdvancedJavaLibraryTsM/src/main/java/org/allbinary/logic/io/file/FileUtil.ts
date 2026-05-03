@@ -187,7 +187,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(inputStream: InputStream, file: AbFile){
 var inputStream = inputStream
@@ -201,7 +201,7 @@ this.write(inputStream, dataOutputStream);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream){
 var inputStream = inputStream
@@ -222,7 +222,7 @@ dataOutputStream!.flush();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream, buffer: number[]){
 var inputStream = inputStream
@@ -244,7 +244,7 @@ dataOutputStream!.flush();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     copy(dataInputStream: AbFileInputStream, dataOutputStream: AbDataOutputStream){
 var dataInputStream = dataInputStream
@@ -267,7 +267,7 @@ StreamUtil.getInstance()!.close(dataInputStream);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fixPath(file: AbFile, path: AbPath, realPath: AbPath, cloud: string): AbPath{
 var file = file
@@ -318,7 +318,7 @@ this.directory.create(fixedPath);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string){
 var file = file
@@ -330,7 +330,7 @@ this.copyToCloud(file, path, realPath, cloud, false, false);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string, overwriteNewer: boolean, overwriteAll: boolean){
 var file = file
@@ -432,7 +432,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, outFile: AbFile){
 var file = file
@@ -442,7 +442,7 @@ this.copyToCloud(file, outFile, false, false);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, outFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
 var file = file
@@ -536,7 +536,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     copyPrepare(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean): boolean{
 var fromFile = fromFile
@@ -669,7 +669,7 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     copyFile(fromFile: AbFile, toFile: AbFile){
 var fromFile = fromFile
@@ -679,7 +679,7 @@ this.copyFile(fromFile, toFile, false, false);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     copyFile(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
 var fromFile = fromFile
@@ -771,7 +771,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public copyDirectoryPortion(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number){
 var fromDirectoryAbPath = fromDirectoryAbPath
@@ -911,7 +911,7 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     copyDirectory(fromFile: AbFile, to: AbFile){
     //var fromFile = fromFile
@@ -1069,7 +1069,7 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public copy(fromAbPath: AbPath, to: AbPath): boolean{
@@ -1485,7 +1485,7 @@ skipFile= skipFiles[index]!;
 
     private readonly WRITE_METHOD: string = "write";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(filePath: string, string: string){
 var filePath = filePath

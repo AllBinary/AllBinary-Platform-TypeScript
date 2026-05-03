@@ -278,7 +278,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                                 
                         else {
                             
-    var callback: ResourceCallback = new ResourceCallback()
+    var callback: ResourceCallback = new class extends ResourceCallback
                                 {
                                 
     public done(resource: any = {}){

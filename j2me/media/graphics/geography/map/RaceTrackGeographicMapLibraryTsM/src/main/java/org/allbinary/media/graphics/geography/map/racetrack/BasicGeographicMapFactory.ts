@@ -69,7 +69,7 @@ export class BasicGeographicMapFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory: GeographicMapCellTypeFactory): BasicGeographicMap{
     //var raceTrackInfo = raceTrackInfo

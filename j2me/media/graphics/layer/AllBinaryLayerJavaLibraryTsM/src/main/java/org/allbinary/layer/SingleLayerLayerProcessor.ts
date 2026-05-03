@@ -59,7 +59,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

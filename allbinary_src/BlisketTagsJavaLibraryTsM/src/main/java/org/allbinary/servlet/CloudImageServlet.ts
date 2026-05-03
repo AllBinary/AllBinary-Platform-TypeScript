@@ -90,7 +90,7 @@ export class CloudImageServlet extends HttpServlet {
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
     //var request = request
@@ -160,7 +160,7 @@ response.getOutputStream()!.write(byteArray);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -170,7 +170,7 @@ this.processRequest(request, response);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

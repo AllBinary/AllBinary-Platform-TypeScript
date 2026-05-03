@@ -82,7 +82,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWebappPath(): string{
 
@@ -108,7 +108,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setWebappPath(path: string){
 var path = path

@@ -55,7 +55,7 @@ export class LogConfigType
          {
         
 
-    public availableLogConfigTypes: BasicArrayList = new BasicArrayListD();
+    public static availableLogConfigTypes: BasicArrayList = new BasicArrayListD();
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

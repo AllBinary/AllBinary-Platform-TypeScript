@@ -84,7 +84,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(os: GenericOperatingSystem): HardwareInterface{
 var os = os

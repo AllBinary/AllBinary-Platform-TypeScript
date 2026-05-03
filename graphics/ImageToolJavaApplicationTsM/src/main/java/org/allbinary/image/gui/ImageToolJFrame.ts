@@ -121,7 +121,7 @@ import { MirrorImageJPanel } from "./MirrorImageJPanel.js";
 export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {
         
 
-    private imageProcessorInputCompositeInterface: ImageProcessorInputCompositeInterface
+    private static imageProcessorInputCompositeInterface: ImageProcessorInputCompositeInterface
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -239,7 +239,7 @@ this.blueJLabel!.setText("Blue:");
     
 this.okJButton!.setText("OK");
     
-this.okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -271,7 +271,7 @@ getContentPane()!.add(this.jPanel1);
     
 this.fileJMenu!.setText("File");
     
-this.fileJMenu!.addActionListener(new java.awt.event.ActionListener()
+this.fileJMenu!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -285,7 +285,7 @@ fileJMenuActionPerformed(evt);
     
 this.openImageJMenuItem!.setText("Open");
     
-this.openImageJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.openImageJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -303,7 +303,7 @@ this.mainJMenuBar!.add(this.fileJMenu);
     
 this.processingJMenu!.setText("Processing");
     
-this.processingJMenu!.addActionListener(new java.awt.event.ActionListener()
+this.processingJMenu!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -317,7 +317,7 @@ processingJMenuActionPerformed(evt);
     
 this.analyzeJMenuItem!.setText("Image Analyze");
     
-this.analyzeJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.analyzeJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -333,7 +333,7 @@ this.processingJMenu!.add(this.analyzeJMenuItem);
     
 this.generateMirrorSpriteMenuItem!.setText("Mirror Sprite Generator");
     
-this.generateMirrorSpriteMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.generateMirrorSpriteMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -349,7 +349,7 @@ this.processingJMenu!.add(this.generateMirrorSpriteMenuItem);
     
 this.generateRotationSpriteJMenuItem!.setText("Rotation Sprite Generator");
     
-this.generateRotationSpriteJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.generateRotationSpriteJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -365,7 +365,7 @@ this.processingJMenu!.add(this.generateRotationSpriteJMenuItem);
     
 this.generateSpriteSplitterMenuItem!.setText("Sprite Splitter Generator");
     
-this.generateSpriteSplitterMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.generateSpriteSplitterMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -381,7 +381,7 @@ this.processingJMenu!.add(this.generateSpriteSplitterMenuItem);
     
 this.generateRotationMenuItem!.setText("Rotate Image Generator");
     
-this.generateRotationMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.generateRotationMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -397,7 +397,7 @@ this.processingJMenu!.add(this.generateRotationMenuItem);
     
 this.createStripImageJMenuItem!.setText("Multi Image Unifier");
     
-this.createStripImageJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.createStripImageJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -413,7 +413,7 @@ this.processingJMenu!.add(this.createStripImageJMenuItem);
     
 this.mirrorJMenuItem!.setText("Mirror Image(s)");
     
-this.mirrorJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.mirrorJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -429,7 +429,7 @@ this.processingJMenu!.add(this.mirrorJMenuItem);
     
 this.scaleImagesJMenuItem!.setText("Scale Image(s)");
     
-this.scaleImagesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.scaleImagesJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -445,7 +445,7 @@ this.processingJMenu!.add(this.scaleImagesJMenuItem);
     
 this.canvasImagesJMenuItem!.setText("Canvas Image(s)");
     
-this.canvasImagesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.canvasImagesJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -461,7 +461,7 @@ this.processingJMenu!.add(this.canvasImagesJMenuItem);
     
 this.createIconImagesJMenuItem!.setText("Create Icon Image(s)");
     
-this.createIconImagesJMenuItem!.addActionListener(new java.awt.event.ActionListener()
+this.createIconImagesJMenuItem!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -574,7 +574,7 @@ var files = files
         try {
             this.logUtil!.putF("Reading " +files.length +" files.", this, "onFiles");
     
-Arrays.sort(files, new Comparator<File>()
+Arrays.sort(files, new class extends Comparator<File>
                                 {
                                 
     public compare(file1: File, file2: File): number{

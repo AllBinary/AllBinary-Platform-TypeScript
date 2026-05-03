@@ -104,7 +104,7 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 export class SavedCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 
-    private index: number
+    private static index: number
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -128,7 +128,7 @@ index= ProcessingFrameIndexFactory.next();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
 var thread = thread

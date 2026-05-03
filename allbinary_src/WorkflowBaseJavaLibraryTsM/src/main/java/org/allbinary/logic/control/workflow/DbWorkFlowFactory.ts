@@ -90,7 +90,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class, LicensingException::class)
+                //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation

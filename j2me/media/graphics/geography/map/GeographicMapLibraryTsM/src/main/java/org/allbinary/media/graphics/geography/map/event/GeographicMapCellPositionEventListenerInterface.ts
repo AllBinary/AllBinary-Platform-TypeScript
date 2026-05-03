@@ -50,11 +50,11 @@ import { EventListenerInterface } from "../../../../../../../org/allbinary/logic
 export interface GeographicMapCellPositionEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent)
 

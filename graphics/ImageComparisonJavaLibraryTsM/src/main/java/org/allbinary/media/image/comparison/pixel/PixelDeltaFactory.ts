@@ -79,11 +79,13 @@ export class PixelDeltaFactory
          {
         
 
-    private cacheInterface: AutomaticCacheInterface = 
+    private static cacheInterface: AutomaticCacheInterface = 
                 null
             ;
 
-                init{
+                private static initResult: number = PixelDeltaFactory.init();
+                private static init(): number { 
+                    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -116,9 +118,12 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
 }
 
-}
 
-                //@Throws(Exception::class)
+
+                    return 0;
+                }
+            
+                //@Throws(Exception.constructor)
             
     public static getInstance(x: number, y: number, rgb1: number, rgb2: number): PixelDelta{
 var x = x

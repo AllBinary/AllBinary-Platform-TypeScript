@@ -353,7 +353,7 @@ var animationInterface = animationInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public handleFinish(){
 

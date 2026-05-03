@@ -70,23 +70,23 @@ import { WaypointRunnableLogHelper } from "./WaypointRunnableLogHelper.js";
 export interface WaypointLayerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList)
 
     getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setClosestGeographicMapCellHistory(pathsList: BasicArrayList)
 
     teleportTo(geographicMapCellPosition: GeographicMapCellPosition)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setLoad(resource: number)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getSurroundingGeographicMapCellPositionList(): BasicArrayList
 
@@ -96,15 +96,15 @@ export interface WaypointLayerInterface {
 
     isShowMoreCaptionStates(): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     trackTo(reason: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     trackToDXY(dx: number, dy: number)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean
 
@@ -114,11 +114,11 @@ export interface WaypointLayerInterface {
 
     isWaypointListEmptyOrOnlyTargets(): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getCurrentGeographicMapCellPosition(): GeographicMapCellPosition
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition
 

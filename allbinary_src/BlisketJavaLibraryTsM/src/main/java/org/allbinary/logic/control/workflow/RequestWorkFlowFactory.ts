@@ -83,7 +83,7 @@ export class RequestWorkFlowFactory
          {
         
 
-                //@Throws(Exception::class, LicensingException::class)
+                //@Throws(Exception.constructor, LicensingException.constructor)
             
     public static getInstance(request: ServletRequest, response: ServletResponse, servletConfig: ServletConfig, servletContext: ServletContext): WorkFlowInterface{
 var request = request
@@ -119,7 +119,7 @@ var servletContext = servletContext
 }
 
 
-                //@Throws(Exception::class, LicensingException::class)
+                //@Throws(Exception.constructor, LicensingException.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
 var hashMap = hashMap

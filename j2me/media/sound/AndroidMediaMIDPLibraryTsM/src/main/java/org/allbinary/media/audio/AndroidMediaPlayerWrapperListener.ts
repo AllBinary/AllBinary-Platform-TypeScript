@@ -107,7 +107,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-export inner class MediaPlayerOnBufferingUpdateListener
+MediaPlayerOnBufferingUpdateListener = class
             extends Object
          implements MediaPlayer.OnBufferingUpdateListener {
         
@@ -123,7 +123,7 @@ export inner class MediaPlayerOnBufferingUpdateListener
 }
                 
             
-export inner class MediaPlayerOnPreparedListener
+MediaPlayerOnPreparedListener = class
             extends Object
          implements MediaPlayer.OnPreparedListener {
         
@@ -138,7 +138,7 @@ export inner class MediaPlayerOnPreparedListener
 }
                 
             
-export inner class MediaPlayerOnErrorListener
+MediaPlayerOnErrorListener = class
             extends Object
          implements MediaPlayer.OnErrorListener {
         
@@ -161,7 +161,7 @@ export inner class MediaPlayerOnErrorListener
 }
                 
             
-export inner class MediaPlayerOnCompletionListener
+MediaPlayerOnCompletionListener = class
             extends Object
          implements MediaPlayer.OnCompletionListener {
         
@@ -176,7 +176,7 @@ export inner class MediaPlayerOnCompletionListener
 }
                 
             
-    private mOnBufferingUpdateListener: MediaPlayer.OnBufferingUpdateListener = new MediaPlayerOnBufferingUpdateListener()
+    private mOnBufferingUpdateListener: MediaPlayer.OnBufferingUpdateListener = new class extends this.MediaPlayerOnBufferingUpdateListener
                                 {
                                 
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
@@ -196,7 +196,7 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
                                 }
                             ;
 
-    private mOnPreparedListener: MediaPlayer.OnPreparedListener = new MediaPlayerOnPreparedListener()
+    private mOnPreparedListener: MediaPlayer.OnPreparedListener = new class extends this.MediaPlayerOnPreparedListener
                                 {
                                 
     public onPrepared(mp: MediaPlayer){
@@ -214,7 +214,7 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
                                 }
                             ;
 
-    private mOnErrorListener: MediaPlayer.OnErrorListener = new MediaPlayerOnErrorListener()
+    private mOnErrorListener: MediaPlayer.OnErrorListener = new class extends this.MediaPlayerOnErrorListener
                                 {
                                 
     public onError(mp: MediaPlayer, what: number, extra: number): boolean{
@@ -241,7 +241,7 @@ this@AndroidMediaPlayerWrapperListener.androidMediaPlayerWrapper!.update(PlayerL
                                 }
                             ;
 
-    private mOnCompletionListener: MediaPlayer.OnCompletionListener = new MediaPlayerOnCompletionListener()
+    private mOnCompletionListener: MediaPlayer.OnCompletionListener = new class extends this.MediaPlayerOnCompletionListener
                                 {
                                 
     public onCompletion(mp: MediaPlayer){

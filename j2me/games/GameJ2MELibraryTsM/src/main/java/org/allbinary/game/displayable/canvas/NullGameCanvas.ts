@@ -110,7 +110,7 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createCanvas(gameLayerManager: AllBinaryGameLayerManager): NullGameCanvas{
     //var gameLayerManager = gameLayerManager
@@ -200,7 +200,7 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public buildGameInit(isProgress: boolean){
     //var isProgress = isProgress

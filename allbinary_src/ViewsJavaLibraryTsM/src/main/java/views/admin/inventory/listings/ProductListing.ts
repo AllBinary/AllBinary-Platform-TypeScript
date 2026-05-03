@@ -181,7 +181,7 @@ this.inventory= new InventoryEntity();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getHashSet(storeFront: StoreFrontInterface): HashSet{
 var storeFront = storeFront
@@ -238,7 +238,7 @@ keywords.addAll(substoreKeywords);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     savePage(file: string, data: string){
 var file = file
@@ -305,7 +305,7 @@ StreamUtil.getInstance()!.close(idOutData);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: Vector, staticPath: AbPath){
 var keywordData = keywordData
@@ -480,7 +480,7 @@ this.staticPages!.insert(insertVector);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generateAll(): string{
 
@@ -617,7 +617,7 @@ stringBuffer!.append(this.INVENTORY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generateAll(storeName: string): string{
 var storeName = storeName

@@ -64,7 +64,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 export class GeographicMapEventHandler extends BasicEventHandler {
         
 
-    private instance: GeographicMapEventHandler = new GeographicMapEventHandler();
+    private static instance: GeographicMapEventHandler = new GeographicMapEventHandler();
 
     public static getInstance(): GeographicMapEventHandler{
 

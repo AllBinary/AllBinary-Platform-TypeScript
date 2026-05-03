@@ -96,7 +96,7 @@ this.titleBody= new TitleBodyValidation();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -218,7 +218,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

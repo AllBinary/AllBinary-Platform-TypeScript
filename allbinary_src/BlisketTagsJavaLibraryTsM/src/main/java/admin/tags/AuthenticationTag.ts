@@ -155,7 +155,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     changePassword(): boolean{
 
@@ -219,7 +219,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     newPassword(): boolean{
 
@@ -283,7 +283,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     invalidateSession(): number{
 
@@ -347,7 +347,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     isSessionOld(): boolean{
 
@@ -411,7 +411,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     isRoleValid(): boolean{
 
@@ -487,7 +487,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     validRole(): string{
 
@@ -555,7 +555,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     invalidRole(): string{
 
@@ -623,7 +623,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     isAuthenticationSessionValid(): boolean{
 
@@ -699,7 +699,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     processIfNewLogin(): boolean{
 
@@ -775,7 +775,7 @@ this.roles= values;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     processInvalidation(): boolean{
 
@@ -839,7 +839,7 @@ this.roles= values;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

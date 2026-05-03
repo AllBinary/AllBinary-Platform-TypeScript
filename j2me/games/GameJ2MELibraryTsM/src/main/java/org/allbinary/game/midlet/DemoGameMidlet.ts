@@ -82,7 +82,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isContinue(): boolean{
 
@@ -127,7 +127,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createDemoGameCanvasRunnableInterface(): GameCanvasRunnableInterface{
 
@@ -138,7 +138,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createGameCanvasRunnable(allBinaryGameLayerManager: AllBinaryGameLayerManager): GameCanvasRunnableInterface{
 var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -150,7 +150,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createGameCanvasRunnableInterface(): GameCanvasRunnableInterface{
 
@@ -170,7 +170,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setDemo(){
@@ -187,7 +187,7 @@ PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public createGame(){

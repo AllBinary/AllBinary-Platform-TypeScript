@@ -58,7 +58,7 @@ import { BasicDataTableInterface } from "../../../../../../../org/allbinary/data
 export interface StoreFrontsEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getStoreFrontInterface(name: string): StoreFrontInterface
 

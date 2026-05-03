@@ -83,7 +83,7 @@ this.context= context;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isFile(path: string): boolean{
 var path = path
@@ -122,7 +122,7 @@ var path = path
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFile(filePath: string): AbFile{
 var filePath = filePath
@@ -135,7 +135,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(file: AbFile, childFilePath: string): AbFile{
 var file = file

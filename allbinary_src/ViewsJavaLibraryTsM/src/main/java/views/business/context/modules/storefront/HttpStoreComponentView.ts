@@ -91,7 +91,7 @@ this.setTransformDocumentInterface(TransformStoreDocumentFactory.getInstance(thi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

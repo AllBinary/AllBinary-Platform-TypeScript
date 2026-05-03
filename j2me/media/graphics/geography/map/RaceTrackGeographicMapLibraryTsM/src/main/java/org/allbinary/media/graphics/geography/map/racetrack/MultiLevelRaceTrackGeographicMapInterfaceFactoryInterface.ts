@@ -47,7 +47,7 @@
 export interface MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface extends RaceTrackGeographicMapInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFirstWaveWithTrack(track: number): number
 

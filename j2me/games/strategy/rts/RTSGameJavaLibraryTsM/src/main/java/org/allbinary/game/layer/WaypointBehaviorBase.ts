@@ -111,7 +111,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -276,7 +276,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setTarget(layerInterface: PathFindingLayerInterface){
     //var layerInterface = layerInterface
@@ -288,7 +288,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setTargetWithDistance(layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
     //var layerInterface = layerInterface
@@ -301,7 +301,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public clearTarget(){
 
@@ -312,7 +312,7 @@ this.waypoint= waypoint;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updatePathOnTargetMove(reason: string){
     //var reason = reason

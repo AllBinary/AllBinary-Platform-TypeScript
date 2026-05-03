@@ -107,7 +107,7 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

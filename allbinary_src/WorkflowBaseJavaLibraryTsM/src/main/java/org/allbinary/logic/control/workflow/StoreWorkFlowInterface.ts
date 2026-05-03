@@ -47,7 +47,7 @@
 export interface StoreWorkFlowInterface extends WorkFlowInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getStoreName(): string
 

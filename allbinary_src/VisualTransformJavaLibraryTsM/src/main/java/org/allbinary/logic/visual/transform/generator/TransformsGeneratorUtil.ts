@@ -89,7 +89,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoInterface: Object, group: string): string{
     //var abeClientInformation = abeClientInformation
@@ -130,7 +130,7 @@ var group = group
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoObjectConfigInterface: Object, transformInfoInterface: Object, group: string): string{
     //var abeClientInformation = abeClientInformation

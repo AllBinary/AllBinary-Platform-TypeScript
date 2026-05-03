@@ -663,7 +663,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class, SQLException::class)
+                //@Throws(Exception.constructor, SQLException.constructor)
             
     public executeSQLStatement(statement: string): ResultSet{
 var statement = statement
@@ -740,7 +740,7 @@ stmt.close();
 }
 
 
-                //@Throws(SQLException::class)
+                //@Throws(SQLException.constructor)
             
     createConnection(){
 
@@ -776,7 +776,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, INIT_SQL, "createConnection()", 
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initialize(){
 

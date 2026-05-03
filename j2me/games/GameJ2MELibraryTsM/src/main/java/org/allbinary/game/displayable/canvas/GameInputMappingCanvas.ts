@@ -266,7 +266,7 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -319,7 +319,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     gameActionCrud(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -393,7 +393,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addNewMapping(gameKey: GameKey, input: Input){
     //var gameKey = gameKey
@@ -409,7 +409,7 @@ this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
 ;
     
 
-                        if(!isInputAlreadyMapped && !this.inputMapping!.isSystemInput(input);)
+                        if(!isInputAlreadyMapped && !this.inputMapping!.isSystemInput(input))
                         
                                     {
                                     
@@ -446,7 +446,7 @@ this.setSelectedAction(gameKey);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     deleteCurrentMapping(){
 
@@ -495,7 +495,7 @@ this.update();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDefault(){
 this.inputMapping!.setDefault(this.abeClientInformation);
@@ -507,7 +507,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 this.inputMapping!.update(this.abeClientInformation);

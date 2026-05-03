@@ -47,7 +47,7 @@
 export interface GameStateCompositeInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setGameState(gameState: GameState)
 

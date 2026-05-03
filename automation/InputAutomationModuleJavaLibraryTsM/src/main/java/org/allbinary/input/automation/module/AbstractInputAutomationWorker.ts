@@ -101,7 +101,7 @@ public constructor (inputAutomationActionInterface: InputAutomationActionInterfa
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -153,7 +153,7 @@ this.running= running;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     startDataWorkers(){
@@ -173,7 +173,7 @@ this.captureThread!.start();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     waitForDataWorkers(){
@@ -189,7 +189,7 @@ Thread.sleep(250);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     stopDataWorkers(){
 this.getCaptureWorker()!.setRunning(false);
@@ -197,7 +197,7 @@ this.getCaptureWorker()!.setRunning(false);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 

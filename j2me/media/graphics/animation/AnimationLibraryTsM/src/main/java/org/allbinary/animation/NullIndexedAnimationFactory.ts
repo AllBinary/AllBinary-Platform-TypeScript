@@ -62,7 +62,7 @@ export class NullIndexedAnimationFactory
 
     public static readonly NULL_INDEXED_ANIMATION_ARRAY: IndexedAnimationInterface[] = [];
 
-    private NULL_INDEXED_ANIMATION_FACTORY: NullIndexedAnimationFactory = new NullIndexedAnimationFactory();
+    private static NULL_INDEXED_ANIMATION_FACTORY: NullIndexedAnimationFactory = new NullIndexedAnimationFactory();
 
     public static getFactoryInstance(): NullIndexedAnimationFactory{
 
@@ -74,7 +74,7 @@ export class NullIndexedAnimationFactory
 }
 
 
-    private readonly NULL_ANIMATION: Animation = new NullIndexedAnimation(AnimationBehavior.getInstance())
+    private readonly NULL_ANIMATION: Animation = new class extends NullIndexedAnimation
                                 {
                                 
     public paintXY(graphics: Graphics, x: number, y: number){
@@ -91,7 +91,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -104,7 +104,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

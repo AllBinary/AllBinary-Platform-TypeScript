@@ -94,7 +94,7 @@ this.xsl= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     viewCategory(): string{
 
@@ -162,7 +162,7 @@ this.xsl= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     viewCategories(): string{
 
@@ -230,7 +230,7 @@ this.xsl= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

@@ -72,7 +72,7 @@ export class DiveAndDirectionalTrackingAIFactory
          implements ArtificialIntelligenceInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable

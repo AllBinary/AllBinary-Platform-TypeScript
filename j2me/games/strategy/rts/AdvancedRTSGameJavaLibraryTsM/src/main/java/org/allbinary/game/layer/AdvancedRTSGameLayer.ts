@@ -186,7 +186,7 @@ import { RTSLayerUtil } from "./RTSLayerUtil.js";
 export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createSimulated(): AdvancedRTSGameLayer{
 
@@ -254,7 +254,7 @@ this.setParentLayer(parentLayer);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -289,7 +289,7 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -302,7 +302,7 @@ BuildingEventHandler.getInstance()!.addListener(this.getWaypointBehavior()!.getW
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
@@ -447,7 +447,7 @@ this.waypointBehaviorBase= unitWaypointHelper;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
     //var allbinaryLayer = allbinaryLayer
@@ -707,7 +707,7 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 

@@ -54,9 +54,9 @@ export class UserEmailEventNameData
          {
         
 
-    private userNameEvenNameHashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static userNameEvenNameHashMap: HashMap<any, any> = new HashMap<any, any>();
 
-    private nextId: number = 0;
+    private static nextId: number = 0;
 
     public static readonly INSTALLER: UserEmailEventNameData = new UserEmailEventNameData("Installer");
 
@@ -106,7 +106,7 @@ export class UserEmailEventNameData
 
     public static readonly NEWPASSWORD: UserEmailEventNameData = new UserEmailEventNameData("New Password");
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{

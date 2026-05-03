@@ -56,7 +56,7 @@ export interface HighScoresInterface {
 
     getTotal(): number
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isBestScore(newHighScore: HighScore): boolean
 

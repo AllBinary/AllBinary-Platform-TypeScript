@@ -116,7 +116,7 @@ export class ProgressCanvas extends RunnableCanvas implements PaintableInterface
 
     private readonly backgroundBasicColor: BasicColor
 
-    public readonly GAUGE_PAINTABLE: Paintable = new Paintable()
+    public readonly GAUGE_PAINTABLE: Paintable = new class extends Paintable
                                 {
                                 
     public paint(graphics: Graphics){
@@ -146,12 +146,12 @@ paint2(graphics);
 
     public inProgress: boolean = false;
 
-    private readonly IN_GAME_PROCESSOR: Processor = new Processor()
+    private readonly IN_GAME_PROCESSOR: Processor = new class extends Processor
                                 {
                                 
     var private readonly pathFindingThreadPool: ThreadPool = PathFindingThreadPool.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 pathFindingThreadPool!.runAPriorityTask();
@@ -185,7 +185,7 @@ this.allbinaryMidlet= gameMidlet;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(graphics: Graphics){
 var graphics = graphics

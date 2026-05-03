@@ -56,7 +56,7 @@ export class BaseSoundsFactory
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getSoundInterfaceArray(): Sound[]{
 

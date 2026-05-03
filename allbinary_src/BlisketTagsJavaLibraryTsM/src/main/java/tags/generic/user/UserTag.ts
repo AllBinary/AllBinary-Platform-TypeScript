@@ -74,7 +74,7 @@ this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role);
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

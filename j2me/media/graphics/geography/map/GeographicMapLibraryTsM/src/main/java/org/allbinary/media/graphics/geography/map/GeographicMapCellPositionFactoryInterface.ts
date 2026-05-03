@@ -48,7 +48,7 @@ import { BasicGeographicMap } from "./BasicGeographicMap.js";
 export interface GeographicMapCellPositionFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(geographicMapInterface: BasicGeographicMap, i_column: number, i_row: number, columns: number, rows: number, width: number, height: number): GeographicMapCellPosition
 

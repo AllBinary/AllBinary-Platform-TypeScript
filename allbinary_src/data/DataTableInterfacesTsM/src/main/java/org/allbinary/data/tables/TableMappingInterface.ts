@@ -52,15 +52,15 @@ import { Vector } from "../../../../java/util/Vector.js";
 export interface TableMappingInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getKey(): any
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toVector(): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toHashMap(): HashMap<any, any>
 

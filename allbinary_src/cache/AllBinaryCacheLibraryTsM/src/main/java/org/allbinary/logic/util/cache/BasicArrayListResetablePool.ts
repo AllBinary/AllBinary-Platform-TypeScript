@@ -62,7 +62,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key

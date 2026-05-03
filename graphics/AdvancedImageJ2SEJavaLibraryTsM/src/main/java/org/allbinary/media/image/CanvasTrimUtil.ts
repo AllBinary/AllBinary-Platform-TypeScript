@@ -76,7 +76,7 @@ export class CanvasTrimUtil
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, cutCanvasFromLeftReduction: number, cutCanvasFromTopReduction: number, cutCanvasFromRightReduction: number, cutCanvasFromBottomReduction: number, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput

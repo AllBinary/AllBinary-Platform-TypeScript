@@ -77,7 +77,7 @@ export class PooledImageArrayRotationAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
     //var image = image
@@ -99,7 +99,7 @@ export class PooledImageArrayRotationAnimationFactory
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
     //var image = image
@@ -151,7 +151,7 @@ this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(im
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

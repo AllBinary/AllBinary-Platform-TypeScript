@@ -72,7 +72,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCurrentOverCellType(geographicMap: BasicGeographicMap): GeographicMapCellType{
     //var geographicMap = geographicMap
@@ -98,7 +98,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateStart(gameCanvasInterface: AllBinaryGameCanvasInterface, layer: AllBinaryLayer): boolean{
     //var gameCanvasInterface = gameCanvasInterface

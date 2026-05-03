@@ -78,7 +78,7 @@ export class DemoGameBehavior
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(){
 }
@@ -94,14 +94,14 @@ export class DemoGameBehavior
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateTouch(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateScreenButtonPaintable(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -110,7 +110,7 @@ allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setGameState(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -122,21 +122,21 @@ allBinaryGameCanvas!.setTouchPaintableP(NullPaintable.getInstance());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateEndGameProcessor(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public buildGame(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public run(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -149,7 +149,7 @@ this.logUtil!.putF(GameTypeFactory.getInstance()!.BOT.toString(), this, commonSt
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setHighScore(abeClientInformation: AbeClientInformationInterface, allBinaryGameCanvas: AllBinaryGameCanvas, name: string, score: number, autoSubmit: boolean, isLast: boolean){
     //var abeClientInformation = abeClientInformation

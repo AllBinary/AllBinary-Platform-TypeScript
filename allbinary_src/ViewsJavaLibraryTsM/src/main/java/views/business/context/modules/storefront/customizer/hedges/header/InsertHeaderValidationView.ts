@@ -122,7 +122,7 @@ this.heading= new HeadingValidation(multipartRequestHashMap);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 

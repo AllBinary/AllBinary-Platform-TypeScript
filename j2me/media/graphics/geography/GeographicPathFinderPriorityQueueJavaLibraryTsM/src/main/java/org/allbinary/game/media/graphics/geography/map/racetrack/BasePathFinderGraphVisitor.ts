@@ -86,7 +86,7 @@ this.maxPathWeight= maxPathWeight;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
     //var graph = graph
@@ -95,7 +95,7 @@ this.maxPathWeight= maxPathWeight;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
     //var startPathFindingNodeList = startPathFindingNodeList

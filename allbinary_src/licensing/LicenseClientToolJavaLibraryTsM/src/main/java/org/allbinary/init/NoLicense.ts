@@ -52,7 +52,7 @@ export class NoLicense
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(classLoader: ClassLoader, pathString: string){
 var classLoader = classLoader

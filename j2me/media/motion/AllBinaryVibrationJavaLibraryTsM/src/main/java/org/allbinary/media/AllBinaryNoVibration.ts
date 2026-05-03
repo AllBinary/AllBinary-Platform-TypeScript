@@ -45,7 +45,7 @@
 export class AllBinaryNoVibration extends AllBinaryVibrationME {
         
 
-    public NO_VIBRATION: AllBinaryVibrationME = new AllBinaryNoVibration();
+    public static NO_VIBRATION: AllBinaryVibrationME = new AllBinaryNoVibration();
 
     public vibrate(duration: number, type: number, volume: number){
 var duration = duration

@@ -88,7 +88,7 @@ export class ImageCompleteUtil
 
     private readonly allTimeDelayHelper: TimeDelayHelper = new TimeDelayHelper(120000);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitFor(image: Image, name: string){
 var image = image
@@ -100,7 +100,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
 var image = image
@@ -111,7 +111,7 @@ var timeDelayHelper = timeDelayHelper
 ;
     
 
-                        if(!playnImage!.getImage()!.isReady(); && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
+                        if(!playnImage!.getImage()!.isReady() && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
                         
                                     {
                                     
@@ -144,7 +144,7 @@ var timeDelayHelper = timeDelayHelper
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
 var image = image
@@ -155,7 +155,7 @@ var timeDelayHelper = timeDelayHelper
 ;
     
 
-        while(!playnImage!.getImage()!.isReady(); && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
+        while(!playnImage!.getImage()!.isReady() && playnImage!.getImage()!.width() +playnImage!.getImage()!.height() == 0)
         {
 
                         if(timeDelayHelper!.isTime())
@@ -174,7 +174,7 @@ var timeDelayHelper = timeDelayHelper
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitForAll(){
 this.allTimeDelayHelper!.setStartTime();

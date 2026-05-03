@@ -50,9 +50,9 @@ export class GyroSensorFactory
          {
         
 
-    private allBinaryGyroSensor: AllBinaryOrientationSensor = AllBinaryOrientationSensor.NULL_ALLBINARY_ORIENTATION_SENSOR;
+    private static allBinaryGyroSensor: AllBinaryOrientationSensor = AllBinaryOrientationSensor.NULL_ALLBINARY_ORIENTATION_SENSOR;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(){
 GyroSensorFactory.allBinaryGyroSensor= new NoGyroSensor();

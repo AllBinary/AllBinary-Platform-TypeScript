@@ -80,7 +80,7 @@ export class NullClip
 
     public static readonly NULL_CONTROL: NullJ2SEControl = new NullJ2SEControl(BooleanControl.Type.MUTE);
 
-                //@Throws(LineUnavailableException::class)
+                //@Throws(LineUnavailableException.constructor)
             
     public open(format: AudioFormat, data: number[], offset: number, bufferSize: number){
 var format = format
@@ -90,7 +90,7 @@ var bufferSize = bufferSize
 }
 
 
-                //@Throws(LineUnavailableException::class, IOException::class)
+                //@Throws(LineUnavailableException.constructor, IOException.constructor)
             
     public open(stream: AudioInputStream){
 var stream = stream
@@ -254,7 +254,7 @@ var count = count
 }
 
 
-                //@Throws(LineUnavailableException::class)
+                //@Throws(LineUnavailableException.constructor)
             
     public open(){
 }

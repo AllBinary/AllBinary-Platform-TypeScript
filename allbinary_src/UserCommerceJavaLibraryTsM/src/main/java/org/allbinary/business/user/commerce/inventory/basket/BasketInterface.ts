@@ -74,7 +74,7 @@ export interface BasketInterface {
 
     getNumberOf(product: string): number
 
-                //@Throws(MoneyException::class)
+                //@Throws(MoneyException.constructor)
             
     getSubTotal(): Money
 

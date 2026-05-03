@@ -58,7 +58,7 @@ export class AbeNoLicense
          implements AbeLicenseInterface {
         
 
-    private abeNoLicense: AbeNoLicense = new AbeNoLicense();
+    private static abeNoLicense: AbeNoLicense = new AbeNoLicense();
 
     public static getInstance(): AbeNoLicense{
 

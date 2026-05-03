@@ -144,7 +144,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onTechEvent", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 this.len= 0;

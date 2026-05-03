@@ -163,7 +163,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

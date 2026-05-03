@@ -71,13 +71,13 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 export class AndroidTitleProgressBar extends ProgressCanvas {
         
 
-    private showTitleProgressBarRunnable: ShowTitleProgressBarRunnable = new ShowTitleProgressBarRunnable();
+    private showTitleProgressBarRunnable: ShowTitleProgressBarRunnable = new this.ShowTitleProgressBarRunnable();
 
-    private dismissTitleProgressBarRunnable: DismissTitleProgressBarRunnable = new DismissTitleProgressBarRunnable();
+    private dismissTitleProgressBarRunnable: DismissTitleProgressBarRunnable = new this.DismissTitleProgressBarRunnable();
 
-    private progressDialogPortionSetProgressRunnable: TitleProgressBarPortionSetProgressRunnable = new TitleProgressBarPortionSetProgressRunnable();
+    private progressDialogPortionSetProgressRunnable: TitleProgressBarPortionSetProgressRunnable = new this.TitleProgressBarPortionSetProgressRunnable();
 
-    private progressDialogSetProgressRunnable: TitleProgressBarSetProgressRunnable = new TitleProgressBarSetProgressRunnable();
+    private progressDialogSetProgressRunnable: TitleProgressBarSetProgressRunnable = new this.TitleProgressBarSetProgressRunnable();
 
     private progressActivity: ProgressActivityInterface = NullProgressActivity.NULL_PROGRESS_ACTIVITY;
 
@@ -241,7 +241,7 @@ var graphics = graphics
 }
 
 
-export inner class TitleProgressBarSetProgressRunnable
+TitleProgressBarSetProgressRunnable = class
             extends Object
          implements Runnable {
         
@@ -273,7 +273,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
                 
             
-export inner class TitleProgressBarPortionSetProgressRunnable
+TitleProgressBarPortionSetProgressRunnable = class
             extends Object
          implements Runnable {
         
@@ -305,7 +305,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
                 
             
-export inner class ShowTitleProgressBarRunnable
+ShowTitleProgressBarRunnable = class
             extends Object
          implements Runnable {
         
@@ -337,7 +337,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
                 
             
-export inner class DismissTitleProgressBarRunnable
+DismissTitleProgressBarRunnable = class
             extends Object
          implements Runnable {
         

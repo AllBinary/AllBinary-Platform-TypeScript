@@ -80,7 +80,7 @@ this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public applyMotionRectangleConstraints(motionRectangles: MotionRectangles){
     //var motionRectangles = motionRectangles

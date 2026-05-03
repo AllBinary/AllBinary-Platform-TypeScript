@@ -81,7 +81,7 @@ this.key= key;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public encrypt(array: number[]): number[]{
 var array = array
@@ -98,7 +98,7 @@ this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public decrypt(array: number[]): number[]{
 var array = array

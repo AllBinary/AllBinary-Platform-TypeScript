@@ -64,7 +64,7 @@ import { AdjustedImageAnimation } from "./AdjustedImageAnimation.js";
 export class ImageAnimationFactory extends BaseImageAnimationFactory {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactory(image: Image): ImageAnimationFactory{
     //var image = image
@@ -91,7 +91,7 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

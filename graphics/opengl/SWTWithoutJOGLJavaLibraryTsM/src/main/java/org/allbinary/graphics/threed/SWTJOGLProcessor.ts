@@ -64,7 +64,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public glHolder: GLHolder = new GLHolder()
+    public glHolder: GLHolder = new class extends GLHolder
                                 {
                                 
     public run(renderer: any = {}){

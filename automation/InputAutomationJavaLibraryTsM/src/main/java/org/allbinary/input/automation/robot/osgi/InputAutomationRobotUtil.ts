@@ -53,7 +53,7 @@ export class InputAutomationRobotUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getChangeEvent(inputRobotInterface: InputRobotInterface): InputAutomationRobotChangeEvent{
 var inputRobotInterface = inputRobotInterface

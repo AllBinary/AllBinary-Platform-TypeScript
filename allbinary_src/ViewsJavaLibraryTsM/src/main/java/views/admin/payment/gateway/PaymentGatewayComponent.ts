@@ -86,7 +86,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addDomNodeInterfaces(){
 

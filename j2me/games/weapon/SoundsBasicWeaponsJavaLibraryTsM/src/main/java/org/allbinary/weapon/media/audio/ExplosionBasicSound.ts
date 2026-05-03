@@ -50,7 +50,7 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 export class ExplosionBasicSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new ExplosionBasicSound();
+    private static soundInterface: Sound = new ExplosionBasicSound();
 
     public static getInstance(): Sound{
 

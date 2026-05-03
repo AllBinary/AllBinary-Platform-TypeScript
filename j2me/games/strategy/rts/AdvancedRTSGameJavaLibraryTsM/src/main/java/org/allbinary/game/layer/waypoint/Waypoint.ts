@@ -143,7 +143,7 @@ this.ownerLayer= ownerLayer;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -220,7 +220,7 @@ this.paths= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPathsListFromCacheOnly(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -233,7 +233,7 @@ this.paths= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPathsListRunnable(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -305,7 +305,7 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPaths(startGeographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
@@ -436,7 +436,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
     //var event = event
@@ -475,7 +475,7 @@ this.releaseCachedPaths();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(unitLayer: PathFindingLayerInterface){
     //var unitLayer = unitLayer

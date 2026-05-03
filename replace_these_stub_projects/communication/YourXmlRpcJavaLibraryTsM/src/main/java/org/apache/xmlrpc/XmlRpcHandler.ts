@@ -35,7 +35,7 @@ import { Vector } from "../../../java/util/Vector.js";
 export interface XmlRpcHandler {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     execute(method: string, params: Vector<any>): any
 

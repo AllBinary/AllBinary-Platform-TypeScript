@@ -138,7 +138,7 @@ var l = l
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(){
 }

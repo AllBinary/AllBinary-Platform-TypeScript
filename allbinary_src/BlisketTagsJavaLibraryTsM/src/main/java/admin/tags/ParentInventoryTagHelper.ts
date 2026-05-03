@@ -67,7 +67,7 @@ export class ParentInventoryTagHelper
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(tagClass: any = {}, parentTag: Tag){
 var tagClass = tagClass

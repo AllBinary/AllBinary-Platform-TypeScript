@@ -52,7 +52,7 @@ import { CacheableInterface } from "./CacheableInterface.js";
 export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implements CacheInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createCache(size: number): IndexedBasicArrayListCache{
 var size = size
@@ -82,7 +82,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(size: number){
 var size = size
@@ -123,13 +123,13 @@ var index = index
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addDefault(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addObject(anyType: Object){
 var anyType = anyType
@@ -138,7 +138,7 @@ this.list.add(anyType);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
@@ -147,7 +147,7 @@ this.list.add(cacheableInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addArray(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces

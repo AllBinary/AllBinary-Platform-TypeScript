@@ -24,7 +24,7 @@
         
             import { Exception } from "../../../../java/lang/Exception.js";
         
-import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
+import { Choice } from "../../../../javax/microedition/lcdui/ChoiceI.js";
 
     
 import { Command } from "../../../../javax/microedition/lcdui/Command.js";
@@ -94,9 +94,9 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
     var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;
 ;
     
-gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE);
+gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getExclusiveInstance()!.get(), ChoiceI.EXCLUSIVE);
     
-gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE);
+gameFeatureFormUtil!.addChoiceGroup(this, InGameFeatureChoiceGroups.getMultipleInstance()!.get(), ChoiceI.MULTIPLE);
     
 this.initCommands(commandListener);
     

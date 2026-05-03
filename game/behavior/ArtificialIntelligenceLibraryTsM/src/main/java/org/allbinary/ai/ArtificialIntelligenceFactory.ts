@@ -52,7 +52,7 @@ export class ArtificialIntelligenceFactory
          implements ArtificialIntelligenceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(anyType: any = {}): ArtificialIntelligence{
 var anyType = anyType

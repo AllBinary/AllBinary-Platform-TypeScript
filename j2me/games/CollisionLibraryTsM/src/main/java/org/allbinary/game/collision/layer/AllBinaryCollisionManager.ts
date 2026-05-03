@@ -57,7 +57,7 @@ export class AllBinaryCollisionManager
          {
         
 
-    private allBinaryCollisionManager: AllBinaryCollisionManager = new AllBinaryCollisionManager();
+    private static allBinaryCollisionManager: AllBinaryCollisionManager = new AllBinaryCollisionManager();
 
     public static getInstance(): AllBinaryCollisionManager{
 
@@ -74,7 +74,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, startIndex: number){
 var layerManager = layerManager
@@ -103,7 +103,7 @@ this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInte
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     collide(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface){
 var layerManager = layerManager

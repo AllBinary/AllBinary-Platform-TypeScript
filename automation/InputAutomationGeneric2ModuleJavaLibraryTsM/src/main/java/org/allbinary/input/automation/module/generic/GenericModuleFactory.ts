@@ -72,7 +72,7 @@ import { GenericInputAutomationWorker } from "./GenericInputAutomationWorker.js"
 export class GenericModuleFactory extends AbstractInputAutomationFactory {
         
 
-    private NAME: string = "Generic" +InputAutomationModuleData.MODULE_NAME_END;
+    private static NAME: string = "Generic" +InputAutomationModuleData.MODULE_NAME_END;
 public constructor (){
             super(NAME, new GenericModuleConfigurationJPanel());
                     
@@ -82,7 +82,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(): RunnableInterface{

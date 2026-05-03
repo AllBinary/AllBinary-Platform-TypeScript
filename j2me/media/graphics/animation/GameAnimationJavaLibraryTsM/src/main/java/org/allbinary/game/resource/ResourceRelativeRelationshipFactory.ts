@@ -70,7 +70,7 @@ export class ResourceRelativeRelationshipFactory
 
     private initialized: boolean= false
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(level: number){
 var level = level
@@ -79,7 +79,7 @@ this.setInitialized(true);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getResourceRelativeRelationshipList(resource: string): BasicArrayList{
 var resource = resource
@@ -111,7 +111,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addResourceRelativeRelationship(resource: string, hardPoint: RelativeRelationship){
 var resource = resource

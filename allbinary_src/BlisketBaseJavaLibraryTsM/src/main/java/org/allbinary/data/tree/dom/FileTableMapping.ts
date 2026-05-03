@@ -76,7 +76,7 @@ this.file= file;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 
@@ -88,7 +88,7 @@ this.file= file;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 
@@ -114,7 +114,7 @@ filePropertyVector!.add(this.file.getPath());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 

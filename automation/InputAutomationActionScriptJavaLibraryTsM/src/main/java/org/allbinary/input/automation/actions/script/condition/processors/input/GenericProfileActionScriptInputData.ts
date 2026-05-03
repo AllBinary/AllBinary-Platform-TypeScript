@@ -46,11 +46,11 @@ export class GenericProfileActionScriptInputData
          {
         
 
-    public NAME: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_NAME";
+    public static NAME: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_NAME";
 
-    public TYPE: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_TYPE";
+    public static TYPE: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_TYPE";
 
-    public DELAY: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_DELAY";
+    public static DELAY: string = "GENERIC_CONFIGURATION_PROFILE_ACTION_INPUT_DELAY";
 private constructor (){
 
             super();

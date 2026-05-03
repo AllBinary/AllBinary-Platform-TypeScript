@@ -86,7 +86,7 @@ public constructor (name: string){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(level: number){
 var level = level
@@ -95,7 +95,7 @@ this.initImageCache(ImageCacheFactory.getInstance(), level);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initImageCache(imageCache: ImageCache, level: number){
 var imageCache = imageCache

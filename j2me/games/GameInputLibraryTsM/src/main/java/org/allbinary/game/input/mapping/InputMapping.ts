@@ -194,7 +194,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addMapping(inputToGameKeyMapping: InputToGameKeyMapping){
     //var inputToGameKeyMapping = inputToGameKeyMapping

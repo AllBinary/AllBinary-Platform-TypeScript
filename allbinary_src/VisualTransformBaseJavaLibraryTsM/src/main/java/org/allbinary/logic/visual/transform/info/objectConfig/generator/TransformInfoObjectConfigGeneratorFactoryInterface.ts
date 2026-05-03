@@ -50,7 +50,7 @@ import { TransformInfoInterface } from "../../../../../../../../org/allbinary/lo
 export interface TransformInfoObjectConfigGeneratorFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator
 

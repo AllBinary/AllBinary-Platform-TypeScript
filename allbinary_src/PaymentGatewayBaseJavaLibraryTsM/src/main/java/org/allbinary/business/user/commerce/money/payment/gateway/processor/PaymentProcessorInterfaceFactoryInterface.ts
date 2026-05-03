@@ -53,7 +53,7 @@ import { TransformInfoInterface } from "../../../../../../../../../org/allbinary
 export interface PaymentProcessorInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(transformInfoInterface: TransformInfoInterface, paymentTransactionInterface: PaymentTransactionInterface): PaymentProcessorInterface
 

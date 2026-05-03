@@ -395,7 +395,7 @@ disposalUtil!.disposeImage(this.imageToShow);
 }
 
 
-                //@Throws(Throwable::class)
+                //@Throws(Throwable.constructor)
             
     finalize(){
 super.finalize();

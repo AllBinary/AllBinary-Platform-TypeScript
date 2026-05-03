@@ -54,7 +54,7 @@ export interface BasicEventHandlerInterface {
 
     addListener(eventListenerInterface: EventListenerInterface)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fireEvent(eventObject: AllBinaryEventObject)
 

@@ -76,7 +76,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

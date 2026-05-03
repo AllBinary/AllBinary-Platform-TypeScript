@@ -68,7 +68,7 @@ export class KeyboardInputAutomationProcessor
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static process(keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
 var keyActionScriptInputInterface = keyActionScriptInputInterface
@@ -175,7 +175,7 @@ Thread.sleep(keyActionScriptInputInterface!.getTime());
 ;
     
 
-        while(!timeHelper!.isTimeTNT(); || toLong > 6000)
+        while(!timeHelper!.isTimeTNT() || toLong > 6000)
         {
 toLong++;
     

@@ -172,7 +172,7 @@ this.portion= new Portion(hashMap);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     emailUser(quoteRequest: QuoteRequest){
 var quoteRequest = quoteRequest
@@ -215,7 +215,7 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, ema
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     emailAdmins(quoteRequest: QuoteRequest){
 var quoteRequest = quoteRequest
@@ -278,7 +278,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public email(): string{
 

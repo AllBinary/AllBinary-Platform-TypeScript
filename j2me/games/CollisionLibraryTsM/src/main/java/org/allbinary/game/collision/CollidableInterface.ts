@@ -56,15 +56,15 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 export interface CollidableInterface extends NamedInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isCollidable(): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isCollision(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer)
 

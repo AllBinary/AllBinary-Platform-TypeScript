@@ -53,11 +53,11 @@ import { InputAutomationActionInterface } from "../../../../../../org/allbinary/
 export interface BasicGameInputAutomationActionInterface extends InputAutomationActionInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     attack(rectangle: Rectangle)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     target(rectangle: Rectangle)
 

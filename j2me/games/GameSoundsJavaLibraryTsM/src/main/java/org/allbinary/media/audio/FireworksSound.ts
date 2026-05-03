@@ -46,7 +46,7 @@ import { Sound } from "./Sound.js";
 export class FireworksSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new FireworksSound();
+    private static soundInterface: Sound = new FireworksSound();
 
     public static getInstance(): Sound{
 

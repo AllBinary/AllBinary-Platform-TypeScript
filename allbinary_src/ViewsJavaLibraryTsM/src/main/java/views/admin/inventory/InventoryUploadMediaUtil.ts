@@ -130,7 +130,7 @@ this.itemInterface= itemInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public saveFiles(byteArray: number[], fileName: string, mediaData: MediaData): ItemInterface{
 var byteArray = byteArray

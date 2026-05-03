@@ -108,9 +108,14 @@ export class PaymentTypeUtil
 
     private static readonly instance: PaymentTypeUtil = new PaymentTypeUtil();
 
-                init{
-}
+                private static initResult: number = PaymentTypeUtil.init();
+                private static init(): number { 
+                    
 
+
+                    return 0;
+                }
+            
     public static getInstance(): PaymentTypeUtil{
 
 
@@ -183,7 +188,7 @@ this.paymentTypeVector!.add(paymentType);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(paymentTypeString: string): PaymentType{
 var paymentTypeString = paymentTypeString
@@ -226,7 +231,7 @@ i < size; i++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initDefault(storeName: string){
 var storeName = storeName
@@ -320,7 +325,7 @@ index < nodeList!.getLength(); index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDefault(storeName: string): PaymentType{
 var storeName = storeName

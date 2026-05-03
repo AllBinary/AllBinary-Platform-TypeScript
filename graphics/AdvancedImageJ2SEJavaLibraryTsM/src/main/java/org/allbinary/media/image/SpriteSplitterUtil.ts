@@ -107,7 +107,7 @@ export class SpriteSplitterUtil
 
     private readonly _ROW: string = "_row";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, totalFrames: number, totalAnimations: number, widthReduction: number, heightReduction: number, increaseWidth: number, increaseHeight: number, spriteType: string, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput

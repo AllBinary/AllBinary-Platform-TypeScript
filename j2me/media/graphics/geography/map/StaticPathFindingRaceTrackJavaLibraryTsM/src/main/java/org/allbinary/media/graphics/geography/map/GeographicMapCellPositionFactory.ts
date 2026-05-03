@@ -78,7 +78,7 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(geographicMapInterface: BasicGeographicMap): BasicGeographicMapCellPositionFactory{
     //var geographicMapInterface = geographicMapInterface

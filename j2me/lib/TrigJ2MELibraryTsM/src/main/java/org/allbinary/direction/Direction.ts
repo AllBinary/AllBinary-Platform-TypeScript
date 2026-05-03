@@ -49,7 +49,7 @@ export class Direction
          {
         
 
-    private directionArray: Direction[] = new Array(13);
+    private static directionArray: Direction[] = new Array(13);
 
     public static getInstance(direction: number): Direction{
 var direction = direction

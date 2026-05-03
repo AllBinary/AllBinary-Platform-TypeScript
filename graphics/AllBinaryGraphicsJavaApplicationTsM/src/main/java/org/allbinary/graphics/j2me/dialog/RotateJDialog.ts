@@ -80,7 +80,7 @@ export class RotateJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(new ARunnable()
+java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -88,7 +88,7 @@ java.awt.EventQueue.invokeLater(new ARunnable()
     var dialog: RotateJDialog = new RotateJDialog(new javax.swing.JFrame(), true);
 ;
     
-dialog.addWindowListener(new java.awt.event.WindowAdapter()
+dialog.addWindowListener(new class extends java.awt.event.WindowAdapter
                                 {
                                 
     public windowClosing(e: java.awt.event.WindowEvent){
@@ -151,7 +151,7 @@ this.jLabel2!.setText("Total Angular Rotation:");
     
 this.jButton1!.setText("OK");
     
-this.jButton1!.addActionListener(new java.awt.event.ActionListener()
+this.jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

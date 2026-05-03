@@ -49,7 +49,7 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 export class DowngradeSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new DowngradeSound();
+    private static soundInterface: Sound = new DowngradeSound();
 
     public static getInstance(): Sound{
 

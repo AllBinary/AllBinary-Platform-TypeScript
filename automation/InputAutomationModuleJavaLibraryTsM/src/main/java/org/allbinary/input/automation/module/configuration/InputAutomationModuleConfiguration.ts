@@ -155,7 +155,7 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface, node: Node){
     //var abeClientInformation = abeClientInformation
@@ -231,7 +231,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toDomNode(document: Document): Node{
 var document = document

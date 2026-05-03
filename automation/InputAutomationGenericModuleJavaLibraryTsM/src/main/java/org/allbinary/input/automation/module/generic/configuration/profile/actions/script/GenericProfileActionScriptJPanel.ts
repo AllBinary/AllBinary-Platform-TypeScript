@@ -154,7 +154,7 @@ setLayout(new java.awt.GridLayout(1, 0));
     
 this.actionScriptJTree!.setPreferredSize(new java.awt.Dimension(500, 500));
     
-this.actionScriptJTree!.addMouseListener(new java.awt.event.MouseAdapter()
+this.actionScriptJTree!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){

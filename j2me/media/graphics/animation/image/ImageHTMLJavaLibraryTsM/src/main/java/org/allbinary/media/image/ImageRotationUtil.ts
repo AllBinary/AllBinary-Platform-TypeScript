@@ -82,7 +82,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage
@@ -140,7 +140,7 @@ canvasSurface!.translate(originalPlayNImage!.width() /2, originalPlayNImage!.hei
     
 canvasSurface!.rotate(Math.toRadians(rotationInDegrees));
     
-canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width(); /2,  -originalPlayNImage!.height(); /2);
+canvasSurface!.drawImage(originalPlayNImage,  -originalPlayNImage!.width() /2,  -originalPlayNImage!.height() /2);
     
 
 

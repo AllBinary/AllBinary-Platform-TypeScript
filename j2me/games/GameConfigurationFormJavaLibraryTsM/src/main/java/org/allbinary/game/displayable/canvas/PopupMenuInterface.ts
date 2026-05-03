@@ -46,13 +46,13 @@
 export interface PopupMenuInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     popupMenu()
 
     closeMenu()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toggleMenu()
 

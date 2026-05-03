@@ -99,7 +99,7 @@ var thread = thread
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public join(thread: Thread){
 var thread = thread

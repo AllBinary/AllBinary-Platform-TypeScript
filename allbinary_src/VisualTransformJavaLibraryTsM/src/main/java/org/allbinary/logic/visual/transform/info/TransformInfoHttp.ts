@@ -204,7 +204,7 @@ this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropert
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     set(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -312,7 +312,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as string);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTemplateFilePath(): AbPath{
 
@@ -324,7 +324,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as string);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -336,7 +336,7 @@ this.setData(hashMap!.get(transformInfoData!.DATA) as string);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDataFilePath(): AbPath{
 

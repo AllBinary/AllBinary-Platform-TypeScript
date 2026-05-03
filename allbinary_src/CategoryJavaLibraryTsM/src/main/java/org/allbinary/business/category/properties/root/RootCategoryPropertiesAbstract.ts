@@ -104,7 +104,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setValue(value: string){
 var value = value
@@ -116,7 +116,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setRootFilePath(value: AbPath){
 var value = value
@@ -128,7 +128,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setRootFilePath(value: string){
 var value = value
@@ -140,7 +140,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRootFilePath(): AbPath{
 
@@ -151,7 +151,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isRealRoot(): boolean{
 
@@ -162,7 +162,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isRoot(): boolean{
 
@@ -173,7 +173,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWebAppPath(categoryHierarchyInterface: CategoryHierarchyInterface): string{
 var categoryHierarchyInterface = categoryHierarchyInterface
@@ -248,7 +248,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -260,7 +260,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -273,7 +273,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 

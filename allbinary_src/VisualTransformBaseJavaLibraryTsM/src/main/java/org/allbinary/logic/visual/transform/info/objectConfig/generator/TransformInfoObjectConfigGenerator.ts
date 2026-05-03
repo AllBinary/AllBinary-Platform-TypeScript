@@ -56,7 +56,7 @@ export class TransformInfoObjectConfigGenerator
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(input: string): string{
 var input = input

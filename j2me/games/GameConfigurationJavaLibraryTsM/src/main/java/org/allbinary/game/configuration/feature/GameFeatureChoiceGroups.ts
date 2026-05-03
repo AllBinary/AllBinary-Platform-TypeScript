@@ -52,9 +52,9 @@ export class GameFeatureChoiceGroups
          {
         
 
-    private gameFeatureChoiceGroupsExclusive: GameFeatureChoiceGroups = new GameFeatureChoiceGroups();
+    private static gameFeatureChoiceGroupsExclusive: GameFeatureChoiceGroups = new GameFeatureChoiceGroups();
 
-    private gameFeatureChoiceGroupsMultiple: GameFeatureChoiceGroups = new GameFeatureChoiceGroups();
+    private static gameFeatureChoiceGroupsMultiple: GameFeatureChoiceGroups = new GameFeatureChoiceGroups();
 
     public static getExclusiveInstance(): GameFeatureChoiceGroups{
 

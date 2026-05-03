@@ -154,7 +154,7 @@ this.fetchHighScoresPreload(gameInfo, highScoresResultsListener, true);
     //var gameInfo = gameInfo
     //var highScoresResultsListener = highScoresResultsListener
     //var preload = preload
-SecondaryThreadPool.getInstance()!.runTask(new ARunnable()
+SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 {
                                 
     public run(){

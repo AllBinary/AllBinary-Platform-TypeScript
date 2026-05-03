@@ -207,7 +207,7 @@ this.getXmlData();
 ;
     
 
-        while(index < size && !xmlRequest!.startsWith(CategoryRequestHelper.categoryRequest);)
+        while(index < size && !xmlRequest!.startsWith(CategoryRequestHelper.categoryRequest))
         {
 xmlRequest= keyArray[index]! as string;
     
@@ -333,7 +333,7 @@ this.logUtil!.putF("Loaded Child Category", this, "getXmlData()");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setCategoryLoader(requestNode: Node){
 var requestNode = requestNode

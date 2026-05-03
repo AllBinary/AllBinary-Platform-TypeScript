@@ -67,7 +67,7 @@ export class ActivityFractureUtilAPI1 extends ActivityFractureUtil {
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(activity: Activity){
     //var activity = activity

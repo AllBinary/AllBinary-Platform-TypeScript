@@ -111,7 +111,7 @@ export class DownloadFileServlet extends HttpServlet {
 
     private readonly DEFAULT_BUFFER_SIZE: number = 16384;
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -298,7 +298,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -308,7 +308,7 @@ this.processRequest(request, response);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

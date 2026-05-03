@@ -46,9 +46,9 @@ export class SWTUtil
          {
         
 
-    public isSWT: boolean = true;
+    public static isSWT: boolean = true;
 
-    public SWT: string = "SWT";
+    public static SWT: string = "SWT";
 
 }
                 

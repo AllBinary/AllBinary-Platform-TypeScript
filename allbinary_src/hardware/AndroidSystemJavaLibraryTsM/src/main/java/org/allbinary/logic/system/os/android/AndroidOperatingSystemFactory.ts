@@ -91,7 +91,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOperatingSystemInstance(): GenericOperatingSystem{
 

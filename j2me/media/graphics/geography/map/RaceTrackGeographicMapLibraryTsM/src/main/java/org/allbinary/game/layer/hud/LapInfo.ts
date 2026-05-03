@@ -49,7 +49,7 @@ export class LapInfo
          {
         
 
-    public NULL_LAP_INFO: LapInfo = new LapInfo( -1);
+    public static NULL_LAP_INFO: LapInfo = new LapInfo( -1);
 
     private numberOfLaps: number
 

@@ -81,7 +81,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getScreenAsBufferedImages(): BufferedImage[]{
 this.logUtil!.putF(this.commonStrings!.START, this, "getScreenAsBufferedImages");

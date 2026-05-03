@@ -46,7 +46,7 @@ import { Sound } from "./Sound.js";
 export class SelectSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new SelectSound();
+    private static soundInterface: Sound = new SelectSound();
 
     public static getInstance(): Sound{
 

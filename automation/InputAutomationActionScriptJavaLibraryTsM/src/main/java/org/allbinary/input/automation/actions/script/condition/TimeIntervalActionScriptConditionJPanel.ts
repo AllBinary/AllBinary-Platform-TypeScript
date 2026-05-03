@@ -154,7 +154,7 @@ this.titleJLabel!.setText("Time Interval Condition Options");
     
 this.okJButton!.setText("OK");
     
-this.okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -182,7 +182,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.timeIntervalActionJButton!.setText("Edit");
     
-this.timeIntervalActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.timeIntervalActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

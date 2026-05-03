@@ -112,7 +112,7 @@ this.rtsFormInputArray[1]= new UnitRTSFormInput(this.groupInterfaceArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -146,7 +146,7 @@ this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerMa
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
@@ -191,7 +191,7 @@ var point = point
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -235,7 +235,7 @@ this.logUtil!.putF(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.i
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
     //var associatedRtsLayer = associatedRtsLayer
@@ -251,7 +251,7 @@ var point = point
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer

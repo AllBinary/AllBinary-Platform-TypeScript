@@ -46,15 +46,15 @@ export class GameSkillType
          {
         
 
-    public MANA: GameSkillType = new GameSkillType("Mana");
+    public static MANA: GameSkillType = new GameSkillType("Mana");
 
-    public REPLENISH: GameSkillType = new GameSkillType("Replenish");
+    public static REPLENISH: GameSkillType = new GameSkillType("Replenish");
 
-    public TIMED: GameSkillType = new GameSkillType("Timed");
+    public static TIMED: GameSkillType = new GameSkillType("Timed");
 
-    public ATTACK: GameSkillType = new GameSkillType("Attack");
+    public static ATTACK: GameSkillType = new GameSkillType("Attack");
 
-    public TRANSPORT: GameSkillType = new GameSkillType("Transport");
+    public static TRANSPORT: GameSkillType = new GameSkillType("Transport");
 
     private readonly SPELL_GAME_SKILL_TYPE: string = "SpellGameSkillType: ";
 

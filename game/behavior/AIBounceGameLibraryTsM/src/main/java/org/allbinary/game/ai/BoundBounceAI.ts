@@ -101,7 +101,7 @@ graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rect
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

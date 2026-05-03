@@ -65,7 +65,7 @@ var maxPathWeight = maxPathWeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -80,7 +80,7 @@ this.fixOverPassEdges(graph);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fixStart(graph: any = {}, startPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -88,7 +88,7 @@ var startPathFindingNodeList = startPathFindingNodeList
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fixEnd(graph: any = {}, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -96,14 +96,14 @@ var endPathFindingNodeList = endPathFindingNodeList
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fixOverPassEdges(graph: any = {}){
 var graph = graph
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 var startPathFindingNodeList = startPathFindingNodeList
@@ -112,7 +112,7 @@ var pathList = pathList
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     removeOverPassEdges(pathList: BasicArrayList){
 var pathList = pathList

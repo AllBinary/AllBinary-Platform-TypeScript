@@ -71,7 +71,7 @@ public constructor (image: Image, sequenceArray: number[], dx: number, dy: numbe
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

@@ -49,7 +49,7 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 export class UpgradeSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new UpgradeSound();
+    private static soundInterface: Sound = new UpgradeSound();
 
     public static getInstance(): Sound{
 

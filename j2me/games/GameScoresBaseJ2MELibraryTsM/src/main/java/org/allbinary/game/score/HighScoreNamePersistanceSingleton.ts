@@ -116,7 +116,7 @@ export class HighScoreNamePersistanceSingleton
          {
         
 
-    private SINGLETON: HighScoreNamePersistanceSingleton = new HighScoreNamePersistanceSingleton();
+    private static SINGLETON: HighScoreNamePersistanceSingleton = new HighScoreNamePersistanceSingleton();
 
     public static getInstance(): HighScoreNamePersistanceSingleton{
 
@@ -146,7 +146,7 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo){
     //var abeClientInformation = abeClientInformation
@@ -187,7 +187,7 @@ this.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public delete(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, deleteId: number){
     //var abeClientInformation = abeClientInformation

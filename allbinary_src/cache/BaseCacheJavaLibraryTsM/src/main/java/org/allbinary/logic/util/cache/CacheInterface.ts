@@ -47,15 +47,15 @@
 export interface CacheInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     add(cacheableInterface: CacheableInterface)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addArray(cacheableInterfaces: CacheableInterface[])
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     clear()
 

@@ -49,7 +49,7 @@ export interface SoundsFactoryInterface {
 
     init()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getSoundInterfaceArray(): Sound[]
 

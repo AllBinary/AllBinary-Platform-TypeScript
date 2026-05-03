@@ -71,7 +71,7 @@ super.init(allbinaryLayerFactoryInterface, total);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface

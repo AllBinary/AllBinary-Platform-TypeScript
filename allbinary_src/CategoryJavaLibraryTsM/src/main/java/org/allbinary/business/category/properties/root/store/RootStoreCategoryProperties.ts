@@ -235,7 +235,7 @@ this.log();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initPath(){
 
@@ -325,7 +325,7 @@ this.fileAbPath= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWebAppPath(): AbPath{
 
@@ -407,7 +407,7 @@ categoryVector!.add(this.getValue());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -419,7 +419,7 @@ categoryVector!.add(this.getValue());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -432,7 +432,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 

@@ -153,7 +153,7 @@ this.getJPopupMenu()!.add(jMenuItemDelete);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(frame: number){
 var frame = frame

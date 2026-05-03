@@ -69,7 +69,7 @@ export class NullRotationAnimationFactory
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
-    private NULL_ROTATION_ANIMATION_FACTORY: NullRotationAnimationFactory = new NullRotationAnimationFactory();
+    private static NULL_ROTATION_ANIMATION_FACTORY: NullRotationAnimationFactory = new NullRotationAnimationFactory();
 
     public static getFactoryInstance(): NullRotationAnimationFactory{
 
@@ -83,7 +83,7 @@ export class NullRotationAnimationFactory
 
     public readonly NULL_ROTATION_ANIMATION_ARRAY: RotationAnimation[] = [];
 
-    private readonly NULL_ANIMATION: Animation = new NullRotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), AnimationBehavior.getInstance())
+    private readonly NULL_ANIMATION: Animation = new class extends NullRotationAnimation
                                 {
                                 
     public paintXY(graphics: Graphics, x: number, y: number){
@@ -111,7 +111,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

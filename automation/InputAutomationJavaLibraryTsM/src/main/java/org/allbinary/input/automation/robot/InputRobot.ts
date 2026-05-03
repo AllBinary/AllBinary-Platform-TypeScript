@@ -126,7 +126,7 @@ this.robot= new Robot(graphicsDevice);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public mouseMoveToTarget(rectangle: Rectangle, x: number, y: number){
     //var rectangle = rectangle
@@ -170,7 +170,7 @@ this.logUtil!.putF(message, this, "moveMouse");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public mouseMoveToTarget(rectangle: Rectangle){
 var rectangle = rectangle

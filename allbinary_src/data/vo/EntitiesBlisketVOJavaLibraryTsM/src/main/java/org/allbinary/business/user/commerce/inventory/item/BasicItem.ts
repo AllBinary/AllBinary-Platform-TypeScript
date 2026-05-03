@@ -1029,7 +1029,7 @@ values.add(this.specials);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 

@@ -174,7 +174,7 @@ this.logUtil!.putF("Adding Listener: " +genericProfileDataWorkerType, this, this
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processDataWorkerResults(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.PROCESS_DATA_WORKER_RESULTS);
@@ -269,7 +269,7 @@ this.lastFrame= this.getFrame();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);

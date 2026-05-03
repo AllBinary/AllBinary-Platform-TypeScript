@@ -65,7 +65,7 @@ export class JarUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static main(args: string[]){
 var args = args

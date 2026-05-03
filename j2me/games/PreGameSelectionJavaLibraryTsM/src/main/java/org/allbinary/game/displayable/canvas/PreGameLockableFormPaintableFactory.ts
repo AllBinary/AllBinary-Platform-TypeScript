@@ -69,7 +69,7 @@ this.lockedIndex= lockedIndex;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceItemPaintable(paintableForm: PaintableForm): ItemPaintable{
 var paintableForm = paintableForm

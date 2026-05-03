@@ -139,7 +139,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.CLOSE);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 this.repaintProcessor!.process();

@@ -176,7 +176,7 @@ this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeapon
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initXYZ(x: number, y: number, z: number){
 var x = x
@@ -191,7 +191,7 @@ this.z= z;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(sourceLayerInterface: AllBinaryLayer, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface){
 var sourceLayerInterface = sourceLayerInterface
@@ -256,12 +256,12 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
 
-                        if(this.isExhausted() && !this.isDestroyed();)
+                        if(this.isExhausted() && !this.isDestroyed())
                         
                                     {
                                     
@@ -588,7 +588,7 @@ this.weaponProperties= weaponProperties;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
 var gl = gl

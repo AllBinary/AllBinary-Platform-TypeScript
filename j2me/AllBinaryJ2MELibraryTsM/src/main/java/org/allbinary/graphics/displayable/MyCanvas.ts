@@ -277,7 +277,7 @@ this.setPaused(false);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(){
 this.displayInfoSingleton!.process();

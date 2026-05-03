@@ -94,7 +94,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, ownerTransformInfoInterface: TransformInfoInterface){
     //var abeClientInformation = abeClientInformation
@@ -168,7 +168,7 @@ new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoDomNode: TransformInfoDomNode, ownerTransformInfoInterface: TransformInfoInterface){
     //var abeClientInformation = abeClientInformation

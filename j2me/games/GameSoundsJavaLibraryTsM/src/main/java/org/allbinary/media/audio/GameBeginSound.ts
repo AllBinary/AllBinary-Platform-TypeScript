@@ -46,7 +46,7 @@ import { Sound } from "./Sound.js";
 export class GameBeginSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new GameBeginSound();
+    private static soundInterface: Sound = new GameBeginSound();
 
     public static getInstance(): Sound{
 

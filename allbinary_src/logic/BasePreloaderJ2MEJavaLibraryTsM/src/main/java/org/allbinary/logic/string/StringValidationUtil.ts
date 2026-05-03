@@ -109,7 +109,7 @@ index < value.length; index++)
 ;
     
 
-                        if(!isNumber(digit); && digit != '.')
+                        if(!isNumber(digit) && digit != '.')
                         
                                     {
                                     

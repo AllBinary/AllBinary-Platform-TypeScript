@@ -83,9 +83,9 @@ import { NoClassDefFoundError } from "./NoClassDefFoundError.js";
 export class AbeClassLoader extends ClassLoader {
         
 
-    private classes: Map = new HashMap<any, any>();
+    private static classes: Map = new HashMap<any, any>();
 
-    private PATH: string
+    private static PATH: string
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -122,7 +122,7 @@ var name = name
 }
 
 
-                //@Throws(ClassNotFoundException::class)
+                //@Throws(ClassNotFoundException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public loadClass(name: string): Function{
@@ -136,7 +136,7 @@ var name = name
 }
 
 
-                //@Throws(ClassNotFoundException::class)
+                //@Throws(ClassNotFoundException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public loadClass(name: string, resolve: boolean): Function{
@@ -241,7 +241,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
 
                                     }
                                 
-AbeClassLoader.classes.put(name, myClass::class.java);
+AbeClassLoader.classes.put(name, myClass.constructor.java);
     
 
                                     }
@@ -252,7 +252,7 @@ AbeClassLoader.classes.put(name, myClass::class.java);
 
                         }
                             
-resolveClass(myClass::class.java);
+resolveClass(myClass.constructor.java);
     
 
 
@@ -376,7 +376,7 @@ StreamUtil.getInstance()!.close(in);
 }
 
 
-                //@Throws(ClassNotFoundException::class)
+                //@Throws(ClassNotFoundException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public oldLoadClass(name: string, resolve: boolean): Function{
@@ -500,7 +500,7 @@ myClass= defineClass(name, classBytes, 0, classBytes!.length);
 
                                     }
                                 
-AbeClassLoader.classes.put(name, myClass::class.java);
+AbeClassLoader.classes.put(name, myClass.constructor.java);
     
 
                                     }
@@ -518,7 +518,7 @@ AbeClassLoader.classes.put(name, myClass::class.java);
 
                         }
                             
-resolveClass(myClass::class.java);
+resolveClass(myClass.constructor.java);
     
 
 

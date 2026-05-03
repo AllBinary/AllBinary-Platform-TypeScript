@@ -83,7 +83,7 @@ this.contextConfigurationInterface= contextConfigurationInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 
@@ -95,7 +95,7 @@ this.contextConfigurationInterface= contextConfigurationInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 

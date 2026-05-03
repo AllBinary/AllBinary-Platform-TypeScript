@@ -70,7 +70,7 @@ export class PlatformFormInputMappingFactory
 }
 
 
-    private SINGLETON: InputToGameKeyMapping = InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
+    private static SINGLETON: InputToGameKeyMapping = InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

@@ -86,7 +86,7 @@ export class TextNotificationUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireError(message: string){
 var message = message
@@ -97,7 +97,7 @@ this.fire(message);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireNew(message: string){
 var message = message
@@ -108,7 +108,7 @@ this.fire(message);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireSuccess(message: string){
 var message = message
@@ -125,7 +125,7 @@ this.fire(message);
 
     private readonly gameNotificationEventHandler: GameNotificationEventHandler = GameNotificationEventHandler.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fire(message: string){
 var message = message

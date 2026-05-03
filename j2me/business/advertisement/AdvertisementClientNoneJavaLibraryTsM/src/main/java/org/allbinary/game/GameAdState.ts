@@ -72,7 +72,7 @@ VirtualKeyboardEventHandler.getInstance()!.addListener(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
 var virtualKeyboardEvent = virtualKeyboardEvent

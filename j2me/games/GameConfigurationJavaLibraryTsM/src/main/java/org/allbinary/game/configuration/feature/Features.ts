@@ -118,7 +118,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -136,7 +136,7 @@ this.add(gameFeature);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public add(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -157,7 +157,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeatur
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public removeDefault(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -171,7 +171,7 @@ this.defaultList!.remove(gameFeature);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(gameFeature: Feature){
     //var gameFeature = gameFeature
@@ -288,7 +288,7 @@ var gameFeature = gameFeature
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toggle(gameFeature: Feature){
 var gameFeature = gameFeature

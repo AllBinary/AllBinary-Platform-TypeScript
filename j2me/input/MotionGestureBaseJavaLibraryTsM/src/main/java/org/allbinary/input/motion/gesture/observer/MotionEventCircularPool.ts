@@ -85,7 +85,7 @@ this.eventPool!.init(new MotionEventFactory(eventPool, id));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(motionGestureInput: MotionGestureInput): MotionGestureEvent{

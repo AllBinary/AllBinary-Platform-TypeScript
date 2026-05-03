@@ -90,7 +90,7 @@ this.image= image;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 

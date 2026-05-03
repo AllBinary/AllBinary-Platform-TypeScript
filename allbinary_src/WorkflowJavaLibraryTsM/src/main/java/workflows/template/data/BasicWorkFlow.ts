@@ -117,7 +117,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getName(): string{
 
@@ -149,7 +149,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(): number{
 

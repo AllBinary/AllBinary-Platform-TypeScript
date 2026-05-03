@@ -49,7 +49,7 @@ export class BasicBuildGameInitializerFactory
          implements GameInitializationInterfaceFactoryInterface {
         
 
-    public NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY: BasicBuildGameInitializerFactory = new BasicBuildGameInitializerFactory();
+    public static NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY: BasicBuildGameInitializerFactory = new BasicBuildGameInitializerFactory();
 
     public getInstance(): GameInitializationInterface{
 

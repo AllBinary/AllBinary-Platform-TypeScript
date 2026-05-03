@@ -51,7 +51,7 @@ export class CustomMapGeneratorBase
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public copyMapIntoCustomMap(){
 }
@@ -67,7 +67,7 @@ export class CustomMapGeneratorBase
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCustomType(column: number, row: number, currentType: number): number{
     //var column = column

@@ -65,11 +65,16 @@ export class AcceptableResponseUtil
 }
 
 
-                init{
+                private static initResult: number = AcceptableResponseUtil.init();
+                private static init(): number { 
+                    
 TsUtil.getInstance()!.hashCode(AcceptableResponseFactory.getInstance()!.HTML);
     
-}
 
+
+                    return 0;
+                }
+            
     public readonly candidateVector: Vector = new Vector();
 
     public readonly tagNameVector: Vector = new Vector();

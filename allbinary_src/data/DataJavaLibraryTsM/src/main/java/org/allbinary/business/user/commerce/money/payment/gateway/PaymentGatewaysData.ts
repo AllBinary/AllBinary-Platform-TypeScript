@@ -46,7 +46,7 @@ export class PaymentGatewaysData
          {
         
 
-    public NAME: string = "PAYMENTGATEWAYS_NAME";
+    public static NAME: string = "PAYMENTGATEWAYS_NAME";
 private constructor (){
 
             super();

@@ -59,7 +59,7 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 export class BuildingEventHandler extends BasicEventHandler {
         
 
-    private eventHandler: BuildingEventHandler = new BuildingEventHandler();
+    private static eventHandler: BuildingEventHandler = new BuildingEventHandler();
 
     public static getInstance(): BuildingEventHandler{
 
@@ -76,7 +76,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

@@ -225,7 +225,7 @@ this.layerPositionFinderInterface= layerPositionFinderInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -262,7 +262,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     left(){
 this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.LEFT);
@@ -270,7 +270,7 @@ this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canv
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     right(){
 this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.RIGHT);
@@ -308,7 +308,7 @@ GameInputProcessorUtil.init(this.removeInputProcessorArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -374,14 +374,14 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPU
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processMotionInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     select(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent
@@ -461,7 +461,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setSelectedRTSLayer(rtsLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
 var rtsLayer = rtsLayer

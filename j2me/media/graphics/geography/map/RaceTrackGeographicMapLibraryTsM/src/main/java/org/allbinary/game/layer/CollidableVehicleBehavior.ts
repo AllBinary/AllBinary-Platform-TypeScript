@@ -83,7 +83,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface

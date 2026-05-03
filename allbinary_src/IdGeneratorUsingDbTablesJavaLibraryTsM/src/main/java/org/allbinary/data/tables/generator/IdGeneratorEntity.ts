@@ -90,7 +90,7 @@ super.setTableName(this.tableName);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(name: string): number{
 var name = name

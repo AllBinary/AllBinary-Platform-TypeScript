@@ -142,7 +142,7 @@ this.damageFloatersPaintableInterface= damageFloaters;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getHealthBar(buildingLayer: BuildingLayer): Paintable{
     //var buildingLayer = buildingLayer

@@ -49,7 +49,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 export interface CompleteMotionGestureListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onMotionGestureCompleted(list: BasicArrayList)
 

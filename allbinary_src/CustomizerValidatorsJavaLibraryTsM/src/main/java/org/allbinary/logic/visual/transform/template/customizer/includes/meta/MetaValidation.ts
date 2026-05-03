@@ -101,7 +101,7 @@ var contentValue = contentValue
 this.label= label;
     
 
-                        if(htmlMetaAttributeData!.equals(HtmlMetaAttributeDataFactory.getInstance()!.HTTP_EQUIV))
+                        if(htmlMetaAttributeData! === HtmlMetaAttributeDataFactory.getInstance()!.HTTP_EQUIV)
                         
                                     {
                                     this.httpEquiv= attributeValue;
@@ -110,7 +110,7 @@ this.label= label;
                                     }
                                 
                              else 
-                        if(htmlMetaAttributeData!.equals(HtmlMetaAttributeDataFactory.getInstance()!.NAME))
+                        if(htmlMetaAttributeData! === HtmlMetaAttributeDataFactory.getInstance()!.NAME)
                         
                                     {
                                     this.name= attributeValue;
@@ -255,7 +255,7 @@ hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

@@ -91,7 +91,7 @@ CompleteMotionGestureInputEventHandler.getInstance()!.addListener(new GameKeyFro
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onMotionGestureCompleted(list: BasicArrayList){
 var list = list

@@ -105,7 +105,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFormData(){
 
@@ -182,7 +182,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

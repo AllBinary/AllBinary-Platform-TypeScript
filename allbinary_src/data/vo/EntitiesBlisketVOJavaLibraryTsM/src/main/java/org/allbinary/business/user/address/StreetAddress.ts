@@ -657,7 +657,7 @@ hashMap!.put(StreetAddressData.COUNTRY, this.country);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

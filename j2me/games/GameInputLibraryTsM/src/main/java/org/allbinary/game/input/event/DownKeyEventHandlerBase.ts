@@ -123,7 +123,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: number){
     //var eventObject = eventObject
@@ -185,7 +185,7 @@ index++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEventForEvent(eventObject: GameKeyEvent){
     //var eventObject = eventObject
@@ -251,7 +251,7 @@ index++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: number, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
@@ -265,7 +265,7 @@ downKeyEventListenerInterface!.onDownKey(eventObject);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processEvent(eventObject: GameKeyEvent, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

@@ -49,7 +49,7 @@ export interface MyCanvasEventListener {
 
     delete(evt: MyCanvasEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     duplicate(evt: MyCanvasEvent)
 
@@ -59,11 +59,11 @@ export interface MyCanvasEventListener {
 
     explode(evt: MyCanvasEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     autoExplode(evt: MyCanvasEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     center(evt: MyCanvasEvent)
 

@@ -57,7 +57,7 @@ export class InputProbability
          {
         
 
-    public INPUT_PROBABILITY: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    public static INPUT_PROBABILITY: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
     private readonly likelyhoodIntegerArray: number[][]
 

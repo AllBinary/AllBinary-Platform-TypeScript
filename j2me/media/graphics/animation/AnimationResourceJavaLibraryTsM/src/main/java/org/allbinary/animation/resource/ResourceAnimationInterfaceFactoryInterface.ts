@@ -49,7 +49,7 @@ import { BasicAnimationInterfaceFactoryInterface } from "../../../../org/allbina
 export interface ResourceAnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface
 

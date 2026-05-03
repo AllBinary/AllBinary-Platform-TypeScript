@@ -77,7 +77,7 @@ export class OpenGLResources
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public openRawResource(id: number): InputStream{
     //var id = id
@@ -89,7 +89,7 @@ export class OpenGLResources
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public openRawResourceFromName(resourceName: string): InputStream{
     //var resourceName = resourceName
@@ -101,7 +101,7 @@ export class OpenGLResources
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getResourceAsStream(resourceName: string): InputStream{
     //var resourceName = resourceName

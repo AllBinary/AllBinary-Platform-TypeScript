@@ -109,7 +109,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getId() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId()))
                         
                                     {
                                     
@@ -139,7 +139,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getNumber() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber()))
                         
                                     {
                                     
@@ -169,7 +169,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getInBaskets() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets()))
                         
                                     {
                                     
@@ -199,7 +199,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getWeight() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight()))
                         
                                     {
                                     
@@ -319,7 +319,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getPrice() == 
                                     null
-                                 || !this.itemInterface!.getPrice()!.isValid();)
+                                 || !this.itemInterface!.getPrice()!.isValid())
                         
                                     {
                                     
@@ -476,7 +476,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getId() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getId()))
                         
                                     {
                                     stringBuffer!.append("Id is invalid. Must be > 0.<br />");
@@ -498,7 +498,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getNumber() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getNumber()))
                         
                                     {
                                     stringBuffer!.append("Number of items value is not a valid number.<br />");
@@ -520,7 +520,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getInBaskets() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getInBaskets()))
                         
                                     {
                                     stringBuffer!.append("In Baskets value is not a valid number.<br />");
@@ -542,7 +542,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getWeight() != 
                                     null
-                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight());)
+                                 && !stringValidationUtil!.isNumber(this.itemInterface!.getWeight()))
                         
                                     {
                                     stringBuffer!.append("Weight value is not a valid number.<br />");
@@ -630,7 +630,7 @@ this.itemInterface= itemInterface;
 
                         if(this.itemInterface!.getPrice() == 
                                     null
-                                 || !this.itemInterface!.getPrice()!.isValid();)
+                                 || !this.itemInterface!.getPrice()!.isValid())
                         
                                     {
                                     stringBuffer!.append("Price value is invalid. Must be < " +this.MAXPRICE +" and > 0 in length.<br />");

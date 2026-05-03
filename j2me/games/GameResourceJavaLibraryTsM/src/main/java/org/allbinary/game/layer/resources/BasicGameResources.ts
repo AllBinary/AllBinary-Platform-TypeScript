@@ -120,7 +120,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     append(ROOT: string, sizeString: string){
 var ROOT = ROOT
@@ -158,7 +158,7 @@ this.RESOURCE_DESTROY= BasicGameResources.stringBuffer!.toString();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getString(): string{
 

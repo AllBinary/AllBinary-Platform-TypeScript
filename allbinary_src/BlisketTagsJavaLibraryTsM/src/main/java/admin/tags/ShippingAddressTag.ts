@@ -88,7 +88,7 @@ this.value= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     set(): string{
 
@@ -156,7 +156,7 @@ this.value= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     setToBillingAddress(): string{
 
@@ -224,7 +224,7 @@ this.value= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

@@ -56,7 +56,7 @@ export class TrackingEventCircularStaticPool
          {
         
 
-    private instance: TrackingEventCircularStaticPool = new TrackingEventCircularStaticPool();
+    private static instance: TrackingEventCircularStaticPool = new TrackingEventCircularStaticPool();
 
     public static getInstance(): TrackingEventCircularStaticPool{
 
@@ -76,7 +76,7 @@ this.EVENT_POOL.init(new TrackingEventFactory());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(layerInterface: AllBinaryLayer): TrackingEvent{

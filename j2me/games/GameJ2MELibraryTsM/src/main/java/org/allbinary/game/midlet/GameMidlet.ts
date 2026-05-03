@@ -392,7 +392,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setDemo(){
 
@@ -403,7 +403,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createGame(){
 
@@ -414,7 +414,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     mediaShutdown(){
 
@@ -829,7 +829,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
 ;
     
 
-                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(lockableFeature);)
+                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(lockableFeature))
                         
                                     {
                                     inApplicationPurchaseFactory!.purchase(lockableFeature);
@@ -1472,7 +1472,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInputMappingInstructionsCanvas(): MyCanvas{
 
@@ -1484,7 +1484,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInputMappingCanvas(): MyCanvas{
 
@@ -1496,7 +1496,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getAboutCanvas(): MyCanvas{
 
@@ -1508,7 +1508,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getHelpPaintable(): HelpPaintable{
 
@@ -1519,7 +1519,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createHighScoresCanvas(): HighScoresCanvas{
 
@@ -1530,7 +1530,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public startGameCanvasRunnableInterface(){
 
@@ -1549,7 +1549,7 @@ threadFactoryUtil!.start(this.thread);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     stopGameCanvasRunnableInterface(){
 this.logUtil!.putF(commonStrings!.START, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
@@ -1652,7 +1652,7 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(){
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.SAVE);
@@ -1666,7 +1666,7 @@ GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");

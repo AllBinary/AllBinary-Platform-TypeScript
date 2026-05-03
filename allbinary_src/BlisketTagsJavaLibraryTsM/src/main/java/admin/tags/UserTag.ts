@@ -93,7 +93,7 @@ this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable);
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

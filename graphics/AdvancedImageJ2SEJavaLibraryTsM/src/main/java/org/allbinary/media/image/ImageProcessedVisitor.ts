@@ -51,7 +51,7 @@ import { IOException } from "../../../../java/io/IOException.js";
 export interface ImageProcessedVisitor extends ImageProcessorInputCompositeInterface {
         
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     visit(generatedBufferedImage: BufferedImage, nameEnding: string, index: number)
 

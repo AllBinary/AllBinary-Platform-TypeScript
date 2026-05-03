@@ -91,7 +91,7 @@ this.setText(text);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public nextFrame(){
 }

@@ -96,7 +96,7 @@ export class NullPathFindingLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getEndGeographicMapCellPositionList(): BasicArrayList{
 
@@ -134,7 +134,7 @@ export class NullPathFindingLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
 var ownerLayer = ownerLayer
@@ -164,7 +164,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setTarget(targetGameLayer: PathFindingLayerInterface){
     //var targetGameLayer = targetGameLayer
@@ -176,7 +176,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellHistory = geographicMapCellHistory
@@ -199,7 +199,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -221,7 +221,7 @@ var ownerLayer = ownerLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setLoad(resource: number){
 var resource = resource
@@ -233,7 +233,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getSurroundingGeographicMapCellPositionList(): BasicArrayList{
 
@@ -271,7 +271,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public trackTo(reason: string){
     //var reason = reason
@@ -283,7 +283,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public trackToDXY(dx: number, dy: number){
     //var dx = dx
@@ -296,7 +296,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
     //var allbinaryLayer = allbinaryLayer
@@ -336,7 +336,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -347,7 +347,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTopLeftGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -412,7 +412,7 @@ var resource = resource
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isDestroyed(): boolean{
 

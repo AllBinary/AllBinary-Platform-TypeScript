@@ -138,7 +138,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
     private readonly geographicMapCellTypeFactory: GeographicMapCellTypeFactory = GeographicMapCellTypeFactory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCellTypeAt(cellPosition: GeographicMapCellPosition): GeographicMapCellType{
     //var cellPosition = cellPosition

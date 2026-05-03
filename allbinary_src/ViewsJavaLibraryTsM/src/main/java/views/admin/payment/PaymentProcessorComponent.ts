@@ -78,7 +78,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addDomNodeInterfaces(){
 
@@ -98,7 +98,7 @@ this.addDomNodeInterface(paymentProcessorInterface as DomNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

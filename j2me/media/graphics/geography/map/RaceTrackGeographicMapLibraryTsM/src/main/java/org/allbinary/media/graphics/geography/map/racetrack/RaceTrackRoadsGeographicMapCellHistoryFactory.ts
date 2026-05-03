@@ -49,7 +49,7 @@ export class RaceTrackRoadsGeographicMapCellHistoryFactory
          {
         
 
-    private geographicMapCellHistory: GeographicMapCellHistory = new GeographicMapCellHistory();
+    private static geographicMapCellHistory: GeographicMapCellHistory = new GeographicMapCellHistory();
 
     public static getInstance(): GeographicMapCellHistory{
 

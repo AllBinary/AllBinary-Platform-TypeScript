@@ -110,7 +110,7 @@ this.textureFactory= textureFactory;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
 var gl = gl

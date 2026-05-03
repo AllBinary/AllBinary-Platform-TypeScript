@@ -86,7 +86,7 @@ this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.max
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

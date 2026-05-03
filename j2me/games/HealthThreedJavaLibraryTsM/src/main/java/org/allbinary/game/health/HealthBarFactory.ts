@@ -61,7 +61,7 @@ export class HealthBarFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(layerInterface: AllBinaryLayer, healthInterface: Health, location: number, direction: number): HealthBar{
 var layerInterface = layerInterface

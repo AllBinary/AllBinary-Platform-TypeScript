@@ -49,11 +49,11 @@ import { DomDocumentMappingInterface } from "../../../../../../org/allbinary/dat
 export interface DomDocumentQueueInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     offer(domDocumentMappingInterface: DomDocumentMappingInterface): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     remove(): DomDocumentMappingInterface
 

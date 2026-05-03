@@ -115,7 +115,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generate(objectConfigDocument: Document): Document{
 var objectConfigDocument = objectConfigDocument

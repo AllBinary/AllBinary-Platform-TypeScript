@@ -87,7 +87,7 @@ import { TouchButtonResource } from "./TouchButtonResource.js";
 export class TouchButton extends Paintable {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createButton(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): TouchButton{
     //var touchButtonInput = touchButtonInput

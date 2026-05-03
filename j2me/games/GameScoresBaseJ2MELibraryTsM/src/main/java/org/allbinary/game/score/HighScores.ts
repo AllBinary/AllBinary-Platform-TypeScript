@@ -163,7 +163,7 @@ this.orderedHighScoresList!.add(newHighScore);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isBestScore(newHighScore: HighScore): boolean{
 var newHighScore = newHighScore

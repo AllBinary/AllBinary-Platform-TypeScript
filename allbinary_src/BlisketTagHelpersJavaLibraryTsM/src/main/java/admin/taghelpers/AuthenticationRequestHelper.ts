@@ -134,7 +134,7 @@ this.request= httpServletRequest;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generateNewPassword(): string{
 
@@ -522,7 +522,7 @@ index < size; index++)
 ;
     
 
-                        if(userInterface!.getRole()!.getBasicUserRole()!.equals(nextRole))
+                        if(userInterface!.getRole()!.getBasicUserRole()!. === nextRole)
                         
                                     {
                                     userInterface!.validateSession(this.weblisketSession as WeblisketSessionInterface);

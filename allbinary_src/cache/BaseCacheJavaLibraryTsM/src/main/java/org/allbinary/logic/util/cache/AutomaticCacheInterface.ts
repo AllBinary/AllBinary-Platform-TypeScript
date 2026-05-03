@@ -48,7 +48,7 @@ import { CacheableInterface } from "./CacheableInterface.js";
 export interface AutomaticCacheInterface extends CacheInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     get(key: any): CacheableInterface
 

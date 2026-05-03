@@ -84,7 +84,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

@@ -87,7 +87,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface

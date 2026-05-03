@@ -71,7 +71,7 @@ export class NewUserFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(): UserInterface{
 
@@ -83,7 +83,7 @@ export class NewUserFactory
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(transformInfoInterface: TransformInfoInterface): UserInterface{
 var transformInfoInterface = transformInfoInterface
@@ -115,7 +115,7 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<any, any>): UserInterface{
 var httpServletRequest = httpServletRequest

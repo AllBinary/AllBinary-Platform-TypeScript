@@ -65,7 +65,7 @@ export interface ImageComparatorConstraintsInterface {
 
     isColorAllowed(frame: number, point: GPoint, color: Color): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isImageValid(bufferedImage: BufferedImage): boolean
 

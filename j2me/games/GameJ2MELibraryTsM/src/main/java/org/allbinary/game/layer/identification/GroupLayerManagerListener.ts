@@ -91,7 +91,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 export class GroupLayerManagerListener extends LayerManagerEventListener {
         
 
-    private SINGLETON: GroupLayerManagerListener = new GroupLayerManagerListener();
+    private static SINGLETON: GroupLayerManagerListener = new GroupLayerManagerListener();
 
     public static getInstance(): GroupLayerManagerListener{
 
@@ -416,7 +416,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent
@@ -483,7 +483,7 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent

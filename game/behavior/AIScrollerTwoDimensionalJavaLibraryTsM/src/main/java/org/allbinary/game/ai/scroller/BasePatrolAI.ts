@@ -81,7 +81,7 @@ export class BasePatrolAI extends BasicAI {
 
     public static readonly FIRING_DISTANCE: number = SmallIntegerSingletonFactory.getInstance()!.getAt(4)!;
 
-    public SPEED: number = SmallIntegerSingletonFactory.getInstance()!.getAt(5)!;
+    public static SPEED: number = SmallIntegerSingletonFactory.getInstance()!.getAt(5)!;
 
     maxDistance: number
 

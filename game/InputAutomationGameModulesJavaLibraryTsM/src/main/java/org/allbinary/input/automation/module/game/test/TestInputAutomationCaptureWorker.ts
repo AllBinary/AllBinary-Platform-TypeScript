@@ -113,7 +113,7 @@ this.setGenericProfileActions(genericProfileActions);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processDataWorkerResults(){
 
@@ -187,7 +187,7 @@ cacheInterface!.get(anyType);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.PROCESS);

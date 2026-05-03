@@ -212,7 +212,7 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -241,7 +241,7 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
@@ -323,7 +323,7 @@ this.processCellPosition(rtsPlayerLayerInterface, layerManager, geographicMapCel
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processCellPosition(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, geographicMapCellPosition: GeographicMapCellPosition){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -371,7 +371,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRT
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -394,7 +394,7 @@ this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     attemptBuild(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number): boolean{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -614,7 +614,7 @@ rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addWayPoint(layerInterface: WaypointLayer){
     //var layerInterface = layerInterface

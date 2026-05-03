@@ -82,7 +82,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(damageableInterface: DamageableInterface, damageableInterface2: DamageableInterface){
 var damageableInterface = damageableInterface
@@ -92,7 +92,7 @@ damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public debugDamage(collidableInterfaceCompositeInterface1: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 var collidableInterfaceCompositeInterface1 = collidableInterfaceCompositeInterface1

@@ -162,7 +162,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTO
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     read(){
 
@@ -359,7 +359,7 @@ PreLogUtil.put("Read Configuration: " +this.toString(), this, "read");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(){
 
@@ -429,7 +429,7 @@ dataOutputStream!.flush();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(){
 
@@ -485,7 +485,7 @@ features.addDefault(this.getVersionSelector());
                                 
                         else {
                             
-                        if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
+                        if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     PreLogUtil.put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, commonStrings!.INIT);
@@ -501,7 +501,7 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(gameFeature: Feature, colorLocked: boolean){
     //var gameFeature = gameFeature

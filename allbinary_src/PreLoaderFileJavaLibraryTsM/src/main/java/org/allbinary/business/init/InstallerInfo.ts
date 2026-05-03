@@ -90,11 +90,11 @@ export class InstallerInfo
 
     private static readonly PACKAGE: string = PATH_GLOBALS.getInstance()!.INIT_PATH;
 
-    private userName: string = StringUtil.getInstance()!.EMPTY_STRING;
+    private static userName: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    private password: string = StringUtil.getInstance()!.EMPTY_STRING;
+    private static password: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    private hasRead: boolean = false;
+    private static hasRead: boolean = false;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
@@ -111,7 +111,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(){
@@ -170,7 +170,7 @@ InstallerInfo.hasRead= false;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     read(){
@@ -258,7 +258,7 @@ InstallerInfo.password= password;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     updateIfNeeded(){
@@ -296,7 +296,7 @@ this.read();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getUserName(): string{
 this.updateIfNeeded();
@@ -310,7 +310,7 @@ this.updateIfNeeded();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPassword(): string{
 this.updateIfNeeded();
@@ -324,7 +324,7 @@ this.updateIfNeeded();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(userName: string, password: string): boolean{
 var userName = userName

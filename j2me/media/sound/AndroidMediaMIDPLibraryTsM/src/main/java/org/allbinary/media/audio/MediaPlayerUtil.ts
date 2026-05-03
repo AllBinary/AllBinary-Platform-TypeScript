@@ -70,7 +70,7 @@ export class MediaPlayerUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public wait(mediaPlayer: MediaPlayer){
 var mediaPlayer = mediaPlayer

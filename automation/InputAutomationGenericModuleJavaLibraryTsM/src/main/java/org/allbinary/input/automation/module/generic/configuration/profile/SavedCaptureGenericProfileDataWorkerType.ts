@@ -48,7 +48,7 @@ import { InputImageType } from "../../../../../../../../org/allbinary/input/medi
 export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileDataWorkerType {
         
 
-    public SAVED_CAPTURE: SavedCaptureGenericProfileDataWorkerType = new SavedCaptureGenericProfileDataWorkerType("Saved " +InputImageType.CAPTURE.getName(), "c:\\share\\captures\\2\\", 100);
+    public static SAVED_CAPTURE: SavedCaptureGenericProfileDataWorkerType = new SavedCaptureGenericProfileDataWorkerType("Saved " +InputImageType.CAPTURE.getName(), "c:\\share\\captures\\2\\", 100);
 
     private path: string
 

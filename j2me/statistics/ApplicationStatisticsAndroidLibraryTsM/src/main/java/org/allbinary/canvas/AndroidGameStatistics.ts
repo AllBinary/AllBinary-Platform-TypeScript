@@ -66,7 +66,7 @@ export class AndroidGameStatistics extends BaseGameStatistics {
 
     private totalOnDraws: number= 0
 
-    private readonly STRING_ARRAY: string[] = new Array(14);
+    private readonly ANDROID_STRING_ARRAY: string[] = new Array(14);
 public constructor (){
 
             super();
@@ -80,16 +80,16 @@ public constructor (){
 
                         for (
     var index: number = 0;
-index < this.STRING_ARRAY.length; index++)
+index < this.ANDROID_STRING_ARRAY.length; index++)
         {
-this.STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
+this.ANDROID_STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
     
 }
 
 }
 
 
-    public init(view: View){
+    public initView(view: View){
 var view = view
 super.init();
     
@@ -129,36 +129,36 @@ this.totalOnDraws++;
     var index: number = 0;
 index < stringArray!.length; index++)
         {
-this.STRING_ARRAY[index]= stringArray[index]!;
+this.ANDROID_STRING_ARRAY[index]= stringArray[index]!;
     
 }
 
 
-    var totalTime: number = getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
+    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
 ;
     
 totalTime= (totalTime /10000);
     
-this.STRING_ARRAY[10]= this.TOTAL_ONDRAWS;
+this.ANDROID_STRING_ARRAY[10]= this.TOTAL_ONDRAWS;
     
-this.STRING_ARRAY[11]= (this.totalOnDraws).toString();
+this.ANDROID_STRING_ARRAY[11]= (this.totalOnDraws).toString();
     
-this.STRING_ARRAY[12]= this.ONDRAWS_RATE;
+this.ANDROID_STRING_ARRAY[12]= this.ONDRAWS_RATE;
     
-this.STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
+this.ANDROID_STRING_ARRAY[13]= (this.totalOnDraws /totalTime).toString();
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.STRING_ARRAY;
+                        return this.ANDROID_STRING_ARRAY;
     
 }
 
 
     public toString(): string{
 
-    var totalTime: number = getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
+    var totalTime: number = this.getTimeDelayHelper()!.getElapsed(this.gameTickTimeDelayHelper!.startTime)!;
 ;
     
 totalTime= (totalTime /1000);
@@ -179,7 +179,7 @@ stringBuffer!.append(super.toStringAt(totalTime));
                                     {
                                     stringBuffer!.append(this.TOTAL_ONDRAWS);
     
-stringBuffer!.append(totalOnDraws.toString());
+stringBuffer!.append(this.totalOnDraws.toString());
     
 stringBuffer!.append(this.ONDRAWS_RATE);
     
@@ -206,7 +206,7 @@ stringBuffer!.append(drawsOverTime);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NOT;
+                        return this.NOT;
     
 
                         }

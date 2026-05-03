@@ -56,7 +56,7 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 export class InputAutomationGenericModuleServiceFactory extends InputAutomationModuleServiceFactory {
         
 
-    private inputAutomationGenericModuleServiceFactory: InputAutomationGenericModuleServiceFactory = new InputAutomationGenericModuleServiceFactory();
+    private static inputAutomationGenericModuleServiceFactory: InputAutomationGenericModuleServiceFactory = new InputAutomationGenericModuleServiceFactory();
 
     public static getInstance(): InputAutomationGenericModuleServiceFactory{
 

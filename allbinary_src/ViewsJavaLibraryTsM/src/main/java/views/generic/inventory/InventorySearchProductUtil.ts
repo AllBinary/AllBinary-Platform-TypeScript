@@ -111,7 +111,7 @@ export class InventorySearchProductUtil
 
     private readonly ITEM_NOT_FOUND: string = "Item Not Found.";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getProduct(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, product: string): string{
     //var abeClientInformation = abeClientInformation

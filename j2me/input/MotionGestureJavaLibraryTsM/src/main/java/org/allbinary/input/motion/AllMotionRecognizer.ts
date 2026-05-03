@@ -62,7 +62,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 export class AllMotionRecognizer extends MotionRecognizer {
         
 
-    private index: number = 0;
+    private static index: number = 0;
 
     private static readonly pointCircularPool: GPointCircularPool = new GPointCircularPool(40);
 
@@ -87,7 +87,7 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -123,7 +123,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -166,7 +166,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x
@@ -206,7 +206,7 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
 
     private lastY: number= 0
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
     //var x = x

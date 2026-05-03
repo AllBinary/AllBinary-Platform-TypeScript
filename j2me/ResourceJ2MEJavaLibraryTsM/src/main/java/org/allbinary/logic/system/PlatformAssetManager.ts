@@ -66,7 +66,7 @@ export class PlatformAssetManager
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource

@@ -109,12 +109,12 @@ export class SimpleFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Writer()
+                        return new class extends Writer
                                 {
                                 
     var private closed: boolean= false
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public append(c: string): Writer{
 var c = c
@@ -126,7 +126,7 @@ var c = c
     
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public append(csq: CharSequence): Writer{
 var csq = csq
@@ -138,7 +138,7 @@ var csq = csq
     
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public append(csq: CharSequence, start: number, end: number): Writer{
 var csq = csq
@@ -152,13 +152,13 @@ var end = end
     
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(c: number){
 var c = c
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(cbuf: string[], off: number, len: number){
 var cbuf = cbuf
@@ -166,13 +166,13 @@ var off = off
 var len = len
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(str: string){
 var str = str
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(str: string, off: number, len: number){
 var str = str
@@ -180,7 +180,7 @@ var off = off
 var len = len
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public flush(){
 }
@@ -199,10 +199,10 @@ var len = len
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Reader()
+                        return new class extends Reader
                                 {
                                 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public read(): number{
 
@@ -213,7 +213,7 @@ var len = len
     
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public read(cbuf: string[], off: number, len: number): number{
 var cbuf = cbuf
@@ -227,7 +227,7 @@ var len = len
     
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public read(target: CharBuffer): number{
 var target = target
@@ -239,7 +239,7 @@ var target = target
     
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public ready(): boolean{
 
@@ -250,7 +250,7 @@ var target = target
     
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public skip(n: number): number{
 var n = n

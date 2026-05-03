@@ -90,7 +90,7 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
 
     private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(AngleFactory.getInstance()!.DOWN);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
     //var layer = layer

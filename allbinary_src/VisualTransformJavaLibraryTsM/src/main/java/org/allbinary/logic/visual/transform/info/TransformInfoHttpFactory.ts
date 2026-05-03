@@ -75,7 +75,7 @@ export class TransformInfoHttpFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var propertiesHashMap = propertiesHashMap

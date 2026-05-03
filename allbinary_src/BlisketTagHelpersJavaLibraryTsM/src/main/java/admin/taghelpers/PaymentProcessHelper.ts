@@ -77,7 +77,7 @@ this.paymentProcessorComponent= new PaymentProcessorComponent(transformInfoInter
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(): string{
 

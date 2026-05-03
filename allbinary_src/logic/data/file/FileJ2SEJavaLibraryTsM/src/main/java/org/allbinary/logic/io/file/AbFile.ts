@@ -210,7 +210,7 @@ this.file= new File(abPath!.toFileSystemString());
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public getCanonicalPath(): string{
 
@@ -222,7 +222,7 @@ this.file= new File(abPath!.toFileSystemString());
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public getCanonicalFile(): any{
 
@@ -324,7 +324,7 @@ this.file= new File(abPath!.toFileSystemString());
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public createNewFile(): boolean{
 
@@ -336,7 +336,7 @@ this.file= new File(abPath!.toFileSystemString());
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public delete(): boolean{
 
@@ -579,13 +579,13 @@ var pathname = pathname
 }
 
 
-    public equals(obj: any = {}): boolean{
+    public  === (obj: any = {}): boolean{
 var obj = obj
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.equals(obj);;
+                        return this.file. === obj;;
     
 }
 

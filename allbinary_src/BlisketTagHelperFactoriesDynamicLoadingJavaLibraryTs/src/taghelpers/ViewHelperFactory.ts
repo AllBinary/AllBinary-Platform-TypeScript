@@ -72,7 +72,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class, LicensingException::class)
+                //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): any{
 var propertiesHashMap = propertiesHashMap

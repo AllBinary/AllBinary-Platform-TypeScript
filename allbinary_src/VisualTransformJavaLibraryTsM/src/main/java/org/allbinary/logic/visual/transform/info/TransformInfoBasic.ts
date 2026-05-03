@@ -206,7 +206,7 @@ var transformInfoObjectConfigInterface = transformInfoObjectConfigInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDataDocument(): Document{
 
@@ -291,7 +291,7 @@ var importUriPath = importUriPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 
@@ -303,7 +303,7 @@ var importUriPath = importUriPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 
@@ -315,7 +315,7 @@ var importUriPath = importUriPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 

@@ -157,7 +157,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
@@ -166,7 +166,7 @@ this.paintSimpleTiledLayer= this.simpleTiledLayer;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onMoveEvent(scrollMapEvent: ScrollMapEvent){
 var scrollMapEvent = scrollMapEvent

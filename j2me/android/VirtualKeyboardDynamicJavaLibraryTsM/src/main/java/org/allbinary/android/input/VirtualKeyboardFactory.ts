@@ -59,7 +59,7 @@ export class VirtualKeyboardFactory
          {
         
 
-    private virtualKeyboard: VirtualKeyboard = VirtualKeyboard.NULL_VIRTUAL_KEYBOARD;
+    private static virtualKeyboard: VirtualKeyboard = VirtualKeyboard.NULL_VIRTUAL_KEYBOARD;
 
     public static init(activity: Activity){
 var activity = activity

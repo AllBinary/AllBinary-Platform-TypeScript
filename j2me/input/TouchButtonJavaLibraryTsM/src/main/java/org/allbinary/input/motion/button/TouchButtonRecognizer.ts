@@ -93,7 +93,7 @@ export class TouchButtonRecognizer
 
     private readonly currentlyPressedTouchButtonSingleton: CurrentlyPressedTouchButtonSingleton = CurrentlyPressedTouchButtonSingleton.getInstance()!;
 
-export inner class ReleaseHelper
+ReleaseHelper = class
             extends Object
          {
         
@@ -108,7 +108,7 @@ this.touchButtonRecognizer= touchButtonRecognizer;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public release(touchButtonInput: TouchButtonInput, deviceId: number){
 var touchButtonInput = touchButtonInput
@@ -143,7 +143,7 @@ this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index
 }
                 
             
-export inner class MultitouchReleaseHelper extends ReleaseHelper {
+MultitouchReleaseHelper = class extends ReleaseHelper {
         
 public constructor (touchButtonRecognizer: TouchButtonRecognizer){
             super(touchButtonRecognizer);
@@ -155,7 +155,7 @@ public constructor (touchButtonRecognizer: TouchButtonRecognizer){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public release(touchButtonInput: TouchButtonInput, deviceId: number){
 var touchButtonInput = touchButtonInput
@@ -209,13 +209,13 @@ public constructor (){
                         if(TouchScreenFactory.getInstance()!.isMultiTouch())
                         
                                     {
-                                    this.releaseHelper= new MultitouchReleaseHelper(this);
+                                    this.releaseHelper= new this.MultitouchReleaseHelper(this);
     
 
                                     }
                                 
                         else {
-                            this.releaseHelper= new ReleaseHelper(this);
+                            this.releaseHelper= new this.ReleaseHelper(this);
     
 
                         }
@@ -223,7 +223,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processRelease(touchButtonInput: TouchButtonInput, deviceId: number){
 var touchButtonInput = touchButtonInput
@@ -243,7 +243,7 @@ this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public releaseTouchButtonInput(x: number, y: number, deviceId: number): boolean{
@@ -333,7 +333,7 @@ this.processRelease(touchButtonInput, deviceId);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pressTouchButtonInput(x: number, y: number, deviceId: number): boolean{

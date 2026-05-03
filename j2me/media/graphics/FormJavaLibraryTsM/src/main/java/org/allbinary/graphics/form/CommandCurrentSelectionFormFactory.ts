@@ -67,7 +67,7 @@ export class CommandCurrentSelectionFormFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
     //var title = title

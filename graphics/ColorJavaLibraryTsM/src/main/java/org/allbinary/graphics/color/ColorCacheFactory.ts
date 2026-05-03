@@ -67,11 +67,13 @@ export class ColorCacheFactory
          {
         
 
-    private cacheInterface: AutomaticCacheInterface = 
+    private static cacheInterface: AutomaticCacheInterface = 
                 null
             ;
 
-                init{
+                private static initResult: number = ColorCacheFactory.init();
+                private static init(): number { 
+                    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -86,22 +88,25 @@ export class ColorCacheFactory
     
 
         try {
-            logUtil!.putF(commonStrings!.START, ColorCacheFactory::class, STATIC_BLOCK);
+            logUtil!.putF(commonStrings!.START, ColorCacheFactory.constructor, STATIC_BLOCK);
     
 ColorCacheFactory.cacheInterface= AutomaticCacheInterfaceFactory.getInstance(new ColorCacheableFactory(), CacheTypeFactory.getInstance()!.CACHE, CachePolicyFactory.getInstance()!.THIRTY_MINUTES_TEN_THOUSAND_MAX);
     
-logUtil!.putF(commonStrings!.END, ColorCacheFactory::class, STATIC_BLOCK);
+logUtil!.putF(commonStrings!.END, ColorCacheFactory.constructor, STATIC_BLOCK);
     
 
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory::class, STATIC_BLOCK, e);
+logUtil!.put(commonStrings!.EXCEPTION, ColorCacheFactory.constructor, STATIC_BLOCK, e);
     
 }
 
-}
 
+
+                    return 0;
+                }
+            
     public static getInstance(): AutomaticCacheInterface{
 
 

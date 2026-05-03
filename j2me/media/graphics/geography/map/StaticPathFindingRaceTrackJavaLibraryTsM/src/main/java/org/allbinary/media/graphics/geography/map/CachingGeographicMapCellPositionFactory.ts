@@ -65,7 +65,7 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
     //var i_column = i_column

@@ -156,14 +156,14 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
     //var associatedRtsLayer = associatedRtsLayer
@@ -215,7 +215,7 @@ this.processGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, layerManag
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -224,7 +224,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -235,7 +235,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
     //var associatedRtsLayer = associatedRtsLayer
@@ -293,7 +293,7 @@ this.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, laye
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
 var associatedRtsLayer = associatedRtsLayer
@@ -304,7 +304,7 @@ var index = index
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getItemAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): CustomItem{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -325,7 +325,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getIndexAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): number{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -346,7 +346,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(layerManager: AllBinaryLayerManager, aItem: CustomItem, geographicMapCellPosition: GeographicMapCellPosition): CollidableDestroyableDamageableLayer{
     //var layerManager = layerManager

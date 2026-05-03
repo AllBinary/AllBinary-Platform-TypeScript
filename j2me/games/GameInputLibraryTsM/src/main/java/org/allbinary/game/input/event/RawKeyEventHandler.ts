@@ -169,7 +169,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEvent(keyCode: number, deviceId: number, repeated: boolean){
     //var keyCode = keyCode
@@ -211,7 +211,7 @@ index++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(keyCode: number, deviceId: number, repeated: boolean, eventListenerInterface: RawKeyEventListener){
     //var keyCode = keyCode

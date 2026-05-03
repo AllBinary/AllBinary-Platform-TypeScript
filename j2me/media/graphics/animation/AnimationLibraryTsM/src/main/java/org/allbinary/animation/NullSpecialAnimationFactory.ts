@@ -57,7 +57,7 @@ export class NullSpecialAnimationFactory
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
-    private NULL_SPECIAL_ANIMATION_FACTORY: NullSpecialAnimationFactory = new NullSpecialAnimationFactory();
+    private static NULL_SPECIAL_ANIMATION_FACTORY: NullSpecialAnimationFactory = new NullSpecialAnimationFactory();
 
     public static getFactoryInstance(): NullSpecialAnimationFactory{
 
@@ -74,7 +74,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -87,7 +87,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

@@ -66,7 +66,7 @@ import { FormTypeFactory } from "./FormTypeFactory.js";
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createForm(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): MultipleScrollSelectionHorizontalForm{
     //var title = title

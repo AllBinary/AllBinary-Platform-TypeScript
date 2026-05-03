@@ -62,7 +62,7 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
          {
         
 
-    private SINGLETON: ArtificialIntelligenceInterfaceFactoryInterfaceFactory = new ArtificialIntelligenceInterfaceFactoryInterfaceFactory();
+    private static SINGLETON: ArtificialIntelligenceInterfaceFactoryInterfaceFactory = new ArtificialIntelligenceInterfaceFactoryInterfaceFactory();
 
     public static getInstance(): ArtificialIntelligenceInterfaceFactoryInterfaceFactory{
 

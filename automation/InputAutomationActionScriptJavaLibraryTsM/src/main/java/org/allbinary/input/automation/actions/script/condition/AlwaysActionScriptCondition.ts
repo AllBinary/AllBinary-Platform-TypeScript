@@ -215,7 +215,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -234,7 +234,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScr
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public shouldProcess(frame: number): boolean{
 var frame = frame

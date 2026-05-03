@@ -49,7 +49,7 @@ export class Anchor
          {
         
 
-    public TOP_LEFT: number = Graphics.TOP&Graphics.LEFT;
+    public static TOP_LEFT: number = Graphics.TOP&Graphics.LEFT;
 
 }
                 

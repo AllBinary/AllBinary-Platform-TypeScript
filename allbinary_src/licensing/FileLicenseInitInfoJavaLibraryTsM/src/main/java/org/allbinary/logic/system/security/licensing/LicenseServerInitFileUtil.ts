@@ -86,16 +86,16 @@ export class LicenseServerInitFileUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new OutputStream()
+                        return new class extends OutputStream
                                 {
                                 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(b: number){
 var b = b
 }
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public write(b: number[], off: number, len: number){
 var b = b

@@ -58,7 +58,7 @@ import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.
 export class ScoreHudWidget extends NumberStringHud {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(maxscore: number, location: number, direction: number): ScoreHudWidget{
     //var maxscore = maxscore

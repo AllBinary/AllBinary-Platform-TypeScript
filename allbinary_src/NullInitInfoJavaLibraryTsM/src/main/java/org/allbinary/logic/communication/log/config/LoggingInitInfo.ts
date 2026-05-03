@@ -55,13 +55,13 @@ export class LoggingInitInfo
          {
         
 
-    private logConfigInfoList: BasicArrayList = 
+    private static logConfigInfoList: BasicArrayList = 
                 null
             ;
 
-    private hasRead: boolean = false;
+    private static hasRead: boolean = false;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static write(){
@@ -83,7 +83,7 @@ export class LoggingInitInfo
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static read(){
@@ -111,7 +111,7 @@ LoggingInitInfo.hasRead= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     static updateIfNeeded(){
@@ -151,7 +151,7 @@ LoggingInitInfo.logConfigInfoList= logConfigInfoList;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static get(): BasicArrayList{
 LoggingInitInfo.updateIfNeeded();
@@ -165,7 +165,7 @@ LoggingInitInfo.updateIfNeeded();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getTypeList(): BasicArrayList{
 LoggingInitInfo.updateIfNeeded();
@@ -243,7 +243,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getNumberOfLogConfigs(): number{
 

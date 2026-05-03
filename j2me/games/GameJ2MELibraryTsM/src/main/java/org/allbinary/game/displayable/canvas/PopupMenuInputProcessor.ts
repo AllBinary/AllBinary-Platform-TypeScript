@@ -113,7 +113,7 @@ this.rectangle= rectangle;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(key: number): number{
     //var key = key
@@ -145,7 +145,7 @@ gameCanvas!.toggleMenu();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInputList(): number{
 
@@ -245,7 +245,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, GameInputStrings.getInstance()
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processMotionInputs(): number{
 
@@ -276,7 +276,7 @@ motionGestureEventList!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent

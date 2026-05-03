@@ -130,7 +130,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(storeName: string): Vector{
 var storeName = storeName
@@ -186,7 +186,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface{
 var storeName = storeName

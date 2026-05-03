@@ -142,7 +142,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(): string{
 
@@ -285,7 +285,7 @@ rootView= replace.all(rootView);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createInputStream(): InputStream{
 

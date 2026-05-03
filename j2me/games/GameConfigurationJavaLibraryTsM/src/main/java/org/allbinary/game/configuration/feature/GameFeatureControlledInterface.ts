@@ -46,7 +46,7 @@
 export interface GameFeatureControlledInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(level: number)
 

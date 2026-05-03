@@ -98,7 +98,7 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
     private currentPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public runAPriorityTask(){
 
@@ -147,7 +147,7 @@ this.currentPriorityRunnable!.run();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public runATask(){
 
@@ -288,7 +288,7 @@ this.taskQueue!.addAt(index, task);
 }
 
 
-                //@Throws(InterruptedException::class)
+                //@Throws(InterruptedException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getTask(): Runnable{

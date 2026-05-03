@@ -149,7 +149,7 @@ this.contentType= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getXslFile(): string{
 
@@ -185,7 +185,7 @@ this.contentType= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileBaseNameNode(document: Document): Node{
 var document = document

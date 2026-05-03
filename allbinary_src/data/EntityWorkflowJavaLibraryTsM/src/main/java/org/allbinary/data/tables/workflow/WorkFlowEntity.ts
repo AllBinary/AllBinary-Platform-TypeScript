@@ -187,7 +187,7 @@ super.deleteWhere(keysAndValues);
 }
 
 
-                //@Throws(Exception::class, LicensingException::class)
+                //@Throws(Exception.constructor, LicensingException.constructor)
             
     public get(name: string, storeName: string): WorkFlowInterface{
     //var name = name

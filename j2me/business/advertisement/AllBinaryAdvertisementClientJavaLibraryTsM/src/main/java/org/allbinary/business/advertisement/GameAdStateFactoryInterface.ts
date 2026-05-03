@@ -50,7 +50,7 @@ import { SoftwareInformation } from "../../../../org/allbinary/logic/system/Soft
 export interface GameAdStateFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstanceForApp(softwareInformation: SoftwareInformation): GameAdStateBase
 

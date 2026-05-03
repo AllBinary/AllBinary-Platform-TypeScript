@@ -49,7 +49,7 @@ import { LayerInterfaceFactoryInterface } from "../../../../org/allbinary/layer/
 export interface CostLayerInterfaceFactoryInterface extends LayerInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getCost(): number
 

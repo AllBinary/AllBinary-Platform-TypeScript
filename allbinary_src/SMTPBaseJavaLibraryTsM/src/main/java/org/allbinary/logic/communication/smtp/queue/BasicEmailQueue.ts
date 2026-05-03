@@ -61,7 +61,7 @@ export class BasicEmailQueue extends BasicQueue implements EmailQueueInterface {
 
     private static readonly instance: BasicEmailQueue = new BasicEmailQueue();
 
-    private basicEmailQueue: BasicEmailQueue
+    private static basicEmailQueue: BasicEmailQueue
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): BasicEmailQueue{
@@ -92,7 +92,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public offer(emailInterface: EmailInterface): boolean{
@@ -129,7 +129,7 @@ this.remove(emailInterface as Object);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     post(emailInterface: EmailInterface){
@@ -148,7 +148,7 @@ this.processAllUnsent();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     processAllUnsent(){

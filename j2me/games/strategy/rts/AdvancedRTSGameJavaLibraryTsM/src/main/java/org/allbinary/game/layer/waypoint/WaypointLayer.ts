@@ -174,7 +174,7 @@ var damageType = damageType
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
 var damageType = damageType
@@ -187,7 +187,7 @@ var damageType = damageType
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed

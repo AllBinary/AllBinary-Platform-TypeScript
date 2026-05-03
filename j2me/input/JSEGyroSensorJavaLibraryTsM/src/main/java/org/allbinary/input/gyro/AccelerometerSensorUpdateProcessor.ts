@@ -64,7 +64,7 @@ import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/acce
 export class AccelerometerSensorUpdateProcessor extends Processor {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 

@@ -102,7 +102,7 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setValue(value: number){
     //var value = value
@@ -203,7 +203,7 @@ this.defaultValue= defaultValue;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDefault(){
 this.setValue(this.getDefaultValue());

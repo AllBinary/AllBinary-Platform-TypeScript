@@ -50,11 +50,11 @@ export interface FullScreenInterface {
 
     setFullScreenMode(mode: boolean)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     stopWaiting()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     waitOnNotify(wait: number)
 

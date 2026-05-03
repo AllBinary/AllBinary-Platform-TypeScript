@@ -154,7 +154,7 @@ this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel(numberStringArray
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -279,7 +279,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public update(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -341,7 +341,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public updateFor16Above(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -403,7 +403,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public updateFor16Below(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -513,7 +513,7 @@ this.jComboBox1!.setModel(new javax.swing.DefaultComboBoxModel<>(
     
 this.aboveJButton!.setText("Process");
     
-this.aboveJButton!.addActionListener(new java.awt.event.ActionListener()
+this.aboveJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -531,7 +531,7 @@ this.jLabel3!.setText("Height:");
     
 this.updateJButton!.setText("Update");
     
-this.updateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.updateJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -549,7 +549,7 @@ this.floatPercentJTextField!.setMinimumSize(new java.awt.Dimension(120, 22));
     
 this.adjustFor16AboveJButton!.setText("Adjust for 16 Above");
     
-this.adjustFor16AboveJButton!.addActionListener(new java.awt.event.ActionListener()
+this.adjustFor16AboveJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -563,7 +563,7 @@ adjustFor16AboveJButtonActionPerformed(evt);
     
 this.adjustFor16BelowJButton!.setText("Adjust for 16 Below");
     
-this.adjustFor16BelowJButton!.addActionListener(new java.awt.event.ActionListener()
+this.adjustFor16BelowJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

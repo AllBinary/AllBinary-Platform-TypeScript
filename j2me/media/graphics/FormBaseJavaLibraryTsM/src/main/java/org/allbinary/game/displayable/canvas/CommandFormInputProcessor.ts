@@ -144,7 +144,7 @@ this.form= form;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(key: number): number{
     //var key = key
@@ -252,7 +252,7 @@ this.logUtil!.putF(command.toString(), this, PROCESS_COMMAND);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInputList(): number{
 
@@ -350,7 +350,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processMotionInputs(): number{
 
@@ -381,7 +381,7 @@ motionGestureEventList!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
     //var motionGestureEvent = motionGestureEvent

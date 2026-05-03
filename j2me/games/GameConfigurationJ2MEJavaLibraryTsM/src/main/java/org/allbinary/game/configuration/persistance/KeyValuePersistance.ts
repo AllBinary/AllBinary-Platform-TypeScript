@@ -101,7 +101,7 @@ protected constructor (recordId: string){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -110,7 +110,7 @@ this.loadAllSize(abeClientInformation, 1);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadAllSize(abeClientInformation: AbeClientInformationInterface, size: number){
     //var abeClientInformation = abeClientInformation
@@ -242,7 +242,7 @@ recordStore!.closeRecordStore();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation

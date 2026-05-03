@@ -166,7 +166,7 @@ this.pickupBehavior= PickupBehavior.NULL_PICKUP_BEHAVIOR;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initPosition(){
 this.setPosition(this.initX, this.initY, this.initZ);
@@ -174,7 +174,7 @@ this.setPosition(this.initX, this.initY, this.initZ);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initPositionXYZ(x: number, y: number, z: number){
     //var x = x
@@ -196,7 +196,7 @@ super.paint(graphics);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -209,7 +209,7 @@ super.paint(graphics);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
     //var damageType = damageType
@@ -221,7 +221,7 @@ super.paint(graphics);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isDestroyed(): boolean{
 
@@ -249,7 +249,7 @@ this.groupInterface= teamInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -329,43 +329,43 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public up(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public down(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public right(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public left(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public strafeLeft(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public strafeRight(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -373,7 +373,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -381,7 +381,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -389,7 +389,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -397,7 +397,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -405,7 +405,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -413,35 +413,35 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public upAnalog(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public downAnalog(yAnalogValue: number){
     //var yAnalogValue = yAnalogValue
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public rightAnalog(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public leftAnalog(xAnalogValue: number){
     //var xAnalogValue = xAnalogValue
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public rightTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
     //var layerManager = layerManager
@@ -450,7 +450,7 @@ this.readyForExplosion= isReadyForExplosion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public leftTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
     //var layerManager = layerManager
@@ -481,7 +481,7 @@ this.pickupBehavior= pickupBehavior;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addPart(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface){
     //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface

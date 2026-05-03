@@ -146,7 +146,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generate(objectConfigDocument: Document): Document{
     //var objectConfigDocument = objectConfigDocument
@@ -203,7 +203,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
@@ -237,7 +237,7 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
     //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
@@ -309,7 +309,7 @@ hashMap!.put(templateNameKey, selectedTemplate);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generate(objectConfigDocumentString: string, hashMap: HashMap<any, any>): Document{
 var objectConfigDocumentString = objectConfigDocumentString

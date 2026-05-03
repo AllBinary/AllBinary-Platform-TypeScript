@@ -49,7 +49,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 export interface CapitalEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onCapitalChangeEvent(event: CapitalEvent)
 

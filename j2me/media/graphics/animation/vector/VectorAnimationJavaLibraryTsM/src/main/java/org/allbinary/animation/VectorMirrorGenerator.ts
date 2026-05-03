@@ -194,7 +194,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(pointBasicArrayList: BasicArrayList, width: number): BasicArrayList{
 var pointBasicArrayList = pointBasicArrayList

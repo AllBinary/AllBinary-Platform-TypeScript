@@ -119,7 +119,7 @@ this.enabled= enabled;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isEnabled(): boolean{
 
@@ -219,7 +219,7 @@ this.total= total;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public drop(): string{
 
@@ -276,7 +276,7 @@ this.total= total;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public create(): string{
 
@@ -333,7 +333,7 @@ this.total= total;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public restore(): string{
 
@@ -390,7 +390,7 @@ this.total= total;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public backup(): string{
 
@@ -447,7 +447,7 @@ this.total= total;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public insert(): string{
 
@@ -500,7 +500,7 @@ this.total= total;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public delete(): string{
 
@@ -553,7 +553,7 @@ this.total= total;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public update(): string{
 
@@ -606,7 +606,7 @@ this.total= total;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

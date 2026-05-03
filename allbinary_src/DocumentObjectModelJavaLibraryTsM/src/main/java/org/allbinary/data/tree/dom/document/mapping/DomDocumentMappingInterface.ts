@@ -49,7 +49,7 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 export interface DomDocumentMappingInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toXmlDoc(): Document
 

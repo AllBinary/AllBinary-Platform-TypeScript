@@ -74,7 +74,7 @@ public constructor (fileItemFactory: FileItemFactory){
 }
 
 
-                //@Throws(FileUploadException::class, IOException::class)
+                //@Throws(FileUploadException.constructor, IOException.constructor)
             
     public getItemIterator(request: HttpServletRequest): FileItemIterator{
 var request = request

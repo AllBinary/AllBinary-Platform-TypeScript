@@ -86,7 +86,7 @@ export class StupidTimer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(visitorInterface: Visitor, timeDelayHelper: TimeDelayHelper){
     //var visitorInterface = visitorInterface
@@ -165,7 +165,7 @@ break;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stopWaiting(){
 

@@ -115,7 +115,9 @@ export class ShippingMethodsFactory
 
     private static readonly SHIPPINGMETHODSFILEPATHSTRING: string
 
-                init{
+                private static initResult: number = ShippingMethodsFactory.init();
+                private static init(): number { 
+                    
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -136,8 +138,11 @@ stringBuffer!.append(sep);
     
 SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
     
-}
 
+
+                    return 0;
+                }
+            
     private static readonly SHIPPINGMETHODSFILENAME: string = "shippingMethods.xml";
 
     private defaultShippingMethodInterface: ShippingInterface
@@ -250,7 +255,7 @@ this.shippingVector!.add(new NoShippingModuleView());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(): Vector{
 

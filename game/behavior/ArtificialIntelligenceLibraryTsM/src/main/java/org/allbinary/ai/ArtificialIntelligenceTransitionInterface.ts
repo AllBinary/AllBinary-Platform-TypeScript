@@ -41,10 +41,18 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
+            //Interfaces do not have static fields for typescript so create a class with the static fields
+            export class ArtificialIntelligenceTransitionInterfaceI {
+        
+    public static readonly ID: number = 2;
+
+    
+            }
+        
 export interface ArtificialIntelligenceTransitionInterface {
         
 
-    public static readonly ID: number = 2;
+    //Interfaces do not have static fields - public static readonly ID: number = 2;
 
     transition()
 

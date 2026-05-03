@@ -100,7 +100,7 @@ index < numberOfNodes; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getNode(nodeName: string, nodeList: NodeList): Node{
 var nodeName = nodeName
@@ -136,7 +136,7 @@ var nodeList = nodeList
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 var nodeName = nodeName
@@ -154,7 +154,7 @@ var nodeList = nodeList
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getAllNodes(nodeName: string, nodeList: NodeList): Vector{
 var nodeName = nodeName

@@ -98,7 +98,7 @@ var aMuted = aMuted
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -120,7 +120,7 @@ new Sounds(soundsFactoryInterface).
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface

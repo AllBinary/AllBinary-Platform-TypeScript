@@ -105,7 +105,7 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.totalFrames);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 
@@ -200,7 +200,7 @@ DisposalUtil.getInstance()!.disposeImage(this.image);
 }
 
 
-                //@Throws(Throwable::class)
+                //@Throws(Throwable.constructor)
             
     finalize(){
 DisposalUtil.getInstance()!.disposeImage(this.image);

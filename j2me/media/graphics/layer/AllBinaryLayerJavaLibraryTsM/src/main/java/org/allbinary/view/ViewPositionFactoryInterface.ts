@@ -47,7 +47,7 @@
 export interface ViewPositionFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(): ViewPosition
 

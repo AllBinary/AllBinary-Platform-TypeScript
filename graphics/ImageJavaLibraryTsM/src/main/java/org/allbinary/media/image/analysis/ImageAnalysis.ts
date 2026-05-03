@@ -88,7 +88,7 @@ export class ImageAnalysis
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static process(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
 var bufferedImage = bufferedImage
@@ -264,7 +264,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(bufferedImageArray: BufferedImage[], colorRangeInterface: ColorRangeInterface): ImageAnalysisResults[]{
 var bufferedImageArray = bufferedImageArray

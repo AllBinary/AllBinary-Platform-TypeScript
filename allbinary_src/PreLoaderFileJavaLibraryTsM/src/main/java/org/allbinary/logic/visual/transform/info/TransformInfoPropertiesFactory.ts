@@ -90,7 +90,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(node: Node): TransformInfoProperties{
 var node = node

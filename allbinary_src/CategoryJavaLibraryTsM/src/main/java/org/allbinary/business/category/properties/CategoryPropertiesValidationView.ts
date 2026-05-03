@@ -74,7 +74,7 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(): Boolean{
 
@@ -86,7 +86,7 @@ public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 
@@ -127,7 +127,7 @@ stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -139,7 +139,7 @@ stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document

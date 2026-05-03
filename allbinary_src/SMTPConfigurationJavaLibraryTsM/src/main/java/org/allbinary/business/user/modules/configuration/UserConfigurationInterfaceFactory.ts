@@ -84,7 +84,7 @@ export class UserConfigurationInterfaceFactory
 
     private static readonly configurationName: string = "DefaultUserConfiguration";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(document: Document): UserConfigurationInterface{
 var document = document
@@ -102,7 +102,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(userRole: UserRole): UserConfigurationInterface{
 var userRole = userRole
@@ -128,7 +128,7 @@ var userRole = userRole
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(): UserConfigurationInterface{
 

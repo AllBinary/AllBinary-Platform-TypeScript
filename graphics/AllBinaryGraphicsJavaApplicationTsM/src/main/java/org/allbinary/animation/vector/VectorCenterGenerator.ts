@@ -86,7 +86,7 @@ export class VectorCenterGenerator
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static translate(list: BasicArrayList, x: number, y: number): BasicArrayList{
 var list = list
@@ -134,7 +134,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public calculate(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -219,7 +219,7 @@ this.dy= middle -currentMiddleY;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public transform(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -266,7 +266,7 @@ item.setPointsInterface(newPoints);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(pointVector: BasicArrayList){
 var pointVector = pointVector

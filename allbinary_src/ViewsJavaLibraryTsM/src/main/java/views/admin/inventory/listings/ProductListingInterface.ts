@@ -46,11 +46,11 @@
 export interface ProductListingInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generateAll(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generateAll(storeName: string): string
 

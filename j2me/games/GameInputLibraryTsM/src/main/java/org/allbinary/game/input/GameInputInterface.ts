@@ -52,7 +52,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 export interface GameInputInterface extends NamedInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processInput(layerManager: AllBinaryLayerManager)
 

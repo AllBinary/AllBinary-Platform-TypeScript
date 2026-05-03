@@ -145,7 +145,7 @@ var node = node
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getTextNodeValue(nodeName: string, nodeList: NodeList): string{
 var nodeName = nodeName

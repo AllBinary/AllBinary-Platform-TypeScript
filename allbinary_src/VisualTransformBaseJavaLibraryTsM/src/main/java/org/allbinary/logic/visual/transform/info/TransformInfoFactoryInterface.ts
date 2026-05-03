@@ -53,7 +53,7 @@ import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js"
 export interface TransformInfoFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface
 

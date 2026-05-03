@@ -46,15 +46,15 @@
 export interface ModifyTableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     insert(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     delete(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update(): string
 

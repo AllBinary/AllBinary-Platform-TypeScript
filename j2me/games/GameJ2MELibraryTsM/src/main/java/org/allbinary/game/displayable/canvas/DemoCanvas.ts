@@ -584,7 +584,7 @@ commandList!.add(gameCommandsFactory!.START_COMMAND);
 ;
     
 
-                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature);)
+                        if(list.size() > 0 && !inApplicationPurchaseFactory!.isPurchased(list.get(0) as LockableFeature))
                         
                                     {
                                     commandList!.add(gameCommandsFactory!.BUY_COMMAND);
@@ -681,13 +681,13 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initPostPaint(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public mediaInit(){
 AllBinaryMediaManager.init(EarlySoundsFactory.getInstance());
@@ -702,7 +702,7 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initMenu(){
 this.close();
@@ -997,7 +997,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
@@ -1006,7 +1006,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "getLoadStateHashtable");
@@ -1020,7 +1020,7 @@ this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas 
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable");
@@ -1150,7 +1150,7 @@ this.getBasicGameDemoPaintable()!.setState(this.state);
 this.paintedSpecialAnimationInterface= this.getSpecialAnimationInterface();
     
 
-                        if(!this.demoGameRunnable!.isRunning(); && this.gameCanvas!.isInitialized())
+                        if(!this.demoGameRunnable!.isRunning() && this.gameCanvas!.isInitialized())
                         
                                     {
                                     this.getSpecialAnimationInterface()!.reset();
@@ -1188,7 +1188,7 @@ gameAdState!.processPageAdState();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getNextRandom(): number{
 
@@ -1199,7 +1199,7 @@ gameAdState!.processPageAdState();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createGameLayerManager(randomValue: number): AllBinaryGameLayerManager{
 var randomValue = randomValue
@@ -1211,7 +1211,7 @@ var randomValue = randomValue
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createRunnable(randomLevel: number): GameCanvasRunnableInterface{
 var randomLevel = randomLevel
@@ -1223,7 +1223,7 @@ var randomLevel = randomLevel
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     create(){
 PreLogUtil.put(commonStrings!.START, this, "create");
@@ -1251,7 +1251,7 @@ this.getHighScoresFactoryInterface()!.fetchHighScores(gameInfo, this.highScoresH
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     start(){
 
@@ -1281,7 +1281,7 @@ this.threadFactoryUtil!.start(this.canvasThread);
 
     public preDemoProcess(){
 
-                        if(!this.gameCanvas!.isInitialized(); || this.gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
+                        if(!this.gameCanvas!.isInitialized() || this.gameCanvas!.getTitle() == NullGameCanvas.NO_GAME)
                         
                                     {
                                     
@@ -1308,7 +1308,7 @@ this.overlayPaintable!.update();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 super.process();
@@ -1393,7 +1393,7 @@ this.threadFactoryUtil!.start(thread);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     startDemoGame(){
 DemoCanvasProgressUtil.showProgress(this);
@@ -1401,7 +1401,7 @@ DemoCanvasProgressUtil.showProgress(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     stopGameDemo(){
 
@@ -1462,18 +1462,18 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return !this.demoGameRunnable!.isRunning(); && this.gameCanvas!.isInitialized();
+                        return !this.demoGameRunnable!.isRunning() && this.gameCanvas!.isInitialized();
     
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processGame(){
 this.gameRunnable!.run();
     
 
-                        if(!this.specialAnimationInterface!.isComplete(); && this.isReadyForStateChange())
+                        if(!this.specialAnimationInterface!.isComplete() && this.isReadyForStateChange())
                         
                                     {
                                     this.specialAnimationInterface!.nextFrame();
@@ -1550,7 +1550,7 @@ this.updateDemoState();
                         
                                     {
                                     
-        while(this.gameCanvas == NullGameCanvas.getInstance() || !this.gameCanvas!.isInitialized();)
+        while(this.gameCanvas == NullGameCanvas.getInstance() || !this.gameCanvas!.isInitialized())
         {
 this.loopTimeHelper!.setStartTimeTNT();
     
@@ -1622,7 +1622,7 @@ this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public run3(){
 this.loopTimeHelper!.setStartTimeTNT();
@@ -1687,7 +1687,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
 
     private readonly baseGameStatistics: BaseGameStatistics = GameStatisticsFactory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public end(){
 

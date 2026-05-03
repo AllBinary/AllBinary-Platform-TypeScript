@@ -51,7 +51,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 export interface UpKeyEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onUpKeyEvent(keyAsInteger: number)
 

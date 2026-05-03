@@ -65,9 +65,9 @@ import { CommandForm } from "../../../../org/allbinary/graphics/displayable/scre
 export class SaveGameForm extends CommandForm {
         
 
-    private FORM: CommandForm = CommandForm.NULL_COMMAND_FORM;
+    private static FORM: CommandForm = CommandForm.NULL_COMMAND_FORM;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createForm(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{
 var commandListener = commandListener

@@ -52,7 +52,7 @@ export class Scoreable
          implements ScoreableInterface {
         
 
-    public ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(3)!;
+    public static ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(3)!;
 
     private points: number
 public constructor (points: number){

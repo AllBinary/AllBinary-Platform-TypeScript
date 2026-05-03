@@ -74,7 +74,7 @@ public constructor (){
         }
 
 
-                //@Throws(LicensingException::class, Exception::class)
+                //@Throws(LicensingException.constructor, Exception.constructor)
             
     public process(): string{
 
@@ -146,7 +146,7 @@ public constructor (){
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

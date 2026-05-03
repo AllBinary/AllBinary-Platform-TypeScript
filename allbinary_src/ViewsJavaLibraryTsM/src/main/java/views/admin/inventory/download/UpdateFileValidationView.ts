@@ -807,7 +807,7 @@ stringBuffer!.append("<br/>");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(fileName: string, size: number): Boolean{
 var fileName = fileName

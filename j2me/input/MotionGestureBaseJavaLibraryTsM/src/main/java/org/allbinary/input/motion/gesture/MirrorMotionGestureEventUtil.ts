@@ -83,7 +83,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public mirrorVerticle(motionGestureEvent: MotionGestureEvent, halfWidth: number): MotionGestureEvent{
     //var motionGestureEvent = motionGestureEvent

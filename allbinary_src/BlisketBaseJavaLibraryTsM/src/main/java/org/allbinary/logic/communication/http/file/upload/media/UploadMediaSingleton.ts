@@ -70,7 +70,7 @@ export class UploadMediaSingleton
          {
         
 
-    private uploadMedia: UploadMediaSingleton
+    private static uploadMedia: UploadMediaSingleton
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(): UploadMediaSingleton{

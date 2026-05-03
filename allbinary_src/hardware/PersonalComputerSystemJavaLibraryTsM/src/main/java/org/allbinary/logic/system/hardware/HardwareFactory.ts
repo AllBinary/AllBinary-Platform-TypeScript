@@ -61,7 +61,7 @@ export class HardwareFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(os: GenericOperatingSystem): HardwareInterface{
 var os = os

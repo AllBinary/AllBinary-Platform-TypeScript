@@ -67,7 +67,7 @@ import { TouchButtonResource } from "./TouchButtonResource.js";
 export class FullTouchButton extends TouchButton {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createButton(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): FullTouchButton{
     //var touchButtonInput = touchButtonInput

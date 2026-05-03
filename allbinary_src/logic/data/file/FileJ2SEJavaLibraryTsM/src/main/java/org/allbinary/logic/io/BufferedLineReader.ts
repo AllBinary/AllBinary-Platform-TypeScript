@@ -75,7 +75,7 @@ var readAheadIndex = readAheadIndex
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public readLine(): string{
 

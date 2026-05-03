@@ -103,7 +103,7 @@ this.logic= logic;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(): boolean{
 
@@ -151,7 +151,7 @@ this.logic= logic;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     validationInfo(): string{
 
@@ -199,7 +199,7 @@ this.logic= logic;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

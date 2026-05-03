@@ -192,7 +192,7 @@ this.downgradeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStri
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -241,7 +241,7 @@ var rtsLayer = rtsLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     upgrade(){
 
@@ -332,7 +332,7 @@ rtsPlayerGameInput!.updatePaintable();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     downgrade(){
 
@@ -411,7 +411,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInputKey(key: number){
 var key = key
@@ -429,7 +429,7 @@ var key = key
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

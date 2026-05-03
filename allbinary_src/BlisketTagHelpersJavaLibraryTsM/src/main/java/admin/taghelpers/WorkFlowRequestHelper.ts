@@ -92,7 +92,7 @@ this.workFlowInterface= NewWorkFlowFactory.getInstance()!.getInstance(this.abeCl
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public delete(): string{
 

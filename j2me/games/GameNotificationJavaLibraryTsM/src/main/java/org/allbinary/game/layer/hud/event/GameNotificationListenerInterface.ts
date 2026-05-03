@@ -50,7 +50,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 export interface GameNotificationListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent)
 

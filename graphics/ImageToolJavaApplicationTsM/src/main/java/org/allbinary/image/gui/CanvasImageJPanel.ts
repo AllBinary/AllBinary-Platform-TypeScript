@@ -137,7 +137,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -206,7 +206,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     initComponents(){
 this.writeOverOriginalJCheckBox= new javax.swing.JCheckBox();
     
-this.jPanel1= new javax.swing.JPanel()
+this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
@@ -256,7 +256,7 @@ this.writeOverOriginalJCheckBox!.setSelected(true);
     
 this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-this.writeOverOriginalJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.writeOverOriginalJCheckBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -280,7 +280,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(javax.swing.G
     
 this.generateJButton!.setText("Generate");
     
-this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -298,7 +298,7 @@ this.jLabel5!.setText("Right:");
     
 this.widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-this.widthReductionTextField!.addActionListener(new java.awt.event.ActionListener()
+this.widthReductionTextField!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -316,7 +316,7 @@ this.heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 this.widthReductionTextField1!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-this.widthReductionTextField1!.addActionListener(new java.awt.event.ActionListener()
+this.widthReductionTextField1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -422,7 +422,7 @@ this.imageProcessorInput= imageProcessorInput;
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public visit(generatedBufferedImage: BufferedImage, name: string, index: number){
     //var generatedBufferedImage = generatedBufferedImage

@@ -75,7 +75,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(storeName: string): BasicStoreFrontInterface{
 var storeName = storeName

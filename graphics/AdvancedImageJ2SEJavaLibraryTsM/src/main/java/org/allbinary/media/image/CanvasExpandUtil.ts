@@ -76,7 +76,7 @@ export class CanvasExpandUtil
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, increaseX: number, increaseY: number, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput

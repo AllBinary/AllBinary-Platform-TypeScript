@@ -43,7 +43,7 @@ public constructor (animationBehavior: AnimationBehavior){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 

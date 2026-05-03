@@ -160,7 +160,7 @@ stringBuffer!.append(this.getTextBody());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 

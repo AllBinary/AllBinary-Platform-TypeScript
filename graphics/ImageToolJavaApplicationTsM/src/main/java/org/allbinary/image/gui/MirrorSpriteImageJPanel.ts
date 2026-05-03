@@ -120,7 +120,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -209,7 +209,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
     initComponents(){
 jLayeredPane1= new javax.swing.JLayeredPane();
     
-this.jPanel1= new javax.swing.JPanel()
+this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
@@ -265,7 +265,7 @@ this.imageHeightIsFrameSizeJCheckBox!.setText("Image Height Is Frame Size");
     
 this.imageHeightIsFrameSizeJCheckBox!.setEnabled(false);
     
-this.imageHeightIsFrameSizeJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.imageHeightIsFrameSizeJCheckBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -291,7 +291,7 @@ this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
 this.generateJButton!.setText("Generate");
     
-this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

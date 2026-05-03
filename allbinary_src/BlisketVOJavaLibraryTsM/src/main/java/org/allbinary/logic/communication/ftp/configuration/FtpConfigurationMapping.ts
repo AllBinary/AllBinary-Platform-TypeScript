@@ -91,7 +91,7 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 
@@ -103,7 +103,7 @@ hashMap!.put(FtpConfigurationData.PATH, this.ftpConfigurationInterface!.getPath(
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 

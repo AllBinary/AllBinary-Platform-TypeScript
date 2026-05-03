@@ -92,7 +92,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 

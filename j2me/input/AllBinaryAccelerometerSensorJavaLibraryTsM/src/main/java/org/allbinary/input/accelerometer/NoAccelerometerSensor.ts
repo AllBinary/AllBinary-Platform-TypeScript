@@ -52,7 +52,7 @@ import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js
 export class NoAccelerometerSensor extends AllBinaryOrientationSensor {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrientation(): Orientation{
 

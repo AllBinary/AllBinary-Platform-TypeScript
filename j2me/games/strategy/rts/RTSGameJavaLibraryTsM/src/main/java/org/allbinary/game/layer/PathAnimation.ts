@@ -106,7 +106,7 @@ this.linePathAnimation= linePathAnimation;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -115,7 +115,7 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public nextFrame(){
 }

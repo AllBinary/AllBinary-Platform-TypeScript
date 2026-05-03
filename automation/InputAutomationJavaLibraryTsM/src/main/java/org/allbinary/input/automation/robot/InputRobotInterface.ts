@@ -98,11 +98,11 @@ export interface InputRobotInterface {
 
     mouseMove(point: Point)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     mouseMoveToTarget(rectangle: Rectangle)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     mouseMoveToTarget(rectangle: Rectangle, x: number, y: number)
 

@@ -91,7 +91,7 @@ this.alphaP= alpha;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public nextFrame(){
 }
@@ -194,7 +194,7 @@ this.changeColorP= this.changeBasicColorP!.toInt();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
 var gl = gl

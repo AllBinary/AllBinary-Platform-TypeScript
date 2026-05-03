@@ -77,7 +77,7 @@ this.setBasicColorP(basicColor);
 
     private readonly vectorExplosionGenerator: VectorExplosionGenerator = VectorExplosionGenerator.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

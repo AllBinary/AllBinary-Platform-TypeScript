@@ -127,7 +127,7 @@ textJDialog!.setVisible(true);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public start(){
 this.bundle.start();

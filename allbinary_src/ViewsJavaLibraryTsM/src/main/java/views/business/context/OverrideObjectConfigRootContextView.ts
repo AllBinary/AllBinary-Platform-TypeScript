@@ -111,7 +111,7 @@ public constructor (transformInfoInterface: Object){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

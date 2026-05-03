@@ -116,7 +116,7 @@ this.byteArray= byteArray;
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public getInputStream(): InputStream{
 
@@ -177,7 +177,7 @@ this.byteArray= byteArray;
 }
 
 
-                //@Throws(UnsupportedEncodingException::class)
+                //@Throws(UnsupportedEncodingException.constructor)
             
     public getString(encoding: string): string{
 var encoding = encoding
@@ -223,7 +223,7 @@ var encoding = encoding
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(file: File){
 var file = file
@@ -235,7 +235,7 @@ var file = file
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(file: AbFile){
 var file = file
@@ -302,7 +302,7 @@ var state = state
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public getOutputStream(): OutputStream{
 

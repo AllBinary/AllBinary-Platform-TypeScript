@@ -108,7 +108,7 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 
@@ -266,7 +266,7 @@ disposalUtil!.disposeImage(this.currentImage);
 }
 
 
-                //@Throws(Throwable::class)
+                //@Throws(Throwable.constructor)
             
     finalize(){
 

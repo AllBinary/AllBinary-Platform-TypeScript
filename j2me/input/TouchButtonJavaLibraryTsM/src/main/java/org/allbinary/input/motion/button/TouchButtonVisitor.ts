@@ -49,7 +49,7 @@ export class TouchButtonVisitor
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(touchButtonInput: TouchButtonInput, string: string){
 var touchButtonInput = touchButtonInput

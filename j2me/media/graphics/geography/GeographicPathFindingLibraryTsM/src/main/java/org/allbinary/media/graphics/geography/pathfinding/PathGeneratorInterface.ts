@@ -56,7 +56,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 export interface PathGeneratorInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList
 

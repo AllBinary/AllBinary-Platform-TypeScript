@@ -49,7 +49,7 @@ export class ClassLoaderUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getName(anyType: any = {}): string{
 var anyType = anyType

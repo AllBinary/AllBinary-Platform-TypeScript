@@ -83,7 +83,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
 var transformInfoInterface = transformInfoInterface

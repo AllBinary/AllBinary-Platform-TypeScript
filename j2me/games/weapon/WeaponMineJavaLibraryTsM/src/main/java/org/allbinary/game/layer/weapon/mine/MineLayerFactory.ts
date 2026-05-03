@@ -68,7 +68,7 @@ this.viewPositionFactoryInterface= viewPositionFactoryInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(): AllBinaryLayer{
 

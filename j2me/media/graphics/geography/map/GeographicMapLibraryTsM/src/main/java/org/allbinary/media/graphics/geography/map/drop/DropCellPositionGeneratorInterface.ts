@@ -60,15 +60,15 @@ export interface DropCellPositionGeneratorInterface {
 
     getName(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processTick(allBinaryLayerManager: AllBinaryLayerManager)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean
 

@@ -80,7 +80,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: any = {}, totalPaths: number){
     //var geographicMapInterface = geographicMapInterface
@@ -88,7 +88,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceNoCache(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -107,7 +107,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -122,7 +122,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     create(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -153,7 +153,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createN(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number, multipassState: MultipassState): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -185,7 +185,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(pathList: BasicArrayList, geographicMapCellHistory: GeographicMapCellHistory): boolean{
     //var pathList = pathList

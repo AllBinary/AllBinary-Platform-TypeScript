@@ -136,7 +136,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -204,7 +204,7 @@ this.widthReductionTextField= new javax.swing.JTextField();
     
 this.jLabel5= new javax.swing.JLabel();
     
-this.jPanel1= new javax.swing.JPanel()
+this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
@@ -305,7 +305,7 @@ this.increaseHeightTextField= new javax.swing.JTextField();
     
 this.writeOverOriginalJCheckBox!.setText("Write Over Original");
     
-this.writeOverOriginalJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.writeOverOriginalJCheckBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -319,7 +319,7 @@ writeOverOriginalJCheckBoxActionPerformed(evt);
     
 this.widthReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-this.widthReductionTextField!.addActionListener(new java.awt.event.ActionListener()
+this.widthReductionTextField!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -351,7 +351,7 @@ this.heightReductionTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
 this.generateJButton!.setText("Generate");
     
-this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -367,7 +367,7 @@ this.jLabel1!.setText("Row Total:");
     
 this.totalFramesJComboBox!.setSelectedIndex(1);
     
-this.totalFramesJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalFramesJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -383,7 +383,7 @@ this.jLabel2!.setText("Column Total :");
     
 this.totalAnimationsJComboBox!.setSelectedIndex(3);
     
-this.totalAnimationsJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalAnimationsJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -397,7 +397,7 @@ totalAnimationsJComboBoxActionPerformed(evt);
     
 this.jLabel3!.setText("Type:");
     
-this.spriteTypeJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.spriteTypeJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -423,7 +423,7 @@ this.jLabel7!.setText("More Width:");
     
 this.increaseWidthTextField!.setText(CommonPhoneStrings.getInstance()!.ZERO);
     
-this.increaseWidthTextField!.addActionListener(new java.awt.event.ActionListener()
+this.increaseWidthTextField!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -552,7 +552,7 @@ this.imageProcessorInput= imageProcessorInput;
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public visit(generatedBufferedImage: BufferedImage, name: string, index: number){
     //var generatedBufferedImage = generatedBufferedImage

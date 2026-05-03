@@ -52,7 +52,7 @@ import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/Cust
 export interface GroupItemArrayFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(groupInterface: Group): CustomItem[]
 

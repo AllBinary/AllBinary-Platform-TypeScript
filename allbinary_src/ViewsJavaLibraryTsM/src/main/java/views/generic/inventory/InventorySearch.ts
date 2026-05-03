@@ -121,7 +121,7 @@ this.searchRequest= searchRequest;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchSingleStaticPage(): string{
 
@@ -213,7 +213,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchSingleDynamicPage(): string{
 
@@ -251,7 +251,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public search(): string[]{
 
@@ -275,7 +275,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getProduct(product: string): string{
 var product = product

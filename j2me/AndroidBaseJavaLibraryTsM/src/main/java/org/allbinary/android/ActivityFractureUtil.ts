@@ -56,7 +56,7 @@ export class ActivityFractureUtil
             static readonly PUBLIC: string = '%{public}s';
             
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(activity: Activity){
     //var activity = activity

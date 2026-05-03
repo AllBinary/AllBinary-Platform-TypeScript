@@ -75,7 +75,7 @@ this.setLibraryName(libraryName);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public load(){
 

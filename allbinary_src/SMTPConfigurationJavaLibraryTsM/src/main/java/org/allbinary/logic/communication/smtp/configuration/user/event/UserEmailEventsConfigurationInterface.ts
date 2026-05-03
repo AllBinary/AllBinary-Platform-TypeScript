@@ -66,7 +66,7 @@ export interface UserEmailEventsConfigurationInterface {
 
     addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface
 

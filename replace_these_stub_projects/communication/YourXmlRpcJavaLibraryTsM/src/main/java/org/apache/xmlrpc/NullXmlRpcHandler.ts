@@ -57,7 +57,7 @@ export class NullXmlRpcHandler
 
     public static readonly NULL_XML_RPC_HANDLER: NullXmlRpcHandler = new NullXmlRpcHandler();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public execute(method: string, params: Vector<any>): any{
 var method = method

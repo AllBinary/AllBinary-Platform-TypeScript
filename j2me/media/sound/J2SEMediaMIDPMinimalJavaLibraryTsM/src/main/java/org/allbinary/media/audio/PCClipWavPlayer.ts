@@ -161,7 +161,7 @@ this.clip= clip;
 
 
     public close(){
-MusicThreadPool.getInstance()!.runTask(new ARunnable()
+MusicThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -185,7 +185,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     close2(){
 this.clip.drain();
@@ -207,11 +207,11 @@ this.clip.close();
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-MusicThreadPool.getInstance()!.runTask(new ARunnable()
+MusicThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -235,7 +235,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     start2(){
 this.clip.setFramePosition(0);
@@ -249,7 +249,7 @@ super.start();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     create(audioInputStream: AudioInputStream): Clip{
 var audioInputStream = audioInputStream
@@ -270,11 +270,11 @@ clip.open(audioInputStream);
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-MusicThreadPool.getInstance()!.runTask(new ARunnable()
+MusicThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -298,7 +298,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     stop2(){
 this.clip.stop();
@@ -369,7 +369,7 @@ this.setVolumeF((leftVolume) /100.0f);
     var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
 ;
     
-masterGainFloatControl!.setValue(20f *Math.log10(volume););
+masterGainFloatControl!.setValue(20f *Math.log10(volume));
     
 }
 
@@ -387,7 +387,7 @@ masterGainFloatControl!.setValue(20f *Math.log10(volume););
     public update(event: LineEvent){
 var event = event
 
-                        if(event.getType()!.equals(LineEvent.Type.STOP))
+                        if(event.getType()!. === LineEvent.Type.STOP)
                         
                                     {
                                     

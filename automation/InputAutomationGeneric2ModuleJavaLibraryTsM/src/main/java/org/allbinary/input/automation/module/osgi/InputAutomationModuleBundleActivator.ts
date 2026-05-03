@@ -101,7 +101,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(){
 
@@ -112,12 +112,12 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInputAutomationConfigurationModuleChangeListener(context: BundleContext): InputAutomationConfigurationModuleChangeListener{
 var context = context
 
-    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener::class.toString()!)!;
+    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener.constructor.toString()!)!;
 ;
     
 
@@ -147,7 +147,7 @@ var context = context
                                     }
                                 
                         else {
-                            this.logUtil!.putF("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener::class.toString()!, this, "addModules");
+                            this.logUtil!.putF("No ServiceReference: " +InputAutomationConfigurationModuleChangeListener.constructor.toString()!, this, "addModules");
     
 
 
@@ -207,11 +207,11 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public registerAsService(bundleContext: BundleContext){
 var bundleContext = bundleContext
-OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface::class.toString()!);
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface.constructor.toString()!);
     
 }
 
@@ -262,7 +262,7 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeModules");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public start(context: BundleContext){
 var context = context
@@ -275,7 +275,7 @@ this.registerAsService(context);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
 var context = context

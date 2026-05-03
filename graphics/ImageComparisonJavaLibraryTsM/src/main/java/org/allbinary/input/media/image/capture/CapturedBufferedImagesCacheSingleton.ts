@@ -69,7 +69,7 @@ export class CapturedBufferedImagesCacheSingleton
          {
         
 
-    private cacheInterface: AutomaticCacheInterface = 
+    private static cacheInterface: AutomaticCacheInterface = 
                 null
             ;
 
@@ -83,7 +83,9 @@ export class CapturedBufferedImagesCacheSingleton
 }
 
 
-                init{
+                private static initResult: number = CapturedBufferedImagesCacheSingleton.init();
+                private static init(): number { 
+                    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -116,8 +118,11 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
 }
 
-}
 
+
+                    return 0;
+                }
+            
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 private constructor (){
 

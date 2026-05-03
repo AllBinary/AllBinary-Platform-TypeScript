@@ -130,7 +130,7 @@ this.user= UserEntityFactory.getInstance()!.getUser(orderHistory!.getUserName())
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.notifyStoreAdmin();
@@ -140,7 +140,7 @@ this.notifyUser();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     notifyStoreAdmin(){
 
@@ -212,7 +212,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(userEmailEventNameData, adminEmailI
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     notifyUser(){
 

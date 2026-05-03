@@ -423,7 +423,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public destroyAndClear(list: BasicArrayList){
 var list = list

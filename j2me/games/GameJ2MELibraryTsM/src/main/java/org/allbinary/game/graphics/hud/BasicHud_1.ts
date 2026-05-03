@@ -168,7 +168,7 @@ this.color= basicColor!.toInt();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getHudGraphicsPositionWH(width: number, height: number): HudGraphicsPosition{
 var width = width

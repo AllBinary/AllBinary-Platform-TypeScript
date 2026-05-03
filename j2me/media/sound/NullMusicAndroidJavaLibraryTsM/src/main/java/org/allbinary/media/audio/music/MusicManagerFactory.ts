@@ -57,7 +57,7 @@ export class MusicManagerFactory
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new MusicManager(MusicService::class, soundList);
+                        return new MusicManager(MusicService.constructor, soundList);
     
 }
 

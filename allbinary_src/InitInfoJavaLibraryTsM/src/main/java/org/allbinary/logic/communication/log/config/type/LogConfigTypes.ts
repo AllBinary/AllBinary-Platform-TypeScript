@@ -74,13 +74,18 @@ export class LogConfigTypes
 
     public static readonly JSP_ERROR_NO_FUNCTION: string = "in JSP Not In Function";
 
-    public LOGGING: BasicArrayList = new BasicArrayListD();
+    public static LOGGING: BasicArrayList = new BasicArrayListD();
 
-                init{
+                private static initResult: number = LogConfigTypes.init();
+                private static init(): number { 
+                    
 LogConfigTypes.init();
     
-}
-//@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+
+
+                    return 0;
+                }
+            //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static init(){
 
@@ -116,7 +121,7 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): LogConfigType{
     //var node = node

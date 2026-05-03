@@ -94,7 +94,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createList(list: BasicArrayList, howMuch: number, type: VectorExplosionType): BasicArrayList{
     //var list = list
@@ -137,7 +137,7 @@ points[index]![1]= point.getY();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{
     //var points = points
@@ -164,7 +164,7 @@ points[index]![1]= point.getY();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceStartFrame(points: number[][], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
     //var points = points
@@ -235,7 +235,7 @@ frameIndex++;
 
     private readonly randomRotationFactory: RandomRotationFactory = RandomRotationFactory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createListFromPoints(tempBasicArrayList: BasicArrayList, points: number[][], howMuch: number, type: VectorExplosionType): BasicArrayList{
     //var tempBasicArrayList = tempBasicArrayList
@@ -337,7 +337,7 @@ index++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPointsBasicArrayList(points: number[][]): BasicArrayList{
     //var points = points

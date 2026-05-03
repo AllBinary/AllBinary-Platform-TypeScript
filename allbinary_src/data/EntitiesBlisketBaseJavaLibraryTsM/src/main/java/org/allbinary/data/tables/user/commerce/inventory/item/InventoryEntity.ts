@@ -166,7 +166,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getItems(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -218,7 +218,7 @@ i < size; i++)
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(category); && category.startsWith(storeFrontInterface!.getCategoryPath()))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(category) && category.startsWith(storeFrontInterface!.getCategoryPath()))
                         
                                     {
                                     itemVector!.add(new BasicItem(itemHashMap));
@@ -240,7 +240,7 @@ i < size; i++)
 }
 
 
-                //@Throws(MoneyException::class)
+                //@Throws(MoneyException.constructor)
             
     public getItem(id: string): ItemInterface{
 var id = id

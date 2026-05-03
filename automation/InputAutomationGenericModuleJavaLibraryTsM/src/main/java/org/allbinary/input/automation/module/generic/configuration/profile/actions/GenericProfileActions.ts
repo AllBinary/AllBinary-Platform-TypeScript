@@ -168,7 +168,7 @@ this.fileInit(fileInputStream);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(genericProfileActionsJPanel: GenericProfileActionsJPanel){
 var genericProfileActionsJPanel = genericProfileActionsJPanel
@@ -181,7 +181,7 @@ this.setHashMap(new HashMap<any, any>());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(){
 
@@ -197,7 +197,7 @@ idOutData!.writeBytes(DomDocumentHelper.toString(this.toXmlDoc()));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     load(){
 
@@ -226,7 +226,7 @@ this.fileInit(idFile);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fileInit(fileInputStream: FileInputStream){
 var fileInputStream = fileInputStream
@@ -301,7 +301,7 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initActions(nodeList: NodeList){
 var nodeList = nodeList
@@ -369,7 +369,7 @@ var string = string
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public add(name: string){
 var name = name
@@ -388,7 +388,7 @@ this.save();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(name: string){
 var name = name
@@ -419,7 +419,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -469,7 +469,7 @@ node.appendChild(nextGenericProfileAction!.toXmlNode(document));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 

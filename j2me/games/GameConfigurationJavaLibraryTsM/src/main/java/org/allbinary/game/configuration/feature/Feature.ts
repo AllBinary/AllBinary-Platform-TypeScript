@@ -52,7 +52,7 @@ export class Feature
          {
         
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private static hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     public static getInstance(name: string): Feature{
 var name = name

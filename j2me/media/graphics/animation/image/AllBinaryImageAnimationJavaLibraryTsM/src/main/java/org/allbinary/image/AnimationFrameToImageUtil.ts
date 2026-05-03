@@ -70,7 +70,7 @@ export class AnimationFrameToImageUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceTranslate(width: number, height: number, animationInterface: Animation): Image{
 var width = width
@@ -107,7 +107,7 @@ graphics.translate( -tranlateX,  -tranlateY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceWH(width: number, height: number, animationInterface: Animation): Image{
 var width = width

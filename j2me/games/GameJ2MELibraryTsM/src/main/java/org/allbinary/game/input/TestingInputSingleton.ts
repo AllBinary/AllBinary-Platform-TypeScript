@@ -122,10 +122,10 @@ var aTestInputInterface = aTestInputInterface
     
 this.paintable= testInputInterface;
     
-this.inputProcessorArray[Canvas.UP]= new GameInputProcessor()
+this.inputProcessorArray[Canvas.UP]= new class extends GameInputProcessor
                                 {
                                 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -137,10 +137,10 @@ testInputInterface!.up();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.DOWN]= new GameInputProcessor()
+this.inputProcessorArray[Canvas.DOWN]= new class extends GameInputProcessor
                                 {
                                 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -152,10 +152,10 @@ testInputInterface!.down();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.LEFT]= new GameInputProcessor()
+this.inputProcessorArray[Canvas.LEFT]= new class extends GameInputProcessor
                                 {
                                 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -167,10 +167,10 @@ testInputInterface!.left();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.RIGHT]= new GameInputProcessor()
+this.inputProcessorArray[Canvas.RIGHT]= new class extends GameInputProcessor
                                 {
                                 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -182,10 +182,10 @@ testInputInterface!.right();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.KEY_NUM7]= new GameInputProcessor()
+this.inputProcessorArray[Canvas.KEY_NUM7]= new class extends GameInputProcessor
                                 {
                                 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -197,10 +197,10 @@ testInputInterface!.strafeLeft();
                                 }
                             ;
     
-this.inputProcessorArray[Canvas.KEY_NUM9]= new GameInputProcessor()
+this.inputProcessorArray[Canvas.KEY_NUM9]= new class extends GameInputProcessor
                                 {
                                 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
@@ -217,7 +217,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInputList(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
@@ -254,7 +254,7 @@ inputProcessorArray[key]!.processEvent(allbinaryLayerManager, GameKeyEvent.NONE)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){

@@ -50,7 +50,7 @@ export class LayerManagerLoggingBase
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface

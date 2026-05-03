@@ -81,7 +81,7 @@ export class XmlRpcAbeClient
          {
         
 
-    public isOnline: boolean = true;
+    public static isOnline: boolean = true;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -178,7 +178,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.CONSTRUCTOR);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(anyType: any = {}): any{
 var anyType = anyType
@@ -193,7 +193,7 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     tryAnother(anyType: any = {}): any{
 var anyType = anyType
@@ -213,7 +213,7 @@ var anyType = anyType
                         }
                             
 
-                        if(getServer() != getStart() && !isIsDone();)
+                        if(getServer() != getStart() && !isIsDone())
                         
                                     {
                                     

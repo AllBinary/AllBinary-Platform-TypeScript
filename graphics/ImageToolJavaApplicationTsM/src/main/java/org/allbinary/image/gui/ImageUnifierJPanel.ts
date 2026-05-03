@@ -401,7 +401,7 @@ this.imageUnifierProperties!.setColumns(this.columnsJTextField!.getText());
 this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
     
 
-    var cellRatio: number = (imageUnifierCell!.getWidth(); /imageUnifierCell!.getHeight());
+    var cellRatio: number = (imageUnifierCell!.getWidth() /imageUnifierCell!.getHeight());
 ;
     
 
@@ -487,7 +487,7 @@ this.jScrollPane1!.setViewportView(this.imageJList);
     
 this.jButton1!.setText("Save");
     
-this.jButton1!.addActionListener(new java.awt.event.ActionListener()
+this.jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -501,7 +501,7 @@ jButton1ActionPerformed(evt);
     
 this.upJButton!.setText("Up");
     
-this.upJButton!.addActionListener(new java.awt.event.ActionListener()
+this.upJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -515,7 +515,7 @@ upJButtonActionPerformed(evt);
     
 this.downJButton!.setText("Down");
     
-this.downJButton!.addActionListener(new java.awt.event.ActionListener()
+this.downJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -529,7 +529,7 @@ downJButtonActionPerformed(evt);
     
 this.fudgeItJButton!.setText("Fudge It!");
     
-this.fudgeItJButton!.addActionListener(new java.awt.event.ActionListener()
+this.fudgeItJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -545,7 +545,7 @@ this.jLabel2!.setText("Columns:");
     
 this.columnsJTextField!.setText(commonPhoneStrings!.TWO);
     
-this.columnsJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.columnsJTextField!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -557,7 +557,7 @@ columnsJTextFieldActionPerformed(evt);
                                 }
                             );
     
-this.columnsJTextField!.addPropertyChangeListener(new java.beans.PropertyChangeListener()
+this.columnsJTextField!.addPropertyChangeListener(new class extends java.beans.PropertyChangeListener
                                 {
                                 
     public propertyChange(evt: java.beans.PropertyChangeEvent){
@@ -569,7 +569,7 @@ columnsJTextFieldPropertyChange(evt);
                                 }
                             );
     
-this.columnsJTextField!.addKeyListener(new java.awt.event.KeyAdapter()
+this.columnsJTextField!.addKeyListener(new class extends java.awt.event.KeyAdapter
                                 {
                                 
     public keyPressed(evt: java.awt.event.KeyEvent){
@@ -591,7 +591,7 @@ this.jLabel1!.setText("Rows:");
     
 this.rowsJTextField!.setText(commonPhoneStrings!.TWO);
     
-this.rowsJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.rowsJTextField!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -607,7 +607,7 @@ this.jLabel3!.setText("Cell Width:");
     
 this.cellWidthJTextField!.setText("200");
     
-this.cellWidthJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.cellWidthJTextField!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -623,7 +623,7 @@ this.jLabel4!.setText("Cell Height:");
     
 this.cellHeightJTextField!.setText("150");
     
-this.cellHeightJTextField!.addActionListener(new java.awt.event.ActionListener()
+this.cellHeightJTextField!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -645,7 +645,7 @@ this.avgRatioJTextField!.setEditable(false);
     
 this.jButton2!.setText(this.commonStrings!.UPDATE);
     
-this.jButton2!.addActionListener(new java.awt.event.ActionListener()
+this.jButton2!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -659,7 +659,7 @@ jButton2ActionPerformed(evt);
     
 this.jButtonOrder!.setText("Order");
     
-this.jButtonOrder!.addActionListener(new java.awt.event.ActionListener()
+this.jButtonOrder!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

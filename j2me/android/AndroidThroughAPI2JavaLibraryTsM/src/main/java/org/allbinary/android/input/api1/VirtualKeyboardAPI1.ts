@@ -53,9 +53,9 @@ import { Activity } from "../../../../../android/app/Activity.js";
 export class VirtualKeyboardAPI1 extends VirtualKeyboard implements VirtualKeyboardEventListenerInterface {
         
 
-    public MIN_API: number = 1;
+    public static MIN_API: number = 1;
 
-    public MAX_API: number = 2;
+    public static MAX_API: number = 2;
 public constructor (activity: Activity){
 
             super();

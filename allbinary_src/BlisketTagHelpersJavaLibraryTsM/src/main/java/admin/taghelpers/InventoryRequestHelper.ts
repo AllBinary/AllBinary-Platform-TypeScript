@@ -105,7 +105,7 @@ this.itemInterface= itemView!.getItemInterface();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public insert(): string{
 

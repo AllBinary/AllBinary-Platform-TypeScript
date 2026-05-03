@@ -46,7 +46,7 @@ export class MidletIcon
          {
         
 
-    public RESOURCE: string = "icon";
+    public static RESOURCE: string = "icon";
 
 }
                 

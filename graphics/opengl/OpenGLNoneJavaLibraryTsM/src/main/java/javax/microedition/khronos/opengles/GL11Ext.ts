@@ -40,9 +40,9 @@ import { ShortBuffer } from "../../../../java/nio/ShortBuffer.js";
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL } from "./GL.js";
 
-export interface GL11Ext extends GL {
+            //Interfaces do not have static fields for typescript so create a class with the static fields
+            export class GL11ExtI {
         
-
     public static readonly GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES: number = 35742;
 
     public static readonly GL_MATRIX_INDEX_ARRAY_OES: number = 34884;
@@ -74,6 +74,64 @@ export interface GL11Ext extends GL {
     public static readonly GL_WEIGHT_ARRAY_STRIDE_OES: number = 34474;
 
     public static readonly GL_WEIGHT_ARRAY_TYPE_OES: number = 34473;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            }
+        
+export interface GL11Ext extends GL {
+        
+
+    //Interfaces do not have static fields - public static readonly GL_MATRIX_INDEX_ARRAY_BUFFER_BINDING_OES: number = 35742;
+
+    //Interfaces do not have static fields - public static readonly GL_MATRIX_INDEX_ARRAY_OES: number = 34884;
+
+    //Interfaces do not have static fields - public static readonly GL_MATRIX_INDEX_ARRAY_POINTER_OES: number = 34889;
+
+    //Interfaces do not have static fields - public static readonly GL_MATRIX_INDEX_ARRAY_SIZE_OES: number = 34886;
+
+    //Interfaces do not have static fields - public static readonly GL_MATRIX_INDEX_ARRAY_STRIDE_OES: number = 34888;
+
+    //Interfaces do not have static fields - public static readonly GL_MATRIX_INDEX_ARRAY_TYPE_OES: number = 34887;
+
+    //Interfaces do not have static fields - public static readonly GL_MATRIX_PALETTE_OES: number = 34880;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_PALETTE_MATRICES_OES: number = 34882;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_VERTEX_UNITS_OES: number = 34468;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_CROP_RECT_OES: number = 35741;
+
+    //Interfaces do not have static fields - public static readonly GL_WEIGHT_ARRAY_BUFFER_BINDING_OES: number = 34974;
+
+    //Interfaces do not have static fields - public static readonly GL_WEIGHT_ARRAY_OES: number = 34477;
+
+    //Interfaces do not have static fields - public static readonly GL_WEIGHT_ARRAY_POINTER_OES: number = 34476;
+
+    //Interfaces do not have static fields - public static readonly GL_WEIGHT_ARRAY_SIZE_OES: number = 34475;
+
+    //Interfaces do not have static fields - public static readonly GL_WEIGHT_ARRAY_STRIDE_OES: number = 34474;
+
+    //Interfaces do not have static fields - public static readonly GL_WEIGHT_ARRAY_TYPE_OES: number = 34473;
 
     glTexParameterfv(target: number, pname: number, param: number[], offset: number)
 

@@ -46,19 +46,19 @@
 export interface BasicTableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     drop(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     create(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     restore(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     backup(): string
 

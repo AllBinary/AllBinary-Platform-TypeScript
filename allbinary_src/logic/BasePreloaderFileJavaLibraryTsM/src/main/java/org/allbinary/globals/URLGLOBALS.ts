@@ -50,7 +50,7 @@ export class URLGLOBALS
          {
         
 
-    private urlGlobalsInterface: UrlGlobalsInterface = AppUrlGlobals.NULL_APP_URL_GLOBALS;
+    private static urlGlobalsInterface: UrlGlobalsInterface = AppUrlGlobals.NULL_APP_URL_GLOBALS;
 
     public static init(urlGlobalsInterface: UrlGlobalsInterface){
 var urlGlobalsInterface = urlGlobalsInterface
@@ -89,7 +89,7 @@ URLGLOBALS.urlGlobalsInterface= urlGlobalsInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getMainPath(): string{
 

@@ -287,7 +287,7 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 stringMaker!.append(this.stringUtil!.toString(this.openGlReadydisplayable));
     
 
-                        if(SWTUtil.isSWT && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
+                        if(SWTUtil.isSWT && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(SWTUtil.SWT)!.append(commonSeps!.SPACE)!.append(this.RUNNABLE)!.append(this.stringUtil!.toString(NullRunnable.getInstance()))!.toString(), this, commonStrings!.UPDATE);

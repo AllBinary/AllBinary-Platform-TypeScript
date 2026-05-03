@@ -126,7 +126,7 @@ this.list.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -160,7 +160,7 @@ this.list.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -267,7 +267,7 @@ this.drop(allBinaryGameLayerManager, index);
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -287,7 +287,7 @@ this.drop(allBinaryLayerManager, index);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
     //var allBinaryLayerManager = allBinaryLayerManager

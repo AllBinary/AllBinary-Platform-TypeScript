@@ -206,7 +206,7 @@ this.getFormData(hashMap);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -362,7 +362,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

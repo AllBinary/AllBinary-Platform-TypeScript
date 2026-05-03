@@ -145,7 +145,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createDocument(xmlFile: File): Document{
 var xmlFile = xmlFile
@@ -183,7 +183,7 @@ var xmlFile = xmlFile
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toString(document: Document): string{
 var document = document
@@ -231,7 +231,7 @@ copyTransformer!.transform(domSource, streamResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(file: File, document: Document){
 var file = file
@@ -272,7 +272,7 @@ copyTransformer!.transform(domSource, streamResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
 var nodeName = nodeName
@@ -316,7 +316,7 @@ index < numberOfNodes; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getChildrenWithoutTextNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
 var nodeName = nodeName
@@ -365,7 +365,7 @@ index < numberOfChildren; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWithoutTextNodes(nodeList: NodeList): BasicArrayList{
 var nodeList = nodeList
@@ -409,7 +409,7 @@ index < numberOfChildren; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchNodeList(nodeName: string, nodeList: NodeList): Node{
 var nodeName = nodeName
@@ -455,7 +455,7 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchNodeList(nodeName: string, nodeList: BasicArrayList): Node{
 var nodeName = nodeName

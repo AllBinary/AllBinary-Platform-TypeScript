@@ -79,7 +79,7 @@ this.allBinaryGameCanvas= allBinaryGameCanvas;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processLoopSleep(){
 

@@ -84,7 +84,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitFor(image: Image, name: string){
     //var image = image
@@ -96,7 +96,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public handleTimeout(name: string){
     //var name = name
@@ -115,7 +115,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
     //var image = image
@@ -130,7 +130,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 ;
     
 
-        while(!playnCoreImage!.isReady(); || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
+        while(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
         {
 
                         if(timeDelayHelper!.isTimeTNT())
@@ -158,7 +158,7 @@ this.waitForATime(image, name, this.timeDelayHelper);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitForAll(){
 this.allTimeDelayHelper!.setStartTimeTNT();

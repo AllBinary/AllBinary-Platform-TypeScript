@@ -49,11 +49,11 @@ import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js"
 export interface RootCategoryPropertiesInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setRootFilePath(value: AbPath)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getRootFilePath(): AbPath
 

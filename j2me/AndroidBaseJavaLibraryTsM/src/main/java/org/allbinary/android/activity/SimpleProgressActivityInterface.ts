@@ -50,15 +50,15 @@ export interface SimpleProgressActivityInterface {
 
     runOnUiThread(action: Runnable)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onSetProgress(value: number, text: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onDismissProgress(animationSequence: number[])
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onShowProgress(indeterminate: boolean, animationSequence: number[])
 

@@ -103,13 +103,13 @@ this.allBinaryGyroSensor= allBinaryGyroSensor;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateGameKeyEvents(orientation: Orientation, yaw: number, pitch: number, roll: number){
 var orientation = orientation

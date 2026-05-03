@@ -117,7 +117,7 @@ this.contextConfigurationInterface= contextConfigurationInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

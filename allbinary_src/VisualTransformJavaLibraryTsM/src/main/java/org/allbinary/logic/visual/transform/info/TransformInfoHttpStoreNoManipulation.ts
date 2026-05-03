@@ -66,7 +66,7 @@ var pageContext = pageContext
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setObjectConfigFile(value: string){
 var value = value
@@ -77,7 +77,7 @@ this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.get
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setObjectConfig(value: string){
 var value = value

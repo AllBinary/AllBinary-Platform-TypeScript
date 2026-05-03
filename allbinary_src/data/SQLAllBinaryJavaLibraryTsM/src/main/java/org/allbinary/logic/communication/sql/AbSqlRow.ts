@@ -272,7 +272,7 @@ this.executeSQLStatement(sqlStatement);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){

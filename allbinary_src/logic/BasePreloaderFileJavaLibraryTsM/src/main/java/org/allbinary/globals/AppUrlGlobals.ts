@@ -101,7 +101,7 @@ this.path= path;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getMainPath(): string{
 

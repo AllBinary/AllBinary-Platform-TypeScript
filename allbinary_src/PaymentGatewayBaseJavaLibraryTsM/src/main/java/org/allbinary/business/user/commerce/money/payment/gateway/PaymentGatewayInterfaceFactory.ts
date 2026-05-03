@@ -79,7 +79,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(httpServletRequest: HttpServletRequest): PaymentGatewayInterface{
 var httpServletRequest = httpServletRequest
@@ -128,7 +128,7 @@ var httpServletRequest = httpServletRequest
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
 var paymentType = paymentType
@@ -147,7 +147,7 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
 var hashMap = hashMap

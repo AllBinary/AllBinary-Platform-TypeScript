@@ -296,7 +296,7 @@ super.set(itemNum, item);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -315,7 +315,7 @@ this.selectedAnimationArray[index]!.paintXY(graphics, x, y);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics

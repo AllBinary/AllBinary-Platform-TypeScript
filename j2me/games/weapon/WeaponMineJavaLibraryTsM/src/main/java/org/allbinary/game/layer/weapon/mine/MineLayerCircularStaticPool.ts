@@ -56,9 +56,9 @@ export class MineLayerCircularStaticPool
          {
         
 
-    private WEAPON_LAYER_CIRCULAR_STATIC_POOL: WeaponLayerCircularPool = new WeaponLayerCircularPool();
+    private static WEAPON_LAYER_CIRCULAR_STATIC_POOL: WeaponLayerCircularPool = new WeaponLayerCircularPool();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(viewPositionFactoryInterface: ViewPositionFactoryInterface){
 var viewPositionFactoryInterface = viewPositionFactoryInterface

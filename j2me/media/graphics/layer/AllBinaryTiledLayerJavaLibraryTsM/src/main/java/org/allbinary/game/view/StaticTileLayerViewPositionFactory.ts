@@ -55,7 +55,7 @@ export class StaticTileLayerViewPositionFactory
          implements ViewPositionFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(): ViewPosition{
 

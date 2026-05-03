@@ -227,7 +227,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public unzip(path: string, zipFile: AbFile, fileName: string){
 var path = path

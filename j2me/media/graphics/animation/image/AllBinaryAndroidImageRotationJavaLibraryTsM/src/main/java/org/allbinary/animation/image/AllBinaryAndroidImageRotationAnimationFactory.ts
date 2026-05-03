@@ -79,7 +79,7 @@ import { AllBinaryAdjustedAndroidImageRotationAnimation } from "./AllBinaryAdjus
 export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -95,7 +95,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactoryA(image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -112,7 +112,7 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactoryU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -132,7 +132,7 @@ androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.get
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactoryDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
     //var image = image
@@ -190,7 +190,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getCanvasImage(): Image{
 
@@ -198,7 +198,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 ;
     
 
-                        if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);)
+                        if(this.resizeCanvasForRotation && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     
@@ -223,7 +223,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

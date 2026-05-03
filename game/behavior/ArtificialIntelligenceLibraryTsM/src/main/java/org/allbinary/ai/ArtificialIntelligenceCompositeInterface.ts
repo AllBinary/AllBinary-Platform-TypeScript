@@ -47,7 +47,7 @@
 export interface ArtificialIntelligenceCompositeInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface
 

@@ -50,7 +50,7 @@ export class TransformDocumentFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(): TransformDocumentInterface{
 

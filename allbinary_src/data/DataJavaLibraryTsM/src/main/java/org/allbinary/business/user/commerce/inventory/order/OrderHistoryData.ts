@@ -46,7 +46,7 @@ export class OrderHistoryData
          {
         
 
-    public MAXIDLEN: number = 19;
+    public static MAXIDLEN: number = 19;
 
     public static readonly DATEDELTA: string = "DATE_DELTA";
 

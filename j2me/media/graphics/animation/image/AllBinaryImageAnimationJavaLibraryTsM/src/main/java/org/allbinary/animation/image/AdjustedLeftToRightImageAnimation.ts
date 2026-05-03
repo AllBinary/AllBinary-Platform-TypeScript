@@ -75,7 +75,7 @@ this.init(dx, dy);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(dx: number, dy: number){
     //var dx = dx

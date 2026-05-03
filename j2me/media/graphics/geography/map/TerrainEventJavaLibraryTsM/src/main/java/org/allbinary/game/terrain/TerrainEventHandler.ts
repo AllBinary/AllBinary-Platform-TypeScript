@@ -73,7 +73,7 @@ import { TerrainEventListenerInterface } from "./TerrainEventListenerInterface.j
 export class TerrainEventHandler extends BasicEventHandler {
         
 
-    private hashtable: Hashtable<any, any> = NullUtil.getInstance()!.NULL_TABLE;
+    private static hashtable: Hashtable<any, any> = NullUtil.getInstance()!.NULL_TABLE;
 
     public static init(){
 TerrainEventHandler.hashtable= new Hashtable<any, any>();
@@ -147,7 +147,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -182,7 +182,7 @@ super.fireEvent(eventObject);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

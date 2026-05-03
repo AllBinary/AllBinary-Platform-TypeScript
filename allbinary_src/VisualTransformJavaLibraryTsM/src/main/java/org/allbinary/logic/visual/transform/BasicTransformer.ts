@@ -121,7 +121,7 @@ this.setTemplateAsInputStream();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setEncryptedTemplateFileAsInputStream(file: AbFile){
     //var file = file
@@ -211,7 +211,7 @@ this.streamUtil!.close(inputStream);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setEncryptedTemplateAsInputStream(){
 
@@ -286,7 +286,7 @@ this.streamUtil!.close(inputStream);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setTemplateAsInputStream(){
 

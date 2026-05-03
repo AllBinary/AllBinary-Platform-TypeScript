@@ -78,7 +78,7 @@ var foregroundBasicColor = foregroundBasicColor
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(rectangle: Rectangle){
 var rectangle = rectangle

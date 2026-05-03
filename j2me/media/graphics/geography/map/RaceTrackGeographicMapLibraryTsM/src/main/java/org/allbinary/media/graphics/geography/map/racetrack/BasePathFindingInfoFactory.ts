@@ -87,7 +87,7 @@ export class BasePathFindingInfoFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
@@ -116,7 +116,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
     //var tiledLayer = tiledLayer
@@ -220,7 +220,7 @@ geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(new RaceTra
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addStartPathFindingNode(pathFindingInfo: PathFindingInfo, startGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
@@ -230,7 +230,7 @@ pathFindingInfo!.addStartPathFindingNode(new PathFindingNode(NullUtil.getInstanc
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addEndPathFindingNode(pathFindingInfo: PathFindingInfo, endGeographicMapCellPosition: GeographicMapCellPosition){
     //var pathFindingInfo = pathFindingInfo
@@ -240,7 +240,7 @@ pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance(
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface

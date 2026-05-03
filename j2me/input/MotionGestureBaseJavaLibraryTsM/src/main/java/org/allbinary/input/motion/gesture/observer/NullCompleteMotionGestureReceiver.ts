@@ -71,7 +71,7 @@ this.logUtil!.putF("Null Gesture Reciever", this, commonStrings!.CONSTRUCTOR);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onMotionGestureCompleted(list: BasicArrayList){
 var list = list

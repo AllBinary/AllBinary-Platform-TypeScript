@@ -74,7 +74,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addDomNodeInterfaces(){
 this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
@@ -82,7 +82,7 @@ this.addDomNodeInterface(this.styleValidationInterface as DomNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

@@ -59,9 +59,9 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 export class StaticTileLayerIntoPositionViewPosition extends ViewPosition {
         
 
-    private tiledLayer: Layer = NullLayer.getInstance()!;
+    private static tiledLayer: Layer = NullLayer.getInstance()!;
 
-    public layer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
+    public static layer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 
     public static setTiledLayer(tiledLayer: AllBinaryTiledLayer){
 var tiledLayer = tiledLayer

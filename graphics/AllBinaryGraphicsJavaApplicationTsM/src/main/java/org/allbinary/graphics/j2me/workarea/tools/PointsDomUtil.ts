@@ -97,7 +97,7 @@ export class PointsDomUtil
 
     private readonly LINE: string = "line";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toDom(canvasDom: CanvasDom, pointVector: BasicArrayList): Node{
 var canvasDom = canvasDom

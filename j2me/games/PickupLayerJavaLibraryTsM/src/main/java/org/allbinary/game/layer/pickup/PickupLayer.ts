@@ -233,7 +233,7 @@ var damageType = damageType
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
 var gl = gl

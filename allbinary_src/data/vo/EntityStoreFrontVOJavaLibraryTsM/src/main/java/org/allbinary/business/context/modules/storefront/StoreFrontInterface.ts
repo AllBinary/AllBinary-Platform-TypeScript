@@ -97,7 +97,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     getCategoryPath(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getSubStores(): BasicArrayList
 
@@ -137,37 +137,37 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setHomeHostName(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setHomeHostNamePath(value: string)
 
     setHostName(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setHostNamePath(value: string)
 
     setTestHomeHostName(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setTestHomeHostNamePath(value: string)
 
     setTestHostName(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setTestHostNamePath(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setImagePath(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setStaticPath(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setCategoryPath(value: string)
 
@@ -177,7 +177,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setFtp(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setFtpPath(value: string)
 
@@ -187,7 +187,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setTestFtp(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setTestFtpPath(value: string)
 
@@ -199,7 +199,7 @@ export interface StoreFrontInterface extends TableMappingInterface {
 
     setLastModified(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     install(current: number, total: number)
 

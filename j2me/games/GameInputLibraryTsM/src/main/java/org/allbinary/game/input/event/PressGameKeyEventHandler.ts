@@ -122,7 +122,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -157,7 +157,7 @@ super.fireEvent(eventObject);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject

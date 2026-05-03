@@ -48,7 +48,7 @@ export class AllMotionRecognizer
          {
         
 
-    private index: number = 0;
+    private static index: number = 0;
 
     private readonly id: number
 public constructor (){
@@ -59,7 +59,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -69,7 +69,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -79,7 +79,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x
@@ -89,7 +89,7 @@ var modifiers = modifiers
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
 var x = x

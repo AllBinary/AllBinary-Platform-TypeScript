@@ -58,14 +58,14 @@ export class LayerManagerEventListener
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
     //var layerManagerEvent = layerManagerEvent

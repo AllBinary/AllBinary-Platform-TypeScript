@@ -242,7 +242,7 @@ this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type);
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

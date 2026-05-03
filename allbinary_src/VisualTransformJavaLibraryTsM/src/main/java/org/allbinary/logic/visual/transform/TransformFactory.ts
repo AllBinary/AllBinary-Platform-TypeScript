@@ -109,7 +109,7 @@ private constructor (){
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, viewName: string, ownerTransformInfoInterface: TransformInfoInterface): TransformInterface{
     //var abeClientInformation = abeClientInformation
@@ -196,7 +196,7 @@ transformInfoInterface!.setChild();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInterface{
     //var abeClientInformation = abeClientInformation
@@ -294,7 +294,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE, e
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
     //var abeClientInformation = abeClientInformation

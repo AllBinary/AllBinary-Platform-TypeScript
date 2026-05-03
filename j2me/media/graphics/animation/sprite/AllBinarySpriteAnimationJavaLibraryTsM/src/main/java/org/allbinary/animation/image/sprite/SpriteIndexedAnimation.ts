@@ -118,7 +118,7 @@ this.basicColorArray= basicColorArray;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 
@@ -311,7 +311,7 @@ this.sprite.setFrame(frame);
 }
 
 
-                //@Throws(Throwable::class)
+                //@Throws(Throwable.constructor)
             
     finalize(){
 }

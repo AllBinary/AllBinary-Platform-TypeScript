@@ -187,7 +187,7 @@ import { BuildingInfoHudPaintable } from "./BuildingInfoHudPaintable.js";
 export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnimationInterfaceCompositeInterface, TrackingEventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createSimulated(): BuildingLayer{
 
@@ -316,7 +316,7 @@ super.initVisibility(rtsPlayerLayerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -357,7 +357,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
 
     readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(3000);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -387,7 +387,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-                        if(currentFrame == size && !this.timeDelayHelper!.isTimeTNT();)
+                        if(currentFrame == size && !this.timeDelayHelper!.isTimeTNT())
                         
                                     {
                                     
@@ -570,7 +570,7 @@ this.efficiency= efficiency;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generateMoveOutOfBuildAreaPaths(){
 
@@ -702,7 +702,7 @@ this.healthBar!.paint(graphics);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -717,7 +717,7 @@ this.damageFloaters!.add(damage);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
 var damageType = damageType
@@ -766,7 +766,7 @@ VisibleCellPositionsSingleton.getInstance()!.removeStationaryCellPositions(surro
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed

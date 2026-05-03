@@ -64,11 +64,11 @@ import { BasicDataTableInterface } from "../../../../../../../../org/allbinary/d
 export interface InventoryEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(MoneyException::class)
+                //@Throws(MoneyException.constructor)
             
     getItem(id: string): ItemInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getItems(storeFrontInterface: StoreFrontInterface): Vector
 

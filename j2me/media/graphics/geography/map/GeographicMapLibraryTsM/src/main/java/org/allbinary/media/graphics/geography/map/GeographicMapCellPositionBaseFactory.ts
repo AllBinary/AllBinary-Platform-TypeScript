@@ -50,7 +50,7 @@ export class GeographicMapCellPositionBaseFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(geographicMapInterface: BasicGeographicMap): BasicGeographicMapCellPositionFactory{
     //var geographicMapInterface = geographicMapInterface

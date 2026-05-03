@@ -156,7 +156,7 @@ pooledThread!.start();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public runAPriorityTask(){
 
@@ -292,7 +292,7 @@ this.notify();
 }
 
 
-                //@Throws(InterruptedException::class)
+                //@Throws(InterruptedException.constructor)
             
     getTask(): Runnable{
 

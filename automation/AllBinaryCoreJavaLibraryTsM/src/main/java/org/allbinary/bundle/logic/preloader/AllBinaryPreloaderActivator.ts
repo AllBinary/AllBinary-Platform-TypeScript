@@ -72,7 +72,7 @@ export class AllBinaryPreloaderActivator
          implements BundleActivator {
         
 
-    private context: BundleContext
+    private static context: BundleContext
 
     private static readonly CRYPT_REGISTRY_NAME: string = "bundle.abcs.logic.system.loader.CryptService";
 
@@ -95,7 +95,7 @@ public constructor (){
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public start(context: BundleContext){
 var context = context
@@ -123,7 +123,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "start", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public registerAsService(){
 
@@ -150,7 +150,7 @@ serviceReference= AllBinaryPreloaderActivator.context.getServiceReference(CRYPT_
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
 var context = context

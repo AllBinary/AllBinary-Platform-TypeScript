@@ -68,7 +68,7 @@ export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
 }
 
 
-export inner class Config
+Config = class
             extends Object
          {
         
@@ -88,7 +88,7 @@ this.bitmapConfig= bitmapConfig;
 }
                 
             
-    public readonly ARGB_8888: Config = new Config(Bitmap.Config.ARGB_8888);
+    public readonly ARGB_8888: Config = new this.Config(Bitmap.Config.ARGB_8888);
 
     public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
 var width = width
@@ -103,7 +103,7 @@ var config = config
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public decodeStream(inputStream: InputStream): OpenGLBitmap{
 var inputStream = inputStream

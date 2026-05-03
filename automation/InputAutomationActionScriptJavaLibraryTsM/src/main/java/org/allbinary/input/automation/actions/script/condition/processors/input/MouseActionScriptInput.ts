@@ -290,7 +290,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -323,7 +323,7 @@ mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(frame: number){
 var frame = frame

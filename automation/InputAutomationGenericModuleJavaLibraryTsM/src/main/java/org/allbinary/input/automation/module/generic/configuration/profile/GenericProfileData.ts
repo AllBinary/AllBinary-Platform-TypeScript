@@ -46,7 +46,7 @@ export class GenericProfileData
          {
         
 
-    public NAME: string = "GENERIC_PROFILE_NAME";
+    public static NAME: string = "GENERIC_PROFILE_NAME";
 private constructor (){
 
             super();

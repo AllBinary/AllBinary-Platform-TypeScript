@@ -52,11 +52,11 @@ import { StreetAddress } from "../../../../../../../../org/allbinary/business/us
 export interface TaxModuleInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean
 

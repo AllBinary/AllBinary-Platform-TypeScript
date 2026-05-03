@@ -87,7 +87,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

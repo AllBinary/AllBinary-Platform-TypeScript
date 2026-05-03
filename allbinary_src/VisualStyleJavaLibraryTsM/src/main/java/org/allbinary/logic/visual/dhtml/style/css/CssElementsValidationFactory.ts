@@ -61,7 +61,7 @@ export class CssElementsValidationFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(cssElementStyleNodeList: Vector): Vector{
     //var cssElementStyleNodeList = cssElementStyleNodeList

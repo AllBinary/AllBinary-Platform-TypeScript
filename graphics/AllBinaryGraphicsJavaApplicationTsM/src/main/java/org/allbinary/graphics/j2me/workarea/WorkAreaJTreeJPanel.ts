@@ -137,7 +137,7 @@ this.rootTreeNode!.add(treeNode);
     public updateTree(){
 this.workAreaJTree= new JTree(this.rootTreeNode);
     
-this.workAreaJTree!.addMouseListener(new java.awt.event.MouseAdapter()
+this.workAreaJTree!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -235,7 +235,7 @@ var treePath = treePath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public deselectAll(){
 
@@ -265,7 +265,7 @@ this.highlightedBasicArrayList!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public selectGraphicItem(node: DefaultMutableTreeNode){
 var node = node
@@ -276,7 +276,7 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public removeGraphicItem(node: DefaultMutableTreeNode){
 var node = node
@@ -285,7 +285,7 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public removeCanvas(node: DefaultMutableTreeNode){
 var node = node
@@ -294,7 +294,7 @@ MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEven
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(treePath: TreePath){
 var treePath = treePath
@@ -335,7 +335,7 @@ parent.remove(node);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     copy(){
 
@@ -353,7 +353,7 @@ this.repaint();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     copy(treePath: TreePath){
 var treePath = treePath
@@ -388,7 +388,7 @@ var treePath = treePath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public rotate(treePath: TreePath, angle: number){
 var treePath = treePath
@@ -462,7 +462,7 @@ this.itemJScrollPane1= new javax.swing.JScrollPane();
     
 this.workAreaPropertiesJPanel= new javax.swing.JPanel();
     
-itemJPopupMenu!.addPopupMenuListener(new javax.swing.event.PopupMenuListener()
+itemJPopupMenu!.addPopupMenuListener(new class extends javax.swing.event.PopupMenuListener
                                 {
                                 
     public popupMenuCanceled(evt: javax.swing.event.PopupMenuEvent){
@@ -486,7 +486,7 @@ itemJPopupMenuPopupMenuWillBecomeVisible(evt);
     
 this.deleteJMenuItem!.setText("Delete");
     
-this.deleteJMenuItem!.addMouseListener(new java.awt.event.MouseAdapter()
+this.deleteJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -502,7 +502,7 @@ this.itemJPopupMenu!.add(this.deleteJMenuItem);
     
 this.copyJMenuItem!.setText("Copy");
     
-this.copyJMenuItem!.addMouseListener(new java.awt.event.MouseAdapter()
+this.copyJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -518,7 +518,7 @@ this.itemJPopupMenu!.add(this.copyJMenuItem);
     
 this.rotateJMenuItem!.setText("Rotate 45*");
     
-this.rotateJMenuItem!.addMouseListener(new java.awt.event.MouseAdapter()
+this.rotateJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
@@ -534,7 +534,7 @@ this.itemJPopupMenu!.add(this.rotateJMenuItem);
     
 setLayout(new java.awt.GridLayout(1, 1));
     
-this.workAreaPropertiesJPanel!.addMouseListener(new java.awt.event.MouseAdapter()
+this.workAreaPropertiesJPanel!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){

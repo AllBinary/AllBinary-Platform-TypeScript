@@ -58,7 +58,7 @@ import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/ev
 export class LocalPlayerBuildingEventHandler extends BasicEventHandler {
         
 
-    private eventHandler: LocalPlayerBuildingEventHandler = new LocalPlayerBuildingEventHandler();
+    private static eventHandler: LocalPlayerBuildingEventHandler = new LocalPlayerBuildingEventHandler();
 
     public static getInstance(): LocalPlayerBuildingEventHandler{
 
@@ -75,7 +75,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

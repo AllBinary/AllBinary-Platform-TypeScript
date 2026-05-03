@@ -83,7 +83,7 @@ this.dataMappingInterface= dataMappingInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -110,7 +110,7 @@ hashMap!.put(UserData.PASSWORD, EMPTY_STRING);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -122,7 +122,7 @@ hashMap!.put(UserData.PASSWORD, EMPTY_STRING);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

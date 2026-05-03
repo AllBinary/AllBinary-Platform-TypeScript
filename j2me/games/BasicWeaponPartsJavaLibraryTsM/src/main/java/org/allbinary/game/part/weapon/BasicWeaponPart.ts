@@ -138,7 +138,7 @@ this.relativeRelationship= relativeRelationship;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number){
     //var allbinaryLayerManager = allbinaryLayerManager
@@ -149,7 +149,7 @@ this.processScore(allbinaryLayerManager, angle, otherAngle, this.getWeaponProper
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager

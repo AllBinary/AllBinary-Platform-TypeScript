@@ -48,11 +48,11 @@
 export interface WorkFlowInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getName(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(): number
 

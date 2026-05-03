@@ -187,7 +187,7 @@ this.ifJLabel!.setText("Conditions:");
     
 this.newColorAtJButton!.setText("Color Range At");
     
-this.newColorAtJButton!.addActionListener(new java.awt.event.ActionListener()
+this.newColorAtJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -201,7 +201,7 @@ newColorAtJButtonActionPerformed(evt);
     
 this.newTimeIntervalJButton!.setText("Time Interval");
     
-this.newTimeIntervalJButton!.addActionListener(new java.awt.event.ActionListener()
+this.newTimeIntervalJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -215,7 +215,7 @@ newTimeIntervalJButtonActionPerformed(evt);
     
 this.newAlwaysJButton!.setText("Always On/Off");
     
-this.newAlwaysJButton!.addActionListener(new java.awt.event.ActionListener()
+this.newAlwaysJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

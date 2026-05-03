@@ -205,7 +205,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processTick(){
 
@@ -261,7 +261,7 @@ this.circularIndexUtil!.setSize(this.permanentGameNotification!.getSize());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setAndRemove(){
 this.string= this.gameNotification!.stringList!.removeAt(0) as string;
@@ -300,7 +300,7 @@ this.setBasicColorP(this.gameNotification!.colorList!.removeAt(0) as BasicColor)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setNextUnremoveable(){
 

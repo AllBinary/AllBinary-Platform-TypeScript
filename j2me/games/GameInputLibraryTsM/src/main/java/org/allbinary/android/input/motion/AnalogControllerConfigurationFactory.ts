@@ -92,7 +92,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAvailable(available: boolean){
 var available = available

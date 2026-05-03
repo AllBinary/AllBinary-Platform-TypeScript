@@ -58,7 +58,7 @@ export class BasicErrorNodeUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static get(document: Document, errorText: string): Node{
 var document = document

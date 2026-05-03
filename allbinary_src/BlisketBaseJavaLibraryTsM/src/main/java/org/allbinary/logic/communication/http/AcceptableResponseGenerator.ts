@@ -77,7 +77,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(httpServletRequest: HttpServletRequest): string{
 var httpServletRequest = httpServletRequest

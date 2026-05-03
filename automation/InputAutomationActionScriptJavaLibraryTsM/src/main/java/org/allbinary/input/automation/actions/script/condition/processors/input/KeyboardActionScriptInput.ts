@@ -281,7 +281,7 @@ this.setKeyArray(vector.toArray(new Array(vector.length)) as Array<Integer?>);
 this.setAllowsChildren(false);
     
 
-                        if(!this.isPress(); && !this.isRelease();)
+                        if(!this.isPress() && !this.isRelease())
                         
                                     {
                                     this.setNormal();
@@ -300,7 +300,7 @@ public constructor (){
                             //For kotlin this is before the body of the constructor.
                     
 
-                        if(!this.isPress(); && !this.isRelease();)
+                        if(!this.isPress() && !this.isRelease())
                         
                                     {
                                     this.setNormal();
@@ -550,7 +550,7 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -569,7 +569,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionS
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(frame: number){
 var frame = frame

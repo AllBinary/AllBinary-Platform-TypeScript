@@ -135,7 +135,7 @@ this.ownerLayer= ownerLayer;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -148,7 +148,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPathFindingInfo(geographicMapCellPosition: GeographicMapCellPosition): PathFindingInfo{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -247,7 +247,7 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPathsList(geographicMapCellPosition: GeographicMapCellPosition, pathFindingInfo: PathFindingInfo, multipassState: MultipassState): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -338,7 +338,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getPathsList", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
@@ -395,7 +395,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
     //var event = event
@@ -408,7 +408,7 @@ this.getConnectedWaypointList()!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(unitLayer: PathFindingLayerInterface){
     //var unitLayer = unitLayer

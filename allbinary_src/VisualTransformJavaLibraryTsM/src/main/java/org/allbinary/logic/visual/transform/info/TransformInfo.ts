@@ -200,7 +200,7 @@ this.setDataFile(dataFileName);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public override(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -633,7 +633,7 @@ this.templateFileName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setObjectConfigFileName(value: string){
 var value = value
@@ -642,7 +642,7 @@ this.objectConfigFileName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setObjectConfigFile(value: string){
 var value = value
@@ -653,7 +653,7 @@ this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.get
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setObjectConfig(value: string){
 var value = value
@@ -730,7 +730,7 @@ this.data= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTemplateFilePath(): AbPath{
 
@@ -742,7 +742,7 @@ this.data= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -754,7 +754,7 @@ this.data= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDataFilePath(): AbPath{
 
@@ -910,7 +910,7 @@ stringBuffer!.append(this.getDataFilePath()!.toFileSystemString());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDataDocument(): Document{
 

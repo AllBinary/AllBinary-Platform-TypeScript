@@ -55,11 +55,11 @@ export class GameConfigurationTextInput
          {
         
 
-    private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
+    private static hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-    public SIMULATOR_IP: GameConfigurationTextInput = new GameConfigurationTextInput("IP: ", "192.168.1.3");
+    public static SIMULATOR_IP: GameConfigurationTextInput = new GameConfigurationTextInput("IP: ", "192.168.1.3");
 
-    public SIMULATOR_PORT: GameConfigurationTextInput = new GameConfigurationTextInput("Port: ", "8010");
+    public static SIMULATOR_PORT: GameConfigurationTextInput = new GameConfigurationTextInput("Port: ", "8010");
 
     public static update(textField: TextField){
 var textField = textField

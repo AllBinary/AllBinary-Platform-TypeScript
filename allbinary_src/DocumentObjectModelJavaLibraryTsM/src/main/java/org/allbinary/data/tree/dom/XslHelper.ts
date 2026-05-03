@@ -98,7 +98,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
     //var xsltStreamSource = xsltStreamSource
@@ -136,7 +136,7 @@ transformer.transform(xmlStreamSource, streamResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
     //var resolver = resolver
@@ -177,7 +177,7 @@ transformer.transform(xmlStreamSource, streamResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(xsltStreamSource: StreamSource, xmlDocument: Document): string{
     //var xsltStreamSource = xsltStreamSource
@@ -208,7 +208,7 @@ transformer.transform(xmlStreamSource, streamResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
     //var xsltStreamSource = xsltStreamSource
@@ -239,7 +239,7 @@ transformer.transform(xmlStreamSource, streamResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
     //var resolver = resolver
@@ -271,7 +271,7 @@ transformer.transform(xmlStreamSource, streamResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public export(outputFile: File, xsltFilePath: string, xmlDocument: Document){
     //var outputFile = outputFile

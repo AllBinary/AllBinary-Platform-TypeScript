@@ -46,15 +46,15 @@ export class MouseActionScriptInputData
          {
         
 
-    public NAME: string = "MOUSE_ACTION_INPUT_NAME";
+    public static NAME: string = "MOUSE_ACTION_INPUT_NAME";
 
-    public BUTTONS: string = "MOUSE_ACTION_INPUT_BUTTONS";
+    public static BUTTONS: string = "MOUSE_ACTION_INPUT_BUTTONS";
 
-    public MOVE: string = "MOUSE_ACTION_INPUT_MOVE";
+    public static MOVE: string = "MOUSE_ACTION_INPUT_MOVE";
 
-    public MOVE_X: string = "MOUSE_ACTION_INPUT_MOVE_X";
+    public static MOVE_X: string = "MOUSE_ACTION_INPUT_MOVE_X";
 
-    public MOVE_Y: string = "MOUSE_ACTION_INPUT_MOVE_Y";
+    public static MOVE_Y: string = "MOUSE_ACTION_INPUT_MOVE_Y";
 private constructor (){
 
             super();

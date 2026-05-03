@@ -69,7 +69,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFromString(booleanString: string): boolean{
     //var booleanString = booleanString
@@ -136,7 +136,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isStringBoolean(booleanString: string): boolean{
     //var booleanString = booleanString

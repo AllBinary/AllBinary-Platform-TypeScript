@@ -50,9 +50,9 @@ export class Orientation
          {
         
 
-    public NONE: Orientation = new Orientation(0, 0, 0);
+    public static NONE: Orientation = new Orientation(0, 0, 0);
 
-    private SINGLETON: Orientation = new Orientation(0, 0, 0);
+    private static SINGLETON: Orientation = new Orientation(0, 0, 0);
 
     public static getInstance(yaw: number, pitch: number, roll: number): Orientation{
 var yaw = yaw

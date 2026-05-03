@@ -70,23 +70,23 @@ export interface OrderHistoryEntityInterface extends BasicDataTableInterface {
 
     setPaymentMethod(orderId: string, status: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getOrders(userName: string): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getOrders(status: string, fromDate: string, toDate: string): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getOrder(id: string): OrderHistory
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>)
 

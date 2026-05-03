@@ -123,7 +123,7 @@ this.cancelled= this.request.getParameter(OrderHistoryData.CANCELLEDNAME);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
     //var document = document
@@ -225,7 +225,7 @@ this.addDomNodeInterface(this as DomNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

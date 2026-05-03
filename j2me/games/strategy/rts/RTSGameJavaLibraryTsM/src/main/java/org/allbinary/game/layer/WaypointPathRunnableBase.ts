@@ -93,7 +93,7 @@ this.runningP= isRunning;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
     //var thread = thread

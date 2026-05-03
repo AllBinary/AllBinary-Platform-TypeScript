@@ -116,7 +116,7 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         
 
-    public TYPE_ID: number = 10;
+    public static TYPE_ID: number = 10;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -167,7 +167,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFormData(){
 this.setRequestHashMap(new MultipartRequestParams(this.request).
@@ -275,7 +275,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 
@@ -311,7 +311,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processImageFiles(){
 

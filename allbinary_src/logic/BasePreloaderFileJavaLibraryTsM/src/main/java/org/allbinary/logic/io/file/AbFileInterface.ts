@@ -57,11 +57,11 @@ export interface AbFileInterface {
 
     canWrite(): boolean
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     createNewFile(): boolean
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     delete(): boolean
 
@@ -71,7 +71,7 @@ export interface AbFileInterface {
 
     getAbsolutePath(): string
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     getCanonicalPath(): string
 

@@ -69,7 +69,7 @@ export class BufferedIOUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static copy(backupFile: AbFile, backupFileBak: AbFile){
 var backupFile = backupFile

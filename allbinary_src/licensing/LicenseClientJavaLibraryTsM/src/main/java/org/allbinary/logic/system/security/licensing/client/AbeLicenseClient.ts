@@ -87,7 +87,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
@@ -126,7 +126,7 @@ public constructor (){
 ;
     
 
-                        if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId);)
+                        if(stringValidationUtil!.isEmpty(abeClientInformation!.getLicenseId()) && !abeClientInformation!.isSameId(licenseId))
                         
                                     {
                                     isNewLicenseId= true;

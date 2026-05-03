@@ -154,7 +154,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
+                                 || this.getId()!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
                         
                                     {
                                     
@@ -193,7 +193,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.localeCompare(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId());)
+                                 || this.getId()!.localeCompare(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
                         
                                     {
                                     
@@ -444,7 +444,7 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

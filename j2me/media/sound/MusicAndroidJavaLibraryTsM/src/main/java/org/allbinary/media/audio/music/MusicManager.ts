@@ -94,7 +94,7 @@ var musicServiceClass = musicServiceClass
 ;
     
 
-    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass::class.java);
+    var musicPauseIntent: Intent = new Intent(activity as Context, musicServiceClass.constructor.java);
 ;
     
 musicPauseIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 1);
@@ -116,7 +116,7 @@ var musicServiceClass = musicServiceClass
 ;
     
 
-    var musicResumeIntent: Intent = new Intent(activity, musicServiceClass::class.java);
+    var musicResumeIntent: Intent = new Intent(activity, musicServiceClass.constructor.java);
 ;
     
 musicResumeIntent!.putExtra(commonStateStrings!.ON_START_COMMAND, 2);
@@ -173,7 +173,7 @@ PreLogUtil.put(this.commonStateStrings!.CONTEXT +this.resourceUtil!.getContext()
     
 this.musicServiceClass= musicServiceClass;
     
-this.currentIntent= new Intent(this.resourceUtil!.getContext(), musicServiceClass::class.java);
+this.currentIntent= new Intent(this.resourceUtil!.getContext(), musicServiceClass.constructor.java);
     
 this.songList= songList;
     
@@ -354,7 +354,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stop(){
 this.resourceUtil!.getContext()!.stopService(this.currentIntent);

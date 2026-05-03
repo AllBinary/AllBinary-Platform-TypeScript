@@ -62,7 +62,7 @@ export class GroupFactory
          {
         
 
-    private instance: GroupFactory = new GroupFactory();
+    private static instance: GroupFactory = new GroupFactory();
 
     public static getInstance(): GroupFactory{
 

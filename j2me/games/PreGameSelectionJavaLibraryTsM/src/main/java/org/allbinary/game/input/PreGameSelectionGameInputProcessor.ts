@@ -117,7 +117,7 @@ export class PreGameSelectionGameInputProcessor extends Processor implements Gam
 
     private readonly lockedIndex: number
 
-    private readonly abRunnable: ABRunnable = new ABRunnable()
+    private readonly abRunnable: ABRunnable = new class extends ABRunnable
                                 {
                                 
     public run(){
@@ -175,7 +175,7 @@ this.lockedIndex= lockedIndex;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.getPlayerGameInput()!.update();
@@ -183,7 +183,7 @@ this.getPlayerGameInput()!.update();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onInput(list: BasicArrayList){
 var list = list
@@ -237,7 +237,7 @@ break;
 ;
     
 
-                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLocked();)
+                        if(selectedIndex < this.lockedIndex || !LockedUtil.getInstance()!.isLocked())
                         
                                     {
                                     
@@ -287,7 +287,7 @@ list.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

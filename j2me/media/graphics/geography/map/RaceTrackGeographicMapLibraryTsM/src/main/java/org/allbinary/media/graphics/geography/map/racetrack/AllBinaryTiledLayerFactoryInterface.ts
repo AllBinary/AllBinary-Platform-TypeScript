@@ -37,11 +37,11 @@ import { RaceTrackData } from "./RaceTrackData.js";
 export interface AllBinaryTiledLayerFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer
 

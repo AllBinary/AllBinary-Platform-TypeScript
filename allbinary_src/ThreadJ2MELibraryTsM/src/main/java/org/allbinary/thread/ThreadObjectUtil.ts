@@ -60,7 +60,7 @@ anyType!.notify();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitObject(anyType: Object){
 var anyType = anyType
@@ -69,7 +69,7 @@ anyType!.wait();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitObjectFor(anyType: Object, delay: number){
 var anyType = anyType

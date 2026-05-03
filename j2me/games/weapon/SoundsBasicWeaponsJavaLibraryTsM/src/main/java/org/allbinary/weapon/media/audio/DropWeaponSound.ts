@@ -50,7 +50,7 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 export class DropWeaponSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new DropWeaponSound();
+    private static soundInterface: Sound = new DropWeaponSound();
 
     public static getInstance(): Sound{
 

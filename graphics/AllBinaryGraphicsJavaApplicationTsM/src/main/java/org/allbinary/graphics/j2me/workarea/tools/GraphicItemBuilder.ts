@@ -54,7 +54,7 @@ export class GraphicItemBuilder
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): GraphicItemInterface{
 var node = node

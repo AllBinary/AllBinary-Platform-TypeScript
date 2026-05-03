@@ -125,7 +125,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -159,7 +159,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-this.jPanel1= new javax.swing.JPanel()
+this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
@@ -211,7 +211,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.
     
 this.generateJButton!.setText("Generate");
     
-this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -228,7 +228,7 @@ this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                     commonStrings!.UP,commonStrings!.DOWN,"-90","90";
                                                 ]));
     
-this.totalAngleJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalAngleJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -326,7 +326,7 @@ this.imageProcessorInput= imageProcessorInput;
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public visit(generatedBufferedImage: BufferedImage, name: string, index: number){
     //var generatedBufferedImage = generatedBufferedImage

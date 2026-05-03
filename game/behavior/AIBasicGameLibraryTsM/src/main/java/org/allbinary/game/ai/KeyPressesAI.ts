@@ -102,7 +102,7 @@ this.keys[index]= hashtable.get(objectArray[index]! as Object) as Integer;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -128,7 +128,7 @@ super.processKeyAI(this.keys[index]!.toInt());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toggle(){
 
@@ -149,7 +149,7 @@ super.processKeyAI(this.keys[index]!.toInt());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public disable(){
 this.setOn(false);
@@ -157,7 +157,7 @@ this.setOn(false);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public enable(){
 this.setOn(true);

@@ -164,7 +164,7 @@ var values = values
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAdministrators(): Vector{
 
@@ -176,7 +176,7 @@ var values = values
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -228,7 +228,7 @@ i < size; i++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCustomers(): Vector{
 
@@ -240,7 +240,7 @@ i < size; i++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getUsersWithRole(userRole: UserRole): Vector{
 var userRole = userRole
@@ -290,7 +290,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -340,7 +340,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getUser(userName: string): UserInterface{
 var userName = userName

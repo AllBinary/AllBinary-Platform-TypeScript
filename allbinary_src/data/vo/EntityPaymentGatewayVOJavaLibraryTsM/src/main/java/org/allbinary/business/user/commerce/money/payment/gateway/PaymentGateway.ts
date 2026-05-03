@@ -940,7 +940,7 @@ this.timeEntered= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -952,7 +952,7 @@ this.timeEntered= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(isEncrypted: boolean): HashMap<any, any>{
 var isEncrypted = isEncrypted
@@ -1226,7 +1226,7 @@ updateVector!.add(this.special9);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 

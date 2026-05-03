@@ -107,7 +107,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(aParentViewName: string){
 var aParentViewName = aParentViewName

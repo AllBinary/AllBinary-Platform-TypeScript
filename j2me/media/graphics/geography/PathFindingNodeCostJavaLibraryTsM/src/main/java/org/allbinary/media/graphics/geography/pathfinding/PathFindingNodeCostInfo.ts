@@ -93,7 +93,7 @@ this.totalCostP= totalCost;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setCalculatedTotalCost(){
 this.totalCostP= this.costFromStartP +this.costToEndP;

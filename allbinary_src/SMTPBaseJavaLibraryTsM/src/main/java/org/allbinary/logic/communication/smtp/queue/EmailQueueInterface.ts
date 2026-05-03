@@ -49,11 +49,11 @@ import { EmailInterface } from "../../../../../../org/allbinary/logic/communicat
 export interface EmailQueueInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     offer(emailInterface: EmailInterface): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     remove(): EmailInterface
 

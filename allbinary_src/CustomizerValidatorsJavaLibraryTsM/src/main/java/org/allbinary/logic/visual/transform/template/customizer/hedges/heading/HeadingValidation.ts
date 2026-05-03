@@ -131,7 +131,7 @@ this.getFormData(hashMap);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){
 var hashMap = hashMap
@@ -191,7 +191,7 @@ this.logo= new LogoValidation(hashMap);
                         }
                             
 
-                        if(!titleValid.valueOf(); && !logoValid.valueOf();)
+                        if(!titleValid.valueOf() && !logoValid.valueOf())
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -276,7 +276,7 @@ this.logo= new LogoValidation(hashMap);
                                     }
                                 
 
-                        if(!titleValid.valueOf(); && !logoValid.valueOf();)
+                        if(!titleValid.valueOf() && !logoValid.valueOf())
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -344,7 +344,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

@@ -90,7 +90,7 @@ this.update();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -99,7 +99,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update(){
 
@@ -175,7 +175,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toggle(){
 
@@ -192,7 +192,7 @@ this.update();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public disable(){
 
@@ -209,7 +209,7 @@ this.update();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public enable(){
 

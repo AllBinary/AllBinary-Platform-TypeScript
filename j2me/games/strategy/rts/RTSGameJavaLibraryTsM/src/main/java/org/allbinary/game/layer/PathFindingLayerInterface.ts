@@ -64,7 +64,7 @@ import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
 export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getEndGeographicMapCellPositionList(): BasicArrayList
 
@@ -74,7 +74,7 @@ export interface PathFindingLayerInterface extends WaypointLayerInterface, GameK
 
     getHudPaintable(): SelectionHudPaintable
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     handleCost(ownerLayer: PathFindingLayerInterface)
 
@@ -82,7 +82,7 @@ export interface PathFindingLayerInterface extends WaypointLayerInterface, GameK
 
     getRTSLayer2LogHelper(): RTSLayer2LogHelper
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setTarget(targetGameLayer: PathFindingLayerInterface)
 

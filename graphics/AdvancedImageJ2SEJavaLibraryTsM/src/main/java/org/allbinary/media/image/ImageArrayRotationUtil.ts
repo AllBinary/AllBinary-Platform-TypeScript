@@ -81,7 +81,7 @@ export class ImageArrayRotationUtil
 
     private readonly TOTAL_ANGLE: string = "totalAngle: ";
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, input: string, visitor: ImageProcessedVisitor){
     //var imageProcessorInput = imageProcessorInput

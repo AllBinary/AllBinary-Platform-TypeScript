@@ -206,7 +206,7 @@ this.setPaintable(this.getHighScoresPaintable());
 
                         }
                             
-SecondaryThreadPool.getInstance()!.runTask(new ARunnable()
+SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -392,7 +392,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateCommand(command: Command){
 var command = command

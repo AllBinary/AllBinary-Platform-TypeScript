@@ -261,7 +261,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -275,7 +275,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWithKey(key: any = {}): Image{
     //var key = key
@@ -287,7 +287,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createImage(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -302,7 +302,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key

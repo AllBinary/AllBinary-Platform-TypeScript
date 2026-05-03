@@ -52,7 +52,7 @@ import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterface
 export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 
-    private SINGLETON: PickupLayerCircularStaticPool = new PickupLayerCircularStaticPool();
+    private static SINGLETON: PickupLayerCircularStaticPool = new PickupLayerCircularStaticPool();
 
     public static getInstance(): PickupLayerCircularStaticPool{
 
@@ -69,7 +69,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceXYZ(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, x: number, y: number, z: number): PickedUpLayerInterface{
     //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface

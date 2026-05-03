@@ -53,7 +53,7 @@ import { Orientation } from "../../../../../org/allbinary/logic/math/Orientation
 export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor implements AllBinarySensorListener {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrientation(): Orientation{
 

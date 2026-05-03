@@ -59,7 +59,7 @@ export class BaseCircularPool
 
     OBJECT_ARRAY: any[] = NullUtil.getInstance()!.NULL_OBJECT_ARRAY;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(): any{
@@ -101,7 +101,7 @@ this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(index: number): any{
 var index = index

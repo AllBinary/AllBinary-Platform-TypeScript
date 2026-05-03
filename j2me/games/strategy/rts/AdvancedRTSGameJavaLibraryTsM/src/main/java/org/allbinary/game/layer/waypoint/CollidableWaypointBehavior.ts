@@ -76,7 +76,7 @@ var collisionLayer = collisionLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collide(collisionLayer: CollidableCompositeLayer){
 var collisionLayer = collisionLayer
@@ -94,7 +94,7 @@ var collidableInterface = collidableInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collideInterface(collidableInterface: CollidableInterfaceCompositeInterface){
 var collidableInterface = collidableInterface

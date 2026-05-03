@@ -122,14 +122,14 @@ export class NullGameCanvasRunnable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setHighScoreSubmitted(highScoreSubmitted: boolean){
 var highScoreSubmitted = highScoreSubmitted
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processGameOver(){
 }
@@ -150,7 +150,7 @@ var cmdListener = cmdListener
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 
@@ -162,7 +162,7 @@ var cmdListener = cmdListener
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
 
@@ -174,7 +174,7 @@ var cmdListener = cmdListener
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
@@ -191,7 +191,7 @@ var hashtable = hashtable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setGameState(gameState: GameState){
 var gameState = gameState
@@ -238,7 +238,7 @@ var isRunning = isRunning
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
 var thread = thread

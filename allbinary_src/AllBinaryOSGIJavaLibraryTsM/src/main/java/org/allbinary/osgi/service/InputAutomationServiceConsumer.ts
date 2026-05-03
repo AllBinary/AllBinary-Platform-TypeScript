@@ -96,7 +96,7 @@ this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
@@ -142,7 +142,7 @@ osgiServiceInterface= vector.get(index) as OSGIServiceInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getServiceReferences(): ServiceReference[]{
 

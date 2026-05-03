@@ -124,7 +124,7 @@ this.ownerLayer= ownerLayer;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -137,7 +137,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPathsListFromCacheOnly(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -150,7 +150,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPathsListRunnable(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -163,7 +163,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
@@ -213,7 +213,7 @@ endGeographicMapCellPosition= endList!.get(index) as GeographicMapCellPosition;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPaths(startGeographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var startGeographicMapCellPosition = startGeographicMapCellPosition
@@ -331,7 +331,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
     //var event = event
@@ -344,7 +344,7 @@ this.getConnectedWaypointList()!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(unitLayer: PathFindingLayerInterface){
     //var unitLayer = unitLayer

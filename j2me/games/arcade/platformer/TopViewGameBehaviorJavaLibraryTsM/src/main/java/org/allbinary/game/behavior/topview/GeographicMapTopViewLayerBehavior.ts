@@ -77,7 +77,7 @@ public constructor (maxGravityActionIndex: number){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -95,7 +95,7 @@ var y = y
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -112,7 +112,7 @@ var y = y
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getGeographicMapCellPositionFromListIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPositionList: BasicArrayList, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -129,7 +129,7 @@ var y = y
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public gravity(velocityProperties: VelocityProperties, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
     //var velocityProperties = velocityProperties
@@ -139,7 +139,7 @@ var y = y
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public left(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -149,7 +149,7 @@ var y = y
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public move(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): boolean{
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -167,7 +167,7 @@ var y = y
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public moveAndLand(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray
@@ -180,7 +180,7 @@ var y = y
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public right(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
     //var geographicMapInterfaceArray = geographicMapInterfaceArray

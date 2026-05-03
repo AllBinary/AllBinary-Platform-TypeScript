@@ -116,7 +116,7 @@ this.ext= ext;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
@@ -159,7 +159,7 @@ this.ext= ext;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
     //var resource = resource

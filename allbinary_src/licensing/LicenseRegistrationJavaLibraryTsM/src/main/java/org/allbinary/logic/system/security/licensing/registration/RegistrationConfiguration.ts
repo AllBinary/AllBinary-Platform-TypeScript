@@ -138,7 +138,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     read(){
 
@@ -161,7 +161,7 @@ PreLogUtil.put(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(){
 

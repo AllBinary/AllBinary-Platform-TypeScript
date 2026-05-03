@@ -49,7 +49,7 @@ export class LOGGING
          {
         
 
-    private logging: Vector = new Vector();
+    private static logging: Vector = new Vector();
 
     public static contains(logType: LOGGING): boolean{
 var logType = logType

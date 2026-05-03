@@ -108,7 +108,7 @@ super.init(ROOT, SIZE);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     append(ROOT: string, sizeString: string){
 var ROOT = ROOT
@@ -118,7 +118,7 @@ super.append(ROOT, sizeString);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getString(): string{
 

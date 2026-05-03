@@ -134,7 +134,7 @@ this.dimension= dimension;
     var submitButton: JButton = new JButton("Ok");
 ;
     
-submitButton!.addActionListener(new ActionListener()
+submitButton!.addActionListener(new class extends ActionListener
                                 {
                                 
     public actionPerformed(evt: ActionEvent){
@@ -192,7 +192,7 @@ this.show();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     disposeNewDialog(){
 
@@ -241,7 +241,7 @@ this.dispose();
 
 
     initComponents(){
-addWindowListener(new java.awt.event.WindowAdapter()
+addWindowListener(new class extends java.awt.event.WindowAdapter
                                 {
                                 
     public windowClosing(evt: java.awt.event.WindowEvent){

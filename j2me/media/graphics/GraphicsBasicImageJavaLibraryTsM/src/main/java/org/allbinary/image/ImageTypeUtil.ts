@@ -52,7 +52,7 @@ export class ImageTypeUtil
          {
         
 
-    private SINGLETON: ImageTypeUtil = new ImageTypeUtil();
+    private static SINGLETON: ImageTypeUtil = new ImageTypeUtil();
 
     public static getInstance(): ImageTypeUtil{
 

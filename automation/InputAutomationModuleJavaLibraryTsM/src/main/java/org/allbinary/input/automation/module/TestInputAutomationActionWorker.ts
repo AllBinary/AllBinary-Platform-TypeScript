@@ -91,7 +91,7 @@ this.sleep= sleep;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processBetweenWorkers(){
 Thread.sleep(2000);
@@ -99,7 +99,7 @@ Thread.sleep(2000);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);

@@ -90,7 +90,7 @@ export class AuthenticationHelperUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isAuthorized(authenticationHelper: AuthenticationHelper, filePath: string): boolean{
 var authenticationHelper = authenticationHelper

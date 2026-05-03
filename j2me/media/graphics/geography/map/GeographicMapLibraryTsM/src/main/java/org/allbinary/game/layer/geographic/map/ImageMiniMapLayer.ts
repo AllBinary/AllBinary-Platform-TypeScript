@@ -80,7 +80,7 @@ var viewPosition = viewPosition
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 

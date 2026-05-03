@@ -61,7 +61,7 @@ import { ImageArrayRotationAnimationCacheable } from "./ImageArrayRotationAnimat
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {
         
 
-    private IMAGE_ROTATION_ANIMATION_POOL: PoolInterface = new ImageArrayRotationAnimationPool(new ImageArrayRotationAnimationCacheableInterfaceFactory());
+    private static IMAGE_ROTATION_ANIMATION_POOL: PoolInterface = new ImageArrayRotationAnimationPool(new ImageArrayRotationAnimationCacheableInterfaceFactory());
 
     public static getInstance(): PoolInterface{
 
@@ -82,7 +82,7 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key

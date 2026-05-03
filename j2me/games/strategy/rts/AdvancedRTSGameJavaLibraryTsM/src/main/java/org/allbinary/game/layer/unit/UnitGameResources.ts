@@ -84,7 +84,7 @@ protected constructor (){
 
     private readonly ICON_SIZE: string = "_64_by_64.png";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     append(ROOT: string, sizeString: string){
 var ROOT = ROOT
@@ -142,7 +142,7 @@ this.RESOURCE_ICON_BUILD= stringBuffer!.toString();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getString(): string{
 

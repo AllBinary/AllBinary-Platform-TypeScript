@@ -124,7 +124,7 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initPath(){
 

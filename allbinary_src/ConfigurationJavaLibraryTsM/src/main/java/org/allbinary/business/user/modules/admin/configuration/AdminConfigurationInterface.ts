@@ -49,7 +49,7 @@ import { ContextConfigurationInterface } from "../../../../../../../org/allbinar
 export interface AdminConfigurationInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     write()
 

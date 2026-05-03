@@ -49,7 +49,7 @@ import { HashMap } from "../../../../java/util/HashMap.js";
 export interface HashMapJDialogListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onHashMap(hashMap: HashMap<any, any>)
 

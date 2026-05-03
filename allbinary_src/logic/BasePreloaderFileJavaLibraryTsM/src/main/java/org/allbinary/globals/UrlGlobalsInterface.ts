@@ -51,7 +51,7 @@ export class UrlGlobalsInterface
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getMainPath(): string{
 

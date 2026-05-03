@@ -94,7 +94,7 @@ this.xslFile= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public generateStaticPages(): string{
 
@@ -162,7 +162,7 @@ this.xslFile= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public makePublic(): string{
 
@@ -230,7 +230,7 @@ this.xslFile= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

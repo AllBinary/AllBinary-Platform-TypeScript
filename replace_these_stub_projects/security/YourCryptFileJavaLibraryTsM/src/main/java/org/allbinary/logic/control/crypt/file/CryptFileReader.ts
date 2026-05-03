@@ -47,7 +47,7 @@ var encryptedExtension = encryptedExtension
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(fileAbPath: AbPath): string{
 var fileAbPath = fileAbPath
@@ -60,7 +60,7 @@ var fileAbPath = fileAbPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInputStream(fileAbPath: AbPath): InputStream{
 var fileAbPath = fileAbPath

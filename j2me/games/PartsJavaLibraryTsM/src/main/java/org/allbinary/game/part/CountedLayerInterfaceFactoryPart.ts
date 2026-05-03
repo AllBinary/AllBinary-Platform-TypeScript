@@ -111,7 +111,7 @@ this.total= total;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
 var hashtable = hashtable

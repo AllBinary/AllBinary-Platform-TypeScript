@@ -227,7 +227,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 

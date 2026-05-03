@@ -71,13 +71,13 @@ export class FrameLog
          {
         
 
-    private frameBytes: number[] = .toCharArray().
+    private static frameBytes: number[] = .toCharArray().
                             encodeToByteArray()!;
 
-    private info: number[] = .toCharArray().
+    private static info: number[] = .toCharArray().
                             encodeToByteArray()!;
 
-    private actions: number[] = .toCharArray().
+    private static actions: number[] = .toCharArray().
                             encodeToByteArray()!;
 
     private readonly frame: number
@@ -131,7 +131,7 @@ this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(){
 

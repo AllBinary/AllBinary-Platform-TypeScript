@@ -80,7 +80,7 @@ this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeN
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

@@ -73,7 +73,7 @@ this.setTagRequestHelperFactory(new DownloadItemsRequestHelperFactory());
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

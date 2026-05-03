@@ -88,7 +88,7 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
 }
 
 
-    private MAX: number = 32768;
+    private static MAX: number = 32768;
 
     public static initMax(max: number){
 var max = max
@@ -110,7 +110,7 @@ this.pathFinder= new PathFinder();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, mapArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
@@ -136,7 +136,7 @@ pathFindingInfo!.setPathFinder(this.pathFinder);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
@@ -149,7 +149,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     buildPathFindingNodesForCellPosition(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][], cellPosition: GeographicMapCellPosition){
     //var geographicMapInterface = geographicMapInterface
@@ -159,7 +159,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface

@@ -49,11 +49,11 @@ import { NamedInterface } from "../../../../../org/allbinary/layer/NamedInterfac
 export interface DamageableInterface extends NamedInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     damage(damage: number, damageType: number)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getDamage(damageType: number): number
 

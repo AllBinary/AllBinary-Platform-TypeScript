@@ -87,7 +87,7 @@ this.heading= new HeadingValidation();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 

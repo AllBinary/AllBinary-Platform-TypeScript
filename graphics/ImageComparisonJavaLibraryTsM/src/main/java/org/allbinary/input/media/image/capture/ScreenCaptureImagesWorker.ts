@@ -76,7 +76,7 @@ import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEve
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         
 
-    private index: number
+    private static index: number
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -114,7 +114,7 @@ this.running= running;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
 var thread = thread

@@ -348,7 +348,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "showNotify", e);
 
     private notified: boolean = false;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     stopWaiting(){
 this.notified= true;
@@ -369,7 +369,7 @@ this.repaint();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public waitOnNotify(wait: number){
@@ -401,7 +401,7 @@ var wait = wait
 
     private readonly PAUSE_SLEEP: string = "pause sleep";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processSleep(){
 Thread.sleep(this.pauseWait);
@@ -419,7 +419,7 @@ Thread.sleep(this.pauseWait);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processGameSleep(sleep: number){
 var sleep = sleep
@@ -434,13 +434,13 @@ Thread.sleep(sleep);
 
     private readonly PROCESS_LOOP_SLEEP: string = "processLoopSleep";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processLoopSleep(){
 this.runnableCanvasRefreshHelper!.process();
     
 
-                        if(this.isPaused() && this.isRunning() && !this.isSingleThread();)
+                        if(this.isPaused() && this.isRunning() && !this.isSingleThread())
                         
                                     {
                                     
@@ -450,7 +450,7 @@ this.runnableCanvasRefreshHelper!.process();
 this.logUtil!.putF(stringMaker!.append(this.START_PAUSE)!.appendlong(Date.now())!.append(this.PAUSE_SLEEP)!.appendlong(this.pauseWait)!.toString(), this, PROCESS_LOOP_SLEEP);
     
 
-        while(this.isPaused() && this.isRunning() && !this.isSingleThread();)
+        while(this.isPaused() && this.isRunning() && !this.isSingleThread())
         {
 this.processSleep();
     
@@ -518,7 +518,7 @@ this.setCurrentThread();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public end2(){
 }

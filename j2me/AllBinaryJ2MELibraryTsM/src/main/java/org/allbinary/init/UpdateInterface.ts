@@ -46,7 +46,7 @@
 export interface UpdateInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update()
 

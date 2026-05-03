@@ -50,7 +50,7 @@ import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 export interface PaymentGatewayInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface
 

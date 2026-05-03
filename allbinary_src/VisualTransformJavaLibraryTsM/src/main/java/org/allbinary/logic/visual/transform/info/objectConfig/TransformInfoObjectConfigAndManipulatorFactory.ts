@@ -94,7 +94,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -136,7 +136,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -150,7 +150,7 @@ var transformInfoInterface = transformInfoInterface
 
                         if(transformInfoInterface != 
                                     null
-                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());)
+                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName()))
                         
                                     {
                                     
@@ -210,7 +210,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -225,7 +225,7 @@ var transformInfoInterface = transformInfoInterface
 
                         if(transformInfoInterface != 
                                     null
-                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName());)
+                                 && !stringValidationUtil!.isEmpty(transformInfoInterface!.getStoreName()))
                         
                                     {
                                     

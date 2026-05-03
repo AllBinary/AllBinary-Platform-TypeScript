@@ -63,7 +63,7 @@ export interface InitInfoInterface {
 
     setMainPath(value: AbPath)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isTestingValid(testing: string): boolean
 

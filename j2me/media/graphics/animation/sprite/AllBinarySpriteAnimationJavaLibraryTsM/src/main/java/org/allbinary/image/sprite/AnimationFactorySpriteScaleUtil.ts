@@ -97,7 +97,7 @@ export class AnimationFactorySpriteScaleUtil
 
     private readonly openGLESImageExclusionUtil: OpenGLESImageExclusionUtil = OpenGLESImageExclusionUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Sprite{
     //var image = image

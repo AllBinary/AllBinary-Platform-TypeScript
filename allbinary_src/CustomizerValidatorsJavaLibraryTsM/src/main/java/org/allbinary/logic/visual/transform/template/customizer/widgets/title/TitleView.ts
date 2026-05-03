@@ -190,7 +190,7 @@ hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

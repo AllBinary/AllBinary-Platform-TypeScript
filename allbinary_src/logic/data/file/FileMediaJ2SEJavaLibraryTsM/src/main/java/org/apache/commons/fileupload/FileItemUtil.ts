@@ -73,7 +73,7 @@ export class FileItemUtil
 
     public readonly DEFAULT_CHARSET: string = "ISO-8859-1";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getString(byteArray: number[]): string{
 var byteArray = byteArray
@@ -86,7 +86,7 @@ var byteArray = byteArray
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getString(fileItem: FileItemStream): string{
 var fileItem = fileItem
@@ -101,7 +101,7 @@ var fileItem = fileItem
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getBytes(fileItem: FileItemStream): number[]{
 var fileItem = fileItem
@@ -174,7 +174,7 @@ streamUtil!.close(inputStream);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(fileItem: FileItem, file: AbFile){
 var fileItem = fileItem

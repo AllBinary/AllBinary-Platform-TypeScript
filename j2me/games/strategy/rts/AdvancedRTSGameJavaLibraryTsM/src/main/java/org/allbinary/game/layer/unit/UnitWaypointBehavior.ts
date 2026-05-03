@@ -192,7 +192,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onWaypointEvent(event: RTSLayerEvent){
     //var event = event
@@ -223,14 +223,14 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addWaypointFromUser(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addWaypointFromBuilding(advancedRTSGameLayer: AdvancedRTSGameLayer){
     //var advancedRTSGameLayer = advancedRTSGameLayer
@@ -279,7 +279,7 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public insertWaypoint(index: number, rtsLayer: CollidableDestroyableDamageableLayer): boolean{
     //var index = index
@@ -345,7 +345,7 @@ this.setMoving(false);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setRandomGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -371,7 +371,7 @@ this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
@@ -433,7 +433,7 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addBuildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition){
     //var allbinaryLayer = allbinaryLayer
@@ -441,7 +441,7 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     moveAwayFromBuilding(buildingLayer: BuildingLayer){
     //var buildingLayer = buildingLayer

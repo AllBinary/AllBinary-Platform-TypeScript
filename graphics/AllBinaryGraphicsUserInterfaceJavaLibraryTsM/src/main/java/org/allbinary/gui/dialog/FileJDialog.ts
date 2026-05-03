@@ -64,7 +64,7 @@ export class FileJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(new ARunnable()
+java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -121,7 +121,7 @@ this.jFileChooser1= new javax.swing.JFileChooser();
     
 setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
-this.jFileChooser1!.addActionListener(new java.awt.event.ActionListener()
+this.jFileChooser1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

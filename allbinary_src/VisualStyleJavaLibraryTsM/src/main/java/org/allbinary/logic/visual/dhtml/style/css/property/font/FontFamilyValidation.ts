@@ -81,7 +81,7 @@ public constructor (node: Node){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(): Boolean{
 
@@ -138,7 +138,7 @@ public constructor (node: Node){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 
@@ -179,7 +179,7 @@ stringBuffer!.append("Css Font Family Property Validation Error");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -191,7 +191,7 @@ stringBuffer!.append("Css Font Family Property Validation Error");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document

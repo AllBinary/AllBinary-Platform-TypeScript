@@ -87,9 +87,9 @@ export class InputAutomationBundleActivator
          implements BundleActivator, InputAutomationBundleActivatorListenerInterface {
         
 
-    private moduleManagementThread: Thread
+    private static moduleManagementThread: Thread
 
-    private bundleContext: BundleContext
+    private static bundleContext: BundleContext
 
     public static getBundleContext(): BundleContext{
 
@@ -105,7 +105,7 @@ export class InputAutomationBundleActivator
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public start(bundleContext: BundleContext){
     //var bundleContext = bundleContext
@@ -137,17 +137,17 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public registerAsService(){
-OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener::class.toString()!);
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationConfigurationModuleChangeListener.constructor.toString()!);
     
-OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener::class.toString()!);
+OSGIActivatorUtil.registerAsService(this.getBundleContext(), InputAutomationServiceFactory.getInstance(), InputAutomationRobotChangeListener.constructor.toString()!);
     
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public useServices(){
 new InputAutomationRobotServiceConsumer(this.getBundleContext()).
@@ -159,7 +159,7 @@ new InputAutomationModuleServiceConsumer(this.getBundleContext()).
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
     //var context = context

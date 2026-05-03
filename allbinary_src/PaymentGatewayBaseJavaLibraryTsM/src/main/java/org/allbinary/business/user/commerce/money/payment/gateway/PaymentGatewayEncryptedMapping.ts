@@ -68,7 +68,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -90,7 +90,7 @@ this.paymentGatewayInterface= paymentGatewayInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 

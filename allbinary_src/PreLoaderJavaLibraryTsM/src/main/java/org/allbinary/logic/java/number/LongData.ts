@@ -48,7 +48,7 @@ export class LongData
          {
         
 
-    public MAX_LONG_LENGTH: number = Long.MAX_VALUE.
+    public static MAX_LONG_LENGTH: number = Long.MAX_VALUE.
                             toString()!.length()!;
 private constructor (){
 

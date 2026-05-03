@@ -72,7 +72,7 @@ export class FullScreenUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initOnRun(fullScreenInterface: Canvas, commandListener: CommandListener){
     //var fullScreenInterface = fullScreenInterface

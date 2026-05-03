@@ -47,7 +47,7 @@ import { RecordStore } from "../../../../../javax/microedition/rms/RecordStore.j
 export class NullRecordStore extends RecordStore {
         
 
-    public NULL_RECORD_STORE: NullRecordStore = new NullRecordStore();
+    public static NULL_RECORD_STORE: NullRecordStore = new NullRecordStore();
 
 }
                 

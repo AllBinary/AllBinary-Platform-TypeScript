@@ -138,7 +138,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     read(){
 
@@ -251,7 +251,7 @@ this.logUtil!.putF("Read Configuration: " +this.toString(), this, "read");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(){
 
@@ -343,7 +343,7 @@ dataOutputStream!.flush();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(gameFeature: Feature){
 var gameFeature = gameFeature

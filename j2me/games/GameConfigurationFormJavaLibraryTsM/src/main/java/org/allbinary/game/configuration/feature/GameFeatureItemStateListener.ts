@@ -87,7 +87,7 @@ export class GameFeatureItemStateListener
          implements ItemStateListener {
         
 
-    private toggleList: BasicArrayList = new BasicArrayListD();
+    private static toggleList: BasicArrayList = new BasicArrayListD();
 
     public static add(gameFeature: GameFeature){
 var gameFeature = gameFeature

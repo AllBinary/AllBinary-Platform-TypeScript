@@ -114,7 +114,7 @@ export class BlisketBackupFactory
 
     private readonly directory: Directory = Directory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFileBasicArrayList(pathString: string): BasicArrayList{
 var pathString = pathString

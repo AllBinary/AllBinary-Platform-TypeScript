@@ -165,7 +165,7 @@ this.initFileName= initFileName;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(){
 
@@ -268,7 +268,7 @@ this.hasRead= false;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     load(){
 

@@ -46,7 +46,7 @@ import { GamePersistanceStrings } from "./GamePersistanceStrings.js";
 export class GameConfigurationPersistanceSingleton extends KeyValuePersistance {
         
 
-    private GAME_PERSISTANCE: GameConfigurationPersistanceSingleton = new GameConfigurationPersistanceSingleton();
+    private static GAME_PERSISTANCE: GameConfigurationPersistanceSingleton = new GameConfigurationPersistanceSingleton();
 
     public static getInstance(): GameConfigurationPersistanceSingleton{
 

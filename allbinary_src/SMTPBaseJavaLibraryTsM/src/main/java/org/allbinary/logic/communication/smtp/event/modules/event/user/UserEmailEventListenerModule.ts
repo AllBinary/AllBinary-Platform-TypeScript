@@ -81,7 +81,7 @@ this.userInterface= userInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onEmailSendFailure(emailEvent: EmailEvent){
 var emailEvent = emailEvent
@@ -98,7 +98,7 @@ EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onEmailSendRequest(emailEvent: EmailEvent){
 var emailEvent = emailEvent

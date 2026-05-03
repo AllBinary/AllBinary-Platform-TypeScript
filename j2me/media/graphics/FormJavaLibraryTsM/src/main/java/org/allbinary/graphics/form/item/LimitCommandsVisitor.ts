@@ -70,7 +70,7 @@ public constructor (){
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
     
-this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait(); && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT);
+this.isNotSmallDisplay= (displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastHeight() > ScreenInfo.getInstance()!.SMALL_HEIGHT);
     
 }
 

@@ -67,11 +67,13 @@ export class BufferedImagePoolSingleton
          {
         
 
-    private poolInterface: PoolInterface = 
+    private static poolInterface: PoolInterface = 
                 null
             ;
 
-                init{
+                private static initResult: number = BufferedImagePoolSingleton.init();
+                private static init(): number { 
+                    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -104,8 +106,11 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
 }
 
-}
 
+
+                    return 0;
+                }
+            
     public static getInstance(): PoolInterface{
 
 

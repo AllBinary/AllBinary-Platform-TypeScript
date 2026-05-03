@@ -53,7 +53,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 export interface PartFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(sourceLayerInterface: AllBinaryLayer, relativeRelationship: RelativeRelationship): PartInterface
 

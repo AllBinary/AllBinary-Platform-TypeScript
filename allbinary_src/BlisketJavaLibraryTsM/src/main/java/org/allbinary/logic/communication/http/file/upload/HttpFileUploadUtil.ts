@@ -78,7 +78,7 @@ export class HttpFileUploadUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static log(fileItem: FileItemStream){
 var fileItem = fileItem
@@ -191,7 +191,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(anyType: any = {}): boolean{
 var anyType = anyType

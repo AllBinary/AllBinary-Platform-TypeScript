@@ -104,7 +104,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFormData(){
 
@@ -124,13 +124,13 @@ this.id= hashMap!.get(BasicItemData.ID) as string;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(): Boolean{
 
                         if(this.id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);)
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
                         
                                     {
                                     
@@ -206,7 +206,7 @@ var document = document
 }
 
 
-                //@Throws(MoneyException::class)
+                //@Throws(MoneyException.constructor)
             
     public validationInfo(): string{
 
@@ -216,7 +216,7 @@ var document = document
 
                         if(this.id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);)
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
                         
                                     {
                                     stringBuffer!.append("Id is not valid.<br />");

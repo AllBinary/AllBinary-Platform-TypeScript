@@ -266,7 +266,7 @@ this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageC
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isImageValid(bufferedImage: BufferedImage): boolean{
 var bufferedImage = bufferedImage

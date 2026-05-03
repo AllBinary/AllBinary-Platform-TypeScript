@@ -152,7 +152,7 @@ public constructor (pageContext: PageContext){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPackageNode(document: Document, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
 var document = document
@@ -208,7 +208,7 @@ node.appendChild(propertyNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPackageMultiNode(document: Document, nameSpaceRequestParam: NameSpaceRequestParam, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
 var document = document
@@ -272,7 +272,7 @@ nextNode!.appendChild(indexNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getRootNode(rootElementPackage: string, packagePropertiesHashMap: HashMap<any, any>, document: Document): Node{
 var rootElementPackage = rootElementPackage
@@ -343,7 +343,7 @@ document.appendChild(node);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addNewProperties(document: Document, node: Node, nextPackagePropertiesHashMap: HashMap<any, any>): Node{
 var document = document
@@ -465,7 +465,7 @@ node.appendChild(newPropertyNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isElementValueTextNodeEqual(nextPackagePropertiesHashMap: HashMap<any, any>, node: Node): boolean{
 var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
@@ -541,7 +541,7 @@ var node = node
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isElementValueTextNodeUnique(nextPackagePropertiesHashMap: HashMap<any, any>, elementNodeVector: Vector): number{
 var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
@@ -595,7 +595,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addChildren(document: Document, rootNode: Node, nameSpaceRequestParam: NameSpaceRequestParam): Document{
 var document = document
@@ -657,7 +657,7 @@ index < size; index++)
 ;
     
 
-                        if((elementNodeVector!.length == 0 || isElementValueTextNodeUniqueIndex ==  -1) && !nextPackageName!.endsWith(CommonSeps.getInstance()!.BRACKET_CLOSE);)
+                        if((elementNodeVector!.length == 0 || isElementValueTextNodeUniqueIndex ==  -1) && !nextPackageName!.endsWith(CommonSeps.getInstance()!.BRACKET_CLOSE))
                         
                                     {
                                     
@@ -754,7 +754,7 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addNameSpace(key: string, value: string, document: Document): Document{
 var key = key
@@ -826,7 +826,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 

@@ -71,7 +71,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageWH(width: number, height: number): Image{
     //var width = width
@@ -89,7 +89,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImage(width: number, height: number, maxScaleX: number, maxScaleY: number): Image{
     //var width = width

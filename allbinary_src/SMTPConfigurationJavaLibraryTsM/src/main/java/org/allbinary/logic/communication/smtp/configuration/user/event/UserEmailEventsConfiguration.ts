@@ -134,7 +134,7 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface{
     //var abeClientInformation = abeClientInformation

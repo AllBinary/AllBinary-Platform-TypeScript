@@ -70,7 +70,7 @@ export interface MotionRectangleConstraintsInterface {
 
     isTooBig(rectangle: Rectangle): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(frame: number, bufferedImage: BufferedImage, rectangle: Rectangle): boolean
 

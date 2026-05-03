@@ -302,7 +302,7 @@ this.endPage= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getParamsNode(document: Document): Node{
 var document = document
@@ -327,7 +327,7 @@ paramsNode!.appendChild(this.getLengthNode(document));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFieldsNode(document: Document): Node{
 var document = document
@@ -378,7 +378,7 @@ fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.F
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getOrderNode(document: Document): Node{
 var document = document
@@ -391,7 +391,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getSortByNode(document: Document): Node{
 var document = document
@@ -404,7 +404,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getLengthNode(document: Document): Node{
 var document = document

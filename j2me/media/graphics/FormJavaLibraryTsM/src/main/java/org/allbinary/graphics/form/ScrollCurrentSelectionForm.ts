@@ -94,7 +94,7 @@ this.initForm();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle

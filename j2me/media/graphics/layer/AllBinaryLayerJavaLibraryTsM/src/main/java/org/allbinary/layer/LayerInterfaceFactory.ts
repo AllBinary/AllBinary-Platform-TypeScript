@@ -101,7 +101,7 @@ this.list= new BasicArrayListD();
 
     private readonly HASHTABLE_LABEL: string = "Hashtable: ";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getNexInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
     //var hashtable = hashtable

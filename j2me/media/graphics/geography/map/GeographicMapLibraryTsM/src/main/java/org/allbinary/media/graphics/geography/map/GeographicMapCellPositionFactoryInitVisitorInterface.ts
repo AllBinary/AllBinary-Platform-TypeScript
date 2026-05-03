@@ -50,7 +50,7 @@ import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/
 export interface GeographicMapCellPositionFactoryInitVisitorInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition)
 

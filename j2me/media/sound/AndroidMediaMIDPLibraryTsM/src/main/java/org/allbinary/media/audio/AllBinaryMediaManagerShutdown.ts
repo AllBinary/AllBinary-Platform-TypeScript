@@ -54,7 +54,7 @@ export class AllBinaryMediaManagerShutdown
 
     private static readonly instance: AllBinaryMediaManagerShutdown = new AllBinaryMediaManagerShutdown();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface

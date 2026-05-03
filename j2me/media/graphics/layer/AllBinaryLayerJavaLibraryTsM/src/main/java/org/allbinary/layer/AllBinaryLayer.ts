@@ -158,7 +158,7 @@ this.viewPosition!.setAllbinaryLayer(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
     //var layerManagerEvent = layerManagerEvent
@@ -249,7 +249,7 @@ this.halfHeight= halfHeight;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.round(this.getDepth();) /2;
+                        return Math.round(this.getDepth()) /2;
     
 }
 

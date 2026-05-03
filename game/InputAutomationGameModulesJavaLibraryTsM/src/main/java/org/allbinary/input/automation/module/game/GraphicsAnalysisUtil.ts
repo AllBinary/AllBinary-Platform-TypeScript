@@ -68,7 +68,7 @@ export class GraphicsAnalysisUtil
 
     private static readonly MAX: number = 122;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getNominator(bufferedImage: BufferedImage, min_x: number, max_x: number, y: number): number{
 var bufferedImage = bufferedImage

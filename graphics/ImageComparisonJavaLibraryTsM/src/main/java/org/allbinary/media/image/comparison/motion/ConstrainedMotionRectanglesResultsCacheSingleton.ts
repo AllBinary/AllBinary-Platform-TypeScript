@@ -66,11 +66,13 @@ export class ConstrainedMotionRectanglesResultsCacheSingleton
          {
         
 
-    private cacheInterface: CacheInterface = 
+    private static cacheInterface: CacheInterface = 
                 null
             ;
 
-                init{
+                private static initResult: number = ConstrainedMotionRectanglesResultsCacheSingleton.init();
+                private static init(): number { 
+                    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -103,8 +105,11 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
 }
 
-}
 
+
+                    return 0;
+                }
+            
     public static getInstance(): CacheInterface{
 
 

@@ -90,7 +90,7 @@ export class MakeCountedPartsSingletonArrayFactory
 
     private list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getUpdated(partInterfaceArray: PartInterface[]): PartInterface[]{
     //var partInterfaceArray = partInterfaceArray

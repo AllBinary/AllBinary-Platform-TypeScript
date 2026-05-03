@@ -115,7 +115,7 @@ this.resources= resources;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
     //var flagResources = flagResources
@@ -146,7 +146,7 @@ this.resources= resources;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
     //var flagResources = flagResources
@@ -176,7 +176,7 @@ this.resources= resources;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getItems(): CustomItem[]{
 

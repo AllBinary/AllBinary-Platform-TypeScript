@@ -61,12 +61,7 @@ import { ModelViewProjection } from "./ModelViewProjection.js";
 export class NullShaderComposite extends ShaderComposite {
         
 
-    private static readonly instance: NullShaderComposite = new NullShaderComposite(OpenGLCapabilities.getInstance()!.VERSION_2_0, 
-                                                [
-                                                    new Shader(),new Shader();
-                                                ], CompositeShaderUpdater.getInstance(), ShaderInitializer.getInstance(), ModelViewProjection.getInstance(), 
-                            null, 
-                            null, NullOpenGLProcessorFactory.getInstance())
+    private static readonly instance: NullShaderComposite = new class extends NullShaderComposite
                                 {
                                 
     public init(gl: GL10){

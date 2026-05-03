@@ -165,7 +165,7 @@ export class InventorySearchUtil
 
     private readonly commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getBasicItemIdColumn(searchRequest: SearchRequest): Vector{
 var searchRequest = searchRequest
@@ -240,7 +240,7 @@ column.addAll(substoreIdColumn);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getNoResults(viewDocumentInterface: TransformDocumentInterface, inventoryNode: Node): string{
 var viewDocumentInterface = viewDocumentInterface

@@ -87,7 +87,7 @@ hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailE
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 
@@ -99,7 +99,7 @@ hashMap!.put(UserEmailEventConfigurationData.LISTENER_CLASSPATH, this.userEmailE
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 

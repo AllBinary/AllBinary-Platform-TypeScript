@@ -146,7 +146,7 @@ this.fileBasicArrayList= new BasicArrayListD();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
 var thread = thread
@@ -172,7 +172,7 @@ this.running= running;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateModules(){
 this.logUtil!.putF(this.commonStrings!.START, this, "updateModules");
@@ -215,7 +215,7 @@ bundle= this.install(list.get(index) as URL);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getAllJarSymbolicNameHashMap(): HashMap<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getAllJarSymbolicNameHashMap");
@@ -341,7 +341,7 @@ this.logUtil!.putF("File: " +file.getAbsolutePath() +" isDirectory: " +file.isDi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstalledJarSymbolicNameBasicArrayList(): BasicArrayList{
 this.logUtil!.putF(this.commonStrings!.START, this, "getInstalledJarSymbolicNameBasicArrayList");
@@ -394,7 +394,7 @@ vector.add(bundle.getSymbolicName());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isInstalled(symbolicName: string): boolean{
 var symbolicName = symbolicName
@@ -446,7 +446,7 @@ nextSymbolicName= list.get(index) as string;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     findNewModules(): BasicArrayList{
 this.logUtil!.putF(this.commonStrings!.START, this, "findNewModules");
@@ -506,7 +506,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     install(url: URL): Bundle{
 var url = url

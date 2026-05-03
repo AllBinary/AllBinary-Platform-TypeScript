@@ -55,7 +55,7 @@ export class LifeLayerFactory
          implements AllBinaryLayerFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(): AllBinaryLayer{
 

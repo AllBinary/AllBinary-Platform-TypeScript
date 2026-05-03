@@ -101,7 +101,7 @@ var maxPathWeight = maxPathWeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(graph: SimpleWeightedGraph, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -116,7 +116,7 @@ this.fixOverPassEdges(graph);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fixStart(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, startPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -175,7 +175,7 @@ graph.removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fixEnd(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, endPathFindingNodeList: BasicArrayList){
 var graph = graph
@@ -236,7 +236,7 @@ graph.addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fixOverPassEdges(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>){
 var graph = graph
@@ -293,7 +293,7 @@ graph.addEdge(overPassGeographicMapCellPosition, leftUnderPassGeographicMapCellP
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
 var startPathFindingNodeList = startPathFindingNodeList
@@ -340,7 +340,7 @@ this.removeOverPassEdges(pathList);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     removeOverPassEdges(pathList: BasicArrayList){
 var pathList = pathList

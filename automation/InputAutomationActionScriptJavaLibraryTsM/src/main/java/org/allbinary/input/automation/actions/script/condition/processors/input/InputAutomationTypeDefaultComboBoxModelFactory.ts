@@ -58,7 +58,7 @@ export class InputAutomationTypeDefaultComboBoxModelFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(): DefaultComboBoxModel{
 

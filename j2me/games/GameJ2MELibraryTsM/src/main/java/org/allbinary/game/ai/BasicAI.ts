@@ -111,7 +111,7 @@ this.gameInput= gameInput;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -123,7 +123,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processKeyAI(key: number){
 var key = key

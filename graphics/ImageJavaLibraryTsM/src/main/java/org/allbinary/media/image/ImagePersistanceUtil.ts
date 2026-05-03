@@ -101,7 +101,7 @@ export class ImagePersistanceUtil
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public saveWithBatik(file: AbFile, bufferedImage: BufferedImage){
 var file = file

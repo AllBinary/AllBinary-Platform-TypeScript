@@ -59,15 +59,15 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 export interface TransformInfoObjectConfigAndManipulatorFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface
 

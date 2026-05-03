@@ -82,7 +82,7 @@ var f = f
 ;
     
 
-                        if(ext.equals("jpg") || ext.equals("jpeg"))
+                        if(ext === "jpg" || ext === "jpeg")
                         
 
 

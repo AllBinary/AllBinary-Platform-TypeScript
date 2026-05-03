@@ -260,7 +260,7 @@ this.init(storeThemeCategoryInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 
@@ -280,7 +280,7 @@ this.init(rootStoreThemeCategoryInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(storeThemeCategoryInterface: StoreThemeCategoryInterface){
 var storeThemeCategoryInterface = storeThemeCategoryInterface
@@ -291,7 +291,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 
@@ -343,7 +343,7 @@ this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCssStyleValidation(): CssStyleValidation{
 
@@ -578,7 +578,7 @@ hashMap!.put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

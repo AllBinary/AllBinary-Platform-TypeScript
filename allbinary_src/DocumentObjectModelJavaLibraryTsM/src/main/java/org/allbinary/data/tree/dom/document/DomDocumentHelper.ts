@@ -114,7 +114,7 @@ export class DomDocumentHelper
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static create(inputStream: InputStream): Document{
 var inputStream = inputStream
@@ -152,7 +152,7 @@ var inputStream = inputStream
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static create(xmlString: string): Document{
 var xmlString = xmlString
@@ -190,7 +190,7 @@ var xmlString = xmlString
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static toString(document: Document): string{
 var document = document

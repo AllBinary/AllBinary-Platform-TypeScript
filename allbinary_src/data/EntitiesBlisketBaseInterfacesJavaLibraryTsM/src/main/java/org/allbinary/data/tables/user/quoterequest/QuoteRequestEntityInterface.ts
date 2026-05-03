@@ -58,7 +58,7 @@ import { BasicDataTableInterface } from "../../../../../../org/allbinary/data/ta
 export interface QuoteRequestEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     get(userName: string, id: number): QuoteRequest
 

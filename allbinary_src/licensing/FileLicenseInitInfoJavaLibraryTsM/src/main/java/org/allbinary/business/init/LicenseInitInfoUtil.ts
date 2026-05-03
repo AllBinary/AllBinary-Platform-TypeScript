@@ -114,7 +114,7 @@ this.filePath= filePath;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
@@ -184,7 +184,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public read(): LicenseInitInfo{
@@ -197,7 +197,7 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{

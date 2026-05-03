@@ -191,7 +191,7 @@ export interface PaymentGatewayInterface extends TableMappingInterface {
 
     setTimeEntered(value: string)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toHashMap(isEncrypted: boolean): HashMap<any, any>
 

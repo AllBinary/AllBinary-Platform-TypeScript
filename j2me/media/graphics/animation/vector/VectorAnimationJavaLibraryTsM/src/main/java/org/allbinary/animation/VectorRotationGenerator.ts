@@ -201,7 +201,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getListAtAngle(width: number, height: number, pointBasicArrayList: BasicArrayList, angle: Angle): BasicArrayList{
     //var width = width

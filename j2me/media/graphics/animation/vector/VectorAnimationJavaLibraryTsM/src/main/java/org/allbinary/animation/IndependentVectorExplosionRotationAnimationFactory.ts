@@ -87,7 +87,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vectorInfo);
@@ -97,7 +97,7 @@ this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vector
 
     private readonly vectorExplosionGenerator: VectorExplosionGenerator = VectorExplosionGenerator.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

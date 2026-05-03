@@ -61,7 +61,7 @@ export class GeographicPathFinderBase
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchTotalPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList
@@ -75,7 +75,7 @@ var totalPaths = totalPaths
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public searchTotalPathN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
 var startPathFindingNodeList = startPathFindingNodeList

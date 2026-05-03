@@ -114,7 +114,7 @@ this.requestMapInterface= InventoryItemViewParentTagHelper.getInstance()!.getReq
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public forward(){
 
@@ -249,7 +249,7 @@ stringBuffer!.append(value);
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand); && this.command.localeCompare(requestCommand) == 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand) && this.command.localeCompare(requestCommand) == 0))
                         
                                     {
                                     

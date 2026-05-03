@@ -95,7 +95,7 @@ this.webappPath= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     setCustomLoaderWebappPath(){
 
@@ -126,7 +126,7 @@ URLGLOBALS.init(urlGlobals);
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

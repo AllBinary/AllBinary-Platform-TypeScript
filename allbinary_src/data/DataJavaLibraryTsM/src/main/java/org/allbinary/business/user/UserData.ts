@@ -46,7 +46,7 @@ export class UserData
          {
         
 
-    public MAXLEN: number = 250;
+    public static MAXLEN: number = 250;
 
     public static readonly NAME: string = "USER_NAME";
 

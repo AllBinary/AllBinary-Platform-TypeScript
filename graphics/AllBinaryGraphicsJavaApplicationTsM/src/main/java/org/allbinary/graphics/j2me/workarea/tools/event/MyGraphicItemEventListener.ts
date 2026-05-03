@@ -49,7 +49,7 @@ export interface MyGraphicItemEventListener {
 
     delete(evt: MyGraphicItemEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     duplicate(evt: MyGraphicItemEvent)
 

@@ -33,7 +33,7 @@ export class NullMIDlet extends MIDlet {
 
     public static readonly NULL_MIDLET: NullMIDlet = new NullMIDlet();
 
-                //@Throws(MIDletStateChangeException::class)
+                //@Throws(MIDletStateChangeException.constructor)
             
     startApp(){
 }
@@ -43,7 +43,7 @@ export class NullMIDlet extends MIDlet {
 }
 
 
-                //@Throws(MIDletStateChangeException::class)
+                //@Throws(MIDletStateChangeException.constructor)
             
     destroyApp(unconditional: boolean){
 var unconditional = unconditional

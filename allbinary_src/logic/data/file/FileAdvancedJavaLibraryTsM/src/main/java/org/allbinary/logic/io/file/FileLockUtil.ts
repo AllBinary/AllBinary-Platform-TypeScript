@@ -86,7 +86,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAll(vector: Vector, isReturnOnFailure: boolean): Vector{
 var vector = vector
@@ -156,7 +156,7 @@ this.logUtil!.putF("Total Locks Obtained: " +fileLockVector!.length, this, "getA
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAllPossible(vector: Vector): Vector{
 var vector = vector
@@ -169,7 +169,7 @@ var vector = vector
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAllOrNone(vector: Vector): Vector{
 var vector = vector
@@ -203,7 +203,7 @@ var vector = vector
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getLock(file: AbFile): FileLock{
 var file = file
@@ -236,7 +236,7 @@ this.logUtil!.put("Exception returns null", this, "getLock", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getLock(fileOutputStream: AbFileOutputStream): FileLock{
 var fileOutputStream = fileOutputStream
@@ -277,7 +277,7 @@ StreamUtil.getInstance()!.close(fileOutputStream);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getLock(fileChannel: FileChannel): FileLock{
 var fileChannel = fileChannel

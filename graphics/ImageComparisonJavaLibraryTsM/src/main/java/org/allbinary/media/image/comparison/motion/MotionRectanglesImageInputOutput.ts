@@ -122,7 +122,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(frame: number){
 var frame = frame
@@ -173,7 +173,7 @@ this.save(motionRectangles, frame);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(motionRectangles: MotionRectangles, frame: number){
 var motionRectangles = motionRectangles

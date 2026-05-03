@@ -85,7 +85,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     generateSelect(): string{
 
@@ -148,7 +148,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     install(): string{
 
@@ -211,7 +211,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     sendStoreCreatedEmails(): string{
 
@@ -274,7 +274,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

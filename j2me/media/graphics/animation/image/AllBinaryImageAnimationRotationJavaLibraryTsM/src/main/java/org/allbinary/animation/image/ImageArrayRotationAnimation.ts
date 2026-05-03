@@ -57,7 +57,7 @@ import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationIn
 export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     static createAnimation(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
     //var anyType = anyType
@@ -91,7 +91,7 @@ this.init(imageArray, angleInfo, totalAngle);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(imageArray: Image[], angleInfo: AngleInfo, totalAngle: number){
     //var imageArray = imageArray

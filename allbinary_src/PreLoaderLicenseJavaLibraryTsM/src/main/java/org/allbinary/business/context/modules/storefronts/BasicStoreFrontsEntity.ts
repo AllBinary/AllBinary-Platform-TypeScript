@@ -77,7 +77,7 @@ this.setTable(this.tableName);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
 var name = name

@@ -47,7 +47,7 @@
 export interface ItemArraySingletonFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getItems(): CustomItem[]
 

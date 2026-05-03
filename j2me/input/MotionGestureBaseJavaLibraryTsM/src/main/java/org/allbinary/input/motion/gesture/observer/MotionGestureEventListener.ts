@@ -66,7 +66,7 @@ export interface MotionGestureEventListener extends BaseMotionGestureEventListen
 
     onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     released(ev: MotionGestureEvent)
 

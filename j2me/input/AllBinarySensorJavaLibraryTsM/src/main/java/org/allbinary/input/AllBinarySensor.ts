@@ -60,7 +60,7 @@ export class AllBinarySensor
 
     public static readonly NULL_ALLBINARY_SENSOR: AllBinarySensor = new AllBinarySensor();
 
-    private max: number = 100;
+    private static max: number = 100;
 
     public static setMax(max: number){
 var max = max
@@ -92,7 +92,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 }

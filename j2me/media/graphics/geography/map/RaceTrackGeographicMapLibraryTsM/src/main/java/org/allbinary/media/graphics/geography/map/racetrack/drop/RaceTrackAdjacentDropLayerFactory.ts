@@ -58,7 +58,7 @@ export class RaceTrackAdjacentDropLayerFactory
          {
         
 
-    private DROP_LAYER_FACTORY: RaceTrackAdjacentDropLayerFactory = new RaceTrackAdjacentDropLayerFactory();
+    private static DROP_LAYER_FACTORY: RaceTrackAdjacentDropLayerFactory = new RaceTrackAdjacentDropLayerFactory();
 
     public static getInstance(): RaceTrackAdjacentDropLayerFactory{
 

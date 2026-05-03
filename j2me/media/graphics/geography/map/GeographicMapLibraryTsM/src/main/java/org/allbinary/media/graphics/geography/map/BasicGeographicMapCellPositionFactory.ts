@@ -99,7 +99,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 
@@ -147,7 +147,7 @@ this.createInstance(column, row, width, height);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(geographicMapCelPositionFactoryInitVisitorInterface: GeographicMapCellPositionFactoryInitVisitorInterface){
     //var geographicMapCelPositionFactoryInitVisitorInterface = geographicMapCelPositionFactoryInitVisitorInterface
@@ -214,7 +214,7 @@ this.logUtil!.put(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAt(i_column: number, i_row: number): GeographicMapCellPosition{
     //var i_column = i_column
@@ -228,7 +228,7 @@ this.logUtil!.put(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(anotherMapGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var anotherMapGeographicMapCellPosition = anotherMapGeographicMapCellPosition
@@ -241,7 +241,7 @@ this.logUtil!.put(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
     //var i_column = i_column

@@ -69,7 +69,7 @@ var pageContext = pageContext
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStoreName(): string{
 

@@ -88,7 +88,7 @@ this.transformInfoInterface= transformInfoInterface as TransformInfoHttpInterfac
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 

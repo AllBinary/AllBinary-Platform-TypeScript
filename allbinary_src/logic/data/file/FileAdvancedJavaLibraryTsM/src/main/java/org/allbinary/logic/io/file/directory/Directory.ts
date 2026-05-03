@@ -100,7 +100,7 @@ var directoryAbPath = directoryAbPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(existingDirectoryAbPath: AbPath){
 var existingDirectoryAbPath = existingDirectoryAbPath
@@ -162,7 +162,7 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     remove(existingDirectory: string){
 var existingDirectory = existingDirectory

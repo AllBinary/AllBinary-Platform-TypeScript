@@ -61,7 +61,7 @@ export class ModifyTable
 
     readonly tagStrings: TagStrings = TagStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public insert(): string{
 
@@ -72,7 +72,7 @@ export class ModifyTable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public delete(): string{
 
@@ -83,7 +83,7 @@ export class ModifyTable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(): string{
 

@@ -59,7 +59,7 @@ export class ProfileActionScriptInputFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): ProfileActionScriptInputInterface{
 var node = node

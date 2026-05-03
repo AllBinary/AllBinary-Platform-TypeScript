@@ -91,7 +91,7 @@ export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
 
     private pathFindingInfo: any = NullUtil.getInstance()!.NULL_OBJECT;
 
-    private readonly FIRST_RUNNABLE: Runnable = new ARunnable()
+    private readonly FIRST_RUNNABLE: Runnable = new class extends ARunnable
                                 {
                                 
     public run(){
@@ -167,7 +167,7 @@ finish();
                                 }
                             ;
 
-    private readonly SECOND_RUNNABLE: Runnable = new ARunnable()
+    private readonly SECOND_RUNNABLE: Runnable = new class extends ARunnable
                                 {
                                 
     public run(){
@@ -217,7 +217,7 @@ finish();
                                 }
                             ;
 
-    private readonly END_RUNNABLE: Runnable = new ARunnable()
+    private readonly END_RUNNABLE: Runnable = new class extends ARunnable
                                 {
                                 
     public run(){
@@ -256,7 +256,7 @@ finish();
                                 }
                             ;
 
-    private readonly ALREADY_ENDED_RUNNABLE: Runnable = new ARunnable()
+    private readonly ALREADY_ENDED_RUNNABLE: Runnable = new class extends ARunnable
                                 {
                                 
     public run(){

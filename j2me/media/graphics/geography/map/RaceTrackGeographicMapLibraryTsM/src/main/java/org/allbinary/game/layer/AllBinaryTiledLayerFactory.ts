@@ -71,7 +71,7 @@ export class AllBinaryTiledLayerFactory
          implements AllBinaryTiledLayerFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
     //var raceTrackInfo = raceTrackInfo
@@ -98,7 +98,7 @@ allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer{
 var raceTrackData = raceTrackData

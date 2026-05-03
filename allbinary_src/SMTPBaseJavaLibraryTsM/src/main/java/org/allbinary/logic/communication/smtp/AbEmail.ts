@@ -111,7 +111,7 @@ var contentBase = contentBase
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public log(): string{
 
@@ -123,7 +123,7 @@ var contentBase = contentBase
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -135,7 +135,7 @@ var contentBase = contentBase
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -158,7 +158,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 

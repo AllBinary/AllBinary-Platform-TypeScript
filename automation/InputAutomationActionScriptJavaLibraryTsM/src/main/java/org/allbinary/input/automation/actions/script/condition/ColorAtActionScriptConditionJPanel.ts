@@ -137,7 +137,7 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(xString); && StringValidationUtil.getInstance()!.isNumber(xString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(xString) && StringValidationUtil.getInstance()!.isNumber(xString))
                         
                                     {
                                     this.colorAtActionScriptConditionInterface!.getPoint()!.x= Integer.parseInt(xString);
@@ -150,7 +150,7 @@ colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.get
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(yString); && StringValidationUtil.getInstance()!.isNumber(yString))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(yString) && StringValidationUtil.getInstance()!.isNumber(yString))
                         
                                     {
                                     this.colorAtActionScriptConditionInterface!.getPoint()!.y= Integer.parseInt(xString);
@@ -402,7 +402,7 @@ this.blueJLabel!.setText("Blue:");
     
 this.okJButton!.setText("OK");
     
-this.okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -428,7 +428,7 @@ setPreferredSize(new java.awt.Dimension(100, 0));
     
 this.colorAtActionJButton!.setText("Edit");
     
-this.colorAtActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.colorAtActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

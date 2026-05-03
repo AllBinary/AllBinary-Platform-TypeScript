@@ -52,21 +52,21 @@ export class MyCanvasEventService
          {
         
 
-    private listenerList: javax.swing.event.EventListenerList = new javax.swing.event.EventListenerList();
+    private static listenerList: javax.swing.event.EventListenerList = new javax.swing.event.EventListenerList();
 
-    public DELETE: string = "delete";
+    public static DELETE: string = "delete";
 
-    public DUPLICATE: string = "duplicate";
+    public static DUPLICATE: string = "duplicate";
 
-    public SELECT: string = "select";
+    public static SELECT: string = "select";
 
-    public ROTATE: string = "rotate";
+    public static ROTATE: string = "rotate";
 
-    public EXPLODE: string = "explode";
+    public static EXPLODE: string = "explode";
 
-    public AUTOEXPLODE: string = "autoExplode";
+    public static AUTOEXPLODE: string = "autoExplode";
 
-    public CENTER: string = "center";
+    public static CENTER: string = "center";
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyCanvasEventListener){
@@ -84,7 +84,7 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<*>, list
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static fire(evt: MyCanvasEvent){

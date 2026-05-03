@@ -74,7 +74,7 @@ this.createMotionRectangles(imageComparisonResult);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createMotionRectangles(imageComparisonInfo: ImageComparisonResult){
 var imageComparisonInfo = imageComparisonInfo
@@ -105,7 +105,7 @@ this.addPixelDeltaToAMotionRectangle(pixelDelta);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addPixelDeltaToExistingMotionRectangle(pixelDelta: PixelDelta): boolean{
 var pixelDelta = pixelDelta
@@ -181,7 +181,7 @@ motionRectangle!.getRectangle()!.setSize(newWidth, newHeight);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addPixelDeltaToAMotionRectangle(pixelDelta: PixelDelta){
 var pixelDelta = pixelDelta
@@ -207,7 +207,7 @@ this.getVector()!.add(motionRectangle);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     shouldPixelDeltaPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
 var motionRectangle = motionRectangle
@@ -259,7 +259,7 @@ var pixelDelta = pixelDelta
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
 var motionRectangle = motionRectangle

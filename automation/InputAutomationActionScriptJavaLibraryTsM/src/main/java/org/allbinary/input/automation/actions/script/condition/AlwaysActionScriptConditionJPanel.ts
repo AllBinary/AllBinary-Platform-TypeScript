@@ -162,7 +162,7 @@ this.titleJLabel!.setText("Always Condition Options");
     
 this.okJButton!.setText("OK");
     
-this.okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -195,7 +195,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.alwaysActionJButton!.setText("Edit");
     
-this.alwaysActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.alwaysActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

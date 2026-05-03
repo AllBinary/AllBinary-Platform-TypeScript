@@ -62,7 +62,7 @@ export class Validation
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(): Boolean{
 
@@ -73,7 +73,7 @@ export class Validation
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -85,7 +85,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -96,7 +96,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 

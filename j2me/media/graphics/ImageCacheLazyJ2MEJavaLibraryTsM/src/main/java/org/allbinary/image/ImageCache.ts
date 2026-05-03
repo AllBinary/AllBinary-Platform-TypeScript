@@ -166,7 +166,7 @@ export class ImageCache extends ImageCacheBase {
 
     public hasAnyLazyAnimationFactories: boolean = false;
 
-export inner class NotHTMLProcessor extends Processor {
+NotHTMLProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
@@ -180,7 +180,7 @@ concurrentImageLoadingProcessor!.runTask();
 }
                 
             
-export inner class NotHTMLEndProcessor extends Processor {
+NotHTMLEndProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
@@ -198,7 +198,7 @@ progressCanvas!.endIfPaintedSinceStart();
 }
                 
             
-export inner class HTMLEndProcessor extends Processor {
+HTMLEndProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
@@ -234,7 +234,7 @@ progressCanvas!.endIfPaintedSinceStart();
     
 progressCanvas!.endIfPaintedSinceStart();
     
-endProcessor= new NotHTMLEndProcessor();
+endProcessor= new this.NotHTMLEndProcessor();
     
 
                                     }
@@ -245,7 +245,7 @@ endProcessor= new NotHTMLEndProcessor();
 }
                 
             
-export inner class FirstProcessor extends Processor {
+FirstProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
@@ -265,15 +265,15 @@ export inner class FirstProcessor extends Processor {
                                     {
                                     processor= Processor.getInstance();
     
-endProcessor= new HTMLEndProcessor();
+endProcessor= new this.HTMLEndProcessor();
     
 
                                     }
                                 
                         else {
-                            processor= new NotHTMLProcessor();
+                            processor= new this.NotHTMLProcessor();
     
-endProcessor= new NotHTMLEndProcessor();
+endProcessor= new this.NotHTMLEndProcessor();
     
 
         try {
@@ -296,7 +296,7 @@ logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
 }
                 
             
-    private processor: Processor = new FirstProcessor();
+    private processor: Processor = new this.FirstProcessor();
 
     private endProcessor: Processor = Processor.getInstance()!;
 public constructor (){
@@ -310,7 +310,7 @@ var renderer = renderer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitForLoadNow(){
 
@@ -326,7 +326,7 @@ var renderer = renderer
 ;
     
 
-        while(this.loadNowList!.isEmpty() && (!abCanvas!.isInitialized(); || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
+        while(this.loadNowList!.isEmpty() && (!abCanvas!.isInitialized() || (abCanvas!.isInitialized() && this.hasAnyLazyAnimationFactories)) && !this.progressEnded)
         {
 Thread.sleep(120);
     
@@ -342,7 +342,7 @@ this.firstTime= false;
 
     private readonly LOAD_IMAGE_FOR_ANIMATION: string = "Load Image Animation";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadImageForAnimation(){
 
@@ -531,11 +531,11 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadImages(){
 
-        while(!this.loadList!.isEmpty(); || !this.loadNowList!.isEmpty();)
+        while(!this.loadList!.isEmpty() || !this.loadNowList!.isEmpty())
         {
 this.loadImageForAnimations();
     
@@ -546,7 +546,7 @@ this.loadNextImage();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadImageForAnimations(){
 
@@ -559,11 +559,11 @@ this.loadImageForAnimation();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadRemainingAnimations(){
 
-        while(!this.loadAfterList!.isEmpty(); || !this.loadNowList!.isEmpty();)
+        while(!this.loadAfterList!.isEmpty() || !this.loadNowList!.isEmpty())
         {
 
         while(!this.loadNowList!.isEmpty())
@@ -606,7 +606,7 @@ this.loadImageForAnimation();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     loadImageForLazyAnimation(lazyImageRotationAnimation: LazyImageRotationAnimation): boolean{
     //var lazyImageRotationAnimation = lazyImageRotationAnimation
@@ -638,7 +638,7 @@ this.loadImageForAnimation();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     loadNextImage(){
 
@@ -676,7 +676,7 @@ this.loadImage(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     loadImage(image: Image): boolean{
     //var image = image
@@ -763,7 +763,7 @@ this.loadImage(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(image: Image, image2: Image){
     //var image = image
@@ -773,7 +773,7 @@ image.init(image2.getImage());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     creatImage(key: string): Image{
     //var key = key
@@ -796,7 +796,7 @@ image.setName(key);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -865,7 +865,7 @@ listOfList[foundIndex]!.add(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWithKey(key: any = {}): Image{
     //var key = key
@@ -971,7 +971,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
     //var key = key
@@ -1050,7 +1050,7 @@ this.loadList!.add(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createImageLater(key: string, width: number, height: number): Image{
     //var key = key
@@ -1152,7 +1152,7 @@ this.loadAfterList!.add(lazyImageRotationAnimation);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public insertFirst(lazyImageRotationAnimation: LazyImageRotationAnimation){
     //var lazyImageRotationAnimation = lazyImageRotationAnimation
@@ -1191,7 +1191,7 @@ this.progressEnded= true;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public runTask(){
 this.processor.process();

@@ -148,7 +148,7 @@ this.saved= false;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setList(list: BasicArrayList){
 var list = list

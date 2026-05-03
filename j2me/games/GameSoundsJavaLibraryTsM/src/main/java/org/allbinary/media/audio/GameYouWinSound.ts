@@ -46,7 +46,7 @@ import { Sound } from "./Sound.js";
 export class GameYouWinSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new GameYouWinSound();
+    private static soundInterface: Sound = new GameYouWinSound();
 
     public static getInstance(): Sound{
 

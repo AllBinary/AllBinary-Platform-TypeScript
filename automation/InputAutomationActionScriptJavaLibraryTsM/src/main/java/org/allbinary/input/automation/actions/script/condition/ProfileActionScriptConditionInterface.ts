@@ -62,7 +62,7 @@ export interface ProfileActionScriptConditionInterface extends ProfileActionScri
 
     removeProcessor(profileActionProcessorInterface: ProfileActionScriptProcessorInterface)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     shouldProcess(frame: number): boolean
 

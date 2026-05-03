@@ -227,7 +227,7 @@ super.setMap(request.getParameterMap());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 

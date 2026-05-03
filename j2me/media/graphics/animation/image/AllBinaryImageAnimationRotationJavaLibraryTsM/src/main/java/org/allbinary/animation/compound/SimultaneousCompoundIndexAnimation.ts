@@ -103,7 +103,7 @@ this.animationInterfaceArray[index]!.setFrame(frameIndex);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 
@@ -142,7 +142,7 @@ this.animationInterfaceArray[index]!.previousFrame();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public nextFrame(){
 
@@ -217,7 +217,7 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
     //var gl = gl

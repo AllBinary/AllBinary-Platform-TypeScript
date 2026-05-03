@@ -108,7 +108,7 @@ export class AlwaysRepaintBehavior extends RepaintBehavior {
                                 
                         else {
                             
-    var thread: Thread = new Thread(new ARunnable()
+    var thread: Thread = new Thread(new class extends ARunnable
                                 {
                                 
     public run(){

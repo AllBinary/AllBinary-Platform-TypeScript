@@ -63,7 +63,7 @@ export class MouseInputAutomationProcessor
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static process(mouseActionScriptInputInterface: MouseActionScriptInputInterface){
 var mouseActionScriptInputInterface = mouseActionScriptInputInterface

@@ -150,7 +150,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFormData(){
 this.authenticated= this.weblisketSession!.getAuthentication();
@@ -166,7 +166,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public invalidateSession(): number{
 
@@ -456,7 +456,7 @@ stringBuffer!.append("Trying New login<p/>");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isAuthenticated(): boolean{
 
@@ -531,11 +531,11 @@ index < size; index++)
 ;
     
 
-                        if(basicUserRole!.equals(mustBeOfRole))
+                        if(basicUserRole! === mustBeOfRole)
                         
                                     {
                                     
-                        if(basicUserRole!.equals(UserRoleFactory.getInstance()!.CUSTOMER))
+                        if(basicUserRole! === UserRoleFactory.getInstance()!.CUSTOMER)
                         
                                     {
                                     

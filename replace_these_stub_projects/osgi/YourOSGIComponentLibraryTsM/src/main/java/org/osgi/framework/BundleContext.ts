@@ -38,7 +38,7 @@ export interface BundleContext {
 
     getBundles(): Bundle[]
 
-                //@Throws(BundleException::class)
+                //@Throws(BundleException.constructor)
             
     installBundle(location: string): Bundle
 
@@ -46,7 +46,7 @@ export interface BundleContext {
 
     getService(reference: ServiceReference): any
 
-                //@Throws(InvalidSyntaxException::class)
+                //@Throws(InvalidSyntaxException.constructor)
             
     getServiceReferences(clazz: string, filter: string): ServiceReference[]
 

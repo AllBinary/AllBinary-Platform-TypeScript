@@ -104,7 +104,7 @@ var aMuted = aMuted
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -126,7 +126,7 @@ new Sounds(soundsFactoryInterface).
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
 var soundsFactoryInterface = soundsFactoryInterface
@@ -141,7 +141,7 @@ System.gc();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createPlayer(resource: string): Player{
 var resource = resource
@@ -188,7 +188,7 @@ var resource = resource
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){

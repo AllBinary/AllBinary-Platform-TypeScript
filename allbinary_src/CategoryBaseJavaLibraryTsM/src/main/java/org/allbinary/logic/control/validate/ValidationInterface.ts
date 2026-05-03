@@ -52,19 +52,19 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 export interface ValidationInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(): Boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toValidationInfoNode(document: Document): Node
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toValidationInfoDoc(): Document
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     validationInfo(): string
 

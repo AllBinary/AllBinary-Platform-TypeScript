@@ -74,7 +74,7 @@ export class DestroyableBaseBehavior
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isDestroyed(): boolean{
 

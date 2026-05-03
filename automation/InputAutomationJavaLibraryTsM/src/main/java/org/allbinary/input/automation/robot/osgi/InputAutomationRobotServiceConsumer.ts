@@ -54,7 +54,7 @@ import { InputAutomationServiceConsumer } from "../../../../../../org/allbinary/
 export class InputAutomationRobotServiceConsumer extends InputAutomationServiceConsumer {
         
 public constructor (bundleContext: BundleContext){
-            super(InputAutomationRobotServiceInterface::class.toString()!, bundleContext, new InputAutomationRobotOSGIServiceVisitor());
+            super(InputAutomationRobotServiceInterface.constructor.toString()!, bundleContext, new InputAutomationRobotOSGIServiceVisitor());
                     var bundleContext = bundleContext
 
 

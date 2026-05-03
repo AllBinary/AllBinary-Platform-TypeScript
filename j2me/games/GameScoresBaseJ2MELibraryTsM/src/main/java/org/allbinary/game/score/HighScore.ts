@@ -124,7 +124,7 @@ this.scoreString= (this.score).toString();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAsBytes(): number[]{
 

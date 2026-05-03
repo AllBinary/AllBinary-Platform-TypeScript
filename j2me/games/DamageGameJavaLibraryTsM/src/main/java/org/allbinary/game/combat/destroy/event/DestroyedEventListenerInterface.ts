@@ -50,7 +50,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 export interface DestroyedEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onDestroyed(destroyedEvent: DestroyedEvent)
 

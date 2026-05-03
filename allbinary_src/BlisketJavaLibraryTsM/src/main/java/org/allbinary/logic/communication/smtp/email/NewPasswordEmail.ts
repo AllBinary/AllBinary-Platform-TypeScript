@@ -105,7 +105,7 @@ this.newPassword= newPassword;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.notifyStoreAdmin();
@@ -115,7 +115,7 @@ this.notifyUser();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     notifyStoreAdmin(){
 
@@ -169,7 +169,7 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.NEWPASSWORD,
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     notifyUser(){
 

@@ -47,7 +47,7 @@ import { AllBinaryLayerCircularPool } from "../../../../org/allbinary/layer/AllB
 export class GenericTrackingLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         
 
-    private SINGLETON: GenericTrackingLayerCircularStaticPool = new GenericTrackingLayerCircularStaticPool();
+    private static SINGLETON: GenericTrackingLayerCircularStaticPool = new GenericTrackingLayerCircularStaticPool();
 
     public static getInstance(): GenericTrackingLayerCircularStaticPool{
 

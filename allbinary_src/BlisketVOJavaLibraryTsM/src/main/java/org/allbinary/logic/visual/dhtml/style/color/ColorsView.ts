@@ -83,7 +83,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getColorNode(document: Document, redIndex: number, greenIndex: number, blueIndex: number): Node{
 var document = document
@@ -140,7 +140,7 @@ hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

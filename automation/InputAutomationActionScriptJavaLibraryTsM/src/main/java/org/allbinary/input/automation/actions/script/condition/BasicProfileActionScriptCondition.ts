@@ -186,7 +186,7 @@ index < nodeList!.getLength(); index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addProcessorNodes(node: Node){
 var node = node
@@ -396,7 +396,7 @@ this.add(profileActionScriptNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -612,7 +612,7 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public shouldProcess(frame: number): boolean{
 var frame = frame
@@ -660,7 +660,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(frame: number){
 var frame = frame

@@ -194,7 +194,7 @@ key= keyArray[index]! as string;
 idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList;
     
 
-                        if(key.equals(basicTopViewGeographicMapStrings!.WALL))
+                        if(key === basicTopViewGeographicMapStrings!.WALL)
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.WALL, idsWithTypeList, 1000);
@@ -205,7 +205,7 @@ BLOCK_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key.equals(basicTopViewGeographicMapStrings!.OFF_MAP))
+                        if(key === basicTopViewGeographicMapStrings!.OFF_MAP)
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.OFF_MAP, idsWithTypeList, 1001);
@@ -216,7 +216,7 @@ OFF_MAP_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key.equals(basicTopViewGeographicMapStrings!.FLOOR))
+                        if(key === basicTopViewGeographicMapStrings!.FLOOR)
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.FLOOR, idsWithTypeList, 1);
@@ -227,7 +227,7 @@ FLOOR_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key.equals(basicTopViewGeographicMapStrings!.DOOR))
+                        if(key === basicTopViewGeographicMapStrings!.DOOR)
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.DOOR, idsWithTypeList, 1);
@@ -238,7 +238,7 @@ DOOR_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key.equals(basicTopViewGeographicMapStrings!.STAIRS_UP))
+                        if(key === basicTopViewGeographicMapStrings!.STAIRS_UP)
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.STAIRS_UP, idsWithTypeList, 1);
@@ -249,7 +249,7 @@ STAIRS_UP_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key.equals(basicTopViewGeographicMapStrings!.STAIRS_DOWN))
+                        if(key === basicTopViewGeographicMapStrings!.STAIRS_DOWN)
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.STAIRS_DOWN, idsWithTypeList, 1);
@@ -260,7 +260,7 @@ STAIRS_DOWN_CELL_TYPE= basicPlatormGeographicMapCellType;
                                     }
                                 
                              else 
-                        if(key.equals(basicTopViewGeographicMapStrings!.OTHER))
+                        if(key === basicTopViewGeographicMapStrings!.OTHER)
                         
                                     {
                                     basicPlatormGeographicMapCellType= new BasicTopViewGeographicMapCellType(basicTopViewGeographicMapStrings!.OTHER, idsWithTypeList, 1);

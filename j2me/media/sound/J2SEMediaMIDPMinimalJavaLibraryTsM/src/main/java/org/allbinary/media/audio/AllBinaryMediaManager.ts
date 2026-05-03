@@ -126,7 +126,7 @@ export class AllBinaryMediaManager
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
@@ -148,7 +148,7 @@ new Sounds(soundsFactoryInterface).
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
     //var soundsFactoryInterface = soundsFactoryInterface
@@ -165,7 +165,7 @@ System.gc();
 
     private static readonly CREATE_PLAYER: string = "createPlayer";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createPlayer(resource: string): Player{
     //var resource = resource
@@ -240,7 +240,7 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 }
 
 
-                //@Throws(IOException::class, MediaException::class)
+                //@Throws(IOException.constructor, MediaException.constructor)
             
     public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
     //var stream = stream
@@ -253,7 +253,7 @@ logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){

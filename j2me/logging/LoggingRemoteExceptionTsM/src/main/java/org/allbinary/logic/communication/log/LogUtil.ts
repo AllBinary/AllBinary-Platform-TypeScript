@@ -166,7 +166,7 @@ this.put(specialMessage, anyType, functionName, exception);
                         
                                     {
                                     
-                        if(exception.constructor.name.toString()!.localeCompare(XmlRpcException::class.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.localeCompare(XmlRpcException.constructor.toString()!) == 0)
                         
                                     {
                                     
@@ -179,7 +179,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-                        if(exception.constructor.name.toString()!.localeCompare(IOException::class.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.localeCompare(IOException.constructor.toString()!) == 0)
                         
                                     {
                                     

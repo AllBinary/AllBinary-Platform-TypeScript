@@ -76,7 +76,7 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
 }
 
 
-                //@Throws(LicensingException::class, Exception::class)
+                //@Throws(LicensingException.constructor, Exception.constructor)
             
     public process(): string{
 
@@ -141,7 +141,7 @@ this.logUtil!.put("LicensingException", this, commonStrings!.PROCESS, e);
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

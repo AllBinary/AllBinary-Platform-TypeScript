@@ -79,7 +79,7 @@ export class RequestHandler extends HttpServlet {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(ServletException::class)
+                //@Throws(ServletException.constructor)
             
     public init(config: ServletConfig){
 var config = config
@@ -92,7 +92,7 @@ super.init(config);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -160,7 +160,7 @@ response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -170,7 +170,7 @@ this.processRequest(request, response);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

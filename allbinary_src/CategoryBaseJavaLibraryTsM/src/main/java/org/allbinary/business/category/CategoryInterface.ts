@@ -72,7 +72,7 @@ export interface CategoryInterface extends TableMappingInterface, ValidationInte
 
     removeChild(categoryInterface: CategoryInterface): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isLeaf(): boolean
 
@@ -84,23 +84,23 @@ export interface CategoryInterface extends TableMappingInterface, ValidationInte
 
     setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getPath(): AbPath
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFilePath(): AbPath
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getWebAppPath(): AbPath
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getRootFilePath(): AbPath
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     log()
 

@@ -218,7 +218,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlNode(document)", e)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 

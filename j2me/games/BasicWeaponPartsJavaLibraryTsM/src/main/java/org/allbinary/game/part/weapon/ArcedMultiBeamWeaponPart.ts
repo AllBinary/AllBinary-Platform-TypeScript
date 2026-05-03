@@ -99,7 +99,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 
     private readonly TOTAL_ANGLE: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
     //var allbinaryLayerManager = allbinaryLayerManager

@@ -73,7 +73,7 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
 
     private readonly factorValue: number = ScaleFactorFactory.getInstance()!.DEFAULT_SCALE_VALUE;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
     //var layer = layer

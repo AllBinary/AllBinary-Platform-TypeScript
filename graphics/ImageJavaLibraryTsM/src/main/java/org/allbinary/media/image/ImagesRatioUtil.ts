@@ -95,7 +95,7 @@ private constructor (){
                         if(bufferedImageArray!.length < totalImages)
                         end= bufferedImageArray!.length
 
-    var ratio: number = (bufferedImageArray[0]!.getWidth(); /bufferedImageArray[0]!.getHeight());
+    var ratio: number = (bufferedImageArray[0]!.getWidth() /bufferedImageArray[0]!.getHeight());
 ;
     
 
@@ -107,7 +107,7 @@ private constructor (){
 index < end; index++)
         {
 
-                        if(ratio != (bufferedImageArray[index]!.getWidth(); /bufferedImageArray[index]!.getHeight()))
+                        if(ratio != (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getHeight()))
                         
                                     {
                                     
@@ -152,7 +152,7 @@ index < end; index++)
     var index: number = 0;
 index < end; index++)
         {
-ratio += (bufferedImageArray[index]!.getWidth(); /bufferedImageArray[index]!.getHeight());
+ratio += (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getHeight());
     
 }
 
@@ -165,13 +165,13 @@ ratio += (bufferedImageArray[index]!.getWidth(); /bufferedImageArray[index]!.get
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fudge(bufferedImage: BufferedImage, ratio: number): BufferedImage{
 var bufferedImage = bufferedImage
 var ratio = ratio
 
-    var imageRatio: number = (bufferedImage!.getWidth(); /bufferedImage!.getHeight());
+    var imageRatio: number = (bufferedImage!.getWidth() /bufferedImage!.getHeight());
 ;
     
 
@@ -190,7 +190,7 @@ var ratio = ratio
                         if(ratio > imageRatio)
                         
                                     {
-                                    newWidth= Math.round((bufferedImage!.getHeight(); *ratio));
+                                    newWidth= Math.round((bufferedImage!.getHeight() *ratio));
     
 point.x= (newWidth -bufferedImage!.getWidth()) /2;
     
@@ -198,7 +198,7 @@ point.x= (newWidth -bufferedImage!.getWidth()) /2;
                                     }
                                 
                         else {
-                            newHeight= Math.round((bufferedImage!.getWidth(); /ratio));
+                            newHeight= Math.round((bufferedImage!.getWidth() /ratio));
     
 point.y= (newHeight -bufferedImage!.getHeight()) /2;
     
@@ -297,7 +297,7 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fudge(bufferedImageArray: BufferedImage[], totalImages: number, ratio: number): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray

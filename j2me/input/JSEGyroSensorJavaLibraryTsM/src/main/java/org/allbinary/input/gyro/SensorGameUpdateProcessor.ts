@@ -80,14 +80,14 @@ this.inputSensor= inputSensor;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(anyType: any = {}){
 var anyType = anyType
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public sendNotifications(anyType: any = {}){
 var anyType = anyType

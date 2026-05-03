@@ -117,7 +117,7 @@ import { RaceTrackAdjacentDropLayerFactory } from "./RaceTrackAdjacentDropLayerF
 export class RaceTrackAdjacentDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         
 
-    private SINGLETON: RaceTrackAdjacentDropCellPositionGenerator = new RaceTrackAdjacentDropCellPositionGenerator();
+    private static SINGLETON: RaceTrackAdjacentDropCellPositionGenerator = new RaceTrackAdjacentDropCellPositionGenerator();
 
     public static getInstance(): DropCellPositionGeneratorInterface{
 
@@ -138,7 +138,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFirstNonRoadAdjacentCellPosition(column: number, row: number): GeographicMapCellPosition{
     //var column = column
@@ -213,7 +213,7 @@ break;
 
     private readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -227,7 +227,7 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
 
     private readonly geographicMapDirectionUtil: GeographicMapDirectionUtil = GeographicMapDirectionUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
     //var allBinaryLayerManager = allBinaryLayerManager

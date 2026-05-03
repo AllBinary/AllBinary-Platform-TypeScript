@@ -102,7 +102,7 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(): number{
 
@@ -159,7 +159,7 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.vie
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

@@ -73,7 +73,7 @@ export class BasicPlayer
          implements Player, TimeBaseInterface, Controllable2 {
         
 
-    public CONTROL_TYPE: string = "ToneControl";
+    public static CONTROL_TYPE: string = "ToneControl";
 
     private state: number= 0
 
@@ -209,13 +209,13 @@ this.timeBase= timeBase;
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             
     public prefetch(){
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             
     public realize(){
 }
@@ -239,7 +239,7 @@ this.loopCount= count;
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setMediaTime(now: number): number{
@@ -253,7 +253,7 @@ var now = now
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
@@ -262,7 +262,7 @@ this.setState(Player.STARTED);
 }
 
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){

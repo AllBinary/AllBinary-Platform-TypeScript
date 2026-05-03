@@ -150,7 +150,7 @@ var sequence = sequence
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public nextFrame(){
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.nextFrame();
@@ -241,7 +241,7 @@ this.animationInterfaceArray= animationInterfaceArray;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
     //var gl = gl

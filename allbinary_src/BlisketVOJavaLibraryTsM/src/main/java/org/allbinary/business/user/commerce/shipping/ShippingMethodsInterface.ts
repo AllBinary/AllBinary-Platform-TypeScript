@@ -54,11 +54,11 @@ export interface ShippingMethodsInterface {
 
     get(): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getShippingInterface(name: string): ShippingInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getDefault(): ShippingInterface
 

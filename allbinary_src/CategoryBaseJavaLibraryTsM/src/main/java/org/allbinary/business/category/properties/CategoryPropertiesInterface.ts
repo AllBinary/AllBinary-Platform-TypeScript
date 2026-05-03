@@ -62,23 +62,23 @@ export interface CategoryPropertiesInterface extends TableMappingInterface, Vali
 
     getValue(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getWebAppPath(): AbPath
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFileName(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isRoot(): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isRealRoot(): boolean
 

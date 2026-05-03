@@ -81,7 +81,7 @@ export interface VehicleLayerInterface extends LayerInterface, VehicleProperties
 
     getFinalPosition(): number
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     handleFinish()
 

@@ -26,7 +26,7 @@
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
-import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
+import { Choice } from "../../../../javax/microedition/lcdui/ChoiceI.js";
 
     
 import { ChoiceGroup } from "../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -123,7 +123,7 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 
@@ -136,7 +136,7 @@ this.deleteAll();
                         if(list.size() > 0)
                         
                                     {
-                                    this.add(list, "Select A Saved Game", Choice.EXCLUSIVE);
+                                    this.add(list, "Select A Saved Game", ChoiceI.EXCLUSIVE);
     
 this.areChoices= true;
     

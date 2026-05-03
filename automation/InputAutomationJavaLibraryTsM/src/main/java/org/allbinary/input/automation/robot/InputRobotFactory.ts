@@ -93,7 +93,7 @@ export class InputRobotFactory
 
     private static readonly inputRobotFactory: InputRobotFactory = new InputRobotFactory();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(): InputRobotFactory{
 
@@ -105,7 +105,7 @@ export class InputRobotFactory
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static loadLibraries(collection: Collection){
 var collection = collection
@@ -129,7 +129,7 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static loadLibrary(inputRobotInterface: InputRobotInterface){
     //var inputRobotInterface = inputRobotInterface
@@ -138,7 +138,7 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
 ;
     
 
-                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface::class, inputRobotInterface))
+                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface.constructor, inputRobotInterface))
                         
                                     {
                                     logUtil!.putF("Loading Library: " +inputRobotInterface!.getName(), "InputRobotFactory", "loadLibraries");
@@ -215,7 +215,7 @@ this.helpSetListenerInterface= helpSetListenerInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public add(inputRobotInterface: InputRobotInterface){
     //var inputRobotInterface = inputRobotInterface
@@ -273,7 +273,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadLibraries(){
 
@@ -310,7 +310,7 @@ InputRobotFactory.loadLibrary(inputRobotInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public unloadLibraries(){
 this.logUtil!.putF("Unloading Libraries", this, "unloadLibraries");
@@ -343,7 +343,7 @@ index < size; index++)
 inputRobotInterface= this.get(inputRobotArray[index]! as string);
     
 
-                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface::class, inputRobotInterface))
+                        if(InterfaceUtil.isImplemented(SecuredNativeLibraryInterface.constructor, inputRobotInterface))
                         
                                     {
                                     this.logUtil!.putF("Unloading Library: " +inputRobotInterface!.getName(), this, "unloadLibraries");
@@ -362,7 +362,7 @@ securedNativeLibraryInterface!.unload();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(): Hashtable<any, any>{
 

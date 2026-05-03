@@ -76,7 +76,7 @@ this.tagHelperFactoryInterface= tagHelperFactoryInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setHelper(){
 

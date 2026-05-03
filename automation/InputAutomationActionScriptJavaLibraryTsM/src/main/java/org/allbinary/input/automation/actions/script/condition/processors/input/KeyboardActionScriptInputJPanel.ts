@@ -184,7 +184,7 @@ this.keyActionScriptInputInterface!.log();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateInputType(){
 
@@ -248,7 +248,7 @@ this.keyActionScriptInputInterface!.setText(text);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update(){
 this.updateInputType();
@@ -332,7 +332,7 @@ this.titleJLabel!.setText("Keyboard Input Options");
     
 this.addKeyJLabel!.setText("Add Key:");
     
-this.keyNameJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.keyNameJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -364,7 +364,7 @@ this.pressJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0,
     
 this.pressJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.pressJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.pressJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -382,7 +382,7 @@ this.releaseJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(
     
 this.releaseJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.releaseJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.releaseJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -402,7 +402,7 @@ this.normalJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0
     
 this.normalJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.normalJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.normalJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -422,7 +422,7 @@ this.simultaneousJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBo
     
 this.simultaneousJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.simultaneousJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.simultaneousJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -440,7 +440,7 @@ this.sequenceJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBorder
     
 this.sequenceJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.sequenceJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.sequenceJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -456,7 +456,7 @@ this.okJButton!.setText("OK");
     
 this.okJButton!.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
     
-this.okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -470,7 +470,7 @@ okJButtonActionPerformed(evt);
     
 this.jPanel1!.add(this.okJButton);
     
-this.keyIntegerJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.keyIntegerJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -496,7 +496,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.keyActionJButton!.setText("Edit");
     
-this.keyActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.keyActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

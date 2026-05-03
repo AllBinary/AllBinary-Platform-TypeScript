@@ -694,7 +694,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateMenuFromEvent(displayChangeEvent: DisplayChangeEvent){
     //var displayChangeEvent = displayChangeEvent
@@ -747,7 +747,7 @@ this.menuForm!.init(rectangle, formType);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processSleep(){
 super.processSleep();
@@ -780,7 +780,7 @@ super.processSleep();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initPopupMenu(){
 
@@ -821,7 +821,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initMenu2(){
 this.closeMenu();
@@ -909,7 +909,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateMenu2(){
 
@@ -1023,7 +1023,7 @@ this.gameBehavior!.unPause(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public popupMenu(){
 this.menuBehavior!.popupMenu(this);
@@ -1031,7 +1031,7 @@ this.menuBehavior!.popupMenu(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public popupMenu2(){
 this.primaryPlayerQueue!.add(SelectSound.getInstance());
@@ -1047,7 +1047,7 @@ this.gameKeyEventHandler!.addListener(this.mainMenuInputProcessor);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toggleMenu(){
 this.logUtil!.putF(commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU);
@@ -1117,7 +1117,7 @@ this.secondaryPlayerQueue!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processorInit(){
 this.setMainStateProcessor(Processor.getInstance());
@@ -1133,7 +1133,7 @@ this.menuBehavior!.initSpecialPaint(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(gameLayerManager: AllBinaryGameLayerManager, buffered: boolean){
 var gameLayerManager = gameLayerManager
@@ -1247,7 +1247,7 @@ var enable = enable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public mediaInit(){
 ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
@@ -1255,7 +1255,7 @@ ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     initConfigurable(abeClientInformation: AbeClientInformationInterface){
@@ -1320,7 +1320,7 @@ this.loadResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_GAME);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initApp(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -1337,7 +1337,7 @@ this.initTouch();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initTouch(){
 
@@ -1361,7 +1361,7 @@ this.postInitTouch();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateCurrentTouchInputFactory(nextTouchInput: BaseTouchInput){
     //var nextTouchInput = nextTouchInput
@@ -1381,7 +1381,7 @@ this.touchButtonFactory!.toggle(this.isPaused(), this.currentTouchInputFactory!.
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateTouch(){
 this.gameBehavior!.updateTouch(this);
@@ -1389,7 +1389,7 @@ this.gameBehavior!.updateTouch(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateTouch2(){
 
@@ -1415,7 +1415,7 @@ this.gameBehavior!.updateTouch(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     postInitTouch(){
 this.setTouchButtonsPaintable(TouchButtonsPaintableFactory.getInstance(this.gameLayerManager!.getForegroundBasicColor()));
@@ -1562,7 +1562,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateScreenButtonPaintable(){
 this.gameBehavior!.updateScreenButtonPaintable(this);
@@ -1649,7 +1649,7 @@ this.gameOver= gameOver;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processGameOver(){
 PreLogUtil.put(commonStrings!.START, this, this.gameStrings!.SET_GAME_OVER);
@@ -1675,7 +1675,7 @@ this.setEndGamePaintable(getEndGameStatePaintable());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setHighScoreSubmitted(highScoreSubmitted: boolean){
 var highScoreSubmitted = highScoreSubmitted
@@ -1706,7 +1706,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setGameState(gameState: GameState){
     //var gameState = gameState
@@ -1726,7 +1726,7 @@ this.gameBehavior!.setGameState(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateGameState(){
 
@@ -1805,7 +1805,7 @@ this.gameKeyEventHandler!.removeListener(playerGameInput);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateEndGameProcessor(){
 this.gameBehavior!.updateEndGameProcessor(this);
@@ -1813,7 +1813,7 @@ this.gameBehavior!.updateEndGameProcessor(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateEndGameProcessor2(){
 
@@ -1834,14 +1834,14 @@ this.gameBehavior!.updateEndGameProcessor(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public buildGameInit(isPortion: boolean){
     //var isPortion = isPortion
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     cleanupGame(){
 this.logUtil!.putF(commonStrings!.START, this, this.commonStrings!.CLEANUP);
@@ -1861,7 +1861,7 @@ GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadResourceLoadingLevel(resourceLoadingLevel: ResourceLoadingLevel){
     //var resourceLoadingLevel = resourceLoadingLevel
@@ -1876,7 +1876,7 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadResources(level: number){
     //var level = level
@@ -1891,13 +1891,13 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateColor(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public buildGame(portion: number){
     //var portion = portion
@@ -1955,7 +1955,7 @@ this.getStartIntermissionPaintable()!.update();
 progressCanvas!.addNormalPortion(portion, "Finishing...");
     
 
-                        if(this.isMainCanvas() || !this.isInitialized();)
+                        if(this.isMainCanvas() || !this.isInitialized())
                         
                                     {
                                     
@@ -2057,7 +2057,7 @@ this.gameCanvasStartListener= gameCanvasStartListener;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadState(){
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
@@ -2092,7 +2092,7 @@ gameInfo!.setCurrentLevel(level);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getLoadStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(new StringMaker().
@@ -2183,7 +2183,7 @@ this.progressPaintable!.paint(graphics);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processEndLevelIntermissionGameState(){
 }
@@ -2265,7 +2265,7 @@ this.inputProcessor!.keyReleased(this, keyCode, deviceId);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public handleRawKey(keyCode: number, deviceId: number, repeated: boolean){
     //var keyCode = keyCode
@@ -2310,7 +2310,7 @@ portion= 4;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processPlayingGame(){
 this.cheatProcessor!.update();
@@ -2326,13 +2326,13 @@ this.startIntermissionProcessor!.process();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     threadInit(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processGame(){
 super.process();
@@ -2381,7 +2381,7 @@ this.threadObjectUtil!.notifyObject(this);
 
     private readonly YIELD_SLEEP: number = 100;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public shouldWait(){
 
@@ -2489,7 +2489,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public run2(){
 
@@ -2569,7 +2569,7 @@ this.end();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public run3(){
 this.loopTimeHelper!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
@@ -2637,7 +2637,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public end(){
 this.screenCapture!.endRecording();
@@ -2658,7 +2658,7 @@ this.endGameThread();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public endGameThread(){
 DisplayChangeEventHandler.getInstance()!.removeListener(this);
@@ -2689,7 +2689,7 @@ var score = score
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setHighScore(abeClientInformation: AbeClientInformationInterface, name: string, score: number, autoSubmit: boolean, isLast: boolean){
     //var abeClientInformation = abeClientInformation
@@ -2702,7 +2702,7 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setHighScore2(abeClientInformation: AbeClientInformationInterface, name: string, score: number, autoSubmit: boolean, isLast: boolean){
     //var abeClientInformation = abeClientInformation

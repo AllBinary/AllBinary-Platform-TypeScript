@@ -56,7 +56,7 @@ export class GameConfigurationSingleton
          {
         
 
-    private SINGLETON: GameConfigurationSingleton = new GameConfigurationSingleton();
+    private static SINGLETON: GameConfigurationSingleton = new GameConfigurationSingleton();
 
     public static getInstance(): GameConfigurationSingleton{
 

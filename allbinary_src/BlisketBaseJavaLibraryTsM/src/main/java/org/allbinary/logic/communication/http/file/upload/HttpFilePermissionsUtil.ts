@@ -66,7 +66,7 @@ export class HttpFilePermissionsUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public create(path: AbPath){
 var path = path

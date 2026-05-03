@@ -59,7 +59,7 @@ export class PathCacheFactory
          {
         
 
-    private pathFactory: PathCacheFactory = new PathCacheFactory();
+    private static pathFactory: PathCacheFactory = new PathCacheFactory();
 
     public static getInstance(): PathCacheFactory{
 
@@ -105,7 +105,7 @@ this.hashtable.remove(pathId);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public removeAll(){
 this.hashtable.clear();
@@ -125,7 +125,7 @@ this.hashtable.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrCreate(pathIdInteger: number): BasicArrayList{
     //var pathIdInteger = pathIdInteger

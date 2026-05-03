@@ -47,7 +47,7 @@ export class DemoGameMidletStateFactory
          {
         
 
-    private STATE: DemoGameMidletStateFactory = new DemoGameMidletStateFactory();
+    private static STATE: DemoGameMidletStateFactory = new DemoGameMidletStateFactory();
 
     public static getInstance(): DemoGameMidletStateFactory{
 

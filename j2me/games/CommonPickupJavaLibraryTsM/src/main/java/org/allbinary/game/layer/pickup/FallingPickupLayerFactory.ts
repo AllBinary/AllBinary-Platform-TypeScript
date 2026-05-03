@@ -58,7 +58,7 @@ export class FallingPickupLayerFactory
          implements AllBinaryLayerFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(): AllBinaryLayer{
 

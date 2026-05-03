@@ -94,7 +94,7 @@ this.angleIncrement= angleIncrement;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -107,7 +107,7 @@ this.angleIncrement= angleIncrement;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

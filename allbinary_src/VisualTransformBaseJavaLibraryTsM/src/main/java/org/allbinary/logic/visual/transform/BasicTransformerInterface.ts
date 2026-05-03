@@ -68,7 +68,7 @@ export interface BasicTransformerInterface extends CompositeTransformInfoInterfa
 
     getURIResolver(): URIResolver
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     translate(xmlDocumentStr: string): string
 

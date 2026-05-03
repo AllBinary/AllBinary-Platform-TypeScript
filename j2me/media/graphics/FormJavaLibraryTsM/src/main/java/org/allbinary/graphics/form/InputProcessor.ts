@@ -62,7 +62,7 @@ this.playerGameInputCompositeInterface= playerGameInputCompositeInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 this.playerGameInputCompositeInterface!.getPlayerGameInput()!.update();

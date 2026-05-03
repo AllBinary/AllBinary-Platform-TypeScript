@@ -78,7 +78,7 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
 }
 
 
-    private removeFailed: boolean = false;
+    private static removeFailed: boolean = false;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -100,7 +100,7 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
 
     private readonly CLEAR: string = " Clear List";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface

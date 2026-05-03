@@ -82,9 +82,9 @@ this.setP2(p2);
 
 
     update(){
-this.deltaX= this.getP1()!.getX(); -this.getP2()!.getX();
+this.deltaX= this.getP1()!.getX() -this.getP2()!.getX();
     
-this.deltaY= this.getP1()!.getY(); -this.getP2()!.getY();
+this.deltaY= this.getP1()!.getY() -this.getP2()!.getY();
     
 }
 

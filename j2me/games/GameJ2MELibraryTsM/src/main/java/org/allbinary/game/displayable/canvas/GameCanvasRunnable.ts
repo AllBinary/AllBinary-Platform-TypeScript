@@ -103,7 +103,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processLoopSleep(){
 this.allBinaryGameCanvas!.processLoopSleep();

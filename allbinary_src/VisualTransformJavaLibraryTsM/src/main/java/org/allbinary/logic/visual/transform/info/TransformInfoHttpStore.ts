@@ -155,7 +155,7 @@ this.setStoreName(storeFrontInterface!.getName());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getPath(): string{
 
@@ -179,7 +179,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTemplateFilePath(): AbPath{
 
@@ -191,7 +191,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getObjectConfigFilePath(): AbPath{
 
@@ -203,7 +203,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDataFilePath(): AbPath{
 

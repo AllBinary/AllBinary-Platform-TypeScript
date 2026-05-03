@@ -138,7 +138,7 @@ export class AndroidBasicTitleProgressBar extends ProgressCanvas implements Disp
 
     public static readonly RESOURCE: string = "ProgressImage";
 
-    private background: number= 0
+    private static background: number= 0
 
     public static setBackgroundResource(background: number){
 var background = background
@@ -575,7 +575,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setImages(index: number, lastWidth: number, lastHeight: number){
 var index = index
@@ -628,7 +628,7 @@ var lastHeight = lastHeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initOpenGL(graphics: Graphics){
 var graphics = graphics
@@ -669,7 +669,7 @@ this.updateCurrent();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(graphics: Graphics){
 var graphics = graphics
@@ -710,7 +710,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getImage(index: number): Image{
 var index = index

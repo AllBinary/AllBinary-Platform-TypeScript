@@ -324,7 +324,7 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initMenu(){
 
@@ -349,7 +349,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createForm(): ScrollSelectionForm{
 
@@ -425,7 +425,7 @@ DisplayChangeEventHandler.getInstance()!.removeListener(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 this.repaintProcessor!.process();

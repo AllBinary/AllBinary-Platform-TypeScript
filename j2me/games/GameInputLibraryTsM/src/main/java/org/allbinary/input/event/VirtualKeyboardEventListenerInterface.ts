@@ -50,7 +50,7 @@ import { EventListenerInterface } from "../../../../org/allbinary/logic/util/eve
 export interface VirtualKeyboardEventListenerInterface extends EventListenerInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent)
 

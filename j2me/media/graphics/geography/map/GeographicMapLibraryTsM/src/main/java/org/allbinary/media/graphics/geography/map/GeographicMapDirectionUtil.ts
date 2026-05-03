@@ -80,7 +80,7 @@ private constructor (){
 
     private readonly MESSAGE: string = "Cell Position should have been cached!!!";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -191,7 +191,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getEightDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -375,7 +375,7 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition
@@ -474,7 +474,7 @@ stringMaker!.delete(0, stringMaker!.length());
 
     private readonly EQUAL: string = " == ";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getEightDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
 var fromGeographicMapCellPosition = fromGeographicMapCellPosition

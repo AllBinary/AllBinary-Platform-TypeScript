@@ -64,7 +64,7 @@ export class CreateUserFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>): UserInterface{
 var hashMap = hashMap

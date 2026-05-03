@@ -55,7 +55,7 @@ export class JavaHelpSetNotifier
          {
         
 
-    private vector: Vector = new Vector();
+    private static vector: Vector = new Vector();
 
     static get(): Vector{
 

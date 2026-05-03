@@ -78,7 +78,7 @@ protected constructor (angleInfo: AngleInfo, circularIndexUtil: CircularIndexUti
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 

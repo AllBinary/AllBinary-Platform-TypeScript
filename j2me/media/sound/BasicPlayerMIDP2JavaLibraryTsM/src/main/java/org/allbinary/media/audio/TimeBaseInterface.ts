@@ -52,7 +52,7 @@ export interface TimeBaseInterface {
 
     getTimeBase(): TimeBase
 
-                //@Throws(MediaException::class)
+                //@Throws(MediaException.constructor)
             
     setTimeBase(timeBase: TimeBase)
 

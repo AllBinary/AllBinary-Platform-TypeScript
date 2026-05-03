@@ -46,7 +46,7 @@ import { Sound } from "./Sound.js";
 export class ErrorSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new ErrorSound();
+    private static soundInterface: Sound = new ErrorSound();
 
     public static getInstance(): Sound{
 

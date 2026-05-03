@@ -66,7 +66,7 @@ export class DocumentToNode
 
     private static readonly XMLJSPROOTENDSTART: string = "</jsp:root";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static convertDocumentToNodeString(documentString: string): string{
 var documentString = documentString

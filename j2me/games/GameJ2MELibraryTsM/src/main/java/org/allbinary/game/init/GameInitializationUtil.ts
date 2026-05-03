@@ -88,7 +88,7 @@ export class GameInitializationUtil
 
     public readonly EVENT: GameInitializedEvent = new GameInitializedEvent(this);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initDemo(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
     //var abeClientInformation = abeClientInformation
@@ -151,7 +151,7 @@ GameInitializedEventHandler.getInstance()!.fireEvent(this.EVENT);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initGame(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
     //var abeClientInformation = abeClientInformation

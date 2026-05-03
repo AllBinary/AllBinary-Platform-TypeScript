@@ -96,7 +96,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(frame: number){
     //var frame = frame
@@ -146,7 +146,7 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(imageComparisonResult: ImageComparisonResult, frame: number){
     //var imageComparisonResult = imageComparisonResult

@@ -504,7 +504,7 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

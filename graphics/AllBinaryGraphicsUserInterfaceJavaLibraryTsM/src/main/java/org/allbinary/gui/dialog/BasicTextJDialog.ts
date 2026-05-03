@@ -59,7 +59,7 @@ export class BasicTextJDialog extends javax.swing.JDialog {
 
     public static main(args: string[]){
 var args = args
-java.awt.EventQueue.invokeLater(new ARunnable()
+java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
     public run(){
@@ -124,7 +124,7 @@ setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
     
 this.jButton1!.setText("OK");
     
-jButton1!.addActionListener(new java.awt.event.ActionListener()
+jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

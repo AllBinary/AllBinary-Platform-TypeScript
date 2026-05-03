@@ -158,7 +158,7 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
 var gl = gl

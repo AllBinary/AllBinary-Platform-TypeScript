@@ -65,7 +65,7 @@ import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic
 export class TimeHudWidget extends BasicHud {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(location: number, direction: number, basicColor: BasicColor, timer: Timer): TimeHudWidget{
 var location = location

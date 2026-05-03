@@ -75,7 +75,7 @@ export class LayerPartialCellPositionsUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, reusableList: BasicArrayList): BasicArrayList{
 var geographicMapInterface = geographicMapInterface
@@ -118,7 +118,7 @@ reusableList!.clear();
                                     }
                                 
 
-                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition);)
+                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition))
                         
                                     {
                                     reusableList!.add(bottomLeftGeographicMapCellPosition);
@@ -127,7 +127,7 @@ reusableList!.clear();
                                     }
                                 
 
-                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition);)
+                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition))
                         
                                     {
                                     reusableList!.add(bottomRightGeographicMapCellPosition);
@@ -144,7 +144,7 @@ reusableList!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAllDXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, dx: number, dy: number, reusableList: BasicArrayList): BasicArrayList{
 var geographicMapInterface = geographicMapInterface
@@ -189,7 +189,7 @@ reusableList!.clear();
                                     }
                                 
 
-                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition);)
+                        if(bottomLeftGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomLeftGeographicMapCellPosition))
                         
                                     {
                                     reusableList!.add(bottomLeftGeographicMapCellPosition);
@@ -198,7 +198,7 @@ reusableList!.clear();
                                     }
                                 
 
-                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition);)
+                        if(bottomRightGeographicMapCellPosition != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION && !reusableList!.contains(bottomRightGeographicMapCellPosition))
                         
                                     {
                                     reusableList!.add(bottomRightGeographicMapCellPosition);

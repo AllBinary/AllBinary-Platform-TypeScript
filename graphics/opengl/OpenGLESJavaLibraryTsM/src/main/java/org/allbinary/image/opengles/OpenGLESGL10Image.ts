@@ -96,7 +96,7 @@ export class OpenGLESGL10Image extends OpenGLESImage {
 
     private readonly regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
 
-    private readonly realOpenGLESImageDraw: OpenGLESImageDraw = new OpenGLESImageDraw()
+    private readonly realOpenGLESImageDraw: OpenGLESImageDraw = new class extends OpenGLESImageDraw
                                 {
                                 
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){

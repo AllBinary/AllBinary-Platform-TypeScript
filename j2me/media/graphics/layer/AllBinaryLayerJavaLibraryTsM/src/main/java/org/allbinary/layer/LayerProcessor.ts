@@ -67,7 +67,7 @@ this.layerManager= layerManager;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -81,7 +81,7 @@ var index = index
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
 var layerInterface = layerInterface
@@ -103,7 +103,7 @@ var layerInterface = layerInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

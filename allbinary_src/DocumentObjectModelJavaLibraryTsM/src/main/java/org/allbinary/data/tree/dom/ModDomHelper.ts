@@ -75,7 +75,7 @@ export class ModDomHelper
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createTextNode(document: Document, name: string, text: string): Node{
 var document = document
@@ -100,7 +100,7 @@ newValueNode!.appendChild(newValueTextNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createValueNode(document: Document, text: string): Node{
 var document = document
@@ -114,7 +114,7 @@ var text = text
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameNode(document: Document, text: string): Node{
 var document = document
@@ -128,7 +128,7 @@ var text = text
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createIndexNode(document: Document, index: number): Node{
 var document = document
@@ -143,7 +143,7 @@ var index = index
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, elementName: string, nameText: string, valueText: string): Node{
 var document = document
@@ -167,7 +167,7 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, elementNameAndNameText: string, valueText: string): Node{
 var document = document
@@ -186,7 +186,7 @@ var valueText = valueText
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameValueIndexNodes(document: Document, elementNameAndNameText: string, index: number, valueText: string): Node{
 var document = document
@@ -208,7 +208,7 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 var document = document
@@ -227,7 +227,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 var document = document
@@ -327,7 +327,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 var document = document
@@ -371,7 +371,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, 
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNameValueIndexNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
 var document = document
@@ -415,7 +415,7 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
 var document = document
@@ -434,7 +434,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
 var document = document

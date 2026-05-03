@@ -69,7 +69,7 @@ import { GeographicMapCellPositionEventListenerInterface } from "./GeographicMap
 export class GeographicMapCellPositionEventHandler extends BasicEventHandler {
         
 
-    private instance: GeographicMapCellPositionEventHandler = new GeographicMapCellPositionEventHandler();
+    private static instance: GeographicMapCellPositionEventHandler = new GeographicMapCellPositionEventHandler();
 
     public static getInstance(): GeographicMapCellPositionEventHandler{
 
@@ -119,7 +119,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
 var eventObject = eventObject
@@ -154,7 +154,7 @@ super.fireEvent(eventObject);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireRemoveEvent(eventObject: AllBinaryEventObject){
@@ -230,7 +230,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FI
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject

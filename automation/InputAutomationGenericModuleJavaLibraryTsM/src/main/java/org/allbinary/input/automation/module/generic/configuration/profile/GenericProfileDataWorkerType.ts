@@ -69,15 +69,15 @@ export class GenericProfileDataWorkerType
          implements GenericProfileDataWorkerTypeInterface {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static hashMap: HashMap<any, any> = new HashMap<any, any>();
 
-    public SAVED_CAPTURE: GenericProfileDataWorkerType = SavedCaptureGenericProfileDataWorkerType.SAVED_CAPTURE;
+    public static SAVED_CAPTURE: GenericProfileDataWorkerType = SavedCaptureGenericProfileDataWorkerType.SAVED_CAPTURE;
 
-    public SCREEN_CAPTURE: GenericProfileDataWorkerType = new GenericProfileDataWorkerType("Screen " +InputImageType.CAPTURE.getName());
+    public static SCREEN_CAPTURE: GenericProfileDataWorkerType = new GenericProfileDataWorkerType("Screen " +InputImageType.CAPTURE.getName());
 
-    public COMPARISON: GenericProfileDataWorkerType = new GenericProfileDataWorkerType(InputImageType.COMPARISON.getName());
+    public static COMPARISON: GenericProfileDataWorkerType = new GenericProfileDataWorkerType(InputImageType.COMPARISON.getName());
 
-    public MOTION: GenericProfileDataWorkerType = new GenericProfileDataWorkerType(InputImageType.MOTION.getName());
+    public static MOTION: GenericProfileDataWorkerType = new GenericProfileDataWorkerType(InputImageType.MOTION.getName());
 
     public static getInstance(node: Node): GenericProfileDataWorkerType{
 var node = node
@@ -123,7 +123,7 @@ this.name= name;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

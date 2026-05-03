@@ -305,7 +305,7 @@ var packageIndex = packageIndex
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generatePackagePropertiesHashMap(properties: string): HashMap<any, any>{
 var properties = properties

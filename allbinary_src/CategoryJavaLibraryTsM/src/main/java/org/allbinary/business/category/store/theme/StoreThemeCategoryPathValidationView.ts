@@ -66,7 +66,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(): Boolean{
 
@@ -78,7 +78,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -90,7 +90,7 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -103,7 +103,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 

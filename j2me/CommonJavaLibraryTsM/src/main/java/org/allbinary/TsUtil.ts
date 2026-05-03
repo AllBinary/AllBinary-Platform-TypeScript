@@ -71,7 +71,7 @@ var anyType = anyType
 }
 
 
-                //@Throws(InterruptedException::class)
+                //@Throws(InterruptedException.constructor)
             
     public waitFor(anyType: any = {}, timeoutMillis: number){
 var anyType = anyType

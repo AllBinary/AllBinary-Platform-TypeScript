@@ -247,7 +247,7 @@ this.file= new AbFile(this.fileAbPath);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(input: string): string{
 var input = input

@@ -128,7 +128,7 @@ this.shippingMethods= new ShippingMethods(this.abeClientInformation, this.storeF
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

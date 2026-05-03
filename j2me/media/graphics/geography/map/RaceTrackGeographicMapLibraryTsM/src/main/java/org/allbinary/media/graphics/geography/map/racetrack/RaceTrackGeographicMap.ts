@@ -98,7 +98,7 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.create(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition

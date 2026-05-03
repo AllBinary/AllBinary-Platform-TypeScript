@@ -108,7 +108,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFormData(){
 
@@ -143,7 +143,7 @@ this.downloadItemId= hashMap!.get(DownloadItemData.ID) as string;
             
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);)
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
                         
                                     {
                                     
@@ -249,7 +249,7 @@ var document = document
 
                         if(id == 
                                     null
-                                 || !StringValidationUtil.getInstance()!.isNumber(this.id);)
+                                 || !StringValidationUtil.getInstance()!.isNumber(this.id))
                         
                                     {
                                     stringBuffer!.append("Id is not valid.<br />");

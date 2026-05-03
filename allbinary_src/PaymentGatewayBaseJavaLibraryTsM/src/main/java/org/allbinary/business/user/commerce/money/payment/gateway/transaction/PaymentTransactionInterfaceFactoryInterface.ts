@@ -53,31 +53,31 @@ import { TenderType } from "../../../../../../../../../org/allbinary/business/us
 export interface PaymentTransactionInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(orderHistory: OrderHistory): PaymentTransactionInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getSaleTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getCreditTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getAuthorizationTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getCaptureDelayedTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getVoidTransaction(tenderType: TenderType): PaymentTransactionInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInquiryTransaction(tenderType: TenderType): PaymentTransactionInterface
 

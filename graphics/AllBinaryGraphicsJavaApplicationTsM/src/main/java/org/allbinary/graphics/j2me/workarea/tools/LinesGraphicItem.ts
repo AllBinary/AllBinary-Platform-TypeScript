@@ -128,7 +128,7 @@ export class LinesGraphicItem
 
     private static readonly IMAGE: string = "image";
 
-    private item: number = 0;
+    private static item: number = 0;
 
     private static readonly NAME: string = "Line Tool";
 
@@ -254,7 +254,7 @@ this.addPoint(pointTwoNode!.getChildNodes());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(){
 this.treeNode= new DefaultMutableTreeNode(PointsDomUtil.getInstance()!.LINES +LinesGraphicItem.item);
@@ -270,7 +270,7 @@ this.fulcrumPoint= PointFactory.getInstance()!.createXY(0, 0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(x: number, y: number){
 var x = x
@@ -352,7 +352,7 @@ this.setRotate(this.theta +Math.toRadians(angle));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     addPoint(pointNodes: NodeList){
@@ -475,7 +475,7 @@ this.active= true;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public duplicatePoints(list: BasicArrayList){
 var list = list
@@ -515,7 +515,7 @@ this.treeNode!.add(this.pointTreeNodeVector!.get(this.pointTreeNodeVector!.lengt
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public duplicate(): GraphicItemInterface{
 
@@ -642,7 +642,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toDom(canvasDom: CanvasDom): Node{
 var canvasDom = canvasDom

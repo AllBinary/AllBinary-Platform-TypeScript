@@ -72,7 +72,7 @@ this.contextConfigurationInterface= contextConfigurationInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -95,7 +95,7 @@ document.appendChild(node);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toDomDocumentString(): string{
 

@@ -88,7 +88,7 @@ public constructor (ownerLayer: PathFindingLayerInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public visit(unitLayer: UnitLayer){
     //var unitLayer = unitLayer

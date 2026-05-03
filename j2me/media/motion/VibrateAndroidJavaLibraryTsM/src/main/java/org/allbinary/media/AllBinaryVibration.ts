@@ -58,7 +58,7 @@ import { AllBinaryNoVibration } from "./AllBinaryNoVibration.js";
 export class AllBinaryVibration extends AllBinaryVibrationME {
         
 
-    private VIBRATION: AllBinaryVibrationME = AllBinaryNoVibration.NO_VIBRATION;
+    private static VIBRATION: AllBinaryVibrationME = AllBinaryNoVibration.NO_VIBRATION;
 
     public static getInstance(): AllBinaryVibrationME{
 

@@ -149,7 +149,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -205,7 +205,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage2(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -261,7 +261,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage3(bufferedImageArray: org.eclipse.swt.graphics.Image[], width: number, height: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
     //var bufferedImageArray = bufferedImageArray
@@ -298,7 +298,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImageArray[in
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage4(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -313,7 +313,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage5(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -329,7 +329,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage6(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): org.eclipse.swt.graphics.Image{
     //var bufferedImage = bufferedImage
@@ -455,7 +455,7 @@ gc.dispose();
     var imageCanvas: Canvas = new Canvas(parent, SWT.NONE);
 ;
     
-imageCanvas!.addPaintListener(new PaintListener()
+imageCanvas!.addPaintListener(new class extends PaintListener
                                 {
                                 
     public paintControl(event: PaintEvent){

@@ -91,7 +91,7 @@ export class WeblisketFinder
 
     private static readonly KEY: string = "installerdata.dat";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static main(args: string[]){
 var args = args

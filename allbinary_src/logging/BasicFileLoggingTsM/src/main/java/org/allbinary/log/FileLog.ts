@@ -96,15 +96,15 @@ export class FileLog
 
     private static readonly ORG_ALLBINARY: string = "org.allbinary: ";
 
-    private firstTime: boolean = true;
+    private static firstTime: boolean = true;
 
-    private logFile: File = new File(FileLog.logPath, FileLog.fileName);
+    private static logFile: File = new File(FileLog.logPath, FileLog.fileName);
 
-    private logFileBak: File
+    private static logFileBak: File
 
-    private fileOut: BufferedWriter
+    private static fileOut: BufferedWriter
 
-    private backupIndex: number= 0
+    private static backupIndex: number= 0
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static createLogFile(): boolean{

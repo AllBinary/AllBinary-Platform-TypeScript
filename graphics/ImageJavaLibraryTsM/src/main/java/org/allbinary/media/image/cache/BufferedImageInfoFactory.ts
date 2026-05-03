@@ -53,7 +53,7 @@ export class BufferedImageInfoFactory
          {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static hashMap: HashMap<any, any> = new HashMap<any, any>();
 
     public static getInstance(width: number, height: number, type: number): BufferedImageInfo{
 var width = width

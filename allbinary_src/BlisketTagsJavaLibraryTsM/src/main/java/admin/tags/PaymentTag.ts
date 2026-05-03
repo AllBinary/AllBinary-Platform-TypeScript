@@ -96,7 +96,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     select(): string{
 
@@ -164,7 +164,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

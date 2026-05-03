@@ -141,7 +141,7 @@ this.drawImage(originalImage, image, canvasSurface);
                         if(image.isMutable())
                         
                                     {
-                                    canvasSurface!.translate( -originalImage!.getWidth(); /2,  -originalImage!.getHeight(); /2);
+                                    canvasSurface!.translate( -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2);
     
 canvasSurface!.clear();
     
@@ -235,12 +235,12 @@ originalPlayNImage= originalHTMLImage!.getImage() as playn.core.Image;
 
                         }
                             
-canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth(); /2,  -originalImage!.getHeight(); /2);
+canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -originalImage!.getHeight() /2);
     
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage

@@ -98,7 +98,7 @@ export class StylesValidationFactory
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>): Vector{
 var hashMap = hashMap
@@ -122,7 +122,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(document: Document): Vector{
 var document = document

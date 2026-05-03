@@ -51,7 +51,7 @@ import { Animation } from "./Animation.js";
 export interface AnimationInterfaceFactoryInterface extends BasicAnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(instanceId: number): Animation
 

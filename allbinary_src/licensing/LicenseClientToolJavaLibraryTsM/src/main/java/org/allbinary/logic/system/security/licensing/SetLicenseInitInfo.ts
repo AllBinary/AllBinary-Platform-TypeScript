@@ -82,9 +82,9 @@ export class SetLicenseInitInfo
          {
         
 
-    private stdinput: BufferedReader = new BufferedReader(new InputStreamReader(System.in));
+    private static stdinput: BufferedReader = new BufferedReader(new InputStreamReader(System.in));
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static main(args: string[]){
 var args = args
@@ -119,7 +119,7 @@ this.vector.add(options[index]!);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getLicenseInitInfo(): LicenseInitInfo{
 

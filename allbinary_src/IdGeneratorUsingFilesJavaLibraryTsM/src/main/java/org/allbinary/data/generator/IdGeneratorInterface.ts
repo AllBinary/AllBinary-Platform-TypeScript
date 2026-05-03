@@ -47,7 +47,7 @@ import { IOException } from "../../../../java/io/IOException.js";
 export interface IdGeneratorInterface {
         
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     getNext(): string
 

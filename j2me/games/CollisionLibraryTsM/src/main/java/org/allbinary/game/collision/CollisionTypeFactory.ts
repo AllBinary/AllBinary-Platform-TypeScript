@@ -47,7 +47,7 @@ export class CollisionTypeFactory
          {
         
 
-    private SINGLETON: CollisionTypeFactory = new CollisionTypeFactory();
+    private static SINGLETON: CollisionTypeFactory = new CollisionTypeFactory();
 
     public static getInstance(): CollisionTypeFactory{
 

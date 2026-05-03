@@ -329,7 +329,7 @@ this.angle= angle;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setWorkArea(x: number, y: number){
 var x = x
@@ -339,7 +339,7 @@ this.setDimension(new IntegerDimension(x, y));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setGrid(gridX: number, gridY: number){
 var gridX = gridX
@@ -393,7 +393,7 @@ pointNode!.appendChild(yNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toDom(): Node{
 

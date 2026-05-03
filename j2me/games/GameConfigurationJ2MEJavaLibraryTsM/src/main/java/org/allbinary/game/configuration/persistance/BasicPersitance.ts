@@ -101,7 +101,7 @@ this.recordId= recordId;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public deleteRecoreStore(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -110,7 +110,7 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -139,7 +139,7 @@ this.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public delete(abeClientInformation: AbeClientInformationInterface, deleteId: number){
     //var abeClientInformation = abeClientInformation

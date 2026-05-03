@@ -48,7 +48,7 @@
 export interface ProfileActionScriptItemInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(frame: number)
 

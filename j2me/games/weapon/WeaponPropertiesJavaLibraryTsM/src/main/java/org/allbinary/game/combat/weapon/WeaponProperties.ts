@@ -62,7 +62,7 @@ export class WeaponProperties extends SimpleWeaponProperties {
 
     public static readonly NULL_WEAPON_PROPERTIES: WeaponProperties = new WeaponProperties(0L, 0L, 0L, 0, 0);
 
-    private messageSent: boolean = false;
+    private static messageSent: boolean = false;
 
     private static readonly DAMAGE: string = "Damage: ";
 

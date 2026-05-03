@@ -46,19 +46,19 @@
 export interface InventoryViewSearchInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     searchSingleStaticPage(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     searchSingleDynamicPage(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     search(): string[]
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getProduct(product: string): string
 

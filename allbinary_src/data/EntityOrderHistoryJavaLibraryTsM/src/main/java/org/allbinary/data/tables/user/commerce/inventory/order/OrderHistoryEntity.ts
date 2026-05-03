@@ -584,7 +584,7 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector{
 var storeFrontInterface = storeFrontInterface
@@ -635,7 +635,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrders(userName: string): Vector{
 var userName = userName
@@ -686,7 +686,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrders(status: string, fromDate: string, toDate: string): Vector{
 var status = status
@@ -739,7 +739,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrders(fromDate: string, toDate: string): Vector{
 var fromDate = fromDate
@@ -785,7 +785,7 @@ orderReviewVector!.add(orderReview);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrder(id: string): OrderHistory{
 var id = id
@@ -1029,7 +1029,7 @@ stringBuffer!.append(") )");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>){
 var whereHashMap = whereHashMap

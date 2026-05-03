@@ -86,7 +86,7 @@ this.fileInputStream!.mark(readlimit);
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public reset(){
@@ -95,7 +95,7 @@ this.fileInputStream!.reset();
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public available(): number{
 
@@ -123,7 +123,7 @@ this.fileInputStream!.close();
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public read(): number{
 
@@ -135,7 +135,7 @@ this.fileInputStream!.close();
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public read(b: number[]): number{
 var b = b
@@ -148,7 +148,7 @@ var b = b
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public read(buffer: number[], offset: number, count: number): number{
 var buffer = buffer
@@ -163,7 +163,7 @@ var count = count
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public skip(n: number): number{
 var n = n

@@ -58,43 +58,43 @@ export class SpecialGameInput
          implements SpecialGameInputInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public up(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public down(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public right(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public left(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public strafeLeft(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public strafeRight(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -102,7 +102,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -110,7 +110,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -118,7 +118,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -126,7 +126,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -134,7 +134,7 @@ export class SpecialGameInput
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager

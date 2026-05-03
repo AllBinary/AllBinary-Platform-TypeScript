@@ -74,7 +74,7 @@ export class RandomRotationFactory
 
     private readonly angleFactory: AngleFactory = AngleFactory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceList(vector: BasicArrayList, howMuch: number): BasicArrayList{
 var vector = vector

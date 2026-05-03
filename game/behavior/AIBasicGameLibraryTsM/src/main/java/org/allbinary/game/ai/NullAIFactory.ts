@@ -60,7 +60,7 @@ export class NullAIFactory
          implements ArtificialIntelligenceInterfaceFactoryInterface {
         
 
-    private NULL_AI: NullAI = new NullAI();
+    private static NULL_AI: NullAI = new NullAI();
 
     public static getInstance(): ArtificialIntelligenceInterface{
 

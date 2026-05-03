@@ -180,7 +180,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE
 
     private surfaceCreatedAndInitialized: boolean = false;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onSurfaceChanged(gl: GL10, graphics: OpenGLESGraphics){
     //var gl = gl
@@ -331,7 +331,7 @@ this.runnableList!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     set(gl: GL10){
 var gl = gl

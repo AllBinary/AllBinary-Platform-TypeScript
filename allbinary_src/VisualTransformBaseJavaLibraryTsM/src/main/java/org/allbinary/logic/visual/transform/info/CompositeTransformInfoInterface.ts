@@ -47,7 +47,7 @@
 export interface CompositeTransformInfoInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getTransformInfoInterface(): TransformInfoInterface
 

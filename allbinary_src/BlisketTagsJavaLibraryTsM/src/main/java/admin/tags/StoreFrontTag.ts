@@ -100,7 +100,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     getCurrentLocation(): string{
 
@@ -164,7 +164,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     getCurrentHomeLocation(): string{
 
@@ -228,7 +228,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

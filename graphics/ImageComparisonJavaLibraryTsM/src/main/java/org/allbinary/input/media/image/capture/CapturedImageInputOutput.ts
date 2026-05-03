@@ -89,7 +89,7 @@ export class CapturedImageInputOutput
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(frame: number){
 var frame = frame

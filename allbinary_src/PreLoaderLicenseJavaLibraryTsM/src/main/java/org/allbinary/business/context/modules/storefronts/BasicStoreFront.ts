@@ -474,7 +474,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getSubStores(): BasicArrayList{
 

@@ -111,9 +111,9 @@ this.name= name;
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(PaymentGatewayPrimaryKey::class.toString()!);
+stringBuffer!.append(PaymentGatewayPrimaryKey.constructor.toString()!);
     
-stringBuffer!.append(StoreFront::class.toString()!);
+stringBuffer!.append(StoreFront.constructor.toString()!);
     
 stringBuffer!.append(" =");
     
@@ -121,7 +121,7 @@ stringBuffer!.append(this.getStoreName());
     
 stringBuffer!.append(CommonSeps.getInstance()!.SPACE);
     
-stringBuffer!.append(PaymentGateway::class.toString()!);
+stringBuffer!.append(PaymentGateway.constructor.toString()!);
     
 stringBuffer!.append("=");
     

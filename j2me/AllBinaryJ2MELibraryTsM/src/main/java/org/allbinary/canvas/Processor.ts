@@ -60,13 +60,13 @@ export class Processor
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processt(timeDelta: number){
     //var timeDelta = timeDelta

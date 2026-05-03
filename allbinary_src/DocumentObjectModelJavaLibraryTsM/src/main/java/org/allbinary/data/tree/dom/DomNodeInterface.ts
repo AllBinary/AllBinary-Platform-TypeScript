@@ -52,7 +52,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 export interface DomNodeInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     toXmlNode(document: Document): Node
 

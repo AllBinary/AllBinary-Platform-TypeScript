@@ -119,7 +119,7 @@ public constructor (name: string){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -334,7 +334,7 @@ recordStore!.closeRecordStore();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
     //var abeClientInformation = abeClientInformation

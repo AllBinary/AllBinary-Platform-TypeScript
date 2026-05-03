@@ -151,7 +151,7 @@ this.uriResolver= uriResolver;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(xmlDocumentStr: string): string{
 var xmlDocumentStr = xmlDocumentStr

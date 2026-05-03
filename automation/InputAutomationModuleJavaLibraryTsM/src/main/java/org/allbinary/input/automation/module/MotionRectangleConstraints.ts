@@ -180,7 +180,7 @@ var rectangle = rectangle
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(frame: number, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
 var frame = frame

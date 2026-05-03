@@ -169,7 +169,7 @@ this.transformDocumentInterface= transformDocumentInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDoc(): Document{
 
@@ -200,7 +200,7 @@ this.transformDocumentInterface= transformDocumentInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

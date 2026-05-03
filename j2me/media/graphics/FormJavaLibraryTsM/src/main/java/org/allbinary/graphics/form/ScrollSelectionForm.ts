@@ -197,7 +197,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getSelectedItem(point: GPoint): CustomItem{
     //var point = point
@@ -231,7 +231,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getItemIndex(item: CustomItem): number{
     //var item = item
@@ -285,7 +285,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getSelectedIndex(point: GPoint): number{
     //var point = point
@@ -471,7 +471,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(gameKeyCode: number): number{
     //var gameKeyCode = gameKeyCode
@@ -619,7 +619,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics
@@ -700,7 +700,7 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
     //var graphics = graphics

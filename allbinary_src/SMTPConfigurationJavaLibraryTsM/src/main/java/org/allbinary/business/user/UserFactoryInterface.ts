@@ -53,7 +53,7 @@ import { HashMap } from "../../../../java/util/HashMap.js";
 export interface UserFactoryInterface extends Serializable {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(hashMap: HashMap<any, any>): UserInterface
 

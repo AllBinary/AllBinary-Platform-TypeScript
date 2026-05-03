@@ -55,14 +55,14 @@ var anyType = anyType
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitObject(anyType: Object){
 var anyType = anyType
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitObjectFor(anyType: Object, delay: number){
 var anyType = anyType

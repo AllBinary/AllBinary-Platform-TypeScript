@@ -63,7 +63,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(): UserInterface{
 
@@ -75,7 +75,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(hashMap: HashMap<any, any>): UserInterface{
 var hashMap = hashMap

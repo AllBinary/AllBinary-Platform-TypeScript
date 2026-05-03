@@ -557,7 +557,7 @@ this.initPathAnimation= new PathAnimation(this, LinePathRelativeAnimation.getIns
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -568,7 +568,7 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
     //var geographicMapInterface = geographicMapInterface
@@ -608,7 +608,7 @@ this.initRangeHack();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -631,7 +631,7 @@ this.getUnitWaypointBehavior()!.setLastPathGeographicMapCellPosition(this.getUni
 
     private readonly sensorGeographicMapCellPositionList: BasicArrayList = new BasicArrayListD();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateSensorGeographicMapCellPositionList(){
 
@@ -835,7 +835,7 @@ this.rtsLayer2LogHelper= RTSLayer2LogHelper.getInstance();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
     //var pathsList = pathsList
@@ -904,7 +904,7 @@ this.teleportTo(geographicMapCellPosition);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
     //var geographicMapCellHistory = geographicMapCellHistory
@@ -944,7 +944,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onMovementFound(trackingEvent: TrackingEvent){
     //var trackingEvent = trackingEvent
@@ -990,7 +990,7 @@ this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime();));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -1076,7 +1076,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCurrentGeographicMapCellPosition(): GeographicMapCellPosition{
 
@@ -1116,7 +1116,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
     //var layerManager = layerManager
@@ -1139,7 +1139,7 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public left(){
 this.initResourceAnimation!.previousRotation();
@@ -1151,7 +1151,7 @@ this.rotationAnimationInterfaceP!.previousRotation();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public right(){
 this.initResourceAnimation!.nextRotation();
@@ -1215,7 +1215,7 @@ super.initInputProcessors();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -1263,7 +1263,7 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.ge
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fireAll(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -1317,7 +1317,7 @@ this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVe
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public trackTo(reason: string){
     //var reason = reason
@@ -1348,7 +1348,7 @@ this.trackToDXY(dx, dy);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public trackToDXY(dx: number, dy: number){
     //var dx = dx
@@ -1362,7 +1362,7 @@ this.trackToDXYTargetAngle(dx, dy, angleOfTarget);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     turnTo(dx: number, dy: number, targetAngle: number): boolean{
     //var dx = dx
@@ -1671,7 +1671,7 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     trackToDXYTargetAngle(dx: number, dy: number, targetAngle: number){
     //var dx = dx
@@ -1731,7 +1731,7 @@ this.fireOrMove();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fireOrMove(){
 
@@ -1745,7 +1745,7 @@ this.fireOrMove();
                                     this.rtsLayer2LogHelper!.steeringUp(this);
     
 
-                        if(this.showMoreCaptionStates && !this.captionAnimationHelper!.isShowing();)
+                        if(this.showMoreCaptionStates && !this.captionAnimationHelper!.isShowing())
                         
                                     {
                                     this.captionAnimationHelper!.update(MOVE, this.basicColorFactory!.GREEN);
@@ -1945,7 +1945,7 @@ this.resourceAnimation!.paintXY(graphics, viewX, viewY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
 var event = event
@@ -1968,7 +1968,7 @@ this.getUnitWaypointBehavior()!.moveAwayFromBuilding(buildingLayer);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public damage(damage: number, damageType: number){
     //var damage = damage
@@ -1989,7 +1989,7 @@ this.damageFloaters!.add(damage);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
     //var damageType = damageType
@@ -2002,7 +2002,7 @@ this.damageFloaters!.add(damage);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
@@ -2089,7 +2089,7 @@ vibration.vibrate(duration *4, 0, 0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public clearResourceAnimation(){
 this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
@@ -2097,7 +2097,7 @@ this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getIns
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setLoad(resource: number){
 var resource = resource
@@ -2130,7 +2130,7 @@ this.resourceLoad += resource;
 
     private readonly CAPITAL_EVENT: CapitalEvent = new CapitalEvent(this);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
 var ownerLayer = ownerLayer

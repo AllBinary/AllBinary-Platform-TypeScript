@@ -90,7 +90,7 @@ private constructor (){
 
     private anchor: number = Anchor.TOP_LEFT;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -103,7 +103,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -138,7 +138,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage

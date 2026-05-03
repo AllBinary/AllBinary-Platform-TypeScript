@@ -87,7 +87,7 @@ this.pointBasicArrayList= points;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(x: number, y: number){
 var x = x
@@ -140,7 +140,7 @@ this.pointBasicArrayList= newBasicArrayList;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public rotateToAngle(angle: Angle){
 var angle = angle
@@ -151,7 +151,7 @@ this.rotate(Math.round(angle.getValue()));
 
     private readonly noDecimalTrigTable: NoDecimalTrigTable = NoDecimalTrigTable.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     rotate(angle: number){
 var angle = angle
@@ -239,7 +239,7 @@ this.pointBasicArrayList= newBasicArrayList;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public mirror(width: number){
 var width = width

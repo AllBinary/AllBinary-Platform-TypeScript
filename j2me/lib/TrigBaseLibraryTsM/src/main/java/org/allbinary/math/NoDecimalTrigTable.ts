@@ -2304,7 +2304,7 @@ var angle = angle
 
     public SCALE: number = 10000;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public antiTan(dx: number, dy: number): number{
 var dx = dx
@@ -2531,7 +2531,7 @@ stringBuffer!.appendint(dy);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public antiTanDebug(screenX: number, screenY: number, targetX: number, targetY: number): number{
 var screenX = screenX

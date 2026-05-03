@@ -59,7 +59,7 @@ export interface EmailInterface extends DomNodeInterface, DomDocumentMappingInte
 
     getMimeMessage(): MimeMessage
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     log(): string
 

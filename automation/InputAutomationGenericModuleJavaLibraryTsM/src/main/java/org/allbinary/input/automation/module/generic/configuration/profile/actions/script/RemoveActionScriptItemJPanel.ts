@@ -87,7 +87,7 @@ setLayout(new java.awt.GridLayout());
     
 this.removeJButton!.setText("Remove");
     
-this.removeJButton!.addActionListener(new java.awt.event.ActionListener()
+this.removeJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

@@ -122,7 +122,7 @@ layer.moveDXYZ(xVector, yVector, 0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer

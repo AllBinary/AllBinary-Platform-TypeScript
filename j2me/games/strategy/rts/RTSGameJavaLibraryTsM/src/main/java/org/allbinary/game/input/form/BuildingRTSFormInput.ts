@@ -211,7 +211,7 @@ this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -246,7 +246,7 @@ this.mapEdgeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -307,7 +307,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public buildFromMotionInput(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -471,7 +471,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     attemptBuild(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number): boolean{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -625,7 +625,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
@@ -723,7 +723,7 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     add(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface

@@ -108,7 +108,7 @@ this.customMapArray= new Array(mapArray!.length) [size2];
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public copyMapIntoCustomMap(){
 
@@ -146,7 +146,7 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
 
     private readonly dropCellPositionHistory: DropCellPositionHistory = DropCellPositionHistory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCustomType(column: number, row: number, currentType: number): number{
     //var column = column

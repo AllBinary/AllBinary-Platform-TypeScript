@@ -127,7 +127,7 @@ this.imageProcessorInput= imageProcessorInput;
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -223,7 +223,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     initComponents(){
-this.jPanel1= new javax.swing.JPanel()
+this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
@@ -284,7 +284,7 @@ this.jLabel1!.setText("Total Frames:");
     
 this.generateJButton!.setText("Generate");
     
-this.generateJButton!.addActionListener(new java.awt.event.ActionListener()
+this.generateJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -301,7 +301,7 @@ this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                     "360","90";
                                                 ]));
     
-this.totalAngleJComboBox!.addActionListener(new java.awt.event.ActionListener()
+this.totalAngleJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

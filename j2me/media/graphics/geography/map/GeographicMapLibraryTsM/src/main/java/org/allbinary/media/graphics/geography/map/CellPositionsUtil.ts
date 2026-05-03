@@ -72,7 +72,7 @@ export class CellPositionsUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAll(geographicMapInterface: BasicGeographicMap, topRightGeographicMapCellPosition: GeographicMapCellPosition, columns: number, rows: number, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -144,7 +144,7 @@ reusableList!.add(geographicMapCellPosition);
 
     private readonly reusableSingleThreadedSurroundingList: BasicArrayList = new BasicArrayListS(8);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAllSurrounding(geographicMapInterface: BasicGeographicMap, occupyList: BasicArrayList, reusableList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface
@@ -181,7 +181,7 @@ index2 >= 0; index2--)
 ;
     
 
-                        if(!reusableList!.contains(geographicMapCellPosition); && !occupyList!.contains(geographicMapCellPosition);)
+                        if(!reusableList!.contains(geographicMapCellPosition) && !occupyList!.contains(geographicMapCellPosition))
                         
                                     {
                                     reusableList!.add(geographicMapCellPosition);
@@ -215,7 +215,7 @@ index2 >= 0; index2--)
 
                                                         ];
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAllSurroundingAt(geographicMapInterface: BasicGeographicMap, layerGeographicMapCellPosition: GeographicMapCellPosition, reusableSurroundingList: BasicArrayList): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface

@@ -113,7 +113,7 @@ this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testin
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(myManager: AllBinaryLayerManager){
 var myManager = myManager

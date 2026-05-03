@@ -69,7 +69,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generate(image: Image, angleIncrement: number, totalAngle: number): Image[]{
 var image = image

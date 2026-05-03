@@ -85,7 +85,7 @@ export interface BasicStoreFrontInterface {
 
     getCategoryPath(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getSubStores(): BasicArrayList
 

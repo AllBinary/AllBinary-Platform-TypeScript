@@ -163,7 +163,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public format(xmlString: string): string{
     //var xmlString = xmlString

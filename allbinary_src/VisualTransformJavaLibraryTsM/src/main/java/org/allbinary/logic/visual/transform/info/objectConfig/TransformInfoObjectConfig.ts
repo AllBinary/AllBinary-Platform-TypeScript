@@ -307,7 +307,7 @@ this.document.appendChild(objectConfigNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -384,7 +384,7 @@ index < numberOfViews; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getTemplateAttributes(): NamedNodeMap{
 
@@ -400,7 +400,7 @@ index < numberOfViews; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getName(): string{
 
@@ -416,7 +416,7 @@ index < numberOfViews; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setName(name: string){
 var name = name
@@ -429,7 +429,7 @@ attrNode!.setValue(name);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getNodeVector(nodeName: string): Vector{
 var nodeName = nodeName
@@ -490,7 +490,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getTransformDomNodes(nodeName: string): Vector{
 var nodeName = nodeName
@@ -531,7 +531,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransforms(nodeName: string): Vector{
 var nodeName = nodeName
@@ -573,7 +573,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode).
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformsGroup(group: string): Vector{
 var group = group
@@ -727,7 +727,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformDomNodes(): Vector{
 
@@ -739,7 +739,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransforms(): Vector{
 
@@ -751,7 +751,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getGroupTransforms(): Vector{
 
@@ -763,7 +763,7 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getParentTransforms(): Vector{
 
@@ -792,7 +792,7 @@ this.outputTypeName= outputTypeName;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOutputTypeName(): string{
 
@@ -804,7 +804,7 @@ this.outputTypeName= outputTypeName;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInputOutputTypeName(): string{
 
@@ -820,7 +820,7 @@ this.outputTypeName= outputTypeName;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInputOutputTypeFile(): string{
 
@@ -836,7 +836,7 @@ this.outputTypeName= outputTypeName;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getImportUriPath(): string{
 

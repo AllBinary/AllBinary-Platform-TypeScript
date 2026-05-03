@@ -135,7 +135,7 @@ this.sound= hashtable.get(HorizontalScreenPatrolAI.SOUND) as Sound;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -154,7 +154,7 @@ super.processKeyAI(this.keyDirection);
 ;
     
 
-                        if(currentOwnerLayerX <  -layerInterface!.getWidth();)
+                        if(currentOwnerLayerX <  -layerInterface!.getWidth())
                         
                                     {
                                     
@@ -173,7 +173,7 @@ this.secondaryPlayerQueue!.add(this.sound);
                                     }
                                 
 
-                        if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth();)
+                        if(currentOwnerLayerX < this.firingX && currentOwnerLayerX >  -layerInterface!.getWidth())
                         
                                     {
                                     super.processKeyAI(Canvas.KEY_NUM1);

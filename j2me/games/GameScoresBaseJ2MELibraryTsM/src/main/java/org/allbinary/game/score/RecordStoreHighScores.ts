@@ -643,7 +643,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isBestScore(newHighScore: HighScore): boolean{

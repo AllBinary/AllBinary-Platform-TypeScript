@@ -67,7 +67,7 @@ export class BaseMenuBehavior
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onDisplayChangeEvent(allBinaryGameCanvas: AllBinaryGameCanvas, displayChangeEvent: DisplayChangeEvent){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -82,21 +82,21 @@ allBinaryGameCanvas!.setNonBotPaintableP(NullPaintable.getInstance());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public popupMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas

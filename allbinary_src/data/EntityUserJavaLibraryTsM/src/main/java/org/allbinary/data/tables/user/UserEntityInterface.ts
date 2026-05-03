@@ -64,27 +64,27 @@ import { BasicDataTableInterface } from "../../../../../org/allbinary/data/table
 export interface UserEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getAdministrators(): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getCustomers(): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getUsersWithRole(userRole: UserRole): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getUsers(storeFrontInterface: StoreFrontInterface): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getUser(userName: string): UserInterface
 

@@ -58,7 +58,7 @@ export class CellPositionFactory
          {
         
 
-    private SINGLETON: CellPositionFactory = new CellPositionFactory();
+    private static SINGLETON: CellPositionFactory = new CellPositionFactory();
 
     public static getInstance(): CellPositionFactory{
 

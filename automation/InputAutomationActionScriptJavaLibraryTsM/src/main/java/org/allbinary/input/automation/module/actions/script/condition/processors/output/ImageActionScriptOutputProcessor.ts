@@ -70,7 +70,7 @@ export class ImageActionScriptOutputProcessor
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static process(imageActionScriptOutputInterface: ImageActionScriptOutputInterface, frame: number){
     //var imageActionScriptOutputInterface = imageActionScriptOutputInterface

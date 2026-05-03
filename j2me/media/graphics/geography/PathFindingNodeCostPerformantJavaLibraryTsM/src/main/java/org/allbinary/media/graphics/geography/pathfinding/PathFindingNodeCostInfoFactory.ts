@@ -65,7 +65,7 @@ public constructor (max: number){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -76,7 +76,7 @@ public constructor (max: number){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number{
     //var geographicMapInterface = geographicMapInterface
@@ -102,7 +102,7 @@ public constructor (max: number){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return raceTrackGeographicMapCellType!.getTravelCost(); +raceTrackGeographicMapCellType2!.getTravelCost();
+                        return raceTrackGeographicMapCellType!.getTravelCost() +raceTrackGeographicMapCellType2!.getTravelCost();
     
 }
 

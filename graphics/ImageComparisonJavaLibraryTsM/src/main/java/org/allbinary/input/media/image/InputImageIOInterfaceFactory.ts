@@ -61,7 +61,7 @@ export class InputImageIOInterfaceFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(imageType: InputImageType): ImageIOInterface{
 var imageType = imageType

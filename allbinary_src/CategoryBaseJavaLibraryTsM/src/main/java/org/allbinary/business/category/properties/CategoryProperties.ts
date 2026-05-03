@@ -167,7 +167,7 @@ this.category= .toCharArray();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
 var categoryHierarchyInterface = categoryHierarchyInterface
@@ -308,7 +308,7 @@ pathStringBuffer!.append(abPathData!.SEPARATOR);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWebAppPath(): AbPath{
 
@@ -381,7 +381,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -393,7 +393,7 @@ categoryVector!.add(this.category);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -406,7 +406,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 

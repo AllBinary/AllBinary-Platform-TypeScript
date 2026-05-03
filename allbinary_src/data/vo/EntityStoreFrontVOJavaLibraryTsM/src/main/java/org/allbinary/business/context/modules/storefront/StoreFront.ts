@@ -311,7 +311,7 @@ var columnName = columnName
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPath(key: string, hashMap: HashMap<any, any>): AbPath{
 var key = key
@@ -325,7 +325,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPath(append: string, key: string, hashMap: HashMap<any, any>): AbPath{
 var append = append
@@ -382,7 +382,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(path as Object); as string +append;
+                        return hashMap!.get(path as Object) as string +append;
     
 
                                     }
@@ -403,7 +403,7 @@ var hashMap = hashMap
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
@@ -1373,7 +1373,7 @@ stringBuffer!.append(" and > 0 characters.<br>");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getSubStores(): BasicArrayList{
 
@@ -1547,7 +1547,7 @@ this.homeHostName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setHomeHostNamePath(value: string){
 var value = value
@@ -1563,7 +1563,7 @@ this.hostName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setHostNamePath(value: string){
 var value = value
@@ -1579,7 +1579,7 @@ this.testHomeHostName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setTestHomeHostNamePath(value: string){
 var value = value
@@ -1595,7 +1595,7 @@ this.testHostName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setTestHostNamePath(value: string){
 var value = value
@@ -1604,7 +1604,7 @@ this.testHostNamePath= new AbPath(value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setImagePath(value: string){
 var value = value
@@ -1613,7 +1613,7 @@ this.imagePath= new AbPath(value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setStaticPath(value: string){
 var value = value
@@ -1622,7 +1622,7 @@ this.staticPath= new AbPath(value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setCategoryPath(value: string){
 var value = value
@@ -1722,7 +1722,7 @@ this.lastModified= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setFtpPath(value: string){
     //var value = value
@@ -1731,7 +1731,7 @@ this.ftpPath= new AbPath(value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setTestFtpPath(value: string){
     //var value = value
@@ -1740,7 +1740,7 @@ this.testFtpPath= new AbPath(value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createDirectories(): boolean{
 
@@ -1795,7 +1795,7 @@ this.testFtpPath= new AbPath(value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public install(current: number, total: number){
     //var current = current
@@ -1973,7 +1973,7 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     installViews(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -1985,7 +1985,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbP
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     installResources(fromDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -2026,7 +2026,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPa
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     installMedia(fromDirectoryAbPath: AbPath, current: number, total: number){
     //var fromDirectoryAbPath = fromDirectoryAbPath
@@ -2059,7 +2059,7 @@ FileUtil.getInstance()!.copyDirectoryPortion(viewStoreImagesDirectoryAbPath, sto
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 
@@ -2142,7 +2142,7 @@ dataVector!.add(time);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 

@@ -120,7 +120,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFile(filePathName: string, name: string){
@@ -131,7 +131,7 @@ this.name= name;
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNext(): string{

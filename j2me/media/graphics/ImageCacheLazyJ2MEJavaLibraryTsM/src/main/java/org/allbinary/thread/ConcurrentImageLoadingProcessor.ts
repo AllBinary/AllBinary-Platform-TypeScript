@@ -70,7 +70,7 @@ export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
 
     private readonly imageCache: ImageCache
 
-    private readonly runnable: ABRunnable = new ABRunnable()
+    private readonly runnable: ABRunnable = new class extends ABRunnable
                                 {
                                 
     public run(){

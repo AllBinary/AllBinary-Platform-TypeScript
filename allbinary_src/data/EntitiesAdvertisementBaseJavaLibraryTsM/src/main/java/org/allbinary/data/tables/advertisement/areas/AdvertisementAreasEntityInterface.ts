@@ -58,11 +58,11 @@ import { BasicDataTableInterface } from "../../../../../../org/allbinary/data/ta
 export interface AdvertisementAreasEntityInterface extends BasicDataTableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     get(storeName: string): Vector
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface
 

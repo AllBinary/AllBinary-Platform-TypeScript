@@ -79,7 +79,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(validationComponentInterface: ValidationComponentInterface): string{
 var validationComponentInterface = validationComponentInterface

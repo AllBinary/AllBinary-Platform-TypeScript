@@ -492,7 +492,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isAllVisited(): boolean{
 
@@ -521,7 +521,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isAllVisited2(): boolean{
 
@@ -550,7 +550,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isPortionVisited(basicDecimal: BasicDecimal): boolean{
     //var basicDecimal = basicDecimal
@@ -559,7 +559,7 @@ this.totalVisited++;
 ;
     
 
-    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.round(basicDecimal!.getUnscaled(););
+    var numberRequired: number = (size<<basicDecimal!.getScaledFactor()) /Math.round(basicDecimal!.getUnscaled());
 ;
     
 
@@ -592,7 +592,7 @@ this.totalVisited++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public reset(){
 

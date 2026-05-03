@@ -146,7 +146,7 @@ this.movedMotionGesturesHandler= movedMotionGesturesHandler;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processPressedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current
@@ -175,7 +175,7 @@ this.motionGesturesHandler!.fireEvent(event);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processReleasedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current
@@ -200,7 +200,7 @@ this.motionGesturesHandler!.fireEvent(event);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processDraggedMotionEvent(current: GPoint, deviceId: number, buttonMask: number){
     //var current = current
@@ -401,7 +401,7 @@ this.motionGesturesHandler!.fireEvent(event);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processMovedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
     //var current = current

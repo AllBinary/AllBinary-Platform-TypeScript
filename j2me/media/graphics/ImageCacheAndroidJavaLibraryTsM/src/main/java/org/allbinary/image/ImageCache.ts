@@ -145,7 +145,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(caller: string, width: number, height: number): Image{
     //var caller = caller
@@ -207,7 +207,7 @@ listOfList[foundIndex]!.add(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWithKey(key: any = {}): Image{
     //var key = key

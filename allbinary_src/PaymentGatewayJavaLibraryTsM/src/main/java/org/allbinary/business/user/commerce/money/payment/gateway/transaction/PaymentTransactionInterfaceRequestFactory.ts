@@ -146,7 +146,7 @@ private constructor (){
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 var transformInfoInterface = transformInfoInterface
@@ -267,7 +267,7 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     generateFromTestData(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
 var transformInfoInterface = transformInfoInterface

@@ -111,7 +111,7 @@ this.canvas= canvas;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInputList(): number{
 

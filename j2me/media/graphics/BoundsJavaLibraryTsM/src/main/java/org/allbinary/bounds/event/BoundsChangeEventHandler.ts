@@ -57,7 +57,7 @@ import { BoundsChangeEvent } from "./BoundsChangeEvent.js";
 export class BoundsChangeEventHandler extends BasicEventHandler {
         
 
-    private SINGLETON: BasicEventHandler = new BoundsChangeEventHandler();
+    private static SINGLETON: BasicEventHandler = new BoundsChangeEventHandler();
 
     public static getInstance(): BasicEventHandler{
 
@@ -74,7 +74,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject

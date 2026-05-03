@@ -141,7 +141,7 @@ this.document.appendChild(this.baseNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public log(): string{
 

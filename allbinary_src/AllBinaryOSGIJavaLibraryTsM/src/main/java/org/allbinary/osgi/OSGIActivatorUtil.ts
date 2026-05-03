@@ -63,7 +63,7 @@ export class OSGIActivatorUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string){
     //var bundleContext = bundleContext
@@ -74,7 +74,7 @@ OSGIActivatorUtil.registerAsService(bundleContext, anyType, serviceName, new Has
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static registerAsService(bundleContext: BundleContext, anyType: any = {}, serviceName: string, properties: Hashtable<any, any>){
     //var bundleContext = bundleContext

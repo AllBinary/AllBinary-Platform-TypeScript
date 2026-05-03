@@ -98,7 +98,7 @@ this.setServer(0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(anyType: any = {}, cryptInterface: CryptInterface): any{
     //var anyType = anyType

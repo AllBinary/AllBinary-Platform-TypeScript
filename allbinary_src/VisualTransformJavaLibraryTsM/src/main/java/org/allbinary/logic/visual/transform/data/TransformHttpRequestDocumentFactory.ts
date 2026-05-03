@@ -56,7 +56,7 @@ export class TransformHttpRequestDocumentFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(pageContext: PageContext, weblisketSession: WeblisketSession): TransformDocumentInterface{
 var pageContext = pageContext

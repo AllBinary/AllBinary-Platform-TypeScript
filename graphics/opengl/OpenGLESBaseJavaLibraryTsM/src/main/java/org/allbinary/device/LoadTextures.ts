@@ -51,7 +51,7 @@ export class LoadTextures
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public load(gl: GL10){
     //var gl = gl

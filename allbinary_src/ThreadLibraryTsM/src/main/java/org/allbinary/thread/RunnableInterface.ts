@@ -54,7 +54,7 @@ export interface RunnableInterface extends Runnable {
 
     setRunning(isRunning: boolean)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     setThread(thread: Thread)
 

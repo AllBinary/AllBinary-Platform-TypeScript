@@ -105,43 +105,53 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCellPosition(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var direction = direction
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
 
-        when (direction) {
-            0 -> {
+        switch (direction) {
+            
+
+                    case 0: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
     
 }
-1 -> {
+
+
+                    case 1: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
     
 }
-2 -> {
+
+
+                    case 2: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
     
 }
-3 -> {
+
+
+                    case 3: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
     
 }
-else -> {
+
+
+                    case else: {
 
 
                             throw new Exception("Only Four Directions");
@@ -154,15 +164,17 @@ else -> {
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCellPositionNoThrow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var direction = direction
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
 
-        when (direction) {
-            0 -> {
+        switch (direction) {
+            
+
+                    case 0: {
                         if(oldGeographicMapCellPosition!.getColumn() -1 >= 0)
                         
                                     {
@@ -186,7 +198,9 @@ else -> {
                         }
                             
 }
-1 -> {
+
+
+                    case 1: {
                         if(oldGeographicMapCellPosition!.getColumn() +1 < this.getAllBinaryTiledLayer()!.getColumns())
                         
                                     {
@@ -210,7 +224,9 @@ else -> {
                         }
                             
 }
-2 -> {
+
+
+                    case 2: {
                         if(oldGeographicMapCellPosition!.getRow() -1 >= 0)
                         
                                     {
@@ -234,7 +250,9 @@ else -> {
                         }
                             
 }
-3 -> {
+
+
+                    case 3: {
                         if(oldGeographicMapCellPosition!.getRow() +1 < this.getAllBinaryTiledLayer()!.getRows())
                         
                                     {
@@ -258,7 +276,9 @@ else -> {
                         }
                             
 }
-else -> {
+
+
+                    case else: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
@@ -272,7 +292,7 @@ else -> {
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isOfFourDirections(oldGeographicMapCellPosition: GeographicMapCellPosition, newGeographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
@@ -309,7 +329,7 @@ index < 4; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
     //var x = x
@@ -390,7 +410,7 @@ index < 4; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isOnMap(geographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -432,7 +452,7 @@ index < 4; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCellPositionAtNoThrow(x: number, y: number, x2: number, y2: number, geographicMapCellPositionList: BasicArrayList): BasicArrayList{
     //var x = x
@@ -500,7 +520,7 @@ rowIndex < i_rowMax; rowIndex++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean{
     //var layer = layer
@@ -576,7 +596,7 @@ cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
 var x = x

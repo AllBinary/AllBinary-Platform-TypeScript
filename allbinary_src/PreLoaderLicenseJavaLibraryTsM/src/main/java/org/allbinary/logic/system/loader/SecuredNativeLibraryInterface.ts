@@ -46,11 +46,11 @@
 export interface SecuredNativeLibraryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     load()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     unload()
 

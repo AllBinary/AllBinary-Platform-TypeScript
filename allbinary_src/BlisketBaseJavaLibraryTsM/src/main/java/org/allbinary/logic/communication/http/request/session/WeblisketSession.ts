@@ -288,7 +288,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRole(): UserRole{
 
@@ -323,7 +323,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getOrder(): OrderInterface{
 

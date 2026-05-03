@@ -58,9 +58,9 @@ import { UserRoleFactory } from "./UserRoleFactory.js";
 export class UserRoleB extends UserRole {
         
 
-    public roleVector: Vector = new Vector();
+    public static roleVector: Vector = new Vector();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): UserRole{

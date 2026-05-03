@@ -143,7 +143,7 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 var originalImage = originalImage

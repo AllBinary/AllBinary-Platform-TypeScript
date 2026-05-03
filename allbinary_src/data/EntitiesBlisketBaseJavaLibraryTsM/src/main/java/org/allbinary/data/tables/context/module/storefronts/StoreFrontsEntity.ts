@@ -154,7 +154,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStoreFrontInterface(name: string): StoreFront{
 var name = name

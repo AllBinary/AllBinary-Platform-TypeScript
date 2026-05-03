@@ -190,7 +190,7 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -226,7 +226,7 @@ index++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

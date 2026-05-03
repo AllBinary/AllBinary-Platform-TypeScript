@@ -55,11 +55,11 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 export interface ResourceRelativeRelationshipFactoryInterface extends GameFeatureControlledInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getResourceRelativeRelationshipList(resource: string): BasicArrayList
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addResourceRelativeRelationship(resource: string, relativeRelationship: RelativeRelationship)
 

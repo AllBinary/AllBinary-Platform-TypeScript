@@ -157,7 +157,7 @@ this.domNodeInterfaceVector!.add(domNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -211,7 +211,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDoc(): Document{
 
@@ -255,7 +255,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

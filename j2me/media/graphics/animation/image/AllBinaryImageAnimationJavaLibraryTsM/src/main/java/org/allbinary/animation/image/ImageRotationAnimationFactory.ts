@@ -93,7 +93,7 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

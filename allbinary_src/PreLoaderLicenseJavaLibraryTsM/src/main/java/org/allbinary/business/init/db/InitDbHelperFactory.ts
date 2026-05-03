@@ -58,7 +58,7 @@ export class InitDbHelperFactory
 
     private static readonly CLASSNAME: string = "org.allbinary.business.installer.InitDbCrypted";
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface): any{
     //var abeClientInformation = abeClientInformation
@@ -90,7 +90,7 @@ params[0]= databaseConnectionInfoInterface as Object;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface): any{
     //var abeClientInformation = abeClientInformation

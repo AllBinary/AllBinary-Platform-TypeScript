@@ -29,7 +29,7 @@
 import { Hashtable } from "../../../../java/util/Hashtable.js";
 
     
-import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
+import { Choice } from "../../../../javax/microedition/lcdui/ChoiceI.js";
 
     
 import { Command } from "../../../../javax/microedition/lcdui/Command.js";
@@ -137,9 +137,9 @@ this.addConfiguration();
     var gameFeatureFormUtil: GameFeatureFormUtil = GameFeatureFormUtil.getInstance()!;
 ;
     
-gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getExclusiveInstance()!.get(), Choice.EXCLUSIVE);
+gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getExclusiveInstance()!.get(), ChoiceI.EXCLUSIVE);
     
-gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getMultipleInstance()!.get(), Choice.MULTIPLE);
+gameFeatureFormUtil!.addChoiceGroup(this, GameFeatureChoiceGroups.getMultipleInstance()!.get(), ChoiceI.MULTIPLE);
     
 this.initCommands(commandListener);
     
@@ -323,7 +323,7 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation

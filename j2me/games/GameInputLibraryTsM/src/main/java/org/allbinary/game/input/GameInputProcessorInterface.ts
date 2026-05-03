@@ -49,7 +49,7 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 export interface GameInputProcessorInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onInput(list: BasicArrayList)
 

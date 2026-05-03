@@ -56,7 +56,7 @@ export class BasicTable
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public drop(): string{
 
@@ -67,7 +67,7 @@ export class BasicTable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public create(): string{
 
@@ -78,7 +78,7 @@ export class BasicTable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public restore(): string{
 
@@ -89,7 +89,7 @@ export class BasicTable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public backup(): string{
 

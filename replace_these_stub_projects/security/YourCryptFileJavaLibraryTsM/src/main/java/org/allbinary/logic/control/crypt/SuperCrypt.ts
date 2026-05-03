@@ -32,7 +32,7 @@ export class SuperCrypt
          {
         
 
-    public KEYMAX: number = 0;
+    public static KEYMAX: number = 0;
 public constructor (key: number){
 
             super();

@@ -85,7 +85,7 @@ export class ChangedPixelsUtil
 
     private static readonly CLEAR_INT_ARRAY: number[] = new Array(1800 *1600);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static generateBufferedImageChacheables(imageComparisonInfo: ImageComparisonResult): BufferedImageCacheable[]{
 var imageComparisonInfo = imageComparisonInfo

@@ -73,7 +73,7 @@ export class CloudStreamUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFile(file: AbFile): InputStream{
 var file = file
@@ -110,7 +110,7 @@ var file = file
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileAnyWhere(file: AbFile): InputStream{
 var file = file
@@ -171,7 +171,7 @@ available= inputStream!.available();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileLocal(file: AbFile): InputStream{
 var file = file

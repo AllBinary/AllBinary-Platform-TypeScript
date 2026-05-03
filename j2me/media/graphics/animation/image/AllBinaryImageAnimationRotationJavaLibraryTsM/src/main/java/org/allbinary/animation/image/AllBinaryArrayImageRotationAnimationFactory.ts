@@ -76,7 +76,7 @@ import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotatio
 export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, dx: number, dy: number): AllBinaryArrayImageRotationAnimationFactory{
     //var image = image
@@ -97,7 +97,7 @@ arrayImageRotationAnimationFactory!.initDXY(dx, dy);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactoryA(image: Image, dx: number, dy: number, angleIncrement: number): AllBinaryArrayImageRotationAnimationFactory{
     //var image = image
@@ -140,7 +140,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.getImage(), this.getAngleIncrement(), Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE)));
@@ -162,7 +162,7 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

@@ -117,7 +117,7 @@ var itemName = itemName
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
 var graphicItemNodeList = graphicItemNodeList

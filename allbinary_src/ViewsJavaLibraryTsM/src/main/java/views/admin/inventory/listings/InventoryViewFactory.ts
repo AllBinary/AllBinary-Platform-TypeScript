@@ -64,7 +64,7 @@ export class InventoryViewFactory
          {
         
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(searchRequest: SearchRequest): InventoryViewSearchInterface{
 var searchRequest = searchRequest

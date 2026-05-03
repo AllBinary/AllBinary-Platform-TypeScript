@@ -84,7 +84,7 @@ export class CamelCaseUtil
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAsCamelCase(string: string, stringBuilder: StringMaker): string{
     //var string = string

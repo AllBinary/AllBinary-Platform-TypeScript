@@ -165,7 +165,7 @@ this.addThemes(node);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addThemes(node: Node){
 var node = node
@@ -220,7 +220,7 @@ this.themeVector!.add(themeValidation);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isValid(): Boolean{
 
@@ -245,7 +245,7 @@ this.themeVector!.add(themeValidation);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -263,7 +263,7 @@ categoryHashMap!.put(ThemesData.getInstance()!.NAME, this.themeVector);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 

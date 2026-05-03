@@ -72,7 +72,7 @@ public constructor (){
         }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
     //var hashMap = hashMap
@@ -90,7 +90,7 @@ public constructor (){
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface): any{
     //var abeClientInformation = abeClientInformation

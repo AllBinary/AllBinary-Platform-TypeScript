@@ -142,7 +142,7 @@ idsWithTypeList= tileTypeToTileIdsMap!.get(key) as BasicArrayList;
 basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWithTypeList);
     
 
-                        if(key.equals(PLATFORM))
+                        if(key === PLATFORM)
                         
                                     {
                                     BLOCK_CELL_TYPE= basicPlatormGeographicMapCellType;
@@ -151,7 +151,7 @@ basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWith
                                     }
                                 
 
-                        if(key.equals(JUMP_TRHU))
+                        if(key === JUMP_TRHU)
                         
                                     {
                                     JUMP_THRU_CELL_TYPE= basicPlatormGeographicMapCellType;
@@ -160,7 +160,7 @@ basicPlatormGeographicMapCellType= new BasicPlatormGeographicMapCellType(idsWith
                                     }
                                 
 
-                        if(key.equals(LADDER))
+                        if(key === LADDER)
                         
                                     {
                                     LADDER_CELL_TYPE= basicPlatormGeographicMapCellType;

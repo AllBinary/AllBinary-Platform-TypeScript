@@ -132,7 +132,7 @@ this.specialCharacters!.add("`");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWhithoutDashesAndSkipNumberOnlyTokens(stringVector: Vector): HashSet{
 var stringVector = stringVector
@@ -210,7 +210,7 @@ spaceIndex < subKeywordVector!.size(); spaceIndex++)
 ;
     
 
-                        if(!isSpecialCharacter(subCleanString); && !numberOnly(subCleanString);)
+                        if(!isSpecialCharacter(subCleanString) && !numberOnly(subCleanString))
                         
                                     {
                                     hashSet!.add(subCleanString);

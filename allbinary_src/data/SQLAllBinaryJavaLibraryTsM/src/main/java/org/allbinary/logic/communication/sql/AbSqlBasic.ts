@@ -148,7 +148,7 @@ this.conn=
 }
 
 
-                //@Throws(SQLException::class)
+                //@Throws(SQLException.constructor)
             
     public executeSQLStatement(statement: string): ResultSet{
     //var statement = statement

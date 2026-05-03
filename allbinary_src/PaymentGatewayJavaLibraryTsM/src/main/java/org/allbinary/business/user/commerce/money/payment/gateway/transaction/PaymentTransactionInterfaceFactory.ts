@@ -84,7 +84,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(orderReview: OrderHistory): PaymentTransactionInterface{
 var orderReview = orderReview

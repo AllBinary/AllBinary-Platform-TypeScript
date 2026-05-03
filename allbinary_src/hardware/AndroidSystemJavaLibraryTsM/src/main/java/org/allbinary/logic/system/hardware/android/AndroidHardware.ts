@@ -133,7 +133,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(filePath: string){
     //var filePath = filePath
@@ -176,7 +176,7 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     get(filePath: string): LineNumberReader{
     //var filePath = filePath

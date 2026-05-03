@@ -53,7 +53,7 @@ export class BaseSecretComposite
 
     public static readonly NULL_SECRET_COMPOSITE: BaseSecretComposite = new BaseSecretComposite();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public encrypt(array: number[]): number[]{
     //var array = array
@@ -66,7 +66,7 @@ export class BaseSecretComposite
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public decrypt(array: number[]): number[]{
 var array = array

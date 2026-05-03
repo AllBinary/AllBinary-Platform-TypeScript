@@ -79,7 +79,7 @@ export class PrimitiveLongSingleton
                                                         [this.NUMBER_CHAR_ARRAY[0]]
                                                     ;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getNumberFromChar(numberAsChar: string): number{
 var numberAsChar = numberAsChar

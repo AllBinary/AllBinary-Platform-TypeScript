@@ -56,7 +56,7 @@ export class OpenGLESStrings
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL10){
     //var gl = gl
@@ -80,7 +80,7 @@ export class OpenGLESStrings
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(gl: GL10, width: number, height: number){
     //var gl = gl

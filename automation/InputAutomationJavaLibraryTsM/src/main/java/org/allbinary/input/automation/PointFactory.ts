@@ -50,7 +50,7 @@ export class PointFactory
          {
         
 
-    private pointArray: Point[][] = new Array(3000) [3000]
+    private static pointArray: Point[][] = new Array(3000) [3000]
                                                             ;
 
     public static getInstance(x: number, y: number): Point{

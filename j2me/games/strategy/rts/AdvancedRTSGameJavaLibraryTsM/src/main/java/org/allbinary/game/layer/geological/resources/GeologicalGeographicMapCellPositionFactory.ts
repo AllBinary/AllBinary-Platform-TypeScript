@@ -75,7 +75,7 @@ this.resourcePerMapCellType= resourcePerMapCellType;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(geographicMapInterface: BasicGeographicMap, i_column: number, i_row: number, columns: number, rows: number, width: number, height: number): GeographicMapCellPosition{
     //var geographicMapInterface = geographicMapInterface

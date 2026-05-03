@@ -256,7 +256,7 @@ this.fileName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getDoc(): Document{
 
@@ -286,7 +286,7 @@ stringBuffer!.append(this.getFileName());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTypeVector(): BasicArrayList{
 

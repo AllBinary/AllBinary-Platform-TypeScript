@@ -162,7 +162,7 @@ this.newProfileJDialog!.setResizable(false);
     
 this.okNewProfileJButton!.setText("Ok");
     
-this.okNewProfileJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okNewProfileJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -200,7 +200,7 @@ this.genericProfilesJPanel!.setMinimumSize(new java.awt.Dimension(400, 300));
     
 this.genericProfilesJPanel!.setPreferredSize(new java.awt.Dimension(0, 0));
     
-this.genericProfilesJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
+this.genericProfilesJList!.addListSelectionListener(new class extends javax.swing.event.ListSelectionListener
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -218,7 +218,7 @@ this.newProfileJButton!.setText("New");
     
 this.newProfileJButton!.setToolTipText("Creates a new profile");
     
-this.newProfileJButton!.addActionListener(new java.awt.event.ActionListener()
+this.newProfileJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -234,7 +234,7 @@ this.deleteProfileJButton!.setText("Delete");
     
 this.deleteProfileJButton!.setToolTipText("Deletes the selected profile");
     
-this.deleteProfileJButton!.addActionListener(new java.awt.event.ActionListener()
+this.deleteProfileJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -256,7 +256,7 @@ this.screenCaptureJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyB
     
 this.screenCaptureJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.screenCaptureJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.screenCaptureJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -280,7 +280,7 @@ this.savedCaptureJRadioButton!.setBorder(javax.swing.BorderFactory.createEmptyBo
     
 this.savedCaptureJRadioButton!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.savedCaptureJRadioButton!.addActionListener(new java.awt.event.ActionListener()
+this.savedCaptureJRadioButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -300,7 +300,7 @@ this.captureMotionAnalysisJCheckBox!.setBorder(javax.swing.BorderFactory.createE
     
 this.captureMotionAnalysisJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.captureMotionAnalysisJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.captureMotionAnalysisJCheckBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -320,7 +320,7 @@ this.captureComparisonJCheckBox!.setBorder(javax.swing.BorderFactory.createEmpty
     
 this.captureComparisonJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.captureComparisonJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.captureComparisonJCheckBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -503,7 +503,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckB
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateProfileUI(profileNameString: string){
 var profileNameString = profileNameString
@@ -551,7 +551,7 @@ this.logUtil!.putF("Setting Configuration Profile JPanel", this, "updateProfileU
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     selectFirstElement(){
 this.genericProfilesJList!.setModel(this.getGenericProfiles()!.getDefaultListModelHelper()!.getListModel());
@@ -570,7 +570,7 @@ this.updateProfileUI(this.genericProfilesJList!.getModel()!.getElementAt(0) as s
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     updateProfileOptions(){
 this.logUtil!.putF(this.commonStrings!.START, this, "updateProfileOptions");
@@ -656,7 +656,7 @@ this.captureMotionAnalysisJCheckBox!.setSelected(true);
 }
 
 
-                        if(!this.screenCaptureJRadioButton!.isSelected(); && !this.savedCaptureJRadioButton!.isSelected();)
+                        if(!this.screenCaptureJRadioButton!.isSelected() && !this.savedCaptureJRadioButton!.isSelected())
                         
                                     {
                                     this.screenCaptureJRadioButton!.setSelected(true);

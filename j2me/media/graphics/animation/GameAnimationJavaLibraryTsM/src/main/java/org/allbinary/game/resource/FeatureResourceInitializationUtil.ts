@@ -73,7 +73,7 @@ export class FeatureResourceInitializationUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(level: number){
 var level = level

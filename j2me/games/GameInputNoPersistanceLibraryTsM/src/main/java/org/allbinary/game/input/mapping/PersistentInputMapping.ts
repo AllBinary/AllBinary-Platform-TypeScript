@@ -146,7 +146,7 @@ this.inputPersistance= new InputPersistance(name);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDefault(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -159,7 +159,7 @@ this.save(abeClientInformation);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -172,7 +172,7 @@ this.save(abeClientInformation);
 
     private inputMappingEvent: InputMappingEvent = new InputMappingEvent(this);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -194,7 +194,7 @@ this.inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -317,7 +317,7 @@ this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isDelete(input: Input): boolean{
 var input = input
@@ -329,7 +329,7 @@ var input = input
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isSystemInput(input: Input): boolean{
 var input = input

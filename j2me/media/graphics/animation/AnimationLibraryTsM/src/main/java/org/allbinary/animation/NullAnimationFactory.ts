@@ -57,9 +57,9 @@ export class NullAnimationFactory
          implements AnimationInterfaceFactoryInterface, ProceduralAnimationInterfaceFactoryInterface {
         
 
-    public NULL_NOT_FOR_USE_ANIMATION_FACTORY: NullAnimationFactory = new NullAnimationFactory();
+    public static NULL_NOT_FOR_USE_ANIMATION_FACTORY: NullAnimationFactory = new NullAnimationFactory();
 
-    private NULL_ANIMATION_FACTORY: NullAnimationFactory = new NullAnimationFactory();
+    private static NULL_ANIMATION_FACTORY: NullAnimationFactory = new NullAnimationFactory();
 
     public static getFactoryInstance(): NullAnimationFactory{
 
@@ -71,7 +71,7 @@ export class NullAnimationFactory
 }
 
 
-    private readonly NULL_ANIMATION: Animation = new Animation()
+    private readonly NULL_ANIMATION: Animation = new class extends Animation
                                 {
                                 
     public paintXY(graphics: Graphics, x: number, y: number){
@@ -101,7 +101,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
 var animationInterface = animationInterface

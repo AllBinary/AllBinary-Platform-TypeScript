@@ -163,7 +163,7 @@ this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getAt(50
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -184,7 +184,7 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
@@ -259,7 +259,7 @@ this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rt
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     attemptBuild(associatedRtsLayer: RTSLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer

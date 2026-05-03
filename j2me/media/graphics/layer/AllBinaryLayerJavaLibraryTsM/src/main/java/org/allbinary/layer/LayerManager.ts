@@ -88,7 +88,7 @@ this.layerManagerLogging= layerManagerLogging;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public insert(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -132,7 +132,7 @@ this.append(layerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public append(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -143,7 +143,7 @@ this.list.add(layerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
@@ -155,7 +155,7 @@ this.list.addAt(index, layerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(layerInterface: AllBinaryLayer){
     //var layerInterface = layerInterface
@@ -200,7 +200,7 @@ this.layerManagerLogging!.removeResult(this, layerInterface, result);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public cleanup(){
 

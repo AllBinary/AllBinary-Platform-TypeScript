@@ -48,7 +48,7 @@ export class LicenseInterfaceSingleton
          {
         
 
-    private licenseInterface: AbeLicenseInterface = AbeNoLicense.getInstance()!;
+    private static licenseInterface: AbeLicenseInterface = AbeNoLicense.getInstance()!;
 
     public static getInstance(): AbeLicenseInterface{
 

@@ -223,7 +223,7 @@ BasicMotionGesturesHandler.getInstance()!.addListener(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
     //var allBinaryGameLayerManager = allBinaryGameLayerManager
@@ -240,7 +240,7 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processDraggingMotionInput(layerManager: AllBinaryLayerManager): boolean{
     //var layerManager = layerManager
@@ -500,7 +500,7 @@ this.updatePaintable();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processSelectionBoxMotionInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -561,7 +561,7 @@ this.endPoint= PointFactory.getInstance()!.ZERO_ZERO;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processMotionInput(layerManager: AllBinaryLayerManager){
     //var layerManager = layerManager
@@ -657,7 +657,7 @@ this.setSelectedRtsFormInput(rtfFormInput);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setSelectedRTSLayer(rtSLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
     //var rtSLayer = rtSLayer

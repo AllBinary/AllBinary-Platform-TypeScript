@@ -235,7 +235,7 @@ this.objectArray[--this.currentIndex]=
 index < this.currentIndex; index++)
         {
 
-                        if(anyType == this.objectArray[index] || anyType!.equals(this.objectArray[index]!))
+                        if(anyType == this.objectArray[index] || anyType! === this.objectArray[index]!)
                         
                                     {
                                     
@@ -482,7 +482,7 @@ i < this.currentIndex; i++)
 i < this.currentIndex; i++)
         {
 
-                        if(anyType!.equals(this.objectArray[i]!))
+                        if(anyType! === this.objectArray[i]!)
                         
                                     {
                                     
@@ -554,7 +554,7 @@ i >= 0; i--)
 i >= 0; i--)
         {
 
-                        if(anyType!.equals(this.objectArray[i]!))
+                        if(anyType! === this.objectArray[i]!)
                         
                                     {
                                     

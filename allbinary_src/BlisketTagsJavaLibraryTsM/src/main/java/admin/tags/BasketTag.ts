@@ -106,7 +106,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     isBasketEmpty(): boolean{
 
@@ -166,7 +166,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     addItemToBasket(): boolean{
 
@@ -230,7 +230,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     removeItemFromBasket(): boolean{
 
@@ -294,7 +294,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     adjustBasket(): boolean{
 
@@ -358,7 +358,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

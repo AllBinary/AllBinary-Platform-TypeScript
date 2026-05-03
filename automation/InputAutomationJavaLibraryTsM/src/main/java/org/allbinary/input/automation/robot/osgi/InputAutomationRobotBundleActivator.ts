@@ -97,7 +97,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(){
 
@@ -108,21 +108,21 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public registerAsService(bundleContext: BundleContext){
 var bundleContext = bundleContext
-OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface::class.toString()!);
+OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface.constructor.toString()!);
     
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInputAutomationRobotChangeListener(context: BundleContext): InputAutomationRobotChangeListener{
 var context = context
 
-    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener::class.toString()!)!;
+    var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener.constructor.toString()!)!;
 ;
     
 
@@ -152,7 +152,7 @@ var context = context
                                     }
                                 
                         else {
-                            this.logUtil!.putF("No ServiceReference: " +InputAutomationRobotChangeListener::class.toString()!, this, "getInputAutomationRobotChangeListener");
+                            this.logUtil!.putF("No ServiceReference: " +InputAutomationRobotChangeListener.constructor.toString()!, this, "getInputAutomationRobotChangeListener");
     
 
 
@@ -258,7 +258,7 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeRobots");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public start(context: BundleContext){
 var context = context
@@ -271,7 +271,7 @@ this.registerAsService(context);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
 var context = context

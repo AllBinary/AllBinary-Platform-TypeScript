@@ -93,7 +93,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(imageComparisonInfo: ImageComparisonResult, point: GPoint){
     //var imageComparisonInfo = imageComparisonInfo
@@ -176,7 +176,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
@@ -193,7 +193,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number, name: string): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1

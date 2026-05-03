@@ -131,7 +131,7 @@ this.init();
 
     private readonly scrollMapEvent: ScrollMapEvent = new ScrollMapEvent(this);
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     move(dx: number, dy: number){
 var dx = dx
@@ -157,7 +157,7 @@ this.maxRight= this.getSpecialWidth();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public scrollMiddleX(){
 
@@ -196,7 +196,7 @@ this.move(diffX, 0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public scrollY(anchor: number){
 var anchor = anchor
@@ -259,7 +259,7 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     up(){
 
@@ -278,11 +278,11 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     down(){
 
-    var y: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP(); +10;
+    var y: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP() +10;
 ;
     
 
@@ -297,7 +297,7 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     right(){
 
@@ -316,11 +316,11 @@ this.move(0, diffY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     left(){
 
-    var x: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP(); -10;
+    var x: number =  -this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP() -10;
 ;
     
 
@@ -349,7 +349,7 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInputKey(key: number){
 var key = key
@@ -358,7 +358,7 @@ this.inputProcessorArray[key]!.processEvent(AllBinaryGameLayerManager.NULL_ALLBI
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager

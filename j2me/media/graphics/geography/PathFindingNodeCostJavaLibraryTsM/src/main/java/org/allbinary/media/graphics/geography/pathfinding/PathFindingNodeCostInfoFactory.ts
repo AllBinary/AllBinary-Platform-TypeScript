@@ -65,7 +65,7 @@ this.pathFindingNodeCostInfoAdjacencyList= new Array(max) [max]
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -78,7 +78,7 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo{
     //var goingToGeographicMapCellPosition = goingToGeographicMapCellPosition

@@ -115,7 +115,7 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 export class DownloadableInventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         
 
-    public TYPE_ID: number = 11;
+    public static TYPE_ID: number = 11;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -164,7 +164,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFormData(){
 this.setRequestHashMap(new MultipartRequestParams(this.request).
@@ -196,7 +196,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 
@@ -232,7 +232,7 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processFile(fileItem: FileItem){
     //var fileItem = fileItem
@@ -277,7 +277,7 @@ FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     unzip(fileItem: FileItem){
     //var fileItem = fileItem

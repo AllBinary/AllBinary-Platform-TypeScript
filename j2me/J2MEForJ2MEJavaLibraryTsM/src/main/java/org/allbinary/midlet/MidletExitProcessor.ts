@@ -62,7 +62,7 @@ this.midlet= midlet;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 }

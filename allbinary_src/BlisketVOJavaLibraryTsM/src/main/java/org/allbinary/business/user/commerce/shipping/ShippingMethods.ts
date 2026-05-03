@@ -99,7 +99,7 @@ this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFront
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getShippingInterface(name: string): ShippingInterface{
 var name = name
@@ -152,7 +152,7 @@ shipping= this.shippingVector!.get(index) as ShippingInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDefault(): ShippingInterface{
 

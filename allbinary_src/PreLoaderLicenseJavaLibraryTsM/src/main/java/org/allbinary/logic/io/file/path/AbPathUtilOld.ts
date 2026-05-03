@@ -91,7 +91,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -104,7 +104,7 @@ var abFilePath = abFilePath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -117,7 +117,7 @@ var abPath = abPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getExtension(filePath: string): string{
 var filePath = filePath
@@ -159,7 +159,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWithoutExtension(abFilePath: AbFilePath): string{
 var abFilePath = abFilePath
@@ -172,7 +172,7 @@ var abFilePath = abFilePath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWithoutExtension(abPath: AbPath): string{
 var abPath = abPath
@@ -185,7 +185,7 @@ var abPath = abPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWithoutExtension(filePath: string): string{
 var filePath = filePath
@@ -458,7 +458,7 @@ var categoryPath = categoryPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNameFromPath(categoryPath: string): AbPath{

@@ -193,7 +193,7 @@ this.workFlowDoc= DomDocumentHelper.create(hashMap!.get(WorkFlowData.getInstance
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 
@@ -228,7 +228,7 @@ values.add(time);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 

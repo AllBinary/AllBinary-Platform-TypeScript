@@ -101,7 +101,7 @@ this.downloadableItem= downloadableItem;
 
                         if(this.downloadableItem!.getId() != 
                                     null
-                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId());)
+                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId()))
                         
                                     {
                                     
@@ -351,7 +351,7 @@ stringBuffer!.append(" and > 0 digits.<br/>");
 
                         if(this.downloadableItem!.getId() != 
                                     null
-                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId());)
+                                 && !StringValidationUtil.getInstance()!.isNumber(this.downloadableItem!.getId()))
                         
                                     {
                                     stringBuffer!.append("Id is invalid. Must be > 0.<br/>");

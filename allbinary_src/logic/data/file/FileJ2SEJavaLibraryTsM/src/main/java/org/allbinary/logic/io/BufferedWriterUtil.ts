@@ -72,7 +72,7 @@ export class BufferedWriterUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public overwrite(path: string, data: string){
     //var path = path
@@ -95,7 +95,7 @@ this.write(abFile, data);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public overwrite(abFile: AbFile, data: string){
     //var abFile = abFile
@@ -114,7 +114,7 @@ this.write(abFile, data);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public write(abFile: AbFile, data: string){
     //var abFile = abFile

@@ -94,7 +94,7 @@ public constructor (categoryInterface: CategoryInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 
@@ -111,7 +111,7 @@ var viewDocumentInterface = viewDocumentInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -130,7 +130,7 @@ document.appendChild(new CategoryView(this.getCategoryInterface()).
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

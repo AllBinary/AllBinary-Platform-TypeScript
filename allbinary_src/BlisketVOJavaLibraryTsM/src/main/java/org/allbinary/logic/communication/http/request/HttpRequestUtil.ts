@@ -92,7 +92,7 @@ var requestPath = requestPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public generateFileName(requestPath: string): string{
 var requestPath = requestPath

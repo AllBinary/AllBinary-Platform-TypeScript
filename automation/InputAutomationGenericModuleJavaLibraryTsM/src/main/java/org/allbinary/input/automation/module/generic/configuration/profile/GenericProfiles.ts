@@ -193,7 +193,7 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initProfiles(node: Node){
 var node = node
@@ -243,7 +243,7 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(name: string): GenericProfile{
 var name = name
@@ -275,7 +275,7 @@ this.logUtil!.putF("No Generic Profile Named: " +name +" availability was: " +th
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public add(name: string){
 var name = name
@@ -290,7 +290,7 @@ this.save();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(name: string){
 var name = name
@@ -305,7 +305,7 @@ this.save();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -351,7 +351,7 @@ node.appendChild(genericProfile!.toXmlNode(document));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -373,7 +373,7 @@ document.appendChild(node);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(){
 

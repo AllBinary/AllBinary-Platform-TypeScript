@@ -50,7 +50,7 @@ import { EventListener } from "../../../../../../java/util/EventListener.js";
 export interface UserEmailEventListenerInterface extends EventListener {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     onEmailSendRequest(userEmailInfoEvent: EmailEvent)
 

@@ -50,7 +50,7 @@ export class InputAutomationModuleConfigurationsSingletonFactory
          {
         
 
-    private inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(InputAutomationConfigurationFactory.getInstance()!.getInputAutomationModuleConfigurationList());
+    private static inputAutomationModuleConfigurations: InputAutomationModuleConfigurations = new InputAutomationModuleConfigurations(InputAutomationConfigurationFactory.getInstance()!.getInputAutomationModuleConfigurationList());
 
     public static getInstance(): InputAutomationModuleConfigurations{
 

@@ -205,7 +205,7 @@ this.destroyed= destroyed;
 }
 
 
-                //@Throws(MIDletStateChangeException::class)
+                //@Throws(MIDletStateChangeException.constructor)
             
     startApp(){
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
@@ -250,7 +250,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setStartStateHashtable(hashtable: Hashtable<any, any>){
 var hashtable = hashtable
@@ -262,7 +262,7 @@ this.hashtable= hashtable;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStartStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(new StringMaker().
@@ -277,7 +277,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");

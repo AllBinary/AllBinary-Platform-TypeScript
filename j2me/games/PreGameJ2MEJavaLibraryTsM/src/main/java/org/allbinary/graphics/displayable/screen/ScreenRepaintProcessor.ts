@@ -63,7 +63,7 @@ this.displayable= displayable;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 ScreenRepaintUtil.repaint(this.displayable);

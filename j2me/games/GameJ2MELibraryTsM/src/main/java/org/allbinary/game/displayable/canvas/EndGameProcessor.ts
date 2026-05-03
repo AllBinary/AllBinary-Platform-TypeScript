@@ -71,7 +71,7 @@ this.gameCanvas= gameCanvas;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(){
 

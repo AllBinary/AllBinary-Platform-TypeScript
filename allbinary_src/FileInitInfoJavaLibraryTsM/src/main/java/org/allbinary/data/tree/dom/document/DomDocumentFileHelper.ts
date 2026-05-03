@@ -79,7 +79,7 @@ export class DomDocumentFileHelper
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createDocument(xmlFile: AbFile): Document{
 var xmlFile = xmlFile
@@ -105,7 +105,7 @@ var xmlFile = xmlFile
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static save(file: AbFile, document: Document){
 var file = file

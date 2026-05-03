@@ -47,7 +47,7 @@
 export interface ArtificialIntelligenceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(anyType: any): ArtificialIntelligence
 

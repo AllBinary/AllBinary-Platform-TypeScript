@@ -89,7 +89,7 @@ var portion = portion
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
     //var abeClientInformation = abeClientInformation
@@ -102,7 +102,7 @@ super.init(abeClientInformation, commandListener, level);
 ;
     
 
-                        if(!this.isGameInitialized(); && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
+                        if(!this.isGameInitialized() && level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel())
                         
                                     {
                                     this.setGameInitialized(true);
@@ -135,7 +135,7 @@ super.resourceInitialization(level);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initGame(){
 

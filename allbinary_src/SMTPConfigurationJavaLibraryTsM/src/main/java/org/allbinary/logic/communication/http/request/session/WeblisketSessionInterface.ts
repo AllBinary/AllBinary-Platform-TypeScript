@@ -66,7 +66,7 @@ export interface WeblisketSessionInterface {
 
     getLastAccessedTime(): number
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getOrder(): OrderInterface
 
@@ -74,7 +74,7 @@ export interface WeblisketSessionInterface {
 
     getPaymentMethod(): string
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getRole(): UserRole
 

@@ -145,7 +145,7 @@ this.scaleProperties= scaleProperties;
     
 this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.getInstance(0) as IndexedAnimation;
     
-this.animation= new RotationAnimation(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior)
+this.animation= new class extends RotationAnimation
                                 {
                                 
     var private index: number= 0
@@ -262,7 +262,7 @@ this.animation.setScale(scaleX, scaleY);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
     //var gl = gl
@@ -425,7 +425,7 @@ this.animation.changeBasicColor(basicColor);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public nextFrame(){
 this.animation.nextFrame();
@@ -456,7 +456,7 @@ this.animation.setFrame(index);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 

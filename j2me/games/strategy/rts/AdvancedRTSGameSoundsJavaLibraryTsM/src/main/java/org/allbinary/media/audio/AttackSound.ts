@@ -45,7 +45,7 @@ import { Sound } from "./Sound.js";
 export class AttackSound extends CompositeSound {
         
 
-    private soundInterface: Sound = new AttackSound();
+    private static soundInterface: Sound = new AttackSound();
 
     public static getInstance(): Sound{
 

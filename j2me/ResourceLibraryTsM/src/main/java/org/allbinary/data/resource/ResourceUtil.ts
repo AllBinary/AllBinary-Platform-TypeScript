@@ -68,7 +68,7 @@ export class ResourceUtil
          {
         
 
-    private classLoader: any = NullUtil.getInstance()!.NULL_OBJECT;
+    private static classLoader: any = NullUtil.getInstance()!.NULL_OBJECT;
 
     private static readonly instance: ResourceUtil = new ResourceUtil();
 
@@ -99,7 +99,7 @@ ResourceUtil.classLoader= classLoader;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
@@ -142,7 +142,7 @@ ResourceUtil.classLoader= classLoader;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
     //var resource = resource

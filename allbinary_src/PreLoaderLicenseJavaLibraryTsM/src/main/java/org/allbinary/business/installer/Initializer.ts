@@ -837,7 +837,7 @@ stringBuffer!.append(this.getJdbcDriverValidationInfo(this.staticPagesJdbcDriver
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(){
 this.logUtil!.putF("Creating DB connection files", this, "set()");

@@ -93,7 +93,7 @@ this.basicColorArray= basicColorArray;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -110,7 +110,7 @@ this.basicColorArray= basicColorArray;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

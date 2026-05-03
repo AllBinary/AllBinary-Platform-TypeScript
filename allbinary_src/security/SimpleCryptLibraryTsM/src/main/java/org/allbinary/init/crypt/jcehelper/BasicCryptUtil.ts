@@ -77,7 +77,7 @@ export class BasicCryptUtil
 
     private readonly XML_START: string = "<?xml";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getDecryptedInputStream(inputStream: InputStream, cryptInterface: CryptInterface): InputStream{
 var inputStream = inputStream

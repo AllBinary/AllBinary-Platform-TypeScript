@@ -118,7 +118,7 @@ this.newProfileActionJLabel!.setText("New Action Name");
     
 this.okNewProfileActionJButton!.setText("Ok");
     
-this.okNewProfileActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okNewProfileActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -142,7 +142,7 @@ newProfileActionJDialogLayout!.setVerticalGroup(newProfileActionJDialogLayout!.c
     
 this.genericProfileActionsJPanel!.setPreferredSize(new java.awt.Dimension(10000, 10000));
     
-this.genericProfileActionsJList!.addListSelectionListener(new javax.swing.event.ListSelectionListener()
+this.genericProfileActionsJList!.addListSelectionListener(new class extends javax.swing.event.ListSelectionListener
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
@@ -158,7 +158,7 @@ this.genericProfileActionsJScrollPane!.setViewportView(this.genericProfileAction
     
 this.newActionJButton!.setText("New");
     
-this.newActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.newActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -172,7 +172,7 @@ newActionJButtonActionPerformed(evt);
     
 this.deleteActionJButton!.setText("Delete");
     
-this.deleteActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.deleteActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -186,7 +186,7 @@ deleteActionJButtonActionPerformed(evt);
     
 this.saveJButton!.setText("Save");
     
-this.saveJButton!.addActionListener(new java.awt.event.ActionListener()
+this.saveJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -390,7 +390,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteActionJButtonActio
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public selectFirstElement(){
 this.setModel();

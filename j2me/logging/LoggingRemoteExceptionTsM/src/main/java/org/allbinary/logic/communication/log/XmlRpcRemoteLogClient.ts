@@ -83,7 +83,7 @@ public constructor (clientInfo: AbeClientInformationInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(anyType: any = {}): any{
     //var anyType = anyType

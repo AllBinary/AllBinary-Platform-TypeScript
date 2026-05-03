@@ -215,7 +215,7 @@ form.append(this.getChoiceGroup(hashtable, name, option));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDefault(form: CommandForm){
 var form = form

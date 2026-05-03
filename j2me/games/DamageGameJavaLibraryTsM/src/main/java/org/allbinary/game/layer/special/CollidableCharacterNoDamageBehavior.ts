@@ -76,7 +76,7 @@ var collidable = collidable
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -108,7 +108,7 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface

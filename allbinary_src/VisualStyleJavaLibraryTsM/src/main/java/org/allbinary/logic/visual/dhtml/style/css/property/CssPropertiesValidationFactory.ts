@@ -65,7 +65,7 @@ export class CssPropertiesValidationFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(nodeList: NodeList): Vector{
 var nodeList = nodeList

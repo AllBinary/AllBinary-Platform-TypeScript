@@ -108,7 +108,7 @@ this.basicURIResolver= basicURIResolver;
 }
 
 
-                //@Throws(TransformerException::class)
+                //@Throws(TransformerException.constructor)
             
     public resolve(href: string, base: string): Source{
 var href = href

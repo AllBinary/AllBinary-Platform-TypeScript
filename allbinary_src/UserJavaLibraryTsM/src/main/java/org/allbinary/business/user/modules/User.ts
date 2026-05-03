@@ -206,7 +206,7 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFormData(userHashMap: HashMap<any, any>){
     //var userHashMap = userHashMap
@@ -281,7 +281,7 @@ this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString()) as s
 this.permissions= stringUtil!.getNonNull(userHashMap!.get(UserData.PERMISSIONS) as string);
     
 
-                        if(!stringValidationUtil!.isEmpty(this.permissions); && this.permissions.localeCompare(StoreFrontData.getInstance()!.NAME) == 0)
+                        if(!stringValidationUtil!.isEmpty(this.permissions) && this.permissions.localeCompare(StoreFrontData.getInstance()!.NAME) == 0)
                         this.permissions= stringUtil!.getNonNull(userHashMap!.get(StoreFrontData.getInstance()!.NAME) as string)
                              else 
                         if(this.permissions == 
@@ -347,7 +347,7 @@ this.enable= stringUtil!.getNonNull(userHashMap!.get(EntryData.getInstance()!.EN
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN); || this.mainEmail!.indexOf("@") ==  -1)
+                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN) || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
                                     valid= Boolean.FALSE;
@@ -423,7 +423,7 @@ stringBuffer!.append(this.password.getValidationInfo());
                                     }
                                 
 
-                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN); || this.mainEmail!.indexOf("@") ==  -1)
+                        if(!stringValidationUtil!.isValidRequired(this.mainEmail, 1, UserData.MAXLEN) || this.mainEmail!.indexOf("@") ==  -1)
                         
                                     {
                                     stringBuffer!.append("Please enter a valid email address.<br />");
@@ -837,7 +837,7 @@ this.enable= enable;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 
@@ -912,7 +912,7 @@ values.add(time);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -1030,7 +1030,7 @@ var weblisketSession = weblisketSession
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 

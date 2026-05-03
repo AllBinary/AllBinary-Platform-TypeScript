@@ -67,7 +67,7 @@ import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math
 export class LevelHudWidget extends BasicHud implements PaintableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createHud(maxlevel: number, location: number, direction: number): LevelHudWidget{
 var maxlevel = maxlevel

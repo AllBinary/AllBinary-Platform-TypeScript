@@ -52,7 +52,7 @@ export class PoolInterfaceFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface, poolType: PoolType, cachePolicy: CachePolicy): PoolInterface{
 var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface

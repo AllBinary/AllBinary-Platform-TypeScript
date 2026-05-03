@@ -67,7 +67,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public create(raceTrackGeographicMap: RaceTrackGeographicMap): CustomMapGeneratorBase{
     //var raceTrackGeographicMap = raceTrackGeographicMap

@@ -54,7 +54,7 @@ export interface MovementInterface {
 
     init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(layer: AllBinaryGameLayer)
 

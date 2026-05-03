@@ -87,7 +87,7 @@ this.velocityInterface!.getVelocityYBasicDecimalP()!.setint(0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

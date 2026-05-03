@@ -94,7 +94,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public insert(): string{
 
@@ -147,7 +147,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public delete(): string{
 
@@ -200,7 +200,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public update(): string{
 
@@ -253,7 +253,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

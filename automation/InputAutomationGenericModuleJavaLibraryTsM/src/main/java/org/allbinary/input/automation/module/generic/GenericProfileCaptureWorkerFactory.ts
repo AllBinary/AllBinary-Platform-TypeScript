@@ -67,7 +67,7 @@ export class GenericProfileCaptureWorkerFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(genericProfile: GenericProfile): CaptureWorkerInterface{
 var genericProfile = genericProfile

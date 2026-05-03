@@ -332,7 +332,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 
@@ -366,7 +366,7 @@ stringBuffer!.append(new BasicItemValidation(this.itemInterface).
 ;
     
 
-    var fullCategory: string = URLGLOBALS.getWebappPath(); as string +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
+    var fullCategory: string = URLGLOBALS.getWebappPath() as string +storeFrontInterface!.getCurrentHostNamePath() +this.itemInterface!.getCategory();
 ;
     
 
@@ -444,7 +444,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(fileName: string, size: number): Boolean{
 var fileName = fileName

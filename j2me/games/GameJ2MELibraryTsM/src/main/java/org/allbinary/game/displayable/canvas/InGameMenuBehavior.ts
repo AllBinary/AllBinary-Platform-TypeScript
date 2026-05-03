@@ -64,7 +64,7 @@ export class InGameMenuBehavior extends BaseMenuBehavior {
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onDisplayChangeEvent(allBinaryGameCanvas: AllBinaryGameCanvas, displayChangeEvent: DisplayChangeEvent){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -81,7 +81,7 @@ allBinaryGameCanvas!.setNonBotPaintableP(new GameCanvasNonBotPaintable(allBinary
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -90,7 +90,7 @@ allBinaryGameCanvas!.initMenu2();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas
@@ -99,7 +99,7 @@ allBinaryGameCanvas!.initMenu2();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public popupMenu(allBinaryGameCanvas: AllBinaryGameCanvas){
     //var allBinaryGameCanvas = allBinaryGameCanvas

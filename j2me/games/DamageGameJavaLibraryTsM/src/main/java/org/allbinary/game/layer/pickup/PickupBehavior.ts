@@ -303,7 +303,7 @@ countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCount
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getCountedLayerInterfaceFactoryForSlot(slotIndex: number): CountedLayerInterfaceFactoryPart{
 var slotIndex = slotIndex

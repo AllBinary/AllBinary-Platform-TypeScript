@@ -90,7 +90,7 @@ this.newStoreFrontInterface= new StoreFront(this.getPageContext()!.getRequest() 
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

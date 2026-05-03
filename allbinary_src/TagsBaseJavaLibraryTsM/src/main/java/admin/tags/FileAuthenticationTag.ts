@@ -219,7 +219,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     changePassword(): boolean{
 
@@ -354,7 +354,7 @@ this.weblisketSession!.setPassword(newPassword);
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     isSessionOld(): boolean{
 
@@ -542,7 +542,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     isRoleValid(): boolean{
 
@@ -579,7 +579,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "isRarelyUsedSession()");
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     validRole(): string{
 
@@ -624,7 +624,7 @@ stringBuffer!.append("Trying New login<p>");
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     invalidRole(): string{
 
@@ -673,7 +673,7 @@ stringBuffer!.append("Trying New login<p>");
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     isAuthenticationSessionValid(): boolean{
 
@@ -701,7 +701,7 @@ index < size; index++)
 
                         if(this.sessionUserName != 
                                     null
-                                 && this.role.equals(mustBeOfRole))
+                                 && this.role. === mustBeOfRole)
                         
                                     {
                                     
@@ -754,7 +754,7 @@ index < size; index++)
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     processIfNewLogin(): boolean{
 
@@ -857,7 +857,7 @@ this.nextAttempt();
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     processInvalidation(): boolean{
 
@@ -915,7 +915,7 @@ this.nextAttempt();
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

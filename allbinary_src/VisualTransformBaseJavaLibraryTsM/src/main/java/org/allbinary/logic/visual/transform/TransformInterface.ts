@@ -61,7 +61,7 @@ export interface TransformInterface extends DomDocumentMappingInterface, Composi
 
     getTransformDocumentInterface(): TransformDocumentInterface
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     view(): string
 

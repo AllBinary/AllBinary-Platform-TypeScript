@@ -57,7 +57,7 @@ export class TestRemoteLogUtil
 
     public static readonly PATH: string = "G:\\mnt\\bc\\mydev\\work\\allbinary_src\\licensing\\data\\";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static main(args: string[]){
 var args = args

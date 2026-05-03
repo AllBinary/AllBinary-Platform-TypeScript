@@ -146,7 +146,7 @@ this.player.pause();
 
     public resume(){
 
-                        if(this.player != NullAndroidCanvas.NULL_MEDIA_PLAYER && !this.player.isPlaying();)
+                        if(this.player != NullAndroidCanvas.NULL_MEDIA_PLAYER && !this.player.isPlaying())
                         
                                     {
                                     this.logUtil!.putF(this.commonStrings!.START, this, commonStateStrings!.RESUME);
@@ -285,7 +285,7 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
 this.logUtil!.putF(this.ALREADY_PLAYING, this, commonStateStrings!.ON_START_COMMAND);
     
 
-    var runnable: Runnable = new ARunnable()
+    var runnable: Runnable = new class extends ARunnable
                                 {
                                 
     public run(){

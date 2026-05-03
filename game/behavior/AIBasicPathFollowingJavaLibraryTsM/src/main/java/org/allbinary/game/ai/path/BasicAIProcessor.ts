@@ -137,7 +137,7 @@ this.update();
 
     private readonly geographicMapDirectionUtil: GeographicMapDirectionUtil = GeographicMapDirectionUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 var currentGeographicMapCellPosition = currentGeographicMapCellPosition
@@ -181,7 +181,7 @@ this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosit
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(myManager: AllBinaryLayerManager, currentGeographicMapCellPosition: GeographicMapCellPosition): number{
 var myManager = myManager

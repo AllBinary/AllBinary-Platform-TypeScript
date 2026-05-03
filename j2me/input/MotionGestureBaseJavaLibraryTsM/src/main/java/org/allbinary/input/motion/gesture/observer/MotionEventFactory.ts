@@ -65,7 +65,7 @@ export class MotionEventFactory
          implements AllBinaryEventObjectFactoryInterface {
         
 
-    private index: number = 0;
+    private static index: number = 0;
 
     private readonly source: any
 

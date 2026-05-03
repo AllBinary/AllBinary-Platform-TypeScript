@@ -188,7 +188,7 @@ this.contentType= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileBaseNameNode(document: Document): Node{
 var document = document

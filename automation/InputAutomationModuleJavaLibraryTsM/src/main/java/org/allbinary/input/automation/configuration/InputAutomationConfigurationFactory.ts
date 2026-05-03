@@ -82,11 +82,11 @@ export class InputAutomationConfigurationFactory
          {
         
 
-    private inputAutomationConfiguration: InputAutomationConfiguration = 
+    private static inputAutomationConfiguration: InputAutomationConfiguration = 
                 null
             ;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -113,7 +113,7 @@ export class InputAutomationConfigurationFactory
                                     logUtil!.putF("LoadingConfiguration", INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
-    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
+    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;
 ;
     
 
@@ -121,7 +121,7 @@ export class InputAutomationConfigurationFactory
 ;
     
 
-    var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration::class)!;
+    var root: JAXBElement<InputAutomationConfiguration> = unmarshaller.unmarshal(new StreamSource(new FileInputStream(file)), InputAutomationConfiguration.constructor)!;
 ;
     
 InputAutomationConfigurationFactory.inputAutomationConfiguration= root.getValue() as InputAutomationConfiguration;

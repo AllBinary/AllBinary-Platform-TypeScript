@@ -198,7 +198,7 @@ var value = value
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
 var name = name
@@ -284,7 +284,7 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getObjectConfigs(storeName: string): Vector{
 var storeName = storeName
@@ -327,7 +327,7 @@ objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInter
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getNames(storeName: string): Vector{
 var storeName = storeName

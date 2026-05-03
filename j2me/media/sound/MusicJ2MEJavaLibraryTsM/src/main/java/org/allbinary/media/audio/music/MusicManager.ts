@@ -99,7 +99,7 @@ export class MusicManager
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 
-    private readonly playerListener: PlayerListener = new PlayerListener()
+    private readonly playerListener: PlayerListener = new class extends PlayerListener
                                 {
                                 
     public playerUpdate(player: Player, event: string, eventData: any = {}){
@@ -388,7 +388,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     waitForStateChange(endingCurrentSongSound: Sound, startingCurrentSongSound: Sound){
     //var endingCurrentSongSound = endingCurrentSongSound
@@ -410,7 +410,7 @@ startingCurrentSongSound!.getPlayerP()!.start();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stop(){
 

@@ -68,7 +68,7 @@ this.buffers.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key
@@ -102,7 +102,7 @@ var key = key
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addAll(usedList: BasicArrayList){
 var usedList = usedList
@@ -127,7 +127,7 @@ usedList!.clear();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public releaseUsedBackToPool(usedList: BasicArrayList){
 var usedList = usedList

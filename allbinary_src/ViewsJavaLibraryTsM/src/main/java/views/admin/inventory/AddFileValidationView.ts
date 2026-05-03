@@ -510,7 +510,7 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     isValid(fileName: string, size: number): Boolean{
 var fileName = fileName
@@ -554,7 +554,7 @@ var size = size
 ;
     
 
-                        if(!uploadMedia!.isWriterSupported(extension); && !uploadMedia!.isReaderSupported(extension);)
+                        if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))
                         
                                     {
                                     
@@ -700,7 +700,7 @@ stringBuffer!.append("<br/>");
 ;
     
 
-                        if(!uploadMedia!.isWriterSupported(extension); && !uploadMedia!.isReaderSupported(extension);)
+                        if(!uploadMedia!.isWriterSupported(extension) && !uploadMedia!.isReaderSupported(extension))
                         
                                     {
                                     stringBuffer!.append("Image type: ");

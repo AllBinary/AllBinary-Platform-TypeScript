@@ -59,7 +59,7 @@ export class PathFindingNodeCostInfoFactoryBase
 
     public static readonly NULL_PATH_FINDING_NODE_COST_INFO_FACTORY_BASE: PathFindingNodeCostInfoFactoryBase = new PathFindingNodeCostInfoFactoryBase();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public create(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
     //var geographicMapInterface = geographicMapInterface
@@ -75,7 +75,7 @@ export class PathFindingNodeCostInfoFactoryBase
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number{
     //var geographicMapInterface = geographicMapInterface

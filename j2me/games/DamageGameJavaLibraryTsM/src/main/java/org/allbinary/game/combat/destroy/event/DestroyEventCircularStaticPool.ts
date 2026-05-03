@@ -85,7 +85,7 @@ this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
 var layerInterface = layerInterface

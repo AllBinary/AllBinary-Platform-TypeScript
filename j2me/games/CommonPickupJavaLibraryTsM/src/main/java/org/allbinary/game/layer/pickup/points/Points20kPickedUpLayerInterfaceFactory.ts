@@ -76,9 +76,9 @@ import { PointsResources } from "./PointsResources.js";
 export class Points20kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements PickupProcessorInterface {
         
 
-    private pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
+    private static pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface = CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(){
 pickedUpLayerInterfaceFactoryInterface= new Points20kPickedUpLayerInterfaceFactory();
@@ -116,7 +116,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(sourceLayerInterface: AllBinaryLayer){
 var sourceLayerInterface = sourceLayerInterface

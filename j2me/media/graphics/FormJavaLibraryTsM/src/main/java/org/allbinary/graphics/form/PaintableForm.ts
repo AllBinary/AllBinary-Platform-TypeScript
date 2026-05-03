@@ -105,7 +105,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(rectangle: Rectangle, formType: FormType){
     //var rectangle = rectangle

@@ -187,7 +187,7 @@ var point = point
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public translate(x: number, y: number){
 var x = x
@@ -388,7 +388,7 @@ g.drawRect(xRect, yRect, width, height);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toDom(canvasDom: CanvasDom): Node{
 var canvasDom = canvasDom
@@ -524,7 +524,7 @@ var keyEvent = keyEvent
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public duplicate(): GraphicItemInterface{
 

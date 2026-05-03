@@ -259,7 +259,7 @@ var product = product
 }
 
 
-                //@Throws(MoneyException::class)
+                //@Throws(MoneyException.constructor)
             
     public getSubTotal(): Money{
 

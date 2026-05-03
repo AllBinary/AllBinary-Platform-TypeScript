@@ -70,7 +70,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onInputMappingEvent(inputMappingEvent: InputMappingEvent){
 var inputMappingEvent = inputMappingEvent

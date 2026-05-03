@@ -282,7 +282,7 @@ this.titleJLabel!.setText("Image Output Options");
     
 this.okJButton!.setText("OK");
     
-this.okJButton!.addActionListener(new java.awt.event.ActionListener()
+this.okJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -306,7 +306,7 @@ this.displayJCheckBox!.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 
     
 this.displayJCheckBox!.setMargin(new java.awt.Insets(0, 0, 0, 0));
     
-this.displayJCheckBox!.addActionListener(new java.awt.event.ActionListener()
+this.displayJCheckBox!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
@@ -318,7 +318,7 @@ displayJCheckBoxActionPerformed(evt);
                                 }
                             );
     
-this.itemTypesJList!.setModel(new javax.swing.AbstractListModel()
+this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
                                 {
                                 
     var strings: string[] = 
@@ -364,7 +364,7 @@ setMinimumSize(new java.awt.Dimension(100, 0));
     
 this.capturedImageActionJButton!.setText("Edit");
     
-this.capturedImageActionJButton!.addActionListener(new java.awt.event.ActionListener()
+this.capturedImageActionJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

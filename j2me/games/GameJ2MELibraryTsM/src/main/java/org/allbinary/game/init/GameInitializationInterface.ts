@@ -52,7 +52,7 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 export interface GameInitializationInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number)
 

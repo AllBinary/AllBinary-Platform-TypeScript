@@ -65,7 +65,7 @@ export class AllBinaryRendererBase3
 
     public readonly list: BasicArrayList = new BasicArrayListD();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     update(gl: GL10){
     //var gl = gl

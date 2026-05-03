@@ -116,7 +116,7 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
 
     private readonly paintable: Paintable = SWTUtil.isSWT
                         ?       
-                                new Paintable()
+                                new class extends Paintable
                                 {
                                 
     var private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
@@ -148,7 +148,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public set(gl: GL){
     //var gl = gl
@@ -174,7 +174,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -186,7 +186,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
     //var allBinaryLayerManager = allBinaryLayerManager
@@ -205,7 +205,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onViewPositionChangeEvent(){
 this.onChangeEvent(this.viewPositionEvent);
@@ -213,7 +213,7 @@ this.onChangeEvent(this.viewPositionEvent);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
     //var layerManagerEvent = layerManagerEvent

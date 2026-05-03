@@ -58,7 +58,7 @@ export class OpenGLImageUtil
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public static createImage(inputStream: InputStream): OpenGLBitmap{
     //var inputStream = inputStream
@@ -95,7 +95,7 @@ export class OpenGLImageUtil
 }
 
 
-                //@Throws(IOException::class)
+                //@Throws(IOException.constructor)
             
     public createImage(name: string): OpenGLBitmap{
     //var name = name

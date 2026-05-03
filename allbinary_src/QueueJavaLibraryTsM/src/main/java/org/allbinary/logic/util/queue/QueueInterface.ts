@@ -46,15 +46,15 @@
 export interface QueueInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     offer(anyType: any): boolean
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     remove(anyType: any)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     remove(): any
 

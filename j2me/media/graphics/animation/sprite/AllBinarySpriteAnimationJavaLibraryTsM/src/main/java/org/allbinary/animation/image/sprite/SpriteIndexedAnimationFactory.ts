@@ -81,7 +81,7 @@ import { AdjustedSpriteIndexedAnimation } from "./AdjustedSpriteIndexedAnimation
 export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createCWHDXY(image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
     //var image = image
@@ -100,7 +100,7 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createCWH(image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
     //var image = image
@@ -123,7 +123,7 @@ spriteIndexedAnimationFactory!.initHWH();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
     //var image = image
@@ -178,7 +178,7 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
@@ -212,7 +212,7 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
     //var animationInterface = animationInterface

@@ -46,17 +46,17 @@ export class GenericConfigData
          {
         
 
-    public RELATIVE_PATH: string = "./";
+    public static RELATIVE_PATH: string = "./";
 
-    public CONFIG_PATH: string = "modules/configs/";
+    public static CONFIG_PATH: string = "modules/configs/";
 
-    public MODULE_RELATIVE_PATH: string = GenericConfigData.RELATIVE_PATH +GenericConfigData.CONFIG_PATH +"allbinary/input/automation/module/";
+    public static MODULE_RELATIVE_PATH: string = GenericConfigData.RELATIVE_PATH +GenericConfigData.CONFIG_PATH +"allbinary/input/automation/module/";
 
-    public GAME_MODULE_RELATIVE_PATH: string = GenericConfigData.MODULE_RELATIVE_PATH +"game/";
+    public static GAME_MODULE_RELATIVE_PATH: string = GenericConfigData.MODULE_RELATIVE_PATH +"game/";
 
-    public MMO_GAME_MODULE_RELATIVE_PATH: string = GenericConfigData.GAME_MODULE_RELATIVE_PATH +"mmog/";
+    public static MMO_GAME_MODULE_RELATIVE_PATH: string = GenericConfigData.GAME_MODULE_RELATIVE_PATH +"mmog/";
 
-    public FREE_MMO_GAME_MODULE_RELATIVE_PATH: string = "free/";
+    public static FREE_MMO_GAME_MODULE_RELATIVE_PATH: string = "free/";
 private constructor (){
 
             super();

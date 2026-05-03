@@ -101,7 +101,7 @@ this.visitor= visitor;
 
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

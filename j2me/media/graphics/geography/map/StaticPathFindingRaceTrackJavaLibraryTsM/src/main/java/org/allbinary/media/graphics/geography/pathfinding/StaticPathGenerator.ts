@@ -109,7 +109,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: any = {}, totalPaths: number){
     //var geographicMapInterface = geographicMapInterface
@@ -117,7 +117,7 @@ protected constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory, pathList: BasicArrayList): BasicArrayList{
     //var geographicMapCellPositionFactory = geographicMapCellPositionFactory
@@ -163,7 +163,7 @@ list.add(geographicMapCellPosition);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
     //var geographicMapInterface = geographicMapInterface

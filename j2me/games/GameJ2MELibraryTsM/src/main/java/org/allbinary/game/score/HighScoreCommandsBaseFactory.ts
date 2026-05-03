@@ -120,7 +120,7 @@ index >= 0; index--)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getIndex(command: Command): number{
 var command = command

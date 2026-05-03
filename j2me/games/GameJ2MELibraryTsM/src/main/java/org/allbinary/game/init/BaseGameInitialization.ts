@@ -127,14 +127,14 @@ this.portion= portion;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public initKey(portion: number){
 var portion = portion
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initKeyMapping(abeClientInformation: AbeClientInformationInterface, portion: number){
     //var abeClientInformation = abeClientInformation
@@ -155,7 +155,7 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
     //var abeClientInformation = abeClientInformation
@@ -166,7 +166,7 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
 ;
     
 
-                        if(!this.isInitialized(); && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
+                        if(!this.isInitialized() && (level == resourceLoadingLevelFactory!.LOAD_ALL.getLevel() || level == resourceLoadingLevelFactory!.LOAD_EARLY.getLevel()))
                         
                                     {
                                     
@@ -220,7 +220,7 @@ this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
 
     private allLoaded: boolean= false
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public resourceInitialization(level: number){
 var level = level

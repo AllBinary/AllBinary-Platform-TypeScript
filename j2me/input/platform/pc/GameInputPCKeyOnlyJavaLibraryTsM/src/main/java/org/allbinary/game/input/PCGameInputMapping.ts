@@ -65,7 +65,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation

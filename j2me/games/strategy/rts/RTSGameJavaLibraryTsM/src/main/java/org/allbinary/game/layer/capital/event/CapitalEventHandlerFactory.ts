@@ -52,7 +52,9 @@ export class CapitalEventHandlerFactory
 
     private static readonly capitalEventHandlerArray: CapitalEventHandler[]
 
-                init{
+                private static initResult: number = CapitalEventHandlerFactory.init();
+                private static init(): number { 
+                    
 capitalEventHandlerArray= new Array(10);
     
 
@@ -67,8 +69,11 @@ capitalEventHandlerArray[index]= new CapitalEventHandler();
     
 }
 
-}
 
+
+                    return 0;
+                }
+            
     public static getInstance(groupInterface: Group): CapitalEventHandler{
 var groupInterface = groupInterface
 

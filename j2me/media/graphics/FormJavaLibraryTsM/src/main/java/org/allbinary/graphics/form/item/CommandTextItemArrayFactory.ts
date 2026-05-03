@@ -113,7 +113,7 @@ this.list.clear();
 ;
     
 
-    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait(); && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
+    var isLargeEnoughDisplayForBigMenu: boolean = (displayInfo!.isPortrait() && displayInfo!.getLastHeight() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH) || (!displayInfo!.isPortrait() && displayInfo!.getLastWidth() >= ScreenInfo.getInstance()!.MEDIUM_WIDTH);
 ;
     
 

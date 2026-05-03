@@ -48,7 +48,7 @@
 export interface ImageIOInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     save(frame: number)
 

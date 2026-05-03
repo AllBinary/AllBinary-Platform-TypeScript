@@ -217,7 +217,7 @@ this.fileName= value;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTypeVector(): BasicArrayList{
 

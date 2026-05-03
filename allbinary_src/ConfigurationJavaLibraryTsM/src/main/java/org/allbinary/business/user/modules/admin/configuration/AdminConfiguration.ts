@@ -122,7 +122,7 @@ this.getFormData(storeHashMap);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFormData(storeHashMap: HashMap<any, any>){
 var storeHashMap = storeHashMap
@@ -133,7 +133,7 @@ this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as 
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(){

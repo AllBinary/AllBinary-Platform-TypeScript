@@ -52,7 +52,7 @@ export class LogConfigTypes
          {
         
 
-    public LOGGING: BasicArrayList = new BasicArrayListD();
+    public static LOGGING: BasicArrayList = new BasicArrayListD();
 private constructor (){
 
             super();

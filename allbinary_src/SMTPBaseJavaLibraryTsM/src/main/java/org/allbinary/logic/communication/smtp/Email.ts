@@ -170,7 +170,7 @@ this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
 var from = from
@@ -255,7 +255,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e);
 }
 
 
-                //@Throws(MessagingException::class)
+                //@Throws(MessagingException.constructor)
             
     public init(server: string, authenticator: Authenticator, addresses_from: InternetAddress[], addresses_to: InternetAddress[], addresses_cc: InternetAddress[], addresses_bcc: InternetAddress[], subject: string, mimeBodyParts: MimeBodyPart[]){
 var server = server
@@ -413,7 +413,7 @@ this.msg.setContent(mimeMultipart);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public log(): string{
 
@@ -425,7 +425,7 @@ this.msg.setContent(mimeMultipart);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -590,7 +590,7 @@ hashMap!.put(EmailData.CONTENT, content);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -607,7 +607,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 

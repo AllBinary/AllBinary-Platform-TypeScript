@@ -97,7 +97,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileItemStreamList(httpServletRequest: HttpServletRequest): List{
 var httpServletRequest = httpServletRequest
@@ -165,7 +165,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileItemList(httpServletRequest: HttpServletRequest): List{
 var httpServletRequest = httpServletRequest

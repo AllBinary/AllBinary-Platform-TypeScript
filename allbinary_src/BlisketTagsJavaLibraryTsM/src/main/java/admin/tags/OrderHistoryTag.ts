@@ -94,7 +94,7 @@ this.status= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     setOrderStatus(): string{
 
@@ -211,7 +211,7 @@ this.status= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

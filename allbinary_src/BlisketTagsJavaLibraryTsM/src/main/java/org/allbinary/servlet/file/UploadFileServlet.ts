@@ -123,7 +123,7 @@ export class UploadFileServlet extends HttpServlet {
 
     private fileName: string
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -255,7 +255,7 @@ response.sendError(HttpServletResponse.SC_NOT_FOUND);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     saveFile(filePath: string){
 var filePath = filePath
@@ -356,7 +356,7 @@ fileOutputStream!.write(byteArray);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
 var request = request
@@ -366,7 +366,7 @@ this.processRequest(request, response);
 }
 
 
-                //@Throws(ServletException::class, IOException::class)
+                //@Throws(ServletException.constructor, IOException.constructor)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
 var request = request

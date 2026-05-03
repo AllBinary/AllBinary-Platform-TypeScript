@@ -58,9 +58,9 @@ export class AccelerometerSensorFactory
          {
         
 
-    private allBinaryAccelerometerSensor: AllBinaryOrientationSensor
+    private static allBinaryAccelerometerSensor: AllBinaryOrientationSensor
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static init(){
 

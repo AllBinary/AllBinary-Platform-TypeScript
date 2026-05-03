@@ -143,7 +143,7 @@ this.getFormData();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getFormData(){
 this.storeName= this.weblisketSession!.getStoreName();
@@ -209,7 +209,7 @@ StoreFrontsEntityFactory.getInstance()!.getStoreFrontsEntityInstance()!.update(h
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public sendStoreCreatedEmails(){
 

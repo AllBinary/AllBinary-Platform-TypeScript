@@ -91,7 +91,7 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 export class CombatGameCanvas extends AllBinaryGameCanvas {
         
 
-    basicLayerProcessor: BasicLayerProcessor[] = [];
+    static basicLayerProcessor: BasicLayerProcessor[] = [];
 public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
             super(cmdListener, gameLayerManager, highScoresFactoryInterface, gameInitializationInterfaceFactoryInterface, buffered);
                         //var cmdListener = cmdListener
@@ -114,7 +114,7 @@ ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Destroy Events");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initApp(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
@@ -163,7 +163,7 @@ CombatGameCanvas.basicLayerProcessor[0]= DestroyedLayerProcessor.getInstance();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processPlayingGame(){
 super.processPlayingGame();
@@ -184,7 +184,7 @@ CombatGameCanvas.basicLayerProcessor[index]!.process(this.gameLayerManager);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     cleanupGame(){
 super.cleanupGame();
@@ -213,7 +213,7 @@ this.cleanupManager();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     cleanupManager(){
 this.gameLayerManager!.cleanup();

@@ -88,7 +88,7 @@ this.setImageArray(imageArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 

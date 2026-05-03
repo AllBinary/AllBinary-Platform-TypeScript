@@ -150,7 +150,7 @@ method.invoke(anyType,
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

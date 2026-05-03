@@ -90,7 +90,7 @@ this.setBasicColorP(basicColor);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getAnimationSize(): number{
 

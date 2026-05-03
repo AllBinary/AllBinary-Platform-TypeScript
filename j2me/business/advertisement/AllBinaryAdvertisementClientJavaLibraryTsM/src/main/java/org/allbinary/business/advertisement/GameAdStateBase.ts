@@ -141,13 +141,13 @@ var gameType = gameType
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public playingAdState(){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public playingAdState(width: number, height: number){
 var width = width
@@ -155,7 +155,7 @@ var height = height
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public notPlayingAdState(){
 }

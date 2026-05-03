@@ -215,7 +215,7 @@ this.hasSchema= false;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPath(aPath: string): string{
 var aPath = aPath

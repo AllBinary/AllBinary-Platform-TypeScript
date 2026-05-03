@@ -79,7 +79,7 @@ export class BaseImageAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
     //var image = image
@@ -136,7 +136,7 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

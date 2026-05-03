@@ -120,7 +120,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(filePath: string){
 var filePath = filePath
@@ -158,7 +158,7 @@ var filePath = filePath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(lineNumberReader: LineNumberReader, filePath: string){
 var lineNumberReader = lineNumberReader

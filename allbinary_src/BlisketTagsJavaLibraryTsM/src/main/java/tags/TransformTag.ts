@@ -107,7 +107,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     view(): string{
 
@@ -147,7 +147,7 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

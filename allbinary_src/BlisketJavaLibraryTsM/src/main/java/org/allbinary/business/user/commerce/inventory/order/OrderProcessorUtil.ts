@@ -72,7 +72,7 @@ export class OrderProcessorUtil
 
     private readonly ORDER_PROCESSED: string = "Order Processed";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(userName: string, order: Order): string{
 var userName = userName

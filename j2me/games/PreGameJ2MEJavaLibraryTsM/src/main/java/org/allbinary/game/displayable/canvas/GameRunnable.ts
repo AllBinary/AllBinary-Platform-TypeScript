@@ -72,7 +72,7 @@ DisplayInfoSingleton.getInstance()!.process();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processLoopSleep(){
 Thread.sleep(this.wait);

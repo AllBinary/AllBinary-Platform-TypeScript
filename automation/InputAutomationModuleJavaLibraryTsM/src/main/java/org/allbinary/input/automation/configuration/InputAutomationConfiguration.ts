@@ -151,7 +151,7 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(){
 
@@ -168,7 +168,7 @@ this.logUtil!.putF("Installed: " +installed, this, "setIntalled");
 FileUtil.getInstance()!.copy(new AbPath(file.getAbsolutePath()), new AbPath(file.getAbsolutePath() +".bak.xml"));
     
 
-    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration::class)!;
+    var jaxbContext: JAXBContext = JAXBContext.newInstance(InputAutomationConfiguration.constructor)!;
 ;
     
 

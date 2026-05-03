@@ -67,11 +67,13 @@ export class ColorDeltaFactory
          {
         
 
-    private cacheInterface: AutomaticCacheInterface = 
+    private static cacheInterface: AutomaticCacheInterface = 
                 null
             ;
 
-                init{
+                private static initResult: number = ColorDeltaFactory.init();
+                private static init(): number { 
+                    
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -104,9 +106,12 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
     
 }
 
-}
 
-                //@Throws(Exception::class)
+
+                    return 0;
+                }
+            
+                //@Throws(Exception.constructor)
             
     public static getInstance(rgb1: number, rgb2: number): ColorDelta{
 var rgb1 = rgb1

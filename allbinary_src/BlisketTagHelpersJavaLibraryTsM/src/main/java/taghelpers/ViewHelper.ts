@@ -110,7 +110,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 
@@ -156,7 +156,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -211,7 +211,7 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 

@@ -156,7 +156,7 @@ this.log();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getKey(): any{
 
@@ -168,7 +168,7 @@ this.log();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRootFilePath(): AbPath{
 
@@ -201,7 +201,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFilePath(): AbPath{
 
@@ -213,7 +213,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getWebAppPath(): AbPath{
 
@@ -229,7 +229,7 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPath(): AbPath{
 
@@ -487,7 +487,7 @@ this.removal(removalVector);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isLeaf(): boolean{
 
@@ -564,7 +564,7 @@ this.categoryHierarchyInterface= categoryHierarchyInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isValid(): Boolean{
@@ -656,7 +656,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoDoc(): Document{
 
@@ -668,7 +668,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
 var document = document
@@ -681,7 +681,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public validationInfo(): string{
 
@@ -693,7 +693,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toHashMap(): HashMap<any, any>{
 
@@ -709,7 +709,7 @@ var document = document
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toVector(): Vector{
 
@@ -727,7 +727,7 @@ categoryVector!.add(this.childCategoryVector);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public log(){
 

@@ -75,7 +75,7 @@ import { Log } from "./Log.js";
 }
 
 
-    private readonly logger: Logger = Logger.getLogger(LogUtil::class.toString()!)!;
+    private readonly logger: Logger = Logger.getLogger(LogUtil.constructor.toString()!)!;
 
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 private constructor (){

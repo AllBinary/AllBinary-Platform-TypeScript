@@ -55,7 +55,7 @@ export class PaymentGatewayEntityFactory
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(): PaymentGatewayEntity{
 

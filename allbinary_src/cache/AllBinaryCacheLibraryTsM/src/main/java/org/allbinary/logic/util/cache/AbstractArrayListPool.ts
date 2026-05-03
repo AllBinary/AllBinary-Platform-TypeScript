@@ -74,7 +74,7 @@ this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public clear(){
 
@@ -85,7 +85,7 @@ this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public remove(key: any = {}): CacheableInterface{
 var key = key
@@ -97,7 +97,7 @@ var key = key
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public add(cacheableInterface: CacheableInterface){
 var cacheableInterface = cacheableInterface
@@ -106,7 +106,7 @@ this.buffers.add(cacheableInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addArray(cacheableInterfaces: CacheableInterface[]){
 var cacheableInterfaces = cacheableInterfaces

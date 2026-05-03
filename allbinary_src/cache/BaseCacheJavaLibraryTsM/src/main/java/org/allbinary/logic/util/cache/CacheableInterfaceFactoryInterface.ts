@@ -47,7 +47,7 @@
 export interface CacheableInterfaceFactoryInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(key: any): CacheableInterface
 

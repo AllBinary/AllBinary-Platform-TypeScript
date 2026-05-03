@@ -77,7 +77,7 @@ export class ImageCompleteUtil
 
     readonly ISREADY: string = "isReady";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitFor(image: Image, name: string){
 var image = image
@@ -87,7 +87,7 @@ var name = name
 
     private readonly COMPLETE: string = "Image loading complete for: ";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
     //var image = image
@@ -102,7 +102,7 @@ var name = name
 ;
     
 
-                        if(!playnCoreImage!.isReady(); || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
+                        if(!playnCoreImage!.isReady() || playnCoreImage!.width() +playnCoreImage!.height() <= 0)
                         
                                     {
                                     this.handleTimeout(name);
@@ -149,14 +149,14 @@ PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public handleTimeout(name: string){
     //var name = name
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public waitForAll(){
 }

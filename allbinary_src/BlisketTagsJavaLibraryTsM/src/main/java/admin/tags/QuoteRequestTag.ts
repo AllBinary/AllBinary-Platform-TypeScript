@@ -91,7 +91,7 @@ this.storeName= storeName;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     email(): string{
 
@@ -159,7 +159,7 @@ this.storeName= storeName;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

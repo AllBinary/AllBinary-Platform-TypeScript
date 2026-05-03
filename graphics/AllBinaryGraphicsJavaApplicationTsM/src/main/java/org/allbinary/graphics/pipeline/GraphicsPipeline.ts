@@ -69,7 +69,7 @@ public constructor (points: BasicArrayList){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public rotateTheta(aTheta: number){
 var aTheta = aTheta

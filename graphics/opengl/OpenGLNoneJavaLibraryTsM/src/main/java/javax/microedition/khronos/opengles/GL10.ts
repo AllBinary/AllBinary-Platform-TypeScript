@@ -37,9 +37,9 @@ import { IntBuffer } from "../../../../java/nio/IntBuffer.js";
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL } from "./GL.js";
 
-export interface GL10 extends GL {
+            //Interfaces do not have static fields for typescript so create a class with the static fields
+            export class GL10I {
         
-
     public static readonly GL_ADD: number = 260;
 
     public static readonly GL_ALIASED_LINE_WIDTH_RANGE: number = 33902;
@@ -513,6 +513,579 @@ export interface GL10 extends GL {
     public static readonly GL_XOR: number = 5382;
 
     public static readonly GL_ZERO: number = 0;
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+            }
+        
+export interface GL10 extends GL {
+        
+
+    //Interfaces do not have static fields - public static readonly GL_ADD: number = 260;
+
+    //Interfaces do not have static fields - public static readonly GL_ALIASED_LINE_WIDTH_RANGE: number = 33902;
+
+    //Interfaces do not have static fields - public static readonly GL_ALIASED_POINT_SIZE_RANGE: number = 33901;
+
+    //Interfaces do not have static fields - public static readonly GL_ALPHA: number = 6406;
+
+    //Interfaces do not have static fields - public static readonly GL_ALPHA_BITS: number = 3413;
+
+    //Interfaces do not have static fields - public static readonly GL_ALPHA_TEST: number = 3008;
+
+    //Interfaces do not have static fields - public static readonly GL_ALWAYS: number = 519;
+
+    //Interfaces do not have static fields - public static readonly GL_AMBIENT: number = 4608;
+
+    //Interfaces do not have static fields - public static readonly GL_AMBIENT_AND_DIFFUSE: number = 5634;
+
+    //Interfaces do not have static fields - public static readonly GL_AND: number = 5377;
+
+    //Interfaces do not have static fields - public static readonly GL_AND_INVERTED: number = 5380;
+
+    //Interfaces do not have static fields - public static readonly GL_AND_REVERSE: number = 5378;
+
+    //Interfaces do not have static fields - public static readonly GL_BACK: number = 1029;
+
+    //Interfaces do not have static fields - public static readonly GL_BLEND: number = 3042;
+
+    //Interfaces do not have static fields - public static readonly GL_BLUE_BITS: number = 3412;
+
+    //Interfaces do not have static fields - public static readonly GL_BYTE: number = 5120;
+
+    //Interfaces do not have static fields - public static readonly GL_CCW: number = 2305;
+
+    //Interfaces do not have static fields - public static readonly GL_CLAMP_TO_EDGE: number = 33071;
+
+    //Interfaces do not have static fields - public static readonly GL_CLEAR: number = 5376;
+
+    //Interfaces do not have static fields - public static readonly GL_COLOR_ARRAY: number = 32886;
+
+    //Interfaces do not have static fields - public static readonly GL_COLOR_BUFFER_BIT: number = 16384;
+
+    //Interfaces do not have static fields - public static readonly GL_COLOR_LOGIC_OP: number = 3058;
+
+    //Interfaces do not have static fields - public static readonly GL_COLOR_MATERIAL: number = 2903;
+
+    //Interfaces do not have static fields - public static readonly GL_COMPRESSED_TEXTURE_FORMATS: number = 34467;
+
+    //Interfaces do not have static fields - public static readonly GL_CONSTANT_ATTENUATION: number = 4615;
+
+    //Interfaces do not have static fields - public static readonly GL_COPY: number = 5379;
+
+    //Interfaces do not have static fields - public static readonly GL_COPY_INVERTED: number = 5388;
+
+    //Interfaces do not have static fields - public static readonly GL_CULL_FACE: number = 2884;
+
+    //Interfaces do not have static fields - public static readonly GL_CW: number = 2304;
+
+    //Interfaces do not have static fields - public static readonly GL_DECAL: number = 8449;
+
+    //Interfaces do not have static fields - public static readonly GL_DECR: number = 7683;
+
+    //Interfaces do not have static fields - public static readonly GL_DEPTH_BITS: number = 3414;
+
+    //Interfaces do not have static fields - public static readonly GL_DEPTH_BUFFER_BIT: number = 256;
+
+    //Interfaces do not have static fields - public static readonly GL_DEPTH_TEST: number = 2929;
+
+    //Interfaces do not have static fields - public static readonly GL_DIFFUSE: number = 4609;
+
+    //Interfaces do not have static fields - public static readonly GL_DITHER: number = 3024;
+
+    //Interfaces do not have static fields - public static readonly GL_DONT_CARE: number = 4352;
+
+    //Interfaces do not have static fields - public static readonly GL_DST_ALPHA: number = 772;
+
+    //Interfaces do not have static fields - public static readonly GL_DST_COLOR: number = 774;
+
+    //Interfaces do not have static fields - public static readonly GL_EMISSION: number = 5632;
+
+    //Interfaces do not have static fields - public static readonly GL_EQUAL: number = 514;
+
+    //Interfaces do not have static fields - public static readonly GL_EQUIV: number = 5385;
+
+    //Interfaces do not have static fields - public static readonly GL_EXP: number = 2048;
+
+    //Interfaces do not have static fields - public static readonly GL_EXP2: number = 2049;
+
+    //Interfaces do not have static fields - public static readonly GL_EXTENSIONS: number = 7939;
+
+    //Interfaces do not have static fields - public static readonly GL_FALSE: number = 0;
+
+    //Interfaces do not have static fields - public static readonly GL_FASTEST: number = 4353;
+
+    //Interfaces do not have static fields - public static readonly GL_FIXED: number = 5132;
+
+    //Interfaces do not have static fields - public static readonly GL_FLAT: number = 7424;
+
+    //Interfaces do not have static fields - public static readonly GL_FLOAT: number = 5126;
+
+    //Interfaces do not have static fields - public static readonly GL_FOG: number = 2912;
+
+    //Interfaces do not have static fields - public static readonly GL_FOG_COLOR: number = 2918;
+
+    //Interfaces do not have static fields - public static readonly GL_FOG_DENSITY: number = 2914;
+
+    //Interfaces do not have static fields - public static readonly GL_FOG_END: number = 2916;
+
+    //Interfaces do not have static fields - public static readonly GL_FOG_HINT: number = 3156;
+
+    //Interfaces do not have static fields - public static readonly GL_FOG_MODE: number = 2917;
+
+    //Interfaces do not have static fields - public static readonly GL_FOG_START: number = 2915;
+
+    //Interfaces do not have static fields - public static readonly GL_FRONT: number = 1028;
+
+    //Interfaces do not have static fields - public static readonly GL_FRONT_AND_BACK: number = 1032;
+
+    //Interfaces do not have static fields - public static readonly GL_GEQUAL: number = 518;
+
+    //Interfaces do not have static fields - public static readonly GL_GREATER: number = 516;
+
+    //Interfaces do not have static fields - public static readonly GL_GREEN_BITS: number = 3411;
+
+    //Interfaces do not have static fields - public static readonly GL_IMPLEMENTATION_COLOR_READ_FORMAT_OES: number = 35739;
+
+    //Interfaces do not have static fields - public static readonly GL_IMPLEMENTATION_COLOR_READ_TYPE_OES: number = 35738;
+
+    //Interfaces do not have static fields - public static readonly GL_INCR: number = 7682;
+
+    //Interfaces do not have static fields - public static readonly GL_INVALID_ENUM: number = 1280;
+
+    //Interfaces do not have static fields - public static readonly GL_INVALID_OPERATION: number = 1282;
+
+    //Interfaces do not have static fields - public static readonly GL_INVALID_VALUE: number = 1281;
+
+    //Interfaces do not have static fields - public static readonly GL_INVERT: number = 5386;
+
+    //Interfaces do not have static fields - public static readonly GL_KEEP: number = 7680;
+
+    //Interfaces do not have static fields - public static readonly GL_LEQUAL: number = 515;
+
+    //Interfaces do not have static fields - public static readonly GL_LESS: number = 513;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT_MODEL_AMBIENT: number = 2899;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT_MODEL_TWO_SIDE: number = 2898;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT0: number = 16384;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT1: number = 16385;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT2: number = 16386;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT3: number = 16387;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT4: number = 16388;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT5: number = 16389;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT6: number = 16390;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHT7: number = 16391;
+
+    //Interfaces do not have static fields - public static readonly GL_LIGHTING: number = 2896;
+
+    //Interfaces do not have static fields - public static readonly GL_LINE_LOOP: number = 2;
+
+    //Interfaces do not have static fields - public static readonly GL_LINE_SMOOTH: number = 2848;
+
+    //Interfaces do not have static fields - public static readonly GL_LINE_SMOOTH_HINT: number = 3154;
+
+    //Interfaces do not have static fields - public static readonly GL_LINE_STRIP: number = 3;
+
+    //Interfaces do not have static fields - public static readonly GL_LINEAR: number = 9729;
+
+    //Interfaces do not have static fields - public static readonly GL_LINEAR_ATTENUATION: number = 4616;
+
+    //Interfaces do not have static fields - public static readonly GL_LINEAR_MIPMAP_LINEAR: number = 9987;
+
+    //Interfaces do not have static fields - public static readonly GL_LINEAR_MIPMAP_NEAREST: number = 9985;
+
+    //Interfaces do not have static fields - public static readonly GL_LINES: number = 1;
+
+    //Interfaces do not have static fields - public static readonly GL_LUMINANCE: number = 6409;
+
+    //Interfaces do not have static fields - public static readonly GL_LUMINANCE_ALPHA: number = 6410;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_ELEMENTS_INDICES: number = 33001;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_ELEMENTS_VERTICES: number = 33000;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_LIGHTS: number = 3377;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_MODELVIEW_STACK_DEPTH: number = 3382;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_PROJECTION_STACK_DEPTH: number = 3384;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_TEXTURE_SIZE: number = 3379;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_TEXTURE_STACK_DEPTH: number = 3385;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_TEXTURE_UNITS: number = 34018;
+
+    //Interfaces do not have static fields - public static readonly GL_MAX_VIEWPORT_DIMS: number = 3386;
+
+    //Interfaces do not have static fields - public static readonly GL_MODELVIEW: number = 5888;
+
+    //Interfaces do not have static fields - public static readonly GL_MODULATE: number = 8448;
+
+    //Interfaces do not have static fields - public static readonly GL_MULTISAMPLE: number = 32925;
+
+    //Interfaces do not have static fields - public static readonly GL_NAND: number = 5390;
+
+    //Interfaces do not have static fields - public static readonly GL_NEAREST: number = 9728;
+
+    //Interfaces do not have static fields - public static readonly GL_NEAREST_MIPMAP_LINEAR: number = 9986;
+
+    //Interfaces do not have static fields - public static readonly GL_NEAREST_MIPMAP_NEAREST: number = 9984;
+
+    //Interfaces do not have static fields - public static readonly GL_NEVER: number = 512;
+
+    //Interfaces do not have static fields - public static readonly GL_NICEST: number = 4354;
+
+    //Interfaces do not have static fields - public static readonly GL_NO_ERROR: number = 0;
+
+    //Interfaces do not have static fields - public static readonly GL_NOOP: number = 5381;
+
+    //Interfaces do not have static fields - public static readonly GL_NOR: number = 5384;
+
+    //Interfaces do not have static fields - public static readonly GL_NORMAL_ARRAY: number = 32885;
+
+    //Interfaces do not have static fields - public static readonly GL_NORMALIZE: number = 2977;
+
+    //Interfaces do not have static fields - public static readonly GL_NOTEQUAL: number = 517;
+
+    //Interfaces do not have static fields - public static readonly GL_NUM_COMPRESSED_TEXTURE_FORMATS: number = 34466;
+
+    //Interfaces do not have static fields - public static readonly GL_ONE: number = 1;
+
+    //Interfaces do not have static fields - public static readonly GL_ONE_MINUS_DST_ALPHA: number = 773;
+
+    //Interfaces do not have static fields - public static readonly GL_ONE_MINUS_DST_COLOR: number = 775;
+
+    //Interfaces do not have static fields - public static readonly GL_ONE_MINUS_SRC_ALPHA: number = 771;
+
+    //Interfaces do not have static fields - public static readonly GL_ONE_MINUS_SRC_COLOR: number = 769;
+
+    //Interfaces do not have static fields - public static readonly GL_OR: number = 5383;
+
+    //Interfaces do not have static fields - public static readonly GL_OR_INVERTED: number = 5389;
+
+    //Interfaces do not have static fields - public static readonly GL_OR_REVERSE: number = 5387;
+
+    //Interfaces do not have static fields - public static readonly GL_OUT_OF_MEMORY: number = 1285;
+
+    //Interfaces do not have static fields - public static readonly GL_PACK_ALIGNMENT: number = 3333;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE4_R5_G6_B5_OES: number = 35730;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE4_RGB5_A1_OES: number = 35732;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE4_RGB8_OES: number = 35728;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE4_RGBA4_OES: number = 35731;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE4_RGBA8_OES: number = 35729;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE8_R5_G6_B5_OES: number = 35735;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE8_RGB5_A1_OES: number = 35737;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE8_RGB8_OES: number = 35733;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE8_RGBA4_OES: number = 35736;
+
+    //Interfaces do not have static fields - public static readonly GL_PALETTE8_RGBA8_OES: number = 35734;
+
+    //Interfaces do not have static fields - public static readonly GL_PERSPECTIVE_CORRECTION_HINT: number = 3152;
+
+    //Interfaces do not have static fields - public static readonly GL_POINT_SMOOTH: number = 2832;
+
+    //Interfaces do not have static fields - public static readonly GL_POINT_SMOOTH_HINT: number = 3153;
+
+    //Interfaces do not have static fields - public static readonly GL_POINTS: number = 0;
+
+    //Interfaces do not have static fields - public static readonly GL_POINT_FADE_THRESHOLD_SIZE: number = 33064;
+
+    //Interfaces do not have static fields - public static readonly GL_POINT_SIZE: number = 2833;
+
+    //Interfaces do not have static fields - public static readonly GL_POLYGON_OFFSET_FILL: number = 32823;
+
+    //Interfaces do not have static fields - public static readonly GL_POLYGON_SMOOTH_HINT: number = 3155;
+
+    //Interfaces do not have static fields - public static readonly GL_POSITION: number = 4611;
+
+    //Interfaces do not have static fields - public static readonly GL_PROJECTION: number = 5889;
+
+    //Interfaces do not have static fields - public static readonly GL_QUADRATIC_ATTENUATION: number = 4617;
+
+    //Interfaces do not have static fields - public static readonly GL_RED_BITS: number = 3410;
+
+    //Interfaces do not have static fields - public static readonly GL_RENDERER: number = 7937;
+
+    //Interfaces do not have static fields - public static readonly GL_REPEAT: number = 10497;
+
+    //Interfaces do not have static fields - public static readonly GL_REPLACE: number = 7681;
+
+    //Interfaces do not have static fields - public static readonly GL_RESCALE_NORMAL: number = 32826;
+
+    //Interfaces do not have static fields - public static readonly GL_RGB: number = 6407;
+
+    //Interfaces do not have static fields - public static readonly GL_RGBA: number = 6408;
+
+    //Interfaces do not have static fields - public static readonly GL_SAMPLE_ALPHA_TO_COVERAGE: number = 32926;
+
+    //Interfaces do not have static fields - public static readonly GL_SAMPLE_ALPHA_TO_ONE: number = 32927;
+
+    //Interfaces do not have static fields - public static readonly GL_SAMPLE_COVERAGE: number = 32928;
+
+    //Interfaces do not have static fields - public static readonly GL_SCISSOR_TEST: number = 3089;
+
+    //Interfaces do not have static fields - public static readonly GL_SET: number = 5391;
+
+    //Interfaces do not have static fields - public static readonly GL_SHININESS: number = 5633;
+
+    //Interfaces do not have static fields - public static readonly GL_SHORT: number = 5122;
+
+    //Interfaces do not have static fields - public static readonly GL_SMOOTH: number = 7425;
+
+    //Interfaces do not have static fields - public static readonly GL_SMOOTH_LINE_WIDTH_RANGE: number = 2850;
+
+    //Interfaces do not have static fields - public static readonly GL_SMOOTH_POINT_SIZE_RANGE: number = 2834;
+
+    //Interfaces do not have static fields - public static readonly GL_SPECULAR: number = 4610;
+
+    //Interfaces do not have static fields - public static readonly GL_SPOT_CUTOFF: number = 4614;
+
+    //Interfaces do not have static fields - public static readonly GL_SPOT_DIRECTION: number = 4612;
+
+    //Interfaces do not have static fields - public static readonly GL_SPOT_EXPONENT: number = 4613;
+
+    //Interfaces do not have static fields - public static readonly GL_SRC_ALPHA: number = 770;
+
+    //Interfaces do not have static fields - public static readonly GL_SRC_ALPHA_SATURATE: number = 776;
+
+    //Interfaces do not have static fields - public static readonly GL_SRC_COLOR: number = 768;
+
+    //Interfaces do not have static fields - public static readonly GL_STACK_OVERFLOW: number = 1283;
+
+    //Interfaces do not have static fields - public static readonly GL_STACK_UNDERFLOW: number = 1284;
+
+    //Interfaces do not have static fields - public static readonly GL_STENCIL_BITS: number = 3415;
+
+    //Interfaces do not have static fields - public static readonly GL_STENCIL_BUFFER_BIT: number = 1024;
+
+    //Interfaces do not have static fields - public static readonly GL_STENCIL_TEST: number = 2960;
+
+    //Interfaces do not have static fields - public static readonly GL_SUBPIXEL_BITS: number = 3408;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE: number = 5890;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_2D: number = 3553;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_COORD_ARRAY: number = 32888;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_ENV: number = 8960;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_ENV_COLOR: number = 8705;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_ENV_MODE: number = 8704;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_MAG_FILTER: number = 10240;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_MIN_FILTER: number = 10241;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_WRAP_S: number = 10242;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE_WRAP_T: number = 10243;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE0: number = 33984;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE1: number = 33985;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE2: number = 33986;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE3: number = 33987;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE4: number = 33988;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE5: number = 33989;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE6: number = 33990;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE7: number = 33991;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE8: number = 33992;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE9: number = 33993;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE10: number = 33994;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE11: number = 33995;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE12: number = 33996;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE13: number = 33997;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE14: number = 33998;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE15: number = 33999;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE16: number = 34000;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE17: number = 34001;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE18: number = 34002;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE19: number = 34003;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE20: number = 34004;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE21: number = 34005;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE22: number = 34006;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE23: number = 34007;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE24: number = 34008;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE25: number = 34009;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE26: number = 34010;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE27: number = 34011;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE28: number = 34012;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE29: number = 34013;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE30: number = 34014;
+
+    //Interfaces do not have static fields - public static readonly GL_TEXTURE31: number = 34015;
+
+    //Interfaces do not have static fields - public static readonly GL_TRIANGLE_FAN: number = 6;
+
+    //Interfaces do not have static fields - public static readonly GL_TRIANGLE_STRIP: number = 5;
+
+    //Interfaces do not have static fields - public static readonly GL_TRIANGLES: number = 4;
+
+    //Interfaces do not have static fields - public static readonly GL_TRUE: number = 1;
+
+    //Interfaces do not have static fields - public static readonly GL_UNPACK_ALIGNMENT: number = 3317;
+
+    //Interfaces do not have static fields - public static readonly GL_UNSIGNED_BYTE: number = 5121;
+
+    //Interfaces do not have static fields - public static readonly GL_UNSIGNED_SHORT: number = 5123;
+
+    //Interfaces do not have static fields - public static readonly GL_UNSIGNED_SHORT_4_4_4_4: number = 32819;
+
+    //Interfaces do not have static fields - public static readonly GL_UNSIGNED_SHORT_5_5_5_1: number = 32820;
+
+    //Interfaces do not have static fields - public static readonly GL_UNSIGNED_SHORT_5_6_5: number = 33635;
+
+    //Interfaces do not have static fields - public static readonly GL_VENDOR: number = 7936;
+
+    //Interfaces do not have static fields - public static readonly GL_VERSION: number = 7938;
+
+    //Interfaces do not have static fields - public static readonly GL_VERTEX_ARRAY: number = 32884;
+
+    //Interfaces do not have static fields - public static readonly GL_XOR: number = 5382;
+
+    //Interfaces do not have static fields - public static readonly GL_ZERO: number = 0;
 
     glActiveTexture(texture: number)
 

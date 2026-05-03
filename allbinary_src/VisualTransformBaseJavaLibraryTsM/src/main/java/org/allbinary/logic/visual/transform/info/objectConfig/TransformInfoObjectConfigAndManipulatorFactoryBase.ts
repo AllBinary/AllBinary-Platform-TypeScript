@@ -69,7 +69,7 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -83,7 +83,7 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation
@@ -96,7 +96,7 @@ var transformInfoInterface = transformInfoInterface
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
     //var abeClientInformation = abeClientInformation

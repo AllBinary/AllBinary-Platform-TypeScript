@@ -63,7 +63,7 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAnalog(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
 var allbinaryLayerManager = allbinaryLayerManager

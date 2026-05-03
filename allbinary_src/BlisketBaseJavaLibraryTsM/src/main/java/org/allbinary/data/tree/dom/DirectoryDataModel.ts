@@ -106,7 +106,7 @@ this.transformDocumentInterface= TransformDocumentFactory.getInstance() as Trans
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getTransformInfoInterface(): TransformInfoInterface{
 
@@ -135,7 +135,7 @@ this.transformDocumentInterface= transformDocumentInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
     //var document = document
@@ -181,7 +181,7 @@ dirNode!.appendChild(fileNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlDoc(): Document{
 
@@ -193,7 +193,7 @@ dirNode!.appendChild(fileNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

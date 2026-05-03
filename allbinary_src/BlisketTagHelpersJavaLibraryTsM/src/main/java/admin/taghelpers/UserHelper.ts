@@ -205,7 +205,7 @@ stringBuffer!.append(" from to the user table");
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public insert(): string{
 

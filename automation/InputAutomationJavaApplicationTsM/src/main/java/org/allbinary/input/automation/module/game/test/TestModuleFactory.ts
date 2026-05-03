@@ -62,7 +62,7 @@ import { RunnableInterface } from "../../../../../../../org/allbinary/thread/Run
 export class TestModuleFactory extends AbstractInputAutomationFactory {
         
 
-    private NAME: string = "Test New Game" +InputAutomationModuleData.MODULE_NAME_END;
+    private static NAME: string = "Test New Game" +InputAutomationModuleData.MODULE_NAME_END;
 
     private blankModuleConfigurationJPanel: BlankModuleConfigurationJPanel
 public constructor (){
@@ -94,7 +94,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(): RunnableInterface{

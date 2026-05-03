@@ -51,7 +51,7 @@ import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
 export interface PathFindingNodeCostInfoFactoryInterface extends PathFindingNodeCostInfoFactoryBaseInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo
 

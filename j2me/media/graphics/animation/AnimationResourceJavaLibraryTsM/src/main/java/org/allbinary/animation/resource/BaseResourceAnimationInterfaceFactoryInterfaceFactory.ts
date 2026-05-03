@@ -123,7 +123,7 @@ this.name= name;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(level: number){
     //var level = level
@@ -139,7 +139,7 @@ this.setInitialized(true);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initImageCache(imageCache: ImageCache, level: number){
     //var imageCache = imageCache
@@ -147,7 +147,7 @@ this.setInitialized(true);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public add(resource: string, animationInterfaceFactoryInterface: BasicAnimationInterfaceFactoryInterface){
     //var resource = resource
@@ -170,7 +170,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
@@ -202,7 +202,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRectangle(resource: string): Rectangle{
     //var resource = resource
@@ -234,7 +234,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addRectangle(resource: string, rectangle: Rectangle){
     //var resource = resource
@@ -244,7 +244,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRectangleArrayOfArrays(resource: string): Rectangle[][]{
     //var resource = resource
@@ -257,7 +257,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public addRectangleArrayOfArrays(resource: string, rectangleArrayOfArrays: Rectangle[][]){
     //var resource = resource

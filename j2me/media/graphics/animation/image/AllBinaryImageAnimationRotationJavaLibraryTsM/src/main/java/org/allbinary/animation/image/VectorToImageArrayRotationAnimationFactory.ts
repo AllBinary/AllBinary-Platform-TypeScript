@@ -107,7 +107,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     init(){
 
@@ -121,7 +121,7 @@ this.imageArray= ImageToRotationImageArrayUtil.getInstance()!.generate(this.getI
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId

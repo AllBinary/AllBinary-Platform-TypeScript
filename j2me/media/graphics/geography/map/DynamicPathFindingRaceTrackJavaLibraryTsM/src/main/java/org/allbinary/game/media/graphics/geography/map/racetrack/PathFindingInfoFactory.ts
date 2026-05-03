@@ -106,7 +106,7 @@ import { BasicArrayListS } from "../../../../../../../../org/allbinary/util/Basi
 export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
         
 
-    private instance: PathFindingInfoFactory
+    private static instance: PathFindingInfoFactory
 
     public static getInstance(): PathFindingInfoFactory{
 
@@ -156,7 +156,7 @@ this.pathFinderGraphVisitorFactoryInterface= pathFinderGraphVisitorFactoryInterf
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, mapArray: number[][]): PathFindingInfo{
     //var geographicMapInterface = geographicMapInterface
@@ -182,7 +182,7 @@ pathFindingInfo!.setPathFinder(this.basicGeographicMapPathFinder);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface
@@ -195,7 +195,7 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     buildPathFindingNodesForCellPosition(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][], cellPosition: GeographicMapCellPosition){
     //var geographicMapInterface = geographicMapInterface
@@ -282,7 +282,7 @@ pathFindingNodeCostInfoFactoryInterface!.create(geographicMapInterface, goingToG
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
     //var geographicMapInterface = geographicMapInterface

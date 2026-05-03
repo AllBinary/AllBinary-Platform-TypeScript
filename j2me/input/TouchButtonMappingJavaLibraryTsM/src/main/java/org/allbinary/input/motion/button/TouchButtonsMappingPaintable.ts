@@ -108,7 +108,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "updateRectangle", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     createPaintableTable(): Paintable[][]{
 

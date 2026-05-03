@@ -145,7 +145,7 @@ this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     addDbUser(hostName: string, db: string, userName: string, password: string): boolean{
 var hostName = hostName

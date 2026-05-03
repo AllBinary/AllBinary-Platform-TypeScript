@@ -106,7 +106,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
     private lastGameNotificationEvent: GameNotificationEvent = GameNotification.NULL_GAME_NOTIFICATION_EVENT;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent){
     //var gameNotificationEvent = gameNotificationEvent
@@ -134,7 +134,7 @@ var permanent = permanent
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processTick(){
 }

@@ -67,7 +67,7 @@ public constructor (anyType: any = {}){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStoreName(): string{
 

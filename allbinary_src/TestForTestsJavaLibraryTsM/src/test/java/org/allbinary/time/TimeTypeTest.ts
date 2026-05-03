@@ -120,13 +120,13 @@ this.hour= hour;
 
     getNightOrDay_returns_expected_label(){
 
-    var nightUtil: TimeTypeUtil = new TestableTimeTypeUtil(0);
+    var nightUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(0);
 ;
     
 Assertions.assertEquals(nightUtil!.NIGHT, nightUtil!.getNightOrDay());
     
 
-    var dayUtil: TimeTypeUtil = new TestableTimeTypeUtil(12);
+    var dayUtil: TimeTypeUtil = new this.TestableTimeTypeUtil(12);
 ;
     
 Assertions.assertEquals(dayUtil!.DAY, dayUtil!.getNightOrDay());

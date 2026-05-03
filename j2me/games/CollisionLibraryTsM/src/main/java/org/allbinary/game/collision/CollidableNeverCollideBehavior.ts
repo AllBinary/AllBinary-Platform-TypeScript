@@ -81,7 +81,7 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collide(allbinaryCollidableLayer: CollidableCompositeLayer){
 var allbinaryCollidableLayer = allbinaryCollidableLayer

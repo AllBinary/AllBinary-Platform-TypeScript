@@ -124,7 +124,7 @@ this.collidable= collidable;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collide(allbinaryCollidableLayer: CollidableCompositeLayer){
 var allbinaryCollidableLayer = allbinaryCollidableLayer
@@ -161,7 +161,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface

@@ -77,7 +77,7 @@ export class AnimationFactoryImageScaleUtil
 
     private readonly imageScaleUtil: ImageJ2MEScaleUtil = ImageJ2MEScaleUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Image{
     //var image = image
@@ -134,7 +134,7 @@ export class AnimationFactoryImageScaleUtil
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAdjust(baseImageAnimationFactory: BaseImageAnimationFactory){
     //var baseImageAnimationFactory = baseImageAnimationFactory

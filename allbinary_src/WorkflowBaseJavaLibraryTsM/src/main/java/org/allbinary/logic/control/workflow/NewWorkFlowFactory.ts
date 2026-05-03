@@ -96,7 +96,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class, LicensingException::class)
+                //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation
@@ -184,7 +184,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 }
 
 
-                //@Throws(Exception::class, LicensingException::class)
+                //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): WorkFlowInterface{
     //var abeClientInformation = abeClientInformation

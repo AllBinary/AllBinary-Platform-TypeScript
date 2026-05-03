@@ -80,9 +80,9 @@ private constructor (){
         }
 
 
-    public init(view: View){
+    public initView(view: View){
 var view = view
-super.init(view);
+super.initView(view);
     
 this.frameProcessingTimeElapsed= this.getTimeDelayHelper()!.getStartTime();
     

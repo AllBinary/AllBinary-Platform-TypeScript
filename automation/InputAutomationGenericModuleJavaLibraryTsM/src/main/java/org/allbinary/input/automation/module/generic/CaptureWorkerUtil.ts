@@ -62,7 +62,7 @@ export class CaptureWorkerUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static processProfileActionConditions(vector: Vector, frame: number){
 var vector = vector

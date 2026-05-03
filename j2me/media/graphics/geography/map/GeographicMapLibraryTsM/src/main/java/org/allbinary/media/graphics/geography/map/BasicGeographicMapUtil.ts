@@ -70,7 +70,7 @@ export class BasicGeographicMapUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getBorderingRow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
     //var direction = direction
@@ -81,36 +81,46 @@ export class BasicGeographicMapUtil
     
 
 
-        when (direction) {
-            0 -> {
+        switch (direction) {
+            
+
+                    case 0: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow();;
     
 }
-1 -> {
+
+
+                    case 1: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow();;
     
 }
-2 -> {
+
+
+                    case 2: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow() +LOCATION_CHANGE;
     
 }
-3 -> {
+
+
+                    case 3: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow() -LOCATION_CHANGE;
     
 }
-else -> {
+
+
+                    case else: {
 
 
                             throw new Exception("Only Four Directions");
@@ -123,7 +133,7 @@ else -> {
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getBorderingColumn(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
     //var direction = direction
@@ -134,36 +144,46 @@ else -> {
     
 
 
-        when (direction) {
-            0 -> {
+        switch (direction) {
+            
+
+                    case 0: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn() -LOCATION_CHANGE;
     
 }
-1 -> {
+
+
+                    case 1: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn() +LOCATION_CHANGE;
     
 }
-2 -> {
+
+
+                    case 2: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn();;
     
 }
-3 -> {
+
+
+                    case 3: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn();;
     
 }
-else -> {
+
+
+                    case else: {
 
 
                             throw new Exception("Only Four Directions");
@@ -176,7 +196,7 @@ else -> {
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public isSameCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): boolean{
     //var fromGeographicMapCellPosition = fromGeographicMapCellPosition

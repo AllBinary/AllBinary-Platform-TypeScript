@@ -56,7 +56,7 @@ export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
 
     private readonly gyroSensorUpdateProcessor: Processor = new GyroSensorUpdateProcessor();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(anyType: any = {}){
 var anyType = anyType
@@ -65,7 +65,7 @@ this.setNoSensors();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public sendNotifications(anyType: any = {}){
 var anyType = anyType

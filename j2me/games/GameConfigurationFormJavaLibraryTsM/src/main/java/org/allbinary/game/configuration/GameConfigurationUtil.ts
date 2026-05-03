@@ -86,7 +86,7 @@ export class GameConfigurationUtil
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public change(gameOptionsForm: GameOptionsForm, gauge: GameConfigurationGauge){
 var gameOptionsForm = gameOptionsForm
@@ -112,7 +112,7 @@ this.updateChallange(gameOptionsForm, gameConfiguration);
 
     private readonly TO: string = " to: ";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(gauge: GameConfigurationGauge){
 var gauge = gauge
@@ -155,7 +155,7 @@ gameConfiguration!.setValue(value);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public setDefault(gauge: GameConfigurationGauge){
 var gauge = gauge
@@ -188,7 +188,7 @@ gameConfiguration!.setValue(gameConfiguration!.getDefaultValue());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public updateChallange(gameOptionsForm: GameOptionsForm, gameConfiguration: GameConfiguration){
 var gameOptionsForm = gameOptionsForm

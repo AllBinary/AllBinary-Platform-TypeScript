@@ -81,7 +81,7 @@ export class NumberOnOwnGroupSequenceAIFactory
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
     //var hashtable = hashtable

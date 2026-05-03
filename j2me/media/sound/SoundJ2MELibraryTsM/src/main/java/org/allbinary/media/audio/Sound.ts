@@ -100,7 +100,7 @@ this.player= player;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(){
 }

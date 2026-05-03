@@ -73,7 +73,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileInputStreamInstance(path: string, fileName: string): AbFileInputStream{
 var path = path
@@ -95,7 +95,7 @@ var fileName = fileName
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
 var path = path
@@ -128,7 +128,7 @@ file.createNewFile();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public delete(path: string, fileName: string){
 var path = path

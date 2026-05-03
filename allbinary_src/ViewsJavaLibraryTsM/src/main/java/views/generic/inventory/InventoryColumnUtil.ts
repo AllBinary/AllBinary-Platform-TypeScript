@@ -113,7 +113,7 @@ index < size; index++)
 ;
     
 
-                        if(!StringValidationUtil.getInstance()!.isEmpty(categoryName); && categoryName!.startsWith(category))
+                        if(!StringValidationUtil.getInstance()!.isEmpty(categoryName) && categoryName!.startsWith(category))
                         
                                     {
                                     keywords.add(hashMap!.get(column as Object));

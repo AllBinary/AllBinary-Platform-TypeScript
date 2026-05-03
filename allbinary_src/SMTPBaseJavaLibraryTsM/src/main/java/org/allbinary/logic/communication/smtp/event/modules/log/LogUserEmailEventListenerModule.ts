@@ -64,7 +64,7 @@ public constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onEmailSendRequest(userEmailInfoEvent: EmailEvent){
 var userEmailInfoEvent = userEmailInfoEvent

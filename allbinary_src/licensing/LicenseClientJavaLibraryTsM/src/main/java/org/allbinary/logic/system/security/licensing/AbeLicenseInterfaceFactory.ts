@@ -99,7 +99,7 @@ private constructor (){
         }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public getLicenseInstance(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
     //var abeClientInformation = abeClientInformation
@@ -129,7 +129,7 @@ private constructor (){
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
     //var abeClientInformation = abeClientInformation
@@ -202,7 +202,7 @@ this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
 
                         if(this.abeLicenseInterface == 
                                     null
-                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !this.abeLicenseInterface!.hasKey(); || isCheck() || currentTime -checkPeriod > time)
+                                 || this.abeLicenseInterface == AbeNoLicense.getInstance() || !this.abeLicenseInterface!.hasKey() || isCheck() || currentTime -checkPeriod > time)
                         
                                     {
                                     this.abeLicenseInterface= 

@@ -152,7 +152,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPaymentGatewayInterfaceFactoryInterface(): PaymentGatewayInterfaceFactoryInterface{
 
@@ -178,7 +178,7 @@ BasicPaymentTypeUtil.getInstance()!.add(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPaymentGatewayDomNodeFactoryInterface(): PaymentGatewayDomNodeFactoryInterface{
 

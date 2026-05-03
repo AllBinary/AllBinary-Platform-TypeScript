@@ -111,7 +111,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     collideNone(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -133,7 +133,7 @@ this.chase(collidableInterfaceCompositeInterface);
 }
 
 
-export inner class SimpleSteeringVisitor extends SteeringVisitor {
+SimpleSteeringVisitor = class extends SteeringVisitor {
         
 
     public visit(anyType: any = {}): any{
@@ -206,9 +206,9 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 }
                 
             
-    private readonly simpleSteeringVisitor: SimpleSteeringVisitor = new SimpleSteeringVisitor();
+    private readonly simpleSteeringVisitor: SimpleSteeringVisitor = new this.SimpleSteeringVisitor();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     steer(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -268,7 +268,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     chase(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
@@ -312,7 +312,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     collideUnit(unitLayer: UnitLayer){
     //var unitLayer = unitLayer

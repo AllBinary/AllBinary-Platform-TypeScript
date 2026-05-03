@@ -103,7 +103,7 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document
@@ -152,7 +152,7 @@ this.addDomNodeInterface(new StatesView() as DomNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

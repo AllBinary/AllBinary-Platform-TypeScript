@@ -93,7 +93,7 @@ this.soundsFactoryInterface= soundsFactoryInterface;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(){
 this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
@@ -179,7 +179,7 @@ this.logUtil!.putF(commonStrings!.END, this, commonStrings!.INIT);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public stopAll(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.STOP_ALL);
@@ -233,7 +233,7 @@ progressCanvas!.addPortion(100, this.soundStrings!.STOPPING_SOUND, index);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public closeAll(){
 this.logUtil!.putF(this.commonStrings!.START, this, this.soundStrings!.CLOSE_ALL);

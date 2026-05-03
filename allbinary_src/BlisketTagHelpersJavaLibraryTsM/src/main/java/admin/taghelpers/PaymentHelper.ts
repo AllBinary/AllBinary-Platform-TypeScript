@@ -521,7 +521,7 @@ paymentEntity!.remove(this.weblisketSession!.getUserName(), this.value);
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public update(): string{
 

@@ -9,6 +9,11 @@
     
 }
 
+  /*actual*/ public static parseInt(value: string): number {
+    return Number.parseInt(value, 10);
+
+  }
+
 
 }
                 

@@ -232,7 +232,7 @@ this.document.appendChild(contentTypeNode);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public log(): string{
 

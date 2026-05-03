@@ -82,7 +82,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public decrypt(inputStream: InputStream, key: string): number[]{
     //var inputStream = inputStream

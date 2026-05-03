@@ -95,7 +95,7 @@ this.dimension= dimension;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processList(list: BasicArrayList){
     //var list = list
@@ -124,7 +124,7 @@ this.process(layerPlacementInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(layerPlacementInterface: LayerPlacementInterface){
     //var layerPlacementInterface = layerPlacementInterface
@@ -190,7 +190,7 @@ this.layerInterfaceVisitor!.visit(layerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getPoint(layerPlacementInterface: LayerPlacementInterface): GPoint{
     //var layerPlacementInterface = layerPlacementInterface

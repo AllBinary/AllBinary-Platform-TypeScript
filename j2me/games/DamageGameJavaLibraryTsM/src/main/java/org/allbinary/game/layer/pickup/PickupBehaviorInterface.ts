@@ -48,7 +48,7 @@ import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
 export interface PickupBehaviorInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     doPickup(pickupProcessorInterface: PickupProcessorInterface)
 

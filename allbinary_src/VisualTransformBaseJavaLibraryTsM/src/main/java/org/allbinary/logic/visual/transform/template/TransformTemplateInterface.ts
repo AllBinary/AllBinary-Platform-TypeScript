@@ -46,7 +46,7 @@
 export interface TransformTemplateInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getName(): string
 

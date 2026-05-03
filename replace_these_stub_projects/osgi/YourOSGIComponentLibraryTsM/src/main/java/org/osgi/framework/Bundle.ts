@@ -32,11 +32,11 @@ export interface Bundle {
 
     getSymbolicName(): string
 
-                //@Throws(BundleException::class)
+                //@Throws(BundleException.constructor)
             
     start()
 
-                //@Throws(BundleException::class)
+                //@Throws(BundleException.constructor)
             
     start(options: number)
 

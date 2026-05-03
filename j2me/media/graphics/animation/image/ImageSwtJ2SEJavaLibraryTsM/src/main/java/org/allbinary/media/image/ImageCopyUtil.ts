@@ -135,7 +135,7 @@ private constructor (){
 
     private readonly NO_COPY: string = "SWT should not copy images after initial loading as the alpha is not honored";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageForRotation(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -171,7 +171,7 @@ image= this.openGLUtil!.add(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImage(originalImage: Image): Image{
     //var originalImage = originalImage
@@ -254,7 +254,7 @@ image= this.openGLUtil!.add(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageWH(originalImage: Image, width: number, height: number, mutable: boolean): Image{
     //var originalImage = originalImage
@@ -403,7 +403,7 @@ image= this.openGLUtil!.add(image);
 
     private readonly LEADERBOARD: string = "leaderboard";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImage2(originalImage: Image, width: number, height: number, mutable: boolean): Image{
     //var originalImage = originalImage
@@ -538,7 +538,7 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
     var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
 ;
     
-openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth(); /40 /openGLESImageProperties!.scaleX;
+openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth() /40 /openGLESImageProperties!.scaleX;
     
 
                                     }
@@ -653,7 +653,7 @@ image= this.openGLUtil!.add(image);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
     //var originalImage = originalImage

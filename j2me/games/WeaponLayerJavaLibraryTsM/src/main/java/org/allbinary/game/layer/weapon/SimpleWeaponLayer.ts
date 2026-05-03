@@ -72,7 +72,7 @@ import { CollidableWeaponBehavior } from "./CollidableWeaponBehavior.js";
 export class SimpleWeaponLayer extends WeaponLayer {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static createDestroyed(): Animation{
 

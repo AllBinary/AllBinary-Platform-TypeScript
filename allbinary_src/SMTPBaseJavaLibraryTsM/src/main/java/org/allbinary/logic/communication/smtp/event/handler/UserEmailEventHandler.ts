@@ -76,7 +76,7 @@ public constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public receiveEmailInfo(userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo){
@@ -133,7 +133,7 @@ this.emailVector!.remove(emailEventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireEmailEvent(){

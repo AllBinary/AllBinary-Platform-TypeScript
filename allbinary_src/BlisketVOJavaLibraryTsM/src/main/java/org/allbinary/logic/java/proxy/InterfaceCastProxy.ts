@@ -76,7 +76,7 @@ this.anyType= anyType;
 }
 
 
-                //@Throws(Throwable::class)
+                //@Throws(Throwable.constructor)
             
     public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any{
 var proxyObject = proxyObject

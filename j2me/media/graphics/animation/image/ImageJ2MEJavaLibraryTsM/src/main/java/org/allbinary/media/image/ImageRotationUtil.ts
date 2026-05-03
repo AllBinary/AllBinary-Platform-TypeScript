@@ -73,7 +73,7 @@ private constructor (){
 
     private anchor: number = Anchor.TOP_LEFT;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
     //var originalImage = originalImage

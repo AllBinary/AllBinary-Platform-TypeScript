@@ -198,7 +198,7 @@ this.init();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -245,7 +245,7 @@ TrackingEventHandler.getInstance()!.addListener(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     target(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager
@@ -399,7 +399,7 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     verticalTargeting(x: number){
 var x = x
@@ -437,7 +437,7 @@ var x = x
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     horizontalTargeting(y: number){
 var y = y
@@ -485,7 +485,7 @@ TrackingEventHandler.getInstance()!.removeListener(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     moveRight(){
 this.setLastDirection(this.directionFactory!.RIGHT);
@@ -497,7 +497,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     moveLeft(){
 this.setLastDirection(this.directionFactory!.LEFT);
@@ -509,7 +509,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     moveDown(){
 this.setLastDirection(this.directionFactory!.DOWN);
@@ -521,7 +521,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     moveUp(){
 this.setLastDirection(this.directionFactory!.UP);
@@ -533,7 +533,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     dive(){
 this.directionalInterface!.setFrameByDirection(this.directionOfTarget);
@@ -543,7 +543,7 @@ this.aiVistor!.visit(this);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     attack(){
 super.processKeyAI(Canvas.KEY_NUM1);
@@ -551,7 +551,7 @@ super.processKeyAI(Canvas.KEY_NUM1);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     drop(){
 

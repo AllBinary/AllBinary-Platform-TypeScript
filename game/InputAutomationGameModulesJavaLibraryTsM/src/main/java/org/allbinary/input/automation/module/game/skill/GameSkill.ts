@@ -60,7 +60,7 @@ export class GameSkill
          {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static hashMap: HashMap<any, any> = new HashMap<any, any>();
 
     public static getInstance(gameSkillType: GameSkillType, extra: string): GameSkill{
 var gameSkillType = gameSkillType

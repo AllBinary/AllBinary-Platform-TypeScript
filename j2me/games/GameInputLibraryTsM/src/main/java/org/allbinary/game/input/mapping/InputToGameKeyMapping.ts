@@ -284,7 +284,7 @@ index < this.platformToGameKeyMapping!.length; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initGameKey(canvas: Canvas, gameKey: GameKey){
 var canvas = canvas
@@ -328,7 +328,7 @@ var gameKey = gameKey
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getSmallestCanvasGameKeyCode(canvas: Canvas): number{
 var canvas = canvas

@@ -92,7 +92,7 @@ export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayer
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
 var layerManager = layerManager
@@ -169,7 +169,7 @@ var eventObject = eventObject
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public onDestroyed(destroyedEvent: DestroyedEvent){
 var destroyedEvent = destroyedEvent
@@ -181,7 +181,7 @@ var destroyedEvent = destroyedEvent
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

@@ -159,7 +159,7 @@ numberStringArray[index]= index.toString();
 
 
     public process(){
-new Thread()
+new class extends Thread
                                 {
                                 
     public run(){
@@ -324,7 +324,7 @@ this.aboveJButton= new javax.swing.JButton();
     
 this.aboveJButton!.setText("Process");
     
-this.aboveJButton!.addActionListener(new java.awt.event.ActionListener()
+this.aboveJButton!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){

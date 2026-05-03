@@ -60,7 +60,7 @@ export class PaintableToImageUtil
 
     private static readonly instance: PaintableToImageUtil = new PaintableToImageUtil();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getImage(paintableInterface: PaintableInterface, width: number, height: number): Image{
 var paintableInterface = paintableInterface

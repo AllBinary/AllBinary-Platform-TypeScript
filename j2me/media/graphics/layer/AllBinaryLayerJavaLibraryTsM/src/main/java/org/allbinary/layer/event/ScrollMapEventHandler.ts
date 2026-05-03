@@ -57,7 +57,7 @@ import { ScrollMapEvent } from "./ScrollMapEvent.js";
 export class ScrollMapEventHandler extends BasicEventHandler {
         
 
-    private SINGLETON: ScrollMapEventHandler = new ScrollMapEventHandler();
+    private static SINGLETON: ScrollMapEventHandler = new ScrollMapEventHandler();
 
     public static getInstance(): ScrollMapEventHandler{
 
@@ -74,7 +74,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
 var eventObject = eventObject

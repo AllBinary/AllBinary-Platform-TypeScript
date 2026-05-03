@@ -49,7 +49,7 @@ import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLaye
 export interface PickupProcessorInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(sourceLayerInterface: AllBinaryLayer)
 

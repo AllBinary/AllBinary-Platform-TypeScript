@@ -126,7 +126,7 @@ var values = values
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public get(userName: string, id: number): QuoteRequest{
 var userName = userName

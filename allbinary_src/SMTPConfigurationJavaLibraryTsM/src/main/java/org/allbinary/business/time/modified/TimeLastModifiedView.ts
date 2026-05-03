@@ -85,7 +85,7 @@ this.setTimeLastModified(new TimeLastModified(DomNodeHelper.getTextNodeValue(nod
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
 var document = document

@@ -53,7 +53,7 @@ import { LicensingException } from "../org/allbinary/logic/system/security/licen
 export interface TagHelperFactoryInterface {
         
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any
 

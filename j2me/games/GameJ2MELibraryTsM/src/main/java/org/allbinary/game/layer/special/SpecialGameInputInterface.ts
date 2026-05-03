@@ -55,51 +55,51 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 export interface SpecialGameInputInterface extends PaintableInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     up()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     down()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     right()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     left()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     strafeLeft()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     strafeRight()
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent)
 

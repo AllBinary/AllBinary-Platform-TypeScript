@@ -53,9 +53,9 @@ export class MediaData
          {
         
 
-    private hashMap: HashMap<any, any> = new HashMap<any, any>();
+    private static hashMap: HashMap<any, any> = new HashMap<any, any>();
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static get(a_Name: string): MediaData{
 var a_Name = a_Name

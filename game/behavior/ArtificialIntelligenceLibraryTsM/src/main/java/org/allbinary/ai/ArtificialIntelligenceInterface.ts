@@ -52,7 +52,7 @@ import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLay
 export interface ArtificialIntelligenceInterface extends IdentifierInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     processAI(layerManager: AllBinaryLayerManager)
 

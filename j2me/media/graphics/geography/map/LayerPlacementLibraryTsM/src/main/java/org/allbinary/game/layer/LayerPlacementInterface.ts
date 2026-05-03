@@ -56,7 +56,7 @@ export interface LayerPlacementInterface {
 
     getLayerType(): LayerPlacementType
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     getInstance(): Hashtable<any, any>
 

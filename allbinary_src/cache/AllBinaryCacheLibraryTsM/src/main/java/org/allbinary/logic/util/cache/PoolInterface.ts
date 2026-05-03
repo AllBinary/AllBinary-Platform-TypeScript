@@ -48,7 +48,7 @@ import { CacheableInterface } from "./CacheableInterface.js";
 export interface PoolInterface extends CacheInterface {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     remove(key: any): CacheableInterface
 

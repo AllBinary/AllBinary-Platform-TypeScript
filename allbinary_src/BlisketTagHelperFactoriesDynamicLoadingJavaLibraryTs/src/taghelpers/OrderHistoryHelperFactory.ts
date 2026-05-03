@@ -62,7 +62,7 @@ export class OrderHistoryHelperFactory
 
     private static readonly FACTORYNAME: string = "taghelpers.OrderHistoryHelperFactory";
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
 var hashMap = hashMap

@@ -55,7 +55,7 @@ export class IndexedAnimationToImageArrayUtil
          {
         
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public static getInstance(width: number, height: number, sequentialAnimationInterface: IndexedAnimation): Image[]{
 var width = width

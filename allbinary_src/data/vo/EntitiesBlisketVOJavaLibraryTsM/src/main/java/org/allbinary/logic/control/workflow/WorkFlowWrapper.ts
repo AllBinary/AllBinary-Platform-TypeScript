@@ -84,7 +84,7 @@ this.anyType= anyType;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getName(): string{
 
@@ -136,7 +136,7 @@ this.anyType= anyType;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getStoreName(): string{
 
@@ -188,7 +188,7 @@ this.anyType= anyType;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(): number{
 

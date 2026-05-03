@@ -123,7 +123,7 @@ import { KeyEvent } from "./KeyEvent.js";
 export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, MyCanvasEventListener, EventListener, Runnable {
         
 
-    private document: org.w3c.dom.Document
+    private static document: org.w3c.dom.Document
 
     public static getDocument(): Document{
 
@@ -524,7 +524,7 @@ this.select(this.canvasJPanelList!.size() -1);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     duplicate(treeNode: MutableTreeNode){
 var treeNode = treeNode
@@ -552,7 +552,7 @@ this.initDuplicate(canvasJPanel!.duplicate());
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public autoRotate(increments: number, totalAngle: number){
 var increments = increments
@@ -596,7 +596,7 @@ canvasJPanel!.explodeAll();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public autoExplode(numberOfFrames: number, explodeType: number){
 var numberOfFrames = numberOfFrames
@@ -626,7 +626,7 @@ this.initDuplicate(newCanvasJPanel);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public autoMirror(){
 
@@ -706,7 +706,7 @@ var treeNode = treeNode
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public toDocument(): Document{
 document= DomHelper.getInstance()!.createDocument();
@@ -769,7 +769,7 @@ this.innerJPanel= new javax.swing.JPanel();
     
 setLayout(new java.awt.GridLayout(1, 1));
     
-this.innerJPanel!.addKeyListener(new java.awt.event.KeyAdapter()
+this.innerJPanel!.addKeyListener(new class extends java.awt.event.KeyAdapter
                                 {
                                 
     public keyTyped(evt: java.awt.event.KeyEvent){
@@ -862,7 +862,7 @@ this.select(frameInt);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public duplicate(evt: MyCanvasEvent){
 var evt = evt
@@ -923,7 +923,7 @@ this.explodeAll();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public autoExplode(evt: MyCanvasEvent){
 var evt = evt
@@ -932,7 +932,7 @@ this.autoExplode(10, 0);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public center(){
 
@@ -944,7 +944,7 @@ canvasJPanel!.center();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public center(evt: MyCanvasEvent){
 var evt = evt

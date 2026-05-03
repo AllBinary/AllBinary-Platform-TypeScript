@@ -176,7 +176,7 @@ this.imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, total
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
 var originalImage = originalImage

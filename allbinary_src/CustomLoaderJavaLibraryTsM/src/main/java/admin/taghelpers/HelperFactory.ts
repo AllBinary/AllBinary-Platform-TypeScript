@@ -72,7 +72,7 @@ export class HelperFactory
          {
         
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
     //var abeClientInformation = abeClientInformation
@@ -167,7 +167,7 @@ params[1]= httpServletRequest as Object;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any{
     //var abeClientInformation = abeClientInformation
@@ -262,7 +262,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any{
     //var abeClientInformation = abeClientInformation
@@ -362,7 +362,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string): any{
     //var abeClientInformation = abeClientInformation

@@ -70,7 +70,7 @@ import { LayerManagerEventListenerInterface } from "./LayerManagerEventListenerI
 export class LayerManagerEventHandler extends BasicEventHandler {
         
 
-    private instance: LayerManagerEventHandler = new LayerManagerEventHandler();
+    private static instance: LayerManagerEventHandler = new LayerManagerEventHandler();
 
     public static getInstance(): LayerManagerEventHandler{
 
@@ -120,7 +120,7 @@ super.removeListener(eventListenerInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
     //var eventObject = eventObject
@@ -159,7 +159,7 @@ super.fireEvent(eventObject);
 
     public readonly DELETE: string = "Delete";
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireDeleteEvent(eventObject: AllBinaryEventObject){
@@ -232,7 +232,7 @@ index++;
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject

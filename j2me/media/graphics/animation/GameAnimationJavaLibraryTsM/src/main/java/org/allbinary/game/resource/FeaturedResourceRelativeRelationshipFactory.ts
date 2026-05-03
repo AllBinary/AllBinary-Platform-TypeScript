@@ -72,7 +72,7 @@ import { ResourceRelativeRelationshipFactoryInterface } from "./ResourceRelative
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {
         
 
-    private INSTANCE: FeaturedResourceRelativeRelationshipFactory = new FeaturedResourceRelativeRelationshipFactory();
+    private static INSTANCE: FeaturedResourceRelativeRelationshipFactory = new FeaturedResourceRelativeRelationshipFactory();
 
     public static getInstance(): FeaturedResourceRelativeRelationshipFactory{
 
@@ -91,7 +91,7 @@ private constructor (){
 
     private readonly basicArrayListUtil: BasicArrayListUtil = BasicArrayListUtil.getInstance()!;
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public getRelativeRelationshipList(resource: string, layer: AllBinaryLayer): BasicArrayList{
 var resource = resource
@@ -151,7 +151,7 @@ index < size; index++)
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     duplicate(list: BasicArrayList, layer: AllBinaryLayer): BasicArrayList{
     //var list = list

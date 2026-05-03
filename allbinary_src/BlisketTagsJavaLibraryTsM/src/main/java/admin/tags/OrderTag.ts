@@ -106,7 +106,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     process(): string{
 
@@ -174,7 +174,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(LicensingException::class)
+                //@Throws(LicensingException.constructor)
             
     setPaymentGateway(): Boolean{
 
@@ -242,7 +242,7 @@ this.storeName= value;
 }
 
 
-                //@Throws(JspTagException::class)
+                //@Throws(JspTagException.constructor)
             
     public doStartTag(): number{
 

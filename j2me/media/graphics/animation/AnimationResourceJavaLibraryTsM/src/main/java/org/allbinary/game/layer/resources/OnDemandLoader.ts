@@ -100,7 +100,7 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public init(imageCache: ImageCache, level: number, loadingString: string){
     //var imageCache = imageCache
@@ -148,7 +148,7 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initAll(imageCache: ImageCache, loadingString: string){
     //var imageCache = imageCache
@@ -189,7 +189,7 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface, imageCache: ImageCache, level: number, loadingString: string){
     //var layerPlacementInterfaceBasicArrayListFactoryInterface = layerPlacementInterfaceBasicArrayListFactoryInterface

@@ -149,7 +149,7 @@ private constructor (){
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImageForResize(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -199,7 +199,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage2(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -249,7 +249,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage3(bufferedImageArray: BufferedImage[], width: number, height: number, scale: boolean): BufferedImage[]{
     //var bufferedImageArray = bufferedImageArray
@@ -286,7 +286,7 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[ind
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImageForSave(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -301,7 +301,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -317,7 +317,7 @@ var newHeight = newHeight
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImageAllowTranslate(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): BufferedImage{
     //var bufferedImage = bufferedImage
@@ -408,7 +408,7 @@ graphics.drawRenderedImage(bufferedImage, affineTransform);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public createBufferedImageWithLargerCanvas(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
     //var bufferedImage = bufferedImage

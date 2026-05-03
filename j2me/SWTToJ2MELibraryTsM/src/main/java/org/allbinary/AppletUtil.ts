@@ -46,7 +46,7 @@ export class AppletUtil
          {
         
 
-    private applet: boolean = false;
+    private static applet: boolean = false;
 
     public static setApplet(){
 applet= true;

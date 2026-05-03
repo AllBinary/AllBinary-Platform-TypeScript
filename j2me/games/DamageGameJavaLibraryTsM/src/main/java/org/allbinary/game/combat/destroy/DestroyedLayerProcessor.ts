@@ -67,7 +67,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 export class DestroyedLayerProcessor extends BasicLayerProcessor {
         
 
-    private DESTROYED_LAYER_PROCESSOR: BasicLayerProcessor = BasicLayerProcessor.NULL_LAYER_PROCESSOR;
+    private static DESTROYED_LAYER_PROCESSOR: BasicLayerProcessor = BasicLayerProcessor.NULL_LAYER_PROCESSOR;
 
     public static init(){
 DESTROYED_LAYER_PROCESSOR= new DestroyedLayerProcessor();
@@ -90,7 +90,7 @@ private constructor (){
         }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
 var allBinaryLayerManager = allBinaryLayerManager

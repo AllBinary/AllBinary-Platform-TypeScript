@@ -26,7 +26,7 @@
         
             import { Integer } from "../../../../java/lang/Integer.js";
         
-import { Choice } from "../../../../javax/microedition/lcdui/Choice.js";
+import { Choice } from "../../../../javax/microedition/lcdui/ChoiceI.js";
 
     
 import { ChoiceGroup } from "../../../../javax/microedition/lcdui/ChoiceGroup.js";
@@ -121,7 +121,7 @@ this.save();
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public save(){
 
@@ -148,12 +148,12 @@ this.setCommandListener(cmdListener);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public update(){
 this.deleteAll();
     
-this.add(this.list, "Difficulty", Choice.EXCLUSIVE);
+this.add(this.list, "Difficulty", ChoiceI.EXCLUSIVE);
     
 super.update();
     

@@ -83,7 +83,7 @@ this.addDomNodeInterface(new UserDomNode(this.user) as DomNodeInterface);
 }
 
 
-                //@Throws(Exception::class)
+                //@Throws(Exception.constructor)
             
     public view(): string{
 

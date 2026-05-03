@@ -181,7 +181,7 @@ this.released= true;
                                     }
                                 
 
-                        if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.NO_MOTION && !this.timeHelper!.isTimeTNT();)
+                        if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.NO_MOTION && !this.timeHelper!.isTimeTNT())
                         
                                     {
                                     this.logUtil!.putF(this.FAST_REPEAT, this, METHOD_NAME);
