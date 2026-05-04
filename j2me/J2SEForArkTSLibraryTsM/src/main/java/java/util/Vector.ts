@@ -8,5 +8,21 @@ import ArtTsVector from '@ohos.util.Vector';
              return super.has(object);
            }
 
+           public elementAt(index: number): any {
+             return super.get(index);
+           }
+
+           public insertElementAt(object: any, index: number): void {
+             super.insert(object, index);
+           }
+
+           public addElement(object: any): boolean {
+             return super.add(object);
+           }
+
+           public removeElement(object: any): boolean {
+             return super.remove(object);
+           }
+
 }
 
