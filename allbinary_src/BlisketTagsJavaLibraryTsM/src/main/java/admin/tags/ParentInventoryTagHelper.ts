@@ -87,7 +87,7 @@ var parentTag = parentTag
                                     }
                                 
                              else 
-                        if(!(parentTag is HelperTag))
+                        if(!(parentTag instanceof HelperTag))
                         
                                     {
                                     

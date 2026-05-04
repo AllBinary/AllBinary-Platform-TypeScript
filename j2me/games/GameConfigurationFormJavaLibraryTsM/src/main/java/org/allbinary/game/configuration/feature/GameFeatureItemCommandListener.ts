@@ -106,7 +106,7 @@ this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, MidletStrings.getInstance()!.COMMAND_ACTION);
     
 
-                        if(item is GameConfigurationGauge)
+                        if(item instanceof GameConfigurationGauge)
                         
                                     {
                                     GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);

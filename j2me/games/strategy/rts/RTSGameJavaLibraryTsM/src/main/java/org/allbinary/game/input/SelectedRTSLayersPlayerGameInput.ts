@@ -321,7 +321,7 @@ capital.removeMoney(upgradeCost);
                         
                                     {
                                     
-    var rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput);
+    var rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput);
 ;
     
 rtsPlayerGameInput!.updatePaintable();
@@ -390,7 +390,7 @@ capital.addMoney(downgradeCost);
                         
                                     {
                                     
-    var rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput(); as RTSPlayerGameInput);
+    var rtsPlayerGameInput: RTSPlayerGameInput = (this.rtsPlayerLayerInterface!.getPlayerGameInput() as RTSPlayerGameInput);
 ;
     
 rtsPlayerGameInput!.updatePaintable();

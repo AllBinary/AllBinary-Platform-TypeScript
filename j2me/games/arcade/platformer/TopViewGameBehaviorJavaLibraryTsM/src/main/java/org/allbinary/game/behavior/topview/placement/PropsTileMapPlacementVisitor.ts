@@ -72,7 +72,7 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
 ;
     
 
-    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex); as TileLayer);
+    var tileLayer: TileLayer = (lastMap!.getLayer(layerIndex) as TileLayer);
 ;
     
 

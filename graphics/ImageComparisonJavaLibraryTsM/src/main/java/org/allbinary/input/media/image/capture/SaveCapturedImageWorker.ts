@@ -135,7 +135,7 @@ this.setRunning(true);
 timeHelper!.setStartTimeTNT();
     
 
-    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0); as CapturedImageWorkerResultsEvent);
+    var capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent = (this.capturedImageWorkerResultsEventVector!.get(0) as CapturedImageWorkerResultsEvent);
 ;
     
 

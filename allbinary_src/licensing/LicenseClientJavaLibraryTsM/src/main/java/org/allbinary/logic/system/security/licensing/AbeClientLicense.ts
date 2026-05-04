@@ -133,7 +133,7 @@ this.hashtable= new Hashtable<any, any>();
                         
                                     {
                                     
-                        if(keyValue is String)
+                        if(keyValue instanceof String)
                         
                                     {
                                     this.hashtable.put(abeClientInformationData!.KEY, keyValue);

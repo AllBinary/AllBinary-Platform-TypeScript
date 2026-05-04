@@ -280,7 +280,7 @@ this.setFrame(this.getSize() -1);
 this.setLastFrame();
     
 
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior(); as IndexedAnimationBehavior);
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getAnimationBehavior() as IndexedAnimationBehavior);
 ;
     
 indexedAnimationBehavior!.reset();

@@ -174,7 +174,7 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME);
     public setMyCanvas(displayable: MyCanvas){
     //var displayable = displayable
 
-                        if(this.displayable is MyCanvas)
+                        if(this.displayable instanceof MyCanvas)
                         
                                     {
                                     
@@ -309,7 +309,7 @@ this.setUsedRunnable(this.runnable);
                                     }
                                 
                              else 
-                        if(this.openGlReadydisplayable is DemoCanvas || this.openGlReadydisplayable is AllBinaryGameCanvas || features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
+                        if(this.openGlReadydisplayable instanceof DemoCanvas || this.openGlReadydisplayable instanceof AllBinaryGameCanvas || features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
                                     PreLogUtil.put(stringMaker!.append(commonSeps!.SPACE)!.append(OpenGLFeatureFactory.getInstance()!.OPENGL.toString())!.append(commonSeps!.SPACE)!.append(this.RUNNABLE)!.append(this.stringUtil!.toString(this.runnable))!.toString(), this, commonStrings!.UPDATE);

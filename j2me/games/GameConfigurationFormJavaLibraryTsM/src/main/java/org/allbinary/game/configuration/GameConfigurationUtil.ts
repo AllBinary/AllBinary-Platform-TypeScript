@@ -232,7 +232,7 @@ index < size; index++)
 ;
     
 
-                        if(item is GameConfigurationGauge)
+                        if(item instanceof GameConfigurationGauge)
                         
                                     {
                                     

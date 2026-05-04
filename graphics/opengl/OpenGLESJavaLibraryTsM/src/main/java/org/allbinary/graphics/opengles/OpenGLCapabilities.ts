@@ -381,7 +381,7 @@ this.glVersion= this.VERSION_UNK;
                         }
                             
 
-                        if(gl is GL11)
+                        if(gl instanceof GL11)
                         
                                     {
                                     this.glInstanceVersion= this.VERSION_1_1;
@@ -390,7 +390,7 @@ this.glVersion= this.VERSION_UNK;
                                     }
                                 
                              else 
-                        if(gl is GL10)
+                        if(gl instanceof GL10)
                         
                                     {
                                     this.glInstanceVersion= this.VERSION_1_0;

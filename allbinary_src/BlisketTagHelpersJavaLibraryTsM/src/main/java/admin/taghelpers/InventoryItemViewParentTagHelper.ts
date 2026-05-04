@@ -275,7 +275,7 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
     public checkForValidationViewHelper(helperObject: any = {}){
 var helperObject = helperObject
 
-                        if(!(helperObject is ValidationViewHelper))
+                        if(!(helperObject instanceof ValidationViewHelper))
                         
                                     {
                                     

@@ -207,7 +207,7 @@ i < soundInterfaceArray!.length; i++)
                                     (player as PlayerComposite).getPlayerP();
     
 
-                        if(player2 is AndroidMediaPlayerWrapper)
+                        if(player2 instanceof AndroidMediaPlayerWrapper)
                         
                                     {
                                     androidMediaPlayerWrapper= player2 as AndroidMediaPlayerWrapper;

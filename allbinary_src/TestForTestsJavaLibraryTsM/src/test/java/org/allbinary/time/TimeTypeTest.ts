@@ -38,8 +38,8 @@ import { Test } from '../../../org/junit/jupiter/api/Test.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //import { TestableTimeTypeUtil } from './TestableTimeTypeUtil.js';
-import { TimeTypeUtil } from './TimeTypeUtil.js';
+        import { TimeTypeUtil } from './TimeTypeUtil.js';
+//import { TestableTimeTypeUtil } from './TestableTimeTypeUtil.js';
 
 export class TimeTypeTest
             extends Object

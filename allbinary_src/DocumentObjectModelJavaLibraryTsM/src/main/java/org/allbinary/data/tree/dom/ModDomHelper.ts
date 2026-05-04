@@ -286,7 +286,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                                     }
                                 
                              else 
-                        if(anyType is String)
+                        if(anyType instanceof String)
                         
                                     {
                                     
@@ -299,7 +299,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                                     }
                                 
                              else 
-                        if(anyType is HashMap)
+                        if(anyType instanceof HashMap)
                         
                                     {
                                     node.appendChild(ModDomHelper.createNameValueNodes(document, name, hashMap));

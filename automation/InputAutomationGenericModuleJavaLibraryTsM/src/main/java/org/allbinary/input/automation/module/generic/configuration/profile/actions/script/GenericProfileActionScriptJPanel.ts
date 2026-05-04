@@ -204,7 +204,7 @@ var evt = evt
 ;
     
 
-                        if(anyType is CustomTreeNodeInterface)
+                        if(anyType instanceof CustomTreeNodeInterface)
                         
                                     {
                                     

@@ -707,7 +707,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
 ;
     
 
-    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable(); as BasicPopupMenuPaintable);
+    var basicPopupMenuPaintable: BasicPopupMenuPaintable = (this.getOpenMenuPaintable() as BasicPopupMenuPaintable);
 ;
     
 basicPopupMenuPaintable!.init(popupMenuRectangle);
@@ -717,7 +717,7 @@ basicPopupMenuPaintable!.init(popupMenuRectangle);
                         
                                     {
                                     
-    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor(); as PopupMenuInputProcessor);
+    var popupMenuInputProcessor: PopupMenuInputProcessor = (this.getPopupMenuInputProcessor() as PopupMenuInputProcessor);
 ;
     
 popupMenuInputProcessor!.init(popupMenuRectangle);
@@ -1518,7 +1518,7 @@ this.logUtil!.putF(new StringMaker().
                             append(commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
-                        if(item is ChoiceGroup)
+                        if(item instanceof ChoiceGroup)
                         
                                     {
                                     

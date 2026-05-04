@@ -855,7 +855,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                         
                                     {
                                     
-                        if(displayable is HighScoreTextBox)
+                        if(displayable instanceof HighScoreTextBox)
                         
                                     {
                                     
@@ -972,7 +972,7 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
 ;
     
 
-                        if(tempDisplayable is GameOptionsForm)
+                        if(tempDisplayable instanceof GameOptionsForm)
                         
                                     {
                                     GameFeatureFormUtil.getInstance()!.setDefault(tempDisplayable as CommandForm);
@@ -992,7 +992,7 @@ gameCanvas!.removeCommand(gameCommandsFactory!.STOP_TRACE);
 ;
     
 
-                        if(tempDisplayable is GameInputMappingCanvas)
+                        if(tempDisplayable instanceof GameInputMappingCanvas)
                         
                                     {
                                     
@@ -1018,7 +1018,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
 ;
     
 
-                        if(tempDisplayable is HighScoresCanvas)
+                        if(tempDisplayable instanceof HighScoresCanvas)
                         
                                     {
                                     
@@ -1084,7 +1084,7 @@ this.commandAction(gameCommandsFactory!.SET_MENU_DISPLAYABLE, this.getInputMappi
 ;
     
 
-                        if(tempDisplayable is GameInputMappingCanvas)
+                        if(tempDisplayable instanceof GameInputMappingCanvas)
                         
                                     {
                                     
@@ -1334,7 +1334,7 @@ this.unPauseAppBackground(false);
                                     this.logUtil!.putF("Submitted Score", this, COMMAND_ACTION);
     
 
-                        if(displayable is HighScoreTextBox)
+                        if(displayable instanceof HighScoreTextBox)
                         
                                     {
                                     
@@ -1450,7 +1450,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION,
 ;
     
 
-                        if(displayable is Canvas)
+                        if(displayable instanceof Canvas)
                         
                                     {
                                     
@@ -1767,7 +1767,7 @@ this.resized= resized;
 ;
     
 
-                        if(displayable is DemoCanvas)
+                        if(displayable instanceof DemoCanvas)
                         
                                     {
                                     

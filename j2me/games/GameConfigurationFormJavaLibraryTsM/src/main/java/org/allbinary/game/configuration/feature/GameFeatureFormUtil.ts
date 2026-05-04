@@ -236,7 +236,7 @@ index < size; index++)
 ;
     
 
-                        if(item is GameConfigurationGauge)
+                        if(item instanceof GameConfigurationGauge)
                         
                                     {
                                     GameConfigurationUtil.getInstance()!.setDefault(item as GameConfigurationGauge);
@@ -245,7 +245,7 @@ index < size; index++)
                                     }
                                 
                              else 
-                        if(item is ChoiceGroup)
+                        if(item instanceof ChoiceGroup)
                         
                                     {
                                     GameFeatureUtil.getInstance()!.setDefault(item as ChoiceGroup);

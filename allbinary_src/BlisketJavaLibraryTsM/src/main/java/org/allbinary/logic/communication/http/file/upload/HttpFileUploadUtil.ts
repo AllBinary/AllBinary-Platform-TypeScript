@@ -198,11 +198,11 @@ var anyType = anyType
 
                         if(anyType != 
                                     null
-                                 && !(anyType is String))
+                                 && !(anyType instanceof String))
                         
                                     {
                                     
-                        if(anyType is FileItem)
+                        if(anyType instanceof FileItem)
                         
                                     {
                                     

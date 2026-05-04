@@ -4,25 +4,17 @@
 
 
 
-            import { Object } from '../../../../../../../../java/lang/Object.js';
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { ArrayIndexOutOfBoundsException } from '../../../../../../../../java/lang/ArrayIndexOutOfBoundsException.js';
-        
-            import { IllegalArgumentException } from '../../../../../../../../java/lang/IllegalArgumentException.js';
-        
-            import { InterruptedException } from '../../../../../../../../java/lang/InterruptedException.js';
-        
-            import { NullPointerException } from '../../../../../../../../java/lang/NullPointerException.js';
-        
-import { Buffer } from '../../../../../../../../java/nio/Buffer.js';
+import { Buffer } from '../../../../java/nio/Buffer.js';
 
     
-import { FloatBuffer } from '../../../../../../../../java/nio/FloatBuffer.js';
+import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
 
     
-import { IntBuffer } from '../../../../../../../../java/nio/IntBuffer.js';
+import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
 
     
 
@@ -44,8 +36,6 @@ import { IntBuffer } from '../../../../../../../../java/nio/IntBuffer.js';
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL } from './GL.js';
-import { J2SEMutableImage } from './J2SEMutableImage.js';
-import { PixelGrabber } from './PixelGrabber.js';
 
             //Interfaces do not have static fields for typescript so create a class with the static fields
             export class GL10I {

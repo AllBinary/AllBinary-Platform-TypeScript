@@ -145,7 +145,7 @@ var deviceId = deviceId
 
 
                         for (
-    index >= 0; index--)
+    index= this.totalDevicesMapped -1; index >= 0; index--)
         {
 
                         if(this.playerIdToDeviceId[index] == deviceId)

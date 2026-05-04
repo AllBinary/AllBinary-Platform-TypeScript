@@ -147,7 +147,7 @@ this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
-                        if(item is GameConfigurationGauge)
+                        if(item instanceof GameConfigurationGauge)
                         
                                     {
                                     GameConfigurationUtil.getInstance()!.change(this.gameOptionsForm, item as GameConfigurationGauge);
@@ -156,7 +156,7 @@ this.logUtil!.putF(new StringMaker().
                                     }
                                 
                              else 
-                        if(item is ChoiceGroup)
+                        if(item instanceof ChoiceGroup)
                         
                                     {
                                     

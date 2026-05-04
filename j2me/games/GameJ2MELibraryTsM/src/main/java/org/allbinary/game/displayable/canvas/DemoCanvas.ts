@@ -1322,7 +1322,7 @@ this.preDemoProcess();
                         
                                     {
                                     
-    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getSpecialAnimationInterface()!.getAnimationBehavior(); as IndexedAnimationBehavior);
+    var indexedAnimationBehavior: IndexedAnimationBehavior = (this.getSpecialAnimationInterface()!.getAnimationBehavior() as IndexedAnimationBehavior);
 ;
     
 

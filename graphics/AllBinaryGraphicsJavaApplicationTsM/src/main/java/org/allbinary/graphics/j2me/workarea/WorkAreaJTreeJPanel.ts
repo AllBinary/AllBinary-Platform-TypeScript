@@ -309,7 +309,7 @@ var treePath = treePath
                         
                                     {
                                     
-                        if(node.getUserObject() is CanvasTreeLabel)
+                        if(node.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
                                     this.removeCanvas(node);
@@ -368,7 +368,7 @@ var treePath = treePath
                         
                                     {
                                     
-                        if(node.getUserObject() is CanvasTreeLabel)
+                        if(node.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
                                     MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DUPLICATE, node) as Object));
@@ -404,7 +404,7 @@ var angle = angle
                         
                                     {
                                     
-                        if(node.getUserObject() is CanvasTreeLabel)
+                        if(node.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
                                     MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.ROTATE, angle, node) as Object));
@@ -615,7 +615,7 @@ index < selectedTreePathArray!.length; index++)
 ;
     
 
-                        if(defaultMutableTreeNode!.getUserObject() is CanvasTreeLabel)
+                        if(defaultMutableTreeNode!.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
                                     this.itemJPopupMenu!.show(this, evt.getX(), evt.getY());
@@ -653,7 +653,7 @@ index < selectedTreePathArray!.length; index++)
 ;
     
 
-                        if(defaultMutableTreeNode!.getUserObject() is CanvasTreeLabel)
+                        if(defaultMutableTreeNode!.getUserObject() instanceof CanvasTreeLabel)
                         
                                     {
                                     MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.SELECT, defaultMutableTreeNode) as Object));

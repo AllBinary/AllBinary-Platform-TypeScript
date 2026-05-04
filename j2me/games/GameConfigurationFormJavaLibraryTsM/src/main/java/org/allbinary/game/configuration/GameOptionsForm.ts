@@ -346,7 +346,7 @@ index < size; index++)
 item= this.get(index);
     
 
-                        if(item is GameConfigurationGauge)
+                        if(item instanceof GameConfigurationGauge)
                         
                                     {
                                     GameConfigurationUtil.getInstance()!.update(item as GameConfigurationGauge);
@@ -355,7 +355,7 @@ item= this.get(index);
                                     }
                                 
                              else 
-                        if(item is TextField)
+                        if(item instanceof TextField)
                         
                                     {
                                     GameConfigurationTextInput.update(item as TextField);

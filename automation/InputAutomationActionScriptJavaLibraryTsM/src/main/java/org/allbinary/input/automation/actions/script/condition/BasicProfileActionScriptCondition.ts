@@ -489,7 +489,7 @@ var actionEvent = actionEvent
                         
                                     {
                                     
-                        if(this.getParent() is ProfileActionScriptNodeInterface)
+                        if(this.getParent() instanceof ProfileActionScriptNodeInterface)
                         
                                     {
                                     

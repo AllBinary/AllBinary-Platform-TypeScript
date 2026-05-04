@@ -187,14 +187,14 @@ colorBufferList!.set(index, this.basicColor);
 
 
                         for (
-    row <= segsH; row++)
+    row= 0; row <= segsH; row++)
         {
 
 
 
 
                         for (
-    col <= segsW; col++)
+    col= 0; col <= segsW; col++)
         {
 number3dBufferList!.set(index++, col *w -width5, row *h -height5, 0);
     
