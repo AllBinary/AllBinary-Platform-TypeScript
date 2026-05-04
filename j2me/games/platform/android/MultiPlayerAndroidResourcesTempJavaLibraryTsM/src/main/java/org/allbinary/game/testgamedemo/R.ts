@@ -39,7 +39,7 @@ export class R
          {
         
 
-export class attr
+static attr = class
             extends Object
          {
         
@@ -49,7 +49,7 @@ export class attr
 }
                 
             
-export class drawable
+static drawable = class
             extends Object
          {
         
@@ -63,7 +63,7 @@ export class drawable
 }
                 
             
-export class id
+static id = class
             extends Object
          {
         
@@ -85,7 +85,7 @@ export class id
 }
                 
             
-export class layout
+static layout = class
             extends Object
          {
         
@@ -101,7 +101,7 @@ export class layout
 }
                 
             
-export class raw
+static raw = class
             extends Object
          {
         
@@ -199,7 +199,7 @@ export class raw
 }
                 
             
-export class string
+static string = class
             extends Object
          {
         

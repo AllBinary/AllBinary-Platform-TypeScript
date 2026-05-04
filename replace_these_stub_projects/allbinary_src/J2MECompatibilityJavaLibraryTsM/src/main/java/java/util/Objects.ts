@@ -8,6 +8,8 @@
 
 
         
+            import { NullPointerException } from '../../java/lang/NullPointerException.js';
+        
 
 
 
@@ -26,8 +28,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullPointerException } from './NullPointerException.js';
-
+        
 export class Objects
             extends Object
          {

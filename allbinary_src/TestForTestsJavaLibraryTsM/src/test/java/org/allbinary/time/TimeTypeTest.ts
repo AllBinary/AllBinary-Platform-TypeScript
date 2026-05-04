@@ -69,7 +69,7 @@ cal.set(Calendar.MILLISECOND, 0);
 }
 
 
-export class TestableTimeTypeUtil extends TimeTypeUtil {
+static TestableTimeTypeUtil = class extends TimeTypeUtil {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
 
