@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { DestroyedEvent } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js";
+import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
 
     
-import { PlayerGameInput } from "../../../../org/allbinary/game/input/PlayerGameInput.js";
+import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
 
     
-import { NullRTSFormInputFactory } from "../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js";
+import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
 
     
-import { RTSFormInput } from "../../../../org/allbinary/game/input/form/RTSFormInput.js";
+import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
 
     
-import { Capital } from "../../../../org/allbinary/game/layer/capital/Capital.js";
+import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
 
     
-import { GameNotificationHud } from "../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js";
+import { GameNotificationHud } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
 
     
-import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/ScrollSelectionForm.js";
+import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
+import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
 
     
 
@@ -74,9 +74,9 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
-import { RTSPlayerLayerInterface } from "./RTSPlayerLayerInterface.js";
-import { PlayerOwnedRTSLayers } from "./PlayerOwnedRTSLayers.js";
+        import { NullPathFindingLayer } from './NullPathFindingLayer.js';
+import { RTSPlayerLayerInterface } from './RTSPlayerLayerInterface.js';
+import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
 
 export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayerInterface {
         

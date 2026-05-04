@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { MediaException } from "../../../../javax/microedition/media/MediaException.js";
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { TimeBase } from "../../../../javax/microedition/media/TimeBase.js";
+import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
 
     
 

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { MoneyException } from "../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js";
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 
     
-import { TableMappingInterface } from "../../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
+import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 
     
-import { RequestParams } from "../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js";
+import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 
     
 
@@ -57,7 +57,7 @@ import { RequestParams } from "../../../../../../../org/allbinary/logic/communic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Item } from "./Item.js";
+        import { Item } from './Item.js';
 
 export class ItemFactoryUnused
             extends Object

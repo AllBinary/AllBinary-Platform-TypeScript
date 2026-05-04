@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
 

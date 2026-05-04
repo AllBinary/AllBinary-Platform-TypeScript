@@ -18,72 +18,72 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { ActionEvent } from "../../../../../../../java/awt/event/ActionEvent.js";
+import { ActionEvent } from '../../../../../../../java/awt/event/ActionEvent.js';
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { swing } from "../../../../../../../javax/swing.js";
+import { swing } from '../../../../../../../javax/swing.js';
 
     
-import { TreePath } from "../../../../../../../javax/swing/tree/TreePath.js";
+import { TreePath } from '../../../../../../../javax/swing/tree/TreePath.js';
 
     
-import { JTreeInterfaceFactory } from "../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js";
+import { JTreeInterfaceFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
 
     
-import { ProfileActionScriptItem } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js";
+import { ProfileActionScriptItem } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItem.js';
 
     
-import { ProfileActionScriptNodeInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js";
+import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
 
     
-import { ProfileActionScriptProcessorInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js";
+import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
 
     
-import { GenericProfileActionScriptInputData } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/GenericProfileActionScriptInputData.js";
+import { GenericProfileActionScriptInputData } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/GenericProfileActionScriptInputData.js';
 
     
-import { KeyboardActionScriptInput } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/KeyboardActionScriptInput.js";
+import { KeyboardActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/KeyboardActionScriptInput.js';
 
     
-import { MouseActionScriptInput } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/MouseActionScriptInput.js";
+import { MouseActionScriptInput } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/MouseActionScriptInput.js';
 
     
-import { ProfileActionScriptInputFactory } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/ProfileActionScriptInputFactory.js";
+import { ProfileActionScriptInputFactory } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/input/ProfileActionScriptInputFactory.js';
 
     
-import { GenericProfileActionScriptOutputData } from "../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/GenericProfileActionScriptOutputData.js";
+import { GenericProfileActionScriptOutputData } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/GenericProfileActionScriptOutputData.js';
 
     
-import { ImageActionScriptOutput } from "../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ImageActionScriptOutput.js";
+import { ImageActionScriptOutput } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ImageActionScriptOutput.js';
 
     
-import { ProfileActionScriptOutputFactory } from "../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ProfileActionScriptOutputFactory.js";
+import { ProfileActionScriptOutputFactory } from '../../../../../../../org/allbinary/input/automation/module/actions/script/condition/processors/output/ProfileActionScriptOutputFactory.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -104,14 +104,14 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProfileActionScriptConditionInterface } from "./ProfileActionScriptConditionInterface.js";
-import { GenericProfileActionScriptConditionData } from "./GenericProfileActionScriptConditionData.js";
-import { ProfileActionScriptConditionFactory } from "./ProfileActionScriptConditionFactory.js";
-import { JMenu } from "./JMenu.js";
-import { JMenuItem } from "./JMenuItem.js";
-import { TimeIntervalActionScriptCondition } from "./TimeIntervalActionScriptCondition.js";
-import { AlwaysActionScriptCondition } from "./AlwaysActionScriptCondition.js";
-import { ColorAtActionScriptCondition } from "./ColorAtActionScriptCondition.js";
+        import { ProfileActionScriptConditionInterface } from './ProfileActionScriptConditionInterface.js';
+import { GenericProfileActionScriptConditionData } from './GenericProfileActionScriptConditionData.js';
+import { ProfileActionScriptConditionFactory } from './ProfileActionScriptConditionFactory.js';
+import { JMenu } from './JMenu.js';
+import { JMenuItem } from './JMenuItem.js';
+import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
+import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
+import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
 
 export class BasicProfileActionScriptCondition extends ProfileActionScriptItem implements ProfileActionScriptConditionInterface {
         

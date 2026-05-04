@@ -18,71 +18,71 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-            import { Long } from "../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { awt } from "../../../../../../../java/awt.js";
+import { awt } from '../../../../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { DomNodeHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { ColorCacheFactory } from "../../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js";
+import { ColorCacheFactory } from '../../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
 
     
-import { ColorCacheable } from "../../../../../../../org/allbinary/graphics/color/ColorCacheable.js";
+import { ColorCacheable } from '../../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
 
     
-import { CapturedBufferedImagesCacheSingleton } from "../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js";
+import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AutomaticCacheInterface } from "../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js";
+import { AutomaticCacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 
     
-import { ColorRange } from "../../../../../../../org/allbinary/media/image/analysis/ColorRange.js";
+import { ColorRange } from '../../../../../../../org/allbinary/media/image/analysis/ColorRange.js';
 
     
-import { ColorRangeInterface } from "../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js";
+import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
 
     
-import { BufferedImageFrameCacheable } from "../../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js";
+import { BufferedImageFrameCacheable } from '../../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
 
     
-import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -103,12 +103,12 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicProfileActionScriptCondition } from "./BasicProfileActionScriptCondition.js";
-import { ColorAtActionScriptConditionInterface } from "./ColorAtActionScriptConditionInterface.js";
-import { ColorAtActionScriptConditionJPanel } from "./ColorAtActionScriptConditionJPanel.js";
-import { Point } from "./Point.js";
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-import { Color } from "./Color.js";
+        import { BasicProfileActionScriptCondition } from './BasicProfileActionScriptCondition.js';
+import { ColorAtActionScriptConditionInterface } from './ColorAtActionScriptConditionInterface.js';
+import { ColorAtActionScriptConditionJPanel } from './ColorAtActionScriptConditionJPanel.js';
+import { Point } from './Point.js';
+import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
+import { Color } from './Color.js';
 
 export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondition implements ColorAtActionScriptConditionInterface {
         

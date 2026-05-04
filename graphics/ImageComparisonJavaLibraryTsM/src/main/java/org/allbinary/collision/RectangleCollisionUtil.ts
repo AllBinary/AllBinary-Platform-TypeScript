@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { awt } from "../../../java/awt.js";
+import { awt } from '../../../java/awt.js';
 
     
-import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 
     
 
@@ -46,7 +46,7 @@ import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Rectangle } from "./Rectangle.js";
+        import { Rectangle } from './Rectangle.js';
 
 export class RectangleCollisionUtil
             extends Object

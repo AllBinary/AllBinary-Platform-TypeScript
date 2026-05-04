@@ -18,27 +18,27 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { TsUtil } from "../../../org/allbinary/TsUtil.js";
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -59,9 +59,9 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
-import { AllBinaryLayer } from "./AllBinaryLayer.js";
-import { LayerManager } from "./LayerManager.js";
+        import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
+import { AllBinaryLayer } from './AllBinaryLayer.js';
+import { LayerManager } from './LayerManager.js';
 
 export class LayerManagerLogging extends LayerManagerLoggingBase {
         

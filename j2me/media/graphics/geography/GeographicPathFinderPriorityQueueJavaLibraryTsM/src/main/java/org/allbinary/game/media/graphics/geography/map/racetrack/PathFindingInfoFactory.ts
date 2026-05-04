@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { AllBinaryTiledLayer } from "../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { BasicGeographicMapCellPositionFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js";
+import { BasicGeographicMapCellPositionFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { BasePathFindingInfoFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/BasePathFindingInfoFactory.js";
+import { BasePathFindingInfoFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/BasePathFindingInfoFactory.js';
 
     
-import { RaceTrackRoadsGeographicMapCellHistoryFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackRoadsGeographicMapCellHistoryFactory.js";
+import { RaceTrackRoadsGeographicMapCellHistoryFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackRoadsGeographicMapCellHistoryFactory.js';
 
     
-import { PathFinder } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinder.js";
+import { PathFinder } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinder.js';
 
     
-import { PathFindingInfo } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js";
+import { PathFindingInfo } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
 
     
-import { PathFindingNodeCostInfoFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoFactory.js";
+import { PathFindingNodeCostInfoFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNodeCostInfoFactory.js';
 
     
-import { BasicArrayListS } from "../../../../../../../../org/allbinary/util/BasicArrayListS.js";
+import { BasicArrayListS } from '../../../../../../../../org/allbinary/util/BasicArrayListS.js';
 
     
 

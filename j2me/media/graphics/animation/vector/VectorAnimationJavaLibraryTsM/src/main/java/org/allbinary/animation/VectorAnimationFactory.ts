@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 
     
 
@@ -43,9 +43,9 @@ import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VectorAnimationFactoryInterface } from "./VectorAnimationFactoryInterface.js";
-import { VectorAnimation } from "./VectorAnimation.js";
-import { AnimationBehavior } from "./AnimationBehavior.js";
+        import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';
+import { VectorAnimation } from './VectorAnimation.js';
+import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class VectorAnimationFactory
             extends Object

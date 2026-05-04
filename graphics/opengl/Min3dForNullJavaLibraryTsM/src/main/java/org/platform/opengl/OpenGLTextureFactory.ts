@@ -4,19 +4,19 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { GL10 } from "../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { PlatformTextureBaseFactory } from "../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js";
+import { PlatformTextureBaseFactory } from '../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
 
     
 
@@ -37,7 +37,7 @@ import { PlatformTextureBaseFactory } from "../../../org/allbinary/platform/open
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLGLUUtils } from "./OpenGLGLUUtils.js";
+        import { OpenGLGLUUtils } from './OpenGLGLUUtils.js';
 
 export class OpenGLTextureFactory extends PlatformTextureBaseFactory {
         

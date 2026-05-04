@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { ColorCompositeInterface } from "../../../org/allbinary/graphics/color/ColorCompositeInterface.js";
+import { ColorCompositeInterface } from '../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
 
     
 
@@ -43,7 +43,7 @@ import { ColorCompositeInterface } from "../../../org/allbinary/graphics/color/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { IndexedAnimationInterface } from "./IndexedAnimationInterface.js";
+        import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
 
 export interface VectorAnimationInterface extends IndexedAnimationInterface, ColorCompositeInterface {
         

@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { IndexedAnimation } from "../../../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 
     
-import { CanvasStrings } from "../../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
-import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 
     
 
@@ -66,7 +66,7 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DamageFloaters } from "./DamageFloaters.js";
+        import { DamageFloaters } from './DamageFloaters.js';
 
 export class AnimationDamageFloaters extends DamageFloaters {
         

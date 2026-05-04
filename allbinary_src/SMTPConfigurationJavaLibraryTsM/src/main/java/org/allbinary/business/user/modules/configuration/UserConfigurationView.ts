@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { TimeCreatedView } from "../../../../../../org/allbinary/business/time/created/TimeCreatedView.js";
+import { TimeCreatedView } from '../../../../../../org/allbinary/business/time/created/TimeCreatedView.js';
 
     
-import { TimeLastModifiedView } from "../../../../../../org/allbinary/business/time/modified/TimeLastModifiedView.js";
+import { TimeLastModifiedView } from '../../../../../../org/allbinary/business/time/modified/TimeLastModifiedView.js';
 
     
-import { DomNodeInterface } from "../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { UserEmailConfigurationData } from "../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationData.js";
+import { UserEmailConfigurationData } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationData.js';
 
     
-import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js";
+import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 
     
-import { UserEmailConfigurationView } from "../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationView.js";
+import { UserEmailConfigurationView } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationView.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -75,9 +75,9 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
-import { UserConfiguration } from "./UserConfiguration.js";
-import { UserConfigurationData } from "./UserConfigurationData.js";
+        import { UserConfigurationInterface } from './UserConfigurationInterface.js';
+import { UserConfiguration } from './UserConfiguration.js';
+import { UserConfigurationData } from './UserConfigurationData.js';
 
 export class UserConfigurationView
             extends Object

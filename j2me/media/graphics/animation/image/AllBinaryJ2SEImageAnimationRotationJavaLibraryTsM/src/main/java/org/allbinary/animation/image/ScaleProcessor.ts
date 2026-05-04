@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ImageScaleUtil } from "../../../../org/allbinary/media/image/ImageScaleUtil.js";
+import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -54,7 +54,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ScaleBaseProcessor } from "./ScaleBaseProcessor.js";
+        import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
 
 export class ScaleProcessor extends ScaleBaseProcessor {
         

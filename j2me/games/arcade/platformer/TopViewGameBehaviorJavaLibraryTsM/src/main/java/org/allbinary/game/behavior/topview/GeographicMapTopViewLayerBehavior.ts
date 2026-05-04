@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { VelocityProperties } from "../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js";
+import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
-import { BasicTopViewGeographicMapCellTypeFactory } from "../../../../../org/allbinary/media/graphics/geography/map/topview/BasicTopViewGeographicMapCellTypeFactory.js";
+import { BasicTopViewGeographicMapCellTypeFactory } from '../../../../../org/allbinary/media/graphics/geography/map/topview/BasicTopViewGeographicMapCellTypeFactory.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -63,7 +63,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TopViewGameLayerBehavior } from "./TopViewGameLayerBehavior.js";
+        import { TopViewGameLayerBehavior } from './TopViewGameLayerBehavior.js';
 
 export class GeographicMapTopViewLayerBehavior extends TopViewGameLayerBehavior {
         

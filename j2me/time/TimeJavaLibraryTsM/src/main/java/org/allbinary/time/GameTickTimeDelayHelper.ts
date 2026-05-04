@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-            import { Long } from "../../../java/lang/Long.js";
+            import { Long } from '../../../java/lang/Long.js';
         
 
 

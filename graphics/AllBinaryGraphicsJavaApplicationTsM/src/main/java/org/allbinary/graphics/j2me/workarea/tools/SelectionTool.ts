@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { MutableTreeNode } from "../../../../../../javax/swing/tree/MutableTreeNode.js";
+import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
 
     
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { CanvasDom } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js";
+import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
 
     
-import { CanvasJPanel } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js";
+import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
 
     
-import { IntegerDimension } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js";
+import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { RectangleCollisionPointUtil } from "../../../../../../org/allbinary/math/RectangleCollisionPointUtil.js";
+import { RectangleCollisionPointUtil } from '../../../../../../org/allbinary/math/RectangleCollisionPointUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -81,15 +81,15 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GraphicItemInterface } from "./GraphicItemInterface.js";
-import { Color } from "./Color.js";
-import { Points } from "./Points.js";
-import { Math } from "./Math.js";
-import { LinesGraphicItem } from "./LinesGraphicItem.js";
-import { Graphics } from "./Graphics.js";
-import { MouseEvent } from "./MouseEvent.js";
-import { MouseStrings } from "./MouseStrings.js";
-import { KeyEvent } from "./KeyEvent.js";
+        import { GraphicItemInterface } from './GraphicItemInterface.js';
+import { Color } from './Color.js';
+import { Points } from './Points.js';
+import { Math } from './Math.js';
+import { LinesGraphicItem } from './LinesGraphicItem.js';
+import { Graphics } from './Graphics.js';
+import { MouseEvent } from './MouseEvent.js';
+import { MouseStrings } from './MouseStrings.js';
+import { KeyEvent } from './KeyEvent.js';
 
 export class SelectionTool
             extends Object

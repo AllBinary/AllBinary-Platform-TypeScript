@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { BundleActivator } from "../../../../../../org/osgi/framework/BundleActivator.js";
+import { BundleActivator } from '../../../../../../org/osgi/framework/BundleActivator.js';
 
     
-import { BundleContext } from "../../../../../../org/osgi/framework/BundleContext.js";
+import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
 
     
-import { ServiceFactory } from "../../../../../../org/osgi/framework/ServiceFactory.js";
+import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
 
     
-import { ServiceReference } from "../../../../../../org/osgi/framework/ServiceReference.js";
+import { ServiceReference } from '../../../../../../org/osgi/framework/ServiceReference.js';
 
     
-import { InputAutomationRobotChangeListener } from "../../../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js";
+import { InputAutomationRobotChangeListener } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
 
     
-import { InputAutomationRobotServiceInterface } from "../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js";
+import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
 
     
-import { InputRobotInterface } from "../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
+import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { OSGIActivatorUtil } from "../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js";
+import { OSGIActivatorUtil } from '../../../../../../org/allbinary/osgi/OSGIActivatorUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -74,8 +74,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputAutomationRobotUtil } from "./InputAutomationRobotUtil.js";
-import { InputAutomationRobotChangeEvent } from "./InputAutomationRobotChangeEvent.js";
+        import { InputAutomationRobotUtil } from './InputAutomationRobotUtil.js';
+import { InputAutomationRobotChangeEvent } from './InputAutomationRobotChangeEvent.js';
 
 export class InputAutomationRobotBundleActivator
             extends Object

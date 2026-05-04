@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { DomNodeHelper } from "../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringUtils } from "../../../../org/apache/commons/lang3/StringUtils.js";
+import { StringUtils } from '../../../../org/apache/commons/lang3/StringUtils.js';
 
     
-import { Attr } from "../../../../org/w3c/dom/Attr.js";
+import { Attr } from '../../../../org/w3c/dom/Attr.js';
 
     
-import { NamedNodeMap } from "../../../../org/w3c/dom/NamedNodeMap.js";
+import { NamedNodeMap } from '../../../../org/w3c/dom/NamedNodeMap.js';
 
     
-import { Node } from "../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../org/w3c/dom/Node.js';
 
     
 
@@ -67,7 +67,7 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryData } from "./CategoryData.js";
+        import { CategoryData } from './CategoryData.js';
 
 export class CategoryUtil
             extends Object

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Document } from "../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../org/w3c/dom/Document.js';
 
     
 

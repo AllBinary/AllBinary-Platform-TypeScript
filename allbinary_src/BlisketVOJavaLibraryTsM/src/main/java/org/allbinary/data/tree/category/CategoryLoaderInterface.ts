@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { CategoryInterface } from "../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
 
@@ -46,7 +46,7 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryModifierTreeInterface } from "./CategoryModifierTreeInterface.js";
+        import { CategoryModifierTreeInterface } from './CategoryModifierTreeInterface.js';
 
 export interface CategoryLoaderInterface extends CategoryModifierTreeInterface {
         

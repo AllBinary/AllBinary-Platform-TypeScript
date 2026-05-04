@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -40,7 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DemoGameMidletState } from "./DemoGameMidletState.js";
+        import { DemoGameMidletState } from './DemoGameMidletState.js';
 
 export class DemoGameMidletStateFactory
             extends Object

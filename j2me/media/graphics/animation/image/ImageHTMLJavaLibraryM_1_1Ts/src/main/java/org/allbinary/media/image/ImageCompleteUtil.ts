@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
-import { PlaynImage } from "../../../../org/microemu/device/playn/PlaynImage.js";
+import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 
     
 

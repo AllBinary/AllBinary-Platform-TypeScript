@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { StoreFrontData } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { InitSql } from "../../../../../../org/allbinary/business/init/InitSql.js";
+import { InitSql } from '../../../../../../org/allbinary/business/init/InitSql.js';
 
     
-import { UserDbInitInfo } from "../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -57,8 +57,8 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicStoreFront } from "./BasicStoreFront.js";
-import { BasicStoreFrontInterface } from "./BasicStoreFrontInterface.js";
+        import { BasicStoreFront } from './BasicStoreFront.js';
+import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
 
 export class BasicStoreFrontsEntity extends InitSql {
         

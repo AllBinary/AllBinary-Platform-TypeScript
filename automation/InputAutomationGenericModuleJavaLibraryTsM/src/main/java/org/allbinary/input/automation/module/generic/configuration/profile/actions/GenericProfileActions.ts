@@ -18,58 +18,58 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { DataOutputStream } from "../../../../../../../../../java/io/DataOutputStream.js";
+import { DataOutputStream } from '../../../../../../../../../java/io/DataOutputStream.js';
 
     
-import { File } from "../../../../../../../../../java/io/File.js";
+import { File } from '../../../../../../../../../java/io/File.js';
 
     
-import { FileInputStream } from "../../../../../../../../../java/io/FileInputStream.js";
+import { FileInputStream } from '../../../../../../../../../java/io/FileInputStream.js';
 
     
-import { FileOutputStream } from "../../../../../../../../../java/io/FileOutputStream.js";
+import { FileOutputStream } from '../../../../../../../../../java/io/FileOutputStream.js';
 
     
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../../../../java/util/Set.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomDocumentHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { DomDocumentMappingInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js";
+import { DomDocumentMappingInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
 
     
-import { DefaultListModelHelper } from "../../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js";
+import { DefaultListModelHelper } from '../../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
 
     
-import { GenericProfiles } from "../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js";
+import { GenericProfiles } from '../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbPath } from "../../../../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -90,10 +90,10 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GenericProfileActionsJPanel } from "./GenericProfileActionsJPanel.js";
-import { GenericProfileActionsData } from "./GenericProfileActionsData.js";
-import { GenericProfileActionData } from "./GenericProfileActionData.js";
-import { GenericProfileAction } from "./GenericProfileAction.js";
+        import { GenericProfileActionsJPanel } from './GenericProfileActionsJPanel.js';
+import { GenericProfileActionsData } from './GenericProfileActionsData.js';
+import { GenericProfileActionData } from './GenericProfileActionData.js';
+import { GenericProfileAction } from './GenericProfileAction.js';
 
 export class GenericProfileActions
             extends Object

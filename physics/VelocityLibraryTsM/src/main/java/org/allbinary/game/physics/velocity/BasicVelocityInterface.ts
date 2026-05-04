@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 
     
-import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecimal.js";
+import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 
     
-import { Angle } from "../../../../../org/allbinary/math/Angle.js";
+import { Angle } from '../../../../../org/allbinary/math/Angle.js';
 
     
 

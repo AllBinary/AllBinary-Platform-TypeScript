@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../java/lang/System.js";
+            import { System } from '../../../../java/lang/System.js';
         
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LogConfigTypeFactory } from "../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js";
+import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 
     
-import { LogConfigTypes } from "../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
+import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 
     
-import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { SubDirectory } from "../../../../org/allbinary/logic/io/file/directory/SubDirectory.js";
+import { SubDirectory } from '../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 

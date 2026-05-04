@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { ModDomHelper } from "../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -54,8 +54,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ThemeInterface } from "./ThemeInterface.js";
-import { ThemeData } from "./ThemeData.js";
+        import { ThemeInterface } from './ThemeInterface.js';
+import { ThemeData } from './ThemeData.js';
 
 export class ThemePropertiesView
             extends Object

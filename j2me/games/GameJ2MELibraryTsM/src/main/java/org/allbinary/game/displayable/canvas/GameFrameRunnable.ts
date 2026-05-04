@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameTickDisplayInfoSingleton } from "../../../../../org/allbinary/graphics/displayable/GameTickDisplayInfoSingleton.js";
+import { GameTickDisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/GameTickDisplayInfoSingleton.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { GameTickTimeDelayHelper } from "../../../../../org/allbinary/time/GameTickTimeDelayHelper.js";
+import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
 
@@ -57,8 +57,8 @@ import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/tim
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameRunnable } from "./GameRunnable.js";
-import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { GameRunnable } from './GameRunnable.js';
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 
 export class GameFrameRunnable extends GameRunnable {
         

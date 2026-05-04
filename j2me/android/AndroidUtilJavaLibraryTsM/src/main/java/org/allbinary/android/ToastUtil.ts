@@ -6,27 +6,27 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { Runnable } from "../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { Context } from "../../../android/content/Context.js";
+import { Context } from '../../../android/content/Context.js';
 
     
-import { View } from "../../../android/view/View.js";
+import { View } from '../../../android/view/View.js';
 
     
-import { Toast } from "../../../android/widget/Toast.js";
+import { Toast } from '../../../android/widget/Toast.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -47,7 +47,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MakeToast } from "./MakeToast.js";
+        import { MakeToast } from './MakeToast.js';
 
 export class ToastUtil
             extends Object

@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
 

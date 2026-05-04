@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InputMappingEvent } from "../../../../../org/allbinary/game/input/mapping/event/InputMappingEvent.js";
+import { InputMappingEvent } from '../../../../../org/allbinary/game/input/mapping/event/InputMappingEvent.js';
 
     
-import { InputMappingEventListenerInterface } from "../../../../../org/allbinary/game/input/mapping/event/InputMappingEventListenerInterface.js";
+import { InputMappingEventListenerInterface } from '../../../../../org/allbinary/game/input/mapping/event/InputMappingEventListenerInterface.js';
 
     
-import { GameKeyCompleteMotionGestureInputEventFactory } from "../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEventFactory.js";
+import { GameKeyCompleteMotionGestureInputEventFactory } from '../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEventFactory.js';
 
     
-import { BasicTouchInputFactory } from "../../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js";
+import { BasicTouchInputFactory } from '../../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
 
     
-import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventStrings } from "../../../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
 

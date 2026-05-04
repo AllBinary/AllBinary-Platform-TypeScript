@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { GL } from "../../../javax/microedition/khronos/opengles/GL.js";
+import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 
     
-import { ChoiceGroupImageFactory } from "../../../javax/microedition/lcdui/ChoiceGroupImageFactory.js";
+import { ChoiceGroupImageFactory } from '../../../javax/microedition/lcdui/ChoiceGroupImageFactory.js';
 
     
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { OpenGLFeatureFactory } from "../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+import { OpenGLFeatureFactory } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 
     
-import { Features } from "../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
 
     
 
@@ -58,7 +58,7 @@ import { Features } from "../../../org/allbinary/game/configuration/feature/Feat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PreResourceImageUtil } from "./PreResourceImageUtil.js";
+        import { PreResourceImageUtil } from './PreResourceImageUtil.js';
 
 export class ChoiceGroupImageUtil
             extends Object

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -57,9 +57,9 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellPositionBaseFactory } from "./GeographicMapCellPositionBaseFactory.js";
-import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-import { BasicGeographicMap } from "./BasicGeographicMap.js";
+        import { GeographicMapCellPositionBaseFactory } from './GeographicMapCellPositionBaseFactory.js';
+import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
+import { BasicGeographicMap } from './BasicGeographicMap.js';
 
 export class GeographicMapCellPositionFactory extends GeographicMapCellPositionBaseFactory {
         

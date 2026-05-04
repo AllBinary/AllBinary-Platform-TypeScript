@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
+import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 
     
-import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFactory.js";
+import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 
     
 
@@ -54,9 +54,9 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollidableBaseBehavior } from "./CollidableBaseBehavior.js";
-import { CollidableNeverCollideBehaviorFactory } from "./CollidableNeverCollideBehaviorFactory.js";
-import { CollidableInterfaceCompositeInterface } from "./CollidableInterfaceCompositeInterface.js";
+        import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
+import { CollidableNeverCollideBehaviorFactory } from './CollidableNeverCollideBehaviorFactory.js';
+import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
 
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 
     
-import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 
     
 
@@ -57,7 +57,7 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SimultaneousCompoundIndexAnimation } from "./SimultaneousCompoundIndexAnimation.js";
+        import { SimultaneousCompoundIndexAnimation } from './SimultaneousCompoundIndexAnimation.js';
 
 export class SimultaneousCompoundIndexAnimationInterfaceFactory
             extends Object

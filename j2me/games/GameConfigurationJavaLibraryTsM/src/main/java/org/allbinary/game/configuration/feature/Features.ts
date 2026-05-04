@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameFeatureEvent } from "../../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js";
+import { GameFeatureEvent } from '../../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
 
     
-import { GameFeatureEventHandler } from "../../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js";
+import { GameFeatureEventHandler } from '../../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { GenericOperatingSystem } from "../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
+import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 
     
-import { OperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js";
+import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 
     
-import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -75,12 +75,12 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Feature } from "./Feature.js";
-import { GameFeatureFactory } from "./GameFeatureFactory.js";
-import { InputFeatureFactory } from "./InputFeatureFactory.js";
-import { SensorFeatureFactory } from "./SensorFeatureFactory.js";
-import { TouchFeatureFactory } from "./TouchFeatureFactory.js";
-import { MainFeatureFactory } from "./MainFeatureFactory.js";
+        import { Feature } from './Feature.js';
+import { GameFeatureFactory } from './GameFeatureFactory.js';
+import { InputFeatureFactory } from './InputFeatureFactory.js';
+import { SensorFeatureFactory } from './SensorFeatureFactory.js';
+import { TouchFeatureFactory } from './TouchFeatureFactory.js';
+import { MainFeatureFactory } from './MainFeatureFactory.js';
 
 export class Features
             extends Object

@@ -18,73 +18,73 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from "../../../../../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../../../../../java/io/ByteArrayInputStream.js';
 
     
-import { InputStream } from "../../../../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../../../../java/io/InputStream.js';
 
     
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { URLGLOBALS } from "../../../../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { WeblisketSession } from "../../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { InputOutputTypeData } from "../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js";
+import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 
     
-import { AbFile } from "../../../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileUtil } from "../../../../../../../../org/allbinary/logic/io/file/FileUtil.js";
+import { FileUtil } from '../../../../../../../../org/allbinary/logic/io/file/FileUtil.js';
 
     
-import { AbPath } from "../../../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringMaker } from "../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { Replace } from "../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js";
+import { Replace } from '../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 
     
-import { TransformInfoHttpInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoHttpStoreInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreInterface.js";
+import { TransformInfoHttpStoreInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TransformInfosData } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js";
+import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
 
     
-import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -105,7 +105,7 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
+        import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
 
 export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
         

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { KeyEvent } from "../../../java/awt/event/KeyEvent.js";
+import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
 
     
 

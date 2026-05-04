@@ -4,17 +4,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 

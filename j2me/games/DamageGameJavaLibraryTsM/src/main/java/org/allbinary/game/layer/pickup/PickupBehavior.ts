@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HealthInterfaceCompositeInterface } from "../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js";
+import { HealthInterfaceCompositeInterface } from '../../../../../org/allbinary/game/health/HealthInterfaceCompositeInterface.js';
 
     
-import { CollidableCompositeLayer } from "../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
+import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { CountedLayerInterfaceFactoryPart } from "../../../../../org/allbinary/game/part/CountedLayerInterfaceFactoryPart.js";
+import { CountedLayerInterfaceFactoryPart } from '../../../../../org/allbinary/game/part/CountedLayerInterfaceFactoryPart.js';
 
     
-import { PartInterface } from "../../../../../org/allbinary/game/part/PartInterface.js";
+import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -66,14 +66,14 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PickupBehaviorInterface } from "./PickupBehaviorInterface.js";
-import { PickupProcessorInterface } from "./PickupProcessorInterface.js";
-import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
-import { PickedUpLayerType } from "./PickedUpLayerType.js";
-import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
-import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
-import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
-import { CountedPickedUpLayerInterfaceFactory } from "./CountedPickedUpLayerInterfaceFactory.js";
+        import { PickupBehaviorInterface } from './PickupBehaviorInterface.js';
+import { PickupProcessorInterface } from './PickupProcessorInterface.js';
+import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
+import { PickedUpLayerType } from './PickedUpLayerType.js';
+import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
+import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
+import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';
 
 export class PickupBehavior
             extends Object

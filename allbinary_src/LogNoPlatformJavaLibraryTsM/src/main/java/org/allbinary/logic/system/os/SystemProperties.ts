@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 
 

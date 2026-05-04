@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { NullAnimationFactory } from "../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { AnimationFactoryImageScaleUtil } from "../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js";
+import { AnimationFactoryImageScaleUtil } from '../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -72,7 +72,7 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnimationFactoryInitializationVisitor } from "./AnimationFactoryInitializationVisitor.js";
+        import { AnimationFactoryInitializationVisitor } from './AnimationFactoryInitializationVisitor.js';
 
 export class BaseImageAnimationFactory
             extends Object

@@ -18,82 +18,82 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { Map } from "../../java/util/Map.js";
+import { Map } from '../../java/util/Map.js';
 
     
-import { Set } from "../../java/util/Set.js";
+import { Set } from '../../java/util/Set.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { CategoryComponent } from "../../org/allbinary/business/category/CategoryComponent.js";
+import { CategoryComponent } from '../../org/allbinary/business/category/CategoryComponent.js';
 
     
-import { CategoryData } from "../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../org/allbinary/business/category/CategoryData.js';
 
     
-import { CategoryInterface } from "../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { StoreCategoryFactory } from "../../org/allbinary/business/category/store/StoreCategoryFactory.js";
+import { StoreCategoryFactory } from '../../org/allbinary/business/category/store/StoreCategoryFactory.js';
 
     
-import { StoreFrontData } from "../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { StoreFrontFactory } from "../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { CategoryLoaderFactory } from "../../org/allbinary/data/tree/category/CategoryLoaderFactory.js";
+import { CategoryLoaderFactory } from '../../org/allbinary/data/tree/category/CategoryLoaderFactory.js';
 
     
-import { CategoryLoaderInterface } from "../../org/allbinary/data/tree/category/CategoryLoaderInterface.js";
+import { CategoryLoaderInterface } from '../../org/allbinary/data/tree/category/CategoryLoaderInterface.js';
 
     
-import { DomNodeHelper } from "../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { DomDocumentHelper } from "../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { TransformInfoBasic } from "../../org/allbinary/logic/visual/transform/info/TransformInfoBasic.js";
+import { TransformInfoBasic } from '../../org/allbinary/logic/visual/transform/info/TransformInfoBasic.js';
 
     
-import { TransformInfoInterface } from "../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../org/w3c/dom/Document.js";
+import { Document } from '../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../org/w3c/dom/Node.js";
+import { Node } from '../../org/w3c/dom/Node.js';
 
     
 
@@ -114,7 +114,7 @@ import { Node } from "../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ModifyTable } from "./ModifyTable.js";
+        import { ModifyTable } from './ModifyTable.js';
 
 export class CategoryRequestHelper extends ModifyTable {
         

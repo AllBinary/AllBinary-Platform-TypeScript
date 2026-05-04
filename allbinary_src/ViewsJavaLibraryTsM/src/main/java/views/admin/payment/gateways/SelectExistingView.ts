@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from '../../../../java/util/Vector.js';
 
     
-import { PaymentGatewayEntityFactory } from "../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js";
+import { PaymentGatewayEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
 
     
-import { PaymentGatewayEntityInterface } from "../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityInterface.js";
+import { PaymentGatewayEntityInterface } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityInterface.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { PaymentGatewayViewAbstract } from "../../../../views/admin/payment/gateway/PaymentGatewayViewAbstract.js";
+import { PaymentGatewayViewAbstract } from '../../../../views/admin/payment/gateway/PaymentGatewayViewAbstract.js';
 
     
 
@@ -60,7 +60,7 @@ import { PaymentGatewayViewAbstract } from "../../../../views/admin/payment/gate
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentGatewaysView } from "./PaymentGatewaysView.js";
+        import { PaymentGatewaysView } from './PaymentGatewaysView.js';
 
 export class SelectExistingView extends PaymentGatewayViewAbstract {
         

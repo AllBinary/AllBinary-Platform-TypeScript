@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { Vector } from "../../java/util/Vector.js";
+import { Vector } from '../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { StoreFrontData } from "../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { StoreFrontFactory } from "../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { QuoteRequest } from "../../org/allbinary/business/user/quoterequest/QuoteRequest.js";
+import { QuoteRequest } from '../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
 
     
-import { QuoteRequestEntityFactory } from "../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js";
+import { QuoteRequestEntityFactory } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
 
     
-import { WeblisketSession } from "../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -75,7 +75,7 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ModifyTable } from "./ModifyTable.js";
+        import { ModifyTable } from './ModifyTable.js';
 
 export class QuoteRequestHelper extends ModifyTable {
         

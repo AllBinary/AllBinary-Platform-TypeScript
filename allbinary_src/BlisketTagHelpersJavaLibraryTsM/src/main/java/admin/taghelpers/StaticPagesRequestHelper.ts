@@ -18,91 +18,91 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { AbContext } from "../../org/allbinary/business/context/AbContext.js";
+import { AbContext } from '../../org/allbinary/business/context/AbContext.js';
 
     
-import { StoreFrontData } from "../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { StoreFrontFactory } from "../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { URLGLOBALS } from "../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { AcceptableResponseGenerator } from "../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js";
+import { AcceptableResponseGenerator } from '../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { UserEmailEventNameData } from "../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js";
+import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 
     
-import { UserEmailEventHandler } from "../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js";
+import { UserEmailEventHandler } from '../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
 
     
-import { AdminUserEmailEventHandlerSingletons } from "../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js";
+import { AdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
 
     
-import { StoreAdminUserEmailEventHandlerSingletons } from "../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js";
+import { StoreAdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js';
 
     
-import { AdminEmailInfo } from "../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js";
+import { AdminEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
 
     
-import { BasicEmailInfo } from "../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js";
+import { BasicEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
 
     
-import { EmailInfo } from "../../org/allbinary/logic/communication/smtp/info/EmailInfo.js";
+import { EmailInfo } from '../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
 
     
-import { StoreEmailInfo } from "../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js";
+import { StoreEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js';
 
     
-import { SearchParams } from "../../org/allbinary/logic/control/search/SearchParams.js";
+import { SearchParams } from '../../org/allbinary/logic/control/search/SearchParams.js';
 
     
-import { SearchRequest } from "../../org/allbinary/logic/control/search/SearchRequest.js";
+import { SearchRequest } from '../../org/allbinary/logic/control/search/SearchRequest.js';
 
     
-import { FileUtil } from "../../org/allbinary/logic/io/file/FileUtil.js";
+import { FileUtil } from '../../org/allbinary/logic/io/file/FileUtil.js';
 
     
-import { AbPath } from "../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { AbeClientInformationInterface } from "../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
+import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 
     
-import { TransformInfoData } from "../../org/allbinary/logic/visual/transform/info/TransformInfoData.js";
+import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 
     
-import { ProductListingFactory } from "../../views/admin/inventory/listings/ProductListingFactory.js";
+import { ProductListingFactory } from '../../views/admin/inventory/listings/ProductListingFactory.js';
 
     
 
@@ -123,7 +123,7 @@ import { ProductListingFactory } from "../../views/admin/inventory/listings/Prod
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TagHelperInterface } from "./TagHelperInterface.js";
+        import { TagHelperInterface } from './TagHelperInterface.js';
 
 export class StaticPagesRequestHelper extends AbContext implements TagHelperInterface {
         

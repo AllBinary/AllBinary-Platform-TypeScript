@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AndroidHardware } from "../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js";
+import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
 
     
-import { GenericOperatingSystem } from "../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
+import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 
     
-import { OperatingSystems } from "../../../../../org/allbinary/logic/system/os/OperatingSystems.js";
+import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,8 +57,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NoHardware } from "./NoHardware.js";
-import { HardwareInterface } from "./HardwareInterface.js";
+        import { NoHardware } from './NoHardware.js';
+import { HardwareInterface } from './HardwareInterface.js';
 
 export class HardwareFactory
             extends Object

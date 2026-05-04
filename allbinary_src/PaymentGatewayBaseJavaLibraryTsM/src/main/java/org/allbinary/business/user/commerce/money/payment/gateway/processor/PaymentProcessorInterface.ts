@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { PaymentException } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentException.js";
+import { PaymentException } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentException.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
 

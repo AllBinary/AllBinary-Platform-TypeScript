@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-            import { Thread } from "../../../java/lang/Thread.js";
+            import { Thread } from '../../../java/lang/Thread.js';
         
-import { InputStream } from "../../../java/io/InputStream.js";
+import { InputStream } from '../../../java/io/InputStream.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { GDResources } from "../../../org/allbinary/game/gd/resource/GDResources.js";
+import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Memory } from "../../../org/allbinary/system/Memory.js";
+import { Memory } from '../../../org/allbinary/system/Memory.js';
 
     
 
@@ -77,7 +77,7 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageCacheBase } from "./ImageCacheBase.js";
+        import { ImageCacheBase } from './ImageCacheBase.js';
 
 export class ImageCache extends ImageCacheBase {
         

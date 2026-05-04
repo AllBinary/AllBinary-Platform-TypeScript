@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ViewPositionFactoryInterface } from "./ViewPositionFactoryInterface.js";
-import { ViewPosition } from "./ViewPosition.js";
+        import { ViewPositionFactoryInterface } from './ViewPositionFactoryInterface.js';
+import { ViewPosition } from './ViewPosition.js';
 
 export class ViewPositionFactory
             extends Object

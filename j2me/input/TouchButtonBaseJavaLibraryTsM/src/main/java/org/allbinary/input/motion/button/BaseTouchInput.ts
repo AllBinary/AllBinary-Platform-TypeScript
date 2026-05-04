@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 

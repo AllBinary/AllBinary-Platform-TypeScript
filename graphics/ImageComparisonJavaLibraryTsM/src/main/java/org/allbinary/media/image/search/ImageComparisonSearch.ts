@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ImageUtil } from "../../../../../org/allbinary/media/image/ImageUtil.js";
+import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
 
     
-import { PixelDelta } from "../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js";
+import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

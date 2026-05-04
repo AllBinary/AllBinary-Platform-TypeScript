@@ -18,73 +18,73 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { RTSLayerEvent } from "../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
+import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
 
     
-import { BuildingEventListenerInterface } from "../../../../../org/allbinary/game/layer/building/event/BuildingEventListenerInterface.js";
+import { BuildingEventListenerInterface } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventListenerInterface.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { UnitWaypointBehavior } from "../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js";
+import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js';
 
     
-import { PathFindingInfoFactory } from "../../../../../org/allbinary/game/media/graphics/geography/map/racetrack/PathFindingInfoFactory.js";
+import { PathFindingInfoFactory } from '../../../../../org/allbinary/game/media/graphics/geography/map/racetrack/PathFindingInfoFactory.js';
 
     
-import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventStrings } from "../../../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
-import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
+import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellTypeFactory } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js";
+import { GeographicMapCellTypeFactory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 
     
-import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js";
+import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 
     
-import { CustomMapGenerator } from "../../../../../org/allbinary/media/graphics/geography/map/racetrack/CustomMapGenerator.js";
+import { CustomMapGenerator } from '../../../../../org/allbinary/media/graphics/geography/map/racetrack/CustomMapGenerator.js';
 
     
-import { RaceTrackGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMap.js";
+import { RaceTrackGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMap.js';
 
     
-import { PathFindingInfo } from "../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js";
+import { PathFindingInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
 
     
-import { PathGenerator } from "../../../../../org/allbinary/media/graphics/geography/pathfinding/PathGenerator.js";
+import { PathGenerator } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/PathGenerator.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -105,7 +105,7 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WaypointBase } from "./WaypointBase.js";
+        import { WaypointBase } from './WaypointBase.js';
 
 export class NoCacheWaypoint extends WaypointBase implements BuildingEventListenerInterface {
         

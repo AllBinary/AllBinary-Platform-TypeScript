@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { AdvertisementsInterface } from "../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js";
+import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
 
     
-import { AdvertisementSearchInterface } from "../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js";
+import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
 
     
 

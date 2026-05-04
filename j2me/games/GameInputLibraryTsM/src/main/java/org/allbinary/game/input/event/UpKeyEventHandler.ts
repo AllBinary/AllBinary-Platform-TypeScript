@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { LocalPlayerInputIdFactory } from "../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js";
+import { LocalPlayerInputIdFactory } from '../../../../../org/allbinary/game/input/LocalPlayerInputIdFactory.js';
 
     
-import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
 
@@ -46,7 +46,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UpKeyEventHandlerBase } from "./UpKeyEventHandlerBase.js";
+        import { UpKeyEventHandlerBase } from './UpKeyEventHandlerBase.js';
 
 export class UpKeyEventHandler extends UpKeyEventHandlerBase {
         

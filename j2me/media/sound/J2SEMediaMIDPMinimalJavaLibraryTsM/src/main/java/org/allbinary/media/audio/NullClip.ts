@@ -18,38 +18,38 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { AudioFormat } from "../../../../javax/sound/sampled/AudioFormat.js";
+import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
 
     
-import { AudioInputStream } from "../../../../javax/sound/sampled/AudioInputStream.js";
+import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
 
     
-import { BooleanControl } from "../../../../javax/sound/sampled/BooleanControl.js";
+import { BooleanControl } from '../../../../javax/sound/sampled/BooleanControl.js';
 
     
-import { Clip } from "../../../../javax/sound/sampled/Clip.js";
+import { Clip } from '../../../../javax/sound/sampled/Clip.js';
 
     
-import { Control } from "../../../../javax/sound/sampled/Control.js";
+import { Control } from '../../../../javax/sound/sampled/Control.js';
 
     
-import { Type } from "../../../../javax/sound/sampled/Control/Type.js";
+import { Type } from '../../../../javax/sound/sampled/Control/Type.js';
 
     
-import { Info } from "../../../../javax/sound/sampled/Line/Info.js";
+import { Info } from '../../../../javax/sound/sampled/Line/Info.js';
 
     
-import { LineListener } from "../../../../javax/sound/sampled/LineListener.js";
+import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
 
     
-import { LineUnavailableException } from "../../../../javax/sound/sampled/LineUnavailableException.js";
+import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUnavailableException.js';
 
     
 
@@ -70,8 +70,8 @@ import { LineUnavailableException } from "../../../../javax/sound/sampled/LineUn
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullJ2SEControl } from "./NullJ2SEControl.js";
-import { NullAudioFormat } from "./NullAudioFormat.js";
+        import { NullJ2SEControl } from './NullJ2SEControl.js';
+import { NullAudioFormat } from './NullAudioFormat.js';
 
 export class NullClip
             extends Object

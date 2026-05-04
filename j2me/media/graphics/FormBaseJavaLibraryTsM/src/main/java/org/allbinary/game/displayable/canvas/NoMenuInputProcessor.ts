@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { NullCanvas } from "../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
+import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 
     
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -52,7 +52,7 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
+        import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
 
 export class NoMenuInputProcessor extends BasicMenuInputProcessor {
         

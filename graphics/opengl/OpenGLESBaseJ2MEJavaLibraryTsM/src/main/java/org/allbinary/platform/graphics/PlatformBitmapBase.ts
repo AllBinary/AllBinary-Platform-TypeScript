@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
 

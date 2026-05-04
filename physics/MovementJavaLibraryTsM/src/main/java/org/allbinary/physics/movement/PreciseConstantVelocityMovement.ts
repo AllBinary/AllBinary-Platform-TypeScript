@@ -4,25 +4,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
+import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
 
     
-import { BasicVelocityProperties } from "../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js";
+import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
 
     
-import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.js";
+import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
 
     
-import { MathUtil } from "../../../../org/allbinary/logic/math/MathUtil.js";
+import { MathUtil } from '../../../../org/allbinary/logic/math/MathUtil.js';
 
     
-import { ScaleFactorFactory } from "../../../../org/allbinary/logic/math/ScaleFactorFactory.js";
+import { ScaleFactorFactory } from '../../../../org/allbinary/logic/math/ScaleFactorFactory.js';
 
     
 
@@ -43,7 +43,7 @@ import { ScaleFactorFactory } from "../../../../org/allbinary/logic/math/ScaleFa
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicConstantVelocityMovement } from "./BasicConstantVelocityMovement.js";
+        import { BasicConstantVelocityMovement } from './BasicConstantVelocityMovement.js';
 
 export class PreciseConstantVelocityMovement extends BasicConstantVelocityMovement {
         

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { VectorRotationGenerator } from "../../../../../../org/allbinary/animation/VectorRotationGenerator.js";
+import { VectorRotationGenerator } from '../../../../../../org/allbinary/animation/VectorRotationGenerator.js';
 
     
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { AngleFactory } from "../../../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

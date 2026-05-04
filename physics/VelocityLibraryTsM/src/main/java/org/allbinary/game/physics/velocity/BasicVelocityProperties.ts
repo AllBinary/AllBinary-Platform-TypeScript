@@ -18,38 +18,38 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionUtil } from "../../../../../org/allbinary/direction/DirectionUtil.js";
+import { DirectionUtil } from '../../../../../org/allbinary/direction/DirectionUtil.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecimal.js";
+import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 
     
-import { AxisMathVectorUtil } from "../../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js";
+import { AxisMathVectorUtil } from '../../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Angle } from "../../../../../org/allbinary/math/Angle.js";
+import { Angle } from '../../../../../org/allbinary/math/Angle.js';
 
     
-import { PositionStrings } from "../../../../../org/allbinary/math/PositionStrings.js";
+import { PositionStrings } from '../../../../../org/allbinary/math/PositionStrings.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -70,7 +70,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicVelocityInterface } from "./BasicVelocityInterface.js";
+        import { BasicVelocityInterface } from './BasicVelocityInterface.js';
 
 export class BasicVelocityProperties
             extends Object

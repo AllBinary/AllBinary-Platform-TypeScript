@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
 

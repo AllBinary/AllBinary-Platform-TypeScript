@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { DomData } from "../../../../../../../../org/allbinary/data/tree/dom/DomData.js";
+import { DomData } from '../../../../../../../../org/allbinary/data/tree/dom/DomData.js';
 
     
-import { DomNodeHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -69,8 +69,8 @@ import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CssPropertyValues } from "./CssPropertyValues.js";
-import { CssPropertyData } from "./CssPropertyData.js";
+        import { CssPropertyValues } from './CssPropertyValues.js';
+import { CssPropertyData } from './CssPropertyData.js';
 
 export class CssProperty
             extends Object

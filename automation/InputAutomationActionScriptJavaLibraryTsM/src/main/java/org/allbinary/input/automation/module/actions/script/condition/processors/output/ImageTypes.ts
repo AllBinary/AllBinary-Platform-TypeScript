@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../../../java/util/Vector.js';
 
     
-import { DomNodeHelper } from "../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { InputImageType } from "../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js";
+import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
 
     
-import { StringMaker } from "../../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Document } from "../../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -66,7 +66,7 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
+        import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
 
 export class ImageTypes
             extends Object

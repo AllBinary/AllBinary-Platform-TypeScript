@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { RTSLayerFormFactory } from "../../../../org/allbinary/game/input/RTSLayerFormFactory.js";
+import { RTSLayerFormFactory } from '../../../../org/allbinary/game/input/RTSLayerFormFactory.js';
 
     
-import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/ScrollSelectionForm.js";
+import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { ItemArraySingletonFactoryInterface } from "../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js";
+import { ItemArraySingletonFactoryInterface } from '../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js';
 
     
 
@@ -60,8 +60,8 @@ import { ItemArraySingletonFactoryInterface } from "../../../../org/allbinary/gr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSScrollSelectionFormFactory } from "./RTSScrollSelectionFormFactory.js";
-import { RTSLayer } from "./RTSLayer.js";
+        import { RTSScrollSelectionFormFactory } from './RTSScrollSelectionFormFactory.js';
+import { RTSLayer } from './RTSLayer.js';
 
 export class AdvancedRTSLayerFormFactory extends RTSLayerFormFactory {
         

@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { AllBinaryGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
 
@@ -49,8 +49,8 @@ import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/colo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCompositeInterface } from "./GeographicMapCompositeInterface.js";
-import { BasicGeographicMap } from "./BasicGeographicMap.js";
+        import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
+import { BasicGeographicMap } from './BasicGeographicMap.js';
 
 export class ColorFromEventUtil
             extends Object

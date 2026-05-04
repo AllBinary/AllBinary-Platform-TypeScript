@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics2D } from "../../../../java/awt/Graphics2D.js";
+import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
 
     
-import { AffineTransform } from "../../../../java/awt/geom/AffineTransform.js";
+import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
 
     
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
     
 
@@ -57,9 +57,9 @@ import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageUtil } from "./ImageUtil.js";
-import { ImageJ2SEUtil } from "./ImageJ2SEUtil.js";
-import { ImageCreationUtil } from "./ImageCreationUtil.js";
+        import { ImageUtil } from './ImageUtil.js';
+import { ImageJ2SEUtil } from './ImageJ2SEUtil.js';
+import { ImageCreationUtil } from './ImageCreationUtil.js';
 
 export class ImageScaleUtil
             extends Object

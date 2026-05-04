@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
-import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js";
+import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 
     
 
@@ -46,8 +46,8 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackGeographicMapCellType } from "./RaceTrackGeographicMapCellType.js";
-import { RaceTrackGeographicMapCellTypes } from "./RaceTrackGeographicMapCellTypes.js";
+        import { RaceTrackGeographicMapCellType } from './RaceTrackGeographicMapCellType.js';
+import { RaceTrackGeographicMapCellTypes } from './RaceTrackGeographicMapCellTypes.js';
 
 export class RaceTrackGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         

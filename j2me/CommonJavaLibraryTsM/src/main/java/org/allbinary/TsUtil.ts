@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { InterruptedException } from "../../java/lang/InterruptedException.js";
+            import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
 
 

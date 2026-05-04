@@ -18,57 +18,57 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from '../../../java/util/Vector.js';
 
     
-import { StoreFrontFactory } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { InventoryData } from "../../../org/allbinary/business/user/commerce/inventory/InventoryData.js";
+import { InventoryData } from '../../../org/allbinary/business/user/commerce/inventory/InventoryData.js';
 
     
-import { BasicItemView } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js";
+import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
 
     
-import { ItemInterface } from "../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js";
+import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 
     
-import { InventoryEntity } from "../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js";
+import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
 
     
-import { InventoryEntityFactory } from "../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js";
+import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 
     
-import { DomNodeInterface } from "../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { ModDomHelper } from "../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SearchData } from "../../../org/allbinary/logic/control/search/SearchData.js";
+import { SearchData } from '../../../org/allbinary/logic/control/search/SearchData.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../org/w3c/dom/Document.js";
+import { Document } from '../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../org/w3c/dom/Node.js";
+import { Node } from '../../../org/w3c/dom/Node.js';
 
     
-import { HttpStoreComponentView } from "../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 

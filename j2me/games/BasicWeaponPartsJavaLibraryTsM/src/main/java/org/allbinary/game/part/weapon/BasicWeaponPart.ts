@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
+import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 
     
-import { PartInterface } from "../../../../../org/allbinary/game/part/PartInterface.js";
+import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
 
     
-import { NoScoreable } from "../../../../../org/allbinary/game/score/NoScoreable.js";
+import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
 
     
-import { ScoreableInterface } from "../../../../../org/allbinary/game/score/ScoreableInterface.js";
+import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 
     
-import { RelativeRelationship } from "../../../../../org/allbinary/graphics/RelativeRelationship.js";
+import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 
     
 
@@ -78,7 +78,7 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SalvoInterface } from "./SalvoInterface.js";
+        import { SalvoInterface } from './SalvoInterface.js';
 
 export class BasicWeaponPart
             extends Object

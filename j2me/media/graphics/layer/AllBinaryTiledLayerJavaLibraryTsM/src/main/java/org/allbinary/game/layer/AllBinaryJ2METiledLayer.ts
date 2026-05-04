@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Font } from "../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { TiledLayer } from "../../../../javax/microedition/lcdui/game/TiledLayer.js";
+import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -57,7 +57,7 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
+        import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
 
 export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
         

@@ -4,16 +4,16 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { InputStream } from "../../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../../java/io/InputStream.js';
 
     
-import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
 

@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { EntryData } from "../../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { ShippingAddressData } from "../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js";
+import { ShippingAddressData } from '../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
 
     
-import { StreetAddress } from "../../../../../../../org/allbinary/business/user/address/StreetAddress.js";
+import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
 
     
-import { StreetAddressData } from "../../../../../../../org/allbinary/business/user/address/StreetAddressData.js";
+import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
 
     
-import { OrderHistoryData } from "../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js";
+import { OrderHistoryData } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
 
     
-import { MoneyException } from "../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js";
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 
     
-import { ShippingMethodData } from "../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js";
+import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -69,8 +69,8 @@ import { StringUtil } from "../../../../../../../org/allbinary/logic/string/Stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicItem } from "./BasicItem.js";
-import { OrderItemInterface } from "./OrderItemInterface.js";
+        import { BasicItem } from './BasicItem.js';
+import { OrderItemInterface } from './OrderItemInterface.js';
 
 export class Item extends BasicItem implements OrderItemInterface {
         

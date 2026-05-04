@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 
     
-import { AllBinaryLayer } from "../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { MathUtil } from "../../../org/allbinary/logic/math/MathUtil.js";
+import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
 
     
 

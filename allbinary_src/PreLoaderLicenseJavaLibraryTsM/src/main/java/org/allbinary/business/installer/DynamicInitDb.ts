@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { DatabaseConnectionInfoInterface } from "../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js";
+import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
 
     
-import { InitDbHelperFactory } from "../../../../org/allbinary/business/init/db/InitDbHelperFactory.js";
+import { InitDbHelperFactory } from '../../../../org/allbinary/business/init/db/InitDbHelperFactory.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { LicensingException } from "../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 
@@ -52,7 +52,7 @@ import { LicensingException } from "../../../../org/allbinary/logic/system/secur
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InitDb } from "./InitDb.js";
+        import { InitDb } from './InitDb.js';
 
 export class DynamicInitDb extends InitDb {
         

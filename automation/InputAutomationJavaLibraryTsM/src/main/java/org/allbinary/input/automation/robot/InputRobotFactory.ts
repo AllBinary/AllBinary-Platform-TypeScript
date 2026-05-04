@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { awt } from "../../../../../java/awt.js";
+import { awt } from '../../../../../java/awt.js';
 
     
-import { Collection } from "../../../../../java/util/Collection.js";
+import { Collection } from '../../../../../java/util/Collection.js';
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { Iterator } from "../../../../../java/util/Iterator.js";
+import { Iterator } from '../../../../../java/util/Iterator.js';
 
     
-import { Set } from "../../../../../java/util/Set.js";
+import { Set } from '../../../../../java/util/Set.js';
 
     
-import { HelpSet } from "../../../../../javax/help/HelpSet.js";
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 
     
-import { HelpSetEvent } from "../../../../../javax/help/event/HelpSetEvent.js";
+import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
 
     
-import { HelpSetListener } from "../../../../../javax/help/event/HelpSetListener.js";
+import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { JavaHelpSetNotifier } from "../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js";
+import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
 
     
-import { InterfaceUtil } from "../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js";
+import { InterfaceUtil } from '../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
 
     
-import { SecuredNativeLibraryInterface } from "../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js";
+import { SecuredNativeLibraryInterface } from '../../../../../org/allbinary/logic/system/loader/SecuredNativeLibraryInterface.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -81,10 +81,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GraphicsEnvironment } from "./GraphicsEnvironment.js";
-import { GraphicsDevice } from "./GraphicsDevice.js";
-import { InputRobotInterface } from "./InputRobotInterface.js";
-import { InputRobot } from "./InputRobot.js";
+        import { GraphicsEnvironment } from './GraphicsEnvironment.js';
+import { GraphicsDevice } from './GraphicsDevice.js';
+import { InputRobotInterface } from './InputRobotInterface.js';
+import { InputRobot } from './InputRobot.js';
 
 export class InputRobotFactory
             extends Object

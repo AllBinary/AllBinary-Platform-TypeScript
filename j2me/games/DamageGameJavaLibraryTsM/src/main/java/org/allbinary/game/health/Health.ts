@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -49,9 +49,9 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HealthInterface } from "./HealthInterface.js";
-import { NullHealthListener } from "./NullHealthListener.js";
-import { HealthListenerInterface } from "./HealthListenerInterface.js";
+        import { HealthInterface } from './HealthInterface.js';
+import { NullHealthListener } from './NullHealthListener.js';
+import { HealthListenerInterface } from './HealthListenerInterface.js';
 
 export class Health
             extends Object

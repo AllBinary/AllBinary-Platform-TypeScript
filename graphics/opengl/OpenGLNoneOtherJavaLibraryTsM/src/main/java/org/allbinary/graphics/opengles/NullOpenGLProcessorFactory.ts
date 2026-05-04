@@ -4,7 +4,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -26,7 +26,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLProcessor } from "./OpenGLProcessor.js";
+        import { OpenGLProcessor } from './OpenGLProcessor.js';
 
 export class NullOpenGLProcessorFactory
             extends Object

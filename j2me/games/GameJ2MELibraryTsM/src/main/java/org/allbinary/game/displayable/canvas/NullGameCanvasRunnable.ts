@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../java/lang/Thread.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Item } from "../../../../../javax/microedition/lcdui/Item.js";
+import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
 
     
-import { GameState } from "../../../../../org/allbinary/game/state/GameState.js";
+import { GameState } from '../../../../../org/allbinary/game/state/GameState.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -65,7 +65,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameCanvasRunnableInterface } from "./GameCanvasRunnableInterface.js";
+        import { GameCanvasRunnableInterface } from './GameCanvasRunnableInterface.js';
 
 export class NullGameCanvasRunnable
             extends Object

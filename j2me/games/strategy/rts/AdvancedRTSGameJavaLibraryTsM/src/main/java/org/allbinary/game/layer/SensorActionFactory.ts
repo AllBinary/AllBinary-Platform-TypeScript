@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -40,7 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SensorAction } from "./SensorAction.js";
+        import { SensorAction } from './SensorAction.js';
 
 export class SensorActionFactory
             extends Object

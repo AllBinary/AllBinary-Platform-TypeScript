@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { NumberStringHud } from "../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js";
+import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
 
     
 
@@ -43,7 +43,7 @@ import { NumberStringHud } from "../../../../../org/allbinary/game/layer/hud/bas
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Capital } from "./Capital.js";
+        import { Capital } from './Capital.js';
 
 export class HudCapital extends Capital {
         

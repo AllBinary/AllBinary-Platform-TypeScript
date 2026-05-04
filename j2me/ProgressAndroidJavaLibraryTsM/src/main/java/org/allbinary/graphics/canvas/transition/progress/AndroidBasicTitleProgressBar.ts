@@ -18,95 +18,95 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { IllegalArgumentException } from "../../../../../../java/lang/IllegalArgumentException.js";
+            import { IllegalArgumentException } from '../../../../../../java/lang/IllegalArgumentException.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { Activity } from "../../../../../../android/app/Activity.js";
+import { Activity } from '../../../../../../android/app/Activity.js';
 
     
-import { AndroidUtil } from "../../../../../../org/allbinary/AndroidUtil.js";
+import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
 
     
-import { GameFeatureImageCacheFactory } from "../../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js";
+import { GameFeatureImageCacheFactory } from '../../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
 
     
-import { PreResourceImageUtil } from "../../../../../../org/allbinary/image/PreResourceImageUtil.js";
+import { PreResourceImageUtil } from '../../../../../../org/allbinary/image/PreResourceImageUtil.js';
 
     
-import { ForcedLogUtil } from "../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { ExceptionUtil } from "../../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js";
+import { ExceptionUtil } from '../../../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
 
     
-import { Animation } from "../../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../../org/allbinary/animation/Animation.js';
 
     
-import { NullAnimationFactory } from "../../../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { Features } from "../../../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { MainFeatureFactory } from "../../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js";
+import { MainFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 
     
-import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { DisplayInfoSingleton } from "../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { DisplayChangeEvent } from "../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js";
+import { DisplayChangeEvent } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
 
     
-import { DisplayChangeEventHandler } from "../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js";
+import { DisplayChangeEventHandler } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
 
     
-import { DisplayChangeEventListener } from "../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js";
+import { DisplayChangeEventListener } from '../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
 
     
-import { ImageCacheFactory } from "../../../../../../org/allbinary/image/ImageCacheFactory.js";
+import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
 
     
-import { ImageScaleUtil } from "../../../../../../org/allbinary/media/image/ImageScaleUtil.js";
+import { ImageScaleUtil } from '../../../../../../org/allbinary/media/image/ImageScaleUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { AnimationBehavior } from "../../../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { ImageAnimation } from "../../../../../../org/allbinary/animation/image/ImageAnimation.js";
+import { ImageAnimation } from '../../../../../../org/allbinary/animation/image/ImageAnimation.js';
 
     
-import { ResourceUtil } from "../../../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { EventStrings } from "../../../../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
-import { ARunnable } from "../../../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { NullRunnable } from "../../../../../../org/allbinary/thread/NullRunnable.js";
+import { NullRunnable } from '../../../../../../org/allbinary/thread/NullRunnable.js';
 
     
 
@@ -127,11 +127,11 @@ import { NullRunnable } from "../../../../../../org/allbinary/thread/NullRunnabl
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProgressCanvas } from "./ProgressCanvas.js";
-import { ShowTitleProgressBarRunnable } from "./ShowTitleProgressBarRunnable.js";
-import { DismissTitleProgressBarRunnable } from "./DismissTitleProgressBarRunnable.js";
-import { TitleProgressBarSetProgressRunnable } from "./TitleProgressBarSetProgressRunnable.js";
-import { TitleProgressBarPortionSetProgressRunnable } from "./TitleProgressBarPortionSetProgressRunnable.js";
+        import { ProgressCanvas } from './ProgressCanvas.js';
+import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
+import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
+import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
+import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
 
 export class AndroidBasicTitleProgressBar extends ProgressCanvas implements DisplayChangeEventListener {
         

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../java/util/Hashtable.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -57,12 +57,12 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameTypeFactory } from "./GameTypeFactory.js";
-import { GameMode } from "./GameMode.js";
-import { PlayerTypesFactory } from "./PlayerTypesFactory.js";
-import { GameInfoData } from "./GameInfoData.js";
-import { GameType } from "./GameType.js";
-import { PlayerType } from "./PlayerType.js";
+        import { GameTypeFactory } from './GameTypeFactory.js';
+import { GameMode } from './GameMode.js';
+import { PlayerTypesFactory } from './PlayerTypesFactory.js';
+import { GameInfoData } from './GameInfoData.js';
+import { GameType } from './GameType.js';
+import { PlayerType } from './PlayerType.js';
 
 export class GameInfo
             extends Object

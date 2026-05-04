@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../../../java/util/Set.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -72,13 +72,13 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UserEmailEventsConfigurationInterface } from "./UserEmailEventsConfigurationInterface.js";
-import { UserEmailEventsConfiguration } from "./UserEmailEventsConfiguration.js";
-import { UserEmailEventConfigurationData } from "./UserEmailEventConfigurationData.js";
-import { UserEmailEventConfigurationView } from "./UserEmailEventConfigurationView.js";
-import { UserEmailEventsConfigurationMapping } from "./UserEmailEventsConfigurationMapping.js";
-import { UserEmailEventsConfigurationData } from "./UserEmailEventsConfigurationData.js";
-import { UserEmailEventConfigurationInterface } from "./UserEmailEventConfigurationInterface.js";
+        import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
+import { UserEmailEventsConfiguration } from './UserEmailEventsConfiguration.js';
+import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';
+import { UserEmailEventConfigurationView } from './UserEmailEventConfigurationView.js';
+import { UserEmailEventsConfigurationMapping } from './UserEmailEventsConfigurationMapping.js';
+import { UserEmailEventsConfigurationData } from './UserEmailEventsConfigurationData.js';
+import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
 
 export class UserEmailEventsConfigurationView
             extends Object

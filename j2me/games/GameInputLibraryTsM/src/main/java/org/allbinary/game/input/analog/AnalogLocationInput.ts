@@ -4,11 +4,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { CustomGPoint } from "../../../../../org/allbinary/graphics/CustomGPoint.js";
+import { CustomGPoint } from '../../../../../org/allbinary/graphics/CustomGPoint.js';
 
     
 

@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { FormTypeFactory } from "../../../../../org/allbinary/graphics/form/FormTypeFactory.js";
+import { FormTypeFactory } from '../../../../../org/allbinary/graphics/form/FormTypeFactory.js';
 
     
-import { ItemPaintableFactory } from "../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js";
+import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
 
     
-import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js";
+import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
 
     
 

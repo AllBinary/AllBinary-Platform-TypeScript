@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
+import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 
     
-import { SimpleWeaponLayer } from "../../../../../../org/allbinary/game/layer/weapon/SimpleWeaponLayer.js";
+import { SimpleWeaponLayer } from '../../../../../../org/allbinary/game/layer/weapon/SimpleWeaponLayer.js';
 
     
-import { RemoteInfo } from "../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
+import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { Rectangle } from "../../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { SecondaryPlayerQueueFactory } from "../../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js";
+import { SecondaryPlayerQueueFactory } from '../../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
 
     
-import { NoMovementFactory } from "../../../../../../org/allbinary/physics/movement/NoMovementFactory.js";
+import { NoMovementFactory } from '../../../../../../org/allbinary/physics/movement/NoMovementFactory.js';
 
     
-import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
 
     
-import { ViewPositionEventHandler } from "../../../../../../org/allbinary/view/event/ViewPositionEventHandler.js";
+import { ViewPositionEventHandler } from '../../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
 
     
-import { DropWeaponSound } from "../../../../../../org/allbinary/weapon/media/audio/DropWeaponSound.js";
+import { DropWeaponSound } from '../../../../../../org/allbinary/weapon/media/audio/DropWeaponSound.js';
 
     
 
@@ -75,7 +75,7 @@ import { DropWeaponSound } from "../../../../../../org/allbinary/weapon/media/au
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MineWeaponResources } from "./MineWeaponResources.js";
+        import { MineWeaponResources } from './MineWeaponResources.js';
 
 export class MineLayer extends SimpleWeaponLayer {
         

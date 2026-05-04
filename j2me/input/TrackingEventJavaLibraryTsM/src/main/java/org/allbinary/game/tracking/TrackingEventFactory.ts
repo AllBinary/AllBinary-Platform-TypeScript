@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js";
+import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
 
     
 
@@ -46,8 +46,8 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TrackingEvent } from "./TrackingEvent.js";
-import { TrackingEventHandler } from "./TrackingEventHandler.js";
+        import { TrackingEvent } from './TrackingEvent.js';
+import { TrackingEventHandler } from './TrackingEventHandler.js';
 
 export class TrackingEventFactory
             extends Object

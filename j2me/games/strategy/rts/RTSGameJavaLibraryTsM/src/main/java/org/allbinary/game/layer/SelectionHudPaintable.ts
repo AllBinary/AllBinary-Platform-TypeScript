@@ -18,44 +18,44 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { NullAnimationFactory } from "../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { InitUpdatePaintable } from "../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js";
+import { InitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
 
     
-import { CommonButtons } from "../../../../org/allbinary/input/motion/button/CommonButtons.js";
+import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
 
     
-import { TouchButtonLocationHelper } from "../../../../org/allbinary/input/motion/button/TouchButtonLocationHelper.js";
+import { TouchButtonLocationHelper } from '../../../../org/allbinary/input/motion/button/TouchButtonLocationHelper.js';
 
     
-import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/PrimitiveLongUtil.js";
+import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
 
     
 

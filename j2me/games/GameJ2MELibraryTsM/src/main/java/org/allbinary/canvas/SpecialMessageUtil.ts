@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Features } from "../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { OpenGLFeatureFactory } from "../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+import { OpenGLFeatureFactory } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { Memory } from "../../../org/allbinary/system/Memory.js";
+import { Memory } from '../../../org/allbinary/system/Memory.js';
 
     
 
@@ -55,7 +55,7 @@ import { Memory } from "../../../org/allbinary/system/Memory.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameStatisticsFactory } from "./GameStatisticsFactory.js";
+        import { GameStatisticsFactory } from './GameStatisticsFactory.js';
 
 export class SpecialMessageUtil
             extends Object

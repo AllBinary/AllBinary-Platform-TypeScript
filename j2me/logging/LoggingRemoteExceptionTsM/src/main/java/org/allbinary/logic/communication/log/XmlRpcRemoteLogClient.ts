@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from '../../../../../java/io/IOException.js';
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { XmlRpcClient } from "../../../../../org/apache/xmlrpc/XmlRpcClient.js";
+import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
 
     
-import { XmlRpcException } from "../../../../../org/apache/xmlrpc/XmlRpcException.js";
+import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
 
     
-import { XmlRpcAbeClient } from "../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js";
+import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
 
     
-import { NoCrypt } from "../../../../../org/allbinary/logic/system/security/crypt/jcehelper/NoCrypt.js";
+import { NoCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/NoCrypt.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
 

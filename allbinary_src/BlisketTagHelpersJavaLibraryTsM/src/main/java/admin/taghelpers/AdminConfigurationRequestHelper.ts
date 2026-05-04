@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { AdminConfiguration } from "../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js";
+import { AdminConfiguration } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
 
     
-import { AdminConfigurationInterface } from "../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js";
+import { AdminConfigurationInterface } from '../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -60,7 +60,7 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ModifyTable } from "./ModifyTable.js";
+        import { ModifyTable } from './ModifyTable.js';
 
 export class AdminConfigurationRequestHelper extends ModifyTable {
         

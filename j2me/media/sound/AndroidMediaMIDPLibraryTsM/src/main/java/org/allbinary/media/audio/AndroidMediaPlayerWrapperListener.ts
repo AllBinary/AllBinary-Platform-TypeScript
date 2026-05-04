@@ -4,28 +4,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PlayerListener } from "../../../../javax/microedition/media/PlayerListener.js";
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 
     
-import { MediaPlayer } from "../../../../android/media/MediaPlayer.js";
+import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -46,15 +46,15 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AndroidMediaPlayerWrapper } from "./AndroidMediaPlayerWrapper.js";
-//import { MediaPlayerOnBufferingUpdateListener } from "./MediaPlayerOnBufferingUpdateListener.js";
-import { OnBufferingUpdateListener } from "./OnBufferingUpdateListener.js";
-//import { MediaPlayerOnPreparedListener } from "./MediaPlayerOnPreparedListener.js";
-import { OnPreparedListener } from "./OnPreparedListener.js";
-//import { MediaPlayerOnErrorListener } from "./MediaPlayerOnErrorListener.js";
-import { OnErrorListener } from "./OnErrorListener.js";
-//import { MediaPlayerOnCompletionListener } from "./MediaPlayerOnCompletionListener.js";
-import { OnCompletionListener } from "./OnCompletionListener.js";
+        import { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
+//import { MediaPlayerOnBufferingUpdateListener } from './MediaPlayerOnBufferingUpdateListener.js';
+import { OnBufferingUpdateListener } from './OnBufferingUpdateListener.js';
+//import { MediaPlayerOnPreparedListener } from './MediaPlayerOnPreparedListener.js';
+import { OnPreparedListener } from './OnPreparedListener.js';
+//import { MediaPlayerOnErrorListener } from './MediaPlayerOnErrorListener.js';
+import { OnErrorListener } from './OnErrorListener.js';
+//import { MediaPlayerOnCompletionListener } from './MediaPlayerOnCompletionListener.js';
+import { OnCompletionListener } from './OnCompletionListener.js';
 
 export class AndroidMediaPlayerWrapperListener
             extends Object

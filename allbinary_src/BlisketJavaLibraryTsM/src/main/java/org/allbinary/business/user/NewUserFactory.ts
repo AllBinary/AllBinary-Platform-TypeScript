@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { User } from "../../../../org/allbinary/business/user/modules/User.js";
+import { User } from '../../../../org/allbinary/business/user/modules/User.js';
 
     
-import { UserRoleData } from "../../../../org/allbinary/business/user/role/UserRoleData.js";
+import { UserRoleData } from '../../../../org/allbinary/business/user/role/UserRoleData.js';
 
     
-import { RequestParams } from "../../../../org/allbinary/logic/communication/http/request/RequestParams.js";
+import { RequestParams } from '../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 
     
-import { TransformInfoHttpInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
 
@@ -63,8 +63,8 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UserInterface } from "./UserInterface.js";
-import { CreateUserFactory } from "./CreateUserFactory.js";
+        import { UserInterface } from './UserInterface.js';
+import { CreateUserFactory } from './CreateUserFactory.js';
 
 export class NewUserFactory
             extends Object

@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { Anchor } from "../../../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { PaintableToImageUtil } from "../../../../../../org/allbinary/image/PaintableToImageUtil.js";
+import { PaintableToImageUtil } from '../../../../../../org/allbinary/image/PaintableToImageUtil.js';
 
     
-import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
 
     
 
@@ -63,7 +63,7 @@ import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MiniMapLayer } from "./MiniMapLayer.js";
+        import { MiniMapLayer } from './MiniMapLayer.js';
 
 export class ImageMiniMapLayer extends MiniMapLayer {
         

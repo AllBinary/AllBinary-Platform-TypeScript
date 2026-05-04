@@ -4,40 +4,40 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFactory.js";
+import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { CanvasStrings } from "../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -58,9 +58,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomForm } from "./CustomForm.js";
-import { FormTypeFactory } from "./FormTypeFactory.js";
-import { FormType } from "./FormType.js";
+        import { CustomForm } from './CustomForm.js';
+import { FormTypeFactory } from './FormTypeFactory.js';
+import { FormType } from './FormType.js';
 
 export class PaintableForm extends CustomForm {
         

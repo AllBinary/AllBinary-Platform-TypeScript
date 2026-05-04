@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImmutableImage.js";
+import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
 
     
 
@@ -57,8 +57,8 @@ import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImm
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageUtil } from "./ImageUtil.js";
-import { ImageCreationUtil } from "./ImageCreationUtil.js";
+        import { ImageUtil } from './ImageUtil.js';
+import { ImageCreationUtil } from './ImageCreationUtil.js';
 
 export class ImageCopyUtil
             extends Object

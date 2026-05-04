@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonPhoneStrings } from "../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,9 +57,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Angle } from "./Angle.js";
-import { NamedAngle } from "./NamedAngle.js";
-import { FrameUtil } from "./FrameUtil.js";
+        import { Angle } from './Angle.js';
+import { NamedAngle } from './NamedAngle.js';
+import { FrameUtil } from './FrameUtil.js';
 
 export class AngleFactory
             extends Object

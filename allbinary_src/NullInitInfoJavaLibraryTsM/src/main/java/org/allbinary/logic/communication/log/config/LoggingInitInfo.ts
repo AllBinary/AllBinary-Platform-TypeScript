@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -48,7 +48,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogConfig } from "./LogConfig.js";
+        import { LogConfig } from './LogConfig.js';
 
 export class LoggingInitInfo
             extends Object

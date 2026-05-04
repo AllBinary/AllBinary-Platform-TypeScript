@@ -18,67 +18,67 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { FileOutputStream } from "../../../../java/io/FileOutputStream.js";
+import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
 
     
-import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Bitmap } from "../../../../android/graphics/Bitmap.js";
+import { Bitmap } from '../../../../android/graphics/Bitmap.js';
 
     
-import { Canvas } from "../../../../android/graphics/Canvas.js";
+import { Canvas } from '../../../../android/graphics/Canvas.js';
 
     
-import { Paint } from "../../../../android/graphics/Paint.js";
+import { Paint } from '../../../../android/graphics/Paint.js';
 
     
-import { Rect } from "../../../../android/graphics/Rect.js";
+import { Rect } from '../../../../android/graphics/Rect.js';
 
     
-import { Typeface } from "../../../../android/graphics/Typeface.js";
+import { Typeface } from '../../../../android/graphics/Typeface.js';
 
     
-import { ResourceUtil } from "../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CanvasStrings } from "../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { PreResourceImageUtil } from "../../../../org/allbinary/image/PreResourceImageUtil.js";
+import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
 
     
-import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLESImage.js";
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { AndroidImageInterface } from "../../../../org/microemu/android/device/AndroidImageInterface.js";
+import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 
     
-import { AndroidImmutableImage } from "../../../../org/microemu/android/device/AndroidImmutableImage.js";
+import { AndroidImmutableImage } from '../../../../org/microemu/android/device/AndroidImmutableImage.js';
 
     
 
@@ -99,7 +99,7 @@ import { AndroidImmutableImage } from "../../../../org/microemu/android/device/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TrueTypeFontUtilBase } from "./TrueTypeFontUtilBase.js";
+        import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
 
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         

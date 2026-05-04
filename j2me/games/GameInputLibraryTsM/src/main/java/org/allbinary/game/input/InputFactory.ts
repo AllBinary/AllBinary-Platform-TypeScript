@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -52,7 +52,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Input } from "./Input.js";
+        import { Input } from './Input.js';
 
 export class InputFactory
             extends Object

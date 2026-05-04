@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellPositionFactoryInitVisitorInterface } from "../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInitVisitorInterface.js";
+import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInitVisitorInterface.js';
 
     
 
@@ -51,7 +51,7 @@ import { GeographicMapCellPositionFactoryInitVisitorInterface } from "../../../.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeologicalGeographicMapCellPosition } from "./GeologicalGeographicMapCellPosition.js";
+        import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
 
 export class GeologicalGeographicMapCellPositionFactoryInitVisitor
             extends Object

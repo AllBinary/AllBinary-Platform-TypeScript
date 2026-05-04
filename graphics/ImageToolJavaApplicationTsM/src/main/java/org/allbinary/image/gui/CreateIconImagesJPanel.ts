@@ -18,58 +18,58 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../java/lang/System.js";
+            import { System } from '../../../../java/lang/System.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { Raster } from "../../../../java/awt/image/Raster.js";
+import { Raster } from '../../../../java/awt/image/Raster.js';
 
     
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { CanvasStrings } from "../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { ImagePersistanceUtil } from "../../../../org/allbinary/media/image/ImagePersistanceUtil.js";
+import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 
     
-import { ImageProcessorInput } from "../../../../org/allbinary/media/image/ImageProcessorInput.js";
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 
     
-import { ImageProcessorInputCompositeInterface } from "../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js";
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 
     
-import { ImageUtil } from "../../../../org/allbinary/media/image/ImageUtil.js";
+import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -90,12 +90,12 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { JButton } from "./JButton.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
+        import { JPanel } from './JPanel.js';
+import { JButton } from './JButton.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
 
 export class CreateIconImagesJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

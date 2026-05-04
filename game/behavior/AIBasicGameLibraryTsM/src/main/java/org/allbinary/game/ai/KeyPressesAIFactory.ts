@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
+import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 
     
-import { InputFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js";
+import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -57,9 +57,9 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
-import { MultiKeyPressesAI } from "./MultiKeyPressesAI.js";
-import { KeyPressesAI } from "./KeyPressesAI.js";
+        import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
+import { MultiKeyPressesAI } from './MultiKeyPressesAI.js';
+import { KeyPressesAI } from './KeyPressesAI.js';
 
 export class KeyPressesAIFactory
             extends Object

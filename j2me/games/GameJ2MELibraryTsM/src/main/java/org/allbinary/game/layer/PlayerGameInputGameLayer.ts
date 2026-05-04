@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { PlayerGameInput } from "../../../../org/allbinary/game/input/PlayerGameInput.js";
+import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
 
     
-import { PlayerGameInputCompositeInterface } from "../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js";
+import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
 
     
-import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { CanvasStrings } from "../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { StaticViewPosition } from "../../../../org/allbinary/view/StaticViewPosition.js";
+import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPosition.js';
 
     
 
@@ -75,7 +75,7 @@ import { StaticViewPosition } from "../../../../org/allbinary/view/StaticViewPos
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
+        import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
 
 export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements PlayerGameInputCompositeInterface {
         

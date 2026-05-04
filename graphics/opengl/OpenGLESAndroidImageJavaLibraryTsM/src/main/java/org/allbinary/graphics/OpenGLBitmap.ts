@@ -4,14 +4,14 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Bitmap } from "../../../android/graphics/Bitmap.js";
+import { Bitmap } from '../../../android/graphics/Bitmap.js';
 
     
-import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/PlatformBitmapBase.js";
+import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 
     
 

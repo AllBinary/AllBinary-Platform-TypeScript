@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -58,7 +58,7 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ValidatorBaseInterface } from "./ValidatorBaseInterface.js";
+        import { ValidatorBaseInterface } from './ValidatorBaseInterface.js';
 
 export class ValidatorBase
             extends Object

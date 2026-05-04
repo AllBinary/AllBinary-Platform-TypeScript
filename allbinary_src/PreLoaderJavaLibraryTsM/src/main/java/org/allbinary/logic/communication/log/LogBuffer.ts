@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
 
@@ -43,8 +43,8 @@ import { Vector } from "../../../../../java/util/Vector.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogUtil } from "./LogUtil.js";
-import { Log } from "./Log.js";
+        import { LogUtil } from './LogUtil.js';
+import { Log } from './Log.js';
 
 export class LogBuffer
             extends Object

@@ -18,61 +18,61 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { ImageItem } from "../../../../../javax/microedition/lcdui/ImageItem.js";
+import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
 
     
-import { RTSGameStrings } from "../../../../../org/allbinary/game/layer/RTSGameStrings.js";
+import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
 
     
-import { LayerInterfaceFactoryImageItem } from "../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js";
+import { LayerInterfaceFactoryImageItem } from '../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js';
 
     
-import { RTSLayerTextAnimation } from "../../../../../org/allbinary/game/layer/item/RTSLayerTextAnimation.js";
+import { RTSLayerTextAnimation } from '../../../../../org/allbinary/game/layer/item/RTSLayerTextAnimation.js';
 
     
-import { BasicGameResources } from "../../../../../org/allbinary/game/layer/resources/BasicGameResources.js";
+import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
 
     
-import { FlagGameResources } from "../../../../../org/allbinary/game/layer/waypoint/FlagGameResources.js";
+import { FlagGameResources } from '../../../../../org/allbinary/game/layer/waypoint/FlagGameResources.js';
 
     
-import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { GameFeatureImageCacheFactory } from "../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js";
+import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { CustomItemUtil } from "../../../../../org/allbinary/graphics/form/item/CustomItemUtil.js";
+import { CustomItemUtil } from '../../../../../org/allbinary/graphics/form/item/CustomItemUtil.js';
 
     
-import { ItemArraySingletonFactoryInterface } from "../../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js";
+import { ItemArraySingletonFactoryInterface } from '../../../../../org/allbinary/graphics/form/item/ItemArraySingletonFactoryInterface.js';
 
     
-import { ImageCache } from "../../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
 
     
-import { LayerInterfaceFactoryInterface } from "../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js";
+import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
 
     
 

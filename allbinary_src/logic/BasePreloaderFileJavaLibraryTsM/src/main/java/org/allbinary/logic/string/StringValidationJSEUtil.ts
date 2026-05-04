@@ -18,9 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
+        
+            import { Character } from '../../../../java/lang/Character.js';
         
 
 
@@ -40,8 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Character } from "./Character.js";
-
+        
 export class StringValidationJSEUtil
             extends Object
          {

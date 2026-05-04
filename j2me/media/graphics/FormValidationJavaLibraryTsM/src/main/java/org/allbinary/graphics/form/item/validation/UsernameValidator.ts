@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { TextFieldItem } from "../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js";
+import { TextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js';
 
     
 
@@ -43,7 +43,7 @@ import { TextFieldItem } from "../../../../../../org/allbinary/graphics/form/ite
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextFieldItemValidator } from "./TextFieldItemValidator.js";
+        import { TextFieldItemValidator } from './TextFieldItemValidator.js';
 
 export class UsernameValidator extends TextFieldItemValidator {
         

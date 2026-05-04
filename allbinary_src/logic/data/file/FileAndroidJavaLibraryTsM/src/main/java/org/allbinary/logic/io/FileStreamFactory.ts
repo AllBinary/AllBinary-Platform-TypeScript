@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Context } from "../../../../android/content/Context.js";
+import { Context } from '../../../../android/content/Context.js';
 
     
-import { ResourceUtil } from "../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
 
@@ -51,8 +51,8 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbFileInputStream } from "./AbFileInputStream.js";
-import { AbFileOutputStream } from "./AbFileOutputStream.js";
+        import { AbFileInputStream } from './AbFileInputStream.js';
+import { AbFileOutputStream } from './AbFileOutputStream.js';
 
 export class FileStreamFactory
             extends Object

@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
 
@@ -55,7 +55,7 @@ import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Paintable } from "./Paintable.js";
+        import { Paintable } from './Paintable.js';
 
 export class SimpleTextPaintable extends Paintable {
         

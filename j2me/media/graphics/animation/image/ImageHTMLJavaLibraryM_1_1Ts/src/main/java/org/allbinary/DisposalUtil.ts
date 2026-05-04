@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { Image } from "../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../javax/microedition/lcdui/Image.js';
 
     
-import { Resource } from "../../org/eclipse/swt/graphics/Resource.js";
+import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
 
     
 

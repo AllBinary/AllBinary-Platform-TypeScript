@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../../../../../java/util/Vector.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Validation } from "../../../../../../../../../../../../org/allbinary/logic/control/validate/Validation.js";
+import { Validation } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 
     
-import { ValidationInterface } from "../../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
+import { ValidationInterface } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 
     
-import { StringMaker } from "../../../../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StyleData } from "../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js";
+import { StyleData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js';
 
     
-import { StylesData } from "../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js";
+import { StylesData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
 
     
-import { StylesValidationFactory } from "../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesValidationFactory.js";
+import { StylesValidationFactory } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesValidationFactory.js';
 
     
-import { Document } from "../../../../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
 
     
 

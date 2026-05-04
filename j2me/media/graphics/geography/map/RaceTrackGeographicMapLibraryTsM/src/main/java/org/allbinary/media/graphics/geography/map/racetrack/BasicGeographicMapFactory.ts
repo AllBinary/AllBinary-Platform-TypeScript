@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPositionBaseFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionBaseFactory.js";
+import { GeographicMapCellPositionBaseFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionBaseFactory.js';
 
     
-import { GeographicMapCellPositionFactoryInterface } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js";
+import { GeographicMapCellPositionFactoryInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
 
     
-import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js";
+import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 
     
 
@@ -60,9 +60,9 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackInfo } from "./RaceTrackInfo.js";
-import { RaceTrackData } from "./RaceTrackData.js";
-import { AllBinaryTiledLayerFactoryInterface } from "./AllBinaryTiledLayerFactoryInterface.js";
+        import { RaceTrackInfo } from './RaceTrackInfo.js';
+import { RaceTrackData } from './RaceTrackData.js';
+import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
 
 export class BasicGeographicMapFactory
             extends Object

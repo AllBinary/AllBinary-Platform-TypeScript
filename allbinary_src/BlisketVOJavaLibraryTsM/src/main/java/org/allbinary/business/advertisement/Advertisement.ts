@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { AdvertisementImageInterface } from "../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js";
+import { AdvertisementImageInterface } from '../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
 
     
-import { AdvertisementProductInterface } from "../../../../org/allbinary/business/advertisement/product/AdvertisementProductInterface.js";
+import { AdvertisementProductInterface } from '../../../../org/allbinary/business/advertisement/product/AdvertisementProductInterface.js';
 
     
-import { AdvertisementThumbnailInterface } from "../../../../org/allbinary/business/advertisement/thumbnail/AdvertisementThumbnailInterface.js";
+import { AdvertisementThumbnailInterface } from '../../../../org/allbinary/business/advertisement/thumbnail/AdvertisementThumbnailInterface.js';
 
     
-import { Money } from "../../../../org/allbinary/business/user/commerce/money/Money.js";
+import { Money } from '../../../../org/allbinary/business/user/commerce/money/Money.js';
 
     
-import { DisplayInBrowserContraintsInterface } from "../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js";
+import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
 
     
 
@@ -55,7 +55,7 @@ import { DisplayInBrowserContraintsInterface } from "../../../../org/allbinary/l
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AdvertisementInterface } from "./AdvertisementInterface.js";
+        import { AdvertisementInterface } from './AdvertisementInterface.js';
 
 export class Advertisement
             extends Object

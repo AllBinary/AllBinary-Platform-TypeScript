@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../java/lang/Long.js';
         
-import { Calendar } from "../../../../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../../../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { EntryData } from "../../../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { BasicItemData } from "../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
+import { BasicItemData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 
     
-import { ProductIdGenerator } from "../../../../../../../../org/allbinary/data/generator/ProductIdGenerator.js";
+import { ProductIdGenerator } from '../../../../../../../../org/allbinary/data/generator/ProductIdGenerator.js';
 
     
-import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { TimeUtil } from "../../../../../../../../org/allbinary/time/TimeUtil.js";
+import { TimeUtil } from '../../../../../../../../org/allbinary/time/TimeUtil.js';
 
     
 
@@ -71,7 +71,7 @@ import { TimeUtil } from "../../../../../../../../org/allbinary/time/TimeUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DownloadItemData } from "./DownloadItemData.js";
+        import { DownloadItemData } from './DownloadItemData.js';
 
 export class DownloadableItem
             extends Object

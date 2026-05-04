@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { DomSearchHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -48,13 +48,13 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProfileActionScriptConditionInterface } from "./ProfileActionScriptConditionInterface.js";
-import { ColorAtActionScriptConditionData } from "./ColorAtActionScriptConditionData.js";
-import { TimeIntervalActionScriptConditionData } from "./TimeIntervalActionScriptConditionData.js";
-import { AlwaysActionScriptConditionData } from "./AlwaysActionScriptConditionData.js";
-import { AlwaysActionScriptCondition } from "./AlwaysActionScriptCondition.js";
-import { TimeIntervalActionScriptCondition } from "./TimeIntervalActionScriptCondition.js";
-import { ColorAtActionScriptCondition } from "./ColorAtActionScriptCondition.js";
+        import { ProfileActionScriptConditionInterface } from './ProfileActionScriptConditionInterface.js';
+import { ColorAtActionScriptConditionData } from './ColorAtActionScriptConditionData.js';
+import { TimeIntervalActionScriptConditionData } from './TimeIntervalActionScriptConditionData.js';
+import { AlwaysActionScriptConditionData } from './AlwaysActionScriptConditionData.js';
+import { AlwaysActionScriptCondition } from './AlwaysActionScriptCondition.js';
+import { TimeIntervalActionScriptCondition } from './TimeIntervalActionScriptCondition.js';
+import { ColorAtActionScriptCondition } from './ColorAtActionScriptCondition.js';
 
 export class ProfileActionScriptConditionFactory
             extends Object

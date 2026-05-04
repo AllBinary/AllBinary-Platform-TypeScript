@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { BasicHighScoresGameInfoFactory } from "../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js";
+import { BasicHighScoresGameInfoFactory } from '../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js';
 
     
-import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
-import { GameType } from "../../../../org/allbinary/game/GameType.js";
+import { GameType } from '../../../../org/allbinary/game/GameType.js';
 
     
-import { GameTypeFactory } from "../../../../org/allbinary/game/GameTypeFactory.js";
+import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
 
     
-import { RemoteHighScores } from "../../../../org/allbinary/game/score/remote/RemoteHighScores.js";
+import { RemoteHighScores } from '../../../../org/allbinary/game/score/remote/RemoteHighScores.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BooleanFactory } from "../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { SoftwareInformation } from "../../../../org/allbinary/logic/system/SoftwareInformation.js";
+import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryThreadPool.js";
+import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryThreadPool.js';
 
     
 
@@ -75,14 +75,14 @@ import { SecondaryThreadPool } from "../../../../org/allbinary/thread/SecondaryT
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScoresBase } from "./HighScoresBase.js";
-import { HighScores } from "./HighScores.js";
-import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
-import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
-import { ScoreComparator } from "./ScoreComparator.js";
-import { LastFetchHighScoresFactory } from "./LastFetchHighScoresFactory.js";
-import { HighScoresHelper2 } from "./HighScoresHelper2.js";
-import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
+        import { HighScoresBase } from './HighScoresBase.js';
+import { HighScores } from './HighScores.js';
+import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+import { RecordStoreHighScores } from './RecordStoreHighScores.js';
+import { ScoreComparator } from './ScoreComparator.js';
+import { LastFetchHighScoresFactory } from './LastFetchHighScoresFactory.js';
+import { HighScoresHelper2 } from './HighScoresHelper2.js';
+import { HighScoresHelperBase } from './HighScoresHelperBase.js';
 
 export class BasicHighScoresFactory extends HighScoresBase {
         

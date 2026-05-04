@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLESImage.js";
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
 
     
 
@@ -54,7 +54,7 @@ import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLES
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TrueTypeFontUtilBase } from "./TrueTypeFontUtilBase.js";
+        import { TrueTypeFontUtilBase } from './TrueTypeFontUtilBase.js';
 
 export class TrueTypeFontUtil extends TrueTypeFontUtilBase {
         

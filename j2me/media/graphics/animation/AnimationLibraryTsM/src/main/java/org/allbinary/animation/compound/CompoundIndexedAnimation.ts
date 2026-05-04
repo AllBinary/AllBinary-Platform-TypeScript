@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
+import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -63,7 +63,7 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CompoundAnimationInterface } from "./CompoundAnimationInterface.js";
+        import { CompoundAnimationInterface } from './CompoundAnimationInterface.js';
 
 export class CompoundIndexedAnimation extends IndexedAnimation implements CompoundAnimationInterface {
         

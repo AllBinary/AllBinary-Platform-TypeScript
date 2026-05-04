@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../../java/util/Vector.js';
 
     
-import { EntryData } from "../../../../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { InventoryDbInitInfo } from "../../../../../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js";
+import { InventoryDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
 
     
-import { BasicItemData } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
+import { BasicItemData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 
     
-import { BasicGroupItemData } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/group/BasicGroupItemData.js";
+import { BasicGroupItemData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/item/group/BasicGroupItemData.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlBean } from "../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -69,7 +69,7 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicGroupItemsEntityInterface } from "./BasicGroupItemsEntityInterface.js";
+        import { BasicGroupItemsEntityInterface } from './BasicGroupItemsEntityInterface.js';
 
 export class BasicGroupItemsEntity extends AbSqlBean implements BasicGroupItemsEntityInterface {
         

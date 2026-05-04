@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { CellPosition } from "../../../../../../../org/allbinary/graphics/CellPosition.js";
+import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
 
     
-import { CellPositionFactory } from "../../../../../../../org/allbinary/graphics/CellPositionFactory.js";
+import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
 

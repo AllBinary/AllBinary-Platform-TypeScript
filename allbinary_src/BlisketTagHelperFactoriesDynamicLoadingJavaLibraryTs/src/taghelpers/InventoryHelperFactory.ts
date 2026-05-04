@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-import { HashMap } from "../java/util/HashMap.js";
+import { HashMap } from '../java/util/HashMap.js';
 
     
-import { PageContext } from "../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../javax/servlet/jsp/PageContext.js';
 
     
-import { LicensingException } from "../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { HelperFactory } from "../admin/taghelpers/HelperFactory.js";
+import { HelperFactory } from '../admin/taghelpers/HelperFactory.js';
 
     
 

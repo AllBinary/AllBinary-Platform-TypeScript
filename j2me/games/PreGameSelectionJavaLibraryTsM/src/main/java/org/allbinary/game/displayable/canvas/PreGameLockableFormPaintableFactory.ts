@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ItemPaintable } from "../../../../../org/allbinary/graphics/form/ItemPaintable.js";
+import { ItemPaintable } from '../../../../../org/allbinary/graphics/form/ItemPaintable.js';
 
     
-import { ItemPaintableFactory } from "../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js";
+import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
 
     
-import { PaintableForm } from "../../../../../org/allbinary/graphics/form/PaintableForm.js";
+import { PaintableForm } from '../../../../../org/allbinary/graphics/form/PaintableForm.js';
 
     
-import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js";
+import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
 
     
 
@@ -54,7 +54,7 @@ import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PreGameLockablePaintable } from "./PreGameLockablePaintable.js";
+        import { PreGameLockablePaintable } from './PreGameLockablePaintable.js';
 
 export class PreGameLockableFormPaintableFactory extends ItemPaintableFactory {
         

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { CategoryInterface } from "../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
 

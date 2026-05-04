@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
 
@@ -43,8 +43,8 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Paintable } from "./Paintable.js";
-import { PaintableInterface } from "./PaintableInterface.js";
+        import { Paintable } from './Paintable.js';
+import { PaintableInterface } from './PaintableInterface.js';
 
 export class PaintableComposite extends Paintable {
         

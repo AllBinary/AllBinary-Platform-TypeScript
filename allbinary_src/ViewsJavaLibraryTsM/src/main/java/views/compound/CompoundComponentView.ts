@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from "../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoInterface } from "../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { HttpStoreComponentView } from "../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 
@@ -54,7 +54,7 @@ import { HttpStoreComponentView } from "../../views/business/context/modules/sto
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CompoundTransform } from "./CompoundTransform.js";
+        import { CompoundTransform } from './CompoundTransform.js';
 
 export class CompoundComponentView extends HttpStoreComponentView {
         

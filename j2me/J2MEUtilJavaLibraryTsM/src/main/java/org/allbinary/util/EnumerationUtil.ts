@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Enumeration } from "../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../java/util/Enumeration.js';
 
     
 

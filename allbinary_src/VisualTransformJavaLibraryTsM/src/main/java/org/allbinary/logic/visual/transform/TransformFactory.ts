@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { TransformInfoEntity } from "../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js";
+import { TransformInfoEntity } from '../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
 
     
-import { TransformInfoEntityBuilder } from "../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js";
+import { TransformInfoEntityBuilder } from '../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { TransformInfoData } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js";
+import { TransformInfoData } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 
     
-import { TransformInfoHttpFactory } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpFactory.js";
+import { TransformInfoHttpFactory } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpFactory.js';
 
     
-import { TransformInfoHttpInterface } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TransformInfoObjectFactory } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoObjectFactory.js";
+import { TransformInfoObjectFactory } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoObjectFactory.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -81,7 +81,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInterface } from "./TransformInterface.js";
+        import { TransformInterface } from './TransformInterface.js';
 
 export class TransformFactory
             extends Object

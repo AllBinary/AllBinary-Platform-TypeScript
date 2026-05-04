@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from "../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../java/io/ByteArrayInputStream.js';
 
     
-import { StoreFrontInterface } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { ItemInterface } from "../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js";
+import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 
     
-import { URLGLOBALS } from "../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { UploadMediaSingleton } from "../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js";
+import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbFile } from "../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileUtil } from "../../../org/allbinary/logic/io/file/FileUtil.js";
+import { FileUtil } from '../../../org/allbinary/logic/io/file/FileUtil.js';
 
     
-import { AbPathData } from "../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringValidationUtil } from "../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { MediaData } from "../../../org/allbinary/logic/visual/media/MediaData.js";
+import { MediaData } from '../../../org/allbinary/logic/visual/media/MediaData.js';
 
     
-import { MediaTypeData } from "../../../org/allbinary/logic/visual/media/MediaTypeData.js";
+import { MediaTypeData } from '../../../org/allbinary/logic/visual/media/MediaTypeData.js';
 
     
-import { MediaUtil } from "../../../org/allbinary/logic/visual/media/MediaUtil.js";
+import { MediaUtil } from '../../../org/allbinary/logic/visual/media/MediaUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 

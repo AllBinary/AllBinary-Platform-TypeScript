@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { ColorCompositeInterface } from "../../../../org/allbinary/graphics/color/ColorCompositeInterface.js";
+import { ColorCompositeInterface } from '../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
 
     
-import { PositionInterface } from "../../../../org/allbinary/layer/PositionInterface.js";
+import { PositionInterface } from '../../../../org/allbinary/layer/PositionInterface.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
 

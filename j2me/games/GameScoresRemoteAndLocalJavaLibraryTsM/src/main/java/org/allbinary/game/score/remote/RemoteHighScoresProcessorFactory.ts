@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RemoteHighScoresProcessor } from "./RemoteHighScoresProcessor.js";
-import { RemoteHighScoresProcessorInterface } from "./RemoteHighScoresProcessorInterface.js";
+        import { RemoteHighScoresProcessor } from './RemoteHighScoresProcessor.js';
+import { RemoteHighScoresProcessorInterface } from './RemoteHighScoresProcessorInterface.js';
 
 export class RemoteHighScoresProcessorFactory
             extends Object

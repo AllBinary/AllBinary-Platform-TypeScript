@@ -18,51 +18,51 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../java/lang/Long.js';
         
-import { Calendar } from "../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { QuoteRequestData } from "../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js";
+import { QuoteRequestData } from '../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js';
 
     
-import { UserData } from "../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { QuoteRequestIdGenerator } from "../../../../../org/allbinary/data/generator/QuoteRequestIdGenerator.js";
+import { QuoteRequestIdGenerator } from '../../../../../org/allbinary/data/generator/QuoteRequestIdGenerator.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlData } from "../../../../../org/allbinary/logic/communication/sql/AbSqlData.js";
+import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

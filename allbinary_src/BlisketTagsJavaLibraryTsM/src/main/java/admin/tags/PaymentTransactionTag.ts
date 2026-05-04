@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { PaymentTransactionHelperFactory } from "../../admin/taghelpers/PaymentTransactionHelperFactory.js";
+import { PaymentTransactionHelperFactory } from '../../admin/taghelpers/PaymentTransactionHelperFactory.js';
 
     
 
@@ -43,7 +43,7 @@ import { PaymentTransactionHelperFactory } from "../../admin/taghelpers/PaymentT
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
+        import { TableTag } from './TableTag.js';
 
 export class PaymentTransactionTag extends TableTag {
         

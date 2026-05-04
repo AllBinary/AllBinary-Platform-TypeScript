@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
 

@@ -18,41 +18,41 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { MyRandomFactory } from "../../../../../org/allbinary/game/rand/MyRandomFactory.js";
+import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorArrayIndexer } from "../../../../../org/allbinary/graphics/color/BasicColorArrayIndexer.js";
+import { BasicColorArrayIndexer } from '../../../../../org/allbinary/graphics/color/BasicColorArrayIndexer.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { BasicColorSetUtil } from "../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js";
+import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { CharArrayFactory } from "../../../../../org/allbinary/logic/java/character/CharArrayFactory.js";
+import { CharArrayFactory } from '../../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
 
     
-import { PrimitiveLongUtil } from "../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js";
+import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
 
     
-import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
-import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 
     
 
@@ -73,7 +73,7 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DamageFloaters } from "./DamageFloaters.js";
+        import { DamageFloaters } from './DamageFloaters.js';
 
 export class PtsDamageFloaters extends DamageFloaters {
         

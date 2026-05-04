@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { LayerPositionFinderInterface } from "../../../../../org/allbinary/game/input/LayerPositionFinderInterface.js";
+import { LayerPositionFinderInterface } from '../../../../../org/allbinary/game/input/LayerPositionFinderInterface.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { DropCellPositionHistory } from "../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js";
+import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 
     
 

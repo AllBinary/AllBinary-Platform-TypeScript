@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 
     
-import { CategoryFactoryInterface } from "../../../../../org/allbinary/business/category/CategoryFactoryInterface.js";
+import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 
     
-import { CategoryInterface } from "../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { CategoryProperties } from "../../../../../org/allbinary/business/category/properties/CategoryProperties.js";
+import { CategoryProperties } from '../../../../../org/allbinary/business/category/properties/CategoryProperties.js';
 
     
-import { CategoryPropertiesInterface } from "../../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js";
+import { CategoryPropertiesInterface } from '../../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { DomDocumentHelper } from "../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CryptFileReader } from "../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js";
+import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -84,8 +84,8 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryModifierTree } from "./CategoryModifierTree.js";
-import { CategoryLoaderInterface } from "./CategoryLoaderInterface.js";
+        import { CategoryModifierTree } from './CategoryModifierTree.js';
+import { CategoryLoaderInterface } from './CategoryLoaderInterface.js';
 
 export class CategoryLoader extends CategoryModifierTree implements CategoryLoaderInterface {
         

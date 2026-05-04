@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { PaymentGatewayData } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js";
+import { PaymentGatewayData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
 
     
-import { PaymentProcessorInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterfaceFactoryInterface.js";
+import { PaymentProcessorInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterfaceFactoryInterface.js';
 
     
-import { PaymentTransactionInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceFactoryInterface.js";
+import { PaymentTransactionInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceFactoryInterface.js';
 
     
 
@@ -57,8 +57,8 @@ import { PaymentTransactionInterfaceFactoryInterface } from "../../../../../../.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicPaymentType } from "./BasicPaymentType.js";
-import { PaymentTypeUtil } from "./PaymentTypeUtil.js";
+        import { BasicPaymentType } from './BasicPaymentType.js';
+import { PaymentTypeUtil } from './PaymentTypeUtil.js';
 
 export class PaymentType
             extends Object

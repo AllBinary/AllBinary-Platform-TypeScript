@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
 
@@ -43,7 +43,7 @@ import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/Fo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicArrayListS } from "./BasicArrayListS.js";
+        import { BasicArrayListS } from './BasicArrayListS.js';
 
 export class ImmutableBasicArrayList extends BasicArrayListS {
         

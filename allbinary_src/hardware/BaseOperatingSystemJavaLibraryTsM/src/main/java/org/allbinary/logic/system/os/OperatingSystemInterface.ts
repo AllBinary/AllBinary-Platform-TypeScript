@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { CharacterSet } from "../../../../../org/allbinary/logic/java/character/CharacterSet.js";
+import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/CharacterSet.js';
 
     
 

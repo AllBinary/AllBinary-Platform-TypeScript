@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../../java/lang/RuntimeException.js';
         
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js";
+import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 
     
-import { PathFindingInfo } from "../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js";
+import { PathFindingInfo } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
 
     
-import { PathFindingNode } from "../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js";
+import { PathFindingNode } from '../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
 
     
-import { GeographicMapCellPositionFactoryInitVisitorInterface } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInitVisitorInterface.js";
+import { GeographicMapCellPositionFactoryInitVisitorInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInitVisitorInterface.js';
 
     
-import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -77,8 +77,8 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackRoadsGeographicMapCellHistoryFactory } from "./RaceTrackRoadsGeographicMapCellHistoryFactory.js";
-import { RaceTrackGeographicMapCellPositionFactoryInitVisitor } from "./RaceTrackGeographicMapCellPositionFactoryInitVisitor.js";
+        import { RaceTrackRoadsGeographicMapCellHistoryFactory } from './RaceTrackRoadsGeographicMapCellHistoryFactory.js';
+import { RaceTrackGeographicMapCellPositionFactoryInitVisitor } from './RaceTrackGeographicMapCellPositionFactoryInitVisitor.js';
 
 export class BasePathFindingInfoFactory
             extends Object

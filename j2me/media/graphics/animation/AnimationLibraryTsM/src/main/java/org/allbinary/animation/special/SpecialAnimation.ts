@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 
     
-import { IndexedAnimationBehavior } from "../../../../org/allbinary/animation/IndexedAnimationBehavior.js";
+import { IndexedAnimationBehavior } from '../../../../org/allbinary/animation/IndexedAnimationBehavior.js';
 
     
 
@@ -49,7 +49,7 @@ import { IndexedAnimationBehavior } from "../../../../org/allbinary/animation/In
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SpecialAnimationInterface } from "./SpecialAnimationInterface.js";
+        import { SpecialAnimationInterface } from './SpecialAnimationInterface.js';
 
 export class SpecialAnimation extends IndexedAnimation implements SpecialAnimationInterface {
         

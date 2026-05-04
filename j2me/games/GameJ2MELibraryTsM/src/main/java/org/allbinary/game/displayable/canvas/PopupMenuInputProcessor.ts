@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { GameInputStrings } from "../../../../../org/allbinary/game/input/GameInputStrings.js";
+import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
 
     
-import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { MyCanvas } from "../../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { MotionGestureInput } from "../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
+import { MotionGestureInput } from '../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
-import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
+import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 
     
-import { RectangleCollisionUtil } from "../../../../../org/allbinary/math/RectangleCollisionUtil.js";
+import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
 
     
-import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -78,8 +78,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
-import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 
 export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
         

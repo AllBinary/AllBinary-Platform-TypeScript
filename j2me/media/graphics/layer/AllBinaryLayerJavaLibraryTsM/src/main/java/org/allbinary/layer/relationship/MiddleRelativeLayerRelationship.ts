@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -51,7 +51,7 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RelativeLayerRelationship } from "./RelativeLayerRelationship.js";
+        import { RelativeLayerRelationship } from './RelativeLayerRelationship.js';
 
 export class MiddleRelativeLayerRelationship extends RelativeLayerRelationship {
         

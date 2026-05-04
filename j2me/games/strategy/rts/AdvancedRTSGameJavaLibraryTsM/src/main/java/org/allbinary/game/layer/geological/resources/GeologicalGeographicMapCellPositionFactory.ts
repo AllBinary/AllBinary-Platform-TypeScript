@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { MyRandomFactory } from "../../../../../../org/allbinary/game/rand/MyRandomFactory.js";
+import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
 
     
-import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellPositionFactoryInterface } from "../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js";
+import { GeographicMapCellPositionFactoryInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
 
     
 
@@ -57,8 +57,8 @@ import { GeographicMapCellPositionFactoryInterface } from "../../../../../../org
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeologicalGeographicMapCellPosition } from "./GeologicalGeographicMapCellPosition.js";
-import { GeologicalResource } from "./GeologicalResource.js";
+        import { GeologicalGeographicMapCellPosition } from './GeologicalGeographicMapCellPosition.js';
+import { GeologicalResource } from './GeologicalResource.js';
 
 export class GeologicalGeographicMapCellPositionFactory
             extends Object

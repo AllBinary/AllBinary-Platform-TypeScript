@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
+import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 
     
-import { Processor } from "../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 
     
 

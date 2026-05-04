@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { InputOutputTypeData } from "../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js";
+import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -54,10 +54,10 @@ import { CommonStrings } from "../../../../../../../../org/allbinary/string/Comm
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoObjectConfigGeneratorFactoryInterface } from "./TransformInfoObjectConfigGeneratorFactoryInterface.js";
-import { StoreFileGenerator } from "./StoreFileGenerator.js";
-import { BasicGenerator } from "./BasicGenerator.js";
-import { TransformInfoObjectConfigGenerator } from "./TransformInfoObjectConfigGenerator.js";
+        import { TransformInfoObjectConfigGeneratorFactoryInterface } from './TransformInfoObjectConfigGeneratorFactoryInterface.js';
+import { StoreFileGenerator } from './StoreFileGenerator.js';
+import { BasicGenerator } from './BasicGenerator.js';
+import { TransformInfoObjectConfigGenerator } from './TransformInfoObjectConfigGenerator.js';
 
 export class TransformInfoObjectConfigGeneratorFactory
             extends Object

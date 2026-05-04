@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from "../../java/lang/reflect/Method.js";
+import { Method } from '../../java/lang/reflect/Method.js';
 
     
-import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 
     
-import { PaymentProcessHelperFactory } from "../../admin/taghelpers/PaymentProcessHelperFactory.js";
+import { PaymentProcessHelperFactory } from '../../admin/taghelpers/PaymentProcessHelperFactory.js';
 
     
-import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { StoreValidationTransformTag } from "../../tags/StoreValidationTransformTag.js";
+import { StoreValidationTransformTag } from '../../tags/StoreValidationTransformTag.js';
 
     
 

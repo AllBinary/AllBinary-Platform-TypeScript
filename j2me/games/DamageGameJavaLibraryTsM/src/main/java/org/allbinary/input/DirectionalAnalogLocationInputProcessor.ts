@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { AnalogLocationInputProcessor } from "../../../org/allbinary/android/input/motion/AnalogLocationInputProcessor.js";
+import { AnalogLocationInputProcessor } from '../../../org/allbinary/android/input/motion/AnalogLocationInputProcessor.js';
 
     
-import { GameInputProcessor } from "../../../org/allbinary/game/input/GameInputProcessor.js";
+import { GameInputProcessor } from '../../../org/allbinary/game/input/GameInputProcessor.js';
 
     
-import { GameKeyEventSourceInterface } from "../../../org/allbinary/game/input/GameKeyEventSourceInterface.js";
+import { GameKeyEventSourceInterface } from '../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
 
     
-import { GameKeyFactory } from "../../../org/allbinary/game/input/GameKeyFactory.js";
+import { GameKeyFactory } from '../../../org/allbinary/game/input/GameKeyFactory.js';
 
     
-import { AnalogLocationInput } from "../../../org/allbinary/game/input/analog/AnalogLocationInput.js";
+import { AnalogLocationInput } from '../../../org/allbinary/game/input/analog/AnalogLocationInput.js';
 
     
-import { GameKeyEvent } from "../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { GameKeyEventFactory } from "../../../org/allbinary/game/input/event/GameKeyEventFactory.js";
+import { GameKeyEventFactory } from '../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 
     
-import { CustomGPoint } from "../../../org/allbinary/graphics/CustomGPoint.js";
+import { CustomGPoint } from '../../../org/allbinary/graphics/CustomGPoint.js';
 
     
-import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 

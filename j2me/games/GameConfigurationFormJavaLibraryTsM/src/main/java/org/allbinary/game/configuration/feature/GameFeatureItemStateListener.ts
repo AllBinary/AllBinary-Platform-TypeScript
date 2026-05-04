@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
+import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
 
     
-import { Item } from "../../../../../javax/microedition/lcdui/Item.js";
+import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
 
     
-import { ItemStateListener } from "../../../../../javax/microedition/lcdui/ItemStateListener.js";
+import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
 
     
-import { GameConfigurationGauge } from "../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js";
+import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
 
     
-import { GameConfigurationUtil } from "../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js";
+import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
 
     
-import { GameOptionsForm } from "../../../../../org/allbinary/game/configuration/GameOptionsForm.js";
+import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -78,9 +78,9 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameFeatureFactory } from "./GameFeatureFactory.js";
-import { GameFeature } from "./GameFeature.js";
-import { GameFeatureUtil } from "./GameFeatureUtil.js";
+        import { GameFeatureFactory } from './GameFeatureFactory.js';
+import { GameFeature } from './GameFeature.js';
+import { GameFeatureUtil } from './GameFeatureUtil.js';
 
 export class GameFeatureItemStateListener
             extends Object

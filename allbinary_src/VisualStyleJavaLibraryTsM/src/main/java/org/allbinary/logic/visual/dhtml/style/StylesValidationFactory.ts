@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { NameSpaceRequestParamData } from "../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParamData.js";
+import { NameSpaceRequestParamData } from '../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParamData.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CssElementData } from "../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementData.js";
+import { CssElementData } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementData.js';
 
     
-import { CssElementsValidationFactory } from "../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementsValidationFactory.js";
+import { CssElementsValidationFactory } from '../../../../../../org/allbinary/logic/visual/dhtml/style/css/CssElementsValidationFactory.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -78,8 +78,8 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StylesData } from "./StylesData.js";
-import { StyleData } from "./StyleData.js";
+        import { StylesData } from './StylesData.js';
+import { StyleData } from './StyleData.js';
 
 export class StylesValidationFactory
             extends Object

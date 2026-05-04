@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { OpenGLFeatureUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js";
+import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
 
     
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
+import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -51,10 +51,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HealthBar } from "./HealthBar.js";
-import { HealthBarTwodAnimation } from "./HealthBarTwodAnimation.js";
-import { Health } from "./Health.js";
-import { HealthBarAnimationInterfaceFactory } from "./HealthBarAnimationInterfaceFactory.js";
+        import { HealthBar } from './HealthBar.js';
+import { HealthBarTwodAnimation } from './HealthBarTwodAnimation.js';
+import { Health } from './Health.js';
+import { HealthBarAnimationInterfaceFactory } from './HealthBarAnimationInterfaceFactory.js';
 
 export class HealthBarFactory
             extends Object

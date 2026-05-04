@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { ClassNotFoundException } from "../../../../../java/lang/ClassNotFoundException.js";
+            import { ClassNotFoundException } from '../../../../../java/lang/ClassNotFoundException.js';
         
-import { FileInputStream } from "../../../../../java/io/FileInputStream.js";
+import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
 
     
-import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from '../../../../../java/io/IOException.js';
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Map } from "../../../../../java/util/Map.js";
+import { Map } from '../../../../../java/util/Map.js';
 
     
-import { LogBuffer } from "../../../../../org/allbinary/logic/communication/log/LogBuffer.js";
+import { LogBuffer } from '../../../../../org/allbinary/logic/communication/log/LogBuffer.js';
 
     
-import { LogFactory } from "../../../../../org/allbinary/logic/communication/log/LogFactory.js";
+import { LogFactory } from '../../../../../org/allbinary/logic/communication/log/LogFactory.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AbCryptUtil } from "../../../../../org/allbinary/logic/system/security/AbCryptUtil.js";
+import { AbCryptUtil } from '../../../../../org/allbinary/logic/system/security/AbCryptUtil.js';
 
     
 
@@ -77,8 +77,8 @@ import { AbCryptUtil } from "../../../../../org/allbinary/logic/system/security/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ClassLoader } from "./ClassLoader.js";
-import { NoClassDefFoundError } from "./NoClassDefFoundError.js";
+        import { ClassLoader } from './ClassLoader.js';
+import { NoClassDefFoundError } from './NoClassDefFoundError.js';
 
 export class AbeClassLoader extends ClassLoader {
         

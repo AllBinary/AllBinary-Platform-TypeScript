@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
-import { NullEventListener } from "../../../../../../org/allbinary/logic/util/event/NullEventListener.js";
+import { NullEventListener } from '../../../../../../org/allbinary/logic/util/event/NullEventListener.js';
 
     
-import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js";
+import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -60,8 +60,8 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameNotificationListenerInterface } from "./GameNotificationListenerInterface.js";
-import { GameNotificationEvent } from "./GameNotificationEvent.js";
+        import { GameNotificationListenerInterface } from './GameNotificationListenerInterface.js';
+import { GameNotificationEvent } from './GameNotificationEvent.js';
 
 export class GameNotificationEventHandler extends BasicEventHandler {
         

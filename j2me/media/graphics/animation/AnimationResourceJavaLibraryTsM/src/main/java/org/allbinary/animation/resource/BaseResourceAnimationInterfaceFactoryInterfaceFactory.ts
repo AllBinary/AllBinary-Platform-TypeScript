@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { BasicAnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/BasicAnimationInterfaceFactoryInterface.js";
+import { BasicAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/BasicAnimationInterfaceFactoryInterface.js';
 
     
-import { NullAnimationFactory } from "../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { ResourceLoadingLevelFactory } from "../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js";
+import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFactory.js";
+import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
 
     
-import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -75,7 +75,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { FeatureResourceAnimationInterfaceFactoryInterface } from "./FeatureResourceAnimationInterfaceFactoryInterface.js";
+        import { FeatureResourceAnimationInterfaceFactoryInterface } from './FeatureResourceAnimationInterfaceFactoryInterface.js';
 
 export class BaseResourceAnimationInterfaceFactoryInterfaceFactory
             extends Object

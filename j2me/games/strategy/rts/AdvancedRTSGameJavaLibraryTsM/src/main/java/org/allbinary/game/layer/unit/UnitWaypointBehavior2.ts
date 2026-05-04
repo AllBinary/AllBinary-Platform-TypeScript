@@ -18,99 +18,99 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { J2MEUtil } from "../../../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
 
     
-import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { SteeringVisitor } from "../../../../../org/allbinary/game/layer/SteeringVisitor.js";
+import { SteeringVisitor } from '../../../../../org/allbinary/game/layer/SteeringVisitor.js';
 
     
-import { AdvancedRTSGameLayer } from "../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js";
+import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 
     
-import { MultipassWaypointPathRunnable } from "../../../../../org/allbinary/game/layer/MultipassWaypointPathRunnable.js";
+import { MultipassWaypointPathRunnable } from '../../../../../org/allbinary/game/layer/MultipassWaypointPathRunnable.js';
 
     
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
+import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 
     
-import { WaypointPathRunnable } from "../../../../../org/allbinary/game/layer/WaypointPathRunnable.js";
+import { WaypointPathRunnable } from '../../../../../org/allbinary/game/layer/WaypointPathRunnable.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { WaypointPathRunnableBase } from "../../../../../org/allbinary/game/layer/WaypointPathRunnableBase.js";
+import { WaypointPathRunnableBase } from '../../../../../org/allbinary/game/layer/WaypointPathRunnableBase.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { WaypointBase } from "../../../../../org/allbinary/game/layer/waypoint/WaypointBase.js";
+import { WaypointBase } from '../../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
 
     
-import { TrackingEventHandler } from "../../../../../org/allbinary/game/tracking/TrackingEventHandler.js";
+import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { LayerDistanceUtil } from "../../../../../org/allbinary/math/LayerDistanceUtil.js";
+import { LayerDistanceUtil } from '../../../../../org/allbinary/math/LayerDistanceUtil.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { SimpleGeographicMapCellPositionFactory } from "../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js";
+import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
 
     
-import { PathFindingThreadPool } from "../../../../../org/allbinary/thread/PathFindingThreadPool.js";
+import { PathFindingThreadPool } from '../../../../../org/allbinary/thread/PathFindingThreadPool.js';
 
     
-import { ThreadPool } from "../../../../../org/allbinary/thread/ThreadPool.js";
+import { ThreadPool } from '../../../../../org/allbinary/thread/ThreadPool.js';
 
     
-import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -131,10 +131,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UnitWaypointBehavior } from "./UnitWaypointBehavior.js";
-import { UnitWaypointStrings } from "./UnitWaypointStrings.js";
-import { UnitLayer } from "./UnitLayer.js";
-//import { BuildingSteeringVisitor } from "./BuildingSteeringVisitor.js";
+        import { UnitWaypointBehavior } from './UnitWaypointBehavior.js';
+import { UnitWaypointStrings } from './UnitWaypointStrings.js';
+import { UnitLayer } from './UnitLayer.js';
+//import { BuildingSteeringVisitor } from './BuildingSteeringVisitor.js';
 
 export class UnitWaypointBehavior2 extends UnitWaypointBehavior {
         

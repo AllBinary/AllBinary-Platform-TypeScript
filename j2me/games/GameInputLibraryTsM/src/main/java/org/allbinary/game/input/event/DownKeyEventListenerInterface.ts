@@ -18,15 +18,15 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
 
@@ -47,7 +47,7 @@ import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameKeyEvent } from "./GameKeyEvent.js";
+        import { GameKeyEvent } from './GameKeyEvent.js';
 
 export interface DownKeyEventListenerInterface extends EventListenerInterface {
         

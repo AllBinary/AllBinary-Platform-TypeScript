@@ -18,15 +18,15 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

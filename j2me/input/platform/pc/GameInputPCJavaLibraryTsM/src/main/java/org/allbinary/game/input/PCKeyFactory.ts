@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { KeyEvent } from "../../../../java/awt/event/KeyEvent.js";
+import { KeyEvent } from '../../../../java/awt/event/KeyEvent.js';
 
     
-import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -49,8 +49,8 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PCGameKey } from "./PCGameKey.js";
-import { Input } from "./Input.js";
+        import { PCGameKey } from './PCGameKey.js';
+import { Input } from './Input.js';
 
 export class PCKeyFactory
             extends Object

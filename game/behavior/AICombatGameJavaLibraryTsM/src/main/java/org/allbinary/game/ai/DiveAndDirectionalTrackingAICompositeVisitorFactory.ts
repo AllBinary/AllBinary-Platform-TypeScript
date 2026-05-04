@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js";
+import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
 
     
 
@@ -43,7 +43,7 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DiveAndDirectionalTrackingAI } from "./DiveAndDirectionalTrackingAI.js";
+        import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
 
 export class DiveAndDirectionalTrackingAICompositeVisitorFactory
             extends Object

@@ -18,78 +18,78 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { Choice } from "../../../../javax/microedition/lcdui/ChoiceI.js";
+import { Choice } from '../../../../javax/microedition/lcdui/ChoiceI.js';
 
     
-import { Command } from "../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 
     
-import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Item } from "../../../../javax/microedition/lcdui/Item.js";
+import { Item } from '../../../../javax/microedition/lcdui/Item.js';
 
     
-import { TextField } from "../../../../javax/microedition/lcdui/TextField.js";
+import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
 
     
-import { GameCommandsFactory } from "../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { GameFeatureChoiceGroups } from "../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js";
+import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';
 
     
-import { GameFeatureFormUtil } from "../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js";
+import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
 
     
-import { GameFeatureItemCommandListener } from "../../../../org/allbinary/game/configuration/feature/GameFeatureItemCommandListener.js";
+import { GameFeatureItemCommandListener } from '../../../../org/allbinary/game/configuration/feature/GameFeatureItemCommandListener.js';
 
     
-import { GameFeatureItemStateListener } from "../../../../org/allbinary/game/configuration/feature/GameFeatureItemStateListener.js";
+import { GameFeatureItemStateListener } from '../../../../org/allbinary/game/configuration/feature/GameFeatureItemStateListener.js';
 
     
-import { SensorFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js";
+import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 
     
-import { GameConfigurationPersistanceSingleton } from "../../../../org/allbinary/game/configuration/persistance/GameConfigurationPersistanceSingleton.js";
+import { GameConfigurationPersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GameConfigurationPersistanceSingleton.js';
 
     
-import { KeyValuePersistance } from "../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js";
+import { KeyValuePersistance } from '../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { MyCommandsFactory } from "../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js";
+import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
 
     
-import { CommandForm } from "../../../../org/allbinary/graphics/displayable/screen/CommandForm.js";
+import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 
     
-import { OrientationData } from "../../../../org/allbinary/input/gyro/OrientationData.js";
+import { OrientationData } from '../../../../org/allbinary/input/gyro/OrientationData.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
+import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
 
     
 
@@ -110,12 +110,12 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameConfigurationTextInput } from "./GameConfigurationTextInput.js";
-import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
-import { GameConfiguration } from "./GameConfiguration.js";
-import { GameConfigurationGauge } from "./GameConfigurationGauge.js";
-import { GameConfigurationUtil } from "./GameConfigurationUtil.js";
-import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
+        import { GameConfigurationTextInput } from './GameConfigurationTextInput.js';
+import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
+import { GameConfiguration } from './GameConfiguration.js';
+import { GameConfigurationGauge } from './GameConfigurationGauge.js';
+import { GameConfigurationUtil } from './GameConfigurationUtil.js';
+import { GameConfigurationCentral } from './GameConfigurationCentral.js';
 
 export class GameOptionsForm extends CommandForm {
         

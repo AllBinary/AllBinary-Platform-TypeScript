@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { HttpSession } from "../../../../../../../javax/servlet/http/HttpSession.js";
+import { HttpSession } from '../../../../../../../javax/servlet/http/HttpSession.js';
 
     
-import { PageContext } from "../../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { StoreFrontData } from "../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { UserData } from "../../../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { PaymentGatewayData } from "../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js";
+import { PaymentGatewayData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
 
     
-import { BasicUserRole } from "../../../../../../../org/allbinary/business/user/role/BasicUserRole.js";
+import { BasicUserRole } from '../../../../../../../org/allbinary/business/user/role/BasicUserRole.js';
 
     
-import { BasicUserRoleData } from "../../../../../../../org/allbinary/business/user/role/BasicUserRoleData.js";
+import { BasicUserRoleData } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleData.js';
 
     
-import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
 
@@ -69,7 +69,7 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WeblisketSessionData } from "./WeblisketSessionData.js";
+        import { WeblisketSessionData } from './WeblisketSessionData.js';
 
 export class BasicWeblisketSession
             extends Object

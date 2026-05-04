@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { BasicErrorNodeUtil } from "../../../../../org/allbinary/data/tree/dom/BasicErrorNodeUtil.js";
+import { BasicErrorNodeUtil } from '../../../../../org/allbinary/data/tree/dom/BasicErrorNodeUtil.js';
 
     
-import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -63,8 +63,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { EmailData } from "./EmailData.js";
-import { Email } from "./Email.js";
+        import { EmailData } from './EmailData.js';
+import { Email } from './Email.js';
 
 export class EmailsNotUsed
             extends Object

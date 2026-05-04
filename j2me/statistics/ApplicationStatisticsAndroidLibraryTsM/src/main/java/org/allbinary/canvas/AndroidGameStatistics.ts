@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Long } from "../../../java/lang/Long.js";
+            import { Long } from '../../../java/lang/Long.js';
         
-import { View } from "../../../android/view/View.js";
+import { View } from '../../../android/view/View.js';
 
     
-import { BaseViewWrapper } from "../../../org/allbinary/android/view/BaseViewWrapper.js";
+import { BaseViewWrapper } from '../../../org/allbinary/android/view/BaseViewWrapper.js';
 
     
-import { ViewWrapper } from "../../../org/allbinary/android/view/ViewWrapper.js";
+import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -57,7 +57,7 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseGameStatistics } from "./BaseGameStatistics.js";
+        import { BaseGameStatistics } from './BaseGameStatistics.js';
 
 export class AndroidGameStatistics extends BaseGameStatistics {
         

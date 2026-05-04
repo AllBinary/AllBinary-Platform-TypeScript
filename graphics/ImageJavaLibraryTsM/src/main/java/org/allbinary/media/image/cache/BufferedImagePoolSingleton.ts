@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CachePolicyFactory } from "../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js";
+import { CachePolicyFactory } from '../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
 
     
-import { PoolInterface } from "../../../../../org/allbinary/logic/util/cache/PoolInterface.js";
+import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
 
     
-import { PoolInterfaceFactory } from "../../../../../org/allbinary/logic/util/cache/PoolInterfaceFactory.js";
+import { PoolInterfaceFactory } from '../../../../../org/allbinary/logic/util/cache/PoolInterfaceFactory.js';
 
     
-import { PoolTypeFactory } from "../../../../../org/allbinary/logic/util/cache/PoolTypeFactory.js";
+import { PoolTypeFactory } from '../../../../../org/allbinary/logic/util/cache/PoolTypeFactory.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -60,7 +60,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BufferedImageCacheableFactory } from "./BufferedImageCacheableFactory.js";
+        import { BufferedImageCacheableFactory } from './BufferedImageCacheableFactory.js';
 
 export class BufferedImagePoolSingleton
             extends Object

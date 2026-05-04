@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
 
@@ -43,8 +43,8 @@ import { HashMap } from "../../../../../../java/util/HashMap.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { FtpConfigurationInterface } from "./FtpConfigurationInterface.js";
-import { FtpConfigurationData } from "./FtpConfigurationData.js";
+        import { FtpConfigurationInterface } from './FtpConfigurationInterface.js';
+import { FtpConfigurationData } from './FtpConfigurationData.js';
 
 export class FtpConfiguration
             extends Object

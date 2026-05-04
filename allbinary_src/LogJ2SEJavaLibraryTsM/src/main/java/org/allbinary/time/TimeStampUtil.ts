@@ -18,18 +18,18 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { SimpleDateFormat } from "../../../java/text/SimpleDateFormat.js";
+import { SimpleDateFormat } from '../../../java/text/SimpleDateFormat.js';
 
     
-import { Calendar } from "../../../java/util/Calendar.js";
+import { Calendar } from '../../../java/util/Calendar.js';
 
     
 
-//import { Date } from "../../../java/util/Date.js";
+//import { Date } from '../../../java/util/Date.js';
 
     
 

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -43,8 +43,8 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ThirdPartyInApplicationPurchaseInterface } from "./ThirdPartyInApplicationPurchaseInterface.js";
-import { LockableFeature } from "./LockableFeature.js";
+        import { ThirdPartyInApplicationPurchaseInterface } from './ThirdPartyInApplicationPurchaseInterface.js';
+import { LockableFeature } from './LockableFeature.js';
 
 export class ThirdPartyInApplicationPurchase
             extends Object

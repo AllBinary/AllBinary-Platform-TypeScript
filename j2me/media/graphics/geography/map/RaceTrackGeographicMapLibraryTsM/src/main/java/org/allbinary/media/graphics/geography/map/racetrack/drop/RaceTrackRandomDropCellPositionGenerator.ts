@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { PickedUpLayerInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js";
+import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { DropLayerFactory } from "../../../../../../../../org/allbinary/game/layer/drop/DropLayerFactory.js";
+import { DropLayerFactory } from '../../../../../../../../org/allbinary/game/layer/drop/DropLayerFactory.js';
 
     
-import { PickupLayerCircularStaticPool } from "../../../../../../../../org/allbinary/game/layer/pickup/PickupLayerCircularStaticPool.js";
+import { PickupLayerCircularStaticPool } from '../../../../../../../../org/allbinary/game/layer/pickup/PickupLayerCircularStaticPool.js';
 
     
-import { RaceTrackPickupLayer } from "../../../../../../../../org/allbinary/game/layer/pickup/RaceTrackPickupLayer.js";
+import { RaceTrackPickupLayer } from '../../../../../../../../org/allbinary/game/layer/pickup/RaceTrackPickupLayer.js';
 
     
-import { MyRandomFactory } from "../../../../../../../../org/allbinary/game/rand/MyRandomFactory.js";
+import { MyRandomFactory } from '../../../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
 
     
-import { GPoint } from "../../../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
 
@@ -75,7 +75,7 @@ import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackDropCellPositionGenerator } from "./RaceTrackDropCellPositionGenerator.js";
+        import { RaceTrackDropCellPositionGenerator } from './RaceTrackDropCellPositionGenerator.js';
 
 export class RaceTrackRandomDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Comparator } from "../../../../../java/util/Comparator.js";
+import { Comparator } from '../../../../../java/util/Comparator.js';
 
     
 

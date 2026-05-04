@@ -4,14 +4,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { GameCommandsFactory } from "../../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
 

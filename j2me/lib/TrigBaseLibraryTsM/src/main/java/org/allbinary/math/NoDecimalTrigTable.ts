@@ -18,27 +18,27 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { PreLogUtil } from "../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { MathUtil } from "../../../org/allbinary/logic/math/MathUtil.js";
+import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -59,9 +59,9 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AngleFactory } from "./AngleFactory.js";
-import { PositionStrings } from "./PositionStrings.js";
-import { Angle } from "./Angle.js";
+        import { AngleFactory } from './AngleFactory.js';
+import { PositionStrings } from './PositionStrings.js';
+import { Angle } from './Angle.js';
 
 export class NoDecimalTrigTable
             extends Object

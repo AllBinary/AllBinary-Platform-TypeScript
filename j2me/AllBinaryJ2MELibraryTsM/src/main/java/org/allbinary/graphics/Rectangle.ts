@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -49,7 +49,7 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GPoint } from "./GPoint.js";
+        import { GPoint } from './GPoint.js';
 
 export class Rectangle
             extends Object

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { AbPathData } from "../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
 

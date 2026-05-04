@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { GameKeyEventFactory } from "../../../../org/allbinary/game/input/event/GameKeyEventFactory.js";
+import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { GameTickTimeDelayHelper } from "../../../../org/allbinary/time/GameTickTimeDelayHelper.js";
+import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
-import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -68,7 +68,7 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { KeyPressesAI } from "./KeyPressesAI.js";
+        import { KeyPressesAI } from './KeyPressesAI.js';
 
 export class MultiKeyPressesAI extends KeyPressesAI {
         

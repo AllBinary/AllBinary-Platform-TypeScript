@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { StoreFront } from "../../org/allbinary/business/context/modules/storefront/StoreFront.js";
+import { StoreFront } from '../../org/allbinary/business/context/modules/storefront/StoreFront.js';
 
     
-import { StoreFrontData } from "../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { StoreFrontFactory } from "../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { BasketData } from "../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js";
+import { BasketData } from '../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js';
 
     
-import { BasketInterface } from "../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js";
+import { BasketInterface } from '../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
 
     
-import { BasicItemData } from "../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
+import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 
     
-import { InventoryEntityFactory } from "../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js";
+import { InventoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 
     
-import { WeblisketSession } from "../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -81,7 +81,7 @@ import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TagHelper } from "./TagHelper.js";
+        import { TagHelper } from './TagHelper.js';
 
 export class BasketRequestHelper extends TagHelper {
         

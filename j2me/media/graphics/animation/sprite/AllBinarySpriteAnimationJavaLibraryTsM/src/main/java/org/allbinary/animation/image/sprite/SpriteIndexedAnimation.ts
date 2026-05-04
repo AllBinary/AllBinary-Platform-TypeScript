@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { AnimationBehavior } from "../../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { IndexedAnimation } from "../../../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { ColorCompositeInterface } from "../../../../../org/allbinary/graphics/color/ColorCompositeInterface.js";
+import { ColorCompositeInterface } from '../../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
 
     
-import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
 
     
 

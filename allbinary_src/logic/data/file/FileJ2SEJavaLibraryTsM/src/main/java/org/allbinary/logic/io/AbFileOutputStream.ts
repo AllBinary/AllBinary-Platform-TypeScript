@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { FileNotFoundException } from "../../../../java/io/FileNotFoundException.js";
+import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
 
     
-import { FileOutputStream } from "../../../../java/io/FileOutputStream.js";
+import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
 
     
-import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { AbFileNativeUtil } from "../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js";
+import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
 
     
 

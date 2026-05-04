@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/CacheableInterface.js";
+import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 
     
-import { CacheableInterfaceFactoryInterface } from "../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js";
+import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
 
     
 
@@ -51,7 +51,7 @@ import { CacheableInterfaceFactoryInterface } from "../../../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageArrayRotationAnimationCacheable } from "./ImageArrayRotationAnimationCacheable.js";
+        import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
 
 export class ImageArrayRotationAnimationCacheableInterfaceFactory
             extends Object

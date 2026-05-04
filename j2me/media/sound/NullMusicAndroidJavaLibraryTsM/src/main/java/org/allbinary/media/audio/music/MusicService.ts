@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { BaseMusicService } from "../../../../../org/allbinary/media/audio/music/BaseMusicService.js";
+import { BaseMusicService } from '../../../../../org/allbinary/media/audio/music/BaseMusicService.js';
 
     
 

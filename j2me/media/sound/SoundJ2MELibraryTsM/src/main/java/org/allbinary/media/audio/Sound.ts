@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Runnable } from "../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { Player } from "../../../../javax/microedition/media/Player.js";
+import { Player } from '../../../../javax/microedition/media/Player.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -53,8 +53,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SoundInterface } from "./SoundInterface.js";
-import { NoPlayer } from "./NoPlayer.js";
+        import { SoundInterface } from './SoundInterface.js';
+import { NoPlayer } from './NoPlayer.js';
 
 export class Sound
             extends Object

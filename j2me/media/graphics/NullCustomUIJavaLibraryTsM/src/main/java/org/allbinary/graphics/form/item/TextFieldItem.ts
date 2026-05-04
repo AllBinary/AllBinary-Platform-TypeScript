@@ -4,23 +4,23 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Font } from "../../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
+import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 
     
 
@@ -41,7 +41,7 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextItem } from "./TextItem.js";
+        import { TextItem } from './TextItem.js';
 
 export class TextFieldItem extends TextItem {
         

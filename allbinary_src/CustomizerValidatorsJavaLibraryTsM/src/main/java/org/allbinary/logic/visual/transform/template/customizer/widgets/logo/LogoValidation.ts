@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { HttpRequestUtil } from "../../../../../../../../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js";
+import { HttpRequestUtil } from '../../../../../../../../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Validation } from "../../../../../../../../../org/allbinary/logic/control/validate/Validation.js";
+import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 
     
-import { FileData } from "../../../../../../../../../org/allbinary/logic/io/file/FileData.js";
+import { FileData } from '../../../../../../../../../org/allbinary/logic/io/file/FileData.js';
 
     
-import { AbPath } from "../../../../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { FileItem } from "../../../../../../../../../org/apache/commons/fileupload/FileItem.js";
+import { FileItem } from '../../../../../../../../../org/apache/commons/fileupload/FileItem.js';
 
     
-import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -87,8 +87,8 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogoData } from "./LogoData.js";
-import { LogoImageFileUtil } from "./LogoImageFileUtil.js";
+        import { LogoData } from './LogoData.js';
+import { LogoImageFileUtil } from './LogoImageFileUtil.js';
 
 export class LogoValidation extends Validation implements DomNodeInterface {
         

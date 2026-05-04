@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
-            import { Thread } from "../../../../../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../../../../../java/lang/Thread.js';
         
-import { InputRobotInterface } from "../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
+import { InputRobotInterface } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonLabels } from "../../../../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -61,7 +61,7 @@ import { TimeDelayHelper } from "../../../../../../../../../org/allbinary/time/T
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
+        import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
 
 export class KeyboardInputAutomationProcessor
             extends Object

@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Security } from "../../../../../../../java/security/Security.js";
+import { Security } from '../../../../../../../java/security/Security.js';
 
     
-import { KeySpec } from "../../../../../../../java/security/spec/KeySpec.js";
+import { KeySpec } from '../../../../../../../java/security/spec/KeySpec.js';
 
     
-import { Cipher } from "../../../../../../../javax/crypto/Cipher.js";
+import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
 
     
-import { SecretKey } from "../../../../../../../javax/crypto/SecretKey.js";
+import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
 
     
-import { SecretKeyFactory } from "../../../../../../../javax/crypto/SecretKeyFactory.js";
+import { SecretKeyFactory } from '../../../../../../../javax/crypto/SecretKeyFactory.js';
 
     
-import { CryptInterface } from "../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js";
+import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
 
     
-import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { PreLogUtil } from "../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { ByteUtil } from "../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js";
+import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BouncyCastleProvider } from "../../../../../../../org/bouncycastle/jce/provider/BouncyCastleProvider.js";
+import { BouncyCastleProvider } from '../../../../../../../org/bouncycastle/jce/provider/BouncyCastleProvider.js';
 
     
 
@@ -75,9 +75,9 @@ import { BouncyCastleProvider } from "../../../../../../../org/bouncycastle/jce/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseSecretComposite } from "./BaseSecretComposite.js";
-import { KeySpecFactory } from "./KeySpecFactory.js";
-import { SecretComposite } from "./SecretComposite.js";
+        import { BaseSecretComposite } from './BaseSecretComposite.js';
+import { KeySpecFactory } from './KeySpecFactory.js';
+import { SecretComposite } from './SecretComposite.js';
 
 export class AbCrypt
             extends Object

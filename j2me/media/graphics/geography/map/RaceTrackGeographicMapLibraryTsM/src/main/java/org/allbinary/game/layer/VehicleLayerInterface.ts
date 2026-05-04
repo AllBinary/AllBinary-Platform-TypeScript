@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { RotationAnimation } from "../../../../org/allbinary/animation/RotationAnimation.js";
+import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
 
     
-import { LayerInterface } from "../../../../org/allbinary/layer/LayerInterface.js";
+import { LayerInterface } from '../../../../org/allbinary/layer/LayerInterface.js';
 
     
-import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.js";
+import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
 
     
-import { GeographicMapCellHistory } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js";
+import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 
     
-import { GeographicMapCellPositionTracking } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js";
+import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
 
     
 
@@ -60,7 +60,7 @@ import { GeographicMapCellPositionTracking } from "../../../../org/allbinary/med
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
+        import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
 
 export interface VehicleLayerInterface extends LayerInterface, VehiclePropertiesCompositeInterface {
         

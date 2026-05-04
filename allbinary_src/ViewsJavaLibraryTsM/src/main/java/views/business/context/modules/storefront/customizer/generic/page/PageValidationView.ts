@@ -18,61 +18,61 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { TransformInfoEntity } from "../../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js";
+import { TransformInfoEntity } from '../../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntity.js';
 
     
-import { TransformInfoEntityBuilder } from "../../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js";
+import { TransformInfoEntityBuilder } from '../../../../../../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
 
     
-import { DomDocumentHelper } from "../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ValidationComponentInterface } from "../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { StringMaker } from "../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { TransformInfo } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfo.js";
+import { TransformInfo } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfo.js';
 
     
-import { TransformInfoHttpInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TransformInfoObjectConfigInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js";
+import { TransformInfoObjectConfigInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
 
     
-import { PageValidation } from "../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/page/PageValidation.js";
+import { PageValidation } from '../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/page/PageValidation.js';
 
     
-import { TitleData } from "../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js";
+import { TitleData } from '../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
 
     
-import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { CustomizerUtil } from "../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js";
+import { CustomizerUtil } from '../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
 
     
 
@@ -93,7 +93,7 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PageView } from "./PageView.js";
+        import { PageView } from './PageView.js';
 
 export class PageValidationView extends PageView implements ValidationComponentInterface {
         

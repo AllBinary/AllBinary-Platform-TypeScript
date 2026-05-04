@@ -17,20 +17,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { WorkWaypoint } from "../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js";
+import { WorkWaypoint } from '../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js";
+import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
 
     
 
@@ -51,7 +51,7 @@ import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/grap
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSLayerUtil } from "./RTSLayerUtil.js";
+        import { RTSLayerUtil } from './RTSLayerUtil.js';
 
 export class AdvancedRTSLayerUtil
             extends Object

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { IOException } from "../../../../../../java/io/IOException.js";
+import { IOException } from '../../../../../../java/io/IOException.js';
 
     
-import { Calendar } from "../../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../../java/util/Calendar.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbeLicenseClient } from "../../../../../../org/allbinary/logic/system/security/licensing/client/AbeLicenseClient.js";
+import { AbeLicenseClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/AbeLicenseClient.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,11 +57,11 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
-import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
-import { AbeNoLicense } from "./AbeNoLicense.js";
-import { AbeClientInformationData } from "./AbeClientInformationData.js";
-import { LicensingException } from "./LicensingException.js";
+        import { AbeLicenseInterface } from './AbeLicenseInterface.js';
+import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
+import { AbeNoLicense } from './AbeNoLicense.js';
+import { AbeClientInformationData } from './AbeClientInformationData.js';
+import { LicensingException } from './LicensingException.js';
 
 export class AbeLicenseInterfaceFactory
             extends Object

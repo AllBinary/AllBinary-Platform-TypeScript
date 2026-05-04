@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { Layer } from "../../../../org/allbinary/layer/Layer.js";
+import { Layer } from '../../../../org/allbinary/layer/Layer.js';
 
     
 

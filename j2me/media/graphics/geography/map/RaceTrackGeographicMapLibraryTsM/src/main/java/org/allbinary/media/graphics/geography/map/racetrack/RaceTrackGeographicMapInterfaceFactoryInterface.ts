@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 
 
@@ -44,7 +44,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackGeographicMap } from "./RaceTrackGeographicMap.js";
+        import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
 
 export interface RaceTrackGeographicMapInterfaceFactoryInterface {
         

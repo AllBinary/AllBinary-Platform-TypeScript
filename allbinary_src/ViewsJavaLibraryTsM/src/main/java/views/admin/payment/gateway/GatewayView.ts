@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PaymentGatewayInterface } from "../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js";
+import { PaymentGatewayInterface } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 
     
-import { BasicPaymentTypeUtil } from "../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js";
+import { BasicPaymentTypeUtil } from '../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
 
     
-import { PaymentGatewayEntityFactory } from "../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js";
+import { PaymentGatewayEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringValidationUtil } from "../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
 
@@ -63,8 +63,8 @@ import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/t
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentGatewayViewAbstract } from "./PaymentGatewayViewAbstract.js";
-import { PaymentGatewayComponent } from "./PaymentGatewayComponent.js";
+        import { PaymentGatewayViewAbstract } from './PaymentGatewayViewAbstract.js';
+import { PaymentGatewayComponent } from './PaymentGatewayComponent.js';
 
 export class GatewayView extends PaymentGatewayViewAbstract {
         

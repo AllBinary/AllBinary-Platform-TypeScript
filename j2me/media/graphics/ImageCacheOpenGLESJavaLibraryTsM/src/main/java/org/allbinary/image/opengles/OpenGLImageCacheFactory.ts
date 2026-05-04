@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
     
 
@@ -43,7 +43,7 @@ import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLImageCache } from "./OpenGLImageCache.js";
+        import { OpenGLImageCache } from './OpenGLImageCache.js';
 
 export class OpenGLImageCacheFactory
             extends Object

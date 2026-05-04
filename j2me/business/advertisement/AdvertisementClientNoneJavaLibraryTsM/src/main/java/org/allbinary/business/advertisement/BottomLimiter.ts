@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { GameAdState } from "../../../../org/allbinary/game/GameAdState.js";
+import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
 
@@ -46,7 +46,7 @@ import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/display
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameAdStateFactory } from "./GameAdStateFactory.js";
+        import { GameAdStateFactory } from './GameAdStateFactory.js';
 
 export class BottomLimiter
             extends Object

@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CommandForm } from "../../../../org/allbinary/graphics/displayable/screen/CommandForm.js";
+import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 
     
-import { Init } from "../../../../org/allbinary/init/Init.js";
+import { Init } from '../../../../org/allbinary/init/Init.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -60,7 +60,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InGameOptionsForm } from "./InGameOptionsForm.js";
+        import { InGameOptionsForm } from './InGameOptionsForm.js';
 
 export class InGameOptionsFormFactory
             extends Object

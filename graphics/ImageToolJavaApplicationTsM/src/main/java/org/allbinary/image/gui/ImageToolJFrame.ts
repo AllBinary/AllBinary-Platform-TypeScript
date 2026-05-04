@@ -18,60 +18,60 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { Arrays } from "../../../../java/util/Arrays.js";
+import { Arrays } from '../../../../java/util/Arrays.js';
 
     
-import { Comparator } from "../../../../java/util/Comparator.js";
+import { Comparator } from '../../../../java/util/Comparator.js';
 
     
-import { ImageIO } from "../../../../javax/imageio/ImageIO.js";
+import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 
     
-import { FileJDialog } from "../../../../org/allbinary/gui/dialog/FileJDialog.js";
+import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
 
     
-import { FileJDialogListenerInterface } from "../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js";
+import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ImageProcessorInput } from "../../../../org/allbinary/media/image/ImageProcessorInput.js";
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 
     
-import { ImageProcessorInputCompositeInterface } from "../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js";
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 
     
-import { ColorRange } from "../../../../org/allbinary/media/image/analysis/ColorRange.js";
+import { ColorRange } from '../../../../org/allbinary/media/image/analysis/ColorRange.js';
 
     
-import { ColorRangeInterface } from "../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js";
+import { ColorRangeInterface } from '../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
 
     
-import { ImageAnalysis } from "../../../../org/allbinary/media/image/analysis/ImageAnalysis.js";
+import { ImageAnalysis } from '../../../../org/allbinary/media/image/analysis/ImageAnalysis.js';
 
     
-import { ImageAnalysisResults } from "../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js";
+import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
 
     
-import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -92,31 +92,31 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JFrame } from "./JFrame.js";
-import { JDialog } from "./JDialog.js";
-import { JLabel } from "./JLabel.js";
-import { JTextField } from "./JTextField.js";
-import { JButton } from "./JButton.js";
-import { JPanel } from "./JPanel.js";
-import { JMenuBar } from "./JMenuBar.js";
-import { JMenu } from "./JMenu.js";
-import { JMenuItem } from "./JMenuItem.js";
-import { Dimension } from "./Dimension.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
-import { GridLayout } from "./GridLayout.js";
-import { ImageUnifierJPanel } from "./ImageUnifierJPanel.js";
-import { ImageAnalysisResultsJPanel } from "./ImageAnalysisResultsJPanel.js";
-import { RotationSpriteImageJPanel } from "./RotationSpriteImageJPanel.js";
-import { SpriteSplitterImageJPanel } from "./SpriteSplitterImageJPanel.js";
-import { RotationImageJPanel } from "./RotationImageJPanel.js";
-import { ResizeImageJPanel } from "./ResizeImageJPanel.js";
-import { CreateIconImagesJPanel } from "./CreateIconImagesJPanel.js";
-import { CanvasImageJPanel } from "./CanvasImageJPanel.js";
-import { MirrorSpriteImageJPanel } from "./MirrorSpriteImageJPanel.js";
-import { MirrorImageJPanel } from "./MirrorImageJPanel.js";
+        import { JFrame } from './JFrame.js';
+import { JDialog } from './JDialog.js';
+import { JLabel } from './JLabel.js';
+import { JTextField } from './JTextField.js';
+import { JButton } from './JButton.js';
+import { JPanel } from './JPanel.js';
+import { JMenuBar } from './JMenuBar.js';
+import { JMenu } from './JMenu.js';
+import { JMenuItem } from './JMenuItem.js';
+import { Dimension } from './Dimension.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
+import { GridLayout } from './GridLayout.js';
+import { ImageUnifierJPanel } from './ImageUnifierJPanel.js';
+import { ImageAnalysisResultsJPanel } from './ImageAnalysisResultsJPanel.js';
+import { RotationSpriteImageJPanel } from './RotationSpriteImageJPanel.js';
+import { SpriteSplitterImageJPanel } from './SpriteSplitterImageJPanel.js';
+import { RotationImageJPanel } from './RotationImageJPanel.js';
+import { ResizeImageJPanel } from './ResizeImageJPanel.js';
+import { CreateIconImagesJPanel } from './CreateIconImagesJPanel.js';
+import { CanvasImageJPanel } from './CanvasImageJPanel.js';
+import { MirrorSpriteImageJPanel } from './MirrorSpriteImageJPanel.js';
+import { MirrorImageJPanel } from './MirrorImageJPanel.js';
 
 export class ImageToolJFrame extends javax.swing.JFrame implements FileJDialogListenerInterface {
         

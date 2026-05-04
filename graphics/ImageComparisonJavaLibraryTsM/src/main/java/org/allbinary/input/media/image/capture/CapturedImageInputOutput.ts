@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { ImageOutputData } from "../../../../../../org/allbinary/input/automation/ImageOutputData.js";
+import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LongUtil } from "../../../../../../org/allbinary/logic/java/number/LongUtil.js";
+import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AutomaticCacheInterface } from "../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js";
+import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 
     
-import { MediaDataFactory } from "../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js";
+import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
 
     
-import { ImagePersistanceUtil } from "../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js";
+import { ImagePersistanceUtil } from '../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 
     
-import { ImageUtil } from "../../../../../../org/allbinary/media/image/ImageUtil.js";
+import { ImageUtil } from '../../../../../../org/allbinary/media/image/ImageUtil.js';
 
     
-import { BufferedImageFrameCacheable } from "../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js";
+import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
 
     
-import { ImageIOInterface } from "../../../../../../org/allbinary/media/image/io/ImageIOInterface.js";
+import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -80,7 +80,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
+        import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
 
 export class CapturedImageInputOutput
             extends Object

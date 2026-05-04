@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js";
+import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
 
     
 
@@ -49,7 +49,7 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TerrainEvent } from "./TerrainEvent.js";
+        import { TerrainEvent } from './TerrainEvent.js';
 
 export class TerrainEventFactory
             extends Object

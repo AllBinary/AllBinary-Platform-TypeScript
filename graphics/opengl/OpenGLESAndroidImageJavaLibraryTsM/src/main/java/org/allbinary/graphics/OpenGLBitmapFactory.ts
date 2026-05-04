@@ -4,32 +4,32 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { InputStream } from "../../../java/io/InputStream.js";
+import { InputStream } from '../../../java/io/InputStream.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { Bitmap } from "../../../android/graphics/Bitmap.js";
+import { Bitmap } from '../../../android/graphics/Bitmap.js';
 
     
-import { BitmapFactory } from "../../../android/graphics/BitmapFactory.js";
+import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
 
     
-import { IOException } from "../../../java/io/IOException.js";
+import { IOException } from '../../../java/io/IOException.js';
 
     
-import { PlatformBitmapBaseFactory } from "../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js";
+import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 
     
-import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/PlatformBitmapBase.js";
+import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 
     
-import { AndroidImageInterface } from "../../../org/microemu/android/device/AndroidImageInterface.js";
+import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
 
     
 
@@ -50,8 +50,8 @@ import { AndroidImageInterface } from "../../../org/microemu/android/device/Andr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //import { Config } from "./Config.js";
-import { OpenGLBitmap } from "./OpenGLBitmap.js";
+        //import { Config } from './Config.js';
+import { OpenGLBitmap } from './OpenGLBitmap.js';
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         

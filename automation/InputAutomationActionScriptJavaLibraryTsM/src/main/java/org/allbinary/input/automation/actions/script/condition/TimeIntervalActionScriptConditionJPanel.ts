@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -48,17 +48,17 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { TimeIntervalActionScriptConditionInterface } from "./TimeIntervalActionScriptConditionInterface.js";
-import { JTextField } from "./JTextField.js";
-import { JDialog } from "./JDialog.js";
-import { JLabel } from "./JLabel.js";
-import { JButton } from "./JButton.js";
-import { Dimension } from "./Dimension.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
+        import { JPanel } from './JPanel.js';
+import { TimeIntervalActionScriptConditionInterface } from './TimeIntervalActionScriptConditionInterface.js';
+import { JTextField } from './JTextField.js';
+import { JDialog } from './JDialog.js';
+import { JLabel } from './JLabel.js';
+import { JButton } from './JButton.js';
+import { Dimension } from './Dimension.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
 
 export class TimeIntervalActionScriptConditionJPanel extends javax.swing.JPanel {
         

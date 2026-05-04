@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
 
 
@@ -42,10 +42,10 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseSoundsFactory } from "./BaseSoundsFactory.js";
-import { Sound } from "./Sound.js";
-import { SelectSound } from "./SelectSound.js";
-import { ErrorSound } from "./ErrorSound.js";
+        import { BaseSoundsFactory } from './BaseSoundsFactory.js';
+import { Sound } from './Sound.js';
+import { SelectSound } from './SelectSound.js';
+import { ErrorSound } from './ErrorSound.js';
 
 export class EarlySoundsFactory extends BaseSoundsFactory {
         

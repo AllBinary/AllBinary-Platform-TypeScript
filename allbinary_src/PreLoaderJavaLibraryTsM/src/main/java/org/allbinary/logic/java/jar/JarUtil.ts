@@ -18,27 +18,27 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from '../../../../../java/io/IOException.js';
 
     
-import { URL } from "../../../../../java/net/URL.js";
+import { URL } from '../../../../../java/net/URL.js';
 
     
-import { URLConnection } from "../../../../../java/net/URLConnection.js";
+import { URLConnection } from '../../../../../java/net/URLConnection.js';
 
     
-import { JarEntry } from "../../../../../java/util/jar/JarEntry.js";
+import { JarEntry } from '../../../../../java/util/jar/JarEntry.js';
 
     
-import { JarInputStream } from "../../../../../java/util/jar/JarInputStream.js";
+import { JarInputStream } from '../../../../../java/util/jar/JarInputStream.js';
 
     
 

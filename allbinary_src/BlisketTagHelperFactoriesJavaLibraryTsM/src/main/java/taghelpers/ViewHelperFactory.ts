@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-            import { Exception } from "../java/lang/Exception.js";
+            import { Exception } from '../java/lang/Exception.js';
         
-import { HashMap } from "../java/util/HashMap.js";
+import { HashMap } from '../java/util/HashMap.js';
 
     
-import { PageContext } from "../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../javax/servlet/jsp/PageContext.js';
 
     
-import { TagHelperFactory } from "../admin/taghelpers/TagHelperFactory.js";
+import { TagHelperFactory } from '../admin/taghelpers/TagHelperFactory.js';
 
     
-import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LicensingException } from "../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 
@@ -57,7 +57,7 @@ import { LicensingException } from "../org/allbinary/logic/system/security/licen
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ViewHelper } from "./ViewHelper.js";
+        import { ViewHelper } from './ViewHelper.js';
 
 export class ViewHelperFactory extends TagHelperFactory {
         

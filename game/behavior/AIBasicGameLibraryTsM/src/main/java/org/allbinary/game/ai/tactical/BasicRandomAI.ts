@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { BasicAI } from "../../../../../org/allbinary/game/ai/BasicAI.js";
+import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 
     
-import { InputProbability } from "../../../../../org/allbinary/game/ai/InputProbability.js";
+import { InputProbability } from '../../../../../org/allbinary/game/ai/InputProbability.js';
 
     
-import { GameInput } from "../../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { MyRandomFactory } from "../../../../../org/allbinary/game/rand/MyRandomFactory.js";
+import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
+import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
 

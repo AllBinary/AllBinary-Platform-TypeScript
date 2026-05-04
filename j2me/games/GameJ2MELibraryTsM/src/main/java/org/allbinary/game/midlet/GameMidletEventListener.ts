@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventListenerInterface } from "../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
 

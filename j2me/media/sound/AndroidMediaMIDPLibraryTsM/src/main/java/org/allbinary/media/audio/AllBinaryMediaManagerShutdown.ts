@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -45,7 +45,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
+        import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
 
 export class AllBinaryMediaManagerShutdown
             extends Object

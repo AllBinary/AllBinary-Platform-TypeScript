@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { CustomImageItem } from "../../../../../org/allbinary/graphics/form/item/CustomImageItem.js";
+import { CustomImageItem } from '../../../../../org/allbinary/graphics/form/item/CustomImageItem.js';
 
     
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { LayerInterfaceFactoryInterface } from "../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js";
+import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
 
     
 

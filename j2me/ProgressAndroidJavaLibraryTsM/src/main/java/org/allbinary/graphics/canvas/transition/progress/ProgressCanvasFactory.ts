@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { NullPaintable } from "../../../../../../org/allbinary/graphics/paint/NullPaintable.js";
+import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 
     
-import { PaintableInterface } from "../../../../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -52,8 +52,8 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AndroidBasicTitleProgressBar } from "./AndroidBasicTitleProgressBar.js";
-import { ProgressCanvas } from "./ProgressCanvas.js";
+        import { AndroidBasicTitleProgressBar } from './AndroidBasicTitleProgressBar.js';
+import { ProgressCanvas } from './ProgressCanvas.js';
 
 export class ProgressCanvasFactory
             extends Object

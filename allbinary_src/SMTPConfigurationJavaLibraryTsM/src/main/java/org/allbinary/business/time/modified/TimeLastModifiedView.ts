@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { DomNodeHelper } from "../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { ModDomHelper } from "../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -60,7 +60,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TimeLastModified } from "./TimeLastModified.js";
+        import { TimeLastModified } from './TimeLastModified.js';
 
 export class TimeLastModifiedView
             extends Object

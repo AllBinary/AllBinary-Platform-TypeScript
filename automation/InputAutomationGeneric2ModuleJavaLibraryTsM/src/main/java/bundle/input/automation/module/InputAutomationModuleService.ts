@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { InputAutomationModuleFactoryInterface } from "../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js";
+import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 
     
 
@@ -43,7 +43,7 @@ import { InputAutomationModuleFactoryInterface } from "../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputAutomationModuleServiceInterface } from "./InputAutomationModuleServiceInterface.js";
+        import { InputAutomationModuleServiceInterface } from './InputAutomationModuleServiceInterface.js';
 
 export class InputAutomationModuleService
             extends Object

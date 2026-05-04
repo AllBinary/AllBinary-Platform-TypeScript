@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CacheableInterface } from "../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js";
+import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
 

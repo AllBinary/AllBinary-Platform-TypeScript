@@ -18,41 +18,41 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-            import { Runnable } from "../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { MultipassState } from "../../../../org/allbinary/media/graphics/geography/pathfinding/MultipassState.js";
+import { MultipassState } from '../../../../org/allbinary/media/graphics/geography/pathfinding/MultipassState.js';
 
     
-import { PathFindingInfo } from "../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js";
+import { PathFindingInfo } from '../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -73,8 +73,8 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WaypointPathRunnableBase } from "./WaypointPathRunnableBase.js";
-import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+        import { WaypointPathRunnableBase } from './WaypointPathRunnableBase.js';
+import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
 
 export class MultipassWaypointPathRunnable extends WaypointPathRunnableBase {
         

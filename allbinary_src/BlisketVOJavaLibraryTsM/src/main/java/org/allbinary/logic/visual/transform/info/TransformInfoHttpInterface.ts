@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { WeblisketSessionInterface } from "../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js";
+import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
 
     
 
@@ -49,7 +49,7 @@ import { WeblisketSessionInterface } from "../../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoInterface } from "./TransformInfoInterface.js";
+        import { TransformInfoInterface } from './TransformInfoInterface.js';
 
 export interface TransformInfoHttpInterface extends TransformInfoInterface {
         

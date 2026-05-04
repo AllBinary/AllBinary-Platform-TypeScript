@@ -18,79 +18,79 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 
     
-import { DataInputStream } from "../../../../java/io/DataInputStream.js";
+import { DataInputStream } from '../../../../java/io/DataInputStream.js';
 
     
-import { EOFException } from "../../../../java/io/EOFException.js";
+import { EOFException } from '../../../../java/io/EOFException.js';
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { RecordComparator } from "../../../../javax/microedition/rms/RecordComparator.js";
+import { RecordComparator } from '../../../../javax/microedition/rms/RecordComparator.js';
 
     
-import { RecordEnumeration } from "../../../../javax/microedition/rms/RecordEnumeration.js";
+import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
 
     
-import { RecordStore } from "../../../../javax/microedition/rms/RecordStore.js";
+import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
 
     
-import { RecordStoreException } from "../../../../javax/microedition/rms/RecordStoreException.js";
+import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
 
     
-import { RecordStoreNotFoundException } from "../../../../javax/microedition/rms/RecordStoreNotFoundException.js";
+import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
 
     
-import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
-import { NullRecordComparator } from "../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js";
+import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
 
     
-import { NullRecordFilter } from "../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js";
+import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
 
     
-import { NullRecordStore } from "../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js";
+import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { PlatformRecordIdUtil } from "../../../../org/allbinary/persistance/PlatformRecordIdUtil.js";
+import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -111,9 +111,9 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScores } from "./HighScores.js";
-import { HighScore } from "./HighScore.js";
-import { ScoreComparator } from "./ScoreComparator.js";
+        import { HighScores } from './HighScores.js';
+import { HighScore } from './HighScore.js';
+import { ScoreComparator } from './ScoreComparator.js';
 
 export class RecordStoreHighScores extends HighScores {
         

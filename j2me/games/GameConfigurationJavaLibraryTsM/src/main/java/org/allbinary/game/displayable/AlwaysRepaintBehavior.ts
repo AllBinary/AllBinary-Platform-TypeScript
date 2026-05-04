@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { OpenGLFeatureFactory } from "../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { NullRunnable } from "../../../../org/allbinary/thread/NullRunnable.js";
+import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
 
     
 
@@ -68,7 +68,7 @@ import { NullRunnable } from "../../../../org/allbinary/thread/NullRunnable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RepaintBehavior } from "./RepaintBehavior.js";
+        import { RepaintBehavior } from './RepaintBehavior.js';
 
 export class AlwaysRepaintBehavior extends RepaintBehavior {
         

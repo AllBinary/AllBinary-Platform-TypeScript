@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Font } from "../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 
     
 
@@ -66,7 +66,7 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomTextAnimation } from "./CustomTextAnimation.js";
+        import { CustomTextAnimation } from './CustomTextAnimation.js';
 
 export class CustomTextAnimationFactory
             extends Object

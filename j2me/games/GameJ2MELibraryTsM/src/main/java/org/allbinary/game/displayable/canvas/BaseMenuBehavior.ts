@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DisplayChangeEvent } from "../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js";
+import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
 
     
-import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullPaintable.js";
+import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 
     
 
@@ -48,7 +48,7 @@ import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullP
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 
 export class BaseMenuBehavior
             extends Object

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { StateControlledInterface } from "../../../../org/allbinary/graphics/displayable/StateControlledInterface.js";
+import { StateControlledInterface } from '../../../../org/allbinary/graphics/displayable/StateControlledInterface.js';
 
     
 
@@ -43,7 +43,7 @@ import { StateControlledInterface } from "../../../../org/allbinary/graphics/dis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Paintable } from "./Paintable.js";
+        import { Paintable } from './Paintable.js';
 
 export class StatePaintable extends Paintable implements StateControlledInterface {
         

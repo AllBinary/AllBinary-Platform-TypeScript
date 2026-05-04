@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { PaymentGatewayData } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js";
+import { PaymentGatewayData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
 
     
-import { PaymentGatewayInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactoryInterface.js";
+import { PaymentGatewayInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactoryInterface.js';
 
     
-import { PaymentGatewayDomNodeFactoryInterface } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/modules/gateway/PaymentGatewayDomNodeFactoryInterface.js";
+import { PaymentGatewayDomNodeFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/modules/gateway/PaymentGatewayDomNodeFactoryInterface.js';
 
     
-import { AbPathData } from "../../../../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { Replace } from "../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js";
+import { Replace } from '../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 
     
-import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -66,7 +66,7 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicPaymentTypeUtil } from "./BasicPaymentTypeUtil.js";
+        import { BasicPaymentTypeUtil } from './BasicPaymentTypeUtil.js';
 
 export class BasicPaymentType
             extends Object

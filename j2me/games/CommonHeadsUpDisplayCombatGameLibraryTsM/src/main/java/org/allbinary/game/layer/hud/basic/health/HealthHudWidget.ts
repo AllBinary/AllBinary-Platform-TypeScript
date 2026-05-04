@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Animation } from "../../../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../../../org/allbinary/animation/Animation.js';
 
     
-import { BasicHud } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js";
+import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
 
     
-import { Health } from "../../../../../../../org/allbinary/game/health/Health.js";
+import { Health } from '../../../../../../../org/allbinary/game/health/Health.js';
 
     
-import { HealthListenerInterface } from "../../../../../../../org/allbinary/game/health/HealthListenerInterface.js";
+import { HealthListenerInterface } from '../../../../../../../org/allbinary/game/health/HealthListenerInterface.js';
 
     
-import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { PaintableInterface } from "../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
-import { GameTickTimeDelayHelper } from "../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js";
+import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
-import { NoTimeDelayHelper } from "../../../../../../../org/allbinary/time/NoTimeDelayHelper.js";
+import { NoTimeDelayHelper } from '../../../../../../../org/allbinary/time/NoTimeDelayHelper.js';
 
     
-import { TimeDelayHelper } from "../../../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 

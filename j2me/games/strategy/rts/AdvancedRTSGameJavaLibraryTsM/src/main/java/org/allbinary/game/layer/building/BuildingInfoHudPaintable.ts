@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { SelectionHudPaintable } from "../../../../../org/allbinary/game/layer/SelectionHudPaintable.js";
+import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BasicHudFactory } from "../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js";
+import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 
     
-import { NullPathFindingLayer } from "../../../../../org/allbinary/game/layer/NullPathFindingLayer.js";
+import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
 
     
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { NumberStringHud } from "../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js";
+import { NumberStringHud } from '../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { MyFont } from "../../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { MathUtil } from "../../../../../org/allbinary/logic/math/MathUtil.js";
+import { MathUtil } from '../../../../../org/allbinary/logic/math/MathUtil.js';
 
     
 
@@ -75,7 +75,7 @@ import { MathUtil } from "../../../../../org/allbinary/logic/math/MathUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BuildingLayer } from "./BuildingLayer.js";
+        import { BuildingLayer } from './BuildingLayer.js';
 
 export class BuildingInfoHudPaintable extends SelectionHudPaintable {
         

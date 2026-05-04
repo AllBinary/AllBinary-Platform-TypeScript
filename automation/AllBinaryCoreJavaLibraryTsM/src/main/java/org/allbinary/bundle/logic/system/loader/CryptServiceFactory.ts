@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { Bundle } from "../../../../../../org/osgi/framework/Bundle.js";
+import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
 
     
-import { ServiceFactory } from "../../../../../../org/osgi/framework/ServiceFactory.js";
+import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
 
     
-import { ServiceRegistration } from "../../../../../../org/osgi/framework/ServiceRegistration.js";
+import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -55,7 +55,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CryptService } from "./CryptService.js";
+        import { CryptService } from './CryptService.js';
 
 export class CryptServiceFactory
             extends Object

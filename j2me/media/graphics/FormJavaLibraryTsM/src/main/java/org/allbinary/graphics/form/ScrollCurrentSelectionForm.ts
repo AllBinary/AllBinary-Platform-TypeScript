@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/item/CustomItemInterface.js";
+import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
 
     
 
@@ -57,10 +57,10 @@ import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/ite
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
-import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-import { FormType } from "./FormType.js";
-import { FormTypeFactory } from "./FormTypeFactory.js";
+        import { ScrollSelectionForm } from './ScrollSelectionForm.js';
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+import { FormType } from './FormType.js';
+import { FormTypeFactory } from './FormTypeFactory.js';
 
 export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
         

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { EthernetInterface } from "../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/EthernetInterface.js";
+import { EthernetInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/EthernetInterface.js';
 
     
-import { HardwareComponentInterface } from "../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js";
+import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
 
     
 

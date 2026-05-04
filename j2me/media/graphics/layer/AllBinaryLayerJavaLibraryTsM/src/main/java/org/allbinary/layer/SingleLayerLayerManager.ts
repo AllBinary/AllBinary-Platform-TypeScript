@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LayerManager } from "./LayerManager.js";
-import { LayerManagerNoDebug } from "./LayerManagerNoDebug.js";
+        import { LayerManager } from './LayerManager.js';
+import { LayerManagerNoDebug } from './LayerManagerNoDebug.js';
 
 export class SingleLayerLayerManager extends LayerManager {
         

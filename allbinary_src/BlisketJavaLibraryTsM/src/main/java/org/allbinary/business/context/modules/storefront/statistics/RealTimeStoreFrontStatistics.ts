@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { StoreFrontInterface } from "../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { StoreFrontAdvertisementsStatistics } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatistics.js";
+import { StoreFrontAdvertisementsStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatistics.js';
 
     
-import { StoreFrontAdvertisementsStatisticsInterface } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js";
+import { StoreFrontAdvertisementsStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js';
 
     
-import { StoreFrontInventoryStatistics } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatistics.js";
+import { StoreFrontInventoryStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatistics.js';
 
     
-import { StoreFrontInventoryStatisticsInterface } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js";
+import { StoreFrontInventoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js';
 
     
-import { StoreFrontOrdersHistoryStatistics } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatistics.js";
+import { StoreFrontOrdersHistoryStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatistics.js';
 
     
-import { StoreFrontOrdersHistoryStatisticsInterface } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js";
+import { StoreFrontOrdersHistoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js';
 
     
-import { StoreFrontUsersStatistics } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatistics.js";
+import { StoreFrontUsersStatistics } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatistics.js';
 
     
-import { StoreFrontUsersStatisticsInterface } from "../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js";
+import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js';
 
     
 
@@ -69,7 +69,7 @@ import { StoreFrontUsersStatisticsInterface } from "../../../../../../../org/all
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StoreFrontStatisticsInterface } from "./StoreFrontStatisticsInterface.js";
+        import { StoreFrontStatisticsInterface } from './StoreFrontStatisticsInterface.js';
 
 export class RealTimeStoreFrontStatistics
             extends Object

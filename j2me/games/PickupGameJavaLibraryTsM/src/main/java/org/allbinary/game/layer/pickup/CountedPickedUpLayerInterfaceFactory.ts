@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -60,12 +60,12 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PickedUpLayerInterfaceFactory } from "./PickedUpLayerInterfaceFactory.js";
-import { CountedPickedUpLayerInterfaceFactoryInterface } from "./CountedPickedUpLayerInterfaceFactoryInterface.js";
-import { PickedUpLayerTypeFactory } from "./PickedUpLayerTypeFactory.js";
-import { IconLayer } from "./IconLayer.js";
-import { CountedPickedUpLayerInterfaceFactoryPool } from "./CountedPickedUpLayerInterfaceFactoryPool.js";
-import { PickedUpLayerType } from "./PickedUpLayerType.js";
+        import { PickedUpLayerInterfaceFactory } from './PickedUpLayerInterfaceFactory.js';
+import { CountedPickedUpLayerInterfaceFactoryInterface } from './CountedPickedUpLayerInterfaceFactoryInterface.js';
+import { PickedUpLayerTypeFactory } from './PickedUpLayerTypeFactory.js';
+import { IconLayer } from './IconLayer.js';
+import { CountedPickedUpLayerInterfaceFactoryPool } from './CountedPickedUpLayerInterfaceFactoryPool.js';
+import { PickedUpLayerType } from './PickedUpLayerType.js';
 
 export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory implements CountedPickedUpLayerInterfaceFactoryInterface {
         

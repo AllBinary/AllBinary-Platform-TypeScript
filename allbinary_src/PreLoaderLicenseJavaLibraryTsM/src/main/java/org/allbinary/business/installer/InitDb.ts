@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Method } from "../../../../java/lang/reflect/Method.js";
+import { Method } from '../../../../java/lang/reflect/Method.js';
 
     
-import { DbConnectionInfo } from "../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
+import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 
     
-import { LicensingException } from "../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 

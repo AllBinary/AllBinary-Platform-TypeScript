@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { RecordComparator } from "../../../../../javax/microedition/rms/RecordComparator.js";
+import { RecordComparator } from '../../../../../javax/microedition/rms/RecordComparator.js';
 
     
 

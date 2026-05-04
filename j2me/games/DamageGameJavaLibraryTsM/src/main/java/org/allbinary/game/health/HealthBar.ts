@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -51,10 +51,10 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HealthListenerInterface } from "./HealthListenerInterface.js";
-import { HealthBarAnimation } from "./HealthBarAnimation.js";
-import { HealthInterface } from "./HealthInterface.js";
-import { Health } from "./Health.js";
+        import { HealthListenerInterface } from './HealthListenerInterface.js';
+import { HealthBarAnimation } from './HealthBarAnimation.js';
+import { HealthInterface } from './HealthInterface.js';
+import { Health } from './Health.js';
 
 export class HealthBar extends Paintable implements HealthListenerInterface {
         

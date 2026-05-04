@@ -18,99 +18,99 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { Calendar } from "../../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { StoreFrontData } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { FREEBLISKET_PATH_GLOBALS } from "../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
+import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Encoder } from "../../../../../../org/allbinary/logic/control/crypt/Encoder.js";
+import { Encoder } from '../../../../../../org/allbinary/logic/control/crypt/Encoder.js';
 
     
-import { CryptFileReader } from "../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js";
+import { CryptFileReader } from '../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 
     
-import { OutputTypeData } from "../../../../../../org/allbinary/logic/io/OutputTypeData.js";
+import { OutputTypeData } from '../../../../../../org/allbinary/logic/io/OutputTypeData.js';
 
     
-import { AbFilePath } from "../../../../../../org/allbinary/logic/io/path/AbFilePath.js";
+import { AbFilePath } from '../../../../../../org/allbinary/logic/io/path/AbFilePath.js';
 
     
-import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { ServiceClientInformationInterfaceFactory } from "../../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
+import { ServiceClientInformationInterfaceFactory } from '../../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 
     
-import { TransformInfoDataData } from "../../../../../../org/allbinary/logic/visual/transform/info/data/TransformInfoDataData.js";
+import { TransformInfoDataData } from '../../../../../../org/allbinary/logic/visual/transform/info/data/TransformInfoDataData.js';
 
     
-import { TransformInfoObjectConfig } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfig.js";
+import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfig.js';
 
     
-import { TransformInfoObjectConfigAndManipulatorFactory } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js";
+import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
 
     
-import { TransformInfoObjectConfigInterface } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js";
+import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
 
     
-import { TransformInfoTemplateData } from "../../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js";
+import { TransformInfoTemplateData } from '../../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
 
     
-import { TransformInfoObjectData } from "../../../../../../org/allbinary/logic/visual/transform/info/viewObject/TransformInfoObjectData.js";
+import { TransformInfoObjectData } from '../../../../../../org/allbinary/logic/visual/transform/info/viewObject/TransformInfoObjectData.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
 
@@ -131,8 +131,8 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoInterface } from "./TransformInfoInterface.js";
-import { TransformInfoData } from "./TransformInfoData.js";
+        import { TransformInfoInterface } from './TransformInfoInterface.js';
+import { TransformInfoData } from './TransformInfoData.js';
 
 export class TransformInfo
             extends Object

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { AnimationFactoryInitializationVisitor } from "../../../org/allbinary/animation/image/AnimationFactoryInitializationVisitor.js";
+import { AnimationFactoryInitializationVisitor } from '../../../org/allbinary/animation/image/AnimationFactoryInitializationVisitor.js';
 
     
-import { BaseImageAnimationFactory } from "../../../org/allbinary/animation/image/BaseImageAnimationFactory.js";
+import { BaseImageAnimationFactory } from '../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
 
     
-import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 
     
-import { ImageJ2MEScaleUtil } from "../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js";
+import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2MEScaleUtil.js';
 
     
 

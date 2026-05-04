@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BooleanFactory } from "../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventListenerInterface } from "../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
-import { BasicEventHandler } from "../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js";
+import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -62,8 +62,8 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VirtualKeyboardEvent } from "./VirtualKeyboardEvent.js";
-import { VirtualKeyboardEventListenerInterface } from "./VirtualKeyboardEventListenerInterface.js";
+        import { VirtualKeyboardEvent } from './VirtualKeyboardEvent.js';
+import { VirtualKeyboardEventListenerInterface } from './VirtualKeyboardEventListenerInterface.js';
 
 export class VirtualKeyboardEventHandler extends BasicEventHandler {
         

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { swing } from "../../../../../../javax/swing.js";
+import { swing } from '../../../../../../javax/swing.js';
 
     
 
@@ -43,11 +43,11 @@ import { swing } from "../../../../../../javax/swing.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { JButton } from "./JButton.js";
-import { JTextField } from "./JTextField.js";
-import { GridLayout } from "./GridLayout.js";
-import { Font } from "./Font.js";
+        import { JPanel } from './JPanel.js';
+import { JButton } from './JButton.js';
+import { JTextField } from './JTextField.js';
+import { GridLayout } from './GridLayout.js';
+import { Font } from './Font.js';
 
 export class PropertiesJPanel extends javax.swing.JPanel {
         

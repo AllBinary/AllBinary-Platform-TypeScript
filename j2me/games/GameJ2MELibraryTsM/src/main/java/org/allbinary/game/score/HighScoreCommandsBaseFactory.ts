@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Command } from "../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 
     
-import { J2MEUtil } from "../../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -51,7 +51,7 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScoreCommands } from "./HighScoreCommands.js";
+        import { HighScoreCommands } from './HighScoreCommands.js';
 
 export class HighScoreCommandsBaseFactory
             extends Object

@@ -18,58 +18,58 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { OneRowSpriteIndexedAnimationFactory } from "../../../../../org/allbinary/animation/image/sprite/OneRowSpriteIndexedAnimationFactory.js";
+import { OneRowSpriteIndexedAnimationFactory } from '../../../../../org/allbinary/animation/image/sprite/OneRowSpriteIndexedAnimationFactory.js';
 
     
-import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js";
+import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
 
     
-import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { ResourceLoadingLevelFactory } from "../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js";
+import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
 
     
-import { ProgressCanvas } from "../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
+import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 
     
-import { ProgressCanvasFactory } from "../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { OpenGLFeatureFactory } from "../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 
     
-import { ImageCache } from "../../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
 
     
-import { ImageCacheFactory } from "../../../../../org/allbinary/image/ImageCacheFactory.js";
+import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { OperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js";
+import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 
     
-import { ImageCompleteUtil } from "../../../../../org/allbinary/media/image/ImageCompleteUtil.js";
+import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/ImageCompleteUtil.js';
 
     
 
@@ -90,16 +90,16 @@ import { ImageCompleteUtil } from "../../../../../org/allbinary/media/image/Imag
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
-import { TouchButtonResource } from "./TouchButtonResource.js";
-import { TouchButtonGenericActionResource } from "./TouchButtonGenericActionResource.js";
-import { TouchButtonStartResource } from "./TouchButtonStartResource.js";
-import { TouchButtonUpResource } from "./TouchButtonUpResource.js";
-import { TouchButtonDownResource } from "./TouchButtonDownResource.js";
-import { TouchButtonTurnLeftResource } from "./TouchButtonTurnLeftResource.js";
-import { TouchButtonTurnRightResource } from "./TouchButtonTurnRightResource.js";
-import { TouchButtonStrafeLeftResource } from "./TouchButtonStrafeLeftResource.js";
-import { TouchButtonStrafeRightResource } from "./TouchButtonStrafeRightResource.js";
+        import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
+import { TouchButtonResource } from './TouchButtonResource.js';
+import { TouchButtonGenericActionResource } from './TouchButtonGenericActionResource.js';
+import { TouchButtonStartResource } from './TouchButtonStartResource.js';
+import { TouchButtonUpResource } from './TouchButtonUpResource.js';
+import { TouchButtonDownResource } from './TouchButtonDownResource.js';
+import { TouchButtonTurnLeftResource } from './TouchButtonTurnLeftResource.js';
+import { TouchButtonTurnRightResource } from './TouchButtonTurnRightResource.js';
+import { TouchButtonStrafeLeftResource } from './TouchButtonStrafeLeftResource.js';
+import { TouchButtonStrafeRightResource } from './TouchButtonStrafeRightResource.js';
 
 export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extends BaseResourceAnimationInterfaceFactoryInterfaceFactory {
         

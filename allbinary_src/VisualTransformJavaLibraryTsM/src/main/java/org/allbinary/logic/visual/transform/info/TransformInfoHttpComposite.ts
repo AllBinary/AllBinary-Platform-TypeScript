@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { WeblisketSession } from "../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,8 +57,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoHttpInterface } from "./TransformInfoHttpInterface.js";
-import { TransformInfoInterface } from "./TransformInfoInterface.js";
+        import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';
+import { TransformInfoInterface } from './TransformInfoInterface.js';
 
 export class TransformInfoHttpComposite
             extends Object

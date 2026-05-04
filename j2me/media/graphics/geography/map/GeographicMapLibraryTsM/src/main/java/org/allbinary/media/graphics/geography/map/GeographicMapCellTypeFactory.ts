@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -45,7 +45,7 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellType } from "./GeographicMapCellType.js";
+        import { GeographicMapCellType } from './GeographicMapCellType.js';
 
 export class GeographicMapCellTypeFactory
             extends Object

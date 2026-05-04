@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { EventListenerInterface } from "../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -49,9 +49,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PressGameKeyEventHandler } from "./PressGameKeyEventHandler.js";
-import { UpGameKeyEventHandler } from "./UpGameKeyEventHandler.js";
-import { DownGameKeyEventHandler } from "./DownGameKeyEventHandler.js";
+        import { PressGameKeyEventHandler } from './PressGameKeyEventHandler.js';
+import { UpGameKeyEventHandler } from './UpGameKeyEventHandler.js';
+import { DownGameKeyEventHandler } from './DownGameKeyEventHandler.js';
 
 export class GameKeyEventHandler
             extends Object

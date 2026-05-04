@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -48,7 +48,7 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PermissionItemsEntity } from "./PermissionItemsEntity.js";
+        import { PermissionItemsEntity } from './PermissionItemsEntity.js';
 
 export class PermissionItemsEntityFactory
             extends Object

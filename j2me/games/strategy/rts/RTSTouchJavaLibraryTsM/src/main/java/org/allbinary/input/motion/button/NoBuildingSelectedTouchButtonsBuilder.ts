@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -54,9 +54,9 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseTouchInput } from "./BaseTouchInput.js";
-import { BasicTouchButtonsBuilder } from "./BasicTouchButtonsBuilder.js";
-import { BuildingScrollTouchButtonsBuilder } from "./BuildingScrollTouchButtonsBuilder.js";
+        import { BaseTouchInput } from './BaseTouchInput.js';
+import { BasicTouchButtonsBuilder } from './BasicTouchButtonsBuilder.js';
+import { BuildingScrollTouchButtonsBuilder } from './BuildingScrollTouchButtonsBuilder.js';
 
 export class NoBuildingSelectedTouchButtonsBuilder extends BaseTouchInput {
         

@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AdvancedRTSGameLayer } from "../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js";
+import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 
     
-import { NullPathFindingLayer } from "../../../../../org/allbinary/game/layer/NullPathFindingLayer.js";
+import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
 
     
-import { NullRTSLayer } from "../../../../../org/allbinary/game/layer/NullRTSLayer.js";
+import { NullRTSLayer } from '../../../../../org/allbinary/game/layer/NullRTSLayer.js';
 
     
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
+import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 
     
-import { RTSLayerEvent } from "../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
+import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
 
     
-import { UnitLayer } from "../../../../../org/allbinary/game/layer/unit/UnitLayer.js";
+import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
 
     
-import { UnitWaypointBehavior } from "../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js";
+import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -75,7 +75,7 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PrimaryWaypointHelper } from "./PrimaryWaypointHelper.js";
+        import { PrimaryWaypointHelper } from './PrimaryWaypointHelper.js';
 
 export class AssignWaypointsUtil
             extends Object

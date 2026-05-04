@@ -1,6 +1,6 @@
-import ArkTsBuild from "@ohos.deviceInfo";
-import identifier from "@ohos.identifier.oaid";
-import { BusinessError } from "@ohos.base";
+import ArkTsBuild from '@ohos.deviceInfo';
+import identifier from '@ohos.identifier.oaid';
+import { BusinessError } from '@ohos.base';
 
 /*actual*/ export class Build
 {

@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { VirtualKeyboard } from "../../../../../org/allbinary/android/input/VirtualKeyboard.js";
+import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
 
     
-import { VirtualKeyboardEventListenerInterface } from "../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js";
+import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
 
     
-import { Activity } from "../../../../../android/app/Activity.js";
+import { Activity } from '../../../../../android/app/Activity.js';
 
     
 

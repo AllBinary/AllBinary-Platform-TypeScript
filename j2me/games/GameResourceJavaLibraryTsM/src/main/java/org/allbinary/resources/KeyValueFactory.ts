@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../java/util/Hashtable.js';
 
     
 

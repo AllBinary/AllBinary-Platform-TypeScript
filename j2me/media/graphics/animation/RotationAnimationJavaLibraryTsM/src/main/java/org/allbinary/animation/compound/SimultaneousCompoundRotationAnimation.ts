@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
+import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { RotationAnimation } from "../../../../org/allbinary/animation/RotationAnimation.js";
+import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
 
     
-import { Direction } from "../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../org/allbinary/direction/Direction.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { Angle } from "../../../../org/allbinary/math/Angle.js";
+import { Angle } from '../../../../org/allbinary/math/Angle.js';
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 

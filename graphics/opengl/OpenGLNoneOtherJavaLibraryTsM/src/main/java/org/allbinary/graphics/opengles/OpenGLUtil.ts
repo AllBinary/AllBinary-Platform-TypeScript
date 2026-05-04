@@ -4,13 +4,13 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Runnable } from "../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
 

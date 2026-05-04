@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -46,7 +46,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TouchButtonInput } from "./TouchButtonInput.js";
+        import { TouchButtonInput } from './TouchButtonInput.js';
 
 export class CurrentlyPressedTouchButtonSingleton
             extends Object

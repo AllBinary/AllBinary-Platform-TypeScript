@@ -18,79 +18,79 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../../../java/util/Hashtable.js';
 
     
-import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { Direction } from "../../../../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionFactory } from "../../../../../../../../org/allbinary/direction/DirectionFactory.js";
+import { DirectionFactory } from '../../../../../../../../org/allbinary/direction/DirectionFactory.js';
 
     
-import { BasicGroupFactory } from "../../../../../../../../org/allbinary/game/identification/BasicGroupFactory.js";
+import { BasicGroupFactory } from '../../../../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
 
     
-import { Group } from "../../../../../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { LayerCoveringCellPositionsUtil } from "../../../../../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js";
+import { LayerCoveringCellPositionsUtil } from '../../../../../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js';
 
     
-import { GPoint } from "../../../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { AllBinaryLayer } from "../../../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { BasicGeographicMapCellPositionFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js";
+import { BasicGeographicMapCellPositionFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellType } from "../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
-import { GeographicMapDirectionUtil } from "../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js";
+import { GeographicMapDirectionUtil } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
 
     
-import { SimpleGeographicMapCellPositionFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js";
+import { SimpleGeographicMapCellPositionFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
 
     
-import { DropCellPositionGeneratorInterface } from "../../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionGeneratorInterface.js";
+import { DropCellPositionGeneratorInterface } from '../../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionGeneratorInterface.js';
 
     
-import { DropCellPositionHistory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js";
+import { DropCellPositionHistory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 
     
-import { BaseRaceTrackGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js";
+import { BaseRaceTrackGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
 
     
-import { RaceTrackGeographicMapCellType } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js";
+import { RaceTrackGeographicMapCellType } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
 
     
-import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellTypeFactory.js";
+import { RaceTrackGeographicMapCellTypeFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellTypeFactory.js';
 
     
 
@@ -111,8 +111,8 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../../../../o
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackDropCellPositionGenerator } from "./RaceTrackDropCellPositionGenerator.js";
-import { RaceTrackAdjacentDropLayerFactory } from "./RaceTrackAdjacentDropLayerFactory.js";
+        import { RaceTrackDropCellPositionGenerator } from './RaceTrackDropCellPositionGenerator.js';
+import { RaceTrackAdjacentDropLayerFactory } from './RaceTrackAdjacentDropLayerFactory.js';
 
 export class RaceTrackAdjacentDropCellPositionGenerator extends RaceTrackDropCellPositionGenerator {
         

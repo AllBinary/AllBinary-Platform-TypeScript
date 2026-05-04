@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -48,9 +48,9 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PlayerGameInputCompositeInterface } from "./PlayerGameInputCompositeInterface.js";
-import { NoPlayerGameInput } from "./NoPlayerGameInput.js";
-import { PlayerGameInput } from "./PlayerGameInput.js";
+        import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
+import { NoPlayerGameInput } from './NoPlayerGameInput.js';
+import { PlayerGameInput } from './PlayerGameInput.js';
 
 export class NullPlayerGameInputComposite
             extends Object

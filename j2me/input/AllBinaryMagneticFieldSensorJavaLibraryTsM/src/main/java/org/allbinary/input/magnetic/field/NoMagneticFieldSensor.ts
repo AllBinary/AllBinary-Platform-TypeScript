@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AllBinarySensorListener } from "../../../../../org/allbinary/input/AllBinarySensorListener.js";
+import { AllBinarySensorListener } from '../../../../../org/allbinary/input/AllBinarySensorListener.js';
 
     
-import { Orientation } from "../../../../../org/allbinary/logic/math/Orientation.js";
+import { Orientation } from '../../../../../org/allbinary/logic/math/Orientation.js';
 
     
 
@@ -48,7 +48,7 @@ import { Orientation } from "../../../../../org/allbinary/logic/math/Orientation
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryMagneticFieldSensor } from "./AllBinaryMagneticFieldSensor.js";
+        import { AllBinaryMagneticFieldSensor } from './AllBinaryMagneticFieldSensor.js';
 
 export class NoMagneticFieldSensor extends AllBinaryMagneticFieldSensor implements AllBinarySensorListener {
         

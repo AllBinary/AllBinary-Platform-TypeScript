@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js";
+import { PrimitiveLongSingleton } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
 
     
-import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js";
+import { PrimitiveLongUtil } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
 
     
-import { GameTickTimeDelayHelper } from "../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js";
+import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
 

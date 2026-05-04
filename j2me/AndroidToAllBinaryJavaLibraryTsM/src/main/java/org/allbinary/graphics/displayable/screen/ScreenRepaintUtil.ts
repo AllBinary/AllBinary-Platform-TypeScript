@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Displayable } from "../../../../../javax/microedition/lcdui/Displayable.js";
+import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
 
     
 

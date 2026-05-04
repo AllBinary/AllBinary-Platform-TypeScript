@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Font } from "../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 

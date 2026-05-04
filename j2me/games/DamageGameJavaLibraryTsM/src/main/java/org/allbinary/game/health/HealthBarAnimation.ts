@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { BasicHudFactory } from "../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js";
+import { BasicHudFactory } from '../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 

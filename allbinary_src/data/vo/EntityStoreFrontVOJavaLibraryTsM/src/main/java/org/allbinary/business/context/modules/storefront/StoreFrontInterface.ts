@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { ContextConfigurationInterface } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
+import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
 
     
-import { TableMappingInterface } from "../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
+import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { RotationAnimation } from "../../../../org/allbinary/animation/RotationAnimation.js";
+import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
 
     
-import { Group } from "../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../org/allbinary/game/identification/Group.js';
 
     
-import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.js";
+import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
 
     
-import { GeographicMapCellHistory } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js";
+import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 
     
-import { GeographicMapCellPositionTracking } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js";
+import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -65,8 +65,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VehicleLayerInterface } from "./VehicleLayerInterface.js";
-import { VehicleProperties } from "./VehicleProperties.js";
+        import { VehicleLayerInterface } from './VehicleLayerInterface.js';
+import { VehicleProperties } from './VehicleProperties.js';
 
 export class NullVehicleLayer
             extends Object

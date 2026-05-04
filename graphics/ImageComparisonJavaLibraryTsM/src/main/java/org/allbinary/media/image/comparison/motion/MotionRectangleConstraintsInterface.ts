@@ -18,18 +18,18 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 
     
 
@@ -50,8 +50,8 @@ import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Dimension } from "./Dimension.js";
-import { Rectangle } from "./Rectangle.js";
+        import { Dimension } from './Dimension.js';
+import { Rectangle } from './Rectangle.js';
 
 export interface MotionRectangleConstraintsInterface {
         

@@ -18,76 +18,76 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 
     
-import { GameCommandsFactory } from "../../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { InputFeatureFactory } from "../../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js";
+import { InputFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
 
     
-import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { GameKeyEventFactory } from "../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js";
+import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 
     
-import { SWTUtil } from "../../../../../org/allbinary/game/layer/SWTUtil.js";
+import { SWTUtil } from '../../../../../org/allbinary/game/layer/SWTUtil.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { MyCanvas } from "../../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { CommandCurrentSelectionForm } from "../../../../../org/allbinary/graphics/form/CommandCurrentSelectionForm.js";
+import { CommandCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/CommandCurrentSelectionForm.js';
 
     
-import { ScrollSelectionForm } from "../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js";
+import { ScrollSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { OpenGLFeatureFactory } from "../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 
     
-import { MotionGestureInput } from "../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
+import { MotionGestureInput } from '../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
-import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
+import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { PrimaryPlayerQueueFactory } from "../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js";
+import { PrimaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
 
     
-import { SelectSound } from "../../../../../org/allbinary/media/audio/SelectSound.js";
+import { SelectSound } from '../../../../../org/allbinary/media/audio/SelectSound.js';
 
     
-import { PrimaryThreadPool } from "../../../../../org/allbinary/thread/PrimaryThreadPool.js";
+import { PrimaryThreadPool } from '../../../../../org/allbinary/thread/PrimaryThreadPool.js';
 
     
-import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -108,8 +108,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
-import { CommandRunnable } from "./CommandRunnable.js";
+        import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
+import { CommandRunnable } from './CommandRunnable.js';
 
 export class CommandFormInputProcessor extends BasicMenuInputProcessor {
         

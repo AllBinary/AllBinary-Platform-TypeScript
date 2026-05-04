@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { ProceduralAnimationInterfaceFactoryInterface } from "../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js";
+import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 
     
-import { BaseImageAnimationFactory } from "../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js";
+import { BaseImageAnimationFactory } from '../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
 
     
-import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js";
+import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
 
@@ -69,8 +69,8 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinarySpriteRotationAnimation } from "./AllBinarySpriteRotationAnimation.js";
-import { AllBinaryAdjustedSpriteRotationAnimation } from "./AllBinaryAdjustedSpriteRotationAnimation.js";
+        import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
+import { AllBinaryAdjustedSpriteRotationAnimation } from './AllBinaryAdjustedSpriteRotationAnimation.js';
 
 export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationFactory implements ProceduralAnimationInterfaceFactoryInterface {
         

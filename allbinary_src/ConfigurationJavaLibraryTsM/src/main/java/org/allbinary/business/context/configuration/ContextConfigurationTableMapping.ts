@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/TableMappingInterface.js";
+import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 
     
 
@@ -51,8 +51,8 @@ import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
-import { ContextConfigurationData } from "./ContextConfigurationData.js";
+        import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
+import { ContextConfigurationData } from './ContextConfigurationData.js';
 
 export class ContextConfigurationTableMapping
             extends Object

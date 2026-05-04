@@ -18,114 +18,114 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { DefaultMutableTreeNode } from "../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
+import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 
     
-import { MutableTreeNode } from "../../../../../../javax/swing/tree/MutableTreeNode.js";
+import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
 
     
-import { VectorExplosionGenerator } from "../../../../../../org/allbinary/animation/VectorExplosionGenerator.js";
+import { VectorExplosionGenerator } from '../../../../../../org/allbinary/animation/VectorExplosionGenerator.js';
 
     
-import { VectorMirrorGenerator } from "../../../../../../org/allbinary/animation/VectorMirrorGenerator.js";
+import { VectorMirrorGenerator } from '../../../../../../org/allbinary/animation/VectorMirrorGenerator.js';
 
     
-import { VectorCenterGenerator } from "../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js";
+import { VectorCenterGenerator } from '../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js';
 
     
-import { GameInputStrings } from "../../../../../../org/allbinary/game/input/GameInputStrings.js";
+import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
 
     
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { GraphicsException } from "../../../../../../org/allbinary/graphics/j2me/GraphicsException.js";
+import { GraphicsException } from '../../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
 
     
-import { StatusFactory } from "../../../../../../org/allbinary/graphics/j2me/StatusFactory.js";
+import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
 
     
-import { WorkAreaJTreeJPanel } from "../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJTreeJPanel.js";
+import { WorkAreaJTreeJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJTreeJPanel.js';
 
     
-import { GraphicItemFactory } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemFactory.js";
+import { GraphicItemFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemFactory.js';
 
     
-import { GraphicItemInterface } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js";
+import { GraphicItemInterface } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
 
     
-import { LinesGraphicItem } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js";
+import { LinesGraphicItem } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
 
     
-import { MouseStrings } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/MouseStrings.js";
+import { MouseStrings } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/MouseStrings.js';
 
     
-import { Points } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js";
+import { Points } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js';
 
     
-import { ToolFactory } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/ToolFactory.js";
+import { ToolFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/ToolFactory.js';
 
     
-import { MyGraphicItemEvent } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js";
+import { MyGraphicItemEvent } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
 
     
-import { MyGraphicItemEventListener } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventListener.js";
+import { MyGraphicItemEventListener } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventListener.js';
 
     
-import { MyGraphicItemEventService } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js";
+import { MyGraphicItemEventService } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
 
     
-import { RandomRotationFactory } from "../../../../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js";
+import { RandomRotationFactory } from '../../../../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
 
     
-import { LOGGING } from "../../../../../../org/allbinary/log/LOGGING.js";
+import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
 
     
-import { GuiLog } from "../../../../../../org/allbinary/logic/communication/log/GuiLog.js";
+import { GuiLog } from '../../../../../../org/allbinary/logic/communication/log/GuiLog.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { PositionStrings } from "../../../../../../org/allbinary/math/PositionStrings.js";
+import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -146,20 +146,20 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { MouseListener } from "./MouseListener.js";
-import { MouseMotionListener } from "./MouseMotionListener.js";
-import { KeyListener } from "./KeyListener.js";
-import { IntegerDimension } from "./IntegerDimension.js";
-import { CanvasTreeLabel } from "./CanvasTreeLabel.js";
-import { Color } from "./Color.js";
-import { Grid } from "./Grid.js";
-import { Dimension } from "./Dimension.js";
-import { CanvasDom } from "./CanvasDom.js";
-import { GridLayout } from "./GridLayout.js";
-import { Graphics } from "./Graphics.js";
-import { MouseEvent } from "./MouseEvent.js";
-import { KeyEvent } from "./KeyEvent.js";
+        import { JPanel } from './JPanel.js';
+import { MouseListener } from './MouseListener.js';
+import { MouseMotionListener } from './MouseMotionListener.js';
+import { KeyListener } from './KeyListener.js';
+import { IntegerDimension } from './IntegerDimension.js';
+import { CanvasTreeLabel } from './CanvasTreeLabel.js';
+import { Color } from './Color.js';
+import { Grid } from './Grid.js';
+import { Dimension } from './Dimension.js';
+import { CanvasDom } from './CanvasDom.js';
+import { GridLayout } from './GridLayout.js';
+import { Graphics } from './Graphics.js';
+import { MouseEvent } from './MouseEvent.js';
+import { KeyEvent } from './KeyEvent.js';
 
 export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.MouseListener, java.awt.event.MouseMotionListener, java.awt.event.KeyListener, MyGraphicItemEventListener {
         

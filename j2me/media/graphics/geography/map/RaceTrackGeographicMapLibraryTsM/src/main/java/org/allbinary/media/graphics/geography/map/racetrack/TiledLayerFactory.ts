@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { TiledLayer } from "../../../../../../../javax/microedition/lcdui/game/TiledLayer.js";
+import { TiledLayer } from '../../../../../../../javax/microedition/lcdui/game/TiledLayer.js';
 
     
 
@@ -43,7 +43,7 @@ import { TiledLayer } from "../../../../../../../javax/microedition/lcdui/game/T
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackData } from "./RaceTrackData.js";
+        import { RaceTrackData } from './RaceTrackData.js';
 
 export class TiledLayerFactory
             extends Object

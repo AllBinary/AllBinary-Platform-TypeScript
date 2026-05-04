@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -51,7 +51,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 
 export class StartIntermissionProcessor extends Processor {
         

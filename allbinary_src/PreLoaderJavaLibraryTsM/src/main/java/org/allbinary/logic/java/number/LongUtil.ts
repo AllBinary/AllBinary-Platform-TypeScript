@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonPhoneStrings } from "../../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
 
@@ -46,7 +46,7 @@ import { CommonPhoneStrings } from "../../../../../org/allbinary/string/CommonPh
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LongData } from "./LongData.js";
+        import { LongData } from './LongData.js';
 
 export class LongUtil
             extends Object

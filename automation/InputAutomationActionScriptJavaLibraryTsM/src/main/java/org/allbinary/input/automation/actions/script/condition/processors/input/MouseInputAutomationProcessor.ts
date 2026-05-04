@@ -18,24 +18,24 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../../../../../java/lang/Thread.js';
         
-import { InputRobotInterface } from "../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
+import { InputRobotInterface } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonStrings } from "../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -56,7 +56,7 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
+        import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
 
 export class MouseInputAutomationProcessor
             extends Object

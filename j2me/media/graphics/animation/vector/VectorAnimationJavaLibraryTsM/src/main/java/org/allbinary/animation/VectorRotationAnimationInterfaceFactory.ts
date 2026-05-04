@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
 
     
-import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 
     
 
@@ -54,10 +54,10 @@ import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
-import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
-import { VectorRotationAnimation } from "./VectorRotationAnimation.js";
-import { Animation } from "./Animation.js";
+        import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
+import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
+import { VectorRotationAnimation } from './VectorRotationAnimation.js';
+import { Animation } from './Animation.js';
 
 export class VectorRotationAnimationInterfaceFactory
             extends Object

@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { WeblisketSession } from "../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { WeblisketSessionInterface } from "../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js";
+import { WeblisketSessionInterface } from '../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 

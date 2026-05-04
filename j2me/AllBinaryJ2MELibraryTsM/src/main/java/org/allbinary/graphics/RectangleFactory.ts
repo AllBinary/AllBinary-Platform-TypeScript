@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Rectangle } from "./Rectangle.js";
-import { PointFactory } from "./PointFactory.js";
+        import { Rectangle } from './Rectangle.js';
+import { PointFactory } from './PointFactory.js';
 
 export class RectangleFactory
             extends Object

@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -52,8 +52,8 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CurrentlyPressedTouchButtonSingleton } from "./CurrentlyPressedTouchButtonSingleton.js";
-import { TouchButtonInput } from "./TouchButtonInput.js";
+        import { CurrentlyPressedTouchButtonSingleton } from './CurrentlyPressedTouchButtonSingleton.js';
+import { TouchButtonInput } from './TouchButtonInput.js';
 
 export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedTouchButtonSingleton {
         

@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryOrientationSensor } from "../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js";
+import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js';
 
     
-import { Orientation } from "../../../../org/allbinary/logic/math/Orientation.js";
+import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
 
     
 

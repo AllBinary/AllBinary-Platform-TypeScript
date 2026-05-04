@@ -18,44 +18,44 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../java/lang/Throwable.js';
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-import { BufferedReader } from "../../../java/io/BufferedReader.js";
+import { BufferedReader } from '../../../java/io/BufferedReader.js';
 
     
-import { BufferedWriter } from "../../../java/io/BufferedWriter.js";
+import { BufferedWriter } from '../../../java/io/BufferedWriter.js';
 
     
-import { File } from "../../../java/io/File.js";
+import { File } from '../../../java/io/File.js';
 
     
-import { FileReader } from "../../../java/io/FileReader.js";
+import { FileReader } from '../../../java/io/FileReader.js';
 
     
-import { FileWriter } from "../../../java/io/FileWriter.js";
+import { FileWriter } from '../../../java/io/FileWriter.js';
 
     
-import { RandomAccessFile } from "../../../java/io/RandomAccessFile.js";
+import { RandomAccessFile } from '../../../java/io/RandomAccessFile.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { LogFormatUtil } from "../../../org/allbinary/logic/communication/log/LogFormatUtil.js";
+import { LogFormatUtil } from '../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
 

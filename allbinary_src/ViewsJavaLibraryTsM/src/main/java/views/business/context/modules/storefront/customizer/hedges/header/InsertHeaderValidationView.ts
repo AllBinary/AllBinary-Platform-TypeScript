@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { StoreFrontFactory } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { URLGLOBALS } from "../../../../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { MultipartRequestParams } from "../../../../../../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js";
+import { MultipartRequestParams } from '../../../../../../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ValidationComponentInterface } from "../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { StringMaker } from "../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { HeadingValidation } from "../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/hedges/heading/HeadingValidation.js";
+import { HeadingValidation } from '../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/hedges/heading/HeadingValidation.js';
 
     
-import { LogoData } from "../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/logo/LogoData.js";
+import { LogoData } from '../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/logo/LogoData.js';
 
     
-import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { CustomizerUtil } from "../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js";
+import { CustomizerUtil } from '../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
 
     
 
@@ -87,7 +87,7 @@ import { CustomizerUtil } from "../../../../../../../../views/business/context/m
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TopBarView } from "./TopBarView.js";
+        import { TopBarView } from './TopBarView.js';
 
 export class InsertHeaderValidationView extends TopBarView implements ValidationComponentInterface {
         

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-import { FileLog } from "../../../../../org/allbinary/log/FileLog.js";
+import { FileLog } from '../../../../../org/allbinary/log/FileLog.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -54,7 +54,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Log } from "./Log.js";
+        import { Log } from './Log.js';
 
 /*actual*/ export class LogUtil
             extends Object

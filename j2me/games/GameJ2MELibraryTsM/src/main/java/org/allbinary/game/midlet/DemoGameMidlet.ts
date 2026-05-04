@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { GameCanvasRunnableInterface } from "../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js";
+import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { ProgressCanvas } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
+import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 
     
-import { ProgressCanvasFactory } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { ClientInformationFactory } from "../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js";
+import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
 
     
-import { PrimaryThreadPool } from "../../../../org/allbinary/thread/PrimaryThreadPool.js";
+import { PrimaryThreadPool } from '../../../../org/allbinary/thread/PrimaryThreadPool.js';
 
     
 
@@ -66,9 +66,9 @@ import { PrimaryThreadPool } from "../../../../org/allbinary/thread/PrimaryThrea
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameMidlet } from "./GameMidlet.js";
-import { DemoRunnable } from "./DemoRunnable.js";
-import { CreateGameRunnable } from "./CreateGameRunnable.js";
+        import { GameMidlet } from './GameMidlet.js';
+import { DemoRunnable } from './DemoRunnable.js';
+import { CreateGameRunnable } from './CreateGameRunnable.js';
 
 export class DemoGameMidlet extends GameMidlet {
         

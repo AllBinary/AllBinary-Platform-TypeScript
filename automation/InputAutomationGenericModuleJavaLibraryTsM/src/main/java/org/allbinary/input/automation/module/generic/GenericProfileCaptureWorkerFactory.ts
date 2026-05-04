@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { GenericProfile } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js";
+import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 
     
-import { GenericProfileDataWorkerType } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js";
+import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
 
     
-import { SavedCaptureGenericProfileDataWorkerType } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js";
+import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
 
     
-import { CaptureWorkerInterface } from "../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js";
+import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
 
     
-import { ScreenCaptureImagesWorker } from "../../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js";
+import { ScreenCaptureImagesWorker } from '../../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
 
     
 
@@ -60,7 +60,7 @@ import { ScreenCaptureImagesWorker } from "../../../../../../org/allbinary/input
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SavedCaptureImagesWorker } from "./SavedCaptureImagesWorker.js";
+        import { SavedCaptureImagesWorker } from './SavedCaptureImagesWorker.js';
 
 export class GenericProfileCaptureWorkerFactory
             extends Object

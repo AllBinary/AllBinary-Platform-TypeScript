@@ -4,14 +4,14 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Displayable } from "../../../javax/microedition/lcdui/Displayable.js";
+import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
 
     
-import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
+import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 
     
 

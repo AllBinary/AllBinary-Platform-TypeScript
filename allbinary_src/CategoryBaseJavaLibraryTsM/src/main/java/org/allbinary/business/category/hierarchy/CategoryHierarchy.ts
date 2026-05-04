@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 
     
-import { CategoryInterface } from "../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -54,7 +54,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryHierarchyInterface } from "./CategoryHierarchyInterface.js";
+        import { CategoryHierarchyInterface } from './CategoryHierarchyInterface.js';
 
 export class CategoryHierarchy
             extends Object

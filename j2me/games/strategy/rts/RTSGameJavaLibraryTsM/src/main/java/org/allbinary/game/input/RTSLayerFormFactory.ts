@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { RTSLayer } from "../../../../org/allbinary/game/layer/RTSLayer.js";
+import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
 
     
-import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/ScrollSelectionForm.js";
+import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
 
@@ -48,7 +48,7 @@ import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/Scr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSLayerFormFactoryInterface } from "./RTSLayerFormFactoryInterface.js";
+        import { RTSLayerFormFactoryInterface } from './RTSLayerFormFactoryInterface.js';
 
 export class RTSLayerFormFactory
             extends Object

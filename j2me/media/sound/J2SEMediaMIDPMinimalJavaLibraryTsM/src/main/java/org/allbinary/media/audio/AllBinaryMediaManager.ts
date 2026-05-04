@@ -18,57 +18,57 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../java/lang/System.js";
+            import { System } from '../../../../java/lang/System.js';
         
-import { BufferedInputStream } from "../../../../java/io/BufferedInputStream.js";
+import { BufferedInputStream } from '../../../../java/io/BufferedInputStream.js';
 
     
-import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { InputStream } from "../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../java/io/InputStream.js';
 
     
-import { Manager } from "../../../../javax/microedition/media/Manager.js";
+import { Manager } from '../../../../javax/microedition/media/Manager.js';
 
     
-import { MediaException } from "../../../../javax/microedition/media/MediaException.js";
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from "../../../../javax/microedition/media/Player.js";
+import { Player } from '../../../../javax/microedition/media/Player.js';
 
     
-import { AudioContentTypeDataFactory } from "../../../../org/allbinary/audio/AudioContentTypeDataFactory.js";
+import { AudioContentTypeDataFactory } from '../../../../org/allbinary/audio/AudioContentTypeDataFactory.js';
 
     
-import { ResourceUtil } from "../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { GameFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js";
+import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 
     
-import { ProgressCanvasFactory } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -89,10 +89,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Sounds } from "./Sounds.js";
-import { SoundsFactoryInterface } from "./SoundsFactoryInterface.js";
-import { NoPlayer } from "./NoPlayer.js";
-import { PCClipWavPlayer } from "./PCClipWavPlayer.js";
+        import { Sounds } from './Sounds.js';
+import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
+import { NoPlayer } from './NoPlayer.js';
+import { PCClipWavPlayer } from './PCClipWavPlayer.js';
 
 export class AllBinaryMediaManager
             extends Object

@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../../../../java/lang/System.js";
+            import { System } from '../../../../../../../../java/lang/System.js';
         
-import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { CommonStrings } from "../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { RaceTrackGeographicMapInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapInterfaceFactoryInterface.js";
+import { RaceTrackGeographicMapInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapInterfaceFactoryInterface.js';
 
     
-import { RaceTrackRoadsGeographicMapCellHistoryFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackRoadsGeographicMapCellHistoryFactory.js";
+import { RaceTrackRoadsGeographicMapCellHistoryFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackRoadsGeographicMapCellHistoryFactory.js';
 
     
-import { RaceTracksPathPrinter } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTracksPathPrinter.js";
+import { RaceTracksPathPrinter } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTracksPathPrinter.js';
 
     
-import { PathFindingInfo } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js";
+import { PathFindingInfo } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
 
     
-import { PathGenerator } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathGenerator.js";
+import { PathGenerator } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathGenerator.js';
 
     
 

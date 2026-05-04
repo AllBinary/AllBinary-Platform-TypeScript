@@ -18,56 +18,56 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
-            import { Long } from "../../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../../java/lang/Long.js';
         
-import { KeyEvent } from "../../../../../../../../../java/awt/event/KeyEvent.js";
+import { KeyEvent } from '../../../../../../../../../java/awt/event/KeyEvent.js';
 
     
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../../java/util/Vector.js';
 
     
-import { DomNodeHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { KeySingletonFactory } from "../../../../../../../../../org/allbinary/input/KeySingletonFactory.js";
+import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
 
     
-import { KeyUtil } from "../../../../../../../../../org/allbinary/input/KeyUtil.js";
+import { KeyUtil } from '../../../../../../../../../org/allbinary/input/KeyUtil.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -88,11 +88,11 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
-import { KeyboardActionScriptInputInterface } from "./KeyboardActionScriptInputInterface.js";
-import { KeyboardActionScriptInputJPanel } from "./KeyboardActionScriptInputJPanel.js";
-import { KeyboardActionScriptInputData } from "./KeyboardActionScriptInputData.js";
-import { KeyboardInputAutomationProcessor } from "./KeyboardInputAutomationProcessor.js";
+        import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
+import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';
+import { KeyboardActionScriptInputJPanel } from './KeyboardActionScriptInputJPanel.js';
+import { KeyboardActionScriptInputData } from './KeyboardActionScriptInputData.js';
+import { KeyboardInputAutomationProcessor } from './KeyboardInputAutomationProcessor.js';
 
 export class KeyboardActionScriptInput extends BasicProfileActionScriptInput implements KeyboardActionScriptInputInterface {
         

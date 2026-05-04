@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { GameFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js";
+import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 
     
-import { OpenGLFeatureUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js";
+import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -52,9 +52,9 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollisionProcessor } from "./CollisionProcessor.js";
-import { Collision2DProcessor } from "./Collision2DProcessor.js";
-import { CollisionThreedProcessor } from "./CollisionThreedProcessor.js";
+        import { CollisionProcessor } from './CollisionProcessor.js';
+import { Collision2DProcessor } from './Collision2DProcessor.js';
+import { CollisionThreedProcessor } from './CollisionThreedProcessor.js';
 
 export class LayerCollisionUtil
             extends Object

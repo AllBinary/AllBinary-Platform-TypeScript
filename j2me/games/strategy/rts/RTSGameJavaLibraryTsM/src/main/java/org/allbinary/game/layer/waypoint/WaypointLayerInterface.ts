@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CaptionAnimationHelperBase } from "../../../../../org/allbinary/animation/caption/CaptionAnimationHelperBase.js";
+import { CaptionAnimationHelperBase } from '../../../../../org/allbinary/animation/caption/CaptionAnimationHelperBase.js';
 
     
-import { WaypointBehaviorBase } from "../../../../../org/allbinary/game/layer/WaypointBehaviorBase.js";
+import { WaypointBehaviorBase } from '../../../../../org/allbinary/game/layer/WaypointBehaviorBase.js';
 
     
-import { TrackingEvent } from "../../../../../org/allbinary/game/tracking/TrackingEvent.js";
+import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { GeographicMapCellHistory } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js";
+import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -63,9 +63,9 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WaypointLogHelper } from "./WaypointLogHelper.js";
-import { Waypoint2LogHelper } from "./Waypoint2LogHelper.js";
-import { WaypointRunnableLogHelper } from "./WaypointRunnableLogHelper.js";
+        import { WaypointLogHelper } from './WaypointLogHelper.js';
+import { Waypoint2LogHelper } from './Waypoint2LogHelper.js';
+import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
 
 export interface WaypointLayerInterface {
         

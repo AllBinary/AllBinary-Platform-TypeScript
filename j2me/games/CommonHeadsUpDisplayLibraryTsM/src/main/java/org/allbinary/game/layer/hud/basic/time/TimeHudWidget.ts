@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicHud } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js";
+import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
 
     
-import { BasicHudFactory } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js";
+import { BasicHudFactory } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 
     
-import { BasicColor } from "../../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js";
+import { PrimitiveLongSingleton } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
 
     
 
@@ -60,7 +60,7 @@ import { PrimitiveLongSingleton } from "../../../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Timer } from "./Timer.js";
+        import { Timer } from './Timer.js';
 
 export class TimeHudWidget extends BasicHud {
         

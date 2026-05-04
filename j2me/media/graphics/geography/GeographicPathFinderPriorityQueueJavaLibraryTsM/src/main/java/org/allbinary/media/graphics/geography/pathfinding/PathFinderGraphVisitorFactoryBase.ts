@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
 
@@ -45,7 +45,7 @@ import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PathFinderGraphVisitorBase } from "./PathFinderGraphVisitorBase.js";
+        import { PathFinderGraphVisitorBase } from './PathFinderGraphVisitorBase.js';
 
 export class PathFinderGraphVisitorFactoryBase
             extends Object

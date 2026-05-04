@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Features } from "../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { MainFeatureFactory } from "../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js";
+import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 
     
-import { CommandListener } from "../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
 
     
 
@@ -54,7 +54,7 @@ import { CommandListener } from "../../../javax/microedition/lcdui/CommandListen
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RunnableCanvas } from "./RunnableCanvas.js";
+        import { RunnableCanvas } from './RunnableCanvas.js';
 
 export class FullScreenUtil
             extends Object

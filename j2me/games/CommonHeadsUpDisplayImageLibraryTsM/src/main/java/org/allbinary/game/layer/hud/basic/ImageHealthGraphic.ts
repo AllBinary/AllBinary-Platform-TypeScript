@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { AnimationInterface } from "../../../../../../org/allbinary/animation/AnimationInterface.js";
+import { AnimationInterface } from '../../../../../../org/allbinary/animation/AnimationInterface.js';
 
     
-import { HealthInterface } from "../../../../../../org/allbinary/game/health/HealthInterface.js";
+import { HealthInterface } from '../../../../../../org/allbinary/game/health/HealthInterface.js';
 
     
-import { Anchor } from "../../../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { ImageCacheFactory } from "../../../../../../org/allbinary/image/ImageCacheFactory.js";
+import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
 
     
 
@@ -60,7 +60,7 @@ import { ImageCacheFactory } from "../../../../../../org/allbinary/image/ImageCa
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HealthGraphic } from "./HealthGraphic.js";
+        import { HealthGraphic } from './HealthGraphic.js';
 
 export class ImageHealthGraphic extends HealthGraphic {
         

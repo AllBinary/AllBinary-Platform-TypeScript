@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-import { Method } from "../../../../../java/lang/reflect/Method.js";
+import { Method } from '../../../../../java/lang/reflect/Method.js';
 
     
-import { Proxy } from "../../../../../java/lang/reflect/Proxy.js";
+import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
 
     
 
@@ -48,7 +48,7 @@ import { Proxy } from "../../../../../java/lang/reflect/Proxy.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InvocationHandler } from "./InvocationHandler.js";
+        import { InvocationHandler } from './InvocationHandler.js';
 
 export class InterfaceCastProxy
             extends Object

@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { InputStream } from "../../java/io/InputStream.js";
+import { InputStream } from '../../java/io/InputStream.js';
 
     
-import { URIResolver } from "../../javax/xml/transform/URIResolver.js";
+import { URIResolver } from '../../javax/xml/transform/URIResolver.js';
 
     
-import { BasicUriResolver } from "../../org/allbinary/data/tree/dom/BasicUriResolver.js";
+import { BasicUriResolver } from '../../org/allbinary/data/tree/dom/BasicUriResolver.js';
 
     
-import { StoreUriResolver } from "../../org/allbinary/data/tree/dom/StoreUriResolver.js";
+import { StoreUriResolver } from '../../org/allbinary/data/tree/dom/StoreUriResolver.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbeClientInformationInterface } from "../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
+import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 
     
-import { AbTransformer } from "../../org/allbinary/logic/visual/transform/AbTransformer.js";
+import { AbTransformer } from '../../org/allbinary/logic/visual/transform/AbTransformer.js';
 
     
-import { TransformInfoInterface } from "../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { CompoundContextTransformInfoObjectConfig } from "../../views/compound/objectConfig/CompoundContextTransformInfoObjectConfig.js";
+import { CompoundContextTransformInfoObjectConfig } from '../../views/compound/objectConfig/CompoundContextTransformInfoObjectConfig.js';
 
     
 

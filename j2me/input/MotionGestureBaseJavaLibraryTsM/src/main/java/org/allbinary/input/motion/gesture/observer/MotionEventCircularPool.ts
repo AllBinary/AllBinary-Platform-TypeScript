@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { InputFactory } from "../../../../../../org/allbinary/game/input/InputFactory.js";
+import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
 
     
-import { MotionGestureInput } from "../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
+import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
-import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js";
+import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
 
     
 
@@ -54,8 +54,8 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MotionEventFactory } from "./MotionEventFactory.js";
-import { MotionGestureEvent } from "./MotionGestureEvent.js";
+        import { MotionEventFactory } from './MotionEventFactory.js';
+import { MotionGestureEvent } from './MotionGestureEvent.js';
 
 export class MotionEventCircularPool
             extends Object

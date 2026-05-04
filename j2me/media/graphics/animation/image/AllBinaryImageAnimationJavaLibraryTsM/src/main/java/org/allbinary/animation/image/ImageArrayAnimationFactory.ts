@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 
     
 
@@ -60,8 +60,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
-import { AdjustedImageArrayAnimation } from "./AdjustedImageArrayAnimation.js";
+        import { ImageArrayAnimation } from './ImageArrayAnimation.js';
+import { AdjustedImageArrayAnimation } from './AdjustedImageArrayAnimation.js';
 
 export class ImageArrayAnimationFactory
             extends Object

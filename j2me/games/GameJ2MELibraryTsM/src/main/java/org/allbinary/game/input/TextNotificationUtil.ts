@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { GameNotificationEvent } from "../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
+import { GameNotificationEvent } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 
     
-import { GameNotificationEventHandler } from "../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js";
+import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { BooleanFactory } from "../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { ErrorSound } from "../../../../org/allbinary/media/audio/ErrorSound.js";
+import { ErrorSound } from '../../../../org/allbinary/media/audio/ErrorSound.js';
 
     
-import { PrimaryPlayerQueueFactory } from "../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js";
+import { PrimaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/PrimaryPlayerQueueFactory.js';
 
     
-import { SelectSound } from "../../../../org/allbinary/media/audio/SelectSound.js";
+import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
 
     
 

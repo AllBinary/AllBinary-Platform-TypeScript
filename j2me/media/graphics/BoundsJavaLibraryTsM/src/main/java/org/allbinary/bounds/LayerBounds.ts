@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { BoundsChangeEvent } from "../../../org/allbinary/bounds/event/BoundsChangeEvent.js";
+import { BoundsChangeEvent } from '../../../org/allbinary/bounds/event/BoundsChangeEvent.js';
 
     
-import { BoundsChangeEventListener } from "../../../org/allbinary/bounds/event/BoundsChangeEventListener.js";
+import { BoundsChangeEventListener } from '../../../org/allbinary/bounds/event/BoundsChangeEventListener.js';
 
     
-import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
 
@@ -61,7 +61,7 @@ import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BoundsVisitorInterface } from "./BoundsVisitorInterface.js";
+        import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
 
 export class LayerBounds
             extends Object

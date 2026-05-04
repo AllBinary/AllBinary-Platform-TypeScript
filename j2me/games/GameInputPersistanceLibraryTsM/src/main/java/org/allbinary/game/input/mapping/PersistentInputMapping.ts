@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Enumeration } from "../../../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../../../java/util/Enumeration.js';
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { GamePersistanceStrings } from "../../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
+import { GamePersistanceStrings } from '../../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
 
     
-import { Input } from "../../../../../org/allbinary/game/input/Input.js";
+import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 
     
-import { InputPersistance } from "../../../../../org/allbinary/game/input/InputPersistance.js";
+import { InputPersistance } from '../../../../../org/allbinary/game/input/InputPersistance.js';
 
     
-import { InputMappingEvent } from "../../../../../org/allbinary/game/input/mapping/event/InputMappingEvent.js";
+import { InputMappingEvent } from '../../../../../org/allbinary/game/input/mapping/event/InputMappingEvent.js';
 
     
-import { InputMappingEventListenerInterface } from "../../../../../org/allbinary/game/input/mapping/event/InputMappingEventListenerInterface.js";
+import { InputMappingEventListenerInterface } from '../../../../../org/allbinary/game/input/mapping/event/InputMappingEventListenerInterface.js';
 
     
-import { NullInputMappingEventListener } from "../../../../../org/allbinary/game/input/mapping/event/NullInputMappingEventListener.js";
+import { NullInputMappingEventListener } from '../../../../../org/allbinary/game/input/mapping/event/NullInputMappingEventListener.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUtil.js";
+import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
 
     
 
@@ -87,7 +87,7 @@ import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputToGameKeyMapping } from "./InputToGameKeyMapping.js";
+        import { InputToGameKeyMapping } from './InputToGameKeyMapping.js';
 
 export class PersistentInputMapping
             extends Object

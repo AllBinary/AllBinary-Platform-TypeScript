@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { SpecialAnimationInterface } from "../../../../org/allbinary/animation/special/SpecialAnimationInterface.js";
+import { SpecialAnimationInterface } from '../../../../org/allbinary/animation/special/SpecialAnimationInterface.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
-import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -63,7 +63,7 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageArrayAnimation } from "./ImageArrayAnimation.js";
+        import { ImageArrayAnimation } from './ImageArrayAnimation.js';
 
 export class ImageArraySpecialAnimation extends ImageArrayAnimation implements SpecialAnimationInterface {
         

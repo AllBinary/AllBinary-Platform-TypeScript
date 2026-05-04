@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { CategoryInterface } from "../../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { TableMappingInterface } from "../../../../../../org/allbinary/data/tables/TableMappingInterface.js";
+import { TableMappingInterface } from '../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 
     
-import { ValidationInterface } from "../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
+import { ValidationInterface } from '../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 
     
-import { ThemeValidation } from "../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js";
+import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
 
     
-import { CompositeTransformInfoInterface } from "../../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js";
+import { CompositeTransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
 
     
 

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { OrderHistory } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js";
+import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
 
     
-import { PaymentType } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js";
+import { PaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js';
 
     
-import { PaymentTypeUtil } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js";
+import { PaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,8 +57,8 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentTransactionInterfaceFactoryInterface } from "./PaymentTransactionInterfaceFactoryInterface.js";
-import { PaymentTransactionInterface } from "./PaymentTransactionInterface.js";
+        import { PaymentTransactionInterfaceFactoryInterface } from './PaymentTransactionInterfaceFactoryInterface.js';
+import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
 
 export class PaymentTransactionInterfaceFactory
             extends Object

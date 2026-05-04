@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
 
     
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
+import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 
     
-import { WeaponProperties } from "../../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
+import { WeaponProperties } from '../../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 
     
-import { CountedPickedUpLayerInterfaceFactory } from "../../../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js";
+import { CountedPickedUpLayerInterfaceFactory } from '../../../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js';
 
     
-import { IconLayerFactory } from "../../../../../../org/allbinary/game/layer/pickup/IconLayerFactory.js";
+import { IconLayerFactory } from '../../../../../../org/allbinary/game/layer/pickup/IconLayerFactory.js';
 
     
-import { PickedUpLayerInterfaceFactoryInterface } from "../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js";
+import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
 
     
-import { PickedUpLayerTypeFactory } from "../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerTypeFactory.js";
+import { PickedUpLayerTypeFactory } from '../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerTypeFactory.js';
 
     
-import { WeaponLayerCircularPool } from "../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js";
+import { WeaponLayerCircularPool } from '../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
 
     
-import { ScoreableInterface } from "../../../../../../org/allbinary/game/score/ScoreableInterface.js";
+import { ScoreableInterface } from '../../../../../../org/allbinary/game/score/ScoreableInterface.js';
 
     
-import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
 
@@ -77,8 +77,8 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MineLayerCircularStaticPool } from "./MineLayerCircularStaticPool.js";
-import { MineWeaponResources } from "./MineWeaponResources.js";
+        import { MineLayerCircularStaticPool } from './MineLayerCircularStaticPool.js';
+import { MineWeaponResources } from './MineWeaponResources.js';
 
 export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLayerInterfaceFactory {
         

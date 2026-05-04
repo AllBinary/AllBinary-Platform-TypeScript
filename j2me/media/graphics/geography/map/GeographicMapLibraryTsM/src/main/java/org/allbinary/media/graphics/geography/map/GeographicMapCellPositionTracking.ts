@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AllBinaryGameCanvasInterface } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvasInterface.js";
+import { AllBinaryGameCanvasInterface } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvasInterface.js';
 
     
-import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -48,11 +48,11 @@ import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SimpleGeographicMapCellPositionFactory } from "./SimpleGeographicMapCellPositionFactory.js";
-import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
-import { GeographicMapCellType } from "./GeographicMapCellType.js";
-import { BasicGeographicMap } from "./BasicGeographicMap.js";
-import { GeographicMapCompositeInterface } from "./GeographicMapCompositeInterface.js";
+        import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
+import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+import { GeographicMapCellType } from './GeographicMapCellType.js';
+import { BasicGeographicMap } from './BasicGeographicMap.js';
+import { GeographicMapCompositeInterface } from './GeographicMapCompositeInterface.js';
 
 export class GeographicMapCellPositionTracking
             extends Object

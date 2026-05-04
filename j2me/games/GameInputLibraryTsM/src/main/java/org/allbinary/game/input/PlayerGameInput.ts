@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { GameKeyEvent } from "../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { GameKeyEventListenerInterface } from "../../../../org/allbinary/game/input/event/GameKeyEventListenerInterface.js";
+import { GameKeyEventListenerInterface } from '../../../../org/allbinary/game/input/event/GameKeyEventListenerInterface.js';
 
     
-import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventStrings } from "../../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -69,8 +69,8 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameInput } from "./GameInput.js";
-import { GameInputStrings } from "./GameInputStrings.js";
+        import { GameInput } from './GameInput.js';
+import { GameInputStrings } from './GameInputStrings.js';
 
 export class PlayerGameInput extends GameInput implements GameKeyEventListenerInterface {
         

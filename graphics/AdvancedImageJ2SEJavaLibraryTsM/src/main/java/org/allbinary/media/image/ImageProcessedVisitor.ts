@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
 
@@ -46,7 +46,7 @@ import { IOException } from "../../../../java/io/IOException.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageProcessorInputCompositeInterface } from "./ImageProcessorInputCompositeInterface.js";
+        import { ImageProcessorInputCompositeInterface } from './ImageProcessorInputCompositeInterface.js';
 
 export interface ImageProcessedVisitor extends ImageProcessorInputCompositeInterface {
         

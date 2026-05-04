@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Control } from "../../../../javax/microedition/media/Control.js";
+import { Control } from '../../../../javax/microedition/media/Control.js';
 
     
-import { Controllable } from "../../../../javax/microedition/media/Controllable.js";
+import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
 
     
-import { MediaException } from "../../../../javax/microedition/media/MediaException.js";
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from "../../../../javax/microedition/media/Player.js";
+import { Player } from '../../../../javax/microedition/media/Player.js';
 
     
-import { PlayerListener } from "../../../../javax/microedition/media/PlayerListener.js";
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 
     
-import { TimeBase } from "../../../../javax/microedition/media/TimeBase.js";
+import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { GameTickTimeDelayHelper } from "../../../../org/allbinary/time/GameTickTimeDelayHelper.js";
+import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
-import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -75,8 +75,8 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TimeBaseInterface } from "./TimeBaseInterface.js";
-import { Controllable2 } from "./Controllable2.js";
+        import { TimeBaseInterface } from './TimeBaseInterface.js';
+import { Controllable2 } from './Controllable2.js';
 
 export class PlayerComposite
             extends Object

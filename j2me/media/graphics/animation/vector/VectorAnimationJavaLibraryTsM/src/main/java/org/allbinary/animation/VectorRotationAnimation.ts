@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Direction } from "../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../org/allbinary/direction/Direction.js';
 
     
-import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { Angle } from "../../../org/allbinary/math/Angle.js";
+import { Angle } from '../../../org/allbinary/math/Angle.js';
 
     
-import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
 
     
-import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 
     
 
@@ -57,8 +57,8 @@ import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VectorBaseRotationAnimation } from "./VectorBaseRotationAnimation.js";
-import { AnimationBehavior } from "./AnimationBehavior.js";
+        import { VectorBaseRotationAnimation } from './VectorBaseRotationAnimation.js';
+import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         

@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { GL } from "../../../javax/microedition/khronos/opengles/GL.js";
+import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 
     
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
 

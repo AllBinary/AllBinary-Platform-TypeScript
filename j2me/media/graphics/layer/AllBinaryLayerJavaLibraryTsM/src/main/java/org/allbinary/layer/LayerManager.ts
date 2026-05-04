@@ -4,30 +4,30 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { SynchObject } from "../../../org/allbinary/thread/SynchObject.js";
+import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
 
     
-import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -48,9 +48,9 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LayerManagerLoggingBase } from "./LayerManagerLoggingBase.js";
-import { AllBinaryLayer } from "./AllBinaryLayer.js";
-import { Layer } from "./Layer.js";
+        import { LayerManagerLoggingBase } from './LayerManagerLoggingBase.js';
+import { AllBinaryLayer } from './AllBinaryLayer.js';
+import { Layer } from './Layer.js';
 
 export class LayerManager
             extends Object

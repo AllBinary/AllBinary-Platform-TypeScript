@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 
 
@@ -44,8 +44,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ArtificialIntelligenceFactoryInterface } from "./ArtificialIntelligenceFactoryInterface.js";
-import { ArtificialIntelligence } from "./ArtificialIntelligence.js";
+        import { ArtificialIntelligenceFactoryInterface } from './ArtificialIntelligenceFactoryInterface.js';
+import { ArtificialIntelligence } from './ArtificialIntelligence.js';
 
 export class ArtificialIntelligenceFactory
             extends Object

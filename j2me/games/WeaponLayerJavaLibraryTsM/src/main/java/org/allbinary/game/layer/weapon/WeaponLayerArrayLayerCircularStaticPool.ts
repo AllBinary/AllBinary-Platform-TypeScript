@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -45,7 +45,7 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WeaponLayer } from "./WeaponLayer.js";
+        import { WeaponLayer } from './WeaponLayer.js';
 
 export class WeaponLayerArrayLayerCircularStaticPool
             extends Object

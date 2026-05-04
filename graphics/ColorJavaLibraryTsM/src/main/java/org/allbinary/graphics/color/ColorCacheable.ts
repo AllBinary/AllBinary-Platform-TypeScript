@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
-import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/CacheableInterface.js";
+import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 
     
 
@@ -48,7 +48,7 @@ import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Color } from "./Color.js";
+        import { Color } from './Color.js';
 
 export class ColorCacheable
             extends Object

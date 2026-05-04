@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { StoreFrontFactory } from "../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { RealTimeStoreFrontStatistics } from "../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatistics.js";
+import { RealTimeStoreFrontStatistics } from '../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatistics.js';
 
     
-import { RealTimeStoreFrontStatisticsView } from "../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatisticsView.js";
+import { RealTimeStoreFrontStatisticsView } from '../../../../org/allbinary/business/context/modules/storefront/statistics/RealTimeStoreFrontStatisticsView.js';
 
     
-import { DomNodeInterface } from "../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { HttpStoreComponentView } from "../../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 

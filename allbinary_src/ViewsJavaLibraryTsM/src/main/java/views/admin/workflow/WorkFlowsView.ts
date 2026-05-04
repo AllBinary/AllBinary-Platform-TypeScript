@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from '../../../java/util/Vector.js';
 
     
-import { WorkFlowEntityFactory } from "../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js";
+import { WorkFlowEntityFactory } from '../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
 
     
-import { DomNodeInterface } from "../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { WorkFlowData } from "../../../org/allbinary/logic/control/workflow/WorkFlowData.js";
+import { WorkFlowData } from '../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
 
     
-import { WorkFlowInterface } from "../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js";
+import { WorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 
     
-import { LicensingException } from "../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../org/w3c/dom/Document.js";
+import { Document } from '../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../org/w3c/dom/Node.js";
+import { Node } from '../../../org/w3c/dom/Node.js';
 
     
-import { HttpStoreComponentView } from "../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 

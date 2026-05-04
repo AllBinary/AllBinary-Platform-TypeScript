@@ -4,40 +4,40 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { J2MEUtil } from "../../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/item/CustomItemInterface.js";
+import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -58,10 +58,10 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
-import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-import { FormType } from "./FormType.js";
-import { FormTypeFactory } from "./FormTypeFactory.js";
+        import { ScrollSelectionForm } from './ScrollSelectionForm.js';
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+import { FormType } from './FormType.js';
+import { FormTypeFactory } from './FormTypeFactory.js';
 
 export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
         

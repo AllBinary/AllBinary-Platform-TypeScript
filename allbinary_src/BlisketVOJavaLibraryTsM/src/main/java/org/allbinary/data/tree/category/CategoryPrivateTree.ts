@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CategoryComponent } from "../../../../../org/allbinary/business/category/CategoryComponent.js";
+import { CategoryComponent } from '../../../../../org/allbinary/business/category/CategoryComponent.js';
 
     
-import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 
     
-import { CategoryFactoryInterface } from "../../../../../org/allbinary/business/category/CategoryFactoryInterface.js";
+import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
 
     
-import { CategoryInterface } from "../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CryptFileWriter } from "../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js";
+import { CryptFileWriter } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
 

@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { EmailServerConfigurationData } from "../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationData.js";
+import { EmailServerConfigurationData } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationData.js';
 
     
-import { EmailServerConfigurationInterface } from "../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js";
+import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
 
     
-import { EmailServerConfigurationView } from "../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationView.js";
+import { EmailServerConfigurationView } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationView.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -66,9 +66,9 @@ import { NodeList } from "../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
-import { ContextConfiguration } from "./ContextConfiguration.js";
-import { ContextConfigurationData } from "./ContextConfigurationData.js";
+        import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
+import { ContextConfiguration } from './ContextConfiguration.js';
+import { ContextConfigurationData } from './ContextConfigurationData.js';
 
 export class ContextConfigurationView
             extends Object

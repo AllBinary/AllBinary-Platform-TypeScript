@@ -18,142 +18,142 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { RTSFormInput } from "../../../../org/allbinary/game/input/form/RTSFormInput.js";
+import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
 
     
-import { MultiSelectPaintable } from "../../../../org/allbinary/game/layer/MultiSelectPaintable.js";
+import { MultiSelectPaintable } from '../../../../org/allbinary/game/layer/MultiSelectPaintable.js';
 
     
-import { RTSGameStrings } from "../../../../org/allbinary/game/layer/RTSGameStrings.js";
+import { RTSGameStrings } from '../../../../org/allbinary/game/layer/RTSGameStrings.js';
 
     
-import { RTSLayer } from "../../../../org/allbinary/game/layer/RTSLayer.js";
+import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
 
     
-import { RTSLayerInfoPaintable } from "../../../../org/allbinary/game/layer/RTSLayerInfoPaintable.js";
+import { RTSLayerInfoPaintable } from '../../../../org/allbinary/game/layer/RTSLayerInfoPaintable.js';
 
     
-import { RTSPlayerLayerInterface } from "../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js";
+import { RTSPlayerLayerInterface } from '../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 
     
-import { EndLevelNoBuildingSelectedTouchButtonsBuilder } from "../../../../org/allbinary/input/motion/button/EndLevelNoBuildingSelectedTouchButtonsBuilder.js";
+import { EndLevelNoBuildingSelectedTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/EndLevelNoBuildingSelectedTouchButtonsBuilder.js';
 
     
-import { EndLevelTouchButtonsBuilder } from "../../../../org/allbinary/input/motion/button/EndLevelTouchButtonsBuilder.js";
+import { EndLevelTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/EndLevelTouchButtonsBuilder.js';
 
     
-import { NoBuildingSelectedTouchButtonsBuilder } from "../../../../org/allbinary/input/motion/button/NoBuildingSelectedTouchButtonsBuilder.js";
+import { NoBuildingSelectedTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/NoBuildingSelectedTouchButtonsBuilder.js';
 
     
-import { RTSTouchButtonsBuilder } from "../../../../org/allbinary/input/motion/button/RTSTouchButtonsBuilder.js";
+import { RTSTouchButtonsBuilder } from '../../../../org/allbinary/input/motion/button/RTSTouchButtonsBuilder.js';
 
     
-import { SelectBuildingSound } from "../../../../org/allbinary/media/audio/SelectBuildingSound.js";
+import { SelectBuildingSound } from '../../../../org/allbinary/media/audio/SelectBuildingSound.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BooleanFactory } from "../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { AllBinaryGameCanvas } from "../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { GameNotificationEvent } from "../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
+import { GameNotificationEvent } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 
     
-import { GameNotificationEventHandler } from "../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js";
+import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { GameState } from "../../../../org/allbinary/game/state/GameState.js";
+import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
 
     
-import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/ScrollSelectionForm.js";
+import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { NullInitUpdatePaintable } from "../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js";
+import { NullInitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js';
 
     
-import { TouchButtonsBuilderFactory } from "../../../../org/allbinary/input/motion/button/TouchButtonsBuilderFactory.js";
+import { TouchButtonsBuilderFactory } from '../../../../org/allbinary/input/motion/button/TouchButtonsBuilderFactory.js';
 
     
-import { MotionGestureInput } from "../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
+import { MotionGestureInput } from '../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
-import { BaseMotionGestureEventListener } from "../../../../org/allbinary/input/motion/gesture/observer/BaseMotionGestureEventListener.js";
+import { BaseMotionGestureEventListener } from '../../../../org/allbinary/input/motion/gesture/observer/BaseMotionGestureEventListener.js';
 
     
-import { BasicMotionGesturesHandler } from "../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js";
+import { BasicMotionGesturesHandler } from '../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
 
     
-import { MotionGestureEvent } from "../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
+import { MotionGestureEvent } from '../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { RectangleCollisionUtil } from "../../../../org/allbinary/math/RectangleCollisionUtil.js";
+import { RectangleCollisionUtil } from '../../../../org/allbinary/math/RectangleCollisionUtil.js';
 
     
-import { ErrorSound } from "../../../../org/allbinary/media/audio/ErrorSound.js";
+import { ErrorSound } from '../../../../org/allbinary/media/audio/ErrorSound.js';
 
     
-import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js";
+import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 
     
 
@@ -174,9 +174,9 @@ import { GeographicMapCompositeInterface } from "../../../../org/allbinary/media
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSPlayerGameInput } from "./RTSPlayerGameInput.js";
-import { LayerPositionFinderInterface } from "./LayerPositionFinderInterface.js";
-import { SelectRTSLayerVisitorFactoryInterface } from "./SelectRTSLayerVisitorFactoryInterface.js";
+        import { RTSPlayerGameInput } from './RTSPlayerGameInput.js';
+import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
+import { SelectRTSLayerVisitorFactoryInterface } from './SelectRTSLayerVisitorFactoryInterface.js';
 
 export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseMotionGestureEventListener {
         

@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { GameFeatureEvent } from "../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js";
+import { GameFeatureEvent } from '../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
 
     
-import { GameFeatureEventHandler } from "../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js";
+import { GameFeatureEventHandler } from '../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
 
     
-import { BooleanFactory } from "../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -62,7 +62,7 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameConfigurationSingleton } from "./GameConfigurationSingleton.js";
+        import { GameConfigurationSingleton } from './GameConfigurationSingleton.js';
 
 export class GameConfiguration
             extends Object

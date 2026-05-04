@@ -4,26 +4,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { KeyEvent } from "../../../../android/view/KeyEvent.js";
+import { KeyEvent } from '../../../../android/view/KeyEvent.js';
 
     
-import { ActivityFractureUtil } from "../../../../org/allbinary/android/ActivityFractureUtil.js";
+import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
 
     
-import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { AbPathData } from "../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -44,8 +44,8 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AndroidGameKey } from "./AndroidGameKey.js";
-import { Input } from "./Input.js";
+        import { AndroidGameKey } from './AndroidGameKey.js';
+import { Input } from './Input.js';
 
 export class AndroidKeyFactory extends ActivityFractureUtil {
         

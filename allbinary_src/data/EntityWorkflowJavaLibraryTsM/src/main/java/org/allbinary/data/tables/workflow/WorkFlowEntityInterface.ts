@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { BasicDataTableInterface } from "../../../../../org/allbinary/data/tables/BasicDataTableInterface.js";
+import { BasicDataTableInterface } from '../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
 
     
-import { WorkFlowInterface } from "../../../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js";
+import { WorkFlowInterface } from '../../../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 
     
-import { LicensingException } from "../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 

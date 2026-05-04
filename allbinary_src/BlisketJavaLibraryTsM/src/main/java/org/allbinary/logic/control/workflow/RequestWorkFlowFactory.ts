@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { ServletConfig } from "../../../../../javax/servlet/ServletConfig.js";
+import { ServletConfig } from '../../../../../javax/servlet/ServletConfig.js';
 
     
-import { ServletContext } from "../../../../../javax/servlet/ServletContext.js";
+import { ServletContext } from '../../../../../javax/servlet/ServletContext.js';
 
     
-import { ServletRequest } from "../../../../../javax/servlet/ServletRequest.js";
+import { ServletRequest } from '../../../../../javax/servlet/ServletRequest.js';
 
     
-import { ServletResponse } from "../../../../../javax/servlet/ServletResponse.js";
+import { ServletResponse } from '../../../../../javax/servlet/ServletResponse.js';
 
     
-import { HttpServletRequest } from "../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { WorkFlowEntityFactory } from "../../../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js";
+import { WorkFlowEntityFactory } from '../../../../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
 
     
-import { WeblisketSession } from "../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { LicensingException } from "../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 
@@ -75,8 +75,8 @@ import { LicensingException } from "../../../../../org/allbinary/logic/system/se
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WorkFlowInterface } from "./WorkFlowInterface.js";
-import { WorkFlowData } from "./WorkFlowData.js";
+        import { WorkFlowInterface } from './WorkFlowInterface.js';
+import { WorkFlowData } from './WorkFlowData.js';
 
 export class RequestWorkFlowFactory
             extends Object

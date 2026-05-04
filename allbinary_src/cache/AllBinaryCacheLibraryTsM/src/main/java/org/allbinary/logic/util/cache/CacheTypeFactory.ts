@@ -4,11 +4,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -29,7 +29,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CacheType } from "./CacheType.js";
+        import { CacheType } from './CacheType.js';
 
 export class CacheTypeFactory
             extends Object

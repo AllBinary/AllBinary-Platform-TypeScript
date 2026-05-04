@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Command } from "../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
     
-import { Notification } from "../../../android/app/Notification.js";
+import { Notification } from '../../../android/app/Notification.js';
 
     
-import { Builder } from "../../../android/app/Notification/Builder.js";
+import { Builder } from '../../../android/app/Notification/Builder.js';
 
     
-import { PendingIntent } from "../../../android/app/PendingIntent.js";
+import { PendingIntent } from '../../../android/app/PendingIntent.js';
 
     
-import { Context } from "../../../android/content/Context.js";
+import { Context } from '../../../android/content/Context.js';
 
     
-import { Parcelable } from "../../../android/os/Parcelable.js";
+import { Parcelable } from '../../../android/os/Parcelable.js';
 
     
 
@@ -62,7 +62,7 @@ import { Parcelable } from "../../../android/os/Parcelable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NotificationBuilder } from "./NotificationBuilder.js";
+        import { NotificationBuilder } from './NotificationBuilder.js';
 
 export class NotificationBuilderAPI23 extends NotificationBuilder {
         

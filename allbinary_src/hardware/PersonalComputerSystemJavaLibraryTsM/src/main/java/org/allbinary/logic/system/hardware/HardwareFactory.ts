@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GenericOperatingSystem } from "../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
+import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 
     
-import { OperatingSystems } from "../../../../../org/allbinary/logic/system/os/OperatingSystems.js";
+import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
 
     
-import { LinuxHardware } from "../../../../../org/allbinary/logic/system/hardware/linux/LinuxHardware.js";
+import { LinuxHardware } from '../../../../../org/allbinary/logic/system/hardware/linux/LinuxHardware.js';
 
     
-import { WindowsHardware } from "../../../../../org/allbinary/logic/system/hardware/windows/WindowsHardware.js";
+import { WindowsHardware } from '../../../../../org/allbinary/logic/system/hardware/windows/WindowsHardware.js';
 
     
 
@@ -54,7 +54,7 @@ import { WindowsHardware } from "../../../../../org/allbinary/logic/system/hardw
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HardwareInterface } from "./HardwareInterface.js";
+        import { HardwareInterface } from './HardwareInterface.js';
 
 export class HardwareFactory
             extends Object

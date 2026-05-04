@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-import { InputImageType } from "../../../../../../../../org/allbinary/input/media/image/InputImageType.js";
+import { InputImageType } from '../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
 
     
 
@@ -43,7 +43,7 @@ import { InputImageType } from "../../../../../../../../org/allbinary/input/medi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GenericProfileDataWorkerType } from "./GenericProfileDataWorkerType.js";
+        import { GenericProfileDataWorkerType } from './GenericProfileDataWorkerType.js';
 
 export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileDataWorkerType {
         

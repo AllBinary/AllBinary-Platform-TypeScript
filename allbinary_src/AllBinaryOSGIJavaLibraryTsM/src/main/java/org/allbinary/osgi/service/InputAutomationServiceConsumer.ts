@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from '../../../../java/util/Vector.js';
 
     
-import { BundleContext } from "../../../../org/osgi/framework/BundleContext.js";
+import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
 
     
-import { ServiceReference } from "../../../../org/osgi/framework/ServiceReference.js";
+import { ServiceReference } from '../../../../org/osgi/framework/ServiceReference.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { OSGIServiceInterface } from "../../../../org/allbinary/osgi/OSGIServiceInterface.js";
+import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 
     
-import { OSGIServiceVisitorInterface } from "../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js";
+import { OSGIServiceVisitorInterface } from '../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -63,7 +63,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OSGIServiceUtil } from "./OSGIServiceUtil.js";
+        import { OSGIServiceUtil } from './OSGIServiceUtil.js';
 
 export class InputAutomationServiceConsumer
             extends Object

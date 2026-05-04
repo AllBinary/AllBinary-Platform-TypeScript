@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Health } from "../../../../org/allbinary/game/health/Health.js";
+import { Health } from '../../../../org/allbinary/game/health/Health.js';
 
     
-import { HealthBarAnimation } from "../../../../org/allbinary/game/health/HealthBarAnimation.js";
+import { HealthBarAnimation } from '../../../../org/allbinary/game/health/HealthBarAnimation.js';
 
     
-import { HealthBarTwodAnimation } from "../../../../org/allbinary/game/health/HealthBarTwodAnimation.js";
+import { HealthBarTwodAnimation } from '../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
 
     
-import { HealthInterface } from "../../../../org/allbinary/game/health/HealthInterface.js";
+import { HealthInterface } from '../../../../org/allbinary/game/health/HealthInterface.js';
 
     
-import { HealthListenerInterface } from "../../../../org/allbinary/game/health/HealthListenerInterface.js";
+import { HealthListenerInterface } from '../../../../org/allbinary/game/health/HealthListenerInterface.js';
 
     
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -66,7 +66,7 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Life } from "./Life.js";
+        import { Life } from './Life.js';
 
 export class HealthIncludingLifeBar extends Paintable implements HealthListenerInterface {
         

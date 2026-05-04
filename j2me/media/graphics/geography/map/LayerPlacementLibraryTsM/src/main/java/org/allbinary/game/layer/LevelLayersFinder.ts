@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Enumeration } from "../../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../../java/util/Enumeration.js';
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { Layer } from "../../../../org/allbinary/layer/Layer.js";
+import { Layer } from '../../../../org/allbinary/layer/Layer.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.js";
+import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
 
     
 

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { MimeMessage } from "../../../../../javax/mail/internet/MimeMessage.js";
+import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -54,8 +54,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { EmailInterface } from "./EmailInterface.js";
-import { Email } from "./Email.js";
+        import { EmailInterface } from './EmailInterface.js';
+import { Email } from './Email.js';
 
 export class AbEmail
             extends Object

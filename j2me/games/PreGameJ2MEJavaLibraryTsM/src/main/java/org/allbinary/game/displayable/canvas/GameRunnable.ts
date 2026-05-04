@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../java/lang/Thread.js';
         
-            import { Runnable } from "../../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../../java/lang/Runnable.js';
         
-import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
 

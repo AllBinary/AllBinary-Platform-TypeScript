@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Choice } from "../../../../javax/microedition/lcdui/ChoiceI.js";
+import { Choice } from '../../../../javax/microedition/lcdui/ChoiceI.js';
 
     
-import { ChoiceGroup } from "../../../../javax/microedition/lcdui/ChoiceGroup.js";
+import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
 
     
-import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { StringItem } from "../../../../javax/microedition/lcdui/StringItem.js";
+import { StringItem } from '../../../../javax/microedition/lcdui/StringItem.js';
 
     
-import { GameCommandsFactory } from "../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { GamePersistanceSingleton } from "../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js";
+import { GamePersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CommandForm } from "../../../../org/allbinary/graphics/displayable/screen/CommandForm.js";
+import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js";
+import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
 
     
-import { CellPosition } from "../../../../../org/allbinary/graphics/CellPosition.js";
+import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 
     
 
@@ -60,9 +60,9 @@ import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TouchButton } from "./TouchButton.js";
-import { TouchButtonInput } from "./TouchButtonInput.js";
-import { TouchButtonResource } from "./TouchButtonResource.js";
+        import { TouchButton } from './TouchButton.js';
+import { TouchButtonInput } from './TouchButtonInput.js';
+import { TouchButtonResource } from './TouchButtonResource.js';
 
 export class FullTouchButton extends TouchButton {
         

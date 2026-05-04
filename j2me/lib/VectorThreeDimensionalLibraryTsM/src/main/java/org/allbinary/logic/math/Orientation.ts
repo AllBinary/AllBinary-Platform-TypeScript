@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -43,7 +43,7 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicDecimal } from "./BasicDecimal.js";
+        import { BasicDecimal } from './BasicDecimal.js';
 
 export class Orientation
             extends Object

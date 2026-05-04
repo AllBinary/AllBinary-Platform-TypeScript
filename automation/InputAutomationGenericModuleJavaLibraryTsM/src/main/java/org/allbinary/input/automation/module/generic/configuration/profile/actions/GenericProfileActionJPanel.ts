@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-import { JTreeInterfaceFactory } from "../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js";
+import { JTreeInterfaceFactory } from '../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
 
     
-import { AlwaysActionScriptCondition } from "../../../../../../../../../org/allbinary/input/automation/actions/script/condition/AlwaysActionScriptCondition.js";
+import { AlwaysActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/AlwaysActionScriptCondition.js';
 
     
-import { ColorAtActionScriptCondition } from "../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ColorAtActionScriptCondition.js";
+import { ColorAtActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ColorAtActionScriptCondition.js';
 
     
-import { ProfileActionScriptConditionInterface } from "../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js";
+import { ProfileActionScriptConditionInterface } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
 
     
-import { TimeIntervalActionScriptCondition } from "../../../../../../../../../org/allbinary/input/automation/actions/script/condition/TimeIntervalActionScriptCondition.js";
+import { TimeIntervalActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/TimeIntervalActionScriptCondition.js';
 
     
-import { GenericProfileActionScriptJPanel } from "../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScriptJPanel.js";
+import { GenericProfileActionScriptJPanel } from '../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScriptJPanel.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -61,16 +61,16 @@ import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { GenericProfileAction } from "./GenericProfileAction.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
-import { JScrollPane } from "./JScrollPane.js";
-import { JLabel } from "./JLabel.js";
-import { JButton } from "./JButton.js";
-import { Dimension } from "./Dimension.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
+        import { JPanel } from './JPanel.js';
+import { GenericProfileAction } from './GenericProfileAction.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
+import { JScrollPane } from './JScrollPane.js';
+import { JLabel } from './JLabel.js';
+import { JButton } from './JButton.js';
+import { Dimension } from './Dimension.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
 
 export class GenericProfileActionJPanel extends javax.swing.JPanel {
         

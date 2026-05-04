@@ -18,93 +18,93 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-            import { Integer } from "../../java/lang/Integer.js";
+            import { Integer } from '../../java/lang/Integer.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { Vector } from "../../java/util/Vector.js";
+import { Vector } from '../../java/util/Vector.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { StoreFront } from "../../org/allbinary/business/context/modules/storefront/StoreFront.js";
+import { StoreFront } from '../../org/allbinary/business/context/modules/storefront/StoreFront.js';
 
     
-import { StoreFrontData } from "../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { StoreFrontFactory } from "../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { Portion } from "../../org/allbinary/business/installer/Portion.js";
+import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 
     
-import { UserInterface } from "../../org/allbinary/business/user/UserInterface.js";
+import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
 
     
-import { QuoteRequest } from "../../org/allbinary/business/user/quoterequest/QuoteRequest.js";
+import { QuoteRequest } from '../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
 
     
-import { UserEntityFactory } from "../../org/allbinary/data/tables/user/UserEntityFactory.js";
+import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
 
     
-import { QuoteRequestEntity } from "../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntity.js";
+import { QuoteRequestEntity } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntity.js';
 
     
-import { QuoteRequestEntityFactory } from "../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js";
+import { QuoteRequestEntityFactory } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
 
     
-import { WeblisketSession } from "../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { UserEmailEventNameData } from "../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js";
+import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 
     
-import { UserEmailEventHandler } from "../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js";
+import { UserEmailEventHandler } from '../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
 
     
-import { AdminUserEmailEventHandlerSingletons } from "../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js";
+import { AdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
 
     
-import { StoreAdminUserEmailEventHandlerSingletons } from "../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js";
+import { StoreAdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js';
 
     
-import { UserEmailEventHandlerSingletons } from "../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js";
+import { UserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js';
 
     
-import { BasicEmailInfo } from "../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js";
+import { BasicEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
 
     
-import { EmailInfo } from "../../org/allbinary/logic/communication/smtp/info/EmailInfo.js";
+import { EmailInfo } from '../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
 
     
-import { StoreEmailInfo } from "../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js";
+import { StoreEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js';
 
     
-import { AbSqlTableUtil } from "../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js";
+import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 
     
-import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
+import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 
     
 
@@ -125,7 +125,7 @@ import { ServiceClientInformationInterfaceFactory } from "../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicTable } from "./BasicTable.js";
+        import { BasicTable } from './BasicTable.js';
 
 export class QuoteHelper extends BasicTable {
         

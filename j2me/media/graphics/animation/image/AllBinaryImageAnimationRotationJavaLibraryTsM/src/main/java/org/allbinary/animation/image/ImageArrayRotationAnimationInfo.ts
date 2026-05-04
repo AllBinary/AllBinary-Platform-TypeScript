@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
 

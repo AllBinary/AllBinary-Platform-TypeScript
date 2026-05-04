@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { RelativeRelationship } from "../../../../org/allbinary/graphics/RelativeRelationship.js";
+import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { RelativeLayerRelationship } from "../../../../org/allbinary/layer/relationship/RelativeLayerRelationship.js";
+import { RelativeLayerRelationship } from '../../../../org/allbinary/layer/relationship/RelativeLayerRelationship.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -66,8 +66,8 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { FeaturedResourceFactory } from "./FeaturedResourceFactory.js";
-import { ResourceRelativeRelationshipFactoryInterface } from "./ResourceRelativeRelationshipFactoryInterface.js";
+        import { FeaturedResourceFactory } from './FeaturedResourceFactory.js';
+import { ResourceRelativeRelationshipFactoryInterface } from './ResourceRelativeRelationshipFactoryInterface.js';
 
 export class FeaturedResourceRelativeRelationshipFactory extends FeaturedResourceFactory {
         

@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { DynamicObjectData } from "../../../../../org/allbinary/business/DynamicObjectData.js";
+import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
 
     
-import { StoreFrontData } from "../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserDbInitInfo } from "../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlBean } from "../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 
     
-import { DbWorkFlowFactory } from "../../../../../org/allbinary/logic/control/workflow/DbWorkFlowFactory.js";
+import { DbWorkFlowFactory } from '../../../../../org/allbinary/logic/control/workflow/DbWorkFlowFactory.js';
 
     
-import { WorkFlowData } from "../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js";
+import { WorkFlowData } from '../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
 
     
-import { WorkFlowInterface } from "../../../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js";
+import { WorkFlowInterface } from '../../../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { LicensingException } from "../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { ServiceClientInformationInterfaceFactory } from "../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
+import { ServiceClientInformationInterfaceFactory } from '../../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 
     
 
@@ -87,7 +87,7 @@ import { ServiceClientInformationInterfaceFactory } from "../../../../../org/all
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WorkFlowEntityInterface } from "./WorkFlowEntityInterface.js";
+        import { WorkFlowEntityInterface } from './WorkFlowEntityInterface.js';
 
 export class WorkFlowEntity extends AbSqlBean implements WorkFlowEntityInterface {
         

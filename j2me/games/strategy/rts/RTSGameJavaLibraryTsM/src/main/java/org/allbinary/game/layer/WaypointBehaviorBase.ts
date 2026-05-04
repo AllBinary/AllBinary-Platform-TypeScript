@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { WaypointBase } from "../../../../org/allbinary/game/layer/waypoint/WaypointBase.js";
+import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { TickableInterface } from "../../../../org/allbinary/game/tick/TickableInterface.js";
+import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { GeographicMapCellHistory } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js";
+import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 
     
-import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.js";
+import { BasicArrayListS } from '../../../../org/allbinary/util/BasicArrayListS.js';
 
     
 
@@ -71,7 +71,7 @@ import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+        import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 
 export class WaypointBehaviorBase
             extends Object

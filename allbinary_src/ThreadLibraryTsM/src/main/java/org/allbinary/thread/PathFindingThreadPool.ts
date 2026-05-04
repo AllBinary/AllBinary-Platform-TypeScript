@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Runnable } from "../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -45,8 +45,8 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ThreadPool } from "./ThreadPool.js";
-import { PriorityRunnable } from "./PriorityRunnable.js";
+        import { ThreadPool } from './ThreadPool.js';
+import { PriorityRunnable } from './PriorityRunnable.js';
 
 export class PathFindingThreadPool extends ThreadPool {
         

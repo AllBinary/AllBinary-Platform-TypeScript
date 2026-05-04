@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
+import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 
     
-import { TopULayerBounds } from "../../../../org/allbinary/bounds/TopULayerBounds.js";
+import { TopULayerBounds } from '../../../../org/allbinary/bounds/TopULayerBounds.js';
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { VelocityInterface } from "../../../../org/allbinary/game/physics/velocity/VelocityInterface.js";
+import { VelocityInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
 
     
-import { VelocityInterfaceCompositeInterface } from "../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js";
+import { VelocityInterfaceCompositeInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
 
     
-import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -75,9 +75,9 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
-import { BoundBounceAI } from "./BoundBounceAI.js";
-import { ReverseVelocityBoundsVisitor } from "./ReverseVelocityBoundsVisitor.js";
+        import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
+import { BoundBounceAI } from './BoundBounceAI.js';
+import { ReverseVelocityBoundsVisitor } from './ReverseVelocityBoundsVisitor.js';
 
 export class TopUBoundBounceAIFactory
             extends Object

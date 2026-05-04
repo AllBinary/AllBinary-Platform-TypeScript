@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { CanvasDrawLineString } from "../../../../../org/allbinary/graphics/draw/CanvasDrawLineString.js";
+import { CanvasDrawLineString } from '../../../../../org/allbinary/graphics/draw/CanvasDrawLineString.js';
 
     
-import { InitUpdatePaintable } from "../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js";
+import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
 
     
 
@@ -55,7 +55,7 @@ import { InitUpdatePaintable } from "../../../../../org/allbinary/graphics/paint
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PreGameScrollSelectionForm } from "./PreGameScrollSelectionForm.js";
+        import { PreGameScrollSelectionForm } from './PreGameScrollSelectionForm.js';
 
 export class PreGameSelectorPaintable extends InitUpdatePaintable {
         

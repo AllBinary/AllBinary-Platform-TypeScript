@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { ClientInformationFactory } from "../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js";
+import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
 
     
-import { LicenseServerInitFileUtil } from "../../../../org/allbinary/logic/system/security/licensing/LicenseServerInitFileUtil.js";
+import { LicenseServerInitFileUtil } from '../../../../org/allbinary/logic/system/security/licensing/LicenseServerInitFileUtil.js';
 
     
 
@@ -46,10 +46,10 @@ import { LicenseServerInitFileUtil } from "../../../../org/allbinary/logic/syste
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DemoGameMidlet } from "./DemoGameMidlet.js";
-import { LicenseLoadingType } from "./LicenseLoadingType.js";
-import { LicensedDemoSetupFactory } from "./LicensedDemoSetupFactory.js";
-import { LicenseCheckRunnableFactory } from "./LicenseCheckRunnableFactory.js";
+        import { DemoGameMidlet } from './DemoGameMidlet.js';
+import { LicenseLoadingType } from './LicenseLoadingType.js';
+import { LicensedDemoSetupFactory } from './LicensedDemoSetupFactory.js';
+import { LicenseCheckRunnableFactory } from './LicenseCheckRunnableFactory.js';
 
 export class SpecialDemoGameMidlet extends DemoGameMidlet {
         

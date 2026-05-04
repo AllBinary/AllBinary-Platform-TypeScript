@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { BundleContext } from "../../../../../../org/osgi/framework/BundleContext.js";
+import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
 
     
-import { InputAutomationModuleServiceInterface } from "../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js";
+import { InputAutomationModuleServiceInterface } from '../../../../../../bundle/input/automation/module/InputAutomationModuleServiceInterface.js';
 
     
-import { InputAutomationServiceConsumer } from "../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js";
+import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
 
     
 
@@ -49,7 +49,7 @@ import { InputAutomationServiceConsumer } from "../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputAutomationModuleOSGIServiceVisitor } from "./InputAutomationModuleOSGIServiceVisitor.js";
+        import { InputAutomationModuleOSGIServiceVisitor } from './InputAutomationModuleOSGIServiceVisitor.js';
 
 export class InputAutomationModuleServiceConsumer extends InputAutomationServiceConsumer {
         

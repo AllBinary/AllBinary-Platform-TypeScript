@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { OpenGLFeatureUtil } from "../../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js";
+import { OpenGLFeatureUtil } from '../../../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
 
     
-import { BasicHud } from "../../../../../../org/allbinary/game/graphics/hud/BasicHud.js";
+import { BasicHud } from '../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
 
     
-import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { MyFont } from "../../../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { MathUtil } from "../../../../../../org/allbinary/logic/math/MathUtil.js";
+import { MathUtil } from '../../../../../../org/allbinary/logic/math/MathUtil.js';
 
     
-import { PrimitiveLongSingleton } from "../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js";
+import { PrimitiveLongSingleton } from '../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
 
     
-import { PrimitiveLongUtil } from "../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js";
+import { PrimitiveLongUtil } from '../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
 
     
 

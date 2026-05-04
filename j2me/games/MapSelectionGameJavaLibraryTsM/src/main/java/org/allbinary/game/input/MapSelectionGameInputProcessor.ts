@@ -18,63 +18,63 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { LockedFeatureNotificationUtil } from "../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js";
+import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
 
     
-import { LockedUtil } from "../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js";
+import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
 
     
-import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
 
     
-import { AllBinaryGameCanvas } from "../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { PreGameSelectorPaintable } from "../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js";
+import { PreGameSelectorPaintable } from '../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js';
 
     
-import { GameKeyEventHandler } from "../../../../org/allbinary/game/input/event/GameKeyEventHandler.js";
+import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
 
     
-import { GameKeyEventUtil } from "../../../../org/allbinary/game/input/event/GameKeyEventUtil.js";
+import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { SecondaryPlayerQueueFactory } from "../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js";
+import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
 
     
-import { SelectSound } from "../../../../org/allbinary/media/audio/SelectSound.js";
+import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
 
     
-import { MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface.js";
+import { MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface.js';
 
     
-import { ABRunnable } from "../../../../org/allbinary/thread/ABRunnable.js";
+import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
 
     
-import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -95,10 +95,10 @@ import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameInputProcessorInterface } from "./GameInputProcessorInterface.js";
-import { PlayerGameInputCompositeInterface } from "./PlayerGameInputCompositeInterface.js";
-import { PlayerGameInput } from "./PlayerGameInput.js";
-import { GameInputProcessorComposite } from "./GameInputProcessorComposite.js";
+        import { GameInputProcessorInterface } from './GameInputProcessorInterface.js';
+import { PlayerGameInputCompositeInterface } from './PlayerGameInputCompositeInterface.js';
+import { PlayerGameInput } from './PlayerGameInput.js';
+import { GameInputProcessorComposite } from './GameInputProcessorComposite.js';
 
 export class MapSelectionGameInputProcessor extends Processor implements GameInputProcessorInterface, PlayerGameInputCompositeInterface {
         

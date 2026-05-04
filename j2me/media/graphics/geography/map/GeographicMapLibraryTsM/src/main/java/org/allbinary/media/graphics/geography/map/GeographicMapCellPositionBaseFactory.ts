@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
 
 
@@ -42,8 +42,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-import { BasicGeographicMap } from "./BasicGeographicMap.js";
+        import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
+import { BasicGeographicMap } from './BasicGeographicMap.js';
 
 export class GeographicMapCellPositionBaseFactory
             extends Object

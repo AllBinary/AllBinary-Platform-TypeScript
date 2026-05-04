@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { InputAutomationModuleService } from "../../../../../../bundle/input/automation/module/InputAutomationModuleService.js";
+import { InputAutomationModuleService } from '../../../../../../bundle/input/automation/module/InputAutomationModuleService.js';
 
     
-import { InputAutomationJFrame } from "../../../../../../org/allbinary/input/automation/InputAutomationJFrame.js";
+import { InputAutomationJFrame } from '../../../../../../org/allbinary/input/automation/InputAutomationJFrame.js';
 
     
-import { InputAutomationConfigurationUtil } from "../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationUtil.js";
+import { InputAutomationConfigurationUtil } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationUtil.js';
 
     
-import { InputAutomationModuleFactoryInterface } from "../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js";
+import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { OSGIServiceInterface } from "../../../../../../org/allbinary/osgi/OSGIServiceInterface.js";
+import { OSGIServiceInterface } from '../../../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 
     
-import { OSGIServiceVisitorInterface } from "../../../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js";
+import { OSGIServiceVisitorInterface } from '../../../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

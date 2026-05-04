@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { StoreFrontData } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserData } from "../../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { Tokenizer } from "../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js";
+import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -66,7 +66,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicStoreFrontInterface } from "./BasicStoreFrontInterface.js";
+        import { BasicStoreFrontInterface } from './BasicStoreFrontInterface.js';
 
 export class BasicStoreFront
             extends Object

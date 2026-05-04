@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
 
@@ -67,8 +67,8 @@ import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-import { RTSLayer } from "./RTSLayer.js";
+        import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+import { RTSLayer } from './RTSLayer.js';
 
 export class MultiSelectPaintable extends SelectionHudPaintable {
         

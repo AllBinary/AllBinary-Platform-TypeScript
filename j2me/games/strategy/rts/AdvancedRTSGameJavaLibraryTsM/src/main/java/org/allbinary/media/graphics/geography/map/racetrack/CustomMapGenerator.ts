@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { AdvancedRTSGameLayer } from "../../../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js";
+import { AdvancedRTSGameLayer } from '../../../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 
     
-import { WaypointLayer } from "../../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js";
+import { WaypointLayer } from '../../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
 
     
-import { CellPosition } from "../../../../../../../org/allbinary/graphics/CellPosition.js";
+import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
 
     
-import { AllBinaryLayer } from "../../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { BasicGeographicMapCellPositionFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js";
+import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 
     
-import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js";
+import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 
     
-import { DropCellPositionHistory } from "../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js";
+import { DropCellPositionHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 
     
 
@@ -63,8 +63,8 @@ import { DropCellPositionHistory } from "../../../../../../../org/allbinary/medi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
-import { RaceTrackGeographicMap } from "./RaceTrackGeographicMap.js";
+        import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
+import { RaceTrackGeographicMap } from './RaceTrackGeographicMap.js';
 
 export class CustomMapGenerator extends CustomMapGeneratorBase {
         

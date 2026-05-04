@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 
     
-import { DomNodeInterface } from "../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Element } from "../../../../../org/w3c/dom/Element.js";
+import { Element } from '../../../../../org/w3c/dom/Element.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -57,7 +57,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryPropertiesInterface } from "./CategoryPropertiesInterface.js";
+        import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
 
 export class CategoryPropertiesView
             extends Object

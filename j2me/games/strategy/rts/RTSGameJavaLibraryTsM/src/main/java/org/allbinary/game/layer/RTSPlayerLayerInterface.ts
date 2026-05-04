@@ -18,32 +18,32 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { BuildMenuCompositeInterface } from "../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js";
+import { BuildMenuCompositeInterface } from '../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js';
 
     
-import { RTSFormInput } from "../../../../org/allbinary/game/input/form/RTSFormInput.js";
+import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
 
     
-import { Capital } from "../../../../org/allbinary/game/layer/capital/Capital.js";
+import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
 
     
-import { DestroyedEventListenerInterface } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js";
+import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
 
     
-import { PlayerGameInputCompositeInterface } from "../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js";
+import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
 
     
-import { GameNotificationHudCompositeInterface } from "../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js";
+import { GameNotificationHudCompositeInterface } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js';
 
     
-import { TickableInterface } from "../../../../org/allbinary/game/tick/TickableInterface.js";
+import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
 
     
-import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
+import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
 
     
 
@@ -64,8 +64,8 @@ import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
-import { PlayerOwnedRTSLayers } from "./PlayerOwnedRTSLayers.js";
+        import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
+import { PlayerOwnedRTSLayers } from './PlayerOwnedRTSLayers.js';
 
 export interface RTSPlayerLayerInterface extends GameNotificationHudCompositeInterface, BuildMenuCompositeInterface, PlayerGameInputCompositeInterface, DestroyedEventListenerInterface, TickableInterface, PathFindingLayerInterface {
         

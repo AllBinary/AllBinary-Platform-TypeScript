@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackGeographicMapCellTypeFactory } from "./RaceTrackGeographicMapCellTypeFactory.js";
-import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from "./EmptyRaceRaceTrackGeographicMapCellTypeFactory.js";
+        import { RaceTrackGeographicMapCellTypeFactory } from './RaceTrackGeographicMapCellTypeFactory.js';
+import { EmptyRaceRaceTrackGeographicMapCellTypeFactory } from './EmptyRaceRaceTrackGeographicMapCellTypeFactory.js';
 
 export class CloseLoopRaceTrackGeographicMapCellTypeFactory extends RaceTrackGeographicMapCellTypeFactory {
         

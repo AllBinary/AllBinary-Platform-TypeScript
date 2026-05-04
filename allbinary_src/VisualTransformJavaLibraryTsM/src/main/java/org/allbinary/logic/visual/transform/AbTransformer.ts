@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InputStream } from "../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../java/io/InputStream.js';
 
     
-import { StringBufferInputStream } from "../../../../../java/io/StringBufferInputStream.js";
+import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
 
     
-import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 
     
-import { StreamSource } from "../../../../../javax/xml/transform/stream/StreamSource.js";
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 
     
-import { XslHelper } from "../../../../../org/allbinary/data/tree/dom/XslHelper.js";
+import { XslHelper } from '../../../../../org/allbinary/data/tree/dom/XslHelper.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TransformInfoObjectConfigGenerator } from "../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGenerator.js";
+import { TransformInfoObjectConfigGenerator } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGenerator.js';
 
     
-import { TransformInfoObjectConfigGeneratorFactory } from "../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js";
+import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -72,7 +72,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicTransformerInterface } from "./BasicTransformerInterface.js";
+        import { BasicTransformerInterface } from './BasicTransformerInterface.js';
 
 export class AbTransformer
             extends Object

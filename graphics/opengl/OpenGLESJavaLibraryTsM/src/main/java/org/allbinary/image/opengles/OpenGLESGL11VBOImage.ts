@@ -18,41 +18,41 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { ByteBuffer } from "../../../../java/nio/ByteBuffer.js";
+import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
 
     
-import { ByteOrder } from "../../../../java/nio/ByteOrder.js";
+import { ByteOrder } from '../../../../java/nio/ByteOrder.js';
 
     
-import { FloatBuffer } from "../../../../java/nio/FloatBuffer.js";
+import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
 
     
-import { GL } from "../../../../javax/microedition/khronos/opengles/GL.js";
+import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
 
     
-import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { OpenGLLogUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js";
+import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { GLUtil } from "../../../../org/allbinary/opengles/GLUtil.js";
+import { GLUtil } from '../../../../org/allbinary/opengles/GLUtil.js';
 
     
-import { PlatformBitmapBaseFactory } from "../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js";
+import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 
     
-import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js";
+import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
 
     
 
@@ -73,7 +73,7 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLESImage } from "./OpenGLESImage.js";
+        import { OpenGLESImage } from './OpenGLESImage.js';
 
 export class OpenGLESGL11VBOImage extends OpenGLESImage {
         

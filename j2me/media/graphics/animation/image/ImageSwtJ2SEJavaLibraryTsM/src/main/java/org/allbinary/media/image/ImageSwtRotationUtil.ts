@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { GameFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js";
+import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { SWT } from "../../../../org/eclipse/swt/SWT.js";
+import { SWT } from '../../../../org/eclipse/swt/SWT.js';
 
     
-import { GC } from "../../../../org/eclipse/swt/graphics/GC.js";
+import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
 
     
-import { ImageData } from "../../../../org/eclipse/swt/graphics/ImageData.js";
+import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
 
     
 
@@ -61,8 +61,8 @@ import { ImageData } from "../../../../org/eclipse/swt/graphics/ImageData.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageUtil } from "./ImageUtil.js";
-import { Image } from "./Image.js";
+        import { ImageUtil } from './ImageUtil.js';
+import { Image } from './Image.js';
 
 export class ImageSwtRotationUtil
             extends Object

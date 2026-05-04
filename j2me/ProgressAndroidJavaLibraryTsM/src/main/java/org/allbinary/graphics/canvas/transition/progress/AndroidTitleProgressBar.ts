@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Runnable } from "../../../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../../../java/lang/Runnable.js';
         
-import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { NullProgressActivity } from "../../../../../../org/allbinary/android/activity/NullProgressActivity.js";
+import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';
 
     
-import { ProgressActivityInterface } from "../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js";
+import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
 
     
-import { SimpleProgressActivityInterface } from "../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js";
+import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
 
     
-import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -62,11 +62,11 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProgressCanvas } from "./ProgressCanvas.js";
-//import { ShowTitleProgressBarRunnable } from "./ShowTitleProgressBarRunnable.js";
-//import { DismissTitleProgressBarRunnable } from "./DismissTitleProgressBarRunnable.js";
-//import { TitleProgressBarPortionSetProgressRunnable } from "./TitleProgressBarPortionSetProgressRunnable.js";
-//import { TitleProgressBarSetProgressRunnable } from "./TitleProgressBarSetProgressRunnable.js";
+        import { ProgressCanvas } from './ProgressCanvas.js';
+//import { ShowTitleProgressBarRunnable } from './ShowTitleProgressBarRunnable.js';
+//import { DismissTitleProgressBarRunnable } from './DismissTitleProgressBarRunnable.js';
+//import { TitleProgressBarPortionSetProgressRunnable } from './TitleProgressBarPortionSetProgressRunnable.js';
+//import { TitleProgressBarSetProgressRunnable } from './TitleProgressBarSetProgressRunnable.js';
 
 export class AndroidTitleProgressBar extends ProgressCanvas {
         

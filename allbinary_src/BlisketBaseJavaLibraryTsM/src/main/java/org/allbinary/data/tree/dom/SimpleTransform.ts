@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { StringBufferInputStream } from "../../../../../java/io/StringBufferInputStream.js";
+import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
 
     
-import { StreamSource } from "../../../../../javax/xml/transform/stream/StreamSource.js";
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 
     
-import { DomDocumentHelper } from "../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { AbFileLocalInputStream } from "../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js";
+import { AbFileLocalInputStream } from '../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
 
@@ -63,7 +63,7 @@ import { Document } from "../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { XslHelper } from "./XslHelper.js";
+        import { XslHelper } from './XslHelper.js';
 
 export class SimpleTransform
             extends Object

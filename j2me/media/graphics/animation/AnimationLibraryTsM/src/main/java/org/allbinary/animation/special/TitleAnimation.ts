@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../../java/lang/System.js";
+            import { System } from '../../../../java/lang/System.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { IndexedAnimation } from "../../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
 
     
-import { IndexedAnimationBehavior } from "../../../../org/allbinary/animation/IndexedAnimationBehavior.js";
+import { IndexedAnimationBehavior } from '../../../../org/allbinary/animation/IndexedAnimationBehavior.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
 
@@ -71,7 +71,7 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SpecialAnimation } from "./SpecialAnimation.js";
+        import { SpecialAnimation } from './SpecialAnimation.js';
 
 export class TitleAnimation extends SpecialAnimation {
         

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 
     
 
@@ -54,7 +54,7 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LineAnimation } from "./LineAnimation.js";
+        import { LineAnimation } from './LineAnimation.js';
 
 export class LineAnimationFactory
             extends Object

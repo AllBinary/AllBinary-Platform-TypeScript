@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { LayerManager } from "../../../../../org/allbinary/layer/LayerManager.js";
+import { LayerManager } from '../../../../../org/allbinary/layer/LayerManager.js';
 
     
-import { LayerManagerNoDebug } from "../../../../../org/allbinary/layer/LayerManagerNoDebug.js";
+import { LayerManagerNoDebug } from '../../../../../org/allbinary/layer/LayerManagerNoDebug.js';
 
     
 

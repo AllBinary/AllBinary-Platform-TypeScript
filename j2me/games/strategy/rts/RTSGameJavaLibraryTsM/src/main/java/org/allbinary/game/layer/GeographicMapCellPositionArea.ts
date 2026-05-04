@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
-import { LayerCoveringCellPositionsUtil } from "../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js";
+import { LayerCoveringCellPositionsUtil } from '../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { CellPositionsUtil } from "../../../../org/allbinary/media/graphics/geography/map/CellPositionsUtil.js";
+import { CellPositionsUtil } from '../../../../org/allbinary/media/graphics/geography/map/CellPositionsUtil.js';
 
     
-import { GeographicMapCellPosition } from "../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { BasicArrayListS } from "../../../../org/allbinary/util/BasicArrayListS.js";
+import { BasicArrayListS } from '../../../../org/allbinary/util/BasicArrayListS.js';
 
     
-import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -69,7 +69,7 @@ import { BasicArrayListUtil } from "../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
+        import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
 
 export class GeographicMapCellPositionArea extends GeographicMapCellPositionAreaBase {
         

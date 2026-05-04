@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { awt } from "../../../../../java/awt.js";
+import { awt } from '../../../../../java/awt.js';
 
     
-import { ActionEvent } from "../../../../../java/awt/event/ActionEvent.js";
+import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
 
     
-import { ActionListener } from "../../../../../java/awt/event/ActionListener.js";
+import { ActionListener } from '../../../../../java/awt/event/ActionListener.js';
 
     
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
-import { GraphicsException } from "../../../../../org/allbinary/graphics/j2me/GraphicsException.js";
+import { GraphicsException } from '../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
 
     
-import { MyFrame } from "../../../../../org/allbinary/graphics/j2me/MyFrame.js";
+import { MyFrame } from '../../../../../org/allbinary/graphics/j2me/MyFrame.js';
 
     
-import { WorkAreaJPanel } from "../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js";
+import { WorkAreaJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
 
     
-import { WorkAreaJPanelInterface } from "../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js";
+import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
 
     
 
@@ -68,15 +68,15 @@ import { WorkAreaJPanelInterface } from "../../../../../org/allbinary/graphics/j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JDialog } from "./JDialog.js";
-import { Dimension } from "./Dimension.js";
-import { JTextField } from "./JTextField.js";
-import { Frame } from "./Frame.js";
-import { JButton } from "./JButton.js";
-import { GridLayout } from "./GridLayout.js";
-import { JLabel } from "./JLabel.js";
-import { WindowAdapter } from "./WindowAdapter.js";
-import { WindowEvent } from "./WindowEvent.js";
+        import { JDialog } from './JDialog.js';
+import { Dimension } from './Dimension.js';
+import { JTextField } from './JTextField.js';
+import { Frame } from './Frame.js';
+import { JButton } from './JButton.js';
+import { GridLayout } from './GridLayout.js';
+import { JLabel } from './JLabel.js';
+import { WindowAdapter } from './WindowAdapter.js';
+import { WindowEvent } from './WindowEvent.js';
 
 export class NewWorkAreaJDialog extends javax.swing.JDialog {
         

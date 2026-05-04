@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { TrackingEventCircularStaticPool } from "../../../../../org/allbinary/game/tracking/TrackingEventCircularStaticPool.js";
+import { TrackingEventCircularStaticPool } from '../../../../../org/allbinary/game/tracking/TrackingEventCircularStaticPool.js';
 
     
-import { TrackingEventHandler } from "../../../../../org/allbinary/game/tracking/TrackingEventHandler.js";
+import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 
     
-import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { BasicGeographicMapUtil } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapUtil.js";
+import { BasicGeographicMapUtil } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapUtil.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
 
@@ -72,7 +72,7 @@ import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/gr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TopViewCharacterBehavior } from "./TopViewCharacterBehavior.js";
+        import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
 
 export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         

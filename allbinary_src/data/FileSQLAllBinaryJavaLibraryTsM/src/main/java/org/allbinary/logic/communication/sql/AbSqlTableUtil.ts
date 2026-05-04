@@ -18,69 +18,69 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../java/lang/Long.js';
         
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { ResultSet } from "../../../../../java/sql/ResultSet.js";
+import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 
     
-import { ResultSetMetaData } from "../../../../../java/sql/ResultSetMetaData.js";
+import { ResultSetMetaData } from '../../../../../java/sql/ResultSetMetaData.js';
 
     
-import { Calendar } from "../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../java/util/Calendar.js';
 
     
-import { Portion } from "../../../../../org/allbinary/business/installer/Portion.js";
+import { Portion } from '../../../../../org/allbinary/business/installer/Portion.js';
 
     
-import { AbFileOutputStream } from "../../../../../org/allbinary/logic/io/AbFileOutputStream.js";
+import { AbFileOutputStream } from '../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
 
     
-import { BufferedLineReader } from "../../../../../org/allbinary/logic/io/BufferedLineReader.js";
+import { BufferedLineReader } from '../../../../../org/allbinary/logic/io/BufferedLineReader.js';
 
     
-import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileUtil } from "../../../../../org/allbinary/logic/io/file/FileUtil.js";
+import { FileUtil } from '../../../../../org/allbinary/logic/io/file/FileUtil.js';
 
     
-import { Directory } from "../../../../../org/allbinary/logic/io/file/directory/Directory.js";
+import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
 
     
-import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PATH_GLOBALS } from "../../../../../org/allbinary/globals/PATH_GLOBALS.js";
+import { PATH_GLOBALS } from '../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 
     
-import { OutputStream } from "../../../../../java/io/OutputStream.js";
+import { OutputStream } from '../../../../../java/io/OutputStream.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -101,9 +101,9 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SqlStrings } from "./SqlStrings.js";
-import { StringBuilder } from "./StringBuilder.js";
-import { AbSqlTable } from "./AbSqlTable.js";
+        import { SqlStrings } from './SqlStrings.js';
+import { StringBuilder } from './StringBuilder.js';
+import { AbSqlTable } from './AbSqlTable.js';
 
 export class AbSqlTableUtil
             extends Object

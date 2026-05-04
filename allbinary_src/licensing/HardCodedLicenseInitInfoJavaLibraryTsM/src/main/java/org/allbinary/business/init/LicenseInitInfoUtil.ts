@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
 
 
@@ -42,7 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LicenseInitInfo } from "./LicenseInitInfo.js";
+        import { LicenseInitInfo } from './LicenseInitInfo.js';
 
 export class LicenseInitInfoUtil
             extends Object

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 
 
@@ -42,10 +42,10 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { EventListenerList } from "./EventListenerList.js";
-import { EventListener } from "./EventListener.js";
-import { MyCanvasEventListener } from "./MyCanvasEventListener.js";
-import { MyCanvasEvent } from "./MyCanvasEvent.js";
+        import { EventListenerList } from './EventListenerList.js';
+import { EventListener } from './EventListener.js';
+import { MyCanvasEventListener } from './MyCanvasEventListener.js';
+import { MyCanvasEvent } from './MyCanvasEvent.js';
 
 export class MyCanvasEventService
             extends Object

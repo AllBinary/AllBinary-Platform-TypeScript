@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { BaseCircularPool } from "../../../org/allbinary/logic/util/cache/BaseCircularPool.js";
+import { BaseCircularPool } from '../../../org/allbinary/logic/util/cache/BaseCircularPool.js';
 
     
-import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -46,7 +46,7 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomGPoint } from "./CustomGPoint.js";
+        import { CustomGPoint } from './CustomGPoint.js';
 
 export class GPointCircularPool extends BaseCircularPool {
         

@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../java/lang/Long.js';
         
-import { File } from "../../../../../java/io/File.js";
+import { File } from '../../../../../java/io/File.js';
 
     
-import { FileOutputStream } from "../../../../../java/io/FileOutputStream.js";
+import { FileOutputStream } from '../../../../../java/io/FileOutputStream.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { ImageOutputData } from "../../../../../org/allbinary/input/automation/ImageOutputData.js";
+import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
 
     
-import { LongUtil } from "../../../../../org/allbinary/logic/java/number/LongUtil.js";
+import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 

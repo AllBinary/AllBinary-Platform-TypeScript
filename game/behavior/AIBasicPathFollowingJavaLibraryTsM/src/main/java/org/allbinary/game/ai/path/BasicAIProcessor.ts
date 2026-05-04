@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionFactory } from "../../../../../org/allbinary/direction/DirectionFactory.js";
+import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { GeographicMapCellHistory } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js";
+import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapDirectionUtil } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js";
+import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
 
     
-import { GeographicMapCellPathHistoryInfo } from "../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js";
+import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js';
 
     
 
@@ -69,7 +69,7 @@ import { GeographicMapCellPathHistoryInfo } from "../../../../../org/allbinary/m
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicDirectionAIHelper } from "./BasicDirectionAIHelper.js";
+        import { BasicDirectionAIHelper } from './BasicDirectionAIHelper.js';
 
 export class BasicAIProcessor
             extends Object

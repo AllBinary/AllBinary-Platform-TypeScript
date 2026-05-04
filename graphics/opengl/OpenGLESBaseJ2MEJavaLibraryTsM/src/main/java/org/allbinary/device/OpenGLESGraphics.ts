@@ -4,30 +4,30 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { GL } from "../../../javax/microedition/khronos/opengles/GL.js";
+import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 
     
-import { GL10 } from "../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { Font } from "../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../javax/microedition/lcdui/Font.js';
 
     
-import { FontDebugBase } from "../../../org/allbinary/graphics/font/FontDebugBase.js";
+import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
 
     
-import { OpenGLSurfaceChangedInterface } from "../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js";
+import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -48,8 +48,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GraphicsInterface } from "./GraphicsInterface.js";
-import { NullGL10 } from "./NullGL10.js";
+        import { GraphicsInterface } from './GraphicsInterface.js';
+import { NullGL10 } from './NullGL10.js';
 
 export class OpenGLESGraphics
             extends Object

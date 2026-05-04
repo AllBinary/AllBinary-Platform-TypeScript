@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Activity } from "../../../../android/app/Activity.js";
+import { Activity } from '../../../../android/app/Activity.js';
 
     
-import { Window } from "../../../../android/view/Window.js";
+import { Window } from '../../../../android/view/Window.js';
 
     
-import { WindowCompat } from "../../../../androidx/core/view/WindowCompat.js";
+import { WindowCompat } from '../../../../androidx/core/view/WindowCompat.js';
 
     
-import { WindowInsetsCompat } from "../../../../androidx/core/view/WindowInsetsCompat.js";
+import { WindowInsetsCompat } from '../../../../androidx/core/view/WindowInsetsCompat.js';
 
     
-import { WindowInsetsControllerCompat } from "../../../../androidx/core/view/WindowInsetsControllerCompat.js";
+import { WindowInsetsControllerCompat } from '../../../../androidx/core/view/WindowInsetsControllerCompat.js';
 
     
-import { ActivityFractureUtilAPI5 } from "../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js";
+import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
 
     
 

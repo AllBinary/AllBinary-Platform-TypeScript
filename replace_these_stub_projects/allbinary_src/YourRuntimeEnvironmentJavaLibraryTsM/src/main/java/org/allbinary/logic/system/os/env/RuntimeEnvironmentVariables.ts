@@ -4,36 +4,36 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../../java/lang/System.js";
+            import { System } from '../../../../../../java/lang/System.js';
         
-import { BufferedReader } from "../../../../../../java/io/BufferedReader.js";
+import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
 
     
-import { InputStreamReader } from "../../../../../../java/io/InputStreamReader.js";
+import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
 
     
-import { Properties } from "../../../../../../java/util/Properties.js";
+import { Properties } from '../../../../../../java/util/Properties.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { GenericOperatingSystem } from "../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
+import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 
     
-import { OperatingSystemFactory } from "../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js";
+import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 
     
-import { OperatingSystems } from "../../../../../../org/allbinary/logic/system/os/OperatingSystems.js";
+import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -54,8 +54,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Process } from "./Process.js";
-import { Runtime } from "./Runtime.js";
+        import { Process } from './Process.js';
+import { Runtime } from './Runtime.js';
 
 export class RuntimeEnvironmentVariables
             extends Object

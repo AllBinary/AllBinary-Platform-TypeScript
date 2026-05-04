@@ -18,61 +18,61 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { SteeringVisitor } from "../../../../../org/allbinary/game/layer/SteeringVisitor.js";
+import { SteeringVisitor } from '../../../../../org/allbinary/game/layer/SteeringVisitor.js';
 
     
-import { AdvancedRTSGameLayer } from "../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js";
+import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 
     
-import { CollidableCompositeLayer } from "../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
+import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 
     
-import { CollidableRTSBehavior } from "../../../../../org/allbinary/game/layer/CollidableRTSBehavior.js";
+import { CollidableRTSBehavior } from '../../../../../org/allbinary/game/layer/CollidableRTSBehavior.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { GameKeyEventFactory } from "../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js";
+import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { TiledLayerUtil } from "../../../../../org/allbinary/game/layer/TiledLayerUtil.js";
+import { TiledLayerUtil } from '../../../../../org/allbinary/game/layer/TiledLayerUtil.js';
 
     
-import { LayerPartialCellPositionsUtil } from "../../../../../org/allbinary/game/layer/geographic/map/LayerPartialCellPositionsUtil.js";
+import { LayerPartialCellPositionsUtil } from '../../../../../org/allbinary/game/layer/geographic/map/LayerPartialCellPositionsUtil.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js";
+import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 
     
-import { DropCellPositionHistory } from "../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js";
+import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 
     
 
@@ -93,8 +93,8 @@ import { DropCellPositionHistory } from "../../../../../org/allbinary/media/grap
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UnitLayer } from "./UnitLayer.js";
-//import { SimpleSteeringVisitor } from "./SimpleSteeringVisitor.js";
+        import { UnitLayer } from './UnitLayer.js';
+//import { SimpleSteeringVisitor } from './SimpleSteeringVisitor.js';
 
 export class CollidableUnitBehavior extends CollidableRTSBehavior {
         

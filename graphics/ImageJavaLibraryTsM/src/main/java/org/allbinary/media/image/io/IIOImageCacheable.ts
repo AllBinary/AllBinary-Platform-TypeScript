@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 
     
-import { IIOImage } from "../../../../../javax/imageio/IIOImage.js";
+import { IIOImage } from '../../../../../javax/imageio/IIOImage.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CacheableInterface } from "../../../../../org/allbinary/logic/util/cache/CacheableInterface.js";
+import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 
     
 

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
 
@@ -46,7 +46,7 @@ import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicCol
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextItem } from "./TextItem.js";
+        import { TextItem } from './TextItem.js';
 
 export class CommandTextItem extends TextItem {
         

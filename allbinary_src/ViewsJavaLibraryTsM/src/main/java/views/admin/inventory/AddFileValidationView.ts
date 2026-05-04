@@ -18,76 +18,76 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { StoreFrontFactory } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { BasicItemData } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
+import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 
     
-import { BasicItemValidation } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemValidation.js";
+import { BasicItemValidation } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemValidation.js';
 
     
-import { MoneyException } from "../../../org/allbinary/business/user/commerce/money/MoneyException.js";
+import { MoneyException } from '../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 
     
-import { InventoryEntityFactory } from "../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js";
+import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 
     
-import { GLOBALS2 } from "../../../org/allbinary/globals/GLOBALS2.js";
+import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
 
     
-import { URLGLOBALS } from "../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { HttpFileUploadUtil } from "../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js";
+import { HttpFileUploadUtil } from '../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
 
     
-import { UploadMediaSingleton } from "../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js";
+import { UploadMediaSingleton } from '../../../org/allbinary/logic/communication/http/file/upload/media/UploadMediaSingleton.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ValidationComponentInterface } from "../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { AbFile } from "../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileData } from "../../../org/allbinary/logic/io/file/FileData.js";
+import { FileData } from '../../../org/allbinary/logic/io/file/FileData.js';
 
     
-import { PathUtil } from "../../../org/allbinary/logic/io/path/PathUtil.js";
+import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { FileItem } from "../../../org/apache/commons/fileupload/FileItem.js";
+import { FileItem } from '../../../org/apache/commons/fileupload/FileItem.js';
 
     
-import { Document } from "../../../org/w3c/dom/Document.js";
+import { Document } from '../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../org/w3c/dom/Node.js";
+import { Node } from '../../../org/w3c/dom/Node.js';
 
     
 
@@ -108,7 +108,7 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InventoryItemView } from "./InventoryItemView.js";
+        import { InventoryItemView } from './InventoryItemView.js';
 
 export class AddFileValidationView extends InventoryItemView implements ValidationComponentInterface {
         

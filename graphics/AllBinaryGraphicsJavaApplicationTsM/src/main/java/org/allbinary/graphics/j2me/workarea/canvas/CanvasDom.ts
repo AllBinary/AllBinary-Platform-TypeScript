@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { VectorCenterGenerator } from "../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js";
+import { VectorCenterGenerator } from '../../../../../../org/allbinary/animation/vector/VectorCenterGenerator.js';
 
     
-import { DomHelper } from "../../../../../../org/allbinary/dom/DomHelper.js";
+import { DomHelper } from '../../../../../../org/allbinary/dom/DomHelper.js';
 
     
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { WorkAreaJPanel } from "../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js";
+import { WorkAreaJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
 
     
-import { GraphicItemFactory } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemFactory.js";
+import { GraphicItemFactory } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemFactory.js';
 
     
-import { GraphicItemInterface } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js";
+import { GraphicItemInterface } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
 
     
-import { LinesGraphicItem } from "../../../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js";
+import { LinesGraphicItem } from '../../../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -77,10 +77,10 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { IntegerDimension } from "./IntegerDimension.js";
-import { Grid } from "./Grid.js";
-import { CanvasJPanel } from "./CanvasJPanel.js";
-import { Document } from "./Document.js";
+        import { IntegerDimension } from './IntegerDimension.js';
+import { Grid } from './Grid.js';
+import { CanvasJPanel } from './CanvasJPanel.js';
+import { Document } from './Document.js';
 
 export class CanvasDom
             extends Object

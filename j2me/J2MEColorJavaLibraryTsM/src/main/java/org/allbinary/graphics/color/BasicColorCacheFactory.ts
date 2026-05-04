@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
 
@@ -45,8 +45,8 @@ import { Hashtable } from "../../../../java/util/Hashtable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicColor } from "./BasicColor.js";
-import { BasicColorFactory } from "./BasicColorFactory.js";
+        import { BasicColor } from './BasicColor.js';
+import { BasicColorFactory } from './BasicColorFactory.js';
 
 export class BasicColorCacheFactory
             extends Object

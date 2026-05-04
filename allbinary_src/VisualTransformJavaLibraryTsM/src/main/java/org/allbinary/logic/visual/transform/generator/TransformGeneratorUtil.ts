@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { InputOutputTypeData } from "../../../../../../org/allbinary/logic/io/InputOutputTypeData.js";
+import { InputOutputTypeData } from '../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { TransformFactory } from "../../../../../../org/allbinary/logic/visual/transform/TransformFactory.js";
+import { TransformFactory } from '../../../../../../org/allbinary/logic/visual/transform/TransformFactory.js';
 
     
-import { TransformInterface } from "../../../../../../org/allbinary/logic/visual/transform/TransformInterface.js";
+import { TransformInterface } from '../../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 
     
-import { TransformInfoDomNode } from "../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNode.js";
+import { TransformInfoDomNode } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNode.js';
 
     
-import { TransformInfoHttpInterface } from "../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { StoreFileGenerator } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/StoreFileGenerator.js";
+import { StoreFileGenerator } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/StoreFileGenerator.js';
 
     
 

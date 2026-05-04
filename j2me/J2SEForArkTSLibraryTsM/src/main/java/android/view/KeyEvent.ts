@@ -1,4 +1,4 @@
-import ArkTsKeyEvent from "@ohos.multimodalInput.keyEvent";
+import ArkTsKeyEvent from '@ohos.multimodalInput.keyEvent';
 
 /*actual*/ export class KeyEvent
 {

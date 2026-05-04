@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { PreLogUtil } from "../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { VisitorInterface } from "../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js";
+import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

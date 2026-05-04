@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { CanvasStrings } from "../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -55,10 +55,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { Graphics } from "./Graphics.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
+        import { JPanel } from './JPanel.js';
+import { Graphics } from './Graphics.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
 
 export class ImageJPanel extends javax.swing.JPanel {
         

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
 
@@ -46,8 +46,8 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VectorAnimation } from "./VectorAnimation.js";
-import { AnimationBehavior } from "./AnimationBehavior.js";
+        import { VectorAnimation } from './VectorAnimation.js';
+import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class ColorLessVectorAnimation extends VectorAnimation {
         

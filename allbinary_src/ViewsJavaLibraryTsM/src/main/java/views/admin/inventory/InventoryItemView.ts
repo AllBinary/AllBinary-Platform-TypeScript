@@ -18,79 +18,79 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../java/util/HashMap.js";
+import { HashMap } from '../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../java/util/Set.js";
+import { Set } from '../../../java/util/Set.js';
 
     
-import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from '../../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { StoreFrontFactory } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { BasicItem } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItem.js";
+import { BasicItem } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItem.js';
 
     
-import { BasicItemData } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
+import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 
     
-import { BasicItemView } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js";
+import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
 
     
-import { ItemInterface } from "../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js";
+import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 
     
-import { DownloadableItem } from "../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js";
+import { DownloadableItem } from '../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
 
     
-import { DownloadableItemView } from "../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemView.js";
+import { DownloadableItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemView.js';
 
     
-import { HttpFileUploadUtil } from "../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js";
+import { HttpFileUploadUtil } from '../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
 
     
-import { HttpRequestUtil } from "../../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js";
+import { HttpRequestUtil } from '../../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js';
 
     
-import { MultipartRequestParams } from "../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js";
+import { MultipartRequestParams } from '../../../org/allbinary/logic/communication/http/request/MultipartRequestParams.js';
 
     
-import { RequestMapInterface } from "../../../org/allbinary/logic/communication/http/request/RequestMapInterface.js";
+import { RequestMapInterface } from '../../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PathUtil } from "../../../org/allbinary/logic/io/path/PathUtil.js";
+import { PathUtil } from '../../../org/allbinary/logic/io/path/PathUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { MediaData } from "../../../org/allbinary/logic/visual/media/MediaData.js";
+import { MediaData } from '../../../org/allbinary/logic/visual/media/MediaData.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { FileItem } from "../../../org/apache/commons/fileupload/FileItem.js";
+import { FileItem } from '../../../org/apache/commons/fileupload/FileItem.js';
 
     
-import { HttpStoreComponentView } from "../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 
@@ -111,7 +111,7 @@ import { HttpStoreComponentView } from "../../../views/business/context/modules/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InventoryUploadMediaUtil } from "./InventoryUploadMediaUtil.js";
+        import { InventoryUploadMediaUtil } from './InventoryUploadMediaUtil.js';
 
 export class InventoryItemView extends HttpStoreComponentView implements RequestMapInterface {
         

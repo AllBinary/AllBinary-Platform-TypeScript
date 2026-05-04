@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -54,8 +54,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicGraphicsPipeline } from "./BasicGraphicsPipeline.js";
-import { Math } from "./Math.js";
+        import { BasicGraphicsPipeline } from './BasicGraphicsPipeline.js';
+import { Math } from './Math.js';
 
 export class GraphicsPipeline extends BasicGraphicsPipeline {
         

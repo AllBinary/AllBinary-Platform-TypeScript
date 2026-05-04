@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
 
@@ -43,7 +43,7 @@ import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Layer } from "./Layer.js";
+        import { Layer } from './Layer.js';
 
 export class NullLayer extends Layer {
         

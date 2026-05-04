@@ -4,21 +4,21 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { IndexOutOfBoundsException } from "../../../java/lang/IndexOutOfBoundsException.js";
+            import { IndexOutOfBoundsException } from '../../../java/lang/IndexOutOfBoundsException.js';
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -39,8 +39,8 @@ import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ArrayUtil } from "./ArrayUtil.js";
-import { BasicArrayListS } from "./BasicArrayListS.js";
+        import { ArrayUtil } from './ArrayUtil.js';
+import { BasicArrayListS } from './BasicArrayListS.js';
 
 export class BasicArrayList
             extends Object

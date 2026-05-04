@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { LOGGING } from "../../../../../../org/allbinary/log/LOGGING.js";
+import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -54,12 +54,12 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SelectionToolFactory } from "./SelectionToolFactory.js";
-import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
-import { LinesGraphicItem } from "./LinesGraphicItem.js";
-import { LinesGraphicItemFactory } from "./LinesGraphicItemFactory.js";
-import { GraphicItemBuilder } from "./GraphicItemBuilder.js";
-import { GraphicItemInterface } from "./GraphicItemInterface.js";
+        import { SelectionToolFactory } from './SelectionToolFactory.js';
+import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
+import { LinesGraphicItem } from './LinesGraphicItem.js';
+import { LinesGraphicItemFactory } from './LinesGraphicItemFactory.js';
+import { GraphicItemBuilder } from './GraphicItemBuilder.js';
+import { GraphicItemInterface } from './GraphicItemInterface.js';
 
 export class GraphicItemFactory
             extends Object

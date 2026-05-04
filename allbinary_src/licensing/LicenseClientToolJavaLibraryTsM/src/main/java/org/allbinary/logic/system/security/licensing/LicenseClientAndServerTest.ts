@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { File } from "../../../../../../java/io/File.js";
+import { File } from '../../../../../../java/io/File.js';
 
     
-import { FileReader } from "../../../../../../java/io/FileReader.js";
+import { FileReader } from '../../../../../../java/io/FileReader.js';
 
     
-import { LineNumberReader } from "../../../../../../java/io/LineNumberReader.js";
+import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { LicenseInitInfo } from "../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
+import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
 
     
-import { LicenseInitInfoUtil } from "../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js";
+import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { XmlRpcAbeLicenseRetrievalClient } from "../../../../../../org/allbinary/logic/system/security/licensing/client/XmlRpcAbeLicenseRetrievalClient.js";
+import { XmlRpcAbeLicenseRetrievalClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/XmlRpcAbeLicenseRetrievalClient.js';
 
     
-import { PATH_GLOBALS } from "../../../../../../org/allbinary/globals/PATH_GLOBALS.js";
+import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -72,11 +72,11 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicArrayListD } from "./BasicArrayListD.js";
-import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
-import { AbeClientInformationInterfaceFactory } from "./AbeClientInformationInterfaceFactory.js";
-import { AbeClientInformationInterface } from "./AbeClientInformationInterface.js";
-import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
+        import { BasicArrayListD } from './BasicArrayListD.js';
+import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
+import { AbeClientInformationInterfaceFactory } from './AbeClientInformationInterfaceFactory.js';
+import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
+import { AbeLicenseInterface } from './AbeLicenseInterface.js';
 
 export class LicenseClientAndServerTest
             extends Object

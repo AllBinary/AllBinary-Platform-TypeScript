@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { CellPositionFactory } from "../../../../../../../org/allbinary/graphics/CellPositionFactory.js";
+import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
 
     
-import { GeographicMapCellPositionTracking } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js";
+import { GeographicMapCellPositionTracking } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
 
     
 
@@ -48,8 +48,8 @@ import { GeographicMapCellPositionTracking } from "../../../../../../../org/allb
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellPositionEvent } from "./GeographicMapCellPositionEvent.js";
-import { GeographicMapCellPositionEventHandler } from "./GeographicMapCellPositionEventHandler.js";
+        import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
+import { GeographicMapCellPositionEventHandler } from './GeographicMapCellPositionEventHandler.js';
 
 export class GeographicMapCellPositionEventUtil
             extends Object

@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { awt } from "../../../../../java/awt.js";
+import { awt } from '../../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
 
@@ -51,8 +51,8 @@ import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Rectangle } from "./Rectangle.js";
-import { Color } from "./Color.js";
+        import { Rectangle } from './Rectangle.js';
+import { Color } from './Color.js';
 
 export interface ImageComparatorConstraintsInterface {
         

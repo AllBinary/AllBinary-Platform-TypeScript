@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { GroupInterfaceCompositeInterface } from "../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js";
+import { GroupInterfaceCompositeInterface } from '../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
 
     
-import { PaintableInterface } from "../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
 
@@ -46,8 +46,8 @@ import { PaintableInterface } from "../../../org/allbinary/graphics/paint/Painta
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NamedInterface } from "./NamedInterface.js";
-import { PositionInterface } from "./PositionInterface.js";
+        import { NamedInterface } from './NamedInterface.js';
+import { PositionInterface } from './PositionInterface.js';
 
 export interface LayerInterface extends NamedInterface, PaintableInterface, GroupInterfaceCompositeInterface, PositionInterface {
         

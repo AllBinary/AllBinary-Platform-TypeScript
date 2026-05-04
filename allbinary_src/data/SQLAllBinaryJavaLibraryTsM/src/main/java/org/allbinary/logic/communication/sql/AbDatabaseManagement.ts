@@ -10,28 +10,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InetAddress } from "../../../../../java/net/InetAddress.js";
+import { InetAddress } from '../../../../../java/net/InetAddress.js';
 
     
-import { DatabaseConnectionInfoInterface } from "../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js";
+import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
 
     
-import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -52,7 +52,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbSqlBean } from "./AbSqlBean.js";
+        import { AbSqlBean } from './AbSqlBean.js';
 
 export class AbDatabaseManagement extends AbSqlBean {
         

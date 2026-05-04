@@ -17,14 +17,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
 
@@ -45,8 +45,8 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+        import { NullPathFindingLayer } from './NullPathFindingLayer.js';
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 
 export class RTSLayerEvent extends AllBinaryEventObject {
         

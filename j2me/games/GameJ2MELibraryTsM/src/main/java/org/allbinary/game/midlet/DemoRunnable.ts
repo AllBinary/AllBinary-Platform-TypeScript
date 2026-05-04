@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Runnable } from "../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { ProgressCanvasFactory } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { MyCommandsFactory } from "../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js";
+import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -62,10 +62,10 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DemoGameMidlet } from "./DemoGameMidlet.js";
-import { DemoGameMidletEvent } from "./DemoGameMidletEvent.js";
-import { DemoGameMidletStateFactory } from "./DemoGameMidletStateFactory.js";
-import { DemoGameMidletEventHandler } from "./DemoGameMidletEventHandler.js";
+        import { DemoGameMidlet } from './DemoGameMidlet.js';
+import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
+import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';
+import { DemoGameMidletEventHandler } from './DemoGameMidletEventHandler.js';
 
 export class DemoRunnable
             extends Object

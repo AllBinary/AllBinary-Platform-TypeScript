@@ -18,66 +18,66 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { ImageOutputData } from "../../../../../../org/allbinary/input/automation/ImageOutputData.js";
+import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LongUtil } from "../../../../../../org/allbinary/logic/java/number/LongUtil.js";
+import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AutomaticCacheInterface } from "../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js";
+import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 
     
-import { PoolInterface } from "../../../../../../org/allbinary/logic/util/cache/PoolInterface.js";
+import { PoolInterface } from '../../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
 
     
-import { MediaDataFactory } from "../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js";
+import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
 
     
-import { ImagePersistanceUtil } from "../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js";
+import { ImagePersistanceUtil } from '../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 
     
-import { BufferedImageCacheable } from "../../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js";
+import { BufferedImageCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
 
     
-import { BufferedImageInfo } from "../../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js";
+import { BufferedImageInfo } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
 
     
-import { BufferedImageInfoFactory } from "../../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js";
+import { BufferedImageInfoFactory } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
 
     
-import { BufferedImagePoolSingleton } from "../../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js";
+import { BufferedImagePoolSingleton } from '../../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
 
     
-import { ImageComparisonResult } from "../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js";
+import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
 
     
-import { ImageIOInterface } from "../../../../../../org/allbinary/media/image/io/ImageIOInterface.js";
+import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -98,15 +98,15 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllMotionRectanglesResultsCacheSingleton } from "./AllMotionRectanglesResultsCacheSingleton.js";
-import { MotionRectanglesResultsFrameCacheable } from "./MotionRectanglesResultsFrameCacheable.js";
-import { MotionRectangles } from "./MotionRectangles.js";
-import { ConsolidatedMotionRectanglesResultsCacheSingleton } from "./ConsolidatedMotionRectanglesResultsCacheSingleton.js";
-import { ConstrainedMotionRectanglesResultsCacheSingleton } from "./ConstrainedMotionRectanglesResultsCacheSingleton.js";
-import { Graphics } from "./Graphics.js";
-import { MotionRectangle } from "./MotionRectangle.js";
-import { Rectangle } from "./Rectangle.js";
-import { Color } from "./Color.js";
+        import { AllMotionRectanglesResultsCacheSingleton } from './AllMotionRectanglesResultsCacheSingleton.js';
+import { MotionRectanglesResultsFrameCacheable } from './MotionRectanglesResultsFrameCacheable.js';
+import { MotionRectangles } from './MotionRectangles.js';
+import { ConsolidatedMotionRectanglesResultsCacheSingleton } from './ConsolidatedMotionRectanglesResultsCacheSingleton.js';
+import { ConstrainedMotionRectanglesResultsCacheSingleton } from './ConstrainedMotionRectanglesResultsCacheSingleton.js';
+import { Graphics } from './Graphics.js';
+import { MotionRectangle } from './MotionRectangle.js';
+import { Rectangle } from './Rectangle.js';
+import { Color } from './Color.js';
 
 export class MotionRectanglesImageInputOutput
             extends Object

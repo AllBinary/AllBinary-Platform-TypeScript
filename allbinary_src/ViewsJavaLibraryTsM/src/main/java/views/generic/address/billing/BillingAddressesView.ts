@@ -18,51 +18,51 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from '../../../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { BillingAddressData } from "../../../../org/allbinary/business/user/address/BillingAddressData.js";
+import { BillingAddressData } from '../../../../org/allbinary/business/user/address/BillingAddressData.js';
 
     
-import { StreetAddress } from "../../../../org/allbinary/business/user/address/StreetAddress.js";
+import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
 
     
-import { StreetAddressData } from "../../../../org/allbinary/business/user/address/StreetAddressData.js";
+import { StreetAddressData } from '../../../../org/allbinary/business/user/address/StreetAddressData.js';
 
     
-import { DomNodeInterface } from "../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { ModDomHelper } from "../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoHttpInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../org/w3c/dom/Node.js';
 
     
-import { HttpStoreComponentView } from "../../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 

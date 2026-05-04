@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Thread } from "../../../java/lang/Thread.js";
+            import { Thread } from '../../../java/lang/Thread.js';
         
 
 

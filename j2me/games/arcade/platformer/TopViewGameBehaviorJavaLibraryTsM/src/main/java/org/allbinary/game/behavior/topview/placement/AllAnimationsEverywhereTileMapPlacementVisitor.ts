@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
+import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
 
     
 
@@ -43,7 +43,7 @@ import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TileMapPlacementVisitor } from "./TileMapPlacementVisitor.js";
+        import { TileMapPlacementVisitor } from './TileMapPlacementVisitor.js';
 
 export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlacementVisitor {
         

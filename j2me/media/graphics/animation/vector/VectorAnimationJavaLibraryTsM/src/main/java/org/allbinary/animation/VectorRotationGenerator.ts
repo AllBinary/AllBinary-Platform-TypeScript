@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { PointFactory } from "../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { BasicGraphicsPipeline } from "../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js";
+import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
 
     
-import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Angle } from "../../../org/allbinary/math/Angle.js";
+import { Angle } from '../../../org/allbinary/math/Angle.js';
 
     
-import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js";
+import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
 
     
-import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
+import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
 
     
 
@@ -72,7 +72,7 @@ import { VectorInfo } from "../../../org/allbinary/vector/VectorInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
+        import { VectorAnimationUtil } from './VectorAnimationUtil.js';
 
 export class VectorRotationGenerator
             extends Object

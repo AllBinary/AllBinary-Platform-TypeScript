@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { awt } from "../../../../../java/awt.js";
+import { awt } from '../../../../../java/awt.js';
 
     
-import { ActionEvent } from "../../../../../java/awt/event/ActionEvent.js";
+import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
 
     
-import { File } from "../../../../../java/io/File.js";
+import { File } from '../../../../../java/io/File.js';
 
     
-import { URI } from "../../../../../java/net/URI.js";
+import { URI } from '../../../../../java/net/URI.js';
 
     
-import { URL } from "../../../../../java/net/URL.js";
+import { URL } from '../../../../../java/net/URL.js';
 
     
-import { CSH } from "../../../../../javax/help/CSH.js";
+import { CSH } from '../../../../../javax/help/CSH.js';
 
     
-import { HelpBroker } from "../../../../../javax/help/HelpBroker.js";
+import { HelpBroker } from '../../../../../javax/help/HelpBroker.js';
 
     
-import { HelpSet } from "../../../../../javax/help/HelpSet.js";
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 
     
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -75,10 +75,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Point } from "./Point.js";
-import { Dimension } from "./Dimension.js";
-import { JLabel } from "./JLabel.js";
-import { DisplayHelpFromSource } from "./DisplayHelpFromSource.js";
+        import { Point } from './Point.js';
+import { Dimension } from './Dimension.js';
+import { JLabel } from './JLabel.js';
+import { DisplayHelpFromSource } from './DisplayHelpFromSource.js';
 
 export class JavaHelpUtil
             extends Object

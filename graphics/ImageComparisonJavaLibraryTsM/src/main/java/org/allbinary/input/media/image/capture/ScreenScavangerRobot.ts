@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
 
     
-import { InputRobotFactory } from "../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
+import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 
     
-import { InputRobotInterface } from "../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
+import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -63,9 +63,9 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Toolkit } from "./Toolkit.js";
-import { Dimension } from "./Dimension.js";
-import { Rectangle } from "./Rectangle.js";
+        import { Toolkit } from './Toolkit.js';
+import { Dimension } from './Dimension.js';
+import { Rectangle } from './Rectangle.js';
 
 export class ScreenScavangerRobot
             extends Object

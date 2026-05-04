@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { PathFinderGraphVisitorBase } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinderGraphVisitorBase.js";
+import { PathFinderGraphVisitorBase } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFinderGraphVisitorBase.js';
 
     
-import { PathFindingNode } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js";
+import { PathFindingNode } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
 
     
-import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

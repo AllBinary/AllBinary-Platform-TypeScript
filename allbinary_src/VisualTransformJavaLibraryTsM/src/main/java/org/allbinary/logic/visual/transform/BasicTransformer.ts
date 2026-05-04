@@ -18,64 +18,64 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
 
     
-import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { InputStream } from "../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../java/io/InputStream.js';
 
     
-import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 
     
-import { BasicUriResolver } from "../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js";
+import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbCrypt } from "../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js";
+import { AbCrypt } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/AbCrypt.js';
 
     
-import { KeySpecFactory } from "../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js";
+import { KeySpecFactory } from '../../../../../org/allbinary/logic/control/crypt/jcehelper/KeySpecFactory.js';
 
     
-import { AbFileInputStream } from "../../../../../org/allbinary/logic/io/AbFileInputStream.js";
+import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
 
     
-import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { PathUtil } from "../../../../../org/allbinary/logic/io/path/PathUtil.js";
+import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbKeys } from "../../../../../org/allbinary/logic/system/security/AbKeys.js";
+import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js";
+import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
 
     
 
@@ -96,7 +96,7 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbTransformer } from "./AbTransformer.js";
+        import { AbTransformer } from './AbTransformer.js';
 
 export class BasicTransformer extends AbTransformer {
         

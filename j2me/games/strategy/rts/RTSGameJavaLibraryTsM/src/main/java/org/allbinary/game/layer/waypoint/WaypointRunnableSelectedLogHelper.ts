@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -52,7 +52,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WaypointRunnableLogHelper } from "./WaypointRunnableLogHelper.js";
+        import { WaypointRunnableLogHelper } from './WaypointRunnableLogHelper.js';
 
 export class WaypointRunnableSelectedLogHelper extends WaypointRunnableLogHelper {
         

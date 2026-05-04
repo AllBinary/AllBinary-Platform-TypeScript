@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { AnimationBehavior } from "../../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
 
@@ -52,7 +52,7 @@ import { AnimationBehavior } from "../../../../../org/allbinary/animation/Animat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinarySpriteRotationAnimation } from "./AllBinarySpriteRotationAnimation.js";
+        import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
 
 export class AllBinaryAdjustedSpriteRotationAnimation extends AllBinarySpriteRotationAnimation {
         

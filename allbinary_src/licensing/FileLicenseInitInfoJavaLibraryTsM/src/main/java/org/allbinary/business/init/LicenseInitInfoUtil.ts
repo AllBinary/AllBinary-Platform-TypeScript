@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PATH_GLOBALS } from "../../../../org/allbinary/globals/PATH_GLOBALS.js";
+import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbDataInputStream } from "../../../../org/allbinary/logic/io/AbDataInputStream.js";
+import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
 
     
-import { AbDataOutputStream } from "../../../../org/allbinary/logic/io/AbDataOutputStream.js";
+import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
 
     
-import { AbFileInputStream } from "../../../../org/allbinary/logic/io/AbFileInputStream.js";
+import { AbFileInputStream } from '../../../../org/allbinary/logic/io/AbFileInputStream.js';
 
     
-import { DataOutputStreamFactory } from "../../../../org/allbinary/logic/io/DataOutputStreamFactory.js";
+import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
 
     
-import { FileStreamFactory } from "../../../../org/allbinary/logic/io/FileStreamFactory.js";
+import { FileStreamFactory } from '../../../../org/allbinary/logic/io/FileStreamFactory.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { DatabaseEncoder } from "../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js";
+import { DatabaseEncoder } from '../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
 
     
-import { WeakCrypt } from "../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js";
+import { WeakCrypt } from '../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js';
 
     
 
@@ -75,7 +75,7 @@ import { WeakCrypt } from "../../../../org/allbinary/logic/system/security/crypt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LicenseInitInfo } from "./LicenseInitInfo.js";
+        import { LicenseInitInfo } from './LicenseInitInfo.js';
 
 export class LicenseInitInfoUtil
             extends Object

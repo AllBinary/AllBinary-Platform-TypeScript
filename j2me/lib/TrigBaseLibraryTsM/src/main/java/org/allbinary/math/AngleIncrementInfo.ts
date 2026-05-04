@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { SmallIntegerSingletonFactory } from "../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -48,8 +48,8 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AngleFactory } from "./AngleFactory.js";
-import { FrameUtil } from "./FrameUtil.js";
+        import { AngleFactory } from './AngleFactory.js';
+import { FrameUtil } from './FrameUtil.js';
 
 export class AngleIncrementInfo
             extends Object

@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CustomGPoint } from "../../../../org/allbinary/graphics/CustomGPoint.js";
+import { CustomGPoint } from '../../../../org/allbinary/graphics/CustomGPoint.js';
 
     
-import { GPointCircularPool } from "../../../../org/allbinary/graphics/GPointCircularPool.js";
+import { GPointCircularPool } from '../../../../org/allbinary/graphics/GPointCircularPool.js';
 
     
-import { MotionGestureRecognizer } from "../../../../org/allbinary/input/motion/gesture/MotionGestureRecognizer.js";
+import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/gesture/MotionGestureRecognizer.js';
 
     
 
@@ -51,7 +51,7 @@ import { MotionGestureRecognizer } from "../../../../org/allbinary/input/motion/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MotionRecognizer } from "./MotionRecognizer.js";
+        import { MotionRecognizer } from './MotionRecognizer.js';
 
 export class GestureOnlyMotionRecognizer extends MotionRecognizer {
         

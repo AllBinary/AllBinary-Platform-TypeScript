@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { RunnableCanvas } from "../../../../../org/allbinary/canvas/RunnableCanvas.js";
+import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanvas.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -51,7 +51,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameRunnable } from "./GameRunnable.js";
+        import { GameRunnable } from './GameRunnable.js';
 
 export class RunnableCanvasSingleThreadStartRunnable extends GameRunnable {
         

@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AbstractInputAutomationFactory } from "../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js";
+import { AbstractInputAutomationFactory } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
 
     
-import { InputAutomationActionInterface } from "../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js";
+import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
 
     
-import { InputAutomationModuleData } from "../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js";
+import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
 
     
-import { GenericModuleConfigurationJPanel } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/GenericModuleConfigurationJPanel.js";
+import { GenericModuleConfigurationJPanel } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/GenericModuleConfigurationJPanel.js';
 
     
-import { GenericProfile } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js";
+import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 
     
-import { NoImageComparatorConstraints } from "../../../../../../org/allbinary/input/automation/module/generic/constraints/NoImageComparatorConstraints.js";
+import { NoImageComparatorConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoImageComparatorConstraints.js';
 
     
-import { NoMotionRectangleConstraints } from "../../../../../../org/allbinary/input/automation/module/generic/constraints/NoMotionRectangleConstraints.js";
+import { NoMotionRectangleConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoMotionRectangleConstraints.js';
 
     
-import { RunnableInterface } from "../../../../../../org/allbinary/thread/RunnableInterface.js";
+import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
 
     
 
@@ -66,8 +66,8 @@ import { RunnableInterface } from "../../../../../../org/allbinary/thread/Runnab
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GenericInputAutomationAction } from "./GenericInputAutomationAction.js";
-import { GenericInputAutomationWorker } from "./GenericInputAutomationWorker.js";
+        import { GenericInputAutomationAction } from './GenericInputAutomationAction.js';
+import { GenericInputAutomationWorker } from './GenericInputAutomationWorker.js';
 
 export class GenericModuleFactory extends AbstractInputAutomationFactory {
         

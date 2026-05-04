@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { InputAutomationConfigurationFactory } from "../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js";
+import { InputAutomationConfigurationFactory } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
 
     
 
@@ -43,7 +43,7 @@ import { InputAutomationConfigurationFactory } from "../../../../../../org/allbi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputAutomationModuleConfigurations } from "./InputAutomationModuleConfigurations.js";
+        import { InputAutomationModuleConfigurations } from './InputAutomationModuleConfigurations.js';
 
 export class InputAutomationModuleConfigurationsSingletonFactory
             extends Object

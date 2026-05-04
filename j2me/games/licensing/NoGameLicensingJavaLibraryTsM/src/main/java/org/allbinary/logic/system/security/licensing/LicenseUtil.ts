@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { CommandListener } from "../../../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
 
     
 

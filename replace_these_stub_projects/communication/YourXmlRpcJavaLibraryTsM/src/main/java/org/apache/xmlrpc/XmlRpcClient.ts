@@ -4,26 +4,26 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { IOException } from "../../../java/io/IOException.js";
+import { IOException } from '../../../java/io/IOException.js';
 
     
-import { MalformedURLException } from "../../../java/net/MalformedURLException.js";
+import { MalformedURLException } from '../../../java/net/MalformedURLException.js';
 
     
-import { URL } from "../../../java/net/URL.js";
+import { URL } from '../../../java/net/URL.js';
 
     
-import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from '../../../java/util/Vector.js';
 
     
-import { CryptInterface } from "../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js";
+import { CryptInterface } from '../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
 
     
-import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
 
     
 
@@ -44,7 +44,7 @@ import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { XmlRpcHandler } from "./XmlRpcHandler.js";
+        import { XmlRpcHandler } from './XmlRpcHandler.js';
 
 export class XmlRpcClient
             extends Object

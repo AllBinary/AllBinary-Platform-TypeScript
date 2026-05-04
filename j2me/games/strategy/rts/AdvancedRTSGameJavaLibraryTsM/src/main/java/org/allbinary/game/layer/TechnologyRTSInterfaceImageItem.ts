@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { CustomImageItem } from "../../../../org/allbinary/graphics/form/item/CustomImageItem.js";
+import { CustomImageItem } from '../../../../org/allbinary/graphics/form/item/CustomImageItem.js';
 
     
-import { CharArrayFactory } from "../../../../org/allbinary/logic/java/character/CharArrayFactory.js";
+import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/PrimitiveLongUtil.js";
+import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
 
     
 
@@ -66,7 +66,7 @@ import { PrimitiveLongUtil } from "../../../../org/allbinary/logic/math/Primitiv
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSInterface } from "./RTSInterface.js";
+        import { RTSInterface } from './RTSInterface.js';
 
 export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
         

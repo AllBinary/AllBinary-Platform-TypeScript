@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { RandomRotationFactory } from "../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js";
+import { RandomRotationFactory } from '../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
 
     
-import { RandomTranslation } from "../../../org/allbinary/graphics/pipeline/RandomTranslation.js";
+import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/RandomTranslation.js';
 
     
-import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js";
+import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
 
     
 
@@ -63,8 +63,8 @@ import { BasicArrayListS } from "../../../org/allbinary/util/BasicArrayListS.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { VectorExplosionType } from "./VectorExplosionType.js";
-import { VectorAnimationUtil } from "./VectorAnimationUtil.js";
+        import { VectorExplosionType } from './VectorExplosionType.js';
+import { VectorAnimationUtil } from './VectorAnimationUtil.js';
 
 export class VectorExplosionGenerator
             extends Object

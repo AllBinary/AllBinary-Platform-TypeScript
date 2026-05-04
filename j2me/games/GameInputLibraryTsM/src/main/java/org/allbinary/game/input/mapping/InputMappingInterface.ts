@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameKey } from "../../../../../org/allbinary/game/input/GameKey.js";
+import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
 
     
-import { Input } from "../../../../../org/allbinary/game/input/Input.js";
+import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 
     
 

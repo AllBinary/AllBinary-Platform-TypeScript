@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ArtificialIntelligenceInterface } from "../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
+import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 
     
-import { GameInput } from "../../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
 
@@ -54,7 +54,7 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SequenceAI } from "./SequenceAI.js";
+        import { SequenceAI } from './SequenceAI.js';
 
 export class ComboSequenceAI extends SequenceAI {
         

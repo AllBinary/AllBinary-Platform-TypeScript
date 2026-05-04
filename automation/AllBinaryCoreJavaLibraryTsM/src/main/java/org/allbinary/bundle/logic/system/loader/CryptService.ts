@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from "../../../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../../../java/io/ByteArrayInputStream.js';
 
     
-import { InputStream } from "../../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../../java/io/InputStream.js';
 
     
-import { Globals } from "../../../../../../org/allbinary/globals/Globals.js";
+import { Globals } from '../../../../../../org/allbinary/globals/Globals.js';
 
     
-import { URLGLOBALS } from "../../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { BasicTextJDialog } from "../../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js";
+import { BasicTextJDialog } from '../../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
 
     
-import { ExitCloseListener } from "../../../../../../org/allbinary/gui/dialog/ExitCloseListener.js";
+import { ExitCloseListener } from '../../../../../../org/allbinary/gui/dialog/ExitCloseListener.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbCryptUtil } from "../../../../../../org/allbinary/logic/system/security/AbCryptUtil.js";
+import { AbCryptUtil } from '../../../../../../org/allbinary/logic/system/security/AbCryptUtil.js';
 
     
-import { AbKeys } from "../../../../../../org/allbinary/logic/system/security/AbKeys.js";
+import { AbKeys } from '../../../../../../org/allbinary/logic/system/security/AbKeys.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { AbeLicenseInterface } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterface.js";
+import { AbeLicenseInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterface.js';
 
     
-import { AbeLicenseInterfaceFactory } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterfaceFactory.js";
+import { AbeLicenseInterfaceFactory } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterfaceFactory.js';
 
     
-import { AbeNoLicense } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeNoLicense.js";
+import { AbeNoLicense } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeNoLicense.js';
 
     
-import { LicensingException } from "../../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

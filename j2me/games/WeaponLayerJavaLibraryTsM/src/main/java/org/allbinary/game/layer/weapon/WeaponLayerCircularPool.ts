@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
+import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 
     
-import { ScoreableInterface } from "../../../../../org/allbinary/game/score/ScoreableInterface.js";
+import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js";
+import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
 
     
 
@@ -54,7 +54,7 @@ import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WeaponLayer } from "./WeaponLayer.js";
+        import { WeaponLayer } from './WeaponLayer.js';
 
 export class WeaponLayerCircularPool extends AllBinaryLayerCircularPool {
         

@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
+import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 
     
-import { BasicRandomAIFactory } from "../../../../org/allbinary/game/ai/tactical/BasicRandomAIFactory.js";
+import { BasicRandomAIFactory } from '../../../../org/allbinary/game/ai/tactical/BasicRandomAIFactory.js';
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js";
+import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
 
     
 
@@ -60,12 +60,12 @@ import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ArtificialIntelligenceInterfaceFactoryInterface } from "./ArtificialIntelligenceInterfaceFactoryInterface.js";
-import { BasicAI } from "./BasicAI.js";
-import { ThrustAIVisitorFactory } from "./ThrustAIVisitorFactory.js";
-import { BasicProbabilityAIDataFactory } from "./BasicProbabilityAIDataFactory.js";
-import { LastKeyAIVisitorFactory } from "./LastKeyAIVisitorFactory.js";
-import { DiveAndDirectionalTrackingAI } from "./DiveAndDirectionalTrackingAI.js";
+        import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
+import { BasicAI } from './BasicAI.js';
+import { ThrustAIVisitorFactory } from './ThrustAIVisitorFactory.js';
+import { BasicProbabilityAIDataFactory } from './BasicProbabilityAIDataFactory.js';
+import { LastKeyAIVisitorFactory } from './LastKeyAIVisitorFactory.js';
+import { DiveAndDirectionalTrackingAI } from './DiveAndDirectionalTrackingAI.js';
 
 export class DiveAndDirectionalTrackingAIFactory
             extends Object

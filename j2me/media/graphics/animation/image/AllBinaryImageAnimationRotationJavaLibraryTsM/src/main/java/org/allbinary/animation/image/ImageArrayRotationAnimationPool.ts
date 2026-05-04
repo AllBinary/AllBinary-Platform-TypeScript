@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BasicArrayListResetablePool } from "../../../../org/allbinary/logic/util/cache/BasicArrayListResetablePool.js";
+import { BasicArrayListResetablePool } from '../../../../org/allbinary/logic/util/cache/BasicArrayListResetablePool.js';
 
     
-import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/CacheableInterface.js";
+import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 
     
-import { CacheableInterfaceFactoryInterface } from "../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js";
+import { CacheableInterfaceFactoryInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterfaceFactoryInterface.js';
 
     
-import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolInterface.js";
+import { PoolInterface } from '../../../../org/allbinary/logic/util/cache/PoolInterface.js';
 
     
 
@@ -54,9 +54,9 @@ import { PoolInterface } from "../../../../org/allbinary/logic/util/cache/PoolIn
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageArrayRotationAnimationCacheableInterfaceFactory } from "./ImageArrayRotationAnimationCacheableInterfaceFactory.js";
-import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
-import { ImageArrayRotationAnimationCacheable } from "./ImageArrayRotationAnimationCacheable.js";
+        import { ImageArrayRotationAnimationCacheableInterfaceFactory } from './ImageArrayRotationAnimationCacheableInterfaceFactory.js';
+import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
+import { ImageArrayRotationAnimationCacheable } from './ImageArrayRotationAnimationCacheable.js';
 
 export class ImageArrayRotationAnimationPool extends BasicArrayListResetablePool {
         

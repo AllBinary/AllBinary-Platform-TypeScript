@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
     
 
@@ -43,7 +43,7 @@ import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Comparable } from "./Comparable.js";
+        import { Comparable } from './Comparable.js';
 
 export class ComparableObject
             extends Object

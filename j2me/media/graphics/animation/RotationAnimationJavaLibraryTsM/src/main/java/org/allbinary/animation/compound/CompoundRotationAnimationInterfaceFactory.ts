@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { RotationAnimation } from "../../../../org/allbinary/animation/RotationAnimation.js";
+import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
 
     
 
@@ -52,8 +52,8 @@ import { RotationAnimation } from "../../../../org/allbinary/animation/RotationA
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CompoundAnimationInterfaceFactory } from "./CompoundAnimationInterfaceFactory.js";
-import { CompoundRotationAnimation } from "./CompoundRotationAnimation.js";
+        import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
+import { CompoundRotationAnimation } from './CompoundRotationAnimation.js';
 
 export class CompoundRotationAnimationInterfaceFactory extends CompoundAnimationInterfaceFactory {
         

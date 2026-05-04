@@ -18,75 +18,75 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 
     
-import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { GameCommandsFactory } from "../../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { GameKey } from "../../../../../org/allbinary/game/input/GameKey.js";
+import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
 
     
-import { GameKeyFactory } from "../../../../../org/allbinary/game/input/GameKeyFactory.js";
+import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
 
     
-import { Input } from "../../../../../org/allbinary/game/input/Input.js";
+import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 
     
-import { InputFactory } from "../../../../../org/allbinary/game/input/InputFactory.js";
+import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
 
     
-import { PlatformInputMappingFactory } from "../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js";
+import { PlatformInputMappingFactory } from '../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
 
     
-import { InputMappingInterface } from "../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js";
+import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
 
     
-import { InputToGameKeyMapping } from "../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js";
+import { InputToGameKeyMapping } from '../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
 
     
-import { PersistentInputMapping } from "../../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js";
+import { PersistentInputMapping } from '../../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { ColorFillBasePaintable } from "../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js";
+import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
 
     
-import { ColorFillPaintableFactory } from "../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js";
+import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
 
     
-import { HelpPaintable } from "../../../../../org/allbinary/game/paint/help/HelpPaintable.js";
+import { HelpPaintable } from '../../../../../org/allbinary/game/paint/help/HelpPaintable.js';
 
     
-import { InputMappingHelpPaintable } from "../../../../../org/allbinary/game/paint/help/InputMappingHelpPaintable.js";
+import { InputMappingHelpPaintable } from '../../../../../org/allbinary/game/paint/help/InputMappingHelpPaintable.js';
 
     
-import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/ProcessPaintable.js";
+import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -107,8 +107,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameCommandCanvas } from "./GameCommandCanvas.js";
-import { GameInputMappingInstructionsCanvas } from "./GameInputMappingInstructionsCanvas.js";
+        import { GameCommandCanvas } from './GameCommandCanvas.js';
+import { GameInputMappingInstructionsCanvas } from './GameInputMappingInstructionsCanvas.js';
 
 export class GameInputMappingCanvas extends GameCommandCanvas implements InputMappingInterface {
         

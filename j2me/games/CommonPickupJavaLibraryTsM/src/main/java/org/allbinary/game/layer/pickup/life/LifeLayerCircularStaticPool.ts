@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Life } from "../../../../../../org/allbinary/game/life/Life.js";
+import { Life } from '../../../../../../org/allbinary/game/life/Life.js';
 
     
-import { LifeInterfaceCompositeInterface } from "../../../../../../org/allbinary/game/life/LifeInterfaceCompositeInterface.js";
+import { LifeInterfaceCompositeInterface } from '../../../../../../org/allbinary/game/life/LifeInterfaceCompositeInterface.js';
 
     
-import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerCircularPool } from "../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js";
+import { AllBinaryLayerCircularPool } from '../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
 
     
-import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js";
+import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
 
     
 
@@ -57,7 +57,7 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LifeLayer } from "./LifeLayer.js";
+        import { LifeLayer } from './LifeLayer.js';
 
 export class LifeLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         

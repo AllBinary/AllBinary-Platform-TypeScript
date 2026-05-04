@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { ContextConfigurationInterface } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
+import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
 
     
-import { AdminConfiguration } from "../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js";
+import { AdminConfiguration } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfiguration.js';
 
     
-import { AdminConfigurationInterface } from "../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js";
+import { AdminConfigurationInterface } from '../../../../../../org/allbinary/business/user/modules/admin/configuration/AdminConfigurationInterface.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { EmailServerConfigurationInterface } from "../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js";
+import { EmailServerConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -60,7 +60,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicEmailInfo } from "./BasicEmailInfo.js";
+        import { BasicEmailInfo } from './BasicEmailInfo.js';
 
 export class AdminEmailInfo extends BasicEmailInfo {
         

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
 
@@ -57,7 +57,7 @@ import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageSegmentAnimation } from "./ImageSegmentAnimation.js";
+        import { ImageSegmentAnimation } from './ImageSegmentAnimation.js';
 
 export class LeftToRightImageAnimation extends ImageSegmentAnimation {
         

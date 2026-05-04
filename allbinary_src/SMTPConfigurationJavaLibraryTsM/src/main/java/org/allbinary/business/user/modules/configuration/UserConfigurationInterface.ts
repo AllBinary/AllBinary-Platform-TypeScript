@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { TimeCreated } from "../../../../../../org/allbinary/business/time/created/TimeCreated.js";
+import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
 
     
-import { TimeLastModified } from "../../../../../../org/allbinary/business/time/modified/TimeLastModified.js";
+import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
 
     
-import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js";
+import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 
     
 

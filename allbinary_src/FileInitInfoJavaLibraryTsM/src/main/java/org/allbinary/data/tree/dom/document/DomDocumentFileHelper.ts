@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Transformer } from "../../../../../../javax/xml/transform/Transformer.js";
+import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
 
     
-import { TransformerFactory } from "../../../../../../javax/xml/transform/TransformerFactory.js";
+import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
 
     
-import { DOMSource } from "../../../../../../javax/xml/transform/dom/DOMSource.js";
+import { DOMSource } from '../../../../../../javax/xml/transform/dom/DOMSource.js';
 
     
-import { StreamResult } from "../../../../../../javax/xml/transform/stream/StreamResult.js";
+import { StreamResult } from '../../../../../../javax/xml/transform/stream/StreamResult.js';
 
     
-import { AbDataOutputStream } from "../../../../../../org/allbinary/logic/io/AbDataOutputStream.js";
+import { AbDataOutputStream } from '../../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
 
     
-import { AbFileInputStream } from "../../../../../../org/allbinary/logic/io/AbFileInputStream.js";
+import { AbFileInputStream } from '../../../../../../org/allbinary/logic/io/AbFileInputStream.js';
 
     
-import { DataOutputStreamFactory } from "../../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js";
+import { DataOutputStreamFactory } from '../../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
 
     
-import { StreamUtil } from "../../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
 
@@ -72,7 +72,7 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DomDocumentHelper } from "./DomDocumentHelper.js";
+        import { DomDocumentHelper } from './DomDocumentHelper.js';
 
 export class DomDocumentFileHelper
             extends Object

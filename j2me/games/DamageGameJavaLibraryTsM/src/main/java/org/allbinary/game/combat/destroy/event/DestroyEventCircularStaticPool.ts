@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AllBinaryGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js";
+import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
 
     
 
@@ -51,8 +51,8 @@ import { AllBinaryEventCircularPool } from "../../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DestroyEventFactory } from "./DestroyEventFactory.js";
-import { DestroyedEvent } from "./DestroyedEvent.js";
+        import { DestroyEventFactory } from './DestroyEventFactory.js';
+import { DestroyedEvent } from './DestroyedEvent.js';
 
 export class DestroyEventCircularStaticPool
             extends Object

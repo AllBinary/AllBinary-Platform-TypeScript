@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CollidableBaseBehavior } from "../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js";
+import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
 
     
-import { CollidableInterfaceCompositeInterface } from "../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js";
+import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 
     
-import { DamageUtil } from "../../../../../org/allbinary/game/combat/damage/DamageUtil.js";
+import { DamageUtil } from '../../../../../org/allbinary/game/combat/damage/DamageUtil.js';
 
     
-import { CollidableCompositeLayer } from "../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
+import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 
     
-import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
 
@@ -57,7 +57,7 @@ import { ForcedLogUtil } from "../../../../../org/allbinary/logic/communication/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDamageableLayer.js";
+        import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
 
 export class CollidableDestroyableDamageableBehavior extends CollidableBaseBehavior {
         

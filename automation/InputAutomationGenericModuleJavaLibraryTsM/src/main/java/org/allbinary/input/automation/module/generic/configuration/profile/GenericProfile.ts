@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { DomNodeHelper } from "../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { GenericProfileActions } from "../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js";
+import { GenericProfileActions } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -66,9 +66,9 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GenericProfileDataWorkerData } from "./GenericProfileDataWorkerData.js";
-import { GenericProfileDataWorkerType } from "./GenericProfileDataWorkerType.js";
-import { GenericProfileData } from "./GenericProfileData.js";
+        import { GenericProfileDataWorkerData } from './GenericProfileDataWorkerData.js';
+import { GenericProfileDataWorkerType } from './GenericProfileDataWorkerType.js';
+import { GenericProfileData } from './GenericProfileData.js';
 
 export class GenericProfile
             extends Object

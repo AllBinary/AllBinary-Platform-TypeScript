@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosition.js";
+import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
 
     
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
 

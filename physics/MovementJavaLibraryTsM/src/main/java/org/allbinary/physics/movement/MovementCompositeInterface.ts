@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -40,7 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Movement } from "./Movement.js";
+        import { Movement } from './Movement.js';
 
 export interface MovementCompositeInterface {
         

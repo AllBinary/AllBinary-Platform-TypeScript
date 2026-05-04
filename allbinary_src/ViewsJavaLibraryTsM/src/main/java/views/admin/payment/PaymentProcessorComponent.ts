@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { PaymentProcessorInterface } from "../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterface.js";
+import { PaymentProcessorInterface } from '../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterface.js';
 
     
-import { PaymentProcessorInterfaceFactory } from "../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterfaceFactory.js";
+import { PaymentProcessorInterfaceFactory } from '../../../org/allbinary/business/user/commerce/money/payment/gateway/processor/PaymentProcessorInterfaceFactory.js';
 
     
-import { DomNodeInterface } from "../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoHttpInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { HttpStoreComponentView } from "../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 

@@ -18,97 +18,97 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
+import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 
     
-import { Direction } from "../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionFactory } from "../../../../org/allbinary/direction/DirectionFactory.js";
+import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
 
     
-import { DirectionalCompositeInterface } from "../../../../org/allbinary/direction/DirectionalCompositeInterface.js";
+import { DirectionalCompositeInterface } from '../../../../org/allbinary/direction/DirectionalCompositeInterface.js';
 
     
-import { DirectionalInterface } from "../../../../org/allbinary/direction/DirectionalInterface.js";
+import { DirectionalInterface } from '../../../../org/allbinary/direction/DirectionalInterface.js';
 
     
-import { DestroyedEvent } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js";
+import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
 
     
-import { DestroyedEventHandler } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js";
+import { DestroyedEventHandler } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js';
 
     
-import { DestroyedEventListenerInterface } from "../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js";
+import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { BasicVelocityProperties } from "../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js";
+import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
 
     
-import { VelocityInterfaceCompositeInterface } from "../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js";
+import { VelocityInterfaceCompositeInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
 
     
-import { TrackingEvent } from "../../../../org/allbinary/game/tracking/TrackingEvent.js";
+import { TrackingEvent } from '../../../../org/allbinary/game/tracking/TrackingEvent.js';
 
     
-import { TrackingEventHandler } from "../../../../org/allbinary/game/tracking/TrackingEventHandler.js";
+import { TrackingEventHandler } from '../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 
     
-import { TrackingEventListenerInterface } from "../../../../org/allbinary/game/tracking/TrackingEventListenerInterface.js";
+import { TrackingEventListenerInterface } from '../../../../org/allbinary/game/tracking/TrackingEventListenerInterface.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { MathUtil } from "../../../../org/allbinary/logic/math/MathUtil.js";
+import { MathUtil } from '../../../../org/allbinary/logic/math/MathUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventStrings } from "../../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
-import { Visitor } from "../../../../org/allbinary/logic/util/visitor/Visitor.js";
+import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
 
     
-import { GameTickTimeDelayHelper } from "../../../../org/allbinary/time/GameTickTimeDelayHelper.js";
+import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
 
     
-import { GameTickTimeDelayHelperFactory } from "../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js";
+import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
 
     
-import { TimeDelayHelper } from "../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -129,7 +129,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicAI } from "./BasicAI.js";
+        import { BasicAI } from './BasicAI.js';
 
 export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEventListenerInterface, DestroyedEventListenerInterface {
         

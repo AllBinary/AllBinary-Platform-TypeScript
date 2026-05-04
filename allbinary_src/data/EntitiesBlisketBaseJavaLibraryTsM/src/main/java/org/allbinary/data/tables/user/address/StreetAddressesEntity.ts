@@ -18,53 +18,53 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { Calendar } from "../../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserDbInitInfo } from "../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 
     
-import { UserData } from "../../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { StreetAddress } from "../../../../../../org/allbinary/business/user/address/StreetAddress.js";
+import { StreetAddress } from '../../../../../../org/allbinary/business/user/address/StreetAddress.js';
 
     
-import { StreetAddressData } from "../../../../../../org/allbinary/business/user/address/StreetAddressData.js";
+import { StreetAddressData } from '../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
 
     
-import { TableDataFactory } from "../../../../../../org/allbinary/data/tables/TableDataFactory.js";
+import { TableDataFactory } from '../../../../../../org/allbinary/data/tables/TableDataFactory.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlBean } from "../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -85,7 +85,7 @@ import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StreetAddressesEntityInterface } from "./StreetAddressesEntityInterface.js";
+        import { StreetAddressesEntityInterface } from './StreetAddressesEntityInterface.js';
 
 export class StreetAddressesEntity extends AbSqlBean implements StreetAddressesEntityInterface {
         

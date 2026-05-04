@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ValidationComponentInterface } from "../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TitleBodyValidation } from "../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/title/TitleBodyValidation.js";
+import { TitleBodyValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/title/TitleBodyValidation.js';
 
     
-import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { CustomizerUtil } from "../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js";
+import { CustomizerUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
 
     
 
@@ -69,7 +69,7 @@ import { CustomizerUtil } from "../../../../../../../../../views/business/contex
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TitleBodyCustomizerView } from "./TitleBodyCustomizerView.js";
+        import { TitleBodyCustomizerView } from './TitleBodyCustomizerView.js';
 
 export class NewTitleBodyValidationView extends TitleBodyCustomizerView implements ValidationComponentInterface {
         

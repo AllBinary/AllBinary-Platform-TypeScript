@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../../java/lang/Object.js';
 
 
         
-import { PaymentGatewayInterface } from "../../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js";
+import { PaymentGatewayInterface } from '../../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
 

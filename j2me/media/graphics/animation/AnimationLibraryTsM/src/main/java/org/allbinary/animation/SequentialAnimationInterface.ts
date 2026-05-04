@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnimationInterface } from "./AnimationInterface.js";
-import { SequenceInterface } from "./SequenceInterface.js";
+        import { AnimationInterface } from './AnimationInterface.js';
+import { SequenceInterface } from './SequenceInterface.js';
 
 export interface SequentialAnimationInterface extends AnimationInterface, SequenceInterface {
         

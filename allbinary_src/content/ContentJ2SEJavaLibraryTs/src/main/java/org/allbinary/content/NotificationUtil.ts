@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Command } from "../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
     
-import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
+import { TsUtil } from '../../../org/allbinary/logic/TsUtil.js';
 
     
 
@@ -53,12 +53,12 @@ import { TsUtil } from "../../../org/allbinary/logic/TsUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Context } from "./Context.js";
-import { NotificationManager } from "./NotificationManager.js";
-import { CommandUriAction } from "./CommandUriAction.js";
-import { Intent } from "./Intent.js";
-import { Notification } from "./Notification.js";
-import { PendingIntent } from "./PendingIntent.js";
+        import { Context } from './Context.js';
+import { NotificationManager } from './NotificationManager.js';
+import { CommandUriAction } from './CommandUriAction.js';
+import { Intent } from './Intent.js';
+import { Notification } from './Notification.js';
+import { PendingIntent } from './PendingIntent.js';
 
 export class NotificationUtil
             extends Object

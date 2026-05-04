@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { DomNodeInterface } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { ModDomHelper } from "../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonPhoneStrings } from "../../../../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -62,8 +62,8 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ColorData } from "./ColorData.js";
-import { ColorsData } from "./ColorsData.js";
+        import { ColorData } from './ColorData.js';
+import { ColorsData } from './ColorsData.js';
 
 export class ColorsView
             extends Object

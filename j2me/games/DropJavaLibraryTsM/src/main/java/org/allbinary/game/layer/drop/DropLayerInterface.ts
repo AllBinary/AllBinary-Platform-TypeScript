@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { PickedUpLayerInterface } from "../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js";
+import { PickedUpLayerInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
 
     
-import { LayerInterface } from "../../../../../org/allbinary/layer/LayerInterface.js";
+import { LayerInterface } from '../../../../../org/allbinary/layer/LayerInterface.js';
 
     
 

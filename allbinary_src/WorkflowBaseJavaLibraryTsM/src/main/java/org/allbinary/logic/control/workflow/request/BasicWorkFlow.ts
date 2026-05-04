@@ -18,66 +18,66 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { Calendar } from "../../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../java/util/Set.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { StoreFrontData } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { ModDomHelper } from "../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { RequestParams } from "../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js";
+import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 
     
-import { WeblisketSession } from "../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { WorkFlowData } from "../../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js";
+import { WorkFlowData } from '../../../../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionFactory } from "../../../../../org/allbinary/direction/DirectionFactory.js";
+import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
 
     
-import { AngleIncrementInfo } from "../../../../../org/allbinary/math/AngleIncrementInfo.js";
+import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
 
     
-import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 
     
 
@@ -57,7 +57,7 @@ import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Math } from "./Math.js";
+        import { Math } from './Math.js';
 
 export class BasicDirectionAIHelper
             extends Object

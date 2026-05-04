@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { AnalogLocationInput } from "../../../../../org/allbinary/game/input/analog/AnalogLocationInput.js";
+import { AnalogLocationInput } from '../../../../../org/allbinary/game/input/analog/AnalogLocationInput.js';
 
     
-import { AnalogLocationInputFactory } from "../../../../../org/allbinary/game/input/analog/AnalogLocationInputFactory.js";
+import { AnalogLocationInputFactory } from '../../../../../org/allbinary/game/input/analog/AnalogLocationInputFactory.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
 
@@ -49,8 +49,8 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnalogControllerVisitor } from "./AnalogControllerVisitor.js";
-import { AnalogLocationInputProcessor } from "./AnalogLocationInputProcessor.js";
+        import { AnalogControllerVisitor } from './AnalogControllerVisitor.js';
+import { AnalogLocationInputProcessor } from './AnalogLocationInputProcessor.js';
 
 export class SingleAnalogControllerVisitor extends AnalogControllerVisitor {
         

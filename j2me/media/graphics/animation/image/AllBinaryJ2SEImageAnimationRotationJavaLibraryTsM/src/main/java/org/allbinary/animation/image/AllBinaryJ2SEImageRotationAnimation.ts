@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../../java/lang/Throwable.js';
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { DisposalUtil } from "../../../../org/allbinary/DisposalUtil.js";
+import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
 
     
-import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageModifierUtil.js";
+import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
 
     
-import { ImageRotationUtil } from "../../../../org/allbinary/media/image/ImageRotationUtil.js";
+import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
 
     
 
@@ -74,13 +74,13 @@ import { ImageRotationUtil } from "../../../../org/allbinary/media/image/ImageRo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
-import { ModifierBaseProcessor } from "./ModifierBaseProcessor.js";
-import { ScaleProcessor } from "./ScaleProcessor.js";
-import { ScaleBaseProcessor } from "./ScaleBaseProcessor.js";
-import { SetColorProcessor } from "./SetColorProcessor.js";
-import { ChangeColorProcessor } from "./ChangeColorProcessor.js";
-import { AlphaProcessor } from "./AlphaProcessor.js";
+        import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
+import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';
+import { ScaleProcessor } from './ScaleProcessor.js';
+import { ScaleBaseProcessor } from './ScaleBaseProcessor.js';
+import { SetColorProcessor } from './SetColorProcessor.js';
+import { ChangeColorProcessor } from './ChangeColorProcessor.js';
+import { AlphaProcessor } from './AlphaProcessor.js';
 
 export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimation {
         

@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { Log } from "../../../../../org/allbinary/logic/communication/log/Log.js";
+import { Log } from '../../../../../org/allbinary/logic/communication/log/Log.js';
 
     
-import { LogFactory } from "../../../../../org/allbinary/logic/communication/log/LogFactory.js";
+import { LogFactory } from '../../../../../org/allbinary/logic/communication/log/LogFactory.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LogConfigTypeFactory } from "../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js";
+import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 
     
-import { LogConfigTypes } from "../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
+import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { LinuxOperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/linux/LinuxOperatingSystemFactory.js";
+import { LinuxOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/linux/LinuxOperatingSystemFactory.js';
 
     
-import { SolarisOperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/solaris/SolarisOperatingSystemFactory.js";
+import { SolarisOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/solaris/SolarisOperatingSystemFactory.js';
 
     
-import { WindowsOperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/windows/WindowsOperatingSystemFactory.js";
+import { WindowsOperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/windows/WindowsOperatingSystemFactory.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -77,10 +77,10 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NoOperatingSystem } from "./NoOperatingSystem.js";
-import { GenericOperatingSystem } from "./GenericOperatingSystem.js";
-import { OperatingSystems } from "./OperatingSystems.js";
-import { SystemProperties } from "./SystemProperties.js";
+        import { NoOperatingSystem } from './NoOperatingSystem.js';
+import { GenericOperatingSystem } from './GenericOperatingSystem.js';
+import { OperatingSystems } from './OperatingSystems.js';
+import { SystemProperties } from './SystemProperties.js';
 
 export class OperatingSystemFactory
             extends Object

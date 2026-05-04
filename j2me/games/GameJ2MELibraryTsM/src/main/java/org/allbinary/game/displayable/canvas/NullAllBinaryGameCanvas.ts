@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { Command } from "../../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
 
     
-import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
 
@@ -51,7 +51,7 @@ import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/lay
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryGameCanvasInterface } from "./AllBinaryGameCanvasInterface.js";
+        import { AllBinaryGameCanvasInterface } from './AllBinaryGameCanvasInterface.js';
 
 export class NullAllBinaryGameCanvas
             extends Object

@@ -18,114 +18,114 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { RTSPlayerGameInput } from "../../../../../org/allbinary/game/input/RTSPlayerGameInput.js";
+import { RTSPlayerGameInput } from '../../../../../org/allbinary/game/input/RTSPlayerGameInput.js';
 
     
-import { DemoLockedWithCostLayerInterfaceFactoryInterface } from "../../../../../org/allbinary/game/layer/DemoLockedWithCostLayerInterfaceFactoryInterface.js";
+import { DemoLockedWithCostLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/DemoLockedWithCostLayerInterfaceFactoryInterface.js';
 
     
-import { GeographicMapCellPositionAreaBase } from "../../../../../org/allbinary/game/layer/GeographicMapCellPositionAreaBase.js";
+import { GeographicMapCellPositionAreaBase } from '../../../../../org/allbinary/game/layer/GeographicMapCellPositionAreaBase.js';
 
     
-import { RTSGameStrings } from "../../../../../org/allbinary/game/layer/RTSGameStrings.js";
+import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
 
     
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
+import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 
     
-import { RTSPlayerLayerInterface } from "../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js";
+import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 
     
-import { Capital } from "../../../../../org/allbinary/game/layer/capital/Capital.js";
+import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital.js';
 
     
-import { LayerInterfaceFactoryImageItem } from "../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js";
+import { LayerInterfaceFactoryImageItem } from '../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js';
 
     
-import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { BuildingSound } from "../../../../../org/allbinary/media/audio/BuildingSound.js";
+import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { LockedFeatureNotificationUtil } from "../../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js";
+import { LockedFeatureNotificationUtil } from '../../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
 
     
-import { LockedUtil } from "../../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js";
+import { LockedUtil } from '../../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
 
     
-import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { GameNotificationEvent } from "../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
+import { GameNotificationEvent } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 
     
-import { GameNotificationEventHandler } from "../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js";
+import { GameNotificationEventHandler } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { ErrorSound } from "../../../../../org/allbinary/media/audio/ErrorSound.js";
+import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
-import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js";
+import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 
     
-import { SimpleGeographicMapCellPositionFactory } from "../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js";
+import { SimpleGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/SimpleGeographicMapCellPositionFactory.js';
 
     
-import { DropCellPositionHistory } from "../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js";
+import { DropCellPositionHistory } from '../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
 
     
-import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellTypeFactory.js";
+import { RaceTrackGeographicMapCellTypeFactory } from '../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellTypeFactory.js';
 
     
 
@@ -146,7 +146,7 @@ import { RaceTrackGeographicMapCellTypeFactory } from "../../../../../org/allbin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSFormInput } from "./RTSFormInput.js";
+        import { RTSFormInput } from './RTSFormInput.js';
 
 export class BuildingRTSFormInput extends RTSFormInput {
         

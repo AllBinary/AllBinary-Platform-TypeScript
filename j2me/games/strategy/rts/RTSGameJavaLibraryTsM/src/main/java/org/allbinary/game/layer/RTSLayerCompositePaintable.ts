@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -52,8 +52,8 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UpgradableRTSLayerHudPaintable } from "./UpgradableRTSLayerHudPaintable.js";
-import { RTSLayer } from "./RTSLayer.js";
+        import { UpgradableRTSLayerHudPaintable } from './UpgradableRTSLayerHudPaintable.js';
+import { RTSLayer } from './RTSLayer.js';
 
 export class RTSLayerCompositePaintable extends Paintable {
         

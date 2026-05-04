@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { StreetAddressesEntity } from "../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js";
+import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/tables/user/address/StreetAddressesEntity.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -51,7 +51,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ShippingAddressesEntity } from "./ShippingAddressesEntity.js";
+        import { ShippingAddressesEntity } from './ShippingAddressesEntity.js';
 
 export class ShippingAddressesEntityFactory
             extends Object

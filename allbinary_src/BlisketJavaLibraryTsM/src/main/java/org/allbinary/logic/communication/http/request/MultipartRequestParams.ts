@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { List } from "../../../../../../java/util/List.js";
+import { List } from '../../../../../../java/util/List.js';
 
     
-import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { AbFileUploadFactory } from "../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js";
+import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { FileItem } from "../../../../../../org/apache/commons/fileupload/FileItem.js";
+import { FileItem } from '../../../../../../org/apache/commons/fileupload/FileItem.js';
 
     
-import { InvalidContentTypeException } from "../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js";
+import { InvalidContentTypeException } from '../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js';
 
     
 
@@ -69,7 +69,7 @@ import { InvalidContentTypeException } from "../../../../../../org/apache/common
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RequestParams } from "./RequestParams.js";
+        import { RequestParams } from './RequestParams.js';
 
 export class MultipartRequestParams extends RequestParams {
         

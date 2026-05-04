@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from "../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { Closeable } from "../../../../java/io/Closeable.js";
+import { Closeable } from '../../../../java/io/Closeable.js';
 
     
-import { InputStream } from "../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../java/io/InputStream.js';
 
     
-import { OutputStream } from "../../../../java/io/OutputStream.js";
+import { OutputStream } from '../../../../java/io/OutputStream.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 

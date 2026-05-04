@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { BasicHudFactory } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js";
+import { BasicHudFactory } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 
     
-import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -54,7 +54,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameNotificationHud } from "./GameNotificationHud.js";
+        import { GameNotificationHud } from './GameNotificationHud.js';
 
 export class NoGameNotificationHudSingleton
             extends Object

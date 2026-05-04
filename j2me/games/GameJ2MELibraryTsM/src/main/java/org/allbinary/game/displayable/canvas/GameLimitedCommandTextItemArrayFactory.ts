@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { CommandTextItemArrayFactory } from "../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js";
+import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
 
     
-import { LimitCommandsVisitor } from "../../../../../org/allbinary/graphics/form/item/LimitCommandsVisitor.js";
+import { LimitCommandsVisitor } from '../../../../../org/allbinary/graphics/form/item/LimitCommandsVisitor.js';
 
     
 

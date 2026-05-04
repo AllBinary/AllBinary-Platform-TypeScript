@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { SensorFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js";
+import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 
     
-import { AllBinaryOrientationSensor } from "../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js";
+import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js';
 
     
 
@@ -51,7 +51,7 @@ import { AllBinaryOrientationSensor } from "../../../../org/allbinary/input/gyro
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NoAccelerometerSensor } from "./NoAccelerometerSensor.js";
+        import { NoAccelerometerSensor } from './NoAccelerometerSensor.js';
 
 export class AccelerometerSensorFactory
             extends Object

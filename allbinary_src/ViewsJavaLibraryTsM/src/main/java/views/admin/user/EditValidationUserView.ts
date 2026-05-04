@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../java/util/HashMap.js";
+import { HashMap } from '../../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { UserName } from "../../../org/allbinary/business/user/username/UserName.js";
+import { UserName } from '../../../org/allbinary/business/user/username/UserName.js';
 
     
-import { UserEntityFactory } from "../../../org/allbinary/data/tables/user/UserEntityFactory.js";
+import { UserEntityFactory } from '../../../org/allbinary/data/tables/user/UserEntityFactory.js';
 
     
-import { RequestParams } from "../../../org/allbinary/logic/communication/http/request/RequestParams.js";
+import { RequestParams } from '../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ValidationComponentInterface } from "../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../org/w3c/dom/Document.js";
+import { Document } from '../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../org/w3c/dom/Node.js";
+import { Node } from '../../../org/w3c/dom/Node.js';
 
     
 
@@ -75,7 +75,7 @@ import { Node } from "../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UserView } from "./UserView.js";
+        import { UserView } from './UserView.js';
 
 export class EditValidationUserView extends UserView implements ValidationComponentInterface {
         

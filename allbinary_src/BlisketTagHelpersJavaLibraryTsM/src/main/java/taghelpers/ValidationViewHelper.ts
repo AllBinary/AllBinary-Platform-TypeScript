@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-            import { Exception } from "../java/lang/Exception.js";
+            import { Exception } from '../java/lang/Exception.js';
         
-import { HashMap } from "../java/util/HashMap.js";
+import { HashMap } from '../java/util/HashMap.js';
 
     
-import { PageContext } from "../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../javax/servlet/jsp/PageContext.js';
 
     
-import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ValidationComponentInterface } from "../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { Document } from "../org/w3c/dom/Document.js";
+import { Document } from '../org/w3c/dom/Document.js';
 
     
-import { Node } from "../org/w3c/dom/Node.js";
+import { Node } from '../org/w3c/dom/Node.js';
 
     
 
@@ -60,7 +60,7 @@ import { Node } from "../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ViewHelper } from "./ViewHelper.js";
+        import { ViewHelper } from './ViewHelper.js';
 
 export class ValidationViewHelper extends ViewHelper implements ValidationComponentInterface {
         

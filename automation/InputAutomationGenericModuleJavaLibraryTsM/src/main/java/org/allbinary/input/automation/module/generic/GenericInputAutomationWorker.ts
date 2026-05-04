@@ -18,60 +18,60 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../java/util/Set.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { AbstractInputAutomationWorker } from "../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js";
+import { AbstractInputAutomationWorker } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
 
     
-import { InputAutomationActionInterface } from "../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js";
+import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
 
     
-import { GenericProfile } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js";
+import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 
     
-import { GenericProfileDataWorkerType } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js";
+import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
 
     
-import { GenericProfileAction } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js";
+import { GenericProfileAction } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
 
     
-import { GenericProfileActionScript } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js";
+import { GenericProfileActionScript } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js';
 
     
-import { CapturedBufferedImagesCacheSingleton } from "../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js";
+import { CapturedBufferedImagesCacheSingleton } from '../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { J2SECacheInterface } from "../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js";
+import { J2SECacheInterface } from '../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
 
     
-import { ImageComparatorConstraintsInterface } from "../../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js";
+import { ImageComparatorConstraintsInterface } from '../../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
 
     
-import { ImageComparisonWorker } from "../../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js";
+import { ImageComparisonWorker } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
 
     
-import { MotionRectangleConstraintsInterface } from "../../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js";
+import { MotionRectangleConstraintsInterface } from '../../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
 
     
-import { MotionRectanglesWorker } from "../../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js";
+import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
 
     
 
@@ -92,8 +92,8 @@ import { MotionRectanglesWorker } from "../../../../../../org/allbinary/media/im
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GenericProfileCaptureWorkerFactory } from "./GenericProfileCaptureWorkerFactory.js";
-import { CaptureWorkerUtil } from "./CaptureWorkerUtil.js";
+        import { GenericProfileCaptureWorkerFactory } from './GenericProfileCaptureWorkerFactory.js';
+import { CaptureWorkerUtil } from './CaptureWorkerUtil.js';
 
 export class GenericInputAutomationWorker extends AbstractInputAutomationWorker {
         

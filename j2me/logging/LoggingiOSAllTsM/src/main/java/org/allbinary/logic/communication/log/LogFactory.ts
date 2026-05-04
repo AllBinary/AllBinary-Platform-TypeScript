@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -46,7 +46,7 @@ import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Log } from "./Log.js";
+        import { Log } from './Log.js';
 
 /*actual*/ export class LogFactory
             extends Object

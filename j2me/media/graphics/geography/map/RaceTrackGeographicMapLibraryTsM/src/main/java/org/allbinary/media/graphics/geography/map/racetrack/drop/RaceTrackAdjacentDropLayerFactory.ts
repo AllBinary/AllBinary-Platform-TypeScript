@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { BasicArrayListUtil } from "../../../../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
-import { LayerInterfaceFactoryInterface } from "../../../../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js";
+import { LayerInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
 
     
 

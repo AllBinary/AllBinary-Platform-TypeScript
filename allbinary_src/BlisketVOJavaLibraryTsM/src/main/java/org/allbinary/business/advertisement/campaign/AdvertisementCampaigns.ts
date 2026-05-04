@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { AdvertisementInterface } from "../../../../../org/allbinary/business/advertisement/AdvertisementInterface.js";
+import { AdvertisementInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementInterface.js';
 
     
-import { AdvertisementsInterface } from "../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js";
+import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
 
     
-import { AdvertisementSearchInterface } from "../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js";
+import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
 
     
 
@@ -52,7 +52,7 @@ import { AdvertisementSearchInterface } from "../../../../../org/allbinary/busin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AdvertisementCampaignsInterface } from "./AdvertisementCampaignsInterface.js";
+        import { AdvertisementCampaignsInterface } from './AdvertisementCampaignsInterface.js';
 
 export class AdvertisementCampaigns
             extends Object

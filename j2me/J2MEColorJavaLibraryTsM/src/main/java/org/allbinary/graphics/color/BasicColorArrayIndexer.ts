@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -43,7 +43,7 @@ import { CircularIndexUtil } from "../../../../org/allbinary/util/CircularIndexU
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicColor } from "./BasicColor.js";
+        import { BasicColor } from './BasicColor.js';
 
 export class BasicColorArrayIndexer
             extends Object

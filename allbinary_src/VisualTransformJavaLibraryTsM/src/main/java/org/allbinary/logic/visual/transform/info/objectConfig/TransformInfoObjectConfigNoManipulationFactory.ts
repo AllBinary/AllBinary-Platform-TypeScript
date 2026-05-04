@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from "../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CryptFileReader } from "../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js";
+import { CryptFileReader } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 
     
-import { AbPath } from "../../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -60,9 +60,9 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoObjectConfigData } from "./TransformInfoObjectConfigData.js";
-import { TransformInfoObjectConfig } from "./TransformInfoObjectConfig.js";
-import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
+        import { TransformInfoObjectConfigData } from './TransformInfoObjectConfigData.js';
+import { TransformInfoObjectConfig } from './TransformInfoObjectConfig.js';
+import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
 
 export class TransformInfoObjectConfigNoManipulationFactory
             extends Object

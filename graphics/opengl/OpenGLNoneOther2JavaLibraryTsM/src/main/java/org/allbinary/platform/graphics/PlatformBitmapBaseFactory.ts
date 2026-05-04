@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
 
@@ -43,7 +43,7 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PlatformBitmapBase } from "./PlatformBitmapBase.js";
+        import { PlatformBitmapBase } from './PlatformBitmapBase.js';
 
 export class PlatformBitmapBaseFactory
             extends Object

@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Font } from "../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 
     
-import { AndroidUtil } from "../../../../org/allbinary/AndroidUtil.js";
+import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
 
     
-import { AvianUtil } from "../../../../org/allbinary/AvianUtil.js";
+import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 

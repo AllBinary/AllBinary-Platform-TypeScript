@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
 
 
@@ -42,7 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WorkFlowInterface } from "./WorkFlowInterface.js";
+        import { WorkFlowInterface } from './WorkFlowInterface.js';
 
 export interface StoreWorkFlowInterface extends WorkFlowInterface {
         

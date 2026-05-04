@@ -18,51 +18,51 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../../java/lang/Thread.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { InputEvent } from "../../../../../../java/awt/event/InputEvent.js";
+import { InputEvent } from '../../../../../../java/awt/event/InputEvent.js';
 
     
-import { KeyEvent } from "../../../../../../java/awt/event/KeyEvent.js";
+import { KeyEvent } from '../../../../../../java/awt/event/KeyEvent.js';
 
     
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { InputRobotFactory } from "../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
+import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 
     
-import { InputRobotInterface } from "../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
+import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 
     
-import { TempInputRobotNames } from "../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js";
+import { TempInputRobotNames } from '../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -83,10 +83,10 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListener.js";
-import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
-import { MotionRectangles } from "./MotionRectangles.js";
-import { Rectangle } from "./Rectangle.js";
+        import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
+import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
+import { MotionRectangles } from './MotionRectangles.js';
+import { Rectangle } from './Rectangle.js';
 
 export class TestInputForMotionRectanglesResultsWorker
             extends Object

@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { awt } from "../../../../../java/awt.js";
+import { awt } from '../../../../../java/awt.js';
 
     
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -53,13 +53,13 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogFormatUtil } from "./LogFormatUtil.js";
-import { JDialog } from "./JDialog.js";
-import { GridLayout } from "./GridLayout.js";
-import { JScrollPane } from "./JScrollPane.js";
-import { JLabel } from "./JLabel.js";
-import { JTextArea } from "./JTextArea.js";
-import { PreLogUtil } from "./PreLogUtil.js";
+        import { LogFormatUtil } from './LogFormatUtil.js';
+import { JDialog } from './JDialog.js';
+import { GridLayout } from './GridLayout.js';
+import { JScrollPane } from './JScrollPane.js';
+import { JLabel } from './JLabel.js';
+import { JTextArea } from './JTextArea.js';
+import { PreLogUtil } from './PreLogUtil.js';
 
 export class GuiLog
             extends Object

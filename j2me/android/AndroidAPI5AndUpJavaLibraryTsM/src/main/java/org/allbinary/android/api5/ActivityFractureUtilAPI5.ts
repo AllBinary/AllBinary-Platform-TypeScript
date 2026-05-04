@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { TouchScreenTypeFactory } from "../../../../org/allbinary/input/motion/button/TouchScreenTypeFactory.js";
+import { TouchScreenTypeFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenTypeFactory.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { Activity } from "../../../../android/app/Activity.js";
+import { Activity } from '../../../../android/app/Activity.js';
 
     
-import { ActivityFractureUtilAPI1 } from "../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js";
+import { ActivityFractureUtilAPI1 } from '../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
 
     
-import { TouchScreenFactory } from "../../../../org/allbinary/input/motion/button/TouchScreenFactory.js";
+import { TouchScreenFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenFactory.js';
 
     
 

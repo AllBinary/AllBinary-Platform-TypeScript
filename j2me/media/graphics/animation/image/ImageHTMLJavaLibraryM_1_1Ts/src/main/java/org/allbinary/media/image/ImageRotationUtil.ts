@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { PlaynImmutableImage } from "../../../../org/microemu/device/playn/PlaynImmutableImage.js";
+import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
 
     
-import { PlaynMutableImage } from "../../../../org/microemu/device/playn/PlaynMutableImage.js";
+import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
 
     
-import { CanvasImage } from "../../../../playn/core/CanvasImage.js";
+import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
 
     
-import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
+import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
 
     
 
@@ -57,8 +57,8 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Math } from "./Math.js";
-import { ImageCreationUtil } from "./ImageCreationUtil.js";
+        import { Math } from './Math.js';
+import { ImageCreationUtil } from './ImageCreationUtil.js';
 
 export class ImageRotationUtil
             extends Object

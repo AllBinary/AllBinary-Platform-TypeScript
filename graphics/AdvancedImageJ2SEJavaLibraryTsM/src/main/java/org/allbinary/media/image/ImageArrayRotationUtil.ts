@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -54,9 +54,9 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageJ2SERotationUtil } from "./ImageJ2SERotationUtil.js";
-import { ImageProcessorInput } from "./ImageProcessorInput.js";
-import { ImageProcessedVisitor } from "./ImageProcessedVisitor.js";
+        import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
+import { ImageProcessorInput } from './ImageProcessorInput.js';
+import { ImageProcessedVisitor } from './ImageProcessedVisitor.js';
 
 export class ImageArrayRotationUtil
             extends Object

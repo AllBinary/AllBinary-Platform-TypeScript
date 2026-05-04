@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { ArrayList } from "../../../../../../../java/util/ArrayList.js";
+import { ArrayList } from '../../../../../../../java/util/ArrayList.js';
 
     
-import { List } from "../../../../../../../java/util/List.js";
+import { List } from '../../../../../../../java/util/List.js';
 
     
-import { HttpServletRequest } from "../../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { AbFileItemFactory } from "../../../../../../../org/allbinary/logic/communication/http/AbFileItemFactory.js";
+import { AbFileItemFactory } from '../../../../../../../org/allbinary/logic/communication/http/AbFileItemFactory.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { FileItemIterator } from "../../../../../../../org/apache/commons/fileupload/FileItemIterator.js";
+import { FileItemIterator } from '../../../../../../../org/apache/commons/fileupload/FileItemIterator.js';
 
     
-import { FileItemStream } from "../../../../../../../org/apache/commons/fileupload/FileItemStream.js";
+import { FileItemStream } from '../../../../../../../org/apache/commons/fileupload/FileItemStream.js';
 
     
-import { FileItemUtil } from "../../../../../../../org/apache/commons/fileupload/FileItemUtil.js";
+import { FileItemUtil } from '../../../../../../../org/apache/commons/fileupload/FileItemUtil.js';
 
     
 
@@ -69,9 +69,9 @@ import { FileItemUtil } from "../../../../../../../org/apache/commons/fileupload
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbFileUpload } from "./AbFileUpload.js";
-import { HttpFileUploadUtil } from "./HttpFileUploadUtil.js";
-import { AbFileItem } from "./AbFileItem.js";
+        import { AbFileUpload } from './AbFileUpload.js';
+import { HttpFileUploadUtil } from './HttpFileUploadUtil.js';
+import { AbFileItem } from './AbFileItem.js';
 
 export class AbFileUploadFactory
             extends Object

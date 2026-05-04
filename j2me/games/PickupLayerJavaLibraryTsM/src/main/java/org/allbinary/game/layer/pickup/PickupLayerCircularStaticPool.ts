@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js";
+import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
 
     
 
@@ -45,9 +45,9 @@ import { AllBinaryLayerCircularPool } from "../../../../../org/allbinary/layer/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PickupLayer } from "./PickupLayer.js";
-import { PickedUpLayerInterface } from "./PickedUpLayerInterface.js";
-import { PickedUpLayerInterfaceFactoryInterface } from "./PickedUpLayerInterfaceFactoryInterface.js";
+        import { PickupLayer } from './PickupLayer.js';
+import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';
+import { PickedUpLayerInterfaceFactoryInterface } from './PickedUpLayerInterfaceFactoryInterface.js';
 
 export class PickupLayerCircularStaticPool extends AllBinaryLayerCircularPool {
         

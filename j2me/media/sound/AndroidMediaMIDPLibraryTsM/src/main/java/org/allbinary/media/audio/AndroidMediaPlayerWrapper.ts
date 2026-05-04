@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { MediaException } from "../../../../javax/microedition/media/MediaException.js";
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from "../../../../javax/microedition/media/Player.js";
+import { Player } from '../../../../javax/microedition/media/Player.js';
 
     
-import { PlayerListener } from "../../../../javax/microedition/media/PlayerListener.js";
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 
     
-import { MediaPlayer } from "../../../../android/media/MediaPlayer.js";
+import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
 
     
-import { NullAndroidCanvas } from "../../../../org/allbinary/android/NullAndroidCanvas.js";
+import { NullAndroidCanvas } from '../../../../org/allbinary/android/NullAndroidCanvas.js';
 
     
-import { ResourceUtil } from "../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -74,7 +74,7 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicPlayer } from "./BasicPlayer.js";
+        import { BasicPlayer } from './BasicPlayer.js';
 
 export class AndroidMediaPlayerWrapper extends BasicPlayer {
         

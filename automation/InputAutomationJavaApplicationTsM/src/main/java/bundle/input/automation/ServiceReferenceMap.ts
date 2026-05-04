@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Collection } from "../../../java/util/Collection.js";
+import { Collection } from '../../../java/util/Collection.js';
 
     
-import { Map } from "../../../java/util/Map.js";
+import { Map } from '../../../java/util/Map.js';
 
     
-import { Set } from "../../../java/util/Set.js";
+import { Set } from '../../../java/util/Set.js';
 
     
-import { ServiceReference } from "../../../org/osgi/framework/ServiceReference.js";
+import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
 

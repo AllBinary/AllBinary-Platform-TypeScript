@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
 
@@ -49,7 +49,7 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TrackingEventHandler } from "./TrackingEventHandler.js";
+        import { TrackingEventHandler } from './TrackingEventHandler.js';
 
 export class TrackingEvent extends AllBinaryEventObject {
         

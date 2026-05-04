@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { KeySpec } from "../../../../../../java/security/spec/KeySpec.js";
+import { KeySpec } from '../../../../../../java/security/spec/KeySpec.js';
 
     
 

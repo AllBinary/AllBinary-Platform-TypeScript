@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { GameConfigurationCentral } from "../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
+import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
 
@@ -63,9 +63,9 @@ import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
-import { AdjustedImageBaseRotationAnimation } from "./AdjustedImageBaseRotationAnimation.js";
+        import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
+import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
+import { AdjustedImageBaseRotationAnimation } from './AdjustedImageBaseRotationAnimation.js';
 
 export class ImageRotationAnimationFactory extends BaseImageAnimationFactory {
         

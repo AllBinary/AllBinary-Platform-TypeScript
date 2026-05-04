@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { Bitmap } from "../../../../android/graphics/Bitmap.js";
+import { Bitmap } from '../../../../android/graphics/Bitmap.js';
 
     
-import { Canvas } from "../../../../android/graphics/Canvas.js";
+import { Canvas } from '../../../../android/graphics/Canvas.js';
 
     
-import { Matrix } from "../../../../android/graphics/Matrix.js";
+import { Matrix } from '../../../../android/graphics/Matrix.js';
 
     
-import { AndroidImageInterface } from "../../../../org/microemu/android/device/AndroidImageInterface.js";
+import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 
     
 
@@ -60,7 +60,7 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageCreationUtil } from "./ImageCreationUtil.js";
+        import { ImageCreationUtil } from './ImageCreationUtil.js';
 
 export class ImageRotationUtil
             extends Object

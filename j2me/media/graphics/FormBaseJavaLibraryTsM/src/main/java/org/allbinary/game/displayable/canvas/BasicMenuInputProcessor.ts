@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { NullCanvas } from "../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { PlayerGameInput } from "../../../../../org/allbinary/game/input/PlayerGameInput.js";
+import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
 
     
-import { MyCanvas } from "../../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { BaseMotionGestureEventListener } from "../../../../../org/allbinary/input/motion/gesture/observer/BaseMotionGestureEventListener.js";
+import { BaseMotionGestureEventListener } from '../../../../../org/allbinary/input/motion/gesture/observer/BaseMotionGestureEventListener.js';
 
     
-import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
+import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 

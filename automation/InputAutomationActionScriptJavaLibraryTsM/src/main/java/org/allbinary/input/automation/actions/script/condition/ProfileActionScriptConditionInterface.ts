@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { ProfileActionScriptItemInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js";
+import { ProfileActionScriptItemInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
 
     
-import { ProfileActionScriptNodeInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js";
+import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
 
     
-import { ProfileActionScriptProcessorInterface } from "../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js";
+import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
 
     
 
@@ -53,7 +53,7 @@ import { ProfileActionScriptProcessorInterface } from "../../../../../../../org/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomTreeNodeInterface } from "./CustomTreeNodeInterface.js";
+        import { CustomTreeNodeInterface } from './CustomTreeNodeInterface.js';
 
 export interface ProfileActionScriptConditionInterface extends ProfileActionScriptNodeInterface, CustomTreeNodeInterface, ProfileActionScriptItemInterface {
         

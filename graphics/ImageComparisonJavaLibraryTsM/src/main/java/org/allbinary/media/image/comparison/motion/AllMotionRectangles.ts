@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { ImageComparisonResult } from "../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js";
+import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
 
     
-import { PixelDelta } from "../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js";
+import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
 
     
 
@@ -54,9 +54,9 @@ import { PixelDelta } from "../../../../../../org/allbinary/media/image/comparis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MotionRectangles } from "./MotionRectangles.js";
-import { MotionRectangle } from "./MotionRectangle.js";
-import { Rectangle } from "./Rectangle.js";
+        import { MotionRectangles } from './MotionRectangles.js';
+import { MotionRectangle } from './MotionRectangle.js';
+import { Rectangle } from './Rectangle.js';
 
 export class AllMotionRectangles extends MotionRectangles {
         

@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 
     
-import { ByteArrayOutputStream } from "../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { FileInputStream } from "../../../../java/io/FileInputStream.js";
+import { FileInputStream } from '../../../../java/io/FileInputStream.js';
 
     
-import { InputStream } from "../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../java/io/InputStream.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StreamUtil } from "../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -71,7 +71,7 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ClassLoader } from "./ClassLoader.js";
+        import { ClassLoader } from './ClassLoader.js';
 
 export class ResourceUtil
             extends Object

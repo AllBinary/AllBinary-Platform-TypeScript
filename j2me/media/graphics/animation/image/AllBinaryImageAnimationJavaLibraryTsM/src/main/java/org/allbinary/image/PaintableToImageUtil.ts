@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { PaintableInterface } from "../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
 
@@ -51,7 +51,7 @@ import { PaintableInterface } from "../../../org/allbinary/graphics/paint/Painta
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameFeatureImageCacheFactory } from "./GameFeatureImageCacheFactory.js";
+        import { GameFeatureImageCacheFactory } from './GameFeatureImageCacheFactory.js';
 
 export class PaintableToImageUtil
             extends Object

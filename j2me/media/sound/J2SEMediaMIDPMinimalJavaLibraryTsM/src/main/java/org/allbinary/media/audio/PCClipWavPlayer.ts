@@ -18,65 +18,65 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-            import { IllegalArgumentException } from "../../../../java/lang/IllegalArgumentException.js";
+            import { IllegalArgumentException } from '../../../../java/lang/IllegalArgumentException.js';
         
-import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 
     
-import { InputStream } from "../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../java/io/InputStream.js';
 
     
-import { Control } from "../../../../javax/microedition/media/Control.js";
+import { Control } from '../../../../javax/microedition/media/Control.js';
 
     
-import { MediaException } from "../../../../javax/microedition/media/MediaException.js";
+import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { PlayerListener } from "../../../../javax/microedition/media/PlayerListener.js";
+import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 
     
-import { AudioInputStream } from "../../../../javax/sound/sampled/AudioInputStream.js";
+import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
 
     
-import { AudioSystem } from "../../../../javax/sound/sampled/AudioSystem.js";
+import { AudioSystem } from '../../../../javax/sound/sampled/AudioSystem.js';
 
     
-import { Clip } from "../../../../javax/sound/sampled/Clip.js";
+import { Clip } from '../../../../javax/sound/sampled/Clip.js';
 
     
-import { FloatControl } from "../../../../javax/sound/sampled/FloatControl.js";
+import { FloatControl } from '../../../../javax/sound/sampled/FloatControl.js';
 
     
-import { LineEvent } from "../../../../javax/sound/sampled/LineEvent.js";
+import { LineEvent } from '../../../../javax/sound/sampled/LineEvent.js';
 
     
-import { LineListener } from "../../../../javax/sound/sampled/LineListener.js";
+import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { MusicThreadPool } from "../../../../org/allbinary/thread/MusicThreadPool.js";
+import { MusicThreadPool } from '../../../../org/allbinary/thread/MusicThreadPool.js';
 
     
 
@@ -97,11 +97,11 @@ import { MusicThreadPool } from "../../../../org/allbinary/thread/MusicThreadPoo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicPlayer } from "./BasicPlayer.js";
-import { NullAudioFormat } from "./NullAudioFormat.js";
-import { NullClip } from "./NullClip.js";
-import { NullControl } from "./NullControl.js";
-import { Math } from "./Math.js";
+        import { BasicPlayer } from './BasicPlayer.js';
+import { NullAudioFormat } from './NullAudioFormat.js';
+import { NullClip } from './NullClip.js';
+import { NullControl } from './NullControl.js';
+import { Math } from './Math.js';
 
 export class PCClipWavPlayer extends BasicPlayer implements LineListener {
         

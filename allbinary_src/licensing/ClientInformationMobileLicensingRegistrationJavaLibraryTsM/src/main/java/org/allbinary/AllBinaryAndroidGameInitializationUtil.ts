@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../java/lang/Integer.js";
+            import { Integer } from '../../java/lang/Integer.js';
         
-import { LicenseInitInfoUtil } from "../../org/allbinary/business/init/LicenseInitInfoUtil.js";
+import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseInitInfoUtil.js';
 
     
-import { ResourceUtil } from "../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { PartnerIdentifierFileUtil } from "../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js";
+import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
 
     
 
@@ -51,7 +51,7 @@ import { PartnerIdentifierFileUtil } from "../../org/allbinary/logic/system/secu
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AndroidResources } from "./AndroidResources.js";
+        import { AndroidResources } from './AndroidResources.js';
 
 export class AllBinaryAndroidGameInitializationUtil
             extends Object

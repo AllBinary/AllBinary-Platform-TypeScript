@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
 
@@ -51,8 +51,8 @@ import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/An
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-import { TopToBottomImageAnimation } from "./TopToBottomImageAnimation.js";
+        import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
+import { TopToBottomImageAnimation } from './TopToBottomImageAnimation.js';
 
 export class TopToBottomImageAnimationFactory extends BaseImageAnimationFactory {
         

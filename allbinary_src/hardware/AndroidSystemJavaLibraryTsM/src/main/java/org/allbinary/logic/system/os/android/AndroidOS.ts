@@ -20,22 +20,22 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AndroidInfoFactory } from "../../../../../../org/allbinary/android/AndroidInfoFactory.js";
+import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/AndroidInfoFactory.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { GenericOperatingSystem } from "../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
+import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -56,7 +56,7 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AndroidSystemProperties } from "./AndroidSystemProperties.js";
+        import { AndroidSystemProperties } from './AndroidSystemProperties.js';
 
 export class AndroidOS extends GenericOperatingSystem {
         

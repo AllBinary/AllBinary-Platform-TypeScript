@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { DomNodeHelper } from "../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Attr } from "../../../../../../org/w3c/dom/Attr.js";
+import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
 
     
-import { NamedNodeMap } from "../../../../../../org/w3c/dom/NamedNodeMap.js";
+import { NamedNodeMap } from '../../../../../../org/w3c/dom/NamedNodeMap.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -66,9 +66,9 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoInterface } from "./TransformInfoInterface.js";
-import { TransformInfoData } from "./TransformInfoData.js";
-import { TransformInfo } from "./TransformInfo.js";
+        import { TransformInfoInterface } from './TransformInfoInterface.js';
+import { TransformInfoData } from './TransformInfoData.js';
+import { TransformInfo } from './TransformInfo.js';
 
 export class TransformInfoDomNode
             extends Object

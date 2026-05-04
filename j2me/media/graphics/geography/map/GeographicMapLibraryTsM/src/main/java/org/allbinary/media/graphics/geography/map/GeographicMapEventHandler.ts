@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { AllBinaryGameLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
+import { AllBinaryGameLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
 
     
-import { EventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
-import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js";
+import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 
     
-import { EventStrings } from "../../../../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 

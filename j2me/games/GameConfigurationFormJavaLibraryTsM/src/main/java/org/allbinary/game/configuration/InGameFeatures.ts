@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { GameFeatureChoiceGroups } from "../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js";
+import { GameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/GameFeatureChoiceGroups.js';
 
     
-import { InGameFeatureChoiceGroups } from "../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js";
+import { InGameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js';
 
     
-import { SensorFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js";
+import { SensorFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/SensorFeatureFactory.js';
 
     
-import { TouchFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js";
+import { TouchFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
 
     
-import { Init } from "../../../../org/allbinary/init/Init.js";
+import { Init } from '../../../../org/allbinary/init/Init.js';
 
     
-import { OrientationData } from "../../../../org/allbinary/input/gyro/OrientationData.js";
+import { OrientationData } from '../../../../org/allbinary/input/gyro/OrientationData.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 

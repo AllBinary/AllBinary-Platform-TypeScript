@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Command } from "../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
     
-import { Notification } from "../../../android/app/Notification.js";
+import { Notification } from '../../../android/app/Notification.js';
 
     
-import { NotificationManager } from "../../../android/app/NotificationManager.js";
+import { NotificationManager } from '../../../android/app/NotificationManager.js';
 
     
-import { PendingIntent } from "../../../android/app/PendingIntent.js";
+import { PendingIntent } from '../../../android/app/PendingIntent.js';
 
     
-import { Context } from "../../../android/content/Context.js";
+import { Context } from '../../../android/content/Context.js';
 
     
-import { Intent } from "../../../android/content/Intent.js";
+import { Intent } from '../../../android/content/Intent.js';
 
     
-import { AndroidInfoFactory } from "../../../org/allbinary/android/AndroidInfoFactory.js";
+import { AndroidInfoFactory } from '../../../org/allbinary/android/AndroidInfoFactory.js';
 
     
-import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -72,9 +72,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NotificationBuilder } from "./NotificationBuilder.js";
-import { NotificationBuilderAPI23 } from "./NotificationBuilderAPI23.js";
-import { CommandUriAction } from "./CommandUriAction.js";
+        import { NotificationBuilder } from './NotificationBuilder.js';
+import { NotificationBuilderAPI23 } from './NotificationBuilderAPI23.js';
+import { CommandUriAction } from './CommandUriAction.js';
 
 export class NotificationUtil
             extends Object

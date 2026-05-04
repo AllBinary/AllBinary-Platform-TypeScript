@@ -4,7 +4,7 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
@@ -26,7 +26,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLESGraphics } from "./OpenGLESGraphics.js";
+        import { OpenGLESGraphics } from './OpenGLESGraphics.js';
 
 export class OpenGLESGraphicsFactory
             extends Object

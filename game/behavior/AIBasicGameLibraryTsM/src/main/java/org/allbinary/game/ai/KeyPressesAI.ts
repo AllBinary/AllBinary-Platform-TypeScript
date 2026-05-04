@@ -18,27 +18,27 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
+import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
 
     
 
@@ -59,7 +59,7 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicAI } from "./BasicAI.js";
+        import { BasicAI } from './BasicAI.js';
 
 export class KeyPressesAI extends BasicAI {
         

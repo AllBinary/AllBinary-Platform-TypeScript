@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-            import { Long } from "../../java/lang/Long.js";
+            import { Long } from '../../java/lang/Long.js';
         
-import { Calendar } from "../../java/util/Calendar.js";
+import { Calendar } from '../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { Vector } from "../../java/util/Vector.js";
+import { Vector } from '../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { EntryData } from "../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
 
     
-import { BasicItemData } from "../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
+import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 
     
-import { PermissionItemData } from "../../org/allbinary/business/user/commerce/inventory/item/permission/PermissionItemData.js";
+import { PermissionItemData } from '../../org/allbinary/business/user/commerce/inventory/item/permission/PermissionItemData.js';
 
     
-import { PermissionItemsEntityFactory } from "../../org/allbinary/data/tables/user/commerce/inventory/item/permissions/PermissionItemsEntityFactory.js";
+import { PermissionItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/permissions/PermissionItemsEntityFactory.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -80,7 +80,7 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ModifyTable } from "./ModifyTable.js";
+        import { ModifyTable } from './ModifyTable.js';
 
 export class PermissionItemsRequestHelper extends ModifyTable {
         

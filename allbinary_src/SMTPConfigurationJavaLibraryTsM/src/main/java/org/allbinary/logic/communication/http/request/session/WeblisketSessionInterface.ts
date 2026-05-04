@@ -18,18 +18,18 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { OrderInterface } from "../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js";
+import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 
     
-import { UserRole } from "../../../../../../../org/allbinary/business/user/role/UserRole.js";
+import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
 
     
 

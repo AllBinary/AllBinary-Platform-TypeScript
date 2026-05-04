@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { AdvertisementCategoryInterface } from "../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js";
+import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';
 
     
-import { AdvertisementWebsiteInterface } from "../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js";
+import { AdvertisementWebsiteInterface } from '../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js';
 
     
-import { PriceConstraintInterface } from "../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js";
+import { PriceConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js';
 
     
-import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js";
+import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
 
     
 

@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Enumeration } from "../../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../../java/util/Enumeration.js';
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { LayerInterfaceFactory } from "../../../../org/allbinary/layer/LayerInterfaceFactory.js";
+import { LayerInterfaceFactory } from '../../../../org/allbinary/layer/LayerInterfaceFactory.js';
 
     
-import { LayerInterfaceVisitor } from "../../../../org/allbinary/layer/LayerInterfaceVisitor.js";
+import { LayerInterfaceVisitor } from '../../../../org/allbinary/layer/LayerInterfaceVisitor.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.js";
+import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
 
     
 
@@ -69,9 +69,9 @@ import { EnumerationUtil } from "../../../../org/allbinary/util/EnumerationUtil.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LayerPlacementInterface } from "./LayerPlacementInterface.js";
-import { LayerPlacementType } from "./LayerPlacementType.js";
-import { LayerPlacementTypeFactory } from "./LayerPlacementTypeFactory.js";
+        import { LayerPlacementInterface } from './LayerPlacementInterface.js';
+import { LayerPlacementType } from './LayerPlacementType.js';
+import { LayerPlacementTypeFactory } from './LayerPlacementTypeFactory.js';
 
 export class LayerPlacer
             extends Object

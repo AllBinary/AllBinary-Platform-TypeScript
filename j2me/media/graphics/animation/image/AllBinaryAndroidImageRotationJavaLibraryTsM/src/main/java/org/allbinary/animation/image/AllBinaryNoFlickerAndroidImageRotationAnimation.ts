@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Matrix } from "../../../../android/graphics/Matrix.js";
+import { Matrix } from '../../../../android/graphics/Matrix.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { AndroidImageUtil } from "../../../../org/allbinary/media/image/AndroidImageUtil.js";
+import { AndroidImageUtil } from '../../../../org/allbinary/media/image/AndroidImageUtil.js';
 
     
-import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
 
     
-import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageModifierUtil.js";
+import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
 
     
 
@@ -69,7 +69,7 @@ import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageMo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
+        import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
 
 export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRotationAnimation {
         

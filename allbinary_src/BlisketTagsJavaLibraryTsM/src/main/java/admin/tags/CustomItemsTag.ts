@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { CustomItemsHelperFactory } from "../../admin/taghelpers/CustomItemsHelperFactory.js";
+import { CustomItemsHelperFactory } from '../../admin/taghelpers/CustomItemsHelperFactory.js';
 
     
-import { CustomItemsRequestHelperFactory } from "../../admin/taghelpers/CustomItemsRequestHelperFactory.js";
+import { CustomItemsRequestHelperFactory } from '../../admin/taghelpers/CustomItemsRequestHelperFactory.js';
 
     
 
@@ -46,7 +46,7 @@ import { CustomItemsRequestHelperFactory } from "../../admin/taghelpers/CustomIt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
+        import { TableTag } from './TableTag.js';
 
 export class CustomItemsTag extends TableTag {
         

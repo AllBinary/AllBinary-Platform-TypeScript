@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BasicGameResources } from "../../../../../org/allbinary/game/layer/resources/BasicGameResources.js";
+import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
 
     
-import { GameGraphicsResourceUtil } from "../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js";
+import { GameGraphicsResourceUtil } from '../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 

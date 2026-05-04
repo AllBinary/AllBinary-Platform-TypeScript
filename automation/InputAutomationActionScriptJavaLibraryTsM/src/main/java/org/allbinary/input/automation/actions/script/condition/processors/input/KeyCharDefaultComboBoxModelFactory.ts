@@ -18,19 +18,21 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../../../java/lang/Integer.js";
+            import { Character } from '../../../../../../../../../java/lang/Character.js';
         
-import { swing } from "../../../../../../../../../javax/swing.js";
+            import { Integer } from '../../../../../../../../../java/lang/Integer.js';
+        
+import { swing } from '../../../../../../../../../javax/swing.js';
 
     
-import { KeyStrokeMap } from "../../../../../../../../../abbot/tester/KeyStrokeMap.js";
+import { KeyStrokeMap } from '../../../../../../../../../abbot/tester/KeyStrokeMap.js';
 
     
-import { KeySingletonFactory } from "../../../../../../../../../org/allbinary/input/KeySingletonFactory.js";
+import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
 
     
 
@@ -51,9 +53,8 @@ import { KeySingletonFactory } from "../../../../../../../../../org/allbinary/in
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-import { KeyStroke } from "./KeyStroke.js";
-import { Character } from "./Character.js";
+        import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+import { KeyStroke } from './KeyStroke.js';
 
 export class KeyCharDefaultComboBoxModelFactory
             extends Object

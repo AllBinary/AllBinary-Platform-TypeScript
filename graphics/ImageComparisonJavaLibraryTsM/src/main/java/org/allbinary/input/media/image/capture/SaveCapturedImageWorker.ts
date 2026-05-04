@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js";
+import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 
     
-import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -66,9 +66,9 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CapturedImageWorkerResultsListener } from "./CapturedImageWorkerResultsListener.js";
-import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
-import { CapturedImageInputOutput } from "./CapturedImageInputOutput.js";
+        import { CapturedImageWorkerResultsListener } from './CapturedImageWorkerResultsListener.js';
+import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
+import { CapturedImageInputOutput } from './CapturedImageInputOutput.js';
 
 export class SaveCapturedImageWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         

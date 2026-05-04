@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { NullAnimationFactory } from "../../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -60,12 +60,12 @@ import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseTouchInput } from "./BaseTouchInput.js";
-import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
-import { BasicTouchButtonCellPositionFactory } from "./BasicTouchButtonCellPositionFactory.js";
-import { CommonButtons } from "./CommonButtons.js";
-import { TouchButton } from "./TouchButton.js";
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+        import { BaseTouchInput } from './BaseTouchInput.js';
+import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
+import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
+import { CommonButtons } from './CommonButtons.js';
+import { TouchButton } from './TouchButton.js';
+import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
 
 export class BasicNeededTouchButtonsBuilder extends BaseTouchInput {
         

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { EGLConfig } from "../../javax/microedition/khronos/egl/EGLConfig.js";
+import { EGLConfig } from '../../javax/microedition/khronos/egl/EGLConfig.js';
 
     
-import { GL10 } from "../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../javax/microedition/khronos/opengles/GL10.js';
 
     
 

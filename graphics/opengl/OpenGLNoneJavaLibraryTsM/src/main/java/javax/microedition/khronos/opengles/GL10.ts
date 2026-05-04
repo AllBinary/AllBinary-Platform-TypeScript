@@ -4,17 +4,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Buffer } from "../../../../java/nio/Buffer.js";
+import { Buffer } from '../../../../java/nio/Buffer.js';
 
     
-import { FloatBuffer } from "../../../../java/nio/FloatBuffer.js";
+import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
 
     
-import { IntBuffer } from "../../../../java/nio/IntBuffer.js";
+import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
 
     
 
@@ -35,7 +35,7 @@ import { IntBuffer } from "../../../../java/nio/IntBuffer.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GL } from "./GL.js";
+        import { GL } from './GL.js';
 
             //Interfaces do not have static fields for typescript so create a class with the static fields
             export class GL10I {

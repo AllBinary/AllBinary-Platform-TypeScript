@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { InputMappingInterface } from "../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js";
+import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/ProcessPaintable.js";
+import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
 
     
 
@@ -49,7 +49,7 @@ import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/Pr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TouchButtonsPaintableComposite } from "./TouchButtonsPaintableComposite.js";
+        import { TouchButtonsPaintableComposite } from './TouchButtonsPaintableComposite.js';
 
 export class TouchButtonsPaintableCompositeFactory
             extends Object

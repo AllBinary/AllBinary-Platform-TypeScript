@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { EmailEvent } from "../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js";
+import { EmailEvent } from '../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
 
     
-import { UserEmailEventListenerInterface } from "../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js";
+import { UserEmailEventListenerInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
 
     
-import { UserEmailEventNameData } from "../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js";
+import { UserEmailEventNameData } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 
     
-import { EmailInfo } from "../../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js";
+import { EmailInfo } from '../../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
 
     
 

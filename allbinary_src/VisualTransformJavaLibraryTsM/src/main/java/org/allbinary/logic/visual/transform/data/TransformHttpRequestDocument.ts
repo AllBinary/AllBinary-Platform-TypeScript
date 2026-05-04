@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { AcceptableResponseGenerator } from "../../../../../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js";
+import { AcceptableResponseGenerator } from '../../../../../../org/allbinary/logic/communication/http/AcceptableResponseGenerator.js';
 
     
-import { WeblisketSession } from "../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SearchRequest } from "../../../../../../org/allbinary/logic/control/search/SearchRequest.js";
+import { SearchRequest } from '../../../../../../org/allbinary/logic/control/search/SearchRequest.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -75,7 +75,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformDocumentInterface } from "./TransformDocumentInterface.js";
+        import { TransformDocumentInterface } from './TransformDocumentInterface.js';
 
 export class TransformHttpRequestDocument
             extends Object

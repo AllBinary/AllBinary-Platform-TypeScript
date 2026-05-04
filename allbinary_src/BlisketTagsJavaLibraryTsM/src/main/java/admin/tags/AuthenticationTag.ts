@@ -18,57 +18,57 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-            import { Integer } from "../../java/lang/Integer.js";
+            import { Integer } from '../../java/lang/Integer.js';
         
-import { Method } from "../../java/lang/reflect/Method.js";
+import { Method } from '../../java/lang/reflect/Method.js';
 
     
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { Vector } from "../../java/util/Vector.js";
+import { Vector } from '../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 
     
-import { TagSupport } from "../../javax/servlet/jsp/tagext/TagSupport.js";
+import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
 
     
-import { AuthenticationHelperFactory } from "../../admin/taghelpers/AuthenticationHelperFactory.js";
+import { AuthenticationHelperFactory } from '../../admin/taghelpers/AuthenticationHelperFactory.js';
 
     
-import { AuthenticationRequestHelperFactory } from "../../admin/taghelpers/AuthenticationRequestHelperFactory.js";
+import { AuthenticationRequestHelperFactory } from '../../admin/taghelpers/AuthenticationRequestHelperFactory.js';
 
     
-import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
-import { WeblisketSessionData } from "../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js";
+import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
+import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
 
     
 

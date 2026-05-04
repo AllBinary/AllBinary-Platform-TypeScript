@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../../java/lang/Throwable.js';
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { PlaynImage } from "../../../../org/microemu/device/playn/PlaynImage.js";
+import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
 
     
-import { ResourceCallbackStrings } from "../../../../org/microemu/device/ResourceCallbackStrings.js";
+import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
 
     
-import { Canvas } from "../../../../playn/core/Canvas.js";
+import { Canvas } from '../../../../playn/core/Canvas.js';
 
     
-import { CanvasImage } from "../../../../playn/core/CanvasImage.js";
+import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
 
     
-import { ResourceCallback } from "../../../../playn/core/ResourceCallback.js";
+import { ResourceCallback } from '../../../../playn/core/ResourceCallback.js';
 
     
 

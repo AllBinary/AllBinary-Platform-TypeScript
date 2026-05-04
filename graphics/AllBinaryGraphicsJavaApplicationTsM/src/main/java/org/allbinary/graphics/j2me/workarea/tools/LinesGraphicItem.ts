@@ -18,69 +18,69 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { DefaultMutableTreeNode } from "../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
+import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 
     
-import { MutableTreeNode } from "../../../../../../javax/swing/tree/MutableTreeNode.js";
+import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
 
     
-import { DomHelper } from "../../../../../../org/allbinary/dom/DomHelper.js";
+import { DomHelper } from '../../../../../../org/allbinary/dom/DomHelper.js';
 
     
-import { GameInputStrings } from "../../../../../../org/allbinary/game/input/GameInputStrings.js";
+import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
 
     
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { BasicColorFactory } from "../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { StatusFactory } from "../../../../../../org/allbinary/graphics/j2me/StatusFactory.js";
+import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
 
     
-import { CanvasDom } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js";
+import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
 
     
-import { IntegerDimension } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js";
+import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
 
     
-import { BasicGraphicsPipeline } from "../../../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js";
+import { BasicGraphicsPipeline } from '../../../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PositionStrings } from "../../../../../../org/allbinary/math/PositionStrings.js";
+import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -101,17 +101,17 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GraphicItemInterface } from "./GraphicItemInterface.js";
-import { Color } from "./Color.js";
-import { Points } from "./Points.js";
-import { PointsDomUtil } from "./PointsDomUtil.js";
-import { Math } from "./Math.js";
-import { Graphics2D } from "./Graphics2D.js";
-import { BasicStroke } from "./BasicStroke.js";
-import { PointsUtil } from "./PointsUtil.js";
-import { Graphics } from "./Graphics.js";
-import { MouseEvent } from "./MouseEvent.js";
-import { KeyEvent } from "./KeyEvent.js";
+        import { GraphicItemInterface } from './GraphicItemInterface.js';
+import { Color } from './Color.js';
+import { Points } from './Points.js';
+import { PointsDomUtil } from './PointsDomUtil.js';
+import { Math } from './Math.js';
+import { Graphics2D } from './Graphics2D.js';
+import { BasicStroke } from './BasicStroke.js';
+import { PointsUtil } from './PointsUtil.js';
+import { Graphics } from './Graphics.js';
+import { MouseEvent } from './MouseEvent.js';
+import { KeyEvent } from './KeyEvent.js';
 
 export class LinesGraphicItem
             extends Object

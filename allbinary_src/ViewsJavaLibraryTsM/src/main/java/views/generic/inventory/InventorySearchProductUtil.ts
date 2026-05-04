@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from '../../../java/util/Vector.js';
 
     
-import { BasicItemView } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js";
+import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
 
     
-import { ItemInterface } from "../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js";
+import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 
     
-import { InventoryEntity } from "../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js";
+import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
 
     
-import { InventoryEntityFactory } from "../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js";
+import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 
     
-import { DomDocumentHelper } from "../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SearchRequest } from "../../../org/allbinary/logic/control/search/SearchRequest.js";
+import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
 
     
-import { AbeClientInformationInterface } from "../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { StoreTransformer } from "../../../org/allbinary/logic/visual/transform/StoreTransformer.js";
+import { StoreTransformer } from '../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
 
     
-import { TransformDocumentInterface } from "../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js";
+import { TransformDocumentInterface } from '../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 
     
-import { TransformStoreDocumentFactory } from "../../../org/allbinary/logic/visual/transform/data/TransformStoreDocumentFactory.js";
+import { TransformStoreDocumentFactory } from '../../../org/allbinary/logic/visual/transform/data/TransformStoreDocumentFactory.js';
 
     
-import { TransformInfoHttpSearch } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpSearch.js";
+import { TransformInfoHttpSearch } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpSearch.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 

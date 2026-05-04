@@ -1,5 +1,5 @@
-import type { Closeable } from "./Closeable.js";
-import { InputStream } from "./InputStream.js";
+import type { Closeable } from './Closeable.js';
+import { InputStream } from './InputStream.js';
 
 /*actual*/ export class DataInputStream 
    extends InputStream implements Closeable

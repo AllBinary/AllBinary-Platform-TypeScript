@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { AndroidResources } from "../../../../../../org/allbinary/AndroidResources.js";
+import { AndroidResources } from '../../../../../../org/allbinary/AndroidResources.js';
 
     
-import { ResourceUtil } from "../../../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { Init } from "../../../../../../org/allbinary/init/Init.js";
+import { Init } from '../../../../../../org/allbinary/init/Init.js';
 
     
-import { CommonButtons } from "../../../../../../org/allbinary/input/motion/button/CommonButtons.js";
+import { CommonButtons } from '../../../../../../org/allbinary/input/motion/button/CommonButtons.js';
 
     
-import { TouchButtonBlankResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js";
+import { TouchButtonBlankResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js';
 
     
-import { TouchButtonDownResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonDownResource.js";
+import { TouchButtonDownResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonDownResource.js';
 
     
-import { TouchButtonGenericActionResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonGenericActionResource.js";
+import { TouchButtonGenericActionResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonGenericActionResource.js';
 
     
-import { TouchButtonResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonResource.js";
+import { TouchButtonResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
 
     
-import { TouchButtonStartResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonStartResource.js";
+import { TouchButtonStartResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStartResource.js';
 
     
-import { TouchButtonStrafeLeftResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeLeftResource.js";
+import { TouchButtonStrafeLeftResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeLeftResource.js';
 
     
-import { TouchButtonStrafeRightResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeRightResource.js";
+import { TouchButtonStrafeRightResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonStrafeRightResource.js';
 
     
-import { TouchButtonTurnLeftResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonTurnLeftResource.js";
+import { TouchButtonTurnLeftResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonTurnLeftResource.js';
 
     
-import { TouchButtonTurnRightResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonTurnRightResource.js";
+import { TouchButtonTurnRightResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonTurnRightResource.js';
 
     
-import { TouchButtonUpResource } from "../../../../../../org/allbinary/input/motion/button/TouchButtonUpResource.js";
+import { TouchButtonUpResource } from '../../../../../../org/allbinary/input/motion/button/TouchButtonUpResource.js';
 
     
-import { OperatingSystemFactory } from "../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js";
+import { OperatingSystemFactory } from '../../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 
     
 

@@ -4,7 +4,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -26,10 +26,10 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GL10 } from "./GL10.js";
-import { Buffer } from "./Buffer.js";
-import { FloatBuffer } from "./FloatBuffer.js";
-import { IntBuffer } from "./IntBuffer.js";
+        import { GL10 } from './GL10.js';
+import { Buffer } from './Buffer.js';
+import { FloatBuffer } from './FloatBuffer.js';
+import { IntBuffer } from './IntBuffer.js';
 
             //Interfaces do not have static fields for typescript so create a class with the static fields
             export class GL11I {

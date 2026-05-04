@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { HardwareComponentInterface } from "../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js";
+import { HardwareComponentInterface } from '../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
 
     
-import { NoHardwareComponent } from "../../../../../org/allbinary/logic/system/hardware/components/interfaces/NoHardwareComponent.js";
+import { NoHardwareComponent } from '../../../../../org/allbinary/logic/system/hardware/components/interfaces/NoHardwareComponent.js';
 
     
 
@@ -52,7 +52,7 @@ import { NoHardwareComponent } from "../../../../../org/allbinary/logic/system/h
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HardwareInterface } from "./HardwareInterface.js";
+        import { HardwareInterface } from './HardwareInterface.js';
 
 export class NoHardware
             extends Object

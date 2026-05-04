@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Control } from "../../../../javax/microedition/media/Control.js";
+import { Control } from '../../../../javax/microedition/media/Control.js';
 
     
 

@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameAdStateFactory } from "../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js";
+import { GameAdStateFactory } from '../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
 
     
-import { GameAdState } from "../../../../../org/allbinary/game/GameAdState.js";
+import { GameAdState } from '../../../../../org/allbinary/game/GameAdState.js';
 
     
-import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { CurrentDisplayableFactory } from "../../../../../org/allbinary/graphics/opengles/CurrentDisplayableFactory.js";
+import { CurrentDisplayableFactory } from '../../../../../org/allbinary/graphics/opengles/CurrentDisplayableFactory.js';
 
     
-import { OpenGLFeatureFactory } from "../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
 
@@ -60,8 +60,8 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DemoGameBehavior } from "./DemoGameBehavior.js";
-import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { DemoGameBehavior } from './DemoGameBehavior.js';
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 
 export class BaseGameBehavior extends DemoGameBehavior {
         

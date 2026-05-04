@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { AbPath } from "../../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
 
@@ -54,7 +54,7 @@ import { Document } from "../../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoObjectConfigInterface } from "./TransformInfoObjectConfigInterface.js";
+        import { TransformInfoObjectConfigInterface } from './TransformInfoObjectConfigInterface.js';
 
 export interface TransformInfoObjectConfigAndManipulatorFactoryInterface {
         

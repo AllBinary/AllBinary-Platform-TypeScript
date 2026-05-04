@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { LicenseInitInfo } from "../../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
+import { LicenseInitInfo } from '../../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
 
     
-import { LicenseInitInfoUtil } from "../../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js";
+import { LicenseInitInfoUtil } from '../../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { XmlRpcAbeClient } from "../../../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js";
+import { XmlRpcAbeClient } from '../../../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
 
     
-import { StringValidationUtil } from "../../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { AbeLicenseInterface } from "../../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterface.js";
+import { AbeLicenseInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeLicenseInterface.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -69,7 +69,7 @@ import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { XmlRpcAbeLicenseRetrievalClient } from "./XmlRpcAbeLicenseRetrievalClient.js";
+        import { XmlRpcAbeLicenseRetrievalClient } from './XmlRpcAbeLicenseRetrievalClient.js';
 
 export class AbeLicenseClient
             extends Object

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BufferedReader } from "../../../../java/io/BufferedReader.js";
+import { BufferedReader } from '../../../../java/io/BufferedReader.js';
 
     
-import { FileReader } from "../../../../java/io/FileReader.js";
+import { FileReader } from '../../../../java/io/FileReader.js';
 
     
-import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { AbFileNativeUtil } from "../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js";
+import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
 
     
 

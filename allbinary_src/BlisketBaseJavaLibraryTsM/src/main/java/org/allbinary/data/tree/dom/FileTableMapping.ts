@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/TableMappingInterface.js";
+import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileData } from "../../../../../org/allbinary/logic/io/file/FileData.js";
+import { FileData } from '../../../../../org/allbinary/logic/io/file/FileData.js';
 
     
-import { PathUtil } from "../../../../../org/allbinary/logic/io/path/PathUtil.js";
+import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
 
     
 

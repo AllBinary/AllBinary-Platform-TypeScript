@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-import { StoreFront } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFront.js";
+import { StoreFront } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFront.js';
 
     
-import { StringMaker } from "../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -49,8 +49,8 @@ import { CommonSeps } from "../../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Serializable } from "./Serializable.js";
-import { PaymentGateway } from "./PaymentGateway.js";
+        import { Serializable } from './Serializable.js';
+import { PaymentGateway } from './PaymentGateway.js';
 
 export class PaymentGatewayPrimaryKey
             extends Object

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { LineReader } from "../../../../../../../org/allbinary/logic/io/LineReader.js";
+import { LineReader } from '../../../../../../../org/allbinary/logic/io/LineReader.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js";
+import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
 
     
 

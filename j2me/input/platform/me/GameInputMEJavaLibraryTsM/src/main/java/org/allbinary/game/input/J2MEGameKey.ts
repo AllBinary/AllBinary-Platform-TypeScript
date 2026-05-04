@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -46,8 +46,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Input } from "./Input.js";
-import { InputFactory } from "./InputFactory.js";
+        import { Input } from './Input.js';
+import { InputFactory } from './InputFactory.js';
 
 export class J2MEGameKey extends Input {
         

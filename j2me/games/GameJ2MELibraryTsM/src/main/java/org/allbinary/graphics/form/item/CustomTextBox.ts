@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Font } from "../../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
 
     
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { J2MEUtil } from "../../../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
 
     
-import { GameCommandCanvas } from "../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js";
+import { GameCommandCanvas } from '../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js';
 
     
-import { Input } from "../../../../../org/allbinary/game/input/Input.js";
+import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 
     
-import { InputFactory } from "../../../../../org/allbinary/game/input/InputFactory.js";
+import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
 
     
-import { PlatformKeyFactory } from "../../../../../org/allbinary/game/input/PlatformKeyFactory.js";
+import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { TextItemVisitor } from "../../../../../org/allbinary/graphics/form/item/validation/TextItemVisitor.js";
+import { TextItemVisitor } from '../../../../../org/allbinary/graphics/form/item/validation/TextItemVisitor.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -81,7 +81,7 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextFieldItem } from "./TextFieldItem.js";
+        import { TextFieldItem } from './TextFieldItem.js';
 
 export class CustomTextBox extends GameCommandCanvas {
         

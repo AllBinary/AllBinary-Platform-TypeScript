@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { PaymentTransactionInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js";
+import { PaymentTransactionInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
 
@@ -48,7 +48,7 @@ import { TransformInfoInterface } from "../../../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentProcessorInterface } from "./PaymentProcessorInterface.js";
+        import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
 
 export interface PaymentProcessorInterfaceFactoryInterface {
         

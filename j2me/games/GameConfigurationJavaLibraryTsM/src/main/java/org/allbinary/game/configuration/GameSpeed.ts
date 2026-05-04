@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameConfigurationCentral } from "./GameConfigurationCentral.js";
-import { GameConfiguration } from "./GameConfiguration.js";
+        import { GameConfigurationCentral } from './GameConfigurationCentral.js';
+import { GameConfiguration } from './GameConfiguration.js';
 
 export class GameSpeed
             extends Object

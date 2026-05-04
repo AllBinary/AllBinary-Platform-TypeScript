@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
-import { Bundle } from "../../../../../org/osgi/framework/Bundle.js";
+import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
 
     
-import { BundleContext } from "../../../../../org/osgi/framework/BundleContext.js";
+import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
 
     
-import { InputAutomationBundleActivator } from "../../../../../bundle/input/automation/InputAutomationBundleActivator.js";
+import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
 
     
-import { BasicTextJDialog } from "../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js";
+import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
 
     
 
@@ -57,7 +57,7 @@ import { BasicTextJDialog } from "../../../../../org/allbinary/gui/dialog/BasicT
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JDialog } from "./JDialog.js";
+        import { JDialog } from './JDialog.js';
 
 export class DesktopBundle
             extends Object

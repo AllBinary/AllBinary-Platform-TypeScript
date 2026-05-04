@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../java/lang/System.js";
+            import { System } from '../../../../java/lang/System.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { Raster } from "../../../../java/awt/image/Raster.js";
+import { Raster } from '../../../../java/awt/image/Raster.js';
 
     
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { FileWrapperUtil } from "../../../../org/allbinary/logic/io/file/FileWrapperUtil.js";
+import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
 
     
-import { ImagePersistanceUtil } from "../../../../org/allbinary/media/image/ImagePersistanceUtil.js";
+import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 
     
-import { ImageProcessorInput } from "../../../../org/allbinary/media/image/ImageProcessorInput.js";
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 
     
-import { ImageProcessorInputCompositeInterface } from "../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js";
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 
     
-import { ImageUtil } from "../../../../org/allbinary/media/image/ImageUtil.js";
+import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -78,17 +78,17 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-import { JLabel } from "./JLabel.js";
-import { JComboBox } from "./JComboBox.js";
-import { JButton } from "./JButton.js";
-import { JTextField } from "./JTextField.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { Dimension } from "./Dimension.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
+        import { JPanel } from './JPanel.js';
+import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+import { JLabel } from './JLabel.js';
+import { JComboBox } from './JComboBox.js';
+import { JButton } from './JButton.js';
+import { JTextField } from './JTextField.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { Dimension } from './Dimension.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
 
 export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

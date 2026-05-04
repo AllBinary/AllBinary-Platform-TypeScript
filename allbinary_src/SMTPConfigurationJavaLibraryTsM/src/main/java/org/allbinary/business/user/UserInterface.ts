@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../java/util/HashMap.js';
 
     
-import { UserConfigurationInterface } from "../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js";
+import { UserConfigurationInterface } from '../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js';
 
     
-import { UserRole } from "../../../../org/allbinary/business/user/role/UserRole.js";
+import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
 
     
-import { TableMappingInterface } from "../../../../org/allbinary/data/tables/TableMappingInterface.js";
+import { TableMappingInterface } from '../../../../org/allbinary/data/tables/TableMappingInterface.js';
 
     
-import { WeblisketSessionInterface } from "../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js";
+import { WeblisketSessionInterface } from '../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
 
     
-import { ValidationInterface } from "../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
+import { ValidationInterface } from '../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 
     
 

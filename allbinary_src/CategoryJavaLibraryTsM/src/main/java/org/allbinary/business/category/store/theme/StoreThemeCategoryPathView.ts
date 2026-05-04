@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CategoryView } from "../../../../../../org/allbinary/business/category/CategoryView.js";
+import { CategoryView } from '../../../../../../org/allbinary/business/category/CategoryView.js';
 
     
-import { DomNodeInterface } from "../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { ThemeInterface } from "../../../../../../org/allbinary/logic/visual/theme/ThemeInterface.js";
+import { ThemeInterface } from '../../../../../../org/allbinary/logic/visual/theme/ThemeInterface.js';
 
     
-import { ThemePropertiesView } from "../../../../../../org/allbinary/logic/visual/theme/ThemePropertiesView.js";
+import { ThemePropertiesView } from '../../../../../../org/allbinary/logic/visual/theme/ThemePropertiesView.js';
 
     
-import { ThemeValidation } from "../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js";
+import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -63,7 +63,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
+        import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
 
 export class StoreThemeCategoryPathView extends CategoryView implements DomNodeInterface {
         

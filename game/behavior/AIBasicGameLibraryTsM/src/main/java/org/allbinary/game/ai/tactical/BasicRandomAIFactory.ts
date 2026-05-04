@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { ArtificialIntelligenceInterface } from "../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
+import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 
     
-import { ArtificialIntelligenceInterfaceFactoryInterface } from "../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js";
+import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
 
     
-import { BasicAI } from "../../../../../org/allbinary/game/ai/BasicAI.js";
+import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 
     
-import { InputProbability } from "../../../../../org/allbinary/game/ai/InputProbability.js";
+import { InputProbability } from '../../../../../org/allbinary/game/ai/InputProbability.js';
 
     
-import { GameInput } from "../../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
+import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 
     
 
@@ -66,7 +66,7 @@ import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicRandomAI } from "./BasicRandomAI.js";
+        import { BasicRandomAI } from './BasicRandomAI.js';
 
 export class BasicRandomAIFactory
             extends Object

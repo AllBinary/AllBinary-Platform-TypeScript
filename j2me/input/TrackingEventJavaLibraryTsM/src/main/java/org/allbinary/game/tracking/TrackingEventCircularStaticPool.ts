@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryEventCircularPool } from "../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js";
+import { AllBinaryEventCircularPool } from '../../../../org/allbinary/logic/util/event/AllBinaryEventCircularPool.js';
 
     
 
@@ -48,8 +48,8 @@ import { AllBinaryEventCircularPool } from "../../../../org/allbinary/logic/util
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TrackingEventFactory } from "./TrackingEventFactory.js";
-import { TrackingEvent } from "./TrackingEvent.js";
+        import { TrackingEventFactory } from './TrackingEventFactory.js';
+import { TrackingEvent } from './TrackingEvent.js';
 
 export class TrackingEventCircularStaticPool
             extends Object

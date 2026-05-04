@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ChangedGameFeatureListener } from "../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js";
+import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
 
     
-import { GameInitializedEvent } from "../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js";
+import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
 
     
-import { GameInitializedEventHandler } from "../../../../org/allbinary/game/configuration/event/GameInitializedEventHandler.js";
+import { GameInitializedEventHandler } from '../../../../org/allbinary/game/configuration/event/GameInitializedEventHandler.js';
 
     
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { MainFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js";
+import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 
     
-import { ResourceLoadingLevelFactory } from "../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js";
+import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
 
     
-import { MyCanvas } from "../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
 
@@ -66,8 +66,8 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameInitializationInterface } from "./GameInitializationInterface.js";
-import { BasicBuildGameInitializerFactory } from "./BasicBuildGameInitializerFactory.js";
+        import { GameInitializationInterface } from './GameInitializationInterface.js';
+import { BasicBuildGameInitializerFactory } from './BasicBuildGameInitializerFactory.js';
 
 export class GameInitializationUtil
             extends Object

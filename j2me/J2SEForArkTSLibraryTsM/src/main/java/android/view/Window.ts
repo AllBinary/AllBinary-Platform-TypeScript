@@ -1,4 +1,4 @@
-import ArkTsWindow from "@ohos.window";
+import ArkTsWindow from '@ohos.window';
 
 /*actual*/ export function Window()
 {

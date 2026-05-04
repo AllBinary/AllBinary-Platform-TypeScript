@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { ImageCacheFactory } from "../../../../org/allbinary/image/ImageCacheFactory.js";
+import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
 
     
-import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 
     
 
@@ -54,8 +54,8 @@ import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-import { LazyImageRotationAnimation } from "./LazyImageRotationAnimation.js";
+        import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
+import { LazyImageRotationAnimation } from './LazyImageRotationAnimation.js';
 
 export class LazyImageRotationAnimationFactory
             extends Object

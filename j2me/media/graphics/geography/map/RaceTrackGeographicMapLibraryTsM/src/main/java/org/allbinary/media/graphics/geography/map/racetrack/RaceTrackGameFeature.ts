@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { GameFeature } from "../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js";
+import { GameFeature } from '../../../../../../../org/allbinary/game/configuration/feature/GameFeature.js';
 
     
 

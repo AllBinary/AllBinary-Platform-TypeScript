@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../../../java/lang/Long.js';
         
-import { Vector } from "../../../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../../../java/util/Vector.js';
 
     
-import { InputImageIOInterfaceFactory } from "../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js";
+import { InputImageIOInterfaceFactory } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js';
 
     
-import { InputImageType } from "../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js";
+import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
 
     
-import { LogUtil } from "../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ImageIOInterface } from "../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js";
+import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
 
     
-import { CommonStrings } from "../../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -62,8 +62,8 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageTypes } from "./ImageTypes.js";
-import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
+        import { ImageTypes } from './ImageTypes.js';
+import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
 
 export class ImageActionScriptOutputProcessor
             extends Object

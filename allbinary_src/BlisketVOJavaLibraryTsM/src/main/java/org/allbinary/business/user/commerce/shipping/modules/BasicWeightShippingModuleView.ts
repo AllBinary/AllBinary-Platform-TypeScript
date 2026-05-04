@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { ShippingMethodData } from "../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js";
+import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
 
     
-import { DomNodeInterface } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { ModDomHelper } from "../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { DomDocumentHelper } from "../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -63,7 +63,7 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicWeightShippingModule } from "./BasicWeightShippingModule.js";
+        import { BasicWeightShippingModule } from './BasicWeightShippingModule.js';
 
 export class BasicWeightShippingModuleView extends BasicWeightShippingModule implements DomNodeInterface {
         

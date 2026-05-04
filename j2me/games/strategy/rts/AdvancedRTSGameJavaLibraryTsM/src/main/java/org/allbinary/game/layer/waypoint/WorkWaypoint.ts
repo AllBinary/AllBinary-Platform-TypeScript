@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
+import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 
     
-import { GeologicalGeographicMapCellPosition } from "../../../../../org/allbinary/game/layer/geological/resources/GeologicalGeographicMapCellPosition.js";
+import { GeologicalGeographicMapCellPosition } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalGeographicMapCellPosition.js';
 
     
-import { GeologicalResource } from "../../../../../org/allbinary/game/layer/geological/resources/GeologicalResource.js";
+import { GeologicalResource } from '../../../../../org/allbinary/game/layer/geological/resources/GeologicalResource.js';
 
     
-import { UnitLayer } from "../../../../../org/allbinary/game/layer/unit/UnitLayer.js";
+import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
 
     
-import { UnitWaypointBehavior } from "../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js";
+import { UnitWaypointBehavior } from '../../../../../org/allbinary/game/layer/unit/UnitWaypointBehavior.js';
 
     
-import { WorkSound } from "../../../../../org/allbinary/media/audio/WorkSound.js";
+import { WorkSound } from '../../../../../org/allbinary/media/audio/WorkSound.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
 
@@ -71,8 +71,8 @@ import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Waypoint } from "./Waypoint.js";
-import { WaypointInfoHudPaintable } from "./WaypointInfoHudPaintable.js";
+        import { Waypoint } from './Waypoint.js';
+import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
 
 export class WorkWaypoint extends Waypoint {
         

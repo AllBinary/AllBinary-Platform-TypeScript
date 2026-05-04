@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Cipher } from "../../../../../../../javax/crypto/Cipher.js";
+import { Cipher } from '../../../../../../../javax/crypto/Cipher.js';
 
     
-import { SecretKey } from "../../../../../../../javax/crypto/SecretKey.js";
+import { SecretKey } from '../../../../../../../javax/crypto/SecretKey.js';
 
     
-import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { ByteUtil } from "../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js";
+import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
 
     
 
@@ -54,7 +54,7 @@ import { ByteUtil } from "../../../../../../../org/allbinary/logic/java/byteutil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseSecretComposite } from "./BaseSecretComposite.js";
+        import { BaseSecretComposite } from './BaseSecretComposite.js';
 
 export class SecretComposite extends BaseSecretComposite {
         

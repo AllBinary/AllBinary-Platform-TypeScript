@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Bitmap } from "../../../../android/graphics/Bitmap.js";
+import { Bitmap } from '../../../../android/graphics/Bitmap.js';
 
     
-import { Canvas } from "../../../../android/graphics/Canvas.js";
+import { Canvas } from '../../../../android/graphics/Canvas.js';
 
     
-import { Matrix } from "../../../../android/graphics/Matrix.js";
+import { Matrix } from '../../../../android/graphics/Matrix.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { AndroidImageInterface } from "../../../../org/microemu/android/device/AndroidImageInterface.js";
+import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 
     
 

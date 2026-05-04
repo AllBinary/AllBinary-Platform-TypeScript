@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
-import { Font } from "../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../javax/microedition/lcdui/Font.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { FontDebugFactory } from "../../../../org/allbinary/graphics/font/FontDebugFactory.js";
+import { FontDebugFactory } from '../../../../org/allbinary/graphics/font/FontDebugFactory.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -57,8 +57,8 @@ import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextAnimation } from "./TextAnimation.js";
-import { GetTextInterface } from "./GetTextInterface.js";
+        import { TextAnimation } from './TextAnimation.js';
+import { GetTextInterface } from './GetTextInterface.js';
 
 export class CustomTextAnimation extends TextAnimation implements GetTextInterface {
         

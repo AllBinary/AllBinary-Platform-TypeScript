@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Enumeration } from "../../../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../../../java/util/Enumeration.js';
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { ChoiceGroup } from "../../../../../javax/microedition/lcdui/ChoiceGroup.js";
+import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUtil.js";
+import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
 
     
-import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
+import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
 
     
 
@@ -69,9 +69,9 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Features } from "./Features.js";
-import { Feature } from "./Feature.js";
-import { GameFeatureChoiceGroups } from "./GameFeatureChoiceGroups.js";
+        import { Features } from './Features.js';
+import { Feature } from './Feature.js';
+import { GameFeatureChoiceGroups } from './GameFeatureChoiceGroups.js';
 
 export class GameFeatureUtil
             extends Object

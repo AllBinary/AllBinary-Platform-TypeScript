@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { Vector } from "../../java/util/Vector.js";
+import { Vector } from '../../java/util/Vector.js';
 
     
-import { BasicUserRole } from "../../org/allbinary/business/user/role/BasicUserRole.js";
+import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
 
     
-import { UserRole } from "../../org/allbinary/business/user/role/UserRole.js";
+import { UserRole } from '../../org/allbinary/business/user/role/UserRole.js';
 
     
-import { URLGLOBALS } from "../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { HttpFilePermissions } from "../../org/allbinary/logic/communication/http/file/upload/HttpFilePermissions.js";
+import { HttpFilePermissions } from '../../org/allbinary/logic/communication/http/file/upload/HttpFilePermissions.js';
 
     
-import { HttpRequestUtil } from "../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js";
+import { HttpRequestUtil } from '../../org/allbinary/logic/communication/http/request/HttpRequestUtil.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbPath } from "../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { CommonLabels } from "../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../org/allbinary/string/CommonLabels.js';
 
     
 
@@ -69,7 +69,7 @@ import { CommonLabels } from "../../org/allbinary/string/CommonLabels.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AuthenticationHelper } from "./AuthenticationHelper.js";
+        import { AuthenticationHelper } from './AuthenticationHelper.js';
 
 export class AuthenticationHelperUtil
             extends Object

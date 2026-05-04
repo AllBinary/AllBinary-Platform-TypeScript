@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Enumeration } from "../../../../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../../../../java/util/Enumeration.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -63,7 +63,7 @@ import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbeHttpRequestInfoData } from "./AbeHttpRequestInfoData.js";
+        import { AbeHttpRequestInfoData } from './AbeHttpRequestInfoData.js';
 
 export class AbeHttpRequestInfo
             extends Object

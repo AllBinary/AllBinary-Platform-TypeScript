@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Thread } from "../../../java/lang/Thread.js";
+            import { Thread } from '../../../java/lang/Thread.js';
         
 
 
@@ -42,7 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RunnableInterface } from "./RunnableInterface.js";
+        import { RunnableInterface } from './RunnableInterface.js';
 
 export class ABRunnable
             extends Object

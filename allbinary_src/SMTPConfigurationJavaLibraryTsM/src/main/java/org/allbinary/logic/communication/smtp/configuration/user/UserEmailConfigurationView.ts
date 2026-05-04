@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { DomNodeInterface } from "../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { UserEmailEventsConfigurationData } from "../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationData.js";
+import { UserEmailEventsConfigurationData } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationData.js';
 
     
-import { UserEmailEventsConfigurationInterface } from "../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationInterface.js";
+import { UserEmailEventsConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationInterface.js';
 
     
-import { UserEmailEventsConfigurationView } from "../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationView.js";
+import { UserEmailEventsConfigurationView } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationView.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -78,10 +78,10 @@ import { NodeList } from "../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UserEmailConfigurationInterface } from "./UserEmailConfigurationInterface.js";
-import { UserEmailConfiguration } from "./UserEmailConfiguration.js";
-import { UserEmailConfigurationMapping } from "./UserEmailConfigurationMapping.js";
-import { UserEmailConfigurationData } from "./UserEmailConfigurationData.js";
+        import { UserEmailConfigurationInterface } from './UserEmailConfigurationInterface.js';
+import { UserEmailConfiguration } from './UserEmailConfiguration.js';
+import { UserEmailConfigurationMapping } from './UserEmailConfigurationMapping.js';
+import { UserEmailConfigurationData } from './UserEmailConfigurationData.js';
 
 export class UserEmailConfigurationView
             extends Object

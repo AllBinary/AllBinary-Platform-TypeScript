@@ -18,111 +18,111 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { Calendar } from "../../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { ContextConfiguration } from "../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js";
+import { ContextConfiguration } from '../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js';
 
     
-import { ContextConfigurationDomDocumentMapping } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js";
+import { ContextConfigurationDomDocumentMapping } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js';
 
     
-import { ContextConfigurationInterface } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js";
+import { ContextConfigurationInterface } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
 
     
-import { ContextConfigurationInterfaceFactory } from "../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js";
+import { ContextConfigurationInterfaceFactory } from '../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserData } from "../../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { FREEBLISKET_PATH_GLOBALS } from "../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
+import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { RequestParams } from "../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js";
+import { RequestParams } from '../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileUtil } from "../../../../../../org/allbinary/logic/io/file/FileUtil.js";
+import { FileUtil } from '../../../../../../org/allbinary/logic/io/file/FileUtil.js';
 
     
-import { Directory } from "../../../../../../org/allbinary/logic/io/file/directory/Directory.js";
+import { Directory } from '../../../../../../org/allbinary/logic/io/file/directory/Directory.js';
 
     
-import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { AbPathUtil } from "../../../../../../org/allbinary/logic/io/path/AbPathUtil.js";
+import { AbPathUtil } from '../../../../../../org/allbinary/logic/io/path/AbPathUtil.js';
 
     
-import { SpecialCharacterUtil } from "../../../../../../org/allbinary/logic/string/SpecialCharacterUtil.js";
+import { SpecialCharacterUtil } from '../../../../../../org/allbinary/logic/string/SpecialCharacterUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { Replace } from "../../../../../../org/allbinary/logic/string/regex/replace/Replace.js";
+import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 
     
-import { Tokenizer } from "../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js";
+import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { StringEscapeUtils } from "../../../../../../org/apache/commons/lang3/StringEscapeUtils.js";
+import { StringEscapeUtils } from '../../../../../../org/apache/commons/lang3/StringEscapeUtils.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
 
@@ -143,8 +143,8 @@ import { Document } from "../../../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StoreFrontInterface } from "./StoreFrontInterface.js";
-import { StoreFrontData } from "./StoreFrontData.js";
+        import { StoreFrontInterface } from './StoreFrontInterface.js';
+import { StoreFrontData } from './StoreFrontData.js';
 
 export class StoreFront
             extends Object

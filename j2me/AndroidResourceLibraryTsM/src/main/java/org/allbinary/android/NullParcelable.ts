@@ -20,13 +20,13 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { Parcelable } from "../../../android/os/Parcelable.js";
+import { Parcelable } from '../../../android/os/Parcelable.js';
 
     
 
@@ -47,7 +47,7 @@ import { Parcelable } from "../../../android/os/Parcelable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Parcel } from "./Parcel.js";
+        import { Parcel } from './Parcel.js';
 
 export class NullParcelable
             extends Object

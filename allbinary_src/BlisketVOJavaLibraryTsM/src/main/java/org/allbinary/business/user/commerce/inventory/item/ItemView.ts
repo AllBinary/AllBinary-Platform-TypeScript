@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../../java/util/Set.js';
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { StreetAddressData } from "../../../../../../../org/allbinary/business/user/address/StreetAddressData.js";
+import { StreetAddressData } from '../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
 
     
-import { ModDomHelper } from "../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -66,9 +66,9 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OrderItemInterface } from "./OrderItemInterface.js";
-import { ItemData } from "./ItemData.js";
-import { BasicItemView } from "./BasicItemView.js";
+        import { OrderItemInterface } from './OrderItemInterface.js';
+import { ItemData } from './ItemData.js';
+import { BasicItemView } from './BasicItemView.js';
 
 export class ItemView
             extends Object

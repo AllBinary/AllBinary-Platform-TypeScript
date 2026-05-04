@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayInputStream } from "../../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../../java/io/ByteArrayInputStream.js';
 
     
-import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { DataInputStream } from "../../../../../java/io/DataInputStream.js";
+import { DataInputStream } from '../../../../../java/io/DataInputStream.js';
 
     
-import { DataOutputStream } from "../../../../../java/io/DataOutputStream.js";
+import { DataOutputStream } from '../../../../../java/io/DataOutputStream.js';
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { RecordEnumeration } from "../../../../../javax/microedition/rms/RecordEnumeration.js";
+import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordEnumeration.js';
 
     
-import { RecordStore } from "../../../../../javax/microedition/rms/RecordStore.js";
+import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
 
     
-import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
+import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
 
     
 
@@ -84,10 +84,10 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicPersitance } from "./BasicPersitance.js";
-import { NullRecordStore } from "./NullRecordStore.js";
-import { NullRecordFilter } from "./NullRecordFilter.js";
-import { NullRecordComparator } from "./NullRecordComparator.js";
+        import { BasicPersitance } from './BasicPersitance.js';
+import { NullRecordStore } from './NullRecordStore.js';
+import { NullRecordFilter } from './NullRecordFilter.js';
+import { NullRecordComparator } from './NullRecordComparator.js';
 
 export class KeyValuePersistance extends BasicPersitance {
         

@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { Portion } from "../../org/allbinary/business/installer/Portion.js";
+import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 
     
-import { PaymentGatewayInterface } from "../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js";
+import { PaymentGatewayInterface } from '../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 
     
-import { PaymentGatewayInterfaceFactory } from "../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactory.js";
+import { PaymentGatewayInterfaceFactory } from '../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactory.js';
 
     
-import { BasicPaymentTypeUtil } from "../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js";
+import { BasicPaymentTypeUtil } from '../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
 
     
-import { PaymentGatewayEntityFactory } from "../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js";
+import { PaymentGatewayEntityFactory } from '../../org/allbinary/data/tables/user/commerce/money/payment/gateway/PaymentGatewayEntityFactory.js';
 
     
-import { WeblisketSession } from "../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlTableUtil } from "../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js";
+import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 
     
-import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -78,7 +78,7 @@ import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicTable } from "./BasicTable.js";
+        import { BasicTable } from './BasicTable.js';
 
 export class PaymentGatewayHelper extends BasicTable {
         

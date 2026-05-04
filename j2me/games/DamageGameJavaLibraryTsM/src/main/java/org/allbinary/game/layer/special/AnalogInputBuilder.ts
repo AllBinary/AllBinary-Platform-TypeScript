@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { GameInputProcessor } from "../../../../../org/allbinary/game/input/GameInputProcessor.js";
+import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
 
     
 
@@ -46,19 +46,19 @@ import { GameInputProcessor } from "../../../../../org/allbinary/game/input/Game
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SpecialUpGameInputProcessor } from "./SpecialUpGameInputProcessor.js";
-import { SpecialDownGameInputProcessor } from "./SpecialDownGameInputProcessor.js";
-import { SpecialRightGameInputProcessor } from "./SpecialRightGameInputProcessor.js";
-import { SpecialLeftGameInputProcessor } from "./SpecialLeftGameInputProcessor.js";
-import { Special1GameInputProcessor } from "./Special1GameInputProcessor.js";
-import { Special3GameInputProcessor } from "./Special3GameInputProcessor.js";
-import { CollidableDestroyableDamageableLayer } from "./CollidableDestroyableDamageableLayer.js";
-import { SpecialAnalogUpGameInputProcessor } from "./SpecialAnalogUpGameInputProcessor.js";
-import { SpecialAnalogDownGameInputProcessor } from "./SpecialAnalogDownGameInputProcessor.js";
-import { SpecialAnalogRightGameInputProcessor } from "./SpecialAnalogRightGameInputProcessor.js";
-import { SpecialAnalogLeftGameInputProcessor } from "./SpecialAnalogLeftGameInputProcessor.js";
-import { SpecialAnalogLeftTriggerGameInputProcessor } from "./SpecialAnalogLeftTriggerGameInputProcessor.js";
-import { SpecialAnalogRightTriggerGameInputProcessor } from "./SpecialAnalogRightTriggerGameInputProcessor.js";
+        import { SpecialUpGameInputProcessor } from './SpecialUpGameInputProcessor.js';
+import { SpecialDownGameInputProcessor } from './SpecialDownGameInputProcessor.js';
+import { SpecialRightGameInputProcessor } from './SpecialRightGameInputProcessor.js';
+import { SpecialLeftGameInputProcessor } from './SpecialLeftGameInputProcessor.js';
+import { Special1GameInputProcessor } from './Special1GameInputProcessor.js';
+import { Special3GameInputProcessor } from './Special3GameInputProcessor.js';
+import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDamageableLayer.js';
+import { SpecialAnalogUpGameInputProcessor } from './SpecialAnalogUpGameInputProcessor.js';
+import { SpecialAnalogDownGameInputProcessor } from './SpecialAnalogDownGameInputProcessor.js';
+import { SpecialAnalogRightGameInputProcessor } from './SpecialAnalogRightGameInputProcessor.js';
+import { SpecialAnalogLeftGameInputProcessor } from './SpecialAnalogLeftGameInputProcessor.js';
+import { SpecialAnalogLeftTriggerGameInputProcessor } from './SpecialAnalogLeftTriggerGameInputProcessor.js';
+import { SpecialAnalogRightTriggerGameInputProcessor } from './SpecialAnalogRightTriggerGameInputProcessor.js';
 
 export class AnalogInputBuilder
             extends Object

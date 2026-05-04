@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { PlaynMutableImage } from "../../../../org/microemu/device/playn/PlaynMutableImage.js";
+import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
 
     
-import { CanvasImage } from "../../../../playn/core/CanvasImage.js";
+import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
 
     
-import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
+import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
 
     
 

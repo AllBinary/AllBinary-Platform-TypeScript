@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../java/lang/Long.js';
         
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { CapturedImageWorkerResultsEvent } from "../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js";
+import { CapturedImageWorkerResultsEvent } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js';
 
     
-import { CapturedImageWorkerResultsListener } from "../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsListener.js";
+import { CapturedImageWorkerResultsListener } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsListener.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { BasicEventHandler } from "../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js";
+import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 
     
-import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -74,12 +74,12 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageComparatorConstraintsInterface } from "./ImageComparatorConstraintsInterface.js";
-import { ImageComparator } from "./ImageComparator.js";
-import { ImageComparisonResult } from "./ImageComparisonResult.js";
-import { ImageComparisonResultFrameCacheable } from "./ImageComparisonResultFrameCacheable.js";
-import { ImageComparisonResultCacheSingleton } from "./ImageComparisonResultCacheSingleton.js";
-import { ImageComparisonResultsEvent } from "./ImageComparisonResultsEvent.js";
+        import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
+import { ImageComparator } from './ImageComparator.js';
+import { ImageComparisonResult } from './ImageComparisonResult.js';
+import { ImageComparisonResultFrameCacheable } from './ImageComparisonResultFrameCacheable.js';
+import { ImageComparisonResultCacheSingleton } from './ImageComparisonResultCacheSingleton.js';
+import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
 
 export class ImageComparisonWorker extends BasicEventHandler implements CapturedImageWorkerResultsListener {
         

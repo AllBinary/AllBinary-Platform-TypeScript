@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicColorFactory } from "./BasicColorFactory.js";
-import { BasicColor } from "./BasicColor.js";
+        import { BasicColorFactory } from './BasicColorFactory.js';
+import { BasicColor } from './BasicColor.js';
 
 export class ColorTemperatureUtil
             extends Object

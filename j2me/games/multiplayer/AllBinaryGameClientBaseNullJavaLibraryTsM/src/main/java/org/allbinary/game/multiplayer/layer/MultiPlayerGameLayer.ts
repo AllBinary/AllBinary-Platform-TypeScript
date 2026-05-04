@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
 
     
 
@@ -55,9 +55,9 @@ import { ViewPosition } from "../../../../../org/allbinary/view/ViewPosition.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MultiPlayerGameLayerInterface } from "./MultiPlayerGameLayerInterface.js";
-import { RemoteInfo } from "./RemoteInfo.js";
-import { MultiplayerBehavior } from "./MultiplayerBehavior.js";
+        import { MultiPlayerGameLayerInterface } from './MultiPlayerGameLayerInterface.js';
+import { RemoteInfo } from './RemoteInfo.js';
+import { MultiplayerBehavior } from './MultiplayerBehavior.js';
 
 export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer implements MultiPlayerGameLayerInterface {
         

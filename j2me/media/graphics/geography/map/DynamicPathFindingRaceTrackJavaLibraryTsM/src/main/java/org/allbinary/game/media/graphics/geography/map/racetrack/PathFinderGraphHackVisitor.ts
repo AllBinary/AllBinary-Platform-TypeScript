@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { GraphPath } from "../../../../../../../../org/jgrapht/GraphPath.js";
+import { GraphPath } from '../../../../../../../../org/jgrapht/GraphPath.js';
 
     
-import { DefaultWeightedEdge } from "../../../../../../../../org/jgrapht/graph/DefaultWeightedEdge.js";
+import { DefaultWeightedEdge } from '../../../../../../../../org/jgrapht/graph/DefaultWeightedEdge.js';
 
     
-import { SimpleWeightedGraph } from "../../../../../../../../org/jgrapht/graph/SimpleWeightedGraph.js";
+import { SimpleWeightedGraph } from '../../../../../../../../org/jgrapht/graph/SimpleWeightedGraph.js';
 
     
-import { BasicArrayList } from "../../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { CellPosition } from "../../../../../../../../org/allbinary/graphics/CellPosition.js";
+import { CellPosition } from '../../../../../../../../org/allbinary/graphics/CellPosition.js';
 
     
-import { BasicGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { BasicGeographicMapCellPositionFactory } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js";
+import { BasicGeographicMapCellPositionFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 
     
-import { BasicGeographicMapUtil } from "../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapUtil.js";
+import { BasicGeographicMapUtil } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapUtil.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { RaceTrackGeographicMap } from "../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMap.js";
+import { RaceTrackGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMap.js';
 
     
-import { PathFindingNode } from "../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js";
+import { PathFindingNode } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
 
     
 
@@ -81,8 +81,8 @@ import { PathFindingNode } from "../../../../../../../../org/allbinary/media/gra
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasePathFinderGraphVisitor } from "./BasePathFinderGraphVisitor.js";
-import { CellPositionArray } from "./CellPositionArray.js";
+        import { BasePathFinderGraphVisitor } from './BasePathFinderGraphVisitor.js';
+import { CellPositionArray } from './CellPositionArray.js';
 
 export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor<V, E> {
         

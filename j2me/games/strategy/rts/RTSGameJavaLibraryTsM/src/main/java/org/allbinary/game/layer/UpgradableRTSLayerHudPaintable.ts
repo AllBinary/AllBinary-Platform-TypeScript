@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { CharArrayFactory } from "../../../../org/allbinary/logic/java/character/CharArrayFactory.js";
+import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { CommonButtons } from "../../../../org/allbinary/input/motion/button/CommonButtons.js";
+import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
 
     
 
@@ -58,10 +58,10 @@ import { CommonButtons } from "../../../../org/allbinary/input/motion/button/Com
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-import { RTSLayerCompositePaintable } from "./RTSLayerCompositePaintable.js";
-import { UpgradableWideRTSLayerPaintable } from "./UpgradableWideRTSLayerPaintable.js";
-import { RTSLayer } from "./RTSLayer.js";
+        import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+import { RTSLayerCompositePaintable } from './RTSLayerCompositePaintable.js';
+import { UpgradableWideRTSLayerPaintable } from './UpgradableWideRTSLayerPaintable.js';
+import { RTSLayer } from './RTSLayer.js';
 
 export class UpgradableRTSLayerHudPaintable extends SelectionHudPaintable {
         

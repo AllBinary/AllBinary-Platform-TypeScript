@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MyCanvas } from "../../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { ScrollSelectionForm } from "../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js";
+import { ScrollSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { MotionGestureEvent } from "../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js";
+import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -57,8 +57,8 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CommandFormInputProcessor } from "./CommandFormInputProcessor.js";
-import { PopupMenuInputProcessor } from "./PopupMenuInputProcessor.js";
+        import { CommandFormInputProcessor } from './CommandFormInputProcessor.js';
+import { PopupMenuInputProcessor } from './PopupMenuInputProcessor.js';
 
 export class PopupCommandFormInputProcessor extends CommandFormInputProcessor {
         

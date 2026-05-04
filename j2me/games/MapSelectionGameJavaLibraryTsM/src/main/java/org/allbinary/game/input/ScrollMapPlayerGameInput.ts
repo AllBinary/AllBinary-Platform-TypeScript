@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { InputFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js";
+import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
 
     
-import { GameKeyEvent } from "../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { ScrollMapEvent } from "../../../../org/allbinary/layer/event/ScrollMapEvent.js";
+import { ScrollMapEvent } from '../../../../org/allbinary/layer/event/ScrollMapEvent.js';
 
     
-import { ScrollMapEventHandler } from "../../../../org/allbinary/layer/event/ScrollMapEventHandler.js";
+import { ScrollMapEventHandler } from '../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
 
     
-import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -84,14 +84,14 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PlayerGameInput } from "./PlayerGameInput.js";
-import { InputFactory } from "./InputFactory.js";
-import { GameInputProcessor } from "./GameInputProcessor.js";
-import { ScrollMapUpGameInputProcessor } from "./ScrollMapUpGameInputProcessor.js";
-import { ScrollMapDownGameInputProcessor } from "./ScrollMapDownGameInputProcessor.js";
-import { ScrollMapRightGameInputProcessor } from "./ScrollMapRightGameInputProcessor.js";
-import { ScrollMapLeftGameInputProcessor } from "./ScrollMapLeftGameInputProcessor.js";
-import { GameInputProcessorUtil } from "./GameInputProcessorUtil.js";
+        import { PlayerGameInput } from './PlayerGameInput.js';
+import { InputFactory } from './InputFactory.js';
+import { GameInputProcessor } from './GameInputProcessor.js';
+import { ScrollMapUpGameInputProcessor } from './ScrollMapUpGameInputProcessor.js';
+import { ScrollMapDownGameInputProcessor } from './ScrollMapDownGameInputProcessor.js';
+import { ScrollMapRightGameInputProcessor } from './ScrollMapRightGameInputProcessor.js';
+import { ScrollMapLeftGameInputProcessor } from './ScrollMapLeftGameInputProcessor.js';
+import { GameInputProcessorUtil } from './GameInputProcessorUtil.js';
 
 export class ScrollMapPlayerGameInput extends PlayerGameInput {
         

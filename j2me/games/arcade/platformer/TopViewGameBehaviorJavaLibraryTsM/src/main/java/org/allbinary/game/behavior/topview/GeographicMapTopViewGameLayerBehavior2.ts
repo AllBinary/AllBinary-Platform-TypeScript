@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MultiGeographicMapBehavior } from "../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js";
+import { MultiGeographicMapBehavior } from '../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js';
 
     
-import { AllBinaryTiledLayer } from "../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { GravityUtil } from "../../../../../org/allbinary/game/physics/acceleration/GravityUtil.js";
+import { GravityUtil } from '../../../../../org/allbinary/game/physics/acceleration/GravityUtil.js';
 
     
-import { VelocityProperties } from "../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js";
+import { VelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
 
@@ -66,8 +66,8 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapTopViewLayerBehavior } from "./GeographicMapTopViewLayerBehavior.js";
-import { TopViewCharacterInterface } from "./TopViewCharacterInterface.js";
+        import { GeographicMapTopViewLayerBehavior } from './GeographicMapTopViewLayerBehavior.js';
+import { TopViewCharacterInterface } from './TopViewCharacterInterface.js';
 
 export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopViewLayerBehavior {
         

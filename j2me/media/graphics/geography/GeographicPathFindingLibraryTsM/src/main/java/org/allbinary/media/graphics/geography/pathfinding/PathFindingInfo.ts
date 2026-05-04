@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListS } from "../../../../../../org/allbinary/util/BasicArrayListS.js";
+import { BasicArrayListS } from '../../../../../../org/allbinary/util/BasicArrayListS.js';
 
     
-import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
 
@@ -49,10 +49,10 @@ import { BasicArrayListUtil } from "../../../../../../org/allbinary/util/BasicAr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PathFindingInfoInterface } from "./PathFindingInfoInterface.js";
-import { PathFindingNodeCostInfoFactoryBase } from "./PathFindingNodeCostInfoFactoryBase.js";
-import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
-import { PathFindingNode } from "./PathFindingNode.js";
+        import { PathFindingInfoInterface } from './PathFindingInfoInterface.js';
+import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
+import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
+import { PathFindingNode } from './PathFindingNode.js';
 
 export class PathFindingInfo
             extends Object

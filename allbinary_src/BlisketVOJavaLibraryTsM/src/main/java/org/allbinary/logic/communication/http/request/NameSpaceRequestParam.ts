@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Tokenizer } from "../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js";
+import { Tokenizer } from '../../../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 
     
-import { HtmlNameMathData } from "../../../../../../org/allbinary/logic/visual/dhtml/html/name/HtmlNameMathData.js";
+import { HtmlNameMathData } from '../../../../../../org/allbinary/logic/visual/dhtml/html/name/HtmlNameMathData.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -68,7 +68,7 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NameSpaceRequestParamData } from "./NameSpaceRequestParamData.js";
+        import { NameSpaceRequestParamData } from './NameSpaceRequestParamData.js';
 
 export class NameSpaceRequestParam
             extends Object

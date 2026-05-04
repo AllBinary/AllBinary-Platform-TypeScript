@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicHud } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js";
+import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
 
     
-import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { MyFont } from "../../../../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { PaintableInterface } from "../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
-import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { PrimitiveLongUtil } from "../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js";
+import { PrimitiveLongUtil } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
 
     
 

@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { EmailServerConfiguration } from "../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfiguration.js";
+import { EmailServerConfiguration } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfiguration.js';
 
     
-import { EmailServerConfigurationInterface } from "../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js";
+import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -55,7 +55,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ContextConfigurationInterface } from "./ContextConfigurationInterface.js";
+        import { ContextConfigurationInterface } from './ContextConfigurationInterface.js';
 
 export class ContextConfiguration
             extends Object

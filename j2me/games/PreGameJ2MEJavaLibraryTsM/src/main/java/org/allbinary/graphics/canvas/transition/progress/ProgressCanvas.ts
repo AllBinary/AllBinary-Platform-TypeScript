@@ -18,76 +18,76 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CommandListener } from "../../../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { NullCanvas } from "../../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { NullCommandListener } from "../../../../../../javax/microedition/lcdui/NullCommandListener.js";
+import { NullCommandListener } from '../../../../../../javax/microedition/lcdui/NullCommandListener.js';
 
     
-import { Processor } from "../../../../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
 
     
-import { RunnableCanvas } from "../../../../../../org/allbinary/canvas/RunnableCanvas.js";
+import { RunnableCanvas } from '../../../../../../org/allbinary/canvas/RunnableCanvas.js';
 
     
-import { GameCommandsFactory } from "../../../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CanvasStrings } from "../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { DisplayInfoSingleton } from "../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { CustomGaugeItem } from "../../../../../../org/allbinary/graphics/form/item/CustomGaugeItem.js";
+import { CustomGaugeItem } from '../../../../../../org/allbinary/graphics/form/item/CustomGaugeItem.js';
 
     
-import { NullPaintable } from "../../../../../../org/allbinary/graphics/paint/NullPaintable.js";
+import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 
     
-import { Paintable } from "../../../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { PaintableInterface } from "../../../../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
-import { PreLogUtil } from "../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AllBinaryMidlet } from "../../../../../../org/allbinary/midlet/AllBinaryMidlet.js";
+import { AllBinaryMidlet } from '../../../../../../org/allbinary/midlet/AllBinaryMidlet.js';
 
     
-import { PathFindingThreadPool } from "../../../../../../org/allbinary/thread/PathFindingThreadPool.js";
+import { PathFindingThreadPool } from '../../../../../../org/allbinary/thread/PathFindingThreadPool.js';
 
     
-import { ThreadPool } from "../../../../../../org/allbinary/thread/ThreadPool.js";
+import { ThreadPool } from '../../../../../../org/allbinary/thread/ThreadPool.js';
 
     
 

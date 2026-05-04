@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { NameSpaceRequestParams } from "../../../../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParams.js";
+import { NameSpaceRequestParams } from '../../../../../../../../../org/allbinary/logic/communication/http/request/NameSpaceRequestParams.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ValidationComponentInterface } from "../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { ThemeValidation } from "../../../../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js";
+import { ThemeValidation } from '../../../../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { CustomizerUtil } from "../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js";
+import { CustomizerUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
 
     
-import { StoreCustomizerComponentUtil } from "../../../../../../../../../views/business/context/modules/storefront/customizer/StoreCustomizerComponentUtil.js";
+import { StoreCustomizerComponentUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/StoreCustomizerComponentUtil.js';
 
     
 
@@ -78,7 +78,7 @@ import { StoreCustomizerComponentUtil } from "../../../../../../../../../views/b
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ThemeCustomizerView } from "./ThemeCustomizerView.js";
+        import { ThemeCustomizerView } from './ThemeCustomizerView.js';
 
 export class InsertThemeValidationView extends ThemeCustomizerView implements ValidationComponentInterface {
         

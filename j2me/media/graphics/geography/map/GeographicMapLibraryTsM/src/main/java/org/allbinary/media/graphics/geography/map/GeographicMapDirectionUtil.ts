@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Direction } from "../../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionFactory } from "../../../../../../org/allbinary/direction/DirectionFactory.js";
+import { DirectionFactory } from '../../../../../../org/allbinary/direction/DirectionFactory.js';
 
     
-import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosition.js";
+import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
 
     
 
@@ -54,7 +54,7 @@ import { CellPosition } from "../../../../../../org/allbinary/graphics/CellPosit
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+        import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
 
 export class GeographicMapDirectionUtil
             extends Object

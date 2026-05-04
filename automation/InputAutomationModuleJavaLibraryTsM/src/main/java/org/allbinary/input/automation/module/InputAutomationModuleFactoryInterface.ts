@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HelpSet } from "../../../../../javax/help/HelpSet.js";
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 
     
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
-import { RunnableInterface } from "../../../../../org/allbinary/thread/RunnableInterface.js";
+import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
 
     
 
@@ -51,7 +51,7 @@ import { RunnableInterface } from "../../../../../org/allbinary/thread/RunnableI
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
+        import { JPanel } from './JPanel.js';
 
 export class InputAutomationModuleFactoryInterface
             extends Object

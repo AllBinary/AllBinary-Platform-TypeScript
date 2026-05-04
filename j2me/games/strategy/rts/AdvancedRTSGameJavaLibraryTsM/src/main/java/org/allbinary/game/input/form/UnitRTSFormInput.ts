@@ -17,96 +17,96 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AdvancedPlayerOwnedRTSLayers } from "../../../../../org/allbinary/game/layer/AdvancedPlayerOwnedRTSLayers.js";
+import { AdvancedPlayerOwnedRTSLayers } from '../../../../../org/allbinary/game/layer/AdvancedPlayerOwnedRTSLayers.js';
 
     
-import { AdvancedRTSGameLayer } from "../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js";
+import { AdvancedRTSGameLayer } from '../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
 
     
-import { AdvancedRTSPlayerLayerInterface } from "../../../../../org/allbinary/game/layer/AdvancedRTSPlayerLayerInterface.js";
+import { AdvancedRTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/AdvancedRTSPlayerLayerInterface.js';
 
     
-import { RTSGameStrings } from "../../../../../org/allbinary/game/layer/RTSGameStrings.js";
+import { RTSGameStrings } from '../../../../../org/allbinary/game/layer/RTSGameStrings.js';
 
     
-import { RTSLayer } from "../../../../../org/allbinary/game/layer/RTSLayer.js";
+import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
 
     
-import { RTSPlayerLayerInterface } from "../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js";
+import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 
     
-import { Capital } from "../../../../../org/allbinary/game/layer/capital/Capital.js";
+import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital.js';
 
     
-import { UnitLayer } from "../../../../../org/allbinary/game/layer/unit/UnitLayer.js";
+import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLayer.js';
 
     
-import { WorkWaypoint } from "../../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js";
+import { WorkWaypoint } from '../../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js';
 
     
-import { CustomItem } from "../../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { BuildingSound } from "../../../../../org/allbinary/media/audio/BuildingSound.js";
+import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
 
     
-import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { GeographicMapCellPositionAreaBase } from "../../../../../org/allbinary/game/layer/GeographicMapCellPositionAreaBase.js";
+import { GeographicMapCellPositionAreaBase } from '../../../../../org/allbinary/game/layer/GeographicMapCellPositionAreaBase.js';
 
     
-import { GameNotificationEvent } from "../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
+import { GameNotificationEvent } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 
     
-import { GameNotificationEventHandler } from "../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js";
+import { GameNotificationEventHandler } from '../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { Layer } from "../../../../../org/allbinary/layer/Layer.js";
+import { Layer } from '../../../../../org/allbinary/layer/Layer.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { ErrorSound } from "../../../../../org/allbinary/media/audio/ErrorSound.js";
+import { ErrorSound } from '../../../../../org/allbinary/media/audio/ErrorSound.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js";
+import { GeographicMapCompositeInterface } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
 
     
 
@@ -127,9 +127,9 @@ import { GeographicMapCompositeInterface } from "../../../../../org/allbinary/me
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSFormInput } from "./RTSFormInput.js";
-import { AssignWaypointsUtil } from "./AssignWaypointsUtil.js";
-import { PlayersSingletonFactory } from "./PlayersSingletonFactory.js";
+        import { RTSFormInput } from './RTSFormInput.js';
+import { AssignWaypointsUtil } from './AssignWaypointsUtil.js';
+import { PlayersSingletonFactory } from './PlayersSingletonFactory.js';
 
 export class UnitRTSFormInput extends RTSFormInput {
         

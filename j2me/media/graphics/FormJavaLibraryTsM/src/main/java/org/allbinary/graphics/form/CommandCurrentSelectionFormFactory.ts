@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { TouchFeatureFactory } from "../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js";
+import { TouchFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
 
@@ -57,10 +57,10 @@ import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomI
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ScrollSelectionFormNoneFactory } from "./ScrollSelectionFormNoneFactory.js";
-import { CommandCurrentSelectionForm } from "./CommandCurrentSelectionForm.js";
-import { ScrollSelectionForm } from "./ScrollSelectionForm.js";
-import { FormType } from "./FormType.js";
+        import { ScrollSelectionFormNoneFactory } from './ScrollSelectionFormNoneFactory.js';
+import { CommandCurrentSelectionForm } from './CommandCurrentSelectionForm.js';
+import { ScrollSelectionForm } from './ScrollSelectionForm.js';
+import { FormType } from './FormType.js';
 
 export class CommandCurrentSelectionFormFactory
             extends Object

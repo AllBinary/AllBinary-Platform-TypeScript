@@ -3,17 +3,17 @@
         
 
 
-            import { Object } from "java/lang/Object.js";
+            import { Object } from 'java/lang/Object.js';
 
 
         
-import { Assertions } from "org/junit/jupiter/api/Assertions.js";
+import { Assertions } from 'org/junit/jupiter/api/Assertions.js';
 
     
-import { DisplayName } from "org/junit/jupiter/api/DisplayName.js";
+import { DisplayName } from 'org/junit/jupiter/api/DisplayName.js';
 
     
-import { Test } from "org/junit/jupiter/api/Test.js";
+import { Test } from 'org/junit/jupiter/api/Test.js';
 
     
 

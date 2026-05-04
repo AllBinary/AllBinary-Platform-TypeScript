@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 
     
-import { BasicUriResolver } from "../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js";
+import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
 
     
-import { ContextUriResolver } from "../../../../../org/allbinary/data/tree/dom/ContextUriResolver.js";
+import { ContextUriResolver } from '../../../../../org/allbinary/data/tree/dom/ContextUriResolver.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
 
@@ -57,7 +57,7 @@ import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visua
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicTransformer } from "./BasicTransformer.js";
+        import { BasicTransformer } from './BasicTransformer.js';
 
 export class ContextTransformer extends BasicTransformer {
         

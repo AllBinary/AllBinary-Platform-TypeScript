@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from '../../../java/util/Vector.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringValidationUtil } from "../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { TransformFactory } from "../../../org/allbinary/logic/visual/transform/TransformFactory.js";
+import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
 
     
-import { TransformInterface } from "../../../org/allbinary/logic/visual/transform/TransformInterface.js";
+import { TransformInterface } from '../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 
     
-import { TransformInfo } from "../../../org/allbinary/logic/visual/transform/info/TransformInfo.js";
+import { TransformInfo } from '../../../org/allbinary/logic/visual/transform/info/TransformInfo.js';
 
     
-import { TransformInfoInterface } from "../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TransformTemplateInterface } from "../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js";
+import { TransformTemplateInterface } from '../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
 
     
-import { HttpStoreComponentView } from "../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
-import { NoTemplateTransformInfoObjectConfig } from "../../../views/business/context/modules/storefront/customizer/template/objectConfig/NoTemplateTransformInfoObjectConfig.js";
+import { NoTemplateTransformInfoObjectConfig } from '../../../views/business/context/modules/storefront/customizer/template/objectConfig/NoTemplateTransformInfoObjectConfig.js';
 
     
 

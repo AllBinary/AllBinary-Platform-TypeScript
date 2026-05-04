@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { StatusFactory } from "../../../../../../org/allbinary/graphics/j2me/StatusFactory.js";
+import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -51,8 +51,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GraphicsItemInterfaceFactoryInterface } from "./GraphicsItemInterfaceFactoryInterface.js";
-import { GraphicItemFactory } from "./GraphicItemFactory.js";
+        import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
+import { GraphicItemFactory } from './GraphicItemFactory.js';
 
 export class ToolFactory
             extends Object

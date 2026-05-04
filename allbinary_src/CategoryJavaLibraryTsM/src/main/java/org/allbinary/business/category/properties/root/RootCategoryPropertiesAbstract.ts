@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { CategoryData } from "../../../../../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../../../../../org/allbinary/business/category/CategoryData.js';
 
     
-import { CategoryHierarchyInterface } from "../../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js";
+import { CategoryHierarchyInterface } from '../../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
 
     
-import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -68,7 +68,7 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RootCategoryPropertiesInterface } from "./RootCategoryPropertiesInterface.js";
+        import { RootCategoryPropertiesInterface } from './RootCategoryPropertiesInterface.js';
 
 export class RootCategoryPropertiesAbstract
             extends Object

@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../../java/util/Vector.js';
 
     
-import { StoreFrontFactory } from "../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { DomNodeInterface } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Validation } from "../../../../../../../../../org/allbinary/logic/control/validate/Validation.js";
+import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { HtmlMetaAttributeDataFactory } from "../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeDataFactory.js";
+import { HtmlMetaAttributeDataFactory } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeDataFactory.js';
 
     
-import { HtmlMetaAttributeValuesData } from "../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeValuesData.js";
+import { HtmlMetaAttributeValuesData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetaAttributeValuesData.js';
 
     
-import { HtmlMetasData } from "../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetasData.js";
+import { HtmlMetasData } from '../../../../../../../../../org/allbinary/logic/visual/dhtml/html/head/meta/HtmlMetasData.js';
 
     
-import { CommonStrings } from "../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -81,7 +81,7 @@ import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MetaValidation } from "./MetaValidation.js";
+        import { MetaValidation } from './MetaValidation.js';
 
 export class MetasValidation extends Validation implements DomNodeInterface {
         

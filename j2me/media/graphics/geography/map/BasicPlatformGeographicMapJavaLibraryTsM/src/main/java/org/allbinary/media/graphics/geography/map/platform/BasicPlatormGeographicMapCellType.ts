@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
-import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListS } from "../../../../../../../org/allbinary/util/BasicArrayListS.js";
+import { BasicArrayListS } from '../../../../../../../org/allbinary/util/BasicArrayListS.js';
 
     
 

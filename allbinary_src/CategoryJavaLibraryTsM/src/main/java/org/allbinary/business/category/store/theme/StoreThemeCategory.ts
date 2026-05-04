@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { Category } from "../../../../../../org/allbinary/business/category/Category.js";
+import { Category } from '../../../../../../org/allbinary/business/category/Category.js';
 
     
-import { CategoryInterface } from "../../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { CategoryPropertiesFactoryInterface } from "../../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js";
+import { CategoryPropertiesFactoryInterface } from '../../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
 
     
-import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ThemeData } from "../../../../../../org/allbinary/logic/visual/theme/ThemeData.js";
+import { ThemeData } from '../../../../../../org/allbinary/logic/visual/theme/ThemeData.js';
 
     
-import { ThemeValidation } from "../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js";
+import { ThemeValidation } from '../../../../../../org/allbinary/logic/visual/theme/ThemeValidation.js';
 
     
-import { ThemesData } from "../../../../../../org/allbinary/logic/visual/theme/ThemesData.js";
+import { ThemesData } from '../../../../../../org/allbinary/logic/visual/theme/ThemesData.js';
 
     
-import { TransformInfoInterface } from "../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -78,7 +78,7 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StoreThemeCategoryInterface } from "./StoreThemeCategoryInterface.js";
+        import { StoreThemeCategoryInterface } from './StoreThemeCategoryInterface.js';
 
 export class StoreThemeCategory extends Category implements StoreThemeCategoryInterface {
         

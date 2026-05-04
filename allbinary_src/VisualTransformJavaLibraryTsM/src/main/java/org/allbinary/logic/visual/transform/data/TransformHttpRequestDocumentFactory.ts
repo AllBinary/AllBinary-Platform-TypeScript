@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { WeblisketSession } from "../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
 
@@ -48,8 +48,8 @@ import { WeblisketSession } from "../../../../../../org/allbinary/logic/communic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformHttpRequestDocument } from "./TransformHttpRequestDocument.js";
-import { TransformDocumentInterface } from "./TransformDocumentInterface.js";
+        import { TransformHttpRequestDocument } from './TransformHttpRequestDocument.js';
+import { TransformDocumentInterface } from './TransformDocumentInterface.js';
 
 export class TransformHttpRequestDocumentFactory
             extends Object

@@ -18,41 +18,41 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Anchor } from "../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { ColorChangeEvent } from "../../../../org/allbinary/graphics/color/ColorChangeEvent.js";
+import { ColorChangeEvent } from '../../../../org/allbinary/graphics/color/ColorChangeEvent.js';
 
     
-import { ColorChangeListener } from "../../../../org/allbinary/graphics/color/ColorChangeListener.js";
+import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/ColorChangeListener.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -73,9 +73,9 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullHighScoresSingletonFactory } from "./NullHighScoresSingletonFactory.js";
-import { HighScores } from "./HighScores.js";
-import { HighScore } from "./HighScore.js";
+        import { NullHighScoresSingletonFactory } from './NullHighScoresSingletonFactory.js';
+import { HighScores } from './HighScores.js';
+import { HighScore } from './HighScore.js';
 
 export class HighScoresPaintable extends Paintable implements ColorChangeListener {
         

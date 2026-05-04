@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { PermissionItemsHelperFactory } from "../../admin/taghelpers/PermissionItemsHelperFactory.js";
+import { PermissionItemsHelperFactory } from '../../admin/taghelpers/PermissionItemsHelperFactory.js';
 
     
-import { PermissionItemsRequestHelperFactory } from "../../admin/taghelpers/PermissionItemsRequestHelperFactory.js";
+import { PermissionItemsRequestHelperFactory } from '../../admin/taghelpers/PermissionItemsRequestHelperFactory.js';
 
     
 
@@ -46,7 +46,7 @@ import { PermissionItemsRequestHelperFactory } from "../../admin/taghelpers/Perm
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
+        import { TableTag } from './TableTag.js';
 
 export class PermissionItemsTag extends TableTag {
         

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { NoTimeDelayHelper } from "../../../../org/allbinary/time/NoTimeDelayHelper.js";
+import { NoTimeDelayHelper } from '../../../../org/allbinary/time/NoTimeDelayHelper.js';
 
     
 
@@ -54,7 +54,7 @@ import { NoTimeDelayHelper } from "../../../../org/allbinary/time/NoTimeDelayHel
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputProbability } from "./InputProbability.js";
+        import { InputProbability } from './InputProbability.js';
 
 export class BasicProbabilityAIDataFactory
             extends Object

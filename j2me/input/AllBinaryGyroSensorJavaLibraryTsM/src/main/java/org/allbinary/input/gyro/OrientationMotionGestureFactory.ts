@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { InputFactory } from "../../../../org/allbinary/game/input/InputFactory.js";
+import { InputFactory } from '../../../../org/allbinary/game/input/InputFactory.js';
 
     
-import { MotionGestureInput } from "../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
+import { MotionGestureInput } from '../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 
     
 

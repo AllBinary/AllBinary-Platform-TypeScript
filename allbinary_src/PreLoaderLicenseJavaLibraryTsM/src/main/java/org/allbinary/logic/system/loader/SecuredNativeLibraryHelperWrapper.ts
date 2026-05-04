@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { AbKeys } from "../../../../../org/allbinary/logic/system/security/AbKeys.js";
+import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { LicensingException } from "../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 
@@ -49,8 +49,8 @@ import { LicensingException } from "../../../../../org/allbinary/logic/system/se
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NativeLibraryHelperWrapper } from "./NativeLibraryHelperWrapper.js";
-import { SecuredNativeLibraryInterface } from "./SecuredNativeLibraryInterface.js";
+        import { NativeLibraryHelperWrapper } from './NativeLibraryHelperWrapper.js';
+import { SecuredNativeLibraryInterface } from './SecuredNativeLibraryInterface.js';
 
 export class SecuredNativeLibraryHelperWrapper extends NativeLibraryHelperWrapper {
         

@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { InterruptedException } from "../../../java/lang/InterruptedException.js";
+            import { InterruptedException } from '../../../java/lang/InterruptedException.js';
         
-            import { Runnable } from "../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -58,10 +58,10 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullRunnable } from "./NullRunnable.js";
-import { ThreadPoolStrings } from "./ThreadPoolStrings.js";
-import { ThreadObjectUtil } from "./ThreadObjectUtil.js";
-import { PriorityRunnable } from "./PriorityRunnable.js";
+        import { NullRunnable } from './NullRunnable.js';
+import { ThreadPoolStrings } from './ThreadPoolStrings.js';
+import { ThreadObjectUtil } from './ThreadObjectUtil.js';
+import { PriorityRunnable } from './PriorityRunnable.js';
 
 export class ThreadPool
             extends Object

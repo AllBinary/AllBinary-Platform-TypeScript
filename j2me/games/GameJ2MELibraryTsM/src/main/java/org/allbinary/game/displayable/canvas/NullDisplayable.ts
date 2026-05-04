@@ -4,20 +4,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BaseGameStatistics } from "../../../../../org/allbinary/canvas/BaseGameStatistics.js";
+import { BaseGameStatistics } from '../../../../../org/allbinary/canvas/BaseGameStatistics.js';
 
     
-import { GameStatisticsFactory } from "../../../../../org/allbinary/canvas/GameStatisticsFactory.js";
+import { GameStatisticsFactory } from '../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
 
     
 

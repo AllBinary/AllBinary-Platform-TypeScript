@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { Vector } from "../../java/util/Vector.js";
+import { Vector } from '../../java/util/Vector.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { GLOBALS2 } from "../../org/allbinary/globals/GLOBALS2.js";
+import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
 
     
-import { RequestMapInterface } from "../../org/allbinary/logic/communication/http/request/RequestMapInterface.js";
+import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringValidationUtil } from "../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
 
     
-import { HelperTag } from "../../tags/HelperTag.js";
+import { HelperTag } from '../../tags/HelperTag.js';
 
     
 
@@ -75,7 +75,7 @@ import { HelperTag } from "../../tags/HelperTag.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InventoryItemViewParentTagHelper } from "./InventoryItemViewParentTagHelper.js";
+        import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';
 
 export class MultipartRequestParamForwardHelper
             extends Object

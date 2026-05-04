@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
 
@@ -54,8 +54,8 @@ import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/Primitive
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-import { BottomToTopImageAnimation } from "./BottomToTopImageAnimation.js";
+        import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
+import { BottomToTopImageAnimation } from './BottomToTopImageAnimation.js';
 
 export class BottomToTopImageAnimationFactory extends BaseImageAnimationFactory {
         

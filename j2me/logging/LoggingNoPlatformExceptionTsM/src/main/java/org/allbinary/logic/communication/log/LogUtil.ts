@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 
 
@@ -42,7 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Log } from "./Log.js";
+        import { Log } from './Log.js';
 
 expect export class LogUtil
             extends Object

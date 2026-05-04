@@ -18,31 +18,33 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Character } from '../../../java/lang/Character.js';
         
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+            import { Exception } from '../../../java/lang/Exception.js';
+        
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { Tokenizer } from "../../../org/allbinary/logic/string/tokens/Tokenizer.js";
+import { Tokenizer } from '../../../org/allbinary/logic/string/tokens/Tokenizer.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -63,8 +65,7 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Character } from "./Character.js";
-
+        
 export class CamelCaseUtil
             extends Object
          {

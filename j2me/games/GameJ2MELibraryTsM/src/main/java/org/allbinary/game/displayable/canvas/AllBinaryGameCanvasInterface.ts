@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { AllBinaryGameLayerManager } from "../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js";
+import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { DisplayableInterface } from "../../../../../org/allbinary/graphics/displayable/DisplayableInterface.js";
+import { DisplayableInterface } from '../../../../../org/allbinary/graphics/displayable/DisplayableInterface.js';
 
     
 

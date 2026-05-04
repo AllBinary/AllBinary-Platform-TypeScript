@@ -4,7 +4,7 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
@@ -26,9 +26,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CommandListener } from "./CommandListener.js";
-import { Command } from "./Command.js";
-import { Displayable } from "./Displayable.js";
+        import { CommandListener } from './CommandListener.js';
+import { Command } from './Command.js';
+import { Displayable } from './Displayable.js';
 
 export class NullCommandListener
             extends Object

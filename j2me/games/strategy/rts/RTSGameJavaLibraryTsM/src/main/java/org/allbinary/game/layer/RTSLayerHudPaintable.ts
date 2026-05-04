@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AndroidUtil } from "../../../../org/allbinary/AndroidUtil.js";
+import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
-import { BasicWeaponPart } from "../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js";
+import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
 
     
 
@@ -55,8 +55,8 @@ import { BasicWeaponPart } from "../../../../org/allbinary/game/part/weapon/Basi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-import { RTSLayer } from "./RTSLayer.js";
+        import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+import { RTSLayer } from './RTSLayer.js';
 
 export class RTSLayerHudPaintable extends SelectionHudPaintable {
         

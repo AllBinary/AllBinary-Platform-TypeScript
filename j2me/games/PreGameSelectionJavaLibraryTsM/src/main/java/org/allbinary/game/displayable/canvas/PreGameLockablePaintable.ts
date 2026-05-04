@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { GameFeatureImageCacheFactory } from "../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js";
+import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
 
     
-import { LockedResources } from "../../../../../org/allbinary/logic/system/security/licensing/LockedResources.js";
+import { LockedResources } from '../../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
 
     
-import { LockedUtil } from "../../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js";
+import { LockedUtil } from '../../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
 
     
-import { LockablePaintable } from "../../../../../org/allbinary/graphics/form/LockablePaintable.js";
+import { LockablePaintable } from '../../../../../org/allbinary/graphics/form/LockablePaintable.js';
 
     
-import { ScrollCurrentSelectionForm } from "../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js";
+import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
 
     
 

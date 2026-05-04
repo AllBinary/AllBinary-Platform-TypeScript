@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { AnimationBehavior } from "../../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 
     
-import { Angle } from "../../../../../org/allbinary/math/Angle.js";
+import { Angle } from '../../../../../org/allbinary/math/Angle.js';
 
     
-import { AngleFactory } from "../../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
 
     
 
@@ -61,7 +61,7 @@ import { AngleInfo } from "../../../../../org/allbinary/math/AngleInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HackRotationSpriteIndexedAnimation } from "./HackRotationSpriteIndexedAnimation.js";
+        import { HackRotationSpriteIndexedAnimation } from './HackRotationSpriteIndexedAnimation.js';
 
 export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedAnimation {
         

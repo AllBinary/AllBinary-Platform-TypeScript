@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { DynamicObjectData } from "../../../../../org/allbinary/business/DynamicObjectData.js";
+import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeFactory } from "../../../../../org/allbinary/logic/system/loader/AbeFactory.js";
+import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { LicensingException } from "../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -69,7 +69,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WorkFlowInterface } from "./WorkFlowInterface.js";
+        import { WorkFlowInterface } from './WorkFlowInterface.js';
 
 export class TagWorkFlowFactory
             extends Object

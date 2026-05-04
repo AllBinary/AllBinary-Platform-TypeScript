@@ -4,11 +4,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { ImageIO } from "../../../../../javax/imageio/ImageIO.js";
+import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
 
     
 

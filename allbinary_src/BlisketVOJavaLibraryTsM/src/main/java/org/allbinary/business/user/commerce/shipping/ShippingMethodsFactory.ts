@@ -18,73 +18,73 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { DynamicObjectData } from "../../../../../../org/allbinary/business/DynamicObjectData.js";
+import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
 
     
-import { StoreFrontInterface } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { BasicWeightShippingModuleView } from "../../../../../../org/allbinary/business/user/commerce/shipping/modules/BasicWeightShippingModuleView.js";
+import { BasicWeightShippingModuleView } from '../../../../../../org/allbinary/business/user/commerce/shipping/modules/BasicWeightShippingModuleView.js';
 
     
-import { NoShippingModuleView } from "../../../../../../org/allbinary/business/user/commerce/shipping/modules/NoShippingModuleView.js";
+import { NoShippingModuleView } from '../../../../../../org/allbinary/business/user/commerce/shipping/modules/NoShippingModuleView.js';
 
     
-import { ShippingInterface } from "../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js";
+import { ShippingInterface } from '../../../../../../org/allbinary/business/user/commerce/shipping/modules/ShippingInterface.js';
 
     
-import { DomNodeHelper } from "../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { FREEBLISKET_PATH_GLOBALS } from "../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
+import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { CryptFileReader } from "../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js";
+import { CryptFileReader } from '../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 
     
-import { AbPath } from "../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeFactory } from "../../../../../../org/allbinary/logic/system/loader/AbeFactory.js";
+import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { TransformInfoObjectConfigData } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js";
+import { TransformInfoObjectConfigData } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -105,8 +105,8 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ShippingMethodsData } from "./ShippingMethodsData.js";
-import { ShippingMethodData } from "./ShippingMethodData.js";
+        import { ShippingMethodsData } from './ShippingMethodsData.js';
+import { ShippingMethodData } from './ShippingMethodData.js';
 
 export class ShippingMethodsFactory
             extends Object

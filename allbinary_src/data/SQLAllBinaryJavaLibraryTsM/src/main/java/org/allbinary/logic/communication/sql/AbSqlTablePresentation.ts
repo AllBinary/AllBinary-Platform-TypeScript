@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 
     
 
@@ -43,7 +43,7 @@ import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbSqlBasic } from "./AbSqlBasic.js";
+        import { AbSqlBasic } from './AbSqlBasic.js';
 
 export class AbSqlTablePresentation extends AbSqlBasic {
         

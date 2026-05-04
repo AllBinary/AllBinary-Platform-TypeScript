@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -60,10 +60,10 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MotionRectanglesResultsListener } from "./MotionRectanglesResultsListener.js";
-import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
-import { MotionRectangles } from "./MotionRectangles.js";
-import { MotionRectanglesImageInputOutput } from "./MotionRectanglesImageInputOutput.js";
+        import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
+import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
+import { MotionRectangles } from './MotionRectangles.js';
+import { MotionRectanglesImageInputOutput } from './MotionRectanglesImageInputOutput.js';
 
 export class SaveMotionRectanglesResultsWorker
             extends Object

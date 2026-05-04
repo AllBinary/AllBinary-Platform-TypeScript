@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { PlatformInputMappingFactory } from "../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js";
+import { PlatformInputMappingFactory } from '../../../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
 
     
-import { GameKeyCompleteMotionGestureInputEvent } from "../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js";
+import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
 

@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { TiledLayer } from "../../../../javax/microedition/lcdui/game/TiledLayer.js";
+import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { AllBinaryTiledLayerFactoryInterface } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/AllBinaryTiledLayerFactoryInterface.js";
+import { AllBinaryTiledLayerFactoryInterface } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/AllBinaryTiledLayerFactoryInterface.js';
 
     
-import { RaceTrackData } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js";
+import { RaceTrackData } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
 
     
-import { RaceTrackInfo } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js";
+import { RaceTrackInfo } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
 
     
-import { TiledLayerFactory } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/TiledLayerFactory.js";
+import { TiledLayerFactory } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/TiledLayerFactory.js';
 
     
 
@@ -63,8 +63,8 @@ import { TiledLayerFactory } from "../../../../org/allbinary/media/graphics/geog
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryTiledLayer } from "./AllBinaryTiledLayer.js";
-import { AllBinaryJ2METiledLayer } from "./AllBinaryJ2METiledLayer.js";
+        import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
+import { AllBinaryJ2METiledLayer } from './AllBinaryJ2METiledLayer.js';
 
 export class AllBinaryTiledLayerFactory
             extends Object

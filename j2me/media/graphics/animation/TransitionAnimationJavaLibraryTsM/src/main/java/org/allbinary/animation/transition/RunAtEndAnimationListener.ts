@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Runnable } from "../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../java/lang/Runnable.js';
         
 
 
@@ -42,7 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnimationListenerInterface } from "./AnimationListenerInterface.js";
+        import { AnimationListenerInterface } from './AnimationListenerInterface.js';
 
 export class RunAtEndAnimationListener
             extends Object

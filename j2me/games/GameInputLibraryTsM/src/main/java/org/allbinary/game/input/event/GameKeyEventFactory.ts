@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameKeyEventSourceInterface } from "../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js";
+import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
 
     
-import { Input } from "../../../../../org/allbinary/game/input/Input.js";
+import { Input } from '../../../../../org/allbinary/game/input/Input.js';
 
     
-import { InputFactory } from "../../../../../org/allbinary/game/input/InputFactory.js";
+import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -57,7 +57,7 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameKeyEvent } from "./GameKeyEvent.js";
+        import { GameKeyEvent } from './GameKeyEvent.js';
 
 export class GameKeyEventFactory
             extends Object

@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { awt } from "../../../../../../java/awt.js";
+import { awt } from '../../../../../../java/awt.js';
 
     
-import { MutableTreeNode } from "../../../../../../javax/swing/tree/MutableTreeNode.js";
+import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
 
     
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { CanvasDom } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js";
+import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
 
     
-import { IntegerDimension } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js";
+import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -60,11 +60,11 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Color } from "./Color.js";
-import { Points } from "./Points.js";
-import { Graphics } from "./Graphics.js";
-import { MouseEvent } from "./MouseEvent.js";
-import { KeyEvent } from "./KeyEvent.js";
+        import { Color } from './Color.js';
+import { Points } from './Points.js';
+import { Graphics } from './Graphics.js';
+import { MouseEvent } from './MouseEvent.js';
+import { KeyEvent } from './KeyEvent.js';
 
 export interface GraphicItemInterface {
         

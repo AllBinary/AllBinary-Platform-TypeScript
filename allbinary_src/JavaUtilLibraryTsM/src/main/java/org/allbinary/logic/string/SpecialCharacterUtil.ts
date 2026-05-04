@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../java/util/HashMap.js';
 
     
-import { AbPathData } from "../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -52,7 +52,7 @@ import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StringUtil } from "./StringUtil.js";
+        import { StringUtil } from './StringUtil.js';
 
 export class SpecialCharacterUtil
             extends Object

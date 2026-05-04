@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImmutableImage.js";
+import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
 
     
-import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutableImage.js";
+import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
 
     
 
@@ -57,8 +57,8 @@ import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutab
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageJ2SERotationUtil } from "./ImageJ2SERotationUtil.js";
-import { ImageCreationUtil } from "./ImageCreationUtil.js";
+        import { ImageJ2SERotationUtil } from './ImageJ2SERotationUtil.js';
+import { ImageCreationUtil } from './ImageCreationUtil.js';
 
 export class ImageRotationUtil
             extends Object

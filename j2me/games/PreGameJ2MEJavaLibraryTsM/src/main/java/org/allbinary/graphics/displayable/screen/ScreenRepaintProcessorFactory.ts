@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Displayable } from "../../../../../javax/microedition/lcdui/Displayable.js";
+import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
 
     
-import { J2MEUtil } from "../../../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
 
     
-import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
 
     
 
@@ -49,7 +49,7 @@ import { Processor } from "../../../../../org/allbinary/canvas/Processor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ScreenRepaintProcessor } from "./ScreenRepaintProcessor.js";
+        import { ScreenRepaintProcessor } from './ScreenRepaintProcessor.js';
 
 export class ScreenRepaintProcessorFactory
             extends Object

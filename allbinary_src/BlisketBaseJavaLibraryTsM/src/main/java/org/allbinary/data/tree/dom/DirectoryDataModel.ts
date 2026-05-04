@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from "../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { Directory } from "../../../../../org/allbinary/logic/io/file/directory/Directory.js";
+import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
 
     
-import { TransformInterface } from "../../../../../org/allbinary/logic/visual/transform/TransformInterface.js";
+import { TransformInterface } from '../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 
     
-import { TransformDocumentFactory } from "../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentFactory.js";
+import { TransformDocumentFactory } from '../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentFactory.js';
 
     
-import { TransformDocumentInterface } from "../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js";
+import { TransformDocumentInterface } from '../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -72,8 +72,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DomNodeInterface } from "./DomNodeInterface.js";
-import { FileDomDataModel } from "./FileDomDataModel.js";
+        import { DomNodeInterface } from './DomNodeInterface.js';
+import { FileDomDataModel } from './FileDomDataModel.js';
 
 export class DirectoryDataModel
             extends Object

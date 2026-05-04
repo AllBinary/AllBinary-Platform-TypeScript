@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../java/lang/Long.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../../../java/util/Set.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { UserInterface } from "../../../../../../../../org/allbinary/business/user/UserInterface.js";
+import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
 
     
-import { UserRole } from "../../../../../../../../org/allbinary/business/user/role/UserRole.js";
+import { UserRole } from '../../../../../../../../org/allbinary/business/user/role/UserRole.js';
 
     
-import { UserEntityFactory } from "../../../../../../../../org/allbinary/data/tables/user/UserEntityFactory.js";
+import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
 
     
-import { UserEntityInterface } from "../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js";
+import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js';
 
     
 
@@ -68,8 +68,8 @@ import { UserEntityInterface } from "../../../../../../../../org/allbinary/data/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StoreFrontUsersStatisticsInterface } from "./StoreFrontUsersStatisticsInterface.js";
-import { StoreFrontUsersStatisticsData } from "./StoreFrontUsersStatisticsData.js";
+        import { StoreFrontUsersStatisticsInterface } from './StoreFrontUsersStatisticsInterface.js';
+import { StoreFrontUsersStatisticsData } from './StoreFrontUsersStatisticsData.js';
 
 export class StoreFrontUsersStatistics
             extends Object

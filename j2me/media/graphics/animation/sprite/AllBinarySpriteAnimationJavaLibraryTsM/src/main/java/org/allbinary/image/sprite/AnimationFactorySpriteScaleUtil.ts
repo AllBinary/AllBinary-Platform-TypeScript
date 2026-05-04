@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { SpriteFactory } from "../../../../org/allbinary/game/layer/SpriteFactory.js";
+import { SpriteFactory } from '../../../../org/allbinary/game/layer/SpriteFactory.js';
 
     
-import { OpenGLUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLUtil.js";
+import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
 
     
-import { ImageCache } from "../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
 
     
-import { ImageCacheFactory } from "../../../../org/allbinary/image/ImageCacheFactory.js";
+import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
 
     
-import { OpenGLESImageExclusionUtil } from "../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js";
+import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
 
     
-import { J2SEMath } from "../../../../org/allbinary/logic/math/J2SEMath.js";
+import { J2SEMath } from '../../../../org/allbinary/logic/math/J2SEMath.js';
 
     
-import { ImageScaleUtil } from "../../../../org/allbinary/media/image/ImageScaleUtil.js";
+import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
 
     
 

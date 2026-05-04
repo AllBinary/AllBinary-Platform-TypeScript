@@ -17,16 +17,16 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { RTSLayerEvent } from "../../../../../../org/allbinary/game/layer/RTSLayerEvent.js";
+import { RTSLayerEvent } from '../../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
 
     
-import { EventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
 

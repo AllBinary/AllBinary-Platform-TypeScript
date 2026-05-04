@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { NullUtil } from "../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/CacheableInterface.js";
+import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
 
     
 
@@ -54,8 +54,8 @@ import { CacheableInterface } from "../../../../org/allbinary/logic/util/cache/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotationAnimation.js";
-import { ImageArrayRotationAnimationInfo } from "./ImageArrayRotationAnimationInfo.js";
+        import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
+import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
 
 export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRotationAnimation implements CacheableInterface {
         

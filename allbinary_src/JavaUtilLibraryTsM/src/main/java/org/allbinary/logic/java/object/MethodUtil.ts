@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Method } from "../../../../../java/lang/reflect/Method.js";
+import { Method } from '../../../../../java/lang/reflect/Method.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -46,7 +46,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ParamsUtil } from "./ParamsUtil.js";
+        import { ParamsUtil } from './ParamsUtil.js';
 
 export class MethodUtil
             extends Object

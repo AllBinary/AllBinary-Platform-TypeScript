@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CompleteMotionGestureInputEventHandler } from "../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js";
+import { CompleteMotionGestureInputEventHandler } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js';
 
     
-import { GameKeyCompleteMotionGestureInputEvent } from "../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js";
+import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
 
     
-import { GameKeyFromMotionGestureEventListener } from "../../../../../../org/allbinary/game/input/motion/action/GameKeyFromMotionGestureEventListener.js";
+import { GameKeyFromMotionGestureEventListener } from '../../../../../../org/allbinary/game/input/motion/action/GameKeyFromMotionGestureEventListener.js';
 
     
-import { MotionGestureToMotionGestureActionAssociation } from "../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js";
+import { MotionGestureToMotionGestureActionAssociation } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureToMotionGestureActionAssociation.js';
 
     
-import { MotionGestureConfiguration } from "../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js";
+import { MotionGestureConfiguration } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
 
     
-import { MotionGestureConfigurationFactory } from "../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js";
+import { MotionGestureConfigurationFactory } from '../../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -69,7 +69,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CompleteMotionGestureListenerInterface } from "./CompleteMotionGestureListenerInterface.js";
+        import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';
 
 export class ResolveCompleteMotionGestureListener
             extends Object

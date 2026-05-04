@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Activity } from "../../../../../android/app/Activity.js";
+import { Activity } from '../../../../../android/app/Activity.js';
 
     
-import { Configuration } from "../../../../../android/content/res/Configuration.js";
+import { Configuration } from '../../../../../android/content/res/Configuration.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
 
@@ -52,8 +52,8 @@ import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TouchScreenFactory } from "./TouchScreenFactory.js";
-import { TouchScreenTypesFactory } from "./TouchScreenTypesFactory.js";
+        import { TouchScreenFactory } from './TouchScreenFactory.js';
+import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
 
 export class TouchScreenTypeFactory
             extends Object

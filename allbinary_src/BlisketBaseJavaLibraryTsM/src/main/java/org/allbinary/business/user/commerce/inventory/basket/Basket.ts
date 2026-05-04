@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { Serializable } from "../../../../../../../java/io/Serializable.js";
+import { Serializable } from '../../../../../../../java/io/Serializable.js';
 
     
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../../java/util/Set.js';
 
     
-import { ItemInterface } from "../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js";
+import { ItemInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 
     
-import { Money } from "../../../../../../../org/allbinary/business/user/commerce/money/Money.js";
+import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 
     
-import { MoneyException } from "../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js";
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 
     
-import { InventoryEntity } from "../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js";
+import { InventoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
 
     
-import { InventoryEntityFactory } from "../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js";
+import { InventoryEntityFactory } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 
     
 
@@ -66,7 +66,7 @@ import { InventoryEntityFactory } from "../../../../../../../org/allbinary/data/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasketInterface } from "./BasketInterface.js";
+        import { BasketInterface } from './BasketInterface.js';
 
 export class Basket
             extends Object

@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 
@@ -49,8 +49,8 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TagHelperFactoryInterface } from "./TagHelperFactoryInterface.js";
-import { HelperFactory } from "./HelperFactory.js";
+        import { TagHelperFactoryInterface } from './TagHelperFactoryInterface.js';
+import { HelperFactory } from './HelperFactory.js';
 
 export class PaymentHelperFactory
             extends Object

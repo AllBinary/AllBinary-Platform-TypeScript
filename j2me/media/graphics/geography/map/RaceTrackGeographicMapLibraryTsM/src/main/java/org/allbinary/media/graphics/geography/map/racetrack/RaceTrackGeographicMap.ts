@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellPositionBaseFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionBaseFactory.js";
+import { GeographicMapCellPositionBaseFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionBaseFactory.js';
 
     
-import { GeographicMapCellPositionFactoryInterface } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js";
+import { GeographicMapCellPositionFactoryInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
 
     
-import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js";
+import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 
     
 
@@ -57,13 +57,13 @@ import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseRaceTrackGeographicMap } from "./BaseRaceTrackGeographicMap.js";
-import { CustomMapGeneratorBase } from "./CustomMapGeneratorBase.js";
-import { BasicGeographicMapFactory } from "./BasicGeographicMapFactory.js";
-import { RaceTrackInfo } from "./RaceTrackInfo.js";
-import { RaceTrackData } from "./RaceTrackData.js";
-import { AllBinaryTiledLayerFactoryInterface } from "./AllBinaryTiledLayerFactoryInterface.js";
-import { CustomMapGeneratorBaseFactory } from "./CustomMapGeneratorBaseFactory.js";
+        import { BaseRaceTrackGeographicMap } from './BaseRaceTrackGeographicMap.js';
+import { CustomMapGeneratorBase } from './CustomMapGeneratorBase.js';
+import { BasicGeographicMapFactory } from './BasicGeographicMapFactory.js';
+import { RaceTrackInfo } from './RaceTrackInfo.js';
+import { RaceTrackData } from './RaceTrackData.js';
+import { AllBinaryTiledLayerFactoryInterface } from './AllBinaryTiledLayerFactoryInterface.js';
+import { CustomMapGeneratorBaseFactory } from './CustomMapGeneratorBaseFactory.js';
 
 export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
         

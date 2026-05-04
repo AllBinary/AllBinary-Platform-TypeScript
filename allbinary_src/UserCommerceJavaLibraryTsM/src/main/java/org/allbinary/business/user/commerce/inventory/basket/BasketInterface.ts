@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../../java/util/Set.js';
 
     
-import { Money } from "../../../../../../../org/allbinary/business/user/commerce/money/Money.js";
+import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 
     
-import { MoneyException } from "../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js";
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 
     
 

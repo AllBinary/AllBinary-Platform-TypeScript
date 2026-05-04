@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { InputOutputTypeData } from "../../org/allbinary/logic/io/InputOutputTypeData.js";
+import { InputOutputTypeData } from '../../org/allbinary/logic/io/InputOutputTypeData.js';
 
     
-import { TransformTag } from "../../tags/TransformTag.js";
+import { TransformTag } from '../../tags/TransformTag.js';
 
     
 

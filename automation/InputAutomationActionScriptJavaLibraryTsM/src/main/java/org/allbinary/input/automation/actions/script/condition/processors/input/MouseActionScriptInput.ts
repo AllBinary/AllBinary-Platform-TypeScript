@@ -18,50 +18,50 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
-            import { Long } from "../../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../../java/lang/Long.js';
         
-import { awt } from "../../../../../../../../../java/awt.js";
+import { awt } from '../../../../../../../../../java/awt.js';
 
     
-import { InputEvent } from "../../../../../../../../../java/awt/event/InputEvent.js";
+import { InputEvent } from '../../../../../../../../../java/awt/event/InputEvent.js';
 
     
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
     
-import { DomNodeHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BooleanFactory } from "../../../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Document } from "../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -82,12 +82,12 @@ import { NodeList } from "../../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicProfileActionScriptInput } from "./BasicProfileActionScriptInput.js";
-import { MouseActionScriptInputInterface } from "./MouseActionScriptInputInterface.js";
-import { Point } from "./Point.js";
-import { MouseActionScriptInputJPanel } from "./MouseActionScriptInputJPanel.js";
-import { MouseActionScriptInputData } from "./MouseActionScriptInputData.js";
-import { MouseInputAutomationProcessor } from "./MouseInputAutomationProcessor.js";
+        import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
+import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';
+import { Point } from './Point.js';
+import { MouseActionScriptInputJPanel } from './MouseActionScriptInputJPanel.js';
+import { MouseActionScriptInputData } from './MouseActionScriptInputData.js';
+import { MouseInputAutomationProcessor } from './MouseInputAutomationProcessor.js';
 
 export class MouseActionScriptInput extends BasicProfileActionScriptInput implements MouseActionScriptInputInterface {
         

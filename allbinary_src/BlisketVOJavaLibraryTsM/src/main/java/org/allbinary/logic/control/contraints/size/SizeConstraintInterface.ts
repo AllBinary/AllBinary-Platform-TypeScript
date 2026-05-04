@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { MinMaxIntConstraintInterface } from "../../../../../../org/allbinary/logic/control/contraints/MinMaxIntConstraintInterface.js";
+import { MinMaxIntConstraintInterface } from '../../../../../../org/allbinary/logic/control/contraints/MinMaxIntConstraintInterface.js';
 
     
 

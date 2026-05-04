@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { PaymentTransactionInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js";
+import { PaymentTransactionInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js';
 
     
-import { PaymentTransactionInterfaceRequestFactory } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceRequestFactory.js";
+import { PaymentTransactionInterfaceRequestFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterfaceRequestFactory.js';
 
     
-import { PaymentType } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js";
+import { PaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js';
 
     
-import { PaymentTypeUtil } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js";
+import { PaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { CommonStrings } from "../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -66,8 +66,8 @@ import { CommonStrings } from "../../../../../../../../../org/allbinary/string/C
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentProcessorInterfaceFactoryInterface } from "./PaymentProcessorInterfaceFactoryInterface.js";
-import { PaymentProcessorInterface } from "./PaymentProcessorInterface.js";
+        import { PaymentProcessorInterfaceFactoryInterface } from './PaymentProcessorInterfaceFactoryInterface.js';
+import { PaymentProcessorInterface } from './PaymentProcessorInterface.js';
 
 export class PaymentProcessorInterfaceFactory
             extends Object

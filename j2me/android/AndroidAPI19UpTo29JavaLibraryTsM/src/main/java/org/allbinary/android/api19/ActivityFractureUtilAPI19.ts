@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Activity } from "../../../../android/app/Activity.js";
+import { Activity } from '../../../../android/app/Activity.js';
 
     
-import { View } from "../../../../android/view/View.js";
+import { View } from '../../../../android/view/View.js';
 
     
-import { ActivityFractureUtilAPI5 } from "../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js";
+import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
 
     
 

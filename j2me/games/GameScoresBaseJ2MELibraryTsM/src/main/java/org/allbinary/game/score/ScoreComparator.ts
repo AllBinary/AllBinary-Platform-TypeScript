@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../java/lang/Long.js";
+            import { Long } from '../../../../java/lang/Long.js';
         
-import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 
     
-import { DataInputStream } from "../../../../java/io/DataInputStream.js";
+import { DataInputStream } from '../../../../java/io/DataInputStream.js';
 
     
-import { EOFException } from "../../../../java/io/EOFException.js";
+import { EOFException } from '../../../../java/io/EOFException.js';
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { RecordComparator } from "../../../../javax/microedition/rms/RecordComparator.js";
+import { RecordComparator } from '../../../../javax/microedition/rms/RecordComparator.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 

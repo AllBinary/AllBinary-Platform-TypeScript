@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { BasicEventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js";
+import { BasicEventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js';
 
     
 
@@ -43,7 +43,7 @@ import { BasicEventListenerInterface } from "../../../../../../org/allbinary/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MotionRectanglesResultsEvent } from "./MotionRectanglesResultsEvent.js";
+        import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';
 
 export interface MotionRectanglesResultsListener extends BasicEventListenerInterface {
         

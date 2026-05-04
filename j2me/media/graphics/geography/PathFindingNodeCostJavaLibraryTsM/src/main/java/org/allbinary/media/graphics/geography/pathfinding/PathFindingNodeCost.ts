@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
 
     
 
@@ -54,9 +54,9 @@ import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabel
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PathFindingNode } from "./PathFindingNode.js";
-import { Comparable } from "./Comparable.js";
-import { PathFindingNodeCostInfo } from "./PathFindingNodeCostInfo.js";
+        import { PathFindingNode } from './PathFindingNode.js';
+import { Comparable } from './Comparable.js';
+import { PathFindingNodeCostInfo } from './PathFindingNodeCostInfo.js';
 
 export class PathFindingNodeCost extends PathFindingNode implements Comparable<PathFindingNodeCost> {
         

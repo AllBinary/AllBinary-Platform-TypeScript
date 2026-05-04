@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
 
@@ -52,12 +52,12 @@ import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageUtil } from "./ImageUtil.js";
-import { GraphicsEnvironment } from "./GraphicsEnvironment.js";
-import { GraphicsDevice } from "./GraphicsDevice.js";
-import { GraphicsConfiguration } from "./GraphicsConfiguration.js";
-import { Graphics2D } from "./Graphics2D.js";
-import { ImageUnifierProperties } from "./ImageUnifierProperties.js";
+        import { ImageUtil } from './ImageUtil.js';
+import { GraphicsEnvironment } from './GraphicsEnvironment.js';
+import { GraphicsDevice } from './GraphicsDevice.js';
+import { GraphicsConfiguration } from './GraphicsConfiguration.js';
+import { Graphics2D } from './Graphics2D.js';
+import { ImageUnifierProperties } from './ImageUnifierProperties.js';
 
 export class ImageUnifierUtil
             extends Object

@@ -4,25 +4,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 
     
-import { RenderedImage } from "../../../../../java/awt/image/RenderedImage.js";
+import { RenderedImage } from '../../../../../java/awt/image/RenderedImage.js';
 
     
-import { ImageIO } from "../../../../../javax/imageio/ImageIO.js";
+import { ImageIO } from '../../../../../javax/imageio/ImageIO.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { AbFileNativeUtil } from "../../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js";
+import { AbFileNativeUtil } from '../../../../../org/allbinary/logic/io/file/AbFileNativeUtil.js';
 
     
 

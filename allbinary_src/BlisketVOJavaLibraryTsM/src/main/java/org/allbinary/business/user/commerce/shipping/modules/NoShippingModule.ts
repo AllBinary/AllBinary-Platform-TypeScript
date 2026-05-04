@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { OrderInterface } from "../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js";
+import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
 
     
-import { Money } from "../../../../../../../org/allbinary/business/user/commerce/money/Money.js";
+import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -49,7 +49,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ShippingInterface } from "./ShippingInterface.js";
+        import { ShippingInterface } from './ShippingInterface.js';
 
 export class NoShippingModule
             extends Object

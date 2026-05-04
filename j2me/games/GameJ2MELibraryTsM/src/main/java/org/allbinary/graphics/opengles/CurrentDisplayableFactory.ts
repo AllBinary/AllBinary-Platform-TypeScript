@@ -18,77 +18,77 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Displayable } from "../../../../javax/microedition/lcdui/Displayable.js";
+import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
 
     
-import { J2MEUtil } from "../../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 
     
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { AllBinaryGameCanvas } from "../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { DemoCanvas } from "../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js";
+import { DemoCanvas } from '../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
 
     
-import { GameInputMappingCanvas } from "../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js";
+import { GameInputMappingCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
 
     
-import { GameInputMappingInstructionsCanvas } from "../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js";
+import { GameInputMappingInstructionsCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
 
     
-import { GameRunnable } from "../../../../org/allbinary/game/displayable/canvas/GameRunnable.js";
+import { GameRunnable } from '../../../../org/allbinary/game/displayable/canvas/GameRunnable.js';
 
     
-import { NullDisplayable } from "../../../../org/allbinary/game/displayable/canvas/NullDisplayable.js";
+import { NullDisplayable } from '../../../../org/allbinary/game/displayable/canvas/NullDisplayable.js';
 
     
-import { NullWaitGameRunnable } from "../../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js";
+import { NullWaitGameRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
 
     
-import { SWTUtil } from "../../../../org/allbinary/game/layer/SWTUtil.js";
+import { SWTUtil } from '../../../../org/allbinary/game/layer/SWTUtil.js';
 
     
-import { HighScoresCanvas } from "../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js";
+import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
 
     
-import { GraphicsStrings } from "../../../../org/allbinary/graphics/GraphicsStrings.js";
+import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStrings.js';
 
     
-import { CanvasStrings } from "../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { MyCanvas } from "../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { NullRunnable } from "../../../../org/allbinary/thread/NullRunnable.js";
+import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -109,7 +109,7 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLFeatureFactory } from "./OpenGLFeatureFactory.js";
+        import { OpenGLFeatureFactory } from './OpenGLFeatureFactory.js';
 
 export class CurrentDisplayableFactory
             extends Object

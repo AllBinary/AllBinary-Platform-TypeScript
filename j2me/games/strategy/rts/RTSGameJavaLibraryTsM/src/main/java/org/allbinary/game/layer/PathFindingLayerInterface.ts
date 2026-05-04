@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { DestroyableInterface } from "../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js";
+import { DestroyableInterface } from '../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
 
     
-import { GroupInterfaceCompositeInterface } from "../../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js";
+import { GroupInterfaceCompositeInterface } from '../../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
 
     
-import { GameKeyEventSourceInterface } from "../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js";
+import { GameKeyEventSourceInterface } from '../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
 
     
-import { WaypointLayerInterface } from "../../../../org/allbinary/game/layer/waypoint/WaypointLayerInterface.js";
+import { WaypointLayerInterface } from '../../../../org/allbinary/game/layer/waypoint/WaypointLayerInterface.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -57,9 +57,9 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellPositionAreaBase } from "./GeographicMapCellPositionAreaBase.js";
-import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
-import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
+        import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
+import { SelectionHudPaintable } from './SelectionHudPaintable.js';
+import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
 
 export interface PathFindingLayerInterface extends WaypointLayerInterface, GameKeyEventSourceInterface, GroupInterfaceCompositeInterface, DestroyableInterface {
         

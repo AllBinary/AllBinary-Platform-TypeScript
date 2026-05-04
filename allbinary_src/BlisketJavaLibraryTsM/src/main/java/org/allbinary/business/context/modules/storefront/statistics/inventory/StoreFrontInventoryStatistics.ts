@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../../java/lang/Integer.js';
         
-            import { Long } from "../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../java/lang/Long.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { ItemInterface } from "../../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js";
+import { ItemInterface } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
 
     
-import { Money } from "../../../../../../../../org/allbinary/business/user/commerce/money/Money.js";
+import { Money } from '../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 
     
-import { InventoryEntityFactory } from "../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js";
+import { InventoryEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
 
     
-import { InventoryEntityInterface } from "../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityInterface.js";
+import { InventoryEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityInterface.js';
 
     
 
@@ -67,8 +67,8 @@ import { InventoryEntityInterface } from "../../../../../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StoreFrontInventoryStatisticsInterface } from "./StoreFrontInventoryStatisticsInterface.js";
-import { StoreFrontInventoryStatisticsData } from "./StoreFrontInventoryStatisticsData.js";
+        import { StoreFrontInventoryStatisticsInterface } from './StoreFrontInventoryStatisticsInterface.js';
+import { StoreFrontInventoryStatisticsData } from './StoreFrontInventoryStatisticsData.js';
 
 export class StoreFrontInventoryStatistics
             extends Object

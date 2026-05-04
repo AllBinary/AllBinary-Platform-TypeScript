@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-            import { Exception } from "../java/lang/Exception.js";
+            import { Exception } from '../java/lang/Exception.js';
         
-            import { Integer } from "../java/lang/Integer.js";
+            import { Integer } from '../java/lang/Integer.js';
         
-import { Method } from "../java/lang/reflect/Method.js";
+import { Method } from '../java/lang/reflect/Method.js';
 
     
-import { JspTagException } from "../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
 
     
-import { AbResponseHandler } from "../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
-import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LicensingException } from "../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { TransformInfoData } from "../org/allbinary/logic/visual/transform/info/TransformInfoData.js";
+import { TransformInfoData } from '../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 
     
-import { StoreTagWorkFlowHelperFactory } from "../taghelpers/StoreTagWorkFlowHelperFactory.js";
+import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHelperFactory.js';
 
     
 
@@ -65,7 +65,7 @@ import { StoreTagWorkFlowHelperFactory } from "../taghelpers/StoreTagWorkFlowHel
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HelperTag } from "./HelperTag.js";
+        import { HelperTag } from './HelperTag.js';
 
 export class StoreWorkFlowTag extends HelperTag {
         

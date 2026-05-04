@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { BasicOptionItemsHelperFactory } from "../../admin/taghelpers/BasicOptionItemsHelperFactory.js";
+import { BasicOptionItemsHelperFactory } from '../../admin/taghelpers/BasicOptionItemsHelperFactory.js';
 
     
-import { BasicOptionItemsRequestHelperFactory } from "../../admin/taghelpers/BasicOptionItemsRequestHelperFactory.js";
+import { BasicOptionItemsRequestHelperFactory } from '../../admin/taghelpers/BasicOptionItemsRequestHelperFactory.js';
 
     
 
@@ -49,7 +49,7 @@ import { BasicOptionItemsRequestHelperFactory } from "../../admin/taghelpers/Bas
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
+        import { TableTag } from './TableTag.js';
 
 export class BasicOptionItemsTag extends TableTag {
         

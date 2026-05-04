@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { Hashtable } from "../../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
-import { GeographicMapCellTypeFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js";
+import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
 
     
-import { RaceTrackGeographicMapCellType } from "../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js";
+import { RaceTrackGeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
 
     
-import { BasicArrayList } from "../../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { HashtableUtil } from "../../../../../../../org/allbinary/util/HashtableUtil.js";
+import { HashtableUtil } from '../../../../../../../org/allbinary/util/HashtableUtil.js';
 
     
 
@@ -67,8 +67,8 @@ import { HashtableUtil } from "../../../../../../../org/allbinary/util/Hashtable
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicTopViewGeographicMapCellType } from "./BasicTopViewGeographicMapCellType.js";
-import { BasicTopViewGeographicMapStrings } from "./BasicTopViewGeographicMapStrings.js";
+        import { BasicTopViewGeographicMapCellType } from './BasicTopViewGeographicMapCellType.js';
+import { BasicTopViewGeographicMapStrings } from './BasicTopViewGeographicMapStrings.js';
 
 export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellTypeFactory {
         

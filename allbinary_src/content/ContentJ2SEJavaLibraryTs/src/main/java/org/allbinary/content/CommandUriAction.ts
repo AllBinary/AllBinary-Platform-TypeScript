@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../java/util/Hashtable.js';
 
     
-import { Command } from "../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
 
@@ -54,7 +54,7 @@ import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Intent } from "./Intent.js";
+        import { Intent } from './Intent.js';
 
 export class CommandUriAction
             extends Object

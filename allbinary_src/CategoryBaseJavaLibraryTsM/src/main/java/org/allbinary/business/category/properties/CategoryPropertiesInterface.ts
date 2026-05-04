@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CategoryHierarchyInterface } from "../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js";
+import { CategoryHierarchyInterface } from '../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
 
     
-import { TableMappingInterface } from "../../../../../org/allbinary/data/tables/TableMappingInterface.js";
+import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
 
     
-import { ValidationInterface } from "../../../../../org/allbinary/logic/control/validate/ValidationInterface.js";
+import { ValidationInterface } from '../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
 
     
-import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
 

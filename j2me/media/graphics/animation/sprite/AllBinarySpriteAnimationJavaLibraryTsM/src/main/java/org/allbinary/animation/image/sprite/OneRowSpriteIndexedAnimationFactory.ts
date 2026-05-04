@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { BaseImageAnimationFactory } from "../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js";
+import { BaseImageAnimationFactory } from '../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
 
     
-import { BasicColorUtil } from "../../../../../org/allbinary/graphics/color/BasicColorUtil.js";
+import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
 
     
-import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js";
+import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
 
     
-import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
 
@@ -66,8 +66,8 @@ import { PrimitiveIntUtil } from "../../../../../org/allbinary/logic/math/Primit
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
-import { AdjustedSpriteIndexedAnimation } from "./AdjustedSpriteIndexedAnimation.js";
+        import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
+import { AdjustedSpriteIndexedAnimation } from './AdjustedSpriteIndexedAnimation.js';
 
 export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFactory {
         

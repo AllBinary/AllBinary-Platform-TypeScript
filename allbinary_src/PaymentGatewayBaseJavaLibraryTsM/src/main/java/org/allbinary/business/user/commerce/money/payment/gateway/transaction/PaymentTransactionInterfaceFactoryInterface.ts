@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { OrderHistory } from "../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js";
+import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
 
     
-import { TenderType } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js";
+import { TenderType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js';
 
     
 
@@ -48,7 +48,7 @@ import { TenderType } from "../../../../../../../../../org/allbinary/business/us
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentTransactionInterface } from "./PaymentTransactionInterface.js";
+        import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';
 
 export interface PaymentTransactionInterfaceFactoryInterface {
         

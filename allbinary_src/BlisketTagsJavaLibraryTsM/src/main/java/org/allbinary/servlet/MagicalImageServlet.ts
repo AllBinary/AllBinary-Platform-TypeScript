@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from "../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.js';
 
     
-import { IOException } from "../../../java/io/IOException.js";
+import { IOException } from '../../../java/io/IOException.js';
 
     
-import { InputStream } from "../../../java/io/InputStream.js";
+import { InputStream } from '../../../java/io/InputStream.js';
 
     
-import { ServletException } from "../../../javax/servlet/ServletException.js";
+import { ServletException } from '../../../javax/servlet/ServletException.js';
 
     
-import { HttpServlet } from "../../../javax/servlet/http/HttpServlet.js";
+import { HttpServlet } from '../../../javax/servlet/http/HttpServlet.js';
 
     
-import { HttpServletRequest } from "../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { HttpServletResponse } from "../../../javax/servlet/http/HttpServletResponse.js";
+import { HttpServletResponse } from '../../../javax/servlet/http/HttpServletResponse.js';
 
     
-import { URLGLOBALS } from "../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CloudStreamUtil } from "../../../org/allbinary/logic/io/CloudStreamUtil.js";
+import { CloudStreamUtil } from '../../../org/allbinary/logic/io/CloudStreamUtil.js';
 
     
-import { StreamUtil } from "../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbFile } from "../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -81,7 +81,7 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BlisketServletUtil } from "./BlisketServletUtil.js";
+        import { BlisketServletUtil } from './BlisketServletUtil.js';
 
 export class MagicalImageServlet extends HttpServlet {
         

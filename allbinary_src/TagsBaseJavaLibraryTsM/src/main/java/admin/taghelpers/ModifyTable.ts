@@ -18,18 +18,18 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../java/lang/RuntimeException.js';
         
-import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
 
     
-import { TagStrings } from "../../tags/TagStrings.js";
+import { TagStrings } from '../../tags/TagStrings.js';
 
     
 
@@ -50,7 +50,7 @@ import { TagStrings } from "../../tags/TagStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ModifyTableInterface } from "./ModifyTableInterface.js";
+        import { ModifyTableInterface } from './ModifyTableInterface.js';
 
 export class ModifyTable
             extends Object

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { swing } from "../../../../javax/swing.js";
+import { swing } from '../../../../javax/swing.js';
 
     
 
@@ -46,7 +46,7 @@ import { swing } from "../../../../javax/swing.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageIcon } from "./ImageIcon.js";
+        import { ImageIcon } from './ImageIcon.js';
 
 export class ImageIconUnique extends ImageIcon {
         

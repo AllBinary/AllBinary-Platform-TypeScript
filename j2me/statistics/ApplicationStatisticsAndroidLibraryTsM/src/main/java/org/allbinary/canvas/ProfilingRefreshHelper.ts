@@ -18,18 +18,18 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { View } from "../../../android/view/View.js";
+import { View } from '../../../android/view/View.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -50,7 +50,7 @@ import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AndroidGameStatistics } from "./AndroidGameStatistics.js";
+        import { AndroidGameStatistics } from './AndroidGameStatistics.js';
 
 export class ProfilingRefreshHelper extends AndroidGameStatistics {
         

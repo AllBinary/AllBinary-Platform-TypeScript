@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { BasicGameResources } from "../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js";
+import { BasicGameResources } from '../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
 
     
-import { GameGraphicsResourceUtil } from "../../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js";
+import { GameGraphicsResourceUtil } from '../../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js';
 
     
-import { AndroidUtil } from "../../../../../../org/allbinary/AndroidUtil.js";
+import { AndroidUtil } from '../../../../../../org/allbinary/AndroidUtil.js';
 
     
-import { GraphicsFeatureFactory } from "../../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js";
+import { GraphicsFeatureFactory } from '../../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
 
     
 

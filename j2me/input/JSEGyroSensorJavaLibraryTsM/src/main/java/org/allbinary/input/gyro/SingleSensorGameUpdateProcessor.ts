@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
 
     
 
@@ -45,9 +45,9 @@ import { Processor } from "../../../../org/allbinary/canvas/Processor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SensorGameUpdateProcessor } from "./SensorGameUpdateProcessor.js";
-import { AccelerometerSensorUpdateProcessor } from "./AccelerometerSensorUpdateProcessor.js";
-import { GyroSensorUpdateProcessor } from "./GyroSensorUpdateProcessor.js";
+        import { SensorGameUpdateProcessor } from './SensorGameUpdateProcessor.js';
+import { AccelerometerSensorUpdateProcessor } from './AccelerometerSensorUpdateProcessor.js';
+import { GyroSensorUpdateProcessor } from './GyroSensorUpdateProcessor.js';
 
 export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
         

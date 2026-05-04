@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { GamePersistanceStrings } from "../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
+import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
 
     
-import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js";
+import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
 
     
-import { PersistentInputMapping } from "../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js";
+import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 
     
 
@@ -49,7 +49,7 @@ import { PersistentInputMapping } from "../../../../org/allbinary/game/input/map
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameKeyFactory } from "./GameKeyFactory.js";
+        import { GameKeyFactory } from './GameKeyFactory.js';
 
 export class NormalJ2MEDefaultGameInputMapping extends PersistentInputMapping {
         

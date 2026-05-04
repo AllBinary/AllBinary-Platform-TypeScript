@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { File } from "../../../../../../java/io/File.js";
+import { File } from '../../../../../../java/io/File.js';
 
     
-import { FileFilter } from "../../../../../../java/io/FileFilter.js";
+import { FileFilter } from '../../../../../../java/io/FileFilter.js';
 
     
-import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileWrapperUtil } from "../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js";
+import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
 
     
-import { VisitorInterface } from "../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js";
+import { VisitorInterface } from '../../../../../../org/allbinary/logic/util/visitor/VisitorInterface.js';
 
     
 

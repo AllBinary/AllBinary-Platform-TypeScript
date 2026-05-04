@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { FileFilter } from "../../../../../../java/io/FileFilter.js";
+import { FileFilter } from '../../../../../../java/io/FileFilter.js';
 
     
-import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -55,7 +55,7 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Directory } from "./Directory.js";
+        import { Directory } from './Directory.js';
 
 export class SubDirectory
             extends Object

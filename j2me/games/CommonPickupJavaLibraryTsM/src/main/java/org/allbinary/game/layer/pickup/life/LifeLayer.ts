@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Life } from "../../../../../../org/allbinary/game/life/Life.js";
+import { Life } from '../../../../../../org/allbinary/game/life/Life.js';
 
     
-import { LifeVisitorInterface } from "../../../../../../org/allbinary/game/life/LifeVisitorInterface.js";
+import { LifeVisitorInterface } from '../../../../../../org/allbinary/game/life/LifeVisitorInterface.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { Rectangle } from "../../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { ViewPosition } from "../../../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
 
     
 

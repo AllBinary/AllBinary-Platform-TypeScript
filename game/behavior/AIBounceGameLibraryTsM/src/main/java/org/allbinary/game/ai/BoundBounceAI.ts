@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BoundsVisitorInterface } from "../../../../org/allbinary/bounds/BoundsVisitorInterface.js";
+import { BoundsVisitorInterface } from '../../../../org/allbinary/bounds/BoundsVisitorInterface.js';
 
     
-import { LayerBounds } from "../../../../org/allbinary/bounds/LayerBounds.js";
+import { LayerBounds } from '../../../../org/allbinary/bounds/LayerBounds.js';
 
     
-import { GameInput } from "../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
 
@@ -63,7 +63,7 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicAI } from "./BasicAI.js";
+        import { BasicAI } from './BasicAI.js';
 
 export class BoundBounceAI extends BasicAI {
         

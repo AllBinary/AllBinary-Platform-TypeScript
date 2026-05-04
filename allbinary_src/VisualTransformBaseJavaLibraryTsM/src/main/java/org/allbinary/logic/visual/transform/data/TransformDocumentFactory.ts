@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
 
 
@@ -42,8 +42,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformDocument } from "./TransformDocument.js";
-import { TransformDocumentInterface } from "./TransformDocumentInterface.js";
+        import { TransformDocument } from './TransformDocument.js';
+import { TransformDocumentInterface } from './TransformDocumentInterface.js';
 
 export class TransformDocumentFactory
             extends Object

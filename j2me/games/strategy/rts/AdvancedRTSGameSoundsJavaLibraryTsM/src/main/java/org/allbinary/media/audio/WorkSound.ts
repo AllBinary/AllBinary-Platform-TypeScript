@@ -17,7 +17,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -39,8 +39,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CompositeSound } from "./CompositeSound.js";
-import { Sound } from "./Sound.js";
+        import { CompositeSound } from './CompositeSound.js';
+import { Sound } from './Sound.js';
 
 export class WorkSound extends CompositeSound {
         

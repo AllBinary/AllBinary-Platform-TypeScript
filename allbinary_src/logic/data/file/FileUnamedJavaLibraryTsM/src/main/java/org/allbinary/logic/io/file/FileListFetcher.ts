@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { DirectoryBooleanFileVisitor } from "../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js";
+import { DirectoryBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js';
 
     
-import { DirectoryOrIncludeFileExtensionBooleanFileVisitor } from "../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionBooleanFileVisitor.js";
+import { DirectoryOrIncludeFileExtensionBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionBooleanFileVisitor.js';
 
     
-import { SubDirectory } from "../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js";
+import { SubDirectory } from '../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
 
     
-import { VisitorFileFilter } from "../../../../../org/allbinary/logic/io/file/filter/VisitorFileFilter.js";
+import { VisitorFileFilter } from '../../../../../org/allbinary/logic/io/file/filter/VisitorFileFilter.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -62,7 +62,7 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbFile } from "./AbFile.js";
+        import { AbFile } from './AbFile.js';
 
 export class FileListFetcher
             extends Object

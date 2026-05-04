@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { File } from "../../../../../../java/io/File.js";
+import { File } from '../../../../../../java/io/File.js';
 
     
-import { FileInputStream } from "../../../../../../java/io/FileInputStream.js";
+import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
 
     
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { List } from "../../../../../../java/util/List.js";
+import { List } from '../../../../../../java/util/List.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { InputAutomationModuleData } from "../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js";
+import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
 
     
-import { NewInputAutomationModulesData } from "../../../../../../org/allbinary/input/automation/module/NewInputAutomationModulesData.js";
+import { NewInputAutomationModulesData } from '../../../../../../org/allbinary/input/automation/module/NewInputAutomationModulesData.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -78,7 +78,7 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputAutomationModuleConfiguration } from "./InputAutomationModuleConfiguration.js";
+        import { InputAutomationModuleConfiguration } from './InputAutomationModuleConfiguration.js';
 
 export class InputAutomationModuleConfigurations
             extends Object

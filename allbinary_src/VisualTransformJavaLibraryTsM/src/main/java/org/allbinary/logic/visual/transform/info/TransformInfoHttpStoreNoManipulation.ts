@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { TransformInfoObjectConfigNoManipulationFactory } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigNoManipulationFactory.js";
+import { TransformInfoObjectConfigNoManipulationFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigNoManipulationFactory.js';
 
     
 
@@ -51,7 +51,7 @@ import { TransformInfoObjectConfigNoManipulationFactory } from "../../../../../.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoHttpStore } from "./TransformInfoHttpStore.js";
+        import { TransformInfoHttpStore } from './TransformInfoHttpStore.js';
 
 export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore {
         

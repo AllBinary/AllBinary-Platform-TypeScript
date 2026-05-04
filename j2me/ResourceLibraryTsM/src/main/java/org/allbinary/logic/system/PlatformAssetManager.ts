@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { InputStream } from "../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../java/io/InputStream.js';
 
     
-import { ResourceUtil } from "../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
 

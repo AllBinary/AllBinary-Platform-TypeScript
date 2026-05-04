@@ -4,22 +4,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { TsUtil } from "../../../../../org/allbinary/TsUtil.js";
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Visitor } from "../../../../../org/allbinary/logic/util/visitor/Visitor.js";
+import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 

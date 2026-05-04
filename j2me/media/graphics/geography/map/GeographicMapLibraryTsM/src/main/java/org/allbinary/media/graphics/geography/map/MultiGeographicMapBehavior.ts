@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
 
 
@@ -42,9 +42,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellType } from "./GeographicMapCellType.js";
-import { BasicGeographicMap } from "./BasicGeographicMap.js";
-import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
+        import { GeographicMapCellType } from './GeographicMapCellType.js';
+import { BasicGeographicMap } from './BasicGeographicMap.js';
+import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
 
 export class MultiGeographicMapBehavior
             extends Object

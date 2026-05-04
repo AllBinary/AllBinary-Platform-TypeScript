@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { InputStream } from "../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../java/io/InputStream.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
 
@@ -51,8 +51,8 @@ import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbFileInputStream } from "./AbFileInputStream.js";
-import { AbFileLocalInputStream } from "./AbFileLocalInputStream.js";
+        import { AbFileInputStream } from './AbFileInputStream.js';
+import { AbFileLocalInputStream } from './AbFileLocalInputStream.js';
 
 export class CloudStreamUtil
             extends Object

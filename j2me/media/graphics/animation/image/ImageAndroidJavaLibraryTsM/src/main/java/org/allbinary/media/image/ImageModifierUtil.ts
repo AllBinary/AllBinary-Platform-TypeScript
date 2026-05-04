@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Paint } from "../../../../android/graphics/Paint.js";
+import { Paint } from '../../../../android/graphics/Paint.js';
 
     
-import { PorterDuff } from "../../../../android/graphics/PorterDuff.js";
+import { PorterDuff } from '../../../../android/graphics/PorterDuff.js';
 
     
-import { PorterDuffColorFilter } from "../../../../android/graphics/PorterDuffColorFilter.js";
+import { PorterDuffColorFilter } from '../../../../android/graphics/PorterDuffColorFilter.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
 

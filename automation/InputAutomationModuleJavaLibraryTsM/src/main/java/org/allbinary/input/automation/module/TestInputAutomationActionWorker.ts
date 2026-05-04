@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../java/lang/Thread.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { Set } from "../../../../../java/util/Set.js";
+import { Set } from '../../../../../java/util/Set.js';
 
     
-import { InputRobotFactory } from "../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
+import { InputRobotFactory } from '../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 
     
-import { InputRobotInterface } from "../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js";
+import { InputRobotInterface } from '../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ImageComparatorConstraintsInterface } from "../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js";
+import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
 
     
-import { MotionRectangleConstraintsInterface } from "../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js";
+import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
 
     
 
@@ -65,8 +65,8 @@ import { MotionRectangleConstraintsInterface } from "../../../../../org/allbinar
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbstractInputAutomationWorker } from "./AbstractInputAutomationWorker.js";
-import { InputAutomationActionInterface } from "./InputAutomationActionInterface.js";
+        import { AbstractInputAutomationWorker } from './AbstractInputAutomationWorker.js';
+import { InputAutomationActionInterface } from './InputAutomationActionInterface.js';
 
 export class TestInputAutomationActionWorker extends AbstractInputAutomationWorker {
         

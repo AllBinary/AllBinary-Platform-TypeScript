@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { BasicAI } from "../../../../../org/allbinary/game/ai/BasicAI.js";
+import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
 
     
-import { BasicGroupFactory } from "../../../../../org/allbinary/game/identification/BasicGroupFactory.js";
+import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
 
     
-import { GameInput } from "../../../../../org/allbinary/game/input/GameInput.js";
+import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
 
     
-import { GroupLayerManagerListener } from "../../../../../org/allbinary/game/layer/identification/GroupLayerManagerListener.js";
+import { GroupLayerManagerListener } from '../../../../../org/allbinary/game/layer/identification/GroupLayerManagerListener.js';
 
     
-import { WeaponLayer } from "../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js";
+import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { MathUtil } from "../../../../../org/allbinary/logic/math/MathUtil.js";
+import { MathUtil } from '../../../../../org/allbinary/logic/math/MathUtil.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -77,7 +77,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasePatrolAI } from "./BasePatrolAI.js";
+        import { BasePatrolAI } from './BasePatrolAI.js';
 
 export class FlockingAI extends BasicAI {
         

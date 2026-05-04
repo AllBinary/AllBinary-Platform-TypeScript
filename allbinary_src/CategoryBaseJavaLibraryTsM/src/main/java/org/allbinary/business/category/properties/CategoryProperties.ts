@@ -18,58 +18,58 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { CategoryData } from "../../../../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
 
     
-import { CategoryInterface } from "../../../../../org/allbinary/business/category/CategoryInterface.js";
+import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
 
     
-import { CategoryUtil } from "../../../../../org/allbinary/business/category/CategoryUtil.js";
+import { CategoryUtil } from '../../../../../org/allbinary/business/category/CategoryUtil.js';
 
     
-import { CategoryHierarchyInterface } from "../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js";
+import { CategoryHierarchyInterface } from '../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlData } from "../../../../../org/allbinary/logic/communication/sql/AbSqlData.js";
+import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
 
     
-import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { AbPathData } from "../../../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -90,7 +90,7 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryPropertiesInterface } from "./CategoryPropertiesInterface.js";
+        import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
 
 export class CategoryProperties
             extends Object

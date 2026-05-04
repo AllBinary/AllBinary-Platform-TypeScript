@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { VectorAnimation } from "../../../../org/allbinary/animation/VectorAnimation.js";
+import { VectorAnimation } from '../../../../org/allbinary/animation/VectorAnimation.js';
 
     
-import { GameConfigurationCentral } from "../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
+import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/AnimationFrameToImageUtil.js";
+import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { ScaleProperties } from "../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
 
     
-import { ImageToRotationImageArrayUtil } from "../../../../org/allbinary/media/image/ImageToRotationImageArrayUtil.js";
+import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/image/ImageToRotationImageArrayUtil.js';
 
     
-import { VectorInfo } from "../../../../org/allbinary/vector/VectorInfo.js";
+import { VectorInfo } from '../../../../org/allbinary/vector/VectorInfo.js';
 
     
 
@@ -84,8 +84,8 @@ import { VectorInfo } from "../../../../org/allbinary/vector/VectorInfo.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-import { AdjustedImageArrayRotationAnimation } from "./AdjustedImageArrayRotationAnimation.js";
+        import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
+import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
 
 export class VectorToImageArrayRotationAnimationFactory extends BaseImageAnimationFactory {
         

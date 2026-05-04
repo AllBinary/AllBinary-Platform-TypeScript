@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AutomaticCacheInterface } from "../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js";
+import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
 
     
-import { CacheInterface } from "../../../../../../org/allbinary/logic/util/cache/CacheInterface.js";
+import { CacheInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheInterface.js';
 
     
-import { CacheInterfaceFactory } from "../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js";
+import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
 
     
-import { CachePolicyFactory } from "../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js";
+import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
 
     
-import { CacheTypeFactory } from "../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js";
+import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

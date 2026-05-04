@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { EventListenerInterface } from "../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js";
+import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
 
     
 
@@ -45,7 +45,7 @@ import { EventListenerInterface } from "../../../../../../org/allbinary/logic/ut
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputMappingEvent } from "./InputMappingEvent.js";
+        import { InputMappingEvent } from './InputMappingEvent.js';
 
 export interface InputMappingEventListenerInterface extends EventListenerInterface {
         

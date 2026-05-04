@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { AllBinaryTiledLayer } from "../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { Layer } from "../../../../../../org/allbinary/layer/Layer.js";
+import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
 
     
 
@@ -53,10 +53,10 @@ import { Layer } from "../../../../../../org/allbinary/layer/Layer.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellPosition } from "./GeographicMapCellPosition.js";
-import { GeographicMapCellType } from "./GeographicMapCellType.js";
-import { BasicGeographicMapCellPositionFactory } from "./BasicGeographicMapCellPositionFactory.js";
-import { GeographicMapCellPositionFactoryInterface } from "./GeographicMapCellPositionFactoryInterface.js";
+        import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';
+import { GeographicMapCellType } from './GeographicMapCellType.js';
+import { BasicGeographicMapCellPositionFactory } from './BasicGeographicMapCellPositionFactory.js';
+import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPositionFactoryInterface.js';
 
 export interface GeographicMapInterface {
         

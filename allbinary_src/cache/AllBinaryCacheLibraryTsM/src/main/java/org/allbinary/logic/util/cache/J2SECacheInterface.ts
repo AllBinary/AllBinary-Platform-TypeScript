@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Set } from "../../../../../java/util/Set.js";
+import { Set } from '../../../../../java/util/Set.js';
 
     
 
@@ -43,7 +43,7 @@ import { Set } from "../../../../../java/util/Set.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AutomaticCacheInterface } from "./AutomaticCacheInterface.js";
+        import { AutomaticCacheInterface } from './AutomaticCacheInterface.js';
 
 export interface J2SECacheInterface extends AutomaticCacheInterface {
         

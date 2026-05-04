@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoDomNodeView } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNodeView.js";
+import { TransformInfoDomNodeView } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNodeView.js';
 
     
-import { TransformInfoInterface } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { TransformInfosData } from "../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js";
+import { TransformInfosData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
 
     
-import { TransformInfoObjectConfigData } from "../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js";
+import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
 
     
-import { Document } from "../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -66,7 +66,7 @@ import { NodeList } from "../../../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NoTemplateTransformInfoObjectConfig } from "./NoTemplateTransformInfoObjectConfig.js";
+        import { NoTemplateTransformInfoObjectConfig } from './NoTemplateTransformInfoObjectConfig.js';
 
 export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplateTransformInfoObjectConfig {
         

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { NoCompleteMotionGestureInputEventListener } from "../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js";
+import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
 
     
-import { AllBinarySensor } from "../../../../org/allbinary/input/AllBinarySensor.js";
+import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
 
     
-import { NoAllBinarySensor } from "../../../../org/allbinary/input/NoAllBinarySensor.js";
+import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
 
     
-import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js";
+import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
 
     
 
@@ -54,7 +54,7 @@ import { AccelerometerSensorFactory } from "../../../../org/allbinary/input/acce
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GyroSensorFactory } from "./GyroSensorFactory.js";
+        import { GyroSensorFactory } from './GyroSensorFactory.js';
 
 export class SensorGameUpdateProcessor
             extends Object

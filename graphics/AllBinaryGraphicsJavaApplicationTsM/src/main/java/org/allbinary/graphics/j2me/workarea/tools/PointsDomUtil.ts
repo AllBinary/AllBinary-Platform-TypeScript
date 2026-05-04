@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { GPoint } from "../../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { PointFactory } from "../../../../../../org/allbinary/graphics/PointFactory.js";
+import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
 
     
-import { WorkAreaJPanel } from "../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js";
+import { WorkAreaJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
 
     
-import { CanvasDom } from "../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js";
+import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
 
     
-import { PositionStrings } from "../../../../../../org/allbinary/math/PositionStrings.js";
+import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -65,8 +65,8 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PointsUtil } from "./PointsUtil.js";
-import { Document } from "./Document.js";
+        import { PointsUtil } from './PointsUtil.js';
+import { Document } from './Document.js';
 
 export class PointsDomUtil
             extends Object

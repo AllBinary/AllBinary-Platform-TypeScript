@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { CellPositionFactory } from "../../../../../org/allbinary/graphics/CellPositionFactory.js";
+import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -60,11 +60,11 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
-import { CommonButtons } from "./CommonButtons.js";
-import { TouchButton } from "./TouchButton.js";
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
-import { TouchButtonBlankResource } from "./TouchButtonBlankResource.js";
+        import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
+import { CommonButtons } from './CommonButtons.js';
+import { TouchButton } from './TouchButton.js';
+import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
 
 export class TouchButtonsMappingPaintable extends Paintable {
         

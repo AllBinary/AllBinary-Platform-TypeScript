@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-            import { Exception } from "../java/lang/Exception.js";
+            import { Exception } from '../java/lang/Exception.js';
         
-import { TagHelperFactoryInterface } from "../admin/taghelpers/TagHelperFactoryInterface.js";
+import { TagHelperFactoryInterface } from '../admin/taghelpers/TagHelperFactoryInterface.js';
 
     
-import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -48,7 +48,7 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PropertiesTag } from "./PropertiesTag.js";
+        import { PropertiesTag } from './PropertiesTag.js';
 
 export class HelperTag extends PropertiesTag {
         

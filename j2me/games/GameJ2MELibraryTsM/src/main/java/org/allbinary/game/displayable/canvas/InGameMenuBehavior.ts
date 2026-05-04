@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DisplayChangeEvent } from "../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js";
+import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
 
     
 
@@ -45,9 +45,9 @@ import { DisplayChangeEvent } from "../../../../../org/allbinary/graphics/displa
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseMenuBehavior } from "./BaseMenuBehavior.js";
-import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
-import { GameCanvasNonBotPaintable } from "./GameCanvasNonBotPaintable.js";
+        import { BaseMenuBehavior } from './BaseMenuBehavior.js';
+import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
+import { GameCanvasNonBotPaintable } from './GameCanvasNonBotPaintable.js';
 
 export class InGameMenuBehavior extends BaseMenuBehavior {
         

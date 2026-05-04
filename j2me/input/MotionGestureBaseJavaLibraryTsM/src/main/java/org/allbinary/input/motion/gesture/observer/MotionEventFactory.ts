@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { Input } from "../../../../../../org/allbinary/game/input/Input.js";
+import { Input } from '../../../../../../org/allbinary/game/input/Input.js';
 
     
-import { InputFactory } from "../../../../../../org/allbinary/game/input/InputFactory.js";
+import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
 
     
-import { MotionGestureInput } from "../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js";
+import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js";
+import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
 
     
 
@@ -58,7 +58,7 @@ import { AllBinaryEventObjectFactoryInterface } from "../../../../../../org/allb
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MotionGestureEvent } from "./MotionGestureEvent.js";
+        import { MotionGestureEvent } from './MotionGestureEvent.js';
 
 export class MotionEventFactory
             extends Object

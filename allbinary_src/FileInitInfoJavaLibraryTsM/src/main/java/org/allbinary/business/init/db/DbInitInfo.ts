@@ -18,64 +18,64 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { FREEBLISKET_PATH_GLOBALS } from "../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
+import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { HttpData } from "../../../../../org/allbinary/logic/communication/http/HttpData.js";
+import { HttpData } from '../../../../../org/allbinary/logic/communication/http/HttpData.js';
 
     
-import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { LogConfigTypeFactory } from "../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js";
+import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 
     
-import { LogConfigTypes } from "../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
+import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 
     
-import { AbDataInputStream } from "../../../../../org/allbinary/logic/io/AbDataInputStream.js";
+import { AbDataInputStream } from '../../../../../org/allbinary/logic/io/AbDataInputStream.js';
 
     
-import { AbDataOutputStream } from "../../../../../org/allbinary/logic/io/AbDataOutputStream.js";
+import { AbDataOutputStream } from '../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
 
     
-import { AbFileInputStream } from "../../../../../org/allbinary/logic/io/AbFileInputStream.js";
+import { AbFileInputStream } from '../../../../../org/allbinary/logic/io/AbFileInputStream.js';
 
     
-import { DataOutputStreamFactory } from "../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js";
+import { DataOutputStreamFactory } from '../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
 
     
-import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbFile } from "../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { Directory } from "../../../../../org/allbinary/logic/io/file/directory/Directory.js";
+import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
 
     
-import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { DatabaseEncoder } from "../../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js";
+import { DatabaseEncoder } from '../../../../../org/allbinary/logic/system/security/crypt/DatabaseEncoder.js';
 
     
-import { WeakCrypt } from "../../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js";
+import { WeakCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/WeakCrypt.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -96,7 +96,7 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DbConnectionInfo } from "./DbConnectionInfo.js";
+        import { DbConnectionInfo } from './DbConnectionInfo.js';
 
 export class DbInitInfo extends DbConnectionInfo {
         

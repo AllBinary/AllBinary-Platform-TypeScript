@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
 
     
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -61,10 +61,10 @@ import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArray
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbeLicenseInterface } from "./AbeLicenseInterface.js";
-import { LicenseType } from "./LicenseType.js";
-import { AbeClientInformationData } from "./AbeClientInformationData.js";
-import { LicenseTypeFactory } from "./LicenseTypeFactory.js";
+        import { AbeLicenseInterface } from './AbeLicenseInterface.js';
+import { LicenseType } from './LicenseType.js';
+import { AbeClientInformationData } from './AbeClientInformationData.js';
+import { LicenseTypeFactory } from './LicenseTypeFactory.js';
 
 export class AbeClientLicense
             extends Object

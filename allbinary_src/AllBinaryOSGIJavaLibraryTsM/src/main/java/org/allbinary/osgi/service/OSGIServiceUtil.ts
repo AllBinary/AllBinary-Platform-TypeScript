@@ -1,28 +1,42 @@
 
+        /*
+                * 
+                *  AllBinary Open License Version 1
+                *  Copyright (c) 2011 AllBinary
+                *  
+                *  By agreeing to this license you and any business entity you represent are
+                *  legally bound to the AllBinary Open License Version 1 legal agreement.
+                *  
+                *  You may obtain the AllBinary Open License Version 1 legal agreement from
+                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
+                *  
+                *  Created By: Travis Berthelot  
+        */
+        
         /* Generated Code Do Not Modify */
         
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from '../../../../java/util/Vector.js';
 
     
-import { BundleContext } from "../../../../org/osgi/framework/BundleContext.js";
+import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
 
     
-import { ServiceReference } from "../../../../org/osgi/framework/ServiceReference.js";
+import { ServiceReference } from '../../../../org/osgi/framework/ServiceReference.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { OSGIServiceInterface } from "../../../../org/allbinary/osgi/OSGIServiceInterface.js";
+import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 
     
 

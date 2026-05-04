@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { AnimationInterfaceCompositeInterface } from "../../../../org/allbinary/animation/AnimationInterfaceCompositeInterface.js";
+import { AnimationInterfaceCompositeInterface } from '../../../../org/allbinary/animation/AnimationInterfaceCompositeInterface.js';
 
     
-import { PaintableInterface } from "../../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
 

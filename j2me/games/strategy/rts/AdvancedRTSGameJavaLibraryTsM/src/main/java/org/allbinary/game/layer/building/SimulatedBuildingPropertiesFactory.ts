@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { DamageFloaters } from "../../../../../org/allbinary/game/combat/damage/DamageFloaters.js";
+import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
 
     
-import { TrackingEvent } from "../../../../../org/allbinary/game/tracking/TrackingEvent.js";
+import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
 
     
-import { TrackingEventHandler } from "../../../../../org/allbinary/game/tracking/TrackingEventHandler.js";
+import { TrackingEventHandler } from '../../../../../org/allbinary/game/tracking/TrackingEventHandler.js';
 
     
-import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullPaintable.js";
+import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 
     
-import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
 
@@ -63,8 +63,8 @@ import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BuildingPropertiesFactory } from "./BuildingPropertiesFactory.js";
-import { BuildingLayer } from "./BuildingLayer.js";
+        import { BuildingPropertiesFactory } from './BuildingPropertiesFactory.js';
+import { BuildingLayer } from './BuildingLayer.js';
 
 export class SimulatedBuildingPropertiesFactory extends BuildingPropertiesFactory {
         

@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DownGameKeyEventHandler } from "../../../../../org/allbinary/game/input/event/DownGameKeyEventHandler.js";
+import { DownGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/DownGameKeyEventHandler.js';
 
     
-import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { UpGameKeyEventHandler } from "../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js";
+import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js';
 
     
-import { GPoint } from "../../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { RectangleCollisionUtil } from "../../../../../org/allbinary/math/RectangleCollisionUtil.js";
+import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -66,15 +66,15 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
-import { TouchButtonInput } from "./TouchButtonInput.js";
-import { CurrentlyPressedTouchButtonSingleton } from "./CurrentlyPressedTouchButtonSingleton.js";
-import { CancelTouchButtonInputFactory } from "./CancelTouchButtonInputFactory.js";
-//import { ReleaseHelper } from "./ReleaseHelper.js";
-import { TouchScreenFactory } from "./TouchScreenFactory.js";
-//import { MultitouchReleaseHelper } from "./MultitouchReleaseHelper.js";
-import { TouchButtonFactory } from "./TouchButtonFactory.js";
-import { TouchButton } from "./TouchButton.js";
+        import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
+import { TouchButtonInput } from './TouchButtonInput.js';
+import { CurrentlyPressedTouchButtonSingleton } from './CurrentlyPressedTouchButtonSingleton.js';
+import { CancelTouchButtonInputFactory } from './CancelTouchButtonInputFactory.js';
+//import { ReleaseHelper } from './ReleaseHelper.js';
+import { TouchScreenFactory } from './TouchScreenFactory.js';
+//import { MultitouchReleaseHelper } from './MultitouchReleaseHelper.js';
+import { TouchButtonFactory } from './TouchButtonFactory.js';
+import { TouchButton } from './TouchButton.js';
 
 export class TouchButtonRecognizer
             extends Object

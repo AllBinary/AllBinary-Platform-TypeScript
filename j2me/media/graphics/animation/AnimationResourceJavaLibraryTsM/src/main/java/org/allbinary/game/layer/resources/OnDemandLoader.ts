@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from "../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js";
+import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
 
     
-import { Features } from "../../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { MainFeatureFactory } from "../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js";
+import { MainFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 
     
-import { GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory } from "../../../../../org/allbinary/game/layer/GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory.js";
+import { GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory } from '../../../../../org/allbinary/game/layer/GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory.js';
 
     
-import { LayerPlacementInterfaceBasicArrayListFactoryInterface } from "../../../../../org/allbinary/game/layer/LayerPlacementInterfaceBasicArrayListFactoryInterface.js";
+import { LayerPlacementInterfaceBasicArrayListFactoryInterface } from '../../../../../org/allbinary/game/layer/LayerPlacementInterfaceBasicArrayListFactoryInterface.js';
 
     
-import { ResourceLoadingLevelFactory } from "../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js";
+import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
 
     
-import { ImageCache } from "../../../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
 
     
-import { PreLogUtil } from "../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -72,8 +72,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OnDemandResourcesFactory } from "./OnDemandResourcesFactory.js";
-import { OnDemandResources } from "./OnDemandResources.js";
+        import { OnDemandResourcesFactory } from './OnDemandResourcesFactory.js';
+import { OnDemandResources } from './OnDemandResources.js';
 
 export class OnDemandLoader
             extends Object

@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
 
     
-import { ImageModifierUtil } from "../../../../org/allbinary/media/image/ImageModifierUtil.js";
+import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
 
     
-import { ImageRotationUtil } from "../../../../org/allbinary/media/image/ImageRotationUtil.js";
+import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
 
     
-import { PlaynMutableImage } from "../../../../org/microemu/device/playn/PlaynMutableImage.js";
+import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
 
     
-import { CanvasImage } from "../../../../playn/core/CanvasImage.js";
+import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
 
     
-import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
+import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
 
     
 
@@ -75,9 +75,9 @@ import { CanvasSurface } from "../../../../playn/core/CanvasSurface.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageBaseRotationAnimation } from "./ImageBaseRotationAnimation.js";
-import { AlphaBaseProcessor } from "./AlphaBaseProcessor.js";
-import { AlphaProcessor } from "./AlphaProcessor.js";
+        import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
+import { AlphaBaseProcessor } from './AlphaBaseProcessor.js';
+import { AlphaProcessor } from './AlphaProcessor.js';
 
 export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimation {
         

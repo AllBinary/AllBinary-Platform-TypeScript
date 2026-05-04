@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { Anchor } from "../../../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
 
     
-import { MyCanvas } from "../../../../../org/allbinary/graphics/displayable/MyCanvas.js";
+import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/ProcessPaintable.js";
+import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
 
     
-import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -66,7 +66,7 @@ import { CircularIndexUtil } from "../../../../../org/allbinary/util/CircularInd
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 
 export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
         

@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { EmailInterface } from "../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js";
+import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
 
     
 

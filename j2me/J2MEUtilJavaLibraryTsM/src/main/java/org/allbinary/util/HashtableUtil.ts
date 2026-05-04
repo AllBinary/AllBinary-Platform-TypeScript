@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Enumeration } from "../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../java/util/Enumeration.js';
 
     
-import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../java/util/Hashtable.js';
 
     
-import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
 
     
 
@@ -49,9 +49,9 @@ import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { EnumerationUtil } from "./EnumerationUtil.js";
-import { BasicArrayListS } from "./BasicArrayListS.js";
-import { BasicArrayList } from "./BasicArrayList.js";
+        import { EnumerationUtil } from './EnumerationUtil.js';
+import { BasicArrayListS } from './BasicArrayListS.js';
+import { BasicArrayList } from './BasicArrayList.js';
 
 export class HashtableUtil
             extends Object

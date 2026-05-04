@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js";
+import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
 
     
-import { CommonPhoneStrings } from "../../../../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
 
@@ -52,7 +52,7 @@ import { CommonPhoneStrings } from "../../../../../../../org/allbinary/string/Co
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HtmlRow } from "./HtmlRow.js";
+        import { HtmlRow } from './HtmlRow.js';
 
 export class HtmlTable extends HtmlTag {
         

@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { Vector } from "../../java/util/Vector.js";
+import { Vector } from '../../java/util/Vector.js';
 
     
-import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 
     
-import { Tag } from "../../javax/servlet/jsp/tagext/Tag.js";
+import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
 
     
-import { MultipartRequestParamForwardHelper } from "../../admin/taghelpers/MultipartRequestParamForwardHelper.js";
+import { MultipartRequestParamForwardHelper } from '../../admin/taghelpers/MultipartRequestParamForwardHelper.js';
 
     
-import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { CustomTagSupport } from "../../tags/CustomTagSupport.js";
+import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
 
     
-import { HelperTag } from "../../tags/HelperTag.js";
+import { HelperTag } from '../../tags/HelperTag.js';
 
     
 
@@ -69,8 +69,8 @@ import { HelperTag } from "../../tags/HelperTag.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ParentInventoryTagHelper } from "./ParentInventoryTagHelper.js";
-import { AbTagData } from "./AbTagData.js";
+        import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
+import { AbTagData } from './AbTagData.js';
 
 export class MultipartRequestParamForwardTag extends CustomTagSupport {
         

@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { Constructor } from "../../../../../java/lang/reflect/Constructor.js";
+import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
 
     
-import { Method } from "../../../../../java/lang/reflect/Method.js";
+import { Method } from '../../../../../java/lang/reflect/Method.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -53,8 +53,8 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ClassLoader } from "./ClassLoader.js";
-import { NativeLibraryClassLoader } from "./NativeLibraryClassLoader.js";
+        import { ClassLoader } from './ClassLoader.js';
+import { NativeLibraryClassLoader } from './NativeLibraryClassLoader.js';
 
 export class NativeLibraryHelperWrapper
             extends Object

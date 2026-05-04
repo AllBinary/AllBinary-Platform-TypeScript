@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { LongArrayIdentifierInterface } from "../../../../../../org/allbinary/thirdparty/store/LongArrayIdentifierInterface.js";
+import { LongArrayIdentifierInterface } from '../../../../../../org/allbinary/thirdparty/store/LongArrayIdentifierInterface.js';
 
     
 
@@ -43,7 +43,7 @@ import { LongArrayIdentifierInterface } from "../../../../../../org/allbinary/th
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbeClientInformation } from "./AbeClientInformation.js";
+        import { AbeClientInformation } from './AbeClientInformation.js';
 
 export class StoreAppClientInformation extends AbeClientInformation implements LongArrayIdentifierInterface {
         

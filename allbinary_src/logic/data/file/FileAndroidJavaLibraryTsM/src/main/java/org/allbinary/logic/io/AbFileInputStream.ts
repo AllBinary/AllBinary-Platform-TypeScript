@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { FileInputStream } from "../../../../java/io/FileInputStream.js";
+import { FileInputStream } from '../../../../java/io/FileInputStream.js';
 
     
-import { FileNotFoundException } from "../../../../java/io/FileNotFoundException.js";
+import { FileNotFoundException } from '../../../../java/io/FileNotFoundException.js';
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { InputStream } from "../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../java/io/InputStream.js';
 
     
-import { FileChannel } from "../../../../java/nio/channels/FileChannel.js";
+import { FileChannel } from '../../../../java/nio/channels/FileChannel.js';
 
     
 

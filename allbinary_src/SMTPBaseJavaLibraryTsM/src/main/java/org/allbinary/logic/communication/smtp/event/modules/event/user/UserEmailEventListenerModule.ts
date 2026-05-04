@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-import { UserInterface } from "../../../../../../../../../org/allbinary/business/user/UserInterface.js";
+import { UserInterface } from '../../../../../../../../../org/allbinary/business/user/UserInterface.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BasicEmail } from "../../../../../../../../../org/allbinary/logic/communication/smtp/BasicEmail.js";
+import { BasicEmail } from '../../../../../../../../../org/allbinary/logic/communication/smtp/BasicEmail.js';
 
     
-import { EmailInterface } from "../../../../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js";
+import { EmailInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
 
     
-import { EmailEvent } from "../../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js";
+import { EmailEvent } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
 
     
-import { UserEmailEventListenerInterface } from "../../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js";
+import { UserEmailEventListenerInterface } from '../../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
 
     
-import { EmailQueueFactory } from "../../../../../../../../../org/allbinary/logic/communication/smtp/queue/EmailQueueFactory.js";
+import { EmailQueueFactory } from '../../../../../../../../../org/allbinary/logic/communication/smtp/queue/EmailQueueFactory.js';
 
     
 

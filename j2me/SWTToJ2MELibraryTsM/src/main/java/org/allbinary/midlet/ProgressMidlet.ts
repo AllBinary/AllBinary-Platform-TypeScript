@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { Runnable } from "../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Processor } from "../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 
     
-import { AbeClientInformationInterface } from "../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { ClientInformationFactory } from "../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js";
+import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
 
     
-import { PrimaryThreadPool } from "../../../org/allbinary/thread/PrimaryThreadPool.js";
+import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
 
     
-import { ThreadPool } from "../../../org/allbinary/thread/ThreadPool.js";
+import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
 
     
 
@@ -62,9 +62,9 @@ import { ThreadPool } from "../../../org/allbinary/thread/ThreadPool.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryMidlet } from "./AllBinaryMidlet.js";
-import { MidletExitProcessorFactory } from "./MidletExitProcessorFactory.js";
-import { ExitRunnable } from "./ExitRunnable.js";
+        import { AllBinaryMidlet } from './AllBinaryMidlet.js';
+import { MidletExitProcessorFactory } from './MidletExitProcessorFactory.js';
+import { ExitRunnable } from './ExitRunnable.js';
 
 export class ProgressMidlet extends AllBinaryMidlet {
         

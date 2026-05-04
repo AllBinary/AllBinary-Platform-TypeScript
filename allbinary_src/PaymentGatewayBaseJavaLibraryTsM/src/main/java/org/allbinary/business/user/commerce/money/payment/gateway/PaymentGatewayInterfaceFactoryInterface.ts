@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
 
@@ -45,7 +45,7 @@ import { HashMap } from "../../../../../../../../java/util/HashMap.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
+        import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
 
 export interface PaymentGatewayInterfaceFactoryInterface {
         

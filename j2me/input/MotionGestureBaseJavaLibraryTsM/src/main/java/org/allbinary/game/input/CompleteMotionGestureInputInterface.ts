@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.js";
+import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
 
     
 

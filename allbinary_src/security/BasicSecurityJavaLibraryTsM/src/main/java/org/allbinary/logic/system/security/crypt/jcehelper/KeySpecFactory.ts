@@ -18,27 +18,27 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../../java/lang/RuntimeException.js';
         
-import { KeySpec } from "../../../../../../../java/security/spec/KeySpec.js";
+import { KeySpec } from '../../../../../../../java/security/spec/KeySpec.js';
 
     
-import { DESKeySpec } from "../../../../../../../javax/crypto/spec/DESKeySpec.js";
+import { DESKeySpec } from '../../../../../../../javax/crypto/spec/DESKeySpec.js';
 
     
-import { DESedeKeySpec } from "../../../../../../../javax/crypto/spec/DESedeKeySpec.js";
+import { DESedeKeySpec } from '../../../../../../../javax/crypto/spec/DESedeKeySpec.js';
 
     
-import { PreLogUtil } from "../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

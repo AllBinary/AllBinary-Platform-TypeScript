@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -43,9 +43,9 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollidableNeverCollideBehavior } from "./CollidableNeverCollideBehavior.js";
-import { CollisionTypeFactory } from "./CollisionTypeFactory.js";
-import { CollisionType } from "./CollisionType.js";
+        import { CollidableNeverCollideBehavior } from './CollidableNeverCollideBehavior.js';
+import { CollisionTypeFactory } from './CollisionTypeFactory.js';
+import { CollisionType } from './CollisionType.js';
 
 export class CollidableAlwaysPickupNeverCollideBehavior extends CollidableNeverCollideBehavior {
         

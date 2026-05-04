@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { ABRunnable } from "../../../../../org/allbinary/thread/ABRunnable.js";
+import { ABRunnable } from '../../../../../org/allbinary/thread/ABRunnable.js';
 
     
 
@@ -51,7 +51,7 @@ import { ABRunnable } from "../../../../../org/allbinary/thread/ABRunnable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DemoCanvas } from "./DemoCanvas.js";
+        import { DemoCanvas } from './DemoCanvas.js';
 
 export class DemoGameStartupRunnable extends ABRunnable {
         

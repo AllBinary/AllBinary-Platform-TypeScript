@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
 
@@ -43,8 +43,8 @@ import { BooleanFactory } from "../../../../../../../org/allbinary/logic/java/bo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HtmlValueInput } from "./HtmlValueInput.js";
-import { HtmlInputData } from "./HtmlInputData.js";
+        import { HtmlValueInput } from './HtmlValueInput.js';
+import { HtmlInputData } from './HtmlInputData.js';
 
 export class HtmlRadioInput extends HtmlValueInput {
         

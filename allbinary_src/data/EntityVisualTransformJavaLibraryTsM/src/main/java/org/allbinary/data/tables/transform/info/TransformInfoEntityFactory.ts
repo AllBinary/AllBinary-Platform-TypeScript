@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { TransformInfoFactoryInterface } from "../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoFactoryInterface.js";
+import { TransformInfoFactoryInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoFactoryInterface.js';
 
     
-import { TransformInfoObjectConfigAndManipulatorFactoryBase } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactoryBase.js";
+import { TransformInfoObjectConfigAndManipulatorFactoryBase } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactoryBase.js';
 
     
-import { TransformInfoObjectConfigGeneratorFactoryInterface } from "../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactoryInterface.js";
+import { TransformInfoObjectConfigGeneratorFactoryInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactoryInterface.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,7 +57,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformInfoEntity } from "./TransformInfoEntity.js";
+        import { TransformInfoEntity } from './TransformInfoEntity.js';
 
 export class TransformInfoEntityFactory
             extends Object

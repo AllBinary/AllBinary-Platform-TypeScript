@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { MyRandomFactory } from "../../../../../../org/allbinary/game/rand/MyRandomFactory.js";
+import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TileLayer } from "../../../../../../org/mapeditor/core/TileLayer.js";
+import { TileLayer } from '../../../../../../org/mapeditor/core/TileLayer.js';
 
     
-import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
+import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
 
     
 
@@ -55,7 +55,7 @@ import { TiledMap } from "../../../../../../org/mapeditor/core/TiledMap.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TileMapPlacementVisitor } from "./TileMapPlacementVisitor.js";
+        import { TileMapPlacementVisitor } from './TileMapPlacementVisitor.js';
 
 export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
         

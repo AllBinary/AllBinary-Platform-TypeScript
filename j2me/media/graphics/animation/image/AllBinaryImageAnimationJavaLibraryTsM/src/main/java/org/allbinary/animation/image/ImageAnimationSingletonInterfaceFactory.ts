@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehavior } from "../../../../org/allbinary/animation/AnimationBehavior.js";
+import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
 
     
-import { SingletonAnimationInterfaceFactory } from "../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js";
+import { SingletonAnimationInterfaceFactory } from '../../../../org/allbinary/animation/SingletonAnimationInterfaceFactory.js';
 
     
-import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/AnimationFrameToImageUtil.js";
+import { AnimationFrameToImageUtil } from '../../../../org/allbinary/image/AnimationFrameToImageUtil.js';
 
     
 
@@ -54,7 +54,7 @@ import { AnimationFrameToImageUtil } from "../../../../org/allbinary/image/Anima
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageAnimation } from "./ImageAnimation.js";
+        import { ImageAnimation } from './ImageAnimation.js';
 
 export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationInterfaceFactory {
         

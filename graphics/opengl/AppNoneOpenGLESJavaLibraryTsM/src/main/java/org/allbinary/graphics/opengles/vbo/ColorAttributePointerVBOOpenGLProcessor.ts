@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-import { GL10 } from "../../../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { ObjectThreedOpenGLProcessor } from "../../../../../org/allbinary/graphics/threed/min3d/renderer/processor/ObjectThreedOpenGLProcessor.js";
+import { ObjectThreedOpenGLProcessor } from '../../../../../org/allbinary/graphics/threed/min3d/renderer/processor/ObjectThreedOpenGLProcessor.js';
 
     
 

@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ResultSet } from "../../../../../java/sql/ResultSet.js";
+import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 
     
-import { ResultSetMetaData } from "../../../../../java/sql/ResultSetMetaData.js";
+import { ResultSetMetaData } from '../../../../../java/sql/ResultSetMetaData.js';
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../java/util/Set.js";
+import { Set } from '../../../../../java/util/Set.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { Replace } from "../../../../../org/allbinary/logic/string/regex/replace/Replace.js";
+import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
 
     
 
@@ -75,7 +75,7 @@ import { Replace } from "../../../../../org/allbinary/logic/string/regex/replace
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbSqlColumn } from "./AbSqlColumn.js";
+        import { AbSqlColumn } from './AbSqlColumn.js';
 
 export class AbSqlRow extends AbSqlColumn {
         

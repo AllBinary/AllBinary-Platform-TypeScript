@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Choice } from "../../../../javax/microedition/lcdui/ChoiceI.js";
+import { Choice } from '../../../../javax/microedition/lcdui/ChoiceI.js';
 
     
-import { Command } from "../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 
     
-import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { GameCommandsFactory } from "../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { GameFeatureFormUtil } from "../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js";
+import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
 
     
-import { InGameFeatureChoiceGroups } from "../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js";
+import { InGameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CommandForm } from "../../../../org/allbinary/graphics/displayable/screen/CommandForm.js";
+import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 

@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Canvas } from "../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { CommandListener } from "../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Features } from "../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { MainFeatureFactory } from "../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js";
+import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 
     
 

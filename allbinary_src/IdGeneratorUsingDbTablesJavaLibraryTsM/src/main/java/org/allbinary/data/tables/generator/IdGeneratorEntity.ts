@@ -18,30 +18,30 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../java/lang/Long.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { UserDbInitInfo } from "../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlBean } from "../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -62,7 +62,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { IdGeneratorEntityInterface } from "./IdGeneratorEntityInterface.js";
+        import { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
 
 export class IdGeneratorEntity extends AbSqlBean implements IdGeneratorEntityInterface {
         

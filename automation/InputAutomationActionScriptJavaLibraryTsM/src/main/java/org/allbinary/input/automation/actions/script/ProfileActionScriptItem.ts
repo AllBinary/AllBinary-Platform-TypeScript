@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-import { ActionEvent } from "../../../../../../java/awt/event/ActionEvent.js";
+import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
 
     
-import { ActionListener } from "../../../../../../java/awt/event/ActionListener.js";
+import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
 
     
-import { swing } from "../../../../../../javax/swing.js";
+import { swing } from '../../../../../../javax/swing.js';
 
     
-import { DefaultMutableTreeNode } from "../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
+import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -67,9 +67,9 @@ import { Node } from "../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProfileActionScriptItemInterface } from "./ProfileActionScriptItemInterface.js";
-import { JPopupMenu } from "./JPopupMenu.js";
-import { JMenuItem } from "./JMenuItem.js";
+        import { ProfileActionScriptItemInterface } from './ProfileActionScriptItemInterface.js';
+import { JPopupMenu } from './JPopupMenu.js';
+import { JMenuItem } from './JMenuItem.js';
 
 export class ProfileActionScriptItem extends DefaultMutableTreeNode implements ProfileActionScriptItemInterface, ActionListener {
         

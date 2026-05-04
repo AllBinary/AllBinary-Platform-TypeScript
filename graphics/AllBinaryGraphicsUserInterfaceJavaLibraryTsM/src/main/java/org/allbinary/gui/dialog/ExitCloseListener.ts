@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../../java/lang/System.js";
+            import { System } from '../../../../java/lang/System.js';
         
 
 
@@ -42,7 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CloseJDialogListenerInterface } from "./CloseJDialogListenerInterface.js";
+        import { CloseJDialogListenerInterface } from './CloseJDialogListenerInterface.js';
 
 export class ExitCloseListener
             extends Object

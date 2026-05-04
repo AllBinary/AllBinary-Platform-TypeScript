@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
 
     
 
@@ -43,16 +43,16 @@ import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JDialog } from "./JDialog.js";
-import { CloseJDialogListenerInterface } from "./CloseJDialogListenerInterface.js";
-import { Frame } from "./Frame.js";
-import { JButton } from "./JButton.js";
-import { JLabel } from "./JLabel.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
-import { JFrame } from "./JFrame.js";
+        import { JDialog } from './JDialog.js';
+import { CloseJDialogListenerInterface } from './CloseJDialogListenerInterface.js';
+import { Frame } from './Frame.js';
+import { JButton } from './JButton.js';
+import { JLabel } from './JLabel.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
+import { JFrame } from './JFrame.js';
 
 export class BasicTextJDialog extends javax.swing.JDialog {
         

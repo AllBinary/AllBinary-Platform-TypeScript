@@ -4,7 +4,7 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
@@ -26,7 +26,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullPointerException } from "./NullPointerException.js";
+        import { NullPointerException } from './NullPointerException.js';
 
 export class Objects
             extends Object

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { DisplayInBrowserContraintsInterface } from "../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js";
+import { DisplayInBrowserContraintsInterface } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
 
     
-import { TwoDimensionalConstraintInterface } from "../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js";
+import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
 
     
 

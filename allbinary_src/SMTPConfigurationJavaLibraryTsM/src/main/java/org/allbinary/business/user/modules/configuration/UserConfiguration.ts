@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { TimeCreated } from "../../../../../../org/allbinary/business/time/created/TimeCreated.js";
+import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
 
     
-import { TimeLastModified } from "../../../../../../org/allbinary/business/time/modified/TimeLastModified.js";
+import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
 
     
-import { UserEmailConfiguration } from "../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js";
+import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
 
     
-import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js";
+import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 
     
 
@@ -58,7 +58,7 @@ import { UserEmailConfigurationInterface } from "../../../../../../org/allbinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UserConfigurationInterface } from "./UserConfigurationInterface.js";
+        import { UserConfigurationInterface } from './UserConfigurationInterface.js';
 
 export class UserConfiguration
             extends Object

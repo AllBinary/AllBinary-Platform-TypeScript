@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { GamePersistanceStrings } from "../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
+import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
 
     
-import { InputToGameKeyMapping } from "../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js";
+import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
 
     
-import { PersistentInputMapping } from "../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js";
+import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 
     
-import { BasicTouchInputFactory } from "../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js";
+import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
 
@@ -55,8 +55,8 @@ import { TouchMotionGestureFactory } from "../../../../org/allbinary/input/motio
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PCKeyFactory } from "./PCKeyFactory.js";
-import { GameKeyFactory } from "./GameKeyFactory.js";
+        import { PCKeyFactory } from './PCKeyFactory.js';
+import { GameKeyFactory } from './GameKeyFactory.js';
 
 export class DesktopDefaultGameInputMapping extends PersistentInputMapping {
         

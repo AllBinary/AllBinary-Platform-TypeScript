@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { ProgressCanvas } from "../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
+import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 
     
-import { ProgressCanvasFactory } from "../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { PaintableComposite } from "../../../../../org/allbinary/graphics/paint/PaintableComposite.js";
+import { PaintableComposite } from '../../../../../org/allbinary/graphics/paint/PaintableComposite.js';
 
     
-import { PaintableInterface } from "../../../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
 
@@ -52,7 +52,7 @@ import { PaintableInterface } from "../../../../../org/allbinary/graphics/paint/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DemoCanvas } from "./DemoCanvas.js";
+        import { DemoCanvas } from './DemoCanvas.js';
 
 export class DemoCanvasProgressUtil
             extends Object

@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-            import { Thread } from "../../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../../java/lang/Thread.js';
         
-import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js";
+import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 
     
-import { BufferedImageFrameCacheable } from "../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js";
+import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
 
     
-import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -67,11 +67,11 @@ import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CaptureWorkerInterface } from "./CaptureWorkerInterface.js";
-import { ScreenScavangerRobot } from "./ScreenScavangerRobot.js";
-import { ProcessingFrameIndexFactory } from "./ProcessingFrameIndexFactory.js";
-import { CapturedBufferedImagesCacheSingleton } from "./CapturedBufferedImagesCacheSingleton.js";
-import { CapturedImageWorkerResultsEvent } from "./CapturedImageWorkerResultsEvent.js";
+        import { CaptureWorkerInterface } from './CaptureWorkerInterface.js';
+import { ScreenScavangerRobot } from './ScreenScavangerRobot.js';
+import { ProcessingFrameIndexFactory } from './ProcessingFrameIndexFactory.js';
+import { CapturedBufferedImagesCacheSingleton } from './CapturedBufferedImagesCacheSingleton.js';
+import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';
 
 export class ScreenCaptureImagesWorker extends BasicEventHandler implements CaptureWorkerInterface {
         

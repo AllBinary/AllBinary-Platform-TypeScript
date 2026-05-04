@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { CharacterSet } from "../../../../../org/allbinary/logic/java/character/CharacterSet.js";
+import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/CharacterSet.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -55,8 +55,8 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OperatingSystemInterface } from "./OperatingSystemInterface.js";
-import { SystemProperties } from "./SystemProperties.js";
+        import { OperatingSystemInterface } from './OperatingSystemInterface.js';
+import { SystemProperties } from './SystemProperties.js';
 
 export class GenericOperatingSystem
             extends Object

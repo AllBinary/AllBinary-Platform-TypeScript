@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { PreLogUtil } from "../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AbCrypt } from "../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js";
+import { AbCrypt } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
 
     
-import { KeySpecFactory } from "../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js";
+import { KeySpecFactory } from '../../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,7 +57,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DatabaseEncoder } from "./DatabaseEncoder.js";
+        import { DatabaseEncoder } from './DatabaseEncoder.js';
 
 export class WeakCrypt
             extends Object

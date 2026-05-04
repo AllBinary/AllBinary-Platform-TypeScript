@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { GenericProfile } from "../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js";
+import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 
     
-import { GenericProfileDataWorkerType } from "../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js";
+import { GenericProfileDataWorkerType } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
 
     
-import { GenericProfiles } from "../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js";
+import { GenericProfiles } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js';
 
     
-import { GenericProfileActions } from "../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js";
+import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
 
     
-import { GenericProfileActionsJPanel } from "../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionsJPanel.js";
+import { GenericProfileActionsJPanel } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionsJPanel.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -69,27 +69,27 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { GenericModuleConfigurationInterface } from "./GenericModuleConfigurationInterface.js";
-import { JDialog } from "./JDialog.js";
-import { JButton } from "./JButton.js";
-import { JLabel } from "./JLabel.js";
-import { JTextField } from "./JTextField.js";
-import { ButtonGroup } from "./ButtonGroup.js";
-import { JTabbedPane } from "./JTabbedPane.js";
-import { JScrollPane } from "./JScrollPane.js";
-import { JList } from "./JList.js";
-import { JRadioButton } from "./JRadioButton.js";
-import { JCheckBox } from "./JCheckBox.js";
-import { Dimension } from "./Dimension.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
-import { GridLayout } from "./GridLayout.js";
-import { ListSelectionListener } from "./ListSelectionListener.js";
-import { ListSelectionEvent } from "./ListSelectionEvent.js";
-import { Insets } from "./Insets.js";
+        import { JPanel } from './JPanel.js';
+import { GenericModuleConfigurationInterface } from './GenericModuleConfigurationInterface.js';
+import { JDialog } from './JDialog.js';
+import { JButton } from './JButton.js';
+import { JLabel } from './JLabel.js';
+import { JTextField } from './JTextField.js';
+import { ButtonGroup } from './ButtonGroup.js';
+import { JTabbedPane } from './JTabbedPane.js';
+import { JScrollPane } from './JScrollPane.js';
+import { JList } from './JList.js';
+import { JRadioButton } from './JRadioButton.js';
+import { JCheckBox } from './JCheckBox.js';
+import { Dimension } from './Dimension.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
+import { GridLayout } from './GridLayout.js';
+import { ListSelectionListener } from './ListSelectionListener.js';
+import { ListSelectionEvent } from './ListSelectionEvent.js';
+import { Insets } from './Insets.js';
 
 export class GenericModuleConfigurationJPanel extends javax.swing.JPanel implements GenericModuleConfigurationInterface {
         

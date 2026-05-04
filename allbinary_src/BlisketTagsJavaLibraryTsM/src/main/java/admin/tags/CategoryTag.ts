@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { Method } from "../../java/lang/reflect/Method.js";
+import { Method } from '../../java/lang/reflect/Method.js';
 
     
-import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 
     
-import { CategoryHelperFactory } from "../../admin/taghelpers/CategoryHelperFactory.js";
+import { CategoryHelperFactory } from '../../admin/taghelpers/CategoryHelperFactory.js';
 
     
-import { CategoryRequestHelperFactory } from "../../admin/taghelpers/CategoryRequestHelperFactory.js";
+import { CategoryRequestHelperFactory } from '../../admin/taghelpers/CategoryRequestHelperFactory.js';
 
     
-import { CategoryData } from "../../org/allbinary/business/category/CategoryData.js";
+import { CategoryData } from '../../org/allbinary/business/category/CategoryData.js';
 
     
-import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { TransformInfoData } from "../../org/allbinary/logic/visual/transform/info/TransformInfoData.js";
+import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
 
     
 
@@ -69,7 +69,7 @@ import { TransformInfoData } from "../../org/allbinary/logic/visual/transform/in
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
+        import { TableTag } from './TableTag.js';
 
 export class CategoryTag extends TableTag {
         

@@ -18,23 +18,23 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { PlatformBitmapBaseFactory } from "../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js";
+import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 
     
-import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js";
+import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
 
     
 
@@ -55,8 +55,8 @@ import { PlatformTextureBaseFactory } from "../../../../org/allbinary/platform/o
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLImageFactory } from "./OpenGLImageFactory.js";
-import { OpenGLESGL10Image } from "./OpenGLESGL10Image.js";
+        import { OpenGLImageFactory } from './OpenGLImageFactory.js';
+import { OpenGLESGL10Image } from './OpenGLESGL10Image.js';
 
 export class OpenGLESGL10ImageFactory extends OpenGLImageFactory {
         

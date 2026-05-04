@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { InitUpdatePaintable } from "../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js";
+import { InitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
 
     
-import { NullInitUpdatePaintable } from "../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js";
+import { NullInitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js';
 
     
 
@@ -51,7 +51,7 @@ import { NullInitUpdatePaintable } from "../../../../org/allbinary/graphics/pain
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SelectionHudPaintable } from "./SelectionHudPaintable.js";
+        import { SelectionHudPaintable } from './SelectionHudPaintable.js';
 
 export class RTSLayerInfoPaintable extends InitUpdatePaintable {
         

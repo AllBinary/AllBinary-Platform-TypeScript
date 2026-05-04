@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
 
 
@@ -42,10 +42,10 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-import { LockablePaintable } from "./LockablePaintable.js";
-import { ItemPaintable } from "./ItemPaintable.js";
-import { PaintableForm } from "./PaintableForm.js";
+        import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+import { LockablePaintable } from './LockablePaintable.js';
+import { ItemPaintable } from './ItemPaintable.js';
+import { PaintableForm } from './PaintableForm.js';
 
 export class LockableFormPaintableFactory extends ItemPaintableFactory {
         

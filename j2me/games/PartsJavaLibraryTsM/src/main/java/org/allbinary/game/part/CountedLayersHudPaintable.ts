@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { PickedUpLayerInterfaceFactoryInterface } from "../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js";
+import { PickedUpLayerInterfaceFactoryInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { PaintableInterface } from "../../../../org/allbinary/graphics/paint/PaintableInterface.js";
+import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
 
@@ -58,8 +58,8 @@ import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PartInterface } from "./PartInterface.js";
-import { CountedLayerInterfaceFactoryPart } from "./CountedLayerInterfaceFactoryPart.js";
+        import { PartInterface } from './PartInterface.js';
+import { CountedLayerInterfaceFactoryPart } from './CountedLayerInterfaceFactoryPart.js';
 
 export class CountedLayersHudPaintable
             extends Object

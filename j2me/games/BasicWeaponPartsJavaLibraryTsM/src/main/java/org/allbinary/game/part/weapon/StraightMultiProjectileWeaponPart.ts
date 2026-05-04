@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { WeaponProperties } from "../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
+import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 
     
-import { WeaponLayer } from "../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js";
+import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
 
     
-import { WeaponLayerCircularPool } from "../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js";
+import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
 
     
-import { NoScoreable } from "../../../../../org/allbinary/game/score/NoScoreable.js";
+import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
 
     
-import { ScoreableInterface } from "../../../../../org/allbinary/game/score/ScoreableInterface.js";
+import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
 
     
-import { RelativeRelationship } from "../../../../../org/allbinary/graphics/RelativeRelationship.js";
+import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { NoDecimalTrigTable } from "../../../../../org/allbinary/math/NoDecimalTrigTable.js";
+import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalTrigTable.js';
 
     
 
@@ -72,7 +72,7 @@ import { NoDecimalTrigTable } from "../../../../../org/allbinary/math/NoDecimalT
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicWeaponPart } from "./BasicWeaponPart.js";
+        import { BasicWeaponPart } from './BasicWeaponPart.js';
 
 export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
         

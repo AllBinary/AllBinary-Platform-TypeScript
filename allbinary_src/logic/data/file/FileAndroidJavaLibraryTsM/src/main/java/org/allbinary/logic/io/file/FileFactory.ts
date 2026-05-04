@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { File } from "../../../../../java/io/File.js";
+import { File } from '../../../../../java/io/File.js';
 
     
-import { FileNotFoundException } from "../../../../../java/io/FileNotFoundException.js";
+import { FileNotFoundException } from '../../../../../java/io/FileNotFoundException.js';
 
     
-import { Context } from "../../../../../android/content/Context.js";
+import { Context } from '../../../../../android/content/Context.js';
 
     
-import { ResourceUtil } from "../../../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
 
@@ -54,7 +54,7 @@ import { ResourceUtil } from "../../../../../org/allbinary/data/resource/Resourc
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbFile } from "./AbFile.js";
+        import { AbFile } from './AbFile.js';
 
 export class FileFactory
             extends Object

@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-            import { Long } from "../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../java/lang/Long.js';
         
-import { awt } from "../../../../../../../java/awt.js";
+import { awt } from '../../../../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { MotionRectangleConstraints } from "../../../../../../../org/allbinary/input/automation/module/MotionRectangleConstraints.js";
+import { MotionRectangleConstraints } from '../../../../../../../org/allbinary/input/automation/module/MotionRectangleConstraints.js';
 
     
 
@@ -53,8 +53,8 @@ import { MotionRectangleConstraints } from "../../../../../../../org/allbinary/i
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Dimension } from "./Dimension.js";
-import { Rectangle } from "./Rectangle.js";
+        import { Dimension } from './Dimension.js';
+import { Rectangle } from './Rectangle.js';
 
 export class NoMotionRectangleConstraints extends MotionRectangleConstraints {
         

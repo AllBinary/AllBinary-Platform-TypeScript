@@ -18,39 +18,39 @@
 
 
 
-            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../../../java/lang/Long.js';
         
-import { HashMap } from "../../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../../java/util/HashMap.js';
 
     
-import { DomNodeHelper } from "../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { ModDomHelper } from "../../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { LogUtil } from "../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Document } from "../../../../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -71,12 +71,12 @@ import { NodeList } from "../../../../../../../../../../org/w3c/dom/NodeList.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicProfileActionScriptOutput } from "./BasicProfileActionScriptOutput.js";
-import { ImageActionScriptOutputInterface } from "./ImageActionScriptOutputInterface.js";
-import { ImageTypes } from "./ImageTypes.js";
-import { ImageActionScriptOutputJPanel } from "./ImageActionScriptOutputJPanel.js";
-import { ImageActionScriptOutputData } from "./ImageActionScriptOutputData.js";
-import { ImageActionScriptOutputProcessor } from "./ImageActionScriptOutputProcessor.js";
+        import { BasicProfileActionScriptOutput } from './BasicProfileActionScriptOutput.js';
+import { ImageActionScriptOutputInterface } from './ImageActionScriptOutputInterface.js';
+import { ImageTypes } from './ImageTypes.js';
+import { ImageActionScriptOutputJPanel } from './ImageActionScriptOutputJPanel.js';
+import { ImageActionScriptOutputData } from './ImageActionScriptOutputData.js';
+import { ImageActionScriptOutputProcessor } from './ImageActionScriptOutputProcessor.js';
 
 export class ImageActionScriptOutput extends BasicProfileActionScriptOutput implements ImageActionScriptOutputInterface {
         

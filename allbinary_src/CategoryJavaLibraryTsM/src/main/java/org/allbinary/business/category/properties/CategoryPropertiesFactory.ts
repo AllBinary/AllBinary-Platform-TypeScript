@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -54,9 +54,9 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryPropertiesFactoryInterface } from "./CategoryPropertiesFactoryInterface.js";
-import { CategoryPropertiesInterface } from "./CategoryPropertiesInterface.js";
-import { CategoryProperties } from "./CategoryProperties.js";
+        import { CategoryPropertiesFactoryInterface } from './CategoryPropertiesFactoryInterface.js';
+import { CategoryPropertiesInterface } from './CategoryPropertiesInterface.js';
+import { CategoryProperties } from './CategoryProperties.js';
 
 export class CategoryPropertiesFactory
             extends Object

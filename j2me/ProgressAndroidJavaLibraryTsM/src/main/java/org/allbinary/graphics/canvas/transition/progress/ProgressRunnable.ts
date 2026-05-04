@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { Activity } from "../../../../../../android/app/Activity.js";
+import { Activity } from '../../../../../../android/app/Activity.js';
 
     
-import { SimpleProgressActivityInterface } from "../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js";
+import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
 
     
-import { ARunnable } from "../../../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
 
     
 
@@ -49,7 +49,7 @@ import { ARunnable } from "../../../../../../org/allbinary/thread/ARunnable.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProgressCanvas } from "./ProgressCanvas.js";
+        import { ProgressCanvas } from './ProgressCanvas.js';
 
 export class ProgressRunnable extends ARunnable {
         

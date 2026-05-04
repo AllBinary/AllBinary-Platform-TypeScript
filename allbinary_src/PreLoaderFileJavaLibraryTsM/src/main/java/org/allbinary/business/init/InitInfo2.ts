@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Directory } from "../../../../org/allbinary/logic/io/file/directory/Directory.js";
+import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
 
     
-import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
 

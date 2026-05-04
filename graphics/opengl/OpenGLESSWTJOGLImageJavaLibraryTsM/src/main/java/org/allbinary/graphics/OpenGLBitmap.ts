@@ -4,23 +4,23 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { DisposalUtil } from "../../../org/allbinary/DisposalUtil.js";
+import { DisposalUtil } from '../../../org/allbinary/DisposalUtil.js';
 
     
-import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/PlatformBitmapBase.js";
+import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 
     
-import { SwtImmutableImage } from "../../../org/microemu/device/swt/SwtImmutableImage.js";
+import { SwtImmutableImage } from '../../../org/microemu/device/swt/SwtImmutableImage.js';
 
     
-import { SwtMutableImage } from "../../../org/microemu/device/swt/SwtMutableImage.js";
+import { SwtMutableImage } from '../../../org/microemu/device/swt/SwtMutableImage.js';
 
     
 

@@ -18,73 +18,73 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CommandListener } from "../../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Font } from "../../../../../javax/microedition/lcdui/Font.js";
+import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
 
     
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { TextField } from "../../../../../javax/microedition/lcdui/TextField.js";
+import { TextField } from '../../../../../javax/microedition/lcdui/TextField.js';
 
     
-import { PostGameCommandFactory } from "../../../../../org/allbinary/PostGameCommandFactory.js";
+import { PostGameCommandFactory } from '../../../../../org/allbinary/PostGameCommandFactory.js';
 
     
-import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 
     
-import { HighScore } from "../../../../../org/allbinary/game/score/HighScore.js";
+import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
 
     
-import { HighScoresFactoryInterface } from "../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js";
+import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
 
     
-import { HighScoresHelperBase } from "../../../../../org/allbinary/game/score/HighScoresHelperBase.js";
+import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
 
     
-import { BasicColor } from "../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { CustomTextBox } from "../../../../../org/allbinary/graphics/form/item/CustomTextBox.js";
+import { CustomTextBox } from '../../../../../org/allbinary/graphics/form/item/CustomTextBox.js';
 
     
-import { NullPaintable } from "../../../../../org/allbinary/graphics/paint/NullPaintable.js";
+import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 
     
-import { Paintable } from "../../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { SimpleTextPaintable } from "../../../../../org/allbinary/graphics/paint/SimpleTextPaintable.js";
+import { SimpleTextPaintable } from '../../../../../org/allbinary/graphics/paint/SimpleTextPaintable.js';
 
     
-import { VirtualKeyboardEventHandler } from "../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js";
+import { VirtualKeyboardEventHandler } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { GenericOperatingSystem } from "../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
+import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 
     
-import { OperatingSystemFactory } from "../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js";
+import { OperatingSystemFactory } from '../../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { InApplicationPurchaseFactory } from "../../../../../org/allbinary/logic/system/security/licensing/InApplicationPurchaseFactory.js";
+import { InApplicationPurchaseFactory } from '../../../../../org/allbinary/logic/system/security/licensing/InApplicationPurchaseFactory.js';
 
     
 
@@ -105,7 +105,7 @@ import { InApplicationPurchaseFactory } from "../../../../../org/allbinary/logic
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScoreUtil } from "./HighScoreUtil.js";
+        import { HighScoreUtil } from './HighScoreUtil.js';
 
 export class HighScoreTextBox extends CustomTextBox {
         

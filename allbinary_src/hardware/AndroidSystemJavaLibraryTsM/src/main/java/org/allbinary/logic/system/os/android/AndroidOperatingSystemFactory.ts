@@ -20,28 +20,28 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { GenericOperatingSystem } from "../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js";
+import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
 
     
-import { NoOperatingSystem } from "../../../../../../org/allbinary/logic/system/os/NoOperatingSystem.js";
+import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/NoOperatingSystem.js';
 
     
-import { OperatingSystems } from "../../../../../../org/allbinary/logic/system/os/OperatingSystems.js";
+import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
 
     
-import { SystemProperties } from "../../../../../../org/allbinary/logic/system/os/SystemProperties.js";
+import { SystemProperties } from '../../../../../../org/allbinary/logic/system/os/SystemProperties.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -62,7 +62,7 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AndroidOS } from "./AndroidOS.js";
+        import { AndroidOS } from './AndroidOS.js';
 
 export class AndroidOperatingSystemFactory
             extends Object

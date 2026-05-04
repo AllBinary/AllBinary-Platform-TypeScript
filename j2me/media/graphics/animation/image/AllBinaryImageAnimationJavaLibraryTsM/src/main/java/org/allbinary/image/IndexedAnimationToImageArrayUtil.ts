@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { IndexedAnimation } from "../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../org/allbinary/animation/IndexedAnimation.js';
 
     
 
@@ -48,7 +48,7 @@ import { IndexedAnimation } from "../../../org/allbinary/animation/IndexedAnimat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnimationFrameToImageUtil } from "./AnimationFrameToImageUtil.js";
+        import { AnimationFrameToImageUtil } from './AnimationFrameToImageUtil.js';
 
 export class IndexedAnimationToImageArrayUtil
             extends Object

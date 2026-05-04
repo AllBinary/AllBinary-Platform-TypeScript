@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
-import { DefaultMutableTreeNode } from "../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
+import { DefaultMutableTreeNode } from '../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 
     
-import { MutableTreeNode } from "../../../../../javax/swing/tree/MutableTreeNode.js";
+import { MutableTreeNode } from '../../../../../javax/swing/tree/MutableTreeNode.js';
 
     
-import { TreePath } from "../../../../../javax/swing/tree/TreePath.js";
+import { TreePath } from '../../../../../javax/swing/tree/TreePath.js';
 
     
-import { CanvasTreeLabel } from "../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasTreeLabel.js";
+import { CanvasTreeLabel } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasTreeLabel.js';
 
     
-import { MyCanvasEvent } from "../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js";
+import { MyCanvasEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
 
     
-import { MyCanvasEventService } from "../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js";
+import { MyCanvasEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
 
     
-import { MyCanvasEventSource } from "../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js";
+import { MyCanvasEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
 
     
-import { MyGraphicItemEvent } from "../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js";
+import { MyGraphicItemEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
 
     
-import { MyGraphicItemEventService } from "../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js";
+import { MyGraphicItemEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
 
     
-import { MyGraphicItemEventSource } from "../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventSource.js";
+import { MyGraphicItemEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventSource.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -87,16 +87,16 @@ import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayLis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { JTree } from "./JTree.js";
-import { MouseAdapter } from "./MouseAdapter.js";
-import { MouseEvent } from "./MouseEvent.js";
-import { JPopupMenu } from "./JPopupMenu.js";
-import { JMenuItem } from "./JMenuItem.js";
-import { JScrollPane } from "./JScrollPane.js";
-import { PopupMenuListener } from "./PopupMenuListener.js";
-import { PopupMenuEvent } from "./PopupMenuEvent.js";
-import { GridLayout } from "./GridLayout.js";
+        import { JPanel } from './JPanel.js';
+import { JTree } from './JTree.js';
+import { MouseAdapter } from './MouseAdapter.js';
+import { MouseEvent } from './MouseEvent.js';
+import { JPopupMenu } from './JPopupMenu.js';
+import { JMenuItem } from './JMenuItem.js';
+import { JScrollPane } from './JScrollPane.js';
+import { PopupMenuListener } from './PopupMenuListener.js';
+import { PopupMenuEvent } from './PopupMenuEvent.js';
+import { GridLayout } from './GridLayout.js';
 
 export class WorkAreaJTreeJPanel extends javax.swing.JPanel {
         

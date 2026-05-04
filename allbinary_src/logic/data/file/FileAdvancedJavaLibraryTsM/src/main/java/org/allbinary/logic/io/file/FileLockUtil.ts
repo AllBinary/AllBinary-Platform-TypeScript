@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { FileChannel } from "../../../../../java/nio/channels/FileChannel.js";
+import { FileChannel } from '../../../../../java/nio/channels/FileChannel.js';
 
     
-import { FileLock } from "../../../../../java/nio/channels/FileLock.js";
+import { FileLock } from '../../../../../java/nio/channels/FileLock.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbFileOutputStream } from "../../../../../org/allbinary/logic/io/AbFileOutputStream.js";
+import { AbFileOutputStream } from '../../../../../org/allbinary/logic/io/AbFileOutputStream.js';
 
     
-import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
 
@@ -60,7 +60,7 @@ import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbFile } from "./AbFile.js";
+        import { AbFile } from './AbFile.js';
 
 export class FileLockUtil
             extends Object

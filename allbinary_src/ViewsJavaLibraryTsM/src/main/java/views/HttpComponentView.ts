@@ -18,55 +18,55 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-            import { Exception } from "../java/lang/Exception.js";
+            import { Exception } from '../java/lang/Exception.js';
         
-import { Vector } from "../java/util/Vector.js";
+import { Vector } from '../java/util/Vector.js';
 
     
-import { DomNodeHelper } from "../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomNodeInterface } from "../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { DomDocumentHelper } from "../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbeClientInformationInterface } from "../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { ServiceClientInformationInterfaceFactory } from "../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
+import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 
     
-import { BasicTransformer } from "../org/allbinary/logic/visual/transform/BasicTransformer.js";
+import { BasicTransformer } from '../org/allbinary/logic/visual/transform/BasicTransformer.js';
 
     
-import { TransformInterface } from "../org/allbinary/logic/visual/transform/TransformInterface.js";
+import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
 
     
-import { TransformDocumentInterface } from "../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js";
+import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 
     
-import { TransformHttpRequestDocumentFactory } from "../org/allbinary/logic/visual/transform/data/TransformHttpRequestDocumentFactory.js";
+import { TransformHttpRequestDocumentFactory } from '../org/allbinary/logic/visual/transform/data/TransformHttpRequestDocumentFactory.js';
 
     
-import { TransformInfoHttpComposite } from "../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js";
+import { TransformInfoHttpComposite } from '../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js';
 
     
-import { TransformInfoInterface } from "../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../org/w3c/dom/Document.js";
+import { Document } from '../org/w3c/dom/Document.js';
 
     
-import { Node } from "../org/w3c/dom/Node.js";
+import { Node } from '../org/w3c/dom/Node.js';
 
     
 

@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/ProcessPaintable.js";
+import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
 
     
 
@@ -46,7 +46,7 @@ import { ProcessPaintable } from "../../../../../org/allbinary/graphics/paint/Pr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryGameCanvas } from "./AllBinaryGameCanvas.js";
+        import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 
 export class GameCanvasPaintHelper extends ProcessPaintable {
         

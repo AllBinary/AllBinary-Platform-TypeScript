@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 
     
-import { UserHelperFactory } from "../../admin/taghelpers/UserHelperFactory.js";
+import { UserHelperFactory } from '../../admin/taghelpers/UserHelperFactory.js';
 
     
-import { EntryData } from "../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserRoleData } from "../../org/allbinary/business/user/role/UserRoleData.js";
+import { UserRoleData } from '../../org/allbinary/business/user/role/UserRoleData.js';
 
     
-import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
 
@@ -57,7 +57,7 @@ import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
+        import { TableTag } from './TableTag.js';
 
 export class UserTag extends TableTag {
         

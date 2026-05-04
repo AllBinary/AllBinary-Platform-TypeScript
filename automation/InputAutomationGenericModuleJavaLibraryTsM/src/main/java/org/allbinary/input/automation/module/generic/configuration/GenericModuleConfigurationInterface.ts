@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { GenericProfile } from "../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js";
+import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
 
     
 

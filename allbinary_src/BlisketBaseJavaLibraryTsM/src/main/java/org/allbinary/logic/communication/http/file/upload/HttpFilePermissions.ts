@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { BasicUserRoleFactory } from "../../../../../../../org/allbinary/business/user/role/BasicUserRoleFactory.js";
+import { BasicUserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/BasicUserRoleFactory.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbFile } from "../../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { AbPath } from "../../../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -60,7 +60,7 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { FileUploadData } from "./FileUploadData.js";
+        import { FileUploadData } from './FileUploadData.js';
 
 export class HttpFilePermissions
             extends Object

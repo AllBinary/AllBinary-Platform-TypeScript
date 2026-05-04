@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { BasicEventListenerInterface } from "../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js";
+import { BasicEventListenerInterface } from '../../../../../org/allbinary/logic/util/event/BasicEventListenerInterface.js';
 
     
 
@@ -43,7 +43,7 @@ import { BasicEventListenerInterface } from "../../../../../org/allbinary/logic/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageComparisonSearchResultsEvent } from "./ImageComparisonSearchResultsEvent.js";
+        import { ImageComparisonSearchResultsEvent } from './ImageComparisonSearchResultsEvent.js';
 
 export interface ImageComparisonSearchResultsListener extends BasicEventListenerInterface {
         

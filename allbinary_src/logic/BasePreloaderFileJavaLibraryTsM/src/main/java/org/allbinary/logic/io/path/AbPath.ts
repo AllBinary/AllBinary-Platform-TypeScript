@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { FilePathData } from "../../../../../org/allbinary/logic/io/file/FilePathData.js";
+import { FilePathData } from '../../../../../org/allbinary/logic/io/file/FilePathData.js';
 
     
-import { FilePathUtil } from "../../../../../org/allbinary/logic/io/file/FilePathUtil.js";
+import { FilePathUtil } from '../../../../../org/allbinary/logic/io/file/FilePathUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -60,8 +60,8 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbPathData } from "./AbPathData.js";
-import { PathUtil } from "./PathUtil.js";
+        import { AbPathData } from './AbPathData.js';
+import { PathUtil } from './PathUtil.js';
 
 export class AbPath
             extends Object

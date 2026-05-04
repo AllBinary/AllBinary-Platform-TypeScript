@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Source } from "../../../../../javax/xml/transform/Source.js";
+import { Source } from '../../../../../javax/xml/transform/Source.js';
 
     
-import { TransformerException } from "../../../../../javax/xml/transform/TransformerException.js";
+import { TransformerException } from '../../../../../javax/xml/transform/TransformerException.js';
 
     
-import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 
     
-import { StreamSource } from "../../../../../javax/xml/transform/stream/StreamSource.js";
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 
     
-import { FREEBLISKET_PATH_GLOBALS } from "../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
+import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CryptFileReader } from "../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js";
+import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
 
     
-import { AbFilePath } from "../../../../../org/allbinary/logic/io/path/AbFilePath.js";
+import { AbFilePath } from '../../../../../org/allbinary/logic/io/path/AbFilePath.js';
 
     
-import { AbPath } from "../../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js";
+import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/visual/transform/info/template/TransformInfoTemplateData.js';
 
     
 
@@ -78,7 +78,7 @@ import { TransformInfoTemplateData } from "../../../../../org/allbinary/logic/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { URIResolverStrings } from "./URIResolverStrings.js";
+        import { URIResolverStrings } from './URIResolverStrings.js';
 
 export class BasicUriResolver
             extends Object

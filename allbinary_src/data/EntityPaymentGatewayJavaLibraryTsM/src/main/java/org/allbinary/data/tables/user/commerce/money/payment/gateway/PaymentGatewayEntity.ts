@@ -18,69 +18,69 @@
 
 
 
-            import { Object } from "../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../../../java/lang/Long.js';
         
-import { Calendar } from "../../../../../../../../../java/util/Calendar.js";
+import { Calendar } from '../../../../../../../../../java/util/Calendar.js';
 
     
-import { HashMap } from "../../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../../java/util/Vector.js';
 
     
-import { StoreFrontData } from "../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserDbInitInfo } from "../../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+import { UserDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 
     
-import { UserData } from "../../../../../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { PaymentData } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js";
+import { PaymentData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
 
     
-import { PaymentGatewayData } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js";
+import { PaymentGatewayData } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
 
     
-import { PaymentGatewayEncryptedMapping } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayEncryptedMapping.js";
+import { PaymentGatewayEncryptedMapping } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayEncryptedMapping.js';
 
     
-import { PaymentGatewayInterface } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js";
+import { PaymentGatewayInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
 
     
-import { PaymentGatewayInterfaceFactory } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactory.js";
+import { PaymentGatewayInterfaceFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactory.js';
 
     
-import { BasicPaymentType } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js";
+import { BasicPaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
 
     
-import { BasicPaymentTypeUtil } from "../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js";
+import { BasicPaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
 
     
-import { PaymentGatewayIdGenerator } from "../../../../../../../../../org/allbinary/data/generator/PaymentGatewayIdGenerator.js";
+import { PaymentGatewayIdGenerator } from '../../../../../../../../../org/allbinary/data/generator/PaymentGatewayIdGenerator.js';
 
     
-import { LogUtil } from "../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlBean } from "../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 
     
-import { SuperCrypt } from "../../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js";
+import { SuperCrypt } from '../../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 
     
-import { StringMaker } from "../../../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -101,7 +101,7 @@ import { StringMaker } from "../../../../../../../../../org/allbinary/logic/stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentGatewayEntityInterface } from "./PaymentGatewayEntityInterface.js";
+        import { PaymentGatewayEntityInterface } from './PaymentGatewayEntityInterface.js';
 
 export class PaymentGatewayEntity extends AbSqlBean implements PaymentGatewayEntityInterface {
         

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { swing } from "../../../../../../../javax/swing.js";
+import { swing } from '../../../../../../../javax/swing.js';
 
     
-import { AbstractInputAutomationFactory } from "../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js";
+import { AbstractInputAutomationFactory } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
 
     
-import { InputAutomationModuleData } from "../../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js";
+import { InputAutomationModuleData } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
 
     
-import { BlankModuleConfigurationJPanel } from "../../../../../../../org/allbinary/input/automation/module/configuration/BlankModuleConfigurationJPanel.js";
+import { BlankModuleConfigurationJPanel } from '../../../../../../../org/allbinary/input/automation/module/configuration/BlankModuleConfigurationJPanel.js';
 
     
-import { RunnableInterface } from "../../../../../../../org/allbinary/thread/RunnableInterface.js";
+import { RunnableInterface } from '../../../../../../../org/allbinary/thread/RunnableInterface.js';
 
     
 
@@ -57,7 +57,7 @@ import { RunnableInterface } from "../../../../../../../org/allbinary/thread/Run
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
+        import { JPanel } from './JPanel.js';
 
 export class TestModuleFactory extends AbstractInputAutomationFactory {
         

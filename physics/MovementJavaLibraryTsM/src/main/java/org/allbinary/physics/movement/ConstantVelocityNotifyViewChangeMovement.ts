@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryGameLayer } from "../../../../org/allbinary/game/layer/AllBinaryGameLayer.js";
+import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
 
     
-import { BasicVelocityProperties } from "../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js";
+import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { BasicDecimal } from "../../../../org/allbinary/logic/math/BasicDecimal.js";
+import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
 
     
-import { AxisMathVectorUtil } from "../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js";
+import { AxisMathVectorUtil } from '../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
     
 
@@ -60,7 +60,7 @@ import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Movement } from "./Movement.js";
+        import { Movement } from './Movement.js';
 
 export class ConstantVelocityNotifyViewChangeMovement extends Movement {
         

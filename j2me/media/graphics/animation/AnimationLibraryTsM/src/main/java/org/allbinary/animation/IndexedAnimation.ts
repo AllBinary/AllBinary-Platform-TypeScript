@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { PrimitiveIntUtil } from "../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -48,9 +48,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Animation } from "./Animation.js";
-import { IndexedAnimationInterface } from "./IndexedAnimationInterface.js";
-import { AnimationBehavior } from "./AnimationBehavior.js";
+        import { Animation } from './Animation.js';
+import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
+import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class IndexedAnimation extends Animation implements IndexedAnimationInterface {
         

@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InputAutomationGenericModuleServiceFactory } from "../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js";
+import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
 
     
-import { InputAutomationModuleBundleActivator } from "../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js";
+import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
 
     
 

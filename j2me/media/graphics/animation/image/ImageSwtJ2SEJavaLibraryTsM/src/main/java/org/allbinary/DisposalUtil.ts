@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { System } from "../../java/lang/System.js";
+            import { System } from '../../java/lang/System.js';
         
-import { Image } from "../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../javax/microedition/lcdui/Image.js';
 
     
-import { CommonStrings } from "../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
 
     
-import { Resource } from "../../org/eclipse/swt/graphics/Resource.js";
+import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
 
     
-import { SwtMutableImage } from "../../org/microemu/device/swt/SwtMutableImage.js";
+import { SwtMutableImage } from '../../org/microemu/device/swt/SwtMutableImage.js';
 
     
 

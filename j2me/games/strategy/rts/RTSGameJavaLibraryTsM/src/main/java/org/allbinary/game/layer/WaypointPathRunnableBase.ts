@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { LayerDistanceUtil } from "../../../../org/allbinary/math/LayerDistanceUtil.js";
+import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
 
     
-import { PriorityRunnable } from "../../../../org/allbinary/thread/PriorityRunnable.js";
+import { PriorityRunnable } from '../../../../org/allbinary/thread/PriorityRunnable.js';
 
     
-import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInterface.js";
+import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
 
     
 
@@ -58,8 +58,8 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullPathFindingLayer } from "./NullPathFindingLayer.js";
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+        import { NullPathFindingLayer } from './NullPathFindingLayer.js';
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 
 export class WaypointPathRunnableBase
             extends Object

@@ -4,72 +4,72 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Runnable } from "../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { GL10 } from "../../../../javax/microedition/khronos/opengles/GL10.js";
+import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { LoadTextures } from "../../../../org/allbinary/device/LoadTextures.js";
+import { LoadTextures } from '../../../../org/allbinary/device/LoadTextures.js';
 
     
-import { OpenGLESGraphics } from "../../../../org/allbinary/device/OpenGLESGraphics.js";
+import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
 
     
-import { ProgressCanvas } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
+import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 
     
-import { ProgressCanvasFactory } from "../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { CanvasStrings } from "../../../../org/allbinary/graphics/displayable/CanvasStrings.js";
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { DisplayInfoSingleton } from "../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { RendererStrings } from "../../../../org/allbinary/graphics/opengles/renderer/RendererStrings.js";
+import { RendererStrings } from '../../../../org/allbinary/graphics/opengles/renderer/RendererStrings.js';
 
     
-import { PreResourceImageUtil } from "../../../../org/allbinary/image/PreResourceImageUtil.js";
+import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
 
     
-import { OpenGLESImage } from "../../../../org/allbinary/image/opengles/OpenGLESImage.js";
+import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
 
     
-import { OpenGLImageCache } from "../../../../org/allbinary/image/opengles/OpenGLImageCache.js";
+import { OpenGLImageCache } from '../../../../org/allbinary/image/opengles/OpenGLImageCache.js';
 
     
-import { OpenGLImageCacheFactory } from "../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js";
+import { OpenGLImageCacheFactory } from '../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { SynchObject } from "../../../../org/allbinary/thread/SynchObject.js";
+import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -90,8 +90,8 @@ import { BasicArrayListD } from "../../../../org/allbinary/util/BasicArrayListD.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { OpenGLCapabilities } from "./OpenGLCapabilities.js";
-import { OpenGLLogUtil } from "./OpenGLLogUtil.js";
+        import { OpenGLCapabilities } from './OpenGLCapabilities.js';
+import { OpenGLLogUtil } from './OpenGLLogUtil.js';
 
 export class OpenGLUtil
             extends Object

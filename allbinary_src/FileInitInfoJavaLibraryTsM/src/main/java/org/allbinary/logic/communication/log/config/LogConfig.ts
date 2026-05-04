@@ -18,70 +18,70 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { DomNodeHelper } from "../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js";
+import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
 
     
-import { DomSearchHelper } from "../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js";
+import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
 
     
-import { DomDocumentHelper } from "../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { PATH_GLOBALS } from "../../../../../../org/allbinary/globals/PATH_GLOBALS.js";
+import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { LogConfigType } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigType.js";
+import { LogConfigType } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigType.js';
 
     
-import { LogConfigTypeData } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeData.js";
+import { LogConfigTypeData } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeData.js';
 
     
-import { LogConfigTypes } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
+import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 
     
-import { LogConfigTypesData } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypesData.js";
+import { LogConfigTypesData } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypesData.js';
 
     
-import { AbFileLocalInputStream } from "../../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js";
+import { AbFileLocalInputStream } from '../../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
 
     
-import { AbFile } from "../../../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { BooleanUtil } from "../../../../../../org/allbinary/logic/java/bool/BooleanUtil.js";
+import { BooleanUtil } from '../../../../../../org/allbinary/logic/java/bool/BooleanUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { Document } from "../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
     
-import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
+import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
     
 
@@ -102,7 +102,7 @@ import { NodeList } from "../../../../../../org/w3c/dom/NodeList.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogConfigData } from "./LogConfigData.js";
+        import { LogConfigData } from './LogConfigData.js';
 
 export class LogConfig
             extends Object

@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { AllBinaryGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+import { AllBinaryGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { NullGameCanvas } from "../../../../../../org/allbinary/game/displayable/canvas/NullGameCanvas.js";
+import { NullGameCanvas } from '../../../../../../org/allbinary/game/displayable/canvas/NullGameCanvas.js';
 
     
-import { AllBinaryLayer } from "../../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
 
@@ -58,7 +58,7 @@ import { AllBinaryEventObject } from "../../../../../../org/allbinary/logic/util
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DestroyedEventHandler } from "./DestroyedEventHandler.js";
+        import { DestroyedEventHandler } from './DestroyedEventHandler.js';
 
 export class DestroyedEvent extends AllBinaryEventObject {
         

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { CryptInterface } from "../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js";
+import { CryptInterface } from '../../../../../../../org/allbinary/init/crypt/jcehelper/CryptInterface.js';
 
     
-import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { PreLogUtil } from "../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { ByteUtil } from "../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js";
+import { ByteUtil } from '../../../../../../../org/allbinary/logic/java/byteutil/ByteUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

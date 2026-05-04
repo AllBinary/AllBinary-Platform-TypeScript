@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-import { BasicGeographicMap } from "../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { GeographicMapCellHistory } from "../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js";
+import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -53,10 +53,10 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PathGeneratorInterface } from "./PathGeneratorInterface.js";
-import { PathFindingInfo } from "./PathFindingInfo.js";
-import { GeographicPathFinderBase } from "./GeographicPathFinderBase.js";
-import { MultipassState } from "./MultipassState.js";
+        import { PathGeneratorInterface } from './PathGeneratorInterface.js';
+import { PathFindingInfo } from './PathFindingInfo.js';
+import { GeographicPathFinderBase } from './GeographicPathFinderBase.js';
+import { MultipassState } from './MultipassState.js';
 
 export class PathGenerator
             extends Object

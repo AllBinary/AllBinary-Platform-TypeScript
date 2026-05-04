@@ -18,70 +18,70 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../../java/lang/Long.js';
         
 
-//import { Date } from "../../../../../../../java/util/Date.js";
+//import { Date } from '../../../../../../../java/util/Date.js';
 
     
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../../../java/util/Set.js";
+import { Set } from '../../../../../../../java/util/Set.js';
 
     
-import { StoreFrontData } from "../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserData } from "../../../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { BillingAddressData } from "../../../../../../../org/allbinary/business/user/address/BillingAddressData.js";
+import { BillingAddressData } from '../../../../../../../org/allbinary/business/user/address/BillingAddressData.js';
 
     
-import { ShippingAddressData } from "../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js";
+import { ShippingAddressData } from '../../../../../../../org/allbinary/business/user/address/ShippingAddressData.js';
 
     
-import { StreetAddress } from "../../../../../../../org/allbinary/business/user/address/StreetAddress.js";
+import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
 
     
-import { BasketInterface } from "../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js";
+import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
 
     
-import { Money } from "../../../../../../../org/allbinary/business/user/commerce/money/Money.js";
+import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
 
     
-import { MoneyException } from "../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js";
+import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
 
     
-import { Payment } from "../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js";
+import { Payment } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
 
     
-import { PaymentData } from "../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js";
+import { PaymentData } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
 
     
-import { ShippingMethodData } from "../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js";
+import { ShippingMethodData } from '../../../../../../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
 
     
-import { ModDomHelper } from "../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Document } from "../../../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -102,10 +102,10 @@ import { Node } from "../../../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Order } from "./Order.js";
-import { OrderHistoryInterface } from "./OrderHistoryInterface.js";
-import { OrderData } from "./OrderData.js";
-import { OrderHistoryData } from "./OrderHistoryData.js";
+        import { Order } from './Order.js';
+import { OrderHistoryInterface } from './OrderHistoryInterface.js';
+import { OrderData } from './OrderData.js';
+import { OrderHistoryData } from './OrderHistoryData.js';
 
 export class OrderHistory extends Order implements OrderHistoryInterface {
         

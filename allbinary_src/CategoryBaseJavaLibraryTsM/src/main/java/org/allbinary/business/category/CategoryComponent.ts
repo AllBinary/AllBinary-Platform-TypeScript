@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { DomDocumentHelper } from "../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js";
+import { DomDocumentHelper } from '../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
 
     
-import { TransformInterface } from "../../../../org/allbinary/logic/visual/transform/TransformInterface.js";
+import { TransformInterface } from '../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
 
     
-import { TransformDocumentInterface } from "../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js";
+import { TransformDocumentInterface } from '../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../org/w3c/dom/Document.js';
 
     
 
@@ -57,8 +57,8 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryView } from "./CategoryView.js";
-import { CategoryInterface } from "./CategoryInterface.js";
+        import { CategoryView } from './CategoryView.js';
+import { CategoryInterface } from './CategoryInterface.js';
 
 export class CategoryComponent extends CategoryView implements TransformInterface {
         

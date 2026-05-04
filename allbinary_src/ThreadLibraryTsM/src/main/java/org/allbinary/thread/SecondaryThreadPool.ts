@@ -18,21 +18,21 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-            import { Runnable } from "../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -53,7 +53,7 @@ import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ThreadPool } from "./ThreadPool.js";
+        import { ThreadPool } from './ThreadPool.js';
 
 export class SecondaryThreadPool extends ThreadPool {
         

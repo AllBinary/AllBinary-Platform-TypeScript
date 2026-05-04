@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { TouchButtonDowngradeResource } from "../../../../../org/allbinary/game/input/resource/TouchButtonDowngradeResource.js";
+import { TouchButtonDowngradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonDowngradeResource.js';
 
     
-import { TouchButtonUpgradeResource } from "../../../../../org/allbinary/game/input/resource/TouchButtonUpgradeResource.js";
+import { TouchButtonUpgradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonUpgradeResource.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
-import { BasicArrayListUtil } from "../../../../../org/allbinary/util/BasicArrayListUtil.js";
+import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CellPositionFactory } from "../../../../../org/allbinary/graphics/CellPositionFactory.js";
+import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
 
     
 
@@ -63,12 +63,12 @@ import { CellPositionFactory } from "../../../../../org/allbinary/graphics/CellP
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseTouchInput } from "./BaseTouchInput.js";
-import { TouchButtonLocationHelper } from "./TouchButtonLocationHelper.js";
-import { BasicTouchButtonCellPositionFactory } from "./BasicTouchButtonCellPositionFactory.js";
-import { CommonButtons } from "./CommonButtons.js";
-import { TouchButton } from "./TouchButton.js";
-import { BasicTouchInputFactory } from "./BasicTouchInputFactory.js";
+        import { BaseTouchInput } from './BaseTouchInput.js';
+import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';
+import { BasicTouchButtonCellPositionFactory } from './BasicTouchButtonCellPositionFactory.js';
+import { CommonButtons } from './CommonButtons.js';
+import { TouchButton } from './TouchButton.js';
+import { BasicTouchInputFactory } from './BasicTouchInputFactory.js';
 
 export class UpgradeDowngradeTouchButtonsBuilder extends BaseTouchInput {
         

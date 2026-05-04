@@ -18,46 +18,46 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 
     
-import { GameInfoData } from "../../../../../org/allbinary/game/GameInfoData.js";
+import { GameInfoData } from '../../../../../org/allbinary/game/GameInfoData.js';
 
     
-import { GameConfigurationCentral } from "../../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
+import { GameConfigurationCentral } from '../../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 
     
-import { DisplayInfoSingleton } from "../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { XmlRpcAbeClient } from "../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js";
+import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
 
     
-import { BooleanFactory } from "../../../../../org/allbinary/logic/java/bool/BooleanFactory.js";
+import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
 
     
-import { NoCrypt } from "../../../../../org/allbinary/logic/system/security/crypt/jcehelper/NoCrypt.js";
+import { NoCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/NoCrypt.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.js";
+import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
 
     
 
@@ -78,10 +78,10 @@ import { HashtableUtil } from "../../../../../org/allbinary/util/HashtableUtil.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RemoteHighScoresProcessorInterface } from "./RemoteHighScoresProcessorInterface.js";
-import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
-import { XmlRpcRemoteHighScoresClient } from "./XmlRpcRemoteHighScoresClient.js";
-import { RemoteHighScores } from "./RemoteHighScores.js";
+        import { RemoteHighScoresProcessorInterface } from './RemoteHighScoresProcessorInterface.js';
+import { RemoteHighScoresData } from './RemoteHighScoresData.js';
+import { XmlRpcRemoteHighScoresClient } from './XmlRpcRemoteHighScoresClient.js';
+import { RemoteHighScores } from './RemoteHighScores.js';
 
 export class RemoteHighScoresProcessor
             extends Object

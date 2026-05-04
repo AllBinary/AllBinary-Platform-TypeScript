@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { UserInterface } from "../../../../../../org/allbinary/business/user/UserInterface.js";
+import { UserInterface } from '../../../../../../org/allbinary/business/user/UserInterface.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { UserEmailEventNameData } from "../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js";
+import { UserEmailEventNameData } from '../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 
     
-import { UserEmailEventHandler } from "../../../../../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js";
+import { UserEmailEventHandler } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
 
     
-import { AdminUserEmailEventHandlerSingletons } from "../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js";
+import { AdminUserEmailEventHandlerSingletons } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
 
     
-import { UserEmailEventHandlerSingletons } from "../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js";
+import { UserEmailEventHandlerSingletons } from '../../../../../../org/allbinary/logic/communication/smtp/event/handler/factory/UserEmailEventHandlerSingletons.js';
 
     
-import { AdminEmailInfo } from "../../../../../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js";
+import { AdminEmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
 
     
-import { BasicEmailInfo } from "../../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js";
+import { BasicEmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
 
     
-import { EmailInfo } from "../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js";
+import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 

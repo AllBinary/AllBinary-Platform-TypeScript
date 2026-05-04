@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../java/lang/Long.js";
+            import { Long } from '../../../../java/lang/Long.js';
         
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbDataInputStream } from "../../../../org/allbinary/logic/io/AbDataInputStream.js";
+import { AbDataInputStream } from '../../../../org/allbinary/logic/io/AbDataInputStream.js';
 
     
-import { AbDataOutputStream } from "../../../../org/allbinary/logic/io/AbDataOutputStream.js";
+import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
 
     
-import { AbFileInputStream } from "../../../../org/allbinary/logic/io/AbFileInputStream.js";
+import { AbFileInputStream } from '../../../../org/allbinary/logic/io/AbFileInputStream.js';
 
     
-import { AbFileOutputStream } from "../../../../org/allbinary/logic/io/AbFileOutputStream.js";
+import { AbFileOutputStream } from '../../../../org/allbinary/logic/io/AbFileOutputStream.js';
 
     
-import { DataOutputStreamFactory } from "../../../../org/allbinary/logic/io/DataOutputStreamFactory.js";
+import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
 
     
-import { StreamUtil } from "../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -74,7 +74,7 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { IdGeneratorInterface } from "./IdGeneratorInterface.js";
+        import { IdGeneratorInterface } from './IdGeneratorInterface.js';
 
 export class UniqueIdGenerator
             extends Object

@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { CommonLabels } from "../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -60,10 +60,10 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageComparisonResultsListener } from "./ImageComparisonResultsListener.js";
-import { ImageComparisonResultsEvent } from "./ImageComparisonResultsEvent.js";
-import { ImageComparisonResult } from "./ImageComparisonResult.js";
-import { ComparisonImageInputOutput } from "./ComparisonImageInputOutput.js";
+        import { ImageComparisonResultsListener } from './ImageComparisonResultsListener.js';
+import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';
+import { ImageComparisonResult } from './ImageComparisonResult.js';
+import { ComparisonImageInputOutput } from './ComparisonImageInputOutput.js';
 
 export class SaveImageComparisonWorker
             extends Object

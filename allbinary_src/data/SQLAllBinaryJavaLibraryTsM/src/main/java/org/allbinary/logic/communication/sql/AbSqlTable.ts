@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -48,7 +48,7 @@ import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/Lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbSqlBasic } from "./AbSqlBasic.js";
+        import { AbSqlBasic } from './AbSqlBasic.js';
 
 export class AbSqlTable extends AbSqlBasic {
         

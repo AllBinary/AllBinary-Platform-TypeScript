@@ -17,31 +17,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { SelectionHudPaintable } from "../../../../../org/allbinary/game/layer/SelectionHudPaintable.js";
+import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { ProceduralAnimationInterfaceFactoryInterface } from "../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js";
+import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 
     
-import { Group } from "../../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { Rectangle } from "../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
+import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 
     
 
@@ -62,9 +62,9 @@ import { RemoteInfo } from "../../../../../org/allbinary/game/multiplayer/layer/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WaypointLayer } from "./WaypointLayer.js";
-import { WaypointInfoHudPaintableSingleton } from "./WaypointInfoHudPaintableSingleton.js";
-import { WaypointInfoHudPaintable } from "./WaypointInfoHudPaintable.js";
+        import { WaypointLayer } from './WaypointLayer.js';
+import { WaypointInfoHudPaintableSingleton } from './WaypointInfoHudPaintableSingleton.js';
+import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
 
 export class VisualWaypointLayer extends WaypointLayer {
         

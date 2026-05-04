@@ -18,45 +18,45 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../java/lang/Thread.js';
         
-import { Connection } from "../../../../../java/sql/Connection.js";
+import { Connection } from '../../../../../java/sql/Connection.js';
 
     
-import { ResultSet } from "../../../../../java/sql/ResultSet.js";
+import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 
     
-import { SQLException } from "../../../../../java/sql/SQLException.js";
+import { SQLException } from '../../../../../java/sql/SQLException.js';
 
     
-import { Statement } from "../../../../../java/sql/Statement.js";
+import { Statement } from '../../../../../java/sql/Statement.js';
 
     
-import { DatabaseConnectionInfoInterface } from "../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js";
+import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
 
     
-import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SqlConnectionPool } from "../../../../../org/allbinary/logic/communication/sql/connection/pool/SqlConnectionPool.js";
+import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communication/sql/connection/pool/SqlConnectionPool.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -77,9 +77,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SqlTypeStrings } from "./SqlTypeStrings.js";
-import { SqlStrings } from "./SqlStrings.js";
-import { ClassLoader } from "./ClassLoader.js";
+        import { SqlTypeStrings } from './SqlTypeStrings.js';
+import { SqlStrings } from './SqlStrings.js';
+import { ClassLoader } from './ClassLoader.js';
 
 export class AbSqlBasic
             extends Object

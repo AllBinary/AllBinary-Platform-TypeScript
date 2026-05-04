@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -46,10 +46,10 @@ import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScoresBase } from "./HighScoresBase.js";
-import { HighScores } from "./HighScores.js";
-import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
-import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
+        import { HighScoresBase } from './HighScoresBase.js';
+import { HighScores } from './HighScores.js';
+import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+import { HighScoresHelperBase } from './HighScoresHelperBase.js';
 
 export class NoHighScoresFactory extends HighScoresBase {
         

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
 

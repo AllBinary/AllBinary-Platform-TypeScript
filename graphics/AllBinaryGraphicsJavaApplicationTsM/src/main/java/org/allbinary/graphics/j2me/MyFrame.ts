@@ -18,90 +18,90 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../java/lang/System.js";
+            import { System } from '../../../../java/lang/System.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-            import { Runnable } from "../../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../java/util/HashMap.js';
 
     
-import { swing } from "../../../../javax/swing.js";
+import { swing } from '../../../../javax/swing.js';
 
     
-import { XslHelper } from "../../../../org/allbinary/data/tree/dom/XslHelper.js";
+import { XslHelper } from '../../../../org/allbinary/data/tree/dom/XslHelper.js';
 
     
-import { DomHelper } from "../../../../org/allbinary/dom/DomHelper.js";
+import { DomHelper } from '../../../../org/allbinary/dom/DomHelper.js';
 
     
-import { NewWorkAreaJDialog } from "../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js";
+import { NewWorkAreaJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js';
 
     
-import { RotateJDialog } from "../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js";
+import { RotateJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js';
 
     
-import { WorkAreaDom } from "../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js";
+import { WorkAreaDom } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js';
 
     
-import { WorkAreaJPanel } from "../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js";
+import { WorkAreaJPanel } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
 
     
-import { WorkAreaJPanelInterface } from "../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js";
+import { WorkAreaJPanelInterface } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
 
     
-import { MyCanvasEvent } from "../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js";
+import { MyCanvasEvent } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
 
     
-import { MyCanvasEventService } from "../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js";
+import { MyCanvasEventService } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
 
     
-import { MyCanvasEventSource } from "../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js";
+import { MyCanvasEventSource } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
 
     
-import { FileJDialog } from "../../../../org/allbinary/gui/dialog/FileJDialog.js";
+import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
 
     
-import { FileJDialogListenerInterface } from "../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js";
+import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
 
     
-import { HashMapJDialogListenerInterface } from "../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js";
+import { HashMapJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
 
     
-import { LOGGING } from "../../../../org/allbinary/log/LOGGING.js";
+import { LOGGING } from '../../../../org/allbinary/log/LOGGING.js';
 
     
-import { GuiLog } from "../../../../org/allbinary/logic/communication/log/GuiLog.js";
+import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../org/w3c/dom/Document.js';
 
     
 
@@ -122,27 +122,27 @@ import { Document } from "../../../../org/w3c/dom/Document.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JFrame } from "./JFrame.js";
-import { KeyListener } from "./KeyListener.js";
-import { Dimension } from "./Dimension.js";
-import { JToolBar } from "./JToolBar.js";
-import { JButton } from "./JButton.js";
-import { JPanel } from "./JPanel.js";
-import { JTabbedPane } from "./JTabbedPane.js";
-import { JLabel } from "./JLabel.js";
-import { JMenuBar } from "./JMenuBar.js";
-import { JMenu } from "./JMenu.js";
-import { JMenuItem } from "./JMenuItem.js";
-import { WindowAdapter } from "./WindowAdapter.js";
-import { WindowEvent } from "./WindowEvent.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { MouseAdapter } from "./MouseAdapter.js";
-import { MouseEvent } from "./MouseEvent.js";
-import { GridLayout } from "./GridLayout.js";
-import { ChangeListener } from "./ChangeListener.js";
-import { ChangeEvent } from "./ChangeEvent.js";
-import { KeyEvent } from "./KeyEvent.js";
+        import { JFrame } from './JFrame.js';
+import { KeyListener } from './KeyListener.js';
+import { Dimension } from './Dimension.js';
+import { JToolBar } from './JToolBar.js';
+import { JButton } from './JButton.js';
+import { JPanel } from './JPanel.js';
+import { JTabbedPane } from './JTabbedPane.js';
+import { JLabel } from './JLabel.js';
+import { JMenuBar } from './JMenuBar.js';
+import { JMenu } from './JMenu.js';
+import { JMenuItem } from './JMenuItem.js';
+import { WindowAdapter } from './WindowAdapter.js';
+import { WindowEvent } from './WindowEvent.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { MouseAdapter } from './MouseAdapter.js';
+import { MouseEvent } from './MouseEvent.js';
+import { GridLayout } from './GridLayout.js';
+import { ChangeListener } from './ChangeListener.js';
+import { ChangeEvent } from './ChangeEvent.js';
+import { KeyEvent } from './KeyEvent.js';
 
 export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerInterface, HashMapJDialogListenerInterface, java.awt.event.KeyListener {
         

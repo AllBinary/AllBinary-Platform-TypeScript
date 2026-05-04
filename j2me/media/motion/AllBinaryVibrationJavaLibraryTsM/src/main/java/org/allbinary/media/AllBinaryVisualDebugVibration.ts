@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Anchor } from "../../../org/allbinary/graphics/Anchor.js";
+import { Anchor } from '../../../org/allbinary/graphics/Anchor.js';
 
     
-import { DisplayInfoSingleton } from "../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js";
+import { DisplayInfoSingleton } from '../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
 
     
-import { MyFont } from "../../../org/allbinary/graphics/font/MyFont.js";
+import { MyFont } from '../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -57,7 +57,7 @@ import { TimeDelayHelper } from "../../../org/allbinary/time/TimeDelayHelper.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryVibrationME } from "./AllBinaryVibrationME.js";
+        import { AllBinaryVibrationME } from './AllBinaryVibrationME.js';
 
 export class AllBinaryVisualDebugVibration extends AllBinaryVibrationME {
         

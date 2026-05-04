@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
 
@@ -51,7 +51,7 @@ import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SpecialGameInputInterface } from "./SpecialGameInputInterface.js";
+        import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
 
 export class SpecialGameInput
             extends Object

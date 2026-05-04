@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { MultiGeographicMapBehavior } from "../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js";
+import { MultiGeographicMapBehavior } from '../../../../../org/allbinary/media/graphics/geography/map/MultiGeographicMapBehavior.js';
 
     
-import { Direction } from "../../../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionFactory } from "../../../../../org/allbinary/direction/DirectionFactory.js";
+import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
 
     
-import { BasicTerrainInfo } from "../../../../../org/allbinary/game/terrain/BasicTerrainInfo.js";
+import { BasicTerrainInfo } from '../../../../../org/allbinary/game/terrain/BasicTerrainInfo.js';
 
     
-import { TerrainEvent } from "../../../../../org/allbinary/game/terrain/TerrainEvent.js";
+import { TerrainEvent } from '../../../../../org/allbinary/game/terrain/TerrainEvent.js';
 
     
-import { TerrainEventCircularStaticPool } from "../../../../../org/allbinary/game/terrain/TerrainEventCircularStaticPool.js";
+import { TerrainEventCircularStaticPool } from '../../../../../org/allbinary/game/terrain/TerrainEventCircularStaticPool.js';
 
     
-import { TerrainEventHandler } from "../../../../../org/allbinary/game/terrain/TerrainEventHandler.js";
+import { TerrainEventHandler } from '../../../../../org/allbinary/game/terrain/TerrainEventHandler.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AngleFactory } from "../../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { BasicGeographicMap } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { BasicGeographicMapCellPositionFactory } from "../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js";
+import { BasicGeographicMapCellPositionFactory } from '../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
 
@@ -81,7 +81,7 @@ import { GeographicMapCellType } from "../../../../../org/allbinary/media/graphi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TopViewCharacterBehavior } from "./TopViewCharacterBehavior.js";
+        import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
 
 export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
         

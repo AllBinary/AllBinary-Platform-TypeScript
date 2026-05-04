@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CapturedImageInputOutput } from "../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js";
+import { CapturedImageInputOutput } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js';
 
     
-import { ComparisonImageInputOutput } from "../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js";
+import { ComparisonImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js';
 
     
-import { MotionRectanglesImageInputOutput } from "../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js";
+import { MotionRectanglesImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js';
 
     
-import { ImageIOInterface } from "../../../../../org/allbinary/media/image/io/ImageIOInterface.js";
+import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
 
     
 
@@ -54,7 +54,7 @@ import { ImageIOInterface } from "../../../../../org/allbinary/media/image/io/Im
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputImageType } from "./InputImageType.js";
+        import { InputImageType } from './InputImageType.js';
 
 export class InputImageIOInterfaceFactory
             extends Object

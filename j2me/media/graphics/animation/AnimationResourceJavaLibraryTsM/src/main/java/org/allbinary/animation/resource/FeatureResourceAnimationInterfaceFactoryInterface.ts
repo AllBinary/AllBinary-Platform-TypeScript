@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { GameFeatureControlledInterface } from "../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js";
+import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
 
     
-import { RectangleResourceFactoryInterface } from "../../../../org/allbinary/game/resource/RectangleResourceFactoryInterface.js";
+import { RectangleResourceFactoryInterface } from '../../../../org/allbinary/game/resource/RectangleResourceFactoryInterface.js';
 
     
 
@@ -49,7 +49,7 @@ import { RectangleResourceFactoryInterface } from "../../../../org/allbinary/gam
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ResourceAnimationInterfaceFactoryInterface } from "./ResourceAnimationInterfaceFactoryInterface.js";
+        import { ResourceAnimationInterfaceFactoryInterface } from './ResourceAnimationInterfaceFactoryInterface.js';
 
 export interface FeatureResourceAnimationInterfaceFactoryInterface extends ResourceAnimationInterfaceFactoryInterface, RectangleResourceFactoryInterface, GameFeatureControlledInterface {
         

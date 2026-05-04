@@ -18,36 +18,36 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { BufferedImage } from "../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { PoolInterface } from "../../../../../org/allbinary/logic/util/cache/PoolInterface.js";
+import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
 
     
-import { BufferedImageCacheable } from "../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js";
+import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
 
     
-import { BufferedImageInfo } from "../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js";
+import { BufferedImageInfo } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
 
     
-import { BufferedImageInfoFactory } from "../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js";
+import { BufferedImageInfoFactory } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
 
     
-import { BufferedImagePoolSingleton } from "../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js";
+import { BufferedImagePoolSingleton } from '../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
 
     
-import { PixelDelta } from "../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js";
+import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
 
     
 
@@ -68,7 +68,7 @@ import { PixelDelta } from "../../../../../org/allbinary/media/image/comparison/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageComparisonResult } from "./ImageComparisonResult.js";
+        import { ImageComparisonResult } from './ImageComparisonResult.js';
 
 export class ChangedPixelsUtil
             extends Object

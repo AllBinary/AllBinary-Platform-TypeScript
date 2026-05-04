@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { Image } from "../../../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { CellPosition } from "../../../../../../../org/allbinary/graphics/CellPosition.js";
+import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
 
     
-import { NullUtil } from "../../../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
 
     
 

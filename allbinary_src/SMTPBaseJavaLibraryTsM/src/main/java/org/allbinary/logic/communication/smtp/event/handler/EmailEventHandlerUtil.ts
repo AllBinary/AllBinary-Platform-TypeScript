@@ -18,43 +18,43 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { UserInterface } from "../../../../../../../org/allbinary/business/user/UserInterface.js";
+import { UserInterface } from '../../../../../../../org/allbinary/business/user/UserInterface.js';
 
     
-import { UserConfigurationInterface } from "../../../../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js";
+import { UserConfigurationInterface } from '../../../../../../../org/allbinary/business/user/modules/configuration/UserConfigurationInterface.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { UserEmailConfigurationInterface } from "../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js";
+import { UserEmailConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
 
     
-import { UserEmailEventsConfigurationInterface } from "../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationInterface.js";
+import { UserEmailEventsConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationInterface.js';
 
     
-import { UserEmailEventListenerInterface } from "../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js";
+import { UserEmailEventListenerInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
 
     
-import { UserEmailEventNameData } from "../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js";
+import { UserEmailEventNameData } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
 
     
-import { LogUserEmailEventListenerModule } from "../../../../../../../org/allbinary/logic/communication/smtp/event/modules/log/LogUserEmailEventListenerModule.js";
+import { LogUserEmailEventListenerModule } from '../../../../../../../org/allbinary/logic/communication/smtp/event/modules/log/LogUserEmailEventListenerModule.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
 
@@ -75,7 +75,7 @@ import { AbeClientInformationInterface } from "../../../../../../../org/allbinar
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { UserEmailEventHandler } from "./UserEmailEventHandler.js";
+        import { UserEmailEventHandler } from './UserEmailEventHandler.js';
 
 export class EmailEventHandlerUtil
             extends Object

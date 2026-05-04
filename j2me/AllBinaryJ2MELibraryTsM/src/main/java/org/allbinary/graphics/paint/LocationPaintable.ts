@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
 
@@ -43,7 +43,7 @@ import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LocationPaintableInterface } from "./LocationPaintableInterface.js";
+        import { LocationPaintableInterface } from './LocationPaintableInterface.js';
 
 export class LocationPaintable
             extends Object

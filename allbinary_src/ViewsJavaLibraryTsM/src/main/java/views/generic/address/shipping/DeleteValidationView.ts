@@ -18,33 +18,33 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { StreetAddressData } from "../../../../org/allbinary/business/user/address/StreetAddressData.js";
+import { StreetAddressData } from '../../../../org/allbinary/business/user/address/StreetAddressData.js';
 
     
-import { ShippingAddressesEntity } from "../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js";
+import { ShippingAddressesEntity } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
 
     
-import { ValidationComponentInterface } from "../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { TransformInfoHttpInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js";
+import { TransformInfoHttpInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../org/w3c/dom/Node.js';
 
     
 
@@ -65,7 +65,7 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ShippingAddressView } from "./ShippingAddressView.js";
+        import { ShippingAddressView } from './ShippingAddressView.js';
 
 export class DeleteValidationView extends ShippingAddressView implements ValidationComponentInterface {
         

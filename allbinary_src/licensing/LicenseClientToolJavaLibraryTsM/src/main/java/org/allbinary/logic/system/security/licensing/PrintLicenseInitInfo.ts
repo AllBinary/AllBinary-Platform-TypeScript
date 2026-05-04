@@ -18,27 +18,27 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../../java/lang/System.js";
+            import { System } from '../../../../../../java/lang/System.js';
         
-import { LicenseInitInfo } from "../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
+import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
 
     
-import { LicenseInitInfoUtil } from "../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js";
+import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
 
     
-import { FileFactory } from "../../../../../../org/allbinary/logic/io/file/FileFactory.js";
+import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
 
     
-import { PATH_GLOBALS } from "../../../../../../org/allbinary/globals/PATH_GLOBALS.js";
+import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

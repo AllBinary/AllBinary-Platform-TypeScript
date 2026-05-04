@@ -18,69 +18,69 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { ByteArrayInputStream } from "../../../../java/io/ByteArrayInputStream.js";
+import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
 
     
-import { ByteArrayOutputStream } from "../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { DataInputStream } from "../../../../java/io/DataInputStream.js";
+import { DataInputStream } from '../../../../java/io/DataInputStream.js';
 
     
-import { DataOutputStream } from "../../../../java/io/DataOutputStream.js";
+import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
 
     
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { RecordEnumeration } from "../../../../javax/microedition/rms/RecordEnumeration.js";
+import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
 
     
-import { RecordStore } from "../../../../javax/microedition/rms/RecordStore.js";
+import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
 
     
-import { BasicPersitance } from "../../../../org/allbinary/game/configuration/persistance/BasicPersitance.js";
+import { BasicPersitance } from '../../../../org/allbinary/game/configuration/persistance/BasicPersitance.js';
 
     
-import { NullRecordComparator } from "../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js";
+import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
 
     
-import { NullRecordFilter } from "../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js";
+import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
 
     
-import { NullRecordStore } from "../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js";
+import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
 
     
-import { PreLogUtil } from "../../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
+import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
 
     
 
@@ -101,9 +101,9 @@ import { HashtableUtil } from "../../../../org/allbinary/util/HashtableUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Input } from "./Input.js";
-import { GameKeyMappingFactory } from "./GameKeyMappingFactory.js";
-import { InputFactory } from "./InputFactory.js";
+        import { Input } from './Input.js';
+import { GameKeyMappingFactory } from './GameKeyMappingFactory.js';
+import { InputFactory } from './InputFactory.js';
 
 export class InputPersistance extends BasicPersitance {
         

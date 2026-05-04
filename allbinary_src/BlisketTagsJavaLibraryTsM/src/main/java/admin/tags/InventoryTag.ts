@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 
     
-import { Tag } from "../../javax/servlet/jsp/tagext/Tag.js";
+import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
 
     
-import { InventoryHelperFactory } from "../../admin/taghelpers/InventoryHelperFactory.js";
+import { InventoryHelperFactory } from '../../admin/taghelpers/InventoryHelperFactory.js';
 
     
-import { InventoryRequestHelperFactory } from "../../admin/taghelpers/InventoryRequestHelperFactory.js";
+import { InventoryRequestHelperFactory } from '../../admin/taghelpers/InventoryRequestHelperFactory.js';
 
     
-import { StoreFrontData } from "../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
 
@@ -60,9 +60,9 @@ import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
-import { ParentInventoryTagHelper } from "./ParentInventoryTagHelper.js";
-import { AbTagData } from "./AbTagData.js";
+        import { TableTag } from './TableTag.js';
+import { ParentInventoryTagHelper } from './ParentInventoryTagHelper.js';
+import { AbTagData } from './AbTagData.js';
 
 export class InventoryTag extends TableTag {
         

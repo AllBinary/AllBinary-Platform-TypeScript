@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-            import { Integer } from "../../java/lang/Integer.js";
+            import { Integer } from '../../java/lang/Integer.js';
         
-import { Method } from "../../java/lang/reflect/Method.js";
+import { Method } from '../../java/lang/reflect/Method.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { JspTagException } from "../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
 
     
-import { TagHelperFactoryInterface } from "../../admin/taghelpers/TagHelperFactoryInterface.js";
+import { TagHelperFactoryInterface } from '../../admin/taghelpers/TagHelperFactoryInterface.js';
 
     
-import { AbResponseHandler } from "../../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SqlStrings } from "../../org/allbinary/logic/communication/sql/SqlStrings.js";
+import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
 
     
-import { BooleanUtil } from "../../org/allbinary/logic/java/bool/BooleanUtil.js";
+import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
 
     
-import { StringMaker } from "../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringValidationUtil } from "../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { PropertiesTag } from "../../tags/PropertiesTag.js";
+import { PropertiesTag } from '../../tags/PropertiesTag.js';
 
     
 

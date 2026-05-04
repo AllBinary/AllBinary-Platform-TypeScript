@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CollidableCompositeLayer } from "../../../../org/allbinary/game/layer/CollidableCompositeLayer.js";
+import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 
     
-import { AllBinaryLayer } from "../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.js";
+import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
 
     
 
@@ -51,7 +51,7 @@ import { NamedInterface } from "../../../../org/allbinary/layer/NamedInterface.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollisionType } from "./CollisionType.js";
+        import { CollisionType } from './CollisionType.js';
 
 export interface CollidableInterface extends NamedInterface {
         

@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { GameFeatureImageCacheFactory } from "../../../../org/allbinary/image/GameFeatureImageCacheFactory.js";
+import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { ScreenRelationalUtil } from "../../../../org/allbinary/graphics/displayable/ScreenRelationalUtil.js";
+import { ScreenRelationalUtil } from '../../../../org/allbinary/graphics/displayable/ScreenRelationalUtil.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { ImageScaleUtil } from "../../../../org/allbinary/media/image/ImageScaleUtil.js";
+import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
 
     
-import { AndroidImageInterface } from "../../../../org/microemu/android/device/AndroidImageInterface.js";
+import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
 
     
 
@@ -69,8 +69,8 @@ import { AndroidImageInterface } from "../../../../org/microemu/android/device/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-import { ImageAnimation } from "./ImageAnimation.js";
+        import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
+import { ImageAnimation } from './ImageAnimation.js';
 
 export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends BaseImageAnimationFactory {
         

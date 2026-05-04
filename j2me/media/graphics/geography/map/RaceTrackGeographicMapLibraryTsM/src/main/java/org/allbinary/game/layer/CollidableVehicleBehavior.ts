@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PickedUpLayerInterface } from "../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js";
+import { PickedUpLayerInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
 
     
-import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { CollidableInterfaceCompositeInterface } from "../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js";
+import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 
     
-import { CollisionType } from "../../../../org/allbinary/game/collision/CollisionType.js";
+import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
 
     
-import { CollisionTypeFactory } from "../../../../org/allbinary/game/collision/CollisionTypeFactory.js";
+import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
 
     
-import { CollidableDestroyableDamageableBehavior } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js";
+import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
 
     
-import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js";
+import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
 
     
 
@@ -63,10 +63,10 @@ import { CollidableDestroyableDamageableLayer } from "../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollidableCompositeLayer } from "./CollidableCompositeLayer.js";
-import { VehiclePropertiesCompositeInterface } from "./VehiclePropertiesCompositeInterface.js";
-import { VehicleProperties } from "./VehicleProperties.js";
-import { VehicleFrictionProperties } from "./VehicleFrictionProperties.js";
+        import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
+import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
+import { VehicleProperties } from './VehicleProperties.js';
+import { VehicleFrictionProperties } from './VehicleFrictionProperties.js';
 
 export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBehavior {
         

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { ProgressCanvas } from "../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
+import { ProgressCanvas } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 
     
-import { ProgressCanvasFactory } from "../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { ImageCache } from "../../../org/allbinary/image/ImageCache.js";
+import { ImageCache } from '../../../org/allbinary/image/ImageCache.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -57,9 +57,9 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageLoadingProcessor } from "./BaseImageLoadingProcessor.js";
-import { ABRunnable } from "./ABRunnable.js";
-import { ImageThreadPool } from "./ImageThreadPool.js";
+        import { BaseImageLoadingProcessor } from './BaseImageLoadingProcessor.js';
+import { ABRunnable } from './ABRunnable.js';
+import { ImageThreadPool } from './ImageThreadPool.js';
 
 export class ConcurrentImageLoadingProcessor extends BaseImageLoadingProcessor {
         

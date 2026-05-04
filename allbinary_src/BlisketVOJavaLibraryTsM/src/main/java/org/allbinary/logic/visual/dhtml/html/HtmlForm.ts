@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { Vector } from "../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { StringUtil } from "../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { HtmlInput } from "../../../../../../org/allbinary/logic/visual/dhtml/html/input/HtmlInput.js";
+import { HtmlInput } from '../../../../../../org/allbinary/logic/visual/dhtml/html/input/HtmlInput.js';
 
     
-import { HtmlTable } from "../../../../../../org/allbinary/logic/visual/dhtml/html/table/HtmlTable.js";
+import { HtmlTable } from '../../../../../../org/allbinary/logic/visual/dhtml/html/table/HtmlTable.js';
 
     
 

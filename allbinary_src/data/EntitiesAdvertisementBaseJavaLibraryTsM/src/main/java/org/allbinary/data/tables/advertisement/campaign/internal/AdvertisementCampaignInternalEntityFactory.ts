@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -48,8 +48,8 @@ import { CommonStrings } from "../../../../../../../org/allbinary/string/CommonS
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AdvertisementCampaignInternalEntity } from "./AdvertisementCampaignInternalEntity.js";
-import { AdvertisementCampaignInternalEntityInterface } from "./AdvertisementCampaignInternalEntityInterface.js";
+        import { AdvertisementCampaignInternalEntity } from './AdvertisementCampaignInternalEntity.js';
+import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
 
 export class AdvertisementCampaignInternalEntityFactory
             extends Object

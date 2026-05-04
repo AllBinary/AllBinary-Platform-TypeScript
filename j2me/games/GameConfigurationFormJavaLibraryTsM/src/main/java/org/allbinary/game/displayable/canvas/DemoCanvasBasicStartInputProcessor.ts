@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { NullCanvas } from "../../../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { RunnableCanvas } from "../../../../../org/allbinary/canvas/RunnableCanvas.js";
+import { RunnableCanvas } from '../../../../../org/allbinary/canvas/RunnableCanvas.js';
 
     
-import { GameCommandsFactory } from "../../../../../org/allbinary/game/commands/GameCommandsFactory.js";
+import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { GameInputStrings } from "../../../../../org/allbinary/game/input/GameInputStrings.js";
+import { GameInputStrings } from '../../../../../org/allbinary/game/input/GameInputStrings.js';
 
     
-import { GameKeyEvent } from "../../../../../org/allbinary/game/input/event/GameKeyEvent.js";
+import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -66,7 +66,7 @@ import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicMenuInputProcessor } from "./BasicMenuInputProcessor.js";
+        import { BasicMenuInputProcessor } from './BasicMenuInputProcessor.js';
 
 export class DemoCanvasBasicStartInputProcessor extends BasicMenuInputProcessor {
         

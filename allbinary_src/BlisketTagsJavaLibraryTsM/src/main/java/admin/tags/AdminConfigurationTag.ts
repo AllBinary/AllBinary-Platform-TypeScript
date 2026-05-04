@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { AdminConfigurationHelperFactory } from "../../admin/taghelpers/AdminConfigurationHelperFactory.js";
+import { AdminConfigurationHelperFactory } from '../../admin/taghelpers/AdminConfigurationHelperFactory.js';
 
     
-import { AdminConfigurationRequestHelperFactory } from "../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js";
+import { AdminConfigurationRequestHelperFactory } from '../../admin/taghelpers/AdminConfigurationRequestHelperFactory.js';
 
     
 
@@ -46,7 +46,7 @@ import { AdminConfigurationRequestHelperFactory } from "../../admin/taghelpers/A
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TableTag } from "./TableTag.js";
+        import { TableTag } from './TableTag.js';
 
 export class AdminConfigurationTag extends TableTag {
         

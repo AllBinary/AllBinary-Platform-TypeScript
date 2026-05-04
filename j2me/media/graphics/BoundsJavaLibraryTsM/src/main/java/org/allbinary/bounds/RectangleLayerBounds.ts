@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
 
     
 
@@ -43,8 +43,8 @@ import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LayerBounds } from "./LayerBounds.js";
-import { BoundsVisitorInterface } from "./BoundsVisitorInterface.js";
+        import { LayerBounds } from './LayerBounds.js';
+import { BoundsVisitorInterface } from './BoundsVisitorInterface.js';
 
 export class RectangleLayerBounds extends LayerBounds {
         

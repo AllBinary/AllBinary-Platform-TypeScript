@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CollidableBaseBehavior } from "../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js";
+import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
 
     
-import { CollidableInterfaceCompositeInterface } from "../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js";
+import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 
     
-import { LayerManager } from "../../../../../org/allbinary/layer/LayerManager.js";
+import { LayerManager } from '../../../../../org/allbinary/layer/LayerManager.js';
 
     
 

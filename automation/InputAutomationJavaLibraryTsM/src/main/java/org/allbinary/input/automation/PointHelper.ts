@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
 
@@ -43,9 +43,9 @@ import { awt } from "../../../../java/awt.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PointFactory } from "./PointFactory.js";
-import { Point } from "./Point.js";
-import { Rectangle } from "./Rectangle.js";
+        import { PointFactory } from './PointFactory.js';
+import { Point } from './Point.js';
+import { Rectangle } from './Rectangle.js';
 
 export class PointHelper
             extends Object

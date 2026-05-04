@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { StoreFrontData } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserData } from "../../../../../../../../org/allbinary/business/user/UserData.js";
+import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
 
     
-import { PaymentData } from "../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js";
+import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
 
     
-import { SuperCrypt } from "../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js";
+import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
 
     
-import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -66,9 +66,9 @@ import { StringUtil } from "../../../../../../../../org/allbinary/logic/string/S
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaymentGatewayInterface } from "./PaymentGatewayInterface.js";
-import { PaymentGatewayData } from "./PaymentGatewayData.js";
-import { PaymentGatewayPrimaryKey } from "./PaymentGatewayPrimaryKey.js";
+        import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
+import { PaymentGatewayData } from './PaymentGatewayData.js';
+import { PaymentGatewayPrimaryKey } from './PaymentGatewayPrimaryKey.js';
 
 export class PaymentGateway
             extends Object

@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { StoreFront } from "../../org/allbinary/business/context/modules/storefront/StoreFront.js";
+import { StoreFront } from '../../org/allbinary/business/context/modules/storefront/StoreFront.js';
 
     
-import { StoreFrontData } from "../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { StoreFrontFactory } from "../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js";
+import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
 
     
-import { StoreFrontInterface } from "../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { StringUtil } from "../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Replace } from "../../org/allbinary/logic/string/regex/replace/Replace.js";
+import { Replace } from '../../org/allbinary/logic/string/regex/replace/Replace.js';
 
     
-import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -67,7 +67,7 @@ import { CommonSeps } from "../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TagHelper } from "./TagHelper.js";
+        import { TagHelper } from './TagHelper.js';
 
 export class StoreFrontHelper extends TagHelper {
         

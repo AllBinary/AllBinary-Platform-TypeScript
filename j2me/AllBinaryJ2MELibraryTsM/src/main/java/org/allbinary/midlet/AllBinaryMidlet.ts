@@ -18,64 +18,64 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Hashtable } from "../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../java/util/Hashtable.js';
 
     
-import { Command } from "../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../javax/microedition/lcdui/Command.js';
 
     
-import { CommandListener } from "../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Display } from "../../../javax/microedition/lcdui/Display.js";
+import { Display } from '../../../javax/microedition/lcdui/Display.js';
 
     
-import { Displayable } from "../../../javax/microedition/lcdui/Displayable.js";
+import { Displayable } from '../../../javax/microedition/lcdui/Displayable.js';
 
     
-import { NullCanvas } from "../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
+import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 
     
-import { MIDletStateChangeException } from "../../../javax/microedition/midlet/MIDletStateChangeException.js";
+import { MIDletStateChangeException } from '../../../javax/microedition/midlet/MIDletStateChangeException.js';
 
     
-import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
 
     
-import { ForcedLogUtil } from "../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PreLogUtil } from "../../../org/allbinary/logic/communication/log/PreLogUtil.js";
+import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { EventStrings } from "../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
-import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Memory } from "../../../org/allbinary/system/Memory.js";
+import { Memory } from '../../../org/allbinary/system/Memory.js';
 
     
 

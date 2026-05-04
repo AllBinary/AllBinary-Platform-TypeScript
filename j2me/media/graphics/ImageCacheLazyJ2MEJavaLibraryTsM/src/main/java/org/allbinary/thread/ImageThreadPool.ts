@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Runnable } from "../../../java/lang/Runnable.js";
+            import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -54,7 +54,7 @@ import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ThreadPool } from "./ThreadPool.js";
+        import { ThreadPool } from './ThreadPool.js';
 
 export class ImageThreadPool extends ThreadPool {
         

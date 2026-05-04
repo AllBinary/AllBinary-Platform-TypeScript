@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Level } from "../../../../../java/util/logging/Level.js";
+import { Level } from '../../../../../java/util/logging/Level.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Logger } from "../../../../../java/util/logging/Logger.js";
+import { Logger } from '../../../../../java/util/logging/Logger.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -54,9 +54,9 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogFormatUtil } from "./LogFormatUtil.js";
-import { PreLogUtil } from "./PreLogUtil.js";
-import { Log } from "./Log.js";
+        import { LogFormatUtil } from './LogFormatUtil.js';
+import { PreLogUtil } from './PreLogUtil.js';
+import { Log } from './Log.js';
 
 /*actual*/ export class LogUtil
             extends Object

@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecimal.js";
+import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
 
     
 
@@ -43,7 +43,7 @@ import { BasicDecimal } from "../../../../../org/allbinary/logic/math/BasicDecim
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MathVectorInterface } from "./MathVectorInterface.js";
+        import { MathVectorInterface } from './MathVectorInterface.js';
 
 export class MathVector
             extends Object

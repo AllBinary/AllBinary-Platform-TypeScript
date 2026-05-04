@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { StringUtil } from "../../../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js";
+import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
 
     
 
@@ -49,7 +49,7 @@ import { HtmlTag } from "../../../../../../../org/allbinary/logic/visual/dhtml/h
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HtmlCell } from "./HtmlCell.js";
+        import { HtmlCell } from './HtmlCell.js';
 
 export class HtmlRow extends HtmlTag {
         

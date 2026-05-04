@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../../../java/lang/Object.js';
 
 
         
-import { MouseEvent } from "../../../../../../../../../../java/awt/event/MouseEvent.js";
+import { MouseEvent } from '../../../../../../../../../../java/awt/event/MouseEvent.js';
 
     
-import { swing } from "../../../../../../../../../../javax/swing.js";
+import { swing } from '../../../../../../../../../../javax/swing.js';
 
     
-import { DefaultMutableTreeNode } from "../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js";
+import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
 
     
-import { DefaultTreeModel } from "../../../../../../../../../../javax/swing/tree/DefaultTreeModel.js";
+import { DefaultTreeModel } from '../../../../../../../../../../javax/swing/tree/DefaultTreeModel.js';
 
     
-import { TreePath } from "../../../../../../../../../../javax/swing/tree/TreePath.js";
+import { TreePath } from '../../../../../../../../../../javax/swing/tree/TreePath.js';
 
     
-import { JTreeInterface } from "../../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterface.js";
+import { JTreeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterface.js';
 
     
-import { CustomTreeNodeInterface } from "../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js";
+import { CustomTreeNodeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
 
     
-import { LogUtil } from "../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -67,15 +67,15 @@ import { CommonStrings } from "../../../../../../../../../../org/allbinary/strin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { GenericProfileActionScript } from "./GenericProfileActionScript.js";
-import { JTree } from "./JTree.js";
-import { JScrollPane } from "./JScrollPane.js";
-import { GridLayout } from "./GridLayout.js";
-import { Dimension } from "./Dimension.js";
-import { MouseAdapter } from "./MouseAdapter.js";
-import { JPopupMenu } from "./JPopupMenu.js";
-import { JComponent } from "./JComponent.js";
+        import { JPanel } from './JPanel.js';
+import { GenericProfileActionScript } from './GenericProfileActionScript.js';
+import { JTree } from './JTree.js';
+import { JScrollPane } from './JScrollPane.js';
+import { GridLayout } from './GridLayout.js';
+import { Dimension } from './Dimension.js';
+import { MouseAdapter } from './MouseAdapter.js';
+import { JPopupMenu } from './JPopupMenu.js';
+import { JComponent } from './JComponent.js';
 
 export class GenericProfileActionScriptJPanel extends javax.swing.JPanel implements JTreeInterface {
         

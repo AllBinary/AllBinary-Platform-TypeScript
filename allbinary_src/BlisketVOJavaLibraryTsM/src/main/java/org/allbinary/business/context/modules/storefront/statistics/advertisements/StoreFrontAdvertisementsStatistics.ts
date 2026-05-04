@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
-import { StoreFrontInterface } from "../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
 
@@ -51,7 +51,7 @@ import { StoreFrontInterface } from "../../../../../../../../org/allbinary/busin
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { StoreFrontAdvertisementsStatisticsInterface } from "./StoreFrontAdvertisementsStatisticsInterface.js";
+        import { StoreFrontAdvertisementsStatisticsInterface } from './StoreFrontAdvertisementsStatisticsInterface.js';
 
 export class StoreFrontAdvertisementsStatistics
             extends Object

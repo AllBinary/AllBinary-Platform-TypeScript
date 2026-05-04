@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
@@ -40,8 +40,8 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageCacheFactory } from "./ImageCacheFactory.js";
-import { ImageCache } from "./ImageCache.js";
+        import { ImageCacheFactory } from './ImageCacheFactory.js';
+import { ImageCache } from './ImageCache.js';
 
 export class GameFeatureImageCacheFactory
             extends Object

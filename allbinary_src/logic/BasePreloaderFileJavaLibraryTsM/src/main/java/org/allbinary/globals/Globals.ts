@@ -18,26 +18,26 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringValidationUtil } from "../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { WebappClassLoaderInfo } from "../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js";
+import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -58,8 +58,8 @@ import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AppUrlGlobals } from "./AppUrlGlobals.js";
-import { ClassLoader } from "./ClassLoader.js";
+        import { AppUrlGlobals } from './AppUrlGlobals.js';
+import { ClassLoader } from './ClassLoader.js';
 
 export class Globals
             extends Object

@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../../java/lang/System.js";
+            import { System } from '../../../../../../java/lang/System.js';
         
-import { BufferedReader } from "../../../../../../java/io/BufferedReader.js";
+import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
 
     
-import { InputStreamReader } from "../../../../../../java/io/InputStreamReader.js";
+import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
 
     
-import { LicenseInitInfo } from "../../../../../../org/allbinary/business/init/LicenseInitInfo.js";
+import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
 
     
-import { LicenseInitInfoUtil } from "../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js";
+import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
 
     
-import { FileFactory } from "../../../../../../org/allbinary/logic/io/file/FileFactory.js";
+import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
 
     
-import { PATH_GLOBALS } from "../../../../../../org/allbinary/globals/PATH_GLOBALS.js";
+import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
 
     
-import { File } from "../../../../../../java/io/File.js";
+import { File } from '../../../../../../java/io/File.js';
 
     
-import { FileReader } from "../../../../../../java/io/FileReader.js";
+import { FileReader } from '../../../../../../java/io/FileReader.js';
 
     
-import { LineNumberReader } from "../../../../../../java/io/LineNumberReader.js";
+import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
 
     
-import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -74,8 +74,8 @@ import { BasicArrayList } from "../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicArrayListD } from "./BasicArrayListD.js";
-import { PrintLicenseInitInfo } from "./PrintLicenseInitInfo.js";
+        import { BasicArrayListD } from './BasicArrayListD.js';
+import { PrintLicenseInitInfo } from './PrintLicenseInitInfo.js';
 
 export class SetLicenseInitInfo
             extends Object

@@ -20,32 +20,32 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { List } from "../../../java/util/List.js";
+import { List } from '../../../java/util/List.js';
 
     
-import { ActivityManager } from "../../../android/app/ActivityManager.js";
+import { ActivityManager } from '../../../android/app/ActivityManager.js';
 
     
-import { RunningServiceInfo } from "../../../android/app/ActivityManager/RunningServiceInfo.js";
+import { RunningServiceInfo } from '../../../android/app/ActivityManager/RunningServiceInfo.js';
 
     
-import { ComponentName } from "../../../android/content/ComponentName.js";
+import { ComponentName } from '../../../android/content/ComponentName.js';
 
     
-import { Context } from "../../../android/content/Context.js";
+import { Context } from '../../../android/content/Context.js';
 
     
-import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 

@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { AngleFactory } from "../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
 
     
-import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 
     
-import { ScaleProperties } from "../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
 
     
-import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -57,12 +57,12 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnimationInterfaceFactoryInterface } from "./AnimationInterfaceFactoryInterface.js";
-import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
-import { RotationAnimation } from "./RotationAnimation.js";
-import { NullRotationAnimation } from "./NullRotationAnimation.js";
-import { AnimationBehavior } from "./AnimationBehavior.js";
-import { Animation } from "./Animation.js";
+        import { AnimationInterfaceFactoryInterface } from './AnimationInterfaceFactoryInterface.js';
+import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
+import { RotationAnimation } from './RotationAnimation.js';
+import { NullRotationAnimation } from './NullRotationAnimation.js';
+import { AnimationBehavior } from './AnimationBehavior.js';
+import { Animation } from './Animation.js';
 
 export class NullRotationAnimationFactory
             extends Object

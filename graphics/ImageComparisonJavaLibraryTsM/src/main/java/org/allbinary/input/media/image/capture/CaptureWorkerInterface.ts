@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-import { BasicEventHandlerInterface } from "../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandlerInterface.js";
+import { BasicEventHandlerInterface } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandlerInterface.js';
 
     
-import { RunnableInterface } from "../../../../../../org/allbinary/thread/RunnableInterface.js";
+import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
 
     
 

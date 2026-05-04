@@ -18,57 +18,57 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicGroupFactory } from "../../../org/allbinary/game/identification/BasicGroupFactory.js";
+import { BasicGroupFactory } from '../../../org/allbinary/game/identification/BasicGroupFactory.js';
 
     
-import { Group } from "../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../org/allbinary/game/identification/Group.js';
 
     
-import { GPoint } from "../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
 
     
-import { Rectangle } from "../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { RectangleFactory } from "../../../org/allbinary/graphics/RectangleFactory.js";
+import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFactory.js';
 
     
-import { OpenGLFeatureUtil } from "../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js";
+import { OpenGLFeatureUtil } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
 
     
-import { TsUtil } from "../../../org/allbinary/TsUtil.js";
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { PositionStrings } from "../../../org/allbinary/math/PositionStrings.js";
+import { PositionStrings } from '../../../org/allbinary/math/PositionStrings.js';
 
     
-import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { ViewPosition } from "../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
 
     
-import { ViewPositionEvent } from "../../../org/allbinary/view/event/ViewPositionEvent.js";
+import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositionEvent.js';
 
     
 
@@ -89,8 +89,8 @@ import { ViewPositionEvent } from "../../../org/allbinary/view/event/ViewPositio
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Layer } from "./Layer.js";
-import { LayerInterface } from "./LayerInterface.js";
+        import { Layer } from './Layer.js';
+import { LayerInterface } from './LayerInterface.js';
 
 export class AllBinaryLayer extends Layer implements LayerInterface {
         

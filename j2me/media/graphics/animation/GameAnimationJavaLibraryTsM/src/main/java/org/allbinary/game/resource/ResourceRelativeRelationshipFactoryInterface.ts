@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GameFeatureControlledInterface } from "../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js";
+import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
 
     
-import { RelativeRelationship } from "../../../../org/allbinary/graphics/RelativeRelationship.js";
+import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

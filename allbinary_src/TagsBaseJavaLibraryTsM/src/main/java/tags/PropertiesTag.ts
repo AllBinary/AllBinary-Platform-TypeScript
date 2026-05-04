@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-import { HashMap } from "../java/util/HashMap.js";
+import { HashMap } from '../java/util/HashMap.js';
 
     
-import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -46,7 +46,7 @@ import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CommandTag } from "./CommandTag.js";
+        import { CommandTag } from './CommandTag.js';
 
 export class PropertiesTag extends CommandTag {
         

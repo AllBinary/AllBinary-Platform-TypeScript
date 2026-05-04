@@ -18,64 +18,64 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../java/util/HashMap.js";
+import { HashMap } from '../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../java/util/Vector.js";
+import { Vector } from '../../../java/util/Vector.js';
 
     
-import { StoreFrontInterface } from "../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js";
+import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
 
     
-import { BasicItemData } from "../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js";
+import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
 
     
-import { StaticPagesEntity } from "../../../org/allbinary/data/tables/staticpages/StaticPagesEntity.js";
+import { StaticPagesEntity } from '../../../org/allbinary/data/tables/staticpages/StaticPagesEntity.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SearchParams } from "../../../org/allbinary/logic/control/search/SearchParams.js";
+import { SearchParams } from '../../../org/allbinary/logic/control/search/SearchParams.js';
 
     
-import { SearchRequest } from "../../../org/allbinary/logic/control/search/SearchRequest.js";
+import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
 
     
-import { InputOutputTypeData } from "../../../org/allbinary/logic/io/InputOutputTypeData.js";
+import { InputOutputTypeData } from '../../../org/allbinary/logic/io/InputOutputTypeData.js';
 
     
-import { AbPathData } from "../../../org/allbinary/logic/io/path/AbPathData.js";
+import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringValidationUtil } from "../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { Replace } from "../../../org/allbinary/logic/string/regex/replace/Replace.js";
+import { Replace } from '../../../org/allbinary/logic/string/regex/replace/Replace.js';
 
     
-import { AbeClientInformationInterface } from "../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { ServiceClientInformationInterfaceFactory } from "../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js";
+import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { InventoryViewSearchInterface } from "../../../views/admin/inventory/listings/InventoryViewSearchInterface.js";
+import { InventoryViewSearchInterface } from '../../../views/admin/inventory/listings/InventoryViewSearchInterface.js';
 
     
 
@@ -96,8 +96,8 @@ import { InventoryViewSearchInterface } from "../../../views/admin/inventory/lis
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InventorySearchUtil } from "./InventorySearchUtil.js";
-import { InventorySearchProductUtil } from "./InventorySearchProductUtil.js";
+        import { InventorySearchUtil } from './InventorySearchUtil.js';
+import { InventorySearchProductUtil } from './InventorySearchProductUtil.js';
 
 export class InventorySearch
             extends Object

@@ -4,22 +4,22 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SoftwareInformation } from "../../../../org/allbinary/logic/system/SoftwareInformation.js";
+import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
 
@@ -40,13 +40,13 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HighScoresBase } from "./HighScoresBase.js";
-import { HighScores } from "./HighScores.js";
-import { HighScoresResultsListener } from "./HighScoresResultsListener.js";
-import { RecordStoreHighScores } from "./RecordStoreHighScores.js";
-import { ScoreComparator } from "./ScoreComparator.js";
-import { HighScoresHelper2 } from "./HighScoresHelper2.js";
-import { HighScoresHelperBase } from "./HighScoresHelperBase.js";
+        import { HighScoresBase } from './HighScoresBase.js';
+import { HighScores } from './HighScores.js';
+import { HighScoresResultsListener } from './HighScoresResultsListener.js';
+import { RecordStoreHighScores } from './RecordStoreHighScores.js';
+import { ScoreComparator } from './ScoreComparator.js';
+import { HighScoresHelper2 } from './HighScoresHelper2.js';
+import { HighScoresHelperBase } from './HighScoresHelperBase.js';
 
 export class BasicHighScoresFactory extends HighScoresBase {
         

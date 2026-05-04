@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-            import { Integer } from "../../java/lang/Integer.js";
+            import { Integer } from '../../java/lang/Integer.js';
         
-import { HashMap } from "../../java/util/HashMap.js";
+import { HashMap } from '../../java/util/HashMap.js';
 
     
-import { HttpServletRequest } from "../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { PageContext } from "../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
 
     
-import { Portion } from "../../org/allbinary/business/installer/Portion.js";
+import { Portion } from '../../org/allbinary/business/installer/Portion.js';
 
     
-import { PaymentFactory } from "../../org/allbinary/business/user/commerce/money/payment/PaymentFactory.js";
+import { PaymentFactory } from '../../org/allbinary/business/user/commerce/money/payment/PaymentFactory.js';
 
     
-import { PaymentInterface } from "../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js";
+import { PaymentInterface } from '../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
 
     
-import { PaymentEntity } from "../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js";
+import { PaymentEntity } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntity.js';
 
     
-import { PaymentEntityFactory } from "../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js";
+import { PaymentEntityFactory } from '../../org/allbinary/data/tables/user/commerce/money/payment/PaymentEntityFactory.js';
 
     
-import { WeblisketSession } from "../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js";
+import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlTableUtil } from "../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js";
+import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
 
@@ -80,7 +80,7 @@ import { LicensingException } from "../../org/allbinary/logic/system/security/li
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Table } from "./Table.js";
+        import { Table } from './Table.js';
 
 export class PaymentHelper extends Table {
         

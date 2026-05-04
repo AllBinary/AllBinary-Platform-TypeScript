@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { WeaponLayerCircularPool } from "../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js";
+import { WeaponLayerCircularPool } from '../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
 
     
-import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js";
+import { ViewPositionFactoryInterface } from '../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
 
     
 
@@ -48,8 +48,8 @@ import { ViewPositionFactoryInterface } from "../../../../../../org/allbinary/vi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MineCountedPickedUpLayerInterfaceFactory } from "./MineCountedPickedUpLayerInterfaceFactory.js";
-import { MineLayerFactory } from "./MineLayerFactory.js";
+        import { MineCountedPickedUpLayerInterfaceFactory } from './MineCountedPickedUpLayerInterfaceFactory.js';
+import { MineLayerFactory } from './MineLayerFactory.js';
 
 export class MineLayerCircularStaticPool
             extends Object

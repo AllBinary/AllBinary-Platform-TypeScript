@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { OrderHistoryData } from "../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js";
+import { OrderHistoryData } from '../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
 
     
 

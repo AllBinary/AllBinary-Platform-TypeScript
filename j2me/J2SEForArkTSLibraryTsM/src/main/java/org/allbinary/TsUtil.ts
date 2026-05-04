@@ -12,7 +12,7 @@
                 *   
                 *  Created By: Travis Berthelot    
         */
-import { Object } from "../../java/lang/Object.js";
+import { Object } from '../../java/lang/Object.js';
 
 export class TsUtil
             //extends Object

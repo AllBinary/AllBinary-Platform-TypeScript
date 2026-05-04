@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
 
@@ -43,9 +43,9 @@ import { swing } from "../../../../../javax/swing.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SwingWorker } from "./SwingWorker.js";
-import { JList } from "./JList.js";
-import { ListModel } from "./ListModel.js";
+        import { SwingWorker } from './SwingWorker.js';
+import { JList } from './JList.js';
+import { ListModel } from './ListModel.js';
 
 export class JListSwingWorker extends SwingWorker {
         

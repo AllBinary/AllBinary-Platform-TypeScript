@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -52,8 +52,8 @@ import { CommonSeps } from "../../../../../../../org/allbinary/string/CommonSeps
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameSkillType } from "./GameSkillType.js";
-import { GameSkillPropertyInterface } from "./GameSkillPropertyInterface.js";
+        import { GameSkillType } from './GameSkillType.js';
+import { GameSkillPropertyInterface } from './GameSkillPropertyInterface.js';
 
 export class GameSkill
             extends Object

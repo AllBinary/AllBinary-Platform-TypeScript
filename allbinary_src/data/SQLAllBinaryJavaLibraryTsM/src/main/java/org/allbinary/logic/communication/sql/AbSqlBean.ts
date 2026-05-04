@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ResultSet } from "../../../../../java/sql/ResultSet.js";
+import { ResultSet } from '../../../../../java/sql/ResultSet.js';
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Set } from "../../../../../java/util/Set.js";
+import { Set } from '../../../../../java/util/Set.js';
 
     
-import { DbConnectionInfo } from "../../../../../org/allbinary/business/init/db/DbConnectionInfo.js";
+import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -60,7 +60,7 @@ import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMak
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbSqlRow } from "./AbSqlRow.js";
+        import { AbSqlRow } from './AbSqlRow.js';
 
 export class AbSqlBean extends AbSqlRow {
         

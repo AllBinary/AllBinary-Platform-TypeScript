@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerFactoryInterface } from "../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js";
+import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
 
     
 
@@ -48,7 +48,7 @@ import { AllBinaryLayerFactoryInterface } from "../../../../../org/allbinary/lay
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackPickupLayer } from "./RaceTrackPickupLayer.js";
+        import { RaceTrackPickupLayer } from './RaceTrackPickupLayer.js';
 
 export class RaceTrackPickupLayerFactory
             extends Object

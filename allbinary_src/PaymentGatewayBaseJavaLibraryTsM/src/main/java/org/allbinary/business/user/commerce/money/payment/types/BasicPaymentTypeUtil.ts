@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../../java/util/Vector.js';
 
     
 
@@ -45,7 +45,7 @@ import { Vector } from "../../../../../../../../java/util/Vector.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicPaymentType } from "./BasicPaymentType.js";
+        import { BasicPaymentType } from './BasicPaymentType.js';
 
 export class BasicPaymentTypeUtil
             extends Object

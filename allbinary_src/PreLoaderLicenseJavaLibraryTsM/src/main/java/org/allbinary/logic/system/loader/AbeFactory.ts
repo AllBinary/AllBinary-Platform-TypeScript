@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Constructor } from "../../../../../java/lang/reflect/Constructor.js";
+import { Constructor } from '../../../../../java/lang/reflect/Constructor.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ConstructorUtil } from "../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js";
+import { ConstructorUtil } from '../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbKeys } from "../../../../../org/allbinary/logic/system/security/AbKeys.js";
+import { AbKeys } from '../../../../../org/allbinary/logic/system/security/AbKeys.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { LicensingException } from "../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
 
@@ -66,9 +66,9 @@ import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WebappClassLoaderInfo } from "./WebappClassLoaderInfo.js";
-import { ClassLoader } from "./ClassLoader.js";
-import { AbeClassLoader } from "./AbeClassLoader.js";
+        import { WebappClassLoaderInfo } from './WebappClassLoaderInfo.js';
+import { ClassLoader } from './ClassLoader.js';
+import { AbeClassLoader } from './AbeClassLoader.js';
 
 export class AbeFactory
             extends Object

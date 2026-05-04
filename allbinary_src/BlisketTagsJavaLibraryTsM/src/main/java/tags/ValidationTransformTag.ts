@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../java/lang/Object.js";
+            import { Object } from '../java/lang/Object.js';
 
 
         
-            import { Exception } from "../java/lang/Exception.js";
+            import { Exception } from '../java/lang/Exception.js';
         
-import { Method } from "../java/lang/reflect/Method.js";
+import { Method } from '../java/lang/reflect/Method.js';
 
     
-import { HttpServletRequest } from "../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../javax/servlet/http/HttpServletRequest.js';
 
     
-import { JspTagException } from "../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
 
     
-import { AbResponseHandler } from "../org/allbinary/logic/communication/http/request/AbResponseHandler.js";
+import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
 
     
-import { LogUtil } from "../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../org/allbinary/logic/string/StringMaker.js';
 
     
-import { LicensingException } from "../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { ValidatedViewHelperFactory } from "../taghelpers/ValidatedViewHelperFactory.js";
+import { ValidatedViewHelperFactory } from '../taghelpers/ValidatedViewHelperFactory.js';
 
     
 
@@ -66,7 +66,7 @@ import { ValidatedViewHelperFactory } from "../taghelpers/ValidatedViewHelperFac
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TransformTag } from "./TransformTag.js";
+        import { TransformTag } from './TransformTag.js';
 
 export class ValidationTransformTag extends TransformTag {
         

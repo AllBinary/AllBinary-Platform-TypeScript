@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { GL } from "../../../javax/microedition/khronos/opengles/GL.js";
+import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
 
     
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { BasicColorSetUtil } from "../../../org/allbinary/graphics/color/BasicColorSetUtil.js";
+import { BasicColorSetUtil } from '../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
 
     
-import { OpenGLSurfaceChangedInterface } from "../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js";
+import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
 
     
 
@@ -60,7 +60,7 @@ import { OpenGLSurfaceChangedInterface } from "../../../org/allbinary/image/open
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AnimationInterface } from "./AnimationInterface.js";
+        import { AnimationInterface } from './AnimationInterface.js';
 
 export class Animation
             extends Object

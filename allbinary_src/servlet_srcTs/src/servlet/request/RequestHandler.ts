@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../java/lang/Exception.js";
+            import { Exception } from '../../java/lang/Exception.js';
         
-import { io } from "../../java/io.js";
+import { io } from '../../java/io.js';
 
     
-import { net } from "../../java/net.js";
+import { net } from '../../java/net.js';
 
     
-import { servlet } from "../../javax/servlet.js";
+import { servlet } from '../../javax/servlet.js';
 
     
-import { http } from "../../javax/servlet/http.js";
+import { http } from '../../javax/servlet/http.js';
 
     
-import { LicensingException } from "../../org/allbinary/logic/system/security/licensing/LicensingException.js";
+import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
 
     
-import { LogUtil } from "../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { WorkFlowInterface } from "../../org/allbinary/logic/control/workflow/WorkFlowInterface.js";
+import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
 
     
-import { RequestWorkFlowFactory } from "../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js";
+import { RequestWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/RequestWorkFlowFactory.js';
 
     
 
@@ -66,13 +66,13 @@ import { RequestWorkFlowFactory } from "../../org/allbinary/logic/control/workfl
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { HttpServlet } from "./HttpServlet.js";
-import { ServletConfig } from "./ServletConfig.js";
-import { PrintWriter } from "./PrintWriter.js";
-import { ServletRequest } from "./ServletRequest.js";
-import { ServletResponse } from "./ServletResponse.js";
-import { HttpServletRequest } from "./HttpServletRequest.js";
-import { HttpServletResponse } from "./HttpServletResponse.js";
+        import { HttpServlet } from './HttpServlet.js';
+import { ServletConfig } from './ServletConfig.js';
+import { PrintWriter } from './PrintWriter.js';
+import { ServletRequest } from './ServletRequest.js';
+import { ServletResponse } from './ServletResponse.js';
+import { HttpServletRequest } from './HttpServletRequest.js';
+import { HttpServletResponse } from './HttpServletResponse.js';
 
 export class RequestHandler extends HttpServlet {
         

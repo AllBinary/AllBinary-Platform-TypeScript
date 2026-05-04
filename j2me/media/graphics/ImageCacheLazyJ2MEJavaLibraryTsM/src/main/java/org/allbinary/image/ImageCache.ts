@@ -18,91 +18,91 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-            import { Thread } from "../../../java/lang/Thread.js";
+            import { Thread } from '../../../java/lang/Thread.js';
         
-import { InputStream } from "../../../java/io/InputStream.js";
+import { InputStream } from '../../../java/io/InputStream.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { NullCanvas } from "../../../javax/microedition/lcdui/NullCanvas.js";
+import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { J2MEUtil } from "../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
 
     
-import { LazyImageRotationAnimation } from "../../../org/allbinary/animation/image/LazyImageRotationAnimation.js";
+import { LazyImageRotationAnimation } from '../../../org/allbinary/animation/image/LazyImageRotationAnimation.js';
 
     
-import { GameGlobalsFactory } from "../../../org/allbinary/canvas/GameGlobalsFactory.js";
+import { GameGlobalsFactory } from '../../../org/allbinary/canvas/GameGlobalsFactory.js';
 
     
-import { Processor } from "../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { ResourceUtil } from "../../../org/allbinary/data/resource/ResourceUtil.js";
+import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { ABToGBUtil } from "../../../org/allbinary/game/canvas/ABToGBUtil.js";
+import { ABToGBUtil } from '../../../org/allbinary/game/canvas/ABToGBUtil.js';
 
     
-import { AllBinaryGameCanvas } from "../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js";
+import { AllBinaryGameCanvas } from '../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { GDLazyResources } from "../../../org/allbinary/game/gd/resource/GDLazyResources.js";
+import { GDLazyResources } from '../../../org/allbinary/game/gd/resource/GDLazyResources.js';
 
     
-import { GDResources } from "../../../org/allbinary/game/gd/resource/GDResources.js";
+import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
 
     
-import { ProgressCanvas } from "../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js";
+import { ProgressCanvas } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 
     
-import { ProgressCanvasFactory } from "../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js";
+import { ProgressCanvasFactory } from '../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { CommonSeps } from "../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
 
     
-import { StringUtil } from "../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Memory } from "../../../org/allbinary/system/Memory.js";
+import { Memory } from '../../../org/allbinary/system/Memory.js';
 
     
-import { BaseImageLoadingProcessor } from "../../../org/allbinary/thread/BaseImageLoadingProcessor.js";
+import { BaseImageLoadingProcessor } from '../../../org/allbinary/thread/BaseImageLoadingProcessor.js';
 
     
-import { ConcurrentImageLoadingProcessor } from "../../../org/allbinary/thread/ConcurrentImageLoadingProcessor.js";
+import { ConcurrentImageLoadingProcessor } from '../../../org/allbinary/thread/ConcurrentImageLoadingProcessor.js';
 
     
-import { SynchObject } from "../../../org/allbinary/thread/SynchObject.js";
+import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
 
     
-import { BasicArrayList } from "../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
 
     
 
@@ -123,11 +123,11 @@ import { BasicArrayListD } from "../../../org/allbinary/util/BasicArrayListD.js"
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageCacheBase } from "./ImageCacheBase.js";
-//import { NotHTMLEndProcessor } from "./NotHTMLEndProcessor.js";
-//import { NotHTMLProcessor } from "./NotHTMLProcessor.js";
-//import { HTMLEndProcessor } from "./HTMLEndProcessor.js";
-//import { FirstProcessor } from "./FirstProcessor.js";
+        import { ImageCacheBase } from './ImageCacheBase.js';
+//import { NotHTMLEndProcessor } from './NotHTMLEndProcessor.js';
+//import { NotHTMLProcessor } from './NotHTMLProcessor.js';
+//import { HTMLEndProcessor } from './HTMLEndProcessor.js';
+//import { FirstProcessor } from './FirstProcessor.js';
 
 export class ImageCache extends ImageCacheBase {
         

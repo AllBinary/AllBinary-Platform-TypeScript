@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { InputStream } from "../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../java/io/InputStream.js';
 
     
-import { URIResolver } from "../../../../../javax/xml/transform/URIResolver.js";
+import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
 
     
-import { StreamSource } from "../../../../../javax/xml/transform/stream/StreamSource.js";
+import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
 
     
-import { CompositeTransformInfoInterface } from "../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js";
+import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
 
     
 

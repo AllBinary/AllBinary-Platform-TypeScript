@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { EventObject } from "../../../../../java/util/EventObject.js";
+import { EventObject } from '../../../../../java/util/EventObject.js';
 
     
 

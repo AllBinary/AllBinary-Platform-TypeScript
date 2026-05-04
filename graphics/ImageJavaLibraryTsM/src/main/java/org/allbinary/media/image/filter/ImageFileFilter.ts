@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { File } from "../../../../../java/io/File.js";
+import { File } from '../../../../../java/io/File.js';
 
     
-import { FileFilter } from "../../../../../javax/swing/filechooser/FileFilter.js";
+import { FileFilter } from '../../../../../javax/swing/filechooser/FileFilter.js';
 
     
 

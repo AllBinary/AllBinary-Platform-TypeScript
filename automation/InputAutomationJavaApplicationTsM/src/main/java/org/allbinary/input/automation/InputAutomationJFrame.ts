@@ -18,108 +18,108 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { ARunnable } from "../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
-import { URI } from "../../../../java/net/URI.js";
+import { URI } from '../../../../java/net/URI.js';
 
     
-import { URL } from "../../../../java/net/URL.js";
+import { URL } from '../../../../java/net/URL.js';
 
     
-import { HelpSet } from "../../../../javax/help/HelpSet.js";
+import { HelpSet } from '../../../../javax/help/HelpSet.js';
 
     
-import { HelpSetEvent } from "../../../../javax/help/event/HelpSetEvent.js";
+import { HelpSetEvent } from '../../../../javax/help/event/HelpSetEvent.js';
 
     
-import { HelpSetListener } from "../../../../javax/help/event/HelpSetListener.js";
+import { HelpSetListener } from '../../../../javax/help/event/HelpSetListener.js';
 
     
-import { swing } from "../../../../javax/swing.js";
+import { swing } from '../../../../javax/swing.js';
 
     
-import { InputAutomationBundleActivatorListenerInterface } from "../../../../bundle/input/automation/InputAutomationBundleActivatorListenerInterface.js";
+import { InputAutomationBundleActivatorListenerInterface } from '../../../../bundle/input/automation/InputAutomationBundleActivatorListenerInterface.js';
 
     
-import { InputAutomationConfigurationModuleChangeListener } from "../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js";
+import { InputAutomationConfigurationModuleChangeListener } from '../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
 
     
-import { InputAutomationRobotChangeListener } from "../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js";
+import { InputAutomationRobotChangeListener } from '../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
 
     
-import { AppUrlGlobals } from "../../../../org/allbinary/globals/AppUrlGlobals.js";
+import { AppUrlGlobals } from '../../../../org/allbinary/globals/AppUrlGlobals.js';
 
     
-import { URLGLOBALS } from "../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { BasicTextJDialog } from "../../../../org/allbinary/gui/dialog/BasicTextJDialog.js";
+import { BasicTextJDialog } from '../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
 
     
-import { JListSwingWorker } from "../../../../org/allbinary/gui/swing/workers/JListSwingWorker.js";
+import { JListSwingWorker } from '../../../../org/allbinary/gui/swing/workers/JListSwingWorker.js';
 
     
-import { InputAutomationConfiguration } from "../../../../org/allbinary/input/automation/configuration/InputAutomationConfiguration.js";
+import { InputAutomationConfiguration } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfiguration.js';
 
     
-import { InputAutomationConfigurationFactory } from "../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js";
+import { InputAutomationConfigurationFactory } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
 
     
-import { InputAutomationConfigurationModuleChangeEvent } from "../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js";
+import { InputAutomationConfigurationModuleChangeEvent } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
 
     
-import { InputAutomationModuleFactoryFactory } from "../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryFactory.js";
+import { InputAutomationModuleFactoryFactory } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryFactory.js';
 
     
-import { InputAutomationModuleFactoryInterface } from "../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js";
+import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 
     
-import { InputAutomationModuleConfigurations } from "../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js";
+import { InputAutomationModuleConfigurations } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
 
     
-import { InputAutomationModuleConfigurationsSingletonFactory } from "../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurationsSingletonFactory.js";
+import { InputAutomationModuleConfigurationsSingletonFactory } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurationsSingletonFactory.js';
 
     
-import { DesktopBundle } from "../../../../org/allbinary/input/automation/osgi/DesktopBundle.js";
+import { DesktopBundle } from '../../../../org/allbinary/input/automation/osgi/DesktopBundle.js';
 
     
-import { InputRobotFactory } from "../../../../org/allbinary/input/automation/robot/InputRobotFactory.js";
+import { InputRobotFactory } from '../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
 
     
-import { InputAutomationRobotChangeEvent } from "../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js";
+import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LogConfigTypeFactory } from "../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js";
+import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 
     
-import { JavaHelpUtil } from "../../../../org/allbinary/logic/java/help/JavaHelpUtil.js";
+import { JavaHelpUtil } from '../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
 
     
-import { WebappClassLoaderInfo } from "../../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js";
+import { WebappClassLoaderInfo } from '../../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
 
     
-import { InputAutomationClientInformationFactory } from "../../../../org/allbinary/logic/system/security/licensing/InputAutomationClientInformationFactory.js";
+import { InputAutomationClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/InputAutomationClientInformationFactory.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInterface.js";
+import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
 
     
 
@@ -140,30 +140,30 @@ import { RunnableInterface } from "../../../../org/allbinary/thread/RunnableInte
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JFrame } from "./JFrame.js";
-import { ImageIcon } from "./ImageIcon.js";
-import { JDialog } from "./JDialog.js";
-import { JLabel } from "./JLabel.js";
-import { JTabbedPane } from "./JTabbedPane.js";
-import { JPanel } from "./JPanel.js";
-import { JScrollPane } from "./JScrollPane.js";
-import { JList } from "./JList.js";
-import { JMenuBar } from "./JMenuBar.js";
-import { JMenu } from "./JMenu.js";
-import { JMenuItem } from "./JMenuItem.js";
-import { JCheckBoxMenuItem } from "./JCheckBoxMenuItem.js";
-import { Dimension } from "./Dimension.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
-import { WindowFocusListener } from "./WindowFocusListener.js";
-import { WindowEvent } from "./WindowEvent.js";
-import { FocusAdapter } from "./FocusAdapter.js";
-import { FocusEvent } from "./FocusEvent.js";
-import { ListSelectionListener } from "./ListSelectionListener.js";
-import { ListSelectionEvent } from "./ListSelectionEvent.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { Desktop } from "./Desktop.js";
+        import { JFrame } from './JFrame.js';
+import { ImageIcon } from './ImageIcon.js';
+import { JDialog } from './JDialog.js';
+import { JLabel } from './JLabel.js';
+import { JTabbedPane } from './JTabbedPane.js';
+import { JPanel } from './JPanel.js';
+import { JScrollPane } from './JScrollPane.js';
+import { JList } from './JList.js';
+import { JMenuBar } from './JMenuBar.js';
+import { JMenu } from './JMenu.js';
+import { JMenuItem } from './JMenuItem.js';
+import { JCheckBoxMenuItem } from './JCheckBoxMenuItem.js';
+import { Dimension } from './Dimension.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
+import { WindowFocusListener } from './WindowFocusListener.js';
+import { WindowEvent } from './WindowEvent.js';
+import { FocusAdapter } from './FocusAdapter.js';
+import { FocusEvent } from './FocusEvent.js';
+import { ListSelectionListener } from './ListSelectionListener.js';
+import { ListSelectionEvent } from './ListSelectionEvent.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { Desktop } from './Desktop.js';
 
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         

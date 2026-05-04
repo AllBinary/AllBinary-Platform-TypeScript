@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../java/lang/Long.js';
         
-import { Enumeration } from "../../../../../java/util/Enumeration.js";
+import { Enumeration } from '../../../../../java/util/Enumeration.js';
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { Vector } from "../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../java/util/Vector.js';
 
     
-import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 
     
-import { HighScore } from "../../../../../org/allbinary/game/score/HighScore.js";
+import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
 
     
-import { HighScores } from "../../../../../org/allbinary/game/score/HighScores.js";
+import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
 
     
-import { RemoteErrorHighScoresSingletonFactory } from "../../../../../org/allbinary/game/score/RemoteErrorHighScoresSingletonFactory.js";
+import { RemoteErrorHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/RemoteErrorHighScoresSingletonFactory.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SoftwareInformation } from "../../../../../org/allbinary/logic/system/SoftwareInformation.js";
+import { SoftwareInformation } from '../../../../../org/allbinary/logic/system/SoftwareInformation.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUtil.js";
+import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
 
     
 
@@ -80,9 +80,9 @@ import { EnumerationUtil } from "../../../../../org/allbinary/util/EnumerationUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RemoteHighScoresProcessorFactory } from "./RemoteHighScoresProcessorFactory.js";
-import { RemoteHighScoresSubmissionProcessorFactory } from "./RemoteHighScoresSubmissionProcessorFactory.js";
-import { RemoteHighScoresData } from "./RemoteHighScoresData.js";
+        import { RemoteHighScoresProcessorFactory } from './RemoteHighScoresProcessorFactory.js';
+import { RemoteHighScoresSubmissionProcessorFactory } from './RemoteHighScoresSubmissionProcessorFactory.js';
+import { RemoteHighScoresData } from './RemoteHighScoresData.js';
 
 export class RemoteHighScores extends HighScores {
         

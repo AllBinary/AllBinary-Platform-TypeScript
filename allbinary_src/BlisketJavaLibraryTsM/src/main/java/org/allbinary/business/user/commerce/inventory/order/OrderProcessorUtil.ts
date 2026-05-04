@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { OrderIdGenerator } from "../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js";
+import { OrderIdGenerator } from '../../../../../../../org/allbinary/data/generator/OrderIdGenerator.js';
 
     
-import { OrderHistoryEntity } from "../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js";
+import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
 
     
-import { OrderItemsEntity } from "../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntity.js";
+import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntity.js';
 
     
 
@@ -51,7 +51,7 @@ import { OrderItemsEntity } from "../../../../../../../org/allbinary/data/tables
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Order } from "./Order.js";
+        import { Order } from './Order.js';
 
 export class OrderProcessorUtil
             extends Object

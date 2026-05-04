@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-import { StreetAddress } from "../../../../../../../org/allbinary/business/user/address/StreetAddress.js";
+import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
 
     
 
@@ -43,7 +43,7 @@ import { StreetAddress } from "../../../../../../../org/allbinary/business/user/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ItemInterface } from "./ItemInterface.js";
+        import { ItemInterface } from './ItemInterface.js';
 
 export interface OrderItemInterface extends ItemInterface {
         

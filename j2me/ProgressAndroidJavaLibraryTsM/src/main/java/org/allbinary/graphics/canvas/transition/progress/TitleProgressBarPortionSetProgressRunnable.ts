@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { Activity } from "../../../../../../android/app/Activity.js";
+import { Activity } from '../../../../../../android/app/Activity.js';
 
     
 
@@ -51,9 +51,9 @@ import { Activity } from "../../../../../../android/app/Activity.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProgressRunnable } from "./ProgressRunnable.js";
-import { ProgressCanvas } from "./ProgressCanvas.js";
-import { AndroidBasicTitleProgressBar } from "./AndroidBasicTitleProgressBar.js";
+        import { ProgressRunnable } from './ProgressRunnable.js';
+import { ProgressCanvas } from './ProgressCanvas.js';
+import { AndroidBasicTitleProgressBar } from './AndroidBasicTitleProgressBar.js';
 
 export class TitleProgressBarPortionSetProgressRunnable extends ProgressRunnable {
         

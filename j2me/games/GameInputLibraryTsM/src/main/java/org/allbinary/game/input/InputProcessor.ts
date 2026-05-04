@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
 
@@ -43,7 +43,7 @@ import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameInputStrings } from "./GameInputStrings.js";
+        import { GameInputStrings } from './GameInputStrings.js';
 
 export class InputProcessor
             extends Object

@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { RenderedImage } from "../../../../java/awt/image/RenderedImage.js";
+import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
 
     
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { ImageIO } from "../../../../javax/imageio/ImageIO.js";
+import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { BufferedImageUtil2 } from "../../../../org/allbinary/media/image/BufferedImageUtil2.js";
+import { BufferedImageUtil2 } from '../../../../org/allbinary/media/image/BufferedImageUtil2.js';
 
     
-import { ImageProcessorInput } from "../../../../org/allbinary/media/image/ImageProcessorInput.js";
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 
     
-import { ImageProcessorInputCompositeInterface } from "../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js";
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 
     
-import { ImageStrings } from "../../../../org/allbinary/media/image/ImageStrings.js";
+import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
 
     
-import { MirrorImageUtil } from "../../../../org/allbinary/media/image/MirrorImageUtil.js";
+import { MirrorImageUtil } from '../../../../org/allbinary/media/image/MirrorImageUtil.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -80,16 +80,16 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { JLayeredPane } from "./JLayeredPane.js";
-import { Graphics } from "./Graphics.js";
-import { JCheckBox } from "./JCheckBox.js";
-import { JButton } from "./JButton.js";
-import { JLabel } from "./JLabel.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
+        import { JPanel } from './JPanel.js';
+import { JLayeredPane } from './JLayeredPane.js';
+import { Graphics } from './Graphics.js';
+import { JCheckBox } from './JCheckBox.js';
+import { JButton } from './JButton.js';
+import { JLabel } from './JLabel.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
 
 export class MirrorSpriteImageJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

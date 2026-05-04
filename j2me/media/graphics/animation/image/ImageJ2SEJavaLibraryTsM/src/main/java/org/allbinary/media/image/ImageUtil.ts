@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Graphics2D } from "../../../../java/awt/Graphics2D.js";
+import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
 
     
-import { GraphicsConfiguration } from "../../../../java/awt/GraphicsConfiguration.js";
+import { GraphicsConfiguration } from '../../../../java/awt/GraphicsConfiguration.js';
 
     
-import { GraphicsDevice } from "../../../../java/awt/GraphicsDevice.js";
+import { GraphicsDevice } from '../../../../java/awt/GraphicsDevice.js';
 
     
-import { GraphicsEnvironment } from "../../../../java/awt/GraphicsEnvironment.js";
+import { GraphicsEnvironment } from '../../../../java/awt/GraphicsEnvironment.js';
 
     
-import { Transparency } from "../../../../java/awt/Transparency.js";
+import { Transparency } from '../../../../java/awt/Transparency.js';
 
     
-import { AffineTransform } from "../../../../java/awt/geom/AffineTransform.js";
+import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
 
     
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { J2SEImmutableImage } from "../../../../org/microemu/device/j2se/J2SEImmutableImage.js";
+import { J2SEImmutableImage } from '../../../../org/microemu/device/j2se/J2SEImmutableImage.js';
 
     
-import { J2SEMutableImage } from "../../../../org/microemu/device/j2se/J2SEMutableImage.js";
+import { J2SEMutableImage } from '../../../../org/microemu/device/j2se/J2SEMutableImage.js';
 
     
 

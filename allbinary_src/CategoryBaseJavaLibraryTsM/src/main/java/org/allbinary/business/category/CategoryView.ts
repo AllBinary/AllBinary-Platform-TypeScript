@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from '../../../../java/util/Vector.js';
 
     
-import { CategoryPropertiesInterface } from "../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js";
+import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
 
     
-import { CategoryPropertiesView } from "../../../../org/allbinary/business/category/properties/CategoryPropertiesView.js";
+import { CategoryPropertiesView } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesView.js';
 
     
-import { DomNodeInterface } from "../../../../org/allbinary/data/tree/dom/DomNodeInterface.js";
+import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { InterfaceUtil } from "../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js";
+import { InterfaceUtil } from '../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { Document } from "../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../org/w3c/dom/Node.js';
 
     
 
@@ -69,8 +69,8 @@ import { Node } from "../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CategoryInterface } from "./CategoryInterface.js";
-import { CategoryData } from "./CategoryData.js";
+        import { CategoryInterface } from './CategoryInterface.js';
+import { CategoryData } from './CategoryData.js';
 
 export class CategoryView
             extends Object

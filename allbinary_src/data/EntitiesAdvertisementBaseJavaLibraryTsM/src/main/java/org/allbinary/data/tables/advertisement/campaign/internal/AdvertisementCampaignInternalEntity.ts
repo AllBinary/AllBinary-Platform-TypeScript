@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../../../../java/util/Vector.js";
+import { Vector } from '../../../../../../../java/util/Vector.js';
 
     
-import { AdvertisementCampaign } from "../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaign.js";
+import { AdvertisementCampaign } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaign.js';
 
     
-import { AdvertisementCampaignData } from "../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js";
+import { AdvertisementCampaignData } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignData.js';
 
     
-import { AdvertisementCampaignInterface } from "../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignInterface.js";
+import { AdvertisementCampaignInterface } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignInterface.js';
 
     
-import { AdvertisementCampaigns } from "../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaigns.js";
+import { AdvertisementCampaigns } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaigns.js';
 
     
-import { AdvertisementCampaignsInterface } from "../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignsInterface.js";
+import { AdvertisementCampaignsInterface } from '../../../../../../../org/allbinary/business/advertisement/campaign/AdvertisementCampaignsInterface.js';
 
     
-import { StoreFrontData } from "../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserDbInitInfo } from "../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+import { UserDbInitInfo } from '../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 
     
-import { TimeData } from "../../../../../../../org/allbinary/business/time/TimeData.js";
+import { TimeData } from '../../../../../../../org/allbinary/business/time/TimeData.js';
 
     
-import { LogUtil } from "../../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlBean } from "../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+import { AbSqlBean } from '../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 
     
-import { StringMaker } from "../../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -84,7 +84,7 @@ import { StringMaker } from "../../../../../../../org/allbinary/logic/string/Str
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AdvertisementCampaignInternalEntityInterface } from "./AdvertisementCampaignInternalEntityInterface.js";
+        import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';
 
 export class AdvertisementCampaignInternalEntity extends AbSqlBean implements AdvertisementCampaignInternalEntityInterface {
         

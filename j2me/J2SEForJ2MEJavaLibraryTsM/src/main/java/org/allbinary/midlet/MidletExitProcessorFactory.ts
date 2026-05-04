@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { MIDlet } from "../../../javax/microedition/midlet/MIDlet.js";
+import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
 
     
-import { AppletUtil } from "../../../org/allbinary/AppletUtil.js";
+import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
 
     
-import { J2MEUtil } from "../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
 
     
-import { Processor } from "../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../org/allbinary/canvas/Processor.js';
 
     
 
@@ -52,7 +52,7 @@ import { Processor } from "../../../org/allbinary/canvas/Processor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MidletExitProcessor } from "./MidletExitProcessor.js";
+        import { MidletExitProcessor } from './MidletExitProcessor.js';
 
 export class MidletExitProcessorFactory
             extends Object

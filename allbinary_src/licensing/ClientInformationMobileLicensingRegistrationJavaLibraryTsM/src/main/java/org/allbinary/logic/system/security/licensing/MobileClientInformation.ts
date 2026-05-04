@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../../java/util/Hashtable.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { RegistrationConfiguration } from "../../../../../../org/allbinary/logic/system/security/licensing/registration/RegistrationConfiguration.js";
+import { RegistrationConfiguration } from '../../../../../../org/allbinary/logic/system/security/licensing/registration/RegistrationConfiguration.js';
 
     
-import { CommonSeps } from "../../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -60,8 +60,8 @@ import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AbeClientInformation } from "./AbeClientInformation.js";
-import { PartnerIdentifierFileUtil } from "./PartnerIdentifierFileUtil.js";
+        import { AbeClientInformation } from './AbeClientInformation.js';
+import { PartnerIdentifierFileUtil } from './PartnerIdentifierFileUtil.js';
 
 export class MobileClientInformation extends AbeClientInformation {
         

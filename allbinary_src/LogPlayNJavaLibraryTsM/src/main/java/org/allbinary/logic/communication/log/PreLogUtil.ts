@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { PlayN } from "../../../../../playn/core/PlayN.js";
+import { PlayN } from '../../../../../playn/core/PlayN.js';
 
     
 
@@ -57,7 +57,7 @@ import { PlayN } from "../../../../../playn/core/PlayN.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { LogFormatUtil } from "./LogFormatUtil.js";
+        import { LogFormatUtil } from './LogFormatUtil.js';
 
 /*actual*/ export class PreLogUtil
             extends Object

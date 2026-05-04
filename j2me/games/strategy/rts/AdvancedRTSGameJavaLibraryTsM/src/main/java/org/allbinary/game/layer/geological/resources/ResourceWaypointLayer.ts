@@ -18,34 +18,34 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { SelectionHudPaintable } from "../../../../../../org/allbinary/game/layer/SelectionHudPaintable.js";
+import { SelectionHudPaintable } from '../../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
 
     
-import { WaypointLayer } from "../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js";
+import { WaypointLayer } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { ProceduralAnimationInterfaceFactoryInterface } from "../../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js";
+import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
 
     
-import { Group } from "../../../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { PathFindingLayerInterface } from "../../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { Rectangle } from "../../../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { RemoteInfo } from "../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js";
+import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
 
     
 
@@ -66,8 +66,8 @@ import { RemoteInfo } from "../../../../../../org/allbinary/game/multiplayer/lay
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeologicalResourceInfoHudPaintableSingleton } from "./GeologicalResourceInfoHudPaintableSingleton.js";
-import { GeologicalResourceInfoHudPaintable } from "./GeologicalResourceInfoHudPaintable.js";
+        import { GeologicalResourceInfoHudPaintableSingleton } from './GeologicalResourceInfoHudPaintableSingleton.js';
+import { GeologicalResourceInfoHudPaintable } from './GeologicalResourceInfoHudPaintable.js';
 
 export class ResourceWaypointLayer extends WaypointLayer {
         

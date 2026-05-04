@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { RequestDispatcher } from "../../../../../../javax/servlet/RequestDispatcher.js";
+import { RequestDispatcher } from '../../../../../../javax/servlet/RequestDispatcher.js';
 
     
-import { ServletException } from "../../../../../../javax/servlet/ServletException.js";
+import { ServletException } from '../../../../../../javax/servlet/ServletException.js';
 
     
-import { HttpServletRequest } from "../../../../../../javax/servlet/http/HttpServletRequest.js";
+import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
 
     
-import { HttpServletResponse } from "../../../../../../javax/servlet/http/HttpServletResponse.js";
+import { HttpServletResponse } from '../../../../../../javax/servlet/http/HttpServletResponse.js';
 
     
-import { JspTagException } from "../../../../../../javax/servlet/jsp/JspTagException.js";
+import { JspTagException } from '../../../../../../javax/servlet/jsp/JspTagException.js';
 
     
-import { PageContext } from "../../../../../../javax/servlet/jsp/PageContext.js";
+import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
 
     
-import { FREEBLISKET_PATH_GLOBALS } from "../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js";
+import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LogConfigTypeFactory } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js";
+import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
 
     
-import { LogConfigTypes } from "../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js";
+import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
 
     
 

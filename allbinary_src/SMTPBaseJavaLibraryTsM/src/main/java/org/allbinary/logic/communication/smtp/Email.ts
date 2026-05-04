@@ -18,73 +18,73 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { PrintStream } from "../../../../../java/io/PrintStream.js";
+import { PrintStream } from '../../../../../java/io/PrintStream.js';
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { Properties } from "../../../../../java/util/Properties.js";
+import { Properties } from '../../../../../java/util/Properties.js';
 
     
-import { Address } from "../../../../../javax/mail/Address.js";
+import { Address } from '../../../../../javax/mail/Address.js';
 
     
-import { Authenticator } from "../../../../../javax/mail/Authenticator.js";
+import { Authenticator } from '../../../../../javax/mail/Authenticator.js';
 
     
-import { Message } from "../../../../../javax/mail/Message.js";
+import { Message } from '../../../../../javax/mail/Message.js';
 
     
-import { MessagingException } from "../../../../../javax/mail/MessagingException.js";
+import { MessagingException } from '../../../../../javax/mail/MessagingException.js';
 
     
-import { Session } from "../../../../../javax/mail/Session.js";
+import { Session } from '../../../../../javax/mail/Session.js';
 
     
-import { InternetAddress } from "../../../../../javax/mail/internet/InternetAddress.js";
+import { InternetAddress } from '../../../../../javax/mail/internet/InternetAddress.js';
 
     
-import { InternetHeaders } from "../../../../../javax/mail/internet/InternetHeaders.js";
+import { InternetHeaders } from '../../../../../javax/mail/internet/InternetHeaders.js';
 
     
-import { MimeBodyPart } from "../../../../../javax/mail/internet/MimeBodyPart.js";
+import { MimeBodyPart } from '../../../../../javax/mail/internet/MimeBodyPart.js';
 
     
-import { MimeMessage } from "../../../../../javax/mail/internet/MimeMessage.js";
+import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
 
     
-import { MimeMultipart } from "../../../../../javax/mail/internet/MimeMultipart.js";
+import { MimeMultipart } from '../../../../../javax/mail/internet/MimeMultipart.js';
 
     
-import { ModDomHelper } from "../../../../../org/allbinary/data/tree/dom/ModDomHelper.js";
+import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringUtil } from "../../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { StringValidationUtil } from "../../../../../org/allbinary/logic/string/StringValidationUtil.js";
+import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { Document } from "../../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../../org/w3c/dom/Node.js';
 
     
 
@@ -105,8 +105,8 @@ import { Node } from "../../../../../org/w3c/dom/Node.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { EmailInterface } from "./EmailInterface.js";
-import { EmailData } from "./EmailData.js";
+        import { EmailInterface } from './EmailInterface.js';
+import { EmailData } from './EmailData.js';
 
 export class Email
             extends Object

@@ -18,41 +18,41 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Throwable } from "../../../../../java/lang/Throwable.js";
+            import { Throwable } from '../../../../../java/lang/Throwable.js';
         
-            import { RuntimeException } from "../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from '../../../../../java/io/IOException.js';
 
     
-import { Hashtable } from "../../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../../java/util/Hashtable.js';
 
     
-import { XmlRpcException } from "../../../../../org/apache/xmlrpc/XmlRpcException.js";
+import { XmlRpcException } from '../../../../../org/apache/xmlrpc/XmlRpcException.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
-import { SpecialMessageUtil } from "../../../../../org/allbinary/canvas/SpecialMessageUtil.js";
+import { SpecialMessageUtil } from '../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 
@@ -73,9 +73,9 @@ import { TimeDelayHelper } from "../../../../../org/allbinary/time/TimeDelayHelp
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Log } from "./Log.js";
-import { LogFormatUtil } from "./LogFormatUtil.js";
-import { XmlRpcRemoteLogClient } from "./XmlRpcRemoteLogClient.js";
+        import { Log } from './Log.js';
+import { LogFormatUtil } from './LogFormatUtil.js';
+import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
 
 /*actual*/ export class LogUtil
             extends Object

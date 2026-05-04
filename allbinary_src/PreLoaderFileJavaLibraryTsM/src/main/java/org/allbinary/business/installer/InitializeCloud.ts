@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { PATH_GLOBALS } from "../../../../org/allbinary/globals/PATH_GLOBALS.js";
+import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
 
     
-import { URLGLOBALS } from "../../../../org/allbinary/globals/URLGLOBALS.js";
+import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbFileSystem } from "../../../../org/allbinary/logic/io/AbFileSystem.js";
+import { AbFileSystem } from '../../../../org/allbinary/logic/io/AbFileSystem.js';
 
     
-import { AbFile } from "../../../../org/allbinary/logic/io/file/AbFile.js";
+import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
 
     
-import { FileUtil } from "../../../../org/allbinary/logic/io/file/FileUtil.js";
+import { FileUtil } from '../../../../org/allbinary/logic/io/file/FileUtil.js';
 
     
-import { Directory } from "../../../../org/allbinary/logic/io/file/directory/Directory.js";
+import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
 
     
-import { AbPath } from "../../../../org/allbinary/logic/io/path/AbPath.js";
+import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

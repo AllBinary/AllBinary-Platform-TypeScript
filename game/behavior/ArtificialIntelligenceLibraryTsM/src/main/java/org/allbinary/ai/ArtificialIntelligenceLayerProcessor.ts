@@ -18,19 +18,19 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { AllBinaryLayer } from "../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
+import { LayerProcessor } from '../../../org/allbinary/layer/LayerProcessor.js';
 
     
 
@@ -51,8 +51,8 @@ import { LayerProcessor } from "../../../org/allbinary/layer/LayerProcessor.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ArtificialIntelligenceLayerManager } from "./ArtificialIntelligenceLayerManager.js";
-import { ArtificialIntelligenceCompositeInterface } from "./ArtificialIntelligenceCompositeInterface.js";
+        import { ArtificialIntelligenceLayerManager } from './ArtificialIntelligenceLayerManager.js';
+import { ArtificialIntelligenceCompositeInterface } from './ArtificialIntelligenceCompositeInterface.js';
 
 export class ArtificialIntelligenceLayerProcessor extends LayerProcessor {
         

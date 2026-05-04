@@ -18,62 +18,62 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-            import { Thread } from "../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { awt } from "../../../../java/awt.js";
+import { awt } from '../../../../java/awt.js';
 
     
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { RenderedImage } from "../../../../java/awt/image/RenderedImage.js";
+import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
 
     
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { IOException } from "../../../../java/io/IOException.js";
+import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { ImageIO } from "../../../../javax/imageio/ImageIO.js";
+import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { ImageProcessedVisitor } from "../../../../org/allbinary/media/image/ImageProcessedVisitor.js";
+import { ImageProcessedVisitor } from '../../../../org/allbinary/media/image/ImageProcessedVisitor.js';
 
     
-import { ImageProcessorInput } from "../../../../org/allbinary/media/image/ImageProcessorInput.js";
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 
     
-import { ImageStrings } from "../../../../org/allbinary/media/image/ImageStrings.js";
+import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
 
     
-import { SpriteSplitterUtil } from "../../../../org/allbinary/media/image/SpriteSplitterUtil.js";
+import { SpriteSplitterUtil } from '../../../../org/allbinary/media/image/SpriteSplitterUtil.js';
 
     
-import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -94,18 +94,18 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { JCheckBox } from "./JCheckBox.js";
-import { JTextField } from "./JTextField.js";
-import { JLabel } from "./JLabel.js";
-import { Graphics } from "./Graphics.js";
-import { JButton } from "./JButton.js";
-import { JComboBox } from "./JComboBox.js";
-import { DefaultComboBoxModel } from "./DefaultComboBoxModel.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
+        import { JPanel } from './JPanel.js';
+import { JCheckBox } from './JCheckBox.js';
+import { JTextField } from './JTextField.js';
+import { JLabel } from './JLabel.js';
+import { Graphics } from './Graphics.js';
+import { JButton } from './JButton.js';
+import { JComboBox } from './JComboBox.js';
+import { DefaultComboBoxModel } from './DefaultComboBoxModel.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
 
 export class SpriteSplitterImageJPanel extends javax.swing.JPanel implements ImageProcessedVisitor {
         

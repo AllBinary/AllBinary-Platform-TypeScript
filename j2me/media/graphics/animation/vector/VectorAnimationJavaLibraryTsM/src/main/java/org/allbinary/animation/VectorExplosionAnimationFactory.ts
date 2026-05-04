@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
 
@@ -48,12 +48,12 @@ import { BasicColorFactory } from "../../../org/allbinary/graphics/color/BasicCo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProceduralAnimationInterfaceFactoryInterface } from "./ProceduralAnimationInterfaceFactoryInterface.js";
-import { AnimationBehaviorFactory } from "./AnimationBehaviorFactory.js";
-import { VectorExplosionGenerator } from "./VectorExplosionGenerator.js";
-import { VectorAnimationInterface } from "./VectorAnimationInterface.js";
-import { VectorRotationAnimation } from "./VectorRotationAnimation.js";
-import { Animation } from "./Animation.js";
+        import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
+import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';
+import { VectorExplosionGenerator } from './VectorExplosionGenerator.js';
+import { VectorAnimationInterface } from './VectorAnimationInterface.js';
+import { VectorRotationAnimation } from './VectorRotationAnimation.js';
+import { Animation } from './Animation.js';
 
 export class VectorExplosionAnimationFactory
             extends Object

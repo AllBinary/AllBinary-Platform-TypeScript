@@ -18,18 +18,18 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
-            import { Integer } from "../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../java/lang/Integer.js';
         
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js";
+import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
 
@@ -50,7 +50,7 @@ import { SmallIntegerSingletonFactory } from "../../../../../../org/allbinary/lo
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GeographicMapCellTypeFactory } from "./GeographicMapCellTypeFactory.js";
+        import { GeographicMapCellTypeFactory } from './GeographicMapCellTypeFactory.js';
 
 export class GeographicMapCellType
             extends Object

@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { ColorChangeEventHandler } from "../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js";
+import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
 
     
-import { ColorChangeListener } from "../../../../org/allbinary/graphics/color/ColorChangeListener.js";
+import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/ColorChangeListener.js';
 
     
-import { FormPaintable } from "../../../../org/allbinary/graphics/form/FormPaintable.js";
+import { FormPaintable } from '../../../../org/allbinary/graphics/form/FormPaintable.js';
 
     
-import { ScrollSelectionForm } from "../../../../org/allbinary/graphics/form/ScrollSelectionForm.js";
+import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { StringComponent } from "../../../../org/allbinary/graphics/form/item/StringComponent.js";
+import { StringComponent } from '../../../../org/allbinary/graphics/form/item/StringComponent.js';
 
     
-import { TextItem } from "../../../../org/allbinary/graphics/form/item/TextItem.js";
+import { TextItem } from '../../../../org/allbinary/graphics/form/item/TextItem.js';
 
     
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
-import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
 
@@ -67,8 +67,8 @@ import { AllBinaryEventObject } from "../../../../org/allbinary/logic/util/event
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BasicGameDemoPaintable } from "./BasicGameDemoPaintable.js";
-import { MainGameDemoStatePaintable } from "./MainGameDemoStatePaintable.js";
+        import { BasicGameDemoPaintable } from './BasicGameDemoPaintable.js';
+import { MainGameDemoStatePaintable } from './MainGameDemoStatePaintable.js';
 
 export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements ColorChangeListener {
         

@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
 
@@ -45,7 +45,7 @@ import { AllBinaryLayerManager } from "../../../../org/allbinary/layer/AllBinary
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TickableInterface } from "./TickableInterface.js";
+        import { TickableInterface } from './TickableInterface.js';
 
 export class NullTickable
             extends Object

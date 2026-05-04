@@ -18,48 +18,48 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { HashMap } from "../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../java/util/HashMap.js';
 
     
-import { Vector } from "../../../../java/util/Vector.js";
+import { Vector } from '../../../../java/util/Vector.js';
 
     
-import { GPoint } from "../../../../org/allbinary/graphics/GPoint.js";
+import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
 
     
-import { GraphicItemInterface } from "../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js";
+import { GraphicItemInterface } from '../../../../org/allbinary/graphics/j2me/workarea/tools/GraphicItemInterface.js';
 
     
-import { LinesGraphicItem } from "../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js";
+import { LinesGraphicItem } from '../../../../org/allbinary/graphics/j2me/workarea/tools/LinesGraphicItem.js';
 
     
-import { Points } from "../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js";
+import { Points } from '../../../../org/allbinary/graphics/j2me/workarea/tools/Points.js';
 
     
-import { BasicGraphicsPipeline } from "../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js";
+import { BasicGraphicsPipeline } from '../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

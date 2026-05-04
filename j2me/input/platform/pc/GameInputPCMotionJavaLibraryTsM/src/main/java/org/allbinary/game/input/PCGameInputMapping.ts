@@ -18,28 +18,28 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { GamePersistanceStrings } from "../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js";
+import { GamePersistanceStrings } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceStrings.js';
 
     
-import { PersistentInputMapping } from "../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js";
+import { PersistentInputMapping } from '../../../../org/allbinary/game/input/mapping/PersistentInputMapping.js';
 
     
-import { BasicTouchInputFactory } from "../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js";
+import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
 
     
-import { TouchMotionGestureFactory } from "../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js";
+import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
 
     
-import { TrackballMotionGestureFactory } from "../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js";
+import { TrackballMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TrackballMotionGestureFactory.js';
 
     
-import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
 
@@ -60,8 +60,8 @@ import { AbeClientInformationInterface } from "../../../../org/allbinary/logic/s
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PCKeyFactory } from "./PCKeyFactory.js";
-import { Input } from "./Input.js";
+        import { PCKeyFactory } from './PCKeyFactory.js';
+import { Input } from './Input.js';
 
 export class PCGameInputMapping extends PersistentInputMapping {
         

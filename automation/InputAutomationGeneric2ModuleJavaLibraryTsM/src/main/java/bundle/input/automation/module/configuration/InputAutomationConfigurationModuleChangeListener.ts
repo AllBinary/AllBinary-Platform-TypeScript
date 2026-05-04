@@ -18,11 +18,11 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { InputAutomationConfigurationModuleChangeEvent } from "../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js";
+import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
 
     
 

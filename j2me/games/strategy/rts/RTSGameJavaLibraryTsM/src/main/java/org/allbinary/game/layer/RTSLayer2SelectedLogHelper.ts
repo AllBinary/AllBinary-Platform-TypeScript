@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -46,8 +46,8 @@ import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSLayer2LogHelper } from "./RTSLayer2LogHelper.js";
-import { PathFindingLayerInterface } from "./PathFindingLayerInterface.js";
+        import { RTSLayer2LogHelper } from './RTSLayer2LogHelper.js';
+import { PathFindingLayerInterface } from './PathFindingLayerInterface.js';
 
 export class RTSLayer2SelectedLogHelper extends RTSLayer2LogHelper {
         

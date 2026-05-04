@@ -18,68 +18,68 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-            import { Long } from "../../../../../../java/lang/Long.js";
+            import { Long } from '../../../../../../java/lang/Long.js';
         
-            import { Thread } from "../../../../../../java/lang/Thread.js";
+            import { Thread } from '../../../../../../java/lang/Thread.js';
         
-import { BufferedImage } from "../../../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
 
     
-import { File } from "../../../../../../java/io/File.js";
+import { File } from '../../../../../../java/io/File.js';
 
     
-import { ImageIO } from "../../../../../../javax/imageio/ImageIO.js";
+import { ImageIO } from '../../../../../../javax/imageio/ImageIO.js';
 
     
-import { SavedCaptureGenericProfileDataWorkerType } from "../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js";
+import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
 
     
-import { CaptureWorkerInterface } from "../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js";
+import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
 
     
-import { CapturedBufferedImagesCacheSingleton } from "../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js";
+import { CapturedBufferedImagesCacheSingleton } from '../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
 
     
-import { CapturedImageWorkerResultsEvent } from "../../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js";
+import { CapturedImageWorkerResultsEvent } from '../../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js';
 
     
-import { ProcessingFrameIndexFactory } from "../../../../../../org/allbinary/input/media/image/capture/ProcessingFrameIndexFactory.js";
+import { ProcessingFrameIndexFactory } from '../../../../../../org/allbinary/input/media/image/capture/ProcessingFrameIndexFactory.js';
 
     
-import { ScreenScavangerRobot } from "../../../../../../org/allbinary/input/media/image/capture/ScreenScavangerRobot.js";
+import { ScreenScavangerRobot } from '../../../../../../org/allbinary/input/media/image/capture/ScreenScavangerRobot.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { LongUtil } from "../../../../../../org/allbinary/logic/java/number/LongUtil.js";
+import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { BasicEventHandler } from "../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js";
+import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
 
     
-import { MediaDataFactory } from "../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js";
+import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
 
     
-import { BufferedImageFrameCacheable } from "../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js";
+import { BufferedImageFrameCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
 
     
-import { CommonLabels } from "../../../../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonStrings } from "../../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { TimeDelayHelper } from "../../../../../../org/allbinary/time/TimeDelayHelper.js";
+import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
 

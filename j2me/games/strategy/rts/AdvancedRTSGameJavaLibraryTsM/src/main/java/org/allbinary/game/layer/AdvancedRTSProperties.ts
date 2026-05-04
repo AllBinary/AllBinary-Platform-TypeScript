@@ -18,32 +18,32 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { NoShakeAnimationListener } from "../../../../org/allbinary/animation/transition/shake/NoShakeAnimationListener.js";
+import { NoShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/NoShakeAnimationListener.js';
 
     
-import { ShakeAnimationListener } from "../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js";
+import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
 
     
-import { ShakeAnimationListenerFactory } from "../../../../org/allbinary/animation/transition/shake/ShakeAnimationListenerFactory.js";
+import { ShakeAnimationListenerFactory } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListenerFactory.js';
 
     
-import { GameConfigurationCentral } from "../../../../org/allbinary/game/configuration/GameConfigurationCentral.js";
+import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
 
     
-import { TickableInterface } from "../../../../org/allbinary/game/tick/TickableInterface.js";
+import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
 
     
-import { AllBinaryNoVibration } from "../../../../org/allbinary/media/AllBinaryNoVibration.js";
+import { AllBinaryNoVibration } from '../../../../org/allbinary/media/AllBinaryNoVibration.js';
 
     
-import { AllBinaryVibration } from "../../../../org/allbinary/media/AllBinaryVibration.js";
+import { AllBinaryVibration } from '../../../../org/allbinary/media/AllBinaryVibration.js';
 
     
-import { AllBinaryVibrationME } from "../../../../org/allbinary/media/AllBinaryVibrationME.js";
+import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
 
     
 
@@ -64,7 +64,7 @@ import { AllBinaryVibrationME } from "../../../../org/allbinary/media/AllBinaryV
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { WaypointBehaviorBase } from "./WaypointBehaviorBase.js";
+        import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
 
 export class AdvancedRTSProperties
             extends Object

@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Sprite } from "../../../../../javax/microedition/lcdui/game/Sprite.js";
+import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { Player } from "../../../../../javax/microedition/media/Player.js";
+import { Player } from '../../../../../javax/microedition/media/Player.js';
 
     
-import { Animation } from "../../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { AnimationInterfaceFactoryInterface } from "../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js";
+import { AnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
 
     
-import { IndexedAnimation } from "../../../../../org/allbinary/animation/IndexedAnimation.js";
+import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
 
     
-import { CaptionIndexedAnimation } from "../../../../../org/allbinary/animation/caption/CaptionIndexedAnimation.js";
+import { CaptionIndexedAnimation } from '../../../../../org/allbinary/animation/caption/CaptionIndexedAnimation.js';
 
     
-import { ImageAnimation } from "../../../../../org/allbinary/animation/image/ImageAnimation.js";
+import { ImageAnimation } from '../../../../../org/allbinary/animation/image/ImageAnimation.js';
 
     
-import { BasicColorUtil } from "../../../../../org/allbinary/graphics/color/BasicColorUtil.js";
+import { BasicColorUtil } from '../../../../../org/allbinary/graphics/color/BasicColorUtil.js';
 
     
-import { AnimationFactoryImageScaleUtil } from "../../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js";
+import { AnimationFactoryImageScaleUtil } from '../../../../../org/allbinary/image/AnimationFactoryImageScaleUtil.js';
 
     
-import { AnimationFactorySpriteScaleUtil } from "../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js";
+import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
 
     
-import { ScaleProperties } from "../../../../../org/allbinary/media/ScaleProperties.js";
+import { ScaleProperties } from '../../../../../org/allbinary/media/ScaleProperties.js';
 
     
-import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
+import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
 
     
 
@@ -84,7 +84,7 @@ import { Sound } from "../../../../../org/allbinary/media/audio/Sound.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SpriteIndexedAnimation } from "./SpriteIndexedAnimation.js";
+        import { SpriteIndexedAnimation } from './SpriteIndexedAnimation.js';
 
 export class ImageCaptionIndexedAnimationFactory
             extends Object

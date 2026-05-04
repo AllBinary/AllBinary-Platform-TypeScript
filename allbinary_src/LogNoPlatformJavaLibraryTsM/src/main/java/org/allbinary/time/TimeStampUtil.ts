@@ -18,17 +18,17 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { RuntimeException } from "../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
-import { Calendar } from "../../../java/util/Calendar.js";
+import { Calendar } from '../../../java/util/Calendar.js';
 
     
 
-//import { Date } from "../../../java/util/Date.js";
+//import { Date } from '../../../java/util/Date.js';
 
     
 

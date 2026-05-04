@@ -1,5 +1,5 @@
 
-import ArkTsMotionEvent from "@ohos.multimodalInput.touchEvent";
+import ArkTsMotionEvent from '@ohos.multimodalInput.touchEvent';
 
 /*actual*/ export class MotionEvent
          {

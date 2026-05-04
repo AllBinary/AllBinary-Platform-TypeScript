@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Direction } from "../../../org/allbinary/direction/Direction.js";
+import { Direction } from '../../../org/allbinary/direction/Direction.js';
 
     
-import { DirectionUtil } from "../../../org/allbinary/direction/DirectionUtil.js";
+import { DirectionUtil } from '../../../org/allbinary/direction/DirectionUtil.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { Angle } from "../../../org/allbinary/math/Angle.js";
+import { Angle } from '../../../org/allbinary/math/Angle.js';
 
     
-import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 
     
-import { FrameUtil } from "../../../org/allbinary/math/FrameUtil.js";
+import { FrameUtil } from '../../../org/allbinary/math/FrameUtil.js';
 
     
-import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -61,9 +61,9 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { IndexedAnimation } from "./IndexedAnimation.js";
-import { RotationAnimationInterface } from "./RotationAnimationInterface.js";
-import { AnimationBehavior } from "./AnimationBehavior.js";
+        import { IndexedAnimation } from './IndexedAnimation.js';
+import { RotationAnimationInterface } from './RotationAnimationInterface.js';
+import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class RotationAnimation extends IndexedAnimation implements RotationAnimationInterface {
         

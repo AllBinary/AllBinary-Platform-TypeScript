@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Transport } from "../../../../../../javax/mail/Transport.js";
+import { Transport } from '../../../../../../javax/mail/Transport.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { EmailInterface } from "../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js";
+import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
 
     
-import { BasicQueue } from "../../../../../../org/allbinary/logic/util/queue/BasicQueue.js";
+import { BasicQueue } from '../../../../../../org/allbinary/logic/util/queue/BasicQueue.js';
 
     
 
@@ -54,7 +54,7 @@ import { BasicQueue } from "../../../../../../org/allbinary/logic/util/queue/Bas
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { EmailQueueInterface } from "./EmailQueueInterface.js";
+        import { EmailQueueInterface } from './EmailQueueInterface.js';
 
 export class BasicEmailQueue extends BasicQueue implements EmailQueueInterface {
         

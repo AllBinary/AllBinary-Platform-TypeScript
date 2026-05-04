@@ -18,42 +18,42 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { Graphics } from "../../../../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicHud } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js";
+import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
 
     
-import { BasicHudFactory } from "../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js";
+import { BasicHudFactory } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
 
     
-import { GameNotificationEvent } from "../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js";
+import { GameNotificationEvent } from '../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
 
     
-import { GameNotificationListenerInterface } from "../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationListenerInterface.js";
+import { GameNotificationListenerInterface } from '../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationListenerInterface.js';
 
     
-import { BasicColor } from "../../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { ForcedLogUtil } from "../../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { AllBinaryEventObject } from "../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js";
+import { AllBinaryEventObject } from '../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventStrings } from "../../../../../../../org/allbinary/logic/util/event/EventStrings.js";
+import { EventStrings } from '../../../../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
 
@@ -74,7 +74,7 @@ import { EventStrings } from "../../../../../../../org/allbinary/logic/util/even
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { GameNotification } from "./GameNotification.js";
+        import { GameNotification } from './GameNotification.js';
 
 export class GameNotificationHud extends BasicHud implements GameNotificationListenerInterface {
         

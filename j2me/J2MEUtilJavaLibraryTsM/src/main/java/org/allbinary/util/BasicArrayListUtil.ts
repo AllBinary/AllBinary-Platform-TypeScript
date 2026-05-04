@@ -18,22 +18,22 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { System } from "../../../java/lang/System.js";
+            import { System } from '../../../java/lang/System.js';
         
-import { MyRandomFactory } from "../../../org/allbinary/game/rand/MyRandomFactory.js";
+import { MyRandomFactory } from '../../../org/allbinary/game/rand/MyRandomFactory.js';
 
     
-import { StringMaker } from "../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonLabels } from "../../../org/allbinary/string/CommonLabels.js";
+import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
 
     
-import { CommonPhoneStrings } from "../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
 
@@ -54,9 +54,9 @@ import { CommonPhoneStrings } from "../../../org/allbinary/string/CommonPhoneStr
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImmutableBasicArrayList } from "./ImmutableBasicArrayList.js";
-import { BasicArrayList } from "./BasicArrayList.js";
-import { BasicArrayListD } from "./BasicArrayListD.js";
+        import { ImmutableBasicArrayList } from './ImmutableBasicArrayList.js';
+import { BasicArrayList } from './BasicArrayList.js';
+import { BasicArrayListD } from './BasicArrayListD.js';
 
 export class BasicArrayListUtil
             extends Object

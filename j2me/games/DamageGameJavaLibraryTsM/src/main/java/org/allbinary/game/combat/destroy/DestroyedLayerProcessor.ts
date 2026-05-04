@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { DestroyEventCircularStaticPool } from "../../../../../org/allbinary/game/combat/destroy/event/DestroyEventCircularStaticPool.js";
+import { DestroyEventCircularStaticPool } from '../../../../../org/allbinary/game/combat/destroy/event/DestroyEventCircularStaticPool.js';
 
     
-import { DestroyedEvent } from "../../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js";
+import { DestroyedEvent } from '../../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
 
     
-import { DestroyedEventHandler } from "../../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js";
+import { DestroyedEventHandler } from '../../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js';
 
     
-import { AllBinaryLayer } from "../../../../../org/allbinary/layer/AllBinaryLayer.js";
+import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { AllBinaryLayerManager } from "../../../../../org/allbinary/layer/AllBinaryLayerManager.js";
+import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
 
     
-import { BasicLayerProcessor } from "../../../../../org/allbinary/layer/BasicLayerProcessor.js";
+import { BasicLayerProcessor } from '../../../../../org/allbinary/layer/BasicLayerProcessor.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
 

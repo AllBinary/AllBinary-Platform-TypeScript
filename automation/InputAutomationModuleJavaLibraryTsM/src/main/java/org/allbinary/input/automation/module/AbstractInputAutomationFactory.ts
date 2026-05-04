@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { URL } from "../../../../../java/net/URL.js";
+import { URL } from '../../../../../java/net/URL.js';
 
     
-import { HelpSet } from "../../../../../javax/help/HelpSet.js";
+import { HelpSet } from '../../../../../javax/help/HelpSet.js';
 
     
-import { swing } from "../../../../../javax/swing.js";
+import { swing } from '../../../../../javax/swing.js';
 
     
-import { JavaHelpUtil } from "../../../../../org/allbinary/logic/java/help/JavaHelpUtil.js";
+import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
 
     
 
@@ -52,8 +52,8 @@ import { JavaHelpUtil } from "../../../../../org/allbinary/logic/java/help/JavaH
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { InputAutomationModuleFactoryInterface } from "./InputAutomationModuleFactoryInterface.js";
-import { JPanel } from "./JPanel.js";
+        import { InputAutomationModuleFactoryInterface } from './InputAutomationModuleFactoryInterface.js';
+import { JPanel } from './JPanel.js';
 
 export class AbstractInputAutomationFactory extends InputAutomationModuleFactoryInterface {
         

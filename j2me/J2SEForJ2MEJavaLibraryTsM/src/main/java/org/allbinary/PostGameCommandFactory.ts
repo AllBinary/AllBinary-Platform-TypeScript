@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../java/lang/Object.js";
+            import { Object } from '../../java/lang/Object.js';
 
 
         
-import { Canvas } from "../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../javax/microedition/lcdui/Canvas.js';
 
     
-import { MultiPlayerGameFeatureFactory } from "../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js";
+import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
 
     
 

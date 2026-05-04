@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { InputStream } from "../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../java/io/InputStream.js';
 
     
-import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { AbCrypt } from "../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js";
+import { AbCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/AbCrypt.js';
 
     
-import { KeySpecFactory } from "../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js";
+import { KeySpecFactory } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/KeySpecFactory.js';
 
     
 

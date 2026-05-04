@@ -18,35 +18,35 @@
 
 
 
-            import { Object } from "../../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../../java/lang/Exception.js';
         
-            import { RuntimeException } from "../../../../../../../java/lang/RuntimeException.js";
+            import { RuntimeException } from '../../../../../../../java/lang/RuntimeException.js';
         
-            import { Integer } from "../../../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../../../java/lang/Integer.js';
         
-import { AllBinaryTiledLayer } from "../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js";
+import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
 
     
-import { BasicColor } from "../../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { Layer } from "../../../../../../../org/allbinary/layer/Layer.js";
+import { Layer } from '../../../../../../../org/allbinary/layer/Layer.js';
 
     
-import { BasicGeographicMapCellPositionFactory } from "../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js";
+import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
 
     
-import { GeographicMapCellPosition } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js";
+import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
 
     
-import { GeographicMapCellPositionFactoryInterface } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js";
+import { GeographicMapCellPositionFactoryInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
 
     
-import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js";
+import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
 
     
 
@@ -67,9 +67,9 @@ import { GeographicMapCellType } from "../../../../../../../org/allbinary/media/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RaceTrackGeographicMapInterface } from "./RaceTrackGeographicMapInterface.js";
-import { RaceTrackInfo } from "./RaceTrackInfo.js";
-import { RaceTrackData } from "./RaceTrackData.js";
+        import { RaceTrackGeographicMapInterface } from './RaceTrackGeographicMapInterface.js';
+import { RaceTrackInfo } from './RaceTrackInfo.js';
+import { RaceTrackData } from './RaceTrackData.js';
 
 export class NullRaceTrackGeographicMap
             extends Object

@@ -18,52 +18,52 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Stack } from "../../../../java/util/Stack.js";
+import { Stack } from '../../../../java/util/Stack.js';
 
     
-import { Canvas } from "../../../../javax/microedition/lcdui/Canvas.js";
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Command } from "../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 
     
-import { CommandListener } from "../../../../javax/microedition/lcdui/CommandListener.js";
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { NullCommandListener } from "../../../../javax/microedition/lcdui/NullCommandListener.js";
+import { NullCommandListener } from '../../../../javax/microedition/lcdui/NullCommandListener.js';
 
     
-import { MyCommandInterface } from "../../../../org/allbinary/graphics/displayable/command/MyCommandInterface.js";
+import { MyCommandInterface } from '../../../../org/allbinary/graphics/displayable/command/MyCommandInterface.js';
 
     
-import { MyCommandsFactory } from "../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js";
+import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
 
     
-import { TouchJ2ME } from "../../../../org/allbinary/input/TouchJ2ME.js";
+import { TouchJ2ME } from '../../../../org/allbinary/input/TouchJ2ME.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { Sound } from "../../../../org/allbinary/media/audio/Sound.js";
+import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
 
@@ -84,9 +84,9 @@ import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { DisplayableInterface } from "./DisplayableInterface.js";
-import { CanvasStrings } from "./CanvasStrings.js";
-import { DisplayInfoSingleton } from "./DisplayInfoSingleton.js";
+        import { DisplayableInterface } from './DisplayableInterface.js';
+import { CanvasStrings } from './CanvasStrings.js';
+import { DisplayInfoSingleton } from './DisplayInfoSingleton.js';
 
 export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandInterface {
         

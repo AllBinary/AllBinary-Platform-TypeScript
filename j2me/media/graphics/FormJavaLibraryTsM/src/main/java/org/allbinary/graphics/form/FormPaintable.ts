@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js";
+import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
 
     
 
@@ -46,7 +46,7 @@ import { Paintable } from "../../../../org/allbinary/graphics/paint/Paintable.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PaintableForm } from "./PaintableForm.js";
+        import { PaintableForm } from './PaintableForm.js';
 
 export class FormPaintable extends Paintable {
         

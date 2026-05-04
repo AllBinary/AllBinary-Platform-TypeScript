@@ -18,13 +18,13 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
 
@@ -45,7 +45,7 @@ import { Image } from "../../../../javax/microedition/lcdui/Image.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ImageRotationUtil } from "./ImageRotationUtil.js";
+        import { ImageRotationUtil } from './ImageRotationUtil.js';
 
 export class ImageToRotationImageArrayUtil
             extends Object

@@ -18,29 +18,29 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { System } from "../../../../../java/lang/System.js";
+            import { System } from '../../../../../java/lang/System.js';
         
-            import { Integer } from "../../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../../java/lang/Integer.js';
         
-import { ARunnable } from "../../../../../org/allbinary/thread/ARunnable.js";
+import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { HashMap } from "../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../java/util/HashMap.js';
 
     
-import { HashMapJDialogListenerInterface } from "../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js";
+import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -61,19 +61,19 @@ import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JDialog } from "./JDialog.js";
-import { Frame } from "./Frame.js";
-import { JTextField } from "./JTextField.js";
-import { JLabel } from "./JLabel.js";
-import { JPanel } from "./JPanel.js";
-import { JButton } from "./JButton.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
-import { JFrame } from "./JFrame.js";
-import { WindowAdapter } from "./WindowAdapter.js";
-import { WindowEvent } from "./WindowEvent.js";
+        import { JDialog } from './JDialog.js';
+import { Frame } from './Frame.js';
+import { JTextField } from './JTextField.js';
+import { JLabel } from './JLabel.js';
+import { JPanel } from './JPanel.js';
+import { JButton } from './JButton.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
+import { JFrame } from './JFrame.js';
+import { WindowAdapter } from './WindowAdapter.js';
+import { WindowEvent } from './WindowEvent.js';
 
 export class RotateJDialog extends javax.swing.JDialog {
         

@@ -18,20 +18,20 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-import { NullPathFindingLayer } from "../../../../../org/allbinary/game/layer/NullPathFindingLayer.js";
+import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
 
     
-import { NullRTSLayer } from "../../../../../org/allbinary/game/layer/NullRTSLayer.js";
+import { NullRTSLayer } from '../../../../../org/allbinary/game/layer/NullRTSLayer.js';
 
     
-import { PathFindingLayerInterface } from "../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js";
+import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
 
     
-import { WaypointLayer } from "../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js";
+import { WaypointLayer } from '../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
 
     
 

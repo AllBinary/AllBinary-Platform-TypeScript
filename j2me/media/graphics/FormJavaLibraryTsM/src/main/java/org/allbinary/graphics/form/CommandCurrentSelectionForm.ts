@@ -18,49 +18,49 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Command } from "../../../../javax/microedition/lcdui/Command.js";
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 
     
-import { Graphics } from "../../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { J2MEUtil } from "../../../../org/allbinary/J2MEUtil.js";
+import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { NullAnimationFactory } from "../../../../org/allbinary/animation/NullAnimationFactory.js";
+import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
 
     
-import { RectangleAdjustedAnimation } from "../../../../org/allbinary/animation/vector/RectangleAdjustedAnimation.js";
+import { RectangleAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleAdjustedAnimation.js';
 
     
-import { RectangleFilledAdjustedAnimation } from "../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js";
+import { RectangleFilledAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { BasicColor } from "../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { BasicColorFactory } from "../../../../org/allbinary/graphics/color/BasicColorFactory.js";
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { CommandTextItem } from "../../../../org/allbinary/graphics/form/item/CommandTextItem.js";
+import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
 
     
-import { CustomItem } from "../../../../org/allbinary/graphics/form/item/CustomItem.js";
+import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
-import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/item/CustomItemInterface.js";
+import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
 
     
 
@@ -81,9 +81,9 @@ import { CustomItemInterface } from "../../../../org/allbinary/graphics/form/ite
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ScrollCurrentSelectionForm } from "./ScrollCurrentSelectionForm.js";
-import { ItemPaintableFactory } from "./ItemPaintableFactory.js";
-import { FormType } from "./FormType.js";
+        import { ScrollCurrentSelectionForm } from './ScrollCurrentSelectionForm.js';
+import { ItemPaintableFactory } from './ItemPaintableFactory.js';
+import { FormType } from './FormType.js';
 
 export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
         

@@ -4,23 +4,23 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { IOException } from "../../../java/io/IOException.js";
+import { IOException } from '../../../java/io/IOException.js';
 
     
-import { InputStream } from "../../../java/io/InputStream.js";
+import { InputStream } from '../../../java/io/InputStream.js';
 
     
-import { Image } from "../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../javax/microedition/lcdui/Image.js';
 
     
-import { PlatformBitmapBaseFactory } from "../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js";
+import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
 
     
-import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/PlatformBitmapBase.js";
+import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
 
     
 
@@ -41,8 +41,8 @@ import { PlatformBitmapBase } from "../../../org/allbinary/platform/graphics/Pla
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //import { Config } from "./Config.js";
-import { OpenGLBitmap } from "./OpenGLBitmap.js";
+        //import { Config } from './Config.js';
+import { OpenGLBitmap } from './OpenGLBitmap.js';
 
 export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
         

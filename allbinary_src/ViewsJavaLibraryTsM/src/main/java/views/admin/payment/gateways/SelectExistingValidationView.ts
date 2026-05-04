@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { ValidationComponentInterface } from "../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js";
+import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
 
     
-import { TransformInfoInterface } from "../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js";
+import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
 
     
-import { Document } from "../../../../org/w3c/dom/Document.js";
+import { Document } from '../../../../org/w3c/dom/Document.js';
 
     
-import { Node } from "../../../../org/w3c/dom/Node.js";
+import { Node } from '../../../../org/w3c/dom/Node.js';
 
     
-import { HttpStoreComponentView } from "../../../../views/business/context/modules/storefront/HttpStoreComponentView.js";
+import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
 
     
 
@@ -57,7 +57,7 @@ import { HttpStoreComponentView } from "../../../../views/business/context/modul
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { SelectExistingView } from "./SelectExistingView.js";
+        import { SelectExistingView } from './SelectExistingView.js';
 
 export class SelectExistingValidationView extends HttpStoreComponentView implements ValidationComponentInterface {
         

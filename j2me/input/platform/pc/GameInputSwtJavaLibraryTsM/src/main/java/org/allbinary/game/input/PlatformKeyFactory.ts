@@ -18,7 +18,7 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
@@ -40,9 +40,9 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { PCGameKey } from "./PCGameKey.js";
-import { PCKeyFactory } from "./PCKeyFactory.js";
-import { Input } from "./Input.js";
+        import { PCGameKey } from './PCGameKey.js';
+import { PCKeyFactory } from './PCKeyFactory.js';
+import { Input } from './Input.js';
 
 export class PlatformKeyFactory
             extends Object

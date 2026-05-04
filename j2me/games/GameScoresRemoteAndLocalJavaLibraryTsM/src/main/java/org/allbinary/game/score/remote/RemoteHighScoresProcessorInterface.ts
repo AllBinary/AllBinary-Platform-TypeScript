@@ -18,16 +18,16 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { GameInfo } from "../../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
 
     
-import { AbeClientInformationInterface } from "../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js";
+import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
 
@@ -48,7 +48,7 @@ import { AbeClientInformationInterface } from "../../../../../org/allbinary/logi
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RemoteHighScores } from "./RemoteHighScores.js";
+        import { RemoteHighScores } from './RemoteHighScores.js';
 
 export interface RemoteHighScoresProcessorInterface {
         
