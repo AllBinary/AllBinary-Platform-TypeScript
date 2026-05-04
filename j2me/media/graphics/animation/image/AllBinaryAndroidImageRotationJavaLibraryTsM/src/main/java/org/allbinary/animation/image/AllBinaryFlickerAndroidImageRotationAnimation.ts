@@ -128,7 +128,7 @@ super.setBasicColorP(basicColor);
                         if(changed)
                         
                                     {
-                                    this.matrix.setRotate(0.0f, this.halfWidth, this.halfHeight);
+                                    this.matrix.setRotate(0.0, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     
@@ -168,7 +168,7 @@ this.imageModifierUtil!.setAlpha(this.originalImage, this.getImage(), 0, this.al
                         if(changed)
                         
                                     {
-                                    this.matrix.setRotate(0.0f, this.halfWidth, this.halfHeight);
+                                    this.matrix.setRotate(0.0, this.halfWidth, this.halfHeight);
     
 this.updateImage();
     

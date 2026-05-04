@@ -146,11 +146,11 @@ regionTextureRectangleFloatArray[6]= regionTextureRectangleFloatArray[2]!;
 regionTextureRectangleFloatArray[7]= regionTextureRectangleFloatArray[5]!;
     
 
-    var u_center: number = (regionTextureRectangleFloatArray[0] +regionTextureRectangleFloatArray[2]) /2.0f;
+    var u_center: number = (regionTextureRectangleFloatArray[0] +regionTextureRectangleFloatArray[2]) /2.0;
 ;
     
 
-    var v_center: number = (regionTextureRectangleFloatArray[5] +regionTextureRectangleFloatArray[1]) /2.0f;
+    var v_center: number = (regionTextureRectangleFloatArray[5] +regionTextureRectangleFloatArray[1]) /2.0;
 ;
     
 glUtil!.rotateUVs(regionTextureRectangleFloatArray,  -openGLESImageProperties!.angle, u_center, v_center);
@@ -262,7 +262,7 @@ gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
     
 gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
     
-glUtil!.rotateUVs(regionTextureRectangleFloatArray,  -openGLESImageProperties!.angle, 0.5f, 0.5f);
+glUtil!.rotateUVs(regionTextureRectangleFloatArray,  -openGLESImageProperties!.angle, 0.5, 0.5);
     
 glUtil!.position(textureVertexFloatBuffer, 0);
     

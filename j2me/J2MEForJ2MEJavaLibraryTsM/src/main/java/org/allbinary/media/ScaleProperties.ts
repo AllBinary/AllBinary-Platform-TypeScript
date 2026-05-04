@@ -54,9 +54,9 @@ export class ScaleProperties
 
     public static readonly instance: ScaleProperties = new ScaleProperties();
 
-    public scaleX: number = 1.0f;
+    public scaleX: number = 1.0;
 
-    public scaleY: number = 1.0f;
+    public scaleY: number = 1.0;
 
     public scaleWidth: number= 0
 

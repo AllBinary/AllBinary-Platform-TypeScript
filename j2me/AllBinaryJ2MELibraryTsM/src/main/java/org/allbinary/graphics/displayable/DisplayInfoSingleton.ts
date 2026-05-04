@@ -152,7 +152,7 @@ export class DisplayInfoSingleton
 
     private displayRatio: number= 0.0f
 
-    private ratio: number = 1.0f;
+    private ratio: number = 1.0;
 private constructor (){
 
             super();
@@ -314,7 +314,7 @@ this.scalableListener!.scale(this.ratio);
                                     }
                                 
                         else {
-                            this.ratio= 1.0f;
+                            this.ratio= 1.0;
     
 this.scalableListener!.scale(this.ratio);
     
@@ -347,7 +347,7 @@ this.scalableListener!.scale(this.ratio);
                                     }
                                 
                         else {
-                            this.ratio= 1.0f;
+                            this.ratio= 1.0;
     
 this.scalableListener!.scale(this.ratio);
     
@@ -590,7 +590,7 @@ this.scalableListener!.scale(this.ratio);
                                     }
                                 
                         else {
-                            this.ratio= 1.0f;
+                            this.ratio= 1.0;
     
 this.scalableListener!.scale(this.ratio);
     
@@ -625,7 +625,7 @@ this.scalableListener!.scale(this.ratio);
                                     }
                                 
                         else {
-                            this.ratio= 1.0f;
+                            this.ratio= 1.0;
     
 this.scalableListener!.scale(this.ratio);
     

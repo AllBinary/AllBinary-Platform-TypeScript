@@ -20,13 +20,13 @@
 
             import hilog from '@ohos.hilog';
         
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Integer } from "../../../java/lang/Integer.js";
+            import { Integer } from '../../../java/lang/Integer.js';
         
-import { Build } from "../../../android/os/Build.js";
+import { Build } from '../../../android/os/Build.js';
 
     
 

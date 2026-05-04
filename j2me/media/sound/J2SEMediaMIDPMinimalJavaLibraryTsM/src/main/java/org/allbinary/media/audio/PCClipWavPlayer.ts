@@ -332,7 +332,7 @@ var controlType = controlType
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.setVolumeF((leftVolume) /100.0f);
+this.setVolumeF((leftVolume) /100.0);
     
 }
 
@@ -346,7 +346,7 @@ this.setVolumeF((leftVolume) /100.0f);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Math.pow(10f, masterGainFloatControl!.getValue() /20f);
+                        return Math.pow(10, masterGainFloatControl!.getValue() /20);
     
 }
 
@@ -354,7 +354,7 @@ this.setVolumeF((leftVolume) /100.0f);
     setVolumeF(volume: number){
     //var volume = volume
 
-                        if(volume < 0f || volume > 1f)
+                        if(volume < 0 || volume > 1)
                         
                                     {
                                     
@@ -369,7 +369,7 @@ this.setVolumeF((leftVolume) /100.0f);
     var masterGainFloatControl: FloatControl = this.clip.getControl(FloatControl.Type.MASTER_GAIN) as FloatControl;
 ;
     
-masterGainFloatControl!.setValue(20f *Math.log10(volume));
+masterGainFloatControl!.setValue(20 *Math.log10(volume));
     
 }
 

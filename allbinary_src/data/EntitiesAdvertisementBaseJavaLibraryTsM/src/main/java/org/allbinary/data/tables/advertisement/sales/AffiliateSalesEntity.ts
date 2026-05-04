@@ -18,37 +18,37 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { HashMap } from "../../../../../../java/util/HashMap.js";
+import { HashMap } from '../../../../../../java/util/HashMap.js';
 
     
-import { DynamicObjectData } from "../../../../../../org/allbinary/business/DynamicObjectData.js";
+import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
 
     
-import { StoreFrontData } from "../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js";
+import { StoreFrontData } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
 
     
-import { EntryData } from "../../../../../../org/allbinary/business/entry/EntryData.js";
+import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
 
     
-import { UserDbInitInfo } from "../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js";
+import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
 
     
-import { GroupData } from "../../../../../../org/allbinary/business/user/group/GroupData.js";
+import { GroupData } from '../../../../../../org/allbinary/business/user/group/GroupData.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { AbSqlBean } from "../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js";
+import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
 
     
-import { StringMaker } from "../../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
 
@@ -69,7 +69,7 @@ import { StringMaker } from "../../../../../../org/allbinary/logic/string/String
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AffiliateSalesEntityInterface } from "./AffiliateSalesEntityInterface.js";
+        import { AffiliateSalesEntityInterface } from './AffiliateSalesEntityInterface.js';
 
 export class AffiliateSalesEntity extends AbSqlBean implements AffiliateSalesEntityInterface {
         

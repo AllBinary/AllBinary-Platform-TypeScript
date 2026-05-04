@@ -18,69 +18,69 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { BufferedImage } from "../../../../java/awt/image/BufferedImage.js";
+import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
 
     
-import { File } from "../../../../java/io/File.js";
+import { File } from '../../../../java/io/File.js';
 
     
-import { swing } from "../../../../javax/swing.js";
+import { swing } from '../../../../javax/swing.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { FileWrapperUtil } from "../../../../org/allbinary/logic/io/file/FileWrapperUtil.js";
+import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { ImagePersistanceUtil } from "../../../../org/allbinary/media/image/ImagePersistanceUtil.js";
+import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
 
     
-import { ImageProcessorInput } from "../../../../org/allbinary/media/image/ImageProcessorInput.js";
+import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
 
     
-import { ImageProcessorInputCompositeInterface } from "../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js";
+import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
 
     
-import { ImageStrings } from "../../../../org/allbinary/media/image/ImageStrings.js";
+import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
 
     
-import { ImageUnifierCell } from "../../../../org/allbinary/media/image/ImageUnifierCell.js";
+import { ImageUnifierCell } from '../../../../org/allbinary/media/image/ImageUnifierCell.js';
 
     
-import { ImageUnifierProperties } from "../../../../org/allbinary/media/image/ImageUnifierProperties.js";
+import { ImageUnifierProperties } from '../../../../org/allbinary/media/image/ImageUnifierProperties.js';
 
     
-import { ImageUnifierUtil } from "../../../../org/allbinary/media/image/ImageUnifierUtil.js";
+import { ImageUnifierUtil } from '../../../../org/allbinary/media/image/ImageUnifierUtil.js';
 
     
-import { ImageUtil } from "../../../../org/allbinary/media/image/ImageUtil.js";
+import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
 
     
-import { ImagesRatioUtil } from "../../../../org/allbinary/media/image/ImagesRatioUtil.js";
+import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRatioUtil.js';
 
     
-import { CommonPhoneStrings } from "../../../../org/allbinary/string/CommonPhoneStrings.js";
+import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -101,25 +101,25 @@ import { CommonStrings } from "../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { JPanel } from "./JPanel.js";
-import { ImageIconUnique } from "./ImageIconUnique.js";
-import { DefaultListModel } from "./DefaultListModel.js";
-import { ImageIcon } from "./ImageIcon.js";
-import { Icon } from "./Icon.js";
-import { JLabel } from "./JLabel.js";
-import { JScrollPane } from "./JScrollPane.js";
-import { JList } from "./JList.js";
-import { JButton } from "./JButton.js";
-import { JTextField } from "./JTextField.js";
-import { Dimension } from "./Dimension.js";
-import { ActionListener } from "./ActionListener.js";
-import { ActionEvent } from "./ActionEvent.js";
-import { PropertyChangeListener } from "./PropertyChangeListener.js";
-import { PropertyChangeEvent } from "./PropertyChangeEvent.js";
-import { KeyAdapter } from "./KeyAdapter.js";
-import { KeyEvent } from "./KeyEvent.js";
-import { GroupLayout } from "./GroupLayout.js";
-import { Short } from "./Short.js";
+        import { JPanel } from './JPanel.js';
+import { ImageIconUnique } from './ImageIconUnique.js';
+import { DefaultListModel } from './DefaultListModel.js';
+import { ImageIcon } from './ImageIcon.js';
+import { Icon } from './Icon.js';
+import { JLabel } from './JLabel.js';
+import { JScrollPane } from './JScrollPane.js';
+import { JList } from './JList.js';
+import { JButton } from './JButton.js';
+import { JTextField } from './JTextField.js';
+import { Dimension } from './Dimension.js';
+import { ActionListener } from './ActionListener.js';
+import { ActionEvent } from './ActionEvent.js';
+import { PropertyChangeListener } from './PropertyChangeListener.js';
+import { PropertyChangeEvent } from './PropertyChangeEvent.js';
+import { KeyAdapter } from './KeyAdapter.js';
+import { KeyEvent } from './KeyEvent.js';
+import { GroupLayout } from './GroupLayout.js';
+import { Short } from './Short.js';
 
 export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProcessorInputCompositeInterface {
         

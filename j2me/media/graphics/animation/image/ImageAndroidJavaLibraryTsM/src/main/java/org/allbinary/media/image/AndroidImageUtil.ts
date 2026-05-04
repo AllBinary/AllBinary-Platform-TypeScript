@@ -96,7 +96,7 @@ bitmap.eraseColor(Color.TRANSPARENT);
     
 canvas.setBitmap(bitmap);
     
-canvas.drawBitmap(originalBitmap, 0.0f, 0.0f, paint);
+canvas.drawBitmap(originalBitmap, 0.0, 0.0, paint);
     
 }
 
@@ -119,7 +119,7 @@ androidImage!.getBitmap()!.eraseColor(Color.TRANSPARENT);
     var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
 ;
     
-canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
+canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0, 0.0, paint);
     
 }
 
@@ -145,7 +145,7 @@ canvas.concat(matrix);
     var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
 ;
     
-canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0f, 0.0f, paint);
+canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0, 0.0, paint);
     
 }
 

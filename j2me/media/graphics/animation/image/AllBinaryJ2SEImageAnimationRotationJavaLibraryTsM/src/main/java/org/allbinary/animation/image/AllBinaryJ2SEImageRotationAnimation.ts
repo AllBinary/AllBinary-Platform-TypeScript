@@ -99,13 +99,13 @@ export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimat
 
     private bufferedImageIndex: number= 0
 
-    private lastScaleX: number = 1.0f;
+    private lastScaleX: number = 1.0;
 
-    private lastScaleY: number = 1.0f;
+    private lastScaleY: number = 1.0;
 
-    private scaleX: number = 1.0f;
+    private scaleX: number = 1.0;
 
-    private scaleY: number = 1.0f;
+    private scaleY: number = 1.0;
 
     private maxScaleX: number= 0.0f
 

@@ -61,7 +61,7 @@ this.ensureCapacity(this.currentLength +stringLength);
 
 
         for (let i = 0; i < stringLength; i++) {
-            this.charArray[this.currentLength + i] = 
+            this.charArray[this.currentLength + i - 0] = 
     string.charAt(i);
         }
                                     ;

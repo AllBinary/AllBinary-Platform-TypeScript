@@ -162,7 +162,7 @@ this.player.start();
     public start(){
 player= MediaPlayer.create(this, songId);
     
-this.player.setVolume((this.leftVolume) /100.0f, (this.rightVolume) /100.0f);
+this.player.setVolume((this.leftVolume) /100.0, (this.rightVolume) /100.0);
     
 this.player.setLooping(false);
     

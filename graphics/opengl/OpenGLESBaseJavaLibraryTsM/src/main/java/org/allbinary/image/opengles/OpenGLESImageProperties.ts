@@ -48,23 +48,23 @@ export class OpenGLESImageProperties
 
     public textureID: number =  -1;
 
-    public scaleX: number = 1.0f;
+    public scaleX: number = 1.0;
 
-    public scaleY: number = 1.0f;
+    public scaleY: number = 1.0;
 
-    public scaleX2: number = 1.0f;
+    public scaleX2: number = 1.0;
 
-    public scaleY2: number = 1.0f;
+    public scaleY2: number = 1.0;
 
     public angle: number= 0
 
-    public redf: number = 1.0f;
+    public redf: number = 1.0;
 
-    public greenf: number = 1.0f;
+    public greenf: number = 1.0;
 
-    public bluef: number = 1.0f;
+    public bluef: number = 1.0;
 
-    public alphaf: number = 1.0f;
+    public alphaf: number = 1.0;
 
 }
                 

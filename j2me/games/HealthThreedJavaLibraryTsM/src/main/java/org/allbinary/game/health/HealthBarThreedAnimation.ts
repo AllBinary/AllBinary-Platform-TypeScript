@@ -171,11 +171,11 @@ colorBufferList!.set(index, this.basicColor);
 ;
     
 
-    var width5: number = width /2f;
+    var width5: number = width /2;
 ;
     
 
-    var height5: number = height /2f;
+    var height5: number = height /2;
 ;
     
 
@@ -196,7 +196,7 @@ colorBufferList!.set(index, this.basicColor);
                         for (
     col <= segsW; col++)
         {
-number3dBufferList!.set(index++, col *w -width5, row *h -height5, 0f);
+number3dBufferList!.set(index++, col *w -width5, row *h -height5, 0);
     
 }
 

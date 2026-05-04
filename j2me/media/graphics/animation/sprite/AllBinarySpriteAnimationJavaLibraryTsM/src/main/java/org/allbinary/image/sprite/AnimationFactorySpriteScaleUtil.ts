@@ -130,7 +130,7 @@ export class AnimationFactorySpriteScaleUtil
 ;
     
 
-                        if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
+                        if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
                         
                                     {
                                     scaledImage= this.openGLUtil!.add(image);
@@ -146,11 +146,11 @@ sprite= spriteFactory!.createSprite(scaledImage, width, height);
                         
                                     {
                                     
-    var width2: number = this.j2seMath!.round((scaleWidth) -0.5f)!;
+    var width2: number = this.j2seMath!.round((scaleWidth) -0.5)!;
 ;
     
 
-    var height2: number = this.j2seMath!.round((scaleHeight) -0.5f)!;
+    var height2: number = this.j2seMath!.round((scaleHeight) -0.5)!;
 ;
     
 
@@ -177,7 +177,7 @@ scaleY= (by16Height) /height;
                         if(scaleWidth < width)
                         
                                     {
-                                    scaleX= scaleX *2.35f;
+                                    scaleX= scaleX *2.35;
     
 
                                     }
@@ -186,7 +186,7 @@ scaleY= (by16Height) /height;
                         if(scaleHeight < height)
                         
                                     {
-                                    scaleY= scaleY *2.35f;
+                                    scaleY= scaleY *2.35;
     
 
                                     }
@@ -194,7 +194,7 @@ scaleY= (by16Height) /height;
 
                                     }
                                 
-scaledImage= this.imageScaleUtil!.createImage2(this.imageCache, image, scaleX, 1.0f, scaleY, 1.0f, true);
+scaledImage= this.imageScaleUtil!.createImage2(this.imageCache, image, scaleX, 1.0, scaleY, 1.0, true);
     
 sprite= spriteFactory!.createSprite(scaledImage, Math.round((width *scaleX)), Math.round((height *scaleY)));
     

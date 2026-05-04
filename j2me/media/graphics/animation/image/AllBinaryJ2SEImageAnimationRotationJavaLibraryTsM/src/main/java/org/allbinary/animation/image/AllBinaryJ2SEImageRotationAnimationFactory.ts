@@ -18,40 +18,40 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Image } from "../../../../javax/microedition/lcdui/Image.js";
+import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 
     
-import { Animation } from "../../../../org/allbinary/animation/Animation.js";
+import { Animation } from '../../../../org/allbinary/animation/Animation.js';
 
     
-import { AnimationBehaviorFactory } from "../../../../org/allbinary/animation/AnimationBehaviorFactory.js";
+import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
 
     
-import { Features } from "../../../../org/allbinary/game/configuration/feature/Features.js";
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { OpenGLFeatureFactory } from "../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js";
+import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
 
     
-import { OpenGLUtil } from "../../../../org/allbinary/graphics/opengles/OpenGLUtil.js";
+import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
 
     
-import { PrimitiveIntUtil } from "../../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { AngleFactory } from "../../../../org/allbinary/math/AngleFactory.js";
+import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
     
-import { AngleInfo } from "../../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
     
-import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUtil.js";
+import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
 
     
 
@@ -72,9 +72,9 @@ import { ImageCopyUtil } from "../../../../org/allbinary/media/image/ImageCopyUt
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { BaseImageAnimationFactory } from "./BaseImageAnimationFactory.js";
-import { AllBinaryJ2SEImageRotationAnimation } from "./AllBinaryJ2SEImageRotationAnimation.js";
-import { AllBinaryAdjustedJ2SEImageRotationAnimation } from "./AllBinaryAdjustedJ2SEImageRotationAnimation.js";
+        import { BaseImageAnimationFactory } from './BaseImageAnimationFactory.js';
+import { AllBinaryJ2SEImageRotationAnimation } from './AllBinaryJ2SEImageRotationAnimation.js';
+import { AllBinaryAdjustedJ2SEImageRotationAnimation } from './AllBinaryAdjustedJ2SEImageRotationAnimation.js';
 
 export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimationFactory {
         
@@ -116,7 +116,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageCopyUtil.getInstance()!.createImageScale(this.getImage(), 1.44f, false);;
+                        return ImageCopyUtil.getInstance()!.createImageScale(this.getImage(), 1.44, false);;
     
 
                                     }

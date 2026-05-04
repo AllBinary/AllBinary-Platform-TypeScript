@@ -366,11 +366,11 @@ var newHeight = newHeight
 ;
     
 
-    var ratioX: number = 1.0f;
+    var ratioX: number = 1.0;
 ;
     
 
-    var ratioY: number = 1.0f;
+    var ratioY: number = 1.0;
 ;
     
 

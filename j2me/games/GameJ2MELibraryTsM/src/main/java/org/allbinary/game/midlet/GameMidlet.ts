@@ -18,270 +18,270 @@
 
 
 
-            import { Object } from '../../../../../../../../../../../../../java/lang/Object.js';
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from '../../../../../../../../../../../../../java/lang/Exception.js';
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Thread } from '../../../../../../../../../../../../../java/lang/Thread.js';
+            import { Thread } from '../../../../java/lang/Thread.js';
         
-import { Enumeration } from '../../../../../../../../../../../../../java/util/Enumeration.js';
+import { Enumeration } from '../../../../java/util/Enumeration.js';
 
     
-import { Hashtable } from '../../../../../../../../../../../../../java/util/Hashtable.js';
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { Canvas } from '../../../../../../../../../../../../../javax/microedition/lcdui/Canvas.js';
+import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
 
     
-import { Command } from '../../../../../../../../../../../../../javax/microedition/lcdui/Command.js';
+import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 
     
-import { CommandListener } from '../../../../../../../../../../../../../javax/microedition/lcdui/CommandListener.js';
+import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 
     
-import { Displayable } from '../../../../../../../../../../../../../javax/microedition/lcdui/Displayable.js';
+import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
 
     
-import { NullCanvas } from '../../../../../../../../../../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { J2MEUtil } from '../../../../../../../../../../../../../org/allbinary/J2MEUtil.js';
+import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
 
     
-import { GameAdStateFactory } from '../../../../../../../../../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
+import { GameAdStateFactory } from '../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
 
     
-import { FullScreenUtil } from '../../../../../../../../../../../../../org/allbinary/canvas/FullScreenUtil.js';
+import { FullScreenUtil } from '../../../../org/allbinary/canvas/FullScreenUtil.js';
 
     
-import { GameStatisticsFactory } from '../../../../../../../../../../../../../org/allbinary/canvas/GameStatisticsFactory.js';
+import { GameStatisticsFactory } from '../../../../org/allbinary/canvas/GameStatisticsFactory.js';
 
     
-import { DebugFactory } from '../../../../../../../../../../../../../org/allbinary/debug/DebugFactory.js';
+import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
 
     
-import { DebugInterface } from '../../../../../../../../../../../../../org/allbinary/debug/DebugInterface.js';
+import { DebugInterface } from '../../../../org/allbinary/debug/DebugInterface.js';
 
     
-import { GameAdState } from '../../../../../../../../../../../../../org/allbinary/game/GameAdState.js';
+import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
 
     
-import { GameInfo } from '../../../../../../../../../../../../../org/allbinary/game/GameInfo.js';
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
-import { GameMode } from '../../../../../../../../../../../../../org/allbinary/game/GameMode.js';
+import { GameMode } from '../../../../org/allbinary/game/GameMode.js';
 
     
-import { GameStrings } from '../../../../../../../../../../../../../org/allbinary/game/GameStrings.js';
+import { GameStrings } from '../../../../org/allbinary/game/GameStrings.js';
 
     
-import { GameTypeFactory } from '../../../../../../../../../../../../../org/allbinary/game/GameTypeFactory.js';
+import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
 
     
-import { PlayerTypesFactory } from '../../../../../../../../../../../../../org/allbinary/game/PlayerTypesFactory.js';
+import { PlayerTypesFactory } from '../../../../org/allbinary/game/PlayerTypesFactory.js';
 
     
-import { GameCommandsFactory } from '../../../../../../../../../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
+import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
 
     
-import { GameOptionsForm } from '../../../../../../../../../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
+import { GameOptionsForm } from '../../../../org/allbinary/game/configuration/GameOptionsForm.js';
 
     
-import { GameOptionsFormFactory } from '../../../../../../../../../../../../../org/allbinary/game/configuration/GameOptionsFormFactory.js';
+import { GameOptionsFormFactory } from '../../../../org/allbinary/game/configuration/GameOptionsFormFactory.js';
 
     
-import { InGameFeatures } from '../../../../../../../../../../../../../org/allbinary/game/configuration/InGameFeatures.js';
+import { InGameFeatures } from '../../../../org/allbinary/game/configuration/InGameFeatures.js';
 
     
-import { InGameOptionsForm } from '../../../../../../../../../../../../../org/allbinary/game/configuration/InGameOptionsForm.js';
+import { InGameOptionsForm } from '../../../../org/allbinary/game/configuration/InGameOptionsForm.js';
 
     
-import { InGameOptionsFormFactory } from '../../../../../../../../../../../../../org/allbinary/game/configuration/InGameOptionsFormFactory.js';
+import { InGameOptionsFormFactory } from '../../../../org/allbinary/game/configuration/InGameOptionsFormFactory.js';
 
     
-import { LoadGameForm } from '../../../../../../../../../../../../../org/allbinary/game/configuration/LoadGameForm.js';
+import { LoadGameForm } from '../../../../org/allbinary/game/configuration/LoadGameForm.js';
 
     
-import { ChangedGameFeatureListener } from '../../../../../../../../../../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
+import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
 
     
-import { GameFeatureEventHandler } from '../../../../../../../../../../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
+import { GameFeatureEventHandler } from '../../../../org/allbinary/game/configuration/event/GameFeatureEventHandler.js';
 
     
-import { Features } from '../../../../../../../../../../../../../org/allbinary/game/configuration/feature/Features.js';
+import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
 
     
-import { GameFeatureFormUtil } from '../../../../../../../../../../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
+import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
 
     
-import { MainFeatureFactory } from '../../../../../../../../../../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
+import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
 
     
-import { GamePersistanceSingleton } from '../../../../../../../../../../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
+import { GamePersistanceSingleton } from '../../../../org/allbinary/game/configuration/persistance/GamePersistanceSingleton.js';
 
     
-import { KeyValuePersistance } from '../../../../../../../../../../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
+import { KeyValuePersistance } from '../../../../org/allbinary/game/configuration/persistance/KeyValuePersistance.js';
 
     
-import { AllBinaryGameCanvas } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
+import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
 
     
-import { BasicPaintablesCanvas } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/BasicPaintablesCanvas.js';
+import { BasicPaintablesCanvas } from '../../../../org/allbinary/game/displayable/canvas/BasicPaintablesCanvas.js';
 
     
-import { DemoCanvas } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
+import { DemoCanvas } from '../../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
 
     
-import { GameCanvasRunnableInterface } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
+import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
 
     
-import { GameEventHandlerUtil } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/GameEventHandlerUtil.js';
+import { GameEventHandlerUtil } from '../../../../org/allbinary/game/displayable/canvas/GameEventHandlerUtil.js';
 
     
-import { GameInputMappingCanvas } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
+import { GameInputMappingCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingCanvas.js';
 
     
-import { GameInputMappingInstructionsCanvas } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
+import { GameInputMappingInstructionsCanvas } from '../../../../org/allbinary/game/displayable/canvas/GameInputMappingInstructionsCanvas.js';
 
     
-import { MenuListener } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/MenuListener.js';
+import { MenuListener } from '../../../../org/allbinary/game/displayable/canvas/MenuListener.js';
 
     
-import { NullGameCanvasRunnable } from '../../../../../../../../../../../../../org/allbinary/game/displayable/canvas/NullGameCanvasRunnable.js';
+import { NullGameCanvasRunnable } from '../../../../org/allbinary/game/displayable/canvas/NullGameCanvasRunnable.js';
 
     
-import { TextNotificationUtil } from '../../../../../../../../../../../../../org/allbinary/game/input/TextNotificationUtil.js';
+import { TextNotificationUtil } from '../../../../org/allbinary/game/input/TextNotificationUtil.js';
 
     
-import { AllBinaryGameLayerManager } from '../../../../../../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
+import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
 
     
-import { GameNotificationEventHandler } from '../../../../../../../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
+import { GameNotificationEventHandler } from '../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
 
     
-import { HelpPaintable } from '../../../../../../../../../../../../../org/allbinary/game/paint/help/HelpPaintable.js';
+import { HelpPaintable } from '../../../../org/allbinary/game/paint/help/HelpPaintable.js';
 
     
-import { HighScoreCommands } from '../../../../../../../../../../../../../org/allbinary/game/score/HighScoreCommands.js';
+import { HighScoreCommands } from '../../../../org/allbinary/game/score/HighScoreCommands.js';
 
     
-import { HighScoreCommandsFactory } from '../../../../../../../../../../../../../org/allbinary/game/score/HighScoreCommandsFactory.js';
+import { HighScoreCommandsFactory } from '../../../../org/allbinary/game/score/HighScoreCommandsFactory.js';
 
     
-import { HighScoreTextBox } from '../../../../../../../../../../../../../org/allbinary/game/score/displayable/HighScoreTextBox.js';
+import { HighScoreTextBox } from '../../../../org/allbinary/game/score/displayable/HighScoreTextBox.js';
 
     
-import { HighScoreUtil } from '../../../../../../../../../../../../../org/allbinary/game/score/displayable/HighScoreUtil.js';
+import { HighScoreUtil } from '../../../../org/allbinary/game/score/displayable/HighScoreUtil.js';
 
     
-import { HighScoresCanvas } from '../../../../../../../../../../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
+import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
 
     
-import { GameState } from '../../../../../../../../../../../../../org/allbinary/game/state/GameState.js';
+import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
 
     
-import { ResizableListenerHandler } from '../../../../../../../../../../../../../org/allbinary/graphics/ResizableListenerHandler.js';
+import { ResizableListenerHandler } from '../../../../org/allbinary/graphics/ResizableListenerHandler.js';
 
     
-import { ProgressCanvas } from '../../../../../../../../../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
+import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
 
     
-import { ProgressCanvasFactory } from '../../../../../../../../../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
+import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
 
     
-import { BasicColorFactory } from '../../../../../../../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
+import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { ColorChangeEventHandler } from '../../../../../../../../../../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
+import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
 
     
-import { CanvasStrings } from '../../../../../../../../../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
+import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { MyCanvas } from '../../../../../../../../../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
+import { MyCanvas } from '../../../../org/allbinary/graphics/displayable/MyCanvas.js';
 
     
-import { MyCommandsFactory } from '../../../../../../../../../../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
+import { MyCommandsFactory } from '../../../../org/allbinary/graphics/displayable/command/MyCommandsFactory.js';
 
     
-import { AboutCommandProcessor } from '../../../../../../../../../../../../../org/allbinary/graphics/displayable/screen/AboutCommandProcessor.js';
+import { AboutCommandProcessor } from '../../../../org/allbinary/graphics/displayable/screen/AboutCommandProcessor.js';
 
     
-import { AboutPaintableFactory } from '../../../../../../../../../../../../../org/allbinary/graphics/displayable/screen/AboutPaintableFactory.js';
+import { AboutPaintableFactory } from '../../../../org/allbinary/graphics/displayable/screen/AboutPaintableFactory.js';
 
     
-import { CommandForm } from '../../../../../../../../../../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
+import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 
     
-import { WebCommandProcessor } from '../../../../../../../../../../../../../org/allbinary/graphics/displayable/screen/WebCommandProcessor.js';
+import { WebCommandProcessor } from '../../../../org/allbinary/graphics/displayable/screen/WebCommandProcessor.js';
 
     
-import { AllBinarySensorManager } from '../../../../../../../../../../../../../org/allbinary/input/AllBinarySensorManager.js';
+import { AllBinarySensorManager } from '../../../../org/allbinary/input/AllBinarySensorManager.js';
 
     
-import { VirtualKeyboardEventHandler } from '../../../../../../../../../../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
+import { VirtualKeyboardEventHandler } from '../../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
 
     
-import { BasicMotionGesturesHandler } from '../../../../../../../../../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
+import { BasicMotionGesturesHandler } from '../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
 
     
-import { ForcedLogUtil } from '../../../../../../../../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { PreLogUtil } from '../../../../../../../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
+import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
-import { SmallIntegerSingletonFactory } from '../../../../../../../../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
+import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
 
     
-import { StringMaker } from '../../../../../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { ClientInformationFactory } from '../../../../../../../../../../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
+import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
 
     
-import { InApplicationPurchaseFactory } from '../../../../../../../../../../../../../org/allbinary/logic/system/security/licensing/InApplicationPurchaseFactory.js';
+import { InApplicationPurchaseFactory } from '../../../../org/allbinary/logic/system/security/licensing/InApplicationPurchaseFactory.js';
 
     
-import { LockableFeature } from '../../../../../../../../../../../../../org/allbinary/logic/system/security/licensing/LockableFeature.js';
+import { LockableFeature } from '../../../../org/allbinary/logic/system/security/licensing/LockableFeature.js';
 
     
-import { LockableFeatureFactory } from '../../../../../../../../../../../../../org/allbinary/logic/system/security/licensing/LockableFeatureFactory.js';
+import { LockableFeatureFactory } from '../../../../org/allbinary/logic/system/security/licensing/LockableFeatureFactory.js';
 
     
-import { AllBinaryEventObject } from '../../../../../../../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
+import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
 
     
-import { EventStrings } from '../../../../../../../../../../../../../org/allbinary/logic/util/event/EventStrings.js';
+import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
 
     
-import { AllBinaryMediaManager } from '../../../../../../../../../../../../../org/allbinary/media/audio/AllBinaryMediaManager.js';
+import { AllBinaryMediaManager } from '../../../../org/allbinary/media/audio/AllBinaryMediaManager.js';
 
     
-import { MidletStrings } from '../../../../../../../../../../../../../org/allbinary/midlet/MidletStrings.js';
+import { MidletStrings } from '../../../../org/allbinary/midlet/MidletStrings.js';
 
     
-import { ProgressMidlet } from '../../../../../../../../../../../../../org/allbinary/midlet/ProgressMidlet.js';
+import { ProgressMidlet } from '../../../../org/allbinary/midlet/ProgressMidlet.js';
 
     
-import { NullThread } from '../../../../../../../../../../../../../org/allbinary/thread/NullThread.js';
+import { NullThread } from '../../../../org/allbinary/thread/NullThread.js';
 
     
-import { ThreadFactoryUtil } from '../../../../../../../../../../../../../org/allbinary/thread/ThreadFactoryUtil.js';
+import { ThreadFactoryUtil } from '../../../../org/allbinary/thread/ThreadFactoryUtil.js';
 
     
-import { ThreadUtil } from '../../../../../../../../../../../../../org/allbinary/thread/ThreadUtil.js';
+import { ThreadUtil } from '../../../../org/allbinary/thread/ThreadUtil.js';
 
     
-import { TimeDelayHelper } from '../../../../../../../../../../../../../org/allbinary/time/TimeDelayHelper.js';
+import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
 
     
-import { BasicArrayList } from '../../../../../../../../../../../../../org/allbinary/util/BasicArrayList.js';
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { EnumerationUtil } from '../../../../../../../../../../../../../org/allbinary/util/EnumerationUtil.js';
+import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.js';
 
     
 
@@ -303,7 +303,6 @@ import { EnumerationUtil } from '../../../../../../../../../../../../../org/allb
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidletStateFactory } from './GameMidletStateFactory.js';
-import { GlobalsData } from './GlobalsData.js';
 import { GameMidletEventHandler } from './GameMidletEventHandler.js';
 import { DemoGameMidletEvent } from './DemoGameMidletEvent.js';
 import { DemoGameMidletStateFactory } from './DemoGameMidletStateFactory.js';

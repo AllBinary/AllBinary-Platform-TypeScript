@@ -132,7 +132,7 @@ paint2(graphics);
 
     private value: number= 0.0f
 
-    private readonly maxValue: number = 100.0f;
+    private readonly maxValue: number = 100.0;
 
     readonly gauge: CustomGaugeItem
 

@@ -205,7 +205,7 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ImageCopyUtil.getInstance()!.createImageScale(this.getImage(), 1.44f, false);;
+                        return ImageCopyUtil.getInstance()!.createImageScale(this.getImage(), 1.44, false);;
     
 
                                     }

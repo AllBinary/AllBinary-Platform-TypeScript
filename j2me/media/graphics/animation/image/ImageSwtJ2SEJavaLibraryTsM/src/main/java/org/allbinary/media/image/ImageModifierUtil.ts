@@ -388,7 +388,7 @@ imageData!.data[index +2]= bx;
     
 openGLESImage!.imageProcessor= ModifierOpenGLESImageProcessor.getInstance();
     
-openGLESImage!.openGLESImageProperties!.alphaf= (alphaInt) /255f;
+openGLESImage!.openGLESImageProperties!.alphaf= (alphaInt) /255;
     
 
 

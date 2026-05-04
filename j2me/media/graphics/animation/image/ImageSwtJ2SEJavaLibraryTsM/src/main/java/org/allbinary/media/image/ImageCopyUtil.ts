@@ -467,17 +467,17 @@ openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX2= ((width) /ope
     
 openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height) /openGLHeight);
     
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f;
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75;
     
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75;
     
 
                         if(originalImage!.getHeight() % 2 != 0)
                         
                                     {
-                                    openGLESImageProperties!.scaleX2 += 1.0f /openGLWidth;
+                                    openGLESImageProperties!.scaleX2 += 1.0 /openGLWidth;
     
-openGLESImageProperties!.scaleY2 += 1.0f /openGLHeight;
+openGLESImageProperties!.scaleY2 += 1.0 /openGLHeight;
     
 
                                     }
@@ -512,21 +512,21 @@ openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY2= ((height) /op
     var openGLESDeviceImageTranslate: OpenGLESDeviceImageTranslate = openGLESImage!.openGLESImageTranslate as OpenGLESDeviceImageTranslate;
 ;
     
-openGLESDeviceImageTranslate!.translateX= displayInfoSingleton!.getLastWidth() /1.4f /openGLESImageProperties!.scaleX;
+openGLESDeviceImageTranslate!.translateX= displayInfoSingleton!.getLastWidth() /1.4 /openGLESImageProperties!.scaleX;
     
 openGLESDeviceImageTranslate!.translateY= displayInfoSingleton!.getLastHeight() /4 /openGLESImageProperties!.scaleY;
     
-openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.25f;
+openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.25;
     
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.25f;
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.25;
     
 
                                     }
                                 
                         else {
-                            openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75f;
+                            openGLESImageProperties!.scaleX= openGLESImageProperties!.scaleX *0.75;
     
-openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75f;
+openGLESImageProperties!.scaleY= openGLESImageProperties!.scaleY *0.75;
     
 
                         if(image.getName()!.startsWith(this.LEADERBOARD))
@@ -551,9 +551,9 @@ openGLESDeviceImageTranslate!.translateX=  -displayInfoSingleton!.getLastWidth()
                                     }
                                 
                         else {
-                            openGLESImageProperties!.scaleX= 1.0f;
+                            openGLESImageProperties!.scaleX= 1.0;
     
-openGLESImageProperties!.scaleY= 1.0f;
+openGLESImageProperties!.scaleY= 1.0;
     
 
                         }

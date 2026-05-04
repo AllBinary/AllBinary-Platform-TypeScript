@@ -188,7 +188,7 @@ writer.setOutput(ios);
     
 iwp.setCompressionMode(ImageWriteParam.MODE_EXPLICIT);
     
-iwp.setCompressionQuality(0.95f);
+iwp.setCompressionQuality(0.95);
     
 writer.write(
                             null, new IIOImage(bufferedImage, 

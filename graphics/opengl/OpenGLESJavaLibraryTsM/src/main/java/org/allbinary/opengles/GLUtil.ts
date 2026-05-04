@@ -166,7 +166,7 @@ b.order(ByteOrder.nativeOrder());
         {
 unsigned= byteBuffer!.get()&0xFF;
     
-v= (unsigned) /255f;
+v= (unsigned) /255;
     
 buffer.put(v);
     

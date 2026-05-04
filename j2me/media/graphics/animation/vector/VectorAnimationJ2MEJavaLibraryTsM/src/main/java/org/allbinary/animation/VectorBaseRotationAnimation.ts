@@ -18,31 +18,31 @@
 
 
 
-            import { Object } from "../../../java/lang/Object.js";
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../java/lang/Exception.js";
+            import { Exception } from '../../../java/lang/Exception.js';
         
-import { Graphics } from "../../../javax/microedition/lcdui/Graphics.js";
+import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { BasicColor } from "../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { NullUtil } from "../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { PrimitiveIntUtil } from "../../../org/allbinary/logic/math/PrimitiveIntUtil.js";
+import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
 
     
-import { AngleInfo } from "../../../org/allbinary/math/AngleInfo.js";
+import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
 
     
-import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil.js";
+import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
 
     
 
@@ -63,9 +63,9 @@ import { CircularIndexUtil } from "../../../org/allbinary/util/CircularIndexUtil
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RotationAnimation } from "./RotationAnimation.js";
-import { VectorAnimationInterface } from "./VectorAnimationInterface.js";
-import { AnimationBehavior } from "./AnimationBehavior.js";
+        import { RotationAnimation } from './RotationAnimation.js';
+import { VectorAnimationInterface } from './VectorAnimationInterface.js';
+import { AnimationBehavior } from './AnimationBehavior.js';
 
 export class VectorBaseRotationAnimation extends RotationAnimation implements VectorAnimationInterface {
         

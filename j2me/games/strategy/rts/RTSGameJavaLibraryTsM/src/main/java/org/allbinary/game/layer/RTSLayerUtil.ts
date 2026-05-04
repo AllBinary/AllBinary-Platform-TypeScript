@@ -18,51 +18,51 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../java/lang/Exception.js';
         
-            import { Integer } from "../../../../java/lang/Integer.js";
+            import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Hashtable } from "../../../../java/util/Hashtable.js";
+import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { BasicArrayList } from "../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { LogUtil } from "../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { DirectionFactory } from "../../../../org/allbinary/direction/DirectionFactory.js";
+import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
 
     
-import { GameInfo } from "../../../../org/allbinary/game/GameInfo.js";
+import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
-import { WeaponProperties } from "../../../../org/allbinary/game/combat/weapon/WeaponProperties.js";
+import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
 
     
-import { BasicGroupFactory } from "../../../../org/allbinary/game/identification/BasicGroupFactory.js";
+import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
 
     
-import { Group } from "../../../../org/allbinary/game/identification/Group.js";
+import { Group } from '../../../../org/allbinary/game/identification/Group.js';
 
     
-import { PartInterface } from "../../../../org/allbinary/game/part/PartInterface.js";
+import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
 
     
-import { BasicWeaponPart } from "../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js";
+import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { BasicGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js";
+import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
 
     
-import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js";
+import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
 
     
 
@@ -83,9 +83,9 @@ import { BaseRaceTrackGeographicMap } from "../../../../org/allbinary/media/grap
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { RTSLayer } from "./RTSLayer.js";
-import { FakeLayerManager } from "./FakeLayerManager.js";
-import { AllBinaryGameLayerManager } from "./AllBinaryGameLayerManager.js";
+        import { RTSLayer } from './RTSLayer.js';
+import { FakeLayerManager } from './FakeLayerManager.js';
+import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
 
 export class RTSLayerUtil
             extends Object

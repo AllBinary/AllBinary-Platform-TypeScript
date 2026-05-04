@@ -102,7 +102,7 @@ export class AnimationFactoryImageScaleUtil
 ;
     
 
-                        if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
+                        if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
                         
                                     {
                                     scaledImage= image;
@@ -159,7 +159,7 @@ export class AnimationFactoryImageScaleUtil
 ;
     
 
-                        if((scaleX == 1.0f && scaleY == 1.0f) || (scaleX == 0.0f || scaleY == 0.0f))
+                        if((scaleX == 1.0 && scaleY == 1.0) || (scaleX == 0.0 || scaleY == 0.0))
                         
                                     {
                                     

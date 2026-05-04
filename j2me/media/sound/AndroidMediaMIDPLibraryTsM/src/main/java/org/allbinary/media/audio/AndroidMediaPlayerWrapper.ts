@@ -341,7 +341,7 @@ listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-this.mediaPlayer!.setVolume((leftVolume) /100.0f, (rightVolume) /100.0f);
+this.mediaPlayer!.setVolume((leftVolume) /100.0, (rightVolume) /100.0);
     
 }
 

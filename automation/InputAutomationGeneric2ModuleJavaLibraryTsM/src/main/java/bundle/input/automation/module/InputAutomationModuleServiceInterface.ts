@@ -18,14 +18,14 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { InputAutomationModuleFactoryInterface } from "../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js";
+import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
 
     
-import { OSGIServiceInterface } from "../../../../org/allbinary/osgi/OSGIServiceInterface.js";
+import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
 
     
 

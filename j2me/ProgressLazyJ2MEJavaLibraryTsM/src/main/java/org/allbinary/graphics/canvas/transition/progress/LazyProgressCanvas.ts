@@ -18,25 +18,25 @@
 
 
 
-            import { Object } from "../../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { Processor } from "../../../../../../org/allbinary/canvas/Processor.js";
+import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
 
     
-import { BasicColor } from "../../../../../../org/allbinary/graphics/color/BasicColor.js";
+import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { NullPaintable } from "../../../../../../org/allbinary/graphics/paint/NullPaintable.js";
+import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
 
     
-import { ImageCacheFactory } from "../../../../../../org/allbinary/image/ImageCacheFactory.js";
+import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
 
     
-import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
 
@@ -57,7 +57,7 @@ import { LogUtil } from "../../../../../../org/allbinary/logic/communication/log
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ProgressCanvas } from "./ProgressCanvas.js";
+        import { ProgressCanvas } from './ProgressCanvas.js';
 
 export class LazyProgressCanvas extends ProgressCanvas {
         

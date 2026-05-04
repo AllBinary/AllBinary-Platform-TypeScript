@@ -18,44 +18,44 @@
 
 
 
-            import { Object } from "../../../../java/lang/Object.js";
+            import { Object } from '../../../../java/lang/Object.js';
 
 
         
-import { ArtificialIntelligence } from "../../../../org/allbinary/ai/ArtificialIntelligence.js";
+import { ArtificialIntelligence } from '../../../../org/allbinary/ai/ArtificialIntelligence.js';
 
     
-import { ArtificialIntelligenceInterface } from "../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js";
+import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
 
     
-import { CollidableBaseBehavior } from "../../../../org/allbinary/game/collision/CollidableBaseBehavior.js";
+import { CollidableBaseBehavior } from '../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
 
     
-import { CollidableInterfaceCompositeInterface } from "../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js";
+import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 
     
-import { CollidableNeverCollideBehaviorFactory } from "../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js";
+import { CollidableNeverCollideBehaviorFactory } from '../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js';
 
     
-import { Rectangle } from "../../../../org/allbinary/graphics/Rectangle.js";
+import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 
     
-import { RectangleFactory } from "../../../../org/allbinary/graphics/RectangleFactory.js";
+import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
 
     
-import { ForcedLogUtil } from "../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js";
+import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
 
     
-import { StringMaker } from "../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { StringUtil } from "../../../../org/allbinary/logic/string/StringUtil.js";
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
-import { CommonSeps } from "../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
+import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 
     
 
@@ -76,7 +76,7 @@ import { ViewPosition } from "../../../../org/allbinary/view/ViewPosition.js";
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { AllBinaryGameLayer } from "./AllBinaryGameLayer.js";
+        import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
 
 export class CollidableCompositeLayer extends AllBinaryGameLayer implements CollidableInterfaceCompositeInterface {
         

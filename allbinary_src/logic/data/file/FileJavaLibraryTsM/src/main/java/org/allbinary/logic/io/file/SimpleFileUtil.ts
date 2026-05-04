@@ -18,54 +18,54 @@
 
 
 
-            import { Object } from "../../../../../java/lang/Object.js";
+            import { Object } from '../../../../../java/lang/Object.js';
 
 
         
-            import { Exception } from "../../../../../java/lang/Exception.js";
+            import { Exception } from '../../../../../java/lang/Exception.js';
         
-            import { CharSequence } from "../../../../../java/lang/CharSequence.js";
+            import { CharSequence } from '../../../../../java/lang/CharSequence.js';
         
-import { ByteArrayOutputStream } from "../../../../../java/io/ByteArrayOutputStream.js";
+import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
 
     
-import { IOException } from "../../../../../java/io/IOException.js";
+import { IOException } from '../../../../../java/io/IOException.js';
 
     
-import { InputStream } from "../../../../../java/io/InputStream.js";
+import { InputStream } from '../../../../../java/io/InputStream.js';
 
     
-import { Reader } from "../../../../../java/io/Reader.js";
+import { Reader } from '../../../../../java/io/Reader.js';
 
     
-import { Writer } from "../../../../../java/io/Writer.js";
+import { Writer } from '../../../../../java/io/Writer.js';
 
     
-import { CharBuffer } from "../../../../../java/nio/CharBuffer.js";
+import { CharBuffer } from '../../../../../java/nio/CharBuffer.js';
 
     
-import { NullUtil } from "../../../../../org/allbinary/logic/NullUtil.js";
+import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
 
     
-import { LogUtil } from "../../../../../org/allbinary/logic/communication/log/LogUtil.js";
+import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { StreamUtil } from "../../../../../org/allbinary/logic/io/StreamUtil.js";
+import { StreamUtil } from '../../../../../org/allbinary/logic/io/StreamUtil.js';
 
     
-import { StringMaker } from "../../../../../org/allbinary/logic/string/StringMaker.js";
+import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
-import { CommonSeps } from "../../../../../org/allbinary/string/CommonSeps.js";
+import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
     
-import { CommonStrings } from "../../../../../org/allbinary/string/CommonStrings.js";
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
 
     
-import { BasicArrayList } from "../../../../../org/allbinary/util/BasicArrayList.js";
+import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
-import { BasicArrayListD } from "../../../../../org/allbinary/util/BasicArrayListD.js";
+import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
 
     
 

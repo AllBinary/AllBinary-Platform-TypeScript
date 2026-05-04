@@ -49,13 +49,13 @@ import { OpenGLESImage } from './OpenGLESImage.js';
 export class OpenGLESDeviceImageTranslate extends OpenGLESImageTranslate {
         
 
-    public translateX: number = 0.0f;
+    public translateX: number = 0.0;
 
-    public translateY: number = 0.0f;
+    public translateY: number = 0.0;
 
-    public translateX2: number = 0.0f;
+    public translateX2: number = 0.0;
 
-    public translateY2: number = 0.0f;
+    public translateY2: number = 0.0;
 
     public translate(gl: GL10, openGLESImage: OpenGLESImage, x: number, y: number){
     //var gl = gl
