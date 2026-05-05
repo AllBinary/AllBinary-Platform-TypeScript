@@ -54,7 +54,7 @@ var key = key
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -63,7 +63,7 @@ var key = key
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -73,7 +73,7 @@ var o = o
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -264,7 +264,7 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
                                     
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                                     }

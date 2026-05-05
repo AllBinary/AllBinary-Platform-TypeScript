@@ -178,7 +178,7 @@ new class extends Thread
     var increaseHeight: number = Integer(Integer.valueOf(increaseHeightTextField!.getText()))!;
 ;
     
-spriteSplitterUtil!.process(this@SpriteSplitterImageJPanel.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, this@SpriteSplitterImageJPanel);
+spriteSplitterUtil!.process(SpriteSplitterImageJPanel.this.prototype.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, SpriteSplitterImageJPanel.this.prototype);
     
 
                 //: 
@@ -210,13 +210,13 @@ this.jPanel1= new class extends javax.swing.JPanel
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(this@SpriteSplitterImageJPanel.result != 
+                        if(SpriteSplitterImageJPanel.this.prototype.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(this@SpriteSplitterImageJPanel.result, 0, 0, this@SpriteSplitterImageJPanel.result.getWidth(
-                            null), this@SpriteSplitterImageJPanel.result.getHeight(
+                                    graphics.drawImage(SpriteSplitterImageJPanel.this.prototype.result, 0, 0, SpriteSplitterImageJPanel.this.prototype.result.getWidth(
+                            null), SpriteSplitterImageJPanel.this.prototype.result.getHeight(
                             null), 
                             null);
     
@@ -589,7 +589,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(this@SpriteSplitterImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.this.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF(new StringMaker().

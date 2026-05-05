@@ -273,7 +273,7 @@ index < size; index++)
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -285,7 +285,7 @@ index < size; index++)
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

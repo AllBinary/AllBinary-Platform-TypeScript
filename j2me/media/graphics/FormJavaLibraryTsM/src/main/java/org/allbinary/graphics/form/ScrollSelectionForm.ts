@@ -123,7 +123,7 @@ export class ScrollSelectionForm extends PaintableForm {
                             
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                         }
@@ -135,7 +135,7 @@ export class ScrollSelectionForm extends PaintableForm {
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

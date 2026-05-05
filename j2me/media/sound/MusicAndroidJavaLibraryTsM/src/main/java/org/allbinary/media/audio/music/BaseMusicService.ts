@@ -263,7 +263,7 @@ this.rightVolume= intent.getIntExtra(musicStrings!.RIGHT_VOLUME,  -1);
                             
 
 
-                            throw Error();
+                            throw new RuntimeException("Started service without intent");
                     
 
                         }

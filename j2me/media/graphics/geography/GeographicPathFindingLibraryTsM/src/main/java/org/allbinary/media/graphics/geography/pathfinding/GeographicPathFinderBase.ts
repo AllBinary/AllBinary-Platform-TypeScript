@@ -70,7 +70,7 @@ var totalPaths = totalPaths
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -85,7 +85,7 @@ var totalPaths = totalPaths
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

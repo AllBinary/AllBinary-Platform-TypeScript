@@ -63,7 +63,7 @@ var input = input
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

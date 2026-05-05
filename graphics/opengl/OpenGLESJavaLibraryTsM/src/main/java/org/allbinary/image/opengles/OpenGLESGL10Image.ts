@@ -157,13 +157,13 @@ glUtil!.rotateUVs(regionTextureRectangleFloatArray,  -openGLESImageProperties!.a
     
 gl.glPushMatrix();
     
-openGLESImageTranslate!.translate(gl, this@OpenGLESGL10Image, x,  -y);
+openGLESImageTranslate!.translate(gl, OpenGLESGL10Image.this.prototype, x,  -y);
     
 imageProcessor!.scale(gl, openGLESImageProperties!.scaleX, openGLESImageProperties!.scaleY);
     
 imageProcessor!.colorMask(gl, openGLESImageProperties!.redf, openGLESImageProperties!.greenf, openGLESImageProperties!.bluef, openGLESImageProperties!.alphaf);
     
-openGLESImageTranslate!.translate2(gl, this@OpenGLESGL10Image);
+openGLESImageTranslate!.translate2(gl, OpenGLESGL10Image.this.prototype);
     
 regionRectangleVertexFloatBuffer!.put(regionRectangleFloatArray);
     
@@ -240,13 +240,13 @@ regionTextureRectangleFloatArray[7]= 0;
     
 gl.glPushMatrix();
     
-openGLESImageTranslate!.translate(gl, this@OpenGLESGL10Image, x,  -y);
+openGLESImageTranslate!.translate(gl, OpenGLESGL10Image.this.prototype, x,  -y);
     
 imageProcessor!.scale(gl, openGLESImageProperties!.scaleX, openGLESImageProperties!.scaleY);
     
 imageProcessor!.colorMask(gl, openGLESImageProperties!.redf, openGLESImageProperties!.greenf, openGLESImageProperties!.bluef, openGLESImageProperties!.alphaf);
     
-openGLESImageTranslate!.translate2(gl, this@OpenGLESGL10Image);
+openGLESImageTranslate!.translate2(gl, OpenGLESGL10Image.this.prototype);
     
 regionRectangleVertexFloatBuffer!.put(regionRectangleFloatArray);
     

@@ -62,7 +62,7 @@ export class BasicTable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -73,7 +73,7 @@ export class BasicTable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -84,7 +84,7 @@ export class BasicTable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -95,7 +95,7 @@ export class BasicTable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

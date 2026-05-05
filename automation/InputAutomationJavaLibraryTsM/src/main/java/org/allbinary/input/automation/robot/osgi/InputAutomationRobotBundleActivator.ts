@@ -103,7 +103,7 @@ public constructor (){
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

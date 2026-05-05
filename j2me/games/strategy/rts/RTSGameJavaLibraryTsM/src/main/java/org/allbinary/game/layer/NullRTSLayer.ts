@@ -87,7 +87,7 @@ export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -99,7 +99,7 @@ var layerManager = layerManager
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -108,7 +108,7 @@ var layerManager = layerManager
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -117,7 +117,7 @@ var layerManager = layerManager
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -126,7 +126,7 @@ var layerManager = layerManager
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -136,7 +136,7 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -145,7 +145,7 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -154,7 +154,7 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -164,7 +164,7 @@ var eventObject = eventObject
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -176,7 +176,7 @@ var destroyedEvent = destroyedEvent
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -188,7 +188,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -197,7 +197,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -217,7 +217,7 @@ var sound = sound
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -226,7 +226,7 @@ var sound = sound
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -235,7 +235,7 @@ var sound = sound
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

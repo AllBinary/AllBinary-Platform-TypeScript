@@ -175,13 +175,13 @@ new class extends Thread
                         if(leftReduction <= 0 || topReduction <= 0 || widthReduction <= 0 || heightReduction <= 0)
                         
                                     {
-                                    canvasTrimUtil!.process(this@CanvasImageJPanel.getImageProcessorInput(),  -leftReduction,  -topReduction,  -widthReduction,  -heightReduction, this@CanvasImageJPanel);
+                                    canvasTrimUtil!.process(CanvasImageJPanel.this.prototype.getImageProcessorInput(),  -leftReduction,  -topReduction,  -widthReduction,  -heightReduction, CanvasImageJPanel.this.prototype);
     
 
                                     }
                                 
                         else {
-                            canvasExpandUtil!.process(this@CanvasImageJPanel.getImageProcessorInput(), leftReduction, topReduction, this@CanvasImageJPanel);
+                            canvasExpandUtil!.process(CanvasImageJPanel.this.prototype.getImageProcessorInput(), leftReduction, topReduction, CanvasImageJPanel.this.prototype);
     
 
                         }
@@ -212,13 +212,13 @@ this.jPanel1= new class extends javax.swing.JPanel
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(this@CanvasImageJPanel.result != 
+                        if(CanvasImageJPanel.this.prototype.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(this@CanvasImageJPanel.result, 0, 0, this@CanvasImageJPanel.result.getWidth(
-                            null), this@CanvasImageJPanel.result.getHeight(
+                                    graphics.drawImage(CanvasImageJPanel.this.prototype.result, 0, 0, CanvasImageJPanel.this.prototype.result.getWidth(
+                            null), CanvasImageJPanel.this.prototype.result.getHeight(
                             null), 
                             null);
     
@@ -459,7 +459,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(this@CanvasImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(CanvasImageJPanel.this.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF(new StringMaker().

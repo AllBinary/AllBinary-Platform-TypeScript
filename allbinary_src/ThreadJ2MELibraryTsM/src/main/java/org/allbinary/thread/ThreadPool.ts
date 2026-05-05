@@ -162,7 +162,7 @@ pooledThread!.start();
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

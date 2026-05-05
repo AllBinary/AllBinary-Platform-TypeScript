@@ -68,7 +68,7 @@ export class Validation
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -80,7 +80,7 @@ var document = document
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -91,7 +91,7 @@ var document = document
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -102,7 +102,7 @@ var document = document
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

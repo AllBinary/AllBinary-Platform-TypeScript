@@ -838,7 +838,7 @@ waypointBehaviorBase!.setTargetWithDistance(targetGameLayer as PathFindingLayerI
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -847,7 +847,7 @@ waypointBehaviorBase!.setTargetWithDistance(targetGameLayer as PathFindingLayerI
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -969,7 +969,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -978,7 +978,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -1037,7 +1037,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -1066,7 +1066,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -1077,7 +1077,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -1087,7 +1087,7 @@ var ownerLayer = ownerLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -1117,7 +1117,7 @@ var resource = resource
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -1151,7 +1151,7 @@ var resource = resource
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

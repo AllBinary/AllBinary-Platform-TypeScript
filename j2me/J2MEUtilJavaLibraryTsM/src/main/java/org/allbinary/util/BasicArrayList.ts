@@ -85,7 +85,7 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw Error();
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
                     
 
                                     }
@@ -137,7 +137,7 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw Error();
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
                     
 
                                     }
@@ -601,7 +601,7 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw Error();
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
                     
 
                                     }
@@ -637,7 +637,7 @@ stringBuffer!.appendint(this.currentIndex);
 
 
 
-                            throw Error();
+                            throw new IndexOutOfBoundsException(stringBuffer!.toString());
                     
 
                                     }

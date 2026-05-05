@@ -63,7 +63,7 @@ export class NullParcelable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -271,7 +271,7 @@ this.repaintProcessor!.process();
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

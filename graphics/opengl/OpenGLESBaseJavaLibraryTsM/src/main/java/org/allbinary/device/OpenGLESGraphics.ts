@@ -66,7 +66,7 @@ public constructor (){
         }
 
 
-    public update(gl: GL){
+    public updateGL(gl: GL){
 var gl = gl
 }
 
@@ -106,13 +106,13 @@ var gl = gl
 }
 
 
-    public setFont(font: Font, fontDebug: FontDebugBase){
+    public setFontDebug(font: Font, fontDebug: FontDebugBase){
     //var font = font
     //var fontDebug = fontDebug
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

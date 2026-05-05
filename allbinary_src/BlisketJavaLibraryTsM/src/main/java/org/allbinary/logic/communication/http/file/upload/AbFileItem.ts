@@ -317,7 +317,7 @@ var state = state
 
 
 
-                            throw Error();
+                            throw new RuntimeException(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -327,7 +327,7 @@ var fih = fih
 
 
 
-                            throw Error();
+                            throw new RuntimeException(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

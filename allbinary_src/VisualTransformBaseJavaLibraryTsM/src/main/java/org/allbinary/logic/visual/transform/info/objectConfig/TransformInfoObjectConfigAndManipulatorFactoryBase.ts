@@ -78,7 +78,7 @@ var objectConfigFileAbPath = objectConfigFileAbPath
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -91,7 +91,7 @@ var transformInfoInterface = transformInfoInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -105,7 +105,7 @@ var document = document
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

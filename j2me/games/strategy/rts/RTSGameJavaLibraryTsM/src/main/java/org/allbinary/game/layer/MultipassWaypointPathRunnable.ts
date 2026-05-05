@@ -263,7 +263,7 @@ finish();
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -57,7 +57,7 @@ var geographicMapInterface = geographicMapInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

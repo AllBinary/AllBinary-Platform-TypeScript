@@ -80,7 +80,7 @@ var o = o
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

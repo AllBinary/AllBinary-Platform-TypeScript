@@ -140,7 +140,7 @@ clip= this.create(audioInputStream);
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                                     }
@@ -360,7 +360,7 @@ this.setVolumeF((leftVolume) /100.0);
                                     
 
 
-                            throw Error();
+                            throw new IllegalArgumentException("Volume: " +volume);
                     
 
                                     }

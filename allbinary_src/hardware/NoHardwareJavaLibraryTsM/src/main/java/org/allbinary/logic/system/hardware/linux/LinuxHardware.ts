@@ -108,7 +108,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -118,7 +118,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -128,7 +128,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -138,7 +138,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -148,7 +148,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -158,7 +158,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -168,7 +168,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -178,7 +178,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -188,7 +188,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -198,7 +198,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -208,7 +208,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -218,7 +218,7 @@ var index = index
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

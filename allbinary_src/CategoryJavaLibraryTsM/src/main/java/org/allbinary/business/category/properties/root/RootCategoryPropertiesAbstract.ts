@@ -123,7 +123,7 @@ var value = value
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -276,7 +276,7 @@ var angle = angle
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

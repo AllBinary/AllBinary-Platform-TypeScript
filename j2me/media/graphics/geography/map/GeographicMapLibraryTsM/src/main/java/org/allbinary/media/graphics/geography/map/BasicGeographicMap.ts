@@ -114,45 +114,35 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 
 
         switch (direction) {
-            
-
-                    case 0: {
+            case 0: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() -1, oldGeographicMapCellPosition!.getRow());;
     
 }
-
-
-                    case 1: {
+case 1: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn() +1, oldGeographicMapCellPosition!.getRow());;
     
 }
-
-
-                    case 2: {
+case 2: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() -1);;
     
 }
-
-
-                    case 3: {
+case 3: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return this.geographicMapCellPositionFactory!.getAt(oldGeographicMapCellPosition!.getColumn(), oldGeographicMapCellPosition!.getRow() +1);;
     
 }
-
-
-                    case else: {
+default: {
 
 
                             throw new Exception("Only Four Directions");
@@ -174,9 +164,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
 
 
         switch (direction) {
-            
-
-                    case 0: {
+            case 0: {
                         if(oldGeographicMapCellPosition!.getColumn() -1 >= 0)
                         
                                     {
@@ -200,9 +188,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
                         }
                             
 }
-
-
-                    case 1: {
+case 1: {
                         if(oldGeographicMapCellPosition!.getColumn() +1 < this.getAllBinaryTiledLayer()!.getColumns())
                         
                                     {
@@ -226,9 +212,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
                         }
                             
 }
-
-
-                    case 2: {
+case 2: {
                         if(oldGeographicMapCellPosition!.getRow() -1 >= 0)
                         
                                     {
@@ -252,9 +236,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
                         }
                             
 }
-
-
-                    case 3: {
+case 3: {
                         if(oldGeographicMapCellPosition!.getRow() +1 < this.getAllBinaryTiledLayer()!.getRows())
                         
                                     {
@@ -278,9 +260,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
                         }
                             
 }
-
-
-                    case else: {
+default: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.

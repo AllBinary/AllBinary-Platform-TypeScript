@@ -136,7 +136,7 @@ var itemNum = itemNum
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

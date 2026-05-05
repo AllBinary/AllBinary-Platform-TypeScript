@@ -171,7 +171,7 @@ this.index= index;
     //var y = y
 
         try {
-            ImageCacheFactory.getInstance()!.insertFirst(this@LazyImageRotationAnimation);
+            ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.this.prototype);
     
 animation= NULL_INDEX_ANIMATION;
     
@@ -196,7 +196,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
     //var z = z
 
         try {
-            ImageCacheFactory.getInstance()!.insertFirst(this@LazyImageRotationAnimation);
+            ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.this.prototype);
     
 animation= NULL_INDEX_ANIMATION;
     

@@ -112,7 +112,7 @@ this.highScoresArrayP= highScoresArrayP;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

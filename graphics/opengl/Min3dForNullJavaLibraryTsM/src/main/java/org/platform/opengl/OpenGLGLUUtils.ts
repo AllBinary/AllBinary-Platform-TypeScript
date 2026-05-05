@@ -64,7 +64,7 @@ export class OpenGLGLUUtils
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -81,7 +81,7 @@ export class OpenGLGLUUtils
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -98,7 +98,7 @@ export class OpenGLGLUUtils
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -159,7 +159,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -168,7 +168,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -179,7 +179,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -188,7 +188,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -197,7 +197,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -206,7 +206,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -215,7 +215,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -224,7 +224,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -243,7 +243,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -252,7 +252,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -262,7 +262,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -271,7 +271,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -283,7 +283,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -296,7 +296,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -307,7 +307,7 @@ this.waypoint= waypoint;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

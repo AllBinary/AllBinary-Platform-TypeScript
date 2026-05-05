@@ -87,7 +87,7 @@ public constructor (){
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -97,7 +97,7 @@ var categoryAbPath = categoryAbPath
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -107,7 +107,7 @@ var node = node
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

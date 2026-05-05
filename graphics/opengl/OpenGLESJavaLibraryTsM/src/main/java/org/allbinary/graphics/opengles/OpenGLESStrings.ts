@@ -63,7 +63,7 @@ export class OpenGLESStrings
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -75,7 +75,7 @@ export class OpenGLESStrings
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -89,7 +89,7 @@ export class OpenGLESStrings
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -104,7 +104,7 @@ export class OpenGLESStrings
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -121,7 +121,7 @@ export class OpenGLESStrings
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -136,7 +136,7 @@ export class OpenGLESStrings
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -153,7 +153,7 @@ export class OpenGLESStrings
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -136,10 +136,10 @@ new class extends Thread
 
         try {
             
-    var angleAsString: string = this@RotationImageJPanel.totalAngleJComboBox!.getSelectedItem() as string;
+    var angleAsString: string = RotationImageJPanel.this.prototype.totalAngleJComboBox!.getSelectedItem() as string;
 ;
     
-ImageArrayRotationUtil.getInstance()!.process(this@RotationImageJPanel.getImageProcessorInput(), angleAsString, this@RotationImageJPanel);
+ImageArrayRotationUtil.getInstance()!.process(RotationImageJPanel.this.prototype.getImageProcessorInput(), angleAsString, RotationImageJPanel.this.prototype);
     
 
                 //: 
@@ -165,13 +165,13 @@ this.jPanel1= new class extends javax.swing.JPanel
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(this@RotationImageJPanel.result != 
+                        if(RotationImageJPanel.this.prototype.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(this@RotationImageJPanel.result, 0, 0, this@RotationImageJPanel.result.getWidth(
-                            null), this@RotationImageJPanel.result.getHeight(
+                                    graphics.drawImage(RotationImageJPanel.this.prototype.result, 0, 0, RotationImageJPanel.this.prototype.result.getWidth(
+                            null), RotationImageJPanel.this.prototype.result.getHeight(
                             null), 
                             null);
     
@@ -361,7 +361,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(this@RotationImageJPanel.result as RenderedImage, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(RotationImageJPanel.this.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);

@@ -53,7 +53,7 @@ export class ClientInformationFactory
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

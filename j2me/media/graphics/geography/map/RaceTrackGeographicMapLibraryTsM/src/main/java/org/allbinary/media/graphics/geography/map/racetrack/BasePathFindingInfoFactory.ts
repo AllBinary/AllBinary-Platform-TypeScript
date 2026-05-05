@@ -143,7 +143,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                         if(geographicCellType == this.startLineId)
                         
                                     {
-                                    this@BasePathFindingInfoFactory.addStartPathFindingNode(pathFindingInfo, cellPosition);
+                                    BasePathFindingInfoFactory.this.prototype.addStartPathFindingNode(pathFindingInfo, cellPosition);
     
 
                                     }
@@ -156,13 +156,13 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                         if(geographicCellType == this.startLineId)
                         
                                     {
-                                    this@BasePathFindingInfoFactory.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()));
+                                    BasePathFindingInfoFactory.this.prototype.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()));
     
 
                                     }
                                 
                         else {
-                            this@BasePathFindingInfoFactory.addEndPathFindingNode(pathFindingInfo, cellPosition);
+                            BasePathFindingInfoFactory.this.prototype.addEndPathFindingNode(pathFindingInfo, cellPosition);
     
 
                         }
@@ -248,7 +248,7 @@ pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance(
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

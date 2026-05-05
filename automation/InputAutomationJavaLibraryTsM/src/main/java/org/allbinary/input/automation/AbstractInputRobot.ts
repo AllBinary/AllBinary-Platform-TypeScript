@@ -127,7 +127,7 @@ var y = y
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

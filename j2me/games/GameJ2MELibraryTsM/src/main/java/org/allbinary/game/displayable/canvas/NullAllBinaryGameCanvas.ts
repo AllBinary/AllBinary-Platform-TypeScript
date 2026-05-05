@@ -64,7 +64,7 @@ export class NullAllBinaryGameCanvas
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -74,7 +74,7 @@ var cmd = cmd
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -83,7 +83,7 @@ var cmd = cmd
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -92,7 +92,7 @@ var cmd = cmd
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -102,7 +102,7 @@ var cmd = cmd
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -112,7 +112,7 @@ var l = l
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

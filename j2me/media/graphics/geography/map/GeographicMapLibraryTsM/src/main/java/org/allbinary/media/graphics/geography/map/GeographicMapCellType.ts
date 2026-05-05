@@ -102,7 +102,7 @@ this.type= type;
                                     
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                                     }

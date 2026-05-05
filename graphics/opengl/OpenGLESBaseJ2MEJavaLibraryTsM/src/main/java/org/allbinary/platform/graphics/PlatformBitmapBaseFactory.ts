@@ -59,7 +59,7 @@ export class PlatformBitmapBaseFactory
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

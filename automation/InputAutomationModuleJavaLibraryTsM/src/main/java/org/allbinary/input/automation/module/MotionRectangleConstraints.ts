@@ -189,7 +189,7 @@ var rectangle = rectangle
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

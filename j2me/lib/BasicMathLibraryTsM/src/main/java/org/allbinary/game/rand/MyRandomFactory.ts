@@ -205,7 +205,7 @@ index2 < size; index2++)
 
                         if(!found)
                         
-                                    throw Error();
+                                    throw new RuntimeException();
                                 
 }
 

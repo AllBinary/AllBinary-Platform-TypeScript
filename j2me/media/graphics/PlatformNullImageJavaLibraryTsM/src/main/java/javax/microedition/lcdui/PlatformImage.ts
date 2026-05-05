@@ -121,7 +121,7 @@ export class PlatformImage
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

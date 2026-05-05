@@ -73,7 +73,7 @@ export class TagHelperFactory
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

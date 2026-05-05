@@ -59,7 +59,7 @@ var anyType = anyType
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

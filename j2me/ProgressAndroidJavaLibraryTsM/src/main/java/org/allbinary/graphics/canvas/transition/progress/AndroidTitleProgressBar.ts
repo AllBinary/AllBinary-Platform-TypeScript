@@ -254,10 +254,10 @@ TitleProgressBarSetProgressRunnable = class
 
         try {
             
-    var value: number = Math.round(this@AndroidTitleProgressBar.getValue());
+    var value: number = Math.round(AndroidTitleProgressBar.this.prototype.getValue());
 ;
     
-this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value);
+AndroidTitleProgressBar.this.prototype.progressActivity!.onTitleProgressBarSetProgress(value);
     
 
                 //: 
@@ -286,10 +286,10 @@ TitleProgressBarPortionSetProgressRunnable = class
 
         try {
             
-    var value: number = Math.round((this@AndroidTitleProgressBar.getValue() +this@AndroidTitleProgressBar.getMaxValue() /portion));
+    var value: number = Math.round((AndroidTitleProgressBar.this.prototype.getValue() +AndroidTitleProgressBar.this.prototype.getMaxValue() /portion));
 ;
     
-this@AndroidTitleProgressBar.progressActivity!.onTitleProgressBarSetProgress(value);
+AndroidTitleProgressBar.this.prototype.progressActivity!.onTitleProgressBarSetProgress(value);
     
 
                 //: 
@@ -318,10 +318,10 @@ ShowTitleProgressBarRunnable = class
 
         try {
             
-    var maxValue: number = Math.round(this@AndroidTitleProgressBar.getMaxValue());
+    var maxValue: number = Math.round(AndroidTitleProgressBar.this.prototype.getMaxValue());
 ;
     
-this@AndroidTitleProgressBar.progressActivity!.onShowTitleProgressBar(maxValue, false);
+AndroidTitleProgressBar.this.prototype.progressActivity!.onShowTitleProgressBar(maxValue, false);
     
 
                 //: 
@@ -349,7 +349,7 @@ DismissTitleProgressBarRunnable = class
     
 
         try {
-            this@AndroidTitleProgressBar.progressActivity!.onDismissTitleProgressBar();
+            AndroidTitleProgressBar.this.prototype.progressActivity!.onDismissTitleProgressBar();
     
 
                 //: 

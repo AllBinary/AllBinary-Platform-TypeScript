@@ -108,7 +108,7 @@ var color = color
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -273,7 +273,7 @@ var bufferedImage = bufferedImage
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

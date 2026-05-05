@@ -87,7 +87,7 @@ var log = log
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -99,7 +99,7 @@ var log = log
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -112,7 +112,7 @@ var log = log
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

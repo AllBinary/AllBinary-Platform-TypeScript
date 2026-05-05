@@ -93,7 +93,7 @@ var type = type
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -102,7 +102,7 @@ var type = type
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -111,7 +111,7 @@ var type = type
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -121,7 +121,7 @@ var cellType = cellType
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

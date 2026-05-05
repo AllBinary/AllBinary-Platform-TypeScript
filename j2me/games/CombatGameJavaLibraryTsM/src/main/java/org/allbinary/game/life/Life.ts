@@ -67,7 +67,7 @@ export class Life
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

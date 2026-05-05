@@ -95,7 +95,7 @@ export class AndroidMediaPlayerWrapper extends BasicPlayer {
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

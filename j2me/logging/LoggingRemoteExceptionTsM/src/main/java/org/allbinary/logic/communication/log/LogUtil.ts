@@ -231,7 +231,7 @@ this.isFirstException= false;
                                     
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                                     }

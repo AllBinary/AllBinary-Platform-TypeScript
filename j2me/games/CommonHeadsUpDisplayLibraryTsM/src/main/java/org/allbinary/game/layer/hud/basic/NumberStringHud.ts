@@ -94,7 +94,7 @@ export class NumberStringHud extends BasicHud implements PaintableInterface {
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

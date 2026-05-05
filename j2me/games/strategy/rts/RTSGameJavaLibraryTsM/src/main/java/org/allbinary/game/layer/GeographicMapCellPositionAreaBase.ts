@@ -66,7 +66,7 @@ export class GeographicMapCellPositionAreaBase
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -75,7 +75,7 @@ export class GeographicMapCellPositionAreaBase
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -84,7 +84,7 @@ export class GeographicMapCellPositionAreaBase
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -96,7 +96,7 @@ export class GeographicMapCellPositionAreaBase
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

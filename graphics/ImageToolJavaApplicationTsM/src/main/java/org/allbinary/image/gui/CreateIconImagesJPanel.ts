@@ -178,7 +178,7 @@ new class extends Thread
 ;
     
 
-    var imageProcessorInput: ImageProcessorInput = this@CreateIconImagesJPanel.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = CreateIconImagesJPanel.this.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -283,7 +283,7 @@ imagePersistanceUtil!.saveWithBatik(new AbFile(newFilePath), generatedBufferedIm
 
 }
 
-this@CreateIconImagesJPanel.getParent()!.repaint();
+CreateIconImagesJPanel.this.prototype.getParent()!.repaint();
     
 
                 //: 

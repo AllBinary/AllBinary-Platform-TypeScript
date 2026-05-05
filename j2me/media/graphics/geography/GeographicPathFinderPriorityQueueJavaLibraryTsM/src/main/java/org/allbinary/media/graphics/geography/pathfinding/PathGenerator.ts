@@ -117,7 +117,7 @@ private constructor (){
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -193,7 +193,7 @@ private constructor (){
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

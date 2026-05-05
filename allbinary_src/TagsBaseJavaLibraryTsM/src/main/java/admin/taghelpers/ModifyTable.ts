@@ -67,7 +67,7 @@ export class ModifyTable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -78,7 +78,7 @@ export class ModifyTable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -89,7 +89,7 @@ export class ModifyTable
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

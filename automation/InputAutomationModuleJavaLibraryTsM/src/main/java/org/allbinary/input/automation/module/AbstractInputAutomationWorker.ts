@@ -203,7 +203,7 @@ this.getCaptureWorker()!.setRunning(false);
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

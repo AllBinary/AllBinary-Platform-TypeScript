@@ -123,7 +123,7 @@ var keyData = keyData
                             
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                         }
@@ -141,7 +141,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e)
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -60,7 +60,7 @@ var rtsLayer = rtsLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

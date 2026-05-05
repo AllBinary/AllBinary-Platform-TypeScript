@@ -57,7 +57,7 @@ export class PostGameCommandFactory
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

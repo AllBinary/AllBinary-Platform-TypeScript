@@ -160,7 +160,7 @@ var frame = frame
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -179,7 +179,7 @@ var frame = frame
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

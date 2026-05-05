@@ -329,7 +329,7 @@ this.logUtil!.putF(commonStrings!.START, this, "buildFromMotionInput");
                                     
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                                     }

@@ -536,7 +536,7 @@ neighbor.parent= current;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -771,7 +771,7 @@ total++;
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

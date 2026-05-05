@@ -168,7 +168,7 @@ super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
                                     
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 
                                     }

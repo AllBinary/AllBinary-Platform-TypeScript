@@ -270,7 +270,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -70,7 +70,7 @@ protected constructor (){
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -82,7 +82,7 @@ protected constructor (){
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -91,7 +91,7 @@ protected constructor (){
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

@@ -138,7 +138,7 @@ this.logUtil!.putF(new StringMaker().
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -245,7 +245,8 @@ listOfList[foundIndex]!.add(image);
                                     
 
 
-                            throw Error();
+                            throw new RuntimeException(new StringMaker().
+                            append("Image resource is not available for key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString());
                     
 
                                     }

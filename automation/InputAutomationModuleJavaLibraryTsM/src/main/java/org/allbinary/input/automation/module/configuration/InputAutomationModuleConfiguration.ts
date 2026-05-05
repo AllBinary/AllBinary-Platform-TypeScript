@@ -224,7 +224,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

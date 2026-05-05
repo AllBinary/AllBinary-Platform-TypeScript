@@ -79,7 +79,7 @@ export class NullVehicleLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -88,7 +88,7 @@ export class NullVehicleLayer
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -100,7 +100,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -109,7 +109,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -118,7 +118,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -127,7 +127,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -136,7 +136,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -145,7 +145,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -154,7 +154,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -163,7 +163,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -172,7 +172,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -181,7 +181,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -190,7 +190,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -199,7 +199,7 @@ var z = z
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -211,7 +211,7 @@ var dz = dz
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -221,7 +221,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -230,7 +230,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -239,7 +239,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -248,7 +248,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -257,7 +257,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -266,7 +266,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -275,7 +275,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -284,7 +284,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -293,7 +293,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -302,7 +302,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -311,7 +311,7 @@ var visible = visible
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -321,7 +321,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -330,7 +330,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -339,7 +339,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -348,7 +348,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -359,7 +359,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -368,7 +368,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -377,7 +377,7 @@ var animationInterface = animationInterface
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -387,7 +387,7 @@ var geographicMapCellHistory = geographicMapCellHistory
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 

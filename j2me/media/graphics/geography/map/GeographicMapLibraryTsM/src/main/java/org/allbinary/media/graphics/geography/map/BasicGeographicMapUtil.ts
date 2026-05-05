@@ -83,45 +83,35 @@ export class BasicGeographicMapUtil
 
 
         switch (direction) {
-            
-
-                    case 0: {
+            case 0: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow();;
     
 }
-
-
-                    case 1: {
+case 1: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow();;
     
 }
-
-
-                    case 2: {
+case 2: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow() +LOCATION_CHANGE;
     
 }
-
-
-                    case 3: {
+case 3: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getRow() -LOCATION_CHANGE;
     
 }
-
-
-                    case else: {
+default: {
 
 
                             throw new Exception("Only Four Directions");
@@ -147,45 +137,35 @@ export class BasicGeographicMapUtil
 
 
         switch (direction) {
-            
-
-                    case 0: {
+            case 0: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn() -LOCATION_CHANGE;
     
 }
-
-
-                    case 1: {
+case 1: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn() +LOCATION_CHANGE;
     
 }
-
-
-                    case 2: {
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return oldGeographicMapCellPosition!.getColumn();;
-    
-}
-
-
-                    case 3: {
+case 2: {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return oldGeographicMapCellPosition!.getColumn();;
     
 }
+case 3: {
 
 
-                    case else: {
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return oldGeographicMapCellPosition!.getColumn();;
+    
+}
+default: {
 
 
                             throw new Exception("Only Four Directions");

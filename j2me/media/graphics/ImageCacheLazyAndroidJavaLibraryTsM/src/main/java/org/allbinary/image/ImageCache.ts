@@ -269,7 +269,7 @@ this.logUtil!.putF(new StringMaker().
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
@@ -292,7 +292,7 @@ this.logUtil!.putF(new StringMaker().
 
 
 
-                            throw Error();
+                            throw new RuntimeException();
                     
 }
 
