@@ -223,7 +223,7 @@ this.stringBuilder!.appendint(size)!.append(commonSeps!.COLON_SEP);
     var index: number = 0;
 index < size; index++)
         {
-allBinaryLayer= (layerManager!.getLayerAt(index); as AllBinaryLayer);
+allBinaryLayer= (layerManager!.getLayerAt(index) as AllBinaryLayer);
     
 this.stringBuilder!.append(allBinaryLayer!.getName())!.append(commonSeps!.COMMA);
     

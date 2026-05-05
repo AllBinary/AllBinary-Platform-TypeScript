@@ -109,7 +109,7 @@ public constructor (types: BasicArrayList){
     var index: number = 0;
 index < size; index++)
         {
-typeAsInteger= (types.get(index); as Integer);
+typeAsInteger= (types.get(index) as Integer);
     
 type= typeAsInteger;
     

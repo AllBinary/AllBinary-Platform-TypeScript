@@ -112,6 +112,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
 
+
         switch (direction) {
             
 
@@ -169,6 +170,7 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
     public getCellPositionNoThrow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
     //var direction = direction
     //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
+
 
 
         switch (direction) {

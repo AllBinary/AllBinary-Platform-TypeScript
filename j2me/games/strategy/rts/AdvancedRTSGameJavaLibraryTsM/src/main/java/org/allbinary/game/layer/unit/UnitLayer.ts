@@ -985,7 +985,7 @@ this.initSensorRangeAnimation= AdjustedCircleAnimation.createW(sensorRange, sens
     
 this.getUnitWaypointBehavior()!.initRange(weaponRange);
     
-this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime();));
+this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime()));
     
 }
 

@@ -81,6 +81,7 @@ export class BasicGeographicMapUtil
     
 
 
+
         switch (direction) {
             
 
@@ -142,6 +143,7 @@ export class BasicGeographicMapUtil
     var LOCATION_CHANGE: number = 1;
 ;
     
+
 
 
         switch (direction) {
