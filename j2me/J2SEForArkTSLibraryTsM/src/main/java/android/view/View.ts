@@ -4,6 +4,13 @@
 /*actual*/ export class View
          {
 
+  postInvalidate() {
+    throw new Error('Method not implemented.');
+  }
+  invalidate() {
+    throw new Error('Method not implemented.');
+  }
+
   static OnFocusChangeListener = class {
   };
 

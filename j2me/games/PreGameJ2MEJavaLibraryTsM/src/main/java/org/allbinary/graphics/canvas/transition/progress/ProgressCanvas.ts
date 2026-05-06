@@ -121,7 +121,7 @@ export class ProgressCanvas extends RunnableCanvas implements PaintableInterface
                                 
     public paint(graphics: Graphics){
 var graphics = graphics
-paint2(graphics);
+ProgressCanvas.prototype.paint2(graphics);
     
 }
 
@@ -130,31 +130,31 @@ paint2(graphics);
 
     allbinaryMidlet: AllBinaryMidlet = AllBinaryMidlet.NULL_ALLBINARY_MIDLET;
 
-    private value: number= 0.0f
+    private value: number= 0.0
 
     private readonly maxValue: number = 100.0;
 
     readonly gauge: ABCustomGaugeItem
 
-    private readonly TEXT: string = commonStrings!.LOADING;
+    private readonly TEXT: string = this.commonStrings!.LOADING;
 
     private text: string = this.TEXT;
 
     private background: boolean = true;
 
-    paintable: PaintableInterface = GAUGE_PAINTABLE;
+    paintable: PaintableInterface = this.GAUGE_PAINTABLE;
 
     public inProgress: boolean = false;
 
     private readonly IN_GAME_PROCESSOR: Processor = new class extends Processor
                                 {
                                 
-    var private readonly pathFindingThreadPool: ThreadPool = PathFindingThreadPool.getInstance()!;
+    private readonly pathFindingThreadPool: ThreadPool = PathFindingThreadPool.getInstance()!;
 
                 //@Throws(Exception.constructor)
             
     public process(){
-pathFindingThreadPool!.runAPriorityTask();
+this.pathFindingThreadPool!.runAPriorityTask();
     
 }
 
@@ -208,13 +208,13 @@ var cmdListener = cmdListener
 
 
     public start(){
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START_METHOD_NAME);
     
 this.setBackground(true);
     
 this.gauge.setHeight(30);
     
-this.gauge.setLabel(commonStrings!.PLEASE_WAIT);
+this.gauge.setLabel(this.commonStrings!.PLEASE_WAIT);
     
 this.setText(this.TEXT);
     
@@ -222,7 +222,7 @@ this.setValue(0);
     
 this.inGameProcessor= Processor.getInstance();
     
-this.paintable= GAUGE_PAINTABLE;
+this.paintable= this.GAUGE_PAINTABLE;
     
 this.inProgress= true;
     
@@ -235,7 +235,7 @@ this.inProgress= true;
 
     public startBackground(background: boolean){
 var background = background
-this.logUtil!.putF(commonStrings!.START, this, START_BACKGROUND);
+this.logUtil!.putF(this.commonStrings!.START, this, this.START_BACKGROUND);
     
 
     var myFont: MyFont = MyFont.getInstance()!;
@@ -253,7 +253,7 @@ this.setValue(0);
     
 this.inGameProcessor= Processor.getInstance();
     
-this.paintable= GAUGE_PAINTABLE;
+this.paintable= this.GAUGE_PAINTABLE;
     
 }
 
@@ -269,13 +269,13 @@ this.inGame();
 
 
     public inGame(){
-this.inGameProcessor= IN_GAME_PROCESSOR;
+this.inGameProcessor= this.IN_GAME_PROCESSOR;
     
 }
 
 
     public end(){
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
     
 this.gauge.setValue(this.getMaxValue());
     
@@ -289,7 +289,7 @@ this.paintable= NullPaintable.getInstance();
     public endFromInitialLazyLoadingComplete(){
 this.gauge.setValue(this.getMaxValue());
     
-this.inGameProcessor= IN_GAME_PROCESSOR;
+this.inGameProcessor= this.IN_GAME_PROCESSOR;
     
 }
 
@@ -321,7 +321,7 @@ var index = index
 this.setText(new StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
     
-PreLogUtil.put(this.text, this, ADD_PORTION);
+PreLogUtil.put(this.text, this, this.ADD_PORTION);
     
 this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
     
@@ -335,7 +335,7 @@ var text = text
                         if(this.text != text)
                         
                                     {
-                                    PreLogUtil.put(text, this, ADD_PORTION);
+                                    PreLogUtil.put(text, this, this.ADD_PORTION);
     
 
                                     }

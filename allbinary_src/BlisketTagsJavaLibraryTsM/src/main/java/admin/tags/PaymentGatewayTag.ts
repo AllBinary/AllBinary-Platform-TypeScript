@@ -120,7 +120,7 @@ this.logUtil!.put("LicensingException", this, commonStrings!.PROCESS, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -137,7 +137,7 @@ this.logUtil!.put("LicensingException", this, commonStrings!.PROCESS, e);
                             throw e;
                     
 }
-
+*/
 }
 
 

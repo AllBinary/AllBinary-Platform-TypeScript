@@ -137,12 +137,12 @@ this.showLicenseDialog(abeClientInformation, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.showLicenseDialog(abeClientInformation, e);
     
 }
-
+*/
 
 
 

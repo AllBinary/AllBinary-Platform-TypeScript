@@ -29,6 +29,9 @@
 import { Parcelable } from '../../../android/os/Parcelable.js';
 
     
+import { Parcel } from '../../../android/os/Parcel.js';
+
+    
 
 
 
@@ -47,8 +50,7 @@ import { Parcelable } from '../../../android/os/Parcelable.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Parcel } from './Parcel.js';
-
+        
 export class NullParcelable
             extends Object
          implements Parcelable {
@@ -68,7 +70,7 @@ export class NullParcelable
 }
 
 
-    public writeToParcel(dest: android.os.Parcel, flags: number){
+    public writeToParcel(dest: Parcel, flags: number){
 var dest = dest
 var flags = flags
 }

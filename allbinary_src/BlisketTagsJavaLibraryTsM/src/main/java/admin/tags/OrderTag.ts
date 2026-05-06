@@ -148,7 +148,7 @@ this.storeName= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to Process Order: ";
@@ -170,7 +170,7 @@ this.storeName= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -216,7 +216,7 @@ this.storeName= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to setPaymentGateway for Order";
@@ -238,7 +238,7 @@ this.storeName= value;
                         return Boolean.FALSE;
     
 }
-
+*/
 }
 
 
@@ -310,7 +310,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -321,7 +321,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

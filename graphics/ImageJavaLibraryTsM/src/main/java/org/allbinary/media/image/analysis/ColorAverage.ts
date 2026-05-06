@@ -52,11 +52,11 @@ export class ColorAverage
          {
         
 
-    private avgRed: number= 0.0f
+    private avgRed: number= 0.0
 
-    private avgGreen: number= 0.0f
+    private avgGreen: number= 0.0
 
-    private avgBlue: number= 0.0f
+    private avgBlue: number= 0.0
 public constructor (){
 
             super();

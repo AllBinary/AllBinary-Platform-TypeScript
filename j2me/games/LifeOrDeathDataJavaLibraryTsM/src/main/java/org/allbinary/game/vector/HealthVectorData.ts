@@ -48,28 +48,28 @@ export class HealthVectorData
 
     public static points: number[][][] = 
                                                         [
-                                                            arrayOf<IntArray?>(intArrayOf(2,1)
-,intArrayOf(3,2)
-,intArrayOf(3,2)
-,intArrayOf(4,1)
-,intArrayOf(4,1)
-,intArrayOf(5,1)
-,intArrayOf(5,1)
-,intArrayOf(6,2)
-,intArrayOf(6,2)
-,intArrayOf(6,3)
-,intArrayOf(6,3)
-,intArrayOf(3,6)
-,intArrayOf(3,6)
-,intArrayOf(0,3)
-,intArrayOf(0,3)
-,intArrayOf(0,2)
-,intArrayOf(0,2)
-,intArrayOf(1,1)
-,intArrayOf(1,1)
-,intArrayOf(2,1)
-,intArrayOf(1000,1000)
-)
+                                                            [[2,1]
+,[3,2]
+,[3,2]
+,[4,1]
+,[4,1]
+,[5,1]
+,[5,1]
+,[6,2]
+,[6,2]
+,[6,3]
+,[6,3]
+,[3,6]
+,[3,6]
+,[0,3]
+,[0,3]
+,[0,2]
+,[0,2]
+,[1,1]
+,[1,1]
+,[2,1]
+,[1000,1000]
+]
                                                         ];
 
 }

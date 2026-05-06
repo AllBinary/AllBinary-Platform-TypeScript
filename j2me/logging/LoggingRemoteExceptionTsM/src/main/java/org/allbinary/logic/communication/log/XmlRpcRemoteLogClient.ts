@@ -162,7 +162,7 @@ console.log("IOException Trying Other Servers");
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
 
@@ -171,9 +171,9 @@ console.log("IOException Trying Other Servers");
                         return this.tryAnother(anyType);;
     
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
 
@@ -182,7 +182,7 @@ console.log("IOException Trying Other Servers");
                         return this.tryAnother(anyType);;
     
 }
-
+*/
 }
 
 

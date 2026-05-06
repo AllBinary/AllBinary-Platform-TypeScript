@@ -194,19 +194,19 @@ logBuffer!.add(LogFactory.getInstance("Failed to Load Class: " +name +"\nwith: "
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 logBuffer!.add(LogFactory.getInstance("Failed to Load Class: " +name +"\nwith: " +loadedWith, this, this.LOAD_CLASS, e));
     
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 logBuffer!.add(LogFactory.getInstanceF("NoClassDefFoundError Failed Loaded Class: " +name +"\nwith: " +loadedWith, this, this.LOAD_CLASS));
     
 }
-
+*/
 
     var classBytes: number[] = this.loadClassBytesFromFile(name)!;
 ;
@@ -332,7 +332,7 @@ StreamUtil.getInstance()!.close(in);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var loadedWith: string = "loadClassBytes";
@@ -348,9 +348,9 @@ StreamUtil.getInstance()!.close(in);
                                     }
                                 
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var loadedWith: string = "loadClassBytes";
@@ -366,7 +366,7 @@ StreamUtil.getInstance()!.close(in);
                                     }
                                 
 }
-
+*/
 
 
 
@@ -437,7 +437,7 @@ var resolve = resolve
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADER))
@@ -449,9 +449,9 @@ var resolve = resolve
                                     }
                                 
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADER))
@@ -463,7 +463,7 @@ var resolve = resolve
                                     }
                                 
 }
-
+*/
 loadedWith= "loadClassBytes";
     
 

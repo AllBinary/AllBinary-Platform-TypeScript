@@ -148,7 +148,7 @@ this.NULL_INDEX_ANIMATION= NullRotationAnimationFactory.getFactoryInstance()!.ge
 this.animation= new class extends RotationAnimation
                                 {
                                 
-    var private index: number= 0
+    private index: number= 0
 
     public setFrame(index: number){
     //var index = index

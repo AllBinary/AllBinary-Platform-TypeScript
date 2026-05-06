@@ -52,7 +52,7 @@ export class ImageAnalysisResults
 
     private imageColorResults: ImageColorResults
 
-    private averageAmbientLevel: number= 0.0f
+    private averageAmbientLevel: number= 0.0
 public constructor (){
 
             super();

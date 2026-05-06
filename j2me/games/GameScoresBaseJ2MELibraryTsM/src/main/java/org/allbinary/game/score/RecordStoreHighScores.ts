@@ -256,19 +256,19 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
     
 }
-
+*/
          finally {
             
         try {
@@ -398,12 +398,12 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeLowestHighScore", e);
     
 }
-
+*/
          finally {
             
         try {
@@ -561,26 +561,26 @@ this.logUtil!.put("No High Scores", this, commonStrings!.LOAD, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
     
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
     
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(commonStrings!.UNKNOWN, this, commonStrings!.LOAD, e);
     
 }
-
+*/
          finally {
             
         try {

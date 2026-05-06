@@ -158,7 +158,7 @@ b.order(ByteOrder.nativeOrder());
 ;
     
 
-    var v: number= 0.0f
+    var v: number= 0.0
 ;
     
 

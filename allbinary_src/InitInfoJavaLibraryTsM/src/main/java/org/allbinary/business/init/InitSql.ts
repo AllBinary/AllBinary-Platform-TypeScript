@@ -719,7 +719,7 @@ stmt.close();
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.SQLLOGGINGERROR))
@@ -736,7 +736,7 @@ stmt.close();
                             throw e;
                     
 }
-
+*/
 }
 
 

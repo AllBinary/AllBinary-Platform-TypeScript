@@ -38,7 +38,7 @@ export class ABStringComponent
          {
         
 
-    public static readonly NULL_STRING_COMPONENT: ABStringComponent = new ABStringComponent();
+    public static readonly NULL_STRING_COMPONENT: ABStringComponent = new ABStringComponent(BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
 
     public getBackgroundBasicColor(): BasicColor{
 
@@ -49,9 +49,11 @@ export class ABStringComponent
     
 }
 
+public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
-    public setBackgroundBasicColor(backgroundBasicColor: BasicColor){
-var backgroundBasicColor = backgroundBasicColor
+            super();
+            //var backgroundBasicColor = backgroundBasicColor
+    //var foregroundBasicColor = foregroundBasicColor
 }
 
 

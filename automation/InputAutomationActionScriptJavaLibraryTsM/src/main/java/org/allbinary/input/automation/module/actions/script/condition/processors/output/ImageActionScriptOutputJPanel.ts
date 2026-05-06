@@ -321,7 +321,7 @@ displayJCheckBoxActionPerformed(evt);
 this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
                                 {
                                 
-    var strings: string[] = 
+    strings: string[] = 
                                                         [
                                                             "Item 1","Item 2","Item 3","Item 4","Item 5"
                                                         ];

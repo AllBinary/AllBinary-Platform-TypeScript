@@ -130,7 +130,7 @@ this.value= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to set Shipping Address";
@@ -152,7 +152,7 @@ this.value= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -198,7 +198,7 @@ this.value= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed Setting Shipping address to Billing Address";
@@ -220,7 +220,7 @@ this.value= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -300,7 +300,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -311,7 +311,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

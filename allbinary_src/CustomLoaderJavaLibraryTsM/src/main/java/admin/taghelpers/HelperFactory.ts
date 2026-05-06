@@ -141,7 +141,7 @@ params[1]= httpServletRequest as Object;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed To Get Instance";
@@ -163,7 +163,7 @@ params[1]= httpServletRequest as Object;
                         return null;
     
 }
-
+*/
 }
 
 
@@ -236,7 +236,7 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -258,7 +258,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                         return null;
     
 }
-
+*/
 }
 
 
@@ -336,7 +336,7 @@ logUtil!.put(error, factoryName +"->HelperFactory", "getInstance(String, String,
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -358,7 +358,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                         return null;
     
 }
-
+*/
 }
 
 
@@ -409,7 +409,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -431,7 +431,7 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                         return null;
     
 }
-
+*/
 }
 
 

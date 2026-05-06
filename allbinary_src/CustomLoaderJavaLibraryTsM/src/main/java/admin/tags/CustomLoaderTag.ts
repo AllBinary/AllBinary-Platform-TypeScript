@@ -143,7 +143,7 @@ setMethod!.invoke(anyType, methodArgs);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -155,7 +155,7 @@ setMethod!.invoke(anyType, methodArgs);
                                     }
                                 
 }
-
+*/
 }
 
 
@@ -214,7 +214,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -225,7 +225,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

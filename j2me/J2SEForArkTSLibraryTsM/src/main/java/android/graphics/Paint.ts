@@ -28,8 +28,12 @@ export type Style = InstanceType<typeof Paint.Style>;
     throw new Error("No Impl");
   }
 
-  public getTextSize(): number {
+  public getTextSize(size: number): number {
     throw new Error("No Impl");
+  }
+
+  public setTextSize(size: number) {
+    throw new Error('Method not implemented.');
   }
 
 }

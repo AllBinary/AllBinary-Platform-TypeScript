@@ -136,7 +136,7 @@ this.xsl= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to view a Category";
@@ -158,7 +158,7 @@ this.xsl= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -204,7 +204,7 @@ this.xsl= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to view a Categories";
@@ -226,7 +226,7 @@ this.xsl= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -324,7 +324,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -335,7 +335,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

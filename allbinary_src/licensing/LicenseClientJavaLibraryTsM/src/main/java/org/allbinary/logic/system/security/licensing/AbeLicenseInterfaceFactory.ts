@@ -176,7 +176,7 @@ this.logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
     
@@ -186,7 +186,7 @@ this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
                             throw new LicensingException("Unknown License Failure: " +thisconstructor.name.toString()!);
                     
 }
-
+*/
 }
 
 

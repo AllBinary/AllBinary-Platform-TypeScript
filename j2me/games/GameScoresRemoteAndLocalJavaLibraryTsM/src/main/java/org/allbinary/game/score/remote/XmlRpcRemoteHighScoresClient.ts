@@ -196,7 +196,7 @@ this.logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTra
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
     
@@ -207,9 +207,9 @@ this.logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
                         return this.tryAnother(anyType);;
     
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e);
     
@@ -220,7 +220,7 @@ this.logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e);
                         return this.tryAnother(anyType);;
     
 }
-
+*/
 }
 
 

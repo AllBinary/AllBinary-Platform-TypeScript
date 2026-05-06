@@ -179,7 +179,7 @@ stringBuffer!.append(this.basicURIResolver!.getExtension());
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
 
@@ -187,7 +187,7 @@ stringBuffer!.append(this.basicURIResolver!.getExtension());
                             throw new TransformerException(e);
                     
 }
-
+*/
 }
 
 

@@ -131,7 +131,7 @@ private constructor (){
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
@@ -149,7 +149,7 @@ private constructor (){
                         return null;
     
 }
-
+*/
 }
 
 
@@ -245,7 +245,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
@@ -275,7 +275,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                         return null;
     
 }
-
+*/
 }
 
 
@@ -347,7 +347,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.LOADERERROR))
@@ -365,7 +365,7 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
                         return null;
     
 }
-
+*/
 }
 
 

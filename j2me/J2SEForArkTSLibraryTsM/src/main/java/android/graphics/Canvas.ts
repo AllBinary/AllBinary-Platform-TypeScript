@@ -6,6 +6,9 @@ import { RectF } from './RectF';
 
 /*actual*/ export class Canvas
 {
+    save() {
+        throw new Error('Method not implemented.');
+    }
 
     public setBitmap(bitmap: Bitmap): void {
         throw new Error("No Impl");

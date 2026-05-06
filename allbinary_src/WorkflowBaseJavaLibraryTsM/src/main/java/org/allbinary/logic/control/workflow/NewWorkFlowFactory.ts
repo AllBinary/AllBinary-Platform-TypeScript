@@ -159,7 +159,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -180,7 +180,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                             throw e;
                     
 }
-
+*/
 }
 
 
@@ -244,7 +244,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERFACTORYERROR))
@@ -265,7 +265,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                             throw e;
                     
 }
-
+*/
 }
 
 

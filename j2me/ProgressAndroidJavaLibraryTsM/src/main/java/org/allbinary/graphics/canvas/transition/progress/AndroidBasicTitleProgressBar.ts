@@ -217,7 +217,7 @@ this.image= ImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgres
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 
@@ -253,7 +253,7 @@ this.updateCurrent();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 
@@ -323,7 +323,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
 }
 
@@ -349,7 +349,7 @@ this.updateCurrent();
                 //: 
 } catch(e) 
             {
-this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
@@ -399,14 +399,14 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
-this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
+this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +ExceptionUtil.getInstance()!.getStackTrace(e), this, "loadProgressImages");
     
 this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     
 }
-
+*/
 }
 
 
@@ -440,7 +440,7 @@ this.animation= NullAnimationFactory.getFactoryInstance()!.getInstance(0);
     public start(){
 
         try {
-            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.START_METHOD_NAME);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START_METHOD_NAME);
     
 super.start();
     
@@ -450,7 +450,7 @@ this.midletActivity!.runOnUiThread(this.showTitleProgressBarRunnable);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START_METHOD_NAME, e);
     
 }
 
@@ -460,7 +460,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NA
     public end(){
 
         try {
-            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.END_METHOD_NAME);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.END_METHOD_NAME);
     
 this.midletActivity!.runOnUiThread(this.dismissTitleProgressBarRunnable);
     
@@ -470,7 +470,7 @@ super.end();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHOD_NAME, e);
     
 }
 
@@ -500,7 +500,7 @@ super.addEarlyPortion(value, text, index);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
 }
 
@@ -523,7 +523,7 @@ this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRun
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
 }
 
@@ -545,7 +545,7 @@ this.midletActivity!.runOnUiThread(this.titleProgressDialogPortionSetProgressRun
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
 }
 
@@ -564,7 +564,7 @@ this.midletActivity!.runOnUiThread(this.titleProgressDialogSetProgressRunnable);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "setValue", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
     
 }
 
@@ -632,7 +632,7 @@ var lastHeight = lastHeight
             
     public initOpenGL(graphics: Graphics){
 var graphics = graphics
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgressBar.RESOURCE);
     
@@ -673,7 +673,7 @@ this.updateCurrent();
             
     public update(graphics: Graphics){
 var graphics = graphics
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.UPDATE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.UPDATE);
     
 this.initOpenGL(graphics);
     
@@ -754,7 +754,7 @@ super.paint2(graphics);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT, e);
     
 }
 

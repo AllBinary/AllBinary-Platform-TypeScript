@@ -185,7 +185,7 @@ this.status= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to set Order Status";
@@ -207,7 +207,7 @@ this.status= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -274,7 +274,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -285,7 +285,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

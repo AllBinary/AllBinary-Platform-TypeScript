@@ -120,7 +120,7 @@ private constructor (){
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 this.logUtil!.put("Licensing Failure", this, "getKey()", e);
     
@@ -130,7 +130,7 @@ this.logUtil!.put("Licensing Failure", this, "getKey()", e);
                             throw new LicensingException("Unknown License Failure");
                     
 }
-
+*/
 }
 
 

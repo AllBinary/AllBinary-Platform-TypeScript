@@ -112,7 +112,7 @@ export class SimpleFileUtil
                         return new class extends Writer
                                 {
                                 
-    var private closed: boolean= false
+    private closed: boolean= false
 
                 //@Throws(IOException.constructor)
             

@@ -142,7 +142,7 @@ response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SERVLETERROR))
@@ -156,7 +156,7 @@ response.sendRedirect(abcs.globals.URLGLOBALS.LICENSEERRORPAGE);
 response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE);
     
 }
-
+*/
 }
 
 

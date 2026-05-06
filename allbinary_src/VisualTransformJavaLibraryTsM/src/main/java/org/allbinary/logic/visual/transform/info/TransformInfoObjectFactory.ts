@@ -217,7 +217,7 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed To Get Instance: ";
@@ -253,7 +253,7 @@ this.logUtil!.put(error, this, commonStrings!.GET_INSTANCE, e);
                             throw e;
                     
 }
-
+*/
 }
 
 

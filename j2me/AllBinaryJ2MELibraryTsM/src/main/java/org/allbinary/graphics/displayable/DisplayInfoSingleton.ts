@@ -138,7 +138,7 @@ export class DisplayInfoSingleton
 
     private yOffset: number= 0
 
-    private scaleLargestTo: number= 0.0f
+    private scaleLargestTo: number= 0.0
 
     public readonly WIDTH: number = 0;
 
@@ -150,7 +150,7 @@ export class DisplayInfoSingleton
 
     private scalableListener: BaseScalable = new BaseScalable();
 
-    private displayRatio: number= 0.0f
+    private displayRatio: number= 0.0
 
     private ratio: number = 1.0;
 private constructor (){

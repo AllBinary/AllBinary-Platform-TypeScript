@@ -144,7 +144,7 @@ this.storeName= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
@@ -162,7 +162,7 @@ this.storeName= value;
                         return true;
     
 }
-
+*/
 }
 
 
@@ -204,7 +204,7 @@ this.storeName= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to add item from Basket";
@@ -226,7 +226,7 @@ this.storeName= value;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -268,7 +268,7 @@ this.storeName= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to remove item from Basket";
@@ -290,7 +290,7 @@ this.storeName= value;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -332,7 +332,7 @@ this.storeName= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to Adjust Basket";
@@ -354,7 +354,7 @@ this.storeName= value;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -449,7 +449,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -460,7 +460,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

@@ -187,7 +187,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.uriResolverStrings!.RESO
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
 
@@ -195,7 +195,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.uriResolverStrings!.RESO
                             throw new TransformerException(e);
                     
 }
-
+*/
 }
 
 

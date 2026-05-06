@@ -122,7 +122,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to generate storefronts select";
@@ -144,7 +144,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         return error;
     
 }
-
+*/
 }
 
 
@@ -185,7 +185,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to generate storefronts select";
@@ -207,7 +207,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         return error;
     
 }
-
+*/
 }
 
 
@@ -248,7 +248,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to send email";
@@ -270,7 +270,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         return error;
     
 }
-
+*/
 }
 
 
@@ -374,7 +374,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -385,7 +385,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

@@ -133,7 +133,7 @@ this.storeName= storeName;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to send QuoteRequest emails";
@@ -155,7 +155,7 @@ this.storeName= storeName;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -221,7 +221,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -232,7 +232,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

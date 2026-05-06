@@ -119,7 +119,7 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
                                 new class extends Paintable
                                 {
                                 
-    var private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
+    private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
     public paint(graphics: Graphics){
 var graphics = graphics

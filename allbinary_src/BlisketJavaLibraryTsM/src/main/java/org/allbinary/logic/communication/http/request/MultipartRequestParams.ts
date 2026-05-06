@@ -209,7 +209,7 @@ super.setMap(request.getParameterMap());
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUESTERROR))
@@ -223,7 +223,7 @@ super.setMap(request.getParameterMap());
 super.setMap(request.getParameterMap());
     
 }
-
+*/
 }
 
 

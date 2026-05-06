@@ -94,11 +94,11 @@ export class TitleAnimation extends SpecialAnimation {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    public deltaX: number= 0.0f
+    public deltaX: number= 0.0
 
-    public deltaY: number= 0.0f
+    public deltaY: number= 0.0
 
-    public deltaZ: number= 0.0f
+    public deltaZ: number= 0.0
 
     readonly basicColorArray: BasicColor[]
 

@@ -150,7 +150,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -159,9 +159,9 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
 }
-
+*/
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -170,7 +170,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
     
 }
-
+*/
 
                         if(this.isHighestBest)
                         

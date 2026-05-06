@@ -64,7 +64,7 @@ export class OpenGLESImageProperties
 
     public bluef: number = 1.0;
 
-    public alphaf: number= 0.0f
+    public alphaf: number= 0.0
 
 }
                 

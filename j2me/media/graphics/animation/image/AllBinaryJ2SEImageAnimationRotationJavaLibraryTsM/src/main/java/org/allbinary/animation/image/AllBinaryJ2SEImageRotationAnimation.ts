@@ -107,9 +107,9 @@ export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimat
 
     private scaleY: number = 1.0;
 
-    private maxScaleX: number= 0.0f
+    private maxScaleX: number= 0.0
 
-    private maxScaleY: number= 0.0f
+    private maxScaleY: number= 0.0
 
     private alphaProcessor: ModifierBaseProcessor = ModifierBaseProcessor.getInstance()!;
 

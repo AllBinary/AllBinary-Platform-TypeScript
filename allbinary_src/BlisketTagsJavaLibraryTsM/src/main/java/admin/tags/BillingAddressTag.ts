@@ -1,18 +1,4 @@
 
-        /*
-                * 
-                *  AllBinary Open License Version 1
-                *  Copyright (c) 2011 AllBinary
-                *  
-                *  By agreeing to this license you and any business entity you represent are
-                *  legally bound to the AllBinary Open License Version 1 legal agreement.
-                *  
-                *  You may obtain the AllBinary Open License Version 1 legal agreement from
-                *  AllBinary or the root directory of AllBinary's AllBinary Platform repository.
-                *  
-                *  Created By: Travis Berthelot  
-        */
-        
         /* Generated Code Do Not Modify */
         
 
@@ -130,7 +116,7 @@ this.value= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to set billing Address";
@@ -152,7 +138,7 @@ this.value= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -198,7 +184,7 @@ this.value= value;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to Set Billing address to Shipping Address";
@@ -220,7 +206,7 @@ this.value= value;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -300,7 +286,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -311,7 +297,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

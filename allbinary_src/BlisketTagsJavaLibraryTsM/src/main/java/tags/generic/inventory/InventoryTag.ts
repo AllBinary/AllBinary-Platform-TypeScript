@@ -115,7 +115,7 @@ pageContext!.getOut()!.print(result);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to search Inventory by keyword";
@@ -152,7 +152,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 }
 
 }
-
+*/
 }
 
 
@@ -194,7 +194,7 @@ pageContext!.getOut()!.print(result);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to View Summary";
@@ -231,7 +231,7 @@ pageContext!.getOut()!.print("Exception: " +e +"<br>");
 }
 
 }
-
+*/
 }
 
 
@@ -333,7 +333,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -344,7 +344,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 

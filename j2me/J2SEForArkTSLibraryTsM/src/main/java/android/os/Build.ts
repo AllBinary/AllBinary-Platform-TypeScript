@@ -74,5 +74,9 @@ import { BusinessError } from '@ohos.base';
   public static readonly TYPE: string = ArkTsBuild.deviceType;
   public static readonly USER: string = ArkTsBuild.buildUser;
 
+  public static VERSION = class {
+    public static readonly SDK: string = ArkTsBuild.sdkApiVersion.toString(10);
+  }
+
 }
 

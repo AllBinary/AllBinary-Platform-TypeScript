@@ -197,7 +197,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -215,7 +215,7 @@ this.roles= values;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -261,7 +261,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -279,7 +279,7 @@ this.roles= values;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -325,7 +325,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -343,7 +343,7 @@ this.roles= values;
                         return TagSupport.SKIP_BODY;
     
 }
-
+*/
 }
 
 
@@ -389,7 +389,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -407,7 +407,7 @@ this.roles= values;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -465,7 +465,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -483,7 +483,7 @@ this.roles= values;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -529,7 +529,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to set valid role";
@@ -551,7 +551,7 @@ this.roles= values;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -597,7 +597,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
     var error: string = "Failed to set role invalid";
@@ -619,7 +619,7 @@ this.roles= values;
                         return error;
     
 }
-
+*/
 }
 
 
@@ -677,7 +677,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -695,7 +695,7 @@ this.roles= values;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -753,7 +753,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -771,7 +771,7 @@ this.roles= values;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -817,7 +817,7 @@ this.roles= values;
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAGERROR))
@@ -835,7 +835,7 @@ this.roles= values;
                         return false;
     
 }
-
+*/
 }
 
 
@@ -1300,7 +1300,7 @@ AbResponseHandler.sendJspTagLicensingRedirect(this.pageContext, e);
 }
 
                 //: 
- catch(e) 
+/* catch(e) 
             {
 AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
     
@@ -1311,7 +1311,7 @@ AbResponseHandler.sendJspTagRedirect(this.pageContext, e);
                         return SKIP_BODY;
     
 }
-
+*/
 }
 
 
