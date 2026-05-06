@@ -8,6 +8,10 @@ import ArtTsVector from '@ohos.util.Vector';
              return super.has(object);
            }
 
+           public setElementAt(object: any, index: number): void {
+               super.set(index, object);
+           }
+
            public elementAt(index: number): any {
              return super.get(index);
            }
