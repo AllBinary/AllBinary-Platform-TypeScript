@@ -1423,7 +1423,7 @@ this.rtsLogHelper!.turnTo(this, dx, dy, angleInfo, angle, movementAngle, evading
                                     }
                                 
                              else 
-                        if((Math.round(this.movementAngle!.getValue();)) == angle)
+                        if((Math.round(this.movementAngle!.getValue())) == angle)
                         
                                     {
                                     
