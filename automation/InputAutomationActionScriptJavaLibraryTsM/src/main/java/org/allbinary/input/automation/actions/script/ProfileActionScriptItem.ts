@@ -155,7 +155,7 @@ this.getJPopupMenu()!.add(jMenuItemDelete);
 
                 //@Throws(Exception.constructor)
             
-    public process(frame: number){
+    public process(frame: Long){
 var frame = frame
 
 

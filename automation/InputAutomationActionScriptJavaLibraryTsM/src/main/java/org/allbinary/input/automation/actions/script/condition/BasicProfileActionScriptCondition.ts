@@ -614,7 +614,7 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.getActionScriptJTree()
 
                 //@Throws(Exception.constructor)
             
-    public shouldProcess(frame: number): boolean{
+    public shouldProcess(frame: Long): boolean{
 var frame = frame
 
     var profileActionConditionInterfaceVector: Vector = this.getProfileActionConditionInterfaceVector()!;
@@ -662,7 +662,7 @@ index < size; index++)
 
                 //@Throws(Exception.constructor)
             
-    public process(frame: number){
+    public process(frame: Long){
 var frame = frame
 this.logUtil!.putF(new StringMaker().
                             append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, commonStrings!.PROCESS);

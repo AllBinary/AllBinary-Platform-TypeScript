@@ -119,7 +119,7 @@ this.fire(message);
 }
 
 
-    private readonly TWO: number = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
+    private readonly TWO: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
 
     private readonly FALSE: Boolean = BooleanFactory.getInstance()!.FALSE;
 

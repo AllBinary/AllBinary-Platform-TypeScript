@@ -312,9 +312,8 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST
 index < size; index++)
         {
 
-    var nextId: number = get = vector.get(index);get as Integer
-get.
-                    toInt()!;
+    var nextId: number = 
+                                    (get as Integer).intValue()!;
 ;
     
 

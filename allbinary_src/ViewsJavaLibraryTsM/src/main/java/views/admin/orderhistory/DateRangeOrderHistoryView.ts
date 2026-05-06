@@ -580,7 +580,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
     var oneHour: number = 60 *60 *1000;
 ;
     
-rangeDate= oneHour.
+rangeDate= new Long(oneHour).
                             toString();
     
 
@@ -594,7 +594,7 @@ rangeDate= oneHour.
     var oneDay: number = 24 *60 *60 *1000;
 ;
     
-rangeDate= oneDay.
+rangeDate= new Long(oneDay).
                             toString();
     
 
@@ -608,7 +608,7 @@ rangeDate= oneDay.
     var oneWeek: number = 7 *24 *60 *60 *1000;
 ;
     
-rangeDate= oneWeek.
+rangeDate= new Long(oneWeek).
                             toString();
     
 
@@ -622,7 +622,7 @@ rangeDate= oneWeek.
     var thirtyDays: number = 30 *24 *60 *60 *1000;
 ;
     
-rangeDate= thirtyDays.
+rangeDate= new Long(thirtyDays).
                             toString();
     
 
@@ -632,22 +632,22 @@ rangeDate= thirtyDays.
                         if(this.command.localeCompare(this.VIEWALLORDERS) == 0)
                         
                                     {
-                                    rangeDate= currentTime.
+                                    rangeDate= new Long(currentTime).
                             toString();
     
 
                                     }
                                 
 
-    var rangeDateLong: number = rangeDate.
+    var rangeDateLong: number = new Long(rangeDate).
                             longValue()!;
 ;
     
-this.fromDate= currentTime -rangeDateLong.
+this.fromDate= new Long(currentTime -rangeDateLong).
                             toString();
     
 
-    var time: string = currentTime.
+    var time: string = new Long(currentTime).
                             toString();
 ;
     
@@ -666,12 +666,12 @@ this.toDate= time;
     
 TimeUtil.getInstance()!.setCalendar(calendar, this.fromYear, this.fromMonth, this.fromDay, this.fromHour);
     
-this.fromDate= calendar.getTimeInMillis().
+this.fromDate= new Long(calendar.getTimeInMillis()).
                             toString();
     
 TimeUtil.getInstance()!.setCalendar(calendar, this.toYear, this.toMonth, this.toDay, this.toHour);
     
-this.toDate= calendar.getTimeInMillis().
+this.toDate= new Long(calendar.getTimeInMillis()).
                             toString();
     
 

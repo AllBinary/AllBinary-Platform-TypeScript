@@ -138,7 +138,7 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
     //var basicColor = basicColor
 this.basicColor= basicColor;
     
-this.colorP= this.basicColor!.toInt();
+this.colorP= this.basicColor!.intValue();
     
 }
 
@@ -157,7 +157,7 @@ this.colorP= this.basicColor!.toInt();
     //var basicColor = basicColor
 this.changeBasicColorP= basicColor;
     
-this.changeColorP= this.changeBasicColorP!.toInt();
+this.changeColorP= this.changeBasicColorP!.intValue();
     
 }
 

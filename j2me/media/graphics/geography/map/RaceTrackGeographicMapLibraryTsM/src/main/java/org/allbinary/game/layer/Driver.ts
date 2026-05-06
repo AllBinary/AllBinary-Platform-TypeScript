@@ -54,12 +54,12 @@ export class Driver
 
     public static readonly NULL_DRIVER: Driver = new Driver(SmallIntegerSingletonFactory.getInstance()!.getAt(0), SmallIntegerSingletonFactory.getInstance()!.getAt(0), new Aggression(SmallIntegerSingletonFactory.getInstance()!.getAt(0), SmallIntegerSingletonFactory.getInstance()!.getAt(0), SmallIntegerSingletonFactory.getInstance()!.getAt(0)));
 
-    private turnSpeed: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    private turnSpeed: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private trackPathSelectionSkill: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    private trackPathSelectionSkill: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
     private aggression: Aggression
-public constructor (turnSpeed: number, trackPathSelectionSkill: number, aggression: Aggression){
+public constructor (turnSpeed: Integer, trackPathSelectionSkill: Integer, aggression: Aggression){
 
             super();
         var turnSpeed = turnSpeed
@@ -74,7 +74,7 @@ this.aggression= aggression;
 }
 
 
-    public getTurnSpeed(): number{
+    public getTurnSpeed(): Integer{
 
 
 
@@ -84,14 +84,14 @@ this.aggression= aggression;
 }
 
 
-    public setTurnSpeed(turnSpeed: number){
+    public setTurnSpeed(turnSpeed: Integer){
 var turnSpeed = turnSpeed
 this.turnSpeed= turnSpeed;
     
 }
 
 
-    public getTrackPathSelectionSkill(): number{
+    public getTrackPathSelectionSkill(): Integer{
 
 
 
@@ -101,7 +101,7 @@ this.turnSpeed= turnSpeed;
 }
 
 
-    public setTrackPathSelectionSkill(trackPathSelectionSkill: number){
+    public setTrackPathSelectionSkill(trackPathSelectionSkill: Integer){
 var trackPathSelectionSkill = trackPathSelectionSkill
 this.trackPathSelectionSkill= trackPathSelectionSkill;
     

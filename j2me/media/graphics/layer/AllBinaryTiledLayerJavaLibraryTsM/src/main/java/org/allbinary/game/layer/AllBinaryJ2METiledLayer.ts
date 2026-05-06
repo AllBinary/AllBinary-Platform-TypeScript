@@ -65,7 +65,7 @@ export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
     readonly tiledLayerP: TiledLayer
 
     readonly debugColor: number
-public constructor (dataId: number, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number){
+public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number){
             super(dataId, tiledLayer!.getWidth(), tiledLayer!.getHeight(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight());
                         //var dataId = dataId
     //var tiledLayer = tiledLayer

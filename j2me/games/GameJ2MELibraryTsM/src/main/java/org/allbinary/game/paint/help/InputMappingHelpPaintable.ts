@@ -424,7 +424,7 @@ stringBuffer!.append(key.getName());
     var beginWidth: number = (font.stringWidth(this.title)>>1);
 ;
     
-graphics.setColor(this.basicColor!.toInt());
+graphics.setColor(this.basicColor!.intValue());
     
 graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
     
@@ -495,7 +495,7 @@ stringMaker!.delete(0, stringMaker!.length());
     
 beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappings)!.toString())>>1);
     
-graphics.setColor(this.actionBasicColor[index]!.toInt());
+graphics.setColor(this.actionBasicColor[index]!.intValue());
     
 graphics.drawString(actionString, halfWidth -beginWidth +deltaX, y, anchor);
     
@@ -511,7 +511,7 @@ index2 < size2; index2++)
         {
 input= list.objectArray[index2]! as Input;
     
-graphics.setColor(this.inputBasicColorArray[index]![index2]!.toInt());
+graphics.setColor(this.inputBasicColorArray[index]![index2]!.intValue());
     
 graphics.drawString(input.getName(), halfWidth -beginWidth +deltaX, y, anchor);
     
@@ -558,7 +558,7 @@ sep= EMPTY_STRING;
                         if(sep != EMPTY_STRING)
                         
                                     {
-                                    graphics.setColor(this.basicColor!.toInt());
+                                    graphics.setColor(this.basicColor!.intValue());
     
 graphics.drawString(sep, halfWidth -beginWidth +deltaX, y, anchor);
     

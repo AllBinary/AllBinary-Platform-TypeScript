@@ -107,7 +107,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-    var keys: number[] = this.keys;
+    var keys: Integer[] = this.keys;
 ;
     
 
@@ -128,7 +128,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 index < size; index++)
         {
 
-    var key: number = keys[index]!.toInt()!;
+    var key: number = keys[index]!.intValue()!;
 ;
     
 
@@ -155,7 +155,7 @@ index < size; index++)
 index < size; index++)
         {
 
-    var key: number = keys[index]!.toInt()!;
+    var key: number = keys[index]!.intValue()!;
 ;
     
 

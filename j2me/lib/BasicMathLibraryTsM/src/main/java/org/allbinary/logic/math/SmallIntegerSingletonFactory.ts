@@ -64,7 +64,7 @@ export class SmallIntegerSingletonFactory
 
     public readonly POSITIVE_MAX: number = 0x2D1;
 
-    private readonly INTEGER_ARRAY: number[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
+    private readonly INTEGER_ARRAY: Integer[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
 
     private readonly STRING_ARRAY: string[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
 
@@ -85,7 +85,7 @@ var negativeValue = negativeValue
     var index: number = value -1;
 index >= this.lastMin; index--)
         {
-this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
     
 }
 
@@ -97,7 +97,7 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
     var index: number = negativeValue -1;
 index >= this.lastNegativeMin; index--)
         {
-this.INTEGER_ARRAY[index]=  -index;
+this.INTEGER_ARRAY[index]= new Integer( -index);
     
 }
 
@@ -137,7 +137,7 @@ this.MIN= value;
     var index: number = this.POSITIVE_MAX -1;
 index >= this.lastMin; index--)
         {
-this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Integer(index);
     
 }
 
@@ -149,7 +149,7 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
     var index: number = this.NEGATIVE_MAX -1;
 index >= this.lastNegativeMin; index--)
         {
-this.INTEGER_ARRAY[index]=  -index;
+this.INTEGER_ARRAY[index]= new Integer( -index);
     
 }
 
@@ -168,7 +168,7 @@ private constructor (){
         }
 
 
-    public getAt(index: number): number{
+    public getAt(index: number): Integer{
 var index = index
 
 
@@ -179,7 +179,7 @@ var index = index
 }
 
 
-    public getAtNoThrow(index: number): number{
+    public getAtNoThrow(index: number): Integer{
 var index = index
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
@@ -203,10 +203,10 @@ var index = index
 }
 
 
-    public createInstance(index: number): number{
+    public createInstance(index: number): Integer{
 var index = index
 
-    var integer: number = this.getAt(index)!;
+    var integer: Integer = this.getAt(index)!;
 ;
     
 
@@ -215,7 +215,7 @@ var index = index
                                 )
                         
                                     {
-                                    integer= index;
+                                    integer= new Integer(index);
     
 
                                     }

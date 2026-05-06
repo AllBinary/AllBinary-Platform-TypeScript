@@ -155,11 +155,11 @@ new class extends Thread
 ;
     
 
-    var totalFrames: number = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string))!;
+    var totalFrames: Integer = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string))!;
 ;
     
 
-    var totalAnimations: number = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string))!;
+    var totalAnimations: Integer = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string))!;
 ;
     
 
@@ -178,7 +178,7 @@ new class extends Thread
     var increaseHeight: number = Integer(Integer.valueOf(increaseHeightTextField!.getText()))!;
 ;
     
-spriteSplitterUtil!.process(SpriteSplitterImageJPanel.this.prototype.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, SpriteSplitterImageJPanel.this.prototype);
+spriteSplitterUtil!.process(SpriteSplitterImageJPanel.prototype.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, SpriteSplitterImageJPanel.prototype);
     
 
                 //: 
@@ -210,13 +210,13 @@ this.jPanel1= new class extends javax.swing.JPanel
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(SpriteSplitterImageJPanel.this.prototype.result != 
+                        if(SpriteSplitterImageJPanel.prototype.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(SpriteSplitterImageJPanel.this.prototype.result, 0, 0, SpriteSplitterImageJPanel.this.prototype.result.getWidth(
-                            null), SpriteSplitterImageJPanel.this.prototype.result.getHeight(
+                                    graphics.drawImage(SpriteSplitterImageJPanel.prototype.result, 0, 0, SpriteSplitterImageJPanel.prototype.result.getWidth(
+                            null), SpriteSplitterImageJPanel.prototype.result.getHeight(
                             null), 
                             null);
     
@@ -589,7 +589,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.this.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(SpriteSplitterImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF(new StringMaker().

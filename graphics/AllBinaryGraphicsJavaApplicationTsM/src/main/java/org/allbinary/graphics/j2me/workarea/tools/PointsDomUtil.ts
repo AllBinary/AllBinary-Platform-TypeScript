@@ -103,7 +103,7 @@ export class PointsDomUtil
 var canvasDom = canvasDom
 var pointVector = pointVector
 
-    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new number(canvasDom!.getAngle()), PointFactory.getInstance()!.createXY(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
+    var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new Double(canvasDom!.getAngle()), PointFactory.getInstance()!.createXY(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
 ;
     
 

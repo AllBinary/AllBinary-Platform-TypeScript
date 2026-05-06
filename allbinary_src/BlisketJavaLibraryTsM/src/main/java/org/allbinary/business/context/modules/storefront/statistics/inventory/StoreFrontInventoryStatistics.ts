@@ -109,7 +109,7 @@ index < size; index++)
 ;
     
 
-    var numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.toInt()!;
+    var numberInStock: number = Integer.valueOf(itemInterface!.getNumber())!.intValue()!;
 ;
     
 this.totalNumberOfItems= this.totalNumberOfItems +numberInStock;
@@ -127,12 +127,12 @@ this.totalInventorySaleValueMoney!.add(itemPriceMoney!.toString());
 }
 
 
-    public getNumber(): number{
+    public getNumber(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.totalNumberOfItems;
+                        return new Long(this.totalNumberOfItems);
     
 }
 

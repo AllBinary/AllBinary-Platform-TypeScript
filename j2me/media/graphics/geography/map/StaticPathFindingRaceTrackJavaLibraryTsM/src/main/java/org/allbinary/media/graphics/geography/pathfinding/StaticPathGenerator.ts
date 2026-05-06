@@ -181,7 +181,7 @@ list.add(geographicMapCellPosition);
 ;
     
 
-    var mapIdInteger: number = geographicMapInterface!.getAllBinaryTiledLayer()!.getDataId()!;
+    var mapIdInteger: Integer = geographicMapInterface!.getAllBinaryTiledLayer()!.getDataId()!;
 ;
     
 
@@ -203,7 +203,7 @@ list.add(geographicMapCellPosition);
 ;
     
 
-    var id: number = PathData.getInstance()!.OFFSET +mapIdInteger;
+    var id: number = PathData.getInstance()!.OFFSET +mapIdInteger!.intValue();
 ;
     
 

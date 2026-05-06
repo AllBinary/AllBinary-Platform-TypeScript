@@ -186,7 +186,7 @@ capturedImageWorkerResultsEvent[1]= this.bufferedImageVector!.get(1) as Captured
 ;
     
 
-    var frame: number = capturedImageWorkerResultsEvent[1]!.getFrame()!;
+    var frame: Long = capturedImageWorkerResultsEvent[1]!.getFrame()!;
 ;
     
 

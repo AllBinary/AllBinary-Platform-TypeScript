@@ -262,7 +262,7 @@ tempBufferedImageArray[index]= bufferedImage;
 ;
     
 
-    var averageRatioString: string = new number(averageRatio).
+    var averageRatioString: string = new Double(averageRatio).
                             toString()!;
 ;
     
@@ -390,12 +390,12 @@ this.updateUI();
                                     {
                                     this.imageUnifierProperties= new ImageUnifierProperties();
     
-this.imageUnifierProperties!.setRows(this.rowsJTextField!.getText());
+this.imageUnifierProperties!.setRows(new Integer(this.rowsJTextField!.getText()));
     
-this.imageUnifierProperties!.setColumns(this.columnsJTextField!.getText());
+this.imageUnifierProperties!.setColumns(new Integer(this.columnsJTextField!.getText()));
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(this.cellWidthJTextField!.getText(), this.cellHeightJTextField!.getText());
+    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(new Integer(this.cellWidthJTextField!.getText()), new Integer(this.cellHeightJTextField!.getText()));
 ;
     
 this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
@@ -405,7 +405,7 @@ this.imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
 ;
     
 
-    var cellRatioString: string = new number(cellRatio).
+    var cellRatioString: string = new Double(cellRatio).
                             toString()!;
 ;
     

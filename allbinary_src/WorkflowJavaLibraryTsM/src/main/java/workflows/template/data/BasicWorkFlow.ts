@@ -151,7 +151,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 
                 //@Throws(Exception.constructor)
             
-    public process(): number{
+    public process(): Integer{
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.WORKFLOW))
                         

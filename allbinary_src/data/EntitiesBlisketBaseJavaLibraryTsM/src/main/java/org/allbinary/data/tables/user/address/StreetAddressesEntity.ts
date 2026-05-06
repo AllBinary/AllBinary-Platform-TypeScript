@@ -113,7 +113,7 @@ this.userName= userName;
 }
 
 
-    public remove(index: number){
+    public remove(index: Integer){
 var index = index
 
         try {
@@ -123,7 +123,7 @@ var index = index
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(StreetAddressData.ID, index as string);
+whereHashMap!.put(StreetAddressData.ID, index.toString() as string);
     
 super.deleteWhere(whereHashMap);
     
@@ -193,7 +193,7 @@ values.add(address.getCountry());
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -367,7 +367,7 @@ index < size; index++)
 }
 
 
-    public get(index: number): StreetAddress{
+    public get(index: Integer): StreetAddress{
 var index = index
 
         try {
@@ -377,7 +377,7 @@ var index = index
     
 keyAndValue!.put(UserData.USERNAME, userName);
     
-keyAndValue!.put(StreetAddressData.ID, index);
+keyAndValue!.put(StreetAddressData.ID, index.toString());
     
 
     var addressHashMap: HashMap<any, any> = super.getRow(keyAndValue)!;

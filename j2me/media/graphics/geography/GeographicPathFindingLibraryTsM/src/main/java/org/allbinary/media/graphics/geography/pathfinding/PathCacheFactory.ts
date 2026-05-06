@@ -90,7 +90,7 @@ private constructor (){
 }
 
 
-    public add(pathId: number, list: BasicArrayList){
+    public add(pathId: Integer, list: BasicArrayList){
     //var pathId = pathId
     //var list = list
 this.hashtable.put(pathId, list);
@@ -98,7 +98,7 @@ this.hashtable.put(pathId, list);
 }
 
 
-    public remove(pathId: number){
+    public remove(pathId: Integer){
     //var pathId = pathId
 this.hashtable.remove(pathId);
     
@@ -127,7 +127,7 @@ this.hashtable.clear();
 
                 //@Throws(Exception.constructor)
             
-    public getOrCreate(pathIdInteger: number): BasicArrayList{
+    public getOrCreate(pathIdInteger: Integer): BasicArrayList{
     //var pathIdInteger = pathIdInteger
 
     var listCanBeNull: any = this.hashtable.get(pathIdInteger as Object);

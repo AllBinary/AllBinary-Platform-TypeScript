@@ -216,7 +216,7 @@ this.endPage= value;
 }
 
 
-    public getLengthInt(): number{
+    public getLengthInt(): Integer{
 
                         if(this.listLength != 
                                     null
@@ -227,7 +227,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.listLength;
+                        return new Integer(this.listLength);
     
 
                                     }
@@ -258,7 +258,7 @@ this.endPage= value;
 }
 
 
-    public getStartPageInt(): number{
+    public getStartPageInt(): Integer{
 
                         if(this.startPage != 
                                     null
@@ -269,7 +269,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.startPage;
+                        return new Integer(this.startPage);
     
 
                                     }
@@ -280,7 +280,7 @@ this.endPage= value;
 }
 
 
-    public getEndPageInt(): number{
+    public getEndPageInt(): Integer{
 
                         if(this.endPage != 
                                     null
@@ -291,7 +291,7 @@ this.endPage= value;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.endPage;
+                        return new Integer(this.endPage);
     
 
                                     }
@@ -332,7 +332,7 @@ paramsNode!.appendChild(this.getLengthNode(document));
     getFieldsNode(document: Document): Node{
 var document = document
 
-    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, this.columnsAndSearchValues!.size().
+    var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).
                             toString())!;
 ;
     

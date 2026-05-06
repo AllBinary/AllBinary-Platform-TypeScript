@@ -63,7 +63,7 @@ export class AllBinaryVibration extends AllBinaryVibrationME {
 
     public static init(){
 
-                        if(GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.toInt() == 0)
+                        if(GameConfigurationCentral.getInstance()!.VIBRATION.getValue()!.intValue() == 0)
                         
                                     {
                                     AllBinaryVibration.VIBRATION= AllBinaryNoVibration.NO_VIBRATION;

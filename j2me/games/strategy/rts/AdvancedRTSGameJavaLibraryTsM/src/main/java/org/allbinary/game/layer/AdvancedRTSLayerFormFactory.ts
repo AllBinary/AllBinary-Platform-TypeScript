@@ -27,7 +27,7 @@
 import { RTSLayerFormFactory } from '../../../../org/allbinary/game/input/RTSLayerFormFactory.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
@@ -81,7 +81,7 @@ protected constructor (label: string, itemArrayFactoryInterface: ItemArraySingle
 
         try {
             
-    var items: CustomItem[] = itemArrayFactoryInterface!.getItems()!;
+    var items: ABCustomItem[] = itemArrayFactoryInterface!.getItems()!;
 ;
     
 scrollSelectionForm= RTSScrollSelectionFormFactory.getInstance(label, items);

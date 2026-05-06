@@ -133,7 +133,7 @@ this.x2= newX2;
                                     {
                                     this.basicColor= this.basicColorFactory!.GREEN;
     
-this.colorP= this.basicColor!.toInt();
+this.colorP= this.basicColor!.intValue();
     
 
                                     }
@@ -144,7 +144,7 @@ this.colorP= this.basicColor!.toInt();
                                     {
                                     this.basicColor= this.basicColorFactory!.YELLOW;
     
-this.colorP= this.basicColor!.toInt();
+this.colorP= this.basicColor!.intValue();
     
 
                                     }
@@ -155,7 +155,7 @@ this.colorP= this.basicColor!.toInt();
                                     {
                                     this.basicColor= this.basicColorFactory!.ORANGE;
     
-this.colorP= this.basicColor!.toInt();
+this.colorP= this.basicColor!.intValue();
     
 
                                     }
@@ -163,7 +163,7 @@ this.colorP= this.basicColor!.toInt();
                         else {
                             this.basicColor= this.basicColorFactory!.RED;
     
-this.colorP= this.basicColor!.toInt();
+this.colorP= this.basicColor!.intValue();
     
 
                         }

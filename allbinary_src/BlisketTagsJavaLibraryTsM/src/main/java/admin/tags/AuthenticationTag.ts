@@ -303,7 +303,7 @@ this.roles= values;
 ;
     
 
-    var resultInteger: number = method.invoke(anyType, 
+    var resultInteger: Integer = method.invoke(anyType, 
                             null) as Integer;
 ;
     
@@ -311,7 +311,7 @@ this.roles= values;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return resultInteger;;
+                        return resultInteger!.intValue();;
     
 
                 //: 

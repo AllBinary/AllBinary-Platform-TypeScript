@@ -28,7 +28,7 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
 import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
@@ -68,7 +68,7 @@ export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
 
                 //@Throws(Exception.constructor)
             
-    public static createForm(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): MultipleScrollSelectionHorizontalForm{
+    public static createForm(title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): MultipleScrollSelectionHorizontalForm{
     //var title = title
     //var items = items
     //var rectangle = rectangle
@@ -85,8 +85,8 @@ export class MultipleScrollSelectionHorizontalForm extends ScrollSelectionForm {
 }
 
 
-    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.TRANSPARENT_GREY.toInt()!;
-public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.TRANSPARENT_GREY.intValue()!;
+public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
     //var items = items

@@ -95,7 +95,7 @@ this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidt
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.setColor(BasicColorFactory.getInstance()!.WHITE.toInt());
+graphics.setColor(BasicColorFactory.getInstance()!.WHITE.intValue());
     
 this.canvasDrawLineString!.paint(graphics, title, 0);
     

@@ -201,7 +201,7 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTA
     var itemTotal: Money = new Money(itemPrice);
 ;
     
-itemTotal!.multiply(basketInterface!.getNumberOf(product)!.toInt());
+itemTotal!.multiply(basketInterface!.getNumberOf(product)!.intValue());
     
 node.appendChild(ModDomHelper.createNameValueNodes(document, BasketData.ITEMTOTAL, itemTotal!.toString()));
     

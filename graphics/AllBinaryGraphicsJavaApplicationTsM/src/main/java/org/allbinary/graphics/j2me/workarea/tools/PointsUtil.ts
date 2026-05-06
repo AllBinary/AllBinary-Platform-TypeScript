@@ -74,7 +74,7 @@ export class PointsUtil
 
                 //@Throws(Exception.constructor)
             
-    public doTransforms(pointVector: BasicArrayList, angle: number, fulcrumPoint: GPoint): BasicArrayList{
+    public doTransforms(pointVector: BasicArrayList, angle: Double, fulcrumPoint: GPoint): BasicArrayList{
 var pointVector = pointVector
 var angle = angle
 var fulcrumPoint = fulcrumPoint
@@ -82,7 +82,7 @@ var fulcrumPoint = fulcrumPoint
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return VectorRotationGenerator.getInstance()!.getListAtAngle(fulcrumPoint!.getX(), fulcrumPoint!.getY(), pointVector, AngleFactory.getInstance()!.getAt(angle.toInt()));;
+                        return VectorRotationGenerator.getInstance()!.getListAtAngle(fulcrumPoint!.getX(), fulcrumPoint!.getY(), pointVector, AngleFactory.getInstance()!.getAt(angle.intValue()));;
     
 }
 

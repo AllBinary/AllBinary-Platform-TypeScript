@@ -87,7 +87,7 @@ logUtil!.putF(CommonLabels.getInstance()!.START +keyActionScriptInputInterface!.
 ;
     
 
-    var integer: number[] = keyActionScriptInputInterface!.getKeyArray()!;
+    var integer: Integer[] = keyActionScriptInputInterface!.getKeyArray()!;
 ;
     
 

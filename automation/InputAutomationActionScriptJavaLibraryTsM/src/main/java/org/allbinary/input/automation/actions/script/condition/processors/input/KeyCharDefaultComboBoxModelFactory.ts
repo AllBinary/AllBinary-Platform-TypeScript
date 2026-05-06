@@ -67,7 +67,7 @@ export class KeyCharDefaultComboBoxModelFactory
 ;
     
 
-    var keyArray: number[] = KeySingletonFactory.getArray()!;
+    var keyArray: Integer[] = KeySingletonFactory.getArray()!;
 ;
     
 
@@ -79,11 +79,11 @@ export class KeyCharDefaultComboBoxModelFactory
 index < keyArray!.length; index++)
         {
 
-    var nextKey: number = keyArray[index]!;
+    var nextKey: Integer = keyArray[index]!;
 ;
     
 
-    var keyStroke: KeyStroke = KeyStroke.getKeyStroke(nextKey0)!;
+    var keyStroke: KeyStroke = KeyStroke.getKeyStroke(nextKey!.intValue(), 0)!;
 ;
     
 

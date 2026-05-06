@@ -51,12 +51,12 @@ export class Aggression
          {
         
 
-    private ram: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    private ram: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private projectile: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    private projectile: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private drops: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
-public constructor (ram: number, projectile: number, drops: number){
+    private drops: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+public constructor (ram: Integer, projectile: Integer, drops: Integer){
 
             super();
         var ram = ram
@@ -71,7 +71,7 @@ this.setDrops(drops);
 }
 
 
-    public getRam(): number{
+    public getRam(): Integer{
 
 
 
@@ -81,14 +81,14 @@ this.setDrops(drops);
 }
 
 
-    public setRam(ram: number){
+    public setRam(ram: Integer){
 var ram = ram
 this.ram= ram;
     
 }
 
 
-    public getProjectile(): number{
+    public getProjectile(): Integer{
 
 
 
@@ -98,14 +98,14 @@ this.ram= ram;
 }
 
 
-    public setProjectile(projectile: number){
+    public setProjectile(projectile: Integer){
 var projectile = projectile
 this.projectile= projectile;
     
 }
 
 
-    public getDrops(): number{
+    public getDrops(): Integer{
 
 
 
@@ -115,7 +115,7 @@ this.projectile= projectile;
 }
 
 
-    public setDrops(drops: number){
+    public setDrops(drops: Integer){
 var drops = drops
 this.drops= drops;
     

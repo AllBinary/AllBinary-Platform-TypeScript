@@ -190,7 +190,7 @@ this.anyType= anyType;
 
                 //@Throws(Exception.constructor)
             
-    public process(): number{
+    public process(): Integer{
 
         try {
             
@@ -203,7 +203,7 @@ this.anyType= anyType;
 ;
     
 
-    var result: number = method.invoke(this.anyType, 
+    var result: Integer = method.invoke(this.anyType, 
                             null) as Integer;
 ;
     

@@ -198,11 +198,11 @@ this.show();
 
         try {
             
-    var canvasWidth: number = this.xSizeJTextField!.getText();
+    var canvasWidth: Integer = new Integer(this.xSizeJTextField!.getText());
 ;
     
 
-    var canvasHeight: number = this.ySizeJTextField!.getText();
+    var canvasHeight: Integer = new Integer(this.ySizeJTextField!.getText());
 ;
     
 
@@ -217,7 +217,7 @@ this.show();
                                     throw new GraphicsException("No Name", this, "disposeNewDialog");
                                 
 
-    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidthcanvasHeight);
+    var workAreaJPanel: WorkAreaJPanel = new WorkAreaJPanel(newName, this.dimension, canvasWidth!.intValue(), canvasHeight!.intValue());
 ;
     
 workAreaJPanel!.setLayout(new GridLayout(1, 1));

@@ -405,7 +405,7 @@ values.add(this.comments);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -448,7 +448,7 @@ values.put(quoteRequestData!.COMMENTS, this.comments);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

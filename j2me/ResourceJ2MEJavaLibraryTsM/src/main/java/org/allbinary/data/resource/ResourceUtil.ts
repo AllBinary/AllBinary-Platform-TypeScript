@@ -317,7 +317,7 @@ var startIndex = startIndex
 }
 
 
-    public addResource(resource: string, value: number){
+    public addResource(resource: string, value: Integer){
     //var resource = resource
     //var value = value
 }

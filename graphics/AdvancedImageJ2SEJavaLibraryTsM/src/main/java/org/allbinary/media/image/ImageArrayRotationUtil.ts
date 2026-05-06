@@ -88,7 +88,7 @@ export class ImageArrayRotationUtil
     //var input = input
     //var visitor = visitor
 
-    var totalAngle: number
+    var totalAngle: Integer
 ;
     
 
@@ -133,7 +133,7 @@ index < bufferedImageArray!.length; index++)
         {
 this.logUtil!.putF(this.TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN);
     
-generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle);
+generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle!.intValue());
     
 visitor.visit(generatedBufferedImage, input, index);
     

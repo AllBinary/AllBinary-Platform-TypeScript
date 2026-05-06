@@ -73,7 +73,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 export class TimedFireAI extends BasicAI {
         
 
-    public static readonly TIME: number = SmallIntegerSingletonFactory.getInstance()!.getAt(1)!;
+    public static readonly TIME: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(1)!;
 
     readonly maxFireDelayTimeHelper: TimeDelayHelper = new TimeDelayHelper(0);
 

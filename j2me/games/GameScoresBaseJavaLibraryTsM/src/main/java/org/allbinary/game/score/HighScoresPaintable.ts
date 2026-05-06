@@ -118,7 +118,7 @@ var graphics = graphics
     var height: number = this.displayInfoSingleton!.getLastHeight()!;
 ;
     
-graphics.setColor(getBasicColorP()!.toInt());
+graphics.setColor(getBasicColorP()!.intValue());
     
 
     var heading: string = this.highScores!.getHeading()!;

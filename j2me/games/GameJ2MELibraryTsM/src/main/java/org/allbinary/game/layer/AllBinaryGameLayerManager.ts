@@ -78,7 +78,7 @@ export class AllBinaryGameLayerManager extends AllBinaryLayerManager {
 
     public static readonly NULL_ALLBINARY_LAYER_MANAGER: AllBinaryGameLayerManager = new AllBinaryGameLayerManager(BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE, GameInfo.NONE);
 
-    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(22)!;
+    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(22)!;
 
     private backgroundBasicColor: BasicColor
 
@@ -101,9 +101,9 @@ this.foregroundBasicColor= foregroundBasicColor;
     var itemColorFactory: ItemColorFactory = ItemColorFactory.getInstance()!;
 ;
     
-itemColorFactory!.INVERT_PAINT= this.backgroundBasicColor!.toInt();
+itemColorFactory!.INVERT_PAINT= this.backgroundBasicColor!.intValue();
     
-itemColorFactory!.PAINT= this.foregroundBasicColor!.toInt();
+itemColorFactory!.PAINT= this.foregroundBasicColor!.intValue();
     
 this.gameInfo= gameInfo;
     
@@ -138,7 +138,7 @@ this.gameInfo= gameInfo;
     //var backgroundBasicColor = backgroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor;
     
-ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.toInt();
+ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.intValue();
     
 }
 
@@ -157,7 +157,7 @@ ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.toInt()
     //var foregroundBasicColor = foregroundBasicColor
 this.foregroundBasicColor= foregroundBasicColor;
     
-ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.toInt();
+ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.intValue();
     
 }
 

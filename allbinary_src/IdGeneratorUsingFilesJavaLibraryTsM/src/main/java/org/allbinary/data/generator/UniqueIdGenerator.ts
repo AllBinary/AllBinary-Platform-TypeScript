@@ -174,7 +174,7 @@ idOutData= new AbDataOutputStream(idOutFile);
 idOutData!.writeLong(this.id +1);
     
 
-    var idLong: number = this.id;
+    var idLong: Long = new Long(this.id);
 ;
     
 

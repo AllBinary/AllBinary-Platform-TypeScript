@@ -93,10 +93,10 @@ var gameInput = gameInput
                             //For kotlin this is before the body of the constructor.
                     
 
-    var allowedDistance: number = hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer;
+    var allowedDistance: Integer = hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer;
 ;
     
-this.allowedDistance= allowedDistance;
+this.allowedDistance= allowedDistance!.intValue();
     
 }
 

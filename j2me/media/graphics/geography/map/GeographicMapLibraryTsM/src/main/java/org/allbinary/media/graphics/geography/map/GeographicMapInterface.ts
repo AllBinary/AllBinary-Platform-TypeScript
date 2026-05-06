@@ -61,7 +61,7 @@ import { GeographicMapCellPositionFactoryInterface } from './GeographicMapCellPo
 export interface GeographicMapInterface {
         
 
-    getId(): number
+    getId(): Integer
 
     getName(): string
 

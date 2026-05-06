@@ -119,7 +119,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorInteger: number = Integer(Integer.valueOf(rgb1))!;
+    var colorInteger: Integer = Integer(Integer.valueOf(rgb1))!;
 ;
     
 
@@ -131,7 +131,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorInteger2: number = Integer(Integer.valueOf(rgb2))!;
+    var colorInteger2: Integer = Integer(Integer.valueOf(rgb2))!;
 ;
     
 
@@ -178,7 +178,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 
                 //@Throws(Exception.constructor)
             
-    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number): ImageComparisonResult{
+    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
     //var bufferedImage2 = bufferedImage2
     //var frameOne = frameOne
@@ -195,7 +195,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 
                 //@Throws(Exception.constructor)
             
-    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number, name: string): ImageComparisonResult{
+    public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number, name: string): ImageComparisonResult{
     //var bufferedImage1 = bufferedImage1
     //var bufferedImage2 = bufferedImage2
     //var frameOne = frameOne

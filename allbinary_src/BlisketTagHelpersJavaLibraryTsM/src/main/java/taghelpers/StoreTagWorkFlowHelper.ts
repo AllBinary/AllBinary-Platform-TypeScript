@@ -98,7 +98,7 @@ this.storeWorkFlowInterface= StoreTagWorkFlowFactory.getInstance()!.getInstance(
 
                 //@Throws(Exception.constructor)
             
-    public process(): number{
+    public process(): Integer{
 
         try {
             

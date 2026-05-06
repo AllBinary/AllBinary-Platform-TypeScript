@@ -71,7 +71,7 @@ import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayLis
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CommandTextItem } from './CommandTextItem.js';
-import { CustomItem } from './CustomItem.js';
+import { ABCustomItem } from './ABCustomItem.js';
 
 export class CommandTextItemArrayFactory
             extends Object
@@ -90,7 +90,7 @@ this.visitorInterface= visitorInterface;
 }
 
 
-    public getInstance(vector: Vector<any>, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): CustomItem[]{
+    public getInstance(vector: Vector<any>, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ABCustomItem[]{
 var vector = vector
     //var backgroundBasicColor = backgroundBasicColor
     //var foregroundBasicColor = foregroundBasicColor
@@ -164,7 +164,7 @@ this.list.add(textItem);
 }
 
 
-    var textItemArray: CustomItem[] = new Array(this.list.size());
+    var textItemArray: ABCustomItem[] = new Array(this.list.size());
 ;
     
 
@@ -180,7 +180,7 @@ this.list.add(textItem);
     var index: number = 0;
 index < size2; index++)
         {
-textItemArray[index]= this.list.objectArray[index]! as CustomItem;
+textItemArray[index]= this.list.objectArray[index]! as ABCustomItem;
     
 }
 

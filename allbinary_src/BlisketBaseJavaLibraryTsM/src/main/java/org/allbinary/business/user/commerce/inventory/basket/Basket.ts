@@ -92,18 +92,18 @@ var num = num
 ;
     
 
-    var oldNumInt: number = Integer(Integer.valueOf(oldNumStr))!;
+    var oldNumInt: Integer = Integer(Integer.valueOf(oldNumStr))!;
 ;
     
 
-    var numInt: number = Integer(Integer.valueOf(num))!;
+    var numInt: Integer = Integer(Integer.valueOf(num))!;
 ;
     
 
-    var newNumInt: number = oldNumInt +numInt;
+    var newNumInt: Integer = new Integer(oldNumInt!.intValue() +numInt!.intValue());
 ;
     
-this.items.put(id, newNumInt);
+this.items.put(id, newNumInt!.toString());
     
 
                                     }
@@ -128,7 +128,7 @@ this.items.remove(id);
 var id = id
 var num = num
 
-                        if(Integer.valueOf(num)!.toInt() > 0)
+                        if(Integer.valueOf(num)!.intValue() > 0)
                         
                                     {
                                     this.items.put(id, num);
@@ -167,7 +167,7 @@ var num = num
 ;
     
 
-    var weightFloat: number
+    var weightFloat: Float
 ;
     
 
@@ -189,10 +189,10 @@ index < size; index++)
         {
 product= .toCharArray();
     
-weightFloat= new number(new InventoryEntity().
+weightFloat= new Float(new InventoryEntity().
                             getWeight(product));
     
-weightFloat= new number(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
+weightFloat= new Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
     
 totalWeight!.add(weightFloat!.toString());
     
@@ -210,12 +210,12 @@ totalWeight!.add(weightFloat!.toString());
 }
 
 
-    public getNumberOfItems(): number{
+    public getNumberOfItems(): Integer{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.items.size();
+                        return new Integer(this.items.size());
     
 }
 
@@ -244,7 +244,7 @@ totalWeight!.add(weightFloat!.toString());
 }
 
 
-    public getNumberOf(product: string): number{
+    public getNumberOf(product: string): Integer{
 var product = product
 
     var numStr: string = this.items.get(product) as string;
@@ -315,7 +315,7 @@ index < size; index++)
     var productTotal: Money = itemInterface!.getPrice()!;
 ;
     
-productTotal!.multiply(getNumberOf(product)!.toInt());
+productTotal!.multiply(getNumberOf(product)!.intValue());
     
 subTotal!.add(productTotal!.toString());
     

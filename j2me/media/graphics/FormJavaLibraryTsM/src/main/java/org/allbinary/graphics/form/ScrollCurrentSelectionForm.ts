@@ -33,7 +33,7 @@ import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
@@ -72,7 +72,7 @@ export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
     private maxWidth: number = 0;
 
     private readonly moveForSmallScreen: boolean
-public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
     //var items = items
@@ -192,7 +192,7 @@ this.dy= y +(this.rectangle.getHeight()>>1);
 ;
     
 
-    var item2: CustomItem
+    var item2: ABCustomItem
 ;
     
 

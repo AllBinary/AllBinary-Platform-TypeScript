@@ -341,7 +341,7 @@ imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!
     var graphics: Graphics = image.getGraphics()!;
 ;
     
-graphics.setColor(basicColor!.toInt());
+graphics.setColor(basicColor!.intValue());
     
 
     var biggestHeight: number = 0;

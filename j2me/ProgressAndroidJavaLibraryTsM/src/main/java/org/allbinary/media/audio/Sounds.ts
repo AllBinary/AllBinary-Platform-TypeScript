@@ -117,7 +117,7 @@ this.soundsFactoryInterface!.init();
 ;
     
 
-    var indexInteger: number
+    var indexInteger: Integer
 ;
     
 
@@ -148,7 +148,7 @@ i < soundInterfaceArray!.length; i++)
                                     {
                                     indexInteger= smallIntegerSingletonFactory!.getAt(i);
     
-indexString= indexInteger;
+indexString= indexInteger!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     

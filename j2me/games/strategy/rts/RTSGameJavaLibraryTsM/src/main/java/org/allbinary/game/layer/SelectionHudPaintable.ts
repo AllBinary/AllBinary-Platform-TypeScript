@@ -143,7 +143,7 @@ this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +this.myFont!.D
 }
 
 
-    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.toInt()!;
+    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
 
     public paint(graphics: Graphics){
 var graphics = graphics
@@ -206,7 +206,7 @@ this.name= name;
 var basicColor = basicColor
 this.basicColor= basicColor;
     
-this.setColor(basicColor!.toInt());
+this.setColor(basicColor!.intValue());
     
 }
 

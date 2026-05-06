@@ -102,11 +102,11 @@ export class LevelLayersFinder
 ;
     
 
-    var integerCanBeNull: number
+    var integerCanBeNull: Integer
 ;
     
 
-    var cachedIntegerCanBeNull: number
+    var cachedIntegerCanBeNull: Integer
 ;
     
 
@@ -116,7 +116,7 @@ layerHashtableCanBeNull= hashtable.get(this.enumerationUtil!.nextElement(enumera
     
 integerCanBeNull= layerHashtableCanBeNull!.get(Layer.ID as Object) as Integer;
     
-cachedIntegerCanBeNull= smallIntegerSingletonFactory!.getAt(integerCanBeNull);
+cachedIntegerCanBeNull= smallIntegerSingletonFactory!.getAt(integerCanBeNull!.intValue());
     
 
                         if(!list.contains(cachedIntegerCanBeNull))

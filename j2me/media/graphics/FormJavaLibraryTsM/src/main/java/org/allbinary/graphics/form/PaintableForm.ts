@@ -28,16 +28,10 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
-
-    
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -58,11 +52,11 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomForm } from './CustomForm.js';
+        import { ABCustomForm } from './ABCustomForm.js';
 import { FormTypeFactory } from './FormTypeFactory.js';
 import { FormType } from './FormType.js';
 
-export class PaintableForm extends CustomForm {
+export class PaintableForm extends ABCustomForm {
         
 
     public static readonly NULL_PAINTABLE_FORM: PaintableForm = new PaintableForm(StringUtil.getInstance()!.EMPTY_STRING, [], RectangleFactory.SINGLETON, FormTypeFactory.getInstance()!.NULL_FORM_TYPE, BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE);
@@ -76,7 +70,7 @@ export class PaintableForm extends CustomForm {
     y: number= 0
 
     formType: FormType = FormTypeFactory.getInstance()!.NULL_FORM_TYPE;
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
     //var items = items

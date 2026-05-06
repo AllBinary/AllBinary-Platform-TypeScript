@@ -68,7 +68,7 @@ export class HitPointGameObject extends MeteredGameObject implements HitPointGam
     private readonly IS_DAMAGED_LABEL: string = "isDamaged: ";
 
     private readonly IS_CLOSE_DEATH_LABEL: string = "isCloseDeath: ";
-public constructor (bufferedImage: BufferedImage[], minX: number, maxX: number, y: number){
+public constructor (bufferedImage: BufferedImage[], minX: Integer, maxX: Integer, y: Integer){
             super(bufferedImage, minX, maxX, y);
                     var bufferedImage = bufferedImage
 var minX = minX

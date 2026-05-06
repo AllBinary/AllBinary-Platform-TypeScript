@@ -167,7 +167,7 @@ listOfList[foundIndex]!.add(image);
 ;
     
 
-    var resourceId: number = resourceUtil!.getResourceId(key as string)!;
+    var resourceId: Integer = resourceUtil!.getResourceId(key as string)!;
 ;
     
 

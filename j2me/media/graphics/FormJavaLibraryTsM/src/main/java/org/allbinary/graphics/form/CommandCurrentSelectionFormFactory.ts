@@ -36,7 +36,7 @@ import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 
@@ -69,7 +69,7 @@ export class CommandCurrentSelectionFormFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
+    public static getInstance(title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
     //var title = title
     //var items = items
     //var rectangle = rectangle

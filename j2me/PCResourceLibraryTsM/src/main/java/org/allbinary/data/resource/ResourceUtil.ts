@@ -207,7 +207,7 @@ StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(),
 }
 
 
-    public addResource(resource: string, value: number){
+    public addResource(resource: string, value: Integer){
     //var resource = resource
     //var value = value
 }

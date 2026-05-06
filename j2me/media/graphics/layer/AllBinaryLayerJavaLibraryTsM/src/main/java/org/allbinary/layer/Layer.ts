@@ -68,7 +68,7 @@ export class Layer
          {
         
 
-    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

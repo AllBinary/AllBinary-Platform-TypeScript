@@ -47,7 +47,7 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TextItem } from './TextItem.js';
-import { StringComponent } from './StringComponent.js';
+import { ABStringComponent } from './ABStringComponent.js';
 
 export class SelectableTextItem extends TextItem {
         
@@ -80,7 +80,7 @@ var graphics = graphics
 var x = x
 var y = y
 
-    var stringComponent: StringComponent = this.getLabelStringComponent()!;
+    var stringComponent: ABStringComponent = this.getLabelStringComponent()!;
 ;
     
 
@@ -89,7 +89,7 @@ var y = y
                                 )
                         
                                     {
-                                    graphics.setColor(stringComponent!.getForegroundBasicColor()!.toInt());
+                                    graphics.setColor(stringComponent!.getForegroundBasicColor()!.intValue());
     
 
                                     }

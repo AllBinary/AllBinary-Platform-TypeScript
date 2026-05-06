@@ -72,7 +72,7 @@ export interface MotionRectangleConstraintsInterface {
 
                 //@Throws(Exception.constructor)
             
-    isValid(frame: number, bufferedImage: BufferedImage, rectangle: Rectangle): boolean
+    isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean
 
 }
                 

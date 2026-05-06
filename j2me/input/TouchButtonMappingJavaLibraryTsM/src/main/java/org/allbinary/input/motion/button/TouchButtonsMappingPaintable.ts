@@ -81,7 +81,7 @@ public constructor (basicColor: BasicColor){
 
             super();
         var basicColor = basicColor
-this.foregroundColor= basicColor!.toInt();
+this.foregroundColor= basicColor!.intValue();
     
 this.init();
     

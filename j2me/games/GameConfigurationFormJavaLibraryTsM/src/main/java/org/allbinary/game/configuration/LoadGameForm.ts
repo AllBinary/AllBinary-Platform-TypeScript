@@ -26,7 +26,7 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Choice } from '../../../../javax/microedition/lcdui/ChoiceI.js';
+import { Choice, ChoiceI } from  '../../../../javax/microedition/lcdui/Choice.js';
 
     
 import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';
@@ -263,7 +263,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
 ;
     
 
-    var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.toInt()!;
+    var value: number = Integer.valueOf(choiceGroup!.getString(choiceGroup!.getSelectedIndex()))!.intValue()!;
 ;
     
 

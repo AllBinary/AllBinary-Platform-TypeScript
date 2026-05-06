@@ -87,9 +87,9 @@ export class ImageComparisonResult
 
     private readonly nonMatchingPixelVector: Vector
 
-    private readonly frameOne: number
+    private readonly frameOne: Long
 
-    private readonly frameTwo: number
+    private readonly frameTwo: Long
 
     public pixelsThatMatch: number= 0
 
@@ -98,7 +98,7 @@ export class ImageComparisonResult
     private tolerance: number= 0
 
     private matchingPercent: number =  -1;
-public constructor (name: string, bufferedImage: BufferedImage, bufferedImage2: BufferedImage, frameOne: number, frameTwo: number, tolerance: number){
+public constructor (name: string, bufferedImage: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number){
 
             super();
             //var name = name
@@ -275,7 +275,7 @@ this.tolerance= tolerance;
 }
 
 
-    public getFrameOne(): number{
+    public getFrameOne(): Long{
 
 
 
@@ -285,7 +285,7 @@ this.tolerance= tolerance;
 }
 
 
-    public getFrameTwo(): number{
+    public getFrameTwo(): Long{
 
 
 

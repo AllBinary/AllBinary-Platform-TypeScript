@@ -71,16 +71,16 @@ export class GameConfiguration
 
     private name: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    private defaultValue: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    private defaultValue: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private value: number
+    private value: Integer
 
-    private minValue: number = this.defaultValue;
+    private minValue: Integer = this.defaultValue;
 
-    private maxValue: number = this.defaultValue;
+    private maxValue: Integer = this.defaultValue;
 
     private modifiable: Boolean = BooleanFactory.getInstance()!.TRUE;
-public constructor (name: string, defaultValue: number, minValue: number, maxValue: number){
+public constructor (name: string, defaultValue: Integer, minValue: Integer, maxValue: Integer){
 
             super();
             //var name = name
@@ -104,20 +104,20 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
 
                 //@Throws(Exception.constructor)
             
-    public setValue(value: number){
+    public setValue(value: Integer){
     //var value = value
 
                         if(this.value != value)
                         
                                     {
                                     
-    var oldValue: number = this.value;
+    var oldValue: Integer = this.value;
 ;
     
 this.value= value;
     
 GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new StringMaker().
-                            append(this.name)!.append(" value: from: ")!.appendint(oldValue)!.append(" to ")!.appendint(this.value)!.toString()));
+                            append(this.name)!.append(" value: from: ")!.appendint(oldValue!.intValue())!.append(" to ")!.appendint(this.value.intValue())!.toString()));
     
 
                                     }
@@ -125,7 +125,7 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new 
 }
 
 
-    public getValue(): number{
+    public getValue(): Integer{
 
 
 
@@ -135,14 +135,14 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new 
 }
 
 
-    public setMaxValue(maxValue: number){
+    public setMaxValue(maxValue: Integer){
     //var maxValue = maxValue
 this.maxValue= maxValue;
     
 }
 
 
-    public getMaxValue(): number{
+    public getMaxValue(): Integer{
 
 
 
@@ -152,14 +152,14 @@ this.maxValue= maxValue;
 }
 
 
-    public setMinValue(minValue: number){
+    public setMinValue(minValue: Integer){
     //var minValue = minValue
 this.minValue= minValue;
     
 }
 
 
-    public getMinValue(): number{
+    public getMinValue(): Integer{
 
 
 
@@ -186,14 +186,14 @@ this.name= name;
 }
 
 
-    public setDefaultValue(defaultValue: number){
+    public setDefaultValue(defaultValue: Integer){
     //var defaultValue = defaultValue
 this.defaultValue= defaultValue;
     
 }
 
 
-    getDefaultValue(): number{
+    getDefaultValue(): Integer{
 
 
 
@@ -222,19 +222,19 @@ stringBuffer!.append(this.name);
     
 stringBuffer!.append(" Min: ");
     
-stringBuffer!.appendint(this.getMinValue()!.toInt());
+stringBuffer!.appendint(this.getMinValue()!.intValue());
     
 stringBuffer!.append(" Max: ");
     
-stringBuffer!.appendint(this.getMaxValue()!.toInt());
+stringBuffer!.appendint(this.getMaxValue()!.intValue());
     
 stringBuffer!.append(" Value: ");
     
-stringBuffer!.appendint(this.getValue()!.toInt());
+stringBuffer!.appendint(this.getValue()!.intValue());
     
 stringBuffer!.append(" Default: ");
     
-stringBuffer!.appendint(this.getDefaultValue()!.toInt());
+stringBuffer!.appendint(this.getDefaultValue()!.intValue());
     
 stringBuffer!.append(" Modifiable: ");
     

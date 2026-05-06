@@ -221,7 +221,7 @@ import { ScrollSelectionFormNoneFactory } from '../../../../../org/allbinary/gra
 import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { CurrentDisplayableFactory } from '../../../../../org/allbinary/graphics/opengles/CurrentDisplayableFactory.js';
@@ -712,7 +712,7 @@ this.close();
 ;
     
 
-    var items: CustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;
+    var items: ABCustomItem[] = commandTextItemArrayFactory!.getInstance(this.getCommandStack() as Vector<any>, this.basicColorFactory!.BLACK, this.basicColorFactory!.WHITE)!;
 ;
     
 

@@ -51,9 +51,9 @@ export class Portion
          {
         
 
-    private readonly current: number
+    private readonly current: Integer
 
-    private readonly total: number
+    private readonly total: Integer
 public constructor (hashMap: HashMap<any, any>){
 
             super();
@@ -65,7 +65,7 @@ this.total= hashMap!.get("total") as Integer;
 }
 
 
-    public getCurrent(): number{
+    public getCurrent(): Integer{
 
 
 
@@ -75,7 +75,7 @@ this.total= hashMap!.get("total") as Integer;
 }
 
 
-    public getTotal(): number{
+    public getTotal(): Integer{
 
 
 

@@ -24,7 +24,7 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
@@ -77,7 +77,7 @@ export class RTSScrollSelectionFormFactory
 
                 //@Throws(Exception.constructor)
             
-    public static getInstance(formLabel: string, items: CustomItem[]): MultipleScrollSelectionHorizontalForm{
+    public static getInstance(formLabel: string, items: ABCustomItem[]): MultipleScrollSelectionHorizontalForm{
     //var formLabel = formLabel
     //var items = items
 

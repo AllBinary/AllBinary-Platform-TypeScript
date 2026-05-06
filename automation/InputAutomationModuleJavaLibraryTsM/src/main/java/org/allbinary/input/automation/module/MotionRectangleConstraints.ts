@@ -182,7 +182,7 @@ var rectangle = rectangle
 
                 //@Throws(Exception.constructor)
             
-    public isValid(frame: number, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
+    public isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
 var frame = frame
 var bufferedImage = bufferedImage
 var rectangle = rectangle

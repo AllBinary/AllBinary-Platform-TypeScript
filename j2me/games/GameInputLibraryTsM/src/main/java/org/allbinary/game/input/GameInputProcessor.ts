@@ -100,7 +100,7 @@ protected constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public process(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: number){
+    public process(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var keyAsInteger = keyAsInteger
 }
@@ -108,7 +108,7 @@ protected constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public processReleased(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: number){
+    public processReleased(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
     //var allbinaryLayerManager = allbinaryLayerManager
     //var keyAsInteger = keyAsInteger
 }

@@ -25,6 +25,9 @@
         
             import { Integer } from '../../../../../java/lang/Integer.js';
         
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
+
+    
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
@@ -53,9 +56,6 @@ import { UnitLayer } from '../../../../../org/allbinary/game/layer/unit/UnitLaye
 
     
 import { WorkWaypoint } from '../../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js';
-
-    
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
 
     
 import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
@@ -134,7 +134,7 @@ import { PlayersSingletonFactory } from './PlayersSingletonFactory.js';
 export class UnitRTSFormInput extends RTSFormInput {
         
 
-    public static readonly DECAL_ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(23)!;
+    public static readonly DECAL_ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(23)!;
 
     readonly noMoneyGameNotificationEvent: GameNotificationEvent
 
@@ -186,7 +186,7 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 
                 //@Throws(Exception.constructor)
             
-    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager

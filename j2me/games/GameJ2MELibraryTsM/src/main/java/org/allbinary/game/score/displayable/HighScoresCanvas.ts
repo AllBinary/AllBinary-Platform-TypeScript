@@ -240,7 +240,7 @@ hasPainted= false;
     
 logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
-repaintBehavior!.onChangeRepaint(HighScoresCanvas.this.prototype);
+repaintBehavior!.onChangeRepaint(HighScoresCanvas.prototype);
     
 
                         if(!isHTML)

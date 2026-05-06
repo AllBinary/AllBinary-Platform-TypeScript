@@ -118,7 +118,7 @@ export class AuthenticationHelper extends TagHelper {
 
     private timeout: string
 
-    private attemptsInteger: number
+    private attemptsInteger: Integer
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             this(hashMap, pageContext!.getRequest() as HttpServletRequest);
                     var hashMap = hashMap
@@ -168,7 +168,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 
                 //@Throws(Exception.constructor)
             
-    public invalidateSession(): number{
+    public invalidateSession(): Integer{
 
         try {
             this.weblisketSession!.clear();
@@ -177,7 +177,7 @@ this.timeout= this.weblisketSession!.getTimeout();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TagSupport.EVAL_BODY_INCLUDE;
+                        return new Integer(TagSupport.EVAL_BODY_INCLUDE);
     
 
                 //: 
@@ -635,16 +635,16 @@ index < size; index++)
 
                         if(this.attemptsInteger != 
                                     null
-                                 && this.attemptsInteger > 0)
+                                 && this.attemptsInteger!.intValue() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(this.attemptsInteger +1);
+                                    this.weblisketSession!.setAttempts(new Integer(this.attemptsInteger!.intValue() +1));
     
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(1);
+                            this.weblisketSession!.setAttempts(new Integer(1));
     
 
                         }
@@ -696,7 +696,7 @@ login= userEntityInterface!.login(userName, password);
                         if(userInterface!.isSessionValid().valueOf())
                         
                                     {
-                                    this.weblisketSession!.setAttempts(0);
+                                    this.weblisketSession!.setAttempts(new Integer(0));
     
 
 

@@ -64,7 +64,7 @@ export class SmallLongFactory
 
     public readonly POSITIVE_MAX: number = 0x2D1;
 
-    private readonly INTEGER_ARRAY: number[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
+    private readonly INTEGER_ARRAY: Long[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
 
     private readonly STRING_ARRAY: string[] = new Array(this.NEGATIVE_MAX +this.POSITIVE_MAX);
 
@@ -85,7 +85,7 @@ var negativeValue = negativeValue
     var index: number = value -1;
 index >= this.lastMin; index--)
         {
-this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Long(index);
     
 }
 
@@ -97,7 +97,7 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
     var index: number = negativeValue -1;
 index >= this.lastNegativeMin; index--)
         {
-this.INTEGER_ARRAY[index]=  -index;
+this.INTEGER_ARRAY[index]= new Long( -index);
     
 }
 
@@ -143,7 +143,7 @@ this.MIN= value;
     var index: number = this.POSITIVE_MAX -1;
 index >= this.lastMin; index--)
         {
-this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
+this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= new Long(index);
     
 }
 
@@ -155,7 +155,7 @@ this.INTEGER_ARRAY[index +this.NEGATIVE_MAX]= index;
     var index: number = this.NEGATIVE_MAX -1;
 index >= this.lastNegativeMin; index--)
         {
-this.INTEGER_ARRAY[index]=  -index;
+this.INTEGER_ARRAY[index]= new Long( -index);
     
 }
 
@@ -177,7 +177,7 @@ private constructor (){
         }
 
 
-    public getInstanceNoThrow(index: number): number{
+    public getInstanceNoThrow(index: number): Long{
 var index = index
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)

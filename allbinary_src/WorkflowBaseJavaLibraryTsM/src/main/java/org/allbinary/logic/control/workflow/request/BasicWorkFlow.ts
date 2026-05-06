@@ -211,7 +211,7 @@ values.add(DomDocumentHelper.toString(this.workFlowDoc));
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -246,7 +246,7 @@ hashMap!.put(WorkFlowData.getInstance()!.DATA, DomDocumentHelper.toString(this.w
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

@@ -90,7 +90,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 export class HorizontalScreenPatrolAI extends BasicAI {
         
 
-    public static readonly SOUND: number = SmallIntegerSingletonFactory.getInstance()!.getAt(433)!;
+    public static readonly SOUND: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(433)!;
 
     keyDirection: number = Canvas.LEFT;
 

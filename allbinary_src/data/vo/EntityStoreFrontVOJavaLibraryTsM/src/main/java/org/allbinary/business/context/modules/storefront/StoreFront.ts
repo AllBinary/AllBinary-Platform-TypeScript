@@ -2125,7 +2125,7 @@ dataVector!.add(this.testFtpPassword);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -2212,7 +2212,7 @@ dataHashMap!.put(storeFrontData!.TESTFTPPASSWORD, this.testFtpPassword);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

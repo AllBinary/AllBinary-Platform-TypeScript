@@ -229,7 +229,7 @@ var order = order
 ;
     
 
-    var taxRate: number = TaxFactory.getInstance()!.getInstance(abeClientInformation, storeFrontInterface)!.getTaxRate(shippingAddress, storeFrontInterface)!;
+    var taxRate: Float = TaxFactory.getInstance()!.getInstance(abeClientInformation, storeFrontInterface)!.getTaxRate(shippingAddress, storeFrontInterface)!;
 ;
     
 
@@ -272,7 +272,7 @@ vector.add(order.getStoreName());
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -308,7 +308,7 @@ vector.add(paymentInterface!.getExpiration());
 vector.add(new SuperCrypt(random).
                             encrypt(paymentInterface!.getNumber()));
     
-vector.add(random.
+vector.add(new Integer(random).
                             toString());
     
 
@@ -494,7 +494,7 @@ var status = status
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -552,7 +552,7 @@ var paymentMethod = paymentMethod
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

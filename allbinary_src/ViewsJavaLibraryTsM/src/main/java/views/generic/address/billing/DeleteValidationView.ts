@@ -107,7 +107,7 @@ this.value= httpTransformInfoInterface!.getPageContext()!.getRequest()!.getParam
     var billingAddressesEntity: BillingAddressesEntity = new BillingAddressesEntity(this.getWeblisketSession()!.getUserName());
 ;
     
-this.streetAddress= billingAddressesEntity!.get(this.value);
+this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
     
 
                         if(this.streetAddress == 

@@ -189,7 +189,7 @@ MediaPlayerOnCompletionListener = class
 logUtil!.putF(new StringMaker().
                             append("Update buffer: ")!.appendint(i)!.append("%")!.toString(), this, AndroidMediaPlayerWrapperListener.ON_BUFFERING_UPDATE);
     
-AndroidMediaPlayerWrapperListener.this.prototype.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE);
+AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_UNAVAILABLE);
     
 }
 
@@ -207,7 +207,7 @@ AndroidMediaPlayerWrapperListener.this.prototype.androidMediaPlayerWrapper!.upda
     
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE);
     
-AndroidMediaPlayerWrapperListener.this.prototype.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE);
+AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE);
     
 }
 
@@ -228,7 +228,7 @@ AndroidMediaPlayerWrapperListener.this.prototype.androidMediaPlayerWrapper!.upda
 logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append("What: ")!.appendint(what)!.append(" Extra: ")!.appendint(extra)!.toString(), this, AndroidMediaPlayerWrapperListener.ON_ERROR);
     
-AndroidMediaPlayerWrapperListener.this.prototype.androidMediaPlayerWrapper!.update(PlayerListener.ERROR);
+AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.ERROR);
     
 
 
@@ -252,7 +252,7 @@ AndroidMediaPlayerWrapperListener.this.prototype.androidMediaPlayerWrapper!.upda
     
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE);
     
-AndroidMediaPlayerWrapperListener.this.prototype.androidMediaPlayerWrapper!.update(PlayerListener.END_OF_MEDIA);
+AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.END_OF_MEDIA);
     
 }
 

@@ -153,7 +153,7 @@ SimpleSteeringVisitor = class extends SteeringVisitor {
 ;
     
 
-    var clear: boolean = CollidableUnitBehavior.this.prototype.steer(allbinaryLayer)!;
+    var clear: boolean = CollidableUnitBehavior.prototype.steer(allbinaryLayer)!;
 ;
     
 

@@ -84,9 +84,9 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 export class BasicAI extends ArtificialIntelligence implements GameKeyEventSourceInterface {
         
 
-    public static readonly AI_VISITOR: number = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
+    public static readonly AI_VISITOR: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
 
-    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(1)!;
+    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(1)!;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

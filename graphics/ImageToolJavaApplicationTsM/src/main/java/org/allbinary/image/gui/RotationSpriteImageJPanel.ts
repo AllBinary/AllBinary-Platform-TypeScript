@@ -142,7 +142,7 @@ new class extends Thread
 ;
     
 
-    var imageProcessorInput: ImageProcessorInput = RotationSpriteImageJPanel.this.prototype.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = RotationSpriteImageJPanel.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -158,25 +158,25 @@ new class extends Thread
 index < bufferedImageArray!.length; index++)
         {
 
-    var totalFrames: number = Integer(Integer.valueOf(RotationSpriteImageJPanel.this.prototype.totalFramesJComboBox!.getSelectedItem() as string))!;
+    var totalFrames: Integer = Integer(Integer.valueOf(RotationSpriteImageJPanel.prototype.totalFramesJComboBox!.getSelectedItem() as string))!;
 ;
     
 
-    var totalAngle: number = Integer(Integer.valueOf(RotationSpriteImageJPanel.this.prototype.totalAngleJComboBox!.getSelectedItem() as string))!;
+    var totalAngle: Integer = Integer(Integer.valueOf(RotationSpriteImageJPanel.prototype.totalAngleJComboBox!.getSelectedItem() as string))!;
 ;
     
 generatedBufferedImageArray= ImageJ2SERotationUtil.getInstance()!.getRotatedImages(bufferedImageArray[index]!, totalFrames, totalAngle);
     
-RotationSpriteImageJPanel.this.prototype.result= ImageJ2SERotationUtil.getInstance()!.createSpriteImage(generatedBufferedImageArray);
+RotationSpriteImageJPanel.prototype.result= ImageJ2SERotationUtil.getInstance()!.createSpriteImage(generatedBufferedImageArray);
     
-RotationSpriteImageJPanel.this.prototype.getParent()!.repaint();
+RotationSpriteImageJPanel.prototype.getParent()!.repaint();
     
 
     var file: File = imageProcessorInput!.getFiles()[index]!;
 ;
     
 
-                        if(!RotationSpriteImageJPanel.this.prototype.writeOverOriginalJCheckBox!.isSelected())
+                        if(!RotationSpriteImageJPanel.prototype.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
@@ -198,7 +198,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(RotationSpriteImageJPanel.this.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(RotationSpriteImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
@@ -229,13 +229,13 @@ this.jPanel1= new class extends javax.swing.JPanel
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(RotationSpriteImageJPanel.this.prototype.result != 
+                        if(RotationSpriteImageJPanel.prototype.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(RotationSpriteImageJPanel.this.prototype.result, 0, 0, RotationSpriteImageJPanel.this.prototype.result.getWidth(
-                            null), RotationSpriteImageJPanel.this.prototype.result.getHeight(
+                                    graphics.drawImage(RotationSpriteImageJPanel.prototype.result, 0, 0, RotationSpriteImageJPanel.prototype.result.getWidth(
+                            null), RotationSpriteImageJPanel.prototype.result.getHeight(
                             null), 
                             null);
     

@@ -138,11 +138,11 @@ this.name= name;
 
         try {
             
-    var idLong: number = this.idGeneratorEntity!.get(this.name)!;
+    var idLong: Long = this.idGeneratorEntity!.get(this.name)!;
 ;
     
 
-    var newValue: number = (idLong!.longValue() +1).toLong()!;
+    var newValue: Long = (idLong!.longValue() +1).toLong()!;
 ;
     
 this.idGeneratorEntity!.update(this.name, newValue);

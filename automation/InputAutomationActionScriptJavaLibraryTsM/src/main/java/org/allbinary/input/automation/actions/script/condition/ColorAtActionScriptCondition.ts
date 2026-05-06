@@ -390,7 +390,7 @@ var frame = frame
 ;
     
 
-    var colorInteger: number = Integer(Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y)))!;
+    var colorInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y)))!;
 ;
     
 

@@ -158,7 +158,7 @@ values.put(BasicItemData.PRICE, this.price);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -181,7 +181,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

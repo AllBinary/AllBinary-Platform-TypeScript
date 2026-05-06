@@ -207,7 +207,7 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
 ;
     
-weightFloat += new number(item.getWeight()).
+weightFloat += new Float(item.getWeight()).
                             toFloat();
     
 }
@@ -216,18 +216,18 @@ weightFloat += new number(item.getWeight()).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new number(weightFloat).
+                        return new Float(weightFloat).
                             toString();;
     
 }
 
 
-    public getNumberOfItems(): number{
+    public getNumberOfItems(): Integer{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.items.length;
+                        return new Integer(this.items.length);
     
 }
 
@@ -271,7 +271,7 @@ idSet!.add(item.getId());
 }
 
 
-    public getNumberOf(id: string): number{
+    public getNumberOf(id: string): Integer{
 var id = id
 
     var itemArray: any[] = this.items.toArray()!;
@@ -302,7 +302,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return item.getNumber();
+                        return new Integer(item.getNumber());
     
 
                                     }
@@ -313,7 +313,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return 0;
+                        return new Integer(0);
     
 }
 

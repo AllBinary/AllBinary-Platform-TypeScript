@@ -37,7 +37,7 @@ import { FormPaintable } from '../../../../org/allbinary/graphics/form/FormPaint
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { StringComponent } from '../../../../org/allbinary/graphics/form/item/StringComponent.js';
+import { ABStringComponent } from '../../../../org/allbinary/graphics/form/item/ABStringComponent.js';
 
     
 import { TextItem } from '../../../../org/allbinary/graphics/form/item/TextItem.js';
@@ -132,7 +132,7 @@ index >= 0; index--)
 ;
     
 
-    var stringComponent: StringComponent = item.getLabelStringComponent()!;
+    var stringComponent: ABStringComponent = item.getLabelStringComponent()!;
 ;
     
 

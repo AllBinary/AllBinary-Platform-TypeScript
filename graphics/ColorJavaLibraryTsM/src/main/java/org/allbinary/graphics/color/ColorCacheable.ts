@@ -64,9 +64,8 @@ public constructor (key: any = {}){
         var key = key
 this.key= key;
     
-this.color= new Color(key = keykey as Integer
-key.
-                    toInt());
+this.color= new Color(
+                                    (key as Integer).intValue());
     
 }
 

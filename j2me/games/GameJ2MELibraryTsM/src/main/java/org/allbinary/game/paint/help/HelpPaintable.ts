@@ -120,7 +120,7 @@ this.inputInfo= inputInfo;
     var beginWidth: number = (graphics.getFont()!.stringWidth(this.title)>>1);
 ;
     
-graphics.setColor(this.basicColor!.toInt());
+graphics.setColor(this.basicColor!.intValue());
     
 
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;

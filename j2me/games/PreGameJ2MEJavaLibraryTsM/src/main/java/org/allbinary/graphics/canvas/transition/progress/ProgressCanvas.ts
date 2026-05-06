@@ -57,7 +57,7 @@ import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/d
 import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { CustomGaugeItem } from '../../../../../../org/allbinary/graphics/form/item/CustomGaugeItem.js';
+import { ABCustomGaugeItem } from '../../../../../../org/allbinary/graphics/form/item/ABCustomGaugeItem.js';
 
     
 import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
@@ -134,7 +134,7 @@ paint2(graphics);
 
     private readonly maxValue: number = 100.0;
 
-    readonly gauge: CustomGaugeItem
+    readonly gauge: ABCustomGaugeItem
 
     private readonly TEXT: string = commonStrings!.LOADING;
 
@@ -173,7 +173,7 @@ pathFindingThreadPool!.runAPriorityTask();
                     
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.gauge= new CustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.round(this.maxValue), 0, backgroundBasicColor, foregroundBasicColor);
+this.gauge= new ABCustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.round(this.maxValue), 0, backgroundBasicColor, foregroundBasicColor);
     
 }
 
@@ -369,7 +369,7 @@ var graphics = graphics
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
     
-graphics.setColor(this.backgroundBasicColor!.toInt());
+graphics.setColor(this.backgroundBasicColor!.intValue());
     
 graphics.fillRect(0, 0, displayInfoSingleton!.getLastWidth(), displayInfoSingleton!.getLastHeight());
     

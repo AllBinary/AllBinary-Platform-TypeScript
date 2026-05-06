@@ -206,7 +206,7 @@ keyValuePersistance!.loadAll(abeClientInformation);
     var value: string = hashtable.get(anyType as Object) as string;
 ;
     
-this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.toInt()));
+this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.intValue()));
     
 
                                     }
@@ -260,7 +260,7 @@ stringBuffer!.append(this.SCALE.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.SCALE.getValue()!.toInt());
+stringBuffer!.appendint(this.SCALE.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -268,7 +268,7 @@ stringBuffer!.append(this.ORIENTATION.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.ORIENTATION.getValue()!.toInt());
+stringBuffer!.appendint(this.ORIENTATION.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -276,7 +276,7 @@ stringBuffer!.append(this.SENSOR_UPDATE_RATE.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.SENSOR_UPDATE_RATE.getValue()!.toInt());
+stringBuffer!.appendint(this.SENSOR_UPDATE_RATE.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -284,7 +284,7 @@ stringBuffer!.append(this.VIBRATION.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.VIBRATION.getValue()!.toInt());
+stringBuffer!.appendint(this.VIBRATION.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -292,7 +292,7 @@ stringBuffer!.append(this.CHALLENGE_LEVEL.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.CHALLENGE_LEVEL.getValue()!.toInt());
+stringBuffer!.appendint(this.CHALLENGE_LEVEL.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -300,7 +300,7 @@ stringBuffer!.append(this.COLLIDE_DAMAGE.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.COLLIDE_DAMAGE.getValue()!.toInt());
+stringBuffer!.appendint(this.COLLIDE_DAMAGE.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -308,7 +308,7 @@ stringBuffer!.append(this.DURABILITY_CHALLENGE_LEVEL.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.DURABILITY_CHALLENGE_LEVEL.getValue()!.toInt());
+stringBuffer!.appendint(this.DURABILITY_CHALLENGE_LEVEL.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -316,7 +316,7 @@ stringBuffer!.append(this.SPEED_CHALLENGE_LEVEL.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.SPEED_CHALLENGE_LEVEL.getValue()!.toInt());
+stringBuffer!.appendint(this.SPEED_CHALLENGE_LEVEL.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -324,7 +324,7 @@ stringBuffer!.append(this.ATTACK_CHALLENGE_LEVEL.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.ATTACK_CHALLENGE_LEVEL.getValue()!.toInt());
+stringBuffer!.appendint(this.ATTACK_CHALLENGE_LEVEL.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -332,7 +332,7 @@ stringBuffer!.append(this.CONTROL_LEVEL.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.CONTROL_LEVEL.getValue()!.toInt());
+stringBuffer!.appendint(this.CONTROL_LEVEL.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -340,7 +340,7 @@ stringBuffer!.append(this.SPEED.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.SPEED.getValue()!.toInt());
+stringBuffer!.appendint(this.SPEED.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -348,7 +348,7 @@ stringBuffer!.append(this.MAX_GAME_OBJECTS.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.MAX_GAME_OBJECTS.getValue()!.toInt());
+stringBuffer!.appendint(this.MAX_GAME_OBJECTS.getValue()!.intValue());
     
 stringBuffer!.append(commonStrings!.COMMA_SEP);
     
@@ -356,7 +356,7 @@ stringBuffer!.append(this.MAX_LAYERS.getName());
     
 stringBuffer!.append(commonStrings!.EQUALS);
     
-stringBuffer!.appendint(this.MAX_LAYERS.getValue()!.toInt());
+stringBuffer!.appendint(this.MAX_LAYERS.getValue()!.intValue());
     
 
 

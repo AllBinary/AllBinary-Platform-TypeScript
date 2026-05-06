@@ -16,6 +16,16 @@ import { Object } from '../../java/lang/Object.js';
 
   }
 
+    private value: number;
+
+    public constructor(value: number) {
+        super();
+        this.value = value;
+    }
+
+    public intValue(): number {
+        return this.value;
+    }
 
 }
                 

@@ -146,7 +146,7 @@ index < nodeList!.getLength(); index++)
     var buttons: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
+this.setButtonClicks(Integer.valueOf(buttons)!.intValue());
     
 
                                     }
@@ -164,7 +164,7 @@ this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
 ;
     
 
-    var mouseXInteger: number = Integer(Integer.valueOf(mouseXString))!;
+    var mouseXInteger: Integer = Integer(Integer.valueOf(mouseXString))!;
 ;
     
 
@@ -176,11 +176,11 @@ this.setButtonClicks(Integer.valueOf(buttons)!.toInt());
 ;
     
 
-    var mouseYInteger: number = Integer(Integer.valueOf(mouseYString))!;
+    var mouseYInteger: Integer = Integer(Integer.valueOf(mouseYString))!;
 ;
     
 
-    var newPoint: Point = new Point(mouseXIntegermouseYInteger);
+    var newPoint: Point = new Point(mouseXInteger!.intValue(), mouseYInteger!.intValue());
 ;
     
 this.setPoint(newPoint);
@@ -325,7 +325,7 @@ mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActi
 
                 //@Throws(Exception.constructor)
             
-    public process(frame: number){
+    public process(frame: Long){
 var frame = frame
 MouseInputAutomationProcessor.process(this);
     

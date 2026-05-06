@@ -388,7 +388,7 @@ index < productListingPages!.length; index++)
                         if(index > 0)
                         
                                     {
-                                    indexStr= index.
+                                    indexStr= new Integer(index).
                             toString();
     
 

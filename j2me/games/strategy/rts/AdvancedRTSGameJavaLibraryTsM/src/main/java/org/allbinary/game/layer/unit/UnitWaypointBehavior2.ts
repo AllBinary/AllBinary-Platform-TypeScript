@@ -1308,7 +1308,7 @@ var anyType = anyType
 ;
     
 
-    var clear: boolean = UnitWaypointBehavior2.this.prototype.buildingChase(allbinaryLayer, cellPosition)!;
+    var clear: boolean = UnitWaypointBehavior2.prototype.buildingChase(allbinaryLayer, cellPosition)!;
 ;
     
 

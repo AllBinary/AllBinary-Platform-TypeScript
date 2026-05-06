@@ -120,17 +120,17 @@ this.colorAtActionScriptConditionInterface!.log();
     var colorRangeInterface: ColorRangeInterface = this.colorAtActionScriptConditionInterface!.getColorRangeInterface()!;
 ;
     
-colorRangeInterface!.setMinRed(Integer.valueOf(this.getMinRedJTextField()!.getText())!.toInt());
+colorRangeInterface!.setMinRed(Integer.valueOf(this.getMinRedJTextField()!.getText())!.intValue());
     
-colorRangeInterface!.setMaxRed(Integer.valueOf(this.getMaxRedJTextField()!.getText())!.toInt());
+colorRangeInterface!.setMaxRed(Integer.valueOf(this.getMaxRedJTextField()!.getText())!.intValue());
     
-colorRangeInterface!.setMinGreen(Integer.valueOf(this.getMinGreenJTextField()!.getText())!.toInt());
+colorRangeInterface!.setMinGreen(Integer.valueOf(this.getMinGreenJTextField()!.getText())!.intValue());
     
-colorRangeInterface!.setMaxGreen(Integer.valueOf(this.getMaxGreenJTextField()!.getText())!.toInt());
+colorRangeInterface!.setMaxGreen(Integer.valueOf(this.getMaxGreenJTextField()!.getText())!.intValue());
     
-colorRangeInterface!.setMinBlue(Integer.valueOf(this.getMinBlueJTextField()!.getText())!.toInt());
+colorRangeInterface!.setMinBlue(Integer.valueOf(this.getMinBlueJTextField()!.getText())!.intValue());
     
-colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.toInt());
+colorRangeInterface!.setMaxBlue(Integer.valueOf(this.getMaxBlueJTextField()!.getText())!.intValue());
     
 
     var xString: string = this.getColorAtXJTextField()!.getText()!;

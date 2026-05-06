@@ -80,7 +80,7 @@ private constructor (){
     //var basicDefaultColor = basicDefaultColor
 this.BASIC_COLOR_ARRAY[this.colorIndex]= basicDefaultColor;
     
-this.INDEX_TO_COLOR[this.colorIndex]= basicDefaultColor!.toInt();
+this.INDEX_TO_COLOR[this.colorIndex]= basicDefaultColor!.intValue();
     
 this.colorIndex++;
     

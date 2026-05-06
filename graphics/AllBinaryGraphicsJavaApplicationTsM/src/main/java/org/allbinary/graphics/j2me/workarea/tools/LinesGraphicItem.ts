@@ -160,7 +160,7 @@ export class LinesGraphicItem
 
     private theta: number = 0;
 
-    private color: Color = new Color(BasicColorFactory.getInstance()!.WHITE.toInt());
+    private color: Color = new Color(BasicColorFactory.getInstance()!.WHITE.intValue());
 
     private points: Points
 public constructor (){
@@ -370,7 +370,7 @@ var pointNodes = pointNodes
 ;
     
 
-    var xInteger: number = xTextNode!.getNodeValue();
+    var xInteger: Integer = new Integer(xTextNode!.getNodeValue());
 ;
     
 
@@ -382,11 +382,11 @@ var pointNodes = pointNodes
 ;
     
 
-    var yInteger: number = yTextNode!.getNodeValue();
+    var yInteger: Integer = new Integer(yTextNode!.getNodeValue());
 ;
     
 
-    var point: GPoint = PointFactory.getInstance()!.createXY(xIntegeryInteger)!;
+    var point: GPoint = PointFactory.getInstance()!.createXY(xInteger!.intValue(), yInteger!.intValue())!;
 ;
     
 this.addPoint(point);
@@ -552,7 +552,7 @@ this.fulcrumPoint= point;
 }
 
 
-    public paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number){
+    public paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number){
 var g = g
 var canvasAngle = canvasAngle
 var dimension = dimension

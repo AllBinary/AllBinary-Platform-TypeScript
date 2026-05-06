@@ -85,11 +85,11 @@ list= new BasicArrayListD();
     public getInstanceFromCollection(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
     //var hashtable = hashtable
 
-    var typeInteger: number = hashtable.get(BasicAI.ID as Object) as Integer;
+    var typeInteger: Integer = hashtable.get(BasicAI.ID as Object) as Integer;
 ;
     
 
-    var type: number = typeInteger!;
+    var type: number = typeInteger!.intValue()!;
 ;
     
 

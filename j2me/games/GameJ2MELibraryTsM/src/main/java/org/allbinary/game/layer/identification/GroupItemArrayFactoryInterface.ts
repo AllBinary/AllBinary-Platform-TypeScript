@@ -27,7 +27,7 @@
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 
@@ -54,7 +54,7 @@ export interface GroupItemArrayFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getInstance(groupInterface: Group): CustomItem[]
+    getInstance(groupInterface: Group): ABCustomItem[]
 
 }
                 

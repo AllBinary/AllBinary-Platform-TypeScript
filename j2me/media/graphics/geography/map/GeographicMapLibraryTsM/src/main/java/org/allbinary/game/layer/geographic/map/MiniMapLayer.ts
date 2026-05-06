@@ -312,7 +312,7 @@ point= localPositionList!.get(index) as GPoint;
     
 basicColor= localBasicColorList!.get(index) as BasicColor;
     
-graphics.setColor(basicColor!.toInt());
+graphics.setColor(basicColor!.intValue());
     
 this.animationInterface!.setBasicColorP(basicColor);
     

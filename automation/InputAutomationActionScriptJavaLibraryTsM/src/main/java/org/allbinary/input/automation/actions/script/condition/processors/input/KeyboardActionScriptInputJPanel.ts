@@ -207,7 +207,7 @@ this.keyActionScriptInputInterface!.log();
 }
 
 
-    getSelectedKey(): number{
+    getSelectedKey(): Integer{
 
     var comboBoxModel: ComboBoxModel = this.keyNameJComboBox!.getModel()!;
 ;
@@ -255,7 +255,7 @@ this.updateInputType();
     
 this.updateKeys();
     
-this.keyActionScriptInputInterface!.setTime(Integer.valueOf(this.timeJTextField!.getText())!.toInt());
+this.keyActionScriptInputInterface!.setTime(Integer.valueOf(this.timeJTextField!.getText())!.intValue());
     
 this.keyActionScriptInputInterface!.log();
     
@@ -523,7 +523,7 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 }
 
 
-    prependText(integer: number){
+    prependText(integer: Integer){
 var integer = integer
 
                         if(integer != 
@@ -532,7 +532,7 @@ var integer = integer
                         
                                     {
                                     
-    var newKey: string = "&#" +integer +";";
+    var newKey: string = "&#" +integer.toString() +";";
 ;
     
 this.textJTextField!.setText(newKey +this.textJTextField!.getText());
@@ -587,7 +587,7 @@ this.sequenceJRadioButton!.setSelected(false);
     keyNameJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
 var evt = evt
 
-    var integer: number = this.getSelectedKey()!;
+    var integer: Integer = this.getSelectedKey()!;
 ;
     
 this.prependText(integer);

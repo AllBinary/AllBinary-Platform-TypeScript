@@ -92,11 +92,11 @@ var message = message
 ;
     
 
-    var integer: number = ResourceUtil.getInstance()!.getResourceId(resource)!;
+    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
 ;
     
 
-    var notification: Notification = new Notification(integermessage, Date.now());
+    var notification: Notification = new Notification(integer.intValue(), message, Date.now());
 ;
     
 

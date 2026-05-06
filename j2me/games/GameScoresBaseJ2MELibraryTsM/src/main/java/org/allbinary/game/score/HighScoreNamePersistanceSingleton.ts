@@ -164,10 +164,10 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
 index < size; index++)
         {
 
-    var integer: number = this.nameBasicArrayList!.objectArray[index]! as Integer;
+    var integer: Integer = this.nameBasicArrayList!.objectArray[index]! as Integer;
 ;
     
-this.delete(abeClientInformation, gameInfo, integer);
+this.delete(abeClientInformation, gameInfo, integer.intValue());
     
 }
 

@@ -116,11 +116,11 @@ this.logUtil!.putF(new StringMaker().
                             append(this.HASHTABLE_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, commonStrings!.GET_INSTANCE);
     
 
-    var typeInteger: number = hashtable.get(Layer.ID as Object) as Integer;
+    var typeInteger: Integer = hashtable.get(Layer.ID as Object) as Integer;
 ;
     
 
-    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = this.list.objectArray[typeInteger -1]! as LayerInterfaceFactoryInterface;
+    var layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface = this.list.objectArray[typeInteger!.intValue() -1]! as LayerInterfaceFactoryInterface;
 ;
     
 

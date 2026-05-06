@@ -93,7 +93,7 @@ this.basicColor= basicColor;
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.text)>>1);
 ;
     
-graphics.setColor(this.getBasicColorP()!.toInt());
+graphics.setColor(this.getBasicColorP()!.intValue());
     
 graphics.drawString(this.text, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *3, this.anchor);
     

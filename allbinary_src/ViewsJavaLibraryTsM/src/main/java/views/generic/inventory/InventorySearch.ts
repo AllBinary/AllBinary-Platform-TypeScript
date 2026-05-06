@@ -226,7 +226,7 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return str[this.searchRequest!.getParams()!.getStartPageInt()!.toInt()]!;
+                        return str[this.searchRequest!.getParams()!.getStartPageInt()!.intValue()]!;
     
 
                 //: 

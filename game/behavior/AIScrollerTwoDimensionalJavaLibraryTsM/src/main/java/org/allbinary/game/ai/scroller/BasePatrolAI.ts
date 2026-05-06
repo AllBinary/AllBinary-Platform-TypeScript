@@ -75,15 +75,15 @@ import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic
 export class BasePatrolAI extends BasicAI {
         
 
-    public static readonly MAX_DISTANCE: number = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
+    public static readonly MAX_DISTANCE: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(2)!;
 
-    public static readonly DIRECTION_ARRAY: number = SmallIntegerSingletonFactory.getInstance()!.getAt(3)!;
+    public static readonly DIRECTION_ARRAY: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(3)!;
 
-    public static readonly FIRING_DISTANCE: number = SmallIntegerSingletonFactory.getInstance()!.getAt(4)!;
+    public static readonly FIRING_DISTANCE: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(4)!;
 
-    public static SPEED: number = SmallIntegerSingletonFactory.getInstance()!.getAt(5)!;
+    public static SPEED: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(5)!;
 
-    maxDistance: number
+    maxDistance: Integer
 
     currentDistance: number
 
@@ -103,7 +103,7 @@ var gameInput = gameInput
                     
 this.maxDistance= hashtable.get(BasePatrolAI.MAX_DISTANCE) as Integer;
     
-this.currentDistance= this.maxDistance;
+this.currentDistance= this.maxDistance!.intValue();
     
 }
 

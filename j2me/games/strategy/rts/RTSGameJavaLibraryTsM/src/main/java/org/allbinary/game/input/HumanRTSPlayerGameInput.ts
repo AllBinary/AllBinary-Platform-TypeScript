@@ -105,7 +105,7 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { NullInitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js';
@@ -320,7 +320,7 @@ this.getSelectedBuildingPlayerGameInput()!.deselectAllPreselected();
                             
 rtsFormInput!.setStickyItemSelected(false);
     
-rtsFormInput!.setSelectedStickyItem(CustomItem.NULL_CUSTOM_ITEM);
+rtsFormInput!.setSelectedStickyItem(ABCustomItem.NULL_CUSTOM_ITEM);
     
 rtsFormInput!.setSelectedStickyItemIndex( -1);
     
@@ -852,7 +852,7 @@ super.paint(graphics);
                         if(this.startPoint != PointFactory.getInstance()!.ZERO_ZERO && this.endPoint != PointFactory.getInstance()!.ZERO_ZERO)
                         
                                     {
-                                    graphics.setColor(BasicColorFactory.getInstance()!.RED.toInt());
+                                    graphics.setColor(BasicColorFactory.getInstance()!.RED.intValue());
     
 
     var rectX1: number = this.startPoint!.getX()!;

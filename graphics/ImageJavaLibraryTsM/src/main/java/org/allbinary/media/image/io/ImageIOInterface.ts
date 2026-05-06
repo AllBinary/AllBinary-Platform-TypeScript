@@ -50,7 +50,7 @@ export interface ImageIOInterface {
 
                 //@Throws(Exception.constructor)
             
-    save(frame: number)
+    save(frame: Long)
 
 }
                 

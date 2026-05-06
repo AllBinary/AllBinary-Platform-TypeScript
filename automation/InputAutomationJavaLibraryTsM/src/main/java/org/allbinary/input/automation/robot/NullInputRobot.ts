@@ -115,21 +115,21 @@ public constructor (){
 }
 
 
-    public keyPress(keycode: number){
+    public keyPress(keycode: Integer){
 var keycode = keycode
 this.logUtil!.putF("KeyCode: " +keycode, this, "keyPress");
     
 }
 
 
-    public keyRelease(keycode: number){
+    public keyRelease(keycode: Integer){
 var keycode = keycode
 this.logUtil!.putF("KeyCode: " +keycode, this, "keyRelease");
     
 }
 
 
-    public mouseMove(x: number, y: number){
+    public mouseMove(x: Integer, y: Integer){
 var x = x
 var y = y
 this.logUtil!.putF("X: " +x +" Y: " +y, this, "mouseMove");
@@ -137,14 +137,14 @@ this.logUtil!.putF("X: " +x +" Y: " +y, this, "mouseMove");
 }
 
 
-    public mousePress(buttons: number){
+    public mousePress(buttons: Integer){
 var buttons = buttons
 this.logUtil!.putF("Buttons: " +buttons, this, "mousePress");
     
 }
 
 
-    public mouseRelease(buttons: number){
+    public mouseRelease(buttons: Integer){
 var buttons = buttons
 this.logUtil!.putF("Buttons: " +buttons, this, "mouseRelease");
     
@@ -162,12 +162,12 @@ var screenRect = screenRect
 }
 
 
-    public delay(ms: number){
+    public delay(ms: Integer){
 var ms = ms
 }
 
 
-    public getAutoDelay(): number{
+    public getAutoDelay(): Integer{
 
 
 
@@ -177,7 +177,7 @@ var ms = ms
 }
 
 
-    public getPixelColor(x: number, y: number): Color{
+    public getPixelColor(x: Integer, y: Integer): Color{
 var x = x
 var y = y
 
@@ -199,12 +199,12 @@ var y = y
 }
 
 
-    public mouseWheel(wheelAmt: number){
+    public mouseWheel(wheelAmt: Integer){
 var wheelAmt = wheelAmt
 }
 
 
-    public setAutoDelay(ms: number){
+    public setAutoDelay(ms: Integer){
 var ms = ms
 }
 

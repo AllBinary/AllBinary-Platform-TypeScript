@@ -126,7 +126,7 @@ public constructor (resource: string){
 ;
     
 
-    var mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.toInt())!;
+    var mediaPlayer: MediaPlayer = MediaPlayer.create(resourceUtil!.getContext(), resourceUtil!.getResourceId(resource)!.intValue())!;
 ;
     
 

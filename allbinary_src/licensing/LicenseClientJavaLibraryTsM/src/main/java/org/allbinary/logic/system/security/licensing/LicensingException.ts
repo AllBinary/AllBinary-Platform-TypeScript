@@ -43,7 +43,7 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class LicensingException extends java.lang.Exception {
+export class LicensingException extends Exception {
         
 
     public static readonly serialVersionUID: number = 1L;

@@ -130,7 +130,7 @@ this.velocityInterface= this.baseVelocityInterface as VelocityInterface;
     var angleIncrementInfo: AngleIncrementInfo = rotationAnimationInterface!.getAngleInfoP()!.getAngleIncrementInfo()!;
 ;
     
-rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt());
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.intValue());
     
 }
 
@@ -148,7 +148,7 @@ rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT
     var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as RotationAnimationInterfaceCompositeInterface;
 ;
     
-rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt());
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.intValue());
     
 
     var allbinaryLayer: AllBinaryLayer = this.getOwnerLayerInterface()!;
@@ -180,7 +180,7 @@ allbinaryLayer!.setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
 ;
     
 
-                        if(ownerLayerInterface!.getXP() -ownerLayerInterface!.getWidth() <= 0 && frame == angleIncrementInfo!.LEFT_FRAME.toInt())
+                        if(ownerLayerInterface!.getXP() -ownerLayerInterface!.getWidth() <= 0 && frame == angleIncrementInfo!.LEFT_FRAME.intValue())
                         
                                     {
                                     this.reverse();
@@ -195,7 +195,7 @@ this.drop();
 ;
     
 
-                        if(ownerLayerInterface!.getX2() +ownerLayerInterface!.getWidth() > displayInfo!.getLastWidth() && frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
+                        if(ownerLayerInterface!.getX2() +ownerLayerInterface!.getWidth() > displayInfo!.getLastWidth() && frame == angleIncrementInfo!.RIGHT_FRAME.intValue())
                         
                                     {
                                     this.reverse();
@@ -225,7 +225,7 @@ this.velocityInterface!.limitMaxXYVelocity(this.velocityInterface!.getMaxForward
 this.circularIndexUtil!.next();
     
 
-                        if(frame == angleIncrementInfo!.LEFT_FRAME.toInt())
+                        if(frame == angleIncrementInfo!.LEFT_FRAME.intValue())
                         
                                     {
                                     super.processKeyAI(Canvas.KEY_NUM0);
@@ -234,7 +234,7 @@ this.circularIndexUtil!.next();
                                     }
                                 
                              else 
-                        if(frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
+                        if(frame == angleIncrementInfo!.RIGHT_FRAME.intValue())
                         
                                     {
                                     super.processKeyAI(Canvas.KEY_POUND);
@@ -259,14 +259,14 @@ this.circularIndexUtil!.next();
 ;
     
 
-                        if(frame == angleIncrementInfo!.LEFT_FRAME.toInt())
+                        if(frame == angleIncrementInfo!.LEFT_FRAME.intValue())
                         
                                     {
                                     
     var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as RotationAnimationInterfaceCompositeInterface;
 ;
     
-rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.toInt());
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT_FRAME.intValue());
     
 this.baseVelocityInterface!.zero();
     
@@ -274,14 +274,14 @@ this.baseVelocityInterface!.zero();
                                     }
                                 
                              else 
-                        if(frame == angleIncrementInfo!.RIGHT_FRAME.toInt())
+                        if(frame == angleIncrementInfo!.RIGHT_FRAME.intValue())
                         
                                     {
                                     
     var rotationAnimationInterfaceCompositeInterface: RotationAnimationInterfaceCompositeInterface = this.getOwnerLayerInterface() as RotationAnimationInterfaceCompositeInterface;
 ;
     
-rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_FRAME.toInt());
+rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.LEFT_FRAME.intValue());
     
 this.baseVelocityInterface!.zero();
     

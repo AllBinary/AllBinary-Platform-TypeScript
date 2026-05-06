@@ -96,7 +96,7 @@ var location = location
                     
 this.basicColor= this.basicColorFactory!.GREEN;
     
-this.colorP= this.basicColor!.toInt();
+this.colorP= this.basicColor!.intValue();
     
 this.rectangle= new Rectangle(0, 0, 1, 1, this.basicColor);
     

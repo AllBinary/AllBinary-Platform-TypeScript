@@ -57,16 +57,16 @@ export class InputProbability
          {
         
 
-    public static INPUT_PROBABILITY: number = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
+    public static INPUT_PROBABILITY: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(0)!;
 
-    private readonly likelyhoodIntegerArray: number[][]
+    private readonly likelyhoodIntegerArray: Integer[][]
 
-    private readonly repeatLikelyhoodIntegerArray: number[]
+    private readonly repeatLikelyhoodIntegerArray: Integer[]
 
     private readonly max: number
 
     private readonly timeDelayHelper: TimeDelayHelper
-public constructor (likelyhoodIntegerArray: number[][], repeatLikelyhoodIntegerArray: number[], max: number, timeDelayHelper: TimeDelayHelper){
+public constructor (likelyhoodIntegerArray: Integer[][], repeatLikelyhoodIntegerArray: Integer[], max: number, timeDelayHelper: TimeDelayHelper){
 
             super();
         var likelyhoodIntegerArray = likelyhoodIntegerArray
@@ -84,7 +84,7 @@ this.timeDelayHelper= timeDelayHelper;
 }
 
 
-    public getLikelyhoodIntegerArray(): number[][]{
+    public getLikelyhoodIntegerArray(): Integer[][]{
 
 
 
@@ -94,7 +94,7 @@ this.timeDelayHelper= timeDelayHelper;
 }
 
 
-    public getRepeatLikelyhoodIntegerArray(): number[]{
+    public getRepeatLikelyhoodIntegerArray(): Integer[]{
 
 
 

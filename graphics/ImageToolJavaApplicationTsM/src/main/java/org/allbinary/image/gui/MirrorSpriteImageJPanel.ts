@@ -135,7 +135,7 @@ new class extends Thread
 ;
     
 
-    var imageProcessorInput: ImageProcessorInput = MirrorSpriteImageJPanel.this.prototype.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = MirrorSpriteImageJPanel.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -150,18 +150,18 @@ new class extends Thread
     var index: number = 0;
 index < bufferedImageArray!.length; index++)
         {
-generatedBufferedImageArray= MirrorImageUtil.getInstance()!.getImages(bufferedImageArray[index]!, MirrorSpriteImageJPanel.this.prototype.verticleJCheckBox!.isSelected(), MirrorSpriteImageJPanel.this.prototype.horizontalJCheckBox!.isSelected());
+generatedBufferedImageArray= MirrorImageUtil.getInstance()!.getImages(bufferedImageArray[index]!, MirrorSpriteImageJPanel.prototype.verticleJCheckBox!.isSelected(), MirrorSpriteImageJPanel.prototype.horizontalJCheckBox!.isSelected());
     
-MirrorSpriteImageJPanel.this.prototype.result= BufferedImageUtil2.getInstance()!.createSpriteImage(generatedBufferedImageArray);
+MirrorSpriteImageJPanel.prototype.result= BufferedImageUtil2.getInstance()!.createSpriteImage(generatedBufferedImageArray);
     
-MirrorSpriteImageJPanel.this.prototype.getParent()!.repaint();
+MirrorSpriteImageJPanel.prototype.getParent()!.repaint();
     
 
     var file: File = imageProcessorInput!.getFiles()[index]!;
 ;
     
 
-                        if(!MirrorSpriteImageJPanel.this.prototype.writeOverOriginalJCheckBox!.isSelected())
+                        if(!MirrorSpriteImageJPanel.prototype.writeOverOriginalJCheckBox!.isSelected())
                         
                                     {
                                     
@@ -182,7 +182,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(MirrorSpriteImageJPanel.this.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(MirrorSpriteImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
@@ -215,13 +215,13 @@ this.jPanel1= new class extends javax.swing.JPanel
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(MirrorSpriteImageJPanel.this.prototype.result != 
+                        if(MirrorSpriteImageJPanel.prototype.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(MirrorSpriteImageJPanel.this.prototype.result, 0, 0, MirrorSpriteImageJPanel.this.prototype.result.getWidth(
-                            null), MirrorSpriteImageJPanel.this.prototype.result.getHeight(
+                                    graphics.drawImage(MirrorSpriteImageJPanel.prototype.result, 0, 0, MirrorSpriteImageJPanel.prototype.result.getWidth(
+                            null), MirrorSpriteImageJPanel.prototype.result.getHeight(
                             null), 
                             null);
     

@@ -131,7 +131,7 @@ var document = document
     var itemVector: Vector = inventoryEntityInterface!.getItems(StoreFrontFactory.getInstance(this.getTransformInfoInterface()!.getStoreName()))!;
 ;
     
-inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, itemVector!.length.
+inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.TOTAL_NUMBER_ITEMS_ON_THIS_PAGE, new Integer(itemVector!.length).
                             toString()));
     
 

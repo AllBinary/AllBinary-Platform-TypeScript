@@ -54,7 +54,7 @@ export interface TaxModuleInterface {
 
                 //@Throws(Exception.constructor)
             
-    getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number
+    getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Float
 
                 //@Throws(Exception.constructor)
             

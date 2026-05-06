@@ -137,20 +137,20 @@ this.logUtil!.putF("Setting Image - " +commonLabels!.WIDTH_LABEL +newBufferedIma
 index < bufferedImageArray!.length; index++)
         {
 
-    var x: number = imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.toInt() *columnIndex++;
+    var x: number = imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.intValue() *columnIndex++;
 ;
     
 
-    var y: number = imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.toInt() *rowIndex;
+    var y: number = imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.intValue() *rowIndex;
 ;
     
 this.logUtil!.putF("Adding Image: " +index +" x: " +x +" y: " +y, this, "getImage");
     
-g.drawImage(bufferedImageArray[index]!, x, y, imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.toInt(), imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.toInt(), 
+g.drawImage(bufferedImageArray[index]!, x, y, imageUnifierProperties!.getImageUnifierCell()!.getWidth()!.intValue(), imageUnifierProperties!.getImageUnifierCell()!.getHeight()!.intValue(), 
                             null);
     
 
-    var totalColumnsMinusOne: number = (imageUnifierProperties!.getColumns()!.toInt() -1);
+    var totalColumnsMinusOne: number = (imageUnifierProperties!.getColumns()!.intValue() -1);
 ;
     
 

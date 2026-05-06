@@ -157,7 +157,7 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
 
                         if(this.getBasicColorP() == 
                                     null
-                                 || this.getBasicColorP()!.toInt() != basicColor!.toInt())
+                                 || this.getBasicColorP()!.intValue() != basicColor!.intValue())
                         
                                     {
                                     changed= true;

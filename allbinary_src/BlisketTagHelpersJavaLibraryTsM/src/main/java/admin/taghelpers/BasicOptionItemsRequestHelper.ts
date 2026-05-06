@@ -220,7 +220,7 @@ values.put(BasicOptionItemData.OPTION_ONE_NINE_VALUE, this.optionValue!.get(8));
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -243,7 +243,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

@@ -29,7 +29,7 @@
 import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { Choice } from '../../../../javax/microedition/lcdui/ChoiceI.js';
+import { Choice, ChoiceI } from  '../../../../javax/microedition/lcdui/Choice.js';
 
     
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
@@ -396,7 +396,7 @@ keyValuePersistance!.save(abeClientInformation, hashtable);
 ;
     
 
-    var integer: number
+    var integer: Integer
 ;
     
 
@@ -409,7 +409,7 @@ index < size2; index++)
         {
 integer= list.objectArray[index]! as Integer;
     
-keyValuePersistance!.delete(abeClientInformation, integer);
+keyValuePersistance!.delete(abeClientInformation, integer.intValue());
     
 }
 

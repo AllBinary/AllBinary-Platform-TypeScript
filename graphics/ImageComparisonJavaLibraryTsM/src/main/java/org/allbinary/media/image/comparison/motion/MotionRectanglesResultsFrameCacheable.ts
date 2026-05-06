@@ -57,8 +57,8 @@ export class MotionRectanglesResultsFrameCacheable
 
     private motionRectangles: MotionRectangles
 
-    private frame: number
-public constructor (motionRectangles: MotionRectangles, frame: number){
+    private frame: Long
+public constructor (motionRectangles: MotionRectangles, frame: Long){
 
             super();
         var motionRectangles = motionRectangles

@@ -71,7 +71,7 @@ export class ColorFromEventUtil
 
     private readonly YELLOW: BasicColor = BasicColorFactory.getInstance()!.YELLOW;
 
-    public readonly COLOR_INT: number = this.YELLOW.toInt()!;
+    public readonly COLOR_INT: number = this.YELLOW.intValue()!;
 
     public getForegroundColor(gameCanvasInterface: AllBinaryGameCanvas): BasicColor{
     //var gameCanvasInterface = gameCanvasInterface

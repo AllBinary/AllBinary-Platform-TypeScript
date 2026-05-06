@@ -116,11 +116,11 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-    var repeatLikelyhoodIntegerArray: number[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;
+    var repeatLikelyhoodIntegerArray: Integer[] = this.inputProbability!.getRepeatLikelyhoodIntegerArray()!;
 ;
     
 
-                        if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.toInt() >= this.i_random)
+                        if(this.getLastKey() !=  -1 && repeatLikelyhoodIntegerArray[this.getLastKey()]!.intValue() >= this.i_random)
                         
                                     {
                                     repeat= true;
@@ -133,7 +133,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-    var likelyhoodIntegerArray: number[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;
+    var likelyhoodIntegerArray: Integer[][] = this.inputProbability!.getLikelyhoodIntegerArray()!;
 ;
     
 this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
@@ -144,7 +144,7 @@ this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.g
 ;
     
 
-    var likelyhoodIntegerKeyArray: number[]
+    var likelyhoodIntegerKeyArray: Integer[]
 ;
     
 
@@ -168,7 +168,7 @@ likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!;
                         
                                     {
                                     
-                        if(this.i_random >= likelyhoodIntegerKeyArray[0]!.toInt() && this.i_random < likelyhoodIntegerKeyArray[1]!.toInt())
+                        if(this.i_random >= likelyhoodIntegerKeyArray[0]!.intValue() && this.i_random < likelyhoodIntegerKeyArray[1]!.intValue())
                         
                                     {
                                     this.setLastKey(key);

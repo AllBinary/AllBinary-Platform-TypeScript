@@ -75,7 +75,7 @@ this.setBasicColorP(basicColor);
 var basicColor = basicColor
 this.basicColor= basicColor;
     
-this.setColor(this.getBasicColorP()!.toInt());
+this.setColor(this.getBasicColorP()!.intValue());
     
 }
 

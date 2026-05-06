@@ -141,10 +141,10 @@ this.context= aContext;
 }
 
 
-    public getResourceId(resource: string): number{
+    public getResourceId(resource: string): Integer{
 var resource = resource
 
-    var value: number = this.hashMap!.get(resource as Object) as Integer;
+    var value: Integer = this.hashMap!.get(resource as Object) as Integer;
 ;
     
 
@@ -152,7 +152,7 @@ var resource = resource
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value)!.toString(), this, "getResourceId");
+                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "getResourceId");
     
 
                                     }
@@ -166,7 +166,7 @@ var resource = resource
 }
 
 
-    public addResource(resource: string, value: number){
+    public addResource(resource: string, value: Integer){
 var resource = resource
 var value = value
 
@@ -174,7 +174,7 @@ var value = value
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value)!.toString(), this, "addResource");
+                            append(resource)!.append(CommonSeps.getInstance()!.COLON)!.append(value.toString())!.toString(), this, "addResource");
     
 
                         if(this.containsDuplicate(resource, value))
@@ -194,7 +194,7 @@ this.hashMap!.put(resource, value);
 }
 
 
-    containsDuplicate(resource: string, value: number): boolean{
+    containsDuplicate(resource: string, value: Integer): boolean{
 var resource = resource
 var value = value
 
@@ -211,7 +211,7 @@ var value = value
 --index >= 0; )
         {
 
-    var integer: number = this.hashMap!.get(objectArray[index]! as Object) as Integer;
+    var integer: Integer = this.hashMap!.get(objectArray[index]! as Object) as Integer;
 ;
     
 
@@ -223,7 +223,7 @@ var value = value
                         
                                     {
                                     
-                        if(value == integer)
+                        if(value.intValue() == integer.intValue())
                         
                                     {
                                     
@@ -267,11 +267,11 @@ this.resources= resources;
     public getResourceAsStream(resource: string): InputStream{
     //var resource = resource
 
-    var integer: number = this.hashMap!.get(resource as Object) as Integer;
+    var integer: Integer = this.hashMap!.get(resource as Object) as Integer;
 ;
     
 
-    var id: number = integer!;
+    var id: number = integer.intValue()!;
 ;
     
 

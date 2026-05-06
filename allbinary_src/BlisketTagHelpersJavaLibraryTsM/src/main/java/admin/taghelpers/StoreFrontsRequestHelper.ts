@@ -295,17 +295,17 @@ adminUserEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.STORECREATED
     
 stringBuffer!.append("Intall StoreFront Successfully: ");
     
-stringBuffer!.appendint(this.portion.getCurrent()!.toInt());
+stringBuffer!.appendint(this.portion.getCurrent()!.intValue());
     
 stringBuffer!.append(" of ");
     
-stringBuffer!.appendint(this.portion.getTotal()!.toInt());
+stringBuffer!.appendint(this.portion.getTotal()!.intValue());
     
 
     var success: string = stringBuffer!.toString()!;
 ;
     
-this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.toInt(), this.portion.getTotal()!.toInt());
+this.modifyingStoreFrontInterface!.install(this.portion.getCurrent()!.intValue(), this.portion.getTotal()!.intValue());
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

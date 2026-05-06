@@ -44,7 +44,7 @@
 export interface MeteredGameObjectInterface {
         
 
-    getRatios(): number[]
+    getRatios(): Double[]
 
     isGood(): boolean
 

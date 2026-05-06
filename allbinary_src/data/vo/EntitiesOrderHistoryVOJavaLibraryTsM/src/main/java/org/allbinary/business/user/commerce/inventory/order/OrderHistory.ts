@@ -469,19 +469,19 @@ hashMap!.put(OrderHistoryData.TRANSDATE, this.transDate);
     
 hashMap!.put(OrderHistoryData.CANCELDATE, this.cancelDate);
     
-hashMap!.put(OrderHistoryData.ORDERDATEFORMATTED, new Date(this.orderDate.
+hashMap!.put(OrderHistoryData.ORDERDATEFORMATTED, new Date(new Long(this.orderDate).
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.SHIPPEDDATEFORMATTED, new Date(this.shipDate.
+hashMap!.put(OrderHistoryData.SHIPPEDDATEFORMATTED, new Date(new Long(this.shipDate).
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.TRANSDATEFORMATTED, new Date(this.transDate.
+hashMap!.put(OrderHistoryData.TRANSDATEFORMATTED, new Date(new Long(this.transDate).
                             longValue()).
                             toString());
     
-hashMap!.put(OrderHistoryData.CANCELDATEFORMATTED, new Date(this.cancelDate.
+hashMap!.put(OrderHistoryData.CANCELDATEFORMATTED, new Date(new Long(this.cancelDate).
                             longValue()).
                             toString());
     

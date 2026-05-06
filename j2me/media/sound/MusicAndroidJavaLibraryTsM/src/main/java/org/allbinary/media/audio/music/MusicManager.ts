@@ -320,7 +320,7 @@ PreLogUtil.put(new StringMaker().
     
 this.timeDelayHelper!.delay= Math.round(duration);
     
-this.currentIntent!.putExtra(this.musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.toInt());
+this.currentIntent!.putExtra(this.musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.intValue());
     
 this.currentIntent!.putExtra(this.musicStrings!.LEFT_VOLUME, leftVolume);
     

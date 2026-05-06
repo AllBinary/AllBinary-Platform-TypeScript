@@ -142,7 +142,7 @@ timeHelper!.setStartTimeTNT();
 ;
     
 
-    var frame: number = index;
+    var frame: Long = new Long(index);
 ;
     
 ScreenCaptureImagesWorker.index++;

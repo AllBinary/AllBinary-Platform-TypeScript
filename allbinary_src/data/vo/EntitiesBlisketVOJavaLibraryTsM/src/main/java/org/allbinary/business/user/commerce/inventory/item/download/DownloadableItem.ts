@@ -98,9 +98,9 @@ export class DownloadableItem
 
     private readonly file: string
 
-    private readonly size: number
+    private readonly size: Long
 
-    private readonly validTime: number
+    private readonly validTime: Long
 
     private readonly retries: string
 public constructor (id: string){
@@ -178,7 +178,7 @@ this.file= hashMap!.get(DownloadItemData.FILE) as string;
                                     }
                                 
                         else {
-                            this.size= 0;
+                            this.size= new Long(0);
     
 
                         }
@@ -225,7 +225,7 @@ this.file= hashMap!.get(DownloadItemData.FILE) as string;
     var totalTime: number = TimeUtil.getInstance()!.getTotalTime(totalYears, totalMonths, totalDays, totalHours, totalMinutes, totalSeconds)!;
 ;
     
-this.validTime= totalTime;
+this.validTime= new Long(totalTime);
     
 
                         }
@@ -241,7 +241,7 @@ this.retries= hashMap!.get(DownloadItemData.RETRIES) as string;
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString()!;
 ;
     
@@ -324,7 +324,7 @@ values.put(DownloadItemData.RETRIES, this.getRetries());
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -419,7 +419,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 }
 
 
-    public getSize(): number{
+    public getSize(): Long{
 
 
 
@@ -429,7 +429,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 }
 
 
-    public getValidTime(): number{
+    public getValidTime(): Long{
 
 
 

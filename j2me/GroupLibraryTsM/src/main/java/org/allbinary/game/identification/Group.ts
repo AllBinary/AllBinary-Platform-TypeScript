@@ -58,7 +58,7 @@ export class Group
          implements GroupInterface {
         
 
-    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(10)!;
+    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(10)!;
 
     private static readonly GROUP_NAME_LABEL: string = "Group Name: ";
 

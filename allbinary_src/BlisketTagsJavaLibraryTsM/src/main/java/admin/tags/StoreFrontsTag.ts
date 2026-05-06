@@ -311,7 +311,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
 this.getPropertiesHashMap()!.put("total", this.getTotal());
     
 
-                        if(this.getCurrent()!.toInt() == this.getTotal()!.toInt())
+                        if(this.getCurrent()!.intValue() == this.getTotal()!.intValue())
                         
                                     {
                                     

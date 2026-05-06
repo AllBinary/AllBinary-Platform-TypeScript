@@ -137,7 +137,7 @@ import { ScrollSelectionFormNoneFactory } from '../../../../../org/allbinary/gra
 import { CommandTextItemArrayFactory } from '../../../../../org/allbinary/graphics/form/item/CommandTextItemArrayFactory.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { AllCommandsVisitor } from '../../../../../org/allbinary/graphics/form/item/validation/AllCommandsVisitor.js';
@@ -248,9 +248,9 @@ this.foregroundBasicColor= foregroundBasicColor;
     
 this.backgroundBasicColor= backgroundBasicColor;
     
-this.foregroundColor= this.foregroundBasicColor!.toInt();
+this.foregroundColor= this.foregroundBasicColor!.intValue();
     
-this.backgroundColor= this.backgroundBasicColor!.toInt();
+this.backgroundColor= this.backgroundBasicColor!.intValue();
     
 this.initCommands(cmdListener);
     
@@ -353,7 +353,7 @@ this.repaintBehavior!.onChangeRepaint(this);
             
     public createForm(): ScrollSelectionForm{
 
-    var items: CustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).
+    var items: ABCustomItem[] = new CommandTextItemArrayFactory(new AllCommandsVisitor()).
                             getInstance(this.getCommandStack() as Vector<any>, this.backgroundBasicColor, this.foregroundBasicColor)!;
 ;
     

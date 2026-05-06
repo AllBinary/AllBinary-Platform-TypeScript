@@ -70,7 +70,7 @@ export class GraphicsAnalysisUtil
 
                 //@Throws(Exception.constructor)
             
-    public static getNominator(bufferedImage: BufferedImage, min_x: number, max_x: number, y: number): number{
+    public static getNominator(bufferedImage: BufferedImage, min_x: Integer, max_x: Integer, y: Integer): number{
 var bufferedImage = bufferedImage
 var min_x = min_x
 var max_x = max_x
@@ -80,11 +80,11 @@ var y = y
 
 
                         for (
-    var index: number = max_x!;
-index > min_x; )
+    var index: number = max_x.intValue()!;
+index > min_x.intValue(); )
         {
 
-    var colorInteger: number = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y)))!;
+    var colorInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y.intValue())))!;
 ;
     
 
@@ -111,7 +111,7 @@ index > min_x; )
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return index -min_x;
+                        return index -min_x.intValue();
     
 
                         }

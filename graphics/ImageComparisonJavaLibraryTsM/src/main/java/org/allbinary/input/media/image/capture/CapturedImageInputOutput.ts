@@ -91,7 +91,7 @@ export class CapturedImageInputOutput
 
                 //@Throws(Exception.constructor)
             
-    public save(frame: number){
+    public save(frame: Long){
 var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -109,7 +109,7 @@ this.save(capturedBufferedImageCacheable!.getBufferedImage(), frame);
 }
 
 
-    public save(bufferedImage: BufferedImage, frame: number){
+    public save(bufferedImage: BufferedImage, frame: Long){
 var bufferedImage = bufferedImage
 var frame = frame
 

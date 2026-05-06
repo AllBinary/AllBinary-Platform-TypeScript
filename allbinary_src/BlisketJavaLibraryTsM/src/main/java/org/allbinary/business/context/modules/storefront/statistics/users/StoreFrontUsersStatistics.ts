@@ -76,7 +76,7 @@ export class StoreFrontUsersStatistics
          implements StoreFrontUsersStatisticsInterface {
         
 
-    private totalNumberOfUsers: number
+    private totalNumberOfUsers: Long
 
     private totalUsersByRoleHashMap: HashMap<any, any>
 public constructor (storeFrontInterface: StoreFrontInterface){
@@ -93,7 +93,7 @@ this.totalUsersByRoleHashMap= new HashMap<any, any>();
     var userVector: Vector = userEntityInterface!.getCustomers()!;
 ;
     
-this.totalNumberOfUsers= userVector!.length;
+this.totalNumberOfUsers= new Long(userVector!.length);
     
 
     var size: number = userVector!.length!;
@@ -116,7 +116,7 @@ index < size; index++)
 ;
     
 
-    var currentNumberOfUsersForRole: number = this.getNewTotal(nextUserRole)!;
+    var currentNumberOfUsersForRole: Long = this.getNewTotal(nextUserRole)!;
 ;
     
 this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
@@ -126,10 +126,10 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
 }
 
 
-    getNewTotal(userRole: UserRole): number{
+    getNewTotal(userRole: UserRole): Long{
 var userRole = userRole
 
-    var numberOfUsersForRoleLong: number = this.totalUsersByRoleHashMap!.get(userRole as Object) as Long;
+    var numberOfUsersForRoleLong: Long = this.totalUsersByRoleHashMap!.get(userRole as Object) as Long;
 ;
     
 
@@ -138,7 +138,7 @@ var userRole = userRole
                                 )
                         
                                     {
-                                    numberOfUsersForRoleLong= 0;
+                                    numberOfUsersForRoleLong= new Long(0);
     
 
                                     }
@@ -147,12 +147,12 @@ var userRole = userRole
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return numberOfUsersForRoleLong!.longValue() +1;
+                        return new Long(numberOfUsersForRoleLong!.longValue() +1);
     
 }
 
 
-    public getNumberOfUsers(): number{
+    public getNumberOfUsers(): Long{
 
 
 
@@ -162,10 +162,10 @@ var userRole = userRole
 }
 
 
-    public getNumberOfUsersByRole(role: string): number{
+    public getNumberOfUsersByRole(role: string): Long{
 var role = role
 
-    var totalForRole: number = this.totalUsersByRoleHashMap!.get(role as Object) as Long;
+    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(role as Object) as Long;
 ;
     
 
@@ -212,7 +212,7 @@ index < size; index++)
 nextUserRole= userRoleArray[index]! as UserRole;
     
 
-    var totalForRole: number = this.totalUsersByRoleHashMap!.get(nextUserRole as Object) as Long;
+    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(nextUserRole as Object) as Long;
 ;
     
 hashMap!.put(nextUserRole!.toString(), totalForRole!.toString());

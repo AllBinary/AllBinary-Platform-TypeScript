@@ -36,7 +36,7 @@ import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer
 import { LayerInterfaceFactoryImageItem } from '../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -116,7 +116,7 @@ export class RTSFormInput
 
     private selectedStickyItemIndex: number= 0
 
-    private selectedStickyItem: CustomItem = CustomItem.NULL_CUSTOM_ITEM;
+    private selectedStickyItem: ABCustomItem = ABCustomItem.NULL_CUSTOM_ITEM;
 public constructor (groupInterfaceArray: Group[]){
 
             super();
@@ -192,7 +192,7 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
 ;
     
 
-    var item: CustomItem = scrollSelectionForm!.get(index)!;
+    var item: ABCustomItem = scrollSelectionForm!.get(index)!;
 ;
     
 
@@ -226,7 +226,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
 
                 //@Throws(Exception.constructor)
             
-    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
@@ -264,7 +264,7 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
 ;
     
 
-    var item: CustomItem = scrollSelectionForm!.get(index)!;
+    var item: ABCustomItem = scrollSelectionForm!.get(index)!;
 ;
     
 
@@ -295,7 +295,7 @@ this.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, laye
 
                 //@Throws(Exception.constructor)
             
-    public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
+    public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
 var associatedRtsLayer = associatedRtsLayer
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
@@ -306,7 +306,7 @@ var index = index
 
                 //@Throws(Exception.constructor)
             
-    getItemAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): CustomItem{
+    getItemAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): ABCustomItem{
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var point = point
 this.logUtil!.putF(new StringMaker().
@@ -348,7 +348,7 @@ this.logUtil!.putF(new StringMaker().
 
                 //@Throws(Exception.constructor)
             
-    getInstance(layerManager: AllBinaryLayerManager, aItem: CustomItem, geographicMapCellPosition: GeographicMapCellPosition): CollidableDestroyableDamageableLayer{
+    getInstance(layerManager: AllBinaryLayerManager, aItem: ABCustomItem, geographicMapCellPosition: GeographicMapCellPosition): CollidableDestroyableDamageableLayer{
     //var layerManager = layerManager
     //var aItem = aItem
     //var geographicMapCellPosition = geographicMapCellPosition
@@ -427,7 +427,7 @@ this.stickyItemSelected= stickyItemSelected;
 }
 
 
-    public getSelectedStickyItem(): CustomItem{
+    public getSelectedStickyItem(): ABCustomItem{
 
 
 
@@ -437,7 +437,7 @@ this.stickyItemSelected= stickyItemSelected;
 }
 
 
-    public setSelectedStickyItem(selectedStickyItem: CustomItem){
+    public setSelectedStickyItem(selectedStickyItem: ABCustomItem){
 var selectedStickyItem = selectedStickyItem
 this.selectedStickyItem= selectedStickyItem;
     

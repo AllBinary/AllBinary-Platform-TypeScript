@@ -128,7 +128,7 @@ this.robot= new Robot(graphicsDevice);
 
                 //@Throws(Exception.constructor)
             
-    public mouseMoveToTarget(rectangle: Rectangle, x: number, y: number){
+    public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
     //var rectangle = rectangle
     //var x = x
     //var y = y
@@ -190,14 +190,14 @@ var screenRect = screenRect
 }
 
 
-    public delay(ms: number){
+    public delay(ms: Integer){
 var ms = ms
 this.robot.delay(ms);
     
 }
 
 
-    public getAutoDelay(): number{
+    public getAutoDelay(): Integer{
 
 
 
@@ -207,7 +207,7 @@ this.robot.delay(ms);
 }
 
 
-    public getPixelColor(x: number, y: number): Color{
+    public getPixelColor(x: Integer, y: Integer): Color{
 var x = x
 var y = y
 
@@ -229,21 +229,21 @@ var y = y
 }
 
 
-    public keyPress(keycode: number){
+    public keyPress(keycode: Integer){
 var keycode = keycode
 this.robot.keyPress(keycode);
     
 }
 
 
-    public keyRelease(keycode: number){
+    public keyRelease(keycode: Integer){
 var keycode = keycode
 this.robot.keyRelease(keycode);
     
 }
 
 
-    public mouseMove(x: number, y: number){
+    public mouseMove(x: Integer, y: Integer){
 var x = x
 var y = y
 this.robot.mouseMove(x, y);
@@ -251,28 +251,28 @@ this.robot.mouseMove(x, y);
 }
 
 
-    public mousePress(buttons: number){
+    public mousePress(buttons: Integer){
 var buttons = buttons
 this.robot.mousePress(buttons);
     
 }
 
 
-    public mouseRelease(buttons: number){
+    public mouseRelease(buttons: Integer){
 var buttons = buttons
 this.robot.mouseRelease(buttons);
     
 }
 
 
-    public mouseWheel(wheelAmt: number){
+    public mouseWheel(wheelAmt: Integer){
 var wheelAmt = wheelAmt
 this.robot.mouseWheel(wheelAmt);
     
 }
 
 
-    public setAutoDelay(ms: number){
+    public setAutoDelay(ms: Integer){
 var ms = ms
 this.robot.setAutoDelay(ms);
     

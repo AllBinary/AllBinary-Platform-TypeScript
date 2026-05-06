@@ -68,18 +68,18 @@ var after = after
 }
 
 
-    public setMaxLength(length: number){
+    public setMaxLength(length: Integer){
 var length = length
-this.length= length;
+this.length= length.toString();
     
 addAttribute(this.MAXLENGTH, this.length);
     
 }
 
 
-    public setSize(size: number){
+    public setSize(size: Integer){
 var size = size
-this.size= size;
+this.size= size.toString();
     
 addAttribute(this.MAXLENGTH, this.size);
     

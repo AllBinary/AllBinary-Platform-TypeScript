@@ -370,7 +370,7 @@ index < size; index++)
     var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(index) as CanvasJPanel;
 ;
     
-canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), index);
+canvasJPanelHashMap!.put(canvasJPanel!.getTreeNode(), new Integer(index));
     
 }
 
@@ -537,11 +537,11 @@ var treeNode = treeNode
                         
                                     {
                                     
-    var frameInteger: number = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
 ;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger) as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInteger!.intValue()) as CanvasJPanel;
 ;
     
 this.initDuplicate(canvasJPanel!.duplicate());
@@ -689,7 +689,7 @@ var treeNode = treeNode
 ;
     
 
-    var frameInteger: number = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
 ;
     
 
@@ -698,7 +698,7 @@ var treeNode = treeNode
                                 )
                         
                                     {
-                                    this.select(frameInteger);
+                                    this.select(frameInteger!.intValue());
     
 
                                     }
@@ -849,12 +849,12 @@ var evt = evt
                                     this.canvasHolderJPanel!.removeAll();
     
 
-    var frameInt: number = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
 ;
     
-this.canvasJPanelList!.remove(frameInt);
+this.canvasJPanelList!.remove(frameInt!.intValue());
     
-this.select(frameInt);
+this.select(frameInt!.intValue());
     
 
                                     }
@@ -891,11 +891,11 @@ var evt = evt
 ;
     
 
-    var frameInt: number = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
+    var frameInt: Integer = canvasJPanelHashMap!.get(evt.getTreeNode()) as Integer;
 ;
     
 
-    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt) as CanvasJPanel;
+    var canvasJPanel: CanvasJPanel = this.canvasJPanelList!.get(frameInt!.intValue()) as CanvasJPanel;
 ;
     
 
@@ -906,7 +906,7 @@ var evt = evt
                                     {
                                     canvasJPanel!.addAngle(evt.getAngle());
     
-this.select(frameInt);
+this.select(frameInt!.intValue());
     
 
                                     }

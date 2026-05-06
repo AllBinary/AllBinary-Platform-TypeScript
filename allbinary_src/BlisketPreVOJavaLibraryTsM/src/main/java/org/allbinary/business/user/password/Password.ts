@@ -217,7 +217,7 @@ this.password= StringUtil.getInstance()!.getNonNull(this.password);
     var vector: Vector = new Vector();
 ;
     
-vector.add(random.
+vector.add(new Integer(random).
                             toString());
     
 vector.add(secret);
@@ -247,7 +247,7 @@ this.password= StringUtil.getInstance()!.getNonNull(this.password);
                             nextInt(SuperCrypt.KEYMAX)!;
 ;
     
-values.put(EntryData.getInstance()!.ENCRYPTION, random.
+values.put(EntryData.getInstance()!.ENCRYPTION, new Integer(random).
                             toString());
     
 values.put(UserData.SECRET, secret);

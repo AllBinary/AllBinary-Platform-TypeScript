@@ -143,7 +143,7 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                         if(geographicCellType == this.startLineId)
                         
                                     {
-                                    BasePathFindingInfoFactory.this.prototype.addStartPathFindingNode(pathFindingInfo, cellPosition);
+                                    BasePathFindingInfoFactory.prototype.addStartPathFindingNode(pathFindingInfo, cellPosition);
     
 
                                     }
@@ -156,13 +156,13 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                         if(geographicCellType == this.startLineId)
                         
                                     {
-                                    BasePathFindingInfoFactory.this.prototype.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()));
+                                    BasePathFindingInfoFactory.prototype.addEndPathFindingNode(pathFindingInfo, geographicMapInterface!.getGeographicMapCellPositionFactoryInterface()!.getInstance(geographicMapInterface, cellPosition!.getColumn(), cellPosition!.getRow(), tiledLayer!.getColumns(), tiledLayer!.getRows(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight()));
     
 
                                     }
                                 
                         else {
-                            BasePathFindingInfoFactory.this.prototype.addEndPathFindingNode(pathFindingInfo, cellPosition);
+                            BasePathFindingInfoFactory.prototype.addEndPathFindingNode(pathFindingInfo, cellPosition);
     
 
                         }

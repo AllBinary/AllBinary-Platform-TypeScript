@@ -153,10 +153,10 @@ var frame = frame
 }
 
 
-    getAIKeyPressed(frame: number): number{
+    getAIKeyPressed(frame: Integer): number{
     //var frame = frame
 
-    var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame);
+    var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.intValue());
 ;
     
 
@@ -167,7 +167,7 @@ var frame = frame
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.turnAI(frame);;
+                        return this.turnAI(frame.intValue());;
     
 
                                     }

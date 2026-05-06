@@ -99,7 +99,7 @@ export class KeyboardActionScriptInput extends BasicProfileActionScriptInput imp
 
     private static readonly NAME: string = "Keyboard";
 
-    static getText(integerArray: number[]): string{
+    static getText(integerArray: Integer[]): string{
 var integerArray = integerArray
 
     var index: number = 0;
@@ -113,7 +113,7 @@ var integerArray = integerArray
         while(index < integerArray!.length)
         {
 
-    var nextInteger: number = integerArray[index]!;
+    var nextInteger: Integer = integerArray[index]!;
 ;
     
 
@@ -146,7 +146,7 @@ index++;
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private keyArray: number[] = 
+    private keyArray: Integer[] = 
                                                         [
                                                             KeySingletonFactory.getInstance(KeyEvent.VK_0)
                                                         ];
@@ -218,7 +218,7 @@ vector.add(keyString.valueOf());
     var time: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.setDelayBetweenKeys(Integer.valueOf(time)!.toInt());
+this.setDelayBetweenKeys(Integer.valueOf(time)!.intValue());
     
 
                                     }
@@ -386,7 +386,7 @@ this.setRelease(true);
 }
 
 
-    public getKeyArray(): number[]{
+    public getKeyArray(): Integer[]{
 
 
 
@@ -396,7 +396,7 @@ this.setRelease(true);
 }
 
 
-    public setKeyArray(keyArray: number[]){
+    public setKeyArray(keyArray: Integer[]){
 var keyArray = keyArray
 
                         if(keyArray != 
@@ -429,7 +429,7 @@ var text = text
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "setText");
     
 
-    var integerArray: number[] = this.integerArrayValue(text)!;
+    var integerArray: Integer[] = this.integerArrayValue(text)!;
 ;
     
 this.setKeyArray(integerArray);
@@ -437,7 +437,7 @@ this.setKeyArray(integerArray);
 }
 
 
-    integerArrayValue(text: string): number[]{
+    integerArrayValue(text: string): Integer[]{
 var text = text
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayValue");
     
@@ -504,7 +504,7 @@ index++;
 }
 
 
-    var integerArray: number[] = vector.toArray(new Array(vector.length)) as Array<Integer?>;
+    var integerArray: Integer[] = vector.toArray(new Array(vector.length)) as Array<Integer?>;
 ;
     
 
@@ -571,7 +571,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionS
 
                 //@Throws(Exception.constructor)
             
-    public process(frame: number){
+    public process(frame: Long){
 var frame = frame
 KeyboardInputAutomationProcessor.process(this);
     

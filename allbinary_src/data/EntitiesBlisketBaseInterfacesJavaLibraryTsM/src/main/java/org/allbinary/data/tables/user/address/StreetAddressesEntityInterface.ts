@@ -52,7 +52,7 @@ import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/ta
 export interface StreetAddressesEntityInterface extends BasicDataTableInterface {
         
 
-    remove(index: number)
+    remove(index: Integer)
 
     add(address: StreetAddress)
 

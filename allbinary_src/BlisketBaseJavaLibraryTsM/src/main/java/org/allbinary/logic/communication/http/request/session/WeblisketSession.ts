@@ -187,7 +187,7 @@ this.session.setAttribute(UserRoleData.NAME.toString(), aRole);
 }
 
 
-    public setAttempts(value: number){
+    public setAttempts(value: Integer){
 var value = value
 this.session.setAttribute(WeblisketSessionData.ATTEMPTS, value);
     
@@ -258,7 +258,7 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 }
 
 
-    public getAttempts(): number{
+    public getAttempts(): Integer{
 
 
 

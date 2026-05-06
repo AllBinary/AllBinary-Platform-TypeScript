@@ -126,7 +126,7 @@ this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds()
 }
 
 
-    add(string: string, seconds: number, basicColor: BasicColor, permanent: Boolean){
+    add(string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
 var string = string
 var seconds = seconds
 var basicColor = basicColor

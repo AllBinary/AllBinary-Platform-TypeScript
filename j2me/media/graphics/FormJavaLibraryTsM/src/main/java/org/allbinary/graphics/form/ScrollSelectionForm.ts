@@ -47,7 +47,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
@@ -95,7 +95,7 @@ import { ItemPaintable } from './ItemPaintable.js';
 export class ScrollSelectionForm extends PaintableForm {
         
 
-    static createForm(title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
+    static createForm(title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
     //var title = title
     //var items = items
     //var formPaintableFactory = formPaintableFactory
@@ -161,7 +161,7 @@ export class ScrollSelectionForm extends PaintableForm {
     private buttonBasicColor: BasicColor
 
     paintable: ItemPaintable = ItemPaintableFactory.getInstance()!;
-public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, rectangle, formType, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
     //var items = items
@@ -186,7 +186,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 }
 
 
-    public append(item: CustomItem): number{
+    public append(item: ABCustomItem): number{
     //var item = item
 
 
@@ -199,7 +199,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 
                 //@Throws(Exception.constructor)
             
-    public getSelectedItem(point: GPoint): CustomItem{
+    public getSelectedItem(point: GPoint): ABCustomItem{
     //var point = point
 
     var index: number = this.getSelectedIndex(point)!;
@@ -223,7 +223,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CustomItem.NULL_CUSTOM_ITEM;
+                        return ABCustomItem.NULL_CUSTOM_ITEM;
     
 
                         }
@@ -233,7 +233,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 
                 //@Throws(Exception.constructor)
             
-    public getItemIndex(item: CustomItem): number{
+    public getItemIndex(item: ABCustomItem): number{
     //var item = item
 
     var size: number = this.size()!;
@@ -641,7 +641,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     
 item.paint(graphics, x, y);
     
-graphics.setColor(this.getButtonBasicColor()!.toInt());
+graphics.setColor(this.getButtonBasicColor()!.intValue());
     
 
     var adjustedBorder: number = 3;
@@ -716,7 +716,7 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
     var height: number = item.getMinimumHeight()!;
 ;
     
-graphics.setColor(this.getButtonBasicColor()!.toInt());
+graphics.setColor(this.getButtonBasicColor()!.intValue());
     
 item.paintUnselected(graphics, x, y);
     

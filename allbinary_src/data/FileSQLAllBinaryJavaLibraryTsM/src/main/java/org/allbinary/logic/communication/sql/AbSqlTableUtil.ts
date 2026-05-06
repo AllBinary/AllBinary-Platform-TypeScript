@@ -260,7 +260,7 @@ var tableName = tableName
 ;
     
 
-    var timeLong: number = calendar.getTimeInMillis();
+    var timeLong: Long = new Long(calendar.getTimeInMillis());
 ;
     
 
@@ -562,7 +562,7 @@ var portion = portion
 ;
     
 
-    var current: number = portion.getCurrent()!.toInt()!;
+    var current: number = portion.getCurrent()!.intValue()!;
 ;
     
 
@@ -601,7 +601,7 @@ var portion = portion
 ;
     
 
-    var section: number = size /portion.getTotal()!.toInt() +1;
+    var section: number = size /portion.getTotal()!.intValue() +1;
 ;
     
 

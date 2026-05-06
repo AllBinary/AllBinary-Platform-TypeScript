@@ -98,7 +98,7 @@ public constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public save(frame: number){
+    public save(frame: Long){
     //var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -148,7 +148,7 @@ this.save(imageComparisonResult, imageComparisonResultFrameCacheable!.getFrame()
 
                 //@Throws(Exception.constructor)
             
-    public save(imageComparisonResult: ImageComparisonResult, frame: number){
+    public save(imageComparisonResult: ImageComparisonResult, frame: Long){
     //var imageComparisonResult = imageComparisonResult
     //var frame = frame
 

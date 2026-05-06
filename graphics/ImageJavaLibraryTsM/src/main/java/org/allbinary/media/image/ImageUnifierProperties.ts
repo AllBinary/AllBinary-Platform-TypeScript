@@ -49,9 +49,9 @@ export class ImageUnifierProperties
          {
         
 
-    private rows: number
+    private rows: Integer
 
-    private columns: number
+    private columns: Integer
 
     private imageUnifierCell: ImageUnifierCell
 public constructor (){
@@ -65,7 +65,7 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getColumns()!.toInt() *this.getImageUnifierCell()!.getWidth()!.toInt();
+                        return this.getColumns()!.intValue() *this.getImageUnifierCell()!.getWidth()!.intValue();
     
 }
 
@@ -75,12 +75,12 @@ public constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getRows()!.toInt() *this.getImageUnifierCell()!.getHeight()!.toInt();
+                        return this.getRows()!.intValue() *this.getImageUnifierCell()!.getHeight()!.intValue();
     
 }
 
 
-    public getRows(): number{
+    public getRows(): Integer{
 
 
 
@@ -90,14 +90,14 @@ public constructor (){
 }
 
 
-    public setRows(rows: number){
+    public setRows(rows: Integer){
 var rows = rows
 this.rows= rows;
     
 }
 
 
-    public getColumns(): number{
+    public getColumns(): Integer{
 
 
 
@@ -107,7 +107,7 @@ this.rows= rows;
 }
 
 
-    public setColumns(columns: number){
+    public setColumns(columns: Integer){
 var columns = columns
 this.columns= columns;
     

@@ -199,7 +199,7 @@ private constructor (){
                         
                                     {
                                     
-    var scaleX2Float: number = this.scaleXBasicArrayList!.get(index) as Float;
+    var scaleX2Float: Float = this.scaleXBasicArrayList!.get(index) as Float;
 ;
     
 
@@ -207,7 +207,7 @@ private constructor (){
 ;
     
 
-    var scaleY2Float: number = this.scaleYBasicArrayList!.get(index) as Float;
+    var scaleY2Float: Float = this.scaleYBasicArrayList!.get(index) as Float;
 ;
     
 

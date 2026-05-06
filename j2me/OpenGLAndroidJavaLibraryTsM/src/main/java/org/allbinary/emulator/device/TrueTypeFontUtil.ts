@@ -234,7 +234,7 @@ paint.setTextSize(this.realFontSize);
     
 paint.setAlpha(Math.round(basicColor!.alpha));
     
-paint.setColor(basicColor!.toInt());
+paint.setColor(basicColor!.intValue());
     
 
     var biggestHeight: number = 0;

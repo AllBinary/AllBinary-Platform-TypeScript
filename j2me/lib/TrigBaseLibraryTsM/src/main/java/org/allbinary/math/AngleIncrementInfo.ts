@@ -60,13 +60,13 @@ export class AngleIncrementInfo
 
     private readonly angleIncrement: number
 
-    public readonly DOWN_FRAME: number
+    public readonly DOWN_FRAME: Integer
 
-    public readonly UP_FRAME: number
+    public readonly UP_FRAME: Integer
 
-    public readonly LEFT_FRAME: number
+    public readonly LEFT_FRAME: Integer
 
-    public readonly RIGHT_FRAME: number
+    public readonly RIGHT_FRAME: Integer
 public constructor (angleIncrement: number){
 
             super();
@@ -129,11 +129,11 @@ var frame = frame
     public getClosestGeneralDirection(angle: number): number{
 var angle = angle
 
-    var closestDirection: number = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;
+    var closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;
 ;
     
 
-                        if(this.UP_FRAME -angle < closestDirection -angle)
+                        if(this.UP_FRAME.intValue() -angle < closestDirection!.intValue() -angle)
                         
                                     {
                                     closestDirection= this.UP_FRAME;
@@ -142,7 +142,7 @@ var angle = angle
                                     }
                                 
 
-                        if(this.DOWN_FRAME -angle < closestDirection -angle)
+                        if(this.DOWN_FRAME.intValue() -angle < closestDirection!.intValue() -angle)
                         
                                     {
                                     closestDirection= this.DOWN_FRAME;
@@ -151,7 +151,7 @@ var angle = angle
                                     }
                                 
 
-                        if(this.LEFT_FRAME -angle < closestDirection -angle)
+                        if(this.LEFT_FRAME.intValue() -angle < closestDirection!.intValue() -angle)
                         
                                     {
                                     closestDirection= this.LEFT_FRAME;
@@ -160,7 +160,7 @@ var angle = angle
                                     }
                                 
 
-                        if(this.RIGHT_FRAME -angle < closestDirection -angle)
+                        if(this.RIGHT_FRAME.intValue() -angle < closestDirection!.intValue() -angle)
                         
                                     {
                                     closestDirection= this.RIGHT_FRAME;
@@ -172,7 +172,7 @@ var angle = angle
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return closestDirection;;
+                        return closestDirection!.intValue();;
     
 }
 

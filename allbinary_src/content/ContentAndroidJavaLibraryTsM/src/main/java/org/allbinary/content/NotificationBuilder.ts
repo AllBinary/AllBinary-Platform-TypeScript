@@ -65,7 +65,7 @@ export class NotificationBuilder
 
     public static readonly NULL_NOTIFICATION_BUILDER: NotificationBuilder = new NotificationBuilder();
 
-    public build(context: Context, command: Command, message: string, integer: number, pendingIntent: PendingIntent): Parcelable{
+    public build(context: Context, command: Command, message: string, integer: Integer, pendingIntent: PendingIntent): Parcelable{
 var context = context
 var command = command
 var message = message

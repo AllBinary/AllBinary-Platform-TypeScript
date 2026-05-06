@@ -97,7 +97,7 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveM
 
                 //@Throws(Exception.constructor)
             
-    public mouseMoveToTarget(rectangle: Rectangle, x: number, y: number){
+    public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
 var rectangle = rectangle
 var x = x
 var y = y
@@ -121,7 +121,7 @@ this.mouseMoveToTarget(rectangle, 0, 0);
 }
 
 
-    public mouseMove(x: number, y: number){
+    public mouseMove(x: Integer, y: Integer){
 var x = x
 var y = y
 

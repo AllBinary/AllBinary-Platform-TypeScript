@@ -166,9 +166,9 @@ export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.M
 
     private static frame: number = 0;
 
-    private static readonly gridColor: Color = new Color(BasicColorFactory.getInstance()!.WHITE.toInt());
+    private static readonly gridColor: Color = new Color(BasicColorFactory.getInstance()!.WHITE.intValue());
 
-    private static readonly backgroundColor: Color = new Color(BasicColorFactory.getInstance()!.CLEAR_COLOR.toInt());
+    private static readonly backgroundColor: Color = new Color(BasicColorFactory.getInstance()!.CLEAR_COLOR.intValue());
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
@@ -309,7 +309,7 @@ this.workAreaJTreeJPanel!.repaint();
                 //@Throws(Exception.constructor)
             
     initMyComponents(){
-this.frameLabel= new CanvasTreeLabel("FrameLabel" +CanvasJPanel.frame.
+this.frameLabel= new CanvasTreeLabel("FrameLabel" +new Integer(CanvasJPanel.frame).
                             toString());
     
 this.canvasTreeNode= new DefaultMutableTreeNode(this.frameLabel);
@@ -893,7 +893,7 @@ this.duplicateGraphicItem(graphicItem);
     public drawItems(graphics: Graphics){
 var graphics = graphics
 
-    var angleDouble: number = new number(this.angle);
+    var angleDouble: Double = new Double(this.angle);
 ;
     
 
@@ -1004,7 +1004,7 @@ this.drawGrid(graphics);
                                 
 this.drawItems(graphics);
     
-graphics.drawString(new number(this.getAngle()).
+graphics.drawString(new Double(this.getAngle()).
                             toString(), this.getWidth() -75, this.getHeight() -15);
     
 this.grid.isChanged= false;

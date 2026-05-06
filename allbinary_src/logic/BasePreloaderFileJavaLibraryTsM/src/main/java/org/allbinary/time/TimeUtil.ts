@@ -72,23 +72,23 @@ var monthString = monthString
 var dayString = dayString
 var hourString = hourString
 
-    var year: number = yearString.
-                            toInt()!;
+    var year: number = new Integer(yearString).
+                            intValue()!;
 ;
     
 
-    var month: number = monthString.
-                            toInt()!;
+    var month: number = new Integer(monthString).
+                            intValue()!;
 ;
     
 
-    var day: number = dayString.
-                            toInt()!;
+    var day: number = new Integer(dayString).
+                            intValue()!;
 ;
     
 
-    var hour: number = hourString.
-                            toInt()!;
+    var hour: number = new Integer(hourString).
+                            intValue()!;
 ;
     
 calendar.set(year, month, day, hour, 0);
@@ -105,33 +105,33 @@ var hourString = hourString
 var minuteString = minuteString
 var secondString = secondString
 
-    var year: number = yearString.
-                            toInt()!;
+    var year: number = new Integer(yearString).
+                            intValue()!;
 ;
     
 
-    var month: number = monthString.
-                            toInt()!;
+    var month: number = new Integer(monthString).
+                            intValue()!;
 ;
     
 
-    var day: number = dayString.
-                            toInt()!;
+    var day: number = new Integer(dayString).
+                            intValue()!;
 ;
     
 
-    var hour: number = hourString.
-                            toInt()!;
+    var hour: number = new Integer(hourString).
+                            intValue()!;
 ;
     
 
-    var minute: number = minuteString.
-                            toInt()!;
+    var minute: number = new Integer(minuteString).
+                            intValue()!;
 ;
     
 
-    var second: number = secondString.
-                            toInt()!;
+    var second: number = new Integer(secondString).
+                            intValue()!;
 ;
     
 calendar.set(year, month, day, hour, minute, second);
@@ -148,33 +148,33 @@ var hoursString = hoursString
 var minutesString = minutesString
 var secondsString = secondsString
 
-    var year: number = calendar.get(Calendar.YEAR) +yearsString.
-                            toInt();
+    var year: number = calendar.get(Calendar.YEAR) +new Integer(yearsString).
+                            intValue();
 ;
     
 
-    var month: number = calendar.get(Calendar.MONTH) +monthsString.
-                            toInt();
+    var month: number = calendar.get(Calendar.MONTH) +new Integer(monthsString).
+                            intValue();
 ;
     
 
-    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +daysString.
-                            toInt();
+    var day: number = calendar.get(Calendar.DAY_OF_MONTH) +new Integer(daysString).
+                            intValue();
 ;
     
 
-    var hour: number = calendar.get(Calendar.HOUR) +hoursString.
-                            toInt();
+    var hour: number = calendar.get(Calendar.HOUR) +new Integer(hoursString).
+                            intValue();
 ;
     
 
-    var minute: number = calendar.get(Calendar.MINUTE) +minutesString.
-                            toInt();
+    var minute: number = calendar.get(Calendar.MINUTE) +new Integer(minutesString).
+                            intValue();
 ;
     
 
-    var second: number = calendar.get(Calendar.SECOND) +secondsString.
-                            toInt();
+    var second: number = calendar.get(Calendar.SECOND) +new Integer(secondsString).
+                            intValue();
 ;
     
 calendar.set(year, month, day, hour, minute, second);

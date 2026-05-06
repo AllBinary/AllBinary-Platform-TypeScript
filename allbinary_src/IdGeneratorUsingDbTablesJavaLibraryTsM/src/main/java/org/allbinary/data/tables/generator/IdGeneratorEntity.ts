@@ -92,7 +92,7 @@ super.setTableName(this.tableName);
 
                 //@Throws(Exception.constructor)
             
-    public get(name: string): number{
+    public get(name: string): Long{
 var name = name
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
@@ -168,7 +168,7 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.delete, e);
 }
 
 
-    public update(name: string, value: number){
+    public update(name: string, value: Long){
 var name = name
 var value = value
 

@@ -303,7 +303,7 @@ item.deactivate();
 }
 
 
-    private readonly rectColor: Color = new Color(BasicColorFactory.getInstance()!.RED.toInt());
+    private readonly rectColor: Color = new Color(BasicColorFactory.getInstance()!.RED.intValue());
 
     public getXRect(): number{
 
@@ -359,7 +359,7 @@ item.deactivate();
 }
 
 
-    public paint(g: Graphics, canvasAngle: number, dimension: IntegerDimension, x: number, y: number){
+    public paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number){
 var g = g
 var canvasAngle = canvasAngle
 var dimension = dimension

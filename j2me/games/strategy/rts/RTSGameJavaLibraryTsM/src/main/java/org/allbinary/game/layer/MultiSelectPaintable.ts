@@ -165,7 +165,7 @@ this.rootNameList!.clear();
 
     private readonly totalWidth: number = MyFont.getInstance()!.stringWidth(this.TOTAL)!;
 
-    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.toInt()!;
+    private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
 
     public paint(graphics: Graphics){
 var graphics = graphics

@@ -63,7 +63,7 @@ import { WaypointLayer } from '../../../../../org/allbinary/game/layer/waypoint/
 import { WaypointEventHandlerFactory } from '../../../../../org/allbinary/game/layer/waypoint/event/WaypointEventHandlerFactory.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -373,7 +373,7 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRT
 
                 //@Throws(Exception.constructor)
             
-    public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
+    public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager

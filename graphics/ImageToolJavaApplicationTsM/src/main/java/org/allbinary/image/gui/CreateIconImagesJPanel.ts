@@ -178,7 +178,7 @@ new class extends Thread
 ;
     
 
-    var imageProcessorInput: ImageProcessorInput = CreateIconImagesJPanel.this.prototype.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = CreateIconImagesJPanel.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -225,13 +225,11 @@ iconHeightList!.add(864);
     var index2: number = 0;
 index2 < size; index2++)
         {
-width= get = iconWidthList!.get(index2);get as Integer
-get.
-                    toInt();
+width= 
+                                    (get as Integer).intValue();
     
-height= get = iconHeightList!.get(index2);get as Integer
-get.
-                    toInt();
+height= 
+                                    (get as Integer).intValue();
     
 
     var generatedBufferedImageArray: BufferedImage[] = imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true)!;
@@ -283,7 +281,7 @@ imagePersistanceUtil!.saveWithBatik(new AbFile(newFilePath), generatedBufferedIm
 
 }
 
-CreateIconImagesJPanel.this.prototype.getParent()!.repaint();
+CreateIconImagesJPanel.prototype.getParent()!.repaint();
     
 
                 //: 

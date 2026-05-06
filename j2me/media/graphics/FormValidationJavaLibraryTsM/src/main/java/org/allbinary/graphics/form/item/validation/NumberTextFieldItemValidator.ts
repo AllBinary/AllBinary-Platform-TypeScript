@@ -97,7 +97,7 @@ this.maxChars= maxChars;
 }
 
 
-    isNumberValid(value: number): Boolean{
+    isNumberValid(value: Integer): Boolean{
 var value = value
 
 
@@ -108,7 +108,7 @@ var value = value
 }
 
 
-    toNumberVector(value: number): Vector<any>{
+    toNumberVector(value: Integer): Vector<any>{
 var value = value
 
 
@@ -218,11 +218,11 @@ result= BooleanFactory.getInstance()!.FALSE;
                                     
         try {
             
-    var number: number = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;
+    var number: Integer = smallIntegerSingletonFactory!.createInstance(Integer.parseInt(this.textFieldItem!.getString()))!;
 ;
     
 
-                        if(number > this.min)
+                        if(number.intValue() > this.min)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
@@ -233,7 +233,7 @@ list.add(stringMaker!.append(name)!.append(" is to small")!.toString());
                                     }
                                 
                              else 
-                        if(number > this.max)
+                        if(number.intValue() > this.max)
                         
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());

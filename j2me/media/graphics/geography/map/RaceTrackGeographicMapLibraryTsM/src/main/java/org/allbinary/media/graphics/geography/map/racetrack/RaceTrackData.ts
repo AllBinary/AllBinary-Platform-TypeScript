@@ -80,8 +80,8 @@ export class RaceTrackData
 
     private overPassGeographicMapCellPositionArray: CellPosition[] = this.NO_OVER_PASSES_ARRAY;
 
-    private id: number
-public constructor (id: number, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
+    private id: Integer
+public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
 
             super();
             //var id = id
@@ -261,14 +261,14 @@ this.miniCellHeight= miniCellHeight;
 }
 
 
-    public setId(id: number){
+    public setId(id: Integer){
 var id = id
 this.id= id;
     
 }
 
 
-    public getId(): number{
+    public getId(): Integer{
 
 
 

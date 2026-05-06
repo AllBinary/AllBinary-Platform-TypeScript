@@ -143,7 +143,7 @@ this.onDisplayChangeEvent(DisplayInfoSingleton.getInstance()!.displayChangeEvent
     
 this.setBasicColorP(basicColor);
     
-this.color= basicColor!.toInt();
+this.color= basicColor!.intValue();
     
 }
 

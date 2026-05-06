@@ -204,7 +204,7 @@ this.IMAGE[index]= NullCanvas.NULL_IMAGE;
                         if(AndroidBasicTitleProgressBar.background != 0)
                         
                                     {
-                                    ResourceUtil.getInstance()!.addResource(AndroidBasicTitleProgressBar.RESOURCE, AndroidBasicTitleProgressBar.background);
+                                    ResourceUtil.getInstance()!.addResource(AndroidBasicTitleProgressBar.RESOURCE, new Integer(AndroidBasicTitleProgressBar.background));
     
 GameFeatureImageCacheFactory.init();
     

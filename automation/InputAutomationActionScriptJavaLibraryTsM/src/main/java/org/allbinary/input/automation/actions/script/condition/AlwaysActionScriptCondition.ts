@@ -236,7 +236,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScr
 
                 //@Throws(Exception.constructor)
             
-    public shouldProcess(frame: number): boolean{
+    public shouldProcess(frame: Long): boolean{
 var frame = frame
 
                         if(this.isIsOn())

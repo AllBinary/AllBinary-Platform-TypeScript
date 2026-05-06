@@ -79,8 +79,8 @@ export class AllBinaryTiledLayer extends Layer implements NamedInterface, Painta
 
     private readonly halfCellHeight: number
 
-    private readonly dataId: number
-public constructor (dataId: number, width: number, height: number, cellWidth: number, cellHeight: number){
+    private readonly dataId: Integer
+public constructor (dataId: Integer, width: number, height: number, cellWidth: number, cellHeight: number){
             super(0, 0);
                         //var dataId = dataId
     //var width = width
@@ -346,7 +346,7 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 }
 
 
-    public getDataId(): number{
+    public getDataId(): Integer{
 
 
 

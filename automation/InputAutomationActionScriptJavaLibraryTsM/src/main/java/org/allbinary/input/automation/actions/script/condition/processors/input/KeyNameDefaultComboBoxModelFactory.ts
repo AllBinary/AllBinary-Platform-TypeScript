@@ -64,7 +64,7 @@ export class KeyNameDefaultComboBoxModelFactory
 ;
     
 
-    var keyArray: number[] = KeySingletonFactory.getArray()!;
+    var keyArray: Integer[] = KeySingletonFactory.getArray()!;
 ;
     
 

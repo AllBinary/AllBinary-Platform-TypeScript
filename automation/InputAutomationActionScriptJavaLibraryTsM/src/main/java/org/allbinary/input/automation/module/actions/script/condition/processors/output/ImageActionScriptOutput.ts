@@ -265,7 +265,7 @@ node.appendChild(newNode);
 
                 //@Throws(Exception.constructor)
             
-    public process(frame: number){
+    public process(frame: Long){
 var frame = frame
 ImageActionScriptOutputProcessor.process(this, frame);
     

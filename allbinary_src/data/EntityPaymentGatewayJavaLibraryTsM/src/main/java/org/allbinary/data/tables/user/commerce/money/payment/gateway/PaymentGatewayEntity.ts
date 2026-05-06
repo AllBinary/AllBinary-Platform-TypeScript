@@ -157,7 +157,7 @@ vector.addAll(new PaymentGatewayEncryptedMapping(paymentGatewayInterface).
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -203,7 +203,7 @@ var paymentGatewayInterface = paymentGatewayInterface
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

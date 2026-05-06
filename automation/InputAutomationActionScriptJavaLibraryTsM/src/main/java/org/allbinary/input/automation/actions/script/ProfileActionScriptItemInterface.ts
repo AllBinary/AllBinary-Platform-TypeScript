@@ -50,7 +50,7 @@ export interface ProfileActionScriptItemInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(frame: number)
+    process(frame: Long)
 
 }
                 

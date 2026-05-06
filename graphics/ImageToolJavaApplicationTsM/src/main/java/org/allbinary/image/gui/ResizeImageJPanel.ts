@@ -169,15 +169,15 @@ new class extends Thread
 ;
     
 
-    var percent: number = Integer(Integer.valueOf(ResizeImageJPanel.this.prototype.jComboBox1!.getSelectedItem() as string))!;
+    var percent: Integer = Integer(Integer.valueOf(ResizeImageJPanel.prototype.jComboBox1!.getSelectedItem() as string))!;
 ;
     
 
-    var percentAsFloat: number = Float.parseFloat(ResizeImageJPanel.this.prototype.floatPercentJTextField!.getText())!;
+    var percentAsFloat: Float = Float.parseFloat(ResizeImageJPanel.prototype.floatPercentJTextField!.getText())!;
 ;
     
 
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.this.prototype.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -191,7 +191,7 @@ new class extends Thread
 ;
     
 
-                        if(percentAsFloat!.toInt() !=  -1)
+                        if(percentAsFloat!.intValue() !=  -1)
                         
                                     {
                                     generatedBufferedImageArray= imageUtil!.createBufferedImage2(imageProcessorInput!.getBufferedImageArray(), percentAsFloat, true);
@@ -200,7 +200,7 @@ new class extends Thread
                                     }
                                 
                              else 
-                        if(percent !=  -1)
+                        if(percent.intValue() !=  -1)
                         
                                     {
                                     generatedBufferedImageArray= imageUtil!.createBufferedImageForResize(imageProcessorInput!.getBufferedImageArray(), percent, true);
@@ -210,11 +210,11 @@ new class extends Thread
                                 
                         else {
                             
-    var width: number = Integer(Integer.valueOf(ResizeImageJPanel.this.prototype.jTextField1!.getText() as string))!;
+    var width: Integer = Integer(Integer.valueOf(ResizeImageJPanel.prototype.jTextField1!.getText() as string))!;
 ;
     
 
-    var height: number = Integer(Integer.valueOf(ResizeImageJPanel.this.prototype.jTextField2!.getText() as string))!;
+    var height: Integer = Integer(Integer.valueOf(ResizeImageJPanel.prototype.jTextField2!.getText() as string))!;
 ;
     
 generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true);
@@ -259,7 +259,7 @@ imagePersistanceUtil!.saveWithBatik(FileWrapperUtil.wrapFile(files[index]!), gen
     
 }
 
-ResizeImageJPanel.this.prototype.getParent()!.repaint();
+ResizeImageJPanel.prototype.getParent()!.repaint();
     
 
                 //: 
@@ -290,7 +290,7 @@ new class extends Thread
 
         try {
             
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.this.prototype.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -315,13 +315,13 @@ index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
     
-ResizeImageJPanel.this.prototype.jTextField1!.setText(bufferedImage!.getWidth().toString());
+ResizeImageJPanel.prototype.jTextField1!.setText(bufferedImage!.getWidth().toString());
     
-ResizeImageJPanel.this.prototype.jTextField2!.setText(bufferedImage!.getHeight().toString());
+ResizeImageJPanel.prototype.jTextField2!.setText(bufferedImage!.getHeight().toString());
     
 }
 
-ResizeImageJPanel.this.prototype.getParent()!.repaint();
+ResizeImageJPanel.prototype.getParent()!.repaint();
     
 
                 //: 
@@ -352,7 +352,7 @@ new class extends Thread
 
         try {
             
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.this.prototype.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -377,13 +377,13 @@ index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
     
-ResizeImageJPanel.this.prototype.jTextField1!.setText(bufferedImage!.getWidth() /16 *16.toString());
+ResizeImageJPanel.prototype.jTextField1!.setText(bufferedImage!.getWidth() /16 *16.toString());
     
-ResizeImageJPanel.this.prototype.jTextField2!.setText(bufferedImage!.getHeight() /16 *16.toString());
+ResizeImageJPanel.prototype.jTextField2!.setText(bufferedImage!.getHeight() /16 *16.toString());
     
 }
 
-ResizeImageJPanel.this.prototype.getParent()!.repaint();
+ResizeImageJPanel.prototype.getParent()!.repaint();
     
 
                 //: 
@@ -414,7 +414,7 @@ new class extends Thread
 
         try {
             
-    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.this.prototype.getImageProcessorInput()!;
+    var imageProcessorInput: ImageProcessorInput = ResizeImageJPanel.prototype.getImageProcessorInput()!;
 ;
     
 
@@ -439,13 +439,13 @@ index < size; index++)
         {
 bufferedImage= bufferedImageArray[0]!;
     
-ResizeImageJPanel.this.prototype.jTextField1!.setText(((bufferedImage!.getWidth() /16) +1) *16.toString());
+ResizeImageJPanel.prototype.jTextField1!.setText(((bufferedImage!.getWidth() /16) +1) *16.toString());
     
-ResizeImageJPanel.this.prototype.jTextField2!.setText(((bufferedImage!.getHeight() /16) +1) *16.toString());
+ResizeImageJPanel.prototype.jTextField2!.setText(((bufferedImage!.getHeight() /16) +1) *16.toString());
     
 }
 
-ResizeImageJPanel.this.prototype.getParent()!.repaint();
+ResizeImageJPanel.prototype.getParent()!.repaint();
     
 
                 //: 

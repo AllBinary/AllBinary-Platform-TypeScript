@@ -16,7 +16,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -54,7 +54,7 @@ export class ABCustomForm extends CustomScreen {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-public constructor (title: string, items: CustomItem[], backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, items: ABCustomItem[], backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
         var title = title
@@ -98,7 +98,7 @@ var itemNum = itemNum
 }
 
 
-    public append(item: CustomItem): number{
+    public append(item: ABCustomItem): number{
 var item = item
 
 
@@ -109,25 +109,25 @@ var item = item
 }
 
 
-    public insert(itemNum: number, item: CustomItem){
+    public insert(itemNum: number, item: ABCustomItem){
 var itemNum = itemNum
 var item = item
 }
 
 
-    public set(itemNum: number, item: CustomItem){
+    public set(itemNum: number, item: ABCustomItem){
 var itemNum = itemNum
 var item = item
 }
 
 
-    public get(itemNum: number): CustomItem{
+    public get(itemNum: number): ABCustomItem{
 var itemNum = itemNum
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CustomItem.NULL_CUSTOM_ITEM;
+                        return ABCustomItem.NULL_CUSTOM_ITEM;
     
 }
 

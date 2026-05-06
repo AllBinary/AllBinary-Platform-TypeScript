@@ -59,7 +59,7 @@ export interface IdGeneratorEntityInterface extends BasicDataTableInterface {
 
                 //@Throws(Exception.constructor)
             
-    get(name: string): number
+    get(name: string): Long
 
     deleteWhere(key: string, value: string)
 

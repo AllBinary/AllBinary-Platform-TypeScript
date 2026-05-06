@@ -78,7 +78,7 @@ export class NullRaceTrackGeographicMap
 
     public static readonly NULL_RACE_TRACK_GEOGRAPHIC_MAP: NullRaceTrackGeographicMap = new NullRaceTrackGeographicMap();
 
-    public getId(): number{
+    public getId(): Integer{
 
 
 

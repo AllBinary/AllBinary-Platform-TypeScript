@@ -136,7 +136,7 @@ private constructor (){
 ;
     
 
-    var integer: number = ResourceUtil.getInstance()!.getResourceId(resource)!;
+    var integer: Integer = ResourceUtil.getInstance()!.getResourceId(resource)!;
 ;
     
 

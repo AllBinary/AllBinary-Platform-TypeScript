@@ -54,7 +54,7 @@ export interface WorkFlowInterface {
 
                 //@Throws(Exception.constructor)
             
-    process(): number
+    process(): Integer
 
 }
                 

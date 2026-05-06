@@ -125,8 +125,8 @@ this.expiration= payment.get(PaymentData.EXPIRATION) as string;
     
 this.encryption= payment.get(EntryData.getInstance()!.ENCRYPTION) as string;
     
-this.number= new SuperCrypt(this.encryption.
-                            toInt()).
+this.number= new SuperCrypt(new Integer(this.encryption).
+                            intValue()).
                             decrypt(payment.get(PaymentData.NUMBER) as string) as string;
     
 this.id= payment.get(PaymentData.ID) as string;

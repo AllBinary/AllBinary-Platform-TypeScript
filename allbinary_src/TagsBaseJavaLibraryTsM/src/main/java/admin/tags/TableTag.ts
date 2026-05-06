@@ -94,9 +94,9 @@ export class TableTag extends PropertiesTag {
 
     private requestObject: any
 
-    private current: number
+    private current: Integer
 
-    private total: number
+    private total: Integer
 public constructor (){
 
             super();
@@ -185,14 +185,14 @@ this.tagRequestHelperFactoryInterface= tagHelperFactoryInterface;
 }
 
 
-    public setCurrent(current: number){
+    public setCurrent(current: Integer){
 var current = current
 this.current= current;
     
 }
 
 
-    public getCurrent(): number{
+    public getCurrent(): Integer{
 
 
 
@@ -202,14 +202,14 @@ this.current= current;
 }
 
 
-    public setTotal(total: number){
+    public setTotal(total: Integer){
 var total = total
 this.total= total;
     
 }
 
 
-    public getTotal(): number{
+    public getTotal(): Integer{
 
 
 

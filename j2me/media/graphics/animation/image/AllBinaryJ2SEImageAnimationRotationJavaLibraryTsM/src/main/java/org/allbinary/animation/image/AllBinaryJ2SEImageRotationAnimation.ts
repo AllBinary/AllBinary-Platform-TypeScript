@@ -151,7 +151,7 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image);
 
                         if(this.getBasicColorP() == 
                                     null
-                                 || this.getBasicColorP()!.toInt() != basicColor!.toInt())
+                                 || this.getBasicColorP()!.intValue() != basicColor!.intValue())
                         
                                     {
                                     changed= true;
@@ -184,7 +184,7 @@ this.updateImage();
 
                         if(this.getChangeBasicColor() == 
                                     null
-                                 || this.getChangeBasicColor()!.toInt() != basicColor!.toInt())
+                                 || this.getChangeBasicColor()!.intValue() != basicColor!.intValue())
                         
                                     {
                                     changed= true;

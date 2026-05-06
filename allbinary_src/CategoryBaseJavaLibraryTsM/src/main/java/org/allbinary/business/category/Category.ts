@@ -104,9 +104,9 @@ export class Category
 
     private readonly typeVector: Vector = new Vector();
 
-    private readonly PROPERTIES: number = 1;
+    private readonly PROPERTIES: Integer = new Integer(1);
 
-    private readonly CATEGORY: number = 0;
+    private readonly CATEGORY: Integer = new Integer(0);
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
 
             super();

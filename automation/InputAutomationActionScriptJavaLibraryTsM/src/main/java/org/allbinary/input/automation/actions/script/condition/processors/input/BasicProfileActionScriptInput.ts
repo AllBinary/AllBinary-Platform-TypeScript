@@ -132,7 +132,7 @@ this.logUtil!.putF(commonStrings!.START +label, this, commonStrings!.CONSTRUCTOR
     var delayString: string = DomNodeHelper.getTextNodeValue(timeNode)!;
 ;
     
-this.setTime(Integer.valueOf(delayString)!.toInt());
+this.setTime(Integer.valueOf(delayString)!.intValue());
     
 
                                     }

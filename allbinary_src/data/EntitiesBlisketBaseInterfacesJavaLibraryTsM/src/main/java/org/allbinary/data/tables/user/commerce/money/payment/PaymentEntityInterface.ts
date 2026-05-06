@@ -57,7 +57,7 @@ export interface PaymentEntityInterface extends BasicDataTableInterface {
 
     getLastId(userName: string): string
 
-    setDefault(userName: string, index: number)
+    setDefault(userName: string, index: Integer)
 
     getDefault(userName: string): PaymentInterface
 
@@ -65,7 +65,7 @@ export interface PaymentEntityInterface extends BasicDataTableInterface {
 
     add(userName: string, paymentInterface: PaymentInterface)
 
-    remove(userName: string, index: number)
+    remove(userName: string, index: Integer)
 
     insert(values: Vector)
 

@@ -119,7 +119,7 @@ this.weblisketSession= new WeblisketSession(hashMap, pageContext);
 ;
     
 
-                        if(basket.getNumberOfItems()!.toInt() <= 0)
+                        if(basket.getNumberOfItems()!.intValue() <= 0)
                         
                                     {
                                     

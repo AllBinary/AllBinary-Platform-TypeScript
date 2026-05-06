@@ -24,7 +24,7 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
@@ -63,7 +63,7 @@ import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphic
         
 export class PreGameScrollSelectionForm extends ScrollCurrentSelectionForm {
         
-public constructor (title: string, items: CustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM, 0, false, backgroundBasicColor, foregroundBasicColor);
                     var title = title
 var items = items

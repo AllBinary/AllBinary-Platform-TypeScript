@@ -489,7 +489,7 @@ var graphics = graphics
     var allBinaryTiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
 ;
     
-graphics.setColor(BasicColorFactory.getInstance()!.GREEN.toInt());
+graphics.setColor(BasicColorFactory.getInstance()!.GREEN.intValue());
     
 
     var list: BasicArrayList = this.getSelectedBuildingPlayerGameInput()!.getPaintSelectedRTSLayersList()!;

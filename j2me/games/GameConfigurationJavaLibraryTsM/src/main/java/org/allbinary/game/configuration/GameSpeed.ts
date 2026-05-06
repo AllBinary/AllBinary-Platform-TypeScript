@@ -69,7 +69,7 @@ export class GameSpeed
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return (speedGameConfiguration!.getMaxValue()!.toInt() -speedGameConfiguration!.getValue()!.toInt() +1);
+                        return (speedGameConfiguration!.getMaxValue()!.intValue() -speedGameConfiguration!.getValue()!.intValue() +1);
     
 }
 
@@ -83,7 +83,7 @@ export class GameSpeed
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return 19 *(speedGameConfiguration!.getMaxValue()!.toInt() -speedGameConfiguration!.getValue()!.toInt());
+                        return 19 *(speedGameConfiguration!.getMaxValue()!.intValue() -speedGameConfiguration!.getValue()!.intValue());
     
 }
 

@@ -168,7 +168,7 @@ this.point.setY(y);
 
     private lastString: string = StringUtil.getInstance()!.EMPTY_STRING;
 
-    add(string: string, seconds: number, basicColor: BasicColor, permanent: Boolean){
+    add(string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
     //var string = string
     //var seconds = seconds
     //var basicColor = basicColor
@@ -277,11 +277,11 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: number = this.gameNotification!.timeList!.removeAt(0) as Integer;
+    var time: Integer = this.gameNotification!.timeList!.removeAt(0) as Integer;
 ;
     
 
-    var iTime: number = time *1000;
+    var iTime: number = time.intValue() *1000;
 ;
     
 
@@ -320,10 +320,10 @@ this.point.setX(this.getX());
 this.point.setY(this.getY());
     
 
-    var time: number = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;
+    var time: Integer = this.permanentGameNotification!.timeList!.objectArray[index]! as Integer;
 ;
     
-this.timeDelayHelper!.delay= time *1000;
+this.timeDelayHelper!.delay= time.intValue() *1000;
     
 this.setBasicColorP(this.permanentGameNotification!.colorList!.objectArray[index]! as BasicColor);
     

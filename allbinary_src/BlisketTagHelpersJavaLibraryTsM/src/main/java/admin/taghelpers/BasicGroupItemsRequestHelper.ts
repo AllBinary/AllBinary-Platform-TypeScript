@@ -188,7 +188,7 @@ values.put(BasicGroupItemData.ITEM_TEN, this.itemTen);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -211,7 +211,7 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

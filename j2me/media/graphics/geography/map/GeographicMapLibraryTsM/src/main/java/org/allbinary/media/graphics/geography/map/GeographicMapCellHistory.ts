@@ -658,7 +658,7 @@ this.animation.paintXY(graphics, x +halfWidth, y +(height));
 }
 
 
-    private readonly RED: number = BasicColorFactory.getInstance()!.RED.toInt()!;
+    private readonly RED: number = BasicColorFactory.getInstance()!.RED.intValue()!;
 
     public paintNotVisited(graphics: Graphics, geographicMapInterface: BasicGeographicMap){
     //var graphics = graphics

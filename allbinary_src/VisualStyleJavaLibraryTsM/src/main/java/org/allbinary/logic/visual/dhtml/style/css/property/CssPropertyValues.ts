@@ -179,11 +179,11 @@ indexPropertyValueHashMap!.put(indexValue, propertyValue);
 index < size2; index++)
         {
 
-    var indexInt: number = index;
+    var indexInt: Integer = new Integer(index);
 ;
     
 
-    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt) as string;
+    var propertyValue: string = indexPropertyValueHashMap!.get(indexInt!.toString()) as string;
 ;
     
 this.propertyValueVector!.add(propertyValue);

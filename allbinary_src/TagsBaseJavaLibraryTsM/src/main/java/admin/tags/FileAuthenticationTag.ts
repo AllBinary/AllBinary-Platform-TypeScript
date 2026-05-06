@@ -104,7 +104,7 @@ export class FileAuthenticationTag extends CustomTagSupport {
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private attemptsInteger: number
+    private attemptsInteger: Integer
 
     private weblisketSession: BasicWeblisketSession
 
@@ -202,16 +202,16 @@ this.timeout= this.weblisketSession!.getTimeout();
 
                         if(this.attemptsInteger != 
                                     null
-                                 && this.attemptsInteger > 0)
+                                 && this.attemptsInteger!.intValue() > 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(this.attemptsInteger +1);
+                                    this.weblisketSession!.setAttempts(new Integer(this.attemptsInteger!.intValue() +1));
     
 
                                     }
                                 
                         else {
-                            this.weblisketSession!.setAttempts(1);
+                            this.weblisketSession!.setAttempts(new Integer(1));
     
 
                         }
@@ -327,8 +327,8 @@ this.weblisketSession!.setPassword(newPassword);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TagSupport.EVAL_BODY_INCLUDE.
-                            toInt();;
+                        return new Integer(TagSupport.EVAL_BODY_INCLUDE).
+                            intValue();;
     
 
                 //: 
@@ -803,7 +803,7 @@ index < size; index++)
                         if(login.localeCompare(org.allbinary.globals.GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
-                                    this.weblisketSession!.setAttempts(0);
+                                    this.weblisketSession!.setAttempts(new Integer(0));
     
 
 

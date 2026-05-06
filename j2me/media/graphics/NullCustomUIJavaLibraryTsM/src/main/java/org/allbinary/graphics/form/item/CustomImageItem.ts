@@ -37,9 +37,9 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomItem } from './CustomItem.js';
+        import { ABCustomItem } from './ABCustomItem.js';
 
-export class CustomImageItem extends CustomItem {
+export class CustomImageItem extends ABCustomItem {
         
 
     yOffset: number = 0;

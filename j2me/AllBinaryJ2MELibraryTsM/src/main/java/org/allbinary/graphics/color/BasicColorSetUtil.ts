@@ -70,7 +70,7 @@ protected constructor (){
     public setBasicColorP(graphics: Graphics, basicColor: BasicColor){
 var graphics = graphics
 var basicColor = basicColor
-graphics.setColor(basicColor!.toInt());
+graphics.setColor(basicColor!.intValue());
     
 }
 

@@ -57,7 +57,7 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
 import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
 
     
-import { CustomItem } from '../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
@@ -91,7 +91,7 @@ export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
     readonly selectedAnimationArray: Animation[] = new Array(16);
 
     readonly unSelectedAnimationArray: Animation[] = new Array(16);
-public constructor (title: string, items: CustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
+public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
                         //var title = title
     //var items = items
@@ -146,7 +146,7 @@ this.unSelectedAnimationArray[index]= nullAnimation;
 }
 
 
-    update(items: CustomItem[]){
+    update(items: ABCustomItem[]){
     //var items = items
 
 
@@ -164,7 +164,7 @@ this.updateAt(index, items[index]!);
 }
 
 
-    updateAt(index: number, item: CustomItem){
+    updateAt(index: number, item: ABCustomItem){
     //var index = index
     //var item = item
 
@@ -248,7 +248,7 @@ adjustedBorder= 4;
 }
 
 
-    public append(item: CustomItem): number{
+    public append(item: ABCustomItem): number{
     //var item = item
 
     var result: number = super.append(item)!;
@@ -280,7 +280,7 @@ super.deleteAll();
 }
 
 
-    public insert(itemNum: number, item: CustomItem){
+    public insert(itemNum: number, item: ABCustomItem){
     //var itemNum = itemNum
     //var item = item
 super.insert(itemNum, item);
@@ -288,7 +288,7 @@ super.insert(itemNum, item);
 }
 
 
-    public set(itemNum: number, item: CustomItem){
+    public set(itemNum: number, item: ABCustomItem){
     //var itemNum = itemNum
     //var item = item
 super.set(itemNum, item);

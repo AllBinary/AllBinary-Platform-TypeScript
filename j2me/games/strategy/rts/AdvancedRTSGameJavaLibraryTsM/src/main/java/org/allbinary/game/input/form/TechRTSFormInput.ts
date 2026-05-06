@@ -42,7 +42,7 @@ import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital
 import { TechEventHandler } from '../../../../../org/allbinary/game/rts/technology/event/TechEventHandler.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
@@ -156,7 +156,7 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 
                 //@Throws(Exception.constructor)
             
-    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager

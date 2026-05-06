@@ -80,12 +80,12 @@ export class FrameLog
     private static actions: number[] = .toCharArray().
                             encodeToByteArray()!;
 
-    private readonly frame: number
+    private readonly frame: Long
 
     private infoStringBuffer: StringMaker = new StringMaker();
 
     private actionsStringBuffer: StringMaker = new StringMaker();
-public constructor (frame: number){
+public constructor (frame: Long){
 
             super();
         var frame = frame
@@ -173,7 +173,7 @@ fileOutputStream!.close();
 }
 
 
-    public getFrame(): number{
+    public getFrame(): Long{
 
 
 

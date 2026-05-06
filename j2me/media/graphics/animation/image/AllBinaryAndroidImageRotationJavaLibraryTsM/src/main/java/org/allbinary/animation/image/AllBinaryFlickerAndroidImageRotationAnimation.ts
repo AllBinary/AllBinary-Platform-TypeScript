@@ -112,7 +112,7 @@ this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement());
 
                         if(this.getBasicColorP() == 
                                     null
-                                 || this.getBasicColorP()!.toInt() != basicColor!.toInt())
+                                 || this.getBasicColorP()!.intValue() != basicColor!.intValue())
                         
                                     {
                                     this.imageModifierUtil!.setColor(this.originalImage, this.getImage(), 0, basicColor);

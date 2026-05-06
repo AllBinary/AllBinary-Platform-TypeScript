@@ -124,7 +124,7 @@ var userName = userName
 }
 
 
-    public setDefault(userName: string, index: number){
+    public setDefault(userName: string, index: Integer){
 var userName = userName
 var index = index
 
@@ -160,7 +160,7 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
                                 
 updateKeyAndValue!.put(EntryData.getInstance()!.DEFAULT, EntryData.getInstance()!.DEFAULT);
     
-whereKeyAndValue!.put(PaymentData.ID, index);
+whereKeyAndValue!.put(PaymentData.ID, index.toString());
     
 super.updateWhere(whereKeyAndValue, updateKeyAndValue);
     
@@ -352,7 +352,7 @@ paymentHashMap= super.getRow(updateKeyAndValue);
 }
 
 
-    public remove(userName: string, index: number){
+    public remove(userName: string, index: Integer){
 var userName = userName
 var index = index
 
@@ -363,7 +363,7 @@ var index = index
     
 whereHashMap!.put(UserData.USERNAME, userName);
     
-whereHashMap!.put(PaymentData.ID, index as string);
+whereHashMap!.put(PaymentData.ID, index.toString() as string);
     
 super.deleteWhere(whereHashMap);
     
@@ -424,7 +424,7 @@ vector.add(paymentInterface!.getExpiration());
 vector.add(new SuperCrypt(random).
                             encrypt(paymentInterface!.getNumber()));
     
-vector.add(random.
+vector.add(new Integer(random).
                             toString());
     
 
@@ -432,7 +432,7 @@ vector.add(random.
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

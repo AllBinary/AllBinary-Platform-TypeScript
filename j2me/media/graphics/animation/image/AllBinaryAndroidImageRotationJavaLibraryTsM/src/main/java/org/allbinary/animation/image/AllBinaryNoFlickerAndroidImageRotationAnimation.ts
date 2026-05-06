@@ -130,7 +130,7 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image);
 
                         if(this.getBasicColorP() == 
                                     null
-                                 || this.getBasicColorP()!.toInt() != basicColor!.toInt())
+                                 || this.getBasicColorP()!.intValue() != basicColor!.intValue())
                         
                                     {
                                     this.imageModifierUtil!.setColor(this.originalImage, this.imageToShow, 0, basicColor);

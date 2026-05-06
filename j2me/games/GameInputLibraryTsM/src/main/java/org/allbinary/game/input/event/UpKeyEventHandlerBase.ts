@@ -127,7 +127,7 @@ super.removeListener(eventListenerInterface);
 
                 //@Throws(Exception.constructor)
             
-    public fireEvent(eventObject: number){
+    public fireEvent(eventObject: Integer){
     //var eventObject = eventObject
 
 
@@ -189,7 +189,7 @@ index++;
 
                 //@Throws(Exception.constructor)
             
-    process(eventObject: number, eventListenerInterface: EventListenerInterface){
+    process(eventObject: Integer, eventListenerInterface: EventListenerInterface){
     //var eventObject = eventObject
     //var eventListenerInterface = eventListenerInterface
 

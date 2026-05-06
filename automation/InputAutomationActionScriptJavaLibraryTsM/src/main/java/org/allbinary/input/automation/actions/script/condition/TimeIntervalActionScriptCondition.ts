@@ -248,7 +248,7 @@ this.timeHelper= timeHelper;
 
                 //@Throws(Exception.constructor)
             
-    public shouldProcess(frame: number): boolean{
+    public shouldProcess(frame: Long): boolean{
 var frame = frame
 
     var timeHelper: TimeDelayHelper = this.getTimeDelayHelper()!;

@@ -954,23 +954,23 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateMirrorJMenuItemA
     var colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;
 ;
     
-colorRangeInterface!.setMinRed(this.getMinRedJTextField()!.getText().
-                            toInt());
+colorRangeInterface!.setMinRed(new Integer(this.getMinRedJTextField()!.getText()).
+                            intValue());
     
-colorRangeInterface!.setMaxRed(this.getMaxRedJTextField()!.getText().
-                            toInt());
+colorRangeInterface!.setMaxRed(new Integer(this.getMaxRedJTextField()!.getText()).
+                            intValue());
     
-colorRangeInterface!.setMinGreen(this.getMinGreenJTextField()!.getText().
-                            toInt());
+colorRangeInterface!.setMinGreen(new Integer(this.getMinGreenJTextField()!.getText()).
+                            intValue());
     
-colorRangeInterface!.setMaxGreen(this.getMaxGreenJTextField()!.getText().
-                            toInt());
+colorRangeInterface!.setMaxGreen(new Integer(this.getMaxGreenJTextField()!.getText()).
+                            intValue());
     
-colorRangeInterface!.setMinBlue(this.getMinBlueJTextField()!.getText().
-                            toInt());
+colorRangeInterface!.setMinBlue(new Integer(this.getMinBlueJTextField()!.getText()).
+                            intValue());
     
-colorRangeInterface!.setMaxBlue(this.getMaxBlueJTextField()!.getText().
-                            toInt());
+colorRangeInterface!.setMaxBlue(new Integer(this.getMaxBlueJTextField()!.getText()).
+                            intValue());
     
 
 

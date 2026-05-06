@@ -73,7 +73,7 @@ export class StoreFrontOrdersHistoryStatistics
          implements StoreFrontOrdersHistoryStatisticsInterface {
         
 
-    private numberOfOrdersLong: number
+    private numberOfOrdersLong: Long
 
     private subTotalMoney: Money
 
@@ -136,12 +136,12 @@ this.totalMoney!.add(orderHistoryInterface!.getTotal());
     
 }
 
-this.numberOfOrdersLong= numberOfOrders;
+this.numberOfOrdersLong= new Long(numberOfOrders);
     
 }
 
 
-    public getNumberOfOrders(): number{
+    public getNumberOfOrders(): Long{
 
 
 

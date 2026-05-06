@@ -52,10 +52,10 @@ import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util
 export class CapturedImageWorkerResultsEvent extends AllBinaryEventObject {
         
 
-    private readonly frame: number
+    private readonly frame: Long
 
     private bufferedImage: BufferedImage
-public constructor (anyType: any = {}, frame: number, bufferedImage: BufferedImage){
+public constructor (anyType: any = {}, frame: Long, bufferedImage: BufferedImage){
             super(anyType);
                     var anyType = anyType
 var frame = frame
@@ -88,7 +88,7 @@ this.bufferedImage= bufferedImage;
 }
 
 
-    public getFrame(): number{
+    public getFrame(): Long{
 
 
 

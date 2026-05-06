@@ -50,7 +50,7 @@ import { Capital } from '../../../../../org/allbinary/game/layer/capital/Capital
 import { LayerInterfaceFactoryImageItem } from '../../../../../org/allbinary/game/layer/item/LayerInterfaceFactoryImageItem.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { BuildingSound } from '../../../../../org/allbinary/media/audio/BuildingSound.js';
@@ -248,7 +248,7 @@ this.mapEdgeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
 
                 //@Throws(Exception.constructor)
             
-    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
     //var associatedRtsLayer = associatedRtsLayer
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
@@ -271,7 +271,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 }
 
 
-    isDemoLocked(item: CustomItem): boolean{
+    isDemoLocked(item: ABCustomItem): boolean{
     //var item = item
 
     var factoryItem: LayerInterfaceFactoryImageItem = item as LayerInterfaceFactoryImageItem;
@@ -309,7 +309,7 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 
                 //@Throws(Exception.constructor)
             
-    public buildFromMotionInput(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, itemIndex: number){
+    public buildFromMotionInput(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
     //var layerManager = layerManager
     //var item = item

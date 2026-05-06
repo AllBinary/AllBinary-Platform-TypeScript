@@ -66,7 +66,7 @@ export class KeyPressesAI extends BasicAI {
 
     private on: boolean = true;
 
-    keys: number[]
+    keys: Integer[]
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
                     var hashtable = hashtable
@@ -118,7 +118,7 @@ var allBinaryLayerManager = allBinaryLayerManager
     var index: number = 0;
 index < this.keys.length; index++)
         {
-super.processKeyAI(this.keys[index]!.toInt());
+super.processKeyAI(this.keys[index]!.intValue());
     
 }
 

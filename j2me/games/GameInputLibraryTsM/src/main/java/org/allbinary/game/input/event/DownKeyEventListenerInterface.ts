@@ -58,7 +58,7 @@ export interface DownKeyEventListenerInterface extends EventListenerInterface {
 
                 //@Throws(Exception.constructor)
             
-    onDownKey(keyInteger: number)
+    onDownKey(keyInteger: Integer)
 
 }
                 

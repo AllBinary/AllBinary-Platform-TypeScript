@@ -1004,7 +1004,7 @@ hashMap!.put(transformInfoData!.DATA, Encoder.encode(this.data.encodeToByteArray
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -1049,7 +1049,7 @@ vector.add(Encoder.encode(this.data.encodeToByteArray()));
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

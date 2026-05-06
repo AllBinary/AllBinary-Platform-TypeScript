@@ -27,7 +27,7 @@
 import { RTSPlayerLayerInterface } from '../../../../../org/allbinary/game/layer/RTSPlayerLayerInterface.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
@@ -193,7 +193,7 @@ var point = point
 
                 //@Throws(Exception.constructor)
             
-    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
+    public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
@@ -253,7 +253,7 @@ var point = point
 
                 //@Throws(Exception.constructor)
             
-    public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: CustomItem, index: number){
+    public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
     //var associatedRtsLayer = associatedRtsLayer
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 var layerManager = layerManager
@@ -291,7 +291,7 @@ this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected);
 }
 
 
-    public getSelectedStickyItem(): CustomItem{
+    public getSelectedStickyItem(): ABCustomItem{
 
 
 
@@ -301,7 +301,7 @@ this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected);
 }
 
 
-    public setSelectedStickyItem(selectedStickyItem: CustomItem){
+    public setSelectedStickyItem(selectedStickyItem: ABCustomItem){
 var selectedStickyItem = selectedStickyItem
 this.rtsFormInputArray[0]!.setSelectedStickyItem(selectedStickyItem);
     

@@ -51,11 +51,11 @@ export interface RaceTrackGeographicMapInterfaceFactoryInterface {
 
                 //@Throws(Exception.constructor)
             
-    getLevelInstance(id: number): RaceTrackGeographicMap
+    getLevelInstance(id: Integer): RaceTrackGeographicMap
 
                 //@Throws(Exception.constructor)
             
-    getTrackInstance(id: number): RaceTrackGeographicMap
+    getTrackInstance(id: Integer): RaceTrackGeographicMap
 
 }
                 

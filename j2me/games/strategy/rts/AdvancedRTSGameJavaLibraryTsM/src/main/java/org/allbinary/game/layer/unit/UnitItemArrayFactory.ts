@@ -45,7 +45,7 @@ import { BasicGameResources } from '../../../../../org/allbinary/game/layer/reso
 import { FlagGameResources } from '../../../../../org/allbinary/game/layer/waypoint/FlagGameResources.js';
 
     
-import { CustomItem } from '../../../../../org/allbinary/graphics/form/item/CustomItem.js';
+import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
 import { GameFeatureImageCacheFactory } from '../../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
@@ -99,7 +99,7 @@ export class UnitItemArrayFactory
          implements ItemArraySingletonFactoryInterface {
         
 
-    private static readonly ITEMS: CustomItem[] = CustomItemUtil.getInstance()!.CUSTOM_ITEM_ARRAY;
+    private static readonly ITEMS: ABCustomItem[] = CustomItemUtil.getInstance()!.CUSTOM_ITEM_ARRAY;
 
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
@@ -117,7 +117,7 @@ this.resources= resources;
 
                 //@Throws(Exception.constructor)
             
-    createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
+    createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
     //var flagResources = flagResources
     //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 
@@ -148,7 +148,7 @@ this.resources= resources;
 
                 //@Throws(Exception.constructor)
             
-    createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): CustomItem{
+    createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
     //var flagResources = flagResources
     //var name = name
     //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
@@ -161,7 +161,7 @@ this.resources= resources;
 ;
     
 
-    var item: CustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, 
+    var item: ABCustomItem = new LayerInterfaceFactoryImageItem(name, image, ImageItem.LAYOUT_DEFAULT, flagResources!.NAME, this.basicColor, 
                                                 [
                                                     new RTSLayerTextAnimation(RTSGameStrings.getInstance()!.DRAGGABLE, image);
                                                 ], layerInterfaceFactoryInterface);
@@ -178,7 +178,7 @@ this.resources= resources;
 
                 //@Throws(Exception.constructor)
             
-    public getItems(): CustomItem[]{
+    public getItems(): ABCustomItem[]{
 
 
 

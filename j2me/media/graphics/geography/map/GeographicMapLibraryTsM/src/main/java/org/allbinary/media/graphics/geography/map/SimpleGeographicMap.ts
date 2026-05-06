@@ -67,7 +67,7 @@ export class SimpleGeographicMap
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private readonly id: number
+    private readonly id: Integer
 
     private readonly name: string
 
@@ -78,7 +78,7 @@ export class SimpleGeographicMap
     private foregroundBasicColor: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
 
     private backgroundBasicColor: BasicColor = BasicColorFactory.getInstance()!.NULL_COLOR;
-public constructor (id: number, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
+public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
 
             super();
             //var id = id
@@ -102,7 +102,7 @@ this.setForegroundBasicColor(foregroundBasicColor);
 }
 
 
-    public getId(): number{
+    public getId(): Integer{
 
 
 

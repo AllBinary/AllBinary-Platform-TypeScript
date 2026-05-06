@@ -102,9 +102,9 @@ export class GenericInputAutomationWorker extends AbstractInputAutomationWorker 
 
     readonly PROCESS_DATA_WORKER_RESULTS: string = "processDataWorkerResults";
 
-    private lastFrame: number =  -1;
+    private lastFrame: Long = new Long( -1);
 
-    private frame: number
+    private frame: Long
 
     private genericProfile: GenericProfile
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfile: GenericProfile, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
@@ -298,7 +298,7 @@ this.genericProfile= genericProfile;
 }
 
 
-    getFrame(): number{
+    getFrame(): Long{
 
 
 
@@ -308,7 +308,7 @@ this.genericProfile= genericProfile;
 }
 
 
-    setFrame(frame: number){
+    setFrame(frame: Long){
     //var frame = frame
 this.frame= frame;
     

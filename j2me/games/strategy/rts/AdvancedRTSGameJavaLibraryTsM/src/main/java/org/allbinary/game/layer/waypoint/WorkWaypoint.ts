@@ -77,7 +77,7 @@ import { WaypointInfoHudPaintable } from './WaypointInfoHudPaintable.js';
 export class WorkWaypoint extends Waypoint {
         
 
-    public static readonly ID: number = SmallIntegerSingletonFactory.getInstance()!.getAt(25)!;
+    public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(25)!;
 public constructor (ownerLayer: PathFindingLayerInterface){
             super(ownerLayer, WorkSound.getInstance());
                         //var ownerLayer = ownerLayer

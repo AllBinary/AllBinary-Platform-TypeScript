@@ -522,7 +522,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
     var success: string = "Successfully Removed Shipping Address";
 ;
     
-ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(this.streetAddress!.getId());
+ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

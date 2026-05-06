@@ -94,7 +94,7 @@ public constructor (types: BasicArrayList){
 ;
     
 
-    var typeAsInteger: number
+    var typeAsInteger: Integer
 ;
     
 
@@ -111,7 +111,7 @@ index < size; index++)
         {
 typeAsInteger= (types.get(index) as Integer);
     
-type= typeAsInteger;
+type= typeAsInteger!.intValue();
     
 new GeographicMapCellType(type, 0);
     

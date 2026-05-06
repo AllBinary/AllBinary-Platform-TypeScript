@@ -90,7 +90,7 @@ export class OwnershipPaintable extends Paintable {
 
     private basicColor: BasicColor = BasicColorFactory.getInstance()!.WHITE;
 
-    private color: number = this.basicColor!.toInt()!;
+    private color: number = this.basicColor!.intValue()!;
 private constructor (){
 
             super();
@@ -140,7 +140,7 @@ graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, 
 var basicColor = basicColor
 this.basicColor= basicColor;
     
-this.color= basicColor!.toInt();
+this.color= basicColor!.intValue();
     
 }
 

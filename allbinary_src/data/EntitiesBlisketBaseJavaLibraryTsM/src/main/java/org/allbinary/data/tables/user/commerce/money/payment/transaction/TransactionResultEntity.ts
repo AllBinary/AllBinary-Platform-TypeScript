@@ -165,7 +165,7 @@ values.addAll(transactionResultInterface!.getValues());
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString()!;
 ;
     

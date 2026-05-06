@@ -113,7 +113,7 @@ public constructor (name: string, types: BasicArrayList, cost: number){
 ;
     
 
-    var typeAsInteger: number
+    var typeAsInteger: Integer
 ;
     
 
@@ -130,7 +130,7 @@ index < size; index++)
         {
 typeAsInteger= (types.get(index) as Integer);
     
-type= typeAsInteger;
+type= typeAsInteger!.intValue();
     
 
                         if(GeographicMapCellTypeFactory.getInstance()!.getGeographicMapCellTypeArray()[type] == 

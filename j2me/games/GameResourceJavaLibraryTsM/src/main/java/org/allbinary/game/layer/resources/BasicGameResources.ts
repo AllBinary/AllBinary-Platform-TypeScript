@@ -83,7 +83,7 @@ var SIZE = SIZE
 
         try {
             
-    var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.toInt()!;
+    var scale: number = GameConfigurationCentral.getInstance()!.SCALE.getValue()!.intValue()!;
 ;
     
 

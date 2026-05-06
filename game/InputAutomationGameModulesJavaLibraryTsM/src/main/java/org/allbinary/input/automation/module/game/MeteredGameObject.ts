@@ -61,26 +61,26 @@ export class MeteredGameObject
          implements MeteredGameObjectInterface {
         
 
-    private ratios: number[]
+    private ratios: Double[]
 
     private good: boolean = false;
 
     private dropping: boolean = false;
 
-    private minX: number
+    private minX: Integer
 
-    private maxX: number
+    private maxX: Integer
 
-    private y: number
+    private y: Integer
 
-    private size: number
+    private size: Integer
 
     private readonly RATIOS_LABEL: string = "Ratios: ";
 
     private readonly IS_GOOD_LABEL: string = "isGood: ";
 
     private readonly IS_DROPPPING_LABEL: string = "isDropping: ";
-public constructor (bufferedImage: BufferedImage[], minX: number, maxX: number, y: number){
+public constructor (bufferedImage: BufferedImage[], minX: Integer, maxX: Integer, y: Integer){
 
             super();
         var bufferedImage = bufferedImage
@@ -109,7 +109,7 @@ index < bufferedImage!.length; index++)
     var nominator: number = GraphicsAnalysisUtil.getNominator(bufferedImage[index]!, this.getMinX(), this.getMaxX(), this.getY())!;
 ;
     
-this.getRatios()[index]= new number(nominator /this.getSize());
+this.getRatios()[index]= new Double(nominator /this.getSize());
     
 }
 
@@ -180,7 +180,7 @@ this.dropping= dropping;
 }
 
 
-    public getRatios(): number[]{
+    public getRatios(): Double[]{
 
 
 
@@ -245,14 +245,14 @@ stringBuffer!.appendboolean(this.isDropping());
 }
 
 
-    public setRatios(ratios: number[]){
+    public setRatios(ratios: Double[]){
 var ratios = ratios
 this.ratios= ratios;
     
 }
 
 
-    public getMinX(): number{
+    public getMinX(): Integer{
 
 
 
@@ -262,14 +262,14 @@ this.ratios= ratios;
 }
 
 
-    public setMinX(minX: number){
+    public setMinX(minX: Integer){
 var minX = minX
 this.minX= minX;
     
 }
 
 
-    public getMaxX(): number{
+    public getMaxX(): Integer{
 
 
 
@@ -279,14 +279,14 @@ this.minX= minX;
 }
 
 
-    public setMaxX(maxX: number){
+    public setMaxX(maxX: Integer){
 var maxX = maxX
 this.maxX= maxX;
     
 }
 
 
-    public getY(): number{
+    public getY(): Integer{
 
 
 
@@ -296,14 +296,14 @@ this.maxX= maxX;
 }
 
 
-    public setY(y: number){
+    public setY(y: Integer){
 var y = y
 this.y= y;
     
 }
 
 
-    public getSize(): number{
+    public getSize(): Integer{
 
 
 
@@ -313,7 +313,7 @@ this.y= y;
 }
 
 
-    public setSize(size: number){
+    public setSize(size: Integer){
 var size = size
 this.size= size;
     

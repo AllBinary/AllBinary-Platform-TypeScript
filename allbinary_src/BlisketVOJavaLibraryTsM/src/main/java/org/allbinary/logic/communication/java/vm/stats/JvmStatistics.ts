@@ -150,92 +150,92 @@ public constructor (){
 }
 
 
-    public getFreeMemoryBytesLong(): number{
+    public getFreeMemoryBytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getFreeMemoryBytes();
+                        return new Long(this.getFreeMemoryBytes());
     
 }
 
 
-    public getFreeMemoryKilobytesLong(): number{
+    public getFreeMemoryKilobytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getFreeMemoryKilobytes();
+                        return new Long(this.getFreeMemoryKilobytes());
     
 }
 
 
-    public getFreeMemoryMegabytesLong(): number{
+    public getFreeMemoryMegabytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getFreeMemoryMegabytes();
+                        return new Long(this.getFreeMemoryMegabytes());
     
 }
 
 
-    public getMaxMemoryBytesLong(): number{
+    public getMaxMemoryBytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMaxMemoryBytes();
+                        return new Long(this.getMaxMemoryBytes());
     
 }
 
 
-    public getMaxMemoryKilobytesLong(): number{
+    public getMaxMemoryKilobytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMaxMemoryKilobytes();
+                        return new Long(this.getMaxMemoryKilobytes());
     
 }
 
 
-    public getMaxMemoryMegabytesLong(): number{
+    public getMaxMemoryMegabytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getMaxMemoryMegabytes();
+                        return new Long(this.getMaxMemoryMegabytes());
     
 }
 
 
-    public getTotalMemoryBytesLong(): number{
+    public getTotalMemoryBytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTotalMemoryBytes();
+                        return new Long(this.getTotalMemoryBytes());
     
 }
 
 
-    public getTotalMemoryKilobytesLong(): number{
+    public getTotalMemoryKilobytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTotalMemoryKilobytes();
+                        return new Long(this.getTotalMemoryKilobytes());
     
 }
 
 
-    public getTotalMemoryMegabytesLong(): number{
+    public getTotalMemoryMegabytesLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getTotalMemoryMegabytes();
+                        return new Long(this.getTotalMemoryMegabytes());
     
 }
 
@@ -340,12 +340,12 @@ public constructor (){
 }
 
 
-    public getNumberOfThreadsLong(): number{
+    public getNumberOfThreadsLong(): Long{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getNumberOfThreads();
+                        return new Long(this.getNumberOfThreads());
     
 }
 

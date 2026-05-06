@@ -40,7 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomItem } from './CustomItem.js';
+        import { ABCustomItem } from './ABCustomItem.js';
 
 export class CustomItemUtil
             extends Object
@@ -59,7 +59,7 @@ export class CustomItemUtil
 }
 
 
-    public readonly CUSTOM_ITEM_ARRAY: CustomItem[] = [];
+    public readonly CUSTOM_ITEM_ARRAY: ABCustomItem[] = [];
 
 }
                 

@@ -530,7 +530,7 @@ BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.
     var success: string = "Successfully Removed Billing Address";
 ;
     
-BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(this.streetAddress!.getId());
+BillingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!.getUserName())!.remove(new Integer(this.streetAddress!.getId()));
     
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))

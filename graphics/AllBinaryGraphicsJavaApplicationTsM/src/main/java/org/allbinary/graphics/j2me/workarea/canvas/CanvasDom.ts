@@ -149,7 +149,7 @@ this.dimension= new IntegerDimension(0, 0);
 ;
     
 
-    var angle: number = new number(angleTextNode!.getNodeValue()).
+    var angle: number = new Double(angleTextNode!.getNodeValue()).
                             doubleValue()!;
 ;
     
@@ -168,8 +168,8 @@ this.setAngle(angle);
 ;
     
 
-    var x: number = xTextNode!.getNodeValue().
-                            toInt()!;
+    var x: number = new Integer(xTextNode!.getNodeValue()).
+                            intValue()!;
 ;
     
 
@@ -181,8 +181,8 @@ this.setAngle(angle);
 ;
     
 
-    var y: number = yTextNode!.getNodeValue().
-                            toInt()!;
+    var y: number = new Integer(yTextNode!.getNodeValue()).
+                            intValue()!;
 ;
     
 this.setWorkArea(x, y);
@@ -195,8 +195,8 @@ this.setWorkArea(x, y);
     var zoomTextNode: Node = zoomNode!.getFirstChild()!;
 ;
     
-this.grid.setZoom(zoomTextNode!.getNodeValue().
-                            toInt());
+this.grid.setZoom(new Integer(zoomTextNode!.getNodeValue()).
+                            intValue());
     
 
     var gridNode: Node = DomHelper.getInstance()!.searchNodeList(this.GRID, canvasNode!.getChildNodes())!;
@@ -215,8 +215,8 @@ this.grid.setZoom(zoomTextNode!.getNodeValue().
 ;
     
 
-    var gridX: number = gridXTextNode!.getNodeValue().
-                            toInt()!;
+    var gridX: number = new Integer(gridXTextNode!.getNodeValue()).
+                            intValue()!;
 ;
     
 
@@ -228,8 +228,8 @@ this.grid.setZoom(zoomTextNode!.getNodeValue().
 ;
     
 
-    var gridY: number = gridYTextNode!.getNodeValue().
-                            toInt()!;
+    var gridY: number = new Integer(gridYTextNode!.getNodeValue()).
+                            intValue()!;
 ;
     
 this.setGrid(gridX, gridY);
@@ -409,7 +409,7 @@ pointNode!.appendChild(yNode);
 ;
     
 
-    var angleTextNode: Node = document.createTextNode(new number(this.getAngle()).
+    var angleTextNode: Node = document.createTextNode(new Double(this.getAngle()).
                             toString()) as Node;
 ;
     
@@ -424,7 +424,7 @@ angleNode!.appendChild(angleTextNode);
 ;
     
 
-    var zoomTextNode: Node = document.createTextNode(this.getGrid()!.getZoom().
+    var zoomTextNode: Node = document.createTextNode(new Integer(this.getGrid()!.getZoom()).
                             toString()) as Node;
 ;
     

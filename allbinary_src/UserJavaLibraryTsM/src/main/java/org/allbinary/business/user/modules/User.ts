@@ -895,7 +895,7 @@ values.add(this.enable);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     
@@ -979,7 +979,7 @@ values.put(EntryData.getInstance()!.ENABLE, this.enable);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString();
 ;
     

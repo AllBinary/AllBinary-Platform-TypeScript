@@ -136,10 +136,10 @@ new class extends Thread
 
         try {
             
-    var angleAsString: string = RotationImageJPanel.this.prototype.totalAngleJComboBox!.getSelectedItem() as string;
+    var angleAsString: string = RotationImageJPanel.prototype.totalAngleJComboBox!.getSelectedItem() as string;
 ;
     
-ImageArrayRotationUtil.getInstance()!.process(RotationImageJPanel.this.prototype.getImageProcessorInput(), angleAsString, RotationImageJPanel.this.prototype);
+ImageArrayRotationUtil.getInstance()!.process(RotationImageJPanel.prototype.getImageProcessorInput(), angleAsString, RotationImageJPanel.prototype);
     
 
                 //: 
@@ -165,13 +165,13 @@ this.jPanel1= new class extends javax.swing.JPanel
     public paint(graphics: Graphics){
 var graphics = graphics
 
-                        if(RotationImageJPanel.this.prototype.result != 
+                        if(RotationImageJPanel.prototype.result != 
                                     null
                                 )
                         
                                     {
-                                    graphics.drawImage(RotationImageJPanel.this.prototype.result, 0, 0, RotationImageJPanel.this.prototype.result.getWidth(
-                            null), RotationImageJPanel.this.prototype.result.getHeight(
+                                    graphics.drawImage(RotationImageJPanel.prototype.result, 0, 0, RotationImageJPanel.prototype.result.getWidth(
+                            null), RotationImageJPanel.prototype.result.getHeight(
                             null), 
                             null);
     
@@ -361,7 +361,7 @@ file= new File(filePath);
                                     }
                                 
 
-    var isWritten: boolean = ImageIO.write(RotationImageJPanel.this.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
+    var isWritten: boolean = ImageIO.write(RotationImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
 this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);

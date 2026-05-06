@@ -103,7 +103,7 @@ var categoryPropertiesHashMap = categoryPropertiesHashMap
     var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;
 ;
     
-this.level= Integer.valueOf(levelString)!.toInt();
+this.level= Integer.valueOf(levelString)!.intValue();
     
 this.setRoot(rootCategoryInterface);
     

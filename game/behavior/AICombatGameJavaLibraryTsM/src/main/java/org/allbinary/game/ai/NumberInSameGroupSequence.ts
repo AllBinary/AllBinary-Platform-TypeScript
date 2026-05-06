@@ -61,27 +61,27 @@ export class NumberInSameGroupSequence
 }
 
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_ZERO: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_ONE: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_ONE: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_TWO: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_TWO: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_THREE: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_THREE: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_FOUR: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_FIVE: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_SIX: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_SIX: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_SEVEN: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_EIGHT: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE_NINE: number
+    public NUMBER_ON_SAME_TEAM_SEQUENCE_NINE: Integer
 
-    public NUMBER_ON_SAME_TEAM_SEQUENCE: number[]
+    public NUMBER_ON_SAME_TEAM_SEQUENCE: Integer[]
 private constructor (){
 
             super();

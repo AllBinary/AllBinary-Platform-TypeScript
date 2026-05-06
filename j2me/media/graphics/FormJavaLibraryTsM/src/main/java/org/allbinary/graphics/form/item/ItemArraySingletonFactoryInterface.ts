@@ -42,14 +42,14 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CustomItem } from './CustomItem.js';
+        import { ABCustomItem } from './ABCustomItem.js';
 
 export interface ItemArraySingletonFactoryInterface {
         
 
                 //@Throws(Exception.constructor)
             
-    getItems(): CustomItem[]
+    getItems(): ABCustomItem[]
 
 }
                 

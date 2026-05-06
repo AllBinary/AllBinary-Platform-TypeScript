@@ -24,7 +24,7 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
-import { Choice } from '../../../../javax/microedition/lcdui/ChoiceI.js';
+import { Choice, ChoiceI } from  '../../../../javax/microedition/lcdui/Choice.js';
 
     
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';

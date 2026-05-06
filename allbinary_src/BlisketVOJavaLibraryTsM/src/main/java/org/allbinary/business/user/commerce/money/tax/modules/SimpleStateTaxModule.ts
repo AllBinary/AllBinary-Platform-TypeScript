@@ -132,7 +132,7 @@ public constructor (){
 
                 //@Throws(Exception.constructor)
             
-    public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number{
+    public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Float{
 var streetAddress = streetAddress
 var storeFrontInterface = storeFrontInterface
 this.streetAddress= streetAddress;
@@ -222,7 +222,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-    var taxRateFloat: number = new number(new number(taxRate).
+    var taxRateFloat: Float = new Float(new Float(taxRate).
                             toFloat() *.01);
 ;
     
@@ -244,7 +244,7 @@ index < nodeList!.getLength(); index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new number(0);
+                        return new Float(0);
     
 }
 

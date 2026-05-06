@@ -34,7 +34,7 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomCustomItem } from './CustomCustomItem.js';
 import { CustomItemInterface } from './CustomItemInterface.js';
-import { StringComponent } from './StringComponent.js';
+import { ABStringComponent } from './ABStringComponent.js';
 
 export class TextItem extends CustomCustomItem implements CustomItemInterface {
         
@@ -64,12 +64,12 @@ var y = y
 }
 
 
-    public getLabelStringComponent(): StringComponent{
+    public getLabelStringComponent(): ABStringComponent{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return StringComponent.NULL_STRING_COMPONENT;
+                        return ABStringComponent.NULL_STRING_COMPONENT;
     
 }
 

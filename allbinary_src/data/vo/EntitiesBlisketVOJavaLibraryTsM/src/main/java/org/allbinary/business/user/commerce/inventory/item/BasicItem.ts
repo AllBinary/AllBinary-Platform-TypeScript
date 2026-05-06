@@ -474,11 +474,11 @@ this.downloads= value;
                         
                                     {
                                     
-    var downloadInteger: number = Integer(Integer.valueOf(this.downloads))!;
+    var downloadInteger: Integer = Integer(Integer.valueOf(this.downloads))!;
 ;
     
 
-                        if(downloadInteger != 0)
+                        if(downloadInteger!.intValue() != 0)
                         
                                     {
                                     this.setDownloadable(true);
@@ -839,8 +839,8 @@ this.downloadable= downloadable;
     var itemTotal: Money = new Money(this.price);
 ;
     
-itemTotal!.multiply(this.number.
-                            toInt());
+itemTotal!.multiply(new Integer(this.number).
+                            intValue());
     
 
 
@@ -908,7 +908,7 @@ hashMap!.put(BasicItemData.LARGEIMAGE, this.largeImage);
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString()!;
 ;
     
@@ -996,7 +996,7 @@ values.add(this.getLargeImage());
 ;
     
 
-    var time: string = calendar.getTimeInMillis().
+    var time: string = new Long(calendar.getTimeInMillis()).
                             toString()!;
 ;
     

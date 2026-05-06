@@ -89,7 +89,7 @@ export class NumberOnOwnGroupSequenceAIFactory
     //var ownerLayerInterface = ownerLayerInterface
     //var gameInput = gameInput
 
-    var integerArray: number[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;
+    var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;
 ;
     
 
@@ -169,7 +169,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET_INSTANCE);
                                     }
                                 
 
-    var numberOnSameTeam: number[] = new Array(list.size());
+    var numberOnSameTeam: Integer[] = new Array(list.size());
 ;
     
 

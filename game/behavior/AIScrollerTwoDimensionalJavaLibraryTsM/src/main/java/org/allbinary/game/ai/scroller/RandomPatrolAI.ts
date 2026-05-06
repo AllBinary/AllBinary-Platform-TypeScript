@@ -81,7 +81,7 @@ this.updateRandomDistance();
 
 
     updateRandomDistance(){
-this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.maxDistance!.toInt());
+this.currentDistance= MyRandomFactory.getInstance()!.getAbsoluteNextInt(this.maxDistance!.intValue());
     
 }
 
