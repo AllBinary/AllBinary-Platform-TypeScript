@@ -57,7 +57,7 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
         import { LogFormatUtil } from './LogFormatUtil.js';
 import { PreLogUtil } from './PreLogUtil.js';
 import { Log } from './Log.js';
-
+//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

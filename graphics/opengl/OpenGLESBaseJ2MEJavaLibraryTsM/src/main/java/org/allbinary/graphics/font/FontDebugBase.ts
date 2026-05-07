@@ -32,20 +32,20 @@ import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //OpenGLESBaseJ2MEJavaLibrary
 export class FontDebugBase
             extends Object
          {
         
 
-    private static readonly instance: FontDebugBase = new FontDebugBase();
+    private static readonly instanceBase: FontDebugBase = new FontDebugBase();
 
     public static getInstance(): FontDebugBase{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FontDebugBase.instance;
+                        return FontDebugBase.instanceBase;
     
 }
 
