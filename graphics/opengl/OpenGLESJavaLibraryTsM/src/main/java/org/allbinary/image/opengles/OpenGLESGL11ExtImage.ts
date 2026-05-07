@@ -79,7 +79,7 @@ import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/o
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLESImage } from './OpenGLESImage.js';
-
+//Many devices don't support this even though it is supposed to
 export class OpenGLESGL11ExtImage extends OpenGLESImage {
         
 

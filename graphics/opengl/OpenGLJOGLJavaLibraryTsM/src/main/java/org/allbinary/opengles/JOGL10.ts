@@ -49,7 +49,7 @@ import { GL } from './GL.js';
 import { Buffer } from './Buffer.js';
 import { IntBuffer } from './IntBuffer.js';
 import { FloatBuffer } from './FloatBuffer.js';
-
+//JOGLEToKhronosGL10
 export class JOGL10
             extends Object
          implements javax.microedition.khronos.opengles.GL10 {

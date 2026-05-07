@@ -111,7 +111,7 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
         import { AbFile } from './AbFile.js';
 import { FileWrapperUtil } from './FileWrapperUtil.js';
 import { FileUtil2 } from './FileUtil2.js';
-
+//data/init/views/TestStore/template/type/genericTemplateObjectConfig.xml
 export class FileUtil
             extends Object
          {

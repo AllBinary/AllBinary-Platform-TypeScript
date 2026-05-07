@@ -60,7 +60,7 @@ import { StringValidationUtil } from '../../../../../../org/allbinary/logic/stri
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //Used to correct user input for paths
 export class AbPathUtilOld
             extends Object
          {

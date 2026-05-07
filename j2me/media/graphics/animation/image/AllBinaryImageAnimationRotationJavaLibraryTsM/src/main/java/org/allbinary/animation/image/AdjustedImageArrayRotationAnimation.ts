@@ -56,7 +56,7 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimation } from './ImageArrayRotationAnimation.js';
 import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
-
+//TWB - Adjustments should be done in the resource creation and not at the animation level
 export class AdjustedImageArrayRotationAnimation extends ImageArrayRotationAnimation {
         
 

@@ -55,7 +55,7 @@ import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMak
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Log } from './Log.js';
-
+//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

@@ -51,7 +51,7 @@ import { PlayN } from '../../../../../playn/core/PlayN.js';
         import { LogFormatUtil } from './LogFormatUtil.js';
 import { Log } from './Log.js';
 import { PreLogUtil } from './PreLogUtil.js';
-
+//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {

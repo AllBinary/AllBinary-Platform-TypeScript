@@ -57,7 +57,7 @@ import { StoreWorkFlowTag } from '../../../../tags/StoreWorkFlowTag.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //and remove the hidden fields
 export class BasicWorkFlowTag extends StoreWorkFlowTag {
         
 

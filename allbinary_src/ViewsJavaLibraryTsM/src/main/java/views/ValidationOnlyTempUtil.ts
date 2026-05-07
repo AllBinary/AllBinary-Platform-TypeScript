@@ -54,7 +54,7 @@ import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //Replace when validation node is added
 export class ValidationOnlyTempUtil
             extends Object
          {

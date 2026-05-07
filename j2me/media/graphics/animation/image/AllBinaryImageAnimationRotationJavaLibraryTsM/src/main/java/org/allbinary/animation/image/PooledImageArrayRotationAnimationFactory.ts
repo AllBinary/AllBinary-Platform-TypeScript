@@ -71,7 +71,7 @@ import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/i
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayRotationAnimationInfo } from './ImageArrayRotationAnimationInfo.js';
 import { AdjustedImageArrayRotationAnimation } from './AdjustedImageArrayRotationAnimation.js';
-
+//TWB - Adjustments should be done in the resource creation and not at the animation level
 export class PooledImageArrayRotationAnimationFactory
             extends Object
          implements AnimationInterfaceFactoryInterface {

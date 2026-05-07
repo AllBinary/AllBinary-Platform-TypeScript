@@ -47,7 +47,7 @@ import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayL
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //1.4.2
 export class PathFinderGraphVisitorBase
             extends Object
          {

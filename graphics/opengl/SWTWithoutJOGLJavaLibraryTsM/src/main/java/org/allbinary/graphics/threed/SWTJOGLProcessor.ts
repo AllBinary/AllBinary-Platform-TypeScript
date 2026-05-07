@@ -46,7 +46,7 @@ import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GLHolder } from './GLHolder.js';
-
+//SWTWithoutJOGL
 export class SWTJOGLProcessor
             extends Object
          implements Runnable {

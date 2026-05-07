@@ -47,7 +47,7 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { FilePathData } from './FilePathData.js';
-
+//Used to correct user input for paths
 export class FilePathUtil
             extends Object
          {

@@ -76,7 +76,7 @@ import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js'
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
-
+//TWB - Am I missing the correct Quote Request? Probably not
 export class QuoteRequestHelper extends ModifyTable {
         
 

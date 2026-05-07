@@ -67,7 +67,7 @@ import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStri
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ClientInformation } from './ClientInformation.js';
-
+// This is the information sent to the license server
 export class AbeClientInformation extends ClientInformation {
         
 

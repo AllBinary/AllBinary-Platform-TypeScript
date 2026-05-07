@@ -50,7 +50,7 @@ import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
 import { Buffer } from './Buffer.js';
 import { FloatBuffer } from './FloatBuffer.js';
 import { IntBuffer } from './IntBuffer.js';
-
+//JOGLEToKhronosGL11
 export class JOGL11 extends JOGL10 implements javax.microedition.khronos.opengles.GL11 {
         
 

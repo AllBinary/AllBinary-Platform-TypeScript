@@ -63,7 +63,7 @@ import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //ActualPlatform
 /*actual*/ export class LogFormatUtil
             extends Object
          {

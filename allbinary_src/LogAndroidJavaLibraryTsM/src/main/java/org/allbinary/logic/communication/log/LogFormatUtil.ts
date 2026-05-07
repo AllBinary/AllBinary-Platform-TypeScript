@@ -63,7 +63,7 @@ import { TimeStampUtil } from '../../../../../org/allbinary/time/TimeStampUtil.j
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //ActualPlatform
 /*actual*/ export class LogFormatUtil
             extends Object
          {

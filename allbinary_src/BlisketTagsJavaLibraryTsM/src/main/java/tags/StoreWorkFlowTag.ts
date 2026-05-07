@@ -66,7 +66,7 @@ import { StoreTagWorkFlowHelperFactory } from '../taghelpers/StoreTagWorkFlowHel
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HelperTag } from './HelperTag.js';
-
+//and hidden field removal
 export class StoreWorkFlowTag extends HelperTag {
         
 

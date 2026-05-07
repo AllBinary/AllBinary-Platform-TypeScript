@@ -75,7 +75,7 @@ import { Document } from '../../../../../org/w3c/dom/Document.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //import org.allbinary.data.tree.dom.document.DomDocumentHelper;
 export class XslHelper
             extends Object
          {

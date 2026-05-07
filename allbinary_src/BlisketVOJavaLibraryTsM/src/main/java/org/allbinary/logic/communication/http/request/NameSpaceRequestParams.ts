@@ -93,7 +93,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
         import { RequestParams } from './RequestParams.js';
 import { NameSpaceRequestParamData } from './NameSpaceRequestParamData.js';
 import { NameSpaceRequestParam } from './NameSpaceRequestParam.js';
-
+//containing string values and other hashmaps of the like
 export class NameSpaceRequestParams extends RequestParams {
         
 

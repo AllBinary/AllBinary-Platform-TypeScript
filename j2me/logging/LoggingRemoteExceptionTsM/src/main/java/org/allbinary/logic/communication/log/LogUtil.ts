@@ -76,7 +76,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
         import { Log } from './Log.js';
 import { LogFormatUtil } from './LogFormatUtil.js';
 import { XmlRpcRemoteLogClient } from './XmlRpcRemoteLogClient.js';
-
+//ActualPlatform
 /*actual*/ export class LogUtil
             extends Object
          {
