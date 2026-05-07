@@ -73,9 +73,13 @@ var anyType = anyType
 
                 //@Throws(InterruptedException.constructor)
             
-    public waitFor(anyType: any = {}, timeoutMillis: number){
-var anyType = anyType
+    public waitFor(any: any = {}, timeoutMillis: number){
+var any = any
     //var timeoutMillis = timeoutMillis
+
+    var anyType: any = any as Object;
+;
+    
 anyType!.wait(timeoutMillis);
     
 }
