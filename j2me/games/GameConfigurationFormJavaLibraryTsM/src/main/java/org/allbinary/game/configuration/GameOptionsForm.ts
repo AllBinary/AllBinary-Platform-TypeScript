@@ -29,7 +29,7 @@
 import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { Choice, ChoiceI } from  '../../../../javax/microedition/lcdui/Choice.js';
+import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
 
     
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
@@ -175,7 +175,7 @@ this.save(abeClientInformation);
                         
                                     {
                                     
-    var listCanBeNull: any = hashtable.get(key as Object);
+    var listCanBeNull: any = hashtable.get(key);
 ;
     
 

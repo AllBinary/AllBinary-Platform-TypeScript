@@ -210,7 +210,7 @@ index < size; index++)
 ;
     
 
-    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString as Object) as InputRobotInterface;
+    var inputRobotInterface: InputRobotInterface = robotHashtable!.get(inputTypeNameString) as InputRobotInterface;
 ;
     
 inputRobotInterface!.mouseMoveToTarget(rectangle);

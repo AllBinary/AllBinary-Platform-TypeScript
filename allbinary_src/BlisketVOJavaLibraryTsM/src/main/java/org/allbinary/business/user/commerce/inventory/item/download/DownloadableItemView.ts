@@ -217,7 +217,7 @@ index < size; index++)
 ;
     
 
-    var value: string = hashMap!.get(name as Object) as string;
+    var value: string = hashMap!.get(name) as string;
 ;
     
 value= stringUtil!.getNonNull(value);

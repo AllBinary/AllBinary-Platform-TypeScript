@@ -102,7 +102,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public onSurfaceChanged(event: any = {}){
+    public onSurfaceChangedForEvent(event: any = {}){
     //var event = event
 }
 
@@ -111,7 +111,7 @@ export class SWTJOGLProcessor
 }
 
 
-    public onSurfaceChanged(width: number, height: number){
+    public onSurfaceChangedWH(width: number, height: number){
     //var width = width
     //var height = height
 }

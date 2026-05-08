@@ -100,7 +100,7 @@ export class InputToGameKeyMapping extends InputMapping {
 public constructor (){
 
             super();
-        this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.clear();
     
@@ -199,7 +199,7 @@ this.logUtil!.putF(new StringMaker().
     
 super.remove(input, mappedToInput);
     
-this.set(input, gameKeyFactory!.NONE);
+this.set(input, this.gameKeyFactory!.NONE);
     
 }
 
@@ -320,7 +320,7 @@ var gameKey = gameKey
                                 
                         else {
                             PreLogUtil.putOE(new StringMaker().
-                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, commonStrings!.INIT, new Exception());
+                            append(gameKey!.toString())!.append(CommonSeps.getInstance()!.COLON_SEP)!.appendint(key)!.toString(), this, this.commonStrings!.INIT, new Exception());
     
 
                         }
@@ -349,7 +349,7 @@ var canvas = canvas
                 ;
 --index >= 0; )
         {
-nextKey= canvas.getKeyCode(mappedGameKeys[index]!.getId());
+nextKey= canvas.getKeyCode(this.mappedGameKeys[index]!.getId());
     
 
                         if(nextKey < smallestKey)
@@ -423,11 +423,11 @@ this.negativePlatformToGameKeyMapping= negativePlatformToGameKeyMapping;
 
 
                         for (
-    var index: number = mappedGameKeys!.length
+    var index: number = this.mappedGameKeys!.length
                 ;
 --index >= 0; )
         {
-this.initGameKey(canvas, mappedGameKeys[index]!);
+this.initGameKey(canvas, this.mappedGameKeys[index]!);
     
 }
 
@@ -435,7 +435,7 @@ this.initGameKey(canvas, mappedGameKeys[index]!);
                 //: 
 } catch(t) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, t);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, t);
     
 }
 

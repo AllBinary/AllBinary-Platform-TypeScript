@@ -26,7 +26,7 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Choice, ChoiceI } from  '../../../../javax/microedition/lcdui/Choice.js';
+import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
 
     
 import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js';

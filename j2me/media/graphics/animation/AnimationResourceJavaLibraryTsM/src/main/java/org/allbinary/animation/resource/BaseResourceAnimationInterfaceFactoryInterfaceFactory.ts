@@ -175,7 +175,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
     public getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
     //var resource = resource
 
-    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any = this.hashtable.get(resource as Object);
+    var basicAnimationInterfaceFactoryInterfaceCanBeNull: any = this.hashtable.get(resource);
 ;
     
 
@@ -207,7 +207,7 @@ this.hashtable.put(resource, animationInterfaceFactoryInterface);
     public getRectangle(resource: string): Rectangle{
     //var resource = resource
 
-    var rectangleCanBeNull: any = this.rectangleHashtable!.get(resource as Object);
+    var rectangleCanBeNull: any = this.rectangleHashtable!.get(resource);
 ;
     
 
@@ -252,7 +252,7 @@ this.rectangleHashtable!.put(resource, rectangle);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.rectangleArrayOfArraysHashtable!.get(resource as Object)as Array<Rectangle[]?>;
+                        return this.rectangleArrayOfArraysHashtable!.get(resource)as Array<Rectangle[]?>;
     
 }
 

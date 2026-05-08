@@ -111,7 +111,7 @@ this.update();
     public update(){
 
         try {
-            this.setGameKey(inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()));
+            this.setGameKey(this.inputToGameKeyMapping!.getInstance(this.getMotionGestureInput()!.getId()));
     
 this.setGameKeyEvent(this.gameKeyEventFactory!.getInstanceForInput(this, getGameKey()));
     

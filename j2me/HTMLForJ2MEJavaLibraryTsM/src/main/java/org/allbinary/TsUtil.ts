@@ -24,6 +24,21 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
+import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
+
+    
+import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
+
+    
+import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
+
+    
+import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
+
+    
+import { NullUtil } from '../../org/allbinary/logic/NullUtil.js';
+
+    
 
 
 
@@ -55,7 +70,7 @@ export class TsUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return TsUtil.instance;
+                        return instance;
     
 }
 
@@ -81,6 +96,48 @@ var any = any
 ;
     
 anyType!.wait(timeoutMillis);
+    
+}
+
+
+                //@Throws(RecordStoreNotOpenException.constructor, InvalidRecordIDException.constructor, RecordStoreException.constructor)
+            
+    public getRecord(anyType: any = {}, recordId: number): number[]{
+    //var anyType = anyType
+    //var recordId = recordId
+
+    var recordStore: RecordStore = anyType as RecordStore;
+;
+    
+
+    var data: number[]
+;
+    
+
+        
+        //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
+        //synchronized(this) 
+
+        //mutex.withLock
+        
+data= new Array(recordStore!.getRecordSize(recordId));
+    
+recordStore!.getRecord(recordId, data, 0);
+    
+
+
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return data.length < 1
+                        ?       
+                                NullUtil.getInstance()!.NULL_BYTE_ARRAY
+                                :
+
+                            data;
+
+    ;
     
 }
 

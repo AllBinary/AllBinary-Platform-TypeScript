@@ -68,7 +68,7 @@ var textField = textField
 ;
     
 
-    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType as Object) as GameConfigurationTextInput;
+    var gameConfigurationTextInput: GameConfigurationTextInput = GameConfigurationTextInput.hashtable.get(anyType) as GameConfigurationTextInput;
 ;
     
 gameConfigurationTextInput!.setText(textField!.getString());

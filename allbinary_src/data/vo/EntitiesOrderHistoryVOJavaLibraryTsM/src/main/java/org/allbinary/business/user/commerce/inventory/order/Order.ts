@@ -482,7 +482,7 @@ i < size; i++)
 ;
     
 
-    var value: string = hashMap!.get(name as Object) as string;
+    var value: string = hashMap!.get(name) as string;
 ;
     
 value= StringUtil.getInstance()!.getNonNull(value);

@@ -173,7 +173,7 @@ this.process(layerPlacementInterface);
         {
 point= this.enumerationUtil!.nextElement(enumeration)! as GPoint;
     
-layerHashtable= hashtable.get(point as Object) as Hashtable<any, any>;
+layerHashtable= hashtable.get(point) as Hashtable<any, any>;
     
 x= point.getX() +relativePoint!.getX();
     

@@ -204,7 +204,7 @@ var storeFrontInterface = storeFrontInterface
 i < size; i++)
         {
 
-    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i as Object) as HashMap<any, any>;
+    var itemHashMap: HashMap<any, any> = itemHashMapVector!.get(i) as HashMap<any, any>;
 ;
     
 

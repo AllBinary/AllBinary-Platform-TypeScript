@@ -33,7 +33,7 @@ import { Command } from '../../../javax/microedition/lcdui/Command.js';
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
-import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
+import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
     
 
@@ -75,6 +75,8 @@ export class CommandUriAction
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
+
     private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     public add(command: Command, url: string){
@@ -103,7 +105,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e
     public getIntent(command: Command): Intent{
 var command = command
 
-    var url: string = this.hashtable.get(command as Object) as string;
+    var url: string = this.hashtable.get(command) as string;
 ;
     
 

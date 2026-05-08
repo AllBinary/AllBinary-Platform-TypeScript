@@ -285,7 +285,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 i < size; i++)
         {
 
-    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i as Object) as HashMap<any, any>;
+    var workFlowHashMap: HashMap<any, any> = hashMapVector!.get(i) as HashMap<any, any>;
 ;
     
 

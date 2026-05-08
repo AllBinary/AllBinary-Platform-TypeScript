@@ -237,7 +237,7 @@ index < size; index++)
 this.logUtil!.putF("Processing Action: " +actionNameString, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object) as GenericProfileAction;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;
 ;
     
 

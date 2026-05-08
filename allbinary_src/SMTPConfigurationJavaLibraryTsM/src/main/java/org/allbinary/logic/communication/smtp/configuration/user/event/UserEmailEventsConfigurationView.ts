@@ -200,7 +200,7 @@ index < size; index++)
 ;
     
 
-    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName as Object) as UserEmailEventConfigurationInterface;
+    var userEmailEventsConfigurationInterface: UserEmailEventConfigurationInterface = emailEventHashMap!.get(eventName) as UserEmailEventConfigurationInterface;
 ;
     
 

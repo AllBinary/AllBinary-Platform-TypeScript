@@ -537,7 +537,7 @@ var treeNode = treeNode
                         
                                     {
                                     
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;
 ;
     
 
@@ -689,7 +689,7 @@ var treeNode = treeNode
 ;
     
 
-    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode as Object) as Integer;
+    var frameInteger: Integer = canvasJPanelHashMap!.get(treeNode) as Integer;
 ;
     
 

@@ -204,7 +204,7 @@ index < size; index++)
 ;
     
 
-    var value: string = hashMap!.get(key as Object) as string;
+    var value: string = hashMap!.get(key) as string;
 ;
     
 

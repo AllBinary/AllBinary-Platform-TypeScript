@@ -1696,7 +1696,7 @@ this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
         {
 key= this.enumerationUtil!.nextElement(enumeration)!;
     
-hashtable.put(key, currentHashtable!.get(key as Object));
+hashtable.put(key, currentHashtable!.get(key));
     
 }
 

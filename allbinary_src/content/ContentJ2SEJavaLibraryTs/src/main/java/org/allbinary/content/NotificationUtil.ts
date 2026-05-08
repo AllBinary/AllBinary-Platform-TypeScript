@@ -32,7 +32,7 @@ import { Command } from '../../../javax/microedition/lcdui/Command.js';
 import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
 
     
-import { TsUtil } from '../../../org/allbinary/logic/TsUtil.js';
+import { TsUtil } from '../../../org/allbinary/TsUtil.js';
 
     
 

@@ -4,6 +4,14 @@
 
     public static NORM_PRIORITY: number = 5; //5 = Thread.NORM_PRIORITY
 
+    public constructor(Runnable task) {
+        throw new Error('Method not implemented.');
+    }
+
+    public constructor(Runnable task, String name) {
+        throw new Error('Method not implemented.');
+    }
+
     public start() {
         throw new Error('Method not implemented.');
     }

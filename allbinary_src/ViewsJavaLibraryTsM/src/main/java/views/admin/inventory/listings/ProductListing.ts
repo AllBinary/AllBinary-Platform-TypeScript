@@ -464,7 +464,7 @@ index < size; index++)
 ;
     
 
-    var fileName: string = keywordFilenameHashMap!.get(keywordData as Object) as string;
+    var fileName: string = keywordFilenameHashMap!.get(keywordData) as string;
 ;
     
 insertVector!.add(storeFront!.getName());

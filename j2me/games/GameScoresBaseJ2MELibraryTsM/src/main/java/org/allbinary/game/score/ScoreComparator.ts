@@ -38,7 +38,7 @@ import { EOFException } from '../../../../java/io/EOFException.js';
 import { IOException } from '../../../../java/io/IOException.js';
 
     
-import { RecordComparator } from '../../../../javax/microedition/rms/RecordComparator.js';
+import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
 
     
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
@@ -208,7 +208,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RecordComparator.PRECEDES;
+                        return RecordComparatorI.PRECEDES;
     
 
                                     }
@@ -221,7 +221,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RecordComparator.FOLLOWS;
+                        return RecordComparatorI.FOLLOWS;
     
 
                                     }
@@ -231,7 +231,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RecordComparator.EQUIVALENT;
+                        return RecordComparatorI.EQUIVALENT;
     
 
                         }
@@ -250,7 +250,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RecordComparator.PRECEDES;
+                        return RecordComparatorI.PRECEDES;
     
 
                                     }
@@ -263,7 +263,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RecordComparator.FOLLOWS;
+                        return RecordComparatorI.FOLLOWS;
     
 
                                     }
@@ -273,7 +273,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RecordComparator.EQUIVALENT;
+                        return RecordComparatorI.EQUIVALENT;
     
 
                         }

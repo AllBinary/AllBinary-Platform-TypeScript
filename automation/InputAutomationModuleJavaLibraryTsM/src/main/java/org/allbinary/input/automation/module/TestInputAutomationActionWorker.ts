@@ -134,7 +134,7 @@ index < size; index++)
 ;
     
 
-    var robot: InputRobotInterface = hashtable.get(inputTypeNameString as Object) as InputRobotInterface;
+    var robot: InputRobotInterface = hashtable.get(inputTypeNameString) as InputRobotInterface;
 ;
     
 

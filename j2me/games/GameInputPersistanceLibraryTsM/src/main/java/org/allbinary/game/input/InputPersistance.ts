@@ -47,6 +47,9 @@ import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnum
 import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
 
     
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+
+    
 import { BasicPersitance } from '../../../../org/allbinary/game/configuration/persistance/BasicPersitance.js';
 
     
@@ -107,6 +110,8 @@ import { InputFactory } from './InputFactory.js';
 
 export class InputPersistance extends BasicPersitance {
         
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly hashtableUtil: HashtableUtil = HashtableUtil.getInstance()!;
 public constructor (name: string){
@@ -194,7 +199,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 this.logUtil!.putF(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
-recordAsBytes= recordStore!.getRecord(id);
+recordAsBytes= tsUtil!.getRecord(recordStore, id);
     
 
                         if(recordAsBytes != 

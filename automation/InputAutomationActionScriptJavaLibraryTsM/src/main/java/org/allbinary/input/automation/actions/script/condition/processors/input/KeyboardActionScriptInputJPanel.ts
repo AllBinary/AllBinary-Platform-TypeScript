@@ -224,7 +224,7 @@ this.keyActionScriptInputInterface!.log();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return KeySingletonFactory.getHashtable()!.get(selectedItem as Object) as Integer;
+                        return KeySingletonFactory.getHashtable()!.get(selectedItem) as Integer;
     
 
                                     }

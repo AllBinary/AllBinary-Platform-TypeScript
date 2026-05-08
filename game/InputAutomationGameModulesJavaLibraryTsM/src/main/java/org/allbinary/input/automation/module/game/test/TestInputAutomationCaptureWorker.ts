@@ -160,7 +160,7 @@ index < size; index++)
 ;
     
 
-    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString as Object) as GenericProfileAction;
+    var genericProfileAction: GenericProfileAction = hashMap!.get(actionNameString) as GenericProfileAction;
 ;
     
 

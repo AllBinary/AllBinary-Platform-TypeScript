@@ -442,7 +442,7 @@ index < size; index++)
         {
 anyType= objectArray[index]! as Object;
     
-basicArrayList= hashtable.get(anyType as Object) as BasicArrayList;
+basicArrayList= hashtable.get(anyType) as BasicArrayList;
     
 this.updateExclusiveList(gameFeature, basicArrayList);
     

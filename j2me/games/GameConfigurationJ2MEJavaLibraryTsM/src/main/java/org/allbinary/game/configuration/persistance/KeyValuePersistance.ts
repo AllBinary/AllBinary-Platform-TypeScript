@@ -301,7 +301,7 @@ outputStream!.writeUTF(commonSeps!.EQUALS);
     
 anyType= objectArray[index]! as Object;
     
-value= hashtable.get(anyType as Object) as string;
+value= hashtable.get(anyType) as string;
     
 outputStream!.writeUTF(value);
     

@@ -490,7 +490,7 @@ index < size; index++)
                         if(!this.isInstalled(symbolicName))
                         
                                     {
-                                    vector.add(hashMap!.get(symbolicName as Object));
+                                    vector.add(hashMap!.get(symbolicName));
     
 
                                     }

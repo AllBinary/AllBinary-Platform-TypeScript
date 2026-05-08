@@ -238,7 +238,7 @@ stringBuffer!.appendint(this.getDefaultValue()!.intValue());
     
 stringBuffer!.append(" Modifiable: ");
     
-stringBuffer!.appendboolean(this.isModifiable());
+stringBuffer!.appendboolean(this.isModifiable().valueOf());
     
 
 

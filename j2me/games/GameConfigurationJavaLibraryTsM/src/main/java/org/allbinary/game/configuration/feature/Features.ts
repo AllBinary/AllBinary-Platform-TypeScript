@@ -109,9 +109,9 @@ export class Features
 private constructor (){
 
             super();
-        list= new BasicArrayListD();
+        this.list= new BasicArrayListD();
     
-defaultList= new BasicArrayListD();
+this.defaultList= new BasicArrayListD();
     
 this.init();
     
@@ -179,7 +179,7 @@ this.defaultList!.remove(gameFeature);
                         if(this.list.contains(gameFeature))
                         
                                     {
-                                    this.logUtil!.putF(commonStrings!.START, this, commonStrings!.REMOVE);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.REMOVE);
     
 this.list.remove(gameFeature);
     
@@ -259,7 +259,7 @@ this.addDefault(MainFeatureFactory.getInstance()!.LOAD_ONDEMAND);
                 //: 
 } catch(e) 
             {
-PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 

@@ -138,7 +138,7 @@ index < size; index++)
 ;
     
 
-    var mediaData: MediaData = hashMap!.get(mediaDataName as Object) as MediaData;
+    var mediaData: MediaData = hashMap!.get(mediaDataName) as MediaData;
 ;
     
 this.readerFileTypesHashMap!.put(mediaData!.getName(), mediaData!.getType());
@@ -287,7 +287,7 @@ var hashMap = hashMap
                         
                                     {
                                     
-    var mediaType: string = hashMap!.get(mediaFileType as Object) as string;
+    var mediaType: string = hashMap!.get(mediaFileType) as string;
 ;
     
 

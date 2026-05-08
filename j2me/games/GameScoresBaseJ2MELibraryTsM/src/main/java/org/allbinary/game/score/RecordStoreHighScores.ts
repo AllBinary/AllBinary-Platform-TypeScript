@@ -39,7 +39,7 @@ import { IOException } from '../../../../java/io/IOException.js';
 import { Hashtable } from '../../../../java/util/Hashtable.js';
 
     
-import { RecordComparator } from '../../../../javax/microedition/rms/RecordComparator.js';
+import { RecordComparator, RecordComparatorI } from '../../../../javax/microedition/rms/RecordComparator.js';
 
     
 import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
@@ -364,7 +364,7 @@ inputStream= new DataInputStream(byteArrayInputStream);
 ;
     
 
-                        if(this.recordComparatorInterface!.compare(nextCurrentHighScore!.getAsBytes(), bestHighScore!.getAsBytes()) == RecordComparator.FOLLOWS)
+                        if(this.recordComparatorInterface!.compare(nextCurrentHighScore!.getAsBytes(), bestHighScore!.getAsBytes()) == RecordComparatorI.FOLLOWS)
                         
                                     {
                                     bestHighScore= nextCurrentHighScore;
@@ -519,7 +519,7 @@ index < size; index++)
 ;
     
 
-                        if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.PRECEDES)
+                        if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparatorI.PRECEDES)
                         
                                     {
                                     lastIndex= index;
@@ -687,7 +687,7 @@ index < size; index++)
 ;
     
 
-                        if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparator.FOLLOWS)
+                        if(this.recordComparatorInterface!.compare(newHighScore!.getAsBytes(), highScore!.getAsBytes()) == RecordComparatorI.FOLLOWS)
                         
                                     {
                                     this.logUtil!.putF("Obtained a High Score", this, "isBestScore");

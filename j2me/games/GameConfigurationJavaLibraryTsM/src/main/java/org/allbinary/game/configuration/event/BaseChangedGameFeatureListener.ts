@@ -99,7 +99,7 @@ ForcedLogUtil.log(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this);
     public onGameFeatureChange(gameFeatureEvent: GameFeatureEvent){
     //var gameFeatureEvent = gameFeatureEvent
 this.logUtil!.putF(new StringMaker().
-                            append(gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, gameFeatureUtil!.ON_GAME_FEATURE_CHANGE);
+                            append(this.gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, this.gameFeatureUtil!.ON_GAME_FEATURE_CHANGE);
     
 this.list.add(gameFeatureEvent!.getGameOption());
     

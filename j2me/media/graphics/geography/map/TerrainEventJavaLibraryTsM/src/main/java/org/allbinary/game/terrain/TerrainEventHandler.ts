@@ -84,7 +84,7 @@ TerrainEventHandler.hashtable= new Hashtable<any, any>();
     public static getInstance(anyType: any = {}): TerrainEventHandler{
     //var anyType = anyType
 
-    var eventHandlerCanBeNull: any = TerrainEventHandler.hashtable.get(anyType as Object);
+    var eventHandlerCanBeNull: any = TerrainEventHandler.hashtable.get(anyType);
 ;
     
 

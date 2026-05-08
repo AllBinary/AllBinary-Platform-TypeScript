@@ -112,7 +112,7 @@ export class UserEmailEventNameData
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
 var userEmailEventNameString = userEmailEventNameString
 
-    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString as Object) as UserEmailEventNameData;
+    var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString) as UserEmailEventNameData;
 ;
     
 

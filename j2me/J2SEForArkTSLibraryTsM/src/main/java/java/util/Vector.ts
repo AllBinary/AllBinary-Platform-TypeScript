@@ -28,5 +28,8 @@ import ArtTsVector from '@ohos.util.Vector';
              return super.remove(object);
            }
 
+           public removeAllElements(): void {
+             super.clear();
+           }
 }
 

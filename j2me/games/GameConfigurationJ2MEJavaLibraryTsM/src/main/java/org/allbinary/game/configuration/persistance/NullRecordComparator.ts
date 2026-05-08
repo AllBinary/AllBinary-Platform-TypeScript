@@ -22,7 +22,7 @@
 
 
         
-import { RecordComparator } from '../../../../../javax/microedition/rms/RecordComparator.js';
+import { RecordComparator, RecordComparatorI } from '../../../../../javax/microedition/rms/RecordComparator.js';
 
     
 

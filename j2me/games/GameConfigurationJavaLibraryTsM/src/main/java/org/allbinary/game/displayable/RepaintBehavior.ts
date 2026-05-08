@@ -145,7 +145,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
 
                                 }
-                            , this.NAME);
+                            , RepaintBehavior.prototype.NAME);
 ;
     
 thread.start();

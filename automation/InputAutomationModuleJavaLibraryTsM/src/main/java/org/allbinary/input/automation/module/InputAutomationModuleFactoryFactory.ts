@@ -188,7 +188,7 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 this.logUtil!.putF("Getting Module: " +moduleName, this, commonStrings!.GET_INSTANCE);
     
 
-    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName as Object) as InputAutomationModuleFactoryInterface;
+    var inputAutomationModuleFactoryInterface: InputAutomationModuleFactoryInterface = this.hashMap!.get(moduleName) as InputAutomationModuleFactoryInterface;
 ;
     
 

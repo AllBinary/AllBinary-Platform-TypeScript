@@ -129,7 +129,7 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
     getNewTotal(userRole: UserRole): Long{
 var userRole = userRole
 
-    var numberOfUsersForRoleLong: Long = this.totalUsersByRoleHashMap!.get(userRole as Object) as Long;
+    var numberOfUsersForRoleLong: Long = this.totalUsersByRoleHashMap!.get(userRole) as Long;
 ;
     
 
@@ -165,7 +165,7 @@ var userRole = userRole
     public getNumberOfUsersByRole(role: string): Long{
 var role = role
 
-    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(role as Object) as Long;
+    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(role) as Long;
 ;
     
 
@@ -212,7 +212,7 @@ index < size; index++)
 nextUserRole= userRoleArray[index]! as UserRole;
     
 
-    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(nextUserRole as Object) as Long;
+    var totalForRole: Long = this.totalUsersByRoleHashMap!.get(nextUserRole) as Long;
 ;
     
 hashMap!.put(nextUserRole!.toString(), totalForRole!.toString());

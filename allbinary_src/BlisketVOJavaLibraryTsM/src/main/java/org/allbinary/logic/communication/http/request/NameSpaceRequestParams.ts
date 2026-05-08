@@ -188,7 +188,7 @@ index < size; index++)
 ;
     
 
-    var propertyValue: string = packagePropertiesHashMap!.get(propertyName as Object) as string;
+    var propertyValue: string = packagePropertiesHashMap!.get(propertyName) as string;
 ;
     
 
@@ -385,7 +385,7 @@ index < size; index++)
 ;
     
 
-    var propertyValue: string = StringUtil.getInstance()!.getNonNull(nextPackagePropertiesHashMap!.get(nextPropertyName as Object) as string)!;
+    var propertyValue: string = StringUtil.getInstance()!.getNonNull(nextPackagePropertiesHashMap!.get(nextPropertyName) as string)!;
 ;
     
 

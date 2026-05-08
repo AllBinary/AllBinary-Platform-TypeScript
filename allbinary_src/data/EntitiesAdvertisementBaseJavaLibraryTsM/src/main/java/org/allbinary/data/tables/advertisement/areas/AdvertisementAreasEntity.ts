@@ -161,7 +161,7 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 index < size; index++)
         {
 
-    var hashMap: HashMap<any, any> = hashMapVector!.get(index as Object) as HashMap<any, any>;
+    var hashMap: HashMap<any, any> = hashMapVector!.get(index) as HashMap<any, any>;
 ;
     
 

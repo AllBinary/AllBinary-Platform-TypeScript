@@ -652,7 +652,7 @@ this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList);
     public getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
     //var geographicMapCellPosition = geographicMapCellPosition
 
-    var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition as Object) as BasicArrayList;
+    var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition) as BasicArrayList;
 ;
     
 

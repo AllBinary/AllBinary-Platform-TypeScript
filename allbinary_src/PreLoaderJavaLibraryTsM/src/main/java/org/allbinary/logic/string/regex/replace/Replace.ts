@@ -224,7 +224,7 @@ index2 < size; index2++)
         {
 keys= keyArray[index2]! as Array<String?>;
     
-values= this.hashMap!.get(keys as Object) as Array<String?>;
+values= this.hashMap!.get(keys) as Array<String?>;
     
 
     var foundTotal: number = 0;
@@ -398,7 +398,7 @@ index2 < size; index2++)
         {
 key= keyArray[index2]! as string;
     
-value= this.hashMap!.get(key as Object) as string;
+value= this.hashMap!.get(key) as string;
     
 
     var index: number = 0;

@@ -357,7 +357,7 @@ var append = append
 var key = key
 var hashMap = hashMap
 
-    var path: string = hashMap!.get(key as Object) as string;
+    var path: string = hashMap!.get(key) as string;
 ;
     
 
@@ -382,7 +382,7 @@ var hashMap = hashMap
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return hashMap!.get(path as Object) as string +append;
+                        return hashMap!.get(path) as string +append;
     
 
                                     }

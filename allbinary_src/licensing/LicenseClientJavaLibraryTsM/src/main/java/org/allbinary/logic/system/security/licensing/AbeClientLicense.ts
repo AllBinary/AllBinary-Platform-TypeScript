@@ -199,7 +199,7 @@ var keyName = keyName
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.hashtable.get(keyName as Object) as string;
+                        return this.hashtable.get(keyName) as string;
     
 }
 

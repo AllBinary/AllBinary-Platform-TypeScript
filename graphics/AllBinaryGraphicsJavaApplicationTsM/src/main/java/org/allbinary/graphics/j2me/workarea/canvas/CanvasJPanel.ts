@@ -533,7 +533,7 @@ index < size; index++)
 ;
     
 
-    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(graphicItemNode as Object) as GraphicItemInterface;
+    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(graphicItemNode) as GraphicItemInterface;
 ;
     
 
@@ -798,7 +798,7 @@ index < size; index++)
 ;
     
 
-    var graphicItem: GraphicItemInterface = hashMap!.get(treeNode as Object) as GraphicItemInterface;
+    var graphicItem: GraphicItemInterface = hashMap!.get(treeNode) as GraphicItemInterface;
 ;
     
 this.duplicateGraphicItem(graphicItem);
@@ -1487,7 +1487,7 @@ var event = event
 ;
     
 
-    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(treeNode as Object) as GraphicItemInterface;
+    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(treeNode) as GraphicItemInterface;
 ;
     
 
@@ -1517,7 +1517,7 @@ var event = event
 ;
     
 
-    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(treeNode as Object) as GraphicItemInterface;
+    var graphicItem: GraphicItemInterface = this.getGraphicItemHashMap()!.get(treeNode) as GraphicItemInterface;
 ;
     
 

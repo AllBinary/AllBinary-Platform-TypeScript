@@ -60,13 +60,13 @@ export class ChangedGameFeatureListener extends BaseChangedGameFeatureListener {
 }
 
 
-    public isChanged(gameConfiguration: GameConfiguration): boolean{
+    public isChangedGameConfiguration(gameConfiguration: GameConfiguration): boolean{
 var gameConfiguration = gameConfiguration
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return list.contains(gameConfiguration);;
+                        return this.list.contains(gameConfiguration);;
     
 }
 

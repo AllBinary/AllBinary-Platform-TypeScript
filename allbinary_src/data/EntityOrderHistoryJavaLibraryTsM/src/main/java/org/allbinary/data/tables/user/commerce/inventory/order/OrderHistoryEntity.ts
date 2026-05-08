@@ -615,7 +615,7 @@ whereHashMap!.put(StoreFrontData.getInstance()!.NAME, storeFrontInterface!.getNa
 i < size; i++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i as Object) as HashMap<any, any>;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(i) as HashMap<any, any>;
 ;
     
 
@@ -666,7 +666,7 @@ whereHashMap!.put(UserData.USERNAME, userName);
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object) as HashMap<any, any>;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;
 ;
     
 
@@ -719,7 +719,7 @@ whereHashMap!.put(OrderHistoryData.STATUS, status);
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object) as HashMap<any, any>;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;
 ;
     
 
@@ -765,7 +765,7 @@ var toDate = toDate
 index < size; index++)
         {
 
-    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index as Object) as HashMap<any, any>;
+    var orderReviewHashMap: HashMap<any, any> = orderHashMapVector!.get(index) as HashMap<any, any>;
 ;
     
 

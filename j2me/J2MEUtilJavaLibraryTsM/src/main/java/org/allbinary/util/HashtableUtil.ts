@@ -92,7 +92,7 @@ export class HashtableUtil
         {
 keyCanBeNull= this.enumerationUtil!.nextElement(enumeration)!;
     
-valueCanBeNull= hashtable.get(keyCanBeNull as Object);
+valueCanBeNull= hashtable.get(keyCanBeNull);
     
 
                         if(valueCanBeNull == 

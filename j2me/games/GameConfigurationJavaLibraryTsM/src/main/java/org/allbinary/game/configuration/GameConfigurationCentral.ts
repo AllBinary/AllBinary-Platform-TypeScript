@@ -203,7 +203,7 @@ keyValuePersistance!.loadAll(abeClientInformation);
 ;
     
 
-    var value: string = hashtable.get(anyType as Object) as string;
+    var value: string = hashtable.get(anyType) as string;
 ;
     
 this.SCALE.setValue(smallIntegerSingletonFactory!.getAt(Integer.valueOf(value)!.intValue()));
