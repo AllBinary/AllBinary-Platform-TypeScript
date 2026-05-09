@@ -31,7 +31,7 @@ import { Screen } from '../../../../javax/microedition/lcdui/Screen.js';
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
-import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
+import { ABCustomItemInterface } from '../../../../org/allbinary/graphics/form/item/ABCustomItemInterface.js';
 
     
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
@@ -57,7 +57,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryTiledLayer } from './AllBinaryTiledLayer.js';
 
-export class TileLayerItem extends ABCustomItem implements CustomItemInterface {
+export class TileLayerItem extends ABCustomItem implements ABCustomItemInterface {
         
 
     private readonly tiledLayer: AllBinaryTiledLayer
@@ -145,7 +145,7 @@ var height = height
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

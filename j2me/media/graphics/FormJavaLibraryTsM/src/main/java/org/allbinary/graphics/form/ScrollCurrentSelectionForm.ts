@@ -36,9 +36,6 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
-import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
-
-    
 
 
 
@@ -135,7 +132,7 @@ this.dy= y;
 ;
     
 
-    var item: CustomItemInterface
+    var item: ABCustomItem
 ;
     
 
@@ -146,7 +143,7 @@ this.dy= y;
     var index: number = 0;
 index < size; index++)
         {
-item= this.get(index) as CustomItemInterface;
+item= this.get(index);
     
 totalWidth += item.getMinimumWidth() +border;
     
@@ -292,7 +289,7 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
 ;
     
 
-    var item: CustomItemInterface
+    var item: ABCustomItem
 ;
     
 
@@ -303,7 +300,7 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
     var index: number = 0;
 index < size; index++)
         {
-item= this.get(index) as CustomItemInterface;
+item= this.get(index);
     
 
     var diffX: number = 0;
@@ -409,7 +406,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT, e);
 }
 
 
-    getDiffX(item: CustomItemInterface): number{
+    getDiffX(item: ABCustomItem): number{
 var item = item
 
 

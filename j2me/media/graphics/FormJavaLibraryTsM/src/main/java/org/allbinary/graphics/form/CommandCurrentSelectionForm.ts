@@ -60,9 +60,6 @@ import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/Co
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
-import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
-
-    
 
 
 
@@ -298,7 +295,7 @@ super.set(itemNum, item);
 
                 //@Throws(Exception.constructor)
             
-    public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
+    public paintItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
     //var graphics = graphics
     //var index = index
     //var item = item
@@ -317,7 +314,7 @@ this.selectedAnimationArray[index]!.paintXY(graphics, x, y);
 
                 //@Throws(Exception.constructor)
             
-    public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
+    public paintUnselectedItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
     //var graphics = graphics
     //var index = index
     //var item = item

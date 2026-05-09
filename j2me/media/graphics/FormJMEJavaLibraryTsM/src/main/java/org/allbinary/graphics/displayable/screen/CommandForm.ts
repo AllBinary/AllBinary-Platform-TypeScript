@@ -115,7 +115,7 @@ this.commandStack= new Stack<any>();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
 }
 
@@ -134,7 +134,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "open");
 
 
     public close(){
-this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.CLOSE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CLOSE);
     
 }
 

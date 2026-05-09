@@ -22,7 +22,7 @@
 
 
         
-import { TextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js';
+import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
 
     
 
@@ -47,7 +47,7 @@ import { TextFieldItem } from '../../../../../../org/allbinary/graphics/form/ite
 
 export class UsernameValidator extends TextFieldItemValidator {
         
-public constructor (textFieldItem: TextFieldItem, min: number, max: number, allowOnEmpty: boolean){
+public constructor (textFieldItem: ABTextFieldItem, min: number, max: number, allowOnEmpty: boolean){
             super(textFieldItem, min, max, allowOnEmpty);
                     var textFieldItem = textFieldItem
 var min = min

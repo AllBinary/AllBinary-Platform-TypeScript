@@ -46,9 +46,9 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextItem } from './TextItem.js';
+        import { ABTextItem } from './ABTextItem.js';
 
-export class CommandTextItem extends TextItem {
+export class CommandTextItem extends ABTextItem {
         
 
     private readonly command: Command

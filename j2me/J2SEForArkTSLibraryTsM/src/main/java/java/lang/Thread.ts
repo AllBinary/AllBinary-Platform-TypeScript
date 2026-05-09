@@ -1,14 +1,15 @@
+import { Runnable } from "./Runnable";
+
 /*actual*/ export class Thread
             extends Object
 {
 
     public static NORM_PRIORITY: number = 5; //5 = Thread.NORM_PRIORITY
 
-    public constructor(Runnable task) {
-        throw new Error('Method not implemented.');
-    }
-
-    public constructor(Runnable task, String name) {
+    public constructor(task: Runnable);
+    public constructor(task: Runnable, name: string);
+    public constructor(task: Runnable, name?: string) {
+        super();
         throw new Error('Method not implemented.');
     }
 

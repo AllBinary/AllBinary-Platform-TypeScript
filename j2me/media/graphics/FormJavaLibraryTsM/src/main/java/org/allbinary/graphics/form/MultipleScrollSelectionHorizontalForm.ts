@@ -31,9 +31,6 @@ import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
-import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
-
-    
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
@@ -161,7 +158,7 @@ graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight());
 graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
     
 
-    var item: CustomItemInterface
+    var item: ABCustomItem
 ;
     
 
@@ -172,7 +169,7 @@ graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
     var index: number = start;
 index < size; index++)
         {
-item= this.get(index) as CustomItemInterface;
+item= this.get(index);
     
 
                         if(dx >= this.rectangle.getMaxX())

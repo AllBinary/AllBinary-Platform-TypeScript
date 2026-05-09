@@ -265,7 +265,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
                 //@Throws(Exception.constructor)
             
     left(){
-this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.LEFT);
+this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInputKey(Canvas.LEFT);
     
 }
 
@@ -273,7 +273,7 @@ this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canv
                 //@Throws(Exception.constructor)
             
     right(){
-this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInput(Canvas.RIGHT);
+this.rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!.processInputKey(Canvas.RIGHT);
     
 }
 

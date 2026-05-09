@@ -199,7 +199,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 this.logUtil!.putF(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
-recordAsBytes= tsUtil!.getRecord(recordStore, id);
+recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 
                         if(recordAsBytes != 

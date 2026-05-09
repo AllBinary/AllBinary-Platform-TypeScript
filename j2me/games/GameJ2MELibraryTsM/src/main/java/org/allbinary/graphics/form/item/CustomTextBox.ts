@@ -81,12 +81,12 @@ import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextFieldItem } from './TextFieldItem.js';
+        import { ABTextFieldItem } from './ABTextFieldItem.js';
 
 export class CustomTextBox extends GameCommandCanvas {
         
 
-    private readonly textFieldItem: TextFieldItem
+    private readonly textFieldItem: ABTextFieldItem
 public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, label, backgroundBasicColor, foregroundBasicColor);
                         //var cmdListener = cmdListener
@@ -106,7 +106,7 @@ public constructor (cmdListener: CommandListener, label: string, text: string, m
 ;
     
 
-    var textFieldItem: TextFieldItem = new TextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);
+    var textFieldItem: ABTextFieldItem = new ABTextFieldItem(this, new TextItemVisitor(), stringUtil!.EMPTY_STRING, stringUtil!.EMPTY_STRING, maxSize, 0, stringUtil!.EMPTY_STRING, font, backgroundBasicColor, foregroundBasicColor);
 ;
     
 textFieldItem!.setString(text);
@@ -233,12 +233,12 @@ super.paint(graphics);
     //var graphics = graphics
     //var x = x
     //var y = y
-this.textFieldItem!.paint(graphics, x, y);
+this.textFieldItem!.paintXY(graphics, x, y);
     
 }
 
 
-    public getTextFieldItem(): TextFieldItem{
+    public getTextFieldItem(): ABTextFieldItem{
 
 
 

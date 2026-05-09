@@ -27,11 +27,11 @@ import { OutputStream } from './OutputStream.js';
     }
   }
 
-  write(b: number): void {
-    this.ensureCapacity(this.count + 1);
-    this.buf[this.count] = b;
-    this.count += 1;
-  }
+//  write(b: number): void {
+//    this.ensureCapacity(this.count + 1);
+//    this.buf[this.count] = b;
+//    this.count += 1;
+//  }
 
   writeBytes(b: Uint8Array, off: number = 0, len: number = b.length): void {
     if (off < 0 || len < 0 || off + len > b.length) {

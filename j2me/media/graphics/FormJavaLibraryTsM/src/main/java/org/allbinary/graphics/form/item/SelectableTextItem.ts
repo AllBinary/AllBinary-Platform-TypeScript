@@ -46,10 +46,10 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { TextItem } from './TextItem.js';
+        import { ABTextItem } from './ABTextItem.js';
 import { ABStringComponent } from './ABStringComponent.js';
 
-export class SelectableTextItem extends TextItem {
+export class SelectableTextItem extends ABTextItem {
         
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, layout, altText, backgroundBasicColor, foregroundBasicColor);
@@ -75,7 +75,7 @@ var foregroundBasicColor = foregroundBasicColor
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

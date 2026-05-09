@@ -50,9 +50,6 @@ import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/Basi
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
 
     
-import { CustomItemInterface } from '../../../../org/allbinary/graphics/form/item/CustomItemInterface.js';
-
-    
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
@@ -202,7 +199,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
     public getSelectedItem(point: GPoint): ABCustomItem{
     //var point = point
 
-    var index: number = this.getSelectedIndex(point)!;
+    var index: number = this.getSelectedIndexForPoint(point)!;
 ;
     
 
@@ -248,7 +245,7 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 index < size; index++)
         {
 
-    var nextItem: CustomItemInterface = this.get(index) as CustomItemInterface;
+    var nextItem: ABCustomItem = this.get(index) as ABCustomItem;
 ;
     
 
@@ -287,7 +284,7 @@ index < size; index++)
 
                 //@Throws(Exception.constructor)
             
-    public getSelectedIndex(point: GPoint): number{
+    public getSelectedIndexForPoint(point: GPoint): number{
     //var point = point
 
     var start: number = this.getStartIndex()!;
@@ -327,10 +324,10 @@ stringBuffer!.append(commonLabels!.TOTAL_LABEL);
     
 stringBuffer!.appendint(size);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
+this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELECTED_INDEX);
     
 
-    var item: CustomItemInterface
+    var item: ABCustomItem
 ;
     
 
@@ -349,7 +346,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     var index: number = start;
 index < size; index++)
         {
-item= this.get(index) as CustomItemInterface;
+item= this.get(index);
     
 width= item.getMinimumWidth();
     
@@ -402,7 +399,7 @@ stringBuffer!.append(commonLabels!.INDEX_LABEL);
     
 stringBuffer!.appendint(index);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
+this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELECTED_INDEX);
     
 
 
@@ -473,7 +470,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
 
                 //@Throws(Exception.constructor)
             
-    public processInput(gameKeyCode: number): number{
+    public processInputKey(gameKeyCode: number): number{
     //var gameKeyCode = gameKeyCode
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
@@ -595,11 +592,11 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     public isInForm(point: GPoint): boolean{
     //var point = point
 
-                        if(this.rectangleCollisionUtil!.isInside(x, y -this.halfBorder, this.rectangle.getMaxX() +this.border, this.rectangle.getMaxY() +this.border, point.getX(), point.getY()))
+                        if(this.rectangleCollisionUtil!.isInside(this.x, this.y -this.halfBorder, this.rectangle.getMaxX() +this.border, this.rectangle.getMaxY() +this.border, point.getX(), point.getY()))
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(StringUtil.getInstance()!.toString(point))!.append(INSIDE_FORM)!.toString(), this, IS_IN_FORM);
+                            append(StringUtil.getInstance()!.toString(point))!.append(ScrollSelectionForm.INSIDE_FORM)!.toString(), this, ScrollSelectionForm.IS_IN_FORM);
     
 
 
@@ -621,7 +618,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
 
                 //@Throws(Exception.constructor)
             
-    public paintItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
+    public paintItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
     //var graphics = graphics
     //var index = index
     //var item = item
@@ -639,7 +636,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, GET_SELECTED_INDEX);
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
 ;
     
-item.paint(graphics, x, y);
+item.paintXY(graphics, x, y);
     
 graphics.setColor(this.getButtonBasicColor()!.intValue());
     
@@ -702,7 +699,7 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
 
                 //@Throws(Exception.constructor)
             
-    public paintUnselectedItem(graphics: Graphics, index: number, item: CustomItemInterface, x: number, y: number): number{
+    public paintUnselectedItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
     //var graphics = graphics
     //var index = index
     //var item = item
@@ -775,7 +772,7 @@ item.paintUnselected(graphics, x, y);
 }
 
 
-    getDiffX(item: CustomItemInterface): number{
+    getDiffX(item: ABCustomItem): number{
     //var item = item
 
 
@@ -791,7 +788,7 @@ item.paintUnselected(graphics, x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return x;
+                        return this.x;
     
 }
 
@@ -801,7 +798,7 @@ item.paintUnselected(graphics, x, y);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return y;
+                        return this.y;
     
 }
 

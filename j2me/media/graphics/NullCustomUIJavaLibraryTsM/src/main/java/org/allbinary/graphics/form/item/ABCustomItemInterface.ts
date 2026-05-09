@@ -30,7 +30,7 @@ import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export interface CustomItemInterface {
+export interface ABCustomItemInterface {
         
 
     getMinimumWidth(): number
@@ -39,7 +39,7 @@ export interface CustomItemInterface {
 
     getLabel(): string
 
-    paint(graphics: Graphics, x: number, y: number)
+    paintXY(graphics: Graphics, x: number, y: number)
 
     paintUnselected(graphics: Graphics, x: number, y: number)
 

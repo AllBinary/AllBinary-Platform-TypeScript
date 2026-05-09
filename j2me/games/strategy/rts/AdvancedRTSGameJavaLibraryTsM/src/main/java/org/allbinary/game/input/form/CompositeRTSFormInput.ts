@@ -158,7 +158,7 @@ var point = point
 ;
     
 
-    var index: number = scrollSelectionForm!.getSelectedIndex(point)!;
+    var index: number = scrollSelectionForm!.getSelectedIndexForPoint(point)!;
 ;
     
 

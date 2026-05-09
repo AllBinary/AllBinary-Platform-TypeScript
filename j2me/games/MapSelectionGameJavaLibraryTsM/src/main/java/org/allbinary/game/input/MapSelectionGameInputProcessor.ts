@@ -227,7 +227,7 @@ index < size; index++)
                                     {
                                     SecondaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
-this.preGameSelectorPaintable!.getPreGameSelectionForm()!.processInput(key);
+this.preGameSelectorPaintable!.getPreGameSelectionForm()!.processInputKey(key);
     
 break;
 

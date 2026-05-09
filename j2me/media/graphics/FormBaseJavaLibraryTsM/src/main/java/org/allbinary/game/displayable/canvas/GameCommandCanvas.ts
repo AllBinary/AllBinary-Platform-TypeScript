@@ -209,9 +209,9 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
 
     readonly backgroundBasicColor: BasicColor
 
-    private readonly inputToGameKeyMapping: InputToGameKeyMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()!;
+    readonly inputToGameKeyMapping: InputToGameKeyMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()!;
 
-    private readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
+    readonly gameKeyFactory: GameKeyFactory = GameKeyFactory.getInstance()!;
 
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
@@ -292,7 +292,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     //var displayChangeEvent = displayChangeEvent
 
         try {
-            this.logUtil!.putF(commonStrings!.START, this, canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
     
 
     var rectangle: Rectangle = this.createRectangle(this.menuForm!.size())!;
@@ -306,7 +306,7 @@ this.update();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
     
 }
 
@@ -402,7 +402,7 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
     public open(){
-this.logUtil!.putF(commonStrings!.START, this, "open");
+this.logUtil!.putF(this.commonStrings!.START, this, "open");
     
 BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor());
     
@@ -414,7 +414,7 @@ DisplayChangeEventHandler.getInstance()!.addListener(this);
 
 
     public close(){
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CLOSE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CLOSE);
     
 BasicMotionGesturesHandler.getInstance()!.removeListener(this.getMenuInputProcessor());
     
@@ -468,7 +468,7 @@ this.keyRepeatedByDevice(keyCode, 0);
     //var keyCode = keyCode
     //var deviceId = deviceId
 this.logUtil!.putF(new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
+                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 this.addGameKeyEvent(keyCode, 0, false);
     

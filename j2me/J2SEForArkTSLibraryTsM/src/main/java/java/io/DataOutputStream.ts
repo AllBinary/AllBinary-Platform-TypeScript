@@ -1,9 +1,13 @@
-import { Object } from '../../java/lang/Object.js';
+import { OutputStream } from './OutputStream.js';
 import type { Closeable } from './Closeable.js';
 
 /*actual*/ export class DataOutputStream
-            extends Object implements Closeable
+            extends OutputStream implements Closeable
 {
+  constructor(outputStream: OutputStream) {
+    super();
+  }
+
   write(data: number[]) {
     throw new Error('Method not implemented.');
   }

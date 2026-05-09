@@ -33,10 +33,10 @@ import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicCol
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomCustomItem } from './CustomCustomItem.js';
-import { CustomItemInterface } from './CustomItemInterface.js';
+import { ABCustomItemInterface } from './ABCustomItemInterface.js';
 import { ABStringComponent } from './ABStringComponent.js';
 
-export class TextItem extends CustomCustomItem implements CustomItemInterface {
+export class ABTextItem extends CustomCustomItem implements ABCustomItemInterface {
         
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, backgroundBasicColor, foregroundBasicColor);

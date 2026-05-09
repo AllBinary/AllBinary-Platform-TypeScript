@@ -154,7 +154,7 @@ this.form= form;
                                     {
                                     PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
-this.form.processInput(key);
+this.form.processInputKey(key);
     
 
 
@@ -406,7 +406,7 @@ motionGestureEventList!.clear();
                         
                                     {
                                     
-    var index: number = this.form.getSelectedIndex(point)!;
+    var index: number = this.form.getSelectedIndexForPoint(point)!;
 ;
     
 

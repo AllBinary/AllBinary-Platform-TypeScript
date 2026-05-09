@@ -62,7 +62,14 @@ var owner = owner
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
+var graphics = graphics
+var x = x
+var y = y
+}
+
+
+    public paintUnselected(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y

@@ -40,7 +40,7 @@ import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/Scr
 import { ABStringComponent } from '../../../../org/allbinary/graphics/form/item/ABStringComponent.js';
 
     
-import { TextItem } from '../../../../org/allbinary/graphics/form/item/TextItem.js';
+import { ABTextItem } from '../../../../org/allbinary/graphics/form/item/ABTextItem.js';
 
     
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
@@ -128,7 +128,7 @@ scrollSelectionForm!.setButtonBasicColor(basicColor);
 index >= 0; index--)
         {
 
-    var item: TextItem = scrollSelectionForm!.get(index) as TextItem;
+    var item: ABTextItem = scrollSelectionForm!.get(index) as ABTextItem;
 ;
     
 

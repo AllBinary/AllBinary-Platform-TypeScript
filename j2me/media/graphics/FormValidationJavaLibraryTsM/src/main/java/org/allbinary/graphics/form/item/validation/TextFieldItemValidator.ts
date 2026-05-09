@@ -22,7 +22,7 @@
 
 
         
-import { TextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js';
+import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
 
     
 import { ValidatorBase } from '../../../../../../org/allbinary/logic/control/validate/ValidatorBase.js';
@@ -62,14 +62,14 @@ import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArray
 export class TextFieldItemValidator extends ValidatorBase {
         
 
-    private readonly textFieldItem: TextFieldItem
+    private readonly textFieldItem: ABTextFieldItem
 
     private min: number
 
     private max: number
 
     private allowOnEmpty: boolean
-public constructor (textFieldItem: TextFieldItem, min: number, max: number, allowOnEmpty: boolean){
+public constructor (textFieldItem: ABTextFieldItem, min: number, max: number, allowOnEmpty: boolean){
 
             super();
         var textFieldItem = textFieldItem

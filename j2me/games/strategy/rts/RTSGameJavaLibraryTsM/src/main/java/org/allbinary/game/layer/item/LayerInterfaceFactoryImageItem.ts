@@ -30,7 +30,7 @@ import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 
     
-import { CustomImageItem } from '../../../../../org/allbinary/graphics/form/item/CustomImageItem.js';
+import { ABCustomImageItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
 
     
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
@@ -61,7 +61,7 @@ import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/lay
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
-export class LayerInterfaceFactoryImageItem extends CustomImageItem {
+export class LayerInterfaceFactoryImageItem extends ABCustomImageItem {
         
 
     private readonly animationArray: Animation[]
@@ -97,11 +97,11 @@ this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface;
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y);
+super.paintXY(graphics, x, y);
     
 
 

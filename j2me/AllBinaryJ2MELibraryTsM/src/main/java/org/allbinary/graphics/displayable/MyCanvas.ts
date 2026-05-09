@@ -107,7 +107,9 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
 
     private readonly commandStack: Stack<any>
 
-    private isPaused: boolean= false
+    private commandListener: CommandListener = NullCommandListener.NULL_COMMAND_LISTENER;
+
+    private paused: boolean= false
 public constructor (name: string, childNameList: BasicArrayList){
 
             super();
@@ -213,13 +215,11 @@ super.removeCommand(this.commandStack!.pop() as Command);
 }
 
 
-    private listener: CommandListener = NullCommandListener.NULL_COMMAND_LISTENER;
-
     public setCommandListener(l: CommandListener){
 var l = l
 super.setCommandListener(l);
     
-this.listener= l;
+this.commandListener= l;
     
 }
 
@@ -229,7 +229,7 @@ this.listener= l;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.listener;
+                        return this.commandListener;
     
 }
 
@@ -240,7 +240,7 @@ this.listener= l;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.isPaused;
+                        return this.paused;
     
 }
 
@@ -314,7 +314,7 @@ this.logUtil!.putF("Destroyed MyCanvas", this, "destroy");
 
     setPaused(isPaused: boolean){
 var isPaused = isPaused
-this.isPaused= isPaused;
+this.paused= isPaused;
     
 }
 

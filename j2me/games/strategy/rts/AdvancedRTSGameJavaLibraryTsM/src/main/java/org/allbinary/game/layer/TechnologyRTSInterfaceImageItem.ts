@@ -33,7 +33,7 @@ import { Image } from '../../../../javax/microedition/lcdui/Image.js';
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
-import { CustomImageItem } from '../../../../org/allbinary/graphics/form/item/CustomImageItem.js';
+import { ABCustomImageItem } from '../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
 
     
 import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
@@ -68,7 +68,7 @@ import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/Primitiv
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSInterface } from './RTSInterface.js';
 
-export class TechnologyRTSInterfaceImageItem extends CustomImageItem {
+export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem {
         
 
     private readonly myFont: MyFont = MyFont.getInstance()!;
@@ -168,11 +168,11 @@ this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.g
 }
 
 
-    public paint(graphics: Graphics, x: number, y: number){
+    public paintXY(graphics: Graphics, x: number, y: number){
 var graphics = graphics
 var x = x
 var y = y
-super.paint(graphics, x, y);
+super.paintXY(graphics, x, y);
     
 
     var xa: number = x +2;

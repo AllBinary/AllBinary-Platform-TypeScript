@@ -29,7 +29,7 @@
 import { Vector } from '../../../../../../java/util/Vector.js';
 
     
-import { TextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/TextFieldItem.js';
+import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
 
     
 import { ValidatorBase } from '../../../../../../org/allbinary/logic/control/validate/ValidatorBase.js';
@@ -72,14 +72,14 @@ import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArray
 export class NumberTextFieldItemValidator extends ValidatorBase {
         
 
-    private readonly textFieldItem: TextFieldItem
+    private readonly textFieldItem: ABTextFieldItem
 
     private readonly min: number
 
     private readonly max: number
 
     private readonly maxChars: number
-public constructor (textFieldItem: TextFieldItem, maxChars: number, min: number, max: number){
+public constructor (textFieldItem: ABTextFieldItem, maxChars: number, min: number, max: number){
 
             super();
         var textFieldItem = textFieldItem
