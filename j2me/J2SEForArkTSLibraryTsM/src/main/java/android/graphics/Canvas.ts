@@ -2,10 +2,29 @@
 //With Canvas(this.context) Component
 import { Bitmap } from './Bitmap';
 import { Paint } from './Paint';
+import { Rect } from './Rect';
 import { RectF } from './RectF';
 
 /*actual*/ export class Canvas
 {
+  restore() {
+    throw new Error('Method not implemented.');
+  }
+  scale(arg0: number, arg1: number) {
+    throw new Error('Method not implemented.');
+  }
+  rotate(arg0: number) {
+    throw new Error('Method not implemented.');
+  }
+
+  drawBitmapRect(img: Bitmap, rect: Rect, dstRect: Rect, paint: Paint) {
+    throw new Error('Method not implemented.');
+  }
+
+   drawBitmap(arg0: Bitmap, newx: number, newy: number, paint: Paint) {
+     throw new Error('Method not implemented.');
+   }
+
     save() {
         throw new Error('Method not implemented.');
     }

@@ -2,6 +2,12 @@
 
 /*actual*/ export class Bitmap
 {
+  getHeight(): number {
+    throw new Error('Method not implemented.');
+  }
+  getWidth(): number {
+    throw new Error('Method not implemented.');
+  }
    public isMutable(): boolean {
      throw new Error("No Impl");
      // return false;

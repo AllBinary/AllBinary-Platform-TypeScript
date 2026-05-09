@@ -29,6 +29,10 @@
     }
   }
 
+  set(x_src: number, y_src: number, arg2: number, arg3: number) {
+    throw new Error('Method not implemented.');
+  }
+
   height(): number {
     throw new Error('Method not implemented.');
   }
