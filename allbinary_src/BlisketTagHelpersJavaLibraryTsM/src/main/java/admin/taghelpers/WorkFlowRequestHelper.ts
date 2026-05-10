@@ -136,7 +136,7 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -158,7 +158,7 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e2);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "delete()", e2);
     
 
                                     }
@@ -210,7 +210,7 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "add()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "add()", e);
     
 
                                     }
@@ -260,7 +260,7 @@ WorkFlowEntityFactory.getInstance()!.create2()!.delete(this.workFlowInterface!.g
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

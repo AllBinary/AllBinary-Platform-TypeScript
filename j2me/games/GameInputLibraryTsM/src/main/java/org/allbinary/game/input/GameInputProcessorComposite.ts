@@ -92,7 +92,7 @@ this.gameInputProcessorInterface!.onInput(list);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
 }
 

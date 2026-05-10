@@ -124,7 +124,7 @@ this.addForRemoval(gameKeyEvent);
     public onDownKey(gameKeyEvent: Integer){
     //var gameKeyEvent = gameKeyEvent
 PreLogUtil.put(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, gameInputStrings!.ON_DOWN_GAME_KEY);
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, this.gameInputStrings!.ON_DOWN_GAME_KEY);
     
 }
 

@@ -106,7 +106,7 @@ var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logUtil!.putF(this.MESSAGE, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.MESSAGE, this, this.commonStrings!.CONSTRUCTOR);
     
 this.setGenericProfileActions(genericProfileActions);
     
@@ -124,7 +124,7 @@ this.setGenericProfileActions(genericProfileActions);
                         if(cacheInterface!.keySet()!.size() > 0)
                         
                                     {
-                                    this.logUtil!.putF(this.IMAGE_AVAILABLE_SO_PROCESSING, this, PROCESS_DATA_WORKER_RESULTS);
+                                    this.logUtil!.putF(this.IMAGE_AVAILABLE_SO_PROCESSING, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
     var anyType: any = cacheInterface!.keySet()!.toTypedArray()[0]!;
@@ -179,7 +179,7 @@ cacheInterface!.get(anyType);
                                     }
                                 
                         else {
-                            this.logUtil!.putF(this.IMAGE_NOT_AVAILABLE, this, PROCESS_DATA_WORKER_RESULTS);
+                            this.logUtil!.putF(this.IMAGE_NOT_AVAILABLE, this, this.PROCESS_DATA_WORKER_RESULTS);
     
 
                         }
@@ -190,7 +190,7 @@ cacheInterface!.get(anyType);
                 //@Throws(Exception.constructor)
             
     public process(){
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.PROCESS);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 this.startDataWorkers();
     

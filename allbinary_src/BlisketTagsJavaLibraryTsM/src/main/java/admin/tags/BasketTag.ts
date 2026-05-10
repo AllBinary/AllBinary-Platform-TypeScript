@@ -150,7 +150,7 @@ this.storeName= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "isBasketEmpty()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "isBasketEmpty()", e);
     
 
                                     }
@@ -214,7 +214,7 @@ this.storeName= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "addItemToBasket()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "addItemToBasket()", e);
     
 
                                     }
@@ -278,7 +278,7 @@ this.storeName= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "removeItemFromBasket()", e);
     
 
                                     }
@@ -342,7 +342,7 @@ this.storeName= value;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "adjustBasket()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "adjustBasket()", e);
     
 
                                     }

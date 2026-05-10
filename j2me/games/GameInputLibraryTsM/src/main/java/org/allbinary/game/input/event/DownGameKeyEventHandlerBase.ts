@@ -183,7 +183,7 @@ downGameKeyEventListenerInterface!.onDownGameKeyEvent(eventObject as GameKeyEven
     
 stringBuffer!.append(super.toString());
     
-stringBuffer!.append(TOTAL_LISTENERS);
+stringBuffer!.append(DownGameKeyEventHandlerBase.TOTAL_LISTENERS);
     
 stringBuffer!.appendint(this.list.size());
     
@@ -206,7 +206,7 @@ stringBuffer!.appendint(this.list.size());
         try {
             eventListenerInterface= this.list.get(index) as EventListenerInterface;
     
-stringBuffer!.append(LISTENER_LABEL);
+stringBuffer!.append(DownGameKeyEventHandlerBase.LISTENER_LABEL);
     
 stringBuffer!.append(eventListenerInterface!.toString());
     
@@ -214,7 +214,7 @@ stringBuffer!.append(eventListenerInterface!.toString());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.TOSTRING, e);
     
 }
 

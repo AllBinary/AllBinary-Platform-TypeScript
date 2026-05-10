@@ -180,7 +180,7 @@ graphics.drawString(this.TOTAL, this.textX, y, 0);
 graphics.drawChars(this.totalCharArray, 0, this.getPrimitiveLongUtil()!.getCurrentTotalDigits(), this.textX +this.totalWidth, y, 0);
     
 
-    var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
+    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);
 ;
     
 graphics.drawString(this.rootNamesString, this.textX, textLine2Y, 0);

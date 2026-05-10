@@ -125,7 +125,7 @@ var document = document
                         if(StringValidationUtil.getInstance()!.isEmpty(pageName))
                         
                                     {
-                                    pageName= NAME;
+                                    pageName= GenericBodyCustomizerView.NAME;
     
 
                                     }
@@ -169,7 +169,7 @@ var document = document
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }

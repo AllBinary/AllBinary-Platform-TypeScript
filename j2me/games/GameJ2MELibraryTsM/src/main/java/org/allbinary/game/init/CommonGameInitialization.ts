@@ -125,7 +125,7 @@ progressCanvas!.addNormalPortion(50, "Angles");
     
 this.initGame();
     
-this.resourceInitializationArray[GAME_RESOURCES]!.init();
+this.resourceInitializationArray[this.GAME_RESOURCES]!.init();
     
 
                                     }

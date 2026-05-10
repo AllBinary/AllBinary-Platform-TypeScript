@@ -99,7 +99,7 @@ this.setName(this.getRtsLayer()!.getName());
     
 this.weaponProperties= partInterface!.getWeaponProperties()!.toStringArray();
     
-this.costY1= (y +((this.weaponProperties!.length +1) *charHeight));
+this.costY1= (this.y +((this.weaponProperties!.length +1) *charHeight));
     
 
                         if(!AndroidUtil.isAndroid())
@@ -111,7 +111,7 @@ this.costY1= (y +((this.weaponProperties!.length +1) *charHeight));
                                     }
                                 
                         else {
-                            this.costY= (y +((this.weaponProperties!.length +2) *charHeight));
+                            this.costY= (this.y +((this.weaponProperties!.length +2) *charHeight));
     
 
                         }

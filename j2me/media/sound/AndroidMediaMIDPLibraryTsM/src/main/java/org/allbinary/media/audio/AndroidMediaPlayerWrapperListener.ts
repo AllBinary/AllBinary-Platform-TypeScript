@@ -80,7 +80,7 @@ public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
             //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
 
         try {
-            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
     
@@ -100,7 +100,7 @@ mediaPlayer!.setOnErrorListener(mOnErrorListener);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
 }
 
@@ -205,6 +205,10 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
     
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+;
+    
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_PREPARE);
     
 AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(PlayerListener.DEVICE_AVAILABLE);
@@ -248,6 +252,10 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
     //var mp = mp
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
+;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
 logUtil!.putF(commonStrings!.START, this, AndroidMediaPlayerWrapperListener.ON_COMPLETE);

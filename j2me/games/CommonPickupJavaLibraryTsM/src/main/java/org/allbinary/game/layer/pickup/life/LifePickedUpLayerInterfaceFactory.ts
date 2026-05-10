@@ -78,7 +78,7 @@ export class LifePickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFac
                 //@Throws(Exception.constructor)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= new LifePickedUpLayerInterfaceFactory();
+LifePickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface= new LifePickedUpLayerInterfaceFactory();
     
 }
 

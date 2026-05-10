@@ -709,24 +709,24 @@ var treeNode = treeNode
                 //@Throws(Exception.constructor)
             
     public toDocument(): Document{
-document= DomHelper.getInstance()!.createDocument();
+WorkAreaJPanel.document= DomHelper.getInstance()!.createDocument();
     
 
-    var workAreaNode: Node = document.createElement(WorkAreaDom.WORKAREA)!;
+    var workAreaNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.WORKAREA)!;
 ;
     
 
-    var nameNode: Node = document.createElement(WorkAreaDom.NAME)!;
+    var nameNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.NAME)!;
 ;
     
 
-    var nameTextNode: Node = document.createTextNode(this.name)!;
+    var nameTextNode: Node = WorkAreaJPanel.document.createTextNode(this.name)!;
 ;
     
 nameNode!.appendChild(nameTextNode);
     
 
-    var framesNode: Node = document.createElement(WorkAreaDom.FRAMES)!;
+    var framesNode: Node = WorkAreaJPanel.document.createElement(WorkAreaDom.FRAMES)!;
 ;
     
 
@@ -753,7 +753,7 @@ workAreaNode!.appendChild(nameNode);
     
 workAreaNode!.appendChild(framesNode);
     
-document.appendChild(workAreaNode);
+WorkAreaJPanel.document.appendChild(workAreaNode);
     
 
 

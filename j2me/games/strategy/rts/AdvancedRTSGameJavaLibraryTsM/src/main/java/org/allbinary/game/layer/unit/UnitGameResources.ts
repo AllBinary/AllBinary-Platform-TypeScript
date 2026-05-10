@@ -99,7 +99,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(ROOT);
     
-stringBuffer!.append(DESTROY);
+stringBuffer!.append(UnitGameResources.DESTROY);
     
 stringBuffer!.append(string);
     
@@ -109,7 +109,7 @@ this.RESOURCE_DESTROY= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(ICON);
+stringBuffer!.append(UnitGameResources.ICON);
     
 stringBuffer!.append(ROOT);
     
@@ -119,7 +119,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(ROOT);
     
-stringBuffer!.append(ICON);
+stringBuffer!.append(UnitGameResources.ICON);
     
 stringBuffer!.append(string);
     
@@ -131,7 +131,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(ROOT);
     
-stringBuffer!.append(ICON_BUILD);
+stringBuffer!.append(UnitGameResources.ICON_BUILD);
     
 stringBuffer!.append(string);
     

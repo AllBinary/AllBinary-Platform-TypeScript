@@ -84,14 +84,14 @@ var viewPosition = viewPosition
             
     init(){
 
-    var aWidth: number = allBinaryTiledLayer!.getWidth()!;
+    var aWidth: number = this.allBinaryTiledLayer!.getWidth()!;
 ;
     
 
-    var aHeight: number = allBinaryTiledLayer!.getHeight()!;
+    var aHeight: number = this.allBinaryTiledLayer!.getHeight()!;
 ;
     
-this.image= PaintableToImageUtil.getImage(allBinaryTiledLayer, aWidth, aHeight);
+this.image= PaintableToImageUtil.getImage(this.allBinaryTiledLayer, aWidth, aHeight);
     
 }
 
@@ -100,7 +100,7 @@ this.image= PaintableToImageUtil.getImage(allBinaryTiledLayer, aWidth, aHeight);
 
     public paint(graphics: Graphics){
 var graphics = graphics
-graphics.drawImage(this.image, x, y, anchor);
+graphics.drawImage(this.image, x, y, this.anchor);
     
 this.paintDots(graphics);
     

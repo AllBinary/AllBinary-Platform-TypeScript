@@ -517,7 +517,7 @@ this.loadNowList!.remove(lazyImageRotationAnimation);
                         if(this.totalLoaded % 10 == 0)
                         
                                     {
-                                    progressCanvas!.addNormalPortion(1, LOAD_IMAGE_FOR_ANIMATION);
+                                    progressCanvas!.addNormalPortion(1, this.LOAD_IMAGE_FOR_ANIMATION);
     
 
                                     }
@@ -814,15 +814,15 @@ image.setName(key);
                         if(image == NullCanvas.NULL_IMAGE)
                         
                                     {
-                                    volume += width *height;
+                                    this.volume += width *height;
     
 
-                        if(volume > 32000)
+                        if(this.volume > 32000)
                         
                                     {
                                     System.gc();
     
-volume= 0;
+this.volume= 0;
     
 
                                     }
@@ -830,25 +830,25 @@ volume= 0;
 image= this.createImage(caller, width, height);
     
 
-                        if(nextIndex > widths.length -1)
+                        if(this.nextIndex > this.widths.length -1)
                         
                                     {
                                     
                         if(foundIndex ==  -1)
                         
                                     {
-                                    foundIndex= nextIndex;
+                                    foundIndex= this.nextIndex;
     
-widths[nextIndex]= width;
+this.widths[this.nextIndex]= width;
     
-heights[nextIndex]= height;
+this.heights[this.nextIndex]= height;
     
 nextIndex++;
     
 
                                     }
                                 
-listOfList[foundIndex]!.add(image);
+this.listOfList[foundIndex]!.add(image);
     
 
                                     }
@@ -891,16 +891,16 @@ listOfList[foundIndex]!.add(image);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put("Exception: Trying Again After GC", this, commonStrings!.GET, e);
+this.logUtil!.put("Exception: Trying Again After GC", this, this.commonStrings!.GET, e);
     
 this.logUtil!.putF(new StringMaker().
-                            append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, commonStrings!.GET);
+                            append("InputStream: ")!.append(StringUtil.getInstance()!.toString(inputStream))!.toString(), this, this.commonStrings!.GET);
     
 System.gc();
     
 System.gc();
     
-this.logUtil!.putF(Memory.getInfo(), this, commonStrings!.GET);
+this.logUtil!.putF(Memory.getInfo(), this, this.commonStrings!.GET);
     
 Thread.sleep(100);
     
@@ -961,7 +961,7 @@ index < size; index++)
 }
 
 this.logUtil!.putF(new StringMaker().
-                            append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, commonStrings!.RUN);
+                            append("unable to find key: ")!.append(StringUtil.getInstance()!.toString(key))!.toString(), this, this.commonStrings!.RUN);
     
 
 

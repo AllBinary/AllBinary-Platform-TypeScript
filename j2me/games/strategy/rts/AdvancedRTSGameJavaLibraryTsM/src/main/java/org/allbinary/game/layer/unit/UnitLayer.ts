@@ -580,7 +580,7 @@ hashtable.put(Group.ID, this.getGroupInterface());
     
 hashtable.put(Layer.ID, this);
     
-hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManagerP);
+hashtable.put(AllBinaryGameLayerManager.ID, this.allBinaryGameLayerManagerP);
     
 this.setWaypointBehavior(new UnitWaypointBehavior2(this, this.waypointLayerInterfaceFactoryInterface!.getNextInstance(hashtable, x, y, z) as AdvancedRTSGameLayer));
     
@@ -647,7 +647,7 @@ this.sensorGeographicMapCellPositionList!.clear();
 this.sensorGeographicMapCellPositionList!.add(currentGeographicMapCellPosition);
     
 
-    var sensorRange: number = weaponRange *SENSOR_RANGE_MULTIPLIER;
+    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;
 ;
     
 
@@ -937,7 +937,7 @@ layerInterface!.onMovementFound(this.getTrackingEvent());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMovement", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
     
 }
 
@@ -978,12 +978,12 @@ this.weaponRange= weaponProperties!.getRange();
 this.initRangeAnimation= AdjustedCircleAnimation.createW(this.weaponRange, this.weaponRange, this.getWidth(), this.basicColorFactory!.GREEN);
     
 
-    var sensorRange: number = weaponRange *SENSOR_RANGE_MULTIPLIER;
+    var sensorRange: number = this.weaponRange *UnitLayer.SENSOR_RANGE_MULTIPLIER;
 ;
     
 this.initSensorRangeAnimation= AdjustedCircleAnimation.createW(sensorRange, sensorRange, this.getWidth(), this.basicColorFactory!.RED);
     
-this.getUnitWaypointBehavior()!.initRange(weaponRange);
+this.getUnitWaypointBehavior()!.initRange(this.weaponRange);
     
 this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime()));
     
@@ -1042,7 +1042,7 @@ SecondaryPlayerQueueFactory.getInstance()!.add(ExplosionBasicSound.getInstance()
     
 this.shakeListener!.onSmallShakeEvent();
     
-vibration.vibrate(duration, 0, 0);
+this.vibration.vibrate(this.duration, 0, 0);
     
 this.setReadyForExplosion(true);
     
@@ -1748,7 +1748,7 @@ this.fireOrMove();
                         if(this.showMoreCaptionStates && !this.captionAnimationHelper!.isShowing())
                         
                                     {
-                                    this.captionAnimationHelper!.update(MOVE, this.basicColorFactory!.GREEN);
+                                    this.captionAnimationHelper!.update(UnitLayer.MOVE, this.basicColorFactory!.GREEN);
     
 
                                     }
@@ -2006,7 +2006,7 @@ this.damageFloaters!.add(damage);
             
     public setDestroyed(destroyed: boolean){
     //var destroyed = destroyed
-this.logUtil!.putF(commonStrings!.START, this, "setDestroyed");
+this.logUtil!.putF(this.commonStrings!.START, this, "setDestroyed");
     
 super.setDestroyed(destroyed);
     
@@ -2040,7 +2040,7 @@ BuildingEventHandler.getInstance()!.removeListener(this);
                                     {
                                     this.shakeListener!.onSmallShakeEvent();
     
-vibration.vibrate(duration, 0, 0);
+this.vibration.vibrate(this.duration, 0, 0);
     
 
                                     }
@@ -2051,7 +2051,7 @@ vibration.vibrate(duration, 0, 0);
                                     {
                                     this.shakeListener!.onMediumShakeEvent();
     
-vibration.vibrate(duration *2, 0, 0);
+this.vibration.vibrate(this.duration *2, 0, 0);
     
 
                                     }
@@ -2062,7 +2062,7 @@ vibration.vibrate(duration *2, 0, 0);
                                     {
                                     this.shakeListener!.onLargeShakeEvent();
     
-vibration.vibrate(duration *4, 0, 0);
+this.vibration.vibrate(this.duration *4, 0, 0);
     
 
                                     }

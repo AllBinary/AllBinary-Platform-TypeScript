@@ -133,7 +133,7 @@ var graphics = graphics
     var beginWidth: number = (font.stringWidth(this.ABOUT)>>1);
 ;
     
-graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, anchor);
+graphics.drawString(this.ABOUT, halfWidth -beginWidth, 2 *charHeight, this.anchor);
     
 
     var infoSize: number = this.info.length

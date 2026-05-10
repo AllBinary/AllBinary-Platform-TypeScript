@@ -160,7 +160,7 @@ this.getXmlData();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "CategoryRequestHelper()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "CategoryRequestHelper()", e);
     
 
                                     }
@@ -446,7 +446,7 @@ this.categoryLoaderInterface!.insert(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "insert()", e);
     
 
                                     }
@@ -509,7 +509,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -532,7 +532,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e2);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "delete()", e2);
     
 
                                     }
@@ -589,7 +589,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategory()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "viewCategory()", e);
     
 
                                     }
@@ -639,7 +639,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "viewCategories()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "viewCategories()", e);
     
 
                                     }
@@ -689,7 +689,7 @@ this.categoryLoaderInterface!.delete(this.categoryInterface, this.childCategoryI
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

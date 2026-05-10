@@ -62,10 +62,10 @@ capitalEventHandlerArray= new Array(10);
 
 
                         for (
-    var index: number = capitalEventHandlerArray!.length -1;
+    var index: number = CapitalEventHandlerFactory.capitalEventHandlerArray!.length -1;
 index >= 0; index--)
         {
-capitalEventHandlerArray[index]= new CapitalEventHandler();
+CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHandler();
     
 }
 

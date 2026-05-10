@@ -132,7 +132,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateSelect()", e);
     
 
                                     }
@@ -195,7 +195,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "generateSelect()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateSelect()", e);
     
 
                                     }
@@ -258,7 +258,7 @@ this.setTagRequestHelperFactory(new StoreFrontsRequestHelperFactory());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "sendStoreCreatedEmails()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "sendStoreCreatedEmails()", e);
     
 
                                     }

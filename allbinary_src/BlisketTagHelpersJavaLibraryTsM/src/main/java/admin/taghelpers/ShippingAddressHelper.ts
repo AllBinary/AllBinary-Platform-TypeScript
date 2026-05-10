@@ -151,7 +151,7 @@ this.streetAddress= new StreetAddress(this.request);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGS))
                         
                                     {
-                                    this.logUtil!.putF(success, this, commonStrings!.DROP);
+                                    this.logUtil!.putF(success, this, this.commonStrings!.DROP);
     
 
                                     }
@@ -174,7 +174,7 @@ this.streetAddress= new StreetAddress(this.request);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.DROP, e);
     
 
                                     }
@@ -225,7 +225,7 @@ this.streetAddress= new StreetAddress(this.request);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create()", e);
     
 
                                     }
@@ -279,7 +279,7 @@ this.streetAddress= new StreetAddress(this.request);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "restore()", e);
     
 
                                     }
@@ -333,7 +333,7 @@ this.streetAddress= new StreetAddress(this.request);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     
 
                                     }
@@ -385,7 +385,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "insert", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "insert", e);
     
 
                                     }
@@ -437,7 +437,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update", e);
     
 
                                     }
@@ -499,7 +499,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "setToBillingAddress()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setToBillingAddress()", e);
     
 
                                     }
@@ -551,7 +551,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "remove()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "remove()", e);
     
 
                                     }
@@ -603,7 +603,7 @@ ShippingAddressesEntityFactory.getInstance()!.getInstance(this.weblisketSession!
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "set()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "set()", e);
     
 
                                     }

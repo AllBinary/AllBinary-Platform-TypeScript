@@ -170,7 +170,7 @@ index < size; index++)
                                 
 }
 
-this.logUtil!.putF("minX: " +this.minX +" minY: " +this.minY +" maxX: " +this.maxX +" maxY: " +this.maxY, this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF("minX: " +this.minX +" minY: " +this.minY +" maxX: " +this.maxX +" maxY: " +this.maxY, this, this.commonStrings!.GET_INSTANCE);
     
 this.setWidth(this.maxX -this.minX);
     
@@ -202,7 +202,7 @@ this.setHeight(this.maxY -this.minY);
                             append(commonLabels!.WIDTH_LABEL)!.appendint(getWidth())!.append(commonLabels!.HEIGHT_LABEL)!.appendint(getHeight())!.append(" max: ")!.appendint(max)!.append(" middle: ")!.appendint(middle)!.toString()!;
 ;
     
-this.logUtil!.putF(s, this, commonStrings!.GET_INSTANCE);
+this.logUtil!.putF(s, this, this.commonStrings!.GET_INSTANCE);
     
 
     var currentMiddleX: number = this.minX +this.getWidth() /2;
@@ -226,7 +226,7 @@ var hashMap = hashMap
 this.calculate(hashMap);
     
 this.logUtil!.putF(new StringMaker().
-                            append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, commonStrings!.GET_INSTANCE);
+                            append(" dx: ")!.appendint(this.dx)!.append(" dy: ")!.appendint(this.dy)!.toString(), this, this.commonStrings!.GET_INSTANCE);
     
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
@@ -334,7 +334,7 @@ index < size; index++)
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET_INSTANCE, e);
     
 
 

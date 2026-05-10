@@ -129,7 +129,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.IS_VALID);
     
 
                                     }
@@ -289,7 +289,7 @@ stringBuffer!.append(" to the following data:\n");
     
 stringBuffer!.append(documentString);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID);
     
 
                                     }
@@ -315,7 +315,7 @@ CustomizerUtil.getInstance()!.write(specifiedTransformInfoInterface, documentStr
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    this.logUtil!.put("Failed to validate", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate", this, this.commonStrings!.IS_VALID, e);
     
 
                                     }

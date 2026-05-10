@@ -950,7 +950,7 @@ var graphics = graphics
     var yLower: number = this.getHeight() -yAdjust;
 ;
     
-graphics.setColor(gridColor);
+graphics.setColor(CanvasJPanel.gridColor);
     
 
 
@@ -987,7 +987,7 @@ var graphics = graphics
                         if(this.getGrid()!.isChanged)
                         
                                     {
-                                    graphics.setColor(backgroundColor);
+                                    graphics.setColor(CanvasJPanel.backgroundColor);
     
 graphics.fillRect(0, 0, getWidth(), getHeight());
     
@@ -1345,7 +1345,7 @@ index < size; index++)
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRESSED, e);
+this.logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.KEY_PRESSED, e);
     
 }
 

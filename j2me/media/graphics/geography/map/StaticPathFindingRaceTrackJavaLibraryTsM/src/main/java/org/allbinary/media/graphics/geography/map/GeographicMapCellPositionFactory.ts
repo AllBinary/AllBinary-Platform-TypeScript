@@ -91,7 +91,7 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
 ;
     
 
-    var geographicMapCellPositionFactoryCanBeNull: any = hashtable.get(allBinaryTiledLayer!.getDataId());
+    var geographicMapCellPositionFactoryCanBeNull: any = GeographicMapCellPositionFactory.hashtable.get(allBinaryTiledLayer!.getDataId());
 ;
     
 

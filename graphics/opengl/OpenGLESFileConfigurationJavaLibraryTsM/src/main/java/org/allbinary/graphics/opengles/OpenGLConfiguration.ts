@@ -448,7 +448,7 @@ dataOutputStream!.flush();
                         if(!features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
-                                    this.logUtil!.putF("Turning on OpenGL", this, commonStrings!.INIT);
+                                    this.logUtil!.putF("Turning on OpenGL", this, this.commonStrings!.INIT);
     
 features.addDefault(OpenGLFeatureFactory.getInstance()!.OPENGL);
     
@@ -475,7 +475,7 @@ features.addDefault(this.getVersionSelector());
                                     }
                                 
                         else {
-                            this.logUtil!.putF("OpenGL is Off", this, commonStrings!.INIT);
+                            this.logUtil!.putF("OpenGL is Off", this, this.commonStrings!.INIT);
     
 
                         }
@@ -488,7 +488,7 @@ features.addDefault(this.getVersionSelector());
                         if(this.isOpenGL() && !features.isDefault(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
                                     {
-                                    PreLogUtil.put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, commonStrings!.INIT);
+                                    PreLogUtil.put("OpenGL is set but not Enabled since Statics where not cleared (Reboot or Complete exit is Required)", this, this.commonStrings!.INIT);
     
 
                                     }

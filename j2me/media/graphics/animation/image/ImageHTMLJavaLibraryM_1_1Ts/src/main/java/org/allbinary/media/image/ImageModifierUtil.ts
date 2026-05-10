@@ -317,7 +317,7 @@ image3.addCallback(callback);
                                     }
                                 
                         else {
-                            this.logUtil!.putF(resourceCallbackStrings!.NULL +image.isMutable(), this, resourceCallbackStrings!.HANDLE_IMAGE);
+                            this.logUtil!.putF(this.resourceCallbackStrings!.NULL +image.isMutable(), this, this.resourceCallbackStrings!.HANDLE_IMAGE);
     
 
                         }
@@ -348,7 +348,7 @@ imageArray[index]= image2;
                 //: 
 } catch(e) 
             {
-this.logUtil!.putF(commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE);
+this.logUtil!.putF(this.commonStrings!.EXCEPTION_LABEL +resourceCallbackStrings!.DONE, this, resourceCallbackStrings!.HANDLE_IMAGE);
     
 }
 

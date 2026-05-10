@@ -170,7 +170,7 @@ stringBuffer!.append(url);
     
 stringBuffer!.append(this.CREATED);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
     
 
                                     }
@@ -288,7 +288,7 @@ stringBuffer!.append(url);
     
 stringBuffer!.append(this.CREATED);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
     
 
                                     }
@@ -368,9 +368,9 @@ stringBuffer!.append(this.IS);
     
 stringBuffer!.appendint(connectionVector!.length);
     
-this.logUtil!.putF(this.NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, METHOD_ADD);
+this.logUtil!.putF(this.NUMBER_OF_SQL_CONNECTION_VECTORS +this.connectionHashMap!.size, this, this.METHOD_ADD);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_ADD);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_ADD);
     
 
                                     }

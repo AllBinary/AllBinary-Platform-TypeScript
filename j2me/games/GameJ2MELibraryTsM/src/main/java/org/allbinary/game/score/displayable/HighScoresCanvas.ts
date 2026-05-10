@@ -144,7 +144,7 @@ export class HighScoresCanvas extends GameCommandCanvas implements HighScoresRes
 
     private readonly highScoreCommandsFactory: HighScoreCommandsFactory = HighScoreCommandsFactory.getInstance()!;
 
-    private readonly waitPaintable: SimpleTextPaintable = new SimpleTextPaintable(commonStrings!.PLEASE_WAIT_FOR_SERVER, BasicColorFactory.getInstance()!.WHITE);
+    private readonly waitPaintable: SimpleTextPaintable = new SimpleTextPaintable(this.commonStrings!.PLEASE_WAIT_FOR_SERVER, BasicColorFactory.getInstance()!.WHITE);
 
     private readonly highScoresPaintable: HighScoresPaintable
 
@@ -171,7 +171,7 @@ public constructor (commandListener: CommandListener, allBinaryGameLayerManager:
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.highScoresPaintable= paintable;
     
@@ -197,7 +197,7 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
                                     }
                                 
                         else {
-                            this.logUtil!.putF("Show HighScores that are already loaded", this, commonStrings!.CONSTRUCTOR);
+                            this.logUtil!.putF("Show HighScores that are already loaded", this, this.commonStrings!.CONSTRUCTOR);
     
 this.updateCommand(this.currentCommand);
     
@@ -336,7 +336,7 @@ this.hasPainted= true;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
 }
 
@@ -364,13 +364,13 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
                         
                                     {
                                     this.logUtil!.putF(new StringMaker().
-                            append(commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray");
+                            append(this.commonStrings!.START)!.appendint(highScoresArray!.length)!.toString(), this, "setHighScoresArray");
     
 
                                     }
                                 
                         else {
-                            this.logUtil!.putF(commonStrings!.START, this, "setHighScoresArray");
+                            this.logUtil!.putF(this.commonStrings!.START, this, "setHighScoresArray");
     
 
                         }
@@ -385,7 +385,7 @@ this.setPaintable(this.getHighScoresPaintable());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDATE, e);
     
 }
 
@@ -397,7 +397,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
     public updateCommand(command: Command){
 var command = command
 this.logUtil!.putF(new StringMaker().
-                            append(commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, commonStrings!.UPDATE);
+                            append(this.commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, this.commonStrings!.UPDATE);
     
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;

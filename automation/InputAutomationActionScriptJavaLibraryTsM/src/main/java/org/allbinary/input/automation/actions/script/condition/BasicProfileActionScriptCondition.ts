@@ -665,7 +665,7 @@ index < size; index++)
     public process(frame: Long){
 var frame = frame
 this.logUtil!.putF(new StringMaker().
-                            append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, commonStrings!.PROCESS);
+                            append("Start - Processing ")!.appendint(this.getProfileActionProcessorInterfaceVector()!.size())!.append(" inputs")!.toString(), this, this.commonStrings!.PROCESS);
     
 
     var profileActionProcessorInterfaceVector: Vector = this.getProfileActionProcessorInterfaceVector()!;

@@ -88,7 +88,7 @@ this.command= command;
     public run(){
 
         try {
-            this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
     var canvas: MyCanvas = this.commandFormInputProcessor!.getCanvas()!;
@@ -100,13 +100,13 @@ this.command= command;
     
 commandListener!.commandAction(this.command, canvas);
     
-this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

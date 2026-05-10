@@ -268,7 +268,7 @@ var subject = subject
 var mimeBodyParts = mimeBodyParts
 this.properties= new Properties();
     
-this.properties.put(SMTP_HOST, server);
+this.properties.put(Email.SMTP_HOST, server);
     
 
         try {
@@ -289,7 +289,7 @@ this.properties.put(SMTP_HOST, server);
 
                                     }
                                 
-this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
+this.properties.put(Email.SMTP_LOCAL_HOST, "FakeHostName");
     
 
                                     }
@@ -307,7 +307,7 @@ this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
 
                                     }
                                 
-this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
+this.properties.put(Email.SMTP_LOCAL_HOST, "FakeHostName");
     
 }
 
@@ -315,7 +315,7 @@ this.properties.put(SMTP_LOCAL_HOST, "FakeHostName");
                         if(this.isDebug)
                         
                                     {
-                                    this.properties.put(DEBUG, "true");
+                                    this.properties.put(Email.DEBUG, "true");
     
 
                                     }
@@ -434,7 +434,7 @@ this.msg.setContent(mimeMultipart);
     var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-hashMap!.put(EmailData.SERVER, this.properties.get(SMTP_HOST) as string);
+hashMap!.put(EmailData.SERVER, this.properties.get(Email.SMTP_HOST) as string);
     
 
     var addresses: Address[] = this.msg.getFrom()!;
@@ -530,7 +530,7 @@ hashMap!.put(EmailData.BCC, addresses[index]!.toString());
 
                                     }
                                 
-hashMap!.put(EmailData.SUBJECT, msg.getSubject());
+hashMap!.put(EmailData.SUBJECT, this.msg.getSubject());
     
 
     var mimeMultipart: MimeMultipart = msg.getContent() as MimeMultipart;

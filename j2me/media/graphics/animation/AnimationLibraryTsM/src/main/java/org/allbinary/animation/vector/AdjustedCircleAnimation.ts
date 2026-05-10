@@ -130,7 +130,7 @@ this.yAdjustment= yAdjustment;
     var widthPortion: number = (((innerWidth /3) *10) /7);
 ;
     
-this.xAdjustment=  -((width>>1) -widthPortion);
+this.xAdjustment=  -((this.width>>1) -widthPortion);
     
 this.yAdjustment= this.xAdjustment;
     
@@ -138,7 +138,7 @@ this.yAdjustment= this.xAdjustment;
                                     }
                                 
                         else {
-                            this.xAdjustment=  -((width>>1) -innerWidth);
+                            this.xAdjustment=  -((this.width>>1) -innerWidth);
     
 this.yAdjustment= this.xAdjustment;
     

@@ -365,7 +365,7 @@ this.setPort(new WeakCrypt(7).
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADER))
                         
                                     {
-                                    PreLogUtil.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD);
+                                    PreLogUtil.put("Not a File - Failed Loading: " +FILEABPATH.toString(), this, this.commonStrings!.LOAD);
     
 
                                     }
@@ -381,7 +381,7 @@ this.setPort(new WeakCrypt(7).
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.PRELOADERERROR))
                         
                                     {
-                                    PreLogUtil.putOE("Failed Loading: " +FILEABPATH.toString(), this, commonStrings!.LOAD, e);
+                                    PreLogUtil.putOE("Failed Loading: " +FILEABPATH.toString(), this, this.commonStrings!.LOAD, e);
     
 
                                     }

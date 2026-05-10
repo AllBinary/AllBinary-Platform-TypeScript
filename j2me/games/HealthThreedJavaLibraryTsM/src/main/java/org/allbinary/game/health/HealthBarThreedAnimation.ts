@@ -139,7 +139,7 @@ colorBufferList!.set(index, this.basicColor);
 ;
     
 
-    var width: number = x2;
+    var width: number = this.x2;
 ;
     
 

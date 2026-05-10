@@ -160,7 +160,7 @@ this.circularIndexUtil!.previous();
     //var graphics = graphics
     //var x = x
     //var y = y
-this.basicSetColorUtil!.setBasicColorP(graphics, basicColor);
+this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColor);
     
 
         try {
@@ -225,7 +225,7 @@ nextPointY= nextPoint[1]!;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "paintVectors", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "paintVectors", e);
     
 }
 

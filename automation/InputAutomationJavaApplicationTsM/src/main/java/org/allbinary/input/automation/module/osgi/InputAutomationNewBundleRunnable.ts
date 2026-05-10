@@ -205,7 +205,7 @@ bundle= this.install(list.get(index) as URL);
                                 )
                         
                                     {
-                                    bundle.start(MODULES_START_LEVEL);
+                                    bundle.start(InputAutomationNewBundleRunnable.MODULES_START_LEVEL);
     
 
                                     }
@@ -282,7 +282,7 @@ file= jarFileBasicArrayList!.get(index) as File;
                         if(symbolicName != 
                                     null
                                 )
-                        hashMap!.put(symbolicName, new URL(FILE +file.getAbsolutePath()))
+                        hashMap!.put(symbolicName, new URL(InputAutomationNewBundleRunnable.FILE +file.getAbsolutePath()))
 
                         }
                             
@@ -311,7 +311,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getJarModuleFileBasicArrayL
                         if(baseJarPath!.startsWith(InputAutomationNewBundleRunnable.FILE))
                         
                                     {
-                                    baseJarPath= baseJarPath!.substring(FILE.length);
+                                    baseJarPath= baseJarPath!.substring(InputAutomationNewBundleRunnable.FILE.length);
     
 
                                     }
@@ -321,7 +321,7 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getJarModuleFileBasicArrayL
 ;
     
 
-    var path: string = baseJarPath +INPUT_AUTMATION_MODULE_BUNDLE_JAR_PATH;
+    var path: string = baseJarPath +InputAutomationNewBundleRunnable.INPUT_AUTMATION_MODULE_BUNDLE_JAR_PATH;
 ;
     
 this.logUtil!.putF("Path: " +path, this, "getJarModuleFileBasicArrayList");

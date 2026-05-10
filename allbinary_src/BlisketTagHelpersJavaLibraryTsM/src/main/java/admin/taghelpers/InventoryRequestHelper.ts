@@ -151,7 +151,7 @@ InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!.insert(value
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "insert()", e);
     
 
                                     }
@@ -225,7 +225,7 @@ stringBuffer!.append(" from to the Inventory table");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, tagStrings!.DO_START_TAG, e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, tagStrings!.DO_START_TAG, e);
     
 
                                     }
@@ -279,7 +279,7 @@ this.insert();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

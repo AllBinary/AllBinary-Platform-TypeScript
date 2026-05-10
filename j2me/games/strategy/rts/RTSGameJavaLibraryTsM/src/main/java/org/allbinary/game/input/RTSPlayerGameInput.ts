@@ -247,7 +247,7 @@ this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGame
 var displayChangeEvent = displayChangeEvent
 
         try {
-            this.logUtil!.putF(commonStrings!.START, this, "onDisplayChangeEvent");
+            this.logUtil!.putF(this.commonStrings!.START, this, "onDisplayChangeEvent");
     
 this.getRTSLayerInfoPaintable()!.update();
     
@@ -255,7 +255,7 @@ this.getRTSLayerInfoPaintable()!.update();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onDisplayChangeEvent", e);
     
 }
 
@@ -367,7 +367,7 @@ this.removeInputProcessorArray[key]!.processEvent(layerManager, gameKeyEvent);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.PROCESS_INPUT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e);
     
 }
 

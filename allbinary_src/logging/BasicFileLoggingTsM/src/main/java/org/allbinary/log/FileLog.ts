@@ -136,7 +136,7 @@ FileLog.fileOut= new BufferedWriter(new FileWriter(raFile!.getFD()));
                         }
                             
 
-    var canWrite: boolean = logFile!.canWrite()!;
+    var canWrite: boolean = FileLog.logFile!.canWrite()!;
 ;
     
 
@@ -283,7 +283,7 @@ var exception = exception
                                     }
                                 
 
-    var length: number = logFile!.length()!;
+    var length: number = FileLog.logFile!.length()!;
 ;
     
 
@@ -402,7 +402,7 @@ var functionName = functionName
                                     }
                                 
 
-    var length: number = logFile!.length()!;
+    var length: number = FileLog.logFile!.length()!;
 ;
     
 

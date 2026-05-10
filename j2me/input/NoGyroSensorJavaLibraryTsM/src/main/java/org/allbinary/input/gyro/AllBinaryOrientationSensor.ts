@@ -80,7 +80,7 @@ public constructor (){
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 

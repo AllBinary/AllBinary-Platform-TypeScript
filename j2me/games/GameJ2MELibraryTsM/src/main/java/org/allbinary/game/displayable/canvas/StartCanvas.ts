@@ -455,7 +455,7 @@ this.overlayPaintable!.init();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
 }
 
@@ -620,7 +620,7 @@ AllBinaryMediaManager.init(EarlySoundsFactory.getInstance());
 
     public itemStateChanged(item: Item){
 var item = item
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 
@@ -846,7 +846,7 @@ this.setPaused(false);
 
     public isGameOver(): boolean{
 this.logUtil!.putF(new StringMaker().
-                            append(commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
+                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(" since not a game")!.toString(), this, "isGameOver");
     
 
 
@@ -995,7 +995,7 @@ this.updateDemoState();
     private readonly SET_STATE: string = "setState";
 
     updateDemoState(){
-PreLogUtil.put(SmallIntegerSingletonFactory.getInstance()!.createInstance(this.state)!.toString(), this, SET_STATE);
+PreLogUtil.put(SmallIntegerSingletonFactory.getInstance()!.createInstance(this.state)!.toString(), this, this.SET_STATE);
     
 this.getBasicGameDemoPaintable()!.setState(this.state);
     
@@ -1045,7 +1045,7 @@ gameAdState!.processPageAdState();
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -1057,7 +1057,7 @@ var randomValue = randomValue
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -1069,7 +1069,7 @@ var randomLevel = randomLevel
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -1151,7 +1151,7 @@ this.process();
 
 
     public run(){
-this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
         try {
@@ -1225,11 +1225,11 @@ this.end();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
-this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
 }
 
@@ -1259,7 +1259,7 @@ this.end();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, SET_RUNNING, e);
     
 }
 
@@ -1276,7 +1276,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
 ;
     
 this.baseGameStatistics!.add(new StringMaker().
-                            append(BOT_GAME_STATS)!.append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
+                            append(StartCanvas.BOT_GAME_STATS)!.append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 this.baseGameStatistics!.init();
     
@@ -1289,7 +1289,7 @@ this.baseGameStatistics!.init();
 
                                     }
                                 
-this.logUtil!.putF("Demo End", this, commonStrings!.RUN);
+this.logUtil!.putF("Demo End", this, this.commonStrings!.RUN);
     
 this.close();
     

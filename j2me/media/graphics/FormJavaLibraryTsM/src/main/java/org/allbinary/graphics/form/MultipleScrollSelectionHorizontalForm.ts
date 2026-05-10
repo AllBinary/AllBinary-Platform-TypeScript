@@ -129,11 +129,11 @@ public constructor (title: string, items: ABCustomItem[], formPaintableFactory: 
 ;
     
 
-    var dx: number = x;
+    var dx: number = this.x;
 ;
     
 
-    var dy: number = y;
+    var dy: number = this.y;
 ;
     
 
@@ -186,7 +186,7 @@ item= this.get(index);
                             this.logged= true;
     
 PreLogUtil.put(new StringMaker().
-                            append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, canvasStrings!.PAINT);
+                            append("painting beyond maxx: ")!.appendint(this.rectangle.getMaxX())!.toString(), this, this.canvasStrings!.PAINT);
     
 
                         }
@@ -199,7 +199,7 @@ PreLogUtil.put(new StringMaker().
                         
                                     {
                                     
-    var dx2: number = this.paintItem(graphics, index, item, dx, dy) +border;
+    var dx2: number = this.paintItem(graphics, index, item, dx, dy) +this.border;
 ;
     
 this.paintable.paint(graphics, index, dx, dy);
@@ -235,7 +235,7 @@ this.paintable.paint(graphics, index, dx, dy);
                 //: 
 } catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, canvasStrings!.PAINT);
+PreLogUtil.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT);
     
 }
 

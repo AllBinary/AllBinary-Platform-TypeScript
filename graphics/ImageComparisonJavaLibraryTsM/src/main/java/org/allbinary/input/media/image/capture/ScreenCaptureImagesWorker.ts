@@ -90,7 +90,7 @@ public constructor (){
             super();
         screenScavangerRobot= new ScreenScavangerRobot();
     
-index= ProcessingFrameIndexFactory.next();
+ScreenCaptureImagesWorker.index= ProcessingFrameIndexFactory.next();
     
 }
 

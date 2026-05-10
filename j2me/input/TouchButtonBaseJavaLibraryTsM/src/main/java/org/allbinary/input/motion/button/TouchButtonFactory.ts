@@ -80,7 +80,7 @@ private constructor (){
     public defaultList(){
 this.list= this.LIST;
     
-this.toggle(false, LIST);
+this.toggle(false, this.LIST);
     
 }
 

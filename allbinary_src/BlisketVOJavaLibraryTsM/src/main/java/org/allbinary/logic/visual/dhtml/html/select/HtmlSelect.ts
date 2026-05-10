@@ -238,7 +238,7 @@ result += this.ENDOPTION;
 ;
     
 
-    var attributeKeys: any[] = otherAttributes!.keySet()!.toTypedArray()!;
+    var attributeKeys: any[] = this.otherAttributes!.keySet()!.toTypedArray()!;
 ;
     
 

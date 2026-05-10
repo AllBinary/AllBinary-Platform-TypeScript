@@ -536,7 +536,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "attemptBuild");
                                     {
                                     layerInterface!.construct(rtsPlayerLayerInterface);
     
-newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
+this.newUnconstructedRTSLayerInterfaceArray[itemIndex]= CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
     
 capital.removeMoney(cost);
     
@@ -619,7 +619,7 @@ rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!
     addWayPoint(layerInterface: WaypointLayer){
     //var layerInterface = layerInterface
 
-    var stickyAssociatedAdvandedRtsLayer: AdvancedRTSGameLayer = stickyAssociatedRtsLayer as AdvancedRTSGameLayer;
+    var stickyAssociatedAdvandedRtsLayer: AdvancedRTSGameLayer = this.stickyAssociatedRtsLayer as AdvancedRTSGameLayer;
 ;
     
 

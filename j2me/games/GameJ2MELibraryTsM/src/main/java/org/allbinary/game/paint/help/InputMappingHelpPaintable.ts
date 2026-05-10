@@ -142,7 +142,7 @@ protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasi
                     
 this.gameInputMappingArray= gameInputMappingArray;
     
-this.update(NONE, NONE);
+this.update(this.NONE, this.NONE);
     
 
                         if(backgroundBasicColor == this.basicColorFactory!.WHITE || basicColor == this.basicColorFactory!.WHITE)
@@ -169,7 +169,7 @@ this.update(NONE, NONE);
     var stringMaker: StringMaker = new StringMaker();
 ;
     
-this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append(CommonLabels.getInstance()!.START_LABEL)!.append("selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.append(" Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, this.commonStrings!.UPDATE);
     
 
     var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
@@ -247,7 +247,7 @@ inputBasicColorArray[index]![index2]= this.basicColor;
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append("Found: selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append("Found: selected GameKey: ")!.append(this.stringUtil!.toString(selectedGameKey))!.toString(), this, this.commonStrings!.UPDATE);
     
 actionBasicColor[index]= this.selectedBasicColor;
     
@@ -261,7 +261,7 @@ actionBasicColor[index]= this.selectedBasicColor;
                                     {
                                     stringMaker!.delete(0, stringMaker!.length());
     
-this.logUtil!.putF(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringMaker!.append("Found: selected Input: ")!.append(this.stringUtil!.toString(selectedInput))!.toString(), this, this.commonStrings!.UPDATE);
     
 inputBasicColorArray[index]![indexOfSelectedInput]= this.selectedBasicColor;
     
@@ -328,7 +328,7 @@ stringBuffer!.append(key.getName());
                         if(keyList!.size() == 2)
                         
                                     {
-                                    stringBuffer!.append(AND);
+                                    stringBuffer!.append(InputMappingHelpPaintable.AND);
     
 
                                     }
@@ -338,13 +338,13 @@ stringBuffer!.append(key.getName());
                         if(index +2 == keyList!.size())
                         
                                     {
-                                    stringBuffer!.append(MORE_THAN_TWO_IN_LIST_AND);
+                                    stringBuffer!.append(InputMappingHelpPaintable.MORE_THAN_TWO_IN_LIST_AND);
     
 
                                     }
                                 
                         else {
-                            stringBuffer!.append(SEP);
+                            stringBuffer!.append(InputMappingHelpPaintable.SEP);
     
 
                         }
@@ -426,7 +426,7 @@ stringBuffer!.append(key.getName());
     
 graphics.setColor(this.basicColor!.intValue());
     
-graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
+graphics.drawString(this.title, halfWidth -beginWidth, charHeight, this.anchor);
     
 
     var inputInfo: string[] = this.inputInfo;
@@ -497,7 +497,7 @@ beginWidth= (font.stringWidth(stringMaker!.append(actionString)!.append(keyMappi
     
 graphics.setColor(this.actionBasicColor[index]!.intValue());
     
-graphics.drawString(actionString, halfWidth -beginWidth +deltaX, y, anchor);
+graphics.drawString(actionString, halfWidth -beginWidth +deltaX, y, this.anchor);
     
 deltaX += font.stringWidth(actionString);
     
@@ -513,7 +513,7 @@ input= list.objectArray[index2]! as Input;
     
 graphics.setColor(this.inputBasicColorArray[index]![index2]!.intValue());
     
-graphics.drawString(input.getName(), halfWidth -beginWidth +deltaX, y, anchor);
+graphics.drawString(input.getName(), halfWidth -beginWidth +deltaX, y, this.anchor);
     
 deltaX += font.stringWidth(input.getName());
     
@@ -527,7 +527,7 @@ sep= EMPTY_STRING;
                         if(list.size() == 2)
                         
                                     {
-                                    sep= AND;
+                                    sep= InputMappingHelpPaintable.AND;
     
 
                                     }
@@ -537,13 +537,13 @@ sep= EMPTY_STRING;
                         if(index2 +2 == list.size())
                         
                                     {
-                                    sep= MORE_THAN_TWO_IN_LIST_AND;
+                                    sep= InputMappingHelpPaintable.MORE_THAN_TWO_IN_LIST_AND;
     
 
                                     }
                                 
                         else {
-                            sep= SEP;
+                            sep= InputMappingHelpPaintable.SEP;
     
 
                         }
@@ -560,7 +560,7 @@ sep= EMPTY_STRING;
                                     {
                                     graphics.setColor(this.basicColor!.intValue());
     
-graphics.drawString(sep, halfWidth -beginWidth +deltaX, y, anchor);
+graphics.drawString(sep, halfWidth -beginWidth +deltaX, y, this.anchor);
     
 deltaX += font.stringWidth(sep);
     

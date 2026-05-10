@@ -140,7 +140,7 @@ private constructor (){
                         if(!this.hasDetected)
                         
                                     {
-                                    this.logUtil!.putF("osName: " +osName, this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("osName: " +osName, this, this.commonStrings!.GET_INSTANCE);
     
 this.hasDetected= true;
     
@@ -152,7 +152,7 @@ this.hasDetected= true;
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    this.logUtil!.putF("Found a Linux OS", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Found a Linux OS", this, this.commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -170,7 +170,7 @@ this.genericOperatingSystem= LinuxOperatingSystemFactory.getInstance()!.getOpera
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    this.logUtil!.putF("Found a Windows OS", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Found a Windows OS", this, this.commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -188,7 +188,7 @@ this.genericOperatingSystem= WindowsOperatingSystemFactory.getInstance()!.getOpe
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    this.logUtil!.putF("Found a Solaris OS", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Found a Solaris OS", this, this.commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -210,7 +210,7 @@ this.genericOperatingSystem= SolarisOperatingSystemFactory.getInstance()!.getOpe
                             
 
     var log: Log = LogFactory.getInstanceF(new StringMaker().
-                            append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, commonStrings!.GET_INSTANCE)!;
+                            append("OperatingSystem Info: ")!.append(StringUtil.getInstance()!.toString(this.genericOperatingSystem))!.toString(), this, this.commonStrings!.GET_INSTANCE)!;
 ;
     
 console.log(log.toString());
@@ -234,7 +234,7 @@ this.logUtil!.putL(log);
                         if(LogConfigTypes.LOGGING.contains(LogConfigTypeFactory.getInstance()!.FACTORYERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET_INSTANCE, e);
     
 
                                     }

@@ -138,7 +138,7 @@ this.logUtil!.putF(new StringMaker().
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paintXY(graphics, animationX, animationY);
+this.animationInterface!.paintXY(graphics, animationX, this.animationY);
     
 }
 

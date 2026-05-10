@@ -157,21 +157,21 @@ this.yBorder= yBorder;
 this.updateRectangle();
     
 this.logUtil!.putF(new StringMaker().
-                            append("Created: ")!.append(this.toString())!.toString(), this, commonStrings!.CONSTRUCTOR);
+                            append("Created: ")!.append(this.toString())!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 }
 
 
     public paintHint(graphics: Graphics){
 var graphics = graphics
-this.hintAnimationInterface!.paintXY(graphics, animationX, this.hintAnimationY);
+this.hintAnimationInterface!.paintXY(graphics, this.animationX, this.hintAnimationY);
     
 }
 
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paintXY(graphics, animationX, animationY);
+this.animationInterface!.paintXY(graphics, this.animationX, this.animationY);
     
 }
 
@@ -191,7 +191,7 @@ this.animationInterface!.paintXY(graphics, animationX, animationY);
     var y: number = this.rawRectangle!.getHeight() *this.cellPositionP!.getRow();
 ;
     
-this.rectangleP= new Rectangle(pointFactory!.createXY(x +xBorder, y +yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
+this.rectangleP= new Rectangle(pointFactory!.createXY(x +this.xBorder, y +this.yBorder), this.rawRectangle!.getWidth(), this.rawRectangle!.getHeight());
     
 
     var point: GPoint = this.rectangleP!.getPoint()!;

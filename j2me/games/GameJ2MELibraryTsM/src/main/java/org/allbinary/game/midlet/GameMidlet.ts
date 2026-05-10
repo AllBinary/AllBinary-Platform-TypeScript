@@ -398,7 +398,7 @@ this.init();
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -409,7 +409,7 @@ this.init();
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -420,7 +420,7 @@ this.init();
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -443,7 +443,7 @@ gameAdState!.getAdvertisements()!.stopAll();
 
     pauseAppBackground(background: boolean){
     //var background = background
-this.logUtil!.putF(commonStrings!.START, this, PAUSE_APP_BACKGROUND);
+this.logUtil!.putF(this.commonStrings!.START, this, this.PAUSE_APP_BACKGROUND);
     
 
                         if(this.allbinaryGameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
@@ -455,7 +455,7 @@ this.logUtil!.putF(commonStrings!.START, this, PAUSE_APP_BACKGROUND);
                                     }
                                 
                         else {
-                            this.logUtil!.putF("<<<<<< Null", this, PAUSE_APP_BACKGROUND);
+                            this.logUtil!.putF("<<<<<< Null", this, this.PAUSE_APP_BACKGROUND);
     
 
                         }
@@ -479,7 +479,7 @@ gameAdState!.getAdvertisements()!.startAll();
 
     unPauseAppBackground(background: boolean){
 var background = background
-this.logUtil!.putF(commonStrings!.START, this, UN_PAUSE_APP_BACKGROUND);
+this.logUtil!.putF(this.commonStrings!.START, this, this.UN_PAUSE_APP_BACKGROUND);
     
 AllBinarySensorManager.getInstance()!.init();
     
@@ -497,7 +497,7 @@ AllBinarySensorManager.getInstance()!.init();
                                     }
                                 
                         else {
-                            this.logUtil!.putF("<<<<<< Null", this, UN_PAUSE_APP_BACKGROUND);
+                            this.logUtil!.putF("<<<<<< Null", this, this.UN_PAUSE_APP_BACKGROUND);
     
 
                         }
@@ -574,17 +574,17 @@ this.mediaShutdown();
                             
 super.destroyApp(true);
     
-PreLogUtil.put(commonStrings!.END, this, METHOD_NAME);
+PreLogUtil.put(this.commonStrings!.END, this, METHOD_NAME);
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
     
 }
 
-this.logUtil!.putF(commonStrings!.END, this, METHOD_NAME);
+this.logUtil!.putF(this.commonStrings!.END, this, METHOD_NAME);
     
 }
 
@@ -602,7 +602,7 @@ gameAdState!.getAdvertisements()!.startAll();
     var START_APP: string = "startApp";
 ;
     
-this.logUtil!.putF(commonStrings!.START, this, START_APP);
+this.logUtil!.putF(this.commonStrings!.START, this, START_APP);
     
 
     var gameCanvasRunnableInterface: GameCanvasRunnableInterface = this.allbinaryGameCanvasRunnableInterface;
@@ -644,7 +644,7 @@ this.setDemo();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "startApp", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "startApp", e);
     
 this.destroyApp(false);
     
@@ -776,7 +776,7 @@ GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, De
                         if(command == gameCommandsFactory!.START_COMMAND && this.isDemoLoading())
                         
                                     {
-                                    this.logUtil!.putF("Trying to Start Game Before Loading Complete", this, midletStrings!.COMMAND_ACTION);
+                                    this.logUtil!.putF("Trying to Start Game Before Loading Complete", this, this.midletStrings!.COMMAND_ACTION);
     
 
                                     }
@@ -795,7 +795,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                                     }
                                 
                         else {
-                            this.logUtil!.putF("Starting Game Too Often", this, midletStrings!.COMMAND_ACTION);
+                            this.logUtil!.putF("Starting Game Too Often", this, this.midletStrings!.COMMAND_ACTION);
     
 
                         }
@@ -804,7 +804,7 @@ this.gameMidletStateFactory!.setCurrentGameState(GameState.PLAYING_GAME_STATE);
                                     }
                                 
                         else {
-                            this.logUtil!.putF("Already in playing state", this, COMMAND_ACTION);
+                            this.logUtil!.putF("Already in playing state", this, this.COMMAND_ACTION);
     
 
                         }
@@ -1182,15 +1182,15 @@ this.commandAction(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS, displayable)
     
 stringBuffer!.append("Close isFullScreen/change: ");
     
-stringBuffer!.appendboolean(isFullScreen);
+stringBuffer!.appendboolean(this.isFullScreen);
     
-stringBuffer!.appendboolean(this.fullScreenUtil!.isScreenChange(isFullScreen));
+stringBuffer!.appendboolean(this.fullScreenUtil!.isScreenChange(this.isFullScreen));
     
 stringBuffer!.append(" isResized: ");
     
 stringBuffer!.appendboolean(this.isResized());
     
-PreLogUtil.put(stringBuffer!.toString(), this, COMMAND_ACTION);
+PreLogUtil.put(stringBuffer!.toString(), this, this.COMMAND_ACTION);
     
 
                         if(this.isResized() || this.fullScreenUtil!.isScreenChange(isFullScreen))
@@ -1218,7 +1218,7 @@ AllBinaryMediaManager.setMuted(false);
     
 keyValuePersistance!.clear();
     
-keyValuePersistance!.loadAll(abeClientInformation);
+keyValuePersistance!.loadAll(this.abeClientInformation);
     
 
                         if(this.getLoadGameForm() == CommandForm.NULL_COMMAND_FORM)
@@ -1296,11 +1296,11 @@ PreLogUtil.put(BasicMotionGesturesHandler.getInstance()!.toString(), this, this.
     var keyValuePersistance: KeyValuePersistance = GamePersistanceSingleton.getInstance()!;
 ;
     
-keyValuePersistance!.delete(abeClientInformation, index);
+keyValuePersistance!.delete(this.abeClientInformation, index);
     
 keyValuePersistance!.clear();
     
-keyValuePersistance!.loadAllSize(abeClientInformation, 1);
+keyValuePersistance!.loadAllSize(this.abeClientInformation, 1);
     
 this.getLoadGameForm()!.update();
     
@@ -1320,7 +1320,7 @@ this.getLoadGameForm()!.update();
     
 this.pauseAppBackground(false);
     
-keyValuePersistance!.save(abeClientInformation, this.getCurrentStateHashtable());
+keyValuePersistance!.save(this.abeClientInformation, this.getCurrentStateHashtable());
     
 this.unPauseAppBackground(false);
     
@@ -1331,7 +1331,7 @@ this.unPauseAppBackground(false);
                         if(command == HighScoreUtil.SUBMIT_TEXTBOX_COMMAND)
                         
                                     {
-                                    this.logUtil!.putF("Submitted Score", this, COMMAND_ACTION);
+                                    this.logUtil!.putF("Submitted Score", this, this.COMMAND_ACTION);
     
 
                         if(displayable instanceof HighScoreTextBox)
@@ -1420,7 +1420,7 @@ this.updateFullScreen();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, midletStrings!.COMMAND_ACTION, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.midletStrings!.COMMAND_ACTION, e);
     
 
                         if(command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
@@ -1491,7 +1491,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new GameInputMappingCanvas(abeClientInformation, this, this.createGameLayerManager(), this.getHelpPaintable());
+                        return new GameInputMappingCanvas(this.abeClientInformation, this, this.createGameLayerManager(), this.getHelpPaintable());
     
 }
 
@@ -1514,7 +1514,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -1525,7 +1525,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -1552,7 +1552,7 @@ threadFactoryUtil!.start(this.thread);
                 //@Throws(Exception.constructor)
             
     stopGameCanvasRunnableInterface(){
-this.logUtil!.putF(commonStrings!.START, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
     
 GameNotificationEventHandler.getInstance()!.removeAllListeners();
     
@@ -1568,7 +1568,7 @@ GameEventHandlerUtil.removeAllListeners();
                         if(gameCanvasRunnableInterface != NullGameCanvasRunnable.NULL_GAME_CANVAS_RUNNABLE)
                         
                                     {
-                                    this.logUtil!.putF("Set Running False", this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+                                    this.logUtil!.putF("Set Running False", this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
     
 gameCanvasRunnableInterface!.setRunning(false);
     
@@ -1576,7 +1576,7 @@ gameCanvasRunnableInterface!.setRunning(false);
                                     }
                                 
                         else {
-                            this.logUtil!.putF("StopGame - Could Not Stop", this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+                            this.logUtil!.putF("StopGame - Could Not Stop", this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
     
 
                         }
@@ -1602,7 +1602,7 @@ ThreadUtil.getInstance()!.join(this.thread);
 
                         }
                             
-this.logUtil!.putF(commonStrings!.END, this, gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
+this.logUtil!.putF(this.commonStrings!.END, this, this.gameStrings!.STOP_GAME_CANVAS_RUNNABLE_INTERFACE);
     
 }
 
@@ -1655,13 +1655,13 @@ this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
                 //@Throws(Exception.constructor)
             
     public save(){
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.SAVE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.SAVE);
     
 
     var hashtable: Hashtable<any, any> = this.getCurrentStateHashtable()!;
 ;
     
-GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
+GamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, hashtable);
     
 }
 
@@ -1669,7 +1669,7 @@ GamePersistanceSingleton.getInstance()!.save(abeClientInformation, hashtable);
                 //@Throws(Exception.constructor)
             
     public getCurrentStateHashtable(): Hashtable<any, any>{
-this.logUtil!.putF(commonStrings!.START, this, "getCurrentStateHashtable");
+this.logUtil!.putF(this.commonStrings!.START, this, "getCurrentStateHashtable");
     
 
     var hashtable: Hashtable<any, any> = new Hashtable<any, any>();

@@ -103,7 +103,7 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_PRESS_GAME_KEY, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON_PRESS_GAME_KEY, e);
     
 }
 
@@ -132,7 +132,7 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_DOWN_GAME_KEY, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON_DOWN_GAME_KEY, e);
     
 }
 
@@ -161,7 +161,7 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, gameInputStrings!.ON_UP_GAME_KEY, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON_UP_GAME_KEY, e);
     
 }
 
@@ -189,7 +189,7 @@ this.gameCommandCanvas!.repaintBehavior!.onChangeRepaint(this.getCanvas());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "onMotionGestureEvent", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMotionGestureEvent", e);
     
 }
 

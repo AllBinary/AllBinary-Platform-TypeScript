@@ -148,7 +148,7 @@ stringBuffer!.append(this.TO);
     
 stringBuffer!.appendint(value.intValue());
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.UPDATE);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.UPDATE);
     
 gameConfiguration!.setValue(value);
     

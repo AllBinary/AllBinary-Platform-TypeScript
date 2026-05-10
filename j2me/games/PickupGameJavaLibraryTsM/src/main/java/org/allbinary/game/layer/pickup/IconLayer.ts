@@ -87,14 +87,14 @@ this.animationInterface= animationInterface;
 
     public paint(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paintXY(graphics, x, y);
+this.animationInterface!.paintXY(graphics, this.x, this.y);
     
 }
 
 
     public paintThreed(graphics: Graphics){
 var graphics = graphics
-this.animationInterface!.paintThreed(graphics, x, y, z);
+this.animationInterface!.paintThreed(graphics, this.x, this.y, this.z);
     
 }
 

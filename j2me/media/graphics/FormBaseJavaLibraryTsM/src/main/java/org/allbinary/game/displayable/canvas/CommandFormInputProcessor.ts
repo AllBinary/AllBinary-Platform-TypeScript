@@ -200,7 +200,7 @@ this.form.processInputKey(key);
     var command: Command = commandCurrentSelectionForm!.getSelectedCommand()!;
 ;
     
-this.logUtil!.putF(command.toString(), this, PROCESS_COMMAND);
+this.logUtil!.putF(command.toString(), this, this.PROCESS_COMMAND);
     
 
     var features: Features = Features.getInstance()!;
@@ -337,7 +337,7 @@ this.clear();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PROCESS_INPUT, e);
     
 
 
@@ -370,7 +370,7 @@ this.processMotionInput(motionGestureEvent);
 
                                     }
                                 
-motionGestureEventList!.clear();
+this.motionGestureEventList!.clear();
     
 
 
@@ -455,7 +455,7 @@ motionGestureEventList!.clear();
                         if(!this.doubleClickTimeHelper!.isTimeTNT())
                         
                                     {
-                                    this.logUtil!.putF("Double Press", this, gameInputStrings!.PROCESS_MOTION_INPUT);
+                                    this.logUtil!.putF("Double Press", this, this.gameInputStrings!.PROCESS_MOTION_INPUT);
     
 this.processCommand();
     

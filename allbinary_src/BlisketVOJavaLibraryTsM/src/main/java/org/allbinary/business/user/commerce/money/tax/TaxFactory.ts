@@ -233,7 +233,7 @@ index < taxNameNodeList!.getLength(); index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    this.logUtil!.putF("Class Node Null", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Class Node Null", this, this.commonStrings!.GET_INSTANCE);
     
 
                                     }
@@ -249,7 +249,7 @@ index < taxNameNodeList!.getLength(); index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAX))
                         
                                     {
-                                    this.logUtil!.putF("Tax Name Node Node Children", this, commonStrings!.GET_INSTANCE);
+                                    this.logUtil!.putF("Tax Name Node Node Children", this, this.commonStrings!.GET_INSTANCE);
     
 
                                     }

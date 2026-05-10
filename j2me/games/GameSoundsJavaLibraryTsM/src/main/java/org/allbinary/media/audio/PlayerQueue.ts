@@ -101,7 +101,7 @@ var sound = sound
                 //: 
 } catch(e) 
             {
-PreLogUtil.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD);
+PreLogUtil.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD);
     
 }
 
@@ -174,7 +174,7 @@ played= true;
                                     }
                                 
 PreLogUtil.put(new StringMaker().
-                            append(commonStrings!.EXCEPTION_LABEL)!.append(resource)!.toString(), this, commonStrings!.PROCESS);
+                            append(this.commonStrings!.EXCEPTION_LABEL)!.append(resource)!.toString(), this, this.commonStrings!.PROCESS);
     
 
 

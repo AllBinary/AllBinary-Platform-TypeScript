@@ -105,7 +105,7 @@ export class LoggingInitInfo
 
     public static getDoc(): Document{
 
-    var path: string = URLGLOBALS.getWebappPath() +PACKAGE;
+    var path: string = URLGLOBALS.getWebappPath() +LoggingInitInfo.PACKAGE;
 ;
     
 

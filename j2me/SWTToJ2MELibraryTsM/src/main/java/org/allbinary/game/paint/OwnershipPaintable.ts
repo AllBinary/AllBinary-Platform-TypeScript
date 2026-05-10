@@ -131,7 +131,7 @@ graphics.setColor(this.color);
     var COPYRIGHT_Y: number = 2 *myFont!.DEFAULT_CHAR_HEIGHT;
 ;
     
-graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, anchor);
+graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, this.anchor);
     
 }
 

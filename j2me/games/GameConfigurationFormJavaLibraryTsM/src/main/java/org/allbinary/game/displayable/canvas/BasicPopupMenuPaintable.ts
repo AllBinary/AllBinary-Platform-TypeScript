@@ -196,7 +196,7 @@ this.rectangle= rectangle;
 ;
     
 
-    var heightOffset: number = rectangle.getHeight() -(myFont!.DEFAULT_CHAR_HEIGHT *NAME.length);
+    var heightOffset: number = rectangle.getHeight() -(myFont!.DEFAULT_CHAR_HEIGHT *BasicPopupMenuPaintable.NAME.length);
 ;
     
 

@@ -198,7 +198,7 @@ this.inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
             
     public init(abeClientInformation: AbeClientInformationInterface){
     //var abeClientInformation = abeClientInformation
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 
         try {
@@ -208,7 +208,7 @@ this.logUtil!.putF(commonStrings!.START, this, commonStrings!.INIT);
                 //: 
 } catch(e) 
             {
-PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 this.inputPersistance!.deleteRecoreStore(abeClientInformation);
     
@@ -285,7 +285,7 @@ stringBuffer!.append(" to: ");
     
 stringBuffer!.appendint(totalMappedTo);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.INIT);
     
 }
 

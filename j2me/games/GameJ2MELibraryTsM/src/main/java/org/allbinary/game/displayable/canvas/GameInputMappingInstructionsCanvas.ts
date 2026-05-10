@@ -105,7 +105,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(allBinaryGameLayerManager!.getBackgroundBasicColor(), false);
     
@@ -153,7 +153,7 @@ this.colorFillPaintable!.paint(graphics);
     
 graphics.setColor(this.foregroundColor);
     
-graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, anchor);
+graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, this.anchor);
     
 this.drawStringUtil!.drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight);
     

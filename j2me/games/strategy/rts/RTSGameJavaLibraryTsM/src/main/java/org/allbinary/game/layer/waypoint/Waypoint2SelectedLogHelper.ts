@@ -169,7 +169,7 @@ stringBuffer!.appendboolean((waypointBehaviorBase!.getCurrentTargetLayerInterfac
                                     null
                                 ));
     
-this.logUtil!.putF(stringBuffer!.toString(), this, PROCESS_POSSIBLE_TARGET);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.PROCESS_POSSIBLE_TARGET);
     
 
                                     }

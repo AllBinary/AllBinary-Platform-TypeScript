@@ -271,7 +271,7 @@ this.storeCancelComment= this.request.getParameter(OrderData.STORECANCELCOMMENT)
     var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-orderHashMap!.put(EntryData.getInstance()!.ID, entryId);
+orderHashMap!.put(EntryData.getInstance()!.ID, this.entryId);
     
 orderHashMap!.put(OrderData.ID, this.orderId);
     
@@ -331,7 +331,7 @@ orderHashMap!.put(OrderHistoryData.TAX, this.tax);
     
 orderHashMap!.put(OrderHistoryData.TOTAL, this.total);
     
-orderHashMap!.put(EntryData.getInstance()!.SPECIAL, special);
+orderHashMap!.put(EntryData.getInstance()!.SPECIAL, this.special);
     
 orderHashMap!.put(OrderData.CUSTOMERCOMMENT, this.userComment);
     
@@ -372,7 +372,7 @@ OrderHistoryEntityFactory.getInstance()!.update(whereHashMap, orderHashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

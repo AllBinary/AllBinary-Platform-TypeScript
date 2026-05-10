@@ -125,7 +125,7 @@ stringBuffer!.append(" damage: ");
     
 stringBuffer!.appendint(damage);
     
-this.logUtil!.putF(stringBuffer!.toString(), collidableInterfaceCompositeInterface1, COLLIDE);
+this.logUtil!.putF(stringBuffer!.toString(), collidableInterfaceCompositeInterface1, this.COLLIDE);
     
 
                                     }

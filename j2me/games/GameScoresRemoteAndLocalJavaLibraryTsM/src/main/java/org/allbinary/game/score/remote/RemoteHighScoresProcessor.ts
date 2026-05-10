@@ -106,7 +106,7 @@ public constructor (){
     //var remoteHighScores = remoteHighScores
     //var abeClientInformation = abeClientInformation
     //var gameInfo = gameInfo
-this.logUtil!.putF("Begin Remote HighScores Retrieval", this, commonStrings!.PROCESS);
+this.logUtil!.putF("Begin Remote HighScores Retrieval", this, this.commonStrings!.PROCESS);
     
 
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;
@@ -136,7 +136,7 @@ hashtable.put(RemoteHighScoresData.getInstance()!.GAME_CONFIGURATION, GameConfig
                                     {
                                     
     var resultHashtable: Hashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresservicessl.php", "HighScoresService.process").
-                            get(hashtable, noCrypt) as Hashtable<any, any>;
+                            get(hashtable, this.noCrypt) as Hashtable<any, any>;
 ;
     
 remoteHighScores!.update(resultHashtable);

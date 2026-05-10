@@ -173,7 +173,7 @@ stringBuffer!.append(this.IMAGE_LABEL);
     
 stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS));
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.INIT);
     
 
                         if(features.isFeature(graphicsFeatureFactory!.IMAGE_GRAPHICS))
@@ -197,7 +197,7 @@ stringBuffer!.append(this.SPRITE_FULL);
     
 stringBuffer!.appendboolean(features.isFeature(graphicsFeatureFactory!.SPRITE_FULL_GRAPHICS));
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.INIT);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.INIT);
     
 
                                     }
@@ -214,7 +214,7 @@ this.list.clear();
     public add(featureInterface: GameFeatureControlledInterface){
 var featureInterface = featureInterface
 this.logUtil!.putF(new StringMaker().
-                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, commonStrings!.ADD);
+                            append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, this.commonStrings!.ADD);
     
 this.list.add(featureInterface);
     

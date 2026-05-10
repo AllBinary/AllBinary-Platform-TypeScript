@@ -84,7 +84,7 @@ this.value= value;
     
 this.frameFactor= frameFactor;
     
-directionArray[value]= this;
+Direction.directionArray[value]= this;
     
 }
 

@@ -167,7 +167,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                         if(motionGestureInput == touchMotionGestureFactory!.RELEASED)
                         
                                     {
-                                    this.logUtil!.putF(this.RELEASE, this, METHOD_NAME);
+                                    this.logUtil!.putF(this.RELEASE, this, this.METHOD_NAME);
     
 this.released= true;
     
@@ -184,7 +184,7 @@ this.released= true;
                         if(motionGestureInput == TouchMotionGestureFactory.getInstance()!.NO_MOTION && !this.timeHelper!.isTimeTNT())
                         
                                     {
-                                    this.logUtil!.putF(this.FAST_REPEAT, this, METHOD_NAME);
+                                    this.logUtil!.putF(this.FAST_REPEAT, this, this.METHOD_NAME);
     
 
 
@@ -199,7 +199,7 @@ this.released= true;
                         if(!this.released)
                         
                                     {
-                                    this.logUtil!.putF(this.IGNORE, this, METHOD_NAME);
+                                    this.logUtil!.putF(this.IGNORE, this, this.METHOD_NAME);
     
 
 
@@ -213,7 +213,7 @@ this.released= true;
 this.released= false;
     
 this.logUtil!.putF(new StringMaker().
-                            append("GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKey))!.append(" MotionGestureInput: ")!.append(StringUtil.getInstance()!.toString(motionGestureInput))!.toString(), this, METHOD_NAME);
+                            append("GameKey: ")!.append(StringUtil.getInstance()!.toString(gameKey))!.append(" MotionGestureInput: ")!.append(StringUtil.getInstance()!.toString(motionGestureInput))!.toString(), this, this.METHOD_NAME);
     
 this.inputMappingInterface!.process(gameKey, motionGestureInput);
     

@@ -169,7 +169,7 @@ public constructor (musicServiceClass: Function, songList: BasicArrayList){
             super();
             //var musicServiceClass = musicServiceClass
     //var songList = songList
-PreLogUtil.put(this.commonStateStrings!.CONTEXT +this.resourceUtil!.getContext(), this, commonStrings!.CONSTRUCTOR);
+PreLogUtil.put(this.commonStateStrings!.CONTEXT +this.resourceUtil!.getContext(), this, this.commonStrings!.CONSTRUCTOR);
     
 this.musicServiceClass= musicServiceClass;
     
@@ -282,7 +282,7 @@ this.timeDelayHelper!.delay= 0;
 ;
     
 PreLogUtil.put(new StringMaker().
-                            append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
+                            append(this.PLAY)!.append(sound.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
 }
 
@@ -316,15 +316,15 @@ this.nextSongSound= NoSound.getInstance();
 ;
     
 PreLogUtil.put(new StringMaker().
-                            append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
+                            append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.FOR)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
 this.timeDelayHelper!.delay= Math.round(duration);
     
 this.currentIntent!.putExtra(this.musicStrings!.SONG_EXTRA, this.resourceUtil!.getResourceId(this.currentSongSound!.getResource())!.intValue());
     
-this.currentIntent!.putExtra(this.musicStrings!.LEFT_VOLUME, leftVolume);
+this.currentIntent!.putExtra(this.musicStrings!.LEFT_VOLUME, this.leftVolume);
     
-this.currentIntent!.putExtra(this.musicStrings!.RIGHT_VOLUME, rightVolume);
+this.currentIntent!.putExtra(this.musicStrings!.RIGHT_VOLUME, this.rightVolume);
     
 this.resourceUtil!.getContext()!.startService(this.currentIntent);
     
@@ -347,7 +347,7 @@ this.resourceUtil!.getContext()!.startService(this.currentIntent);
 
                                     }
                                 
-PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.PROCESS, e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.PROCESS, e);
     
 }
 

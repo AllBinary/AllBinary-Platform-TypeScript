@@ -129,7 +129,7 @@ this.timeDelayHelper= timeDelayHelper;
     var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
     
-hashtable.put(INPUT_PROBABILITY, this);
+hashtable.put(InputProbability.INPUT_PROBABILITY, this);
     
 
 

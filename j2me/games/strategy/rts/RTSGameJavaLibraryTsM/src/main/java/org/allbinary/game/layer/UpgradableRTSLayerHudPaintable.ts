@@ -106,9 +106,9 @@ super.update();
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
 ;
     
-this.costY= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
+this.costY= (this.y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE);
     
-this.costY1= (y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -(charHeight));
+this.costY1= (this.y +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -(charHeight));
     
 this.percentCompleteX2= this.imageX +CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE -myFont!.defaultCharWidth();
     
@@ -204,7 +204,7 @@ graphics.drawChars(this.percentCompleteArray, 0, this.currentTotalDigits, this.i
     
 graphics.drawString(this.PERCENT, this.percentCompleteX2, costY, 0);
     
-this.getAnimationInterface()!.paintXY(graphics, this.imageX, y);
+this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
     
 }
 

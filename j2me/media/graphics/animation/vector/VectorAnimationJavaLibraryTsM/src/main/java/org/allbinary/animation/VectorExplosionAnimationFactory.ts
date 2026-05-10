@@ -94,7 +94,7 @@ this.setBasicColorP(basicColor);
 ;
     
 
-    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, vectorExplosionGenerator!.ROTATION)!;
+    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(framePoints, 6, this.vectorExplosionGenerator!.ROTATION)!;
 ;
     
 

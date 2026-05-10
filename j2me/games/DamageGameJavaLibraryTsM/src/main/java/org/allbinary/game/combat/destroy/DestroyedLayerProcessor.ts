@@ -70,7 +70,7 @@ export class DestroyedLayerProcessor extends BasicLayerProcessor {
     private static DESTROYED_LAYER_PROCESSOR: BasicLayerProcessor = BasicLayerProcessor.NULL_LAYER_PROCESSOR;
 
     public static init(){
-DESTROYED_LAYER_PROCESSOR= new DestroyedLayerProcessor();
+DestroyedLayerProcessor.DESTROYED_LAYER_PROCESSOR= new DestroyedLayerProcessor();
     
 }
 

@@ -155,7 +155,7 @@ this.mediaPlayer!.setLooping(false);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.CONSTRUCTOR, e);
     
 
 
@@ -249,7 +249,7 @@ this.mediaPlayer= NullAndroidCanvas.NULL_MEDIA_PLAYER;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE, e);
     
 }
 
@@ -281,7 +281,7 @@ super.start();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.START_METHOD_NAME, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.START_METHOD_NAME, e);
     
 }
 
@@ -304,7 +304,7 @@ super.stop();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
     
 }
 
@@ -313,7 +313,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "stop", e);
 
     public update(event: string){
 var event = event
-this.logUtil!.putF("LineEvent: " +event, this, commonStrings!.UPDATE);
+this.logUtil!.putF("LineEvent: " +event, this, this.commonStrings!.UPDATE);
     
 
     var size: number = this.listenersList!.size()!;

@@ -313,7 +313,7 @@ this.nameP= name;
                                     {
                                     stringBuffer!.append(this.schema);
     
-stringBuffer!.append(NETWORK_SEP);
+stringBuffer!.append(AbPath.NETWORK_SEP);
     
 
                                     }

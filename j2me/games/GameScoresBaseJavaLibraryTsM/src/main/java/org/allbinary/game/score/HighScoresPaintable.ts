@@ -128,7 +128,7 @@ graphics.setColor(getBasicColorP()!.intValue());
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(heading)>>1);
 ;
     
-graphics.drawString(heading, (width>>1) -topScoresWidth, charHeight, anchor);
+graphics.drawString(heading, (width>>1) -topScoresWidth, charHeight, this.anchor);
     
 graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, anchor);
     

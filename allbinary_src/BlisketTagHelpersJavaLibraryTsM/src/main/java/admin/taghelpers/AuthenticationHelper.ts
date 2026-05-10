@@ -187,7 +187,7 @@ this.timeout= this.weblisketSession!.getTimeout();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "invalidateSession()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "invalidateSession()", e);
     
 
                                     }
@@ -393,7 +393,7 @@ stringBuffer!.append("Trying New login<p/>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "validRole()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "validRole()", e);
     
 
                                     }
@@ -440,7 +440,7 @@ stringBuffer!.append("Trying New login<p/>");
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "invalidRole()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "invalidRole()", e);
     
 
                                     }
@@ -615,7 +615,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "isAuthenticatedSessionValid()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "isAuthenticatedSessionValid()", e);
     
 
                                     }
@@ -737,7 +737,7 @@ this.nextAttempt();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "processIfNewLogin()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processIfNewLogin()", e);
     
 
                                     }
@@ -793,7 +793,7 @@ this.nextAttempt();
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.AUTHENTICATIONERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "processInvalidation()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processInvalidation()", e);
     
 
                                     }

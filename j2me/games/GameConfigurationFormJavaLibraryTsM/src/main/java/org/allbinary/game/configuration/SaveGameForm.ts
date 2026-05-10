@@ -74,13 +74,13 @@ var commandListener = commandListener
 var title = title
 var backgrounBasicColor = backgrounBasicColor
 var foregroundBasicColor = foregroundBasicColor
-FORM= new SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
+SaveGameForm.FORM= new SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
     
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return FORM;
+                        return SaveGameForm.FORM;
     
 }
 
@@ -104,7 +104,7 @@ var foregroundBasicColor = foregroundBasicColor
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
     var timeString: string = (Date.now()).toString()!;

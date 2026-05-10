@@ -131,7 +131,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_S
                         if(FileFactory.getInstance()!.isFile(filePath))
                         
                                     {
-                                    this.logUtil!.putF("Using Existing License File", this, commonStrings!.INIT);
+                                    this.logUtil!.putF("Using Existing License File", this, this.commonStrings!.INIT);
     
 
                                     }
@@ -146,7 +146,7 @@ LicenseInitInfoUtil.getInstance()!.setFilePath(StringUtil.getInstance()!.EMPTY_S
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 
@@ -172,7 +172,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(filePath)!;
 ;
     
-this.logUtil!.putF("Writing Default License File", this, commonStrings!.INIT);
+this.logUtil!.putF("Writing Default License File", this, this.commonStrings!.INIT);
     
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
@@ -209,7 +209,7 @@ index++;
     
 }
 
-this.logUtil!.putF("Wrote Bytes: " +index, this, commonStrings!.INIT);
+this.logUtil!.putF("Wrote Bytes: " +index, this, this.commonStrings!.INIT);
     
 fileOutputStream!.flush();
     
@@ -217,7 +217,7 @@ fileOutputStream!.flush();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 

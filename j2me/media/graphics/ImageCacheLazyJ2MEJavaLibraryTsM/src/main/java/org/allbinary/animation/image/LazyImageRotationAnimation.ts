@@ -183,7 +183,7 @@ animation= NULL_INDEX_ANIMATION;
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
 }
 
@@ -208,7 +208,7 @@ animation= NULL_INDEX_ANIMATION;
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
     
-logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
 }
 

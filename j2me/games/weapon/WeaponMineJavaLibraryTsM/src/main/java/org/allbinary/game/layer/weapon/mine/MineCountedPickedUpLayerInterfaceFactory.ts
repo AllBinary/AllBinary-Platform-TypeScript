@@ -88,7 +88,7 @@ export class MineCountedPickedUpLayerInterfaceFactory extends CountedPickedUpLay
                 //@Throws(Exception.constructor)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= new MineCountedPickedUpLayerInterfaceFactory();
+MineCountedPickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface= new MineCountedPickedUpLayerInterfaceFactory();
     
 }
 

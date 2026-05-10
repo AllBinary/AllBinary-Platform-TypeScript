@@ -133,7 +133,7 @@ public constructor (clientInformationFactory: ClientInformationFactory){
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -145,7 +145,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -174,7 +174,7 @@ var allBinaryGameLayerManager = allBinaryGameLayerManager
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setDemo(){
-this.logUtil!.putF(commonStrings!.START, this, "setDemo");
+this.logUtil!.putF(this.commonStrings!.START, this, "setDemo");
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -195,7 +195,7 @@ PrimaryThreadPool.getInstance()!.runTask(new DemoRunnable(this));
     var CREATE_GAME: string = "createGame";
 ;
     
-this.logUtil!.putF(commonStrings!.START, this, CREATE_GAME);
+this.logUtil!.putF(this.commonStrings!.START, this, CREATE_GAME);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -211,7 +211,7 @@ this.setStartStateHashtable(NullUtil.getInstance()!.NULL_TABLE);
     
 PrimaryThreadPool.getInstance()!.runTask(new CreateGameRunnable(this, hashtable));
     
-this.logUtil!.putF(commonStrings!.END, this, CREATE_GAME);
+this.logUtil!.putF(this.commonStrings!.END, this, CREATE_GAME);
     
 }
 

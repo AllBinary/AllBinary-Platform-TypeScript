@@ -428,7 +428,7 @@ this.imageProcessorInput= imageProcessorInput;
     //var generatedBufferedImage = generatedBufferedImage
     //var name = name
     //var index = index
-this.logUtil!.putF(commonStrings!.VISIT, this, commonStrings!.VISIT);
+this.logUtil!.putF(this.commonStrings!.VISIT, this, this.commonStrings!.VISIT);
     
 this.result= generatedBufferedImage;
     
@@ -463,7 +463,7 @@ file= new File(filePath);
 ;
     
 this.logUtil!.putF(new StringMaker().
-                            append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, commonStrings!.RUN);
+                            append("File: ")!.append(StringUtil.getInstance()!.toString(file))!.append(" Wrote: ")!.appendboolean(isWritten)!.toString(), this, this.commonStrings!.RUN);
     
 }
 

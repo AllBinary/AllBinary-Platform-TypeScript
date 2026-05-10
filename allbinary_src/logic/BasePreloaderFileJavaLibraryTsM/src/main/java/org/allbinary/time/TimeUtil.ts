@@ -190,13 +190,13 @@ var hourString = hourString
 var minuteString = minuteString
 var secondString = secondString
 
-    var time: number = calendar.getTimeInMillis()!;
+    var time: number = TimeUtil.calendar.getTimeInMillis()!;
 ;
     
 this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString);
     
 
-    var timeDelta: number = calendar.getTimeInMillis()!;
+    var timeDelta: number = TimeUtil.calendar.getTimeInMillis()!;
 ;
     
 

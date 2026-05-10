@@ -109,7 +109,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("View Name: " +transformInfoInterface!.getName(), this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("View Name: " +transformInfoInterface!.getName(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -196,7 +196,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "toXmlDoc()", e);
     
 
                                     }
@@ -285,7 +285,7 @@ this.transformDocumentInterface!.getBaseNode()!.appendChild(domNodeInterface!.to
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.TAGHELPERERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "view()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "view()", e);
     
 
                                     }

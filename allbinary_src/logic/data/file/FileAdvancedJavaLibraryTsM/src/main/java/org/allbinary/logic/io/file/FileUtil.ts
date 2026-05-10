@@ -797,7 +797,7 @@ var total = total
                                     }
                                 
 
-    var fileList: BasicArrayList = directory.search(file, true)!;
+    var fileList: BasicArrayList = this.directory.search(file, true)!;
 ;
     
 

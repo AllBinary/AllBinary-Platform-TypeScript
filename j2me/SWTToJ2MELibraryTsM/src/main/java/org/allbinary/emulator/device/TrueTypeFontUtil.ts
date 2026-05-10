@@ -452,7 +452,7 @@ characterArray[0]= pattern[index];
 ;
     
 
-    var w: number = Math.round((widthFloatArray[shortPatternIndex] /75)) +19;
+    var w: number = Math.round((this.widthFloatArray[shortPatternIndex] /75)) +19;
 ;
     
 _characterWidth[index]= Math.round(w);

@@ -153,7 +153,7 @@ this.eventHandlerName= eventHandlerName;
     
 this.initNextId();
     
-this.userNameEvenNameHashMap!.put(this.eventHandlerName, this);
+UserEmailEventNameData.userNameEvenNameHashMap!.put(this.eventHandlerName, this);
     
 }
 
@@ -173,7 +173,7 @@ var userEmailEventNameString = userEmailEventNameString
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.userNameEvenNameHashMap!.containsKey(userEmailEventNameString);;
+                        return UserEmailEventNameData.userNameEvenNameHashMap!.containsKey(userEmailEventNameString);;
     
 }
 

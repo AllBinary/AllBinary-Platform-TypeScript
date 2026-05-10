@@ -171,7 +171,7 @@ stringBuffer!.append(storeFrontInterface!.getName());
     
 stringBuffer!.append(sep);
     
-stringBuffer!.append(this.SHIPPINGMETHODSFILEPATHSTRING);
+stringBuffer!.append(ShippingMethodsFactory.SHIPPINGMETHODSFILEPATHSTRING);
     
 
     var abPath: AbPath = new AbPath(stringBuffer!.toString(), this.SHIPPINGMETHODSFILENAME) as AbPath;

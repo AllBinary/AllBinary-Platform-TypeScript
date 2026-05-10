@@ -228,7 +228,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("TitleBodyValidation", this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("TitleBodyValidation", this, this.commonStrings!.IS_VALID);
     
 
                                     }
@@ -255,7 +255,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("TitleBodyValidation: " +isValid, this, commonStrings!.IS_VALID);
+                                    this.logUtil!.putF("TitleBodyValidation: " +isValid, this, this.commonStrings!.IS_VALID);
     
 
                                     }
@@ -274,7 +274,7 @@ this.titleValidation= new TitleNotRequiredValidation(hashMap);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put("Failed to validate form", this, commonStrings!.IS_VALID, e);
+                                    this.logUtil!.put("Failed to validate form", this, this.commonStrings!.IS_VALID, e);
     
 
                                     }

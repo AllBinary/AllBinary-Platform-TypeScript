@@ -486,7 +486,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_ADD_DATABASES
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-this.logUtil!.putF(commonStrings!.START, this, this.METHOD_ADD_TABLES);
+this.logUtil!.putF(this.commonStrings!.START, this, this.METHOD_ADD_TABLES);
     
 stringBuffer!.append(UserEntityFactory.getInstance()!.createTable());
     

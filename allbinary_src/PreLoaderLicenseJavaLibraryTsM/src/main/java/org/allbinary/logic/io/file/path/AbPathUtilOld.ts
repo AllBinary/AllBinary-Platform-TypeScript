@@ -134,7 +134,7 @@ var filePath = filePath
                                     }
                                 
 
-    var beginIndex: number = filePath!.length -MIN;
+    var beginIndex: number = filePath!.length -AbPathUtilOld.MIN;
 ;
     
 
@@ -202,7 +202,7 @@ var filePath = filePath
                                     }
                                 
 
-    var endIndex: number = filePath!.length -MIN;
+    var endIndex: number = filePath!.length -AbPathUtilOld.MIN;
 ;
     
 
@@ -386,7 +386,7 @@ var path = path
                         if(path.indexOf("\\") >= 0)
                         
                                     {
-                                    path= path.replace('\\', abPathData!.SEPARATORCHAR);
+                                    path= path.replace('\\', this.abPathData!.SEPARATORCHAR);
     
 
                                     }

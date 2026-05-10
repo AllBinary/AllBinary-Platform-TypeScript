@@ -183,7 +183,7 @@ this.process();
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
 PreLogUtil.put(new StringMaker().
-                            append(NEXT_SONG)!.append(nextSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
+                            append(NEXT_SONG)!.append(nextSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
 this.nextSongSound= nextSongSound;
     
@@ -281,7 +281,7 @@ this.timeDelayHelper!.delay= Math.round(duration);
 ;
     
 PreLogUtil.put(new StringMaker().
-                            append(NO_DURATION_FOR)!.append(this.currentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
+                            append(NO_DURATION_FOR)!.append(this.currentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
 this.currentSongSound!.getPlayerP()!.addPlayerListener(playerListener);
     
@@ -299,10 +299,10 @@ this.noDuration= true;
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(this.ALREADY_PLAYING)!.append(endingCurrentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
+                            append(this.ALREADY_PLAYING)!.append(endingCurrentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
 PreLogUtil.put(new StringMaker().
-                            append(this.STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(this.SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
+                            append(this.STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(this.SONG)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
 endingCurrentSongSound!.getPlayerP()!.stop();
     
@@ -317,7 +317,7 @@ this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound);
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(this.STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(this.SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
+                            append(this.STOPPING)!.append(endingCurrentSongSound!.getResource())!.append(this.SONG)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
 endingCurrentSongSound!.getPlayerP()!.stop();
     
@@ -328,7 +328,7 @@ this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound);
                                 
                         else {
                             PreLogUtil.put(new StringMaker().
-                            append(this.ALREADY_ENDED)!.append(this.PLAY)!.append(startingCurrentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
+                            append(this.ALREADY_ENDED)!.append(this.PLAY)!.append(startingCurrentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
 
                         if(AvianUtil.isAvian())
@@ -354,7 +354,7 @@ startingCurrentSongSound!.getPlayerP()!.start();
                                 
                         else {
                             PreLogUtil.put(new StringMaker().
-                            append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.SONG)!.appendlong(duration)!.toString(), this, commonStrings!.PROCESS);
+                            append(this.PLAY)!.append(this.currentSongSound!.getResource())!.append(this.SONG)!.appendlong(duration)!.toString(), this, this.commonStrings!.PROCESS);
     
 this.currentSongSound!.getPlayerP()!.start();
     
@@ -381,7 +381,7 @@ this.currentSongSound!.getPlayerP()!.start();
 
                                     }
                                 
-PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.PROCESS, e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.PROCESS, e);
     
 }
 
@@ -396,14 +396,14 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.
 
         while(endingCurrentSongSound!.getPlayerP()!.getState() == Player.STARTED)
         {
-PreLogUtil.put(this.WAITING_FOR_MEDIA_TO_END, this, commonStrings!.PROCESS);
+PreLogUtil.put(this.WAITING_FOR_MEDIA_TO_END, this, this.commonStrings!.PROCESS);
     
 Thread.sleep(100);
     
 }
 
 PreLogUtil.put(new StringMaker().
-                            append(this.playerStateUtil!.convert(endingCurrentSongSound!.getPlayerP()!.getState()))!.append(this.commonSeps!.SPACE)!.append(this.PLAY)!.append(startingCurrentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
+                            append(this.playerStateUtil!.convert(endingCurrentSongSound!.getPlayerP()!.getState()))!.append(this.commonSeps!.SPACE)!.append(this.PLAY)!.append(startingCurrentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
 startingCurrentSongSound!.getPlayerP()!.start();
     
@@ -426,7 +426,7 @@ startingCurrentSongSound!.getPlayerP()!.start();
                                     this.stopped= true;
     
 PreLogUtil.put(new StringMaker().
-                            append(this.ENDING)!.append(currentSongSound!.getResource())!.toString(), this, commonStrings!.PROCESS);
+                            append(this.ENDING)!.append(currentSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
 currentSongSound!.getPlayerP()!.stop();
     
@@ -436,7 +436,7 @@ currentSongSound!.getPlayerP()!.stop();
 this.timeDelayHelper!.setStartTime(0);
     
 PreLogUtil.put(new StringMaker().
-                            append(commonStrings!.END)!.append(StringUtil.getInstance()!.toString(currentSongSound))!.toString(), this, commonStrings!.END);
+                            append(this.commonStrings!.END)!.append(StringUtil.getInstance()!.toString(currentSongSound))!.toString(), this, this.commonStrings!.END);
     
 
                 //: 
@@ -455,7 +455,7 @@ PreLogUtil.put(new StringMaker().
 
                                     }
                                 
-PreLogUtil.putOE(commonStrings!.EXCEPTION_LABEL +resource, this, commonStrings!.END, e);
+PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.END, e);
     
 }
 

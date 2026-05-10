@@ -80,7 +80,7 @@ var pageContext = pageContext
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
-                                    this.logUtil!.putF("Properties HashMap: " +propertiesHashMap!.toString(), this, commonStrings!.CONSTRUCTOR);
+                                    this.logUtil!.putF("Properties HashMap: " +propertiesHashMap!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }

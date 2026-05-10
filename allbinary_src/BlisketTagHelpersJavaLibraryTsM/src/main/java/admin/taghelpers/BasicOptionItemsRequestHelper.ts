@@ -278,7 +278,7 @@ values.add(time);
 BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()!.insert(values);
     
 
-    var success: string = "Successfully inserted " +id +" into items table";
+    var success: string = "Successfully inserted " +this.id +" into items table";
 ;
     
 
@@ -308,7 +308,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "inserts()", e);
     
 
                                     }
@@ -360,7 +360,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -417,7 +417,7 @@ BasicOptionItemsEntityFactory.getInstance()!.getBasicOptionItemsEntityInstance()
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

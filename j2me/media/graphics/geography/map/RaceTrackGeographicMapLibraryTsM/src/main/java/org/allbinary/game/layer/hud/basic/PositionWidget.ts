@@ -150,7 +150,7 @@ this.positionString= PositionWidget.toString(this.get());
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paint(graphics, positionString);
+super.paint(graphics, this.positionString);
     
 }
 

@@ -135,7 +135,7 @@ private constructor (){
 ;
     
 
-    var DEFAULT_CHAR_HEIGHT: number = myFont!.DEFAULT_CHAR_HEIGHT;
+    var DEFAULT_CHAR_HEIGHT: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
 ;
     
 productivityHud= new NumberStringHud("Productivity:", 999, basicHudFactory!.ABSOLUTE, basicHudFactory!.HORIZONTAL, this.textX, y +((index +1) *DEFAULT_CHAR_HEIGHT), 0, this.getBasicColorP());
@@ -204,7 +204,7 @@ this.healthHud!.paint(graphics);
     
 this.maxHealthHud!.paint(graphics);
     
-this.getAnimationInterface()!.paintXY(graphics, this.imageX, y);
+this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
     
 }
 

@@ -88,23 +88,23 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(sqlStrings!.SELECT);
+stringBuffer!.append(this.sqlStrings!.SELECT);
     
 stringBuffer!.append(requestedField);
     
-stringBuffer!.append(sqlStrings!.FROM);
+stringBuffer!.append(this.sqlStrings!.FROM);
     
 stringBuffer!.append(this.getTableName());
     
-stringBuffer!.append(sqlStrings!.WHERE);
+stringBuffer!.append(this.sqlStrings!.WHERE);
     
 stringBuffer!.append(key);
     
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+stringBuffer!.append(this.sqlStrings!.EQUAL_QUOTE);
     
 stringBuffer!.append(value);
     
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
     var sqlStatement: string = stringBuffer!.toString()!;
@@ -131,15 +131,15 @@ field= rset.getString(requestedField);
                                     {
                                     stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
+stringBuffer!.append(this.sqlStrings!.SQL_STATEMENT_LABEL);
     
 stringBuffer!.append(sqlStatement);
     
-stringBuffer!.append(sqlStrings!.FIELD_VALUE);
+stringBuffer!.append(this.sqlStrings!.FIELD_VALUE);
     
 stringBuffer!.append(field);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
     
 
                                     }
@@ -189,15 +189,15 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(sqlStrings!.SELECT);
+stringBuffer!.append(this.sqlStrings!.SELECT);
     
 stringBuffer!.append(requestedField);
     
-stringBuffer!.append(sqlStrings!.FROM);
+stringBuffer!.append(this.sqlStrings!.FROM);
     
 stringBuffer!.append(this.getTableName());
     
-stringBuffer!.append(sqlStrings!.WHERE);
+stringBuffer!.append(this.sqlStrings!.WHERE);
     
 
         try {
@@ -240,17 +240,17 @@ value= .toCharArray();
     
 stringBuffer!.append(key);
     
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+stringBuffer!.append(this.sqlStrings!.EQUAL_QUOTE);
     
 stringBuffer!.append(value);
     
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
                         if(i < size -1)
                         
                                     {
-                                    stringBuffer!.append(sqlStrings!.AND);
+                                    stringBuffer!.append(this.sqlStrings!.AND);
     
 
                                     }
@@ -276,15 +276,15 @@ field= rset.getString(requestedField);
                                     {
                                     stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(sqlStrings!.SQL_STATEMENT_LABEL);
+stringBuffer!.append(this.sqlStrings!.SQL_STATEMENT_LABEL);
     
 stringBuffer!.append(sqlStatement);
     
-stringBuffer!.append(sqlStrings!.FIELD_VALUE);
+stringBuffer!.append(this.sqlStrings!.FIELD_VALUE);
     
 stringBuffer!.append(field);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
     
 
                                     }
@@ -339,7 +339,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_GET_FIELD);
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(sqlStrings!.SELECT);
+stringBuffer!.append(this.sqlStrings!.SELECT);
     
 
         try {
@@ -370,19 +370,19 @@ stringBuffer!.append(keyArray[i]!.toString());
     
 }
 
-stringBuffer!.append(sqlStrings!.FROM);
+stringBuffer!.append(this.sqlStrings!.FROM);
     
 stringBuffer!.append(this.getTableName());
     
-stringBuffer!.append(sqlStrings!.WHERE);
+stringBuffer!.append(this.sqlStrings!.WHERE);
     
 stringBuffer!.append(key);
     
-stringBuffer!.append(sqlStrings!.EQUAL_QUOTE);
+stringBuffer!.append(this.sqlStrings!.EQUAL_QUOTE);
     
 stringBuffer!.append(value);
     
-stringBuffer!.append(sqlStrings!.CLOSE_QUOTE);
+stringBuffer!.append(this.sqlStrings!.CLOSE_QUOTE);
     
 
     var sqlStatement: string = stringBuffer!.toString()!;

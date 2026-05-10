@@ -78,7 +78,7 @@ export class HealPickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFac
                 //@Throws(Exception.constructor)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= new HealPickedUpLayerInterfaceFactory();
+HealPickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface= new HealPickedUpLayerInterfaceFactory();
     
 }
 

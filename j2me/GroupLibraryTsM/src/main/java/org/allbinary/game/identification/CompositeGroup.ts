@@ -99,11 +99,11 @@ this.list.clear();
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(ADDING_LABEL);
+stringBuffer!.append(CompositeGroup.ADDING_LABEL);
     
 stringBuffer!.append(groupInterface!.toString());
     
-stringBuffer!.append(TO_LABEL);
+stringBuffer!.append(CompositeGroup.TO_LABEL);
     
 stringBuffer!.append(StringUtil.getInstance()!.toString(this.groupInterface));
     

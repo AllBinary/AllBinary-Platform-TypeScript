@@ -7,6 +7,10 @@ import { RectF } from './RectF';
 
 /*actual*/ export class Canvas
 {
+  getClipBounds(newClip: Rect) {
+    throw new Error('Method not implemented.');
+  }
+
   restore() {
     throw new Error('Method not implemented.');
   }
@@ -16,14 +20,6 @@ import { RectF } from './RectF';
   rotate(arg0: number) {
     throw new Error('Method not implemented.');
   }
-
-  drawBitmapRect(img: Bitmap, rect: Rect, dstRect: Rect, paint: Paint) {
-    throw new Error('Method not implemented.');
-  }
-
-   drawBitmap(arg0: Bitmap, newx: number, newy: number, paint: Paint) {
-     throw new Error('Method not implemented.');
-   }
 
     save() {
         throw new Error('Method not implemented.');
@@ -63,6 +59,14 @@ import { RectF } from './RectF';
 
     public drawTextO(text: string, start: number, end: number, x: number, y: number, paint: Paint) {
         throw new Error("No Impl");
+    }
+
+    public drawBitmapRect(img: Bitmap, rect: Rect, dstRect: Rect, paint: Paint) {
+        throw new Error('Method not implemented.');
+    }
+
+    public drawBitmap(arg0: Bitmap, newx: number, newy: number, paint: Paint) {
+        throw new Error('Method not implemented.');
     }
 
     public translate(dx: number, dy: number): void {

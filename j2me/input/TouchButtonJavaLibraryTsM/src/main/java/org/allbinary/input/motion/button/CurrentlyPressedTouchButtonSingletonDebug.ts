@@ -179,7 +179,7 @@ var index = index
     var touchButtonInput: TouchButtonInput = super.removeAt(index)!;
 ;
     
-this.listString= list.toString();
+this.listString= this.list.toString();
     
 this.string= new StringMaker().
                             append(this.listString)!.append(this.append)!.toString();
@@ -199,7 +199,7 @@ var touchButtonInput = touchButtonInput
     var isRemoved: boolean = super.remove(touchButtonInput)!;
 ;
     
-this.listString= list.toString();
+this.listString= this.list.toString();
     
 this.string= new StringMaker().
                             append(this.listString)!.append(this.append)!.toString();
@@ -217,7 +217,7 @@ this.string= new StringMaker().
 var touchButtonInput = touchButtonInput
 super.add(touchButtonInput);
     
-this.listString= list.toString();
+this.listString= this.list.toString();
     
 this.string= new StringMaker().
                             append(this.listString)!.append(this.append)!.toString();

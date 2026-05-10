@@ -143,7 +143,7 @@ this.setTable(this.tableName);
     var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-keyAndValue!.put(NOTHING, NOTHING);
+keyAndValue!.put(this.NOTHING, this.NOTHING);
     
 
     var hashMap: HashMap<any, any> = getRow(keyAndValue)!;
@@ -216,7 +216,7 @@ keyAndValue!.put(NOTHING, NOTHING);
     var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-keyAndValue!.put(NOTHING, NOTHING);
+keyAndValue!.put(this.NOTHING, this.NOTHING);
     
 
     var hashMap: HashMap<any, any> = getRow(keyAndValue)!;

@@ -120,7 +120,7 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
 
     public static initMax(max: number){
 var max = max
-instance= new PathFindingInfoFactory(new SimplePathFinderGraphVisitorFactory(1, 1, Integer.MAX_VALUE), max);
+PathFindingInfoFactory.instance= new PathFindingInfoFactory(new SimplePathFinderGraphVisitorFactory(1, 1, Integer.MAX_VALUE), max);
     
 }
 

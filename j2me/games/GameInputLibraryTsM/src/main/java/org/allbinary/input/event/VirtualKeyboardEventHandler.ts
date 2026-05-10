@@ -114,7 +114,7 @@ this.fireEvent(this.SHOW_EVENT);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "open", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "open", e);
     
 }
 
@@ -132,7 +132,7 @@ this.fireEvent(this.HIDE_EVENT);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CLOSE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CLOSE, e);
     
 }
 

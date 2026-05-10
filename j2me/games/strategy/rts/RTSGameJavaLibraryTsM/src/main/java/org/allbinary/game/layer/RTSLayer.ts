@@ -359,7 +359,7 @@ this.healthInterface= healthInterface;
     
 this.rtsFormInput= rtsFormInput;
     
-this.setPosition(x, y, z);
+this.setPosition(x, y, this.z);
     
 this.verticleBuildAnimationInterface= verticleBuildAnimationInterfaceFactoryInterface!.getInstance(0) as IndexedAnimation;
     
@@ -544,7 +544,7 @@ this.animationInterface= this.indexedButShouldBeRotationAnimationInterface;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "processTick", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processTick", e);
     
 }
 

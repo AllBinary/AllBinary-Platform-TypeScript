@@ -256,7 +256,7 @@ this.jTabbedPane= new javax.swing.JTabbedPane();
     
 this.statusJPanel= new javax.swing.JPanel();
     
-statusJLabel= new javax.swing.JLabel();
+MyFrame.statusJLabel= new javax.swing.JLabel();
     
 this.menuJMenuBar= new javax.swing.JMenuBar();
     
@@ -474,9 +474,9 @@ getContentPane()!.add(this.jPanel1, java.awt.BorderLayout.CENTER);
     
 this.statusJPanel!.setLayout(new java.awt.GridLayout(1, 0));
     
-statusJLabel!.setText("Status Bar");
+MyFrame.statusJLabel!.setText("Status Bar");
     
-this.statusJPanel!.add(statusJLabel);
+this.statusJPanel!.add(MyFrame.statusJLabel);
     
 getContentPane()!.add(this.statusJPanel, java.awt.BorderLayout.SOUTH);
     
@@ -1009,7 +1009,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
 
         try {
             
-    var newName: string = "graphic" +this.numberOfWorkAreas;
+    var newName: string = "graphic" +MyFrame.numberOfWorkAreas;
 ;
     
 
@@ -1080,7 +1080,7 @@ this.fileJDialog!.setVisible(true);
     
 this.logUtil!.putF("Export: " +DomHelper.getInstance()!.toString(document), this, "exportJMenuItem1ActionPerformed");
     
-this.xslHelper!.export(file, this.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document);
+this.xslHelper!.export(file, MyFrame.TEMPLATE_EXPORT_PATH +"/" +this.JAVA_TEMPLATE, document);
     
 
                 //: 
@@ -1117,7 +1117,7 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
                         if(LOGGING.contains(LOGGING.MENUEVENT))
                         
                                     {
-                                    this.guiLog!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+                                    this.guiLog!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE, e);
     
 
                                     }

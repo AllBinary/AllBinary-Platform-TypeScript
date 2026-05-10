@@ -120,7 +120,7 @@ this.name= nameTextNode!.getNodeValue();
 
                         }
                             
-this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(this.FRAMES, workAreaNodeList!.item(0)!.getChildNodes());
+this.canvasNodeList= DomHelper.getInstance()!.getChildrenWithoutTextNodes(WorkAreaDom.FRAMES, workAreaNodeList!.item(0)!.getChildNodes());
     
 
                                     }

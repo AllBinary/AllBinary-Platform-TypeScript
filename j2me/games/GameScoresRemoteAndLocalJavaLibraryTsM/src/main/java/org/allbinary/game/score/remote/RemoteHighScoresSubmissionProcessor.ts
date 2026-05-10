@@ -108,7 +108,7 @@ public constructor (){
     //var highScore = highScore
 
         try {
-            this.logUtil!.putF("Begin Remote HighScores Submission", this, commonStrings!.PROCESS);
+            this.logUtil!.putF("Begin Remote HighScores Submission", this, this.commonStrings!.PROCESS);
     
 
     var gameInfoData: GameInfoData = GameInfoData.getInstance()!;
@@ -144,7 +144,7 @@ hashtable.put(RemoteHighScoresData.getInstance()!.SCORE, (highScore!.getScore())
                                     {
                                     
     var resultHashtable: Hashtable<any, any> = new XmlRpcRemoteHighScoresClient(abeClientInformation, "highscoresubmissionservicessl.php", "HighScoreSubmissionService.process").
-                            get(hashtable, noCrypt) as Hashtable<any, any>;
+                            get(hashtable, this.noCrypt) as Hashtable<any, any>;
 ;
     
 remoteHighScores!.update(resultHashtable);
@@ -156,7 +156,7 @@ remoteHighScores!.update(resultHashtable);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
 }
 

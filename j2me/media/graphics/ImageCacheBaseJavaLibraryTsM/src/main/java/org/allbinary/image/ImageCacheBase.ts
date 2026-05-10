@@ -333,19 +333,19 @@ index < size; index++)
 index >= 0; index--)
         {
 
-    var width: number = widths[index]!;
+    var width: number = this.widths[index]!;
 ;
     
 
-    var height: number = heights[index]!;
+    var height: number = this.heights[index]!;
 ;
     
 
-    var total: number = listOfList[index]!.size()!;
+    var total: number = this.listOfList[index]!.size()!;
 ;
     
 
-    var totalAvailable: number = availableListOfList[index]!.size()!;
+    var totalAvailable: number = this.availableListOfList[index]!.size()!;
 ;
     
 stringBuffer!.append(" w: ");

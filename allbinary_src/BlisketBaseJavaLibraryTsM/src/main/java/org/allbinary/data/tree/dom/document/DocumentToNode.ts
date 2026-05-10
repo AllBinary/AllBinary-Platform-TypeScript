@@ -70,9 +70,9 @@ export class DocumentToNode
             
     public static convertDocumentToNodeString(documentString: string): string{
 var documentString = documentString
-documentString= DocumentToNode.remove(documentString, XMLJSPROOTSTART, XMLEND);
+documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTSTART, DocumentToNode.XMLEND);
     
-documentString= DocumentToNode.remove(documentString, XMLJSPROOTENDSTART, XMLEND);
+documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTENDSTART, DocumentToNode.XMLEND);
     
 
     var replaceXmlRoot: Replace = new Replace(XMLROOT, StringUtil.getInstance()!.EMPTY_STRING);

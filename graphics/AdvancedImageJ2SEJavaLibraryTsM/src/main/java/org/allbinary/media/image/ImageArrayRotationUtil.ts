@@ -131,7 +131,7 @@ export class ImageArrayRotationUtil
     var index: number = 0;
 index < bufferedImageArray!.length; index++)
         {
-this.logUtil!.putF(this.TOTAL_ANGLE +totalAngle, this, commonStrings!.RUN);
+this.logUtil!.putF(this.TOTAL_ANGLE +totalAngle, this, this.commonStrings!.RUN);
     
 generatedBufferedImage= ImageJ2SERotationUtil.getInstance()!.getRotatedImage(bufferedImageArray[index]!, totalAngle!.intValue());
     

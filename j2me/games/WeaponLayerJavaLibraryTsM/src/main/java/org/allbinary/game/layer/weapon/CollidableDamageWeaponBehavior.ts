@@ -195,7 +195,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
             
     public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
+this.damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
     
 this.collided= true;
     

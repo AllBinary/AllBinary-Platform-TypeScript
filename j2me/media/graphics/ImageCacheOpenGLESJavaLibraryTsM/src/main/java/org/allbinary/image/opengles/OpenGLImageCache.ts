@@ -298,7 +298,7 @@ this.renderer.add(image);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
     
 }
 

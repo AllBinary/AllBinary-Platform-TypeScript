@@ -129,7 +129,7 @@ var path = path
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.subDirectory!.search(KEY, new AbFile(path));;
+                        return this.subDirectory!.search(WeblisketFinder.KEY, new AbFile(path));;
     
 
                 //: 

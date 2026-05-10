@@ -130,7 +130,7 @@ InputAutomationConfigurationFactory.inputAutomationConfiguration= root.getValue(
     var inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration> = InputAutomationConfigurationFactory.inputAutomationConfiguration!.getInputAutomationModuleConfigurationList()!;
 ;
     
-logUtil!.putF("isInstalled: " +inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
+logUtil!.putF("isInstalled: " +InputAutomationConfigurationFactory.inputAutomationConfiguration!.isInstalled(), INPUT_AUTOMATION_CONFIGURATION, commonStrings!.INIT);
     
 
     var size: number = inputAutomationModuleConfigurationList!.size!;

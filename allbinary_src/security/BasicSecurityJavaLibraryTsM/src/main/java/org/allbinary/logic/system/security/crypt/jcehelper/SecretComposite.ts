@@ -87,7 +87,7 @@ this.key= key;
 var array = array
 array= this.mutilate(array);
     
-this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
+this.cipher.init(Cipher.ENCRYPT_MODE, this.secretKey);
     
 
 

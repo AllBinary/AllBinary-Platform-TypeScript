@@ -126,7 +126,7 @@ graphics.setColor(this.basicColor!.intValue());
     var charHeight: number = myFont!.DEFAULT_CHAR_HEIGHT;
 ;
     
-graphics.drawString(this.title, halfWidth -beginWidth, charHeight, anchor);
+graphics.drawString(this.title, halfWidth -beginWidth, charHeight, this.anchor);
     
 
     var size: number = this.inputInfo!.length
@@ -143,7 +143,7 @@ index < size; index++)
         {
 beginWidth= (graphics.getFont()!.stringWidth(this.inputInfo[index]!)>>1);
     
-graphics.drawString(this.inputInfo[index]!, halfWidth -beginWidth, (index +3) *charHeight, anchor);
+graphics.drawString(this.inputInfo[index]!, halfWidth -beginWidth, (index +3) *charHeight, this.anchor);
     
 }
 

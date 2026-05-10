@@ -135,7 +135,7 @@ private constructor (){
     //var abeClientInformation = abeClientInformation
 
         try {
-            this.logUtil!.putF("Getting Keys", this, commonStrings!.GET);
+            this.logUtil!.putF("Getting Keys", this, this.commonStrings!.GET);
     
 this.abeLicenseInterface= AbeNoLicense.getInstance();
     
@@ -151,7 +151,7 @@ this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
                                 )
                         
                                     {
-                                    this.logUtil!.putF("Default Key: " +this.abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, commonStrings!.GET);
+                                    this.logUtil!.putF("Default Key: " +this.abeLicenseInterface!.getKey(AbeClientInformationData.getInstance()!.KEY), this, this.commonStrings!.GET);
     
 
                                     }
@@ -166,7 +166,7 @@ this.abeLicenseInterface= licenseClient!.get(abeClientInformation);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e);
+this.logUtil!.put("Licensing IO Error", this, this.commonStrings!.GET, e);
     
 
 
@@ -178,7 +178,7 @@ this.logUtil!.put("Licensing IO Error", this, commonStrings!.GET, e);
                 //: 
 /* catch(e) 
             {
-this.logUtil!.put("Licensing Failure", this, commonStrings!.GET, e);
+this.logUtil!.put("Licensing Failure", this, this.commonStrings!.GET, e);
     
 
 

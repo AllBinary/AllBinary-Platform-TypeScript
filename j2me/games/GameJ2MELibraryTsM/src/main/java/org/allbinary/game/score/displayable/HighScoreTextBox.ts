@@ -114,7 +114,7 @@ export class HighScoreTextBox extends CustomTextBox {
 
     private readonly highScoreUtil: HighScoreUtil
 
-    private readonly pleaseWait: Paintable = new SimpleTextPaintable(commonStrings!.PLEASE_WAIT, BasicColorFactory.getInstance()!.WHITE);
+    private readonly pleaseWait: Paintable = new SimpleTextPaintable(this.commonStrings!.PLEASE_WAIT, BasicColorFactory.getInstance()!.WHITE);
 
     private paintable: Paintable = NullPaintable.getInstance()!;
 

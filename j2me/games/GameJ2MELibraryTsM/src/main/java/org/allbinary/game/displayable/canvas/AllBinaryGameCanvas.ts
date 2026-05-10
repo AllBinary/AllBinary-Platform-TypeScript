@@ -687,7 +687,7 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT, e);
     
 }
 
@@ -902,7 +902,7 @@ this.closeMenu();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
     
 }
 
@@ -981,7 +981,7 @@ System.gc();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.logUtil!.putF(commonStrings!.START, this, gameStrings!.UNPAUSE);
+this.logUtil!.putF(this.commonStrings!.START, this, gameStrings!.UNPAUSE);
     
 this.closeMenu();
     
@@ -1050,7 +1050,7 @@ this.gameKeyEventHandler!.addListener(this.mainMenuInputProcessor);
                 //@Throws(Exception.constructor)
             
     public toggleMenu(){
-this.logUtil!.putF(commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU);
+this.logUtil!.putF(this.commonStrings!.START, this, this.gameStrings!.TOGGLE_MENU);
     
 
                         if(this.getMenuPaintable() == this.getOpenMenuPaintable())
@@ -1152,7 +1152,7 @@ this.setLayerManager(gameLayerManager);
     var BUFF_MESSAGE: string = "XXX Not Buffering Causes Concurrency Issues XXX";
 ;
     
-this.logUtil!.putF(BUFF_MESSAGE, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(BUFF_MESSAGE, this, this.commonStrings!.CONSTRUCTOR);
     
 
                                     }
@@ -1515,7 +1515,7 @@ var item = item
 ;
     
 this.logUtil!.putF(new StringMaker().
-                            append(commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
+                            append(this.commonLabels!.ITEM_LABEL)!.append(itemLabel)!.toString(), this, "itemStateChanged");
     
 
                         if(item instanceof ChoiceGroup)
@@ -1844,7 +1844,7 @@ this.gameBehavior!.updateEndGameProcessor(this);
                 //@Throws(Exception.constructor)
             
     cleanupGame(){
-this.logUtil!.putF(commonStrings!.START, this, this.commonStrings!.CLEANUP);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CLEANUP);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -1991,7 +1991,7 @@ this.setInitialized(true);
                         if(this.getCustomCommandListener() == NullCommandListener.NULL_COMMAND_LISTENER)
                         
                                     {
-                                    this.logUtil!.putF("Show Game Paintable in DemoCanvas Thread", this, BUILD_GAME);
+                                    this.logUtil!.putF("Show Game Paintable in DemoCanvas Thread", this, this.BUILD_GAME);
     
 this.gameCanvasStartListener!.showGamePaintable();
     
@@ -1999,7 +1999,7 @@ this.gameCanvasStartListener!.showGamePaintable();
                                     }
                                 
                         else {
-                            this.logUtil!.putF("No GameCanvasStartListener", this, BUILD_GAME);
+                            this.logUtil!.putF("No GameCanvasStartListener", this, this.BUILD_GAME);
     
 
                         }
@@ -2060,7 +2060,7 @@ this.gameCanvasStartListener= gameCanvasStartListener;
                 //@Throws(Exception.constructor)
             
     public loadState(){
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.LOAD);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.LOAD);
     
 
     var hashtable: Hashtable<any, any> = this.getLoadStateHashtable()!;
@@ -2430,7 +2430,7 @@ Thread.sleep(this.YIELD_SLEEP);
     public run(){
 
         try {
-            this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
@@ -2476,13 +2476,13 @@ gameAdState!.setGameIsReady(true);
     
 this.gameBehavior!.run(this);
     
-this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 
@@ -2504,7 +2504,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                         if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD))
                         
                                     {
-                                    this.logUtil!.putF(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, commonStrings!.RUN);
+                                    this.logUtil!.putF(this.openGLFeatureFactory!.OPENGL_AS_GAME_THREAD.getName(), this, this.commonStrings!.RUN);
     
 
                                     }
@@ -2513,7 +2513,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                         if(J2MEUtil.isHTML())
                         
                                     {
-                                    this.logUtil!.putF(GraphicsStrings.getInstance()!.HTML, this, commonStrings!.RUN);
+                                    this.logUtil!.putF(GraphicsStrings.getInstance()!.HTML, this, this.commonStrings!.RUN);
     
 
                                     }
@@ -2535,7 +2535,7 @@ OpenGLThreadUtil.getInstance()!.onResume();
                         if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS))
                         
                                     {
-                                    this.logUtil!.putF(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, commonStrings!.RUN);
+                                    this.logUtil!.putF(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, this.commonStrings!.RUN);
     
 OpenGLThreadUtil.getInstance()!.onResume();
     
@@ -2552,7 +2552,7 @@ this.end();
                                     }
                                 
                         else {
-                            this.logUtil!.putF("this thread", this, commonStrings!.RUN);
+                            this.logUtil!.putF("this thread", this, this.commonStrings!.RUN);
     
 
         while(this.isRunning())

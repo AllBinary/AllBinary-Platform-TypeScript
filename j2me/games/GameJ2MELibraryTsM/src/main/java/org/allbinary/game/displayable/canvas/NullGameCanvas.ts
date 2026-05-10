@@ -120,7 +120,7 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
     
 nullGameCanvas!.setInitialized(true);
     
-nullGameCanvas!.setTitle(NO_GAME);
+nullGameCanvas!.setTitle(NullGameCanvas.NO_GAME);
     
 
 
@@ -215,15 +215,15 @@ this.setCommandListener(cmdListener);
     public run(){
 
         try {
-            this.logUtil!.putF(commonStrings!.START_RUNNABLE, this, commonStrings!.RUN);
+            this.logUtil!.putF(this.commonStrings!.START_RUNNABLE, this, this.commonStrings!.RUN);
     
-this.logUtil!.putF(commonStrings!.END_RUNNABLE, this, commonStrings!.RUN);
+this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.RUN);
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, e);
     
 }
 

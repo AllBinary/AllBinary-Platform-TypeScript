@@ -102,7 +102,7 @@ Thread.sleep(2000);
                 //@Throws(Exception.constructor)
             
     public process(){
-this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
     var hashtable: Hashtable<any, any> = InputRobotFactory.getInstance()!.get()!;

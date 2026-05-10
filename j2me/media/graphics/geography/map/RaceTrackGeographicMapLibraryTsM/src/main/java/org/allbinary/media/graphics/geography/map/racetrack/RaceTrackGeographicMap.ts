@@ -122,7 +122,7 @@ stringBuffer!.append(" not in: ");
     
 stringBuffer!.appendint(customMapArray[0]!.length);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID);
     
 
                         if(geographicMapCellPosition!.getColumn() == customMapArray[0]!.length)
@@ -166,7 +166,7 @@ stringBuffer!.append(" not in: ");
     
 stringBuffer!.appendint(customMapArray!.length);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.IS_VALID);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID);
     
 
                         if(geographicMapCellPosition!.getRow() == customMapArray!.length)

@@ -191,7 +191,7 @@ private constructor (){
     var graphics: Graphics = image.getGraphics()!;
 ;
     
-graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, anchor);
+graphics.drawImage(originalImage, halfWidthDelta, halfHeightDelta, this.anchor);
     
 
 

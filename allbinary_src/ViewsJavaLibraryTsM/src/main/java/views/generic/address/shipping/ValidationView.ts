@@ -97,7 +97,7 @@ this.streetAddressList= billingAddressesEntity!.get();
                                     }
                                 
 
-    var size: number = streetAddressList!.size()!;
+    var size: number = this.streetAddressList!.size()!;
 ;
     
 

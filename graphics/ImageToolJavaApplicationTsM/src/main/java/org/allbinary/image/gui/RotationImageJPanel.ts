@@ -225,7 +225,7 @@ generateJButtonActionPerformed(evt);
     
 this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
-                                                    commonStrings!.UP,commonStrings!.DOWN,"-90","90";
+                                                    this.commonStrings!.UP,this.commonStrings!.DOWN,"-90","90";
                                                 ]));
     
 this.totalAngleJComboBox!.addActionListener(new class extends java.awt.event.ActionListener
@@ -364,7 +364,7 @@ file= new File(filePath);
     var isWritten: boolean = ImageIO.write(RotationImageJPanel.prototype.result as RenderedImage, imageStrings!.PNG, file)!;
 ;
     
-this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, commonStrings!.RUN);
+this.logUtil!.putF("File: " +file +" Wrote: " +isWritten, this, this.commonStrings!.RUN);
     
 }
 

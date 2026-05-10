@@ -103,7 +103,7 @@ public constructor (mouseActionScriptInputInterface: MouseActionScriptInputInter
 
             super();
             //var mouseActionScriptInputInterface = mouseActionScriptInputInterface
-this.logUtil!.putF(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, this.commonStrings!.CONSTRUCTOR);
     
 this.initComponents();
     

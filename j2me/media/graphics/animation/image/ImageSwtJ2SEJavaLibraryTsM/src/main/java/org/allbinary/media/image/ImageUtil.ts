@@ -120,13 +120,13 @@ private constructor (){
             super();
         
         try {
-            this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+            this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONSTRUCTOR, e);
     
 }
 
@@ -404,7 +404,7 @@ this.logUtil!.putF(new StringMaker().
 dy= (newHeight -height) /2;
     
 this.logUtil!.putF(new StringMaker().
-                            append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, CREATE_BUFFERED_IMAGE);
+                            append("Translate dx: ")!.appendfloat(dx)!.append(" dy: ")!.appendfloat(dy)!.toString(), this, this.CREATE_BUFFERED_IMAGE);
     
 
                                     }

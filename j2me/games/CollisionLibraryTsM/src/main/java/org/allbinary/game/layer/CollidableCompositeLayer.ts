@@ -107,7 +107,7 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
     public getArtificialIntelligenceInterface(): ArtificialIntelligenceInterface{
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 
 

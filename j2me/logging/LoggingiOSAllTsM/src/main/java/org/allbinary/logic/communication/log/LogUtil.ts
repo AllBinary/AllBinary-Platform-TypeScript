@@ -132,7 +132,7 @@ this.put(specialMessage, anyType, functionName, exception);
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
 ;
     
-console.log(this.LOG_SUCCESS + message);
+console.log(LogUtil.LOG_SUCCESS + message);
     
 }
 
@@ -162,7 +162,7 @@ console.log(this.LOG_SUCCESS + message);
     var message: string = this.logFormatUtil!.get(className, functionName, specialMessage, exception)!;
 ;
     
-console.log(this.LOG_SUCCESS + message);
+console.log(LogUtil.LOG_SUCCESS + message);
     
 }
 

@@ -127,8 +127,6 @@ export class GameInputMappingCanvas extends GameCommandCanvas implements InputMa
 
     private readonly inputMapping: PersistentInputMapping
 
-    private readonly inputToGameKeyMapping: InputToGameKeyMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!.getInputMapping()!;
-
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
 
     private readonly abeClientInformation: AbeClientInformationInterface
@@ -146,7 +144,7 @@ public constructor (abeClientInformation: AbeClientInformationInterface, command
 
                             //For kotlin this is before the body of the constructor.
                     
-this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 
                         if(helpPaintable == 
@@ -283,7 +281,7 @@ stringBuffer!.append(" Input: ");
     
 stringBuffer!.append(this.stringUtil!.toString(input));
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.PROCESS);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.PROCESS);
     
 
                         if(this.selectedGameKey != this.NONE)
@@ -402,7 +400,7 @@ this.repaintBehavior!.onChangeRepaint(this);
     var METHOD_NAME: string = "addNewMapping";
 ;
     
-this.logUtil!.putF(commonStrings!.START, this, METHOD_NAME);
+this.logUtil!.putF(this.commonStrings!.START, this, METHOD_NAME);
     
 
     var isInputAlreadyMapped: boolean = this.inputMapping!.getInputMapping()!.isMapped(input)!;
@@ -469,11 +467,11 @@ stringBuffer!.append("Start GameKey: ");
     
 stringBuffer!.append("Remove Key Mapping: GameKey: ");
     
-stringBuffer!.append(stringUtil!.toString(this.selectedGameKey));
+stringBuffer!.append(this.stringUtil!.toString(this.selectedGameKey));
     
 stringBuffer!.append(" Input: ");
     
-stringBuffer!.append(stringUtil!.toString(this.selectedInput));
+stringBuffer!.append(this.stringUtil!.toString(this.selectedInput));
     
 this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
     
@@ -500,7 +498,7 @@ this.update();
     public setDefault(){
 this.inputMapping!.setDefault(this.abeClientInformation);
     
-this.helpPaintable!.update(NONE, NONE);
+this.helpPaintable!.update(this.NONE, this.NONE);
     
 this.repaintBehavior!.onChangeRepaint(this);
     

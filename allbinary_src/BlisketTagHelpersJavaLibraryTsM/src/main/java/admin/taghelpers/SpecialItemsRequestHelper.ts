@@ -238,7 +238,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "inserts()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "inserts()", e);
     
 
                                     }
@@ -290,7 +290,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.insert
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -347,7 +347,7 @@ SpecialItemsEntityFactory.getInstance()!.getSpecialItemsEntityInstance()!.update
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }

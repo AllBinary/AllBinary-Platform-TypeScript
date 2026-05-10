@@ -204,7 +204,7 @@ super.paint(graphics);
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -216,7 +216,7 @@ super.paint(graphics);
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -227,7 +227,7 @@ super.paint(graphics);
 
 
 
-                            throw new Exception(commonStrings!.NOT_IMPLEMENTED);
+                            throw new Exception(this.commonStrings!.NOT_IMPLEMENTED);
                     
 }
 
@@ -561,13 +561,13 @@ stringBuffer!.append(pickupBehavior!.toString());
                                 
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(READYFOREXPLOSION);
+stringBuffer!.append(CollidableDestroyableDamageableLayer.READYFOREXPLOSION);
     
 stringBuffer!.appendboolean(this.readyForExplosion);
     
 stringBuffer!.append(commonSeps!.NEW_LINE);
     
-stringBuffer!.append(commonStrings!.INIT);
+stringBuffer!.append(this.commonStrings!.INIT);
     
 stringBuffer!.append(commonSeps!.SPACE);
     

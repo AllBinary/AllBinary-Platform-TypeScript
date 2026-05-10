@@ -121,7 +121,7 @@ frame= rotationAnimationInterface!.getFrame();
                                     }
                                 
 
-    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(this.framePoints[frame]!, 6, vectorExplosionGenerator!.ROTATION)!;
+    var points: number[][][] = this.vectorExplosionGenerator!.getInstance(this.framePoints[frame]!, 6, this.vectorExplosionGenerator!.ROTATION)!;
 ;
     
 

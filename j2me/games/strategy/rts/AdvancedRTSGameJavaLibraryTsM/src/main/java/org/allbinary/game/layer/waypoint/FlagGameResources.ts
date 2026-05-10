@@ -93,7 +93,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(ROOT);
     
-stringBuffer!.append(DESTROY);
+stringBuffer!.append(FlagGameResources.DESTROY);
     
 stringBuffer!.append(string);
     
@@ -103,7 +103,7 @@ this.RESOURCE_DESTROY= stringBuffer!.toString();
     
 stringBuffer!.delete(0, stringBuffer!.length());
     
-stringBuffer!.append(ICON);
+stringBuffer!.append(FlagGameResources.ICON);
     
 stringBuffer!.append(ROOT);
     
@@ -113,7 +113,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(ROOT);
     
-stringBuffer!.append(ICON);
+stringBuffer!.append(FlagGameResources.ICON);
     
 stringBuffer!.append(string);
     
@@ -125,7 +125,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 stringBuffer!.append(ROOT);
     
-stringBuffer!.append(ICON_BUILD);
+stringBuffer!.append(FlagGameResources.ICON_BUILD);
     
 stringBuffer!.append(string);
     

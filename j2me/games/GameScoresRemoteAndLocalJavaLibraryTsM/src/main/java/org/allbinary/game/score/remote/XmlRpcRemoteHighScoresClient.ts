@@ -131,7 +131,7 @@ stringBuffer!.append(SEP);
     
 stringBuffer!.append(serverUrl);
     
-this.logUtil!.putF(stringBuffer!.toString(), this, commonStrings!.GET);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.GET);
     
 
     var xmlRpcClient: XmlRpcClient = new XmlRpcClient(serverUrl);
@@ -147,7 +147,7 @@ xmlRpcClient!.setBasicAuthentication(
     var hashtable: Hashtable<any, any> = anyType as Hashtable<any, any>;
 ;
     
-this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, commonStrings!.GET);
+this.logUtil!.putF(CLIENT_INFO +hashtable.toString(), this, this.commonStrings!.GET);
     
 param.addElement(hashtable);
     
@@ -155,7 +155,7 @@ param.addElement(hashtable);
     var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, cryptInterface)!;
 ;
     
-this.logUtil!.putF(RESULT +result.toString(), this, commonStrings!.GET);
+this.logUtil!.putF(RESULT +result.toString(), this, this.commonStrings!.GET);
     
 isOnline= true;
     
@@ -169,7 +169,7 @@ isOnline= true;
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, commonStrings!.GET, e);
+this.logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTrace(e), this, this.commonStrings!.GET, e);
     
 
                         if(!e.getMessage()!.startsWith(HOST_NOT_RESOLVED))
@@ -198,7 +198,7 @@ this.logUtil!.put(TRYING_OTHER_SERVERS +ExceptionUtil.getInstance()!.getStackTra
                 //: 
 /* catch(e) 
             {
-this.logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
+this.logUtil!.put(SERVER_REPORTED_ERROR, this, this.commonStrings!.GET, e);
     
 
 
@@ -211,7 +211,7 @@ this.logUtil!.put(SERVER_REPORTED_ERROR, this, commonStrings!.GET, e);
                 //: 
 /* catch(e) 
             {
-this.logUtil!.put(UNKNOWN_ERROR, this, commonStrings!.GET, e);
+this.logUtil!.put(UNKNOWN_ERROR, this, this.commonStrings!.GET, e);
     
 
 

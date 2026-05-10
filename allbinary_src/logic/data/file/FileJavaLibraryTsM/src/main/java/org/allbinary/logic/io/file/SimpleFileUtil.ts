@@ -340,7 +340,7 @@ this.streamUtil!.close(inputStream);
             {
 streamUtil!.close(inputStream);
     
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.ADD, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, e);
     
 }
 

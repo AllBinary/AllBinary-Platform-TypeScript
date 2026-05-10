@@ -163,7 +163,7 @@ this.keyRepeatedByDevice(keyCode, 0);
 
         try {
             this.logUtil!.putF(new StringMaker().
-                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, gameInputStrings!.KEY_PRESSED);
+                            append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 
     var platformKeyFactory: PlatformKeyFactory = PlatformKeyFactory.getInstance()!;

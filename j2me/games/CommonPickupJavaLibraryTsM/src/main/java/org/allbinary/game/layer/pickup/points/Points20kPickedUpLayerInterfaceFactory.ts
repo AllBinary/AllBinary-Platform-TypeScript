@@ -81,7 +81,7 @@ export class Points20kPickedUpLayerInterfaceFactory extends PickedUpLayerInterfa
                 //@Throws(Exception.constructor)
             
     public static init(){
-pickedUpLayerInterfaceFactoryInterface= new Points20kPickedUpLayerInterfaceFactory();
+Points20kPickedUpLayerInterfaceFactory.pickedUpLayerInterfaceFactoryInterface= new Points20kPickedUpLayerInterfaceFactory();
     
 }
 

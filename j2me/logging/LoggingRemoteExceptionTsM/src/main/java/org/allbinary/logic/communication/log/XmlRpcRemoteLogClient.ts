@@ -120,7 +120,7 @@ xmlRpcClient!.setBasicAuthentication(
 param.add(hashtable);
     
 
-    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, noCrypt)!;
+    var result: any = xmlRpcClient!.execute(this.getRemoteMethod(), param, this.noCrypt)!;
 ;
     
 console.log("Result: \n" +result.toString());

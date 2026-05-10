@@ -65,7 +65,7 @@ export class CountedPickedUpLayerInterfaceFactoryPool
 
 
     public static init(){
-SINGLETON= new CountedPickedUpLayerInterfaceFactoryPool();
+CountedPickedUpLayerInterfaceFactoryPool.SINGLETON= new CountedPickedUpLayerInterfaceFactoryPool();
     
 }
 

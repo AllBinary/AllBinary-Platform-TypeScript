@@ -127,7 +127,7 @@ StreamUtil.getInstance()!.close(fileOutputStream);
 
          }
         
-this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
+this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, this.commonStrings!.SAVE);
     
 }
 
@@ -165,7 +165,7 @@ var bufferedImage = bufferedImage
                         if(!iter.hasNext())
                         
                                     {
-                                    this.logUtil!.putF("Unable to save image to jpeg file type.", this, commonStrings!.SAVE);
+                                    this.logUtil!.putF("Unable to save image to jpeg file type.", this, this.commonStrings!.SAVE);
     
 
 
@@ -195,13 +195,13 @@ writer.write(
                             null, 
                             null), iwp);
     
-this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, commonStrings!.SAVE);
+this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, this.commonStrings!.SAVE);
     
 
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE, e);
     
 }
 
@@ -224,7 +224,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e);
                                 )
                         
                                     {
-                                    this.logUtil!.putF(ios.toString(), ios, commonStrings!.CLOSE);
+                                    this.logUtil!.putF(ios.toString(), ios, this.commonStrings!.CLOSE);
     
 ios.close();
     
@@ -257,7 +257,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, ios, commonStrings!.CLOSE, e);
                 //: 
 } catch(e2) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, commonStrings!.SAVE, e2);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.SAVE, e2);
     
 }
 

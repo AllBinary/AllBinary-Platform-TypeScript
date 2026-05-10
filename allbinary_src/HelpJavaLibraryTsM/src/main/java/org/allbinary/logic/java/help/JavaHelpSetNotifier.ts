@@ -78,11 +78,11 @@ var helpSet = helpSet
 ;
     
 
-    var size: number = vector.length!;
+    var size: number = JavaHelpSetNotifier.vector.length!;
 ;
     
 
-    var urlArray: any[] = vector.toArray()!;
+    var urlArray: any[] = JavaHelpSetNotifier.vector.toArray()!;
 ;
     
 

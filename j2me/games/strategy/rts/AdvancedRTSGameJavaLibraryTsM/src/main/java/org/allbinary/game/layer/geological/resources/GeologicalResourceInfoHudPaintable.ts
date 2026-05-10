@@ -114,7 +114,7 @@ this.keyvalueDrawString!.update(this.getPrimitiveLongUtil()!.getCharArray(total)
 var graphics = graphics
 super.paint(graphics);
     
-this.keyvalueDrawString!.paint(graphics, (y +(2 *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT)));
+this.keyvalueDrawString!.paint(graphics, (this.y +(2 *MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT)));
     
 }
 

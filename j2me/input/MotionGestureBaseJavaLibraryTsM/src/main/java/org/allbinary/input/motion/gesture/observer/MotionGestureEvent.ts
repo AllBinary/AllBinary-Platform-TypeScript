@@ -162,15 +162,15 @@ this.currentPoint= currentPoint;
     
 stringBuffer!.append(stringUtil!.toString(this.motionGesture));
     
-stringBuffer!.append(CURRENT);
+stringBuffer!.append(MotionGestureEvent.CURRENT);
     
 stringBuffer!.append(stringUtil!.toString(this.currentPoint));
     
-stringBuffer!.append(PREVIOUS);
+stringBuffer!.append(MotionGestureEvent.PREVIOUS);
     
 stringBuffer!.append(stringUtil!.toString(this.previousPoint));
     
-stringBuffer!.append(HASHCODE);
+stringBuffer!.append(MotionGestureEvent.HASHCODE);
     
 stringBuffer!.appendint(TsUtil.getInstance()!.hashCode(this));
     

@@ -121,7 +121,7 @@ var index = index
     var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-whereHashMap!.put(UserData.USERNAME, userName);
+whereHashMap!.put(UserData.USERNAME, this.userName);
     
 whereHashMap!.put(StreetAddressData.ID, index.toString() as string);
     
@@ -298,7 +298,7 @@ this.setDefault(address.getId());
     var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-keyAndValue!.put(UserData.USERNAME, userName);
+keyAndValue!.put(UserData.USERNAME, this.userName);
     
 
     var addressList: Vector = super.getRows(keyAndValue)!;
@@ -351,7 +351,7 @@ index < size; index++)
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, this.commonStrings!.GET, e);
     
 
                                     }
@@ -375,7 +375,7 @@ var index = index
     var keyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-keyAndValue!.put(UserData.USERNAME, userName);
+keyAndValue!.put(UserData.USERNAME, this.userName);
     
 keyAndValue!.put(StreetAddressData.ID, index.toString());
     
@@ -416,7 +416,7 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
                                     {
-                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, commonStrings!.GET, e);
+                                    this.logUtil!.put(this.commonStrings!.FAILURE, this, this.commonStrings!.GET, e);
     
 
                                     }
@@ -445,7 +445,7 @@ keyAndValue!.put(StreetAddressData.ID, index.toString());
     
 updateKeyAndValue!.put(StreetAddressData.DEFAULT, StreetAddressData.DEFAULT);
     
-updateKeyAndValue!.put(UserData.USERNAME, userName);
+updateKeyAndValue!.put(UserData.USERNAME, this.userName);
     
 addressHashMap= super.getRow(updateKeyAndValue);
     
@@ -532,7 +532,7 @@ var value = value
     var whereKeyAndValue: HashMap<any, any> = new HashMap<any, any>();
 ;
     
-whereKeyAndValue!.put(UserData.USERNAME, userName);
+whereKeyAndValue!.put(UserData.USERNAME, this.userName);
     
 
     var streetAddress: StreetAddress = this.getDefault()!;

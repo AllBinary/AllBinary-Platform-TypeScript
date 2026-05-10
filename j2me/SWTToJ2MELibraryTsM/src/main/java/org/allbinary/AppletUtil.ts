@@ -49,7 +49,7 @@ export class AppletUtil
     private static applet: boolean = false;
 
     public static setApplet(){
-applet= true;
+AppletUtil.applet= true;
     
 }
 

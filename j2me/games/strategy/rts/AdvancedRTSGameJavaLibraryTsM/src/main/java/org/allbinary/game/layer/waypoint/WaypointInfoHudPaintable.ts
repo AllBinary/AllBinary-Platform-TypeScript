@@ -92,12 +92,12 @@ var graphics = graphics
 super.paint(graphics);
     
 
-    var textLine2Y: number = (y +myFont!.DEFAULT_CHAR_HEIGHT);
+    var textLine2Y: number = (this.y +this.myFont!.DEFAULT_CHAR_HEIGHT);
 ;
     
 this.keyvalueDrawString!.paint(graphics, textLine2Y);
     
-this.getAnimationInterface()!.paintXY(graphics, this.imageX, y);
+this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
     
 }
 

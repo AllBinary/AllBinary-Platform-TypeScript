@@ -793,7 +793,7 @@ waypoint.reset();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "onDestroyed", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onDestroyed", e);
     
 }
 

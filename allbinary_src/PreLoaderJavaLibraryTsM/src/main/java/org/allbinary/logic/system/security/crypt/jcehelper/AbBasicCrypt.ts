@@ -155,7 +155,7 @@ var array = array
             this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
     
 
-    var ivArray: number[] = secretKey!.getEncoded()!;
+    var ivArray: number[] = this.secretKey!.getEncoded()!;
 ;
     
 

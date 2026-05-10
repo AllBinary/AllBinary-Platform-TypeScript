@@ -261,7 +261,7 @@ var allBinaryLayerManager = allBinaryLayerManager
                         
                                     {
                                     
-                        if(waypointPathsListP != UnitWaypointBehavior2.runningWaypointPathList)
+                        if(this.waypointPathsListP != UnitWaypointBehavior2.runningWaypointPathList)
                         
                                     {
                                     this.waypointPathRunnable!.setRunning(false);
@@ -496,7 +496,7 @@ this.targetList!.clear();
                         
                                     {
                                     
-    var geographicMapCellPosition: GeographicMapCellPosition = associatedAdvancedRTSGameLayer!.getCurrentGeographicMapCellPosition()!;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.associatedAdvancedRTSGameLayer!.getCurrentGeographicMapCellPosition()!;
 ;
     
 
@@ -627,7 +627,7 @@ this.removeWaypoint(targetLayer, this.unitWaypointStrings!.WAYPOINT_DESTROYED);
                                 
                         else {
                             
-    var geographicMapCellPosition: GeographicMapCellPosition = associatedAdvancedRTSGameLayer!.getCurrentGeographicMapCellPosition()!;
+    var geographicMapCellPosition: GeographicMapCellPosition = this.associatedAdvancedRTSGameLayer!.getCurrentGeographicMapCellPosition()!;
 ;
     
 
@@ -956,9 +956,9 @@ this.clearTarget();
     var point: GPoint = this.nextUnvisitedPathGeographicMapCellPosition!.getMidPoint()!;
 ;
     
-dx= associatedAdvancedRTSGameLayer!.getXP() +associatedAdvancedRTSGameLayer!.getHalfWidth() -point.getX();
+dx= this.associatedAdvancedRTSGameLayer!.getXP() +this.associatedAdvancedRTSGameLayer!.getHalfWidth() -point.getX();
     
-dy= associatedAdvancedRTSGameLayer!.getYP() +associatedAdvancedRTSGameLayer!.getHalfHeight() -point.getY();
+dy= this.associatedAdvancedRTSGameLayer!.getYP() +this.associatedAdvancedRTSGameLayer!.getHalfHeight() -point.getY();
     
 this.associatedAdvancedRTSGameLayer!.waypoint2LogHelperP!.processTargeting(this.associatedAdvancedRTSGameLayer, dx, dy);
     
@@ -1037,7 +1037,7 @@ this.afterNextUnvisitedPathGeographicMapCellPosition= this.currentGeographicMapC
     setWaypointPath(waypointLayer: AdvancedRTSGameLayer){
     //var waypointLayer = waypointLayer
 
-                        if(waypointPathsListP!.size() != 0)
+                        if(this.waypointPathsListP!.size() != 0)
                         
                                     {
                                     this.setCurrentTargetLayerInterface(waypointLayer);
@@ -1048,7 +1048,7 @@ this.afterNextUnvisitedPathGeographicMapCellPosition= this.currentGeographicMapC
     
 this.setCurrentTargetDistance(MAX);
     
-this.setRandomGeographicMapCellHistory(waypointPathsListP);
+this.setRandomGeographicMapCellHistory(this.waypointPathsListP);
     
 
                                     }
@@ -1070,7 +1070,7 @@ this.removeWaypoint(waypointLayer, this.unitWaypointStrings!.ALREADY_THERE);
             
     runWaypointPathTask(waypointLayer: AdvancedRTSGameLayer){
     //var waypointLayer = waypointLayer
-setWaypointPathsList(runningWaypointPathList);
+setWaypointPathsList(UnitWaypointBehavior2.runningWaypointPathList);
     
 
                         if(this.waypointPathRunnable!.isRunning())
@@ -1227,17 +1227,17 @@ index >= 0; index--)
                         if(this.currentTargetLayerInterfaceP != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER)
                         
                                     {
-                                    stringBuffer!.append(TARGET_LAYER);
+                                    stringBuffer!.append(UnitWaypointBehavior2.TARGET_LAYER);
     
-stringBuffer!.append(commonSeps!.SPACE);
+stringBuffer!.append(this.commonSeps!.SPACE);
     
 stringBuffer!.append(this.currentTargetLayerInterfaceP!.getName());
     
 stringBuffer!.append(" with ");
     
-stringBuffer!.append(TARGET_DISTANCE);
+stringBuffer!.append(UnitWaypointBehavior2.TARGET_DISTANCE);
     
-stringBuffer!.append(commonSeps!.SPACE);
+stringBuffer!.append(this.commonSeps!.SPACE);
     
 stringBuffer!.appendint(getCurrentTargetDistance());
     

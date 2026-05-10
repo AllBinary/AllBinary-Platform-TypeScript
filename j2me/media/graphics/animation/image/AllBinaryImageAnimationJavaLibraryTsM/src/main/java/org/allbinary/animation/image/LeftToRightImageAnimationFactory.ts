@@ -83,7 +83,7 @@ public constructor (image: Image, sequenceArray: number[], dx: number, dy: numbe
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this);
+                                    this.animationFactoryImageScaleUtil!.processAdjust(this);
     
 
 

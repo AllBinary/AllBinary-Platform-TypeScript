@@ -79,9 +79,9 @@ export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
 
     private previousImage: Image = NullCanvas.NULL_IMAGE;
 
-    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(MAX_IMAGES)!;
+    private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(BufferedGameCanvasPaintHelper.MAX_IMAGES)!;
 
-    private readonly drawCircularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstanceAt(MAX_IMAGES -1, MAX_IMAGES)!;
+    private readonly drawCircularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstanceAt(BufferedGameCanvasPaintHelper.MAX_IMAGES -1, BufferedGameCanvasPaintHelper.MAX_IMAGES)!;
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
@@ -114,7 +114,7 @@ this.drawCircularIndexUtil!.next();
 var graphics = graphics
 this.previousImage= this.offScreenImage[this.drawCircularIndexUtil!.getIndex()]!;
     
-graphics.drawImage(this.previousImage, 0, 0, anchor);
+graphics.drawImage(this.previousImage, 0, 0, this.anchor);
     
 }
 

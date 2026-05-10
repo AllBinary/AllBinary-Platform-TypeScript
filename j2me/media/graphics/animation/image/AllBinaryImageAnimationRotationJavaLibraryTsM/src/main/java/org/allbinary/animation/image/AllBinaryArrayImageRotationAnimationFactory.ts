@@ -187,7 +187,7 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
     var index: number = 0;
 index < size; index++)
         {
-scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, image.getWidth(), image.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight);
+scaledImageArray[index]= this.animationFactoryImageScaleUtil!.createImage(image, image.getWidth(), image.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight);
     
 }
 
@@ -195,7 +195,7 @@ scaledImageArray[index]= animationFactoryImageScaleUtil!.createImage(image, imag
                         if(this.animationFactoryInitializationVisitor!.dx != 0 || this.animationFactoryInitializationVisitor!.dy != 0)
                         
                                     {
-                                    animationFactoryImageScaleUtil!.processAdjust(this);
+                                    this.animationFactoryImageScaleUtil!.processAdjust(this);
     
 
 

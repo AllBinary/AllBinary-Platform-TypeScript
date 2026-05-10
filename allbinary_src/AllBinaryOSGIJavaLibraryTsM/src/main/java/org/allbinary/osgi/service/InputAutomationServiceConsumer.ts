@@ -99,13 +99,13 @@ this.setOsgiServiceVisitorInterface(osgiServiceVisitorInterface);
                 //@Throws(Exception.constructor)
             
     public process(){
-this.logUtil!.putF(this.commonStrings!.START, this, commonStrings!.PROCESS);
+this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.PROCESS);
     
 
     var vector: Vector = this.osgiServiceUtil!.getServicesObjectVector(this.getBundleContext(), this.getServiceReferences())!;
 ;
     
-this.logUtil!.putF("Processing " +vector.length +" Services", this, commonStrings!.PROCESS);
+this.logUtil!.putF("Processing " +vector.length +" Services", this, this.commonStrings!.PROCESS);
     
 
     var size: number = vector.length!;

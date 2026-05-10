@@ -123,7 +123,7 @@ this.savedCaptureGenericProfileDataWorkerType= savedCaptureGenericProfileDataWor
     
 this.screenScavangerRobot= new ScreenScavangerRobot();
     
-index= ProcessingFrameIndexFactory.next();
+SavedCaptureImagesWorker.index= ProcessingFrameIndexFactory.next();
     
 }
 

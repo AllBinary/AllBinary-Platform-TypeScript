@@ -57,7 +57,7 @@ export class PointFactory
 var x = x
 var y = y
 
-    var point: Point = pointArray[x]![y]!;
+    var point: Point = PointFactory.pointArray[x]![y]!;
 ;
     
 
@@ -66,7 +66,7 @@ var y = y
                                 )
                         
                                     {
-                                    point= pointArray[x]![y]= new Point(x, y);
+                                    point= PointFactory.pointArray[x]![y]= new Point(x, y);
     
 
                                     }

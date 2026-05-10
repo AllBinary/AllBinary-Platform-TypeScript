@@ -110,7 +110,7 @@ this.setTagRequestHelperFactory(new PaymentGatewayHelperFactory());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put("LicensingException", this, commonStrings!.PROCESS, e);
+this.logUtil!.put("LicensingException", this, this.commonStrings!.PROCESS, e);
     
 
 
@@ -126,7 +126,7 @@ this.logUtil!.put("LicensingException", this, commonStrings!.PROCESS, e);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e);
     
 
                                     }

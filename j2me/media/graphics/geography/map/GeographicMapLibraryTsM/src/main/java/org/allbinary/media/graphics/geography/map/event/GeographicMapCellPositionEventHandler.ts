@@ -143,7 +143,7 @@ miniMapLayer!.onGeographicMapCellPositionEvent(eventObject as GeographicMapCellP
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 
@@ -183,7 +183,7 @@ miniMapLayer!.onRemoveGeographicMapCellPositionEvent(eventObject as GeographicMa
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 
@@ -221,7 +221,7 @@ geographicMapCellPositionEventListenerInterface!.onRemoveGeographicMapCellPositi
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 

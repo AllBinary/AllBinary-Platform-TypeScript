@@ -29,7 +29,9 @@
     }
   }
 
-  set(x_src: number, y_src: number, arg2: number, arg3: number) {
+  set(newClip: Rect);
+  set(x_src: number, y_src: number, arg2: number, arg3: number);
+  set(x_src?: any, y_src?: number, arg2?: number, arg3?: number) {
     throw new Error('Method not implemented.');
   }
 

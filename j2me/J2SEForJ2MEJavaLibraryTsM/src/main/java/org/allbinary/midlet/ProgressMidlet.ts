@@ -104,7 +104,7 @@ primaryThreadPool!.runTask(runnable);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "exit", e);
     
 
         try {
@@ -114,7 +114,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e);
                 //: 
 } catch(e2) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "exit", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "exit", e);
     
 }
 

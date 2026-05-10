@@ -121,7 +121,7 @@ stringBuffer!.append(workFlowClassName);
     
 stringBuffer!.append("->");
     
-stringBuffer!.append(instance.constructor.name.toString()!);
+stringBuffer!.append(StoreTagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -176,7 +176,7 @@ stringBuffer!.append(workFlowClassName);
     
 stringBuffer!.append("->");
     
-stringBuffer!.append(instance.constructor.name.toString()!);
+stringBuffer!.append(StoreTagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
@@ -215,7 +215,7 @@ stringBuffer!.append(workFlowClassName);
     
 stringBuffer!.append("->");
     
-stringBuffer!.append(instance.constructor.name.toString()!);
+stringBuffer!.append(StoreTagWorkFlowFactory.instance.constructor.name.toString()!);
     
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;

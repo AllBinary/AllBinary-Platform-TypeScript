@@ -63,7 +63,7 @@ export class AndroidDebug
     public start(){
 this.setStartTime(Date.now());
     
-Debug.startMethodTracing("trace", bufferSize);
+Debug.startMethodTracing("trace", this.bufferSize);
     
 this.setRunning(true);
     

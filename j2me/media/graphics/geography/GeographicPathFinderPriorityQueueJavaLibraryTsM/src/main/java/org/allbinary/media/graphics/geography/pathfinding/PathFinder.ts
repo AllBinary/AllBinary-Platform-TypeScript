@@ -139,7 +139,7 @@ this.costArray= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
 ;
     
 
-    var sizeY: number = costArray[0]!.length
+    var sizeY: number = this.costArray[0]!.length
                 ;
 ;
     
@@ -368,7 +368,7 @@ this.closedSet!.clear();
 ;
     
 
-    var sizeY: number = costArray[0]!.length
+    var sizeY: number = this.costArray[0]!.length
                 ;
 ;
     
@@ -401,7 +401,7 @@ node.pathFindingNodeCostInfoP!.costToEndP= discoveryCalculation;
 }
 
 
-    var startNode: PathFindingNodeCost = costArray[start.getColumn()]![start.getRow()]!;
+    var startNode: PathFindingNodeCost = this.costArray[start.getColumn()]![start.getRow()]!;
 ;
     
 this.openPriorityQueue!.add(startNode);
@@ -419,7 +419,7 @@ this.openPriorityQueue!.add(startNode);
 ;
     
 
-    var targetNode: PathFindingNodeCost = costArray[target.getColumn()]![target.getRow()]!;
+    var targetNode: PathFindingNodeCost = this.costArray[target.getColumn()]![target.getRow()]!;
 ;
     
 
@@ -573,7 +573,7 @@ this.closedSet!.clear();
 ;
     
 
-    var sizeY: number = costArray[0]!.length
+    var sizeY: number = this.costArray[0]!.length
                 ;
 ;
     
@@ -606,7 +606,7 @@ node.pathFindingNodeCostInfoP!.costToEndP= discoveryCalculation;
 }
 
 
-    var startNode: PathFindingNodeCost = costArray[start.getColumn()]![start.getRow()]!;
+    var startNode: PathFindingNodeCost = this.costArray[start.getColumn()]![start.getRow()]!;
 ;
     
 this.openPriorityQueue!.add(startNode);
@@ -635,7 +635,7 @@ multipassState!.step++;
 ;
     
 
-    var targetNode: PathFindingNodeCost = costArray[target.getColumn()]![target.getRow()]!;
+    var targetNode: PathFindingNodeCost = this.costArray[target.getColumn()]![target.getRow()]!;
 ;
     
 

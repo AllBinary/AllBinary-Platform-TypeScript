@@ -120,7 +120,7 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
     var index: number = 0;
 index < size; index++)
         {
-graphics.drawString(this.textArrayP[index]!, x, y +(index *height), anchor);
+graphics.drawString(this.textArrayP[index]!, x, y +(index *height), this.anchor);
     
 }
 

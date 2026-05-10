@@ -260,7 +260,7 @@ this.total= total;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.DROP, e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.DROP, e);
     
 
                                     }
@@ -317,7 +317,7 @@ this.total= total;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "create()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create()", e);
     
 
                                     }
@@ -374,7 +374,7 @@ this.total= total;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "restore()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "restore()", e);
     
 
                                     }
@@ -431,7 +431,7 @@ this.total= total;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "backup()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backup()", e);
     
 
                                     }
@@ -484,7 +484,7 @@ this.total= total;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "insert()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "insert()", e);
     
 
                                     }
@@ -537,7 +537,7 @@ this.total= total;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "delete()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "delete()", e);
     
 
                                     }
@@ -590,7 +590,7 @@ this.total= total;
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLTAGSERROR))
                         
                                     {
-                                    this.logUtil!.put(commonStrings!.EXCEPTION, this, "update()", e);
+                                    this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "update()", e);
     
 
                                     }
@@ -631,7 +631,7 @@ stringBuffer!.append(" Request URI: ");
     
 stringBuffer!.append(request.getRequestURI());
     
-this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
+this.logUtil!.putF(stringBuffer!.toString(), this, this.tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -646,7 +646,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    this.logUtil!.putF("TableTag RequestHelper: " +this.getTagRequestHelperFactoryInterface()!.constructor.name.toString()!, this, tagStrings!.DO_START_TAG);
+                                    this.logUtil!.putF("TableTag RequestHelper: " +this.getTagRequestHelperFactoryInterface()!.constructor.name.toString()!, this, this.tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -659,7 +659,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {
-                                    this.logUtil!.putF("TableTag RequestHelper: null", this, tagStrings!.DO_START_TAG);
+                                    this.logUtil!.putF("TableTag RequestHelper: null", this, this.tagStrings!.DO_START_TAG);
     
 
                                     }
@@ -687,7 +687,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                         
                                     {
                                     
-                        if(this.getCommand()!.localeCompare(commonStrings!.INSERT) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.INSERT_INTO) == 0 || this.getCommand()!.localeCompare(commonStrings!.DELETE) == 0 || this.getCommand()!.localeCompare(commonStrings!.UPDATE) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.UPDATE) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.INSERT_INTO) == 0 || this.getCommand()!.localeCompare(commonStrings!.DELETE) == 0 || this.getCommand()!.localeCompare(commonStrings!.UPDATE) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.UPDATE) == 0)
                         
                                     {
                                     this.requestObject= this.getTagRequestHelperFactoryInterface()!.getInstance(this.getPropertiesHashMap(), pageContext);
@@ -696,7 +696,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
 
-                        if(this.getCommand()!.localeCompare(commonStrings!.INSERT) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.INSERT_INTO) == 0)
+                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0 || this.getCommand()!.localeCompare(SqlStrings.getInstance()!.INSERT_INTO) == 0)
                         
                                     {
                                     this.insert();

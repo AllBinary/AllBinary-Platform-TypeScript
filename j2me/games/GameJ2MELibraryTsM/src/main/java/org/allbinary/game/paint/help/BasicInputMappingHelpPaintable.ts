@@ -91,7 +91,7 @@ protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: Ba
                     
 this.gameInputMappingArray= gameInputMappingArray;
     
-this.update(NONE, NONE);
+this.update(this.NONE, this.NONE);
     
 }
 

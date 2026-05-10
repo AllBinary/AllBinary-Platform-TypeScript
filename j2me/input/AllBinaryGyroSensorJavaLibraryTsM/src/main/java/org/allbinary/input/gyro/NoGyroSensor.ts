@@ -58,7 +58,7 @@ export class NoGyroSensor extends AllBinaryOrientationSensor implements AllBinar
 public constructor (){
 
             super();
-        this.logUtil!.putF(commonStrings!.START, this, commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 }
 

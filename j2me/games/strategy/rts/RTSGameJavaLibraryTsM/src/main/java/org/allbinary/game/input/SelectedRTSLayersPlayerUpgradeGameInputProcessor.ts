@@ -68,7 +68,7 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
 var allbinaryLayerManager = allbinaryLayerManager
 var gameKeyEvent = gameKeyEvent
-selectedRTSLayersPlayerGameInput!.upgrade();
+this.selectedRTSLayersPlayerGameInput!.upgrade();
     
 }
 

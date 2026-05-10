@@ -149,7 +149,7 @@ playerGameInput!.onUpKeyEvent(eventObject);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 
@@ -176,7 +176,7 @@ this.process(eventObject, eventListenerInterface);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 
@@ -208,7 +208,7 @@ upKeyEventListenerInterface!.onUpKeyEvent(eventObject);
     
 stringBuffer!.append(super.toString());
     
-stringBuffer!.append(TOTAL_LISTENERS);
+stringBuffer!.append(UpKeyEventHandlerBase.TOTAL_LISTENERS);
     
 stringBuffer!.appendint(this.list.size());
     
@@ -226,7 +226,7 @@ index < this.list.size(); index++)
     var eventListenerInterface: EventListenerInterface = this.list.get(index) as EventListenerInterface;
 ;
     
-stringBuffer!.append(LISTENER_LABEL);
+stringBuffer!.append(UpKeyEventHandlerBase.LISTENER_LABEL);
     
 stringBuffer!.append(eventListenerInterface!.toString());
     
@@ -234,7 +234,7 @@ stringBuffer!.append(eventListenerInterface!.toString());
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.TOSTRING, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.TOSTRING, e);
     
 }
 

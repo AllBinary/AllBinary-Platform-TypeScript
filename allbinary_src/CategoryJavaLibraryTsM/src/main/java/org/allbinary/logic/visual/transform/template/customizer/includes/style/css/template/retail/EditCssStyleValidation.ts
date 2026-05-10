@@ -153,7 +153,7 @@ styleNode!.appendChild(new ColorsView().
                             toXmlNode(document));
     
 
-    var size: number = cssStyleElementVector!.size()!;
+    var size: number = this.cssStyleElementVector!.size()!;
 ;
     
 
