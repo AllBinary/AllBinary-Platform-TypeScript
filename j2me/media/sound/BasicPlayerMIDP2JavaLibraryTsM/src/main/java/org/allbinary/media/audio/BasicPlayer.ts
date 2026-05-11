@@ -28,7 +28,7 @@ import { Control } from '../../../../javax/microedition/media/Control.js';
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
@@ -67,7 +67,7 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
         import { TimeBaseInterface } from './TimeBaseInterface.js';
 import { Controllable2 } from './Controllable2.js';
 import { NullControl } from './NullControl.js';
-
+//BasicPlayerMIDP2JavaLibrary
 export class BasicPlayer
             extends Object
          implements Player, TimeBaseInterface, Controllable2 {
@@ -87,7 +87,7 @@ public constructor (){
             super();
         this.setLoopCount(0);
     
-this.setState(Player.UNREALIZED);
+this.setState(PlayerI.UNREALIZED);
     
 }
 
@@ -257,7 +257,7 @@ var now = now
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public start(){
-this.setState(Player.STARTED);
+this.setState(PlayerI.STARTED);
     
 }
 
@@ -266,7 +266,7 @@ this.setState(Player.STARTED);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public stop(){
-this.setState(Player.PREFETCHED);
+this.setState(PlayerI.PREFETCHED);
     
 }
 

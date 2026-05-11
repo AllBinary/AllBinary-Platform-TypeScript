@@ -8,5 +8,9 @@ import ArkTsHashtable from '@ohos.util.HashMap';
       return super.set(key, value);
     }
 
+    size(): number {
+        return super.length;
+    }
+
 }
 

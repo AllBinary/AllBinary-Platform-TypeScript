@@ -177,7 +177,7 @@ this.logUtil!.putF("Number Of Profiles Specified: " +nodeList!.getLength(), this
 
                         }
                             
-this.logUtil!.putF("Loaded: " +this.hashMap!.size +" Configuration Profile Actions", this, "Contructor");
+this.logUtil!.putF("Loaded: " +this.hashMap!.size() +" Configuration Profile Actions", this, "Contructor");
     
 
                                     }

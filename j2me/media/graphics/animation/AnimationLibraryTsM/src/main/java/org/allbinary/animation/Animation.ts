@@ -78,7 +78,7 @@ export class Animation
     changeColorP: number= 0
 
     public alphaP: number= 0
-protected constructor (){
+public constructor (){
 
             super();
         }

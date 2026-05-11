@@ -41,7 +41,7 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PlatformImage } from './PlatformImage.js';
-
+//PlatformNullImageJavaLibrary
 export class PostLoadPlatformImage extends PlatformImage {
         
 

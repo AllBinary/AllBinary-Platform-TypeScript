@@ -107,7 +107,7 @@ import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
         import { Input } from './Input.js';
 import { GameKeyMappingFactory } from './GameKeyMappingFactory.js';
 import { InputFactory } from './InputFactory.js';
-
+//GameInputPersistanceLibrary
 export class InputPersistance extends BasicPersitance {
         
 

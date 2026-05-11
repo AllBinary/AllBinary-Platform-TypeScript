@@ -26,7 +26,7 @@
         
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';

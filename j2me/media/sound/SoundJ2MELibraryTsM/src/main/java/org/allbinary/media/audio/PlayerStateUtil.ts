@@ -22,7 +22,7 @@
 
 
         
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
@@ -79,7 +79,7 @@ export class PlayerStateUtil
     public convert(state: number): string{
     //var state = state
 
-                        if(state == Player.UNREALIZED)
+                        if(state == PlayerI.UNREALIZED)
                         
                                     {
                                     
@@ -92,7 +92,7 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-                        if(state == Player.REALIZED)
+                        if(state == PlayerI.REALIZED)
                         
                                     {
                                     
@@ -105,7 +105,7 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-                        if(state == Player.PREFETCHED)
+                        if(state == PlayerI.PREFETCHED)
                         
                                     {
                                     
@@ -118,7 +118,7 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-                        if(state == Player.STARTED)
+                        if(state == PlayerI.STARTED)
                         
                                     {
                                     
@@ -131,7 +131,7 @@ export class PlayerStateUtil
                                     }
                                 
                              else 
-                        if(state == Player.CLOSED)
+                        if(state == PlayerI.CLOSED)
                         
                                     {
                                     

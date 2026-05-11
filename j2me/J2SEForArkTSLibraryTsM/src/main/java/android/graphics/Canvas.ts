@@ -7,6 +7,10 @@ import { RectF } from './RectF';
 
 /*actual*/ export class Canvas
 {
+    concat(matrix: Matrix) {
+        throw new Error('Method not implemented.');
+    }
+
     getClipBounds(newClip: Rect) {
         throw new Error('Method not implemented.');
     }

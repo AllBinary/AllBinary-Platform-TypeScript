@@ -348,7 +348,7 @@ featureInterface= list.objectArray[index]! as FeatureResourceAnimationInterfaceF
     
 stringBuffer!.append(HAS_KEY);
     
-stringBuffer!.appendint(featureInterface!.getHashtable()!.size);
+stringBuffer!.appendint(featureInterface!.getHashtable()!.size());
     
 stringBuffer!.append(RESOURCES_LABEL);
     

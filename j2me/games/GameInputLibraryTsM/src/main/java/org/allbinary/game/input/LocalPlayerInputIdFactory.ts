@@ -88,10 +88,10 @@ private constructor (){
 
 
                         for (
-    var index: number = deviceIdToplayerId!.length -1;
+    var index: number = this.deviceIdToplayerId!.length -1;
 index >= 0; index--)
         {
-deviceIdToplayerId[index]=  -1;
+this.deviceIdToplayerId[index]=  -1;
     
 }
 
@@ -187,7 +187,7 @@ this.playerIdToDeviceId[index]= deviceId;
     
 AnalogLocationInputFactory.getInstance()!.addPlayer(this.totalDevicesMapped);
     
-totalDevicesMapped++;
+this.totalDevicesMapped++;
     
 this.logUtil!.putF(new StringMaker().
                             append("Added DeviceId: ")!.appendint(deviceId)!.append(" at: ")!.appendint(index)!.append(" Total: ")!.appendint(this.totalDevicesMapped)!.toString(), this, "getPlayerForDevice");

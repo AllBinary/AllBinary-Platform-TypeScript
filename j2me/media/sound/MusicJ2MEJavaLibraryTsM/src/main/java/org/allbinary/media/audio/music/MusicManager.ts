@@ -15,7 +15,7 @@
 import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
 
     
-import { Player } from '../../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
 
     
 import { PlayerListener } from '../../../../../javax/microedition/media/PlayerListener.js';
@@ -295,7 +295,7 @@ this.noDuration= true;
                         
                                     {
                                     
-                        if(endingCurrentSongSound == startingCurrentSongSound && endingCurrentSongSound!.getPlayerP()!.getState() == Player.STARTED)
+                        if(endingCurrentSongSound == startingCurrentSongSound && endingCurrentSongSound!.getPlayerP()!.getState() == PlayerI.STARTED)
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
@@ -313,7 +313,7 @@ this.waitForStateChange(endingCurrentSongSound, startingCurrentSongSound);
                                 
                         else {
                             
-                        if(endingCurrentSongSound!.getPlayerP()!.getState() == Player.STARTED)
+                        if(endingCurrentSongSound!.getPlayerP()!.getState() == PlayerI.STARTED)
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
@@ -394,7 +394,7 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commo
     //var endingCurrentSongSound = endingCurrentSongSound
     //var startingCurrentSongSound = startingCurrentSongSound
 
-        while(endingCurrentSongSound!.getPlayerP()!.getState() == Player.STARTED)
+        while(endingCurrentSongSound!.getPlayerP()!.getState() == PlayerI.STARTED)
         {
 PreLogUtil.put(this.WAITING_FOR_MEDIA_TO_END, this, this.commonStrings!.PROCESS);
     

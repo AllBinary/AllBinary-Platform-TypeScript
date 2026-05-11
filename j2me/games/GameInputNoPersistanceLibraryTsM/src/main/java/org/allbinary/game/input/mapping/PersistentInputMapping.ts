@@ -88,7 +88,7 @@ import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUt
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputToGameKeyMapping } from './InputToGameKeyMapping.js';
-
+//GameInputNoPersistanceLibrary
 export class PersistentInputMapping
             extends Object
          {
@@ -121,7 +121,7 @@ this.inputPersistance= new InputPersistance(name);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getInputMapping()!.getHashtable()!.size;;
+                        return this.getInputMapping()!.getHashtable()!.size();;
     
 }
 

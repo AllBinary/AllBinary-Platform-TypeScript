@@ -9,6 +9,11 @@
         }
 
     }
+
+  static gc() {
+    throw new Error('Method not implemented.');
+  }
+
 }
 
             

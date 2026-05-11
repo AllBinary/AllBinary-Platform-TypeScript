@@ -27,7 +27,7 @@
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
     
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';

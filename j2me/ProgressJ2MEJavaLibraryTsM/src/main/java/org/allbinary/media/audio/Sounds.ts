@@ -26,7 +26,7 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';

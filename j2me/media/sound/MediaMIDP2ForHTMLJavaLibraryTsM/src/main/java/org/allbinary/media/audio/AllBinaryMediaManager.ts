@@ -32,7 +32,7 @@ import { Manager } from '../../../../javax/microedition/media/Manager.js';
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';

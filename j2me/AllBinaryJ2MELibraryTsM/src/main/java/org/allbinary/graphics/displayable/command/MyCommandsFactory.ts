@@ -64,15 +64,15 @@ export class MyCommandsFactory
 }
 
 
-    public readonly NO_COMMAND: Command = new Command(StringUtil.getInstance()!.EMPTY_STRING,  -1,  -1);
+    public readonly NO_COMMAND: Command = new Command(StringUtil.getInstance()!.EMPTY_STRING, StringUtil.getInstance()!.EMPTY_STRING,  -1,  -1);
 
-    public readonly GAUGE_CHANGE: Command = new Command("GAUGE_CHANGE", Command.ITEM, 1);
+    public readonly GAUGE_CHANGE: Command = new Command("GAUGE_CHANGE", StringUtil.getInstance()!.EMPTY_STRING, Command.ITEM, 1);
 
-    public readonly SET_DISPLAYABLE: Command = new Command("Display", Command.SCREEN, 2);
+    public readonly SET_DISPLAYABLE: Command = new Command("Display", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 2);
 
-    public readonly PAUSE_COMMAND: Command = new Command("Pause", Command.SCREEN, 0);
+    public readonly PAUSE_COMMAND: Command = new Command("Pause", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 0);
 
-    public readonly RESUME_COMMAND: Command = new Command("Resume", Command.SCREEN, 0);
+    public readonly RESUME_COMMAND: Command = new Command("Resume", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 0);
 protected constructor (){
 
             super();

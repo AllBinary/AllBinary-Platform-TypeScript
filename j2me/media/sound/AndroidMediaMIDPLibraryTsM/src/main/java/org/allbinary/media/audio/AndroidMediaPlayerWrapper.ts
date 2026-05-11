@@ -29,7 +29,7 @@
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
@@ -155,7 +155,7 @@ this.mediaPlayer!.setLooping(false);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.CONSTRUCTOR, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commonStrings!.CONSTRUCTOR, e);
     
 
 
@@ -220,7 +220,7 @@ super.removePlayerListener(playerListener);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Player.STARTED;
+                        return PlayerI.STARTED;
     
 
                                     }
@@ -230,7 +230,7 @@ super.removePlayerListener(playerListener);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Player.PREFETCHED;
+                        return PlayerI.PREFETCHED;
     
 
                         }

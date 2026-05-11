@@ -48,7 +48,7 @@ import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
         import { NullCanvas } from './NullCanvas.js';
 import { Image } from './Image.js';
 import { Graphics } from './Graphics.js';
-
+//PlatformNullImageJavaLibrary
 export class PlatformImage
             extends Object
          {

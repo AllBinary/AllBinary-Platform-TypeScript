@@ -199,19 +199,19 @@ private constructor (){
                         
                                     {
                                     
-    var scaleX2Float: Float = this.scaleXBasicArrayList!.get(index) as Float;
+    var scaleX2Float: number = this.scaleXBasicArrayList!.get(index);
 ;
     
 
-    var scaleX2: number = scaleX2Float!.toFloat()!;
+    var scaleX2: number = scaleX2Float!!;
 ;
     
 
-    var scaleY2Float: Float = this.scaleYBasicArrayList!.get(index) as Float;
+    var scaleY2Float: number = this.scaleYBasicArrayList!.get(index);
 ;
     
 
-    var scaleY2: number = scaleY2Float!.toFloat()!;
+    var scaleY2: number = scaleY2Float!!;
 ;
     
 
@@ -282,7 +282,7 @@ this.scaleYBasicArrayList!.add(scaleY);
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(thisconstructor.name.toString()!, width, height);
+                                    image= imageCache!.get(this.constructor.name.toString()!, width, height);
     
 
                                     }

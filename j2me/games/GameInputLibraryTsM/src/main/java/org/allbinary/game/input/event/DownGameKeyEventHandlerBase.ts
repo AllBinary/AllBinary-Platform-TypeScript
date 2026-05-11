@@ -27,9 +27,6 @@
 import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
 
     
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
@@ -151,7 +148,7 @@ playerGameInput!.onDownGameKeyEvent(eventObject as GameKeyEvent);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance()!.FIRE_EVENT, e);
     
 }
 

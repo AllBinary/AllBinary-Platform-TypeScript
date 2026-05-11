@@ -35,7 +35,7 @@ import { InputStream } from '../../../../java/io/InputStream.js';
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
@@ -81,7 +81,7 @@ import { AndroidMediaPlayerWrapper } from './AndroidMediaPlayerWrapper.js';
 import { PlayerComposite } from './PlayerComposite.js';
 import { MediaPlayerUtil } from './MediaPlayerUtil.js';
 import { NoPlayer } from './NoPlayer.js';
-
+//AndroidMediaMIDPLibrary
 export class AllBinaryMediaManager
             extends Object
          {
@@ -128,7 +128,7 @@ var aMuted = aMuted
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
 AllBinaryMediaManager.shutdown(soundsFactoryInterface);
     
@@ -139,7 +139,7 @@ System.gc();
 new Sounds(soundsFactoryInterface).
                             init();
     
-logUtil!.putF(commonString!.END, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.END, AllBinaryMediaManager.THIS, commonString!.INIT);
     
 }
 
@@ -156,7 +156,7 @@ logUtil!.putF(commonString!.END, THIS, commonString!.INIT);
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.putF(commonString!.START, THIS, "shutdown");
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
     
 
                         if(soundsFactoryInterface!.isInitialized())
@@ -246,7 +246,7 @@ AllBinaryMediaManager.mostUsedTotal= 0;
 
                                     }
                                 
-logUtil!.putF(commonString!.START, THIS, "shutdown");
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
     
 }
 
@@ -305,7 +305,7 @@ logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +Co
 
                 //@Throws(IOException.constructor, MediaException.constructor)
             
-    public static createPlayer(stream: InputStream, type: string): Player{
+    public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
 var stream = stream
 var type = type
 

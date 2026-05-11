@@ -30,7 +30,7 @@ import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
 
     
-import { Player } from '../../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../../javax/microedition/media/Player.js';
 
     
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';

@@ -30,7 +30,7 @@ import { Control } from '../../../../javax/microedition/media/Control.js';
 import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
 
     
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';

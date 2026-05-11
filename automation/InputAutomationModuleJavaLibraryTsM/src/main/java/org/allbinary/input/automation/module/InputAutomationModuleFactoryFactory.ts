@@ -134,7 +134,7 @@ this.add(inputAutomationModuleConfiguration);
 
 this.defaultListModelHelper!.initDefaultModelList();
     
-this.logUtil!.putF("Loaded " +this.hashMap!.size +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor");
+this.logUtil!.putF("Loaded " +this.hashMap!.size() +"/" +this.defaultListModelHelper!.getListModel()!.getSize() +" Input Automation Modules", this, "Contructor");
     
 }
 

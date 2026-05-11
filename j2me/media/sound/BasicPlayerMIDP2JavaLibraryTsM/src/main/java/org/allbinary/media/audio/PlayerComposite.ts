@@ -33,7 +33,7 @@ import { Controllable } from '../../../../javax/microedition/media/Controllable.
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
 
     
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';

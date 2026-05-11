@@ -294,7 +294,7 @@ index < nameNodeList!.getLength(); index++)
                             
 }
 
-this.logUtil!.putF("Loaded: " +this.getHashMap()!.size +" Configuration Profile Action(s)", this, "Contructor");
+this.logUtil!.putF("Loaded: " +this.getHashMap()!.size() +" Configuration Profile Action(s)", this, "Contructor");
     
 this.getDefaultListModelHelper()!.initDefaultModelList();
     

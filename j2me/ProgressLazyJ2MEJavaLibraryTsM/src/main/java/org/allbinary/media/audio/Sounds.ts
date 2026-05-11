@@ -26,7 +26,7 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
-import { Player } from '../../../../javax/microedition/media/Player.js';
+import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
 
     
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';

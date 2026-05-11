@@ -70,11 +70,11 @@ export class CustomGPoint extends GPoint {
 }
 
 
-    private x: number= 0
+    private cx: number= 0
 
-    private y: number= 0
+    private cy: number= 0
 
-    private z: number= 0
+    private cz: number= 0
 public constructor (x: number, y: number, z: number){
             super(x, y, z);
                     var x = x
@@ -89,7 +89,7 @@ var z = z
 
     public setX(x: number){
 var x = x
-this.x= x;
+this.cx= x;
     
 }
 
@@ -99,14 +99,14 @@ this.x= x;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.x;
+                        return this.cx;
     
 }
 
 
     public setY(y: number){
 var y = y
-this.y= y;
+this.cy= y;
     
 }
 
@@ -116,14 +116,14 @@ this.y= y;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.y;
+                        return this.cy;
     
 }
 
 
     public setZ(z: number){
 var z = z
-this.z= z;
+this.cz= z;
     
 }
 
@@ -133,7 +133,7 @@ this.z= z;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.z;
+                        return this.cz;
     
 }
 
