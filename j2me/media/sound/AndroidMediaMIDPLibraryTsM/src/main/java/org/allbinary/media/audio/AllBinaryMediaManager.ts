@@ -212,7 +212,7 @@ i < soundInterfaceArray!.length; i++)
                                     {
                                     androidMediaPlayerWrapper= player2 as AndroidMediaPlayerWrapper;
     
-MediaPlayerUtil.getInstance()!.wait(androidMediaPlayerWrapper!.getMediaPlayer());
+MediaPlayerUtil.getInstance()!.waitForMediaPlayer(androidMediaPlayerWrapper!.getMediaPlayer());
     
 
                                     }

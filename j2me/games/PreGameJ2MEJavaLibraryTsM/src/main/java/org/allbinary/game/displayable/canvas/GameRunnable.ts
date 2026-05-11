@@ -59,7 +59,7 @@ export class GameRunnable
 
     public readonly FAST: number = 60;
 
-    public wait: number = this.WAIT;
+    public waitInMillis: number = this.WAIT;
 public constructor (){
 
             super();
@@ -75,7 +75,7 @@ DisplayInfoSingleton.getInstance()!.process();
                 //@Throws(Exception.constructor)
             
     public processLoopSleep(){
-Thread.sleep(this.wait);
+Thread.sleep(this.waitInMillis);
     
 }
 

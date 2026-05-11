@@ -181,7 +181,7 @@ this.logUtil!.putF(new StringMaker().
 }
 
 
-    getIndex(width: number, height: number): number{
+    getIndexWH(width: number, height: number): number{
     //var width = width
     //var height = height
 

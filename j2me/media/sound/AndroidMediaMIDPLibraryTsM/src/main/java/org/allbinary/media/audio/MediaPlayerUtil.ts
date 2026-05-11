@@ -72,7 +72,7 @@ export class MediaPlayerUtil
 
                 //@Throws(Exception.constructor)
             
-    public wait(mediaPlayer: MediaPlayer){
+    public waitForMediaPlayer(mediaPlayer: MediaPlayer){
 var mediaPlayer = mediaPlayer
 
     var MESSAGE: string = "Not Stopped Waiting";

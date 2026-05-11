@@ -152,7 +152,7 @@ this.logUtil!.putF(new StringMaker().
     //var width = width
     //var height = height
 
-    var foundIndex: number = this.getIndex(width, height)!;
+    var foundIndex: number = this.getIndexWH(width, height)!;
 ;
     
 
@@ -188,7 +188,7 @@ this.widths[this.nextIndex]= width;
     
 this.heights[this.nextIndex]= height;
     
-nextIndex++;
+this.nextIndex++;
     
 
                                     }

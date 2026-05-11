@@ -6,9 +6,14 @@ import { Runnable } from "./Runnable";
 
     public static NORM_PRIORITY: number = 5; //5 = Thread.NORM_PRIORITY
 
+    static currentThread(): Thread {
+        throw new Error('Method not implemented.');
+    }
+
+    public constructor();
     public constructor(task: Runnable);
     public constructor(task: Runnable, name: string);
-    public constructor(task: Runnable, name?: string) {
+    public constructor(task?: Runnable, name?: string) {
         super();
         throw new Error('Method not implemented.');
     }

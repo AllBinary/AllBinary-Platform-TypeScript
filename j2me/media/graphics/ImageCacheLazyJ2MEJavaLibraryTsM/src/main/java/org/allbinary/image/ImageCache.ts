@@ -125,9 +125,9 @@ import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js'
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCacheBase } from './ImageCacheBase.js';
 //import { NotHTMLEndProcessor } from './NotHTMLEndProcessor.js';
+//import { FirstProcessor } from './FirstProcessor.js';
 //import { NotHTMLProcessor } from './NotHTMLProcessor.js';
 //import { HTMLEndProcessor } from './HTMLEndProcessor.js';
-//import { FirstProcessor } from './FirstProcessor.js';
 
 export class ImageCache extends ImageCacheBase {
         
@@ -251,45 +251,8 @@ FirstProcessor = class extends Processor {
 
 
     public process(){
-
-    var logUtil: LogUtil = LogUtil.getInstance()!;
-;
+ImageCache.prototype.firstProcess();
     
-
-    var isHTML: boolean = J2MEUtil.isHTML()!;
-;
-    
-
-                        if(isHTML)
-                        
-                                    {
-                                    processor= Processor.getInstance();
-    
-endProcessor= new this.HTMLEndProcessor();
-    
-
-                                    }
-                                
-                        else {
-                            processor= new this.NotHTMLProcessor();
-    
-endProcessor= new this.NotHTMLEndProcessor();
-    
-
-        try {
-            runTask();
-    
-
-                //: 
-} catch(e) 
-            {
-logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.END_METHOD_NAME);
-    
-}
-
-
-                        }
-                            
 }
 
 
@@ -303,6 +266,49 @@ public constructor (){
 
             super();
         }
+
+
+    public firstProcess(){
+
+    var logUtil: LogUtil = LogUtil.getInstance()!;
+;
+    
+
+    var isHTML: boolean = J2MEUtil.isHTML()!;
+;
+    
+
+                        if(isHTML)
+                        
+                                    {
+                                    this.processor= Processor.getInstance();
+    
+this.endProcessor= new this.HTMLEndProcessor();
+    
+
+                                    }
+                                
+                        else {
+                            this.processor= new this.NotHTMLProcessor();
+    
+this.endProcessor= new this.NotHTMLEndProcessor();
+    
+
+        try {
+            runTask();
+    
+
+                //: 
+} catch(e) 
+            {
+logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHOD_NAME);
+    
+}
+
+
+                        }
+                            
+}
 
 
     public addListener(renderer: any = {}){
@@ -803,7 +809,7 @@ image.setName(key);
     //var width = width
     //var height = height
 
-    var foundIndex: number = this.getIndex(width, height)!;
+    var foundIndex: number = this.getIndexWH(width, height)!;
 ;
     
 
@@ -843,7 +849,7 @@ this.widths[this.nextIndex]= width;
     
 this.heights[this.nextIndex]= height;
     
-nextIndex++;
+this.nextIndex++;
     
 
                                     }

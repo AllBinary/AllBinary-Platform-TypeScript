@@ -70,7 +70,7 @@ var anyType = anyType
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return anyType!.hashCode();;
+                        return -1;
     
 }
 
