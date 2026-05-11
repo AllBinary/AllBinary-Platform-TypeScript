@@ -77,7 +77,7 @@ var progressCanvas = progressCanvas
     public run(){
 
         try {
-            this.midletActivity!.onDismissProgress(ZOOM_OUT_AND_IN);
+            this.midletActivity!.onDismissProgress(this.ZOOM_OUT_AND_IN);
     
 
                 //: 

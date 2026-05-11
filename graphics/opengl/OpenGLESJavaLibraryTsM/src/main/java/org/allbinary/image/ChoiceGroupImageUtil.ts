@@ -158,7 +158,7 @@ var gl = gl
     var index: number = 0;
 index < size; index++)
         {
-preResourceImageUtil!.update(gl, imageArray[index]!);
+preResourceImageUtil!.updateGL(gl, imageArray[index]!);
     
 }
 

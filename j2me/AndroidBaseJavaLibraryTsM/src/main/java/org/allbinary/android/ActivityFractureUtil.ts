@@ -53,7 +53,7 @@ export class ActivityFractureUtil
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
                 //@Throws(Exception.constructor)

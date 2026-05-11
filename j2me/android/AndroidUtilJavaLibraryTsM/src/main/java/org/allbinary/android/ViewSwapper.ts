@@ -43,7 +43,7 @@ export class ViewSwapper
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     public static readonly NULL_VIEW_ARRAY: View[] = [];

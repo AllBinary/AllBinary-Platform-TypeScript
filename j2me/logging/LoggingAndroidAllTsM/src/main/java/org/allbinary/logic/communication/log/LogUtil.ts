@@ -64,7 +64,7 @@ import { Log } from './Log.js';
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     private static readonly instance: LogUtil = new LogUtil();

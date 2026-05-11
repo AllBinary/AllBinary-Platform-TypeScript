@@ -72,7 +72,7 @@ export class AndroidServicesUtil
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     public static getInstance(): AndroidServicesUtil{

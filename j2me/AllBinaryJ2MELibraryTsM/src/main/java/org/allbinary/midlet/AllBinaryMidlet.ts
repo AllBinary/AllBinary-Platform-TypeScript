@@ -116,7 +116,7 @@ export class AllBinaryMidlet extends MIDlet implements CommandListener {
 
     private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
-    private destroyed: boolean= false
+    private midletDestroyed: boolean= false
 public constructor (){
 
             super();
@@ -190,7 +190,7 @@ display.setCurrent(newDisplay);
 
     public setDestroyed(destroyed: boolean){
 var destroyed = destroyed
-this.destroyed= destroyed;
+this.midletDestroyed= destroyed;
     
 }
 
@@ -200,7 +200,7 @@ this.destroyed= destroyed;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.destroyed;
+                        return this.midletDestroyed;
     
 }
 

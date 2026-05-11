@@ -51,7 +51,7 @@ export class UnknownHardware
          implements HardwareComponentInterface {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     private data: string

@@ -69,7 +69,7 @@ export class AndroidOperatingSystemFactory
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     private static readonly instance: AndroidOperatingSystemFactory = new AndroidOperatingSystemFactory();

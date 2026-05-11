@@ -54,7 +54,7 @@ export class NullAndroidCanvas
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     public static readonly NULL_CANVAS: Canvas = new Canvas();

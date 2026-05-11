@@ -78,7 +78,7 @@ var image = image
 }
 
 
-    public update(gl: GL, image: Image){
+    public updateGL(gl: GL, image: Image){
 var gl = gl
 var image = image
 }

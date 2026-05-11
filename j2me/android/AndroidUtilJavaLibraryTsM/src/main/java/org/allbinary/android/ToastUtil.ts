@@ -54,7 +54,7 @@ export class ToastUtil
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     private static readonly instance: ToastUtil = new ToastUtil();
@@ -82,7 +82,7 @@ class MakeToast
          implements Runnable {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     readonly string: string

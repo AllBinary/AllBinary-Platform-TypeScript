@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+            import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
+        
 import { Control } from '../../../../javax/microedition/media/Control.js';
 
     
@@ -314,18 +316,19 @@ var controlType = controlType
 
 
 
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.getControls();;
-    
+                            throw new RuntimeException();
+                    
 }
 
 
     public setVolume(leftVolume: number, rightVolume: number){
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
-player = this.playerplayer as Controllable2
-player.
-                    setVolume(leftVolume, rightVolume);
+
+    var controllable2: Controllable2 = (this.player as unknown as Controllable2);
+;
+    
+controllable2.setVolume(leftVolume, rightVolume);
     
 }
 

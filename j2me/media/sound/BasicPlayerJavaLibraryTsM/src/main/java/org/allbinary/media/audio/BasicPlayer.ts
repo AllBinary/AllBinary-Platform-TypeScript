@@ -34,6 +34,9 @@ import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js'
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 
     
+import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
+
+    
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
@@ -76,11 +79,11 @@ export class BasicPlayer
 
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
-    private state: number= 0
-
-    private loopCount: number= 0
-
     readonly listenersList: BasicArrayList = new BasicArrayListD();
+
+    state: number= 0
+
+    loopCount: number= 0
 public constructor (){
 
             super();

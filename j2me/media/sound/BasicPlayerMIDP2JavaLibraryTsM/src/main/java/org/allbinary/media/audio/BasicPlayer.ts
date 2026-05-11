@@ -75,13 +75,13 @@ export class BasicPlayer
 
     public static CONTROL_TYPE: string = "ToneControl";
 
-    private state: number= 0
-
-    private loopCount: number= 0
+    readonly listenersList: BasicArrayList = new BasicArrayListD();
 
     private timeBase: TimeBase
 
-    readonly listenersList: BasicArrayList = new BasicArrayListD();
+    state: number= 0
+
+    loopCount: number= 0
 public constructor (){
 
             super();

@@ -86,17 +86,17 @@ var level = level
 
                         for (
     var index: number = 0;
-index < RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
+index < this.RESOURCE_LOADING_LEVEL_ARRAY.length; index++)
         {
 
-                        if(level == RESOURCE_LOADING_LEVEL_ARRAY[index]!.getLevel())
+                        if(level == this.RESOURCE_LOADING_LEVEL_ARRAY[index]!.getLevel())
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return RESOURCE_LOADING_LEVEL_ARRAY[index]!.getName();;
+                        return this.RESOURCE_LOADING_LEVEL_ARRAY[index]!.getName();;
     
 
                                     }

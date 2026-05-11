@@ -48,7 +48,7 @@ export class AndroidInfoFactory
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     private static readonly instance: AndroidInfoFactory = new AndroidInfoFactory();

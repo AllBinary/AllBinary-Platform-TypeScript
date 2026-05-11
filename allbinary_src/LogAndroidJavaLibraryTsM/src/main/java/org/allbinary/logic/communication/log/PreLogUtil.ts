@@ -54,7 +54,7 @@ import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/
          {
         
 
-            static readonly PUBLIC: string = '%{public}s';
+            //static readonly PUBLIC: string = '%{public}s';
             
 
     /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){

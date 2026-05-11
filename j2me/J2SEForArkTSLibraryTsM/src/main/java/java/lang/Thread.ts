@@ -11,11 +11,16 @@ import { Runnable } from "./Runnable";
     }
 
     public constructor();
+    public constructor(name: string);
     public constructor(task: Runnable);
     public constructor(task: Runnable, name: string);
-    public constructor(task?: Runnable, name?: string) {
+    public constructor(taskOrName?: any, name?: string) {
         super();
         throw new Error('Method not implemented.');
+    }
+
+    public setPriority(priority: number): void {
+       throw new Error('Method not implemented.');
     }
 
     public start() {

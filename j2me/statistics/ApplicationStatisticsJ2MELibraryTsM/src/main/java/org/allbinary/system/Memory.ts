@@ -22,6 +22,8 @@
 
 
         
+            import { Runtime } from '../../../java/lang/Runtime.js';
+        
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
 
     
@@ -43,8 +45,7 @@ import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js'
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { Runtime } from './Runtime.js';
-//ActualPlatform
+        //ActualPlatform
 /*actual*/ export class Memory
             extends Object
          {
