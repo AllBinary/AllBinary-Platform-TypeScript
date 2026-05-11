@@ -173,7 +173,7 @@ new class extends Thread
 ;
     
 
-    var percentAsFloat: Float = Float.parseFloat(ResizeImageJPanel.prototype.floatPercentJTextField!.getText())!;
+    var percentAsFloat: number = Float.parseFloat(ResizeImageJPanel.prototype.floatPercentJTextField!.getText())!;
 ;
     
 

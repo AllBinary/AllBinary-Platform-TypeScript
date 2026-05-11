@@ -66,7 +66,7 @@ export class BaseDropCellPositionGenerator
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return thisconstructor.name.toString()!;;
+                        return this.constructor.name.toString()!;;
     
 }
 

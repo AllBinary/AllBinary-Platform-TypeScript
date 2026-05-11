@@ -183,7 +183,7 @@ this.logUtil!.put("Licensing Failure", this, this.commonStrings!.GET, e);
 
 
 
-                            throw new LicensingException("Unknown License Failure: " +thisconstructor.name.toString()!);
+                            throw new LicensingException("Unknown License Failure: " +this.constructor.name.toString()!);
                     
 }
 */

@@ -1,6 +1,7 @@
 //Logic will need to map from ets to ts only
 //With Canvas(this.context) Component
 import { Bitmap } from './Bitmap';
+import { Matrix } from './Matrix';
 import { Paint } from './Paint';
 import { Rect } from './Rect';
 import { RectF } from './RectF';

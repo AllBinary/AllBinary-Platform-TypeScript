@@ -207,8 +207,8 @@ index < size; index++)
     var item: Item = itemArray[index]! as Item;
 ;
     
-weightFloat += new Float(item.getWeight()).
-                            toFloat();
+weightFloat += new number(item.getWeight()).
+                            ;
     
 }
 
@@ -216,7 +216,7 @@ weightFloat += new Float(item.getWeight()).
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Float(weightFloat).
+                        return new number(weightFloat).
                             toString();;
     
 }

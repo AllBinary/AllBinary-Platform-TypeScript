@@ -101,7 +101,7 @@ export class CryptService
 public constructor (){
 
             super();
-        Globals.getInstance()!.init(thisconstructor.name.java.classLoader, "./");
+        Globals.getInstance()!.init(this.constructor.name.java.classLoader, "./");
     
 this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commonStrings!.CONSTRUCTOR);
     

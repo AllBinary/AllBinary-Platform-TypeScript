@@ -102,7 +102,7 @@ this.collidable= collidable;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return thisconstructor.name.toString()!;;
+                        return this.constructor.name.toString()!;;
     
 }
 
@@ -132,7 +132,7 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
                             throw new Exception(new StringMaker().
-                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(thisconstructor.name.toString()!)!.toString());
+                            append(this.commonStrings!.NOT_IMPLEMENTED)!.append(CommonLabels.getInstance()!.COLON_SEP)!.append(this.constructor.name.toString()!)!.toString());
                     
 }
 

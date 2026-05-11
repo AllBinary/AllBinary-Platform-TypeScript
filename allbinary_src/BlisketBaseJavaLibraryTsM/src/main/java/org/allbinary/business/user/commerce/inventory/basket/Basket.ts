@@ -167,7 +167,7 @@ var num = num
 ;
     
 
-    var weightFloat: Float
+    var weightFloat: number
 ;
     
 
@@ -189,10 +189,10 @@ index < size; index++)
         {
 product= .toCharArray();
     
-weightFloat= new Float(new InventoryEntity().
+weightFloat= new number(new InventoryEntity().
                             getWeight(product));
     
-weightFloat= new Float(getNumberOf(product)!.toFloat() *weightFloat!.toFloat());
+weightFloat= new number(getNumberOf(product)! *weightFloat!);
     
 totalWeight!.add(weightFloat!.toString());
     

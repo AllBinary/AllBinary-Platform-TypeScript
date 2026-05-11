@@ -282,14 +282,14 @@ public constructor (){
         this.initComponents();
     
 
-    var url: URL = thisconstructor.name.getResource("/help/Help.hs")!;
+    var url: URL = this.constructor.name.getResource("/help/Help.hs")!;
 ;
     
 this.logUtil!.putF("URL: " +url, this, this.commonStrings!.CONSTRUCTOR);
     
 this.helpSet= JavaHelpUtil.getInstance()!.getHelpSet(url);
     
-url= thisconstructor.name.getResource("/resources/allbinaryicon8bit.jpg");
+url= this.constructor.name.getResource("/resources/allbinaryicon8bit.jpg");
     
 
     var imageIcon: ImageIcon = new ImageIcon(url);

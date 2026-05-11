@@ -108,7 +108,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return thisconstructor.name.createInstance();;
+                        return this.constructor.name.createInstance();;
     
 
                 //: 

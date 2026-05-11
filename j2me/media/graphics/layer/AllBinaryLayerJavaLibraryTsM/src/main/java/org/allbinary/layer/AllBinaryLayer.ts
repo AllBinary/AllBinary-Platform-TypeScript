@@ -127,7 +127,7 @@ public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPositi
                                 )
                         
                                     {
-                                    localName= thisconstructor.name.toString()!;
+                                    localName= this.constructor.name.toString()!;
     
 
                                     }

@@ -115,7 +115,7 @@ this.geographicMapCellPosition= geographicMapCellPosition;
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
-stringBuffer!.append(thisconstructor.name.toString()!);
+stringBuffer!.append(this.constructor.name.toString()!);
     
 stringBuffer!.append(CommonLabels.getInstance()!.COLON_SEP);
     

@@ -93,7 +93,7 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
 import { NoPlayer } from './NoPlayer.js';
 import { PCClipWavPlayer } from './PCClipWavPlayer.js';
-
+//J2SEMediaMIDPMinimalJavaLibrary
 export class AllBinaryMediaManager
             extends Object
          {
@@ -138,7 +138,7 @@ export class AllBinaryMediaManager
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
@@ -214,7 +214,7 @@ System.gc();
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.put(commonString!.EXCEPTION, THIS, CREATE_PLAYER, e);
+logUtil!.put(commonString!.EXCEPTION, AllBinaryMediaManager.THIS, CREATE_PLAYER, e);
     
 
 

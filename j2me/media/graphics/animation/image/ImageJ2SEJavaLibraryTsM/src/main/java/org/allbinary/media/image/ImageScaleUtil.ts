@@ -143,7 +143,7 @@ private constructor (){
                         if(cached)
                         
                                     {
-                                    image= imageCache!.get(thisconstructor.name.toString()!, Math.round((width *scaleX)), Math.round((height *scaleY)));
+                                    image= imageCache!.get(this.constructor.name.toString()!, Math.round((width *scaleX)), Math.round((height *scaleY)));
     
 
                                     }

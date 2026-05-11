@@ -214,20 +214,20 @@ this.matchingPixelsJTextField!.setText(new Long(imageColorRangeResults!.getMatch
 this.totalPixelsJTextField!.setText(new Long(imageColorRangeResults!.getTotalPixelsChecked()).
                             toString());
     
-this.percentMatchingJTextField!.setText(new Float(imageColorRangeResults!.getPercent()).
+this.percentMatchingJTextField!.setText(new number(imageColorRangeResults!.getPercent()).
                             toString());
     
 
     var imageColorResults: ImageColorResults = imageAnalysisResults!.getImageColorResults()!;
 ;
     
-this.avgRedJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgRed()).
+this.avgRedJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgRed()).
                             toString());
     
-this.avgGreenJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgGreen()).
+this.avgGreenJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgGreen()).
                             toString());
     
-this.avgBlueJTextField!.setText(new Float(imageColorResults!.getColorAverage()!.getAvgBlue()).
+this.avgBlueJTextField!.setText(new number(imageColorResults!.getColorAverage()!.getAvgBlue()).
                             toString());
     
 this.minRedJTextField!.setText(new Long(imageColorResults!.getColorRange()!.getMinRed()).

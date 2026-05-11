@@ -193,7 +193,7 @@ shippingMethodNode!.appendChild(shippingView!.toXmlNode(document));
 ;
     
 
-    var taxRate: Float = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;
+    var taxRate: number = TaxFactory.getInstance()!.getInstance(this.abeClientInformation, storeFrontInterface)!.getTaxRate(streetAddress, storeFrontInterface)!;
 ;
     
 

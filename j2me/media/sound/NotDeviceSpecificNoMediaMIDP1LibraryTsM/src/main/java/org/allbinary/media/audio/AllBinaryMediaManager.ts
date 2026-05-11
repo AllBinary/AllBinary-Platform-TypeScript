@@ -65,7 +65,7 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
         import { Sounds } from './Sounds.js';
 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
 import { NoPlayer } from './NoPlayer.js';
-
+//NotDeviceSpecificNoMediaMIDP1Library
 export class AllBinaryMediaManager
             extends Object
          {
@@ -110,7 +110,7 @@ var soundsFactoryInterface = soundsFactoryInterface
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     
@@ -146,7 +146,7 @@ var type = type
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.putF(commonString!.START, THIS, "creatPlayer(InputStream)");
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(InputStream)");
     
 
 
@@ -167,7 +167,7 @@ var locator = locator
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.putF(commonString!.START, THIS, "creatPlayer(locator)");
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(locator)");
     
 
 

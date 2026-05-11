@@ -71,7 +71,7 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
         import { Sounds } from './Sounds.js';
 import { SoundsFactoryInterface } from './SoundsFactoryInterface.js';
 import { NoPlayer } from './NoPlayer.js';
-
+//MediaMIDP2ForHTMLJavaLibrary
 export class AllBinaryMediaManager
             extends Object
          {
@@ -116,7 +116,7 @@ var soundsFactoryInterface = soundsFactoryInterface
     var commonString: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-logUtil!.putF(commonString!.START, THIS, commonString!.INIT);
+logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, commonString!.INIT);
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Media Manager");
     

@@ -249,7 +249,7 @@ var count = count
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return new Info(thisconstructor, NullAudioFormat.NULL_AUDIO_FORMAT);
+                        return new Info(this.constructor, NullAudioFormat.NULL_AUDIO_FORMAT);
     
 }
 
