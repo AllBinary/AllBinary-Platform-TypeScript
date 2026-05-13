@@ -241,6 +241,7 @@ var graphics = graphics
 }
 
 
+//inner= member=true isStatic=
 TitleProgressBarSetProgressRunnable = class
             extends Object
          implements Runnable {
@@ -273,6 +274,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
                 
             
+//inner= member=true isStatic=
 TitleProgressBarPortionSetProgressRunnable = class
             extends Object
          implements Runnable {
@@ -305,6 +307,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
                 
             
+//inner= member=true isStatic=
 ShowTitleProgressBarRunnable = class
             extends Object
          implements Runnable {
@@ -337,6 +340,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 }
                 
             
+//inner= member=true isStatic=
 DismissTitleProgressBarRunnable = class
             extends Object
          implements Runnable {

@@ -462,7 +462,7 @@ list.clear();
     
 layerManager!.setGeographicMapInterface(
                                                 [
-                                                    baseRaceTrackGeographicMap;
+                                                    baseRaceTrackGeographicMap
                                                 ]);
     
 hashtable.put(AllBinaryGameLayerManager.ID, layerManager);

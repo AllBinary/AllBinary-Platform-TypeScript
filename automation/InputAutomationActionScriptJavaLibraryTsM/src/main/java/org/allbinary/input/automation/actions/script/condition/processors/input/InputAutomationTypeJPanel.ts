@@ -81,7 +81,7 @@ this.jLabel1= new javax.swing.JLabel();
     
 this.inputAutomationTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
-                                                    "DirectX","DirectX 8","Low Level","Java Robot";
+                                                    "DirectX","DirectX 8","Low Level","Java Robot"
                                                 ]));
     
 this.jLabel1!.setText("Input Type:");

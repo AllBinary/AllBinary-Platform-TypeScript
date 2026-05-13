@@ -53,9 +53,6 @@ export class ActivityFractureUtil
          {
         
 
-            //static readonly PUBLIC: string = '%{public}s';
-            
-
                 //@Throws(Exception.constructor)
             
     public process(activity: Activity){

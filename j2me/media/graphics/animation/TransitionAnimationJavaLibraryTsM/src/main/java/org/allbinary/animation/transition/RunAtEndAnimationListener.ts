@@ -59,15 +59,15 @@ this.runnable= runnable;
 }
 
 
-    public onAnimationStart(){
+    public onPlatformAnimationStart(){
 }
 
 
-    public onAnimationEnd(){
+    public onPlatformAnimationEnd(){
 }
 
 
-    public onAnimationRepeat(){
+    public onPlatformAnimationRepeat(){
 }
 
 

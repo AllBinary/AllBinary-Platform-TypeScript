@@ -133,6 +133,7 @@ this.chase(ownerLayer, collidableInterfaceCompositeInterface);
 }
 
 
+//inner= member=true isStatic=
 SimpleSteeringVisitor = class extends SteeringVisitor {
         
 

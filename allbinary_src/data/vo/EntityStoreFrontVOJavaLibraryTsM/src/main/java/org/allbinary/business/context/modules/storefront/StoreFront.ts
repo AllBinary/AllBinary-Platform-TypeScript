@@ -527,7 +527,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
     
 hashMap!.put(
                                                 [
-                                                    CommonSeps.getInstance()!.SPACE;
+                                                    CommonSeps.getInstance()!.SPACE
                                                 ], this.ONE_EMPTY_STRING_ARRAY);
     
 this.name= new Replace(hashMap).

@@ -95,9 +95,6 @@ export class AndroidHardware
          implements HardwareInterface {
         
 
-            //static readonly PUBLIC: string = '%{public}s';
-            
-
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;

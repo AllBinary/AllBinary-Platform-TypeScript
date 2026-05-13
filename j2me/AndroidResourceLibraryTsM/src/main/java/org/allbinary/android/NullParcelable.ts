@@ -56,9 +56,6 @@ export class NullParcelable
          implements Parcelable {
         
 
-            //static readonly PUBLIC: string = '%{public}s';
-            
-
     public static readonly NULL_PARCELABLE: NullParcelable = new NullParcelable();
 
     public describeContents(): number{

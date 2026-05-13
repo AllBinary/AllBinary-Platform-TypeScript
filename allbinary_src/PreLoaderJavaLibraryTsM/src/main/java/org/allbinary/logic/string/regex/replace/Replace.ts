@@ -143,10 +143,10 @@ this.hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(
                                                 [
-                                                    key;
+                                                    key
                                                 ], 
                                                 [
-                                                    value;
+                                                    value
                                                 ]);
     
 }

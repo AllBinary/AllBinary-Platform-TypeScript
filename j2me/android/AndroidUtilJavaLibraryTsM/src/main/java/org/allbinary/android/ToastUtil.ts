@@ -47,15 +47,11 @@ import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { MakeToast } from './MakeToast.js';
-
+        
 export class ToastUtil
             extends Object
          {
         
-
-            //static readonly PUBLIC: string = '%{public}s';
-            
 
     private static readonly instance: ToastUtil = new ToastUtil();
 
@@ -77,13 +73,11 @@ export class ToastUtil
 var message = message
     //var time = time
 
+//inner=true member= isStatic=
 class MakeToast
             extends Object
          implements Runnable {
         
-
-            //static readonly PUBLIC: string = '%{public}s';
-            
 
     readonly string: string
 public constructor (string: string){

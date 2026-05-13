@@ -61,9 +61,6 @@ import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js
 export class AndroidOS extends GenericOperatingSystem {
         
 
-            //static readonly PUBLIC: string = '%{public}s';
-            
-
     private stringBuffer: StringMaker = new StringMaker();
 
     private readonly DEVICE_ID: string = "DeviceId";

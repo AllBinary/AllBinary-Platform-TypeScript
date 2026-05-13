@@ -36,7 +36,7 @@ export class AppNameLicensingAdConfiguration extends AdConfiguration {
 public constructor (){
             super(
                                                 [
-                                                    StringUtil.getInstance()!.EMPTY_STRING,StringUtil.getInstance()!.EMPTY_STRING,StringUtil.getInstance()!.EMPTY_STRING;
+                                                    StringUtil.getInstance()!.EMPTY_STRING,StringUtil.getInstance()!.EMPTY_STRING,StringUtil.getInstance()!.EMPTY_STRING
                                                 ]);
                     
 

@@ -27,9 +27,6 @@
 import { View } from '../../../../android/view/View.js';
 
     
-import { WindowManager } from '../../../../android/view/WindowManager.js';
-
-    
 
 
 
@@ -55,8 +52,6 @@ export interface ViewCompositeInterface {
     getRootView(): View
 
     getView(): View
-
-    getWindowManager(): WindowManager
 
     runOnUiThread(action: Runnable)
 

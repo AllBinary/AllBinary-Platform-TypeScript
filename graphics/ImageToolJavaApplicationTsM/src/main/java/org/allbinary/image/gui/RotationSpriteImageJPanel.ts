@@ -277,7 +277,7 @@ jPanel1Layout!.setVerticalGroup(jPanel1Layout!.createParallelGroup(org.jdesktop.
     
 this.totalFramesJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
-                                                    CommonPhoneStrings.getInstance()!.FOUR,CommonPhoneStrings.getInstance()!.NINE,"18","20","36";
+                                                    CommonPhoneStrings.getInstance()!.FOUR,CommonPhoneStrings.getInstance()!.NINE,"18","20","36"
                                                 ]));
     
 this.jLabel1!.setText("Total Frames:");
@@ -298,7 +298,7 @@ generateJButtonActionPerformed(evt);
     
 this.totalAngleJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
-                                                    "360","90";
+                                                    "360","90"
                                                 ]));
     
 this.totalAngleJComboBox!.addActionListener(new class extends java.awt.event.ActionListener

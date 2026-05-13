@@ -69,6 +69,7 @@ cal.set(Calendar.MILLISECOND, 0);
 }
 
 
+//inner= member=true isStatic=static
 static TestableTimeTypeUtil = class extends TimeTypeUtil {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/

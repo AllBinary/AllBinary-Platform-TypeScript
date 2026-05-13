@@ -2,7 +2,16 @@
 //Via @Component
 
 /*actual*/ export class View
-         {
+{
+  static GONE: number = 0;
+  static VISIBLE: number = 1;
+
+  getHeight(): number {
+    throw new Error('Method not implemented.');
+  }
+  getWidth(): number {
+    throw new Error('Method not implemented.');
+  }
 
   postInvalidate() {
     throw new Error('Method not implemented.');

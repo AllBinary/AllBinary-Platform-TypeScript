@@ -59,6 +59,7 @@ export class OpenGLBitmapFactory extends PlatformBitmapBaseFactory {
 }
 
 
+//inner= member=true isStatic=
 Config = class
             extends Object
          {

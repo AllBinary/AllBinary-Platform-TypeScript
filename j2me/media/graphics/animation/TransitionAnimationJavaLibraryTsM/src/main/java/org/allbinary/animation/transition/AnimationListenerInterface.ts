@@ -44,11 +44,11 @@
 export interface AnimationListenerInterface {
         
 
-    onAnimationStart()
+    onPlatformAnimationStart()
 
-    onAnimationEnd()
+    onPlatformAnimationEnd()
 
-    onAnimationRepeat()
+    onPlatformAnimationRepeat()
 
 }
                 

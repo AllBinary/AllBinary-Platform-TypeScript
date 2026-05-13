@@ -444,7 +444,6 @@ import { NullDemoPaintable } from './NullDemoPaintable.js';
 import { DemoPaintableInterface } from './DemoPaintableInterface.js';
 import { GameCanvasInputProcessor } from './GameCanvasInputProcessor.js';
 import { FormInputProcessor } from './FormInputProcessor.js';
-import { SaveHighScoreRunnable } from './SaveHighScoreRunnable.js';
 
 export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGameCanvasInterface, GameCanvasRunnableInterface, MenuListener, IntermissionCompositeInterface, IntermissionEnableListenerInterface, PopupMenuInterface, DisplayChangeEventListener {
         
@@ -2732,6 +2731,7 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
                         
                                     {
                                     
+//inner=true member= isStatic=
 class SaveHighScoreRunnable
             extends Object
          implements Runnable {

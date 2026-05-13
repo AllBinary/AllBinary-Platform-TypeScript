@@ -152,52 +152,52 @@ var storeName = storeName
     
 hashMap!.put(
                                                 [
-                                                    viewName +SPACE;
+                                                    viewName +SPACE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    storeName +SPACE;
+                                                    storeName +SPACE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.CUSTOMIZER_NAME;
+                                                    this.CUSTOMIZER_NAME
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.BODY_VIEWNAMEKEY;
+                                                    this.BODY_VIEWNAMEKEY
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.TITLE_VIEWNAMEKEY;
+                                                    this.TITLE_VIEWNAMEKEY
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.GLOBALS_NEW;
+                                                    this.GLOBALS_NEW
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.GLOBALS_INSERT;
+                                                    this.GLOBALS_INSERT
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.GLOBALS_DELETE;
+                                                    this.GLOBALS_DELETE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.GLOBALS_EDIT;
+                                                    this.GLOBALS_EDIT
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 hashMap!.put(
                                                 [
-                                                    this.GLOBALS_UPDATE;
+                                                    this.GLOBALS_UPDATE
                                                 ], ONE_EMPTY_STRING_ARRAY);
     
 

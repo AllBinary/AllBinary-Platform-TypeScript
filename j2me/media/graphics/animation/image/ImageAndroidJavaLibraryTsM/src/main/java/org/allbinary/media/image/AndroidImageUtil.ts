@@ -69,9 +69,6 @@ export class AndroidImageUtil
          {
         
 
-            //static readonly PUBLIC: string = '%{public}s';
-            
-
     private static readonly instance: AndroidImageUtil = new AndroidImageUtil();
 
     public static getInstance(): AndroidImageUtil{

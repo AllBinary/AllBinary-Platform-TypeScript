@@ -93,6 +93,7 @@ export class TouchButtonRecognizer
 
     private readonly currentlyPressedTouchButtonSingleton: CurrentlyPressedTouchButtonSingleton = CurrentlyPressedTouchButtonSingleton.getInstance()!;
 
+//inner= member=true isStatic=
 ReleaseHelper = class
             extends Object
          {
@@ -143,6 +144,7 @@ this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index
 }
                 
             
+//inner= member=true isStatic=
 MultitouchReleaseHelper = class extends ReleaseHelper {
         
 public constructor (touchButtonRecognizer: TouchButtonRecognizer){

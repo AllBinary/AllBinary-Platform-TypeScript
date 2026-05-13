@@ -166,6 +166,7 @@ export class ImageCache extends ImageCacheBase {
 
     public hasAnyLazyAnimationFactories: boolean = false;
 
+//inner= member=true isStatic=
 NotHTMLProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
@@ -180,6 +181,7 @@ concurrentImageLoadingProcessor!.runTask();
 }
                 
             
+//inner= member=true isStatic=
 NotHTMLEndProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
@@ -198,6 +200,7 @@ progressCanvas!.endIfPaintedSinceStart();
 }
                 
             
+//inner= member=true isStatic=
 HTMLEndProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/
@@ -245,6 +248,7 @@ endProcessor= new this.NotHTMLEndProcessor();
 }
                 
             
+//inner= member=true isStatic=
 FirstProcessor = class extends Processor {
         
 /*Static stuff is not allowed for Typescript inner classes*//**/

@@ -292,7 +292,7 @@ this.spriteTypeJComboBox= new javax.swing.JComboBox<>();
     
 this.spriteTypeJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
-                                                    org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.DIRECTIONAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_SPRITE;
+                                                    org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.DIRECTIONAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_ANIMATIONS,org.allbinary.media.image.SpriteSplitterUtil.getInstance()!.HORIZONTAL_SPRITE
                                                 ]));
     
 jLabel7= new javax.swing.JLabel();

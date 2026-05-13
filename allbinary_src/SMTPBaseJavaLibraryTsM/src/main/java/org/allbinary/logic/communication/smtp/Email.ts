@@ -222,10 +222,10 @@ mimeBodyParts[1]= new MimeBodyPart(internetHeaders, htmlAttachment!.encodeToByte
                                 
 this.init(server, null as Authenticator, 
                                                 [
-                                                    new InternetAddress(from);
+                                                    new InternetAddress(from)
                                                 ], 
                                                 [
-                                                    new InternetAddress(to);
+                                                    new InternetAddress(to)
                                                 ], null as Array<InternetAddress?>, null as Array<InternetAddress?>, subject, mimeBodyParts);
     
 

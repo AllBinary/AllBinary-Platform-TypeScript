@@ -107,6 +107,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 }
 
 
+//inner= member=true isStatic=
 MediaPlayerOnBufferingUpdateListener = class
             extends Object
          implements MediaPlayer.OnBufferingUpdateListener {
@@ -123,6 +124,7 @@ MediaPlayerOnBufferingUpdateListener = class
 }
                 
             
+//inner= member=true isStatic=
 MediaPlayerOnPreparedListener = class
             extends Object
          implements MediaPlayer.OnPreparedListener {
@@ -138,6 +140,7 @@ MediaPlayerOnPreparedListener = class
 }
                 
             
+//inner= member=true isStatic=
 MediaPlayerOnErrorListener = class
             extends Object
          implements MediaPlayer.OnErrorListener {
@@ -161,6 +164,7 @@ MediaPlayerOnErrorListener = class
 }
                 
             
+//inner= member=true isStatic=
 MediaPlayerOnCompletionListener = class
             extends Object
          implements MediaPlayer.OnCompletionListener {

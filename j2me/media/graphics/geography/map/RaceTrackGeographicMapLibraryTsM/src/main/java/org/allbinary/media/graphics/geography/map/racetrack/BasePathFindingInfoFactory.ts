@@ -78,7 +78,6 @@ import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackRoadsGeographicMapCellHistoryFactory } from './RaceTrackRoadsGeographicMapCellHistoryFactory.js';
-import { RaceTrackGeographicMapCellPositionFactoryInitVisitor } from './RaceTrackGeographicMapCellPositionFactoryInitVisitor.js';
 
 export class BasePathFindingInfoFactory
             extends Object
@@ -94,6 +93,7 @@ export class BasePathFindingInfoFactory
     //var pathFindingInfo = pathFindingInfo
     //var mapArray = mapArray
 
+//inner=true member= isStatic=
 class RaceTrackGeographicMapCellPositionFactoryInitVisitor
             extends Object
          implements GeographicMapCellPositionFactoryInitVisitorInterface {

@@ -178,7 +178,7 @@ this.jLabel2!.setText("On:");
     
 this.alwaysJComboBox!.setModel(new javax.swing.DefaultComboBoxModel(
                                                 [
-                                                    "true","false";
+                                                    "true","false"
                                                 ]));
     
 
