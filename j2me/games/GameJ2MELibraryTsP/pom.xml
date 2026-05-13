@@ -57,7 +57,7 @@
         <module>../../../game/behavior/ArtificialIntelligenceLibraryTsM</module>
 
         <module>../../media/graphics/PlatformNullImageJavaLibraryTsM</module>
-        <module>../../media/graphics/ImageCacheBaseJavaLibraryTsM</module>
+        <module>../../media/graphics/ImageCacheBaseJ2MEJavaLibraryTsM</module>
         <module>../../media/graphics/ImageCacheJ2MEJavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLJ2MENoneJavaLibraryTsM</module>
         <module>../../../graphics/opengl/OpenGLNoneJavaLibraryTsM</module>
