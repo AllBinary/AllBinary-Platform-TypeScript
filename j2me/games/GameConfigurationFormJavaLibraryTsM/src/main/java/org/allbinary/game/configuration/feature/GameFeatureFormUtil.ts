@@ -51,6 +51,9 @@ import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/Lo
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+
+    
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
 
     
@@ -107,7 +110,7 @@ var option = option
 ;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullCanvas.NULL_IMAGE_ARRAY);
 ;
     
 

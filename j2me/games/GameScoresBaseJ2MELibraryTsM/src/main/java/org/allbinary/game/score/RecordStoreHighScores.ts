@@ -54,6 +54,9 @@ import { RecordStoreException } from '../../../../javax/microedition/rms/RecordS
 import { RecordStoreNotFoundException } from '../../../../javax/microedition/rms/RecordStoreNotFoundException.js';
 
     
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+
+    
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
@@ -167,6 +170,8 @@ RecordStoreHighScores.hashTable!.put(highScores!.getName(), highScores);
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private readonly platformRecordIdUtil: PlatformRecordIdUtil = PlatformRecordIdUtil.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly RECORD_ID: string = "_HS";
 
@@ -339,7 +344,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.ADD, 
     var id: number = recordEnum!.nextRecordId()!;
 ;
     
-recordAsBytes= recordStore!.getRecord(id);
+recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 
                         if(recordAsBytes != 
@@ -468,7 +473,7 @@ this.setList(new BasicArrayListD());
     var id: number = recordEnum!.nextRecordId()!;
 ;
     
-recordAsBytes= recordStore!.getRecord(id);
+recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 
                         if(recordAsBytes != 

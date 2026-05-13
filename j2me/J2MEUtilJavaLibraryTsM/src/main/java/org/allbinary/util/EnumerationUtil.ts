@@ -78,7 +78,7 @@ export class EnumerationUtil
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return enumeration.hasMoreElements();;
+                        return enumeration.nextElement()!;;
     
 }
 

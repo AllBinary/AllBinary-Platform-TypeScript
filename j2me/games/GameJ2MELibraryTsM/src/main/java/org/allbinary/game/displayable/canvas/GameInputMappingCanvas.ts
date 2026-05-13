@@ -83,6 +83,9 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
 
     
+import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
+
+    
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
 
     
@@ -115,9 +118,9 @@ export class GameInputMappingCanvas extends GameCommandCanvas implements InputMa
 
     public static readonly NAME: string = "GameInputMappingCanvas";
 
-    public static readonly DISPLAY: Command = new Command("Controls", Command.SCREEN, 2);
+    public static readonly DISPLAY: Command = new Command("Controls", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 2);
 
-    public static readonly DEFAULT: Command = new Command("Default", Command.SCREEN, 2);
+    public static readonly DEFAULT: Command = new Command("Default", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 2);
 
     private readonly paintable: ProcessPaintable
 

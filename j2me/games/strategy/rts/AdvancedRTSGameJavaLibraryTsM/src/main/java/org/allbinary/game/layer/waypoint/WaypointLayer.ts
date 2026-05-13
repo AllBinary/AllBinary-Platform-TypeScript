@@ -119,7 +119,7 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(new CollidableWaypointBehavior(this, true));
+this.setCollidableInferface(new CollidableWaypointBehavior(true));
     
 this.getWaypointBehavior()!.setWaypoint(new Waypoint(this, AttackSound.getInstance()));
     

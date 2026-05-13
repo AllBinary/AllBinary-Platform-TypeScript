@@ -53,6 +53,9 @@ import { CommandForm } from '../../../../org/allbinary/graphics/displayable/scre
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
 
     
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+
+    
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
 
     
@@ -81,11 +84,11 @@ export class GameDifficultyOptions extends CommandForm {
     private readonly list: BasicArrayList
 public constructor (commandListener: CommandListener, title: string, list: BasicArrayList, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
-                    var commandListener = commandListener
-var title = title
-var list = list
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
+                        //var commandListener = commandListener
+    //var title = title
+    //var list = list
+    //var backgrounBasicColor = backgrounBasicColor
+    //var foregroundBasicColor = foregroundBasicColor
 
 
                             //For kotlin this is before the body of the constructor.
@@ -134,7 +137,7 @@ gameDifficultyFactory!.setLevel(this.getSelectedId());
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
+    //var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
 ;
@@ -161,9 +164,9 @@ super.update();
 
 
     add(list: BasicArrayList, name: string, option: number){
-var list = list
-var name = name
-var option = option
+    //var list = list
+    //var name = name
+    //var option = option
 
     var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
 ;
@@ -183,9 +186,9 @@ this.append(choiceGroup);
 
 
     getChoiceGroup(list: BasicArrayList, name: string, option: number): ChoiceGroup{
-var list = list
-var name = name
-var option = option
+    //var list = list
+    //var name = name
+    //var option = option
 
     var METHOD_NAME: string = "addChoiceGroup";
 ;
@@ -195,7 +198,7 @@ var option = option
 ;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullCanvas.NULL_IMAGE_ARRAY);
 ;
     
 
@@ -231,7 +234,7 @@ choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
 
 
     public setSelectedId(id: number){
-var id = id
+    //var id = id
 
     var choiceGroup: ChoiceGroup = this.get(0) as ChoiceGroup;
 ;

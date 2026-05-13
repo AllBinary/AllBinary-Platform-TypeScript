@@ -104,7 +104,7 @@ public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedU
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance());
+this.setCollidableInferface(CollidableAlwaysPickupNeverCollideBehaviorFactory.getInstance()!.createBehavior());
     
 this.setLayerWidth(10);
     

@@ -45,6 +45,9 @@ import { RecordEnumeration } from '../../../../../javax/microedition/rms/RecordE
 import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.js';
 
     
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+
+    
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
 
     
@@ -91,6 +94,8 @@ import { NullRecordComparator } from './NullRecordComparator.js';
 
 export class KeyValuePersistance extends BasicPersitance {
         
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 protected constructor (recordId: string){
             super(recordId);
                         //var recordId = recordId
@@ -170,7 +175,7 @@ stringBuffer!.delete(0, stringBuffer!.length());
     
 this.logUtil!.putF(stringBuffer!.append(this.persistanceStrings!.LOADING_ID)!.appendint(id)!.toString(), this, this.persistanceStrings!.LOAD_ALL);
     
-recordAsBytes= recordStore!.getRecord(id);
+recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 
                         if(recordAsBytes != 

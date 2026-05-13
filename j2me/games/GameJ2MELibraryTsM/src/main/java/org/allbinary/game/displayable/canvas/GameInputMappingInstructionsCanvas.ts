@@ -54,9 +54,6 @@ import { DrawStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawS
 import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
 
     
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
 
     
@@ -83,9 +80,9 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
         
 
-    public static readonly DISPLAY: Command = new Command("Help", Command.SCREEN, 1);
+    public static readonly DISPLAY: Command = new Command("Help", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
-    public static readonly CLOSE: Command = new Command("Close", Command.SCREEN, 1);
+    public static readonly CLOSE: Command = new Command("Close", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
     public static readonly NAME: string = "GameInputMappingInstructionsCanvas";
 

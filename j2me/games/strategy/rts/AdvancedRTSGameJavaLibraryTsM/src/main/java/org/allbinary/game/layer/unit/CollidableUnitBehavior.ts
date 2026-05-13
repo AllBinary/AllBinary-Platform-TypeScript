@@ -100,10 +100,9 @@ export class CollidableUnitBehavior extends CollidableRTSBehavior {
         
 
     private readonly layerPartialCellPositionsUtil: LayerPartialCellPositionsUtil = LayerPartialCellPositionsUtil.getInstance()!;
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
-            super(ownerLayer, collidable);
-                        //var ownerLayer = ownerLayer
-    //var collidable = collidable
+public constructor (collidable: boolean){
+            super(collidable);
+                        //var collidable = collidable
 
 
                             //For kotlin this is before the body of the constructor.
@@ -113,9 +112,10 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 
                 //@Throws(Exception.constructor)
             
-    collideNone(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    collideNone(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-this.chase(collidableInterfaceCompositeInterface);
+this.chase(ownerLayer, collidableInterfaceCompositeInterface);
     
 
     var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
@@ -125,7 +125,7 @@ this.chase(collidableInterfaceCompositeInterface);
                         if(rtsLayer!.getType() == UnitLayer.getStaticType())
                         
                                     {
-                                    this.collideUnit(rtsLayer as UnitLayer);
+                                    this.collideUnit(ownerLayer, rtsLayer as UnitLayer);
     
 
                                     }
@@ -145,6 +145,10 @@ SimpleSteeringVisitor = class extends SteeringVisitor {
 
         try {
             
+    var ownerLayer: CollidableCompositeLayer = anyType as CollidableCompositeLayer;
+;
+    
+
                         if(this.getList()!.size() > 0)
                         
                                     {
@@ -153,7 +157,7 @@ SimpleSteeringVisitor = class extends SteeringVisitor {
 ;
     
 
-    var clear: boolean = CollidableUnitBehavior.prototype.steer(allbinaryLayer)!;
+    var clear: boolean = CollidableUnitBehavior.prototype.steer(ownerLayer, allbinaryLayer)!;
 ;
     
 
@@ -210,10 +214,11 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 
                 //@Throws(Exception.constructor)
             
-    steer(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
+    steer(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
+    //var ownerLayer = ownerLayer
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
-    var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
+    var ownerUnitLayer: UnitLayer = ownerLayer as UnitLayer;
 ;
     
 
@@ -270,7 +275,8 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 
                 //@Throws(Exception.constructor)
             
-    chase(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    chase(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
@@ -290,7 +296,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
                                     }
                                 
 
-    var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
+    var ownerUnitLayer: UnitLayer = ownerLayer as UnitLayer;
 ;
     
 
@@ -314,10 +320,11 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 
                 //@Throws(Exception.constructor)
             
-    collideUnit(unitLayer: UnitLayer){
+    collideUnit(ownerLayer: CollidableCompositeLayer, unitLayer: UnitLayer){
+    //var ownerLayer = ownerLayer
     //var unitLayer = unitLayer
 
-    var ownerUnitLayer: UnitLayer = this.ownerLayer as UnitLayer;
+    var ownerUnitLayer: UnitLayer = ownerLayer as UnitLayer;
 ;
     
 
@@ -349,14 +356,14 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
 ;
     
 
-                        if(this.ownerLayer!.getXP() < unitLayer!.getXP() && this.ownerLayer!.getX2() > unitLayer!.getXP())
+                        if(ownerLayer!.getXP() < unitLayer!.getXP() && ownerLayer!.getX2() > unitLayer!.getXP())
                         
                                     {
                                     
-    var diff: number = this.ownerLayer!.getWidth() +1;
+    var diff: number = ownerLayer!.getWidth() +1;
 ;
     
-this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, this.ownerLayer,  -diff, 0, partialPositionList);
+this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, ownerLayer,  -diff, 0, partialPositionList);
     
 
                         if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
@@ -367,14 +374,14 @@ this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, this.ownerLaye
 ;
     
 
-    var y: number = this.ownerLayer!.getYP()!;
+    var y: number = ownerLayer!.getYP()!;
 ;
     
-x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth());
+x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, ownerLayer!.getWidth());
     
-y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight());
+y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, ownerLayer!.getHeight());
     
-this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
+ownerLayer!.setPosition(x, y, ownerLayer!.getZP());
     
 
                                     }
@@ -406,32 +413,32 @@ unitLayer!.setPosition(x, y, unitLayer!.getZP());
                                     }
                                 
 
-                        if(this.ownerLayer!.getYP() < unitLayer!.getYP() && this.ownerLayer!.getY2() > unitLayer!.getYP())
+                        if(ownerLayer!.getYP() < unitLayer!.getYP() && ownerLayer!.getY2() > unitLayer!.getYP())
                         
                                     {
                                     
-    var diff: number = this.ownerLayer!.getHeight() +1;
+    var diff: number = ownerLayer!.getHeight() +1;
 ;
     
-this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, this.ownerLayer, 0,  -diff, partialPositionList);
+this.layerPartialCellPositionsUtil!.getAllDXY(basicGeographicMap, ownerLayer, 0,  -diff, partialPositionList);
     
 
                         if(!dropCellPositionHistory!.anyCellPositionWithDrop(partialPositionList))
                         
                                     {
                                     
-    var x: number = this.ownerLayer!.getXP()!;
+    var x: number = ownerLayer!.getXP()!;
 ;
     
 
     var y: number = unitLayer!.getYP() -diff;
 ;
     
-x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, this.ownerLayer!.getWidth());
+x= tiledLayerUtil!.keepOnMapX(tiledLayer, x, ownerLayer!.getWidth());
     
-y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, this.ownerLayer!.getHeight());
+y= tiledLayerUtil!.keepOnMapY(tiledLayer, y, ownerLayer!.getHeight());
     
-this.ownerLayer!.setPosition(x, y, this.ownerLayer!.getZP());
+ownerLayer!.setPosition(x, y, ownerLayer!.getZP());
     
 
                                     }

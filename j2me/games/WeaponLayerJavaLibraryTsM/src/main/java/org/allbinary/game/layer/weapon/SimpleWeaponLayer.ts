@@ -97,7 +97,7 @@ public constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: numbe
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(new CollidableWeaponBehavior(this, true));
+this.setCollidableInferface(new CollidableWeaponBehavior(true));
     
 }
 

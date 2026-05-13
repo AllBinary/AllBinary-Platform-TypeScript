@@ -48,7 +48,7 @@ import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
 
     
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
 
@@ -73,11 +73,11 @@ import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUt
 export class InGameOptionsForm extends CommandForm {
         
 
-    public static readonly DISPLAY: Command = new Command("Options In Game", Command.SCREEN, 1);
+    public static readonly DISPLAY: Command = new Command("Options In Game", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
-    public static readonly SAVE: Command = new Command("Save", Command.SCREEN, 1);
+    public static readonly SAVE: Command = new Command("Save", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
-    public static readonly DEFAULT: Command = new Command("Default", Command.SCREEN, 1);
+    public static readonly DEFAULT: Command = new Command("Default", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
  constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
                     var commandListener = commandListener

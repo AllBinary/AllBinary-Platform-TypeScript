@@ -63,8 +63,8 @@ import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
-import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
+        import { VehiclePropertiesCompositeInterface } from './VehiclePropertiesCompositeInterface.js';
+import { CollidableCompositeLayer } from './CollidableCompositeLayer.js';
 import { VehicleProperties } from './VehicleProperties.js';
 import { VehicleFrictionProperties } from './VehicleFrictionProperties.js';
 
@@ -72,10 +72,9 @@ export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBe
         
 
     totalImpactVelocity: number = 0;
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
-            super(ownerLayer, collidable);
-                        //var ownerLayer = ownerLayer
-    //var collidable = collidable
+public constructor (collidable: boolean){
+            super(collidable);
+                        //var collidable = collidable
 
 
                             //For kotlin this is before the body of the constructor.
@@ -85,14 +84,15 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 
                 //@Throws(Exception.constructor)
             
-    public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
+    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;
 ;
     
 
@@ -100,7 +100,7 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = (this.ownerLayer as CollidableDestroyableDamageableLayer);
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = (ownerLayer as CollidableDestroyableDamageableLayer);
 ;
     
 collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
@@ -112,13 +112,13 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
                         if(collisionType == collisionTypeFactory!.COLLISION)
                         
                                     {
-                                    super.collide(collidableInterfaceCompositeInterface);
+                                    super.collide(ownerLayer, collidableInterfaceCompositeInterface);
     
 
                                     }
                                 
                         else {
-                            this.collideVehicle(collidableInterfaceCompositeInterface as VehiclePropertiesCompositeInterface);
+                            this.collideVehicle(ownerLayer, collidableInterfaceCompositeInterface as VehiclePropertiesCompositeInterface);
     
 
                         }
@@ -126,7 +126,8 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
 }
 
 
-    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    //var ownerLayer = ownerLayer
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
     
@@ -137,10 +138,11 @@ ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
 
     private halfImpactVelocityY: number= 0
 
-    collideVehicle(vehiclePropertiesCompositeInterface: VehiclePropertiesCompositeInterface){
+    collideVehicle(ownerLayer: CollidableCompositeLayer, vehiclePropertiesCompositeInterface: VehiclePropertiesCompositeInterface){
+    //var ownerLayer = ownerLayer
     //var vehiclePropertiesCompositeInterface = vehiclePropertiesCompositeInterface
 
-    var ownerVehicleLayerInterface: VehiclePropertiesCompositeInterface = (this.ownerLayer as VehiclePropertiesCompositeInterface);
+    var ownerVehicleLayerInterface: VehiclePropertiesCompositeInterface = (ownerLayer as VehiclePropertiesCompositeInterface);
 ;
     
 

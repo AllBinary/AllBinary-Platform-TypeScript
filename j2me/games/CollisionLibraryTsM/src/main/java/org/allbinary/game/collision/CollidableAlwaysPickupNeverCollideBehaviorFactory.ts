@@ -40,21 +40,33 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollidableAlwaysPickupNeverCollideBehavior } from './CollidableAlwaysPickupNeverCollideBehavior.js';
+        import { CollidableBaseBehaviorFactory } from './CollidableBaseBehaviorFactory.js';
+import { CollidableAlwaysPickupNeverCollideBehavior } from './CollidableAlwaysPickupNeverCollideBehavior.js';
+import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 
-export class CollidableAlwaysPickupNeverCollideBehaviorFactory
-            extends Object
-         {
+export class CollidableAlwaysPickupNeverCollideBehaviorFactory extends CollidableBaseBehaviorFactory {
         
 
-    private static readonly instance: CollidableAlwaysPickupNeverCollideBehavior = new CollidableAlwaysPickupNeverCollideBehavior();
+    private static readonly instance2: CollidableAlwaysPickupNeverCollideBehaviorFactory = new CollidableAlwaysPickupNeverCollideBehaviorFactory();
 
-    public static getInstance(): CollidableAlwaysPickupNeverCollideBehavior{
+    public static getInstance(): CollidableAlwaysPickupNeverCollideBehaviorFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CollidableAlwaysPickupNeverCollideBehaviorFactory.instance;
+                        return CollidableAlwaysPickupNeverCollideBehaviorFactory.instance2;
+    
+}
+
+
+    private readonly instance: CollidableAlwaysPickupNeverCollideBehavior = new CollidableAlwaysPickupNeverCollideBehavior();
+
+    public createBehavior(): CollidableBaseBehavior{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.instance;
     
 }
 

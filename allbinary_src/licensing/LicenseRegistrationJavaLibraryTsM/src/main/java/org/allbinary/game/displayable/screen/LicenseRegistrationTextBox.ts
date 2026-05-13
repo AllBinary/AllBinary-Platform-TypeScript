@@ -94,9 +94,9 @@ import { VirtualKeyboardEventHandler } from '../../../../../org/allbinary/input/
 export class LicenseRegistrationTextBox extends CustomTextBox {
         
 
-    public static readonly DISPLAY_COMMAND: Command = new Command("Register", Command.SCREEN, 3);
+    public static readonly DISPLAY_COMMAND: Command = new Command("Register", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 3);
 
-    public static readonly SUBMIT_COMMAND: Command = new Command("Submit", Command.SCREEN, 3);
+    public static readonly SUBMIT_COMMAND: Command = new Command("Submit", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 3);
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

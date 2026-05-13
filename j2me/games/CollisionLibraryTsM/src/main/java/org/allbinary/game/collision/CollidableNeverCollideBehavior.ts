@@ -27,15 +27,6 @@
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
 
     
-import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
-import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
-import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-
-    
 
 
 
@@ -55,13 +46,12 @@ import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
-import { CollidableNeverCollideBehaviorFactory } from './CollidableNeverCollideBehaviorFactory.js';
 import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';
 
 export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
  constructor (isCollidable: boolean){
-            super(new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.getInstanceD(), CollidableNeverCollideBehaviorFactory.getInstance()), isCollidable);
+            super(isCollidable);
                     var isCollidable = isCollidable
 
 
@@ -70,8 +60,9 @@ export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
 }
 
 
-    public isCollision(allbinaryCollidableLayer: CollidableCompositeLayer): boolean{
-var allbinaryCollidableLayer = allbinaryCollidableLayer
+    public isCollision(ownerLayer: CollidableCompositeLayer, allbinaryCollidableLayer: CollidableCompositeLayer): boolean{
+    //var ownerLayer = ownerLayer
+    //var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
 
@@ -83,17 +74,20 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 
                 //@Throws(Exception.constructor)
             
-    public collide(allbinaryCollidableLayer: CollidableCompositeLayer){
-var allbinaryCollidableLayer = allbinaryCollidableLayer
+    public collide(ownerLayer: CollidableCompositeLayer, allbinaryCollidableLayer: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
+    //var allbinaryCollidableLayer = allbinaryCollidableLayer
 }
 
 
-    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 }
 
 
-    public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 

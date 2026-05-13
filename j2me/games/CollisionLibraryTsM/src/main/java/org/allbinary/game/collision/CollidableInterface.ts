@@ -58,15 +58,15 @@ export interface CollidableInterface extends NamedInterface {
 
                 //@Throws(Exception.constructor)
             
-    isCollidable(): boolean
+    isCollidable(ownerLayer: CollidableCompositeLayer): boolean
 
                 //@Throws(Exception.constructor)
             
-    isCollision(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean
+    isCollision(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean
 
                 //@Throws(Exception.constructor)
             
-    collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer)
+    collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer)
 
     getCollisionTypeWith(layerInterface: AllBinaryLayer): CollisionType
 

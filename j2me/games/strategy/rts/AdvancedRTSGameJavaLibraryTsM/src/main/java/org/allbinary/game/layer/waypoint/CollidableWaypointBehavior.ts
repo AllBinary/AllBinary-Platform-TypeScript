@@ -54,10 +54,9 @@ import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbin
         
 export class CollidableWaypointBehavior extends CollidableRTSBehavior {
         
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
-            super(ownerLayer, collidable);
-                    var ownerLayer = ownerLayer
-var collidable = collidable
+public constructor (collidable: boolean){
+            super(collidable);
+                    var collidable = collidable
 
 
                             //For kotlin this is before the body of the constructor.
@@ -65,7 +64,8 @@ var collidable = collidable
 }
 
 
-    public isCollision(collisionLayer: CollidableCompositeLayer): boolean{
+    public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
+    //var ownerLayer = ownerLayer
 var collisionLayer = collisionLayer
 
 
@@ -78,12 +78,14 @@ var collisionLayer = collisionLayer
 
                 //@Throws(Exception.constructor)
             
-    public collide(collisionLayer: CollidableCompositeLayer){
+    public collide(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
 var collisionLayer = collisionLayer
 }
 
 
-    public isCollisionInterface(collidableInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterface: CollidableInterfaceCompositeInterface): boolean{
+    //var ownerLayer = ownerLayer
 var collidableInterface = collidableInterface
 
 
@@ -96,7 +98,8 @@ var collidableInterface = collidableInterface
 
                 //@Throws(Exception.constructor)
             
-    public collideInterface(collidableInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterface: CollidableInterfaceCompositeInterface){
+    //var ownerLayer = ownerLayer
 var collidableInterface = collidableInterface
 }
 

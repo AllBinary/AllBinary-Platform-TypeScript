@@ -35,9 +35,6 @@ import { MotionEvent } from '../../../../android/view/MotionEvent.js';
 import { View } from '../../../../android/view/View.js';
 
     
-import { WindowManager } from '../../../../android/view/WindowManager.js';
-
-    
 import { GenericMotionEventVerifyInterface } from '../../../../org/allbinary/android/GenericMotionEventVerifyInterface.js';
 
     
@@ -128,15 +125,6 @@ var animationSequence = animationSequence
 
 
     public getView(): View{
-
-
-
-                            throw new RuntimeException();
-                    
-}
-
-
-    public getWindowManager(): WindowManager{
 
 
 

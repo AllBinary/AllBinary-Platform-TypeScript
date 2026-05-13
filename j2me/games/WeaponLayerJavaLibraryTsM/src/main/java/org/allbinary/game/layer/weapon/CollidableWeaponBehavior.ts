@@ -54,9 +54,6 @@ import { CollidableDestroyableDamageableBehavior } from '../../../../../org/allb
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
 
     
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
 
 
 
@@ -79,15 +76,14 @@ import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/Lo
 export class CollidableWeaponBehavior extends CollidableDestroyableDamageableBehavior {
         
 
-    public static readonly NULL_COLLIDABLE_WEAPON_BEHAVIOR: CollidableWeaponBehavior = new CollidableWeaponBehavior(CollidableCompositeLayer.NULL_COLLIDABLE_COMPOSITE_LAYER, false);
+    public static readonly NULL_COLLIDABLE_WEAPON_BEHAVIOR: CollidableWeaponBehavior = new CollidableWeaponBehavior(false);
 
     private collided: boolean= false
 
     collisionHelper: CollisionHelper
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
-            super(ownerLayer, collidable);
-                    var ownerLayer = ownerLayer
-var collidable = collidable
+public constructor (collidable: boolean){
+            super(collidable);
+                    var collidable = collidable
 
 
                             //For kotlin this is before the body of the constructor.
@@ -110,21 +106,22 @@ this.collisionHelper!.setOwnerLayerInterface(sourceLayerInterface);
 }
 
 
-    public isCollision(collisionLayer: CollidableCompositeLayer): boolean{
+    public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
+    //var ownerLayer = ownerLayer
 var collisionLayer = collisionLayer
 
                         if(this.collisionHelper!.isCollidable(collisionLayer))
                         
                                     {
                                     
-                        if(this.ownerLayer!.getGroupInterface()[0] != collisionLayer!.getGroupInterface()[0])
+                        if(ownerLayer!.getGroupInterface()[0] != collisionLayer!.getGroupInterface()[0])
                         
                                     {
                                     
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.isCollision(collisionLayer);;
+                        return super.isCollision(ownerLayer, collisionLayer);;
     
 
                                     }
@@ -143,9 +140,10 @@ var collisionLayer = collisionLayer
 
                 //@Throws(Exception.constructor)
             
-    public collide(collisionLayer: CollidableCompositeLayer){
+    public collide(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
 var collisionLayer = collisionLayer
-super.collide(collisionLayer);
+super.collide(ownerLayer, collisionLayer);
     
 this.collided= true;
     
@@ -154,7 +152,8 @@ this.collided= true;
 
     private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
 
-    public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
                         if(this.collisionHelper!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
@@ -165,11 +164,11 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 ;
     
 
-                        if(this.ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])
+                        if(ownerLayer!.getGroupInterface()[0] != layerInterface!.getGroupInterface()[0])
                         
                                     {
                                     
-                        if(this.layerCollisionUtil!.isCollision(this.ownerLayer, layerInterface))
+                        if(this.layerCollisionUtil!.isCollision(ownerLayer, layerInterface))
                         
                                     {
                                     
@@ -198,9 +197,10 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
                 //@Throws(Exception.constructor)
             
-    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-damageUtil!.process(this.ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
+damageUtil!.process(ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
     
 this.collided= true;
     

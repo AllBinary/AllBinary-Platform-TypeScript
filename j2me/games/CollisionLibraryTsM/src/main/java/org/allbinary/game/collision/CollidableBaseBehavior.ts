@@ -79,15 +79,10 @@ export class CollidableBaseBehavior
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     private collidable: boolean = true;
-
-    readonly ownerLayer: CollidableCompositeLayer
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
+public constructor (collidable: boolean){
 
             super();
-        var ownerLayer = ownerLayer
-var collidable = collidable
-this.ownerLayer= ownerLayer;
-    
+            //var collidable = collidable
 this.collidable= collidable;
     
 }
@@ -114,7 +109,8 @@ this.collidable= collidable;
 }
 
 
-    public isCollidable(): boolean{
+    public isCollidable(ownerLayer: CollidableCompositeLayer): boolean{
+    //var ownerLayer = ownerLayer
 
 
 
@@ -126,8 +122,9 @@ this.collidable= collidable;
 
                 //@Throws(Exception.constructor)
             
-    public collide(allbinaryCollidableLayer: CollidableCompositeLayer){
-var allbinaryCollidableLayer = allbinaryCollidableLayer
+    public collide(ownerLayer: CollidableCompositeLayer, allbinaryCollidableLayer: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
+    //var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
 
@@ -139,31 +136,34 @@ var allbinaryCollidableLayer = allbinaryCollidableLayer
 
     private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
 
-    public isCollision(collisionLayer: CollidableCompositeLayer): boolean{
-var collisionLayer = collisionLayer
+    public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
+    //var ownerLayer = ownerLayer
+    //var collisionLayer = collisionLayer
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.layerCollisionUtil!.isCollision(this.ownerLayer, collisionLayer);;
+                        return this.layerCollisionUtil!.isCollision(ownerLayer, collisionLayer);;
     
 }
 
 
-    public isCollisionInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.layerCollisionUtil!.isCollision(this.ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);;
+                        return this.layerCollisionUtil!.isCollision(ownerLayer, collidableInterfaceCompositeInterface as AllBinaryLayer);;
     
 }
 
 
                 //@Throws(Exception.constructor)
             
-    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 

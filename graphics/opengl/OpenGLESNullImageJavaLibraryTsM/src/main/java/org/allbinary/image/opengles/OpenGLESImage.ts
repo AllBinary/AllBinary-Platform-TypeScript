@@ -76,7 +76,7 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
 import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
 import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
 import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
-
+//OpenGLESNullImageJavaLibrary
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
 

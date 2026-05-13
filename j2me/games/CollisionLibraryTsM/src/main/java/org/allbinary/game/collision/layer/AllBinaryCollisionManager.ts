@@ -30,6 +30,9 @@ import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collis
 import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 
     
+import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
+
+    
 import { LayerManager } from '../../../../../org/allbinary/layer/LayerManager.js';
 
     
@@ -118,16 +121,16 @@ var collidableInterfaceCompositeInterface2 = collidableInterfaceCompositeInterfa
 ;
     
 
-                        if(collidableBase2!.isCollidable())
+                        if(collidableBase2!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
                         
                                     {
                                     
-                        if(collidableBase!.isCollisionInterface(collidableInterfaceCompositeInterface2))
+                        if(collidableBase!.isCollisionInterface(collidableInterfaceCompositeInterface as CollidableCompositeLayer, collidableInterfaceCompositeInterface2))
                         
                                     {
-                                    collidableBase!.collideInterface(collidableInterfaceCompositeInterface2);
+                                    collidableBase!.collideInterface(collidableInterfaceCompositeInterface as CollidableCompositeLayer, collidableInterfaceCompositeInterface2);
     
-collidableBase2!.collideInterface(collidableInterfaceCompositeInterface);
+collidableBase2!.collideInterface(collidableInterfaceCompositeInterface as CollidableCompositeLayer, collidableInterfaceCompositeInterface);
     
 
                                     }

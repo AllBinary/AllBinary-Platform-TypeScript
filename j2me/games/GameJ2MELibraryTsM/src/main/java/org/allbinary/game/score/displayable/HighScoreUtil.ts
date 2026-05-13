@@ -93,7 +93,7 @@ export class HighScoreUtil
          implements HighScoresResultsListener {
         
 
-    public static readonly SUBMIT_TEXTBOX_COMMAND: Command = new Command("Submit", Command.SCREEN, 1);
+    public static readonly SUBMIT_TEXTBOX_COMMAND: Command = new Command("Submit", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 

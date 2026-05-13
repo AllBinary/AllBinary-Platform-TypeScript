@@ -257,7 +257,7 @@ public constructor (remoteInfo: RemoteInfo, buildingPropertiesFactory: BuildingP
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(new CollidableRTSBehavior(this, true));
+this.setCollidableInferface(new CollidableRTSBehavior(true));
     
 this.getWaypointBehavior()!.setWaypoint(new Waypoint(this, SelectSound.getInstance()));
     

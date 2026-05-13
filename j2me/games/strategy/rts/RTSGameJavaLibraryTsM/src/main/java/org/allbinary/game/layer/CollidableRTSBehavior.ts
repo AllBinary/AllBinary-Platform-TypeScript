@@ -55,10 +55,9 @@ import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbina
 
 export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavior {
         
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
-            super(ownerLayer, collidable);
-                        //var ownerLayer = ownerLayer
-    //var collidable = collidable
+public constructor (collidable: boolean){
+            super(collidable);
+                        //var collidable = collidable
 
 
                             //For kotlin this is before the body of the constructor.
@@ -66,14 +65,15 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 }
 
 
-    public isCollision(collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
+    public isCollision(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
+    //var ownerLayer = ownerLayer
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
+    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;
 ;
     
 
@@ -91,14 +91,14 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return super.isCollision(collidableInterfaceCompositeInterface);;
+                        return super.isCollision(ownerLayer, collidableInterfaceCompositeInterface);;
     
 
                                     }
                                 
                         else {
                             
-                        if(collidableInterfaceCompositeInterface!.getX2() <= this.ownerLayer!.getXP() || collidableInterfaceCompositeInterface!.getY2() <= this.ownerLayer!.getYP() || collidableInterfaceCompositeInterface!.getYP() >= this.ownerLayer!.getY2() || collidableInterfaceCompositeInterface!.getXP() >= this.ownerLayer!.getX2())
+                        if(collidableInterfaceCompositeInterface!.getX2() <= ownerLayer!.getXP() || collidableInterfaceCompositeInterface!.getY2() <= ownerLayer!.getYP() || collidableInterfaceCompositeInterface!.getYP() >= ownerLayer!.getY2() || collidableInterfaceCompositeInterface!.getXP() >= ownerLayer!.getX2())
                         
                                     {
                                     
@@ -134,14 +134,15 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 
                 //@Throws(Exception.constructor)
             
-    public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
     //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
+    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;
 ;
     
 
@@ -155,13 +156,13 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
                         if(collisionType == collisionTypeFactory!.COLLISION)
                         
                                     {
-                                    super.collide(collidableInterfaceCompositeInterface);
+                                    super.collide(ownerLayer, collidableInterfaceCompositeInterface);
     
 
                                     }
                                 
                         else {
-                            this.collideNone(collidableInterfaceCompositeInterface);
+                            this.collideNone(ownerLayer, collidableInterfaceCompositeInterface);
     
 
                         }
@@ -171,7 +172,8 @@ public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
 
                 //@Throws(Exception.constructor)
             
-    collideNone(collidableInterface: CollidableCompositeLayer){
+    collideNone(ownerLayer: CollidableCompositeLayer, collidableInterface: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
     //var collidableInterface = collidableInterface
 }
 

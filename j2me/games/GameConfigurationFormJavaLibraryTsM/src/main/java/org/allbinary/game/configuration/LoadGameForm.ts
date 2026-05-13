@@ -35,6 +35,9 @@ import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
 
     
+import { Item } from '../../../../javax/microedition/lcdui/Item.js';
+
+    
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
 
     
@@ -87,10 +90,10 @@ export class LoadGameForm extends CommandForm {
     private areChoices: boolean= false
 public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
-                    var commandListener = commandListener
-var title = title
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
+                        //var commandListener = commandListener
+    //var title = title
+    //var backgrounBasicColor = backgrounBasicColor
+    //var foregroundBasicColor = foregroundBasicColor
 
 
                             //For kotlin this is before the body of the constructor.
@@ -105,7 +108,7 @@ this.initCommands(commandListener);
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
+    //var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
 ;
@@ -144,7 +147,7 @@ this.areChoices= true;
                                     }
                                 
                         else {
-                            this.append(new StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING));
+                            this.append(new StringItem("No Saved Games", StringUtil.getInstance()!.EMPTY_STRING, Item.PLAIN));
     
 this.areChoices= false;
     
@@ -157,9 +160,9 @@ super.update();
 
 
     add(list: BasicArrayList, name: string, option: number){
-var list = list
-var name = name
-var option = option
+    //var list = list
+    //var name = name
+    //var option = option
 
     var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
 ;
@@ -179,15 +182,19 @@ this.append(choiceGroup);
 
 
     getChoiceGroup(list: BasicArrayList, name: string, option: number): ChoiceGroup{
-var list = list
-var name = name
-var option = option
+    //var list = list
+    //var name = name
+    //var option = option
 
     var METHOD_NAME: string = "getChoiceGroup";
 ;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option);
+    var ADDING_CHOICE: string = "Adding Choice: ";
+;
+    
+
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullCanvas.NULL_IMAGE_ARRAY);
 ;
     
 
@@ -207,7 +214,7 @@ index < size; index++)
 ;
     
 this.logUtil!.putF(new StringMaker().
-                            append("Adding Choice: ")!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
+                            append(ADDING_CHOICE)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
 choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
     

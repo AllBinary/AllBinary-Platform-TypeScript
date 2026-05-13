@@ -31,6 +31,9 @@ import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/Ar
 import { CollidableBaseBehavior } from '../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
 
     
+import { CollidableBaseBehaviorFactory } from '../../../../org/allbinary/game/collision/CollidableBaseBehaviorFactory.js';
+
+    
 import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
 
     
@@ -83,22 +86,22 @@ export class CollidableCompositeLayer extends AllBinaryGameLayer implements Coll
 
     public static readonly NULL_COLLIDABLE_COMPOSITE_LAYER: CollidableCompositeLayer = new CollidableCompositeLayer(StringUtil.getInstance()!.EMPTY_STRING, RectangleFactory.SINGLETON, ViewPosition.NULL_VIEW_POSITION, CollidableNeverCollideBehaviorFactory.getInstance());
 
-    private collidableInferface: CollidableBaseBehavior = CollidableNeverCollideBehaviorFactory.getInstance()!;
-public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableInferface: CollidableBaseBehavior){
+    private collidableInferface: CollidableBaseBehavior = CollidableNeverCollideBehaviorFactory.getInstance()!.createBehavior()!;
+public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableBaseBehaviorFactory: CollidableBaseBehaviorFactory){
             super(name, layerInfo, viewPosition);
                         //var name = name
     //var layerInfo = layerInfo
     //var viewPosition = viewPosition
-    //var collidableInferface = collidableInferface
+    //var collidableBaseBehaviorFactory = collidableBaseBehaviorFactory
 
 
                             //For kotlin this is before the body of the constructor.
                     
 
-                        if(collidableInferface != CollidableNeverCollideBehaviorFactory.getInstance())
+                        if(collidableBaseBehaviorFactory != CollidableNeverCollideBehaviorFactory.getInstance())
                         
                                     {
-                                    this.setCollidableInferface(collidableInferface);
+                                    this.setCollidableInferface(collidableBaseBehaviorFactory!.createBehavior());
     
 
                                     }

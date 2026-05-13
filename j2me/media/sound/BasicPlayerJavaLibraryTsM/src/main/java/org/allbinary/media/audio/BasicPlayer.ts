@@ -34,9 +34,6 @@ import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js'
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
 
     
-import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-
-    
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
 
     
@@ -81,9 +78,9 @@ export class BasicPlayer
 
     readonly listenersList: BasicArrayList = new BasicArrayListD();
 
-    state: number= 0
+    stateP: number= 0
 
-    loopCount: number= 0
+    loopCountP: number= 0
 public constructor (){
 
             super();
@@ -156,7 +153,7 @@ this.listenersList!.remove(playerListener);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.state;
+                        return this.stateP;
     
 }
 
@@ -164,7 +161,7 @@ this.listenersList!.remove(playerListener);
 
     public setState(state: number){
 var state = state
-this.state= state;
+this.stateP= state;
     
 }
 
@@ -208,7 +205,7 @@ this.state= state;
 
     public setLoopCount(count: number){
 var count = count
-this.loopCount= count;
+this.loopCountP= count;
     
 }
 
@@ -218,7 +215,7 @@ this.loopCount= count;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.loopCount;
+                        return this.loopCountP;
     
 }
 

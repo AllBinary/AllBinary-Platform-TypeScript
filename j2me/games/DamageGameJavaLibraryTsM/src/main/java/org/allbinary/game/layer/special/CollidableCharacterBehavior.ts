@@ -65,10 +65,9 @@ import { CollidableDestroyableDamageableLayer } from './CollidableDestroyableDam
 
 export class CollidableCharacterBehavior extends CollidableDestroyableDamageableBehavior {
         
-public constructor (ownerLayer: CollidableCompositeLayer, collidable: boolean){
-            super(ownerLayer, collidable);
-                    var ownerLayer = ownerLayer
-var collidable = collidable
+public constructor (collidable: boolean){
+            super(collidable);
+                    var collidable = collidable
 
 
                             //For kotlin this is before the body of the constructor.
@@ -78,14 +77,15 @@ var collidable = collidable
 
                 //@Throws(Exception.constructor)
             
-    public collide(collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
     
 
-    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(this.ownerLayer)!;
+    var collisionType: CollisionType = collidableInterfaceCompositeInterface!.getCollidableInferface()!.getCollisionTypeWith(ownerLayer)!;
 ;
     
 
@@ -93,7 +93,7 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
                         
                                     {
                                     
-    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayer as CollidableDestroyableDamageableLayer;
+    var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = ownerLayer as CollidableDestroyableDamageableLayer;
 ;
     
 collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collidableInterfaceCompositeInterface as PickedUpLayerInterface);
@@ -102,7 +102,7 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
                                     }
                                 
                         else {
-                            super.collide(collidableInterfaceCompositeInterface);
+                            super.collide(ownerLayer, collidableInterfaceCompositeInterface);
     
 
                         }
@@ -112,7 +112,8 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
 
                 //@Throws(Exception.constructor)
             
-    public collideInterface(collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
+    //var ownerLayer = ownerLayer
 var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     

@@ -45,9 +45,6 @@ import { PostLoadImageProcessor } from '../../../../javax/microedition/lcdui/Pos
 import { GraphicsStrings } from '../../../../org/allbinary/graphics/GraphicsStrings.js';
 
     
-import { OpenGLBitmap } from '../../../../org/allbinary/graphics/OpenGLBitmap.js';
-
-    
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
 
     
@@ -95,7 +92,7 @@ import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
 import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
 import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
 import { OpenGLImageCacheFactory } from './OpenGLImageCacheFactory.js';
-
+//OpenGLESSWTJOGLImageJavaLibrary
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
 

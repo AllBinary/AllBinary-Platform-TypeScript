@@ -79,9 +79,9 @@ export class BasicPlayer
 
     private timeBase: TimeBase
 
-    state: number= 0
+    stateP: number= 0
 
-    loopCount: number= 0
+    loopCountP: number= 0
 public constructor (){
 
             super();
@@ -154,7 +154,7 @@ this.listenersList!.remove(playerListener);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.state;
+                        return this.stateP;
     
 }
 
@@ -162,7 +162,7 @@ this.listenersList!.remove(playerListener);
 
     public setState(state: number){
 var state = state
-this.state= state;
+this.stateP= state;
     
 }
 
@@ -224,7 +224,7 @@ this.timeBase= timeBase;
 
     public setLoopCount(count: number){
 var count = count
-this.loopCount= count;
+this.loopCountP= count;
     
 }
 
@@ -234,7 +234,7 @@ this.loopCount= count;
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.loopCount;
+                        return this.loopCountP;
     
 }
 

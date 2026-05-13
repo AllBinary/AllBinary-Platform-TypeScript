@@ -492,7 +492,7 @@ protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInte
 
                             //For kotlin this is before the body of the constructor.
                     
-this.setCollidableInferface(new CollidableUnitBehavior(this, true));
+this.setCollidableInferface(new CollidableUnitBehavior(true));
     
 this.waypointLayerInterfaceFactoryInterface= waypointLayerInterfaceFactoryInterface;
     
@@ -1698,7 +1698,7 @@ index >= 0; index--)
 ;
     
 
-    var anyType: any = steeringVisitor!.visit(NullUtil.getInstance()!.NULL_OBJECT)!;
+    var anyType: any = steeringVisitor!.visit(this)!;
 ;
     
 

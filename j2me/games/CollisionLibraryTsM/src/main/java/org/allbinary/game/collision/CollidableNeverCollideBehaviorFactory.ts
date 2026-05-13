@@ -40,21 +40,33 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { CollidableNeverCollideBehavior } from './CollidableNeverCollideBehavior.js';
+        import { CollidableBaseBehaviorFactory } from './CollidableBaseBehaviorFactory.js';
+import { CollidableNeverCollideBehavior } from './CollidableNeverCollideBehavior.js';
+import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 
-export class CollidableNeverCollideBehaviorFactory
-            extends Object
-         {
+export class CollidableNeverCollideBehaviorFactory extends CollidableBaseBehaviorFactory {
         
 
-    private static readonly instance: CollidableNeverCollideBehavior = new CollidableNeverCollideBehavior(false);
+    private static readonly instance2: CollidableNeverCollideBehaviorFactory = new CollidableNeverCollideBehaviorFactory();
 
-    public static getInstance(): CollidableNeverCollideBehavior{
+    public static getInstance(): CollidableNeverCollideBehaviorFactory{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return CollidableNeverCollideBehaviorFactory.instance;
+                        return CollidableNeverCollideBehaviorFactory.instance2;
+    
+}
+
+
+    private readonly instance: CollidableNeverCollideBehavior = new CollidableNeverCollideBehavior(false);
+
+    public createBehavior(): CollidableBaseBehavior{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return this.instance;
     
 }
 

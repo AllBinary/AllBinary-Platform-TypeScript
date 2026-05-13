@@ -25,6 +25,9 @@
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
 
     
+import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
+
+    
 
 
 
@@ -61,11 +64,11 @@ export class HighScoreCommands
 }
 
 
-    public readonly DISPLAY: Command = new Command("Scores", Command.SCREEN, 1);
+    public readonly DISPLAY: Command = new Command("Scores", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
-    public readonly PERSONAL: Command = new Command("Personal", Command.SCREEN, 1);
+    public readonly PERSONAL: Command = new Command("Personal", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
-    public readonly WORLD: Command = new Command("World", Command.SCREEN, 1);
+    public readonly WORLD: Command = new Command("World", StringUtil.getInstance()!.EMPTY_STRING, Command.SCREEN, 1);
 
 }
                 

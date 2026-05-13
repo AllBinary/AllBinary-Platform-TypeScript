@@ -47,6 +47,9 @@ import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
 import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
 
     
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+
+    
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
 
     
@@ -129,6 +132,8 @@ export class HighScoreNamePersistanceSingleton
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
@@ -296,7 +301,7 @@ recordStore= RecordStore.openRecordStore(this.getRecordId(abeClientInformation),
 this.logUtil!.putF(new StringMaker().
                             append(LOADING_ID)!.appendint(id)!.toString(), this, this.commonStrings!.LOAD);
     
-recordAsBytes= recordStore!.getRecord(id);
+recordAsBytes= this.tsUtil!.getRecord(recordStore, id);
     
 byteArrayInputStream= new ByteArrayInputStream(recordAsBytes);
     
