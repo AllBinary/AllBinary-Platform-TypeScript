@@ -78,8 +78,6 @@ export class AndroidServicesUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
-    private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
-
     private readonly resourceUtil: ResourceUtil = ResourceUtil.getInstance()!;
 
     private readonly SERVICE_LIMIT_MAX: number = 1000;
@@ -91,11 +89,11 @@ export class AndroidServicesUtil
     public isServiceRunning(name: string): boolean{
 var name = name
 
-    var activityManager: ActivityManager = resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager;
+    var activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager;
 ;
     
 
-    var runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(SERVICE_LIMIT_MAX)!;
+    var runningServicesList: List<RunningServiceInfo> = activityManager!.getRunningServices(this.SERVICE_LIMIT_MAX)!;
 ;
     
 
@@ -143,7 +141,7 @@ serviceName= serviceComponent!.toString();
                                 
 }
 
-this.logUtil!.putF(SERVICE_NOT_FOUND_RUNNING +name, this, IS_SERVICE_RUNNING);
+this.logUtil!.putF(this.SERVICE_NOT_FOUND_RUNNING +name, this, this.IS_SERVICE_RUNNING);
     
 
 

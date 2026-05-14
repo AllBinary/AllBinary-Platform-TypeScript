@@ -104,9 +104,9 @@ export class VisibleCellPositionsSingleton
 private constructor (){
 
             super();
-        LocalPlayerBuildingEventHandler.getInstance()!.addListener(this);
+        LocalPlayerBuildingEventHandler.getInstance()!.addListenerInterface(this);
     
-ScrollMapEventHandler.getInstance()!.addListener(this);
+ScrollMapEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 

@@ -84,11 +84,11 @@ var num = num
 ;
     
 
-    var oldNumInt: Integer = Integer(Integer.valueOf(oldNumStr))!;
+    var oldNumInt: Integer = Integer.valueOf(oldNumStr)!;
 ;
     
 
-    var numInt: Integer = Integer(Integer.valueOf(num))!;
+    var numInt: Integer = Integer.valueOf(num)!;
 ;
     
 
@@ -246,7 +246,7 @@ var product = product
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(Integer.valueOf(numStr));;
+                        return Integer.valueOf(numStr);;
     
 }
 

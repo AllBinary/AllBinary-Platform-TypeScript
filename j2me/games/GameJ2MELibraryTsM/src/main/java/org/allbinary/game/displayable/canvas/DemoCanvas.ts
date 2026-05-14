@@ -384,7 +384,7 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
                                 
 this.demoGameRunnable= new DemoGameStartupRunnable(this);
     
-DisplayChangeEventHandler.getInstance()!.addListener(this);
+DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 
@@ -657,7 +657,7 @@ this.open();
 
 
     public open(){
-BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor());
+BasicMotionGesturesHandler.getInstance()!.addListenerInterface(this.getMenuInputProcessor());
     
 GameKeyEventHandler.getInstance()!.addListener(this.getMenuInputProcessor());
     

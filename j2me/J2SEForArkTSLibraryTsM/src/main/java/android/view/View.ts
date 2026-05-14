@@ -1,6 +1,7 @@
 //Logic will need to map from ets to ts only
 //Via @Component
 
+import { Runnable } from "../../java/lang/Runnable";
 import { Resources } from "../content/res/Resources";
 import { IBinder } from "../os/IBinder";
 
@@ -16,6 +17,14 @@ import { IBinder } from "../os/IBinder";
     throw new Error('Method not implemented.');
   }
   getWidth(): number {
+    throw new Error('Method not implemented.');
+  }
+
+  getId(): number {
+    throw new Error('Method not implemented.');
+  }
+  
+  post(arg0: Runnable) {
     throw new Error('Method not implemented.');
   }
 

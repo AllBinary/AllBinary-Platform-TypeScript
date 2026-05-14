@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { CategoryPropertiesFactoryInterface } from '../../../../../../../org/allbinary/business/category/properties/CategoryPropertiesFactoryInterface.js';
-
-    
+      
 import { CategoryPropertiesInterface } from '../../../../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

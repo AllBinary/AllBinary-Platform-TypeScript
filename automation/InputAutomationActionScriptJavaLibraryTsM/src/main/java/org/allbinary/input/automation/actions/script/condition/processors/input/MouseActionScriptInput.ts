@@ -152,7 +152,7 @@ this.setButtonClicks(Integer.valueOf(buttons)!.intValue());
 ;
     
 
-    var mouseXInteger: Integer = Integer(Integer.valueOf(mouseXString))!;
+    var mouseXInteger: Integer = Integer.valueOf(mouseXString)!;
 ;
     
 
@@ -164,7 +164,7 @@ this.setButtonClicks(Integer.valueOf(buttons)!.intValue());
 ;
     
 
-    var mouseYInteger: Integer = Integer(Integer.valueOf(mouseYString))!;
+    var mouseYInteger: Integer = Integer.valueOf(mouseYString)!;
 ;
     
 

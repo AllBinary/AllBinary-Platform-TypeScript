@@ -7,6 +7,7 @@ import { AbilityConstant, Want } from '@kit.AbilityKit';
 import { Intent } from '../content/Intent';
 import { Resources } from '../content/res/Resources';
 import { PackageManager } from '../content/pm/PackageManager';
+import { Bundle } from '../os/Bundle';
 
 
 /**
@@ -26,6 +27,14 @@ import { PackageManager } from '../content/pm/PackageManager';
   static readonly RESULT_CANCELED: number = 0;
 
   protected intent: Want;
+
+  getSystemService(INPUT_METHOD_SERVICE: undefined): import("../view/inputmethod/InputMethodManager").InputMethodManager {
+    throw new Error('Method not implemented.');
+  }
+
+  onSaveInstanceState(outState: Bundle) {
+    throw new Error('Method not implemented.');
+  }
 
   onCreate(want: Want, launchParam: AbilityConstant.LaunchParam): void {
     //hilog.info(0x0000, Activity.TAG, '%{public}s', 'Activity.onCreate()');

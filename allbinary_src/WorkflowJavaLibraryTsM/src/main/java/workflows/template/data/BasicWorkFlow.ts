@@ -160,7 +160,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(Integer.valueOf(TagSupport.EVAL_BODY_INCLUDE));;
+                        return Integer.valueOf(TagSupport.EVAL_BODY_INCLUDE);;
     
 
                                     }
@@ -172,7 +172,7 @@ this.validationDomNodeInterface= TransformFactory.getInstance()!.getInstance(thi
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Integer(Integer.valueOf(TagSupport.SKIP_BODY));;
+                        return Integer.valueOf(TagSupport.SKIP_BODY);;
     
 
                         }

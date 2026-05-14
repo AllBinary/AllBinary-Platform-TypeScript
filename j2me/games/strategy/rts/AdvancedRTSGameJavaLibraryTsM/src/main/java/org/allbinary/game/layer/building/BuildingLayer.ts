@@ -276,7 +276,7 @@ super.initVisibility(rtsPlayerLayerInterface);
     //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 super.construct(rtsPlayerLayerInterface);
     
-TrackingEventHandler.getInstance()!.addListener(this);
+TrackingEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 

@@ -75,7 +75,7 @@ var basicColor = basicColor
                     
 this.setColor(basicColor);
     
-ColorChangeEventHandler.getInstance()!.addListener(this);
+ColorChangeEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 

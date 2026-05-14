@@ -90,7 +90,7 @@ this.timeIntervalActionScriptConditionInterface!.log();
 
 
     update(){
-this.timeIntervalActionScriptConditionInterface!.getTimeDelayHelper()!.delay= Integer(Integer.valueOf(this.getTimeIntervalJTextField()!.getText()));
+this.timeIntervalActionScriptConditionInterface!.getTimeDelayHelper()!.delay= Integer.valueOf(this.getTimeIntervalJTextField()!.getText());
     
 this.timeIntervalActionScriptConditionInterface!.log();
     

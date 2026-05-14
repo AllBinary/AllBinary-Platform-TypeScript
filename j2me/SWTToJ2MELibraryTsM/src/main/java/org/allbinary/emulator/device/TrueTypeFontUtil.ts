@@ -145,7 +145,7 @@ this.widthScale= (this.scale == 2)
 }
 
 
-    public getFontBitmap(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
+    public getFontBitmapGL(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
     //var gl = gl
     //var filename = filename
     //var cellSize = cellSize
@@ -259,7 +259,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
 
     public saveFontAtlasAsFile(){
 
-    var image: Image = this.getFontBitmap2(
+    var image: Image = this.getFontBitmap(
                             null, cellSize, BasicColorFactory.getInstance()!.WHITE)!;
 ;
     
@@ -285,7 +285,7 @@ imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!
 }
 
 
-    public getFontBitmap2(filename: string, cellSize: number, basicColor: BasicColor): Image{
+    public getFontBitmap(filename: string, cellSize: number, basicColor: BasicColor): Image{
     //var filename = filename
     //var cellSize = cellSize
     //var basicColor = basicColor

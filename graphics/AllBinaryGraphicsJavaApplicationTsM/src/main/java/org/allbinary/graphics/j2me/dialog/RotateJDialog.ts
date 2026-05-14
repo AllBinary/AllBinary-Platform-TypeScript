@@ -187,9 +187,9 @@ pack();
 var evt = evt
 
         try {
-            this.hashMap!.put(Integer(Integer.valueOf(0))Integer(Integer.valueOf(this.angleIncrementJTextField!.getText())));
+            this.hashMap!.put(Integer.valueOf(0)Integer.valueOf(this.angleIncrementJTextField!.getText()));
     
-this.hashMap!.put(Integer(Integer.valueOf(1))Integer(Integer.valueOf(this.totalRotationJTextField!.getText())));
+this.hashMap!.put(Integer.valueOf(1)Integer.valueOf(this.totalRotationJTextField!.getText()));
     
 getParent = this.getParent();getParent as HashMapJDialogListenerInterface
 getParent.

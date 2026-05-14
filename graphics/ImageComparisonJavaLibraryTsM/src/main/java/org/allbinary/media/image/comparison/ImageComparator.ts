@@ -110,7 +110,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorInteger: Integer = Integer(Integer.valueOf(rgb1))!;
+    var colorInteger: Integer = Integer.valueOf(rgb1)!;
 ;
     
 
@@ -122,7 +122,7 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
 ;
     
 
-    var colorInteger2: Integer = Integer(Integer.valueOf(rgb2))!;
+    var colorInteger2: Integer = Integer.valueOf(rgb2)!;
 ;
     
 

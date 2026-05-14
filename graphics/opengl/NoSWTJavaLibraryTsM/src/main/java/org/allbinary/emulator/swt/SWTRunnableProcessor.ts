@@ -47,14 +47,14 @@ import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
 export class SWTRunnableProcessor extends SWTProcessor {
         
 
-    private static readonly instance: SWTRunnableProcessor = new SWTRunnableProcessor();
+    private static readonly instanceR: SWTRunnableProcessor = new SWTRunnableProcessor();
 
     public static getInstance(): SWTRunnableProcessor{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return SWTRunnableProcessor.instance;
+                        return SWTRunnableProcessor.instanceR;
     
 }
 

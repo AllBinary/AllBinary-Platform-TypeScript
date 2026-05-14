@@ -62,7 +62,7 @@ public constructor (adConfiguration: AdConfiguration){
 
                             //For kotlin this is before the body of the constructor.
                     
-VirtualKeyboardEventHandler.getInstance()!.addListener(this);
+VirtualKeyboardEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 

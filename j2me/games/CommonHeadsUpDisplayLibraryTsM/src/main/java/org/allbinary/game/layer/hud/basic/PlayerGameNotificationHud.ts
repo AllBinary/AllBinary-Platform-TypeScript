@@ -123,7 +123,7 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(0);
     
 gameNotificationEventHandler!.removeAllListeners();
     
-gameNotificationEventHandler!.addListener(this);
+gameNotificationEventHandler!.addListenerInterface(this);
     
 }
 

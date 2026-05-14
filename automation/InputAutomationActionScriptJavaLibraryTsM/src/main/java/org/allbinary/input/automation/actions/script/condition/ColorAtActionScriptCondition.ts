@@ -146,7 +146,7 @@ index < nodeList!.getLength(); index++)
     var locationX: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.point.x= Integer(Integer.valueOf(locationX));
+this.point.x= Integer.valueOf(locationX);
     
 
                                     }
@@ -159,7 +159,7 @@ this.point.x= Integer(Integer.valueOf(locationX));
     var locationY: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.point.y= Integer(Integer.valueOf(locationY));
+this.point.y= Integer.valueOf(locationY);
     
 
                                     }
@@ -372,7 +372,7 @@ var frame = frame
 ;
     
 
-    var colorInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y)))!;
+    var colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(this.getPoint()!.x, this.getPoint()!.y))!;
 ;
     
 

@@ -34,8 +34,6 @@ import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/ev
       
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
       
-import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-      
 
 
 
@@ -104,7 +102,7 @@ super.removeAllListeners();
                         if(eventListenerInterface != NullEventListener.NULL_EVENT_LISTENER)
                         
                                     {
-                                    this.addListener(eventListenerInterface);
+                                    this.addListenerInterface(eventListenerInterface);
     
 
                                     }

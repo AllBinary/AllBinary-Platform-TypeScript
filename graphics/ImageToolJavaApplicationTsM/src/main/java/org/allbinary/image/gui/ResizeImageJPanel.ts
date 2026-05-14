@@ -159,7 +159,7 @@ new class extends Thread
 ;
     
 
-    var percent: Integer = Integer(Integer.valueOf(ResizeImageJPanel.prototype.jComboBox1!.getSelectedItem() as string))!;
+    var percent: Integer = Integer.valueOf(ResizeImageJPanel.prototype.jComboBox1!.getSelectedItem() as string)!;
 ;
     
 
@@ -200,11 +200,11 @@ new class extends Thread
                                 
                         else {
                             
-    var width: Integer = Integer(Integer.valueOf(ResizeImageJPanel.prototype.jTextField1!.getText() as string))!;
+    var width: Integer = Integer.valueOf(ResizeImageJPanel.prototype.jTextField1!.getText() as string)!;
 ;
     
 
-    var height: Integer = Integer(Integer.valueOf(ResizeImageJPanel.prototype.jTextField2!.getText() as string))!;
+    var height: Integer = Integer.valueOf(ResizeImageJPanel.prototype.jTextField2!.getText() as string)!;
 ;
     
 generatedBufferedImageArray= imageUtil!.createBufferedImage3(imageProcessorInput!.getBufferedImageArray(), width, height, true);

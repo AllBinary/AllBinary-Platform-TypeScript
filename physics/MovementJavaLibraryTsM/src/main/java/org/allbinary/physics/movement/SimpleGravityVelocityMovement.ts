@@ -70,7 +70,7 @@ public constructor (speedBasicDecimal: BasicDecimal){
             
     public process(layer: AllBinaryGameLayer){
 var layer = layer
-this.gravityUtil!.process(this.getVelocityProperties(), gravityUtil!.GAME_GRAVITY_VELOCITY);
+this.gravityUtil!.process(this.getVelocityProperties(), this.gravityUtil!.GAME_GRAVITY_VELOCITY);
     
 super.process(layer);
     

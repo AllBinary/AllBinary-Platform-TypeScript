@@ -191,7 +191,7 @@ count++;
                                     {
                                     graphics.setColor(this.countedPartsBorder);
     
-graphics.drawRect(lastWidth -(XXStringWidth +this.dropSize), 40, CountedLayersHudPaintable.XXStringWidth +this.dropSize, (count *height) +3);
+graphics.drawRect(lastWidth -(CountedLayersHudPaintable.XXStringWidth +this.dropSize), 40, CountedLayersHudPaintable.XXStringWidth +this.dropSize, (count *height) +3);
     
 
                                     }

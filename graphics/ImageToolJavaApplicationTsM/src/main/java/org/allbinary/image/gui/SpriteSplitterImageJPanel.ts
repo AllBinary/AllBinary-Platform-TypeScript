@@ -139,27 +139,27 @@ new class extends Thread
 ;
     
 
-    var totalFrames: Integer = Integer(Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string))!;
+    var totalFrames: Integer = Integer.valueOf(totalFramesJComboBox!.getSelectedItem() as string)!;
 ;
     
 
-    var totalAnimations: Integer = Integer(Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string))!;
+    var totalAnimations: Integer = Integer.valueOf(totalAnimationsJComboBox!.getSelectedItem() as string)!;
 ;
     
 
-    var widthReduction: number = Integer(Integer.valueOf(widthReductionTextField!.getText()))!;
+    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;
 ;
     
 
-    var heightReduction: number = Integer(Integer.valueOf(heightReductionTextField!.getText()))!;
+    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;
 ;
     
 
-    var increaseWidth: number = Integer(Integer.valueOf(increaseWidthTextField!.getText()))!;
+    var increaseWidth: number = Integer.valueOf(increaseWidthTextField!.getText())!;
 ;
     
 
-    var increaseHeight: number = Integer(Integer.valueOf(increaseHeightTextField!.getText()))!;
+    var increaseHeight: number = Integer.valueOf(increaseHeightTextField!.getText())!;
 ;
     
 spriteSplitterUtil!.process(SpriteSplitterImageJPanel.prototype.getImageProcessorInput(), totalFrames, totalAnimations, widthReduction, heightReduction, increaseWidth, increaseHeight, spriteType, SpriteSplitterImageJPanel.prototype);

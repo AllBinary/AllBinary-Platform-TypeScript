@@ -101,7 +101,7 @@ public constructor (inputMappingInterface: InputMappingInterface, basicColor: Ba
     //var basicColor = basicColor
 this.inputMappingInterface= inputMappingInterface;
     
-CompleteMotionGestureInputEventHandler.getInstance()!.addListener(this);
+CompleteMotionGestureInputEventHandler.getInstance()!.addListenerInterface(this);
     
 this.touchButtonsPaintable= new TouchButtonsMappingPaintable(basicColor);
     

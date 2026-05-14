@@ -291,7 +291,7 @@ this.loadGameForm= CommandForm.NULL_COMMAND_FORM;
     
 progressCanvas!.init(this);
     
-GameFeatureEventHandler.getInstance()!.addListener(ChangedGameFeatureListener.getInstance());
+GameFeatureEventHandler.getInstance()!.addListenerInterface(ChangedGameFeatureListener.getInstance());
     
 GamePersistanceSingleton.getInstance()!.clear();
     

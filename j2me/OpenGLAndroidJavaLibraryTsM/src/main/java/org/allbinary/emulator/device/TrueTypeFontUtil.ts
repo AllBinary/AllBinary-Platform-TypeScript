@@ -157,7 +157,7 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
 }
 
 
-    public getFontBitmap(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
+    public getFontBitmapGL(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
     //var gl = gl
     //var filename = filename
     //var cellSize = cellSize

@@ -159,7 +159,7 @@ var eventListenerInterface = eventListenerInterface
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
-    public addListener(eventListenerInterface: EventListenerInterface){
+    public addListenerInterface(eventListenerInterface: EventListenerInterface){
 var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))

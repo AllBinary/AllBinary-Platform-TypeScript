@@ -156,7 +156,7 @@ this.totalString= this.primitiveLongUtil!.getCharArray(total);
     var font: MyFont = MyFont.getInstance()!;
 ;
     
-this.setXOffset(font.charsWidth(totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize()>>1));
+this.setXOffset(font.charsWidth(this.totalString, 0, this.primitiveLongUtil!.getCurrentTotalDigits()) +(font.getSize()>>1));
     
 }
 

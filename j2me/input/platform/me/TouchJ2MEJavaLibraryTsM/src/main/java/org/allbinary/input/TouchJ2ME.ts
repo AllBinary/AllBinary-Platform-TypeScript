@@ -72,7 +72,7 @@ public constructor (){
     var motionGesturesHandler: BasicMotionGesturesHandler = this.motionRecognizer!.getMotionGestureRecognizer()!.getMotionGesturesHandler()!;
 ;
     
-motionGesturesHandler!.addListener(new GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
+motionGesturesHandler!.addListenerInterface(new GameMotionGestureListener(MotionGestureReceiveInterfaceFactory.getInstance()));
     
 }
 

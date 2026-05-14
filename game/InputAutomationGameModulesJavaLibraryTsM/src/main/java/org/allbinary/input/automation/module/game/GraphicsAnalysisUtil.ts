@@ -79,7 +79,7 @@ var y = y
 index > min_x.intValue(); )
         {
 
-    var colorInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(index, y.intValue())))!;
+    var colorInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(index, y.intValue()))!;
 ;
     
 

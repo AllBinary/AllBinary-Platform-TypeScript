@@ -162,7 +162,7 @@ this.directionalInterface= directionalCompositeInterface!.getDirectionalInterfac
     
 this.velocityInterface= velocityInterfaceCompositeInterface!.getVelocityProperties();
     
-DestroyedEventHandler.getInstance()!.addListener(this);
+DestroyedEventHandler.getInstance()!.addListenerInterface(this);
     
 this.init();
     
@@ -211,7 +211,7 @@ this.dive= false;
     
 this.directionOfTarget= DirectionFactory.getInstance()!.NOT_BORDERED_WITH;
     
-TrackingEventHandler.getInstance()!.addListener(this);
+TrackingEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 

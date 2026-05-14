@@ -1,4 +1,5 @@
 //Logic will need to map from ets to ts only
+import { PorterDuffColorFilter } from "./PorterDuffColorFilter";
 
 export type Style = InstanceType<typeof Paint.Style>;
 
@@ -10,10 +11,21 @@ export type Style = InstanceType<typeof Paint.Style>;
     static FILL_AND_STROKE: string = "FILL_AND_STROKE";
     static STROKE: string = "STROKE";
   };
+  static ANTI_ALIAS_FLAG: any;
 
+  getAlpha(): number {
+    throw new Error('Method not implemented.');
+  }
+  setAlpha(alphaInt: number) {
+    throw new Error('Method not implemented.');
+  }
 
   public setStyle(style: Style): void {
     throw new Error("No Impl");
+  }
+
+  setColorFilter(arg0: PorterDuffColorFilter) {
+    throw new Error('Method not implemented.');
   }
 
   public setStrokeWidth(width: number): void {

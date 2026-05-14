@@ -234,7 +234,7 @@ imageUnifierProperties!.setRows(.valueOf());
 imageUnifierProperties!.setColumns(columns.valueOf());
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer(Integer.valueOf(cellWidth -(2 *widthReduction)))Integer(Integer.valueOf(cellHeight -(2 *heightReduction))));
+    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer.valueOf(cellWidth -(2 *widthReduction))Integer.valueOf(cellHeight -(2 *heightReduction)));
 ;
     
 imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);
@@ -378,7 +378,7 @@ imageUnifierProperties!.setRows(.valueOf());
 imageUnifierProperties!.setColumns(columns.valueOf());
     
 
-    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer(Integer.valueOf(cellWidth -(2 *widthReduction))) +increaseWidth, Integer(Integer.valueOf(cellHeight -(2 *heightReduction) +increaseHeight)));
+    var imageUnifierCell: ImageUnifierCell = new ImageUnifierCell(Integer.valueOf(cellWidth -(2 *widthReduction)) +increaseWidth, Integer.valueOf(cellHeight -(2 *heightReduction) +increaseHeight));
 ;
     
 imageUnifierProperties!.setImageUnifierCell(imageUnifierCell);

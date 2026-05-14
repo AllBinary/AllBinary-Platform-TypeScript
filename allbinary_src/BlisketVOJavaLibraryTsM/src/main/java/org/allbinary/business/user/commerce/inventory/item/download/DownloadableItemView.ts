@@ -161,17 +161,17 @@ calendar.setTimeInMillis(calendar.getTimeInMillis() +totalTime);
     var secondDelta: number = calendar.get(Calendar.SECOND)!;
 ;
     
-hashMap!.put(DownloadItemData.VALID_TIME_YEARS, Integer(Integer.valueOf(yearDelta -year)));
+hashMap!.put(DownloadItemData.VALID_TIME_YEARS, Integer.valueOf(yearDelta -year));
     
-hashMap!.put(DownloadItemData.VALID_TIME_MONTHS, Integer(Integer.valueOf(monthDelta -month)));
+hashMap!.put(DownloadItemData.VALID_TIME_MONTHS, Integer.valueOf(monthDelta -month));
     
-hashMap!.put(DownloadItemData.VALID_TIME_DAYS, Integer(Integer.valueOf(dayDelta -day)));
+hashMap!.put(DownloadItemData.VALID_TIME_DAYS, Integer.valueOf(dayDelta -day));
     
-hashMap!.put(DownloadItemData.VALID_TIME_HOURS, Integer(Integer.valueOf(hourDelta -hour)));
+hashMap!.put(DownloadItemData.VALID_TIME_HOURS, Integer.valueOf(hourDelta -hour));
     
-hashMap!.put(DownloadItemData.VALID_TIME_MINUTES, Integer(Integer.valueOf(minuteDelta -minute)));
+hashMap!.put(DownloadItemData.VALID_TIME_MINUTES, Integer.valueOf(minuteDelta -minute));
     
-hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer(Integer.valueOf(secondDelta -second)));
+hashMap!.put(DownloadItemData.VALID_TIME_SECONDS, Integer.valueOf(secondDelta -second));
     
 
     var keySet: Set = hashMap!.keys!;

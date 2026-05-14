@@ -513,7 +513,7 @@ this.initPopupMenu();
     
 this.initMenu();
     
-DisplayChangeEventHandler.getInstance()!.addListener(this);
+DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 
@@ -917,7 +917,7 @@ this.setMenuPaintable(this.getFormPaintable());
     
 this.setMenuInputProcessor(this.mainMenuInputProcessor);
     
-this.basicMotionGesturesHandler!.addListener(this.mainMenuInputProcessor);
+this.basicMotionGesturesHandler!.addListenerInterface(this.mainMenuInputProcessor);
     
 this.gameKeyEventHandler!.addListener(this.mainMenuInputProcessor);
     
@@ -975,7 +975,7 @@ this.setMenuInputProcessor(this.getPopupMenuInputProcessor());
 
 
     public open(){
-this.basicMotionGesturesHandler!.addListener(this.menuInputProcessor);
+this.basicMotionGesturesHandler!.addListenerInterface(this.menuInputProcessor);
     
 this.gameKeyEventHandler!.addListener(this.menuInputProcessor);
     

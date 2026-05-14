@@ -144,11 +144,11 @@ new class extends Thread
 index < bufferedImageArray!.length; index++)
         {
 
-    var totalFrames: Integer = Integer(Integer.valueOf(RotationSpriteImageJPanel.prototype.totalFramesJComboBox!.getSelectedItem() as string))!;
+    var totalFrames: Integer = Integer.valueOf(RotationSpriteImageJPanel.prototype.totalFramesJComboBox!.getSelectedItem() as string)!;
 ;
     
 
-    var totalAngle: Integer = Integer(Integer.valueOf(RotationSpriteImageJPanel.prototype.totalAngleJComboBox!.getSelectedItem() as string))!;
+    var totalAngle: Integer = Integer.valueOf(RotationSpriteImageJPanel.prototype.totalAngleJComboBox!.getSelectedItem() as string)!;
 ;
     
 generatedBufferedImageArray= ImageJ2SERotationUtil.getInstance()!.getRotatedImages(bufferedImageArray[index]!, totalFrames, totalAngle);

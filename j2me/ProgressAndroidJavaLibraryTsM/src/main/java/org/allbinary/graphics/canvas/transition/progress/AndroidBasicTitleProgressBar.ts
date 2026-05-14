@@ -148,7 +148,7 @@ var foregroundBasicColor = foregroundBasicColor
                     
 this.init();
     
-DisplayChangeEventHandler.getInstance()!.addListener(this);
+DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     
 
     var size: number = this.IMAGE.length

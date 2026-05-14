@@ -119,7 +119,7 @@ indexY < bufferedImage!.getHeight(); indexY++)
 indexX < bufferedImage!.getWidth(); indexX++)
         {
 
-    var keyInteger: Integer = Integer(Integer.valueOf(bufferedImage!.getRGB(indexX, indexY)))!;
+    var keyInteger: Integer = Integer.valueOf(bufferedImage!.getRGB(indexX, indexY))!;
 ;
     
 

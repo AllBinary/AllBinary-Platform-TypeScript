@@ -196,8 +196,6 @@ import { Layer } from '../../../../../org/allbinary/layer/Layer.js';
       
 import { LayerInterfaceFactoryInterface } from '../../../../../org/allbinary/layer/LayerInterfaceFactoryInterface.js';
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-      
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
       
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
@@ -504,11 +502,11 @@ this.initRangeHack();
 var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 super.construct(rtsPlayerLayerInterface);
     
-TrackingEventHandler.getInstance()!.addListener(this);
+TrackingEventHandler.getInstance()!.addListenerInterface(this);
     
-WaypointEventHandlerFactory.getInstance(this.getGroupInterface()[0]!)!.addListener(this.getUnitWaypointBehavior());
+WaypointEventHandlerFactory.getInstance(this.getGroupInterface()[0]!)!.addListenerInterface(this.getUnitWaypointBehavior());
     
-BuildingEventHandler.getInstance()!.addListener(this);
+BuildingEventHandler.getInstance()!.addListenerInterface(this);
     
 this.getUnitWaypointBehavior()!.setCurrentPathGeographicMapCellPosition(this.getCurrentGeographicMapCellPosition());
     

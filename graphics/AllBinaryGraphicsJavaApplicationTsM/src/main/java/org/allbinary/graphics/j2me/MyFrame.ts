@@ -1108,11 +1108,11 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
     public onHashMap(hashMap: HashMap<any, any>){
 var hashMap = hashMap
 
-    var angleIncrementInteger: Integer = hashMap!.get(Integer(Integer.valueOf(0))) as Integer;
+    var angleIncrementInteger: Integer = hashMap!.get(Integer.valueOf(0)) as Integer;
 ;
     
 
-    var totalRotationInteger: Integer = hashMap!.get(Integer(Integer.valueOf(1))) as Integer;
+    var totalRotationInteger: Integer = hashMap!.get(Integer.valueOf(1)) as Integer;
 ;
     
 this.getSelectedWorkArea()!.autoRotate(angleIncrementInteger!.intValue(), totalRotationInteger!.intValue());

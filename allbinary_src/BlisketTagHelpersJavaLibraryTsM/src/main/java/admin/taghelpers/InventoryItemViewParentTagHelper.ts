@@ -25,26 +25,19 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { RequestMapInterface } from '../../org/allbinary/logic/communication/http/request/RequestMapInterface.js';
-
-    
+      
 import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { TransformInterface } from '../../org/allbinary/logic/visual/transform/TransformInterface.js';
-
-    
+      
 import { ValidationViewHelper } from '../../taghelpers/ValidationViewHelper.js';
-
-    
+      
 import { HelperTag } from '../../tags/HelperTag.js';
-
-    
+      
 import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView.js';
-
-    
+      
 import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
-
-    
+      
 
 
 

@@ -139,19 +139,19 @@ new class extends Thread
 ;
     
 
-    var leftReduction: number = Integer(Integer.valueOf(widthReductionTextField1!.getText()))!;
+    var leftReduction: number = Integer.valueOf(widthReductionTextField1!.getText())!;
 ;
     
 
-    var topReduction: number = Integer(Integer.valueOf(heightReductionTextField1!.getText()))!;
+    var topReduction: number = Integer.valueOf(heightReductionTextField1!.getText())!;
 ;
     
 
-    var widthReduction: number = Integer(Integer.valueOf(widthReductionTextField!.getText()))!;
+    var widthReduction: number = Integer.valueOf(widthReductionTextField!.getText())!;
 ;
     
 
-    var heightReduction: number = Integer(Integer.valueOf(heightReductionTextField!.getText()))!;
+    var heightReduction: number = Integer.valueOf(heightReductionTextField!.getText())!;
 ;
     
 

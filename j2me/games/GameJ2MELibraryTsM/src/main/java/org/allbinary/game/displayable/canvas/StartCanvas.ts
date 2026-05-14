@@ -326,7 +326,7 @@ this.setPaintableInterface(this.getDefaultPaintableInterface());
 
                                     }
                                 
-DisplayChangeEventHandler.getInstance()!.addListener(this);
+DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     
 }
 
@@ -552,7 +552,7 @@ this.open();
 
 
     public open(){
-BasicMotionGesturesHandler.getInstance()!.addListener(this.getMenuInputProcessor());
+BasicMotionGesturesHandler.getInstance()!.addListenerInterface(this.getMenuInputProcessor());
     
 GameKeyEventHandler.getInstance()!.addListener(this.getMenuInputProcessor());
     

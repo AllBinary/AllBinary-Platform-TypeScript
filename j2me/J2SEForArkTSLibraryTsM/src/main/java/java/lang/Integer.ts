@@ -6,10 +6,13 @@ import { Object } from '../../java/lang/Object.js';
                public static MAX_VALUE: number = 2147483647;
                public static MIN_VALUE: number = -2147483648;
 
-    /*actual*/ public static toHexString(value: number): string {
+  /*actual*/ public static toHexString(value: number): string {
                         return value.toString(16);
-    
-}
+  }
+
+  public static valueOf(value: number): Integer {
+    return new Integer(value);
+  }
 
   /*actual*/ public static parseInt(value: string): number {
     return Number.parseInt(value, 10);
@@ -23,9 +26,9 @@ import { Object } from '../../java/lang/Object.js';
         this.value = value;
     }
 
-    public intValue(): number {
-        return this.value;
-    }
+  public intValue(): number {
+    return this.value;
+  }
 
 }
                 

@@ -106,7 +106,7 @@ index < size; index++)
         {
 eventListenerInterface= vector.get(index) as EventListenerInterface;
     
-this.addListener(eventListenerInterface);
+this.addListenerInterface(eventListenerInterface);
     
 }
 
@@ -154,7 +154,7 @@ this.removeListener(eventListenerInterface);
 }
 
 
-    public addListener(eventListenerInterface: EventListenerInterface){
+    public addListenerInterface(eventListenerInterface: EventListenerInterface){
     //var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))

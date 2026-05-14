@@ -120,7 +120,7 @@ index < nodeList!.getLength(); index++)
     var interval: string = DomNodeHelper.getTextNodeValue(childNode)!;
 ;
     
-this.setTimeDelayHelper(new TimeDelayHelper(Integer(Integer.valueOf(interval))));
+this.setTimeDelayHelper(new TimeDelayHelper(Integer.valueOf(interval)));
     
 
                                     }

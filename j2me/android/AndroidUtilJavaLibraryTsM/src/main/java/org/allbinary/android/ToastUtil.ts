@@ -91,7 +91,7 @@ this.string= string;
     
 
         try {
-            Toast.makeText(context, string, time)!.show();
+            Toast.makeText(context, this.string, time)!.show();
     
 
                 //: 

@@ -91,7 +91,7 @@ export class ImageArrayRotationUtil
                         if(input == this.commonStrings!.UP)
                         
                                     {
-                                    totalAngle= Integer(Integer.valueOf( -90));
+                                    totalAngle= Integer.valueOf( -90);
     
 
                                     }
@@ -100,13 +100,13 @@ export class ImageArrayRotationUtil
                         if(input == this.commonStrings!.DOWN)
                         
                                     {
-                                    totalAngle= Integer(Integer.valueOf(90));
+                                    totalAngle= Integer.valueOf(90);
     
 
                                     }
                                 
                         else {
-                            totalAngle= Integer(Integer.valueOf(input));
+                            totalAngle= Integer.valueOf(input);
     
 
                         }

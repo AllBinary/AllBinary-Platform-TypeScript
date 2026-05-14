@@ -74,7 +74,7 @@ export class GameLevelDisplayChangeEventListenersFactory
 var displayChangeEventListener = displayChangeEventListener
 this.list.add(displayChangeEventListener);
     
-DisplayChangeEventHandler.getInstance()!.addListener(displayChangeEventListener);
+DisplayChangeEventHandler.getInstance()!.addListenerInterface(displayChangeEventListener);
     
 }
 

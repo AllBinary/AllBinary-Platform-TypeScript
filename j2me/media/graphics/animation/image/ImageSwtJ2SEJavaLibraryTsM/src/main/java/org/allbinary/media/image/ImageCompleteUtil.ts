@@ -64,7 +64,7 @@ export class ImageCompleteUtil
 
                 //@Throws(Exception.constructor)
             
-    public waitFor(image: Image, name: string){
+    public waitForImage(image: Image, name: string){
 var image = image
 var name = name
 }
