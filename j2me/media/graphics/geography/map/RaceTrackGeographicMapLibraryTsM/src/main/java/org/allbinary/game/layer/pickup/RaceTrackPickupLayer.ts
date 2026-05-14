@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-
-    
+      
 import { TileLayerPositionIntoViewPosition } from '../../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
-
-    
+      
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
-
-    
+      
 
 
 

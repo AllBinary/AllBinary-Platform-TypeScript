@@ -25,17 +25,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

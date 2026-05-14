@@ -25,11 +25,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 import { ViewPositionFactoryInterface } from '../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
-
-    
+      
 
 
 

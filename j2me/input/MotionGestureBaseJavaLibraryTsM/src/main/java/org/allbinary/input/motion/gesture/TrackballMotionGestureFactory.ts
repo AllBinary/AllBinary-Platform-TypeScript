@@ -23,8 +23,7 @@
 
         
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
-
-    
+      
 
 
 

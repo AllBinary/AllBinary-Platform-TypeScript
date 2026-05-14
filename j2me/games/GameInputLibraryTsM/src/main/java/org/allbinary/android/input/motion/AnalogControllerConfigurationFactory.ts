@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AnalogControllerConfigurationEvent } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEvent.js';
-
-    
+      
 import { AnalogControllerConfigurationEventHandler } from '../../../../../org/allbinary/android/input/motion/event/AnalogControllerConfigurationEventHandler.js';
-
-    
+      
 import { ScaleFactorFactory } from '../../../../../org/allbinary/logic/math/ScaleFactorFactory.js';
-
-    
+      
 
 
 

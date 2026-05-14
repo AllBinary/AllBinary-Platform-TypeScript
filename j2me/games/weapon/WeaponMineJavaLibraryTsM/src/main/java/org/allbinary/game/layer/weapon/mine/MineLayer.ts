@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { SimpleWeaponLayer } from '../../../../../../org/allbinary/game/layer/weapon/SimpleWeaponLayer.js';
-
-    
+      
 import { RemoteInfo } from '../../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-
-    
+      
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { SecondaryPlayerQueueFactory } from '../../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
-
-    
+      
 import { NoMovementFactory } from '../../../../../../org/allbinary/physics/movement/NoMovementFactory.js';
-
-    
+      
 import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 import { ViewPositionEventHandler } from '../../../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
-
-    
+      
 import { DropWeaponSound } from '../../../../../../org/allbinary/weapon/media/audio/DropWeaponSound.js';
-
-    
+      
 
 
 

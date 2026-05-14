@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

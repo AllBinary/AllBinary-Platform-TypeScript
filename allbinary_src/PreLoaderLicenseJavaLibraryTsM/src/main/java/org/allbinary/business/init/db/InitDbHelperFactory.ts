@@ -23,14 +23,11 @@
 
         
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 
 
 

@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { GeographicMapCellHistory } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { GeographicMapDirectionUtil } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
-
-    
+      
 import { GeographicMapCellPathHistoryInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/GeographicMapCellPathHistoryInfo.js';
-
-    
+      
 
 
 

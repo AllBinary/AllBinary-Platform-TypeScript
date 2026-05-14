@@ -27,32 +27,23 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Activity } from '../../../../android/app/Activity.js';
-
-    
+      
 import { MotionEvent } from '../../../../android/view/MotionEvent.js';
-
-    
+      
 import { View } from '../../../../android/view/View.js';
-
-    
+      
 import { GenericMotionEventVerifyInterface } from '../../../../org/allbinary/android/GenericMotionEventVerifyInterface.js';
-
-    
+      
 import { GameFeatureEvent } from '../../../../org/allbinary/game/configuration/event/GameFeatureEvent.js';
-
-    
+      
 import { GameFeatureListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameFeatureListenerInterface.js';
-
-    
+      
 import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
-
-    
+      
 import { GameInitializedListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 
 
 

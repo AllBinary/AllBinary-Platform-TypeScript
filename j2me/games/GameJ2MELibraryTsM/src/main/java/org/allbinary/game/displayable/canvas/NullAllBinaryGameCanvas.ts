@@ -25,14 +25,11 @@
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 
 
 

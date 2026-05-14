@@ -23,17 +23,13 @@
 
         
 import { Activity } from '../../../../../android/app/Activity.js';
-
-    
+      
 import { Configuration } from '../../../../../android/content/res/Configuration.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 
 
 

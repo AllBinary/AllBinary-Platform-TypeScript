@@ -25,11 +25,9 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 
 
 

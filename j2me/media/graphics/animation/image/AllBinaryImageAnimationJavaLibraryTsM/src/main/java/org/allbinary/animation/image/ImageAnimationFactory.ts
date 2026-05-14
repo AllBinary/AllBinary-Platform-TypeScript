@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-
-    
+      
 import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
-
-    
+      
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-
-    
+      
 
 
 

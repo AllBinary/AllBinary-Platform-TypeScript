@@ -27,35 +27,25 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-
-    
+      
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-
-    
+      
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-
-    
+      
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
-
-    
+      
 import { NullAndroidCanvas } from '../../../../org/allbinary/android/NullAndroidCanvas.js';
-
-    
+      
 import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

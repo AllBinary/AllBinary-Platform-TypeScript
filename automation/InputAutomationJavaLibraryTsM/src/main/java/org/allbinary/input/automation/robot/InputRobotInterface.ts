@@ -27,14 +27,11 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-
-    
+      
 
 
 

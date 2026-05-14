@@ -23,11 +23,9 @@
 
         
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 
 
 

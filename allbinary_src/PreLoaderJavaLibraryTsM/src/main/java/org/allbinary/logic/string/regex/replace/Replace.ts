@@ -29,29 +29,21 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../../java/util/Set.js';
-
-    
+      
 import { AppUrlGlobals } from '../../../../../../org/allbinary/globals/AppUrlGlobals.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

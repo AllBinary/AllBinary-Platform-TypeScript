@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { OpenGLFeatureUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureUtil.js';
-
-    
+      
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

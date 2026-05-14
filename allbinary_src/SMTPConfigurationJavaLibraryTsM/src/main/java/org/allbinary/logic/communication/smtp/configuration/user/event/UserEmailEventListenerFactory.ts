@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
-
-    
+      
 import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
-
-    
+      
 import { AbeFactory } from '../../../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 
 
 

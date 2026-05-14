@@ -25,11 +25,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-
-    
+      
 import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
-
-    
+      
 
 
 

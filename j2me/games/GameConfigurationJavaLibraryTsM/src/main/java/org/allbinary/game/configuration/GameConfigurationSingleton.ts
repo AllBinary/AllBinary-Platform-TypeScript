@@ -23,14 +23,11 @@
 
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

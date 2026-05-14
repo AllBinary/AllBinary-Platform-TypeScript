@@ -23,11 +23,9 @@
 
         
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

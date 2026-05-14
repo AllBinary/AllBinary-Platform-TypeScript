@@ -25,20 +25,15 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { GameAdStateBase } from '../../../org/allbinary/business/advertisement/GameAdStateBase.js';
-
-    
+      
 import { AdConfiguration } from '../../../org/allbinary/business/advertisement/AdConfiguration.js';
-
-    
+      
 import { VirtualKeyboardEvent } from '../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
-
-    
+      
 import { VirtualKeyboardEventHandler } from '../../../org/allbinary/input/event/VirtualKeyboardEventHandler.js';
-
-    
+      
 import { VirtualKeyboardEventListenerInterface } from '../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
-
-    
+      
 
 
 

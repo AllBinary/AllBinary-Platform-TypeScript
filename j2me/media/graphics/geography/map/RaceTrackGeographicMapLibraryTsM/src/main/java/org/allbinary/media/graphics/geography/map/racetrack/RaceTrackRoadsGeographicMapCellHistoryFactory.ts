@@ -23,8 +23,7 @@
 
         
 import { GeographicMapCellHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-
-    
+      
 
 
 

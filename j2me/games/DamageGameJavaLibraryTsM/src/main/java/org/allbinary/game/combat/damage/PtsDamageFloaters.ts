@@ -23,38 +23,27 @@
 
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorArrayIndexer } from '../../../../../org/allbinary/graphics/color/BasicColorArrayIndexer.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { CharArrayFactory } from '../../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
-
-    
+      
 import { PrimitiveLongUtil } from '../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

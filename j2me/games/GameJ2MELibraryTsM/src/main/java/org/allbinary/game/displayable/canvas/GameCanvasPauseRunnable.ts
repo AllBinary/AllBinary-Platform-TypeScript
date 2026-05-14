@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
-
-    
+      
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

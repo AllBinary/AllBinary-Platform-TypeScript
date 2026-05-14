@@ -23,17 +23,13 @@
 
         
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
-
-    
+      
 import { NullRTSLayer } from '../../../../../org/allbinary/game/layer/NullRTSLayer.js';
-
-    
+      
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-
-    
+      
 import { WaypointLayer } from '../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
-
-    
+      
 
 
 

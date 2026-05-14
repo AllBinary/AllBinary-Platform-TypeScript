@@ -23,26 +23,19 @@
 
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { Angle } from '../../../../../org/allbinary/math/Angle.js';
-
-    
+      
 import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 
 
 

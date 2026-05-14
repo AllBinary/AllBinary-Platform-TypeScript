@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { TransformGeneratorUtil } from '../../../../../../org/allbinary/logic/visual/transform/generator/TransformGeneratorUtil.js';
-
-    
+      
 import { TransformInfo } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfo.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 
 
 

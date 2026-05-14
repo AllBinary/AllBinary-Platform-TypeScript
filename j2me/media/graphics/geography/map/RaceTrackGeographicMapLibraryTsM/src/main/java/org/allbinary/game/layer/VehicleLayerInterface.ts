@@ -25,23 +25,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-
-    
+      
 import { LayerInterface } from '../../../../org/allbinary/layer/LayerInterface.js';
-
-    
+      
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-
-    
+      
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-
-    
+      
 import { GeographicMapCellPositionTracking } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
-
-    
+      
 
 
 

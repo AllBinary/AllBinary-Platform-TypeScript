@@ -25,17 +25,13 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { NoTimeDelayHelper } from '../../../../org/allbinary/time/NoTimeDelayHelper.js';
-
-    
+      
 
 
 

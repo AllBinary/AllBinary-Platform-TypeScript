@@ -23,23 +23,17 @@
 
         
 import { ABTextFieldItem } from '../../../../../../org/allbinary/graphics/form/item/ABTextFieldItem.js';
-
-    
+      
 import { ValidatorBase } from '../../../../../../org/allbinary/logic/control/validate/ValidatorBase.js';
-
-    
+      
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

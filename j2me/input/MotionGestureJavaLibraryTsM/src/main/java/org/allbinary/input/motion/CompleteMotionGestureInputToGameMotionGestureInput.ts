@@ -25,56 +25,39 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-
-    
+      
 import { MotionGestureConfiguration } from '../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
-
-    
+      
 import { MotionGestureConfigurationFactory } from '../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
-
-    
+      
 import { DiagonalDownLeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalDownLeftTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { DiagonalDownRightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalDownRightTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { DiagonalUpLeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalUpLeftTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { DiagonalUpRightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DiagonalUpRightTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { DownTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/DownTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { LeftTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/LeftTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { ReleaseTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/ReleaseTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { RightTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/RightTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { UpTouchInputToGameKeyEventAction } from '../../../../org/allbinary/input/motion/touch/action/UpTouchInputToGameKeyEventAction.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

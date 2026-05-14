@@ -23,26 +23,19 @@
 
         
 import { Enumeration } from '../../../../../../../java/util/Enumeration.js';
-
-    
+      
 import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
-
-    
+      
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { EnumerationUtil } from '../../../../../../../org/allbinary/util/EnumerationUtil.js';
-
-    
+      
 
 
 

@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 
 
 

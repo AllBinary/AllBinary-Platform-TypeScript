@@ -23,8 +23,7 @@
 
         
 import { InputRobotInterface } from '../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-
-    
+      
 
 
 

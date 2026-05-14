@@ -27,14 +27,11 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { BasicDataTableInterface } from '../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-
-    
+      
 
 
 

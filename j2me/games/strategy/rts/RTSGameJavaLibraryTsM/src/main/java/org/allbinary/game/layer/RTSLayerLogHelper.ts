@@ -23,20 +23,15 @@
 
         
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { NamedAngle } from '../../../../org/allbinary/math/NamedAngle.js';
-
-    
+      
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-
-    
+      
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 
 
 

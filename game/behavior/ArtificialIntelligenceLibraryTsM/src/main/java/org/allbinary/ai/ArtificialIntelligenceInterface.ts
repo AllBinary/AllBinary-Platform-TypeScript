@@ -25,11 +25,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { IdentifierInterface } from '../../../org/allbinary/graphics/IdentifierInterface.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 
 
 

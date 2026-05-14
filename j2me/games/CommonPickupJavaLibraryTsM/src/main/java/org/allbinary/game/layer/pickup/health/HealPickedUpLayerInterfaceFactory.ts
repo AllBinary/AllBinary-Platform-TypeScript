@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { CountedPickedUpLayerInterfaceFactory } from '../../../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js';
-
-    
+      
 import { IconLayerFactory } from '../../../../../../org/allbinary/game/layer/pickup/IconLayerFactory.js';
-
-    
+      
 import { PickedUpLayerInterfaceFactory } from '../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactory.js';
-
-    
+      
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
-
-    
+      
 import { PickedUpLayerTypeFactory } from '../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerTypeFactory.js';
-
-    
+      
 import { PickupProcessorInterface } from '../../../../../../org/allbinary/game/layer/pickup/PickupProcessorInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

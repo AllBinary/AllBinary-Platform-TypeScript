@@ -25,29 +25,21 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { ColorModel } from '../../../../java/awt/image/ColorModel.js';
-
-    
+      
 import { WritableRaster } from '../../../../java/awt/image/WritableRaster.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-
-    
+      
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-
-    
+      
 
 
 

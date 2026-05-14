@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

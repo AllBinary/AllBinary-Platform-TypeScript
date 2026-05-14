@@ -23,17 +23,13 @@
 
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 
 
 

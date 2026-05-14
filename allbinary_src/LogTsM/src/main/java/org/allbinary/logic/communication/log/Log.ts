@@ -23,11 +23,9 @@
 
         
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
-
-    
+      
 
 
 

@@ -23,17 +23,13 @@
 
         
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { NullOpenGLProcessorFactory } from '../../../../../org/allbinary/graphics/opengles/NullOpenGLProcessorFactory.js';
-
-    
+      
 import { OpenGLCapabilities } from '../../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
-
-    
+      
 import { OpenGLProcessor } from '../../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
-
-    
+      
 
 
 

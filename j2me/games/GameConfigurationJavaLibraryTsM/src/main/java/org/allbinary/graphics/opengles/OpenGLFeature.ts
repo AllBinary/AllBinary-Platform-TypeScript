@@ -23,8 +23,7 @@
 
         
 import { Feature } from '../../../../org/allbinary/game/configuration/feature/Feature.js';
-
-    
+      
 
 
 

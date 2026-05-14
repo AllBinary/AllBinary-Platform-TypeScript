@@ -25,41 +25,29 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { RectangleAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleAdjustedAnimation.js';
-
-    
+      
 import { RectangleFilledAdjustedAnimation } from '../../../../org/allbinary/animation/vector/RectangleFilledAdjustedAnimation.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { CommandTextItem } from '../../../../org/allbinary/graphics/form/item/CommandTextItem.js';
-
-    
+      
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-
-    
+      
 
 
 
@@ -233,7 +221,7 @@ adjustedBorder= 4;
 ;
     
 
-    var commandTextItem: CommandTextItem = this.get(index) as unknown as CommandTextItem;
+    var commandTextItem: CommandTextItem = this.get(index) as CommandTextItem;
 ;
     
 

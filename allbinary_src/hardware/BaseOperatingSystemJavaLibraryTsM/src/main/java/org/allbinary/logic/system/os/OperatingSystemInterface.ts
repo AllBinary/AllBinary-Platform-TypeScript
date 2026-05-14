@@ -23,8 +23,7 @@
 
         
 import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/CharacterSet.js';
-
-    
+      
 
 
 

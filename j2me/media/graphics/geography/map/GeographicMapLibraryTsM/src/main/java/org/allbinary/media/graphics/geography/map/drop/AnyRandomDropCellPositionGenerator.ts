@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { MyRandomFactory } from '../../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 
 
 

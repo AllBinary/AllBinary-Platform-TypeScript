@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
-
-    
+      
 
 
 

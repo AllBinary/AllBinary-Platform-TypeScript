@@ -27,29 +27,21 @@
             import { System } from '../../../../java/lang/System.js';
         
 import { Manager } from '../../../../javax/microedition/media/Manager.js';
-
-    
+      
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-
-    
+      
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-
-    
+      
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

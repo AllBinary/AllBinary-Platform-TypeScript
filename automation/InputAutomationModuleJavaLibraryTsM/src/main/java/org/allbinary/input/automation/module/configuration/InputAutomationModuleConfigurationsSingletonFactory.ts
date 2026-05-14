@@ -23,8 +23,7 @@
 
         
 import { InputAutomationConfigurationFactory } from '../../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
-
-    
+      
 
 
 

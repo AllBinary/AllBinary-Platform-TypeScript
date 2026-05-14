@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ByteArrayOutputStream } from '../../../../../java/io/ByteArrayOutputStream.js';
-
-    
+      
 import { File } from '../../../../../java/io/File.js';
-
-    
+      
 import { OutputStream } from '../../../../../java/io/OutputStream.js';
-
-    
+      
 import { StringBufferInputStream } from '../../../../../java/io/StringBufferInputStream.js';
-
-    
+      
 import { Transformer } from '../../../../../javax/xml/transform/Transformer.js';
-
-    
+      
 import { TransformerFactory } from '../../../../../javax/xml/transform/TransformerFactory.js';
-
-    
+      
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-
-    
+      
 import { StreamResult } from '../../../../../javax/xml/transform/stream/StreamResult.js';
-
-    
+      
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

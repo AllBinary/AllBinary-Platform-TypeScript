@@ -23,23 +23,17 @@
 
         
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

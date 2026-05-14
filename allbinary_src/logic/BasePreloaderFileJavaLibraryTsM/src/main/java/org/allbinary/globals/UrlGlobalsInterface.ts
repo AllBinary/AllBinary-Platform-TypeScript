@@ -25,8 +25,7 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

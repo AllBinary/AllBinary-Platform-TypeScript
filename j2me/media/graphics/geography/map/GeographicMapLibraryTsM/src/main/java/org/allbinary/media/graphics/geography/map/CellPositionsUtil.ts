@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { BasicArrayListS } from '../../../../../../org/allbinary/util/BasicArrayListS.js';
-
-    
+      
 
 
 

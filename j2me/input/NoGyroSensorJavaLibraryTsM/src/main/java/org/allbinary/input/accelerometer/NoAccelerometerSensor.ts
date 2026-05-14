@@ -25,11 +25,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro/AllBinaryOrientationSensor.js';
-
-    
+      
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-
-    
+      
 
 
 

@@ -29,8 +29,7 @@
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 
 
 

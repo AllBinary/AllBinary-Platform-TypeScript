@@ -27,17 +27,13 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
-
-    
+      
 import { Hashtable } from '../../../java/util/Hashtable.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

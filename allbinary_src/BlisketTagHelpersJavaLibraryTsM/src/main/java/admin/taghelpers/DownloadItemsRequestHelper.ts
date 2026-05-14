@@ -25,35 +25,25 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../java/util/Vector.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { AbTagData } from '../../admin/tags/AbTagData.js';
-
-    
+      
 import { DownloadableItem } from '../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
-
-    
+      
 import { DownloadItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/downloads/DownloadItemsEntityFactory.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { HelperTag } from '../../tags/HelperTag.js';
-
-    
+      
 import { DownloadableInventoryItemView } from '../../views/admin/inventory/download/DownloadableInventoryItemView.js';
-
-    
+      
 
 
 

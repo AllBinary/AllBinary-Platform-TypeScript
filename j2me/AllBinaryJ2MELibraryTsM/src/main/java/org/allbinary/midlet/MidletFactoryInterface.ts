@@ -23,11 +23,9 @@
 
         
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-
-    
+      
 import { NullMIDlet } from '../../../javax/microedition/midlet/NullMIDlet.js';
-
-    
+      
 
 
 

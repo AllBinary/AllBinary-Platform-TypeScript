@@ -23,11 +23,9 @@
 
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { swing } from '../../../../javax/swing.js';
-
-    
+      
 
 
 

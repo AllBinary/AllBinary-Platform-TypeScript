@@ -25,26 +25,19 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../java/util/Hashtable.js';
-
-    
+      
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { Intent } from '../../../android/content/Intent.js';
-
-    
+      
 import { Uri } from '../../../android/net/Uri.js';
-
-    
+      
 import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

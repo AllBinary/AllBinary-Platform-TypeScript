@@ -23,8 +23,7 @@
 
         
 import { UserEmailEventsConfigurationInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/configuration/user/event/UserEmailEventsConfigurationInterface.js';
-
-    
+      
 
 
 

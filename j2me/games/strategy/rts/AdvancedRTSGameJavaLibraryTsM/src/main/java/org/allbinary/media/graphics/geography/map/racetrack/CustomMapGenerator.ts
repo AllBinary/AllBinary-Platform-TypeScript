@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { AdvancedRTSGameLayer } from '../../../../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
-
-    
+      
 import { WaypointLayer } from '../../../../../../../org/allbinary/game/layer/waypoint/WaypointLayer.js';
-
-    
+      
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-
-    
+      
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
-
-    
+      
 import { DropCellPositionHistory } from '../../../../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
-
-    
+      
 
 
 

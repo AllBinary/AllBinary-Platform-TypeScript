@@ -27,23 +27,17 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { Notification } from '../../../android/app/Notification.js';
-
-    
+      
 import { Builder } from '../../../android/app/Notification/Builder.js';
-
-    
+      
 import { PendingIntent } from '../../../android/app/PendingIntent.js';
-
-    
+      
 import { Context } from '../../../android/content/Context.js';
-
-    
+      
 import { Parcelable } from '../../../android/os/Parcelable.js';
-
-    
+      
 
 
 

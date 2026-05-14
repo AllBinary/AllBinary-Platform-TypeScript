@@ -23,23 +23,17 @@
 
         
 import { Input } from '../../../../../../org/allbinary/game/input/Input.js';
-
-    
+      
 import { InputFactory } from '../../../../../../org/allbinary/game/input/InputFactory.js';
-
-    
+      
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
-
-    
+      
 import { TouchMotionGestureFactory } from '../../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { AllBinaryEventObjectFactoryInterface } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObjectFactoryInterface.js';
-
-    
+      
 
 
 

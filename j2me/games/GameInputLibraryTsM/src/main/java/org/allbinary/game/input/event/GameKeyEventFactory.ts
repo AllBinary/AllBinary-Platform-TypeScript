@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-
-    
+      
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-
-    
+      
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
-
-    
+      
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

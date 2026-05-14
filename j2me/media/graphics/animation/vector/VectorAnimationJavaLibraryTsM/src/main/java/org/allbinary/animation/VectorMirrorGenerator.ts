@@ -25,26 +25,19 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { BasicGraphicsPipeline } from '../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
-
-    
+      
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
-
-    
+      
 
 
 

@@ -23,11 +23,9 @@
 
         
 import { Canvas } from '../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { MultiPlayerGameFeatureFactory } from '../../org/allbinary/game/configuration/feature/MultiPlayerGameFeatureFactory.js';
-
-    
+      
 
 
 

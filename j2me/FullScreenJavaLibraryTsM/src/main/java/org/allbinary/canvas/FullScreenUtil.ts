@@ -25,17 +25,13 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { MainFeatureFactory } from '../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-
-    
+      
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 
 
 

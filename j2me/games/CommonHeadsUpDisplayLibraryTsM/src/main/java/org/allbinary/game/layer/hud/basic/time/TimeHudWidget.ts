@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
-
-    
+      
 import { BasicHudFactory } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
-
-    
+      
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { MyFont } from '../../../../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { PrimitiveLongSingleton } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
-
-    
+      
 
 
 

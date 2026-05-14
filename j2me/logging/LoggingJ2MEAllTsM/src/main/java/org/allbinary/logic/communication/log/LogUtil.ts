@@ -27,17 +27,13 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

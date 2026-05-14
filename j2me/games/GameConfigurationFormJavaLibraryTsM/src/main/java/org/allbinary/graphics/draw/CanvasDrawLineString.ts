@@ -23,11 +23,9 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 
 
 

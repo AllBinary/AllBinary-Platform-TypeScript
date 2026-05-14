@@ -23,23 +23,17 @@
 
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { RTSLayer } from '../../../../../../org/allbinary/game/layer/RTSLayer.js';
-
-    
+      
 import { WaypointInfoHudPaintable } from '../../../../../../org/allbinary/game/layer/waypoint/WaypointInfoHudPaintable.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { KeyValueDrawCharArray } from '../../../../../../org/allbinary/graphics/draw/KeyValueDrawCharArray.js';
-
-    
+      
 import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 
 
 

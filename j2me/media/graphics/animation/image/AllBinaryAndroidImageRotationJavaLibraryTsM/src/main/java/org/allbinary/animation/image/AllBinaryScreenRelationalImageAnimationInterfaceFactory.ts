@@ -25,32 +25,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-
-    
+      
 import { ScreenRelationalUtil } from '../../../../org/allbinary/graphics/displayable/ScreenRelationalUtil.js';
-
-    
+      
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-
-    
+      
 import { ImageScaleUtil } from '../../../../org/allbinary/media/image/ImageScaleUtil.js';
-
-    
+      
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-
-    
+      
 
 
 

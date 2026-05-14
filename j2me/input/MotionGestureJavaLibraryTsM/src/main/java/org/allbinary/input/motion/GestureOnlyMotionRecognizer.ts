@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CustomGPoint } from '../../../../org/allbinary/graphics/CustomGPoint.js';
-
-    
+      
 import { GPointCircularPool } from '../../../../org/allbinary/graphics/GPointCircularPool.js';
-
-    
+      
 import { MotionGestureRecognizer } from '../../../../org/allbinary/input/motion/gesture/MotionGestureRecognizer.js';
-
-    
+      
 
 
 

@@ -25,35 +25,25 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { StreetAddressData } from '../../../org/allbinary/business/user/address/StreetAddressData.js';
-
-    
+      
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { FREEBLISKET_PATH_GLOBALS } from '../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-
-    
+      
 import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LineReader } from '../../../org/allbinary/logic/io/LineReader.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

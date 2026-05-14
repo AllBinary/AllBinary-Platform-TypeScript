@@ -27,11 +27,9 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 
 
 

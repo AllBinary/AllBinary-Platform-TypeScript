@@ -25,50 +25,35 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { DefaultMutableTreeNode } from '../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-
-    
+      
 import { MutableTreeNode } from '../../../../../javax/swing/tree/MutableTreeNode.js';
-
-    
+      
 import { TreePath } from '../../../../../javax/swing/tree/TreePath.js';
-
-    
+      
 import { CanvasTreeLabel } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasTreeLabel.js';
-
-    
+      
 import { MyCanvasEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
-
-    
+      
 import { MyCanvasEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
-
-    
+      
 import { MyCanvasEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
-
-    
+      
 import { MyGraphicItemEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEvent.js';
-
-    
+      
 import { MyGraphicItemEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventService.js';
-
-    
+      
 import { MyGraphicItemEventSource } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/event/MyGraphicItemEventSource.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

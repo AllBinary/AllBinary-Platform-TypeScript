@@ -23,14 +23,11 @@
 
         
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
-
-    
+      
 
 
 

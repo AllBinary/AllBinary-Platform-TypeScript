@@ -23,14 +23,11 @@
 
         
 import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
-
-    
+      
 import { Image } from '../../../../java/awt/Image.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 
 
 

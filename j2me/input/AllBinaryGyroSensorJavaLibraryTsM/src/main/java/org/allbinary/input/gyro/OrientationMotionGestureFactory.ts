@@ -23,11 +23,9 @@
 
         
 import { InputFactory } from '../../../../org/allbinary/game/input/InputFactory.js';
-
-    
+      
 import { MotionGestureInput } from '../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
-
-    
+      
 
 
 

@@ -25,59 +25,41 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
-
-    
+      
 import { CompleteMotionGestureInputEventHandler } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventHandler.js';
-
-    
+      
 import { CompleteMotionGestureInputEventListenerInterface } from '../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
-
-    
+      
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-
-    
+      
 import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
-
-    
+      
 import { GameKeyCompleteMotionGestureInputEvent } from '../../../../../org/allbinary/game/input/motion/action/GameKeyCompleteMotionGestureInputEvent.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-
-    
+      
 import { MotionGestureInput } from '../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
-
-    
+      
 import { TouchMotionGestureFactory } from '../../../../../org/allbinary/input/motion/gesture/TouchMotionGestureFactory.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

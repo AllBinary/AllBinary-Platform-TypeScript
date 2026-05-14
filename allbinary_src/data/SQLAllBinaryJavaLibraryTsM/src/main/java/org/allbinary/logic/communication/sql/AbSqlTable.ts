@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

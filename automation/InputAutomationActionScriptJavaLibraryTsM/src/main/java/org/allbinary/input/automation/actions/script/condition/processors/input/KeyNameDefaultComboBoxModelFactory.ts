@@ -25,14 +25,11 @@
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
 import { KeyEvent } from '../../../../../../../../../java/awt/event/KeyEvent.js';
-
-    
+      
 import { swing } from '../../../../../../../../../javax/swing.js';
-
-    
+      
 import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
-
-    
+      
 
 
 

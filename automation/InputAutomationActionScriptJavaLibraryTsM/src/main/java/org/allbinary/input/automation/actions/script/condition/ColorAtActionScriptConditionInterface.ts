@@ -23,11 +23,9 @@
 
         
 import { awt } from '../../../../../../../java/awt.js';
-
-    
+      
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-
-    
+      
 
 
 

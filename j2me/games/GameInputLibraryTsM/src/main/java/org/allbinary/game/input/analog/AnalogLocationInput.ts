@@ -9,8 +9,7 @@
 
         
 import { CustomGPoint } from '../../../../../org/allbinary/graphics/CustomGPoint.js';
-
-    
+      
 
 
 

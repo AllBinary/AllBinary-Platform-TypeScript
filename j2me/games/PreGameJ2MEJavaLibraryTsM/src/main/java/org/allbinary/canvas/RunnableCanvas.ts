@@ -29,44 +29,31 @@
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { CommandListener } from '../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { NullWaitGameRunnable } from '../../../org/allbinary/game/displayable/canvas/NullWaitGameRunnable.js';
-
-    
+      
 import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
-
-    
+      
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { NullThread } from '../../../org/allbinary/thread/NullThread.js';
-
-    
+      
 import { RunnableInterface } from '../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 import { ThreadObjectUtil } from '../../../org/allbinary/thread/ThreadObjectUtil.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

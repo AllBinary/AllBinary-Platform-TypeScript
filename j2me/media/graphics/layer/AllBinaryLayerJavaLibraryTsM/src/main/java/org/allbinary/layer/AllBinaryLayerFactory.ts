@@ -23,14 +23,11 @@
 
         
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { ViewPosition } from '../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

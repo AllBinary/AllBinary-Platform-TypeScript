@@ -23,11 +23,9 @@
 
         
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

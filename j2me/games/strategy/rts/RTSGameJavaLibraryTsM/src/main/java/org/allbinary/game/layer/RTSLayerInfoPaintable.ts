@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { InitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
-
-    
+      
 import { NullInitUpdatePaintable } from '../../../../org/allbinary/graphics/paint/NullInitUpdatePaintable.js';
-
-    
+      
 
 
 

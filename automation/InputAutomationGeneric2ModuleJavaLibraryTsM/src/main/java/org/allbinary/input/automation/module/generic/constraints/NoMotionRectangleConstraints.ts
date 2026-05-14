@@ -27,14 +27,11 @@
             import { Long } from '../../../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { MotionRectangleConstraints } from '../../../../../../../org/allbinary/input/automation/module/MotionRectangleConstraints.js';
-
-    
+      
 
 
 

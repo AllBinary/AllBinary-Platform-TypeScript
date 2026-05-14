@@ -25,14 +25,11 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-
-    
+      
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
-
-    
+      
 
 
 

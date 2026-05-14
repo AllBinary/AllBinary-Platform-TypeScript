@@ -23,26 +23,19 @@
 
         
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { RotationAnimationInterface } from '../../../../org/allbinary/animation/RotationAnimationInterface.js';
-
-    
+      
 import { RotationAnimationInterfaceCompositeInterface } from '../../../../org/allbinary/animation/RotationAnimationInterfaceCompositeInterface.js';
-
-    
+      
 import { LurchAI } from '../../../../org/allbinary/game/ai/tactical/LurchAI.js';
-
-    
+      
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AngleIncrementInfo } from '../../../../org/allbinary/math/AngleIncrementInfo.js';
-
-    
+      
 
 
 

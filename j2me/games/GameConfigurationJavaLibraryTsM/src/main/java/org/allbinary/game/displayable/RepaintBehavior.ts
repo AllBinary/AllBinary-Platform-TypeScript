@@ -27,29 +27,21 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
-
-    
+      
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
-
-    
+      
 
 
 

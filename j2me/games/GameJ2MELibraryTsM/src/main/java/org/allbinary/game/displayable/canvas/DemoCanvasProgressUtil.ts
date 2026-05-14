@@ -23,17 +23,13 @@
 
         
 import { ProgressCanvas } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-
-    
+      
 import { ProgressCanvasFactory } from '../../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-
-    
+      
 import { PaintableComposite } from '../../../../../org/allbinary/graphics/paint/PaintableComposite.js';
-
-    
+      
 import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 
 
 

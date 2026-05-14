@@ -27,23 +27,17 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { DirectoryBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryBooleanFileVisitor.js';
-
-    
+      
 import { DirectoryOrIncludeFileExtensionBooleanFileVisitor } from '../../../../../org/allbinary/logic/io/file/directory/DirectoryOrIncludeFileExtensionBooleanFileVisitor.js';
-
-    
+      
 import { SubDirectory } from '../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
-
-    
+      
 import { VisitorFileFilter } from '../../../../../org/allbinary/logic/io/file/filter/VisitorFileFilter.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

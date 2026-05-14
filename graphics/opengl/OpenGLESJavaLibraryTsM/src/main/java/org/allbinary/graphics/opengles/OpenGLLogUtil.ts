@@ -9,23 +9,17 @@
 
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { OpenGLStrings } from '../../../../org/allbinary/image/opengles/OpenGLStrings.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 
 
 

@@ -25,20 +25,15 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../java/util/Hashtable.js';
-
-    
+      
 import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
-
-    
+      
 import { NullServiceReferenceFactory } from '../../../org/osgi/framework/NullServiceReferenceFactory.js';
-
-    
+      
 import { ServiceReference } from '../../../org/osgi/framework/ServiceReference.js';
-
-    
+      
 import { ServiceRegistration } from '../../../org/osgi/framework/ServiceRegistration.js';
-
-    
+      
 
 
 

@@ -25,47 +25,33 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { ByteArrayOutputStream } from '../../../java/io/ByteArrayOutputStream.js';
-
-    
+      
 import { File } from '../../../java/io/File.js';
-
-    
+      
 import { DocumentBuilder } from '../../../javax/xml/parsers/DocumentBuilder.js';
-
-    
+      
 import { DocumentBuilderFactory } from '../../../javax/xml/parsers/DocumentBuilderFactory.js';
-
-    
+      
 import { Transformer } from '../../../javax/xml/transform/Transformer.js';
-
-    
+      
 import { TransformerFactory } from '../../../javax/xml/transform/TransformerFactory.js';
-
-    
+      
 import { DOMSource } from '../../../javax/xml/transform/dom/DOMSource.js';
-
-    
+      
 import { StreamResult } from '../../../javax/xml/transform/stream/StreamResult.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

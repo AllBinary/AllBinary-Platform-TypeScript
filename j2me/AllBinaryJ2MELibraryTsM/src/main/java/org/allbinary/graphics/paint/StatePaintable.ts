@@ -23,8 +23,7 @@
 
         
 import { StateControlledInterface } from '../../../../org/allbinary/graphics/displayable/StateControlledInterface.js';
-
-    
+      
 
 
 

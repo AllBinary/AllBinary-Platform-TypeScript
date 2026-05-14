@@ -23,17 +23,13 @@
 
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

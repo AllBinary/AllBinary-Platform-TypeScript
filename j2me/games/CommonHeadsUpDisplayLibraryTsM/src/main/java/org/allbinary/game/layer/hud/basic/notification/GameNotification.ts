@@ -25,29 +25,21 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { GameNotificationEvent } from '../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
-
-    
+      
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { NullUtil } from '../../../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

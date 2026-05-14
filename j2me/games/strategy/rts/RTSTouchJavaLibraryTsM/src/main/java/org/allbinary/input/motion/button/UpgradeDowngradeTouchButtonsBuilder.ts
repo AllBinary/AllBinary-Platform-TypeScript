@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { TouchButtonDowngradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonDowngradeResource.js';
-
-    
+      
 import { TouchButtonUpgradeResource } from '../../../../../org/allbinary/game/input/resource/TouchButtonUpgradeResource.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
-
-    
+      
 
 
 

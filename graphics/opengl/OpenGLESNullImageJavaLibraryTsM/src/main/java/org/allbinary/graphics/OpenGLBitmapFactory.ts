@@ -9,23 +9,17 @@
 
         
 import { IOException } from '../../../java/io/IOException.js';
-
-    
+      
 import { InputStream } from '../../../java/io/InputStream.js';
-
-    
+      
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-
-    
+      
 import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-
-    
+      
 
 
 

@@ -25,26 +25,19 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { RandomRotationFactory } from '../../../org/allbinary/graphics/pipeline/RandomRotationFactory.js';
-
-    
+      
 import { RandomTranslation } from '../../../org/allbinary/graphics/pipeline/RandomTranslation.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js';
-
-    
+      
 
 
 

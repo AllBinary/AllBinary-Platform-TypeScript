@@ -27,17 +27,13 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

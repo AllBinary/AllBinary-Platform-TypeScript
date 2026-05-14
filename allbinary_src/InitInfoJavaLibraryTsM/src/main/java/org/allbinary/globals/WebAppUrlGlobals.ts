@@ -25,11 +25,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { InitInfo } from '../../../org/allbinary/business/init/InitInfo.js';
-
-    
+      
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 
 
 

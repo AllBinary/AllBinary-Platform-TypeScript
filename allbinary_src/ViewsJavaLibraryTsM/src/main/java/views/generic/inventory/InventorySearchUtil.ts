@@ -27,101 +27,69 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';
-
-    
+      
 import { ListIterator } from '../../../java/util/ListIterator.js';
-
-    
+      
 import { Vector } from '../../../java/util/Vector.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { InventoryData } from '../../../org/allbinary/business/user/commerce/inventory/InventoryData.js';
-
-    
+      
 import { BasketData } from '../../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js';
-
-    
+      
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
-
-    
+      
 import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-
-    
+      
 import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
-
-    
+      
 import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-
-    
+      
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SearchData } from '../../../org/allbinary/logic/control/search/SearchData.js';
-
-    
+      
 import { SearchParams } from '../../../org/allbinary/logic/control/search/SearchParams.js';
-
-    
+      
 import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { Replace } from '../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { StoreTransformer } from '../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
-
-    
+      
 import { TransformDocumentInterface } from '../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
-
-    
+      
 import { TransformStoreDocumentFactory } from '../../../org/allbinary/logic/visual/transform/data/TransformStoreDocumentFactory.js';
-
-    
+      
 import { TransformInfoHttpSearch } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpSearch.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

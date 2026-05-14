@@ -27,32 +27,23 @@
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
 import { Calendar } from '../../../../../../../../java/util/Calendar.js';
-
-    
+      
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { BasicItemData } from '../../../../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { ProductIdGenerator } from '../../../../../../../../org/allbinary/data/generator/ProductIdGenerator.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { TimeUtil } from '../../../../../../../../org/allbinary/time/TimeUtil.js';
-
-    
+      
 
 
 

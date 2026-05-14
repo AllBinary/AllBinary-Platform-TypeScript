@@ -25,20 +25,15 @@
             import { Long } from '../../../java/lang/Long.js';
         
 import { View } from '../../../android/view/View.js';
-
-    
+      
 import { BaseViewWrapper } from '../../../org/allbinary/android/view/BaseViewWrapper.js';
-
-    
+      
 import { ViewWrapper } from '../../../org/allbinary/android/view/ViewWrapper.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

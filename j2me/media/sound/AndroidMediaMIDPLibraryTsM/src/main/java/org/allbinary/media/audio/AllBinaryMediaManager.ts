@@ -27,35 +27,25 @@
             import { System } from '../../../../java/lang/System.js';
         
 import { IOException } from '../../../../java/io/IOException.js';
-
-    
+      
 import { InputStream } from '../../../../java/io/InputStream.js';
-
-    
+      
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-
-    
+      
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-
-    
+      
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 
@@ -204,6 +194,7 @@ i < soundInterfaceArray!.length; i++)
                         
                                     {
                                     player2= 
+
                                     (player as PlayerComposite).getPlayerP();
     
 

@@ -27,107 +27,73 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { HashSet } from '../../../../java/util/HashSet.js';
-
-    
+      
 import { Set } from '../../../../java/util/Set.js';
-
-    
+      
 import { Vector } from '../../../../java/util/Vector.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { StoreFrontsEntity } from '../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
-
-    
+      
 import { StaticPagesEntity } from '../../../../org/allbinary/data/tables/staticpages/StaticPagesEntity.js';
-
-    
+      
 import { InventoryEntity } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
-
-    
+      
 import { GLOBALS2 } from '../../../../org/allbinary/globals/GLOBALS2.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SearchParams } from '../../../../org/allbinary/logic/control/search/SearchParams.js';
-
-    
+      
 import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
-
-    
+      
 import { AbDataOutputStream } from '../../../../org/allbinary/logic/io/AbDataOutputStream.js';
-
-    
+      
 import { DataOutputStreamFactory } from '../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
-
-    
+      
 import { InputOutputTypeData } from '../../../../org/allbinary/logic/io/InputOutputTypeData.js';
-
-    
+      
 import { StreamUtil } from '../../../../org/allbinary/logic/io/StreamUtil.js';
-
-    
+      
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { Directory } from '../../../../org/allbinary/logic/io/file/directory/Directory.js';
-
-    
+      
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { SpecialCharacterUtil } from '../../../../org/allbinary/logic/string/SpecialCharacterUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Replace } from '../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 import { UniqueTokens } from '../../../../org/allbinary/logic/string/tokens/UniqueTokens.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { InventoryColumnUtil } from '../../../../views/generic/inventory/InventoryColumnUtil.js';
-
-    
+      
 import { InventorySearchUtil } from '../../../../views/generic/inventory/InventorySearchUtil.js';
-
-    
+      
 
 
 

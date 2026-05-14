@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { DestroyableInterface } from '../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
-
-    
+      
 import { GroupInterfaceCompositeInterface } from '../../../../org/allbinary/game/identification/GroupInterfaceCompositeInterface.js';
-
-    
+      
 import { GameKeyEventSourceInterface } from '../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-
-    
+      
 import { WaypointLayerInterface } from '../../../../org/allbinary/game/layer/waypoint/WaypointLayerInterface.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

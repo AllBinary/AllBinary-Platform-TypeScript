@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

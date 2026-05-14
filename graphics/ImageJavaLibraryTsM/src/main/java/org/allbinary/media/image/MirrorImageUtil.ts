@@ -23,20 +23,15 @@
 
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
-
-    
+      
 import { AffineTransformOp } from '../../../../java/awt/image/AffineTransformOp.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

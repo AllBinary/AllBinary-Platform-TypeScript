@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
-
-    
+      
 import { BundleContext } from '../../../../../org/osgi/framework/BundleContext.js';
-
-    
+      
 import { InputAutomationBundleActivator } from '../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
-
-    
+      
 import { BasicTextJDialog } from '../../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
-
-    
+      
 
 
 

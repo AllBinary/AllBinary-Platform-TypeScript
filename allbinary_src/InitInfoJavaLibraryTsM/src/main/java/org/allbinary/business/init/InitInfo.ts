@@ -25,23 +25,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-
-    
+      
 import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-
-    
+      
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { BooleanUtil } from '../../../../org/allbinary/logic/java/bool/BooleanUtil.js';
-
-    
+      
 
 
 

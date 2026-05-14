@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 
 
 

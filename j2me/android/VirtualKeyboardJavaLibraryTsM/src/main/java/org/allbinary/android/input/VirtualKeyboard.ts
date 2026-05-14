@@ -23,17 +23,13 @@
 
         
 import { VirtualKeyboardEvent } from '../../../../org/allbinary/input/event/VirtualKeyboardEvent.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 
 
 

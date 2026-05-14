@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

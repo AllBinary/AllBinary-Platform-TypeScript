@@ -23,20 +23,15 @@
 
         
 import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-
-    
+      
 import { NullLayer } from '../../../../org/allbinary/layer/NullLayer.js';
-
-    
+      
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

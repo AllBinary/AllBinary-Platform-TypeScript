@@ -25,23 +25,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Angle } from '../../../../org/allbinary/math/Angle.js';
-
-    
+      
 import { NoDecimalTrigTable } from '../../../../org/allbinary/math/NoDecimalTrigTable.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

@@ -25,38 +25,27 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { FeatureResourceAnimationInterfaceFactoryInterface } from '../../../org/allbinary/animation/resource/FeatureResourceAnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-
-    
+      
 import { FeaturedResourceFactory } from '../../../org/allbinary/game/resource/FeaturedResourceFactory.js';
-
-    
+      
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { RectangleFactory } from '../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

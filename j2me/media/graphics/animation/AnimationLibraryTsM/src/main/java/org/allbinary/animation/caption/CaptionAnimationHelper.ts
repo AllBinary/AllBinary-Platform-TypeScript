@@ -23,32 +23,23 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { TextAnimation } from '../../../../org/allbinary/animation/text/TextAnimation.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

@@ -25,56 +25,39 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { StoreFrontData } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { RootTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/RootTransformInfoData.js';
-
-    
+      
 import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-
-    
+      
 import { TransformInfoHttp } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttp.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { TransformTemplateFactory } from '../../../../../../../org/allbinary/logic/visual/transform/template/TransformTemplateFactory.js';
-
-    
+      
 import { TransformTemplateInterface } from '../../../../../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
-
-    
+      
 import { TransformTemplateCustomizerUtil } from '../../../../../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

@@ -31,47 +31,33 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { Raster } from '../../../../java/awt/image/Raster.js';
-
-    
+      
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-
-    
+      
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-
-    
+      
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-
-    
+      
 import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 
@@ -226,9 +212,11 @@ iconHeightList!.add(864);
 index2 < size; index2++)
         {
 width= 
+
                                     (get as Integer).intValue();
     
 height= 
+
                                     (get as Integer).intValue();
     
 

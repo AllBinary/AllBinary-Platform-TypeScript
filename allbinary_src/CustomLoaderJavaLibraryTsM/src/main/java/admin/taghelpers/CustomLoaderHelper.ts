@@ -25,23 +25,17 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { AppUrlGlobals } from '../../org/allbinary/globals/AppUrlGlobals.js';
-
-    
+      
 import { URLGLOBALS } from '../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

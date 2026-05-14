@@ -23,11 +23,9 @@
 
         
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

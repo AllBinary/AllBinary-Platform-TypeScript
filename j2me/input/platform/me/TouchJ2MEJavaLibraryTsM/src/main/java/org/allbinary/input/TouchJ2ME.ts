@@ -25,23 +25,17 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { AllMotionRecognizer } from '../../../org/allbinary/input/motion/AllMotionRecognizer.js';
-
-    
+      
 import { BasicMotionGesturesHandler } from '../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
-
-    
+      
 import { GameMotionGestureListener } from '../../../org/allbinary/input/motion/gesture/observer/GameMotionGestureListener.js';
-
-    
+      
 import { MotionGestureReceiveInterfaceFactory } from '../../../org/allbinary/input/motion/gesture/observer/MotionGestureReceiveInterfaceFactory.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

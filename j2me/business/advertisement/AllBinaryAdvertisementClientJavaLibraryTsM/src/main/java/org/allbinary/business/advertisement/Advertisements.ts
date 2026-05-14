@@ -23,17 +23,13 @@
 
         
 import { MyRandomFactory } from '../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

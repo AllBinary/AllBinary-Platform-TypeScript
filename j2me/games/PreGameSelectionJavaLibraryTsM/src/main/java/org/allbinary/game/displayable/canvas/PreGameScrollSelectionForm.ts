@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ABCustomItem } from '../../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { FormTypeFactory } from '../../../../../org/allbinary/graphics/form/FormTypeFactory.js';
-
-    
+      
 import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
-
-    
+      
 import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
-
-    
+      
 
 
 

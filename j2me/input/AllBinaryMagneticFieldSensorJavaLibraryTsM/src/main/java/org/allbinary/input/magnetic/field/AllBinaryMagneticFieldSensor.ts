@@ -23,8 +23,7 @@
 
         
 import { AllBinarySensor } from '../../../../../org/allbinary/input/AllBinarySensor.js';
-
-    
+      
 
 
 

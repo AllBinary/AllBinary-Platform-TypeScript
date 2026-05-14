@@ -23,32 +23,23 @@
 
         
 import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
-
-    
+      
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
-
-    
+      
 import { RaceTrackGeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { HashtableUtil } from '../../../../../../../org/allbinary/util/HashtableUtil.js';
-
-    
+      
 
 
 

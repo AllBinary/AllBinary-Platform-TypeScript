@@ -25,11 +25,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

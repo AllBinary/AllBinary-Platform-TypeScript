@@ -25,17 +25,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 
 
 

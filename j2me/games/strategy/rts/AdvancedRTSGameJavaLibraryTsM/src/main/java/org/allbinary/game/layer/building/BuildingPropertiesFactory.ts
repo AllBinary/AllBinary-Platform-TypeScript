@@ -25,41 +25,29 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { DamageFloaters } from '../../../../../org/allbinary/game/combat/damage/DamageFloaters.js';
-
-    
+      
 import { PtsDamageFloaters } from '../../../../../org/allbinary/game/combat/damage/PtsDamageFloaters.js';
-
-    
+      
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { GameFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-
-    
+      
 import { BasicHudFactory } from '../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
-
-    
+      
 import { HealthBar } from '../../../../../org/allbinary/game/health/HealthBar.js';
-
-    
+      
 import { HealthBarTwodAnimation } from '../../../../../org/allbinary/game/health/HealthBarTwodAnimation.js';
-
-    
+      
 import { TrackingEvent } from '../../../../../org/allbinary/game/tracking/TrackingEvent.js';
-
-    
+      
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-
-    
+      
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { OrderHistoryEntity } from '../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntity.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

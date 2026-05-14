@@ -25,29 +25,21 @@
 
         
 import { List } from '../../../java/util/List.js';
-
-    
+      
 import { ActivityManager } from '../../../android/app/ActivityManager.js';
-
-    
+      
 import { RunningServiceInfo } from '../../../android/app/ActivityManager/RunningServiceInfo.js';
-
-    
+      
 import { ComponentName } from '../../../android/content/ComponentName.js';
-
-    
+      
 import { Context } from '../../../android/content/Context.js';
-
-    
+      
 import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

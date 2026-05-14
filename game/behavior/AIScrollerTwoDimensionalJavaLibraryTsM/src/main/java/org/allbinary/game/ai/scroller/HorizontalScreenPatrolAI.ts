@@ -27,47 +27,33 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
-
-    
+      
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { PlayerQueue } from '../../../../../org/allbinary/media/audio/PlayerQueue.js';
-
-    
+      
 import { SecondaryPlayerQueueFactory } from '../../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
-
-    
+      
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

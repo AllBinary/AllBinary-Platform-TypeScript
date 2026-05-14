@@ -23,14 +23,11 @@
 
         
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

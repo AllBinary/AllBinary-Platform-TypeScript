@@ -27,11 +27,9 @@
             import { System } from '../../../java/lang/System.js';
         
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-
-    
+      
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 
 
 

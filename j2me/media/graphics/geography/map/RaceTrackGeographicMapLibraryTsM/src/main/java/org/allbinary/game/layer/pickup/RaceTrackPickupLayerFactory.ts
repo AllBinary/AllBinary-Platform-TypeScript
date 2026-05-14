@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerFactoryInterface } from '../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-
-    
+      
 
 
 

@@ -23,8 +23,7 @@
 
         
 import { ShaderComposite } from '../../../../org/allbinary/graphics/opengles/shader/ShaderComposite.js';
-
-    
+      
 
 
 

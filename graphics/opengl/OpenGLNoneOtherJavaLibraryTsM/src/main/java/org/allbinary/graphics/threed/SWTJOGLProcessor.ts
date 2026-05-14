@@ -25,8 +25,7 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { MIDlet } from '../../../../javax/microedition/midlet/MIDlet.js';
-
-    
+      
 
 
 

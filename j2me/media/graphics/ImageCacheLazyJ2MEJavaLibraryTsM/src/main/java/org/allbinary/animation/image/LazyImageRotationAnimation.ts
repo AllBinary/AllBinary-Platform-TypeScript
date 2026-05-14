@@ -25,59 +25,41 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { NullRotationAnimationFactory } from '../../../../org/allbinary/animation/NullRotationAnimationFactory.js';
-
-    
+      
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-
-    
+      
 import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

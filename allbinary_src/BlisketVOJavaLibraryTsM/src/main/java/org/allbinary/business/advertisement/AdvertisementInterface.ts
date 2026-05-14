@@ -23,20 +23,15 @@
 
         
 import { AdvertisementImageInterface } from '../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
-
-    
+      
 import { AdvertisementProductInterface } from '../../../../org/allbinary/business/advertisement/product/AdvertisementProductInterface.js';
-
-    
+      
 import { AdvertisementThumbnailInterface } from '../../../../org/allbinary/business/advertisement/thumbnail/AdvertisementThumbnailInterface.js';
-
-    
+      
 import { Money } from '../../../../org/allbinary/business/user/commerce/money/Money.js';
-
-    
+      
 import { DisplayInBrowserContraintsInterface } from '../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
-
-    
+      
 
 
 

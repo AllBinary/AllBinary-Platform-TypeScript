@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
-
-    
+      
 import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
-
-    
+      
 import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { DrawStringUtil } from '../../../../../org/allbinary/graphics/draw/DrawStringUtil.js';
-
-    
+      
 import { MyFont } from '../../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

@@ -27,23 +27,17 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-
-    
+      
 import { AbstractInputRobot } from '../../../../../org/allbinary/input/automation/AbstractInputRobot.js';
-
-    
+      
 import { PointFactory } from '../../../../../org/allbinary/input/automation/PointFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

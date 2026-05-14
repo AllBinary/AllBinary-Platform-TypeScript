@@ -23,23 +23,17 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

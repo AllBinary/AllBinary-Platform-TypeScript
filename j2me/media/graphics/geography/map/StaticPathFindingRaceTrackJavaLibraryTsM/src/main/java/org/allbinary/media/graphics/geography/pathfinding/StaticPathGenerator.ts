@@ -27,50 +27,35 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-
-    
+      
 import { GeographicMapCellHistory } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { PathData } from '../../../../../../org/allbinary/media/graphics/geography/map/PathData.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

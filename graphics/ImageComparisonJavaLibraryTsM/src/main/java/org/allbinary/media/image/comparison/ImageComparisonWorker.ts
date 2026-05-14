@@ -27,35 +27,25 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { CapturedImageWorkerResultsEvent } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsEvent.js';
-
-    
+      
 import { CapturedImageWorkerResultsListener } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageWorkerResultsListener.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

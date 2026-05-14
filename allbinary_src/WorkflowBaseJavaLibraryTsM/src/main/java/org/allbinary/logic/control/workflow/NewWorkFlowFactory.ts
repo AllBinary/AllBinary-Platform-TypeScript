@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../../../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { DynamicObjectData } from '../../../../../org/allbinary/business/DynamicObjectData.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AbeFactory } from '../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { LicensingException } from '../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

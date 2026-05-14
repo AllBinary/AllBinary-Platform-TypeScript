@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { ArtificialIntelligenceInterface } from '../../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-
-    
+      
 import { ArtificialIntelligenceInterfaceFactoryInterface } from '../../../../../org/allbinary/game/ai/ArtificialIntelligenceInterfaceFactoryInterface.js';
-
-    
+      
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
-
-    
+      
 import { InputProbability } from '../../../../../org/allbinary/game/ai/InputProbability.js';
-
-    
+      
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-
-    
+      
 
 
 

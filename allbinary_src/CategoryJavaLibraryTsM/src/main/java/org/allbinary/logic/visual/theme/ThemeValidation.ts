@@ -25,92 +25,63 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
-
-    
+      
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-
-    
+      
 import { StoreThemeCategoryFactory } from '../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryFactory.js';
-
-    
+      
 import { StoreThemeCategoryInterface } from '../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryInterface.js';
-
-    
+      
 import { CategoryLoaderFactory } from '../../../../../org/allbinary/data/tree/category/CategoryLoaderFactory.js';
-
-    
+      
 import { CategoryLoaderInterface } from '../../../../../org/allbinary/data/tree/category/CategoryLoaderInterface.js';
-
-    
+      
 import { DomData } from '../../../../../org/allbinary/data/tree/dom/DomData.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlData } from '../../../../../org/allbinary/logic/communication/sql/AbSqlData.js';
-
-    
+      
 import { CryptFileReader } from '../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
-
-    
+      
 import { ValidationInterface } from '../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-
-    
+      
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { PathUtil } from '../../../../../org/allbinary/logic/io/path/PathUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { CssStyleValidation } from '../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/template/retail/CssStyleValidation.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

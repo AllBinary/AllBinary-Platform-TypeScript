@@ -23,32 +23,23 @@
 
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
-
-    
+      
 import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
-
-    
+      
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-
-    
+      
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

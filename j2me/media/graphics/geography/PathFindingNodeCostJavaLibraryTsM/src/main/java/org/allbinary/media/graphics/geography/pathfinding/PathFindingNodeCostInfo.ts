@@ -27,11 +27,9 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 
 
 

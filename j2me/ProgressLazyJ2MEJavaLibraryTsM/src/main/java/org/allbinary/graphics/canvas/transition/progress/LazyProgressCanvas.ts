@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Processor } from '../../../../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-
-    
+      
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

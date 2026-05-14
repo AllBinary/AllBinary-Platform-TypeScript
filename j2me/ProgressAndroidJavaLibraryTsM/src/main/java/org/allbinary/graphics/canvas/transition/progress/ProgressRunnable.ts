@@ -23,17 +23,13 @@
 
         
 import { Activity } from '../../../../../../android/app/Activity.js';
-
-    
+      
 import { MidletActivityBase } from '../../../../../../org/allbinary/android/activity/MidletActivityBase.js';
-
-    
+      
 import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
-
-    
+      
 import { ARunnable } from '../../../../../../org/allbinary/thread/ARunnable.js';
-
-    
+      
 
 
 

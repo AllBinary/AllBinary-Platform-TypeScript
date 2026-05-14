@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../../../../java/util/Set.js';
-
-    
+      
 import { Vector } from '../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { swing } from '../../../../../../../javax/swing.js';
-
-    
+      
 import { AbstractInputAutomationFactory } from '../../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
-
-    
+      
 import { InputAutomationModuleData } from '../../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
-
-    
+      
 import { BlankModuleConfigurationJPanel } from '../../../../../../../org/allbinary/input/automation/module/configuration/BlankModuleConfigurationJPanel.js';
-
-    
+      
 import { RunnableInterface } from '../../../../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 
 
 

@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AllBinaryGameCanvasInterface } from '../../../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvasInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

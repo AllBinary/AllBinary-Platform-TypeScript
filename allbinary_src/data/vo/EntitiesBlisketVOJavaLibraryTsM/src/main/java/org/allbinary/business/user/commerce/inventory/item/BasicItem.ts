@@ -29,41 +29,29 @@
             import { Long } from '../../../../../../../java/lang/Long.js';
         
 import { Calendar } from '../../../../../../../java/util/Calendar.js';
-
-    
+      
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-
-    
+      
 import { MoneyException } from '../../../../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-
-    
+      
 import { ProductIdGenerator } from '../../../../../../../org/allbinary/data/generator/ProductIdGenerator.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

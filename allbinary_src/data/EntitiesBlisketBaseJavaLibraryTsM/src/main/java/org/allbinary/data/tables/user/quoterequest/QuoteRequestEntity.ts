@@ -27,35 +27,25 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { UserDbInitInfo } from '../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-
-    
+      
 import { QuoteRequestData } from '../../../../../../org/allbinary/business/quoterequest/QuoteRequestData.js';
-
-    
+      
 import { UserData } from '../../../../../../org/allbinary/business/user/UserData.js';
-
-    
+      
 import { QuoteRequest } from '../../../../../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlBean } from '../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

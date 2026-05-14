@@ -23,11 +23,9 @@
 
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

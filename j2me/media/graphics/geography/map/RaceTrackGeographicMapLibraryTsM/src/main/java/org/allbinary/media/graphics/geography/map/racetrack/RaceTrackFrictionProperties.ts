@@ -23,8 +23,7 @@
 
         
 import { FrictionData } from '../../../../../../../org/allbinary/game/physics/friction/FrictionData.js';
-
-    
+      
 
 
 

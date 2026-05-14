@@ -25,23 +25,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-
-    
+      
 import { PlaynImmutableImage } from '../../../../org/microemu/device/playn/PlaynImmutableImage.js';
-
-    
+      
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
-
-    
+      
 import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-
-    
+      
 import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
-
-    
+      
 
 
 

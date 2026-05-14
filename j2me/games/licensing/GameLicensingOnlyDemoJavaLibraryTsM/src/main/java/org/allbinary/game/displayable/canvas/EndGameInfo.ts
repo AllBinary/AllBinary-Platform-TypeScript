@@ -23,14 +23,11 @@
 
         
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

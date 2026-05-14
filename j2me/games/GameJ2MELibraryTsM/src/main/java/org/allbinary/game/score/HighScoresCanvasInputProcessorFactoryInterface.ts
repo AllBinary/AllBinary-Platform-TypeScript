@@ -23,8 +23,7 @@
 
         
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-
-    
+      
 
 
 

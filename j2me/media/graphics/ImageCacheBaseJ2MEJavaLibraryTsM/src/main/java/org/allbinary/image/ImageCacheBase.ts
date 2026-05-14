@@ -27,35 +27,25 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { InputStream } from '../../../java/io/InputStream.js';
-
-    
+      
 import { Hashtable } from '../../../java/util/Hashtable.js';
-
-    
+      
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

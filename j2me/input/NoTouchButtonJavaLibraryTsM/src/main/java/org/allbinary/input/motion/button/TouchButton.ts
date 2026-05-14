@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationInterface } from '../../../../../org/allbinary/animation/AnimationInterface.js';
-
-    
+      
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
+      
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

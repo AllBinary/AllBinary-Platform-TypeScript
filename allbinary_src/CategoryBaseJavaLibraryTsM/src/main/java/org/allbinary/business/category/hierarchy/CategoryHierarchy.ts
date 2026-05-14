@@ -25,17 +25,13 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
-
-    
+      
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

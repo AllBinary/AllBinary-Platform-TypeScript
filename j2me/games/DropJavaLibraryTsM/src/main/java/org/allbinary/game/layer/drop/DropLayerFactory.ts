@@ -23,17 +23,13 @@
 
         
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

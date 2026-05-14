@@ -25,17 +25,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
-
-    
+      
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-
-    
+      
 import { NoAllBinarySensor } from '../../../../org/allbinary/input/NoAllBinarySensor.js';
-
-    
+      
 import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/accelerometer/AccelerometerSensorFactory.js';
-
-    
+      
 
 
 

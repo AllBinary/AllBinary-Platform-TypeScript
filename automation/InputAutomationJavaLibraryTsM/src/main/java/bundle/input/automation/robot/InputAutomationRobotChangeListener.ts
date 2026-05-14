@@ -23,8 +23,7 @@
 
         
 import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
-
-    
+      
 
 
 

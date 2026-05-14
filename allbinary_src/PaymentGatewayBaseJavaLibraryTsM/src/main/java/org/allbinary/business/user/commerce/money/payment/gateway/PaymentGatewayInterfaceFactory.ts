@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { HttpServletRequest } from '../../../../../../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { BasicPaymentType } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
-
-    
+      
 import { BasicPaymentTypeUtil } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentTypeUtil.js';
-
-    
+      
 import { RequestParams } from '../../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

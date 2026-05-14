@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Collection } from '../../../../../java/util/Collection.js';
-
-    
+      
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Iterator } from '../../../../../java/util/Iterator.js';
-
-    
+      
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-
-    
+      
 import { HelpSetEvent } from '../../../../../javax/help/event/HelpSetEvent.js';
-
-    
+      
 import { HelpSetListener } from '../../../../../javax/help/event/HelpSetListener.js';
-
-    
+      
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-
-    
+      
 import { InputAutomationModuleConfigurations } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
-
-    
+      
 import { InputAutomationModuleConfigurationsSingletonFactory } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurationsSingletonFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { JavaHelpSetNotifier } from '../../../../../org/allbinary/logic/java/help/JavaHelpSetNotifier.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

@@ -23,17 +23,13 @@
 
         
 import { Vector } from '../../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { PaymentGatewayInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
-
-    
+      
 import { BasicPaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
-
-    
+      
 import { BasicDataTableInterface } from '../../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-
-    
+      
 
 
 

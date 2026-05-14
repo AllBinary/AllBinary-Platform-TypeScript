@@ -23,20 +23,15 @@
 
         
 import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
-
-    
+      
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

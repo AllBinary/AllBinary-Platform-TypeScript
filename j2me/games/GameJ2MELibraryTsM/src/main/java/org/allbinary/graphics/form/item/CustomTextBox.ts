@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
-
-    
+      
 import { GameCommandCanvas } from '../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js';
-
-    
+      
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-
-    
+      
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
-
-    
+      
 import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { TextItemVisitor } from '../../../../../org/allbinary/graphics/form/item/validation/TextItemVisitor.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

@@ -23,11 +23,9 @@
 
         
 import { Map } from '../../../../java/util/Map.js';
-
-    
+      
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
-
-    
+      
 
 
 

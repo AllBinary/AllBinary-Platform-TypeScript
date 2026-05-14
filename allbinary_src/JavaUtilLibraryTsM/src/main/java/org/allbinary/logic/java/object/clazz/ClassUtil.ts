@@ -23,17 +23,13 @@
 
         
 import { ConstructorUtil } from '../../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
-
-    
+      
 import { InterfaceUtil } from '../../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
-
-    
+      
 import { MethodUtil } from '../../../../../../org/allbinary/logic/java/anyType/MethodUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

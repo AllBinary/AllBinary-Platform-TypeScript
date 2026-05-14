@@ -23,41 +23,29 @@
 
         
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { ByteBuffer } from '../../../../java/nio/ByteBuffer.js';
-
-    
+      
 import { ByteOrder } from '../../../../java/nio/ByteOrder.js';
-
-    
+      
 import { FloatBuffer } from '../../../../java/nio/FloatBuffer.js';
-
-    
+      
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLLogUtil.js';
-
-    
+      
 import { GLUtil } from '../../../../org/allbinary/opengles/GLUtil.js';
-
-    
+      
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-
-    
+      
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
-
-    
+      
 
 
 

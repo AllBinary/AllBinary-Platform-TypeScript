@@ -25,32 +25,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../java/util/Vector.js';
-
-    
+      
 import { CategoryPropertiesInterface } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
-
-    
+      
 import { CategoryPropertiesView } from '../../../../org/allbinary/business/category/properties/CategoryPropertiesView.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { InterfaceUtil } from '../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

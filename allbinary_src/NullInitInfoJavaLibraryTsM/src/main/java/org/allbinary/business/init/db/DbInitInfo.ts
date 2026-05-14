@@ -25,8 +25,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 
 
 
@@ -46,7 +45,7 @@ import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DbConnectionInfo } from './DbConnectionInfo.js';
-
+//import org.allbinary.logic.communication.log.config.type.LogConfigTypes;
 export class DbInitInfo extends DbConnectionInfo {
         
 public constructor (initFileName: string, read: boolean){

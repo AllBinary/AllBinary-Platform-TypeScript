@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Stack } from '../../../../../java/util/Stack.js';
-
-    
+      
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { Form } from '../../../../../javax/microedition/lcdui/Form.js';
-
-    
+      
 import { NullCommandListener } from '../../../../../javax/microedition/lcdui/NullCommandListener.js';
-
-    
+      
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 import { MenuListener } from '../../../../../org/allbinary/game/displayable/canvas/MenuListener.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { MyCommandInterface } from '../../../../../org/allbinary/graphics/displayable/command/MyCommandInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

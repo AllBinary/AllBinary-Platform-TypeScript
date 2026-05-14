@@ -25,11 +25,9 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-
-    
+      
 import { NullRunnable } from '../../../../org/allbinary/thread/NullRunnable.js';
-
-    
+      
 
 
 

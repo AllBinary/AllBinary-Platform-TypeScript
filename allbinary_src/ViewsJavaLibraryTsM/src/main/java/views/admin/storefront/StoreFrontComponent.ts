@@ -25,23 +25,17 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { StoreFront } from '../../../org/allbinary/business/context/modules/storefront/StoreFront.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

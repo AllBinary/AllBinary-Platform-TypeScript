@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { BasicLayerProcessor } from '../../../../../org/allbinary/layer/BasicLayerProcessor.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

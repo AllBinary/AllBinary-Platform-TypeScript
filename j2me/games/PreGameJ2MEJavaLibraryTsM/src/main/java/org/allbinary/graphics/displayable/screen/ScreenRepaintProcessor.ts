@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-
-    
+      
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 
 
 

@@ -31,65 +31,45 @@
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { EventListener } from '../../../../../java/util/EventListener.js';
-
-    
+      
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { LinkedList } from '../../../../../java/util/LinkedList.js';
-
-    
+      
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { MutableTreeNode } from '../../../../../javax/swing/tree/MutableTreeNode.js';
-
-    
+      
 import { DomHelper } from '../../../../../org/allbinary/dom/DomHelper.js';
-
-    
+      
 import { StatusFactory } from '../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
-
-    
+      
 import { CanvasDom } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
-
-    
+      
 import { CanvasJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
-
-    
+      
 import { MyCanvasEvent } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
-
-    
+      
 import { MyCanvasEventListener } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventListener.js';
-
-    
+      
 import { MyCanvasEventService } from '../../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
-
-    
+      
 import { PropertiesJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/properties/PropertiesJPanel.js';
-
-    
+      
 import { ToolJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/tools/ToolJPanel.js';
-
-    
+      
 import { LOGGING } from '../../../../../org/allbinary/log/LOGGING.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

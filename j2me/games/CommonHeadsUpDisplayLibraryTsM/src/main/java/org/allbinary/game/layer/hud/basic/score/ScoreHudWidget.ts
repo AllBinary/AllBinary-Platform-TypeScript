@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { NumberStringHud } from '../../../../../../../org/allbinary/game/layer/hud/basic/NumberStringHud.js';
-
-    
+      
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { MyFont } from '../../../../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 
 
 

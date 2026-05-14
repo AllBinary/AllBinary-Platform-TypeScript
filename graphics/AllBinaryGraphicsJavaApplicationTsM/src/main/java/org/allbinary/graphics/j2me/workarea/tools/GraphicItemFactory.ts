@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { LOGGING } from '../../../../../../org/allbinary/log/LOGGING.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

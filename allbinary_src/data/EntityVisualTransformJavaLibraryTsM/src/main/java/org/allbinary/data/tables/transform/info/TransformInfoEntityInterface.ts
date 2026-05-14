@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 
 
 

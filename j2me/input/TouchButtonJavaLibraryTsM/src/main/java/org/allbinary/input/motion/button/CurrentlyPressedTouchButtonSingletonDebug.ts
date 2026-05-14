@@ -23,17 +23,13 @@
 
         
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

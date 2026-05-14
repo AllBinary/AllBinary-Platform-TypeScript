@@ -29,32 +29,23 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-
-    
+      
 import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-
-    
+      
 import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDeltaFactory.js';
-
-    
+      
 
 
 

@@ -25,17 +25,13 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { ARunnable } from '../../../org/allbinary/thread/ARunnable.js';
-
-    
+      
 import { ImageToolJFrame } from '../../../org/allbinary/image/gui/ImageToolJFrame.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

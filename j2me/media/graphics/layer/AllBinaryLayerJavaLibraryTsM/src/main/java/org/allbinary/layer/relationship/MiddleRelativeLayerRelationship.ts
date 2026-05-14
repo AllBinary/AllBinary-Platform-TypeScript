@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

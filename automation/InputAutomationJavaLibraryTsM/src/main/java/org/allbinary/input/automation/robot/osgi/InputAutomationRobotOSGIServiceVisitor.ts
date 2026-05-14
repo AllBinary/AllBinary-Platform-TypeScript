@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
-
-    
+      
 import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-
-    
+      
 import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { OSGIServiceInterface } from '../../../../../../org/allbinary/osgi/OSGIServiceInterface.js';
-
-    
+      
 import { OSGIServiceVisitorInterface } from '../../../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

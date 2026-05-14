@@ -11,17 +11,13 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { ByteBuffer } from '../../../java/nio/ByteBuffer.js';
-
-    
+      
 import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
-
-    
+      
 import { OpenGLESImage } from '../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 
 
 

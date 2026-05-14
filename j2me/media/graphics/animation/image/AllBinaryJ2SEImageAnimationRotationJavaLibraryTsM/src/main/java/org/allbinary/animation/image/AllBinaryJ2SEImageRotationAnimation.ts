@@ -27,35 +27,25 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-
-    
+      
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-
-    
+      
 import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
-
-    
+      
 
 
 

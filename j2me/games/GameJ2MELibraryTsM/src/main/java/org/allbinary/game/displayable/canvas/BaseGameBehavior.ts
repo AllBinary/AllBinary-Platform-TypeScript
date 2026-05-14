@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameAdStateFactory } from '../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
-
-    
+      
 import { GameAdState } from '../../../../../org/allbinary/game/GameAdState.js';
-
-    
+      
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { CurrentDisplayableFactory } from '../../../../../org/allbinary/graphics/opengles/CurrentDisplayableFactory.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 
 
 

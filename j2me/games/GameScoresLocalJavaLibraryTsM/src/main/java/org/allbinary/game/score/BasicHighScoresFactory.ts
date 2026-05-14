@@ -11,17 +11,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 
 
 

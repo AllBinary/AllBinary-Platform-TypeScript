@@ -23,20 +23,15 @@
 
         
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { LogDbInitInfo } from '../../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
-
-    
+      
 import { AbeHttpRequestInfoData } from '../../../../../org/allbinary/logic/communication/http/request/AbeHttpRequestInfoData.js';
-
-    
+      
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

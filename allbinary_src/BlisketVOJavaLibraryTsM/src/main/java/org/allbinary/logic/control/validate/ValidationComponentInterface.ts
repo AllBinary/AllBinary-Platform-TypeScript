@@ -23,8 +23,7 @@
 
         
 import { TransformInterface } from '../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
-
-    
+      
 
 
 

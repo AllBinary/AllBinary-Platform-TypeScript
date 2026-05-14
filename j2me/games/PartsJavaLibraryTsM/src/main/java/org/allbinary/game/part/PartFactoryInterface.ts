@@ -25,11 +25,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

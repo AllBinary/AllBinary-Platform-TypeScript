@@ -25,8 +25,7 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 
 
 

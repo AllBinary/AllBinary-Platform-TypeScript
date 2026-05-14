@@ -23,14 +23,11 @@
 
         
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-
-    
+      
 import { TableMappingInterface } from '../../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 
 
 

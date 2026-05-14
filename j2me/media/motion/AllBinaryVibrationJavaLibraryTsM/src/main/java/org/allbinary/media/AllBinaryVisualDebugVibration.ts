@@ -25,20 +25,15 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Anchor } from '../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { MyFont } from '../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

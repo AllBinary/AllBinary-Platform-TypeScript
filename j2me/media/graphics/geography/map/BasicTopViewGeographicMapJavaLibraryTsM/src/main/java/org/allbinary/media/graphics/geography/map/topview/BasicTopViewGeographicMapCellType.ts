@@ -25,29 +25,21 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
-
-    
+      
 import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellTypeFactory.js';
-
-    
+      
 import { RaceTrackGeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListS } from '../../../../../../../org/allbinary/util/BasicArrayListS.js';
-
-    
+      
 
 
 

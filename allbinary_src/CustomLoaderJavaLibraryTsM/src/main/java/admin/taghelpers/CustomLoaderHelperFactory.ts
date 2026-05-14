@@ -23,20 +23,15 @@
 
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 
 
 

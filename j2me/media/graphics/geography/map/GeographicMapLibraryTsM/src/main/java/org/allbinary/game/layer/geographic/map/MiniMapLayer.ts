@@ -25,74 +25,51 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { CircleFilledAnimation } from '../../../../../../org/allbinary/animation/vector/CircleFilledAnimation.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { ColorCompositeInterface } from '../../../../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { GeographicMapCellPositionEvent } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEvent.js';
-
-    
+      
 import { GeographicMapCellPositionEventHandler } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEventHandler.js';
-
-    
+      
 import { GeographicMapCellPositionEventListenerInterface } from '../../../../../../org/allbinary/media/graphics/geography/map/event/GeographicMapCellPositionEventListenerInterface.js';
-
-    
+      
 import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

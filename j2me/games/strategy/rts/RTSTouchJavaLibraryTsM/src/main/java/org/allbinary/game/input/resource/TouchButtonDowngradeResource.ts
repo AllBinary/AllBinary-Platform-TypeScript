@@ -23,11 +23,9 @@
 
         
 import { TouchButtonBlankResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonBlankResource.js';
-
-    
+      
 import { TouchButtonResource } from '../../../../../org/allbinary/input/motion/button/TouchButtonResource.js';
-
-    
+      
 
 
 

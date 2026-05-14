@@ -27,44 +27,31 @@
             import { Long } from '../../../../../../../../../java/lang/Long.js';
         
 import { Calendar } from '../../../../../../../../../java/util/Calendar.js';
-
-    
+      
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { EntryData } from '../../../../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { UserDbInitInfo } from '../../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-
-    
+      
 import { UserData } from '../../../../../../../../../org/allbinary/business/user/UserData.js';
-
-    
+      
 import { OrderData } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-
-    
+      
 import { PaymentTransactionKeysFactory } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionKeysFactory.js';
-
-    
+      
 import { TransactionResult } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/TransactionResult.js';
-
-    
+      
 import { TransactionResultInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/TransactionResultInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlBean } from '../../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

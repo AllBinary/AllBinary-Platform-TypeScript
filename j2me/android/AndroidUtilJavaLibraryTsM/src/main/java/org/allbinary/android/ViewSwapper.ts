@@ -11,14 +11,11 @@
 
         
 import { Activity } from '../../../android/app/Activity.js';
-
-    
+      
 import { View } from '../../../android/view/View.js';
-
-    
+      
 import { ViewGroup } from '../../../android/view/ViewGroup.js';
-
-    
+      
 
 
 

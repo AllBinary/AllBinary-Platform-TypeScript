@@ -23,14 +23,11 @@
 
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { WeblisketSessionInterface } from '../../../../../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
-
-    
+      
 
 
 

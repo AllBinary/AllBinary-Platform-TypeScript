@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { RotationAnimation } from '../../../../../org/allbinary/animation/RotationAnimation.js';
-
-    
+      
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-
-    
+      
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

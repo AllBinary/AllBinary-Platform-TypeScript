@@ -25,47 +25,33 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { ScrollMapEvent } from '../../../../org/allbinary/layer/event/ScrollMapEvent.js';
-
-    
+      
 import { ScrollMapEventHandler } from '../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

@@ -27,35 +27,25 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { GameInitializedEvent } from '../../../../org/allbinary/game/configuration/event/GameInitializedEvent.js';
-
-    
+      
 import { GameInitializedEventHandler } from '../../../../org/allbinary/game/configuration/event/GameInitializedEventHandler.js';
-
-    
+      
 import { GameInitializedListenerInterface } from '../../../../org/allbinary/game/configuration/event/GameInitializedListenerInterface.js';
-
-    
+      
 import { FeatureResourceInitializationUtil } from '../../../../org/allbinary/game/resource/FeatureResourceInitializationUtil.js';
-
-    
+      
 import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

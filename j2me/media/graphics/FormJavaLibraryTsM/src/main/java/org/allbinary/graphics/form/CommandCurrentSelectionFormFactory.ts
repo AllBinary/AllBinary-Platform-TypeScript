@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { TouchFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/TouchFeatureFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-
-    
+      
 
 
 

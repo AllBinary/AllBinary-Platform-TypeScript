@@ -25,23 +25,17 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { BasicColorSetUtil } from '../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
-
-    
+      
 import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
-
-    
+      
 
 
 

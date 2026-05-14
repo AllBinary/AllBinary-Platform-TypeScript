@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 
 
 

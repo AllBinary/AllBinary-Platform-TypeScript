@@ -23,38 +23,27 @@
 
         
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { BasicColorSetUtil } from '../../../../../org/allbinary/graphics/color/BasicColorSetUtil.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { FontDebugFactory } from '../../../../../org/allbinary/graphics/font/FontDebugFactory.js';
-
-    
+      
 import { InitUpdatePaintable } from '../../../../../org/allbinary/graphics/paint/InitUpdatePaintable.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

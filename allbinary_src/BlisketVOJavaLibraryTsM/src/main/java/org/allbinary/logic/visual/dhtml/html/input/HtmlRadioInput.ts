@@ -23,8 +23,7 @@
 
         
 import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 
 
 

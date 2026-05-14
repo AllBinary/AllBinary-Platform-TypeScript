@@ -27,20 +27,15 @@
             import { System } from '../../../../../../java/lang/System.js';
         
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
-
-    
+      
 import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-
-    
+      
 import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
-
-    
+      
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

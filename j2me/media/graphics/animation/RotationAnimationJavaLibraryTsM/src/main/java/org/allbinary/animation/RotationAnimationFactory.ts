@@ -25,17 +25,13 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-
-    
+      
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-
-    
+      
 
 
 

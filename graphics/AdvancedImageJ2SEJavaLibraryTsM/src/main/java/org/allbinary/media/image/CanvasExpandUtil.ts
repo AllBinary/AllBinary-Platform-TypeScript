@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

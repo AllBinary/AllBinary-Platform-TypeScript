@@ -22,17 +22,13 @@
 
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { WorkWaypoint } from '../../../../org/allbinary/game/layer/waypoint/WorkWaypoint.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
-
-    
+      
 
 
 

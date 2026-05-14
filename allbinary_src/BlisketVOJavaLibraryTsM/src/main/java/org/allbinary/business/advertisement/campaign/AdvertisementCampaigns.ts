@@ -23,17 +23,13 @@
 
         
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { AdvertisementInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementInterface.js';
-
-    
+      
 import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
-
-    
+      
 import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
-
-    
+      
 
 
 

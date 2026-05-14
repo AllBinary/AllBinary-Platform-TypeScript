@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { UserRole } from '../../../../org/allbinary/business/user/role/UserRole.js';
-
-    
+      
 import { UserRoleB } from '../../../../org/allbinary/business/user/role/UserRoleB.js';
-
-    
+      
 import { UserRoleData } from '../../../../org/allbinary/business/user/role/UserRoleData.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 
 
 

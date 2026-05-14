@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { BasicEventHandler } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-
-    
+      
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
-
-    
+      
 import { ImageComparisonResultsEvent } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsEvent.js';
-
-    
+      
 import { ImageComparisonResultsListener } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResultsListener.js';
-
-    
+      
 import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

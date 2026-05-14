@@ -23,8 +23,7 @@
 
         
 import { AllBinaryLayerCircularPool } from '../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-
-    
+      
 
 
 

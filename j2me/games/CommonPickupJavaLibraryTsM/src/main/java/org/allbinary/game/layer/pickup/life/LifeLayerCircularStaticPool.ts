@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Life } from '../../../../../../org/allbinary/game/life/Life.js';
-
-    
+      
 import { LifeInterfaceCompositeInterface } from '../../../../../../org/allbinary/game/life/LifeInterfaceCompositeInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerCircularPool } from '../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-
-    
+      
 import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-
-    
+      
 
 
 

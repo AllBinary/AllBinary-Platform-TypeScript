@@ -27,80 +27,55 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { BasicItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { BasicItemValidation } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemValidation.js';
-
-    
+      
 import { DownloadItemData } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadItemData.js';
-
-    
+      
 import { DownloadableItem } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
-
-    
+      
 import { DownloadableItemValidation } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItemValidation.js';
-
-    
+      
 import { MoneyException } from '../../../../org/allbinary/business/user/commerce/money/MoneyException.js';
-
-    
+      
 import { InventoryEntity } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
-
-    
+      
 import { InventoryEntityFactory } from '../../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-
-    
+      
 import { GLOBALS2 } from '../../../../org/allbinary/globals/GLOBALS2.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { HttpFileUploadUtil } from '../../../../org/allbinary/logic/communication/http/file/upload/HttpFileUploadUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { AbFile } from '../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { FileData } from '../../../../org/allbinary/logic/io/file/FileData.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { FileItem } from '../../../../org/apache/commons/fileupload/FileItem.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 
@@ -432,6 +407,7 @@ hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
                         
                                     {
                                     hashMap!.put(DownloadItemData.LICENSE_FILE, 
+
                                     (licenseObject as FileItem).getName());
     
 
@@ -454,6 +430,7 @@ hashMap!.put(BasicItemData.ID, this.itemInterface!.getId());
                         
                                     {
                                     hashMap!.put(DownloadItemData.FILE, 
+
                                     (fileObject as FileItem).getName());
     
 

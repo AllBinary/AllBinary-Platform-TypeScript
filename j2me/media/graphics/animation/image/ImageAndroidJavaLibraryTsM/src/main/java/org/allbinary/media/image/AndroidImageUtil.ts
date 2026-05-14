@@ -25,26 +25,19 @@
 
         
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-
-    
+      
 import { Canvas } from '../../../../android/graphics/Canvas.js';
-
-    
+      
 import { Color } from '../../../../android/graphics/Color.js';
-
-    
+      
 import { Matrix } from '../../../../android/graphics/Matrix.js';
-
-    
+      
 import { Paint } from '../../../../android/graphics/Paint.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-
-    
+      
 
 
 

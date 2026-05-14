@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics2D } from '../../../../java/awt/Graphics2D.js';
-
-    
+      
 import { AffineTransform } from '../../../../java/awt/geom/AffineTransform.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-
-    
+      
 
 
 

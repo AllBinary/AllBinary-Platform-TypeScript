@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { J2MEUtil } from '../../../../org/allbinary/J2MEUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

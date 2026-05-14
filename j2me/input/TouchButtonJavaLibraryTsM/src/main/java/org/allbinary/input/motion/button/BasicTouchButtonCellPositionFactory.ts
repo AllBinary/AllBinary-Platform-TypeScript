@@ -23,17 +23,13 @@
 
         
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellPositionFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

@@ -23,11 +23,9 @@
 
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-
-    
+      
 
 
 

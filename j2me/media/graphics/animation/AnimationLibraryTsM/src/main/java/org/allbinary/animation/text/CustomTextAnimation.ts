@@ -25,20 +25,15 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { FontDebugFactory } from '../../../../org/allbinary/graphics/font/FontDebugFactory.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

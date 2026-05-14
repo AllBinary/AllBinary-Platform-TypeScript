@@ -27,20 +27,15 @@
             import { RuntimeException } from '../../../../../../../java/lang/RuntimeException.js';
         
 import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

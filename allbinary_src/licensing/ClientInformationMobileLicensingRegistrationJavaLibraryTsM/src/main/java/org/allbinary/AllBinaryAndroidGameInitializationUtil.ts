@@ -25,14 +25,11 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { LicenseInitInfoUtil } from '../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-
-    
+      
 import { ResourceUtil } from '../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { PartnerIdentifierFileUtil } from '../../org/allbinary/logic/system/security/licensing/PartnerIdentifierFileUtil.js';
-
-    
+      
 
 
 

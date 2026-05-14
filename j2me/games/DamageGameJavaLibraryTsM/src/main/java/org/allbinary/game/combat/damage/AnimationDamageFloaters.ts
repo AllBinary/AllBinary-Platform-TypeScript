@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { CanvasStrings } from '../../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

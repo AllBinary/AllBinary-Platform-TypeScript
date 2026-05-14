@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ValidationInterface } from '../../../../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-
-    
+      
 import { StyleData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StyleData.js';
-
-    
+      
 import { StylesData } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/StylesData.js';
-
-    
+      
 import { ColorsView } from '../../../../../../../../../../../../org/allbinary/logic/visual/dhtml/style/color/ColorsView.js';
-
-    
+      
 import { Document } from '../../../../../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

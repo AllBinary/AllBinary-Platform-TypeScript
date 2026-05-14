@@ -23,20 +23,15 @@
 
         
 import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
-
-    
+      
 import { CompleteMotionGestureInputEventListenerInterface } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 
 
 

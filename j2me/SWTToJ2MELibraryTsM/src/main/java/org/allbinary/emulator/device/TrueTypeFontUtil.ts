@@ -27,65 +27,45 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-
-    
+      
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-
-    
+      
 import { ImageLoader } from '../../../../org/eclipse/swt/graphics/ImageLoader.js';
-
-    
+      
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-
-    
+      
 import { AvianUtil } from '../../../../org/allbinary/AvianUtil.js';
-
-    
+      
 import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-
-    
+      
 import { OpenGLCapabilities } from '../../../../org/allbinary/graphics/opengles/OpenGLCapabilities.js';
-
-    
+      
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-
-    
+      
 import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

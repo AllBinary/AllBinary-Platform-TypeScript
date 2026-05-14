@@ -25,26 +25,19 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { Method } from '../../java/lang/reflect/Method.js';
-
-    
+      
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-
-    
+      
 import { BasicTextEmailHelperFactory } from '../../admin/taghelpers/BasicTextEmailHelperFactory.js';
-
-    
+      
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CustomTagSupport } from '../../tags/CustomTagSupport.js';
-
-    
+      
 
 
 

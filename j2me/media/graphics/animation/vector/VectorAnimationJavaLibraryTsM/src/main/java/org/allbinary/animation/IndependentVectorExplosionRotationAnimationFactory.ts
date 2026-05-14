@@ -25,14 +25,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
-
-    
+      
 
 
 

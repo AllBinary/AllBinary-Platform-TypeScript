@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

@@ -27,20 +27,15 @@
             import { Runnable } from '../../../java/lang/Runnable.js';
         
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ClientInformationFactory } from '../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-
-    
+      
 import { PrimaryThreadPool } from '../../../org/allbinary/thread/PrimaryThreadPool.js';
-
-    
+      
 import { ThreadPool } from '../../../org/allbinary/thread/ThreadPool.js';
-
-    
+      
 
 
 

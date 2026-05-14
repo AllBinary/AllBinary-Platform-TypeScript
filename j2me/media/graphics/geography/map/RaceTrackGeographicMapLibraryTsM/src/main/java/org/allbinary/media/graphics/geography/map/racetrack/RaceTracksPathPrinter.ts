@@ -25,17 +25,13 @@
             import { System } from '../../../../../../../java/lang/System.js';
         
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 
 
 

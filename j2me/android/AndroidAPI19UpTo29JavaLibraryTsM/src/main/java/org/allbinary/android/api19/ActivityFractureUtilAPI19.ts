@@ -23,14 +23,11 @@
 
         
 import { Activity } from '../../../../android/app/Activity.js';
-
-    
+      
 import { View } from '../../../../android/view/View.js';
-
-    
+      
 import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
-
-    
+      
 
 
 
@@ -53,14 +50,14 @@ import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5
 export class ActivityFractureUtilAPI19 extends ActivityFractureUtilAPI5 {
         
 
-    private static readonly instance: ActivityFractureUtilAPI19 = new ActivityFractureUtilAPI19();
+    private static readonly instance19: ActivityFractureUtilAPI19 = new ActivityFractureUtilAPI19();
 
     public static getInstance(): ActivityFractureUtilAPI19{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ActivityFractureUtilAPI19.instance;
+                        return ActivityFractureUtilAPI19.instance19;
     
 }
 

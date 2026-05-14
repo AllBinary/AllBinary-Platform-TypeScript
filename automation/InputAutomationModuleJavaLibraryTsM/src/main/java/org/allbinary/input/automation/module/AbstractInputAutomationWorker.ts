@@ -29,29 +29,21 @@
             import { Thread } from '../../../../../java/lang/Thread.js';
         
 import { CaptureWorkerInterface } from '../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
-
-    
+      
 import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

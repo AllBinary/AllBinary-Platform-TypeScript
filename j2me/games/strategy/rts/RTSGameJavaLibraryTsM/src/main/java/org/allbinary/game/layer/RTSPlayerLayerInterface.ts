@@ -23,29 +23,21 @@
 
         
 import { BuildMenuCompositeInterface } from '../../../../org/allbinary/game/input/BuildMenuCompositeInterface.js';
-
-    
+      
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
-
-    
+      
 import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
-
-    
+      
 import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
-
-    
+      
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
-
-    
+      
 import { GameNotificationHudCompositeInterface } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHudCompositeInterface.js';
-
-    
+      
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
-
-    
+      
 import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
-
-    
+      
 
 
 

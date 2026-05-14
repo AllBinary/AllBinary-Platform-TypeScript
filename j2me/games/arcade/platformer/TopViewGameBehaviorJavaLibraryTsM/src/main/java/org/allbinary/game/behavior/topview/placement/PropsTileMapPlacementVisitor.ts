@@ -23,20 +23,15 @@
 
         
 import { MyRandomFactory } from '../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { TileLayer } from '../../../../../../org/mapeditor/core/TileLayer.js';
-
-    
+      
 import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
-
-    
+      
 
 
 

@@ -27,26 +27,19 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-
-    
+      
 import { PointHelper } from '../../../../../org/allbinary/input/automation/PointHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

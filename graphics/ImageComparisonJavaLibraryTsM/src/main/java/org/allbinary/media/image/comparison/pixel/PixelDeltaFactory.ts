@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-
-    
+      
 import { CacheInterfaceFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheInterfaceFactory.js';
-
-    
+      
 import { CachePolicyFactory } from '../../../../../../org/allbinary/logic/util/cache/CachePolicyFactory.js';
-
-    
+      
 import { CacheTypeFactory } from '../../../../../../org/allbinary/logic/util/cache/CacheTypeFactory.js';
-
-    
+      
 import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
-
-    
+      
 import { ColorDeltaFactory } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDeltaFactory.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

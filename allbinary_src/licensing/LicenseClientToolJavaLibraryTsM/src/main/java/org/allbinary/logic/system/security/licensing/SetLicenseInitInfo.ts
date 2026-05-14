@@ -27,35 +27,25 @@
             import { System } from '../../../../../../java/lang/System.js';
         
 import { BufferedReader } from '../../../../../../java/io/BufferedReader.js';
-
-    
+      
 import { InputStreamReader } from '../../../../../../java/io/InputStreamReader.js';
-
-    
+      
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
-
-    
+      
 import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-
-    
+      
 import { FileFactory } from '../../../../../../org/allbinary/logic/io/file/FileFactory.js';
-
-    
+      
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-
-    
+      
 import { File } from '../../../../../../java/io/File.js';
-
-    
+      
 import { FileReader } from '../../../../../../java/io/FileReader.js';
-
-    
+      
 import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

@@ -27,23 +27,17 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { UserDbInitInfo } from '../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 
@@ -106,7 +100,8 @@ keysAndValues!.put(this.NAME, name);
     
 
                         if(
-                                    (get as String).localeCompare(name) != 0)
+
+                                    (get as string).localeCompare(name) != 0)
                         
                                     {
                                     

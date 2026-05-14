@@ -25,8 +25,7 @@
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
 import { TableMappingInterface } from '../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-
-    
+      
 
 
 
@@ -45,7 +44,7 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //import org.allbinary.business.user.commerce.money.Money;
 export interface StoreFrontUsersStatisticsInterface extends TableMappingInterface {
         
 

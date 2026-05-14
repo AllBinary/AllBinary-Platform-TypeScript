@@ -27,47 +27,33 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { ArtificialIntelligenceTransitionInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceTransitionInterface.js';
-
-    
+      
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { RotationAnimationInterface } from '../../../../org/allbinary/animation/RotationAnimationInterface.js';
-
-    
+      
 import { RotationAnimationInterfaceCompositeInterface } from '../../../../org/allbinary/animation/RotationAnimationInterfaceCompositeInterface.js';
-
-    
+      
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
-
-    
+      
 import { VelocityInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
-
-    
+      
 import { VelocityInterfaceCompositeInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { AngleIncrementInfo } from '../../../../org/allbinary/math/AngleIncrementInfo.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

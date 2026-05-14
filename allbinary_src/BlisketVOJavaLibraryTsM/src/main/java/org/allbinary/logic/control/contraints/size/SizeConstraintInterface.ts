@@ -23,8 +23,7 @@
 
         
 import { MinMaxIntConstraintInterface } from '../../../../../../org/allbinary/logic/control/contraints/MinMaxIntConstraintInterface.js';
-
-    
+      
 
 
 

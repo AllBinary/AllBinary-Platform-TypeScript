@@ -27,29 +27,21 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-
-    
+      
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

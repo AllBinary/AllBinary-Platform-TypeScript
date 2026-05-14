@@ -23,23 +23,17 @@
 
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { NullPathFindingLayer } from '../../../../../org/allbinary/game/layer/NullPathFindingLayer.js';
-
-    
+      
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-
-    
+      
 import { RTSLayer } from '../../../../../org/allbinary/game/layer/RTSLayer.js';
-
-    
+      
 import { SelectionHudPaintable } from '../../../../../org/allbinary/game/layer/SelectionHudPaintable.js';
-
-    
+      
 import { KeyValueDrawString } from '../../../../../org/allbinary/graphics/draw/KeyValueDrawString.js';
-
-    
+      
 
 
 

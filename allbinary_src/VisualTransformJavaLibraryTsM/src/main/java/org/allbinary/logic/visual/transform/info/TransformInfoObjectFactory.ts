@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { LicensingException } from '../../../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 import { TransformInterface } from '../../../../../../org/allbinary/logic/visual/transform/TransformInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

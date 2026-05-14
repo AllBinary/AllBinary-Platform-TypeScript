@@ -23,26 +23,19 @@
 
         
 import { Direction } from '../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { DirectionUtil } from '../../../org/allbinary/direction/DirectionUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { Angle } from '../../../org/allbinary/math/Angle.js';
-
-    
+      
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { FrameUtil } from '../../../org/allbinary/math/FrameUtil.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

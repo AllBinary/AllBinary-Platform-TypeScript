@@ -25,62 +25,43 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
-
-    
+      
 import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
-
-    
+      
 import { Password } from '../../org/allbinary/business/user/password/Password.js';
-
-    
+      
 import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
-
-    
+      
 import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
-
-    
+      
 import { UserEntityInterface } from '../../org/allbinary/data/tables/user/UserEntityInterface.js';
-
-    
+      
 import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
-
-    
+      
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-
-    
+      
 import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
-
-    
+      
 import { WeblisketSessionInterface } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionInterface.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { NewPasswordEmail } from '../../org/allbinary/logic/communication/smtp/email/NewPasswordEmail.js';
-
-    
+      
 import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 
 
 

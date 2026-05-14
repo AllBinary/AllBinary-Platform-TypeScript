@@ -23,11 +23,9 @@
 
         
 import { FullScreenPaintable } from '../../../../../org/allbinary/game/paint/FullScreenPaintable.js';
-
-    
+      
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 
 
 

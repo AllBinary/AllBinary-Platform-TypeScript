@@ -23,8 +23,7 @@
 
         
 import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
-
-    
+      
 
 
 

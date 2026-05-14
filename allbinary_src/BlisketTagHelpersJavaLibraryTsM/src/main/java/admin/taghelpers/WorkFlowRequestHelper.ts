@@ -25,35 +25,25 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { WorkFlowEntityFactory } from '../../org/allbinary/data/tables/workflow/WorkFlowEntityFactory.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { NewWorkFlowFactory } from '../../org/allbinary/logic/control/workflow/NewWorkFlowFactory.js';
-
-    
+      
 import { WorkFlowData } from '../../org/allbinary/logic/control/workflow/WorkFlowData.js';
-
-    
+      
 import { WorkFlowInterface } from '../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
-
-    
+      
 import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 
 
 

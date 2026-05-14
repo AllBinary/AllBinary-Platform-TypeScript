@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Method } from '../../../../java/lang/reflect/Method.js';
-
-    
+      
 import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-
-    
+      
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 
 
 

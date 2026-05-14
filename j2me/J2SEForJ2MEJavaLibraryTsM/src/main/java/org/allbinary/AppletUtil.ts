@@ -40,7 +40,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //import org.allbinary.logic.communication.log.PreLogUtil;
 export class AppletUtil
             extends Object
          {

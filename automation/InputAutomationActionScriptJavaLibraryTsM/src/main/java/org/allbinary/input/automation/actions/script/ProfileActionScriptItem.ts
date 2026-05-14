@@ -29,26 +29,19 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { ActionEvent } from '../../../../../../java/awt/event/ActionEvent.js';
-
-    
+      
 import { ActionListener } from '../../../../../../java/awt/event/ActionListener.js';
-
-    
+      
 import { swing } from '../../../../../../javax/swing.js';
-
-    
+      
 import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

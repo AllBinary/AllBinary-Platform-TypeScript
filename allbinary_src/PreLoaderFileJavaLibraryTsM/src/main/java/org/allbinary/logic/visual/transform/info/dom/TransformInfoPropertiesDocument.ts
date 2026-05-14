@@ -25,47 +25,33 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { DomDocumentFileHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentFileHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbFile } from '../../../../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-
-    
+      
 import { TransformInfoProperties } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoProperties.js';
-
-    
+      
 import { TransformInfoPropertiesFactory } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoPropertiesFactory.js';
-
-    
+      
 import { TransformInfosData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

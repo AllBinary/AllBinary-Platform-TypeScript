@@ -27,74 +27,51 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { ByteArrayInputStream } from '../../../../java/io/ByteArrayInputStream.js';
-
-    
+      
 import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
-
-    
+      
 import { DataInputStream } from '../../../../java/io/DataInputStream.js';
-
-    
+      
 import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
-
-    
+      
 import { RecordEnumeration } from '../../../../javax/microedition/rms/RecordEnumeration.js';
-
-    
+      
 import { RecordStore } from '../../../../javax/microedition/rms/RecordStore.js';
-
-    
+      
 import { RecordStoreException } from '../../../../javax/microedition/rms/RecordStoreException.js';
-
-    
+      
 import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
-
-    
+      
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { NullRecordComparator } from '../../../../org/allbinary/game/configuration/persistance/NullRecordComparator.js';
-
-    
+      
 import { NullRecordFilter } from '../../../../org/allbinary/game/configuration/persistance/NullRecordFilter.js';
-
-    
+      
 import { NullRecordStore } from '../../../../org/allbinary/game/configuration/persistance/NullRecordStore.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { ExceptionUtil } from '../../../../org/allbinary/logic/java/exception/ExceptionUtil.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { PlatformRecordIdUtil } from '../../../../org/allbinary/persistance/PlatformRecordIdUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

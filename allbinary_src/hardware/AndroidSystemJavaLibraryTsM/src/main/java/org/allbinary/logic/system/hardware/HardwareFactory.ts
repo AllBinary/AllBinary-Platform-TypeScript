@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
-
-    
+      
 import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-
-    
+      
 import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

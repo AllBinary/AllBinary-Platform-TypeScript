@@ -25,14 +25,11 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { ColorFillBasePaintable } from '../../../../../org/allbinary/game/paint/ColorFillBasePaintable.js';
-
-    
+      
 import { ColorFillPaintableFactory } from '../../../../../org/allbinary/game/paint/ColorFillPaintableFactory.js';
-
-    
+      
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 
 
 

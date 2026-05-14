@@ -25,47 +25,33 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { PageData } from '../../../../../../../../org/allbinary/business/page/PageData.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { StoreTransformer } from '../../../../../../../../org/allbinary/logic/visual/transform/StoreTransformer.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { GenericBodyValidation } from '../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/GenericBodyValidation.js';
-
-    
+      
 import { TransformTemplateCustomizerUtil } from '../../../../../../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
-
-    
+      
 import { StringEscapeUtils } from '../../../../../../../../org/apache/commons/lang3/StringEscapeUtils.js';
-
-    
+      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

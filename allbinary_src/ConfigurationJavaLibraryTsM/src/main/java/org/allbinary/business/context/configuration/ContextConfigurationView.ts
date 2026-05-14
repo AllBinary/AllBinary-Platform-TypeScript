@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DomNodeInterface } from '../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { EmailServerConfigurationData } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationData.js';
-
-    
+      
 import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
-
-    
+      
 import { EmailServerConfigurationView } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationView.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

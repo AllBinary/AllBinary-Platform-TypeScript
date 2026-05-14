@@ -25,62 +25,43 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { InputOutputTypeData } from '../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
-
-    
+      
 import { OutputTypeData } from '../../../../../../../org/allbinary/logic/io/OutputTypeData.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { TransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-
-    
+      
 import { TransformInfoDomNode } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNode.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { TransformInfosData } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfosData.js';
-
-    
+      
 import { XslData } from '../../../../../../../org/allbinary/logic/visual/transform/template/XslData.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Attr } from '../../../../../../../org/w3c/dom/Attr.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { NamedNodeMap } from '../../../../../../../org/w3c/dom/NamedNodeMap.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

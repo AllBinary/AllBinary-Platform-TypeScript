@@ -23,17 +23,13 @@
 
         
 import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

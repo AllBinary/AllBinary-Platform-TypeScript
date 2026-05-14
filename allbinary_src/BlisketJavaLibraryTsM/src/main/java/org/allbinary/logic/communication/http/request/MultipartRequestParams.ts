@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { List } from '../../../../../../java/util/List.js';
-
-    
+      
 import { HttpServletRequest } from '../../../../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { AbFileUploadFactory } from '../../../../../../org/allbinary/logic/communication/http/file/upload/AbFileUploadFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { FileItem } from '../../../../../../org/apache/commons/fileupload/FileItem.js';
-
-    
+      
 import { InvalidContentTypeException } from '../../../../../../org/apache/commons/fileupload/FileUploadBase/InvalidContentTypeException.js';
-
-    
+      
 
 
 

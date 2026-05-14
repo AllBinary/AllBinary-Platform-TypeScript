@@ -23,20 +23,15 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Screen } from '../../../../javax/microedition/lcdui/Screen.js';
-
-    
+      
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-
-    
+      
 import { ABCustomItemInterface } from '../../../../org/allbinary/graphics/form/item/ABCustomItemInterface.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 
 
 

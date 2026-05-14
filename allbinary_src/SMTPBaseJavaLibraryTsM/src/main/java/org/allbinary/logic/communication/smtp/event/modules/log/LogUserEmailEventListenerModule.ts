@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { EmailEvent } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
-
-    
+      
 import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
-
-    
+      
 
 
 

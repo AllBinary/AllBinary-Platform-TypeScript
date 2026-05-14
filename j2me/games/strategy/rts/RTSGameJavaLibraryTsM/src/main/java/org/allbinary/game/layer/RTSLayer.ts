@@ -27,137 +27,93 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
-
-    
+      
 import { MultiPlayerGameLayer } from '../../../../org/allbinary/game/multiplayer/layer/MultiPlayerGameLayer.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { NullIndexedAnimationFactory } from '../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
-
-    
+      
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { RotationAnimation } from '../../../../org/allbinary/animation/RotationAnimation.js';
-
-    
+      
 import { CaptionAnimationHelperBase } from '../../../../org/allbinary/animation/caption/CaptionAnimationHelperBase.js';
-
-    
+      
 import { DestroyedLayerProcessor } from '../../../../org/allbinary/game/combat/destroy/DestroyedLayerProcessor.js';
-
-    
+      
 import { Health } from '../../../../org/allbinary/game/health/Health.js';
-
-    
+      
 import { Group } from '../../../../org/allbinary/game/identification/Group.js';
-
-    
+      
 import { GroupFactory } from '../../../../org/allbinary/game/identification/GroupFactory.js';
-
-    
+      
 import { GameInputInterface } from '../../../../org/allbinary/game/input/GameInputInterface.js';
-
-    
+      
 import { GameInputProcessor } from '../../../../org/allbinary/game/input/GameInputProcessor.js';
-
-    
+      
 import { GameInputProcessorUtil } from '../../../../org/allbinary/game/input/GameInputProcessorUtil.js';
-
-    
+      
 import { GameKeyEventSourceInterface } from '../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-
-    
+      
 import { InputFactory } from '../../../../org/allbinary/game/input/InputFactory.js';
-
-    
+      
 import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
-
-    
+      
 import { Waypoint2LogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2LogHelper.js';
-
-    
+      
 import { WaypointLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointLogHelper.js';
-
-    
+      
 import { WaypointRunnableLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableLogHelper.js';
-
-    
+      
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
-
-    
+      
 import { TrackingEvent } from '../../../../org/allbinary/game/tracking/TrackingEvent.js';
-
-    
+      
 import { TileLayerPositionIntoViewPosition } from '../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
+      
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 import { ViewPositionEventHandler } from '../../../../org/allbinary/view/event/ViewPositionEventHandler.js';
-
-    
+      
 import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
-
-    
+      
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

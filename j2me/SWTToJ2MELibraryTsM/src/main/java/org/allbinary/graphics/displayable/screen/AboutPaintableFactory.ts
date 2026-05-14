@@ -23,17 +23,13 @@
 
         
 import { AboutPaintable } from '../../../../../org/allbinary/game/paint/AboutPaintable.js';
-
-    
+      
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-
-    
+      
 import { Paintable } from '../../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../../../java/util/Hashtable.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { SpecialMessageUtil } from '../../../../../../../org/allbinary/canvas/SpecialMessageUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 
 
 

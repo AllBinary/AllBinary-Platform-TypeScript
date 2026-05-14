@@ -23,17 +23,13 @@
 
         
 import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
-
-    
+      
 import { VirtualKeyboardAPI1 } from '../../../../org/allbinary/android/input/api1/VirtualKeyboardAPI1.js';
-
-    
+      
 import { VirtualKeyboardAPI3 } from '../../../../org/allbinary/android/input/api3/VirtualKeyboardAPI3.js';
-
-    
+      
 import { Activity } from '../../../../android/app/Activity.js';
-
-    
+      
 
 
 

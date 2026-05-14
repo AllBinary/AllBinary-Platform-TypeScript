@@ -23,8 +23,7 @@
 
         
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-
-    
+      
 
 
 

@@ -23,8 +23,7 @@
 
         
 import { ColorCompositeInterface } from '../../../org/allbinary/graphics/color/ColorCompositeInterface.js';
-
-    
+      
 
 
 

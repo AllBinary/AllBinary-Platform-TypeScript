@@ -25,50 +25,35 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { CategoryFactoryInterface } from '../../../../../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-
-    
+      
 import { CategoryInterface } from '../../../../../../../../../org/allbinary/business/category/CategoryInterface.js';
-
-    
+      
 import { StoreThemeCategoryFactory } from '../../../../../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryFactory.js';
-
-    
+      
 import { StoreThemeCategoryInterface } from '../../../../../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryInterface.js';
-
-    
+      
 import { StoreThemeCategoryPathValidationView } from '../../../../../../../../../org/allbinary/business/category/store/theme/StoreThemeCategoryPathValidationView.js';
-
-    
+      
 import { CategoryLoaderFactory } from '../../../../../../../../../org/allbinary/data/tree/category/CategoryLoaderFactory.js';
-
-    
+      
 import { CategoryLoaderInterface } from '../../../../../../../../../org/allbinary/data/tree/category/CategoryLoaderInterface.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

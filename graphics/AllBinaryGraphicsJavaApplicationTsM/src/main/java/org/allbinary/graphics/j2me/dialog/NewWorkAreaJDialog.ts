@@ -27,29 +27,21 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { ActionEvent } from '../../../../../java/awt/event/ActionEvent.js';
-
-    
+      
 import { ActionListener } from '../../../../../java/awt/event/ActionListener.js';
-
-    
+      
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { GraphicsException } from '../../../../../org/allbinary/graphics/j2me/GraphicsException.js';
-
-    
+      
 import { MyFrame } from '../../../../../org/allbinary/graphics/j2me/MyFrame.js';
-
-    
+      
 import { WorkAreaJPanel } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
-
-    
+      
 import { WorkAreaJPanelInterface } from '../../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
-
-    
+      
 
 
 

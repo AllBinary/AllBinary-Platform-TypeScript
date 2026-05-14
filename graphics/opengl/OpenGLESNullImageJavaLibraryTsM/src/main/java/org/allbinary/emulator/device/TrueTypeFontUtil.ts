@@ -25,17 +25,13 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 
 
 

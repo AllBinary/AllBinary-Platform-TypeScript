@@ -23,35 +23,25 @@
 
         
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { DirectionUtil } from '../../../../../org/allbinary/direction/DirectionUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
-
-    
+      
 import { AxisMathVectorUtil } from '../../../../../org/allbinary/logic/math/vector/AxisMathVectorUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Angle } from '../../../../../org/allbinary/math/Angle.js';
-
-    
+      
 import { PositionStrings } from '../../../../../org/allbinary/math/PositionStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

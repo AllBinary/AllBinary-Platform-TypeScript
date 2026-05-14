@@ -23,17 +23,13 @@
 
         
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-
-    
+      
 import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
-
-    
+      
 import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
-
-    
+      
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 
 
 

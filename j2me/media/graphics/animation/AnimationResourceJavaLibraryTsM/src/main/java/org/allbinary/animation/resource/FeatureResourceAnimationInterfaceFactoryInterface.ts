@@ -23,14 +23,11 @@
 
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { GameFeatureControlledInterface } from '../../../../org/allbinary/game/configuration/feature/GameFeatureControlledInterface.js';
-
-    
+      
 import { RectangleResourceFactoryInterface } from '../../../../org/allbinary/game/resource/RectangleResourceFactoryInterface.js';
-
-    
+      
 
 
 

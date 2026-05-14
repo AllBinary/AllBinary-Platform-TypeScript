@@ -23,14 +23,11 @@
 
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 
 
 

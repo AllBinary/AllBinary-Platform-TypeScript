@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-
-    
+      
 import { PaymentType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentType.js';
-
-    
+      
 import { PaymentTypeUtil } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

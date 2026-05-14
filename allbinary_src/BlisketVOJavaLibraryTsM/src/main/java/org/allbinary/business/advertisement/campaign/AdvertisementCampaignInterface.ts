@@ -23,11 +23,9 @@
 
         
 import { AdvertisementsInterface } from '../../../../../org/allbinary/business/advertisement/AdvertisementsInterface.js';
-
-    
+      
 import { AdvertisementSearchInterface } from '../../../../../org/allbinary/business/advertisement/search/AdvertisementSearchInterface.js';
-
-    
+      
 
 
 

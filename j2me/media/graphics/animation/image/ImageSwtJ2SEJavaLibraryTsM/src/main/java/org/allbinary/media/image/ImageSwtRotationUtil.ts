@@ -23,26 +23,19 @@
 
         
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-
-    
+      
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-
-    
+      
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-
-    
+      
 
 
 

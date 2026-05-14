@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ScreenCaptureImagesWorker } from '../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
-
-    
+      
 import { ImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
-
-    
+      
 import { SaveImageComparisonWorker } from '../../../../../org/allbinary/media/image/comparison/SaveImageComparisonWorker.js';
-
-    
+      
 import { MotionRectanglesWorker } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
-
-    
+      
 import { SaveMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/SaveMotionRectanglesResultsWorker.js';
-
-    
+      
 import { TestInputForMotionRectanglesResultsWorker } from '../../../../../org/allbinary/media/image/comparison/motion/TestInputForMotionRectanglesResultsWorker.js';
-
-    
+      
 
 
 

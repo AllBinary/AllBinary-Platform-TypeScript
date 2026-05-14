@@ -25,38 +25,27 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { DynamicObjectData } from '../../../org/allbinary/business/DynamicObjectData.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { NewWorkFlowFactory } from '../../../org/allbinary/logic/control/workflow/NewWorkFlowFactory.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

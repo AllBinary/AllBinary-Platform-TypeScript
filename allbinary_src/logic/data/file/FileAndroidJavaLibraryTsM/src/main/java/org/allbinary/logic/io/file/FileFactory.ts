@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { File } from '../../../../../java/io/File.js';
-
-    
+      
 import { FileNotFoundException } from '../../../../../java/io/FileNotFoundException.js';
-
-    
+      
 import { Context } from '../../../../../android/content/Context.js';
-
-    
+      
 import { ResourceUtil } from '../../../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 
 
 

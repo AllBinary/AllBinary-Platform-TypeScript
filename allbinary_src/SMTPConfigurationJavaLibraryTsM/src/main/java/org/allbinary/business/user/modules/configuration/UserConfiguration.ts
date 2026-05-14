@@ -23,23 +23,17 @@
 
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
-
-    
+      
 import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
-
-    
+      
 import { UserEmailConfiguration } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfiguration.js';
-
-    
+      
 import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
-
-    
+      
 
 
 

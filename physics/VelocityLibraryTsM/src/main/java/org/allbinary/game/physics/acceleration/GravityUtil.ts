@@ -23,8 +23,7 @@
 
         
 import { BasicVelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
-
-    
+      
 
 
 

@@ -25,17 +25,13 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { GPoint } from '../../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { ImageComparatorConstraints } from '../../../../../../../org/allbinary/input/automation/module/ImageComparatorConstraints.js';
-
-    
+      
 
 
 

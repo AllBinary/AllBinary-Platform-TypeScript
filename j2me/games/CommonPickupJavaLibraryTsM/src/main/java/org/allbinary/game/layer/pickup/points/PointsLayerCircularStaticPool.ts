@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { ScoreableInterface } from '../../../../../../org/allbinary/game/score/ScoreableInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerCircularPool } from '../../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-
-    
+      
 import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/layer/AllBinaryLayerFactoryInterface.js';
-
-    
+      
 
 
 

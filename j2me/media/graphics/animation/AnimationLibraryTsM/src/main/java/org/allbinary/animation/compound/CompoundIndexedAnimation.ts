@@ -25,26 +25,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { PrimitiveIntUtil } from '../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

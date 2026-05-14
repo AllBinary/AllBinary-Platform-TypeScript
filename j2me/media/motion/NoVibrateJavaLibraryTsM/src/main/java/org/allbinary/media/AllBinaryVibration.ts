@@ -23,8 +23,7 @@
 
         
 import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-
-    
+      
 
 
 

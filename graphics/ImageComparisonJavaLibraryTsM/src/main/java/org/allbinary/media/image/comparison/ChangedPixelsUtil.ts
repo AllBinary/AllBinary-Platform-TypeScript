@@ -27,29 +27,21 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { PoolInterface } from '../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-
-    
+      
 import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
-
-    
+      
 import { BufferedImageInfo } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
-
-    
+      
 import { BufferedImageInfoFactory } from '../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
-
-    
+      
 import { BufferedImagePoolSingleton } from '../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
-
-    
+      
 import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
-
-    
+      
 
 
 

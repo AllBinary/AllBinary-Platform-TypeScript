@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Enumeration } from '../../../../../java/util/Enumeration.js';
-
-    
+      
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
-
-    
+      
 import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
-
-    
+      
 
 
 

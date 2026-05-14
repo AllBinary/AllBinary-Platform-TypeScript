@@ -23,11 +23,9 @@
 
         
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 
 
 

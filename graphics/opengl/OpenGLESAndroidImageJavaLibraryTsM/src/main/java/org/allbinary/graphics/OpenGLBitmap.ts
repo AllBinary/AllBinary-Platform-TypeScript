@@ -9,11 +9,9 @@
 
         
 import { Bitmap } from '../../../android/graphics/Bitmap.js';
-
-    
+      
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-
-    
+      
 
 
 

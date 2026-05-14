@@ -27,14 +27,11 @@
             import { Long } from '../../../../../../../java/lang/Long.js';
         
 import { ProfileActionScriptItemInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
-
-    
+      
 import { ProfileActionScriptNodeInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
-
-    
+      
 import { ProfileActionScriptProcessorInterface } from '../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
-
-    
+      
 
 
 

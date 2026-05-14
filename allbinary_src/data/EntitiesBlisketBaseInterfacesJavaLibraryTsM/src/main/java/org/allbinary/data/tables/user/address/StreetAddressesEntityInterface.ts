@@ -25,11 +25,9 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { StreetAddress } from '../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-
-    
+      
 import { BasicDataTableInterface } from '../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-
-    
+      
 
 
 

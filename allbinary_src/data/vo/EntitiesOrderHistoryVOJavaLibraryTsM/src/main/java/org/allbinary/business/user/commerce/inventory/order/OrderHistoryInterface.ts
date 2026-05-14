@@ -23,14 +23,11 @@
 
         
 import { StreetAddress } from '../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-
-    
+      
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-
-    
+      
 import { Payment } from '../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
-
-    
+      
 
 
 

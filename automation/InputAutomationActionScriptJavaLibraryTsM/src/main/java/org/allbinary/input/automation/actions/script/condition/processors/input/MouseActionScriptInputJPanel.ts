@@ -27,35 +27,25 @@
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
 import { InputEvent } from '../../../../../../../../../java/awt/event/InputEvent.js';
-
-    
+      
 import { swing } from '../../../../../../../../../javax/swing.js';
-
-    
+      
 import { InputRobot } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobot.js';
-
-    
+      
 import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-
-    
+      
 import { TempInputRobotNames } from '../../../../../../../../../org/allbinary/input/automation/robot/TempInputRobotNames.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

@@ -23,26 +23,19 @@
 
         
 import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
-
-    
+      
 import { ServiceFactory } from '../../../../../../org/osgi/framework/ServiceFactory.js';
-
-    
+      
 import { ServiceRegistration } from '../../../../../../org/osgi/framework/ServiceRegistration.js';
-
-    
+      
 import { InputAutomationModuleService } from '../../../../../../bundle/input/automation/module/InputAutomationModuleService.js';
-
-    
+      
 import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

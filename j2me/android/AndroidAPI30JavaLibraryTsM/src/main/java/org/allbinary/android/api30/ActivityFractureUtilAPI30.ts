@@ -23,23 +23,17 @@
 
         
 import { Activity } from '../../../../android/app/Activity.js';
-
-    
+      
 import { Window } from '../../../../android/view/Window.js';
-
-    
+      
 import { WindowCompat } from '../../../../androidx/core/view/WindowCompat.js';
-
-    
+      
 import { WindowInsetsCompat } from '../../../../androidx/core/view/WindowInsetsCompat.js';
-
-    
+      
 import { WindowInsetsControllerCompat } from '../../../../androidx/core/view/WindowInsetsControllerCompat.js';
-
-    
+      
 import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5/ActivityFractureUtilAPI5.js';
-
-    
+      
 
 
 
@@ -62,14 +56,14 @@ import { ActivityFractureUtilAPI5 } from '../../../../org/allbinary/android/api5
 export class ActivityFractureUtilAPI30 extends ActivityFractureUtilAPI5 {
         
 
-    private static readonly instance: ActivityFractureUtilAPI30 = new ActivityFractureUtilAPI30();
+    private static readonly instance30: ActivityFractureUtilAPI30 = new ActivityFractureUtilAPI30();
 
     public static getInstance(): ActivityFractureUtilAPI30{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ActivityFractureUtilAPI30.instance;
+                        return ActivityFractureUtilAPI30.instance30;
     
 }
 

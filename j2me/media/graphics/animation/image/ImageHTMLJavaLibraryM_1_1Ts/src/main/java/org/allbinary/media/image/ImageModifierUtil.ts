@@ -27,41 +27,29 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { PlaynImage } from '../../../../org/microemu/device/playn/PlaynImage.js';
-
-    
+      
 import { ResourceCallbackStrings } from '../../../../org/microemu/device/ResourceCallbackStrings.js';
-
-    
+      
 import { Canvas } from '../../../../playn/core/Canvas.js';
-
-    
+      
 import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-
-    
+      
 import { ResourceCallback } from '../../../../playn/core/ResourceCallback.js';
-
-    
+      
 
 
 
@@ -172,6 +160,7 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
     
 
     var originalPlaynImage: playn.core.Image = 
+
                                     (originalImage as PlaynImage).getImage() as playn.core.Image;
 ;
     
@@ -258,6 +247,7 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
     //var image = image
 
     var image3: playn.core.Image = 
+
                                     (image as PlaynImage).getImage() as playn.core.Image;
 ;
     

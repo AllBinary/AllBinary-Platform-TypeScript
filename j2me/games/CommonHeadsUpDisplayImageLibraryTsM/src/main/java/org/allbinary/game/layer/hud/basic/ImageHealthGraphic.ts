@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { AnimationInterface } from '../../../../../../org/allbinary/animation/AnimationInterface.js';
-
-    
+      
 import { HealthInterface } from '../../../../../../org/allbinary/game/health/HealthInterface.js';
-
-    
+      
 import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCacheFactory.js';
-
-    
+      
 
 
 

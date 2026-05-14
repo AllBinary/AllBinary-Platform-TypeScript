@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Layer } from '../../../../../../org/allbinary/layer/Layer.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

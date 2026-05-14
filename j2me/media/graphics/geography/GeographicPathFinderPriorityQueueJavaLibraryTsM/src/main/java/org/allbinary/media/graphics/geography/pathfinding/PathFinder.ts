@@ -27,50 +27,35 @@
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
 import { HashSet } from '../../../../../../java/util/HashSet.js';
-
-    
+      
 import { PriorityQueue } from '../../../../../../java/util/PriorityQueue.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { NullUtil } from '../../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { MathUtil } from '../../../../../../org/allbinary/logic/math/MathUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { GeographicMapCellType } from '../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
-
-    
+      
 import { RaceTrackGeographicMapCellType } from '../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMapCellType.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

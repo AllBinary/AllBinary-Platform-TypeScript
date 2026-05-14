@@ -25,38 +25,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
-
-    
+      
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
-
-    
+      
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPosition.js';
-
-    
+      
 
 
 

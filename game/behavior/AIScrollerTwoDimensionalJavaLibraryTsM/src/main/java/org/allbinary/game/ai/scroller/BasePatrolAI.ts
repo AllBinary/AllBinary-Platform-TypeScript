@@ -27,32 +27,23 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { BasicAI } from '../../../../../org/allbinary/game/ai/BasicAI.js';
-
-    
+      
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { BasicVelocityProperties } from '../../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
-
-    
+      
 import { VelocityInterfaceCompositeInterface } from '../../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { MathUtil } from '../../../../../org/allbinary/logic/math/MathUtil.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 
 
 

@@ -25,11 +25,9 @@
 
         
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/log/LogFormatUtil.js';
-
-    
+      
 
 
 

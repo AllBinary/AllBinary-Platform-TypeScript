@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-
-    
+      
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
-
-    
+      
 import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
-
-    
+      
 import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { RectangleCollisionPointUtil } from '../../../../../../org/allbinary/math/RectangleCollisionPointUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

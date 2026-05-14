@@ -25,29 +25,21 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { ABCustomImageItem } from '../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
-
-    
+      
 import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { PrimitiveLongUtil } from '../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
-
-    
+      
 
 
 

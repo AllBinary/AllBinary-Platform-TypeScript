@@ -25,32 +25,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ABCustomItem } from '../../../../org/allbinary/graphics/form/item/ABCustomItem.js';
-
-    
+      
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { FormTypeFactory } from '../../../../org/allbinary/graphics/form/FormTypeFactory.js';
-
-    
+      
 import { MultipleScrollSelectionHorizontalForm } from '../../../../org/allbinary/graphics/form/MultipleScrollSelectionHorizontalForm.js';
-
-    
+      
 import { CommonButtons } from '../../../../org/allbinary/input/motion/button/CommonButtons.js';
-
-    
+      
 import { TouchButtonLocationHelper } from '../../../../org/allbinary/input/motion/button/TouchButtonLocationHelper.js';
-
-    
+      
 
 
 

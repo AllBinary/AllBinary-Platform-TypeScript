@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { InputOutputTypeData } from '../../../../../../../../org/allbinary/logic/io/InputOutputTypeData.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

@@ -25,20 +25,15 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { TransformInfoHttpFactory } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpFactory.js';
-
-    
+      
 import { TransformInfoHttpInterface } from '../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-
-    
+      
 import { PaymentProcessorComponent } from '../../views/admin/payment/PaymentProcessorComponent.js';
-
-    
+      
 
 
 

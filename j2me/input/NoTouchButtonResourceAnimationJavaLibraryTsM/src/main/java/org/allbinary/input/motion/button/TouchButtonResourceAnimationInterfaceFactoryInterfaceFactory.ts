@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { BaseResourceAnimationInterfaceFactoryInterfaceFactory } from '../../../../../org/allbinary/animation/resource/BaseResourceAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { ResourceLoadingLevelFactory } from '../../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { ImageCache } from '../../../../../org/allbinary/image/ImageCache.js';
-
-    
+      
 import { ImageCacheFactory } from '../../../../../org/allbinary/image/ImageCacheFactory.js';
-
-    
+      
 
 
 

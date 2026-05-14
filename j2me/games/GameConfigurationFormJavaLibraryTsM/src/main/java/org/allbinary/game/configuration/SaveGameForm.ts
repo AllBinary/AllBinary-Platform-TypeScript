@@ -29,20 +29,15 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-
-    
+      
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-
-    
+      
 
 
 

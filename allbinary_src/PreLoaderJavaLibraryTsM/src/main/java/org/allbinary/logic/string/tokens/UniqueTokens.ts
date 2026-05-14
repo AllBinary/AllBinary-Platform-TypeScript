@@ -29,29 +29,21 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { HashSet } from '../../../../../java/util/HashSet.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { AbPathData } from '../../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { Replace } from '../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

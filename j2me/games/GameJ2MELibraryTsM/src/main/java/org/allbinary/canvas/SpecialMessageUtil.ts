@@ -23,20 +23,15 @@
 
         
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { Memory } from '../../../org/allbinary/system/Memory.js';
-
-    
+      
 
 
 

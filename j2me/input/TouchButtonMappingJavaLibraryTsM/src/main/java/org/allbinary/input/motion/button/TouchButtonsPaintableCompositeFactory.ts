@@ -23,14 +23,11 @@
 
         
 import { InputMappingInterface } from '../../../../../org/allbinary/game/input/mapping/InputMappingInterface.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-
-    
+      
 
 
 

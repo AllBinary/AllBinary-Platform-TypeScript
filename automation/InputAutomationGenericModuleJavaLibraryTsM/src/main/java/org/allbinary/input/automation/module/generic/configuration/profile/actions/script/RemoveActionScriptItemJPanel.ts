@@ -23,17 +23,13 @@
 
         
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
-
-    
+      
 import { GenericProfileAction } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
-
-    
+      
 import { GenericProfileActionJPanel } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionJPanel.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

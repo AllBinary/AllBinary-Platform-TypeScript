@@ -25,59 +25,41 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { GameFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFactory.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { OpenGLUtil } from '../../../../org/allbinary/graphics/opengles/OpenGLUtil.js';
-
-    
+      
 import { OpenGLESDeviceImageTranslate } from '../../../../org/allbinary/image/opengles/OpenGLESDeviceImageTranslate.js';
-
-    
+      
 import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 import { OpenGLESImageExclusionUtil } from '../../../../org/allbinary/image/opengles/OpenGLESImageExclusionUtil.js';
-
-    
+      
 import { OpenGLESImageProperties } from '../../../../org/allbinary/image/opengles/OpenGLESImageProperties.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-
-    
+      
 import { SwtDeviceComponent } from '../../../../org/microemu/app/ui/swt/SwtDeviceComponent.js';
-
-    
+      
 import { PostLoadSwtImmutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtImmutableImageProcessor.js';
-
-    
+      
 import { PostLoadSwtMutableImageProcessor } from '../../../../org/microemu/device/swt/PostLoadSwtMutableImageProcessor.js';
-
-    
+      
 import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
-
-    
+      
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-
-    
+      
 
 
 
@@ -717,7 +699,8 @@ image= this.openGLUtil!.add(image);
                                     {
                                     
     var originalImageData: ImageData = 
-                                    (getImage as Image).getImageData()!;
+
+                                    (getImage as org.eclipse.swt.graphics.Image).getImageData()!;
 ;
     
 
@@ -802,7 +785,8 @@ getImage.
     
 
     var originalImageData: ImageData = 
-                                    (getImage as Image).getImageData()!;
+
+                                    (getImage as org.eclipse.swt.graphics.Image).getImageData()!;
 ;
     
 

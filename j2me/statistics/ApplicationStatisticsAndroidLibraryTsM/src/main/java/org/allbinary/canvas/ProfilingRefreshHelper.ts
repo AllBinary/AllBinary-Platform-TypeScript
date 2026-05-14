@@ -27,11 +27,9 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { View } from '../../../android/view/View.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

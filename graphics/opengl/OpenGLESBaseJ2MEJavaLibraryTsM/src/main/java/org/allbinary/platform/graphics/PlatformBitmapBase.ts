@@ -23,11 +23,9 @@
 
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 
 
 

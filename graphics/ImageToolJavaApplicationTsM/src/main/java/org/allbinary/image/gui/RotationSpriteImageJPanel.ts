@@ -29,47 +29,33 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
-
-    
+      
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { ImageJ2SERotationUtil } from '../../../../org/allbinary/media/image/ImageJ2SERotationUtil.js';
-
-    
+      
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-
-    
+      
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-
-    
+      
 import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

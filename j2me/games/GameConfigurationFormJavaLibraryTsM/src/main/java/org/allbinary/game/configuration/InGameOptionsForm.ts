@@ -25,32 +25,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Choice, ChoiceI } from '../../../../javax/microedition/lcdui/Choice.js';
-
-    
+      
 import { Command } from '../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-
-    
+      
 import { GameFeatureFormUtil } from '../../../../org/allbinary/game/configuration/feature/GameFeatureFormUtil.js';
-
-    
+      
 import { InGameFeatureChoiceGroups } from '../../../../org/allbinary/game/configuration/feature/InGameFeatureChoiceGroups.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { CommandForm } from '../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

@@ -25,41 +25,29 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { ContextConfiguration } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfiguration.js';
-
-    
+      
 import { ContextConfigurationData } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationData.js';
-
-    
+      
 import { ContextConfigurationDomDocumentMapping } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationDomDocumentMapping.js';
-
-    
+      
 import { ContextConfigurationInterface } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterface.js';
-
-    
+      
 import { ContextConfigurationInterfaceFactory } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationInterfaceFactory.js';
-
-    
+      
 import { ContextConfigurationPathUtil } from '../../../../../../../org/allbinary/business/context/configuration/ContextConfigurationPathUtil.js';
-
-    
+      
 import { RequestParams } from '../../../../../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CryptFileWriter } from '../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileWriter.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

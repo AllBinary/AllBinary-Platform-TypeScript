@@ -25,11 +25,9 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-
-    
+      
 
 
 
@@ -65,6 +63,7 @@ public constructor (key: any = {}){
 this.key= key;
     
 this.color= new Color(
+
                                     (key as Integer).intValue());
     
 }

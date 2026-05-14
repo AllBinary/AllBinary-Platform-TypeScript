@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { Category } from '../../../../../org/allbinary/business/category/Category.js';
-
-    
+      
 import { CategoryData } from '../../../../../org/allbinary/business/category/CategoryData.js';
-
-    
+      
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-
-    
+      
 import { InventoryDbInitInfo } from '../../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

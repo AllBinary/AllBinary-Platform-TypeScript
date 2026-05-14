@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { File } from '../../../../../../java/io/File.js';
-
-    
+      
 import { FileReader } from '../../../../../../java/io/FileReader.js';
-
-    
+      
 import { LineNumberReader } from '../../../../../../java/io/LineNumberReader.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { LicenseInitInfo } from '../../../../../../org/allbinary/business/init/LicenseInitInfo.js';
-
-    
+      
 import { LicenseInitInfoUtil } from '../../../../../../org/allbinary/business/init/LicenseInitInfoUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { XmlRpcAbeLicenseRetrievalClient } from '../../../../../../org/allbinary/logic/system/security/licensing/client/XmlRpcAbeLicenseRetrievalClient.js';
-
-    
+      
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

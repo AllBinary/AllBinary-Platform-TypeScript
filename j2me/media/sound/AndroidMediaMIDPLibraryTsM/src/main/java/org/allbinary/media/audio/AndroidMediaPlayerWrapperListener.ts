@@ -11,23 +11,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-
-    
+      
 import { MediaPlayer } from '../../../../android/media/MediaPlayer.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

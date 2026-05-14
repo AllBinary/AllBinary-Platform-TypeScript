@@ -25,26 +25,19 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-
-    
+      
 import { LogTableEntity } from '../../org/allbinary/data/tables/log/LogTableEntity.js';
-
-    
+      
 import { LogTableEntityFactory } from '../../org/allbinary/data/tables/log/LogTableEntityFactory.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-
-    
+      
 
 
 

@@ -23,14 +23,11 @@
 
         
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { BasicDecimal } from '../../../../../org/allbinary/logic/math/BasicDecimal.js';
-
-    
+      
 import { Angle } from '../../../../../org/allbinary/math/Angle.js';
-
-    
+      
 
 
 

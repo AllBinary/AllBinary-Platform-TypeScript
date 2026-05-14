@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { MimeMessage } from '../../../../../javax/mail/internet/MimeMessage.js';
-
-    
+      
 import { BasicEmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
-
-    
+      
 import { EmailInfo } from '../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

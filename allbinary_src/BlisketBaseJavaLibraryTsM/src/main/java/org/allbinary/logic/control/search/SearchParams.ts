@@ -27,26 +27,19 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../java/util/Set.js';
-
-    
+      
 import { HttpServletRequest } from '../../../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { ToDomHelper } from '../../../../../org/allbinary/data/tree/dom/ToDomHelper.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

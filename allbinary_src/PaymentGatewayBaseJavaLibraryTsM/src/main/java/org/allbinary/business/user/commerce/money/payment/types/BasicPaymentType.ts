@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { PaymentGatewayData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
-
-    
+      
 import { PaymentGatewayInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterfaceFactoryInterface.js';
-
-    
+      
 import { PaymentGatewayDomNodeFactoryInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/modules/gateway/PaymentGatewayDomNodeFactoryInterface.js';
-
-    
+      
 import { AbPathData } from '../../../../../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { Replace } from '../../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

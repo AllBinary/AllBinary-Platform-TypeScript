@@ -23,11 +23,9 @@
 
         
 import { DisplayInBrowserContraintsInterface } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
-
-    
+      
 import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
-
-    
+      
 
 
 

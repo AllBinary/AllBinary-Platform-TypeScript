@@ -25,11 +25,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 
 
 

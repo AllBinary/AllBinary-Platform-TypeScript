@@ -23,8 +23,7 @@
 
         
 import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
-
-    
+      
 
 
 

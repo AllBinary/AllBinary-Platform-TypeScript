@@ -27,23 +27,17 @@
             import { Runnable } from '../../../../../../java/lang/Runnable.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { NullProgressActivity } from '../../../../../../org/allbinary/android/activity/NullProgressActivity.js';
-
-    
+      
 import { ProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/ProgressActivityInterface.js';
-
-    
+      
 import { SimpleProgressActivityInterface } from '../../../../../../org/allbinary/android/activity/SimpleProgressActivityInterface.js';
-
-    
+      
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

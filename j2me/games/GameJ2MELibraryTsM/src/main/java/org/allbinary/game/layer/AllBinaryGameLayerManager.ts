@@ -25,35 +25,25 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { NullPlayerGameInputComposite } from '../../../../org/allbinary/game/input/NullPlayerGameInputComposite.js';
-
-    
+      
 import { PlayerGameInputCompositeInterface } from '../../../../org/allbinary/game/input/PlayerGameInputCompositeInterface.js';
-
-    
+      
 import { ItemColorFactory } from '../../../../org/allbinary/graphics/ItemColorFactory.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

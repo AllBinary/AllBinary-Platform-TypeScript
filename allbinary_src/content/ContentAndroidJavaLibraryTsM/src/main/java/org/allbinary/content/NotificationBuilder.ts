@@ -25,20 +25,15 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { NullParcelable } from '../../../org/allbinary/android/NullParcelable.js';
-
-    
+      
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { PendingIntent } from '../../../android/app/PendingIntent.js';
-
-    
+      
 import { Context } from '../../../android/content/Context.js';
-
-    
+      
 import { Parcelable } from '../../../android/os/Parcelable.js';
-
-    
+      
 
 
 

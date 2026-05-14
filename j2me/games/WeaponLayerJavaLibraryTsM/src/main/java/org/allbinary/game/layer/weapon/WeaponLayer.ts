@@ -25,65 +25,45 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GL } from '../../../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { IndexedAnimation } from '../../../../../org/allbinary/animation/IndexedAnimation.js';
-
-    
+      
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { CollidableBaseBehavior } from '../../../../../org/allbinary/game/collision/CollidableBaseBehavior.js';
-
-    
+      
 import { DestroyedLayerProcessor } from '../../../../../org/allbinary/game/combat/destroy/DestroyedLayerProcessor.js';
-
-    
+      
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-
-    
+      
 import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
-
-    
+      
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-
-    
+      
 import { MultiPlayerGameLayer } from '../../../../../org/allbinary/game/multiplayer/layer/MultiPlayerGameLayer.js';
-
-    
+      
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-
-    
+      
 import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
-
-    
+      
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-
-    
+      
 import { TickableInterface } from '../../../../../org/allbinary/game/tick/TickableInterface.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { Movement } from '../../../../../org/allbinary/physics/movement/Movement.js';
-
-    
+      
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
-
-    
+      
 import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
-
-    
+      
 import { DOMSource } from '../../../../../../javax/xml/transform/dom/DOMSource.js';
-
-    
+      
 import { StreamResult } from '../../../../../../javax/xml/transform/stream/StreamResult.js';
-
-    
+      
 import { AbDataOutputStream } from '../../../../../../org/allbinary/logic/io/AbDataOutputStream.js';
-
-    
+      
 import { AbFileInputStream } from '../../../../../../org/allbinary/logic/io/AbFileInputStream.js';
-
-    
+      
 import { DataOutputStreamFactory } from '../../../../../../org/allbinary/logic/io/DataOutputStreamFactory.js';
-
-    
+      
 import { StreamUtil } from '../../../../../../org/allbinary/logic/io/StreamUtil.js';
-
-    
+      
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

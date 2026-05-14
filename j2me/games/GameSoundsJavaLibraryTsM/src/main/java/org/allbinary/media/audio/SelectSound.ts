@@ -42,7 +42,7 @@
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompositeSound } from './CompositeSound.js';
 import { Sound } from './Sound.js';
-
+//Use 8hz16bitmono for most J2ME
 export class SelectSound extends CompositeSound {
         
 

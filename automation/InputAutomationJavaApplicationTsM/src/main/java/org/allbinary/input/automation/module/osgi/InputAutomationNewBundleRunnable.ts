@@ -29,71 +29,49 @@
             import { Thread } from '../../../../../../java/lang/Thread.js';
         
 import { File } from '../../../../../../java/io/File.js';
-
-    
+      
 import { FileFilter } from '../../../../../../java/io/FileFilter.js';
-
-    
+      
 import { FileInputStream } from '../../../../../../java/io/FileInputStream.js';
-
-    
+      
 import { URL } from '../../../../../../java/net/URL.js';
-
-    
+      
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../../java/util/Set.js';
-
-    
+      
 import { JarInputStream } from '../../../../../../java/util/jar/JarInputStream.js';
-
-    
+      
 import { Manifest } from '../../../../../../java/util/jar/Manifest.js';
-
-    
+      
 import { Bundle } from '../../../../../../org/osgi/framework/Bundle.js';
-
-    
+      
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
-
-    
+      
 import { Constants } from '../../../../../../org/osgi/framework/Constants.js';
-
-    
+      
 import { InputAutomationBundleActivator } from '../../../../../../bundle/input/automation/InputAutomationBundleActivator.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { FileWrapperUtil } from '../../../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-
-    
+      
 import { SubDirectory } from '../../../../../../org/allbinary/logic/io/file/directory/SubDirectory.js';
-
-    
+      
 import { BasicFileFilterUtil } from '../../../../../../org/allbinary/logic/io/file/filter/BasicFileFilterUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

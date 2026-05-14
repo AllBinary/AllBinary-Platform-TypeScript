@@ -23,11 +23,9 @@
 
         
 import { awt } from '../../../java/awt.js';
-
-    
+      
 import { GPoint } from '../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 
 
 

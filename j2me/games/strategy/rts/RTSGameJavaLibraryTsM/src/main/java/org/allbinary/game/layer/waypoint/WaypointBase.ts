@@ -27,44 +27,31 @@
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-
-    
+      
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
-
-    
+      
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { MultipassState } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/MultipassState.js';
-
-    
+      
 import { PathFindingInfo } from '../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingInfo.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

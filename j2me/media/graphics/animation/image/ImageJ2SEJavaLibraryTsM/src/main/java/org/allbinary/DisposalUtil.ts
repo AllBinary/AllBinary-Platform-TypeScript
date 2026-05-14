@@ -23,11 +23,9 @@
 
         
 import { Image } from '../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Resource } from '../../org/eclipse/swt/graphics/Resource.js';
-
-    
+      
 
 
 

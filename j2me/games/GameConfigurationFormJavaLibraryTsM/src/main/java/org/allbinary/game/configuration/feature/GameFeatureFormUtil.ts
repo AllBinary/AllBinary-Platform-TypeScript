@@ -25,41 +25,29 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
-
-    
+      
 import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-
-    
+      
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
-
-    
+      
 import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
-
-    
+      
 import { CommandForm } from '../../../../../org/allbinary/graphics/displayable/screen/CommandForm.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
-
-    
+      
 
 
 

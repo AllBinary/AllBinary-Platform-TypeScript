@@ -29,32 +29,23 @@
             import { Long } from '../../../../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

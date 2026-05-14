@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { PageContext } from '../../../../../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { AbContext } from '../../../../../../org/allbinary/business/context/AbContext.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { TransformInfoObjectConfigInterface } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

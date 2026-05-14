@@ -25,32 +25,23 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { GameKeyEventListenerInterface } from '../../../../org/allbinary/game/input/event/GameKeyEventListenerInterface.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

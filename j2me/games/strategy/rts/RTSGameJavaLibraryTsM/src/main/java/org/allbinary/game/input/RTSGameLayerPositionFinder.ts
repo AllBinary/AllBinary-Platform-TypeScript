@@ -23,14 +23,11 @@
 
         
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { DropCellPositionHistory } from '../../../../org/allbinary/media/graphics/geography/map/drop/DropCellPositionHistory.js';
-
-    
+      
 
 
 

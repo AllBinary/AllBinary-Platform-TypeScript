@@ -23,23 +23,17 @@
 
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInfo.js';
-
-    
+      
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-
-    
+      
 
 
 

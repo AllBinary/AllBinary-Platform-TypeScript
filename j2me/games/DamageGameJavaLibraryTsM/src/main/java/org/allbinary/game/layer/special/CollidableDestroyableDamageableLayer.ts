@@ -27,74 +27,51 @@
             import { RuntimeException } from '../../../../../java/lang/RuntimeException.js';
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { CollidableNeverCollideBehaviorFactory } from '../../../../../org/allbinary/game/collision/CollidableNeverCollideBehaviorFactory.js';
-
-    
+      
 import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
-
-    
+      
 import { DestroyableInterface } from '../../../../../org/allbinary/game/combat/destroy/DestroyableInterface.js';
-
-    
+      
 import { DestroyedEvent } from '../../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
-
-    
+      
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-
-    
+      
 import { Group } from '../../../../../org/allbinary/game/identification/Group.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-
-    
+      
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
-
-    
+      
 import { PickupBehavior } from '../../../../../org/allbinary/game/layer/pickup/PickupBehavior.js';
-
-    
+      
 import { PickupCompositeInterface } from '../../../../../org/allbinary/game/layer/pickup/PickupCompositeInterface.js';
-
-    
+      
 import { PartInterface } from '../../../../../org/allbinary/game/part/PartInterface.js';
-
-    
+      
 import { PartInterfaceUtil } from '../../../../../org/allbinary/game/part/PartInterfaceUtil.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { RectangleFactory } from '../../../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { PositionStrings } from '../../../../../org/allbinary/math/PositionStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

@@ -23,11 +23,9 @@
 
         
 import { OrderInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderInterface.js';
-
-    
+      
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-
-    
+      
 
 
 

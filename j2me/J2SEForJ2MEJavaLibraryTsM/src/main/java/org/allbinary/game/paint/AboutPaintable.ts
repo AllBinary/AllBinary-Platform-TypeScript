@@ -23,26 +23,19 @@
 
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 
 
 

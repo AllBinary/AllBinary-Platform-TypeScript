@@ -25,20 +25,15 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Font } from '../../../../javax/microedition/lcdui/Font.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { TiledLayer } from '../../../../javax/microedition/lcdui/game/TiledLayer.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

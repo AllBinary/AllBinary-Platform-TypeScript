@@ -23,20 +23,15 @@
 
         
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PaymentGatewayData } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
-
-    
+      
 import { PaymentGatewayPrimaryKey } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayPrimaryKey.js';
-
-    
+      
 import { TransformInfoHttpComposite } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpComposite.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 
 
 

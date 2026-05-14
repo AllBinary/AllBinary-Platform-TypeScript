@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { Line } from '../../../../../org/allbinary/graphics/Line.js';
-
-    
+      
 import { PointFactory } from '../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { MotionGestureConfiguration } from '../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfiguration.js';
-
-    
+      
 import { MotionGestureConfigurationFactory } from '../../../../../org/allbinary/input/motion/gesture/configuration/MotionGestureConfigurationFactory.js';
-
-    
+      
 import { BasicMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/BasicMotionGesturesHandler.js';
-
-    
+      
 import { MotionEventCircularPool } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionEventCircularPool.js';
-
-    
+      
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-
-    
+      
 import { MovedMotionGesturesHandler } from '../../../../../org/allbinary/input/motion/gesture/observer/MovedMotionGesturesHandler.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { J2SEMath } from '../../../../../org/allbinary/logic/math/J2SEMath.js';
-
-    
+      
 import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

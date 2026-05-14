@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
-
-    
+      
 import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { GameKeyEventUtil } from '../../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { SpecialGameInputFactory } from '../../../../../org/allbinary/game/layer/special/SpecialGameInputFactory.js';
-
-    
+      
 import { SpecialGameInputInterface } from '../../../../../org/allbinary/game/layer/special/SpecialGameInputInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

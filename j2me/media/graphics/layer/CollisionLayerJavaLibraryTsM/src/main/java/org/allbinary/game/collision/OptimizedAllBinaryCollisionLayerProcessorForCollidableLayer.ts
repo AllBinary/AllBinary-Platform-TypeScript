@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { LayerManager } from '../../../../org/allbinary/layer/LayerManager.js';
-
-    
+      
 import { LayerProcessor } from '../../../../org/allbinary/layer/LayerProcessor.js';
-
-    
+      
 
 
 

@@ -23,8 +23,7 @@
 
         
 import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalTrigTable.js';
-
-    
+      
 
 
 

@@ -25,20 +25,15 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Direction } from '../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { Angle } from '../../../org/allbinary/math/Angle.js';
-
-    
+      
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 
 
 

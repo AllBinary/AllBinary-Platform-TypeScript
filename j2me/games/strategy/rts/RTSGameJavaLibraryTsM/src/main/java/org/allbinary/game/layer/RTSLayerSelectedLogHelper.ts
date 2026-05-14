@@ -23,38 +23,27 @@
 
         
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { NamedAngle } from '../../../../org/allbinary/math/NamedAngle.js';
-
-    
+      
 import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.js';
-
-    
+      
 import { GeographicMapCellHistory } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellHistory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DomSearchHelper } from '../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { DisplayInBrowserContraints } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraints.js';
-
-    
+      
 import { DisplayInBrowserContraintsInterface } from '../../../../../org/allbinary/logic/control/contraints/display/browser/DisplayInBrowserContraintsInterface.js';
-
-    
+      
 import { TwoDimensionalConstraint } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraint.js';
-
-    
+      
 import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

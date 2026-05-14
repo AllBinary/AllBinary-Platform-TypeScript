@@ -23,11 +23,9 @@
 
         
 import { AnimationInterfaceCompositeInterface } from '../../../../org/allbinary/animation/AnimationInterfaceCompositeInterface.js';
-
-    
+      
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 
 
 

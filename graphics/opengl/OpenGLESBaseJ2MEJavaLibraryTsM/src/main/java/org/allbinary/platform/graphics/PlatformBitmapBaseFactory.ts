@@ -25,8 +25,7 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 
 
 

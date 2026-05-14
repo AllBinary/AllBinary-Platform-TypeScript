@@ -25,35 +25,25 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GL } from '../../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { PlatformBitmapBase } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-
-    
+      
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-
-    
+      
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

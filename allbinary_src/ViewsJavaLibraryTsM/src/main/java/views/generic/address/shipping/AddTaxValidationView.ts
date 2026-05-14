@@ -25,47 +25,33 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../java/util/Vector.js';
-
-    
+      
 import { StoreFrontFactory } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { ShippingAddressData } from '../../../../org/allbinary/business/user/address/ShippingAddressData.js';
-
-    
+      
 import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
-
-    
+      
 import { TaxFactory } from '../../../../org/allbinary/business/user/commerce/money/tax/TaxFactory.js';
-
-    
+      
 import { TaxModuleInterface } from '../../../../org/allbinary/business/user/commerce/money/tax/modules/TaxModuleInterface.js';
-
-    
+      
 import { ShippingAddressesEntity } from '../../../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

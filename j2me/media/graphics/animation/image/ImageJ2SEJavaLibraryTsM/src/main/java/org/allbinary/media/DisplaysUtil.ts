@@ -23,26 +23,19 @@
 
         
 import { Dimension } from '../../../java/awt/Dimension.js';
-
-    
+      
 import { DisplayMode } from '../../../java/awt/DisplayMode.js';
-
-    
+      
 import { GraphicsDevice } from '../../../java/awt/GraphicsDevice.js';
-
-    
+      
 import { GraphicsEnvironment } from '../../../java/awt/GraphicsEnvironment.js';
-
-    
+      
 import { Toolkit } from '../../../java/awt/Toolkit.js';
-
-    
+      
 import { PointFactory } from '../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { Rectangle } from '../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 
 
 

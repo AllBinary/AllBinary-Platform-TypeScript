@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Sprite } from '../../../../../javax/microedition/lcdui/game/Sprite.js';
-
-    
+      
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationBehaviorFactory } from '../../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-
-    
+      
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { BaseImageAnimationFactory } from '../../../../../org/allbinary/animation/image/BaseImageAnimationFactory.js';
-
-    
+      
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
-
-    
+      
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-
-    
+      
 
 
 

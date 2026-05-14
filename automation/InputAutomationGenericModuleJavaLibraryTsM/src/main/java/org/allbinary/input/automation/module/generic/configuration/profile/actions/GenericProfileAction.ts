@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { GenericProfileActionScript } from '../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

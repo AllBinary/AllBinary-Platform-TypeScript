@@ -25,38 +25,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
-
-    
+      
 import { BasicHighScoresGameInfoFactory } from '../../../../org/allbinary/game/BasicHighScoresGameInfoFactory.js';
-
-    
+      
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { GameType } from '../../../../org/allbinary/game/GameType.js';
-
-    
+      
 import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
-
-    
+      
 import { RemoteHighScores } from '../../../../org/allbinary/game/score/remote/RemoteHighScores.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { SecondaryThreadPool } from '../../../../org/allbinary/thread/SecondaryThreadPool.js';
-
-    
+      
 
 
 

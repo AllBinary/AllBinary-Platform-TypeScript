@@ -25,32 +25,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { AnimationBehaviorFactory } from '../../../../org/allbinary/animation/AnimationBehaviorFactory.js';
-
-    
+      
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-
-    
+      
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties.js';
-
-    
+      
 import { ImageToRotationImageArrayUtil } from '../../../../org/allbinary/media/image/ImageToRotationImageArrayUtil.js';
-
-    
+      
 
 
 

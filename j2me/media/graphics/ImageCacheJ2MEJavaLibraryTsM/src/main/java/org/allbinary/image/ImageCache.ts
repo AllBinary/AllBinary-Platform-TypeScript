@@ -31,32 +31,23 @@
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { InputStream } from '../../../java/io/InputStream.js';
-
-    
+      
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { GDResources } from '../../../org/allbinary/game/gd/resource/GDResources.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Memory } from '../../../org/allbinary/system/Memory.js';
-
-    
+      
 
 
 

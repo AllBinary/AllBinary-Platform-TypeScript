@@ -23,11 +23,9 @@
 
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { HardwareComponentInterface } from '../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-
-    
+      
 
 
 

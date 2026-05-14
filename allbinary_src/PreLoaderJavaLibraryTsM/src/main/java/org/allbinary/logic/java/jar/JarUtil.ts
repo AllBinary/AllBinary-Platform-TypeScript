@@ -27,20 +27,15 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { IOException } from '../../../../../java/io/IOException.js';
-
-    
+      
 import { URL } from '../../../../../java/net/URL.js';
-
-    
+      
 import { URLConnection } from '../../../../../java/net/URLConnection.js';
-
-    
+      
 import { JarEntry } from '../../../../../java/util/jar/JarEntry.js';
-
-    
+      
 import { JarInputStream } from '../../../../../java/util/jar/JarInputStream.js';
-
-    
+      
 
 
 

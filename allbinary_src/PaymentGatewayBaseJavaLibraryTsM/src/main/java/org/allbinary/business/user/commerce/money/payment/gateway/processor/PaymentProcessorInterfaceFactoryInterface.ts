@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { PaymentTransactionInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/transaction/PaymentTransactionInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 
 
 

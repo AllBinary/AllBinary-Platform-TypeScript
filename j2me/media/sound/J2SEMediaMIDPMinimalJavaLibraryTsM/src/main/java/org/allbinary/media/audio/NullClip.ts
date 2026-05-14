@@ -23,35 +23,25 @@
 
         
 import { IOException } from '../../../../java/io/IOException.js';
-
-    
+      
 import { AudioFormat } from '../../../../javax/sound/sampled/AudioFormat.js';
-
-    
+      
 import { AudioInputStream } from '../../../../javax/sound/sampled/AudioInputStream.js';
-
-    
+      
 import { BooleanControl } from '../../../../javax/sound/sampled/BooleanControl.js';
-
-    
+      
 import { Clip } from '../../../../javax/sound/sampled/Clip.js';
-
-    
+      
 import { Control } from '../../../../javax/sound/sampled/Control.js';
-
-    
+      
 import { Type } from '../../../../javax/sound/sampled/Control/Type.js';
-
-    
+      
 import { Info } from '../../../../javax/sound/sampled/Line/Info.js';
-
-    
+      
 import { LineListener } from '../../../../javax/sound/sampled/LineListener.js';
-
-    
+      
 import { LineUnavailableException } from '../../../../javax/sound/sampled/LineUnavailableException.js';
-
-    
+      
 
 
 

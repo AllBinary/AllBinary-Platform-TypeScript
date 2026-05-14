@@ -27,53 +27,37 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../../java/util/Set.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { AbstractInputAutomationWorker } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationWorker.js';
-
-    
+      
 import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
-
-    
+      
 import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
-
-    
+      
 import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
-
-    
+      
 import { GenericProfileAction } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileAction.js';
-
-    
+      
 import { GenericProfileActionScript } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScript.js';
-
-    
+      
 import { CapturedBufferedImagesCacheSingleton } from '../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { J2SECacheInterface } from '../../../../../../org/allbinary/logic/util/cache/J2SECacheInterface.js';
-
-    
+      
 import { ImageComparatorConstraintsInterface } from '../../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
-
-    
+      
 import { ImageComparisonWorker } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonWorker.js';
-
-    
+      
 import { MotionRectangleConstraintsInterface } from '../../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
-
-    
+      
 import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesWorker.js';
-
-    
+      
 
 
 

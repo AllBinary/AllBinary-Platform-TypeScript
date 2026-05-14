@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CollidableDestroyableDamageableLayer } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

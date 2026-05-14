@@ -25,20 +25,15 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

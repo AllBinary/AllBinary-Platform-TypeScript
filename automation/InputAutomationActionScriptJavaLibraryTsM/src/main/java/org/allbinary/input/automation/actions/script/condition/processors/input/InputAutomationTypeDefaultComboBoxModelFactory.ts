@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { Set } from '../../../../../../../../../java/util/Set.js';
-
-    
+      
 import { swing } from '../../../../../../../../../javax/swing.js';
-
-    
+      
 import { InputRobotFactory } from '../../../../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-
-    
+      
 
 
 

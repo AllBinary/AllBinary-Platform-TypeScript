@@ -23,8 +23,7 @@
 
         
 import { Color } from '../../../../java/awt/Color.js';
-
-    
+      
 
 
 

@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-
-    
+      
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 
 
 

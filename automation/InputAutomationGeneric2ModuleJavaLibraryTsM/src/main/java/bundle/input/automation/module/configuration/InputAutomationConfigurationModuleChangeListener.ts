@@ -23,8 +23,7 @@
 
         
 import { InputAutomationConfigurationModuleChangeEvent } from '../../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
-
-    
+      
 
 
 

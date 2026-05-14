@@ -23,8 +23,7 @@
 
         
 import { AdvertisementImageInterface } from '../../../../../org/allbinary/business/advertisement/image/AdvertisementImageInterface.js';
-
-    
+      
 
 
 

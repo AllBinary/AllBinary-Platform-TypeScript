@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 
 
 

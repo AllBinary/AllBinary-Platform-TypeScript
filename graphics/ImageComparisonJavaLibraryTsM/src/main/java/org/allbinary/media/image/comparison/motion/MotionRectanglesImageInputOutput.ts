@@ -27,59 +27,41 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { ImageOutputData } from '../../../../../../org/allbinary/input/automation/ImageOutputData.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LongUtil } from '../../../../../../org/allbinary/logic/java/number/LongUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-
-    
+      
 import { PoolInterface } from '../../../../../../org/allbinary/logic/util/cache/PoolInterface.js';
-
-    
+      
 import { MediaDataFactory } from '../../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
-
-    
+      
 import { ImagePersistanceUtil } from '../../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-
-    
+      
 import { BufferedImageCacheable } from '../../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
-
-    
+      
 import { BufferedImageInfo } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfo.js';
-
-    
+      
 import { BufferedImageInfoFactory } from '../../../../../../org/allbinary/media/image/cache/BufferedImageInfoFactory.js';
-
-    
+      
 import { BufferedImagePoolSingleton } from '../../../../../../org/allbinary/media/image/cache/BufferedImagePoolSingleton.js';
-
-    
+      
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
-
-    
+      
 import { ImageIOInterface } from '../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 
@@ -132,6 +114,7 @@ var frame = frame
     
 
     var motionRectanglesResultsFrameCacheable: MotionRectanglesResultsFrameCacheable = 
+
                                     (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
 ;
     
@@ -148,6 +131,7 @@ var frame = frame
 this.save(motionRectangles, frame);
     
 motionRectanglesResultsFrameCacheable= 
+
                                     (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
@@ -155,6 +139,7 @@ motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();
 this.save(motionRectangles, frame);
     
 motionRectanglesResultsFrameCacheable= 
+
                                     (getInstance as AutomaticCacheInterface).get(frame) as MotionRectanglesResultsFrameCacheable;
     
 motionRectangles= motionRectanglesResultsFrameCacheable!.getMotionRectangles();

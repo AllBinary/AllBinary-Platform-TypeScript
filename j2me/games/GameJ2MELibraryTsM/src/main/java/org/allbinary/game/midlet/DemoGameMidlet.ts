@@ -25,29 +25,21 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { GameCanvasRunnableInterface } from '../../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-
-    
+      
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-
-    
+      
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { ClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/ClientInformationFactory.js';
-
-    
+      
 import { PrimaryThreadPool } from '../../../../org/allbinary/thread/PrimaryThreadPool.js';
-
-    
+      
 
 
 

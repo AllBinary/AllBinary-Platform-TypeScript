@@ -23,23 +23,17 @@
 
         
 import { CompleteMotionGestureInputEvent } from '../../../../../../org/allbinary/game/input/CompleteMotionGestureInputEvent.js';
-
-    
+      
 import { GameKey } from '../../../../../../org/allbinary/game/input/GameKey.js';
-
-    
+      
 import { GameKeyEventSourceInterface } from '../../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { InputToGameKeyMapping } from '../../../../../../org/allbinary/game/input/mapping/InputToGameKeyMapping.js';
-
-    
+      
 import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion/gesture/MotionGestureInput.js';
-
-    
+      
 
 
 

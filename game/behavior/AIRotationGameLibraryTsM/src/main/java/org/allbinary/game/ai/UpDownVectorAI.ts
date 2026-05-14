@@ -25,23 +25,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { BasicVelocityProperties } from '../../../../org/allbinary/game/physics/velocity/BasicVelocityProperties.js';
-
-    
+      
 import { VelocityInterfaceCompositeInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-
-    
+      
 
 
 

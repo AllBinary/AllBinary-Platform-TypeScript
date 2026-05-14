@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-
-    
+      
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { Document } from '../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

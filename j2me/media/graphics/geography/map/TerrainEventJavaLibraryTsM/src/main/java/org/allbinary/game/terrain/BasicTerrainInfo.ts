@@ -23,11 +23,9 @@
 
         
 import { Angle } from '../../../../org/allbinary/math/Angle.js';
-
-    
+      
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 
 
 

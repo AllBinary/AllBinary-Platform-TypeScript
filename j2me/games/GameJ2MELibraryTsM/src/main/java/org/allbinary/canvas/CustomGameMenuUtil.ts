@@ -23,17 +23,13 @@
 
         
 import { AppletUtil } from '../../../org/allbinary/AppletUtil.js';
-
-    
+      
 import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
-
-    
+      
 import { GameCommandsFactory } from '../../../org/allbinary/game/commands/GameCommandsFactory.js';
-
-    
+      
 import { MyCanvas } from '../../../org/allbinary/graphics/displayable/MyCanvas.js';
-
-    
+      
 
 
 

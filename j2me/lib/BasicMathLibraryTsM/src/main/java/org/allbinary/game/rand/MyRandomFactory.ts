@@ -29,17 +29,13 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Random } from '../../../../java/util/Random.js';
-
-    
+      
 import { MathUtil } from '../../../../org/allbinary/logic/math/MathUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

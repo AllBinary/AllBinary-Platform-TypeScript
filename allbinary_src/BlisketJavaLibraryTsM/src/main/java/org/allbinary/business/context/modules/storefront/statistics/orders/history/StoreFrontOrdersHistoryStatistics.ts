@@ -27,26 +27,19 @@
             import { Long } from '../../../../../../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { OrderHistoryInterface } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryInterface.js';
-
-    
+      
 import { Money } from '../../../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-
-    
+      
 import { OrderHistoryEntityFactory } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
-
-    
+      
 import { OrderHistoryEntityInterface } from '../../../../../../../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityInterface.js';
-
-    
+      
 
 
 

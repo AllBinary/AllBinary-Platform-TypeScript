@@ -27,62 +27,43 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { DefaultMutableTreeNode } from '../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-
-    
+      
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-
-    
+      
 import { DomHelper } from '../../../../../../org/allbinary/dom/DomHelper.js';
-
-    
+      
 import { GameInputStrings } from '../../../../../../org/allbinary/game/input/GameInputStrings.js';
-
-    
+      
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { StatusFactory } from '../../../../../../org/allbinary/graphics/j2me/StatusFactory.js';
-
-    
+      
 import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
-
-    
+      
 import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
-
-    
+      
 import { BasicGraphicsPipeline } from '../../../../../../org/allbinary/graphics/pipeline/BasicGraphicsPipeline.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PositionStrings } from '../../../../../../org/allbinary/math/PositionStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

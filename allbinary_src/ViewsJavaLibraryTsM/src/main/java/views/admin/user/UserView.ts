@@ -25,23 +25,17 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { UserDomNode } from '../../../org/allbinary/business/user/UserDomNode.js';
-
-    
+      
 import { UserInterface } from '../../../org/allbinary/business/user/UserInterface.js';
-
-    
+      
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { HttpContextView } from '../../../views/business/context/HttpContextView.js';
-
-    
+      
 
 
 

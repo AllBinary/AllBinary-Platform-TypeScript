@@ -25,11 +25,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

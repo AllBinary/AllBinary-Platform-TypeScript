@@ -23,11 +23,9 @@
 
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
-
-    
+      
 
 
 

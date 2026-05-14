@@ -25,62 +25,43 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Arrays } from '../../../java/util/Arrays.js';
-
-    
+      
 import { Vector } from '../../../java/util/Vector.js';
-
-    
+      
 import { TransformInfoEntityBuilder } from '../../../org/allbinary/data/tables/transform/info/TransformInfoEntityBuilder.js';
-
-    
+      
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringComparator } from '../../../org/allbinary/logic/control/sort/StringComparator.js';
-
-    
+      
 import { CustomizerTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/CustomizerTransformInfoData.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { TransformTemplateCustomizerData } from '../../../org/allbinary/logic/visual/transform/template/customizer/TransformTemplateCustomizerData.js';
-
-    
+      
 import { TransformTemplateCustomizersData } from '../../../org/allbinary/logic/visual/transform/template/customizer/TransformTemplateCustomizersData.js';
-
-    
+      
 import { BodyData } from '../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
-
-    
+      
 import { TitleData } from '../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
-
-    
+      
 import { TransformTemplateCustomizerUtil } from '../../../org/allbinary/logic/visual/transform/template/util/TransformTemplateCustomizerUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

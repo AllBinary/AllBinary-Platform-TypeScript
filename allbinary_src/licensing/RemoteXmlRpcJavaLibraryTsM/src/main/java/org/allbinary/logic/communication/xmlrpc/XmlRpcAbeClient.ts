@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { MyRandomFactory } from '../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { NullXmlRpcHandler } from '../../../../../org/apache/xmlrpc/NullXmlRpcHandler.js';
-
-    
+      
 import { XmlRpcClient } from '../../../../../org/apache/xmlrpc/XmlRpcClient.js';
-
-    
+      
 import { XmlRpcHandler } from '../../../../../org/apache/xmlrpc/XmlRpcHandler.js';
-
-    
+      
 
 
 

@@ -27,14 +27,11 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

@@ -25,14 +25,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { ScaleProperties } from '../../../org/allbinary/media/ScaleProperties.js';
-
-    
+      
 
 
 

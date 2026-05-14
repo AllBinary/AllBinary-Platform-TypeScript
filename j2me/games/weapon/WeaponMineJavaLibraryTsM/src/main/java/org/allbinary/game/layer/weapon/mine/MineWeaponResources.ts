@@ -23,8 +23,7 @@
 
         
 import { BasicGameResources } from '../../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
-
-    
+      
 
 
 

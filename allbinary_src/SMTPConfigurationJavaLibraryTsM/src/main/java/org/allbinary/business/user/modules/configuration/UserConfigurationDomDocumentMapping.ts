@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { DomDocumentMappingInterface } from '../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

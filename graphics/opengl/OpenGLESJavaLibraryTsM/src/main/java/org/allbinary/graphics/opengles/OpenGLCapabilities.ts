@@ -27,53 +27,37 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { GL11 } from '../../../../javax/microedition/khronos/opengles/GL11.js';
-
-    
+      
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-
-    
+      
 import { OpenGLESGL10ImageFactory } from '../../../../org/allbinary/image/opengles/OpenGLESGL10ImageFactory.js';
-
-    
+      
 import { OpenGLESGL11VBOImageFactory } from '../../../../org/allbinary/image/opengles/OpenGLESGL11VBOImageFactory.js';
-
-    
+      
 import { OpenGLImageSpecificFactory } from '../../../../org/allbinary/image/opengles/OpenGLImageSpecificFactory.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Tokenizer } from '../../../../org/allbinary/logic/string/tokens/Tokenizer.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

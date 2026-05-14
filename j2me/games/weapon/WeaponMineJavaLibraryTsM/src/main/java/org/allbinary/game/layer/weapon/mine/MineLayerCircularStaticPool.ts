@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { WeaponLayerCircularPool } from '../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
-
-    
+      
 import { ViewPositionFactoryInterface } from '../../../../../../org/allbinary/view/ViewPositionFactoryInterface.js';
-
-    
+      
 
 
 

@@ -25,68 +25,47 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../../../../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { CategoryData } from '../../../../../../../org/allbinary/business/category/CategoryData.js';
-
-    
+      
 import { CategoryUtil } from '../../../../../../../org/allbinary/business/category/CategoryUtil.js';
-
-    
+      
 import { CategoryHierarchyInterface } from '../../../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
-
-    
+      
 import { CategoryPropertiesInterface } from '../../../../../../../org/allbinary/business/category/properties/CategoryPropertiesInterface.js';
-
-    
+      
 import { RootCategoryPropertiesInterface } from '../../../../../../../org/allbinary/business/category/properties/root/RootCategoryPropertiesInterface.js';
-
-    
+      
 import { StoreFrontFactory } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbPath } from '../../../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { AbPathData } from '../../../../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { PathUtil } from '../../../../../../../org/allbinary/logic/io/path/PathUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { TransformInfoHttpInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

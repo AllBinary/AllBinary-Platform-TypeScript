@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { URIResolver } from '../../../../../javax/xml/transform/URIResolver.js';
-
-    
+      
 import { BasicUriResolver } from '../../../../../org/allbinary/data/tree/dom/BasicUriResolver.js';
-
-    
+      
 import { CustomUriResolver } from '../../../../../org/allbinary/data/tree/dom/CustomUriResolver.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
-
-    
+      
 import { TransformInfoObjectConfigInterface } from '../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
-
-    
+      
 
 
 

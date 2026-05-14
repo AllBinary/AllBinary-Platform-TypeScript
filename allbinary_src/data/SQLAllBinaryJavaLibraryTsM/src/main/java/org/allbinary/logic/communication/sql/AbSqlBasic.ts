@@ -27,38 +27,27 @@
             import { Thread } from '../../../../../java/lang/Thread.js';
         
 import { Connection } from '../../../../../java/sql/Connection.js';
-
-    
+      
 import { ResultSet } from '../../../../../java/sql/ResultSet.js';
-
-    
+      
 import { SQLException } from '../../../../../java/sql/SQLException.js';
-
-    
+      
 import { Statement } from '../../../../../java/sql/Statement.js';
-
-    
+      
 import { DatabaseConnectionInfoInterface } from '../../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-
-    
+      
 import { DbConnectionInfo } from '../../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SqlConnectionPool } from '../../../../../org/allbinary/logic/communication/sql/connection/pool/SqlConnectionPool.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

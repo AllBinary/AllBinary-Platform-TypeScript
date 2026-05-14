@@ -23,17 +23,13 @@
 
         
 import { URL } from '../../../../../java/net/URL.js';
-
-    
+      
 import { HelpSet } from '../../../../../javax/help/HelpSet.js';
-
-    
+      
 import { swing } from '../../../../../javax/swing.js';
-
-    
+      
 import { JavaHelpUtil } from '../../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
-
-    
+      
 
 
 

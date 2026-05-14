@@ -25,47 +25,33 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../java/util/Vector.js';
-
-    
+      
 import { EntryData } from '../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { PaymentGatewayData } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayData.js';
-
-    
+      
 import { PaymentGatewaysData } from '../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewaysData.js';
-
-    
+      
 import { BasicPaymentType } from '../../../../org/allbinary/business/user/commerce/money/payment/types/BasicPaymentType.js';
-
-    
+      
 import { PaymentTypeUtil } from '../../../../org/allbinary/business/user/commerce/money/payment/types/PaymentTypeUtil.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

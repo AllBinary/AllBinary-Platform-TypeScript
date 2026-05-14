@@ -23,20 +23,15 @@
 
         
 import { CharacterSet } from '../../../../../org/allbinary/logic/java/character/CharacterSet.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

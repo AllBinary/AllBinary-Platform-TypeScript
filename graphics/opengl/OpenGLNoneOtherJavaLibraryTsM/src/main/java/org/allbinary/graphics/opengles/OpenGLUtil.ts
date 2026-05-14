@@ -11,8 +11,7 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 
 
 

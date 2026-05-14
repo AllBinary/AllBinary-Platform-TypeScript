@@ -23,11 +23,9 @@
 
         
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { NodeList } from '../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

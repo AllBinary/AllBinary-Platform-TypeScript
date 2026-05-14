@@ -25,47 +25,33 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { OrderData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-
-    
+      
 import { OrderHistory } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-
-    
+      
 import { OrderHistoryData } from '../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
-
-    
+      
 import { OrderStatusEmail } from '../../org/allbinary/business/user/commerce/inventory/order/status/OrderStatusEmail.js';
-
-    
+      
 import { ShippingMethodData } from '../../org/allbinary/business/user/commerce/shipping/ShippingMethodData.js';
-
-    
+      
 import { OrderHistoryEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
-
-    
+      
 import { OrderItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/order/OrderItemsEntityFactory.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 
 
 

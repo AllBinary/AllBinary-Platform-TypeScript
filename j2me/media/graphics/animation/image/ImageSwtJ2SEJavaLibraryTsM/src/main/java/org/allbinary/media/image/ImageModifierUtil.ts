@@ -25,41 +25,29 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { ModifierOpenGLESImageProcessor } from '../../../../org/allbinary/image/opengles/ModifierOpenGLESImageProcessor.js';
-
-    
+      
 import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-
-    
+      
 import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
-
-    
+      
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-
-    
+      
 
 
 

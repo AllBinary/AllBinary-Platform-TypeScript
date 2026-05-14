@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { GraphPath } from '../../../../../../../../org/jgrapht/GraphPath.js';
-
-    
+      
 import { DefaultWeightedEdge } from '../../../../../../../../org/jgrapht/graph/DefaultWeightedEdge.js';
-
-    
+      
 import { SimpleWeightedGraph } from '../../../../../../../../org/jgrapht/graph/SimpleWeightedGraph.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { CellPosition } from '../../../../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-
-    
+      
 import { BasicGeographicMapUtil } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapUtil.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { RaceTrackGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackGeographicMap.js';
-
-    
+      
 import { PathFindingNode } from '../../../../../../../../org/allbinary/media/graphics/geography/pathfinding/PathFindingNode.js';
-
-    
+      
 
 
 

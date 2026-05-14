@@ -25,38 +25,27 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-
-    
+      
 import { StoreFrontFactory } from '../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-
-    
+      
 import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { QuoteRequest } from '../../org/allbinary/business/user/quoterequest/QuoteRequest.js';
-
-    
+      
 import { QuoteRequestEntityFactory } from '../../org/allbinary/data/tables/user/quoterequest/QuoteRequestEntityFactory.js';
-
-    
+      
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

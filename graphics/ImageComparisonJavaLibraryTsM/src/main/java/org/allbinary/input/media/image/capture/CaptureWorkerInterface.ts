@@ -23,11 +23,9 @@
 
         
 import { BasicEventHandlerInterface } from '../../../../../../org/allbinary/logic/util/event/handler/BasicEventHandlerInterface.js';
-
-    
+      
 import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 
 
 

@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { TableMappingInterface } from '../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-
-    
+      
 
 
 

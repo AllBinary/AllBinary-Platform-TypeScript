@@ -23,17 +23,13 @@
 
         
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

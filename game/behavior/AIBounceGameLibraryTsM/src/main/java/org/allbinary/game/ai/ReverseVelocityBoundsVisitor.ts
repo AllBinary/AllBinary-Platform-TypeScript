@@ -23,20 +23,15 @@
 
         
 import { BoundsVisitorInterface } from '../../../../org/allbinary/bounds/BoundsVisitorInterface.js';
-
-    
+      
 import { VelocityInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterface.js';
-
-    
+      
 import { VelocityInterfaceCompositeInterface } from '../../../../org/allbinary/game/physics/velocity/VelocityInterfaceCompositeInterface.js';
-
-    
+      
 import { LayerInterface } from '../../../../org/allbinary/layer/LayerInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

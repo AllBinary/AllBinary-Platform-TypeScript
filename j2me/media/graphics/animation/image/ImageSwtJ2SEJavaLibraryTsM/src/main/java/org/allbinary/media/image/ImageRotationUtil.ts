@@ -25,29 +25,21 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-
-    
+      
 import { SwtImmutableImage } from '../../../../org/microemu/device/swt/SwtImmutableImage.js';
-
-    
+      
 import { SwtMutableImage } from '../../../../org/microemu/device/swt/SwtMutableImage.js';
-
-    
+      
 
 
 

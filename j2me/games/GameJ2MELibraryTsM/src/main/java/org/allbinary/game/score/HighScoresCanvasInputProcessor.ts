@@ -23,23 +23,17 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { HighScoresCanvas } from '../../../../org/allbinary/game/score/displayable/HighScoresCanvas.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

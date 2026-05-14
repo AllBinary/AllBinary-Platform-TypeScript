@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DownGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/DownGameKeyEventHandler.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js';
-
-    
+      
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { RectangleCollisionUtil } from '../../../../../org/allbinary/math/RectangleCollisionUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 
@@ -92,7 +84,7 @@ export class TouchButtonRecognizer
     private lastPressedTouchButtonInput: TouchButtonInput = BasicTouchInputFactory.getInstance()!.NONE;
 
     private readonly currentlyPressedTouchButtonSingleton: CurrentlyPressedTouchButtonSingleton = CurrentlyPressedTouchButtonSingleton.getInstance()!;
-
+//CurrentlyPressedTouchButtonSingletonDebug.getInstance();
 //inner= member=true isStatic=
 ReleaseHelper = class
             extends Object

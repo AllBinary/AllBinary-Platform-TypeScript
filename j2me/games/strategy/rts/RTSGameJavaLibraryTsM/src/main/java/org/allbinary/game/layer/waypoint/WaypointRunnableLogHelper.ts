@@ -23,8 +23,7 @@
 
         
 import { PathFindingLayerInterface } from '../../../../../org/allbinary/game/layer/PathFindingLayerInterface.js';
-
-    
+      
 
 
 

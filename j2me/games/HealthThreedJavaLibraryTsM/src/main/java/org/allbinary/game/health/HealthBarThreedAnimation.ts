@@ -25,41 +25,29 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { ColorBufferList } from '../../../../min3d/core/ColorBufferList.js';
-
-    
+      
 import { Number3dBufferList } from '../../../../min3d/core/Number3dBufferList.js';
-
-    
+      
 import { Rectangle } from '../../../../min3d/objectPrimitives/Rectangle.js';
-
-    
+      
 import { Number3d } from '../../../../min3d/vos/Number3d.js';
-
-    
+      
 import { OpenGLESGraphics } from '../../../../org/allbinary/device/OpenGLESGraphics.js';
-
-    
+      
 import { Object3dProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessor.js';
-
-    
+      
 import { Object3dProcessorUtil } from '../../../../org/allbinary/graphics/threed/min3d/renderer/Object3dProcessorUtil.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

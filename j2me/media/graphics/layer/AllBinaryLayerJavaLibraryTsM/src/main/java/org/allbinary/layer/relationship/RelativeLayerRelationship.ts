@@ -23,23 +23,17 @@
 
         
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-
-    
+      
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

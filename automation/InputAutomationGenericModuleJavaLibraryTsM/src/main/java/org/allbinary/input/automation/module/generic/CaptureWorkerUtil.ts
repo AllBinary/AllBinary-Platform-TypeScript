@@ -27,17 +27,13 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { ProfileActionScriptConditionInterface } from '../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

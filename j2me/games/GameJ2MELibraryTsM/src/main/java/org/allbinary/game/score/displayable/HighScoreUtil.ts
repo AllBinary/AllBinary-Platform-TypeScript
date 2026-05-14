@@ -25,50 +25,35 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-
-    
+      
 import { HighScoreNamePersistanceSingleton } from '../../../../../org/allbinary/game/score/HighScoreNamePersistanceSingleton.js';
-
-    
+      
 import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
-
-    
+      
 import { HighScoresFactoryInterface } from '../../../../../org/allbinary/game/score/HighScoresFactoryInterface.js';
-
-    
+      
 import { HighScoresHelperBase } from '../../../../../org/allbinary/game/score/HighScoresHelperBase.js';
-
-    
+      
 import { HighScoresResultsListener } from '../../../../../org/allbinary/game/score/HighScoresResultsListener.js';
-
-    
+      
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

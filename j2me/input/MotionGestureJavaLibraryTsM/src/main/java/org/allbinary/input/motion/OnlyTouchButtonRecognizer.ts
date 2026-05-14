@@ -25,8 +25,7 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/button/TouchButtonRecognizer.js';
-
-    
+      
 
 
 

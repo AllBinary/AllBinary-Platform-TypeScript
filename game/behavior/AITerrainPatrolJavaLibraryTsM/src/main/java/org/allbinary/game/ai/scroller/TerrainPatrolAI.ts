@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { GameInput } from '../../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { BasicTerrainInfo } from '../../../../../org/allbinary/game/terrain/BasicTerrainInfo.js';
-
-    
+      
 import { TerrainEvent } from '../../../../../org/allbinary/game/terrain/TerrainEvent.js';
-
-    
+      
 import { TerrainEventCircularStaticPool } from '../../../../../org/allbinary/game/terrain/TerrainEventCircularStaticPool.js';
-
-    
+      
 import { TerrainEventHandler } from '../../../../../org/allbinary/game/terrain/TerrainEventHandler.js';
-
-    
+      
 import { TerrainEventListener } from '../../../../../org/allbinary/game/terrain/TerrainEventListener.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { Angle } from '../../../../../org/allbinary/math/Angle.js';
-
-    
+      
 import { AngleFactory } from '../../../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 
 
 

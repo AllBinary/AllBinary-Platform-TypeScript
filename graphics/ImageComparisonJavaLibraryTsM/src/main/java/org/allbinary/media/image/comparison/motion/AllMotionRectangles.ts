@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
-
-    
+      
 import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparison/pixel/PixelDelta.js';
-
-    
+      
 
 
 

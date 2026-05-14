@@ -25,17 +25,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

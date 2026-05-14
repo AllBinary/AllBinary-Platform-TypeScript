@@ -27,20 +27,15 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { ByteArrayOutputStream } from '../../../../java/io/ByteArrayOutputStream.js';
-
-    
+      
 import { DataOutputStream } from '../../../../java/io/DataOutputStream.js';
-
-    
+      
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { CommandListener } from '../../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { ItemStateListener } from '../../../../../javax/microedition/lcdui/ItemStateListener.js';
-
-    
+      
 import { GameStateCompositeInterface } from '../../../../../org/allbinary/game/state/GameStateCompositeInterface.js';
-
-    
+      
 import { PaintableInterface } from '../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 import { RunnableInterface } from '../../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 
 
 

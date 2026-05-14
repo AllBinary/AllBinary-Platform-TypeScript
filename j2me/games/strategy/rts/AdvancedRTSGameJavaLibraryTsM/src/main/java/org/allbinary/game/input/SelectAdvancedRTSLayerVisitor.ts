@@ -23,32 +23,23 @@
 
         
 import { AssignWaypointsUtil } from '../../../../org/allbinary/game/input/form/AssignWaypointsUtil.js';
-
-    
+      
 import { AdvancedRTSGameLayer } from '../../../../org/allbinary/game/layer/AdvancedRTSGameLayer.js';
-
-    
+      
 import { RTSLayer } from '../../../../org/allbinary/game/layer/RTSLayer.js';
-
-    
+      
 import { BuildingLayer } from '../../../../org/allbinary/game/layer/building/BuildingLayer.js';
-
-    
+      
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-
-    
+      
 import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
-
-    
+      
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js';
-
-    
+      
 
 
 

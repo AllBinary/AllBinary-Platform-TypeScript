@@ -23,17 +23,13 @@
 
         
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { HtmlTag } from '../../../../../../../org/allbinary/logic/visual/dhtml/html/HtmlTag.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 
 
 

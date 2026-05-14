@@ -27,53 +27,37 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { Arrays } from '../../../../java/util/Arrays.js';
-
-    
+      
 import { Comparator } from '../../../../java/util/Comparator.js';
-
-    
+      
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-
-    
+      
 import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
-
-    
+      
 import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-
-    
+      
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-
-    
+      
 import { ColorRange } from '../../../../org/allbinary/media/image/analysis/ColorRange.js';
-
-    
+      
 import { ColorRangeInterface } from '../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-
-    
+      
 import { ImageAnalysis } from '../../../../org/allbinary/media/image/analysis/ImageAnalysis.js';
-
-    
+      
 import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

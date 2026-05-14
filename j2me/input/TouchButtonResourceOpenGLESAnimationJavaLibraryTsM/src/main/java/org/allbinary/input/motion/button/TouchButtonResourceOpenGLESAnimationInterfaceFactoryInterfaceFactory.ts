@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { OpenGLImageCacheFactory } from '../../../../../org/allbinary/image/opengles/OpenGLImageCacheFactory.js';
-
-    
+      
 
 
 

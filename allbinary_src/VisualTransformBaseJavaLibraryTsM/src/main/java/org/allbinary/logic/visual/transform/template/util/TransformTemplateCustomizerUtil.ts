@@ -23,35 +23,25 @@
 
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { GLOBALS2 } from '../../../../../../../org/allbinary/globals/GLOBALS2.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Replace } from '../../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 import { CustomizerTransformInfoData } from '../../../../../../../org/allbinary/logic/visual/transform/info/CustomizerTransformInfoData.js';
-
-    
+      
 import { BodyData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/bodies/BodyData.js';
-
-    
+      
 import { TitleData } from '../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

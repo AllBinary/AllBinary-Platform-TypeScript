@@ -23,20 +23,15 @@
 
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { EmailServerConfiguration } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfiguration.js';
-
-    
+      
 import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

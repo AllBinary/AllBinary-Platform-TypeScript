@@ -27,38 +27,27 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
-
-    
+      
 import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
-
-    
+      
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-
-    
+      
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-
-    
+      
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-
-    
+      
 import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-
-    
+      
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 
@@ -167,6 +156,7 @@ this.player.deallocate();
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return 
+
                                     (player as TimeBaseInterface).getTimeBase();;
     
 }
@@ -325,7 +315,7 @@ var controlType = controlType
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
 
-    var controllable2: Controllable2 = (this.player as unknown as Controllable2);
+    var controllable2: Controllable2 = (this.player as Controllable2);
 ;
     
 controllable2.setVolume(leftVolume, rightVolume);

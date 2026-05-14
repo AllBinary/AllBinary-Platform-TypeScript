@@ -23,11 +23,9 @@
 
         
 import { GL } from '../../../com/jogamp/opengl/GL.js';
-
-    
+      
 import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
-
-    
+      
 
 
 

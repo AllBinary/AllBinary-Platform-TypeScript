@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { MutableTreeNode } from '../../../../../../javax/swing/tree/MutableTreeNode.js';
-
-    
+      
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { CanvasDom } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasDom.js';
-
-    
+      
 import { IntegerDimension } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/IntegerDimension.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

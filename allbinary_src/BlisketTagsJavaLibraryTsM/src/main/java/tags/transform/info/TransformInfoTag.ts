@@ -25,32 +25,23 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { JspTagException } from '../../../javax/servlet/jsp/JspTagException.js';
-
-    
+      
 import { TagHelperFactoryInterface } from '../../../admin/taghelpers/TagHelperFactoryInterface.js';
-
-    
+      
 import { StoreFrontData } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-
-    
+      
 import { AbResponseHandler } from '../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { OutputTypeData } from '../../../org/allbinary/logic/io/OutputTypeData.js';
-
-    
+      
 import { TransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-
-    
+      
 import { TransformInfoRequestHelperFactory } from '../../../taghelpers/transform/info/TransformInfoRequestHelperFactory.js';
-
-    
+      
 import { ModifyTag } from '../../../tags/ModifyTag.js';
-
-    
+      
 
 
 

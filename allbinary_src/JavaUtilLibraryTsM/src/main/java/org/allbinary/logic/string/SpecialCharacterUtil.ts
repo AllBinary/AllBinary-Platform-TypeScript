@@ -23,17 +23,13 @@
 
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { AbPathData } from '../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

@@ -23,8 +23,7 @@
 
         
 import { EmailServerConfigurationInterface } from '../../../../../org/allbinary/logic/communication/smtp/configuration/server/EmailServerConfigurationInterface.js';
-
-    
+      
 
 
 

@@ -27,23 +27,17 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventListenerInterface } from '../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
-
-    
+      
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

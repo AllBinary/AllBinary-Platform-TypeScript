@@ -23,14 +23,11 @@
 
         
 import { VirtualKeyboard } from '../../../../../org/allbinary/android/input/VirtualKeyboard.js';
-
-    
+      
 import { VirtualKeyboardEventListenerInterface } from '../../../../../org/allbinary/input/event/VirtualKeyboardEventListenerInterface.js';
-
-    
+      
 import { Activity } from '../../../../../android/app/Activity.js';
-
-    
+      
 
 
 

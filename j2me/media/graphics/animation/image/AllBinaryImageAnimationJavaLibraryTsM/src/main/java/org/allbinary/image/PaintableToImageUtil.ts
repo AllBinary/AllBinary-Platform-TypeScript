@@ -25,14 +25,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { PaintableInterface } from '../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 
 
 

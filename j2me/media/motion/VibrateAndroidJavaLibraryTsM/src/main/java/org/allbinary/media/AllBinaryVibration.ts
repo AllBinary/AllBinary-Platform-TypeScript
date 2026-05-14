@@ -23,17 +23,13 @@
 
         
 import { Context } from '../../../android/content/Context.js';
-
-    
+      
 import { Vibrator } from '../../../android/os/Vibrator.js';
-
-    
+      
 import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { GameConfigurationCentral } from '../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-
-    
+      
 
 
 

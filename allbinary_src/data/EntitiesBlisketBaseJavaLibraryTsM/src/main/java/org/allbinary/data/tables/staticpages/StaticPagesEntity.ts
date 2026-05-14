@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { StoreFrontData } from '../../../../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-
-    
+      
 import { StaticPagesDbInitInfo } from '../../../../../org/allbinary/business/init/db/StaticPagesDbInitInfo.js';
-
-    
+      
 import { BasicItemData } from '../../../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlBean } from '../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-
-    
+      
 import { SearchData } from '../../../../../org/allbinary/logic/control/search/SearchData.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

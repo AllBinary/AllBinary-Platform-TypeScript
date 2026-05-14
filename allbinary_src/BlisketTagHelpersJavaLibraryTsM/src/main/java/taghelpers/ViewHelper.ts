@@ -25,38 +25,27 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { HashMap } from '../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 import { TransformFactory } from '../org/allbinary/logic/visual/transform/TransformFactory.js';
-
-    
+      
 import { TransformInterface } from '../org/allbinary/logic/visual/transform/TransformInterface.js';
-
-    
+      
 import { TransformDocumentInterface } from '../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

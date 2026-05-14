@@ -11,35 +11,25 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { RenderedImage } from '../../../../../java/awt/image/RenderedImage.js';
-
-    
+      
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LogConfigTypeFactory } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-
-    
+      
 import { LogConfigTypes } from '../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-
-    
+      
 import { AbFile } from '../../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { ImageUtil } from '../../../../../org/allbinary/media/image/ImageUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 
 
 
@@ -60,7 +50,7 @@ import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.j
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageIOUtil } from './ImageIOUtil.js';
 import { MediaData } from './MediaData.js';
-
+//import com.sun.imageio.plugins.common.ImageUtil;
 export class MediaUtil
             extends Object
          {

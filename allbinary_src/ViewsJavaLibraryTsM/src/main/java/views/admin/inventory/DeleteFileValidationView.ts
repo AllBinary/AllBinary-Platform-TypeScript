@@ -25,38 +25,27 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';
-
-    
+      
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-
-    
+      
 import { RequestParams } from '../../../org/allbinary/logic/communication/http/request/RequestParams.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

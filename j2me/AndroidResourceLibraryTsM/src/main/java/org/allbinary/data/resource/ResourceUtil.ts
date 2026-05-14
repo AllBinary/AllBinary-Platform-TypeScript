@@ -27,47 +27,33 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { InputStream } from '../../../../java/io/InputStream.js';
-
-    
+      
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { Activity } from '../../../../android/app/Activity.js';
-
-    
+      
 import { Context } from '../../../../android/content/Context.js';
-
-    
+      
 import { Resources } from '../../../../android/content/res/Resources.js';
-
-    
+      
 import { DebugFactory } from '../../../../org/allbinary/debug/DebugFactory.js';
-
-    
+      
 import { NoDebug } from '../../../../org/allbinary/debug/NoDebug.js';
-
-    
+      
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
-
-    
+      
 
 
 

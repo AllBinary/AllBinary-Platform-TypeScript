@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { InputAutomationModuleFactoryInterface } from '../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-
-    
+      
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-
-    
+      
 
 
 

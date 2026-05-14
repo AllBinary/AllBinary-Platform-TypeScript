@@ -25,53 +25,37 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { DataOutputStream } from '../../../../../../../../java/io/DataOutputStream.js';
-
-    
+      
 import { File } from '../../../../../../../../java/io/File.js';
-
-    
+      
 import { FileInputStream } from '../../../../../../../../java/io/FileInputStream.js';
-
-    
+      
 import { FileOutputStream } from '../../../../../../../../java/io/FileOutputStream.js';
-
-    
+      
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../../../../java/util/Set.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { DomDocumentMappingInterface } from '../../../../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
-
-    
+      
 import { DefaultListModelHelper } from '../../../../../../../../org/allbinary/input/automation/module/DefaultListModelHelper.js';
-
-    
+      
 import { GenericProfileActionData } from '../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionData.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

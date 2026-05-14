@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { GenericCssStyleValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/includes/style/css/GenericCssStyleValidation.js';
-
-    
+      
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { CustomizerUtil } from '../../../../../../../../../views/business/context/modules/storefront/customizer/CustomizerUtil.js';
-
-    
+      
 
 
 

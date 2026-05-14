@@ -25,17 +25,13 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { JspTagException } from '../javax/servlet/jsp/JspTagException.js';
-
-    
+      
 import { StoreFrontData } from '../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-
-    
+      
 import { AbResponseHandler } from '../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-
-    
+      
 import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

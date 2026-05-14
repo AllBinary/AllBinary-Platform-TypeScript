@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { LockedResources } from '../../../../org/allbinary/logic/system/security/licensing/LockedResources.js';
-
-    
+      
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
-
-    
+      
 
 
 

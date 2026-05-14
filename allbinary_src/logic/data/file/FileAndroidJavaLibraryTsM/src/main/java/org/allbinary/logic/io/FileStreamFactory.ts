@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Context } from '../../../../android/content/Context.js';
-
-    
+      
 import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 
 
 

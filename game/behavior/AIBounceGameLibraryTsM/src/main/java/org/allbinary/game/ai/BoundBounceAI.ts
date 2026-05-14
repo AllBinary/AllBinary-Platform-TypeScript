@@ -25,26 +25,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { BoundsVisitorInterface } from '../../../../org/allbinary/bounds/BoundsVisitorInterface.js';
-
-    
+      
 import { LayerBounds } from '../../../../org/allbinary/bounds/LayerBounds.js';
-
-    
+      
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 
 
 

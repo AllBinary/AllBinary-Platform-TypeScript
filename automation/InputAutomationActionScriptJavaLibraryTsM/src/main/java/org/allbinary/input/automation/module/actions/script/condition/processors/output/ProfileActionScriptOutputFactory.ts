@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
 import { DomSearchHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

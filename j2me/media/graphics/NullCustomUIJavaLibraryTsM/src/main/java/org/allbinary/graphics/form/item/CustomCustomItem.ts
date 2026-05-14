@@ -9,8 +9,7 @@
 
         
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 
 
 

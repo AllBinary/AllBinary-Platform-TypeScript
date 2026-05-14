@@ -25,17 +25,13 @@
             import { System } from '../../../java/lang/System.js';
         
 import { MyRandomFactory } from '../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 
 
 

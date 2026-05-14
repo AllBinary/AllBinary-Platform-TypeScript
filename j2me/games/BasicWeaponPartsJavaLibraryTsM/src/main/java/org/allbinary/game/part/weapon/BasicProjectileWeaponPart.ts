@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { WeaponProperties } from '../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-
-    
+      
 import { WeaponLayer } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayer.js';
-
-    
+      
 import { WeaponLayerCircularPool } from '../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
-
-    
+      
 import { NoScoreable } from '../../../../../org/allbinary/game/score/NoScoreable.js';
-
-    
+      
 import { ScoreableInterface } from '../../../../../org/allbinary/game/score/ScoreableInterface.js';
-
-    
+      
 import { RelativeRelationship } from '../../../../../org/allbinary/graphics/RelativeRelationship.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 
 
 

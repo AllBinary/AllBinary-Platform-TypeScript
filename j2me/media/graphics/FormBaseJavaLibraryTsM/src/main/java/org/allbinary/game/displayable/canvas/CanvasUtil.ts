@@ -23,11 +23,9 @@
 
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 
 
 

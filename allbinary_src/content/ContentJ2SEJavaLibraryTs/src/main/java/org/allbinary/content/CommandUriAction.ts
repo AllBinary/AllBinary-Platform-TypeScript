@@ -25,17 +25,13 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../java/util/Hashtable.js';
-
-    
+      
 import { Command } from '../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

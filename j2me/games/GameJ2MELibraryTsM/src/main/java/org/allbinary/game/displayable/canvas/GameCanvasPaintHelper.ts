@@ -23,11 +23,9 @@
 
         
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-
-    
+      
 
 
 

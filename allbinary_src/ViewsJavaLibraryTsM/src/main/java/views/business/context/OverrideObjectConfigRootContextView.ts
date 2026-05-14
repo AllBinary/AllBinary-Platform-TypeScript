@@ -25,50 +25,35 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { DomDocumentHelper } from '../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
-
-    
+      
 import { TransformInterface } from '../../../org/allbinary/logic/visual/transform/TransformInterface.js';
-
-    
+      
 import { GeneratorTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/GeneratorTransformInfoData.js';
-
-    
+      
 import { RootTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/RootTransformInfoData.js';
-
-    
+      
 import { TransformInfoHttp } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttp.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
-
-    
+      
 import { TransformInfoObjectConfigInterface } from '../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigInterface.js';
-
-    
+      
 import { TransformTemplateInterface } from '../../../org/allbinary/logic/visual/transform/template/TransformTemplateInterface.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

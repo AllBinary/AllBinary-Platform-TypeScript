@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GenericOperatingSystem } from '../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-
-    
+      
 import { OperatingSystems } from '../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
-
-    
+      
 import { LinuxHardware } from '../../../../../org/allbinary/logic/system/hardware/linux/LinuxHardware.js';
-
-    
+      
 import { WindowsHardware } from '../../../../../org/allbinary/logic/system/hardware/windows/WindowsHardware.js';
-
-    
+      
 
 
 

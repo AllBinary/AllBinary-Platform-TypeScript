@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { Direction } from '../../../../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { DirectionFactory } from '../../../../../../org/allbinary/direction/DirectionFactory.js';
-
-    
+      
 import { CellPosition } from '../../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 
 
 

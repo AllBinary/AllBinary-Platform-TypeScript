@@ -23,23 +23,17 @@
 
         
 import { GL } from '../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { ChoiceGroupImageFactory } from '../../../javax/microedition/lcdui/ChoiceGroupImageFactory.js';
-
-    
+      
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { OpenGLFeatureFactory } from '../../../org/allbinary/graphics/opengles/OpenGLFeatureFactory.js';
-
-    
+      
 import { Features } from '../../../org/allbinary/game/configuration/feature/Features.js';
-
-    
+      
 
 
 

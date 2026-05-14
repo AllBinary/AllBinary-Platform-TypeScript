@@ -25,29 +25,21 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BasicItem } from '../../../../org/allbinary/business/user/commerce/inventory/item/BasicItem.js';
-
-    
+      
 import { ItemInterface } from '../../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-
-    
+      
 import { DownloadableItem } from '../../../../org/allbinary/business/user/commerce/inventory/item/download/DownloadableItem.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

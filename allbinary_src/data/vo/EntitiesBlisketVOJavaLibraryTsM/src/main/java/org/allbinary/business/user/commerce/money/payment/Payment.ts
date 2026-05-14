@@ -27,32 +27,23 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { ServletRequest } from '../../../../../../../javax/servlet/ServletRequest.js';
-
-    
+      
 import { EntryData } from '../../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { SuperCrypt } from '../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

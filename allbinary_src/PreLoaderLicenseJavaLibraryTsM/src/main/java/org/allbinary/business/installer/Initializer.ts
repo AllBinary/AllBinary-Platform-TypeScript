@@ -25,41 +25,29 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { Map } from '../../../../java/util/Map.js';
-
-    
+      
 import { Set } from '../../../../java/util/Set.js';
-
-    
+      
 import { HistoryDbInitInfo } from '../../../../org/allbinary/business/init/db/HistoryDbInitInfo.js';
-
-    
+      
 import { InventoryDbInitInfo } from '../../../../org/allbinary/business/init/db/InventoryDbInitInfo.js';
-
-    
+      
 import { LogDbInitInfo } from '../../../../org/allbinary/business/init/db/LogDbInitInfo.js';
-
-    
+      
 import { StaticPagesDbInitInfo } from '../../../../org/allbinary/business/init/db/StaticPagesDbInitInfo.js';
-
-    
+      
 import { UserDbInitInfo } from '../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

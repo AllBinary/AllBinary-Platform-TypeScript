@@ -25,8 +25,7 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/AllBinaryLayerCircularPool.js';
-
-    
+      
 
 
 

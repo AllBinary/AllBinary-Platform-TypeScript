@@ -23,8 +23,7 @@
 
         
 import { Scoreable } from '../../../../../../../org/allbinary/game/score/Scoreable.js';
-
-    
+      
 
 
 

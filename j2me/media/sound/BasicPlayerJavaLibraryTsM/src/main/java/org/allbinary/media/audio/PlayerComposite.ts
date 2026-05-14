@@ -27,32 +27,23 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
-
-    
+      
 import { Controllable } from '../../../../javax/microedition/media/Controllable.js';
-
-    
+      
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-
-    
+      
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { GameTickTimeDelayHelper } from '../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-
-    
+      
 import { GameTickTimeDelayHelperFactory } from '../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 
@@ -295,7 +286,7 @@ var controlType = controlType
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
 
-    var controllable2: Controllable2 = (this.player as unknown as Controllable2);
+    var controllable2: Controllable2 = (this.player as Controllable2);
 ;
     
 controllable2.setVolume(leftVolume, rightVolume);

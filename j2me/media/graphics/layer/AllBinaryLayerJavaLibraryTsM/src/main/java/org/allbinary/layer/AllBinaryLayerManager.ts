@@ -25,11 +25,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { LayerManagerEvent } from '../../../org/allbinary/layer/event/LayerManagerEvent.js';
-
-    
+      
 import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/LayerManagerEventHandler.js';
-
-    
+      
 
 
 

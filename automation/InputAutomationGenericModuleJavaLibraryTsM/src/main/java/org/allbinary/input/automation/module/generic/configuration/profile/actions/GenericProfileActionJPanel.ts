@@ -23,26 +23,19 @@
 
         
 import { JTreeInterfaceFactory } from '../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterfaceFactory.js';
-
-    
+      
 import { AlwaysActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/AlwaysActionScriptCondition.js';
-
-    
+      
 import { ColorAtActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ColorAtActionScriptCondition.js';
-
-    
+      
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
-
-    
+      
 import { TimeIntervalActionScriptCondition } from '../../../../../../../../../org/allbinary/input/automation/actions/script/condition/TimeIntervalActionScriptCondition.js';
-
-    
+      
 import { GenericProfileActionScriptJPanel } from '../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/script/GenericProfileActionScriptJPanel.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

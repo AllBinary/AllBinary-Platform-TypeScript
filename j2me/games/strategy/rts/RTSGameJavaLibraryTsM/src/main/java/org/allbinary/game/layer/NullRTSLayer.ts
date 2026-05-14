@@ -27,35 +27,25 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
-
-    
+      
 import { PlayerGameInput } from '../../../../org/allbinary/game/input/PlayerGameInput.js';
-
-    
+      
 import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
-
-    
+      
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
-
-    
+      
 import { Capital } from '../../../../org/allbinary/game/layer/capital/Capital.js';
-
-    
+      
 import { GameNotificationHud } from '../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
-
-    
+      
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { Sound } from '../../../../org/allbinary/media/audio/Sound.js';
-
-    
+      
 
 
 

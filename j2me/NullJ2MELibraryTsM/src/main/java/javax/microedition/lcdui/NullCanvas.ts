@@ -13,11 +13,9 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { Stack } from '../../../java/util/Stack.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

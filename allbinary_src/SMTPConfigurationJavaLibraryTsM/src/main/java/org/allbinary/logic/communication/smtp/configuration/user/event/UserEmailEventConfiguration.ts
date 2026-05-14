@@ -23,14 +23,11 @@
 
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

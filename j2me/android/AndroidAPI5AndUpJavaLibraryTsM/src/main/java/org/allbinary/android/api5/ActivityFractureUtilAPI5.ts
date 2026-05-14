@@ -23,23 +23,17 @@
 
         
 import { TouchScreenTypeFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenTypeFactory.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { Activity } from '../../../../android/app/Activity.js';
-
-    
+      
 import { ActivityFractureUtilAPI1 } from '../../../../org/allbinary/android/api1/ActivityFractureUtilAPI1.js';
-
-    
+      
 import { TouchScreenFactory } from '../../../../org/allbinary/input/motion/button/TouchScreenFactory.js';
-
-    
+      
 
 
 
@@ -62,14 +56,14 @@ import { TouchScreenFactory } from '../../../../org/allbinary/input/motion/butto
 export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
         
 
-    private static readonly instance: ActivityFractureUtilAPI5 = new ActivityFractureUtilAPI5();
+    private static readonly instance5: ActivityFractureUtilAPI5 = new ActivityFractureUtilAPI5();
 
     public static getInstance(): ActivityFractureUtilAPI5{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return ActivityFractureUtilAPI5.instance;
+                        return ActivityFractureUtilAPI5.instance5;
     
 }
 

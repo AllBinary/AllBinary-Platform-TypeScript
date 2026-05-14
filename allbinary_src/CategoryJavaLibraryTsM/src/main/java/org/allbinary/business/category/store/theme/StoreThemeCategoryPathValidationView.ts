@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { ValidationInterface } from '../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

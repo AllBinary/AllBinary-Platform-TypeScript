@@ -23,14 +23,11 @@
 
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { TextField } from '../../../../javax/microedition/lcdui/TextField.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

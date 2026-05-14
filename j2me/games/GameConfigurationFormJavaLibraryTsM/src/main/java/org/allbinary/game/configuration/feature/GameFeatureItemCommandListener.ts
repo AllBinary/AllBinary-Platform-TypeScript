@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
-
-    
+      
 import { ItemCommandListener } from '../../../../../javax/microedition/lcdui/ItemCommandListener.js';
-
-    
+      
 import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
-
-    
+      
 import { GameConfigurationUtil } from '../../../../../org/allbinary/game/configuration/GameConfigurationUtil.js';
-
-    
+      
 import { GameOptionsForm } from '../../../../../org/allbinary/game/configuration/GameOptionsForm.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { MidletStrings } from '../../../../../org/allbinary/midlet/MidletStrings.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

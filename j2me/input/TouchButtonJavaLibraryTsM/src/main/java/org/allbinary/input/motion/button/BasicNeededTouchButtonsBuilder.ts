@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

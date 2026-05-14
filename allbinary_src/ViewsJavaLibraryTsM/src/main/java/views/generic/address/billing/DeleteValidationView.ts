@@ -27,26 +27,19 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { StreetAddressData } from '../../../../org/allbinary/business/user/address/StreetAddressData.js';
-
-    
+      
 import { BillingAddressesEntity } from '../../../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntity.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { TransformInfoHttpInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

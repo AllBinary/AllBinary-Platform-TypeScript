@@ -25,68 +25,47 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { StoreFront } from '../../org/allbinary/business/context/modules/storefront/StoreFront.js';
-
-    
+      
 import { StoreFrontInterface } from '../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-
-    
+      
 import { StoreFrontsEntityFactory } from '../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
-
-    
+      
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { UserEmailEventNameData } from '../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
-
-    
+      
 import { UserEmailEventHandler } from '../../org/allbinary/logic/communication/smtp/event/handler/UserEmailEventHandler.js';
-
-    
+      
 import { AdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/AdminUserEmailEventHandlerSingletons.js';
-
-    
+      
 import { StoreAdminUserEmailEventHandlerSingletons } from '../../org/allbinary/logic/communication/smtp/event/handler/factory/StoreAdminUserEmailEventHandlerSingletons.js';
-
-    
+      
 import { AdminEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/AdminEmailInfo.js';
-
-    
+      
 import { BasicEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/BasicEmailInfo.js';
-
-    
+      
 import { EmailInfo } from '../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-
-    
+      
 import { StoreEmailInfo } from '../../org/allbinary/logic/communication/smtp/info/StoreEmailInfo.js';
-
-    
+      
 import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 
 
 

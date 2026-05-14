@@ -23,14 +23,11 @@
 
         
 import { SearchRequest } from '../../../org/allbinary/logic/control/search/SearchRequest.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

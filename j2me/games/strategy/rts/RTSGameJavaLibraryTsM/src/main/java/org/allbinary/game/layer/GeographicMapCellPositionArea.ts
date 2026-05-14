@@ -25,32 +25,23 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 import { LayerCoveringCellPositionsUtil } from '../../../../org/allbinary/game/layer/geographic/map/LayerCoveringCellPositionsUtil.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { CellPositionsUtil } from '../../../../org/allbinary/media/graphics/geography/map/CellPositionsUtil.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { BasicArrayListS } from '../../../../org/allbinary/util/BasicArrayListS.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

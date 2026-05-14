@@ -27,23 +27,17 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { ArtificialIntelligenceInterface } from '../../../../org/allbinary/ai/ArtificialIntelligenceInterface.js';
-
-    
+      
 import { SequenceAI } from '../../../../org/allbinary/game/ai/sequence/SequenceAI.js';
-
-    
+      
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { GroupLayerManagerListener } from '../../../../org/allbinary/game/layer/identification/GroupLayerManagerListener.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 
 
 

@@ -23,11 +23,9 @@
 
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

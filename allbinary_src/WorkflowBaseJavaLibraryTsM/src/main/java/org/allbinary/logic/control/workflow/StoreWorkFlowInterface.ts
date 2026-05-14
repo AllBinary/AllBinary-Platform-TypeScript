@@ -43,7 +43,7 @@
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WorkFlowInterface } from './WorkFlowInterface.js';
-
+//extends ValidationComponentInterface, ValidationInterface, ComponentInterface, DomNodeInterface, DataMappingInterface
 export interface StoreWorkFlowInterface extends WorkFlowInterface {
         
 

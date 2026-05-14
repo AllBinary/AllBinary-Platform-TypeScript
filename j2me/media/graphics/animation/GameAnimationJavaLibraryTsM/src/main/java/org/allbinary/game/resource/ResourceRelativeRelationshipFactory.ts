@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

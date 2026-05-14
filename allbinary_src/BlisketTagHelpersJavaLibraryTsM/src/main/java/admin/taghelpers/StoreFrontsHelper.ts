@@ -25,41 +25,29 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../java/util/Vector.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { StoreFrontData } from '../../org/allbinary/business/context/modules/storefront/StoreFrontData.js';
-
-    
+      
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-
-    
+      
 import { StoreFrontsEntityFactory } from '../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-
-    
+      
 import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { HtmlSelect } from '../../org/allbinary/logic/visual/dhtml/html/select/HtmlSelect.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

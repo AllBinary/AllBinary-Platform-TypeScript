@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { OrderHistory } from '../../../../../../../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-
-    
+      
 import { TenderType } from '../../../../../../../../../org/allbinary/business/user/commerce/money/payment/types/TenderType.js';
-
-    
+      
 
 
 

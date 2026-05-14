@@ -27,47 +27,33 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
-
-    
+      
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { IOException } from '../../../../java/io/IOException.js';
-
-    
+      
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { ImageArrayRotationUtil } from '../../../../org/allbinary/media/image/ImageArrayRotationUtil.js';
-
-    
+      
 import { ImageProcessedVisitor } from '../../../../org/allbinary/media/image/ImageProcessedVisitor.js';
-
-    
+      
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-
-    
+      
 import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

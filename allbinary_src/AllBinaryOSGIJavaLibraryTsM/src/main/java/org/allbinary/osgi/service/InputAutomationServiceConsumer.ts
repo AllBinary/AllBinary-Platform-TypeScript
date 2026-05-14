@@ -25,26 +25,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../java/util/Vector.js';
-
-    
+      
 import { BundleContext } from '../../../../org/osgi/framework/BundleContext.js';
-
-    
+      
 import { ServiceReference } from '../../../../org/osgi/framework/ServiceReference.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { OSGIServiceInterface } from '../../../../org/allbinary/osgi/OSGIServiceInterface.js';
-
-    
+      
 import { OSGIServiceVisitorInterface } from '../../../../org/allbinary/osgi/OSGIServiceVisitorInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

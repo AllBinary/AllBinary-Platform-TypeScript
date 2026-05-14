@@ -11,56 +11,39 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Activity } from '../../../../../android/app/Activity.js';
-
-    
+      
 import { Context } from '../../../../../android/content/Context.js';
-
-    
+      
 import { Intent } from '../../../../../android/content/Intent.js';
-
-    
+      
 import { AndroidServicesUtil } from '../../../../../org/allbinary/android/AndroidServicesUtil.js';
-
-    
+      
 import { ResourceUtil } from '../../../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { NoSound } from '../../../../../org/allbinary/media/audio/NoSound.js';
-
-    
+      
 import { Sound } from '../../../../../org/allbinary/media/audio/Sound.js';
-
-    
+      
 import { CommonStateStrings } from '../../../../../org/allbinary/string/CommonStateStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { GameTickTimeDelayHelper } from '../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-
-    
+      
 import { GameTickTimeDelayHelperFactory } from '../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

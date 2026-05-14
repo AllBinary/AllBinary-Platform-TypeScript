@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { ActivityFractureUtil } from '../../../../org/allbinary/android/ActivityFractureUtil.js';
-
-    
+      
 import { Activity } from '../../../../android/app/Activity.js';
-
-    
+      
 import { WindowManager } from '../../../../android/view/WindowManager.js';
-
-    
+      
 
 
 

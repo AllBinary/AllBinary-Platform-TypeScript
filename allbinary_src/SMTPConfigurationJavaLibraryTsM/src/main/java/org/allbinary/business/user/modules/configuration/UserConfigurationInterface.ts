@@ -23,14 +23,11 @@
 
         
 import { TimeCreated } from '../../../../../../org/allbinary/business/time/created/TimeCreated.js';
-
-    
+      
 import { TimeLastModified } from '../../../../../../org/allbinary/business/time/modified/TimeLastModified.js';
-
-    
+      
 import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary/logic/communication/smtp/configuration/user/UserEmailConfigurationInterface.js';
-
-    
+      
 
 
 

@@ -23,14 +23,11 @@
 
         
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { GameTickTimeDelayHelperFactory } from '../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

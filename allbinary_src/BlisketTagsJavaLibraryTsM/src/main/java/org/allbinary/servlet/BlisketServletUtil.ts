@@ -23,20 +23,15 @@
 
         
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { AppUrlGlobals } from '../../../org/allbinary/globals/AppUrlGlobals.js';
-
-    
+      
 import { URLGLOBALS } from '../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { AbPathData } from '../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { WebappClassLoaderInfo } from '../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
-
-    
+      
 
 
 

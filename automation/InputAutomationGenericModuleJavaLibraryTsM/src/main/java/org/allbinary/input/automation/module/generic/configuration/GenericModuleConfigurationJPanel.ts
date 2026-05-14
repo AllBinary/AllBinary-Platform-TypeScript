@@ -25,32 +25,23 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
-
-    
+      
 import { GenericProfileDataWorkerType } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
-
-    
+      
 import { GenericProfiles } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfiles.js';
-
-    
+      
 import { GenericProfileActions } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActions.js';
-
-    
+      
 import { GenericProfileActionsJPanel } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionsJPanel.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

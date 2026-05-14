@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
-
-    
+      
 import { AllBinaryGameLayerManager } from '../../../../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { DropLayerFactory } from '../../../../../../../../org/allbinary/game/layer/drop/DropLayerFactory.js';
-
-    
+      
 import { PickupLayerCircularStaticPool } from '../../../../../../../../org/allbinary/game/layer/pickup/PickupLayerCircularStaticPool.js';
-
-    
+      
 import { RaceTrackPickupLayer } from '../../../../../../../../org/allbinary/game/layer/pickup/RaceTrackPickupLayer.js';
-
-    
+      
 import { MyRandomFactory } from '../../../../../../../../org/allbinary/game/rand/MyRandomFactory.js';
-
-    
+      
 import { GPoint } from '../../../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 
 
 

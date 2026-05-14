@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DomDocumentMappingInterface } from '../../../../../org/allbinary/data/tree/dom/document/mapping/DomDocumentMappingInterface.js';
-
-    
+      
 import { TransformDocumentInterface } from '../../../../../org/allbinary/logic/visual/transform/data/TransformDocumentInterface.js';
-
-    
+      
 import { CompositeTransformInfoInterface } from '../../../../../org/allbinary/logic/visual/transform/info/CompositeTransformInfoInterface.js';
-
-    
+      
 
 
 

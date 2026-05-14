@@ -29,62 +29,43 @@
             import { Long } from '../../../../../../../java/lang/Long.js';
         
 import { awt } from '../../../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { HashMap } from '../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { ColorCacheFactory } from '../../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-
-    
+      
 import { ColorCacheable } from '../../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-
-    
+      
 import { CapturedBufferedImagesCacheSingleton } from '../../../../../../../org/allbinary/input/media/image/capture/CapturedBufferedImagesCacheSingleton.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AutomaticCacheInterface } from '../../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-
-    
+      
 import { ColorRange } from '../../../../../../../org/allbinary/media/image/analysis/ColorRange.js';
-
-    
+      
 import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/image/analysis/ColorRangeInterface.js';
-
-    
+      
 import { BufferedImageFrameCacheable } from '../../../../../../../org/allbinary/media/image/cache/BufferedImageFrameCacheable.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 
@@ -378,6 +359,7 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
 var frame = frame
 
     var capturedBufferedImageCacheable: BufferedImageFrameCacheable = 
+
                                     (getInstance as AutomaticCacheInterface).get((frame).toLong()) as BufferedImageFrameCacheable;
 ;
     

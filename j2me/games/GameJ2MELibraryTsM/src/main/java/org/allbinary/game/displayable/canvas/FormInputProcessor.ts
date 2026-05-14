@@ -25,56 +25,39 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-
-    
+      
 import { GameKeyEventSourceInterface } from '../../../../../org/allbinary/game/input/GameKeyEventSourceInterface.js';
-
-    
+      
 import { GameKeyFactory } from '../../../../../org/allbinary/game/input/GameKeyFactory.js';
-
-    
+      
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-
-    
+      
 import { InputFactory } from '../../../../../org/allbinary/game/input/InputFactory.js';
-
-    
+      
 import { InputProcessor } from '../../../../../org/allbinary/game/input/InputProcessor.js';
-
-    
+      
 import { PlatformKeyFactory } from '../../../../../org/allbinary/game/input/PlatformKeyFactory.js';
-
-    
+      
 import { DownKeyEventHandler } from '../../../../../org/allbinary/game/input/event/DownKeyEventHandler.js';
-
-    
+      
 import { GameKeyEvent } from '../../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { GameKeyEventFactory } from '../../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
-
-    
+      
 import { UpGameKeyEventHandler } from '../../../../../org/allbinary/game/input/event/UpGameKeyEventHandler.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

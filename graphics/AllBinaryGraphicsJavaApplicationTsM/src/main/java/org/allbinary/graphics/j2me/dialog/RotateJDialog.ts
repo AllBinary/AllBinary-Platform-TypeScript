@@ -29,20 +29,15 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
-
-    
+      
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { HashMapJDialogListenerInterface } from '../../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

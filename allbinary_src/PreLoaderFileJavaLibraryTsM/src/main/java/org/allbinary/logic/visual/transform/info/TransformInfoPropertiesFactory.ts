@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { Attr } from '../../../../../../org/w3c/dom/Attr.js';
-
-    
+      
 import { NamedNodeMap } from '../../../../../../org/w3c/dom/NamedNodeMap.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

@@ -27,44 +27,31 @@
             import { Long } from '../../java/lang/Long.js';
         
 import { Calendar } from '../../java/util/Calendar.js';
-
-    
+      
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { DynamicObjectData } from '../../org/allbinary/business/DynamicObjectData.js';
-
-    
+      
 import { EntryData } from '../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { BasicItemData } from '../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { CustomItemData } from '../../org/allbinary/business/user/commerce/inventory/item/custom/CustomItemData.js';
-
-    
+      
 import { CustomItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/customs/CustomItemsEntityFactory.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

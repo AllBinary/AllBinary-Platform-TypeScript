@@ -27,20 +27,15 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { ColorCacheFactory } from '../../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-
-    
+      
 import { ColorCacheable } from '../../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-
-    
+      
 import { AutomaticCacheInterface } from '../../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-
-    
+      
 
 
 

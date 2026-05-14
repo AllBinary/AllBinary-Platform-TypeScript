@@ -23,8 +23,7 @@
 
         
 import { BasketInterface } from '../../../../../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
-
-    
+      
 
 
 

@@ -25,17 +25,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryGameLayer } from '../../../../org/allbinary/game/layer/AllBinaryGameLayer.js';
-
-    
+      
 import { GravityUtil } from '../../../../org/allbinary/game/physics/acceleration/GravityUtil.js';
-
-    
+      
 import { VelocityProperties } from '../../../../org/allbinary/game/physics/velocity/VelocityProperties.js';
-
-    
+      
 import { BasicDecimal } from '../../../../org/allbinary/logic/math/BasicDecimal.js';
-
-    
+      
 
 
 

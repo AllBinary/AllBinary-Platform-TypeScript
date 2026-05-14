@@ -23,8 +23,7 @@
 
         
 import { Gauge } from '../../../../javax/microedition/lcdui/Gauge.js';
-
-    
+      
 
 
 

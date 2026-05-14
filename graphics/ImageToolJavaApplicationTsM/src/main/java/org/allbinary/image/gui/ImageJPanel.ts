@@ -23,20 +23,15 @@
 
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

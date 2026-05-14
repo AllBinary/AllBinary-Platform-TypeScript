@@ -11,11 +11,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { GameAdState } from '../../../../org/allbinary/game/GameAdState.js';
-
-    
+      
 import { SoftwareInformation } from '../../../../org/allbinary/logic/system/SoftwareInformation.js';
-
-    
+      
 
 
 

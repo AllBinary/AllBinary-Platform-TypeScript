@@ -23,29 +23,21 @@
 
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../../../../java/util/Set.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { MediaData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaData.js';
-
-    
+      
 import { MediaIOUtil } from '../../../../../../../../org/allbinary/logic/visual/media/MediaIOUtil.js';
-
-    
+      
 import { MediaTypeData } from '../../../../../../../../org/allbinary/logic/visual/media/MediaTypeData.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

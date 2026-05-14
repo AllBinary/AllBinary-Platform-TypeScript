@@ -27,26 +27,19 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { ColorCacheFactory } from '../../../../../org/allbinary/graphics/color/ColorCacheFactory.js';
-
-    
+      
 import { ColorCacheable } from '../../../../../org/allbinary/graphics/color/ColorCacheable.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

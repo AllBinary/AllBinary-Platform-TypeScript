@@ -23,23 +23,17 @@
 
         
 import { Bundle } from '../../../../../org/osgi/framework/Bundle.js';
-
-    
+      
 import { ServiceFactory } from '../../../../../org/osgi/framework/ServiceFactory.js';
-
-    
+      
 import { ServiceRegistration } from '../../../../../org/osgi/framework/ServiceRegistration.js';
-
-    
+      
 import { InputAutomationJFrame } from '../../../../../org/allbinary/input/automation/InputAutomationJFrame.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

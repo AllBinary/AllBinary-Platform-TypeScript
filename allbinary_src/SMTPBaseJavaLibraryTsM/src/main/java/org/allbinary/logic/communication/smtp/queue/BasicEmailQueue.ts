@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Transport } from '../../../../../../javax/mail/Transport.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { EmailInterface } from '../../../../../../org/allbinary/logic/communication/smtp/EmailInterface.js';
-
-    
+      
 import { BasicQueue } from '../../../../../../org/allbinary/logic/util/queue/BasicQueue.js';
-
-    
+      
 
 
 

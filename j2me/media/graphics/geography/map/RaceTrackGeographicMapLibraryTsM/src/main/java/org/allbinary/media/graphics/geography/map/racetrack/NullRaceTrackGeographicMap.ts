@@ -29,26 +29,19 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { AllBinaryTiledLayer } from '../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { Layer } from '../../../../../../../org/allbinary/layer/Layer.js';
-
-    
+      
 import { BasicGeographicMapCellPositionFactory } from '../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMapCellPositionFactory.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { GeographicMapCellPositionFactoryInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionFactoryInterface.js';
-
-    
+      
 import { GeographicMapCellType } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellType.js';
-
-    
+      
 
 
 

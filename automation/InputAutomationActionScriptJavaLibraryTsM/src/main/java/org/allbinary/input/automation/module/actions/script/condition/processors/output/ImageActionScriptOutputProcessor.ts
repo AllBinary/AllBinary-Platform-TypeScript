@@ -27,23 +27,17 @@
             import { Long } from '../../../../../../../../../../java/lang/Long.js';
         
 import { Vector } from '../../../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { InputImageIOInterfaceFactory } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageIOInterfaceFactory.js';
-
-    
+      
 import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ImageIOInterface } from '../../../../../../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

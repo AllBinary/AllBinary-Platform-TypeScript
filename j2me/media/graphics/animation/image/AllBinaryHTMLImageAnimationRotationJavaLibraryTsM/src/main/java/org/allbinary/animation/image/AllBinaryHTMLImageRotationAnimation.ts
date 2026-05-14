@@ -25,38 +25,27 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { ImageCopyUtil } from '../../../../org/allbinary/media/image/ImageCopyUtil.js';
-
-    
+      
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-
-    
+      
 import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRotationUtil.js';
-
-    
+      
 import { PlaynMutableImage } from '../../../../org/microemu/device/playn/PlaynMutableImage.js';
-
-    
+      
 import { CanvasImage } from '../../../../playn/core/CanvasImage.js';
-
-    
+      
 import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
-
-    
+      
 
 
 

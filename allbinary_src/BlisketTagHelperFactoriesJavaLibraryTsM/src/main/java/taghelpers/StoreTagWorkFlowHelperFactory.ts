@@ -25,20 +25,15 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { HashMap } from '../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { TagHelperFactory } from '../admin/taghelpers/TagHelperFactory.js';
-
-    
+      
 import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LicensingException } from '../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 
 
 

@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { OpenGLESImage } from '../../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

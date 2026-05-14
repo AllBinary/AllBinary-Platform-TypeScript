@@ -27,14 +27,11 @@
             import { Integer } from '../../../../../../../../../java/lang/Integer.js';
         
 import { swing } from '../../../../../../../../../javax/swing.js';
-
-    
+      
 import { KeyStrokeMap } from '../../../../../../../../../abbot/tester/KeyStrokeMap.js';
-
-    
+      
 import { KeySingletonFactory } from '../../../../../../../../../org/allbinary/input/KeySingletonFactory.js';
-
-    
+      
 
 
 

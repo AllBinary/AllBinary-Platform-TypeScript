@@ -25,41 +25,29 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GL } from '../../../../../javax/microedition/khronos/opengles/GL.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Animation } from '../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { NullAnimationFactory } from '../../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { CollidableAlwaysPickupNeverCollideBehaviorFactory } from '../../../../../org/allbinary/game/collision/CollidableAlwaysPickupNeverCollideBehaviorFactory.js';
-
-    
+      
 import { DestroyedLayerProcessor } from '../../../../../org/allbinary/game/combat/destroy/DestroyedLayerProcessor.js';
-
-    
+      
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-
-    
+      
 import { MultiPlayerGameLayer } from '../../../../../org/allbinary/game/multiplayer/layer/MultiPlayerGameLayer.js';
-
-    
+      
 import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-
-    
+      
 import { Rectangle } from '../../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { OpenGLSurfaceChangedInterface } from '../../../../../org/allbinary/image/opengles/OpenGLSurfaceChangedInterface.js';
-
-    
+      
 import { ViewPosition } from '../../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

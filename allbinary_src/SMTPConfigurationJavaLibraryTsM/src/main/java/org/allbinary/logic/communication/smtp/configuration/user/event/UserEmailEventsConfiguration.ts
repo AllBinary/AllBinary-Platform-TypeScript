@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { UserEmailEventListenerInterface } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
-
-    
+      
 import { UserEmailEventNameData } from '../../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

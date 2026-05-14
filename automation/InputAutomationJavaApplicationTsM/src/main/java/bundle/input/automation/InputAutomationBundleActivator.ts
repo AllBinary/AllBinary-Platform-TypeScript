@@ -27,41 +27,29 @@
             import { Thread } from '../../../java/lang/Thread.js';
         
 import { BundleActivator } from '../../../org/osgi/framework/BundleActivator.js';
-
-    
+      
 import { BundleContext } from '../../../org/osgi/framework/BundleContext.js';
-
-    
+      
 import { InputAutomationConfigurationModuleChangeListener } from '../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
-
-    
+      
 import { InputAutomationRobotChangeListener } from '../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
-
-    
+      
 import { InputAutomationJFrame } from '../../../org/allbinary/input/automation/InputAutomationJFrame.js';
-
-    
+      
 import { InputAutomationModuleServiceConsumer } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleServiceConsumer.js';
-
-    
+      
 import { InputAutomationNewBundleRunnable } from '../../../org/allbinary/input/automation/module/osgi/InputAutomationNewBundleRunnable.js';
-
-    
+      
 import { InputAutomationServiceFactory } from '../../../org/allbinary/input/automation/osgi/InputAutomationServiceFactory.js';
-
-    
+      
 import { InputAutomationRobotServiceConsumer } from '../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotServiceConsumer.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { OSGIActivatorUtil } from '../../../org/allbinary/osgi/OSGIActivatorUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

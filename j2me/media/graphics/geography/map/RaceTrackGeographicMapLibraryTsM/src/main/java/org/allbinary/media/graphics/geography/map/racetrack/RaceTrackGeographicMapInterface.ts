@@ -23,8 +23,7 @@
 
         
 import { GeographicMapInterface } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapInterface.js';
-
-    
+      
 
 
 

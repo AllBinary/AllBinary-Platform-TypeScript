@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CapturedImageInputOutput } from '../../../../../org/allbinary/input/media/image/capture/CapturedImageInputOutput.js';
-
-    
+      
 import { ComparisonImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/ComparisonImageInputOutput.js';
-
-    
+      
 import { MotionRectanglesImageInputOutput } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectanglesImageInputOutput.js';
-
-    
+      
 import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-
-    
+      
 
 
 

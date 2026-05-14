@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-
-    
+      
 import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-
-    
+      
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-
-    
+      
 import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/NoOperatingSystem.js';
-
-    
+      
 import { OperatingSystems } from '../../../../../../org/allbinary/logic/system/os/OperatingSystems.js';
-
-    
+      
 import { SystemProperties } from '../../../../../../org/allbinary/logic/system/os/SystemProperties.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

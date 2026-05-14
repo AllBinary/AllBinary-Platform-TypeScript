@@ -25,26 +25,19 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PickedUpLayerInterface } from '../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterface.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { CollidableInterfaceCompositeInterface } from '../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
-
-    
+      
 import { CollisionType } from '../../../../org/allbinary/game/collision/CollisionType.js';
-
-    
+      
 import { CollisionTypeFactory } from '../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
-
-    
+      
 import { CollidableDestroyableDamageableBehavior } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
-
-    
+      
 import { CollidableDestroyableDamageableLayer } from '../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableLayer.js';
-
-    
+      
 
 
 

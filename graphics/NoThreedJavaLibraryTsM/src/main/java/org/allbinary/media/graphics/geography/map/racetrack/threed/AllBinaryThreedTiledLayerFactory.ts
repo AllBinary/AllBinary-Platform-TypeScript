@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { AllBinaryTiledLayer } from '../../../../../../../../org/allbinary/game/layer/AllBinaryTiledLayer.js';
-
-    
+      
 import { RaceTrackData } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackData.js';
-
-    
+      
 import { RaceTrackInfo } from '../../../../../../../../org/allbinary/media/graphics/geography/map/racetrack/RaceTrackInfo.js';
-
-    
+      
 
 
 

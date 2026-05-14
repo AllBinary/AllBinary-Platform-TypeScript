@@ -27,59 +27,41 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { GameAdStateFactory } from '../../../../../../org/allbinary/business/advertisement/GameAdStateFactory.js';
-
-    
+      
 import { GameAdState } from '../../../../../../org/allbinary/game/GameAdState.js';
-
-    
+      
 import { GameNotification } from '../../../../../../org/allbinary/game/layer/hud/basic/notification/GameNotification.js';
-
-    
+      
 import { GameNotificationHud } from '../../../../../../org/allbinary/game/layer/hud/basic/notification/GameNotificationHud.js';
-
-    
+      
 import { GameNotificationEventHandler } from '../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEventHandler.js';
-
-    
+      
 import { CustomGPoint } from '../../../../../../org/allbinary/graphics/CustomGPoint.js';
-
-    
+      
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { BasicColor } from '../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { MyFont } from '../../../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { GameTickTimeDelayHelper } from '../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-
-    
+      
 import { GameTickTimeDelayHelperFactory } from '../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

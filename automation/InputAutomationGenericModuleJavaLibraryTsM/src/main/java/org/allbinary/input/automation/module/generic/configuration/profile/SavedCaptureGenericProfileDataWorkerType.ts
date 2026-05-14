@@ -23,8 +23,7 @@
 
         
 import { InputImageType } from '../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-
-    
+      
 
 
 

@@ -27,17 +27,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AndroidInfoFactory } from '../../../../../../org/allbinary/android/AndroidInfoFactory.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

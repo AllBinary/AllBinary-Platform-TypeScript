@@ -29,17 +29,13 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { LayerDistanceUtil } from '../../../../org/allbinary/math/LayerDistanceUtil.js';
-
-    
+      
 import { PriorityRunnable } from '../../../../org/allbinary/thread/PriorityRunnable.js';
-
-    
+      
 import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 
 
 

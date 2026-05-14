@@ -23,14 +23,11 @@
 
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { ImageModifierUtil } from '../../../../org/allbinary/media/image/ImageModifierUtil.js';
-
-    
+      
 
 
 

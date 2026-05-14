@@ -44,7 +44,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        //extends ValidationComponentInterface, ValidationInterface, ComponentInterface, DomNodeInterface, DataMappingInterface
 export interface WorkFlowInterface {
         
 

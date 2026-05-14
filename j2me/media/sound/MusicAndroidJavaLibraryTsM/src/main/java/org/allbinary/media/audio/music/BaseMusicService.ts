@@ -19,35 +19,25 @@
             import { Runnable } from '../../../../../java/lang/Runnable.js';
         
 import { Service } from '../../../../../android/app/Service.js';
-
-    
+      
 import { Intent } from '../../../../../android/content/Intent.js';
-
-    
+      
 import { MediaPlayer } from '../../../../../android/media/MediaPlayer.js';
-
-    
+      
 import { IBinder } from '../../../../../android/os/IBinder.js';
-
-    
+      
 import { NullAndroidCanvas } from '../../../../../org/allbinary/android/NullAndroidCanvas.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonStateStrings } from '../../../../../org/allbinary/string/CommonStateStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
-
-    
+      
 
 
 

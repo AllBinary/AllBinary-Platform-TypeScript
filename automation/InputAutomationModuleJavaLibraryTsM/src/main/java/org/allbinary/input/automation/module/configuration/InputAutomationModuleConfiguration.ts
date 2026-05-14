@@ -27,62 +27,43 @@
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
 import { XmlAccessType } from '../../../../../../javax/xml/bind/annotation/XmlAccessType.js';
-
-    
+      
 import { XmlAccessorType } from '../../../../../../javax/xml/bind/annotation/XmlAccessorType.js';
-
-    
+      
 import { XmlElement } from '../../../../../../javax/xml/bind/annotation/XmlElement.js';
-
-    
+      
 import { XmlRootElement } from '../../../../../../javax/xml/bind/annotation/XmlRootElement.js';
-
-    
+      
 import { XmlType } from '../../../../../../javax/xml/bind/annotation/XmlType.js';
-
-    
+      
 import { DynamicObjectData } from '../../../../../../org/allbinary/business/DynamicObjectData.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { ModDomHelper } from '../../../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { InputAutomationData } from '../../../../../../org/allbinary/input/automation/InputAutomationData.js';
-
-    
+      
 import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
-
-    
+      
 import { InputAutomationModuleFactoryInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbeFactory } from '../../../../../../org/allbinary/logic/system/loader/AbeFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

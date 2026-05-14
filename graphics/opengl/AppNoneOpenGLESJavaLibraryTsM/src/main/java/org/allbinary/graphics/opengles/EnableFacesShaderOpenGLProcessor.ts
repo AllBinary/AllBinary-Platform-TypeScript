@@ -9,11 +9,9 @@
 
         
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { ObjectThreedOpenGLProcessor } from '../../../../org/allbinary/graphics/threed/min3d/renderer/processor/ObjectThreedOpenGLProcessor.js';
-
-    
+      
 
 
 

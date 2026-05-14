@@ -9,29 +9,21 @@
 
         
 import { InputStream } from '../../../java/io/InputStream.js';
-
-    
+      
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Bitmap } from '../../../android/graphics/Bitmap.js';
-
-    
+      
 import { BitmapFactory } from '../../../android/graphics/BitmapFactory.js';
-
-    
+      
 import { IOException } from '../../../java/io/IOException.js';
-
-    
+      
 import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
-
-    
+      
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-
-    
+      
 import { AndroidImageInterface } from '../../../org/microemu/android/device/AndroidImageInterface.js';
-
-    
+      
 
 
 
@@ -124,6 +116,7 @@ var inputStream = inputStream
 
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return new OpenGLBitmap(
+
                                     (image as AndroidImageInterface).getBitmap());
     
 }

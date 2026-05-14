@@ -13,23 +13,17 @@
             import { System } from '../../../java/lang/System.js';
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { SynchObject } from '../../../org/allbinary/thread/SynchObject.js';
-
-    
+      
 import { BasicArrayList } from '../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

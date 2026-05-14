@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { ImageComparisonResult } from '../../../../../../org/allbinary/media/image/comparison/ImageComparisonResult.js';
-
-    
+      
 
 
 

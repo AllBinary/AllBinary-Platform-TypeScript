@@ -27,62 +27,43 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { Calendar } from '../../java/util/Calendar.js';
-
-    
+      
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { TagSupport } from '../../javax/servlet/jsp/tagext/TagSupport.js';
-
-    
+      
 import { UserInterface } from '../../org/allbinary/business/user/UserInterface.js';
-
-    
+      
 import { BasicUserRole } from '../../org/allbinary/business/user/role/BasicUserRole.js';
-
-    
+      
 import { UserRole } from '../../org/allbinary/business/user/role/UserRole.js';
-
-    
+      
 import { UserRoleFactory } from '../../org/allbinary/business/user/role/UserRoleFactory.js';
-
-    
+      
 import { UserEntityFactory } from '../../org/allbinary/data/tables/user/UserEntityFactory.js';
-
-    
+      
 import { UserEntityInterface } from '../../org/allbinary/data/tables/user/UserEntityInterface.js';
-
-    
+      
 import { GLOBALS2 } from '../../org/allbinary/globals/GLOBALS2.js';
-
-    
+      
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BooleanFactory } from '../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
-
-    
+      
 import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

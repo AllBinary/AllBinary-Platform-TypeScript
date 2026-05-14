@@ -25,11 +25,9 @@
             import { IllegalArgumentException } from '../../../java/lang/IllegalArgumentException.js';
         
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

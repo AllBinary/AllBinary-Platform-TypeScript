@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
-
-    
+      
 import { GenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfileDataWorkerType.js';
-
-    
+      
 import { SavedCaptureGenericProfileDataWorkerType } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/SavedCaptureGenericProfileDataWorkerType.js';
-
-    
+      
 import { CaptureWorkerInterface } from '../../../../../../org/allbinary/input/media/image/capture/CaptureWorkerInterface.js';
-
-    
+      
 import { ScreenCaptureImagesWorker } from '../../../../../../org/allbinary/input/media/image/capture/ScreenCaptureImagesWorker.js';
-
-    
+      
 
 
 

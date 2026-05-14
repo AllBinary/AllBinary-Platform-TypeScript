@@ -25,62 +25,43 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { FileOutputStream } from '../../../../java/io/FileOutputStream.js';
-
-    
+      
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-
-    
+      
 import { Canvas } from '../../../../android/graphics/Canvas.js';
-
-    
+      
 import { Paint } from '../../../../android/graphics/Paint.js';
-
-    
+      
 import { Rect } from '../../../../android/graphics/Rect.js';
-
-    
+      
 import { Typeface } from '../../../../android/graphics/Typeface.js';
-
-    
+      
 import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/CanvasStrings.js';
-
-    
+      
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-
-    
+      
 import { OpenGLESImage } from '../../../../org/allbinary/image/opengles/OpenGLESImage.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-
-    
+      
 import { AndroidImmutableImage } from '../../../../org/microemu/android/device/AndroidImmutableImage.js';
-
-    
+      
 
 
 
@@ -155,6 +136,7 @@ this.logUtil!.putF(path, this, commonStrings!.CONSTRUCTOR);
     
 
     var bitmap: Bitmap = 
+
                                     (getImage as AndroidImageInterface).getBitmap()!;
 ;
     

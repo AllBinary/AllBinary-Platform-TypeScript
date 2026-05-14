@@ -27,29 +27,21 @@
             import { RuntimeException } from '../../../../../../java/lang/RuntimeException.js';
         
 import { HashMap } from '../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { CategoryData } from '../../../../../../org/allbinary/business/category/CategoryData.js';
-
-    
+      
 import { CategoryHierarchyInterface } from '../../../../../../org/allbinary/business/category/hierarchy/CategoryHierarchyInterface.js';
-
-    
+      
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
-
-    
+      
 import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/ProcessPaintable.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

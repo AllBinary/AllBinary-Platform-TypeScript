@@ -23,23 +23,17 @@
 
         
 import { GPoint } from '../../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { TsUtil } from '../../../../../../org/allbinary/TsUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CacheableInterface } from '../../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-
-    
+      
 import { ColorDelta } from '../../../../../../org/allbinary/media/image/comparison/color/ColorDelta.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

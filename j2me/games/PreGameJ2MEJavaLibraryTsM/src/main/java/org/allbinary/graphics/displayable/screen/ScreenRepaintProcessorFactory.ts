@@ -23,14 +23,11 @@
 
         
 import { Displayable } from '../../../../../javax/microedition/lcdui/Displayable.js';
-
-    
+      
 import { J2MEUtil } from '../../../../../org/allbinary/J2MEUtil.js';
-
-    
+      
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 
 
 

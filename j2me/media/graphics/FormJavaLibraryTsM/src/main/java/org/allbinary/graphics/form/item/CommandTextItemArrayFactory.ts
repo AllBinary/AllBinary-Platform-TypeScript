@@ -23,35 +23,25 @@
 
         
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { Command } from '../../../../../javax/microedition/lcdui/Command.js';
-
-    
+      
 import { ImageItem } from '../../../../../javax/microedition/lcdui/ImageItem.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { ScreenInfo } from '../../../../../org/allbinary/graphics/form/ScreenInfo.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

@@ -27,29 +27,21 @@
             import { Integer } from '../java/lang/Integer.js';
         
 import { HashMap } from '../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { TagHelper } from '../admin/taghelpers/TagHelper.js';
-
-    
+      
 import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StoreTagWorkFlowFactory } from '../org/allbinary/logic/control/workflow/StoreTagWorkFlowFactory.js';
-
-    
+      
 import { StoreWorkFlowInterface } from '../org/allbinary/logic/control/workflow/StoreWorkFlowInterface.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 
 
 

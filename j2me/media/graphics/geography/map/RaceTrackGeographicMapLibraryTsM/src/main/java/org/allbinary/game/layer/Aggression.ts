@@ -25,8 +25,7 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 
 
 

@@ -23,17 +23,13 @@
 
         
 import { MutableTreeNode } from '../../../../../../../../javax/swing/tree/MutableTreeNode.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ProfileActionScriptItemInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptItemInterface.js';
-
-    
+      
 import { CustomTreeNodeInterface } from '../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
-
-    
+      
 
 
 

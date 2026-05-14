@@ -25,50 +25,35 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { StringReader } from '../../../../../../java/io/StringReader.js';
-
-    
+      
 import { StringWriter } from '../../../../../../java/io/StringWriter.js';
-
-    
+      
 import { Writer } from '../../../../../../java/io/Writer.js';
-
-    
+      
 import { DocumentBuilderFactory } from '../../../../../../javax/xml/parsers/DocumentBuilderFactory.js';
-
-    
+      
 import { OutputKeys } from '../../../../../../javax/xml/transform/OutputKeys.js';
-
-    
+      
 import { Transformer } from '../../../../../../javax/xml/transform/Transformer.js';
-
-    
+      
 import { TransformerFactory } from '../../../../../../javax/xml/transform/TransformerFactory.js';
-
-    
+      
 import { DOMSource } from '../../../../../../javax/xml/transform/dom/DOMSource.js';
-
-    
+      
 import { StreamResult } from '../../../../../../javax/xml/transform/stream/StreamResult.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { BooleanFactory } from '../../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { CharacterSetData } from '../../../../../../org/allbinary/logic/java/characters/CharacterSetData.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { InputSource } from '../../../../../../org/xml/sax/InputSource.js';
-
-    
+      
 
 
 

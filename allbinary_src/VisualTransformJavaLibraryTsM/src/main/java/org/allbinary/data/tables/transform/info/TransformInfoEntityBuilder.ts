@@ -23,14 +23,11 @@
 
         
 import { TransformInfoHttpStoreFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpStoreFactory.js';
-
-    
+      
 import { TransformInfoObjectConfigAndManipulatorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigAndManipulatorFactory.js';
-
-    
+      
 import { TransformInfoObjectConfigGeneratorFactory } from '../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/generator/TransformInfoObjectConfigGeneratorFactory.js';
-
-    
+      
 
 
 

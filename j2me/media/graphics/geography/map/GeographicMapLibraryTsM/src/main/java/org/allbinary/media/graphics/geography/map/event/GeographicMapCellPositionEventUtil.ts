@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
-
-    
+      
 import { GeographicMapCellPositionTracking } from '../../../../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPositionTracking.js';
-
-    
+      
 
 
 

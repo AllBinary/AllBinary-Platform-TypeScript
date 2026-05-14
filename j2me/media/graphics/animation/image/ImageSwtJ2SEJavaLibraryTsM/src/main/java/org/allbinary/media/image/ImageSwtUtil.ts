@@ -23,14 +23,11 @@
 
         
 import { Color } from '../../../../org/eclipse/swt/graphics/Color.js';
-
-    
+      
 import { RGB } from '../../../../org/eclipse/swt/graphics/RGB.js';
-
-    
+      
 import { BareMain } from '../../../../org/microemu/app/BareMain.js';
-
-    
+      
 
 
 

@@ -23,23 +23,17 @@
 
         
 import { HashMap } from '../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../java/util/Vector.js';
-
-    
+      
 import { BasicItemData } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemData.js';
-
-    
+      
 import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 
 
 

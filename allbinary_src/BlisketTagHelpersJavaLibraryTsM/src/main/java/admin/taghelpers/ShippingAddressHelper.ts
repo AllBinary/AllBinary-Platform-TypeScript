@@ -27,47 +27,33 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-
-    
+      
 import { UserData } from '../../org/allbinary/business/user/UserData.js';
-
-    
+      
 import { StreetAddress } from '../../org/allbinary/business/user/address/StreetAddress.js';
-
-    
+      
 import { BillingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/billing/BillingAddressesEntityFactory.js';
-
-    
+      
 import { ShippingAddressesEntity } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntity.js';
-
-    
+      
 import { ShippingAddressesEntityFactory } from '../../org/allbinary/data/tables/user/address/shipping/ShippingAddressesEntityFactory.js';
-
-    
+      
 import { WeblisketSession } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSession.js';
-
-    
+      
 import { WeblisketSessionData } from '../../org/allbinary/logic/communication/http/request/session/WeblisketSessionData.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-
-    
+      
 import { StringUtil } from '../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

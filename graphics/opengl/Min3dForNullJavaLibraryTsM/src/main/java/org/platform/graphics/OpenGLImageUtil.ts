@@ -11,17 +11,13 @@
             import { RuntimeException } from '../../../java/lang/RuntimeException.js';
         
 import { IOException } from '../../../java/io/IOException.js';
-
-    
+      
 import { InputStream } from '../../../java/io/InputStream.js';
-
-    
+      
 import { OpenGLBitmap } from '../../../org/allbinary/graphics/OpenGLBitmap.js';
-
-    
+      
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 
 
 

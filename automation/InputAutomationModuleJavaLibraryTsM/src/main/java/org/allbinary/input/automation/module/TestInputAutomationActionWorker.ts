@@ -27,26 +27,19 @@
             import { Thread } from '../../../../../java/lang/Thread.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { Set } from '../../../../../java/util/Set.js';
-
-    
+      
 import { InputRobotFactory } from '../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-
-    
+      
 import { InputRobotInterface } from '../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/ImageComparatorConstraintsInterface.js';
-
-    
+      
 import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinary/media/image/comparison/motion/MotionRectangleConstraintsInterface.js';
-
-    
+      
 
 
 

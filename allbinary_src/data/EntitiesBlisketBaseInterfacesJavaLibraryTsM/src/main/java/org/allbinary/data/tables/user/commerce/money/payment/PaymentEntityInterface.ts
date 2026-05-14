@@ -25,14 +25,11 @@
             import { Integer } from '../../../../../../../../java/lang/Integer.js';
         
 import { Vector } from '../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
-
-    
+      
 import { BasicDataTableInterface } from '../../../../../../../../org/allbinary/data/tables/BasicDataTableInterface.js';
-
-    
+      
 
 
 

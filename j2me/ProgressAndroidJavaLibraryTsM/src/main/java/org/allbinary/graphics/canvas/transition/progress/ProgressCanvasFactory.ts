@@ -23,17 +23,13 @@
 
         
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { NullPaintable } from '../../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-
-    
+      
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

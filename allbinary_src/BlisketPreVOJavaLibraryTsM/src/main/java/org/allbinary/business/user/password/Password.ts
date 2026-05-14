@@ -27,35 +27,25 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { Random } from '../../../../../java/util/Random.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { EntryData } from '../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { UserData } from '../../../../../org/allbinary/business/user/UserData.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SuperCrypt } from '../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

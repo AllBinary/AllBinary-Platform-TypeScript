@@ -23,8 +23,7 @@
 
         
 import { GameConfiguration } from '../../../../../org/allbinary/game/configuration/GameConfiguration.js';
-
-    
+      
 
 
 

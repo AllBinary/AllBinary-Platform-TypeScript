@@ -23,8 +23,7 @@
 
         
 import { GPoint } from '../../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 
 
 

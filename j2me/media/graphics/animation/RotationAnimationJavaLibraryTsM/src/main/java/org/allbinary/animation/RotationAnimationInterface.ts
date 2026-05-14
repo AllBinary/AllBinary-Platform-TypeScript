@@ -23,11 +23,9 @@
 
         
 import { DirectionalInterface } from '../../../org/allbinary/direction/DirectionalInterface.js';
-
-    
+      
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 
 
 

@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-
-    
+      
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-
-    
+      
 
 
 

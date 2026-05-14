@@ -27,29 +27,21 @@
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../../../../../java/util/Set.js';
-
-    
+      
 import { Vector } from '../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { UserInterface } from '../../../../../../../../org/allbinary/business/user/UserInterface.js';
-
-    
+      
 import { UserRole } from '../../../../../../../../org/allbinary/business/user/role/UserRole.js';
-
-    
+      
 import { UserEntityFactory } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityFactory.js';
-
-    
+      
 import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/tables/user/UserEntityInterface.js';
-
-    
+      
 
 
 

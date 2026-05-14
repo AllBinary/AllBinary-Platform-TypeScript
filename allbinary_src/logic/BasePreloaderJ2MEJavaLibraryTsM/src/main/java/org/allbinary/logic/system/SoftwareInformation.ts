@@ -23,14 +23,11 @@
 
         
 import { KotlinUtil } from '../../../../org/allbinary/KotlinUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

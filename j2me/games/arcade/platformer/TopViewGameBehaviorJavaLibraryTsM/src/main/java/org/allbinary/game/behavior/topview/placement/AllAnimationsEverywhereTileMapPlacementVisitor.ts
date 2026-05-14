@@ -23,8 +23,7 @@
 
         
 import { TiledMap } from '../../../../../../org/mapeditor/core/TiledMap.js';
-
-    
+      
 
 
 

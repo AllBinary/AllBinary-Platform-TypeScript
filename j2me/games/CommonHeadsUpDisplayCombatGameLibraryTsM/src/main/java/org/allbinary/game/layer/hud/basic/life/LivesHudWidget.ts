@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Animation } from '../../../../../../../org/allbinary/animation/Animation.js';
-
-    
+      
 import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
-
-    
+      
 import { Life } from '../../../../../../../org/allbinary/game/life/Life.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { DisplayChangeEvent } from '../../../../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-
-    
+      
 import { PaintableInterface } from '../../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 
 
 

@@ -27,38 +27,27 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { RenderedImage } from '../../../../java/awt/image/RenderedImage.js';
-
-    
+      
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { ImageIO } from '../../../../javax/imageio/ImageIO.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-
-    
+      
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-
-    
+      
 import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
-
-    
+      
 import { MirrorImageUtil } from '../../../../org/allbinary/media/image/MirrorImageUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

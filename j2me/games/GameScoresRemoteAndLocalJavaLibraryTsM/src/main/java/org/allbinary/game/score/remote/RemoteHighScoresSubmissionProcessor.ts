@@ -27,41 +27,29 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { GameInfoData } from '../../../../../org/allbinary/game/GameInfoData.js';
-
-    
+      
 import { GameConfigurationCentral } from '../../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-
-    
+      
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-
-    
+      
 import { DisplayInfoSingleton } from '../../../../../org/allbinary/graphics/displayable/DisplayInfoSingleton.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { XmlRpcAbeClient } from '../../../../../org/allbinary/logic/communication/xmlrpc/XmlRpcAbeClient.js';
-
-    
+      
 import { BooleanFactory } from '../../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
-
-    
+      
 import { NoCrypt } from '../../../../../org/allbinary/logic/system/security/crypt/jcehelper/NoCrypt.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { HashtableUtil } from '../../../../../org/allbinary/util/HashtableUtil.js';
-
-    
+      
 
 
 

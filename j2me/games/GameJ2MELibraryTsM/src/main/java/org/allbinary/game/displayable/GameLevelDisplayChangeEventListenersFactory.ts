@@ -23,20 +23,15 @@
 
         
 import { DisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
-
-    
+      
 import { DisplayChangeEventListener } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventListener.js';
-
-    
+      
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

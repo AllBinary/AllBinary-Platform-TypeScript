@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { EntryData } from '../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { BooleanUtil } from '../../../../../../org/allbinary/logic/java/bool/BooleanUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

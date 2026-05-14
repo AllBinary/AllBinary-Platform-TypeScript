@@ -25,56 +25,39 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
-
-    
+      
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { GameConfigurationCentral } from '../../../../org/allbinary/game/configuration/GameConfigurationCentral.js';
-
-    
+      
 import { ChangedGameFeatureListener } from '../../../../org/allbinary/game/configuration/event/ChangedGameFeatureListener.js';
-
-    
+      
 import { InputFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/InputFeatureFactory.js';
-
-    
+      
 import { MainFeatureFactory } from '../../../../org/allbinary/game/configuration/feature/MainFeatureFactory.js';
-
-    
+      
 import { PlatformInputMappingFactory } from '../../../../org/allbinary/game/input/PlatformInputMappingFactory.js';
-
-    
+      
 import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
-
-    
+      
 import { FeaturedResourceRelativeRelationshipFactory } from '../../../../org/allbinary/game/resource/FeaturedResourceRelativeRelationshipFactory.js';
-
-    
+      
 import { ResourceInitialization } from '../../../../org/allbinary/game/resource/ResourceInitialization.js';
-
-    
+      
 import { ResourceLoadingLevelFactory } from '../../../../org/allbinary/game/resource/ResourceLoadingLevelFactory.js';
-
-    
+      
 import { ProgressCanvas } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvas.js';
-
-    
+      
 import { ProgressCanvasFactory } from '../../../../org/allbinary/graphics/canvas/transition/progress/ProgressCanvasFactory.js';
-
-    
+      
 import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
-
-    
+      
 import { CompleteMotionGestureInputToGameMotionGestureInput } from '../../../../org/allbinary/input/motion/CompleteMotionGestureInputToGameMotionGestureInput.js';
-
-    
+      
 import { BasicTouchInputFactory } from '../../../../org/allbinary/input/motion/button/BasicTouchInputFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 
 
 

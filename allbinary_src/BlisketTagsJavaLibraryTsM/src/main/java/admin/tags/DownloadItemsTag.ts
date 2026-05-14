@@ -25,20 +25,15 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-
-    
+      
 import { Tag } from '../../javax/servlet/jsp/tagext/Tag.js';
-
-    
+      
 import { DownloadItemsHelperFactory } from '../../admin/taghelpers/DownloadItemsHelperFactory.js';
-
-    
+      
 import { DownloadItemsRequestHelperFactory } from '../../admin/taghelpers/DownloadItemsRequestHelperFactory.js';
-
-    
+      
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-
-    
+      
 
 
 

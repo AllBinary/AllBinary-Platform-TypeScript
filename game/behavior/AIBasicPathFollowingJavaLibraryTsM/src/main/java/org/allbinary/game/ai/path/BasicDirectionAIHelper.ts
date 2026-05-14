@@ -25,20 +25,15 @@
             import { Integer } from '../../../../../java/lang/Integer.js';
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Direction } from '../../../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { DirectionFactory } from '../../../../../org/allbinary/direction/DirectionFactory.js';
-
-    
+      
 import { AngleIncrementInfo } from '../../../../../org/allbinary/math/AngleIncrementInfo.js';
-
-    
+      
 import { AngleInfo } from '../../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 
 
 

@@ -23,8 +23,7 @@
 
         
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-
-    
+      
 
 
 

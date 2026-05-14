@@ -25,47 +25,33 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LogConfigTypeFactory } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-
-    
+      
 import { LogConfigTypes } from '../../../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-
-    
+      
 import { ComponentFactory } from '../../../../../../org/allbinary/logic/system/hardware/components/ComponentFactory.js';
-
-    
+      
 import { HardwareComponentInterface } from '../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-
-    
+      
 import { Bridge } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Bridge.js';
-
-    
+      
 import { Ethernet } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Ethernet.js';
-
-    
+      
 import { HardDriveController } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/HardDriveController.js';
-
-    
+      
 import { Media } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Media.js';
-
-    
+      
 import { PCI } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/PCI.js';
-
-    
+      
 import { Unknown } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Unknown.js';
-
-    
+      
 import { Usb } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Usb.js';
-
-    
+      
 import { Video } from '../../../../../../org/allbinary/logic/system/hardware/components/linux/Video.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

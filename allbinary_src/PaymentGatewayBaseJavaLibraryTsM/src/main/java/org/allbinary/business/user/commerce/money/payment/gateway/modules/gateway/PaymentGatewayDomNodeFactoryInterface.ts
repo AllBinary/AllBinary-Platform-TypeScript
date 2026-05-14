@@ -23,11 +23,9 @@
 
         
 import { PaymentGatewayInterface } from '../../../../../../../../../../org/allbinary/business/user/commerce/money/payment/gateway/PaymentGatewayInterface.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 
 
 

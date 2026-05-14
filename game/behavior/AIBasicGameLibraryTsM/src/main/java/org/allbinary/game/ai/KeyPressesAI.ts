@@ -27,20 +27,15 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { GameInput } from '../../../../org/allbinary/game/input/GameInput.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { HashtableUtil } from '../../../../org/allbinary/util/HashtableUtil.js';
-
-    
+      
 
 
 

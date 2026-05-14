@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { LogoData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/logo/LogoData.js';
-
-    
+      
 import { LogoValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/logo/LogoValidation.js';
-
-    
+      
 import { TitleData } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleData.js';
-
-    
+      
 import { TitleValidation } from '../../../../../../../../../org/allbinary/logic/visual/transform/template/customizer/widgets/title/TitleValidation.js';
-
-    
+      
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

@@ -27,38 +27,27 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { ImageOutputData } from '../../../../../org/allbinary/input/automation/ImageOutputData.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LongUtil } from '../../../../../org/allbinary/logic/java/number/LongUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { AutomaticCacheInterface } from '../../../../../org/allbinary/logic/util/cache/AutomaticCacheInterface.js';
-
-    
+      
 import { MediaDataFactory } from '../../../../../org/allbinary/logic/visual/media/MediaDataFactory.js';
-
-    
+      
 import { ImagePersistanceUtil } from '../../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-
-    
+      
 import { BufferedImageCacheable } from '../../../../../org/allbinary/media/image/cache/BufferedImageCacheable.js';
-
-    
+      
 import { ImageIOInterface } from '../../../../../org/allbinary/media/image/io/ImageIOInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 
@@ -110,6 +99,7 @@ public constructor (){
                                     {
                                     
     var imageComparisonResultFrameCacheable: ImageComparisonResultFrameCacheable = 
+
                                     (getInstance as AutomaticCacheInterface).get(frame) as ImageComparisonResultFrameCacheable;
 ;
     

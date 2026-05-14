@@ -15,20 +15,15 @@
             import { Runnable } from '../../../java/lang/Runnable.js';
         
 import { Context } from '../../../android/content/Context.js';
-
-    
+      
 import { View } from '../../../android/view/View.js';
-
-    
+      
 import { Toast } from '../../../android/widget/Toast.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

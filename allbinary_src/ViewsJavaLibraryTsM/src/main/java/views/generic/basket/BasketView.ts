@@ -25,62 +25,43 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../java/util/Set.js';
-
-    
+      
 import { Vector } from '../../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { BasketData } from '../../../org/allbinary/business/user/commerce/inventory/basket/BasketData.js';
-
-    
+      
 import { BasketInterface } from '../../../org/allbinary/business/user/commerce/inventory/basket/BasketInterface.js';
-
-    
+      
 import { BasicItemView } from '../../../org/allbinary/business/user/commerce/inventory/item/BasicItemView.js';
-
-    
+      
 import { ItemInterface } from '../../../org/allbinary/business/user/commerce/inventory/item/ItemInterface.js';
-
-    
+      
 import { Money } from '../../../org/allbinary/business/user/commerce/money/Money.js';
-
-    
+      
 import { InventoryEntity } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntity.js';
-
-    
+      
 import { InventoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/item/InventoryEntityFactory.js';
-
-    
+      
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SearchData } from '../../../org/allbinary/logic/control/search/SearchData.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

@@ -2,8 +2,10 @@ import { View } from "../view/View";
 
 /*actual*/ export class ProgressBar extends View
 {
-
-  getMax(value: number):number {
+  setMax(value: number) {
+    throw new Error('Method not implemented.');
+  }
+  getMax(): number {
     throw new Error('Method not implemented.');
   }
   setIndeterminate(indeterminate: boolean) {

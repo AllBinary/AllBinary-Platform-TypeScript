@@ -25,17 +25,13 @@
             import { Long } from '../../../../java/lang/Long.js';
         
 import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
-
-    
+      
 import { ImageColorRangeResults } from '../../../../org/allbinary/media/image/analysis/ImageColorRangeResults.js';
-
-    
+      
 import { ImageColorResults } from '../../../../org/allbinary/media/image/analysis/ImageColorResults.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 
 
 

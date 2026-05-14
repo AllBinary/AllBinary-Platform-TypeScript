@@ -29,14 +29,11 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { HelpSet } from '../../../../javax/help/HelpSet.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 
 
 

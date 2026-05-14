@@ -27,41 +27,29 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { InputStream } from '../../../../java/io/InputStream.js';
-
-    
+      
 import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
-
-    
+      
 import { NullGL10 } from '../../../../org/allbinary/device/NullGL10.js';
-
-    
+      
 import { AllBinaryRendererBase3 } from '../../../../org/allbinary/graphics/opengles/renderer/AllBinaryRendererBase3.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { ImageCache } from '../../../../org/allbinary/image/ImageCache.js';
-
-    
+      
 import { ImageCacheFactory } from '../../../../org/allbinary/image/ImageCacheFactory.js';
-
-    
+      
 import { PreResourceImageUtil } from '../../../../org/allbinary/image/PreResourceImageUtil.js';
-
-    
+      
 import { SynchObject } from '../../../../org/allbinary/thread/SynchObject.js';
-
-    
+      
 
 
 

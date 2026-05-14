@@ -23,8 +23,7 @@
 
         
 import { RTSInterface } from '../../../../../org/allbinary/game/layer/RTSInterface.js';
-
-    
+      
 
 
 

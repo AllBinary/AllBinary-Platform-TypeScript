@@ -25,23 +25,17 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-
-    
+      
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
-
-    
+      
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
-
-    
+      
 import { Canvas } from '../../../../android/graphics/Canvas.js';
-
-    
+      
 import { Matrix } from '../../../../android/graphics/Matrix.js';
-
-    
+      
 import { AndroidImageInterface } from '../../../../org/microemu/android/device/AndroidImageInterface.js';
-
-    
+      
 
 
 
@@ -103,6 +97,7 @@ var rotationInDegrees = rotationInDegrees
                                     {
                                     
     var bitmap: Bitmap = 
+
                                     (image as AndroidImageInterface).getBitmap()!;
 ;
     
@@ -118,6 +113,7 @@ this.matrix.setRotate(rotationInDegrees, (width>>1), (height>>1));
     
 
     var canvas: Canvas = 
+
                                     (image as AndroidImageInterface).getCanvas()!;
 ;
     

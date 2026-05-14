@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../java/util/Vector.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { PATH_GLOBALS } from '../../../../../../org/allbinary/globals/PATH_GLOBALS.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { AbFileLocalInputStream } from '../../../../../../org/allbinary/logic/io/AbFileLocalInputStream.js';
-
-    
+      
 import { AbFile } from '../../../../../../org/allbinary/logic/io/file/AbFile.js';
-
-    
+      
 import { AbPath } from '../../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { Document } from '../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

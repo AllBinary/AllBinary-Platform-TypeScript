@@ -27,56 +27,39 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { LockedFeatureNotificationUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedFeatureNotificationUtil.js';
-
-    
+      
 import { LockedUtil } from '../../../../org/allbinary/logic/system/security/licensing/LockedUtil.js';
-
-    
+      
 import { Processor } from '../../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 import { AllBinaryGameCanvas } from '../../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-
-    
+      
 import { PreGameSelectorPaintable } from '../../../../org/allbinary/game/displayable/canvas/PreGameSelectorPaintable.js';
-
-    
+      
 import { GameKeyEventHandler } from '../../../../org/allbinary/game/input/event/GameKeyEventHandler.js';
-
-    
+      
 import { GameKeyEventUtil } from '../../../../org/allbinary/game/input/event/GameKeyEventUtil.js';
-
-    
+      
 import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { SecondaryPlayerQueueFactory } from '../../../../org/allbinary/media/audio/SecondaryPlayerQueueFactory.js';
-
-    
+      
 import { SelectSound } from '../../../../org/allbinary/media/audio/SelectSound.js';
-
-    
+      
 import { ABRunnable } from '../../../../org/allbinary/thread/ABRunnable.js';
-
-    
+      
 import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.js';
-
-    
+      
 
 
 

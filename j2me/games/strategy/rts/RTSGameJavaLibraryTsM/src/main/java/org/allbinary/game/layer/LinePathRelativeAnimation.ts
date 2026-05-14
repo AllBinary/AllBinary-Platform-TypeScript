@@ -23,14 +23,11 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
-
-    
+      
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-
-    
+      
 
 
 

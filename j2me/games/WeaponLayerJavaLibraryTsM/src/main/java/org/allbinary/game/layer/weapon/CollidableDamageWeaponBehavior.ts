@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CollidableHelperFactory } from '../../../../../org/allbinary/game/collision/CollidableHelperFactory.js';
-
-    
+      
 import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbinary/game/collision/CollidableInterfaceCompositeInterface.js';
-
-    
+      
 import { CollisionHelper } from '../../../../../org/allbinary/game/collision/CollisionHelper.js';
-
-    
+      
 import { CollisionType } from '../../../../../org/allbinary/game/collision/CollisionType.js';
-
-    
+      
 import { CollisionTypeFactory } from '../../../../../org/allbinary/game/collision/CollisionTypeFactory.js';
-
-    
+      
 import { LayerCollisionUtil } from '../../../../../org/allbinary/game/collision/LayerCollisionUtil.js';
-
-    
+      
 import { DamageableInterface } from '../../../../../org/allbinary/game/combat/damage/DamageableInterface.js';
-
-    
+      
 import { CollidableCompositeLayer } from '../../../../../org/allbinary/game/layer/CollidableCompositeLayer.js';
-
-    
+      
 import { CollidableDestroyableDamageableBehavior } from '../../../../../org/allbinary/game/layer/special/CollidableDestroyableDamageableBehavior.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

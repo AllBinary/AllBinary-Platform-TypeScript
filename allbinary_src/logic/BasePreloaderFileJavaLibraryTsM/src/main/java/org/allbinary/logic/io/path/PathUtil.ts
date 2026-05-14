@@ -25,14 +25,11 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { FilePathData } from '../../../../../org/allbinary/logic/io/file/FilePathData.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 
 
 

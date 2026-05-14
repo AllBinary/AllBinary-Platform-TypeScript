@@ -27,65 +27,45 @@
             import { Long } from '../../../java/lang/Long.js';
         
 import { Calendar } from '../../../java/util/Calendar.js';
-
-    
+      
 import { Vector } from '../../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { OrderData } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderData.js';
-
-    
+      
 import { OrderHistory } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderHistory.js';
-
-    
+      
 import { OrderHistoryData } from '../../../org/allbinary/business/user/commerce/inventory/order/OrderHistoryData.js';
-
-    
+      
 import { OrderHistoryEntityFactory } from '../../../org/allbinary/data/tables/user/commerce/inventory/order/OrderHistoryEntityFactory.js';
-
-    
+      
 import { DomNodeInterface } from '../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { GLOBALS2 } from '../../../org/allbinary/globals/GLOBALS2.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { TimeUtil } from '../../../org/allbinary/time/TimeUtil.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../org/w3c/dom/Node.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

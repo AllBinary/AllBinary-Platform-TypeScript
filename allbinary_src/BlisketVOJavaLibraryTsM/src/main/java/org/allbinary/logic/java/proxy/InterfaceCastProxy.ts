@@ -25,11 +25,9 @@
             import { Throwable } from '../../../../../java/lang/Throwable.js';
         
 import { Method } from '../../../../../java/lang/reflect/Method.js';
-
-    
+      
 import { Proxy } from '../../../../../java/lang/reflect/Proxy.js';
-
-    
+      
 
 
 

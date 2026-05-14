@@ -27,38 +27,27 @@
             import { Runnable } from '../../../java/lang/Runnable.js';
         
 import { J2MEUtil } from '../../../org/allbinary/J2MEUtil.js';
-
-    
+      
 import { RunnableCanvas } from '../../../org/allbinary/canvas/RunnableCanvas.js';
-
-    
+      
 import { AllBinaryGameCanvas } from '../../../org/allbinary/game/displayable/canvas/AllBinaryGameCanvas.js';
-
-    
+      
 import { DemoCanvas } from '../../../org/allbinary/game/displayable/canvas/DemoCanvas.js';
-
-    
+      
 import { GameCanvasRunnableInterface } from '../../../org/allbinary/game/displayable/canvas/GameCanvasRunnableInterface.js';
-
-    
+      
 import { RunnableCanvasSingleThreadStartRunnable } from '../../../org/allbinary/game/displayable/canvas/RunnableCanvasSingleThreadStartRunnable.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

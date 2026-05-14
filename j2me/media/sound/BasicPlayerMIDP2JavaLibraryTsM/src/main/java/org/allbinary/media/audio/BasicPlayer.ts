@@ -23,29 +23,21 @@
 
         
 import { Control } from '../../../../javax/microedition/media/Control.js';
-
-    
+      
 import { MediaException } from '../../../../javax/microedition/media/MediaException.js';
-
-    
+      
 import { Player, PlayerI } from '../../../../javax/microedition/media/Player.js';
-
-    
+      
 import { PlayerListener } from '../../../../javax/microedition/media/PlayerListener.js';
-
-    
+      
 import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 

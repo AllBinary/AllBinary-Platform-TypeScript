@@ -23,20 +23,15 @@
 
         
 import { GL10 } from '../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { Buffer } from '../../../java/nio/Buffer.js';
-
-    
+      
 import { FloatBuffer } from '../../../java/nio/FloatBuffer.js';
-
-    
+      
 import { IntBuffer } from '../../../java/nio/IntBuffer.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

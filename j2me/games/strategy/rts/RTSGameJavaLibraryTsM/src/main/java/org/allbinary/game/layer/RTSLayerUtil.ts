@@ -27,44 +27,31 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../java/util/Hashtable.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
-
-    
+      
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { WeaponProperties } from '../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-
-    
+      
 import { BasicGroupFactory } from '../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-
-    
+      
 import { Group } from '../../../../org/allbinary/game/identification/Group.js';
-
-    
+      
 import { PartInterface } from '../../../../org/allbinary/game/part/PartInterface.js';
-
-    
+      
 import { BasicWeaponPart } from '../../../../org/allbinary/game/part/weapon/BasicWeaponPart.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { BaseRaceTrackGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/racetrack/BaseRaceTrackGeographicMap.js';
-
-    
+      
 
 
 

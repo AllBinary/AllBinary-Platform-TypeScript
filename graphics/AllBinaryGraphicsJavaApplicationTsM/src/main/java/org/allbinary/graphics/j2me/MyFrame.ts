@@ -33,77 +33,53 @@
             import { Runnable } from '../../../../java/lang/Runnable.js';
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { swing } from '../../../../javax/swing.js';
-
-    
+      
 import { XslHelper } from '../../../../org/allbinary/data/tree/dom/XslHelper.js';
-
-    
+      
 import { DomHelper } from '../../../../org/allbinary/dom/DomHelper.js';
-
-    
+      
 import { NewWorkAreaJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/NewWorkAreaJDialog.js';
-
-    
+      
 import { RotateJDialog } from '../../../../org/allbinary/graphics/j2me/dialog/RotateJDialog.js';
-
-    
+      
 import { WorkAreaDom } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaDom.js';
-
-    
+      
 import { WorkAreaJPanel } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanel.js';
-
-    
+      
 import { WorkAreaJPanelInterface } from '../../../../org/allbinary/graphics/j2me/workarea/WorkAreaJPanelInterface.js';
-
-    
+      
 import { MyCanvasEvent } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEvent.js';
-
-    
+      
 import { MyCanvasEventService } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventService.js';
-
-    
+      
 import { MyCanvasEventSource } from '../../../../org/allbinary/graphics/j2me/workarea/canvas/event/MyCanvasEventSource.js';
-
-    
+      
 import { FileJDialog } from '../../../../org/allbinary/gui/dialog/FileJDialog.js';
-
-    
+      
 import { FileJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/FileJDialogListenerInterface.js';
-
-    
+      
 import { HashMapJDialogListenerInterface } from '../../../../org/allbinary/gui/dialog/HashMapJDialogListenerInterface.js';
-
-    
+      
 import { LOGGING } from '../../../../org/allbinary/log/LOGGING.js';
-
-    
+      
 import { GuiLog } from '../../../../org/allbinary/logic/communication/log/GuiLog.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

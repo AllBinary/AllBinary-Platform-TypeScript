@@ -23,14 +23,11 @@
 
         
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { AbPath } from '../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

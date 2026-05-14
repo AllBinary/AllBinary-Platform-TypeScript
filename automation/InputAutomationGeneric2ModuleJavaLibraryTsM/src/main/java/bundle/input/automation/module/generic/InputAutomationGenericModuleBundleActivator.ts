@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { InputAutomationGenericModuleServiceFactory } from '../../../../../org/allbinary/input/automation/module/generic/InputAutomationGenericModuleServiceFactory.js';
-
-    
+      
 import { InputAutomationModuleBundleActivator } from '../../../../../org/allbinary/input/automation/module/osgi/InputAutomationModuleBundleActivator.js';
-
-    
+      
 
 
 

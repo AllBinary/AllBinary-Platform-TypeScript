@@ -27,20 +27,15 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { PreLogUtil } from '../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 
 
 

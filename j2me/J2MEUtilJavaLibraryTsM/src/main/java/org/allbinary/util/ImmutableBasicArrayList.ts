@@ -23,8 +23,7 @@
 
         
 import { ForcedLogUtil } from '../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 
 
 

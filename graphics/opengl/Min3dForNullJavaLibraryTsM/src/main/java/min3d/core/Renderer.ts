@@ -23,11 +23,9 @@
 
         
 import { EGLConfig } from '../../javax/microedition/khronos/egl/EGLConfig.js';
-
-    
+      
 import { GL10 } from '../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 
 
 

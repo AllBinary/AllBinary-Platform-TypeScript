@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { StoreFrontsEntity } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntity.js';
-
-    
+      
 import { StoreFrontsEntityFactory } from '../../../../../../org/allbinary/data/tables/context/module/storefronts/StoreFrontsEntityFactory.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

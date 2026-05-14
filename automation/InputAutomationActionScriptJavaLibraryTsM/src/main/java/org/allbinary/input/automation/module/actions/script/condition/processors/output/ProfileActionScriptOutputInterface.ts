@@ -23,8 +23,7 @@
 
         
 import { ProfileActionScriptProcessorInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/processors/ProfileActionScriptProcessorInterface.js';
-
-    
+      
 
 
 

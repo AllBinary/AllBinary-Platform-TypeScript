@@ -23,14 +23,11 @@
 
         
 import { Enumeration } from '../../../java/util/Enumeration.js';
-
-    
+      
 import { Hashtable } from '../../../java/util/Hashtable.js';
-
-    
+      
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 
 
 

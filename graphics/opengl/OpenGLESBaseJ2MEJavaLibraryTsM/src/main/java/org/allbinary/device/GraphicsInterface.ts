@@ -23,11 +23,9 @@
 
         
 import { Font } from '../../../javax/microedition/lcdui/Font.js';
-
-    
+      
 import { FontDebugBase } from '../../../org/allbinary/graphics/font/FontDebugBase.js';
-
-    
+      
 
 
 

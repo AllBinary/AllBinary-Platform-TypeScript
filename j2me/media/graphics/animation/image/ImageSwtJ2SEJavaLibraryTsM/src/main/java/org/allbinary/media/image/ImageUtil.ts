@@ -25,50 +25,35 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { SWT } from '../../../../org/eclipse/swt/SWT.js';
-
-    
+      
 import { Canvas } from '../../../../org/eclipse/swt/widgets/Canvas.js';
-
-    
+      
 import { Composite } from '../../../../org/eclipse/swt/widgets/Composite.js';
-
-    
+      
 import { GC } from '../../../../org/eclipse/swt/graphics/GC.js';
-
-    
+      
 import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { PaintEvent } from '../../../../org/eclipse/swt/events/PaintEvent.js';
-
-    
+      
 import { PaintListener } from '../../../../org/eclipse/swt/events/PaintListener.js';
-
-    
+      
 import { Transform } from '../../../../org/eclipse/swt/graphics/Transform.js';
-
-    
+      
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-
-    
+      
 import { BareMain } from '../../../../org/microemu/app/BareMain.js';
-
-    
+      
 
 
 

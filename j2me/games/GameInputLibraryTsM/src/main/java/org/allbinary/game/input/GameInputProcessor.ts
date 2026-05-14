@@ -27,11 +27,9 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
-
-    
+      
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 
 
 

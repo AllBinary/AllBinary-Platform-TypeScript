@@ -27,38 +27,27 @@
             import { Integer } from '../../../java/lang/Integer.js';
         
 import { HashMap } from '../../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { TagSupport } from '../../../javax/servlet/jsp/tagext/TagSupport.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../../../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { WorkFlowData } from '../../../org/allbinary/logic/control/workflow/WorkFlowData.js';
-
-    
+      
 import { WorkFlowInterface } from '../../../org/allbinary/logic/control/workflow/WorkFlowInterface.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { ServiceClientInformationInterfaceFactory } from '../../../org/allbinary/logic/system/security/licensing/ServiceClientInformationInterfaceFactory.js';
-
-    
+      
 import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
-
-    
+      
 import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

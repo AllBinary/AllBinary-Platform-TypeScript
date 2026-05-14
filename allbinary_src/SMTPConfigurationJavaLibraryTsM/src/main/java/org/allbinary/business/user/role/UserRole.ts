@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Serializable } from '../../../../../java/io/Serializable.js';
-
-    
+      
 import { UserFactoryInterface } from '../../../../../org/allbinary/business/user/UserFactoryInterface.js';
-
-    
+      
 
 
 

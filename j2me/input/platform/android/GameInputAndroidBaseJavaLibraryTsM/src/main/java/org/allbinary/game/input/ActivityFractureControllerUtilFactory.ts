@@ -9,8 +9,7 @@
 
         
 import { AndroidInfoFactory } from '../../../../org/allbinary/android/AndroidInfoFactory.js';
-
-    
+      
 
 
 

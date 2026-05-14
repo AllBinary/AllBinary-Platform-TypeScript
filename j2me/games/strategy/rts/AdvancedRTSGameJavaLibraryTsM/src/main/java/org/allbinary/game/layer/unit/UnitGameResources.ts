@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { BasicGameResources } from '../../../../../org/allbinary/game/layer/resources/BasicGameResources.js';
-
-    
+      
 import { GameGraphicsResourceUtil } from '../../../../../org/allbinary/game/layer/resources/GameGraphicsResourceUtil.js';
-
-    
+      
 import { AndroidUtil } from '../../../../../org/allbinary/AndroidUtil.js';
-
-    
+      
 import { GraphicsFeatureFactory } from '../../../../../org/allbinary/game/configuration/feature/GraphicsFeatureFactory.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

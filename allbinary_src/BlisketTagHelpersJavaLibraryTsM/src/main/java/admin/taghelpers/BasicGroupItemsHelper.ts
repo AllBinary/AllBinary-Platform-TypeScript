@@ -25,26 +25,19 @@
             import { Exception } from '../../java/lang/Exception.js';
         
 import { HashMap } from '../../java/util/HashMap.js';
-
-    
+      
 import { PageContext } from '../../javax/servlet/jsp/PageContext.js';
-
-    
+      
 import { Portion } from '../../org/allbinary/business/installer/Portion.js';
-
-    
+      
 import { BasicGroupItemsEntity } from '../../org/allbinary/data/tables/user/commerce/inventory/item/groups/BasicGroupItemsEntity.js';
-
-    
+      
 import { BasicGroupItemsEntityFactory } from '../../org/allbinary/data/tables/user/commerce/inventory/item/groups/BasicGroupItemsEntityFactory.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSqlTableUtil.js';
-
-    
+      
 
 
 

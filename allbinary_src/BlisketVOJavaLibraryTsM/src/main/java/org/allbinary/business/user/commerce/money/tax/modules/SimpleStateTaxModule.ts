@@ -25,65 +25,45 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-
-    
+      
 import { StreetAddressData } from '../../../../../../../../org/allbinary/business/user/address/StreetAddressData.js';
-
-    
+      
 import { TaxData } from '../../../../../../../../org/allbinary/business/user/commerce/money/tax/components/TaxData.js';
-
-    
+      
 import { DomNodeHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomNodeHelper.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { DomDocumentHelper } from '../../../../../../../../org/allbinary/data/tree/dom/document/DomDocumentHelper.js';
-
-    
+      
 import { FREEBLISKET_PATH_GLOBALS } from '../../../../../../../../org/allbinary/globals/FREEBLISKET_PATH_GLOBALS.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CryptFileReader } from '../../../../../../../../org/allbinary/logic/control/crypt/file/CryptFileReader.js';
-
-    
+      
 import { AbPath } from '../../../../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { TransformInfoObjectConfigData } from '../../../../../../../../org/allbinary/logic/visual/transform/info/objectConfig/TransformInfoObjectConfigData.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

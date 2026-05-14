@@ -25,20 +25,15 @@
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
 import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
-
-    
+      
 import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
-
-    
+      
 import { RecordStoreException } from '../../javax/microedition/rms/RecordStoreException.js';
-
-    
+      
 import { RecordStoreNotOpenException } from '../../javax/microedition/rms/RecordStoreNotOpenException.js';
-
-    
+      
 import { NullUtil } from '../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 
 
 

@@ -23,8 +23,7 @@
 
         
 import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/workarea/canvas/CanvasJPanel.js';
-
-    
+      
 
 
 

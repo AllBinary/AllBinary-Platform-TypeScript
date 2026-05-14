@@ -23,32 +23,23 @@
 
         
 import { MouseEvent } from '../../../../../../../../../../java/awt/event/MouseEvent.js';
-
-    
+      
 import { swing } from '../../../../../../../../../../javax/swing.js';
-
-    
+      
 import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-
-    
+      
 import { DefaultTreeModel } from '../../../../../../../../../../javax/swing/tree/DefaultTreeModel.js';
-
-    
+      
 import { TreePath } from '../../../../../../../../../../javax/swing/tree/TreePath.js';
-
-    
+      
 import { JTreeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/JTreeInterface.js';
-
-    
+      
 import { CustomTreeNodeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/CustomTreeNodeInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

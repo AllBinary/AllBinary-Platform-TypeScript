@@ -25,47 +25,33 @@
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Vector } from '../../../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { DefaultMutableTreeNode } from '../../../../../../../../../../javax/swing/tree/DefaultMutableTreeNode.js';
-
-    
+      
 import { DomSearchHelper } from '../../../../../../../../../../org/allbinary/data/tree/dom/DomSearchHelper.js';
-
-    
+      
 import { ProfileActionScriptNodeInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/ProfileActionScriptNodeInterface.js';
-
-    
+      
 import { ProfileActionScriptConditionFactory } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionFactory.js';
-
-    
+      
 import { ProfileActionScriptConditionInterface } from '../../../../../../../../../../org/allbinary/input/automation/actions/script/condition/ProfileActionScriptConditionInterface.js';
-
-    
+      
 import { GenericProfileActionData } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionData.js';
-
-    
+      
 import { GenericProfileActionJPanel } from '../../../../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/actions/GenericProfileActionJPanel.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { NodeList } from '../../../../../../../../../../org/w3c/dom/NodeList.js';
-
-    
+      
 
 
 

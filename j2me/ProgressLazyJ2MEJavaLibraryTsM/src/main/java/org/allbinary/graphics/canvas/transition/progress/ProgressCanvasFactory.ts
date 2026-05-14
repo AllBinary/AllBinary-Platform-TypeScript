@@ -23,14 +23,11 @@
 
         
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { PaintableInterface } from '../../../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 
 
 

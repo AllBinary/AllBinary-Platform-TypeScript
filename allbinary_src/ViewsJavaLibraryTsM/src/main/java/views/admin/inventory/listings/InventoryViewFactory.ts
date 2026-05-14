@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SearchRequest } from '../../../../org/allbinary/logic/control/search/SearchRequest.js';
-
-    
+      
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { InventorySearch } from '../../../../views/generic/inventory/InventorySearch.js';
-
-    
+      
 
 
 

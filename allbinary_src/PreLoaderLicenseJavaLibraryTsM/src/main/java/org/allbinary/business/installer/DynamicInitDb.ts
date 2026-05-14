@@ -23,17 +23,13 @@
 
         
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-
-    
+      
 import { InitDbHelperFactory } from '../../../../org/allbinary/business/init/db/InitDbHelperFactory.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 
 
 

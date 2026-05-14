@@ -25,14 +25,11 @@
             import { System } from '../../../../../java/lang/System.js';
         
 import { Arrays } from '../../../../../java/util/Arrays.js';
-
-    
+      
 import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
-
-    
+      
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-
-    
+      
 
 
 

@@ -27,62 +27,43 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { File } from '../../../../java/io/File.js';
-
-    
+      
 import { swing } from '../../../../javax/swing.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { FileWrapperUtil } from '../../../../org/allbinary/logic/io/file/FileWrapperUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { ImagePersistanceUtil } from '../../../../org/allbinary/media/image/ImagePersistanceUtil.js';
-
-    
+      
 import { ImageProcessorInput } from '../../../../org/allbinary/media/image/ImageProcessorInput.js';
-
-    
+      
 import { ImageProcessorInputCompositeInterface } from '../../../../org/allbinary/media/image/ImageProcessorInputCompositeInterface.js';
-
-    
+      
 import { ImageStrings } from '../../../../org/allbinary/media/image/ImageStrings.js';
-
-    
+      
 import { ImageUnifierCell } from '../../../../org/allbinary/media/image/ImageUnifierCell.js';
-
-    
+      
 import { ImageUnifierProperties } from '../../../../org/allbinary/media/image/ImageUnifierProperties.js';
-
-    
+      
 import { ImageUnifierUtil } from '../../../../org/allbinary/media/image/ImageUnifierUtil.js';
-
-    
+      
 import { ImageUtil } from '../../../../org/allbinary/media/image/ImageUtil.js';
-
-    
+      
 import { ImagesRatioUtil } from '../../../../org/allbinary/media/image/ImagesRatioUtil.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

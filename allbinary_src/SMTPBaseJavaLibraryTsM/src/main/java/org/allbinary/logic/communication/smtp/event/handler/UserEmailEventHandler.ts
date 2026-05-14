@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../../java/util/Vector.js';
-
-    
+      
 import { EmailEvent } from '../../../../../../../org/allbinary/logic/communication/smtp/event/EmailEvent.js';
-
-    
+      
 import { UserEmailEventListenerInterface } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventListenerInterface.js';
-
-    
+      
 import { UserEmailEventNameData } from '../../../../../../../org/allbinary/logic/communication/smtp/event/UserEmailEventNameData.js';
-
-    
+      
 import { EmailInfo } from '../../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-
-    
+      
 
 
 

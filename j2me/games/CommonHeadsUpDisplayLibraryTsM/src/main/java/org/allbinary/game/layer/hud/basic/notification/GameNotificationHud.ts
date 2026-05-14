@@ -27,35 +27,25 @@
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
 import { Graphics } from '../../../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { BasicHud } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHud.js';
-
-    
+      
 import { BasicHudFactory } from '../../../../../../../org/allbinary/game/graphics/hud/BasicHudFactory.js';
-
-    
+      
 import { GameNotificationEvent } from '../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationEvent.js';
-
-    
+      
 import { GameNotificationListenerInterface } from '../../../../../../../org/allbinary/game/layer/hud/event/GameNotificationListenerInterface.js';
-
-    
+      
 import { BasicColor } from '../../../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { BasicColorFactory } from '../../../../../../../org/allbinary/graphics/color/BasicColorFactory.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 
 
 

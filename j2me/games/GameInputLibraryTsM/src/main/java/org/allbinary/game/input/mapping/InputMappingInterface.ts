@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { GameKey } from '../../../../../org/allbinary/game/input/GameKey.js';
-
-    
+      
 import { Input } from '../../../../../org/allbinary/game/input/Input.js';
-
-    
+      
 
 
 

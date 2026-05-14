@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Processor } from '../../../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
-
-    
+      
 import { NullHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/NullHighScoresSingletonFactory.js';
-
-    
+      
 import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullPaintable.js';
-
-    
+      
 
 
 

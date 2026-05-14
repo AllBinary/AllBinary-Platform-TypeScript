@@ -25,137 +25,93 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Canvas } from '../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { AnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/AnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { NullAnimationFactory } from '../../../../org/allbinary/animation/NullAnimationFactory.js';
-
-    
+      
 import { NullIndexedAnimationFactory } from '../../../../org/allbinary/animation/NullIndexedAnimationFactory.js';
-
-    
+      
 import { ProceduralAnimationInterfaceFactoryInterface } from '../../../../org/allbinary/animation/ProceduralAnimationInterfaceFactoryInterface.js';
-
-    
+      
 import { ShakeAnimationListener } from '../../../../org/allbinary/animation/transition/shake/ShakeAnimationListener.js';
-
-    
+      
 import { Direction } from '../../../../org/allbinary/direction/Direction.js';
-
-    
+      
 import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionFactory.js';
-
-    
+      
 import { GameTypeFactory } from '../../../../org/allbinary/game/GameTypeFactory.js';
-
-    
+      
 import { DestroyedEvent } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEvent.js';
-
-    
+      
 import { DestroyedEventHandler } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventHandler.js';
-
-    
+      
 import { DestroyedEventListenerInterface } from '../../../../org/allbinary/game/combat/destroy/event/DestroyedEventListenerInterface.js';
-
-    
+      
 import { Health } from '../../../../org/allbinary/game/health/Health.js';
-
-    
+      
 import { Group } from '../../../../org/allbinary/game/identification/Group.js';
-
-    
+      
 import { GroupFactory } from '../../../../org/allbinary/game/identification/GroupFactory.js';
-
-    
+      
 import { GameKeyEventFactory } from '../../../../org/allbinary/game/input/event/GameKeyEventFactory.js';
-
-    
+      
 import { NullRTSFormInputFactory } from '../../../../org/allbinary/game/input/form/NullRTSFormInputFactory.js';
-
-    
+      
 import { RTSFormInput } from '../../../../org/allbinary/game/input/form/RTSFormInput.js';
-
-    
+      
 import { BuildingEventHandler } from '../../../../org/allbinary/game/layer/building/event/BuildingEventHandler.js';
-
-    
+      
 import { UnitLayer } from '../../../../org/allbinary/game/layer/unit/UnitLayer.js';
-
-    
+      
 import { Waypoint2LogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2LogHelper.js';
-
-    
+      
 import { Waypoint2SelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/Waypoint2SelectedLogHelper.js';
-
-    
+      
 import { WaypointBase } from '../../../../org/allbinary/game/layer/waypoint/WaypointBase.js';
-
-    
+      
 import { WaypointLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointLogHelper.js';
-
-    
+      
 import { WaypointRunnableLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableLogHelper.js';
-
-    
+      
 import { WaypointRunnableSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointRunnableSelectedLogHelper.js';
-
-    
+      
 import { WaypointSelectedLogHelper } from '../../../../org/allbinary/game/layer/waypoint/WaypointSelectedLogHelper.js';
-
-    
+      
 import { RemoteInfo } from '../../../../org/allbinary/game/multiplayer/layer/RemoteInfo.js';
-
-    
+      
 import { NullTickable } from '../../../../org/allbinary/game/tick/NullTickable.js';
-
-    
+      
 import { TickableInterface } from '../../../../org/allbinary/game/tick/TickableInterface.js';
-
-    
+      
 import { TileLayerPositionIntoViewPosition } from '../../../../org/allbinary/game/view/TileLayerPositionIntoViewPosition.js';
-
-    
+      
 import { Rectangle } from '../../../../org/allbinary/graphics/Rectangle.js';
-
-    
+      
 import { RectangleFactory } from '../../../../org/allbinary/graphics/RectangleFactory.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { FrameUtil } from '../../../../org/allbinary/math/FrameUtil.js';
-
-    
+      
 import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryVibrationME.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 import { GeographicMapCellPosition } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCellPosition.js';
-
-    
+      
 import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapCompositeInterface.js';
-
-    
+      
 import { GeographicMapDirectionUtil } from '../../../../org/allbinary/media/graphics/geography/map/GeographicMapDirectionUtil.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
-
-    
+      
 
 
 

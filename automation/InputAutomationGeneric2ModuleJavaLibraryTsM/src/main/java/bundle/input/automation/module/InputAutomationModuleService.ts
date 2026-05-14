@@ -23,8 +23,7 @@
 
         
 import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-
-    
+      
 
 
 

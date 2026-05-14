@@ -25,20 +25,15 @@
             import { Long } from '../../../../../../java/lang/Long.js';
         
 import { AbPathData } from '../../../../../../org/allbinary/logic/io/path/AbPathData.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CommonPhoneStrings } from '../../../../../../org/allbinary/string/CommonPhoneStrings.js';
-
-    
+      
 
 
 

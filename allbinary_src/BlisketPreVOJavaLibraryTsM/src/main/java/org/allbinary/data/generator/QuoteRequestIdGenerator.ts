@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { PATH_GLOBALS } from '../../../../org/allbinary/globals/PATH_GLOBALS.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

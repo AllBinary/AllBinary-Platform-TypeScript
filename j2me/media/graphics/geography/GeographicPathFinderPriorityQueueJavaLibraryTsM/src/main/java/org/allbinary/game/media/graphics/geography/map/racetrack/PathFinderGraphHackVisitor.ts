@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { BasicArrayList } from '../../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicGeographicMap } from '../../../../../../../../org/allbinary/media/graphics/geography/map/BasicGeographicMap.js';
-
-    
+      
 
 
 

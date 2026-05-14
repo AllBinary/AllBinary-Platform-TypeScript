@@ -23,8 +23,7 @@
 
         
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-
-    
+      
 
 
 

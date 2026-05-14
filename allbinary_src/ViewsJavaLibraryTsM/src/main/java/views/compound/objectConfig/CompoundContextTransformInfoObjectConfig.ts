@@ -25,62 +25,43 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { ByteArrayInputStream } from '../../../java/io/ByteArrayInputStream.js';
-
-    
+      
 import { InputStream } from '../../../java/io/InputStream.js';
-
-    
+      
 import { Vector } from '../../../java/util/Vector.js';
-
-    
+      
 import { DocumentToNode } from '../../../org/allbinary/data/tree/dom/document/DocumentToNode.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Replace } from '../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { TransformFactory } from '../../../org/allbinary/logic/visual/transform/TransformFactory.js';
-
-    
+      
 import { TransformInterface } from '../../../org/allbinary/logic/visual/transform/TransformInterface.js';
-
-    
+      
 import { RootTransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/RootTransformInfoData.js';
-
-    
+      
 import { TransformInfoData } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoData.js';
-
-    
+      
 import { TransformInfoDomNode } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoDomNode.js';
-
-    
+      
 import { TransformInfoHttpInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { GenericStoreTransformInfoObjectConfig } from '../../../org/allbinary/logic/visual/transform/info/objectConfig/GenericStoreTransformInfoObjectConfig.js';
-
-    
+      
 import { CommonSeps } from '../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { Document } from '../../../org/w3c/dom/Document.js';
-
-    
+      
 
 
 

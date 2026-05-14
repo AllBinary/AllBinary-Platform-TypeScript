@@ -9,11 +9,9 @@
 
         
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 
 
 

@@ -25,14 +25,11 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinarySensorListener } from '../../../../org/allbinary/input/AllBinarySensorListener.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-
-    
+      
 
 
 

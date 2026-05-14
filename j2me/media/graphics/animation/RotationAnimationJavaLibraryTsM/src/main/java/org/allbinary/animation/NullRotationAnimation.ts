@@ -11,14 +11,11 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { AngleFactory } from '../../../org/allbinary/math/AngleFactory.js';
-
-    
+      
 import { AngleInfo } from '../../../org/allbinary/math/AngleInfo.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

@@ -25,29 +25,21 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { AbstractInputAutomationFactory } from '../../../../../../org/allbinary/input/automation/module/AbstractInputAutomationFactory.js';
-
-    
+      
 import { InputAutomationActionInterface } from '../../../../../../org/allbinary/input/automation/module/InputAutomationActionInterface.js';
-
-    
+      
 import { InputAutomationModuleData } from '../../../../../../org/allbinary/input/automation/module/InputAutomationModuleData.js';
-
-    
+      
 import { GenericModuleConfigurationJPanel } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/GenericModuleConfigurationJPanel.js';
-
-    
+      
 import { GenericProfile } from '../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
-
-    
+      
 import { NoImageComparatorConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoImageComparatorConstraints.js';
-
-    
+      
 import { NoMotionRectangleConstraints } from '../../../../../../org/allbinary/input/automation/module/generic/constraints/NoMotionRectangleConstraints.js';
-
-    
+      
 import { RunnableInterface } from '../../../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 
 
 
@@ -88,6 +80,7 @@ public constructor (){
     public getInstance(): RunnableInterface{
 
     var genericProfile: GenericProfile = 
+
                                     (getConfigurationJPanel as GenericModuleConfigurationJPanel).getSelectedGenericProfile()!;
 ;
     

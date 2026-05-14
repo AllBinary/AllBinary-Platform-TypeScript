@@ -27,44 +27,31 @@
             import { Integer } from '../../../../java/lang/Integer.js';
         
 import { Vector } from '../../../../java/util/Vector.js';
-
-    
+      
 import { HttpServletRequest } from '../../../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { ShippingAddressData } from '../../../../org/allbinary/business/user/address/ShippingAddressData.js';
-
-    
+      
 import { StreetAddress } from '../../../../org/allbinary/business/user/address/StreetAddress.js';
-
-    
+      
 import { StreetAddressData } from '../../../../org/allbinary/business/user/address/StreetAddressData.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { ModDomHelper } from '../../../../org/allbinary/data/tree/dom/ModDomHelper.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { TransformInfoHttpInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoHttpInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { Document } from '../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../org/w3c/dom/Node.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

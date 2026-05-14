@@ -23,11 +23,9 @@
 
         
 import { Money } from '../../../../../../../org/allbinary/business/user/commerce/money/Money.js';
-
-    
+      
 import { TableMappingInterface } from '../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-
-    
+      
 
 
 

@@ -25,11 +25,9 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { MIDlet } from '../../../javax/microedition/midlet/MIDlet.js';
-
-    
+      
 import { Processor } from '../../../org/allbinary/canvas/Processor.js';
-
-    
+      
 
 
 

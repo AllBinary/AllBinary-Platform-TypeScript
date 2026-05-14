@@ -25,11 +25,9 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
-
-    
+      
 import { NamedInterface } from '../../../../org/allbinary/layer/NamedInterface.js';
-
-    
+      
 
 
 

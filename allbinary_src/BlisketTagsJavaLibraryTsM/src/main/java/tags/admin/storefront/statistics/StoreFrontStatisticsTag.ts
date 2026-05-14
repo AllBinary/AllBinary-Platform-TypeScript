@@ -25,17 +25,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { JspTagException } from '../../../../javax/servlet/jsp/JspTagException.js';
-
-    
+      
 import { AbResponseHandler } from '../../../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-
-    
+      
 import { LicensingException } from '../../../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 import { StoreValidationTransformTag } from '../../../../tags/StoreValidationTransformTag.js';
-
-    
+      
 
 
 

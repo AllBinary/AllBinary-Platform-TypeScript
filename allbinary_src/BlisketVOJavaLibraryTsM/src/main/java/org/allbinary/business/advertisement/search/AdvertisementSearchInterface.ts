@@ -23,20 +23,15 @@
 
         
 import { HashMap } from '../../../../../java/util/HashMap.js';
-
-    
+      
 import { AdvertisementCategoryInterface } from '../../../../../org/allbinary/business/advertisement/search/category/AdvertisementCategoryInterface.js';
-
-    
+      
 import { AdvertisementWebsiteInterface } from '../../../../../org/allbinary/business/advertisement/search/website/AdvertisementWebsiteInterface.js';
-
-    
+      
 import { PriceConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/price/PriceConstraintInterface.js';
-
-    
+      
 import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/logic/control/contraints/size/TwoDimensionalConstraintInterface.js';
-
-    
+      
 
 
 

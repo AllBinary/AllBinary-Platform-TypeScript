@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

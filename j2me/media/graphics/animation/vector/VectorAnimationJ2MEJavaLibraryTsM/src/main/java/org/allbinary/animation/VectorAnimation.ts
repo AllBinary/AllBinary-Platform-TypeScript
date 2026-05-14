@@ -25,23 +25,17 @@
             import { Exception } from '../../../java/lang/Exception.js';
         
 import { Graphics } from '../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PrimitiveIntUtil } from '../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
-
-    
+      
 import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil.js';
-
-    
+      
 
 
 

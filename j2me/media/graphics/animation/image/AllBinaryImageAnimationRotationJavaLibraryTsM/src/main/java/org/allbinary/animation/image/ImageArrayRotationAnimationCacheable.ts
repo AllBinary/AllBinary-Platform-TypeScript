@@ -25,17 +25,13 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
-
-    
+      
 import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CacheableInterface } from '../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-
-    
+      
 
 
 
@@ -61,10 +57,15 @@ export class ImageArrayRotationAnimationCacheable extends AdjustedImageArrayRota
         
 public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
             super(
+
                                     (anyType as ImageArrayRotationAnimationInfo).getImageArray(), 
+
                                     (anyType as ImageArrayRotationAnimationInfo).getAngleInfoP(), 
+
                                     (anyType as ImageArrayRotationAnimationInfo).getTotalAngle(), 
+
                                     (anyType as ImageArrayRotationAnimationInfo).getDx(), 
+
                                     (anyType as ImageArrayRotationAnimationInfo).getDy(), animationBehavior);
                         //var anyType = anyType
     //var animationBehavior = animationBehavior

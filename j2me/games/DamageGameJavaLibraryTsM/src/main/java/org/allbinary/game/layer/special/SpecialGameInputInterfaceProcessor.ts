@@ -23,8 +23,7 @@
 
         
 import { GameInputProcessor } from '../../../../../org/allbinary/game/input/GameInputProcessor.js';
-
-    
+      
 
 
 

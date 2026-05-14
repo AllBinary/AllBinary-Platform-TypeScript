@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { TransistionTypes } from '../../../../../../org/allbinary/animation/transition/TransistionTypes.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { Activity } from '../../../../../../android/app/Activity.js';
-
-    
+      
 
 
 

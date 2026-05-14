@@ -25,47 +25,33 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { SimpleTiledLayer } from '../../../../../javax/microedition/lcdui/game/SimpleTiledLayer.js';
-
-    
+      
 import { Graphics } from '../../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { RTSLayerEvent } from '../../../../../org/allbinary/game/layer/RTSLayerEvent.js';
-
-    
+      
 import { BuildingEventListenerInterface } from '../../../../../org/allbinary/game/layer/building/event/BuildingEventListenerInterface.js';
-
-    
+      
 import { LocalPlayerBuildingEventHandler } from '../../../../../org/allbinary/game/layer/building/event/LocalPlayerBuildingEventHandler.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { ForcedLogUtil } from '../../../../../org/allbinary/logic/communication/log/ForcedLogUtil.js';
-
-    
+      
 import { CellPosition } from '../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { ScrollMapEvent } from '../../../../../org/allbinary/layer/event/ScrollMapEvent.js';
-
-    
+      
 import { ScrollMapEventHandler } from '../../../../../org/allbinary/layer/event/ScrollMapEventHandler.js';
-
-    
+      
 import { ScrollMapEventListenerInterface } from '../../../../../org/allbinary/layer/event/ScrollMapEventListenerInterface.js';
-
-    
+      
 import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 import { EventStrings } from '../../../../../org/allbinary/logic/util/event/EventStrings.js';
-
-    
+      
 
 
 

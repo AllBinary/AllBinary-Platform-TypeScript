@@ -27,38 +27,27 @@
             import { Integer } from '../../../../../../java/lang/Integer.js';
         
 import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-
-    
+      
 import { FeaturedAnimationInterfaceFactoryInterfaceFactory } from '../../../../../../org/allbinary/animation/FeaturedAnimationInterfaceFactoryInterfaceFactory.js';
-
-    
+      
 import { WeaponProperties } from '../../../../../../org/allbinary/game/combat/weapon/WeaponProperties.js';
-
-    
+      
 import { CountedPickedUpLayerInterfaceFactory } from '../../../../../../org/allbinary/game/layer/pickup/CountedPickedUpLayerInterfaceFactory.js';
-
-    
+      
 import { IconLayerFactory } from '../../../../../../org/allbinary/game/layer/pickup/IconLayerFactory.js';
-
-    
+      
 import { PickedUpLayerInterfaceFactoryInterface } from '../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerInterfaceFactoryInterface.js';
-
-    
+      
 import { PickedUpLayerTypeFactory } from '../../../../../../org/allbinary/game/layer/pickup/PickedUpLayerTypeFactory.js';
-
-    
+      
 import { WeaponLayerCircularPool } from '../../../../../../org/allbinary/game/layer/weapon/WeaponLayerCircularPool.js';
-
-    
+      
 import { ScoreableInterface } from '../../../../../../org/allbinary/game/score/ScoreableInterface.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/logic/math/SmallIntegerSingletonFactory.js';
-
-    
+      
 
 
 

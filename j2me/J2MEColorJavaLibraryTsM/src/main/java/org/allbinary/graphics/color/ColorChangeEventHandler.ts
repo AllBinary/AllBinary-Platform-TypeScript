@@ -23,8 +23,7 @@
 
         
 import { BasicEventHandler } from '../../../../org/allbinary/logic/util/event/handler/BasicEventHandler.js';
-
-    
+      
 
 
 

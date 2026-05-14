@@ -25,38 +25,27 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { File } from '../../../../../java/io/File.js';
-
-    
+      
 import { FileInputStream } from '../../../../../java/io/FileInputStream.js';
-
-    
+      
 import { List } from '../../../../../java/util/List.js';
-
-    
+      
 import { JAXBContext } from '../../../../../javax/xml/bind/JAXBContext.js';
-
-    
+      
 import { JAXBElement } from '../../../../../javax/xml/bind/JAXBElement.js';
-
-    
+      
 import { Unmarshaller } from '../../../../../javax/xml/bind/Unmarshaller.js';
-
-    
+      
 import { StreamSource } from '../../../../../javax/xml/transform/stream/StreamSource.js';
-
-    
+      
 import { InputAutomationModuleConfiguration } from '../../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfiguration.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

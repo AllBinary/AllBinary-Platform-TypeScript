@@ -23,17 +23,13 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/PaintableInterface.js';
-
-    
+      
 import { Layer } from '../../../../org/allbinary/layer/Layer.js';
-
-    
+      
 
 
 

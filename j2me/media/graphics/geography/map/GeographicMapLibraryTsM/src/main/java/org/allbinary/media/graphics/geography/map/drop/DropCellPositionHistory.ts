@@ -23,20 +23,15 @@
 
         
 import { BasicArrayList } from '../../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
-
-    
+      
 import { CellPositionFactory } from '../../../../../../../org/allbinary/graphics/CellPositionFactory.js';
-
-    
+      
 import { AllBinaryLayer } from '../../../../../../../org/allbinary/layer/AllBinaryLayer.js';
-
-    
+      
 
 
 

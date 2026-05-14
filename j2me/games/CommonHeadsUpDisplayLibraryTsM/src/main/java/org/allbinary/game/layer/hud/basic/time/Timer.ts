@@ -23,17 +23,13 @@
 
         
 import { PrimitiveLongSingleton } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongSingleton.js';
-
-    
+      
 import { PrimitiveLongUtil } from '../../../../../../../org/allbinary/logic/math/PrimitiveLongUtil.js';
-
-    
+      
 import { GameTickTimeDelayHelper } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelper.js';
-
-    
+      
 import { GameTickTimeDelayHelperFactory } from '../../../../../../../org/allbinary/time/GameTickTimeDelayHelperFactory.js';
-
-    
+      
 
 
 

@@ -25,20 +25,15 @@
 
         
 import { Context } from '../../../../../../android/content/Context.js';
-
-    
+      
 import { Build } from '../../../../../../android/os/Build.js';
-
-    
+      
 import { ResourceUtil } from '../../../../../../org/allbinary/data/resource/ResourceUtil.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

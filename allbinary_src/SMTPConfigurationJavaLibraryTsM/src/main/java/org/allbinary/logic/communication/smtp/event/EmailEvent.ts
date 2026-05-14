@@ -23,14 +23,11 @@
 
         
 import { EventObject } from '../../../../../../java/util/EventObject.js';
-
-    
+      
 import { EmailInfo } from '../../../../../../org/allbinary/logic/communication/smtp/info/EmailInfo.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 
 
 

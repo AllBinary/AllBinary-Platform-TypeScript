@@ -25,44 +25,31 @@
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 import { StoreFrontAdvertisementsStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsInterface.js';
-
-    
+      
 import { StoreFrontAdvertisementsStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/advertisements/StoreFrontAdvertisementsStatisticsView.js';
-
-    
+      
 import { StoreFrontInventoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsInterface.js';
-
-    
+      
 import { StoreFrontInventoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/inventory/StoreFrontInventoryStatisticsView.js';
-
-    
+      
 import { StoreFrontOrdersHistoryStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsInterface.js';
-
-    
+      
 import { StoreFrontOrdersHistoryStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/orders/history/StoreFrontOrdersHistoryStatisticsView.js';
-
-    
+      
 import { StoreFrontUsersStatisticsInterface } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsInterface.js';
-
-    
+      
 import { StoreFrontUsersStatisticsView } from '../../../../../../../org/allbinary/business/context/modules/storefront/statistics/users/StoreFrontUsersStatisticsView.js';
-
-    
+      
 import { UserRole } from '../../../../../../../org/allbinary/business/user/role/UserRole.js';
-
-    
+      
 import { UserRoleFactory } from '../../../../../../../org/allbinary/business/user/role/UserRoleFactory.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { Document } from '../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

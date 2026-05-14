@@ -23,11 +23,9 @@
 
         
 import { HardwareComponentInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/HardwareComponentInterface.js';
-
-    
+      
 import { UsbInterface } from '../../../../../../../org/allbinary/logic/system/hardware/components/interfaces/UsbInterface.js';
-
-    
+      
 
 
 

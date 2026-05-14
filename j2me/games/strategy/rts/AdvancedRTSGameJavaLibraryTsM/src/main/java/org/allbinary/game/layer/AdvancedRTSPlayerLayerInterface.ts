@@ -23,11 +23,9 @@
 
         
 import { GameType } from '../../../../org/allbinary/game/GameType.js';
-
-    
+      
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 
 
 

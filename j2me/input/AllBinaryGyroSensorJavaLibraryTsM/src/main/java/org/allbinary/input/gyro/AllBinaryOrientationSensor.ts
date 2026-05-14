@@ -25,20 +25,15 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { CompleteMotionGestureInputEventListenerInterface } from '../../../../org/allbinary/game/input/CompleteMotionGestureInputEventListenerInterface.js';
-
-    
+      
 import { NoCompleteMotionGestureInputEventListener } from '../../../../org/allbinary/game/input/motion/action/NoCompleteMotionGestureInputEventListener.js';
-
-    
+      
 import { AllBinarySensor } from '../../../../org/allbinary/input/AllBinarySensor.js';
-
-    
+      
 import { Orientation } from '../../../../org/allbinary/logic/math/Orientation.js';
-
-    
+      
 import { PrimitiveFloatUtil } from '../../../../org/allbinary/logic/math/PrimitiveFloatUtil.js';
-
-    
+      
 
 
 

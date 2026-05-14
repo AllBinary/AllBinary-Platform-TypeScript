@@ -23,8 +23,7 @@
 
         
 import { TableMappingInterface } from '../../../../../../../../org/allbinary/data/tables/TableMappingInterface.js';
-
-    
+      
 
 
 

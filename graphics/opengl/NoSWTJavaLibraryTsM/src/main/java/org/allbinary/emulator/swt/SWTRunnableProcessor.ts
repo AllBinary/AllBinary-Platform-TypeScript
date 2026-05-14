@@ -23,8 +23,7 @@
 
         
 import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
-
-    
+      
 
 
 

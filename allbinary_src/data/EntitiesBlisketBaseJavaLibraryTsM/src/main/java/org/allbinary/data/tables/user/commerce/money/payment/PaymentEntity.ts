@@ -29,53 +29,37 @@
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
 import { Calendar } from '../../../../../../../../java/util/Calendar.js';
-
-    
+      
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';
-
-    
+      
 import { Random } from '../../../../../../../../java/util/Random.js';
-
-    
+      
 import { Vector } from '../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { EntryData } from '../../../../../../../../org/allbinary/business/entry/EntryData.js';
-
-    
+      
 import { UserDbInitInfo } from '../../../../../../../../org/allbinary/business/init/db/UserDbInitInfo.js';
-
-    
+      
 import { UserData } from '../../../../../../../../org/allbinary/business/user/UserData.js';
-
-    
+      
 import { Payment } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/Payment.js';
-
-    
+      
 import { PaymentData } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentData.js';
-
-    
+      
 import { PaymentInterface } from '../../../../../../../../org/allbinary/business/user/commerce/money/payment/PaymentInterface.js';
-
-    
+      
 import { PaymentIdGenerator } from '../../../../../../../../org/allbinary/data/generator/PaymentIdGenerator.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { AbSqlBean } from '../../../../../../../../org/allbinary/logic/communication/sql/AbSqlBean.js';
-
-    
+      
 import { SuperCrypt } from '../../../../../../../../org/allbinary/logic/control/crypt/SuperCrypt.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 
 
 

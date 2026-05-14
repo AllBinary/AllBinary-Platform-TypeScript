@@ -23,32 +23,23 @@
 
         
 import { BasicColor } from '../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { ColorChangeEventHandler } from '../../../../org/allbinary/graphics/color/ColorChangeEventHandler.js';
-
-    
+      
 import { ColorChangeListener } from '../../../../org/allbinary/graphics/color/ColorChangeListener.js';
-
-    
+      
 import { FormPaintable } from '../../../../org/allbinary/graphics/form/FormPaintable.js';
-
-    
+      
 import { ScrollSelectionForm } from '../../../../org/allbinary/graphics/form/ScrollSelectionForm.js';
-
-    
+      
 import { ABStringComponent } from '../../../../org/allbinary/graphics/form/item/ABStringComponent.js';
-
-    
+      
 import { ABTextItem } from '../../../../org/allbinary/graphics/form/item/ABTextItem.js';
-
-    
+      
 import { Paintable } from '../../../../org/allbinary/graphics/paint/Paintable.js';
-
-    
+      
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
-
-    
+      
 
 
 

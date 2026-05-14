@@ -23,8 +23,7 @@
 
         
 import { IndexedAnimationInterface } from '../../../../org/allbinary/animation/IndexedAnimationInterface.js';
-
-    
+      
 
 
 

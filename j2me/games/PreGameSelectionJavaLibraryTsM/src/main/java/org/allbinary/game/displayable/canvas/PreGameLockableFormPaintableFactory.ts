@@ -25,17 +25,13 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { ItemPaintable } from '../../../../../org/allbinary/graphics/form/ItemPaintable.js';
-
-    
+      
 import { ItemPaintableFactory } from '../../../../../org/allbinary/graphics/form/ItemPaintableFactory.js';
-
-    
+      
 import { PaintableForm } from '../../../../../org/allbinary/graphics/form/PaintableForm.js';
-
-    
+      
 import { ScrollCurrentSelectionForm } from '../../../../../org/allbinary/graphics/form/ScrollCurrentSelectionForm.js';
-
-    
+      
 
 
 

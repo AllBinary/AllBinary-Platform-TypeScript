@@ -23,53 +23,37 @@
 
         
 import { UserFactory } from '../../../../../org/allbinary/business/user/modules/UserFactory.js';
-
-    
+      
 import { AdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/AdminUserFactory.js';
-
-    
+      
 import { StoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/StoreAdminUserFactory.js';
-
-    
+      
 import { CustomerStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/customer/CustomerStoreAdminUserFactory.js';
-
-    
+      
 import { OrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/OrderStoreAdminUserFactory.js';
-
-    
+      
 import { AdjustOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/adjust/AdjustOrderStoreAdminUserFactory.js';
-
-    
+      
 import { ReviewOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/review/ReviewOrderStoreAdminUserFactory.js';
-
-    
+      
 import { ShipOrderStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/order/ship/ShipOrderStoreAdminUserFactory.js';
-
-    
+      
 import { PaymentStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/payment/PaymentStoreAdminUserFactory.js';
-
-    
+      
 import { ProductStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/product/ProductStoreAdminUserFactory.js';
-
-    
+      
 import { WebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/WebStoreAdminUserFactory.js';
-
-    
+      
 import { ViewEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/view/editor/ViewEditorWebStoreAdminUserFactory.js';
-
-    
+      
 import { WizardWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/wizard/WizardWebStoreAdminUserFactory.js';
-
-    
+      
 import { WorkflowEditorWebStoreAdminUserFactory } from '../../../../../org/allbinary/business/user/modules/admin/store/web/workflow/editor/WorkflowEditorWebStoreAdminUserFactory.js';
-
-    
+      
 import { SubscriberUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/subscriber/SubscriberUserFactory.js';
-
-    
+      
 import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user/modules/customer/wholesale/WholesaleUserFactory.js';
-
-    
+      
 
 
 

@@ -25,26 +25,19 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { awt } from '../../../../../../java/awt.js';
-
-    
+      
 import { BufferedImage } from '../../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-
-    
+      
 import { InputRobotFactory } from '../../../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-
-    
+      
 import { InputRobotInterface } from '../../../../../../org/allbinary/input/automation/robot/InputRobotInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

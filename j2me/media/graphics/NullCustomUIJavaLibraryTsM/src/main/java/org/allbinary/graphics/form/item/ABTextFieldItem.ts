@@ -9,20 +9,15 @@
 
         
 import { Canvas } from '../../../../../javax/microedition/lcdui/Canvas.js';
-
-    
+      
 import { Font } from '../../../../../javax/microedition/lcdui/Font.js';
-
-    
+      
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
-
-    
+      
 import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Visitor } from '../../../../../org/allbinary/logic/util/visitor/Visitor.js';
-
-    
+      
 
 
 

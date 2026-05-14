@@ -27,101 +27,69 @@
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { ARunnable } from '../../../../org/allbinary/thread/ARunnable.js';
-
-    
+      
 import { awt } from '../../../../java/awt.js';
-
-    
+      
 import { URI } from '../../../../java/net/URI.js';
-
-    
+      
 import { URL } from '../../../../java/net/URL.js';
-
-    
+      
 import { HelpSet } from '../../../../javax/help/HelpSet.js';
-
-    
+      
 import { HelpSetEvent } from '../../../../javax/help/event/HelpSetEvent.js';
-
-    
+      
 import { HelpSetListener } from '../../../../javax/help/event/HelpSetListener.js';
-
-    
+      
 import { swing } from '../../../../javax/swing.js';
-
-    
+      
 import { InputAutomationBundleActivatorListenerInterface } from '../../../../bundle/input/automation/InputAutomationBundleActivatorListenerInterface.js';
-
-    
+      
 import { InputAutomationConfigurationModuleChangeListener } from '../../../../bundle/input/automation/module/configuration/InputAutomationConfigurationModuleChangeListener.js';
-
-    
+      
 import { InputAutomationRobotChangeListener } from '../../../../bundle/input/automation/robot/InputAutomationRobotChangeListener.js';
-
-    
+      
 import { AppUrlGlobals } from '../../../../org/allbinary/globals/AppUrlGlobals.js';
-
-    
+      
 import { URLGLOBALS } from '../../../../org/allbinary/globals/URLGLOBALS.js';
-
-    
+      
 import { BasicTextJDialog } from '../../../../org/allbinary/gui/dialog/BasicTextJDialog.js';
-
-    
+      
 import { JListSwingWorker } from '../../../../org/allbinary/gui/swing/workers/JListSwingWorker.js';
-
-    
+      
 import { InputAutomationConfiguration } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfiguration.js';
-
-    
+      
 import { InputAutomationConfigurationFactory } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationFactory.js';
-
-    
+      
 import { InputAutomationConfigurationModuleChangeEvent } from '../../../../org/allbinary/input/automation/configuration/InputAutomationConfigurationModuleChangeEvent.js';
-
-    
+      
 import { InputAutomationModuleFactoryFactory } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryFactory.js';
-
-    
+      
 import { InputAutomationModuleFactoryInterface } from '../../../../org/allbinary/input/automation/module/InputAutomationModuleFactoryInterface.js';
-
-    
+      
 import { InputAutomationModuleConfigurations } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurations.js';
-
-    
+      
 import { InputAutomationModuleConfigurationsSingletonFactory } from '../../../../org/allbinary/input/automation/module/configuration/InputAutomationModuleConfigurationsSingletonFactory.js';
-
-    
+      
 import { DesktopBundle } from '../../../../org/allbinary/input/automation/osgi/DesktopBundle.js';
-
-    
+      
 import { InputRobotFactory } from '../../../../org/allbinary/input/automation/robot/InputRobotFactory.js';
-
-    
+      
 import { InputAutomationRobotChangeEvent } from '../../../../org/allbinary/input/automation/robot/osgi/InputAutomationRobotChangeEvent.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-
-    
+      
 import { JavaHelpUtil } from '../../../../org/allbinary/logic/java/help/JavaHelpUtil.js';
-
-    
+      
 import { WebappClassLoaderInfo } from '../../../../org/allbinary/logic/system/loader/WebappClassLoaderInfo.js';
-
-    
+      
 import { InputAutomationClientInformationFactory } from '../../../../org/allbinary/logic/system/security/licensing/InputAutomationClientInformationFactory.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInterface.js';
-
-    
+      
 
 
 

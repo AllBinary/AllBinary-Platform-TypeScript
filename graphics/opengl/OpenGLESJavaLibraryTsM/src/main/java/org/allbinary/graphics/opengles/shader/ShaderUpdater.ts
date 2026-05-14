@@ -23,17 +23,13 @@
 
         
 import { EGLConfig } from '../../../../../javax/microedition/khronos/egl/EGLConfig.js';
-
-    
+      
 import { GL10 } from '../../../../../javax/microedition/khronos/opengles/GL10.js';
-
-    
+      
 import { RendererStrings } from '../../../../../org/allbinary/graphics/opengles/renderer/RendererStrings.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

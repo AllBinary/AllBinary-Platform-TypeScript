@@ -25,35 +25,25 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { StoreFrontFactory } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';
-
-    
+      
 import { StoreFrontInterface } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { StoreFrontView } from '../../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontView.js';
-
-    
+      
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { Validation } from '../../../../../../../../../org/allbinary/logic/control/validate/Validation.js';
-
-    
+      
 import { StringMaker } from '../../../../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { Document } from '../../../../../../../../../org/w3c/dom/Document.js';
-
-    
+      
 import { Node } from '../../../../../../../../../org/w3c/dom/Node.js';
-
-    
+      
 
 
 

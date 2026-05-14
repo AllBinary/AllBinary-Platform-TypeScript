@@ -23,14 +23,11 @@
 
         
 import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
-
-    
+      
 import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
-
-    
+      
 import { CharArrayFactory } from '../../../../org/allbinary/logic/java/character/CharArrayFactory.js';
-
-    
+      
 
 
 

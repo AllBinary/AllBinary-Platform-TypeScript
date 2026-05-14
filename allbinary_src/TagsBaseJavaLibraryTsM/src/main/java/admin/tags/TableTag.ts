@@ -27,41 +27,29 @@
             import { Integer } from '../../java/lang/Integer.js';
         
 import { Method } from '../../java/lang/reflect/Method.js';
-
-    
+      
 import { HttpServletRequest } from '../../javax/servlet/http/HttpServletRequest.js';
-
-    
+      
 import { JspTagException } from '../../javax/servlet/jsp/JspTagException.js';
-
-    
+      
 import { TagHelperFactoryInterface } from '../../admin/taghelpers/TagHelperFactoryInterface.js';
-
-    
+      
 import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/request/AbResponseHandler.js';
-
-    
+      
 import { LogUtil } from '../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SqlStrings } from '../../org/allbinary/logic/communication/sql/SqlStrings.js';
-
-    
+      
 import { BooleanUtil } from '../../org/allbinary/logic/java/bool/BooleanUtil.js';
-
-    
+      
 import { StringMaker } from '../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringValidationUtil } from '../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { LicensingException } from '../../org/allbinary/logic/system/security/licensing/LicensingException.js';
-
-    
+      
 import { PropertiesTag } from '../../tags/PropertiesTag.js';
-
-    
+      
 
 
 

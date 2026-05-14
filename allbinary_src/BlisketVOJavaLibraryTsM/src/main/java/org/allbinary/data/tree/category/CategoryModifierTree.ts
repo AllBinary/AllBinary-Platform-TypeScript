@@ -25,23 +25,17 @@
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { CategoryFactoryInterface } from '../../../../../org/allbinary/business/category/CategoryFactoryInterface.js';
-
-    
+      
 import { CategoryInterface } from '../../../../../org/allbinary/business/category/CategoryInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { Directory } from '../../../../../org/allbinary/logic/io/file/directory/Directory.js';
-
-    
+      
 import { AbPath } from '../../../../../org/allbinary/logic/io/path/AbPath.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

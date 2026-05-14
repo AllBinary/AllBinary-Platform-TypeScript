@@ -23,8 +23,7 @@
 
         
 import { GenericProfile } from '../../../../../../../org/allbinary/input/automation/module/generic/configuration/profile/GenericProfile.js';
-
-    
+      
 
 
 

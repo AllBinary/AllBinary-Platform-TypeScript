@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { Replace } from '../../../../../../org/allbinary/logic/string/regex/replace/Replace.js';
-
-    
+      
 
 
 

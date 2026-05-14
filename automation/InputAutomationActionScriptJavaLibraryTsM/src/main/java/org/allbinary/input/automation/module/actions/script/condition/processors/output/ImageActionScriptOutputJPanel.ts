@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../../../../../java/lang/Exception.js';
         
 import { Vector } from '../../../../../../../../../../java/util/Vector.js';
-
-    
+      
 import { swing } from '../../../../../../../../../../javax/swing.js';
-
-    
+      
 import { InputImageType } from '../../../../../../../../../../org/allbinary/input/media/image/InputImageType.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { CommonStrings } from '../../../../../../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

@@ -23,35 +23,25 @@
 
         
 import { Hashtable } from '../../../../../../java/util/Hashtable.js';
-
-    
+      
 import { StringMaker } from '../../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { HardwareInterface } from '../../../../../../org/allbinary/logic/system/hardware/HardwareInterface.js';
-
-    
+      
 import { SystemHardwareFactory } from '../../../../../../org/allbinary/logic/system/hardware/SystemHardwareFactory.js';
-
-    
+      
 import { GenericOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-
-    
+      
 import { NoOperatingSystem } from '../../../../../../org/allbinary/logic/system/os/NoOperatingSystem.js';
-
-    
+      
 import { CommonSeps } from '../../../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { BasicArrayList } from '../../../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListUtil } from '../../../../../../org/allbinary/util/BasicArrayListUtil.js';
-
-    
+      
 
 
 

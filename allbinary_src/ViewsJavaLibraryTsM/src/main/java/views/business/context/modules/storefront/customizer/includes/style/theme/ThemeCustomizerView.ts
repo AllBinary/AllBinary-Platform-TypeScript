@@ -25,20 +25,15 @@
             import { Exception } from '../../../../../../../../../java/lang/Exception.js';
         
 import { DomNodeInterface } from '../../../../../../../../../org/allbinary/data/tree/dom/DomNodeInterface.js';
-
-    
+      
 import { LogUtil } from '../../../../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationInterface } from '../../../../../../../../../org/allbinary/logic/control/validate/ValidationInterface.js';
-
-    
+      
 import { TransformInfoInterface } from '../../../../../../../../../org/allbinary/logic/visual/transform/info/TransformInfoInterface.js';
-
-    
+      
 import { HttpStoreComponentView } from '../../../../../../../../../views/business/context/modules/storefront/HttpStoreComponentView.js';
-
-    
+      
 
 
 

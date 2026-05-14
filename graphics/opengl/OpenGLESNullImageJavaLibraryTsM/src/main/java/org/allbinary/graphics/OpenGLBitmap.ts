@@ -9,8 +9,7 @@
 
         
 import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
-
-    
+      
 
 
 

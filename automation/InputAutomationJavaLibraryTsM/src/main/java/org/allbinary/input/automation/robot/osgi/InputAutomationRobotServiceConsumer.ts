@@ -23,14 +23,11 @@
 
         
 import { BundleContext } from '../../../../../../org/osgi/framework/BundleContext.js';
-
-    
+      
 import { InputAutomationRobotServiceInterface } from '../../../../../../bundle/input/automation/robot/InputAutomationRobotServiceInterface.js';
-
-    
+      
 import { InputAutomationServiceConsumer } from '../../../../../../org/allbinary/osgi/service/InputAutomationServiceConsumer.js';
-
-    
+      
 
 
 

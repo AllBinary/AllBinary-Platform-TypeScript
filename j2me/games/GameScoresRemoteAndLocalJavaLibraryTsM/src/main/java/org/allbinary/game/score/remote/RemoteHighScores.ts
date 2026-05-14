@@ -27,41 +27,29 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { Enumeration } from '../../../../../java/util/Enumeration.js';
-
-    
+      
 import { Hashtable } from '../../../../../java/util/Hashtable.js';
-
-    
+      
 import { Vector } from '../../../../../java/util/Vector.js';
-
-    
+      
 import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { HighScore } from '../../../../../org/allbinary/game/score/HighScore.js';
-
-    
+      
 import { HighScores } from '../../../../../org/allbinary/game/score/HighScores.js';
-
-    
+      
 import { RemoteErrorHighScoresSingletonFactory } from '../../../../../org/allbinary/game/score/RemoteErrorHighScoresSingletonFactory.js';
-
-    
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { SoftwareInformation } from '../../../../../org/allbinary/logic/system/SoftwareInformation.js';
-
-    
+      
 import { AbeClientInformationInterface } from '../../../../../org/allbinary/logic/system/security/licensing/AbeClientInformationInterface.js';
-
-    
+      
 import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUtil.js';
-
-    
+      
 
 
 

@@ -23,11 +23,9 @@
 
         
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
-
-    
+      
 import { DisplayableInterface } from '../../../../../org/allbinary/graphics/displayable/DisplayableInterface.js';
-
-    
+      
 
 
 

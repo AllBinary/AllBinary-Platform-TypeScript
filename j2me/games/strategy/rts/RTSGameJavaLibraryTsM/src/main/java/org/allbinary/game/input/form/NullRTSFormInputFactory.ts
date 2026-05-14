@@ -23,8 +23,7 @@
 
         
 import { BasicGroupFactory } from '../../../../../org/allbinary/game/identification/BasicGroupFactory.js';
-
-    
+      
 
 
 

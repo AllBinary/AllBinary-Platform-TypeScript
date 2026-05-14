@@ -25,11 +25,9 @@
             import { RuntimeException } from '../../../../java/lang/RuntimeException.js';
         
 import { GameInfo } from '../../../../org/allbinary/game/GameInfo.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

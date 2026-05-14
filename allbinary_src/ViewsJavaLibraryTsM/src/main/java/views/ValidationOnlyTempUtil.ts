@@ -25,17 +25,13 @@
             import { Exception } from '../java/lang/Exception.js';
         
 import { LogUtil } from '../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { ValidationComponentInterface } from '../org/allbinary/logic/control/validate/ValidationComponentInterface.js';
-
-    
+      
 import { StringUtil } from '../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { CommonStrings } from '../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

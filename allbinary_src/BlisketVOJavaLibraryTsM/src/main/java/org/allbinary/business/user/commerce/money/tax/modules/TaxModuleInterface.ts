@@ -25,11 +25,9 @@
             import { Exception } from '../../../../../../../../java/lang/Exception.js';
         
 import { StoreFrontInterface } from '../../../../../../../../org/allbinary/business/context/modules/storefront/StoreFrontInterface.js';
-
-    
+      
 import { StreetAddress } from '../../../../../../../../org/allbinary/business/user/address/StreetAddress.js';
-
-    
+      
 
 
 

@@ -25,14 +25,11 @@
             import { Long } from '../../../../../java/lang/Long.js';
         
 import { BufferedImage } from '../../../../../java/awt/image/BufferedImage.js';
-
-    
+      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { CacheableInterface } from '../../../../../org/allbinary/logic/util/cache/CacheableInterface.js';
-
-    
+      
 
 
 

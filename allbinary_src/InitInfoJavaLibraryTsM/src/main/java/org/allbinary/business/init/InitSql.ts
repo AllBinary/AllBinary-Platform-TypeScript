@@ -25,68 +25,47 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Connection } from '../../../../java/sql/Connection.js';
-
-    
+      
 import { DriverManager } from '../../../../java/sql/DriverManager.js';
-
-    
+      
 import { ResultSet } from '../../../../java/sql/ResultSet.js';
-
-    
+      
 import { ResultSetMetaData } from '../../../../java/sql/ResultSetMetaData.js';
-
-    
+      
 import { SQLException } from '../../../../java/sql/SQLException.js';
-
-    
+      
 import { Statement } from '../../../../java/sql/Statement.js';
-
-    
+      
 import { HashMap } from '../../../../java/util/HashMap.js';
-
-    
+      
 import { Set } from '../../../../java/util/Set.js';
-
-    
+      
 import { Vector } from '../../../../java/util/Vector.js';
-
-    
+      
 import { DatabaseConnectionInfoInterface } from '../../../../org/allbinary/business/init/db/DatabaseConnectionInfoInterface.js';
-
-    
+      
 import { DbConnectionInfo } from '../../../../org/allbinary/business/init/db/DbConnectionInfo.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { LogConfigTypeFactory } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypeFactory.js';
-
-    
+      
 import { LogConfigTypes } from '../../../../org/allbinary/logic/communication/log/config/type/LogConfigTypes.js';
-
-    
+      
 import { SqlStrings } from '../../../../org/allbinary/logic/communication/sql/SqlStrings.js';
-
-    
+      
 import { SqlTypeStrings } from '../../../../org/allbinary/logic/communication/sql/SqlTypeStrings.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
-
-    
+      
 import { StringValidationUtil } from '../../../../org/allbinary/logic/string/StringValidationUtil.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 
 
 

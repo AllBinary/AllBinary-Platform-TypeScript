@@ -25,53 +25,37 @@
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Displayable } from '../../../../javax/microedition/lcdui/Displayable.js';
-
-    
+      
 import { AndroidUtil } from '../../../../org/allbinary/AndroidUtil.js';
-
-    
+      
 import { DisplayChangeEvent } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEvent.js';
-
-    
+      
 import { DisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/DisplayChangeEventHandler.js';
-
-    
+      
 import { LastDisplayChangeEventHandler } from '../../../../org/allbinary/graphics/displayable/event/LastDisplayChangeEventHandler.js';
-
-    
+      
 import { SWTJOGLProcessor } from '../../../../org/allbinary/graphics/threed/SWTJOGLProcessor.js';
-
-    
+      
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-
-    
+      
 import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-
-    
+      
 import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-
-    
+      
 import { GenericOperatingSystem } from '../../../../org/allbinary/logic/system/os/GenericOperatingSystem.js';
-
-    
+      
 import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/os/OperatingSystemFactory.js';
-
-    
+      
 import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
-
-    
+      
 import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
-
-    
+      
 import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-
-    
+      
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-
-    
+      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
-
-    
+      
 
 
 
