@@ -6,6 +6,7 @@ import { Window } from "../view/Window.js";
 import { AbilityConstant, Want } from '@kit.AbilityKit';
 import { Intent } from '../content/Intent';
 import { Resources } from '../content/res/Resources';
+import { PackageManager } from '../content/pm/PackageManager';
 
 
 /**

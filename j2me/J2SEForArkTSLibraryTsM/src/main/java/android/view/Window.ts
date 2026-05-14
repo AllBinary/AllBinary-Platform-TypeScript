@@ -13,5 +13,9 @@ import ArkTsWindow from '@ohos.window';
     throw new Error('Method not implemented.');
   }
 
+  getDecorView(): import("./View").View {
+    throw new Error('Method not implemented.');
+  }
+
 }
 

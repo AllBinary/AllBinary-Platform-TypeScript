@@ -315,7 +315,7 @@ var controlType = controlType
     //var leftVolume = leftVolume
     //var rightVolume = rightVolume
 
-    var controllable2: Controllable2 = (this.player as Controllable2);
+    var controllable2: Controllable2 = (this.player as unknown as Controllable2);
 ;
     
 controllable2.setVolume(leftVolume, rightVolume);

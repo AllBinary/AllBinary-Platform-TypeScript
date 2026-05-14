@@ -6,6 +6,7 @@ import { Resources } from "../content/res/Resources.js";
 {
   static POWER_SERVICE: undefined;
   static KEYGUARD_SERVICE: undefined;
+  static INPUT_METHOD_SERVICE: undefined;
 
   getSystemService(POWER_SERVICE: undefined): import("../os/PowerManager.js").PowerManager {
     throw new Error('Method not implemented.');

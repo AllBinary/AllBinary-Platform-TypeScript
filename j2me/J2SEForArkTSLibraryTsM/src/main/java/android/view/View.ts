@@ -2,16 +2,28 @@
 //Via @Component
 
 import { Resources } from "../content/res/Resources";
+import { IBinder } from "../os/IBinder";
 
 /*actual*/ export class View
 {
   static GONE: number = 0;
   static VISIBLE: number = 1;
+  static SYSTEM_UI_FLAG_IMMERSIVE_STICKY: any;
+  static SYSTEM_UI_FLAG_HIDE_NAVIGATION: any;
+  static SYSTEM_UI_FLAG_FULLSCREEN: number;
 
   getHeight(): number {
     throw new Error('Method not implemented.');
   }
   getWidth(): number {
+    throw new Error('Method not implemented.');
+  }
+
+  getWindowToken(): IBinder {
+    throw new Error('Method not implemented.');
+  }
+
+  setSystemUiVisibility(visibility: number) {
     throw new Error('Method not implemented.');
   }
 
