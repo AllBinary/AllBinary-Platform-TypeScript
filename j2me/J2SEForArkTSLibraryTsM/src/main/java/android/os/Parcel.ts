@@ -1,7 +1,0 @@
-
-/*actual*/ export class Parcel
-{
-
-}
-
-

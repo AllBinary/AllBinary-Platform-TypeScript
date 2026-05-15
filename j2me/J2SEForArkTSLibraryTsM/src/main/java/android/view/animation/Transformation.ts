@@ -1,6 +1,0 @@
-
-/*actual*/ export class Transformation
-{
-
-}
-

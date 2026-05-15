@@ -1,6 +1,0 @@
-
-/*actual*/ export interface Serializable
-{
-
-}
-

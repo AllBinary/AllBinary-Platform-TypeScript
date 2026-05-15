@@ -1,5 +1,0 @@
-
-/*actual*/ export class AlphaAnimation
-{
-
-}
