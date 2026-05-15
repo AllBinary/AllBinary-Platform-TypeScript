@@ -1,5 +1,4 @@
 import UIAbility from '@ohos.app.ability.UIAbility';
-import { WindowManager } from '@kit.SpeechKit';
 import { Runnable } from '../../java/lang/Runnable';
 import { ProgressBar } from "../widget/ProgressBar";
 import { Window } from "../view/Window.js";
@@ -8,6 +7,7 @@ import { Intent } from '../content/Intent';
 import { Resources } from '../content/res/Resources';
 import { PackageManager } from '../content/pm/PackageManager';
 import { Bundle } from '../os/Bundle';
+import { WindowManager } from '../view/WindowManager';
 
 
 /**
@@ -157,7 +157,7 @@ import { Bundle } from '../os/Bundle';
     throw new Error('Method not implemented.');
   }
 
-  setResult(RESULT_CANCELED: undefined) {
+  setResult(result: number) {
     throw new Error('Method not implemented.');
   }
 

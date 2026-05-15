@@ -13,6 +13,14 @@ import { IBinder } from "../os/IBinder";
   static SYSTEM_UI_FLAG_HIDE_NAVIGATION: any;
   static SYSTEM_UI_FLAG_FULLSCREEN: number;
 
+  setScaleX(ratio: number) {
+    throw new Error('Method not implemented.');
+  }
+
+  setScaleY(ratio: number) {
+    throw new Error('Method not implemented.');
+  }
+
   getHeight(): number {
     throw new Error('Method not implemented.');
   }
@@ -23,7 +31,7 @@ import { IBinder } from "../os/IBinder";
   getId(): number {
     throw new Error('Method not implemented.');
   }
-  
+
   post(arg0: Runnable) {
     throw new Error('Method not implemented.');
   }
@@ -49,7 +57,7 @@ import { IBinder } from "../os/IBinder";
   setVisibility(VISIBLE: number) {
     throw new Error('Method not implemented.');
   }
-  
+
   postInvalidate() {
     throw new Error('Method not implemented.');
   }
