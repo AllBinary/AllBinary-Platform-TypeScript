@@ -143,7 +143,7 @@ var graphics = graphics
     var index: number = Math.round(this.getLifeInterface()!.get());
 --index >= 0; )
         {
-this.animationInterface!.paintXY(graphics, xArray[index]!, this.getY());
+this.animationInterface!.paintXY(graphics, this.xArray[index]!, this.getY());
     
 }
 

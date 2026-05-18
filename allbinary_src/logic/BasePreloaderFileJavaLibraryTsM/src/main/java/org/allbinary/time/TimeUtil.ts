@@ -192,7 +192,7 @@ var secondString = secondString
     var time: number = TimeUtil.calendar.getTimeInMillis()!;
 ;
     
-this.setExpirationCalendar(calendar, yearString, monthString, dayString, hourString, minuteString, secondString);
+this.setExpirationCalendar(TimeUtil.calendar, yearString, monthString, dayString, hourString, minuteString, secondString);
     
 
     var timeDelta: number = TimeUtil.calendar.getTimeInMillis()!;

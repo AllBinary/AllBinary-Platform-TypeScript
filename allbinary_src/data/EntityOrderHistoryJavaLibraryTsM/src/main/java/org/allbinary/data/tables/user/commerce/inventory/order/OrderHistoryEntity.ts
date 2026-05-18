@@ -28,6 +28,8 @@
         
             import { Long } from '../../../../../../../../java/lang/Long.js';
         
+            import { Float } from '../../../../../../../../java/lang/Float.js';
+        
 import { Calendar } from '../../../../../../../../java/util/Calendar.js';
       
 import { HashMap } from '../../../../../../../../java/util/HashMap.js';

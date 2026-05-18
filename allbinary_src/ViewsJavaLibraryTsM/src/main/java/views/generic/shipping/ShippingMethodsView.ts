@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../java/lang/Exception.js';
         
+            import { Float } from '../../../java/lang/Float.js';
+        
 import { Vector } from '../../../java/util/Vector.js';
       
 import { StoreFrontFactory } from '../../../org/allbinary/business/context/modules/storefront/StoreFrontFactory.js';

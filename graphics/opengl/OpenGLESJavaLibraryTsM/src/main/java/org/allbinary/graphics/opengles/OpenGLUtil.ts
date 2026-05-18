@@ -131,7 +131,7 @@ PreLogUtil.put(CommonLabels.getInstance()!.START_LABEL +OpenGLCapabilities.getIn
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
 }
 
@@ -151,7 +151,7 @@ OpenGLLogUtil.getInstance()!.logError(gl);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SURFACE_CREATED, e);
     
 }
 
@@ -198,7 +198,7 @@ this.set(gl);
     public add(image: Image): Image{
     //var image = image
 
-    var encapsulateImage: Image = preResourceImageUtil!.encapsulate(image)!;
+    var encapsulateImage: Image = this.preResourceImageUtil!.encapsulate(image)!;
 ;
     
 

@@ -84,7 +84,7 @@ export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
 
     private colorFillPaintable: ColorFillBasePaintable
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager){
-            super(commandListener, NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
+            super(commandListener, GameInputMappingInstructionsCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
                     var commandListener = commandListener
 var allBinaryGameLayerManager = allBinaryGameLayerManager
 
@@ -141,7 +141,7 @@ graphics.setColor(this.foregroundColor);
     
 graphics.drawString(this.TITLE, halfWidth -beginWidth, charHeight, this.anchor);
     
-this.drawStringUtil!.drawCenterStrings(graphics, instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight);
+this.drawStringUtil!.drawCenterStrings(graphics, this.instructions, displayInfo!.getLastWidth(), halfWidth, 3 *charHeight);
     
 super.paint(graphics);
     

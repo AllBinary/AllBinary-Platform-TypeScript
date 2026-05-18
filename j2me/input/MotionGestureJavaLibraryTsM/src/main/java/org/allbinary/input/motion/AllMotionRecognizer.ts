@@ -103,7 +103,7 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
+    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;
 ;
     
 point.setX(x);
@@ -137,7 +137,7 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
+    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;
 ;
     
 point.setX(x);
@@ -182,7 +182,7 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                         
                                     {
                                     
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
+    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;
 ;
     
 point.setX(x);
@@ -217,7 +217,7 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
 this.lastY= y;
     
 
-    var point: CustomGPoint = pointCircularPool!.getNextInstance() as CustomGPoint;
+    var point: CustomGPoint = AllMotionRecognizer.pointCircularPool!.getNextInstance() as CustomGPoint;
 ;
     
 point.setX(x);

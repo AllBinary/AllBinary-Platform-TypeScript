@@ -26,6 +26,8 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
+            import { Float } from '../../../../../../../java/lang/Float.js';
+        
 import { HashSet } from '../../../../../../../java/util/HashSet.js';
       
 import { Set } from '../../../../../../../java/util/Set.js';

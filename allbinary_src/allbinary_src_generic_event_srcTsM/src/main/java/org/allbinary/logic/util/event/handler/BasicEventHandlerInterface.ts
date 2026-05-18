@@ -50,7 +50,7 @@ import { EventListenerInterface } from '../../../../../../org/allbinary/logic/ut
 export interface BasicEventHandlerInterface {
         
 
-    addListener(eventListenerInterface: EventListenerInterface)
+    addListenerInterface(eventListenerInterface: EventListenerInterface)
 
                 //@Throws(Exception.constructor)
             

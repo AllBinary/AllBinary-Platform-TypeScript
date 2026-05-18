@@ -14,6 +14,8 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
+            import { Float } from '../../../../java/lang/Float.js';
+        
 
 
 

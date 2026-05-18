@@ -111,7 +111,7 @@ this.allBinaryGameCanvas= allBinaryGameCanvas;
 
         try {
             PreLogUtil.put(new StringMaker().
-                            append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
+                            append(this.inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
 
     var input: Input = this.inputFactory!.getInstanceById(keyCode)!;
@@ -149,7 +149,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.AD
                         
                                     {
                                     PreLogUtil.put(new StringMaker().
-                            append(inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, gameInputStrings!.KEY_RELEASED);
+                            append(this.inputFactory!.KEY_CODE_LABEL)!.appendint(keyCode)!.append(CommonSeps.getInstance()!.SPACE)!.append(this.inputFactory!.DEVICE_ID_LABEL)!.appendint(deviceId)!.toString(), this, this.gameInputStrings!.KEY_RELEASED);
     
 
     var gameKey: GameKey = GameKeyFactory.getInstance()!.KEY_NUM0;

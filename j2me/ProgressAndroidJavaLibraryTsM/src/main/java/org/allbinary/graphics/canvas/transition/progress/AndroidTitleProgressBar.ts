@@ -38,6 +38,8 @@ import { BasicColor } from '../../../../../../org/allbinary/graphics/color/Basic
       
 import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
+import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
+      
 
 
 
@@ -178,7 +180,7 @@ this.progressActivity!.runOnUiThread(this.progressDialogPortionSetProgressRunnab
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
 }
 
@@ -200,7 +202,7 @@ this.progressActivity!.runOnUiThread(this.progressDialogPortionSetProgressRunnab
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, ADD_PORTION, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
     
 }
 
@@ -247,6 +249,10 @@ TitleProgressBarSetProgressRunnable = class
 ;
     
 
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+;
+    
+
         try {
             
     var value: number = Math.round(AndroidTitleProgressBar.prototype.getValue());
@@ -280,9 +286,13 @@ TitleProgressBarPortionSetProgressRunnable = class
 ;
     
 
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+;
+    
+
         try {
             
-    var value: number = Math.round((AndroidTitleProgressBar.prototype.getValue() +AndroidTitleProgressBar.prototype.getMaxValue() /portion));
+    var value: number = Math.round((AndroidTitleProgressBar.prototype.getValue() +AndroidTitleProgressBar.prototype.getMaxValue() /AndroidTitleProgressBar.prototype.portion));
 ;
     
 AndroidTitleProgressBar.prototype.progressActivity!.onTitleProgressBarSetProgress(value);
@@ -310,6 +320,10 @@ ShowTitleProgressBarRunnable = class
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
+;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
 
@@ -343,6 +357,10 @@ DismissTitleProgressBarRunnable = class
     public run(){
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
+;
+    
+
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
 

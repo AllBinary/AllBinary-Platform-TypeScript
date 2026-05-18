@@ -105,8 +105,6 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
 export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEventListenerInterface, DestroyedEventListenerInterface {
         
 
-    private static readonly directionToKeyMap: number[] = [Canvas.LEFT,Canvas.DOWN,Canvas.UP,Canvas.RIGHT];
-
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
 
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(500);
@@ -116,6 +114,8 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
     private readonly directionalInterface: DirectionalInterface
 
     private readonly velocityInterface: BasicVelocityProperties
+
+    private readonly directionToKeyMap: number[] = [Canvas.LEFT,Canvas.DOWN,Canvas.UP,Canvas.RIGHT];
 
     private initialDropped: boolean= false
 
@@ -715,7 +715,7 @@ this.lastDirection= lastDirection;
                         if(value < 4)
                         
                                     {
-                                    super.setLastKey(directionToKeyMap[value]!);
+                                    super.setLastKey(this.directionToKeyMap[value]!);
     
 
                                     }

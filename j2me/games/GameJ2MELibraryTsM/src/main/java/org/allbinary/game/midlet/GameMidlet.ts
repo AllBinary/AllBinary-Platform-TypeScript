@@ -1107,7 +1107,7 @@ stringBuffer!.appendboolean(this.isResized());
 PreLogUtil.put(stringBuffer!.toString(), this, this.COMMAND_ACTION);
     
 
-                        if(this.isResized() || this.fullScreenUtil!.isScreenChange(isFullScreen))
+                        if(this.isResized() || this.fullScreenUtil!.isScreenChange(this.isFullScreen))
                         
                                     {
                                     this.updateFullScreen();

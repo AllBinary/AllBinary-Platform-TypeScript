@@ -88,7 +88,7 @@ this.update();
 
     update(){
 
-                        if(currentRelativeAngle == 0)
+                        if(this.currentRelativeAngle == 0)
                         
                                     {
                                     
@@ -109,7 +109,7 @@ rotationAnimationInterfaceCompositeInterface!.setFrame(angleIncrementInfo!.RIGHT
                                     }
                                 
                              else 
-                        if(currentRelativeAngle == 180)
+                        if(this.currentRelativeAngle == 180)
                         
                                     {
                                     

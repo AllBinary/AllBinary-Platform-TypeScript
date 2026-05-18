@@ -63,9 +63,9 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
+import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
 import { OpenGLESImageProcessor } from './OpenGLESImageProcessor.js';
 import { OpenGLESImageTranslate } from './OpenGLESImageTranslate.js';
-import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';
 //OpenGLESNullImageJavaLibrary
 export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterface {
         
@@ -82,11 +82,11 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
 
     public readonly openGLBitmap: PlatformBitmapBase
 
+    public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
+
     public imageProcessor: OpenGLESImageProcessor = OpenGLESImageProcessor.getInstance()!;
 
     public openGLESImageTranslate: OpenGLESImageTranslate = OpenGLESImageTranslate.getInstance()!;
-
-    public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
 
             super();

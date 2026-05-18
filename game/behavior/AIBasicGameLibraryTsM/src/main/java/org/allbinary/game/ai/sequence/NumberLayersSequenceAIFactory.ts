@@ -54,10 +54,10 @@ export class NumberLayersSequenceAIFactory
         
 
     public getInstance(numberOfEnemiesLeft: number, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
-var numberOfEnemiesLeft = numberOfEnemiesLeft
-var artificialIntelligenceInterface = artificialIntelligenceInterface
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
+    //var numberOfEnemiesLeft = numberOfEnemiesLeft
+    //var artificialIntelligenceInterface = artificialIntelligenceInterface
+    //var ownerLayerInterface = ownerLayerInterface
+    //var gameInput = gameInput
 
 
 

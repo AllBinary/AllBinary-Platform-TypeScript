@@ -63,7 +63,7 @@ var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
 var total = total
 this.circularIndexUtil= CircularIndexUtil.createInstance(total);
     
-OBJECT_ARRAY= new Array(total);
+this.OBJECT_ARRAY= new Array(total);
     
 
 
@@ -73,7 +73,7 @@ OBJECT_ARRAY= new Array(total);
     var localIndex: number = 0;
 localIndex < total; localIndex++)
         {
-OBJECT_ARRAY[localIndex]= allbinaryLayerFactoryInterface!.getInstance();
+this.OBJECT_ARRAY[localIndex]= allbinaryLayerFactoryInterface!.getInstance();
     
 }
 

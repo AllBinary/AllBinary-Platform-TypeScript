@@ -157,7 +157,7 @@ var graphics = graphics
     var topScoresWidth: number = (graphics.getFont()!.stringWidth(this.INSTRUCTIONS)>>1);
 ;
     
-graphics.drawString(INSTRUCTIONS, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, anchor);
+graphics.drawString(this.INSTRUCTIONS, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_HEIGHT *2, this.anchor);
     
 }
 

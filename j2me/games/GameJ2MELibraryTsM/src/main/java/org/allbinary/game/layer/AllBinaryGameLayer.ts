@@ -103,7 +103,7 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
 
     public paint(graphics: Graphics){
 var graphics = graphics
-basicSetColorUtil!.setBasicColorP(graphics, BLACK);
+AllBinaryGameLayer.prototype.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
     
 }
 

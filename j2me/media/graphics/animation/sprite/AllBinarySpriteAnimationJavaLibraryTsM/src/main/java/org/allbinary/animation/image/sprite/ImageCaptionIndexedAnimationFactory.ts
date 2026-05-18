@@ -148,7 +148,7 @@ this.animationBehaviorFactory= animationBehaviorFactory;
     public getInstance(instanceId: number): Animation{
     //var instanceId = instanceId
 
-    var scaledImage: Image = animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
+    var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;
     
 

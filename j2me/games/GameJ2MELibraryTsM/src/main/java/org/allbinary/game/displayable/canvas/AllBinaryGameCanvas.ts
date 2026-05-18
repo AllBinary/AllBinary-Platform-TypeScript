@@ -691,7 +691,7 @@ this.setPopupMenuInputProcessor(new PopupMenuInputProcessor(new BasicArrayListD(
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "initMenu", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "initMenu", e);
     
 }
 
@@ -858,7 +858,7 @@ System.gc();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public unPause(){
-this.logUtil!.putF(this.commonStrings!.START, this, gameStrings!.UNPAUSE);
+this.logUtil!.putF(this.commonStrings!.START, this, this.gameStrings!.UNPAUSE);
     
 this.closeMenu();
     
@@ -1127,7 +1127,7 @@ var enable = enable
                 //@Throws(Exception.constructor)
             
     public mediaInit(){
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 
@@ -1432,7 +1432,7 @@ this.sensorGameUpdateProcessor!.sendNotifications(this.gameLayerManager);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "itemStateChanged", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "itemStateChanged", e);
     
 }
 
@@ -1529,13 +1529,13 @@ this.gameOver= gameOver;
                 //@Throws(Exception.constructor)
             
     public processGameOver(){
-PreLogUtil.put(commonStrings!.START, this, this.gameStrings!.SET_GAME_OVER);
+PreLogUtil.put(this.commonStrings!.START, this, this.gameStrings!.SET_GAME_OVER);
     
 this.setGameOver(true);
     
 removePauseCommand();
     
-this.setGameState(SHOW_END_RESULT_GAME_STATE);
+this.setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE);
     
 this.setEndGamePaintable(getEndGameStatePaintable());
     
@@ -1607,7 +1607,7 @@ this.gameBehavior!.setGameState(this);
             
     public updateGameState(){
 
-    var gameAdState: GameAdState = gameAdStateFactory!.getCurrentInstance()!;
+    var gameAdState: GameAdState = this.gameAdStateFactory!.getCurrentInstance()!;
 ;
     
 gameAdState!.processAdState(this.gameState, this.gameLayerManager!.getGameInfo()!.getGameType());
@@ -1890,7 +1890,7 @@ this.gameBehavior!.buildGame(this);
 
     public buildGame2(){
 PreLogUtil.put(new StringMaker().
-                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, BUILD_GAME);
+                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUTS)!.appendint(this.localPlayerGameInputList!.size())!.toString(), this, this.BUILD_GAME);
     
 
     var playerGameInput: PlayerGameInput
@@ -1907,7 +1907,7 @@ index >= 0; index--)
 playerGameInput= this.localPlayerGameInputList!.get(index) as PlayerGameInput;
     
 PreLogUtil.put(new StringMaker().
-                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, BUILD_GAME);
+                            append(this.gameInputStrings!.ENABLE_PLAYER_GAME_INPUT)!.append(playerGameInput!.toString())!.toString(), this, this.BUILD_GAME);
     
 playerGameInput!.removeNonAIInputGameKeyEvents();
     
@@ -1973,7 +1973,7 @@ gameInfo!.setCurrentLevel(level);
             
     public getLoadStateHashtable(): Hashtable<any, any>{
 this.logUtil!.putF(new StringMaker().
-                            append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
+                            append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(this.hashtable))!.toString(), this, "getLoadStateHashtable");
     
 
 
@@ -1987,7 +1987,7 @@ this.logUtil!.putF(new StringMaker().
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
     //var hashtable = hashtable
 this.logUtil!.putF(new StringMaker().
-                            append(commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
+                            append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
     
 this.hashtable= hashtable;
     
@@ -2019,7 +2019,7 @@ this.logUtil!.putF(new StringMaker().
 
     public paintGameOver(graphics: Graphics){
 var graphics = graphics
-ForcedLogUtil.log(commonStrings!.NOT_IMPLEMENTED, this);
+ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 
@@ -2412,7 +2412,7 @@ OpenGLThreadUtil.getInstance()!.onResume();
                         if(features.isDefault(this.openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS))
                         
                                     {
-                                    this.logUtil!.putF(openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, this.commonStrings!.RUN);
+                                    this.logUtil!.putF(this.openGLFeatureFactory!.OPENGL_AND_GAME_HAVE_DIFFERENT_THREADS.getName(), this, this.commonStrings!.RUN);
     
 OpenGLThreadUtil.getInstance()!.onResume();
     
@@ -2449,7 +2449,7 @@ this.end();
                 //@Throws(Exception.constructor)
             
     public run3(){
-this.loopTimeHelper!.setStartTime(gameTickTimeDelayHelper!.setStartTime());
+this.loopTimeHelper!.setStartTime(this.gameTickTimeDelayHelper!.setStartTime());
     
 this.gameTickDisplayInfoSingleton!.update();
     
@@ -2507,7 +2507,7 @@ this.end();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     
 }
 
@@ -2520,7 +2520,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_RUNNING, e);
 this.screenCapture!.endRecording();
     
 this.baseGameStatistics!.add(new StringMaker().
-                            append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
+                            append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 this.baseGameStatistics!.init();
     
@@ -2643,7 +2643,7 @@ class SaveHighScoreRunnable
                 //: 
 } catch(e) 
             {
-logUtil!.put(commonStrings!.EXCEPTION, this, "run", e);
+logUtil!.put(AllBinaryGameCanvas.prototype.commonStrings!.EXCEPTION, this, "run", e);
     
 this.progressCanvas!.end();
     

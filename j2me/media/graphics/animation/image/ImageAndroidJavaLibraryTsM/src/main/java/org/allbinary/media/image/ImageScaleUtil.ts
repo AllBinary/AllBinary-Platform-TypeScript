@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../java/lang/Exception.js';
         
+            import { Float } from '../../../../java/lang/Float.js';
+        
 import { Bitmap } from '../../../../android/graphics/Bitmap.js';
       
 import { Canvas } from '../../../../android/graphics/Canvas.js';

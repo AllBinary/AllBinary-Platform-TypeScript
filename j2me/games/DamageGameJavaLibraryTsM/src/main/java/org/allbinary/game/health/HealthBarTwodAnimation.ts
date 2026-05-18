@@ -71,7 +71,7 @@ public constructor (layerInterface: AllBinaryLayer, location: number){
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.basicColor, this.colorP);
     
-graphics.fillRect(ax, this.getY() -1, x2, this.thickness);
+graphics.fillRect(ax, this.getY() -1, this.x2, this.thickness);
     
 }
 

@@ -73,7 +73,7 @@ export class ArtificialIntelligenceInterfaceFactoryInterfaceFactory
     private list: BasicArrayList = BasicArrayListUtil.getInstance()!.getImmutableInstance()!;
 
     public clear(){
-list= new BasicArrayListD();
+this.list= new BasicArrayListD();
     
 }
 

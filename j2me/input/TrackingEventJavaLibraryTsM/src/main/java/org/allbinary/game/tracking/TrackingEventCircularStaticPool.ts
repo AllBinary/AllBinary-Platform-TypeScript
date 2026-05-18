@@ -80,7 +80,7 @@ this.EVENT_POOL.init(new TrackingEventFactory());
     public getNextInstance(layerInterface: AllBinaryLayer): TrackingEvent{
 var layerInterface = layerInterface
 
-    var trackingEvent: TrackingEvent = EVENT_POOL.getNextInstance() as TrackingEvent;
+    var trackingEvent: TrackingEvent = this.EVENT_POOL.getNextInstance() as TrackingEvent;
 ;
     
 trackingEvent!.setLayerInterfaceForCircularStaticPool(layerInterface);

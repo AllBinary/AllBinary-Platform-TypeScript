@@ -24,6 +24,8 @@
         
             import { Integer } from '../../../../../../../java/lang/Integer.js';
         
+            import { Float } from '../../../../../../../java/lang/Float.js';
+        
 import { Serializable } from '../../../../../../../java/io/Serializable.js';
       
 import { HashMap } from '../../../../../../../java/util/HashMap.js';

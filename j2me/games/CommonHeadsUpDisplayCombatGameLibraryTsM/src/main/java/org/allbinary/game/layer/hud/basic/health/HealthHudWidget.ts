@@ -203,7 +203,7 @@ index < this.max; index++)
                         if(this.timeDelayHelper!.isTime(this.gameTickTimeDelayHelper!.startTime))
                         
                                     {
-                                    this.animationInterface!.paintXY(graphics, xArray[index]!, this.getY());
+                                    this.animationInterface!.paintXY(graphics, this.xArray[index]!, this.getY());
     
 
                                     }

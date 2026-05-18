@@ -94,7 +94,7 @@ this.lastIndex= this.circularIndexUtil!.getIndex();
 
     public isAnyHighScores(): boolean{
 
-                        if(highScoresArrayP!.length < 1)
+                        if(this.highScoresArrayP!.length < 1)
                         
                                     {
                                     
@@ -119,10 +119,10 @@ this.lastIndex= this.circularIndexUtil!.getIndex();
 
 
                         for (
-    var index: number = highScoresArrayP!.length -1;
+    var index: number = this.highScoresArrayP!.length -1;
 index >= 0; index--)
         {
-highScores= highScoresArrayP[index]!;
+highScores= this.highScoresArrayP[index]!;
     
 
                         if(highScores!.getTotal() > 0)

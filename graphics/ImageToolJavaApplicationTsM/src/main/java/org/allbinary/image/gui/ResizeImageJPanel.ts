@@ -28,6 +28,8 @@
         
             import { Integer } from '../../../../java/lang/Integer.js';
         
+            import { Float } from '../../../../java/lang/Float.js';
+        
             import { Thread } from '../../../../java/lang/Thread.js';
         
 import { BufferedImage } from '../../../../java/awt/image/BufferedImage.js';

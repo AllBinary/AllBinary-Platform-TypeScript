@@ -60,8 +60,8 @@ export class StopAtEdgeAI extends BasicAI {
         
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
+                        //var ownerLayerInterface = ownerLayerInterface
+    //var gameInput = gameInput
 
 
                             //For kotlin this is before the body of the constructor.
@@ -72,7 +72,7 @@ var gameInput = gameInput
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
+    //var allBinaryLayerManager = allBinaryLayerManager
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
 ;

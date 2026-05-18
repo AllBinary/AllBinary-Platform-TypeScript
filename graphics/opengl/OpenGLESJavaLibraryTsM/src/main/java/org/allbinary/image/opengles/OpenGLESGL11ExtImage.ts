@@ -42,8 +42,6 @@ import { OpenGLLogUtil } from '../../../../org/allbinary/graphics/opengles/OpenG
       
 import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
-import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js';
-      
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
       
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
@@ -105,7 +103,7 @@ this.a= DisplayInfoSingleton.getInstance()!.getLastHeight() -this.getHeight();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(commonStrings!.EXCEPTION, this, "onResize", e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
     
 }
 
@@ -127,7 +125,7 @@ this.onDisplayChangeEvent(
                                     {
                                     this.textureFactory!.load(gl11, GL10.GL_TEXTURE_2D, 0, this, 0, true);
     
-gl11.glTexParameteriv(GL10.GL_TEXTURE_2D, GL11Ext.GL_TEXTURE_CROP_RECT_OES, rectangle, 0);
+gl11.glTexParameteriv(GL10.GL_TEXTURE_2D, GL11Ext.GL_TEXTURE_CROP_RECT_OES, this.rectangle, 0);
     
 gl11.glDisable(GL10.GL_TEXTURE_2D);
     
@@ -146,7 +144,7 @@ OpenGLLogUtil.getInstance()!.logError(gl11, this);
     //var z = z
 gl.glEnable(GL10.GL_TEXTURE_2D);
     
-gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
+gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID);
     
 gl = glgl as GL11Ext
 gl.

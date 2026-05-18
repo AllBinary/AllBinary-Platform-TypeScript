@@ -119,7 +119,7 @@ graphics.setColor(getBasicColorP()!.intValue());
     
 graphics.drawString(heading, (width>>1) -topScoresWidth, charHeight, this.anchor);
     
-graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, anchor);
+graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, this.anchor);
     
 
     var columnTwoHeading: string = this.highScores!.getColumnTwoHeading()!;
@@ -129,7 +129,7 @@ graphics.drawString(this.highScores!.getColumnOneHeading(), 10, charHeight *3, a
     var columnTwoHeadingWidth: number = graphics.getFont()!.stringWidth(columnTwoHeading)!;
 ;
     
-graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeight *3, anchor);
+graphics.drawString(columnTwoHeading, width -10 -columnTwoHeadingWidth, charHeight *3, this.anchor);
     
 
     var index: number = 4;
@@ -184,9 +184,9 @@ vectorIndex= 0;
     var highScore: HighScore = list.objectArray[vectorIndex]! as HighScore;
 ;
     
-graphics.drawString(highScore!.getName(), 10, charHeight *index, anchor);
+graphics.drawString(highScore!.getName(), 10, charHeight *index, this.anchor);
     
-graphics.drawString(highScore!.getScoreString(), width -10 -largestSecondColumnWidth, charHeight *index, anchor);
+graphics.drawString(highScore!.getScoreString(), width -10 -largestSecondColumnWidth, charHeight *index, this.anchor);
     
 index++;
     

@@ -38,8 +38,6 @@ import { GameInfo } from '../../../../../org/allbinary/game/GameInfo.js';
       
 import { GameCommandsFactory } from '../../../../../org/allbinary/game/commands/GameCommandsFactory.js';
       
-import { Features } from '../../../../../org/allbinary/game/configuration/feature/Features.js';
-      
 import { GameCommandCanvas } from '../../../../../org/allbinary/game/displayable/canvas/GameCommandCanvas.js';
       
 import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/layer/AllBinaryGameLayerManager.js';
@@ -81,6 +79,8 @@ import { SimpleTextPaintable } from '../../../../../org/allbinary/graphics/paint
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
+      
+import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings.js';
       
 import { ARunnable } from '../../../../../org/allbinary/thread/ARunnable.js';
       
@@ -181,6 +181,10 @@ SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 
     public run(){
 
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+;
+    
+
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
     
@@ -195,11 +199,11 @@ SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                         
                                     {
                                     
-        while(!hasPainted)
+        while(!HighScoresCanvas.prototype.hasPainted)
         {
 }
 
-hasPainted= false;
+HighScoresCanvas.prototype.hasPainted= false;
     
 
                                     }
@@ -210,14 +214,14 @@ hasPainted= false;
     
 logUtil!.putF(stringMaker!.append("HighScoresCanvas - Request repaint to be sure: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
-repaintBehavior!.onChangeRepaint(HighScoresCanvas.prototype);
+HighScoresCanvas.prototype.repaintBehavior!.onChangeRepaint(HighScoresCanvas.prototype);
     
 
                         if(!isHTML)
                         
                                     {
                                     
-        while(!hasPainted)
+        while(!HighScoresCanvas.prototype.hasPainted)
         {
 }
 
@@ -378,7 +382,7 @@ this.logUtil!.putF(new StringMaker().
                         
                                     {
                                     
-    var index: number = highScoreCommandsFactory!.getIndex(command)!;
+    var index: number = this.highScoreCommandsFactory!.getIndex(command)!;
 ;
     
 
@@ -421,7 +425,7 @@ this.logUtil!.putF(new StringMaker().
     
 this.addCommand(gameCommandsFactory!.CLOSE_AND_SHOW_GAME_CANVAS);
     
-this.addCommand(highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[nextIndex]!);
+this.addCommand(this.highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[nextIndex]!);
     
 
                                     }

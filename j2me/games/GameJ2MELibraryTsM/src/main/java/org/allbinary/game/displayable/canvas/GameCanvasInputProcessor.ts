@@ -139,7 +139,7 @@ this.downGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyE
                         }
                             
 
-    var keyCodeAsInteger: Integer = smallIntegerSingletonFactory!.getAtNoThrow(keyCode)!;
+    var keyCodeAsInteger: Integer = this.smallIntegerSingletonFactory!.getAtNoThrow(keyCode)!;
 ;
     
 this.downKeyEventHandler!.fireEvent(keyCodeAsInteger);

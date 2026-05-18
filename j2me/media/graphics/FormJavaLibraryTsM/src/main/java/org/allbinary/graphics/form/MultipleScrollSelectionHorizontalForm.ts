@@ -137,7 +137,7 @@ public constructor (title: string, items: ABCustomItem[], formPaintableFactory: 
                         else {
                             graphics.setColor(this.backgroundColor);
     
-graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight());
+graphics.fillRect(this.x, this.y, this.rectangle.getWidth(), this.rectangle.getHeight());
     
 
                         }
@@ -146,7 +146,7 @@ graphics.fillRect(x, y, this.rectangle.getWidth(), this.rectangle.getHeight());
     var myFont: MyFont = MyFont.getInstance()!;
 ;
     
-graphics.drawString(this.getTitle(), x, y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
+graphics.drawString(this.getTitle(), this.x, this.y -myFont!.DEFAULT_CHAR_HEIGHT, 0);
     
 
     var item: ABCustomItem

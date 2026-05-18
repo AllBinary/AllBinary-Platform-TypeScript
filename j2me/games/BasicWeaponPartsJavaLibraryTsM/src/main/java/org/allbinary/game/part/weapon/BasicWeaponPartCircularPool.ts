@@ -66,7 +66,7 @@ export class BasicWeaponPartCircularPool
             
     public init(basicWeaponPartFactoryInterface: BasicWeaponPartFactoryInterface){
     //var basicWeaponPartFactoryInterface = basicWeaponPartFactoryInterface
-basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance();
+this.basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance();
     
 }
 

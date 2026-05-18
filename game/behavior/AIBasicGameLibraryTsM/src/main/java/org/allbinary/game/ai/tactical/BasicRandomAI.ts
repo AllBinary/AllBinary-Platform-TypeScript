@@ -130,7 +130,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.getMax());
     
 
-    var size: number = keyArray!.length
+    var size: number = this.keyArray!.length
                 ;
 ;
     
@@ -147,7 +147,7 @@ this.i_random= this.myRandomFactory!.getAbsoluteNextInt(this.inputProbability!.g
 index < size; index++)
         {
 
-    var key: number = keyArray[index]!;
+    var key: number = this.keyArray[index]!;
 ;
     
 likelyhoodIntegerKeyArray= likelyhoodIntegerArray[key]!;

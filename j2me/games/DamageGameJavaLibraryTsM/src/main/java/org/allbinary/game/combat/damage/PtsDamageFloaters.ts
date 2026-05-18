@@ -163,7 +163,7 @@ index >= 0; index--)
     
 this.basicSetColorUtil!.setBasicColorP(graphics, PtsDamageFloaters.basicColorArrayIndexer!.get());
     
-graphics.drawChars(this.lastDamageString[index]!, 0, this.lastDamageStringSizeArray[index]!, x -myRandomFactory!.getNextInt(delta), y -delta, 0);
+graphics.drawChars(this.lastDamageString[index]!, 0, this.lastDamageStringSizeArray[index]!, x -this.myRandomFactory!.getNextInt(delta), y -delta, 0);
     
 PtsDamageFloaters.basicColorArrayIndexer!.next();
     

@@ -78,7 +78,7 @@
         <module>../../allbinary_src/hardware/HardwareLibraryPOMTs</module>
 
         <module>../lib/TrigBaseLibraryTsM</module>
-        <module>../J2SEForArkTSLibraryTsM</module>
+        
     </modules>
 
 </project>

@@ -103,7 +103,7 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
 ;
     
 
-    var minAngle: number = (angle -((increment *total)>>1));
+    var minAngle: number = (angle -((increment *this.total)>>1));
 ;
     
 

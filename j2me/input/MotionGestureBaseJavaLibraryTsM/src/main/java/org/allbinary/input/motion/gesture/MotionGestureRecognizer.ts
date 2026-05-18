@@ -219,7 +219,7 @@ this.line.setP2(current);
 ;
     
 
-                        if(this.j2seMath!.abs(this.line.getDeltaX()) < minimumMotionGesture && this.j2seMath!.abs(line.getDeltaY()) < minimumMotionGesture)
+                        if(this.j2seMath!.abs(this.line.getDeltaX()) < minimumMotionGesture && this.j2seMath!.abs(this.line.getDeltaY()) < minimumMotionGesture)
                         
                                     {
                                     this.intermediate= current;

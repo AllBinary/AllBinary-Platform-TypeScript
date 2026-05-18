@@ -22,8 +22,6 @@
 
 
         
-import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.js';
-      
 import { Features } from '../../../../org/allbinary/game/configuration/feature/Features.js';
       
 

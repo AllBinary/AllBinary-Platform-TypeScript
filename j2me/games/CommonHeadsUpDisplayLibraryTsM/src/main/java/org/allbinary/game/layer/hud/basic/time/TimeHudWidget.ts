@@ -142,7 +142,7 @@ this.totalDigits= this.timer.getCurrentTotalDigits();
 
     public paint(graphics: Graphics){
 var graphics = graphics
-super.paintDX(graphics, TIME_CHAR_ARRAY, 0, TIME_CHAR_ARRAY.length, string, 0, totalDigits, this.offset);
+super.paintDX(graphics, this.TIME_CHAR_ARRAY, 0, this.TIME_CHAR_ARRAY.length, this.string, 0, this.totalDigits, this.offset);
     
 }
 

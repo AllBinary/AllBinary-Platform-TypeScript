@@ -24,6 +24,8 @@
         
             import { Long } from '../../../../java/lang/Long.js';
         
+            import { Float } from '../../../../java/lang/Float.js';
+        
 import { ImageAnalysisResults } from '../../../../org/allbinary/media/image/analysis/ImageAnalysisResults.js';
       
 import { ImageColorRangeResults } from '../../../../org/allbinary/media/image/analysis/ImageColorRangeResults.js';

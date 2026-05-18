@@ -150,7 +150,7 @@ this.player.start();
 
 
     public start(){
-player= MediaPlayer.create(this, songId);
+this.player= MediaPlayer.create(this, this.songId);
     
 this.player.setVolume((this.leftVolume) /100.0, (this.rightVolume) /100.0);
     
@@ -181,7 +181,7 @@ this.onStartCommandIntent(intent);
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return START_STICKY;
+                        return Service.START_STICKY;
     
 }
 
@@ -284,11 +284,19 @@ this.logUtil!.putF(this.ALREADY_PLAYING, this, this.commonStateStrings!.ON_START
 ;
     
 
+    var commonStrings: CommonStrings = CommonStrings.getInstance()!;
+;
+    
+
+    var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
+;
+    
+
         try {
             
         while(player.isPlaying())
         {
-logUtil!.putF(WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND);
+logUtil!.putF(BaseMusicService.prototype.WAITING_FOR_MUSIC_TO_END, this, commonStateStrings!.ON_START_COMMAND);
     
 Thread.sleep(1200);
     

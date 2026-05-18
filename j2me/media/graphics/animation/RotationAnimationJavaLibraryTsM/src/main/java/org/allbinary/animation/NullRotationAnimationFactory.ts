@@ -101,7 +101,7 @@ private constructor (){
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_ANIMATION;
+                        return this.NULL_ANIMATION;
     
 }
 
@@ -114,7 +114,7 @@ var animationInterface = animationInterface
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NULL_ANIMATION;
+                        return this.NULL_ANIMATION;
     
 }
 

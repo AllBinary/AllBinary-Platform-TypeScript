@@ -203,7 +203,7 @@ this.inputMappingInterface!.process(gameKey, motionGestureInput);
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.METHOD_NAME, e);
     
 }
 

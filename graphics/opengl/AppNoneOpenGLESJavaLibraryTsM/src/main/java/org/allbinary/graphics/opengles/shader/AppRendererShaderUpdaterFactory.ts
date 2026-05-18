@@ -70,7 +70,7 @@ export class AppRendererShaderUpdaterFactory extends ShaderUpdater {
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return shaderOpenGLProcessorArray;
+                        return this.shaderOpenGLProcessorArray;
     
 }
 

@@ -111,20 +111,20 @@ var deviceId = deviceId
 
 
                         for (
-    var index: number = currentlyPressedTouchButtonSingleton!.size() -1;
+    var index: number = TouchButtonRecognizer.prototype.currentlyPressedTouchButtonSingleton!.size() -1;
 index >= 0; index--)
         {
 
-    var nextTouchButtonInput: TouchButtonInput = currentlyPressedTouchButtonSingleton!.get(index)!;
+    var nextTouchButtonInput: TouchButtonInput = TouchButtonRecognizer.prototype.currentlyPressedTouchButtonSingleton!.get(index)!;
 ;
     
 
     var gameKeyEvent: GameKeyEvent = nextTouchButtonInput!.getGameKeyEvent()!;
 ;
     
-upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+TouchButtonRecognizer.prototype.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
+TouchButtonRecognizer.prototype.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index);
     
@@ -163,11 +163,11 @@ var deviceId = deviceId
 
 
                         for (
-    var index: number = currentlyPressedTouchButtonSingleton!.size() -1;
+    var index: number = TouchButtonRecognizer.prototype.currentlyPressedTouchButtonSingleton!.size() -1;
 index >= 0; index--)
         {
 
-    var nextTouchButtonInput: TouchButtonInput = currentlyPressedTouchButtonSingleton!.get(index)!;
+    var nextTouchButtonInput: TouchButtonInput = TouchButtonRecognizer.prototype.currentlyPressedTouchButtonSingleton!.get(index)!;
 ;
     
 
@@ -178,9 +178,9 @@ index >= 0; index--)
     var gameKeyEvent: GameKeyEvent = nextTouchButtonInput!.getGameKeyEvent()!;
 ;
     
-upGameKeyEventHandler!.fireEvent(gameKeyEvent);
+TouchButtonRecognizer.prototype.upGameKeyEventHandler!.fireEvent(gameKeyEvent);
     
-upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
+TouchButtonRecognizer.prototype.upGameKeyEventHandler!.getInstanceForDevice(deviceId)!.fireEvent(gameKeyEvent);
     
 this.touchButtonRecognizer!.currentlyPressedTouchButtonSingleton!.removeAt(index);
     

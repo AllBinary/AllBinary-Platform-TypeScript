@@ -77,7 +77,7 @@ this.foregroundColor= basicColor!.intValue();
     public paint(graphics: Graphics){
 var graphics = graphics
 
-    var list: BasicArrayList = touchButtonFactory!.getList()!;
+    var list: BasicArrayList = this.touchButtonFactory!.getList()!;
 ;
     
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.foregroundBasicColor, this.foregroundColor);

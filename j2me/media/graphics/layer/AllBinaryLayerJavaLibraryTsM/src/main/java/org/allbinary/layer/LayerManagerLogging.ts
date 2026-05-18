@@ -109,7 +109,7 @@ this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(
     public appendAt(layerInterface: AllBinaryLayer, index: number){
     //var layerInterface = layerInterface
     //var index = index
-this.stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.APPEND_)!.append(layerInterface!.getName())!.append(this._AT_)!.appendint(index)!.toString(), this, this.APPEND);
     
@@ -192,7 +192,7 @@ LayerManagerLogging.removeFailed= true;
 
     log(layerManager: LayerManager){
     //var layerManager = layerManager
-this.stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 
     var size: number = layerManager!.getSize()!;
@@ -230,7 +230,7 @@ this.logUtil!.putF(this.stringBuilder!.toString(), this, this.REMOVE);
 
 
     public clear(){
-this.stringBuilder!.delete(0, stringBuilder!.length());
+this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.CLEAR)!.toString(), this, this.CLEAR);
     

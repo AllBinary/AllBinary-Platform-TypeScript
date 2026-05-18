@@ -76,7 +76,7 @@ private constructor (id: number){
 
             super();
         var id = id
-this.eventPool!.init(new MotionEventFactory(eventPool, id));
+this.eventPool!.init(new MotionEventFactory(this.eventPool, id));
     
 }
 

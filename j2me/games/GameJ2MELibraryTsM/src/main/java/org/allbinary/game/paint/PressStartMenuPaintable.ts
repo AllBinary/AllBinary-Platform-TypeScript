@@ -149,7 +149,7 @@ var graphics = graphics
     var line: number = (4 *myFont!.DEFAULT_CHAR_HEIGHT) +(myFont!.DEFAULT_CHAR_HEIGHT>>1);
 ;
     
-graphics.drawString(startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, this.anchor);
+graphics.drawString(this.startString, displayInfo!.getLastHalfWidth() -beginWidth, displayInfo!.getLastHeight() -line, this.anchor);
     
 
                                     }

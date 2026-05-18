@@ -213,7 +213,7 @@ var initializeCounter = initializeCounter
 ;
     
 
-    var iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, INITFILENAME)!;
+    var iFile: AbFileInputStream = fileStreamFactory!.getFileInputStreamInstance(this.filePath, this.INITFILENAME)!;
 ;
     
 

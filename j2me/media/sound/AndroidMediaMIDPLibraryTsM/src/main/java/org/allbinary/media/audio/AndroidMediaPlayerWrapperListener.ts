@@ -82,13 +82,13 @@ this.androidMediaPlayerWrapper= androidMediaPlayerWrapper;
     var mediaPlayer: MediaPlayer = androidMediaPlayerWrapper!.getMediaPlayer()!;
 ;
     
-mediaPlayer!.setOnCompletionListener(mOnCompletionListener);
+mediaPlayer!.setOnCompletionListener(this.mOnCompletionListener);
     
-mediaPlayer!.setOnBufferingUpdateListener(mOnBufferingUpdateListener);
+mediaPlayer!.setOnBufferingUpdateListener(this.mOnBufferingUpdateListener);
     
-mediaPlayer!.setOnPreparedListener(mOnPreparedListener);
+mediaPlayer!.setOnPreparedListener(this.mOnPreparedListener);
     
-mediaPlayer!.setOnErrorListener(mOnErrorListener);
+mediaPlayer!.setOnErrorListener(this.mOnErrorListener);
     
 
                 //: 

@@ -1578,7 +1578,7 @@ this.end();
                 //: 
 } catch(e) 
             {
-this.logUtil!.put(this.commonStrings!.EXCEPTION, this, SET_RUNNING, e);
+this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.SET_RUNNING, e);
     
 }
 
@@ -1599,7 +1599,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, SET_RUNNING, e);
 ;
     
 this.baseGameStatistics!.add(new StringMaker().
-                            append(DemoCanvas.BOT_GAME_STATS)!.append(baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
+                            append(DemoCanvas.BOT_GAME_STATS)!.append(this.baseGameStatistics!.toString())!.append(CommonSeps.getInstance()!.NEW_LINE)!.toString());
     
 this.baseGameStatistics!.init();
     

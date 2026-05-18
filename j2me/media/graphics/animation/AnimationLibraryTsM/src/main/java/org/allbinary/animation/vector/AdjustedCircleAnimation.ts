@@ -151,7 +151,7 @@ var x = x
 var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
-graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, this.width, this.height, 0, TOTAL_ANGLE);
+graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, this.width, this.height, 0, this.TOTAL_ANGLE);
     
 }
 

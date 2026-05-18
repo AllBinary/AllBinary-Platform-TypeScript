@@ -81,7 +81,7 @@ public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, text
                     
 this.initVertices();
     
-this.regionRectangleVertexFloatBuffer!.put(FloatBuffer.wrap(regionRectangleFloatArray));
+this.regionRectangleVertexFloatBuffer!.put(FloatBuffer.wrap(this.regionRectangleFloatArray));
     
 this.regionTextureVertexFloatBuffer!.put(FloatBuffer.wrap(this.regionTextureRectangleFloatArray));
     
@@ -182,21 +182,21 @@ this.regionTextureRectangleFloatArray[6]= this.regionTextureRectangleFloatArray[
     
 this.regionTextureRectangleFloatArray[7]= this.regionTextureRectangleFloatArray[5]!;
     
-this.glUtil!.position(regionRectangleVertexFloatBuffer, 0);
+this.glUtil!.position(this.regionRectangleVertexFloatBuffer, 0);
     
-gl.glVertexPointer(3, GL10.GL_FLOAT, 0, regionRectangleVertexFloatBuffer);
+gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.regionRectangleVertexFloatBuffer);
     
 gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
     
 gl.glEnable(GL10.GL_TEXTURE_2D);
     
-gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
+gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID);
     
 gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
     
-this.glUtil!.position(regionTextureVertexFloatBuffer, 0);
+this.glUtil!.position(this.regionTextureVertexFloatBuffer, 0);
     
-gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, regionTextureVertexFloatBuffer);
+gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.regionTextureVertexFloatBuffer);
     
 gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
     
@@ -230,21 +230,21 @@ this.regionRectangleFloatArray[9]= this.regionRectangleFloatArray[3]!;
     
 this.regionRectangleFloatArray[10]= this.regionRectangleFloatArray[7]!;
     
-this.glUtil!.position(regionRectangleVertexFloatBuffer, 0);
+this.glUtil!.position(this.regionRectangleVertexFloatBuffer, 0);
     
-gl.glVertexPointer(3, GL10.GL_FLOAT, 0, regionRectangleVertexFloatBuffer);
+gl.glVertexPointer(3, GL10.GL_FLOAT, 0, this.regionRectangleVertexFloatBuffer);
     
 gl.glEnableClientState(GL10.GL_VERTEX_ARRAY);
     
 gl.glEnable(GL10.GL_TEXTURE_2D);
     
-gl.glBindTexture(GL10.GL_TEXTURE_2D, openGLESImageProperties!.textureID);
+gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID);
     
 gl.glEnableClientState(GL10.GL_TEXTURE_COORD_ARRAY);
     
-this.glUtil!.position(textureVertexFloatBuffer, 0);
+this.glUtil!.position(this.textureVertexFloatBuffer, 0);
     
-gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, textureVertexFloatBuffer);
+gl.glTexCoordPointer(2, GL10.GL_FLOAT, 0, this.textureVertexFloatBuffer);
     
 gl.glDrawArrays(GL10.GL_TRIANGLE_STRIP, 0, 4);
     
