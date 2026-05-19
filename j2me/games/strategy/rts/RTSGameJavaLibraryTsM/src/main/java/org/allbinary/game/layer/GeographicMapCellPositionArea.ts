@@ -85,8 +85,7 @@ export class GeographicMapCellPositionArea extends GeographicMapCellPositionArea
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
-            //var layerInterface = layerInterface
-this.layerInterface= layerInterface;
+        this.layerInterface= layerInterface;
     
 }
 
@@ -94,7 +93,6 @@ this.layerInterface= layerInterface;
                 //@Throws(Exception.constructor)
             
     public update(geographicMapInterface: BasicGeographicMap){
-    //var geographicMapInterface = geographicMapInterface
 this.occupyingGeographicMapCellPositionList= this.layerCoveringCellPositionsUtil!.getAllXY(geographicMapInterface, this.layerInterface, this.layerInterface!.getXP(), this.layerInterface!.getYP(), this.reusableOccupyingGeographicMapCellPositionList);
     
 this.surroundingGeographicMapCellPositionList= this.cellPositionsUtil!.getAllSurrounding(geographicMapInterface, this.occupyingGeographicMapCellPositionList, this.reusableSurroundingGeographicMapCellPositionList);

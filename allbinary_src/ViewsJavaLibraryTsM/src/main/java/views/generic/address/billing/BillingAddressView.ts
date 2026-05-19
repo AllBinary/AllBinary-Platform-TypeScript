@@ -73,8 +73,7 @@ export class BillingAddressView extends HttpStoreComponentView implements DomNod
     streetAddress: StreetAddress
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -96,7 +95,6 @@ this.request= this.getPageContext()!.getRequest() as HttpServletRequest;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

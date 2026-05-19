@@ -66,9 +66,7 @@ export class CompoundIndexedAnimation extends IndexedAnimation implements Compou
     private animationInterfaceArray: Animation[]
 public constructor (animationInterfaceArray: Animation[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var animationInterfaceArray = animationInterfaceArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,7 +78,6 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.animationInterface
 
 
     public setFrame(index: number){
-    //var index = index
 
     var indexedAnimation: IndexedAnimation = this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]! as IndexedAnimation;
 ;
@@ -129,7 +126,6 @@ indexedAnimation!.previousFrame();
 
 
     public setSequence(sequence: number[]){
-var sequence = sequence
 }
 
 
@@ -152,19 +148,12 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.nextFrame();
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintXY(graphics, x, y);
     
 }
 
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(graphics, x, y, z);
     
 }
@@ -205,7 +194,6 @@ this.setFrame(frame);
 
 
     public setAnimation(index: number){
-    //var index = index
 
     var frame: number = this.getFrame()!;
 ;
@@ -228,7 +216,6 @@ this.setFrame(frame);
 
 
     public setAnimationInterfaceArray(animationInterfaceArray: Animation[]){
-    //var animationInterfaceArray = animationInterfaceArray
 this.animationInterfaceArray= animationInterfaceArray;
     
 }
@@ -237,7 +224,6 @@ this.animationInterfaceArray= animationInterfaceArray;
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-    //var gl = gl
 
 
 

@@ -64,7 +64,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-var layer = layer
 }
 
 

@@ -62,7 +62,6 @@ export class MouseInputAutomationProcessor
                 //@Throws(Exception.constructor)
             
     public static process(mouseActionScriptInputInterface: MouseActionScriptInputInterface){
-var mouseActionScriptInputInterface = mouseActionScriptInputInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

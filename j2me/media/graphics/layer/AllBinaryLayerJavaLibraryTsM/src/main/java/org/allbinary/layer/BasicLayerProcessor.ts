@@ -70,7 +70,6 @@ protected constructor (){
 
 
     public add(layerInterface: AllBinaryLayer){
-var layerInterface = layerInterface
 
                         if(!this.list.contains(layerInterface))
                         
@@ -86,7 +85,6 @@ var layerInterface = layerInterface
                 //@Throws(Exception.constructor)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
 
 

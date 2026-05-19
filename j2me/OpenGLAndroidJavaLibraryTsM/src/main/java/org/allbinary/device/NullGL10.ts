@@ -59,7 +59,6 @@ export class NullGL10
     public static readonly NULL_GL10: NullGL10 = new NullGL10();
 
     public glActiveTexture(texture: number){
-    //var texture = texture
 
 
 
@@ -70,8 +69,6 @@ export class NullGL10
 
 
     public glAlphaFunc(func: number, ref: number){
-    //var func = func
-    //var ref = ref
 
 
 
@@ -82,14 +79,10 @@ export class NullGL10
 
 
     public glAlphaFuncx(func: number, ref: number){
-var func = func
-var ref = ref
 }
 
 
     public glBindTexture(target: number, texture: number){
-    //var target = target
-    //var texture = texture
 
 
 
@@ -100,8 +93,6 @@ var ref = ref
 
 
     public glBlendFunc(sfactor: number, dfactor: number){
-    //var sfactor = sfactor
-    //var dfactor = dfactor
 
 
 
@@ -112,7 +103,6 @@ var ref = ref
 
 
     public glClear(mask: number){
-    //var mask = mask
 
 
 
@@ -123,10 +113,6 @@ var ref = ref
 
 
     public glClearColor(red: number, green: number, blue: number, alpha: number){
-    //var red = red
-    //var green = green
-    //var blue = blue
-    //var alpha = alpha
 
 
 
@@ -137,15 +123,10 @@ var ref = ref
 
 
     public glClearColorx(red: number, green: number, blue: number, alpha: number){
-var red = red
-var green = green
-var blue = blue
-var alpha = alpha
 }
 
 
     public glClearDepthf(depth: number){
-    //var depth = depth
 
 
 
@@ -156,12 +137,10 @@ var alpha = alpha
 
 
     public glClearDepthx(depth: number){
-var depth = depth
 }
 
 
     public glClearStencil(s: number){
-    //var s = s
 
 
 
@@ -172,7 +151,6 @@ var depth = depth
 
 
     public glClientActiveTexture(texture: number){
-    //var texture = texture
 
 
 
@@ -183,10 +161,6 @@ var depth = depth
 
 
     public glColor4f(red: number, green: number, blue: number, alpha: number){
-    //var red = red
-    //var green = green
-    //var blue = blue
-    //var alpha = alpha
 
 
 
@@ -197,18 +171,10 @@ var depth = depth
 
 
     public glColor4x(red: number, green: number, blue: number, alpha: number){
-var red = red
-var green = green
-var blue = blue
-var alpha = alpha
 }
 
 
     public glColorMask(red: boolean, green: boolean, blue: boolean, alpha: boolean){
-    //var red = red
-    //var green = green
-    //var blue = blue
-    //var alpha = alpha
 
 
 
@@ -219,10 +185,6 @@ var alpha = alpha
 
 
     public glColorPointer(size: number, type: number, stride: number, pointer: Buffer){
-    //var size = size
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -233,14 +195,6 @@ var alpha = alpha
 
 
     public glCompressedTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, imageSize: number, data: Buffer){
-    //var target = target
-    //var level = level
-    //var internalformat = internalformat
-    //var width = width
-    //var height = height
-    //var border = border
-    //var imageSize = imageSize
-    //var data = data
 
 
 
@@ -251,15 +205,6 @@ var alpha = alpha
 
 
     public glCompressedTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, imageSize: number, data: Buffer){
-    //var target = target
-    //var level = level
-    //var xoffset = xoffset
-    //var yoffset = yoffset
-    //var width = width
-    //var height = height
-    //var format = format
-    //var imageSize = imageSize
-    //var data = data
 
 
 
@@ -270,14 +215,6 @@ var alpha = alpha
 
 
     public glCopyTexImage2D(target: number, level: number, internalformat: number, x: number, y: number, width: number, height: number, border: number){
-    //var target = target
-    //var level = level
-    //var internalformat = internalformat
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
-    //var border = border
 
 
 
@@ -288,14 +225,6 @@ var alpha = alpha
 
 
     public glCopyTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, x: number, y: number, width: number, height: number){
-    //var target = target
-    //var level = level
-    //var xoffset = xoffset
-    //var yoffset = yoffset
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
 
 
 
@@ -306,7 +235,6 @@ var alpha = alpha
 
 
     public glCullFace(mode: number){
-    //var mode = mode
 
 
 
@@ -317,9 +245,6 @@ var alpha = alpha
 
 
     public glDeleteTextures(n: number, textures: number[], offset: number){
-    //var n = n
-    //var textures = textures
-    //var offset = offset
 
 
 
@@ -330,8 +255,6 @@ var alpha = alpha
 
 
     public glDeleteTextures(n: number, textures: IntBuffer){
-    //var n = n
-    //var textures = textures
 
 
 
@@ -342,7 +265,6 @@ var alpha = alpha
 
 
     public glDepthFunc(func: number){
-    //var func = func
 
 
 
@@ -353,7 +275,6 @@ var alpha = alpha
 
 
     public glDepthMask(flag: boolean){
-    //var flag = flag
 
 
 
@@ -364,8 +285,6 @@ var alpha = alpha
 
 
     public glDepthRangef(zNear: number, zFar: number){
-    //var zNear = zNear
-    //var zFar = zFar
 
 
 
@@ -376,13 +295,10 @@ var alpha = alpha
 
 
     public glDepthRangex(zNear: number, zFar: number){
-var zNear = zNear
-var zFar = zFar
 }
 
 
     public glDisable(cap: number){
-    //var cap = cap
 
 
 
@@ -393,7 +309,6 @@ var zFar = zFar
 
 
     public glDisableClientState(array: number){
-    //var array = array
 
 
 
@@ -404,9 +319,6 @@ var zFar = zFar
 
 
     public glDrawArrays(mode: number, first: number, count: number){
-    //var mode = mode
-    //var first = first
-    //var count = count
 
 
 
@@ -417,10 +329,6 @@ var zFar = zFar
 
 
     public glDrawElements(mode: number, count: number, type: number, indices: Buffer){
-    //var mode = mode
-    //var count = count
-    //var type = type
-    //var indices = indices
 
 
 
@@ -431,7 +339,6 @@ var zFar = zFar
 
 
     public glEnable(cap: number){
-    //var cap = cap
 
 
 
@@ -442,7 +349,6 @@ var zFar = zFar
 
 
     public glEnableClientState(array: number){
-    //var array = array
 
 
 
@@ -473,8 +379,6 @@ var zFar = zFar
 
 
     public glFogf(pname: number, param: number){
-    //var pname = pname
-    //var param = param
 
 
 
@@ -485,9 +389,6 @@ var zFar = zFar
 
 
     public glFogfv(pname: number, params: number[], offset: number){
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -498,8 +399,6 @@ var zFar = zFar
 
 
     public glFogfv(pname: number, params: FloatBuffer){
-    //var pname = pname
-    //var params = params
 
 
 
@@ -510,26 +409,18 @@ var zFar = zFar
 
 
     public glFogx(pname: number, param: number){
-var pname = pname
-var param = param
 }
 
 
     public glFogxv(pname: number, params: number[], offset: number){
-var pname = pname
-var params = params
-var offset = offset
 }
 
 
     public glFogxv(pname: number, params: IntBuffer){
-var pname = pname
-var params = params
 }
 
 
     public glFrontFace(mode: number){
-    //var mode = mode
 
 
 
@@ -540,12 +431,6 @@ var params = params
 
 
     public glFrustumf(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number){
-    //var left = left
-    //var right = right
-    //var bottom = bottom
-    //var top = top
-    //var zNear = zNear
-    //var zFar = zFar
 
 
 
@@ -556,19 +441,10 @@ var params = params
 
 
     public glFrustumx(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number){
-var left = left
-var right = right
-var bottom = bottom
-var top = top
-var zNear = zNear
-var zFar = zFar
 }
 
 
     public glGenTextures(n: number, textures: number[], offset: number){
-    //var n = n
-    //var textures = textures
-    //var offset = offset
 
 
 
@@ -579,8 +455,6 @@ var zFar = zFar
 
 
     public glGenTextures(n: number, textures: IntBuffer){
-    //var n = n
-    //var textures = textures
 
 
 
@@ -601,9 +475,6 @@ var zFar = zFar
 
 
     public glGetIntegerv(pname: number, params: number[], offset: number){
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -614,8 +485,6 @@ var zFar = zFar
 
 
     public glGetIntegerv(pname: number, params: IntBuffer){
-    //var pname = pname
-    //var params = params
 
 
 
@@ -626,7 +495,6 @@ var zFar = zFar
 
 
     public glGetString(name: number): string{
-    //var name = name
 
 
 
@@ -637,8 +505,6 @@ var zFar = zFar
 
 
     public glHint(target: number, mode: number){
-    //var target = target
-    //var mode = mode
 
 
 
@@ -649,8 +515,6 @@ var zFar = zFar
 
 
     public glLightModelf(pname: number, param: number){
-    //var pname = pname
-    //var param = param
 
 
 
@@ -661,9 +525,6 @@ var zFar = zFar
 
 
     public glLightModelfv(pname: number, params: number[], offset: number){
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -674,8 +535,6 @@ var zFar = zFar
 
 
     public glLightModelfv(pname: number, params: FloatBuffer){
-    //var pname = pname
-    //var params = params
 
 
 
@@ -686,28 +545,18 @@ var zFar = zFar
 
 
     public glLightModelx(pname: number, param: number){
-var pname = pname
-var param = param
 }
 
 
     public glLightModelxv(pname: number, params: number[], offset: number){
-var pname = pname
-var params = params
-var offset = offset
 }
 
 
     public glLightModelxv(pname: number, params: IntBuffer){
-var pname = pname
-var params = params
 }
 
 
     public glLightf(light: number, pname: number, param: number){
-    //var light = light
-    //var pname = pname
-    //var param = param
 
 
 
@@ -718,10 +567,6 @@ var params = params
 
 
     public glLightfv(light: number, pname: number, params: number[], offset: number){
-    //var light = light
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -732,9 +577,6 @@ var params = params
 
 
     public glLightfv(light: number, pname: number, params: FloatBuffer){
-    //var light = light
-    //var pname = pname
-    //var params = params
 
 
 
@@ -745,29 +587,18 @@ var params = params
 
 
     public glLightx(light: number, pname: number, param: number){
-var light = light
-var pname = pname
-var param = param
 }
 
 
     public glLightxv(light: number, pname: number, params: number[], offset: number){
-var light = light
-var pname = pname
-var params = params
-var offset = offset
 }
 
 
     public glLightxv(light: number, pname: number, params: IntBuffer){
-var light = light
-var pname = pname
-var params = params
 }
 
 
     public glLineWidth(width: number){
-    //var width = width
 
 
 
@@ -778,7 +609,6 @@ var params = params
 
 
     public glLineWidthx(width: number){
-var width = width
 }
 
 
@@ -793,8 +623,6 @@ var width = width
 
 
     public glLoadMatrixf(m: number[], offset: number){
-    //var m = m
-    //var offset = offset
 
 
 
@@ -805,7 +633,6 @@ var width = width
 
 
     public glLoadMatrixf(m: FloatBuffer){
-    //var m = m
 
 
 
@@ -816,18 +643,14 @@ var width = width
 
 
     public glLoadMatrixx(m: number[], offset: number){
-var m = m
-var offset = offset
 }
 
 
     public glLoadMatrixx(m: IntBuffer){
-var m = m
 }
 
 
     public glLogicOp(opcode: number){
-    //var opcode = opcode
 
 
 
@@ -838,9 +661,6 @@ var m = m
 
 
     public glMaterialf(face: number, pname: number, param: number){
-    //var face = face
-    //var pname = pname
-    //var param = param
 
 
 
@@ -851,10 +671,6 @@ var m = m
 
 
     public glMaterialfv(face: number, pname: number, params: number[], offset: number){
-    //var face = face
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -865,9 +681,6 @@ var m = m
 
 
     public glMaterialfv(face: number, pname: number, params: FloatBuffer){
-    //var face = face
-    //var pname = pname
-    //var params = params
 
 
 
@@ -878,29 +691,18 @@ var m = m
 
 
     public glMaterialx(face: number, pname: number, param: number){
-var face = face
-var pname = pname
-var param = param
 }
 
 
     public glMaterialxv(face: number, pname: number, params: number[], offset: number){
-var face = face
-var pname = pname
-var params = params
-var offset = offset
 }
 
 
     public glMaterialxv(face: number, pname: number, params: IntBuffer){
-var face = face
-var pname = pname
-var params = params
 }
 
 
     public glMatrixMode(mode: number){
-    //var mode = mode
 
 
 
@@ -911,8 +713,6 @@ var params = params
 
 
     public glMultMatrixf(m: number[], offset: number){
-    //var m = m
-    //var offset = offset
 
 
 
@@ -923,7 +723,6 @@ var params = params
 
 
     public glMultMatrixf(m: FloatBuffer){
-    //var m = m
 
 
 
@@ -934,22 +733,14 @@ var params = params
 
 
     public glMultMatrixx(m: number[], offset: number){
-var m = m
-var offset = offset
 }
 
 
     public glMultMatrixx(m: IntBuffer){
-var m = m
 }
 
 
     public glMultiTexCoord4f(target: number, s: number, t: number, r: number, q: number){
-    //var target = target
-    //var s = s
-    //var t = t
-    //var r = r
-    //var q = q
 
 
 
@@ -960,18 +751,10 @@ var m = m
 
 
     public glMultiTexCoord4x(target: number, s: number, t: number, r: number, q: number){
-var target = target
-var s = s
-var t = t
-var r = r
-var q = q
 }
 
 
     public glNormal3f(nx: number, ny: number, nz: number){
-    //var nx = nx
-    //var ny = ny
-    //var nz = nz
 
 
 
@@ -982,16 +765,10 @@ var q = q
 
 
     public glNormal3x(nx: number, ny: number, nz: number){
-var nx = nx
-var ny = ny
-var nz = nz
 }
 
 
     public glNormalPointer(type: number, stride: number, pointer: Buffer){
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -1002,12 +779,6 @@ var nz = nz
 
 
     public glOrthof(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number){
-    //var left = left
-    //var right = right
-    //var bottom = bottom
-    //var top = top
-    //var zNear = zNear
-    //var zFar = zFar
 
 
 
@@ -1018,18 +789,10 @@ var nz = nz
 
 
     public glOrthox(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number){
-var left = left
-var right = right
-var bottom = bottom
-var top = top
-var zNear = zNear
-var zFar = zFar
 }
 
 
     public glPixelStorei(pname: number, param: number){
-    //var pname = pname
-    //var param = param
 
 
 
@@ -1040,7 +803,6 @@ var zFar = zFar
 
 
     public glPointSize(size: number){
-    //var size = size
 
 
 
@@ -1051,13 +813,10 @@ var zFar = zFar
 
 
     public glPointSizex(size: number){
-var size = size
 }
 
 
     public glPolygonOffset(factor: number, units: number){
-    //var factor = factor
-    //var units = units
 
 
 
@@ -1068,8 +827,6 @@ var size = size
 
 
     public glPolygonOffsetx(factor: number, units: number){
-var factor = factor
-var units = units
 }
 
 
@@ -1094,13 +851,6 @@ var units = units
 
 
     public glReadPixels(x: number, y: number, width: number, height: number, format: number, type: number, pixels: Buffer){
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
-    //var format = format
-    //var type = type
-    //var pixels = pixels
 
 
 
@@ -1111,10 +861,6 @@ var units = units
 
 
     public glRotatef(angle: number, x: number, y: number, z: number){
-    //var angle = angle
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -1125,10 +871,6 @@ var units = units
 
 
     public glRotatex(angle: number, x: number, y: number, z: number){
-    //var angle = angle
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -1139,8 +881,6 @@ var units = units
 
 
     public glSampleCoverage(value: number, invert: boolean){
-    //var value = value
-    //var invert = invert
 
 
 
@@ -1151,15 +891,10 @@ var units = units
 
 
     public glSampleCoveragex(value: number, invert: boolean){
-var value = value
-var invert = invert
 }
 
 
     public glScalef(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -1170,9 +905,6 @@ var invert = invert
 
 
     public glScalex(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -1183,10 +915,6 @@ var invert = invert
 
 
     public glScissor(x: number, y: number, width: number, height: number){
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
 
 
 
@@ -1197,7 +925,6 @@ var invert = invert
 
 
     public glShadeModel(mode: number){
-    //var mode = mode
 
 
 
@@ -1208,9 +935,6 @@ var invert = invert
 
 
     public glStencilFunc(func: number, ref: number, mask: number){
-    //var func = func
-    //var ref = ref
-    //var mask = mask
 
 
 
@@ -1221,7 +945,6 @@ var invert = invert
 
 
     public glStencilMask(mask: number){
-    //var mask = mask
 
 
 
@@ -1232,9 +955,6 @@ var invert = invert
 
 
     public glStencilOp(fail: number, zfail: number, zpass: number){
-    //var fail = fail
-    //var zfail = zfail
-    //var zpass = zpass
 
 
 
@@ -1245,10 +965,6 @@ var invert = invert
 
 
     public glTexCoordPointer(size: number, type: number, stride: number, pointer: Buffer){
-    //var size = size
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -1259,9 +975,6 @@ var invert = invert
 
 
     public glTexEnvf(target: number, pname: number, param: number){
-    //var target = target
-    //var pname = pname
-    //var param = param
 
 
 
@@ -1272,10 +985,6 @@ var invert = invert
 
 
     public glTexEnvfv(target: number, pname: number, params: number[], offset: number){
-    //var target = target
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -1286,9 +995,6 @@ var invert = invert
 
 
     public glTexEnvfv(target: number, pname: number, params: FloatBuffer){
-    //var target = target
-    //var pname = pname
-    //var params = params
 
 
 
@@ -1299,37 +1005,18 @@ var invert = invert
 
 
     public glTexEnvx(target: number, pname: number, param: number){
-var target = target
-var pname = pname
-var param = param
 }
 
 
     public glTexEnvxv(target: number, pname: number, params: number[], offset: number){
-var target = target
-var pname = pname
-var params = params
-var offset = offset
 }
 
 
     public glTexEnvxv(target: number, pname: number, params: IntBuffer){
-var target = target
-var pname = pname
-var params = params
 }
 
 
     public glTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, format: number, type: number, pixels: Buffer){
-    //var target = target
-    //var level = level
-    //var internalformat = internalformat
-    //var width = width
-    //var height = height
-    //var border = border
-    //var format = format
-    //var type = type
-    //var pixels = pixels
 
 
 
@@ -1340,9 +1027,6 @@ var params = params
 
 
     public glTexParameterf(target: number, pname: number, param: number){
-    //var target = target
-    //var pname = pname
-    //var param = param
 
 
 
@@ -1353,22 +1037,10 @@ var params = params
 
 
     public glTexParameterx(target: number, pname: number, param: number){
-var target = target
-var pname = pname
-var param = param
 }
 
 
     public glTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, type: number, pixels: Buffer){
-    //var target = target
-    //var level = level
-    //var xoffset = xoffset
-    //var yoffset = yoffset
-    //var width = width
-    //var height = height
-    //var format = format
-    //var type = type
-    //var pixels = pixels
 
 
 
@@ -1379,9 +1051,6 @@ var param = param
 
 
     public glTranslatef(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -1392,17 +1061,10 @@ var param = param
 
 
     public glTranslatex(x: number, y: number, z: number){
-var x = x
-var y = y
-var z = z
 }
 
 
     public glVertexPointer(size: number, type: number, stride: number, pointer: Buffer){
-    //var size = size
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -1413,10 +1075,6 @@ var z = z
 
 
     public glViewport(x: number, y: number, width: number, height: number){
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
 
 
 

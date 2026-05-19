@@ -79,7 +79,6 @@ export class ResourceLoadingLevelFactory
                                                         ];
 
     public getLevelString(level: number): string{
-var level = level
 
 
 

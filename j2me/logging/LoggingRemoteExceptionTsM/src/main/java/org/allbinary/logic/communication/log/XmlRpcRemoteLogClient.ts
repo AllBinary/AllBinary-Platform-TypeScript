@@ -67,8 +67,7 @@ export class XmlRpcRemoteLogClient extends XmlRpcAbeClient {
     private readonly noCrypt: NoCrypt = new NoCrypt();
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "SSLLogServ.logUtil");
-                        //var clientInfo = clientInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,7 +77,6 @@ public constructor (clientInfo: AbeClientInformationInterface){
                 //@Throws(Exception.constructor)
             
     public get(anyType: any = {}): any{
-    //var anyType = anyType
 
         try {
             

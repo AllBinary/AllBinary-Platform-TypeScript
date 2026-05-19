@@ -60,14 +60,12 @@ export class BufferedLineReader
 public constructor (file: AbFile){
 
             super();
-        var file = file
-this.tmpIn= new BufferedReader(new FileReader(AbFileNativeUtil.get(file)));
+        this.tmpIn= new BufferedReader(new FileReader(AbFileNativeUtil.get(file)));
     
 }
 
 
     public readUpToLines(readAheadIndex: number){
-var readAheadIndex = readAheadIndex
 }
 
 

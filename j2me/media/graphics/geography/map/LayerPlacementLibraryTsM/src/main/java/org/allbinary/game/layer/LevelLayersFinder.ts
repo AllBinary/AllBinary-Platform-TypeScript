@@ -77,7 +77,6 @@ export class LevelLayersFinder
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     public get(hashtable: Hashtable<any, any>): BasicArrayList{
-    //var hashtable = hashtable
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
 ;

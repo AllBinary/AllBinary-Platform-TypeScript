@@ -53,8 +53,7 @@ export class SpecialUpGameInputInterfaceProcessor extends SpecialGameInputInterf
         
 public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterface){
             super(collidableDestroyableDamageableLayer);
-                    var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,8 +63,6 @@ public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterf
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 this.specialGameInputInterface!.up();
     
 }

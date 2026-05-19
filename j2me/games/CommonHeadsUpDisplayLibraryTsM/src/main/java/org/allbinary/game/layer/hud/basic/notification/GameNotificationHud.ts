@@ -72,13 +72,7 @@ export class GameNotificationHud extends BasicHud implements GameNotificationLis
     public static readonly NULL_GAME_NOTIFICATION: GameNotificationHud = new GameNotificationHud(BasicHudFactory.getInstance()!.TOPCENTER, BasicHudFactory.getInstance()!.HORIZONTAL, 0, 0, 0, BasicColorFactory.getInstance()!.RED);
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
-                    var location = location
-var direction = direction
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -86,7 +80,6 @@ var basicColor = basicColor
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -99,7 +92,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public onGameNotificationEvent(gameNotificationEvent: GameNotificationEvent){
-    //var gameNotificationEvent = gameNotificationEvent
 
                         if(this.lastGameNotificationEvent != gameNotificationEvent)
                         
@@ -117,10 +109,6 @@ this.add(gameNotificationEvent!.getString(), gameNotificationEvent!.getSeconds()
 
 
     add(string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
-var string = string
-var seconds = seconds
-var basicColor = basicColor
-var permanent = permanent
 }
 
 
@@ -131,7 +119,6 @@ var permanent = permanent
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 

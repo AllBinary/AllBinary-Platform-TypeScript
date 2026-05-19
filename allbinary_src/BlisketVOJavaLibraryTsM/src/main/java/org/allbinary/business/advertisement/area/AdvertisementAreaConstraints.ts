@@ -70,8 +70,7 @@ export class AdvertisementAreaConstraints
 public constructor (document: Document){
 
             super();
-        var document = document
-
+        
     var node: Node = DomSearchHelper.getNode(AdvertisementAreaData.getInstance()!.NAME, document.getChildNodes())!;
 ;
     
@@ -83,14 +82,12 @@ this.twoDimensionConstraintsInterface= new TwoDimensionalConstraint(node);
 
 
     public setDisplayInBrowserContraints(displayInBrowserContraintsInterface: DisplayInBrowserContraintsInterface){
-var displayInBrowserContraintsInterface = displayInBrowserContraintsInterface
 this.displayInBrowserContraintsInterface= displayInBrowserContraintsInterface;
     
 }
 
 
     public getTwoDimensionContraints(twoDimensionConstraintsInterface: TwoDimensionalConstraintInterface){
-var twoDimensionConstraintsInterface = twoDimensionConstraintsInterface
 this.twoDimensionConstraintsInterface= twoDimensionConstraintsInterface;
     
 }

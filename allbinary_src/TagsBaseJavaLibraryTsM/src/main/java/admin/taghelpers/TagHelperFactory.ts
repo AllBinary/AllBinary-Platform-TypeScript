@@ -64,8 +64,6 @@ export class TagHelperFactory
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
-    //var hashMap = hashMap
-    //var pageContext = pageContext
 
 
 

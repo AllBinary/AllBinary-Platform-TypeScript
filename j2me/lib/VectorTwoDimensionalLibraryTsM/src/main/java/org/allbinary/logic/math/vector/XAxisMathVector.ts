@@ -49,9 +49,7 @@ export class XAxisMathVector extends MathVector {
         
 public constructor (magnitudeBasicDecimal: BasicDecimal, direction: number){
             super(magnitudeBasicDecimal, direction);
-                    var magnitudeBasicDecimal = magnitudeBasicDecimal
-var direction = direction
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -56,8 +56,7 @@ export class Portion
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.current= hashMap!.get("current") as Integer;
+        this.current= hashMap!.get("current") as Integer;
     
 this.total= hashMap!.get("total") as Integer;
     

@@ -82,9 +82,7 @@ export class PickupBehavior
 public constructor (ownerLayerInterface: CollidableCompositeLayer, countedIndex: number){
 
             super();
-            //var ownerLayerInterface = ownerLayerInterface
-    //var countedIndex = countedIndex
-this.ownerLayerInterface= ownerLayerInterface;
+        this.ownerLayerInterface= ownerLayerInterface;
     
 this.countedIndex= countedIndex;
     
@@ -92,7 +90,6 @@ this.countedIndex= countedIndex;
 
 
     public doPickup(pickupProcessorInterface: PickupProcessorInterface){
-    //var pickupProcessorInterface = pickupProcessorInterface
 
         try {
             
@@ -124,7 +121,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "doPickup", e);
 
 
     public doPickupLayer(pickupLayerInterface: PickedUpLayerInterface){
-var pickupLayerInterface = pickupLayerInterface
 
         try {
             
@@ -192,7 +188,6 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "doPickup", e);
 
 
     add(countedPickedUpLayerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactoryInterface){
-var countedPickedUpLayerInterfaceFactoryInterface = countedPickedUpLayerInterfaceFactoryInterface
 
     var partIndex: number = countedPickedUpLayerInterfaceFactoryInterface!.getId() +this.countedIndex;
 ;
@@ -203,8 +198,6 @@ this.addAt(countedPickedUpLayerInterfaceFactoryInterface, partIndex);
 
 
     addAt(countedPickedUpLayerInterfaceFactoryInterface: CountedPickedUpLayerInterfaceFactoryInterface, partIndex: number){
-    //var countedPickedUpLayerInterfaceFactoryInterface = countedPickedUpLayerInterfaceFactoryInterface
-    //var partIndex = partIndex
 
     var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
 ;
@@ -219,7 +212,6 @@ countedLayerInterfaceFactory!.setTotal(countedLayerInterfaceFactory!.getTotal() 
 
 
     public getFirstAvailableCountedLayerInterfaceFactory(pickedUpLayerTypeArray: PickedUpLayerType[]): CountedLayerInterfaceFactoryPart{
-var pickedUpLayerTypeArray = pickedUpLayerTypeArray
 
     var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = this.ownerLayerInterface as CollidableDestroyableDamageableLayer;
 ;
@@ -298,7 +290,6 @@ countedPickedUpLayerInterfaceFactory= nextCountedLayerInterfaceFactory!.getCount
                 //@Throws(Exception.constructor)
             
     public getCountedLayerInterfaceFactoryForSlot(slotIndex: number): CountedLayerInterfaceFactoryPart{
-var slotIndex = slotIndex
 
     var currentSlot: number = 0;
 ;

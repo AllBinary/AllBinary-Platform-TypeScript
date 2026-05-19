@@ -74,7 +74,6 @@ private constructor (){
 
 
     public isCustomScaling(image: Image): boolean{
-    //var image = image
 
     var imageName: string = image.getName()!;
 ;

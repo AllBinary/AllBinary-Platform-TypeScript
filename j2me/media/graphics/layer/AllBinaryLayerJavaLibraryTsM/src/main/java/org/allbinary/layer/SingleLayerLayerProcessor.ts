@@ -62,7 +62,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
     var layerManager: LayerManager = this.getLayerManager()!;
 ;

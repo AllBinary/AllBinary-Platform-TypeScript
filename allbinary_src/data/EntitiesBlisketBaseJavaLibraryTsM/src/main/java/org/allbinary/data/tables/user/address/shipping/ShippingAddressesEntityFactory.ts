@@ -75,7 +75,6 @@ private constructor (){
 
 
     public getInstance(userName: string): StreetAddressesEntity{
-var userName = userName
 
         try {
             

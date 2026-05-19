@@ -108,7 +108,6 @@ export class UserEmailEventNameData
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(userEmailEventNameString: string): UserEmailEventNameData{
-var userEmailEventNameString = userEmailEventNameString
 
     var userEmailEventNameData: UserEmailEventNameData = UserEmailEventNameData.userNameEvenNameHashMap!.get(userEmailEventNameString) as UserEmailEventNameData;
 ;
@@ -146,8 +145,7 @@ var userEmailEventNameString = userEmailEventNameString
 public constructor (eventHandlerName: string){
 
             super();
-        var eventHandlerName = eventHandlerName
-this.eventHandlerName= eventHandlerName;
+        this.eventHandlerName= eventHandlerName;
     
 this.initNextId();
     
@@ -166,7 +164,6 @@ UserEmailEventNameData.nextId++;
 
 
     public isEvent(userEmailEventNameString: string): boolean{
-var userEmailEventNameString = userEmailEventNameString
 
 
 

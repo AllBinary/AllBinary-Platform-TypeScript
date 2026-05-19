@@ -58,8 +58,7 @@ export class NewValidationView extends ShippingAddressView implements Validation
         
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -99,7 +98,6 @@ this.streetAddress= new StreetAddress();
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

@@ -77,11 +77,7 @@ export class LoadGameForm extends CommandForm {
     private areChoices: boolean= false
 public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
-                        //var commandListener = commandListener
-    //var title = title
-    //var backgrounBasicColor = backgrounBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -95,7 +91,6 @@ this.initCommands(commandListener);
 
 
     public initCommands(cmdListener: CommandListener){
-    //var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
 ;
@@ -147,9 +142,6 @@ super.update();
 
 
     add(list: BasicArrayList, name: string, option: number){
-    //var list = list
-    //var name = name
-    //var option = option
 
     var choiceGroup: ChoiceGroup = this.getChoiceGroup(list, name, option)!;
 ;
@@ -169,9 +161,6 @@ this.append(choiceGroup);
 
 
     getChoiceGroup(list: BasicArrayList, name: string, option: number): ChoiceGroup{
-    //var list = list
-    //var name = name
-    //var option = option
 
     var METHOD_NAME: string = "getChoiceGroup";
 ;

@@ -49,7 +49,6 @@ export class NoCrypt
         
 
     public encrypt(array: number[]): number[]{
-    //var array = array
 
 
 
@@ -60,7 +59,6 @@ export class NoCrypt
 
 
     public decrypt(array: number[]): number[]{
-    //var array = array
 
 
 

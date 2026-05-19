@@ -71,8 +71,6 @@ export class BasicGeographicMapUtil
                 //@Throws(Exception.constructor)
             
     public getBorderingRow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
-    //var direction = direction
-    //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
     var LOCATION_CHANGE: number = 1;
 ;
@@ -125,8 +123,6 @@ default: {
                 //@Throws(Exception.constructor)
             
     public getBorderingColumn(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): number{
-    //var direction = direction
-    //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
     var LOCATION_CHANGE: number = 1;
 ;
@@ -179,8 +175,6 @@ default: {
                 //@Throws(Exception.constructor)
             
     public isSameCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var fromGeographicMapCellPosition = fromGeographicMapCellPosition
-    //var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
 ;
@@ -224,7 +218,6 @@ default: {
 
 
     public createAllBinaryTiledLayerArray(geographicMapInterfaceArray: BasicGeographicMap[]): Layer[]{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
 
     var tiledLayerArray: Layer[] = new Array(geographicMapInterfaceArray!.length);
 ;
@@ -239,9 +232,6 @@ default: {
 
 
     public getAllBinaryTiledLayerArray(geographicMapInterfaceArray: BasicGeographicMap[], tiledLayerArray: Layer[], startIndex: number): Layer[]{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var tiledLayerArray = tiledLayerArray
-    //var startIndex = startIndex
 
     var geographicMapInterface: BasicGeographicMap
 ;
@@ -279,9 +269,6 @@ tiledLayerArray[count++]= geographicMapInterface!.getAllBinaryTiledLayer();
 
 
     public move(geographicMapInterfaceArray: BasicGeographicMap[], dx: number, dy: number){
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var dx = dx
-    //var dy = dy
 
     var geographicMapInterface: BasicGeographicMap
 ;
@@ -309,9 +296,6 @@ geographicMapInterface!.getAllBinaryTiledLayer()!.moveDXY(dx, dy);
 
 
     public setPosition(geographicMapInterfaceArray: BasicGeographicMap[], x: number, y: number){
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var x = x
-    //var y = y
 
     var geographicMapInterface: BasicGeographicMap
 ;

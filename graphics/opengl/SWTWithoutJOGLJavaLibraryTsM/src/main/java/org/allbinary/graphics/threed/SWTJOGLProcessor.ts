@@ -67,15 +67,12 @@ export class SWTJOGLProcessor
                                 {
                                 
     public run(renderer: any = {}){
-var renderer = renderer
 }
 
                                 }
                             ;
 
     public init(display: any = {}, comp: any = {}){
-    //var display = display
-    //var comp = comp
 }
 
 
@@ -90,7 +87,6 @@ var renderer = renderer
 
 
     public setRenderer(renderer: any = {}){
-    //var renderer = renderer
 }
 
 
@@ -113,7 +109,6 @@ var renderer = renderer
 
 
     public onSurfaceChangedForEvent(event: any = {}){
-    //var event = event
 }
 
 
@@ -122,8 +117,6 @@ var renderer = renderer
 
 
     public onSurfaceChangedWH(width: number, height: number){
-    //var width = width
-    //var height = height
 }
 
 
@@ -132,7 +125,6 @@ var renderer = renderer
 
 
     public addListeners(midlet: MIDlet){
-    //var midlet = midlet
 }
 
 
@@ -145,9 +137,6 @@ var renderer = renderer
 
 
     public setCustom(width: number, height: number, ratio: number){
-    //var width = width
-    //var height = height
-    //var ratio = ratio
 }
 
 

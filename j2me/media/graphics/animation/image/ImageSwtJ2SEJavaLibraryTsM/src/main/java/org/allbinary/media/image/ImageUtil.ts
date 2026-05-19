@@ -119,8 +119,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 
 
     public create(width: number, height: number): org.eclipse.swt.graphics.Image{
-    //var width = width
-    //var height = height
 
     var display: Display = BareMain.shell.getDisplay()!;
 ;
@@ -137,9 +135,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                 //@Throws(Exception.constructor)
             
     public createBufferedImage(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
-    //var bufferedImageArray = bufferedImageArray
-    //var percent = percent
-    //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
@@ -193,9 +188,6 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
                 //@Throws(Exception.constructor)
             
     public createBufferedImage2(bufferedImageArray: org.eclipse.swt.graphics.Image[], percent: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
-    //var bufferedImageArray = bufferedImageArray
-    //var percent = percent
-    //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
@@ -249,10 +241,6 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImage, newWid
                 //@Throws(Exception.constructor)
             
     public createBufferedImage3(bufferedImageArray: org.eclipse.swt.graphics.Image[], width: number, height: number, scale: boolean): org.eclipse.swt.graphics.Image[]{
-    //var bufferedImageArray = bufferedImageArray
-    //var width = width
-    //var height = height
-    //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
@@ -286,9 +274,6 @@ scaledBufferedImageArray[index]= this.createBufferedImage5(bufferedImageArray[in
                 //@Throws(Exception.constructor)
             
     public createBufferedImage4(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number): org.eclipse.swt.graphics.Image{
-    //var bufferedImage = bufferedImage
-    //var newWidth = newWidth
-var newHeight = newHeight
 
 
 
@@ -301,10 +286,6 @@ var newHeight = newHeight
                 //@Throws(Exception.constructor)
             
     public createBufferedImage5(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean): org.eclipse.swt.graphics.Image{
-    //var bufferedImage = bufferedImage
-    //var newWidth = newWidth
-var newHeight = newHeight
-    //var scale = scale
 
 
 
@@ -317,11 +298,6 @@ var newHeight = newHeight
                 //@Throws(Exception.constructor)
             
     public createBufferedImage6(bufferedImage: org.eclipse.swt.graphics.Image, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): org.eclipse.swt.graphics.Image{
-    //var bufferedImage = bufferedImage
-    //var newWidth = newWidth
-var newHeight = newHeight
-    //var scale = scale
-    //var allowTranslate = allowTranslate
 
     var imageData: ImageData = bufferedImage!.getImageData()!;
 ;
@@ -430,12 +406,6 @@ gc.dispose();
 
 
     public drawTransformedImage(image: org.eclipse.swt.graphics.Image, parent: Composite, dx: number, dy: number, width: number, height: number): Canvas{
-    //var image = image
-    //var parent = parent
-    //var dx = dx
-    //var dy = dy
-    //var width = width
-    //var height = height
 
     var imageCanvas: Canvas = new Canvas(parent, SWT.NONE);
 ;
@@ -444,7 +414,6 @@ imageCanvas!.addPaintListener(new class extends PaintListener
                                 {
                                 
     public paintControl(event: PaintEvent){
-var event = event
 
     var gc: GC = event.gc;
 ;
@@ -476,7 +445,6 @@ gc.drawImage(image, 0, 0, image.getBounds()!.width, image.getBounds()!.height, 0
 
 
     public toString(bufferedImage: org.eclipse.swt.graphics.Image): string{
-var bufferedImage = bufferedImage
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
 ;

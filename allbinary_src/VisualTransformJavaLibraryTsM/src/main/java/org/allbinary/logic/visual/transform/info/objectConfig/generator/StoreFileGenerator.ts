@@ -101,8 +101,7 @@ export class StoreFileGenerator extends TransformInfoObjectConfigGenerator {
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-
+        
     var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
     
@@ -229,7 +228,6 @@ this.file= new AbFile(this.fileAbPath);
                 //@Throws(Exception.constructor)
             
     public process(input: string): string{
-var input = input
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

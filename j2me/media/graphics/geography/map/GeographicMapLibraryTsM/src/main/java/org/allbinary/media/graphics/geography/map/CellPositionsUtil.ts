@@ -72,11 +72,6 @@ export class CellPositionsUtil
                 //@Throws(Exception.constructor)
             
     public getAll(geographicMapInterface: BasicGeographicMap, topRightGeographicMapCellPosition: GeographicMapCellPosition, columns: number, rows: number, reusableList: BasicArrayList): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var topRightGeographicMapCellPosition = topRightGeographicMapCellPosition
-    //var columns = columns
-    //var rows = rows
-    //var reusableList = reusableList
 reusableList!.clear();
     
 
@@ -144,9 +139,6 @@ reusableList!.add(geographicMapCellPosition);
                 //@Throws(Exception.constructor)
             
     public getAllSurrounding(geographicMapInterface: BasicGeographicMap, occupyList: BasicArrayList, reusableList: BasicArrayList): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var occupyList = occupyList
-    //var reusableList = reusableList
 reusableList!.clear();
     
 
@@ -215,9 +207,6 @@ index2 >= 0; index2--)
                 //@Throws(Exception.constructor)
             
     public getAllSurroundingAt(geographicMapInterface: BasicGeographicMap, layerGeographicMapCellPosition: GeographicMapCellPosition, reusableSurroundingList: BasicArrayList): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var layerGeographicMapCellPosition = layerGeographicMapCellPosition
-    //var reusableSurroundingList = reusableSurroundingList
 reusableSurroundingList!.clear();
     
 

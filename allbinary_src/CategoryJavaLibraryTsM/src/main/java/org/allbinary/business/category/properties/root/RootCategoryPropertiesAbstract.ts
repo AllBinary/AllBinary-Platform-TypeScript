@@ -99,7 +99,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public setValue(value: string){
-var value = value
 
 
 
@@ -111,7 +110,6 @@ var value = value
                 //@Throws(Exception.constructor)
             
     public setRootFilePath(value: AbPath){
-var value = value
 
 
 
@@ -123,7 +121,6 @@ var value = value
                 //@Throws(Exception.constructor)
             
     public setRootFilePath(value: string){
-var value = value
 
 
 
@@ -168,7 +165,6 @@ var value = value
                 //@Throws(Exception.constructor)
             
     public getWebAppPath(categoryHierarchyInterface: CategoryHierarchyInterface): string{
-var categoryHierarchyInterface = categoryHierarchyInterface
 
 
 
@@ -178,7 +174,6 @@ var categoryHierarchyInterface = categoryHierarchyInterface
 
 
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
-var categoryHierarchyInterface = categoryHierarchyInterface
 
 
 
@@ -255,7 +250,6 @@ categoryVector!.add(this.category);
                 //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

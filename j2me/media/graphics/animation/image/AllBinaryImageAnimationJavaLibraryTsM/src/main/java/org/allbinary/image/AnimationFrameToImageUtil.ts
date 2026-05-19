@@ -70,9 +70,6 @@ export class AnimationFrameToImageUtil
                 //@Throws(Exception.constructor)
             
     public getInstanceTranslate(width: number, height: number, animationInterface: Animation): Image{
-var width = width
-var height = height
-var animationInterface = animationInterface
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, ((width *3)>>1), ((height *3)>>1))!;
 ;
@@ -107,9 +104,6 @@ graphics.translate( -tranlateX,  -tranlateY);
                 //@Throws(Exception.constructor)
             
     public getInstanceWH(width: number, height: number, animationInterface: Animation): Image{
-var width = width
-var height = height
-var animationInterface = animationInterface
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(AnimationFrameToImageUtil.instance.constructor.name.toString()!, width, height)!;
 ;

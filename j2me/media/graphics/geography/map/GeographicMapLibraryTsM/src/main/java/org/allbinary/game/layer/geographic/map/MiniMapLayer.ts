@@ -105,9 +105,7 @@ export class MiniMapLayer extends AllBinaryLayer implements GeographicMapCellPos
     private animationInterface: CircleFilledAnimation
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.createXY(0, viewPosition!.getY()), geographicMapInterface!.getAllBinaryTiledLayer()!.getWidth(), geographicMapInterface!.getAllBinaryTiledLayer()!.getHeight()), viewPosition);
-                    var geographicMapInterface = geographicMapInterface
-var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -139,7 +137,6 @@ this.allBinaryTiledLayer!.setPosition(this.x, this.y, this.z);
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -149,7 +146,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onRemoveGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
-    //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
     var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;
 ;
@@ -178,7 +174,6 @@ this.positionList!.removeAt(index);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onGeographicMapCellPositionEvent(geographicMapCellPositionEvent: GeographicMapCellPositionEvent){
-    //var geographicMapCellPositionEvent = geographicMapCellPositionEvent
 
     var colorCompositeInterface: ColorCompositeInterface = geographicMapCellPositionEvent!.getSource() as ColorCompositeInterface;
 ;
@@ -256,7 +251,6 @@ layerIndex= this.basicColorList!.size() -1;
 
 
     public paintDots(graphics: Graphics){
-var graphics = graphics
 
     var localPositionList: BasicArrayList = this.positionList;
 ;
@@ -301,7 +295,6 @@ this.animationInterface!.paintXY(graphics, point.getX() +this.x, point.getY() +t
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 this.allBinaryTiledLayer!.paint(graphics);
     
 this.paintDots(graphics);

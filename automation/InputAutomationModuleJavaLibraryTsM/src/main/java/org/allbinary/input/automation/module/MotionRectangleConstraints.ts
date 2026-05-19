@@ -94,7 +94,6 @@ public constructor (){
 
 
     public isTooSmall(rectangle: Rectangle): boolean{
-var rectangle = rectangle
 
                         if(rectangle.width < this.getMinDimension()!.width || rectangle.height < this.getMinDimension()!.height)
                         
@@ -122,7 +121,6 @@ var rectangle = rectangle
 
 
     public isAreaTooSmall(rectangle: Rectangle): boolean{
-var rectangle = rectangle
 
                         if(rectangle.width *rectangle.height < this.getMinArea())
                         
@@ -150,7 +148,6 @@ var rectangle = rectangle
 
 
     public isTooBig(rectangle: Rectangle): boolean{
-var rectangle = rectangle
 
                         if(rectangle.width > this.getMaxDimension()!.width || rectangle.height > this.getMaxDimension()!.height)
                         
@@ -180,9 +177,6 @@ var rectangle = rectangle
                 //@Throws(Exception.constructor)
             
     public isValid(frame: Long, bufferedImage: BufferedImage, rectangle: Rectangle): boolean{
-var frame = frame
-var bufferedImage = bufferedImage
-var rectangle = rectangle
 
 
 
@@ -192,14 +186,12 @@ var rectangle = rectangle
 
 
     public setMinDimension(minDimension: Dimension){
-var minDimension = minDimension
 this.minDimension= minDimension;
     
 }
 
 
     public setMaxDimension(maxDimension: Dimension){
-var maxDimension = maxDimension
 this.maxDimension= maxDimension;
     
 }
@@ -216,7 +208,6 @@ this.maxDimension= maxDimension;
 
 
     public setMaxMotionRectangles(maxMotionRectangles: number){
-var maxMotionRectangles = maxMotionRectangles
 this.maxMotionRectangles= maxMotionRectangles;
     
 }
@@ -233,7 +224,6 @@ this.maxMotionRectangles= maxMotionRectangles;
 
 
     public setMinArea(minArea: number){
-var minArea = minArea
 this.minArea= minArea;
     
 }

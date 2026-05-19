@@ -59,9 +59,7 @@ export class MotionRectanglesResultsFrameCacheable
 public constructor (motionRectangles: MotionRectangles, frame: Long){
 
             super();
-        var motionRectangles = motionRectangles
-var frame = frame
-this.frame= frame;
+        this.frame= frame;
     
 this.setMotionRectangles(motionRectangles);
     
@@ -89,7 +87,6 @@ this.setMotionRectangles(motionRectangles);
 
 
     public setMotionRectangles(motionRectangles: MotionRectangles){
-var motionRectangles = motionRectangles
 this.motionRectangles= motionRectangles;
     
 }

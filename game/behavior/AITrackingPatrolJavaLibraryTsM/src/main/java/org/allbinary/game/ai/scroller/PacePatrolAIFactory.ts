@@ -65,9 +65,6 @@ export class PacePatrolAIFactory
                 //@Throws(Exception.constructor)
             
     public getInstance(hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
-var hashtable = hashtable
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
 hashtable.put(BasePatrolAI.MAX_DISTANCE, SmallIntegerSingletonFactory.getInstance()!.getAt(220));
     
 

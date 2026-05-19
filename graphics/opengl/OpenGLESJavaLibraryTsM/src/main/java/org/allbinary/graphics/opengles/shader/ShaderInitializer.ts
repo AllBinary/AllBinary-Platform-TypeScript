@@ -66,9 +66,6 @@ export class ShaderInitializer
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     public init(gl: GL10, shader: Shader[], attributeArray: string[]): number{
-    //var gl = gl
-    //var shader = shader
-    //var attributeArray = attributeArray
 
 
 

@@ -60,8 +60,7 @@ export class AllMotionRectangles extends MotionRectangles {
     private static readonly NAME: string = "allMotionRectangles_";
 public constructor (imageComparisonResult: ImageComparisonResult){
             super(NAME, imageComparisonResult);
-                    var imageComparisonResult = imageComparisonResult
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -73,7 +72,6 @@ this.createMotionRectangles(imageComparisonResult);
                 //@Throws(Exception.constructor)
             
     createMotionRectangles(imageComparisonInfo: ImageComparisonResult){
-var imageComparisonInfo = imageComparisonInfo
 
     var vector: Vector = imageComparisonInfo!.getNonMatchingPixelVector()!;
 ;
@@ -104,7 +102,6 @@ this.addPixelDeltaToAMotionRectangle(pixelDelta);
                 //@Throws(Exception.constructor)
             
     addPixelDeltaToExistingMotionRectangle(pixelDelta: PixelDelta): boolean{
-var pixelDelta = pixelDelta
 
     var vector: Vector = this.getVector()!;
 ;
@@ -180,7 +177,6 @@ motionRectangle!.getRectangle()!.setSize(newWidth, newHeight);
                 //@Throws(Exception.constructor)
             
     addPixelDeltaToAMotionRectangle(pixelDelta: PixelDelta){
-var pixelDelta = pixelDelta
 
                         if(!addPixelDeltaToExistingMotionRectangle(pixelDelta))
                         
@@ -206,8 +202,6 @@ this.getVector()!.add(motionRectangle);
                 //@Throws(Exception.constructor)
             
     shouldPixelDeltaPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
-var motionRectangle = motionRectangle
-var pixelDelta = pixelDelta
 
     var isPixelLeftOfTheRectangle: boolean = false;
 ;
@@ -258,8 +252,6 @@ var pixelDelta = pixelDelta
                 //@Throws(Exception.constructor)
             
     isPixelDeltaLikelyPartOfMotionRectangle(motionRectangle: MotionRectangle, pixelDelta: PixelDelta): boolean{
-var motionRectangle = motionRectangle
-var pixelDelta = pixelDelta
 
     var maxX: number = motionRectangle!.getRectangle()!.x +motionRectangle!.getRectangle()!.width;
 ;

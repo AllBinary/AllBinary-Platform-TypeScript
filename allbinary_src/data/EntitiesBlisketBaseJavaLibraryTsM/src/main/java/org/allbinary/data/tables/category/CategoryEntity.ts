@@ -70,8 +70,7 @@ export class CategoryEntity extends AbSqlBean implements CategoryEntityInterface
     readonly tableName: string = "categories";
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(new InventoryDbInitInfo());
-                    var categoryFactoryInterface = categoryFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -91,7 +90,6 @@ this.setTableName(this.tableName);
 
 
     public insert(category: Category){
-var category = category
 
         try {
             
@@ -136,7 +134,6 @@ super.insert(values);
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(CategoryData.getInstance()!.NAME, value);
@@ -213,7 +210,6 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(CategoryData.getInstance()!.NAME, updatedValues!.get(CategoryData.getInstance()!.NAME) as string, updatedValues);
     
 }

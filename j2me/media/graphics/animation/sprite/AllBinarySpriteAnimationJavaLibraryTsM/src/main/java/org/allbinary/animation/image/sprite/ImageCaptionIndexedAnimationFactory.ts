@@ -107,18 +107,7 @@ export class ImageCaptionIndexedAnimationFactory
 public constructor (captionImage: Image, spriteMovieImage: Image, soundInterface: Sound, frameWidth: number, frameHeight: number, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var captionImage = captionImage
-    //var spriteMovieImage = spriteMovieImage
-    //var soundInterface = soundInterface
-    //var frameWidth = frameWidth
-    //var frameHeight = frameHeight
-    //var captionDx = captionDx
-    //var captionDy = captionDy
-    //var dx = dx
-    //var dy = dy
-    //var time = time
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.captionImage= captionImage;
+        this.captionImage= captionImage;
     
 this.spriteMovieImage= spriteMovieImage;
     
@@ -146,7 +135,6 @@ this.animationBehaviorFactory= animationBehaviorFactory;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.captionImage, this.captionImage!.getWidth(), this.captionImage!.getHeight(), this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;
@@ -191,7 +179,6 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 this.scaleProperties= scaleProperties;
     
 }

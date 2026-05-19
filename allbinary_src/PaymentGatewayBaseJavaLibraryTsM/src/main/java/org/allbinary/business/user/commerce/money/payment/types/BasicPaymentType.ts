@@ -75,18 +75,14 @@ export class BasicPaymentType
 protected constructor (paymentMethod: string){
 
             super();
-        var paymentMethod = paymentMethod
-this.init(paymentMethod);
+        this.init(paymentMethod);
     
 }
 
 protected constructor (paymentMethod: string, paymentGatewayInterfaceFactoryInterface: PaymentGatewayInterfaceFactoryInterface, paymentGatewayDomNodeFactoryInterface: PaymentGatewayDomNodeFactoryInterface){
 
             super();
-        var paymentMethod = paymentMethod
-var paymentGatewayInterfaceFactoryInterface = paymentGatewayInterfaceFactoryInterface
-var paymentGatewayDomNodeFactoryInterface = paymentGatewayDomNodeFactoryInterface
-this.init(paymentMethod);
+        this.init(paymentMethod);
     
 this.paymentGatewayInterfaceFactoryInterface= paymentGatewayInterfaceFactoryInterface;
     
@@ -96,7 +92,6 @@ this.paymentGatewayDomNodeFactoryInterface= paymentGatewayDomNodeFactoryInterfac
 
 
     init(paymentMethod: string){
-var paymentMethod = paymentMethod
 
     var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;

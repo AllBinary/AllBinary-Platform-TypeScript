@@ -51,9 +51,6 @@ export class GameKeyEvent extends AllBinaryEventObject {
         
 
     public static createEvent(anyType: any = {}, sourceId: number, key: number): GameKeyEvent{
-var anyType = anyType
-var sourceId = sourceId
-var key = key
 
 
 
@@ -76,13 +73,7 @@ var key = key
     private originalKey: number= 0
 public constructor (anyType: any = {}, sourceId: number, originalKey: number, gameActionKey: number, key: number, repeated: boolean){
             super(anyType);
-                    var anyType = anyType
-var sourceId = sourceId
-var originalKey = originalKey
-var gameActionKey = gameActionKey
-var key = key
-var repeated = repeated
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -100,14 +91,12 @@ this.setRepeatEvents(repeated);
 
 
     public init(anyType: any = {}){
-var anyType = anyType
 this.setSource(anyType);
     
 }
 
 
     setRepeatEvents(repeated: boolean){
-var repeated = repeated
 this.repeated= repeated;
     
 }
@@ -162,7 +151,6 @@ stringBuffer!.appendint(this.getKey());
 
 
     public setOriginalKey(originalKey: number){
-var originalKey = originalKey
 this.originalKey= originalKey;
     
 }
@@ -179,7 +167,6 @@ this.originalKey= originalKey;
 
 
     public setGameActionKey(gameActionKey: number){
-var gameActionKey = gameActionKey
 this.gameActionKey= gameActionKey;
     
 }

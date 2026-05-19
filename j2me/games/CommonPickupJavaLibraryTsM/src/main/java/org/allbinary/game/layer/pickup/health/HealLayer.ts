@@ -71,12 +71,10 @@ public constructor (){
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public visit(healthInterface: HealthInterface){
-var healthInterface = healthInterface
 
                         if(healthInterface!.isAlive())
                         

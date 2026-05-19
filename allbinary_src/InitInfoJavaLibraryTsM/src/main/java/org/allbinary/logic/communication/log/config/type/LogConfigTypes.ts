@@ -117,7 +117,6 @@ PreLogUtil.putSE("Unable to initialize LogConfigTypes", "LogConfigTypes", "init(
                 //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): LogConfigType{
-    //var node = node
 
     var nameValueNode: Node = DomSearchHelper.getNode(LogConfigTypeData.getInstance()!.NAME, node.getChildNodes())!;
 ;
@@ -166,7 +165,7 @@ index < size; index++)
 logConfigType= availableLogConfigTypes!.get(index) as LogConfigType;
     
 
-                        if(logConfigType!.getName()!.localeCompare(name) == 0)
+                        if(logConfigType!.getName()!.compareTo(name) == 0)
                         
                                     {
                                     

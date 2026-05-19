@@ -81,8 +81,6 @@ export class CamelCaseUtil
                 //@Throws(Exception.constructor)
             
     public getAsCamelCase(string: string, stringBuilder: StringMaker): string{
-    //var string = string
-    //var stringBuilder = stringBuilder
 
                         if(string == 
                                     null

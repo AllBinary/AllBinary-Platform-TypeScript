@@ -95,8 +95,7 @@ export class PersistentInputMapping
 protected constructor (name: string){
 
             super();
-        var name = name
-this.inputPersistance= new InputPersistance(name);
+        this.inputPersistance= new InputPersistance(name);
     
 }
 
@@ -134,7 +133,6 @@ this.inputPersistance= new InputPersistance(name);
                 //@Throws(Exception.constructor)
             
     public setDefault(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.getInputMapping()!.removeAll();
     
 this.getInputMapping()!.addMapping(this.getDefault());
@@ -147,7 +145,6 @@ this.save(abeClientInformation);
                 //@Throws(Exception.constructor)
             
     public update(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.inputPersistance!.deleteAll(abeClientInformation);
     
 this.save(abeClientInformation);
@@ -160,7 +157,6 @@ this.save(abeClientInformation);
                 //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.inputPersistance!.save(abeClientInformation, this.getInputMapping()!.getHashtable());
     
 this.inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
@@ -182,7 +178,6 @@ this.inputMappingEvent!.setInputToGameKeyMapping(this.getInputMapping());
                 //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 
@@ -276,7 +271,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.INIT);
 
 
     public setInputMappingEventListenerInterface(inputMappingEventListenerInterface: InputMappingEventListenerInterface){
-var inputMappingEventListenerInterface = inputMappingEventListenerInterface
 this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
     
 }
@@ -305,7 +299,6 @@ this.inputMappingEventListenerInterface= inputMappingEventListenerInterface;
                 //@Throws(Exception.constructor)
             
     public isDelete(input: Input): boolean{
-var input = input
 
 
 
@@ -317,7 +310,6 @@ var input = input
                 //@Throws(Exception.constructor)
             
     public isSystemInput(input: Input): boolean{
-var input = input
 
 
 

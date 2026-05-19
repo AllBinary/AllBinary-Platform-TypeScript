@@ -105,7 +105,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-    //var allBinaryLayerManager = allBinaryLayerManager
 }
 
 
@@ -130,7 +129,6 @@ public constructor (){
 
 
     public setWaypoint(waypoint: WaypointBase){
-    //var waypoint = waypoint
 this.waypoint= waypoint;
     
 }
@@ -165,8 +163,6 @@ this.waypoint= waypoint;
 
 
     public isInSensorRange(layerInterface: CollidableDestroyableDamageableLayer, targetDistance: number): boolean{
-    //var layerInterface = layerInterface
-    //var targetDistance = targetDistance
 
 
 
@@ -249,7 +245,6 @@ this.waypoint= waypoint;
 
 
     public setWaypointPathsList(waypointPathsList: BasicArrayList){
-    //var waypointPathsList = waypointPathsList
 
 
 
@@ -270,7 +265,6 @@ this.waypoint= waypoint;
                 //@Throws(Exception.constructor)
             
     public setTarget(layerInterface: PathFindingLayerInterface){
-    //var layerInterface = layerInterface
 
 
 
@@ -282,8 +276,6 @@ this.waypoint= waypoint;
                 //@Throws(Exception.constructor)
             
     public setTargetWithDistance(layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
-    //var layerInterface = layerInterface
-    //var anotherTargetDistance = anotherTargetDistance
 
 
 
@@ -306,7 +298,6 @@ this.waypoint= waypoint;
                 //@Throws(Exception.constructor)
             
     public updatePathOnTargetMove(reason: string){
-    //var reason = reason
 }
 
 

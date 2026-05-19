@@ -98,8 +98,7 @@ export class AddFileValidationView extends InventoryItemView implements Validati
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,7 +113,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.localeCompare(AddFileValidationView.ADDPRODUCT) != 0 && command.localeCompare(NEXTSTEP) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
                         
                                     {
                                     
@@ -317,7 +316,6 @@ HttpFileUploadUtil.log(fileItem);
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -339,7 +337,7 @@ var document = document
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.localeCompare(AddFileValidationView.ADDPRODUCT) != 0 && command.localeCompare(NEXTSTEP) != 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(command) || (command.compareTo(AddFileValidationView.ADDPRODUCT) != 0 && command.compareTo(NEXTSTEP) != 0))
                         
                                     {
                                     
@@ -491,8 +489,6 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                 //@Throws(Exception.constructor)
             
     isValid(fileName: string, size: number): Boolean{
-var fileName = fileName
-var size = size
 
     var fileData: FileData = FileData.getInstance()!;
 ;
@@ -627,10 +623,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 
 
     validationInfo(stringBuffer: StringMaker, fileName: string, fileItemFieldName: string, size: number){
-    //var stringBuffer = stringBuffer
-    //var fileName = fileName
-    //var fileItemFieldName = fileItemFieldName
-    //var size = size
 
     var fileData: FileData = FileData.getInstance()!;
 ;
@@ -640,7 +632,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                         
                                     {
                                     
-                        if(fileItemFieldName!.localeCompare(BasicItemData.IMAGE) == 0)
+                        if(fileItemFieldName!.compareTo(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     

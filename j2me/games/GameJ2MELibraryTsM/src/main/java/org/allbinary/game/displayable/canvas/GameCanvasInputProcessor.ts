@@ -95,8 +95,7 @@ export class GameCanvasInputProcessor extends InputProcessor {
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
-            //var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas;
+        this.allBinaryGameCanvas= allBinaryGameCanvas;
     
 this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
     
@@ -108,8 +107,6 @@ this.inputToGameKeyMapping!.init(this.allBinaryGameCanvas);
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
     public keyPressed(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 
         try {
             
@@ -158,19 +155,12 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 
 
     public keyReleased(canvas: Canvas, keyCode: number, deviceId: number){
-    //var canvas = canvas
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 this.removeGameKeyEvent(canvas, keyCode, deviceId, false);
     
 }
 
 
     removeGameKeyEvent(canvas: Canvas, keyCode: number, deviceId: number, repeated: boolean){
-    //var canvas = canvas
-    //var keyCode = keyCode
-    //var deviceId = deviceId
-    //var repeated = repeated
 
         try {
             

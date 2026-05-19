@@ -53,8 +53,7 @@ export class RunAtEndAnimationListener
 protected constructor (runnable: Runnable){
 
             super();
-        var runnable = runnable
-this.runnable= runnable;
+        this.runnable= runnable;
     
 }
 

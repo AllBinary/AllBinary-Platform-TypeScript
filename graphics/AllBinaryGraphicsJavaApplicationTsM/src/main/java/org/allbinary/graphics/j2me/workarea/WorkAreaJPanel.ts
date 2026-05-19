@@ -133,11 +133,7 @@ export class WorkAreaJPanel extends JPanel implements WorkAreaJPanelInterface, M
 public constructor (name: string, dimension: Dimension, x: number, y: number){
 
             super();
-        var name = name
-var dimension = dimension
-var x = x
-var y = y
-
+        
         try {
             this.initComponents();
     
@@ -175,9 +171,7 @@ this.canvasHolderJPanel!.add(canvasJPanel as Component);
 public constructor (workAreaDom: WorkAreaDom, dimension: Dimension){
 
             super();
-        var workAreaDom = workAreaDom
-var dimension = dimension
-
+        
         try {
             this.initComponents();
     
@@ -243,7 +237,6 @@ this.propertiesJPanel!.set(this.workAreaJTreeJPanel);
 
 
     initMyComponents(dimension: Dimension){
-var dimension = dimension
 this.workAreaJTreeJPanel= new WorkAreaJTreeJPanel(this.name);
     
 this.canvasHolderJPanel= new JPanel();
@@ -399,7 +392,6 @@ this.isPlaying= false;
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
@@ -452,7 +444,6 @@ super.setVisible(true);
 
 
     public changeZoom(factor: number){
-var factor = factor
 
     var size: number = this.canvasJPanelList!.size()!;
 ;
@@ -487,7 +478,6 @@ canvasJPanel!.getGrid()!.setZoom(canvasJPanel!.getGrid()!.getZoom() +factor);
 
 
     initDuplicate(newCanvasJPanel: CanvasJPanel){
-var newCanvasJPanel = newCanvasJPanel
 
                         if(newCanvasJPanel != 
                                     null
@@ -507,7 +497,6 @@ this.select(this.canvasJPanelList!.size() -1);
                 //@Throws(Exception.constructor)
             
     duplicate(treeNode: MutableTreeNode){
-var treeNode = treeNode
 
     var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
 ;
@@ -535,8 +524,6 @@ this.initDuplicate(canvasJPanel!.duplicate());
                 //@Throws(Exception.constructor)
             
     public autoRotate(increments: number, totalAngle: number){
-var increments = increments
-var totalAngle = totalAngle
 
     var incrementAngle: number = Math.round((totalAngle /increments));
 ;
@@ -579,8 +566,6 @@ canvasJPanel!.explodeAll();
                 //@Throws(Exception.constructor)
             
     public autoExplode(numberOfFrames: number, explodeType: number){
-var numberOfFrames = numberOfFrames
-var explodeType = explodeType
 
 
 
@@ -626,7 +611,6 @@ this.initDuplicate(newCanvasJPanel);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     select(index: number){
-var index = index
 
                         if(index < this.canvasJPanelList!.size())
                         
@@ -663,7 +647,6 @@ canvasJPanel!.repaint();
 
 
     select(treeNode: MutableTreeNode){
-var treeNode = treeNode
 
     var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
 ;
@@ -753,19 +736,16 @@ this.innerJPanel!.addKeyListener(new class extends java.awt.event.KeyAdapter
                                 {
                                 
     public keyTyped(evt: java.awt.event.KeyEvent){
-var evt = evt
 innerJPanelKeyTyped(evt);
     
 }
 
     public keyPressed(evt: java.awt.event.KeyEvent){
-var evt = evt
 innerJPanelKeyPressed(evt);
     
 }
 
     public keyReleased(evt: java.awt.event.KeyEvent){
-var evt = evt
 innerJPanelKeyReleased(evt);
     
 }
@@ -779,45 +759,38 @@ add(this.innerJPanel);
 
 
     innerJPanelKeyReleased(evt: java.awt.event.KeyEvent){
-var evt = evt
 StatusFactory.getInstance()!.setStatus("Key Pressed1");
     
 }
 
 
     innerJPanelKeyPressed(evt: java.awt.event.KeyEvent){
-var evt = evt
 StatusFactory.getInstance()!.setStatus("Key Pressed2");
     
 }
 
 
     innerJPanelKeyTyped(evt: java.awt.event.KeyEvent){
-var evt = evt
 StatusFactory.getInstance()!.setStatus("Key Pressed3");
     
 }
 
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 this.getCurrentFrame()!.keyPressed(keyEvent);
     
 }
 
 
     public keyReleased(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 
     public keyTyped(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 
     public delete(evt: MyCanvasEvent){
-var evt = evt
 
     var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
 ;
@@ -845,14 +818,12 @@ this.select(frameInt!.intValue());
                 //@Throws(Exception.constructor)
             
     public duplicate(evt: MyCanvasEvent){
-var evt = evt
 this.duplicate(evt.getTreeNode());
     
 }
 
 
     public select(evt: MyCanvasEvent){
-var evt = evt
 this.select(evt.getTreeNode());
     
 StatusFactory.getInstance()!.setStatus("Frame Selected");
@@ -861,7 +832,6 @@ StatusFactory.getInstance()!.setStatus("Frame Selected");
 
 
     public rotate(evt: MyCanvasEvent){
-var evt = evt
 
     var canvasJPanelHashMap: HashMap<any, any> = this.getCanvasHashMap()!;
 ;
@@ -897,7 +867,6 @@ StatusFactory.getInstance()!.setStatus("Canvas Rotated");
 
 
     public explode(evt: MyCanvasEvent){
-var evt = evt
 this.explodeAll();
     
 }
@@ -906,7 +875,6 @@ this.explodeAll();
                 //@Throws(Exception.constructor)
             
     public autoExplode(evt: MyCanvasEvent){
-var evt = evt
 this.autoExplode(10, 0);
     
 }
@@ -927,7 +895,6 @@ canvasJPanel!.center();
                 //@Throws(Exception.constructor)
             
     public center(evt: MyCanvasEvent){
-var evt = evt
 this.center();
     
 }

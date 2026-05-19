@@ -65,7 +65,6 @@ public constructor (){
 
 
     public toValidationInfoNode(document: org.w3c.dom.Document): Node{
-var document = document
 
 
 

@@ -72,9 +72,7 @@ export class AutoCompoundRotationAnimation extends RotationAnimation implements 
     private animationInterfaceArray: RotationAnimation[]
 public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
-                        //var animationInterfaceArray = animationInterfaceArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -86,7 +84,6 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.animationInterface
 
 
     public setFrame(index: number){
-    //var index = index
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrame(index);
     
 }
@@ -155,7 +152,6 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.nextRotation()
 
 
     public setSequence(sequence: number[]){
-var sequence = sequence
 }
 
 
@@ -170,19 +166,12 @@ var sequence = sequence
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintXY(graphics, x, y);
     
 }
 
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.paintThreed(graphics, x, y, z);
     
 }
@@ -223,7 +212,6 @@ this.setFrame(frame);
 
 
     public setAnimation(index: number){
-    //var index = index
 
     var frame: number = this.getFrame()!;
 ;
@@ -236,28 +224,24 @@ this.setFrame(frame);
 
 
     public setFrameByDirection(direction: Direction){
-    //var direction = direction
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrameByDirection(direction);
     
 }
 
 
     public setFrameToAngle(angle: Angle){
-    //var angle = angle
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.setFrameToAngle(angle);
     
 }
 
 
     public adjustFrameToAngle(newAngle: Angle){
-    //var newAngle = newAngle
 this.adjustFrame(newAngle!.getValue());
     
 }
 
 
     public adjustFrame(angle: number){
-    //var angle = angle
 this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.adjustFrame(angle);
     
 }
@@ -284,7 +268,6 @@ this.animationInterfaceArray[this.circularIndexUtil!.getIndex()]!.adjustFrame(an
 
 
     public setAnimationInterfaceArray(animationInterfaceArray: RotationAnimation[]){
-    //var animationInterfaceArray = animationInterfaceArray
 this.animationInterfaceArray= animationInterfaceArray;
     
 }
@@ -293,7 +276,6 @@ this.animationInterfaceArray= animationInterfaceArray;
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-    //var gl = gl
 
 
 

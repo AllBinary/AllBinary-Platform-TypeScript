@@ -70,7 +70,6 @@ export class MyCanvasEventService
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static addListener(listener: MyCanvasEventListener){
-var listener = listener
 MyCanvasEventService.listenerList!.add(listener.constructor as Class<*>, listener as java.util.EventListener);
     
 }
@@ -78,7 +77,6 @@ MyCanvasEventService.listenerList!.add(listener.constructor as Class<*>, listene
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static removeListener(listener: MyCanvasEventListener){
-var listener = listener
 MyCanvasEventService.listenerList!.remove(listener.constructor as Class<*>, listener as java.util.EventListener);
     
 }
@@ -88,7 +86,6 @@ MyCanvasEventService.listenerList!.remove(listener.constructor as Class<*>, list
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static fire(evt: MyCanvasEvent){
-var evt = evt
 
     var listeners: any[] = listenerList!.getListenerList()!;
 ;
@@ -106,7 +103,7 @@ i < listeners.length; )
                         
                                     {
                                     
-                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.DELETE) == 0)
+                        if(evt.getCommand()!.compareTo(MyCanvasEventService.DELETE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -117,7 +114,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.DUPLICATE) == 0)
+                        if(evt.getCommand()!.compareTo(MyCanvasEventService.DUPLICATE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -128,7 +125,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.SELECT) == 0)
+                        if(evt.getCommand()!.compareTo(MyCanvasEventService.SELECT) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -139,7 +136,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.ROTATE) == 0)
+                        if(evt.getCommand()!.compareTo(MyCanvasEventService.ROTATE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -150,7 +147,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.EXPLODE) == 0)
+                        if(evt.getCommand()!.compareTo(MyCanvasEventService.EXPLODE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -161,7 +158,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.AUTOEXPLODE) == 0)
+                        if(evt.getCommand()!.compareTo(MyCanvasEventService.AUTOEXPLODE) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener
@@ -172,7 +169,7 @@ i < listeners.length; )
                                     }
                                 
                              else 
-                        if(evt.getCommand()!.localeCompare(MyCanvasEventService.CENTER) == 0)
+                        if(evt.getCommand()!.compareTo(MyCanvasEventService.CENTER) == 0)
                         
                                     {
                                      = listeners[i +1]! as MyCanvasEventListener

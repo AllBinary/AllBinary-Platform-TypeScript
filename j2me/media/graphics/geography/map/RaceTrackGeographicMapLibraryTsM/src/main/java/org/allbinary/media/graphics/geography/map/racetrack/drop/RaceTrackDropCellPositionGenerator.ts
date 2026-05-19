@@ -110,7 +110,6 @@ this.list.clear();
                 //@Throws(Exception.constructor)
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var raceTrackGeographicMapCellType: RaceTrackGeographicMapCellType = this.raceTrackGeographicMap!.getCellTypeAt(geographicMapCellPosition) as RaceTrackGeographicMapCellType;
 ;
@@ -144,8 +143,6 @@ this.list.clear();
                 //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
-    //var geographicMapInterface = geographicMapInterface
 this.init();
     
 
@@ -251,7 +248,6 @@ this.drop(allBinaryGameLayerManager, index);
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-    //var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         
@@ -271,8 +267,6 @@ this.drop(allBinaryLayerManager, index);
                 //@Throws(Exception.constructor)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
-    //var allBinaryLayerManager = allBinaryLayerManager
-    //var index = index
 
 
 

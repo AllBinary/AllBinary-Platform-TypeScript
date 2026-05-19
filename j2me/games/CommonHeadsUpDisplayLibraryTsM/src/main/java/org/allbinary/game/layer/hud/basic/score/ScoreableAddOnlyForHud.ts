@@ -50,8 +50,7 @@ export class ScoreableAddOnlyForHud extends Scoreable {
     private readonly scoreHudWidget: ScoreHudWidget
 public constructor (scoreVectorGraphic: ScoreHudWidget){
             super(0);
-                    var scoreVectorGraphic = scoreVectorGraphic
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -63,12 +62,10 @@ this.getScoreHudWidget()!.set(0);
 
 
     public removePoints(points: number){
-var points = points
 }
 
 
     public addPoints(points: number){
-var points = points
 super.addPoints(points);
     
 this.getScoreHudWidget()!.add(points);

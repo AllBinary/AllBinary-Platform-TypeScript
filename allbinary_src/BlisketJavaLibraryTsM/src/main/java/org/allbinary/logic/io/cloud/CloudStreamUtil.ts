@@ -73,7 +73,6 @@ export class CloudStreamUtil
                 //@Throws(Exception.constructor)
             
     public getFile(file: AbFile): InputStream{
-var file = file
 
     var inputStream: InputStream = new AbFileInputStream(file);
 ;
@@ -110,7 +109,6 @@ var file = file
                 //@Throws(Exception.constructor)
             
     public getFileAnyWhere(file: AbFile): InputStream{
-var file = file
 
     var inputStream: InputStream = new AbFileLocalInputStream(file);
 ;
@@ -171,7 +169,6 @@ available= inputStream!.available();
                 //@Throws(Exception.constructor)
             
     public getFileLocal(file: AbFile): InputStream{
-var file = file
 
     var inputStream: InputStream = new AbFileLocalInputStream(file);
 ;

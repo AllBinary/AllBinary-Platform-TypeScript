@@ -53,7 +53,6 @@ export class ThreadObjectUtil
     public readonly NULL_PRIORITY_RUNNABLE: PriorityRunnable = new NullPriorityRunnable();
 
     public notifyObject(anyType: Object){
-var anyType = anyType
 anyType!.notify();
     
 }
@@ -62,7 +61,6 @@ anyType!.notify();
                 //@Throws(Exception.constructor)
             
     public waitObject(anyType: Object){
-var anyType = anyType
 anyType!.wait();
     
 }
@@ -71,8 +69,6 @@ anyType!.wait();
                 //@Throws(Exception.constructor)
             
     public waitObjectFor(anyType: Object, delay: number){
-var anyType = anyType
-var delay = delay
 TsUtil.getInstance()!.waitFor(anyType, delay);
     
 }

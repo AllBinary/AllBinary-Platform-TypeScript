@@ -63,7 +63,6 @@ export class AngleIncrementInfoFactory
     private readonly angleIncrementInfo: AngleIncrementInfo[] = new Array(Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE));
 
     public getAt(angleIncrement: number): AngleIncrementInfo{
-var angleIncrement = angleIncrement
 
     var halfAngleIncrement: number = (Math.round(angleIncrement)>>1);
 ;

@@ -73,8 +73,7 @@ export class RootStoreThemeCategoryProperties extends RootStoreCategoryPropertie
         
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -82,9 +81,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPath){
             super(transformInfoInterface, abPath);
-                    var transformInfoInterface = transformInfoInterface
-var abPath = abPath
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -92,9 +89,7 @@ var abPath = abPath
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
             super(transformInfoInterface, node);
-                    var transformInfoInterface = transformInfoInterface
-var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -102,9 +97,7 @@ var node = node
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
             super(transformInfoInterface, categoryPropertiesHashMap);
-                    var transformInfoInterface = transformInfoInterface
-var categoryPropertiesHashMap = categoryPropertiesHashMap
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

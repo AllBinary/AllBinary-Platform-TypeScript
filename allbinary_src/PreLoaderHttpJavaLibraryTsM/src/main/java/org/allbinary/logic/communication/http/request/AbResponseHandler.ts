@@ -71,8 +71,6 @@ export class AbResponseHandler
                 //@Throws(JspTagException.constructor)
             
     public static sendJspTagRedirect(pageContext: PageContext, e: Exception){
-    //var pageContext = pageContext
-    //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -116,8 +114,6 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                 //@Throws(ServletException.constructor)
             
     public static sendServletRedirect(pageContext: PageContext, e: Exception){
-    //var pageContext = pageContext
-    //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -161,8 +157,6 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                 //@Throws(JspTagException.constructor)
             
     public static sendJspTagLicensingRedirect(pageContext: PageContext, e: Exception){
-    //var pageContext = pageContext
-    //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -206,8 +200,6 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                 //@Throws(ServletException.constructor)
             
     public static sendServletLicensingRedirect(pageContext: PageContext, e: Exception){
-    //var pageContext = pageContext
-    //var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -251,8 +243,6 @@ AbResponseHandler.sendRedirect(pageContext, FREEBLISKET_PATH_GLOBALS.getInstance
                 //@Throws(Exception.constructor)
             
     public static sendRedirect(pageContext: PageContext, page: string){
-    //var pageContext = pageContext
-    //var page = page
 
     var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
 ;

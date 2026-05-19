@@ -74,8 +74,7 @@ export class TouchButtonsMappingPaintable extends Paintable {
 public constructor (basicColor: BasicColor){
 
             super();
-        var basicColor = basicColor
-this.foregroundColor= basicColor!.intValue();
+        this.foregroundColor= basicColor!.intValue();
     
 this.init();
     
@@ -158,7 +157,6 @@ this.paintableTable[index]![rowIndex]= TouchButton.createButton(BasicTouchInputF
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var totalColumns: number = this.touchButtonLocationHelper!.getTotalColumns()!;
 ;

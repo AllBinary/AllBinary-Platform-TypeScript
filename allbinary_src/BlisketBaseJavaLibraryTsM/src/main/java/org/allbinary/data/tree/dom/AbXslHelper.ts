@@ -74,8 +74,6 @@ export class AbXslHelper
                 //@Throws(Exception.constructor)
             
     public translate(xslFile: AbFile, xmlFile: AbFile): string{
-    //var xslFile = xslFile
-    //var xmlFile = xmlFile
 
 
 
@@ -88,8 +86,6 @@ export class AbXslHelper
                 //@Throws(Exception.constructor)
             
     public translate(xslPath: AbPath, xmlPath: AbPath): string{
-    //var xslPath = xslPath
-    //var xmlPath = xmlPath
 
 
 
@@ -102,8 +98,6 @@ export class AbXslHelper
                 //@Throws(Exception.constructor)
             
     public translate(xsltFilePath: string, xmlFilePath: string): string{
-    //var xsltFilePath = xsltFilePath
-    //var xmlFilePath = xmlFilePath
 
         try {
             

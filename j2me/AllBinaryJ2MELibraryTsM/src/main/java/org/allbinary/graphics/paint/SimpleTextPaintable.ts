@@ -61,9 +61,7 @@ export class SimpleTextPaintable extends Paintable {
 public constructor (text: string, basicColor: BasicColor){
 
             super();
-            //var text = text
-    //var basicColor = basicColor
-this.text= text;
+        this.text= text;
     
 this.basicColor= basicColor;
     
@@ -75,7 +73,6 @@ this.basicColor= basicColor;
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;
@@ -96,7 +93,6 @@ graphics.drawString(this.text, (width>>1) -topScoresWidth, myFont!.DEFAULT_CHAR_
 
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 this.basicColor= basicColor;
     
 }
@@ -113,7 +109,6 @@ this.basicColor= basicColor;
 
 
     public setText(text: string){
-    //var text = text
 this.text= text;
     
 }

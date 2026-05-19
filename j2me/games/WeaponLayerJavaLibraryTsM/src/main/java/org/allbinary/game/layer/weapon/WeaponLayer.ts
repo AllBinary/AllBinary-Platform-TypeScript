@@ -120,15 +120,7 @@ export class WeaponLayer extends MultiPlayerGameLayer implements TickableInterfa
     private readonly multiPlayerType: number
 protected constructor (name: string, remoteInfo: RemoteInfo, multiPlayerType: number, movement: Movement, animationInterface: Animation, destroyedAnimationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
-                        //var name = name
-    //var remoteInfo = remoteInfo
-    //var multiPlayerType = multiPlayerType
-    //var movement = movement
-    //var animationInterface = animationInterface
-    //var destroyedAnimationInterface = destroyedAnimationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -148,7 +140,6 @@ this.multiPlayerType= multiPlayerType;
     private collidableWeaponBehavior: CollidableWeaponBehavior = CollidableWeaponBehavior.NULL_COLLIDABLE_WEAPON_BEHAVIOR;
 
     public setCollidableInferface(collidableInferface: CollidableBaseBehavior){
-var collidableInferface = collidableInferface
 super.setCollidableInferface(collidableInferface);
     
 this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeaponBehavior;
@@ -159,9 +150,6 @@ this.collidableWeaponBehavior= this.getCollidableInferface() as CollidableWeapon
                 //@Throws(Exception.constructor)
             
     public initXYZ(x: number, y: number, z: number){
-var x = x
-var y = y
-var z = z
 this.x= x;
     
 this.y= y;
@@ -174,11 +162,6 @@ this.z= z;
                 //@Throws(Exception.constructor)
             
     public init(sourceLayerInterface: AllBinaryLayer, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface){
-var sourceLayerInterface = sourceLayerInterface
-var angle = angle
-var otherAngle = otherAngle
-var weaponProperties = weaponProperties
-var scoreable = scoreable
 this.setWeaponPropertiesP(weaponProperties);
     
 this.setReadyForExplosion(false);
@@ -239,7 +222,6 @@ this.movement.init(weaponProperties!.getSpeed(), angle, otherAngle);
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.isExhausted() && !this.isDestroyed())
                         
@@ -322,15 +304,12 @@ this.totalDamage += this.weaponProperties!.getDissipation();
 
 
     public damage(damage: number, damageType: number){
-var damage = damage
-var damageType = damageType
 this.totalDamage += damage *damage;
     
 }
 
 
     givePoints(total: number){
-var total = total
 this.scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompetitionValue() *total);
     
 }
@@ -364,7 +343,6 @@ this.scoreableInterface!.addPoints(GameConfigurationUtil.getInstance()!.getCompe
 
 
     public getDamage(damageType: number): number{
-var damageType = damageType
 
                         if(!this.isExhausted())
                         
@@ -394,7 +372,6 @@ this.givePoints(total);
 
 
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 this.destroyed= destroyed;
     
 
@@ -422,7 +399,6 @@ DestroyedLayerProcessor.getInstance()!.add(this);
 
 
     setAnimationInterface(animationInterface: Animation){
-var animationInterface = animationInterface
 this.animationInterface= animationInterface;
     
 }
@@ -449,7 +425,6 @@ this.animationInterface= animationInterface;
 
 
     public setInitAnimationInterfaceP(initAnimationInterface: Animation){
-var initAnimationInterface = initAnimationInterface
 this.initAnimationInterface= initAnimationInterface;
     
 }
@@ -476,14 +451,12 @@ this.initAnimationInterface= initAnimationInterface;
 
 
     public setOwnerLayerInterface(sourceLayerInterface: AllBinaryLayer){
-var sourceLayerInterface = sourceLayerInterface
 this.sourceLayerInterface= sourceLayerInterface;
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
 ;
@@ -494,7 +467,6 @@ this.animationInterface!.paintXY(graphics, viewPosition!.getX() -this.getHalfWid
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
 ;
@@ -515,7 +487,6 @@ this.animationInterface!.paintThreed(graphics, viewPosition!.getX() -this.getHal
 
 
     public setMovement(movement: Movement){
-var movement = movement
 this.movement= movement;
     
 }
@@ -542,7 +513,6 @@ this.movement= movement;
 
 
     public setWeaponPropertiesP(weaponProperties: WeaponProperties){
-var weaponProperties = weaponProperties
 this.weaponProperties= weaponProperties;
     
 }
@@ -571,7 +541,6 @@ this.weaponProperties= weaponProperties;
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-var gl = gl
 this.initAnimationInterface!.set(gl);
     
 }

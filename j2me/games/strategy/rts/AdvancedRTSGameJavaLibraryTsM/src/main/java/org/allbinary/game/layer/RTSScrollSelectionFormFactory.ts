@@ -69,8 +69,6 @@ export class RTSScrollSelectionFormFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(formLabel: string, items: ABCustomItem[]): MultipleScrollSelectionHorizontalForm{
-    //var formLabel = formLabel
-    //var items = items
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
 ;

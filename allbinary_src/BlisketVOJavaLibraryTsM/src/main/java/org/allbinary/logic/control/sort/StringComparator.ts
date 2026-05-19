@@ -54,8 +54,6 @@ public constructor (){
 
 
     public compare(anyType: any = {}, object2: any = {}): number{
-var anyType = anyType
-var object2 = object2
 
     var string: string = anyType as string;
 ;
@@ -68,7 +66,7 @@ var object2 = object2
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return string.localeCompare(string2);;
+                        return string.compareTo(string2);;
     
 }
 

@@ -54,14 +54,12 @@ export class CollisionHelper
 public constructor (sourceLayerInterface: AllBinaryLayer){
 
             super();
-        var sourceLayerInterface = sourceLayerInterface
-this.sourceLayerInterface= sourceLayerInterface;
+        this.sourceLayerInterface= sourceLayerInterface;
     
 }
 
 
     public isCollidable(layerInterface: CollidableCompositeLayer): boolean{
-var layerInterface = layerInterface
 
 
 
@@ -82,7 +80,6 @@ var layerInterface = layerInterface
 
 
     public setOwnerLayerInterface(sourceLayerInterface: AllBinaryLayer){
-var sourceLayerInterface = sourceLayerInterface
 this.sourceLayerInterface= sourceLayerInterface;
     
 }

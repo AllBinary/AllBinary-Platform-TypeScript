@@ -75,11 +75,6 @@ export class AnimationFactoryImageScaleUtil
                 //@Throws(Exception.constructor)
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Image{
-    //var image = image
-    //var width = width
-    //var height = height
-    //var scaleWidth = scaleWidth
-    //var scaleHeight = scaleHeight
 
     var scaledImage: Image
 ;
@@ -132,7 +127,6 @@ export class AnimationFactoryImageScaleUtil
                 //@Throws(Exception.constructor)
             
     public processAdjust(baseImageAnimationFactory: BaseImageAnimationFactory){
-    //var baseImageAnimationFactory = baseImageAnimationFactory
 
     var scaleProperties: ScaleProperties = baseImageAnimationFactory!.getScalePropertiesP()!;
 ;

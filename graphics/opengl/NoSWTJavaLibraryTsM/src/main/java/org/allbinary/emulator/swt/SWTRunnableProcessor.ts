@@ -60,7 +60,6 @@ export class SWTRunnableProcessor extends SWTProcessor {
 
 
     public process(display: Display){
-    //var display = display
 }
 
 

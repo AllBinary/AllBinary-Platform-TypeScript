@@ -60,8 +60,7 @@ public constructor (){
 
 public constructor (node: Node){
             super(node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

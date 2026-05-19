@@ -51,8 +51,7 @@ export class RTSPlayerGameInputProcessor extends GameInputProcessor {
 public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
 
             super();
-        var rtsPlayerGameInput = rtsPlayerGameInput
-this.rtsPlayerGameInput= rtsPlayerGameInput;
+        this.rtsPlayerGameInput= rtsPlayerGameInput;
     
 }
 

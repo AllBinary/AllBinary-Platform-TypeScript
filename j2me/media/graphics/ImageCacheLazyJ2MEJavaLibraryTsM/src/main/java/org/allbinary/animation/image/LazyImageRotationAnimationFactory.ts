@@ -66,10 +66,7 @@ export class LazyImageRotationAnimationFactory
 public constructor (layoutIndex: number, associatedLazyAnimationId: number, animationInterfaceFactoryInterface: BaseImageAnimationFactory){
 
             super();
-            //var layoutIndex = layoutIndex
-    //var associatedLazyAnimationId = associatedLazyAnimationId
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-this.layoutIndex= layoutIndex;
+        this.layoutIndex= layoutIndex;
     
 this.animationInterfaceFactoryInterface= animationInterfaceFactoryInterface;
     
@@ -81,7 +78,6 @@ ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
                         if(this.animationInterfaceFactoryInterface!.getImage()!.isReady())
                         
@@ -111,7 +107,6 @@ ImageCacheFactory.getInstance()!.hasAnyLazyAnimationFactories= true;
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 this.scaleProperties= scaleProperties;
     
 }

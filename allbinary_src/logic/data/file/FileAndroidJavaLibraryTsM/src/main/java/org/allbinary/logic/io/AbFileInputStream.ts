@@ -58,14 +58,12 @@ export class AbFileInputStream extends InputStream {
 public constructor (fileInputStream: FileInputStream){
 
             super();
-        var fileInputStream = fileInputStream
-this.fileInputStream= fileInputStream;
+        this.fileInputStream= fileInputStream;
     
 }
 
 
     public mark(readlimit: number){
-var readlimit = readlimit
 this.fileInputStream!.mark(readlimit);
     
 }
@@ -133,7 +131,6 @@ this.fileInputStream!.close();
                 //@Throws(IOException.constructor)
             
     public read(b: number[]): number{
-var b = b
 
 
 
@@ -146,9 +143,6 @@ var b = b
                 //@Throws(IOException.constructor)
             
     public read(buffer: number[], offset: number, count: number): number{
-var buffer = buffer
-var offset = offset
-var count = count
 
 
 
@@ -161,7 +155,6 @@ var count = count
                 //@Throws(IOException.constructor)
             
     public skip(n: number): number{
-var n = n
 
 
 

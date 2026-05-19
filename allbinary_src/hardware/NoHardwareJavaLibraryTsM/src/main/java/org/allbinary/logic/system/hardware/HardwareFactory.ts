@@ -74,7 +74,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(os: OperatingSystemInterface): HardwareInterface{
-var os = os
 
         try {
             

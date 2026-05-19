@@ -92,15 +92,10 @@ export class ImageModifierUtil
     private readonly features: Features = Features.getInstance()!;
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 }
 
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 
     var newBufferedImage: org.eclipse.swt.graphics.Image
 ;
@@ -220,10 +215,6 @@ imageData!.data[index3 +2]= b;
 
 
     public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 
                         if(this.features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
@@ -358,10 +349,6 @@ imageData!.data[index +2]= bx;
 
 
     public setAlpha(unusedOriginalImage: Image, image: Image, imageIndex: number, alphaInt: number){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var alphaInt = alphaInt
 
                         if(this.features.isFeature(OpenGLFeatureFactory.getInstance()!.OPENGL))
                         
@@ -396,8 +383,6 @@ this.setAlphaSWT(image, alphaInt);
 
 
     public setAlphaSWT(image: Image, alphaInt: number){
-    //var image = image
-    //var alphaInt = alphaInt
 
     var alpha: number = alphaInt;
 ;
@@ -435,7 +420,6 @@ newBufferedImage!.getImageData()!.alpha= alpha;
 
 
     public getImageArray(originalImageArray: Image[]): Image[]{
-    //var originalImageArray = originalImageArray
 
         try {
             
@@ -497,9 +481,6 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
 
 
     public handleImage(imageArray: Image[], index: number, image: Image){
-    //var imageArray = imageArray
-    //var index = index
-    //var image = image
 }
 
 

@@ -71,10 +71,7 @@ export class BasicColor
  constructor (alphaValue: number, value: number, name: string){
 
             super();
-            //var alphaValue = alphaValue
-    //var value = value
-    //var name = name
-this.name= name;
+        this.name= name;
     
 
     var tempValue: number= 0

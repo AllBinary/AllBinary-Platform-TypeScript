@@ -66,9 +66,7 @@ export class KeyValueDrawCharArray
 public constructor (label: string, x: number){
 
             super();
-        var label = label
-var x = x
-this.LABEL= label;
+        this.LABEL= label;
     
 this.labelWidth= MyFont.getInstance()!.stringWidth(this.LABEL) -this.LABEL.length;
     
@@ -80,8 +78,6 @@ this.valueX= this.labelWidth +x;
 
 
     public paint(graphics: Graphics, y: number){
-    //var graphics = graphics
-    //var y = y
 graphics.drawString(this.LABEL, this.labelX, y, 0);
     
 graphics.drawChars(this.value, 0, this.len, this.valueX, y, 0);
@@ -90,8 +86,6 @@ graphics.drawChars(this.value, 0, this.len, this.valueX, y, 0);
 
 
     public update(value: string[], len: number){
-var value = value
-var len = len
 this.value= value;
     
 this.len= len;

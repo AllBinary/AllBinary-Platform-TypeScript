@@ -289,7 +289,6 @@ this.logUtil!.putF("Start/End", this, commonStrings!.INIT);
 
 
     public isSubmission(input: Input): boolean{
-var input = input
 
                         if(input == this.ENTER)
                         
@@ -326,7 +325,6 @@ var input = input
 
 
     public isDelete(input: Input): boolean{
-var input = input
 
 
 
@@ -337,7 +335,6 @@ var input = input
 
 
     public isBackSpace(input: Input): boolean{
-var input = input
 
                         if(input == this.DEL)
                         
@@ -361,7 +358,6 @@ var input = input
 
 
     public isLeft(input: Input): boolean{
-var input = input
 
                         if(input == this.DPAD_LEFT)
                         
@@ -385,7 +381,6 @@ var input = input
 
 
     public isRight(input: Input): boolean{
-var input = input
 
                         if(input == this.DPAD_RIGHT)
                         
@@ -409,7 +404,6 @@ var input = input
 
 
     public isUp(input: Input): boolean{
-var input = input
 
                         if(input == this.DPAD_UP)
                         
@@ -433,7 +427,6 @@ var input = input
 
 
     public isDown(input: Input): boolean{
-var input = input
 
                         if(input == this.DPAD_DOWN)
                         
@@ -457,7 +450,6 @@ var input = input
 
 
     public isEnter(input: Input): boolean{
-var input = input
 
                         if(input == this.DPAD_CENTER)
                         

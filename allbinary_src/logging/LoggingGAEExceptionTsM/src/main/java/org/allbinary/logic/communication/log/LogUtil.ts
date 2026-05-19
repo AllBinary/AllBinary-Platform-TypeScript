@@ -87,7 +87,6 @@ PreLogUtil.put("Loggin Initialized", this, "init()");
 
 
     /*actual*/ public putL(log: Log){
-    //var log = log
 
     var exception: any = log.getThrowable()!;
 ;
@@ -150,10 +149,6 @@ this.logger.log(Level.INFO, message);
 
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-    //var exception = exception
 
         try {
             

@@ -60,7 +60,6 @@ export class HardwareFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(os: GenericOperatingSystem): HardwareInterface{
-var os = os
 
         try {
             
@@ -68,7 +67,7 @@ var os = os
 ;
     
 
-                        if(os.getName()!.localeCompare(operatingSystems!.LINUX) == 0)
+                        if(os.getName()!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     

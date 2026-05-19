@@ -58,7 +58,6 @@ export class BasicUserRole
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): BasicUserRole{
-var role = role
 
     var roleVector: Vector<any> = BasicUserRole.getAll()!;
 ;
@@ -80,7 +79,7 @@ index < size; index++)
 ;
     
 
-                        if(role.localeCompare(userRole!.toString()) == 0)
+                        if(role.compareTo(userRole!.toString()) == 0)
                         
                                     {
                                     
@@ -123,11 +122,7 @@ index < size; index++)
     private readonly sessionInactivityTimeout: number
  constructor (aRole: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
             this(aRole, aRole, a_int_RoleId, aSessionTimeout, aSessionInactivityTimeout);
-                    var aRole = aRole
-var a_int_RoleId = a_int_RoleId
-var aSessionTimeout = aSessionTimeout
-var aSessionInactivityTimeout = aSessionInactivityTimeout
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -136,12 +131,7 @@ var aSessionInactivityTimeout = aSessionInactivityTimeout
  constructor (aRole: string, aDisplayValue: string, a_int_RoleId: number, aSessionTimeout: number, aSessionInactivityTimeout: number){
 
             super();
-        var aRole = aRole
-var aDisplayValue = aDisplayValue
-var a_int_RoleId = a_int_RoleId
-var aSessionTimeout = aSessionTimeout
-var aSessionInactivityTimeout = aSessionInactivityTimeout
-this.m_int_RoleId= a_int_RoleId;
+        this.m_int_RoleId= a_int_RoleId;
     
 this.role= aRole;
     
@@ -197,7 +187,6 @@ BasicUserRole.roleVector!.add(this);
 
 
     public  === (basicUserRole: BasicUserRole): boolean{
-var basicUserRole = basicUserRole
 
                         if(this.getRoleId() == basicUserRole!.getRoleId())
                         

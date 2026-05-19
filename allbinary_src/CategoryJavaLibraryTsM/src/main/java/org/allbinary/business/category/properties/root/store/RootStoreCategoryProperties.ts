@@ -106,8 +106,7 @@ export class RootStoreCategoryProperties
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-            //var transformInfoInterface = transformInfoInterface
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 this.abPath= new AbPath();
     
@@ -124,9 +123,7 @@ this.log();
 public constructor (transformInfoInterface: TransformInfoInterface, categoryAbPath: AbPath){
 
             super();
-            //var transformInfoInterface = transformInfoInterface
-    //var categoryAbPath = categoryAbPath
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 this.abPath= categoryAbPath;
     
@@ -152,9 +149,7 @@ this.log();
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
 
             super();
-            //var transformInfoInterface = transformInfoInterface
-    //var node = node
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 
     var categoryPath: string = CategoryUtil.getNameFromNode(node)!;
@@ -184,9 +179,7 @@ this.log();
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-            //var transformInfoInterface = transformInfoInterface
-    //var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 
     var categoryPath: string = .toCharArray();
@@ -271,14 +264,12 @@ this.setRootFilePath(new AbPath(URLGLOBALS.getMainPath() +postPath));
 
 
     public setPath(path: AbPath){
-var path = path
 this.abPath= path;
     
 }
 
 
     public setRootFilePath(value: AbPath){
-var value = value
 this.fileAbPath= value;
     
 }
@@ -317,7 +308,6 @@ this.fileAbPath= value;
 
 
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
-    //var categoryHierarchyInterface = categoryHierarchyInterface
 
 
 
@@ -338,7 +328,6 @@ this.fileAbPath= value;
 
 
     public setValue(value: string){
-var value = value
 this.category= value;
     
 }
@@ -401,7 +390,6 @@ categoryVector!.add(this.getValue());
                 //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

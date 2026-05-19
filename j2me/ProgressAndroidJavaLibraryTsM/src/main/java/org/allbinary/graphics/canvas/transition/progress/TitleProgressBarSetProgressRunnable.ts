@@ -57,9 +57,7 @@ export class TitleProgressBarSetProgressRunnable extends ProgressRunnable {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
             super(midletActivity, progressCanvas);
-                    var midletActivity = midletActivity
-var progressCanvas = progressCanvas
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

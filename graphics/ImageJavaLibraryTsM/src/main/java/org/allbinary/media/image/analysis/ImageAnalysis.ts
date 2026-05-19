@@ -84,8 +84,6 @@ export class ImageAnalysis
                 //@Throws(Exception.constructor)
             
     public static process(bufferedImage: BufferedImage, colorRangeInterface: ColorRangeInterface): ImageAnalysisResults{
-var bufferedImage = bufferedImage
-var colorRangeInterface = colorRangeInterface
 
     var imageAnalysisResults: ImageAnalysisResults = new ImageAnalysisResults();
 ;
@@ -168,9 +166,6 @@ colorAverage!.setAvgBlue(blueTotal /totalPixels);
 
 
     static processColorRangeResults(imageAnalysisResults: ImageAnalysisResults, colorRangeInterface: ColorRangeInterface, color: Color){
-var imageAnalysisResults = imageAnalysisResults
-var colorRangeInterface = colorRangeInterface
-var color = color
 
                         if(colorRangeInterface!.isInRange(color))
                         
@@ -190,9 +185,6 @@ imageAnalysisResults!.getImageColorRangeResults()!.addTotalPixelsChecked();
 
 
     static processImageColorResults(imageColorResults: ImageColorResults, colorRangeInterface: ColorRangeInterface, color: Color){
-var imageColorResults = imageColorResults
-var colorRangeInterface = colorRangeInterface
-var color = color
 
                         if(color.getRed() < imageColorResults!.getColorRange()!.getMinRed())
                         
@@ -260,8 +252,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public process(bufferedImageArray: BufferedImage[], colorRangeInterface: ColorRangeInterface): ImageAnalysisResults[]{
-var bufferedImageArray = bufferedImageArray
-var colorRangeInterface = colorRangeInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

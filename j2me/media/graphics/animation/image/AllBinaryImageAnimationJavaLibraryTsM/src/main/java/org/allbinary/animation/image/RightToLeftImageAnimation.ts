@@ -64,9 +64,7 @@ export class RightToLeftImageAnimation extends ImageSegmentAnimation {
     private currentWidth: number= 0
 public constructor (image: Image, animationBehavior: AnimationBehavior){
             super(image, PrimitiveIntUtil.getArrayInstance(), animationBehavior);
-                        //var image = image
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -92,7 +90,6 @@ this.update();
 
 
     public setFrame(index: number){
-    //var index = index
 super.setFrame(index);
     
 this.update();
@@ -111,9 +108,6 @@ this.currentWidth= this.getDrawWidth() -this.startWidth;
     private anchor: number = Anchor.TOP_LEFT;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 graphics.drawRegion(this.getImage(), this.startWidth, this.getStartY(), this.currentWidth, this.getDrawHeight(), Sprite.TRANS_NONE, x +this.startWidth, y, this.anchor);
     
 }

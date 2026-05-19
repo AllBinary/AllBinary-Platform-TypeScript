@@ -107,8 +107,7 @@ export class SpriteSplitterImageJPanel extends javax.swing.JPanel implements Ima
     private result: BufferedImage
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                        //var imageProcessorInput = imageProcessorInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -192,7 +191,6 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(SpriteSplitterImageJPanel.prototype.result != 
                                     null
@@ -293,7 +291,6 @@ this.writeOverOriginalJCheckBox!.addActionListener(new class extends java.awt.ev
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 writeOverOriginalJCheckBoxActionPerformed(evt);
     
 }
@@ -307,7 +304,6 @@ this.widthReductionTextField!.addActionListener(new class extends java.awt.event
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 widthReductionTextFieldActionPerformed(evt);
     
 }
@@ -339,7 +335,6 @@ this.generateJButton!.addActionListener(new class extends java.awt.event.ActionL
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateJButtonActionPerformed(evt);
     
 }
@@ -355,7 +350,6 @@ this.totalFramesJComboBox!.addActionListener(new class extends java.awt.event.Ac
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 totalFramesJComboBoxActionPerformed(evt);
     
 }
@@ -371,7 +365,6 @@ this.totalAnimationsJComboBox!.addActionListener(new class extends java.awt.even
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 totalAnimationsJComboBoxActionPerformed(evt);
     
 }
@@ -385,7 +378,6 @@ this.spriteTypeJComboBox!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 spriteTypeJComboBoxActionPerformed(evt);
     
 }
@@ -411,7 +403,6 @@ this.increaseWidthTextField!.addActionListener(new class extends java.awt.event.
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 increaseWidthTextFieldActionPerformed(evt);
     
 }
@@ -437,19 +428,16 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     writeOverOriginalJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     generateJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.process();
     
 }
 
 
     spriteTypeJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
     var spriteSplitterUtil: SpriteSplitterUtil = SpriteSplitterUtil.getInstance()!;
 ;
@@ -462,22 +450,18 @@ this.jLabel2!.setText(spriteSplitterUtil!.ANIMATIONS_LABELS[this.spriteTypeJComb
 
 
     totalAnimationsJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     totalFramesJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     widthReductionTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     increaseWidthTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
@@ -530,7 +514,6 @@ var evt = evt
 
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
-var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput;
     
 }
@@ -539,9 +522,6 @@ this.imageProcessorInput= imageProcessorInput;
                 //@Throws(IOException.constructor)
             
     public visit(generatedBufferedImage: BufferedImage, name: string, index: number){
-    //var generatedBufferedImage = generatedBufferedImage
-    //var name = name
-    //var index = index
 this.logUtil!.putF(this.commonStrings!.VISIT, this, this.commonStrings!.VISIT);
     
 this.result= generatedBufferedImage;

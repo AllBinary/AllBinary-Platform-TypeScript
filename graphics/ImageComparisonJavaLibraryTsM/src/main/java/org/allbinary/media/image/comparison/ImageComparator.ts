@@ -78,8 +78,7 @@ export class ImageComparator
 public constructor (imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
 
             super();
-            //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
-this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
+        this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
     
 }
 
@@ -87,8 +86,6 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
                 //@Throws(Exception.constructor)
             
     process(imageComparisonInfo: ImageComparisonResult, point: GPoint){
-    //var imageComparisonInfo = imageComparisonInfo
-    //var point = point
 
     var isCollsionWithAvoidRectangles: boolean = this.imageComparatorConstraintsInterface!.isCollisionWithAvoidRectangles(point)!;
 ;
@@ -170,11 +167,6 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
                 //@Throws(Exception.constructor)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number): ImageComparisonResult{
-    //var bufferedImage1 = bufferedImage1
-    //var bufferedImage2 = bufferedImage2
-    //var frameOne = frameOne
-    //var frameTwo = frameTwo
-    //var tolerance = tolerance
 
 
 
@@ -187,12 +179,6 @@ this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
                 //@Throws(Exception.constructor)
             
     public compare(bufferedImage1: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number, name: string): ImageComparisonResult{
-    //var bufferedImage1 = bufferedImage1
-    //var bufferedImage2 = bufferedImage2
-    //var frameOne = frameOne
-    //var frameTwo = frameTwo
-    //var tolerance = tolerance
-    //var name = name
 
                         if(bufferedImage1 == 
                                     null

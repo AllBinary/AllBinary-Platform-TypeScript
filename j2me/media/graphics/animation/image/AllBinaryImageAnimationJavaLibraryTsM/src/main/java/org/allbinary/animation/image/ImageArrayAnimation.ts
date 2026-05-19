@@ -69,9 +69,7 @@ export class ImageArrayAnimation extends IndexedAnimation {
     circularIndexUtil: CircularIndexUtil = CircularIndexUtil.NULL_CIRCULAR_INDEX_UTIL;
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var imageArray = imageArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -105,7 +103,6 @@ this.circularIndexUtil!.previous();
 
 
     public setFrame(index: number){
-var index = index
 this.circularIndexUtil!.setIndex(index);
     
 }
@@ -132,7 +129,6 @@ this.circularIndexUtil!.setIndex(index);
 
 
     public setSequence(sequence: number[]){
-var sequence = sequence
 }
 
 
@@ -147,7 +143,6 @@ var sequence = sequence
 
 
     public getImage(index: number): Image{
-var index = index
 
 
 
@@ -168,7 +163,6 @@ var index = index
 
 
     setImageArray(imageArray: Image[]){
-var imageArray = imageArray
 this.imageArray= imageArray;
     
 this.totalFrames= imageArray!.length;
@@ -181,9 +175,6 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.totalFrames);
     private anchor: number = Anchor.TOP_LEFT;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 graphics.drawImage(this.imageArray[this.circularIndexUtil!.getIndex()]!, x, y, this.anchor);
     
 }

@@ -144,8 +144,6 @@ this.setTableName(this.tableName);
 
 
     public insert(userName: string, order: Order){
-var userName = userName
-var order = order
 
     var vector: Vector = new Vector();
 ;
@@ -416,7 +414,6 @@ this.insert(vector);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -449,8 +446,6 @@ var values = values
 
 
     public setStatus(orderId: string, status: string){
-var orderId = orderId
-var status = status
 
         try {
             
@@ -469,7 +464,7 @@ var status = status
 updateHashMap!.put(OrderHistoryData.STATUS, status);
     
 
-                        if(status.localeCompare(OrderHistoryData.CANCELLED) == 0)
+                        if(status.compareTo(OrderHistoryData.CANCELLED) == 0)
                         
                                     {
                                     updateHashMap!.put(OrderHistoryData.CANCELDATE, time);
@@ -478,7 +473,7 @@ updateHashMap!.put(OrderHistoryData.STATUS, status);
                                     }
                                 
                              else 
-                        if(status.localeCompare(OrderHistoryData.SHIPPED) == 0)
+                        if(status.compareTo(OrderHistoryData.SHIPPED) == 0)
                         
                                     {
                                     updateHashMap!.put(OrderHistoryData.SHIPPEDDATE, time);
@@ -507,8 +502,6 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
 
 
     public setPaymentMethod(orderId: string, paymentMethod: string){
-var orderId = orderId
-var paymentMethod = paymentMethod
 
         try {
             
@@ -551,7 +544,6 @@ super.updateWhere(OrderData.ID, orderId, updateHashMap);
                 //@Throws(Exception.constructor)
             
     public getStoreOrders(storeFrontInterface: StoreFrontInterface): Vector{
-var storeFrontInterface = storeFrontInterface
 
     var orderReviewVector: Vector = new Vector();
 ;
@@ -602,7 +594,6 @@ orderReviewVector!.add(orderReview);
                 //@Throws(Exception.constructor)
             
     public getOrders(userName: string): Vector{
-var userName = userName
 
     var orderReviewVector: Vector = new Vector();
 ;
@@ -653,9 +644,6 @@ orderReviewVector!.add(orderReview);
                 //@Throws(Exception.constructor)
             
     public getOrders(status: string, fromDate: string, toDate: string): Vector{
-var status = status
-var fromDate = fromDate
-var toDate = toDate
 
     var orderReviewVector: Vector = new Vector();
 ;
@@ -706,8 +694,6 @@ orderReviewVector!.add(orderReview);
                 //@Throws(Exception.constructor)
             
     public getOrders(fromDate: string, toDate: string): Vector{
-var fromDate = fromDate
-var toDate = toDate
 
     var orderReviewVector: Vector = new Vector();
 ;
@@ -752,7 +738,6 @@ orderReviewVector!.add(orderReview);
                 //@Throws(Exception.constructor)
             
     public getOrder(id: string): OrderHistory{
-var id = id
 
     var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -996,8 +981,6 @@ stringBuffer!.append(") )");
                 //@Throws(Exception.constructor)
             
     public update(whereHashMap: HashMap<any, any>, orderHashMap: HashMap<any, any>){
-var whereHashMap = whereHashMap
-var orderHashMap = orderHashMap
 
         try {
             updateWhere(whereHashMap, orderHashMap);

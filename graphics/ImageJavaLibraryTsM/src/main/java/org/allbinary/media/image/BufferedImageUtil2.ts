@@ -53,7 +53,6 @@ export class BufferedImageUtil2
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
 
     public createSpriteImage(bufferedImageArray: BufferedImage[]): BufferedImage{
-    //var bufferedImageArray = bufferedImageArray
 
     var columns: number = bufferedImageArray!.length
                 ;

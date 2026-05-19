@@ -56,9 +56,7 @@ export class Input
 public constructor (id: number, name: string){
 
             super();
-        var id = id
-var name = name
-this.setId(id);
+        this.setId(id);
     
 this.setName(name);
     
@@ -76,7 +74,6 @@ this.setName(name);
 
 
     setId(key: number){
-var key = key
 this.id= key;
     
 }
@@ -93,7 +90,6 @@ this.id= key;
 
 
     setName(keyName: string){
-var keyName = keyName
 this.name= keyName;
     
 }

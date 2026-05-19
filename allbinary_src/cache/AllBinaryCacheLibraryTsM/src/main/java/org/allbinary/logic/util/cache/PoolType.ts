@@ -51,8 +51,7 @@ export class PoolType
 public constructor (cacheType: CacheType){
 
             super();
-        var cacheType = cacheType
-this.cacheType= cacheType;
+        this.cacheType= cacheType;
     
 }
 

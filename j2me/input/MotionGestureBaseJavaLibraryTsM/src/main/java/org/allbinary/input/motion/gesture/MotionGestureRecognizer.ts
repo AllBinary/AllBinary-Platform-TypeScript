@@ -97,8 +97,7 @@ export class MotionGestureRecognizer
 public constructor (id: number){
 
             super();
-            //var id = id
-this.motionEventCircularPool= MotionEventCircularPool.createPool(id);
+        this.motionEventCircularPool= MotionEventCircularPool.createPool(id);
     
 
     var motionGesturesHandler: BasicEventHandler = new BasicEventHandler();
@@ -136,9 +135,6 @@ this.movedMotionGesturesHandler= movedMotionGesturesHandler;
                 //@Throws(Exception.constructor)
             
     public processPressedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
-    //var current = current
-    //var deviceId = deviceId
-    //var button = button
 this.intermediate= this.origin;
     
 this.previous= this.origin;
@@ -165,9 +161,6 @@ this.motionGesturesHandler!.fireEvent(event);
                 //@Throws(Exception.constructor)
             
     public processReleasedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
-    //var current = current
-    //var deviceId = deviceId
-    //var button = button
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.RELEASED)!;
 ;
@@ -190,9 +183,6 @@ this.motionGesturesHandler!.fireEvent(event);
                 //@Throws(Exception.constructor)
             
     public processDraggedMotionEvent(current: GPoint, deviceId: number, buttonMask: number){
-    //var current = current
-    //var deviceId = deviceId
-    //var buttonMask = buttonMask
 
                         if(this.previous == this.origin || this.intermediate == this.origin)
                         
@@ -391,9 +381,6 @@ this.motionGesturesHandler!.fireEvent(event);
                 //@Throws(Exception.constructor)
             
     public processMovedMotionEvent(current: GPoint, deviceId: number, button: number): boolean{
-    //var current = current
-    //var deviceId = deviceId
-    //var button = button
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(TouchMotionGestureFactory.getInstance()!.NO_MOTION)!;
 ;

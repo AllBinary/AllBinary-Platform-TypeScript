@@ -59,8 +59,7 @@ export class AbFileUpload extends FileUpload {
         
 public constructor (fileItemFactory: FileItemFactory){
             super(fileItemFactory);
-                    var fileItemFactory = fileItemFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -70,7 +69,6 @@ public constructor (fileItemFactory: FileItemFactory){
                 //@Throws(FileUploadException.constructor, IOException.constructor)
             
     public getItemIterator(request: HttpServletRequest): FileItemIterator{
-var request = request
 
 
 

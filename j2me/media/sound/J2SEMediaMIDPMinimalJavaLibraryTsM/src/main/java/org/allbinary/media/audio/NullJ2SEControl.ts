@@ -48,8 +48,7 @@ export class NullJ2SEControl extends Control {
         
  constructor (type: Type){
             super(type);
-                    var type = type
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

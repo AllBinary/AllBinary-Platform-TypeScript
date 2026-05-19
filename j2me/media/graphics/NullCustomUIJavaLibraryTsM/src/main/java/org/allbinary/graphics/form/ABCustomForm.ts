@@ -51,11 +51,7 @@ export class ABCustomForm extends CustomScreen {
 public constructor (title: string, items: ABCustomItem[], backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-        var title = title
-var items = items
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-}
+        }
 
 
     public size(): number{
@@ -69,7 +65,6 @@ var foregroundBasicColor = foregroundBasicColor
 
 
     public setSelectedIndex(index: number){
-var index = index
 }
 
 
@@ -88,12 +83,10 @@ var index = index
 
 
     public delete(itemNum: number){
-var itemNum = itemNum
 }
 
 
     public append(item: ABCustomItem): number{
-var item = item
 
 
 
@@ -104,19 +97,14 @@ var item = item
 
 
     public insert(itemNum: number, item: ABCustomItem){
-var itemNum = itemNum
-var item = item
 }
 
 
     public set(itemNum: number, item: ABCustomItem){
-var itemNum = itemNum
-var item = item
 }
 
 
     public get(itemNum: number): ABCustomItem{
-var itemNum = itemNum
 
 
 
@@ -136,7 +124,6 @@ var itemNum = itemNum
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 

@@ -97,8 +97,7 @@ export class Category
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
 
             super();
-        var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -118,9 +117,7 @@ this.log();
 public constructor (categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
 
             super();
-        var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-var level = level
-this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
+        this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance();
     
 this.categoryHierarchyInterface= new CategoryHierarchy(this, this, level) as CategoryHierarchyInterface;
     
@@ -131,10 +128,7 @@ this.log();
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
 
             super();
-        var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance() as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= categoryPropertiesFactoryInterface!.getInstance() as CategoryPropertiesInterface;
     
 this.categoryHierarchyInterface= new CategoryHierarchy(rootCategoryInterface, parentCategoryInterface) as CategoryHierarchyInterface;
     
@@ -230,7 +224,6 @@ rootAbPath= rootCategoryPropertiesInterface!.getRootFilePath();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addChildProperty(categoryPropertiesInterface: CategoryPropertiesInterface): boolean{
-var categoryPropertiesInterface = categoryPropertiesInterface
 this.typeVector!.add(this.PROPERTIES);
     
 
@@ -244,7 +237,6 @@ this.typeVector!.add(this.PROPERTIES);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addChild(categoryInterface: CategoryInterface): boolean{
-var categoryInterface = categoryInterface
 this.removeDuplicateChild(categoryInterface);
     
 
@@ -289,7 +281,6 @@ this.typeVector!.add(this.CATEGORY);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeChild(categoryInterface: CategoryInterface): boolean{
-var categoryInterface = categoryInterface
 
     var removalVector: Vector = new Vector();
 ;
@@ -323,7 +314,7 @@ index < size; index++)
 ;
     
 
-                        if(currentCategoryInterface!.getProperties()!.getValue()!.localeCompare(categoryInterface!.getProperties()!.getValue()) == 0)
+                        if(currentCategoryInterface!.getProperties()!.getValue()!.compareTo(categoryInterface!.getProperties()!.getValue()) == 0)
                         
                                     {
                                     removalVector!.add(currentCategoryInterface);
@@ -350,7 +341,6 @@ this.removal(removalVector);
 
 
     removal(removalVector: Vector){
-var removalVector = removalVector
 
     var removalSize: number = removalVector!.length!;
 ;
@@ -382,7 +372,6 @@ this.childCategoryVector!.remove(objectIndex);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     removeDuplicateChild(categoryInterface: CategoryInterface): boolean{
-var categoryInterface = categoryInterface
 
     var removalVector: Vector = new Vector();
 ;
@@ -416,7 +405,7 @@ index < size; index++)
 ;
     
 
-                        if(categoryInterface!.getProperties()!.getValue()!.localeCompare(categoryPropertiesInterface!.getValue()) == 0)
+                        if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
                         
                                     {
                                     removalVector!.add(categoryPropertiesInterface);
@@ -445,7 +434,7 @@ break;
 ;
     
 
-                        if(categoryInterface!.getProperties()!.getValue()!.localeCompare(categoryPropertiesInterface!.getValue()) == 0)
+                        if(categoryInterface!.getProperties()!.getValue()!.compareTo(categoryPropertiesInterface!.getValue()) == 0)
                         
                                     {
                                     removalVector!.add(existingCategoryInterface);
@@ -528,7 +517,6 @@ this.removal(removalVector);
 
 
     public setProperties(categoryPropertiesInterface: CategoryPropertiesInterface){
-var categoryPropertiesInterface = categoryPropertiesInterface
 this.categoryPropertiesInterface= categoryPropertiesInterface;
     
 }
@@ -545,7 +533,6 @@ this.categoryPropertiesInterface= categoryPropertiesInterface;
 
 
     public setHierarchy(categoryHierarchyInterface: CategoryHierarchyInterface){
-var categoryHierarchyInterface = categoryHierarchyInterface
 this.categoryHierarchyInterface= categoryHierarchyInterface;
     
 }
@@ -658,7 +645,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

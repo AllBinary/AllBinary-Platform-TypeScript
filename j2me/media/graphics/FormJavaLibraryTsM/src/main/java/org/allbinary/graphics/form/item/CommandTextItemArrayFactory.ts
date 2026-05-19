@@ -74,16 +74,12 @@ export class CommandTextItemArrayFactory
 public constructor (visitorInterface: Visitor){
 
             super();
-            //var visitorInterface = visitorInterface
-this.visitorInterface= visitorInterface;
+        this.visitorInterface= visitorInterface;
     
 }
 
 
     public getInstance(vector: Vector<any>, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ABCustomItem[]{
-var vector = vector
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
 
     var size: number = vector.length!;
 ;

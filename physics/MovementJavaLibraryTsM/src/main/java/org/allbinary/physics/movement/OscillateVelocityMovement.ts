@@ -62,10 +62,7 @@ export class OscillateVelocityMovement extends BasicConstantVelocityMovement {
     private oscillatePositive: boolean= false
 public constructor (speedBasicDecimal: BasicDecimal, oscillateMin: number, oscillateMax: number){
             super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
-                    var speedBasicDecimal = speedBasicDecimal
-var oscillateMin = oscillateMin
-var oscillateMax = oscillateMax
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +76,6 @@ this.oscillateMax= oscillateMax;
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-var layer = layer
 super.process(layer);
     
 

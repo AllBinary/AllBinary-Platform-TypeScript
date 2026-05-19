@@ -77,8 +77,7 @@ export class AlwaysActionScriptCondition extends BasicProfileActionScriptConditi
     private isOn: boolean= false
 public constructor (node: Node){
             super(AlwaysActionScriptCondition.NAME, node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -109,7 +108,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.localeCompare(AlwaysActionScriptConditionData.IS_ON) == 0)
+                        if(childNode!.getNodeName()!.compareTo(AlwaysActionScriptConditionData.IS_ON) == 0)
                         
                                     {
                                     
@@ -177,7 +176,6 @@ this.alwaysActionScriptConditionJPanel= new AlwaysActionScriptConditionJPanel(th
 
 
     public setIsOn(isOn: boolean){
-var isOn = isOn
 this.isOn= isOn;
     
 }
@@ -210,7 +208,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = super.toXmlNode(document)!;
 ;
@@ -229,7 +226,6 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, AlwaysActionScr
                 //@Throws(Exception.constructor)
             
     public shouldProcess(frame: Long): boolean{
-var frame = frame
 
                         if(this.isIsOn())
                         

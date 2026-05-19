@@ -79,8 +79,7 @@ export class InputRobot
 public constructor (graphicsDevice: GraphicsDevice){
 
             super();
-            //var graphicsDevice = graphicsDevice
-this.robot= new Robot(graphicsDevice);
+        this.robot= new Robot(graphicsDevice);
     
 }
 
@@ -122,9 +121,6 @@ this.robot= new Robot(graphicsDevice);
                 //@Throws(Exception.constructor)
             
     public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
-    //var rectangle = rectangle
-    //var x = x
-    //var y = y
 
     var point: Point = PointHelper.getCenterPoint(rectangle)!;
 ;
@@ -142,15 +138,12 @@ this.logUtil!.putF(message, this, "moveMouseToTarget");
 
 
     public mouseMove(point: Point){
-var point = point
 this.mouseMove(point.x, point.y);
     
 }
 
 
     public mouseMove(x: number, y: number){
-    //var x = x
-    //var y = y
 this.robot.mouseMove(x, y);
     
 
@@ -166,14 +159,12 @@ this.logUtil!.putF(message, this, "moveMouse");
                 //@Throws(Exception.constructor)
             
     public mouseMoveToTarget(rectangle: Rectangle){
-var rectangle = rectangle
 this.mouseMoveToTarget(rectangle, 0, 0);
     
 }
 
 
     public createScreenCapture(screenRect: Rectangle): BufferedImage{
-var screenRect = screenRect
 
 
 
@@ -184,7 +175,6 @@ var screenRect = screenRect
 
 
     public delay(ms: Integer){
-var ms = ms
 this.robot.delay(ms);
     
 }
@@ -201,8 +191,6 @@ this.robot.delay(ms);
 
 
     public getPixelColor(x: Integer, y: Integer): Color{
-var x = x
-var y = y
 
 
 
@@ -223,57 +211,48 @@ var y = y
 
 
     public keyPress(keycode: Integer){
-var keycode = keycode
 this.robot.keyPress(keycode);
     
 }
 
 
     public keyRelease(keycode: Integer){
-var keycode = keycode
 this.robot.keyRelease(keycode);
     
 }
 
 
     public mouseMove(x: Integer, y: Integer){
-var x = x
-var y = y
 this.robot.mouseMove(x, y);
     
 }
 
 
     public mousePress(buttons: Integer){
-var buttons = buttons
 this.robot.mousePress(buttons);
     
 }
 
 
     public mouseRelease(buttons: Integer){
-var buttons = buttons
 this.robot.mouseRelease(buttons);
     
 }
 
 
     public mouseWheel(wheelAmt: Integer){
-var wheelAmt = wheelAmt
 this.robot.mouseWheel(wheelAmt);
     
 }
 
 
     public setAutoDelay(ms: Integer){
-var ms = ms
 this.robot.setAutoDelay(ms);
     
 }
 
 
     public setAutoWaitForIdle(isOn: boolean){
-var isOn = isOn
 this.robot.setAutoWaitForIdle(isOn);
     
 }

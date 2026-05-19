@@ -101,9 +101,7 @@ export class BaseGameInitialization
 public constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
 
             super();
-            //var resourceInitializationArray = resourceInitializationArray
-    //var portion = portion
-this.resourceInitializationArray= resourceInitializationArray;
+        this.resourceInitializationArray= resourceInitializationArray;
     
 this.portion= portion;
     
@@ -113,15 +111,12 @@ this.portion= portion;
                 //@Throws(Exception.constructor)
             
     public initKey(portion: number){
-var portion = portion
 }
 
 
                 //@Throws(Exception.constructor)
             
     initKeyMapping(abeClientInformation: AbeClientInformationInterface, portion: number){
-    //var abeClientInformation = abeClientInformation
-var portion = portion
 
                         if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(InputFeatureFactory.getInstance()!.INPUT_MAPPING))
                         
@@ -141,9 +136,6 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
                 //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
-    //var abeClientInformation = abeClientInformation
-    //var commandListener = commandListener
-    //var level = level
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
 ;
@@ -167,9 +159,9 @@ ChangedGameFeatureListener.getInstance()!.remove(InputFeatureFactory.getInstance
                                 
 this.setInitialized(true);
     
-this.initKey(getPortion());
+this.initKey(this.getPortion());
     
-this.initKeyMapping(abeClientInformation, getPortion());
+this.initKeyMapping(abeClientInformation, this.getPortion());
     
 GameKeyEventFactory.getInstance()!.init();
     
@@ -206,7 +198,6 @@ this.resourceInitializationArray[this.EARLY_RESOURCES]!.init();
                 //@Throws(Exception.constructor)
             
     public resourceInitialization(level: number){
-var level = level
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
 ;
@@ -315,7 +306,6 @@ FeaturedResourceRelativeRelationshipFactory.getInstance()!.clear();
 
 
     setGameInitialized(gameInitialized: boolean){
-var gameInitialized = gameInitialized
 this.gameInitialized= gameInitialized;
     
 }
@@ -342,7 +332,6 @@ this.gameInitialized= gameInitialized;
 
 
     public setInitialized(initialized: boolean){
-var initialized = initialized
 this.initialized= initialized;
     
 }

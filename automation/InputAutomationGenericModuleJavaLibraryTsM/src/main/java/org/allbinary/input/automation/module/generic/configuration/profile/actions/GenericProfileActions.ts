@@ -87,7 +87,6 @@ export class GenericProfileActions
     public static readonly DEFAULT_PROFILE_ACTIONS_PATH: string = GenericProfiles.DEFAULT_PROFILES_PATH +"actions/";
 
     public static getFile(name: string): File{
-var name = name
 
     var fileName: string = DEFAULT_PROFILE_ACTIONS_PATH +name +".xml";
 ;
@@ -113,9 +112,7 @@ var name = name
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, name: string){
 
             super();
-        var genericProfileActionsJPanel = genericProfileActionsJPanel
-var name = name
-this.setName(name);
+        this.setName(name);
     
 this.init(genericProfileActionsJPanel);
     
@@ -126,10 +123,7 @@ this.load();
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, abPath: AbPath, name: string){
 
             super();
-        var genericProfileActionsJPanel = genericProfileActionsJPanel
-var abPath = abPath
-var name = name
-this.setName(name);
+        this.setName(name);
     
 this.init(genericProfileActionsJPanel);
     
@@ -140,10 +134,7 @@ this.load();
 public constructor (genericProfileActionsJPanel: GenericProfileActionsJPanel, fileInputStream: FileInputStream, name: string){
 
             super();
-        var genericProfileActionsJPanel = genericProfileActionsJPanel
-var fileInputStream = fileInputStream
-var name = name
-this.setName(name);
+        this.setName(name);
     
 this.init(genericProfileActionsJPanel);
     
@@ -155,7 +146,6 @@ this.fileInit(fileInputStream);
                 //@Throws(Exception.constructor)
             
     init(genericProfileActionsJPanel: GenericProfileActionsJPanel){
-var genericProfileActionsJPanel = genericProfileActionsJPanel
 this.setGenericProfileActionsJPanel(genericProfileActionsJPanel);
     
 this.actionsDefaultListModelHelper= new DefaultListModelHelper();
@@ -213,7 +203,6 @@ this.fileInit(idFile);
                 //@Throws(Exception.constructor)
             
     fileInit(fileInputStream: FileInputStream){
-var fileInputStream = fileInputStream
 
     var bytes: number[] = new Array(100000);
 ;
@@ -288,7 +277,6 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
                 //@Throws(Exception.constructor)
             
     initActions(nodeList: NodeList){
-var nodeList = nodeList
 
 
 
@@ -343,7 +331,6 @@ this.getDefaultListModelHelper()!.add(genericConfigurationProfileAction!.getName
 
 
     public getAction(string: string): GenericProfileAction{
-var string = string
 
 
 
@@ -356,7 +343,6 @@ var string = string
                 //@Throws(Exception.constructor)
             
     public add(name: string){
-var name = name
 
     var genericProfileAction: GenericProfileAction = new GenericProfileAction(name);
 ;
@@ -375,7 +361,6 @@ this.save();
                 //@Throws(Exception.constructor)
             
     public remove(name: string){
-var name = name
 this.getHashMap()!.remove(name);
     
 this.getDefaultListModelHelper()!.remove(name);
@@ -406,7 +391,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(GenericProfileActionsData.NAME)!;
 ;
@@ -486,7 +470,6 @@ document.appendChild(node);
 
 
     public setGenericProfileActionsJPanel(genericProfileActionsJPanel: GenericProfileActionsJPanel){
-var genericProfileActionsJPanel = genericProfileActionsJPanel
 this.genericProfileActionsJPanel= genericProfileActionsJPanel;
     
 }
@@ -503,7 +486,6 @@ this.genericProfileActionsJPanel= genericProfileActionsJPanel;
 
 
     public setHashMap(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 this.hashMap= hashMap;
     
 }
@@ -520,7 +502,6 @@ this.hashMap= hashMap;
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }

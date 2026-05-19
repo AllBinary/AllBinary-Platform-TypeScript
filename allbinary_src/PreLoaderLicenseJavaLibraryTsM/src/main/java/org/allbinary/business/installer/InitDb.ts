@@ -75,12 +75,10 @@ public constructor (){
 public constructor (dbConnectionInfo: DbConnectionInfo){
 
             super();
-        var dbConnectionInfo = dbConnectionInfo
-}
+        }
 
 
     setHelper(anyType: any = {}){
-var anyType = anyType
 this.anyType= anyType;
     
 }

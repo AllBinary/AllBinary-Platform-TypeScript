@@ -77,7 +77,6 @@ export class SetLicenseInitInfo
                 //@Throws(Exception.constructor)
             
     public static main(args: string[]){
-var args = args
 
     var initInfo: SetLicenseInitInfo = new SetLicenseInitInfo(args);
 ;
@@ -91,8 +90,7 @@ initInfo!.createNewLicenseInitInfo(new BasicArrayListD());
 public constructor (options: string[]){
 
             super();
-        var options = options
-LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+        LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 
 
@@ -143,7 +141,6 @@ this.vector.add(options[index]!);
 
 
     public createNewLicenseInitInfo(licenceServerVector: BasicArrayList){
-var licenceServerVector = licenceServerVector
 
         try {
             

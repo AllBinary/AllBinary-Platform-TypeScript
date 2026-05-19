@@ -81,15 +81,11 @@ export class LicenseServerInitFileUtil
                 //@Throws(IOException.constructor)
             
     public write(b: number){
-var b = b
 }
 
                 //@Throws(IOException.constructor)
             
     public write(b: number[], off: number, len: number){
-var b = b
-var off = off
-var len = len
 }
 
     public close(){

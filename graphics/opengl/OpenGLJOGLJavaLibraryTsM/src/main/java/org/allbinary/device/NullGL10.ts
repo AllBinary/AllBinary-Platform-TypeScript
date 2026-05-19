@@ -59,7 +59,6 @@ export class NullGL10
     public static readonly NULL_GL10: NullGL10 = new NullGL10();
 
     public glActiveTexture(texture: number){
-    //var texture = texture
 
 
 
@@ -70,8 +69,6 @@ export class NullGL10
 
 
     public glAlphaFunc(func: number, ref: number){
-    //var func = func
-    //var ref = ref
 
 
 
@@ -82,8 +79,6 @@ export class NullGL10
 
 
     public glBindTexture(target: number, texture: number){
-    //var target = target
-    //var texture = texture
 
 
 
@@ -94,8 +89,6 @@ export class NullGL10
 
 
     public glBlendFunc(sfactor: number, dfactor: number){
-    //var sfactor = sfactor
-    //var dfactor = dfactor
 
 
 
@@ -106,7 +99,6 @@ export class NullGL10
 
 
     public glClear(mask: number){
-    //var mask = mask
 
 
 
@@ -117,10 +109,6 @@ export class NullGL10
 
 
     public glClearColor(red: number, green: number, blue: number, alpha: number){
-    //var red = red
-    //var green = green
-    //var blue = blue
-    //var alpha = alpha
 
 
 
@@ -131,7 +119,6 @@ export class NullGL10
 
 
     public glClearDepthf(depth: number){
-    //var depth = depth
 
 
 
@@ -142,7 +129,6 @@ export class NullGL10
 
 
     public glClearStencil(s: number){
-    //var s = s
 
 
 
@@ -153,7 +139,6 @@ export class NullGL10
 
 
     public glClientActiveTexture(texture: number){
-    //var texture = texture
 
 
 
@@ -164,10 +149,6 @@ export class NullGL10
 
 
     public glColor4f(red: number, green: number, blue: number, alpha: number){
-    //var red = red
-    //var green = green
-    //var blue = blue
-    //var alpha = alpha
 
 
 
@@ -178,10 +159,6 @@ export class NullGL10
 
 
     public glColorMask(red: boolean, green: boolean, blue: boolean, alpha: boolean){
-    //var red = red
-    //var green = green
-    //var blue = blue
-    //var alpha = alpha
 
 
 
@@ -192,10 +169,6 @@ export class NullGL10
 
 
     public glColorPointer(size: number, type: number, stride: number, pointer: Buffer){
-    //var size = size
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -206,14 +179,6 @@ export class NullGL10
 
 
     public glCompressedTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, imageSize: number, data: Buffer){
-    //var target = target
-    //var level = level
-    //var internalformat = internalformat
-    //var width = width
-    //var height = height
-    //var border = border
-    //var imageSize = imageSize
-    //var data = data
 
 
 
@@ -224,15 +189,6 @@ export class NullGL10
 
 
     public glCompressedTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, imageSize: number, data: Buffer){
-    //var target = target
-    //var level = level
-    //var xoffset = xoffset
-    //var yoffset = yoffset
-    //var width = width
-    //var height = height
-    //var format = format
-    //var imageSize = imageSize
-    //var data = data
 
 
 
@@ -243,14 +199,6 @@ export class NullGL10
 
 
     public glCopyTexImage2D(target: number, level: number, internalformat: number, x: number, y: number, width: number, height: number, border: number){
-    //var target = target
-    //var level = level
-    //var internalformat = internalformat
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
-    //var border = border
 
 
 
@@ -261,14 +209,6 @@ export class NullGL10
 
 
     public glCopyTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, x: number, y: number, width: number, height: number){
-    //var target = target
-    //var level = level
-    //var xoffset = xoffset
-    //var yoffset = yoffset
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
 
 
 
@@ -279,7 +219,6 @@ export class NullGL10
 
 
     public glCullFace(mode: number){
-    //var mode = mode
 
 
 
@@ -290,9 +229,6 @@ export class NullGL10
 
 
     public glDeleteTextures(n: number, textures: number[], offset: number){
-    //var n = n
-    //var textures = textures
-    //var offset = offset
 
 
 
@@ -303,8 +239,6 @@ export class NullGL10
 
 
     public glDeleteTextures(n: number, textures: IntBuffer){
-    //var n = n
-    //var textures = textures
 
 
 
@@ -315,7 +249,6 @@ export class NullGL10
 
 
     public glDepthFunc(func: number){
-    //var func = func
 
 
 
@@ -326,7 +259,6 @@ export class NullGL10
 
 
     public glDepthMask(flag: boolean){
-    //var flag = flag
 
 
 
@@ -337,8 +269,6 @@ export class NullGL10
 
 
     public glDepthRangef(zNear: number, zFar: number){
-    //var zNear = zNear
-    //var zFar = zFar
 
 
 
@@ -349,7 +279,6 @@ export class NullGL10
 
 
     public glDisable(cap: number){
-    //var cap = cap
 
 
 
@@ -360,7 +289,6 @@ export class NullGL10
 
 
     public glDisableClientState(array: number){
-    //var array = array
 
 
 
@@ -371,9 +299,6 @@ export class NullGL10
 
 
     public glDrawArrays(mode: number, first: number, count: number){
-    //var mode = mode
-    //var first = first
-    //var count = count
 
 
 
@@ -384,10 +309,6 @@ export class NullGL10
 
 
     public glDrawElements(mode: number, count: number, type: number, indices: Buffer){
-    //var mode = mode
-    //var count = count
-    //var type = type
-    //var indices = indices
 
 
 
@@ -398,7 +319,6 @@ export class NullGL10
 
 
     public glEnable(cap: number){
-    //var cap = cap
 
 
 
@@ -409,7 +329,6 @@ export class NullGL10
 
 
     public glEnableClientState(array: number){
-    //var array = array
 
 
 
@@ -440,8 +359,6 @@ export class NullGL10
 
 
     public glFogf(pname: number, param: number){
-    //var pname = pname
-    //var param = param
 
 
 
@@ -452,9 +369,6 @@ export class NullGL10
 
 
     public glFogfv(pname: number, params: number[], offset: number){
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -465,8 +379,6 @@ export class NullGL10
 
 
     public glFogfv(pname: number, params: FloatBuffer){
-    //var pname = pname
-    //var params = params
 
 
 
@@ -477,7 +389,6 @@ export class NullGL10
 
 
     public glFrontFace(mode: number){
-    //var mode = mode
 
 
 
@@ -488,12 +399,6 @@ export class NullGL10
 
 
     public glFrustumf(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number){
-    //var left = left
-    //var right = right
-    //var bottom = bottom
-    //var top = top
-    //var zNear = zNear
-    //var zFar = zFar
 
 
 
@@ -504,9 +409,6 @@ export class NullGL10
 
 
     public glGenTextures(n: number, textures: number[], offset: number){
-    //var n = n
-    //var textures = textures
-    //var offset = offset
 
 
 
@@ -517,8 +419,6 @@ export class NullGL10
 
 
     public glGenTextures(n: number, textures: IntBuffer){
-    //var n = n
-    //var textures = textures
 
 
 
@@ -539,9 +439,6 @@ export class NullGL10
 
 
     public glGetIntegerv(pname: number, params: number[], offset: number){
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -552,8 +449,6 @@ export class NullGL10
 
 
     public glGetIntegerv(pname: number, params: IntBuffer){
-    //var pname = pname
-    //var params = params
 
 
 
@@ -564,7 +459,6 @@ export class NullGL10
 
 
     public glGetString(name: number): string{
-    //var name = name
 
 
 
@@ -575,8 +469,6 @@ export class NullGL10
 
 
     public glHint(target: number, mode: number){
-    //var target = target
-    //var mode = mode
 
 
 
@@ -587,8 +479,6 @@ export class NullGL10
 
 
     public glLightModelf(pname: number, param: number){
-    //var pname = pname
-    //var param = param
 
 
 
@@ -599,9 +489,6 @@ export class NullGL10
 
 
     public glLightModelfv(pname: number, params: number[], offset: number){
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -612,8 +499,6 @@ export class NullGL10
 
 
     public glLightModelfv(pname: number, params: FloatBuffer){
-    //var pname = pname
-    //var params = params
 
 
 
@@ -624,9 +509,6 @@ export class NullGL10
 
 
     public glLightf(light: number, pname: number, param: number){
-    //var light = light
-    //var pname = pname
-    //var param = param
 
 
 
@@ -637,10 +519,6 @@ export class NullGL10
 
 
     public glLightfv(light: number, pname: number, params: number[], offset: number){
-    //var light = light
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -651,9 +529,6 @@ export class NullGL10
 
 
     public glLightfv(light: number, pname: number, params: FloatBuffer){
-    //var light = light
-    //var pname = pname
-    //var params = params
 
 
 
@@ -664,7 +539,6 @@ export class NullGL10
 
 
     public glLineWidth(width: number){
-    //var width = width
 
 
 
@@ -685,8 +559,6 @@ export class NullGL10
 
 
     public glLoadMatrixf(m: number[], offset: number){
-    //var m = m
-    //var offset = offset
 
 
 
@@ -697,7 +569,6 @@ export class NullGL10
 
 
     public glLoadMatrixf(m: FloatBuffer){
-    //var m = m
 
 
 
@@ -708,7 +579,6 @@ export class NullGL10
 
 
     public glLogicOp(opcode: number){
-    //var opcode = opcode
 
 
 
@@ -719,9 +589,6 @@ export class NullGL10
 
 
     public glMaterialf(face: number, pname: number, param: number){
-    //var face = face
-    //var pname = pname
-    //var param = param
 
 
 
@@ -732,10 +599,6 @@ export class NullGL10
 
 
     public glMaterialfv(face: number, pname: number, params: number[], offset: number){
-    //var face = face
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -746,9 +609,6 @@ export class NullGL10
 
 
     public glMaterialfv(face: number, pname: number, params: FloatBuffer){
-    //var face = face
-    //var pname = pname
-    //var params = params
 
 
 
@@ -759,7 +619,6 @@ export class NullGL10
 
 
     public glMatrixMode(mode: number){
-    //var mode = mode
 
 
 
@@ -770,8 +629,6 @@ export class NullGL10
 
 
     public glMultMatrixf(m: number[], offset: number){
-    //var m = m
-    //var offset = offset
 
 
 
@@ -782,7 +639,6 @@ export class NullGL10
 
 
     public glMultMatrixf(m: FloatBuffer){
-    //var m = m
 
 
 
@@ -793,11 +649,6 @@ export class NullGL10
 
 
     public glMultiTexCoord4f(target: number, s: number, t: number, r: number, q: number){
-    //var target = target
-    //var s = s
-    //var t = t
-    //var r = r
-    //var q = q
 
 
 
@@ -808,9 +659,6 @@ export class NullGL10
 
 
     public glNormal3f(nx: number, ny: number, nz: number){
-    //var nx = nx
-    //var ny = ny
-    //var nz = nz
 
 
 
@@ -821,9 +669,6 @@ export class NullGL10
 
 
     public glNormalPointer(type: number, stride: number, pointer: Buffer){
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -834,12 +679,6 @@ export class NullGL10
 
 
     public glOrthof(left: number, right: number, bottom: number, top: number, zNear: number, zFar: number){
-    //var left = left
-    //var right = right
-    //var bottom = bottom
-    //var top = top
-    //var zNear = zNear
-    //var zFar = zFar
 
 
 
@@ -850,8 +689,6 @@ export class NullGL10
 
 
     public glPixelStorei(pname: number, param: number){
-    //var pname = pname
-    //var param = param
 
 
 
@@ -862,7 +699,6 @@ export class NullGL10
 
 
     public glPointSize(size: number){
-    //var size = size
 
 
 
@@ -873,8 +709,6 @@ export class NullGL10
 
 
     public glPolygonOffset(factor: number, units: number){
-    //var factor = factor
-    //var units = units
 
 
 
@@ -905,13 +739,6 @@ export class NullGL10
 
 
     public glReadPixels(x: number, y: number, width: number, height: number, format: number, type: number, pixels: Buffer){
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
-    //var format = format
-    //var type = type
-    //var pixels = pixels
 
 
 
@@ -922,10 +749,6 @@ export class NullGL10
 
 
     public glRotatef(angle: number, x: number, y: number, z: number){
-    //var angle = angle
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -936,10 +759,6 @@ export class NullGL10
 
 
     public glRotatex(angle: number, x: number, y: number, z: number){
-    //var angle = angle
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -950,8 +769,6 @@ export class NullGL10
 
 
     public glSampleCoverage(value: number, invert: boolean){
-    //var value = value
-    //var invert = invert
 
 
 
@@ -962,9 +779,6 @@ export class NullGL10
 
 
     public glScalef(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -975,9 +789,6 @@ export class NullGL10
 
 
     public glScalex(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -988,10 +799,6 @@ export class NullGL10
 
 
     public glScissor(x: number, y: number, width: number, height: number){
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
 
 
 
@@ -1002,7 +809,6 @@ export class NullGL10
 
 
     public glShadeModel(mode: number){
-    //var mode = mode
 
 
 
@@ -1013,9 +819,6 @@ export class NullGL10
 
 
     public glStencilFunc(func: number, ref: number, mask: number){
-    //var func = func
-    //var ref = ref
-    //var mask = mask
 
 
 
@@ -1026,7 +829,6 @@ export class NullGL10
 
 
     public glStencilMask(mask: number){
-    //var mask = mask
 
 
 
@@ -1037,9 +839,6 @@ export class NullGL10
 
 
     public glStencilOp(fail: number, zfail: number, zpass: number){
-    //var fail = fail
-    //var zfail = zfail
-    //var zpass = zpass
 
 
 
@@ -1050,10 +849,6 @@ export class NullGL10
 
 
     public glTexCoordPointer(size: number, type: number, stride: number, pointer: Buffer){
-    //var size = size
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -1064,9 +859,6 @@ export class NullGL10
 
 
     public glTexEnvf(target: number, pname: number, param: number){
-    //var target = target
-    //var pname = pname
-    //var param = param
 
 
 
@@ -1077,10 +869,6 @@ export class NullGL10
 
 
     public glTexEnvfv(target: number, pname: number, params: number[], offset: number){
-    //var target = target
-    //var pname = pname
-    //var params = params
-    //var offset = offset
 
 
 
@@ -1091,9 +879,6 @@ export class NullGL10
 
 
     public glTexEnvfv(target: number, pname: number, params: FloatBuffer){
-    //var target = target
-    //var pname = pname
-    //var params = params
 
 
 
@@ -1104,15 +889,6 @@ export class NullGL10
 
 
     public glTexImage2D(target: number, level: number, internalformat: number, width: number, height: number, border: number, format: number, type: number, pixels: Buffer){
-    //var target = target
-    //var level = level
-    //var internalformat = internalformat
-    //var width = width
-    //var height = height
-    //var border = border
-    //var format = format
-    //var type = type
-    //var pixels = pixels
 
 
 
@@ -1123,9 +899,6 @@ export class NullGL10
 
 
     public glTexParameterf(target: number, pname: number, param: number){
-    //var target = target
-    //var pname = pname
-    //var param = param
 
 
 
@@ -1136,9 +909,6 @@ export class NullGL10
 
 
     public glTexParameteri(target: number, pname: number, param: number){
-    //var target = target
-    //var pname = pname
-    //var param = param
 
 
 
@@ -1149,15 +919,6 @@ export class NullGL10
 
 
     public glTexSubImage2D(target: number, level: number, xoffset: number, yoffset: number, width: number, height: number, format: number, type: number, pixels: Buffer){
-    //var target = target
-    //var level = level
-    //var xoffset = xoffset
-    //var yoffset = yoffset
-    //var width = width
-    //var height = height
-    //var format = format
-    //var type = type
-    //var pixels = pixels
 
 
 
@@ -1168,9 +929,6 @@ export class NullGL10
 
 
     public glTranslatef(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -1181,10 +939,6 @@ export class NullGL10
 
 
     public glVertexPointer(size: number, type: number, stride: number, pointer: Buffer){
-    //var size = size
-    //var type = type
-    //var stride = stride
-    //var pointer = pointer
 
 
 
@@ -1195,10 +949,6 @@ export class NullGL10
 
 
     public glViewport(x: number, y: number, width: number, height: number){
-    //var x = x
-    //var y = y
-    //var width = width
-    //var height = height
 
 
 
@@ -1209,7 +959,6 @@ export class NullGL10
 
 
     public glBegin(i: number){
-    //var i = i
 
 
 
@@ -1230,9 +979,6 @@ export class NullGL10
 
 
     public glVertex3f(f: number, f2: number, f3: number){
-    //var f = f
-    //var f2 = f2
-    //var f3 = f3
 
 
 
@@ -1243,8 +989,6 @@ export class NullGL10
 
 
     public glPolygonMode(i: number, i1: number){
-    //var i = i
-    //var i1 = i1
 
 
 

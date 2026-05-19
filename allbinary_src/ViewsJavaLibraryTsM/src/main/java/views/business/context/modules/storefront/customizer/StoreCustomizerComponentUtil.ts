@@ -85,8 +85,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): string{
-    //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -149,9 +147,6 @@ this.generate(abeClientInformation, transformInfoInterface, allViewsToBeModified
                 //@Throws(Exception.constructor)
             
     generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, allViewsToBeModifiedVector: Vector){
-    //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
-var allViewsToBeModifiedVector = allViewsToBeModifiedVector
 
     var customizerUtil: CustomizerUtil = CustomizerUtil.getInstance()!;
 ;

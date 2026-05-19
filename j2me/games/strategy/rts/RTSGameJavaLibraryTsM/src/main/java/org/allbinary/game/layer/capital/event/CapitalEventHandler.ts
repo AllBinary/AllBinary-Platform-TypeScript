@@ -61,8 +61,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
     var capitalEventListenerInterface: CapitalEventListenerInterface = (eventListenerInterface as CapitalEventListenerInterface);
 ;

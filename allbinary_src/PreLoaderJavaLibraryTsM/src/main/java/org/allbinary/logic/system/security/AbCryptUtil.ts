@@ -80,8 +80,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public decrypt(inputStream: InputStream, key: string): number[]{
-    //var inputStream = inputStream
-    //var key = key
 
     var outputStream: ByteArrayOutputStream = 
                 null

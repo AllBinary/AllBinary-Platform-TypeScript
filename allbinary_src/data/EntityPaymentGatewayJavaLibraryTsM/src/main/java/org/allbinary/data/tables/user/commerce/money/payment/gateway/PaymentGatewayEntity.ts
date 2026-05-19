@@ -111,7 +111,6 @@ this.setTableName(this.tableName);
 
 
     public add(paymentGatewayInterface: PaymentGatewayInterface){
-var paymentGatewayInterface = paymentGatewayInterface
 
         try {
             
@@ -176,7 +175,6 @@ super.insert(vector);
 
 
     public update(paymentGatewayInterface: PaymentGatewayInterface){
-var paymentGatewayInterface = paymentGatewayInterface
 
         try {
             
@@ -247,8 +245,6 @@ super.updateWhere(whereKeyValuePairs, updateHashMap);
 
 
     public getPaymentGatewayInterface(storeName: string, paymentType: BasicPaymentType): PaymentGatewayInterface{
-var storeName = storeName
-var paymentType = paymentType
 
         try {
             
@@ -400,7 +396,6 @@ paymentGatewayHashMap!.put(PaymentGatewayData.SPECIAL9.toString(), superCrypt!.d
 
 
     public findPaymentTypeVectorByStore(storeName: string): Vector{
-var storeName = storeName
 
         try {
             
@@ -496,8 +491,6 @@ paymentGatewayVector!.add(paymentType);
 
 
     public remove(storeName: string, paymentType: BasicPaymentType){
-var storeName = storeName
-var paymentType = paymentType
 
         try {
             

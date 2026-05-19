@@ -67,9 +67,7 @@ export class MotionEventFactory
 public constructor (source: any = {}, id: number){
 
             super();
-        var source = source
-var id = id
-this.source= source;
+        this.source= source;
     
 this.id= id;
     

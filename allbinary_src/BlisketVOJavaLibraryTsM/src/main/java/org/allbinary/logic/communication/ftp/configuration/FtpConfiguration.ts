@@ -65,8 +65,7 @@ public constructor (){
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.ftpServer= hashMap!.get(FtpConfigurationData.SERVER) as string;
+        this.ftpServer= hashMap!.get(FtpConfigurationData.SERVER) as string;
     
 this.ftpPath= hashMap!.get(FtpConfigurationData.PATH) as string;
     
@@ -118,28 +117,24 @@ this.ftpPassword= hashMap!.get(FtpConfigurationData.PASSWORD) as string;
 
 
     public setServer(value: string){
-var value = value
 this.ftpServer= value;
     
 }
 
 
     public setPath(value: string){
-var value = value
 this.ftpPath= value;
     
 }
 
 
     public setUserName(value: string){
-var value = value
 this.ftpUserName= value;
     
 }
 
 
     public setPassword(value: string){
-var value = value
 this.ftpPassword= value;
     
 }

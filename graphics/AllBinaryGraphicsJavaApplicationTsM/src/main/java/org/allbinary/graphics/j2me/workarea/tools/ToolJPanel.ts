@@ -107,7 +107,6 @@ lineJButton!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
-var evt = evt
 lineJButtonMouseClicked(evt);
     
 }
@@ -125,7 +124,6 @@ this.rectJButton!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
-var evt = evt
 rectJButtonMouseClicked(evt);
     
 }
@@ -143,7 +141,6 @@ this.arcJButton!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 arcJButtonMousePressed(evt);
     
 }
@@ -161,7 +158,6 @@ this.stringJButton!.addMouseListener(new class extends java.awt.event.MouseAdapt
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 stringJButtonMousePressed(evt);
     
 }
@@ -179,7 +175,6 @@ this.charJButton!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 charJButtonMousePressed(evt);
     
 }
@@ -197,7 +192,6 @@ this.roundRectJButton!.addMouseListener(new class extends java.awt.event.MouseAd
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 roundRectJButtonMousePressed(evt);
     
 }
@@ -215,7 +209,6 @@ this.imageJButton!.addMouseListener(new class extends java.awt.event.MouseAdapte
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 imageJButtonMousePressed(evt);
     
 }
@@ -233,7 +226,6 @@ this.fillArcJButton!.addMouseListener(new class extends java.awt.event.MouseAdap
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 fillArcJButtonMousePressed(evt);
     
 }
@@ -251,7 +243,6 @@ this.fillRectJButton!.addMouseListener(new class extends java.awt.event.MouseAda
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 fillRectJButtonMousePressed(evt);
     
 }
@@ -269,7 +260,6 @@ this.fillRoundRectJButton!.addMouseListener(new class extends java.awt.event.Mou
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 fillRoundRectJButtonMousePressed(evt);
     
 }
@@ -287,7 +277,6 @@ this.dottedLineJButton!.addMouseListener(new class extends java.awt.event.MouseA
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 dottedLineJButtonMousePressed(evt);
     
 }
@@ -305,7 +294,6 @@ this.dottedRectButton!.addMouseListener(new class extends java.awt.event.MouseAd
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 dottedRectButtonMousePressed(evt);
     
 }
@@ -323,7 +311,6 @@ this.dottedArcJButton!.addMouseListener(new class extends java.awt.event.MouseAd
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 dottedArcJButtonMousePressed(evt);
     
 }
@@ -341,7 +328,6 @@ this.dottedFillRectJButton!.addMouseListener(new class extends java.awt.event.Mo
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 dottedFillRectJButtonMousePressed(evt);
     
 }
@@ -359,7 +345,6 @@ this.dottedFillArcJButton!.addMouseListener(new class extends java.awt.event.Mou
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 dottedFillArcJButtonMousePressed(evt);
     
 }
@@ -377,7 +362,6 @@ this.dottedFillRountRectJButton!.addMouseListener(new class extends java.awt.eve
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 dottedFillRountRectJButtonMousePressed(evt);
     
 }
@@ -397,112 +381,96 @@ add(this.colorJPanel);
 
 
     dottedFillRountRectJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.dottedFillRountRectJButton!.getText());
     
 }
 
 
     dottedFillArcJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.dottedFillArcJButton!.getText());
     
 }
 
 
     dottedFillRectJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.dottedFillRectJButton!.getText());
     
 }
 
 
     dottedArcJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.dottedArcJButton!.getText());
     
 }
 
 
     dottedRectButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.dottedRectButton!.getText());
     
 }
 
 
     dottedLineJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.dottedLineJButton!.getText());
     
 }
 
 
     fillRoundRectJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.fillRoundRectJButton!.getText());
     
 }
 
 
     fillRectJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.fillRectJButton!.getText());
     
 }
 
 
     fillArcJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.fillArcJButton!.getText());
     
 }
 
 
     imageJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.imageJButton!.getText());
     
 }
 
 
     roundRectJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.roundRectJButton!.getText());
     
 }
 
 
     charJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.charJButton!.getText());
     
 }
 
 
     stringJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.stringJButton!.getText());
     
 }
 
 
     arcJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.arcJButton!.getText());
     
 }
 
 
     rectJButtonMouseClicked(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.rectJButton!.getText());
     
 }
 
 
     lineJButtonMouseClicked(evt: java.awt.event.MouseEvent){
-var evt = evt
 ToolFactory.getInstance()!.setSelectedTool(this.lineJButton!.getText());
     
 }

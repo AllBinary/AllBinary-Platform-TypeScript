@@ -102,7 +102,6 @@ this.list.clear();
 
 
     public add(layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
-var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 this.list.add(layerInterfaceFactoryInterface);
     
 }

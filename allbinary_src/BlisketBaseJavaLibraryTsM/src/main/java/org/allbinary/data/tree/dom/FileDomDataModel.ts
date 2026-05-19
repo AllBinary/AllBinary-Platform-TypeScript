@@ -65,8 +65,7 @@ export class FileDomDataModel
 public constructor (file: AbFile){
 
             super();
-        var file = file
-this.file= file;
+        this.file= file;
     
 }
 
@@ -74,7 +73,6 @@ this.file= file;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var tableMappingInterface: TableMappingInterface = new FileTableMapping(this.file) as TableMappingInterface;
 ;

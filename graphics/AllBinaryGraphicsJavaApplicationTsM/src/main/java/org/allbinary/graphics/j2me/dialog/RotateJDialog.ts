@@ -74,7 +74,6 @@ export class RotateJDialog extends javax.swing.JDialog {
         
 
     public static main(args: string[]){
-var args = args
 java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
@@ -87,7 +86,6 @@ dialog.addWindowListener(new class extends java.awt.event.WindowAdapter
                                 {
                                 
     public windowClosing(e: java.awt.event.WindowEvent){
-var e = e
 System.exit(0);
     
 }
@@ -110,9 +108,7 @@ dialog.setVisible(true);
     private hashMap: HashMap<any, any> = new HashMap<any, any>();
 public constructor (parent: java.awt.Frame, modal: boolean){
             super(parent, modal);
-                    var parent = parent
-var modal = modal
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -150,7 +146,6 @@ this.jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jButton1ActionPerformed(evt);
     
 }
@@ -184,7 +179,6 @@ pack();
 
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.hashMap!.put(Integer.valueOf(0)Integer.valueOf(this.angleIncrementJTextField!.getText()));

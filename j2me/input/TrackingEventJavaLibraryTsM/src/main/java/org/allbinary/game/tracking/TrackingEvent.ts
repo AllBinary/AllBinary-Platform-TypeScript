@@ -54,8 +54,7 @@ export class TrackingEvent extends AllBinaryEventObject {
     private layerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 public constructor (allBinaryLayerInterface: any = {}){
             super(allBinaryLayerInterface);
-                    var allBinaryLayerInterface = allBinaryLayerInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,7 +71,6 @@ public constructor (allBinaryLayerInterface: any = {}){
 
 
     public init(anyType: any = {}){
-var anyType = anyType
 this.setSource(anyType);
     
 }
@@ -89,14 +87,12 @@ this.setSource(anyType);
 
 
     setLayerInterface(layerInterface: AllBinaryLayer){
-var layerInterface = layerInterface
 this.layerInterface= layerInterface;
     
 }
 
 
     public setLayerInterfaceForCircularStaticPool(layerInterface: AllBinaryLayer){
-var layerInterface = layerInterface
 this.layerInterface= layerInterface;
     
 }

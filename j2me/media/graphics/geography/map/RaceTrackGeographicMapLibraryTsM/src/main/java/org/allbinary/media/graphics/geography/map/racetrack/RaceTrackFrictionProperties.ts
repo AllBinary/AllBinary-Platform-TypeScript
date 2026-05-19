@@ -54,9 +54,7 @@ export class RaceTrackFrictionProperties
 public constructor (roadFriction: number, groundFriction: number){
 
             super();
-        var roadFriction = roadFriction
-var groundFriction = groundFriction
-this.ROAD_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -roadFriction;
+        this.ROAD_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -roadFriction;
     
 this.GROUND_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -groundFriction;
     

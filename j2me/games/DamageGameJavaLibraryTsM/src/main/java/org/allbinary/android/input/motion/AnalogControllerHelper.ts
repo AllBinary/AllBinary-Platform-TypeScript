@@ -57,8 +57,7 @@ export class AnalogControllerHelper
 public constructor (reduceTimeFactor: number){
 
             super();
-        var reduceTimeFactor = reduceTimeFactor
-this.reduceTimeFactor= reduceTimeFactor;
+        this.reduceTimeFactor= reduceTimeFactor;
     
 }
 
@@ -76,8 +75,6 @@ this.reduceTimeFactor= reduceTimeFactor;
                 //@Throws(Exception.constructor)
             
     public right(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
-var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-var xAnalogValue = xAnalogValue
 this.rightTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceTimeFactor);
     
 
@@ -95,8 +92,6 @@ this.rightTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.redu
                 //@Throws(Exception.constructor)
             
     public left(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
-var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-var xAnalogValue = xAnalogValue
 this.leftTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduceTimeFactor);
     
 
@@ -114,8 +109,6 @@ this.leftTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduc
                 //@Throws(Exception.constructor)
             
     public up(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
-var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-var xAnalogValue = xAnalogValue
 this.upTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceTimeFactor);
     
 
@@ -133,8 +126,6 @@ this.upTimeElapsedHelper!.delay= ((this.SCALE_VALUE -xAnalogValue)>>this.reduceT
                 //@Throws(Exception.constructor)
             
     public down(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer, xAnalogValue: number){
-var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-var xAnalogValue = xAnalogValue
 this.downTimeElapsedHelper!.delay= ((this.SCALE_VALUE +xAnalogValue)>>this.reduceTimeFactor);
     
 

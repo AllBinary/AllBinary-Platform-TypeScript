@@ -86,9 +86,7 @@ export class CustomUriResolver
 public constructor (path: string, basicURIResolver: BasicUriResolver){
 
             super();
-        var path = path
-var basicURIResolver = basicURIResolver
-this.path= path;
+        this.path= path;
     
 this.basicURIResolver= basicURIResolver;
     
@@ -98,8 +96,6 @@ this.basicURIResolver= basicURIResolver;
                 //@Throws(TransformerException.constructor)
             
     public resolve(href: string, base: string): Source{
-var href = href
-var base = base
 
         try {
             

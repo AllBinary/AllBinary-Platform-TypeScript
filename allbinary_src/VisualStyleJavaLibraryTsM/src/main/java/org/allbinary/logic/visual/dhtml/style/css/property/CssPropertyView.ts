@@ -63,16 +63,14 @@ export class CssPropertyView
 public constructor (name: string){
 
             super();
-        var name = name
-this.cssProperty= new CssProperty(name);
+        this.cssProperty= new CssProperty(name);
     
 }
 
 public constructor (node: Node){
 
             super();
-        var node = node
-this.cssProperty= new CssProperty(node);
+        this.cssProperty= new CssProperty(node);
     
 }
 
@@ -90,7 +88,6 @@ this.cssProperty= new CssProperty(node);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
 
 

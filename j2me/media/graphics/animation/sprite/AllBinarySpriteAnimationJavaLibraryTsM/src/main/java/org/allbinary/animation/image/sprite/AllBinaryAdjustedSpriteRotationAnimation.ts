@@ -58,12 +58,7 @@ export class AllBinaryAdjustedSpriteRotationAnimation extends AllBinarySpriteRot
     private dy: number
 public constructor (sprite: Sprite, image: Image, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(sprite, image, animationBehavior);
-                        //var sprite = sprite
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -75,9 +70,6 @@ this.dy= dy;
 
 
     public paintXY(g: Graphics, x: number, y: number){
-    //var g = g
-    //var x = x
-    //var y = y
 this.sprite.setPosition(x +this.dx, y +this.dy);
     
 this.paint(g);

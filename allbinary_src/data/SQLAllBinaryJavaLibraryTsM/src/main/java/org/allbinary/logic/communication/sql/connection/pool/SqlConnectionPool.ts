@@ -107,7 +107,6 @@ private constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(url: string): Connection{
-var url = url
 
                         if(this.connectionHashMap == 
                                     null
@@ -299,8 +298,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public add(url: string, sqlConnection: Connection){
-var url = url
-var sqlConnection = sqlConnection
 
                         if(!sqlConnection!.isClosed())
                         

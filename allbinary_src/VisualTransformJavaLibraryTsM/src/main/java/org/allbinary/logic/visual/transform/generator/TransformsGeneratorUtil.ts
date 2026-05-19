@@ -85,9 +85,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoInterface: Object, group: string): string{
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-var group = group
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -126,10 +123,6 @@ var group = group
                 //@Throws(Exception.constructor)
             
     public generateComponentsFromObjectConfig(abeClientInformation: Object, transformInfoObjectConfigInterface: Object, transformInfoInterface: Object, group: string): string{
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoObjectConfigInterface = transformInfoObjectConfigInterface
-    //var transformInfoInterface = transformInfoInterface
-var group = group
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

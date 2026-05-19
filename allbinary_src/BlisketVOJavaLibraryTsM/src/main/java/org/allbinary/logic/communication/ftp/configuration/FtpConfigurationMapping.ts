@@ -60,8 +60,7 @@ export class FtpConfigurationMapping
 public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
             super();
-        var ftpConfigurationInterface = ftpConfigurationInterface
-this.ftpConfigurationInterface= ftpConfigurationInterface;
+        this.ftpConfigurationInterface= ftpConfigurationInterface;
     
 }
 

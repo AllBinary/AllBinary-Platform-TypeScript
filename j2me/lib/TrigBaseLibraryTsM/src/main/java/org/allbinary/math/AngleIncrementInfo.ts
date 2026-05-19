@@ -68,8 +68,7 @@ export class AngleIncrementInfo
 public constructor (angleIncrement: number){
 
             super();
-        var angleIncrement = angleIncrement
-this.angleIncrement= angleIncrement;
+        this.angleIncrement= angleIncrement;
     
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
@@ -93,7 +92,6 @@ this.RIGHT_FRAME= smallIntegerSingletonFactory!.getAt(angleFactory!.RIGHT.getVal
     private readonly frameUtil: FrameUtil = FrameUtil.getInstance()!;
 
     public getFrameAngle(frame: number): number{
-var frame = frame
 
 
 
@@ -125,7 +123,6 @@ var frame = frame
 
 
     public getClosestGeneralDirection(angle: number): number{
-var angle = angle
 
     var closestDirection: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(360)!;
 ;

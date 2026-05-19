@@ -63,17 +63,12 @@ export class LockablePaintable extends ItemPaintable {
 public constructor (lockedIndex: number){
 
             super();
-        var lockedIndex = lockedIndex
-this.lockedIndex= lockedIndex;
+        this.lockedIndex= lockedIndex;
     
 }
 
 
     public paint(graphics: Graphics, currentIndex: number, x: number, y: number){
-var graphics = graphics
-var currentIndex = currentIndex
-var x = x
-var y = y
 
                         if(LockedUtil.getInstance()!.isLocked() && currentIndex >= this.getLockedIndex())
                         

@@ -122,7 +122,6 @@ private constructor (){
 
 
     public getInstance(operatingSystemInterface: GenericOperatingSystem): HardwareInterface{
-var operatingSystemInterface = operatingSystemInterface
 
         try {
             

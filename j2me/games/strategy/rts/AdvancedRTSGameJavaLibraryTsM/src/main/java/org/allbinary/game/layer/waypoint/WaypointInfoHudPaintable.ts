@@ -82,7 +82,6 @@ this.keyvalueDrawString!.update(rtsLayer!.getParentLayer()!.getName());
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics);
     
 
@@ -97,7 +96,6 @@ this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
 
 
     public setRtsLayer(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.rtsLayerP= rtsLayer;
     
 }

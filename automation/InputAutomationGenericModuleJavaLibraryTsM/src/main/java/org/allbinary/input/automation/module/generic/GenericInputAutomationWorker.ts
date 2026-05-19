@@ -93,11 +93,7 @@ export class GenericInputAutomationWorker extends AbstractInputAutomationWorker 
     private genericProfile: GenericProfile
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfile: GenericProfile, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
             super(inputAutomationActionInterface);
-                        //var inputAutomationActionInterface = inputAutomationActionInterface
-    //var genericProfile = genericProfile
-    //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
-    //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -276,7 +272,6 @@ this.processDataWorkerResults();
 
 
     public setGenericProfile(genericProfile: GenericProfile){
-    //var genericProfile = genericProfile
 this.genericProfile= genericProfile;
     
 }
@@ -293,7 +288,6 @@ this.genericProfile= genericProfile;
 
 
     setFrame(frame: Long){
-    //var frame = frame
 this.frame= frame;
     
 }

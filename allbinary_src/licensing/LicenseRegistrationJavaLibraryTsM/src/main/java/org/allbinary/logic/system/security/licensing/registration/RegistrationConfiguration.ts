@@ -199,7 +199,6 @@ dataOutputStream!.flush();
 
 
     public setRegistrationCode(registrationCode: string){
-var registrationCode = registrationCode
 this.registrationCode= registrationCode;
     
 }

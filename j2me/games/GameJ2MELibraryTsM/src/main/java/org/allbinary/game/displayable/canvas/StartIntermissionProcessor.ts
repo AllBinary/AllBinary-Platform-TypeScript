@@ -63,8 +63,7 @@ export class StartIntermissionProcessor extends Processor {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-        var gameCanvas = gameCanvas
-this.gameCanvas= gameCanvas;
+        this.gameCanvas= gameCanvas;
     
 }
 

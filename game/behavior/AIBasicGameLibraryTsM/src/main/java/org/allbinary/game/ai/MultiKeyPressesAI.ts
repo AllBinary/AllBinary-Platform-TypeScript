@@ -70,10 +70,7 @@ export class MultiKeyPressesAI extends KeyPressesAI {
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
-                    var hashtable = hashtable
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -85,7 +82,6 @@ this.update();
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 }
 
 
@@ -108,7 +104,7 @@ var allBinaryLayerManager = allBinaryLayerManager
 ;
     
 
-                        if(isOn())
+                        if(this.isOn())
                         
                                     {
                                     

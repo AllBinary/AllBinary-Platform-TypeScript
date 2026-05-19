@@ -79,14 +79,12 @@ export class AbCrypt
 public constructor (algorithm: string){
 
             super();
-            //var algorithm = algorithm
-this.algorithm= algorithm;
+        this.algorithm= algorithm;
     
 }
 
 
     public init(keyAsString: string){
-    //var keyAsString = keyAsString
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -139,7 +137,6 @@ PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
 
 
     public encrypt(array: number[]): number[]{
-    //var array = array
 
         try {
             
@@ -166,7 +163,6 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 
 
     public decrypt(array: number[]): number[]{
-    //var array = array
 
         try {
             

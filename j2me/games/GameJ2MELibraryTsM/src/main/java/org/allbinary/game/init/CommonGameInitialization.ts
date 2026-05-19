@@ -70,9 +70,7 @@ export class CommonGameInitialization extends BaseGameInitialization {
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 protected constructor (resourceInitializationArray: ResourceInitialization[], portion: number){
             super(resourceInitializationArray, portion);
-                        //var resourceInitializationArray = resourceInitializationArray
-var portion = portion
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -82,9 +80,6 @@ var portion = portion
                 //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, level: number){
-    //var abeClientInformation = abeClientInformation
-    //var commandListener = commandListener
-    //var level = level
 super.init(abeClientInformation, commandListener, level);
     
 

@@ -64,8 +64,7 @@ export class TimeDelayHelper
 public constructor (delay: number){
 
             super();
-            //var delay = delay
-this.delay= delay;
+        this.delay= delay;
     
 this.setStartTimeTNT();
     
@@ -102,7 +101,6 @@ this.setStartTimeTNT();
 
 
     public isTimeSinceTNT(delay: number): boolean{
-var delay = delay
 
     var currentTime: number = Date.now()!;
 ;
@@ -132,7 +130,6 @@ var delay = delay
 
 
     public isTime(currentTime: number): boolean{
-var currentTime = currentTime
 
                         if(currentTime -this.startTime > this.delay)
                         
@@ -158,7 +155,6 @@ var currentTime = currentTime
 
 
     public isTimeWithoutReset(currentTime: number): boolean{
-var currentTime = currentTime
 
                         if(currentTime -this.startTime > this.delay)
                         
@@ -182,8 +178,6 @@ var currentTime = currentTime
 
 
     public isTimeSince(delay: number, currentTime: number): boolean{
-var delay = delay
-var currentTime = currentTime
 
                         if(currentTime -this.startTime > this.delay)
                         
@@ -219,7 +213,6 @@ var currentTime = currentTime
 
 
     public getElapsed(currentTime: number): number{
-var currentTime = currentTime
 
 
 
@@ -230,8 +223,6 @@ var currentTime = currentTime
 
 
     public isElapsed(currentTime: number, time: number): boolean{
-var currentTime = currentTime
-var time = time
 
                         if(this.getElapsed(currentTime) > time)
                         
@@ -259,7 +250,6 @@ var time = time
 
 
     public isElapsedTNT(time: number): boolean{
-var time = time
 
                         if(this.getElapsedTNT() > time)
                         
@@ -287,7 +277,6 @@ var time = time
 
 
     public setStartTime(startTime: number){
-var startTime = startTime
 this.startTime= startTime;
     
 }
@@ -347,7 +336,6 @@ this.setStartTimeTNT();
 
 
     public toStringAt(currentTime: number): string{
-var currentTime = currentTime
 
     var elapsed: number = this.getElapsed(currentTime)!;
 ;

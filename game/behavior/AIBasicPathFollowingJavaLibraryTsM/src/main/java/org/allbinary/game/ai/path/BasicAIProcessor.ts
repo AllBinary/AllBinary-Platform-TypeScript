@@ -79,13 +79,7 @@ export class BasicAIProcessor
 public constructor (name: string, geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo, chosenPathList: BasicArrayList, angleInfo: AngleInfo, seed: number){
 
             super();
-            //var name = name
-    //var geographicMapCellHistory = geographicMapCellHistory
-    //var geographicMapCellPathHistoryInfo = geographicMapCellPathHistoryInfo
-    //var chosenPathList = chosenPathList
-    //var angleInfo = angleInfo
-    //var seed = seed
-this.name= name;
+        this.name= name;
     
 this.geographicMapCellHistory= geographicMapCellHistory;
     
@@ -103,8 +97,6 @@ this.basicAI= new BasicDirectionAIHelper(this.getName(), angleInfo);
 
 
     setNewPath(geographicMapCellHistory: GeographicMapCellHistory, chosenPathList: BasicArrayList){
-var geographicMapCellHistory = geographicMapCellHistory
-var chosenPathList = chosenPathList
 this.setGeographicMapCellHistory(geographicMapCellHistory);
     
 this.geographicMapCellPositionBasicArrayList= chosenPathList;
@@ -131,7 +123,6 @@ this.update();
                 //@Throws(Exception.constructor)
             
     goTowardNextChosenOnPathPosition(currentGeographicMapCellPosition: GeographicMapCellPosition): number{
-var currentGeographicMapCellPosition = currentGeographicMapCellPosition
 
     var keyDirection: number =  -1;
 ;
@@ -175,8 +166,6 @@ this.geographicMapCellPathHistoryInfo!.setNextChosenOnPathGeographicMapCellPosit
                 //@Throws(Exception.constructor)
             
     public processAI(myManager: AllBinaryLayerManager, currentGeographicMapCellPosition: GeographicMapCellPosition): number{
-var myManager = myManager
-var currentGeographicMapCellPosition = currentGeographicMapCellPosition
 
     var keyDirection: number =  -1;
 ;
@@ -220,7 +209,6 @@ this.geographicMapCellPathHistoryInfo!.setPreviousOnPathGeographicMapCellPositio
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -237,7 +225,6 @@ this.name= name;
 
 
     public setGeographicMapCellPathHistoryInfo(geographicMapCellPathHistoryInfo: GeographicMapCellPathHistoryInfo){
-var geographicMapCellPathHistoryInfo = geographicMapCellPathHistoryInfo
 this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo;
     
 }
@@ -254,7 +241,6 @@ this.geographicMapCellPathHistoryInfo= geographicMapCellPathHistoryInfo;
 
 
     public setGeographicMapCellHistory(geographicMapCellHistory: GeographicMapCellHistory){
-var geographicMapCellHistory = geographicMapCellHistory
 this.geographicMapCellHistory= geographicMapCellHistory;
     
 }

@@ -71,8 +71,6 @@ export class FullScreenUtil
                 //@Throws(Exception.constructor)
             
     public initOnRun(fullScreenInterface: Canvas, commandListener: CommandListener){
-    //var fullScreenInterface = fullScreenInterface
-    //var commandListener = commandListener
 
                         if(commandListener != 
                                     null
@@ -88,12 +86,10 @@ export class FullScreenUtil
 
 
     public init(fullScreenInterface: Canvas){
-    //var fullScreenInterface = fullScreenInterface
 }
 
 
     public isScreenChange(isFullScreen: boolean): boolean{
-    //var isFullScreen = isFullScreen
 
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
 ;
@@ -125,7 +121,6 @@ export class FullScreenUtil
 
 
     public isScreenChangeCanvas(fullScreenInterface: Canvas): boolean{
-    //var fullScreenInterface = fullScreenInterface
 
 
 

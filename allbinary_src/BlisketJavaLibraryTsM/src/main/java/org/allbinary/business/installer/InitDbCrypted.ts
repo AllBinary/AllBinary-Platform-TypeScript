@@ -121,8 +121,7 @@ export class InitDbCrypted extends AbDatabaseManagement {
     private readonly SQL_FILE: string = "initWeblisket.sql";
 public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
             super(databaseConnectionInfoInterface as DbConnectionInfo);
-                    var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

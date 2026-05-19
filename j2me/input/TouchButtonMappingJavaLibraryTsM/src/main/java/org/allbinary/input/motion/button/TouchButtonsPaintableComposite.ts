@@ -97,9 +97,7 @@ export class TouchButtonsPaintableComposite extends ProcessPaintable implements 
 public constructor (inputMappingInterface: InputMappingInterface, basicColor: BasicColor){
 
             super();
-            //var inputMappingInterface = inputMappingInterface
-    //var basicColor = basicColor
-this.inputMappingInterface= inputMappingInterface;
+        this.inputMappingInterface= inputMappingInterface;
     
 CompleteMotionGestureInputEventHandler.getInstance()!.addListenerInterface(this);
     
@@ -109,7 +107,6 @@ this.touchButtonsPaintable= new TouchButtonsMappingPaintable(basicColor);
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -124,7 +121,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     private readonly IGNORE: string = "Ignoring: Until Released";
 
     public onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent){
-    //var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onCompleteMotionGestureInputEvent");

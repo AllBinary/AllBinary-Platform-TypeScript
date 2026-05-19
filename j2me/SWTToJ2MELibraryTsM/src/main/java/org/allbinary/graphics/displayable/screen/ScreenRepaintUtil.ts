@@ -51,7 +51,6 @@ export class ScreenRepaintUtil
         
 
     public static repaint(displayable: Displayable){
-var displayable = displayable
 }
 
 

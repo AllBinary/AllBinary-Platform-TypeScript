@@ -70,7 +70,6 @@ export class SubDirectory
 
 
     public static toString(files: BasicArrayList): string{
-var files = files
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -118,8 +117,6 @@ private constructor (){
 
 
     public search(fileFilter: FileFilter, file: AbFile): BasicArrayList{
-var fileFilter = fileFilter
-var file = file
 
 
 
@@ -130,7 +127,6 @@ var file = file
 
 
     public search(file: AbFile): BasicArrayList{
-var file = file
 
 
 
@@ -141,8 +137,6 @@ var file = file
 
 
     public search(searchValue: string, file: AbFile): BasicArrayList{
-var searchValue = searchValue
-var file = file
 
 
 
@@ -153,8 +147,6 @@ var file = file
 
 
     public search(level: number, file: AbFile): BasicArrayList{
-var level = level
-var file = file
 
 
 

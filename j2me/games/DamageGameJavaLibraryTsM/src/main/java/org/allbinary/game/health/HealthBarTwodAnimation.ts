@@ -52,9 +52,7 @@ export class HealthBarTwodAnimation extends HealthBarAnimation {
         
 public constructor (layerInterface: AllBinaryLayer, location: number){
             super(layerInterface, location);
-                        //var layerInterface = layerInterface
-    //var location = location
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -62,9 +60,6 @@ public constructor (layerInterface: AllBinaryLayer, location: number){
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
     var ax: number = this.allbinaryLayer!.getViewPosition()!.getX()!;
 ;

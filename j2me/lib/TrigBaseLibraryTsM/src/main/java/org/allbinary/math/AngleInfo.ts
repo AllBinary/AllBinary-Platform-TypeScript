@@ -56,7 +56,6 @@ export class AngleInfo
         
 
     public static getInstance(angleIncrement: number): AngleInfo{
-    //var angleIncrement = angleIncrement
 
 
 
@@ -74,8 +73,7 @@ export class AngleInfo
 private constructor (angleIncrementInfo: AngleIncrementInfo){
 
             super();
-            //var angleIncrementInfo = angleIncrementInfo
-this.angleIncrementInfo= angleIncrementInfo;
+        this.angleIncrementInfo= angleIncrementInfo;
     
 }
 
@@ -83,7 +81,6 @@ this.angleIncrementInfo= angleIncrementInfo;
     private readonly frameUtil: FrameUtil = FrameUtil.getInstance()!;
 
     public adjustAngle(frame: number){
-    //var frame = frame
 
     var newAngle: number = this.angleIncrementInfo!.getAngleIncrement() *frame -90;
 ;
@@ -104,7 +101,6 @@ this.setAngle(this.frameUtil!.adjustAngleToFrameAngle(newAngle));
 
 
     public setAngle(angle: number){
-    //var angle = angle
 this.angle= angle;
     
 }

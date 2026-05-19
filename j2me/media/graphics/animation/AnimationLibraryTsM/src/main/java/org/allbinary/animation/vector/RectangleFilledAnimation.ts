@@ -58,10 +58,7 @@ export class RectangleFilledAnimation extends Animation implements ColorComposit
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();
-            //var width = width
-    //var height = height
-    //var basicColor = basicColor
-this.width= width;
+        this.width= width;
     
 this.height= height;
     
@@ -75,9 +72,6 @@ this.setBasicColorP(basicColor);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 graphics.fillRect(x, y, this.width, this.height);
@@ -86,14 +80,12 @@ graphics.fillRect(x, y, this.width, this.height);
 
 
     public setWidth(width: number){
-    //var width = width
 this.width= width;
     
 }
 
 
     public setHeight(height: number){
-    //var height = height
 this.height= height;
     
 }

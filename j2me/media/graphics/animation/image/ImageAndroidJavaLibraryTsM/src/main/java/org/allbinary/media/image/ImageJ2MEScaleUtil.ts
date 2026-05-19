@@ -73,9 +73,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public scaleArray(images: Image[], width: number, height: number): Image[]{
-var images = images
-var width = width
-var height = height
 
 
 
@@ -104,9 +101,6 @@ images[index]= ImageScaleUtil.getInstance()!.createImage2(GameFeatureImageCacheF
                 //@Throws(Exception.constructor)
             
     public scale(image: Image, width: number, height: number): Image{
-var image = image
-var width = width
-var height = height
 
 
 

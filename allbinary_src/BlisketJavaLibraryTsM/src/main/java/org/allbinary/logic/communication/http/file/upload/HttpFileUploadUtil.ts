@@ -75,7 +75,6 @@ export class HttpFileUploadUtil
                 //@Throws(Exception.constructor)
             
     public static log(fileItem: FileItemStream){
-var fileItem = fileItem
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -127,7 +126,6 @@ stringBuffer!.append(" Not Calculated Yet");
 
 
     public static log(fileItem: FileItem){
-var fileItem = fileItem
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -188,7 +186,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public isValid(anyType: any = {}): boolean{
-var anyType = anyType
 
                         if(anyType != 
                                     null

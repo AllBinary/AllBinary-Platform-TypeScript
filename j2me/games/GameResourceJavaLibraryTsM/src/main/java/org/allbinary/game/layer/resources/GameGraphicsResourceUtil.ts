@@ -170,7 +170,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
                 //@Throws(Exception.constructor)
             
     public getStringForFeature(graphicsFeature: GraphicsFeature): string{
-    //var graphicsFeature = graphicsFeature
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

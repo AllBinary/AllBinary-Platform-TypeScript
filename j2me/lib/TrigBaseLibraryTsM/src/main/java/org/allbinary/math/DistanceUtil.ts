@@ -63,10 +63,6 @@ export class DistanceUtil
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
 
     public getDistance(x1: number, y1: number, x2: number, y2: number): number{
-    //var x1 = x1
-    //var y1 = y1
-    //var x2 = x2
-    //var y2 = y2
 
     var dx: number = x1 -x2;
 ;

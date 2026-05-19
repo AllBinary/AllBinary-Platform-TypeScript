@@ -49,7 +49,6 @@ export class ParamsUtil
         
 
     public static viewParams(params: Function[]): string{
-var params = params
 
                         if(params != 
                                     null

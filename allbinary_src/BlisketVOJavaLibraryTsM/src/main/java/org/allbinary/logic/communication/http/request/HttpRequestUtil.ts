@@ -68,7 +68,6 @@ private constructor (){
 
 
     public getLastSeparatorIndex(requestPath: string): number{
-var requestPath = requestPath
 
     var beginIndex: number = requestPath!.lastIndexOf(AbPathData.getInstance()!.SEPARATOR)!;
 ;
@@ -94,7 +93,6 @@ var requestPath = requestPath
                 //@Throws(Exception.constructor)
             
     public generateFileName(requestPath: string): string{
-var requestPath = requestPath
 
     var beginIndex: number = this.getLastSeparatorIndex(requestPath)!;
 ;

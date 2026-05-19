@@ -80,9 +80,7 @@ export class PaymentGatewayPageData
 public constructor (location: string, paymentMethod: string){
 
             super();
-        var location = location
-var paymentMethod = paymentMethod
-
+        
     var paymentMethodString: string = PaymentGatewayPageData.NAME +paymentMethod;
 ;
     

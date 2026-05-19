@@ -78,7 +78,6 @@ private constructor (){
 
 
     public addListener(gameLayer: AllBinaryGameLayer){
-var gameLayer = gameLayer
 
                         if(!this.list.contains(gameLayer))
                         
@@ -100,7 +99,6 @@ super.removeAllListeners();
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);

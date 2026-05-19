@@ -56,9 +56,7 @@ export class GameInputMapping
 public constructor (name: string, gameKey: GameKey){
 
             super();
-        var name = name
-var gameKey = gameKey
-this.setName(name);
+        this.setName(name);
     
 this.setGameKey(gameKey);
     
@@ -66,7 +64,6 @@ this.setGameKey(gameKey);
 
 
     setGameKey(gameKey: GameKey){
-var gameKey = gameKey
 this.gameKey= gameKey;
     
 }
@@ -83,7 +80,6 @@ this.gameKey= gameKey;
 
 
     setName(name: string){
-var name = name
 this.name= name;
     
 }

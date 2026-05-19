@@ -56,7 +56,6 @@ export class BasicFileFilterUtil
         
 
     public static getInstance(extension: string): FileFilter{
-    //var extension = extension
 
     var vector: BasicArrayList = new BasicArrayListD();
 ;

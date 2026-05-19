@@ -90,14 +90,12 @@ export class MotionRectanglesWorker extends BasicEventHandler implements ImageCo
 public constructor (motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
 
             super();
-            //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
-this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface;
+        this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface;
     
 }
 
 
     public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent){
-    //var imageComparisonResultsEvent = imageComparisonResultsEvent
 this.imageComparisonInfoVector!.add(imageComparisonResultsEvent);
     
 this.run();
@@ -106,7 +104,6 @@ this.run();
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
-    //var allBinaryEventObject = allBinaryEventObject
 this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent);
     
 }
@@ -125,7 +122,6 @@ this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResult
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-    //var running = running
 this.running= running;
     
 }

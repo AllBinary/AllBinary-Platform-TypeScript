@@ -68,8 +68,6 @@ public constructor (){
 
 
     public process(gl: GL10, aObject3d: any = {}){
-    //var gl = gl
-    //var aObject3d = aObject3d
 
 
 

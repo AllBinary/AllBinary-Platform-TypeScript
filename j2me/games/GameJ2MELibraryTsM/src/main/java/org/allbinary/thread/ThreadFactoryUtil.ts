@@ -90,7 +90,6 @@ export class ThreadFactoryUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public getInstanceGameCanvasRunnable(runnable: GameCanvasRunnableInterface): Thread{
-    //var runnable = runnable
 
 
 
@@ -101,7 +100,6 @@ export class ThreadFactoryUtil
 
 
     public getInstanceForRunnable(runnable: ABRunnable): Thread{
-    //var runnable = runnable
 
 
 
@@ -112,8 +110,6 @@ export class ThreadFactoryUtil
 
 
     getInstanceType(runnable: Runnable, type: number): Thread{
-    //var runnable = runnable
-    //var type = type
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -174,7 +170,6 @@ this.logUtil!.putF(thread.toString(), this, commonStrings!.CONSTRUCTOR);
 
 
     public start(thread: Thread){
-    //var thread = thread
 thread.start();
     
 }

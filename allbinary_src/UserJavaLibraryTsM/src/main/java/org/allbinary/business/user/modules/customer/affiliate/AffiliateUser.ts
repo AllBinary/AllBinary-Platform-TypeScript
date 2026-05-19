@@ -67,8 +67,7 @@ this.affiliateSales= new AffiliateSales();
 
 public constructor (userHashMap: HashMap<any, any>){
             super(userHashMap);
-                    var userHashMap = userHashMap
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,7 +77,6 @@ this.affiliateSales= new AffiliateSales();
 
 
     public validateSession(weblisketSession: WeblisketSessionInterface){
-var weblisketSession = weblisketSession
 super.validateSession(weblisketSession);
     
 this.updateSession(weblisketSession);
@@ -87,7 +85,6 @@ this.updateSession(weblisketSession);
 
 
     public updateSession(weblisketSession: WeblisketSessionInterface){
-var weblisketSession = weblisketSession
 weblisketSession!.setStoreName(this.getPermissions());
     
 }

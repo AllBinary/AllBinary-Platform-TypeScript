@@ -54,10 +54,7 @@ export class MotionRectanglesResultsEvent extends AllBinaryEventObject {
     private motionRectangles: MotionRectangles
 public constructor (anyType: any = {}, frame: Long, motionRectangles: MotionRectangles){
             super(anyType);
-                    var anyType = anyType
-var frame = frame
-var motionRectangles = motionRectangles
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +76,6 @@ this.setMotionRectangles(motionRectangles);
 
 
     public setMotionRectangles(motionRectangles: MotionRectangles){
-var motionRectangles = motionRectangles
 this.motionRectangles= motionRectangles;
     
 }

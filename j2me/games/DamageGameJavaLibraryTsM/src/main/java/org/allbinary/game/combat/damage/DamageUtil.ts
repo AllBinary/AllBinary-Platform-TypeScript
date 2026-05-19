@@ -81,8 +81,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public process(damageableInterface: DamageableInterface, damageableInterface2: DamageableInterface){
-var damageableInterface = damageableInterface
-var damageableInterface2 = damageableInterface2
 damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
     
 }
@@ -91,8 +89,6 @@ damageableInterface!.damage(damageableInterface2!.getDamage(0), 0);
                 //@Throws(Exception.constructor)
             
     public debugDamage(collidableInterfaceCompositeInterface1: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
-var collidableInterfaceCompositeInterface1 = collidableInterfaceCompositeInterface1
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = collidableInterfaceCompositeInterface as CollidableDestroyableDamageableLayer;
 ;

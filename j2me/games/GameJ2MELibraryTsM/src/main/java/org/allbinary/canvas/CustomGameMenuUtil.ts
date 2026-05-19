@@ -55,7 +55,6 @@ export class CustomGameMenuUtil
         
 
     public static add(canvas: MyCanvas){
-    //var canvas = canvas
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
 ;

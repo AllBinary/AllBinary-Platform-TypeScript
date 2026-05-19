@@ -71,8 +71,7 @@ export class AdvertisementAreaView extends HttpStoreComponentView implements Dom
     private advertisementAreaName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -84,7 +83,6 @@ this.advertisementAreaName= this.getPropertiesHashMap()!.get(AdvertisementAreaDa
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

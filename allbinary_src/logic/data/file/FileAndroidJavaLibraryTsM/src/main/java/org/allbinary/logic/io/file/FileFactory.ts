@@ -73,8 +73,7 @@ export class FileFactory
 private constructor (context: Context){
 
             super();
-        var context = context
-this.context= context;
+        this.context= context;
     
 }
 
@@ -82,7 +81,6 @@ this.context= context;
                 //@Throws(Exception.constructor)
             
     public isFile(path: string): boolean{
-var path = path
 
         try {
             this.context.openFileInput(path);
@@ -121,7 +119,6 @@ var path = path
                 //@Throws(Exception.constructor)
             
     public getFile(filePath: string): AbFile{
-var filePath = filePath
 
 
 
@@ -134,8 +131,6 @@ var filePath = filePath
                 //@Throws(Exception.constructor)
             
     public getInstance(file: AbFile, childFilePath: string): AbFile{
-var file = file
-var childFilePath = childFilePath
 
 
 

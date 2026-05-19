@@ -67,7 +67,6 @@ export class CategoryUtil
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getPathLevel(categoryPath: AbPath): number{
-var categoryPath = categoryPath
 
     var count: number = StringUtils.countMatches(categoryPath!.toString(), AbPathData.getInstance()!.SEPARATOR)!;
 ;
@@ -83,7 +82,6 @@ var categoryPath = categoryPath
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getNameFromNode(node: Node): string{
-var node = node
 
     var attributes: NamedNodeMap = node.getAttributes()!;
 ;

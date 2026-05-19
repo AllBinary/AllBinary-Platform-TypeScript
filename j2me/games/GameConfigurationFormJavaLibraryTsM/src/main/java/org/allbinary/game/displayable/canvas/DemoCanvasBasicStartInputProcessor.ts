@@ -64,9 +64,7 @@ export class DemoCanvasBasicStartInputProcessor extends BasicMenuInputProcessor 
         
 public constructor (gameKeyEventList: BasicArrayList, gameCanvas: RunnableCanvas){
             super(gameKeyEventList,  -1, gameCanvas);
-                    var gameKeyEventList = gameKeyEventList
-var gameCanvas = gameCanvas
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

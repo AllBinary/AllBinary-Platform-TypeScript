@@ -81,7 +81,6 @@ export class PathFindingInfoFactory extends BasePathFindingInfoFactory {
     private static MAX: number = 32768;
 
     public static initMax(max: number){
-var max = max
 PathFindingInfoFactory.MAX= max;
     
 }
@@ -103,8 +102,6 @@ this.pathFinder= new PathFinder();
                 //@Throws(Exception.constructor)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, mapArray: number[][]): PathFindingInfo{
-    //var geographicMapInterface = geographicMapInterface
-    //var mapArray = mapArray
 
     var pathFindingInfo: PathFindingInfo = new PathFindingInfo(this.pathFindingInfo!.getPathFindingNodeCostInfoFactoryInterface(), new BasicArrayListS(1), new BasicArrayListS(1));
 ;
@@ -129,9 +126,6 @@ pathFindingInfo!.setPathFinder(this.pathFinder);
                 //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var mapArray = mapArray
 super.init(geographicMapInterface, pathFindingInfo, mapArray);
     
 this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
@@ -142,19 +136,12 @@ this.buildPathFindingNodes(geographicMapInterface, pathFindingInfo, mapArray);
                 //@Throws(Exception.constructor)
             
     buildPathFindingNodesForCellPosition(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][], cellPosition: GeographicMapCellPosition){
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var mapArray = mapArray
-    //var cellPosition = cellPosition
 }
 
 
                 //@Throws(Exception.constructor)
             
     buildPathFindingNodes(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var mapArray = mapArray
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = geographicMapInterface!.getGeographicMapCellPositionFactory()!;
 ;

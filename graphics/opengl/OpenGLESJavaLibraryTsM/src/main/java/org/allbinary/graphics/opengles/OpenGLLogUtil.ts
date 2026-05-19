@@ -59,7 +59,6 @@ export class OpenGLLogUtil
     private readonly MAX_TEXTURE: string = " Max Texture Size: ";
 
     public logError(gl: GL10){
-    //var gl = gl
 
     var error: number = gl.glGetError()!;
 ;
@@ -119,8 +118,6 @@ stringBuffer!.appendint(maxTextureSize[0]!);
     private readonly IMAGE: string = " Image: ";
 
     public logError(gl: GL10, image: Image){
-    //var gl = gl
-    //var image = image
 
     var error: number = gl.glGetError()!;
 ;

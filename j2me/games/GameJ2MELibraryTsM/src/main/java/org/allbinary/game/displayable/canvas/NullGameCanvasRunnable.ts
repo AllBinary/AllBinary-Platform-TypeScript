@@ -118,7 +118,6 @@ export class NullGameCanvasRunnable
                 //@Throws(Exception.constructor)
             
     public setHighScoreSubmitted(highScoreSubmitted: boolean){
-var highScoreSubmitted = highScoreSubmitted
 }
 
 
@@ -139,7 +138,6 @@ var highScoreSubmitted = highScoreSubmitted
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 }
 
 
@@ -170,7 +168,6 @@ var cmdListener = cmdListener
                 //@Throws(Exception.constructor)
             
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
-var hashtable = hashtable
 }
 
 
@@ -187,7 +184,6 @@ var hashtable = hashtable
                 //@Throws(Exception.constructor)
             
     public setGameState(gameState: GameState){
-var gameState = gameState
 }
 
 
@@ -202,17 +198,14 @@ var gameState = gameState
 
 
     public itemStateChanged(item: Item){
-var item = item
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 
@@ -227,14 +220,12 @@ var graphics = graphics
 
 
     public setRunning(isRunning: boolean){
-var isRunning = isRunning
 }
 
 
                 //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
-var thread = thread
 }
 
 

@@ -88,7 +88,6 @@ this.list.clear();
 
 
     public add(layerInterfaceFactoryInterface: AllBinaryLayerFactoryInterface){
-var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 this.list.add(layerInterfaceFactoryInterface);
     
 }

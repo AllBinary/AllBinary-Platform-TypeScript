@@ -64,8 +64,7 @@ export class AbSqlTable extends AbSqlBasic {
     private readonly DROPPED_SUCCESS: string = " Dropped Successfully";
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
-                    var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -73,7 +72,6 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
 
     public setTableName(tableName: string){
-var tableName = tableName
 this.tableName= tableName;
     
 }
@@ -91,7 +89,6 @@ this.tableName= tableName;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public createTable(data: string): string{
-var data = data
 
         try {
             this.executeSQLStatement(data);

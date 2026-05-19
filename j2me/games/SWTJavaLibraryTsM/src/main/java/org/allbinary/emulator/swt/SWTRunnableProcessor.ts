@@ -65,7 +65,6 @@ private constructor (){
 
 
     public process(display: Display){
-    //var display = display
 this.runnable.run();
     
 }

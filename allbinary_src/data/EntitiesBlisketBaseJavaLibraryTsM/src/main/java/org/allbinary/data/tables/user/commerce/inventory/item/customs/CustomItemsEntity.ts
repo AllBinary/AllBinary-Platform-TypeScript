@@ -82,7 +82,6 @@ this.setTableName(this.tableName);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -115,7 +114,6 @@ var values = values
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(BasicItemData.ID, value);
@@ -174,7 +172,6 @@ stringBuffer!.append(this.sqlStrings!.CREATE_TABLE)!.append(tableName)!.append(t
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(BasicItemData.ID, updatedValues!.get(BasicItemData.ID) as string, updatedValues);
     
 }

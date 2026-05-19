@@ -78,9 +78,7 @@ export class CreateGameRunnable
 public constructor (demoGameMidlet: DemoGameMidlet, hashtable: Hashtable<any, any>){
 
             super();
-        var demoGameMidlet = demoGameMidlet
-var hashtable = hashtable
-this.demoGameMidlet= demoGameMidlet;
+        this.demoGameMidlet= demoGameMidlet;
     
 this.hashtable= hashtable;
     

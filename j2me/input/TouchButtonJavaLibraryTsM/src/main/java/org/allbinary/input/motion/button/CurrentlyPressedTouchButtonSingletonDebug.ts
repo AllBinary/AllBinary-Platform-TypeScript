@@ -85,8 +85,6 @@ export class CurrentlyPressedTouchButtonSingletonDebug extends CurrentlyPressedT
     private readonly RELEASED_AND_NOT_FIRED: string = "rel & not fired";
 
     appendTouchButtonInput(append: string, touchButtonInput: TouchButtonInput){
-var append = append
-var touchButtonInput = touchButtonInput
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -106,7 +104,6 @@ this.string= new StringMaker().
 
 
     append(append: string){
-var append = append
 this.append= new StringMaker().
                             append(this.append)!.append(append)!.toString();
     
@@ -117,8 +114,6 @@ this.string= new StringMaker().
 
 
     public clearLog(x: number, y: number){
-var x = x
-var y = y
 this.append= new StringMaker().
                             append(GPoint.toStringStatic(x, y, 0))!.append(CommonSeps.getInstance()!.SPACE)!.toString();
     
@@ -135,42 +130,36 @@ this.append(this.RELEASED_AND_NOT_FIRED);
 
 
     public releaseAndFired(touchButtonInput: TouchButtonInput){
-var touchButtonInput = touchButtonInput
 this.appendTouchButtonInput(this.RELEASED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public releaseAndFired2(touchButtonInput: TouchButtonInput){
-var touchButtonInput = touchButtonInput
 this.appendTouchButtonInput(this.RELEASED_AND_FIRED_2, touchButtonInput);
     
 }
 
 
     public releaseAndFiredAssociated(touchButtonInput: TouchButtonInput){
-var touchButtonInput = touchButtonInput
 this.appendTouchButtonInput(this.ASSOCIATED_RELEASED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public pressedAndFired(touchButtonInput: TouchButtonInput){
-var touchButtonInput = touchButtonInput
 this.appendTouchButtonInput(this.PRESSED_AND_FIRED, touchButtonInput);
     
 }
 
 
     public pressedAndNotFired(touchButtonInput: TouchButtonInput){
-var touchButtonInput = touchButtonInput
 this.appendTouchButtonInput(this.PRESSED_AND_NOT_FIRED, touchButtonInput);
     
 }
 
 
     public removeAt(index: number): TouchButtonInput{
-var index = index
 
     var touchButtonInput: TouchButtonInput = super.removeAt(index)!;
 ;
@@ -190,7 +179,6 @@ this.string= new StringMaker().
 
 
     public remove(touchButtonInput: TouchButtonInput): boolean{
-var touchButtonInput = touchButtonInput
 
     var isRemoved: boolean = super.remove(touchButtonInput)!;
 ;
@@ -210,7 +198,6 @@ this.string= new StringMaker().
 
 
     public add(touchButtonInput: TouchButtonInput){
-var touchButtonInput = touchButtonInput
 super.add(touchButtonInput);
     
 this.listString= this.list.toString();

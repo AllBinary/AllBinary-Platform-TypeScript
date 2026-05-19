@@ -60,9 +60,6 @@ export class PaintableToImageUtil
                 //@Throws(Exception.constructor)
             
     public static getImage(paintableInterface: PaintableInterface, width: number, height: number): Image{
-var paintableInterface = paintableInterface
-var width = width
-var height = height
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(PaintableToImageUtil.instance.constructor.name.toString()!, width, height)!;
 ;

@@ -63,8 +63,7 @@ export class TopViewGameLayerBehavior extends GameLayerBehavior {
 public constructor (maxGravityActionIndex: number){
 
             super();
-            //var maxGravityActionIndex = maxGravityActionIndex
-this.maxGravityActionIndex= maxGravityActionIndex;
+        this.maxGravityActionIndex= maxGravityActionIndex;
     
 }
 
@@ -85,7 +84,6 @@ this.isFallingWithoutJumpAttempt= true;
 
 
     public land(velocityProperties: VelocityProperties){
-    //var velocityProperties = velocityProperties
 velocityProperties!.getVelocityYBasicDecimalP()!.setint(0);
     
 this.landReset();
@@ -106,10 +104,6 @@ this.isJumpOver= false;
 
 
     public up(velocityProperties: VelocityProperties, acceleration: BasicAccelerationProperties, jumpBehavior: InitialJumpBehavior, accelerationMultiplier: number){
-    //var velocityProperties = velocityProperties
-    //var acceleration = acceleration
-    //var jumpBehavior = jumpBehavior
-    //var accelerationMultiplier = accelerationMultiplier
 
                         if(!this.isJumpOver)
                         
@@ -157,7 +151,6 @@ this.isJumpAction= false;
 
 
     public inputFrames(velocityProperties: VelocityProperties){
-    //var velocityProperties = velocityProperties
 
                         if(this.gravityActionIndex > 0 && velocityProperties!.getVelocityYBasicDecimalP()!.getUnscaled() > 0)
                         

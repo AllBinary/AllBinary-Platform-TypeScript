@@ -65,11 +65,7 @@ export class GameScrollMenuPaintable extends BasicGameDemoPaintable implements C
         
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable, basicColor: BasicColor){
             super(mainDemoStatePaintable, ownershipPaintable, helpPaintableInterface);
-                    var mainDemoStatePaintable = mainDemoStatePaintable
-var ownershipPaintable = ownershipPaintable
-var helpPaintableInterface = helpPaintableInterface
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,19 +77,16 @@ ColorChangeEventHandler.getInstance()!.addListenerInterface(this);
 
 
     public setState(state: number){
-var state = state
 this.setCurrentStatePaintable(this.getMainDemoStatePaintable());
     
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 }
 
 
     setColor(basicColor: BasicColor){
-var basicColor = basicColor
 
     var mainGameDemoStatePaintable: MainGameDemoStatePaintable = this.getMainDemoStatePaintable() as MainGameDemoStatePaintable;
 ;

@@ -78,7 +78,6 @@ private constructor (){
 
 
     public getAsTextureSize(textureSize: number): number{
-var textureSize = textureSize
 
 
 
@@ -88,7 +87,6 @@ var textureSize = textureSize
 
 
     public getCellSize(cellSize: number): number{
-var cellSize = cellSize
 
 
 
@@ -98,10 +96,6 @@ var cellSize = cellSize
 
 
     public getFontBitmap(filename: string, fontSize: number, cellSize: number, basicColor: BasicColor): Image{
-    //var filename = filename
-    //var fontSize = fontSize
-    //var cellSize = cellSize
-    //var basicColor = basicColor
 
 
 
@@ -115,10 +109,6 @@ var cellSize = cellSize
 
 
     public getFontBitmapGL(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
-    //var gl = gl
-    //var filename = filename
-    //var cellSize = cellSize
-    //var basicColor = basicColor
 
 
 
@@ -128,8 +118,6 @@ var cellSize = cellSize
 
 
     public getFontWidths(filename: string, fontSize: number): number[]{
-    //var filename = filename
-    //var fontSize = fontSize
 
 
 

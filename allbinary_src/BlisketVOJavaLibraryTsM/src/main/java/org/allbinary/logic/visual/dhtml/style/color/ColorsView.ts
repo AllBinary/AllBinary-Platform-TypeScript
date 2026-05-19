@@ -80,10 +80,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public getColorNode(document: Document, redIndex: number, greenIndex: number, blueIndex: number): Node{
-var document = document
-var redIndex = redIndex
-var greenIndex = greenIndex
-var blueIndex = blueIndex
 
     var hexColorStringBuffer: StringMaker = new StringMaker();
 ;
@@ -137,7 +133,6 @@ hexColorStringBuffer!.append(blueIndex, HEXRADIX.toString());
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, ColorsData.getInstance()!.NAME, "RGB Colors In Hex")!;
 ;

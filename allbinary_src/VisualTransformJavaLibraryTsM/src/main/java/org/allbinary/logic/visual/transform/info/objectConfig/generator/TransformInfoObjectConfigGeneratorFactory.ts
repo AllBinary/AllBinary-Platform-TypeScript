@@ -82,7 +82,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigGenerator{
-var transformInfoInterface = transformInfoInterface
 
     var type: string = transformInfoInterface!.getObjectConfigInterface()!.getOutputTypeName() as string;
 ;
@@ -103,7 +102,7 @@ this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.
 
                         if(type == 
                                     null
-                                 || type.localeCompare(InputOutputTypeData.getInstance()!.RESPONSE) == 0 || transformInfoInterface!.isChild())
+                                 || type.compareTo(InputOutputTypeData.getInstance()!.RESPONSE) == 0 || transformInfoInterface!.isChild())
                         
                                     {
                                     
@@ -116,7 +115,7 @@ this.logUtil!.putF("Generating Instance for type: " +type, this, commonStrings!.
                                     }
                                 
                              else 
-                        if(type.localeCompare(InputOutputTypeData.getInstance()!.FILE) == 0)
+                        if(type.compareTo(InputOutputTypeData.getInstance()!.FILE) == 0)
                         
                                     {
                                     

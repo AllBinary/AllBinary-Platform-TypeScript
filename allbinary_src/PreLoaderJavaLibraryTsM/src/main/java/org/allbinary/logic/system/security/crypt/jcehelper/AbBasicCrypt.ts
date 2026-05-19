@@ -78,9 +78,7 @@ export class AbBasicCrypt
 public constructor (algorithm: string, key: string){
 
             super();
-        var algorithm = algorithm
-var key = key
-
+        
         try {
             this.algorithm= algorithm;
     
@@ -140,7 +138,6 @@ PreLogUtil.putOE("init Failed", this, commonStrings!.INIT, e);
 
 
     public encrypt(array: number[]): number[]{
-var array = array
 
         try {
             this.cipher.init(Cipher.ENCRYPT_MODE, secretKey);
@@ -207,7 +204,6 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 
 
     public decrypt(array: number[]): number[]{
-var array = array
 
         try {
             this.cipher.init(Cipher.DECRYPT_MODE, secretKey);

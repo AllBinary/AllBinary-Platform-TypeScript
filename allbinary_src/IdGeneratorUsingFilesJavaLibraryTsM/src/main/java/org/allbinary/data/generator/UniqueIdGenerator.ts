@@ -85,7 +85,6 @@ public constructor (){
 
 
     public initialize(value: number){
-var value = value
 
         try {
             this.newFile!.createNewFile();
@@ -122,8 +121,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "initialize", e);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFile(filePathName: string, name: string){
-var filePathName = filePathName
-var name = name
 this.newFile= new AbFile(filePathName);
     
 }

@@ -76,15 +76,7 @@ export class CustomTextBox extends GameCommandCanvas {
     private readonly textFieldItem: ABTextFieldItem
 public constructor (cmdListener: CommandListener, label: string, text: string, maxSize: number, constraints: number, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, label, backgroundBasicColor, foregroundBasicColor);
-                        //var cmdListener = cmdListener
-    //var label = label
-    //var text = text
-    //var maxSize = maxSize
-    //var constraints = constraints
-    //var font = font
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -112,9 +104,6 @@ this.setTitle(label);
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
 
     public onEvent(keyCode: number, deviceId: number, repeated: boolean){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
-    //var repeated = repeated
 this.logUtil!.putF(new StringMaker().
                             append(this.commonStrings!.START)!.appendint(keyCode)!.toString(), this, "onEvent");
     
@@ -124,29 +113,24 @@ this.keyPressedByDevice(keyCode, deviceId);
 
 
     public keyPressed(keyCode: number){
-    //var keyCode = keyCode
 this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
-    //var keyCode = keyCode
 this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
-    //var keyCode = keyCode
 this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 
         try {
             this.logUtil!.putF(new StringMaker().
@@ -187,13 +171,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.KE
 
 
     public keyReleasedByDevice(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 }
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 graphics.setColor(this.backgroundColor);
     
 graphics.fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayInfoSingleton!.getLastHeight());
@@ -217,9 +198,6 @@ super.paint(graphics);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.textFieldItem!.paintXY(graphics, x, y);
     
 }

@@ -91,8 +91,7 @@ export class MouseActionScriptInput extends BasicProfileActionScriptInput implem
     private mouseActionScriptInputJPanel: MouseActionScriptInputJPanel
 public constructor (node: Node){
             super(NAME, node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -127,7 +126,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.localeCompare(MouseActionScriptInputData.BUTTONS) == 0)
+                        if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.BUTTONS) == 0)
                         
                                     {
                                     
@@ -140,7 +139,7 @@ this.setButtonClicks(Integer.valueOf(buttons)!.intValue());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(MouseActionScriptInputData.MOVE) == 0)
+                        if(childNode!.getNodeName()!.compareTo(MouseActionScriptInputData.MOVE) == 0)
                         
                                     {
                                     
@@ -221,7 +220,6 @@ this.mouseActionScriptInputJPanel= new MouseActionScriptInputJPanel(this);
 
 
     public setPoint(point: Point){
-var point = point
 this.point= point;
     
 }
@@ -248,7 +246,6 @@ this.point= point;
 
 
     public setButtonClicks(buttons: number){
-var buttons = buttons
 this.buttons= buttons;
     
 }
@@ -281,7 +278,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = super.toXmlNode(document)!;
 ;
@@ -314,7 +310,6 @@ mouseNode!.appendChild(ModDomHelper.createNodeWithValueNodes(document, MouseActi
                 //@Throws(Exception.constructor)
             
     public process(frame: Long){
-var frame = frame
 MouseInputAutomationProcessor.process(this);
     
 }

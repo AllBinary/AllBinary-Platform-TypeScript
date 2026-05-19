@@ -92,8 +92,7 @@ export class KeyboardActionScriptInputJPanel extends javax.swing.JPanel {
 public constructor (keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
 
             super();
-        var keyActionScriptInputInterface = keyActionScriptInputInterface
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.initComponents();
     
@@ -264,7 +263,6 @@ this.keyActionScriptInputInterface!.log();
 
 
     public setKeyActionJDialog(keyActionJDialog: javax.swing.JDialog){
-var keyActionJDialog = keyActionJDialog
 this.keyActionJDialog= keyActionJDialog;
     
 }
@@ -327,7 +325,6 @@ this.keyNameJComboBox!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 keyNameJComboBoxActionPerformed(evt);
     
 }
@@ -359,7 +356,6 @@ this.pressJRadioButton!.addActionListener(new class extends java.awt.event.Actio
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 pressJRadioButtonActionPerformed(evt);
     
 }
@@ -377,7 +373,6 @@ this.releaseJRadioButton!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 releaseJRadioButtonActionPerformed(evt);
     
 }
@@ -397,7 +392,6 @@ this.normalJRadioButton!.addActionListener(new class extends java.awt.event.Acti
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 normalJRadioButtonActionPerformed(evt);
     
 }
@@ -417,7 +411,6 @@ this.simultaneousJRadioButton!.addActionListener(new class extends java.awt.even
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 simultaneousJRadioButtonActionPerformed(evt);
     
 }
@@ -435,7 +428,6 @@ this.sequenceJRadioButton!.addActionListener(new class extends java.awt.event.Ac
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 sequenceJRadioButtonActionPerformed(evt);
     
 }
@@ -451,7 +443,6 @@ this.okJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okJButtonActionPerformed(evt);
     
 }
@@ -465,7 +456,6 @@ this.keyIntegerJComboBox!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 keyIntegerJComboBoxActionPerformed(evt);
     
 }
@@ -491,7 +481,6 @@ this.keyActionJButton!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 keyActionJButtonActionPerformed(evt);
     
 }
@@ -515,7 +504,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     prependText(integer: Integer){
-var integer = integer
 
                         if(integer != 
                                     null
@@ -535,7 +523,6 @@ this.textJTextField!.setText(newKey +this.textJTextField!.getText());
 
 
     keyIntegerJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.keyIntegerJComboBox!.getSelectedIndex();
     
 this.keyNameJComboBox!.setSelectedIndex(this.keyIntegerJComboBox!.getSelectedIndex());
@@ -544,7 +531,6 @@ this.keyNameJComboBox!.setSelectedIndex(this.keyIntegerJComboBox!.getSelectedInd
 
 
     sequenceJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
                         if(this.sequenceJRadioButton!.isSelected())
                         
@@ -560,7 +546,6 @@ this.simultaneousJRadioButton!.setSelected(false);
 
 
     simultaneousJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
                         if(this.simultaneousJRadioButton!.isSelected())
                         
@@ -576,7 +561,6 @@ this.sequenceJRadioButton!.setSelected(false);
 
 
     keyNameJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
     var integer: Integer = this.getSelectedKey()!;
 ;
@@ -589,7 +573,6 @@ this.keyIntegerJComboBox!.setSelectedIndex(this.keyNameJComboBox!.getSelectedInd
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.update();
@@ -608,14 +591,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okButtonActionPerformed"
 
 
     keyActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.getKeyActionJDialog()!.setVisible(true);
     
 }
 
 
     normalJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
                         if(this.normalJRadioButton!.isSelected())
                         
@@ -633,7 +614,6 @@ this.releaseJRadioButton!.setSelected(false);
 
 
     releaseJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
                         if(this.releaseJRadioButton!.isSelected())
                         
@@ -653,7 +633,6 @@ this.normalJRadioButton!.setSelected(false);
 
 
     pressJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
                         if(this.pressJRadioButton!.isSelected())
                         

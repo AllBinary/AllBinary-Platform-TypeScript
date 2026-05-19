@@ -59,7 +59,6 @@ export class StaticTileLayerIntoPositionViewPosition extends ViewPosition {
     public static layer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 
     public static setTiledLayer(tiledLayer: AllBinaryTiledLayer){
-var tiledLayer = tiledLayer
 StaticTileLayerIntoPositionViewPosition.tiledLayer= tiledLayer;
     
 }

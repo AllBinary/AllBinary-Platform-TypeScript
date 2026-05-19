@@ -71,12 +71,10 @@ public constructor (){
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public visit(lifeInterface: Life){
-var lifeInterface = lifeInterface
 lifeInterface!.add(1);
     
 }

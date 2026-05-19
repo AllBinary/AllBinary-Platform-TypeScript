@@ -52,14 +52,12 @@ export class PaintableComposite extends Paintable {
 public constructor (paintableArray: PaintableInterface[]){
 
             super();
-            //var paintableArray = paintableArray
-this.paintableArray= paintableArray;
+        this.paintableArray= paintableArray;
     
 }
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 
 
 
@@ -76,7 +74,6 @@ this.paintableArray[index]!.paint(graphics);
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 
 
 

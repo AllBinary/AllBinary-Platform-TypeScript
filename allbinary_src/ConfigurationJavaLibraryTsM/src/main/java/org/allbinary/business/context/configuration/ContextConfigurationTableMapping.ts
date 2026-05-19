@@ -60,8 +60,7 @@ export class ContextConfigurationTableMapping
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
-        var contextConfigurationInterface = contextConfigurationInterface
-this.contextConfigurationInterface= contextConfigurationInterface;
+        this.contextConfigurationInterface= contextConfigurationInterface;
     
 }
 

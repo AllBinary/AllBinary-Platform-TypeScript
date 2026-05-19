@@ -56,7 +56,6 @@ export class InputAutomationConfigurationUtil
                 //@Throws(Exception.constructor)
             
     public static getChangeEvent(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface): InputAutomationConfigurationModuleChangeEvent{
-var inputAutomationModuleInterface = inputAutomationModuleInterface
 
     var inputAutomationModuleConfiguration: InputAutomationModuleConfiguration = new InputAutomationModuleConfiguration(inputAutomationModuleInterface);
 ;

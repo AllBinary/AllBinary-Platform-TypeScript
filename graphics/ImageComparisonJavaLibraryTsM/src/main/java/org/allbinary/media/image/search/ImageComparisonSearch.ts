@@ -84,10 +84,7 @@ export class ImageComparisonSearch
 public constructor (bufferedImage: BufferedImage, bufferedImage2: BufferedImage, tolerance: number){
 
             super();
-        var bufferedImage = bufferedImage
-var bufferedImage2 = bufferedImage2
-var tolerance = tolerance
-this.nonMatchingPixelVector= new Vector();
+        this.nonMatchingPixelVector= new Vector();
     
 this.setBufferedImages(new Array(2));
     
@@ -187,7 +184,6 @@ this.logUtil!.putF("2: " +imageUtil!.toString(bufferedImage2), this, this.common
 
 
     public add(pixel: PixelDelta){
-var pixel = pixel
 this.nonMatchingPixelVector!.add(pixel);
     
 }
@@ -224,7 +220,6 @@ this.nonMatchingPixelVector!.add(pixel);
 
 
     setBufferedImages(bufferedImages: BufferedImage[]){
-var bufferedImages = bufferedImages
 this.bufferedImages= bufferedImages;
     
 }
@@ -241,7 +236,6 @@ this.bufferedImages= bufferedImages;
 
 
     public setTolerance(tolerance: number){
-var tolerance = tolerance
 this.tolerance= tolerance;
     
 }

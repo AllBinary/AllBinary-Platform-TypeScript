@@ -62,16 +62,10 @@ export class OpenGLESImageTranslate
 
 
     public translate(gl: GL10, openGLESImage: OpenGLESImage, x: number, y: number){
-    //var gl = gl
-    //var openGLESImage = openGLESImage
-    //var x = x
-    //var y = y
 }
 
 
     public translate2(gl: GL10, openGLESImage: OpenGLESImage){
-    //var gl = gl
-    //var openGLESImage = openGLESImage
 }
 
 

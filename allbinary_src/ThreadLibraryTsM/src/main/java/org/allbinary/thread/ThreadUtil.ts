@@ -69,7 +69,6 @@ export class ThreadUtil
     public readonly JOIN: string = "join";
 
     public isRunning(thread: Thread): boolean{
-var thread = thread
 
                         if(thread != 
                                     null
@@ -101,7 +100,6 @@ var thread = thread
                 //@Throws(Exception.constructor)
             
     public join(thread: Thread){
-var thread = thread
 
                         if(ThreadUtil.getInstance()!.isRunning(thread))
                         

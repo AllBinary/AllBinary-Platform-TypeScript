@@ -103,9 +103,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventHandler{
-    //var abeClientInformation = abeClientInformation
-var userEmailEventNameData = userEmailEventNameData
-var userInterface = userInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         

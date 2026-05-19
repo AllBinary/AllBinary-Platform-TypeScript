@@ -92,8 +92,7 @@ export class AbDatabaseManagement extends AbSqlBean {
     readonly ADD_TABLES_RESULTS_LABEL: string = "Add Table Results: ";
 public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
             super(databaseConnectionInfoInterface as DbConnectionInfo);
-                    var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -101,8 +100,7 @@ public constructor (databaseConnectionInfoInterface: DatabaseConnectionInfoInter
 
 public constructor (connectionInfo: DbConnectionInfo){
             super(connectionInfo);
-                    var connectionInfo = connectionInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -142,10 +140,6 @@ this.logUtil!.put(this.FAILED, this, GET_HOST_NAME, e);
                 //@Throws(Exception.constructor)
             
     addDbUser(hostName: string, db: string, userName: string, password: string): boolean{
-var hostName = hostName
-var db = db
-var userName = userName
-var password = password
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -188,9 +182,6 @@ super.executeSQLStatement(sqlStatement);
 
 
     addDbUser(db: string, userName: string, password: string): boolean{
-var db = db
-var userName = userName
-var password = password
 
         try {
             this.addDbUser(this.AT_LOCALHOST, db, userName, password);
@@ -234,7 +225,6 @@ this.logUtil!.put(this.UNABLE_TO_CREATE_USER +userName, this, this.METHOD_ADD_US
 
 
     addDb(db: string): Boolean{
-var db = db
 
         try {
             

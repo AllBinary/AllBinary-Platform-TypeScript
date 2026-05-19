@@ -83,8 +83,7 @@ export class AbeHttpRequestInfo
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-
+        
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
     
@@ -105,8 +104,7 @@ this.requestedFilePath= stringUtil!.getNonNull(hashMap!.get(this.abeHttpRequestI
 public constructor (httpServletRequest: HttpServletRequest){
 
             super();
-        var httpServletRequest = httpServletRequest
-
+        
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
     

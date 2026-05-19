@@ -67,10 +67,7 @@ export class SequenceAI extends ArrayAI {
     private index: number= 0
 public constructor (artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(artificialIntelligenceInterfaceArray, ownerLayerInterface, gameInput);
-                    var artificialIntelligenceInterfaceArray = artificialIntelligenceInterfaceArray
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,7 +77,6 @@ var gameInput = gameInput
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 this.getArtificialIntelligenceInterface()[this.index]!.processAI(allBinaryLayerManager);
     
 }
@@ -120,7 +116,6 @@ artificialIntelligenceTransitionInterface!.transition();
 
 
     public setIndex(index: number){
-var index = index
 this.index= index;
     
 }

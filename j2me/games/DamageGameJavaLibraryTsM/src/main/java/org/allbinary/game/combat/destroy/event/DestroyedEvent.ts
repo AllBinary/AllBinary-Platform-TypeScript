@@ -62,8 +62,7 @@ export class DestroyedEvent extends AllBinaryEventObject {
     private allBinaryLayerInterface: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 public constructor (combatGameCanvas: AllBinaryGameCanvas){
             super(DestroyedEventHandler.getInstance());
-                    var combatGameCanvas = combatGameCanvas
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -93,14 +92,12 @@ this.setAllBinaryGameCanvas(combatGameCanvas);
 
 
     setAllBinaryGameCanvas(allBinaryGameCanvas: AllBinaryGameCanvas){
-var allBinaryGameCanvas = allBinaryGameCanvas
 this.allBinaryGameCanvas= allBinaryGameCanvas;
     
 }
 
 
     public setLayerInterfaceForCircularStaticPool(allBinaryLayerInterface: AllBinaryLayer){
-var allBinaryLayerInterface = allBinaryLayerInterface
 this.allBinaryLayerInterface= allBinaryLayerInterface;
     
 }

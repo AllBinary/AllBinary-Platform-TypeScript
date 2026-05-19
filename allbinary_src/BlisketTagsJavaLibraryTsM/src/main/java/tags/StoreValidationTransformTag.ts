@@ -68,7 +68,6 @@ public constructor (){
 
 
     public setStoreName(value: string){
-var value = value
 this.storeName= value;
     
 this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName);

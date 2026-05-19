@@ -114,9 +114,6 @@ private constructor (){
 
 
     public notify(command: Command, resource: string, message: string){
-    //var command = command
-    //var resource = resource
-    //var message = message
 
     var context: Context = ResourceUtil.getInstance()!.getContext()!;
 ;

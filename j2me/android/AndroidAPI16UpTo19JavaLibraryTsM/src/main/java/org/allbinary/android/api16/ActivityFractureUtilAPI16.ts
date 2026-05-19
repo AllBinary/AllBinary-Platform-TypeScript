@@ -63,7 +63,6 @@ export class ActivityFractureUtilAPI16 extends ActivityFractureUtilAPI5 {
 
 
     public setFullScreen(activity: Activity){
-    //var activity = activity
 
     var decorView: View = activity.getWindow()!.getDecorView()!;
 ;

@@ -70,8 +70,6 @@ export class TransformInfoHttpFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

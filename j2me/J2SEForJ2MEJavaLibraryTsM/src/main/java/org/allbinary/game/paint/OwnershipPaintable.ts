@@ -88,7 +88,6 @@ private constructor (){
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 graphics.setColor(this.color);
     
 
@@ -125,7 +124,6 @@ graphics.drawString(this.COPYRIGHT, halfWidth -beginWidth, height -COPYRIGHT_Y, 
 
 
     public setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 this.color= basicColor!.intValue();

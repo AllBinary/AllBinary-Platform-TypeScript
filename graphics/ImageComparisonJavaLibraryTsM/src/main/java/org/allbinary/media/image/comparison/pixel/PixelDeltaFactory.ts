@@ -116,10 +116,6 @@ logUtil!.put(commonStrings!.EXCEPTION, instance, STATIC_BLOCK, e);
                 //@Throws(Exception.constructor)
             
     public static getInstance(x: number, y: number, rgb1: number, rgb2: number): PixelDelta{
-var x = x
-var y = y
-var rgb1 = rgb1
-var rgb2 = rgb2
 
     var point: GPoint = PointFactory.getInstance()!.createXY(x, y)!;
 ;

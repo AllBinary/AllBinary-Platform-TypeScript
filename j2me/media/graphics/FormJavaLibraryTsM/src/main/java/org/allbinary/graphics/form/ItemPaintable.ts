@@ -49,10 +49,6 @@ export class ItemPaintable
         
 
     public paint(graphics: Graphics, currentIndex: number, x: number, y: number){
-var graphics = graphics
-var currentIndex = currentIndex
-var x = x
-var y = y
 }
 
 

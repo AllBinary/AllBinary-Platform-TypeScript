@@ -81,21 +81,18 @@ export class FrameLog
 public constructor (frame: Long){
 
             super();
-        var frame = frame
-this.frame= frame;
+        this.frame= frame;
     
 }
 
 
     public addInfo(infoString: string){
-var infoString = infoString
 this.infoStringBuffer!.append(infoString);
     
 }
 
 
     public addActions(vectorOfStrings: Vector<String>){
-var vectorOfStrings = vectorOfStrings
 
     var size: number = vectorOfStrings!.length!;
 ;
@@ -116,7 +113,6 @@ this.addAction(vectorOfStrings!.get(index) as string);
 
 
     public addAction(action: string){
-var action = action
 this.actionsStringBuffer!.append(action);
     
 this.actionsStringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);

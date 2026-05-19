@@ -63,8 +63,6 @@ export class AxisMathVectorUtil
     private readonly noDecimalTrigTable: NoDecimalTrigTable = NoDecimalTrigTable.getInstance()!;
 
     public calculateX(magnitude: number, angle: number): number{
-var magnitude = magnitude
-var angle = angle
 
 
 
@@ -75,8 +73,6 @@ var angle = angle
 
 
     public calculateY(magnitude: number, angle: number): number{
-var magnitude = magnitude
-var angle = angle
 
 
 
@@ -87,8 +83,6 @@ var angle = angle
 
 
     public calculateZ(magnitude: number, otherAngle: number): number{
-var magnitude = magnitude
-var otherAngle = otherAngle
 
 
 

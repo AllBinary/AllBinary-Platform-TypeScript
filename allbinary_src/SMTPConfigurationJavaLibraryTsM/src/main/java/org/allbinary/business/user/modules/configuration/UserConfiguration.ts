@@ -78,8 +78,7 @@ this.timeLastModified= new TimeLastModified(0);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.userEmailConfigurationInterface= new UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface;
+        this.userEmailConfigurationInterface= new UserEmailConfiguration(hashMap) as UserEmailConfigurationInterface;
     
 this.timeCreated= new TimeCreated(hashMap!.get(EntryData.getInstance()!.TIMECREATED) as string);
     
@@ -99,7 +98,6 @@ this.timeLastModified= new TimeLastModified(hashMap!.get(EntryData.getInstance()
 
 
     public setUserEmailConfigurationInterface(userEmailConfigurationInterface: UserEmailConfigurationInterface){
-var userEmailConfigurationInterface = userEmailConfigurationInterface
 this.userEmailConfigurationInterface= userEmailConfigurationInterface;
     
 }
@@ -126,14 +124,12 @@ this.userEmailConfigurationInterface= userEmailConfigurationInterface;
 
 
     public setTimeCreated(timeCreated: TimeCreated){
-var timeCreated = timeCreated
 this.timeCreated= timeCreated;
     
 }
 
 
     public setTimeLastModified(timeLastModified: TimeLastModified){
-var timeLastModified = timeLastModified
 this.timeLastModified= timeLastModified;
     
 }

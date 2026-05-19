@@ -81,7 +81,6 @@ private constructor (){
 
 
     public addListener(completeMotionGestureInputEventListener: CompleteMotionGestureInputEventListener){
-var completeMotionGestureInputEventListener = completeMotionGestureInputEventListener
 
                         if(!this.list.contains(completeMotionGestureInputEventListener))
                         
@@ -103,7 +102,6 @@ super.removeAllListeners();
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -114,7 +112,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
 
 
@@ -149,8 +146,6 @@ super.fireEvent(eventObject);
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
     var completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface = eventListenerInterface as CompleteMotionGestureInputEventListenerInterface;
 ;

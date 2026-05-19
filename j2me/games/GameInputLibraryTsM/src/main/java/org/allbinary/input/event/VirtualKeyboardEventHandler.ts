@@ -26,8 +26,6 @@
         
             import { Thread } from '../../../../java/lang/Thread.js';
         
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
 import { BooleanFactory } from '../../../../org/allbinary/logic/java/bool/BooleanFactory.js';
       
 import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
@@ -86,8 +84,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-    //var eventObject = eventObject
-    //var eventListenerInterface = eventListenerInterface
 
     var virtualKeyboardEventListenerInterface: VirtualKeyboardEventListenerInterface = eventListenerInterface as VirtualKeyboardEventListenerInterface;
 ;

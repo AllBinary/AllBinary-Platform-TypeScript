@@ -100,10 +100,7 @@ export class BasicPopupMenuPaintable extends Paintable {
 public constructor (rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-            //var rectangle = rectangle
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-this.foregroundBasicColor= foregroundBasicColor;
+        this.foregroundBasicColor= foregroundBasicColor;
     
 this.label= BasicPopupMenuPaintable.NAME;
     
@@ -170,7 +167,6 @@ this.init(rectangle);
                 //@Throws(Exception.constructor)
             
     public init(rectangle: Rectangle){
-    //var rectangle = rectangle
 this.rectangle= rectangle;
     
 
@@ -240,7 +236,6 @@ rectangleFilledAnimation!.setHeight(height);
     private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 
     var point: GPoint = this.rectangle.getPoint()!;
 ;

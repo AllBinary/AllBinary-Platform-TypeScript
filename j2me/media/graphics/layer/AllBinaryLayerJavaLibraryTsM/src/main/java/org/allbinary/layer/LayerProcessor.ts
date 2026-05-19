@@ -60,8 +60,7 @@ export class LayerProcessor
 public constructor (layerManager: LayerManager){
 
             super();
-            //var layerManager = layerManager
-this.layerManager= layerManager;
+        this.layerManager= layerManager;
     
 }
 
@@ -69,9 +68,6 @@ this.layerManager= layerManager;
                 //@Throws(Exception.constructor)
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
-var allBinaryLayerManager = allBinaryLayerManager
-var layerInterface = layerInterface
-var index = index
 
 
 
@@ -83,7 +79,6 @@ var index = index
                 //@Throws(Exception.constructor)
             
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
-var layerInterface = layerInterface
 
 
 
@@ -105,7 +100,6 @@ var layerInterface = layerInterface
                 //@Throws(Exception.constructor)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
     var layerManager: LayerManager = this.getLayerManager()!;
 ;

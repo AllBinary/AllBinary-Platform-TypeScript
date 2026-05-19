@@ -76,9 +76,7 @@ export class ShaderManager
 public constructor (GL_VERTEX_SHADER: number, GL_FRAGMENT_SHADER: number){
 
             super();
-            //var GL_VERTEX_SHADER = GL_VERTEX_SHADER
-    //var GL_FRAGMENT_SHADER = GL_FRAGMENT_SHADER
-this.GL_VERTEX_SHADER= GL_VERTEX_SHADER;
+        this.GL_VERTEX_SHADER= GL_VERTEX_SHADER;
     
 this.GL_FRAGMENT_SHADER= GL_FRAGMENT_SHADER;
     
@@ -86,10 +84,6 @@ this.GL_FRAGMENT_SHADER= GL_FRAGMENT_SHADER;
 
 
     public load(gl: GL10, resource: string, shaderAsStringArray: string[], shaderType: number): number{
-    //var gl = gl
-    //var resource = resource
-    //var shaderAsStringArray = shaderAsStringArray
-    //var shaderType = shaderType
 
 
 
@@ -100,10 +94,6 @@ this.GL_FRAGMENT_SHADER= GL_FRAGMENT_SHADER;
 
 
     public loadShader(gl: GL10, resource: string, stringList: BasicArrayList, shaderType: number): number{
-    //var gl = gl
-    //var resource = resource
-    //var stringList = stringList
-    //var shaderType = shaderType
 
 
 

@@ -79,7 +79,6 @@ private constructor (){
 
 
     getExtensionIndex(filePath: string): number{
-var filePath = filePath
 
     var indexOfFileExtensionDelmiter: number = filePath!.lastIndexOf(this.abPathData!.EXTENSION_SEP)!;
 ;
@@ -124,7 +123,6 @@ var filePath = filePath
 
 
     public getExtension(abFilePath: AbFilePath): string{
-var abFilePath = abFilePath
 
 
 
@@ -135,7 +133,6 @@ var abFilePath = abFilePath
 
 
     public getExtension(abPath: AbPath): string{
-var abPath = abPath
 
 
 
@@ -146,7 +143,6 @@ var abPath = abPath
 
 
     public getExtension(filePath: string): string{
-var filePath = filePath
 
     var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;
 ;
@@ -176,7 +172,6 @@ var filePath = filePath
                 //@Throws(Exception.constructor)
             
     public getWithoutExtension(abFilePath: AbFilePath): string{
-var abFilePath = abFilePath
 
 
 
@@ -189,7 +184,6 @@ var abFilePath = abFilePath
                 //@Throws(Exception.constructor)
             
     public getWithoutExtension(abPath: AbPath): string{
-var abPath = abPath
 
 
 
@@ -202,7 +196,6 @@ var abPath = abPath
                 //@Throws(Exception.constructor)
             
     public getWithoutExtension(filePath: string): string{
-var filePath = filePath
 
     var indexOfFileExtensionDelmiter: number = this.getExtensionIndex(filePath)!;
 ;
@@ -230,7 +223,6 @@ var filePath = filePath
 
 
     public isValid(path: string): boolean{
-var path = path
 
                         if(this.isValidStart(path))
                         
@@ -261,7 +253,6 @@ var path = path
 
 
     isValidStart(path: string): boolean{
-var path = path
 
                         if(path[0] == this.abPathData!.SEPARATORCHAR || path[0] == '.')
                         
@@ -289,7 +280,6 @@ var path = path
 
 
     isValidEnd(path: string): boolean{
-var path = path
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
 ;
@@ -334,7 +324,6 @@ var path = path
 
 
     public adjustStart(path: string): string{
-var path = path
 
                         if(!this.isValidStart(path))
                         
@@ -354,7 +343,6 @@ var path = path
 
 
     public adjustEnd(path: string): string{
-var path = path
 
                         if(!this.isValidEnd(path))
                         
@@ -374,7 +362,6 @@ var path = path
 
 
     public adjust(path: string): string{
-var path = path
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
 ;
@@ -412,7 +399,6 @@ var path = path
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNameFromPath(categoryPath: string): string{
-var categoryPath = categoryPath
 
     var endIndex: number = categoryPath!.lastIndexOf(this.abPathData!.SEPARATOR)!;
 ;
@@ -472,7 +458,6 @@ var categoryPath = categoryPath
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeNameFromPath(path: string): AbPath{
-var path = path
 
     var endIndex: number = path.lastIndexOf(this.abPathData!.SEPARATOR)!;
 ;

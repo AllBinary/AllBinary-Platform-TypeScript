@@ -59,8 +59,7 @@ export class PaymentGatewayMapping
 public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
             super();
-        var paymentGatewayInterface = paymentGatewayInterface
-this.paymentGatewayInterface= paymentGatewayInterface;
+        this.paymentGatewayInterface= paymentGatewayInterface;
     
 }
 

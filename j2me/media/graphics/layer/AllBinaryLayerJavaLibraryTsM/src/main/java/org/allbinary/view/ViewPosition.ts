@@ -63,10 +63,7 @@ export class ViewPosition extends GPoint {
     private allbinaryLayer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 protected constructor (x: number, y: number, z: number){
             super(x, y, z);
-                    var x = x
-var y = y
-var z = z
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -134,7 +131,6 @@ var z = z
 
 
     public setAllbinaryLayer(allbinaryLayer: AllBinaryLayer){
-var allbinaryLayer = allbinaryLayer
 this.allbinaryLayer= allbinaryLayer;
     
 }

@@ -77,11 +77,7 @@ export class AnimationDamageFloaters extends DamageFloaters {
 public constructor (layerInterface: AllBinaryLayer, animationInterfaceArray: IndexedAnimation[], dx: number, dy: number){
 
             super();
-        var layerInterface = layerInterface
-var animationInterfaceArray = animationInterfaceArray
-var dx = dx
-var dy = dy
-this.animationInterfaceArray= animationInterfaceArray;
+        this.animationInterfaceArray= animationInterfaceArray;
     
 
 
@@ -107,7 +103,6 @@ this.dy= dy;
 
 
     public add(damage: number){
-var damage = damage
 
     var i: number = this.circularIndexUtil!.getIndex()!;
 ;
@@ -120,7 +115,6 @@ this.circularIndexUtil!.next();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
         try {
             

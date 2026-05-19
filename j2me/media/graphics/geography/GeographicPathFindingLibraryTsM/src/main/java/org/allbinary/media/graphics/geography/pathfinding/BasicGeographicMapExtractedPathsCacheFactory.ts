@@ -59,8 +59,6 @@ private constructor (){
 
 
     public init(maxConcurrentPaths: number, maxPaths: number){
-var maxConcurrentPaths = maxConcurrentPaths
-var maxPaths = maxPaths
 
                         if(maxConcurrentPaths != this.maxConcurrentPaths)
                         
@@ -115,7 +113,6 @@ this.maxPaths= maxPaths;
 
 
     public release(list: BasicArrayList){
-var list = list
 
 
 

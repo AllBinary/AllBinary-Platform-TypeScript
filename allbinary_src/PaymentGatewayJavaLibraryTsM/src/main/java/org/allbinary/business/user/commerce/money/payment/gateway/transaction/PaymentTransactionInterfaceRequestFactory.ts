@@ -124,7 +124,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
-var transformInfoInterface = transformInfoInterface
 
         try {
             
@@ -146,7 +145,7 @@ var transformInfoInterface = transformInfoInterface
 
                         if(command != 
                                     null
-                                 && command.localeCompare(org.allbinary.globals.GLOBALS2.AUTHORIZEFORMEVALBODYONERROR) == 0)
+                                 && command.compareTo(org.allbinary.globals.GLOBALS2.AUTHORIZEFORMEVALBODYONERROR) == 0)
                         
                                     {
                                     
@@ -245,7 +244,6 @@ orderReview!.setPaymentInfo(orderPaymentInfo);
                 //@Throws(Exception.constructor)
             
     generateFromTestData(transformInfoInterface: TransformInfoInterface): PaymentTransactionInterface{
-var transformInfoInterface = transformInfoInterface
 
         try {
             
@@ -318,7 +316,7 @@ orderReview!.setUserName("testing");
 
                         if(orderId == 
                                     null
-                                 || orderId!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0)
+                                 || orderId!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
                         
                                     {
                                     orderId= new OrderIdGenerator().

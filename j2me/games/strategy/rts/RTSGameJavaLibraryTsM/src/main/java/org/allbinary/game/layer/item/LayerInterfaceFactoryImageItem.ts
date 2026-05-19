@@ -63,14 +63,7 @@ export class LayerInterfaceFactoryImageItem extends ABCustomImageItem {
     private readonly layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, animationArray: Animation[], layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
             super(label, img, layout, altText, basicColor, 0);
-                    var label = label
-var img = img
-var layout = layout
-var altText = altText
-var basicColor = basicColor
-var animationArray = animationArray
-var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -92,9 +85,6 @@ this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 super.paintXY(graphics, x, y);
     
 

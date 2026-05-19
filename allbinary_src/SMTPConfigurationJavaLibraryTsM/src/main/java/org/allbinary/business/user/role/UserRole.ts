@@ -59,9 +59,7 @@ export class UserRole
 protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: UserFactoryInterface){
 
             super();
-        var aBasicUserRole = aBasicUserRole
-var aUserFactoryInterface = aUserFactoryInterface
-this.basicUserRole= aBasicUserRole;
+        this.basicUserRole= aBasicUserRole;
     
 this.userFactoryInterface= aUserFactoryInterface;
     

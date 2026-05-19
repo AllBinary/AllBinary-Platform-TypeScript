@@ -76,9 +76,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public process(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, startIndex: number){
-var layerManager = layerManager
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-var startIndex = startIndex
 
     var size: number = layerManager!.getSize()!;
 ;
@@ -105,9 +102,6 @@ this.collide(layerManager, collidableInterfaceCompositeInterface, collidableInte
                 //@Throws(Exception.constructor)
             
     collide(layerManager: LayerManager, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface, collidableInterfaceCompositeInterface2: CollidableInterfaceCompositeInterface){
-var layerManager = layerManager
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
-var collidableInterfaceCompositeInterface2 = collidableInterfaceCompositeInterface2
 
     var collidableBase2: CollidableBaseBehavior = collidableInterfaceCompositeInterface2!.getCollidableInferface()!;
 ;

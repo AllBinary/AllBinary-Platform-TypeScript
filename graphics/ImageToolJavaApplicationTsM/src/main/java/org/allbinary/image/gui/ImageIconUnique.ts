@@ -52,9 +52,7 @@ export class ImageIconUnique extends ImageIcon {
     private id: number= 0
 public constructor (bufferedImage: BufferedImage, index: number){
             super(bufferedImage);
-                    var bufferedImage = bufferedImage
-var index = index
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,7 +72,6 @@ this.setId(index);
 
 
     public setId(id: number){
-var id = id
 this.id= id;
     
 }

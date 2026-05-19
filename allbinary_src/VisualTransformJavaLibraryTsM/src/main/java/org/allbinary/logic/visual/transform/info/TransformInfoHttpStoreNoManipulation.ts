@@ -54,9 +54,7 @@ export class TransformInfoHttpStoreNoManipulation extends TransformInfoHttpStore
         
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
-                    var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -66,7 +64,6 @@ var pageContext = pageContext
                 //@Throws(Exception.constructor)
             
     setObjectConfigFile(value: string){
-var value = value
 this.setObjectConfigFileName(value);
     
 this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.getInstance()!.getInstance(this, this.getObjectConfigFilePath()));
@@ -77,7 +74,6 @@ this.setObjectConfigInterface(TransformInfoObjectConfigNoManipulationFactory.get
                 //@Throws(Exception.constructor)
             
     setObjectConfig(value: string){
-var value = value
 
 
 

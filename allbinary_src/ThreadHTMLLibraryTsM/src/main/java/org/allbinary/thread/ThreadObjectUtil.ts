@@ -51,22 +51,18 @@ export class ThreadObjectUtil
     public readonly NULL_PRIORITY_RUNNABLE: PriorityRunnable = new NullPriorityRunnable();
 
     public notifyObject(anyType: Object){
-var anyType = anyType
 }
 
 
                 //@Throws(Exception.constructor)
             
     public waitObject(anyType: Object){
-var anyType = anyType
 }
 
 
                 //@Throws(Exception.constructor)
             
     public waitObjectFor(anyType: Object, delay: number){
-var anyType = anyType
-var delay = delay
 }
 
 

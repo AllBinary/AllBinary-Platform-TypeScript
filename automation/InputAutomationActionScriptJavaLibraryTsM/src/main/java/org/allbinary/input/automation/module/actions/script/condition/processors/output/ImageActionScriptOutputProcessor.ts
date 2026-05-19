@@ -67,8 +67,6 @@ export class ImageActionScriptOutputProcessor
                 //@Throws(Exception.constructor)
             
     public static process(imageActionScriptOutputInterface: ImageActionScriptOutputInterface, frame: Long){
-    //var imageActionScriptOutputInterface = imageActionScriptOutputInterface
-    //var frame = frame
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

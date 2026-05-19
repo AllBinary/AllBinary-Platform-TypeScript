@@ -52,13 +52,6 @@ export class SimpleGeographicMapCellPositionFactory
     public static readonly NULL_GEOGRAPHIC_MAP_CELL_POSITION: GeographicMapCellPosition = new GeographicMapCellPosition( -1,  -1,  -1,  -1,  -1,  -1);
 
     public getInstance(geographicMapInterface: BasicGeographicMap, i_column: number, i_row: number, columns: number, rows: number, width: number, height: number): GeographicMapCellPosition{
-    //var geographicMapInterface = geographicMapInterface
-    //var i_column = i_column
-    //var i_row = i_row
-    //var columns = columns
-    //var rows = rows
-    //var width = width
-    //var height = height
 
 
 

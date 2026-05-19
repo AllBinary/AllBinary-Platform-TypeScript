@@ -57,7 +57,6 @@ export class ImageTool
         
 
     public static main(args: string[]){
-var args = args
 java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 

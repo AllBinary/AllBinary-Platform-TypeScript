@@ -91,9 +91,7 @@ export class BuildingAdvancedRTSFormInput extends BuildingRTSFormInput {
     readonly atLeastOneHouseGameNotificationEvent: GameNotificationEvent
 public constructor (groupInterface: Group[], isUnitProducer: boolean){
             super(groupInterface, isUnitProducer);
-                        //var groupInterface = groupInterface
-    //var isUnitProducer = isUnitProducer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -109,7 +107,6 @@ this.atLeastOneHouseGameNotificationEvent= new GameNotificationEvent(this, "Buil
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -155,8 +152,6 @@ this.atLeastOneHouseGameNotificationEvent!.setBasicColorP(geographicMapInterface
                 //@Throws(Exception.constructor)
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var layerInterface = layerInterface
 
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
 ;
@@ -207,9 +202,6 @@ var layerInterface = layerInterface
                 //@Throws(Exception.constructor)
             
     add(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer){
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var layerManager = layerManager
-var layerInterface = layerInterface
 this.BUILD_BUILDING_RTS_LAYER_EVENT.setRtsLayer(layerInterface);
     
 BuildingEventHandler.getInstance()!.fireEvent(this.BUILD_BUILDING_RTS_LAYER_EVENT);

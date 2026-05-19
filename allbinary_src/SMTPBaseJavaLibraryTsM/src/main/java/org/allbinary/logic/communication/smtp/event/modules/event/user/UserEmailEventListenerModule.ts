@@ -68,8 +68,7 @@ export class UserEmailEventListenerModule
 public constructor (userInterface: UserInterface){
 
             super();
-        var userInterface = userInterface
-this.userInterface= userInterface;
+        this.userInterface= userInterface;
     
 }
 
@@ -77,7 +76,6 @@ this.userInterface= userInterface;
                 //@Throws(Exception.constructor)
             
     public onEmailSendFailure(emailEvent: EmailEvent){
-var emailEvent = emailEvent
 
     var to: string = this.userInterface!.getSecondaryEmail()!;
 ;
@@ -94,7 +92,6 @@ EmailQueueFactory.getInstance()!.offer(email.getEmail() as EmailInterface);
                 //@Throws(Exception.constructor)
             
     public onEmailSendRequest(emailEvent: EmailEvent){
-var emailEvent = emailEvent
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         

@@ -80,7 +80,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getResourceAsStream(resource: string): InputStream{
-var resource = resource
 
     var inputStream: InputStream = resource..javaClass.getResourceAsStream(resource)!;
 ;
@@ -271,8 +270,6 @@ inputStream= resource..javaClass.getResourceAsStream(resourcePath);
                 //@Throws(Exception.constructor)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
-var resource = resource
-var startIndex = startIndex
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -314,8 +311,6 @@ var startIndex = startIndex
 
 
     public addResource(resource: string, value: Integer){
-    //var resource = resource
-    //var value = value
 }
 
 

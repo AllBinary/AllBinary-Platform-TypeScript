@@ -81,11 +81,6 @@ export class DrawStringUtil
 
 
     public paintVerticle(graphics: Graphics, string: string, x: number, y: number, anchor: number){
-    //var graphics = graphics
-    //var string = string
-    //var x = x
-    //var y = y
-    //var anchor = anchor
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;
@@ -174,12 +169,6 @@ graphics.drawChar(aChar, x +offsetX, y +(charHeight *index) +offsetY, anchor);
     private anchor: number = Anchor.TOP_LEFT;
 
     public drawCenterString(graphics: Graphics, string: string, offset: number, length: number, x: number, y: number){
-    //var graphics = graphics
-    //var string = string
-    //var offset = offset
-var length = length
-var x = x
-var y = y
 
     var width: number = (graphics.getFont()!.substringWidth(string, offset, length)>>1);
 ;
@@ -203,11 +192,6 @@ PreLogUtil.put(new StringMaker().
     private readonly EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     public drawCenterStrings(graphics: Graphics, stringArray: string[], maxWidth: number, x: number, y: number){
-    //var graphics = graphics
-    //var stringArray = stringArray
-    //var maxWidth = maxWidth
-    //var x = x
-    //var y = y
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;

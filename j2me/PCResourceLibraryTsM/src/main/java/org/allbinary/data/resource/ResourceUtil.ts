@@ -93,8 +93,6 @@ private constructor (){
 
 
     public setLoadingPaths(path: string, ext: string){
-var path = path
-var ext = ext
 this.path= path;
     
 this.ext= ext;
@@ -103,14 +101,12 @@ this.ext= ext;
 
 
     public setClassLoader(classLoader: ClassLoader){
-    //var classLoader = classLoader
 }
 
 
                 //@Throws(Exception.constructor)
             
     public getResourceAsStream(resource: string): InputStream{
-    //var resource = resource
 
     var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;
 ;
@@ -153,8 +149,6 @@ this.ext= ext;
                 //@Throws(Exception.constructor)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
-    //var resource = resource
-    //var startIndex = startIndex
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -199,8 +193,6 @@ StreamUtil.getInstance()!.getByteArray(inputStream, new ByteArrayOutputStream(),
 
 
     public addResource(resource: string, value: Integer){
-    //var resource = resource
-    //var value = value
 }
 
 

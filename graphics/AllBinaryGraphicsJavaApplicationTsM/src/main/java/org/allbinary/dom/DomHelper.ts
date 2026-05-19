@@ -134,7 +134,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createDocument(xmlFile: File): Document{
-var xmlFile = xmlFile
 
         try {
             
@@ -172,7 +171,6 @@ var xmlFile = xmlFile
                 //@Throws(Exception.constructor)
             
     public toString(document: Document): string{
-var document = document
 
         try {
             
@@ -220,8 +218,6 @@ copyTransformer!.transform(domSource, streamResult);
                 //@Throws(Exception.constructor)
             
     public save(file: File, document: Document){
-var file = file
-var document = document
 
         try {
             
@@ -261,8 +257,6 @@ copyTransformer!.transform(domSource, streamResult);
                 //@Throws(Exception.constructor)
             
     public getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.getLength()!;
 ;
@@ -280,7 +274,7 @@ index < numberOfNodes; index++)
 ;
     
 
-                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
+                        if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
                                     
@@ -305,8 +299,6 @@ index < numberOfNodes; index++)
                 //@Throws(Exception.constructor)
             
     public getChildrenWithoutTextNodes(nodeName: string, nodeList: NodeList): BasicArrayList{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var list: BasicArrayList = new BasicArrayListD();
 ;
@@ -354,7 +346,6 @@ index < numberOfChildren; index++)
                 //@Throws(Exception.constructor)
             
     public getWithoutTextNodes(nodeList: NodeList): BasicArrayList{
-var nodeList = nodeList
 
     var list: BasicArrayList = new BasicArrayListD();
 ;
@@ -398,8 +389,6 @@ index < numberOfChildren; index++)
                 //@Throws(Exception.constructor)
             
     public searchNodeList(nodeName: string, nodeList: NodeList): Node{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.getLength()!;
 ;
@@ -419,7 +408,7 @@ index < numberOfNodes; index++)
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
 
-                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
+                        if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
                                     
@@ -444,8 +433,6 @@ this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
                 //@Throws(Exception.constructor)
             
     public searchNodeList(nodeName: string, nodeList: BasicArrayList): Node{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.size()!;
 ;
@@ -465,7 +452,7 @@ index < numberOfNodes; index++)
 this.logUtil!.putF("NodeName: " +node.getNodeName(), this, "searchNodeList");
     
 
-                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
+                        if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
                                     

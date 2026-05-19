@@ -84,8 +84,7 @@ export class UserEmailConfigurationView
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -115,8 +114,7 @@ this.userEmailConfigurationInterface!.setUserEmailEventsConfigurationInterface(u
 public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
 
             super();
-        var userEmailConfigurationInterface = userEmailConfigurationInterface
-this.userEmailConfigurationInterface= userEmailConfigurationInterface;
+        this.userEmailConfigurationInterface= userEmailConfigurationInterface;
     
 }
 
@@ -134,7 +132,6 @@ this.userEmailConfigurationInterface= userEmailConfigurationInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var emailConfigurationMapping: UserEmailConfigurationMapping = new UserEmailConfigurationMapping(this.userEmailConfigurationInterface);
 ;

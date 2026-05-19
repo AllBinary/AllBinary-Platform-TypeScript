@@ -47,11 +47,7 @@ export class HtmlSubmitInput extends HtmlValueInput {
         
 public constructor (before: string, name: string, value: string, after: string){
             super(before, HtmlInputData.getInstance()!.SUBMIT, name, value, after);
-                    var before = before
-var name = name
-var value = value
-var after = after
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

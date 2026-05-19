@@ -91,8 +91,7 @@ public constructor (){
 public constructor (aPath: string){
 
             super();
-        var aPath = aPath
-
+        
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
 ;
     
@@ -120,9 +119,7 @@ this.path= this.abPathUtil!.adjustEnd(this.abPathUtil!.adjust(this.getPath(aPath
 public constructor (aPath: string, name: string){
 
             super();
-        var aPath = aPath
-var name = name
-
+        
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
 ;
     
@@ -168,7 +165,6 @@ this.nameP= this.EMPTY_STRING;
 
 
     getSchema(aPath: string): string{
-var aPath = aPath
 
     var beginIndex: number = aPath!.indexOf(this.commonSeps!.COLON)!;
 ;
@@ -212,7 +208,6 @@ this.hasSchema= false;
                 //@Throws(Exception.constructor)
             
     public getPath(aPath: string): string{
-var aPath = aPath
 
     var filePathData: FilePathData = FilePathData.getInstance()!;
 ;
@@ -280,7 +275,6 @@ tempPath= tempPath!.substring(beginIndex, tempPath!.length);
 
 
     public setName(name: string){
-    //var name = name
 this.nameP= name;
     
 }
@@ -381,7 +375,6 @@ stringBuffer!.append(this.nameP);
 
 
     setPath(path: string){
-var path = path
 this.path= path;
     
 }

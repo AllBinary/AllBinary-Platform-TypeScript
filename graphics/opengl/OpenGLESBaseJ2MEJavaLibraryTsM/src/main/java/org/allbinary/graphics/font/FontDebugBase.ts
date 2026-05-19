@@ -51,24 +51,14 @@ export class FontDebugBase
     public readonly SET_FONT: string = "setFont";
 
     public debugMetrics(currentFont: Font, convertedTextSize: number, displayMetrics: any = {}, stringBuffer: StringMaker){
-    //var currentFont = currentFont
-    //var convertedTextSize = convertedTextSize
-    //var displayMetrics = displayMetrics
-    //var stringBuffer = stringBuffer
 }
 
 
     public debugDpi(densityDpi: number, stringBuffer: StringMaker){
-    //var densityDpi = densityDpi
-    //var stringBuffer = stringBuffer
 }
 
 
     public debugDimension(currentFont: Font, convertedTextSize: number, longestDimensionTotalPixels: number, stringBuffer: StringMaker){
-    //var currentFont = currentFont
-    //var convertedTextSize = convertedTextSize
-    //var longestDimensionTotalPixels = longestDimensionTotalPixels
-    //var stringBuffer = stringBuffer
 }
 
 

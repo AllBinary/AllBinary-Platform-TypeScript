@@ -62,7 +62,6 @@ public constructor (){
 
 
     public setRole(value: string){
-var value = value
 this.role= value;
     
 }
@@ -86,7 +85,7 @@ this.setObjectFile("views.admin.user.UsersValidationView");
                                     this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role);
     
 
-                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     

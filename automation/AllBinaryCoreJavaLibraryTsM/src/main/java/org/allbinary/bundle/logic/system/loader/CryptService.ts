@@ -94,9 +94,6 @@ this.logUtil!.putF("Set Globals: " +URLGLOBALS.getWebappPath(), this, this.commo
 
 
     public getDecryptedInputStream(abeClientInformation: AbeClientInformationInterface, name: string, inputStream: InputStream): InputStream{
-    //var abeClientInformation = abeClientInformation
-    //var name = name
-    //var inputStream = inputStream
 
         try {
             
@@ -138,8 +135,6 @@ this.showLicenseDialog(abeClientInformation, e);
 
 
     showLicenseDialog(abeClientInformation: AbeClientInformationInterface, e: Exception){
-    //var abeClientInformation = abeClientInformation
-    //var e = e
 
         try {
             this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);

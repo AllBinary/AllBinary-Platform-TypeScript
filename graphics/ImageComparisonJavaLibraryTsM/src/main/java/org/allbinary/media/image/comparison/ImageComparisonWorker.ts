@@ -90,8 +90,7 @@ export class ImageComparisonWorker extends BasicEventHandler implements Captured
 public constructor (imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface){
 
             super();
-            //var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
-this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
+        this.imageComparatorConstraintsInterface= imageComparatorConstraintsInterface;
     
 this.imageComparator= new ImageComparator(imageComparatorConstraintsInterface);
     
@@ -111,7 +110,6 @@ this.imageComparator= new ImageComparator(imageComparatorConstraintsInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }
@@ -119,7 +117,6 @@ this.running= running;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onCaptureEvent(capturedImageWorkerResultsEvent: CapturedImageWorkerResultsEvent){
-    //var capturedImageWorkerResultsEvent = capturedImageWorkerResultsEvent
 this.bufferedImageVector!.add(capturedImageWorkerResultsEvent);
     
 
@@ -136,7 +133,6 @@ this.bufferedImageVector!.add(capturedImageWorkerResultsEvent);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
-    //var allBinaryEventObject = allBinaryEventObject
 this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
     
 }

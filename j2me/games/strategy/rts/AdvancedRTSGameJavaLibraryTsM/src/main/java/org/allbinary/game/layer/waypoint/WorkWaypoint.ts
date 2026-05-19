@@ -71,8 +71,7 @@ export class WorkWaypoint extends Waypoint {
     public static readonly ID: Integer = SmallIntegerSingletonFactory.getInstance()!.getAt(25)!;
 public constructor (ownerLayer: PathFindingLayerInterface){
             super(ownerLayer, WorkSound.getInstance());
-                        //var ownerLayer = ownerLayer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -82,7 +81,6 @@ public constructor (ownerLayer: PathFindingLayerInterface){
                 //@Throws(Exception.constructor)
             
     public visit(unitLayer: UnitLayer){
-    //var unitLayer = unitLayer
 
                         if(unitLayer!.getGroupInterface()[0] != this.ownerLayer!.getGroupInterface()[0])
                         

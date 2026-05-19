@@ -59,8 +59,6 @@ protected constructor (){
                 //@Throws(Exception.constructor)
             
     public init(allbinaryLayerFactoryInterface: AllBinaryLayerFactoryInterface, total: number){
-var allbinaryLayerFactoryInterface = allbinaryLayerFactoryInterface
-var total = total
 this.circularIndexUtil= CircularIndexUtil.createInstance(total);
     
 this.OBJECT_ARRAY= new Array(total);

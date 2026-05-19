@@ -96,8 +96,7 @@ export class UpdateFileValidationView extends InventoryItemView implements Valid
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,7 +113,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
                         if(command == 
                                     null
-                                 || command.localeCompare(UpdateFileValidationView.UPDATEPRODUCT) != 0)
+                                 || command.compareTo(UpdateFileValidationView.UPDATEPRODUCT) != 0)
                         
                                     {
                                     
@@ -300,7 +299,6 @@ HttpFileUploadUtil.log(fileItem);
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -324,7 +322,7 @@ var document = document
 
                         if(command == 
                                     null
-                                 || command.localeCompare(UpdateFileValidationView.UPDATEPRODUCT) != 0)
+                                 || command.compareTo(UpdateFileValidationView.UPDATEPRODUCT) != 0)
                         
                                     {
                                     
@@ -425,8 +423,6 @@ this.validationInfo(stringBuffer, fileName, fileItemFieldName, size);
                 //@Throws(Exception.constructor)
             
     isValid(fileName: string, size: number): Boolean{
-var fileName = fileName
-var size = size
 
     var fileData: FileData = FileData.getInstance()!;
 ;
@@ -501,10 +497,6 @@ this.processImageFiles();
 
 
     validationInfo(stringBuffer: StringMaker, fileName: string, fileItemFieldName: string, size: number){
-var stringBuffer = stringBuffer
-var fileName = fileName
-var fileItemFieldName = fileItemFieldName
-var size = size
 
     var fileData: FileData = FileData.getInstance()!;
 ;
@@ -514,7 +506,7 @@ var size = size
                         
                                     {
                                     
-                        if(fileItemFieldName!.localeCompare(BasicItemData.IMAGE) == 0)
+                        if(fileItemFieldName!.compareTo(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     

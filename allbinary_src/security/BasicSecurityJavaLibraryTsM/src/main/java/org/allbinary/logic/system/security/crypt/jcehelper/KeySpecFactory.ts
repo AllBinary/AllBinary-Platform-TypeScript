@@ -84,12 +84,10 @@ private constructor (){
 
 
     public getInstance(algorithm: string, keyData: number[]): KeySpec{
-var algorithm = algorithm
-var keyData = keyData
 
         try {
             
-                        if(algorithm.localeCompare(this.DES) == 0)
+                        if(algorithm.compareTo(this.DES) == 0)
                         
                                     {
                                     
@@ -102,7 +100,7 @@ var keyData = keyData
                                     }
                                 
                              else 
-                        if(algorithm.localeCompare(this.DESEDE) == 0)
+                        if(algorithm.compareTo(this.DESEDE) == 0)
                         
                                     {
                                     

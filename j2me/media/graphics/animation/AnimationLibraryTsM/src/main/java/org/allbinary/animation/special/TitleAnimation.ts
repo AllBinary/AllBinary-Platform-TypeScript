@@ -68,12 +68,6 @@ export class TitleAnimation extends SpecialAnimation {
         
 
     public static createAnimation(animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number): TitleAnimation{
-    //var animationInterfaceArray = animationInterfaceArray
-    //var basicColorArray = basicColorArray
-    //var dxArray = dxArray
-    //var dyArray = dyArray
-    //var y = y
-    //var width = width
 
 
 
@@ -110,14 +104,7 @@ export class TitleAnimation extends SpecialAnimation {
     private readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 public constructor (animationInterfaceArray: IndexedAnimation[], basicColorArray: BasicColor[], dxArray: number[], dyArray: number[], y: number, width: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var animationInterfaceArray = animationInterfaceArray
-    //var basicColorArray = basicColorArray
-    //var dxArray = dxArray
-    //var dyArray = dyArray
-    //var y = y
-    //var width = width
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -210,7 +197,6 @@ this.lastFrameStartTime= currentTime;
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 
@@ -245,7 +231,6 @@ this.lastFrameStartTime= currentTime;
 
 
     public setFrame(frame: number){
-    //var frame = frame
 
 
 
@@ -296,10 +281,6 @@ this.animationInterfaceArray[index]!.previousFrame();
 
 
     public paintFrameXY(graphics: Graphics, frame: number, x: number, y: number){
-    //var graphics = graphics
-    //var frame = frame
-    //var x = x
-    //var y = y
 this.setFrame(frame);
     
 this.paintXY(graphics, x, y);
@@ -310,9 +291,6 @@ this.paintXY(graphics, x, y);
     readonly CLEAR_COLOR: BasicColor = BasicColorFactory.getInstance()!.CLEAR_COLOR;
 
     public paintXY(graphics: Graphics, ax: number, ay: number){
-    //var graphics = graphics
-    //var ax = ax
-    //var ay = ay
 
     var x: number = 0;
 ;

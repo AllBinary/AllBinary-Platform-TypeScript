@@ -49,8 +49,7 @@ export class AbFilePath extends AbPath {
         
 public constructor (aPath: string){
             super();
-                    var aPath = aPath
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

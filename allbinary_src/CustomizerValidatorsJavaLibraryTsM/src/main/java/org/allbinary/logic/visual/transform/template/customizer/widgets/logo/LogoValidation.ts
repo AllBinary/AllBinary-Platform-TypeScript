@@ -105,8 +105,7 @@ this.logoFile=
 public constructor (node: Node){
 
             super();
-        var node = node
-this.isFile= false;
+        this.isFile= false;
     
 this.logoAbPath= new AbPath(DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEPATH, node.getChildNodes())!.getNodeValue());
     
@@ -117,8 +116,7 @@ this.logoFile= DomSearchHelper.getNode(LogoData.getInstance()!.IMAGEFILENAME, no
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.isFile= true;
+        this.isFile= true;
     
 this.getFormData(hashMap);
     
@@ -128,7 +126,6 @@ this.getFormData(hashMap);
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 this.logoFileItem= hashMap!.get(LogoData.getInstance()!.IMAGE) as FileItem;
     
 this.logoAbPath= new AbPath(hashMap!.get(LogoData.getInstance()!.IMAGEPATH) as string);
@@ -365,7 +362,6 @@ stringBuffer!.append("Logo is not valid.");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -420,7 +416,6 @@ hashMap!.put(LogoData.getInstance()!.IMAGEFILENAME, this.logoFile);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;

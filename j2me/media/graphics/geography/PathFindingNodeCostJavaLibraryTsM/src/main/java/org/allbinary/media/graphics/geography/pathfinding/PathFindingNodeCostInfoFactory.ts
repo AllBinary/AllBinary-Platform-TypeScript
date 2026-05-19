@@ -56,8 +56,7 @@ export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFacto
 public constructor (max: number){
 
             super();
-        var max = max
-this.pathFindingNodeCostInfoAdjacencyList= new Array(max) [max]
+        this.pathFindingNodeCostInfoAdjacencyList= new Array(max) [max]
                                                             ;
     
 }
@@ -66,11 +65,6 @@ this.pathFindingNodeCostInfoAdjacencyList= new Array(max) [max]
                 //@Throws(Exception.constructor)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
-    //var geographicMapInterface = geographicMapInterface
-    //var goingToGeographicMapCellPosition = goingToGeographicMapCellPosition
-    //var geographicMapCellPosition = geographicMapCellPosition
-    //var costFromStart = costFromStart
-    //var costToEnd = costToEnd
 this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, costFromStart, costToEnd);
     
 }
@@ -79,10 +73,6 @@ this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition, co
                 //@Throws(Exception.constructor)
             
     public getInstance(goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number): PathFindingNodeCostInfo{
-    //var goingToGeographicMapCellPosition = goingToGeographicMapCellPosition
-    //var geographicMapCellPosition = geographicMapCellPosition
-    //var costFromStart = costFromStart
-    //var costToEnd = costToEnd
 
     var pathFindingNodeCostInfo: PathFindingNodeCostInfo = this.getInstance(goingToGeographicMapCellPosition, geographicMapCellPosition)!;
 ;
@@ -122,8 +112,6 @@ pathFindingNodeCostInfo!.setCalculatedTotalCost();
 
 
     public getInstance(goingToFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): PathFindingNodeCostInfo{
-    //var goingToFromGeographicMapCellPosition = goingToFromGeographicMapCellPosition
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -134,9 +122,6 @@ pathFindingNodeCostInfo!.setCalculatedTotalCost();
 
 
     public getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number{
-    //var geographicMapInterface = geographicMapInterface
-    //var comingFromGeographicMapCellPosition = comingFromGeographicMapCellPosition
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 

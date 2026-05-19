@@ -68,9 +68,6 @@ export class SpriteFactory
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public createSprite(image: Image, frameWidth: number, frameHeight: number): Sprite{
-    //var image = image
-    //var frameWidth = frameWidth
-    //var frameHeight = frameHeight
 
 
 

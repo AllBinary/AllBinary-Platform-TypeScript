@@ -54,9 +54,7 @@ export class CacheType
 public constructor (vendor: string, type: string){
 
             super();
-        var vendor = vendor
-var type = type
-this.vendor= vendor;
+        this.vendor= vendor;
     
 this.type= type;
     

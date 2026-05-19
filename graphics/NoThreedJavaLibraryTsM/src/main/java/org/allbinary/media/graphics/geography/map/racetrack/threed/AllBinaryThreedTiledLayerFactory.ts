@@ -69,8 +69,6 @@ export class AllBinaryThreedTiledLayerFactory
                 //@Throws(Exception.constructor)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
-var raceTrackInfo = raceTrackInfo
-var raceTrackData = raceTrackData
 
 
 

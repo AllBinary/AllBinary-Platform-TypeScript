@@ -98,7 +98,6 @@ this.setTableName(this.tableName);
 
 
     public getLastId(userName: string): string{
-var userName = userName
 
 
 
@@ -109,8 +108,6 @@ var userName = userName
 
 
     public setDefault(userName: string, index: Integer){
-var userName = userName
-var index = index
 
         try {
             
@@ -176,7 +173,6 @@ super.updateWhere(whereKeyAndValue, updateKeyAndValue);
 
 
     public get(userName: string): Vector{
-var userName = userName
 
         try {
             
@@ -257,7 +253,6 @@ index < size; index++)
 
 
     public getDefault(userName: string): PaymentInterface{
-var userName = userName
 
         try {
             
@@ -337,8 +332,6 @@ paymentHashMap= super.getRow(updateKeyAndValue);
 
 
     public remove(userName: string, index: Integer){
-var userName = userName
-var index = index
 
         try {
             
@@ -379,8 +372,6 @@ super.deleteWhere(whereHashMap);
 
 
     public add(userName: string, paymentInterface: PaymentInterface){
-var userName = userName
-var paymentInterface = paymentInterface
 
         try {
             

@@ -40,16 +40,12 @@ export class CryptFileWriter
 public constructor (decryptedExtension: string, encryptedExtension: string){
 
             super();
-        var decryptedExtension = decryptedExtension
-var encryptedExtension = encryptedExtension
-}
+        }
 
 
                 //@Throws(Exception.constructor)
             
     public write(fileAbPath: AbPath, document: Document){
-var fileAbPath = fileAbPath
-var document = document
 }
 
 

@@ -71,9 +71,7 @@ export class TransformInfoHttpStore extends TransformInfoHttp implements Transfo
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext, true);
-                    var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -90,10 +88,7 @@ var pageContext = pageContext
 
 public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(databaseHashMap, propertiesHashMap, pageContext);
-                    var databaseHashMap = databaseHashMap
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -124,10 +119,7 @@ this.setStoreName(databaseHashMap!.get(StoreFrontData.getInstance()!.NAME) as st
 
 public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
-                    var storeFrontInterface = storeFrontInterface
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -114,21 +114,18 @@ private constructor (){
 
 
     public setContextFromActivity(activity: Activity){
-var activity = activity
 this.context= activity;
     
 }
 
 
     public setContext(aContext: Context){
-var aContext = aContext
 this.context= aContext;
     
 }
 
 
     public getResourceId(resource: string): Integer{
-var resource = resource
 
     var value: Integer = this.hashMap!.get(resource) as Integer;
 ;
@@ -153,8 +150,6 @@ var resource = resource
 
 
     public addResource(resource: string, value: Integer){
-var resource = resource
-var value = value
 
                         if(DebugFactory.getInstance() != NoDebug.getInstance())
                         
@@ -181,8 +176,6 @@ this.hashMap!.put(resource, value);
 
 
     containsDuplicate(resource: string, value: Integer): boolean{
-var resource = resource
-var value = value
 
     var objectArray: any[] = HashtableUtil.getInstance()!.getKeysAsArray(this.hashMap)!;
 ;
@@ -239,7 +232,6 @@ var value = value
 
 
     public setResources(resources: Resources){
-    //var resources = resources
 this.logUtil!.putF(new StringMaker().
                             append("Resource Loader: ")!.append(resources.constructor.name.toString()!)!.toString(), this, "setResources");
     
@@ -251,7 +243,6 @@ this.resources= resources;
                 //@Throws(Exception.constructor)
             
     public getResourceAsStream(resource: string): InputStream{
-    //var resource = resource
 
     var integer: Integer = this.hashMap!.get(resource) as Integer;
 ;

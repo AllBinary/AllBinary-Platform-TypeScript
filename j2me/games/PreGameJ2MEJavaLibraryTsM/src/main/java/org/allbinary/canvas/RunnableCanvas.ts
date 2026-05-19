@@ -95,10 +95,7 @@ export class RunnableCanvas extends MyCanvas implements RunnableInterface {
     readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
 public constructor (commandListener: CommandListener, childNameList: BasicArrayList, hasParam: boolean){
             super(CommonStrings.getInstance()!.UNKNOWN, childNameList);
-                        //var commandListener = commandListener
-    //var childNameList = childNameList
-    //var hasParam = hasParam
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -131,7 +128,6 @@ this.runnableCanvasRefreshHelper= new RunnableCanvasRefreshHelper(this);
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.logUtil!.putF(this.commonStrings!.NOT_IMPLEMENTED, this, "initCommands");
     
 }
@@ -167,14 +163,12 @@ this.logUtil!.putF(this.commonStrings!.NOT_IMPLEMENTED, this, "initCommands");
 
 
     public setThread(thread: Thread){
-var thread = thread
 this.thread= thread;
     
 }
 
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 
@@ -284,7 +278,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.IS_RUNNING);
     private pauseWait: number = 0;
 
     setWait(wait: number){
-var wait = wait
 this.loopTimeHelper!.delay= wait;
     
 this.pauseWait= wait *3;
@@ -360,7 +353,6 @@ this.repaint();
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public waitOnNotify(wait: number){
-var wait = wait
 
                         if(!this.notified)
                         
@@ -409,7 +401,6 @@ Thread.sleep(this.pauseWait);
                 //@Throws(Exception.constructor)
             
     public processGameSleep(sleep: number){
-var sleep = sleep
 Thread.sleep(sleep);
     
 }

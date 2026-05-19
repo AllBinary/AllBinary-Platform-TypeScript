@@ -60,8 +60,6 @@ export class PropsTileMapPlacementVisitor extends TileMapPlacementVisitor {
     private readonly randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
 
     public visit(lastMap: TiledMap, mapData: number[][]){
-    //var lastMap = lastMap
-    //var mapData = mapData
 
     var layerIndex: number = 0;
 ;
@@ -258,10 +256,6 @@ index2 < size2; index2++)
 
 
     public visit2(mapArray: number[][], mapData: number[][], index: number, index2: number){
-    //var mapArray = mapArray
-    //var mapData = mapData
-    //var index = index
-    //var index2 = index2
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

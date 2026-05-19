@@ -199,7 +199,6 @@ private constructor (){
 
 
     public setScaleLargestTo(scaleLargestTo: number){
-    //var scaleLargestTo = scaleLargestTo
 this.scaleLargestTo= scaleLargestTo;
     
 }
@@ -216,9 +215,6 @@ this.scaleLargestTo= scaleLargestTo;
     private readonly LAST_HEIGHT: string = " LastHeight: ";
 
     public setLastSize(aLastWidth: number, aLastHeight: number, reason: string){
-    //var aLastWidth = aLastWidth
-    //var aLastHeight = aLastHeight
-    //var reason = reason
 
                         if(this.full[this.WIDTH] != aLastWidth || this.full[this.HEIGHT] != aLastHeight)
                         
@@ -232,9 +228,6 @@ this.scaleLargestTo= scaleLargestTo;
 
 
     setLastSizeForce(aLastWidth: number, aLastHeight: number, reason: string){
-var aLastWidth = aLastWidth
-var aLastHeight = aLastHeight
-    //var reason = reason
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -376,8 +369,6 @@ this.add(this.SET_LAST_SIZE_METHOD_NAME);
 
 
     public isPortraitWH(lastWidth: number, lastHeight: number): boolean{
-    //var lastWidth = lastWidth
-    //var lastHeight = lastHeight
 
                         if(lastHeight > lastWidth)
                         
@@ -425,7 +416,6 @@ this.add(this.SET_LAST_SIZE_METHOD_NAME);
     private readonly list: BasicArrayList = new BasicArrayListD();
 
     public add(reason: string){
-    //var reason = reason
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -493,8 +483,6 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.FIRE_METHOD_NAME, e);
 
 
     public update(displayable: Displayable, reason: string){
-    //var displayable = displayable
-    //var reason = reason
 
     var aLastWidth: number = displayable.getWidth()!;
 ;
@@ -688,7 +676,6 @@ this.add(this.commonStrings!.UPDATE);
 
 
     public toStringAppend(stringBuffer: StringMaker): string{
-    //var stringBuffer = stringBuffer
 stringBuffer!.append(this.DISPLAY_INFO);
     
 stringBuffer!.append(this.FULL);
@@ -847,8 +834,6 @@ stringBuffer!.appendint(this.lastHalf[this.HEIGHT]!);
 
 
     public setCustom(width: number, height: number){
-    //var width = width
-    //var height = height
 this.last[this.CUSTOM_WIDTH]= width;
     
 this.lastHalf[this.CUSTOM_WIDTH]= (this.last[this.CUSTOM_WIDTH]>>1);
@@ -861,7 +846,6 @@ this.lastHalf[this.CUSTOM_HEIGHT]= (this.last[this.CUSTOM_HEIGHT]>>1);
 
 
     public setScalableListener(scalableListener: BaseScalable){
-var scalableListener = scalableListener
 this.scalableListener= scalableListener;
     
 }
@@ -898,8 +882,6 @@ this.scalableListener= scalableListener;
 
 
     public setOffset(left: number, top: number){
-var left = left
-var top = top
 this.left= left;
     
 }

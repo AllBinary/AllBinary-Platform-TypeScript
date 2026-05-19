@@ -104,7 +104,6 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
 
 
     public initInputProcessorsForTestInput(aTestInputInterface: TestInputInterface){
-var aTestInputInterface = aTestInputInterface
 
     var testInputInterface: TestInputInterface = aTestInputInterface;
 ;
@@ -117,8 +116,6 @@ this.inputProcessorArray[Canvas.UP]= new class extends GameInputProcessor
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 testInputInterface!.up();
     
 }
@@ -132,8 +129,6 @@ this.inputProcessorArray[Canvas.DOWN]= new class extends GameInputProcessor
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 testInputInterface!.down();
     
 }
@@ -147,8 +142,6 @@ this.inputProcessorArray[Canvas.LEFT]= new class extends GameInputProcessor
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 testInputInterface!.left();
     
 }
@@ -162,8 +155,6 @@ this.inputProcessorArray[Canvas.RIGHT]= new class extends GameInputProcessor
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 testInputInterface!.right();
     
 }
@@ -177,8 +168,6 @@ this.inputProcessorArray[Canvas.KEY_NUM7]= new class extends GameInputProcessor
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 testInputInterface!.strafeLeft();
     
 }
@@ -192,8 +181,6 @@ this.inputProcessorArray[Canvas.KEY_NUM9]= new class extends GameInputProcessor
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 testInputInterface!.strafeRight();
     
 }
@@ -210,8 +197,6 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInputList(allbinaryLayerManager: AllBinaryLayerManager, list: BasicArrayList){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var list = list
 
     var key: number = 0;
 ;
@@ -247,7 +232,6 @@ this.inputProcessorArray[key]!.processEvent(allbinaryLayerManager, GameKeyEvent.
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public processInput(allbinaryLayerManager: AllBinaryLayerManager){
-var allbinaryLayerManager = allbinaryLayerManager
 this.processInputList(allbinaryLayerManager, this.getGameKeyEventList());
     
 this.getGameKeyEventList()!.clear();
@@ -256,7 +240,6 @@ this.getGameKeyEventList()!.clear();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.paintable.paint(graphics);
     
 }

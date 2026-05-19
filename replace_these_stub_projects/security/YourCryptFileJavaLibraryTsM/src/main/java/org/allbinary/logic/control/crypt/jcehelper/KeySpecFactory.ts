@@ -53,8 +53,6 @@ export class KeySpecFactory
     public static readonly DESEDE: string = "DESede";
 
     public static getInstance(algorithm: string, keyData: number[]): KeySpec{
-var algorithm = algorithm
-var keyData = keyData
 
 
 

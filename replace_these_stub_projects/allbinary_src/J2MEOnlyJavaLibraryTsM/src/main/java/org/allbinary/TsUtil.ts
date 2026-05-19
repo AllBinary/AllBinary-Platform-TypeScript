@@ -71,7 +71,6 @@ export class TsUtil
 
 
     public hashCode(anyType: any = {}): number{
-var anyType = anyType
 
 
 
@@ -84,8 +83,6 @@ var anyType = anyType
                 //@Throws(InterruptedException.constructor)
             
     public waitFor(any: any = {}, timeoutMillis: number){
-var any = any
-    //var timeoutMillis = timeoutMillis
 
     var anyType: any = any as Object;
 ;
@@ -98,8 +95,6 @@ anyType!.wait(timeoutMillis);
                 //@Throws(RecordStoreNotOpenException.constructor, InvalidRecordIDException.constructor, RecordStoreException.constructor)
             
     public getRecord(anyType: any = {}, recordId: number): number[]{
-    //var anyType = anyType
-    //var recordId = recordId
 
     var recordStore: RecordStore = anyType as RecordStore;
 ;
@@ -133,6 +128,26 @@ recordStore!.getRecord(recordId, data, 0);
                             data;
 
     ;
+    
+}
+
+
+    public compareTo(a: string, b: string): number{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return a.compareTo(b);;
+    
+}
+
+
+    public matchIgnoreCase(a: string, b: string): boolean{
+
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return a.equalsIgnoreCase(b);;
     
 }
 

@@ -95,7 +95,6 @@ export class InputRobotFactory
                 //@Throws(Exception.constructor)
             
     public static loadLibraries(collection: Collection){
-var collection = collection
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -119,7 +118,6 @@ InputRobotFactory.loadLibrary(iterator.next() as InputRobotInterface);
                 //@Throws(Exception.constructor)
             
     public static loadLibrary(inputRobotInterface: InputRobotInterface){
-    //var inputRobotInterface = inputRobotInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -196,7 +194,6 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONS
 
 
     public addListener(helpSetListenerInterface: HelpSetListener){
-    //var helpSetListenerInterface = helpSetListenerInterface
 this.helpSetListenerInterface= helpSetListenerInterface;
     
 }
@@ -205,7 +202,6 @@ this.helpSetListenerInterface= helpSetListenerInterface;
                 //@Throws(Exception.constructor)
             
     public add(inputRobotInterface: InputRobotInterface){
-    //var inputRobotInterface = inputRobotInterface
 this.logUtil!.putF("Adding InputRobotInterface: " +inputRobotInterface!.getName(), this, "add");
     
 this.get()!.put(inputRobotInterface!.getName(), inputRobotInterface);
@@ -362,7 +358,6 @@ securedNativeLibraryInterface!.unload();
 
 
     public get(name: string): InputRobotInterface{
-    //var name = name
 this.logUtil!.putF("Getting Robot: " +name, this, "getRobots");
     
 

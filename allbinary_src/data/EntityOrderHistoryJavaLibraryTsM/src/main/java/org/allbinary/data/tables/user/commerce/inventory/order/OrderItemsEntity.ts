@@ -114,8 +114,6 @@ this.setTableName(this.tableName);
 
 
     public insert(userName: string, order: OrderInterface){
-var userName = userName
-var order = order
 
     var vector: Vector = new Vector();
 ;
@@ -288,9 +286,6 @@ this.insert(vector);
 
 
     public setStatus(orderId: string, groupId: string, status: string){
-var orderId = orderId
-var groupId = groupId
-var status = status
 
         try {
             
@@ -328,7 +323,6 @@ super.updateWhere(whereHashMap, updateHashMap);
 
 
     public isEverythingShipped(orderId: string): boolean{
-var orderId = orderId
 
         try {
             
@@ -347,7 +341,7 @@ var orderId = orderId
 ;
     
 
-                        if(status.localeCompare(OrderHistoryData.SHIPPED) != 0)
+                        if(status.compareTo(OrderHistoryData.SHIPPED) != 0)
                         
                                     {
                                     
@@ -392,7 +386,6 @@ var orderId = orderId
 
 
     public getBasketReview(orderId: string): BasketReview{
-var orderId = orderId
 
         try {
             

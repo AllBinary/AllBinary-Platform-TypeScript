@@ -52,8 +52,7 @@ export class AutoSearchValidationInventoryView extends InventorySearch {
         
 public constructor (searchRequest: SearchRequest){
             super(searchRequest);
-                    var searchRequest = searchRequest
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,7 +80,6 @@ public constructor (searchRequest: SearchRequest){
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

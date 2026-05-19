@@ -66,8 +66,6 @@ export class BasicProjectileWeaponPart extends BasicWeaponPart {
         
 
     public static createPart(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): BasicProjectileWeaponPart{
-    //var animationInterface = animationInterface
-    //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
 
 
 
@@ -80,13 +78,7 @@ export class BasicProjectileWeaponPart extends BasicWeaponPart {
     private weaponLayerCircularStaticPool: WeaponLayerCircularPool
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
             super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
-                        //var animationInterface = animationInterface
-    //var sourceLayerInterface = sourceLayerInterface
-    //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
-    //var weaponProperties = weaponProperties
-    //var scoreableInterface = scoreableInterface
-    //var relativeRelationship = relativeRelationship
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -98,11 +90,6 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
                 //@Throws(Exception.constructor)
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var angle = angle
-var otherAngle = otherAngle
-    //var weaponProperties = weaponProperties
-    //var scoreableInterface = scoreableInterface
 
     var weaponLayer: WeaponLayer = this.weaponLayerCircularStaticPool!.getInstance(this.getOwnerLayerInterface(), this.relativeRelationship!.getX(), this.relativeRelationship!.getY(), this.relativeRelationship!.getZ(), Math.round(angle), Math.round(otherAngle), weaponProperties, scoreableInterface)!;
 ;

@@ -55,7 +55,6 @@ export class InputAutomationRobotUtil
                 //@Throws(Exception.constructor)
             
     public static getChangeEvent(inputRobotInterface: InputRobotInterface): InputAutomationRobotChangeEvent{
-var inputRobotInterface = inputRobotInterface
 
     var inputAutomationRobotInterfaceWrapper: InputAutomationRobotInterfaceWrapper = new InputAutomationRobotInterfaceWrapper(inputRobotInterface);
 ;

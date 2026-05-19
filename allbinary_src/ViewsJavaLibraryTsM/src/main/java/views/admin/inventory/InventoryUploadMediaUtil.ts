@@ -106,9 +106,7 @@ export class InventoryUploadMediaUtil
 public constructor (storeFrontInterface: StoreFrontInterface, itemInterface: ItemInterface){
 
             super();
-        var storeFrontInterface = storeFrontInterface
-var itemInterface = itemInterface
-this.storeFrontInterface= storeFrontInterface;
+        this.storeFrontInterface= storeFrontInterface;
     
 this.itemInterface= itemInterface;
     
@@ -118,9 +116,6 @@ this.itemInterface= itemInterface;
                 //@Throws(Exception.constructor)
             
     public saveFiles(byteArray: number[], fileName: string, mediaData: MediaData): ItemInterface{
-var byteArray = byteArray
-var fileName = fileName
-var mediaData = mediaData
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
@@ -396,7 +391,6 @@ this.logUtil!.putF(commonStrings!.END, this, "saveFiles()");
 
 
     setFileNames(fileName: string){
-var fileName = fileName
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

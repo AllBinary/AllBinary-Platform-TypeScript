@@ -93,9 +93,7 @@ export class BasketRequestHelper extends TagHelper {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-this.propertiesHashMap= propertiesHashMap;
+        this.propertiesHashMap= propertiesHashMap;
     
 this.pageContext= pageContext;
     

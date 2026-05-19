@@ -73,9 +73,6 @@ export class InventoryColumnUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public getColumnWhereLike(inventoryEntity: InventoryEntity, category: string, column: string): Vector{
-var inventoryEntity = inventoryEntity
-var category = category
-var column = column
 this.logUtil!.putF("Start Category: " +category, this, "getKeywords");
     
 

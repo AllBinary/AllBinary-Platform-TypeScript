@@ -60,9 +60,7 @@ export class TransformInfoDomNodeView extends TransformInfoDomNode implements Do
         
 public constructor (transformInfoInterface: TransformInfoInterface, mapping: string){
             super(transformInfoInterface, mapping);
-                    var transformInfoInterface = transformInfoInterface
-var mapping = mapping
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -70,8 +68,7 @@ var mapping = mapping
 
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,9 +76,7 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 public constructor (name: string, mappedName: string){
             super(name, mappedName);
-                    var name = name
-var mappedName = mappedName
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -90,8 +85,7 @@ var mappedName = mappedName
 public constructor (name: string){
             super(name, 
                             null);
-                    var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -101,7 +95,6 @@ public constructor (name: string){
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
 ;

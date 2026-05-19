@@ -92,7 +92,6 @@ this.totalFrames= 0;
 
 
     public add(string: string){
-var string = string
 }
 
 
@@ -346,7 +345,6 @@ this.STRING_ARRAY[9]= string;
 
 
     public toStringAt(totalTime: number): string{
-var totalTime = totalTime
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

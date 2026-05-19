@@ -61,10 +61,7 @@ export class Rectangle
 public constructor (point: GPoint, width: number, height: number){
 
             super();
-        var point = point
-var width = width
-var height = height
-this.point= point;
+        this.point= point;
     
 this.width= width;
     
@@ -84,7 +81,6 @@ this.height= height;
 
 
     public setPoint(point: GPoint){
-    //var point = point
 this.point= point;
     
 }
@@ -121,7 +117,6 @@ this.point= point;
 
 
     public setWidth(width: number){
-var width = width
 this.width= width;
     
 }
@@ -138,7 +133,6 @@ this.width= width;
 
 
     public setHeight(height: number){
-var height = height
 this.height= height;
     
 }

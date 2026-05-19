@@ -46,11 +46,7 @@ export class RemoteInfo
 public constructor (username: string, actorSessionId: number, playerInputId: number, id: number){
 
             super();
-        var username = username
-var actorSessionId = actorSessionId
-var playerInputId = playerInputId
-var id = id
-}
+        }
 
 
 }

@@ -63,7 +63,6 @@ export class FileUnamedUtil
     private readonly commonSeps: CommonSeps = CommonSeps.getInstance()!;
 
     public process(string: string): string{
-var string = string
 
     var simplifiedString: string = string.toLowerCase()!;
 ;

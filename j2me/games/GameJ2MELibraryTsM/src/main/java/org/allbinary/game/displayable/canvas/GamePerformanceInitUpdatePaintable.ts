@@ -75,7 +75,6 @@ this.baseRefreshHelperCharArray= GameStatisticsFactory.getInstance()!.toCharArra
     private readonly RED: number = BasicColorFactory.getInstance()!.RED.intValue()!;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;

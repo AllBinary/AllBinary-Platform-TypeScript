@@ -54,8 +54,6 @@ export class NoLicense
                 //@Throws(Exception.constructor)
             
     public static init(classLoader: ClassLoader, pathString: string){
-var classLoader = classLoader
-var pathString = pathString
 Globals.init(classLoader, pathString);
     
 }

@@ -57,8 +57,7 @@ export class GameAdState extends GameAdStateBase implements VirtualKeyboardEvent
         
 public constructor (adConfiguration: AdConfiguration){
             super(adConfiguration);
-                    var adConfiguration = adConfiguration
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -70,7 +69,6 @@ VirtualKeyboardEventHandler.getInstance()!.addListenerInterface(this);
                 //@Throws(Exception.constructor)
             
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
-var virtualKeyboardEvent = virtualKeyboardEvent
 }
 
 

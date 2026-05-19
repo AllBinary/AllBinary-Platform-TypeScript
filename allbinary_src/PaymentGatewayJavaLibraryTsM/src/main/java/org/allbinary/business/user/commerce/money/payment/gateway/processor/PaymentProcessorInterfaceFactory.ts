@@ -89,7 +89,6 @@ private constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(transformInfoInterface: TransformInfoInterface): PaymentProcessorInterface{
-var transformInfoInterface = transformInfoInterface
 
         try {
             

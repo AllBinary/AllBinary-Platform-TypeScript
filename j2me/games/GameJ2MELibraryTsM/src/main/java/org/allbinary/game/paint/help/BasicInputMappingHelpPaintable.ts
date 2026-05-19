@@ -72,9 +72,7 @@ export class BasicInputMappingHelpPaintable extends HelpPaintable {
     private readonly NONE: GameKey = GameKeyFactory.getInstance()!.NONE;
 protected constructor (gameInputMappingArray: GameInputMapping[], basicColor: BasicColor){
             super("Help Screen", BasicColorFactory.getInstance()!.BLACK, basicColor);
-                        //var gameInputMappingArray = gameInputMappingArray
-    //var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -86,8 +84,6 @@ this.update(this.NONE, this.NONE);
 
 
     public update(selectedGameKey: GameKey, selectedInput: Input){
-    //var selectedGameKey = selectedGameKey
-    //var selectedInput = selectedInput
 
     var gameKeyMapping: PersistentInputMapping = PlatformInputMappingFactory.getInstance()!.getPersistentInputMappingInstance()!;
 ;
@@ -147,7 +143,6 @@ super.setInputInfoP(keyInfo);
 
 
     get(keyList: BasicArrayList): string{
-    //var keyList = keyList
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;

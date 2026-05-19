@@ -75,7 +75,6 @@ export class ActivityFractureUtilAPI5 extends ActivityFractureUtilAPI1 {
     private readonly FEATURE_TOUCHSCREEN_MULTITOUCH_DISTINCT: string = "android.hardware.touchscreen.multitouch.distinct";
 
     public process(activity: Activity){
-    //var activity = activity
 
     var touchScreenFactory: TouchScreenFactory = TouchScreenFactory.getInstance()!;
 ;
@@ -102,7 +101,6 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
     isTouch(activity: Activity): boolean{
-    //var activity = activity
 
 
 
@@ -113,7 +111,6 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
     isMultiTouch(activity: Activity): boolean{
-    //var activity = activity
 
 
 
@@ -124,7 +121,6 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
     isMultiTouchDistinct(activity: Activity): boolean{
-    //var activity = activity
 
 
 
@@ -135,8 +131,6 @@ PreLogUtil.put(touchScreenFactory!.toString(), this, commonStrings!.PROCESS);
 
 
     isFeature(activity: Activity, property: string): boolean{
-    //var activity = activity
-    //var property = property
 
 
 

@@ -76,12 +76,7 @@ export class AllBinaryFlickerAndroidImageRotationAnimation extends ImageBaseRota
     private readonly originalImage: Image
 public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
-                        //var originalImage = originalImage
-    //var image = image
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -97,7 +92,6 @@ this.increment= (this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement());
 
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 
     var changed: boolean = false;
 ;
@@ -132,14 +126,12 @@ this.updateImage();
 
 
     public changeBasicColor(basicColor: BasicColor){
-    //var basicColor = basicColor
 this.setBasicColorP(basicColor);
     
 }
 
 
     public setAlpha(alpha: number){
-    //var alpha = alpha
 
     var changed: boolean = false;
 ;
@@ -198,7 +190,6 @@ this.androidImageUtil!.rotate(this.getImage(), originalImage, matrix, imageModif
 
 
     public setFrame(index: number){
-    //var index = index
 
     var currentFrame: number = this.circularIndexUtil!.getIndex()!;
 ;

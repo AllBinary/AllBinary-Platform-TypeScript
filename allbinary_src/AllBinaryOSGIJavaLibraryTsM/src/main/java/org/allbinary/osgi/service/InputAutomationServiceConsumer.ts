@@ -77,10 +77,7 @@ export class InputAutomationServiceConsumer
 public constructor (registryName: string, bundleContext: BundleContext, osgiServiceVisitorInterface: OSGIServiceVisitorInterface){
 
             super();
-            //var registryName = registryName
-    //var bundleContext = bundleContext
-    //var osgiServiceVisitorInterface = osgiServiceVisitorInterface
-this.setRegistryName(registryName);
+        this.setRegistryName(registryName);
     
 this.setBundleContext(bundleContext);
     
@@ -159,7 +156,6 @@ osgiServiceInterface= vector.get(index) as OSGIServiceInterface;
 
 
     public setBundleContext(aBundleContext: BundleContext){
-var aBundleContext = aBundleContext
 this.bundleContext= aBundleContext;
     
 }
@@ -176,7 +172,6 @@ this.bundleContext= aBundleContext;
 
 
     public setRegistryName(registryName: string){
-var registryName = registryName
 this.registryName= registryName;
     
 }
@@ -193,7 +188,6 @@ this.registryName= registryName;
 
 
     public setOsgiServiceVisitorInterface(osgiServiceVisitorInterface: OSGIServiceVisitorInterface){
-var osgiServiceVisitorInterface = osgiServiceVisitorInterface
 this.osgiServiceVisitorInterface= osgiServiceVisitorInterface;
     
 }

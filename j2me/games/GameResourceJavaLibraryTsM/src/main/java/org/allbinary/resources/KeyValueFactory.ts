@@ -63,7 +63,6 @@ export class KeyValueFactory
     public readonly MAP: Hashtable<any, any> = new Hashtable<any, any>();
 
     public get(key: string): string{
-var key = key
 
     var value: string = this.MAP.get(key as Object) as string;
 ;

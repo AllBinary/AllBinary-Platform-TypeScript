@@ -57,8 +57,6 @@ export class ColorDelta
         
 
     public static getKey(rgb1: number, rgb2: number): any{
-var rgb1 = rgb1
-var rgb2 = rgb2
 
 
 
@@ -77,9 +75,7 @@ var rgb2 = rgb2
 public constructor (rgb1: number, rgb2: number){
 
             super();
-        var rgb1 = rgb1
-var rgb2 = rgb2
-this.setRgb1(rgb1);
+        this.setRgb1(rgb1);
     
 this.setRgb2(rgb2);
     
@@ -109,7 +105,6 @@ this.key= ColorDelta.getKey(rgb1, rgb2);
 
 
     setRgb1(rgb1: number){
-var rgb1 = rgb1
 this.rgb1= rgb1;
     
 }
@@ -126,7 +121,6 @@ this.rgb1= rgb1;
 
 
     setRgb2(rgb2: number){
-var rgb2 = rgb2
 this.rgb2= rgb2;
     
 }

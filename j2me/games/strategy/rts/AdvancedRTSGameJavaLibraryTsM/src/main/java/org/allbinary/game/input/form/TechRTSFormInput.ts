@@ -98,8 +98,7 @@ export class TechRTSFormInput extends RTSFormInput {
     readonly noMoneyGameNotificationEvent: GameNotificationEvent
 public constructor (groupInterface: Group[]){
             super(groupInterface);
-                        //var groupInterface = groupInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -115,7 +114,6 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -134,11 +132,6 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
                 //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var item = item
-    //var itemIndex = itemIndex
 super.process(layerManager);
     
 

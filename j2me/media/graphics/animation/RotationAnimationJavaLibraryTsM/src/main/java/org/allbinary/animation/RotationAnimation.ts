@@ -70,10 +70,7 @@ export class RotationAnimation extends IndexedAnimation implements RotationAnima
     circularIndexUtil: CircularIndexUtil
 protected constructor (angleInfo: AngleInfo, circularIndexUtil: CircularIndexUtil, animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var angleInfo = angleInfo
-    //var circularIndexUtil = circularIndexUtil
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -113,7 +110,6 @@ this.angleInfo!.adjustAngle(this.circularIndexUtil!.previous());
 
 
     public setFrame(index: number){
-    //var index = index
 this.circularIndexUtil!.setIndex(index);
     
 
@@ -126,7 +122,6 @@ this.angleInfo!.adjustAngle(newFrame);
 
 
     public setFrameByDirection(direction: Direction){
-    //var direction = direction
 
     var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
 ;
@@ -137,21 +132,18 @@ this.adjustFrameToAngle(angle);
 
 
     public setFrameToAngle(angle: Angle){
-    //var angle = angle
 this.adjustFrameToAngle(angle);
     
 }
 
 
     public adjustFrameToAngle(angle: Angle){
-    //var angle = angle
 this.adjustFrame(angle.getValue());
     
 }
 
 
     public adjustFrame(angle: number){
-    //var angle = angle
 this.setFrame(this.frameUtil!.getFrameForAngle(angle, Math.round(this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())));
     
 }

@@ -84,9 +84,6 @@ private constructor (){
 
 
     public loadFileAsList(file: AbFile, max: number, byteArray1: number[]): BasicArrayList{
-    //var file = file
-    //var max = max
-    //var byteArray1 = byteArray1
 
     var inputStream: AbFileInputStream = 
                 null

@@ -81,9 +81,7 @@ export class RotationAnimationFactory
 public constructor (totalAngle: number, angleIncrement: number){
 
             super();
-        var totalAngle = totalAngle
-var angleIncrement = angleIncrement
-this.totalAngle= totalAngle;
+        this.totalAngle= totalAngle;
     
 this.angleIncrement= angleIncrement;
     
@@ -93,7 +91,6 @@ this.angleIncrement= angleIncrement;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -106,7 +103,6 @@ this.angleIncrement= angleIncrement;
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-var animationInterface = animationInterface
 
 
 
@@ -117,7 +113,6 @@ var animationInterface = animationInterface
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

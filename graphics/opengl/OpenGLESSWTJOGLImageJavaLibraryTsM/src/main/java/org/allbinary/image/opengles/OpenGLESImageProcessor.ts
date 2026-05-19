@@ -61,37 +61,24 @@ export class OpenGLESImageProcessor
 
 
     public translate(gl: GL10, translateX: number, translateY: number){
-var gl = gl
-var translateX = translateX
-var translateY = translateY
 gl.glTranslatef(translateX, translateY, 0);
     
 }
 
 
     public rotate(gl: GL10, angle: number){
-var gl = gl
-var angle = angle
 gl.glRotatef( -angle, 0, 0, 1);
     
 }
 
 
     public scale(gl: GL10, scaleX: number, scaleY: number){
-var gl = gl
-var scaleX = scaleX
-var scaleY = scaleY
 gl.glScalef(scaleX, scaleY, 1);
     
 }
 
 
     public colorMask(gl: GL10, red: number, green: number, blue: number, alpha: number){
-var gl = gl
-var red = red
-var green = green
-var blue = blue
-var alpha = alpha
 }
 
 

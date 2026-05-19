@@ -65,7 +65,6 @@ export class BasicWeaponPartCircularPool
                 //@Throws(Exception.constructor)
             
     public init(basicWeaponPartFactoryInterface: BasicWeaponPartFactoryInterface){
-    //var basicWeaponPartFactoryInterface = basicWeaponPartFactoryInterface
 this.basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance();
     
 }
@@ -75,10 +74,6 @@ this.basicWeaponPart= basicWeaponPartFactoryInterface!.getInstance();
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(sourceLayerInterface: AllBinaryLayer, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship): BasicWeaponPart{
-    //var sourceLayerInterface = sourceLayerInterface
-    //var weaponProperties = weaponProperties
-    //var scoreableInterface = scoreableInterface
-    //var relativeRelationship = relativeRelationship
 this.basicWeaponPart!.init(sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
     
 

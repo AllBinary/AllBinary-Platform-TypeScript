@@ -60,9 +60,6 @@ import { PlayN } from '../../../../../playn/core/PlayN.js';
         
 
     /*actual*/ public static put(specialMessage: string, anyType: any = {}, functionName: string){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
 
     var className: string = PreLogUtil.getClassName(anyType)!;
 ;
@@ -93,10 +90,6 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
     private static readonly LOG_SUCCESS: string = "org.allbinary: ";
 
     /*actual*/ public static putOE(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-    //var exception = exception
 
     var className: string = PreLogUtil.getClassName(anyType)!;
 ;
@@ -125,9 +118,6 @@ PlayN.log()!.error(PreLogUtil.LOG_SUCCESS +message, exception as Throwable);
 
 
     /*actual*/ public static putS(specialMessage: string, className: string, functionName: string){
-    //var specialMessage = specialMessage
-    //var className = className
-    //var functionName = functionName
 
     var message: string = LogFormatUtil.getInstance()!.getS(className, functionName, specialMessage)!;
 ;
@@ -138,10 +128,6 @@ PlayN.log()!.debug(PreLogUtil.LOG_SUCCESS +message);
 
 
     /*actual*/ public static putSE(specialMessage: string, className: string, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var className = className
-    //var functionName = functionName
-    //var exception = exception
 
     var message: string = LogFormatUtil.getInstance()!.get(className, functionName, specialMessage, exception)!;
 ;

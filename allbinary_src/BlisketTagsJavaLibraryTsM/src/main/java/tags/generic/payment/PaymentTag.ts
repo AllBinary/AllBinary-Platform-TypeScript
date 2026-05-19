@@ -77,21 +77,21 @@ this.setObjectFile("views.generic.payment.ValidationView");
                         
                                     {
                                     
-                        if(this.getCommand()!.localeCompare(PaymentData.VIEW) == 0 || this.getCommand()!.localeCompare(PaymentData.CHANGE) == 0 || this.getCommand()!.localeCompare(PaymentData.ADDNEW) == 0)
+                        if(this.getCommand()!.compareTo(PaymentData.VIEW) == 0 || this.getCommand()!.compareTo(PaymentData.CHANGE) == 0 || this.getCommand()!.compareTo(PaymentData.ADDNEW) == 0)
                         
                                     {
                                     
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
                                     
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(this.commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
                                     
@@ -104,7 +104,7 @@ this.setObjectFile("views.generic.payment.ValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(PaymentData.SELECT) == 0)
+                        if(this.getCommand()!.compareTo(PaymentData.SELECT) == 0)
                         
                                     {
                                     

@@ -80,10 +80,7 @@ export class AndroidTitleProgressBar extends ProgressCanvas {
     private portion: number = 0;
 protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -91,7 +88,6 @@ protected constructor (title: string, backgroundBasicColor: BasicColor, foregrou
 
 
     public init(activity: ProgressActivityInterface){
-var activity = activity
 this.progressActivity= activity;
     
 }
@@ -165,9 +161,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_M
 
 
     public addPortion(value: number, text: string, index: number){
-var value = value
-var text = text
-var index = index
 
         try {
             super.addPortion(value, text, index);
@@ -188,8 +181,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
 
 
     public addNormalPortion(value: number, text: string){
-var value = value
-var text = text
 
         try {
             super.addNormalPortion(value, text);
@@ -210,7 +201,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
 
 
     setValue(value: number){
-var value = value
 
         try {
             super.setValue(value);
@@ -233,7 +223,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 

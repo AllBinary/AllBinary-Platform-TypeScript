@@ -69,9 +69,7 @@ export class BasicConstantVelocityMovement extends Movement implements VelocityI
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
 
             super();
-        var basicDecimal = basicDecimal
-var velocityProperties = velocityProperties
-this.setSpeedBasicDecimal(basicDecimal);
+        this.setSpeedBasicDecimal(basicDecimal);
     
 this.velocityProperties= velocityProperties;
     
@@ -79,9 +77,6 @@ this.velocityProperties= velocityProperties;
 
 
     public init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number){
-var speedBasicDecimal = speedBasicDecimal
-var angle = angle
-var otherAngle = otherAngle
 this.speedBasicDecimal= speedBasicDecimal;
     
 
@@ -94,10 +89,6 @@ this.velocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angleFacto
 
 
     public moveOutsideRadius(layer: AllBinaryLayer, radius: number, angle: number, otherAngle: number){
-var layer = layer
-var radius = radius
-var angle = angle
-var otherAngle = otherAngle
 
     var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
 ;
@@ -122,7 +113,6 @@ layer.moveDXYZ(xVector, yVector, zVector);
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-var layer = layer
 layer.moveDXYZ(this.velocityProperties!.getVelocityXBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityYBasicDecimalP()!.getScaled(), this.velocityProperties!.getVelocityZBasicDecimalP()!.getScaled());
     
 }
@@ -155,14 +145,12 @@ this.velocityProperties!.zero();
 
 
     public setVelocityProperties(velocityProperties: BasicVelocityProperties){
-var velocityProperties = velocityProperties
 this.velocityProperties= velocityProperties;
     
 }
 
 
     setSpeedBasicDecimal(speedBasicDecimal: BasicDecimal){
-var speedBasicDecimal = speedBasicDecimal
 this.speedBasicDecimal= speedBasicDecimal;
     
 }

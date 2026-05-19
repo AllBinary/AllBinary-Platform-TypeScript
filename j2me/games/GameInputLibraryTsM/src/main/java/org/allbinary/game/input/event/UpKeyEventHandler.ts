@@ -69,7 +69,6 @@ export class UpKeyEventHandler extends UpKeyEventHandlerBase {
     private readonly playerInputIdFactory: LocalPlayerInputIdFactory = LocalPlayerInputIdFactory.getInstance()!;
 
     public getInstanceForDevice(deviceId: number): UpKeyEventHandlerBase{
-var deviceId = deviceId
 
     var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
 ;
@@ -84,7 +83,6 @@ var deviceId = deviceId
 
 
     public getInstanceForPlayer(playerInputId: number): UpKeyEventHandlerBase{
-var playerInputId = playerInputId
 
 
 
@@ -118,7 +116,6 @@ UpKeyEventHandler.instanceArray[index]!.removeAllListeners();
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 super.removeListenerSingleThreaded(eventListenerInterface);
     
 
@@ -137,7 +134,6 @@ UpKeyEventHandler.instanceArray[index]!.removeListenerSingleThreaded(eventListen
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 super.removeListener(eventListenerInterface);
     
 

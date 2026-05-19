@@ -67,11 +67,6 @@ export class HelperFactory
                 //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest): any{
-    //var abeClientInformation = abeClientInformation
-    //var factoryName = factoryName
-    //var className = className
-    //var hashMap = hashMap
-    //var httpServletRequest = httpServletRequest
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -162,11 +157,6 @@ params[1]= httpServletRequest as Object;
                 //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, pageContext: PageContext): any{
-    //var abeClientInformation = abeClientInformation
-    //var factoryName = factoryName
-    //var className = className
-    //var hashMap = hashMap
-    //var pageContext = pageContext
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -257,12 +247,6 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                 //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string, hashMap: HashMap<any, any>, specialhashMap: HashMap<any, any>, pageContext: PageContext): any{
-    //var abeClientInformation = abeClientInformation
-    //var factoryName = factoryName
-    //var className = className
-    //var hashMap = hashMap
-    //var specialhashMap = specialhashMap
-    //var pageContext = pageContext
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -357,9 +341,6 @@ logUtil!.put(commonStrings!.EXCEPTION, factoryName +"->HelperFactory", "getInsta
                 //@Throws(LicensingException.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, factoryName: string, className: string): any{
-    //var abeClientInformation = abeClientInformation
-    //var factoryName = factoryName
-    //var className = className
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

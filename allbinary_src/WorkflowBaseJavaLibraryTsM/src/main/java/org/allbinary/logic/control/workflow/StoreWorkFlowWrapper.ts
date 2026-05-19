@@ -56,8 +56,7 @@ export class StoreWorkFlowWrapper extends WorkFlowWrapper {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (anyType: any = {}){
             super(anyType);
-                    var anyType = anyType
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

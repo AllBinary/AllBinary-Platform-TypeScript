@@ -69,7 +69,6 @@ export class TouchScreenTypeFactory
 
 
     public update(activity: Activity){
-var activity = activity
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

@@ -68,11 +68,7 @@ export class BoundBounceAI extends BasicAI {
     private boundsVisitorInterface: BoundsVisitorInterface
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput, layerBounds: LayerBounds, boundsVisitorInterface: BoundsVisitorInterface){
             super(ownerLayerInterface, gameInput);
-                    var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-var layerBounds = layerBounds
-var boundsVisitorInterface = boundsVisitorInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -84,7 +80,6 @@ this.boundsVisitorInterface= boundsVisitorInterface;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var rectange: Rectangle = this.layerBounds!.getRectangleP()!;
 ;
@@ -97,7 +92,6 @@ graphics.drawRect(rectange.getPoint()!.getX(), rectange.getPoint()!.getY(), rect
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 this.layerBounds!.visit(this.boundsVisitorInterface);
     
 }

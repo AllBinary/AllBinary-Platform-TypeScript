@@ -108,7 +108,6 @@ public constructor (){
 
 
     setDisplay(newDisplay: Displayable){
-    //var newDisplay = newDisplay
 
     var title: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;
@@ -171,7 +170,6 @@ display.setCurrent(newDisplay);
 
 
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 this.midletDestroyed= destroyed;
     
 }
@@ -202,13 +200,10 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
 
 
     destroyAppInRunnable(unconditional: boolean, isProgress: boolean){
-var unconditional = unconditional
-var isProgress = isProgress
 }
 
 
     destroyApp(unconditional: boolean){
-var unconditional = unconditional
 
     var METHOD_NAME: string = "AllBinaryMidlet::destroyApp";
 ;
@@ -235,7 +230,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, METHOD_NAME, e);
                 //@Throws(Exception.constructor)
             
     public setStartStateHashtable(hashtable: Hashtable<any, any>){
-var hashtable = hashtable
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, "setStartStateHashtable");
     
@@ -274,8 +268,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getStateHashtable");
 
 
     public commandAction(command: Command, displayable: Displayable){
-var command = command
-var displayable = displayable
 }
 
 

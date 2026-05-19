@@ -76,10 +76,7 @@ export class StoreThemeCategory extends Category implements StoreThemeCategoryIn
     private themeVector: Vector
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
             super(categoryPropertiesFactoryInterface, level);
-                    var transformInfoInterface = transformInfoInterface
-var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-var level = level
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -91,11 +88,7 @@ this.themeVector= new Vector();
 
 public constructor (transformInfoInterface: TransformInfoInterface, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
             super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
-                    var transformInfoInterface = transformInfoInterface
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -107,11 +100,7 @@ this.themeVector= new Vector();
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface, level: number){
             super(categoryPropertiesFactoryInterface, level);
-                    var transformInfoInterface = transformInfoInterface
-var node = node
-var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-var level = level
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -125,12 +114,7 @@ this.addThemes(node);
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node, rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesFactoryInterface: CategoryPropertiesFactoryInterface){
             super(rootCategoryInterface, parentCategoryInterface, categoryPropertiesFactoryInterface);
-                    var transformInfoInterface = transformInfoInterface
-var node = node
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryPropertiesFactoryInterface = categoryPropertiesFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -156,7 +140,6 @@ this.addThemes(node);
                 //@Throws(Exception.constructor)
             
     public addThemes(node: Node){
-var node = node
 
     var themesNode: Node = DomSearchHelper.getNode(ThemesData.getInstance()!.NAME, node.getChildNodes())!;
 ;
@@ -178,7 +161,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(themeNode!.getNodeName()!.localeCompare(ThemeData.getInstance()!.NAME) == 0)
+                        if(themeNode!.getNodeName()!.compareTo(ThemeData.getInstance()!.NAME) == 0)
                         
                                     {
                                     this.themeVector!.add(new ThemeValidation(this, themeNode));
@@ -192,7 +175,6 @@ index < nodeList!.getLength(); index++)
 
 
     public addTheme(themeValidation: ThemeValidation){
-var themeValidation = themeValidation
 this.themeVector!.add(themeValidation);
     
 }

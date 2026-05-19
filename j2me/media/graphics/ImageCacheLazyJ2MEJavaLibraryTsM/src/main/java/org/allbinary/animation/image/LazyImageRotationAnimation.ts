@@ -102,12 +102,7 @@ export class LazyImageRotationAnimation extends RotationAnimation {
     public scaleProperties: ScaleProperties = ScaleProperties.instance;
 public constructor (layoutIndex: number, instanceId: number, scaleProperties: ScaleProperties, animationInterfaceFactoryInterface: BaseImageAnimationFactory, animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
-                        //var layoutIndex = layoutIndex
-    //var instanceId = instanceId
-    //var scaleProperties = scaleProperties
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -133,7 +128,6 @@ this.animation= new class extends RotationAnimation
     private index: number= 0
 
     public setFrame(index: number){
-    //var index = index
 this.index= index;
     
 }
@@ -148,9 +142,6 @@ this.index= index;
 }
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
         try {
             ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.prototype);
@@ -172,10 +163,6 @@ logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 }
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 
         try {
             ImageCacheFactory.getInstance()!.insertFirst(LazyImageRotationAnimation.prototype);
@@ -227,8 +214,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, SET_REAL_ANIMATION, e);
 
 
     public setScale(scaleX: number, scaleY: number){
-    //var scaleX = scaleX
-    //var scaleY = scaleY
 this.animation.setScale(scaleX, scaleY);
     
 }
@@ -247,36 +232,30 @@ this.animation.setScale(scaleX, scaleY);
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-    //var gl = gl
 this.animation.set(gl);
     
 }
 
 
     public setAlpha(alpha: number){
-    //var alpha = alpha
 this.animation.setAlpha(alpha);
     
 }
 
 
     public setDx(dx: number){
-    //var dx = dx
 this.animation.setDx(dx);
     
 }
 
 
     public setDy(dy: number){
-    //var dy = dy
 this.animation.setDy(dy);
     
 }
 
 
     public setMaxScale(maxScaleX: number, maxScaleY: number){
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 this.animation.setMaxScale(maxScaleX, maxScaleY);
     
 }
@@ -331,7 +310,6 @@ animation.
 
 
     public changeBasicColor(basicColor: BasicColor){
-    //var basicColor = basicColor
 this.animation.changeBasicColor(basicColor);
     
 }
@@ -422,7 +400,6 @@ this.animation.reset();
 
 
     public setFrame(index: number){
-    //var index = index
 this.animation.setFrame(index);
     
 }
@@ -477,7 +454,6 @@ this.animation.previousFrame();
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 this.animation.setSequence(sequence);
     
 }
@@ -504,9 +480,6 @@ this.animation.setSequence(sequence);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
         try {
             this.animation.paintXY(graphics, x, y);
@@ -523,10 +496,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.PROCESS, e
 
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 
         try {
             this.animation.paintThreed(graphics, x, y, z);

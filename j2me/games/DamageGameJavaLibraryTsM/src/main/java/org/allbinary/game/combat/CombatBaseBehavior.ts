@@ -60,9 +60,7 @@ export class CombatBaseBehavior
 public constructor (damageableBaseBehavior: DamageableBaseBehavior, destroyableBaseBehavior: DestroyableBaseBehavior){
 
             super();
-        var damageableBaseBehavior = damageableBaseBehavior
-var destroyableBaseBehavior = destroyableBaseBehavior
-this.damageableBaseBehavior= damageableBaseBehavior;
+        this.damageableBaseBehavior= damageableBaseBehavior;
     
 this.destroyableBaseBehavior= destroyableBaseBehavior;
     
@@ -100,7 +98,6 @@ this.destroyableBaseBehavior= destroyableBaseBehavior;
 
 
     public setReadyForExplosion(readyForExplosion: boolean){
-var readyForExplosion = readyForExplosion
 this.readyForExplosion= readyForExplosion;
     
 }

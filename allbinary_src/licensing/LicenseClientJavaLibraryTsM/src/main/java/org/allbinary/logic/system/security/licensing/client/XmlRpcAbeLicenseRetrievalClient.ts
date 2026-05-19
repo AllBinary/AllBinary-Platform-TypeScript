@@ -77,8 +77,7 @@ export class XmlRpcAbeLicenseRetrievalClient extends XmlRpcAbeClient {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "LicServ.getLicense");
-                    var clientInfo = clientInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -88,8 +87,6 @@ public constructor (clientInfo: AbeClientInformationInterface){
                 //@Throws(Exception.constructor)
             
     public get(anyType: any = {}, cryptInterface: CryptInterface): any{
-    //var anyType = anyType
-    //var cryptInterface = cryptInterface
 
         try {
             

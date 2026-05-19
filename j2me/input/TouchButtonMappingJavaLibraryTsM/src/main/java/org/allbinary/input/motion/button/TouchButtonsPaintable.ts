@@ -66,8 +66,7 @@ export class TouchButtonsPaintable extends Paintable {
 public constructor (basicColor: BasicColor){
 
             super();
-        var basicColor = basicColor
-this.foregroundBasicColor= basicColor;
+        this.foregroundBasicColor= basicColor;
     
 this.foregroundColor= basicColor!.intValue();
     
@@ -75,7 +74,6 @@ this.foregroundColor= basicColor!.intValue();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var list: BasicArrayList = this.touchButtonFactory!.getList()!;
 ;

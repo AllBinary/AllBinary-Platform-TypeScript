@@ -90,8 +90,7 @@ public constructor (){
 
 public constructor (userName: string){
             super(new UserDbInitInfo());
-                    var userName = userName
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -101,7 +100,6 @@ this.userName= userName;
 
 
     public remove(index: Integer){
-var index = index
 
         try {
             
@@ -142,15 +140,12 @@ super.deleteWhere(whereHashMap);
 
 
     public add(address: StreetAddress){
-var address = address
 this.add(address, TableDataFactory.getInstance()!.INTEGER_MAX_VALUE_STRING);
     
 }
 
 
     add(address: StreetAddress, index: string){
-var address = address
-var index = index
 
         try {
             
@@ -218,7 +213,6 @@ this.setDefault(getLastId());
 
 
     public update(address: StreetAddress){
-var address = address
 
         try {
             
@@ -355,7 +349,6 @@ index < size; index++)
 
 
     public get(index: Integer): StreetAddress{
-var index = index
 
         try {
             
@@ -508,7 +501,6 @@ addressHashMap= super.getRow(updateKeyAndValue);
 
 
     public setDefault(value: string){
-var value = value
 
         try {
             

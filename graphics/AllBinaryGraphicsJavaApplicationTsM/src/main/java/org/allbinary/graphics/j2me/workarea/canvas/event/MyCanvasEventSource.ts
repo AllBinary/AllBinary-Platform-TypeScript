@@ -56,9 +56,7 @@ export class MyCanvasEventSource
 public constructor (command: string, treeNode: MutableTreeNode){
 
             super();
-        var command = command
-var treeNode = treeNode
-this.command= command;
+        this.command= command;
     
 this.treeNode= treeNode;
     
@@ -67,10 +65,7 @@ this.treeNode= treeNode;
 public constructor (command: string, angle: number, treeNode: MutableTreeNode){
 
             super();
-        var command = command
-var angle = angle
-var treeNode = treeNode
-this.command= command;
+        this.command= command;
     
 this.treeNode= treeNode;
     
@@ -110,7 +105,6 @@ this.setAngle(angle);
 
 
     public setAngle(angle: number){
-var angle = angle
 this.angle= angle;
     
 }

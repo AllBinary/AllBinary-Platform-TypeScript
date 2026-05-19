@@ -84,7 +84,6 @@ private constructor (){
 
 
     public addListener(playerGameInput: PlayerGameInput){
-var playerGameInput = playerGameInput
 
                         if(!this.list.contains(playerGameInput))
                         
@@ -106,7 +105,6 @@ super.removeAllListeners();
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -117,7 +115,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
 
 
@@ -152,8 +149,6 @@ super.fireEvent(eventObject);
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
     var pressGameKeyEventListenerInterface: PressGameKeyEventListenerInterface = (eventListenerInterface as PressGameKeyEventListenerInterface);
 ;

@@ -79,9 +79,7 @@ export class QuoteRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-
+        
     var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
 ;
     

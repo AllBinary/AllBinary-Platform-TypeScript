@@ -85,7 +85,6 @@ export class WeblisketFinder
                 //@Throws(Exception.constructor)
             
     public static main(args: string[]){
-var args = args
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
@@ -111,7 +110,6 @@ private constructor (){
 
 
     public findAll(path: string): BasicArrayList{
-var path = path
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "findAll");
@@ -149,7 +147,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "findAll", e);
 
 
     public getInstallationPath(file: AbFile): string{
-var file = file
 
         try {
             

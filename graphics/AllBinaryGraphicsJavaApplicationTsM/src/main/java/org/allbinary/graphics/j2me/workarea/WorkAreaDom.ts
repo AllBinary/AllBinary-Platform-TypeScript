@@ -70,8 +70,7 @@ export class WorkAreaDom
 public constructor (document: Document){
 
             super();
-        var document = document
-
+        
     var workAreaNodeList: NodeList = document.getElementsByTagName(this.WORKAREA)!;
 ;
     

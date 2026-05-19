@@ -54,8 +54,7 @@ export class DestroyableSimpleBehavior extends DestroyableBaseBehavior {
 public constructor (ownerLayer: CollidableCompositeLayer){
 
             super();
-        var ownerLayer = ownerLayer
-this.ownerLayer= ownerLayer;
+        this.ownerLayer= ownerLayer;
     
 }
 
@@ -71,7 +70,6 @@ this.ownerLayer= ownerLayer;
 
 
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 this.destroyed= destroyed;
     
 

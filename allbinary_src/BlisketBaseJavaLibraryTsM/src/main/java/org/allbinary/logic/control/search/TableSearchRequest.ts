@@ -72,11 +72,7 @@ export class TableSearchRequest
 public constructor (keywords: string, searchParams: SearchParams, xslFile: string, contentType: string){
 
             super();
-        var keywords = keywords
-var searchParams = searchParams
-var xslFile = xslFile
-var contentType = contentType
-this.keywords= keywords;
+        this.keywords= keywords;
     
 this.searchParams= searchParams;
     
@@ -90,35 +86,30 @@ this.contentType= contentType;
 
 
     public setKeywords(value: string){
-var value = value
 this.keywords= value;
     
 }
 
 
     public setParams(searchParams: SearchParams){
-var searchParams = searchParams
 this.searchParams= searchParams;
     
 }
 
 
     public setXslFile(value: string){
-var value = value
 this.xslFile= value;
     
 }
 
 
     public setFileBaseName(value: string){
-var value = value
 this.pageName= value;
     
 }
 
 
     public setContentType(value: string){
-var value = value
 this.contentType= value;
     
 }
@@ -183,7 +174,6 @@ this.contentType= value;
                 //@Throws(Exception.constructor)
             
     public getFileBaseNameNode(document: Document): Node{
-var document = document
 
 
 

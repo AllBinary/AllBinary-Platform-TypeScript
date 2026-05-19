@@ -113,8 +113,6 @@ super.removeAllListeners();
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
                         if(!this.enabled)
                         

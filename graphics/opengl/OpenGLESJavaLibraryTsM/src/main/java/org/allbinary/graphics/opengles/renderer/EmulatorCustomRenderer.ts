@@ -70,8 +70,6 @@ export class EmulatorCustomRenderer
     readonly renderStrings: RendererStrings = RendererStrings.getInstance()!;
 
     public onSurfaceCreated(gl: GL10, eglConfig: EGLConfig){
-    //var gl = gl
-    //var eglConfig = eglConfig
 this.logUtil!.putF(this.commonStrings!.START, this, this.renderStrings!.ON_SURFACE_CREATED);
     
 

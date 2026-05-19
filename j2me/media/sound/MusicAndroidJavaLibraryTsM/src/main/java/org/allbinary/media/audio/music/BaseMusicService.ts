@@ -80,7 +80,6 @@ export class BaseMusicService extends Service {
     private rightVolume: number =  -1;
 
     public onBind(intent: Intent): IBinder{
-    //var intent = intent
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.BIND);
     
 
@@ -162,8 +161,6 @@ this.player.start();
 
 
     public onStart(intent: Intent, startid: number){
-    //var intent = intent
-    //var startid = startid
 this.onStartCommandIntent(intent);
     
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.START);
@@ -172,9 +169,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.STA
 
 
     public onStartCommand(intent: Intent, flags: number, startId: number): number{
-    //var intent = intent
-    //var flags = flags
-    //var startId = startId
 this.onStartCommandIntent(intent);
     
 
@@ -187,7 +181,6 @@ this.onStartCommandIntent(intent);
 
 
     public onStartCommandIntent(intent: Intent){
-    //var intent = intent
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStateStrings!.ON_START_COMMAND);
     
 
@@ -302,7 +295,7 @@ Thread.sleep(1200);
     
 }
 
-onStartCommandIntent(intent);
+BaseMusicService.prototype.onStartCommandIntent(intent);
     
 
                 //: 

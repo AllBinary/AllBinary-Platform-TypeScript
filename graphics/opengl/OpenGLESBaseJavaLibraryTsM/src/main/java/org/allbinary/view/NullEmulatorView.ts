@@ -54,17 +54,14 @@ export class NullEmulatorView
     public static readonly NULL_EMULATOR_VIEW: NullEmulatorView = new NullEmulatorView();
 
     public setMidlet(midlet: MIDlet){
-    //var midlet = midlet
 }
 
 
     public onEmulatorInitComplete(midletActivity: any = {}){
-    //var midletActivity = midletActivity
 }
 
 
     public onSetDisplayable(displayable: Displayable){
-var displayable = displayable
 }
 
 

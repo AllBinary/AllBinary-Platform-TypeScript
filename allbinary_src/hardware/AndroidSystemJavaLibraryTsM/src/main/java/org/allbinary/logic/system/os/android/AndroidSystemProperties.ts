@@ -74,8 +74,7 @@ export class AndroidSystemProperties
 public constructor (context: Context){
 
             super();
-        var context = context
-}
+        }
 
 
     public getDeviceId(): string{

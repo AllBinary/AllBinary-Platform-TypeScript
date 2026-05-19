@@ -58,8 +58,7 @@ export class GameTickTimeDelayHelper
 public constructor (startTime: number){
 
             super();
-            //var startTime = startTime
-this.startTime= startTime;
+        this.startTime= startTime;
     
 this.lastStartTime= 0;
     

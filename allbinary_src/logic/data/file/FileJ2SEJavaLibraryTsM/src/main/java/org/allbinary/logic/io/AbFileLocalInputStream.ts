@@ -52,8 +52,7 @@ export class AbFileLocalInputStream extends AbFileInputStream {
         
 public constructor (file: AbFile){
             super(AbFileNativeUtil.get(file));
-                    var file = file
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

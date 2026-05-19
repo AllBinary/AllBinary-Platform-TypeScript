@@ -49,7 +49,6 @@ export class RendererStateFactory
     private surfaceChanged: boolean = false;
 
     public setLoaded(loaded: boolean){
-var loaded = loaded
 this.loaded= loaded;
     
 }
@@ -66,7 +65,6 @@ this.loaded= loaded;
 
 
     public setSurfaceChanged(initialized: boolean){
-var initialized = initialized
 this.surfaceChanged= initialized;
     
 }

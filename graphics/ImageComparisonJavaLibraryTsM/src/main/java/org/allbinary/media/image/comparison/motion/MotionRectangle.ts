@@ -58,8 +58,7 @@ export class MotionRectangle
 public constructor (rectangle: Rectangle){
 
             super();
-        var rectangle = rectangle
-this.setRectangle(rectangle);
+        this.setRectangle(rectangle);
     
 this.setPixelDeltaVector(new Vector());
     
@@ -77,7 +76,6 @@ this.setPixelDeltaVector(new Vector());
 
 
     public setRectangle(rectangle: Rectangle){
-var rectangle = rectangle
 this.rectangle= rectangle;
     
 }
@@ -94,7 +92,6 @@ this.rectangle= rectangle;
 
 
     public setPixelDeltaVector(pixelDeltaVector: Vector){
-var pixelDeltaVector = pixelDeltaVector
 this.pixelDeltaVector= pixelDeltaVector;
     
 }

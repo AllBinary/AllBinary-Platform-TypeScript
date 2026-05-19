@@ -86,7 +86,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public process(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
     var list: BasicArrayList = this.getList()!;
 ;

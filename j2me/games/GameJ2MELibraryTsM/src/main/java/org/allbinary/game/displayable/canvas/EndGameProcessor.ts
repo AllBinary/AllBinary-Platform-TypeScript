@@ -61,8 +61,7 @@ export class EndGameProcessor extends Processor {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-        var gameCanvas = gameCanvas
-this.gameCanvas= gameCanvas;
+        this.gameCanvas= gameCanvas;
     
 }
 

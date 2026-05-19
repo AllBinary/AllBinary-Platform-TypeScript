@@ -72,11 +72,7 @@ export class ImageArrayAnimationFactory
 public constructor (imageArray: Image[], dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var imageArray = imageArray
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.imageArray= imageArray;
+        this.imageArray= imageArray;
     
 this.animationBehaviorFactory= animationBehaviorFactory;
     
@@ -90,7 +86,6 @@ this.dy= dy;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
                         if(this.dx != 0 || this.dy != 0)
                         
@@ -118,7 +113,6 @@ this.dy= dy;
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

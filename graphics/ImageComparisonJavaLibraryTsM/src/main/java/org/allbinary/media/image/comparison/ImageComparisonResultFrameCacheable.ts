@@ -59,9 +59,7 @@ export class ImageComparisonResultFrameCacheable
 public constructor (imageComparisonResult: ImageComparisonResult, frame: Long){
 
             super();
-        var imageComparisonResult = imageComparisonResult
-var frame = frame
-this.setImageComparisonResult(imageComparisonResult);
+        this.setImageComparisonResult(imageComparisonResult);
     
 this.frame= frame;
     
@@ -89,7 +87,6 @@ this.frame= frame;
 
 
     public setFrame(frame: Long){
-var frame = frame
 this.frame= frame;
     
 }
@@ -106,7 +103,6 @@ this.frame= frame;
 
 
     public setImageComparisonResult(imageComparisonResult: ImageComparisonResult){
-var imageComparisonResult = imageComparisonResult
 this.imageComparisonResult= imageComparisonResult;
     
 }

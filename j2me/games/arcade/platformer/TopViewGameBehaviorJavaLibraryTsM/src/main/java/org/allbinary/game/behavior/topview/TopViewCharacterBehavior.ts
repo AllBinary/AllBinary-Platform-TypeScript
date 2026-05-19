@@ -63,26 +63,14 @@ export class TopViewCharacterBehavior
                 //@Throws(Exception.constructor)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellPosition: GeographicMapCellPosition){
-    //var layer = layer
-    //var direction = direction
-    //var x = x
-    //var y = y
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellPosition = geographicMapCellPosition
 }
 
 
     public terrainMove(layer: AllBinaryLayer, geographicMapInterfaceArray: BasicGeographicMap[], x: number, y: number){
-    //var layer = layer
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var x = x
-    //var y = y
 }
 
 
     public hasSolidBlock(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[]): boolean{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
 
     var size: number = geographicMapInterfaceArray!.length
                 ;

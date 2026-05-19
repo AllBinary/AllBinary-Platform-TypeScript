@@ -351,32 +351,7 @@ export class UnitLayer extends AdvancedRTSGameLayer implements BuildingEventList
     private steeringInsideGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
 protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, vehicleProperties: VehicleProperties, healthInterface: Health, maxResourceLoad: Integer, moveSoundInterface: Sound, waypointLayerInterfaceFactoryInterface: LayerInterfaceFactoryInterface, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, decalAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, resourceAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, direction: Direction, x: number, y: number, z: number, viewPosition: ViewPosition){
             super(remoteInfo, parentLayer, advancedRTSProperties, groupInterface, rootName, name, healthInterface, new WaypointRTSFormInput(groupInterface, true), animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition);
-                        //var remoteInfo = remoteInfo
-    //var parentLayer = parentLayer
-    //var advancedRTSProperties = advancedRTSProperties
-    //var groupInterface = groupInterface
-    //var rootName = rootName
-    //var name = name
-    //var vehicleProperties = vehicleProperties
-    //var healthInterface = healthInterface
-    //var maxResourceLoad = maxResourceLoad
-    //var moveSoundInterface = moveSoundInterface
-    //var waypointLayerInterfaceFactoryInterface = waypointLayerInterfaceFactoryInterface
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var emptyAnimationInterfaceFactoryInterface = emptyAnimationInterfaceFactoryInterface
-    //var baseAnimationInterfaceFactoryInterface = baseAnimationInterfaceFactoryInterface
-    //var buildAnimationInterfaceFactoryInterface = buildAnimationInterfaceFactoryInterface
-    //var verticleBuildAnimationInterfaceFactoryInterface = verticleBuildAnimationInterfaceFactoryInterface
-    //var decalAnimationInterfaceFactoryInterface = decalAnimationInterfaceFactoryInterface
-    //var resourceAnimationInterfaceFactoryInterface = resourceAnimationInterfaceFactoryInterface
-    //var proceduralAnimationInterfaceFactoryInterface = proceduralAnimationInterfaceFactoryInterface
-    //var rectangle = rectangle
-    //var direction = direction
-    //var x = x
-    //var y = y
-    //var z = z
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -448,7 +423,6 @@ this.initPathAnimation= new PathAnimation(this, LinePathRelativeAnimation.getIns
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
@@ -459,7 +433,6 @@ this.initPathAnimation!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
                 //@Throws(Exception.constructor)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
-    //var geographicMapInterface = geographicMapInterface
 
     var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;
@@ -499,7 +472,6 @@ this.initRangeHack();
                 //@Throws(Exception.constructor)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 super.construct(rtsPlayerLayerInterface);
     
 TrackingEventHandler.getInstance()!.addListenerInterface(this);
@@ -684,7 +656,6 @@ super.deselect();
 
 
     setSelected(selected: boolean){
-var selected = selected
 super.setSelected(selected);
     
 
@@ -726,7 +697,6 @@ this.rtsLayer2LogHelper= RTSLayer2LogHelper.getInstance();
                 //@Throws(Exception.constructor)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
-    //var pathsList = pathsList
 this.rtsLogHelper!.setClosestGeographicMapCellHistory(this, pathsList);
     
 
@@ -795,15 +765,12 @@ this.teleportTo(geographicMapCellPosition);
                 //@Throws(Exception.constructor)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
-    //var geographicMapCellHistory = geographicMapCellHistory
-    //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
 geographicMapCellHistory!.trackAll(geographicMapCellPositionBasicArrayList);
     
 }
 
 
     public onMovement(trackingEvent: TrackingEvent){
-    //var trackingEvent = trackingEvent
 
         try {
             
@@ -835,7 +802,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
                 //@Throws(Exception.constructor)
             
     public onMovementFound(trackingEvent: TrackingEvent){
-    //var trackingEvent = trackingEvent
 
     var layerInterface: AdvancedRTSGameLayer = trackingEvent!.getLayerInterface() as AdvancedRTSGameLayer;
 ;
@@ -881,7 +847,6 @@ this.fireTimeHelper!.delay= (Math.round(weaponProperties!.getReloadTime()));
                 //@Throws(Exception.constructor)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
-    //var allBinaryLayerManager = allBinaryLayerManager
 
                         if(!this.getHealthInterface()!.isAlive())
                         
@@ -954,7 +919,6 @@ this.getUnitWaypointBehavior()!.processTick(allBinaryLayerManager);
 
 
     public teleportTo(geographicMapCellPosition: GeographicMapCellPosition){
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var point: GPoint = geographicMapCellPosition!.getMidPoint()!;
 ;
@@ -1007,8 +971,6 @@ this.setPosition(point.getX() -this.getHalfWidth(), point.getY() -this.getHalfHe
                 //@Throws(Exception.constructor)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 
                         if(this.fireTimeHelper!.isTimeTNT())
                         
@@ -1106,7 +1068,6 @@ super.initInputProcessors();
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 
     var list: BasicArrayList = this.getGameKeyEventList()!;
 ;
@@ -1145,7 +1106,6 @@ this.move();
 
 
     public accelerate(accelerate: BasicDecimal){
-    //var accelerate = accelerate
 this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.getUnscaled(), Math.round(this.rotationAnimationInterfaceP!.getAngleInfoP()!.getAngle()), 90);
     
 }
@@ -1154,7 +1114,6 @@ this.getVehicleProperties()!.getVelocityProperties()!.addVelocityi(accelerate.ge
                 //@Throws(Exception.constructor)
             
     fireAll(layerManager: AllBinaryLayerManager){
-    //var layerManager = layerManager
 
     var angleInfo: AngleInfo = this.rotationAnimationInterfaceP!.getAngleInfoP()!;
 ;
@@ -1208,7 +1167,6 @@ this.getVehicleProperties()!.getVehicleFrictionProperties()!.friction(this.getVe
                 //@Throws(Exception.constructor)
             
     public trackTo(reason: string){
-    //var reason = reason
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
 ;
@@ -1239,8 +1197,6 @@ this.trackToDXY(dx, dy);
                 //@Throws(Exception.constructor)
             
     public trackToDXY(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 
     var angleOfTarget: number = 0;
 ;
@@ -1253,9 +1209,6 @@ this.trackToDXYTargetAngle(dx, dy, angleOfTarget);
                 //@Throws(Exception.constructor)
             
     turnTo(dx: number, dy: number, targetAngle: number): boolean{
-    //var dx = dx
-    //var dy = dy
-var targetAngle = targetAngle
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
 ;
@@ -1490,8 +1443,6 @@ this.getGameKeyEventList()!.add(gameKeyEventFactory!.getInstanceForKey(this, Can
 
 
     handleDeltalX(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
 ;
@@ -1525,8 +1476,6 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
 
 
     handleDeltalY(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 
     var waypointBehaviorBase: WaypointBehaviorBase = this.waypointBehaviorBase as WaypointBehaviorBase;
 ;
@@ -1562,9 +1511,6 @@ this.rtsLogHelper!.handle(this, this.movementAngle);
                 //@Throws(Exception.constructor)
             
     trackToDXYTargetAngle(dx: number, dy: number, targetAngle: number){
-    //var dx = dx
-    //var dy = dy
-    //var targetAngle = targetAngle
 
     var list: BasicArrayList = this.getUnitWaypointBehavior()!.getSteeringVisitorList()!;
 ;
@@ -1792,7 +1738,6 @@ velocityProperties!.getVelocityYBasicDecimalP()!.setint(0);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(this.isVisible())
                         
@@ -1836,7 +1781,6 @@ this.resourceAnimation!.paintXY(graphics, viewX, viewY);
                 //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
-var event = event
 
     var buildingLayer: BuildingLayer = event.getRtsLayer() as BuildingLayer;
 ;
@@ -1859,8 +1803,6 @@ this.getUnitWaypointBehavior()!.moveAwayFromBuilding(buildingLayer);
                 //@Throws(Exception.constructor)
             
     public damage(damage: number, damageType: number){
-    //var damage = damage
-    //var damageType = damageType
 super.damage(damage, damageType);
     
 this.damageFloaters!.add(damage);
@@ -1880,7 +1822,6 @@ this.damageFloaters!.add(damage);
                 //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
-    //var damageType = damageType
 
 
 
@@ -1893,7 +1834,6 @@ this.damageFloaters!.add(damage);
                 //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
-    //var destroyed = destroyed
 this.logUtil!.putF(this.commonStrings!.START, this, "setDestroyed");
     
 super.setDestroyed(destroyed);
@@ -1988,7 +1928,6 @@ this.resourceAnimation= NullIndexedAnimationFactory.getFactoryInstance()!.getIns
                 //@Throws(Exception.constructor)
             
     public setLoad(resource: number){
-var resource = resource
 
                         if(resource > 0)
                         
@@ -2010,7 +1949,6 @@ this.resourceLoad= resource;
 
 
     public addLoad(resource: number){
-var resource = resource
 this.resourceLoad += resource;
     
 }
@@ -2021,7 +1959,6 @@ this.resourceLoad += resource;
                 //@Throws(Exception.constructor)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
-var ownerLayer = ownerLayer
 
                         if(this.getLoad() > 0)
                         

@@ -46,28 +46,18 @@ export class ABCustomItem
 protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-        var label = label
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-}
+        }
 
 
     public setOwner(owner: Screen){
-var owner = owner
 }
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 }
 
 
     public paintUnselected(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 }
 
 
@@ -92,7 +82,6 @@ var y = y
 
 
     public setLabel(label: string){
-var label = label
 }
 
 
@@ -107,7 +96,6 @@ var label = label
 
 
     public setHeight(height: number){
-var height = height
 }
 
 
@@ -122,7 +110,6 @@ var height = height
 
 
     public setValue(value: number){
-var value = value
 }
 
 

@@ -97,8 +97,7 @@ public constructor (){
 
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             super(tagHelperFactoryInterface);
-                    var tagHelperFactoryInterface = tagHelperFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -106,7 +105,6 @@ public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.name);
@@ -115,7 +113,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.nam
 
 
     public setStoreName(value: string){
-var value = value
 this.storeName= value;
     
 this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
@@ -124,7 +121,6 @@ this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeN
 
 
     public setObjectFile(value: string){
-var value = value
 this.objectFile= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTFILENAME, this.objectFile);
@@ -133,7 +129,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTFILENAME
 
 
     public setObject(value: string){
-var value = value
 this.anyType= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECT, this.anyType);
@@ -142,7 +137,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECT, this.a
 
 
     public setTemplateFile(value: string){
-var value = value
 this.templateFile= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.templateFile);
@@ -151,7 +145,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENA
 
 
     public setTemplate(value: string){
-var value = value
 this.template= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATE, this.template);
@@ -160,7 +153,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATE, this
 
 
     public setDataFile(value: string){
-var value = value
 this.dataFile= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATAFILENAME, this.dataFile);
@@ -169,7 +161,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATAFILENAME, 
 
 
     public setData(value: string){
-var value = value
 this.data= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATA, this.data);
@@ -178,7 +169,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.DATA, this.dat
 
 
     public setObjectConfigFile(value: string){
-var value = value
 this.objectConfigFile= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIGFILENAME, this.objectConfigFile);
@@ -187,7 +177,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIGFI
 
 
     public setObjectConfig(value: string){
-var value = value
 this.objectConfig= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIG, this.objectConfig);
@@ -196,7 +185,6 @@ this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.OBJECTCONFIG, 
 
 
     public setType(value: string){
-var value = value
 this.type= value;
     
 this.getPropertiesHashMap()!.put(OutputTypeData.getInstance()!.NAME, this.type);

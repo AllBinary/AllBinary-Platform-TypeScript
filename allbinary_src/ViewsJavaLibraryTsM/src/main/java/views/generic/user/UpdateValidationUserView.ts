@@ -71,8 +71,7 @@ export class UpdateValidationUserView extends HttpStoreComponentView implements 
     private user: UserInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -228,7 +227,6 @@ stringBuffer!.append("Unable to update user that does not exist.<br />");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

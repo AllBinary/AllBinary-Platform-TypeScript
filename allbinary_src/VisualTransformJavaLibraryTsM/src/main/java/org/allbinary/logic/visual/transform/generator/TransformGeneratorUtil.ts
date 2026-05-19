@@ -88,9 +88,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, ownerTransformInfoInterface: TransformInfoInterface){
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-    //var ownerTransformInfoInterface = ownerTransformInfoInterface
 
         try {
             
@@ -162,9 +159,6 @@ new StoreFileGenerator(componentInterface!.getTransformInfoInterface()).
                 //@Throws(Exception.constructor)
             
     public generate(abeClientInformation: AbeClientInformationInterface, transformInfoDomNode: TransformInfoDomNode, ownerTransformInfoInterface: TransformInfoInterface){
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoDomNode = transformInfoDomNode
-    //var ownerTransformInfoInterface = ownerTransformInfoInterface
 this.generate(abeClientInformation, transformInfoDomNode!.getTransformInfoInterface(), ownerTransformInfoInterface);
     
 }

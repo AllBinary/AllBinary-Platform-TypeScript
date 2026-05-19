@@ -94,7 +94,6 @@ this.cancelInputArray[basicTouchInputFactory!.RIGHT.getSourceId()]= basicTouchIn
 
 
     public getCancel(touchButtonInput: TouchButtonInput): TouchButtonInput{
-var touchButtonInput = touchButtonInput
 
 
 

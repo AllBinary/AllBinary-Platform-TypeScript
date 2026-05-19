@@ -79,9 +79,7 @@ export class InputAutomationModuleConfigurations
 public constructor (abeClientInformation: AbeClientInformationInterface, file: File){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var file = file
-this.setHashMap(new HashMap<any, any>());
+        this.setHashMap(new HashMap<any, any>());
     
 
     var bytes: number[] = new Array(100000);
@@ -145,9 +143,7 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
 public constructor (abeClientInformation: AbeClientInformationInterface, document: Document){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var document = document
-this.setHashMap(new HashMap<any, any>());
+        this.setHashMap(new HashMap<any, any>());
     
 
     var nameNodeList: NodeList = document.getElementsByTagName(InputAutomationModuleData.NAME)!;
@@ -176,8 +172,7 @@ this.add(new InputAutomationModuleConfiguration(abeClientInformation, node));
 public constructor (inputAutomationModuleConfigurationList: List<InputAutomationModuleConfiguration>){
 
             super();
-            //var inputAutomationModuleConfigurationList = inputAutomationModuleConfigurationList
-this.setHashMap(new HashMap<any, any>());
+        this.setHashMap(new HashMap<any, any>());
     
 
     var size: number = inputAutomationModuleConfigurationList!.size!;
@@ -212,14 +207,12 @@ public constructor (){
 
 
     public add(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
-    //var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
 this.getHashMap()!.put(inputAutomationModuleConfiguration!.getClassName(), inputAutomationModuleConfiguration);
     
 }
 
 
     public remove(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
-    //var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
 this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName());
     
 }
@@ -236,7 +229,6 @@ this.getHashMap()!.remove(inputAutomationModuleConfiguration!.getClassName());
 
 
     public setHashMap(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 this.hashMap= hashMap;
     
 }

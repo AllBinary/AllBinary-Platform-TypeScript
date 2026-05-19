@@ -99,9 +99,6 @@ export class InventorySearchProductUtil
                 //@Throws(Exception.constructor)
             
     public getProduct(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, product: string): string{
-    //var abeClientInformation = abeClientInformation
-var searchRequest = searchRequest
-var product = product
 
         try {
             

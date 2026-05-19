@@ -54,15 +54,12 @@ export class BasicArrayList
 public constructor (objectArray: any[]){
 
             super();
-            //var objectArray = objectArray
-this.objectArray= objectArray;
+        this.objectArray= objectArray;
     
 }
 
 
     public addAt(index: number, element: any = {}){
-    //var index = index
-    //var element = element
 
                         if(index > this.currentIndex || index < 0)
                         
@@ -99,7 +96,6 @@ this.currentIndex++;
 
 
     public add(anyType: any = {}): boolean{
-    //var anyType = anyType
 this.ensureCapacity(this.currentIndex +1);
     
 this.objectArray[this.currentIndex++]= anyType;
@@ -114,7 +110,6 @@ this.objectArray[this.currentIndex++]= anyType;
 
 
     public removeAt(index: number): any{
-    //var index = index
 
                         if(index >= this.currentIndex)
                         
@@ -170,7 +165,6 @@ this.objectArray[--this.currentIndex]=
 
 
     public remove(anyType: any = {}): boolean{
-    //var anyType = anyType
 
                         if(anyType == 
                                     null
@@ -276,7 +270,6 @@ this.objectArray[--this.currentIndex]=
 
 
     public removeAll2(list: BasicArrayList): boolean{
-    //var list = list
 
     var result: boolean = true;
 ;
@@ -318,7 +311,6 @@ index < size; index++)
 
 
     public addAll2(list: BasicArrayList): boolean{
-    //var list = list
 this.ensureCapacity(this.currentIndex +list.currentIndex);
     
 
@@ -347,7 +339,6 @@ this.objectArray[this.currentIndex++]= list.objectArray[index]!;
 
 
     public addAllList(list: BasicArrayList): boolean{
-    //var list = list
 
     var newObjectArray: any[] = list.toArray()!;
 ;
@@ -362,7 +353,6 @@ this.objectArray[this.currentIndex++]= list.objectArray[index]!;
 
 
     public addAll(newObjectArray: any[]): boolean{
-    //var newObjectArray = newObjectArray
 
     var numSize: number = newObjectArray!.length
                 ;
@@ -384,7 +374,6 @@ this.currentIndex += numSize;
 
 
     public ensureCapacity(minSize: number){
-    //var minSize = minSize
 
     var oldCapacity: number = this.objectArray!.length
                 ;
@@ -434,7 +423,6 @@ this.objectArray= this.arrayUtil!.copyOf(this.objectArray, newCapacity);
 
 
     public indexOf(anyType: any = {}): number{
-    //var anyType = anyType
 
                         if(anyType == 
                                     null
@@ -506,7 +494,6 @@ i < this.currentIndex; i++)
 
 
     public lastIndexOf(anyType: any = {}): number{
-    //var anyType = anyType
 
                         if(anyType == 
                                     null
@@ -578,7 +565,6 @@ i >= 0; i--)
 
 
     public get(index: number): any{
-    //var index = index
 
                         if(index >= this.currentIndex)
                         
@@ -613,8 +599,6 @@ stringBuffer!.appendint(this.currentIndex);
 
 
     public set(index: number, element: any = {}): any{
-    //var index = index
-    //var element = element
 
                         if(index >= this.currentIndex)
                         
@@ -695,7 +679,6 @@ this.currentIndex= 0;
 
 
     public contains(anyType: any = {}): boolean{
-    //var anyType = anyType
 
 
 
@@ -716,7 +699,6 @@ this.currentIndex= 0;
 
 
     public toArrayType(objectArray: any[]): any[]{
-    //var objectArray = objectArray
 
                         if(objectArray!.length < this.currentIndex)
                         

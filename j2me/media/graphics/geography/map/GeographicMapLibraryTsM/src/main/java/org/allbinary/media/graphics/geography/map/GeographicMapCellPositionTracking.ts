@@ -73,7 +73,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public getCurrentOverCellType(geographicMap: BasicGeographicMap): GeographicMapCellType{
-    //var geographicMap = geographicMap
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.currentGeographicMapCellPosition;
 ;
@@ -99,8 +98,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public updateStart(gameCanvasInterface: AllBinaryGameCanvasInterface, layer: AllBinaryLayer): boolean{
-    //var gameCanvasInterface = gameCanvasInterface
-    //var layer = layer
 
                         if(gameCanvasInterface != SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION)
                         

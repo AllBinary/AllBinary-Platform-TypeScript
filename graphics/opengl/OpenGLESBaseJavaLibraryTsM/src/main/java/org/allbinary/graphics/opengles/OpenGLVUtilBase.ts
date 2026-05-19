@@ -49,26 +49,14 @@ export class OpenGLVUtilBase
         
 
     public glTexEnvix(gl: GL10, target: number, pname: number, param: number){
-    //var gl = gl
-    //var target = target
-    //var pname = pname
-    //var param = param
 }
 
 
     public glTexParameterix(gl: GL10, target: number, pname: number, param: number){
-    //var gl = gl
-    //var target = target
-    //var pname = pname
-    //var param = param
 }
 
 
     public glGenerateMipmap(gl: GL10, textureId: number, target: number, generateMipMap: boolean){
-    //var gl = gl
-    //var textureId = textureId
-    //var target = target
-    //var generateMipMap = generateMipMap
 }
 
 

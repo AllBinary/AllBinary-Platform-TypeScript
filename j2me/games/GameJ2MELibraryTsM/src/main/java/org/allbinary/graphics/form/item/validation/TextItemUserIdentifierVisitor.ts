@@ -66,7 +66,6 @@ public constructor (){
 
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
 
     var value: string = anyType as string;
 ;
@@ -152,7 +151,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.VISIT, e);
 
 
     public isLetter(charValue: string): boolean{
-var charValue = charValue
 
     var value: number = Math.round(charValue);
 ;

@@ -63,9 +63,7 @@ export class PreGameSelectorPaintable extends InitUpdatePaintable {
 public constructor (title: string, preGameScrollSelectionForm: PreGameScrollSelectionForm){
 
             super();
-        var title = title
-var preGameScrollSelectionForm = preGameScrollSelectionForm
-this.title= title;
+        this.title= title;
     
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
@@ -89,7 +87,6 @@ this.canvasDrawLineString= new CanvasDrawLineString(displayInfo!.getLastHalfWidt
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.setColor(BasicColorFactory.getInstance()!.WHITE.intValue());
     
 this.canvasDrawLineString!.paint(graphics, title, 0);

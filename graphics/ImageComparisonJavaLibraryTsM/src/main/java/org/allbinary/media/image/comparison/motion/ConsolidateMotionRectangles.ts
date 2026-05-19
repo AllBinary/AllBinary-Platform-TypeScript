@@ -60,8 +60,7 @@ export class ConsolidateMotionRectangles extends MotionRectangles {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (motionRectangles: MotionRectangles){
             super(NAME, motionRectangles!.getImageComparisonResult());
-                    var motionRectangles = motionRectangles
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -176,7 +175,6 @@ this.remove(removeVector);
 
 
     remove(removeVector: Vector){
-var removeVector = removeVector
 
     var vector: Vector = this.getVector()!;
 ;

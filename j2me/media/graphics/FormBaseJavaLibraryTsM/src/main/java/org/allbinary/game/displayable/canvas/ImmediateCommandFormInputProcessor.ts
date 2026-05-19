@@ -63,11 +63,7 @@ export class ImmediateCommandFormInputProcessor extends CommandFormInputProcesso
     gameCommandCanvas: GameCommandCanvas
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCommandCanvas: GameCommandCanvas, form: ScrollSelectionForm){
             super(gameKeyEventList, playerInputId, gameCommandCanvas, form);
-                    var gameKeyEventList = gameKeyEventList
-var playerInputId = playerInputId
-var gameCommandCanvas = gameCommandCanvas
-var form = form
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,7 +74,6 @@ this.gameCommandCanvas= gameCommandCanvas;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 
         try {
             super.onPressGameKeyEvent(gameKeyEvent);
@@ -107,7 +102,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 
         try {
             super.onDownGameKeyEvent(gameKeyEvent);
@@ -136,7 +130,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 
         try {
             super.onUpGameKeyEvent(gameKeyEvent);
@@ -164,7 +157,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.ON
 
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
-var motionGestureEvent = motionGestureEvent
 
         try {
             super.onMotionGestureEvent(motionGestureEvent);

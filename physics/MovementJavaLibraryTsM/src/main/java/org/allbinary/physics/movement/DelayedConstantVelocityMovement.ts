@@ -60,9 +60,7 @@ export class DelayedConstantVelocityMovement extends BasicConstantVelocityMoveme
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(60);
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
             super(basicDecimal, velocityProperties);
-                    var basicDecimal = basicDecimal
-var velocityProperties = velocityProperties
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -70,16 +68,12 @@ var velocityProperties = velocityProperties
 
 
     public init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number){
-var speedBasicDecimal = speedBasicDecimal
-var angle = angle
-var otherAngle = otherAngle
 }
 
 
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-var layer = layer
 
                         if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         

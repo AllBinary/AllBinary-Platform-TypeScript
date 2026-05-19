@@ -55,9 +55,7 @@ export class SimultaneousCompoundIndexedAnimationInterfaceFactory extends Compou
         
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
             super(basicAnimationInterfaceFactoryInterfaceArray, animationBehaviorFactory);
-                        //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -65,7 +63,6 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
 
     createArray(size: number): Animation[]{
-    //var size = size
 
 
 
@@ -76,7 +73,6 @@ public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInter
 
 
     createAnimation(animationArray: Animation[]): Animation{
-    //var animationArray = animationArray
 
 
 

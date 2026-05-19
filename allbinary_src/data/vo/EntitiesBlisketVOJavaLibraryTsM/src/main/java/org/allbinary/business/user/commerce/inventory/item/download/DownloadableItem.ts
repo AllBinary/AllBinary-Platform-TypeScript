@@ -97,8 +97,7 @@ export class DownloadableItem
 public constructor (id: string){
 
             super();
-        var id = id
-
+        
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;
     
@@ -134,8 +133,7 @@ this.retries= EMPTY_STRING;
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.id= hashMap!.get(DownloadItemData.ID) as string;
+        this.id= hashMap!.get(DownloadItemData.ID) as string;
     
 this.basicItemId= hashMap!.get(BasicItemData.ID) as string;
     

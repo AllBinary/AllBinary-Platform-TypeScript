@@ -64,8 +64,7 @@ export class StoreFrontOrdersHistoryStatisticsView
 public constructor (storeFrontOrdersHistoryStatisticsInterface: StoreFrontOrdersHistoryStatisticsInterface){
 
             super();
-        var storeFrontOrdersHistoryStatisticsInterface = storeFrontOrdersHistoryStatisticsInterface
-this.storeFrontOrdersHistoryStatisticsInterface= storeFrontOrdersHistoryStatisticsInterface;
+        this.storeFrontOrdersHistoryStatisticsInterface= storeFrontOrdersHistoryStatisticsInterface;
     
 }
 
@@ -73,7 +72,6 @@ this.storeFrontOrdersHistoryStatisticsInterface= storeFrontOrdersHistoryStatisti
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.storeFrontOrdersHistoryStatisticsInterface!.toHashMap()!;
 ;

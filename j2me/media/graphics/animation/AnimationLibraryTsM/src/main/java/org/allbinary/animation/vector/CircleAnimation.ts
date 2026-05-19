@@ -62,10 +62,7 @@ export class CircleAnimation extends Animation implements ColorCompositeInterfac
 public constructor (width: number, height: number, basicColor: BasicColor){
 
             super();
-        var width = width
-var height = height
-var basicColor = basicColor
-this.width= width;
+        this.width= width;
     
 this.height= height;
     
@@ -79,9 +76,6 @@ this.setBasicColorP(basicColor);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 graphics.drawArc(x, y, this.width, this.height, 0, this.TOTAL_ANGLE);

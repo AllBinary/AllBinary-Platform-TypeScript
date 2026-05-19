@@ -96,7 +96,6 @@ this.deviceIdToplayerId[index]=  -1;
 
 
     public getDeviceId(playerInputId: number): number{
-var playerInputId = playerInputId
 
 
 
@@ -107,7 +106,6 @@ var playerInputId = playerInputId
 
 
     public getPlayerForDevice(deviceId: number): number{
-var deviceId = deviceId
 
     var index: number= 0
 ;
@@ -232,7 +230,6 @@ index >= 0; index--)
 
 
     public isPlayerInPlay(playerInputId: number): boolean{
-var playerInputId = playerInputId
 
 
 
@@ -243,7 +240,6 @@ var playerInputId = playerInputId
 
 
     public setPlayerInPlay(playerInputId: number){
-var playerInputId = playerInputId
 this.logUtil!.putF(new StringMaker().
                             append("Setting PlayerInPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerInPlay");
     
@@ -253,7 +249,6 @@ this.playersInPlay[playerInputId]= true;
 
 
     public setPlayerOutOfPlay(playerInputId: number){
-var playerInputId = playerInputId
 this.logUtil!.putF(new StringMaker().
                             append("Setting PlayerOutOfPlay with playerInputId: ")!.appendint(playerInputId)!.toString(), this, "setPlayerOutOfPlay");
     

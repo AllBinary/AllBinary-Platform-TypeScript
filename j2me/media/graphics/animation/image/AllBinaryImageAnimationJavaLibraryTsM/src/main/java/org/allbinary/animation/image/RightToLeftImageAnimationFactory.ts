@@ -58,11 +58,7 @@ export class RightToLeftImageAnimationFactory extends BaseImageAnimationFactory 
         
 public constructor (image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), image.getWidth(), image.getHeight(), dx, dy, animationBehaviorFactory);
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,7 +68,6 @@ public constructor (image: Image, dx: number, dy: number, animationBehaviorFacto
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;

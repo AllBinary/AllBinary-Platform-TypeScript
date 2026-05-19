@@ -57,8 +57,7 @@ export class SingletonAnimationInterfaceFactory
 public constructor (animationInterface: Animation){
 
             super();
-            //var animationInterface = animationInterface
-this.animationInterface= animationInterface;
+        this.animationInterface= animationInterface;
     
 }
 
@@ -66,7 +65,6 @@ this.animationInterface= animationInterface;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -79,7 +77,6 @@ this.animationInterface= animationInterface;
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-    //var animationInterface = animationInterface
 
 
 
@@ -90,7 +87,6 @@ this.animationInterface= animationInterface;
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

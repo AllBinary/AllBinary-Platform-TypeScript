@@ -74,8 +74,7 @@ export class StoreCategoryFactory extends CategoryAbstractFactory implements Cat
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -127,7 +126,6 @@ this.transformInfoInterface= transformInfoInterface;
 
 
     public getRootInstance(categoryPath: AbPath): CategoryInterface{
-var categoryPath = categoryPath
 
         try {
             
@@ -169,7 +167,6 @@ var categoryPath = categoryPath
 
 
     public getRootInstanceFromNode(node: Node): CategoryInterface{
-var node = node
 
         try {
             

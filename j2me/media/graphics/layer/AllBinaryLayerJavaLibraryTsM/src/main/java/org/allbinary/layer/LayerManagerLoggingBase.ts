@@ -53,25 +53,18 @@ export class LayerManagerLoggingBase
                 //@Throws(Exception.constructor)
             
     public append(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 }
 
 
     public appendAt(layerInterface: AllBinaryLayer, index: number){
-    //var layerInterface = layerInterface
-    //var index = index
 }
 
 
     public remove(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 }
 
 
     public removeResult(layerManager: LayerManager, layerInterface: AllBinaryLayer, result: boolean){
-    //var layerManager = layerManager
-    //var layerInterface = layerInterface
-    //var result = result
 }
 
 

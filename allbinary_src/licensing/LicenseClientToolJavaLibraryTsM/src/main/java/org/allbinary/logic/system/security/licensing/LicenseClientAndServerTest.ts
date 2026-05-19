@@ -74,7 +74,6 @@ export class LicenseClientAndServerTest
         
 
     public static main(args: string[]){
-var args = args
 
         try {
             
@@ -104,8 +103,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, "main()", "main()", e);
 public constructor (options: string[]){
 
             super();
-        var options = options
-LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+        LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 
 

@@ -54,8 +54,7 @@ export class ColorFillPaintable extends ColorFillBasePaintable {
     readonly displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 public constructor (basicColor: BasicColor){
             super(basicColor);
-                    var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -63,7 +62,6 @@ public constructor (basicColor: BasicColor){
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.setColor(this.colorP);
     
 graphics.fillRect(0, 0, this.displayInfoSingleton!.getLastWidth(), this.displayInfoSingleton!.getLastHeight());

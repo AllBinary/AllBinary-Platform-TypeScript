@@ -155,8 +155,7 @@ export class Initializer
 public constructor (map: Map){
 
             super();
-        var map = map
-
+        
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
@@ -218,14 +217,12 @@ this.getFormData(hashMap);
 public constructor (initHashMap: HashMap<any, any>){
 
             super();
-        var initHashMap = initHashMap
-this.getFormData(initHashMap);
+        this.getFormData(initHashMap);
     
 }
 
 
     public getFormData(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
         try {
             
@@ -314,7 +311,6 @@ this.logUtil!.put("Unable to get form data", this, "getFormData()", e);
 
 
     isJdbcDriverValid(jdbcDriverClassPathString: string): boolean{
-var jdbcDriverClassPathString = jdbcDriverClassPathString
 
         try {
             Class.forName(jdbcDriverClassPathString)!.newInstance();
@@ -552,7 +548,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 
 
     getJdbcDriverValidationInfo(jdbcDriver: string): string{
-var jdbcDriver = jdbcDriver
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

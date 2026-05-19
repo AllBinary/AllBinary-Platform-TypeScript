@@ -72,9 +72,7 @@ export class ShippingMethods
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var storeFrontInterface = storeFrontInterface
-this.defaultShippingMethodInterface= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
+        this.defaultShippingMethodInterface= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
                             getDefaultInstance();
     
 this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFrontInterface).
@@ -96,7 +94,6 @@ this.shippingVector= new ShippingMethodsFactory(abeClientInformation, storeFront
                 //@Throws(Exception.constructor)
             
     public getShippingInterface(name: string): ShippingInterface{
-var name = name
 
     var shipping: ShippingInterface
 ;
@@ -116,7 +113,7 @@ index < size; index++)
 shipping= this.shippingVector!.get(index) as ShippingInterface;
     
 
-                        if(name.localeCompare(shipping.getName()) == 0)
+                        if(name.compareTo(shipping.getName()) == 0)
                         
 
 

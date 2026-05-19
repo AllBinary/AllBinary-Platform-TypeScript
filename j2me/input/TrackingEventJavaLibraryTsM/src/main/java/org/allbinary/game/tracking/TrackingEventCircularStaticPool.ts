@@ -78,7 +78,6 @@ this.EVENT_POOL.init(new TrackingEventFactory());
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNextInstance(layerInterface: AllBinaryLayer): TrackingEvent{
-var layerInterface = layerInterface
 
     var trackingEvent: TrackingEvent = this.EVENT_POOL.getNextInstance() as TrackingEvent;
 ;

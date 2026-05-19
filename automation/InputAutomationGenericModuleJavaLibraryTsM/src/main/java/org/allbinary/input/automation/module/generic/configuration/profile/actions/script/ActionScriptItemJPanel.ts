@@ -67,7 +67,6 @@ public constructor (){
 
 
     public setNewActionScriptInputJPanel(newActionScriptInputJPanel: javax.swing.JPanel){
-var newActionScriptInputJPanel = newActionScriptInputJPanel
 this.newActionScriptInputJPanel= newActionScriptInputJPanel;
     
 }
@@ -84,7 +83,6 @@ this.newActionScriptInputJPanel= newActionScriptInputJPanel;
 
 
     public setRemoveJPanel(removeJPanel: javax.swing.JPanel){
-var removeJPanel = removeJPanel
 this.removeJPanel= removeJPanel;
     
 }
@@ -101,7 +99,6 @@ this.removeJPanel= removeJPanel;
 
 
     public setScriptItemJPanel(scriptItemJPanel: javax.swing.JPanel){
-var scriptItemJPanel = scriptItemJPanel
 this.scriptItemJPanel= scriptItemJPanel;
     
 }
@@ -118,7 +115,6 @@ this.scriptItemJPanel= scriptItemJPanel;
 
 
     public setNewActionScriptConditionJPanel(newActionScriptConditionJPanel: javax.swing.JPanel){
-var newActionScriptConditionJPanel = newActionScriptConditionJPanel
 this.newActionScriptConditionJPanel= newActionScriptConditionJPanel;
     
 }
@@ -135,7 +131,6 @@ this.newActionScriptConditionJPanel= newActionScriptConditionJPanel;
 
 
     public setChildActionScriptConditionJPanel(childActionScriptConditionJPanel: javax.swing.JPanel){
-var childActionScriptConditionJPanel = childActionScriptConditionJPanel
 this.childActionScriptConditionJPanel= childActionScriptConditionJPanel;
     
 }

@@ -68,8 +68,6 @@ export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
         
 
     public static createPart(animationInterface: Animation, weaponLayerCircularStaticPool: WeaponLayerCircularPool): StraightMultiProjectileWeaponPart{
-    //var animationInterface = animationInterface
-    //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
 
 
 
@@ -84,14 +82,7 @@ export class StraightMultiProjectileWeaponPart extends BasicWeaponPart {
     private readonly total: number
 public constructor (animationInterface: Animation, sourceLayerInterface: AllBinaryLayer, weaponLayerCircularStaticPool: WeaponLayerCircularPool, total: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface, relativeRelationship: RelativeRelationship){
             super(animationInterface, sourceLayerInterface, weaponProperties, scoreableInterface, relativeRelationship);
-                        //var animationInterface = animationInterface
-    //var sourceLayerInterface = sourceLayerInterface
-    //var weaponLayerCircularStaticPool = weaponLayerCircularStaticPool
-    //var total = total
-    //var weaponProperties = weaponProperties
-    //var scoreableInterface = scoreableInterface
-    //var relativeRelationship = relativeRelationship
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -107,11 +98,6 @@ this.weaponLayerCircularStaticPool= weaponLayerCircularStaticPool;
                 //@Throws(Exception.constructor)
             
     public processScore(allbinaryLayerManager: AllBinaryLayerManager, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreableInterface: ScoreableInterface){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var angle = angle
-    //var otherAngle = otherAngle
-    //var weaponProperties = weaponProperties
-    //var scoreableInterface = scoreableInterface
 
     var sourceLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
 ;

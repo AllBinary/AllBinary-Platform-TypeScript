@@ -64,11 +64,7 @@ export class HealthBar extends Paintable implements HealthListenerInterface {
 public constructor (layerInterface: AllBinaryLayer, healthInterface: Health, animationInterface: HealthBarAnimation, direction: number){
 
             super();
-        var layerInterface = layerInterface
-var healthInterface = healthInterface
-var animationInterface = animationInterface
-var direction = direction
-this.allbinaryLayer= layerInterface;
+        this.allbinaryLayer= layerInterface;
     
 this.animationInterface= animationInterface;
     
@@ -88,14 +84,12 @@ this.animationInterface!.onHealthChange(this.healthInterface!.getHealth() *this.
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintXY(graphics, 0, 0);
     
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintThreed(graphics, 0, 0, 0);
     
 }

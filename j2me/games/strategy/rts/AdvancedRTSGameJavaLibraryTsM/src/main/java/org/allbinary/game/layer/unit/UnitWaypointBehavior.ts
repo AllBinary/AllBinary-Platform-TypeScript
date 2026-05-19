@@ -135,9 +135,7 @@ export class UnitWaypointBehavior extends WaypointBehaviorBase implements Waypoi
 protected constructor (associatedAdvancedRTSGameLayer: UnitLayer, fakeWaypoint: CollidableDestroyableDamageableLayer){
 
             super();
-        var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-var fakeWaypoint = fakeWaypoint
-this.associatedAdvancedRTSGameLayer= associatedAdvancedRTSGameLayer;
+        this.associatedAdvancedRTSGameLayer= associatedAdvancedRTSGameLayer;
     
 this.completeTimeDelayHelper= new TimeDelayHelper(30000);
     
@@ -155,14 +153,12 @@ this.FAKE_WAYPOINT_LAYER= fakeWaypoint;
 
 
     initRange(weaponRange: number){
-    //var weaponRange = weaponRange
 this.longWeaponRange= weaponRange /2;
     
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -171,7 +167,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public onWaypointEvent(event: RTSLayerEvent){
-    //var event = event
 
     var advancedRTSGameLayer: AdvancedRTSGameLayer = event.getRtsLayer() as AdvancedRTSGameLayer;
 ;
@@ -202,14 +197,12 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.onWaypointEvent(this.as
                 //@Throws(Exception.constructor)
             
     addWaypointFromUser(advancedRTSGameLayer: AdvancedRTSGameLayer){
-    //var advancedRTSGameLayer = advancedRTSGameLayer
 }
 
 
                 //@Throws(Exception.constructor)
             
     addWaypointFromBuilding(advancedRTSGameLayer: AdvancedRTSGameLayer){
-    //var advancedRTSGameLayer = advancedRTSGameLayer
 
                         if(advancedRTSGameLayer == PrimaryWaypointHelper.getInstance()!.getWaypointLayer() || advancedRTSGameLayer!.getParentLayer() == this.associatedAdvancedRTSGameLayer!.getParentLayer())
                         
@@ -258,8 +251,6 @@ this.associatedAdvancedRTSGameLayer!.waypointLogHelperP!.addWaypointFromBuilding
                 //@Throws(Exception.constructor)
             
     public insertWaypoint(index: number, rtsLayer: CollidableDestroyableDamageableLayer): boolean{
-    //var index = index
-    //var rtsLayer = rtsLayer
 
                         if(this.canInsertWaypoint(index, rtsLayer))
                         
@@ -324,7 +315,6 @@ this.setMoving(false);
                 //@Throws(Exception.constructor)
             
     setRandomGeographicMapCellHistory(pathsList: BasicArrayList){
-    //var pathsList = pathsList
 
     var size: number = pathsList!.size()!;
 ;
@@ -350,7 +340,6 @@ this.setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList);
                 //@Throws(Exception.constructor)
             
     setGeographicMapCellHistoryPath(geographicMapCellPositionBasicArrayList: BasicArrayList){
-    //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
 this.lastPathGeographicMapCellPosition= SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
     
 
@@ -374,8 +363,6 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
 
 
     canInsertWaypoint(index: number, rtsLayer: CollidableDestroyableDamageableLayer): boolean{
-    //var index = index
-    //var rtsLayer = rtsLayer
 
                         if(this.targetList!.size() > 4)
                         
@@ -412,15 +399,12 @@ this.getCompleteTimeDelayHelper()!.setStartTimeTNT();
                 //@Throws(Exception.constructor)
             
     public addBuildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition){
-    //var allbinaryLayer = allbinaryLayer
-    //var cellPosition = cellPosition
 }
 
 
                 //@Throws(Exception.constructor)
             
     moveAwayFromBuilding(buildingLayer: BuildingLayer){
-    //var buildingLayer = buildingLayer
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.associatedAdvancedRTSGameLayer!.getCurrentGeographicMapCellPosition()!;
 ;
@@ -550,14 +534,12 @@ stringBuffer!.appendint(this.longWeaponRange +this.currentTargetLayerInterfaceP!
 
 
     setMovingFromStopped(movingFromStopped: boolean){
-var movingFromStopped = movingFromStopped
 this.movingFromStopped= movingFromStopped;
     
 }
 
 
     public setWaypointPathsList(waypointPathsList: BasicArrayList){
-var waypointPathsList = waypointPathsList
 this.waypointPathsListP= waypointPathsList;
     
 }
@@ -584,7 +566,6 @@ this.waypointPathsListP= waypointPathsList;
 
 
     setMoving(moving: boolean){
-var moving = moving
 this.moving= moving;
     
 }
@@ -611,7 +592,6 @@ this.moving= moving;
 
 
     setLastPathGeographicMapCellPosition(lastPathGeographicMapCellPosition: GeographicMapCellPosition){
-var lastPathGeographicMapCellPosition = lastPathGeographicMapCellPosition
 this.lastPathGeographicMapCellPosition= lastPathGeographicMapCellPosition;
     
 }
@@ -628,7 +608,6 @@ this.lastPathGeographicMapCellPosition= lastPathGeographicMapCellPosition;
 
 
     setCurrentPathGeographicMapCellPosition(currentPathGeographicMapCellPosition: GeographicMapCellPosition){
-var currentPathGeographicMapCellPosition = currentPathGeographicMapCellPosition
 this.currentPathGeographicMapCellPosition= currentPathGeographicMapCellPosition;
     
 }
@@ -645,7 +624,6 @@ this.currentPathGeographicMapCellPosition= currentPathGeographicMapCellPosition;
 
 
     setSensorAction(sensorAction: SensorAction){
-var sensorAction = sensorAction
 this.sensorAction= sensorAction;
     
 }
@@ -662,7 +640,6 @@ this.sensorAction= sensorAction;
 
 
     setCurrentTargetLayerInterface(currentTargetLayerInterface: CollidableDestroyableDamageableLayer){
-var currentTargetLayerInterface = currentTargetLayerInterface
 this.currentTargetLayerInterfaceP= currentTargetLayerInterface;
     
 }
@@ -679,7 +656,6 @@ this.currentTargetLayerInterfaceP= currentTargetLayerInterface;
 
 
     setCurrentTargetDistance(currentTargetDistance: number){
-var currentTargetDistance = currentTargetDistance
 this.currentTargetDistance= currentTargetDistance;
     
 }
@@ -716,7 +692,6 @@ this.currentTargetDistance= currentTargetDistance;
 
 
     setTrackingWaypoint(trackingWaypoint: boolean){
-var trackingWaypoint = trackingWaypoint
 this.trackingWaypoint= trackingWaypoint;
     
 }

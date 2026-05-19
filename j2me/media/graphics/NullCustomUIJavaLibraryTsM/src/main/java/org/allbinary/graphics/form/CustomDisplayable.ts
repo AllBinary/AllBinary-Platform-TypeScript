@@ -33,7 +33,6 @@ export class CustomDisplayable
         
 
     public setTitle(title: string){
-var title = title
 }
 
 

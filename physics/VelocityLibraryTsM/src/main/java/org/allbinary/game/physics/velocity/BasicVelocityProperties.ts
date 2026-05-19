@@ -131,9 +131,6 @@ this.velocityZBasicDecimal!.setint(0);
     readonly directionUtil: DirectionUtil = DirectionUtil.getInstance()!;
 
     public setVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction){
-    //var magnitudeBasicDecimal = magnitudeBasicDecimal
-    //var direction = direction
-    //var otherDirection = otherDirection
 
     var angle: Angle = this.directionUtil!.getAngle(direction)!;
 ;
@@ -148,9 +145,6 @@ this.setVelocityWithBigDecimal(magnitudeBasicDecimal, angle, otherAngle);
 
 
     public setVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction){
-    //var magnitude = magnitude
-    //var direction = direction
-    //var otherDirection = otherDirection
 
     var angle: Angle = this.directionUtil!.getAngle(direction)!;
 ;
@@ -165,9 +159,6 @@ this.setVelocity(magnitude, angle, otherAngle);
 
 
     public addVelocityWithBigDecimalAndDirection(magnitudeBasicDecimal: BasicDecimal, direction: Direction, otherDirection: Direction){
-    //var magnitudeBasicDecimal = magnitudeBasicDecimal
-    //var direction = direction
-    //var otherDirection = otherDirection
 
     var angle: Angle = this.directionUtil!.getAngle(direction)!;
 ;
@@ -182,9 +173,6 @@ this.addVelocityWithBigDecimal(magnitudeBasicDecimal, angle, otherAngle);
 
 
     public addVelocityWithDirection(magnitude: number, direction: Direction, otherDirection: Direction){
-    //var magnitude = magnitude
-    //var direction = direction
-    //var otherDirection = otherDirection
 
     var angle: Angle = this.directionUtil!.getAngle(direction)!;
 ;
@@ -199,9 +187,6 @@ this.addVelocity(magnitude, angle, otherAngle);
 
 
     public setVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle){
-    //var magnitudeBasicDecimal = magnitudeBasicDecimal
-    //var angle = angle
-    //var otherAngle = otherAngle
 
     var magnitude: number = magnitudeBasicDecimal!.getUnscaled()!;
 ;
@@ -212,9 +197,6 @@ this.setVelocity(magnitude, angle, otherAngle);
 
 
     public addVelocityWithBigDecimal(magnitudeBasicDecimal: BasicDecimal, angle: Angle, otherAngle: Angle){
-    //var magnitudeBasicDecimal = magnitudeBasicDecimal
-    //var angle = angle
-    //var otherAngle = otherAngle
 
     var magnitude: number = magnitudeBasicDecimal!.getUnscaled()!;
 ;
@@ -225,27 +207,18 @@ this.addVelocity(magnitude, angle, otherAngle);
 
 
     public setVelocity(magnitude: number, angle: Angle, otherAngle: Angle){
-    //var magnitude = magnitude
-    //var angle = angle
-    //var otherAngle = otherAngle
 this.setVelocityi(magnitude, Math.round(angle.getValue()), Math.round(otherAngle!.getValue()));
     
 }
 
 
     public addVelocity(magnitude: number, angle: Angle, otherAngle: Angle){
-    //var magnitude = magnitude
-    //var angle = angle
-    //var otherAngle = otherAngle
 this.addVelocityi(magnitude, Math.round(angle.getValue()), Math.round(otherAngle!.getValue()));
     
 }
 
 
     public setVelocityi(magnitude: number, angle: number, otherAngle: number){
-    //var magnitude = magnitude
-    //var angle = angle
-    //var otherAngle = otherAngle
 
     var xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());
 ;
@@ -268,9 +241,6 @@ this.velocityZBasicDecimal!.setlong(zVector);
 
 
     public addVelocityi(magnitude: number, angle: number, otherAngle: number){
-    //var magnitude = magnitude
-    //var angle = angle
-    //var otherAngle = otherAngle
 
     var xVector: number = (this.axisMathVectorUtil!.calculateX(magnitude, angle) /this.velocityXBasicDecimal!.getScaledFactorValue());
 ;

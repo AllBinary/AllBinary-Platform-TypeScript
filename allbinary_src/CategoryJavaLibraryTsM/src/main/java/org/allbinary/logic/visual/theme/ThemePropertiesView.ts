@@ -62,8 +62,7 @@ export class ThemePropertiesView
 public constructor (themeInterface: ThemeInterface){
 
             super();
-        var themeInterface = themeInterface
-this.themeInterface= themeInterface;
+        this.themeInterface= themeInterface;
     
 }
 
@@ -71,7 +70,6 @@ this.themeInterface= themeInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.themeInterface!.toHashMap())!;
 ;

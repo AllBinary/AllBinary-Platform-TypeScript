@@ -100,8 +100,7 @@ export class AndroidMediaPlayerWrapper extends BasicPlayer {
 public constructor (resource: string){
 
             super();
-        var resource = resource
-
+        
         try {
             
                         if(resource == StringUtil.getInstance()!.EMPTY_STRING)
@@ -158,7 +157,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.comm
 
 
     public setLoopCount(count: number){
-var count = count
 super.setLoopCount(count);
     
 
@@ -188,14 +186,12 @@ super.setLoopCount(count);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
-var playerListener = playerListener
 super.addPlayerListener(playerListener);
     
 }
 
 
     public removePlayerListener(playerListener: PlayerListener){
-var playerListener = playerListener
 super.removePlayerListener(playerListener);
     
 }
@@ -302,7 +298,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
 
 
     public update(event: string){
-var event = event
 this.logUtil!.putF("LineEvent: " +event, this, this.commonStrings!.UPDATE);
     
 
@@ -329,8 +324,6 @@ listener.playerUpdate(this, event, NullUtil.getInstance()!.NULL_OBJECT);
 
 
     public setVolume(leftVolume: number, rightVolume: number){
-    //var leftVolume = leftVolume
-    //var rightVolume = rightVolume
 this.mediaPlayer!.setVolume((leftVolume) /100.0, (rightVolume) /100.0);
     
 }
@@ -347,7 +340,6 @@ this.mediaPlayer!.setVolume((leftVolume) /100.0, (rightVolume) /100.0);
 
 
     public setMediaPlayer(mediaPlayer: MediaPlayer){
-var mediaPlayer = mediaPlayer
 this.mediaPlayer= mediaPlayer;
     
 }

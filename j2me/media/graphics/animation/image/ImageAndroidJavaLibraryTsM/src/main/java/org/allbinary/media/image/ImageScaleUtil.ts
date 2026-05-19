@@ -108,13 +108,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
 
 
 
@@ -127,14 +120,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
-    //var mutable = mutable
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
 ;
@@ -155,11 +140,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, cached: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var cached = cached
 
     var originalAndroidImage: AndroidImageInterface = originalImage as AndroidImageInterface;
 ;
@@ -257,13 +237,6 @@ this.scaleYBasicArrayList!.add(scaleY);
                 //@Throws(Exception.constructor)
             
     getScaledImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, width: number, height: number, cached: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var width = width
-    //var height = height
-    //var cached = cached
 
     var image: Image = NullCanvas.NULL_IMAGE;
 ;
@@ -317,10 +290,6 @@ image.getGraphics()!.drawImage(originalImage, 0, 0, this.anchor);
 
 
     scale(image: Image, matrix: Matrix, scaleX: number, scaleY: number){
-    //var image = image
-    //var matrix = matrix
-    //var scaleX = scaleX
-    //var scaleY = scaleY
 matrix.setScale(scaleX, scaleY);
     
 

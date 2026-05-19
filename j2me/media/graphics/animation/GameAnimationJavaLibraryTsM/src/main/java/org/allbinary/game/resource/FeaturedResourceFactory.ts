@@ -103,7 +103,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public init(level: number){
-var level = level
 
     var size: number = this.list.size()!;
 ;
@@ -201,7 +200,6 @@ this.list.clear();
 
 
     public add(featureInterface: GameFeatureControlledInterface){
-var featureInterface = featureInterface
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(featureInterface))!.toString(), this, this.commonStrings!.ADD);
     

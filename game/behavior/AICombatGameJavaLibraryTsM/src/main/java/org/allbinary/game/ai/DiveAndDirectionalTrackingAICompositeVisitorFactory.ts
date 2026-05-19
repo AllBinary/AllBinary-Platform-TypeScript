@@ -50,7 +50,6 @@ export class DiveAndDirectionalTrackingAICompositeVisitorFactory
         
 
     public getInstance(diveBombAI: DiveAndDirectionalTrackingAI): Visitor{
-var diveBombAI = diveBombAI
 
 
 

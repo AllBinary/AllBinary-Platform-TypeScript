@@ -70,11 +70,7 @@ export class BasePathFinderGraphVisitor extends PathFinderGraphVisitorBase {
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
-        var geographicMapInterface = geographicMapInterface
-var edgeMinimum = edgeMinimum
-var minPathWeight = minPathWeight
-var maxPathWeight = maxPathWeight
-this.geographicMapInterface= geographicMapInterface;
+        this.geographicMapInterface= geographicMapInterface;
     
 this.edgeMinimum= edgeMinimum;
     
@@ -88,18 +84,12 @@ this.maxPathWeight= maxPathWeight;
                 //@Throws(Exception.constructor)
             
     public visit(graph: SimpleWeightedGraph, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
-var graph = graph
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
 }
 
 
                 //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
-var pathList = pathList
 
 
 
@@ -122,7 +112,6 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
 
     public isValid(graphPath: GraphPath): boolean{
-var graphPath = graphPath
 
                         if(graphPath!.getEdgeList()!.size() > this.edgeMinimum && graphPath!.getWeight() < this.maxPathWeight && graphPath!.getWeight() > this.minPathWeight)
                         
@@ -150,7 +139,6 @@ var graphPath = graphPath
 
 
     public getInvalidReason(graphPath: GraphPath): string{
-var graphPath = graphPath
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

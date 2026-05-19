@@ -59,10 +59,7 @@ export class SimplePathFinderGraphVisitorFactory extends PathFinderGraphVisitorF
 public constructor (edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
-        var edgeMinimum = edgeMinimum
-var minPathWeight = minPathWeight
-var maxPathWeight = maxPathWeight
-this.edgeMinimum= edgeMinimum;
+        this.edgeMinimum= edgeMinimum;
     
 this.minPathWeight= minPathWeight;
     
@@ -72,7 +69,6 @@ this.maxPathWeight= maxPathWeight;
 
 
     public getInstance(geographicMapInterface: BasicGeographicMap): PathFinderGraphVisitorBase{
-var geographicMapInterface = geographicMapInterface
 
 
 

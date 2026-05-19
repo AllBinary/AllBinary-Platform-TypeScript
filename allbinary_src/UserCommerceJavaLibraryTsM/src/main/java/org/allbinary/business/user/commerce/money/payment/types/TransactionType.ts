@@ -50,16 +50,14 @@ export class TransactionType
 public constructor (name: string){
 
             super();
-        var name = name
-this.name= name;
+        this.name= name;
     
 }
 
 
     public isEqual(transactionType: TransactionType): boolean{
-var transactionType = transactionType
 
-                        if(this.toString()!.localeCompare(transactionType!.toString()) == 0)
+                        if(this.toString()!.compareTo(transactionType!.toString()) == 0)
                         
 
 

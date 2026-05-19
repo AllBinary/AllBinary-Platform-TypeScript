@@ -76,7 +76,6 @@ private constructor (){
 
 
     public init(combatGameCanvas: AllBinaryGameCanvas){
-var combatGameCanvas = combatGameCanvas
 this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
     
 }
@@ -85,7 +84,6 @@ this.EVENT_POOL.init(new DestroyEventFactory(combatGameCanvas));
                 //@Throws(Exception.constructor)
             
     public getInstanceForLayer(layerInterface: AllBinaryLayer): DestroyedEvent{
-var layerInterface = layerInterface
 
     var destroyedEvent: DestroyedEvent = this.EVENT_POOL.getNextInstance() as DestroyedEvent;
 ;

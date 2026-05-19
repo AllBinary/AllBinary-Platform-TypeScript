@@ -69,11 +69,7 @@ export class TestInputAutomationActionWorker extends AbstractInputAutomationWork
     private sleep: number
 public constructor (sleep: number, inputAutomationActionInterface: InputAutomationActionInterface, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
             super(inputAutomationActionInterface);
-                    var sleep = sleep
-var inputAutomationActionInterface = inputAutomationActionInterface
-var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
-var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

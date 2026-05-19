@@ -52,12 +52,7 @@ export class HtmlValueInput extends HtmlInput {
     private readonly VALUE: string = "VALUE";
 public constructor (before: string, type: string, name: string, value: string, after: string){
             super(before, type, name, after);
-                    var before = before
-var type = type
-var name = name
-var value = value
-var after = after
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

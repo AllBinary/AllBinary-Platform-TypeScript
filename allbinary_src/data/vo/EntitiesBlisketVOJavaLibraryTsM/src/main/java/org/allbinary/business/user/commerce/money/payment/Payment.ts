@@ -107,8 +107,7 @@ export class Payment
 public constructor (payment: HashMap<any, any>){
 
             super();
-        var payment = payment
-this.name= payment.get(PaymentData.NAME) as string;
+        this.name= payment.get(PaymentData.NAME) as string;
     
 this.type= payment.get(PaymentData.TYPE) as string;
     
@@ -129,7 +128,7 @@ this.id= payment.get(PaymentData.ID) as string;
 
                         if(def != 
                                     null
-                                 && def.localeCompare(EntryData.getInstance()!.DEFAULT) == 0)
+                                 && def.compareTo(EntryData.getInstance()!.DEFAULT) == 0)
                         
                                     {
                                     this.isDefault= true;
@@ -168,8 +167,7 @@ this.magneticInkCheckReader= payment.get(PaymentData.MAGNETICINKCHECKREADER) as 
 public constructor (request: ServletRequest){
 
             super();
-        var request = request
-this.name= request.getParameter(PaymentData.NAME);
+        this.name= request.getParameter(PaymentData.NAME);
     
 this.type= request.getParameter(PaymentData.TYPE);
     
@@ -217,7 +215,7 @@ public constructor (){
 
                         if(this.name == 
                                     null
-                                 || this.name.localeCompare(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.name.compareTo(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -232,7 +230,7 @@ public constructor (){
 
                         if(this.type == 
                                     null
-                                 || this.type.localeCompare(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.type.compareTo(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -247,7 +245,7 @@ public constructor (){
 
                         if(this.expiration == 
                                     null
-                                 || this.expiration.localeCompare(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.expiration.compareTo(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -262,7 +260,7 @@ public constructor (){
 
                         if(this.number == 
                                     null
-                                 || this.number.localeCompare(stringUtil!.EMPTY_STRING) == 0)
+                                 || this.number.compareTo(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -297,91 +295,78 @@ public constructor (){
 
 
     public setTenderType(value: string){
-var value = value
 this.tenderType= value;
     
 }
 
 
     public setTransactionType(value: string){
-var value = value
 this.transactionType= value;
     
 }
 
 
     public setAuthorizationCode(value: string){
-var value = value
 this.authorizationCode= value;
     
 }
 
 
     public setCheckType(value: string){
-var value = value
 this.checkType= value;
     
 }
 
 
     public setCheckNumber(value: string){
-var value = value
 this.checkNumber= value;
     
 }
 
 
     public setDriversLicense(value: string){
-var value = value
 this.driversLicense= value;
     
 }
 
 
     public setMagneticInkCheckReader(value: string){
-var value = value
 this.magneticInkCheckReader= value;
     
 }
 
 
     public setAba(value: string){
-var value = value
 this.aba= value;
     
 }
 
 
     public setAccountType(value: string){
-var value = value
 this.accountType= value;
     
 }
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
 
 
     public setType(value: string){
-var value = value
 this.type= value;
     
 }
 
 
     public setExpiration(value: string){
-var value = value
 this.expiration= value;
     
 }
 
 
     public setNumber(value: string){
-var value = value
 this.number= value;
     
 }
@@ -642,7 +627,6 @@ hashMap!.put(PaymentData.MAGNETICINKCHECKREADER, this.magneticInkCheckReader);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;
@@ -691,7 +675,6 @@ var document = document
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

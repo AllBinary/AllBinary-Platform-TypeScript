@@ -60,7 +60,6 @@ export class AllBinarySensor
     private static max: number = 100;
 
     public static setMax(max: number){
-var max = max
 AllBinarySensor.max= max;
     
 }

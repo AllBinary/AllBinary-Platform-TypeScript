@@ -65,9 +65,7 @@ export class RemoveActionScriptItemJPanel extends java.awt.Panel {
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, profileActionScriptConditionInterface: ProfileActionScriptConditionInterface){
 
             super();
-        var genericProfileActionJPanel = genericProfileActionJPanel
-var profileActionScriptConditionInterface = profileActionScriptConditionInterface
-this.initComponents();
+        this.initComponents();
     
 this.genericProfileActionJPanel= genericProfileActionJPanel;
     
@@ -87,7 +85,6 @@ this.removeJButton!.addActionListener(new class extends java.awt.event.ActionLis
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 removeJButtonActionPerformed(evt);
     
 }
@@ -101,7 +98,6 @@ add(this.removeJButton);
 
 
     removeJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
     var genericProfileAction: GenericProfileAction = this.genericProfileActionJPanel!.getGenericProfileAction()!;
 ;

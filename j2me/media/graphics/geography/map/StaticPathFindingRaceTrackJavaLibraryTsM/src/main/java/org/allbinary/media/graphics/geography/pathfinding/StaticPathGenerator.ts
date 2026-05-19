@@ -97,16 +97,12 @@ protected constructor (){
                 //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: any = {}, totalPaths: number){
-    //var geographicMapInterface = geographicMapInterface
-    //var totalPaths = totalPaths
 }
 
 
                 //@Throws(Exception.constructor)
             
     getGeographicMapCellPositionListFromBasicGeographicMapCellPositionList(geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory, pathList: BasicArrayList): BasicArrayList{
-    //var geographicMapCellPositionFactory = geographicMapCellPositionFactory
-    //var pathList = pathList
 
     var list: BasicArrayList = new BasicArrayListD();
 ;
@@ -151,10 +147,6 @@ list.add(geographicMapCellPosition);
                 //@Throws(Exception.constructor)
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var geographicMapCellHistory = geographicMapCellHistory
-    //var pathFindingInfo = pathFindingInfo
-    //var totalPaths = totalPaths
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

@@ -60,14 +60,12 @@ export class VisitorFileFilter
 public constructor (booleanVisitorInterface: VisitorInterface){
 
             super();
-        var booleanVisitorInterface = booleanVisitorInterface
-this.booleanVisitorInterface= booleanVisitorInterface;
+        this.booleanVisitorInterface= booleanVisitorInterface;
     
 }
 
 
     public accept(file: File): boolean{
-var file = file
 
     var abFile: AbFile = FileWrapperUtil.wrapFile(file)!;
 ;
@@ -88,7 +86,6 @@ visit.
 
 
     public accept(file: AbFile): boolean{
-var file = file
 
     var isFileAcceptable: boolean = visit = this.booleanVisitorInterface!.visit(file);visit as Boolean
 visit.

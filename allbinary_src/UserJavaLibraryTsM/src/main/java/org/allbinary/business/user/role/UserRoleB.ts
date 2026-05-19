@@ -61,7 +61,6 @@ export class UserRoleB extends UserRole {
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getRole(role: string): UserRole{
-var role = role
 UserRoleFactory.getInstance();
     
 
@@ -89,7 +88,7 @@ index < size; index++)
 ;
     
 
-                        if(role.localeCompare(userRole!.toString()) == 0)
+                        if(role.compareTo(userRole!.toString()) == 0)
                         
                                     {
                                     
@@ -127,9 +126,7 @@ UserRoleFactory.getInstance();
 
 protected constructor (aBasicUserRole: BasicUserRole, aUserFactoryInterface: UserFactoryInterface){
             super(aBasicUserRole, aUserFactoryInterface);
-                    var aBasicUserRole = aBasicUserRole
-var aUserFactoryInterface = aUserFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

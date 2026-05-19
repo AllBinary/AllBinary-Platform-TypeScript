@@ -88,7 +88,6 @@ this.graphicItems!.put(LinesGraphicItem.getStaticName(), new LinesGraphicItemFac
 
 
     public getInstance(itemName: string): GraphicsItemInterfaceFactoryInterface{
-var itemName = itemName
 
     var graphicsItemInterfaceFactoryInterface: GraphicsItemInterfaceFactoryInterface = this.graphicItems!.get(itemName) as GraphicsItemInterfaceFactoryInterface;
 ;
@@ -116,7 +115,6 @@ var itemName = itemName
                 //@Throws(Exception.constructor)
             
     public getInstance(graphicItemNodeList: BasicArrayList): HashMap<any, any>{
-var graphicItemNodeList = graphicItemNodeList
 
     var numberOfItems: number = graphicItemNodeList!.size()!;
 ;

@@ -53,7 +53,6 @@ export class SimpleWeaponProperties
     private range: number= 0
 
     public set(simpleWeaponProperties: SimpleWeaponProperties){
-var simpleWeaponProperties = simpleWeaponProperties
 this.setDamage(simpleWeaponProperties!.getDamage());
     
 this.setDissipation(simpleWeaponProperties!.getDissipation());
@@ -64,7 +63,6 @@ this.setRange(simpleWeaponProperties!.getRange());
 
 
     public setDamage(damage: number){
-var damage = damage
 this.damage= damage;
     
 }
@@ -81,7 +79,6 @@ this.damage= damage;
 
 
     public setDissipation(dissipation: number){
-var dissipation = dissipation
 this.dissipation= dissipation;
     
 }
@@ -108,7 +105,6 @@ this.dissipation= dissipation;
 
 
     public setRange(range: number){
-var range = range
 this.range= range;
     
 }

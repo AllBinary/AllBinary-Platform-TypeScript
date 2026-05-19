@@ -75,9 +75,6 @@ this.basicVelocityProperties= new BasicVelocityProperties();
 
 
     public init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number){
-    //var speedBasicDecimal = speedBasicDecimal
-    //var angle = angle
-    //var otherAngle = otherAngle
 this.speedBasicDecimal= speedBasicDecimal;
     
 
@@ -90,10 +87,6 @@ this.basicVelocityProperties!.setVelocityWithBigDecimal(speedBasicDecimal, angle
 
 
     public moveOutsideRadius(layer: AllBinaryLayer, radius: number, angle: number, otherAngle: number){
-var layer = layer
-var radius = radius
-var angle = angle
-var otherAngle = otherAngle
 
     var scaleFactorValue: number = this.speedBasicDecimal!.getScaledFactorValue()!;
 ;
@@ -118,7 +111,6 @@ layer.moveDXYZ(xVector, yVector, zVector);
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-var layer = layer
 
     var x: number = this.basicVelocityProperties!.getVelocityXBasicDecimalP()!.getScaled()!;
 ;

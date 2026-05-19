@@ -110,7 +110,6 @@ this.init();
                 //@Throws(Exception.constructor)
             
     public addDefault(gameFeature: Feature){
-    //var gameFeature = gameFeature
 this.add(gameFeature);
     
 
@@ -128,7 +127,6 @@ this.add(gameFeature);
                 //@Throws(Exception.constructor)
             
     public add(gameFeature: Feature){
-    //var gameFeature = gameFeature
 
                         if(!this.list.contains(gameFeature))
                         
@@ -149,7 +147,6 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(gameFeatur
                 //@Throws(Exception.constructor)
             
     public removeDefault(gameFeature: Feature){
-    //var gameFeature = gameFeature
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameFeature!.toString())!.toString(), this, "removeDefault");
     
@@ -163,7 +160,6 @@ this.defaultList!.remove(gameFeature);
                 //@Throws(Exception.constructor)
             
     public remove(gameFeature: Feature){
-    //var gameFeature = gameFeature
 
                         if(this.list.contains(gameFeature))
                         
@@ -256,7 +252,6 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, 
 
 
     public isDefault(gameFeature: Feature): boolean{
-var gameFeature = gameFeature
 
 
 
@@ -267,7 +262,6 @@ var gameFeature = gameFeature
 
 
     public isFeature(gameFeature: Feature): boolean{
-var gameFeature = gameFeature
 
 
 
@@ -280,7 +274,6 @@ var gameFeature = gameFeature
                 //@Throws(Exception.constructor)
             
     public toggle(gameFeature: Feature){
-var gameFeature = gameFeature
 
                         if(this.isFeature(gameFeature))
                         

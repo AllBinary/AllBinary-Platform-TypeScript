@@ -202,7 +202,6 @@ LoggingInitInfo.logConfigInfoList!.add(logConfigInfo);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
-var value = value
 LoggingInitInfo.hasRead= value;
     
 }
@@ -242,7 +241,6 @@ LoggingInitInfo.hasRead= true;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static set(logConfigInfoVector: BasicArrayList){
-var logConfigInfoVector = logConfigInfoVector
 LoggingInitInfo.logConfigInfoList= logConfigInfoVector;
     
 }

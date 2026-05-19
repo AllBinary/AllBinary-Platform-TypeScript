@@ -46,7 +46,6 @@ export class NullMIDlet extends MIDlet {
                 //@Throws(MIDletStateChangeException.constructor)
             
     destroyApp(unconditional: boolean){
-var unconditional = unconditional
 }
 
 

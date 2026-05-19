@@ -84,8 +84,7 @@ export class ContextUriResolver
 public constructor (basicURIResolver: BasicUriResolver){
 
             super();
-        var basicURIResolver = basicURIResolver
-this.basicURIResolver= basicURIResolver;
+        this.basicURIResolver= basicURIResolver;
     
 }
 
@@ -93,8 +92,6 @@ this.basicURIResolver= basicURIResolver;
                 //@Throws(TransformerException.constructor)
             
     public resolve(href: string, base: string): Source{
-var href = href
-var base = base
 
         try {
             

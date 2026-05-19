@@ -75,7 +75,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(httpServletRequest: HttpServletRequest): PaymentGatewayInterface{
-var httpServletRequest = httpServletRequest
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -124,7 +123,6 @@ var httpServletRequest = httpServletRequest
                 //@Throws(Exception.constructor)
             
     public getInstance(paymentType: BasicPaymentType): PaymentGatewayInterface{
-var paymentType = paymentType
 
     var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -143,7 +141,6 @@ hashMap!.put(PaymentGatewayData.NAME.toString(), paymentType!.getName());
                 //@Throws(Exception.constructor)
             
     public getInstance(hashMap: HashMap<any, any>): PaymentGatewayInterface{
-var hashMap = hashMap
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

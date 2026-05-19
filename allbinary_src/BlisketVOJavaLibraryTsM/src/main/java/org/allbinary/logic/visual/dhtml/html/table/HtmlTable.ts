@@ -109,11 +109,7 @@ export class HtmlTable extends HtmlTag {
 public constructor (before: string, cellpadding: string, cellspacing: string, after: string){
 
             super();
-        var before = before
-var cellpadding = cellpadding
-var cellspacing = cellspacing
-var after = after
-this.before= before;
+        this.before= before;
     
 this.cellpadding= cellpadding;
     
@@ -135,7 +131,6 @@ addAttribute(this.STYLE, this.BORDERCOLLAPSE);
 
 
     public addRow(htmlRow: HtmlRow){
-var htmlRow = htmlRow
 
                         if(this.numberOfColumns < htmlRow!.getNumberOfColumns())
                         this.numberOfColumns= htmlRow!.getNumberOfColumns()
@@ -182,7 +177,7 @@ i < attributeKeys!.length; i++)
 
                         if(value != 
                                     null
-                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += key;

@@ -57,12 +57,6 @@ export class PlatformTextureBaseFactory
     readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     public load(gl: GL10, target: number, level: number, image: Image, border: number, flip: boolean){
-    //var gl = gl
-    //var target = target
-    //var level = level
-    //var image = image
-    //var border = border
-    //var flip = flip
 }
 
 

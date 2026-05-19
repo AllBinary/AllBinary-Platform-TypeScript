@@ -88,9 +88,7 @@ export class HorizontaRotationManeuverAI extends BasicAI implements ArtificialIn
     private readonly velocityInterface: VelocityInterface
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -148,7 +146,6 @@ allbinaryLayer!.setPosition(allbinaryLayer!.getXP(), 1, allbinaryLayer!.getZP())
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-    //var allBinaryLayerManager = allBinaryLayerManager
 
     var rotationAnimationInterface: RotationAnimationInterface = (this.rotationAnimationInterface as RotationAnimationInterface);
 ;

@@ -57,27 +57,18 @@ export class PathFindingNodeCostInfoFactory extends PathFindingNodeCostInfoFacto
 public constructor (max: number){
 
             super();
-        var max = max
-}
+        }
 
 
                 //@Throws(Exception.constructor)
             
     public create(geographicMapInterface: BasicGeographicMap, goingToGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition, costFromStart: number, costToEnd: number){
-    //var geographicMapInterface = geographicMapInterface
-    //var goingToGeographicMapCellPosition = goingToGeographicMapCellPosition
-    //var geographicMapCellPosition = geographicMapCellPosition
-    //var costFromStart = costFromStart
-    //var costToEnd = costToEnd
 }
 
 
                 //@Throws(Exception.constructor)
             
     public getTotalCost(geographicMapInterface: BasicGeographicMap, comingFromGeographicMapCellPosition: GeographicMapCellPosition, geographicMapCellPosition: GeographicMapCellPosition): number{
-    //var geographicMapInterface = geographicMapInterface
-    //var comingFromGeographicMapCellPosition = comingFromGeographicMapCellPosition
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var geographicMapCellType: GeographicMapCellType = geographicMapInterface!.getCellTypeAt(comingFromGeographicMapCellPosition)!;
 ;

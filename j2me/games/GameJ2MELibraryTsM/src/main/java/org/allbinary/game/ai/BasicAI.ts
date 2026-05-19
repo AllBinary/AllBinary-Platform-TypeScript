@@ -90,9 +90,7 @@ export class BasicAI extends ArtificialIntelligence implements GameKeyEventSourc
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
 
             super();
-        var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-this.ownerLayerInterface= ownerLayerInterface;
+        this.ownerLayerInterface= ownerLayerInterface;
     
 this.gameInput= gameInput;
     
@@ -102,7 +100,6 @@ this.gameInput= gameInput;
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
 
 
@@ -114,7 +111,6 @@ var allBinaryLayerManager = allBinaryLayerManager
                 //@Throws(Exception.constructor)
             
     public processKeyAI(key: number){
-var key = key
 
                         if(key !=  -1)
                         
@@ -128,7 +124,6 @@ var key = key
 
 
     public setLastKey(lastKey: number){
-var lastKey = lastKey
 this.lastKey= lastKey;
     
 }

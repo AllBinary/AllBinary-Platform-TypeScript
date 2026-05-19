@@ -52,20 +52,14 @@ public constructor (){
 
 
     public pointerDragged(x: number, y: number){
-var x = x
-var y = y
 }
 
 
     public pointerPressed(x: number, y: number){
-var x = x
-var y = y
 }
 
 
     public pointerReleased(x: number, y: number){
-var x = x
-var y = y
 }
 
 

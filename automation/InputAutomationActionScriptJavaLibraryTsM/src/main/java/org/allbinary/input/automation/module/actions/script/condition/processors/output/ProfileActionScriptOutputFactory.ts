@@ -58,7 +58,6 @@ export class ProfileActionScriptOutputFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): ProfileActionScriptOutputInterface{
-var node = node
 
     var profileActionScriptOutputInterface: ProfileActionScriptOutputInterface = 
                 null

@@ -101,12 +101,6 @@ export class RecordStoreHighScores extends HighScores {
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, highScoreName: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator): HighScores{
-    //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
-    //var highScoreName = highScoreName
-    //var heading = heading
-    //var columnTwoHeading = columnTwoHeading
-    //var recordComparatorInterface = recordComparatorInterface
 
     var highScoresCanBeNull: any = RecordStoreHighScores.hashTable!.get(highScoreName as Object);
 ;
@@ -160,13 +154,7 @@ RecordStoreHighScores.hashTable!.put(highScores!.getName(), highScores);
     private readonly recordComparatorInterface: RecordComparator
 private constructor (abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, name: string, heading: string, columnTwoHeading: string, recordComparatorInterface: RecordComparator){
             super(name, heading, columnTwoHeading);
-                        //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
-    //var name = name
-    //var heading = heading
-    //var columnTwoHeading = columnTwoHeading
-    //var recordComparatorInterface = recordComparatorInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -182,7 +170,6 @@ this.load();
 
 
     getRecordId(abeClientInformation: AbeClientInformationInterface): string{
-    //var abeClientInformation = abeClientInformation
 
 
 
@@ -195,7 +182,6 @@ this.load();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addHighScore(newHighScore: HighScore){
-    //var newHighScore = newHighScore
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
 ;
@@ -628,7 +614,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isBestScore(newHighScore: HighScore): boolean{
-var newHighScore = newHighScore
 
         try {
             

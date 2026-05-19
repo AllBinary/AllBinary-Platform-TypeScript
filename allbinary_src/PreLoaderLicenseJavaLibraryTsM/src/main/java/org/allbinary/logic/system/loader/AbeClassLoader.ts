@@ -87,9 +87,7 @@ export class AbeClassLoader extends ClassLoader {
     private key: string
 public constructor (parent: ClassLoader, key: string){
             super(parent);
-                    var parent = parent
-var key = key
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -101,7 +99,6 @@ AbeClassLoader.PATH= org.allbinary.globals.URLGLOBALS.getWebappPath() +"WEB-INF/
 
 
     findLoadedClass1(name: string): Function{
-var name = name
 
 
 
@@ -115,7 +112,6 @@ var name = name
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public loadClass(name: string): Function{
-var name = name
 
 
 
@@ -129,8 +125,6 @@ var name = name
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public loadClass(name: string, resolve: boolean): Function{
-var name = name
-var resolve = resolve
 
     var loadedWith: string = "findLoadedClass1";
 ;
@@ -276,7 +270,6 @@ this.logUtil!.put("Failure loading: " +name +"\nwith: " +loadedWith, this, this.
 
 
     loadClassBytesFromFile(name: string): number[]{
-var name = name
 
     var in: FileInputStream = 
                 null
@@ -369,8 +362,6 @@ StreamUtil.getInstance()!.close(in);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public oldLoadClass(name: string, resolve: boolean): Function{
-var name = name
-var resolve = resolve
 
     var loadedWith: string = "findLoadedClass1";
 ;

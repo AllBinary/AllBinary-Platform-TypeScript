@@ -91,9 +91,6 @@ public constructor (){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public process(remoteHighScores: RemoteHighScores, abeClientInformation: AbeClientInformationInterface, highScore: HighScore){
-    //var remoteHighScores = remoteHighScores
-    //var abeClientInformation = abeClientInformation
-    //var highScore = highScore
 
         try {
             this.logUtil!.putF("Begin Remote HighScores Submission", this, this.commonStrings!.PROCESS);

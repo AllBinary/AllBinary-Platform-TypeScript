@@ -85,8 +85,7 @@ export class ReleaseControlledMotionGestureListener
 public constructor (signed: CompleteMotionGestureListenerInterface){
 
             super();
-        var signed = signed
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.signed= signed;
     
@@ -94,70 +93,60 @@ this.signed= signed;
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 
 
     public onUpMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDownMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onLeftMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onRightMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalDownRightMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalDownLeftMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalUpRightMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onDiagonalUpLeftMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.onMotionGestureEvent(ev);
     
 }
 
 
     public onPressedMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 this.isMouseGestureOccurring= true;
     
 this.currentMotionGesture= TouchMotionGestureFactory.getInstance()!.NO_MOTION;
@@ -168,7 +157,6 @@ this.onMotionGestureEvent(ev);
 
 
     public released(ev: MotionGestureEvent){
-var ev = ev
 
         try {
             
@@ -198,7 +186,6 @@ this.logUtil!.put(new StringMaker().
 
 
     public onMotionGestureEvent(ev: MotionGestureEvent){
-var ev = ev
 
                         if(this.isMouseGestureOccurring == false)
                         

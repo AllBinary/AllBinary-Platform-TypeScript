@@ -69,9 +69,7 @@ export class SimultaneousCompoundRotationAnimation extends RotationAnimation {
     private animationInterfaceArray: RotationAnimation[]
 public constructor (animationInterfaceArray: RotationAnimation[], animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance(AngleFactory.getInstance()!.QUARTER_TOTAL_ANGLE), CircularIndexUtil.createInstance(4), animationBehavior);
-                        //var animationInterfaceArray = animationInterfaceArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,7 +79,6 @@ this.animationInterfaceArray= animationInterfaceArray;
 
 
     public setFrame(frameIndex: number){
-    //var frameIndex = frameIndex
 
 
 
@@ -201,7 +198,6 @@ this.animationInterfaceArray[index]!.nextRotation();
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 
@@ -216,9 +212,6 @@ this.animationInterfaceArray[index]!.nextRotation();
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
 
 
@@ -236,10 +229,6 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
 
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 
 
 
@@ -257,7 +246,6 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
 
 
     public setFrameByDirection(direction: Direction){
-    //var direction = direction
 
 
 
@@ -275,7 +263,6 @@ this.animationInterfaceArray[index]!.setFrameByDirection(direction);
 
 
     public setFrameToAngle(angle: Angle){
-    //var angle = angle
 
 
 
@@ -293,14 +280,12 @@ this.animationInterfaceArray[index]!.setFrameToAngle(angle);
 
 
     public adjustFrameToAngle(newAngle: Angle){
-    //var newAngle = newAngle
 this.adjustFrame(newAngle!.getValue());
     
 }
 
 
     public adjustFrame(angle: number){
-    //var angle = angle
 
 
 
@@ -338,7 +323,6 @@ this.animationInterfaceArray[index]!.adjustFrame(angle);
 
 
     public setAnimationInterfaceArray(animationInterfaceArray: RotationAnimation[]){
-    //var animationInterfaceArray = animationInterfaceArray
 this.animationInterfaceArray= animationInterfaceArray;
     
 }
@@ -347,7 +331,6 @@ this.animationInterfaceArray= animationInterfaceArray;
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-    //var gl = gl
 
 
 

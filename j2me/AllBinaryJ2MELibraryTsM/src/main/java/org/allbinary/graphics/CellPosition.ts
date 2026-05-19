@@ -51,7 +51,6 @@ export class CellPosition extends V {
         
 
     public static toStringCellPosition(basicGeographicMapCellPosition: CellPosition): string{
-var basicGeographicMapCellPosition = basicGeographicMapCellPosition
 
 
 
@@ -62,8 +61,6 @@ var basicGeographicMapCellPosition = basicGeographicMapCellPosition
 
 
     public static toStringColRow(i_column: number, i_row: number): string{
-var i_column = i_column
-var i_row = i_row
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -99,11 +96,7 @@ stringBuffer!.append(commonSeps!.PARENTHESIS_CLOSE);
 public constructor (column: number, row: number, columns: number, rows: number){
 
             super();
-        var column = column
-var row = row
-var columns = columns
-var rows = rows
-this.column= column;
+        this.column= column;
     
 this.row= row;
     

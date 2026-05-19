@@ -57,7 +57,6 @@ export class PaymentFactory
         
 
     public static getInstance(request: ServletRequest): PaymentInterface{
-var request = request
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

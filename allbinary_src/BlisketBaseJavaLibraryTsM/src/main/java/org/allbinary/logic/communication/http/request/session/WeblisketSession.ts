@@ -89,9 +89,7 @@ export class WeblisketSession
     private session: HttpSession
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             this(hashMap, pageContext!.getRequest() as HttpServletRequest);
-                    var hashMap = hashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -100,9 +98,7 @@ var pageContext = pageContext
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
-        var hashMap = hashMap
-var httpServletRequest = httpServletRequest
-
+        
     var propertiesHashMap: HashMap<any, any> = hashMap;
 ;
     
@@ -137,21 +133,18 @@ this.session= request.getSession(true);
 
 
     public setPassword(password: string){
-var password = password
 this.session.setAttribute(UserData.PASSWORD, password);
     
 }
 
 
     public setUserName(userName: string){
-var userName = userName
 this.session.setAttribute(UserData.USERNAME, userName);
     
 }
 
 
     public setPaymentMethod(value: string){
-var value = value
 this.session.setAttribute(PaymentGatewayData.NAME.toString(), value);
     
 }
@@ -164,28 +157,24 @@ this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.get
 
 
     public setRole(aRole: UserRole){
-var aRole = aRole
 this.session.setAttribute(UserRoleData.NAME.toString(), aRole);
     
 }
 
 
     public setAttempts(value: Integer){
-var value = value
 this.session.setAttribute(WeblisketSessionData.ATTEMPTS, value);
     
 }
 
 
     public setTimeout(value: string){
-var value = value
 this.session.setAttribute(WeblisketSessionData.TIMEOUT, value);
     
 }
 
 
     public setStoreName(value: string){
-var value = value
 this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
     
 }
@@ -360,7 +349,6 @@ this.session.setAttribute(basketName, orderInterface);
 
 
     public setAuthenticated(value: boolean){
-var value = value
 this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING);
     
 }

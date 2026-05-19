@@ -35,7 +35,6 @@ export class Objects
         
 
     public static <T> requireNonNull(value: T): T{
-    //var value = value
 
                         if(value == 
                                     null
@@ -64,8 +63,6 @@ export class Objects
 
 
     public static <T> requireNonNull(value: T, message: string): T{
-    //var value = value
-var message = message
 
                         if(value == 
                                     null

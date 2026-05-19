@@ -172,7 +172,6 @@ this.hasRead= false;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public set(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
         try {
             this.testing= hashMap!.get(this.TESTING) as string;
@@ -247,7 +246,6 @@ initInfoEntity!.get();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setHasRead(value: boolean){
-var value = value
 this.hasRead= value;
     
 }
@@ -402,28 +400,24 @@ this.updateIfNeeded();
 
 
     public setTesting(value: string){
-var value = value
 this.testing= value;
     
 }
 
 
     public setTestHtmlPath(value: AbPath){
-var value = value
 this.testHtmlPath= value;
     
 }
 
 
     public setMainPath(value: AbPath){
-var value = value
 this.mainPath= value;
     
 }
 
 
     public isMainPathValid(abPath: AbPath): boolean{
-var abPath = abPath
 
 
 
@@ -434,7 +428,6 @@ var abPath = abPath
 
 
     public isTestHtmlPathValid(abPath: AbPath): boolean{
-var abPath = abPath
 
 
 
@@ -447,7 +440,6 @@ var abPath = abPath
                 //@Throws(Exception.constructor)
             
     public isTestingValid(testing: string): boolean{
-var testing = testing
 
 
 

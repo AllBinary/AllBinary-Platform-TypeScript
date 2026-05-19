@@ -73,8 +73,7 @@ export class PaymentGatewayView
 public constructor (paymentGatewayInterface: PaymentGatewayInterface){
 
             super();
-            //var paymentGatewayInterface = paymentGatewayInterface
-this.paymentGatewayInterface= paymentGatewayInterface;
+        this.paymentGatewayInterface= paymentGatewayInterface;
     
 }
 
@@ -108,7 +107,6 @@ this.paymentGatewayInterface= paymentGatewayInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-    //var document = document
 
         try {
             

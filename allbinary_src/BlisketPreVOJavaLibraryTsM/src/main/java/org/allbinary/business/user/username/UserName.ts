@@ -75,7 +75,6 @@ export class UserName
 
 
     public static getValidationInfo(aUserName: string): string{
-var aUserName = aUserName
 
                         if(!StringValidationUtil.getInstance()!.isValidRequired(aUserName, 5, UserData.MAXLEN))
                         
@@ -109,8 +108,7 @@ private constructor (){
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.userName= hashMap!.get(UserData.USERNAME) as string;
+        this.userName= hashMap!.get(UserData.USERNAME) as string;
     
 }
 
@@ -159,7 +157,6 @@ this.userName= hashMap!.get(UserData.USERNAME) as string;
 
 
     public isValid(aUserName: string): Boolean{
-var aUserName = aUserName
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

@@ -59,7 +59,6 @@ export class MineLayerCircularStaticPool
                 //@Throws(Exception.constructor)
             
     public static init(viewPositionFactoryInterface: ViewPositionFactoryInterface){
-var viewPositionFactoryInterface = viewPositionFactoryInterface
 MineCountedPickedUpLayerInterfaceFactory.init();
     
 MineLayerCircularStaticPool.WEAPON_LAYER_CIRCULAR_STATIC_POOL.init(new MineLayerFactory(viewPositionFactoryInterface), 20);

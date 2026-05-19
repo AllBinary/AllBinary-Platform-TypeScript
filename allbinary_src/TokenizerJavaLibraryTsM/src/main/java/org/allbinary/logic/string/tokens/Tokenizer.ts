@@ -62,11 +62,10 @@ export class Tokenizer
 public constructor (sep: string){
 
             super();
-        var sep = sep
-
+        
                         if(sep == 
                                     null
-                                 || sep.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0)
+                                 || sep.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -83,21 +82,18 @@ this.sep= sep;
 
 
     public setSep(sep: string){
-var sep = sep
 this.sep= sep;
     
 }
 
 
     public setEndSep(endSep: string){
-var endSep = endSep
 this.endSep= endSep;
     
 }
 
 
     public getInsideSep(string: string): BasicArrayList{
-var string = string
 
     var tokenList: BasicArrayList = new BasicArrayListD();
 ;
@@ -160,8 +156,6 @@ index= end +this.endSep!.length;
 
 
     public getTokens(string: string, tokenVector: BasicArrayList): BasicArrayList{
-var string = string
-var tokenVector = tokenVector
 
     var index: number = 0;
 ;
@@ -207,7 +201,6 @@ break;
 
 
     public getTokens(stringVector: BasicArrayList): Hashtable<any, any>{
-var stringVector = stringVector
 
     var tokenHashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;

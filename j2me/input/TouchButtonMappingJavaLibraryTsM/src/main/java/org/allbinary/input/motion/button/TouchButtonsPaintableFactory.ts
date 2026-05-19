@@ -52,7 +52,6 @@ export class TouchButtonsPaintableFactory
         
 
     public static getInstance(basicColor: BasicColor): Paintable{
-var basicColor = basicColor
 
 
 

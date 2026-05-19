@@ -71,9 +71,6 @@ export class DynamicRaceTracksPathPrinter extends RaceTracksPathPrinter {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public printAllPaths(raceTrackGeographicMapInterfaceFactoryInterface: RaceTrackGeographicMapInterfaceFactoryInterface, pathFindingInfo: PathFindingInfo, size: number){
-var raceTrackGeographicMapInterfaceFactoryInterface = raceTrackGeographicMapInterfaceFactoryInterface
-var pathFindingInfo = pathFindingInfo
-var size = size
 
         try {
             

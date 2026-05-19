@@ -84,11 +84,7 @@ export class CommandForm extends Form implements MyCommandInterface, MenuListene
     private commandStack: Stack<any>
 public constructor (commandListener: CommandListener, formTitle: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(formTitle);
-                    var commandListener = commandListener
-var formTitle = formTitle
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -110,7 +106,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 
 
     public initCommands(cmdListener: CommandListener){
-    //var cmdListener = cmdListener
 }
 
 
@@ -145,7 +140,6 @@ this.repaintProcessor!.process();
 
 
     public addCommand(command: Command){
-var command = command
 this.commandStack!.push(command);
     
 super.addCommand(command);

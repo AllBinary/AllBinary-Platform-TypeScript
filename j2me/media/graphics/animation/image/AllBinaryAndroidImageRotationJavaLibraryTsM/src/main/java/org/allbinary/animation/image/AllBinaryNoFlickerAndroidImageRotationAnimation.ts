@@ -86,12 +86,7 @@ export class AllBinaryNoFlickerAndroidImageRotationAnimation extends ImageBaseRo
     private bufferedImageIndex: number= 0
 protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
-                        //var originalImage = originalImage
-    //var image = image
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -113,7 +108,6 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImage(image);
 
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 
     var changed: boolean = false;
 ;
@@ -148,14 +142,12 @@ this.updateImage();
 
 
     public changeBasicColor(basicColor: BasicColor){
-    //var basicColor = basicColor
 this.setBasicColorP(basicColor);
     
 }
 
 
     public setAlpha(alpha: number){
-    //var alpha = alpha
 
     var changed: boolean = false;
 ;
@@ -216,7 +208,6 @@ this.swap();
 
 
     public setFrame(index: number){
-    //var index = index
 
     var currentFrame: number = this.circularIndexUtil!.getIndex()!;
 ;
@@ -258,9 +249,6 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 graphics.drawImage(this.imageToShow, x, y, this.anchor);
     
 }

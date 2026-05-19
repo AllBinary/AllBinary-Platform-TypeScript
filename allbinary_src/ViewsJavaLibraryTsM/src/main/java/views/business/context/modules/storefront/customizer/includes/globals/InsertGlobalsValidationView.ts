@@ -66,8 +66,7 @@ export class InsertGlobalsValidationView extends GlobalsView implements Validati
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -173,7 +172,6 @@ CustomizerUtil.getInstance()!.insert(this.getTransformInfoInterface(), this as D
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

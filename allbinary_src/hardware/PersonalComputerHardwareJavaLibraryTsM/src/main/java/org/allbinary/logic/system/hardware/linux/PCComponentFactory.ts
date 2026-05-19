@@ -98,8 +98,6 @@ private constructor (){
 
 
     public getInstance(component: string, componentData: string): HardwareComponentInterface{
-var component = component
-var componentData = componentData
 
         try {
             
@@ -109,7 +107,7 @@ var componentData = componentData
                         
                                     {
                                     
-                        if(component.localeCompare(this.componentFactory!.ETHERNET.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.ETHERNET.toString()) == 0)
                         
                                     {
                                     
@@ -122,7 +120,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.BRIDGE.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.BRIDGE.toString()) == 0)
                         
                                     {
                                     
@@ -135,7 +133,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.IDE.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.IDE.toString()) == 0)
                         
                                     {
                                     
@@ -148,7 +146,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.MULTIMEDIA.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.MULTIMEDIA.toString()) == 0)
                         
                                     {
                                     
@@ -161,7 +159,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.SCSI.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.SCSI.toString()) == 0)
                         
                                     {
                                     
@@ -174,7 +172,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.USB.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.USB.toString()) == 0)
                         
                                     {
                                     
@@ -187,7 +185,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.VGA.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.VGA.toString()) == 0)
                         
                                     {
                                     
@@ -200,7 +198,7 @@ var componentData = componentData
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.PCI.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.PCI.toString()) == 0)
                         
                                     {
                                     
@@ -250,7 +248,6 @@ var componentData = componentData
 
 
     public getComponentType(component: string): string{
-var component = component
 
                         if(component.indexOf(this.componentFactory!.ETHERNET.toString()) >= 0)
                         
@@ -343,7 +340,7 @@ var component = component
                                     }
                                 
                              else 
-                        if(component.localeCompare(this.componentFactory!.PCI.toString()) == 0)
+                        if(component.compareTo(this.componentFactory!.PCI.toString()) == 0)
                         
                                     {
                                     

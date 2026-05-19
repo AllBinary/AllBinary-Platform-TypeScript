@@ -103,7 +103,6 @@ public constructor (){
 
 
     public setArtist(artist: string){
-var artist = artist
 this.artist= artist;
     
 }
@@ -120,7 +119,6 @@ this.artist= artist;
 
 
     public setArtistLink(artistLink: string){
-var artistLink = artistLink
 this.artistLink= artistLink;
     
 }
@@ -137,7 +135,6 @@ this.artistLink= artistLink;
 
 
     public setTitle(title: string){
-var title = title
 this.title= title;
     
 }
@@ -154,7 +151,6 @@ this.title= title;
 
 
     public setDateAdded(dateAdded: string){
-var dateAdded = dateAdded
 this.dateAdded= dateAdded;
     
 }
@@ -171,7 +167,6 @@ this.dateAdded= dateAdded;
 
 
     public setDirectory(directory: string){
-var directory = directory
 this.directory= directory;
     
 }
@@ -188,7 +183,6 @@ this.directory= directory;
 
 
     public setFramedLink(framedLink: string){
-var framedLink = framedLink
 this.framedLink= framedLink;
     
 }
@@ -205,7 +199,6 @@ this.framedLink= framedLink;
 
 
     public setListPrice(listPrice: Money){
-var listPrice = listPrice
 this.listPrice= listPrice;
     
 }
@@ -222,7 +215,6 @@ this.listPrice= listPrice;
 
 
     public setOurPrice(ourPrice: Money){
-var ourPrice = ourPrice
 this.ourPrice= ourPrice;
     
 }
@@ -239,7 +231,6 @@ this.ourPrice= ourPrice;
 
 
     public setRank(rank: number){
-var rank = rank
 this.rank= rank;
     
 }
@@ -256,7 +247,6 @@ this.rank= rank;
 
 
     public setImage(image: AdvertisementImageInterface){
-var image = image
 this.image= image;
     
 }
@@ -273,7 +263,6 @@ this.image= image;
 
 
     public setProduct(product: AdvertisementProductInterface){
-var product = product
 this.product= product;
     
 }
@@ -290,7 +279,6 @@ this.product= product;
 
 
     public setThumbnail(thumbnail: AdvertisementThumbnailInterface){
-var thumbnail = thumbnail
 this.thumbnail= thumbnail;
     
 }

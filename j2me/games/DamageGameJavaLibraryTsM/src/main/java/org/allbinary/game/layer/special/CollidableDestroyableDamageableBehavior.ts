@@ -60,8 +60,7 @@ export class CollidableDestroyableDamageableBehavior extends CollidableBaseBehav
     readonly damageUtil: DamageUtil = DamageUtil.getInstance()!;
 public constructor (collidable: boolean){
             super(collidable);
-                        //var collidable = collidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -69,8 +68,6 @@ public constructor (collidable: boolean){
 
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
-    //var collisionLayer = collisionLayer
 
                         if(ownerLayer!.getGroupInterface()[0] != collisionLayer!.getGroupInterface()[0])
                         
@@ -96,8 +93,6 @@ public constructor (collidable: boolean){
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var ownerCollidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer = ownerLayer as CollidableDestroyableDamageableLayer;
 ;
@@ -112,8 +107,6 @@ ownerCollidableDestroyableDamageableLayer!.damage(collidableDestroyableDamageabl
 
 
     public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log("No Longer Used", this);
     
 
@@ -128,8 +121,6 @@ ForcedLogUtil.log("No Longer Used", this);
                 //@Throws(Exception.constructor)
             
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log("No Longer Used", this);
     
 }

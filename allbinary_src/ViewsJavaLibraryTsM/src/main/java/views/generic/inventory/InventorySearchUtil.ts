@@ -136,7 +136,6 @@ export class InventorySearchUtil
                 //@Throws(Exception.constructor)
             
     public getBasicItemIdColumn(searchRequest: SearchRequest): Vector{
-var searchRequest = searchRequest
 
     var inventoryEntityInterface: InventoryEntity = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;
 ;
@@ -211,8 +210,6 @@ column.addAll(substoreIdColumn);
                 //@Throws(Exception.constructor)
             
     getNoResults(viewDocumentInterface: TransformDocumentInterface, inventoryNode: Node): string{
-var viewDocumentInterface = viewDocumentInterface
-var inventoryNode = inventoryNode
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_PAGES, this.commonPhoneStrings!.ZERO));
     
 inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterface!.getDoc(), SearchData.TOTAL_NUMBER_ITEMS, this.commonPhoneStrings!.ZERO));
@@ -240,9 +237,6 @@ inventoryNode!.appendChild(ModDomHelper.createNameValueNodes(viewDocumentInterfa
 
 
     public search(abeClientInformation: AbeClientInformationInterface, searchRequest: SearchRequest, column: Vector): string[]{
-    //var abeClientInformation = abeClientInformation
-var searchRequest = searchRequest
-var column = column
 
         try {
             

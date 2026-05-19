@@ -65,7 +65,6 @@ public constructor (){
 
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
 
         try {
             

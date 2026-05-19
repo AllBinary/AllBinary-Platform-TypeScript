@@ -59,10 +59,7 @@ export class PickedUpLayerInterfaceFactory extends PickedUpLayerInterfaceFactory
 protected constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, animationInterface: Animation){
 
             super();
-        var pickeUpLayerType = pickeUpLayerType
-var iconLayer = iconLayer
-var animationInterface = animationInterface
-this.pickedUpLayerType= pickeUpLayerType;
+        this.pickedUpLayerType= pickeUpLayerType;
     
 this.animationInterface= animationInterface;
     

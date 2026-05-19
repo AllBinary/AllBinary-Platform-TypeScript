@@ -63,14 +63,12 @@ export class ScreenListenerHandler
     private screenListenerInterface: ScreenListenerInterface = new ScreenEmptyListener();
 
     public setListener(screenListenerInterface: ScreenListenerInterface){
-var screenListenerInterface = screenListenerInterface
 this.screenListenerInterface= screenListenerInterface;
     
 }
 
 
     public fireWithState(isFullScreen: boolean){
-var isFullScreen = isFullScreen
 this.screenListenerInterface!.onFullScreen(isFullScreen);
     
 }

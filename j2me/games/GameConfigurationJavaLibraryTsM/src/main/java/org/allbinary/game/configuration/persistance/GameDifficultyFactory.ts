@@ -61,7 +61,6 @@ export class GameDifficultyFactory
     private level: number = 0;
 
     public setLevel(level: number){
-var level = level
 this.level= level;
     
 }

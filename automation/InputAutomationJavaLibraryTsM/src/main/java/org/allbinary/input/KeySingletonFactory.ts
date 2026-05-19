@@ -122,7 +122,6 @@ logUtil!.put(commonStrings!.EXCEPTION, "KeySingleFactory", STATIC_BLOCK, e);
 
 
     public static getInstance(index: number): Integer{
-var index = index
 
 
 

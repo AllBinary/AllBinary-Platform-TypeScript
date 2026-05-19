@@ -69,9 +69,7 @@ export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends Bas
     private lastImage: Image = NullCanvas.NULL_IMAGE;
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), 0, 0, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -100,7 +98,6 @@ this.lastImage= ImageScaleUtil.getInstance()!.createImage(GameFeatureImageCacheF
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 

@@ -82,11 +82,7 @@ export class VelocityWidget extends BasicHud {
     private offset2: number= 0
 public constructor (powerOfTenVelocity: number, location: number, direction: number, basicColor: BasicColor){
             super(location, direction, 14, MyFont.getInstance()!.getSize() *(5 +MathUtil.getInstance()!.getTotalDigits(powerOfTenVelocity) +1), 2, basicColor);
-                    var powerOfTenVelocity = powerOfTenVelocity
-var location = location
-var direction = direction
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -116,14 +112,12 @@ this.offset= myFont!.defaultStringWidth(this.primitiveLongUtil!.getMaxDigits()) 
 
 
     public add(value: number){
-var value = value
 this.set(this.velocity +value);
     
 }
 
 
     public set(value: number){
-var value = value
 
     var lastVelocity: number = this.velocity;
 ;
@@ -173,14 +167,12 @@ this.offset2= this.offset -myFont!.defaultStringWidth(this.totalDigits) -myFont!
 
 
     public reduce(value: number){
-var value = value
 this.set(this.velocity -value);
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paintDXY(graphics, this.string, 0, this.totalDigits, this.KILOMETERS_PER_HOUR_STR, 0, this.totalChars, this.offset2, this.offset);
     
 }

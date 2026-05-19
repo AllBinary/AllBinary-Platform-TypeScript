@@ -48,7 +48,6 @@ export class DemoSetup
         
 
     public init(gameMidlet: GameMidlet){
-var gameMidlet = gameMidlet
 }
 
 

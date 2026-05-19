@@ -108,13 +108,7 @@ export class BasicHud_1
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
 
             super();
-        var location = location
-var direction = direction
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-var basicColor = basicColor
-this.setLocation(location);
+        this.setLocation(location);
     
 this.setDirection(direction);
     
@@ -156,8 +150,6 @@ this.color= basicColor!.intValue();
                 //@Throws(Exception.constructor)
             
     getHudGraphicsPositionWH(width: number, height: number): HudGraphicsPosition{
-var width = width
-var height = height
 
     var x: number = 0;
 ;
@@ -275,14 +267,12 @@ anchor= 0;
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-    //var displayChangeEvent = displayChangeEvent
 
         try {
             
@@ -311,8 +301,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
 
 
     getPoint(x: number, y: number): GPoint{
-    //var x = x
-    //var y = y
 
 
 
@@ -333,7 +321,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DISPLAY
 
 
     public setBufferZone(bufferZone: number){
-    //var bufferZone = bufferZone
 this.bufferZone= bufferZone;
     
 }
@@ -350,7 +337,6 @@ this.bufferZone= bufferZone;
 
 
     public setMaxWidth(maxWidth: number){
-    //var maxWidth = maxWidth
 this.maxWidth= maxWidth;
     
 }
@@ -367,66 +353,45 @@ this.maxWidth= maxWidth;
 
 
     public setMaxHeight(maxHeight: number){
-    //var maxHeight = maxHeight
 this.maxHeight= maxHeight;
     
 }
 
 
     public setLocation(location: number){
-    //var location = location
 this.location= location;
     
 }
 
 
     public setDirection(direction: number){
-    //var direction = direction
 this.direction= direction;
     
 }
 
 
     public paintSSO(graphics: Graphics, string: string, string2: string, offset: number){
-    //var graphics = graphics
-    //var string = string
-    //var string2 = string2
-    //var offset = offset
-this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
-graphics.drawString(string, this.x, getY(), this.hudGraphicsPosition!.getAnchor());
+graphics.drawString(string, this.x, this.getY(), this.hudGraphicsPosition!.getAnchor());
     
-graphics.drawString(string2, this.x +offset, getY(), this.hudGraphicsPosition!.getAnchor());
+graphics.drawString(string2, this.x +offset, this.getY(), this.hudGraphicsPosition!.getAnchor());
     
 }
 
 
     public paintSSOO(graphics: Graphics, string: string, string2: string, offset: number, offset2: number){
-var graphics = graphics
-var string = string
-var string2 = string2
-var offset = offset
-var offset2 = offset2
 graphics.setColor(this.getColor());
     
-graphics.drawString(string, this.x +offset, getY(), this.hudGraphicsPosition!.getAnchor());
+graphics.drawString(string, this.x +offset, this.getY(), this.hudGraphicsPosition!.getAnchor());
     
-graphics.drawString(string2, this.x +offset2, getY(), this.hudGraphicsPosition!.getAnchor());
+graphics.drawString(string2, this.x +offset2, this.getY(), this.hudGraphicsPosition!.getAnchor());
     
 }
 
 
     public paintDXY(graphics: Graphics, charArray: string[], offset: number, len: number, charArray2: string[], offset2: number, len2: number, xOffset: number, xOffset2: number){
-var graphics = graphics
-var charArray = charArray
-var offset = offset
-var len = len
-var charArray2 = charArray2
-var offset2 = offset2
-var len2 = len2
-var xOffset = xOffset
-var xOffset2 = xOffset2
-this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
     var y: number = this.getY()!;
@@ -440,15 +405,7 @@ graphics.drawChars(charArray2, offset2, len2, this.x +xOffset2, y, this.hudGraph
 
 
     public paintDX(graphics: Graphics, charArray: string[], offset: number, len: number, charArray2: string[], offset2: number, len2: number, xOffset: number){
-var graphics = graphics
-var charArray = charArray
-var offset = offset
-var len = len
-var charArray2 = charArray2
-var offset2 = offset2
-var len2 = len2
-var xOffset = xOffset
-this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
     var y: number = this.getY()!;
@@ -462,11 +419,7 @@ graphics.drawChars(charArray2, offset2, len2, this.x +xOffset, y, this.hudGraphi
 
 
     public paintOffsetAndLength(graphics: Graphics, charArray: string[], offset: number, len: number){
-var graphics = graphics
-var charArray = charArray
-var offset = offset
-var len = len
-this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
     var y: number = this.getY()!;
@@ -480,9 +433,7 @@ graphics.drawChars(charArray, offset, len, this.x, y, this.hudGraphicsPosition!.
     offsetY: number= 0
 
     public paint(graphics: Graphics, string: string){
-var graphics = graphics
-var string = string
-this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 
     var y: number = this.getY() +this.offsetY;
@@ -524,14 +475,12 @@ graphics.drawString(string, this.x, y, this.hudGraphicsPosition!.getAnchor());
 
 
     public setX(x: number){
-var x = x
 this.x= x;
     
 }
 
 
     public setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 }
@@ -548,7 +497,6 @@ this.basicColor= basicColor;
 
 
     setY(y: number){
-var y = y
 this.y= y;
     
 }

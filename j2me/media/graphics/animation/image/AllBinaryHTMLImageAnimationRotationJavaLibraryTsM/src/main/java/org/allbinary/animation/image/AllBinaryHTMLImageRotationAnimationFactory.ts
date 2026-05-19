@@ -68,12 +68,7 @@ export class AllBinaryHTMLImageRotationAnimationFactory extends BaseImageAnimati
     readonly angleIncrement: number
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -85,7 +80,6 @@ this.angleIncrement= angleIncrement;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;

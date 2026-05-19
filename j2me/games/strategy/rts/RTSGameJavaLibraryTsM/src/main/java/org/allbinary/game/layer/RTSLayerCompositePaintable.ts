@@ -66,14 +66,12 @@ export class RTSLayerCompositePaintable extends Paintable {
 public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable){
 
             super();
-        var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable
-this.upgradableRTSLayerHudPaintable= upgradableRTSLayerHudPaintable;
+        this.upgradableRTSLayerHudPaintable= upgradableRTSLayerHudPaintable;
     
 }
 
 
     public update(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 
                         if(rtsLayer!.isUpgradeable())
                         
@@ -110,7 +108,6 @@ var rtsLayer = rtsLayer
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.drawString(this.getDownGradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY1, 0);
     
 graphics.drawString(this.getUpgradeCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0);
@@ -119,7 +116,6 @@ graphics.drawString(this.getUpgradeCost(), this.upgradableRTSLayerHudPaintable!.
 
 
     setUpgradeCost(upgradeCost: string){
-var upgradeCost = upgradeCost
 this.upgradeCost= upgradeCost;
     
 }
@@ -136,7 +132,6 @@ this.upgradeCost= upgradeCost;
 
 
     setDownGradeCost(downGradeCost: string){
-var downGradeCost = downGradeCost
 this.downGradeCost= downGradeCost;
     
 }

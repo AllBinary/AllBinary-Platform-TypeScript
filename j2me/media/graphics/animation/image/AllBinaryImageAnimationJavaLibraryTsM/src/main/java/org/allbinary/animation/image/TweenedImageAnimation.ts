@@ -75,12 +75,7 @@ export class TweenedImageAnimation extends IndexedAnimation {
     circularIndexUtil: CircularIndexUtil
 public constructor (image: Image, dx: number, dy: number, totalFrames: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var totalFrames = totalFrames
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -122,7 +117,6 @@ this.circularIndexUtil!.previous();
 
 
     public setFrame(index: number){
-var index = index
 this.circularIndexUtil!.setIndex(index);
     
 }
@@ -149,7 +143,6 @@ this.circularIndexUtil!.setIndex(index);
 
 
     public setSequence(sequence: number[]){
-var sequence = sequence
 }
 
 
@@ -166,9 +159,6 @@ var sequence = sequence
     private anchor: number = Anchor.TOP_LEFT;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 
     var frame: number = this.getFrame()!;
 ;

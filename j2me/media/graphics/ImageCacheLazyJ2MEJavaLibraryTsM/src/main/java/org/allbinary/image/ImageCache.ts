@@ -291,7 +291,6 @@ logUtil!.putF(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_METHO
 
 
     public addListener(renderer: any = {}){
-var renderer = renderer
 }
 
 
@@ -594,7 +593,6 @@ this.loadImageForAnimation();
                 //@Throws(Exception.constructor)
             
     loadImageForLazyAnimation(lazyImageRotationAnimation: LazyImageRotationAnimation): boolean{
-    //var lazyImageRotationAnimation = lazyImageRotationAnimation
 
     var image: Image = lazyImageRotationAnimation!.animationInterfaceFactoryInterface!.getImage()!;
 ;
@@ -664,7 +662,6 @@ this.loadImage(image);
                 //@Throws(Exception.constructor)
             
     loadImage(image: Image): boolean{
-    //var image = image
 
                         if(image.isReady())
                         
@@ -751,8 +748,6 @@ this.loadImage(image);
                 //@Throws(Exception.constructor)
             
     init(image: Image, image2: Image){
-    //var image = image
-    //var image2 = image2
 image.init(image2.getImage());
     
 }
@@ -761,7 +756,6 @@ image.init(image2.getImage());
                 //@Throws(Exception.constructor)
             
     creatImage(key: string): Image{
-    //var key = key
 
     var inputStream: InputStream = resourceUtil!.getResourceAsStream(key)!;
 ;
@@ -784,9 +778,6 @@ image.setName(key);
                 //@Throws(Exception.constructor)
             
     public get(caller: string, width: number, height: number): Image{
-    //var caller = caller
-    //var width = width
-    //var height = height
 
     var foundIndex: number = this.getIndexWH(width, height)!;
 ;
@@ -853,7 +844,6 @@ this.listOfList[foundIndex]!.add(image);
                 //@Throws(Exception.constructor)
             
     public getWithKey(key: any = {}): Image{
-    //var key = key
 
     var image: Image = this.getImage(key)!;
 ;
@@ -908,7 +898,6 @@ this.hashtable.put(key, image);
 
 
     public getIndex(key: any = {}): number{
-    //var key = key
 
     var gdResources: GDResources = GDResources.getInstance()!;
 ;
@@ -959,8 +948,6 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
-    //var key = key
-    //var inputStream = inputStream
 
     var gdLazyResources: GDLazyResources = GDLazyResources.getInstance()!;
 ;
@@ -1038,9 +1025,6 @@ this.loadList!.add(image);
                 //@Throws(Exception.constructor)
             
     createImageLater(key: string, width: number, height: number): Image{
-    //var key = key
-    //var width = width
-    //var height = height
 
 
 
@@ -1051,7 +1035,6 @@ this.loadList!.add(image);
 
 
     public getAssociated(lazyImageRotationAnimation: LazyImageRotationAnimation): BasicArrayList{
-    //var lazyImageRotationAnimation = lazyImageRotationAnimation
 
     var list: BasicArrayList = new BasicArrayListD();
 ;
@@ -1122,7 +1105,6 @@ this.loadAfterList!.remove(list.get(index));
 
 
     public add(lazyImageRotationAnimation: LazyImageRotationAnimation){
-    //var lazyImageRotationAnimation = lazyImageRotationAnimation
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -1140,7 +1122,6 @@ this.loadAfterList!.add(lazyImageRotationAnimation);
                 //@Throws(Exception.constructor)
             
     public insertFirst(lazyImageRotationAnimation: LazyImageRotationAnimation){
-    //var lazyImageRotationAnimation = lazyImageRotationAnimation
 
                         if(this.loadNowList!.contains(lazyImageRotationAnimation))
                         

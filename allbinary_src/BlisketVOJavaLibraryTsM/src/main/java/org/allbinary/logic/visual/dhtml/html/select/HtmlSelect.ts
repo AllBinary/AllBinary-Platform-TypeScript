@@ -88,11 +88,7 @@ export class HtmlSelect extends HtmlTag {
 public constructor (before: string, size: string, name: string, after: string){
 
             super();
-        var before = before
-var size = size
-var name = name
-var after = after
-this.before= before;
+        this.before= before;
     
 this.size= size;
     
@@ -106,14 +102,12 @@ this.options= new Vector();
 
 
     public addOption(key: string){
-var key = key
 this.options.add(key);
     
 }
 
 
     public addOptions(fileName: string){
-var fileName = fileName
 
         try {
             
@@ -143,7 +137,6 @@ this.addOption("Error");
 
 
     public setSelected(selected: string){
-var selected = selected
 this.selected= selected;
     
 }
@@ -160,7 +153,6 @@ this.selected= selected;
 
 
     public setMultiple(value: boolean){
-var value = value
 this.isMultipleSelect= value;
     
 }
@@ -199,7 +191,7 @@ i < optionsSize; i++)
 
                         if(value != 
                                     null
-                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += this.STARTOPTION;
@@ -277,7 +269,7 @@ i < attributeSize; i++)
 
                         if(value != 
                                     null
-                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += key;

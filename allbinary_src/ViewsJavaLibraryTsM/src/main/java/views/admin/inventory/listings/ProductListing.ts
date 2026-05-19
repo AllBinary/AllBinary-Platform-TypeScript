@@ -135,8 +135,7 @@ export class ProductListing
 public constructor (searchRequest: SearchRequest){
 
             super();
-        var searchRequest = searchRequest
-this.searchRequest= searchRequest;
+        this.searchRequest= searchRequest;
     
 this.storeFronts= new StoreFrontsEntity();
     
@@ -150,7 +149,6 @@ this.inventory= new InventoryEntity();
                 //@Throws(Exception.constructor)
             
     getHashSet(storeFront: StoreFrontInterface): HashSet{
-var storeFront = storeFront
 
     var inventoryColumnUtil: InventoryColumnUtil = InventoryColumnUtil.getInstance()!;
 ;
@@ -207,8 +205,6 @@ keywords.addAll(substoreKeywords);
                 //@Throws(Exception.constructor)
             
     savePage(file: string, data: string){
-var file = file
-var data = data
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.STATICPAGEGENERATIONLOGGING))
                         
@@ -274,10 +270,6 @@ StreamUtil.getInstance()!.close(idOutData);
                 //@Throws(Exception.constructor)
             
     create(keywordData: string, keywordFilenameHashMap: HashMap<any, any>, vector: Vector, staticPath: AbPath){
-var keywordData = keywordData
-var keywordFilenameHashMap = keywordFilenameHashMap
-var vector = vector
-var staticPath = staticPath
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -398,8 +390,6 @@ this.savePage(file, productListingPages[index]!);
 
 
     addStaticPageInfoToDatabase(storeFront: StoreFrontInterface, keywordFilenameHashMap: HashMap<any, any>){
-var storeFront = storeFront
-var keywordFilenameHashMap = keywordFilenameHashMap
 
     var keywordHashSet: Set = keywordFilenameHashMap!.keys!;
 ;
@@ -586,7 +576,6 @@ stringBuffer!.append(this.INVENTORY);
                 //@Throws(Exception.constructor)
             
     public generateAll(storeName: string): string{
-var storeName = storeName
 
         try {
             
@@ -600,7 +589,7 @@ var storeName = storeName
                         
                                     {
                                     
-                        if(storeName!.localeCompare(GLOBALS2.GENERATEALLSTORES) != 0)
+                        if(storeName!.compareTo(GLOBALS2.GENERATEALLSTORES) != 0)
                         
                                     {
                                     this.searchRequest!.setStoreFront(this.storeFronts!.getStoreFrontInterface(storeName));

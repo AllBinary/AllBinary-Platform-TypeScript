@@ -87,8 +87,7 @@ export class InputAutomationModuleFactoryFactory
 public constructor (helpSetListenerInterface: HelpSetListener){
 
             super();
-            //var helpSetListenerInterface = helpSetListenerInterface
-this.helpSetListenerInterface= helpSetListenerInterface;
+        this.helpSetListenerInterface= helpSetListenerInterface;
     
 this.defaultListModelHelper= new DefaultListModelHelper();
     
@@ -127,7 +126,6 @@ this.logUtil!.putF("Loaded " +this.hashMap!.size() +"/" +this.defaultListModelHe
 
 
     add(inputAutomationModuleConfiguration: InputAutomationModuleConfiguration){
-    //var inputAutomationModuleConfiguration = inputAutomationModuleConfiguration
 
     var inputAutomationModuleInterface: InputAutomationModuleFactoryInterface = inputAutomationModuleConfiguration!.getInputAutomationModuleInterface()!;
 ;
@@ -167,7 +165,6 @@ this.helpSetListenerInterface!.helpSetAdded(helpSetEvent);
 
 
     public getInstance(moduleName: string): InputAutomationModuleFactoryInterface{
-    //var moduleName = moduleName
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

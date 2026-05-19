@@ -185,11 +185,7 @@ export class GameCommandCanvas extends MyCanvas implements MenuListener, Display
     private isSingleKeyRepeatableProcessing: boolean = Features.getInstance()!.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
 public constructor (cmdListener: CommandListener, name: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(name, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST);
-                        //var cmdListener = cmdListener
-    //var name = name
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -233,14 +229,12 @@ this.repaintProcessor!.process();
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-    //var displayChangeEvent = displayChangeEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.canvasStrings!.ON_DISPLAY_CHANGE_EVENT);
@@ -265,7 +259,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
 
 
     public initCommands(cmdListener: CommandListener){
-    //var cmdListener = cmdListener
 this.removeAllCommands();
     
 this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
@@ -322,7 +315,6 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
     public createRectangle(size: number): Rectangle{
-    //var size = size
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
@@ -395,29 +387,24 @@ this.repaintProcessor!.process();
 
 
     public keyPressed(keyCode: number){
-    //var keyCode = keyCode
 this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
-    //var keyCode = keyCode
 this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
-    //var keyCode = keyCode
 this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 this.logUtil!.putF(new StringMaker().
                             append(CommonSeps.getInstance()!.SPACE)!.appendint(keyCode)!.toString(), this, this.gameInputStrings!.KEY_PRESSED);
     
@@ -427,16 +414,12 @@ this.addGameKeyEvent(keyCode, 0, false);
 
 
     public keyReleasedByDevice(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 this.removeGameKeyEvent(keyCode, deviceId, false);
     
 }
 
 
     public keyRepeatedByDevice(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 
                         if(this.isSingleKeyRepeatableProcessing)
                         
@@ -450,9 +433,6 @@ this.removeGameKeyEvent(keyCode, deviceId, false);
 
 
     addGameKeyEvent(keyCode: number, deviceId: number, repeated: boolean){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
-    //var repeated = repeated
 
         try {
             
@@ -493,9 +473,6 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 
 
     removeGameKeyEvent(keyCode: number, deviceId: number, repeated: boolean){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
-    //var repeated = repeated
 
         try {
             
@@ -536,7 +513,6 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.REMOVE_KEY_EVE
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 this.menuPaintable!.paint(graphics);
     
 this.repaintBehavior!.repaint(this);
@@ -545,7 +521,6 @@ this.repaintBehavior!.repaint(this);
 
 
     setMenuInputProcessor(menuInputProcessor: BasicMenuInputProcessor){
-    //var menuInputProcessor = menuInputProcessor
 this.menuInputProcessor= menuInputProcessor;
     
 }

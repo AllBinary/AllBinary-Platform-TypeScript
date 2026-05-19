@@ -59,8 +59,6 @@ export class TransformStoreDocumentFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(pageContext: PageContext, weblisketSession: WeblisketSession): TransformDocumentInterface{
-var pageContext = pageContext
-var weblisketSession = weblisketSession
 
 
 
@@ -73,7 +71,6 @@ var weblisketSession = weblisketSession
                 //@Throws(Exception.constructor)
             
     public static getInstance(searchRequest: SearchRequest): TransformDocumentInterface{
-var searchRequest = searchRequest
 
 
 

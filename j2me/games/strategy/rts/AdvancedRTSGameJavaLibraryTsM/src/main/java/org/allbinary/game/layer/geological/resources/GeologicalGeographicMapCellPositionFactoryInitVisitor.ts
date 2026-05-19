@@ -58,8 +58,6 @@ export class GeologicalGeographicMapCellPositionFactoryInitVisitor
                 //@Throws(Exception.constructor)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
-var tiledLayer = tiledLayer
-var cellPosition = cellPosition
 
     var geologicalGeographicMapCellPosition: GeologicalGeographicMapCellPosition = (cellPosition as GeologicalGeographicMapCellPosition);
 ;

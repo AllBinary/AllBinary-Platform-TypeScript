@@ -58,8 +58,7 @@ export class ValidationView extends BillingAddressesView implements ValidationCo
         
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -131,7 +130,6 @@ this.streetAddresses= billingAddressesEntity!.get();
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

@@ -83,7 +83,6 @@ private constructor (){
 
 
     public addListener(collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
-var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 
                         if(!this.list.contains(collidableDestroyableDamageableLayer))
                         
@@ -107,7 +106,6 @@ super.removeAllListeners();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -118,7 +116,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
 
 
@@ -153,8 +150,6 @@ super.fireEvent(eventObject);
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
     var destroyedEventListenerInterface: DestroyedEventListenerInterface = eventListenerInterface as DestroyedEventListenerInterface;
 ;

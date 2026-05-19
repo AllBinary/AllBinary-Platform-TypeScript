@@ -81,7 +81,6 @@ protected constructor (){
 
 
     public setLayerProcessorArray(layerProcessorArray: LayerProcessor[]){
-    //var layerProcessorArray = layerProcessorArray
 this.basicLayerProcessorArray= layerProcessorArray;
     
 }
@@ -113,7 +112,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public append(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 
                         if(!this.contains(layerInterface))
                         
@@ -131,8 +129,6 @@ super.append(layerInterface);
                 //@Throws(Exception.constructor)
             
     public appendAt(layerInterface: AllBinaryLayer, index: number){
-    //var layerInterface = layerInterface
-    //var index = index
 
                         if(!this.contains(layerInterface))
                         
@@ -150,7 +146,6 @@ super.appendAt(layerInterface, index);
                 //@Throws(Exception.constructor)
             
     appendProcessors(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 this.createLayerManagerEvent!.setLayerInterface(layerInterface);
     
 this.layerManagerEventHandler!.fireEvent(this.createLayerManagerEvent);
@@ -188,7 +183,6 @@ layerProcessorInterface= this.basicLayerProcessorArray[index]!;
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public remove(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 this.deleteLayerManagerEvent!.setLayerInterface(layerInterface);
     
 this.layerManagerEventHandler!.fireDeleteEvent(this.deleteLayerManagerEvent);

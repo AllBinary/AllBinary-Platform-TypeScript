@@ -81,8 +81,7 @@ export class TitleBodyCustomizerView extends HttpStoreComponentView implements D
     titleBody: TitleBodyValidation
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -102,7 +101,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var pageName: string = TransformTemplateCustomizerUtil.getInstance()!.getPageNameHack(this.getTransformInfoInterface()!.getName(), this.getWeblisketSession()!.getStoreName())!;
 ;

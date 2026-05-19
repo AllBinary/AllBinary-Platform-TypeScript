@@ -92,7 +92,6 @@ GameNotificationEventHandler.getInstance()!.fireEvent(this.gameNotificationEvent
                 //@Throws(Exception.constructor)
             
     public fireWithColor(basicColor: BasicColor){
-var basicColor = basicColor
 PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
     
 this.gameNotificationEvent!.setBasicColorP(basicColor);

@@ -78,8 +78,6 @@ protected constructor (){
                 //@Throws(Exception.constructor)
             
     append(ROOT: string, sizeString: string){
-var ROOT = ROOT
-var sizeString = sizeString
 super.append(ROOT, sizeString);
     
 

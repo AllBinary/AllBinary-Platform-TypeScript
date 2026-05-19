@@ -85,7 +85,6 @@ CompleteMotionGestureInputEventHandler.getInstance()!.addListener(new GameKeyFro
                 //@Throws(Exception.constructor)
             
     public onMotionGestureCompleted(list: BasicArrayList){
-var list = list
 
     var configuration: MotionGestureConfiguration = MotionGestureConfigurationFactory.getInstance()!;
 ;

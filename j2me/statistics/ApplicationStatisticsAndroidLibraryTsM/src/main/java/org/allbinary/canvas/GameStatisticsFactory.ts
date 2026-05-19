@@ -62,7 +62,6 @@ import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js'
     private stringBuffer: StringMaker = new StringMaker();
 
     public add(string: string){
-var string = string
 
                         if(this.stringBuffer!.length() > 12000)
                         

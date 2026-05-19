@@ -59,8 +59,6 @@ export class PixelDelta
         
 
     public static getKey(point: GPoint, colorDelta: ColorDelta): any{
-var point = point
-var colorDelta = colorDelta
 
 
 
@@ -79,9 +77,7 @@ var colorDelta = colorDelta
 public constructor (point: GPoint, colorDelta: ColorDelta){
 
             super();
-        var point = point
-var colorDelta = colorDelta
-this.setPoint(point);
+        this.setPoint(point);
     
 this.setColorDelta(colorDelta);
     
@@ -111,7 +107,6 @@ this.key= PixelDelta.getKey(this.getPoint(), this.getColorDelta());
 
 
     public setPoint(point: GPoint){
-var point = point
 this.point= point;
     
 }
@@ -128,7 +123,6 @@ this.point= point;
 
 
     public setColorDelta(colorDelta: ColorDelta){
-var colorDelta = colorDelta
 this.colorDelta= colorDelta;
     
 }

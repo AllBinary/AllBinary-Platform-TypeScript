@@ -61,7 +61,6 @@ export class AllBinaryOrientationSensor extends AllBinarySensor {
     listener: CompleteMotionGestureInputEventListenerInterface = NoCompleteMotionGestureInputEventListener.getInstance()!;
 
     public setCompleteMotionGestureInputEventListener(completeMotionGestureInputEventListenerInterface: CompleteMotionGestureInputEventListenerInterface){
-var completeMotionGestureInputEventListenerInterface = completeMotionGestureInputEventListenerInterface
 this.listener= completeMotionGestureInputEventListenerInterface;
     
 }

@@ -76,11 +76,7 @@ export class CollidableCompositeLayer extends AllBinaryGameLayer implements Coll
     private collidableInferface: CollidableBaseBehavior = CollidableNeverCollideBehaviorFactory.getInstance()!.createBehavior()!;
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition, collidableBaseBehaviorFactory: CollidableBaseBehaviorFactory){
             super(name, layerInfo, viewPosition);
-                        //var name = name
-    //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-    //var collidableBaseBehaviorFactory = collidableBaseBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -119,7 +115,6 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
 
 
     public setCollidableInferface(collidableInferface: CollidableBaseBehavior){
-    //var collidableInferface = collidableInferface
 this.collidableInferface= collidableInferface;
     
 }
@@ -136,7 +131,6 @@ this.collidableInferface= collidableInferface;
 
 
     public toStringAppend(stringBuffer: StringMaker){
-    //var stringBuffer = stringBuffer
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;

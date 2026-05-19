@@ -56,8 +56,7 @@ export class MidletExitProcessor extends Processor {
 public constructor (midlet: MIDlet){
 
             super();
-        var midlet = midlet
-this.midlet= midlet;
+        this.midlet= midlet;
     
 }
 

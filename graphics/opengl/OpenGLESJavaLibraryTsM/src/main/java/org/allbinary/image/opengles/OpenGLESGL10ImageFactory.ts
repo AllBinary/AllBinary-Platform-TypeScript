@@ -24,8 +24,6 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { PreLogUtil } from '../../../../org/allbinary/logic/communication/log/PreLogUtil.js';
-      
 import { PlatformBitmapBaseFactory } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBaseFactory.js';
       
 import { PlatformTextureBaseFactory } from '../../../../org/allbinary/platform/opengles/PlatformTextureBaseFactory.js';
@@ -55,9 +53,6 @@ export class OpenGLESGL10ImageFactory extends OpenGLImageFactory {
         
 
     public getInstance(image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory): Image{
-    //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
 
 
 

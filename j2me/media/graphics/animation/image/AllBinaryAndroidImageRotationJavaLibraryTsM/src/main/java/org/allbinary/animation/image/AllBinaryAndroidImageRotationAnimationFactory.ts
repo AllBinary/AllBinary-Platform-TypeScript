@@ -72,10 +72,6 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
                 //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
-    //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -88,11 +84,6 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
                 //@Throws(Exception.constructor)
             
     public static createFactoryA(image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
-    //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -105,8 +96,6 @@ export class AllBinaryAndroidImageRotationAnimationFactory extends BaseImageAnim
                 //@Throws(Exception.constructor)
             
     public static createFactoryU(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
-    //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
 ;
@@ -125,10 +114,6 @@ androidImageRotationAnimationFactory!.init( -(image.getWidth()>>2),  -(image.get
                 //@Throws(Exception.constructor)
             
     public static createFactoryDXYU(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinaryAndroidImageRotationAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var androidImageRotationAnimationFactory: AllBinaryAndroidImageRotationAnimationFactory = new AllBinaryAndroidImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), (AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity()), animationBehaviorFactory, false);
 ;
@@ -145,8 +130,6 @@ androidImageRotationAnimationFactory!.init(dx, dy);
 
 
     public init(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.animationFactoryInitializationVisitor!.dx= dx;
     
 this.animationFactoryInitializationVisitor!.dy= dy;
@@ -163,13 +146,7 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
     private readonly resizeCanvasForRotation: boolean
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-    //var resizeCanvasForRotation = resizeCanvasForRotation
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -216,7 +193,6 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var canvasImage: Image = this.getCanvasImage()!;
 ;

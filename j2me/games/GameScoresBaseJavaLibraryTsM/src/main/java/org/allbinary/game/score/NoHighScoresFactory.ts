@@ -74,8 +74,6 @@ private constructor (){
 
 
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
-    //var gameInfo = gameInfo
-    //var highScoresResultsListener = highScoresResultsListener
 this.logUtil!.putF("Getting No HighScores", this, "fetchHighScores");
     
 highScoresResultsListener!.setHighScoresArray(this.NO_HIGH_SCORES);

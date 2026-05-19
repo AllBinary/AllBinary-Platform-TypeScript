@@ -40,15 +40,12 @@ export class CryptFileReader
 public constructor (decryptedExtension: string, encryptedExtension: string){
 
             super();
-        var decryptedExtension = decryptedExtension
-var encryptedExtension = encryptedExtension
-}
+        }
 
 
                 //@Throws(Exception.constructor)
             
     public get(fileAbPath: AbPath): string{
-var fileAbPath = fileAbPath
 
 
 
@@ -61,7 +58,6 @@ var fileAbPath = fileAbPath
                 //@Throws(Exception.constructor)
             
     public getInputStream(fileAbPath: AbPath): InputStream{
-var fileAbPath = fileAbPath
 
 
 

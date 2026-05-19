@@ -113,7 +113,6 @@ export class OpenGLUtil
     private created: boolean = false;
 
     public onSurfaceCreated(gl: GL10){
-    //var gl = gl
 
         try {
             
@@ -139,8 +138,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SU
 
 
     public onSurfaceCreated(gl: GL10, loadTextures: LoadTextures){
-    //var gl = gl
-    //var loadTextures = loadTextures
 
         try {
             loadTextures!.load(gl);
@@ -163,8 +160,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.renderStrings!.ON_SU
                 //@Throws(Exception.constructor)
             
     public onSurfaceChanged(gl: GL10, graphics: OpenGLESGraphics){
-    //var gl = gl
-    //var graphics = graphics
 
                         if(!this.surfaceCreatedAndInitialized)
                         
@@ -196,7 +191,6 @@ this.set(gl);
 
 
     public add(image: Image): Image{
-    //var image = image
 
     var encapsulateImage: Image = this.preResourceImageUtil!.encapsulate(image)!;
 ;
@@ -250,7 +244,6 @@ this.list.clear();
 
 
     public add(runnable: Runnable){
-    //var runnable = runnable
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -314,7 +307,6 @@ this.runnableList!.clear();
                 //@Throws(Exception.constructor)
             
     set(gl: GL10){
-var gl = gl
 
     var size: number = this.list.size()!;
 ;

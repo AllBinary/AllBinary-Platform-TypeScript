@@ -81,7 +81,6 @@ export class TextNotificationUtil
                 //@Throws(Exception.constructor)
             
     public fireError(message: string){
-var message = message
 PrimaryPlayerQueueFactory.getInstance()!.add(ErrorSound.getInstance());
     
 this.fire(message);
@@ -92,7 +91,6 @@ this.fire(message);
                 //@Throws(Exception.constructor)
             
     public fireNew(message: string){
-var message = message
 PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 this.fire(message);
@@ -103,7 +101,6 @@ this.fire(message);
                 //@Throws(Exception.constructor)
             
     public fireSuccess(message: string){
-var message = message
 PrimaryPlayerQueueFactory.getInstance()!.add(SelectSound.getInstance());
     
 this.fire(message);
@@ -120,7 +117,6 @@ this.fire(message);
                 //@Throws(Exception.constructor)
             
     public fire(message: string){
-var message = message
 
     var gameNotificationEvent: GameNotificationEvent = new GameNotificationEvent(this, message, this.TWO, BasicColorFactory.getInstance()!.RED, this.FALSE);
 ;

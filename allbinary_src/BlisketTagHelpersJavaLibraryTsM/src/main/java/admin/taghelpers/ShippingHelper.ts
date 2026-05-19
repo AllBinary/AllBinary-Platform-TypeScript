@@ -83,9 +83,7 @@ export class ShippingHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.pageContext= pageContext;
+        this.pageContext= pageContext;
     
 this.request= pageContext!.getRequest() as HttpServletRequest;
     

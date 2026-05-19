@@ -63,11 +63,7 @@ export class NumberOnOwnGroupSequenceAI extends SequenceAI {
     private numberOnSameTeam: Integer[]
 public constructor (numberOnSameTeam: Integer[], artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
-                    var numberOnSameTeam = numberOnSameTeam
-var artificialIntelligenceInterface = artificialIntelligenceInterface
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +75,6 @@ this.numberOnSameTeam= numberOnSameTeam;
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
     var layerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
 ;

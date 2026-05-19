@@ -53,7 +53,6 @@ export class NullServiceReference
         
 
     public getProperty(key: string): any{
-var key = key
 
 
 
@@ -73,8 +72,7 @@ var key = key
 }
 
 
-    public localeCompare(o: any = {}): number{
-var o = o
+    public compareTo(o: any = {}): number{
 
 
 

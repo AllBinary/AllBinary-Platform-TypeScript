@@ -69,7 +69,6 @@ export class FileItemUtil
                 //@Throws(Exception.constructor)
             
     public getString(byteArray: number[]): string{
-var byteArray = byteArray
 
 
 
@@ -82,7 +81,6 @@ var byteArray = byteArray
                 //@Throws(Exception.constructor)
             
     public getString(fileItem: FileItemStream): string{
-var fileItem = fileItem
 
 
 
@@ -97,7 +95,6 @@ var fileItem = fileItem
                 //@Throws(Exception.constructor)
             
     public getBytes(fileItem: FileItemStream): number[]{
-var fileItem = fileItem
 
     var streamUtil: StreamUtil = StreamUtil.getInstance()!;
 ;
@@ -170,8 +167,6 @@ streamUtil!.close(inputStream);
                 //@Throws(Exception.constructor)
             
     public write(fileItem: FileItem, file: AbFile){
-var fileItem = fileItem
-var file = file
 fileItem!.write(AbFileNativeUtil.get(file));
     
 }

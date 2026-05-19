@@ -58,7 +58,6 @@ export class VirtualKeyboardFactory
     private static virtualKeyboard: VirtualKeyboard = VirtualKeyboard.NULL_VIRTUAL_KEYBOARD;
 
     public static init(activity: Activity){
-var activity = activity
 
     var SDK_VERSION: number = AndroidInfoFactory.getInstance()!.getVersion()!;
 ;

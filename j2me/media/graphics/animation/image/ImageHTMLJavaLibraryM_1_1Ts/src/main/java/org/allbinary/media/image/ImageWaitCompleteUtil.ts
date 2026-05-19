@@ -79,8 +79,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public waitForImage(image: Image, name: string){
-    //var image = image
-    //var name = name
 this.timeDelayHelper!.setStartTimeTNT();
     
 this.waitForATime(image, name, this.timeDelayHelper);
@@ -91,7 +89,6 @@ this.waitForATime(image, name, this.timeDelayHelper);
                 //@Throws(Exception.constructor)
             
     public handleTimeout(name: string){
-    //var name = name
 
                         if(this.timeDelayHelper!.isTimeTNT())
                         
@@ -110,9 +107,6 @@ this.waitForATime(image, name, this.timeDelayHelper);
                 //@Throws(Exception.constructor)
             
     waitForATime(image: Image, name: string, timeDelayHelper: TimeDelayHelper){
-    //var image = image
-    //var name = name
-    //var timeDelayHelper = timeDelayHelper
 
     var playnImage: PlaynImage = image as PlaynImage;
 ;

@@ -90,9 +90,7 @@ export class StoreUriResolver
 public constructor (parentTransformInfoInterface: TransformInfoInterface, basicURIResolver: BasicUriResolver){
 
             super();
-        var parentTransformInfoInterface = parentTransformInfoInterface
-var basicURIResolver = basicURIResolver
-this.parentTransformInfoInterface= parentTransformInfoInterface;
+        this.parentTransformInfoInterface= parentTransformInfoInterface;
     
 this.basicURIResolver= basicURIResolver;
     
@@ -102,8 +100,6 @@ this.basicURIResolver= basicURIResolver;
                 //@Throws(TransformerException.constructor)
             
     public resolve(href: string, base: string): Source{
-var href = href
-var base = base
 
         try {
             

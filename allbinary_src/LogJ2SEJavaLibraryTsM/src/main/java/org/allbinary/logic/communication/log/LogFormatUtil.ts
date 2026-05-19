@@ -100,10 +100,6 @@ private constructor (){
 
 
     /*actual*/ public get(className: string, functionName: string, specialMessage: string, exception: any = {}): string{
-    //var className = className
-    //var functionName = functionName
-    //var specialMessage = specialMessage
-    //var exception = exception
 
     var stringBuffer: StringMaker = this.getF(className, functionName)!;
 ;
@@ -126,9 +122,6 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
 
 
     /*actual*/ public getS(className: string, functionName: string, specialMessage: string): string{
-    //var className = className
-    //var functionName = functionName
-    //var specialMessage = specialMessage
 
     var stringBuffer: StringMaker = this.getF(className, functionName)!;
 ;
@@ -149,8 +142,6 @@ stringBuffer!.append(this.commonSeps!.NEW_LINE);
 
 
     getF(className: string, functionName: string): StringMaker{
-    //var className = className
-var functionName = functionName
 
                         if(functionName == 
                                     null
@@ -194,7 +185,6 @@ stringBuffer!.append(functionName);
     private readonly nullUtil: NullUtil = NullUtil.getInstance()!;
 
     /*actual*/ public getO(exception: any = {}): string{
-    //var exception = exception
 
                         if(exception != this.nullUtil!.NULL_OBJECT)
                         

@@ -53,11 +53,7 @@ export class RaceTrackGeographicMapCellType extends GeographicMapCellType {
     private readonly travelCost: number
 public constructor (name: string, type: number, travelCost: number, reset: number){
             super(type, reset);
-                        //var name = name
-    //var type = type
-    //var travelCost = travelCost
-    //var reset = reset
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -73,7 +73,6 @@ export class FeatureResourceInitializationUtil
                 //@Throws(Exception.constructor)
             
     public init(level: number){
-var level = level
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

@@ -99,8 +99,7 @@ export class GenericProfiles
 public constructor (fileName: string){
 
             super();
-        var fileName = fileName
-this.fileName= fileName;
+        this.fileName= fileName;
     
 this.profilesDefaultListModelHelper= new DefaultListModelHelper();
     
@@ -180,7 +179,6 @@ this.getDefaultListModelHelper()!.initDefaultModelList();
                 //@Throws(Exception.constructor)
             
     initProfiles(node: Node){
-var node = node
 
     var nodeList: NodeList = node.getChildNodes()!;
 ;
@@ -198,7 +196,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(profileNameNode!.getNodeName()!.localeCompare(GenericProfileData.NAME) == 0)
+                        if(profileNameNode!.getNodeName()!.compareTo(GenericProfileData.NAME) == 0)
                         
                                     {
                                     
@@ -230,7 +228,6 @@ this.getDefaultListModelHelper()!.add(genericProfile!.getName());
                 //@Throws(Exception.constructor)
             
     public get(name: string): GenericProfile{
-var name = name
 
     var genericProfile: GenericProfile = this.hashMap!.get(name) as GenericProfile;
 ;
@@ -262,7 +259,6 @@ this.logUtil!.putF("No Generic Profile Named: " +name +" availability was: " +th
                 //@Throws(Exception.constructor)
             
     public add(name: string){
-var name = name
 this.hashMap!.put(name, new GenericProfile(name));
     
 this.getDefaultListModelHelper()!.add(name);
@@ -277,7 +273,6 @@ this.save();
                 //@Throws(Exception.constructor)
             
     public remove(name: string){
-var name = name
 this.hashMap!.remove(name);
     
 this.getDefaultListModelHelper()!.remove(name);
@@ -292,7 +287,6 @@ this.save();
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(GenericProfilesData.NAME)!;
 ;

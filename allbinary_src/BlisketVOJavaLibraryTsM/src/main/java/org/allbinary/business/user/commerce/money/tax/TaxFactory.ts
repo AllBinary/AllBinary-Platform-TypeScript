@@ -118,8 +118,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface): TaxModuleInterface{
-    //var abeClientInformation = abeClientInformation
-    //var storeFrontInterface = storeFrontInterface
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

@@ -72,10 +72,7 @@ export class HighScores
 public constructor (name: string, heading: string, columnTwoHeading: string){
 
             super();
-        var name = name
-var heading = heading
-var columnTwoHeading = columnTwoHeading
-this.name= name;
+        this.name= name;
     
 this.heading= heading;
     
@@ -85,7 +82,6 @@ this.columnTwoHeading= columnTwoHeading;
 
 
     public setList(orderedHighScoresList: BasicArrayList){
-var orderedHighScoresList = orderedHighScoresList
 this.orderedHighScoresList= orderedHighScoresList;
     
 }
@@ -122,7 +118,6 @@ this.orderedHighScoresList= orderedHighScoresList;
 
 
     public addHighScore(newHighScore: HighScore){
-var newHighScore = newHighScore
 this.orderedHighScoresList!.add(newHighScore);
     
 }
@@ -161,7 +156,6 @@ this.orderedHighScoresList!.add(newHighScore);
                 //@Throws(Exception.constructor)
             
     public isBestScore(newHighScore: HighScore): boolean{
-var newHighScore = newHighScore
 
 
 

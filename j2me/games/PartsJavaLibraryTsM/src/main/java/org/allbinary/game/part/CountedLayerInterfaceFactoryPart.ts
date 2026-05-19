@@ -83,9 +83,7 @@ export class CountedLayerInterfaceFactoryPart
 public constructor (total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
 
             super();
-        var total = total
-var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
-this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
+        this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(1000);
     
 this.init(total, countedPickedUpLayerInterfaceFactory);
     
@@ -93,8 +91,6 @@ this.init(total, countedPickedUpLayerInterfaceFactory);
 
 
     init(total: number, countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
-var total = total
-var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
 this.setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory);
     
 this.total= total;
@@ -105,10 +101,6 @@ this.total= total;
                 //@Throws(Exception.constructor)
             
     public getInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
-var hashtable = hashtable
-var x = x
-var y = y
-var z = z
 
                         if(this.total > 0)
                         
@@ -147,7 +139,6 @@ var z = z
 
 
     public setTotal(total: number){
-var total = total
 this.total= total;
     
 this.totalString= this.primitiveLongUtil!.getCharArray(total);
@@ -162,12 +153,10 @@ this.setXOffset(font.charsWidth(this.totalString, 0, this.primitiveLongUtil!.get
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 
@@ -182,7 +171,6 @@ var graphics = graphics
 
 
     public setAnimationInterface(animationInterface: Animation){
-var animationInterface = animationInterface
 this.animationInterface= animationInterface;
     
 }
@@ -199,7 +187,6 @@ this.animationInterface= animationInterface;
 
 
     setXOffset(totalStringWidth: number){
-var totalStringWidth = totalStringWidth
 this.xOffset= totalStringWidth;
     
 }
@@ -226,7 +213,6 @@ this.xOffset= totalStringWidth;
 
 
     public setCountedPickedUpLayerInterfaceFactory(countedPickedUpLayerInterfaceFactory: CountedPickedUpLayerInterfaceFactory){
-var countedPickedUpLayerInterfaceFactory = countedPickedUpLayerInterfaceFactory
 this.countedPickedUpLayerInterfaceFactory= countedPickedUpLayerInterfaceFactory;
     
 }

@@ -70,8 +70,6 @@ export class HashtableUtil
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     public putAll(fromHashtable: Hashtable<any, any>, hashtable: Hashtable<any, any>){
-    //var fromHashtable = fromHashtable
-    //var hashtable = hashtable
 
     var enumeration: Enumeration<any> = fromHashtable!.keys()!;
 ;
@@ -112,7 +110,6 @@ valueCanBeNull= hashtable.get(keyCanBeNull);
 
 
     public getKeysAsArray(hashtable: Hashtable<any, any>): any[]{
-    //var hashtable = hashtable
 
     var objectArray: any[] = new Array(hashtable.length);
 ;
@@ -142,7 +139,6 @@ objectArray[index++]= this.enumerationUtil!.nextElement(enumeration)!;
 
 
     public getKeysAsList(hashtable: Hashtable<any, any>): BasicArrayList{
-    //var hashtable = hashtable
 
     var list: BasicArrayList = new BasicArrayListS(hashtable.length);
 ;

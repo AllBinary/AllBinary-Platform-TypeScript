@@ -50,8 +50,7 @@ export class LayerPlacementType
  constructor (type: number){
 
             super();
-        var type = type
-this.type= type;
+        this.type= type;
     
 }
 
@@ -67,7 +66,6 @@ this.type= type;
 
 
     setType(type: number){
-var type = type
 this.type= type;
     
 }

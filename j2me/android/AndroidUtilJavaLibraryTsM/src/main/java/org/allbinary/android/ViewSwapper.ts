@@ -54,9 +54,7 @@ export class ViewSwapper
 public constructor (activity: Activity, rootViewId: number){
 
             super();
-        var activity = activity
-var rootViewId = rootViewId
-this.activity= activity;
+        this.activity= activity;
     
 this.rootViewId= rootViewId;
     
@@ -64,21 +62,18 @@ this.rootViewId= rootViewId;
 
 
     public setMainViews(viewArray: View[]){
-var viewArray = viewArray
 this.mainViewArray= viewArray;
     
 }
 
 
     public setTopViewArray(topViewArray: View[]){
-var topViewArray = topViewArray
 this.topViewArray= topViewArray;
     
 }
 
 
     public setMainView(id: number){
-var id = id
 
     var viewGroup: ViewGroup = this.activity.findViewById(this.rootViewId) as unknown as ViewGroup;
 ;

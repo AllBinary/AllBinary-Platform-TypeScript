@@ -64,8 +64,7 @@ export class FileTableMapping
 public constructor (file: AbFile){
 
             super();
-        var file = file
-this.file= file;
+        this.file= file;
     
 }
 

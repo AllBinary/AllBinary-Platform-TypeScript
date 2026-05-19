@@ -85,10 +85,7 @@ export class BasePatrolAI extends BasicAI {
     keyDirection: number = Canvas.RIGHT;
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var hashtable = hashtable
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

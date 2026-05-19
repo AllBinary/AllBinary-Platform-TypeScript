@@ -67,7 +67,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;

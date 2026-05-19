@@ -56,8 +56,7 @@ public constructor (){
 
 public constructor (read: boolean){
             super(INITFILE, read);
-                    var read = read
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

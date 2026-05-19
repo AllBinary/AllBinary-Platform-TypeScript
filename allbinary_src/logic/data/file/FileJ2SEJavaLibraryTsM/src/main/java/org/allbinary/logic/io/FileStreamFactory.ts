@@ -74,8 +74,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getFileInputStreamInstance(path: string, fileName: string): AbFileInputStream{
-var path = path
-var fileName = fileName
 
     var FILEABPATH: AbPath = new AbPath(path, fileName);
 ;
@@ -96,8 +94,6 @@ var fileName = fileName
                 //@Throws(Exception.constructor)
             
     public getFileOutputStreamInstance(path: string, fileName: string): AbFileOutputStream{
-var path = path
-var fileName = fileName
 
     var FILEABPATH: AbPath = new AbPath(path, fileName);
 ;
@@ -129,8 +125,6 @@ file.createNewFile();
                 //@Throws(Exception.constructor)
             
     public delete(path: string, fileName: string){
-var path = path
-var fileName = fileName
 
     var FILEABPATH: AbPath = new AbPath(path, fileName);
 ;

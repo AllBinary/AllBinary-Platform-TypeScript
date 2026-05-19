@@ -119,7 +119,6 @@ this.okNewProfileActionJButton!.addActionListener(new class extends java.awt.eve
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okNewProfileActionJButtonActionPerformed(evt);
     
 }
@@ -143,7 +142,6 @@ this.genericProfileActionsJList!.addListSelectionListener(new class extends java
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
-var evt = evt
 genericProfileActionsJListValueChanged(evt);
     
 }
@@ -159,7 +157,6 @@ this.newActionJButton!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 newActionJButtonActionPerformed(evt);
     
 }
@@ -173,7 +170,6 @@ this.deleteActionJButton!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 deleteActionJButtonActionPerformed(evt);
     
 }
@@ -187,7 +183,6 @@ this.saveJButton!.addActionListener(new class extends java.awt.event.ActionListe
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 saveJButtonActionPerformed(evt);
     
 }
@@ -248,7 +243,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     saveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.getGenericProfileActions()!.save();
@@ -265,7 +259,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "saveJButtonActionPerform
 
 
     updateProfileActionUI(profileActionNameString: string){
-var profileActionNameString = profileActionNameString
 this.blankGenericProfileActionJPanel!.removeAll();
     
 
@@ -301,7 +294,6 @@ this.logUtil!.putF("Setting Configuration Profile Actions JPanel", this, "generi
 
 
     genericProfileActionsJListValueChanged(evt: javax.swing.event.ListSelectionEvent){
-var evt = evt
 
         try {
             
@@ -322,7 +314,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfileActionsJLi
 
 
     okNewProfileActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -351,7 +342,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileActionJButto
 
 
     deleteActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -425,7 +415,6 @@ this.blankGenericProfileActionJPanel!.repaint();
 
 
     public setGenericProfileActionJPanel(genericProfileActionJPanel: GenericProfileActionJPanel){
-var genericProfileActionJPanel = genericProfileActionJPanel
 this.genericProfileActionJPanel= genericProfileActionJPanel;
     
 }
@@ -442,14 +431,12 @@ this.genericProfileActionJPanel= genericProfileActionJPanel;
 
 
     public setGenericProfileActions(genericProfileActions: GenericProfileActions){
-var genericProfileActions = genericProfileActions
 this.genericProfileActions= genericProfileActions;
     
 }
 
 
     newActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.newProfileActionJDialog!.setVisible(true);
     
 }

@@ -80,7 +80,6 @@ export class AlwaysRepaintBehavior extends RepaintBehavior {
     private readonly NAME: string = "AlwaysRepaintBehavior";
 
     public repaint(canvas: Canvas){
-    //var canvas = canvas
 
     var features: Features = Features.getInstance()!;
 ;
@@ -141,7 +140,6 @@ thread.start();
 
 
     public onChangeRepaint(canvas: Canvas){
-    //var canvas = canvas
 }
 
 

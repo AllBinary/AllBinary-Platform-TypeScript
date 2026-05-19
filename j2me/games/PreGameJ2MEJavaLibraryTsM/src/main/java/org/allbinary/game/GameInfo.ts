@@ -84,12 +84,7 @@ export class GameInfo
 public constructor (gameType: GameType, gameMode: GameMode, playerType: PlayerType, highestLevel: number, currentLevel: number){
 
             super();
-        var gameType = gameType
-var gameMode = gameMode
-var playerType = playerType
-var highestLevel = highestLevel
-var currentLevel = currentLevel
-this.gameType= gameType;
+        this.gameType= gameType;
     
 this.gameMode= gameMode;
     
@@ -143,7 +138,6 @@ this.playerType= playerType;
 
 
     public setHighestLevel(highestLevel: number){
-    //var highestLevel = highestLevel
 this.highestLevel= highestLevel;
     
 }
@@ -164,7 +158,6 @@ this.highestLevel= highestLevel;
     private readonly SET_CURRENT_LEVEL: string = "setCurrentLevel";
 
     public setCurrentLevel(currentLevel: number){
-    //var currentLevel = currentLevel
 this.currentLevel= currentLevel;
     
 this.logUtil!.putF(new StringMaker().

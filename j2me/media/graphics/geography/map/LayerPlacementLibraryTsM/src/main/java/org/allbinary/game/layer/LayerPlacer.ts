@@ -77,9 +77,7 @@ export class LayerPlacer
 public constructor (layerInterfaceVisitor: LayerInterfaceVisitor, dimension: GPoint){
 
             super();
-            //var layerInterfaceVisitor = layerInterfaceVisitor
-    //var dimension = dimension
-this.layerInterfaceVisitor= layerInterfaceVisitor;
+        this.layerInterfaceVisitor= layerInterfaceVisitor;
     
 this.dimension= dimension;
     
@@ -89,7 +87,6 @@ this.dimension= dimension;
                 //@Throws(Exception.constructor)
             
     public processList(list: BasicArrayList){
-    //var list = list
 
     var size: number = list.size()!;
 ;
@@ -118,7 +115,6 @@ this.process(layerPlacementInterface);
                 //@Throws(Exception.constructor)
             
     public process(layerPlacementInterface: LayerPlacementInterface){
-    //var layerPlacementInterface = layerPlacementInterface
 
     var relativePoint: GPoint = this.getPoint(layerPlacementInterface)!;
 ;
@@ -184,7 +180,6 @@ this.layerInterfaceVisitor!.visit(layerInterface);
                 //@Throws(Exception.constructor)
             
     public getPoint(layerPlacementInterface: LayerPlacementInterface): GPoint{
-    //var layerPlacementInterface = layerPlacementInterface
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
 ;

@@ -59,8 +59,7 @@ export class PreGameLockableFormPaintableFactory extends ItemPaintableFactory {
 public constructor (lockedIndex: number){
 
             super();
-        var lockedIndex = lockedIndex
-this.lockedIndex= lockedIndex;
+        this.lockedIndex= lockedIndex;
     
 }
 
@@ -68,7 +67,6 @@ this.lockedIndex= lockedIndex;
                 //@Throws(Exception.constructor)
             
     public getInstanceItemPaintable(paintableForm: PaintableForm): ItemPaintable{
-var paintableForm = paintableForm
 
 
 

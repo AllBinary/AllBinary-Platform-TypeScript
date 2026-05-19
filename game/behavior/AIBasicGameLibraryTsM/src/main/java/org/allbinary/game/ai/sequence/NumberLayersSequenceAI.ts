@@ -58,11 +58,7 @@ export class NumberLayersSequenceAI extends SequenceAI {
     private numberOfLayersLeft: number
 public constructor (numberOfEnemiesLeft: number, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(artificialIntelligenceInterface, ownerLayerInterface, gameInput);
-                    var numberOfEnemiesLeft = numberOfEnemiesLeft
-var artificialIntelligenceInterface = artificialIntelligenceInterface
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,7 +70,6 @@ this.numberOfLayersLeft= numberOfEnemiesLeft;
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.getIndex() == 0)
                         

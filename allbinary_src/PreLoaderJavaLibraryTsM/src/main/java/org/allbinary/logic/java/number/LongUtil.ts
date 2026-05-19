@@ -52,7 +52,6 @@ export class LongUtil
         
 
     public static fillIn(end: string): string{
-    //var end = end
 
     var frameStringBuffer: StringMaker = new StringMaker();
 ;

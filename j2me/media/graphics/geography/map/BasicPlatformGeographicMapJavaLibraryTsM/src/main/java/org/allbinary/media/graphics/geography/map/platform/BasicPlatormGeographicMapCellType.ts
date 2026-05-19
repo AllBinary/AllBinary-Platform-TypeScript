@@ -55,7 +55,6 @@ export class BasicPlatormGeographicMapCellType
         
 
     public static createType(type: number): BasicPlatormGeographicMapCellType{
-    //var type = type
 
     var types: BasicArrayList = new BasicArrayListS(1);
 ;
@@ -81,8 +80,7 @@ new GeographicMapCellType(type, 0);
 public constructor (types: BasicArrayList){
 
             super();
-            //var types = types
-
+        
     var size: number = types.size()!;
 ;
     
@@ -122,7 +120,6 @@ this.types= typeArray;
 
 
     public isType(type: GeographicMapCellType): boolean{
-    //var type = type
 
 
 
@@ -133,7 +130,6 @@ this.types= typeArray;
 
 
     public hasType(type: number): boolean{
-    //var type = type
 
     var size: number = types.length
                 ;

@@ -71,9 +71,7 @@ export class BasicPlatormGeographicMapCellTypeFactory extends GeographicMapCellT
 public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
-            //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
-    //var maxTileId = maxTileId
-
+        
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
@@ -207,7 +205,6 @@ new GeographicMapCellType(this.maxTileId -2, 0);
 
 
     public isPath(cellType: GeographicMapCellType): boolean{
-    //var cellType = cellType
 
                         if(cellType!.getType() == 0)
                         

@@ -77,9 +77,7 @@ export class NameSpaceRequestParam
 public constructor (nameSpace: string, value: string){
 
             super();
-        var nameSpace = nameSpace
-var value = value
-this.nameSpaceVector= new Vector();
+        this.nameSpaceVector= new Vector();
     
 this.nameSpacePropertiesHashMap= new HashMap<any, any>();
     
@@ -244,7 +242,6 @@ packageIndex++;
 
 
     public getPackageProperties(packageIndex: number): HashMap<any, any>{
-var packageIndex = packageIndex
 
     var packagePropertiesHashMap: HashMap<any, any> = this.nameSpacePropertiesHashMap!.get(packageIndex.toString()) as HashMap<any, any>;
 ;
@@ -300,7 +297,6 @@ var packageIndex = packageIndex
                 //@Throws(Exception.constructor)
             
     generatePackagePropertiesHashMap(properties: string): HashMap<any, any>{
-var properties = properties
 
     var propertiesTokenizer: Tokenizer = new Tokenizer(NameSpaceRequestParamData.PROPERTIESSEPARATOR);
 ;

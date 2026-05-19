@@ -75,8 +75,6 @@ export class SmallLongFactory
     public lastNegativeMin: number = 0;
 
     public initWithRange(value: number, negativeValue: number){
-var value = value
-var negativeValue = negativeValue
 
 
 
@@ -178,7 +176,6 @@ private constructor (){
 
 
     public getInstanceNoThrow(index: number): Long{
-var index = index
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
                         
@@ -202,7 +199,6 @@ var index = index
 
 
     public getString(index: number): string{
-var index = index
 
     var i: number = index +this.NEGATIVE_MAX;
 ;

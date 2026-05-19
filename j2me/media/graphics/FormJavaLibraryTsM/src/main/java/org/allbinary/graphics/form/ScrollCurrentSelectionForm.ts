@@ -67,16 +67,7 @@ export class ScrollCurrentSelectionForm extends ScrollSelectionForm {
     private readonly moveForSmallScreen: boolean
 public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, formType, border, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var items = items
-    //var formPaintableFactory = formPaintableFactory
-    //var rectangle = rectangle
-    //var formType = formType
-    //var border = border
-    //var moveForSmallScreen = moveForSmallScreen
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -90,8 +81,6 @@ this.initForm();
                 //@Throws(Exception.constructor)
             
     public init(rectangle: Rectangle, formType: FormType){
-    //var rectangle = rectangle
-    //var formType = formType
 super.init(rectangle, formType);
     
 this.initForm();
@@ -261,7 +250,6 @@ this.dx= ((this.rectangle.getWidth() -this.maxWidth) /2);
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 
         try {
             
@@ -403,7 +391,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT
 
 
     getDiffX(item: ABCustomItem): number{
-var item = item
 
 
 

@@ -53,8 +53,6 @@ export class PointFactory
                                                             ;
 
     public static getInstance(x: number, y: number): Point{
-var x = x
-var y = y
 
     var point: Point = PointFactory.pointArray[x]![y]!;
 ;

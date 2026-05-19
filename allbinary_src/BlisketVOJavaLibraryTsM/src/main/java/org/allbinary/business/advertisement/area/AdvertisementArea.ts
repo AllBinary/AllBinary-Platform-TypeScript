@@ -74,8 +74,7 @@ export class AdvertisementArea
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME) as string;
+        this.name= hashMap!.get(AdvertisementAreaData.getInstance()!.NAME) as string;
     
 this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
     
@@ -147,35 +146,30 @@ this.campaign= hashMap!.get(AdvertisementCampaignData.getInstance()!.NAME) as st
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
 
 
     public setStoreName(storeName: string){
-var storeName = storeName
 this.storeName= storeName;
     
 }
 
 
     public setDescription(description: string){
-var description = description
 this.description= description;
     
 }
 
 
     public setConstraints(advertisementConstraintsInterface: AdvertisementAreaConstraintsInterface){
-var advertisementConstraintsInterface = advertisementConstraintsInterface
 this.advertisementAreaConstraintsInterface= this.advertisementAreaConstraintsInterface;
     
 }
 
 
     public setCampaign(campaign: string){
-var campaign = campaign
 this.campaign= campaign;
     
 }

@@ -26,8 +26,6 @@
         
             import { Runnable } from '../../../java/lang/Runnable.js';
         
-import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
 import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js';
       
 import { StringUtil } from '../../../org/allbinary/logic/string/StringUtil.js';
@@ -68,10 +66,7 @@ export class PrimaryThreadPool extends ThreadPool {
 
 public constructor (poolName: string, numThreads: number, priority: number){
             super(poolName, numThreads, priority);
-                        //var poolName = poolName
-    //var numThreads = numThreads
-    //var priority = priority
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +74,6 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
 
     public runTask(task: Runnable){
-var task = task
 this.logUtil!.putF(new StringMaker().
                             append(StringUtil.getInstance()!.toString(task))!.appendlong(Date.now())!.toString(), this, this.threadPoolStrings!.ADD_TASK);
     
@@ -89,7 +83,6 @@ super.runTask(task);
 
 
     startTask(task: Runnable){
-var task = task
 this.logUtil!.putF(new StringMaker().
                             append(this.threadPoolStrings!.START_TASK)!.append(StringUtil.getInstance()!.toString(task))!.toString(), this, this.commonStrings!.RUN);
     
@@ -97,7 +90,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     completedTask(task: Runnable){
-var task = task
 this.logUtil!.putF(new StringMaker().
                             append(this.threadPoolStrings!.COMPLETE_TASK)!.append(StringUtil.getInstance()!.toString(task))!.toString(), this, this.commonStrings!.RUN);
     

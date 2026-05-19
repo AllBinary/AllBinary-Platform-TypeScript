@@ -157,7 +157,6 @@ this.MAX_LAYERS= new GameConfiguration("Max Layers", smallIntegerSingletonFactor
 
 
     public load(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -219,7 +218,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.LOAD, e);
 
 
     public setGameControlFidelity(gameControlFidelity: number){
-    //var gameControlFidelity = gameControlFidelity
 this.gameControlFidelity= gameControlFidelity;
     
 }

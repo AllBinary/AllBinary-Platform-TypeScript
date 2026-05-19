@@ -30,6 +30,8 @@ import { Hashtable } from '../../../../../java/util/Hashtable.js';
       
 import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup.js';
       
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
@@ -83,6 +85,8 @@ export class GameFeatureUtil
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
+
     private readonly enumerationUtil: EnumerationUtil = EnumerationUtil.getInstance()!;
 
     public readonly ON_GAME_FEATURE_CHANGE: string = "onGameFeatureChange";
@@ -92,7 +96,6 @@ export class GameFeatureUtil
                 //@Throws(Exception.constructor)
             
     public setDefault(choiceGroup: ChoiceGroup){
-var choiceGroup = choiceGroup
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -186,7 +189,6 @@ choiceGroup!.setSelectedIndex(index, false);
                 //@Throws(Exception.constructor)
             
     public updateMultiple(choiceGroup: ChoiceGroup){
-var choiceGroup = choiceGroup
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -279,7 +281,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, METHOD_NAME);
                 //@Throws(Exception.constructor)
             
     public updateExclusiveForChoiceGroup(choiceGroup: ChoiceGroup){
-var choiceGroup = choiceGroup
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -353,7 +354,6 @@ this.updateExclusive(selectedChoiceLabel);
 
 
     public isExclusive(itemLabel: string): boolean{
-var itemLabel = itemLabel
 
     var enumeration: Enumeration<any> = GameFeatureChoiceGroups.getExclusiveInstance()!.get()!.keys()!;
 ;
@@ -368,7 +368,7 @@ var itemLabel = itemLabel
 name= this.enumerationUtil!.nextElement(enumeration)! as string;
     
 
-                        if(itemLabel!.localeCompare(name) == 0)
+                        if(this.tsUtil!.compareTo(itemLabel, name) == 0)
                         
                                     {
                                     
@@ -394,7 +394,6 @@ name= this.enumerationUtil!.nextElement(enumeration)! as string;
                 //@Throws(Exception.constructor)
             
     updateExclusive(selectedChoiceLabel: string){
-    //var selectedChoiceLabel = selectedChoiceLabel
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.ITEM_LABEL)!.append(selectedChoiceLabel)!.toString(), this, "updateExclusive");
     
@@ -445,8 +444,6 @@ this.updateExclusiveList(gameFeature, basicArrayList);
                 //@Throws(Exception.constructor)
             
     public updateExclusiveList(gameFeature: Feature, list: BasicArrayList){
-var gameFeature = gameFeature
-var list = list
 
                         if(list.contains(gameFeature))
                         

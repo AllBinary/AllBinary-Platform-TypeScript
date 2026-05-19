@@ -63,7 +63,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(hashMap: HashMap<any, any>): UserInterface{
-var hashMap = hashMap
 
 
 

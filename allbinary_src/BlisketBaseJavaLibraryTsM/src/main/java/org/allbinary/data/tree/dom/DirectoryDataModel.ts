@@ -76,8 +76,7 @@ export class DirectoryDataModel
 public constructor (file: AbFile){
 
             super();
-            //var file = file
-this.fileBasicArrayList= Directory.getInstance()!.search(file);
+        this.fileBasicArrayList= Directory.getInstance()!.search(file);
     
 this.transformDocumentInterface= TransformDocumentFactory.getInstance() as TransformDocumentInterface;
     
@@ -109,7 +108,6 @@ this.transformDocumentInterface= TransformDocumentFactory.getInstance() as Trans
 
 
     public setTransformDocumentInterface(transformDocumentInterface: TransformDocumentInterface){
-var transformDocumentInterface = transformDocumentInterface
 this.transformDocumentInterface= transformDocumentInterface;
     
 }
@@ -128,7 +126,6 @@ this.transformDocumentInterface= transformDocumentInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-    //var document = document
 
     var dirNode: Node = document.createElement("dir")!;
 ;

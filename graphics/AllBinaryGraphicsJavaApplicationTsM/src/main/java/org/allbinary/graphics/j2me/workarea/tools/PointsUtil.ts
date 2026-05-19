@@ -71,9 +71,6 @@ export class PointsUtil
                 //@Throws(Exception.constructor)
             
     public doTransforms(pointVector: BasicArrayList, angle: Double, fulcrumPoint: GPoint): BasicArrayList{
-var pointVector = pointVector
-var angle = angle
-var fulcrumPoint = fulcrumPoint
 
 
 

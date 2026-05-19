@@ -86,7 +86,6 @@ export class KeyboardActionScriptInput extends BasicProfileActionScriptInput imp
     private static readonly NAME: string = "Keyboard";
 
     static getText(integerArray: Integer[]): string{
-var integerArray = integerArray
 
     var index: number = 0;
 ;
@@ -146,8 +145,7 @@ index++;
     private delayBetweenKeys: number= 0
 public constructor (node: Node){
             super(NAME, node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -197,7 +195,7 @@ vector.add(keyString.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS) == 0)
+                        if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.DELAY_BETWEEN_KEYS) == 0)
                         
                                     {
                                     
@@ -210,7 +208,7 @@ this.setDelayBetweenKeys(Integer.valueOf(time)!.intValue());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(KeyboardActionScriptInputData.PRESS) == 0)
+                        if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.PRESS) == 0)
                         
                                     {
                                     
@@ -225,7 +223,7 @@ this.setPress(value.concatToString()
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(KeyboardActionScriptInputData.RELEASE) == 0)
+                        if(childNode!.getNodeName()!.compareTo(KeyboardActionScriptInputData.RELEASE) == 0)
                         
                                     {
                                     
@@ -314,7 +312,6 @@ this.keyboardActionScriptInputJPanel= new KeyboardActionScriptInputJPanel(this);
 
 
     public setDelayBetweenKeys(delayBetweenKeys: number){
-var delayBetweenKeys = delayBetweenKeys
 this.delayBetweenKeys= delayBetweenKeys;
     
 }
@@ -331,7 +328,6 @@ this.delayBetweenKeys= delayBetweenKeys;
 
 
     public setPress(press: boolean){
-var press = press
 this.press= press;
     
 }
@@ -348,7 +344,6 @@ this.press= press;
 
 
     public setRelease(release: boolean){
-var release = release
 this.release= release;
     
 }
@@ -383,7 +378,6 @@ this.setRelease(true);
 
 
     public setKeyArray(keyArray: Integer[]){
-var keyArray = keyArray
 
                         if(keyArray != 
                                     null
@@ -411,7 +405,6 @@ this.keyboardActionScriptInputJPanel!.getKeyActionJDialog()!.setVisible(true);
 
 
     public setText(text: string){
-var text = text
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "setText");
     
 
@@ -424,7 +417,6 @@ this.setKeyArray(integerArray);
 
 
     integerArrayValue(text: string): Integer[]{
-var text = text
 this.logUtil!.putF(CommonLabels.getInstance()!.START +text, this, "integerArrayValue");
     
 
@@ -539,7 +531,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = super.toXmlNode(document)!;
 ;
@@ -558,7 +549,6 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, KeyboardActionS
                 //@Throws(Exception.constructor)
             
     public process(frame: Long){
-var frame = frame
 KeyboardInputAutomationProcessor.process(this);
     
 }

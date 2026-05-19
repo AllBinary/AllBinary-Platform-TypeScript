@@ -78,15 +78,7 @@ export class CommandCurrentSelectionForm extends ScrollCurrentSelectionForm {
     readonly unSelectedAnimationArray: Animation[] = new Array(16);
 public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, ItemPaintableFactory.getInstance(), rectangle, formType, border, moveForSmallScreen, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var items = items
-    //var rectangle = rectangle
-    //var formType = formType
-    //var border = border
-    //var moveForSmallScreen = moveForSmallScreen
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -132,7 +124,6 @@ this.unSelectedAnimationArray[index]= nullAnimation;
 
 
     update(items: ABCustomItem[]){
-    //var items = items
 
 
 
@@ -150,8 +141,6 @@ this.updateAt(index, items[index]!);
 
 
     updateAt(index: number, item: ABCustomItem){
-    //var index = index
-    //var item = item
 
     var basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
 ;
@@ -234,7 +223,6 @@ adjustedBorder= 4;
 
 
     public append(item: ABCustomItem): number{
-    //var item = item
 
     var result: number = super.append(item)!;
 ;
@@ -251,7 +239,6 @@ this.updateAt(result, item);
 
 
     public delete(itemNum: number){
-    //var itemNum = itemNum
 super.delete(itemNum);
     
 }
@@ -266,16 +253,12 @@ super.deleteAll();
 
 
     public insert(itemNum: number, item: ABCustomItem){
-    //var itemNum = itemNum
-    //var item = item
 super.insert(itemNum, item);
     
 }
 
 
     public set(itemNum: number, item: ABCustomItem){
-    //var itemNum = itemNum
-    //var item = item
 super.set(itemNum, item);
     
 }
@@ -284,11 +267,6 @@ super.set(itemNum, item);
                 //@Throws(Exception.constructor)
             
     public paintItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
-    //var graphics = graphics
-    //var index = index
-    //var item = item
-    //var x = x
-    //var y = y
 this.selectedAnimationArray[index]!.paintXY(graphics, x, y);
     
 
@@ -303,11 +281,6 @@ this.selectedAnimationArray[index]!.paintXY(graphics, x, y);
                 //@Throws(Exception.constructor)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
-    //var graphics = graphics
-    //var index = index
-    //var item = item
-    //var x = x
-    //var y = y
 this.unSelectedAnimationArray[index]!.paintXY(graphics, x, y);
     
 

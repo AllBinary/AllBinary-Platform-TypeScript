@@ -38,8 +38,6 @@ import { CanvasStrings } from '../../../../org/allbinary/graphics/displayable/Ca
       
 import { AllBinaryLayerManager } from '../../../../org/allbinary/layer/AllBinaryLayerManager.js';
       
-import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
 import { StringUtil } from '../../../../org/allbinary/logic/string/StringUtil.js';
       
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
@@ -72,8 +70,7 @@ export class PlayerGameInputGameLayer extends AllBinaryGameLayer implements Play
     private playerGameInput: PlayerGameInput
 public constructor (playerInputId: number){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), new StaticViewPosition(0, 0, 0));
-                    var playerInputId = playerInputId
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -105,12 +102,10 @@ this.logUtil!.putF("Danger Danger Danger: Should Not Be Called Except For Testin
                 //@Throws(Exception.constructor)
             
     public processInput(myManager: AllBinaryLayerManager){
-var myManager = myManager
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 

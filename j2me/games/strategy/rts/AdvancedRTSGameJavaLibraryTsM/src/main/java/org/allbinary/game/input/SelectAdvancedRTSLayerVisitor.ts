@@ -67,14 +67,12 @@ export class SelectAdvancedRTSLayerVisitor extends Visitor {
 public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput){
 
             super();
-            //var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
-this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
+        this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
     
 }
 
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
 
     var selectedLayer: CollidableDestroyableDamageableLayer = anyType as CollidableDestroyableDamageableLayer;
 ;

@@ -90,8 +90,7 @@ this.logo= new LogoValidation();
 public constructor (document: Document){
 
             super();
-        var document = document
-
+        
     var headingNodeList: NodeList = document.getElementsByTagName(HeadingData.NAME)!;
 ;
     
@@ -112,8 +111,7 @@ this.logo= new LogoValidation(logoNode);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.getFormData(hashMap);
+        this.getFormData(hashMap);
     
 }
 
@@ -121,7 +119,6 @@ this.getFormData(hashMap);
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 this.title= new TitleValidation(hashMap);
     
 this.logo= new LogoValidation(hashMap);
@@ -321,7 +318,6 @@ this.logo= new LogoValidation(hashMap);
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -334,7 +330,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(HeadingData.NAME)!;
 ;

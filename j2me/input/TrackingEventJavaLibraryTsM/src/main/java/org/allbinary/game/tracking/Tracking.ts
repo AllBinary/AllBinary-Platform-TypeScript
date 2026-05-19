@@ -54,7 +54,6 @@ public constructor (){
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 

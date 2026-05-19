@@ -80,8 +80,7 @@ this.setEventListenerClassPath(StringUtil.getInstance()!.EMPTY_STRING);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as string);
+        this.setName(hashMap!.get(UserEmailEventConfigurationData.NAME) as string);
     
 this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LISTENER_CLASSPATH) as string);
     
@@ -108,7 +107,6 @@ this.setEventListenerClassPath(hashMap!.get(UserEmailEventConfigurationData.LIST
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -125,7 +123,6 @@ this.name= name;
 
 
     public setEventListenerClassPath(eventListenerClassPath: string){
-var eventListenerClassPath = eventListenerClassPath
 this.eventListenerClassPath= eventListenerClassPath;
     
 }

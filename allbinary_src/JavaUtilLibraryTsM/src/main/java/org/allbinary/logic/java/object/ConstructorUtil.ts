@@ -53,8 +53,6 @@ export class ConstructorUtil
         
 
     public static viewAll(myClass: Function, lineBreak: string): string{
-    //var myClass = myClass
-    //var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -89,8 +87,6 @@ stringBuffer!.append(ConstructorUtil.view(constructor[index]!, lineBreak));
 
 
     public static view(constructor: Constructor, lineBreak: string): string{
-    //var constructor = constructor
-    //var lineBreak = lineBreak
 
                         if(constructor != 
                                     null

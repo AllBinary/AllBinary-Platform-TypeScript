@@ -77,7 +77,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public get(httpServletRequest: HttpServletRequest): string{
-var httpServletRequest = httpServletRequest
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -124,7 +123,7 @@ var httpServletRequest = httpServletRequest
 index < size; index++)
         {
 
-                        if(acceptable.localeCompare(acceptableResponseUtil!.get(index)) == 0)
+                        if(acceptable.compareTo(acceptableResponseUtil!.get(index)) == 0)
                         
                                     {
                                     result= acceptableResponseUtil!.getTagName(index);

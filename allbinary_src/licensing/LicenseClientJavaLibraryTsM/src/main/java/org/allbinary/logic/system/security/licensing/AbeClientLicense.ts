@@ -65,7 +65,6 @@ export class AbeClientLicense
         
 
     public static hasRequiredKeys(resultHashtable: Hashtable<any, any>): boolean{
-var resultHashtable = resultHashtable
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
 ;
@@ -108,8 +107,7 @@ var resultHashtable = resultHashtable
 public constructor (hashtable: Hashtable<any, any>){
 
             super();
-        var hashtable = hashtable
-this.hashtable= new Hashtable<any, any>();
+        this.hashtable= new Hashtable<any, any>();
     
 
     var abeClientInformationData: AbeClientInformationData = AbeClientInformationData.getInstance()!;
@@ -187,7 +185,6 @@ this.licenseType= LicenseTypeFactory.getInstance()!.getInstance(licenseTypeStrin
 
 
     public getKey(keyName: string): string{
-var keyName = keyName
 
 
 
@@ -309,7 +306,6 @@ stringBuffer!.append(BREAK);
 
 
     setSpecial(special: string){
-var special = special
 this.special= special;
     
 }

@@ -64,9 +64,7 @@ export class VectorExplosionAnimationFactory
 public constructor (basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var basicColor = basicColor
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.animationBehaviorFactory= animationBehaviorFactory;
+        this.animationBehaviorFactory= animationBehaviorFactory;
     
 this.setBasicColorP(basicColor);
     
@@ -78,7 +76,6 @@ this.setBasicColorP(basicColor);
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-    //var animationInterface = animationInterface
 
     var vectorRotationAnimationInterface: VectorAnimationInterface = animationInterface as VectorAnimationInterface;
 ;
@@ -105,7 +102,6 @@ this.setBasicColorP(basicColor);
 
 
     setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 }

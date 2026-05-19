@@ -56,8 +56,7 @@ export class VirtualKeyboardAPI1 extends VirtualKeyboard implements VirtualKeybo
 public constructor (activity: Activity){
 
             super();
-            //var activity = activity
-}
+        }
 
 
 }

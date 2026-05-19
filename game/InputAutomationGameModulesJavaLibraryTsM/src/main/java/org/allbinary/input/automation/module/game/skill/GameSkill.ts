@@ -59,8 +59,6 @@ export class GameSkill
     private static hashMap: HashMap<any, any> = new HashMap<any, any>();
 
     public static getInstance(gameSkillType: GameSkillType, extra: string): GameSkill{
-var gameSkillType = gameSkillType
-var extra = extra
 
 
 
@@ -87,10 +85,7 @@ var extra = extra
 public constructor (gameSkillType: GameSkillType, extra: string, time: number){
 
             super();
-        var gameSkillType = gameSkillType
-var extra = extra
-var time = time
-this.setGameSkillType(gameSkillType);
+        this.setGameSkillType(gameSkillType);
     
 this.setExtra(extra);
     
@@ -115,7 +110,6 @@ GameSkill.hashMap!.put(new StringMaker().
 
 
     public setGameSkillType(gameSkillType: GameSkillType){
-var gameSkillType = gameSkillType
 this.gameSkillType= gameSkillType;
     
 }
@@ -132,7 +126,6 @@ this.gameSkillType= gameSkillType;
 
 
     public setExtra(extra: string){
-var extra = extra
 this.extra= extra;
     
 }
@@ -149,14 +142,12 @@ this.extra= extra;
 
 
     public setTime(time: number){
-var time = time
 this.time= time;
     
 }
 
 
     public addProperty(gameSkillPropertyInterface: GameSkillPropertyInterface){
-var gameSkillPropertyInterface = gameSkillPropertyInterface
 this.vector.add(gameSkillPropertyInterface);
     
 }

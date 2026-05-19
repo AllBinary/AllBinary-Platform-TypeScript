@@ -69,10 +69,7 @@ export class CountedPickedUpLayerInterfaceFactory extends PickedUpLayerInterface
     private readonly id: number
 public constructor (pickeUpLayerType: PickedUpLayerType, iconLayer: IconLayer, animationInterface: Animation){
             super(pickeUpLayerType, iconLayer, animationInterface);
-                    var pickeUpLayerType = pickeUpLayerType
-var iconLayer = iconLayer
-var animationInterface = animationInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -90,10 +87,6 @@ list.add(this);
                 //@Throws(Exception.constructor)
             
     public getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
-var hashtable = hashtable
-var x = x
-var y = y
-var z = z
 
 
 

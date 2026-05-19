@@ -202,7 +202,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
 
 
     public isReaderSupported(mediaFileType: string): boolean{
-var mediaFileType = mediaFileType
 
 
 
@@ -213,7 +212,6 @@ var mediaFileType = mediaFileType
 
 
     public isWriterSupported(mediaFileType: string): boolean{
-var mediaFileType = mediaFileType
 
 
 
@@ -224,7 +222,6 @@ var mediaFileType = mediaFileType
 
 
     public isSupported(mediaFileType: string): boolean{
-var mediaFileType = mediaFileType
 
 
 
@@ -235,8 +232,6 @@ var mediaFileType = mediaFileType
 
 
     public isMedia(mediaFileType: string, aMediaType: string): boolean{
-var mediaFileType = mediaFileType
-var aMediaType = aMediaType
 
 
 
@@ -247,8 +242,6 @@ var aMediaType = aMediaType
 
 
     public isReaderMedia(mediaFileType: string, aMediaType: string): boolean{
-var mediaFileType = mediaFileType
-var aMediaType = aMediaType
 
 
 
@@ -259,8 +252,6 @@ var aMediaType = aMediaType
 
 
     public isWriterMedia(mediaFileType: string, aMediaType: string): boolean{
-var mediaFileType = mediaFileType
-var aMediaType = aMediaType
 
 
 
@@ -271,9 +262,6 @@ var aMediaType = aMediaType
 
 
     isMedia(mediaFileType: string, aMediaType: string, hashMap: HashMap<any, any>): boolean{
-var mediaFileType = mediaFileType
-var aMediaType = aMediaType
-var hashMap = hashMap
 
                         if(hashMap!.containsKey(mediaFileType))
                         
@@ -283,7 +271,7 @@ var hashMap = hashMap
 ;
     
 
-                        if(mediaType!.localeCompare(aMediaType) == 0)
+                        if(mediaType!.compareTo(aMediaType) == 0)
                         
                                     {
                                     

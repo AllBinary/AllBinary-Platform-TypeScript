@@ -105,19 +105,14 @@ public constructor (){
 public constructor (abeClientInformation: AbeClientInformationInterface, node: Node){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var node = node
-this.init(abeClientInformation, node);
+        this.init(abeClientInformation, node);
     
 }
 
 public constructor (abeClientInformation: AbeClientInformationInterface, name: string, className: string){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var name = name
-    //var className = className
-this.setName(name);
+        this.setName(name);
     
 this.setClassName(className);
     
@@ -128,8 +123,7 @@ this.init(abeClientInformation);
 public constructor (inputAutomationModuleInterface: InputAutomationModuleFactoryInterface){
 
             super();
-        var inputAutomationModuleInterface = inputAutomationModuleInterface
-this.setInputAutomationModuleInterface(inputAutomationModuleInterface);
+        this.setInputAutomationModuleInterface(inputAutomationModuleInterface);
     
 this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString()!);
     
@@ -139,8 +133,6 @@ this.setClassName(this.inputAutomationModuleInterface!.constructor.name.toString
                 //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface, node: Node){
-    //var abeClientInformation = abeClientInformation
-    //var node = node
 
     var nodeList: NodeList = node.getChildNodes()!;
 ;
@@ -187,7 +179,6 @@ this.init(abeClientInformation);
 
 
     public init(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 
         try {
             this.logUtil!.putF("Name: " +getName(), this, this.commonStrings!.INIT);
@@ -215,7 +206,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, this.commonStrings!.INIT, e);
                 //@Throws(Exception.constructor)
             
     public toDomNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(InputAutomationModuleData.NAME)!;
 ;
@@ -246,7 +236,6 @@ node.appendChild(classNameNode);
 
 
     public setName(name: string){
-var name = name
 this.logUtil!.putF("Name: " +name, this, "setName");
     
 this.name= name;
@@ -265,7 +254,6 @@ this.name= name;
 
 
     public setClassName(className: string){
-    //var className = className
 this.logUtil!.putF("ClassName : " +className, this, "setClassName");
     
 this.className= className;
@@ -284,7 +272,6 @@ this.className= className;
 
 
     public setInputAutomationModuleInterface(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface){
-var inputAutomationModuleInterface = inputAutomationModuleInterface
 this.logUtil!.putF("InputAutomationModuleFactoryInterface : " +inputAutomationModuleInterface, this, "setInputAutomationModuleInterface");
     
 this.inputAutomationModuleInterface= inputAutomationModuleInterface;

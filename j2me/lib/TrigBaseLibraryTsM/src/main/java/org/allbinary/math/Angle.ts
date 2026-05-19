@@ -50,8 +50,7 @@ export class Angle
 public constructor (angle: number){
 
             super();
-            //var angle = angle
-this.value= angle;
+        this.value= angle;
     
 }
 

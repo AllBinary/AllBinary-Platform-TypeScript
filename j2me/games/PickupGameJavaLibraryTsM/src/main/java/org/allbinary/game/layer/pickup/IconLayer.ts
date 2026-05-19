@@ -65,10 +65,7 @@ export class IconLayer extends AllBinaryLayer {
     private animationInterface: Animation
 public constructor (animationInterface: Animation, width: number, height: number){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, width, height), ViewPosition.getInstanceD());
-                    var animationInterface = animationInterface
-var width = width
-var height = height
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,14 +75,12 @@ this.animationInterface= animationInterface;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintXY(graphics, this.x, this.y);
     
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintThreed(graphics, this.x, this.y, this.z);
     
 }

@@ -80,17 +80,12 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: any = {}, totalPaths: number){
-    //var geographicMapInterface = geographicMapInterface
-    //var totalPaths = totalPaths
 }
 
 
                 //@Throws(Exception.constructor)
             
     public getInstanceNoCache(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var totalPaths = totalPaths
 
     var geographicMapCellPositionBasicArrayList: BasicArrayList = this.create(geographicMapInterface, pathFindingInfo, totalPaths)!;
 ;
@@ -107,10 +102,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createList(geographicMapInterface: BasicGeographicMap, geographicMapCellHistory: GeographicMapCellHistory, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var geographicMapCellHistory = geographicMapCellHistory
-    //var pathFindingInfo = pathFindingInfo
-    //var totalPaths = totalPaths
 
 
 
@@ -122,9 +113,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     create(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var totalPaths = totalPaths
 
     var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
 ;
@@ -153,10 +141,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createN(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, totalPaths: number, multipassState: MultipassState): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var totalPaths = totalPaths
-    //var multipassState = multipassState
 
     var startPathFindingNodeList: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
 ;
@@ -185,8 +169,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     isValid(pathList: BasicArrayList, geographicMapCellHistory: GeographicMapCellHistory): boolean{
-    //var pathList = pathList
-    //var geographicMapCellHistory = geographicMapCellHistory
 
 
 

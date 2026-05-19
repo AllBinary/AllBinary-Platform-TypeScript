@@ -89,7 +89,6 @@ export class StylesValidationFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>): Vector{
-var hashMap = hashMap
 
     var stylesDocument: Document = hashMap!.get(NameSpaceRequestParamData.DOCUMENT) as Document;
 ;
@@ -113,7 +112,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(document: Document): Vector{
-var document = document
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

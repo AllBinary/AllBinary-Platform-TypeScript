@@ -53,8 +53,6 @@ export class TouchButtonsPaintableCompositeFactory
         
 
     public static getInstance(inputMappingInterface: InputMappingInterface, basicColor: BasicColor): ProcessPaintable{
-var inputMappingInterface = inputMappingInterface
-var basicColor = basicColor
 
 
 

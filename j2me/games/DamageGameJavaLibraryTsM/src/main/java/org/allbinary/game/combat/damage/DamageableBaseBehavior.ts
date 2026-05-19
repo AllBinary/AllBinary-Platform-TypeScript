@@ -74,15 +74,12 @@ export class DamageableBaseBehavior
                 //@Throws(Exception.constructor)
             
     public damage(damage: number, damageType: number){
-var damage = damage
-var damageType = damageType
 }
 
 
                 //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
-var damageType = damageType
 
 
 

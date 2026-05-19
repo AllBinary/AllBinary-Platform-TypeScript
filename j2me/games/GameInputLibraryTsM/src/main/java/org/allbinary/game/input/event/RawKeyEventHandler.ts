@@ -95,7 +95,6 @@ this.eventListenerInterfaceList= new BasicArrayListD();
 
 
     public addListeners(vector: BasicArrayList){
-    //var vector = vector
 
     var eventListenerInterface: RawKeyEventListener
 ;
@@ -122,7 +121,6 @@ this.addListener(eventListenerInterface);
 
 
     public addListenerSingleThreaded(eventListenerInterface: RawKeyEventListener){
-    //var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
@@ -136,7 +134,6 @@ this.addListener(eventListenerInterface);
 
 
     public addListener(eventListenerInterface: RawKeyEventListener){
-    //var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
@@ -150,14 +147,12 @@ this.addListener(eventListenerInterface);
 
 
     public removeListenerSingleThreaded(eventListenerInterface: RawKeyEventListener){
-    //var eventListenerInterface = eventListenerInterface
 this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 }
 
 
     public removeListener(eventListenerInterface: RawKeyEventListener){
-    //var eventListenerInterface = eventListenerInterface
 this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 }
@@ -166,9 +161,6 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(keyCode: number, deviceId: number, repeated: boolean){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
-    //var repeated = repeated
 
     var eventListenerInterface: RawKeyEventListener
 ;
@@ -208,10 +200,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     process(keyCode: number, deviceId: number, repeated: boolean, eventListenerInterface: RawKeyEventListener){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
-    //var repeated = repeated
-    //var eventListenerInterface = eventListenerInterface
 eventListenerInterface!.onEvent(keyCode, deviceId, repeated);
     
 }

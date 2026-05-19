@@ -79,14 +79,12 @@ export class BaseChangedGameFeatureListener
     private changed: boolean = true;
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(CommonStrings.getInstance()!.NOT_IMPLEMENTED, this);
     
 }
 
 
     public onGameFeatureChange(gameFeatureEvent: GameFeatureEvent){
-    //var gameFeatureEvent = gameFeatureEvent
 this.logUtil!.putF(new StringMaker().
                             append(this.gameFeatureUtil!.GAME_FEATURE_CHANGED)!.append(gameFeatureEvent!.getWhatChanged())!.toString(), this, this.gameFeatureUtil!.ON_GAME_FEATURE_CHANGE);
     
@@ -98,21 +96,18 @@ this.setChanged(true);
 
 
     public add(gameFeature: Feature){
-    //var gameFeature = gameFeature
 this.list.add(gameFeature);
     
 }
 
 
     public remove(gameFeature: Feature){
-    //var gameFeature = gameFeature
 this.list.remove(gameFeature);
     
 }
 
 
     public setChanged(initialized: boolean){
-    //var initialized = initialized
 this.changed= initialized;
     
 
@@ -128,7 +123,6 @@ this.changed= initialized;
 
 
     public isChangedFeature(gameFeature: Feature): boolean{
-    //var gameFeature = gameFeature
 
     var isChanged: boolean = this.list.contains(gameFeature)!;
 ;

@@ -110,43 +110,36 @@ public constructor (){
 
 
     public keyPress(keycode: Integer){
-var keycode = keycode
 this.logUtil!.putF("KeyCode: " +keycode, this, "keyPress");
     
 }
 
 
     public keyRelease(keycode: Integer){
-var keycode = keycode
 this.logUtil!.putF("KeyCode: " +keycode, this, "keyRelease");
     
 }
 
 
     public mouseMove(x: Integer, y: Integer){
-var x = x
-var y = y
 this.logUtil!.putF("X: " +x +" Y: " +y, this, "mouseMove");
     
 }
 
 
     public mousePress(buttons: Integer){
-var buttons = buttons
 this.logUtil!.putF("Buttons: " +buttons, this, "mousePress");
     
 }
 
 
     public mouseRelease(buttons: Integer){
-var buttons = buttons
 this.logUtil!.putF("Buttons: " +buttons, this, "mouseRelease");
     
 }
 
 
     public createScreenCapture(screenRect: Rectangle): BufferedImage{
-var screenRect = screenRect
 
 
 
@@ -157,7 +150,6 @@ var screenRect = screenRect
 
 
     public delay(ms: Integer){
-var ms = ms
 }
 
 
@@ -172,8 +164,6 @@ var ms = ms
 
 
     public getPixelColor(x: Integer, y: Integer): Color{
-var x = x
-var y = y
 
 
 
@@ -194,17 +184,14 @@ var y = y
 
 
     public mouseWheel(wheelAmt: Integer){
-var wheelAmt = wheelAmt
 }
 
 
     public setAutoDelay(ms: Integer){
-var ms = ms
 }
 
 
     public setAutoWaitForIdle(isOn: boolean){
-var isOn = isOn
 }
 
 

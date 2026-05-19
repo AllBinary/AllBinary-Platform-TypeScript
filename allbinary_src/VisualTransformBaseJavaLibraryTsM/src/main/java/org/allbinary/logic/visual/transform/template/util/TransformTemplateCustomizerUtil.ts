@@ -126,8 +126,6 @@ this.GLOBALS_UPDATE= commonStrings!.UPDATE +SPACE;
 
 
     public getPageNameHack(viewName: string, storeName: string): string{
-var viewName = viewName
-var storeName = storeName
 
     var SPACE: string = CommonSeps.getInstance()!.SPACE;
 ;

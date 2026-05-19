@@ -65,7 +65,6 @@ export class InitInfo2
     private readonly directory: Directory = Directory.getInstance()!;
 
     public isTestHtmlPathValid(value: AbPath): boolean{
-var value = value
 
 
 
@@ -76,7 +75,6 @@ var value = value
 
 
     public isMainPathValid(value: AbPath): boolean{
-var value = value
 
 
 

@@ -88,7 +88,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImageForRotation(originalImage: Image): Image{
-    //var originalImage = originalImage
 
 
 
@@ -101,7 +100,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage(originalImage: Image): Image{
-    //var originalImage = originalImage
 
     var image: Image = this.imageCreationUtil!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;
@@ -136,9 +134,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
-    //var originalImage = originalImage
-    //var canvasScale = canvasScale
-    //var resize = resize
 
     var newWidth: number = Math.round((originalImage!.getWidth() *canvasScale));
 ;

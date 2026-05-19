@@ -68,14 +68,12 @@ export class SingleKeyPressGameKeyFromMotionGestureEventListener extends Complet
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent){
-    //var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 
         try {
             

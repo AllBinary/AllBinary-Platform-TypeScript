@@ -72,14 +72,12 @@ public constructor (){
 
 
     public setSubject(value: string){
-var value = value
 this.subject= value;
     
 }
 
 
     public setBody(value: string){
-var value = value
 this.body= value;
     
 }

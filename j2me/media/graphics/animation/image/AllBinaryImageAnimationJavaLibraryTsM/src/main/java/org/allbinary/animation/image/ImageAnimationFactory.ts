@@ -62,7 +62,6 @@ export class ImageAnimationFactory extends BaseImageAnimationFactory {
                 //@Throws(Exception.constructor)
             
     public static createFactory(image: Image): ImageAnimationFactory{
-    //var image = image
 
 
 
@@ -73,13 +72,7 @@ export class ImageAnimationFactory extends BaseImageAnimationFactory {
 
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, dx, dy, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -89,7 +82,6 @@ public constructor (image: Image, width: number, height: number, dx: number, dy:
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var scaledImage: Image = this.animationFactoryImageScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;

@@ -168,8 +168,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
 public constructor (linesNode: Node){
 
             super();
-        var linesNode = linesNode
-this.points= new Points();
+        this.points= new Points();
     
 this.init();
     
@@ -254,8 +253,6 @@ this.fulcrumPoint= PointFactory.getInstance()!.createXY(0, 0);
                 //@Throws(Exception.constructor)
             
     public translate(x: number, y: number){
-var x = x
-var y = y
 StatusFactory.getInstance()!.setStatus("Translating: " +this.points.getPoints());
     
 
@@ -272,7 +269,6 @@ this.points.addPoints(basicGraphicsPipeline!.getMatrix());
 
 
     public setRotate(theta: number){
-var theta = theta
 
         while(theta > 2 *Math.PI)
         {
@@ -293,21 +289,18 @@ this.theta= theta;
 
 
     public addRotate(theta: number){
-var theta = theta
 this.setRotate(this.theta +theta);
     
 }
 
 
     public setAngle(angle: number){
-var angle = angle
 this.setRotate(Math.toRadians(angle));
     
 }
 
 
     public addAngle(angle: number){
-var angle = angle
 this.setRotate(this.theta +Math.toRadians(angle));
     
 }
@@ -337,7 +330,6 @@ this.setRotate(this.theta +Math.toRadians(angle));
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     addPoint(pointNodes: NodeList){
-var pointNodes = pointNodes
 
     var list: BasicArrayList = DomHelper.getInstance()!.getWithoutTextNodes(pointNodes)!;
 ;
@@ -377,7 +369,6 @@ this.addPoint(point);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPoint(point: GPoint){
-var point = point
 this.points.getPoints()!.add(point);
     
 this.logUtil!.putF(point.toString(), this, "addPoint");
@@ -459,7 +450,6 @@ this.active= true;
                 //@Throws(Exception.constructor)
             
     public duplicatePoints(list: BasicArrayList){
-var list = list
 
     var size: number = list.size()!;
 ;
@@ -527,18 +517,12 @@ linesGraphicItem!.deactivate();
 
 
     public setFulcrumPoint(point: GPoint){
-var point = point
 this.fulcrumPoint= point;
     
 }
 
 
     public paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number){
-var g = g
-var canvasAngle = canvasAngle
-var dimension = dimension
-var x = x
-var y = y
 
         try {
             
@@ -626,7 +610,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
                 //@Throws(Exception.constructor)
             
     public toDom(canvasDom: CanvasDom): Node{
-var canvasDom = canvasDom
 
 
 
@@ -657,7 +640,6 @@ var canvasDom = canvasDom
 
 
     public setPointsInterface(points: Points){
-var points = points
 this.points= points;
     
 }
@@ -674,16 +656,12 @@ this.points= points;
 
 
     public setColor(color: Color){
-var color = color
 this.color= color;
     
 }
 
 
     public mouseClicked(mouseEvent: java.awt.event.MouseEvent, x: number, y: number){
-var mouseEvent = mouseEvent
-var x = x
-var y = y
 
         try {
             
@@ -730,40 +708,26 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
 
 
     public mouseEntered(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 }
 
 
     public mouseExited(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 }
 
 
     public mousePressed(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 }
 
 
     public mouseReleased(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 }
 
 
     public mouseDragged(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 }
 
 
     public mouseMoved(mouseEvent: java.awt.event.MouseEvent, x: number, y: number){
-var mouseEvent = mouseEvent
-var x = x
-var y = y
 
         try {
             
@@ -788,7 +752,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "mouseMoved", e);
 
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 
         try {
             
@@ -854,12 +817,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, gameInputStrings!.KEY_PRE
 
 
     public keyReleased(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 
     public keyTyped(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 

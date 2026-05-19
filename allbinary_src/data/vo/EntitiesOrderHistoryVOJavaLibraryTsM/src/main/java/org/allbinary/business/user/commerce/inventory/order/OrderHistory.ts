@@ -118,8 +118,7 @@ export class OrderHistory extends Order implements OrderHistoryInterface {
     private total: Money
 public constructor (basketInterface: BasketInterface){
             super(basketInterface);
-                    var basketInterface = basketInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -127,9 +126,7 @@ public constructor (basketInterface: BasketInterface){
 
 public constructor (basketInterface: BasketInterface, orderHistory: OrderHistory){
             super(orderHistory!.getStoreName(), basketInterface, orderHistory!.getId(), orderHistory!.getShippingMethod(), orderHistory!.getSpecial(), orderHistory!.getPaymentMethod());
-                    var basketInterface = basketInterface
-var orderHistory = orderHistory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -171,9 +168,7 @@ super.setStoreCancelComments(orderHistory!.getStoreCancelComments() as string);
 
 public constructor (basketInterface: BasketInterface, orderHistoryHashMap: HashMap<any, any>){
             super(orderHistoryHashMap!.get(StoreFrontData.getInstance()!.NAME) as string, basketInterface, orderHistoryHashMap!.get(OrderData.ID) as string, orderHistoryHashMap!.get(ShippingMethodData.NAME) as string, orderHistoryHashMap!.get(EntryData.getInstance()!.SPECIAL) as string, orderHistoryHashMap!.get(PaymentData.METHOD) as string);
-                    var basketInterface = basketInterface
-var orderHistoryHashMap = orderHistoryHashMap
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -215,91 +210,78 @@ super.setStoreCancelComments(orderHistoryHashMap!.get(OrderData.STORECANCELCOMME
 
 
     public setUserName(value: string){
-var value = value
 this.userName= value;
     
 }
 
 
     public setDefaultShippingAddress(shippingAddress: StreetAddress){
-var shippingAddress = shippingAddress
 this.shippingAddress= shippingAddress;
     
 }
 
 
     public setBillingAddress(billingAddress: StreetAddress){
-var billingAddress = billingAddress
 this.billingAddress= billingAddress;
     
 }
 
 
     public setPaymentInfo(payment: Payment){
-var payment = payment
 this.payment= payment;
     
 }
 
 
     public setShipDate(value: string){
-var value = value
 this.shipDate= value;
     
 }
 
 
     public setOrderDate(value: string){
-var value = value
 this.orderDate= value;
     
 }
 
 
     public setTransDate(value: string){
-var value = value
 this.transDate= value;
     
 }
 
 
     public setCancelDate(value: string){
-var value = value
 this.cancelDate= value;
     
 }
 
 
     public setStatus(value: string){
-var value = value
 this.status= value;
     
 }
 
 
     public setSubTotal(value: Money){
-var value = value
 this.subTotal= value;
     
 }
 
 
     public setShippingCost(value: Money){
-var value = value
 this.shippingCost= value;
     
 }
 
 
     public setTaxes(value: Money){
-var value = value
 this.taxes= value;
     
 }
 
 
     public setTotal(value: Money){
-var value = value
 this.total= value;
     
 }
@@ -488,7 +470,6 @@ hashMap!.put(OrderHistoryData.TAX, this.taxes.toString());
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;

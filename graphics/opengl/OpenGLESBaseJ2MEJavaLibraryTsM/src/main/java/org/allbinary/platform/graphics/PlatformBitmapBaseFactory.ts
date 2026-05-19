@@ -54,7 +54,6 @@ export class PlatformBitmapBaseFactory
     public static readonly NULL_PLATFORM_BITMAP_BASE_FACTORY: PlatformBitmapBaseFactory = new PlatformBitmapBaseFactory();
 
     public createBitmap(image: Image): PlatformBitmapBase{
-    //var image = image
 
 
 

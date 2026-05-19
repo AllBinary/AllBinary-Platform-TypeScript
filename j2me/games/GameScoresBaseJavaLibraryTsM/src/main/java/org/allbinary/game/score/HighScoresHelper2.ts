@@ -54,7 +54,6 @@ export class HighScoresHelper2 extends HighScoresHelperBase {
     private selectedHighScores: HighScores = NullHighScoresSingletonFactory.getInstance()!;
 
     public setSelectedHighScores(selectedHighScores: HighScores){
-    //var selectedHighScores = selectedHighScores
 this.selectedHighScores= selectedHighScores;
     
 }
@@ -71,7 +70,6 @@ this.selectedHighScores= selectedHighScores;
 
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
-    //var highScoresArrayP = highScoresArrayP
 super.setHighScoresArray(highScoresArrayP);
     
 this.circularIndexUtil!.setSize(this.highScoresArrayP!.length);

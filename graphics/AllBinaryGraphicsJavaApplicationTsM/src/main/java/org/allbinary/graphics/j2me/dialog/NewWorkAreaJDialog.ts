@@ -74,7 +74,6 @@ export class NewWorkAreaJDialog extends javax.swing.JDialog {
         
 
     public static main(args: string[]){
-var args = args
 
         try {
             new NewWorkAreaJDialog(new MyFrame(), true, new Dimension(100, 100), "testing").
@@ -100,11 +99,7 @@ var args = args
     private nameJTextField: JTextField
 public constructor (parent: MyFrame, modal: boolean, dimension: Dimension, newName: string){
             super(parent as java.awt.Frame, modal);
-                    var parent = parent
-var modal = modal
-var dimension = dimension
-var newName = newName
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -130,7 +125,6 @@ submitButton!.addActionListener(new class extends ActionListener
                                 {
                                 
     public actionPerformed(evt: ActionEvent){
-var evt = evt
 
         try {
             disposeNewDialog();
@@ -237,7 +231,6 @@ addWindowListener(new class extends java.awt.event.WindowAdapter
                                 {
                                 
     public windowClosing(evt: java.awt.event.WindowEvent){
-var evt = evt
 closeDialog(evt);
     
 }
@@ -251,7 +244,6 @@ pack();
 
 
     closeDialog(evt: java.awt.event.WindowEvent){
-var evt = evt
 setVisible(false);
     
 dispose();

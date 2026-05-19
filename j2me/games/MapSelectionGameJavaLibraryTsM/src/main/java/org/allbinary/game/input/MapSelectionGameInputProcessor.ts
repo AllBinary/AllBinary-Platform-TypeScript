@@ -151,11 +151,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 public constructor (gameCanvas: AllBinaryGameCanvas, raceTrackGeographicMapInterfaceFactoryInterface: MultiLevelRaceTrackGeographicMapInterfaceFactoryInterface, mapSelectorPaintable: PreGameSelectorPaintable, lockedIndex: number){
 
             super();
-        var gameCanvas = gameCanvas
-var raceTrackGeographicMapInterfaceFactoryInterface = raceTrackGeographicMapInterfaceFactoryInterface
-var mapSelectorPaintable = mapSelectorPaintable
-var lockedIndex = lockedIndex
-this.gameCanvas= gameCanvas;
+        this.gameCanvas= gameCanvas;
     
 this.raceTrackGeographicMapInterfaceFactoryInterface= raceTrackGeographicMapInterfaceFactoryInterface;
     
@@ -179,7 +175,6 @@ this.getPlayerGameInput()!.update();
                 //@Throws(Exception.constructor)
             
     public onInput(list: BasicArrayList){
-var list = list
 
     var size: number = list.size()!;
 ;
@@ -273,7 +268,6 @@ list.clear();
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 }
 
 

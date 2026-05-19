@@ -64,14 +64,12 @@ public constructor (){
 
 
     public removeMoney(points: number){
-var points = points
 this.value -= points;
     
 }
 
 
     public addMoney(points: number){
-var points = points
 this.value += points;
     
 }

@@ -67,7 +67,6 @@ public constructor (){
 
 
     public setStatus(value: string){
-var value = value
 this.status= value;
     
 }
@@ -98,7 +97,7 @@ this.setObjectFile("views.admin.orderhistory.DateRangeOrderHistoryView");
                         
                                     {
                                     
-                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     

@@ -69,7 +69,6 @@ private constructor (){
 
 
     public create(selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput): Visitor{
-    //var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
 
 
 

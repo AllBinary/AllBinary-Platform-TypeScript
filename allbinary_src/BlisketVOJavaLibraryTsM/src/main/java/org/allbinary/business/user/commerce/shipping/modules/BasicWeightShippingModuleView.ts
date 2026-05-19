@@ -89,7 +89,6 @@ public constructor (){
 
 
     public toValidationInfoNode(document: org.w3c.dom.Document): org.w3c.dom.Node{
-var document = document
 
 
 
@@ -110,7 +109,6 @@ var document = document
 
 
     public toXmlNode(document: org.w3c.dom.Document): org.w3c.dom.Node{
-var document = document
 
         try {
             

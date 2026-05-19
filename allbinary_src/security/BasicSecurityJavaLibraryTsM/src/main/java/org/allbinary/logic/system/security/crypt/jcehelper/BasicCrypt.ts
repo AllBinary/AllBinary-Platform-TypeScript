@@ -64,8 +64,7 @@ export class BasicCrypt
 public constructor (keyAsString: string){
 
             super();
-        var keyAsString = keyAsString
-
+        
     var key: number[] = NullUtil.getInstance()!.NULL_BYTE_ARRAY;
 ;
     
@@ -91,7 +90,6 @@ this.key= key;
 
 
     public encrypt(array: number[]): number[]{
-    //var array = array
 
         try {
             
@@ -118,7 +116,6 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 
 
     public decrypt(array: number[]): number[]{
-    //var array = array
 
         try {
             
@@ -145,7 +142,6 @@ PreLogUtil.putOE("decrypt Failed", this, "decrypt", e);
 
 
     public mutilate(array: number[]): number[]{
-var array = array
 
     var value: number
 ;

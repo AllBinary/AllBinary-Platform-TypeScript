@@ -67,8 +67,6 @@ export class LayerDistanceUtil
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
 
     public getDistance(layerInterface: AllBinaryLayer, layerInterface2: AllBinaryLayer): number{
-    //var layerInterface = layerInterface
-    //var layerInterface2 = layerInterface2
 
     var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());
 ;
@@ -87,8 +85,6 @@ export class LayerDistanceUtil
 
 
     public getDistance3D(layerInterface: AllBinaryLayer, layerInterface2: AllBinaryLayer): number{
-    //var layerInterface = layerInterface
-    //var layerInterface2 = layerInterface2
 
     var dx: number = (layerInterface!.getXP() +layerInterface!.getHalfWidth()) -(layerInterface2!.getXP() +layerInterface2!.getHalfWidth());
 ;
@@ -111,8 +107,6 @@ export class LayerDistanceUtil
 
 
     public getDistanceAt(layerInterface: AllBinaryLayer, point: GPoint): number{
-    //var layerInterface = layerInterface
-    //var point = point
 
     var dx: number = layerInterface!.getXP() -point.getX();
 ;

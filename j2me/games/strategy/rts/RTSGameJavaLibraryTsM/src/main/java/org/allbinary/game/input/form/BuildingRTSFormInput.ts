@@ -140,9 +140,7 @@ export class BuildingRTSFormInput extends RTSFormInput {
     private readonly dropCellPositionHistory: DropCellPositionHistory = DropCellPositionHistory.getInstance()!;
 public constructor (groupInterface: Group[], isUnitProducer: boolean){
             super(groupInterface);
-                        //var groupInterface = groupInterface
-    //var isUnitProducer = isUnitProducer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -180,7 +178,6 @@ this.mapEdgeGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -215,11 +212,6 @@ this.mapEdgeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
                 //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var item = item
-    //var itemIndex = itemIndex
 super.process(layerManager);
     
 this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex);
@@ -238,7 +230,6 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
 
 
     isDemoLocked(item: ABCustomItem): boolean{
-    //var item = item
 
     var factoryItem: LayerInterfaceFactoryImageItem = item as LayerInterfaceFactoryImageItem;
 ;
@@ -276,10 +267,6 @@ this.buildFromMotionInput(rtsPlayerLayerInterface, layerManager, item, itemIndex
                 //@Throws(Exception.constructor)
             
     public buildFromMotionInput(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var item = item
-    //var itemIndex = itemIndex
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -440,10 +427,6 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, rtsLayer, itemIndex);
                 //@Throws(Exception.constructor)
             
     attemptBuild(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number): boolean{
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var layerInterface = layerInterface
-    //var itemIndex = itemIndex
 this.logUtil!.putF(new StringMaker().
                             append("Layer: ")!.append(StringUtil.getInstance()!.toString(layerInterface))!.toString(), this, "attemptBuild");
     
@@ -594,8 +577,6 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                 //@Throws(Exception.constructor)
             
     isBuildAttemptValid(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerInterface: RTSLayer): boolean{
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerInterface = layerInterface
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;
 ;
@@ -692,9 +673,6 @@ this.add(rtsPlayerLayerInterface, layerManager, layerInterface);
                 //@Throws(Exception.constructor)
             
     add(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer){
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var layerInterface = layerInterface
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;
 ;
@@ -728,7 +706,6 @@ rtsPlayerLayerInterface!.add(BuildingSound.getInstance());
 
 
     isSurroundingCellsOffMap(layerInterface: RTSLayer): boolean{
-var layerInterface = layerInterface
 
     var geographicMapCellPositionArea: GeographicMapCellPositionAreaBase = layerInterface!.geographicMapCellPositionAreaBase;
 ;

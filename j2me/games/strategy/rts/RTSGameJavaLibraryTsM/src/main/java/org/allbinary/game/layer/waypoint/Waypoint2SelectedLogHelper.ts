@@ -102,9 +102,6 @@ export class Waypoint2SelectedLogHelper extends Waypoint2LogHelper {
     private readonly PROCESS_POSSIBLE_TARGET: string = "selected: processPossibleTarget1";
 
     public initRange(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, closeRange: number, sensorRange: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var closeRange = closeRange
-    //var sensorRange = sensorRange
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -125,12 +122,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: initRange");
 
 
     public processPossibleTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, waypointBehaviorBase: WaypointBehaviorBase, layerInterface: PathFindingLayerInterface, anotherTargetDistance: number, isShorterThanCurrentTargetDistance: boolean, isCurrentTargetDestroyed: boolean){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var waypointBehaviorBase = waypointBehaviorBase
-    //var layerInterface = layerInterface
-    //var anotherTargetDistance = anotherTargetDistance
-    //var isShorterThanCurrentTargetDistance = isShorterThanCurrentTargetDistance
-    //var isCurrentTargetDestroyed = isCurrentTargetDestroyed
 
                         if(waypointBehaviorBase!.isWaypointListEmptyOrOnlyTargets() && waypointBehaviorBase!.isInSensorRange(layerInterface as CollidableDestroyableDamageableLayer, anotherTargetDistance))
                         
@@ -168,10 +159,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.PROCESS_POSSIBLE_TARGET)
 
 
     public processSetTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, waypointBehaviorBase: WaypointBehaviorBase, layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var waypointBehaviorBase = waypointBehaviorBase
-    //var layerInterface = layerInterface
-    //var anotherTargetDistance = anotherTargetDistance
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -196,10 +183,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processPossibleTar
 
 
     public processPossibleTargetCloser(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, waypointBehaviorBase: WaypointBehaviorBase, layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var waypointBehaviorBase = waypointBehaviorBase
-    //var layerInterface = layerInterface
-    //var anotherTargetDistance = anotherTargetDistance
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -224,10 +207,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processPossibleTar
 
 
     public setTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, waypointBehaviorBase: WaypointBehaviorBase, layerInterface: PathFindingLayerInterface, anotherTargetDistance: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var waypointBehaviorBase = waypointBehaviorBase
-    //var layerInterface = layerInterface
-    //var anotherTargetDistance = anotherTargetDistance
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -256,15 +235,12 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: setTarget");
 
 
     public setTargetPath(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF("Target Destroyed", this, "selected: setTargetPath");
     
 }
 
 
     public setTargetPathIgnoreNewPath(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, waypointBehaviorBase: WaypointBehaviorBase){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var waypointBehaviorBase = waypointBehaviorBase
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -285,10 +261,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: setTargetPath");
 
 
     public processWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, waypointBehaviorBase: WaypointBehaviorBase, targetLayer: PathFindingLayerInterface, size: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var waypointBehaviorBase = waypointBehaviorBase
-    //var targetLayer = targetLayer
-    //var size = size
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -321,8 +293,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processWaypoint");
 
 
     public processWaypointTracked(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, waypointBehaviorBase: WaypointBehaviorBase){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var waypointBehaviorBase = waypointBehaviorBase
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -347,8 +317,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processWaypoint");
 
 
     public processWaypointTrackedVisit(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, geographicMapCellPosition: GeographicMapCellPosition){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -365,8 +333,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processWaypoint");
 
 
     public processWaypointTrackedWithoutProgress(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, reason: string){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var reason = reason
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(reason)!.toString(), this, "turnTo");
     
@@ -374,14 +340,12 @@ this.logUtil!.putF(new StringMaker().
 
 
     public wander(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF(associatedAdvancedRTSGameLayer!.getName(), this, "wander");
     
 }
 
 
     public targetDestroyed(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Target Destroyed")!.toString(), this, "selected: processTargeting");
     
@@ -389,9 +353,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public processTargeting(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, dx: number, dy: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var dx = dx
-    //var dy = dy
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -416,9 +377,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processTargeting")
 
 
     public processTargetingNonWayPoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, dx: number, dy: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var dx = dx
-    //var dy = dy
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -443,10 +401,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: processTargeting")
 
 
     public removeWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase, waypointLayer: PathFindingLayerInterface, reason: string){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var unitWaypointBehavior2 = unitWaypointBehavior2
-    //var waypointLayer = waypointLayer
-    //var reason = reason
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -471,9 +425,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: removeWaypoint");
 
 
     public removeWaypointList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior2: WaypointBehaviorBase, list: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var unitWaypointBehavior2 = unitWaypointBehavior2
-    //var list = list
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -494,7 +445,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: removeWaypoint");
 
 
     public removeWaypointClear(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Clearing removed waypoint")!.toString(), this, "selected: removeWaypoint");
     
@@ -502,7 +452,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public clearTarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Cleared Target")!.toString(), this, "selected: clearTarget");
     
@@ -510,8 +459,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public addWaypointFromUser(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var advancedRTSGameLayer = advancedRTSGameLayer
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -541,7 +488,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 
 
     public targetMovedSoRetarget(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" - target moved so retargeting")!.toString(), this, "turnTo");
     

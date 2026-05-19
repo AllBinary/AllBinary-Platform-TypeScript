@@ -90,9 +90,6 @@ private constructor (){
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
-    //var abeClientInformation = abeClientInformation
-    //var hashMap = hashMap
-    //var pageContext = pageContext
 
         try {
             
@@ -178,8 +175,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): WorkFlowInterface{
-    //var abeClientInformation = abeClientInformation
-    //var className = className
 
         try {
             
@@ -189,7 +184,7 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "getInstance(HashMap)", e);
 
                         if(className != 
                                     null
-                                 && className!.localeCompare(stringUtil!.EMPTY_STRING) != 0)
+                                 && className!.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     

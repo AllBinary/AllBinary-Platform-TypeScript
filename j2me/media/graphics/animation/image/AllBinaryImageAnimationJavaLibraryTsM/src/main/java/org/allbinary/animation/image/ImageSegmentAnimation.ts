@@ -68,10 +68,7 @@ export class ImageSegmentAnimation extends ImageAnimation {
     private sequenceArray: number[]
 protected constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior){
             super(image, animationBehavior);
-                        //var image = image
-    //var sequenceArray = sequenceArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -103,7 +100,6 @@ this.circularIndexUtil!.previous();
 
 
     public setFrame(index: number){
-var index = index
 this.circularIndexUtil!.setIndex(index);
     
 }
@@ -130,7 +126,6 @@ this.circularIndexUtil!.setIndex(index);
 
 
     public setSequence(sequenceArray: number[]){
-var sequenceArray = sequenceArray
 this.sequenceArray= sequenceArray;
     
 }
@@ -147,9 +142,6 @@ this.sequenceArray= sequenceArray;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 }
 
 
@@ -164,7 +156,6 @@ var y = y
 
 
     public setStartX(startX: number){
-var startX = startX
 this.startX= startX;
     
 }
@@ -181,7 +172,6 @@ this.startX= startX;
 
 
     public setStartY(startY: number){
-var startY = startY
 this.startY= startY;
     
 }
@@ -198,7 +188,6 @@ this.startY= startY;
 
 
     public setDrawWidth(drawWidth: number){
-var drawWidth = drawWidth
 this.drawWidth= drawWidth;
     
 }
@@ -215,7 +204,6 @@ this.drawWidth= drawWidth;
 
 
     public setDrawHeight(drawHeight: number){
-var drawHeight = drawHeight
 this.drawHeight= drawHeight;
     
 }

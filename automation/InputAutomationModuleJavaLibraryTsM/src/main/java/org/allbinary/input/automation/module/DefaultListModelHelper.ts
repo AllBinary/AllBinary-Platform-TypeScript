@@ -104,14 +104,12 @@ this.defaultListModel!.addElement(moduleName);
 
 
     public add(string: string){
-var string = string
 this.vector.add(string);
     
 }
 
 
     public remove(string: string){
-var string = string
 this.vector.remove(string);
     
 }

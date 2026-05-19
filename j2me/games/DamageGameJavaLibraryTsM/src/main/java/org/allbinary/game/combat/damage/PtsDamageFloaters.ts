@@ -88,8 +88,7 @@ export class PtsDamageFloaters extends DamageFloaters {
 public constructor (layerInterface: AllBinaryLayer){
 
             super();
-        var layerInterface = layerInterface
-this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(100000);
+        this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(100000);
     
 this.layerInterface= layerInterface;
     
@@ -113,7 +112,6 @@ this.lastDamageString[index]= CHAR_ARRAY;
 
 
     public add(damage: number){
-var damage = damage
 
     var index: number = this.circularIndexUtil!.getIndex()!;
 ;
@@ -132,7 +130,6 @@ this.circularIndexUtil!.next();
     private readonly myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var viewPosition: ViewPosition = this.layerInterface!.getViewPosition()!;
 ;

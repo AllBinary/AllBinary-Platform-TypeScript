@@ -96,10 +96,7 @@ export class TransformInfoEntity extends AbSqlBean implements TransformInfoEntit
     private readonly transformInfoObjectConfigGeneratorFactoryInterface: TransformInfoObjectConfigGeneratorFactoryInterface
 public constructor (transformInfoObjectConfigGeneratorFactoryInterface: TransformInfoObjectConfigGeneratorFactoryInterface, transformInfoObjectConfigAndManipulatorFactoryInterface: TransformInfoObjectConfigAndManipulatorFactoryBase, transformInfoFactoryInterface: TransformInfoFactoryInterface){
             super(new UserDbInitInfo());
-                    var transformInfoObjectConfigGeneratorFactoryInterface = transformInfoObjectConfigGeneratorFactoryInterface
-var transformInfoObjectConfigAndManipulatorFactoryInterface = transformInfoObjectConfigAndManipulatorFactoryInterface
-var transformInfoFactoryInterface = transformInfoFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -115,7 +112,6 @@ this.transformInfoFactoryInterface= transformInfoFactoryInterface;
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -148,7 +144,6 @@ var values = values
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(TransformInfoData.getInstance()!.NAME, value);
@@ -183,9 +178,6 @@ var value = value
                 //@Throws(Exception.constructor)
             
     public get(name: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
-var name = name
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
 ;
@@ -269,7 +261,6 @@ hashMap!.put(transformInfoData!.DATA, decode.toCharArray());
                 //@Throws(Exception.constructor)
             
     public getObjectConfigs(storeName: string): Vector{
-var storeName = storeName
 
     var objectConfigVector: Vector = new Vector();
 ;
@@ -312,7 +303,6 @@ objectConfigVector!.add(this.transformInfoObjectConfigAndManipulatorFactoryInter
                 //@Throws(Exception.constructor)
             
     public getNames(storeName: string): Vector{
-var storeName = storeName
 
     var viewNameVector: Vector = new Vector();
 ;
@@ -437,7 +427,6 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(TransformInfoData.getInstance()!.NAME, updatedValues!.get(TransformInfoData.getInstance()!.NAME) as string, updatedValues);
     
 }

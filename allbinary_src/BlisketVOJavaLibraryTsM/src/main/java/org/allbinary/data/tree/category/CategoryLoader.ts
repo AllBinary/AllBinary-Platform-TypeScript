@@ -79,8 +79,7 @@ export class CategoryLoader extends CategoryModifierTree implements CategoryLoad
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(categoryFactoryInterface);
-                    var categoryFactoryInterface = categoryFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -98,7 +97,6 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getDoc(categoryInterface: CategoryInterface): Document{
-var categoryInterface = categoryInterface
 
         try {
             
@@ -209,7 +207,6 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, "getDoc", e);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(categoryInterface: CategoryInterface): CategoryInterface{
-var categoryInterface = categoryInterface
 
         try {
             
@@ -252,7 +249,6 @@ var categoryInterface = categoryInterface
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(document: Document): CategoryInterface{
-var document = document
 
         try {
             
@@ -295,7 +291,6 @@ var document = document
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getAll(categoryInterface: CategoryInterface): CategoryInterface{
-var categoryInterface = categoryInterface
 
         try {
             
@@ -334,7 +329,6 @@ var categoryInterface = categoryInterface
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getAll(document: Document): CategoryInterface{
-var document = document
 
         try {
             
@@ -377,8 +371,6 @@ var document = document
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getAll(parentCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
-var parentCategoryInterface = parentCategoryInterface
-var categoryNodeList = categoryNodeList
 
         try {
             
@@ -402,7 +394,7 @@ index < categoryNodeList!.getLength(); index++)
 
                         if(categoryNode != 
                                     null
-                                 && categoryNode!.getNodeName()!.localeCompare(CategoryData.getInstance()!.NAME) == 0)
+                                 && categoryNode!.getNodeName()!.compareTo(CategoryData.getInstance()!.NAME) == 0)
                         
                                     {
                                     
@@ -451,8 +443,6 @@ parentCategoryInterface!.addChild(categoryInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     addProperties(loadedCategoryInterface: CategoryInterface, categoryNodeList: NodeList): CategoryInterface{
-var loadedCategoryInterface = loadedCategoryInterface
-var categoryNodeList = categoryNodeList
 
         try {
             
@@ -476,7 +466,7 @@ index < categoryNodeList!.getLength(); index++)
 
                         if(categoryNode != 
                                     null
-                                 && categoryNode!.getNodeName()!.localeCompare(CategoryData.getInstance()!.NAME) == 0)
+                                 && categoryNode!.getNodeName()!.compareTo(CategoryData.getInstance()!.NAME) == 0)
                         
                                     {
                                     

@@ -107,8 +107,7 @@ export class DownloadableInventoryItemView extends HttpStoreComponentView implem
     private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -120,9 +119,7 @@ this.getFormData();
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-var empty = empty
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -212,7 +209,6 @@ this.addDomNodeInterface(new BasicItemView(this.itemInterface, vector));
                 //@Throws(Exception.constructor)
             
     processFile(fileItem: FileItem){
-    //var fileItem = fileItem
 
     var fileName: string = fileItem!.getName()!;
 ;
@@ -257,7 +253,6 @@ FileUtil.getInstance()!.write(new ByteArrayInputStream(byteArray), file);
                 //@Throws(Exception.constructor)
             
     unzip(fileItem: FileItem){
-    //var fileItem = fileItem
 
     var fileName: string = fileItem!.getName()!;
 ;
@@ -326,7 +321,6 @@ stringBuffer!.append(filePathData!.SEPARATOR);
 
 
     setRequestHashMap(requestHashMap: HashMap<any, any>){
-var requestHashMap = requestHashMap
 this.requestHashMap= requestHashMap;
     
 }

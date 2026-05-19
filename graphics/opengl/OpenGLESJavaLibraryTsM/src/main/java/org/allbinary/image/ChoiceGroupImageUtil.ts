@@ -118,7 +118,6 @@ choiceGroupFactory!.init(imageArray);
 
 
     public update(gl: GL){
-var gl = gl
 
     var features: Features = Features.getInstance()!;
 ;
@@ -165,7 +164,6 @@ choiceGroupFactory!.init(imageArray);
 
 
     public update(graphics: Graphics){
-var graphics = graphics
 
     var features: Features = Features.getInstance()!;
 ;

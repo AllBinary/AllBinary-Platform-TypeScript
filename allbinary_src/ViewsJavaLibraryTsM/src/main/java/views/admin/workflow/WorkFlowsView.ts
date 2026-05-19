@@ -73,8 +73,7 @@ export class WorkFlowsView extends HttpStoreComponentView implements DomNodeInte
     private workFlowsVector: Vector
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -126,7 +125,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

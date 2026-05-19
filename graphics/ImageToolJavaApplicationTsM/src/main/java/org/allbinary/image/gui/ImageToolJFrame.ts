@@ -227,7 +227,6 @@ this.okJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okJButtonActionPerformed(evt);
     
 }
@@ -259,7 +258,6 @@ this.fileJMenu!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 fileJMenuActionPerformed(evt);
     
 }
@@ -273,7 +271,6 @@ this.openImageJMenuItem!.addActionListener(new class extends java.awt.event.Acti
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 openImageJMenuItemActionPerformed(evt);
     
 }
@@ -291,7 +288,6 @@ this.processingJMenu!.addActionListener(new class extends java.awt.event.ActionL
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 processingJMenuActionPerformed(evt);
     
 }
@@ -305,7 +301,6 @@ this.analyzeJMenuItem!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 analyzeJMenuItemActionPerformed(evt);
     
 }
@@ -321,7 +316,6 @@ this.generateMirrorSpriteMenuItem!.addActionListener(new class extends java.awt.
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateMirrorSpriteMenuItemActionPerformed(evt);
     
 }
@@ -337,7 +331,6 @@ this.generateRotationSpriteJMenuItem!.addActionListener(new class extends java.a
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateRotationSpriteJMenuItemActionPerformed(evt);
     
 }
@@ -353,7 +346,6 @@ this.generateSpriteSplitterMenuItem!.addActionListener(new class extends java.aw
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateSpriteSplitterMenuItemActionPerformed(evt);
     
 }
@@ -369,7 +361,6 @@ this.generateRotationMenuItem!.addActionListener(new class extends java.awt.even
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateRotationMenuItemActionPerformed(evt);
     
 }
@@ -385,7 +376,6 @@ this.createStripImageJMenuItem!.addActionListener(new class extends java.awt.eve
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 createStripImageJMenuItemActionPerformed(evt);
     
 }
@@ -401,7 +391,6 @@ this.mirrorJMenuItem!.addActionListener(new class extends java.awt.event.ActionL
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 mirrorJMenuItemActionPerformed(evt);
     
 }
@@ -417,7 +406,6 @@ this.scaleImagesJMenuItem!.addActionListener(new class extends java.awt.event.Ac
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 scaleImagesJMenuItemActionPerformed(evt);
     
 }
@@ -433,7 +421,6 @@ this.canvasImagesJMenuItem!.addActionListener(new class extends java.awt.event.A
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 canvasImagesJMenuItemActionPerformed(evt);
     
 }
@@ -449,7 +436,6 @@ this.createIconImagesJMenuItem!.addActionListener(new class extends java.awt.eve
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 createIconsJMenuItemActionPerformed(evt);
     
 }
@@ -469,7 +455,6 @@ pack();
 
 
     createStripImageJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -496,7 +481,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "createStripImageJMenuIte
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "okJButtonActionPerformed");
@@ -529,12 +513,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okJButtonActionPerformed
 
 
     processingJMenuActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     openImageJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "openImageJMenuItemActionPerformed");
@@ -553,7 +535,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "openImageJMenuItemAction
 
 
     public onFiles(files: File[]){
-var files = files
 
         try {
             this.logUtil!.putF("Reading " +files.length +" files.", this, "onFiles");
@@ -562,8 +543,6 @@ Arrays.sort(files, new class extends Comparator<File>
                                 {
                                 
     public compare(file1: File, file2: File): number{
-    //var file1 = file1
-    //var file2 = file2
 
     var fileNameIndexValue1: number = extractIndexNumberIfAnyFromFileName(file1.getName())!;
 ;
@@ -581,7 +560,6 @@ Arrays.sort(files, new class extends Comparator<File>
 }
 
     extractIndexNumberIfAnyFromFileName(name: string): number{
-    //var name = name
 
     var i: number = 0;
 ;
@@ -678,12 +656,10 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onFiles", e);
 
 
     fileJMenuActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     analyzeJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "analyzeJMenuItemActionPerformed");
@@ -702,7 +678,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "analyzeJMenuItemActionPe
 
 
     generateRotationSpriteJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
@@ -731,7 +706,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationSpriteJM
 
 
     generateSpriteSplitterMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
@@ -760,7 +734,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationMenuItem
 
 
     generateRotationMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "generateRotationSpriteJMenuItemActionPerformed");
@@ -789,7 +762,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateRotationMenuItem
 
 
     scaleImagesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "scaleImagesJMenuItemActionPerformed");
@@ -818,7 +790,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActi
 
 
     createIconsJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "createIconsJMenuItemActionPerformed");
@@ -847,7 +818,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActi
 
 
     canvasImagesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "canvasImagesJMenuItemActionPerformed");
@@ -876,7 +846,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "scaleImagesJMenuItemActi
 
 
     generateMirrorSpriteMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "generateMirrorSpriteJMenuItemActionPerformed");
@@ -905,7 +874,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "generateMirrorSpriteJMen
 
 
     mirrorJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "generateMirrorJMenuItemActionPerformed");
@@ -976,7 +944,6 @@ colorRangeInterface!.setMaxBlue(new Integer(this.getMaxBlueJTextField()!.getText
 
 
     public setMaxBlueJTextField(maxBlueJTextField: javax.swing.JTextField){
-var maxBlueJTextField = maxBlueJTextField
 this.maxBlueJTextField= this.maxBlueJTextField;
     
 }
@@ -993,7 +960,6 @@ this.maxBlueJTextField= this.maxBlueJTextField;
 
 
     public setMaxGreenJTextField(maxGreenJTextField: javax.swing.JTextField){
-var maxGreenJTextField = maxGreenJTextField
 this.maxGreenJTextField= this.maxGreenJTextField;
     
 }
@@ -1010,7 +976,6 @@ this.maxGreenJTextField= this.maxGreenJTextField;
 
 
     public setMaxRedJTextField(maxRedJTextField: javax.swing.JTextField){
-var maxRedJTextField = maxRedJTextField
 this.maxRedJTextField= this.maxRedJTextField;
     
 }
@@ -1027,7 +992,6 @@ this.maxRedJTextField= this.maxRedJTextField;
 
 
     public setMinBlueJTextField(minBlueJTextField: javax.swing.JTextField){
-var minBlueJTextField = minBlueJTextField
 this.minBlueJTextField= this.minBlueJTextField;
     
 }
@@ -1044,7 +1008,6 @@ this.minBlueJTextField= this.minBlueJTextField;
 
 
     public setMinGreenJTextField(minGreenJTextField: javax.swing.JTextField){
-var minGreenJTextField = minGreenJTextField
 this.minGreenJTextField= this.minGreenJTextField;
     
 }
@@ -1061,7 +1024,6 @@ this.minGreenJTextField= this.minGreenJTextField;
 
 
     public setMinRedJTextField(minRedJTextField: javax.swing.JTextField){
-var minRedJTextField = minRedJTextField
 this.minRedJTextField= this.minRedJTextField;
     
 }

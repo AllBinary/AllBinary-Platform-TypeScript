@@ -96,10 +96,6 @@ this.list= new BasicArrayListD();
                 //@Throws(Exception.constructor)
             
     public getNexInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
-    //var hashtable = hashtable
-    //var x = x
-    //var y = y
-var z = z
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -125,7 +121,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public add(layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface){
-    //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 this.list.add(layerInterfaceFactoryInterface);
     
 }

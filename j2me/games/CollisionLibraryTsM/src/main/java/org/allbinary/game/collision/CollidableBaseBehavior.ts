@@ -75,8 +75,7 @@ export class CollidableBaseBehavior
 public constructor (collidable: boolean){
 
             super();
-            //var collidable = collidable
-this.collidable= collidable;
+        this.collidable= collidable;
     
 }
 
@@ -96,14 +95,12 @@ this.collidable= collidable;
 
 
     public setCollidable(collidable: boolean){
-var collidable = collidable
 this.collidable= collidable;
     
 }
 
 
     public isCollidable(ownerLayer: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
 
 
 
@@ -116,8 +113,6 @@ this.collidable= collidable;
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, allbinaryCollidableLayer: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
 
@@ -130,8 +125,6 @@ this.collidable= collidable;
     private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
-    //var collisionLayer = collisionLayer
 
 
 
@@ -142,8 +135,6 @@ this.collidable= collidable;
 
 
     public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 
@@ -156,8 +147,6 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
                 //@Throws(Exception.constructor)
             
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 
@@ -167,12 +156,10 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 }
 
 
     public getCollisionTypeWith(layerInterface: AllBinaryLayer): CollisionType{
-var layerInterface = layerInterface
 
 
 

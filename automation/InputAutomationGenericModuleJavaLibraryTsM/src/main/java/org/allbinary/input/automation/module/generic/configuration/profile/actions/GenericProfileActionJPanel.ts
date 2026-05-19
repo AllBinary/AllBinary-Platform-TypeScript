@@ -120,7 +120,6 @@ this.logUtil!.putF("Updated UI", this, "updateUI");
 
 
     public setGenericProfileAction(genericProfileAction: GenericProfileAction){
-var genericProfileAction = genericProfileAction
 this.genericProfileAction= genericProfileAction;
     
 }
@@ -137,7 +136,6 @@ this.genericProfileAction= genericProfileAction;
 
 
     public setGenericProfileActionScriptJPanel(genericProfileActionScriptJPanel: GenericProfileActionScriptJPanel){
-var genericProfileActionScriptJPanel = genericProfileActionScriptJPanel
 this.genericProfileActionScriptJPanel= genericProfileActionScriptJPanel;
     
 }
@@ -184,7 +182,6 @@ this.newColorAtJButton!.addActionListener(new class extends java.awt.event.Actio
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 newColorAtJButtonActionPerformed(evt);
     
 }
@@ -198,7 +195,6 @@ this.newTimeIntervalJButton!.addActionListener(new class extends java.awt.event.
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 newTimeIntervalJButtonActionPerformed(evt);
     
 }
@@ -212,7 +208,6 @@ this.newAlwaysJButton!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 newAlwaysJButtonActionPerformed(evt);
     
 }
@@ -234,7 +229,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     newTimeIntervalJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.logUtil!.putF("New Time Interval Action Condition", this, "newTimeIntervalJButtonActionPerformed");
     
 this.getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new TimeIntervalActionScriptCondition() as ProfileActionScriptConditionInterface);
@@ -245,7 +239,6 @@ this.updateProfileActionUI();
 
 
     newAlwaysJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.logUtil!.putF("New EveryTime Action Condition", this, "newEveryTimeJButtonActionPerformed");
     
 this.getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new AlwaysActionScriptCondition() as ProfileActionScriptConditionInterface);
@@ -256,7 +249,6 @@ this.updateProfileActionUI();
 
 
     newColorAtJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.logUtil!.putF("New Color At Action Condition", this, "newColorAtJButtonActionPerformed");
     
 this.getGenericProfileAction()!.getGenericProfileActionScript()!.addCondition(new ColorAtActionScriptCondition() as ProfileActionScriptConditionInterface);

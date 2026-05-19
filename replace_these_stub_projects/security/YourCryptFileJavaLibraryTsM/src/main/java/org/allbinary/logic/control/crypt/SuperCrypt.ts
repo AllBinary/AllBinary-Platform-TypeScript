@@ -36,12 +36,10 @@ export class SuperCrypt
 public constructor (key: number){
 
             super();
-        var key = key
-}
+        }
 
 
     public encrypt(value: string): string{
-var value = value
 
 
 
@@ -52,7 +50,6 @@ var value = value
 
 
     public decrypt(value: string): string{
-var value = value
 
 
 

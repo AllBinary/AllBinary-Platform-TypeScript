@@ -59,7 +59,6 @@ public constructor (){
 
 
     public get(index: number): HtmlTag{
-var index = index
 
 
 
@@ -70,7 +69,6 @@ var index = index
 
 
     public add(htmlTag: HtmlTag){
-var htmlTag = htmlTag
 this.htmlTagVector!.add(htmlTag);
     
 }

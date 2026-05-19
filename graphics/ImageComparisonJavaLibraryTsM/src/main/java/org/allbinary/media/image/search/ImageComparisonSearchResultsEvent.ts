@@ -50,9 +50,7 @@ export class ImageComparisonSearchResultsEvent extends AllBinaryEventObject {
     private imageComparisonSearch: ImageComparisonSearch
 public constructor (anyType: any = {}, imageComparisonSearch: ImageComparisonSearch){
             super(anyType);
-                    var anyType = anyType
-var imageComparisonSearch = imageComparisonSearch
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,7 +70,6 @@ this.setImageComparisonSearch(imageComparisonSearch);
 
 
     setImageComparisonSearch(imageComparisonSearch: ImageComparisonSearch){
-var imageComparisonSearch = imageComparisonSearch
 this.imageComparisonSearch= imageComparisonSearch;
     
 }

@@ -75,7 +75,6 @@ this.setTable(this.tableName);
                 //@Throws(Exception.constructor)
             
     public getStoreFrontInterface(name: string): BasicStoreFrontInterface{
-var name = name
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;

@@ -62,9 +62,6 @@ export class LocationPaintable
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 }
 
 

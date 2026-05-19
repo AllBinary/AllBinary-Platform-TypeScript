@@ -163,7 +163,6 @@ this.PAYMENTGATEWAYFILEPATHSTRING= stringBuffer!.toString();
 
 
     public add(paymentType: PaymentType){
-var paymentType = paymentType
 this.paymentTypeVector!.add(paymentType);
     
 }
@@ -172,7 +171,6 @@ this.paymentTypeVector!.add(paymentType);
                 //@Throws(Exception.constructor)
             
     public get(paymentTypeString: string): PaymentType{
-var paymentTypeString = paymentTypeString
 
     var size: number = this.paymentTypeVector!.length!;
 ;
@@ -190,7 +188,7 @@ i < size; i++)
 ;
     
 
-                        if(paymentType!.getBasicPaymentType()!.getName()!.localeCompare(paymentTypeString) == 0)
+                        if(paymentType!.getBasicPaymentType()!.getName()!.compareTo(paymentTypeString) == 0)
                         
                                     {
                                     
@@ -215,7 +213,6 @@ i < size; i++)
                 //@Throws(Exception.constructor)
             
     public initDefault(storeName: string){
-var storeName = storeName
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
@@ -309,7 +306,6 @@ index < nodeList!.getLength(); index++)
                 //@Throws(Exception.constructor)
             
     public getDefault(storeName: string): PaymentType{
-var storeName = storeName
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PAYMENT))
                         
@@ -343,7 +339,6 @@ this.initDefault(storeName);
 
 
     public isContain(paymentType: PaymentType): boolean{
-var paymentType = paymentType
 
 
 
@@ -354,7 +349,6 @@ var paymentType = paymentType
 
 
     public difference(a_PaymentTypeVector: Vector): Vector{
-var a_PaymentTypeVector = a_PaymentTypeVector
 
     var diff: Vector = new Vector();
 ;

@@ -74,7 +74,6 @@ public constructor (){
 
 
     public visit(anyType: any = {}): any{
-    //var anyType = anyType
 
 
 
@@ -85,7 +84,6 @@ public constructor (){
 
 
     public visit(osgiServiceInterface: OSGIServiceInterface): Boolean{
-    //var osgiServiceInterface = osgiServiceInterface
 
         try {
             

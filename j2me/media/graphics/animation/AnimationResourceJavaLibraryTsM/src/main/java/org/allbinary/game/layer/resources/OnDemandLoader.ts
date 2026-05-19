@@ -78,10 +78,7 @@ export class OnDemandLoader
 public constructor (onDemandResourcesFactory: OnDemandResourcesFactory, gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory: GameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory, resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory){
 
             super();
-        var onDemandResourcesFactory = onDemandResourcesFactory
-var gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory = gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory
-var resourceAnimationInterfaceFactoryInterfaceFactory = resourceAnimationInterfaceFactoryInterfaceFactory
-this.onDemandResourcesFactory= onDemandResourcesFactory;
+        this.onDemandResourcesFactory= onDemandResourcesFactory;
     
 this.gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory= gameLayerPlacementInterfaceBasicArrayListFactoryInterfaceFactory;
     
@@ -93,9 +90,6 @@ this.resourceAnimationInterfaceFactoryInterfaceFactory= resourceAnimationInterfa
                 //@Throws(Exception.constructor)
             
     public init(imageCache: ImageCache, level: number, loadingString: string){
-    //var imageCache = imageCache
-    //var level = level
-    //var loadingString = loadingString
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
 ;
@@ -141,8 +135,6 @@ this.initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface, imageCache
                 //@Throws(Exception.constructor)
             
     initAll(imageCache: ImageCache, loadingString: string){
-    //var imageCache = imageCache
-    //var loadingString = loadingString
 
     var index: number = 0;
 ;
@@ -182,10 +174,6 @@ onDemandResources= this.onDemandResourcesFactory!.remove(onDemandIndex);
                 //@Throws(Exception.constructor)
             
     initLevel(layerPlacementInterfaceBasicArrayListFactoryInterface: LayerPlacementInterfaceBasicArrayListFactoryInterface, imageCache: ImageCache, level: number, loadingString: string){
-    //var layerPlacementInterfaceBasicArrayListFactoryInterface = layerPlacementInterfaceBasicArrayListFactoryInterface
-    //var imageCache = imageCache
-    //var level = level
-    //var loadingString = loadingString
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

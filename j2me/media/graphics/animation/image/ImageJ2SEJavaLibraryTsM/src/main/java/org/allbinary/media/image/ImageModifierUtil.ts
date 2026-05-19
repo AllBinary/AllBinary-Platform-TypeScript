@@ -81,17 +81,12 @@ export class ImageModifierUtil
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 }
 
 
     private readonly colorArray: number[] = new Array(1);
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
 ;
@@ -186,10 +181,6 @@ bx= colorModel!.getBlue(dataElements);
 
 
     public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 
     var newBufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(image)!;
 ;
@@ -287,10 +278,6 @@ newBufferedImage!.setRGB(index, index2, (ax<<24) | (rx<<16) | (gx<<8) | (bx));
 
 
     public setAlpha(unusedOriginalImage: Image, image: Image, imageIndex: number, alphaInt: number){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var alphaInt = alphaInt
 
     var alpha: number = alphaInt;
 ;
@@ -341,7 +328,6 @@ raster.setPixel(index, index2, this.colorArray);
 
 
     public getImageArray(originalImageArray: Image[]): Image[]{
-    //var originalImageArray = originalImageArray
 
         try {
             
@@ -405,9 +391,6 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "getImageArray", e);
 
 
     public handleImage(imageArray: Image[], index: number, image: Image){
-    //var imageArray = imageArray
-    //var index = index
-    //var image = image
 }
 
 

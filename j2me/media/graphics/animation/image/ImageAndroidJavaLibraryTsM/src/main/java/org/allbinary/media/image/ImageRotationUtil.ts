@@ -85,8 +85,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
-var originalImage = originalImage
-var rotationInDegrees = rotationInDegrees
 
     var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;

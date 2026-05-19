@@ -79,8 +79,7 @@ public constructor (){
 public constructor (document: Document){
 
             super();
-        var document = document
-
+        
     var nodeList: NodeList = document.getElementsByTagName(StylesData.getInstance()!.NAME)!;
 ;
     
@@ -89,8 +88,7 @@ public constructor (document: Document){
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.getFormData(hashMap);
+        this.getFormData(hashMap);
     
 }
 
@@ -98,7 +96,6 @@ this.getFormData(hashMap);
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 }
 
 
@@ -205,7 +202,6 @@ var hashMap = hashMap
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -218,7 +214,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, BodyData.getInstance()!.NAME, StringUtil.getInstance()!.EMPTY_STRING)!;
 ;

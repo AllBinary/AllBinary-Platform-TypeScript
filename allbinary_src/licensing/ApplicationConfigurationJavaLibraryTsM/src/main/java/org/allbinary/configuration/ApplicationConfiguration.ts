@@ -330,7 +330,6 @@ dataOutputStream!.flush();
                 //@Throws(Exception.constructor)
             
     public update(gameFeature: Feature){
-var gameFeature = gameFeature
 
                         if(gameFeature == MainFeatureFactory.getInstance()!.FULL_SCREEN)
                         
@@ -379,7 +378,6 @@ this.write();
 
 
     public setFullscreen(fullscreen: boolean){
-var fullscreen = fullscreen
 this.fullscreen= fullscreen;
     
 }
@@ -396,7 +394,6 @@ this.fullscreen= fullscreen;
 
 
     public setShowTitleBar(showTitleBar: boolean){
-var showTitleBar = showTitleBar
 this.showTitleBar= showTitleBar;
     
 }
@@ -413,7 +410,6 @@ this.showTitleBar= showTitleBar;
 
 
     public setProgressBarView(progressBarView: boolean){
-var progressBarView = progressBarView
 this.progressBarView= progressBarView;
     
 }

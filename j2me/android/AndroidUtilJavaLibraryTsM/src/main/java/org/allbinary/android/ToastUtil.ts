@@ -63,10 +63,6 @@ export class ToastUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public makeToast(view: View, context: Context, message: string, time: number){
-    //var view = view
-    //var context = context
-var message = message
-    //var time = time
 
 //inner=true member= isStatic=
 class MakeToast
@@ -78,8 +74,7 @@ class MakeToast
 public constructor (string: string){
 
             super();
-        var string = string
-this.string= string;
+        this.string= string;
     
 }
 

@@ -79,8 +79,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
-var fromGeographicMapCellPosition = fromGeographicMapCellPosition
-var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
 ;
@@ -190,8 +188,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                 //@Throws(Exception.constructor)
             
     public getEightDirectionFromCellPositionToAdjacentCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
-var fromGeographicMapCellPosition = fromGeographicMapCellPosition
-var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
 ;
@@ -374,8 +370,6 @@ var toGeographicMapCellPosition = toGeographicMapCellPosition
                 //@Throws(Exception.constructor)
             
     public getDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
-var fromGeographicMapCellPosition = fromGeographicMapCellPosition
-var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
 ;
@@ -473,8 +467,6 @@ stringMaker!.delete(0, stringMaker!.length());
                 //@Throws(Exception.constructor)
             
     public getEightDirectionFromCellPositionToCellPosition(fromGeographicMapCellPosition: GeographicMapCellPosition, toGeographicMapCellPosition: GeographicMapCellPosition): Direction{
-var fromGeographicMapCellPosition = fromGeographicMapCellPosition
-var toGeographicMapCellPosition = toGeographicMapCellPosition
 
     var fromColumn: number = fromGeographicMapCellPosition!.getColumn()!;
 ;

@@ -66,9 +66,7 @@ export class HealthBarAnimation extends Animation {
 public constructor (layerInterface: AllBinaryLayer, location: number){
 
             super();
-            //var layerInterface = layerInterface
-    //var location = location
-this.allbinaryLayer= layerInterface;
+        this.allbinaryLayer= layerInterface;
     
 this.location= location;
     
@@ -116,7 +114,6 @@ this.location= location;
 
 
     public onHealthChange(newX2: number){
-    //var newX2 = newX2
 this.x2= newX2;
     
 

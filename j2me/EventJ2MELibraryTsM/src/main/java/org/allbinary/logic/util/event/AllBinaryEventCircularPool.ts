@@ -51,8 +51,7 @@ export class AllBinaryEventCircularPool extends BaseCircularPool {
 public constructor (max: number){
 
             super();
-        var max = max
-this.OBJECT_ARRAY= new Array(max);
+        this.OBJECT_ARRAY= new Array(max);
     
 this.circularIndexUtil= CircularIndexUtil.createInstance(max);
     
@@ -60,7 +59,6 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(max);
 
 
     public init(allBinaryEventObjectFactoryInterface: AllBinaryEventObjectFactoryInterface){
-var allBinaryEventObjectFactoryInterface = allBinaryEventObjectFactoryInterface
 this.circularIndexUtil!.setIndex(0);
     
 

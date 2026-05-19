@@ -104,15 +104,12 @@ this.inputIntegerArray[index]= this.NO_INPUT;
 
 
     public add(id: number, input: Input){
-var id = id
-var input = input
 this.inputIntegerArray[id]= input;
     
 }
 
 
     public getInstanceById(id: number): Input{
-var id = id
 
                         if(id < 0)
                         

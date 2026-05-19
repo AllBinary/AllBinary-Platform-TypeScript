@@ -59,9 +59,7 @@ export class InitHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-}
+        }
 
 
     public drop(): string{

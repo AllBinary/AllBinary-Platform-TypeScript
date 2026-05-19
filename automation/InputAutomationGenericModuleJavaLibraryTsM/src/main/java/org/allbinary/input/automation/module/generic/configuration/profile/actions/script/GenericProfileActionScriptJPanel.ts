@@ -113,7 +113,6 @@ this.logUtil!.putF("Updated UI", this, "updateJTree");
 
 
     public setGenericProfileActionScript(genericProfileActionScript: GenericProfileActionScript){
-var genericProfileActionScript = genericProfileActionScript
 this.genericProfileActionScript= genericProfileActionScript;
     
 }
@@ -130,7 +129,6 @@ this.genericProfileActionScript= genericProfileActionScript;
 
 
     public setActionScriptJTree(actionScriptJTree: javax.swing.JTree){
-var actionScriptJTree = actionScriptJTree
 this.actionScriptJTree= actionScriptJTree;
     
 }
@@ -149,13 +147,11 @@ this.actionScriptJTree!.addMouseListener(new class extends java.awt.event.MouseA
                                 {
                                 
     public mouseClicked(evt: java.awt.event.MouseEvent){
-var evt = evt
 actionScriptJTreeMouseClicked(evt);
     
 }
 
     public mouseReleased(evt: java.awt.event.MouseEvent){
-var evt = evt
 actionScriptJTreeMouseReleased(evt);
     
 }
@@ -171,7 +167,6 @@ add(this.jScrollPane1);
 
 
     actionScriptJTreeMouseReleased(evt: java.awt.event.MouseEvent){
-var evt = evt
 
     var button: number = evt.getButton()!;
 ;
@@ -221,7 +216,6 @@ jPopupMenu!.show(evt.getSource() as JComponent, evt.getX(), evt.getY());
 
 
     actionScriptJTreeMouseClicked(evt: java.awt.event.MouseEvent){
-var evt = evt
 }
 
 

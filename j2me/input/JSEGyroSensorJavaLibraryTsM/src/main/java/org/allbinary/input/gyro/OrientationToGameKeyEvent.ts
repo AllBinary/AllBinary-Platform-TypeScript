@@ -84,7 +84,6 @@ public constructor (){
 
 
     public setAllBinaryGyroSensor(allBinaryGyroSensor: AllBinaryOrientationSensor){
-var allBinaryGyroSensor = allBinaryGyroSensor
 this.allBinaryGyroSensor= allBinaryGyroSensor;
     
 }
@@ -109,10 +108,6 @@ this.allBinaryGyroSensor= allBinaryGyroSensor;
                 //@Throws(Exception.constructor)
             
     updateGameKeyEvents(orientation: Orientation, yaw: number, pitch: number, roll: number){
-var orientation = orientation
-var yaw = yaw
-var pitch = pitch
-var roll = roll
 }
 
 

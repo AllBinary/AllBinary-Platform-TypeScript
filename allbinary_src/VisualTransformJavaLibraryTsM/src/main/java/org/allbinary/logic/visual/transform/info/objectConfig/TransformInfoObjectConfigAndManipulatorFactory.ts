@@ -89,9 +89,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-    //var objectConfigFileAbPath = objectConfigFileAbPath
 
         try {
             
@@ -131,8 +128,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
-    //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
 
         try {
             
@@ -205,9 +200,6 @@ var transformInfoInterface = transformInfoInterface
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-    //var document = document
 
         try {
             

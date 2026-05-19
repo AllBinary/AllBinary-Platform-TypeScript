@@ -78,8 +78,7 @@ export class AddTaxValidationView extends ShippingAddressView implements Validat
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -169,7 +168,7 @@ index < size; index++)
 ;
     
 
-                        if(aStreetAddress!.getName()!.localeCompare(ShippingAddressData.TAX) == 0)
+                        if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
                                     
@@ -279,7 +278,7 @@ index < size; index++)
 ;
     
 
-                        if(aStreetAddress!.getName()!.localeCompare(ShippingAddressData.TAX) == 0)
+                        if(aStreetAddress!.getName()!.compareTo(ShippingAddressData.TAX) == 0)
                         
                                     {
                                     stringBuffer!.append("Not a valid tax location<br/>");
@@ -330,7 +329,6 @@ index < size; index++)
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

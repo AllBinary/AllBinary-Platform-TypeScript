@@ -71,7 +71,6 @@ this.setTagRequestHelperFactory(new UserHelperFactory());
 
 
     public setRole(value: string){
-var value = value
 this.role= value;
     
 this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role);
@@ -80,7 +79,6 @@ this.getPropertiesHashMap()!.put(UserRoleData.NAME, this.role);
 
 
     public setEnable(value: string){
-var value = value
 this.enable= value;
     
 this.getPropertiesHashMap()!.put(EntryData.getInstance()!.ENABLE, this.enable);

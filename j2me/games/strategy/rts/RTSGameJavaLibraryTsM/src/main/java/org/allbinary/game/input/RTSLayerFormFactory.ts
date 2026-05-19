@@ -54,7 +54,6 @@ export class RTSLayerFormFactory
         
 
     public getInstance(rtsLayer: RTSLayer): ScrollSelectionForm{
-var rtsLayer = rtsLayer
 
 
 

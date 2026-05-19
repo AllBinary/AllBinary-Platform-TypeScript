@@ -48,9 +48,7 @@ export class NamedAngle extends Angle {
     public readonly name: string
 public constructor (angle: number, name: string){
             super(angle);
-                        //var angle = angle
-    //var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

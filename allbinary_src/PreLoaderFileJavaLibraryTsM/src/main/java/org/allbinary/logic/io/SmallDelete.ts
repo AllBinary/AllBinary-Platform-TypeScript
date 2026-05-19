@@ -68,8 +68,7 @@ export class SmallDelete
 public constructor (fileName: string){
 
             super();
-        var fileName = fileName
-this.fileName= fileName;
+        this.fileName= fileName;
     
 this.string= FileUtil.getInstance()!.readAsString(fileName);
     
@@ -77,8 +76,6 @@ this.string= FileUtil.getInstance()!.readAsString(fileName);
 
 
     public deleteAtStart(start: string, end: string): boolean{
-var start = start
-var end = end
 
         try {
             
@@ -148,9 +145,6 @@ idOutData!.writeBytes(text);
 
 
     public deleteBetween(start: string, end: string, newText: string): boolean{
-var start = start
-var end = end
-var newText = newText
 
         try {
             

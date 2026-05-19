@@ -65,8 +65,7 @@ export class FallingPickupLayer extends PickupLayer implements TickableInterface
     private static readonly NAME: string = "FallingPickupLayer";
 public constructor (remoteInfo: RemoteInfo){
             super(FallingPickupLayer.NAME, remoteInfo, 0, CountedPickedUpLayerInterfaceFactory.NULL_COUNTED_PICKUP_LAYER_FACTORY, NullAnimationFactory.getFactoryInstance()!.getInstance(0), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition.getInstanceD());
-                        //var remoteInfo = remoteInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,7 +73,6 @@ public constructor (remoteInfo: RemoteInfo){
 
 
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 this.setPosition(this.x, this.y +1, this.z);
     
 }

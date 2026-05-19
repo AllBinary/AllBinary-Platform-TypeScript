@@ -70,10 +70,7 @@ export class ImageThreadPool extends ThreadPool {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (poolName: string, numThreads: number, priority: number){
             super(poolName, numThreads, priority);
-                        //var poolName = poolName
-    //var numThreads = numThreads
-    //var priority = priority
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -82,19 +79,16 @@ public constructor (poolName: string, numThreads: number, priority: number){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public runTask(task: Runnable){
-var task = task
 super.runTask(task);
     
 }
 
 
     startTask(task: Runnable){
-var task = task
 }
 
 
     completedTask(task: Runnable){
-var task = task
 }
 
 

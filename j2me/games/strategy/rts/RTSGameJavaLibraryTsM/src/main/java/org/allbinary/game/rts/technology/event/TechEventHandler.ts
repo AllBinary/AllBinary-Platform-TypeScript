@@ -72,8 +72,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
     var techEventListenerInterface: TechEventListenerInterface = (eventListenerInterface as TechEventListenerInterface);
 ;

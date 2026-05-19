@@ -164,7 +164,6 @@ this.monitorInterfaceVector= new Vector();
 
 
     getComponentType(component: string): string{
-var component = component
 
                         if(component.indexOf(this.componentFactory!.ETHERNET.toString()) >= 0)
                         
@@ -263,7 +262,6 @@ var component = component
 
 
     public getMultimedia(index: number): MediaInterface{
-var index = index
 
 
 
@@ -274,7 +272,6 @@ var index = index
 
 
     public getBridge(index: number): BridgeInterface{
-var index = index
 
 
 
@@ -285,7 +282,6 @@ var index = index
 
 
     public getCpu(index: number): CpuInterface{
-var index = index
 
 
 
@@ -296,7 +292,6 @@ var index = index
 
 
     public getEthernet(index: number): EthernetInterface{
-var index = index
 
 
 
@@ -307,7 +302,6 @@ var index = index
 
 
     public getFireWire(index: number): FireWireInterface{
-var index = index
 
 
 
@@ -318,7 +312,6 @@ var index = index
 
 
     public getHardDriveController(index: number): HardDriveControllerInterface{
-var index = index
 
 
 
@@ -329,7 +322,6 @@ var index = index
 
 
     public getHardDrive(index: number): HardDriveInterface{
-var index = index
 
 
 
@@ -340,7 +332,6 @@ var index = index
 
 
     public getMachineAccessControlAddress(index: number): MachineAccessControlAddressInterface{
-var index = index
 
 
 
@@ -351,7 +342,6 @@ var index = index
 
 
     public getMonitor(index: number): MonitorInterface{
-var index = index
 
 
 
@@ -362,7 +352,6 @@ var index = index
 
 
     public getUsb(index: number): UsbInterface{
-var index = index
 
 
 
@@ -373,7 +362,6 @@ var index = index
 
 
     public getVideo(index: number): VideoInterface{
-var index = index
 
 
 
@@ -384,7 +372,6 @@ var index = index
 
 
     public getComponent(index: number): HardwareComponentInterface{
-var index = index
 
 
 
@@ -430,8 +417,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public localeCompare(hardwareInterface: HardwareInterface): boolean{
-var hardwareInterface = hardwareInterface
+    public compareTo(hardwareInterface: HardwareInterface): boolean{
 
 
 
@@ -442,7 +428,6 @@ var hardwareInterface = hardwareInterface
 
 
     public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
-var hardwareInterface = hardwareInterface
 
 
 

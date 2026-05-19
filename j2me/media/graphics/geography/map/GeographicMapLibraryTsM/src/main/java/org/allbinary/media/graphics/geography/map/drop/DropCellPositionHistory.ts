@@ -75,8 +75,6 @@ export class DropCellPositionHistory
     private layerList: BasicArrayList = new BasicArrayListD();
 
     public add(cellPosition: CellPosition, layerInterface: AllBinaryLayer){
-    //var cellPosition = cellPosition
-    //var layerInterface = layerInterface
 this.positionList!.add(cellPosition);
     
 this.layerList!.add(layerInterface);
@@ -85,8 +83,6 @@ this.layerList!.add(layerInterface);
 
 
     public addAll(list: BasicArrayList, layerInterface: AllBinaryLayer){
-    //var list = list
-    //var layerInterface = layerInterface
 
 
 
@@ -103,7 +99,6 @@ this.add(list.get(index) as CellPosition, layerInterface);
 
 
     public remove(cellPosition: CellPosition){
-    //var cellPosition = cellPosition
 
     var index: number = this.positionList!.indexOf(cellPosition)!;
 ;
@@ -123,7 +118,6 @@ this.layerList!.removeAt(index);
 
 
     public removeAll(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 
     var index: number = 0;
 ;
@@ -158,7 +152,6 @@ this.layerList!.clear();
 
 
     public isCellPositionWithDrop(cellPosition: CellPosition): boolean{
-    //var cellPosition = cellPosition
 
 
 
@@ -169,7 +162,6 @@ this.layerList!.clear();
 
 
     public anyCellPositionWithDrop(list: BasicArrayList): boolean{
-    //var list = list
 
 
 
@@ -203,7 +195,6 @@ index >= 0; index--)
 
 
     public getCellPositionWithDrop(list: BasicArrayList): CellPosition{
-    //var list = list
 
     var cellPosition: CellPosition
 ;
@@ -243,7 +234,6 @@ cellPosition= list.get(index) as CellPosition;
 
 
     public getLayerInterface(cellPosition: CellPosition): AllBinaryLayer{
-    //var cellPosition = cellPosition
 
     var index: number = this.positionList!.indexOf(cellPosition)!;
 ;

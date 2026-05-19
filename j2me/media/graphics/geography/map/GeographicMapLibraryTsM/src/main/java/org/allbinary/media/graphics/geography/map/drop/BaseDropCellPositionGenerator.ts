@@ -70,15 +70,12 @@ export class BaseDropCellPositionGenerator
                 //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
-    //var geographicMapInterface = geographicMapInterface
 }
 
 
                 //@Throws(Exception.constructor)
             
     public isDropAllowedAt(geographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -91,7 +88,6 @@ export class BaseDropCellPositionGenerator
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-    //var allBinaryLayerManager = allBinaryLayerManager
 }
 
 

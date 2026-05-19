@@ -100,8 +100,6 @@ private constructor (){
 
 
     public getImage(bufferedImageArray: BufferedImage[], imageUnifierProperties: ImageUnifierProperties): BufferedImage{
-var bufferedImageArray = bufferedImageArray
-var imageUnifierProperties = imageUnifierProperties
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(imageUnifierProperties!.getWidth(), imageUnifierProperties!.getHeight())!;
 ;

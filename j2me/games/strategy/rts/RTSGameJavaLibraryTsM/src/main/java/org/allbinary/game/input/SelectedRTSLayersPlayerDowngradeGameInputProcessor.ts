@@ -53,8 +53,7 @@ export class SelectedRTSLayersPlayerDowngradeGameInputProcessor extends Selected
         
 public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput){
             super(selectedRTSLayersPlayerGameInput);
-                    var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,8 +63,6 @@ public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGam
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 this.selectedRTSLayersPlayerGameInput!.downgrade();
     
 }

@@ -86,7 +86,6 @@ this.setTableName(this.tableName);
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(EntryData.getInstance()!.ID, value);
@@ -119,7 +118,6 @@ var value = value
 
 
     public get(storeName: string): Vector{
-var storeName = storeName
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -162,8 +160,6 @@ index < size; index++)
 
 
     public get(storeName: string, advertismentName: string): AdvertisementInterface{
-var storeName = storeName
-var advertismentName = advertismentName
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -224,7 +220,6 @@ stringBuffer!.append(DynamicObjectData.NAME)!.append(this.sqlTypeStrings!.MAX_CH
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.ID) as string, updatedValues);
     
 }

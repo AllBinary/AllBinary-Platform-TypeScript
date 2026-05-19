@@ -71,35 +71,28 @@ export class RootStoreCategoryPropertiesFactory
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface) as CategoryPropertiesInterface;
     
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, abPath: AbPath){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-var abPath = abPath
-this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, abPath) as CategoryPropertiesInterface;
     
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, node: Node){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-var node = node
-this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, node) as CategoryPropertiesInterface;
     
 }
 
 public constructor (transformInfoInterface: TransformInfoInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= new RootStoreCategoryProperties(transformInfoInterface, categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
 }
 

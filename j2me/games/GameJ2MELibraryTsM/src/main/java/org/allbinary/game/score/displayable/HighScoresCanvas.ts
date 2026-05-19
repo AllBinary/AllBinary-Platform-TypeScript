@@ -131,13 +131,7 @@ export class HighScoresCanvas extends GameCommandCanvas implements HighScoresRes
     private currentCommand: Command = this.highScoreCommandsFactory!.HIGH_SCORE_COMMANDS[0]!;
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, gameInfo: GameInfo, paintable: HighScoresPaintable, highScoresFactoryInterface: HighScoresFactoryInterface, highScoresCanvasInputProcessorFactoryInterface: HighScoresCanvasInputProcessorFactoryInterface){
             super(commandListener, HighScoresCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
-                        //var commandListener = commandListener
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
-    //var gameInfo = gameInfo
-    //var paintable = paintable
-    //var highScoresFactoryInterface = highScoresFactoryInterface
-    //var highScoresCanvasInputProcessorFactoryInterface = highScoresCanvasInputProcessorFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -232,7 +226,7 @@ stringMaker!.delete(0, stringMaker!.length());
     
 logUtil!.putF(stringMaker!.append("HighScoresCanvas - Now that the canvas has completed repaint go ahead and fetch the scores: ")!.appendlong(Date.now())!.toString(), this, commonStrings!.RUN);
     
-executeUpdate();
+HighScoresCanvas.prototype.executeUpdate();
     
 
                 //: 
@@ -251,7 +245,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.removeAllCommands();
     
 this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
@@ -280,7 +273,6 @@ this.highScoresCanvasInputProcessor!.close();
     hasPainted: boolean = false;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.colorFillPaintable!.paint(graphics);
     
 this.paintable.paint(graphics);
@@ -328,7 +320,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
 
 
     public setHighScoresArray(highScoresArray: HighScores[]){
-    //var highScoresArray = highScoresArray
 
         try {
             
@@ -369,7 +360,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
                 //@Throws(Exception.constructor)
             
     public updateCommand(command: Command){
-var command = command
 this.logUtil!.putF(new StringMaker().
                             append(this.commonStrings!.START)!.append(this.stringUtil!.toString(command))!.toString(), this, this.commonStrings!.UPDATE);
     
@@ -457,7 +447,6 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
     setPaintable(paintable: Paintable){
-var paintable = paintable
 this.paintable= paintable;
     
 this.repaintBehavior!.onChangeRepaint(this);

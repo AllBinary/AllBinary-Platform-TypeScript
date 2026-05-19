@@ -62,10 +62,7 @@ export class BasicGameDemoPaintable extends StatePaintable {
 public constructor (mainDemoStatePaintable: Paintable, ownershipPaintable: Paintable, helpPaintableInterface: Paintable){
 
             super();
-        var mainDemoStatePaintable = mainDemoStatePaintable
-var ownershipPaintable = ownershipPaintable
-var helpPaintableInterface = helpPaintableInterface
-this.mainDemoStatePaintable= mainDemoStatePaintable;
+        this.mainDemoStatePaintable= mainDemoStatePaintable;
     
 this.setCurrentStatePaintable(NullPaintable.getInstance());
     
@@ -77,7 +74,6 @@ this.helpPaintableInterface= helpPaintableInterface;
 
 
     public setState(state: number){
-var state = state
 
                         if(state == 0)
                         
@@ -106,7 +102,6 @@ var state = state
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.getCurrentStatePaintable()!.paint(graphics);
     
 }
@@ -123,7 +118,6 @@ this.getCurrentStatePaintable()!.paint(graphics);
 
 
     setCurrentStatePaintable(currentStatePaintable: Paintable){
-var currentStatePaintable = currentStatePaintable
 this.currentStatePaintable= currentStatePaintable;
     
 }

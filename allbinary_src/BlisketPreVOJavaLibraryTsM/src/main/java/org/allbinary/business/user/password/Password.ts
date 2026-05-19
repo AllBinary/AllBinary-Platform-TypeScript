@@ -76,14 +76,12 @@ export class Password
 public constructor (password: string){
 
             super();
-        var password = password
-this.password= password;
+        this.password= password;
     
 }
 
 
     public set(value: string){
-var value = value
 this.password= value;
     
 }
@@ -195,7 +193,6 @@ valid= Boolean.FALSE;
 
 
     public toVector(secret: string): Vector{
-var secret = secret
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 
@@ -225,7 +222,6 @@ vector.add(new SuperCrypt(random).
 
 
     public toHashMap(secret: string): HashMap<any, any>{
-var secret = secret
 this.password= StringUtil.getInstance()!.getNonNull(this.password);
     
 

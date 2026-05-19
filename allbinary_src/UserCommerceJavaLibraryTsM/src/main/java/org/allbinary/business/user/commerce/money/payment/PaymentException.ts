@@ -47,8 +47,7 @@ export class PaymentException extends Exception {
         
 public constructor (error: string){
             super(error);
-                    var error = error
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -59,8 +59,7 @@ export class CategoryComponent extends CategoryView implements TransformInterfac
         
 public constructor (categoryInterface: CategoryInterface){
             super(categoryInterface);
-                    var categoryInterface = categoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -102,7 +101,6 @@ public constructor (categoryInterface: CategoryInterface){
 
 
     public setTransformDocumentInterface(viewDocumentInterface: TransformDocumentInterface){
-var viewDocumentInterface = viewDocumentInterface
 }
 
 

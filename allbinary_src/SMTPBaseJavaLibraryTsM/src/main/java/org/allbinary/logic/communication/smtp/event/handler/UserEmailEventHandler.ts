@@ -75,8 +75,6 @@ public constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public receiveEmailInfo(userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo){
-var userEmailEventNameData = userEmailEventNameData
-var emailInfo = emailInfo
 this.userEmailEventNameData= userEmailEventNameData;
     
 this.emailInfo= emailInfo;
@@ -88,7 +86,6 @@ this.fireEmailEvent();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addListener(vector: Vector){
-var vector = vector
 
     var size: number = vector.length!;
 ;
@@ -114,7 +111,6 @@ this.addListener(userEmailEventListenerInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addListener(emailEventListenerInterface: UserEmailEventListenerInterface){
-var emailEventListenerInterface = emailEventListenerInterface
 this.emailVector!.add(emailEventListenerInterface);
     
 }
@@ -122,7 +118,6 @@ this.emailVector!.add(emailEventListenerInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(emailEventListenerInterface: UserEmailEventListenerInterface){
-var emailEventListenerInterface = emailEventListenerInterface
 this.emailVector!.remove(emailEventListenerInterface);
     
 }

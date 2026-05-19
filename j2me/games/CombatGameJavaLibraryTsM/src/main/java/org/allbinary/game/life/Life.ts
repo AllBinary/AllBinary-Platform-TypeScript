@@ -84,9 +84,7 @@ export class Life
 public constructor (lives: number, maxlives: number){
 
             super();
-        var lives = lives
-var maxlives = maxlives
-this.maxlives= maxlives;
+        this.maxlives= maxlives;
     
 
                         if(lives > this.maxlives)
@@ -118,7 +116,6 @@ this.startLives= lives;
 
 
     public set(lives: number){
-var lives = lives
 this.lives= lives;
     
 }
@@ -131,7 +128,6 @@ this.lives= this.startLives;
 
 
     public add(lives: number){
-var lives = lives
 
                         if(!this.reachedLimit())
                         
@@ -222,7 +218,6 @@ var lives = lives
 
 
     public deaths(lives: number){
-var lives = lives
 
                         if(!this.reachedLimit())
                         
@@ -259,7 +254,6 @@ var lives = lives
 
 
     public setStartLives(startLives: number){
-var startLives = startLives
 this.startLives= startLives;
     
 }

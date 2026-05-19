@@ -76,14 +76,12 @@ public constructor (){
 
 
     public setCommand(command: string){
-var command = command
 this.command= command;
     
 }
 
 
     public setWebappPath(value: string){
-var value = value
 this.webappPath= value;
     
 }
@@ -174,7 +172,7 @@ setMethod!.invoke(anyType, methodArgs);
                                     this.propertiesHashMap= new HashMap<any, any>();
     
 
-                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.SET) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.SET) == 0)
                         
                                     {
                                     this.setCustomLoaderWebappPath();

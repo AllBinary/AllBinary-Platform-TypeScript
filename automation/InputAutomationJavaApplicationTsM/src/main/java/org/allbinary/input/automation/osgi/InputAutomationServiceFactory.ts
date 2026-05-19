@@ -80,8 +80,6 @@ private constructor (){
 
 
     public getService(bundle: Bundle, registration: ServiceRegistration): any{
-    //var bundle = bundle
-    //var registration = registration
 this.logUtil!.putF(this.commonStrings!.START, this, "getService");
     
 
@@ -94,9 +92,6 @@ this.logUtil!.putF(this.commonStrings!.START, this, "getService");
 
 
     public ungetService(bundle: Bundle, registration: ServiceRegistration, service: any = {}){
-    //var bundle = bundle
-    //var registration = registration
-    //var service = service
 }
 
 

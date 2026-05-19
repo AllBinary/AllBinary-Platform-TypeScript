@@ -54,7 +54,6 @@ export class PointHelper
     private static readonly two: number = 2;
 
     public static getCenterPoint(rectangle: Rectangle): Point{
-var rectangle = rectangle
 
     var x: number = rectangle.getX() +rectangle.getWidth() /PointHelper.two;
 ;

@@ -70,7 +70,6 @@ export class NullPlayerGameInputComposite
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 }
 
 

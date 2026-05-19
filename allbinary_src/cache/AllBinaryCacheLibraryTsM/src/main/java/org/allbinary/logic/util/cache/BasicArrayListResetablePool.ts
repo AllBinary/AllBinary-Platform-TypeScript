@@ -50,8 +50,7 @@ export class BasicArrayListResetablePool extends AbstractArrayListPool {
         
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
             super(cacheableInterfaceFactoryInterface);
-                    var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -65,7 +64,6 @@ public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactor
                 //@Throws(Exception.constructor)
             
     public remove(key: any = {}): CacheableInterface{
-var key = key
 
     var size: number = this.buffers.size()!;
 ;

@@ -62,7 +62,6 @@ export class ItemFactoryUnused
                 //@Throws(MoneyException.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>): TableMappingInterface{
-var hashMap = hashMap
 
 
 
@@ -75,7 +74,6 @@ var hashMap = hashMap
                 //@Throws(Exception.constructor, MoneyException.constructor)
             
     public static getInstance(request: HttpServletRequest): TableMappingInterface{
-var request = request
 
 
 

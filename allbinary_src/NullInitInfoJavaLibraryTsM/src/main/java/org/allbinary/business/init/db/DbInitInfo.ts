@@ -50,9 +50,7 @@ export class DbInitInfo extends DbConnectionInfo {
         
 public constructor (initFileName: string, read: boolean){
             super();
-                    var initFileName = initFileName
-var read = read
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -91,7 +89,6 @@ PreLogUtil.put("Url: " +url, this, "getUrl");
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setHasRead(value: boolean){
-var value = value
 }
 
 

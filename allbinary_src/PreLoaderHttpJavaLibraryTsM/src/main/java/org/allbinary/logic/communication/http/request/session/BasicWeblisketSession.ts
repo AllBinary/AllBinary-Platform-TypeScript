@@ -73,8 +73,7 @@ export class BasicWeblisketSession
 public constructor (pageContext: PageContext){
 
             super();
-        var pageContext = pageContext
-this.pageContext= pageContext;
+        this.pageContext= pageContext;
     
 
     var request: HttpServletRequest = pageContext!.getRequest() as HttpServletRequest;
@@ -86,7 +85,6 @@ this.session= request.getSession(true);
 
 
     public setRole(aRole: BasicUserRole){
-var aRole = aRole
 this.session.setAttribute(BasicUserRoleData.NAME.toString(), aRole);
     
 }
@@ -103,21 +101,18 @@ this.session.setAttribute(BasicUserRoleData.NAME.toString(), aRole);
 
 
     public setPassword(password: string){
-var password = password
 this.session.setAttribute(UserData.PASSWORD, password);
     
 }
 
 
     public setUserName(userName: string){
-var userName = userName
 this.session.setAttribute(UserData.USERNAME, userName);
     
 }
 
 
     public setPaymentMethod(value: string){
-var value = value
 this.session.setAttribute(PaymentGatewayData.NAME.toString(), value);
     
 }
@@ -130,21 +125,18 @@ this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.get
 
 
     public setAttempts(value: Integer){
-var value = value
 this.session.setAttribute(WeblisketSessionData.ATTEMPTS, value);
     
 }
 
 
     public setTimeout(value: string){
-var value = value
 this.session.setAttribute(WeblisketSessionData.TIMEOUT, value);
     
 }
 
 
     public setStoreName(value: string){
-var value = value
 this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
     
 }
@@ -231,7 +223,6 @@ this.session.setAttribute(StoreFrontData.getInstance()!.NAME, value);
 
 
     public setAuthenticated(value: boolean){
-var value = value
 this.session.setAttribute(WeblisketSessionData.AUTHENTICATED, BooleanFactory.getInstance()!.FALSE_STRING);
     
 }

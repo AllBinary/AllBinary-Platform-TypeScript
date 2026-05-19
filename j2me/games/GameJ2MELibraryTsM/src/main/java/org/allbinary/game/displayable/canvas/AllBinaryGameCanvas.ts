@@ -471,12 +471,7 @@ export class AllBinaryGameCanvas extends RunnableCanvas implements AllBinaryGame
     private progressPaintable: PaintableInterface = ProgressCanvasFactory.getLazyInstance()!;
 public constructor (commandListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
             super(commandListener, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, true);
-                        //var commandListener = commandListener
-    //var gameLayerManager = gameLayerManager
-    //var highScoresFactoryInterface = highScoresFactoryInterface
-    //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
-    //var buffered = buffered
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -548,14 +543,12 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-    //var displayChangeEvent = displayChangeEvent
 
         try {
             this.menuBehavior!.onDisplayChangeEvent(this, displayChangeEvent);
@@ -574,7 +567,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.ON_DI
                 //@Throws(Exception.constructor)
             
     public updateMenuFromEvent(displayChangeEvent: DisplayChangeEvent){
-    //var displayChangeEvent = displayChangeEvent
 
     var formUtil: FormUtil = FormUtil.getInstance()!;
 ;
@@ -1013,8 +1005,6 @@ this.menuBehavior!.initSpecialPaint(this);
                 //@Throws(Exception.constructor)
             
     init(gameLayerManager: AllBinaryGameLayerManager, buffered: boolean){
-var gameLayerManager = gameLayerManager
-var buffered = buffered
 this.gameStateTimeHelper!.setStartTimeTNT();
     
 this.setHighScoreSubmitted(false);
@@ -1090,7 +1080,6 @@ this.getStartIntermissionInterface()!.setListener(this);
 
 
     public notifyIntermission(enable: boolean){
-var enable = enable
 
                         if(enable)
                         
@@ -1136,7 +1125,6 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     initConfigurable(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
 ;
@@ -1200,7 +1188,6 @@ this.loadResourceLoadingLevel(resourceLoadingLevelFactory!.LOAD_GAME);
                 //@Throws(Exception.constructor)
             
     initApp(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.initConfigurable(abeClientInformation);
     
 this.processorInit();
@@ -1241,7 +1228,6 @@ this.postInitTouch();
                 //@Throws(Exception.constructor)
             
     public updateCurrentTouchInputFactory(nextTouchInput: BaseTouchInput){
-    //var nextTouchInput = nextTouchInput
 
                         if(nextTouchInput != this.currentTouchInputFactory)
                         
@@ -1278,7 +1264,7 @@ this.gameBehavior!.updateTouch(this);
                         
                                     {
                                     
-                        if(this.gameLayerManager!.getGameInfo()!.getCurrentLevel() -getStartLevel() == 1)
+                        if(this.gameLayerManager!.getGameInfo()!.getCurrentLevel() -this.getStartLevel() == 1)
                         
                                     {
                                     this.setTouchPaintableP(NullPaintable.getInstance());
@@ -1303,7 +1289,6 @@ this.updateScreenButtonPaintable();
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.removeAllCommands();
     
 this.addCommands();
@@ -1384,7 +1369,6 @@ this.addCommand(gameCommandsFactory!.DISPLAY_LOAD_FORM);
 
 
     public itemStateChanged(item: Item){
-var item = item
 
         try {
             
@@ -1501,7 +1485,6 @@ this.setStartLevel(this.gameLayerManager!.getGameInfo()!.getCurrentLevel());
 
 
     public setLayerManager(layerManager: AllBinaryGameLayerManager){
-var layerManager = layerManager
 this.gameLayerManager= layerManager;
     
 }
@@ -1520,7 +1503,6 @@ this.gameLayerManager= layerManager;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setGameOver(gameOver: boolean){
-var gameOver = gameOver
 this.gameOver= gameOver;
     
 }
@@ -1533,11 +1515,11 @@ PreLogUtil.put(this.commonStrings!.START, this, this.gameStrings!.SET_GAME_OVER)
     
 this.setGameOver(true);
     
-removePauseCommand();
+this.removePauseCommand();
     
 this.setGameState(AllBinaryGameCanvas.SHOW_END_RESULT_GAME_STATE);
     
-this.setEndGamePaintable(getEndGameStatePaintable());
+this.setEndGamePaintable(this.getEndGameStatePaintable());
     
 }
 
@@ -1555,7 +1537,6 @@ this.setEndGamePaintable(getEndGameStatePaintable());
                 //@Throws(Exception.constructor)
             
     public setHighScoreSubmitted(highScoreSubmitted: boolean){
-var highScoreSubmitted = highScoreSubmitted
 this.highScoreSubmitted= highScoreSubmitted;
     
 
@@ -1586,7 +1567,6 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public setGameState(gameState: GameState){
-    //var gameState = gameState
 this.logUtil!.putF(new StringMaker().
                             append(this.gameStrings!.GAME_STATE)!.append(this.stringUtil!.toString(gameState))!.toString(), this, this.gameStrings!.SET_GAME_STATE);
     
@@ -1676,7 +1656,6 @@ playerGameInput!.removeNonAIInputGameKeyEvents();
 
 
     public removeKeyInputListener(playerGameInput: PlayerGameInput){
-    //var playerGameInput = playerGameInput
 this.gameKeyEventHandler!.removeListener(playerGameInput);
     
 }
@@ -1714,7 +1693,6 @@ this.gameBehavior!.updateEndGameProcessor(this);
                 //@Throws(Exception.constructor)
             
     public buildGameInit(isPortion: boolean){
-    //var isPortion = isPortion
 }
 
 
@@ -1741,7 +1719,6 @@ GameLevelDisplayChangeEventListenersFactory.getInstance()!.clear();
                 //@Throws(Exception.constructor)
             
     public loadResourceLoadingLevel(resourceLoadingLevel: ResourceLoadingLevel){
-    //var resourceLoadingLevel = resourceLoadingLevel
 
     var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
 ;
@@ -1756,7 +1733,6 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
                 //@Throws(Exception.constructor)
             
     public loadResources(level: number){
-    //var level = level
 
     var gameInitializedEvent: GameInitializedEvent = GameInitializationUtil.getInstance()!.EVENT;
 ;
@@ -1777,7 +1753,6 @@ GameInitializedEventHandler.getInstance()!.fireEvent(gameInitializedEvent);
                 //@Throws(Exception.constructor)
             
     public buildGame(portion: number){
-    //var portion = portion
 this.screenCapture!.endRecording();
     
 this.screenCapture!.startRecording();
@@ -1919,7 +1894,6 @@ this.addKeyInputListener(playerGameInput);
 
 
     public addKeyInputListener(playerGameInput: PlayerGameInput){
-    //var playerGameInput = playerGameInput
 GameKeyEventHandler.getInstance()!.addListenerForPlayer(playerGameInput, playerGameInput!.getPlayerInputId());
     
 }
@@ -1928,7 +1902,6 @@ GameKeyEventHandler.getInstance()!.addListenerForPlayer(playerGameInput, playerG
     private gameCanvasStartListener: DemoPaintableInterface = NullDemoPaintable.NULL_DEMO_PAINTABLE;
 
     public setGameCanvasStartListener(gameCanvasStartListener: DemoPaintableInterface){
-var gameCanvasStartListener = gameCanvasStartListener
 this.gameCanvasStartListener= gameCanvasStartListener;
     
 }
@@ -1985,7 +1958,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
-    //var hashtable = hashtable
 this.logUtil!.putF(new StringMaker().
                             append(this.commonLabels!.START_LABEL)!.append(this.stringUtil!.toString(hashtable))!.toString(), this, "setLoadStateHashtable");
     
@@ -2018,14 +1990,12 @@ this.logUtil!.putF(new StringMaker().
 
 
     public paintGameOver(graphics: Graphics){
-var graphics = graphics
 ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
 
 
     public draw(graphics: Graphics){
-var graphics = graphics
 this.colorFillPaintable!.paint(graphics);
     
 this.basicSetColorUtil!.setBasicColorP(graphics, this.gameLayerManager!.getForegroundBasicColor());
@@ -2036,14 +2006,12 @@ this.gameSpecificPaintable!.paint(graphics);
 
 
     public clear(graphics: Graphics){
-    //var graphics = graphics
 this.colorFillPaintable!.paint(graphics);
     
 }
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 this.baseGameStatistics!.nextRefresh();
     
 this.draw(graphics);
@@ -2056,7 +2024,6 @@ this.progressPaintable!.paint(graphics);
 
 
     public paintThreed(graphics: Graphics){
-    //var graphics = graphics
 }
 
 
@@ -2067,7 +2034,6 @@ this.progressPaintable!.paint(graphics);
 
 
     public nonBotPaint(graphics: Graphics){
-var graphics = graphics
 this.endGamePaintable!.paint(graphics);
     
 this.intermissionPaintable!.paint(graphics);
@@ -2080,7 +2046,6 @@ this.touchPaintable!.paint(graphics);
 
 
     public paintIntermission(graphics: Graphics){
-var graphics = graphics
 }
 
 
@@ -2091,37 +2056,30 @@ var graphics = graphics
     private inputProcessor: InputProcessor = this.getRawGameInputProcessor()!;
 
     public keyPressed(keyCode: number){
-var keyCode = keyCode
 this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
-var keyCode = keyCode
 this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
-var keyCode = keyCode
 this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 this.inputProcessor!.keyPressed(keyCode, deviceId);
     
 }
 
 
     public keyRepeatedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 
                         if(this.isSingleKeyRepeatableProcessing)
                         
@@ -2135,8 +2093,6 @@ var deviceId = deviceId
 
 
     public keyReleasedByDevice(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 this.inputProcessor!.keyReleased(this, keyCode, deviceId);
     
 }
@@ -2145,14 +2101,10 @@ this.inputProcessor!.keyReleased(this, keyCode, deviceId);
                 //@Throws(Exception.constructor)
             
     public handleRawKey(keyCode: number, deviceId: number, repeated: boolean){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
-    //var repeated = repeated
 }
 
 
     endProgress(isProgress: boolean): number{
-var isProgress = isProgress
 
     var portion: number = 30;
 ;
@@ -2461,7 +2413,6 @@ this.processLoopSleep();
 
 
     public setRunning(running: boolean){
-var running = running
 super.setRunning(running);
     
 
@@ -2552,7 +2503,6 @@ gameAdState!.notPlayingAdState();
 
 
     public createHighScore(score: number): HighScore{
-var score = score
 
     var gameInfo: GameInfo = this.gameLayerManager!.getGameInfo()!;
 ;
@@ -2569,11 +2519,6 @@ var score = score
                 //@Throws(Exception.constructor)
             
     public setHighScore(abeClientInformation: AbeClientInformationInterface, name: string, score: number, autoSubmit: boolean, isLast: boolean){
-    //var abeClientInformation = abeClientInformation
-    //var name = name
-    //var score = score
-    //var autoSubmit = autoSubmit
-    //var isLast = isLast
 this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSubmit, isLast);
     
 }
@@ -2582,11 +2527,6 @@ this.gameBehavior!.setHighScore(abeClientInformation, this, name, score, autoSub
                 //@Throws(Exception.constructor)
             
     public setHighScore2(abeClientInformation: AbeClientInformationInterface, name: string, score: number, autoSubmit: boolean, isLast: boolean){
-    //var abeClientInformation = abeClientInformation
-    //var name = name
-    //var score = score
-    //var autoSubmit = autoSubmit
-    //var isLast = isLast
 
     var highScore: HighScore = this.createHighScore(score)!;
 ;
@@ -2674,7 +2614,6 @@ SecondaryThreadPool.getInstance()!.runTask(new SaveHighScoreRunnable());
 
 
     setInitialized(initialized: boolean){
-var initialized = initialized
 this.initialized= initialized;
     
 }
@@ -2701,7 +2640,6 @@ this.initialized= initialized;
 
 
     public setProgressPaintable(paintable: PaintableInterface){
-    //var paintable = paintable
 this.progressPaintable= paintable;
     
 }
@@ -2728,7 +2666,6 @@ this.progressPaintable= paintable;
 
 
     setTouchPaintableP(paintable: Paintable){
-var paintable = paintable
 this.touchPaintable= paintable;
     
 }
@@ -2745,7 +2682,6 @@ this.touchPaintable= paintable;
 
 
     setEndGamePaintable(endGamePaintable: Paintable){
-var endGamePaintable = endGamePaintable
 this.endGamePaintable= endGamePaintable;
     
 }
@@ -2762,7 +2698,6 @@ this.endGamePaintable= endGamePaintable;
 
 
     setIntermissionPaintable(intermissionPaintable: Paintable){
-var intermissionPaintable = intermissionPaintable
 this.intermissionPaintable= intermissionPaintable;
     
 }
@@ -2789,7 +2724,6 @@ this.intermissionPaintable= intermissionPaintable;
 
 
     public setHighScoresPaintable(highScoresPaintable: Paintable){
-    //var highScoresPaintable = highScoresPaintable
 this.highScoresPaintable= highScoresPaintable;
     
 }
@@ -2840,14 +2774,12 @@ this.localPlayerGameInputList!.clear();
 
 
     addPlayerGameInput(playerGameInput: PlayerGameInput){
-    //var playerGameInput = playerGameInput
 this.localPlayerGameInputList!.add(playerGameInput);
     
 }
 
 
     setMenuInputProcessor(menuInputProcessor: BasicMenuInputProcessor){
-    //var menuInputProcessor = menuInputProcessor
 this.menuInputProcessor= menuInputProcessor;
     
 }
@@ -2874,7 +2806,6 @@ this.menuInputProcessor= menuInputProcessor;
 
 
     public setMenuForm(menuForm: ScrollSelectionForm){
-    //var menuForm = menuForm
 this.menuForm= menuForm;
     
 }
@@ -2891,14 +2822,12 @@ this.menuForm= menuForm;
 
 
     public setStartLevel(startLevel: number){
-    //var startLevel = startLevel
 this.startLevel= startLevel;
     
 }
 
 
     setTouchButtonsPaintable(touchButtonsPaintable: Paintable){
-    //var touchButtonsPaintable = touchButtonsPaintable
 this.touchButtonsPaintable= touchButtonsPaintable;
     
 }
@@ -2915,7 +2844,6 @@ this.touchButtonsPaintable= touchButtonsPaintable;
 
 
     public setGameInputProcessor(gameInputProcessor: Processor){
-    //var gameInputProcessor = gameInputProcessor
 this.gameInputProcessor= gameInputProcessor;
     
 }
@@ -2932,7 +2860,6 @@ this.gameInputProcessor= gameInputProcessor;
 
 
     setEndGameProcessor(endGameProcessor: Processor){
-    //var endGameProcessor = endGameProcessor
 this.endGameProcessor= endGameProcessor;
     
 }
@@ -2949,7 +2876,6 @@ this.endGameProcessor= endGameProcessor;
 
 
     setEndGameStatePaintable(endGameStatePaintable: Paintable){
-    //var endGameStatePaintable = endGameStatePaintable
 this.endGameStatePaintable= endGameStatePaintable;
     
 }
@@ -2966,7 +2892,6 @@ this.endGameStatePaintable= endGameStatePaintable;
 
 
     setNonBotPaintableP(nonBotPaintable: Paintable){
-    //var nonBotPaintable = nonBotPaintable
 this.nonBotPaintable= nonBotPaintable;
     
 }
@@ -2983,7 +2908,6 @@ this.nonBotPaintable= nonBotPaintable;
 
 
     setStartIntermissionPaintable(startIntermissionPaintable: InitUpdatePaintable){
-    //var startIntermissionPaintable = startIntermissionPaintable
 this.startIntermissionPaintable= startIntermissionPaintable;
     
 }
@@ -3000,7 +2924,6 @@ this.startIntermissionPaintable= startIntermissionPaintable;
 
 
     public setMainStateProcessor(mainStateProcessor: Processor){
-    //var mainStateProcessor = mainStateProcessor
 this.mainStateProcessor= mainStateProcessor;
     
 }
@@ -3017,7 +2940,6 @@ this.mainStateProcessor= mainStateProcessor;
 
 
     setProcessGameProcessor(processGameProcessor: Processor){
-    //var processGameProcessor = processGameProcessor
 this.processGameProcessor= processGameProcessor;
     
 }
@@ -3034,7 +2956,6 @@ this.processGameProcessor= processGameProcessor;
 
 
     setOpenMenuPaintable(openMenuPaintable: Paintable){
-    //var openMenuPaintable = openMenuPaintable
 this.openMenuPaintable= openMenuPaintable;
     
 }
@@ -3051,7 +2972,6 @@ this.openMenuPaintable= openMenuPaintable;
 
 
     setPopupMenuInputProcessor(popupMenuInputProcessor: BasicMenuInputProcessor){
-    //var popupMenuInputProcessor = popupMenuInputProcessor
 this.popupMenuInputProcessor= popupMenuInputProcessor;
     
 }
@@ -3098,7 +3018,6 @@ this.popupMenuInputProcessor= popupMenuInputProcessor;
 
 
     public setInputProcessor(inputProcessor: InputProcessor){
-    //var inputProcessor = inputProcessor
 this.inputProcessor= inputProcessor;
     
 }
@@ -3115,7 +3034,6 @@ this.inputProcessor= inputProcessor;
 
 
     setMenuPaintable(menuPaintable: Paintable){
-    //var menuPaintable = menuPaintable
 this.menuPaintable= menuPaintable;
     
 }
@@ -3132,7 +3050,6 @@ this.menuPaintable= menuPaintable;
 
 
     setFormPaintable(formPaintable: Paintable){
-    //var formPaintable = formPaintable
 this.formPaintable= formPaintable;
     
 }
@@ -3149,7 +3066,6 @@ this.formPaintable= formPaintable;
 
 
     public setGameSpecificPaintableP(gameSpecificPaintable: Paintable){
-    //var gameSpecificPaintable = gameSpecificPaintable
 this.gameSpecificPaintable= gameSpecificPaintable;
     
 }

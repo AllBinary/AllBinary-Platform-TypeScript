@@ -125,8 +125,7 @@ export class AbSqlBasic
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
-            //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
+        this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
     
 this.connectAttemptCounter= 0;
     
@@ -140,7 +139,6 @@ this.conn=
                 //@Throws(SQLException.constructor)
             
     public executeSQLStatement(statement: string): ResultSet{
-    //var statement = statement
 
         try {
             this.initialize();
@@ -203,7 +201,6 @@ this.conn=
 
 
     public create(databaseName: string): string{
-    //var databaseName = databaseName
 
         try {
             this.executeSQLStatement(this.sqlStrings!.CREATE_DATABASE +databaseName);
@@ -367,7 +364,6 @@ this.createConnection();
 
 
     public setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface: DbConnectionInfo){
-    //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
     
 }

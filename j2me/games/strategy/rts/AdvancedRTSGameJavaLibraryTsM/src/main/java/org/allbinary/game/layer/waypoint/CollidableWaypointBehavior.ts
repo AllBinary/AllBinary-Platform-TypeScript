@@ -53,8 +53,7 @@ export class CollidableWaypointBehavior extends CollidableRTSBehavior {
         
 public constructor (collidable: boolean){
             super(collidable);
-                    var collidable = collidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -62,8 +61,6 @@ public constructor (collidable: boolean){
 
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
-var collisionLayer = collisionLayer
 
 
 
@@ -76,14 +73,10 @@ var collisionLayer = collisionLayer
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-var collisionLayer = collisionLayer
 }
 
 
     public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterface: CollidableInterfaceCompositeInterface): boolean{
-    //var ownerLayer = ownerLayer
-var collidableInterface = collidableInterface
 
 
 
@@ -96,8 +89,6 @@ var collidableInterface = collidableInterface
                 //@Throws(Exception.constructor)
             
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterface: CollidableInterfaceCompositeInterface){
-    //var ownerLayer = ownerLayer
-var collidableInterface = collidableInterface
 }
 
 

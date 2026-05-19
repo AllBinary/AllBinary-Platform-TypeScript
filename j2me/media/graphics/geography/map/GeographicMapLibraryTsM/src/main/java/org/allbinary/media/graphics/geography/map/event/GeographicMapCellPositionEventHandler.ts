@@ -82,7 +82,6 @@ private constructor (){
 
 
     public addListener(miniMapLayer: MiniMapLayer){
-var miniMapLayer = miniMapLayer
 
                         if(!this.list.contains(miniMapLayer))
                         
@@ -104,7 +103,6 @@ super.removeAllListeners();
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -115,7 +113,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
 
 
@@ -151,7 +148,6 @@ super.fireEvent(eventObject);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireRemoveEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
     var list: BasicArrayList = this.eventListenerInterfaceList;
 ;
@@ -226,8 +222,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, EventStrings.getInstance(
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
     var geographicMapCellPositionEventListenerInterface: GeographicMapCellPositionEventListenerInterface = (eventListenerInterface as GeographicMapCellPositionEventListenerInterface);
 ;

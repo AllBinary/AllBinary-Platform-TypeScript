@@ -64,13 +64,7 @@ export class PaintableForm extends ABCustomForm {
     formType: FormType = FormTypeFactory.getInstance()!.NULL_FORM_TYPE;
 public constructor (title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var items = items
-    //var rectangle = rectangle
-    //var formType = formType
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -94,8 +88,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.CONST
                 //@Throws(Exception.constructor)
             
     public init(rectangle: Rectangle, formType: FormType){
-    //var rectangle = rectangle
-    //var formType = formType
 this.rectangle= rectangle;
     
 

@@ -57,9 +57,7 @@ export class AdminConfigurationHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-}
+        }
 
 
     public create(): string{

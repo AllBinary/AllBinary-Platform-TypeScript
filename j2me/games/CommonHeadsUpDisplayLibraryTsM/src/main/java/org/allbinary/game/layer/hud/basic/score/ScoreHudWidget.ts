@@ -57,9 +57,6 @@ export class ScoreHudWidget extends NumberStringHud {
                 //@Throws(Exception.constructor)
             
     public static getInstance(maxscore: number, location: number, direction: number): ScoreHudWidget{
-    //var maxscore = maxscore
-    //var location = location
-    //var direction = direction
 
 
 
@@ -70,14 +67,7 @@ export class ScoreHudWidget extends NumberStringHud {
 
 public constructor (maxscore: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super("Pts ", maxscore, location, direction, maxHeight, maxWidth, bufferZone, basicColor);
-                    var maxscore = maxscore
-var location = location
-var direction = direction
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

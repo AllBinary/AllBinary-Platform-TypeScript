@@ -90,8 +90,6 @@ this.setTableName(this.tableName);
 
 
     public remove(userName: string, orderNumber: string){
-var userName = userName
-var orderNumber = orderNumber
 
         try {
             
@@ -132,9 +130,6 @@ super.deleteWhere(whereHashMap);
 
 
     public add(userName: string, orderNumber: string, transactionResultInterface: TransactionResultInterface){
-var userName = userName
-var orderNumber = orderNumber
-var transactionResultInterface = transactionResultInterface
 
         try {
             
@@ -190,7 +185,6 @@ super.insert(values);
 
 
     public getTransactionResultInterface(orderNumber: string): TransactionResultInterface{
-var orderNumber = orderNumber
 
         try {
             

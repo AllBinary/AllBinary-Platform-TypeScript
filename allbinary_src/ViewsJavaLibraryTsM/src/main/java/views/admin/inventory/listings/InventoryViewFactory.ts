@@ -62,7 +62,6 @@ export class InventoryViewFactory
                 //@Throws(LicensingException.constructor)
             
     public static getInstance(searchRequest: SearchRequest): InventoryViewSearchInterface{
-var searchRequest = searchRequest
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

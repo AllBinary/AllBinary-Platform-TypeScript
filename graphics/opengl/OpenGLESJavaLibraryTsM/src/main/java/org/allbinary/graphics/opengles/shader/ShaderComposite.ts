@@ -108,15 +108,7 @@ export class ShaderComposite
 public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor, disableProgramShaderOpenGLProcessor: OpenGLProcessor){
 
             super();
-            //var requiresOpenGLVersion = requiresOpenGLVersion
-    //var shaderArray = shaderArray
-    //var compositeShaderUpdater = compositeShaderUpdater
-    //var shaderInitializer = shaderInitializer
-    //var modelViewProjection = modelViewProjection
-    //var colorOpenGLProcessor = colorOpenGLProcessor
-    //var vertexOpenGLProcessor = vertexOpenGLProcessor
-    //var disableProgramShaderOpenGLProcessor = disableProgramShaderOpenGLProcessor
-this.requiresOpenGLVersion= requiresOpenGLVersion;
+        this.requiresOpenGLVersion= requiresOpenGLVersion;
     
 this.shaderArray= shaderArray;
     
@@ -136,7 +128,6 @@ this.disableProgramShaderOpenGLProcessor= disableProgramShaderOpenGLProcessor;
 
 
     public init(gl: GL10){
-var gl = gl
 this.programHandle= this.shaderInitializer!.init(gl, this.shaderArray, this.compositeShaderUpdater!.attributeArray);
     
 }

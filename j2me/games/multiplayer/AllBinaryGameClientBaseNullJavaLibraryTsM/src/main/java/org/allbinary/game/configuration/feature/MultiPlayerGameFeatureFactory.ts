@@ -54,7 +54,6 @@ private constructor (){
 
 
     public addCommands(anyType: any = {}){
-    //var anyType = anyType
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
 ;

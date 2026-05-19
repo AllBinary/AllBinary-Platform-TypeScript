@@ -64,8 +64,7 @@ export class DeleteValidationStoreFrontView extends StoreFrontComponent implemen
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -199,7 +198,6 @@ this.newStoreFrontInterface= StoreFrontFactory.getInstance(this.newStoreFrontInt
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

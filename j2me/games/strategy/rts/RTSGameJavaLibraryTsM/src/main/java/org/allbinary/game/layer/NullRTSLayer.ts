@@ -85,7 +85,6 @@ export class NullRTSLayer extends NullPathFindingLayer implements RTSPlayerLayer
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 
 
 
@@ -122,7 +121,6 @@ var layerManager = layerManager
 
 
     public setCurrentScrollSelectionForm(currentScrollSelectionForm: ScrollSelectionForm){
-var currentScrollSelectionForm = currentScrollSelectionForm
 
 
 
@@ -150,7 +148,6 @@ var currentScrollSelectionForm = currentScrollSelectionForm
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
 
 
@@ -162,7 +159,6 @@ var eventObject = eventObject
                 //@Throws(Exception.constructor)
             
     public onDestroyed(destroyedEvent: DestroyedEvent){
-var destroyedEvent = destroyedEvent
 
 
 
@@ -174,7 +170,6 @@ var destroyedEvent = destroyedEvent
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
 
 
@@ -203,7 +198,6 @@ var allBinaryLayerManager = allBinaryLayerManager
 
 
     public add(sound: Sound){
-var sound = sound
 
 
 

@@ -72,14 +72,12 @@ export class PlayerQueue
  constructor (max: number){
 
             super();
-        var max = max
-this.max= max;
+        this.max= max;
     
 }
 
 
     public add(sound: Sound){
-var sound = sound
 
         try {
             

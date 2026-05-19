@@ -63,8 +63,7 @@ export class EmailInfo
 public constructor (basicEmailInfo: BasicEmailInfo){
 
             super();
-        var basicEmailInfo = basicEmailInfo
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -86,10 +85,7 @@ this.init(basicEmailInfo,
 public constructor (basicEmailInfo: BasicEmailInfo, htmlAttachment: string, contentBase: string){
 
             super();
-        var basicEmailInfo = basicEmailInfo
-var htmlAttachment = htmlAttachment
-var contentBase = contentBase
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -110,9 +106,6 @@ this.init(basicEmailInfo,
 
 
     init(basicEmailInfo: BasicEmailInfo, htmlAttachment: string, contentBase: string){
-var basicEmailInfo = basicEmailInfo
-var htmlAttachment = htmlAttachment
-var contentBase = contentBase
 this.basicEmailInfo= basicEmailInfo;
     
 this.htmlAttachment= htmlAttachment;

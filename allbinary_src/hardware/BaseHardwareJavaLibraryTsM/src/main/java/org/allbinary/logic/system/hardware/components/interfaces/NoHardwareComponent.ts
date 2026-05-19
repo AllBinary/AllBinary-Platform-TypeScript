@@ -61,8 +61,7 @@ export class NoHardwareComponent
 }
 
 
-    public localeCompare(componentInterface: HardwareComponentInterface): boolean{
-var componentInterface = componentInterface
+    public compareTo(componentInterface: HardwareComponentInterface): boolean{
 
                         if(this == componentInterface)
                         

@@ -105,15 +105,6 @@ export class SpriteSplitterUtil
                 //@Throws(Exception.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, totalFrames: number, totalAnimations: number, widthReduction: number, heightReduction: number, increaseWidth: number, increaseHeight: number, spriteType: string, visitor: ImageProcessedVisitor){
-    //var imageProcessorInput = imageProcessorInput
-    //var totalFrames = totalFrames
-    //var totalAnimations = totalAnimations
-    //var widthReduction = widthReduction
-    //var heightReduction = heightReduction
-    //var increaseWidth = increaseWidth
-    //var increaseHeight = increaseHeight
-    //var spriteType = spriteType
-    //var visitor = visitor
 
     var bufferedImage: BufferedImage
 ;

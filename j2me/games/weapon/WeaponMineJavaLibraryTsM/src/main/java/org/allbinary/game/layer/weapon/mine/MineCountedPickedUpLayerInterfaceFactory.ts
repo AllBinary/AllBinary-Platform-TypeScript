@@ -119,10 +119,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getNextInstance(hashtable: Hashtable<any, any>, x: number, y: number, z: number): AllBinaryLayer{
-    //var hashtable = hashtable
-    //var x = x
-    //var y = y
-    //var z = z
 
     var sourceLayerInterface: AllBinaryLayer = hashtable.get(this.smallIntegerSingletonFactory!.getAt(0) as Object) as AllBinaryLayer;
 ;

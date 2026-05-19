@@ -66,9 +66,6 @@ this.setMaxNonMatchingPixelDeltas(.MAX_VALUE());
 
 
     public isColorAllowed(frame: number, point: GPoint, color: Color): boolean{
-var frame = frame
-var point = point
-var color = color
 
 
 
@@ -79,7 +76,6 @@ var color = color
 
 
     public isImageValid(bufferedImage: BufferedImage): boolean{
-var bufferedImage = bufferedImage
 
 
 

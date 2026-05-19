@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      
 import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
       
 import { AndroidHardware } from '../../../../../org/allbinary/logic/system/hardware/android/AndroidHardware.js';
@@ -73,6 +75,8 @@ export class HardwareFactory
 
 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 private constructor (){
 
             super();
@@ -82,11 +86,10 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(os: GenericOperatingSystem): HardwareInterface{
-var os = os
 
         try {
             
-                        if(os.getName()!.localeCompare(OperatingSystems.getInstance()!.ANDROID) == 0)
+                        if(this.tsUtil!.compareTo(os.getName(), OperatingSystems.getInstance()!.ANDROID) == 0)
                         
                                     {
                                     

@@ -74,10 +74,7 @@ export class FlockingAI extends BasicAI {
     private readonly allowedDistance: number
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var hashtable = hashtable
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -93,7 +90,6 @@ this.allowedDistance= allowedDistance!.intValue();
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
     var maxDistance: number = 0;
 ;
@@ -218,7 +214,6 @@ farAllbinaryLayer= allBinaryLayer;
 
 
     getXYDistance(allBinaryLayer: AllBinaryLayer): number{
-var allBinaryLayer = allBinaryLayer
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
 ;

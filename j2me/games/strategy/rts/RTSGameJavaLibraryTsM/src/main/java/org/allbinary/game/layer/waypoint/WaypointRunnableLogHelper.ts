@@ -61,12 +61,10 @@ export class WaypointRunnableLogHelper
 
 
     public start(pathFindingLayerInterface: PathFindingLayerInterface){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
 }
 
 
     public end(pathFindingLayerInterface: PathFindingLayerInterface){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
 }
 
 

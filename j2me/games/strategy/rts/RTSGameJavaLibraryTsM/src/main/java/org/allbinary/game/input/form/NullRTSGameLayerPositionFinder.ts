@@ -72,7 +72,6 @@ protected constructor (){
 
 
     public getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer{
-var geographicMapCellPosition = geographicMapCellPosition
 
     var layerInterface: AllBinaryLayer = DropCellPositionHistory.getInstance()!.getLayerInterface(geographicMapCellPosition)!;
 ;

@@ -50,8 +50,7 @@ export class CompositeSound extends Sound {
         
 protected constructor (resource: string){
             super(resource);
-                    var resource = resource
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

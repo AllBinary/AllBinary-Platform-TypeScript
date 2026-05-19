@@ -121,7 +121,6 @@ this.setGameKey(gameKeyFactory!.LEVEL_UP);
 
 
     public getGameKey(key: number): GameKey{
-var key = key
 
 
 
@@ -132,7 +131,6 @@ var key = key
 
 
     setGameKey(gameKey: GameKey){
-var gameKey = gameKey
 this.intKeyToGameKey[gameKey!.getId()]= gameKey;
     
 }

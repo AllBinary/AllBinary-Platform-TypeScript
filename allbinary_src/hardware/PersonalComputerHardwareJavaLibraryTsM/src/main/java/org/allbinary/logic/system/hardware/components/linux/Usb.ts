@@ -54,14 +54,12 @@ export class Usb
 public constructor (data: string){
 
             super();
-        var data = data
-this.data= data;
+        this.data= data;
     
 }
 
 
-    public localeCompare(componentInterface: HardwareComponentInterface): boolean{
-var componentInterface = componentInterface
+    public compareTo(componentInterface: HardwareComponentInterface): boolean{
 
 
 

@@ -88,7 +88,6 @@ private constructor (){
 
 
     public initCapabilities(gl: any = {}){
-var gl = gl
 }
 
 
@@ -123,7 +122,6 @@ var gl = gl
 
 
     public isTextureSizeValid(widthAndHeight: number): boolean{
-    //var widthAndHeight = widthAndHeight
 
 
 

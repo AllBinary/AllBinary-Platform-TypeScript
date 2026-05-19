@@ -68,7 +68,6 @@ public constructor (){
 
 
     public setInputAutomationTypeJComboBox(inputAutomationTypeJComboBox: javax.swing.JComboBox){
-var inputAutomationTypeJComboBox = inputAutomationTypeJComboBox
 this.inputAutomationTypeJComboBox= inputAutomationTypeJComboBox;
     
 }

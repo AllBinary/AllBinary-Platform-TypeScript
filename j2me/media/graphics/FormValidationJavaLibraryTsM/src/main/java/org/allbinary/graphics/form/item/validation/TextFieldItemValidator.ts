@@ -66,11 +66,7 @@ export class TextFieldItemValidator extends ValidatorBase {
 public constructor (textFieldItem: ABTextFieldItem, min: number, max: number, allowOnEmpty: boolean){
 
             super();
-        var textFieldItem = textFieldItem
-var min = min
-var max = max
-var allowOnEmpty = allowOnEmpty
-this.textFieldItem= textFieldItem;
+        this.textFieldItem= textFieldItem;
     
 this.min= min;
     

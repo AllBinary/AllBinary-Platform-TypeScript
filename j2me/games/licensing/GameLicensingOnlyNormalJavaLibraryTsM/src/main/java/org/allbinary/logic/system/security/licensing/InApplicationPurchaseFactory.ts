@@ -59,14 +59,10 @@ private constructor (){
 
 
     public init(anyType: any = {}, stateObject: any = {}){
-var anyType = anyType
-var stateObject = stateObject
 }
 
 
     public onCreate(anyType: any = {}, stateObject: any = {}){
-var anyType = anyType
-var stateObject = stateObject
 }
 
 
@@ -75,14 +71,10 @@ var stateObject = stateObject
 
 
     public onResult(requestCode: number, resultCode: number, data: any = {}){
-    //var requestCode = requestCode
-    //var resultCode = resultCode
-    //var data = data
 }
 
 
     public onSaveState(anyType: any = {}){
-    //var anyType = anyType
 }
 
 
@@ -95,12 +87,10 @@ var stateObject = stateObject
 
 
     public purchase(lockableFeature: LockableFeature){
-var lockableFeature = lockableFeature
 }
 
 
     public isPurchased(lockableFeature: LockableFeature): boolean{
-var lockableFeature = lockableFeature
 
 
 
@@ -111,7 +101,6 @@ var lockableFeature = lockableFeature
 
 
     public add(lockableFeature: LockableFeature){
-var lockableFeature = lockableFeature
 }
 
 

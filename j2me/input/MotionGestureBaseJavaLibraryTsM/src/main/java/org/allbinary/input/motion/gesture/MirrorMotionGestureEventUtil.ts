@@ -82,8 +82,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public mirrorVerticle(motionGestureEvent: MotionGestureEvent, halfWidth: number): MotionGestureEvent{
-    //var motionGestureEvent = motionGestureEvent
-    //var halfWidth = halfWidth
 
     var event: MotionGestureEvent = this.motionEventCircularPool!.getInstance(motionGestureEvent!.getMotionGesture())!;
 ;
@@ -122,8 +120,6 @@ event.setCurrentPoint(mirroredCurrentPoint);
 
 
     public getNewX(x: number, halfWidth: number): number{
-var x = x
-var halfWidth = halfWidth
 
     var newX: number= 0
 ;

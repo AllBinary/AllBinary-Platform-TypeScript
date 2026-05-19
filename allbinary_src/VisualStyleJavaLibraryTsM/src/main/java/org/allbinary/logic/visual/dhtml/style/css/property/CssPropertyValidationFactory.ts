@@ -57,7 +57,6 @@ export class CssPropertyValidationFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): ValidationInterface{
-var node = node
 
 
 

@@ -52,7 +52,6 @@ export class ABRunnable
     private running: boolean = false;
 
     public setThread(thread: Thread){
-var thread = thread
 }
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -69,7 +68,6 @@ var thread = thread
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }

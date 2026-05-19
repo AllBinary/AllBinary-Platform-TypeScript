@@ -77,12 +77,7 @@ export class WeaponProperties extends SimpleWeaponProperties {
 public constructor (reloadTime: number, targetingTime: number, speed: number, damage: number, dissipation: number){
 
             super();
-        var reloadTime = reloadTime
-var targetingTime = targetingTime
-var speed = speed
-var damage = damage
-var dissipation = dissipation
-
+        
                         if(speed < this.MAX && speed != 0L && !WeaponProperties.messageSent)
                         
                                     {
@@ -137,7 +132,6 @@ this.setRange(Math.round((value *9)) /10);
 
 
     setReloadTime(reloadTime: number){
-var reloadTime = reloadTime
 this.reloadTime= reloadTime;
     
 }
@@ -154,7 +148,6 @@ this.reloadTime= reloadTime;
 
 
     setTargetingTime(targetingTime: number){
-var targetingTime = targetingTime
 this.targetingTime= targetingTime;
     
 }
@@ -181,14 +174,12 @@ this.targetingTime= targetingTime;
 
 
     public setSpeed(speed: BasicDecimal){
-var speed = speed
 this.speed= speed;
     
 }
 
 
     public getDamage(range: number): number{
-var range = range
 
 
 

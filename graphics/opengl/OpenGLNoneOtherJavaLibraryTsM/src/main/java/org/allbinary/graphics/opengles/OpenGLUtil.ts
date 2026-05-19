@@ -49,7 +49,6 @@ export class OpenGLUtil
 
 
     public add(image: Image): Image{
-    //var image = image
 
 
 
@@ -64,7 +63,6 @@ export class OpenGLUtil
 
 
     public add(runnable: Runnable){
-    //var runnable = runnable
 }
 
 

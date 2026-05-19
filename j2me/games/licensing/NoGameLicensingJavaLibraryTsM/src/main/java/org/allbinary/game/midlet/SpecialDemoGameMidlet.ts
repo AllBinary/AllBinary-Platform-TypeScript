@@ -53,11 +53,7 @@ export class SpecialDemoGameMidlet extends DemoGameMidlet {
         
 public constructor (clientInformationFactory: ClientInformationFactory, licenseLoadingType: LicenseLoadingType, demoSetupFactory: LicensedDemoSetupFactory, licenseCheckRunnableFactory: LicenseCheckRunnableFactory){
             super(clientInformationFactory);
-                        //var clientInformationFactory = clientInformationFactory
-    //var licenseLoadingType = licenseLoadingType
-    //var demoSetupFactory = demoSetupFactory
-    //var licenseCheckRunnableFactory = licenseCheckRunnableFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

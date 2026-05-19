@@ -55,8 +55,6 @@ export class OpenGLGLUUtils
 
 
     public makeByteBuffer(bmp: OpenGLBitmap, flip: boolean): ByteBuffer{
-    //var bmp = bmp
-    //var flip = flip
 
 
 
@@ -66,14 +64,6 @@ export class OpenGLGLUUtils
 
 
     public texImage2D(gl: GL10, glVersion: string, target: number, level: number, generateMipMap: boolean, openGLESImage: OpenGLESImage, border: number, flip: boolean){
-    //var gl = gl
-    //var glVersion = glVersion
-    //var target = target
-    //var level = level
-    //var generateMipMap = generateMipMap
-    //var openGLESImage = openGLESImage
-    //var border = border
-    //var flip = flip
 
 
 
@@ -83,14 +73,6 @@ export class OpenGLGLUUtils
 
 
     public texImage2D(gl: GL10, glVersion: string, target: number, level: number, generateMipMap: boolean, bitmap: OpenGLBitmap, border: number, flip: boolean){
-    //var gl = gl
-    //var glVersion = glVersion
-    //var target = target
-    //var level = level
-    //var generateMipMap = generateMipMap
-    //var bitmap = bitmap
-    //var border = border
-    //var flip = flip
 
 
 

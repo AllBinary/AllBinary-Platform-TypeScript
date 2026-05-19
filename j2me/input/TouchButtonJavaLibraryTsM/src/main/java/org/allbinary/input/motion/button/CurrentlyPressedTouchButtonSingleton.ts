@@ -81,7 +81,6 @@ protected constructor (){
 
 
     public removeAt(index: number): TouchButtonInput{
-var index = index
 
 
 
@@ -92,7 +91,6 @@ var index = index
 
 
     public remove(touchButtonInput: TouchButtonInput): boolean{
-var touchButtonInput = touchButtonInput
 
 
 
@@ -103,7 +101,6 @@ var touchButtonInput = touchButtonInput
 
 
     public get(index: number): TouchButtonInput{
-var index = index
 
 
 
@@ -114,7 +111,6 @@ var index = index
 
 
     public contains(touchButtonInput: TouchButtonInput): boolean{
-var touchButtonInput = touchButtonInput
 
 
 
@@ -125,7 +121,6 @@ var touchButtonInput = touchButtonInput
 
 
     public add(touchButtonInput: TouchButtonInput){
-var touchButtonInput = touchButtonInput
 this.list.add(touchButtonInput);
     
 }

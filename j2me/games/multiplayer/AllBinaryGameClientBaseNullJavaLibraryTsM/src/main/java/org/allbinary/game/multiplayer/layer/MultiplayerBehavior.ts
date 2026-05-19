@@ -52,8 +52,7 @@ export class MultiplayerBehavior
 protected constructor (username: string){
 
             super();
-        var username = username
-}
+        }
 
 
     public startTick(){

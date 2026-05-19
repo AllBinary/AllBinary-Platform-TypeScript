@@ -76,15 +76,12 @@ export class GameFeatureItemCommandListener
 public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
-        var gameOptionsForm = gameOptionsForm
-this.gameOptionsForm= gameOptionsForm;
+        this.gameOptionsForm= gameOptionsForm;
     
 }
 
 
     public commandAction(command: Command, item: Item){
-var command = command
-var item = item
 
         try {
             

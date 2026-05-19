@@ -63,12 +63,10 @@ export class DisposalUtil
 
 
     public disposeImage(image: Image){
-    //var image = image
 }
 
 
     public disposeResource(resource: Resource){
-    //var resource = resource
 
                         if(!resource.isDisposed())
                         

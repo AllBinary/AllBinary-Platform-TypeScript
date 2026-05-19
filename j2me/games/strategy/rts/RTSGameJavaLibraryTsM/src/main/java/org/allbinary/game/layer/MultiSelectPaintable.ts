@@ -76,7 +76,6 @@ public constructor (){
 
 
     public update(list: BasicArrayList){
-var list = list
 this.clear();
     
 
@@ -159,7 +158,6 @@ this.rootNameList!.clear();
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.setColor(this.backgroundColor);
     
 graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight());

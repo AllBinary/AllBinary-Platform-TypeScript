@@ -75,8 +75,6 @@ export class DecalAnimationInterfaceFactory
                 //@Throws(Exception.constructor)
             
     public getAnimationFactory(basicGameResources: BasicGameResources, basicColor: BasicColor): AnimationInterfaceFactoryInterface{
-    //var basicGameResources = basicGameResources
-    //var basicColor = basicColor
 
     var animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface
 ;

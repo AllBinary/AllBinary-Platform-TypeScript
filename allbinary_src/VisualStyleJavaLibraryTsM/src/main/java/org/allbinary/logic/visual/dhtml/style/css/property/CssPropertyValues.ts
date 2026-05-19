@@ -89,8 +89,7 @@ public constructor (){
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var indexPropertyValueHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
     
@@ -242,7 +241,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

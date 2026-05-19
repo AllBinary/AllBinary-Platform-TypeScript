@@ -120,7 +120,6 @@ this.clear();
 
 
     public addMapping(inputToGameKeyMapping: InputToGameKeyMapping){
-    //var inputToGameKeyMapping = inputToGameKeyMapping
 
 
 
@@ -148,8 +147,6 @@ index >= 0; index--)
 
 
     addAll(input: Input, list: BasicArrayList){
-var input = input
-var list = list
 
 
 
@@ -170,8 +167,6 @@ this.add(input, mappedToInput);
 
 
     public add(input: Input, mappedToInput: Input){
-var input = input
-var mappedToInput = mappedToInput
 super.add(input, mappedToInput);
     
 this.set(input, mappedToInput);
@@ -180,8 +175,6 @@ this.set(input, mappedToInput);
 
 
     public remove(input: Input, mappedToInput: Input){
-var input = input
-var mappedToInput = mappedToInput
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(StringUtil.getInstance()!.toString(input))!.append(" == ")!.append(StringUtil.getInstance()!.toString(mappedToInput))!.toString(), this, "InputToGameKeyMapping::remove");
     
@@ -193,8 +186,6 @@ this.set(input, this.gameKeyFactory!.NONE);
 
 
     set(input: Input, mappedToInput: Input){
-var input = input
-var mappedToInput = mappedToInput
 
     var id: number = mappedToInput!.getId()!;
 ;
@@ -222,7 +213,6 @@ var mappedToInput = mappedToInput
 
 
     public getReverseInstance(id: number): BasicArrayList{
-var id = id
 
     var list: BasicArrayList = new BasicArrayListD();
 ;
@@ -275,8 +265,6 @@ index < this.platformToGameKeyMapping!.length; index++)
                 //@Throws(Exception.constructor)
             
     initGameKey(canvas: Canvas, gameKey: GameKey){
-var canvas = canvas
-var gameKey = gameKey
 
     var key: number = canvas.getKeyCode(gameKey!.getId())!;
 ;
@@ -319,7 +307,6 @@ var gameKey = gameKey
                 //@Throws(Exception.constructor)
             
     getSmallestCanvasGameKeyCode(canvas: Canvas): number{
-var canvas = canvas
 
     var nextKey: number = 0;
 ;
@@ -360,7 +347,6 @@ nextKey= canvas.getKeyCode(this.mappedGameKeys[index]!.getId());
 
 
     public init(canvas: Canvas){
-var canvas = canvas
 
         try {
             
@@ -431,8 +417,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
 
     public getInstanceForCanvas(canvas: Canvas, id: number): GameKey{
-var canvas = canvas
-var id = id
 
                         if(id >= 0 && id < this.platformToGameKeyMapping!.length)
                         
@@ -473,7 +457,6 @@ var id = id
 
 
     public getInstance(id: number): GameKey{
-var id = id
 
                         if(id >= 0 && id < this.platformToGameKeyMapping!.length)
                         

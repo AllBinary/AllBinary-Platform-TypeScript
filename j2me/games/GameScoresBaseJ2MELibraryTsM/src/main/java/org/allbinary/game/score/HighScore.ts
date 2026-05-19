@@ -72,11 +72,7 @@ export class HighScore
 public constructor (id: number, name: string, gameInfo: GameInfo, score: number){
 
             super();
-        var id = id
-var name = name
-var gameInfo = gameInfo
-var score = score
-this.id= id;
+        this.id= id;
     
 this.name= name;
     
@@ -164,7 +160,6 @@ outputStream!.writeLong(this.getScore());
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }

@@ -24,8 +24,6 @@
         
             import { Exception } from '../../../../../../java/lang/Exception.js';
         
-import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
 import { AllBinaryEventObject } from '../../../../../../org/allbinary/logic/util/event/AllBinaryEventObject.js';
       
 import { EventListenerInterface } from '../../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
@@ -82,7 +80,6 @@ private constructor (){
 
 
     public addListener(analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface){
-var analogControllerConfigurationEventListenerInterface = analogControllerConfigurationEventListenerInterface
 
                         if(!this.list.contains(analogControllerConfigurationEventListenerInterface))
                         
@@ -104,7 +101,6 @@ super.removeAllListeners();
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -115,7 +111,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
 
 
@@ -150,8 +145,6 @@ super.fireEvent(eventObject);
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-    //var eventObject = eventObject
-    //var eventListenerInterface = eventListenerInterface
 
     var analogControllerConfigurationEventListenerInterface: AnalogControllerConfigurationEventListenerInterface = (eventListenerInterface as AnalogControllerConfigurationEventListenerInterface);
 ;

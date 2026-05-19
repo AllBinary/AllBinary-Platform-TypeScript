@@ -70,8 +70,7 @@ export class EmailServerConfigurationView
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var childNodeList: NodeList = node.getChildNodes()!;
 ;
     
@@ -94,8 +93,7 @@ this.emailServerConfigurationInterface= new EmailServerConfiguration(accountName
 public constructor (emailServerConfigurationInterface: EmailServerConfigurationInterface){
 
             super();
-        var emailServerConfigurationInterface = emailServerConfigurationInterface
-this.emailServerConfigurationInterface= emailServerConfigurationInterface;
+        this.emailServerConfigurationInterface= emailServerConfigurationInterface;
     
 }
 
@@ -113,7 +111,6 @@ this.emailServerConfigurationInterface= emailServerConfigurationInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var emailConfigurationMapping: EmailServerConfigurationMapping = new EmailServerConfigurationMapping(this.emailServerConfigurationInterface);
 ;

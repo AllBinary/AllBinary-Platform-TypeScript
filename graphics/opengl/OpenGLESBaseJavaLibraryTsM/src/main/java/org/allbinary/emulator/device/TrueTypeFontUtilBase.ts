@@ -93,8 +93,7 @@ export class TrueTypeFontUtilBase
 public constructor (scale: number){
 
             super();
-            //var scale = scale
-
+        
     var shortPattern: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;
     
@@ -144,7 +143,6 @@ this.actualCellsPerRow= this.textureSize /this.cellSize;
 
 
     public getAsTextureSize(textureSize: number): number{
-var textureSize = textureSize
 
                         if(textureSize <= 64)
                         
@@ -200,7 +198,6 @@ var textureSize = textureSize
 
 
     public getCellSize(cellSize: number): number{
-var cellSize = cellSize
 
                         if(cellSize <= 16)
                         

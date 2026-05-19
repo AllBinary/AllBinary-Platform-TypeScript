@@ -100,8 +100,7 @@ export class AbSqlRow extends AbSqlColumn {
     private readonly INSERT_END: string = "')";
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
-                        //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -110,7 +109,6 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getValue(value: string): string{
-    //var value = value
 
                         if(StringValidationUtil.getInstance()!.isEmpty(value))
                         
@@ -139,9 +137,6 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
-    //var key = key
-    //var value = value
-    //var updatedKeyValuePairs = updatedKeyValuePairs
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -265,8 +260,6 @@ this.executeSQLStatement(sqlStatement);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(whereKeyValuePairs: HashMap<any, any>, updatedKeyValuePairs: HashMap<any, any>){
-    //var whereKeyValuePairs = whereKeyValuePairs
-    //var updatedKeyValuePairs = updatedKeyValuePairs
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -448,8 +441,6 @@ this.executeSQLStatement(sqlStatement);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public deleteWhere(key: string, value: string){
-    //var key = key
-    //var value = value
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -507,7 +498,6 @@ this.executeSQLStatement(sqlStatement);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public deleteWhere(keysAndValues: HashMap<any, any>){
-    //var keysAndValues = keysAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -604,7 +594,6 @@ this.executeSQLStatement(sqlStatement);
 
 
     public insert(values: Vector){
-    //var values = values
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -683,7 +672,6 @@ this.executeSQLStatement(sqlStatement);
 
 
     public getRow(keysAndValues: HashMap<any, any>): HashMap<any, any>{
-    //var keysAndValues = keysAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -857,7 +845,6 @@ result.put(columnName, field);
 
 
     public getRows(keysAndValues: HashMap<any, any>): Vector{
-    //var keysAndValues = keysAndValues
 
 
 
@@ -868,8 +855,6 @@ result.put(columnName, field);
 
 
     public getRows(keysAndValues: HashMap<any, any>, more: string): Vector{
-    //var keysAndValues = keysAndValues
-    //var more = more
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -1146,10 +1131,6 @@ rows.add(result);
 
 
     public getRowsWhereBetween(whereKeyValuePairs: HashMap<any, any>, betweenColumn: string, smallest: string, largest: string): Vector{
-    //var whereKeyValuePairs = whereKeyValuePairs
-    //var betweenColumn = betweenColumn
-    //var smallest = smallest
-    //var largest = largest
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -1339,9 +1320,6 @@ rows.add(result);
 
 
     public getRowsWhereBetween(betweenColumn: string, smallest: string, largest: string): Vector{
-    //var betweenColumn = betweenColumn
-    //var smallest = smallest
-    //var largest = largest
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

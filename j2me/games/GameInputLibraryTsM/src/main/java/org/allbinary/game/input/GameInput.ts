@@ -70,9 +70,7 @@ export class GameInput
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList){
 
             super();
-            //var gameKeyEventList = gameKeyEventList
-    //var removalGameKeyEventList = removalGameKeyEventList
-this.gameKeyEventList= gameKeyEventList;
+        this.gameKeyEventList= gameKeyEventList;
     
 this.removalGameKeyEventList= removalGameKeyEventList;
     
@@ -83,7 +81,6 @@ this.isRemoveDuplicateKeyPresses= Features.getInstance()!.isFeature(InputFeature
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public add(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 
                         if(this.isRemoveDuplicateKeyPresses && this.gameKeyEventList!.contains(gameKeyEvent))
                         
@@ -119,7 +116,6 @@ var gameKeyEvent = gameKeyEvent
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addForRemoval(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 this.removalGameKeyEventList!.add(gameKeyEvent);
     
 }
@@ -127,7 +123,6 @@ this.removalGameKeyEventList!.add(gameKeyEvent);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isForRemoval(gameKeyEvent: GameKeyEvent): boolean{
-var gameKeyEvent = gameKeyEvent
 
 
 

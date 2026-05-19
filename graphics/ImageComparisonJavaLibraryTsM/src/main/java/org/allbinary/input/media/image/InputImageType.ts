@@ -61,7 +61,6 @@ export class InputImageType
     public static MOTION: InputImageType = new InputImageType("Motion", 2);
 
     public static getInstance(imageTypeString: string): InputImageType{
-var imageTypeString = imageTypeString
 
 
 
@@ -87,9 +86,7 @@ var imageTypeString = imageTypeString
 private constructor (name: string, index: number){
 
             super();
-        var name = name
-var index = index
-this.name= name;
+        this.name= name;
     
 this.index= index;
     

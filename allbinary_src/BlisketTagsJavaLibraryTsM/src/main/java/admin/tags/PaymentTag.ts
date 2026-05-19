@@ -81,7 +81,6 @@ this.setTagRequestHelperFactory(new PaymentHelperFactory());
 
 
     public setStoreName(value: string){
-var value = value
 this.storeName= value;
     
 }
@@ -175,7 +174,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                         
                                     {
                                     
-                        if(this.getCommand()!.localeCompare(PaymentData.SELECT) == 0)
+                        if(this.getCommand()!.compareTo(PaymentData.SELECT) == 0)
                         
                                     {
                                     

@@ -67,7 +67,6 @@ export class NullAllBinaryGameCanvas
 
 
     public addCommand(cmd: Command){
-var cmd = cmd
 
 
 
@@ -95,7 +94,6 @@ var cmd = cmd
 
 
     public removeCommand(cmd: Command){
-var cmd = cmd
 
 
 
@@ -105,7 +103,6 @@ var cmd = cmd
 
 
     public setCommandListener(l: CommandListener){
-var l = l
 
 
 

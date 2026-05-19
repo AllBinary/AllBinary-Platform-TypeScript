@@ -61,9 +61,7 @@ export class BasicProfileActionScriptProcessor extends ProfileActionScriptItem i
         
 public constructor (label: string, node: Node){
             super(label, node);
-                    var label = label
-var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -71,8 +69,7 @@ var node = node
 
 public constructor (label: string){
             super(label);
-                    var label = label
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,11 +77,10 @@ public constructor (label: string){
 
 
     public actionPerformed(actionEvent: ActionEvent){
-var actionEvent = actionEvent
 super.actionPerformed(actionEvent);
     
 
-                        if(actionEvent!.getActionCommand()!.localeCompare(DELETE) == 0)
+                        if(actionEvent!.getActionCommand()!.compareTo(DELETE) == 0)
                         
                                     {
                                     
@@ -111,7 +107,6 @@ JTreeInterfaceFactory.getInstance()!.getJTreeInterface()!.updateJTree();
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(GenericProfileActionScriptProcessorData.NAME)!;
 ;

@@ -72,11 +72,6 @@ export class BaseImageAnimationFactory
                 //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, sequenceArray: number[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): BaseImageAnimationFactory{
-    //var image = image
-    //var sequenceArray = sequenceArray
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -100,14 +95,7 @@ export class BaseImageAnimationFactory
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var image = image
-    //var sequenceArray = sequenceArray
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.animationFactoryInitializationVisitor= new AnimationFactoryInitializationVisitor();
+        this.animationFactoryInitializationVisitor= new AnimationFactoryInitializationVisitor();
     
 this.image= image;
     
@@ -129,7 +117,6 @@ this.animationFactoryInitializationVisitor!.dy= dy;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -192,7 +179,6 @@ stringBuffer!.append(this.animationFactoryInitializationVisitor!.toString());
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 this.scaleProperties= scaleProperties;
     
 

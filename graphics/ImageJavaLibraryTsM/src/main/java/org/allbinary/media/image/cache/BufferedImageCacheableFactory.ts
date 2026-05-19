@@ -58,7 +58,6 @@ public constructor (){
 
 
     public getInstance(key: any = {}): CacheableInterface{
-var key = key
 
 
 

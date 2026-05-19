@@ -54,8 +54,6 @@ export class CacheInterfaceFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(cacheType: CacheType, cachePolicy: CachePolicy): CacheInterface{
-var cacheType = cacheType
-var cachePolicy = cachePolicy
 
 
 

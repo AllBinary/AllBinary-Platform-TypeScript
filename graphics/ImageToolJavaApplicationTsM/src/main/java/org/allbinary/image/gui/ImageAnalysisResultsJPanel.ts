@@ -65,8 +65,7 @@ export class ImageAnalysisResultsJPanel extends javax.swing.JPanel {
 public constructor (imageAnalysisResultsArray: ImageAnalysisResults[]){
 
             super();
-            //var imageAnalysisResultsArray = imageAnalysisResultsArray
-this.initComponents();
+        this.initComponents();
     
 
     var imageAnalysisResults: ImageAnalysisResults = imageAnalysisResultsArray[0]!;
@@ -201,7 +200,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     updateImageColorRangeResults(imageAnalysisResults: ImageAnalysisResults){
-    //var imageAnalysisResults = imageAnalysisResults
 
     var imageColorRangeResults: ImageColorRangeResults = imageAnalysisResults!.getImageColorRangeResults()!;
 ;

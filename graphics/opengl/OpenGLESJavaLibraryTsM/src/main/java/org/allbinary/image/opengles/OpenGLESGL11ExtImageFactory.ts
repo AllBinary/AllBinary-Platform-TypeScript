@@ -53,9 +53,6 @@ export class OpenGLESGL11ExtImageFactory extends OpenGLImageFactory {
         
 
     public getInstance(image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory): Image{
-    //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
 
 
 

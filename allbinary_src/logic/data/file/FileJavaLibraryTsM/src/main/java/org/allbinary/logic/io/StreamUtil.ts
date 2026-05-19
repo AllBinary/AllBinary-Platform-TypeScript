@@ -82,9 +82,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public get(inputStream: InputStream, outputStream: OutputStream, buffer: number[]): OutputStream{
-    //var inputStream = inputStream
-    //var outputStream = outputStream
-var buffer = buffer
 
     var len: number = 0;
 ;
@@ -124,9 +121,6 @@ outputStream!.write(buffer, 0, len);
                 //@Throws(Exception.constructor)
             
     public getByteArray(inputStream: InputStream, outputStream2: ByteArrayOutputStream, byteArray: number[]): number[]{
-    //var inputStream = inputStream
-    //var outputStream2 = outputStream2
-    //var byteArray = byteArray
 
     var outputStream: ByteArrayOutputStream = outputStream2;
 ;
@@ -162,7 +156,6 @@ outputStream!.write(buffer, 0, len);
 
 
     public close(closeable: Closeable): boolean{
-var closeable = closeable
 
         try {
             

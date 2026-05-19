@@ -76,7 +76,6 @@ private constructor (){
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;

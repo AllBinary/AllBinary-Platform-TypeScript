@@ -108,7 +108,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public process(sourceLayerInterface: AllBinaryLayer){
-var sourceLayerInterface = sourceLayerInterface
 this.pool.visit(sourceLayerInterface);
     
 }

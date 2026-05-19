@@ -68,7 +68,6 @@ export class DatabaseEncoder
         
 
     public static encode(value: number[]): string{
-var value = value
 
         try {
             
@@ -129,7 +128,6 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, "DatabaseEncoder", "decode", e);
 
 
     public static decode(value: string): number[]{
-var value = value
 
         try {
             

@@ -88,12 +88,7 @@ export class AllBinaryHTMLImageRotationAnimation extends ImageBaseRotationAnimat
     private alphaProcessor: AlphaBaseProcessor = AlphaBaseProcessor.getInstance()!;
 protected constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
-                        //var originalImage = originalImage
-    //var image = image
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -113,7 +108,6 @@ this.canvasSurfaceArray[1]= this.getCanvasSurface(this.twoImages[1]!);
 
 
     public getCanvasSurface(image: Image): CanvasSurface{
-    //var image = image
 
     var htmlImage: PlaynMutableImage = image as PlaynMutableImage;
 ;
@@ -138,7 +132,6 @@ canvasSurface!.translate(this.originalImage!.getWidth() /2, this.originalImage!.
 
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 
     var changed: boolean = false;
 ;
@@ -169,7 +162,6 @@ super.setBasicColorP(basicColor);
 
 
     public setAlpha(alpha: number){
-    //var alpha = alpha
 
     var changed: boolean = false;
 ;
@@ -236,7 +228,6 @@ this.swap();
 
 
     public setFrame(index: number){
-    //var index = index
 super.setFrame(index);
     
 this.updateImage();
@@ -266,9 +257,6 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 graphics.drawImage(this.imageToShow, x, y, this.anchor);
     
 }

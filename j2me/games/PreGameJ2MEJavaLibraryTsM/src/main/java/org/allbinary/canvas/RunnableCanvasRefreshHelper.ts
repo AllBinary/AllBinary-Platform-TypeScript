@@ -51,8 +51,7 @@ export class RunnableCanvasRefreshHelper extends Processor {
 public constructor (runnableCanvas: MyCanvas){
 
             super();
-        var runnableCanvas = runnableCanvas
-this.runnableCanvas= runnableCanvas;
+        this.runnableCanvas= runnableCanvas;
     
 }
 

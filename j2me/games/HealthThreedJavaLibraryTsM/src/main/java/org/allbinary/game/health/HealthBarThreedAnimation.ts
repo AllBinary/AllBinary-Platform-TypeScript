@@ -76,9 +76,7 @@ export class HealthBarThreedAnimation extends HealthBarAnimation {
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
 public constructor (layerInterface: AllBinaryLayer, location: number){
             super(layerInterface, location);
-                    var layerInterface = layerInterface
-var location = location
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -194,7 +192,6 @@ number3dBufferList!.set(index++, col *w -width5, row *h -height5, 0);
 
 
     public onHealthChange(newX2: number){
-    //var newX2 = newX2
 super.onHealthChange(newX2);
     
 this.updateColor();
@@ -207,10 +204,6 @@ this.updateSize();
     private readonly object3dProcessor: Object3dProcessor = Object3dProcessorUtil.getInstance()!.getInstanceObject3dProcessor()!;
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 
     var openGLESGraphics: OpenGLESGraphics = graphics as OpenGLESGraphics;
 ;

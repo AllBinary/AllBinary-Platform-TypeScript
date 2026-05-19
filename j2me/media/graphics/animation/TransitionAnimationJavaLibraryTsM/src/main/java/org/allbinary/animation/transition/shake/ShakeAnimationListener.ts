@@ -60,7 +60,6 @@ export class ShakeAnimationListener
 
 
     public onShakeEvent(shakeEvent: ShakeEvent){
-var shakeEvent = shakeEvent
 }
 
 

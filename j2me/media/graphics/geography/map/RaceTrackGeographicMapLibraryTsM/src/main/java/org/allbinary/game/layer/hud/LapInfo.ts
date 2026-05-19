@@ -56,8 +56,7 @@ export class LapInfo
 public constructor (totalLaps: number){
 
             super();
-        var totalLaps = totalLaps
-this.totalLaps= totalLaps;
+        this.totalLaps= totalLaps;
     
 this.numberOfLaps= 1;
     

@@ -80,10 +80,7 @@ export class AllBinaryGameLayerManager extends AllBinaryLayerManager {
 public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor, gameInfo: GameInfo){
 
             super();
-            //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-    //var gameInfo = gameInfo
-this.backgroundBasicColor= backgroundBasicColor;
+        this.backgroundBasicColor= backgroundBasicColor;
     
 this.foregroundBasicColor= foregroundBasicColor;
     
@@ -125,7 +122,6 @@ this.gameInfo= gameInfo;
 
 
     public setBackgroundBasicColor(backgroundBasicColor: BasicColor){
-    //var backgroundBasicColor = backgroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor;
     
 ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.intValue();
@@ -144,7 +140,6 @@ ItemColorFactory.getInstance()!.INVERT_PAINT= this.backgroundBasicColor!.intValu
 
 
     public setForegroundBasicColor(foregroundBasicColor: BasicColor){
-    //var foregroundBasicColor = foregroundBasicColor
 this.foregroundBasicColor= foregroundBasicColor;
     
 ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.intValue();
@@ -163,14 +158,12 @@ ItemColorFactory.getInstance()!.PAINT= this.foregroundBasicColor!.intValue();
 
 
     public setGameInfo(gameInfo: GameInfo){
-    //var gameInfo = gameInfo
 this.gameInfo= gameInfo;
     
 }
 
 
     public setLayerProcessorList(list: BasicArrayList){
-    //var list = list
 
     var layerProcessorInterfaceArray: LayerProcessor[] = new Array(list.size());
 ;
@@ -198,7 +191,6 @@ this.setLayerProcessorArray(layerProcessorInterfaceArray);
 
 
     public setPlayerGameInputCompositeInterface(playerGameInputCompositeInterface: PlayerGameInputCompositeInterface){
-    //var playerGameInputCompositeInterface = playerGameInputCompositeInterface
 this.playerGameInputCompositeInterface= playerGameInputCompositeInterface;
     
 }

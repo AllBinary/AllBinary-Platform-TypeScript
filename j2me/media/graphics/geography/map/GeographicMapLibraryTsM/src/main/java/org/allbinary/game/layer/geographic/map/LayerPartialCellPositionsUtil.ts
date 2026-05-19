@@ -73,9 +73,6 @@ export class LayerPartialCellPositionsUtil
                 //@Throws(Exception.constructor)
             
     public getAll(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, reusableList: BasicArrayList): BasicArrayList{
-var geographicMapInterface = geographicMapInterface
-var layerInterface = layerInterface
-var reusableList = reusableList
 reusableList!.clear();
     
 
@@ -142,11 +139,6 @@ reusableList!.clear();
                 //@Throws(Exception.constructor)
             
     public getAllDXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, dx: number, dy: number, reusableList: BasicArrayList): BasicArrayList{
-var geographicMapInterface = geographicMapInterface
-var layerInterface = layerInterface
-var dx = dx
-var dy = dy
-var reusableList = reusableList
 reusableList!.clear();
     
 

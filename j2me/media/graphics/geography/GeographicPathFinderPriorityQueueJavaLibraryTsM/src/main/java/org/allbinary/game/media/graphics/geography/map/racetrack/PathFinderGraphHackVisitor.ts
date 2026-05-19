@@ -52,11 +52,7 @@ export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor {
         
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
             super(geographicMapInterface, edgeMinimum, minPathWeight, maxPathWeight);
-                        //var geographicMapInterface = geographicMapInterface
-var edgeMinimum = edgeMinimum
-var minPathWeight = minPathWeight
-var maxPathWeight = maxPathWeight
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -66,9 +62,6 @@ var maxPathWeight = maxPathWeight
                 //@Throws(Exception.constructor)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
-var graph = graph
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
 this.fixStart(graph, startPathFindingNodeList);
     
 this.fixEnd(graph, endPathFindingNodeList);
@@ -81,44 +74,34 @@ this.fixOverPassEdges(graph);
                 //@Throws(Exception.constructor)
             
     fixStart(graph: any = {}, startPathFindingNodeList: BasicArrayList){
-var graph = graph
-var startPathFindingNodeList = startPathFindingNodeList
 }
 
 
                 //@Throws(Exception.constructor)
             
     fixEnd(graph: any = {}, endPathFindingNodeList: BasicArrayList){
-var graph = graph
-var endPathFindingNodeList = endPathFindingNodeList
 }
 
 
                 //@Throws(Exception.constructor)
             
     fixOverPassEdges(graph: any = {}){
-var graph = graph
 }
 
 
                 //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
-var pathList = pathList
 }
 
 
                 //@Throws(Exception.constructor)
             
     removeOverPassEdges(pathList: BasicArrayList){
-var pathList = pathList
 }
 
 
     public isValid(graphPath: any = {}): boolean{
-var graphPath = graphPath
 
 
 

@@ -110,12 +110,7 @@ export class AllBinaryJ2SEImageRotationAnimation extends ImageBaseRotationAnimat
     private scaleProcessor: ScaleBaseProcessor = ScaleProcessor.getInstance()!;
 public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(image, angleInfo, totalAngle, animationBehavior);
-                        //var originalImage = originalImage
-    //var image = image
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -133,7 +128,6 @@ this.twoImages[1]= ImageCopyUtil.getInstance()!.createImageForRotation(image);
 
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 
     var changed: boolean = false;
 ;
@@ -166,7 +160,6 @@ this.updateImage();
 
 
     public changeBasicColor(basicColor: BasicColor){
-    //var basicColor = basicColor
 
     var changed: boolean = false;
 ;
@@ -199,7 +192,6 @@ this.updateImage();
 
 
     public setAlpha(alpha: number){
-    //var alpha = alpha
 
     var changed: boolean = false;
 ;
@@ -230,8 +222,6 @@ this.updateImage();
 
 
     public setScale(scaleX: number, scaleY: number){
-    //var scaleX = scaleX
-    //var scaleY = scaleY
 this.scaleX= scaleX;
     
 this.scaleY= scaleY;
@@ -255,8 +245,6 @@ this.lastScaleY= this.scaleY;
 
 
     public setMaxScale(maxScaleX: number, maxScaleY: number){
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 this.maxScaleX= maxScaleX;
     
 this.maxScaleY= maxScaleY;
@@ -299,7 +287,6 @@ this.swap();
 
 
     public setFrame(index: number){
-    //var index = index
 super.setFrame(index);
     
 this.updateImage();
@@ -329,9 +316,6 @@ this.imageToShow= this.twoImages[this.bufferedImageIndex]!;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 graphics.drawImage(this.imageToShow, x, y, this.anchor);
     
 }

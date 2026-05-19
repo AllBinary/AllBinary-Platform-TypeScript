@@ -2265,7 +2265,6 @@ this.noDecimalTan[0]=  -174;
 
 
     public sin(angle: number): number{
-var angle = angle
 
 
 
@@ -2276,7 +2275,6 @@ var angle = angle
 
 
     public cos(angle: number): number{
-var angle = angle
 
 
 
@@ -2287,7 +2285,6 @@ var angle = angle
 
 
     public tan(angle: number): number{
-var angle = angle
 
 
 
@@ -2302,8 +2299,6 @@ var angle = angle
                 //@Throws(Exception.constructor)
             
     public antiTan(dx: number, dy: number): number{
-var dx = dx
-var dy = dy
 
     var MAX_VALUE: number = (Integer.MAX_VALUE);
 ;
@@ -2529,10 +2524,6 @@ stringBuffer!.appendint(dy);
                 //@Throws(Exception.constructor)
             
     public antiTanDebug(screenX: number, screenY: number, targetX: number, targetY: number): number{
-var screenX = screenX
-var screenY = screenY
-var targetX = targetX
-var targetY = targetY
 
     var METHOD_NAME: string = "antiTanDebug";
 ;

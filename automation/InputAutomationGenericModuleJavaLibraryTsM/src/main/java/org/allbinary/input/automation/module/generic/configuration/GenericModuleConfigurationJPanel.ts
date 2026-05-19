@@ -157,7 +157,6 @@ this.okNewProfileJButton!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okNewProfileJButtonActionPerformed(evt);
     
 }
@@ -195,7 +194,6 @@ this.genericProfilesJList!.addListSelectionListener(new class extends javax.swin
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
-var evt = evt
 genericProfilesJListValueChanged(evt);
     
 }
@@ -213,7 +211,6 @@ this.newProfileJButton!.addActionListener(new class extends java.awt.event.Actio
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 newProfileJButtonActionPerformed(evt);
     
 }
@@ -229,7 +226,6 @@ this.deleteProfileJButton!.addActionListener(new class extends java.awt.event.Ac
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 deleteProfileJButtonActionPerformed(evt);
     
 }
@@ -251,7 +247,6 @@ this.screenCaptureJRadioButton!.addActionListener(new class extends java.awt.eve
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 screenCaptureJRadioButtonActionPerformed(evt);
     
 }
@@ -275,7 +270,6 @@ this.savedCaptureJRadioButton!.addActionListener(new class extends java.awt.even
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 savedCaptureJRadioButtonActionPerformed(evt);
     
 }
@@ -295,7 +289,6 @@ this.captureMotionAnalysisJCheckBox!.addActionListener(new class extends java.aw
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 captureMotionAnalysisJCheckBoxActionPerformed(evt);
     
 }
@@ -315,7 +308,6 @@ this.captureComparisonJCheckBox!.addActionListener(new class extends java.awt.ev
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 captureComparisonJCheckBoxActionPerformed(evt);
     
 }
@@ -367,7 +359,6 @@ add(this.genericJTabbedPane);
 
 
     savedCaptureJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -399,7 +390,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "savedCaptureJRadioButton
 
 
     screenCaptureJRadioButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -431,7 +421,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "screenCaptureJRadioButto
 
 
     captureMotionAnalysisJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -463,7 +452,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckB
 
 
     captureComparisonJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -497,7 +485,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "captureComparisonJCheckB
                 //@Throws(Exception.constructor)
             
     updateProfileUI(profileNameString: string){
-var profileNameString = profileNameString
 this.getBlankGenericProfileActionsJPanel()!.removeAll();
     
 
@@ -673,7 +660,6 @@ this.logUtil!.putF(this.commonStrings!.END, this, "updateProfileOptions");
 
 
     public setBlankGenericProfileActionsJPanel(blankGenericProfileActionsJPanel: javax.swing.JPanel){
-var blankGenericProfileActionsJPanel = blankGenericProfileActionsJPanel
 this.blankGenericProfileActionsJPanel= blankGenericProfileActionsJPanel;
     
 }
@@ -690,7 +676,6 @@ this.blankGenericProfileActionsJPanel= blankGenericProfileActionsJPanel;
 
 
     setGenericProfiles(genericProfiles: GenericProfiles){
-var genericProfiles = genericProfiles
 this.genericProfiles= genericProfiles;
     
 }
@@ -707,14 +692,12 @@ this.genericProfiles= genericProfiles;
 
 
     public setSelectedGenericProfile(selectedGenericProfile: GenericProfile){
-var selectedGenericProfile = selectedGenericProfile
 this.selectedGenericProfile= selectedGenericProfile;
     
 }
 
 
     genericProfilesJListValueChanged(evt: javax.swing.event.ListSelectionEvent){
-var evt = evt
 
         try {
             
@@ -735,7 +718,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "genericProfilesJListValu
 
 
     deleteProfileJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -772,7 +754,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteProfileJButtonActi
 
 
     okNewProfileJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -801,7 +782,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okNewProfileJButtonActio
 
 
     newProfileJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.newProfileJDialog!.setVisible(true);
     
 }

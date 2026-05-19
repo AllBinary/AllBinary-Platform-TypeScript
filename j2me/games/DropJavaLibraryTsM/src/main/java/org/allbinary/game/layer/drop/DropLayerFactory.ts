@@ -102,7 +102,6 @@ this.list.clear();
 
 
     public add(layerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface){
-var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 this.list.add(layerInterfaceFactoryInterface);
     
 }

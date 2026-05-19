@@ -77,7 +77,6 @@ export class BasicHighScoresFactory extends HighScoresBase {
         
 
     public static loaded(index2: number): boolean{
-    //var index2 = index2
 
                         if(index2 >= 0)
                         
@@ -108,9 +107,7 @@ export class BasicHighScoresFactory extends HighScoresBase {
 public constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var softwareInformation = softwareInformation
-this.abeClientInformation= abeClientInformation;
+        this.abeClientInformation= abeClientInformation;
     
 this.softwareInformation= softwareInformation;
     
@@ -130,8 +127,6 @@ this.softwareInformation= softwareInformation;
     private readonly FETCH: string = "fetchHighScores";
 
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
-    //var gameInfo = gameInfo
-    //var highScoresResultsListener = highScoresResultsListener
 this.logUtil!.putF("Getting Remote/Local HighScores", this, this.FETCH);
     
 this.fetchHighScoresPreload(gameInfo, highScoresResultsListener, true);
@@ -140,9 +135,6 @@ this.fetchHighScoresPreload(gameInfo, highScoresResultsListener, true);
 
 
     public fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
-    //var gameInfo = gameInfo
-    //var highScoresResultsListener = highScoresResultsListener
-    //var preload = preload
 SecondaryThreadPool.getInstance()!.runTask(new class extends ARunnable
                                 {
                                 

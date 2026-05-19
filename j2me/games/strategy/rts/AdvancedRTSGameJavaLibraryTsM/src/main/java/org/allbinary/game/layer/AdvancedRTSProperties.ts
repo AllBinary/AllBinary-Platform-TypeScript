@@ -93,11 +93,7 @@ export class AdvancedRTSProperties
 public constructor (shakeListener: ShakeAnimationListener, vibration: AllBinaryVibrationME, duration: number, waypointBehaviorBase: TickableInterface){
 
             super();
-            //var shakeListener = shakeListener
-    //var vibration = vibration
-    //var duration = duration
-    //var waypointBehaviorBase = waypointBehaviorBase
-this.shakeListener= shakeListener;
+        this.shakeListener= shakeListener;
     
 this.vibration= vibration;
     

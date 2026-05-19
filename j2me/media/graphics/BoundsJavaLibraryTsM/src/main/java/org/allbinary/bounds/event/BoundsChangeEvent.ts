@@ -49,8 +49,7 @@ export class BoundsChangeEvent extends AllBinaryEventObject {
         
 public constructor (rectangle: Rectangle){
             super(rectangle);
-                    var rectangle = rectangle
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

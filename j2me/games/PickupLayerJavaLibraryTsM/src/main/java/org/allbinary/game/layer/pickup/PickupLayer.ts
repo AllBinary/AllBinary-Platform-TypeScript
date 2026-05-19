@@ -81,14 +81,7 @@ export class PickupLayer extends MultiPlayerGameLayer implements PickedUpLayerIn
     private animationInterface: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
 public constructor (name: string, remoteInfo: RemoteInfo, total: number, pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition){
             super(remoteInfo, BasicGroupFactory.getInstance()!.NONE_ARRAY, name, rectangle, viewPosition);
-                        //var name = name
-    //var remoteInfo = remoteInfo
-    //var total = total
-    //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
-    //var animationInterface = animationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -104,8 +97,6 @@ this.init(pickedUpLayerInterfaceFactoryInterface, animationInterface);
 
 
     public init(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, animationInterface: Animation){
-    //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
-    //var animationInterface = animationInterface
 this.pickedUpLayerInterfaceFactoryInterface= pickedUpLayerInterfaceFactoryInterface;
     
 this.animationInterface= animationInterface;
@@ -116,16 +107,12 @@ this.setDestroyed(false);
 
 
     public initXYZ(x: number, y: number, z: number){
-var x = x
-var y = y
-var z = z
 this.setPosition(x, y, z);
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
 ;
@@ -144,7 +131,6 @@ this.animationInterface!.paintXY(graphics, viewX, viewY);
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
 ;
@@ -189,7 +175,6 @@ this.setDestroyed(true);
 
 
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 this.destroyed= destroyed;
     
 
@@ -205,13 +190,10 @@ this.destroyed= destroyed;
 
 
     public damage(damage: number, damageType: number){
-var damage = damage
-var damageType = damageType
 }
 
 
     public getDamage(damageType: number): number{
-var damageType = damageType
 
 
 
@@ -224,7 +206,6 @@ var damageType = damageType
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-var gl = gl
 
     var openGLSurfaceChangedInterface: OpenGLSurfaceChangedInterface = this.animationInterface as OpenGLSurfaceChangedInterface;
 ;

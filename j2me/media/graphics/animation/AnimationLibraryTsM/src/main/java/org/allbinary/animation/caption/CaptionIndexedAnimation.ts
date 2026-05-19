@@ -87,16 +87,7 @@ export class CaptionIndexedAnimation extends IndexedAnimation {
     private player: Player
 public constructor (animationInterface: Animation, movieIndexedAnimationInterface: IndexedAnimation, player: Player, captionDx: number, captionDy: number, dx: number, dy: number, time: number, animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var animationInterface = animationInterface
-    //var movieIndexedAnimationInterface = movieIndexedAnimationInterface
-    //var player = player
-    //var captionDx = captionDx
-    //var captionDy = captionDy
-    //var dx = dx
-    //var dy = dy
-    //var time = time
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -187,7 +178,6 @@ this.movieIndexedAnimationInterface!.previousFrame();
 
 
     public setFrame(index: number){
-var index = index
 this.movieIndexedAnimationInterface!.setFrame(index);
     
 }
@@ -214,7 +204,6 @@ this.movieIndexedAnimationInterface!.setFrame(index);
 
 
     public setSequence(sequence: number[]){
-var sequence = sequence
 }
 
 
@@ -229,9 +218,6 @@ var sequence = sequence
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.animationInterface!.paintXY(graphics, x +this.captionDx, y +this.captionDy);
     
 this.movieIndexedAnimationInterface!.paintXY(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy);
@@ -240,10 +226,6 @@ this.movieIndexedAnimationInterface!.paintXY(graphics, x +this.captionDx +this.d
 
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 this.animationInterface!.paintThreed(graphics, x +this.captionDx, y +this.captionDy, z);
     
 this.movieIndexedAnimationInterface!.paintThreed(graphics, x +this.captionDx +this.dx, y +this.captionDy +this.dy, z);

@@ -68,9 +68,8 @@ export class LicenseTypeFactory
     public readonly NORMAL: LicenseType = new LicenseType("Normal");
 
     public getInstance(name: string): LicenseType{
-var name = name
 
-                        if(this.DEMO.getName()!.localeCompare(name) == 0)
+                        if(this.DEMO.getName()!.compareTo(name) == 0)
                         
                                     {
                                     
@@ -83,7 +82,7 @@ var name = name
                                     }
                                 
                              else 
-                        if(this.NORMAL.getName()!.localeCompare(name) == 0)
+                        if(this.NORMAL.getName()!.compareTo(name) == 0)
                         
                                     {
                                     

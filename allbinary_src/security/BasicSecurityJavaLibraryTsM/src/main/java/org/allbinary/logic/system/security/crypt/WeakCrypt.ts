@@ -71,8 +71,7 @@ export class WeakCrypt
 public constructor (key: number){
 
             super();
-        var key = key
-
+        
         try {
             this.abCrypt!.init(WeakCrypt.keys[key]!);
     
@@ -92,7 +91,6 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, "SuperCrypt(key)", e);
 
 
     public encrypt(value: string): string{
-var value = value
 
         try {
             
@@ -123,7 +121,6 @@ PreLogUtil.putOE("Encrypt Failed", this, "encrypt", e);
 
 
     public decrypt(value: string): string{
-var value = value
 
         try {
             

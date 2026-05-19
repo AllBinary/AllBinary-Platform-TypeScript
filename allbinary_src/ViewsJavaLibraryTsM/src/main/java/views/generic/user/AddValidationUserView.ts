@@ -71,8 +71,7 @@ export class AddValidationUserView extends HttpStoreComponentView implements Val
     user: UserInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -228,7 +227,6 @@ stringBuffer!.append("The User Name you selected is already in use.<br/>  Please
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

@@ -72,8 +72,7 @@ export class DeleteFileValidationView extends InventoryItemView implements Valid
     private id: string
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -164,7 +163,6 @@ this.itemInterface= InventoryEntityFactory.getInstance()!.getInventoryEntityInst
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

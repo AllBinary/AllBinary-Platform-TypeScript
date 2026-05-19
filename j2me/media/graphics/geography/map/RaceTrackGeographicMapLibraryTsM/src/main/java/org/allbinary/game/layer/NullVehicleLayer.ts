@@ -87,9 +87,6 @@ export class NullVehicleLayer
 
 
     public setPosition(x: number, y: number, z: number){
-var x = x
-var y = y
-var z = z
 
 
 
@@ -198,9 +195,6 @@ var z = z
 
 
     public moveDXYZ(dx: number, dy: number, dz: number){
-var dx = dx
-var dy = dy
-var dz = dz
 
 
 
@@ -210,7 +204,6 @@ var dz = dz
 
 
     public setVisible(visible: boolean){
-var visible = visible
 
 
 
@@ -310,7 +303,6 @@ var visible = visible
 
 
     public setRotationAnimationInterface(animationInterface: RotationAnimation){
-var animationInterface = animationInterface
 
 
 
@@ -376,7 +368,6 @@ var animationInterface = animationInterface
 
 
     public setGeographicMapCellHistoryArray(geographicMapCellHistory: GeographicMapCellHistory[]){
-var geographicMapCellHistory = geographicMapCellHistory
 
 
 
@@ -386,12 +377,10 @@ var geographicMapCellHistory = geographicMapCellHistory
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

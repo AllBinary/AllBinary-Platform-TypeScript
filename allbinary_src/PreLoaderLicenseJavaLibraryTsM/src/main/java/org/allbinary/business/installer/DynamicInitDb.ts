@@ -55,17 +55,14 @@ export class DynamicInitDb extends InitDb {
 public constructor (abeClientInformation: AbeClientInformationInterface){
 
             super();
-            //var abeClientInformation = abeClientInformation
-this.setHelper(InitDbHelperFactory.getInstance(abeClientInformation));
+        this.setHelper(InitDbHelperFactory.getInstance(abeClientInformation));
     
 }
 
 public constructor (abeClientInformation: AbeClientInformationInterface, databaseConnectionInfoInterface: DatabaseConnectionInfoInterface){
 
             super();
-            //var abeClientInformation = abeClientInformation
-var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-this.setHelper(InitDbHelperFactory.getInstance(abeClientInformation, databaseConnectionInfoInterface));
+        this.setHelper(InitDbHelperFactory.getInstance(abeClientInformation, databaseConnectionInfoInterface));
     
 }
 

@@ -72,8 +72,7 @@ export class AbSqlColumn extends AbSqlTable {
     private readonly INVALID_RESULT: string = "-1";
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
-                        //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,9 +80,6 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
 
     public getLargestIntegerInColumnWhere(columnName: string, key: string, value: string): string{
-    //var columnName = columnName
-    //var key = key
-    //var value = value
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -193,7 +189,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_LARGETS_INTEG
 
 
     public getColumn(columnName: string): Vector{
-    //var columnName = columnName
 
     var column: Vector = new Vector();
 ;
@@ -281,9 +276,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_COLUMN);
 
 
     public getColumnWhere(columnName: string, key: string, value: string): Vector{
-var columnName = columnName
-var key = key
-var value = value
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

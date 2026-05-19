@@ -82,7 +82,6 @@ this.setTableName(this.tableName);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -115,7 +114,6 @@ var values = values
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(DownloadItemData.ID, value);
@@ -148,14 +146,12 @@ var value = value
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(DownloadItemData.ID, updatedValues!.get(DownloadItemData.ID) as string, updatedValues);
     
 }
 
 
     public getForItem(id: string): Vector{
-var id = id
 
     var returnVector: Vector = new Vector();
 ;
@@ -209,8 +205,6 @@ returnVector!.add(new DownloadableItem(hashMap));
 
 
     public getForItem(id: string, downloadItemId: string): Vector{
-var id = id
-var downloadItemId = downloadItemId
 
     var returnVector: Vector = new Vector();
 ;

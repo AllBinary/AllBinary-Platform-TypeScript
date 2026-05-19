@@ -86,11 +86,7 @@ export class ClientInformation
 public constructor (name: string, version: string, specialName: string, shortName: string){
 
             super();
-            //var name = name
-    //var version = version
-    //var specialName = specialName
-    //var shortName = shortName
-this.name= name;
+        this.name= name;
     
 this.version= version;
     
@@ -169,7 +165,6 @@ this.init();
 
 
     public getLicenseServer(index: number): string{
-var index = index
 
 
 
@@ -238,9 +233,8 @@ clientInfoHashtable!.put(abeClientInformationData!.HARDWARE, hardwareString);
 
 
     public isSameId(alicenseId: string): boolean{
-var alicenseId = alicenseId
 
-                        if(this.getLicenseId()!.localeCompare(alicenseId) == 0)
+                        if(this.getLicenseId()!.compareTo(alicenseId) == 0)
                         
                                     {
                                     
@@ -266,7 +260,6 @@ var alicenseId = alicenseId
 
 
     public isLargerOrDifferentServerList(list: BasicArrayList): boolean{
-var list = list
 
     var size: number = list.size() -1;
 ;
@@ -313,7 +306,7 @@ index2 >= 0; index2--)
 ;
     
 
-                        if(newServerName!.localeCompare(nextOldServerName) != 0)
+                        if(newServerName!.compareTo(nextOldServerName) != 0)
                         
                                     {
                                     
@@ -339,7 +332,6 @@ index2 >= 0; index2--)
 
 
     setHardSale(hardSale: boolean){
-var hardSale = hardSale
 this.hardSale= hardSale;
     
 }
@@ -356,21 +348,18 @@ this.hardSale= hardSale;
 
 
     setOperatingSystemInterface(operatingSystemInterface: GenericOperatingSystem){
-var operatingSystemInterface = operatingSystemInterface
 this.operatingSystemInterface= operatingSystemInterface;
     
 }
 
 
     setLicenseId(licenseId: string){
-var licenseId = licenseId
 this.licenseId= licenseId;
     
 }
 
 
     setLicenseServers(licenseServers: BasicArrayList){
-var licenseServers = licenseServers
 this.licenseServers= licenseServers;
     
 }

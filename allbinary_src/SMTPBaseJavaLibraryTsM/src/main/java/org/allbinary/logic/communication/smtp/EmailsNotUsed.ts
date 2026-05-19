@@ -80,7 +80,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

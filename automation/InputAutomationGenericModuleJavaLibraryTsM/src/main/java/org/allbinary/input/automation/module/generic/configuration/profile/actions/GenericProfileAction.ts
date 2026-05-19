@@ -78,9 +78,7 @@ export class GenericProfileAction
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node){
 
             super();
-        var genericProfileActionJPanel = genericProfileActionJPanel
-var node = node
-
+        
     var actionNameNode: Node = DomSearchHelper.getNode(GenericProfileActionData.NAME, node.getChildNodes())!;
 ;
     
@@ -111,8 +109,7 @@ this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericPr
 public constructor (name: string){
 
             super();
-        var name = name
-this.name= name;
+        this.name= name;
     
 this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericProfileActionJPanel));
     
@@ -130,7 +127,6 @@ this.setGenericProfileActionScript(new GenericProfileActionScript(this.genericPr
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -157,7 +153,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionData.NAME, this.toHashMap())!;
 ;
@@ -184,7 +179,6 @@ node.appendChild(getGenericProfileActionScript()!.toXmlNode(document));
 
 
     public setGenericProfileActionScript(genericProfileActionScript: GenericProfileActionScript){
-var genericProfileActionScript = genericProfileActionScript
 this.genericProfileActionScript= genericProfileActionScript;
     
 }

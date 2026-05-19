@@ -63,17 +63,7 @@ export class VisualWaypointLayer extends WaypointLayer {
         
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
             super(remoteInfo, parentLayer, groupInterface, rootName, name, animationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y);
-                        //var remoteInfo = remoteInfo
-    //var parentLayer = parentLayer
-    //var groupInterface = groupInterface
-    //var rootName = rootName
-    //var name = name
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var proceduralAnimationInterfaceFactoryInterface = proceduralAnimationInterfaceFactoryInterface
-    //var rectangle = rectangle
-    //var x = x
-    //var y = y
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

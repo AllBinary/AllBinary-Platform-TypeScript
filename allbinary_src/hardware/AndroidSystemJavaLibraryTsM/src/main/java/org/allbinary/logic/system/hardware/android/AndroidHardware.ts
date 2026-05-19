@@ -118,7 +118,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     init(filePath: string){
-    //var filePath = filePath
 
     var lineNumberReader: Closeable = NullCloseable.NULL_CLOSEABLE;
 ;
@@ -161,7 +160,6 @@ this.logUtil!.put("Hardware Data: " +this.toString(), this, this.commonStrings!.
                 //@Throws(Exception.constructor)
             
     get(filePath: string): LineNumberReader{
-    //var filePath = filePath
 this.componentInterfaceVector= new BasicArrayListD();
     
 
@@ -199,7 +197,6 @@ this.componentInterfaceVector!.add(new UnknownHardware(nextLine));
 
 
     public getComponent(index: number): HardwareComponentInterface{
-var index = index
 
 
 
@@ -245,8 +242,7 @@ hardwareBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 }
 
 
-    public localeCompare(hardwareInterface: HardwareInterface): boolean{
-var hardwareInterface = hardwareInterface
+    public compareTo(hardwareInterface: HardwareInterface): boolean{
 
 
 
@@ -257,7 +253,6 @@ var hardwareInterface = hardwareInterface
 
 
     public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
-var hardwareInterface = hardwareInterface
 
 
 

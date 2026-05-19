@@ -53,8 +53,7 @@ export class ScrollMapLeftGameInputProcessor extends ScrollMapGameInputProcessor
         
 public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput){
             super(scrollMapPlayerGameInput);
-                    var scrollMapPlayerGameInput = scrollMapPlayerGameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,8 +63,6 @@ public constructor (scrollMapPlayerGameInput: ScrollMapPlayerGameInput){
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 this.scrollMapPlayerGameInput!.left();
     
 }

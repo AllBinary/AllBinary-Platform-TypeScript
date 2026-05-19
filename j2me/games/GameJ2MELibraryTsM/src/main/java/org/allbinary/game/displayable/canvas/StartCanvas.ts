@@ -281,14 +281,7 @@ export class StartCanvas extends RunnableCanvas implements GameCanvasRunnableInt
     private progressPaintable: PaintableInterface = ProgressCanvasFactory.getLazyInstance()!;
 public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, highScoresFactoryInterface: HighScoresFactoryInterface, paintable: Paintable, overlayPaintable: InitUpdatePaintable, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, isContinue: boolean){
             super(commandListener, CurrentDisplayableFactory.getInstance()!.DEFAULT_CHILD_NAME_LIST, true);
-                        //var abeClientInformation = abeClientInformation
-    //var commandListener = commandListener
-    //var highScoresFactoryInterface = highScoresFactoryInterface
-    //var paintable = paintable
-    //var overlayPaintable = overlayPaintable
-    //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
-    //var isContinue = isContinue
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -332,14 +325,12 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-var displayChangeEvent = displayChangeEvent
 
         try {
             
@@ -489,7 +480,6 @@ commandList!.add(gameCommandsFactory!.DISPLAY_ABOUT);
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.removeAllCommands();
     
 
@@ -535,7 +525,6 @@ AllBinaryMediaManager.init(EarlySoundsFactory.getInstance());
 
 
     public itemStateChanged(item: Item){
-var item = item
 ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }
@@ -578,37 +567,30 @@ GameKeyEventHandler.getInstance()!.removeListener(this.getMenuInputProcessor());
 
 
     public keyPressed(keyCode: number){
-var keyCode = keyCode
 this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
-var keyCode = keyCode
 this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
-var keyCode = keyCode
 this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 this.addGameKeyEvent(keyCode, false);
     
 }
 
 
     public keyReleasedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 this.removeGameKeyEvent(keyCode, false);
     
 }
@@ -617,8 +599,6 @@ this.removeGameKeyEvent(keyCode, false);
     private isSingleKeyRepeatableProcessing: boolean = this.features.isFeature(InputFeatureFactory.getInstance()!.SINGLE_KEY_REPEAT_PRESS)!;
 
     public keyRepeatedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 
                         if(this.isSingleKeyRepeatableProcessing)
                         
@@ -636,8 +616,6 @@ var deviceId = deviceId
     private readonly gameKeyEventFactory: GameKeyEventFactory = GameKeyEventFactory.getInstance()!;
 
     addGameKeyEvent(keyCode: number, repeated: boolean){
-var keyCode = keyCode
-var repeated = repeated
 
         try {
             
@@ -676,8 +654,6 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
 
 
     removeGameKeyEvent(keyCode: number, repeated: boolean){
-var keyCode = keyCode
-var repeated = repeated
 
         try {
             
@@ -776,7 +752,6 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public setLoadStateHashtable(hashtable: Hashtable<any, any>){
-var hashtable = hashtable
 this.logUtil!.putF("Trying to continue a demo lol - only continue a game canvas not the demo", this, "setLoadStateHashtable");
     
 }
@@ -811,12 +786,10 @@ this.logUtil!.putF("Trying to save the AI lol", this, "getCurrentStateHashtable"
 
 
     public setHighScoreSubmitted(isNotUsed: boolean){
-var isNotUsed = isNotUsed
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.paintableInterface!.paint(graphics);
     
 this.paintedSpecialAnimationInterface!.paintXY(graphics, 0, 0);
@@ -833,7 +806,6 @@ this.progressPaintable!.paint(graphics);
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 this.paintableInterface!.paintThreed(graphics);
     
 this.paintedSpecialAnimationInterface!.paintThreed(graphics, 0, 0, 0);
@@ -969,7 +941,6 @@ gameAdState!.processPageAdState();
                 //@Throws(Exception.constructor)
             
     createGameLayerManager(randomValue: number): AllBinaryGameLayerManager{
-var randomValue = randomValue
 
 
 
@@ -981,7 +952,6 @@ var randomValue = randomValue
                 //@Throws(Exception.constructor)
             
     createRunnable(randomLevel: number): GameCanvasRunnableInterface{
-var randomLevel = randomLevel
 
 
 
@@ -1151,7 +1121,6 @@ this.logUtil!.putF(this.commonStrings!.END_RUNNABLE, this, this.commonStrings!.R
 
 
     public setRunning(running: boolean){
-var running = running
 super.setRunning(running);
     
 
@@ -1215,7 +1184,6 @@ DisplayChangeEventHandler.getInstance()!.removeListener(this);
 
 
     public setGameState(gameState: GameState){
-var gameState = gameState
 }
 
 
@@ -1240,7 +1208,6 @@ var gameState = gameState
 
 
     setState(state: number){
-var state = state
 this.state= state;
     
 }
@@ -1269,7 +1236,6 @@ this.logUtil!.putF("Wow the AI got a high score!", this, "isHighScoreSubmitted")
 
 
     setSpecialAnimationInterface(specialAnimationInterface: SpecialAnimation){
-var specialAnimationInterface = specialAnimationInterface
 specialAnimationInterface!.setFrame(0);
     
 this.specialAnimationInterface= specialAnimationInterface;
@@ -1288,7 +1254,6 @@ this.specialAnimationInterface= specialAnimationInterface;
 
 
     setPaintableInterface(paintableInterface: PaintableInterface){
-var paintableInterface = paintableInterface
 this.paintableInterface= paintableInterface;
     
 }
@@ -1305,7 +1270,6 @@ this.paintableInterface= paintableInterface;
 
 
     setDefaultPaintableInterface(defaultPaintableInterface: Paintable){
-var defaultPaintableInterface = defaultPaintableInterface
 this.defaultPaintableInterface= defaultPaintableInterface;
     
 }
@@ -1332,7 +1296,6 @@ this.defaultPaintableInterface= defaultPaintableInterface;
 
 
     setMenuInputProcessor(menuInputProcessor: BasicMenuInputProcessor){
-var menuInputProcessor = menuInputProcessor
 this.menuInputProcessor= menuInputProcessor;
     
 }
@@ -1359,7 +1322,6 @@ this.menuInputProcessor= menuInputProcessor;
 
 
     public setMenuForm(menuForm: ScrollSelectionForm){
-var menuForm = menuForm
 this.menuForm= menuForm;
     
 }
@@ -1386,7 +1348,6 @@ this.menuForm= menuForm;
 
 
     setBasicGameDemoPaintable(basicGameDemoPaintable: StatePaintable){
-var basicGameDemoPaintable = basicGameDemoPaintable
 this.basicGameDemoPaintable= basicGameDemoPaintable;
     
 }
@@ -1403,7 +1364,6 @@ this.basicGameDemoPaintable= basicGameDemoPaintable;
 
 
     public setTempWait(tempWait: number){
-var tempWait = tempWait
 this.tempWait= tempWait;
     
 }

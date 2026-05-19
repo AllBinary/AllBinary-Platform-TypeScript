@@ -93,8 +93,6 @@ export class ZipFileUtil
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     public create(outFilename: string, fileBasicArrayList: BasicArrayList){
-var outFilename = outFilename
-var fileBasicArrayList = fileBasicArrayList
 
         try {
             
@@ -216,9 +214,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "create", e);
                 //@Throws(Exception.constructor)
             
     public unzip(path: string, zipFile: AbFile, fileName: string){
-var path = path
-var zipFile = zipFile
-var fileName = fileName
 
     var buffer: number[] = new Array(16384);
 ;

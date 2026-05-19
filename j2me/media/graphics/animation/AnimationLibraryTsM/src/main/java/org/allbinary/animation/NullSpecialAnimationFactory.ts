@@ -75,7 +75,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -88,7 +87,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-    //var animationInterface = animationInterface
 
 
 
@@ -99,7 +97,6 @@ private constructor (){
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

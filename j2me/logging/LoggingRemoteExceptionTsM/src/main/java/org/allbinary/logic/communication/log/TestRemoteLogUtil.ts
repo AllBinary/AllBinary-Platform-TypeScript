@@ -58,7 +58,6 @@ export class TestRemoteLogUtil
                 //@Throws(Exception.constructor)
             
     public static main(args: string[]){
-var args = args
 new TestRemoteLogUtil();
     
 }

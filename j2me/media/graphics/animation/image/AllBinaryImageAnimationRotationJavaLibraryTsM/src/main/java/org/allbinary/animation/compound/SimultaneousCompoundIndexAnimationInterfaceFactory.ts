@@ -65,9 +65,7 @@ export class SimultaneousCompoundIndexAnimationInterfaceFactory
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: AnimationInterfaceFactoryInterface[], animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
+        this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
     
 this.animationBehaviorFactory= animationBehaviorFactory;
     
@@ -77,7 +75,6 @@ this.animationBehaviorFactory= animationBehaviorFactory;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var size: number = this.basicAnimationInterfaceFactoryInterfaceArray!.length
                 ;
@@ -109,7 +106,6 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
     getOrCreate(animationInterfaceArray: IndexedAnimation[]): Animation{
-    //var animationInterfaceArray = animationInterfaceArray
 
 
 
@@ -130,7 +126,6 @@ animationInterfaceArray[index]= this.basicAnimationInterfaceFactoryInterfaceArra
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

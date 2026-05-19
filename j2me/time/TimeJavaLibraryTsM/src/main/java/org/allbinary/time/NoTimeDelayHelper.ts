@@ -66,7 +66,6 @@ public constructor (){
 
 
     public isTimeSinceTNT(delay: number): boolean{
-var delay = delay
 
 
 
@@ -77,7 +76,6 @@ var delay = delay
 
 
     public isTime(currentTime: number): boolean{
-var currentTime = currentTime
 
 
 
@@ -88,8 +86,6 @@ var currentTime = currentTime
 
 
     public isTimeSince(delay: number, currentTime: number): boolean{
-var delay = delay
-var currentTime = currentTime
 
 
 

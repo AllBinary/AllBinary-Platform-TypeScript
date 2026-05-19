@@ -71,8 +71,7 @@ export class Health
 public constructor (maxHealth: number){
 
             super();
-        var maxHealth = maxHealth
-this.setMaxHealth(maxHealth);
+        this.setMaxHealth(maxHealth);
     
 this.setHealth(maxHealth);
     
@@ -80,7 +79,6 @@ this.setHealth(maxHealth);
 
 
     public heal(ahealth: number){
-var ahealth = ahealth
 
     var newHealth: number = this.getHealth() +ahealth;
 ;
@@ -137,7 +135,6 @@ this.setHealth(this.getMaxHealth());
 
 
     public damage(ahealth: number){
-var ahealth = ahealth
 
                         if(ahealth < 0)
                         
@@ -212,14 +209,12 @@ this.setHealth(health);
 
 
     public setMaxHealth(maxHealth: number){
-var maxHealth = maxHealth
 this.maxHealth= maxHealth;
     
 }
 
 
     public setHealth(health: number){
-var health = health
 
                         if(health > this.getMaxHealth())
                         
@@ -269,7 +264,6 @@ var health = health
 
 
     public addListener(healthGraphic: HealthListenerInterface){
-var healthGraphic = healthGraphic
 this.healthListenerInterface= healthGraphic;
     
 }

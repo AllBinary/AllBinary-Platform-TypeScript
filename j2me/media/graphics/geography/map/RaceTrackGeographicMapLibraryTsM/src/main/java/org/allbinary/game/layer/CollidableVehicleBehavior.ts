@@ -67,8 +67,7 @@ export class CollidableVehicleBehavior extends CollidableDestroyableDamageableBe
     totalImpactVelocity: number = 0;
 public constructor (collidable: boolean){
             super(collidable);
-                        //var collidable = collidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,8 +77,6 @@ public constructor (collidable: boolean){
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
@@ -120,8 +117,6 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
 
 
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
     
 }
@@ -132,8 +127,6 @@ ForcedLogUtil.log("Don't Use Interface Version It Is Slower", this);
     private halfImpactVelocityY: number= 0
 
     collideVehicle(ownerLayer: CollidableCompositeLayer, vehiclePropertiesCompositeInterface: VehiclePropertiesCompositeInterface){
-    //var ownerLayer = ownerLayer
-    //var vehiclePropertiesCompositeInterface = vehiclePropertiesCompositeInterface
 
     var ownerVehicleLayerInterface: VehiclePropertiesCompositeInterface = (ownerLayer as VehiclePropertiesCompositeInterface);
 ;
@@ -198,7 +191,6 @@ this.totalImpactVelocity= impactVelocityX +impactVelocityY;
 
 
     collideFriction(vehiclePropertiesCompositeInterface: VehiclePropertiesCompositeInterface){
-    //var vehiclePropertiesCompositeInterface = vehiclePropertiesCompositeInterface
 
     var vehicleFrictionProperties: VehicleFrictionProperties = vehiclePropertiesCompositeInterface!.getVehicleProperties()!.getVehicleFrictionProperties()!;
 ;

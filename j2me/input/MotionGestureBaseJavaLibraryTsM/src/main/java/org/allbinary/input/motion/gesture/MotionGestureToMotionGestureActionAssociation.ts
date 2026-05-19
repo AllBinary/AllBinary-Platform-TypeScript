@@ -56,9 +56,7 @@ export class MotionGestureToMotionGestureActionAssociation
 public constructor (list: BasicArrayList, commandAction: CompleteMotionGestureInputEvent){
 
             super();
-        var list = list
-var commandAction = commandAction
-this.list= list;
+        this.list= list;
     
 this.motionGestureAction= commandAction;
     
@@ -76,7 +74,6 @@ this.motionGestureAction= commandAction;
 
 
     public setMotionGestures(list: BasicArrayList){
-var list = list
 this.list= list;
     
 }
@@ -93,14 +90,12 @@ this.list= list;
 
 
     public setMotionGestureAction(commandAction: CompleteMotionGestureInputEvent){
-var commandAction = commandAction
 this.motionGestureAction= commandAction;
     
 }
 
 
     public isMotionGestureArrayEquals(aList: BasicArrayList): boolean{
-var aList = aList
 
     var size: number = aList!.size()!;
 ;

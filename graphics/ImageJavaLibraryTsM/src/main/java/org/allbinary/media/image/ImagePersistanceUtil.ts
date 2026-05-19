@@ -89,8 +89,6 @@ export class ImagePersistanceUtil
                 //@Throws(Exception.constructor)
             
     public saveWithBatik(file: AbFile, bufferedImage: BufferedImage){
-var file = file
-var bufferedImage = bufferedImage
 
     var batikPNGImageWriter: PNGImageWriter = new PNGImageWriter();
 ;
@@ -118,16 +116,12 @@ this.logUtil!.putF("Wrote Image: " +file.getAbsolutePath(), this, this.commonStr
 
 
     public saveWithImageIO(filePath: string, bufferedImage: BufferedImage){
-var filePath = filePath
-var bufferedImage = bufferedImage
 this.saveWithImageIO(new File(filePath), bufferedImage);
     
 }
 
 
     public saveWithImageIO(file: File, bufferedImage: BufferedImage){
-var file = file
-var bufferedImage = bufferedImage
 
     var writer: ImageWriter = 
                 null

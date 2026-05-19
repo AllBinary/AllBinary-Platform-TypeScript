@@ -68,9 +68,7 @@ export class LogoImageFileUtil
 public constructor (imageAbPath: AbPath, imageFile: string){
 
             super();
-            //var imageAbPath = imageAbPath
-    //var imageFile = imageFile
-this.fileName= imageFile;
+        this.fileName= imageFile;
     
 this.imageFileAbPath= imageAbPath;
     
@@ -80,7 +78,6 @@ this.imageFileAbPath= imageAbPath;
                 //@Throws(Exception.constructor)
             
     public saveFiles(fileItem: FileItem){
-    //var fileItem = fileItem
 
                         if(this.fileName == 
                                     null

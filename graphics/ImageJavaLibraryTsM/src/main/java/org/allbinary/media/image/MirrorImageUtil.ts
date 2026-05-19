@@ -80,9 +80,6 @@ private constructor (){
 
 
     public getImage(bufferedImage: BufferedImage, verticle: boolean, horizontal: boolean): BufferedImage{
-var bufferedImage = bufferedImage
-var verticle = verticle
-var horizontal = horizontal
 this.logUtil!.putF("Starting", this, "getImage");
     
 
@@ -154,9 +151,6 @@ g.dispose();
 
 
     public getImages(bufferedImage: BufferedImage, verticle: boolean, horizontal: boolean): BufferedImage[]{
-var bufferedImage = bufferedImage
-var verticle = verticle
-var horizontal = horizontal
 
     var width: number = bufferedImage!.getWidth()!;
 ;

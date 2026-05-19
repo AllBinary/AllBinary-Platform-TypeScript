@@ -79,7 +79,6 @@ private constructor (){
 
 
     public initView(view: View){
-var view = view
 super.initView(view);
     
 this.frameProcessingTimeElapsed= this.getTimeDelayHelper()!.getStartTime();

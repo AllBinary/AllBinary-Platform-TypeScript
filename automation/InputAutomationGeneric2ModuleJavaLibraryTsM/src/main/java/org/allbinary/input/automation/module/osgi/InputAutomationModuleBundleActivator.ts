@@ -103,7 +103,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     getInputAutomationConfigurationModuleChangeListener(context: BundleContext): InputAutomationConfigurationModuleChangeListener{
-var context = context
 
     var serviceReference: ServiceReference = context.getServiceReference(InputAutomationConfigurationModuleChangeListener.constructor.toString()!)!;
 ;
@@ -150,7 +149,6 @@ var context = context
 
 
     addModules(context: BundleContext){
-var context = context
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "addModules");
@@ -198,14 +196,12 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
                 //@Throws(Exception.constructor)
             
     public registerAsService(bundleContext: BundleContext){
-var bundleContext = bundleContext
 OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationModuleServiceInterface.constructor.toString()!);
     
 }
 
 
     removeModules(context: BundleContext){
-var context = context
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "removeModules");
@@ -253,7 +249,6 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeModules");
                 //@Throws(Exception.constructor)
             
     public start(context: BundleContext){
-var context = context
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START);
     
 this.addModules(context);
@@ -266,7 +261,6 @@ this.registerAsService(context);
                 //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
-var context = context
 this.logUtil!.putF(this.commonStrings!.START, this, "stop");
     
 this.removeModules(context);
@@ -285,7 +279,6 @@ this.removeModules(context);
 
 
     setInputAutomationModuleInterface(inputAutomationModuleInterface: InputAutomationModuleFactoryInterface[]){
-var inputAutomationModuleInterface = inputAutomationModuleInterface
 this.inputAutomationModuleInterface= inputAutomationModuleInterface;
     
 }
@@ -302,7 +295,6 @@ this.inputAutomationModuleInterface= inputAutomationModuleInterface;
 
 
     setServiceFactory(serviceObject: ServiceFactory){
-var serviceObject = serviceObject
 this.serviceFactory= serviceObject;
     
 }

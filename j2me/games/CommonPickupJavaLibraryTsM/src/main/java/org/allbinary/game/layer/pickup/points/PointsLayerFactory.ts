@@ -57,8 +57,7 @@ export class PointsLayerFactory
 public constructor (points: number){
 
             super();
-        var points = points
-this.points= points;
+        this.points= points;
     
 }
 

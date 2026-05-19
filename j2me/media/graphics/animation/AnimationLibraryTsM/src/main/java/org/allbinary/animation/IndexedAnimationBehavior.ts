@@ -55,9 +55,7 @@ export class IndexedAnimationBehavior extends AnimationBehavior {
 public constructor (loopTotal: number, frameDelayTime: number){
 
             super();
-            //var loopTotal = loopTotal
-    //var frameDelayTime = frameDelayTime
-this.loopTotal= loopTotal;
+        this.loopTotal= loopTotal;
     
 this.frameDelayTime= frameDelayTime;
     

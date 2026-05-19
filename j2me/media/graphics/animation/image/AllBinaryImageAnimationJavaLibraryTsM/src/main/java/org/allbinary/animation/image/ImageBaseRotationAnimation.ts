@@ -69,11 +69,7 @@ export class ImageBaseRotationAnimation extends RotationAnimation {
     private readonly image: Image
 public constructor (image: Image, angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(angleInfo, CircularIndexUtil.createInstance(totalAngle /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
-                        //var image = image
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -95,7 +91,6 @@ this.image= image;
 
 
     public setSequence(sequence: number[]){
-var sequence = sequence
 }
 
 
@@ -112,9 +107,6 @@ var sequence = sequence
     anchor: number = Anchor.TOP_LEFT;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 graphics.drawImage(this.image, x, y, this.anchor);
     
 }

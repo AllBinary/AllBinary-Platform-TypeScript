@@ -50,8 +50,7 @@ export class SourceCollisionHelper extends CollisionHelper {
         
 public constructor (layerInterface: AllBinaryLayer){
             super(layerInterface);
-                    var layerInterface = layerInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -59,7 +58,6 @@ public constructor (layerInterface: AllBinaryLayer){
 
 
     public isCollidable(layerInterface: CollidableCompositeLayer): boolean{
-var layerInterface = layerInterface
 
                         if(this.sourceLayerInterface != layerInterface)
                         

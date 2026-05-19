@@ -276,8 +276,7 @@ export class GameMidlet extends ProgressMidlet implements CommandListener {
     private resized: boolean= false
 public constructor (clientInformationFactory: ClientInformationFactory){
             super(clientInformationFactory);
-                        //var clientInformationFactory = clientInformationFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -356,7 +355,6 @@ gameAdState!.getAdvertisements()!.stopAll();
 
 
     pauseAppBackground(background: boolean){
-    //var background = background
 this.logUtil!.putF(this.commonStrings!.START, this, this.PAUSE_APP_BACKGROUND);
     
 
@@ -392,7 +390,6 @@ gameAdState!.getAdvertisements()!.startAll();
 
 
     unPauseAppBackground(background: boolean){
-var background = background
 this.logUtil!.putF(this.commonStrings!.START, this, this.UN_PAUSE_APP_BACKGROUND);
     
 AllBinarySensorManager.getInstance()!.init();
@@ -420,8 +417,6 @@ AllBinarySensorManager.getInstance()!.init();
 
 
     destroyAppInRunnable(unconditional: boolean, isProgress: boolean){
-var unconditional = unconditional
-var isProgress = isProgress
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
 ;
@@ -452,7 +447,6 @@ this.destroyApp(unconditional);
 
 
     destroyApp(unconditional: boolean){
-var unconditional = unconditional
 
     var METHOD_NAME: string = "GameMidlet::destroyApp";
 ;
@@ -562,7 +556,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "startApp", e);
     
 this.destroyApp(false);
     
-notifyDestroyed();
+this.notifyDestroyed();
     
 }
 
@@ -571,8 +565,6 @@ notifyDestroyed();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public commandAction(command: Command, displayable: Displayable){
-    //var command = command
-    //var displayable = displayable
 
         try {
             
@@ -1299,7 +1291,7 @@ virtualKeyboardEventHandler!.fireEvent(virtualKeyboardEventHandler!.SHOW_EVENT);
                                     }
                                 
                              else 
-                        if(command.getLabel()!.localeCompare(gameCommandsFactory!.TOGGLE_FULLSCREEN.getLabel()) == 0)
+                        if(command.getLabel()!.compareTo(gameCommandsFactory!.TOGGLE_FULLSCREEN.getLabel()) == 0)
                         
                                     {
                                     
@@ -1380,7 +1372,6 @@ canvas.setFullScreenMode(isFullScreen);
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -1532,7 +1523,6 @@ this.logUtil!.putF(this.commonStrings!.END, this, this.gameStrings!.STOP_GAME_CA
 
 
     public setGameCanvasRunnableInterface(gameCanvasRunnableInterface: GameCanvasRunnableInterface){
-    //var gameCanvasRunnableInterface = gameCanvasRunnableInterface
 this.allbinaryGameCanvasRunnableInterface= gameCanvasRunnableInterface;
     
 }
@@ -1627,7 +1617,6 @@ hashtable.put(key, currentHashtable!.get(key));
 
 
     public setLoadGameForm(loadGameForm: LoadGameForm){
-    //var loadGameForm = loadGameForm
 this.loadGameForm= loadGameForm;
     
 }
@@ -1644,7 +1633,6 @@ this.loadGameForm= loadGameForm;
 
 
     public setResized(resized: boolean){
-    //var resized = resized
 this.resized= resized;
     
 }

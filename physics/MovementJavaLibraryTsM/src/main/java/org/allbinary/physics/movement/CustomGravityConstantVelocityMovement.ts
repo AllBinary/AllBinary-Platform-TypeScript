@@ -58,9 +58,7 @@ export class CustomGravityConstantVelocityMovement extends BasicConstantVelocity
     private customGravity: number
 public constructor (speedBasicDecimal: BasicDecimal, customGravity: number){
             super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
-                    var speedBasicDecimal = speedBasicDecimal
-var customGravity = customGravity
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,7 +72,6 @@ this.customGravity= customGravity;
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-var layer = layer
 super.process(layer);
     
 this.gravityUtil!.process(this.getVelocityProperties(), this.customGravity);

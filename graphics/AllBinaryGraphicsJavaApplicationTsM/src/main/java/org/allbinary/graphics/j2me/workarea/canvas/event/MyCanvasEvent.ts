@@ -49,8 +49,7 @@ export class MyCanvasEvent extends java.util.EventObject {
         
 public constructor (source: any = {}){
             super(source);
-                    var source = source
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

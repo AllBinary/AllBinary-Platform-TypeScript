@@ -100,14 +100,7 @@ export class HighScoreUtil
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore){
 
             super();
-            //var highScoresFactoryInterface = highScoresFactoryInterface
-    //var highScoresHelper = highScoresHelper
-    //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
-    //var cmdListener = cmdListener
-    //var name = name
-    //var highScore = highScore
-this.highScoresFactoryInterface= highScoresFactoryInterface;
+        this.highScoresFactoryInterface= highScoresFactoryInterface;
     
 this.highScoresHelper= highScoresHelper;
     
@@ -123,7 +116,6 @@ this.gameInfo= gameInfo;
 
 
     public setHighScoresArray(highScoresArray: HighScores[]){
-    //var highScoresArray = highScoresArray
 this.highScoresArray= highScoresArray;
     
 this.firstTime= false;
@@ -134,7 +126,6 @@ this.saveHighScore();
 
 
     public update(name: string){
-    //var name = name
 HighScoreNamePersistanceSingleton.getInstance()!.save(this.abeClientInformation, this.gameInfo, name);
     
 this.highScore!.setName(name);
@@ -201,7 +192,6 @@ this.highScoresHelper!.setHighScoresArray(this.highScoresArray);
 
 
     public submit(myCanvas: MyCanvas){
-    //var myCanvas = myCanvas
 
     var commandListener: CommandListener = myCanvas!.getCustomCommandListener()!;
 ;

@@ -65,13 +65,10 @@ export class CommandUriAction
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public add(command: Command, url: string){
-var command = command
-var url = url
 }
 
 
     public process(command: Command){
-var command = command
 }
 
 

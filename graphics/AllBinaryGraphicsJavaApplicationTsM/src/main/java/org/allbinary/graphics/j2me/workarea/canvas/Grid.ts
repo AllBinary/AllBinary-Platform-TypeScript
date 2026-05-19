@@ -65,8 +65,7 @@ public constructor (){
 public constructor (grid: Grid){
 
             super();
-        var grid = grid
-this.grid= grid.grid;
+        this.grid= grid.grid;
     
 this.showGrid(grid.isGridOn);
     
@@ -118,14 +117,12 @@ this.setZoom(grid.getZoom());
 
 
     public showGrid(value: boolean){
-var value = value
 this.isGridOn= value;
     
 }
 
 
     public setZoom(zoom: number){
-var zoom = zoom
 this.zoom= zoom;
     
 

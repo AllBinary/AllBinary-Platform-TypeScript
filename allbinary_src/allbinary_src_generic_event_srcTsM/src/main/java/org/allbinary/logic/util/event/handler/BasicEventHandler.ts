@@ -145,7 +145,6 @@ this.eventListenerInterfaceList= new BasicArrayListD();
 
 
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
@@ -160,7 +159,6 @@ var eventListenerInterface = eventListenerInterface
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addListenerInterface(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
@@ -174,7 +172,6 @@ var eventListenerInterface = eventListenerInterface
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 }
@@ -182,7 +179,6 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 }
@@ -192,7 +188,6 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
     var index: number = 0;
 ;
@@ -232,8 +227,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 eventListenerInterface!.onEvent(eventObject);
     
 }

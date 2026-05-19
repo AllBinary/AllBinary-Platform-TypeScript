@@ -80,12 +80,10 @@ this.testValue--;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

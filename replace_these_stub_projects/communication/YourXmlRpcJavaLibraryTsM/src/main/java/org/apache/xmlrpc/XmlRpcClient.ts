@@ -49,8 +49,7 @@ export class XmlRpcClient
 public constructor (url: string){
 
             super();
-        var url = url
-this.url= new URL(url);
+        this.url= new URL(url);
     
 }
 
@@ -66,16 +65,12 @@ this.url= new URL(url);
 
 
     public setBasicAuthentication(user: string, password: string){
-var user = user
-var password = password
 }
 
 
                 //@Throws(XmlRpcException.constructor, IOException.constructor)
             
     public execute(method: string, params: Vector<any>): any{
-var method = method
-var params = params
 
 
 
@@ -88,9 +83,6 @@ var params = params
                 //@Throws(XmlRpcException.constructor, IOException.constructor)
             
     public execute(method: string, params: Vector<any>, cryptInterface: CryptInterface): any{
-var method = method
-var params = params
-var cryptInterface = cryptInterface
 
 
 

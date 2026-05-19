@@ -74,7 +74,6 @@ export class RequestHandler extends HttpServlet {
                 //@Throws(ServletException.constructor)
             
     public init(config: ServletConfig){
-var config = config
 super.init(config);
     
 }
@@ -87,8 +86,6 @@ super.init(config);
                 //@Throws(ServletException.constructor, IOException.constructor)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
-var request = request
-var response = response
 
         try {
             response.setContentType("text/html");
@@ -155,8 +152,6 @@ response.sendRedirect(abcs.globals.URLGLOBALS.ERRORPAGE);
                 //@Throws(ServletException.constructor, IOException.constructor)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
-var request = request
-var response = response
 this.processRequest(request, response);
     
 }
@@ -165,8 +160,6 @@ this.processRequest(request, response);
                 //@Throws(ServletException.constructor, IOException.constructor)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
-var request = request
-var response = response
 this.processRequest(request, response);
     
 }

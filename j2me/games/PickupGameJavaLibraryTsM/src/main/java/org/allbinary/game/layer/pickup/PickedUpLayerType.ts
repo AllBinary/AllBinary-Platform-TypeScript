@@ -50,8 +50,7 @@ export class PickedUpLayerType
  constructor (name: string){
 
             super();
-        var name = name
-this.name= name;
+        this.name= name;
     
 }
 

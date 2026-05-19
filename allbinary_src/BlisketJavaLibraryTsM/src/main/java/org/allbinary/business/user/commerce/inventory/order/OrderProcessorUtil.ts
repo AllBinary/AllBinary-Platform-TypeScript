@@ -72,8 +72,6 @@ export class OrderProcessorUtil
                 //@Throws(Exception.constructor)
             
     public process(userName: string, order: Order): string{
-var userName = userName
-var order = order
 
     var orderItems: OrderItemsEntity = new OrderItemsEntity();
 ;

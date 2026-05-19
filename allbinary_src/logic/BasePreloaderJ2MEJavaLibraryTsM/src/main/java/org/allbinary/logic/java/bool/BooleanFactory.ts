@@ -71,7 +71,6 @@ export class BooleanFactory
     public readonly NO: string = "no";
 
     public toStringb(bool: boolean): string{
-var bool = bool
 
                         if(bool)
                         

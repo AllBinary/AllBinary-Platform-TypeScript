@@ -62,9 +62,7 @@ export class AdminEmailInfo extends BasicEmailInfo {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (subject: string, textBody: string){
             super(subject, textBody);
-                    var subject = subject
-var textBody = textBody
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

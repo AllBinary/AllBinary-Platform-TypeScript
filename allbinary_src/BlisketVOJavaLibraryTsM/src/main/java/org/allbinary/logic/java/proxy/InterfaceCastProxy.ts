@@ -54,7 +54,6 @@ export class InterfaceCastProxy
         
 
     public static newInstance(anyType: any = {}): any{
-var anyType = anyType
 
 
 
@@ -68,8 +67,7 @@ var anyType = anyType
 private constructor (anyType: any = {}){
 
             super();
-        var anyType = anyType
-this.anyType= anyType;
+        this.anyType= anyType;
     
 }
 
@@ -77,9 +75,6 @@ this.anyType= anyType;
                 //@Throws(Throwable.constructor)
             
     public invoke(proxyObject: any = {}, proxyMethod: Method, proxyArgs: any[]): any{
-var proxyObject = proxyObject
-var proxyMethod = proxyMethod
-var proxyArgs = proxyArgs
 
     var methodName: string = proxyMethod!.getName()!;
 ;

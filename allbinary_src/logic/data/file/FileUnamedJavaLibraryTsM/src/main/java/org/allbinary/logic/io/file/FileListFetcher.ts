@@ -78,7 +78,6 @@ export class FileListFetcher
     private readonly subDirectory: SubDirectory = SubDirectory.getInstance()!;
 
     public getFiles(path: string): BasicArrayList{
-var path = path
 
         try {
             
@@ -111,8 +110,6 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
 
     public getFiles(path: string, includeExtensions: string[]): BasicArrayList{
-    //var path = path
-    //var includeExtensions = includeExtensions
 
         try {
             
@@ -170,8 +167,6 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
 
     public getFiles(path: string, includeExtension: string): BasicArrayList{
-    //var path = path
-    //var includeExtension = includeExtension
 
         try {
             
@@ -214,9 +209,6 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
 
     public getFiles(path: string, pathIncludes: string, includeExtension: string): BasicArrayList{
-    //var path = path
-    //var pathIncludes = pathIncludes
-    //var includeExtension = includeExtension
 
         try {
             
@@ -259,7 +251,6 @@ console.log("Error: " +e +"\nMsg: " +e.message);
 
 
     public getDirectories(path: string): BasicArrayList{
-    //var path = path
 
         try {
             

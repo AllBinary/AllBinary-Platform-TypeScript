@@ -74,8 +74,7 @@ export class Timer
 public constructor (maxTime: number){
 
             super();
-        var maxTime = maxTime
-this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(maxTime);
+        this.primitiveLongUtil= PrimitiveLongUtil.createPowerOfTen(maxTime);
     
 this.maxTime= maxTime;
     
@@ -151,14 +150,12 @@ this.totalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
 
 
     public reduce(value: number){
-var value = value
 this.modifier -= value;
     
 }
 
 
     public add(value: number){
-var value = value
 this.modifier += value;
     
 }

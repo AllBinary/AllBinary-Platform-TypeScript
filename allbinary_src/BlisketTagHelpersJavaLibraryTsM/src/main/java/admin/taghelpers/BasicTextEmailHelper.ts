@@ -75,9 +75,7 @@ export class BasicTextEmailHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.pageContext= pageContext;
+        this.pageContext= pageContext;
     
 this.hashMap= hashMap;
     

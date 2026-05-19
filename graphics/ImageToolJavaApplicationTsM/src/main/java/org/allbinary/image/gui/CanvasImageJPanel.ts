@@ -107,8 +107,7 @@ export class CanvasImageJPanel extends javax.swing.JPanel implements ImageProces
     private result: BufferedImage
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                        //var imageProcessorInput = imageProcessorInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -193,7 +192,6 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(CanvasImageJPanel.prototype.result != 
                                     null
@@ -243,7 +241,6 @@ this.writeOverOriginalJCheckBox!.addActionListener(new class extends java.awt.ev
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 writeOverOriginalJCheckBoxActionPerformed(evt);
     
 }
@@ -267,7 +264,6 @@ this.generateJButton!.addActionListener(new class extends java.awt.event.ActionL
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateJButtonActionPerformed(evt);
     
 }
@@ -285,7 +281,6 @@ this.widthReductionTextField!.addActionListener(new class extends java.awt.event
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 widthReductionTextFieldActionPerformed(evt);
     
 }
@@ -303,7 +298,6 @@ this.widthReductionTextField1!.addActionListener(new class extends java.awt.even
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 widthReductionTextField1ActionPerformed(evt);
     
 }
@@ -341,24 +335,20 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     writeOverOriginalJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     generateJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.process();
     
 }
 
 
     widthReductionTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     widthReductionTextField1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
@@ -399,7 +389,6 @@ var evt = evt
 
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
-var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput;
     
 }
@@ -408,9 +397,6 @@ this.imageProcessorInput= imageProcessorInput;
                 //@Throws(IOException.constructor)
             
     public visit(generatedBufferedImage: BufferedImage, name: string, index: number){
-    //var generatedBufferedImage = generatedBufferedImage
-    //var name = name
-    //var index = index
 this.logUtil!.putF(this.commonStrings!.VISIT, this, this.commonStrings!.VISIT);
     
 this.result= generatedBufferedImage;

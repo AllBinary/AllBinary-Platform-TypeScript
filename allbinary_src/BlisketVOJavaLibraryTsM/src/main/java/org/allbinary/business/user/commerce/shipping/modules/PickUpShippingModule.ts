@@ -65,7 +65,6 @@ public constructor (){
 
 
     public getCost(order: OrderInterface): Money{
-var order = order
 
 
 

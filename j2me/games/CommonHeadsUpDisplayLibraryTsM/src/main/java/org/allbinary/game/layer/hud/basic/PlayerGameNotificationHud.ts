@@ -105,13 +105,7 @@ export class PlayerGameNotificationHud extends GameNotificationHud {
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
-                    var location = location
-var direction = direction
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -129,8 +123,6 @@ gameNotificationEventHandler!.addListenerInterface(this);
 
 
     getPoint(x: number, y: number): GPoint{
-var x = x
-var y = y
 this.point= CustomGPoint.getInstance3(0, 0);
     
 this.point.setX(x);
@@ -151,10 +143,6 @@ this.point.setY(y);
     private lastString: string = StringUtil.getInstance()!.EMPTY_STRING;
 
     add(string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
-    //var string = string
-    //var seconds = seconds
-    //var basicColor = basicColor
-    //var permanent = permanent
 
                         if(permanent.valueOf())
                         
@@ -323,7 +311,6 @@ this.permanentGameNotification!.clear();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics, this.string);
     
 }

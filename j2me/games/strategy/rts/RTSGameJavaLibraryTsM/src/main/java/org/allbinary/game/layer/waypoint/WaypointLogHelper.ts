@@ -69,74 +69,46 @@ export class WaypointLogHelper
 
 
     public onWaypointEvent(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var advancedRTSGameLayer = advancedRTSGameLayer
 }
 
 
     public addWaypointFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var advancedRTSGameLayer = advancedRTSGameLayer
 }
 
 
     public addWaypointFromBuildingList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface, list: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var advancedRTSGameLayer = advancedRTSGameLayer
-    //var list = list
 }
 
 
     public insertWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var index = index
-    //var rtsLayer = rtsLayer
-    //var waypointName = waypointName
 }
 
 
     public insertWaypointList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string, list: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var index = index
-    //var rtsLayer = rtsLayer
-    //var waypointName = waypointName
-    //var list = list
 }
 
 
     public setRandomGeographicMapCellHistoryList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var pathsList = pathsList
 }
 
 
     public moveAwayFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public needToMove(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior: WaypointBehaviorBase){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var unitWaypointBehavior = unitWaypointBehavior
 }
 
 
     public setRandomGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public setCurrentPathGeographicMapCellPosition(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, existingCurrentPathGeographicMapCellPosition: GeographicMapCellPosition, currentPathGeographicMapCellPosition: GeographicMapCellPosition){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var existingCurrentPathGeographicMapCellPosition = existingCurrentPathGeographicMapCellPosition
-    //var currentPathGeographicMapCellPosition = currentPathGeographicMapCellPosition
 }
 
 
     public setNextUnvisitedPathGeographicMapCellPosition(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, existingNextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition, nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var existingNextUnvisitedPathGeographicMapCellPosition = existingNextUnvisitedPathGeographicMapCellPosition
-    //var nextUnvisitedPathGeographicMapCellPosition = nextUnvisitedPathGeographicMapCellPosition
 }
 
 

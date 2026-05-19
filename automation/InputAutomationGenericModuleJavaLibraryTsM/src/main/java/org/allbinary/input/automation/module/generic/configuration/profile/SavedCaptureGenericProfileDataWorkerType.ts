@@ -54,10 +54,7 @@ export class SavedCaptureGenericProfileDataWorkerType extends GenericProfileData
     private lastFrame: number= 0
 public constructor (name: string, path: string, lastFrame: number){
             super(name);
-                    var name = name
-var path = path
-var lastFrame = lastFrame
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +76,6 @@ this.setLastFrame(lastFrame);
 
 
     public setPath(path: string){
-var path = path
 this.path= path;
     
 }
@@ -96,7 +92,6 @@ this.path= path;
 
 
     public setLastFrame(lastFrame: number){
-var lastFrame = lastFrame
 this.lastFrame= lastFrame;
     
 }

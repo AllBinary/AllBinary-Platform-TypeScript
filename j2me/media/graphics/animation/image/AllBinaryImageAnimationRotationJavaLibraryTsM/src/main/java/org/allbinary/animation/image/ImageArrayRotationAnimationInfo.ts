@@ -62,12 +62,7 @@ export class ImageArrayRotationAnimationInfo
 public constructor (imageArray: Image[], angleIncrement: number, totalAngle: number, dx: number, dy: number){
 
             super();
-        var imageArray = imageArray
-var angleIncrement = angleIncrement
-var totalAngle = totalAngle
-var dx = dx
-var dy = dy
-this.imageArray= imageArray;
+        this.imageArray= imageArray;
     
 this.angleIncrement= angleIncrement;
     
@@ -81,7 +76,6 @@ this.dy= dy;
 
 
     public setImageArray(imageArray: Image[]){
-var imageArray = imageArray
 this.imageArray= imageArray;
     
 }
@@ -108,7 +102,6 @@ this.imageArray= imageArray;
 
 
     public setTotalAngle(totalAngle: number){
-var totalAngle = totalAngle
 this.totalAngle= totalAngle;
     
 }
@@ -125,7 +118,6 @@ this.totalAngle= totalAngle;
 
 
     public setDx(dx: number){
-var dx = dx
 this.dx= dx;
     
 }
@@ -142,7 +134,6 @@ this.dx= dx;
 
 
     public setDy(dy: number){
-var dy = dy
 this.dy= dy;
     
 }

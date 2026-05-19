@@ -60,10 +60,7 @@ export class AllBinarySpriteRotationAnimation extends HackRotationSpriteIndexedA
         
 public constructor (sprite: Sprite, image: Image, animationBehavior: AnimationBehavior){
             super(sprite, image, AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /sprite.getRawFrameCount())), animationBehavior);
-                        //var sprite = sprite
-    //var image = image
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -89,7 +86,6 @@ this.angleInfo!.adjustAngle(this.sprite.getFrame());
 
 
     public setFrameByDirection(direction: Direction){
-var direction = direction
 
     var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
 ;
@@ -100,14 +96,12 @@ this.adjustFrameToAngle(angle);
 
 
     public setFrameToAngle(angle: Angle){
-var angle = angle
 this.adjustFrameToAngle(angle);
     
 }
 
 
     public setFrame(index: number){
-var index = index
 this.sprite.setFrame(index);
     
 this.angleInfo!.adjustAngle(this.getFrame());
@@ -116,14 +110,12 @@ this.angleInfo!.adjustAngle(this.getFrame());
 
 
     public adjustFrameToAngle(angle: Angle){
-var angle = angle
 this.adjustFrame(angle.getValue());
     
 }
 
 
     public adjustFrame(angle: number){
-var angle = angle
 this.setFrame(this.frameUtil!.getFrameForAngle(angle, Math.round(this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())));
     
 }

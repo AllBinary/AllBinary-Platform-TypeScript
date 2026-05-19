@@ -86,7 +86,6 @@ this.setTableName(this.tableName);
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(EntryData.getInstance()!.ID, value);
@@ -121,7 +120,6 @@ var value = value
                 //@Throws(Exception.constructor)
             
     public get(storeName: string): Vector{
-var storeName = storeName
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -177,8 +175,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public get(storeName: string, advertisementAreaName: string): AdvertisementAreaInterface{
-var storeName = storeName
-var advertisementAreaName = advertisementAreaName
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -260,7 +256,6 @@ stringBuffer!.append(advertisementAreaData!.NAME)!.append(this.sqlTypeStrings!.M
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(AdvertisementAreaData.getInstance()!.NAME, updatedValues!.get(AdvertisementAreaData.getInstance()!.NAME) as string, updatedValues);
     
 }

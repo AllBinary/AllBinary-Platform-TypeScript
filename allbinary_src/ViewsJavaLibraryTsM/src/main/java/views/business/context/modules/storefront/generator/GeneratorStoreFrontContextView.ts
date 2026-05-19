@@ -61,8 +61,7 @@ export class GeneratorStoreFrontContextView extends HttpStoreComponentView {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,7 +80,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
                 //@Throws(Exception.constructor)
             
     view(group: string): string{
-var group = group
 
     var result: string = TransformsGeneratorUtil.getInstance()!.generateComponentsFromObjectConfig(this.abeClientInformation, this.getTransformInfoInterface(), group)!;
 ;

@@ -80,7 +80,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 

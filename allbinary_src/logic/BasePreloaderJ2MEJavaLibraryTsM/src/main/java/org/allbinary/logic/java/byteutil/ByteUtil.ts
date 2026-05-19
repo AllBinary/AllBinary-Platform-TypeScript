@@ -64,8 +64,6 @@ private constructor (){
 
 
     public xor(array: number[], mask: number): number[]{
-    //var array = array
-    //var mask = mask
 
     var bytes: number[] = new Array(array.length);
 ;
@@ -104,7 +102,6 @@ index++;
 
 
     public not(array: number[]): number[]{
-    //var array = array
 
     var bytes: number[] = new Array(array.length);
 ;
@@ -137,8 +134,6 @@ index++;
 
 
     public xorByte(array: number[], index: number): number[]{
-    //var array = array
-    //var index = index
 
     var mask: number = 0;
 ;
@@ -177,8 +172,6 @@ index++;
 
 
     public compare(newByteArray: number[], oldByteArray: number[]): boolean{
-    //var newByteArray = newByteArray
-    //var oldByteArray = oldByteArray
 
                         if(newByteArray!.length != oldByteArray!.length)
                         
@@ -234,10 +227,6 @@ index < size; index++)
 
 
     public compareWithStats(newByteArray: number[], newSize: number, oldByteArray: number[], stats: number[]): boolean{
-    //var newByteArray = newByteArray
-    //var newSize = newSize
-    //var oldByteArray = oldByteArray
-    //var stats = stats
 
                         if(newSize != oldByteArray!.length)
                         

@@ -74,13 +74,7 @@ export class AllBinaryJ2SEImageRotationAnimationFactory extends BaseImageAnimati
     private readonly resizeCanvasForRotation: boolean
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-    //var resizeCanvasForRotation = resizeCanvasForRotation
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -127,7 +121,6 @@ this.resizeCanvasForRotation= resizeCanvasForRotation;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var imageCopyUtil: ImageCopyUtil = ImageCopyUtil.getInstance()!;
 ;

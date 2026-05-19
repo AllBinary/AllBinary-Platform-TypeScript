@@ -51,8 +51,7 @@ export class ScrollMapEvent extends AllBinaryEventObject {
     private dy: number= 0
 public constructor (anyType: any = {}){
             super(anyType);
-                    var anyType = anyType
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -60,7 +59,6 @@ public constructor (anyType: any = {}){
 
 
     public setDx(dx: number){
-var dx = dx
 this.dx= dx;
     
 }
@@ -77,7 +75,6 @@ this.dx= dx;
 
 
     public setDy(dy: number){
-var dy = dy
 this.dy= dy;
     
 }
@@ -94,8 +91,6 @@ this.dy= dy;
 
 
     public setDxDy(dx: number, dy: number){
-var dx = dx
-var dy = dy
 this.dx= dx;
     
 this.dy= dy;

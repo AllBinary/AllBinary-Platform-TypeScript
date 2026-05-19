@@ -161,8 +161,7 @@ this.password= new Password(StringUtil.getInstance()!.EMPTY_STRING);
 public constructor (request: HttpServletRequest){
 
             super();
-            //var request = request
-this.getFormData(new RequestParams(request).
+        this.getFormData(new RequestParams(request).
                             toHashMap());
     
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
@@ -172,8 +171,7 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
 public constructor (userHashMap: HashMap<any, any>){
 
             super();
-            //var userHashMap = userHashMap
-this.getFormData(userHashMap);
+        this.getFormData(userHashMap);
     
 this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(this.getRole());
     
@@ -183,7 +181,6 @@ this.userConfigurationInterface= UserConfigurationInterfaceFactory.getInstance(t
                 //@Throws(Exception.constructor)
             
     public getFormData(userHashMap: HashMap<any, any>){
-    //var userHashMap = userHashMap
 this.userName= new UserName(userHashMap).
                             get();
     
@@ -255,7 +252,7 @@ this.role= UserRoleB.getRole(userHashMap!.get(UserRoleData.NAME.toString()) as s
 this.permissions= stringUtil!.getNonNull(userHashMap!.get(UserData.PERMISSIONS) as string);
     
 
-                        if(!stringValidationUtil!.isEmpty(this.permissions) && this.permissions.localeCompare(StoreFrontData.getInstance()!.NAME) == 0)
+                        if(!stringValidationUtil!.isEmpty(this.permissions) && this.permissions.compareTo(StoreFrontData.getInstance()!.NAME) == 0)
                         this.permissions= stringUtil!.getNonNull(userHashMap!.get(StoreFrontData.getInstance()!.NAME) as string)
                              else 
                         if(this.permissions == 
@@ -436,147 +433,126 @@ stringBuffer!.append(this.password.getValidationInfo());
 
 
     public setUserName(value: string){
-var value = value
 this.userName= value;
     
 }
 
 
     public setPrefixName(value: string){
-var value = value
 this.prefixName= value;
     
 }
 
 
     public setFirstName(value: string){
-var value = value
 this.firstName= value;
     
 }
 
 
     public setLastName(value: string){
-var value = value
 this.lastName= value;
     
 }
 
 
     public setMiddleName(value: string){
-var value = value
 this.middleName= value;
     
 }
 
 
     public setSuffixName(value: string){
-var value = value
 this.suffixName= value;
     
 }
 
 
     public setCompany(value: string){
-var value = value
 this.company= value;
     
 }
 
 
     public setPositionAtCompany(value: string){
-var value = value
 this.positionAtCompany= value;
     
 }
 
 
     public setMainEmail(value: string){
-var value = value
 this.mainEmail= value;
     
 }
 
 
     public setSecondaryEmail(value: string){
-var value = value
 this.secondaryEmail= value;
     
 }
 
 
     public setHomePhone(value: string){
-var value = value
 this.homePhone= value;
     
 }
 
 
     public setCellPhone(value: string){
-var value = value
 this.cellPhone= value;
     
 }
 
 
     public setWorkPhone(value: string){
-var value = value
 this.workPhone= value;
     
 }
 
 
     public setOtherContact(value: string){
-var value = value
 this.otherContact= value;
     
 }
 
 
     public setElectronicContact(value: string){
-var value = value
 this.electronicDevice= value;
     
 }
 
 
     public setFax(value: string){
-var value = value
 this.fax= value;
     
 }
 
 
     public setRole(role: UserRole){
-var role = role
 this.role= role;
     
 }
 
 
     public setPermissions(value: string){
-var value = value
 this.permissions= value;
     
 }
 
 
     public setEncryption(value: string){
-var value = value
 this.encryption= value;
     
 }
 
 
     public setSecret(value: string){
-var value = value
 this.secret= value;
     
 }
 
 
     public setPassword(value: string){
-var value = value
 this.password.set(value);
     
 }
@@ -595,7 +571,6 @@ this.setEnable("No");
 
 
     public setEnable(enable: string){
-var enable = enable
 this.enable= enable;
     
 }
@@ -979,7 +954,6 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
     public validateSession(weblisketSession: WeblisketSessionInterface){
-var weblisketSession = weblisketSession
 weblisketSession!.setAuthenticated();
     
 weblisketSession!.setRole(this.getRole());
@@ -990,7 +964,6 @@ weblisketSession!.setUserName(this.getUserName());
 
 
     public updateSession(weblisketSession: WeblisketSessionInterface){
-var weblisketSession = weblisketSession
 }
 
 
@@ -1027,7 +1000,6 @@ var weblisketSession = weblisketSession
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -1048,7 +1020,6 @@ var document = document
 
 
     public setUserConfigurationInterface(userConfigurationInterface: UserConfigurationInterface){
-var userConfigurationInterface = userConfigurationInterface
 this.userConfigurationInterface= userConfigurationInterface;
     
 }

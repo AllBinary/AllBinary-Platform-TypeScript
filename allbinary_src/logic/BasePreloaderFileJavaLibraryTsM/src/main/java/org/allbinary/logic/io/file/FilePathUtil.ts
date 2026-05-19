@@ -52,7 +52,6 @@ export class FilePathUtil
         
 
     public static adjust(path: string): string{
-var path = path
 
     var abPathData: AbPathData = AbPathData.getInstance()!;
 ;

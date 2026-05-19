@@ -62,8 +62,7 @@ export class EditGlobalsValidationView extends GlobalsView implements Validation
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -155,7 +154,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

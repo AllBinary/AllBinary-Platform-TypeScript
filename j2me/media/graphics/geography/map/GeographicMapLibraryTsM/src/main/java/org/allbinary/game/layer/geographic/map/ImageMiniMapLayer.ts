@@ -64,9 +64,7 @@ export class ImageMiniMapLayer extends MiniMapLayer {
     private image: Image = NullCanvas.NULL_IMAGE;
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
             super(geographicMapInterface, viewPosition);
-                    var geographicMapInterface = geographicMapInterface
-var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -92,7 +90,6 @@ this.image= PaintableToImageUtil.getImage(this.allBinaryTiledLayer, aWidth, aHei
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.drawImage(this.image, x, y, this.anchor);
     
 this.paintDots(graphics);

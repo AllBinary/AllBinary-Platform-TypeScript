@@ -69,15 +69,7 @@ export class RaceTrackInfo
 public constructor (id: Integer, name: string, raceTrackFrictionProperties: RaceTrackFrictionProperties, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, qualifyTime: number, worstContinuePosition: number, totalLaps: number){
 
             super();
-            //var id = id
-    //var name = name
-    //var raceTrackFrictionProperties = raceTrackFrictionProperties
-    //var foregroundBasicColor = foregroundBasicColor
-    //var backgroundBasicColor = backgroundBasicColor
-    //var qualifyTime = qualifyTime
-    //var worstContinuePosition = worstContinuePosition
-    //var totalLaps = totalLaps
-this.id= id;
+        this.id= id;
     
 this.name= name;
     
@@ -107,7 +99,6 @@ this.totalLaps= totalLaps;
 
 
     setId(id: Integer){
-var id = id
 this.id= id;
     
 }
@@ -124,7 +115,6 @@ this.id= id;
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -141,7 +131,6 @@ this.name= name;
 
 
     public setQualifyTime(qualifyTime: number){
-var qualifyTime = qualifyTime
 this.qualifyTime= qualifyTime;
     
 }
@@ -158,7 +147,6 @@ this.qualifyTime= qualifyTime;
 
 
     public setWorstContinuePosition(worstContinuePosition: number){
-var worstContinuePosition = worstContinuePosition
 this.worstContinuePosition= worstContinuePosition;
     
 }
@@ -175,7 +163,6 @@ this.worstContinuePosition= worstContinuePosition;
 
 
     public setTotalLaps(totalLaps: number){
-var totalLaps = totalLaps
 this.totalLaps= totalLaps;
     
 }
@@ -192,7 +179,6 @@ this.totalLaps= totalLaps;
 
 
     public setForegroundBasicColor(foregroundBasicColor: BasicColor){
-var foregroundBasicColor = foregroundBasicColor
 this.foregroundBasicColor= foregroundBasicColor;
     
 }
@@ -209,7 +195,6 @@ this.foregroundBasicColor= foregroundBasicColor;
 
 
     public setBackgroundBasicColor(backgroundBasicColor: BasicColor){
-var backgroundBasicColor = backgroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor;
     
 }
@@ -226,7 +211,6 @@ this.backgroundBasicColor= backgroundBasicColor;
 
 
     public setRaceTrackFrictionProperties(raceTrackFrictionProperties: RaceTrackFrictionProperties){
-var raceTrackFrictionProperties = raceTrackFrictionProperties
 this.raceTrackFrictionProperties= raceTrackFrictionProperties;
     
 }

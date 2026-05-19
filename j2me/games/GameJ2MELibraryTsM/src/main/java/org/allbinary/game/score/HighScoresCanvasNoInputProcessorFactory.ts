@@ -51,7 +51,6 @@ export class HighScoresCanvasNoInputProcessorFactory
         
 
     public getInstance(highScoresCanvas: HighScoresCanvas): HighScoresCanvasInputProcessor{
-var highScoresCanvas = highScoresCanvas
 
 
 

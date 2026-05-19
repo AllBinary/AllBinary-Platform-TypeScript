@@ -59,8 +59,7 @@ export class IndexedAnimation extends Animation implements IndexedAnimationInter
 protected constructor (animationBehavior: AnimationBehavior){
 
             super();
-            //var animationBehavior = animationBehavior
-this.animationBehaviorP= animationBehavior;
+        this.animationBehaviorP= animationBehavior;
     
 }
 
@@ -84,7 +83,6 @@ this.setFrame(0);
 
 
     public setFrame(index: number){
-    //var index = index
 }
 
 
@@ -151,7 +149,6 @@ this.setFrame(0);
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 
@@ -166,7 +163,6 @@ this.setFrame(0);
 
 
     public setState(indexedAnimation: IndexedAnimation){
-    //var indexedAnimation = indexedAnimation
 this.setFrame(indexedAnimation!.getFrame());
     
 this.setDx(indexedAnimation!.getDx());

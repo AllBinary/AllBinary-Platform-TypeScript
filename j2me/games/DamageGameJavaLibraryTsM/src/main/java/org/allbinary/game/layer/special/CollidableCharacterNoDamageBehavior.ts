@@ -61,8 +61,7 @@ export class CollidableCharacterNoDamageBehavior extends CollidableDestroyableDa
         
 public constructor (collidable: boolean){
             super(collidable);
-                    var collidable = collidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,8 +71,6 @@ public constructor (collidable: boolean){
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
@@ -105,8 +102,6 @@ collidableDestroyableDamageableLayer!.getPickupBehavior()!.doPickupLayer(collida
                 //@Throws(Exception.constructor)
             
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 }

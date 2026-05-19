@@ -110,9 +110,6 @@ export class NullRaceTrackGeographicMap
                 //@Throws(Exception.constructor)
             
     public getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean{
-var layer = layer
-var currentCellPositionArray = currentCellPositionArray
-var cellPositionArray = cellPositionArray
 
 
 
@@ -124,8 +121,6 @@ var cellPositionArray = cellPositionArray
                 //@Throws(Exception.constructor)
             
     public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
-var x = x
-var y = y
 
 
 
@@ -137,8 +132,6 @@ var y = y
                 //@Throws(Exception.constructor)
             
     public getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition{
-var x = x
-var y = y
 
 
 
@@ -148,7 +141,6 @@ var y = y
 
 
     public getCellTypeFromMapCellTypeInt(cellTypeId: number): number{
-var cellTypeId = cellTypeId
 
 
 
@@ -160,8 +152,6 @@ var cellTypeId = cellTypeId
                 //@Throws(Exception.constructor)
             
     public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
-var x = x
-var y = y
 
 
 
@@ -173,7 +163,6 @@ var y = y
                 //@Throws(Exception.constructor)
             
     public getCellTypeAt(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellType{
-var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -228,7 +217,6 @@ var geographicMapCellPosition = geographicMapCellPosition
 
 
     public setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo){
-var aRaceTrackInfo = aRaceTrackInfo
 
 
 
@@ -247,7 +235,6 @@ var aRaceTrackInfo = aRaceTrackInfo
 
 
     public setRaceTrackData(raceTrackData: RaceTrackData){
-var raceTrackData = raceTrackData
 
 
 

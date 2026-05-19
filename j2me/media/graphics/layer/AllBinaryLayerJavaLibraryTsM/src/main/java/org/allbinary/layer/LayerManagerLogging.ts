@@ -98,7 +98,6 @@ export class LayerManagerLogging extends LayerManagerLoggingBase {
                 //@Throws(Exception.constructor)
             
     public append(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.APPEND_)!.append(layerInterface!.getName())!.toString(), this, this.APPEND);
@@ -107,8 +106,6 @@ this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(
 
 
     public appendAt(layerInterface: AllBinaryLayer, index: number){
-    //var layerInterface = layerInterface
-    //var index = index
 this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(this))!.append(this.APPEND_)!.append(layerInterface!.getName())!.append(this._AT_)!.appendint(index)!.toString(), this, this.APPEND);
@@ -117,7 +114,6 @@ this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(
 
 
     public remove(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 
                         if(layerInterface == 
                                     null
@@ -143,9 +139,6 @@ this.logUtil!.putF(this.stringBuilder!.appendint(TsUtil.getInstance()!.hashCode(
 
 
     public removeResult(layerManager: LayerManager, layerInterface: AllBinaryLayer, result: boolean){
-    //var layerManager = layerManager
-    //var layerInterface = layerInterface
-    //var result = result
 
                         if(layerInterface == 
                                     null
@@ -191,7 +184,6 @@ LayerManagerLogging.removeFailed= true;
 
 
     log(layerManager: LayerManager){
-    //var layerManager = layerManager
 this.stringBuilder!.delete(0, this.stringBuilder!.length());
     
 

@@ -61,14 +61,6 @@ export class ScaleBaseProcessor
 
 
     public update(originalImage: Image, originalImageArray: Image[], imageToShowArray: Image[], index: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
-    //var originalImage = originalImage
-    //var originalImageArray = originalImageArray
-    //var imageToShowArray = imageToShowArray
-    //var index = index
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 }
 
 

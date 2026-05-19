@@ -53,8 +53,7 @@ export class InputAutomationModuleService
 public constructor (inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]){
 
             super();
-        var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
-this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray);
+        this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray);
     
 }
 
@@ -70,7 +69,6 @@ this.setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray)
 
 
     public setInputAutomationModuleInterfaceArray(inputAutomationModuleInterfaceArray: InputAutomationModuleFactoryInterface[]){
-var inputAutomationModuleInterfaceArray = inputAutomationModuleInterfaceArray
 this.inputAutomationModuleInterfaceArray= inputAutomationModuleInterfaceArray;
     
 }

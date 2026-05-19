@@ -74,10 +74,7 @@ export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestur
     private inputToGameKeyMapping: InputToGameKeyMapping
 public constructor (name: string, motionGestureInput: MotionGestureInput, inputToGameKeyMapping: InputToGameKeyMapping){
             super(name, motionGestureInput);
-                    var name = name
-var motionGestureInput = motionGestureInput
-var inputToGameKeyMapping = inputToGameKeyMapping
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -123,7 +120,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.UPDATE, e);
 
 
     setGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 this.gameKeyEvent= gameKeyEvent;
     
 }
@@ -140,7 +136,6 @@ this.gameKeyEvent= gameKeyEvent;
 
 
     setGameKey(gameKey: GameKey){
-var gameKey = gameKey
 this.gameKey= gameKey;
     
 }

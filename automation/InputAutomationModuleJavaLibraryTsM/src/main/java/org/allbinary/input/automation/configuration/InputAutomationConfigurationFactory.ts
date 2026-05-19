@@ -78,7 +78,6 @@ export class InputAutomationConfigurationFactory
                 //@Throws(Exception.constructor)
             
     public static init(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

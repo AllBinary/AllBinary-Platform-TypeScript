@@ -65,8 +65,6 @@ private constructor (){
 
 
     public getFrameForAngle(angle: number, angleIncrement: number): number{
-    //var angle = angle
-    //var angleIncrement = angleIncrement
 
 
 
@@ -77,8 +75,6 @@ private constructor (){
 
 
     public getFrameAngle(frame: number, angleIncrement: number): number{
-    //var frame = frame
-    //var angleIncrement = angleIncrement
 
     var frameAngle: number = angleIncrement *frame -90;
 ;
@@ -93,7 +89,6 @@ private constructor (){
 
 
     public adjustAngleToFrameAngle(currentAngle: number): number{
-var currentAngle = currentAngle
 
     var angleFactory: AngleFactory = AngleFactory.getInstance()!;
 ;

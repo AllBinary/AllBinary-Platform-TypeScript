@@ -71,10 +71,7 @@ export class ExitRunnable
 public constructor (midlet: AllBinaryMidlet, processor: Processor, isProgress: boolean){
 
             super();
-        var midlet = midlet
-var processor = processor
-var isProgress = isProgress
-this.midlet= midlet;
+        this.midlet= midlet;
     
 this.isProgress= isProgress;
     

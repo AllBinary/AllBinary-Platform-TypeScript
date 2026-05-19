@@ -65,11 +65,6 @@ export class TimeUtil
     private static readonly calendar: Calendar = Calendar.getInstance()!;
 
     public setCalendar(calendar: Calendar, yearString: string, monthString: string, dayString: string, hourString: string){
-var calendar = calendar
-var yearString = yearString
-var monthString = monthString
-var dayString = dayString
-var hourString = hourString
 
     var year: number = new Integer(yearString).
                             intValue()!;
@@ -96,13 +91,6 @@ calendar.set(year, month, day, hour, 0);
 
 
     public setCalendar(calendar: Calendar, yearString: string, monthString: string, dayString: string, hourString: string, minuteString: string, secondString: string){
-var calendar = calendar
-var yearString = yearString
-var monthString = monthString
-var dayString = dayString
-var hourString = hourString
-var minuteString = minuteString
-var secondString = secondString
 
     var year: number = new Integer(yearString).
                             intValue()!;
@@ -139,13 +127,6 @@ calendar.set(year, month, day, hour, minute, second);
 
 
     public setExpirationCalendar(calendar: Calendar, yearsString: string, monthsString: string, daysString: string, hoursString: string, minutesString: string, secondsString: string){
-var calendar = calendar
-var yearsString = yearsString
-var monthsString = monthsString
-var daysString = daysString
-var hoursString = hoursString
-var minutesString = minutesString
-var secondsString = secondsString
 
     var year: number = calendar.get(Calendar.YEAR) +new Integer(yearsString).
                             intValue();
@@ -182,12 +163,6 @@ calendar.set(year, month, day, hour, minute, second);
 
 
     public getTotalTime(yearString: string, monthString: string, dayString: string, hourString: string, minuteString: string, secondString: string): number{
-var yearString = yearString
-var monthString = monthString
-var dayString = dayString
-var hourString = hourString
-var minuteString = minuteString
-var secondString = secondString
 
     var time: number = TimeUtil.calendar.getTimeInMillis()!;
 ;

@@ -59,8 +59,7 @@ export class RunnableCanvasSingleThreadStartRunnable extends GameRunnable {
 public constructor (demoCanvas: RunnableCanvas){
 
             super();
-        var demoCanvas = demoCanvas
-this.runnableCanvas= demoCanvas;
+        this.runnableCanvas= demoCanvas;
     
 }
 

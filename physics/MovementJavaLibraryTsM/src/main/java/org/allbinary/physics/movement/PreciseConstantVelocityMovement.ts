@@ -50,9 +50,7 @@ export class PreciseConstantVelocityMovement extends BasicConstantVelocityMoveme
     private accumulatedZ: number= 0
 public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocityProperties){
             super(basicDecimal, velocityProperties);
-                        //var basicDecimal = basicDecimal
-    //var velocityProperties = velocityProperties
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -60,9 +58,6 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
 
 
     public init(speedBasicDecimal: BasicDecimal, angle: number, otherAngle: number){
-    //var speedBasicDecimal = speedBasicDecimal
-    //var angle = angle
-    //var otherAngle = otherAngle
 }
 
 
@@ -71,7 +66,6 @@ public constructor (basicDecimal: BasicDecimal, velocityProperties: BasicVelocit
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-    //var layer = layer
 
     var mathUtil: MathUtil = MathUtil.getInstance()!;
 ;

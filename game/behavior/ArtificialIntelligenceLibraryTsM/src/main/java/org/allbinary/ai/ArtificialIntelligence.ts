@@ -71,7 +71,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public processAI(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 }
 
 

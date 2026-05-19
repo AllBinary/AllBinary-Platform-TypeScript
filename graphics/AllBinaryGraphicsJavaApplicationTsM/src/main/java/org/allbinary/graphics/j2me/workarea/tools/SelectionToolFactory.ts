@@ -52,7 +52,6 @@ export class SelectionToolFactory
         
 
     public getInstance(canvasJPanel: CanvasJPanel): GraphicItemInterface{
-var canvasJPanel = canvasJPanel
 
 
 

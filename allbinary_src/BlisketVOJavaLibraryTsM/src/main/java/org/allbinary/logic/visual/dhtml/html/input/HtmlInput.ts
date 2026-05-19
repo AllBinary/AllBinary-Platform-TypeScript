@@ -68,11 +68,7 @@ export class HtmlInput extends HtmlTag {
 public constructor (before: string, type: string, name: string, after: string){
 
             super();
-        var before = before
-var type = type
-var name = name
-var after = after
-this.before= before;
+        this.before= before;
     
 this.type= type;
     
@@ -136,7 +132,7 @@ i < attributeSize; i++)
 
                         if(value != 
                                     null
-                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += key;

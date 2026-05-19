@@ -44,8 +44,7 @@ export class OpenGLBitmap extends PlatformBitmapBase {
 public constructor (bitmap: any = {}){
 
             super();
-            //var bitmap = bitmap
-this.image= bitmap as Image;
+        this.image= bitmap as Image;
     
 }
 
@@ -96,13 +95,6 @@ this.image= bitmap as Image;
 
 
     public getPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
-var pixels = pixels
-var offset = offset
-var stride = stride
-var x = x
-var y = y
-var width = width
-var height = height
 
                         if(this.image.isMutable())
                         
@@ -130,13 +122,6 @@ immutableImage!.getRGB(pixels, offset, stride, x, y, width, height);
 
 
     public setPixels(pixels: number[], offset: number, stride: number, x: number, y: number, width: number, height: number){
-var pixels = pixels
-var offset = offset
-var stride = stride
-var x = x
-var y = y
-var width = width
-var height = height
 this.image.setRGB2(pixels, offset, height, x, y, width, height);
     
 }

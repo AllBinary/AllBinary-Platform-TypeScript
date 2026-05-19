@@ -67,8 +67,7 @@ export class EditCssValidationView extends CssCustomizerView implements Validati
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -168,7 +167,6 @@ stringBuffer!.append(this.styleValidationInterface!.validationInfo());
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

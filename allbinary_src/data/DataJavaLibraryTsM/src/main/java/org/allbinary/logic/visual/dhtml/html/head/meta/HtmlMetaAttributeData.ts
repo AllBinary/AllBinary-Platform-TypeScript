@@ -52,9 +52,7 @@ export class HtmlMetaAttributeData
 public constructor (id: number, value: string){
 
             super();
-        var id = id
-var value = value
-this.name= value;
+        this.name= value;
     
 this.id= id;
     
@@ -62,7 +60,6 @@ this.id= id;
 
 
     public  === (htmlMetaAttributeData: HtmlMetaAttributeData): boolean{
-var htmlMetaAttributeData = htmlMetaAttributeData
 
                         if(htmlMetaAttributeData!.id == this.id)
                         

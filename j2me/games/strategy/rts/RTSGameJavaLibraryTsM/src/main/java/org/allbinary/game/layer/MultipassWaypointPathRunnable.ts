@@ -269,7 +269,6 @@ public constructor (){
 
 
     public setRunning(isRunning: boolean){
-var isRunning = isRunning
 this.runningP= isRunning;
     
 

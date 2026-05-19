@@ -82,7 +82,6 @@ this.setTableName(this.TABLENAME);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -115,8 +114,6 @@ var values = values
 
 
     public getFile(store: string, keywords: string): string{
-var store = store
-var keywords = keywords
 
     var whereHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -139,7 +136,6 @@ whereHashMap!.put(BasicItemData.KEYWORDS, keywords);
 
 
     public delete(keywords: string){
-var keywords = keywords
 super.deleteWhere(BasicItemData.KEYWORDS, keywords);
     
 }
@@ -160,7 +156,6 @@ super.deleteWhere(BasicItemData.KEYWORDS, keywords);
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(BasicItemData.KEYWORDS, updatedValues!.get(BasicItemData.KEYWORDS) as string, updatedValues);
     
 }

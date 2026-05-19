@@ -78,11 +78,6 @@ protected constructor (){
                 //@Throws(Exception.constructor)
             
     public initAt(imageCache: ImageCache, resourceAnimationInterfaceFactoryInterfaceFactory: BaseResourceAnimationInterfaceFactoryInterfaceFactory, portion: number, loadingString: string, index: number): number{
-var imageCache = imageCache
-var resourceAnimationInterfaceFactoryInterfaceFactory = resourceAnimationInterfaceFactoryInterfaceFactory
-var portion = portion
-var loadingString = loadingString
-var index = index
 
 
 

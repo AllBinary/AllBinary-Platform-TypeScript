@@ -85,9 +85,7 @@ export class TransformHttpRequestDocument
 public constructor (pageContext: PageContext, weblisketSession: WeblisketSession){
 
             super();
-        var pageContext = pageContext
-var weblisketSession = weblisketSession
-
+        
         try {
             
     var contentType: string = AcceptableResponseGenerator.getInstance()!.get(pageContext!.getRequest() as HttpServletRequest)!;
@@ -149,8 +147,7 @@ this.document.appendChild(contentTypeNode);
 public constructor (searchRequest: SearchRequest){
 
             super();
-        var searchRequest = searchRequest
-
+        
         try {
             
     var contentType: string = searchRequest!.getContentType()!;

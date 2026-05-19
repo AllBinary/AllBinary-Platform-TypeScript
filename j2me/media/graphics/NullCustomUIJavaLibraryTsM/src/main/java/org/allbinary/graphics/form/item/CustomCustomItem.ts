@@ -34,10 +34,7 @@ export class CustomCustomItem extends ABCustomItem {
         
 protected constructor (label: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, backgroundBasicColor, foregroundBasicColor);
-                    var label = label
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

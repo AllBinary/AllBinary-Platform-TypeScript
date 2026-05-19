@@ -59,7 +59,6 @@ export class GameConfigurationTextInput
     public static SIMULATOR_PORT: GameConfigurationTextInput = new GameConfigurationTextInput("Port: ", "8010");
 
     public static update(textField: TextField){
-var textField = textField
 
     var anyType: any = textField!.getLabel() as Object;
 ;
@@ -89,9 +88,7 @@ gameConfigurationTextInput!.setText(textField!.getString());
 public constructor (label: string, text: string){
 
             super();
-        var label = label
-var text = text
-this.setText(text);
+        this.setText(text);
     
 this.setLabel(label);
     
@@ -101,7 +98,6 @@ GameConfigurationTextInput.hashtable.put(this.getLabel(), this);
 
 
     public setText(text: string){
-var text = text
 this.text= text;
     
 }
@@ -118,7 +114,6 @@ this.text= text;
 
 
     public setLabel(label: string){
-var label = label
 this.label= label;
     
 }

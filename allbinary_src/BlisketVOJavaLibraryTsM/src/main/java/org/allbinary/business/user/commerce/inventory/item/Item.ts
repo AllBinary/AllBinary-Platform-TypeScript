@@ -81,8 +81,7 @@ export class Item extends BasicItem implements OrderItemInterface {
     private special: string
 public constructor (itemHashMap: HashMap<any, any>){
             super(itemHashMap);
-                    var itemHashMap = itemHashMap
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -111,7 +110,6 @@ this.shippingAddress= new StreetAddress();
 
 
     setData(itemHashMap: HashMap<any, any>){
-var itemHashMap = itemHashMap
 this.group= itemHashMap!.get(ShippingMethodData.GROUP) as string;
     
 this.tax= itemHashMap!.get(OrderHistoryData.TAX) as string;
@@ -140,42 +138,36 @@ this.shippingAddress= new StreetAddress(itemHashMap);
 
 
     public setGroup(value: string){
-var value = value
 this.group= value;
     
 }
 
 
     public setTax(value: string){
-var value = value
 this.tax= value;
     
 }
 
 
     public setShippingType(value: string){
-var value = value
 this.shippingType= value;
     
 }
 
 
     public setShippingCost(value: string){
-var value = value
 this.shippingCost= value;
     
 }
 
 
     public setShippingAddress(value: StreetAddress){
-var value = value
 this.shippingAddress= value;
     
 }
 
 
     public setSpecial(value: string){
-var value = value
 this.special= value;
     
 }

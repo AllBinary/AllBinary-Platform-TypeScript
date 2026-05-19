@@ -85,7 +85,6 @@ this.ANDROID_STRING_ARRAY[index]= stringUtil!.EMPTY_STRING;
 
 
     public initView(view: View){
-var view = view
 super.init();
     
 this.view= new ViewWrapper(view);

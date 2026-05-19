@@ -85,9 +85,7 @@ export class GameInputMappingInstructionsCanvas extends GameCommandCanvas {
     private colorFillPaintable: ColorFillBasePaintable
 public constructor (commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager){
             super(commandListener, GameInputMappingInstructionsCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
-                    var commandListener = commandListener
-var allBinaryGameLayerManager = allBinaryGameLayerManager
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -99,7 +97,6 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.removeAllCommands();
     
 this.addCommand(GameInputMappingInstructionsCanvas.CLOSE);
@@ -114,7 +111,6 @@ this.setCommandListener(cmdListener);
     private readonly drawStringUtil: DrawStringUtil = DrawStringUtil.getInstance()!;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;

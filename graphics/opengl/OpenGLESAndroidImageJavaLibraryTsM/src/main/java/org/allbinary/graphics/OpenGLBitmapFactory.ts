@@ -72,8 +72,7 @@ Config = class
  constructor (bitmapConfig: Bitmap.Config){
 
             super();
-            //var bitmapConfig = bitmapConfig
-this.bitmapConfig= bitmapConfig;
+        this.bitmapConfig= bitmapConfig;
     
 }
 
@@ -84,9 +83,6 @@ this.bitmapConfig= bitmapConfig;
     public readonly ARGB_8888: Config = new this.Config(Bitmap.Config.ARGB_8888);
 
     public createBitmap(width: number, height: number, config: OpenGLBitmapFactory.Config): OpenGLBitmap{
-var width = width
-var height = height
-var config = config
 
 
 
@@ -99,7 +95,6 @@ var config = config
                 //@Throws(IOException.constructor)
             
     public decodeStream(inputStream: InputStream): OpenGLBitmap{
-var inputStream = inputStream
 
 
 
@@ -110,7 +105,6 @@ var inputStream = inputStream
 
 
     public createBitmap(image: Image): PlatformBitmapBase{
-    //var image = image
 
 
 

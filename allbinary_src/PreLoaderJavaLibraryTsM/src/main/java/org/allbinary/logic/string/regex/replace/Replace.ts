@@ -69,7 +69,6 @@ export class Replace
         
 
     public static main(args: string[]){
-var args = args
 
         try {
             
@@ -129,9 +128,7 @@ console.log("New String: " +testString);
 public constructor (key: string, value: string){
 
             super();
-            //var key = key
-    //var value = value
-this.hashMap= new HashMap<any, any>();
+        this.hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(
                                                 [
@@ -146,9 +143,7 @@ this.hashMap!.put(
 public constructor (keys: string[], values: string[]){
 
             super();
-            //var keys = keys
-    //var values = values
-this.hashMap= new HashMap<any, any>();
+        this.hashMap= new HashMap<any, any>();
     
 this.hashMap!.put(keys, values);
     
@@ -157,14 +152,12 @@ this.hashMap!.put(keys, values);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.hashMap= hashMap;
+        this.hashMap= hashMap;
     
 }
 
 
     public all(replace: string): string{
-var replace = replace
 
 
 
@@ -175,8 +168,6 @@ var replace = replace
 
 
     public upTo(replace: string, total: number): string{
-var replace = replace
-var total = total
 
     var newStringBuffer: StringMaker = new StringMaker();
 ;
@@ -350,7 +341,6 @@ totalNumberOfReplaces++;
 
 
     public line(replace: string): string{
-var replace = replace
 
     var newStringBuffer: StringMaker = new StringMaker();
 ;

@@ -53,7 +53,6 @@ export class GameLayerUtil
         
 
     public static isOnScreen(layer: AllBinaryLayer): boolean{
-var layer = layer
 
     var displayInfo: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
@@ -72,14 +71,6 @@ var layer = layer
 
 
     public static isInside(rectX1: number, rectY1: number, rectX2: number, rectY2: number, rect2X1: number, rect2Y1: number, rect2X2: number, rect2Y2: number): boolean{
-var rectX1 = rectX1
-var rectY1 = rectY1
-var rectX2 = rectX2
-var rectY2 = rectY2
-var rect2X1 = rect2X1
-var rect2Y1 = rect2Y1
-var rect2X2 = rect2X2
-var rect2Y2 = rect2Y2
 
                         if(rectX1 > rect2X1 && rectX2 < rect2X2 && rectY1 > rect2Y1 && rectY2 < rect2Y2)
                         

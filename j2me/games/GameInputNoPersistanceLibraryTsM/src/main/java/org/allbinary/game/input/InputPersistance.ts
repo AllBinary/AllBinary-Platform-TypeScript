@@ -76,8 +76,7 @@ export class InputPersistance extends BasicPersitance {
     private readonly hashtableUtil: HashtableUtil = HashtableUtil.getInstance()!;
 public constructor (name: string){
             super(name);
-                    var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -87,7 +86,6 @@ public constructor (name: string){
                 //@Throws(Exception.constructor)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 
     var recordStore: RecordStore = RecordStore.openRecordStore(this.getRecordId(abeClientInformation), true)!;
 ;
@@ -137,8 +135,6 @@ recordStore!.closeRecordStore();
                 //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
-    //var abeClientInformation = abeClientInformation
-var hashtable = hashtable
 PreLogUtil.put(new StringMaker().
                             append(this.persistanceStrings!.NOT_SAVING)!.append(StringUtil.getInstance()!.toString(hashtable))!.toString(), this, this.commonStrings!.SAVE);
     

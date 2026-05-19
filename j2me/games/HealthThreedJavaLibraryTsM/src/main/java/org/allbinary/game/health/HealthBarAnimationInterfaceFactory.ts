@@ -68,8 +68,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstanceByLocation(layerInterface: AllBinaryLayer, location: number): HealthBarAnimation{
-var layerInterface = layerInterface
-var location = location
 
 
 
@@ -82,7 +80,6 @@ var location = location
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -95,7 +92,6 @@ var location = location
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-var animationInterface = animationInterface
 
 
 
@@ -106,7 +102,6 @@ var animationInterface = animationInterface
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

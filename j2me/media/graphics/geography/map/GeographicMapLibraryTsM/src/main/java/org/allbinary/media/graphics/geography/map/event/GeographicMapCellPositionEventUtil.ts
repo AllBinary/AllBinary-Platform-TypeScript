@@ -60,8 +60,7 @@ export class GeographicMapCellPositionEventUtil
 public constructor (anyType: any = {}){
 
             super();
-        var anyType = anyType
-this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
+        this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType, CellPositionFactory.getInstance()!.NONE);
     
 }
 
@@ -69,7 +68,6 @@ this.geographicMapCellPositionEvent= new GeographicMapCellPositionEvent(anyType,
                 //@Throws(Exception.constructor)
             
     public update(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
-var geographicMapCellPositionTracking = geographicMapCellPositionTracking
 this.geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
     
 this.geographicMapCellPositionEventHandler!.fireEvent(this.geographicMapCellPositionEvent);
@@ -80,7 +78,6 @@ this.geographicMapCellPositionEventHandler!.fireEvent(this.geographicMapCellPosi
                 //@Throws(Exception.constructor)
             
     public remove(geographicMapCellPositionTracking: GeographicMapCellPositionTracking){
-var geographicMapCellPositionTracking = geographicMapCellPositionTracking
 this.geographicMapCellPositionEvent!.setGeographicMapCellPosition(geographicMapCellPositionTracking!.getCurrentGeographicMapCellPosition());
     
 this.geographicMapCellPositionEventHandler!.fireRemoveEvent(this.geographicMapCellPositionEvent);

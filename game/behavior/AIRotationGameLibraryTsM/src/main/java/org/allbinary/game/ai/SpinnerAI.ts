@@ -60,10 +60,7 @@ export class SpinnerAI extends BasicAI {
     private direction: number[]
 public constructor (direction: number[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var direction = direction
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -75,7 +72,6 @@ this.direction= direction;
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.isEven)
                         

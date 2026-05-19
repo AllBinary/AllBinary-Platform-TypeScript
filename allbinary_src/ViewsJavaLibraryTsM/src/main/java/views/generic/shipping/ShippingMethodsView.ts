@@ -97,8 +97,7 @@ export class ShippingMethodsView extends HttpStoreComponentView implements DomNo
     private storeFrontInterface: StoreFrontInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -112,7 +111,6 @@ this.shippingMethods= new ShippingMethods(this.abeClientInformation, this.storeF
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

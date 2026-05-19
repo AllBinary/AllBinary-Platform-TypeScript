@@ -51,14 +51,12 @@ export class HudCapital extends Capital {
 public constructor (moneyGraphic: NumberStringHud){
 
             super();
-        var moneyGraphic = moneyGraphic
-this.capitalGraphic= moneyGraphic;
+        this.capitalGraphic= moneyGraphic;
     
 }
 
 
     public removeMoney(points: number){
-var points = points
 super.removeMoney(points);
     
 this.capitalGraphic!.reduce(points);
@@ -77,7 +75,6 @@ this.capitalGraphic!.reduce(points);
 
 
     public addMoney(points: number){
-var points = points
 super.addMoney(points);
     
 this.capitalGraphic!.add(points);

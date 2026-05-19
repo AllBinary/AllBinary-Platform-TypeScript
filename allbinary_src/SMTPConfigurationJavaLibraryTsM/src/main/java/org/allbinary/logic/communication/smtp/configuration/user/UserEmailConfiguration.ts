@@ -81,8 +81,7 @@ this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration()
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -107,7 +106,6 @@ this.setUserEmailEventsConfigurationInterface(new UserEmailEventsConfiguration(h
 
 
     public setUserEmailEventsConfigurationInterface(userEmailEventsConfigurationInterface: UserEmailEventsConfigurationInterface){
-var userEmailEventsConfigurationInterface = userEmailEventsConfigurationInterface
 this.userEmailEventsConfigurationInterface= userEmailEventsConfigurationInterface;
     
 }

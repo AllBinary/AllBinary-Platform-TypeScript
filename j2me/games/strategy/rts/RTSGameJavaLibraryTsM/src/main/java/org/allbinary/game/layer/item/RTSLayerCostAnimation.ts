@@ -92,9 +92,7 @@ export class RTSLayerCostAnimation extends Animation implements TechEventListene
 public constructor (image: Image, layerInterfaceFactoryInterface: CostLayerInterfaceFactoryInterface){
 
             super();
-        var image = image
-var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
-this.image= image;
+        this.image= image;
     
 this.layerInterfaceFactoryInterface= layerInterfaceFactoryInterface;
     
@@ -104,14 +102,12 @@ this.update();
 
 
     public onEvent(event: AllBinaryEventObject){
-var event = event
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onTechEvent(event: AllBinaryEventObject){
-var event = event
 
         try {
             this.update();
@@ -144,9 +140,6 @@ this.len= this.primitiveLongUtil!.getCurrentTotalDigits();
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 super.paintXY(graphics, x, y);
     
 

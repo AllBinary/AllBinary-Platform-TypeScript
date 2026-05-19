@@ -108,15 +108,7 @@ export class NumberStringHud extends BasicHud implements PaintableInterface {
     private readonly primitiveLongUtil: PrimitiveLongUtil
 public constructor (prependString: string, max: number, location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
-                    var prependString = prependString
-var max = max
-var location = location
-var direction = direction
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -162,14 +154,12 @@ this.value= 0;
 
 
     public add(value: number){
-var value = value
 this.set(this.value +value);
     
 }
 
 
     public set(value: number){
-var value = value
 this.value= value;
     
 
@@ -189,23 +179,18 @@ this.valueTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
 
 
     public reduce(value: number){
-var value = value
 this.set(this.value -value);
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paintDX(graphics, this.PREPEND_STRING, 0, this.PREPEND_STRING.length, this.valueString, 0, this.valueTotalDigits, this.offset);
     
 }
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 
     var charArray: string[] = this.PREPEND_STRING;
 ;
@@ -223,7 +208,7 @@ var y = y
     var len2: number = this.valueTotalDigits;
 ;
     
-this.basicSetColorUtil!.setBasicColorP(graphics, getBasicColorP());
+this.basicSetColorUtil!.setBasicColorP(graphics, this.getBasicColorP());
     
 graphics.drawChars(charArray, 0, len, x, y, 0);
     
@@ -233,7 +218,6 @@ graphics.drawChars(charArray2, 0, len2, x -this.offset, y, 0);
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

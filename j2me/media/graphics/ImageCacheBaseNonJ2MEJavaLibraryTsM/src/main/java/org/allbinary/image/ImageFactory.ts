@@ -67,7 +67,6 @@ export class ImageFactory
                 //@Throws(Exception.constructor)
             
     public createImageUrl(url: string): Image{
-    //var url = url
 
 
 
@@ -80,9 +79,6 @@ export class ImageFactory
                 //@Throws(Exception.constructor)
             
     public createImage(caller: string, width: number, height: number): Image{
-    //var caller = caller
-    //var width = width
-    //var height = height
 
 
 
@@ -95,8 +91,6 @@ export class ImageFactory
                 //@Throws(Exception.constructor)
             
     public createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
-    //var key = key
-    //var inputStream = inputStream
 
     var image: Image = Image.createImageFromInputStream(inputStream)!;
 ;

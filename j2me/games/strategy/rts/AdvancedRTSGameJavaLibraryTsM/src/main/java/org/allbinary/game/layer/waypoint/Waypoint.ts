@@ -108,9 +108,7 @@ export class Waypoint extends WaypointBase implements BuildingEventListenerInter
     private paths: BasicArrayList[][] = this.basicArrayListUtil!.NULL_ARRAY_OF_ARRAY;
 public constructor (ownerLayer: PathFindingLayerInterface, sound: Sound){
             super(sound);
-                        //var ownerLayer = ownerLayer
-    //var sound = sound
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -122,7 +120,6 @@ this.ownerLayer= ownerLayer;
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -199,7 +196,6 @@ this.paths= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
                 //@Throws(Exception.constructor)
             
     public getPathsListFromCacheOnly(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -212,7 +208,6 @@ this.paths= new Array(tiledLayer!.getColumns()) [tiledLayer!.getRows()]
                 //@Throws(Exception.constructor)
             
     public getPathsListRunnable(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var pathsList: BasicArrayList = this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.getRow()]!;
 ;
@@ -238,7 +233,6 @@ this.paths[geographicMapCellPosition!.getColumn()]![geographicMapCellPosition!.g
 
 
     getEndGeographicMapCellPosition(startGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
-    //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
     var endGeographicMapCellPosition: GeographicMapCellPosition = this.basicArrayListUtil!.getRandom(this.endList) as GeographicMapCellPosition;
 ;
@@ -284,7 +278,6 @@ endGeographicMapCellPosition= this.endList!.get(index) as GeographicMapCellPosit
                 //@Throws(Exception.constructor)
             
     createPaths(startGeographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
-    //var startGeographicMapCellPosition = startGeographicMapCellPosition
 
                         if(this.endList!.size() == 0)
                         
@@ -406,7 +399,6 @@ customMapArray[endGeographicMapCellPosition!.getRow()]![endGeographicMapCellPosi
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -415,7 +407,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
-    //var event = event
 
 
 
@@ -454,7 +445,6 @@ this.releaseCachedPaths();
                 //@Throws(Exception.constructor)
             
     public visit(unitLayer: PathFindingLayerInterface){
-    //var unitLayer = unitLayer
 
                         if(unitLayer!.getGroupInterface()[0] != this.ownerLayer!.getGroupInterface()[0])
                         

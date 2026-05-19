@@ -82,7 +82,6 @@ private constructor (){
 
 
     public create(directoryAbPath: AbPath): boolean{
-var directoryAbPath = directoryAbPath
 
 
 
@@ -95,14 +94,12 @@ var directoryAbPath = directoryAbPath
                 //@Throws(Exception.constructor)
             
     public remove(existingDirectoryAbPath: AbPath){
-var existingDirectoryAbPath = existingDirectoryAbPath
 this.remove(existingDirectoryAbPath!.toFileSystemString());
     
 }
 
 
     create(directory: string): boolean{
-var directory = directory
 
         try {
             
@@ -157,7 +154,6 @@ PreLogUtil.putOE("Error Creating Directories: " +directory, this, "create", e);
                 //@Throws(Exception.constructor)
             
     remove(existingDirectory: string){
-var existingDirectory = existingDirectory
 
     var existingDirectoryFile: AbFile = FileFactory.getInstance()!.getInstance(existingDirectory)!;
 ;
@@ -203,8 +199,6 @@ var existingDirectory = existingDirectory
 
 
     public search(fileFilter: FileFilter, file: AbFile): BasicArrayList{
-var fileFilter = fileFilter
-var file = file
 
 
 
@@ -215,9 +209,6 @@ var file = file
 
 
     public search(fileFilter: FileFilter, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
-var fileFilter = fileFilter
-var file = file
-var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
 ;
@@ -309,7 +300,6 @@ fileList!.addAllList(recursiveFileList);
 
 
     public search(file: AbFile): BasicArrayList{
-var file = file
 
 
 
@@ -320,8 +310,6 @@ var file = file
 
 
     public search(file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
-    //var file = file
-    //var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
 ;
@@ -408,8 +396,6 @@ fileList!.addAllList(recursiveFileList);
 
 
     public search(searchValue: string, file: AbFile): BasicArrayList{
-var searchValue = searchValue
-var file = file
 
 
 
@@ -420,9 +406,6 @@ var file = file
 
 
     public search(searchValue: string, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
-    //var searchValue = searchValue
-    //var file = file
-    //var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
 ;
@@ -516,8 +499,6 @@ fileList!.addAllList(recursiveFileList);
 
 
     public search(level: number, file: AbFile): BasicArrayList{
-var level = level
-var file = file
 
 
 
@@ -528,9 +509,6 @@ var file = file
 
 
     public search(level: number, file: AbFile, isRecursiveSearch: boolean): BasicArrayList{
-var level = level
-var file = file
-var isRecursiveSearch = isRecursiveSearch
 
     var fileList: BasicArrayList = new BasicArrayListD();
 ;

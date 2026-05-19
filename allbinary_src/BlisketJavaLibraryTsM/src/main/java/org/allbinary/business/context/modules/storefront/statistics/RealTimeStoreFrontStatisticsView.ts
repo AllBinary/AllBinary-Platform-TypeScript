@@ -82,9 +82,7 @@ export class RealTimeStoreFrontStatisticsView
 public constructor (storeFrontStatisticsInterface: StoreFrontStatisticsInterface, userRole: UserRole){
 
             super();
-        var storeFrontStatisticsInterface = storeFrontStatisticsInterface
-var userRole = userRole
-this.storeFrontStatisticsInterface= storeFrontStatisticsInterface;
+        this.storeFrontStatisticsInterface= storeFrontStatisticsInterface;
     
 this.userRole= userRole;
     
@@ -94,7 +92,6 @@ this.userRole= userRole;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(StoreFrontStatisticsData.getInstance()!.NAME)!;
 ;

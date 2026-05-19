@@ -69,31 +69,18 @@ export class ImageModifierUtil
 
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 }
 
 
     public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 }
 
 
     public setAlpha(originalImage: Image, image: Image, imageIndex: number, alphaInt: number){
-    //var originalImage = originalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var alphaInt = alphaInt
 }
 
 
     public getImageArray(originalImageArray: Image[]): Image[]{
-    //var originalImageArray = originalImageArray
 
 
 
@@ -104,9 +91,6 @@ export class ImageModifierUtil
 
 
     public handleImage(imageArray: Image[], index: number, image: Image){
-    //var imageArray = imageArray
-    //var index = index
-    //var image = image
 }
 
 

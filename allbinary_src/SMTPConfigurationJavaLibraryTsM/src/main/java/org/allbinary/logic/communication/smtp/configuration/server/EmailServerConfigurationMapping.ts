@@ -60,8 +60,7 @@ export class EmailServerConfigurationMapping
 public constructor (emailServerConfigurationInterface: EmailServerConfigurationInterface){
 
             super();
-        var emailServerConfigurationInterface = emailServerConfigurationInterface
-this.emailServerConfigurationInterface= emailServerConfigurationInterface;
+        this.emailServerConfigurationInterface= emailServerConfigurationInterface;
     
 }
 

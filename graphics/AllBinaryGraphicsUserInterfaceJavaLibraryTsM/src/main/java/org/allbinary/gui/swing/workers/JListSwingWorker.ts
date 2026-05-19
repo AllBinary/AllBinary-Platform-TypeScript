@@ -55,9 +55,7 @@ export class JListSwingWorker extends SwingWorker {
 public constructor (jList: JList, listModel: ListModel){
 
             super();
-        var jList = jList
-var listModel = listModel
-this.setJList(jList);
+        this.setJList(jList);
     
 this.setListModel(listModel);
     
@@ -91,7 +89,6 @@ this.getJList()!.setModel(this.getListModel());
 
 
     setJList(jList: JList){
-var jList = jList
 this.jList= jList;
     
 }
@@ -108,7 +105,6 @@ this.jList= jList;
 
 
     setListModel(listModel: ListModel){
-var listModel = listModel
 this.listModel= listModel;
     
 }

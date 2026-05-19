@@ -47,7 +47,6 @@ export class ToDomHelper
         
 
     public static convertNull(value: string): string{
-var value = value
 
                         if(value == 
                                     null

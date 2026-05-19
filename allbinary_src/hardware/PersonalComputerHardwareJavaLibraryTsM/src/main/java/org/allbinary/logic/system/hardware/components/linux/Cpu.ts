@@ -91,8 +91,7 @@ export class Cpu
 public constructor (filePath: string){
 
             super();
-        var filePath = filePath
-this.init(filePath);
+        this.init(filePath);
     
 }
 
@@ -107,7 +106,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     init(filePath: string){
-var filePath = filePath
 
     var lineNumberReader: LineNumberReader = 
                 null
@@ -145,8 +143,6 @@ var filePath = filePath
                 //@Throws(Exception.constructor)
             
     init(lineNumberReader: LineNumberReader, filePath: string){
-var lineNumberReader = lineNumberReader
-var filePath = filePath
 
         try {
             
@@ -357,8 +353,7 @@ nextLine= lineNumberReader!.readLine();
 }
 
 
-    public localeCompare(cpuInterface: CpuInterface): boolean{
-var cpuInterface = cpuInterface
+    public compareTo(cpuInterface: CpuInterface): boolean{
 
 
 
@@ -368,8 +363,7 @@ var cpuInterface = cpuInterface
 }
 
 
-    public localeCompare(componentInterface: HardwareComponentInterface): boolean{
-var componentInterface = componentInterface
+    public compareTo(componentInterface: HardwareComponentInterface): boolean{
 
 
 

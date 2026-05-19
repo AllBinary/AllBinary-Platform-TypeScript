@@ -96,9 +96,7 @@ export class OrderStatusEmail
 public constructor (abeClientInformation: AbeClientInformationInterface, orderHistory: OrderHistory){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var orderHistory = orderHistory
-this.abeClientInformation= abeClientInformation;
+        this.abeClientInformation= abeClientInformation;
     
 this.orderHistory= orderHistory;
     

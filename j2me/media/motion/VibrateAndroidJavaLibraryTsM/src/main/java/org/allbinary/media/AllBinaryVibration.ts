@@ -93,9 +93,6 @@ protected constructor (){
 
 
     public vibrate(duration: number, type: number, volume: number){
-var duration = duration
-var type = type
-var volume = volume
 this.vibrator.vibrate(duration);
     
 }

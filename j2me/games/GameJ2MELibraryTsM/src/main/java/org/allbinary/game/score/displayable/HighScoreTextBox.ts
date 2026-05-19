@@ -100,16 +100,7 @@ export class HighScoreTextBox extends CustomTextBox {
     public submitted: boolean = false;
 public constructor (highScoresFactoryInterface: HighScoresFactoryInterface, highScoresHelper: HighScoresHelperBase, abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, cmdListener: CommandListener, name: string, highScore: HighScore, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, "New High Score Enter Name:", name, 12, TextField.ANY, Font.getDefaultFont(), backgrounBasicColor, foregroundBasicColor);
-                        //var highScoresFactoryInterface = highScoresFactoryInterface
-    //var highScoresHelper = highScoresHelper
-    //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
-    //var cmdListener = cmdListener
-    //var name = name
-    //var highScore = highScore
-    //var backgrounBasicColor = backgrounBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -151,7 +142,6 @@ this.highScoreUtil= new HighScoreUtil(highScoresFactoryInterface, highScoresHelp
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.removeAllCommands();
     
 PostGameCommandFactory.getInstance()!.addCommands(this);
@@ -221,7 +211,6 @@ super.update();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics);
     
 this.paintable.paint(graphics);

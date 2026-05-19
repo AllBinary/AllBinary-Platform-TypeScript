@@ -55,8 +55,6 @@ export class NoGeographicMapCellPositionFactoryInitVisitor
                 //@Throws(Exception.constructor)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
-var tiledLayer = tiledLayer
-var cellPosition = cellPosition
 }
 
 

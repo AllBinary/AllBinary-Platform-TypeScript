@@ -97,7 +97,6 @@ export class LicenseInitInfoUtil
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFilePath(filePath: string){
-var filePath = filePath
 this.filePath= filePath;
     
 }
@@ -107,7 +106,6 @@ this.filePath= filePath;
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
-var initData = initData
 
                         if(this.filePath == this.stringUtil!.EMPTY_STRING)
                         
@@ -190,7 +188,6 @@ FileStreamFactory.getInstance()!.delete(this.filePath, this.INITFILENAME);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
-var initializeCounter = initializeCounter
 
     var METHOD_NAME: string = "readAgain";
 ;

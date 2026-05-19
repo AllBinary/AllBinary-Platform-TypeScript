@@ -61,7 +61,6 @@ export class EnumerationUtil
 
 
     public hasMoreElements(enumeration: Enumeration<any>): boolean{
-    //var enumeration = enumeration
 
 
 
@@ -72,7 +71,6 @@ export class EnumerationUtil
 
 
     public nextElement(enumeration: Enumeration<any>): any{
-    //var enumeration = enumeration
 
 
 

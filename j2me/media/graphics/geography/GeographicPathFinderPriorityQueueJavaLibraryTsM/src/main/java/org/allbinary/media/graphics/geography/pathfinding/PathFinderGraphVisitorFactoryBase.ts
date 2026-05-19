@@ -52,7 +52,6 @@ export class PathFinderGraphVisitorFactoryBase
         
 
     public getInstance(geographicMapInterface: BasicGeographicMap): PathFinderGraphVisitorBase{
-var geographicMapInterface = geographicMapInterface
 
 
 

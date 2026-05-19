@@ -67,8 +67,6 @@ public constructor (){
                 //@Throws(LicensingException.constructor)
             
     public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
-var hashMap = hashMap
-var pageContext = pageContext
 
         try {
             

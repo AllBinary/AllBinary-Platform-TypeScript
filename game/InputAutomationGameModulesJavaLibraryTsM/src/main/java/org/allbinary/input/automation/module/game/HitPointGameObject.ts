@@ -67,11 +67,7 @@ export class HitPointGameObject extends MeteredGameObject implements HitPointGam
     private readonly IS_CLOSE_DEATH_LABEL: string = "isCloseDeath: ";
 public constructor (bufferedImage: BufferedImage[], minX: Integer, maxX: Integer, y: Integer){
             super(bufferedImage, minX, maxX, y);
-                    var bufferedImage = bufferedImage
-var minX = minX
-var maxX = maxX
-var y = y
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -109,7 +105,6 @@ var y = y
 
 
     public isMoreThan(aFloat: number): boolean{
-var aFloat = aFloat
 
                         if(this.getRatios()[this.getRatios()!.length -1]!.doubleValue() > aFloat)
                         
@@ -147,7 +142,6 @@ var aFloat = aFloat
 
 
     setCloseDeath(closeDeath: boolean){
-var closeDeath = closeDeath
 this.closeDeath= closeDeath;
     
 }
@@ -164,7 +158,6 @@ this.closeDeath= closeDeath;
 
 
     public setDamaged(damaged: boolean){
-var damaged = damaged
 this.damaged= damaged;
     
 }

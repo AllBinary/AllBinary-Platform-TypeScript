@@ -51,12 +51,7 @@ export class SelectableTextItem extends ABTextItem {
         
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, layout, altText, backgroundBasicColor, foregroundBasicColor);
-                    var label = label
-var layout = layout
-var altText = altText
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,9 +69,6 @@ var foregroundBasicColor = foregroundBasicColor
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 
     var stringComponent: ABStringComponent = this.getLabelStringComponent()!;
 ;

@@ -60,7 +60,6 @@ export class Advertisements
     private readonly pageList: BasicArrayList = new BasicArrayListD();
 
     public addPage(advertisementProcessorInterface: AdvertisementProcessorInterface){
-var advertisementProcessorInterface = advertisementProcessorInterface
 
                         if(!this.pageList!.contains(advertisementProcessorInterface))
                         
@@ -153,7 +152,6 @@ advertisementProcessorInterface!.stop();
 
 
     public addBanner(advertisementProcessorInterface: AdvertisementProcessorInterface){
-var advertisementProcessorInterface = advertisementProcessorInterface
 
                         if(!this.bannerList!.contains(advertisementProcessorInterface))
                         
@@ -207,7 +205,6 @@ advertisementProcessorInterface!.stop();
 
 
     public getBanner(index: number): AdvertisementProcessorInterface{
-var index = index
 
     var advertisementProcessorInterface: AdvertisementProcessorInterface = this.bannerList!.objectArray[index]! as AdvertisementProcessorInterface;
 ;

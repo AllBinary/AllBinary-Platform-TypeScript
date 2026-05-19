@@ -88,7 +88,6 @@ gameInitializedEventHandler!.addListenerInterface(this as GameInitializedListene
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -97,7 +96,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     firstTime: boolean = true;
 
     public onGameInitialized(gameInitializedEvent: GameInitializedEvent){
-    //var gameInitializedEvent = gameInitializedEvent
 
     var ON_GAME_INITIALIZED: string = "onGameInitialized";
 ;

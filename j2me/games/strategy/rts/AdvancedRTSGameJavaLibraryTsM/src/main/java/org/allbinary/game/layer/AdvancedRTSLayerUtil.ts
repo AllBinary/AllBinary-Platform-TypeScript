@@ -67,7 +67,6 @@ export class AdvancedRTSLayerUtil
 
 
     public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
-    //var baseRaceTrackGeographicMap = baseRaceTrackGeographicMap
 
     var hashtable: Hashtable<any, any> = RTSLayerUtil.getInstance()!.createFakeRTSLayerHashtable(baseRaceTrackGeographicMap)!;
 ;

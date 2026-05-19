@@ -90,9 +90,6 @@ export class GameFeatureFormUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public getChoiceGroup(hashtable: Hashtable<any, any>, name: string, option: number): ChoiceGroup{
-var hashtable = hashtable
-var name = name
-var option = option
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -160,9 +157,6 @@ choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE);
 
 
     public addChoiceGroup(form: CommandForm, hashtable: Hashtable<any, any>, option: number){
-var form = form
-var hashtable = hashtable
-var option = option
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -209,7 +203,6 @@ form.append(this.getChoiceGroup(hashtable, name, option));
                 //@Throws(Exception.constructor)
             
     public setDefault(form: CommandForm){
-var form = form
 
     var size: number = form.size()!;
 ;

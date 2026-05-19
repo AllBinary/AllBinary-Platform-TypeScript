@@ -67,9 +67,7 @@ export class BasicEmail
 public constructor (emailInfo: EmailInfo, to: string){
 
             super();
-        var emailInfo = emailInfo
-var to = to
-
+        
     var basicEmailInfo: BasicEmailInfo = emailInfo!.getBasicEmailInfo()!;
 ;
     
@@ -135,7 +133,6 @@ this.email= new AbEmail(basicEmailInfo!.getEmailServerConfigurationInterface()!.
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
 
 

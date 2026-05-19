@@ -69,9 +69,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, startIndex: number){
-var allBinaryLayerManager = allBinaryLayerManager
-var layerInterface = layerInterface
-var startIndex = startIndex
 
     var collidableInterfaceCompositeInterface: CollidableCompositeLayer = layerInterface as CollidableCompositeLayer;
 ;
@@ -132,7 +129,6 @@ collidableBase2!.collide(collidableInterfaceCompositeInterface, collidableInterf
 
 
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
-var layerInterface = layerInterface
 
                         if(layerInterface!.implmentsCollidableInterface())
                         

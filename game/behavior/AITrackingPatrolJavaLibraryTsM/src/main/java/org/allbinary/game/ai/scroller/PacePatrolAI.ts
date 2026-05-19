@@ -89,10 +89,7 @@ export class PacePatrolAI extends BasePatrolAI implements TrackingEventListenerI
     isFollowLimitedByTerrain: boolean = false;
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
-                    var hashtable = hashtable
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -106,7 +103,6 @@ this.trackingList= new BasicArrayListD();
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 this.update();
     
 
@@ -289,14 +285,12 @@ lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onMovement(trackingEvent: TrackingEvent){
-var trackingEvent = trackingEvent
 this.trackingList!.clear();
     
 this.trackingList!.add(trackingEvent);
@@ -315,7 +309,6 @@ this.trackingList!.add(trackingEvent);
 
 
     public setFiringDistance(firingDistance: number){
-var firingDistance = firingDistance
 this.firingDistance= firingDistance;
     
 }

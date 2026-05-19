@@ -49,8 +49,7 @@ export class RectangleLayerBounds extends LayerBounds {
         
 public constructor (rectangle: Rectangle){
             super(rectangle);
-                    var rectangle = rectangle
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -58,7 +57,6 @@ public constructor (rectangle: Rectangle){
 
 
     public visit(boundsVisitorInterface: BoundsVisitorInterface){
-var boundsVisitorInterface = boundsVisitorInterface
 
                         if(boundsVisitorInterface!.getX() > this.rectangle.getMaxX())
                         

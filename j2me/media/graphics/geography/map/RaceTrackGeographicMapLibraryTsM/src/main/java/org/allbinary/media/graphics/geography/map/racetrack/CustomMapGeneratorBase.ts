@@ -69,9 +69,6 @@ export class CustomMapGeneratorBase
                 //@Throws(Exception.constructor)
             
     public getCustomType(column: number, row: number, currentType: number): number{
-    //var column = column
-    //var row = row
-    //var currentType = currentType
 
 
 

@@ -90,10 +90,7 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
 
             super();
-            //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
-this.openGLBitmap= bitmapFactory!.createBitmap(image);
+        this.openGLBitmap= bitmapFactory!.createBitmap(image);
     
 this.textureFactory= textureFactory;
     
@@ -103,7 +100,6 @@ this.textureFactory= textureFactory;
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-var gl = gl
 
 
 
@@ -113,7 +109,6 @@ var gl = gl
 
 
     initTexture(gl: GL10): boolean{
-var gl = gl
 
 
 
@@ -124,23 +119,10 @@ var gl = gl
 
 
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
-var gl = gl
-var viewHeight = viewHeight
-var x_src = x_src
-var y_src = y_src
-var width = width
-var height = height
-var x = x
-var y = y
-var z = z
 }
 
 
     public draw(gl: GL10, x: number, y: number, z: number){
-var gl = gl
-var x = x
-var y = y
-var z = z
 }
 
 

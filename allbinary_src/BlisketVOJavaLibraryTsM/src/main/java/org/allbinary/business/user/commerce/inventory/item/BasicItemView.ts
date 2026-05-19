@@ -80,9 +80,7 @@ export class BasicItemView
 public constructor (itemInterface: ItemInterface, vector: Vector){
 
             super();
-        var itemInterface = itemInterface
-var vector = vector
-this.itemInterface= itemInterface;
+        this.itemInterface= itemInterface;
     
 this.vector= vector;
     
@@ -92,7 +90,6 @@ this.vector= vector;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         

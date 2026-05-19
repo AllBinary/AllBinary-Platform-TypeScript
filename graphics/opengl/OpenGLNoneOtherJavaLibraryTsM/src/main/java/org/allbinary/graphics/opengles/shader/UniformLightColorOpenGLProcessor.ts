@@ -50,14 +50,10 @@ export class UniformLightColorOpenGLProcessor extends OpenGLObject3dProcessor {
 public constructor (shaderComposite: ShaderComposite, handleIndex: number){
 
             super();
-            //var shaderComposite = shaderComposite
-    //var handleIndex = handleIndex
-}
+        }
 
 
     public process(gl: GL10, unused: any = {}){
-    //var gl = gl
-    //var unused = unused
 }
 
 

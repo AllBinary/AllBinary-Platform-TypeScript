@@ -61,7 +61,6 @@ export class LicenseInterfaceSingleton
 
 
     public static init(licenseInterface: AbeLicenseInterface){
-var licenseInterface = licenseInterface
 
                         if(licenseInterface != 
                                     null

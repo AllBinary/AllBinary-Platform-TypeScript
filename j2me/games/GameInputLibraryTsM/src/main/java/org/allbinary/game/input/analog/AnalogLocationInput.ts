@@ -48,8 +48,7 @@ export class AnalogLocationInput
  constructor (playerId: number){
 
             super();
-        var playerId = playerId
-this.playerId= playerId;
+        this.playerId= playerId;
     
 this.customGPoint= new CustomGPoint(0, 0, 0);
     
@@ -87,7 +86,6 @@ this.customGPoint= new CustomGPoint(0, 0, 0);
 
 
     public setRz(rz: number){
-var rz = rz
 this.rz= rz;
     
 }
@@ -104,7 +102,6 @@ this.rz= rz;
 
 
     public setRightTrigger(rightTrigger: number){
-var rightTrigger = rightTrigger
 this.rightTrigger= rightTrigger;
     
 }
@@ -121,7 +118,6 @@ this.rightTrigger= rightTrigger;
 
 
     public setLeftTrigger(leftTrigger: number){
-var leftTrigger = leftTrigger
 this.leftTrigger= leftTrigger;
     
 }

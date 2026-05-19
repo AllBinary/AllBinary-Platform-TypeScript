@@ -75,7 +75,6 @@ private constructor (){
 
 
     public getNonNull(string: string): string{
-var string = string
 
                         if(string == 
                                     null
@@ -115,8 +114,6 @@ var string = string
 
 
     public count(string: string, aChar: string): number{
-    //var string = string
-    //var aChar = aChar
 
     var count: number = 0;
 ;
@@ -154,7 +151,6 @@ index < size; index++)
 
 
     public toString(anyType: any = {}): string{
-    //var anyType = anyType
 
                         if(anyType != 
                                     null

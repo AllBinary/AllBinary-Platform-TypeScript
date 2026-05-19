@@ -60,7 +60,6 @@ export class FileJDialog extends javax.swing.JDialog {
         
 
     public static main(args: string[]){
-var args = args
 java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
@@ -93,9 +92,7 @@ this.getJFileChooser1()!.setMultiSelectionEnabled(true);
 
 public constructor (parent: java.awt.Frame, modal: boolean){
             super(parent, modal);
-                    var parent = parent
-var modal = modal
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -107,7 +104,6 @@ this.getJFileChooser1()!.setMultiSelectionEnabled(true);
 
 
     public addFinishedListener(finishedListenerInterface: FileJDialogListenerInterface){
-var finishedListenerInterface = finishedListenerInterface
 this.finishedListenerInterface= finishedListenerInterface;
     
 }
@@ -122,7 +118,6 @@ this.jFileChooser1!.addActionListener(new class extends java.awt.event.ActionLis
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jFileChooser1ActionPerformed(evt);
     
 }
@@ -146,7 +141,6 @@ pack();
 
 
     jFileChooser1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.logUtil!.putF("Starting Action Command: " +evt.getActionCommand(), this, "ActionPerformed");
     
 
@@ -194,7 +188,6 @@ this.logUtil!.putF("Starting Action Command: " +evt.getActionCommand(), this, "A
 
 
     public setJFileChooser1(jFileChooser1: javax.swing.JFileChooser){
-var jFileChooser1 = jFileChooser1
 this.jFileChooser1= jFileChooser1;
     
 }

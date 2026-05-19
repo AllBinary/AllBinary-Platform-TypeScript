@@ -117,11 +117,7 @@ export class GameInputMappingCanvas extends GameCommandCanvas implements InputMa
     private selectedInput: Input = this.NONE;
 public constructor (abeClientInformation: AbeClientInformationInterface, commandListener: CommandListener, allBinaryGameLayerManager: AllBinaryGameLayerManager, helpPaintable: HelpPaintable){
             super(commandListener, GameInputMappingCanvas.NAME, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
-                        //var abeClientInformation = abeClientInformation
-    //var commandListener = commandListener
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
-    //var helpPaintable = helpPaintable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -169,7 +165,6 @@ this.update();
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.removeAllCommands();
     
 this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
@@ -184,29 +179,24 @@ this.setCommandListener(cmdListener);
 
 
     public keyPressed(keyCode: number){
-    //var keyCode = keyCode
 this.keyPressedByDevice(keyCode, 0);
     
 }
 
 
     public keyReleased(keyCode: number){
-    //var keyCode = keyCode
 this.keyReleasedByDevice(keyCode, 0);
     
 }
 
 
     public keyRepeated(keyCode: number){
-    //var keyCode = keyCode
 this.keyRepeatedByDevice(keyCode, 0);
     
 }
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 this.addGameKeyEvent(keyCode, false);
     
 super.keyPressedByDevice(keyCode, 0);
@@ -217,8 +207,6 @@ super.keyPressedByDevice(keyCode, 0);
     private readonly inputFactory: InputFactory = InputFactory.getInstance()!;
 
     addGameKeyEvent(keyCode: number, repeated: boolean){
-    //var keyCode = keyCode
-    //var repeated = repeated
 
         try {
             this.logUtil!.putF(new StringMaker().
@@ -248,8 +236,6 @@ this.logUtil!.put("Key Event Error", this, this.gameInputStrings!.ADD_KEY_EVENT,
                 //@Throws(Exception.constructor)
             
     public process(gameKey: GameKey, input: Input){
-    //var gameKey = gameKey
-    //var input = input
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -283,7 +269,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.PROCESS);
 
 
     setSelectedAction(gameKey: GameKey){
-    //var gameKey = gameKey
 this.logUtil!.putF(new StringMaker().
                             append("Selected GameKey: ")!.append(this.stringUtil!.toString(gameKey))!.toString(), this, "setSelectedAction");
     
@@ -301,8 +286,6 @@ this.repaintBehavior!.onChangeRepaint(this);
                 //@Throws(Exception.constructor)
             
     gameActionCrud(gameKey: GameKey, input: Input){
-    //var gameKey = gameKey
-    //var input = input
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -375,8 +358,6 @@ this.repaintBehavior!.onChangeRepaint(this);
                 //@Throws(Exception.constructor)
             
     addNewMapping(gameKey: GameKey, input: Input){
-    //var gameKey = gameKey
-    //var input = input
 
     var METHOD_NAME: string = "addNewMapping";
 ;
@@ -499,7 +480,6 @@ this.repaintBehavior!.onChangeRepaint(this);
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 this.colorFillPaintable!.paint(graphics);
     
 this.helpPaintable!.paint(graphics);

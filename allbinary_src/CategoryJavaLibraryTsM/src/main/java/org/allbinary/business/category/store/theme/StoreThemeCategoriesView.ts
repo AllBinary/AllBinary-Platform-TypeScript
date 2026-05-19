@@ -62,8 +62,7 @@ export class StoreThemeCategoriesView
 public constructor (categoryInterface: StoreThemeCategoryInterface){
 
             super();
-        var categoryInterface = categoryInterface
-this.categoryInterface= categoryInterface;
+        this.categoryInterface= categoryInterface;
     
 }
 
@@ -71,7 +70,6 @@ this.categoryInterface= categoryInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = new StoreThemeCategoryView(this.categoryInterface).
                             toXmlNode(document)!;

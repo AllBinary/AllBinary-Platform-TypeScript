@@ -80,8 +80,6 @@ export class ImageServlet extends HttpServlet {
                 //@Throws(ServletException.constructor, IOException.constructor)
             
     processRequest(request: HttpServletRequest, response: HttpServletResponse){
-    //var request = request
-    //var response = response
 
     var inputStream: InputStream = 
                 null
@@ -150,8 +148,6 @@ response.getOutputStream()!.write(byteArray);
                 //@Throws(ServletException.constructor, IOException.constructor)
             
     doGet(request: HttpServletRequest, response: HttpServletResponse){
-var request = request
-var response = response
 this.processRequest(request, response);
     
 }
@@ -160,8 +156,6 @@ this.processRequest(request, response);
                 //@Throws(ServletException.constructor, IOException.constructor)
             
     doPost(request: HttpServletRequest, response: HttpServletResponse){
-var request = request
-var response = response
 this.processRequest(request, response);
     
 }

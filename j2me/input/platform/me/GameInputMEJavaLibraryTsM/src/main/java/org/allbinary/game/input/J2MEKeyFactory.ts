@@ -98,7 +98,6 @@ inputFactory!.add(gameKeyArray[index]!.getId(), gameKeyArray[index]!);
 
 
     public isSubmission(input: Input): boolean{
-var input = input
 
                         if(input == this.gameKeyFactory!.FIRE)
                         
@@ -122,7 +121,6 @@ var input = input
 
 
     public isDelete(input: Input): boolean{
-var input = input
 
                         if(input == this.gameKeyFactory!.GAME_D)
                         
@@ -146,7 +144,6 @@ var input = input
 
 
     public isBackSpace(input: Input): boolean{
-var input = input
 
 
 
@@ -157,7 +154,6 @@ var input = input
 
 
     public isUp(input: Input): boolean{
-var input = input
 
                         if(input == this.gameKeyFactory!.UP)
                         
@@ -181,7 +177,6 @@ var input = input
 
 
     public isDown(input: Input): boolean{
-var input = input
 
                         if(input == this.gameKeyFactory!.DOWN)
                         
@@ -205,7 +200,6 @@ var input = input
 
 
     public isLeft(input: Input): boolean{
-var input = input
 
                         if(input == this.gameKeyFactory!.LEFT)
                         
@@ -229,7 +223,6 @@ var input = input
 
 
     public isRight(input: Input): boolean{
-var input = input
 
                         if(input == this.gameKeyFactory!.RIGHT)
                         
@@ -253,7 +246,6 @@ var input = input
 
 
     public isEnter(input: Input): boolean{
-var input = input
 
                         if(input == this.gameKeyFactory!.FIRE)
                         

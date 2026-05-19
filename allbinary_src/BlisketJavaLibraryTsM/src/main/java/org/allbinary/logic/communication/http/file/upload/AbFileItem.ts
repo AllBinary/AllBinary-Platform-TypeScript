@@ -90,10 +90,7 @@ export class AbFileItem
 public constructor (name: string, fieldName: string, byteArray: number[]){
 
             super();
-        var name = name
-var fieldName = fieldName
-var byteArray = byteArray
-this.name= name;
+        this.name= name;
     
 this.fieldName= fieldName;
     
@@ -166,7 +163,6 @@ this.byteArray= byteArray;
                 //@Throws(UnsupportedEncodingException.constructor)
             
     public getString(encoding: string): string{
-var encoding = encoding
 
 
 
@@ -212,7 +208,6 @@ var encoding = encoding
                 //@Throws(Exception.constructor)
             
     public write(file: File){
-var file = file
 
 
 
@@ -224,7 +219,6 @@ var file = file
                 //@Throws(Exception.constructor)
             
     public write(file: AbFile){
-var file = file
 
 
 
@@ -250,7 +244,6 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, "delete()");
 
 
     public setFieldName(name: string){
-var name = name
 this.fieldName= name;
     
 }
@@ -284,7 +277,6 @@ this.fieldName= name;
 
 
     public setFormField(state: boolean){
-var state = state
 }
 
 
@@ -309,7 +301,6 @@ var state = state
 
 
     public setHeaders(fih: FileItemHeaders){
-var fih = fih
 
 
 

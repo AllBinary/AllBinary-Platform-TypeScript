@@ -54,9 +54,7 @@ export class VelocityProperties extends BasicVelocityProperties implements Veloc
 public constructor (maxForwardVelocity: number, maxReverseVelocity: number){
 
             super();
-        var maxForwardVelocity = maxForwardVelocity
-var maxReverseVelocity = maxReverseVelocity
-this.setMaxForwardVelocity(maxForwardVelocity);
+        this.setMaxForwardVelocity(maxForwardVelocity);
     
 this.setMaxReverseVelocity(maxReverseVelocity);
     
@@ -74,7 +72,6 @@ this.setMaxReverseVelocity(maxReverseVelocity);
 
 
     public setMaxForwardVelocity(maxForwardVelocity: number){
-var maxForwardVelocity = maxForwardVelocity
 this.maxForwardVelocity= maxForwardVelocity;
     
 }
@@ -91,7 +88,6 @@ this.maxForwardVelocity= maxForwardVelocity;
 
 
     public setMaxReverseVelocity(maxReverseVelocity: number){
-var maxReverseVelocity = maxReverseVelocity
 this.maxReverseVelocity= maxReverseVelocity;
     
 }
@@ -162,7 +158,6 @@ this.limitMaxXYReverseVelocity();
 
 
     public limitMaxXYVelocity(maxVelocity: number){
-var maxVelocity = maxVelocity
 this.limitMaxXVelocity(maxVelocity);
     
 this.limitMaxYVelocity(maxVelocity);
@@ -171,7 +166,6 @@ this.limitMaxYVelocity(maxVelocity);
 
 
     public limitMaxPositiveYVelocity(maxVelocity: number){
-var maxVelocity = maxVelocity
 
                         if(this.velocityYBasicDecimal!.getUnscaled() > maxVelocity)
                         
@@ -185,7 +179,6 @@ var maxVelocity = maxVelocity
 
 
     public limitMaxNegativeYVelocity(maxVelocity: number){
-var maxVelocity = maxVelocity
 
                         if(this.velocityYBasicDecimal!.getUnscaled() <  -maxVelocity)
                         
@@ -199,7 +192,6 @@ var maxVelocity = maxVelocity
 
 
     public limitMaxYVelocity(maxVelocity: number){
-var maxVelocity = maxVelocity
 this.limitMaxPositiveYVelocity(maxVelocity);
     
 this.limitMaxNegativeYVelocity(maxVelocity);
@@ -208,7 +200,6 @@ this.limitMaxNegativeYVelocity(maxVelocity);
 
 
     public limitMaxXVelocity(maxVelocity: number){
-var maxVelocity = maxVelocity
 
                         if(this.velocityXBasicDecimal!.getUnscaled() > maxVelocity)
                         
@@ -231,7 +222,6 @@ var maxVelocity = maxVelocity
 
 
     public isOverXYMaxVelocity(maxVelocity: number): boolean{
-var maxVelocity = maxVelocity
 
                         if(this.velocityXBasicDecimal!.getUnscaled() > maxVelocity)
                         
@@ -294,9 +284,6 @@ var maxVelocity = maxVelocity
 
 
     public setVelocityi(magnitude: number, angle: number, otherAngle: number){
-var magnitude = magnitude
-var angle = angle
-var otherAngle = otherAngle
 super.setVelocityi(magnitude, angle, otherAngle);
     
 this.limitXYToForwardAndReverseMaxVelocity();
@@ -305,9 +292,6 @@ this.limitXYToForwardAndReverseMaxVelocity();
 
 
     public addVelocityi(magnitude: number, angle: number, otherAngle: number){
-var magnitude = magnitude
-var angle = angle
-var otherAngle = otherAngle
 super.addVelocityi(magnitude, angle, otherAngle);
     
 this.limitXYToForwardAndReverseMaxVelocity();

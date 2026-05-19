@@ -71,7 +71,6 @@ public constructor (){
 
 
     public setOutput(value: string){
-var value = value
 this.output= value;
     
 this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.NAME, this.output);
@@ -80,7 +79,6 @@ this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.NAME, this.o
 
 
     public setFile(value: string){
-var value = value
 this.file= value;
     
 this.getPropertiesHashMap()!.put(InputOutputTypeData.getInstance()!.FILE, this.file);

@@ -75,7 +75,6 @@ export class PlayerStateUtil
     public readonly CLOSED: string = "CLOSED";
 
     public convert(state: number): string{
-    //var state = state
 
                         if(state == PlayerI.UNREALIZED)
                         

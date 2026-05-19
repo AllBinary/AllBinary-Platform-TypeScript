@@ -51,8 +51,7 @@ export class RaceTrackGameFeature extends GameFeature {
     public static readonly AUTO_FINISH_AI: GameFeature = new RaceTrackGameFeature("Auto Finish AI");
 protected constructor (name: string){
             super(name);
-                    var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

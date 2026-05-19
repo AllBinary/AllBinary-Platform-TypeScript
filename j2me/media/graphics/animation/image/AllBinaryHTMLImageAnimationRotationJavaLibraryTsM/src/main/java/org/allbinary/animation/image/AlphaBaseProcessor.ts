@@ -63,10 +63,6 @@ export class AlphaBaseProcessor
 
 
     public setAlpha(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, alpha: number){
-    //var imageModifierUtil = imageModifierUtil
-    //var originalImage = originalImage
-    //var imageToShow = imageToShow
-    //var alpha = alpha
 }
 
 

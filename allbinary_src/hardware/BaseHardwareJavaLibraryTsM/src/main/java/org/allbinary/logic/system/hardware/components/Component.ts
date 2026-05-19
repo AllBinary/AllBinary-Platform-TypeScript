@@ -50,8 +50,7 @@ export class Component
 public constructor (componentName: string){
 
             super();
-        var componentName = componentName
-this.name= componentName;
+        this.name= componentName;
     
 }
 

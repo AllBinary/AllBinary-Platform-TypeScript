@@ -46,10 +46,7 @@ export class StaticViewPosition extends ViewPosition {
         
 public constructor (x: number, y: number, z: number){
             super(x, y, z);
-                    var x = x
-var y = y
-var z = z
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

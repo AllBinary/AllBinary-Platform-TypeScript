@@ -58,9 +58,7 @@ export class ContextTransformer extends BasicTransformer {
         
 public constructor (abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface){
             super(abeClientInformation, transformInfoInterface);
-                        //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

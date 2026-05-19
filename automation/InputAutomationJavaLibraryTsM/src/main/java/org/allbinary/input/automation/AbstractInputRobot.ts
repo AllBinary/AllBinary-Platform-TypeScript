@@ -67,8 +67,7 @@ export class AbstractInputRobot
 public constructor (helpSet: HelpSet){
 
             super();
-        var helpSet = helpSet
-this.setHelpSet(helpSet);
+        this.setHelpSet(helpSet);
     
 }
 
@@ -84,7 +83,6 @@ this.setHelpSet(helpSet);
 
 
     public mouseMove(point: Point){
-var point = point
 this.mouseMove(point.x, point.y);
     
 this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveMouse");
@@ -95,9 +93,6 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y, this, "moveM
                 //@Throws(Exception.constructor)
             
     public mouseMoveToTarget(rectangle: Rectangle, x: Integer, y: Integer){
-var rectangle = rectangle
-var x = x
-var y = y
 
     var point: Point = PointHelper.getCenterPoint(rectangle)!;
 ;
@@ -112,15 +107,12 @@ this.logUtil!.putF("Moved Mouse To: x: " +point.x +" y: " +point.y +" in the mid
                 //@Throws(Exception.constructor)
             
     public mouseMoveToTarget(rectangle: Rectangle){
-var rectangle = rectangle
 this.mouseMoveToTarget(rectangle, 0, 0);
     
 }
 
 
     public mouseMove(x: Integer, y: Integer){
-var x = x
-var y = y
 
 
 
@@ -130,7 +122,6 @@ var y = y
 
 
     setHelpSet(helpSet: HelpSet){
-var helpSet = helpSet
 this.helpSet= helpSet;
     
 }

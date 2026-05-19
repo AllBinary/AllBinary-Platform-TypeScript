@@ -54,9 +54,7 @@ export class PlayerType
  constructor (name: string, value: number){
 
             super();
-            //var name = name
-    //var value = value
-this.name= name;
+        this.name= name;
     
 this.id= value;
     

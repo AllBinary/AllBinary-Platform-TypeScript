@@ -41,9 +41,6 @@ export class NullRotationAnimation extends RotationAnimation {
         
 
     public static createTotalAngle(angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior): NullRotationAnimation{
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var animationBehavior = animationBehavior
 
 
 
@@ -54,7 +51,6 @@ export class NullRotationAnimation extends RotationAnimation {
 
 
     public static createQuarter(animationBehavior: AnimationBehavior): NullRotationAnimation{
-    //var animationBehavior = animationBehavior
 
 
 
@@ -65,10 +61,7 @@ export class NullRotationAnimation extends RotationAnimation {
 
 protected constructor (angleInfo: AngleInfo, circularIndexUtil: CircularIndexUtil, animationBehavior: AnimationBehavior){
             super(angleInfo, circularIndexUtil, animationBehavior);
-                        //var angleInfo = angleInfo
-    //var circularIndexUtil = circularIndexUtil
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

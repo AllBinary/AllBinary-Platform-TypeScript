@@ -62,11 +62,7 @@ export class ImageHealthGraphic extends HealthGraphic {
     private image: Image[]
 public constructor (animationInterface: AnimationInterface, healthInterface: HealthInterface, location: number, direction: number){
             super(animationInterface, healthInterface, location, direction);
-                    var animationInterface = animationInterface
-var healthInterface = healthInterface
-var location = location
-var direction = direction
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,7 +110,6 @@ this.animationInterface!.paint(this.image[numOfHealth]!.getGraphics(), numOfHeal
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.drawImage(this.image[max]!, x, y, Anchor.TOP_LEFT);
     
 }

@@ -85,13 +85,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
 
 
 
@@ -104,14 +97,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
-    //var mutable = mutable
 
     var scaleX: number = scaleNominatorX /scaleDenominatorX;
 ;
@@ -132,11 +117,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, cached: boolean): Image{
-var imageCache = imageCache
-var originalImage = originalImage
-var scaleX = scaleX
-var scaleY = scaleY
-var cached = cached
 
 
 
@@ -149,9 +129,6 @@ var cached = cached
                 //@Throws(Exception.constructor)
             
     public createImageInternal(originalImage: Image, scaleX: number, scaleY: number): Image{
-var originalImage = originalImage
-var scaleX = scaleX
-var scaleY = scaleY
 
     var image: Image = ImageCreationUtil.getInstance()!.getInstance(Math.round((originalImage!.getWidth() *scaleX)), Math.round((originalImage!.getHeight() *scaleY)))!;
 ;

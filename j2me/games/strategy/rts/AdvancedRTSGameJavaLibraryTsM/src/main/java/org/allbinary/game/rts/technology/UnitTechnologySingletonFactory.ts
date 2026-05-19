@@ -98,7 +98,6 @@ this.setSpeed(0);
 
 
     public setDamage(damage: number){
-var damage = damage
 this.damage= damage;
     
 }
@@ -115,7 +114,6 @@ this.damage= damage;
 
 
     public setHealth(health: number){
-var health = health
 this.health= health;
     
 }
@@ -132,7 +130,6 @@ this.health= health;
 
 
     public setReload(reload: number){
-var reload = reload
 this.reload= reload;
     
 }
@@ -149,7 +146,6 @@ this.reload= reload;
 
 
     public setRepair(repair: number){
-var repair = repair
 this.repair= repair;
     
 }
@@ -166,7 +162,6 @@ this.repair= repair;
 
 
     public setSpeed(speed: number){
-var speed = speed
 this.speed= speed;
     
 }

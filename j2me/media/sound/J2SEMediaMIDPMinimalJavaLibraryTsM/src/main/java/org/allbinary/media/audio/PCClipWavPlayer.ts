@@ -97,8 +97,7 @@ export class PCClipWavPlayer extends BasicPlayer implements LineListener {
 public constructor (inputStream: InputStream){
 
             super();
-        var inputStream = inputStream
-
+        
     var audioInputStream: AudioInputStream = new AudioInputStream(new ByteArrayInputStream(NullUtil.getInstance()!.NULL_BYTE_ARRAY), NullAudioFormat.NULL_AUDIO_FORMAT, 0);
 ;
     
@@ -235,7 +234,6 @@ super.start();
                 //@Throws(Exception.constructor)
             
     create(audioInputStream: AudioInputStream): Clip{
-var audioInputStream = audioInputStream
 
     var clip: Clip = AudioSystem.getClip()!;
 ;
@@ -292,7 +290,6 @@ super.stop();
 
 
     public getControl(controlType: string): Control{
-var controlType = controlType
 
 
 
@@ -313,8 +310,6 @@ var controlType = controlType
 
 
     public setVolume(leftVolume: number, rightVolume: number){
-    //var leftVolume = leftVolume
-    //var rightVolume = rightVolume
 this.setVolumeF((leftVolume) /100.0);
     
 }
@@ -335,7 +330,6 @@ this.setVolumeF((leftVolume) /100.0);
 
 
     setVolumeF(volume: number){
-    //var volume = volume
 
                         if(volume < 0 || volume > 1)
                         
@@ -368,7 +362,6 @@ masterGainFloatControl!.setValue(20 *Math.log10(volume));
 
 
     public update(event: LineEvent){
-var event = event
 
                         if(event.getType()!. === LineEvent.Type.STOP)
                         

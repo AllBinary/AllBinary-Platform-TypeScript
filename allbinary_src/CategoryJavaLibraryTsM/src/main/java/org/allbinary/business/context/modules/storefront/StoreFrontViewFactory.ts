@@ -60,7 +60,6 @@ export class StoreFrontViewFactory
         
 
     public static getInstance(storeName: string): DomNodeInterface{
-var storeName = storeName
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

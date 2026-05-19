@@ -100,7 +100,6 @@ export class PathFinder extends GeographicPathFinderBase {
                 //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: BasicGeographicMap){
-    //var geographicMapInterface = geographicMapInterface
 this.geographicMapInterface= geographicMapInterface;
     
 
@@ -164,9 +163,6 @@ this.costArray[column]![row]= node;
 
 
     public searchTotalPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
-var totalPaths = totalPaths
 
         try {
             
@@ -199,10 +195,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "search", e);
                 //@Throws(Exception.constructor)
             
     public searchTotalPathN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
-var totalPaths = totalPaths
-    //var multipassState = multipassState
 
                         if(multipassState!.step == 0)
                         
@@ -246,8 +238,6 @@ var totalPaths = totalPaths
                 //@Throws(Exception.constructor)
             
     public search(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode): BasicArrayList{
-    //var startPathFindingNode = startPathFindingNode
-    //var endPathFindingNode = endPathFindingNode
 
     var list: BasicArrayList = this.findPath(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition)!;
 ;
@@ -270,9 +260,6 @@ pathList!.add(list);
                 //@Throws(Exception.constructor)
             
     public searchStart(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode, multipassState: MultipassState){
-    //var startPathFindingNode = startPathFindingNode
-    //var endPathFindingNode = endPathFindingNode
-    //var multipassState = multipassState
 this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition, multipassState);
     
 }
@@ -281,9 +268,6 @@ this.findPathStart(startPathFindingNode!.geographicMapCellPosition, endPathFindi
                 //@Throws(Exception.constructor)
             
     public searchN(startPathFindingNode: PathFindingNode, endPathFindingNode: PathFindingNode, multipassState: MultipassState): BasicArrayList{
-    //var startPathFindingNode = startPathFindingNode
-    //var endPathFindingNode = endPathFindingNode
-    //var multipassState = multipassState
 
     var list: BasicArrayList = this.findPathEnd(startPathFindingNode!.geographicMapCellPosition, endPathFindingNode!.geographicMapCellPosition, multipassState)!;
 ;
@@ -325,8 +309,6 @@ multipassState!.step= 0;
                 //@Throws(Exception.constructor)
             
     public findPath(start: GeographicMapCellPosition, target: GeographicMapCellPosition): BasicArrayList{
-    //var start = start
-    //var target = target
 this.openPriorityQueue!.clear();
     
 this.closedSet!.clear();
@@ -529,9 +511,6 @@ neighbor.parent= current;
                 //@Throws(Exception.constructor)
             
     public findPathStart(start: GeographicMapCellPosition, target: GeographicMapCellPosition, multipassState: MultipassState){
-    //var start = start
-    //var target = target
-    //var multipassState = multipassState
 this.openPriorityQueue!.clear();
     
 this.closedSet!.clear();
@@ -604,9 +583,6 @@ multipassState!.step++;
                 //@Throws(Exception.constructor)
             
     public findPathEnd(start: GeographicMapCellPosition, target: GeographicMapCellPosition, multipassState: MultipassState): BasicArrayList{
-    //var start = start
-    //var target = target
-    //var multipassState = multipassState
 
     var geographicMapInterface: BasicGeographicMap = this.geographicMapInterface as BasicGeographicMap;
 ;
@@ -762,8 +738,6 @@ total++;
 
 
     extractPath(start: GeographicMapCellPosition, current: PathFindingNodeCost): BasicArrayList{
-    //var start = start
-var current = current
 
     var path: BasicArrayList = new BasicArrayListD();
 ;

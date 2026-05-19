@@ -87,7 +87,6 @@ super.setTableName(this.tableName);
                 //@Throws(Exception.constructor)
             
     public get(name: string): Long{
-var name = name
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -101,7 +100,7 @@ keysAndValues!.put(this.NAME, name);
 
                         if(
 
-                                    (get as string).localeCompare(name) != 0)
+                                    (get as string).compareTo(name) != 0)
                         
                                     {
                                     
@@ -126,7 +125,6 @@ keysAndValues!.put(this.NAME, name);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -145,7 +143,6 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, INSERT, e);
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(this.NAME, value);
@@ -164,8 +161,6 @@ this.logUtil!.put(this.commonStrings!.FAILURE, this, this.commonStrings!.delete,
 
 
     public update(name: string, value: Long){
-var name = name
-var value = value
 
     var map: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -180,7 +175,6 @@ this.update(map);
 
 
     public update(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 super.updateWhere(this.NAME, hashMap!.get(this.NAME) as string, hashMap);
     
 }

@@ -65,9 +65,7 @@ export class ImageAnimation extends IndexedAnimation {
     private readonly image: Image
 public constructor (image: Image, animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var image = image
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -97,7 +95,6 @@ this.image= image;
 
 
     public setFrame(index: number){
-var index = index
 }
 
 
@@ -122,7 +119,6 @@ var index = index
 
 
     public setSequence(sequence: number[]){
-var sequence = sequence
 }
 
 
@@ -139,9 +135,6 @@ var sequence = sequence
     private anchor: number = Anchor.TOP_LEFT;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 graphics.drawImage(this.image, x, y, this.anchor);
     
 }

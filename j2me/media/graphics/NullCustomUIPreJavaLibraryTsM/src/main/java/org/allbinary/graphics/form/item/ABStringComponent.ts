@@ -50,9 +50,7 @@ export class ABStringComponent
 public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
 
             super();
-            //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-}
+        }
 
 
     public getForegroundBasicColor(): BasicColor{
@@ -66,7 +64,6 @@ public constructor (backgroundBasicColor: BasicColor, foregroundBasicColor: Basi
 
 
     public setForegroundBasicColor(foregroundBasicColor: BasicColor){
-var foregroundBasicColor = foregroundBasicColor
 }
 
 

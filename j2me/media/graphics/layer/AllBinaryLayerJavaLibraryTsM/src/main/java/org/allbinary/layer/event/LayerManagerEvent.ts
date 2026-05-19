@@ -57,9 +57,7 @@ export class LayerManagerEvent extends AllBinaryEventObject {
     private readonly crud: string
 public constructor (layerManager: LayerManager, crud: string){
             super(layerManager);
-                    var layerManager = layerManager
-var crud = crud
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +77,6 @@ this.crud= crud;
 
 
     public setLayerInterface(layerInterface: AllBinaryLayer){
-var layerInterface = layerInterface
 this.layerInterface= layerInterface;
     
 }

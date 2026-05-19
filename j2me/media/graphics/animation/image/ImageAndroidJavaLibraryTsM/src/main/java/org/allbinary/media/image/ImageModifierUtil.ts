@@ -69,30 +69,18 @@ export class ImageModifierUtil
     public readonly paint: Paint = new Paint(Paint.ANTI_ALIAS_FLAG);
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 this.paint.setColorFilter(new PorterDuffColorFilter(basicColor!.intValue(), PorterDuff.Mode.SRC_IN));
     
 }
 
 
     public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 this.paint.setColorFilter(new PorterDuffColorFilter(basicColor!.intValue(), PorterDuff.Mode.SRC_IN));
     
 }
 
 
     public setAlpha(originalImage: Image, image: Image, imageIndex: number, alphaInt: number){
-    //var originalImage = originalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var alphaInt = alphaInt
 
                         if(alphaInt != this.paint.getAlpha())
                         
@@ -106,7 +94,6 @@ this.paint.setColorFilter(new PorterDuffColorFilter(basicColor!.intValue(), Port
 
 
     public getImageArray(originalImageArray: Image[]): Image[]{
-    //var originalImageArray = originalImageArray
 
 
 
@@ -117,9 +104,6 @@ this.paint.setColorFilter(new PorterDuffColorFilter(basicColor!.intValue(), Port
 
 
     public handleImage(imageArray: Image[], index: number, image: Image){
-    //var imageArray = imageArray
-    //var index = index
-    //var image = image
 }
 
 

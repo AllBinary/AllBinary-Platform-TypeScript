@@ -60,10 +60,7 @@ export class TopToBottomImageAnimation extends ImageSegmentAnimation {
     private currentHeight: number
 public constructor (image: Image, sequenceArray: number[], animationBehavior: AnimationBehavior){
             super(image, sequenceArray, animationBehavior);
-                        //var image = image
-    //var sequenceArray = sequenceArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -124,7 +121,6 @@ this.update();
 
 
     public setFrame(index: number){
-var index = index
 super.setFrame(index);
     
 this.update();
@@ -141,9 +137,6 @@ this.currentHeight= this.getDrawHeight() *this.getFrame() /this.getSize();
     private anchor: number = Anchor.TOP_LEFT;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 graphics.drawRegion(this.getImage(), this.getStartX(), this.getStartY(), this.getDrawWidth(), this.currentHeight, Sprite.TRANS_NONE, x, y, this.anchor);
     
 }

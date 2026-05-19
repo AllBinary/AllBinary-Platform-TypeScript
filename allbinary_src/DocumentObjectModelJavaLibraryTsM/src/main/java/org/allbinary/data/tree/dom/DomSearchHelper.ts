@@ -55,8 +55,6 @@ export class DomSearchHelper
         
 
     public static getNodeNoThrow(nodeName: string, nodeList: NodeList): Node{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var numberOfNodes: number = nodeList!.getLength()!;
 ;
@@ -74,7 +72,7 @@ index < numberOfNodes; index++)
 ;
     
 
-                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
+                        if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
                                     
@@ -100,8 +98,6 @@ index < numberOfNodes; index++)
                 //@Throws(Exception.constructor)
             
     public static getNode(nodeName: string, nodeList: NodeList): Node{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var node: Node = DomSearchHelper.getNodeNoThrow(nodeName, nodeList)!;
 ;
@@ -136,8 +132,6 @@ var nodeList = nodeList
                 //@Throws(Exception.constructor)
             
     public static getChildNodeList(nodeName: string, nodeList: NodeList): NodeList{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
 ;
@@ -154,8 +148,6 @@ var nodeList = nodeList
                 //@Throws(Exception.constructor)
             
     public static getAllNodes(nodeName: string, nodeList: NodeList): Vector{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var vector: Vector = DomSearchHelper.getAllNodesNoThrow(nodeName, nodeList)!;
 ;
@@ -188,8 +180,6 @@ var nodeList = nodeList
 
 
     public static getAllNodesNoThrow(nodeName: string, nodeList: NodeList): Vector{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var nodeVector: Vector = new Vector();
 ;
@@ -211,7 +201,7 @@ index < numberOfNodes; index++)
 ;
     
 
-                        if(node.getNodeName()!.localeCompare(nodeName) == 0)
+                        if(node.getNodeName()!.compareTo(nodeName) == 0)
                         
                                     {
                                     nodeVector!.add(node);

@@ -77,13 +77,7 @@ export class SimpleGeographicMap
 public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor){
 
             super();
-            //var id = id
-    //var name = name
-    //var cellTypeIdToGeographicMapCellType = cellTypeIdToGeographicMapCellType
-    //var tiledLayer = tiledLayer
-    //var foregroundBasicColor = foregroundBasicColor
-    //var backgroundBasicColor = backgroundBasicColor
-this.id= id;
+        this.id= id;
     
 this.name= name;
     
@@ -137,7 +131,6 @@ this.setForegroundBasicColor(foregroundBasicColor);
                 //@Throws(Exception.constructor)
             
     public getCellTypeAt(cellPosition: GeographicMapCellPosition): GeographicMapCellType{
-    //var cellPosition = cellPosition
 
     var i_column: number = cellPosition!.getColumn()!;
 ;
@@ -169,7 +162,6 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
     public getCellTypeFromMapCellTypeInt(cellTypeId: number): number{
-    //var cellTypeId = cellTypeId
 
 
 
@@ -190,7 +182,6 @@ this.setForegroundBasicColor(foregroundBasicColor);
 
 
     setForegroundBasicColor(foregroundBasicColor: BasicColor){
-    //var foregroundBasicColor = foregroundBasicColor
 this.foregroundBasicColor= foregroundBasicColor;
     
 }
@@ -207,7 +198,6 @@ this.foregroundBasicColor= foregroundBasicColor;
 
 
     setBackgroundBasicColor(backgroundBasicColor: BasicColor){
-    //var backgroundBasicColor = backgroundBasicColor
 this.backgroundBasicColor= backgroundBasicColor;
     
 }

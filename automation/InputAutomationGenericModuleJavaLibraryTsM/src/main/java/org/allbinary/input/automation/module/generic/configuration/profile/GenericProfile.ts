@@ -77,8 +77,7 @@ export class GenericProfile
 public constructor (node: Node){
 
             super();
-        var node = node
-this.setName(DomNodeHelper.getTextNodeValue(node));
+        this.setName(DomNodeHelper.getTextNodeValue(node));
     
 this.vector= new Vector();
     
@@ -101,7 +100,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(profileNode!.getNodeName()!.localeCompare(GenericProfileDataWorkerData.NAME) == 0)
+                        if(profileNode!.getNodeName()!.compareTo(GenericProfileDataWorkerData.NAME) == 0)
                         
                                     {
                                     
@@ -122,8 +121,7 @@ this.vector.add(genericProfileDataWorkerType);
 public constructor (name: string){
 
             super();
-        var name = name
-this.setName(name);
+        this.setName(name);
     
 this.vector= new Vector();
     
@@ -141,7 +139,6 @@ this.vector= new Vector();
 
 
     public add(genericProfileDataWorkerType: GenericProfileDataWorkerType){
-var genericProfileDataWorkerType = genericProfileDataWorkerType
 
                         if(!this.vector.contains(genericProfileDataWorkerType))
                         this.vector.add(genericProfileDataWorkerType)
@@ -149,7 +146,6 @@ var genericProfileDataWorkerType = genericProfileDataWorkerType
 
 
     public remove(genericProfileDataWorkerType: GenericProfileDataWorkerType){
-var genericProfileDataWorkerType = genericProfileDataWorkerType
 this.vector.remove(genericProfileDataWorkerType);
     
 }
@@ -158,7 +154,6 @@ this.vector.remove(genericProfileDataWorkerType);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createTextNode(document, GenericProfileData.NAME, this.name)!;
 ;
@@ -203,7 +198,6 @@ node.appendChild(genericProfileDataWorkerType!.toXmlNode(document));
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -220,7 +214,6 @@ this.name= name;
 
 
     public setGenericProfileActions(genericProfileActions: GenericProfileActions){
-var genericProfileActions = genericProfileActions
 this.genericProfileActions= genericProfileActions;
     
 }

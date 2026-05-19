@@ -62,7 +62,6 @@ public constructor (){
 
 
     public add(log: Log){
-var log = log
 this.logEntryVector!.add(log);
     
 }

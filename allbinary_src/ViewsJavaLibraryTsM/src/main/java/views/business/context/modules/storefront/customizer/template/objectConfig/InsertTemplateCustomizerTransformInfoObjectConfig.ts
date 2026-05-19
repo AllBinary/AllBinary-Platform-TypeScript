@@ -66,8 +66,7 @@ export class InsertTemplateCustomizerTransformInfoObjectConfig extends NoTemplat
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -75,9 +74,7 @@ public constructor (transformInfoInterface: Object){
 
 public constructor (transformInfoInterface: Object, document: Object){
             super(transformInfoInterface, document);
-                    var transformInfoInterface = transformInfoInterface
-var document = document
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -87,10 +84,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 
 public constructor (transformInfoInterface: Object, name: string, type: string){
             super(transformInfoInterface, name, type);
-                    var transformInfoInterface = transformInfoInterface
-var name = name
-var type = type
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -102,7 +96,6 @@ this.setDocument(this.generate(this.toXmlDoc()));
                 //@Throws(Exception.constructor)
             
     public set(aParentViewName: string){
-var aParentViewName = aParentViewName
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

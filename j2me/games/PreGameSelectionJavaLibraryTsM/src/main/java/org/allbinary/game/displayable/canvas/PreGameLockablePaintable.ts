@@ -63,9 +63,7 @@ export class PreGameLockablePaintable extends LockablePaintable {
     private readonly paintableForm: ScrollCurrentSelectionForm
 public constructor (paintableForm: ScrollCurrentSelectionForm, lockedIndex: number){
             super(lockedIndex);
-                    var paintableForm = paintableForm
-var lockedIndex = lockedIndex
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -77,10 +75,6 @@ this.halfWidth= GameFeatureImageCacheFactory.getInstance()!.getWithKey(LockedRes
 
 
     public paint(graphics: Graphics, currentIndex: number, x: number, y: number){
-var graphics = graphics
-var currentIndex = currentIndex
-var x = x
-var y = y
 
                         if(LockedUtil.getInstance()!.isLocked() && this.getPaintableForm()!.getSelectedIndex() >= this.getLockedIndex())
                         

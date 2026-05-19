@@ -73,17 +73,12 @@ export class NullClip
                 //@Throws(LineUnavailableException.constructor)
             
     public open(format: AudioFormat, data: number[], offset: number, bufferSize: number){
-var format = format
-var data = data
-var offset = offset
-var bufferSize = bufferSize
 }
 
 
                 //@Throws(LineUnavailableException.constructor, IOException.constructor)
             
     public open(stream: AudioInputStream){
-var stream = stream
 }
 
 
@@ -108,23 +103,18 @@ var stream = stream
 
 
     public setFramePosition(frames: number){
-var frames = frames
 }
 
 
     public setMicrosecondPosition(microseconds: number){
-var microseconds = microseconds
 }
 
 
     public setLoopPoints(start: number, end: number){
-var start = start
-var end = end
 }
 
 
     public loop(count: number){
-var count = count
 }
 
 
@@ -275,7 +265,6 @@ var count = count
 
 
     public isControlSupported(control: Type): boolean{
-var control = control
 
 
 
@@ -286,7 +275,6 @@ var control = control
 
 
     public getControl(control: Type): Control{
-var control = control
 
 
 
@@ -297,12 +285,10 @@ var control = control
 
 
     public addLineListener(listener: LineListener){
-var listener = listener
 }
 
 
     public removeLineListener(listener: LineListener){
-var listener = listener
 }
 
 

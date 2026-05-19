@@ -71,10 +71,7 @@ export class PlayerGameInput extends GameInput implements GameKeyEventListenerIn
     private readonly playerInputId: number
 public constructor (gameKeyEventList: BasicArrayList, removalGameKeyEventList: BasicArrayList, playerInputId: number){
             super(gameKeyEventList, removalGameKeyEventList);
-                        //var gameKeyEventList = gameKeyEventList
-    //var removalGameKeyEventList = removalGameKeyEventList
-    //var playerInputId = playerInputId
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -85,7 +82,6 @@ this.playerInputId= playerInputId;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
-    //var gameKeyEvent = gameKeyEvent
 this.add(gameKeyEvent);
     
 this.addForRemoval(gameKeyEvent);
@@ -95,7 +91,6 @@ this.addForRemoval(gameKeyEvent);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
-    //var gameKeyEvent = gameKeyEvent
 this.add(gameKeyEvent);
     
 }
@@ -103,7 +98,6 @@ this.add(gameKeyEvent);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKeyEvent(gameKeyEvent: GameKeyEvent){
-    //var gameKeyEvent = gameKeyEvent
 this.add(gameKeyEvent);
     
 this.addForRemoval(gameKeyEvent);
@@ -113,7 +107,6 @@ this.addForRemoval(gameKeyEvent);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownKey(gameKeyEvent: Integer){
-    //var gameKeyEvent = gameKeyEvent
 PreLogUtil.put(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.append(gameKeyEvent!.toString())!.toString(), this, this.gameInputStrings!.ON_DOWN_GAME_KEY);
     
@@ -122,7 +115,6 @@ PreLogUtil.put(new StringMaker().
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
-    //var gameKeyEvent = gameKeyEvent
 this.addForRemoval(gameKeyEvent);
     
 }
@@ -130,12 +122,10 @@ this.addForRemoval(gameKeyEvent);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpKeyEvent(gameKeyEvent: Integer){
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }

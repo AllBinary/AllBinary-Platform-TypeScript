@@ -131,8 +131,6 @@ this.name= StringUtil.getInstance()!.EMPTY_STRING;
                 //@Throws(Exception.constructor)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo){
-    //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
 
     var size: number = this.nameBasicArrayList!.size()!;
 ;
@@ -159,7 +157,6 @@ this.clear();
 
 
     getRecordId(abeClientInformation: AbeClientInformationInterface): string{
-    //var abeClientInformation = abeClientInformation
 
 
 
@@ -172,9 +169,6 @@ this.clear();
                 //@Throws(Exception.constructor)
             
     public delete(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, deleteId: number){
-    //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
-    //var deleteId = deleteId
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
 ;
@@ -230,8 +224,6 @@ recordStore!.closeRecordStore();
 
 
     public load(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo): string{
-    //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
 ;
@@ -346,9 +338,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.LOAD,
 
 
     public save(abeClientInformation: AbeClientInformationInterface, gameInfo: GameInfo, name: string){
-    //var abeClientInformation = abeClientInformation
-    //var gameInfo = gameInfo
-    //var name = name
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
 ;

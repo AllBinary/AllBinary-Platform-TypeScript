@@ -63,7 +63,6 @@ export class JarUtil
                 //@Throws(Exception.constructor)
             
     public static main(args: string[]){
-var args = args
 new JarUtil(new URL("file:///G:/mnt/bc/mydev/working/j2me/MiniSpaceWars/MiniSpaceWars/dist/MiniSpaceWars.jar")).
                             show();
     
@@ -74,8 +73,7 @@ new JarUtil(new URL("file:///G:/mnt/bc/mydev/working/j2me/MiniSpaceWars/MiniSpac
 public constructor (jarURL: URL){
 
             super();
-        var jarURL = jarURL
-this.jarURL= jarURL;
+        this.jarURL= jarURL;
     
 }
 

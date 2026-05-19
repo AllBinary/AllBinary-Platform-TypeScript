@@ -48,12 +48,10 @@ export class TrueTypeFontUtilBase
 public constructor (scale: number){
 
             super();
-            //var scale = scale
-}
+        }
 
 
     public getAsTextureSize(textureSize: number): number{
-var textureSize = textureSize
 
 
 
@@ -64,7 +62,6 @@ var textureSize = textureSize
 
 
     public getCellSize(cellSize: number): number{
-var cellSize = cellSize
 
 
 

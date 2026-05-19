@@ -61,7 +61,6 @@ export class DisplayPointScalar
 
 
     public processX(value: number): number{
-    //var value = value
 
 
 
@@ -72,7 +71,6 @@ export class DisplayPointScalar
 
 
     public processY(value: number): number{
-    //var value = value
 
 
 
@@ -83,7 +81,6 @@ export class DisplayPointScalar
 
 
     public process(point: GPoint): GPoint{
-    //var point = point
 
 
 

@@ -67,11 +67,7 @@ export class LivesHudWidget extends BasicHud implements PaintableInterface {
     private readonly animationInterface: Animation
 public constructor (animationInterface: Animation, lifeInterface: Life, location: number, direction: number){
             super(location, direction, 16, lifeInterface!.getMaxlives() *16, 2, BasicColorFactory.getInstance()!.WHITE);
-                    var animationInterface = animationInterface
-var lifeInterface = lifeInterface
-var location = location
-var direction = direction
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -87,7 +83,6 @@ this.animationInterface= animationInterface;
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-var displayChangeEvent = displayChangeEvent
 super.onDisplayChangeEvent(displayChangeEvent);
     
 this.update();
@@ -125,7 +120,6 @@ this.xArray[index]= this.getX() +(index *16);
 
 
     public setX(x: number){
-var x = x
 super.setX(x);
     
 this.update();
@@ -134,7 +128,6 @@ this.update();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
 
 
@@ -151,7 +144,6 @@ this.animationInterface!.paintXY(graphics, this.xArray[index]!, this.getY());
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

@@ -70,8 +70,6 @@ public constructor (){
                 //@Throws(LicensingException.constructor)
             
     public getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
-    //var hashMap = hashMap
-    //var pageContext = pageContext
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 ;
@@ -88,7 +86,6 @@ public constructor (){
                 //@Throws(LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface): any{
-    //var abeClientInformation = abeClientInformation
 
 
 

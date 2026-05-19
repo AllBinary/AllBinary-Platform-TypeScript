@@ -38,12 +38,7 @@ export class ABTextItem extends CustomCustomItem implements ABCustomItemInterfac
         
 public constructor (label: string, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, backgroundBasicColor, foregroundBasicColor);
-                    var label = label
-var layout = layout
-var altText = altText
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -51,14 +46,10 @@ var foregroundBasicColor = foregroundBasicColor
 
 
     public keyPressed(keyCode: number){
-var keyCode = keyCode
 }
 
 
     public paintUnselected(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 }
 
 

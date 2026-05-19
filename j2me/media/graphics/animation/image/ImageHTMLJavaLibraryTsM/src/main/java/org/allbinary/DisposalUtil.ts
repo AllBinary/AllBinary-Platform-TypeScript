@@ -61,7 +61,6 @@ export class DisposalUtil
 
 
     public dispose(resource: Resource){
-    //var resource = resource
 
                         if(!resource.isDisposed())
                         

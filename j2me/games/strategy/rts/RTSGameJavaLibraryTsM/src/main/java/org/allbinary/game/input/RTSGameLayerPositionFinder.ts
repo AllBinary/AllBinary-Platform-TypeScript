@@ -71,7 +71,6 @@ private constructor (){
 
 
     public getLayerInterface(geographicMapCellPosition: GeographicMapCellPosition): AllBinaryLayer{
-var geographicMapCellPosition = geographicMapCellPosition
 
 
 

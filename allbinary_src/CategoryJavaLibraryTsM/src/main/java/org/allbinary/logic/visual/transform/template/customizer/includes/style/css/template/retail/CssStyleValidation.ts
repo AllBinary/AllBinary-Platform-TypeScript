@@ -83,16 +83,14 @@ public constructor (){
 public constructor (document: Document){
 
             super();
-        var document = document
-this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(document);
+        this.cssStyleElementVector= StylesValidationFactory.getInstance()!.getInstance(document);
     
 }
 
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
+        this.cssStyleElementVector= StylesValidationFactory.getInstance(hashMap);
     
 }
 
@@ -227,7 +225,6 @@ i < size; i++)
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -240,7 +237,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
 ;

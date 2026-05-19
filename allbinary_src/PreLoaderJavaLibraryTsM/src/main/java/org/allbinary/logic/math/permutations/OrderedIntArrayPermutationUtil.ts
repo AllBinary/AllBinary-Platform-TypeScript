@@ -64,7 +64,6 @@ export class OrderedIntArrayPermutationUtil
 
 
     public static main(args: string[]){
-var args = args
 
     var TOTAL: number = 3;
 ;
@@ -112,7 +111,6 @@ private constructor (){
 
 
     public getNext(data: number[]){
-var data = data
 
     var length: number = data.length
                 ;
@@ -161,9 +159,6 @@ j--;
 
 
     public swap(data: number[], a: number, b: number){
-var data = data
-var a = a
-var b = b
 
     var temp: number = data[a]!;
 ;
@@ -176,7 +171,6 @@ data[b]= temp;
 
 
     public factorial(dataLength: number): number{
-var dataLength = dataLength
 
     var temp: number = 1;
 ;
@@ -210,8 +204,6 @@ temp *= i;
 
 
     public generate(data: number[], visitor: Visitor){
-var data = data
-var visitor = visitor
 
     var iterations: number = this.factorial(data.length)!;
 ;

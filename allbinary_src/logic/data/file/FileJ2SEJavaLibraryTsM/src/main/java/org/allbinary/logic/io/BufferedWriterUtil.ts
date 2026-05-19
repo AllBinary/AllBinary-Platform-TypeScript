@@ -71,8 +71,6 @@ export class BufferedWriterUtil
                 //@Throws(Exception.constructor)
             
     public overwrite(path: string, data: string){
-    //var path = path
-    //var data = data
 
     var abFile: AbFile = new AbFile(path);
 ;
@@ -94,8 +92,6 @@ this.write(abFile, data);
                 //@Throws(Exception.constructor)
             
     public overwrite(abFile: AbFile, data: string){
-    //var abFile = abFile
-    //var data = data
 
                         if(abFile!.exists())
                         
@@ -113,8 +109,6 @@ this.write(abFile, data);
                 //@Throws(Exception.constructor)
             
     public write(abFile: AbFile, data: string){
-    //var abFile = abFile
-    //var data = data
 
     var fileOut: BufferedWriter = new BufferedWriter(new FileWriter(AbFileNativeUtil.get(abFile)));
 ;

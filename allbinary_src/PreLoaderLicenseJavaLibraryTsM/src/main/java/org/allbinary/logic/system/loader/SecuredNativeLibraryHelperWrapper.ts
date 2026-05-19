@@ -55,8 +55,7 @@ export class SecuredNativeLibraryHelperWrapper extends NativeLibraryHelperWrappe
     private securedNativeLibraryInterface: SecuredNativeLibraryInterface
 public constructor (securedNativeLibraryInterface: SecuredNativeLibraryInterface){
             super(securedNativeLibraryInterface!.getLibraryName());
-                        //var securedNativeLibraryInterface = securedNativeLibraryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -68,7 +67,6 @@ this.securedNativeLibraryInterface= securedNativeLibraryInterface;
                 //@Throws(LicensingException.constructor)
             
     public unlock(abeClientInformation: AbeClientInformationInterface): boolean{
-    //var abeClientInformation = abeClientInformation
 
 
 

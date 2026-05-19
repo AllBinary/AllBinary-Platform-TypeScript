@@ -89,9 +89,7 @@ export class OrderHistoryRequestHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest;
+        this.request= pageContext!.getRequest() as HttpServletRequest;
     
 this.getFormData();
     
@@ -112,7 +110,7 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
 
         try {
             
-                        if(this.groupId!.localeCompare(CommonPhoneStrings.getInstance()!.ZERO) != 0)
+                        if(this.groupId!.compareTo(CommonPhoneStrings.getInstance()!.ZERO) != 0)
                         
                                     {
                                     
@@ -183,7 +181,6 @@ OrderHistoryEntityFactory.getInstance()!.setStatus(this.id, this.status);
 
 
     public setOrderStatus(newStatus: string): string{
-var newStatus = newStatus
 
         try {
             

@@ -80,14 +80,7 @@ export class RaceTrackData
 public constructor (id: Integer, cellWidth: number, cellHeight: number, miniCellWidth: number, miniCellHeight: number, cellTypeIdToGeographicMapCellTypeArray: number[], mapArray: number[][]){
 
             super();
-            //var id = id
-    //var cellWidth = cellWidth
-    //var cellHeight = cellHeight
-    //var miniCellWidth = miniCellWidth
-    //var miniCellHeight = miniCellHeight
-    //var cellTypeIdToGeographicMapCellTypeArray = cellTypeIdToGeographicMapCellTypeArray
-    //var mapArray = mapArray
-this.id= id;
+        this.id= id;
     
 this.cellWidth= cellWidth;
     
@@ -105,7 +98,6 @@ this.cellTypeIdToGeographicMapCellTypeArray= cellTypeIdToGeographicMapCellTypeAr
 
 
     setMapArray(mapArray: number[][]){
-var mapArray = mapArray
 this.mapArray= mapArray;
     
 }
@@ -122,7 +114,6 @@ this.mapArray= mapArray;
 
 
     setCellTypeIdToGeographicMapCellTypeArray(cellTypeIdToGeographicMapCellTypeArray: number[]){
-var cellTypeIdToGeographicMapCellTypeArray = cellTypeIdToGeographicMapCellTypeArray
 this.cellTypeIdToGeographicMapCellTypeArray= cellTypeIdToGeographicMapCellTypeArray;
     
 }
@@ -139,7 +130,6 @@ this.cellTypeIdToGeographicMapCellTypeArray= cellTypeIdToGeographicMapCellTypeAr
 
 
     setCellWidth(cellWidth: number){
-var cellWidth = cellWidth
 this.cellWidth= cellWidth;
     
 }
@@ -156,7 +146,6 @@ this.cellWidth= cellWidth;
 
 
     setCellHeight(cellHeight: number){
-var cellHeight = cellHeight
 this.cellHeight= cellHeight;
     
 }
@@ -183,7 +172,6 @@ this.cellHeight= cellHeight;
 
 
     public setOverPassGeographicMapCellPositionArray(overPassGeographicMapCellPositionArray: CellPosition[]){
-var overPassGeographicMapCellPositionArray = overPassGeographicMapCellPositionArray
 this.overPassGeographicMapCellPositionArray= overPassGeographicMapCellPositionArray;
     
 }
@@ -200,7 +188,6 @@ this.overPassGeographicMapCellPositionArray= overPassGeographicMapCellPositionAr
 
 
     public setTileSetImage(tileSetImage: Image){
-var tileSetImage = tileSetImage
 this.tileSetImage= tileSetImage;
     
 }
@@ -217,7 +204,6 @@ this.tileSetImage= tileSetImage;
 
 
     public setMiniTileSetImage(miniTileSetImage: Image){
-var miniTileSetImage = miniTileSetImage
 this.miniTileSetImage= miniTileSetImage;
     
 }
@@ -234,7 +220,6 @@ this.miniTileSetImage= miniTileSetImage;
 
 
     public setMiniCellWidth(miniCellWidth: number){
-var miniCellWidth = miniCellWidth
 this.miniCellWidth= miniCellWidth;
     
 }
@@ -251,14 +236,12 @@ this.miniCellWidth= miniCellWidth;
 
 
     public setMiniCellHeight(miniCellHeight: number){
-var miniCellHeight = miniCellHeight
 this.miniCellHeight= miniCellHeight;
     
 }
 
 
     public setId(id: Integer){
-var id = id
 this.id= id;
     
 }

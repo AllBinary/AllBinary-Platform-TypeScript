@@ -68,19 +68,16 @@ export class GameAdStateBase
 public constructor (adConfiguration: AdConfiguration){
 
             super();
-            //var adConfiguration = adConfiguration
-this.adConfigurationP= adConfiguration;
+        this.adConfigurationP= adConfiguration;
     
 }
 
 
     public initViewArray(viewArray: any[]){
-var viewArray = viewArray
 }
 
 
     public onStart(anyType: any = {}){
-var anyType = anyType
 this.init();
     
 }
@@ -91,7 +88,6 @@ this.init();
 
 
     public isShowingAtLocation(location: number): boolean{
-var location = location
 
 
 
@@ -120,15 +116,12 @@ var location = location
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public processAdState(gameState: GameState, gameType: GameType){
-var gameState = gameState
-var gameType = gameType
 }
 
 
@@ -145,8 +138,6 @@ var gameType = gameType
                 //@Throws(Exception.constructor)
             
     public playingAdState(width: number, height: number){
-var width = width
-var height = height
 }
 
 
@@ -157,7 +148,6 @@ var height = height
 
 
     public setGameIsReady(gameIsReady: boolean){
-var gameIsReady = gameIsReady
 }
 
 
@@ -202,7 +192,6 @@ var gameIsReady = gameIsReady
 
 
     public setOkayToShowAds(okayToShowAds: boolean){
-var okayToShowAds = okayToShowAds
 this.okayToShowAdsP= okayToShowAds;
     
 }

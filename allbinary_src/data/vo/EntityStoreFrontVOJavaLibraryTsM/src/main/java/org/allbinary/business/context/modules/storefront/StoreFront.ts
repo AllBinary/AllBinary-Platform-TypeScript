@@ -205,8 +205,7 @@ public constructor (){
 public constructor (request: HttpServletRequest){
 
             super();
-            //var request = request
-this.getFormData(new RequestParams(request).
+        this.getFormData(new RequestParams(request).
                             toHashMap());
     
 
@@ -225,8 +224,7 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-            //var hashMap = hashMap
-this.getFormData(hashMap);
+        this.getFormData(hashMap);
     
 
     var domDocumentString: string = hashMap!.get(StoreFrontData.getInstance()!.CONFIGURATION) as string;
@@ -251,9 +249,8 @@ this.setContextConfigurationInterface(ContextConfigurationInterfaceFactory.getIn
 
 
     isColumn(columnName: string): boolean{
-var columnName = columnName
 
-                        if(columnName!.localeCompare(StoreFrontData.getInstance()!.NAME) == 0 || columnName!.localeCompare(UserData.MAINEMAIL) == 0)
+                        if(columnName!.compareTo(StoreFrontData.getInstance()!.NAME) == 0 || columnName!.compareTo(UserData.MAINEMAIL) == 0)
                         
                                     {
                                     
@@ -281,8 +278,6 @@ var columnName = columnName
                 //@Throws(Exception.constructor)
             
     createPath(key: string, hashMap: HashMap<any, any>): AbPath{
-var key = key
-var hashMap = hashMap
 
 
 
@@ -295,9 +290,6 @@ var hashMap = hashMap
                 //@Throws(Exception.constructor)
             
     createPath(append: string, key: string, hashMap: HashMap<any, any>): AbPath{
-var append = append
-var key = key
-var hashMap = hashMap
 
 
 
@@ -308,8 +300,6 @@ var hashMap = hashMap
 
 
     get(key: string, hashMap: HashMap<any, any>): string{
-var key = key
-var hashMap = hashMap
 
 
 
@@ -320,9 +310,6 @@ var hashMap = hashMap
 
 
     create(append: string, key: string, hashMap: HashMap<any, any>): string{
-var append = append
-var key = key
-var hashMap = hashMap
 
     var path: string = hashMap!.get(key) as string;
 ;
@@ -373,7 +360,6 @@ var hashMap = hashMap
                 //@Throws(Exception.constructor)
             
     getFormData(storeHashMap: HashMap<any, any>){
-var storeHashMap = storeHashMap
 
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
 ;
@@ -459,7 +445,7 @@ this.lastModified= storeHashMap!.get(EntryData.getInstance()!.LASTMODIFIED) as s
 ;
     
 
-                        if(this.name.localeCompare(storeNameEscaped) != 0)
+                        if(this.name.compareTo(storeNameEscaped) != 0)
                         
                                     {
                                     isEscapedCharactersContained= true;
@@ -1494,21 +1480,18 @@ stringBuffer!.append(" and > 0 characters.<br>");
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
 
 
     public setBasketName(value: string){
-var value = value
 this.basketName= value;
     
 }
 
 
     public setHomeHostName(value: string){
-var value = value
 this.homeHostName= value;
     
 }
@@ -1517,14 +1500,12 @@ this.homeHostName= value;
                 //@Throws(Exception.constructor)
             
     public setHomeHostNamePath(value: string){
-var value = value
 this.homeHostNamePath= new AbPath(value);
     
 }
 
 
     public setHostName(value: string){
-var value = value
 this.hostName= value;
     
 }
@@ -1533,14 +1514,12 @@ this.hostName= value;
                 //@Throws(Exception.constructor)
             
     public setHostNamePath(value: string){
-var value = value
 this.hostNamePath= new AbPath(value);
     
 }
 
 
     public setTestHomeHostName(value: string){
-var value = value
 this.testHomeHostName= value;
     
 }
@@ -1549,14 +1528,12 @@ this.testHomeHostName= value;
                 //@Throws(Exception.constructor)
             
     public setTestHomeHostNamePath(value: string){
-var value = value
 this.testHomeHostNamePath= new AbPath(value);
     
 }
 
 
     public setTestHostName(value: string){
-var value = value
 this.testHostName= value;
     
 }
@@ -1565,7 +1542,6 @@ this.testHostName= value;
                 //@Throws(Exception.constructor)
             
     public setTestHostNamePath(value: string){
-var value = value
 this.testHostNamePath= new AbPath(value);
     
 }
@@ -1574,7 +1550,6 @@ this.testHostNamePath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setImagePath(value: string){
-var value = value
 this.imagePath= new AbPath(value);
     
 }
@@ -1583,7 +1558,6 @@ this.imagePath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setStaticPath(value: string){
-var value = value
 this.staticPath= new AbPath(value);
     
 }
@@ -1592,98 +1566,84 @@ this.staticPath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setCategoryPath(value: string){
-var value = value
 this.categoryPath= new AbPath(value);
     
 }
 
 
     public setSubStores(value: string){
-var value = value
 this.subStores= value;
     
 }
 
 
     public setTagLocation(value: string){
-var value = value
 this.tagLocation= value;
     
 }
 
 
     public setPackageLocation(value: string){
-var value = value
 this.packageLocation= value;
     
 }
 
 
     public setInventoryControl(value: string){
-var value = value
 this.inventoryControl= value;
     
 }
 
 
     public getPackageLocation(value: string){
-var value = value
 this.packageLocation= value;
     
 }
 
 
     public setFtp(value: string){
-var value = value
 this.ftp= value;
     
 }
 
 
     public setFtpUserName(value: string){
-var value = value
 this.ftpUserName= value;
     
 }
 
 
     public setFtpPassword(value: string){
-var value = value
 this.ftpPassword= value;
     
 }
 
 
     public setTestFtp(value: string){
-var value = value
 this.testFtp= value;
     
 }
 
 
     public setTestFtpUserName(value: string){
-var value = value
 this.testFtpUserName= value;
     
 }
 
 
     public setTestFtpPassword(value: string){
-var value = value
 this.testFtpPassword= value;
     
 }
 
 
     public setTimeCreated(value: string){
-var value = value
 this.timeCreated= value;
     
 }
 
 
     public setLastModified(value: string){
-var value = value
 this.lastModified= value;
     
 }
@@ -1692,7 +1652,6 @@ this.lastModified= value;
                 //@Throws(Exception.constructor)
             
     public setFtpPath(value: string){
-    //var value = value
 this.ftpPath= new AbPath(value);
     
 }
@@ -1701,7 +1660,6 @@ this.ftpPath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public setTestFtpPath(value: string){
-    //var value = value
 this.testFtpPath= new AbPath(value);
     
 }
@@ -1765,8 +1723,6 @@ this.testFtpPath= new AbPath(value);
                 //@Throws(Exception.constructor)
             
     public install(current: number, total: number){
-    //var current = current
-    //var total = total
 
         try {
             
@@ -1943,10 +1899,6 @@ stringBuffer!.append(AbPathData.getInstance()!.SEPARATOR);
                 //@Throws(Exception.constructor)
             
     installViews(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, current: number, total: number){
-    //var fromDirectoryAbPath = fromDirectoryAbPath
-    //var toDirectoryAbPath = toDirectoryAbPath
-    //var current = current
-    //var total = total
 FileUtil.getInstance()!.copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbPath, true, false, current, total);
     
 }
@@ -1955,9 +1907,6 @@ FileUtil.getInstance()!.copyDirectoryPortion(fromDirectoryAbPath, toDirectoryAbP
                 //@Throws(Exception.constructor)
             
     installResources(fromDirectoryAbPath: AbPath, current: number, total: number){
-    //var fromDirectoryAbPath = fromDirectoryAbPath
-    //var current = current
-    //var total = total
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -1996,9 +1945,6 @@ FileUtil.getInstance()!.copyDirectoryPortion(installCategoryAbPath, categoryAbPa
                 //@Throws(Exception.constructor)
             
     installMedia(fromDirectoryAbPath: AbPath, current: number, total: number){
-    //var fromDirectoryAbPath = fromDirectoryAbPath
-    //var current = current
-    //var total = total
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -2215,7 +2161,6 @@ dataHashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
     public setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface){
-    //var contextConfigurationInterface = contextConfigurationInterface
 this.contextConfigurationInterface= contextConfigurationInterface;
     
 }

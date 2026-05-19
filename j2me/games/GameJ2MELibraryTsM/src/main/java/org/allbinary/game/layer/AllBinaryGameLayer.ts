@@ -102,7 +102,6 @@ export class AllBinaryGameLayer extends AllBinaryLayer implements ViewPositionEv
     private readonly BLACK: BasicColor = BasicColorFactory.getInstance()!.BLACK;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 AllBinaryGameLayer.prototype.basicSetColorUtil!.setBasicColorP(graphics, this.BLACK);
     
 }
@@ -118,10 +117,7 @@ AllBinaryGameLayer.prototype.basicSetColorUtil!.setBasicColorP(graphics, this.BL
     private readonly gameKeyEventList: BasicArrayList = new BasicArrayListD();
 public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(name, layerInfo, viewPosition);
-                        //var name = name
-    //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -131,7 +127,6 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-    //var gl = gl
 
 
 
@@ -157,7 +152,6 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
                 //@Throws(Exception.constructor)
             
     public processInput(allBinaryLayerManager: AllBinaryLayerManager){
-    //var allBinaryLayerManager = allBinaryLayerManager
 
 
 
@@ -169,7 +163,6 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-    //var allBinaryLayerManager = allBinaryLayerManager
 
 
 
@@ -179,7 +172,6 @@ public constructor (name: string, layerInfo: Rectangle, viewPosition: ViewPositi
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -196,7 +188,6 @@ this.onChangeEvent(this.viewPositionEvent);
                 //@Throws(Exception.constructor)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
-    //var layerManagerEvent = layerManagerEvent
 
                         if(GameLayerUtil.isOnScreen(this))
                         
@@ -216,14 +207,12 @@ this.onChangeEvent(this.viewPositionEvent);
 
 
     public paintFirst(graphics: Graphics){
-    //var graphics = graphics
 this.paintable.paint(graphics);
     
 }
 
 
     public paintDebug(graphics: Graphics){
-    //var graphics = graphics
 
     var viewPosition: ViewPosition = this.getViewPosition()!;
 ;
@@ -244,7 +233,6 @@ graphics.drawRect(viewX, viewY, this.getWidth(), this.getHeight());
 
 
     public setWidth(width: number){
-    //var width = width
 super.setLayerWidth(width);
     
 this.setHalfWidth(width>>1);
@@ -253,7 +241,6 @@ this.setHalfWidth(width>>1);
 
 
     public setHeight(height: number){
-    //var height = height
 super.setLayerHeight(height);
     
 this.setHalfHeight(height>>1);

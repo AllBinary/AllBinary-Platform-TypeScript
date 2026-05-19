@@ -69,9 +69,7 @@ export class Group
 public constructor (teamName: string, teamId: number){
 
             super();
-        var teamName = teamName
-var teamId = teamId
-this.setName(teamName);
+        this.setName(teamName);
     
 this.teamId= teamId;
     
@@ -89,7 +87,6 @@ this.teamId= teamId;
 
 
     public setName(name: string){
-    //var name = name
 this.name= name;
     
 

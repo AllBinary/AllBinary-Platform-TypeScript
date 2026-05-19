@@ -75,11 +75,7 @@ export class LogConfig
 public constructor (aName: string, aDescription: string, aPath: string, aFileName: string){
 
             super();
-        var aName = aName
-var aDescription = aDescription
-var aPath = aPath
-var aFileName = aFileName
-this.isEnabled= false;
+        this.isEnabled= false;
     
 this.name= aName;
     
@@ -94,8 +90,7 @@ this.fileName= aFileName;
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var enabledValueNode: Node = DomSearchHelper.getNode(EntryData.getInstance()!.ENABLE, node.getChildNodes())!;
 ;
     
@@ -183,28 +178,24 @@ this.isEnabled= false;
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
 
 
     public setDescription(value: string){
-var value = value
 this.description= value;
     
 }
 
 
     public setPath(value: string){
-var value = value
 this.path= value;
     
 }
 
 
     public setFileName(value: string){
-var value = value
 this.fileName= value;
     
 }

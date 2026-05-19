@@ -98,7 +98,6 @@ export class TimeTypeUtil
 
 
     public getHourOfDay(timeInMillis: number): number{
-var timeInMillis = timeInMillis
 
     var calendar: Calendar = Calendar.getInstance()!;
 ;
@@ -115,7 +114,6 @@ calendar.setTimeInMillis(timeInMillis);
 
 
     public isNight(timeInMillis: number): boolean{
-var timeInMillis = timeInMillis
 
     var hoursOfDay: number = this.getHourOfDay(timeInMillis)!;
 ;
@@ -130,7 +128,6 @@ var timeInMillis = timeInMillis
 
 
     public getNightOrDay(timeInMillis: number): string{
-var timeInMillis = timeInMillis
 
 
 

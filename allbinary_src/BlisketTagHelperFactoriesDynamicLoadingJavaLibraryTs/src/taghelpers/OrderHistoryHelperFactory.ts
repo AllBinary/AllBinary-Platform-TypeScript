@@ -61,8 +61,6 @@ export class OrderHistoryHelperFactory
                 //@Throws(LicensingException.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): any{
-var hashMap = hashMap
-var pageContext = pageContext
 
 
 

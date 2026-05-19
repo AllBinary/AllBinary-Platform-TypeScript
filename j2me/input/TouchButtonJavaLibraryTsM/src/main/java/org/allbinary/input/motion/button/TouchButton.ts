@@ -77,12 +77,6 @@ export class TouchButton extends Paintable {
                 //@Throws(Exception.constructor)
             
     public static createButton(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): TouchButton{
-    //var touchButtonInput = touchButtonInput
-    //var touchButtonResource = touchButtonResource
-    //var rawRectangle = rawRectangle
-    //var cellPosition = cellPosition
-    //var xBorder = xBorder
-    //var yBorder = yBorder
 
 
 
@@ -120,14 +114,7 @@ export class TouchButton extends Paintable {
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
 
             super();
-            //var touchButtonInput = touchButtonInput
-    //var animationInterface = animationInterface
-    //var hintAnimationInterface = hintAnimationInterface
-    //var rawRectangle = rawRectangle
-    //var cellPosition = cellPosition
-    //var xBorder = xBorder
-    //var yBorder = yBorder
-this.touchButtonInput= touchButtonInput;
+        this.touchButtonInput= touchButtonInput;
     
 this.animationInterface= animationInterface;
     
@@ -150,14 +137,12 @@ this.logUtil!.putF(new StringMaker().
 
 
     public paintHint(graphics: Graphics){
-var graphics = graphics
 this.hintAnimationInterface!.paintXY(graphics, this.animationX, this.hintAnimationY);
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintXY(graphics, this.animationX, this.animationY);
     
 }

@@ -158,10 +158,6 @@ PreLogUtil.putOE(commonStrings!.EXCEPTION, this, commonStrings!.EXCEPTION, e);
 
 
     public getFontBitmapGL(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
-    //var gl = gl
-    //var filename = filename
-    //var cellSize = cellSize
-    //var basicColor = basicColor
 
                         if(this.fontImage == OpenGLESImage.NULL_OPENGL_IMAGE)
                         
@@ -367,8 +363,6 @@ this.fontImage= this.preResourceImageUtil!.encapsulate(image) as OpenGLESImage;
 
 
     public getFontWidths(filename: string, fontSize: number): number[]{
-    //var filename = filename
-    //var fontSize = fontSize
 
     var typeface: Typeface = Typeface.DEFAULT;
 ;

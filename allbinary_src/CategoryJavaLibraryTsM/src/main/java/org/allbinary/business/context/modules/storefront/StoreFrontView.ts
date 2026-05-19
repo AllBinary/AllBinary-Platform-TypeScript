@@ -72,8 +72,7 @@ export class StoreFrontView
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-        var storeFrontInterface = storeFrontInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -94,7 +93,6 @@ this.storeFrontInterface= storeFrontInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.storeFrontInterface!.toHashMap()!;
 ;

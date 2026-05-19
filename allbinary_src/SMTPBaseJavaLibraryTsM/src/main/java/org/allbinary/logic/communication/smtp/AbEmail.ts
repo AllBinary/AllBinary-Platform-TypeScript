@@ -62,14 +62,7 @@ export class AbEmail
 public constructor (server: string, from: string, to: string, subject: string, textBody: string, htmlAttachment: string, contentBase: string){
 
             super();
-        var server = server
-var from = from
-var to = to
-var subject = subject
-var textBody = textBody
-var htmlAttachment = htmlAttachment
-var contentBase = contentBase
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGINGERROR))
                         
                                     {
@@ -134,7 +127,6 @@ var contentBase = contentBase
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
 
 

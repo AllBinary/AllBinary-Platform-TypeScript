@@ -52,8 +52,7 @@ public constructor (){
 
 public constructor (msg: string){
             super(msg);
-                    var msg = msg
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

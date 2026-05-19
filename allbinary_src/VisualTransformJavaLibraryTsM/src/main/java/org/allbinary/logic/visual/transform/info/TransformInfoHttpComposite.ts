@@ -68,8 +68,7 @@ export class TransformInfoHttpComposite
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {

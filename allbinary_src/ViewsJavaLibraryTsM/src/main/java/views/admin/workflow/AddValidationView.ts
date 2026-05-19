@@ -72,8 +72,7 @@ export class AddValidationView extends WorkFlowView implements ValidationCompone
     private readonly abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -183,7 +182,6 @@ stringBuffer!.append("The WorkFlow name you selected is already in use.<br/>  Pl
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

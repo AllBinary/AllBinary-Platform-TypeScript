@@ -77,7 +77,6 @@ this.setTagRequestHelperFactory(new OrderItemsRequestHelperFactory());
 
 
     public setStatus(value: string){
-var value = value
 this.status= value;
     
 }
@@ -214,7 +213,7 @@ this.status= value;
                                     this.getPropertiesHashMap()!.put(OrderHistoryData.STATUS, this.status);
     
 
-                        if(this.getCommand()!.localeCompare(OrderHistoryData.SETSTATUS) == 0)
+                        if(this.getCommand()!.compareTo(OrderHistoryData.SETSTATUS) == 0)
                         
                                     {
                                     this.pageContext!.getOut()!.print(this.setOrderStatus());

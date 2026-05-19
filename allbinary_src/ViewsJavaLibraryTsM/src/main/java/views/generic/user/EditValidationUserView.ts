@@ -68,8 +68,7 @@ export class EditValidationUserView extends UserView implements ValidationCompon
     private userName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -253,7 +252,6 @@ stringBuffer!.append(this.user.validationInfo());
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

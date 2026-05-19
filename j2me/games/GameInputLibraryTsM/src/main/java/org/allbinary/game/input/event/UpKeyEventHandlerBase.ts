@@ -28,8 +28,6 @@
         
 import { PlayerGameInput } from '../../../../../org/allbinary/game/input/PlayerGameInput.js';
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { EventListenerInterface } from '../../../../../org/allbinary/logic/util/event/EventListenerInterface.js';
@@ -77,7 +75,6 @@ export class UpKeyEventHandlerBase extends BasicEventHandler {
 
 
     public addListener(playerGameInput: PlayerGameInput){
-var playerGameInput = playerGameInput
 
                         if(!this.list.contains(playerGameInput))
                         
@@ -99,7 +96,6 @@ super.removeAllListeners();
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListenerSingleThreaded(eventListenerInterface);
@@ -109,7 +105,6 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -120,7 +115,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: Integer){
-    //var eventObject = eventObject
 
 
 
@@ -182,8 +176,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     process(eventObject: Integer, eventListenerInterface: EventListenerInterface){
-    //var eventObject = eventObject
-    //var eventListenerInterface = eventListenerInterface
 
     var upKeyEventListenerInterface: UpKeyEventListenerInterface = eventListenerInterface as UpKeyEventListenerInterface;
 ;

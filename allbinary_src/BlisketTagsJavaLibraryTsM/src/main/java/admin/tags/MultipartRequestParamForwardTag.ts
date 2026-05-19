@@ -73,21 +73,18 @@ export class MultipartRequestParamForwardTag extends CustomTagSupport {
     private paramVector: Vector
 
     public setPage(page: string){
-var page = page
 this.page= page;
     
 }
 
 
     public setCommand(command: string){
-var command = command
 this.command= command;
     
 }
 
 
     public setParamVector(paramVector: Vector){
-var paramVector = paramVector
 this.paramVector= paramVector;
     
 }

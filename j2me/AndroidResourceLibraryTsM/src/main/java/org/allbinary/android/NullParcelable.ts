@@ -66,8 +66,6 @@ export class NullParcelable
 
 
     public writeToParcel(dest: Parcel, flags: number){
-var dest = dest
-var flags = flags
 }
 
 

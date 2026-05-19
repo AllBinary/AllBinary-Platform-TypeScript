@@ -138,11 +138,7 @@ export class DiveAndDirectionalTrackingAI extends BasicAI implements TrackingEve
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 public constructor (ownerLayerInterface: AllBinaryLayer, artificialIntelligenceInterface: ArtificialIntelligenceInterface, gameInput: GameInput, visitor: Visitor){
             super(ownerLayerInterface, gameInput);
-                    var ownerLayerInterface = ownerLayerInterface
-var artificialIntelligenceInterface = artificialIntelligenceInterface
-var gameInput = gameInput
-var visitor = visitor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -172,7 +168,6 @@ this.init();
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.isBeyondTarget())
                         
@@ -219,7 +214,6 @@ TrackingEventHandler.getInstance()!.addListenerInterface(this);
                 //@Throws(Exception.constructor)
             
     target(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.list.size() == 0)
                         
@@ -373,7 +367,6 @@ this.lastTrackingLayerInterface= lastTrackingEvent!.getLayerInterface();
                 //@Throws(Exception.constructor)
             
     verticalTargeting(x: number){
-var x = x
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
 ;
@@ -411,7 +404,6 @@ var x = x
                 //@Throws(Exception.constructor)
             
     horizontalTargeting(y: number){
-var y = y
 
     var ownerLayerInterface: AllBinaryLayer = this.getOwnerLayerInterface()!;
 ;
@@ -674,21 +666,18 @@ this.aiVistor!.visit(this);
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onMovement(trackingEvent: TrackingEvent){
-var trackingEvent = trackingEvent
 this.list.add(trackingEvent);
     
 }
 
 
     public onDestroyed(destroyedEvent: DestroyedEvent){
-var destroyedEvent = destroyedEvent
 
                         if(this.getOwnerLayerInterface() == destroyedEvent!.getLayerInterface())
                         
@@ -704,7 +693,6 @@ DestroyedEventHandler.getInstance()!.removeListener(this);
 
 
     public setLastDirection(lastDirection: Direction){
-var lastDirection = lastDirection
 this.lastDirection= lastDirection;
     
 
@@ -724,7 +712,6 @@ this.lastDirection= lastDirection;
 
 
     public setLastKey(lastKey: number){
-var lastKey = lastKey
 super.setLastKey(lastKey);
     
 

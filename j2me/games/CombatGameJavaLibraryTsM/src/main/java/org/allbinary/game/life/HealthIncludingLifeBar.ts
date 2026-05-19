@@ -73,12 +73,7 @@ export class HealthIncludingLifeBar extends Paintable implements HealthListenerI
 public constructor (layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, animationInterface: HealthBarAnimation, direction: number){
 
             super();
-        var layerInterface = layerInterface
-var life = life
-var healthInterface = healthInterface
-var animationInterface = animationInterface
-var direction = direction
-this.allbinaryLayer= layerInterface;
+        this.allbinaryLayer= layerInterface;
     
 this.animationInterface= animationInterface;
     
@@ -94,12 +89,7 @@ this.onHealthChange();
 
 public constructor (layerInterface: AllBinaryLayer, life: Life, healthInterface: Health, location: number, direction: number){
             this(layerInterface, life, healthInterface, new HealthBarTwodAnimation(layerInterface, location), direction);
-                    var layerInterface = layerInterface
-var life = life
-var healthInterface = healthInterface
-var location = location
-var direction = direction
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -113,14 +103,12 @@ this.animationInterface!.onHealthChange(((this.healthInterface!.getHealth() +(th
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintXY(graphics, 0, 0);
     
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintThreed(graphics, 0, 0, 0);
     
 }

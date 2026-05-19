@@ -70,9 +70,6 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 
 
     /*actual*/ public static getInstanceNoF(specialMessage: string, anyType: any = {}, exception: any = {}): Log{
-var specialMessage = specialMessage
-var anyType = anyType
-var exception = exception
 
 
 
@@ -83,10 +80,6 @@ var exception = exception
 
 
     /*actual*/ public static getInstance(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}): Log{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
-var exception = exception
 
 
 
@@ -97,9 +90,6 @@ var exception = exception
 
 
     /*actual*/ public static getInstanceF(specialMessage: string, anyType: any = {}, functionName: string): Log{
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
 
     var nullUtil: NullUtil = NullUtil.getInstance()!;
 ;

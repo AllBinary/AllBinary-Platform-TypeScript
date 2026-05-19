@@ -94,7 +94,6 @@ this.maxBlue= 0;
 
 
     public setMinRed(minRed: number){
-var minRed = minRed
 this.minRed= minRed;
     
 }
@@ -111,7 +110,6 @@ this.minRed= minRed;
 
 
     public setMaxRed(maxRed: number){
-var maxRed = maxRed
 this.maxRed= maxRed;
     
 }
@@ -128,7 +126,6 @@ this.maxRed= maxRed;
 
 
     public setMinGreen(minGreen: number){
-var minGreen = minGreen
 this.minGreen= minGreen;
     
 }
@@ -145,7 +142,6 @@ this.minGreen= minGreen;
 
 
     public setMaxGreen(maxGreen: number){
-var maxGreen = maxGreen
 this.maxGreen= maxGreen;
     
 }
@@ -162,7 +158,6 @@ this.maxGreen= maxGreen;
 
 
     public setMinBlue(minBlue: number){
-var minBlue = minBlue
 this.minBlue= minBlue;
     
 }
@@ -179,14 +174,12 @@ this.minBlue= minBlue;
 
 
     public setMaxBlue(maxBlue: number){
-var maxBlue = maxBlue
 this.maxBlue= maxBlue;
     
 }
 
 
     public isInRange(color: Color): boolean{
-var color = color
 
                         if(color.getRed() >= this.getMinRed() && color.getRed() <= this.getMaxRed() && color.getGreen() >= this.getMinGreen() && color.getGreen() <= this.getMaxGreen() && color.getBlue() >= this.getMinBlue() && color.getBlue() <= this.getMaxBlue())
                         

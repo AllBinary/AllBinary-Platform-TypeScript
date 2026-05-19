@@ -55,8 +55,7 @@ export class GameInitializedEvent extends AllBinaryEventObject {
     private level: number= 0
 public constructor (anyType: any = {}){
             super(anyType);
-                    var anyType = anyType
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,7 +63,6 @@ public constructor (anyType: any = {}){
 
 
     public setLevel(level: number){
-var level = level
 this.level= level;
     
 this.resourceLoadingLevel= ResourceLoadingLevelFactory.getInstance()!.LEVEL;
@@ -83,7 +81,6 @@ this.resourceLoadingLevel= ResourceLoadingLevelFactory.getInstance()!.LEVEL;
 
 
     public setResourceLoadingLevel(resourceLoadingLevel: ResourceLoadingLevel){
-var resourceLoadingLevel = resourceLoadingLevel
 this.resourceLoadingLevel= resourceLoadingLevel;
     
 this.level= this.resourceLoadingLevel!.getLevel();

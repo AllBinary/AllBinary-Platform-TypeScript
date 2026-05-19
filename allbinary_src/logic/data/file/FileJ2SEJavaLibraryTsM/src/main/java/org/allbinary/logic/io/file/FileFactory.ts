@@ -64,7 +64,6 @@ export class FileFactory
                 //@Throws(Exception.constructor)
             
     public getInstance(filePath: string): AbFile{
-var filePath = filePath
 
 
 
@@ -77,8 +76,6 @@ var filePath = filePath
                 //@Throws(Exception.constructor)
             
     public getInstance(file: AbFile, childFilePath: string): AbFile{
-var file = file
-var childFilePath = childFilePath
 
 
 
@@ -91,7 +88,6 @@ var childFilePath = childFilePath
                 //@Throws(Exception.constructor)
             
     public isFile(path: string): boolean{
-var path = path
 
     var file: AbFile = new AbFile(path);
 ;

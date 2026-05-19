@@ -90,7 +90,6 @@ this.setTableName(this.tableName);
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(StoreFrontData.getInstance()!.NAME, value);
@@ -123,7 +122,6 @@ var value = value
 
 
     public getCampaignsInStore(storeName: string): AdvertisementCampaignsInterface{
-var storeName = storeName
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -177,8 +175,6 @@ index < size; index++)
 
 
     public get(storeName: string, name: string): AdvertisementCampaignInterface{
-var storeName = storeName
-var name = name
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -220,7 +216,6 @@ keysAndValues!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(EntryData.getInstance()!.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.getInstance()!.ID) as string, updatedValues);
     
 }

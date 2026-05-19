@@ -87,9 +87,7 @@ export class GenericStoreTransformInfoObjectConfig extends TransformInfoObjectCo
     readonly abeClientInformation: AbeClientInformationInterface
 public constructor (abeClientInformation: Object, transformInfoInterface: Object){
             super(transformInfoInterface);
-                        //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -99,10 +97,7 @@ this.abeClientInformation= abeClientInformation;
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object){
             super(transformInfoInterface, document);
-                        //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-    //var document = document
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,11 +109,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string){
             super(transformInfoInterface, name, type);
-                        //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
-    //var name = name
-    //var type = type
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -132,7 +123,6 @@ this.setDocument(this.generate(this.toXmlDoc()));
                 //@Throws(Exception.constructor)
             
     generate(objectConfigDocument: Document): Document{
-    //var objectConfigDocument = objectConfigDocument
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -189,8 +179,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "generate()");
                 //@Throws(Exception.constructor)
             
     createReplaceHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
-    //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
-    //var objectConfigDocumentString = objectConfigDocumentString
 
     var storeName: string = transformInfoHttpStoreInterface!.getStoreName()!;
 ;
@@ -223,8 +211,6 @@ hashMap!.put(transformInfoObjectConfigData!.VARKEY +TransformInfoData.getInstanc
                 //@Throws(Exception.constructor)
             
     createHashMap(transformInfoHttpStoreInterface: TransformInfoHttp, objectConfigDocumentString: string): HashMap<any, any>{
-    //var transformInfoHttpStoreInterface = transformInfoHttpStoreInterface
-    //var objectConfigDocumentString = objectConfigDocumentString
 
     var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -295,8 +281,6 @@ hashMap!.put(templateNameKey, selectedTemplate);
                 //@Throws(Exception.constructor)
             
     generate(objectConfigDocumentString: string, hashMap: HashMap<any, any>): Document{
-var objectConfigDocumentString = objectConfigDocumentString
-var hashMap = hashMap
 
     var replace: Replace = new Replace(hashMap);
 ;

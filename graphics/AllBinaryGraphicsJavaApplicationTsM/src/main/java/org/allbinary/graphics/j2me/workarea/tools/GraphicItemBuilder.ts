@@ -56,13 +56,12 @@ export class GraphicItemBuilder
                 //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): GraphicItemInterface{
-var node = node
 
     var graphicItemName: string = node.getNodeName()!;
 ;
     
 
-                        if(graphicItemName!.localeCompare(PointsDomUtil.getInstance()!.LINES) == 0)
+                        if(graphicItemName!.compareTo(PointsDomUtil.getInstance()!.LINES) == 0)
                         
                                     {
                                     

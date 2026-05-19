@@ -97,7 +97,6 @@ export class AllBinaryMediaManager
 
 
     public static setMuted(aMuted: boolean){
-    //var aMuted = aMuted
 }
 
 
@@ -114,7 +113,6 @@ export class AllBinaryMediaManager
                 //@Throws(Exception.constructor)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
-    //var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -136,7 +134,6 @@ new Sounds(soundsFactoryInterface).
                 //@Throws(Exception.constructor)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
-    //var soundsFactoryInterface = soundsFactoryInterface
 new Sounds(soundsFactoryInterface).
                             stopAll();
     
@@ -153,7 +150,6 @@ System.gc();
                 //@Throws(Exception.constructor)
             
     public static createPlayer(resource: string): Player{
-    //var resource = resource
 
                         if(resource.startsWith(Manager.TONE_DEVICE_LOCATOR))
                         
@@ -228,8 +224,6 @@ logUtil!.put(commonString!.EXCEPTION, AllBinaryMediaManager.THIS, CREATE_PLAYER,
                 //@Throws(IOException.constructor, MediaException.constructor)
             
     public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
-    //var stream = stream
-    //var type = type
 
 
 
@@ -242,9 +236,6 @@ logUtil!.put(commonString!.EXCEPTION, AllBinaryMediaManager.THIS, CREATE_PLAYER,
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){
-    //var frequency = frequency
-    //var time = time
-    //var volume = volume
 
 
 

@@ -55,12 +55,7 @@ export class AdjustedVectorAnimation extends VectorAnimation {
     private dy: number
 public constructor (currentPoints: number[][][], basicColor: BasicColor, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(currentPoints, basicColor, animationBehavior);
-                        //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var dx = dx
-    //var dy = dy
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,9 +67,6 @@ this.dy= dy;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 super.paintXY(graphics, x +this.dx, y +this.dy);
     
 }

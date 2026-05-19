@@ -93,26 +93,14 @@ export class ImageModifierUtil
     private alphaArray: boolean[]
 
     public setColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 }
 
 
     public changeColor(unusedOriginalImage: Image, image: Image, imageIndex: number, basicColor: BasicColor){
-    //var unusedOriginalImage = unusedOriginalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var basicColor = basicColor
 }
 
 
     public setAlpha(originalImage: Image, image: Image, imageIndex: number, alpha: number){
-    //var originalImage = originalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var alpha = alpha
 
     var alphaF: number = alpha;
 ;
@@ -127,10 +115,6 @@ this.setAlphaF(originalImage, image, imageIndex, alphaFloat);
 
 
     public setAlphaF(originalImage: Image, image: Image, imageIndex: number, alpha: number){
-    //var originalImage = originalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var alpha = alpha
 
                         if(this.alphaArray[imageIndex])
                         
@@ -146,10 +130,6 @@ this.setAlpha2(originalImage, image, imageIndex, alpha);
 
 
     public setAlpha2(originalImage: Image, image: Image, imageIndex: number, alpha: number){
-    //var originalImage = originalImage
-    //var image = image
-    //var imageIndex = imageIndex
-    //var alpha = alpha
 
     var htmlImage: PlaynImage = image as PlaynImage;
 ;
@@ -178,8 +158,6 @@ canvas.drawImage(originalPlaynImage, 0, 0);
 
 
     public setAlpha3(image: Image, alpha: number){
-    //var image = image
-    //var alpha = alpha
 
     var alphaF: number = alpha;
 ;
@@ -206,7 +184,6 @@ canvas.setAlpha(alphaFloat);
 
 
     public getImageArray(originalImageArray: Image[]): Image[]{
-    //var originalImageArray = originalImageArray
 
     var size: number = originalImageArray!.length
                 ;
@@ -242,9 +219,6 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
 
 
     public handleImage(imageArray: Image[], index: number, image: Image){
-    //var imageArray = imageArray
-    //var index = index
-    //var image = image
 
     var image3: playn.core.Image = 
 
@@ -272,7 +246,6 @@ this.handleImage(imageArray, index, originalImageArray[index]!);
                                 {
                                 
     public done(resource: any = {}){
-var resource = resource
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -284,7 +257,6 @@ copy(imageArray, index, image, image3);
 }
 
     public error(e: Throwable){
-var e = e
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -316,10 +288,6 @@ image3.addCallback(callback);
 
 
     public copy(imageArray: Image[], index: number, image: Image, image3: playn.core.Image){
-    //var imageArray = imageArray
-    //var index = index
-    //var image = image
-    //var image3 = image3
 
         try {
             

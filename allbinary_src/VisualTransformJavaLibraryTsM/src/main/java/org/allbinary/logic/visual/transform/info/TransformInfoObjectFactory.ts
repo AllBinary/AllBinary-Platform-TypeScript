@@ -85,8 +85,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
 
         try {
             

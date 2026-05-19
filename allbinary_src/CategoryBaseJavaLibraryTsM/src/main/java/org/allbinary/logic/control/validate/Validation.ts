@@ -73,7 +73,6 @@ export class Validation
                 //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

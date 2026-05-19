@@ -57,9 +57,6 @@ export class OpenGLImageFactory
     public static NULL_OPENGL_IMAGE_FACTORY: OpenGLImageFactory = new OpenGLImageFactory();
 
     public getInstance(image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory): Image{
-    //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
 
 
 

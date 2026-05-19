@@ -72,8 +72,7 @@ export class CategoryPrivateTree
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 
             super();
-        var categoryFactoryInterface = categoryFactoryInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -95,7 +94,6 @@ this.categoryFactoryInterface= categoryFactoryInterface;
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     save(categoryInterface: CategoryInterface){
-var categoryInterface = categoryInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.SQLLOGGING))
                         
@@ -132,7 +130,6 @@ cryptFileWriter!.write(categoryInterface!.getFilePath(), document);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     delete(categoryInterface: CategoryInterface){
-var categoryInterface = categoryInterface
 
                         if(categoryInterface!.isLeaf())
                         

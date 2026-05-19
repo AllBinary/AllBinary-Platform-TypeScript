@@ -124,11 +124,7 @@ export class CollidableDestroyableDamageableLayer extends CollidableCompositeLay
     public isDragged: boolean = false;
 public constructor (groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(name, layerInfo, viewPosition, CollidableNeverCollideBehaviorFactory.getInstance());
-                        //var groupInterface = groupInterface
-    //var name = name
-    //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -154,9 +150,6 @@ this.setPosition(this.initX, this.initY, this.initZ);
                 //@Throws(Exception.constructor)
             
     public initPositionXYZ(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 this.initX= x;
     
 this.initY= y;
@@ -167,7 +160,6 @@ this.initZ= z;
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 super.paint(graphics);
     
 }
@@ -176,8 +168,6 @@ super.paint(graphics);
                 //@Throws(Exception.constructor)
             
     public damage(damage: number, damageType: number){
-    //var damage = damage
-    //var damageType = damageType
 
 
 
@@ -189,7 +179,6 @@ super.paint(graphics);
                 //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
-    //var damageType = damageType
 
 
 
@@ -220,7 +209,6 @@ super.paint(graphics);
 
 
     public setGroupInterface(teamInterface: Group[]){
-    //var teamInterface = teamInterface
 this.groupInterface= teamInterface;
     
 }
@@ -229,7 +217,6 @@ this.groupInterface= teamInterface;
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
     
 
@@ -260,7 +247,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 
 
     setReadyForExplosion(isReadyForExplosion: boolean){
-    //var isReadyForExplosion = isReadyForExplosion
 this.readyForExplosion= isReadyForExplosion;
     
 }
@@ -345,99 +331,76 @@ this.readyForExplosion= isReadyForExplosion;
                 //@Throws(Exception.constructor)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public upAnalog(yAnalogValue: number){
-    //var yAnalogValue = yAnalogValue
 }
 
 
                 //@Throws(Exception.constructor)
             
     public downAnalog(yAnalogValue: number){
-    //var yAnalogValue = yAnalogValue
 }
 
 
                 //@Throws(Exception.constructor)
             
     public rightAnalog(xAnalogValue: number){
-    //var xAnalogValue = xAnalogValue
 }
 
 
                 //@Throws(Exception.constructor)
             
     public leftAnalog(xAnalogValue: number){
-    //var xAnalogValue = xAnalogValue
 }
 
 
                 //@Throws(Exception.constructor)
             
     public rightTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
-    //var xAnalogValue = xAnalogValue
 }
 
 
                 //@Throws(Exception.constructor)
             
     public leftTrigger(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
-    //var xAnalogValue = xAnalogValue
 }
 
 
     public onDestroyed(destroyedEvent: DestroyedEvent){
-    //var destroyedEvent = destroyedEvent
 }
 
 
@@ -452,7 +415,6 @@ this.readyForExplosion= isReadyForExplosion;
 
 
     public setPickupBehavior(pickupBehavior: PickupBehavior){
-    //var pickupBehavior = pickupBehavior
 this.pickupBehavior= pickupBehavior;
     
 }
@@ -461,12 +423,10 @@ this.pickupBehavior= pickupBehavior;
                 //@Throws(Exception.constructor)
             
     public addPart(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface){
-    //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
 }
 
 
     public setPartInterfaceArray(partInterfaceArray: PartInterface[]){
-    //var partInterfaceArray = partInterfaceArray
 this.partInterfaceArrayP= partInterfaceArray;
     
 }
@@ -483,7 +443,6 @@ this.partInterfaceArrayP= partInterfaceArray;
 
 
     public toStringAppend(stringBuffer: StringMaker){
-    //var stringBuffer = stringBuffer
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;

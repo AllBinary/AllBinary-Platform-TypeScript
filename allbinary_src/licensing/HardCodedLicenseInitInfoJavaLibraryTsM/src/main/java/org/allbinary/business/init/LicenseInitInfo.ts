@@ -76,7 +76,6 @@ export class LicenseInitInfo
 
 
     public getServer(index: number): string{
-var index = index
 
 
 
@@ -97,7 +96,6 @@ var index = index
 
 
     public setLicenseId(value: string){
-var value = value
 this.id= value;
     
 }
@@ -110,15 +108,12 @@ this.serverList!.clear();
 
 
     public setServer(value: string, index: number){
-var value = value
-var index = index
 this.serverList!.addAt(index, value);
     
 }
 
 
     public addServer(value: string){
-var value = value
 this.serverList!.add(value);
     
 }
@@ -135,7 +130,6 @@ this.serverList!.add(value);
 
 
     public setServerList(servers: BasicArrayList){
-var servers = servers
 
                         if(DebugFactory.getInstance() == NoDebug.getInstance())
                         

@@ -81,7 +81,6 @@ public constructor (){
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 
     var colorChangeEvent: ColorChangeEvent = eventObject as ColorChangeEvent;
 ;
@@ -94,7 +93,6 @@ this.basicColor= colorChangeEvent!.getBasicColorP();
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var charHeight: number = MyFont.getInstance()!.DEFAULT_CHAR_HEIGHT;
 ;
@@ -107,7 +105,7 @@ var graphics = graphics
     var height: number = this.displayInfoSingleton!.getLastHeight()!;
 ;
     
-graphics.setColor(getBasicColorP()!.intValue());
+graphics.setColor(this.getBasicColorP()!.intValue());
     
 
     var heading: string = this.highScores!.getHeading()!;
@@ -198,7 +196,6 @@ vectorIndex++;
 
 
     public setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 }
@@ -215,7 +212,6 @@ this.basicColor= basicColor;
 
 
     public setHighScores(highScores: HighScores){
-var highScores = highScores
 this.highScores= highScores;
     
 }

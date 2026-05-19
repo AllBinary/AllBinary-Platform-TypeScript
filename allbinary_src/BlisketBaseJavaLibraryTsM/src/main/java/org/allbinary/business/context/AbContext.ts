@@ -68,9 +68,7 @@ export class AbContext
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {

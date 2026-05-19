@@ -80,8 +80,7 @@ export class TransactionResult
 public constructor (result: string){
 
             super();
-        var result = result
-
+        
         try {
             this.result= result;
     
@@ -120,8 +119,7 @@ this.logUtil!.putF(exceptionMessage, this, this.commonStrings!.CONSTRUCTOR);
 public constructor (keyValuePairs: HashMap<any, any>){
 
             super();
-        var keyValuePairs = keyValuePairs
-keyValuePairs= keyValuePairs;
+        keyValuePairs= keyValuePairs;
     
 this.result= "Needs to have the hashmap converted to string for other constructor";
     

@@ -51,11 +51,7 @@ export class HtmlRadioInput extends HtmlValueInput {
     private readonly CHECKED: string = "checked";
 public constructor (before: string, name: string, value: string, after: string){
             super(before, HtmlInputData.getInstance()!.RADIO, name, value, after);
-                    var before = before
-var name = name
-var value = value
-var after = after
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

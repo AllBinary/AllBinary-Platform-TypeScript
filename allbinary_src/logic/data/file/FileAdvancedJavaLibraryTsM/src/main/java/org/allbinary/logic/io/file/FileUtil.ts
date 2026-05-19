@@ -108,7 +108,6 @@ export class FileUtil
 
 
     static getNewDirectory(fromFile: AbFile): string{
-var fromFile = fromFile
 
     var newDirectory: string = fromFile!.getPath()!;
 ;
@@ -168,8 +167,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public write(inputStream: InputStream, file: AbFile){
-var inputStream = inputStream
-var file = file
 
     var dataOutputStream: AbDataOutputStream = DataOutputStreamFactory.getInstance()!.getInstance(file)!;
 ;
@@ -182,8 +179,6 @@ this.write(inputStream, dataOutputStream);
                 //@Throws(Exception.constructor)
             
     public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream){
-var inputStream = inputStream
-var dataOutputStream = dataOutputStream
 
         try {
             dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
@@ -203,9 +198,6 @@ dataOutputStream!.flush();
                 //@Throws(Exception.constructor)
             
     public write(inputStream: InputStream, dataOutputStream: AbDataOutputStream, buffer: number[]){
-var inputStream = inputStream
-var dataOutputStream = dataOutputStream
-var buffer = buffer
 
         try {
             dataOutputStream= StreamUtil.getInstance()!.get(inputStream, dataOutputStream, buffer) as AbDataOutputStream;
@@ -225,8 +217,6 @@ dataOutputStream!.flush();
                 //@Throws(Exception.constructor)
             
     copy(dataInputStream: AbFileInputStream, dataOutputStream: AbDataOutputStream){
-var dataInputStream = dataInputStream
-var dataOutputStream = dataOutputStream
 
         try {
             dataOutputStream= StreamUtil.getInstance()!.get(dataInputStream, dataOutputStream, new Array(16384)) as AbDataOutputStream;
@@ -248,10 +238,6 @@ StreamUtil.getInstance()!.close(dataInputStream);
                 //@Throws(Exception.constructor)
             
     fixPath(file: AbFile, path: AbPath, realPath: AbPath, cloud: string): AbPath{
-var file = file
-var path = path
-var realPath = realPath
-var cloud = cloud
 
     var beginIndex: number = file.getPath()!.indexOf(cloud) +cloud.length;
 ;
@@ -299,10 +285,6 @@ this.directory.create(fixedPath);
                 //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string){
-var file = file
-var path = path
-var realPath = realPath
-var cloud = cloud
 this.copyToCloud(file, path, realPath, cloud, false, false);
     
 }
@@ -311,12 +293,6 @@ this.copyToCloud(file, path, realPath, cloud, false, false);
                 //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, path: AbPath, realPath: AbPath, cloud: string, overwriteNewer: boolean, overwriteAll: boolean){
-var file = file
-var path = path
-var realPath = realPath
-var cloud = cloud
-var overwriteNewer = overwriteNewer
-var overwriteAll = overwriteAll
 
         try {
             
@@ -413,8 +389,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
                 //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, outFile: AbFile){
-var file = file
-var outFile = outFile
 this.copyToCloud(file, outFile, false, false);
     
 }
@@ -423,10 +397,6 @@ this.copyToCloud(file, outFile, false, false);
                 //@Throws(Exception.constructor)
             
     public copyToCloud(file: AbFile, outFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
-var file = file
-var outFile = outFile
-var overwriteNewer = overwriteNewer
-var overwriteAll = overwriteAll
 
         try {
             
@@ -517,10 +487,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyToCloud", e);
                 //@Throws(Exception.constructor)
             
     copyPrepare(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean): boolean{
-var fromFile = fromFile
-var toFile = toFile
-var overwriteNewer = overwriteNewer
-var overwriteAll = overwriteAll
 
                         if(toFile!.exists())
                         
@@ -650,8 +616,6 @@ this.logUtil!.putF(stringBuffer!.toString(), getInstance(), "copyFile");
                 //@Throws(Exception.constructor)
             
     copyFile(fromFile: AbFile, toFile: AbFile){
-var fromFile = fromFile
-var toFile = toFile
 this.copyFile(fromFile, toFile, false, false);
     
 }
@@ -660,10 +624,6 @@ this.copyFile(fromFile, toFile, false, false);
                 //@Throws(Exception.constructor)
             
     copyFile(fromFile: AbFile, toFile: AbFile, overwriteNewer: boolean, overwriteAll: boolean){
-var fromFile = fromFile
-var toFile = toFile
-var overwriteNewer = overwriteNewer
-var overwriteAll = overwriteAll
 
         try {
             
@@ -752,12 +712,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyFile", e);
                 //@Throws(Exception.constructor)
             
     public copyDirectoryPortion(fromDirectoryAbPath: AbPath, toDirectoryAbPath: AbPath, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number){
-var fromDirectoryAbPath = fromDirectoryAbPath
-var toDirectoryAbPath = toDirectoryAbPath
-var overwriteNewer = overwriteNewer
-var overwriteAll = overwriteAll
-var current = current
-var total = total
 
     var file: AbFile = new AbFile(fromDirectoryAbPath);
 ;
@@ -892,8 +846,6 @@ this.copyFile(nextFile, toFile, overwriteNewer, overwriteAll);
                 //@Throws(Exception.constructor)
             
     copyDirectory(fromFile: AbFile, to: AbFile){
-    //var fromFile = fromFile
-    //var to = to
 
         try {
             
@@ -1051,8 +1003,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), "copyDirectory", e);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public copy(fromAbPath: AbPath, to: AbPath): boolean{
-var fromAbPath = fromAbPath
-var to = to
 
     var COPY: string = "copy";
 ;
@@ -1337,7 +1287,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
 
 
     public readAsString(fileName: string): string{
-    //var fileName = fileName
 
     var bytes: number[] = new Array(1000000);
 ;
@@ -1352,8 +1301,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
 
 
     public readAsString(fileName: string, bytes: number[]): string{
-    //var fileName = fileName
-    //var bytes = bytes
 
     var idFile: FileInputStream = 
                 null
@@ -1412,8 +1359,6 @@ this.logUtil!.put(stringBuffer!.toString(), getInstance(), COPY, e);
 
 
     public shouldSkip(file: AbFile, skipFiles: string[]): boolean{
-    //var file = file
-    //var skipFiles = skipFiles
 
     var size: number = skipFiles!.length
                 ;
@@ -1434,7 +1379,7 @@ index < size; index++)
 skipFile= skipFiles[index]!;
     
 
-                        if(file.getPath()!.localeCompare(skipFile) == 0)
+                        if(file.getPath()!.compareTo(skipFile) == 0)
                         
                                     {
                                     
@@ -1466,8 +1411,6 @@ skipFile= skipFiles[index]!;
                 //@Throws(Exception.constructor)
             
     public write(filePath: string, string: string){
-var filePath = filePath
-var string = string
 
     var dataOutputStream: AbDataOutputStream = 
                 null
@@ -1504,9 +1447,6 @@ dataOutputStream!.flush();
 
 
     public loadFileAsList(file: AbFile, max: number, byteArray1: number[]): BasicArrayList{
-    //var file = file
-    //var max = max
-    //var byteArray1 = byteArray1
 
 
 

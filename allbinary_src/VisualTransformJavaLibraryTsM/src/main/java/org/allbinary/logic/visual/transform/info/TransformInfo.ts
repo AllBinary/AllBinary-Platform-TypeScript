@@ -145,20 +145,14 @@ public constructor (){
 public constructor (name: string){
 
             super();
-        var name = name
-this.setName(name);
+        this.setName(name);
     
 }
 
 public constructor (name: string, objectFileName: string, objectConfigFileName: string, templateFileName: string, dataFileName: string){
 
             super();
-        var name = name
-var objectFileName = objectFileName
-var objectConfigFileName = objectConfigFileName
-var templateFileName = templateFileName
-var dataFileName = dataFileName
-this.setName(name);
+        this.setName(name);
     
 this.setObjectFile(objectFileName);
     
@@ -174,7 +168,6 @@ this.setDataFile(dataFileName);
                 //@Throws(Exception.constructor)
             
     public override(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
     var transformInfoData: TransformInfoData = TransformInfoData.getInstance()!;
 ;
@@ -553,14 +546,12 @@ stringBuffer!.append("TransformInfoInterface(HashMap)");
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
 
 
     public setStoreName(value: string){
-var value = value
 this.storeName= value;
     
 }
@@ -577,28 +568,24 @@ this.storeName= value;
 
 
     public setObject(anyType: Object){
-var anyType = anyType
 this.anyType= anyType;
     
 }
 
 
     public setObjectFile(value: string){
-var value = value
 this.objectFileName= value;
     
 }
 
 
     public setTemplate(value: string){
-var value = value
 this.template= value;
     
 }
 
 
     public setTemplateFile(value: string){
-var value = value
 this.templateFileName= value;
     
 }
@@ -607,7 +594,6 @@ this.templateFileName= value;
                 //@Throws(Exception.constructor)
             
     setObjectConfigFileName(value: string){
-var value = value
 this.objectConfigFileName= value;
     
 }
@@ -616,7 +602,6 @@ this.objectConfigFileName= value;
                 //@Throws(Exception.constructor)
             
     setObjectConfigFile(value: string){
-var value = value
 this.objectConfigFileName= value;
     
 this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.getInstance()!.getInstance(this.abeClientInformation, this, this.getObjectConfigFilePath()));
@@ -627,7 +612,6 @@ this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.get
                 //@Throws(Exception.constructor)
             
     setObjectConfig(value: string){
-var value = value
 
     var document: Document = DomDocumentHelper.create(value)!;
 ;
@@ -638,14 +622,12 @@ this.setObjectConfigInterface(TransformInfoObjectConfigAndManipulatorFactory.get
 
 
     public setDataFile(value: string){
-var value = value
 this.dataFileName= value;
     
 }
 
 
     public setData(value: string){
-var value = value
 this.data= value;
     
 }
@@ -1074,7 +1056,6 @@ this.isChild= true;
 
 
     public setObjectConfigInterface(objectConfigInterface: Object){
-var objectConfigInterface = objectConfigInterface
 this.objectConfigInterface= objectConfigInterface;
     
 }

@@ -56,8 +56,7 @@ export class TwoDimensionalConstraint
 public constructor (node: Node){
 
             super();
-        var node = node
-}
+        }
 
 
     public getHeight(): SizeConstraintInterface{
@@ -81,14 +80,12 @@ public constructor (node: Node){
 
 
     public setHeight(heightSizeConstraintInterface: SizeConstraintInterface){
-var heightSizeConstraintInterface = heightSizeConstraintInterface
 this.heightSizeConstraintInterface= heightSizeConstraintInterface;
     
 }
 
 
     public setWidth(widthSizeConstraintInterface: SizeConstraintInterface){
-var widthSizeConstraintInterface = widthSizeConstraintInterface
 this.widthSizeConstraintInterface= widthSizeConstraintInterface;
     
 }

@@ -63,10 +63,7 @@ export class SecretComposite extends BaseSecretComposite {
 public constructor (secretKey: SecretKey, cipher: Cipher, key: number[]){
 
             super();
-            //var secretKey = secretKey
-    //var cipher = cipher
-    //var key = key
-this.secretKey= secretKey;
+        this.secretKey= secretKey;
     
 this.cipher= cipher;
     
@@ -78,7 +75,6 @@ this.key= key;
                 //@Throws(Exception.constructor)
             
     public encrypt(array: number[]): number[]{
-var array = array
 array= this.mutilate(array);
     
 this.cipher.init(Cipher.ENCRYPT_MODE, this.secretKey);
@@ -95,7 +91,6 @@ this.cipher.init(Cipher.ENCRYPT_MODE, this.secretKey);
                 //@Throws(Exception.constructor)
             
     public decrypt(array: number[]): number[]{
-var array = array
 this.cipher.init(Cipher.DECRYPT_MODE, this.secretKey);
     
 
@@ -108,7 +103,6 @@ this.cipher.init(Cipher.DECRYPT_MODE, this.secretKey);
 
 
     mutilate(array: number[]): number[]{
-var array = array
 
 
 

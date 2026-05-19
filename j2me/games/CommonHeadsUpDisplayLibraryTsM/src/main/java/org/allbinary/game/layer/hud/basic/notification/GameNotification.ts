@@ -73,9 +73,6 @@ export class GameNotification
     public readonly colorList: BasicArrayList = new BasicArrayListD();
 
     public add(string: string, seconds: Integer, basicColor: BasicColor){
-var string = string
-var seconds = seconds
-var basicColor = basicColor
 
                         if(!this.stringList!.contains(string))
                         

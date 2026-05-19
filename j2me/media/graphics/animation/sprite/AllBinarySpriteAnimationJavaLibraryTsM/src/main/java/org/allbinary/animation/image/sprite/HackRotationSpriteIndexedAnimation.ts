@@ -67,11 +67,7 @@ export class HackRotationSpriteIndexedAnimation extends RotationAnimation {
     private readonly image: Image
 public constructor (sprite: Sprite, image: Image, angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
             super(angleInfo, CircularIndexUtil.createInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
-                        //var sprite = sprite
-    //var image = image
-    //var angleInfo = angleInfo
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -95,10 +91,6 @@ this.image= image;
 
 
     public paintFrame(g: Graphics, frame: number, x: number, y: number){
-    //var g = g
-    //var frame = frame
-    //var x = x
-    //var y = y
 this.setFrame(frame);
     
 this.paintXY(g, x, y);
@@ -107,9 +99,6 @@ this.paintXY(g, x, y);
 
 
     public paintXY(g: Graphics, x: number, y: number){
-    //var g = g
-    //var x = x
-    //var y = y
 this.sprite.setPosition(x, y);
     
 this.paint(g);
@@ -118,7 +107,6 @@ this.paint(g);
 
 
     paint(g: Graphics){
-    //var g = g
 this.sprite.paint(g);
     
 }
@@ -147,7 +135,6 @@ this.sprite.prevFrame();
 
 
     public setFrame(frame: number){
-    //var frame = frame
 this.sprite.setFrame(frame);
     
 }
@@ -164,7 +151,6 @@ this.sprite.setFrame(frame);
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 

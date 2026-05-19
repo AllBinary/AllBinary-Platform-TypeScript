@@ -80,11 +80,6 @@ public constructor (){
 
 
     public initialize(cloud: string, overwriteNewer: boolean, overwriteAll: boolean, current: number, total: number): boolean{
-var cloud = cloud
-var overwriteNewer = overwriteNewer
-var overwriteAll = overwriteAll
-var current = current
-var total = total
 
         try {
             

@@ -52,7 +52,6 @@ public constructor (){
 
 
     public append(string: string): StringMaker{
-    //var string = string
 
     var stringLength: number = string.length!;
 ;
@@ -80,7 +79,6 @@ this.currentLength += stringLength;
 
 
     public appendchar(c: string): StringMaker{
-    //var c = c
 this.ensureCapacity(this.currentLength +1);
     
 this.charArray[this.currentLength++]= c;
@@ -95,7 +93,6 @@ this.charArray[this.currentLength++]= c;
 
 
     public appendbyte(b: number): StringMaker{
-    //var b = b
 this.append(b.toString());
     
 
@@ -108,7 +105,6 @@ this.append(b.toString());
 
 
     public appendshort(b: number): StringMaker{
-    //var b = b
 this.append(b.toString());
     
 
@@ -121,7 +117,6 @@ this.append(b.toString());
 
 
     public appendint(i: number): StringMaker{
-    //var i = i
 this.append(i.toString());
     
 
@@ -134,7 +129,6 @@ this.append(i.toString());
 
 
     public appendlong(l: number): StringMaker{
-    //var l = l
 this.append(l.toString());
     
 
@@ -147,7 +141,6 @@ this.append(l.toString());
 
 
     public appendfloat(f: number): StringMaker{
-var f = f
 this.append(f.toString());
     
 
@@ -160,7 +153,6 @@ this.append(f.toString());
 
 
     public appendboolean(bool: boolean): StringMaker{
-    //var bool = bool
 
                         if(bool)
                         
@@ -222,7 +214,6 @@ this.charArray[this.currentLength++]=
 
 
     public ensureCapacity(minSize: number){
-    //var minSize = minSize
 
     var oldCapacity: number = this.charArray!.length
                 ;
@@ -261,8 +252,6 @@ this.charArray= copy;
 
 
     public min(value: number, value2: number): number{
-var value = value
-var value2 = value2
 
 
 
@@ -280,8 +269,6 @@ var value2 = value2
 
 
     public delete(start: number, end: number): StringMaker{
-    //var start = start
-    //var end = end
 this.currentLength -= (end -start);
     
 

@@ -77,6 +77,8 @@ export class OperatingSystems
     public readonly WINDOWS_XP: string = "Windows XP";
 
     public readonly ANDROID: string = this.LINUX;
+
+    public readonly HARMONY: string = "Harmony";
 private constructor (){
 
             super();
@@ -96,7 +98,6 @@ private constructor (){
 
 
     public setUnknownSpecificOSAllowed(aUnknownSpecificOSAllowed: boolean){
-var aUnknownSpecificOSAllowed = aUnknownSpecificOSAllowed
 this.unknownSpecificOSAllowed= aUnknownSpecificOSAllowed;
     
 }

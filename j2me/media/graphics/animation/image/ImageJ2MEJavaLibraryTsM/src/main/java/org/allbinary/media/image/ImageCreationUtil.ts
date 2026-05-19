@@ -72,8 +72,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImageWH(width: number, height: number): Image{
-    //var width = width
-    //var height = height
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, width, height)!;
 ;
@@ -90,10 +88,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage(width: number, height: number, maxScaleX: number, maxScaleY: number): Image{
-    //var width = width
-    //var height = height
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 
     var image: Image = GameFeatureImageCacheFactory.getInstance()!.get(this.constructor.name.toString()!, Math.round((width *maxScaleX)) +1, Math.round((height *maxScaleY)) +1)!;
 ;

@@ -92,7 +92,6 @@ export class AllBinaryMediaManager
 
 
     public static setMuted(aMuted: boolean){
-var aMuted = aMuted
 }
 
 
@@ -109,7 +108,6 @@ var aMuted = aMuted
                 //@Throws(Exception.constructor)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
-    //var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -137,7 +135,6 @@ logUtil!.putF(commonString!.END, AllBinaryMediaManager.THIS, commonString!.INIT)
                 //@Throws(Exception.constructor)
             
     static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
-    //var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -245,7 +242,6 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "shutdown");
                 //@Throws(Exception.constructor)
             
     public static createPlayer(resource: string): Player{
-var resource = resource
 AllBinaryMediaManager.mostUsedTotal++;
     
 
@@ -297,8 +293,6 @@ logUtil!.put("Could not create AndroidMediaPlayerWrapper using NoPlayer at " +Co
                 //@Throws(IOException.constructor, MediaException.constructor)
             
     public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
-var stream = stream
-var type = type
 
 
 
@@ -311,9 +305,6 @@ var type = type
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){
-var frequency = frequency
-var time = time
-var volume = volume
 
 
 

@@ -50,8 +50,7 @@ export class CapitalEvent extends AllBinaryEventObject {
     private value: number= 0
 public constructor (anyType: any = {}){
             super(anyType);
-                    var anyType = anyType
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -87,7 +86,6 @@ stringBuffer!.appendint(this.getValue());
 
 
     public setValue(value: number){
-var value = value
 this.value= value;
     
 }

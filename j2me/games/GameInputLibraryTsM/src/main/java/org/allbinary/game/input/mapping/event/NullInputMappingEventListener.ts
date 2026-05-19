@@ -57,12 +57,10 @@ export class NullInputMappingEventListener
                 //@Throws(Exception.constructor)
             
     public onInputMappingEvent(inputMappingEvent: InputMappingEvent){
-    //var inputMappingEvent = inputMappingEvent
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 }
 
 

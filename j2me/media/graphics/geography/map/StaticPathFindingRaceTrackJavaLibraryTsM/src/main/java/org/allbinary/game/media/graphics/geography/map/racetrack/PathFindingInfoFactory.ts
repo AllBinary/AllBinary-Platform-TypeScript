@@ -82,8 +82,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
-    //var geographicMapInterface = geographicMapInterface
-    //var graphArray = graphArray
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

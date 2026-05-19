@@ -57,9 +57,7 @@ export class MathVector
 public constructor (magnitudeBasicDecimal: BasicDecimal, direction: number){
 
             super();
-        var magnitudeBasicDecimal = magnitudeBasicDecimal
-var direction = direction
-this.magnitudeBasicDecimal= magnitudeBasicDecimal;
+        this.magnitudeBasicDecimal= magnitudeBasicDecimal;
     
 this.direction= direction;
     

@@ -73,8 +73,7 @@ public constructor (){
 
 public constructor (node: Node){
             super(node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -82,8 +81,7 @@ public constructor (node: Node){
 
 public constructor (hashMap: HashMap<any, any>){
             super(hashMap);
-                    var hashMap = hashMap
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -204,7 +202,6 @@ stringBuffer!.append("Title is not valid.");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

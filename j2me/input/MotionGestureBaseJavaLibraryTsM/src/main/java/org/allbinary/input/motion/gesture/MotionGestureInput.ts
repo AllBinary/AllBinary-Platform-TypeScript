@@ -49,9 +49,7 @@ export class MotionGestureInput extends Input {
         
 public constructor (id: number, name: string){
             super(id, name);
-                    var id = id
-var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

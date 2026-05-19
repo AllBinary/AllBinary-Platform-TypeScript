@@ -48,7 +48,6 @@ export class ResizableEmptyListener
         
 
     public onResizable(isResizable: boolean){
-var isResizable = isResizable
 }
 
 

@@ -189,7 +189,6 @@ this.currentTotalDigits= this.getPrimitiveLongUtil()!.getCurrentTotalDigits();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics);
     
 this.rtsLayerCompositePaintableLateInit!.paint(graphics);
@@ -204,7 +203,6 @@ this.getAnimationInterface()!.paintXY(graphics, this.imageX, this.y);
 
 
     public setRtsLayer(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.rtsLayer= rtsLayer;
     
 }

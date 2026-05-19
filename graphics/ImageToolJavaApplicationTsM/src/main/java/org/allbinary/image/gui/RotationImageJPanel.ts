@@ -98,8 +98,7 @@ export class RotationImageJPanel extends javax.swing.JPanel implements ImageProc
     private result: BufferedImage
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                    var imageProcessorInput = imageProcessorInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -149,7 +148,6 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(RotationImageJPanel.prototype.result != 
                                     null
@@ -201,7 +199,6 @@ this.generateJButton!.addActionListener(new class extends java.awt.event.ActionL
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateJButtonActionPerformed(evt);
     
 }
@@ -218,7 +215,6 @@ this.totalAngleJComboBox!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 totalAngleJComboBoxActionPerformed(evt);
     
 }
@@ -266,14 +262,12 @@ layout.setVerticalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayo
 
 
     generateJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.process();
     
 }
 
 
     totalAngleJComboBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
@@ -306,7 +300,6 @@ var evt = evt
 
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
-var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput;
     
 }
@@ -315,9 +308,6 @@ this.imageProcessorInput= imageProcessorInput;
                 //@Throws(IOException.constructor)
             
     public visit(generatedBufferedImage: BufferedImage, name: string, index: number){
-    //var generatedBufferedImage = generatedBufferedImage
-    //var name = name
-    //var index = index
 this.result= generatedBufferedImage;
     
 this.getParent()!.repaint();

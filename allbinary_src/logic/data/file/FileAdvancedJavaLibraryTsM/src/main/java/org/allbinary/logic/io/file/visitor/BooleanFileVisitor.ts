@@ -62,8 +62,7 @@ export class BooleanFileVisitor
 public constructor (filterStringBasicArrayList: BasicArrayList){
 
             super();
-        var filterStringBasicArrayList = filterStringBasicArrayList
-this.setFilterStringBasicArrayList(filterStringBasicArrayList);
+        this.setFilterStringBasicArrayList(filterStringBasicArrayList);
     
 PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.toString(), this, this.commonStrings!.CONSTRUCTOR);
     
@@ -71,7 +70,6 @@ PreLogUtil.put("Filter BasicArrayList: " +this.getFilterStringBasicArrayList()!.
 
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
 
 
 
@@ -82,7 +80,6 @@ var anyType = anyType
 
 
     public visit(file: AbFile): Boolean{
-var file = file
 
     var list: BasicArrayList = this.getFilterStringBasicArrayList()!;
 ;
@@ -140,15 +137,12 @@ nextFileFilterString= list.get(index) as string;
 
 
     public setFilterStringBasicArrayList(filterStringBasicArrayList: BasicArrayList){
-var filterStringBasicArrayList = filterStringBasicArrayList
 this.filterStringBasicArrayList= filterStringBasicArrayList;
     
 }
 
 
     public visit(file: AbFile, fileNameString: string): Boolean{
-var file = file
-var fileNameString = fileNameString
 
 
 

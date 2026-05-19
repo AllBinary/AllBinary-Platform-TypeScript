@@ -59,7 +59,6 @@ export class InitEmulatorFactory
 
 
     public setInitEmulator(initEmulator: boolean){
-var initEmulator = initEmulator
 this.initEmulator= initEmulator;
     
 }

@@ -97,10 +97,7 @@ export class ScrollMapPlayerGameInput extends PlayerGameInput {
     private maxRight: number= 0
 public constructor (geographicMapInterface: BasicGeographicMap, list: BasicArrayList, playerInputId: number){
             super(list, new BasicArrayListD(), playerInputId);
-                    var geographicMapInterface = geographicMapInterface
-var list = list
-var playerInputId = playerInputId
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -120,8 +117,6 @@ this.init();
                 //@Throws(Exception.constructor)
             
     move(dx: number, dy: number){
-var dx = dx
-var dy = dy
 
     var terrainTiledLayer: AllBinaryTiledLayer = this.geographicMapInterface!.getAllBinaryTiledLayer()!;
 ;
@@ -185,7 +180,6 @@ this.move(diffX, 0);
                 //@Throws(Exception.constructor)
             
     public scrollY(anchor: number){
-var anchor = anchor
 
     var terrainTiledLayer: AllBinaryTiledLayer = this.geographicMapInterface!.getAllBinaryTiledLayer()!;
 ;
@@ -338,7 +332,6 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
                 //@Throws(Exception.constructor)
             
     public processInputKey(key: number){
-var key = key
 this.inputProcessorArray[key]!.processEvent(AllBinaryGameLayerManager.NULL_ALLBINARY_LAYER_MANAGER, GameKeyEvent.NONE);
     
 }
@@ -347,7 +340,6 @@ this.inputProcessorArray[key]!.processEvent(AllBinaryGameLayerManager.NULL_ALLBI
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 
         try {
             
@@ -473,7 +465,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
 
 
     public keepOnMapMaxY(newY: number): boolean{
-var newY = newY
 
     var y: number = this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP()!;
 ;
@@ -505,7 +496,6 @@ var newY = newY
 
 
     public keepOnMapMinY(newY: number): boolean{
-var newY = newY
 
     var y: number = this.geographicMapInterface!.getAllBinaryTiledLayer()!.getYP()!;
 ;
@@ -537,7 +527,6 @@ var newY = newY
 
 
     public keepOnMapMaxX(newX: number): boolean{
-var newX = newX
 
     var x: number = this.geographicMapInterface!.getAllBinaryTiledLayer()!.getXP()!;
 ;
@@ -569,7 +558,6 @@ var newX = newX
 
 
     public keepOnMapMinX(newX: number): boolean{
-var newX = newX
 
     var x: number = this.geographicMapInterface!.getAllBinaryTiledLayer()!.getXP()!;
 ;

@@ -52,8 +52,6 @@ export class MethodUtil
         
 
     public static viewAll(myClass: Function, lineBreak: string): string{
-var myClass = myClass
-var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

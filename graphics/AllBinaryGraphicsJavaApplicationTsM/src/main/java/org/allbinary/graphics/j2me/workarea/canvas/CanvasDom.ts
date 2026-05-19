@@ -112,8 +112,7 @@ export class CanvasDom
 public constructor (canvasNode: Node){
 
             super();
-        var canvasNode = canvasNode
-this.grid= new Grid();
+        this.grid= new Grid();
     
 this.grid.grid= PointFactory.getInstance()!.createXY(0, 0);
     
@@ -124,7 +123,7 @@ this.dimension= new IntegerDimension(0, 0);
 ;
     
 
-                        if(name.localeCompare(CanvasDom.FRAME) == 0)
+                        if(name.compareTo(CanvasDom.FRAME) == 0)
                         
                                     {
                                     this.graphicItemHashMap= new HashMap<any, any>();
@@ -277,8 +276,7 @@ this.grid.isGridPossible= .
 public constructor (canvasJPanel: CanvasJPanel){
 
             super();
-        var canvasJPanel = canvasJPanel
-this.angle= canvasJPanel!.getAngle();
+        this.angle= canvasJPanel!.getAngle();
     
 this.graphicItemHashMap= canvasJPanel!.getGraphicItemHashMap();
     
@@ -312,7 +310,6 @@ this.angle= canvasJPanel!.getAngle();
 
 
     public setAngle(angle: number){
-var angle = angle
 this.angle= angle;
     
 }
@@ -321,8 +318,6 @@ this.angle= angle;
                 //@Throws(Exception.constructor)
             
     public setWorkArea(x: number, y: number){
-var x = x
-var y = y
 this.setDimension(new IntegerDimension(x, y));
     
 }
@@ -331,16 +326,12 @@ this.setDimension(new IntegerDimension(x, y));
                 //@Throws(Exception.constructor)
             
     public setGrid(gridX: number, gridY: number){
-var gridX = gridX
-var gridY = gridY
 this.grid.grid= PointFactory.getInstance()!.createXY(gridX, gridY);
     
 }
 
 
     getPointNode(point: GPoint, pointName: string): Node{
-var point = point
-var pointName = pointName
 
     var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
 ;
@@ -564,7 +555,6 @@ frameNode!.appendChild(graphicItemNode);
 
 
     public setDimension(dimension: IntegerDimension){
-var dimension = dimension
 this.dimension= dimension;
     
 }

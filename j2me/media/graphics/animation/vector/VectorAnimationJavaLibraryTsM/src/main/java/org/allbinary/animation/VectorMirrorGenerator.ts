@@ -85,8 +85,6 @@ private constructor (){
 
 
     public getInstance(points: number[][][], width: number): number[][][]{
-var points = points
-var width = width
 
         try {
             
@@ -152,7 +150,7 @@ pointsBasicArrayList!.add(pointBasicArrayList);
     var index: number = 0;
 index < points.length; index++)
         {
-pointsBasicArrayList!.add(getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width));
+pointsBasicArrayList!.add(this.getInstance(pointsBasicArrayList!.objectArray[index]! as BasicArrayList, width));
     
 }
 
@@ -190,8 +188,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                 //@Throws(Exception.constructor)
             
     public getInstance(pointBasicArrayList: BasicArrayList, width: number): BasicArrayList{
-var pointBasicArrayList = pointBasicArrayList
-var width = width
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);
 ;

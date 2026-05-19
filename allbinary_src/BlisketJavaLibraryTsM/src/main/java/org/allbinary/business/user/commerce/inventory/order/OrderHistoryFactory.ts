@@ -56,7 +56,6 @@ export class OrderHistoryFactory
         
 
     public static getInstance(id: string): OrderHistory{
-var id = id
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

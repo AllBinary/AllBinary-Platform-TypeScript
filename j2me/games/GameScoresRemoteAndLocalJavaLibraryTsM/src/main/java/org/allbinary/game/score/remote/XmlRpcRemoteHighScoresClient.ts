@@ -73,10 +73,7 @@ export class XmlRpcRemoteHighScoresClient extends XmlRpcAbeClient {
     private page: string
 public constructor (clientInfo: AbeClientInformationInterface, page: string, remoteMethod: string){
             super(clientInfo, remoteMethod);
-                    var clientInfo = clientInfo
-var page = page
-var remoteMethod = remoteMethod
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -90,8 +87,6 @@ this.setServer(0);
                 //@Throws(Exception.constructor)
             
     public get(anyType: any = {}, cryptInterface: CryptInterface): any{
-    //var anyType = anyType
-    //var cryptInterface = cryptInterface
 
         try {
             

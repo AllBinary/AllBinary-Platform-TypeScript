@@ -81,10 +81,7 @@ export class ImageArrayBaseRotationAnimation extends RotationAnimation {
     private totalFrames: number= 0
 public constructor (originalImageArray: Image[], angleInfo: AngleInfo, animationBehavior: AnimationBehavior){
             super(angleInfo, CircularIndexUtil.createInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
-                        //var originalImageArray = originalImageArray
-    //var angleInfo = angleInfo
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -110,7 +107,6 @@ this.currentImage= this.imageArray[this.circularIndexUtil!.getIndex()]!;
 
 
     public setAlpha(alpha: number){
-    //var alpha = alpha
 
                         if(this.alphaP != alpha)
                         
@@ -160,7 +156,6 @@ this.currentImage= this.imageArray[index]!;
 
 
     public setFrame(index2: number){
-    //var index2 = index2
 super.setFrame(index2);
     
 
@@ -175,7 +170,6 @@ this.currentImage= this.imageArray[index]!;
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 
@@ -190,7 +184,6 @@ this.currentImage= this.imageArray[index]!;
 
 
     setImageArray(imageArray: Image[]){
-    //var imageArray = imageArray
 this.imageArray= imageArray;
     
 this.totalFrames= imageArray!.length;
@@ -203,9 +196,6 @@ this.circularIndexUtil= CircularIndexUtil.createInstance(this.totalFrames);
     private anchor: number = Anchor.TOP_LEFT;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 graphics.drawImage(this.currentImage, x, y, this.anchor);
     
 }

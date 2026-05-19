@@ -100,8 +100,7 @@ export class SavedCaptureImagesWorker extends BasicEventHandler implements Captu
 public constructor (savedCaptureGenericProfileDataWorkerType: SavedCaptureGenericProfileDataWorkerType){
 
             super();
-        var savedCaptureGenericProfileDataWorkerType = savedCaptureGenericProfileDataWorkerType
-this.savedCaptureGenericProfileDataWorkerType= savedCaptureGenericProfileDataWorkerType;
+        this.savedCaptureGenericProfileDataWorkerType= savedCaptureGenericProfileDataWorkerType;
     
 this.screenScavangerRobot= new ScreenScavangerRobot();
     
@@ -113,7 +112,6 @@ SavedCaptureImagesWorker.index= ProcessingFrameIndexFactory.next();
                 //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
-var thread = thread
 }
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -130,7 +128,6 @@ var thread = thread
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }

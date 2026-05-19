@@ -92,21 +92,12 @@ export class OpenGLESGL10Image extends OpenGLESImage {
     readonly openGLESImageProperties: OpenGLESImageProperties = OpenGLESGL10Image.prototype.openGLESImageProperties;
 
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
-    //var gl = gl
-    //var viewHeight = viewHeight
-    //var x_src = x_src
-    //var y_src = y_src
-    //var width = width
-    //var height = height
-    //var x = x
-    //var y = y
-    //var z = z
 
-    var imageWidth: number = getWidth()!;
+    var imageWidth: number = OpenGLESGL10Image.prototype.getWidth()!;
 ;
     
 
-    var imageHeight: number = getHeight()!;
+    var imageHeight: number = OpenGLESGL10Image.prototype.getHeight()!;
 ;
     
 this.regionRectangleFloatArray[7]= viewHeight;
@@ -194,16 +185,12 @@ gl.glPopMatrix();
 }
 
     public draw(gl: GL10, x: number, y: number, z: number){
-    //var gl = gl
-    //var x = x
-    //var y = y
-    //var z = z
 
-    var width: number = getWidth()!;
+    var width: number = OpenGLESGL10Image.prototype.getWidth()!;
 ;
     
 
-    var height: number = getHeight()!;
+    var height: number = OpenGLESGL10Image.prototype.getHeight()!;
 ;
     
 this.regionRectangleFloatArray[7]= this.displayInfoSingleton!.getLastHeight();
@@ -290,10 +277,7 @@ gl.glPopMatrix();
     private openGLESImageDraw: OpenGLESImageDraw = OpenGLESImageDraw.getInstance()!;
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image, bitmapFactory, textureFactory);
-                        //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -325,7 +309,6 @@ this.textureVertexFloatBuffer!.rewind();
 
 
     public set(gl: GL){
-    //var gl = gl
 
     var gl10: GL10 = gl as GL10;
 ;
@@ -349,25 +332,12 @@ OpenGLLogUtil.getInstance()!.logError(gl10, this);
 
 
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
-    //var gl = gl
-    //var viewHeight = viewHeight
-    //var x_src = x_src
-    //var y_src = y_src
-    //var width = width
-    //var height = height
-    //var x = x
-    //var y = y
-    //var z = z
 this.openGLESImageDraw!.drawRegion(gl, viewHeight, x_src, y_src, width, height, x, y, z);
     
 }
 
 
     public draw(gl: GL10, x: number, y: number, z: number){
-    //var gl = gl
-    //var x = x
-    //var y = y
-    //var z = z
 this.openGLESImageDraw!.draw(gl, x, y, z);
     
 }

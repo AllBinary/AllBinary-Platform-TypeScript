@@ -120,8 +120,6 @@ private constructor (){
 
 
     public create(width: number, height: number): BufferedImage{
-    //var width = width
-    //var height = height
 
     var graphicsConfiguration: GraphicsConfiguration = this.getDefaultConfiguration()!;
 ;
@@ -138,9 +136,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createBufferedImageForResize(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
-    //var bufferedImageArray = bufferedImageArray
-    //var percent = percent
-    //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
@@ -188,9 +183,6 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
                 //@Throws(Exception.constructor)
             
     public createBufferedImage2(bufferedImageArray: BufferedImage[], percent: number, scale: boolean): BufferedImage[]{
-    //var bufferedImageArray = bufferedImageArray
-    //var percent = percent
-    //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
@@ -238,10 +230,6 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImage, newWidt
                 //@Throws(Exception.constructor)
             
     public createBufferedImage3(bufferedImageArray: BufferedImage[], width: number, height: number, scale: boolean): BufferedImage[]{
-    //var bufferedImageArray = bufferedImageArray
-    //var width = width
-    //var height = height
-    //var scale = scale
 
     var size: number = bufferedImageArray!.length
                 ;
@@ -275,9 +263,6 @@ scaledBufferedImageArray[index]= this.createBufferedImage(bufferedImageArray[ind
                 //@Throws(Exception.constructor)
             
     public createBufferedImageForSave(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var newWidth = newWidth
-var newHeight = newHeight
 
 
 
@@ -290,10 +275,6 @@ var newHeight = newHeight
                 //@Throws(Exception.constructor)
             
     public createBufferedImage(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var newWidth = newWidth
-var newHeight = newHeight
-    //var scale = scale
 
 
 
@@ -306,11 +287,6 @@ var newHeight = newHeight
                 //@Throws(Exception.constructor)
             
     public createBufferedImageAllowTranslate(bufferedImage: BufferedImage, newWidth: number, newHeight: number, scale: boolean, allowTranslate: boolean): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var newWidth = newWidth
-var newHeight = newHeight
-    //var scale = scale
-    //var allowTranslate = allowTranslate
 
     var width: number = bufferedImage!.getWidth()!;
 ;
@@ -397,9 +373,6 @@ graphics.drawRenderedImage(bufferedImage, affineTransform);
                 //@Throws(Exception.constructor)
             
     public createBufferedImageWithLargerCanvas(bufferedImage: BufferedImage, newWidth: number, newHeight: number): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var newWidth = newWidth
-var newHeight = newHeight
 
     var width: number = bufferedImage!.getWidth()!;
 ;
@@ -469,7 +442,6 @@ graphics.drawImage(bufferedImage, dx4, dy4,
 
 
     public convertToBufferedImage(toolkitImage: java.awt.Image): BufferedImage{
-var toolkitImage = toolkitImage
 
                         if(toolkitImage == 
                                     null
@@ -510,7 +482,6 @@ g2d.dispose();
 
 
     public getBufferedImage(image: Image): BufferedImage{
-    //var image = image
 
     var bufferedImage: BufferedImage
 ;
@@ -548,7 +519,6 @@ bufferedImage= j2seImage!.getImage() as BufferedImage;
 
 
     public toString(bufferedImage: BufferedImage): string{
-var bufferedImage = bufferedImage
 
     var commonLabels: CommonLabels = CommonLabels.getInstance()!;
 ;

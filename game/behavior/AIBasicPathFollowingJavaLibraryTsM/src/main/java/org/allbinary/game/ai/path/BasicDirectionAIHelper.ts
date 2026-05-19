@@ -65,9 +65,7 @@ export class BasicDirectionAIHelper
 public constructor (name: string, angleInfo: AngleInfo){
 
             super();
-            //var name = name
-    //var angleInfo = angleInfo
-this.name= name;
+        this.name= name;
     
 this.angleInfo= angleInfo;
     
@@ -75,7 +73,6 @@ this.angleInfo= angleInfo;
 
 
     turnAI(frame: number): number{
-var frame = frame
 
     var keyDirection: number =  -1;
 ;
@@ -149,7 +146,6 @@ var frame = frame
 
 
     getAIKeyPressed(frame: Integer): number{
-    //var frame = frame
 
     var angle: number = this.angleInfo!.getAngleIncrementInfo()!.getFrameAngle(frame.intValue());
 ;
@@ -181,7 +177,6 @@ var frame = frame
 
 
     public getAIKeyPressedFromDirection(geographicMapDirectionData: Direction): number{
-    //var geographicMapDirectionData = geographicMapDirectionData
 
     var keyDirection: number =  -1;
 ;

@@ -52,8 +52,6 @@ public constructor (){
 
 
     public process(gl: GL10, anyType: any = {}){
-    //var gl = gl
-    //var anyType = anyType
 }
 
 

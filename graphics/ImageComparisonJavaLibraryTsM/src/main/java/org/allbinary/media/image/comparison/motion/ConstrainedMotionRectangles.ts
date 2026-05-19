@@ -65,9 +65,7 @@ export class ConstrainedMotionRectangles extends MotionRectangles {
     private motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface
 public constructor (motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface, motionRectangles: MotionRectangles){
             super(NAME, motionRectangles!.getImageComparisonResult());
-                        //var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
-    //var motionRectangles = motionRectangles
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +77,6 @@ this.setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface)
                 //@Throws(Exception.constructor)
             
     public applyMotionRectangleConstraints(motionRectangles: MotionRectangles){
-    //var motionRectangles = motionRectangles
 this.logUtil!.putF("Start - Size Before: " +motionRectangles!.getVector()!.size(), this, "applyMotionRectangleConstraints");
     
 
@@ -199,7 +196,6 @@ this.setVector(vector);
 
 
     public setMotionRectangleConstraintsInterface(motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
-var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
 this.motionRectangleConstraintsInterface= motionRectangleConstraintsInterface;
     
 }

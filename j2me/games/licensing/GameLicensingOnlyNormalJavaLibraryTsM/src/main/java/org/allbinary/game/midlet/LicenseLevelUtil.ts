@@ -59,8 +59,6 @@ export class LicenseLevelUtil
 
 
     public getMaxLevel(maxLevel: number, demoLevel: number): number{
-var maxLevel = maxLevel
-var demoLevel = demoLevel
 
 
 

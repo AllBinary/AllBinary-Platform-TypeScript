@@ -81,8 +81,7 @@ export class HtmlForm
 public constructor (action: string){
 
             super();
-        var action = action
-this.action= action;
+        this.action= action;
     
 this.inputs= new Vector();
     
@@ -102,14 +101,12 @@ this.method= this.GET;
 
 
     public addInput(htmlInput: HtmlInput){
-var htmlInput = htmlInput
 this.inputs.add(htmlInput);
     
 }
 
 
     public addTable(htmlTable: HtmlTable){
-var htmlTable = htmlTable
 this.inputs.add(htmlTable);
     
 }

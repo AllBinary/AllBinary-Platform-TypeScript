@@ -77,7 +77,6 @@ this.circularIndexUtil!.next();
 
 
     public init(allBinaryObjectFactoryInterface: AllBinaryObjectFactoryInterface){
-var allBinaryObjectFactoryInterface = allBinaryObjectFactoryInterface
 this.circularIndexUtil!.setIndex(0);
     
 
@@ -102,7 +101,6 @@ this.OBJECT_ARRAY[index]= allBinaryObjectFactoryInterface!.getInstance();
                 //@Throws(Exception.constructor)
             
     public getInstance(index: number): any{
-var index = index
 
 
 

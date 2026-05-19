@@ -96,7 +96,6 @@ export class InputAutomationBundleActivator
                 //@Throws(Exception.constructor)
             
     public start(bundleContext: BundleContext){
-    //var bundleContext = bundleContext
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START);
@@ -150,7 +149,6 @@ new InputAutomationModuleServiceConsumer(this.getBundleContext()).
                 //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
-    //var context = context
 this.logUtil!.putF(this.commonStrings!.START, this, "stop");
     
 

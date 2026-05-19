@@ -68,7 +68,6 @@ export class GeographicMapCellTypeFactory
     private readonly geographicMapCellTypeArray: GeographicMapCellType[] = new Array(512);
 
     public get(type: number): GeographicMapCellType{
-var type = type
 
 
 
@@ -116,7 +115,6 @@ var type = type
 
 
     public isPath(cellType: GeographicMapCellType): boolean{
-var cellType = cellType
 
 
 

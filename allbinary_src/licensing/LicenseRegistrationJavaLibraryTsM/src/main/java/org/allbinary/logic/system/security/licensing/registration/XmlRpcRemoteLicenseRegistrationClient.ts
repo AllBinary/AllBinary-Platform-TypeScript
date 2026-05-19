@@ -77,8 +77,7 @@ export class XmlRpcRemoteLicenseRegistrationClient extends XmlRpcAbeClient {
     private readonly PAGE: string = "licenseregistrationserverssl.php";
 public constructor (clientInfo: AbeClientInformationInterface){
             super(clientInfo, "LicenseRegistrationServer.process");
-                    var clientInfo = clientInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -90,8 +89,6 @@ this.setServer(0);
                 //@Throws(Exception.constructor)
             
     public get(anyType: any = {}, cryptInterface: CryptInterface): any{
-    //var anyType = anyType
-    //var cryptInterface = cryptInterface
 
         try {
             

@@ -52,7 +52,6 @@ export class BasicDecimal
     public static readonly ZERO_BIGDECIMAL: BasicDecimal = new BasicDecimal(0);
 
     public static createBigDecimal(bigDecimal: BasicDecimal): BasicDecimal{
-    //var bigDecimal = bigDecimal
 
 
 
@@ -66,8 +65,7 @@ export class BasicDecimal
 public constructor (units: number){
 
             super();
-        var units = units
-this.units= units;
+        this.units= units;
     
 this.updateScaled();
     
@@ -75,7 +73,6 @@ this.updateScaled();
 
 
     public setint(value: number){
-var value = value
 this.units= value;
     
 this.updateScaled();
@@ -84,7 +81,6 @@ this.updateScaled();
 
 
     public setlong(value: number){
-var value = value
 this.units= value;
     
 this.updateScaled();
@@ -93,7 +89,6 @@ this.updateScaled();
 
 
     public set(bigDecimal: BasicDecimal){
-var bigDecimal = bigDecimal
 this.units= bigDecimal!.getUnscaled();
     
 this.updateScaled();
@@ -102,7 +97,6 @@ this.updateScaled();
 
 
     public addint(value: number){
-var value = value
 this.units= this.units +value;
     
 this.updateScaled();
@@ -111,7 +105,6 @@ this.updateScaled();
 
 
     public addlong(value: number){
-var value = value
 this.units= this.units +value;
     
 this.updateScaled();
@@ -120,7 +113,6 @@ this.updateScaled();
 
 
     public add(bigDecimal: BasicDecimal){
-var bigDecimal = bigDecimal
 this.units= this.units +bigDecimal!.getUnscaled();
     
 this.updateScaled();
@@ -129,7 +121,6 @@ this.updateScaled();
 
 
     public subtractint(value: number){
-var value = value
 this.units= this.units -value;
     
 this.updateScaled();
@@ -138,7 +129,6 @@ this.updateScaled();
 
 
     public subtractlong(value: number){
-var value = value
 this.units= this.units -value;
     
 this.updateScaled();
@@ -147,7 +137,6 @@ this.updateScaled();
 
 
     public subtract(bigDecimal: BasicDecimal){
-var bigDecimal = bigDecimal
 this.units= this.units -bigDecimal!.getUnscaled();
     
 this.updateScaled();
@@ -156,7 +145,6 @@ this.updateScaled();
 
 
     public multiplyint(value: number){
-var value = value
 this.units= this.units *value;
     
 this.updateScaled();
@@ -165,7 +153,6 @@ this.updateScaled();
 
 
     public multiplylong(value: number){
-var value = value
 this.units= this.units *value;
     
 this.updateScaled();
@@ -174,7 +161,6 @@ this.updateScaled();
 
 
     public multiply(bigDecimal: BasicDecimal){
-var bigDecimal = bigDecimal
 this.units= this.units *bigDecimal!.getUnscaled();
     
 this.updateScaled();
@@ -183,7 +169,6 @@ this.updateScaled();
 
 
     public divideint(value: number){
-var value = value
 this.units= this.units /value;
     
 this.updateScaled();
@@ -192,7 +177,6 @@ this.updateScaled();
 
 
     public dividelong(value: number){
-var value = value
 this.units= this.units /value;
     
 this.updateScaled();
@@ -201,7 +185,6 @@ this.updateScaled();
 
 
     public divide(bigDecimal: BasicDecimal){
-var bigDecimal = bigDecimal
 this.units= this.units /bigDecimal!.getUnscaled();
     
 this.updateScaled();

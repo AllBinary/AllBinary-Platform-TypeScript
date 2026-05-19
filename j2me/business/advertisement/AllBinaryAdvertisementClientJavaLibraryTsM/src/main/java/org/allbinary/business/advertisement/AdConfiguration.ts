@@ -58,8 +58,7 @@ export class AdConfiguration
 public constructor (advertIdArray: any[]){
 
             super();
-            //var advertIdArray = advertIdArray
-this.INNERACTIVE= advertIdArray[0]! as string;
+        this.INNERACTIVE= advertIdArray[0]! as string;
     
 this.ADMOB= advertIdArray[1]! as string;
     
@@ -79,12 +78,10 @@ this.LEADBOLT= advertIdArray[2]! as string;
 
 
     public process(gameState: GameState){
-    //var gameState = gameState
 }
 
 
     public processDemo(state: number){
-    //var state = state
 }
 
 
@@ -93,7 +90,6 @@ this.LEADBOLT= advertIdArray[2]! as string;
 
 
     public setToggleAds(showAds: boolean){
-    //var showAds = showAds
 }
 
 

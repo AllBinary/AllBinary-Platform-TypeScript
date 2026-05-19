@@ -64,7 +64,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public onEmailSendRequest(userEmailInfoEvent: EmailEvent){
-var userEmailInfoEvent = userEmailInfoEvent
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         

@@ -90,9 +90,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
-    //var xsltStreamSource = xsltStreamSource
-    //var xmlStreamSource = xmlStreamSource
-    //var streamResult = streamResult
 
         try {
             
@@ -128,10 +125,6 @@ transformer.transform(xmlStreamSource, streamResult);
                 //@Throws(Exception.constructor)
             
     public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource, streamResult: StreamResult): OutputStream{
-    //var resolver = resolver
-    //var xsltStreamSource = xsltStreamSource
-    //var xmlStreamSource = xmlStreamSource
-    //var streamResult = streamResult
 
         try {
             
@@ -169,8 +162,6 @@ transformer.transform(xmlStreamSource, streamResult);
                 //@Throws(Exception.constructor)
             
     public translate(xsltStreamSource: StreamSource, xmlDocument: Document): string{
-    //var xsltStreamSource = xsltStreamSource
-    //var xmlDocument = xmlDocument
 
         try {
             
@@ -200,8 +191,6 @@ transformer.transform(xmlStreamSource, streamResult);
                 //@Throws(Exception.constructor)
             
     public translate(xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
-    //var xsltStreamSource = xsltStreamSource
-    //var xmlStreamSource = xmlStreamSource
 
         try {
             
@@ -231,9 +220,6 @@ transformer.transform(xmlStreamSource, streamResult);
                 //@Throws(Exception.constructor)
             
     public translate(resolver: URIResolver, xsltStreamSource: StreamSource, xmlStreamSource: StreamSource): string{
-    //var resolver = resolver
-    //var xsltStreamSource = xsltStreamSource
-    //var xmlStreamSource = xmlStreamSource
 
         try {
             
@@ -263,9 +249,6 @@ transformer.transform(xmlStreamSource, streamResult);
                 //@Throws(Exception.constructor)
             
     public export(outputFile: File, xsltFilePath: string, xmlDocument: Document){
-    //var outputFile = outputFile
-    //var xsltFilePath = xsltFilePath
-    //var xmlDocument = xmlDocument
 
         try {
             outputFile!.createNewFile();

@@ -71,7 +71,6 @@ export class OpenGLVersionValidator
 
 
     public isAvailable(glVersionRequired: string): boolean{
-    //var glVersionRequired = glVersionRequired
 
 
 
@@ -82,8 +81,6 @@ export class OpenGLVersionValidator
 
 
     public setShaderComposite(shaderComposite: ShaderComposite, anyType: any = {}){
-    //var shaderComposite = shaderComposite
-    //var anyType = anyType
 }
 
 

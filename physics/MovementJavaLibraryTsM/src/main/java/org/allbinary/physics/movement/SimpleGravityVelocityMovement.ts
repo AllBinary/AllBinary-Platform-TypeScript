@@ -56,8 +56,7 @@ export class SimpleGravityVelocityMovement extends BasicConstantVelocityMovement
         
 public constructor (speedBasicDecimal: BasicDecimal){
             super(speedBasicDecimal, new VelocityProperties(Math.round(speedBasicDecimal!.getUnscaled()), Math.round(speedBasicDecimal!.getUnscaled())));
-                    var speedBasicDecimal = speedBasicDecimal
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -69,7 +68,6 @@ public constructor (speedBasicDecimal: BasicDecimal){
                 //@Throws(Exception.constructor)
             
     public process(layer: AllBinaryGameLayer){
-var layer = layer
 this.gravityUtil!.process(this.getVelocityProperties(), this.gravityUtil!.GAME_GRAVITY_VELOCITY);
     
 super.process(layer);

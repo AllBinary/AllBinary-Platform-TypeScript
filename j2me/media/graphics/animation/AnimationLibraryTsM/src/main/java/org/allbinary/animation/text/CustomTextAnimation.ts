@@ -69,10 +69,7 @@ export class CustomTextAnimation extends TextAnimation implements GetTextInterfa
     hasChanged: boolean = true;
 public constructor (text: string, fontSize: number, animationBehavior: AnimationBehavior){
             super(text, animationBehavior);
-                        //var text = text
-    //var fontSize = fontSize
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -84,9 +81,6 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, fontSize);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
     var existingFont: Font = graphics.getFont()!;
 ;
@@ -101,8 +95,6 @@ this.fontDebugFactory!.setFont(existingFont, graphics);
 
 
     public setScale(scaleX: number, scaleY: number){
-    //var scaleX = scaleX
-    //var scaleY = scaleY
 
                         if(scaleX != scaleY)
                         
@@ -123,7 +115,6 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, Math.round((this.fon
 
 
     public setText(text: string){
-    //var text = text
 
                         if(this.lastText != text)
                         

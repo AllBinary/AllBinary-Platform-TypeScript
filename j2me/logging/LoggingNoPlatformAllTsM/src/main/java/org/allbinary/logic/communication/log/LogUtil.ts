@@ -67,7 +67,6 @@ private constructor (){
 
 
     public putL(log: Log){
-var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
 ;
@@ -93,9 +92,6 @@ var log = log
 
 
     public putF(specialMessage: string, anyType: any = {}, functionName: string){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
 
 
 
@@ -105,10 +101,6 @@ var log = log
 
 
     public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-    //var exception = exception
 
 
 

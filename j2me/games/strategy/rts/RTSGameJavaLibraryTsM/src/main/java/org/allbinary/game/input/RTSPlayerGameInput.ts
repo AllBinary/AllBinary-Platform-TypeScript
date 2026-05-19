@@ -146,14 +146,7 @@ export class RTSPlayerGameInput extends PlayerGameInput {
     private selectedRtsFormInput: RTSFormInput = NullRTSFormInputFactory.getInstance()!;
 public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
             super(inputList, new BasicArrayListD(), playerInputId);
-                        //var gameCanvas = gameCanvas
-    //var inputList = inputList
-    //var playerInputId = playerInputId
-    //var towerInfoPaintable = towerInfoPaintable
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerPositionFinderInterface = layerPositionFinderInterface
-    //var selectRTSLayerVisitorFactoryInterface = selectRTSLayerVisitorFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -196,7 +189,6 @@ this.layerPositionFinderInterface= layerPositionFinderInterface;
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -212,7 +204,6 @@ this.selectedRTSLayerPlayerGameInput!.setAllBinaryGameLayerManager(allBinaryGame
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-var displayChangeEvent = displayChangeEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onDisplayChangeEvent");
@@ -279,7 +270,6 @@ GameInputProcessorUtil.init(this.removeInputProcessorArray);
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 
         try {
             this.processMotionInput(layerManager);
@@ -345,14 +335,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
                 //@Throws(Exception.constructor)
             
     public processMotionInput(layerManager: AllBinaryLayerManager){
-    //var layerManager = layerManager
 }
 
 
                 //@Throws(Exception.constructor)
             
     select(motionGestureEvent: MotionGestureEvent){
-    //var motionGestureEvent = motionGestureEvent
 
     var point: GPoint = motionGestureEvent!.getCurrentPoint()!;
 ;
@@ -432,15 +420,12 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public setSelectedRTSLayer(rtsLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
-var rtsLayer = rtsLayer
-var geographicMapCellPosition = geographicMapCellPosition
 this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(rtsLayer);
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getSelectedRtsFormInput()!.getSelectedGeographicCellPosition()!;
 ;
@@ -543,7 +528,6 @@ graphics.drawRect(point.getX() -allBinaryTiledLayer!.getXP(), point.getY() -allB
 
 
     public setSelectedRtsFormInput(selectedRtsFormInput: RTSFormInput){
-var selectedRtsFormInput = selectedRtsFormInput
 this.logUtil!.putF(new StringMaker().
                             append("RTSFormInput: ")!.append(StringUtil.getInstance()!.toString(selectedRtsFormInput))!.toString(), this, "setSelectedRtsFormInput");
     

@@ -64,8 +64,7 @@ export class ReverseVelocityBoundsVisitor
 public constructor (layerInterface: LayerInterface){
 
             super();
-        var layerInterface = layerInterface
-this.layerInterface= layerInterface;
+        this.layerInterface= layerInterface;
     
 
     var velocityInterfaceCompositeInterface: VelocityInterfaceCompositeInterface = layerInterface as VelocityInterfaceCompositeInterface;

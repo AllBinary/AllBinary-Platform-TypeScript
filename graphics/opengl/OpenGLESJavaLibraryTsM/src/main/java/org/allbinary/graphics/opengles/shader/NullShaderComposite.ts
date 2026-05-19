@@ -61,7 +61,6 @@ export class NullShaderComposite extends ShaderComposite {
                                 {
                                 
     public init(gl: GL10){
-var gl = gl
 }
 
                                 }
@@ -78,15 +77,7 @@ var gl = gl
 
 public constructor (requiresOpenGLVersion: string, shaderArray: Shader[], compositeShaderUpdater: CompositeShaderUpdater, shaderInitializer: ShaderInitializer, modelViewProjection: ModelViewProjection, colorOpenGLProcessor: OpenGLProcessor, vertexOpenGLProcessor: OpenGLProcessor, disableProgramShaderOpenGLProcessor: OpenGLProcessor){
             super(requiresOpenGLVersion, shaderArray, compositeShaderUpdater, shaderInitializer, modelViewProjection, colorOpenGLProcessor, vertexOpenGLProcessor, disableProgramShaderOpenGLProcessor);
-                        //var requiresOpenGLVersion = requiresOpenGLVersion
-    //var shaderArray = shaderArray
-    //var compositeShaderUpdater = compositeShaderUpdater
-    //var shaderInitializer = shaderInitializer
-    //var modelViewProjection = modelViewProjection
-    //var colorOpenGLProcessor = colorOpenGLProcessor
-    //var vertexOpenGLProcessor = vertexOpenGLProcessor
-    //var disableProgramShaderOpenGLProcessor = disableProgramShaderOpenGLProcessor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

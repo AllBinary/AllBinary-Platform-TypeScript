@@ -62,9 +62,6 @@ export class VectorAnimation extends IndexedAnimation implements VectorAnimation
         
 
     public static createVectorAnimation(currentPoints2: number[][], basicColor: BasicColor, animationBehavior: AnimationBehavior): VectorAnimation{
-    //var currentPoints2 = currentPoints2
-    //var basicColor = basicColor
-    //var animationBehavior = animationBehavior
 
     var currentPoints: number[][][] = Array.from({ length: 1 }, () => Array.from({ length: currentPoints2!.length }, () => new Array(0).fill(2)));
 ;
@@ -104,10 +101,7 @@ currentPoints[0]![index]![1]= currentPoints2[index]![1]!;
     private circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(0)!;
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -141,7 +135,6 @@ this.setBasicColorP(basicColor);
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 
@@ -168,9 +161,6 @@ this.circularIndexUtil!.previous();
 
 
     paintVectors(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
         try {
             
@@ -242,9 +232,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "paintVectors", e);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColor);
     
 this.paintVectors(graphics, x, y);
@@ -263,14 +250,12 @@ this.paintVectors(graphics, x, y);
 
 
     public setFrame(index: number){
-var index = index
 this.circularIndexUtil!.setIndex(index);
     
 }
 
 
     public getPoints(frame: number): number[][]{
-var frame = frame
 
 
 
@@ -281,7 +266,6 @@ var frame = frame
 
 
     public setPoints(currentPoints: number[][][]){
-var currentPoints = currentPoints
 this.currentPoints= currentPoints;
     
 this.circularIndexUtil= CircularIndexUtil.createInstance(currentPoints!.length);

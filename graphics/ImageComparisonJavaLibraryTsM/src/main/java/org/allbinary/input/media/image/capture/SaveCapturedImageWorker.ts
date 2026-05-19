@@ -91,14 +91,12 @@ public constructor (){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }
 
 
     public onCaptureEvent(capturedImageEvent: CapturedImageWorkerResultsEvent){
-var capturedImageEvent = capturedImageEvent
 this.capturedImageWorkerResultsEventVector!.add(capturedImageEvent);
     
 this.run();
@@ -107,7 +105,6 @@ this.run();
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
-var allBinaryEventObject = allBinaryEventObject
 this.onCaptureEvent(allBinaryEventObject as CapturedImageWorkerResultsEvent);
     
 }

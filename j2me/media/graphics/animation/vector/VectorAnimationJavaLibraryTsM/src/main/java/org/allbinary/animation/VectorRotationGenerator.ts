@@ -91,7 +91,6 @@ private constructor (){
 
 
     public getInstance(vectorRotationInfo: VectorInfo): number[][][]{
-    //var vectorRotationInfo = vectorRotationInfo
 
 
 
@@ -104,10 +103,6 @@ private constructor (){
     private readonly angleFactory: AngleFactory = AngleFactory.getInstance()!;
 
     public getInstanceFrames(width: number, height: number, points: number[][], frames: number): number[][][]{
-    //var width = width
-    //var height = height
-    //var points = points
-    //var frames = frames
 
         try {
             
@@ -154,7 +149,7 @@ pointBasicArrayList!.add(pointFactory!.createXY(points[index]![0]!, points[index
 
         while(index < totalAngle)
         {
-pointsBasicArrayList!.add(getListAtAngle(width, height, pointBasicArrayList, this.angleFactory!.getAt(index)));
+pointsBasicArrayList!.add(this.getListAtAngle(width, height, pointBasicArrayList, this.angleFactory!.getAt(index)));
     
 index += angleIncrement;
     
@@ -194,10 +189,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.GET_INSTANCE, e
                 //@Throws(Exception.constructor)
             
     public getListAtAngle(width: number, height: number, pointBasicArrayList: BasicArrayList, angle: Angle): BasicArrayList{
-    //var width = width
-    //var height = height
-    //var pointBasicArrayList = pointBasicArrayList
-    //var angle = angle
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(pointBasicArrayList);
 ;

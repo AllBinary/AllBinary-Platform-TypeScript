@@ -53,8 +53,7 @@ export class DirectoryOrIncludeFileExtensionBooleanFileVisitor extends IncludeFi
     private readonly includesString: string
 public constructor (filterStringBasicArrayList: BasicArrayList){
             super(filterStringBasicArrayList);
-                        //var filterStringBasicArrayList = filterStringBasicArrayList
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -66,9 +65,7 @@ this.includesString=
 
 public constructor (filterStringBasicArrayList: BasicArrayList, includesString: string){
             super(filterStringBasicArrayList);
-                        //var filterStringBasicArrayList = filterStringBasicArrayList
-    //var includesString = includesString
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,7 +75,6 @@ this.includesString= includesString;
 
 
     public visit(file: AbFile): Boolean{
-var file = file
 
                         if(file.isDirectory())
                         

@@ -79,14 +79,12 @@ private constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getKey(abeClientInformation: AbeClientInformationInterface, keyName: string): string{
-    //var abeClientInformation = abeClientInformation
-    //var keyName = keyName
 
         try {
             this.logUtil!.putF("Getting Key: " +keyName, this, "getKey");
     
 
-                        if(keyName!.localeCompare("DirectX 8") == 0 || keyName!.localeCompare("DirectX") == 0 || keyName!.localeCompare("Low Level") == 0 || keyName!.localeCompare("System Drivers") == 0)
+                        if(keyName!.compareTo("DirectX 8") == 0 || keyName!.compareTo("DirectX") == 0 || keyName!.compareTo("Low Level") == 0 || keyName!.compareTo("System Drivers") == 0)
                         
                                     {
                                     

@@ -95,8 +95,7 @@ ReleaseHelper = class
 public constructor (touchButtonRecognizer: TouchButtonRecognizer){
 
             super();
-        var touchButtonRecognizer = touchButtonRecognizer
-this.touchButtonRecognizer= touchButtonRecognizer;
+        this.touchButtonRecognizer= touchButtonRecognizer;
     
 }
 
@@ -104,8 +103,6 @@ this.touchButtonRecognizer= touchButtonRecognizer;
                 //@Throws(Exception.constructor)
             
     public release(touchButtonInput: TouchButtonInput, deviceId: number){
-var touchButtonInput = touchButtonInput
-var deviceId = deviceId
 
 
 
@@ -141,8 +138,7 @@ MultitouchReleaseHelper = class extends ReleaseHelper {
         
 public constructor (touchButtonRecognizer: TouchButtonRecognizer){
             super(touchButtonRecognizer);
-                    var touchButtonRecognizer = touchButtonRecognizer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -152,8 +148,6 @@ public constructor (touchButtonRecognizer: TouchButtonRecognizer){
                 //@Throws(Exception.constructor)
             
     public release(touchButtonInput: TouchButtonInput, deviceId: number){
-var touchButtonInput = touchButtonInput
-var deviceId = deviceId
 
     var cancelTouchButtonInput: TouchButtonInput = CancelTouchButtonInputFactory.getInstance()!.getCancel(touchButtonInput)!;
 ;
@@ -220,8 +214,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     processRelease(touchButtonInput: TouchButtonInput, deviceId: number){
-var touchButtonInput = touchButtonInput
-var deviceId = deviceId
 this.releaseHelper!.release(touchButtonInput, deviceId);
     
 
@@ -241,9 +233,6 @@ this.currentlyPressedTouchButtonSingleton!.remove(touchButtonInput);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public releaseTouchButtonInput(x: number, y: number, deviceId: number): boolean{
-var x = x
-var y = y
-var deviceId = deviceId
 
     var touchButtonInput: TouchButtonInput = this.lastPressedTouchButtonInput;
 ;
@@ -331,9 +320,6 @@ this.processRelease(touchButtonInput, deviceId);
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public pressTouchButtonInput(x: number, y: number, deviceId: number): boolean{
-var x = x
-var y = y
-var deviceId = deviceId
 
     var list: BasicArrayList = TouchButtonFactory.getInstance()!.getList()!;
 ;

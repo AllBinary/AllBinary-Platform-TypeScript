@@ -77,7 +77,6 @@ export class InventoryItemViewParentTagHelper
                 //@Throws(Exception.constructor)
             
     public getInventoryItemView(inventoryTag: HelperTag): InventoryItemView{
-var inventoryTag = inventoryTag
 
                         if(inventoryTag != 
                                     null
@@ -140,7 +139,6 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                 //@Throws(Exception.constructor)
             
     public getDownloadableInventoryItemView(inventoryTag: HelperTag): DownloadableInventoryItemView{
-var inventoryTag = inventoryTag
 
                         if(inventoryTag != 
                                     null
@@ -203,7 +201,6 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                 //@Throws(Exception.constructor)
             
     public getRequestMapInterface(inventoryTag: HelperTag): RequestMapInterface{
-var inventoryTag = inventoryTag
 
                         if(inventoryTag != 
                                     null
@@ -266,7 +263,6 @@ stringBuffer!.append(inventoryTag!.getHelper()!.constructor.name.toString()!);
                 //@Throws(Exception.constructor)
             
     public checkForValidationViewHelper(helperObject: any = {}){
-var helperObject = helperObject
 
                         if(!(helperObject instanceof ValidationViewHelper))
                         

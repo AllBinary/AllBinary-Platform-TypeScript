@@ -50,8 +50,7 @@ export class ExcludeFileExtensionsBooleanFileVisitor extends BooleanFileVisitor 
         
 public constructor (filterStringBasicArrayList: BasicArrayList){
             super(filterStringBasicArrayList);
-                    var filterStringBasicArrayList = filterStringBasicArrayList
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -59,7 +58,6 @@ public constructor (filterStringBasicArrayList: BasicArrayList){
 
 
     public visit(file: AbFile): Boolean{
-var file = file
 
                         if(this.getFilterStringBasicArrayList()!.size() == 0)
                         
@@ -83,8 +81,6 @@ var file = file
 
 
     public visit(file: AbFile, fileNameString: string): Boolean{
-var file = file
-var fileNameString = fileNameString
 
     var fileNameAndExtension: string = file.getPath()!;
 ;
@@ -102,7 +98,7 @@ var fileNameString = fileNameString
 ;
     
 
-                        if(fileName!.localeCompare(fileNameString) == 0)
+                        if(fileName!.compareTo(fileNameString) == 0)
                         
                                     {
                                     

@@ -81,8 +81,7 @@ export class AbTransformer
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 }
 
@@ -98,14 +97,12 @@ this.transformInfoInterface= transformInfoInterface;
 
 
     public setInputStream(inputStream: InputStream){
-var inputStream = inputStream
 this.inputStream= inputStream;
     
 }
 
 
     public setURIResolver(uriResolver: URIResolver){
-var uriResolver = uriResolver
 this.uriResolver= uriResolver;
     
 }
@@ -144,7 +141,6 @@ this.uriResolver= uriResolver;
                 //@Throws(Exception.constructor)
             
     public translate(xmlDocumentStr: string): string{
-var xmlDocumentStr = xmlDocumentStr
 
         try {
             

@@ -85,8 +85,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
-var transformInfoInterface = transformInfoInterface
-var objectConfigFileAbPath = objectConfigFileAbPath
 
         try {
             

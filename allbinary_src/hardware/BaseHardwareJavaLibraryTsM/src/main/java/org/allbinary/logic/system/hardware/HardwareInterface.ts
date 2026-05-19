@@ -52,7 +52,7 @@ export interface HardwareInterface {
 
     toString(): string
 
-    localeCompare(hardwareInterface: HardwareInterface): boolean
+    compareTo(hardwareInterface: HardwareInterface): boolean
 
     difference(hardwareInterface: HardwareInterface): Hashtable<any, any>
 

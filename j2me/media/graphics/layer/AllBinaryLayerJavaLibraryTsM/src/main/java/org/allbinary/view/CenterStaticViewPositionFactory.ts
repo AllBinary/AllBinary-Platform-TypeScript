@@ -56,7 +56,6 @@ public constructor (){
 
 
     public getInstance(z: number): ViewPosition{
-var z = z
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;

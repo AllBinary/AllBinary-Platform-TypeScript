@@ -73,8 +73,6 @@ protected constructor (){
 
 
     public init(ROOT: string, SIZE: string[]){
-var ROOT = ROOT
-var SIZE = SIZE
 
         try {
             
@@ -118,8 +116,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
                 //@Throws(Exception.constructor)
             
     append(ROOT: string, sizeString: string){
-var ROOT = ROOT
-var sizeString = sizeString
 
     var DESTROY: string = "_destroy";
 ;

@@ -68,8 +68,6 @@ export class ColorFillPaintableFactory
 
 
     public getInstance(basicColor: BasicColor, forThreedCanvas: boolean): ColorFillBasePaintable{
-    //var basicColor = basicColor
-    //var forThreedCanvas = forThreedCanvas
 
     var operatingSystem: GenericOperatingSystem = OperatingSystemFactory.getInstance()!.getOperatingSystemInstance()!;
 ;

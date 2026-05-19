@@ -80,10 +80,7 @@ export class CompositeRTSFormInput extends RTSFormInput {
     private readonly isPrimaryWaypointCreator: boolean
 public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean, itemIndex: number[]){
             super(groupInterface);
-                        //var groupInterface = groupInterface
-    //var isPrimaryWaypointCreator = isPrimaryWaypointCreator
-    //var itemIndex = itemIndex
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -103,7 +100,6 @@ this.rtsFormInputArray[1]= new UnitRTSFormInput(this.groupInterfaceArray);
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -137,10 +133,6 @@ this.rtsFormInputArray[index]!.setAllBinaryGameLayerManager(allBinaryGameLayerMa
                 //@Throws(Exception.constructor)
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
-    //var associatedRtsLayer = associatedRtsLayer
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var layerManager = layerManager
-var point = point
 
     var scrollSelectionForm: ScrollSelectionForm = rtsPlayerLayerInterface!.getCurrentScrollSelectionForm()!;
 ;
@@ -182,11 +174,6 @@ var point = point
                 //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
-    //var associatedRtsLayer = associatedRtsLayer
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var layerManager = layerManager
-var item = item
-var index = index
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -226,10 +213,6 @@ this.logUtil!.putF(CommonLabels.getInstance()!.INDEX_LABEL +index +" > " +this.i
                 //@Throws(Exception.constructor)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
-    //var associatedRtsLayer = associatedRtsLayer
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var layerManager = layerManager
-var point = point
 
 
 
@@ -242,11 +225,6 @@ var point = point
                 //@Throws(Exception.constructor)
             
     public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
-    //var associatedRtsLayer = associatedRtsLayer
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var layerManager = layerManager
-var item = item
-var index = index
 this.rtsFormInputArray[0]!.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, layerManager, item, index);
     
 }
@@ -273,7 +251,6 @@ this.rtsFormInputArray[0]!.processStickyGameSpecific(associatedRtsLayer, rtsPlay
 
 
     public setStickyItemSelected(stickyItemSelected: boolean){
-var stickyItemSelected = stickyItemSelected
 this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected);
     
 }
@@ -290,7 +267,6 @@ this.rtsFormInputArray[0]!.setStickyItemSelected(stickyItemSelected);
 
 
     public setSelectedStickyItem(selectedStickyItem: ABCustomItem){
-var selectedStickyItem = selectedStickyItem
 this.rtsFormInputArray[0]!.setSelectedStickyItem(selectedStickyItem);
     
 }

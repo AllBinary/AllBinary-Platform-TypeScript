@@ -30,8 +30,6 @@ import { ScrollSelectionForm } from '../../../../../org/allbinary/graphics/form/
       
 import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/gesture/observer/MotionGestureEvent.js';
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
       
 
@@ -59,12 +57,7 @@ export class PopupCommandFormInputProcessor extends CommandFormInputProcessor {
         
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm, popupMenuInputProcessor: PopupMenuInputProcessor){
             super(gameKeyEventList, playerInputId, gameCanvas, form);
-                    var gameKeyEventList = gameKeyEventList
-var playerInputId = playerInputId
-var gameCanvas = gameCanvas
-var form = form
-var popupMenuInputProcessor = popupMenuInputProcessor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,7 +67,6 @@ var popupMenuInputProcessor = popupMenuInputProcessor
                 //@Throws(Exception.constructor)
             
     public processInput(key: number): number{
-var key = key
 
 
 
@@ -87,7 +79,6 @@ var key = key
                 //@Throws(Exception.constructor)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
-var motionGestureEvent = motionGestureEvent
 super.processMotionInput(motionGestureEvent);
     
 }

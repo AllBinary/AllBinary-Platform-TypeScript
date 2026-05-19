@@ -50,7 +50,6 @@ export class TiledLayerFactory
         
 
     public getInstance(raceTrackData: RaceTrackData): TiledLayer{
-var raceTrackData = raceTrackData
 
     var mapArray: number[][] = raceTrackData!.getMapArray()!;
 ;
@@ -65,7 +64,6 @@ var raceTrackData = raceTrackData
 
 
     public getMiniInstance(raceTrackData: RaceTrackData): TiledLayer{
-var raceTrackData = raceTrackData
 
     var mapArray: number[][] = raceTrackData!.getMapArray()!;
 ;

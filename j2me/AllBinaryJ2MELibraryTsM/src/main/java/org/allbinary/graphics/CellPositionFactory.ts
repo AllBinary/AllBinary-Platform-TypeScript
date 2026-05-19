@@ -84,8 +84,6 @@ private constructor (){
 
 
     public init(columns: number, rows: number){
-var columns = columns
-var rows = rows
 this.cellPositionArray= new Array(columns) [rows]
                                                             ;
     
@@ -137,8 +135,6 @@ this.createInstance(column, row);
 
 
     public getInstanceColRow(i_column: number, i_row: number): CellPosition{
-var i_column = i_column
-var i_row = i_row
 
         try {
             
@@ -170,8 +166,6 @@ this.logUtil!.put(new StringMaker().
 
 
     public createInstance(i_column: number, i_row: number): CellPosition{
-var i_column = i_column
-var i_row = i_row
 
     var cellPositionCanBeNull: CellPosition = this.cellPositionArray[i_column]![i_row];
 ;

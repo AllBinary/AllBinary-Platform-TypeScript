@@ -69,9 +69,7 @@ export class SimpleTransform
 public constructor (xsltFilePath: AbPath, dataFilePath: AbPath){
 
             super();
-        var xsltFilePath = xsltFilePath
-var dataFilePath = dataFilePath
-this.xsltFilePath= xsltFilePath;
+        this.xsltFilePath= xsltFilePath;
     
 this.dataFilePath= dataFilePath;
     

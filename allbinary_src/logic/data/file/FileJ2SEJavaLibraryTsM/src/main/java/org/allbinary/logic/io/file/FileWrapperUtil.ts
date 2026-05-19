@@ -54,7 +54,6 @@ export class FileWrapperUtil
         
 
     public static wrapFiles(files: any[]): AbFile[]{
-var files = files
 
         try {
             
@@ -97,7 +96,6 @@ PreLogUtil.putSE("Exception Wrapping Files", "FileWrapperUtil", "wrapFiles", e);
 
 
     public static wrapFile(file: File): AbFile{
-var file = file
 
         try {
             

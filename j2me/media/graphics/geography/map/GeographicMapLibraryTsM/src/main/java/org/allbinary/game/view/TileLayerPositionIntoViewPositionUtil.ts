@@ -57,8 +57,6 @@ export class TileLayerPositionIntoViewPositionUtil
         
 
     public static init(gameCanvasInterface: AllBinaryGameCanvas, viewPosition: TileLayerPositionIntoViewPosition){
-    //var gameCanvasInterface = gameCanvasInterface
-    //var viewPosition = viewPosition
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = gameCanvasInterface!.getLayerManager() as GeographicMapCompositeInterface;
 ;

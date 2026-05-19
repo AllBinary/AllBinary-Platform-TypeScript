@@ -56,7 +56,6 @@ public constructor (){
 
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
 
 
 
@@ -67,7 +66,6 @@ var anyType = anyType
 
 
     public visit(file: AbFile): Boolean{
-var file = file
 
                         if(file.isDirectory())
                         

@@ -48,7 +48,6 @@ export class GameKeyEventUtil
         
 
     public static getKey(anyType: any = {}): number{
-var anyType = anyType
 
     var gameKeyEvent: GameKeyEvent = anyType as GameKeyEvent;
 ;

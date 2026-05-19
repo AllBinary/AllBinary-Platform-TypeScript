@@ -81,12 +81,10 @@ public constructor (){
 
 
     public addListener(renderer: any = {}){
-var renderer = renderer
 }
 
 
     public getIndex(key: any = {}): number{
-    //var key = key
 
     var gdResources: GDResources = GDResources.getInstance()!;
 ;
@@ -137,9 +135,6 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public get(caller: string, width: number, height: number): Image{
-    //var caller = caller
-    //var width = width
-    //var height = height
 
     var foundIndex: number = this.getIndexWH(width, height)!;
 ;
@@ -210,7 +205,6 @@ this.listOfList[foundIndex]!.add(image);
                 //@Throws(Exception.constructor)
             
     public getWithKey(key: any = {}): Image{
-    //var key = key
 
     var image: Image = this.getImage(key)!;
 ;

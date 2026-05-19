@@ -91,12 +91,7 @@ export class StartIntermissionPaintable extends InitUpdatePaintable {
 public constructor (gameCanvas: AllBinaryGameCanvas, stringArray: string[], lineArray: number[], basicColor: BasicColor, font: Font){
 
             super();
-            //var gameCanvas = gameCanvas
-    //var stringArray = stringArray
-    //var lineArray = lineArray
-    //var basicColor = basicColor
-    //var font = font
-this.gameCanvas= gameCanvas;
+        this.gameCanvas= gameCanvas;
     
 this.stringArray= stringArray;
     
@@ -118,7 +113,6 @@ this.font= font;
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var existingFont: Font = graphics.getFont()!;
 ;
@@ -193,7 +187,6 @@ this.stringArray[index]= this.EMPTY_STRING;
 
 
     public setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 }

@@ -48,7 +48,6 @@ export class ScreenRelationalUtil
 
 
     public getScaleImage(image: Image): number{
-    //var image = image
 
 
 
@@ -59,8 +58,6 @@ export class ScreenRelationalUtil
 
 
     public getScaleWH(aWidth: number, aHeight: number): number{
-    //var aWidth = aWidth
-    //var aHeight = aHeight
 
 
 
@@ -71,9 +68,6 @@ export class ScreenRelationalUtil
 
 
     public getScaleWHA(aWidth: number, aHeight: number, add: number): number{
-    //var aWidth = aWidth
-    //var aHeight = aHeight
-    //var add = add
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
@@ -117,8 +111,6 @@ export class ScreenRelationalUtil
 
 
     public getScaledHeight(aWidth: number, aHeight: number): number{
-    //var aWidth = aWidth
-    //var aHeight = aHeight
 
 
 
@@ -129,9 +121,6 @@ export class ScreenRelationalUtil
 
 
     public getScaledHeightAdd(aWidth: number, aHeight: number, add: number): number{
-    //var aWidth = aWidth
-    //var aHeight = aHeight
-    //var add = add
 
 
 

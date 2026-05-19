@@ -82,7 +82,6 @@ public constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
-    //var abeClientInformation = abeClientInformation
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.GET);

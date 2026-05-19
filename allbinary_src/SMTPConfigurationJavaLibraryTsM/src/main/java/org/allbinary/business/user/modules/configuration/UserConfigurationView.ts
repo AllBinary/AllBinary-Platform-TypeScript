@@ -77,8 +77,7 @@ export class UserConfigurationView
 public constructor (node: Node){
 
             super();
-        var node = node
-this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
+        this.userConfigurationInterface= new UserConfiguration() as UserConfigurationInterface;
     
 
     var childNodeList: NodeList = node.getChildNodes()!;
@@ -123,8 +122,7 @@ this.userConfigurationInterface!.setTimeLastModified(timeLastModifiedView!.getTi
 public constructor (userConfigurationInterface: UserConfigurationInterface){
 
             super();
-        var userConfigurationInterface = userConfigurationInterface
-this.userConfigurationInterface= userConfigurationInterface;
+        this.userConfigurationInterface= userConfigurationInterface;
     
 }
 
@@ -142,7 +140,6 @@ this.userConfigurationInterface= userConfigurationInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(UserConfigurationData.NAME)!;
 ;

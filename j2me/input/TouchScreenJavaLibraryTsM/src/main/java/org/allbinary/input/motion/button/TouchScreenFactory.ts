@@ -104,7 +104,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, TouchScreenFactory.SINGLETON, common
 
 
     public setMultiTouch(multiTouch: boolean){
-var multiTouch = multiTouch
 this.multiTouch= multiTouch;
     
 }
@@ -121,7 +120,6 @@ this.multiTouch= multiTouch;
 
 
     public setTouch(touch: boolean){
-var touch = touch
 this.touch= touch;
     
 }
@@ -138,7 +136,6 @@ this.touch= touch;
 
 
     public setMultiTouchDistinct(multiTouchDistinct: boolean){
-var multiTouchDistinct = multiTouchDistinct
 this.multiTouchDistinct= multiTouchDistinct;
     
 }
@@ -155,7 +152,6 @@ this.multiTouchDistinct= multiTouchDistinct;
 
 
     public setTouchScreenType(touchScreenType: TouchScreenType){
-var touchScreenType = touchScreenType
 this.touchScreenType= touchScreenType;
     
 }

@@ -89,24 +89,21 @@ export class CategoryProperties
 public constructor (name: string){
 
             super();
-        var name = name
-this.category= name;
+        this.category= name;
     
 }
 
 public constructor (node: Node){
 
             super();
-        var node = node
-this.category= CategoryUtil.getNameFromNode(node);
+        this.category= CategoryUtil.getNameFromNode(node);
     
 }
 
 public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-        var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.category= .toCharArray();
+        this.category= .toCharArray();
     
 }
 
@@ -154,7 +151,6 @@ this.category= .toCharArray();
                 //@Throws(Exception.constructor)
             
     public getPath(categoryHierarchyInterface: CategoryHierarchyInterface): AbPath{
-var categoryHierarchyInterface = categoryHierarchyInterface
 
     var abPathData: AbPathData = AbPathData.getInstance()!;
 ;
@@ -304,7 +300,6 @@ pathStringBuffer!.append(abPathData!.SEPARATOR);
 
 
     public setValue(value: string){
-var value = value
 this.category= value;
     
 }
@@ -380,7 +375,6 @@ categoryVector!.add(this.category);
                 //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

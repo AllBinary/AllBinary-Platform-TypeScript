@@ -84,7 +84,6 @@ this.setTableName(this.tableName);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -119,8 +118,6 @@ var values = values
                 //@Throws(Exception.constructor)
             
     public get(userName: string, id: number): QuoteRequest{
-var userName = userName
-var id = id
 
     var row: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -162,7 +159,6 @@ row.put(QuoteRequestData.getInstance()!.ID, id.toString());
 
 
     public getIds(userName: string): Vector{
-var userName = userName
 
 
 
@@ -173,8 +169,6 @@ var userName = userName
 
 
     public deleteWhere(key: string, value: string){
-var key = key
-var value = value
 
         try {
             super.deleteWhere(key, value);
@@ -291,8 +285,6 @@ stringBuffer!.append(this.sqlStrings!.END);
 
 
     public update(userName: string, updatedValues: HashMap<any, any>){
-var userName = userName
-var updatedValues = updatedValues
 super.updateWhere(UserData.USERNAME, userName, updatedValues);
     
 }

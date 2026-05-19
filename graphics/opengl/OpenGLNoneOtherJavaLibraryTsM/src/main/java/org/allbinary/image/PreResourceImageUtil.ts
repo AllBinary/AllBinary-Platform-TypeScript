@@ -65,7 +65,6 @@ export class PreResourceImageUtil
 
 
     public encapsulate(image: Image): Image{
-var image = image
 
 
 
@@ -76,14 +75,10 @@ var image = image
 
 
     public updateGL(gl: GL, image: Image){
-var gl = gl
-var image = image
 }
 
 
     public update(graphics: Graphics, image: Image){
-var graphics = graphics
-var image = image
 }
 
 

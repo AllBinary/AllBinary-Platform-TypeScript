@@ -68,14 +68,12 @@ export class StatusFactory
     private readonly STATUS_LABEL: string = "Status: ";
 
     public setStatusNoLog(status: string){
-var status = status
 MyFrame.statusJLabel!.setText(status);
     
 }
 
 
     public setStatus(status: string){
-var status = status
 this.setStatusNoLog(status);
     
 this.logUtil!.putF(this.STATUS_LABEL +status, this, this.SETSTATUS);

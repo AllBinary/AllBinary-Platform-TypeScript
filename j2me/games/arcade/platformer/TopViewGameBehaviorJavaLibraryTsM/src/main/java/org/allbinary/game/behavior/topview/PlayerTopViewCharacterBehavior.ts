@@ -72,22 +72,12 @@ export class PlayerTopViewCharacterBehavior extends TopViewCharacterBehavior {
                 //@Throws(Exception.constructor)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellPosition: GeographicMapCellPosition){
-    //var layer = layer
-    //var direction = direction
-    //var x = x
-    //var y = y
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellPosition = geographicMapCellPosition
 TrackingEventHandler.getInstance()!.fireEvent(TrackingEventCircularStaticPool.getInstance()!.getNextInstance(layer));
     
 }
 
 
     public terrainMove(layer: AllBinaryLayer, geographicMapInterfaceArray: BasicGeographicMap[], x: number, y: number){
-    //var layer = layer
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var x = x
-    //var y = y
 
     var basicGeographicMapUtil: BasicGeographicMapUtil = BasicGeographicMapUtil.getInstance()!;
 ;
@@ -98,16 +88,10 @@ basicGeographicMapUtil!.setPosition(geographicMapInterfaceArray, x, y);
 
 
     moveIfOnScreen(layer: AllBinaryLayer, ax: number, ay: number){
-    //var layer = layer
-    //var ax = ax
-    //var ay = ay
 }
 
 
     isTiledLayerMoveable(terrainTiledLayer: AllBinaryTiledLayer, x: number, y: number): boolean{
-    //var terrainTiledLayer = terrainTiledLayer
-    //var x = x
-    //var y = y
 
 
 

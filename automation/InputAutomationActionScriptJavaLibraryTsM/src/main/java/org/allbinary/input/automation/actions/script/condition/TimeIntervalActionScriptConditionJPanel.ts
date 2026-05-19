@@ -69,8 +69,7 @@ export class TimeIntervalActionScriptConditionJPanel extends javax.swing.JPanel 
 public constructor (timeIntervalActionScriptConditionInterface: TimeIntervalActionScriptConditionInterface){
 
             super();
-        var timeIntervalActionScriptConditionInterface = timeIntervalActionScriptConditionInterface
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.initComponents();
     
@@ -108,7 +107,6 @@ this.timeIntervalActionScriptConditionInterface!.log();
 
 
     public setTimeIntervalJTextField(timeIntervalJTextField: javax.swing.JTextField){
-var timeIntervalJTextField = timeIntervalJTextField
 this.timeIntervalJTextField= timeIntervalJTextField;
     
 }
@@ -125,7 +123,6 @@ this.timeIntervalJTextField= timeIntervalJTextField;
 
 
     public setTimeIntervalActionJDialog(timeIntervalActionJDialog: javax.swing.JDialog){
-var timeIntervalActionJDialog = timeIntervalActionJDialog
 this.timeIntervalActionJDialog= timeIntervalActionJDialog;
     
 }
@@ -156,7 +153,6 @@ this.okJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okJButtonActionPerformed(evt);
     
 }
@@ -184,7 +180,6 @@ this.timeIntervalActionJButton!.addActionListener(new class extends java.awt.eve
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 timeIntervalActionJButtonActionPerformed(evt);
     
 }
@@ -208,7 +203,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.update();
     
 this.getTimeIntervalActionJDialog()!.setVisible(false);
@@ -217,7 +211,6 @@ this.getTimeIntervalActionJDialog()!.setVisible(false);
 
 
     timeIntervalActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.getTimeIntervalActionJDialog()!.setVisible(true);
     
 }

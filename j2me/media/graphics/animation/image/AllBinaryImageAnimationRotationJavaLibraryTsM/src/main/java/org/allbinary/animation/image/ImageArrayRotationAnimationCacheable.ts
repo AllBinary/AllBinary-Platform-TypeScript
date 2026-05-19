@@ -67,9 +67,7 @@ public constructor (anyType: any = {}, animationBehavior: AnimationBehavior){
                                     (anyType as ImageArrayRotationAnimationInfo).getDx(), 
 
                                     (anyType as ImageArrayRotationAnimationInfo).getDy(), animationBehavior);
-                        //var anyType = anyType
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -64,8 +64,7 @@ export class Sound
 protected constructor (resource: string){
 
             super();
-        var resource = resource
-this.resource= resource;
+        this.resource= resource;
     
 }
 
@@ -91,7 +90,6 @@ this.resource= resource;
 
 
     public setPlayerP(player: Player){
-    //var player = player
 this.player= player;
     
 }

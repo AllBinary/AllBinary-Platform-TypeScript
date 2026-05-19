@@ -91,8 +91,7 @@ this.contextConfigurationInterface= ContextConfigurationInterfaceFactory.getInst
 public constructor (request: HttpServletRequest){
 
             super();
-        var request = request
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.getFormData(new RequestParams(request).
                             toHashMap());
@@ -102,8 +101,7 @@ this.getFormData(new RequestParams(request).
 public constructor (storeHashMap: HashMap<any, any>){
 
             super();
-        var storeHashMap = storeHashMap
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.getFormData(storeHashMap);
     
@@ -113,7 +111,6 @@ this.getFormData(storeHashMap);
                 //@Throws(Exception.constructor)
             
     getFormData(storeHashMap: HashMap<any, any>){
-var storeHashMap = storeHashMap
 this.logUtil!.putF(this.commonStrings!.START, this, "getFormData");
     
 this.setContextConfigurationInterface(new ContextConfiguration(storeHashMap) as ContextConfigurationInterface);
@@ -149,7 +146,6 @@ cryptFileWriter!.write(ContextConfigurationPathUtil.getAbPath(AdminConfiguration
 
 
     public setContextConfigurationInterface(contextConfigurationInterface: ContextConfigurationInterface){
-var contextConfigurationInterface = contextConfigurationInterface
 this.contextConfigurationInterface= contextConfigurationInterface;
     
 }

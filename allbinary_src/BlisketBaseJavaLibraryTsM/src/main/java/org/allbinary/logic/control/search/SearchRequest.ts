@@ -73,13 +73,7 @@ export class SearchRequest extends AbContext {
     private storeFront: StoreFrontInterface
 public constructor (storeFront: StoreFrontInterface, searchParams: SearchParams, xslFile: string, contentType: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
-                    var storeFront = storeFront
-var searchParams = searchParams
-var xslFile = xslFile
-var contentType = contentType
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -97,35 +91,30 @@ this.contentType= contentType;
 
 
     public setStoreFront(storeFront: StoreFrontInterface){
-var storeFront = storeFront
 this.storeFront= storeFront;
     
 }
 
 
     public setParams(searchParams: SearchParams){
-var searchParams = searchParams
 this.searchParams= searchParams;
     
 }
 
 
     public setXslFile(value: string){
-var value = value
 this.xslFile= value;
     
 }
 
 
     public setFileBaseName(value: string){
-var value = value
 this.pageName= value;
     
 }
 
 
     public setContentType(value: string){
-var value = value
 this.contentType= value;
     
 }
@@ -184,7 +173,6 @@ this.contentType= value;
                 //@Throws(Exception.constructor)
             
     public getFileBaseNameNode(document: Document): Node{
-var document = document
 
 
 

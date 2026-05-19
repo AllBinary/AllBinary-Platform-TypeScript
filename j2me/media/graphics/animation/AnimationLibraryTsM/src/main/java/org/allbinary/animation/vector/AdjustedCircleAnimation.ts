@@ -52,11 +52,6 @@ export class AdjustedCircleAnimation extends CircleAnimation {
         
 
     public static createAnimation(width: number, height: number, xAdjustment: number, yAdjustment: number, basicColor: BasicColor): AdjustedCircleAnimation{
-    //var width = width
-    //var height = height
-    //var xAdjustment = xAdjustment
-    //var yAdjustment = yAdjustment
-    //var basicColor = basicColor
 
     var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
 ;
@@ -73,10 +68,6 @@ adjustedCircleAnimation!.initXY(xAdjustment, yAdjustment);
 
 
     public static createW(width: number, height: number, innerWidth: number, basicColor: BasicColor): AdjustedCircleAnimation{
-    //var width = width
-    //var height = height
-    //var innerWidth = innerWidth
-    //var basicColor = basicColor
 
     var adjustedCircleAnimation: AdjustedCircleAnimation = new AdjustedCircleAnimation(width, height, basicColor);
 ;
@@ -97,10 +88,7 @@ adjustedCircleAnimation!.init(innerWidth);
     private yAdjustment: number= 0
 public constructor (width: number, height: number, basicColor: BasicColor){
             super(width, height, basicColor);
-                        //var width = width
-    //var height = height
-    //var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -108,8 +96,6 @@ public constructor (width: number, height: number, basicColor: BasicColor){
 
 
     initXY(xAdjustment: number, yAdjustment: number){
-    //var xAdjustment = xAdjustment
-    //var yAdjustment = yAdjustment
 this.xAdjustment= xAdjustment;
     
 this.yAdjustment= yAdjustment;
@@ -118,7 +104,6 @@ this.yAdjustment= yAdjustment;
 
 
     init(innerWidth: number){
-    //var innerWidth = innerWidth
 
                         if(AndroidUtil.isAndroid())
                         
@@ -146,9 +131,6 @@ this.yAdjustment= this.xAdjustment;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 graphics.drawArc(x +this.xAdjustment, y +this.yAdjustment, this.width, this.height, 0, this.TOTAL_ANGLE);

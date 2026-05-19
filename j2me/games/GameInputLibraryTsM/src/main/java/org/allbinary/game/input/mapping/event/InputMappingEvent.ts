@@ -51,8 +51,7 @@ export class InputMappingEvent extends AllBinaryEventObject {
     private inputToGameKeyMapping: InputToGameKeyMapping = InputToGameKeyMapping.NULL_INPUT_TO_GAME_KEY_MAPPING;
 public constructor (anyType: any = {}){
             super(anyType);
-                    var anyType = anyType
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -60,7 +59,6 @@ public constructor (anyType: any = {}){
 
 
     public setInputToGameKeyMapping(inputToGameKeyMapping: InputToGameKeyMapping){
-var inputToGameKeyMapping = inputToGameKeyMapping
 this.inputToGameKeyMapping= inputToGameKeyMapping;
     
 }

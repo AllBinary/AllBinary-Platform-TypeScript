@@ -59,9 +59,6 @@ export class PointsUtil
 
 
     public adjustXY(points: number[][][], x: number, y: number): number[][][]{
-    //var points = points
-    //var x = x
-    //var y = y
 
     var size: number = points.length
                 ;
@@ -127,8 +124,6 @@ newPoints[index]![index2]![1]= 1000;
 
 
     public adjust(points: number[][], both: number): number[][]{
-var points = points
-var both = both
 
 
 
@@ -139,9 +134,6 @@ var both = both
 
 
     public adjust(points: number[][], x: number, y: number): number[][]{
-var points = points
-var x = x
-var y = y
 
     var newPoints: number[][] = new Array(points.length) [2];
 ;

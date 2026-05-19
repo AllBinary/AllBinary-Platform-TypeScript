@@ -51,7 +51,6 @@ export class J2MEGameKey extends Input {
         
 
     public static getString(keyCode: number): string{
-var keyCode = keyCode
 
     var input: Input = InputFactory.getInstance()!.getInstanceById(keyCode)!;
 ;
@@ -85,9 +84,7 @@ var keyCode = keyCode
 
 protected constructor (key: number, keyName: string){
             super(key, keyName);
-                    var key = key
-var keyName = keyName
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

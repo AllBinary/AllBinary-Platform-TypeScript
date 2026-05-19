@@ -62,11 +62,7 @@ export class AllBinaryJ2METiledLayer extends AllBinaryTiledLayer {
     readonly debugColor: number
 public constructor (dataId: Integer, tiledLayer: TiledLayer, mapTwoDArray: number[][], debugColor: number){
             super(dataId, tiledLayer!.getWidth(), tiledLayer!.getHeight(), tiledLayer!.getCellWidth(), tiledLayer!.getCellHeight());
-                        //var dataId = dataId
-    //var tiledLayer = tiledLayer
-    //var mapTwoDArray = mapTwoDArray
-    //var debugColor = debugColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,7 +76,6 @@ this.setCells(mapTwoDArray);
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 this.tiledLayerP!.paint(graphics);
     
 }
@@ -89,7 +84,6 @@ this.tiledLayerP!.paint(graphics);
     readonly font2: Font = Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, 4)!;
 
     public paintDebug(graphics: Graphics){
-    //var graphics = graphics
 
     var font: Font = graphics.getFont()!;
 ;
@@ -202,8 +196,6 @@ graphics.setFont(font);
 
 
     public moveDXY(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.tiledLayerP!.move(dx, dy);
     
 super.moveDXY( -dx,  -dy);
@@ -212,9 +204,6 @@ super.moveDXY( -dx,  -dy);
 
 
     public setPosition(x: number, y: number, z: number){
-    //var x = x
-    //var y = y
-    //var z = z
 this.tiledLayerP!.setPosition(x, y);
     
 super.setPosition( -x,  -y, z);
@@ -253,8 +242,6 @@ super.setPosition( -x,  -y, z);
 
 
     public getCell(col: number, row: number): number{
-    //var col = col
-    //var row = row
 
 
 
@@ -285,16 +272,12 @@ super.setPosition( -x,  -y, z);
 
 
     public setCell(col: number, row: number, index: number){
-    //var col = col
-    //var row = row
-    //var index = index
 this.tiledLayerP!.setCell(col, row, index);
     
 }
 
 
     public getAnimatedTile(animationTileIndex: number): number{
-    //var animationTileIndex = animationTileIndex
 
 
 

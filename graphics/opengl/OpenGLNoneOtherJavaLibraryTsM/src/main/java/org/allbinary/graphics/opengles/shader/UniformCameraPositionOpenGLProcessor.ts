@@ -50,14 +50,10 @@ export class UniformCameraPositionOpenGLProcessor extends OpenGLObject3dProcesso
 public constructor (shaderComposite: ShaderComposite, handleIndex: number){
 
             super();
-            //var shaderComposite = shaderComposite
-    //var handleIndex = handleIndex
-}
+        }
 
 
     public process(gl: GL10, anyType: any = {}){
-    //var gl = gl
-    //var anyType = anyType
 }
 
 

@@ -74,8 +74,7 @@ export class StoreFrontUsersStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-        var storeFrontInterface = storeFrontInterface
-this.totalUsersByRoleHashMap= new HashMap<any, any>();
+        this.totalUsersByRoleHashMap= new HashMap<any, any>();
     
 
     var userEntityInterface: UserEntityInterface = UserEntityFactory.getInstance()!;
@@ -119,7 +118,6 @@ this.totalUsersByRoleHashMap!.put(nextUserRole, currentNumberOfUsersForRole);
 
 
     getNewTotal(userRole: UserRole): Long{
-var userRole = userRole
 
     var numberOfUsersForRoleLong: Long = this.totalUsersByRoleHashMap!.get(userRole) as Long;
 ;
@@ -155,7 +153,6 @@ var userRole = userRole
 
 
     public getNumberOfUsersByRole(role: string): Long{
-var role = role
 
     var totalForRole: Long = this.totalUsersByRoleHashMap!.get(role) as Long;
 ;

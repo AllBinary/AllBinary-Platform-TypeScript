@@ -100,8 +100,7 @@ public constructor (){
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var nameNode: Node = DomSearchHelper.getNode(StreetAddressData.NAME, node.getChildNodes())!;
 ;
     
@@ -144,8 +143,7 @@ this.log();
 public constructor (streetAddress: StreetAddress){
 
             super();
-            //var streetAddress = streetAddress
-this.id= streetAddress!.getId();
+        this.id= streetAddress!.getId();
     
 this.name= streetAddress!.getName();
     
@@ -168,8 +166,7 @@ this.log();
 public constructor (request: HttpServletRequest){
 
             super();
-            //var request = request
-this.setId(request.getParameter(StreetAddressData.ID));
+        this.setId(request.getParameter(StreetAddressData.ID));
     
 this.setName(request.getParameter(StreetAddressData.NAME));
     
@@ -190,13 +187,7 @@ this.log();
 public constructor (name: string, street: string, city: string, state: string, code: string, country: string){
 
             super();
-            //var name = name
-    //var street = street
-    //var city = city
-    //var state = state
-    //var code = code
-    //var country = country
-this.name= name;
+        this.name= name;
     
 this.street= street;
     
@@ -215,8 +206,7 @@ this.log();
 public constructor (address: HashMap<any, any>){
 
             super();
-            //var address = address
-this.id= address.get(StreetAddressData.ID) as string;
+        this.id= address.get(StreetAddressData.ID) as string;
     
 this.name= address.get(StreetAddressData.NAME) as string;
     
@@ -237,7 +227,7 @@ this.country= address.get(StreetAddressData.COUNTRY) as string;
 
                         if(def != 
                                     null
-                                 && def.localeCompare(StreetAddressData.DEFAULT) == 0)
+                                 && def.compareTo(StreetAddressData.DEFAULT) == 0)
                         
                                     {
                                     this.isDefault= true;
@@ -270,49 +260,42 @@ this.log();
 
 
     public setId(id: string){
-    //var id = id
 this.id= id;
     
 }
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
 
 
     public setStreet(value: string){
-var value = value
 this.street= value;
     
 }
 
 
     public setCity(value: string){
-var value = value
 this.city= value;
     
 }
 
 
     public setState(value: string){
-var value = value
 this.state= value;
     
 }
 
 
     public setCode(value: string){
-var value = value
 this.code= value;
     
 }
 
 
     public setCountry(value: string){
-var value = value
 this.country= value;
     
 }
@@ -406,17 +389,17 @@ this.country= value;
 
                         if(this.getName() == 
                                     null
-                                 && this.getName()!.localeCompare(EMPTY_STRING) == 0 && this.getStreet() == 
+                                 && this.getName()!.compareTo(EMPTY_STRING) == 0 && this.getStreet() == 
                                     null
-                                 && this.getStreet()!.localeCompare(EMPTY_STRING) == 0 && this.getCity() == 
+                                 && this.getStreet()!.compareTo(EMPTY_STRING) == 0 && this.getCity() == 
                                     null
-                                 && this.getCity()!.localeCompare(EMPTY_STRING) == 0 && this.getState() == 
+                                 && this.getCity()!.compareTo(EMPTY_STRING) == 0 && this.getState() == 
                                     null
-                                 && this.getState()!.localeCompare(EMPTY_STRING) == 0 && this.getCode() == 
+                                 && this.getState()!.compareTo(EMPTY_STRING) == 0 && this.getCode() == 
                                     null
-                                 && this.getCode()!.localeCompare(EMPTY_STRING) == 0 && this.getCountry() == 
+                                 && this.getCode()!.compareTo(EMPTY_STRING) == 0 && this.getCountry() == 
                                     null
-                                 && this.getCountry()!.localeCompare(EMPTY_STRING) == 0)
+                                 && this.getCountry()!.compareTo(EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -445,17 +428,17 @@ this.country= value;
 
                         if(this.getName() == 
                                     null
-                                 || this.getName()!.localeCompare(EMPTY_STRING) == 0 || this.getStreet() == 
+                                 || this.getName()!.compareTo(EMPTY_STRING) == 0 || this.getStreet() == 
                                     null
-                                 || this.getStreet()!.localeCompare(EMPTY_STRING) == 0 || this.getCity() == 
+                                 || this.getStreet()!.compareTo(EMPTY_STRING) == 0 || this.getCity() == 
                                     null
-                                 || this.getCity()!.localeCompare(EMPTY_STRING) == 0 || this.getState() == 
+                                 || this.getCity()!.compareTo(EMPTY_STRING) == 0 || this.getState() == 
                                     null
-                                 || this.getState()!.localeCompare(EMPTY_STRING) == 0 || this.getCode() == 
+                                 || this.getState()!.compareTo(EMPTY_STRING) == 0 || this.getCode() == 
                                     null
-                                 || this.getCode()!.localeCompare(EMPTY_STRING) == 0 || this.getCountry() == 
+                                 || this.getCode()!.compareTo(EMPTY_STRING) == 0 || this.getCountry() == 
                                     null
-                                 || this.getCountry()!.localeCompare(EMPTY_STRING) == 0)
+                                 || this.getCountry()!.compareTo(EMPTY_STRING) == 0)
                         
                                     {
                                     
@@ -573,7 +556,6 @@ stringBuffer!.append("<br></br>");
 
 
     toValidationInfoNode(document: Document): Node{
-var document = document
 
         try {
             
@@ -647,7 +629,6 @@ hashMap!.put(StreetAddressData.COUNTRY, this.country);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;

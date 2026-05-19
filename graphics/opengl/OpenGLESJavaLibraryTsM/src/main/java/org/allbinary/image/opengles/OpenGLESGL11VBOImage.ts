@@ -72,10 +72,7 @@ export class OpenGLESGL11VBOImage extends OpenGLESImage {
     private textureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image, bitmapFactory, textureFactory);
-                        //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -111,7 +108,6 @@ this.textureVertexFloatBuffer!.rewind();
 
 
     public set(gl: GL){
-    //var gl = gl
 
     var gl10: GL10 = gl as GL10;
 ;
@@ -141,15 +137,6 @@ OpenGLLogUtil.getInstance()!.logError(gl10, this);
     private regionTextureVertexFloatBuffer: FloatBuffer = ByteBuffer.allocateDirect(4 *4 *2)!.order(ByteOrder.nativeOrder())!.asFloatBuffer()!;
 
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
-    //var gl = gl
-    //var viewHeight = viewHeight
-    //var x_src = x_src
-    //var y_src = y_src
-    //var width = width
-    //var height = height
-    //var x = x
-    //var y = y
-    //var z = z
 this.regionRectangleFloatArray[0]= x;
     
 this.regionRectangleFloatArray[7]= viewHeight -y;
@@ -210,10 +197,6 @@ gl.glDisable(GL10.GL_TEXTURE_2D);
 
 
     public draw(gl: GL10, x: number, y: number, z: number){
-    //var gl = gl
-    //var x = x
-    //var y = y
-    //var z = z
 this.regionRectangleFloatArray[0]= x;
     
 this.regionRectangleFloatArray[7]= DisplayInfoSingleton.getInstance()!.getLastHeight() -y;

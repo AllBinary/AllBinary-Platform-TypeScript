@@ -134,7 +134,6 @@ export class MyFrame extends javax.swing.JFrame implements FileJDialogListenerIn
     private static readonly TEMPLATE_EXPORT_PATH: string = MyFrame.PATH +"/templates/export";
 
     public static main(args: string[]){
-var args = args
 
         try {
             AngleFactory.getInstance();
@@ -298,7 +297,6 @@ addWindowListener(new class extends java.awt.event.WindowAdapter
                                 {
                                 
     public windowClosing(evt: java.awt.event.WindowEvent){
-var evt = evt
 exitForm(evt);
     
 }
@@ -312,7 +310,6 @@ this.jButton2!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jButton2ActionPerformed(evt);
     
 }
@@ -328,7 +325,6 @@ this.saveJButton!.addActionListener(new class extends java.awt.event.ActionListe
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 saveJButtonActionPerformed(evt);
     
 }
@@ -344,7 +340,6 @@ this.jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jButton1ActionPerformed(evt);
     
 }
@@ -360,7 +355,6 @@ this.openJButton!.addActionListener(new class extends java.awt.event.ActionListe
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 openJButtonActionPerformed(evt);
     
 }
@@ -396,7 +390,6 @@ this.playJButton!.addMouseListener(new class extends java.awt.event.MouseAdapter
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 playJButtonMousePressed(evt);
     
 }
@@ -412,7 +405,6 @@ this.stopJjButton!.addMouseListener(new class extends java.awt.event.MouseAdapte
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 stopJjButtonMousePressed(evt);
     
 }
@@ -434,7 +426,6 @@ this.jTabbedPane!.addChangeListener(new class extends javax.swing.event.ChangeLi
                                 {
                                 
     public stateChanged(evt: javax.swing.event.ChangeEvent){
-var evt = evt
 jTabbedPaneStateChanged(evt);
     
 }
@@ -462,7 +453,6 @@ this.fileJMenu!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 fileJMenuActionPerformed(evt);
     
 }
@@ -476,7 +466,6 @@ this.newJMenuItem!.addActionListener(new class extends java.awt.event.ActionList
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 newJMenuItemActionPerformed(evt);
     
 }
@@ -492,7 +481,6 @@ this.openJMenuItem!.addActionListener(new class extends java.awt.event.ActionLis
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 openJMenuItemActionPerformed(evt);
     
 }
@@ -508,7 +496,6 @@ this.saveJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAdapt
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 saveJMenuItemMousePressed(evt);
     
 }
@@ -528,7 +515,6 @@ this.exportJMenuItem1!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 exportJMenuItem1ActionPerformed(evt);
     
 }
@@ -544,7 +530,6 @@ this.exitJMenuItem!.addActionListener(new class extends java.awt.event.ActionLis
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 exitJMenuItemActionPerformed(evt);
     
 }
@@ -564,7 +549,6 @@ this.zoomInJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAda
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 zoomInJMenuItemMousePressed(evt);
     
 }
@@ -580,7 +564,6 @@ this.zoomOutJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAd
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 zoomOutJMenuItemMousePressed(evt);
     
 }
@@ -600,7 +583,6 @@ this.explodeAllJMenuItem!.addMouseListener(new class extends java.awt.event.Mous
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 explodeAllJMenuItemMousePressed(evt);
     
 }
@@ -618,7 +600,6 @@ this.frameJMenu!.addActionListener(new class extends java.awt.event.ActionListen
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 frameJMenuActionPerformed(evt);
     
 }
@@ -660,7 +641,6 @@ this.centerJMenuItem!.addActionListener(new class extends java.awt.event.ActionL
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 centerJMenuItemActionPerformed(evt);
     
 }
@@ -680,7 +660,6 @@ this.autoExplodeJMenuItem!.addMouseListener(new class extends java.awt.event.Mou
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 autoExplodeJMenuItemMousePressed(evt);
     
 }
@@ -700,7 +679,6 @@ this.jMenuItem1!.addActionListener(new class extends java.awt.event.ActionListen
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jMenuItem1ActionPerformed(evt);
     
 }
@@ -716,7 +694,6 @@ this.autoRotateGenerationJMenuItem!.addMouseListener(new class extends java.awt.
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 autoRotateGenerationJMenuItemMousePressed(evt);
     
 }
@@ -748,7 +725,6 @@ pack();
 
 
     explodeAllJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 
         try {
             MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.EXPLODE, 
@@ -766,7 +742,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "explodeAllJMenuItemMouse
 
 
     autoExplodeJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 
         try {
             MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.AUTOEXPLODE, 
@@ -784,115 +759,98 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "autoExplodeJMenuItemMous
 
 
     stopJjButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 this.getSelectedWorkArea()!.stop();
     
 }
 
 
     playJButtonMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 this.getSelectedWorkArea()!.play();
     
 }
 
 
     autoRotateGenerationJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 this.rotateJDialog!.setVisible(true);
     
 }
 
 
     zoomOutJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 this.getSelectedWorkArea()!.changeZoom( -1);
     
 }
 
 
     zoomInJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 this.getSelectedWorkArea()!.changeZoom(1);
     
 }
 
 
     openJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.openGraphics();
     
 }
 
 
     exportJMenuItem1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.export();
     
 }
 
 
     saveJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 this.save();
     
 }
 
 
     jTabbedPaneStateChanged(evt: javax.swing.event.ChangeEvent){
-var evt = evt
 this.updateSelectedWorkArea();
     
 }
 
 
     frameJMenuActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     exitJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 System.exit(0);
     
 }
 
 
     newJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.newGraphics();
     
 }
 
 
     fileJMenuActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     exitForm(evt: java.awt.event.WindowEvent){
-var evt = evt
 System.exit(0);
     
 }
 
 
     openJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.openGraphics();
     
 }
 
 
     jButton2ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.newGraphics();
     
 }
 
 
     centerJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.CENTER, 
@@ -910,21 +868,18 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "centerJMenuItemActionPer
 
 
     saveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.save();
     
 }
 
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.export();
     
 }
 
 
     jMenuItem1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.getSelectedWorkArea()!.autoMirror();
@@ -941,7 +896,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "centerJMenuItemActionPer
 
 
     public onFiles(files: File[]){
-var files = files
 
         try {
             this.logUtil!.putF("Reading: " +files, this, "onFiles");
@@ -1106,7 +1060,6 @@ DomHelper.getInstance()!.save(new File(this.SAVE_PATH +"/" +workAreaJPanel!.getN
                 //@Throws(Exception.constructor)
             
     public onHashMap(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
     var angleIncrementInteger: Integer = hashMap!.get(Integer.valueOf(0)) as Integer;
 ;
@@ -1172,7 +1125,6 @@ workAreaJPanel!.deselect();
                 //@Throws(Exception.constructor)
             
     public add(newCanvasInterface: WorkAreaJPanelInterface){
-var newCanvasInterface = newCanvasInterface
 
         try {
             this.numberOfWorkAreas++;
@@ -1220,19 +1172,16 @@ this.updateSelectedWorkArea();
 
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 this.getSelectedWorkArea()!.keyPressed(keyEvent);
     
 }
 
 
     public keyReleased(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 
     public keyTyped(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 

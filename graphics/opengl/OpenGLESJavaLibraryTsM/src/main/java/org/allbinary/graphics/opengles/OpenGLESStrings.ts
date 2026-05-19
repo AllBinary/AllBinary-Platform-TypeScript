@@ -57,7 +57,6 @@ export class OpenGLESStrings
                 //@Throws(Exception.constructor)
             
     public set(gl: GL10){
-    //var gl = gl
 
 
 
@@ -67,9 +66,6 @@ export class OpenGLESStrings
 
 
     public initFont(gl: GL10, width: number, height: number){
-    //var gl = gl
-    //var width = width
-    //var height = height
 
 
 
@@ -81,9 +77,6 @@ export class OpenGLESStrings
                 //@Throws(Exception.constructor)
             
     public update(gl: GL10, width: number, height: number){
-    //var gl = gl
-    //var width = width
-    //var height = height
 
 
 
@@ -93,12 +86,6 @@ export class OpenGLESStrings
 
 
     public drawChar(gl: GL10, graphics: Graphics, character: string, x: number, y: number, anchor: number){
-    //var gl = gl
-    //var graphics = graphics
-    //var character = character
-    //var x = x
-    //var y = y
-    //var anchor = anchor
 
 
 
@@ -108,14 +95,6 @@ export class OpenGLESStrings
 
 
     public drawChars(gl: GL10, graphics: Graphics, data: string[], offset: number, length: number, x: number, y: number, anchor: number){
-    //var gl = gl
-    //var graphics = graphics
-    //var data = data
-    //var offset = offset
-    //var length = length
-    //var x = x
-    //var y = y
-    //var anchor = anchor
 
 
 
@@ -125,12 +104,6 @@ export class OpenGLESStrings
 
 
     public drawString(gl: GL10, graphics: Graphics, string: string, x: number, y: number, anchor: number){
-    //var gl = gl
-    //var graphics = graphics
-    //var string = string
-    //var x = x
-    //var y = y
-    //var anchor = anchor
 
 
 
@@ -140,14 +113,6 @@ export class OpenGLESStrings
 
 
     public drawSubstring(gl: GL10, graphics: Graphics, string: string, offset: number, len: number, x: number, y: number, anchor: number){
-    //var gl = gl
-    //var graphics = graphics
-    //var string = string
-    //var offset = offset
-    //var len = len
-    //var x = x
-    //var y = y
-    //var anchor = anchor
 
 
 

@@ -77,11 +77,7 @@ export class GameConfiguration
 public constructor (name: string, defaultValue: Integer, minValue: Integer, maxValue: Integer){
 
             super();
-            //var name = name
-    //var defaultValue = defaultValue
-    //var minValue = minValue
-    //var maxValue = maxValue
-this.setName(name);
+        this.setName(name);
     
 this.setDefaultValue(defaultValue);
     
@@ -99,7 +95,6 @@ GameConfigurationSingleton.getInstance()!.getHashtable()!.put(this.getName(), th
                 //@Throws(Exception.constructor)
             
     public setValue(value: Integer){
-    //var value = value
 
                         if(this.value != value)
                         
@@ -130,7 +125,6 @@ GameFeatureEventHandler.getInstance()!.fireEvent(new GameFeatureEvent(this, new 
 
 
     public setMaxValue(maxValue: Integer){
-    //var maxValue = maxValue
 this.maxValue= maxValue;
     
 }
@@ -147,7 +141,6 @@ this.maxValue= maxValue;
 
 
     public setMinValue(minValue: Integer){
-    //var minValue = minValue
 this.minValue= minValue;
     
 }
@@ -164,7 +157,6 @@ this.minValue= minValue;
 
 
     public setName(name: string){
-    //var name = name
 this.name= name;
     
 }
@@ -181,7 +173,6 @@ this.name= name;
 
 
     public setDefaultValue(defaultValue: Integer){
-    //var defaultValue = defaultValue
 this.defaultValue= defaultValue;
     
 }
@@ -244,7 +235,6 @@ stringBuffer!.appendboolean(this.isModifiable().valueOf());
 
 
     public setModifiable(modifiable: Boolean){
-var modifiable = modifiable
 this.modifiable= modifiable;
     
 }

@@ -116,8 +116,7 @@ export class InputAutomationNewBundleRunnable
 public constructor (inputAutomationBundleActivator: InputAutomationBundleActivator){
 
             super();
-        var inputAutomationBundleActivator = inputAutomationBundleActivator
-this.inputAutomationBundleActivator= inputAutomationBundleActivator;
+        this.inputAutomationBundleActivator= inputAutomationBundleActivator;
     
 this.fileBasicArrayList= new BasicArrayListD();
     
@@ -127,7 +126,6 @@ this.fileBasicArrayList= new BasicArrayListD();
                 //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
-var thread = thread
 }
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -144,7 +142,6 @@ var thread = thread
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }
@@ -375,7 +372,6 @@ vector.add(bundle.getSymbolicName());
                 //@Throws(Exception.constructor)
             
     isInstalled(symbolicName: string): boolean{
-var symbolicName = symbolicName
 this.logUtil!.putF(CommonLabels.getInstance()!.START +symbolicName, this, "isInstalled");
     
 
@@ -401,7 +397,7 @@ index < size; index++)
 nextSymbolicName= list.get(index) as string;
     
 
-                        if(nextSymbolicName!.localeCompare(symbolicName) == 0)
+                        if(nextSymbolicName!.compareTo(symbolicName) == 0)
                         
                                     {
                                     
@@ -487,7 +483,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     install(url: URL): Bundle{
-var url = url
 this.logUtil!.putF(CommonLabels.getInstance()!.START +url, this, "install");
     
 

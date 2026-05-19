@@ -67,8 +67,6 @@ export class AllBinaryTiledLayerFactory
                 //@Throws(Exception.constructor)
             
     public getInstance(raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData): AllBinaryTiledLayer{
-    //var raceTrackInfo = raceTrackInfo
-    //var raceTrackData = raceTrackData
 
     var allbinaryTiledLayer: AllBinaryTiledLayer
 ;
@@ -94,7 +92,6 @@ allbinaryTiledLayer!.setCells(raceTrackData!.getMapArray());
                 //@Throws(Exception.constructor)
             
     public getMiniInstance(raceTrackData: RaceTrackData): AllBinaryTiledLayer{
-var raceTrackData = raceTrackData
 
     var smallIntegerSingletonFactory: SmallIntegerSingletonFactory = SmallIntegerSingletonFactory.getInstance()!;
 ;

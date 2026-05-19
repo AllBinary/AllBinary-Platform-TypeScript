@@ -178,8 +178,6 @@ PreLogUtil.put(this.toString(), this, this.commonStrings!.INIT);
                 //@Throws(Exception.constructor)
             
     public update(gameFeature: Feature, colorLocked: boolean){
-    //var gameFeature = gameFeature
-    //var colorLocked = colorLocked
 
     var features: Features = Features.getInstance()!;
 ;
@@ -363,7 +361,6 @@ modified= true;
 
 
     public setOpenGL(opengl: boolean){
-    //var opengl = opengl
 this.opengl= opengl;
     
 }
@@ -380,7 +377,6 @@ this.opengl= opengl;
 
 
     public setImageColor(imageColor: OpenGLFeature){
-    //var imageColor = imageColor
 this.imageColor= imageColor;
     
 }
@@ -397,7 +393,6 @@ this.imageColor= imageColor;
 
 
     public setColor(color: OpenGLFeature){
-    //var color = color
 this.color= color;
     
 }
@@ -414,7 +409,6 @@ this.color= color;
 
 
     public setVersionSelector(versionSelector: OpenGLFeature){
-    //var versionSelector = versionSelector
 this.versionSelector= versionSelector;
     
 }
@@ -431,7 +425,6 @@ this.versionSelector= versionSelector;
 
 
     public setType(type: OpenGLFeature){
-    //var type = type
 this.type= type;
     
 }

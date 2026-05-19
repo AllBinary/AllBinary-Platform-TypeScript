@@ -79,7 +79,6 @@ export class NewUserFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(transformInfoInterface: TransformInfoInterface): UserInterface{
-var transformInfoInterface = transformInfoInterface
 
     var httpTransformInfoInterface: TransformInfoHttpInterface = transformInfoInterface as TransformInfoHttpInterface;
 ;
@@ -111,8 +110,6 @@ hashMap!.put(UserRoleData.NAME.toString(), role);
                 //@Throws(Exception.constructor)
             
     public static getInstance(httpServletRequest: HttpServletRequest, propertiesHashMap: HashMap<any, any>): UserInterface{
-var httpServletRequest = httpServletRequest
-var propertiesHashMap = propertiesHashMap
 
                         if(propertiesHashMap != 
                                     null

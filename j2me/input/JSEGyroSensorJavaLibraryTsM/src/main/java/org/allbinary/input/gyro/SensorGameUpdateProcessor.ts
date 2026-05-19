@@ -60,7 +60,6 @@ export class SensorGameUpdateProcessor
     private inputSensor: AllBinarySensor
 
     setInputSensor(inputSensor: AllBinarySensor){
-var inputSensor = inputSensor
 this.inputSensor= inputSensor;
     
 }
@@ -79,14 +78,12 @@ this.inputSensor= inputSensor;
                 //@Throws(Exception.constructor)
             
     public process(anyType: any = {}){
-var anyType = anyType
 }
 
 
                 //@Throws(Exception.constructor)
             
     public sendNotifications(anyType: any = {}){
-var anyType = anyType
 }
 
 

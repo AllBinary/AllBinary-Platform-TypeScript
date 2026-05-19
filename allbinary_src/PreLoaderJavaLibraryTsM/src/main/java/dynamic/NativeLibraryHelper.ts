@@ -52,8 +52,7 @@ export class NativeLibraryHelper
 public constructor (library: string){
 
             super();
-        var library = library
-this.library= library;
+        this.library= library;
     
 }
 

@@ -101,7 +101,6 @@ private constructor (){
     private readonly stringBuffer: StringMaker = new StringMaker();
 
     /*actual*/ public putL(log: Log){
-var log = log
 
                         if(log == 
                                     null
@@ -139,17 +138,10 @@ this.put(specialMessage, anyType, functionName, exception);
 
 
     /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
 }
 
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-    //var exception = exception
 
                         if(exception != 
                                     null
@@ -157,7 +149,7 @@ this.put(specialMessage, anyType, functionName, exception);
                         
                                     {
                                     
-                        if(exception.constructor.name.toString()!.localeCompare(XmlRpcException.constructor.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.compareTo(XmlRpcException.constructor.toString()!) == 0)
                         
                                     {
                                     
@@ -170,7 +162,7 @@ this.put(specialMessage, anyType, functionName, exception);
                                     }
                                 
 
-                        if(exception.constructor.name.toString()!.localeCompare(IOException.constructor.toString()!) == 0)
+                        if(exception.constructor.name.toString()!.compareTo(IOException.constructor.toString()!) == 0)
                         
                                     {
                                     

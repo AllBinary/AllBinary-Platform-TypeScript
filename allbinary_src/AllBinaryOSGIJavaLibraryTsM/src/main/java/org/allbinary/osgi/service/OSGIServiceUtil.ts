@@ -80,8 +80,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getServicesObjectVector(bundleContext: Object, serviceReferences: ServiceReference[]): Vector{
-    //var bundleContext = bundleContext
-    //var serviceReferences = serviceReferences
 
     var vector: Vector = new Vector();
 ;

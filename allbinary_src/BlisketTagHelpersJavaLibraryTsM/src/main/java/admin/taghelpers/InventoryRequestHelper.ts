@@ -78,9 +78,7 @@ export class InventoryRequestHelper extends ModifyTable {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+        
     var inventoryTag: HelperTag = propertiesHashMap!.get(AbTagData.PARENT) as HelperTag;
 ;
     

@@ -62,8 +62,7 @@ export class GameSkillType
 private constructor (name: string){
 
             super();
-        var name = name
-this.setName(name);
+        this.setName(name);
     
 }
 
@@ -79,7 +78,6 @@ this.setName(name);
 
 
     setName(name: string){
-var name = name
 this.name= name;
     
 }

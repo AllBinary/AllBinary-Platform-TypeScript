@@ -63,7 +63,6 @@ export class BasicColorFactory
 
 
     public createInstance(value: number): BasicColor{
-    //var value = value
 
 
 
@@ -74,8 +73,6 @@ export class BasicColorFactory
 
 
     public createInstanceA(alphaValue: number, value: number): BasicColor{
-    //var alphaValue = alphaValue
-    //var value = value
 
 
 
@@ -86,9 +83,6 @@ export class BasicColorFactory
 
 
     public createInstanceAN(alphaValue: number, value: number, name: string): BasicColor{
-    //var alphaValue = alphaValue
-    //var value = value
-    //var name = name
 
 
 
@@ -99,11 +93,6 @@ export class BasicColorFactory
 
 
     public createInstanceARGB(alphaValue: number, r: number, g: number, b: number, name: string): BasicColor{
-    //var alphaValue = alphaValue
-    //var r = r
-    //var g = g
-    //var b = b
-    //var name = name
 
     var ALPHA_MASK: number = Math.round(0xFF000000);
 ;

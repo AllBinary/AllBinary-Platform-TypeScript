@@ -58,7 +58,6 @@ export class OnDemandResourcesFactory
 
 
     public remove(layerId: number): OnDemandResources{
-var layerId = layerId
 
 
 

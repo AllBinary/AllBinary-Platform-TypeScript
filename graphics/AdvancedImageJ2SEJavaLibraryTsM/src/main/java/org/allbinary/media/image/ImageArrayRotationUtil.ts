@@ -80,9 +80,6 @@ export class ImageArrayRotationUtil
                 //@Throws(IOException.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, input: string, visitor: ImageProcessedVisitor){
-    //var imageProcessorInput = imageProcessorInput
-    //var input = input
-    //var visitor = visitor
 
     var totalAngle: Integer
 ;

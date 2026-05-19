@@ -50,16 +50,14 @@ export class TenderType
 public constructor (name: string){
 
             super();
-        var name = name
-this.name= name;
+        this.name= name;
     
 }
 
 
     public isEqual(tenderType: TenderType): boolean{
-var tenderType = tenderType
 
-                        if(this.toString()!.localeCompare(tenderType!.toString()) == 0)
+                        if(this.toString()!.compareTo(tenderType!.toString()) == 0)
                         
                                     {
                                     

@@ -87,10 +87,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, templateName: string, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformTemplateInterface{
-    //var abeClientInformation = abeClientInformation
-    //var templateName = templateName
-    //var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
 
         try {
             

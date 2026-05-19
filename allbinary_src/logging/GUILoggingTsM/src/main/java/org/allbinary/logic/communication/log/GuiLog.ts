@@ -86,7 +86,6 @@ private constructor (){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public showDialog(msg: string){
-var msg = msg
 
     var error: JDialog = new JDialog();
 ;
@@ -141,9 +140,6 @@ error.show();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, anyType: any = {}, functionName: string): string{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
 
 
 
@@ -156,10 +152,6 @@ var functionName = functionName
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, anyType: any = {}, functionName: string, exception: Exception): string{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
-var exception = exception
 
         try {
             
@@ -195,9 +187,6 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION, this, "put", e);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, className: string, functionName: string): string{
-var specialMessage = specialMessage
-var className = className
-var functionName = functionName
 
 
 
@@ -210,10 +199,6 @@ var functionName = functionName
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
-var specialMessage = specialMessage
-var className = className
-var functionName = functionName
-var exception = exception
 
         try {
             

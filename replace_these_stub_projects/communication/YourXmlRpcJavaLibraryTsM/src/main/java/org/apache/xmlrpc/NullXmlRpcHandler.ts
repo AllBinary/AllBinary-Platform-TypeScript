@@ -58,8 +58,6 @@ export class NullXmlRpcHandler
                 //@Throws(Exception.constructor)
             
     public execute(method: string, params: Vector<any>): any{
-var method = method
-var params = params
 
 
 

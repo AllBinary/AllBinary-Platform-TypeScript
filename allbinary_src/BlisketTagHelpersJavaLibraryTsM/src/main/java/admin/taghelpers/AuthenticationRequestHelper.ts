@@ -95,9 +95,7 @@ export class AuthenticationRequestHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.weblisketSession= new WeblisketSession(hashMap, pageContext);
+        this.weblisketSession= new WeblisketSession(hashMap, pageContext);
     
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
@@ -106,9 +104,7 @@ this.request= pageContext!.getRequest() as HttpServletRequest;
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
-        var hashMap = hashMap
-var httpServletRequest = httpServletRequest
-this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
+        this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
     
 this.request= httpServletRequest;
     
@@ -196,13 +192,13 @@ this.request= httpServletRequest;
 ;
     
 
-                        if(userInterface!.getMainEmail()!.localeCompare(email) != 0)
+                        if(userInterface!.getMainEmail()!.compareTo(email) != 0)
                         
                                     {
                                     
                         if(userInterface!.getSecondaryEmail() != 
                                     null
-                                 && userInterface!.getSecondaryEmail()!.localeCompare(email) != 0)
+                                 && userInterface!.getSecondaryEmail()!.compareTo(email) != 0)
                         
                                     {
                                     
@@ -335,7 +331,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
                                     }
                                 
 
-                        if(newPassword!.localeCompare(newReenteredPassword) != 0)
+                        if(newPassword!.compareTo(newReenteredPassword) != 0)
                         
                                     {
                                     
@@ -373,7 +369,7 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
 ;
     
 
-                        if(login.localeCompare(GLOBALS2.LOGINSUCCESS) == 0)
+                        if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
                                     
@@ -444,9 +440,6 @@ new NewPasswordEmail(this.abeClientInformation, userInterface, newPassword).
 
 
     public isRoleValid(userName: string, password: string, roles: Vector): Boolean{
-var userName = userName
-var password = password
-var roles = roles
 
         try {
             

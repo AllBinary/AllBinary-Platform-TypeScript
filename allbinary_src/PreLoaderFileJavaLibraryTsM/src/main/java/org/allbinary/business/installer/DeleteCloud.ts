@@ -74,9 +74,6 @@ public constructor (){
 
 
     public delete(prePath: string, current: number, total: number): boolean{
-var prePath = prePath
-var current = current
-var total = total
 
         try {
             

@@ -81,8 +81,7 @@ export class MetasValidation extends Validation implements DomNodeInterface {
 public constructor (storeName: string){
 
             super();
-        var storeName = storeName
-this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
+        this.storeFrontInterface= StoreFrontFactory.getInstance(storeName);
     
 this.metaValidationVector= new Vector();
     
@@ -113,8 +112,7 @@ this.metaValidationVector!.add(descriptionMetaValidation);
 public constructor (document: Document){
 
             super();
-        var document = document
-
+        
 
 
                             throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
@@ -207,7 +205,6 @@ public constructor (document: Document){
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -220,7 +217,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(HtmlMetasData.getInstance()!.NAME)!;
 ;

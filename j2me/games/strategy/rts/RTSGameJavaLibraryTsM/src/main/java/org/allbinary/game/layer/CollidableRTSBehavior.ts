@@ -54,8 +54,7 @@ export class CollidableRTSBehavior extends CollidableDestroyableDamageableBehavi
         
 public constructor (collidable: boolean){
             super(collidable);
-                        //var collidable = collidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -63,8 +62,6 @@ public constructor (collidable: boolean){
 
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
@@ -132,8 +129,6 @@ public constructor (collidable: boolean){
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var collisionTypeFactory: CollisionTypeFactory = CollisionTypeFactory.getInstance()!;
 ;
@@ -170,8 +165,6 @@ public constructor (collidable: boolean){
                 //@Throws(Exception.constructor)
             
     collideNone(ownerLayer: CollidableCompositeLayer, collidableInterface: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var collidableInterface = collidableInterface
 }
 
 

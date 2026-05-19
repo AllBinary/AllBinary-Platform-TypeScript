@@ -59,8 +59,6 @@ export class AboutPaintable extends Paintable {
         
 
     public static getInstance(info: string[], developers: string[]): AboutPaintable{
-var info = info
-var developers = developers
 
 
 
@@ -83,9 +81,7 @@ var developers = developers
 private constructor (info: string[], developers: string[]){
 
             super();
-        var info = info
-var developers = developers
-this.info= info;
+        this.info= info;
     
 this.developers= developers;
     
@@ -105,7 +101,6 @@ this.developers= developers;
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;

@@ -59,9 +59,7 @@ export class GeographicMapCellPositionEvent extends AllBinaryEventObject {
     private geographicMapCellPosition: CellPosition = CellPositionFactory.getInstance()!.NONE;
 public constructor (anyType: any = {}, geographicMapCellPosition: CellPosition){
             super(anyType);
-                        //var anyType = anyType
-    //var geographicMapCellPosition = geographicMapCellPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -71,14 +69,12 @@ this.geographicMapCellPosition= geographicMapCellPosition;
 
 
     public init(anyType: any = {}){
-var anyType = anyType
 this.setSource(anyType);
     
 }
 
 
     public setGeographicMapCellPosition(geographicMapCellPosition: GeographicMapCellPosition){
-var geographicMapCellPosition = geographicMapCellPosition
 this.geographicMapCellPosition= geographicMapCellPosition;
     
 }

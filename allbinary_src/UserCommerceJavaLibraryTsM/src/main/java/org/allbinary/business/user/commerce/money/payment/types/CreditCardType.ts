@@ -52,8 +52,7 @@ export class CreditCardType
 public constructor (cardType: string){
 
             super();
-        var cardType = cardType
-this.name= cardType;
+        this.name= cardType;
     
 }
 

@@ -59,7 +59,6 @@ public constructor (){
 
 
     public set(panel: JPanel){
-var panel = panel
 this.workAreaPropertiesJPanel!.add(panel);
     
 this.repaint();

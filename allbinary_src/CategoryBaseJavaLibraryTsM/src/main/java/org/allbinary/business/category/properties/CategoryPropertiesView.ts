@@ -63,8 +63,7 @@ export class CategoryPropertiesView
 public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
 
             super();
-        var categoryPropertiesInterface = categoryPropertiesInterface
-this.categoryPropertiesInterface= categoryPropertiesInterface;
+        this.categoryPropertiesInterface= categoryPropertiesInterface;
     
 }
 
@@ -72,7 +71,6 @@ this.categoryPropertiesInterface= categoryPropertiesInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var categoryNode: Node = document.createElement(CategoryData.getInstance()!.NAME)!;
 ;

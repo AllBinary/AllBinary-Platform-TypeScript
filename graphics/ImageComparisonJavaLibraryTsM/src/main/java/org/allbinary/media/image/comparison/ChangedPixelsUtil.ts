@@ -80,7 +80,6 @@ export class ChangedPixelsUtil
                 //@Throws(Exception.constructor)
             
     public static generateBufferedImageChacheables(imageComparisonInfo: ImageComparisonResult): BufferedImageCacheable[]{
-var imageComparisonInfo = imageComparisonInfo
 
     var bufferedImageCacheables: BufferedImageCacheable[]
 ;

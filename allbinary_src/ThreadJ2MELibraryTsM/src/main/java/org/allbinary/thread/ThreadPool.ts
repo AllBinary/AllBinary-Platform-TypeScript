@@ -103,10 +103,7 @@ export class ThreadPool
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
-            //var poolName = poolName
-    //var numThreads = numThreads
-    //var priority = priority
-this.poolName= poolName;
+        this.poolName= poolName;
     
 this.priority= priority;
     
@@ -162,7 +159,6 @@ pooledThread!.start();
 
 
     public runTaskWithPriority(task: PriorityRunnable){
-    //var task = task
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -251,7 +247,6 @@ this.notify();
 
 
     public runTask(task: Runnable){
-    //var task = task
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -465,12 +460,10 @@ this.taskQueue!.clear();
 
 
     startTask(task: Runnable){
-    //var task = task
 }
 
 
     completedTask(task: Runnable){
-    //var task = task
 }
 
 

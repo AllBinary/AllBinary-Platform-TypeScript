@@ -55,9 +55,7 @@ export class VehicleProperties
 public constructor (velocityProperties: VelocityProperties, vehicleFrictionProperties: VehicleFrictionProperties){
 
             super();
-        var velocityProperties = velocityProperties
-var vehicleFrictionProperties = vehicleFrictionProperties
-this.velocityProperties= velocityProperties;
+        this.velocityProperties= velocityProperties;
     
 this.vehicleFrictionProperties= vehicleFrictionProperties;
     
@@ -75,7 +73,6 @@ this.vehicleFrictionProperties= vehicleFrictionProperties;
 
 
     public setVehicleFrictionProperties(vehicleFrictionProperties: VehicleFrictionProperties){
-var vehicleFrictionProperties = vehicleFrictionProperties
 this.vehicleFrictionProperties= vehicleFrictionProperties;
     
 }

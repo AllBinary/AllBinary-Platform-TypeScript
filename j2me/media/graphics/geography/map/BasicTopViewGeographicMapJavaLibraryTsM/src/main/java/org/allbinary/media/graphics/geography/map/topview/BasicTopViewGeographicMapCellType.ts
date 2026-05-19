@@ -65,9 +65,6 @@ export class BasicTopViewGeographicMapCellType
         
 
     public static createType(name: string, type: number, cost: number): BasicTopViewGeographicMapCellType{
-    //var name = name
-    //var type = type
-    //var cost = cost
 
     var types: BasicArrayList = new BasicArrayListS(1);
 ;
@@ -93,10 +90,7 @@ types.add(type);
 public constructor (name: string, types: BasicArrayList, cost: number){
 
             super();
-            //var name = name
-    //var types = types
-    //var cost = cost
-
+        
     var size: number = types.size()!;
 ;
     
@@ -153,7 +147,6 @@ this.types= typeArray;
 
 
     public isType(type: GeographicMapCellType): boolean{
-    //var type = type
 
 
 
@@ -164,7 +157,6 @@ this.types= typeArray;
 
 
     public hasType(type: number): boolean{
-    //var type = type
 
     var size: number = types.length
                 ;

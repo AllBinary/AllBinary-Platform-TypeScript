@@ -96,9 +96,7 @@ export class QuoteRequest
 public constructor (userName: string, request: HttpServletRequest){
 
             super();
-        var userName = userName
-var request = request
-
+        
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
 ;
     
@@ -131,8 +129,7 @@ this.setComments(request.getParameter(quoteRequestData!.COMMENTS) as string);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-
+        
     var quoteRequestData: QuoteRequestData = QuoteRequestData.getInstance()!;
 ;
     
@@ -451,42 +448,36 @@ values.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
     public setUserName(value: string){
-var value = value
 this.userName= value;
     
 }
 
 
     public setProjectInfo(value: string){
-var value = value
 this.projectInfo= value;
     
 }
 
 
     public setUserComments(value: string){
-var value = value
 this.userComments= value;
     
 }
 
 
     public setBudget(value: string){
-var value = value
 this.budget= value;
     
 }
 
 
     public setTimeFrame(value: string){
-var value = value
 this.timeFrame= value;
     
 }
 
 
     public setComments(value: string){
-var value = value
 this.comments= value;
     
 

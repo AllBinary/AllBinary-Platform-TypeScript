@@ -61,9 +61,7 @@ export class LurchRotationAI extends LurchAI {
     private rotationAnimationInterface: IndexedAnimation
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

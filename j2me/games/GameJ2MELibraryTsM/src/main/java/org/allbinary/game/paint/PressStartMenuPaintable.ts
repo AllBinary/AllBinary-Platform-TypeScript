@@ -106,7 +106,6 @@ public constructor (){
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(this.timeDelayHelper!.isTimeTNT())
                         
@@ -158,7 +157,6 @@ graphics.drawString(this.startString, displayInfo!.getLastHalfWidth() -beginWidt
 
 
     setFlash(flash: boolean){
-var flash = flash
 this.flash= flash;
     
 }

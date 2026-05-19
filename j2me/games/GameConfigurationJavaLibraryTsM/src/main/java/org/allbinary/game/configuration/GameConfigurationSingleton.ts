@@ -79,7 +79,6 @@ this.hashtable= new Hashtable<any, any>();
 
 
     public getInstanceByName(name: string): GameConfiguration{
-var name = name
 
 
 
@@ -100,7 +99,6 @@ var name = name
 
 
     public add(gameConfiguration: GameConfiguration){
-var gameConfiguration = gameConfiguration
 this.list.add(gameConfiguration);
     
 }

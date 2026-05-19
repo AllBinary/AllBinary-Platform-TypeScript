@@ -71,8 +71,7 @@ export class ContextConfigurationView
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var childNodeList: NodeList = node.getChildNodes()!;
 ;
     
@@ -93,8 +92,7 @@ this.contextConfigurationInterface!.setEmailServerConfigurationInterface(emailSe
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
-        var contextConfigurationInterface = contextConfigurationInterface
-this.contextConfigurationInterface= contextConfigurationInterface;
+        this.contextConfigurationInterface= contextConfigurationInterface;
     
 }
 
@@ -112,7 +110,6 @@ this.contextConfigurationInterface= contextConfigurationInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(ContextConfigurationData.getInstance()!.NAME)!;
 ;

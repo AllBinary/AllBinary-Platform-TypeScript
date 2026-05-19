@@ -63,12 +63,7 @@ export class GameNotificationEvent extends AllBinaryEventObject {
     private readonly removeable: Boolean
 public constructor (anyType: any = {}, string: string, seconds: Integer, basicColor: BasicColor, permanent: Boolean){
             super(anyType);
-                    var anyType = anyType
-var string = string
-var seconds = seconds
-var basicColor = basicColor
-var permanent = permanent
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -124,14 +119,12 @@ this.removeable= permanent;
 
 
     public setString(string: string){
-var string = string
 this.string= string;
     
 }
 
 
     public setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 }

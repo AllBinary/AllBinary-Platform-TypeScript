@@ -80,13 +80,6 @@ export class NonPlayerTopViewCharacterBehavior extends TopViewCharacterBehavior 
                 //@Throws(Exception.constructor)
             
     public terrainEvent(layer: AllBinaryLayer, direction: Direction, x: number, y: number, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
-    //var layer = layer
-    //var direction = direction
-    //var x = x
-    //var y = y
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var maxColumns: number = geographicMapInterfaceArray[0]!.getAllBinaryTiledLayer()!.getColumns()!;
 ;
@@ -149,10 +142,6 @@ TerrainEventHandler.getInstance(layer)!.fireEvent(terrainEvent);
 
 
     public terrainMove(layer: AllBinaryLayer, geographicMapInterfaceArray: BasicGeographicMap[], x: number, y: number){
-    //var layer = layer
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var x = x
-    //var y = y
 layer.moveDXY(x, y);
     
 }

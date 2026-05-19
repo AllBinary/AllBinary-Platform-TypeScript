@@ -60,7 +60,6 @@ export class CssElementsValidationFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(cssElementStyleNodeList: Vector): Vector{
-    //var cssElementStyleNodeList = cssElementStyleNodeList
 
     var styles: Vector = new Vector();
 ;
@@ -103,7 +102,6 @@ styles.add(cssValidationInterface);
 
 
     public static getInstance(hashMap: HashMap<any, any>): Vector{
-    //var hashMap = hashMap
 
     var styles: Vector = new Vector();
 ;

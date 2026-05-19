@@ -84,8 +84,6 @@ export class AuthenticationHelperUtil
                 //@Throws(Exception.constructor)
             
     public isAuthorized(authenticationHelper: AuthenticationHelper, filePath: string): boolean{
-var authenticationHelper = authenticationHelper
-var filePath = filePath
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEWERROR))
                         

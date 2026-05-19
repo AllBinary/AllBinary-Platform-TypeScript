@@ -71,8 +71,6 @@ private constructor (){
 
 
     public createXY(x: number, y: number): GPoint{
-var x = x
-var y = y
 
 
 
@@ -83,9 +81,6 @@ var y = y
 
 
     public createXYZ(x: number, y: number, z: number): GPoint{
-var x = x
-var y = y
-var z = z
 
 
 

@@ -74,12 +74,7 @@ export class CaptionAnimationHelper extends CaptionAnimationHelperBase {
 public constructor (captionAnimation: Animation, captionDx: number, captionDy: number, dx: number, dy: number){
 
             super();
-            //var captionAnimation = captionAnimation
-    //var captionDx = captionDx
-    //var captionDy = captionDy
-    //var dx = dx
-    //var dy = dy
-this.captionAnimation= new CaptionAnimation(captionAnimation, this.textAnimation, captionDx, captionDy, dx, dy);
+        this.captionAnimation= new CaptionAnimation(captionAnimation, this.textAnimation, captionDx, captionDy, dx, dy);
     
 }
 
@@ -125,8 +120,6 @@ this.captionAnimation= new CaptionAnimation(captionAnimation, this.textAnimation
 
 
     public update(message: string, basicColor: BasicColor){
-var message = message
-var basicColor = basicColor
 this.textAnimation!.setBasicColorP(basicColor);
     
 this.textAnimation!.setText(message);
@@ -139,9 +132,6 @@ this.timeHelper!.setStartTimeTNT();
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.animation.paintXY(graphics, x, y);
     
 }

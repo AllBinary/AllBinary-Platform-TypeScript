@@ -60,8 +60,7 @@ export class UserEmailConfigurationMapping
 public constructor (userEmailConfigurationInterface: UserEmailConfigurationInterface){
 
             super();
-        var userEmailConfigurationInterface = userEmailConfigurationInterface
-this.userEmailConfigurationInterface= userEmailConfigurationInterface;
+        this.userEmailConfigurationInterface= userEmailConfigurationInterface;
     
 }
 

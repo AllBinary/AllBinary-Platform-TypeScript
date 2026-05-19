@@ -38,8 +38,6 @@ import { SpecialGameInputFactory } from '../../../../../org/allbinary/game/layer
       
 import { SpecialGameInputInterface } from '../../../../../org/allbinary/game/layer/special/SpecialGameInputInterface.js';
       
-import { LogUtil } from '../../../../../org/allbinary/logic/communication/log/LogUtil.js';
-      
 import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMaker.js';
       
 import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList.js';
@@ -76,8 +74,7 @@ export class CheatGameInputProcessor extends PlayerGameInput {
     private readonly gameCanvas: AllBinaryGameCanvas
 public constructor (gameCanvas: AllBinaryGameCanvas){
             super(new BasicArrayListD(), new BasicArrayListD(),  -1);
-                    var gameCanvas = gameCanvas
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

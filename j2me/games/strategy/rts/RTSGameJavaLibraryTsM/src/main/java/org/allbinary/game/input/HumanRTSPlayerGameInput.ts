@@ -154,15 +154,7 @@ export class HumanRTSPlayerGameInput extends RTSPlayerGameInput implements BaseM
     private selectedRtsLayer: CollidableDestroyableDamageableLayer = CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER;
 public constructor (gameCanvas: AllBinaryGameCanvas, inputList: BasicArrayList, playerInputId: number, towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerPositionFinderInterface: LayerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface, touchButtonsBuilderFactory: TouchButtonsBuilderFactory){
             super(gameCanvas, inputList, playerInputId, towerInfoPaintable, rtsPlayerLayerInterface, layerPositionFinderInterface, selectRTSLayerVisitorFactoryInterface);
-                        //var gameCanvas = gameCanvas
-    //var inputList = inputList
-    //var playerInputId = playerInputId
-    //var towerInfoPaintable = towerInfoPaintable
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerPositionFinderInterface = layerPositionFinderInterface
-    //var selectRTSLayerVisitorFactoryInterface = selectRTSLayerVisitorFactoryInterface
-    //var touchButtonsBuilderFactory = touchButtonsBuilderFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -182,7 +174,6 @@ BasicMotionGesturesHandler.getInstance()!.addListenerInterface(this);
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
@@ -199,7 +190,6 @@ this.notYoursGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFo
                 //@Throws(Exception.constructor)
             
     processDraggingMotionInput(layerManager: AllBinaryLayerManager): boolean{
-    //var layerManager = layerManager
 
     var motionGestureEvent: MotionGestureEvent = this.getMotionGestureInputList()!.get(this.getMotionGestureInputList()!.size() -1) as MotionGestureEvent;
 ;
@@ -459,7 +449,6 @@ this.updatePaintable();
                 //@Throws(Exception.constructor)
             
     processSelectionBoxMotionInput(layerManager: AllBinaryLayerManager){
-    //var layerManager = layerManager
 
 
 
@@ -520,7 +509,6 @@ this.endPoint= PointFactory.getInstance()!.ZERO_ZERO;
                 //@Throws(Exception.constructor)
             
     public processMotionInput(layerManager: AllBinaryLayerManager){
-    //var layerManager = layerManager
 
                         if(this.getMotionGestureInputList()!.size() > 0)
                         
@@ -556,7 +544,6 @@ getMotionGestureInputList()!.clear();
 
 
     public setSelectedRtsFormInput(selectedRtsFormInput: RTSFormInput){
-    //var selectedRtsFormInput = selectedRtsFormInput
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -572,7 +559,6 @@ this.setSelectedRtsLayer(CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DE
 
 
     updateFormForLayer(rtsLayer: RTSLayer){
-    //var rtsLayer = rtsLayer
 
     var scrollSelectionForm: ScrollSelectionForm = rtsLayer!.getScrollSelectionForm()!;
 ;
@@ -604,8 +590,6 @@ this.getSelectedBuildingPlayerGameInput()!.setSelectedRTSLayer(CollidableDestroy
 
 
     updateForm(scrollSelectionForm: ScrollSelectionForm, rtfFormInput: RTSFormInput){
-    //var scrollSelectionForm = scrollSelectionForm
-    //var rtfFormInput = rtfFormInput
 this.getRtsPlayerLayerInterface()!.setCurrentScrollSelectionForm(scrollSelectionForm);
     
 this.setSelectedRtsFormInput(rtfFormInput);
@@ -616,8 +600,6 @@ this.setSelectedRtsFormInput(rtfFormInput);
                 //@Throws(Exception.constructor)
             
     public setSelectedRTSLayer(rtSLayer: CollidableDestroyableDamageableLayer, geographicMapCellPosition: GeographicMapCellPosition){
-    //var rtSLayer = rtSLayer
-    //var geographicMapCellPosition = geographicMapCellPosition
 
                         if(rtSLayer != CollidableDestroyableDamageableLayer.NULL_COLLIDABLE_DESTROYABLE_DAMAGE_LAYER && this.getRtsPlayerLayerInterface()!.getGroupInterface()[0] != rtSLayer!.getGroupInterface()[0])
                         
@@ -801,7 +783,6 @@ this.getRTSLayerInfoPaintable()!.updateRTSLayerInfoSelection(rtsLayer!.createHud
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 super.paint(graphics);
     
 
@@ -857,7 +838,6 @@ graphics.drawRect(rectX1, rectY1, rectX2 -rectX1, rectY2 -rectY1);
 
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
-    //var motionGestureEvent = motionGestureEvent
 getMotionGestureInputList()!.add(motionGestureEvent);
     
 }
@@ -874,7 +854,6 @@ getMotionGestureInputList()!.add(motionGestureEvent);
 
 
     setSelectedRtsLayer(selectedRtsLayer: CollidableDestroyableDamageableLayer){
-    //var selectedRtsLayer = selectedRtsLayer
 this.selectedRtsLayer= selectedRtsLayer;
     
 }

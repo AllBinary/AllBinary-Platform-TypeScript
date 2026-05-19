@@ -24,15 +24,11 @@
         
 import { GPoint } from '../../../../org/allbinary/graphics/GPoint.js';
       
-import { PointFactory } from '../../../../org/allbinary/graphics/PointFactory.js';
-      
 import { RelativeRelationship } from '../../../../org/allbinary/graphics/RelativeRelationship.js';
       
 import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.js';
       
 import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      
-import { BasicArrayListUtil } from '../../../../org/allbinary/util/BasicArrayListUtil.js';
       
 
 
@@ -59,10 +55,7 @@ export class RelativeLayerRelationship extends RelativeRelationship {
     private layer: AllBinaryLayer = AllBinaryLayer.NULL_ALLBINARY_LAYER;
 public constructor (layer: AllBinaryLayer, point: GPoint, typesAllowedList: BasicArrayList){
             super(point, typesAllowedList);
-                        //var layer = layer
-    //var point = point
-    //var typesAllowedList = typesAllowedList
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -66,8 +66,7 @@ export class EditGenericBodyValidationView extends GenericBodyCustomizerView imp
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -167,7 +166,6 @@ stringBuffer!.append(this.body.validationInfo());
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

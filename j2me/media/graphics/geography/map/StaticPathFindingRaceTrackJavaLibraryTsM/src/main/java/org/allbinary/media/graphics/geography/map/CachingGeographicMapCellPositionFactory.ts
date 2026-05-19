@@ -55,8 +55,7 @@ export class CachingGeographicMapCellPositionFactory extends BasicGeographicMapC
         
 protected constructor (geographicMapInterface: BasicGeographicMap){
             super(geographicMapInterface);
-                    var geographicMapInterface = geographicMapInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -66,10 +65,6 @@ protected constructor (geographicMapInterface: BasicGeographicMap){
                 //@Throws(Exception.constructor)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
-    //var i_column = i_column
-    //var i_row = i_row
-    //var width = width
-    //var height = height
 
     var hashtable: Hashtable<any, any> = GeographicMapCellPositionFactory.getHashtable()!;
 ;

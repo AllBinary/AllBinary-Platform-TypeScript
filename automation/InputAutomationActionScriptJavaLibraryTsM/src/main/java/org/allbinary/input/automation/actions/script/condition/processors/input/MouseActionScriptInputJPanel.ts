@@ -92,8 +92,7 @@ export class MouseActionScriptInputJPanel extends javax.swing.JPanel {
 public constructor (mouseActionScriptInputInterface: MouseActionScriptInputInterface){
 
             super();
-            //var mouseActionScriptInputInterface = mouseActionScriptInputInterface
-this.logUtil!.putF(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(CommonLabels.getInstance()!.START +mouseActionScriptInputInterface, this, this.commonStrings!.CONSTRUCTOR);
     
 this.initComponents();
     
@@ -304,7 +303,6 @@ this.mouseActionScriptInputInterface!.log();
 
 
     public setMouseActionJDialog(mouseActionJDialog: javax.swing.JDialog){
-var mouseActionJDialog = mouseActionJDialog
 this.mouseActionJDialog= mouseActionJDialog;
     
 }
@@ -355,7 +353,6 @@ this.okJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okJButtonActionPerformed(evt);
     
 }
@@ -383,7 +380,6 @@ this.button2JCheckBox!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 button2JCheckBoxActionPerformed(evt);
     
 }
@@ -423,7 +419,6 @@ this.mouseActionJButton!.addActionListener(new class extends java.awt.event.Acti
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 mouseActionJButtonActionPerformed(evt);
     
 }
@@ -447,12 +442,10 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     button2JCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.update();
@@ -471,7 +464,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "okButtonActionPerformed"
 
 
     mouseActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.getMouseActionJDialog()!.setVisible(true);
     
 }

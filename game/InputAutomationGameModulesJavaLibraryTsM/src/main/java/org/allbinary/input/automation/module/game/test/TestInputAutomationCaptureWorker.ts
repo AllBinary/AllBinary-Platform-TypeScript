@@ -85,11 +85,7 @@ export class TestInputAutomationCaptureWorker extends AbstractInputAutomationWor
     private readonly IMAGE_NOT_AVAILABLE: string = "Image Not Available";
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface, genericProfileActions: GenericProfileActions, imageComparatorConstraintsInterface: ImageComparatorConstraintsInterface, motionRectangleConstraintsInterface: MotionRectangleConstraintsInterface){
             super(inputAutomationActionInterface);
-                    var inputAutomationActionInterface = inputAutomationActionInterface
-var genericProfileActions = genericProfileActions
-var imageComparatorConstraintsInterface = imageComparatorConstraintsInterface
-var motionRectangleConstraintsInterface = motionRectangleConstraintsInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -197,7 +193,6 @@ this.processDataWorkerResults();
 
 
     public setGenericProfileActions(genericProfileActions: GenericProfileActions){
-var genericProfileActions = genericProfileActions
 this.genericProfileActions= genericProfileActions;
     
 }

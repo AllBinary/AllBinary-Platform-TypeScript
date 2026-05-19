@@ -115,8 +115,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public getTaxRate(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): number{
-var streetAddress = streetAddress
-var storeFrontInterface = storeFrontInterface
 this.streetAddress= streetAddress;
     
 this.storeFrontInterface= storeFrontInterface;
@@ -184,7 +182,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.localeCompare(taxableStreetAddress!.getCountry()) == 0)
+                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     
@@ -192,7 +190,7 @@ index < nodeList!.getLength(); index++)
                                     null
                                  && taxableStreetAddress!.getState() != 
                                     null
-                                 && state.localeCompare(taxableStreetAddress!.getState()) == 0)
+                                 && state.compareTo(taxableStreetAddress!.getState()) == 0)
                         
                                     {
                                     
@@ -232,8 +230,6 @@ index < nodeList!.getLength(); index++)
 
 
     public isValid(streetAddress: StreetAddress, storeFrontInterface: StoreFrontInterface): Boolean{
-var streetAddress = streetAddress
-var storeFrontInterface = storeFrontInterface
 
         try {
             this.streetAddress= streetAddress;
@@ -326,7 +322,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
 ;
     
 
-                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && taxableStreetAddress!.getCountry()!.localeCompare(this.ALL) == 0)
+                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && taxableStreetAddress!.getCountry()!.compareTo(this.ALL) == 0)
                         
                                     {
                                     
@@ -339,7 +335,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.IS_VALID)
                                     }
                                 
 
-                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.localeCompare(taxableStreetAddress!.getCountry()) == 0)
+                        if(!stringValidationUtil!.isEmpty(country) && !stringValidationUtil!.isEmpty(taxableStreetAddress!.getCountry()) && country.compareTo(taxableStreetAddress!.getCountry()) == 0)
                         
                                     {
                                     

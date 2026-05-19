@@ -66,7 +66,6 @@ export class KeyboardInputAutomationProcessor
                 //@Throws(Exception.constructor)
             
     public static process(keyActionScriptInputInterface: KeyboardActionScriptInputInterface){
-var keyActionScriptInputInterface = keyActionScriptInputInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

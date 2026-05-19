@@ -92,8 +92,7 @@ export class ResizeImageJPanel extends javax.swing.JPanel implements ImageProces
     private imageProcessorInput: ImageProcessorInput
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                        //var imageProcessorInput = imageProcessorInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -467,7 +466,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
-var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput;
     
 }
@@ -509,7 +507,6 @@ this.aboveJButton!.addActionListener(new class extends java.awt.event.ActionList
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 aboveJButtonActionPerformed(evt);
     
 }
@@ -527,7 +524,6 @@ this.updateJButton!.addActionListener(new class extends java.awt.event.ActionLis
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 updateJButtonActionPerformed(evt);
     
 }
@@ -545,7 +541,6 @@ this.adjustFor16AboveJButton!.addActionListener(new class extends java.awt.event
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 adjustFor16AboveJButtonActionPerformed(evt);
     
 }
@@ -559,7 +554,6 @@ this.adjustFor16BelowJButton!.addActionListener(new class extends java.awt.event
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 adjustFor16BelowJButtonActionPerformed(evt);
     
 }
@@ -581,28 +575,24 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     aboveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.process();
     
 }
 
 
     updateJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.update();
     
 }
 
 
     adjustFor16AboveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateFor16Above();
     
 }
 
 
     adjustFor16BelowJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateFor16Below();
     
 }

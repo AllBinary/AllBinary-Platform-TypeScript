@@ -66,8 +66,7 @@ export class DemoGameMidlet extends GameMidlet {
         
 public constructor (clientInformationFactory: ClientInformationFactory){
             super(clientInformationFactory);
-                        //var clientInformationFactory = clientInformationFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -133,7 +132,6 @@ public constructor (clientInformationFactory: ClientInformationFactory){
                 //@Throws(Exception.constructor)
             
     createGameCanvasRunnable(allBinaryGameLayerManager: AllBinaryGameLayerManager): GameCanvasRunnableInterface{
-var allBinaryGameLayerManager = allBinaryGameLayerManager
 
 
 

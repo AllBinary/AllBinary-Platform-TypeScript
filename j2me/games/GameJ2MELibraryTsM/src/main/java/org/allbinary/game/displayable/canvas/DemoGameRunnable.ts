@@ -62,8 +62,7 @@ export class DemoGameRunnable extends GameRunnable {
 public constructor (demoCanvas: DemoCanvas){
 
             super();
-        var demoCanvas = demoCanvas
-this.demoCanvas= demoCanvas;
+        this.demoCanvas= demoCanvas;
     
 }
 

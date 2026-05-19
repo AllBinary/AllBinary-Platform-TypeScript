@@ -60,7 +60,6 @@ export class ChangedGameFeatureListener extends BaseChangedGameFeatureListener {
 
 
     public isChangedGameConfiguration(gameConfiguration: GameConfiguration): boolean{
-var gameConfiguration = gameConfiguration
 
 
 

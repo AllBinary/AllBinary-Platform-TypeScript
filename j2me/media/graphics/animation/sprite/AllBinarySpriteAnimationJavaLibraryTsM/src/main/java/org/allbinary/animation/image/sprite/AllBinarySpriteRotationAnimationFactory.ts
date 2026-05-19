@@ -38,8 +38,6 @@ import { BaseImageAnimationFactory } from '../../../../../org/allbinary/animatio
       
 import { AnimationFactorySpriteScaleUtil } from '../../../../../org/allbinary/image/sprite/AnimationFactorySpriteScaleUtil.js';
       
-import { NullUtil } from '../../../../../org/allbinary/logic/NullUtil.js';
-      
 import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/PrimitiveIntUtil.js';
       
 
@@ -69,10 +67,6 @@ export class AllBinarySpriteRotationAnimationFactory extends BaseImageAnimationF
                 //@Throws(Exception.constructor)
             
     public static createWHDY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteRotationAnimationFactory: AllBinarySpriteRotationAnimationFactory = new AllBinarySpriteRotationAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), (image.getHeight()>>2), (image.getHeight()>>2), 0, 0, animationBehaviorFactory);
 ;
@@ -91,8 +85,6 @@ spriteRotationAnimationFactory!.initWH(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createWH(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
-    //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -105,10 +97,6 @@ spriteRotationAnimationFactory!.initWH(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteRotationAnimationFactory: AllBinarySpriteRotationAnimationFactory = new AllBinarySpriteRotationAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
 ;
@@ -127,10 +115,6 @@ spriteRotationAnimationFactory!.init(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createDXYQ(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteRotationAnimationFactory: AllBinarySpriteRotationAnimationFactory = new AllBinarySpriteRotationAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), (image.getHeight()>>2), (image.getHeight()>>2), 0, 0, animationBehaviorFactory);
 ;
@@ -149,8 +133,6 @@ spriteRotationAnimationFactory!.init(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createQ(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
-    //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -163,8 +145,6 @@ spriteRotationAnimationFactory!.init(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createWHF(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): AllBinarySpriteRotationAnimationFactory{
-    //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -177,14 +157,7 @@ spriteRotationAnimationFactory!.init(dx, dy);
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
-                        //var image = image
-    //var sequenceArray = sequenceArray
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -192,8 +165,6 @@ public constructor (image: Image, sequenceArray: number[], width: number, height
 
 
     public init(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.animationFactoryInitializationVisitor!.dx= dx;
     
 this.animationFactoryInitializationVisitor!.dy= dy;
@@ -202,8 +173,6 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 
 
     initWH(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.init(dx, dy);
     
 this.animationFactoryInitializationVisitor!.dx +=  -this.animationFactoryInitializationVisitor!.width /5;
@@ -216,7 +185,6 @@ this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitial
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;
@@ -250,7 +218,6 @@ this.animationFactoryInitializationVisitor!.dy +=  -this.animationFactoryInitial
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-    //var animationInterface = animationInterface
 
 
 

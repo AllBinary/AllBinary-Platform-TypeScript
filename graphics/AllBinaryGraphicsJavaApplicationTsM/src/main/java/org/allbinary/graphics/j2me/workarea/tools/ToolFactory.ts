@@ -83,7 +83,6 @@ export class ToolFactory
     private readonly SELECTED_LABEL: string = "Selected: ";
 
     public setSelectedTool(tool: string){
-var tool = tool
 
         try {
             StatusFactory.getInstance()!.setStatus(this.SELECTED_LABEL +tool);

@@ -94,13 +94,7 @@ export class ImageComparisonResult
 public constructor (name: string, bufferedImage: BufferedImage, bufferedImage2: BufferedImage, frameOne: Long, frameTwo: Long, tolerance: number){
 
             super();
-            //var name = name
-    //var bufferedImage = bufferedImage
-    //var bufferedImage2 = bufferedImage2
-    //var frameOne = frameOne
-    //var frameTwo = frameTwo
-    //var tolerance = tolerance
-this.name= name;
+        this.name= name;
     
 this.nonMatchingPixelVector= new Vector();
     
@@ -214,7 +208,6 @@ this.logUtil!.putF("2: " +imageUtil!.toString(bufferedImage2), this, this.common
 
 
     public add(pixel: PixelDelta){
-var pixel = pixel
 this.nonMatchingPixelVector!.add(pixel);
     
 }
@@ -262,7 +255,6 @@ this.nonMatchingPixelVector!.add(pixel);
 
 
     setTolerance(tolerance: number){
-var tolerance = tolerance
 this.tolerance= tolerance;
     
 }

@@ -76,10 +76,6 @@ export class CanvasExpandUtil
                 //@Throws(Exception.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, increaseX: number, increaseY: number, visitor: ImageProcessedVisitor){
-    //var imageProcessorInput = imageProcessorInput
-    //var increaseX = increaseX
-    //var increaseY = increaseY
-    //var visitor = visitor
 
     var imageUtil: ImageUtil = ImageUtil.getInstance()!;
 ;

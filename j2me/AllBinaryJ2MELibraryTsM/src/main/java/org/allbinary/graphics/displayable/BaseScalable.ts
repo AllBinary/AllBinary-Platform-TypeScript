@@ -48,7 +48,6 @@ export class BaseScalable
         
 
     public getRatio(ratio: number): number{
-    //var ratio = ratio
 
 
 
@@ -59,7 +58,6 @@ export class BaseScalable
 
 
     public getLeft(xOffset: number): number{
-    //var xOffset = xOffset
 
 
 
@@ -70,7 +68,6 @@ export class BaseScalable
 
 
     public getTop(yOffset: number): number{
-    //var yOffset = yOffset
 
 
 
@@ -81,7 +78,6 @@ export class BaseScalable
 
 
     public scale(ratio: number){
-var ratio = ratio
 }
 
 

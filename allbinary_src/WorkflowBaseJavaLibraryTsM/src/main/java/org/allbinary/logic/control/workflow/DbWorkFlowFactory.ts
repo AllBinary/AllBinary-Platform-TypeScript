@@ -86,8 +86,6 @@ private constructor (){
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>): WorkFlowInterface{
-    //var abeClientInformation = abeClientInformation
-    //var hashMap = hashMap
 
         try {
             

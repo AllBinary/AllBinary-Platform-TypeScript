@@ -65,10 +65,7 @@ export class LapWidget extends BasicHud {
     private string: string = StringUtil.getInstance()!.EMPTY_STRING;
 public constructor (location: number, direction: number, basicColor: BasicColor){
             super(location, direction, 15, 40, 2, basicColor);
-                    var location = location
-var direction = direction
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -76,7 +73,6 @@ var basicColor = basicColor
 
 
     public update(lapInfo: LapInfo){
-var lapInfo = lapInfo
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -97,7 +93,6 @@ this.string= stringBuffer!.toString();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics, this.string);
     
 }

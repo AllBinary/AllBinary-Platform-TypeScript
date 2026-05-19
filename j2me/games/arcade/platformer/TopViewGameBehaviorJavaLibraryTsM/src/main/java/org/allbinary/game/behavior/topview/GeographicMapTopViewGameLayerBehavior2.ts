@@ -75,10 +75,7 @@ export class GeographicMapTopViewGameLayerBehavior2 extends GeographicMapTopView
     private previousGeographicMapCellPosition: GeographicMapCellPosition
 public constructor (maxGravityActionIndex: number, autoStepBlocks: boolean, offsetY: number){
             super(maxGravityActionIndex);
-                        //var maxGravityActionIndex = maxGravityActionIndex
-    //var autoStepBlocks = autoStepBlocks
-    //var offsetY = offsetY
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -92,10 +89,6 @@ this.offsetY= offsetY;
                 //@Throws(Exception.constructor)
             
     public gravity(velocityProperties: VelocityProperties, geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition){
-    //var velocityProperties = velocityProperties
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var geographicMapCellPosition = geographicMapCellPosition
 
                         if(geographicMapCellPosition != 
                                     null
@@ -134,10 +127,6 @@ this.gravity();
                 //@Throws(Exception.constructor)
             
     getPositionTopLeft(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var layer = layer
-    //var x = x
-    //var y = y
 
     var xCellPosition: number = layer.getXP() + -x;
 ;
@@ -158,10 +147,6 @@ this.gravity();
                 //@Throws(Exception.constructor)
             
     getPositionTopRight(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var layer = layer
-    //var x = x
-    //var y = y
 
     var xCellPosition: number = layer.getXP() + -x +layer.getWidth();
 ;
@@ -182,10 +167,6 @@ this.gravity();
                 //@Throws(Exception.constructor)
             
     getPositionBottomLeft(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var layer = layer
-    //var x = x
-    //var y = y
 
     var xCellPosition: number = layer.getXP() + -x;
 ;
@@ -206,10 +187,6 @@ this.gravity();
                 //@Throws(Exception.constructor)
             
     getPositionBottomRight(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var layer = layer
-    //var x = x
-    //var y = y
 
     var xCellPosition: number = layer.getXP() + -x +layer.getWidth();
 ;
@@ -230,8 +207,6 @@ this.gravity();
                 //@Throws(Exception.constructor)
             
     getLeftPosition(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var layer = layer
 
     var xCellPosition: number = layer.getXP()!;
 ;
@@ -252,8 +227,6 @@ this.gravity();
                 //@Throws(Exception.constructor)
             
     getRightPosition(geographicMapInterfaceArray: BasicGeographicMap[], layer: AllBinaryLayer): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var layer = layer
 
     var xCellPosition: number = layer.getXP() +layer.getWidth();
 ;
@@ -274,12 +247,6 @@ this.gravity();
                 //@Throws(Exception.constructor)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var velocityProperties = velocityProperties
-    //var layer = layer
-    //var x = x
-var y = y
 
     var geographicMapCellPosition: GeographicMapCellPosition = 
                 null
@@ -380,11 +347,6 @@ geographicMapCellPosition= this.getGeographicMapCellPositionIfNotSolidBlockOrOff
                 //@Throws(Exception.constructor)
             
     public getGeographicMapCellPositionIfNotSolidBlockOrOffMap(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer): GeographicMapCellPosition{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var geographicMapCellPosition = geographicMapCellPosition
-    //var velocityProperties = velocityProperties
-    //var layer = layer
 
                         if(geographicMapCellPosition != 
                                     null
@@ -468,13 +430,6 @@ this.previousGeographicMapCellPosition=
                 //@Throws(Exception.constructor)
             
     public moveAndLand(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], geographicMapCellPosition: GeographicMapCellPosition, velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number){
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var geographicMapCellPosition = geographicMapCellPosition
-    //var velocityProperties = velocityProperties
-    //var layer = layer
-    //var x = x
-    //var y = y
 
                         if(geographicMapCellPosition != 
                                     null
@@ -498,12 +453,6 @@ layer.
                 //@Throws(Exception.constructor)
             
     public move(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer, x: number, y: number): boolean{
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var velocityProperties = velocityProperties
-    //var layer = layer
-    //var x = x
-    //var y = y
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getGeographicMapCellPositionIfNotSolidBlockOrOffMapLocation(geographicMapInterfaceArray, geographicMapCellTypeArray, velocityProperties, layer, x, y)!;
 ;
@@ -541,10 +490,6 @@ this.moveAndLand(geographicMapInterfaceArray, geographicMapCellTypeArray, geogra
                 //@Throws(Exception.constructor)
             
     public left(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var velocityProperties = velocityProperties
-    //var layer = layer
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getLeftPosition(geographicMapInterfaceArray, layer)!;
 ;
@@ -606,10 +551,6 @@ layer.
                 //@Throws(Exception.constructor)
             
     public right(geographicMapInterfaceArray: BasicGeographicMap[], geographicMapCellTypeArray: GeographicMapCellType[], velocityProperties: VelocityProperties, layer: AllBinaryLayer){
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
-    //var geographicMapCellTypeArray = geographicMapCellTypeArray
-    //var velocityProperties = velocityProperties
-    //var layer = layer
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getRightPosition(geographicMapInterfaceArray, layer)!;
 ;

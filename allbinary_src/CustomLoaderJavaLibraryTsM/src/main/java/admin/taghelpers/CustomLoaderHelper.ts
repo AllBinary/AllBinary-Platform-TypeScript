@@ -66,9 +66,7 @@ export class CustomLoaderHelper
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-}
+        }
 
 public constructor (){
 
@@ -105,7 +103,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public setWebappPath(path: string){
-var path = path
 
         try {
             

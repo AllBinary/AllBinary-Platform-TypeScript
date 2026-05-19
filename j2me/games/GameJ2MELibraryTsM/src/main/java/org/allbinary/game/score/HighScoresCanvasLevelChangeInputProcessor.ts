@@ -70,8 +70,7 @@ export class HighScoresCanvasLevelChangeInputProcessor extends HighScoresCanvasI
     private anchor: number = Anchor.TOP_LEFT;
 public constructor (highScoresCanvas: HighScoresCanvas){
             super(highScoresCanvas);
-                    var highScoresCanvas = highScoresCanvas
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -144,7 +143,6 @@ list.clear();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;

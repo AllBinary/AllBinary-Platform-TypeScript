@@ -113,8 +113,7 @@ export class UnitRTSFormInput extends RTSFormInput {
     readonly newUnitGameNotificationEvent: GameNotificationEvent
 public constructor (groupInterface: Group[]){
             super(groupInterface);
-                        //var groupInterface = groupInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -138,7 +137,6 @@ this.getHashtable()!.put(WorkWaypoint.ID, smallIntegerSingletonFactory!.getAt(50
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -159,11 +157,6 @@ this.newUnitGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
                 //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, itemIndex: number){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var item = item
-    //var itemIndex = itemIndex
 super.process(layerManager);
     
 
@@ -235,11 +228,6 @@ this.attemptBuild(associatedRtsLayer2, rtsPlayerLayerInterface, layerManager, rt
                 //@Throws(Exception.constructor)
             
     attemptBuild(associatedRtsLayer: RTSLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var layerInterface = layerInterface
-    //var itemIndex = itemIndex
 
     var cost: number = layerInterface!.getCost()!;
 ;

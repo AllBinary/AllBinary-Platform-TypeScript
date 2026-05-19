@@ -80,9 +80,7 @@ export class Layer
 public constructor (width: number, height: number){
 
             super();
-        var width = width
-var height = height
-this.setLayerWidth(width);
+        this.setLayerWidth(width);
     
 this.setLayerHeight(height);
     
@@ -90,9 +88,6 @@ this.setLayerHeight(height);
 
 
     public setPosition(x: number, y: number, z: number){
-var x = x
-var y = y
-var z = z
 this.x= x;
     
 this.y= y;
@@ -103,8 +98,6 @@ this.z= z;
 
 
     public moveDXY(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.x += dx;
     
 this.y += dy;
@@ -113,9 +106,6 @@ this.y += dy;
 
 
     public moveDXYZ(dx: number, dy: number, dz: number){
-var dx = dx
-var dy = dy
-var dz = dz
 this.x += dx;
     
 this.y += dy;
@@ -186,7 +176,6 @@ this.z += dz;
 
 
     public setVisible(visible: boolean){
-var visible = visible
 this.visible= visible;
     
 }
@@ -203,7 +192,6 @@ this.visible= visible;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -218,7 +206,6 @@ this.logUtil!.putF(commonStrings!.NOT_IMPLEMENTED, this, canvasStrings!.PAINT);
 
 
     setLayerWidth(width: number){
-var width = width
 
                         if(width < 0)
                         
@@ -237,7 +224,6 @@ this.width= width;
 
 
     setLayerHeight(height: number){
-var height = height
 
                         if(height < 0)
                         
@@ -256,7 +242,6 @@ this.height= height;
 
 
     public toStringAppend(stringBuffer: StringMaker){
-    //var stringBuffer = stringBuffer
 }
 
 

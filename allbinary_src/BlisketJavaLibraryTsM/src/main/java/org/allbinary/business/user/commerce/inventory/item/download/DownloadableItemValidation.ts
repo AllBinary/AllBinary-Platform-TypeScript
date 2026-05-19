@@ -67,8 +67,7 @@ export class DownloadableItemValidation extends Validation {
 public constructor (downloadableItem: DownloadableItem){
 
             super();
-        var downloadableItem = downloadableItem
-this.downloadableItem= downloadableItem;
+        this.downloadableItem= downloadableItem;
     
 }
 
@@ -564,7 +563,6 @@ stringBuffer!.append(" and > 0 digits.<br/>");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

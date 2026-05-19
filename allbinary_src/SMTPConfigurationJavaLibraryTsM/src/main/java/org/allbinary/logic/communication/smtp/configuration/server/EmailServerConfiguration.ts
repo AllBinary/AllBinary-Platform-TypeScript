@@ -86,8 +86,7 @@ this.setSmtpServer(StringUtil.getInstance()!.EMPTY_STRING);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -113,10 +112,7 @@ this.log();
 public constructor (account: string, password: string, server: string){
 
             super();
-        var account = account
-var password = password
-var server = server
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
                                     {
@@ -141,7 +137,6 @@ this.log();
 
 
     public setSmtpServer(value: string){
-var value = value
 this.smtpServer= value;
     
 }
@@ -168,7 +163,6 @@ this.smtpServer= value;
 
 
     public setAccountName(accountName: string){
-var accountName = accountName
 this.accountName= accountName;
     
 }
@@ -185,7 +179,6 @@ this.accountName= accountName;
 
 
     public setPassword(password: string){
-var password = password
 this.password= password;
     
 }

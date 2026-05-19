@@ -78,7 +78,6 @@ export class AllBinaryMediaManager
 
 
     public static setMuted(aMuted: boolean){
-var aMuted = aMuted
 }
 
 
@@ -95,7 +94,6 @@ var aMuted = aMuted
                 //@Throws(Exception.constructor)
             
     public static init(soundsFactoryInterface: SoundsFactoryInterface){
-var soundsFactoryInterface = soundsFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -117,7 +115,6 @@ new Sounds(soundsFactoryInterface).
                 //@Throws(Exception.constructor)
             
     public static shutdown(soundsFactoryInterface: SoundsFactoryInterface){
-var soundsFactoryInterface = soundsFactoryInterface
 new Sounds(soundsFactoryInterface).
                             stopAll();
     
@@ -130,8 +127,6 @@ System.gc();
 
 
     public static createPlayerFromInputStream(stream: InputStream, type: string): Player{
-var stream = stream
-var type = type
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -152,7 +147,6 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(Inpu
 
 
     public static createPlayer(locator: string): Player{
-var locator = locator
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -174,14 +168,10 @@ logUtil!.putF(commonString!.START, AllBinaryMediaManager.THIS, "creatPlayer(loca
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static playTone(frequency: number, time: number, volume: number){
-var frequency = frequency
-var time = time
-var volume = volume
 }
 
 
     public static getSupportedContentTypes(protocol: string): string[]{
-var protocol = protocol
 
 
 
@@ -192,7 +182,6 @@ var protocol = protocol
 
 
     public static getSupportedProtocols(content_type: string): string[]{
-var content_type = content_type
 
 
 

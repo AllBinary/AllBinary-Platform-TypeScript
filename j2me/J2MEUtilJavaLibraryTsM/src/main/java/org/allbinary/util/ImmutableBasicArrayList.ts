@@ -50,9 +50,7 @@ export class ImmutableBasicArrayList extends BasicArrayListS {
     private readonly name: string
 public constructor (name: string, size: number){
             super(size);
-                        //var name = name
-    //var size = size
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -62,7 +60,6 @@ this.name= name;
 
 
     public add(e: any = {}): boolean{
-var e = e
 ForcedLogUtil.log(this.name, this);
     
 
@@ -75,8 +72,6 @@ ForcedLogUtil.log(this.name, this);
 
 
     public addAt(index: number, element: any = {}){
-var index = index
-var element = element
 ForcedLogUtil.log(this.name, this);
     
 }

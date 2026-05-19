@@ -109,11 +109,7 @@ export class CommandFormInputProcessor extends BasicMenuInputProcessor {
     private hasPressed: boolean = false;
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, form: ScrollSelectionForm){
             super(gameKeyEventList, playerInputId, gameCanvas);
-                        //var gameKeyEventList = gameKeyEventList
-    //var playerInputId = playerInputId
-    //var gameCanvas = gameCanvas
-    //var form = form
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -125,7 +121,6 @@ this.form= form;
                 //@Throws(Exception.constructor)
             
     public processInput(key: number): number{
-    //var key = key
 
                         if(key == Canvas.LEFT || key == Canvas.RIGHT || key == Canvas.UP || key == Canvas.DOWN)
                         
@@ -362,7 +357,6 @@ this.motionGestureEventList!.clear();
                 //@Throws(Exception.constructor)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
-    //var motionGestureEvent = motionGestureEvent
 
     var touchMotionGestureFactory: TouchMotionGestureFactory = TouchMotionGestureFactory.getInstance()!;
 ;

@@ -94,7 +94,6 @@ this.index++;
 
 
     public getNextGroupByName(name: string): Group{
-    //var name = name
 
     var group: Group = this.getNextGroup()!;
 ;
@@ -111,8 +110,6 @@ group.setName(name);
 
 
     public init(groups: number, nameArray: string[]){
-var groups = groups
-var nameArray = nameArray
 
     var stringMaker: StringMaker = new StringMaker();
 ;

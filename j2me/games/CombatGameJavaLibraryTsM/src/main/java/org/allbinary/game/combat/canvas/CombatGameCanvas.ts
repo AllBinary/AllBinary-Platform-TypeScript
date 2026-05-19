@@ -79,12 +79,7 @@ export class CombatGameCanvas extends AllBinaryGameCanvas {
     static basicLayerProcessor: BasicLayerProcessor[] = [];
 public constructor (cmdListener: CommandListener, gameLayerManager: AllBinaryGameLayerManager, highScoresFactoryInterface: HighScoresFactoryInterface, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory, buffered: boolean){
             super(cmdListener, gameLayerManager, highScoresFactoryInterface, gameInitializationInterfaceFactoryInterface, buffered);
-                        //var cmdListener = cmdListener
-    //var gameLayerManager = gameLayerManager
-    //var highScoresFactoryInterface = highScoresFactoryInterface
-    //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
-    //var buffered = buffered
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -102,7 +97,6 @@ ProgressCanvasFactory.getInstance()!.addNormalPortion(50, "Destroy Events");
                 //@Throws(Exception.constructor)
             
     initApp(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.CombatGameCanvas_init();
     
 super.initApp(abeClientInformation);
@@ -111,7 +105,6 @@ super.initApp(abeClientInformation);
 
 
     initConfigurable(portion: number){
-    //var portion = portion
 DestroyedLayerProcessor.init();
     
 ProgressCanvasFactory.getInstance()!.addNormalPortion(portion, "Basic Processors");

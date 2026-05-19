@@ -94,7 +94,6 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
     public defaultStringWidth(size: number): number{
-    //var size = size
 
 
 
@@ -105,7 +104,6 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
     public stringWidth(string: string): number{
-    //var string = string
 
 
 
@@ -116,7 +114,6 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
     public stringWidth2(string: string): number{
-    //var string = string
 
 
 
@@ -137,7 +134,6 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
     public charWidth(aChar: string): number{
-    //var aChar = aChar
 
 
 
@@ -148,9 +144,6 @@ this.DEFAULT_CHAR_WIDTH= this.defaultFont!.charWidth('C');
 
 
     public charsWidth(charArray: string[], offset: number, length: number): number{
-    //var charArray = charArray
-    //var offset = offset
-    //var length = length
 
 
 

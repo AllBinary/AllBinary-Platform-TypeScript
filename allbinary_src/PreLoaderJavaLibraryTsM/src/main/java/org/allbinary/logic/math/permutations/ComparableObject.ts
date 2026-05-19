@@ -49,8 +49,7 @@ export class ComparableObject
          implements Comparable {
         
 
-    public localeCompare(anyType: any = {}): number{
-var anyType = anyType
+    public compareTo(anyType: any = {}): number{
 
                         if(TsUtil.getInstance()!.hashCode(this) < TsUtil.getInstance()!.hashCode(anyType))
                         

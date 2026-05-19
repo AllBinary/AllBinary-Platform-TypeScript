@@ -63,7 +63,6 @@ AndroidNumberKeyToJ2MECanvasNumberKey.androidtoJavaMicroEditionKeyMap[KeyEvent.K
 
 
     public static getKey(key: number): number{
-var key = key
 
                         if(key < AndroidNumberKeyToJ2MECanvasNumberKey.androidtoJavaMicroEditionKeyMap!.length)
                         

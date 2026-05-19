@@ -76,8 +76,7 @@ export class DemoRunnable
 public constructor (demoGameMidlet: DemoGameMidlet){
 
             super();
-        var demoGameMidlet = demoGameMidlet
-this.demoGameMidlet= demoGameMidlet;
+        this.demoGameMidlet= demoGameMidlet;
     
 this.startDemoGameMidletEvent= new DemoGameMidletEvent(this.demoGameMidlet, DemoGameMidletStateFactory.getInstance()!.START_DEMO);
     

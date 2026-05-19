@@ -70,11 +70,7 @@ export class HtmlCell extends HtmlTag {
 public constructor (before: string, width: string, height: string, after: string){
 
             super();
-        var before = before
-var width = width
-var height = height
-var after = after
-this.before= before.toCharArray()
+        this.before= before.toCharArray()
                                         .slice(0, ).join('')
                                     ;
     
@@ -98,7 +94,6 @@ addAttribute(this.WIDTH, this.width);
 
 
     public addText(body: string){
-var body = body
 this.body= body;
     
 }
@@ -147,7 +142,7 @@ i < attributeSize; i++)
 
                         if(value != 
                                     null
-                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += key;

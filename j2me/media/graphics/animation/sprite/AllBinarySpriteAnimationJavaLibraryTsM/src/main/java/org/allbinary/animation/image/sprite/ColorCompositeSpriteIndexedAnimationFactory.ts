@@ -70,12 +70,7 @@ export class ColorCompositeSpriteIndexedAnimationFactory extends BaseImageAnimat
     private readonly basicColorArray: BasicColor[]
 public constructor (image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var basicColorArray = basicColorArray
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -87,7 +82,6 @@ this.basicColorArray= basicColorArray;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;
@@ -104,7 +98,6 @@ this.basicColorArray= basicColorArray;
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-    //var animationInterface = animationInterface
 
 
 

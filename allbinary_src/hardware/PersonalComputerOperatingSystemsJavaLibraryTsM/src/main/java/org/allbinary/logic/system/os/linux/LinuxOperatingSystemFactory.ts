@@ -100,7 +100,7 @@ private constructor (){
 ;
     
 
-                        if(osName!.localeCompare(operatingSystems!.LINUX) == 0)
+                        if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     operatingSystemInterface= new LinuxOS();

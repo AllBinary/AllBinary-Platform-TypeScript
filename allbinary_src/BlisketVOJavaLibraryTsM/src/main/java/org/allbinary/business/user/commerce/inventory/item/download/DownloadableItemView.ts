@@ -80,8 +80,7 @@ export class DownloadableItemView
 public constructor (downloadableItem: DownloadableItem){
 
             super();
-        var downloadableItem = downloadableItem
-this.downloadableItem= downloadableItem;
+        this.downloadableItem= downloadableItem;
     
 }
 
@@ -89,7 +88,6 @@ this.downloadableItem= downloadableItem;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         

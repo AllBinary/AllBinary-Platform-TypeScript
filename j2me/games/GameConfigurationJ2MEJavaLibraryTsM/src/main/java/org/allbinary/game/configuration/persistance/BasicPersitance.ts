@@ -86,8 +86,7 @@ export class BasicPersitance
 protected constructor (recordId: string){
 
             super();
-            //var recordId = recordId
-this.recordId= recordId;
+        this.recordId= recordId;
     
 }
 
@@ -95,7 +94,6 @@ this.recordId= recordId;
                 //@Throws(Exception.constructor)
             
     public deleteRecoreStore(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
     
 }
@@ -104,7 +102,6 @@ RecordStore.deleteRecordStore(this.getRecordId(abeClientInformation));
                 //@Throws(Exception.constructor)
             
     public deleteAll(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 
     var size: number = this.idList!.size()!;
 ;
@@ -133,8 +130,6 @@ this.clear();
                 //@Throws(Exception.constructor)
             
     public delete(abeClientInformation: AbeClientInformationInterface, deleteId: number){
-    //var abeClientInformation = abeClientInformation
-    //var deleteId = deleteId
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
 ;
@@ -180,7 +175,6 @@ recordStore!.closeRecordStore();
 
 
     public getRecordId(abeClientInformation: AbeClientInformationInterface): string{
-    //var abeClientInformation = abeClientInformation
 
 
 

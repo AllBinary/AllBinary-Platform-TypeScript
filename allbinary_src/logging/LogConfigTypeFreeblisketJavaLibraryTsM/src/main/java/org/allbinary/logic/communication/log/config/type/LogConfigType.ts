@@ -62,9 +62,7 @@ export class LogConfigType
 public constructor (name: string, description: string){
 
             super();
-        var name = name
-var description = description
-this.name= name;
+        this.name= name;
     
 this.description= description;
     
@@ -94,14 +92,12 @@ LogConfigType.availableLogConfigTypes!.add(this);
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
 
 
     public setDescription(value: string){
-var value = value
 this.description= value;
     
 }

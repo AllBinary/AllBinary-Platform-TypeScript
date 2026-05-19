@@ -77,7 +77,6 @@ export class UserConfigurationInterfaceFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(document: Document): UserConfigurationInterface{
-var document = document
 
     var configurationNode: Node = DomSearchHelper.getNode(UserConfigurationData.NAME, document.getChildNodes())!;
 ;
@@ -95,7 +94,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public static getInstance(userRole: UserRole): UserConfigurationInterface{
-var userRole = userRole
 
     var abPath: AbPath = new AbPath(URLGLOBALS.getMainPath() +FREEBLISKET_PATH_GLOBALS.getInstance()!.USERCONFIGURATIONPATH, UserConfigurationInterfaceFactory.configurationName +userRole!.toString() +AbPathData.getInstance()!.EXTENSION_SEP +UserConfigurationData.UNCRYPTED_EXTENSION);
 ;

@@ -102,8 +102,7 @@ export class RTSFormInput
 public constructor (groupInterfaceArray: Group[]){
 
             super();
-            //var groupInterfaceArray = groupInterfaceArray
-
+        
     var size: number = this.newUnconstructedRTSLayerInterfaceArray!.length
                 ;
 ;
@@ -141,17 +140,12 @@ this.hashtable.put(DirectionFactory.getInstance()!.NAME, DirectionFactory.getIns
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var point = point
 
     var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;
 ;
@@ -200,7 +194,6 @@ this.processGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, layerManag
                 //@Throws(Exception.constructor)
             
     public process(layerManager: AllBinaryLayerManager){
-    //var layerManager = layerManager
 this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
     
 }
@@ -209,21 +202,12 @@ this.setAllBinaryGameLayerManager(layerManager as AllBinaryGameLayerManager);
                 //@Throws(Exception.constructor)
             
     public processGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var item = item
-    //var index = index
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processSticky(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint): boolean{
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var point = point
 
     var index: number = this.getIndexAt(rtsPlayerLayerInterface, point)!;
 ;
@@ -278,19 +262,12 @@ this.processStickyGameSpecific(associatedRtsLayer, rtsPlayerLayerInterface, laye
                 //@Throws(Exception.constructor)
             
     public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
-var associatedRtsLayer = associatedRtsLayer
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var layerManager = layerManager
-var item = item
-var index = index
 }
 
 
                 //@Throws(Exception.constructor)
             
     getItemAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): ABCustomItem{
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var point = point
 this.logUtil!.putF(new StringMaker().
                             append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
@@ -310,8 +287,6 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     getIndexAt(rtsPlayerLayerInterface: RTSPlayerLayerInterface, point: GPoint): number{
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var point = point
 this.logUtil!.putF(new StringMaker().
                             append("Point: ")!.append(StringUtil.getInstance()!.toString(point))!.toString(), this, "getItemAt");
     
@@ -331,9 +306,6 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     getInstance(layerManager: AllBinaryLayerManager, aItem: ABCustomItem, geographicMapCellPosition: GeographicMapCellPosition): CollidableDestroyableDamageableLayer{
-    //var layerManager = layerManager
-    //var aItem = aItem
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var item: LayerInterfaceFactoryImageItem = aItem as LayerInterfaceFactoryImageItem;
 ;
@@ -383,7 +355,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public setSelectedGeographicCellPosition(selectedGeographicCellPosition: GeographicMapCellPosition){
-var selectedGeographicCellPosition = selectedGeographicCellPosition
 this.logUtil!.putF(new StringMaker().
                             append("Selected GeographicMapCellPosition: ")!.append(selectedGeographicCellPosition!.toString())!.toString(), this, "setSelectedGeographicCellPosition");
     
@@ -403,7 +374,6 @@ this.selectedGeographicCellPosition= selectedGeographicCellPosition;
 
 
     public setStickyItemSelected(stickyItemSelected: boolean){
-var stickyItemSelected = stickyItemSelected
 this.stickyItemSelected= stickyItemSelected;
     
 }
@@ -420,7 +390,6 @@ this.stickyItemSelected= stickyItemSelected;
 
 
     public setSelectedStickyItem(selectedStickyItem: ABCustomItem){
-var selectedStickyItem = selectedStickyItem
 this.selectedStickyItem= selectedStickyItem;
     
 }
@@ -437,7 +406,6 @@ this.selectedStickyItem= selectedStickyItem;
 
 
     public setSelectedStickyItemIndex(selectedStickyItemIndex: number){
-var selectedStickyItemIndex = selectedStickyItemIndex
 this.selectedStickyItemIndex= selectedStickyItemIndex;
     
 }

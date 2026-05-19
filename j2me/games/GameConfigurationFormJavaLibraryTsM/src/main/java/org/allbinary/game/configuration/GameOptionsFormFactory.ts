@@ -79,10 +79,6 @@ private constructor (){
 
 
     public init(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{
-var commandListener = commandListener
-var title = title
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
 
         try {
             

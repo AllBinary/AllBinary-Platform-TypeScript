@@ -62,10 +62,7 @@ export class StoreEmailInfo extends BasicEmailInfo {
     private storeFrontInterface: StoreFrontInterface
 public constructor (storeFrontInterface: StoreFrontInterface, subject: string, textBody: string){
             super(subject, textBody);
-                    var storeFrontInterface = storeFrontInterface
-var subject = subject
-var textBody = textBody
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

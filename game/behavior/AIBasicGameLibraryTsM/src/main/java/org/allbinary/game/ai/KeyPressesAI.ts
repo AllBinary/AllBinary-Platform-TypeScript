@@ -64,10 +64,7 @@ export class KeyPressesAI extends BasicAI {
     keys: Integer[]
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var hashtable = hashtable
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -100,7 +97,6 @@ this.keys[index]= hashtable.get(objectArray[index]! as Object) as Integer;
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.on)
                         
@@ -127,7 +123,7 @@ super.processKeyAI(this.keys[index]!.intValue());
             
     public toggle(){
 
-                        if(isOn())
+                        if(this.isOn())
                         
                                     {
                                     this.setOn(false);
@@ -161,7 +157,6 @@ this.setOn(true);
 
 
     setOn(on: boolean){
-var on = on
 this.on= on;
     
 }

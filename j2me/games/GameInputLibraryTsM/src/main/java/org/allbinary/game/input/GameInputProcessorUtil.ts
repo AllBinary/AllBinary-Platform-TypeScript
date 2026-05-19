@@ -49,7 +49,6 @@ export class GameInputProcessorUtil
         
 
     public static init(inputProcessorArray: GameInputProcessor[]){
-    //var inputProcessorArray = inputProcessorArray
 
     var noInputProcessor: GameInputProcessor = GameInputProcessor.getInstance()!;
 ;

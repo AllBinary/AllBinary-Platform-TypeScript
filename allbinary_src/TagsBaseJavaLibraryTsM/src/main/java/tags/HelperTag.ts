@@ -59,8 +59,7 @@ export class HelperTag extends PropertiesTag {
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
 
             super();
-            //var tagHelperFactoryInterface = tagHelperFactoryInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.JSPTAG))
                         
                                     {

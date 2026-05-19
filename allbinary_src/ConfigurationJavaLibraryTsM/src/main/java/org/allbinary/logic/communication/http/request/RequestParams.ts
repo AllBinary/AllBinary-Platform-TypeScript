@@ -86,8 +86,7 @@ public constructor (){
 public constructor (request: HttpServletRequest){
 
             super();
-        var request = request
-this.map= request.getParameterMap();
+        this.map= request.getParameterMap();
     
 this.logUtil!.putF("RequestParams Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
     
@@ -96,8 +95,7 @@ this.logUtil!.putF("RequestParams Size: " +this.getMap()!.keySet()!.size(), this
 public constructor (pageContext: PageContext){
 
             super();
-        var pageContext = pageContext
-this.map= pageContext!.getRequest()!.getParameterMap();
+        this.map= pageContext!.getRequest()!.getParameterMap();
     
 this.logUtil!.putF("Request Params Size: " +this.getMap()!.keySet()!.size(), this, this.commonStrings!.CONSTRUCTOR);
     
@@ -105,7 +103,6 @@ this.logUtil!.putF("Request Params Size: " +this.getMap()!.keySet()!.size(), thi
 
 
     setMap(map: Map){
-var map = map
 this.map= map;
     
 }
@@ -126,7 +123,6 @@ this.map= map;
     private readonly VALUE: string = " Value: ";
 
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

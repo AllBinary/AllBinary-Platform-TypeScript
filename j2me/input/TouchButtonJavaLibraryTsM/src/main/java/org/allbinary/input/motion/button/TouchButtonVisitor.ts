@@ -52,8 +52,6 @@ export class TouchButtonVisitor
                 //@Throws(Exception.constructor)
             
     public process(touchButtonInput: TouchButtonInput, string: string){
-var touchButtonInput = touchButtonInput
-var string = string
 }
 
 

@@ -67,7 +67,6 @@ export class SWTProcessor
     public runnable: Runnable = NullRunnable.getInstance()!;
 
     public process(display: Display){
-    //var display = display
 display.sleep();
     
 }

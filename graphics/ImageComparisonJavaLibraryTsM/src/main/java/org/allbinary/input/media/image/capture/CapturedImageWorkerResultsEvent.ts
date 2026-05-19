@@ -55,10 +55,7 @@ export class CapturedImageWorkerResultsEvent extends AllBinaryEventObject {
     private bufferedImage: BufferedImage
 public constructor (anyType: any = {}, frame: Long, bufferedImage: BufferedImage){
             super(anyType);
-                    var anyType = anyType
-var frame = frame
-var bufferedImage = bufferedImage
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,7 +77,6 @@ this.setBufferedImage(bufferedImage);
 
 
     setBufferedImage(bufferedImage: BufferedImage){
-var bufferedImage = bufferedImage
 this.bufferedImage= bufferedImage;
     
 }

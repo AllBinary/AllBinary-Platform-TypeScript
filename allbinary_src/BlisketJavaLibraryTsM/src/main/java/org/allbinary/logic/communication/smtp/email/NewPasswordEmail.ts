@@ -82,10 +82,7 @@ export class NewPasswordEmail
 public constructor (abeClientInformation: AbeClientInformationInterface, userInterface: UserInterface, newPassword: string){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var userInterface = userInterface
-var newPassword = newPassword
-this.abeClientInformation= abeClientInformation;
+        this.abeClientInformation= abeClientInformation;
     
 this.userInterface= userInterface;
     

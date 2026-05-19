@@ -54,12 +54,7 @@ export class AdjustCustomTextAnimation extends CustomTextAnimation {
     private dy: number
 public constructor (text: string, fontSize: number, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(text, fontSize, animationBehavior);
-                        //var text = text
-    //var fontSize = fontSize
-    //var dx = dx
-    //var dy = dy
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,7 +76,6 @@ this.dy= dy;
 
 
     public setDx(dx: number){
-var dx = dx
 this.dx= dx;
     
 }
@@ -98,16 +92,12 @@ this.dx= dx;
 
 
     public setDy(dy: number){
-var dy = dy
 this.dy= dy;
     
 }
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 super.paintXY(graphics, x +this.dx, y +this.dy);
     
 }

@@ -98,9 +98,7 @@ export class DbInitInfo extends DbConnectionInfo {
     private hasRead: boolean = false;
 public constructor (initFileName: string, read: boolean){
             super();
-                    var initFileName = initFileName
-var read = read
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -374,7 +372,6 @@ this.setPort(new WeakCrypt(7).
 
 
     public setHasRead(value: boolean){
-var value = value
 this.hasRead= value;
     
 }

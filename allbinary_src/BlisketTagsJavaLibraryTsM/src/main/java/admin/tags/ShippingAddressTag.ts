@@ -75,7 +75,6 @@ this.setTagRequestHelperFactory(new ShippingAddressHelperFactory());
 
 
     public setValue(value: string){
-var value = value
 this.value= value;
     
 }
@@ -233,7 +232,7 @@ this.value= value;
                         
                                     {
                                     
-                        if(this.getCommand()!.localeCompare(ShippingAddressData.SELECT) == 0)
+                        if(this.getCommand()!.compareTo(ShippingAddressData.SELECT) == 0)
                         
                                     {
                                     this.set();
@@ -248,7 +247,7 @@ this.value= value;
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(ShippingAddressData.SETTOBILLINGADDRESS) == 0)
+                        if(this.getCommand()!.compareTo(ShippingAddressData.SETTOBILLINGADDRESS) == 0)
                         
                                     {
                                     this.setToBillingAddress();

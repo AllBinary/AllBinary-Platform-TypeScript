@@ -71,8 +71,7 @@ export class UsersView extends HttpStoreComponentView implements DomNodeInterfac
     userVector: Vector
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,7 +79,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

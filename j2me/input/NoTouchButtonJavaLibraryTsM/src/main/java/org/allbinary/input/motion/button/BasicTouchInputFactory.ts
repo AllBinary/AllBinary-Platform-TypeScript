@@ -104,7 +104,6 @@ export class BasicTouchInputFactory
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public init(inputToGameKeyMapping: InputToGameKeyMapping){
-var inputToGameKeyMapping = inputToGameKeyMapping
 
                         if(!this.initialized)
                         
@@ -142,15 +141,12 @@ CancelTouchButtonInputFactory.getInstance();
 
 
     public updateAll(inputToGameKeyMapping: InputToGameKeyMapping){
-var inputToGameKeyMapping = inputToGameKeyMapping
 this.updateAllList(this.getList(), inputToGameKeyMapping);
     
 }
 
 
     public updateAllList(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
-var list = list
-var inputToGameKeyMapping = inputToGameKeyMapping
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START)!.appendint(list.size())!.toString(), this, "updateAll");
     

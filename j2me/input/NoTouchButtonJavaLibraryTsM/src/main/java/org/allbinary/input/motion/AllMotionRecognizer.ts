@@ -62,40 +62,24 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-var x = x
-var y = y
-var deviceId = deviceId
-var modifiers = modifiers
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-var x = x
-var y = y
-var deviceId = deviceId
-var modifiers = modifiers
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-var x = x
-var y = y
-var deviceId = deviceId
-var modifiers = modifiers
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-var x = x
-var y = y
-var deviceId = deviceId
-var modifiers = modifiers
 }
 
 

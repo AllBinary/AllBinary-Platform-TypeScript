@@ -77,7 +77,6 @@ this.EVENT_POOL.init(new TerrainEventFactory());
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getNext(basicTerrainInfo: BasicTerrainInfo): TerrainEvent{
-var basicTerrainInfo = basicTerrainInfo
 
     var trackingEvent: TerrainEvent = this.EVENT_POOL.getNextInstance() as TerrainEvent;
 ;

@@ -64,7 +64,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public init(level: number){
-var level = level
 super.initImageCache(OpenGLImageCacheFactory.getInstance(), level);
     
 }

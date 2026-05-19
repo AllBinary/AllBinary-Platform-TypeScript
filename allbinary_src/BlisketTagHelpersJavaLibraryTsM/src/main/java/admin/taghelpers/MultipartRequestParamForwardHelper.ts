@@ -85,12 +85,7 @@ export class MultipartRequestParamForwardHelper
 public constructor (parentHelperTag: HelperTag, page: string, command: string, paramVector: Vector, pageContext: PageContext){
 
             super();
-        var parentHelperTag = parentHelperTag
-var page = page
-var command = command
-var paramVector = paramVector
-var pageContext = pageContext
-this.pageContext= pageContext;
+        this.pageContext= pageContext;
     
 this.page= page;
     
@@ -238,7 +233,7 @@ stringBuffer!.append(value);
 ;
     
 
-                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand) && this.command.localeCompare(requestCommand) == 0))
+                        if(StringValidationUtil.getInstance()!.isEmpty(this.command) || (!StringValidationUtil.getInstance()!.isEmpty(requestCommand) && this.command.compareTo(requestCommand) == 0))
                         
                                     {
                                     

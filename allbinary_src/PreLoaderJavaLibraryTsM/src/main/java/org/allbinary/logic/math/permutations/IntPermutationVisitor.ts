@@ -42,8 +42,7 @@ export class IntPermutationVisitor extends Visitor {
 public constructor (data: number[]){
 
             super();
-            //var data = data
-this.data= data;
+        this.data= data;
     
 }
 
@@ -51,7 +50,6 @@ this.data= data;
     private stringBuilder: StringMaker = new StringMaker();
 
     public visit(anyType: any = {}): any{
-    //var anyType = anyType
 this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.print(this.data, stringBuilder);
@@ -66,7 +64,6 @@ this.print(this.data, stringBuilder);
 
 
     public print(data: number[]){
-    //var data = data
 
     var stringBuilder: StringMaker = new StringMaker();
 ;
@@ -77,8 +74,6 @@ this.print(data, stringBuilder);
 
 
     public print(data: number[], stringBuilder: StringMaker){
-    //var data = data
-    //var stringBuilder = stringBuilder
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;

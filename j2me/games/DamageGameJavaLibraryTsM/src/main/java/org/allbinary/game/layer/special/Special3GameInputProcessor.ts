@@ -53,8 +53,7 @@ export class Special3GameInputProcessor extends SpecialGameInputProcessor {
         
 public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
             super(collidableDestroyableDamageableLayer);
-                    var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,8 +63,6 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 this.collidableDestroyableDamageableLayer!.special3(allbinaryLayerManager, gameKeyEvent);
     
 }

@@ -57,8 +57,7 @@ export class BasicProfileActionScriptInputNode
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var actionNode: Node = DomSearchHelper.getNode(GenericProfileActionScriptInputData.NAME, node.getChildNodes())!;
 ;
     
@@ -73,7 +72,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(GenericProfileActionScriptInputData.NAME)!;
 ;

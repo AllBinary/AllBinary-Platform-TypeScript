@@ -68,8 +68,7 @@ public constructor (){
 
 public constructor (node: Node){
             super(node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -183,7 +182,6 @@ stringBuffer!.append(" Css Style is not valid.");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

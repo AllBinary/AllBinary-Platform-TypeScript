@@ -68,8 +68,6 @@ export class ParentInventoryTagHelper
                 //@Throws(Exception.constructor)
             
     public isValid(tagClass: any = {}, parentTag: Tag){
-var tagClass = tagClass
-var parentTag = parentTag
 
                         if(parentTag == 
                                     null

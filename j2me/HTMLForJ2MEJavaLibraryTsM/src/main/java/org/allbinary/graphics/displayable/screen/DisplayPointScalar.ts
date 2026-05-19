@@ -61,7 +61,6 @@ export class DisplayPointScalar
 
 
     public process(point: GPoint): GPoint{
-    //var point = point
 
 
 

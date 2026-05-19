@@ -58,7 +58,6 @@ public constructor (){
 
 
     public accept(arg0: java.io.File): boolean{
-var arg0 = arg0
 
 
 
@@ -71,7 +70,6 @@ visit.
 
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
 
     var file: File = anyType as File;
 ;

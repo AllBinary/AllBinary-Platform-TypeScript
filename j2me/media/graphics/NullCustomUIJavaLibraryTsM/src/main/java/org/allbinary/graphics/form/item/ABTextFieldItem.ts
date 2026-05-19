@@ -42,17 +42,7 @@ export class ABTextFieldItem extends ABTextItem {
         
 public constructor (canvas: Canvas, visitor: Visitor, label: string, value: string, maxSize: number, layout: number, altText: string, font: Font, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, layout, altText, backgroundBasicColor, foregroundBasicColor);
-                    var canvas = canvas
-var visitor = visitor
-var label = label
-var value = value
-var maxSize = maxSize
-var layout = layout
-var altText = altText
-    //var font = font
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -70,7 +60,6 @@ var foregroundBasicColor = foregroundBasicColor
 
 
     public setLabel(label: string){
-var label = label
 }
 
 
@@ -85,12 +74,10 @@ var label = label
 
 
     public setString(string: string){
-var string = string
 }
 
 
     public setFocus(state: boolean){
-var state = state
 }
 
 

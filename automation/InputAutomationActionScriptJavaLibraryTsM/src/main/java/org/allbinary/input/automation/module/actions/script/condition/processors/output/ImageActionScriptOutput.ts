@@ -85,8 +85,7 @@ export class ImageActionScriptOutput extends BasicProfileActionScriptOutput impl
     private actionScriptOutputJPanel: ImageActionScriptOutputJPanel
 public constructor (node: Node){
             super(NAME, node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -119,7 +118,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.SAVE) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.SAVE) == 0)
                         
                                     {
                                     
@@ -133,7 +132,7 @@ this.setSaved(.
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.DISPLAY) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.DISPLAY) == 0)
                         
                                     {
                                     
@@ -147,7 +146,7 @@ this.setSaved(.
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.TYPES) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPES) == 0)
                         
                                     {
                                     this.setImageTypes(new ImageTypes(childNode));
@@ -232,7 +231,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = super.toXmlNode(document)!;
 ;
@@ -257,7 +255,6 @@ node.appendChild(newNode);
                 //@Throws(Exception.constructor)
             
     public process(frame: Long){
-var frame = frame
 ImageActionScriptOutputProcessor.process(this, frame);
     
 }
@@ -280,7 +277,6 @@ this.actionScriptOutputJPanel!.getCapturedImageActionJDialog()!.setVisible(true)
 
 
     public setSaved(saved: boolean){
-var saved = saved
 this.saved= saved;
     
 }
@@ -297,7 +293,6 @@ this.saved= saved;
 
 
     public setDisplay(display: boolean){
-var display = display
 this.display= display;
     
 }
@@ -346,7 +341,6 @@ this.logUtil!.putF(this.future_toString(), this, "log");
 
 
     public setImageTypes(imageTypes: ImageTypes){
-var imageTypes = imageTypes
 this.imageTypes= imageTypes;
     
 }

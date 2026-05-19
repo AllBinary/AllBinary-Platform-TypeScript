@@ -87,13 +87,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
 
 
 
@@ -106,14 +99,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
-    //var mutable = mutable
 
     var width: number = originalImage!.getWidth()!;
 ;
@@ -163,14 +148,6 @@ this.scale(originalImage, image, scaleX, scaleY, true);
                 //@Throws(Exception.constructor)
             
     public scale2(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
-    //var originalImage = originalImage
-    //var originalImageArray = originalImageArray
-    //var ximageToShowArray = ximageToShowArray
-    //var unused = unused
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 
                         if(maxScaleX *originalImage!.getWidth() > originalImageArray[0]!.getWidth() || maxScaleY *originalImage!.getHeight() > originalImageArray[0]!.getHeight())
                         
@@ -186,11 +163,6 @@ this.scale(originalImage, originalImageArray[0]!, scaleX, scaleY, false);
 
 
     public scale(originalImage: Image, newMaxSizeImage: Image, scaleX: number, scaleY: number, clear: boolean){
-    //var originalImage = originalImage
-    //var newMaxSizeImage = newMaxSizeImage
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var clear = clear
 
     var bufferedImage: BufferedImage = this.imageUtil!.getBufferedImage(originalImage)!;
 ;

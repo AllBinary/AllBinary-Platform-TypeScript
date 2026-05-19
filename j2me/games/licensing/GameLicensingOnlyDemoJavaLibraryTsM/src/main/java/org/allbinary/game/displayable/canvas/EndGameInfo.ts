@@ -63,8 +63,6 @@ export class EndGameInfo
     private winStr: string = this.gameOverStr;
 
     public update(gameInfo: GameInfo, myCanvas: MyCanvas){
-    //var gameInfo = gameInfo
-    //var myCanvas = myCanvas
 
                         if(gameInfo!.isLastLevel())
                         
@@ -98,7 +96,6 @@ this.setGameOverStr(this.TEASER_DEMO_GAME_END);
 
 
     public setGameOverStr(gameOverStr: string){
-var gameOverStr = gameOverStr
 this.gameOverStr= gameOverStr;
     
 }
@@ -115,7 +112,6 @@ this.gameOverStr= gameOverStr;
 
 
     public setWinStr(winStr: string){
-var winStr = winStr
 this.winStr= winStr;
     
 }

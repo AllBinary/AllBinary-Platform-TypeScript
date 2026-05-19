@@ -70,7 +70,6 @@ export class AdvancedPlayerOwnedRTSLayers extends PlayerOwnedRTSLayers {
     private readonly factoryList: BasicArrayList = new BasicArrayListD();
 
     public addUnit(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.unitsList!.add(rtsLayer);
     
 this.rtsLayerList!.add(rtsLayer);
@@ -79,7 +78,6 @@ this.rtsLayerList!.add(rtsLayer);
 
 
     public addWaypoint(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.waypointsList!.add(rtsLayer);
     
 this.rtsLayerList!.add(rtsLayer);
@@ -88,7 +86,6 @@ this.rtsLayerList!.add(rtsLayer);
 
 
     public addBase(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.baseList!.add(rtsLayer);
     
 this.buildingList!.add(rtsLayer);
@@ -99,7 +96,6 @@ this.rtsLayerList!.add(rtsLayer);
 
 
     public addGarrison(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.garrisonList!.add(rtsLayer);
     
 this.buildingList!.add(rtsLayer);
@@ -110,7 +106,6 @@ this.rtsLayerList!.add(rtsLayer);
 
 
     public addHouse(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.houseList!.add(rtsLayer);
     
 this.buildingList!.add(rtsLayer);
@@ -121,7 +116,6 @@ this.rtsLayerList!.add(rtsLayer);
 
 
     public addLab(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.labList!.add(rtsLayer);
     
 this.buildingList!.add(rtsLayer);
@@ -132,7 +126,6 @@ this.rtsLayerList!.add(rtsLayer);
 
 
     public addFactory(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.factoryList!.add(rtsLayer);
     
 this.buildingList!.add(rtsLayer);
@@ -143,7 +136,6 @@ this.rtsLayerList!.add(rtsLayer);
 
 
     public removeUnit(gameLayer: AllBinaryGameLayer){
-var gameLayer = gameLayer
 this.unitsList!.remove(gameLayer);
     
 this.rtsLayerList!.remove(gameLayer);
@@ -152,7 +144,6 @@ this.rtsLayerList!.remove(gameLayer);
 
 
     public removeWaypoint(gameLayer: AllBinaryGameLayer){
-var gameLayer = gameLayer
 this.waypointsList!.remove(gameLayer);
     
 this.rtsLayerList!.remove(gameLayer);
@@ -241,7 +232,6 @@ this.rtsLayerList!.remove(gameLayer);
 
 
     public removeBuilding(layerInterface: AllBinaryGameLayer){
-var layerInterface = layerInterface
 this.buildingList!.add(layerInterface);
     
 

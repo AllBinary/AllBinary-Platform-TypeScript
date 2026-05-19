@@ -114,7 +114,6 @@ export class AndroidBasicTitleProgressBar extends ProgressCanvas implements Disp
     private static background: number= 0
 
     public static setBackgroundResource(background: number){
-var background = background
 AndroidBasicTitleProgressBar.background= background;
     
 }
@@ -139,10 +138,7 @@ AndroidBasicTitleProgressBar.background= background;
     private animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
-                    var title = title
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -198,7 +194,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.INIT,
 
 
     public initActivity(activity: Activity){
-var activity = activity
 
         try {
             
@@ -304,14 +299,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.UPDAT
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-var displayChangeEvent = displayChangeEvent
 
         try {
             this.loadProgressImages();
@@ -451,9 +444,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.END_M
 
 
     public addEarlyPortion(value: number, text: string, index: number){
-var value = value
-var text = text
-var index = index
 
         try {
             this.portion= value;
@@ -481,9 +471,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
 
 
     public addPortion(value: number, text: string, index: number){
-var value = value
-var text = text
-var index = index
 
         try {
             this.portion= value;
@@ -504,8 +491,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
 
 
     public addNormalPortion(value: number, text: string){
-var value = value
-var text = text
 
         try {
             this.portion= value;
@@ -526,7 +511,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.ADD_PORTION, e);
 
 
     setValue(value: number){
-var value = value
 
         try {
             super.setValue(value);
@@ -551,9 +535,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
                 //@Throws(Exception.constructor)
             
     setImages(index: number, lastWidth: number, lastHeight: number){
-var index = index
-var lastWidth = lastWidth
-var lastHeight = lastHeight
 
     var image: Image = this.image;
 ;
@@ -604,7 +585,6 @@ var lastHeight = lastHeight
                 //@Throws(Exception.constructor)
             
     public initOpenGL(graphics: Graphics){
-var graphics = graphics
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicTitleProgressBar.RESOURCE);
@@ -645,7 +625,6 @@ this.updateCurrent();
                 //@Throws(Exception.constructor)
             
     public update(graphics: Graphics){
-var graphics = graphics
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.UPDATE);
     
 this.initOpenGL(graphics);
@@ -686,7 +665,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     getImage(index: number): Image{
-var index = index
 
     var image: Image = NullCanvas.NULL_IMAGE;
 ;
@@ -716,7 +694,6 @@ var index = index
 
 
     public paint2(graphics: Graphics){
-var graphics = graphics
 
         try {
             this.animation.paintXY(graphics, 0, 20);
@@ -735,7 +712,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.canvasStrings!.PAINT
 
 
     setBackground(background: boolean){
-var background = background
 super.setBackground(background);
     
 this.updateCurrent();
@@ -744,7 +720,6 @@ this.updateCurrent();
 
 
     setPortion(portion: number){
-var portion = portion
 this.portion= portion;
     
 }

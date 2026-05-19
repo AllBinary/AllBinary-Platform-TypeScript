@@ -59,8 +59,7 @@ export class HighScoresCanvasInputProcessor extends PlayerGameInput {
     private readonly highScoresCanvas: HighScoresCanvas
 public constructor (highScoresCanvas: HighScoresCanvas){
             super(new BasicArrayListD(), new BasicArrayListD(),  -1);
-                    var highScoresCanvas = highScoresCanvas
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,7 +78,6 @@ this.highScoresCanvas= highScoresCanvas;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onPressGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 super.onPressGameKeyEvent(gameKeyEvent);
     
 this.update();
@@ -89,7 +87,6 @@ this.update();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 super.onDownGameKeyEvent(gameKeyEvent);
     
 this.update();
@@ -99,7 +96,6 @@ this.update();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 super.onUpGameKeyEvent(gameKeyEvent);
     
 this.update();
@@ -108,7 +104,6 @@ this.update();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 

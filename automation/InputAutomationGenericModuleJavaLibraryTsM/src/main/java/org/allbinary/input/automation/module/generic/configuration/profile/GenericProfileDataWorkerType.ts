@@ -74,7 +74,6 @@ export class GenericProfileDataWorkerType
     public static MOTION: GenericProfileDataWorkerType = new GenericProfileDataWorkerType(InputImageType.MOTION.getName());
 
     public static getInstance(node: Node): GenericProfileDataWorkerType{
-var node = node
 
     var name: string = DomNodeHelper.getTextNodeValue(node)!;
 ;
@@ -92,8 +91,7 @@ var node = node
 public constructor (name: string){
 
             super();
-        var name = name
-this.setName(name);
+        this.setName(name);
     
 GenericProfileDataWorkerType.hashMap!.put(this.getName(), this);
     
@@ -111,7 +109,6 @@ GenericProfileDataWorkerType.hashMap!.put(this.getName(), this);
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -120,7 +117,6 @@ this.name= name;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createTextNode(document, GenericProfileDataWorkerData.NAME, this.name)!;
 ;

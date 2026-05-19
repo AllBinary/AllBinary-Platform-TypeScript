@@ -64,8 +64,6 @@ export class LicenseRegistrationUtil
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static process(abeClientInformation: AbeClientInformationInterface, registrationId: string){
-    //var abeClientInformation = abeClientInformation
-    //var registrationId = registrationId
 
         try {
             

@@ -51,7 +51,6 @@ export class HighScoresHelper extends HighScoresHelperBase {
     private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstanceAt(0, 0)!;
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
-    //var highScoresArrayP = highScoresArrayP
 super.setHighScoresArray(highScoresArrayP);
     
 this.circularIndexUtil!.setSize(this.highScoresArrayP!.length);

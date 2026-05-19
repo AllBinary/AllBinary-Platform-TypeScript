@@ -48,8 +48,7 @@ export class LicenseLoadingType
  constructor (name: string){
 
             super();
-        var name = name
-}
+        }
 
 
 }

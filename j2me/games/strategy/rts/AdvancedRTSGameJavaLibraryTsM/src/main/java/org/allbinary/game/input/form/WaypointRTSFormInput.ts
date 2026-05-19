@@ -143,9 +143,7 @@ export class WaypointRTSFormInput extends RTSFormInput {
     private stickyAssociatedRtsLayer: PathFindingLayerInterface = NullPathFindingLayer.NULL_PATH_FINDING_LAYER;
 public constructor (groupInterface: Group[], isPrimaryWaypointCreator: boolean){
             super(groupInterface);
-                        //var groupInterface = groupInterface
-    //var isPrimaryWaypointCreator = isPrimaryWaypointCreator
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -177,7 +175,6 @@ this.noMoneyGameNotificationEvent= new GameNotificationEvent(this, RTSGameString
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 super.setAllBinaryGameLayerManager(allBinaryGameLayerManager);
     
 
@@ -206,10 +203,6 @@ this.noMoneyGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getFor
                 //@Throws(Exception.constructor)
             
     public processAtPoint(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, point: GPoint){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var point = point
 super.process(layerManager);
     
 
@@ -288,9 +281,6 @@ this.processCellPosition(rtsPlayerLayerInterface, layerManager, geographicMapCel
                 //@Throws(Exception.constructor)
             
     processCellPosition(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, geographicMapCellPosition: GeographicMapCellPosition){
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var itemIndex: number = this.getSelectedStickyItemIndex()!;
 ;
@@ -336,11 +326,6 @@ this.attemptBuild(rtsPlayerLayerInterface, layerManager, this.newUnconstructedRT
                 //@Throws(Exception.constructor)
             
     public processStickyGameSpecific(associatedRtsLayer: CollidableDestroyableDamageableLayer, rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, item: ABCustomItem, index: number){
-    //var associatedRtsLayer = associatedRtsLayer
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-var item = item
-var index = index
 this.logUtil!.putF("Set Sticking Item: " +item, this, "processSticky");
     
 this.setSelectedStickyItem(item);
@@ -359,10 +344,6 @@ this.getHashtable()!.put(Layer.ID, associatedRtsLayer);
                 //@Throws(Exception.constructor)
             
     attemptBuild(rtsPlayerLayerInterface: RTSPlayerLayerInterface, layerManager: AllBinaryLayerManager, layerInterface: RTSLayer, itemIndex: number): boolean{
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-    //var layerManager = layerManager
-    //var layerInterface = layerInterface
-    //var itemIndex = itemIndex
 this.logUtil!.putF("Layer: " +layerInterface, this, "attemptBuild");
     
 
@@ -579,7 +560,6 @@ rtsPlayerLayerInterface!.add(waypointAvancedRTSGameLayer!.getWaypointBehavior()!
                 //@Throws(Exception.constructor)
             
     addWayPoint(layerInterface: WaypointLayer){
-    //var layerInterface = layerInterface
 
     var stickyAssociatedAdvandedRtsLayer: AdvancedRTSGameLayer = this.stickyAssociatedRtsLayer as AdvancedRTSGameLayer;
 ;

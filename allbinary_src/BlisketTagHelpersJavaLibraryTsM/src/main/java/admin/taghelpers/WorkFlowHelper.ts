@@ -69,9 +69,7 @@ export class WorkFlowHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.hashMap= hashMap;
+        this.hashMap= hashMap;
     
 this.pageContext= pageContext;
     

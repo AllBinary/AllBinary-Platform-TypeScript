@@ -89,10 +89,7 @@ export class LicenseRegistrationTextBox extends CustomTextBox {
     private paintable: Paintable = NullPaintable.getInstance()!;
 public constructor (cmdListener: CommandListener, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(cmdListener, "Enter Registration Code:", StringUtil.getInstance()!.EMPTY_STRING, 60, TextField.ANY, Font.getDefaultFont(), backgrounBasicColor, foregroundBasicColor);
-                    var cmdListener = cmdListener
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -100,7 +97,6 @@ var foregroundBasicColor = foregroundBasicColor
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 this.removeAllCommands();
     
 this.addCommand(GameCommandsFactory.getInstance()!.CLOSE_AND_SHOW_GAME_CANVAS);
@@ -167,7 +163,6 @@ super.close();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics);
     
 this.paintable.paint(graphics);

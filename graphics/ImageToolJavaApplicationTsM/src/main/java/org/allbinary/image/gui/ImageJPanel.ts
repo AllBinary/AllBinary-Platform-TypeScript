@@ -70,8 +70,7 @@ export class ImageJPanel extends javax.swing.JPanel {
 public constructor (bufferedImage: BufferedImage){
 
             super();
-        var bufferedImage = bufferedImage
-this.initComponents();
+        this.initComponents();
     
 this.bufferedImage= bufferedImage;
     
@@ -83,7 +82,6 @@ this.setSize(this.bufferedImage!.getWidth(
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(!this.isDrawn)
                         

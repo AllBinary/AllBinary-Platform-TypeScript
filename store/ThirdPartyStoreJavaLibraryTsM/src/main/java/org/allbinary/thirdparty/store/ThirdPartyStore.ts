@@ -54,14 +54,12 @@ export class ThirdPartyStore
 public constructor (name: string){
 
             super();
-        var name = name
-this.name= name;
+        this.name= name;
     
 }
 
 
     public authorize(clientInformationInterface: AbeClientInformationInterface){
-var clientInformationInterface = clientInformationInterface
 }
 
 
@@ -76,7 +74,6 @@ var clientInformationInterface = clientInformationInterface
 
 
     setAuthorized(authorized: boolean){
-var authorized = authorized
 this.authorized= authorized;
     
 }

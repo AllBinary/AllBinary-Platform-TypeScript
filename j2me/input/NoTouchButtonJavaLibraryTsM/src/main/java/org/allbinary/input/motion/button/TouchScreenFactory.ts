@@ -82,7 +82,6 @@ private constructor (){
 
 
     public setTouch(touch: boolean){
-var touch = touch
 }
 
 

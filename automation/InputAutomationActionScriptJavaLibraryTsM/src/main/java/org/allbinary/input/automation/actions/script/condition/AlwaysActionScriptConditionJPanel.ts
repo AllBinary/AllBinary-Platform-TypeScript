@@ -68,8 +68,7 @@ export class AlwaysActionScriptConditionJPanel extends javax.swing.JPanel {
 public constructor (alwaysActionScriptConditionInterface: AlwaysActionScriptConditionInterface){
 
             super();
-        var alwaysActionScriptConditionInterface = alwaysActionScriptConditionInterface
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.initComponents();
     
@@ -133,7 +132,6 @@ this.alwaysActionScriptConditionInterface!.log();
 
 
     public setAlwaysActionJDialog(alwaysActionJDialog: javax.swing.JDialog){
-var alwaysActionJDialog = alwaysActionJDialog
 this.alwaysActionJDialog= alwaysActionJDialog;
     
 }
@@ -164,7 +162,6 @@ this.okJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okJButtonActionPerformed(evt);
     
 }
@@ -197,7 +194,6 @@ this.alwaysActionJButton!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 alwaysActionJButtonActionPerformed(evt);
     
 }
@@ -221,7 +217,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.update();
     
 this.getAlwaysActionJDialog()!.setVisible(false);
@@ -230,7 +225,6 @@ this.getAlwaysActionJDialog()!.setVisible(false);
 
 
     alwaysActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.getAlwaysActionJDialog()!.setVisible(true);
     
 }

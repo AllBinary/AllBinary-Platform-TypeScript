@@ -60,8 +60,7 @@ export class AbFileOutputStream extends OutputStream {
 public constructor (name: string){
 
             super();
-        var name = name
-this.fileOutputStream= new FileOutputStream(name);
+        this.fileOutputStream= new FileOutputStream(name);
     
 }
 
@@ -70,16 +69,14 @@ this.fileOutputStream= new FileOutputStream(name);
 public constructor (file: AbFile){
 
             super();
-        var file = file
-this.fileOutputStream= new FileOutputStream(AbFileNativeUtil.get(file));
+        this.fileOutputStream= new FileOutputStream(AbFileNativeUtil.get(file));
     
 }
 
 public constructor (fileOutputStream: FileOutputStream){
 
             super();
-        var fileOutputStream = fileOutputStream
-this.fileOutputStream= fileOutputStream;
+        this.fileOutputStream= fileOutputStream;
     
 }
 
@@ -103,7 +100,6 @@ this.fileOutputStream!.close();
                 //@Throws(IOException.constructor)
             
     public write(buffer: number[]){
-var buffer = buffer
 this.fileOutputStream!.write(buffer);
     
 }
@@ -112,9 +108,6 @@ this.fileOutputStream!.write(buffer);
                 //@Throws(IOException.constructor)
             
     public write(buffer: number[], offset: number, count: number){
-var buffer = buffer
-var offset = offset
-var count = count
 this.fileOutputStream!.write(buffer, offset, count);
     
 }
@@ -123,7 +116,6 @@ this.fileOutputStream!.write(buffer, offset, count);
                 //@Throws(IOException.constructor)
             
     public write(b: number){
-var b = b
 this.fileOutputStream!.write(b);
     
 }

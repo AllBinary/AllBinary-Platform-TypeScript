@@ -66,9 +66,7 @@ export class PathFindingNode
 public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition){
 
             super();
-            //var parent = parent
-    //var geographicMapCellPosition = geographicMapCellPosition
-this.parent= parent;
+        this.parent= parent;
     
 this.setGeographicMapCellPositionP(geographicMapCellPosition);
     
@@ -98,7 +96,6 @@ this.setGeographicMapCellPositionP(geographicMapCellPosition);
 
 
     public setGeographicMapCellPositionP(geographicMapCellPosition: GeographicMapCellPosition){
-    //var geographicMapCellPosition = geographicMapCellPosition
 this.geographicMapCellPosition= geographicMapCellPosition;
     
 }

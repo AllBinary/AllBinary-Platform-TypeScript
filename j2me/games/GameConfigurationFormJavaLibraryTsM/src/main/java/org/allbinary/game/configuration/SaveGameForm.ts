@@ -65,10 +65,6 @@ export class SaveGameForm extends CommandForm {
                 //@Throws(Exception.constructor)
             
     public static createForm(commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor): CommandForm{
-var commandListener = commandListener
-var title = title
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
 SaveGameForm.FORM= new SaveGameForm(commandListener, title, backgrounBasicColor, foregroundBasicColor);
     
 
@@ -91,11 +87,7 @@ SaveGameForm.FORM= new SaveGameForm(commandListener, title, backgrounBasicColor,
 
 private constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
-                    var commandListener = commandListener
-var title = title
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -113,7 +105,6 @@ this.initCommands(commandListener);
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
 ;

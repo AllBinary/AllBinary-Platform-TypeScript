@@ -67,7 +67,6 @@ export class HttpFilePermissionsUtil
                 //@Throws(Exception.constructor)
             
     public create(path: AbPath){
-var path = path
 
     var file: AbFile = new AbFile(path);
 ;

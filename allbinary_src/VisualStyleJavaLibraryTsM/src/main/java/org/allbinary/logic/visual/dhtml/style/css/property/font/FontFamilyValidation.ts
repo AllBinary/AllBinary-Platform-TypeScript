@@ -68,8 +68,7 @@ public constructor (){
 
 public constructor (node: Node){
             super(node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -189,7 +188,6 @@ stringBuffer!.append("Css Font Family Property Validation Error");
                 //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

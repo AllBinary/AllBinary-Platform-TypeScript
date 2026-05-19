@@ -55,7 +55,6 @@ export class BaseSecretComposite
                 //@Throws(Exception.constructor)
             
     public encrypt(array: number[]): number[]{
-    //var array = array
 
 
 
@@ -68,7 +67,6 @@ export class BaseSecretComposite
                 //@Throws(Exception.constructor)
             
     public decrypt(array: number[]): number[]{
-var array = array
 
 
 

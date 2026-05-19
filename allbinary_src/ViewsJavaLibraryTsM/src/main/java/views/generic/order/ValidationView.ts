@@ -66,8 +66,7 @@ export class ValidationView extends OrderView implements ValidationComponentInte
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -278,7 +277,6 @@ stringBuffer!.append("<br />");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

@@ -59,7 +59,6 @@ export class PositionWidget extends BasicHud {
         
 
     public static toString(position: number): string{
-var position = position
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -113,11 +112,7 @@ stringBuffer!.append(position.toString());
     private positionString: string = StringUtil.getInstance()!.EMPTY_STRING;
 public constructor (position: number, location: number, direction: number, basicColor: BasicColor){
             super(location, direction, 10, 40, 2, basicColor);
-                    var position = position
-var location = location
-var direction = direction
-var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -135,7 +130,6 @@ var basicColor = basicColor
 
 
     public set(position: number){
-var position = position
 this.position= position;
     
 this.positionString= PositionWidget.toString(this.get());
@@ -144,7 +138,6 @@ this.positionString= PositionWidget.toString(this.get());
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics, this.positionString);
     
 }

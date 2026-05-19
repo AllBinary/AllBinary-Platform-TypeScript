@@ -65,8 +65,7 @@ export class AbstractArrayListPool
 public constructor (cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface){
 
             super();
-        var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
-this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
+        this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
     
 }
 
@@ -85,7 +84,6 @@ this.cacheableInterfaceFactoryInterface= cacheableInterfaceFactoryInterface;
                 //@Throws(Exception.constructor)
             
     public remove(key: any = {}): CacheableInterface{
-var key = key
 
 
 
@@ -97,7 +95,6 @@ var key = key
                 //@Throws(Exception.constructor)
             
     public add(cacheableInterface: CacheableInterface){
-var cacheableInterface = cacheableInterface
 this.buffers.add(cacheableInterface);
     
 }
@@ -106,7 +103,6 @@ this.buffers.add(cacheableInterface);
                 //@Throws(Exception.constructor)
             
     public addArray(cacheableInterfaces: CacheableInterface[]){
-var cacheableInterfaces = cacheableInterfaces
 
 
 

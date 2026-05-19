@@ -45,7 +45,6 @@ export class OpenGLThreadUtil
 
 
     public set(glSurfaceView: any = {}){
-var glSurfaceView = glSurfaceView
 }
 
 

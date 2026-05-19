@@ -55,8 +55,6 @@ export class ClassUtil
         
 
     public static viewAll(anyType: any = {}, lineBreak: string): string{
-var anyType = anyType
-var lineBreak = lineBreak
 
                         if(anyType != 
                                     null
@@ -79,8 +77,6 @@ var lineBreak = lineBreak
 
 
     public static viewAll(myClass: Function, lineBreak: string): string{
-var myClass = myClass
-var lineBreak = lineBreak
 
                         if(myClass != 
                                     null

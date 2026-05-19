@@ -60,8 +60,7 @@ export class AdvertisementCampaign
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.hashMap= hashMap;
+        this.hashMap= hashMap;
     
 }
 
@@ -87,21 +86,18 @@ this.hashMap= hashMap;
 
 
     public setComponentName(name: string){
-var name = name
 this.hashMap!.put(DynamicObjectData.NAME, name);
     
 }
 
 
     public setName(name: string){
-var name = name
 this.hashMap!.put(AdvertisementCampaignData.getInstance()!.NAME, name);
     
 }
 
 
     public search(advertisementSearchInterface: AdvertisementSearchInterface): AdvertisementsInterface{
-var advertisementSearchInterface = advertisementSearchInterface
 
 
 

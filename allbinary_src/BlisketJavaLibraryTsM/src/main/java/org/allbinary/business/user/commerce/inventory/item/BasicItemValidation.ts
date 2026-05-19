@@ -71,8 +71,7 @@ export class BasicItemValidation extends Validation {
 public constructor (itemInterface: ItemInterface){
 
             super();
-        var itemInterface = itemInterface
-this.itemInterface= itemInterface;
+        this.itemInterface= itemInterface;
     
 }
 
@@ -738,7 +737,6 @@ this.itemInterface= itemInterface;
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

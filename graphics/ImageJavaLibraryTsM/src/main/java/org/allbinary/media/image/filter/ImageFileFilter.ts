@@ -49,7 +49,6 @@ export class ImageFileFilter extends FileFilter {
         
 
     public accept(f: File): boolean{
-var f = f
 
                         if(f.isDirectory())
                         

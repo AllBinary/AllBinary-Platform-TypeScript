@@ -63,14 +63,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(sourceLayerInterface: AllBinaryLayer, x: number, y: number, z: number, angle: number, otherAngle: number, weaponProperties: WeaponProperties, scoreable: ScoreableInterface): WeaponLayer{
-var sourceLayerInterface = sourceLayerInterface
-var x = x
-var y = y
-var z = z
-var angle = angle
-var otherAngle = otherAngle
-var weaponProperties = weaponProperties
-var scoreable = scoreable
 
     var weaponLayer: WeaponLayer = super.getNextInstance() as WeaponLayer;
 ;

@@ -66,11 +66,7 @@ export class InputProbability
 public constructor (likelyhoodIntegerArray: Integer[][], repeatLikelyhoodIntegerArray: Integer[], max: number, timeDelayHelper: TimeDelayHelper){
 
             super();
-        var likelyhoodIntegerArray = likelyhoodIntegerArray
-var repeatLikelyhoodIntegerArray = repeatLikelyhoodIntegerArray
-var max = max
-var timeDelayHelper = timeDelayHelper
-this.likelyhoodIntegerArray= likelyhoodIntegerArray;
+        this.likelyhoodIntegerArray= likelyhoodIntegerArray;
     
 this.repeatLikelyhoodIntegerArray= repeatLikelyhoodIntegerArray;
     

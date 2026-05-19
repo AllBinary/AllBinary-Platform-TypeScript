@@ -74,8 +74,7 @@ this.setEmailServerConfigurationInterface(new EmailServerConfiguration() as Emai
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration(HashMap)");
+        this.logUtil!.putF(this.commonStrings!.START, this, "ContextConfiguration(HashMap)");
     
 this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) as EmailServerConfigurationInterface);
     
@@ -93,7 +92,6 @@ this.setEmailServerConfigurationInterface(new EmailServerConfiguration(hashMap) 
 
 
     public setEmailServerConfigurationInterface(emailServerConfigurationInterface: EmailServerConfigurationInterface){
-var emailServerConfigurationInterface = emailServerConfigurationInterface
 this.emailServerConfigurationInterface= emailServerConfigurationInterface;
     
 }

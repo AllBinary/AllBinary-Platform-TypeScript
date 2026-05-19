@@ -65,10 +65,7 @@ export class PathFindingNodeCost extends PathFindingNode implements Comparable<P
     public pathFindingNodeCostInfoP: PathFindingNodeCostInfo
 public constructor (parent: any = {}, geographicMapCellPosition: GeographicMapCellPosition, pathFindingNodeCostInfo: PathFindingNodeCostInfo){
             super(parent, geographicMapCellPosition);
-                        //var parent = parent
-    //var geographicMapCellPosition = geographicMapCellPosition
-    //var pathFindingNodeCostInfo = pathFindingNodeCostInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -116,19 +113,17 @@ this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
 
 
     public setPathFindingNodeCostInfo(pathFindingNodeCostInfo: PathFindingNodeCostInfo){
-var pathFindingNodeCostInfo = pathFindingNodeCostInfo
 this.pathFindingNodeCostInfoP= pathFindingNodeCostInfo;
     
 }
 
 
-    public localeCompare(pathFindingNodeCost: PathFindingNodeCost): number{
-var pathFindingNodeCost = pathFindingNodeCost
+    public compareTo(pathFindingNodeCost: PathFindingNodeCost): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.pathFindingNodeCostInfoP!.localeCompare(pathFindingNodeCost!.pathFindingNodeCostInfoP);;
+                        return this.pathFindingNodeCostInfoP!.compareTo(pathFindingNodeCost!.pathFindingNodeCostInfoP);;
     
 }
 

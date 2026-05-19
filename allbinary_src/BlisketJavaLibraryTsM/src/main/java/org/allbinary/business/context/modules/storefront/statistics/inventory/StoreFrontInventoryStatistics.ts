@@ -74,8 +74,7 @@ export class StoreFrontInventoryStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-        var storeFrontInterface = storeFrontInterface
-this.totalInventorySaleValueMoney= new Money();
+        this.totalInventorySaleValueMoney= new Money();
     
 
     var inventoryEntityInterface: InventoryEntityInterface = InventoryEntityFactory.getInstance()!.getInventoryEntityInstance()!;

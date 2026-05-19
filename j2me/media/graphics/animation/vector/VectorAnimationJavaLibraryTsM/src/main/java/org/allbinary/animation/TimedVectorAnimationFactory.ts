@@ -53,8 +53,6 @@ export class TimedVectorAnimationFactory
         
 
     public getInstance(points: number[][][], basicColor: BasicColor): VectorAnimation{
-    //var points = points
-    //var basicColor = basicColor
 
 
 

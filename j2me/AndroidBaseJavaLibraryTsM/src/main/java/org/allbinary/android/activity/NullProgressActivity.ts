@@ -52,7 +52,6 @@ export class NullProgressActivity
     public static readonly NULL_PROGRESS_ACTIVITY: NullProgressActivity = new NullProgressActivity();
 
     public runOnUiThread(action: Runnable){
-var action = action
 }
 
 
@@ -61,13 +60,10 @@ var action = action
 
 
     public onShowTitleProgressBar(value: number, indeterminate: boolean){
-var value = value
-var indeterminate = indeterminate
 }
 
 
     public onTitleProgressBarSetProgress(value: number){
-var value = value
 }
 
 

@@ -74,15 +74,13 @@ export class RandomRotationFactory
                 //@Throws(Exception.constructor)
             
     public getInstanceList(vector: BasicArrayList, howMuch: number): BasicArrayList{
-var vector = vector
-var howMuch = howMuch
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(vector);
 ;
     
 graphicsPipe!.createMatrix();
     
-graphicsPipe!.rotateToAngle(this.angleFactory!.getAt(getNextRandomAngle(howMuch)));
+graphicsPipe!.rotateToAngle(this.angleFactory!.getAt(this.getNextRandomAngle(howMuch)));
     
 
 
@@ -94,7 +92,6 @@ graphicsPipe!.rotateToAngle(this.angleFactory!.getAt(getNextRandomAngle(howMuch)
 
 
     public getNextRandomAngle(howMuch: number): number{
-var howMuch = howMuch
 
 
 

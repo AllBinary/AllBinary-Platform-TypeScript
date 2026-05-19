@@ -60,9 +60,6 @@ export class UserEmailEventListenerFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(abeClientInformation: AbeClientInformationInterface, userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface, userInterface: UserInterface): UserEmailEventListenerInterface{
-    //var abeClientInformation = abeClientInformation
-    //var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-    //var userInterface = userInterface
 
     var params: any[] = new Array(1);
 ;

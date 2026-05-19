@@ -84,7 +84,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(document: Document): ContextConfigurationInterface{
-    //var document = document
 
     var contextConfigurationData: ContextConfigurationData = ContextConfigurationData.getInstance()!;
 ;
@@ -106,7 +105,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(contextName: string): ContextConfigurationInterface{
-    //var contextName = contextName
 
     var abPath: AbPath = ContextConfigurationPathUtil.getAbPath(contextName)!;
 ;

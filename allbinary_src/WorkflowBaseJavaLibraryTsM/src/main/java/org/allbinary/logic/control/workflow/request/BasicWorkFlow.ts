@@ -113,9 +113,7 @@ this.workFlowDoc!.appendChild(workFlowNode);
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-
+        
     var weblisketSession: WeblisketSession = new WeblisketSession(hashMap, pageContext);
 ;
     
@@ -135,8 +133,7 @@ this.workFlowDoc= DomDocumentHelper.create(requestHashMap!.get(WorkFlowData.getI
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
+        this.workFlowName= hashMap!.get(WorkFlowData.getInstance()!.NAME) as string;
     
 this.storeName= hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
     
@@ -244,7 +241,6 @@ hashMap!.put(EntryData.getInstance()!.LASTMODIFIED, time);
 
 
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             
@@ -452,7 +448,6 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

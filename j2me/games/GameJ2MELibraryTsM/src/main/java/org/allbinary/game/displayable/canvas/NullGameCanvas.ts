@@ -105,7 +105,6 @@ LogUtil.getInstance()!.put(CommonStrings.getInstance()!.EXCEPTION, "NullGameCanv
                 //@Throws(Exception.constructor)
             
     public static createCanvas(gameLayerManager: AllBinaryGameLayerManager): NullGameCanvas{
-    //var gameLayerManager = gameLayerManager
 
     var nullGameCanvas: NullGameCanvas = new NullGameCanvas(gameLayerManager);
 ;
@@ -128,8 +127,7 @@ nullGameCanvas!.setTitle(NullGameCanvas.NO_GAME);
     public static readonly TYPE: number = 1;
 protected constructor (gameLayerManager: AllBinaryGameLayerManager){
             super(NullCommandListener.NULL_COMMAND_LISTENER, gameLayerManager, NoHighScoresFactory.getInstance(), BasicBuildGameInitializerFactory.NULL_BASE_BUILD_GMAE_INITIALIZER_FACTORY, false);
-                        //var gameLayerManager = gameLayerManager
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -152,7 +150,6 @@ super.setWait(1200);
     private running: boolean = true;
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }
@@ -184,7 +181,6 @@ this.setPaused(false);
 
 
     public initCommands(cmdListener: CommandListener){
-    //var cmdListener = cmdListener
 this.removeAllCommands();
     
 this.setCommandListener(cmdListener);
@@ -195,12 +191,10 @@ this.setCommandListener(cmdListener);
                 //@Throws(Exception.constructor)
             
     public buildGameInit(isProgress: boolean){
-    //var isProgress = isProgress
 }
 
 
     public draw(graphics: Graphics){
-    //var graphics = graphics
 }
 
 

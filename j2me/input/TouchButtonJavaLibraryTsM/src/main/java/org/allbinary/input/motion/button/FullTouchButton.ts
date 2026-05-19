@@ -64,12 +64,6 @@ export class FullTouchButton extends TouchButton {
                 //@Throws(Exception.constructor)
             
     public static createButton(touchButtonInput: TouchButtonInput, touchButtonResource: TouchButtonResource, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number): FullTouchButton{
-    //var touchButtonInput = touchButtonInput
-    //var touchButtonResource = touchButtonResource
-    //var rawRectangle = rawRectangle
-    //var cellPosition = cellPosition
-    //var xBorder = xBorder
-    //var yBorder = yBorder
 
 
 
@@ -80,14 +74,7 @@ export class FullTouchButton extends TouchButton {
 
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: Animation, hintAnimationInterface: Animation, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
             super(touchButtonInput, animationInterface, hintAnimationInterface, rawRectangle, cellPosition, xBorder, yBorder);
-                        //var touchButtonInput = touchButtonInput
-    //var animationInterface = animationInterface
-    //var hintAnimationInterface = hintAnimationInterface
-    //var rawRectangle = rawRectangle
-    //var cellPosition = cellPosition
-    //var xBorder = xBorder
-    //var yBorder = yBorder
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

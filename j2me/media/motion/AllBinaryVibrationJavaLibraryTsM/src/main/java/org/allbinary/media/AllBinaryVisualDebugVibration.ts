@@ -60,9 +60,6 @@ export class AllBinaryVisualDebugVibration extends AllBinaryVibrationME {
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(Integer.MAX_VALUE);
 
     public vibrate(duration: number, type: number, volume: number){
-    //var duration = duration
-    //var type = type
-    //var volume = volume
 this.timeDelayHelper!.delay= duration;
     
 }
@@ -73,7 +70,6 @@ this.timeDelayHelper!.delay= duration;
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(this.timeDelayHelper!.isTimeTNT())
                         

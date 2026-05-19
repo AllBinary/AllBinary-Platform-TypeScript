@@ -76,8 +76,7 @@ export class ImageComparatorConstraints
 public constructor (doImageComparisonEveryNthFrame: number){
 
             super();
-        var doImageComparisonEveryNthFrame = doImageComparisonEveryNthFrame
-this.doImageComparisonEveryNthFrame= doImageComparisonEveryNthFrame;
+        this.doImageComparisonEveryNthFrame= doImageComparisonEveryNthFrame;
     
 this.setAvoidVector(new Vector());
     
@@ -95,9 +94,6 @@ this.setAvoidVector(new Vector());
 
 
     public isColorAllowed(frame: number, point: GPoint, color: Color): boolean{
-var frame = frame
-var point = point
-var color = color
 
 
 
@@ -107,7 +103,6 @@ var color = color
 
 
     public isCollisionWithAvoidRectangles(rectangle: Rectangle): boolean{
-var rectangle = rectangle
 
     var isCollsionWithAvoidRectangles: boolean = false;
 ;
@@ -153,7 +148,6 @@ index < size; index++)
 
 
     public isCollisionWithAvoidRectangles(point: GPoint): boolean{
-var point = point
 
     var isCollsionWithAvoidRectangles: boolean = false;
 ;
@@ -202,7 +196,6 @@ break;
 
 
     public setAvoidVector(avoidVector: Vector){
-var avoidVector = avoidVector
 this.avoidVector= avoidVector;
     
 }
@@ -219,14 +212,12 @@ this.avoidVector= avoidVector;
 
 
     public setMaxNonMatchingPixelDeltas(maxNonMatchingPixelDeltas: number){
-var maxNonMatchingPixelDeltas = maxNonMatchingPixelDeltas
 this.maxNonMatchingPixelDeltas= maxNonMatchingPixelDeltas;
     
 }
 
 
     public isFrameAllowed(frame: number): boolean{
-var frame = frame
 
     var remainder: number = ((frame +1) % this.doImageComparisonEveryNthFrame);
 ;
@@ -262,7 +253,6 @@ this.logUtil!.putF(" Frame: " +frame +" remainder: " +remainder +" this.doImageC
                 //@Throws(Exception.constructor)
             
     public isImageValid(bufferedImage: BufferedImage): boolean{
-var bufferedImage = bufferedImage
 
 
 

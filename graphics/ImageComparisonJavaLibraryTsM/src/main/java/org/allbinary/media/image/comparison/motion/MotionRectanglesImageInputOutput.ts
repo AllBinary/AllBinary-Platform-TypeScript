@@ -107,7 +107,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public save(frame: Long){
-var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -161,8 +160,6 @@ this.save(motionRectangles, frame);
                 //@Throws(Exception.constructor)
             
     public save(motionRectangles: MotionRectangles, frame: Long){
-var motionRectangles = motionRectangles
-var frame = frame
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

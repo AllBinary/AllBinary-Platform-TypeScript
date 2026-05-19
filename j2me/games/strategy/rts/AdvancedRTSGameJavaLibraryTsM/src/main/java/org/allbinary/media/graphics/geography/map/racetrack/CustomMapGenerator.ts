@@ -70,8 +70,7 @@ export class CustomMapGenerator extends CustomMapGeneratorBase {
 public constructor (raceTrackGeographicMap: RaceTrackGeographicMap){
 
             super();
-            //var raceTrackGeographicMap = raceTrackGeographicMap
-this.raceTrackGeographicMap= raceTrackGeographicMap;
+        this.raceTrackGeographicMap= raceTrackGeographicMap;
     
 this.geographicMapCellTypeFactory= this.raceTrackGeographicMap!.getGeographicMapCellTypeFactory();
     
@@ -142,9 +141,6 @@ this.customMapArray[index]![index2]= this.getCustomType(index2, index, mapArray[
                 //@Throws(Exception.constructor)
             
     public getCustomType(column: number, row: number, currentType: number): number{
-    //var column = column
-    //var row = row
-    //var currentType = currentType
 
     var emptyType: number = this.geographicMapCellTypeFactory!.getEmptyType()!;
 ;

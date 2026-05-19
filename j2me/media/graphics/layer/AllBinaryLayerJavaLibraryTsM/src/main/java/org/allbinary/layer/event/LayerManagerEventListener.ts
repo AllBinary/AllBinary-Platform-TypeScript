@@ -53,21 +53,18 @@ export class LayerManagerEventListener
         
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 }
 
 
                 //@Throws(Exception.constructor)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
-    //var layerManagerEvent = layerManagerEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
-    //var layerManagerEvent = layerManagerEvent
 }
 
 

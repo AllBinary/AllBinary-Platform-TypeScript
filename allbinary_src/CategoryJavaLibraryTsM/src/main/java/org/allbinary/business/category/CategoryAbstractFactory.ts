@@ -86,7 +86,6 @@ public constructor (){
 
 
     public getRootInstance(categoryAbPath: AbPath): CategoryInterface{
-var categoryAbPath = categoryAbPath
 
 
 
@@ -96,7 +95,6 @@ var categoryAbPath = categoryAbPath
 
 
     public getRootInstanceFromNode(node: Node): CategoryInterface{
-var node = node
 
 
 
@@ -106,7 +104,6 @@ var node = node
 
 
     public getInstance(categoryName: string): CategoryInterface{
-var categoryName = categoryName
 
         try {
             
@@ -153,9 +150,6 @@ var categoryName = categoryName
 
 
     public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryName: string): CategoryInterface{
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryName = categoryName
 
         try {
             
@@ -202,7 +196,6 @@ var categoryName = categoryName
 
 
     public getInstance(node: Node): CategoryInterface{
-var node = node
 
         try {
             
@@ -249,9 +242,6 @@ var node = node
 
 
     public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface{
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var node = node
 
         try {
             
@@ -298,9 +288,6 @@ var node = node
 
 
     public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryPropertiesHashMap = categoryPropertiesHashMap
 
         try {
             

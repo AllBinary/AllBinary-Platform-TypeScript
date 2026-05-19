@@ -62,8 +62,7 @@ export class TransformInfoInterfaceView
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 }
 
@@ -71,7 +70,6 @@ this.transformInfoInterface= transformInfoInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
 
 

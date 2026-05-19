@@ -59,21 +59,18 @@ export class AdvertisementCampaigns
 public constructor (vector: Vector){
 
             super();
-        var vector = vector
-this.advertisementsVector= this.advertisementsVector;
+        this.advertisementsVector= this.advertisementsVector;
     
 }
 
 
     public add(advertisementInterface: AdvertisementInterface){
-var advertisementInterface = advertisementInterface
 this.advertisementsVector!.add(advertisementInterface);
     
 }
 
 
     public get(index: number): AdvertisementInterface{
-var index = index
 
 
 
@@ -104,7 +101,6 @@ var index = index
 
 
     public search(advertisementSearchInterface: AdvertisementSearchInterface): AdvertisementsInterface{
-var advertisementSearchInterface = advertisementSearchInterface
 
 
 

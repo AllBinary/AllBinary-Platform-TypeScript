@@ -85,8 +85,7 @@ export class CollidableUnitBehavior extends CollidableRTSBehavior {
     private readonly layerPartialCellPositionsUtil: LayerPartialCellPositionsUtil = LayerPartialCellPositionsUtil.getInstance()!;
 public constructor (collidable: boolean){
             super(collidable);
-                        //var collidable = collidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -96,8 +95,6 @@ public constructor (collidable: boolean){
                 //@Throws(Exception.constructor)
             
     collideNone(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 this.chase(ownerLayer, collidableInterfaceCompositeInterface);
     
 
@@ -121,7 +118,6 @@ SimpleSteeringVisitor = class extends SteeringVisitor {
         
 
     public visit(anyType: any = {}): any{
-    //var anyType = anyType
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -199,8 +195,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
                 //@Throws(Exception.constructor)
             
     steer(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var ownerUnitLayer: UnitLayer = ownerLayer as UnitLayer;
 ;
@@ -260,8 +254,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
                 //@Throws(Exception.constructor)
             
     chase(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
     var rtsLayer: AdvancedRTSGameLayer = collidableInterfaceCompositeInterface as AdvancedRTSGameLayer;
 ;
@@ -305,8 +297,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, "visit", e);
                 //@Throws(Exception.constructor)
             
     collideUnit(ownerLayer: CollidableCompositeLayer, unitLayer: UnitLayer){
-    //var ownerLayer = ownerLayer
-    //var unitLayer = unitLayer
 
     var ownerUnitLayer: UnitLayer = ownerLayer as UnitLayer;
 ;

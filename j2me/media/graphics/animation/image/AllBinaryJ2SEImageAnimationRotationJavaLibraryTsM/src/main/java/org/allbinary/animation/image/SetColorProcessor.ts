@@ -64,11 +64,6 @@ export class SetColorProcessor extends ModifierBaseProcessor {
 
 
     public updateColor(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, basicColor: BasicColor){
-    //var imageModifierUtil = imageModifierUtil
-    //var originalImage = originalImage
-    //var imageToShow = imageToShow
-    //var index = index
-    //var basicColor = basicColor
 imageModifierUtil!.setColor(originalImage, imageToShow, index, basicColor);
     
 }

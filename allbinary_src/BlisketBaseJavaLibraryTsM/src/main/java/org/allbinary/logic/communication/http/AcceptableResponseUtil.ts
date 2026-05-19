@@ -78,7 +78,6 @@ TsUtil.getInstance()!.hashCode(AcceptableResponseFactory.getInstance()!.HTML);
     public readonly tagNameVector: Vector = new Vector();
 
     public get(index: number): string{
-var index = index
 
 
 
@@ -89,7 +88,6 @@ var index = index
 
 
     public getTagName(index: number): string{
-var index = index
 
 
 

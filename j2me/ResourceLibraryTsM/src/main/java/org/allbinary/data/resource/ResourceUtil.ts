@@ -85,7 +85,6 @@ private constructor (){
 
 
     public setClassLoader(classLoader: ClassLoader){
-    //var classLoader = classLoader
 this.logUtil!.putF(new StringMaker().
                             append("Resource Loader: ")!.append(classLoader!.constructor.name.toString()!)!.toString(), this, "setClassLoader");
     
@@ -97,7 +96,6 @@ ResourceUtil.classLoader= classLoader;
                 //@Throws(Exception.constructor)
             
     public getResourceAsStream(resource: string): InputStream{
-    //var resource = resource
 
     var inputStream: InputStream = this.getResourceAsStreamAtStart(resource, 2)!;
 ;
@@ -140,8 +138,6 @@ ResourceUtil.classLoader= classLoader;
                 //@Throws(Exception.constructor)
             
     getResourceAsStreamAtStart(resource: string, startIndex: number): InputStream{
-    //var resource = resource
-    //var startIndex = startIndex
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;
@@ -221,8 +217,6 @@ inputStream= Thread.currentThread()!.getContextClassLoader()!.getResourceAsStrea
 
 
     public addResource(resource: string, value: Integer){
-    //var resource = resource
-    //var value = value
 }
 
 

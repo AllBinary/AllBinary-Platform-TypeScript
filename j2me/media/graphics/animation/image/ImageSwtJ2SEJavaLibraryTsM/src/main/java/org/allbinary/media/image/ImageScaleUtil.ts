@@ -93,13 +93,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage2(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
 
 
 
@@ -112,14 +105,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImage3(imageCache: ImageCache, originalImage: Image, scaleNominatorX: number, scaleDenominatorX: number, scaleNominatorY: number, scaleDenominatorY: number, cached: boolean, mutable: boolean): Image{
-    //var imageCache = imageCache
-    //var originalImage = originalImage
-    //var scaleNominatorX = scaleNominatorX
-    //var scaleDenominatorX = scaleDenominatorX
-    //var scaleNominatorY = scaleNominatorY
-    //var scaleDenominatorY = scaleDenominatorY
-    //var cached = cached
-    //var mutable = mutable
 
                         if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
@@ -167,14 +152,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public scale2(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
-    //var originalImage = originalImage
-    //var originalImageArray = originalImageArray
-    //var ximageToShowArray = ximageToShowArray
-    //var unused = unused
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY, true);
     
 }
@@ -183,15 +160,6 @@ this.scale(originalImage, originalImageArray, ximageToShowArray, unused, scaleX,
                 //@Throws(Exception.constructor)
             
     public scale(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number, mutable: boolean){
-    //var originalImage = originalImage
-    //var originalImageArray = originalImageArray
-    //var ximageToShowArray = ximageToShowArray
-    //var unused = unused
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
-    //var mutable = mutable
 
     var width: number = originalImage!.getWidth()!;
 ;

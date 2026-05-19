@@ -74,14 +74,12 @@ public constructor (){
 
 
     public setCommand(command: string){
-var command = command
 this.command= command;
     
 }
 
 
     public setWebappPath(value: string){
-var value = value
 this.webappPath= value;
     
 }
@@ -139,7 +137,7 @@ URLGLOBALS.init(urlGlobals);
                         
                                     {
                                     
-                        if(this.command.localeCompare(GLOBALS2.SET) == 0)
+                        if(this.command.compareTo(GLOBALS2.SET) == 0)
                         
                                     {
                                     this.setCustomLoaderWebappPath();

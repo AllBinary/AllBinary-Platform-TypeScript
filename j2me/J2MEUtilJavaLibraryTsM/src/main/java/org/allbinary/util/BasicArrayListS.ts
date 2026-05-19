@@ -52,8 +52,7 @@ export class BasicArrayListS extends BasicArrayList {
         
 public constructor (size: number){
             super(NullUtil.getInstance()!.NULL_OBJECT_ARRAY);
-                        //var size = size
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -58,7 +58,6 @@ export class CollidableAlwaysPickupNeverCollideBehavior extends CollidableNeverC
 
 
     public getCollisionTypeWith(layerInterface: AllBinaryLayer): CollisionType{
-var layerInterface = layerInterface
 
 
 

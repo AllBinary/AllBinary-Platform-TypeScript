@@ -77,9 +77,6 @@ export class NotificationUtil
     private notificationManager: NotificationManager = ResourceUtil.getInstance()!.getContext()!.getSystemService(Context.NOTIFICATION_SERVICE) as NotificationManager;
 
     public notify(command: Command, resource: string, message: string){
-var command = command
-var resource = resource
-var message = message
 
     var context: Context = ResourceUtil.getInstance()!.getContext()!;
 ;

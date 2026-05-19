@@ -87,7 +87,6 @@ private constructor (){
 
 
     /*actual*/ public putL(log: Log){
-    //var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
 ;
@@ -110,19 +109,12 @@ this.put(specialMessage, anyType, functionName, exception);
 
 
     /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-var functionName = functionName
 this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJECT);
     
 }
 
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-var functionName = functionName
-var exception = exception
 
     var className: string = this.LABEL;
 ;

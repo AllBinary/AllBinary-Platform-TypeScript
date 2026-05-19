@@ -155,7 +155,6 @@ InputAutomationJFrame.INPUTAUTOMATION_JFRAME.setVisible(false);
 
 
     public static create(inputAutomationBundleActivatorListenerInterface: InputAutomationBundleActivatorListenerInterface){
-    //var inputAutomationBundleActivatorListenerInterface = inputAutomationBundleActivatorListenerInterface
 LogConfigTypeFactory.getInstance();
     
 
@@ -222,7 +221,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
                 //@Throws(Exception.constructor)
             
     public static main(args: string[]){
-var args = args
 InputAutomationJFrame.create(
                             null);
     
@@ -271,14 +269,12 @@ this.init();
 
 
     public helpSetAdded(helpSetEvent: HelpSetEvent){
-    //var helpSetEvent = helpSetEvent
 this.helpSet!.add(helpSetEvent!.getHelpSet());
     
 }
 
 
     public helpSetRemoved(helpSetEvent: HelpSetEvent){
-    //var helpSetEvent = helpSetEvent
 this.helpSet!.remove(helpSetEvent!.getHelpSet());
     
 }
@@ -365,13 +361,11 @@ addWindowFocusListener(new class extends java.awt.event.WindowFocusListener
                                 {
                                 
     public windowGainedFocus(evt: java.awt.event.WindowEvent){
-var evt = evt
 formWindowGainedFocus(evt);
     
 }
 
     public windowLostFocus(evt: java.awt.event.WindowEvent){
-var evt = evt
 formWindowLostFocus(evt);
     
 }
@@ -383,13 +377,11 @@ addFocusListener(new class extends java.awt.event.FocusAdapter
                                 {
                                 
     public focusGained(evt: java.awt.event.FocusEvent){
-var evt = evt
 formFocusGained(evt);
     
 }
 
     public focusLost(evt: java.awt.event.FocusEvent){
-var evt = evt
 formFocusLost(evt);
     
 }
@@ -405,7 +397,6 @@ this.inputAutomationModuleJList!.addListSelectionListener(new class extends java
                                 {
                                 
     public valueChanged(evt: javax.swing.event.ListSelectionEvent){
-var evt = evt
 inputAutomationModuleJListValueChanged(evt);
     
 }
@@ -449,7 +440,6 @@ this.startJMenuItem!.addActionListener(new class extends java.awt.event.ActionLi
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 startJMenuItemActionPerformed(evt);
     
 }
@@ -465,7 +455,6 @@ this.stopJMenuItem!.addActionListener(new class extends java.awt.event.ActionLis
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 stopJMenuItemActionPerformed(evt);
     
 }
@@ -483,7 +472,6 @@ this.optionsJMenu!.addActionListener(new class extends java.awt.event.ActionList
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 optionsJMenuActionPerformed(evt);
     
 }
@@ -501,7 +489,6 @@ this.stopOnFocusJCheckBoxMenuItem!.addActionListener(new class extends java.awt.
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 stopOnFocusJCheckBoxMenuItemActionPerformed(evt);
     
 }
@@ -521,7 +508,6 @@ this.helpJMenuItem!.addActionListener(new class extends java.awt.event.ActionLis
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 helpJMenuItemActionPerformed(evt);
     
 }
@@ -537,7 +523,6 @@ this.updatesJMenuItem!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 updatesJMenuItemActionPerformed(evt);
     
 }
@@ -553,7 +538,6 @@ this.subscriptionJMenuItem!.addActionListener(new class extends java.awt.event.A
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 subscriptionJMenuItemActionPerformed(evt);
     
 }
@@ -569,7 +553,6 @@ this.modulesJMenuItem!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 modulesJMenuItemActionPerformed(evt);
     
 }
@@ -585,7 +568,6 @@ this.aboutJMenuItem!.addActionListener(new class extends java.awt.event.ActionLi
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 aboutJMenuItemActionPerformed(evt);
     
 }
@@ -615,7 +597,6 @@ pack();
 
 
     subscriptionJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             Desktop.getDesktop()!.browse(this.uri);
@@ -632,7 +613,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "subscriptionJMenuItemAct
 
 
     updatesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             Desktop.getDesktop()!.browse(this.uri);
@@ -649,7 +629,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updatesJMenuItemActionPe
 
 
     aboutJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
     var textJDialog: JDialog = new BasicTextJDialog("Copyright (c) 2002-2007 AllBinary");
 ;
@@ -662,7 +641,6 @@ textJDialog!.setLocationRelativeTo(this);
 
 
     modulesJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             new DesktopBundle().
@@ -680,31 +658,26 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "modulesJMenuItemActionPe
 
 
     helpJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 JavaHelpUtil.getInstance()!.show(this.helpSet);
     
 }
 
 
     stopOnFocusJCheckBoxMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     optionsJMenuActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     formWindowLostFocus(evt: java.awt.event.WindowEvent){
-var evt = evt
 this.logUtil!.putF("Nothing", this, "focusLost");
     
 }
 
 
     formWindowGainedFocus(evt: java.awt.event.WindowEvent){
-var evt = evt
 
                         if(this.stopOnFocusJCheckBoxMenuItem!.isSelected())
                         
@@ -729,17 +702,14 @@ var evt = evt
 
 
     formFocusLost(evt: java.awt.event.FocusEvent){
-var evt = evt
 }
 
 
     formFocusGained(evt: java.awt.event.FocusEvent){
-var evt = evt
 }
 
 
     inputAutomationModuleJListValueChanged(evt: javax.swing.event.ListSelectionEvent){
-var evt = evt
 
         try {
             
@@ -791,7 +761,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "gameAutomationRobotModul
 
 
     stopJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
                         if(this.runnableInterface != 
                                     null
@@ -815,7 +784,6 @@ this.noModuleSelectedJDialog!.setLocationRelativeTo(this);
 
 
     startJMenuItemActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             this.logUtil!.putF("Starting", this, "startJMenuItemActionPerformed");
@@ -888,14 +856,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "startJMenuItemActionPerf
 
 
     public setAutomationModuleConfigurationJPanel(automationModuleConfigurationJPanel: javax.swing.JPanel){
-var automationModuleConfigurationJPanel = automationModuleConfigurationJPanel
 this.automationModuleConfigurationJPanel= automationModuleConfigurationJPanel;
     
 }
 
 
     public onAdd(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){
-var inputAutomationRobotChangeEvent = inputAutomationRobotChangeEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
@@ -914,7 +880,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
 
 
     public onRemove(inputAutomationRobotChangeEvent: InputAutomationRobotChangeEvent){
-var inputAutomationRobotChangeEvent = inputAutomationRobotChangeEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");
@@ -933,7 +898,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onRemove", e);
 
 
     public onAdd(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent){
-    //var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChangeEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onAdd");
@@ -958,7 +922,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onAdd", e);
 
 
     public onRemove(inputAutomationConfigurationChangeEvent: InputAutomationConfigurationModuleChangeEvent){
-var inputAutomationConfigurationChangeEvent = inputAutomationConfigurationChangeEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onRemove");

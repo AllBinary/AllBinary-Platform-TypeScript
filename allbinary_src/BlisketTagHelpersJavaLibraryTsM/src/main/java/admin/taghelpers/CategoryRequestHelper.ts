@@ -116,9 +116,7 @@ export class CategoryRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-
+        
         try {
             this.request= pageContext!.getRequest() as HttpServletRequest;
     
@@ -312,7 +310,6 @@ this.logUtil!.putF("Loaded Child Category", this, "getXmlData()");
                 //@Throws(Exception.constructor)
             
     setCategoryLoader(requestNode: Node){
-var requestNode = requestNode
 
     var storeNameNode: Node = DomSearchHelper.getNode(StoreFrontData.getInstance()!.NAME, requestNode!.getChildNodes())!;
 ;

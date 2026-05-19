@@ -121,7 +121,6 @@ this.availableListOfList[index]= new BasicArrayListD();
 
 
     getImage(resourceId: any = {}): Image{
-    //var resourceId = resourceId
 
     var imageCanBeNull: any = this.hashtable.get(resourceId);
 ;
@@ -172,8 +171,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     getIndexWH(width: number, height: number): number{
-    //var width = width
-    //var height = height
 
     var foundIndex: number =  -1;
 ;
@@ -218,9 +215,6 @@ index < size; index++)
 
 
     getFromAvailable(foundIndex: number, width: number, height: number): Image{
-    //var foundIndex = foundIndex
-    //var width = width
-    //var height = height
 
                         if(foundIndex !=  -1)
                         
@@ -257,9 +251,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public get(caller: string, width: number, height: number): Image{
-    //var caller = caller
-    //var width = width
-    //var height = height
 
 
 
@@ -271,7 +262,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public getWithKey(key: any = {}): Image{
-    //var key = key
 
 
 
@@ -283,9 +273,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     createImage(caller: string, width: number, height: number): Image{
-    //var caller = caller
-    //var width = width
-    //var height = height
 
 
 
@@ -298,8 +285,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
-    //var key = key
-    //var inputStream = inputStream
 
 
 
@@ -378,7 +363,6 @@ stringBuffer!.appendint(totalAvailable);
 
 
     public init(image: Image){
-var image = image
 }
 
 

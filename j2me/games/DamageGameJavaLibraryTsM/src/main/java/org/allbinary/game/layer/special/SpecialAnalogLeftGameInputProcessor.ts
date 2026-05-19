@@ -53,8 +53,7 @@ export class SpecialAnalogLeftGameInputProcessor extends SpecialGameInputProcess
         
 public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
             super(collidableDestroyableDamageableLayer);
-                    var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,9 +63,6 @@ public constructor (collidableDestroyableDamageableLayer: CollidableDestroyableD
                 //@Throws(Exception.constructor)
             
     public processAnalog(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, xAnalogValue: number){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
-var xAnalogValue = xAnalogValue
 this.collidableDestroyableDamageableLayer!.leftAnalog(xAnalogValue);
     
 }

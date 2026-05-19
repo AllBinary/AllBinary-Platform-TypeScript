@@ -143,7 +143,6 @@ this.NONE= new TouchButtonInput(MAX -40, "No Button");
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public init(inputToGameKeyMapping: InputToGameKeyMapping){
-    //var inputToGameKeyMapping = inputToGameKeyMapping
 
                         if(!this.initialized)
                         
@@ -187,15 +186,12 @@ CancelTouchButtonInputFactory.getInstance();
 
 
     public updateAll(inputToGameKeyMapping: InputToGameKeyMapping){
-    //var inputToGameKeyMapping = inputToGameKeyMapping
 this.updateAllFromList(this.list, inputToGameKeyMapping);
     
 }
 
 
     public updateAllFromList(list: BasicArrayList, inputToGameKeyMapping: InputToGameKeyMapping){
-    //var list = list
-    //var inputToGameKeyMapping = inputToGameKeyMapping
 this.logUtil!.putF(new StringMaker().
                             append(CommonLabels.getInstance()!.START_LABEL)!.appendint(list.size())!.toString(), this, "updateAll");
     

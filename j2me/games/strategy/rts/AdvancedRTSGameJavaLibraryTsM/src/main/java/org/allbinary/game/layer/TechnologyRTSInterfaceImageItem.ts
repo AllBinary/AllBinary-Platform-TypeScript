@@ -94,13 +94,7 @@ export class TechnologyRTSInterfaceImageItem extends ABCustomImageItem {
     private readonly DOLLAR: string = "$";
 public constructor (label: string, img: Image, layout: number, altText: string, basicColor: BasicColor, rtsInterface: RTSInterface){
             super(label, img, layout, altText, basicColor);
-                    var label = label
-var img = img
-var layout = layout
-var altText = altText
-var basicColor = basicColor
-var rtsInterface = rtsInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -161,9 +155,6 @@ this.levelString= this.primitiveLongUtil!.getCharArray(this.getRtsInterface()!.g
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 super.paintXY(graphics, x, y);
     
 

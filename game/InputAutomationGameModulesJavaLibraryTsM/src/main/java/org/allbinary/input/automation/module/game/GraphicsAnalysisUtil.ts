@@ -66,10 +66,6 @@ export class GraphicsAnalysisUtil
                 //@Throws(Exception.constructor)
             
     public static getNominator(bufferedImage: BufferedImage, min_x: Integer, max_x: Integer, y: Integer): number{
-var bufferedImage = bufferedImage
-var min_x = min_x
-var max_x = max_x
-var y = y
 
 
 

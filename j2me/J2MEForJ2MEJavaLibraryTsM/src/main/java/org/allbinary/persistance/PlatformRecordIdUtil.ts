@@ -67,8 +67,6 @@ export class PlatformRecordIdUtil
     private readonly PLATFORM_SHORT_NAME: string = "JME";
 
     public getRecordId(abeClientInformation: AbeClientInformationInterface, baseRecordId: string): string{
-    //var abeClientInformation = abeClientInformation
-    //var baseRecordId = baseRecordId
 
 
 

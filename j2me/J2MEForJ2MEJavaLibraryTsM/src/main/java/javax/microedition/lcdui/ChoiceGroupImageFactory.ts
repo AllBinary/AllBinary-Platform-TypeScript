@@ -99,7 +99,6 @@ export class ChoiceGroupImageFactory
 
 
     public init(imageArray: Image[]){
-    //var imageArray = imageArray
 this.imgMultiOff= imageArray[0]!;
     
 this.imageArray[0]= this.imgMultiOff;

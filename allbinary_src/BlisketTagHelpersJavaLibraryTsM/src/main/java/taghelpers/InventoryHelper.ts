@@ -100,9 +100,7 @@ export class InventoryHelper extends TagHelper {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-this.response= pageContext!.getResponse() as HttpServletResponse;
+        this.response= pageContext!.getResponse() as HttpServletResponse;
     
 this.request= pageContext!.getRequest() as HttpServletRequest;
     
@@ -216,7 +214,7 @@ this.id= this.request.getParameter(BasicItemData.ID);
 
                         if(keywords == 
                                     null
-                                 || keywords.localeCompare(stringUtil!.EMPTY_STRING) == 0)
+                                 || keywords.compareTo(stringUtil!.EMPTY_STRING) == 0)
                         
                                     {
                                     

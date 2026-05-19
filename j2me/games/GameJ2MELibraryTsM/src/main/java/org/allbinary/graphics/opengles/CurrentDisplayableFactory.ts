@@ -149,7 +149,6 @@ this.DEFAULT_CHILD_NAME_LIST.add(HighScoresCanvas.NAME);
 
 
     public setMyCanvas(displayable: MyCanvas){
-    //var displayable = displayable
 
                         if(this.displayable instanceof MyCanvas)
                         
@@ -179,7 +178,6 @@ this.setDisplayable(displayable);
 
 
     public setDisplayable(displayable: Displayable){
-    //var displayable = displayable
 this.displayable= displayable;
     
 this.setOpenGlReadydisplayable(displayable);
@@ -188,7 +186,6 @@ this.setOpenGlReadydisplayable(displayable);
 
 
     public setOpenGlReadydisplayable(openGlReadydisplayable: Displayable){
-    //var openGlReadydisplayable = openGlReadydisplayable
 this.openGlReadydisplayable= openGlReadydisplayable;
     
 this.update();
@@ -207,7 +204,6 @@ this.update();
 
 
     public setRunnable(runnable: GameRunnable){
-    //var runnable = runnable
 PreLogUtil.put(new StringMaker().
                             append(this.RUNNABLE)!.append(this.stringUtil!.toString(runnable))!.toString(), this, this.SET_RUNNABLE);
     
@@ -330,7 +326,6 @@ this.setUsedRunnable(NullWaitGameRunnable.getInstance());
 
 
     public setUsedRunnable(usedRunnable: GameRunnable){
-var usedRunnable = usedRunnable
 PreLogUtil.put(new StringMaker().
                             append(this.RUNNABLE)!.append(this.stringUtil!.toString(this.runnable))!.toString(), this, this.SET_USED_RUNNABLE);
     

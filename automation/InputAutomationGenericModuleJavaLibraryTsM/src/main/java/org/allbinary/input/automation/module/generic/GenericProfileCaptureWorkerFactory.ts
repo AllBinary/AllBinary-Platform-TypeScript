@@ -64,7 +64,6 @@ export class GenericProfileCaptureWorkerFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(genericProfile: GenericProfile): CaptureWorkerInterface{
-var genericProfile = genericProfile
 
     var vector: Vector = genericProfile!.getGenericProfileDataWorkerTypeVector()!;
 ;

@@ -60,8 +60,7 @@ export class ImageArraySingletonAnimationInterfaceFactory extends SingletonAnima
         
 public constructor (imageArray: Image[]){
             super(new ImageArrayAnimation(imageArray, AnimationBehavior.getInstance()));
-                    var imageArray = imageArray
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

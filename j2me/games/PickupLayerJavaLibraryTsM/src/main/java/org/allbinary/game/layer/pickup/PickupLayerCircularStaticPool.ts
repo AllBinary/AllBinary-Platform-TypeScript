@@ -71,10 +71,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstanceXYZ(pickedUpLayerInterfaceFactoryInterface: PickedUpLayerInterfaceFactoryInterface, x: number, y: number, z: number): PickedUpLayerInterface{
-    //var pickedUpLayerInterfaceFactoryInterface = pickedUpLayerInterfaceFactoryInterface
-    //var x = x
-    //var y = y
-    //var z = z
 
     var pickupLayer: PickupLayer = this.getNextInstance() as PickupLayer;
 ;

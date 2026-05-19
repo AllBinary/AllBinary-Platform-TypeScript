@@ -8,8 +8,6 @@
 
 
         
-import { OpenGLProcessor } from '../../../../org/allbinary/graphics/opengles/OpenGLProcessor.js';
-      
 
 
 
@@ -28,7 +26,8 @@ import { OpenGLProcessor } from '../../../../org/allbinary/graphics/opengles/Ope
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
+        import { OpenGLProcessor } from './OpenGLProcessor.js';
+
 export class NullOpenGLProcessorFactory
             extends Object
          {

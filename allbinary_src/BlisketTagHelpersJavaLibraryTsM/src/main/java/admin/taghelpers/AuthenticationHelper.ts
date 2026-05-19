@@ -102,9 +102,7 @@ export class AuthenticationHelper extends TagHelper {
     private attemptsInteger: Integer
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             this(hashMap, pageContext!.getRequest() as HttpServletRequest);
-                    var hashMap = hashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -113,9 +111,7 @@ var pageContext = pageContext
 public constructor (hashMap: HashMap<any, any>, httpServletRequest: HttpServletRequest){
 
             super();
-        var hashMap = hashMap
-var httpServletRequest = httpServletRequest
-this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
+        this.weblisketSession= new WeblisketSession(hashMap, httpServletRequest);
     
 this.getFormData();
     
@@ -467,7 +463,6 @@ stringBuffer!.append("Trying New login<p/>");
 
 
     public isAuthenticationSessionValid(roles: Vector): Boolean{
-var roles = roles
 
         try {
             
@@ -634,8 +629,6 @@ index < size; index++)
 
 
     public processIfNewLogin(userName: string, password: string): Boolean{
-var userName = userName
-var password = password
 
         try {
             
@@ -650,9 +643,9 @@ var password = password
 
                         if(userName != 
                                     null
-                                 && userName!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
+                                 && userName!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0 && password != 
                                     null
-                                 && password.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) != 0)
+                                 && password.compareTo(StringUtil.getInstance()!.EMPTY_STRING) != 0)
                         
                                     {
                                     
@@ -666,7 +659,7 @@ var password = password
 login= userEntityInterface!.login(userName, password);
     
 
-                        if(login.localeCompare(GLOBALS2.LOGINSUCCESS) == 0)
+                        if(login.compareTo(GLOBALS2.LOGINSUCCESS) == 0)
                         
                                     {
                                     

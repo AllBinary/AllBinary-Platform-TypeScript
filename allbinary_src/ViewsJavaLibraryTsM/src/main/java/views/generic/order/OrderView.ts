@@ -81,8 +81,7 @@ export class OrderView extends HttpStoreComponentView implements DomNodeInterfac
     basketReview: BasketReview
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -119,7 +118,6 @@ this.order.setId(id);
 
 
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             

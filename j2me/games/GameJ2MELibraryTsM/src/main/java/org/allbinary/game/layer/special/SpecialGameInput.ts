@@ -94,58 +94,44 @@ export class SpecialGameInput
                 //@Throws(Exception.constructor)
             
     public fire(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special1(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special2(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special3(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special4(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public special5(layerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var layerManager = layerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

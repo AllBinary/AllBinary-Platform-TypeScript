@@ -52,9 +52,7 @@ export class ImageCacheable
 public constructor (name: string, anyType: any = {}){
 
             super();
-        var name = name
-var anyType = anyType
-}
+        }
 
 
     public getKey(): any{

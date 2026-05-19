@@ -70,8 +70,7 @@ export class EditValidationView extends WorkFlowView implements ValidationCompon
     private workFlowName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -235,7 +234,6 @@ stringBuffer!.append("WorkFlow does not exist<br />");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

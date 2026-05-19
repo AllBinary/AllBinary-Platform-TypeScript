@@ -24,6 +24,8 @@
         
             import { Exception } from '../../../../../java/lang/Exception.js';
         
+import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
+      
 import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/StringValidationUtil.js';
       
 
@@ -62,6 +64,8 @@ export class BooleanUtil
     
 }
 
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 private constructor (){
 
             super();
@@ -71,7 +75,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getFromString(booleanString: string): boolean{
-    //var booleanString = booleanString
 
     var stringValidationUtil: StringValidationUtil = StringValidationUtil.getInstance()!;
 ;
@@ -98,7 +101,7 @@ private constructor (){
 ;
     
 
-                        if(booleanStringLowerCase!.localeCompare(booleanFactory!.TRUE_STRING) == 0)
+                        if(this.tsUtil!.compareTo(booleanStringLowerCase, booleanFactory!.TRUE_STRING) == 0)
                         
                                     {
                                     
@@ -111,7 +114,7 @@ private constructor (){
                                     }
                                 
                              else 
-                        if(booleanStringLowerCase!.localeCompare(booleanFactory!.FALSE_STRING) == 0)
+                        if(this.tsUtil!.compareTo(booleanStringLowerCase, booleanFactory!.FALSE_STRING) == 0)
                         
                                     {
                                     
@@ -138,7 +141,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public isStringBoolean(booleanString: string): boolean{
-    //var booleanString = booleanString
 
     var booleanFactory: BooleanFactory = BooleanFactory.getInstance()!;
 ;
@@ -148,7 +150,7 @@ private constructor (){
 ;
     
 
-                        if(booleanStringLowerCase!.localeCompare(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.localeCompare(booleanFactory!.FALSE_STRING) == 0)
+                        if(booleanStringLowerCase!.compareTo(booleanFactory!.TRUE_STRING) == 0 || booleanStringLowerCase!.compareTo(booleanFactory!.FALSE_STRING) == 0)
                         
                                     {
                                     

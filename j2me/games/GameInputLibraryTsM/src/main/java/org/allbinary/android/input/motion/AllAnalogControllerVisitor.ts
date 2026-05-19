@@ -55,8 +55,6 @@ export class AllAnalogControllerVisitor extends AnalogControllerVisitor {
         
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInputProcessor: AnalogLocationInputProcessor){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var analogLocationInputProcessor = analogLocationInputProcessor
 
     var analogLocationInputList: BasicArrayList = AnalogLocationInputFactory.getInstance()!.getList()!;
 ;

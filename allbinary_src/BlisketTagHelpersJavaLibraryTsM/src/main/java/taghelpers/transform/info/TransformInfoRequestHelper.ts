@@ -68,9 +68,7 @@ export class TransformInfoRequestHelper extends ModifyTable {
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-this.transformInfoInterface= new TransformInfoHttpStoreNoManipulation(propertiesHashMap, pageContext);
+        this.transformInfoInterface= new TransformInfoHttpStoreNoManipulation(propertiesHashMap, pageContext);
     
 }
 

@@ -59,8 +59,7 @@ export class BufferedImageCacheable
 public constructor (key: BufferedImageInfo){
 
             super();
-        var key = key
-this.key= key;
+        this.key= key;
     
 this.setBufferedImage(new BufferedImage(key.getWidth(), key.getHeight(), key.getType()));
     
@@ -88,7 +87,6 @@ this.setBufferedImage(new BufferedImage(key.getWidth(), key.getHeight(), key.get
 
 
     setBufferedImage(bufferedImage: BufferedImage){
-var bufferedImage = bufferedImage
 this.bufferedImage= bufferedImage;
     
 }

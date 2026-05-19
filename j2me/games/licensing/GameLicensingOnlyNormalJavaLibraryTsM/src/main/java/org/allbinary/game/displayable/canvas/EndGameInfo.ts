@@ -66,8 +66,6 @@ public constructor (){
 
 
     public update(gameInfo: GameInfo, myCanvas: MyCanvas){
-    //var gameInfo = gameInfo
-    //var myCanvas = myCanvas
 this.setGameOverStr(this.NORMAL_GAME_OVER);
     
 this.setWinStr(this.NORMAL_GAME_OVER_WIN);
@@ -86,7 +84,6 @@ this.setWinStr(this.NORMAL_GAME_OVER_WIN);
 
 
     public setGameOverStr(gameOverStr: string){
-var gameOverStr = gameOverStr
 this.gameOverStr= gameOverStr;
     
 }
@@ -103,7 +100,6 @@ this.gameOverStr= gameOverStr;
 
 
     public setWinStr(winStr: string){
-var winStr = winStr
 this.winStr= winStr;
     
 }

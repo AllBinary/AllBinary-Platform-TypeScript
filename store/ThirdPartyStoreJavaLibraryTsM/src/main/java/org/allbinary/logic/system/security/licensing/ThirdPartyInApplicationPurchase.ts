@@ -51,7 +51,6 @@ export class ThirdPartyInApplicationPurchase
         
 
     public isPurchased(lockableFeature: LockableFeature): boolean{
-var lockableFeature = lockableFeature
 
 
 
@@ -62,8 +61,6 @@ var lockableFeature = lockableFeature
 
 
     public onCreate(anyType: any = {}, stateObject: any = {}){
-var anyType = anyType
-var stateObject = stateObject
 }
 
 
@@ -76,14 +73,10 @@ var stateObject = stateObject
 
 
     public onActivityResult(requestCode: number, resultCode: number, dataObject: any = {}){
-    //var requestCode = requestCode
-    //var resultCode = resultCode
-    //var dataObject = dataObject
 }
 
 
     public onSaveInstanceState(anyType: any = {}){
-var anyType = anyType
 }
 
 
@@ -92,7 +85,6 @@ var anyType = anyType
 
 
     public requestPurchase(lockableFeature: LockableFeature){
-var lockableFeature = lockableFeature
 }
 
 
@@ -101,7 +93,6 @@ var lockableFeature = lockableFeature
 
 
     public add(lockableFeature: LockableFeature){
-var lockableFeature = lockableFeature
 }
 
 

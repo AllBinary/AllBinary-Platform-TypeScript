@@ -58,11 +58,7 @@ export class VehicleFrictionProperties extends FrictionProperties {
 public constructor (tireFriction: number, brakeFriction: number, airFriction: number, crashFriction: number){
 
             super();
-        var tireFriction = tireFriction
-var brakeFriction = brakeFriction
-var airFriction = airFriction
-var crashFriction = crashFriction
-this.TIRE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -tireFriction;
+        this.TIRE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -tireFriction;
     
 this.BRAKE_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -brakeFriction;
     

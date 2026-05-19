@@ -80,11 +80,7 @@ export class MeteredGameObject
 public constructor (bufferedImage: BufferedImage[], minX: Integer, maxX: Integer, y: Integer){
 
             super();
-        var bufferedImage = bufferedImage
-var minX = minX
-var maxX = maxX
-var y = y
-this.setRatios(new Array(bufferedImage!.length));
+        this.setRatios(new Array(bufferedImage!.length));
     
 this.setMinX(minX);
     
@@ -154,7 +150,6 @@ this.getRatios()[index]= new Double(nominator /this.getSize());
 
 
     setGood(good: boolean){
-var good = good
 this.good= good;
     
 }
@@ -171,7 +166,6 @@ this.good= good;
 
 
     setDropping(dropping: boolean){
-var dropping = dropping
 this.dropping= dropping;
     
 }
@@ -243,7 +237,6 @@ stringBuffer!.appendboolean(this.isDropping());
 
 
     public setRatios(ratios: Double[]){
-var ratios = ratios
 this.ratios= ratios;
     
 }
@@ -260,7 +253,6 @@ this.ratios= ratios;
 
 
     public setMinX(minX: Integer){
-var minX = minX
 this.minX= minX;
     
 }
@@ -277,7 +269,6 @@ this.minX= minX;
 
 
     public setMaxX(maxX: Integer){
-var maxX = maxX
 this.maxX= maxX;
     
 }
@@ -294,7 +285,6 @@ this.maxX= maxX;
 
 
     public setY(y: Integer){
-var y = y
 this.y= y;
     
 }
@@ -311,7 +301,6 @@ this.y= y;
 
 
     public setSize(size: Integer){
-var size = size
 this.size= size;
     
 }

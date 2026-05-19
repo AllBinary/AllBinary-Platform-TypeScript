@@ -74,8 +74,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-var eventObject = eventObject
-var eventListenerInterface = eventListenerInterface
 
     var demoGameMidletEventListener: DemoGameMidletEventListener = eventListenerInterface as DemoGameMidletEventListener;
 ;

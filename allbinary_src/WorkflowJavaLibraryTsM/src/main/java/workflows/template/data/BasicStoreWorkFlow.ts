@@ -56,9 +56,7 @@ export class BasicStoreWorkFlow extends BasicWorkFlow implements StoreWorkFlowIn
         
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
-                    var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

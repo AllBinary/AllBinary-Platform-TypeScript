@@ -85,7 +85,6 @@ export class MakeCountedPartsSingletonArrayFactory
                 //@Throws(Exception.constructor)
             
     public getUpdated(partInterfaceArray: PartInterface[]): PartInterface[]{
-    //var partInterfaceArray = partInterfaceArray
 this.list= new BasicArrayListD();
     
 

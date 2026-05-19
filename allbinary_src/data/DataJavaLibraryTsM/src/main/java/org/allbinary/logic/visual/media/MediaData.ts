@@ -57,7 +57,6 @@ export class MediaData
                 //@Throws(Exception.constructor)
             
     public static get(a_Name: string): MediaData{
-var a_Name = a_Name
 
     var mediaData: MediaData = MediaData.hashMap!.get(a_Name) as MediaData;
 ;
@@ -117,8 +116,7 @@ var a_Name = a_Name
 protected constructor (a_Name: string){
 
             super();
-        var a_Name = a_Name
-this.name= a_Name;
+        this.name= a_Name;
     
 this.extension= "." +this.name;
     
@@ -160,7 +158,6 @@ MediaData.hashMap!.put(a_Name, this);
 
 
     public isConvertableTo(mediaData: MediaData): boolean{
-var mediaData = mediaData
 
                         if(this == MediaDataFactory.getInstance()!.GIF && mediaData == MediaDataFactory.getInstance()!.JPG)
                         

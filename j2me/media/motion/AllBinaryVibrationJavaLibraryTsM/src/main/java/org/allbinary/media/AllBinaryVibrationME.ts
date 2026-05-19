@@ -47,9 +47,6 @@ export class AllBinaryVibrationME
         
 
     public vibrate(duration: number, type: number, volume: number){
-var duration = duration
-var type = type
-var volume = volume
 }
 
 

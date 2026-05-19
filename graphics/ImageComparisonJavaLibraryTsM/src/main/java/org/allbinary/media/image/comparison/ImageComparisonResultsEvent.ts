@@ -50,9 +50,7 @@ export class ImageComparisonResultsEvent extends AllBinaryEventObject {
     private imageComparisonResult: ImageComparisonResult
 public constructor (anyType: any = {}, imageComparisonInfo: ImageComparisonResult){
             super(anyType);
-                    var anyType = anyType
-var imageComparisonInfo = imageComparisonInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,7 +70,6 @@ this.setImageComparisonResult(imageComparisonInfo);
 
 
     public setImageComparisonResult(imageComparisonResult: ImageComparisonResult){
-var imageComparisonResult = imageComparisonResult
 this.imageComparisonResult= imageComparisonResult;
     
 }

@@ -70,8 +70,7 @@ export class MultipartRequestParams extends RequestParams {
     private special: boolean = false;
 public constructor (request: HttpServletRequest){
             super();
-                    var request = request
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,8 +80,7 @@ this.processMultipartRequest(request);
 
 public constructor (pageContext: PageContext){
             super();
-                    var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -98,7 +96,6 @@ this.special= true;
 
 
     processMultipartRequest(request: HttpServletRequest){
-var request = request
 
         try {
             

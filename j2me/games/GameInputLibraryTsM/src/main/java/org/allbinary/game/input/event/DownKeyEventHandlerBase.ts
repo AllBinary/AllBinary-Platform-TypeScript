@@ -76,7 +76,6 @@ export class DownKeyEventHandlerBase extends BasicEventHandler {
 
 
     public addListener(playerGameInput: PlayerGameInput){
-    //var playerGameInput = playerGameInput
 
                         if(!this.list.contains(playerGameInput))
                         
@@ -98,7 +97,6 @@ super.removeAllListeners();
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-    //var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListenerSingleThreaded(eventListenerInterface);
@@ -108,7 +106,6 @@ super.removeListenerSingleThreaded(eventListenerInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -119,7 +116,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: Integer){
-    //var eventObject = eventObject
 
 
 
@@ -181,7 +177,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     public fireEventForEvent(eventObject: GameKeyEvent){
-    //var eventObject = eventObject
 
     var size: number = this.list.size()!;
 ;
@@ -247,8 +242,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     process(eventObject: Integer, eventListenerInterface: EventListenerInterface){
-    //var eventObject = eventObject
-    //var eventListenerInterface = eventListenerInterface
 
     var downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;
 ;
@@ -261,8 +254,6 @@ downKeyEventListenerInterface!.onDownKey(eventObject);
                 //@Throws(Exception.constructor)
             
     processEvent(eventObject: GameKeyEvent, eventListenerInterface: EventListenerInterface){
-    //var eventObject = eventObject
-    //var eventListenerInterface = eventListenerInterface
 
     var downKeyEventListenerInterface: DownKeyEventListenerInterface = eventListenerInterface as DownKeyEventListenerInterface;
 ;

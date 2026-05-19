@@ -114,7 +114,6 @@ this.setTableName(this.tableName);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -161,7 +160,6 @@ var values = values
                 //@Throws(Exception.constructor)
             
     public getStoreManagers(storeFrontInterface: StoreFrontInterface): Vector{
-var storeFrontInterface = storeFrontInterface
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -225,7 +223,6 @@ i < size; i++)
                 //@Throws(Exception.constructor)
             
     public getUsersWithRole(userRole: UserRole): Vector{
-var userRole = userRole
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -275,7 +272,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public getUsers(storeFrontInterface: StoreFrontInterface): Vector{
-var storeFrontInterface = storeFrontInterface
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -325,7 +321,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public getUser(userName: string): UserInterface{
-var userName = userName
 
     var row: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -365,8 +360,6 @@ row.put(UserData.USERNAME, userName);
 
 
     public deleteWhere(key: string, value: string){
-var key = key
-var value = value
 
         try {
             super.deleteWhere(key, value);
@@ -399,8 +392,6 @@ var value = value
 
 
     public login(userName: string, password: string): string{
-var userName = userName
-var password = password
 
         try {
             
@@ -418,8 +409,8 @@ var password = password
 
                         if(encryption != 
                                     null
-                                 && encryption.localeCompare(this.stringUtil!.EMPTY_STRING) != 0)
-                        isUserNameAndPasswordCorrect= result.localeCompare(new SuperCrypt(new Integer(encryption).
+                                 && encryption.compareTo(this.stringUtil!.EMPTY_STRING) != 0)
+                        isUserNameAndPasswordCorrect= result.compareTo(new SuperCrypt(new Integer(encryption).
                             intValue()).
                             encrypt(password))
                         else {
@@ -543,8 +534,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "login");
 
 
     public update(userName: string, updatedValues: HashMap<any, any>){
-var userName = userName
-var updatedValues = updatedValues
 super.updateWhere(UserData.USERNAME, userName, updatedValues);
     
 }

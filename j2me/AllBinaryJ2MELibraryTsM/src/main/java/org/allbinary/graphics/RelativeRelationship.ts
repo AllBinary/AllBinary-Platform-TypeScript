@@ -64,9 +64,7 @@ export class RelativeRelationship
 public constructor (point: GPoint, typesAllowedList: BasicArrayList){
 
             super();
-        var point = point
-var typesAllowedList = typesAllowedList
-this.x= point.getX();
+        this.x= point.getX();
     
 this.y= point.getY();
     
@@ -118,7 +116,6 @@ this.typesAllowedList= typesAllowedList;
 
 
     public setTypesAllowedList(typesAllowedList: BasicArrayList){
-var typesAllowedList = typesAllowedList
 this.typesAllowedList= typesAllowedList;
     
 }

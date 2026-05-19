@@ -62,7 +62,6 @@ export class ProfileActionScriptConditionFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(node: Node): ProfileActionScriptConditionInterface{
-var node = node
 
     var profileActionScriptConditionInterface: ProfileActionScriptConditionInterface = 
                 null

@@ -66,8 +66,7 @@ export class GameCanvasRunnable extends GameRunnable {
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
-        var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas;
+        this.allBinaryGameCanvas= allBinaryGameCanvas;
     
 }
 

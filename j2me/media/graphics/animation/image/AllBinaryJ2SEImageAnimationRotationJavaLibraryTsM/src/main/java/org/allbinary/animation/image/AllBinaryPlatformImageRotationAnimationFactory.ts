@@ -52,13 +52,7 @@ export class AllBinaryPlatformImageRotationAnimationFactory extends AllBinaryJ2S
         
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory, resizeCanvasForRotation: boolean){
             super(image, width, height, angleIncrement, animationBehaviorFactory, resizeCanvasForRotation);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-    //var resizeCanvasForRotation = resizeCanvasForRotation
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

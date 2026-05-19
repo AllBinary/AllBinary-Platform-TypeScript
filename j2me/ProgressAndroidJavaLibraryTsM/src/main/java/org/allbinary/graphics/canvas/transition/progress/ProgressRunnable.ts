@@ -59,9 +59,7 @@ export class ProgressRunnable extends ARunnable {
 public constructor (midletActivity: Activity, progressCanvas: ProgressCanvas){
 
             super();
-            //var midletActivity = midletActivity
-    //var progressCanvas = progressCanvas
-
+        
     var midletActivity2: MidletActivityBase = midletActivity as MidletActivityBase;
 ;
     

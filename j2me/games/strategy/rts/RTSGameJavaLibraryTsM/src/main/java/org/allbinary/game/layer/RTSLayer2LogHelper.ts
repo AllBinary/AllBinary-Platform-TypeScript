@@ -60,46 +60,34 @@ export class RTSLayer2LogHelper
 
 
     public steeringUp(pathFindingLayerInterface: PathFindingLayerInterface){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
 }
 
 
     public steeringFireOrStop(pathFindingLayerInterface: PathFindingLayerInterface){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
 }
 
 
     public buildingAbove(pathFindingLayerInterface: PathFindingLayerInterface){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
 }
 
 
     public buildingChaseLeft(pathFindingLayerInterface: PathFindingLayerInterface, angle: number){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
-    //var angle = angle
 }
 
 
     public buildingChaseRight(pathFindingLayerInterface: PathFindingLayerInterface, angle: number){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
-    //var angle = angle
 }
 
 
     public buildingDown(pathFindingLayerInterface: PathFindingLayerInterface){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
 }
 
 
     public buildingChaseDown(pathFindingLayerInterface: PathFindingLayerInterface, angle: number){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
-    //var angle = angle
 }
 
 
     public buildingChaseUp(pathFindingLayerInterface: PathFindingLayerInterface, angle: number){
-    //var pathFindingLayerInterface = pathFindingLayerInterface
-    //var angle = angle
 }
 
 

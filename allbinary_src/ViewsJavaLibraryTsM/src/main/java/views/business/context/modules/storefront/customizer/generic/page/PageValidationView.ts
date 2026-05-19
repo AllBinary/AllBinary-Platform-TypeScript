@@ -84,8 +84,7 @@ export class PageValidationView extends PageView implements ValidationComponentI
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -213,7 +212,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "insert()");
 ;
     
 
-                        if(title.localeCompare("index") == 0)
+                        if(title.compareTo("index") == 0)
                         
                                     {
                                     hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page");
@@ -370,7 +369,7 @@ index < size; index++)
 ;
     
 
-                        if(title.localeCompare("index") == 0)
+                        if(title.compareTo("index") == 0)
                         
                                     {
                                     hashMap!.put(TitleData.getInstance()!.TEXT, this.getTransformInfoInterface()!.getStoreName() +" - Home Page");
@@ -444,7 +443,6 @@ stringBuffer!.append("PageValidation Info:" +pageValidation!.validationInfo());
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

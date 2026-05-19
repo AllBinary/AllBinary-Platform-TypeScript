@@ -99,15 +99,12 @@ export class FormInputProcessor extends InputProcessor {
 public constructor (allBinaryGameCanvas: AllBinaryGameCanvas){
 
             super();
-        var allBinaryGameCanvas = allBinaryGameCanvas
-this.allBinaryGameCanvas= allBinaryGameCanvas;
+        this.allBinaryGameCanvas= allBinaryGameCanvas;
     
 }
 
 
     public keyPressed(keyCode: number, deviceId: number){
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 
         try {
             PreLogUtil.put(new StringMaker().
@@ -135,9 +132,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.AD
 
 
     public keyReleased(canvas: Canvas, keyCode: number, deviceId: number){
-    //var canvas = canvas
-    //var keyCode = keyCode
-    //var deviceId = deviceId
 
         try {
             

@@ -63,7 +63,6 @@ export class HighScoresHelperBase
     highScoresArrayP: HighScores[] = LastFetchHighScoresFactory.getInstance()!.highScoresArray;
 
     public setHighScoresArray(highScoresArrayP: HighScores[]){
-    //var highScoresArrayP = highScoresArrayP
 
                         if(highScoresArrayP != 
                                     null
@@ -115,7 +114,6 @@ this.highScoresArrayP= highScoresArrayP;
 
 
     public setSelectedHighScores(selectedHighScores: HighScores){
-    //var selectedHighScores = selectedHighScores
 }
 
 

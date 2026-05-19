@@ -86,7 +86,6 @@ export class BuildingPropertiesFactory
 
 
     public getEfficiencyPerLevel(buildingLayer: BuildingLayer): number{
-    //var buildingLayer = buildingLayer
 
 
 
@@ -99,7 +98,6 @@ export class BuildingPropertiesFactory
     public damageFloatersPaintableInterface: Paintable = NullPaintable.getInstance()!;
 
     public getDamageFloaters(buildingLayer: BuildingLayer): DamageFloaters{
-    //var buildingLayer = buildingLayer
 
     var damageFloaters: DamageFloaters = DamageFloaters.getInstance()!;
 ;
@@ -133,7 +131,6 @@ this.damageFloatersPaintableInterface= damageFloaters;
                 //@Throws(Exception.constructor)
             
     public getHealthBar(buildingLayer: BuildingLayer): Paintable{
-    //var buildingLayer = buildingLayer
 
     var healthBar: Paintable = NullPaintable.getInstance()!;
 ;
@@ -167,7 +164,6 @@ this.damageFloatersPaintableInterface= damageFloaters;
 
 
     public getTrackingEvent(buildingLayer: BuildingLayer): TrackingEvent{
-    //var buildingLayer = buildingLayer
 
 
 

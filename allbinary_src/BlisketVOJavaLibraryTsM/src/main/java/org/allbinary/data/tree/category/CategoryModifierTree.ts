@@ -67,8 +67,7 @@ export class CategoryModifierTree extends CategoryPrivateTree implements Categor
     private readonly directory: Directory = Directory.getInstance()!;
 public constructor (categoryFactoryInterface: CategoryFactoryInterface){
             super(categoryFactoryInterface);
-                    var categoryFactoryInterface = categoryFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -86,8 +85,6 @@ public constructor (categoryFactoryInterface: CategoryFactoryInterface){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public insert(parentCategoryInterface: CategoryInterface, newChildCategoryInterface: CategoryInterface){
-var parentCategoryInterface = parentCategoryInterface
-var newChildCategoryInterface = newChildCategoryInterface
 
         try {
             
@@ -150,8 +147,6 @@ this.save(newChildCategoryInterface);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public delete(parentCategoryInterface: CategoryInterface, existingChildCategoryInterface: CategoryInterface){
-var parentCategoryInterface = parentCategoryInterface
-var existingChildCategoryInterface = existingChildCategoryInterface
 
         try {
             

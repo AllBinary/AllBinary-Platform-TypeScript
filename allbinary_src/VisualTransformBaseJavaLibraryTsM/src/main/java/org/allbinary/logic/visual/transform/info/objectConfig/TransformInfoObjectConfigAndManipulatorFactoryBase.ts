@@ -67,9 +67,6 @@ export class TransformInfoObjectConfigAndManipulatorFactoryBase
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, objectConfigFileAbPath: AbPath): TransformInfoObjectConfigInterface{
-    //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
-var objectConfigFileAbPath = objectConfigFileAbPath
 
 
 
@@ -81,8 +78,6 @@ var objectConfigFileAbPath = objectConfigFileAbPath
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInfoObjectConfigInterface{
-    //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
 
 
 
@@ -94,9 +89,6 @@ var transformInfoInterface = transformInfoInterface
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface, document: Document): TransformInfoObjectConfigInterface{
-    //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
-var document = document
 
 
 

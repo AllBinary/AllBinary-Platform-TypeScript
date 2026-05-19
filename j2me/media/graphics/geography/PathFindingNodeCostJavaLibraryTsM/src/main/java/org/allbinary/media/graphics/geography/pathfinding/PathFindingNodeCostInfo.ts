@@ -66,9 +66,7 @@ export class PathFindingNodeCostInfo
 public constructor (costFromStart: number, costToGoal: number){
 
             super();
-            //var costFromStart = costFromStart
-    //var costToGoal = costToGoal
-this.costFromStartP= costFromStart;
+        this.costFromStartP= costFromStart;
     
 this.costToEndP= costToGoal;
     
@@ -78,14 +76,12 @@ this.setCalculatedTotalCost();
 
 
     public setCostToEnd(costToEnd: number){
-    //var costToEnd = costToEnd
 this.costToEndP= costToEnd;
     
 }
 
 
     public setTotalCost(totalCost: number){
-    //var totalCost = totalCost
 this.totalCostP= totalCost;
     
 }
@@ -112,21 +108,18 @@ this.totalCostP= this.costFromStartP +this.costToEndP;
 
 
     public setCostFromStart(cost: number){
-    //var cost = cost
 this.costFromStartP= cost;
     
 }
 
 
     public addCostFromStart(cost: number){
-    //var cost = cost
 this.costFromStartP += cost;
     
 }
 
 
-    public localeCompare(pathFindingNodeCostInfo: PathFindingNodeCostInfo): number{
-var pathFindingNodeCostInfo = pathFindingNodeCostInfo
+    public compareTo(pathFindingNodeCostInfo: PathFindingNodeCostInfo): number{
 
 
 

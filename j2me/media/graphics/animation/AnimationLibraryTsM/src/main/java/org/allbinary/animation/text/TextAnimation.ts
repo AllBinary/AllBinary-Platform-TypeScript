@@ -71,9 +71,7 @@ export class TextAnimation extends IndexedAnimation {
     private anchor: number = Anchor.TOP_LEFT;
 public constructor (text: string, animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var text = text
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -89,9 +87,6 @@ this.setText(text);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 
@@ -119,7 +114,6 @@ graphics.drawString(this.textArrayP[index]!, x, y +(index *height), this.anchor)
 
 
     public setText(text: string){
-var text = text
 
     var list: BasicArrayList = new BasicArrayListD();
 ;

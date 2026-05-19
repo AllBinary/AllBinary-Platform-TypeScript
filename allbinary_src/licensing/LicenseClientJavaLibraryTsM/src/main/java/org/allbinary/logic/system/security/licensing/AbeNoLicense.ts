@@ -85,7 +85,6 @@ private constructor (){
 
 
     public getKey(keyName: string): string{
-var keyName = keyName
 
 
 

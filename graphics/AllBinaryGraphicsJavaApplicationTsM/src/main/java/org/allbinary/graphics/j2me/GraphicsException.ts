@@ -55,10 +55,7 @@ export class GraphicsException extends java.lang.Exception {
     private readonly guiLog: GuiLog = GuiLog.getInstance()!;
 public constructor (msg: string, obj: any = {}, method: string){
             super(msg);
-                    var msg = msg
-var obj = obj
-var method = method
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,10 +75,7 @@ this.logUtil!.put(msg, obj, method, this);
 
 public constructor (msg: string, className: string, method: string){
             super(msg);
-                    var msg = msg
-var className = className
-var method = method
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

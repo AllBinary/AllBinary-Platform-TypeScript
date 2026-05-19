@@ -57,8 +57,7 @@ export class PaymentGatewayViewAbstract extends TransformInfoHttpComposite {
     private paymentGatewayPrimaryKey: PaymentGatewayPrimaryKey
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -68,7 +67,6 @@ this.getFormData(this.getPageContext()!.getRequest() as HttpServletRequest);
 
 
     public getFormData(request: HttpServletRequest){
-var request = request
 
     var storeName: string = this.getWeblisketSession()!.getStoreName()!;
 ;
@@ -93,7 +91,6 @@ this.setPaymentGatewayPrimaryKey(new PaymentGatewayPrimaryKey(storeName, gateway
 
 
     public setPaymentGatewayPrimaryKey(paymentGatewayPrimaryKey: PaymentGatewayPrimaryKey){
-var paymentGatewayPrimaryKey = paymentGatewayPrimaryKey
 this.paymentGatewayPrimaryKey= paymentGatewayPrimaryKey;
     
 }

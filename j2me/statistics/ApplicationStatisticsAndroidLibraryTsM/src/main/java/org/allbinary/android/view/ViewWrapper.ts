@@ -51,8 +51,7 @@ export class ViewWrapper extends BaseViewWrapper {
 public constructor (view: View){
 
             super();
-            //var view = view
-this.view= view;
+        this.view= view;
     
 }
 

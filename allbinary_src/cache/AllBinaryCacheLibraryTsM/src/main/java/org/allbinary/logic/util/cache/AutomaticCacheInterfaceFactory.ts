@@ -55,9 +55,6 @@ export class AutomaticCacheInterfaceFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(cacheableInterfaceFactoryInterface: CacheableInterfaceFactoryInterface, cacheType: CacheType, cachePolicy: CachePolicy): AutomaticCacheInterface{
-var cacheableInterfaceFactoryInterface = cacheableInterfaceFactoryInterface
-var cacheType = cacheType
-var cachePolicy = cachePolicy
 
 
 

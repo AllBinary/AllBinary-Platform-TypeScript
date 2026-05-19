@@ -99,11 +99,7 @@ export class GameOptionsForm extends CommandForm {
         
 public constructor (commandListener: CommandListener, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(commandListener, title, backgrounBasicColor, foregroundBasicColor);
-                        //var commandListener = commandListener
-    //var title = title
-    //var backgrounBasicColor = backgrounBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -129,7 +125,6 @@ this.addTextFieldsIfSimulated();
 
 
     public close(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 super.close();
     
 this.save(abeClientInformation);
@@ -285,7 +280,6 @@ this.append(gauge);
 
 
     public initCommands(cmdListener: CommandListener){
-    //var cmdListener = cmdListener
 
     var gameCommandsFactory: GameCommandsFactory = GameCommandsFactory.getInstance()!;
 ;
@@ -304,7 +298,6 @@ this.setCommandListener(cmdListener);
                 //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 
     var size: number = this.size()!;
 ;

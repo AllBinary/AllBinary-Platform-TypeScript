@@ -58,11 +58,7 @@ export class EmailEvent extends EventObject {
     private attempts: number= 0
 public constructor (emailEventHandler: any = {}, userEmailEventNameData: UserEmailEventNameData, emailInfo: EmailInfo, attempts: number){
             super(emailEventHandler);
-                    var emailEventHandler = emailEventHandler
-var userEmailEventNameData = userEmailEventNameData
-var emailInfo = emailInfo
-var attempts = attempts
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -94,7 +90,6 @@ this.emailInfo= emailInfo;
 
 
     public setAttempts(attempts: number){
-var attempts = attempts
 this.attempts= attempts;
     
 }

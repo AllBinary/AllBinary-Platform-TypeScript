@@ -97,13 +97,7 @@ export class TouchButton extends Paintable {
 public constructor (touchButtonInput: TouchButtonInput, animationInterface: AnimationInterface, rawRectangle: Rectangle, cellPosition: CellPosition, xBorder: number, yBorder: number){
 
             super();
-        var touchButtonInput = touchButtonInput
-var animationInterface = animationInterface
-var rawRectangle = rawRectangle
-var cellPosition = cellPosition
-var xBorder = xBorder
-var yBorder = yBorder
-this.touchButtonInput= touchButtonInput;
+        this.touchButtonInput= touchButtonInput;
     
 this.animationInterface= animationInterface as Animation;
     
@@ -124,7 +118,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintXY(graphics, animationX, this.animationY);
     
 }

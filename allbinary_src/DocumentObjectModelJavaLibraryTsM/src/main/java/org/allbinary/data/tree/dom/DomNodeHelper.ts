@@ -58,7 +58,6 @@ export class DomNodeHelper
         
 
     public static getFirstChildElement(parentNode: Node): Node{
-var parentNode = parentNode
 
     var node: Node = parentNode!.getFirstChild()!;
 ;
@@ -108,7 +107,6 @@ node= nodeList!.item(index);
 
 
     public static getTextNodeValue(node: Node): string{
-var node = node
 
     var nodeTextNode: Node = node.getFirstChild()!;
 ;
@@ -144,8 +142,6 @@ var node = node
                 //@Throws(Exception.constructor)
             
     public static getTextNodeValue(nodeName: string, nodeList: NodeList): string{
-var nodeName = nodeName
-var nodeList = nodeList
 
     var node: Node = DomSearchHelper.getNode(nodeName, nodeList)!;
 ;
@@ -160,7 +156,6 @@ var nodeList = nodeList
 
 
     public static getTextNodesValue(node: Node): string{
-var node = node
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

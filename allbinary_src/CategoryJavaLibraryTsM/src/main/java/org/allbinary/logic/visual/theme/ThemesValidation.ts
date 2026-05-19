@@ -70,14 +70,12 @@ public constructor (){
 public constructor (node: Node){
 
             super();
-        var node = node
-}
+        }
 
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-}
+        }
 
 
     public isValid(): Boolean{
@@ -111,7 +109,6 @@ public constructor (hashMap: HashMap<any, any>){
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -124,7 +121,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(ThemesData.getInstance()!.NAME)!;
 ;

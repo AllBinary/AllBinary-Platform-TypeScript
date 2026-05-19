@@ -68,9 +68,6 @@ export class BasicColorUtil
     public readonly ffOpaque: boolean = true;
 
     public getRGB(red: number, green: number, blue: number): number{
-var red = red
-var green = green
-var blue = blue
 
     var value: number = 0;
 ;
@@ -107,10 +104,6 @@ value= blue | value;
 
 
     public getARGB(alphaValue: number, r: number, g: number, b: number): number{
-    //var alphaValue = alphaValue
-    //var r = r
-    //var g = g
-    //var b = b
 
 
 
@@ -121,8 +114,6 @@ value= blue | value;
 
 
     public get(alphaValue: number, color: number): number{
-    //var alphaValue = alphaValue
-    //var color = color
 
 
 
@@ -133,7 +124,6 @@ value= blue | value;
 
 
     public invert(color: number): number{
-    //var color = color
 
 
 

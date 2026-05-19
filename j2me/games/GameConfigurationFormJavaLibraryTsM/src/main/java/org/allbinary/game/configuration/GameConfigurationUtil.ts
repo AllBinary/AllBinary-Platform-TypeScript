@@ -84,8 +84,6 @@ export class GameConfigurationUtil
                 //@Throws(Exception.constructor)
             
     public change(gameOptionsForm: GameOptionsForm, gauge: GameConfigurationGauge){
-var gameOptionsForm = gameOptionsForm
-var gauge = gauge
 this.update(gauge);
     
 
@@ -110,7 +108,6 @@ this.updateChallange(gameOptionsForm, gameConfiguration);
                 //@Throws(Exception.constructor)
             
     public update(gauge: GameConfigurationGauge){
-var gauge = gauge
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
 ;
@@ -153,7 +150,6 @@ gameConfiguration!.setValue(value);
                 //@Throws(Exception.constructor)
             
     public setDefault(gauge: GameConfigurationGauge){
-var gauge = gauge
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
 ;
@@ -186,8 +182,6 @@ gameConfiguration!.setValue(gameConfiguration!.getDefaultValue());
                 //@Throws(Exception.constructor)
             
     public updateChallange(gameOptionsForm: GameOptionsForm, gameConfiguration: GameConfiguration){
-var gameOptionsForm = gameOptionsForm
-var gameConfiguration = gameConfiguration
 
     var gameConfigurationSingleton: GameConfigurationSingleton = GameConfigurationSingleton.getInstance()!;
 ;

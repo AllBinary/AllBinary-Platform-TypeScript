@@ -85,8 +85,7 @@ export class HttpComponentView extends TransformInfoHttpComposite implements Tra
     private transformDocumentInterface: TransformDocumentInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -129,14 +128,12 @@ this.setTransformDocumentInterface(TransformHttpRequestDocumentFactory.getInstan
 
 
     public setTransformDocumentInterface(transformDocumentInterface: TransformDocumentInterface){
-var transformDocumentInterface = transformDocumentInterface
 this.transformDocumentInterface= transformDocumentInterface;
     
 }
 
 
     public addDomNodeInterface(domNodeInterface: DomNodeInterface){
-var domNodeInterface = domNodeInterface
 this.domNodeInterfaceVector!.add(domNodeInterface);
     
 }

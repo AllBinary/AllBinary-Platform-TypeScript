@@ -86,7 +86,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(node: Node): TransformInfoProperties{
-var node = node
 
     var transformInfoChildNodeList: NodeList = node.getChildNodes()!;
 ;

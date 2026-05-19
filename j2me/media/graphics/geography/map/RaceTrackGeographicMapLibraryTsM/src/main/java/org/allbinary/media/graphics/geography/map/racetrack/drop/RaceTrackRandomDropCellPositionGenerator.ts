@@ -103,8 +103,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
-var allBinaryGameLayerManager = allBinaryGameLayerManager
-var geographicMapInterface = geographicMapInterface
 super.update(allBinaryGameLayerManager, geographicMapInterface);
     
 
@@ -121,8 +119,6 @@ this.cellHeight= tiledLayer!.getCellHeight() /this.cellsPerRowOrColumn;
                 //@Throws(Exception.constructor)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
-var allBinaryLayerManager = allBinaryLayerManager
-var index = index
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index) as GeographicMapCellPosition;
 ;

@@ -62,10 +62,7 @@ export class AbstractInputAutomationFactory extends InputAutomationModuleFactory
 public constructor (name: string, jPanel: JPanel, helpSet: HelpSet){
 
             super();
-        var name = name
-var jPanel = jPanel
-var helpSet = helpSet
-this.name= name;
+        this.name= name;
     
 this.jPanel= jPanel;
     
@@ -76,9 +73,7 @@ this.helpSet= helpSet;
 public constructor (name: string, jPanel: JPanel){
 
             super();
-        var name = name
-var jPanel = jPanel
-this.name= name;
+        this.name= name;
     
 this.jPanel= jPanel;
     

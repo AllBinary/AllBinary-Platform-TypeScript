@@ -94,8 +94,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getTransformInfoInterfaceToCustomize(customizerTransformInfoInterface: TransformInfoInterface, transformInfoInterface: TransformInfoInterface): TransformInfoInterface{
-var customizerTransformInfoInterface = customizerTransformInfoInterface
-var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -133,8 +131,6 @@ var transformInfoInterface = transformInfoInterface
                 //@Throws(Exception.constructor)
             
     public getTransformInfoObjectConfigComponentNodesToCustomize(customizerTransformInfoInterface: Object, transformInfoInterface: Object): Vector{
-var customizerTransformInfoInterface = customizerTransformInfoInterface
-var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -172,7 +168,6 @@ var transformInfoInterface = transformInfoInterface
                 //@Throws(Exception.constructor)
             
     public getTransformInfoObjectConfigComponentNodes(transformInfoInterface: Object): Vector{
-var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -198,7 +193,6 @@ var transformInfoInterface = transformInfoInterface
                 //@Throws(Exception.constructor)
             
     public getTransformInfoObjectConfigGroupComponentNodes(transformInfoInterface: Object): Vector{
-var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -224,8 +218,6 @@ var transformInfoInterface = transformInfoInterface
                 //@Throws(Exception.constructor)
             
     public insert(transformInfoInterface: TransformInfoInterface, domNodeInterface: DomNodeInterface){
-var transformInfoInterface = transformInfoInterface
-var domNodeInterface = domNodeInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -393,8 +385,6 @@ this.write(specifiedTransformInfoInterface, documentString);
                 //@Throws(Exception.constructor)
             
     public write(specifiedTransformInfoInterface: TransformInfoInterface, documentString: string){
-var specifiedTransformInfoInterface = specifiedTransformInfoInterface
-var documentString = documentString
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -418,7 +408,6 @@ transformInfoEntityInterface!.update(specifiedTransformInfoInterface!.toHashMap(
                 //@Throws(Exception.constructor)
             
     public getViewDataForComponentsInObjectConfig(transformInfoInterface: Object): Document{
-var transformInfoInterface = transformInfoInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

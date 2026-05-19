@@ -65,8 +65,7 @@ export class ProgressMidlet extends AllBinaryMidlet {
 public constructor (clientInformationFactory: ClientInformationFactory){
 
             super();
-            //var clientInformationFactory = clientInformationFactory
-this.preInit();
+        this.preInit();
     
 this.abeClientInformation= clientInformationFactory!.getInstance();
     
@@ -78,7 +77,6 @@ this.abeClientInformation= clientInformationFactory!.getInstance();
 
 
     exit(isProgress: boolean){
-var isProgress = isProgress
 
     var processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;
 ;

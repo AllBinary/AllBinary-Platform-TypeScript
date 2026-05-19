@@ -51,8 +51,6 @@ export class AnalogLocationInputProcessor
         
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInput: AnalogLocationInput){
-var allbinaryLayerManager = allbinaryLayerManager
-var analogLocationInput = analogLocationInput
 }
 
 

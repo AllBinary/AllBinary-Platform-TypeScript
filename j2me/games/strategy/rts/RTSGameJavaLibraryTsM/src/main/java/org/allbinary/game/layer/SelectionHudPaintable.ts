@@ -134,7 +134,6 @@ this.setHeight(CommonButtons.getInstance()!.STANDARD_BUTTON_SIZE +this.myFont!.D
     private readonly backgroundColor: number = BasicColorFactory.getInstance()!.GREY.intValue()!;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.setColor(this.backgroundColor);
     
 graphics.drawRect(this.getX(), y, this.getWidth(), this.getHeight());
@@ -157,7 +156,6 @@ graphics.drawString(getName(), this.textX, y, 0);
 
 
     setAnimationInterface(animationInterface: Animation){
-var animationInterface = animationInterface
 this.animationInterface= animationInterface;
     
 }
@@ -174,7 +172,6 @@ this.animationInterface= animationInterface;
 
 
     setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -191,7 +188,6 @@ this.name= name;
 
 
     public setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 this.setColor(basicColor!.intValue());
@@ -210,7 +206,6 @@ this.setColor(basicColor!.intValue());
 
 
     public setColor(color: number){
-var color = color
 this.color= color;
     
 }
@@ -237,7 +232,6 @@ this.color= color;
 
 
     setHeight(height: number){
-var height = height
 this.height= height;
     
 }

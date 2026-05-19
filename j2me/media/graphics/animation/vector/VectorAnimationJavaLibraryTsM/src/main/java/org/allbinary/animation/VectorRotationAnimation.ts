@@ -59,10 +59,7 @@ export class VectorRotationAnimation extends VectorBaseRotationAnimation {
         
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
             super(AngleInfo.getInstance((AngleFactory.getInstance()!.TOTAL_ANGLE /currentPoints!.length)), currentPoints, basicColor, animationBehavior);
-                        //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,7 +69,6 @@ this.angleInfo!.adjustAngle(this.getFrame());
 
 
     public setFrameByDirection(direction: Direction){
-    //var direction = direction
 
     var angle: Angle = this.directionUtil!.getFrameAngle(direction)!;
 ;
@@ -83,14 +79,12 @@ this.adjustFrameToAngle(angle);
 
 
     public setFrameToAngle(angle: Angle){
-    //var angle = angle
 this.adjustFrameToAngle(angle);
     
 }
 
 
     public setFrame(index: number){
-    //var index = index
 super.setFrame(index);
     
 this.angleInfo!.adjustAngle(this.getFrame());
@@ -99,14 +93,12 @@ this.angleInfo!.adjustAngle(this.getFrame());
 
 
     public adjustFrame(newAngle: number){
-    //var newAngle = newAngle
 this.setFrame(this.frameUtil!.getFrameForAngle(newAngle, Math.round(this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement())));
     
 }
 
 
     public adjustFrameToAngle(newAngle: Angle){
-    //var newAngle = newAngle
 this.adjustFrame(newAngle!.getValue());
     
 }

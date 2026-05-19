@@ -167,7 +167,6 @@ this.maxHealthHud= maxHealthHud;
 
 
     public setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 super.setBasicColorP(basicColor);
     
 this.productivityHud!.setBasicColorP(basicColor);
@@ -182,7 +181,6 @@ this.maxHealthHud!.setBasicColorP(basicColor);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics);
     
 this.productivityHud!.paint(graphics);
@@ -229,7 +227,6 @@ this.maxHealthHud!.set(buildingLayer!.getHealthInterface()!.getMaxHealth());
 
 
     public setRtsLayer(rtsLayer: PathFindingLayerInterface){
-var rtsLayer = rtsLayer
 this.rtsLayer= rtsLayer;
     
 }

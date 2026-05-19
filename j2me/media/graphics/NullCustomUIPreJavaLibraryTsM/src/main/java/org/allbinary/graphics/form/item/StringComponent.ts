@@ -49,7 +49,6 @@ export class StringComponent
 
 
     public setBackgroundBasicColor(backgroundBasicColor: BasicColor){
-var backgroundBasicColor = backgroundBasicColor
 }
 
 
@@ -64,7 +63,6 @@ var backgroundBasicColor = backgroundBasicColor
 
 
     public setForegroundBasicColor(foregroundBasicColor: BasicColor){
-var foregroundBasicColor = foregroundBasicColor
 }
 
 

@@ -78,8 +78,7 @@ export class StoreFrontOrdersHistoryStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-        var storeFrontInterface = storeFrontInterface
-this.subTotalMoney= new Money();
+        this.subTotalMoney= new Money();
     
 this.shippingCostMoney= new Money();
     

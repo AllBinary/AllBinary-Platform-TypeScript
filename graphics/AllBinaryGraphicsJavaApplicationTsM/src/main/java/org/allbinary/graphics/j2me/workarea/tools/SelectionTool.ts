@@ -105,14 +105,12 @@ export class SelectionTool
 public constructor (canvasJPanel: CanvasJPanel){
 
             super();
-        var canvasJPanel = canvasJPanel
-this.canvasJPanel= canvasJPanel;
+        this.canvasJPanel= canvasJPanel;
     
 }
 
 
     public setColor(color: Color){
-var color = color
 }
 
 
@@ -137,7 +135,6 @@ var color = color
 
 
     public setPointsInterface(points: Points){
-var points = points
 }
 
 
@@ -170,35 +167,28 @@ var points = points
 
 
     public setFulcrumPoint(point: GPoint){
-var point = point
 }
 
 
                 //@Throws(Exception.constructor)
             
     public translate(x: number, y: number){
-var x = x
-var y = y
 }
 
 
     public setRotate(theta: number){
-var theta = theta
 }
 
 
     public addRotate(theta: number){
-var theta = theta
 }
 
 
     public setAngle(angle: number){
-var angle = angle
 }
 
 
     public addAngle(angle: number){
-var angle = angle
 }
 
 
@@ -347,11 +337,6 @@ item.deactivate();
 
 
     public paint(g: Graphics, canvasAngle: Double, dimension: IntegerDimension, x: number, y: number){
-var g = g
-var canvasAngle = canvasAngle
-var dimension = dimension
-var x = x
-var y = y
 g.setColor(this.rectColor);
     
 
@@ -378,7 +363,6 @@ g.drawRect(xRect, yRect, width, height);
                 //@Throws(Exception.constructor)
             
     public toDom(canvasDom: CanvasDom): Node{
-var canvasDom = canvasDom
 
 
 
@@ -399,7 +383,6 @@ var canvasDom = canvasDom
 
 
     public addPoint(point: GPoint){
-var point = point
 }
 
 
@@ -418,33 +401,22 @@ var point = point
     private endPoint: GPoint = this.startPoint;
 
     public mouseClicked(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 }
 
 
     public mouseMoved(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 }
 
 
     public mouseEntered(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 }
 
 
     public mouseExited(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 }
 
 
     public mousePressed(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 this.logUtil!.putF(this.commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_PRESSED);
     
 this.startPoint= PointFactory.getInstance()!.createXY(mouseEvent!.getX(), mouseEvent!.getY());
@@ -455,9 +427,6 @@ this.endPoint= this.startPoint;
 
 
     public mouseReleased(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 this.logUtil!.putF(this.commonStrings!.START, this, MouseStrings.getInstance()!.MOUSE_RELEASED);
     
 this.endPoint= PointFactory.getInstance()!.createXY(mouseEvent!.getX(), mouseEvent!.getY());
@@ -470,16 +439,12 @@ this.makeSelection();
 
 
     public mouseDragged(mouseEvent: java.awt.event.MouseEvent, xPixelsPerCell: number, yPixelsPerCell: number){
-var mouseEvent = mouseEvent
-var xPixelsPerCell = xPixelsPerCell
-var yPixelsPerCell = yPixelsPerCell
 this.endPoint= PointFactory.getInstance()!.createXY(mouseEvent!.getX(), mouseEvent!.getY());
     
 }
 
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 
                         if(keyEvent!.getKeyCode() == keyEvent!.VK_CONTROL)
                         
@@ -493,7 +458,6 @@ var keyEvent = keyEvent
 
 
     public keyReleased(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 
                         if(keyEvent!.getKeyCode() == keyEvent!.VK_CONTROL)
                         
@@ -507,7 +471,6 @@ var keyEvent = keyEvent
 
 
     public keyTyped(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 

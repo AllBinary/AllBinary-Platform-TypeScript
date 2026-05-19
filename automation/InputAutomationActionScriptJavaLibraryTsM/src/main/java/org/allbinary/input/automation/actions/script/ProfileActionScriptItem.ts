@@ -98,9 +98,7 @@ export class ProfileActionScriptItem extends DefaultMutableTreeNode implements P
     private jPopupMenu: JPopupMenu
 public constructor (label: string, node: Node){
             super(label);
-                    var label = label
-var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -112,8 +110,7 @@ this.logUtil!.putF("Label: " +label, this, this.commonStrings!.CONSTRUCTOR);
 
 public constructor (label: string){
             super(label);
-                    var label = label
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -149,7 +146,6 @@ this.getJPopupMenu()!.add(jMenuItemDelete);
                 //@Throws(Exception.constructor)
             
     public process(frame: Long){
-var frame = frame
 
 
 
@@ -178,9 +174,8 @@ var frame = frame
 
 
     public actionPerformed(actionEvent: ActionEvent){
-var actionEvent = actionEvent
 
-                        if(actionEvent!.getActionCommand()!.localeCompare(ProfileActionScriptItem.EDIT) == 0)
+                        if(actionEvent!.getActionCommand()!.compareTo(ProfileActionScriptItem.EDIT) == 0)
                         
                                     {
                                     this.showDialog();
@@ -192,7 +187,6 @@ var actionEvent = actionEvent
 
 
     public setJPopupMenu(jPopupMenu: JPopupMenu){
-var jPopupMenu = jPopupMenu
 this.jPopupMenu= jPopupMenu;
     
 }

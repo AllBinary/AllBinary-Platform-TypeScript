@@ -77,7 +77,6 @@ this.setTagRequestHelperFactory(new QuoteRequestHelperFactory());
 
 
     public setStoreName(storeName: string){
-var storeName = storeName
 this.storeName= storeName;
     
 }
@@ -165,7 +164,7 @@ this.storeName= storeName;
                                     this.getPropertiesHashMap()!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
 
-                        if(this.getCommand()!.localeCompare("EMAIL") == 0)
+                        if(this.getCommand()!.compareTo("EMAIL") == 0)
                         
                                     {
                                     this.email();

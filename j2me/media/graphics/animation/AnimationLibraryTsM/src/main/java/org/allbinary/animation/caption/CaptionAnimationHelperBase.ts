@@ -67,15 +67,10 @@ export class CaptionAnimationHelperBase extends Animation {
 
 
     public update(message: string, basicColor: BasicColor){
-var message = message
-var basicColor = basicColor
 }
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 }
 
 

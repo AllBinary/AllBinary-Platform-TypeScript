@@ -137,14 +137,12 @@ export class PaymentGateway
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.getFormData(hashMap);
+        this.getFormData(hashMap);
     
 }
 
 
     public getFormData(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
@@ -695,238 +693,204 @@ this.timeEntered= hashMap!.get(EntryData.getInstance()!.TIMECREATED.toString()) 
 
 
     public setEnable(value: string){
-var value = value
 this.enable= value;
     
 }
 
 
     public setStoreName(value: string){
-var value = value
 this.storeName= value;
     
 }
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
 
 
     public setPaymentMethod(value: string){
-var value = value
 this.paymentMethod= value;
     
 }
 
 
     public setMode(value: string){
-var value = value
 this.mode= value;
     
 }
 
 
     public setTestProtocol(value: string){
-var value = value
 this.testProtocol= value;
     
 }
 
 
     public setTestServer(value: string){
-var value = value
 this.testServer= value;
     
 }
 
 
     public setTestPort(value: string){
-var value = value
 this.testPort= value;
     
 }
 
 
     public setTestPath(value: string){
-var value = value
 this.testPath= value;
     
 }
 
 
     public setServerProtocol(value: string){
-var value = value
 this.serverProtocol= value;
     
 }
 
 
     public setServer(value: string){
-var value = value
 this.server= value;
     
 }
 
 
     public setServerPort(value: string){
-var value = value
 this.serverPort= value;
     
 }
 
 
     public setServerPath(value: string){
-var value = value
 this.serverPath= value;
     
 }
 
 
     public setTimeout(value: string){
-var value = value
 this.timeout= value;
     
 }
 
 
     public setUserName(value: string){
-var value = value
 this.userName= value;
     
 }
 
 
     public setPassword(value: string){
-var value = value
 this.password= value;
     
 }
 
 
     public setProxyProtocol(value: string){
-var value = value
 this.proxyProtocol= value;
     
 }
 
 
     public setProxyServer(value: string){
-var value = value
 this.proxyServer= value;
     
 }
 
 
     public setProxyPort(value: string){
-var value = value
 this.proxyPort= value;
     
 }
 
 
     public setProxyPath(value: string){
-var value = value
 this.proxyPath= value;
     
 }
 
 
     public setProxyUserName(value: string){
-var value = value
 this.proxyUserName= value;
     
 }
 
 
     public setProxyPassword(value: string){
-var value = value
 this.proxyPassword= value;
     
 }
 
 
     public setProxyTimeout(value: string){
-var value = value
 this.proxyTimeout= value;
     
 }
 
 
     public setSpecial1(value: string){
-var value = value
 this.special1= value;
     
 }
 
 
     public setSpecial2(value: string){
-var value = value
 this.special2= value;
     
 }
 
 
     public setSpecial3(value: string){
-var value = value
 this.special3= value;
     
 }
 
 
     public setSpecial4(value: string){
-var value = value
 this.special4= value;
     
 }
 
 
     public setSpecial5(value: string){
-var value = value
 this.special5= value;
     
 }
 
 
     public setSpecial6(value: string){
-var value = value
 this.special6= value;
     
 }
 
 
     public setSpecial7(value: string){
-var value = value
 this.special7= value;
     
 }
 
 
     public setSpecial8(value: string){
-var value = value
 this.special8= value;
     
 }
 
 
     public setSpecial9(value: string){
-var value = value
 this.special9= value;
     
 }
 
 
     public setLastModified(value: string){
-var value = value
 this.lastModified= value;
     
 }
 
 
     public setTimeEntered(value: string){
-var value = value
 this.timeEntered= value;
     
 }
@@ -947,7 +911,6 @@ this.timeEntered= value;
                 //@Throws(Exception.constructor)
             
     public toHashMap(isEncrypted: boolean): HashMap<any, any>{
-var isEncrypted = isEncrypted
 
     var paymentGatewayHashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -1088,7 +1051,6 @@ paymentGatewayHashMap!.put(EntryData.getInstance()!.LASTMODIFIED.toString(), thi
 
 
     public toVector(isEncrypted: boolean): Vector{
-var isEncrypted = isEncrypted
 
     var updateVector: Vector = new Vector();
 ;

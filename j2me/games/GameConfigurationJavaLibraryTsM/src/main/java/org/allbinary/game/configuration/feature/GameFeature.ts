@@ -46,8 +46,7 @@ export class GameFeature extends Feature {
         
 public constructor (name: string){
             super(name);
-                    var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

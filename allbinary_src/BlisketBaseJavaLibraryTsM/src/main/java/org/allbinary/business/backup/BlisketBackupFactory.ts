@@ -101,7 +101,6 @@ export class BlisketBackupFactory
                 //@Throws(Exception.constructor)
             
     getFileBasicArrayList(pathString: string): BasicArrayList{
-var pathString = pathString
 
     var path: AbPath = new AbPath(pathString);
 ;
@@ -416,8 +415,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "backupJsps()", e);
 
 
     public backup(fileBasicArrayList: BasicArrayList, zipFile: string){
-var fileBasicArrayList = fileBasicArrayList
-var zipFile = zipFile
 
         try {
             

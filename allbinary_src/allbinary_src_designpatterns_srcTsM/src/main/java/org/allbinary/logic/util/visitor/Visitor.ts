@@ -64,7 +64,6 @@ export class Visitor
     readonly nullUtil: NullUtil = NullUtil.getInstance()!;
 
     public visit(anyType: any = {}): any{
-var anyType = anyType
 
 
 

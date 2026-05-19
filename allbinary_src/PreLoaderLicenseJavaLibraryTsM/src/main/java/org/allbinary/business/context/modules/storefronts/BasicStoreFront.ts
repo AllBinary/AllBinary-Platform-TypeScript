@@ -128,8 +128,7 @@ public constructor (){
 public constructor (storeHashMap: HashMap<any, any>){
 
             super();
-        var storeHashMap = storeHashMap
-
+        
     var storeFrontData: StoreFrontData = StoreFrontData.getInstance()!;
 ;
     

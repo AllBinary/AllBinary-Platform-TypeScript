@@ -104,8 +104,6 @@ private constructor (){
 
 
     public init(indent: number, ignoreDeclaration: boolean){
-    //var indent = indent
-    //var ignoreDeclaration = ignoreDeclaration
 
         try {
             
@@ -151,7 +149,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.INIT, e);
                 //@Throws(Exception.constructor)
             
     public format(xmlString: string): string{
-    //var xmlString = xmlString
 
     var src: InputSource = new InputSource(new StringReader(xmlString));
 ;

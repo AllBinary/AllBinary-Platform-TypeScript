@@ -69,8 +69,7 @@ export class UserDomNode
 public constructor (dataMappingInterface: TableMappingInterface){
 
             super();
-        var dataMappingInterface = dataMappingInterface
-this.dataMappingInterface= dataMappingInterface;
+        this.dataMappingInterface= dataMappingInterface;
     
 }
 
@@ -78,7 +77,6 @@ this.dataMappingInterface= dataMappingInterface;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var EMPTY_STRING: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;

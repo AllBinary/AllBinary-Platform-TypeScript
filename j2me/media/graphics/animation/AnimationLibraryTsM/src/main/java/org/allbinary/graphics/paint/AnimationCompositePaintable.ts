@@ -53,21 +53,18 @@ export class AnimationCompositePaintable extends InitUpdatePaintable {
 public constructor (animationInterface: Animation){
 
             super();
-        var animationInterface = animationInterface
-this.animationInterface= animationInterface;
+        this.animationInterface= animationInterface;
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintXY(graphics, 0, 0);
     
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 this.animationInterface!.paintThreed(graphics, 0, 0, 0);
     
 }

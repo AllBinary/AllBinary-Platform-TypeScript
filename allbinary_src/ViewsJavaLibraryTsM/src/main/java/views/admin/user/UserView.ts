@@ -63,8 +63,7 @@ export class UserView extends HttpContextView {
     user: UserInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

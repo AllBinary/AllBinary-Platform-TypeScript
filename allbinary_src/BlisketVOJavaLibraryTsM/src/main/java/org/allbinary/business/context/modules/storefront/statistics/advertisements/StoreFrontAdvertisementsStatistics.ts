@@ -57,8 +57,7 @@ export class StoreFrontAdvertisementsStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-        var storeFrontInterface = storeFrontInterface
-}
+        }
 
 
     public toHashMap(): HashMap<any, any>{

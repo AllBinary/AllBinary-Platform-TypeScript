@@ -46,8 +46,7 @@ export class HtmlPostForm extends HtmlForm {
         
 public constructor (action: string){
             super(action);
-                    var action = action
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

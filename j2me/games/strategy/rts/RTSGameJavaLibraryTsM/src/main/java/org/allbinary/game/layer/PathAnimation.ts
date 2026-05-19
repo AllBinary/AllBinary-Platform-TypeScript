@@ -85,9 +85,7 @@ export class PathAnimation extends Animation {
 public constructor (pathFindingLayer: PathFindingLayerInterface, linePathAnimation: LinePathAnimation){
 
             super();
-            //var pathFindingLayer = pathFindingLayer
-    //var linePathAnimation = linePathAnimation
-this.pathFindingLayer= pathFindingLayer;
+        this.pathFindingLayer= pathFindingLayer;
     
 this.linePathAnimation= linePathAnimation;
     
@@ -97,7 +95,6 @@ this.linePathAnimation= linePathAnimation;
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
     
 }
@@ -116,9 +113,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
     private readonly endColor: BasicColor = BasicColorFactory.getInstance()!.GREEN;
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
         try {
             

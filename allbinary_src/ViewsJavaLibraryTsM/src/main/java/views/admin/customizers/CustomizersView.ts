@@ -91,8 +91,7 @@ export class CustomizersView extends HttpStoreComponentView implements DomNodeIn
     readonly customizersVector: Vector
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -102,7 +101,6 @@ this.customizersVector= TransformInfoEntityBuilder.getInstance()!.getNames(this.
 
 
     public toXmlNode(document: Document): Node{
-    //var document = document
 
         try {
             

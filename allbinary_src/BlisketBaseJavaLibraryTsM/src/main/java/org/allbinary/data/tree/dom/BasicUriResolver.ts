@@ -81,8 +81,7 @@ export class BasicUriResolver
 public constructor (extension: string){
 
             super();
-        var extension = extension
-this.extension= extension;
+        this.extension= extension;
     
 }
 
@@ -100,8 +99,6 @@ this.extension= extension;
                 //@Throws(TransformerException.constructor)
             
     public resolve(href: string, base: string): Source{
-var href = href
-var base = base
 
         try {
             

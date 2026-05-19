@@ -81,8 +81,7 @@ export class StoreThemeCategoryFactory
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.CATEGORY))
                         
                                     {
@@ -134,7 +133,6 @@ this.transformInfoInterface= transformInfoInterface;
 
 
     public getRootInstance(categoryAbPath: AbPath): CategoryInterface{
-var categoryAbPath = categoryAbPath
 
         try {
             
@@ -176,7 +174,6 @@ var categoryAbPath = categoryAbPath
 
 
     public getRootInstanceFromNode(node: Node): CategoryInterface{
-var node = node
 
         try {
             
@@ -222,8 +219,6 @@ var node = node
 
 
     public getInstance(categoryPath: string, level: number): CategoryInterface{
-var categoryPath = categoryPath
-var level = level
 
         try {
             
@@ -261,9 +256,6 @@ var level = level
 
 
     public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPath: string): CategoryInterface{
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryPath = categoryPath
 
         try {
             
@@ -301,8 +293,6 @@ var categoryPath = categoryPath
 
 
     public getInstance(node: Node, level: number): CategoryInterface{
-var node = node
-var level = level
 
         try {
             
@@ -340,9 +330,6 @@ var level = level
 
 
     public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, node: Node): CategoryInterface{
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var node = node
 
         try {
             
@@ -380,8 +367,6 @@ var node = node
 
 
     public getInstance(categoryPropertiesHashMap: HashMap<any, any>, level: number): CategoryInterface{
-var categoryPropertiesHashMap = categoryPropertiesHashMap
-var level = level
 
         try {
             
@@ -419,9 +404,6 @@ var level = level
 
 
     public getInstance(rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>): CategoryInterface{
-var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryPropertiesHashMap = categoryPropertiesHashMap
 
         try {
             

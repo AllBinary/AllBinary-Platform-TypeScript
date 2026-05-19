@@ -58,12 +58,7 @@ export class MultiPlayerGameLayer extends CollidableDestroyableDamageableLayer i
         
 public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: string, layerInfo: Rectangle, viewPosition: ViewPosition){
             super(groupInterface, name, layerInfo, viewPosition);
-                        //var remoteInfo = remoteInfo
-    //var groupInterface = groupInterface
-    //var name = name
-    //var layerInfo = layerInfo
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -81,12 +76,10 @@ public constructor (remoteInfo: RemoteInfo, groupInterface: Group[], name: strin
 
 
     public setPingInfo(show: boolean){
-var show = show
 }
 
 
     setFiring(firing: number){
-var firing = firing
 }
 
 

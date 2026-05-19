@@ -98,7 +98,6 @@ export class ProgressCanvas extends RunnableCanvas implements PaintableInterface
                                 {
                                 
     public paint(graphics: Graphics){
-var graphics = graphics
 ProgressCanvas.prototype.paint2(graphics);
     
 }
@@ -142,10 +141,7 @@ this.pathFindingThreadPool!.runAPriorityTask();
     public inGameProcessor: Processor = Processor.getInstance()!;
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(NullCommandListener.NULL_COMMAND_LISTENER, CanvasStrings.getInstance()!.EMPTY_CHILD_NAME_LIST, false);
-                        //var title = title
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -157,7 +153,6 @@ this.gauge= new ABCustomGaugeItem(StringUtil.getInstance()!.EMPTY_STRING, Math.r
 
 
     public init(gameMidlet: AllBinaryMidlet){
-var gameMidlet = gameMidlet
 this.allbinaryMidlet= gameMidlet;
     
 }
@@ -166,12 +161,10 @@ this.allbinaryMidlet= gameMidlet;
                 //@Throws(Exception.constructor)
             
     public update(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public initCommands(cmdListener: CommandListener){
-var cmdListener = cmdListener
 }
 
 
@@ -212,7 +205,6 @@ this.inProgress= true;
     private readonly START_BACKGROUND: string = "startBackground";
 
     public startBackground(background: boolean){
-var background = background
 this.logUtil!.putF(this.commonStrings!.START, this, this.START_BACKGROUND);
     
 
@@ -281,9 +273,6 @@ this.inGameProcessor= this.IN_GAME_PROCESSOR;
     readonly ADD_EARLY_PORTION: string = "addEarlyPortion";
 
     public addEarlyPortion(value: number, text: string, index: number){
-var value = value
-var text = text
-var index = index
 this.setText(new StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
     
@@ -293,9 +282,6 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
 
 
     public addPortion(value: number, text: string, index: number){
-var value = value
-var text = text
-var index = index
 this.setText(new StringMaker().
                             append(text)!.append(SmallIntegerSingletonFactory.getInstance()!.getAt(index)!.toString())!.toString());
     
@@ -307,8 +293,6 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
 
 
     public addNormalPortion(value: number, text: string){
-var value = value
-var text = text
 
                         if(this.text != text)
                         
@@ -326,7 +310,6 @@ this.gauge.setValue(this.gauge.getValue() +this.getMaxValue() /value);
 
 
     setValue(value: number){
-var value = value
 this.value= value;
     
 this.gauge.setValue(value);
@@ -335,14 +318,12 @@ this.gauge.setValue(value);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.paintable.paint(graphics);
     
 }
 
 
     public paint2(graphics: Graphics){
-var graphics = graphics
 
     var displayInfoSingleton: DisplayInfoSingleton = DisplayInfoSingleton.getInstance()!;
 ;
@@ -359,7 +340,6 @@ this.hasPainted= true;
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 
@@ -374,7 +354,6 @@ var graphics = graphics
 
 
     public setText(text: string){
-var text = text
 this.text= text;
     
 }
@@ -391,7 +370,6 @@ this.text= text;
 
 
     setBackground(background: boolean){
-var background = background
 this.background= background;
     
 }

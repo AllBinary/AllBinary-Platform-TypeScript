@@ -56,13 +56,7 @@ export class TempExplosionWeaponLayer extends SimpleWeaponLayer {
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(0);
 public constructor (name: string, movement: Movement, animationInterface: Animation, rectangle: Rectangle, viewPosition: ViewPosition, timeDelay: number){
             super(name, RemoteInfo.REMOTE_INFO,  -1, movement, animationInterface, SimpleWeaponLayer.createDestroyed(), rectangle, viewPosition);
-                        //var name = name
-    //var movement = movement
-    //var animationInterface = animationInterface
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-    //var timeDelay = timeDelay
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,7 +68,6 @@ this.timeDelayHelper!.delay= timeDelay;
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.timeDelayHelper!.isTime(GameTickTimeDelayHelperFactory.getInstance()!.startTime))
                         

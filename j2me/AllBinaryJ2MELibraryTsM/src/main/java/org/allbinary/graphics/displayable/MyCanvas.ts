@@ -99,9 +99,7 @@ export class MyCanvas extends Canvas implements DisplayableInterface, MyCommandI
 public constructor (name: string, childNameList: BasicArrayList){
 
             super();
-            //var name = name
-    //var childNameList = childNameList
-this.logUtil!.putF(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.CONSTRUCTOR, this, this.commonStrings!.CONSTRUCTOR);
     
 this.displayInfoSingleton!.update(this, this.canvasStrings!.CONSTRUCTOR);
     
@@ -115,7 +113,6 @@ this.commandStack= new Stack();
 
 
     public setFullScreenMode(mode: boolean){
-var mode = mode
 super.setFullScreenMode(mode);
     
 this.displayInfoSingleton!.update(this, this.canvasStrings!.SET_FULL_SCREEN_MODE);
@@ -124,8 +121,6 @@ this.displayInfoSingleton!.update(this, this.canvasStrings!.SET_FULL_SCREEN_MODE
 
 
     sizeChanged(w: number, h: number){
-var w = w
-var h = h
 this.displayInfoSingleton!.update(this, this.canvasStrings!.SIZE_CHANGED);
     
 }
@@ -143,7 +138,6 @@ this.displayInfoSingleton!.update(this, this.canvasStrings!.SIZE_CHANGED);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public isCommand(command: Command): boolean{
-var command = command
 
 
 
@@ -155,7 +149,6 @@ var command = command
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addCommand(command: Command){
-var command = command
 
                         if(!this.commandStack!.contains(command))
                         
@@ -172,7 +165,6 @@ super.addCommand(command);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeCommand(command: Command){
-var command = command
 this.commandStack!.removeElement(command);
     
 super.removeCommand(command);
@@ -202,7 +194,6 @@ super.removeCommand(this.commandStack!.pop() as Command);
 
 
     public setCommandListener(l: CommandListener){
-var l = l
 super.setCommandListener(l);
     
 this.commandListener= l;
@@ -272,17 +263,14 @@ this.displayInfoSingleton!.process();
 
 
     paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public draw(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public hasChild(displayable: MyCanvas): boolean{
-var displayable = displayable
 
 
 
@@ -299,60 +287,44 @@ this.logUtil!.putF("Destroyed MyCanvas", this, "destroy");
 
 
     setPaused(isPaused: boolean){
-var isPaused = isPaused
 this.paused= isPaused;
     
 }
 
 
     public keyPressedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 }
 
 
     public keyRepeatedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 }
 
 
     public keyReleasedByDevice(keyCode: number, deviceId: number){
-var keyCode = keyCode
-var deviceId = deviceId
 }
 
 
     private readonly touchME: TouchJ2ME = new TouchJ2ME();
 
     pointerDragged(x: number, y: number){
-var x = x
-var y = y
 this.touchME!.pointerDragged(x, y);
     
 }
 
 
     pointerPressed(x: number, y: number){
-var x = x
-var y = y
 this.touchME!.pointerPressed(x, y);
     
 }
 
 
     pointerReleased(x: number, y: number){
-var x = x
-var y = y
 this.touchME!.pointerReleased(x, y);
     
 }
 
 
     public nextSong(nextSongSound: Sound, leftVolume: number, rightVolume: number){
-    //var nextSongSound = nextSongSound
-    //var leftVolume = leftVolume
-    //var rightVolume = rightVolume
 }
 
 

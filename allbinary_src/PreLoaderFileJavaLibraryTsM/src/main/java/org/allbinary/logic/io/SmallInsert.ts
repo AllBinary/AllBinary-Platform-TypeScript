@@ -70,8 +70,7 @@ export class SmallInsert
 public constructor (fileName: string){
 
             super();
-        var fileName = fileName
-this.fileName= fileName;
+        this.fileName= fileName;
     
 this.string= FileUtil.getInstance()!.readAsString(fileName);
     
@@ -79,7 +78,6 @@ this.string= FileUtil.getInstance()!.readAsString(fileName);
 
 
     public atBeginning(text: string): boolean{
-var text = text
 
         try {
             
@@ -123,8 +121,6 @@ idOutData!.writeBytes(text +this.string);
 
 
     public after(text: string, after: string): boolean{
-var text = text
-var after = after
 
         try {
             
@@ -201,7 +197,6 @@ idFile!.close();
 
 
     public atEnd(text: string): boolean{
-var text = text
 
         try {
             

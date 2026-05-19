@@ -80,7 +80,6 @@ this.setTableName(this.tableName);
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(StoreFrontData.getInstance()!.NAME, value);
@@ -153,7 +152,6 @@ stringBuffer!.append(entryData!.ID)!.append(this.sqlTypeStrings!.MAX_BIG_INT_UNS
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(EntryData.getInstance()!.ID, updatedValues!.get(EntryData.getInstance()!.ID) as string, updatedValues);
     
 }

@@ -77,8 +77,6 @@ private constructor (){
 
 
     public init(lower: number, higher: number){
-var lower = lower
-var higher = higher
 this.lower= lower;
     
 this.higher= higher;

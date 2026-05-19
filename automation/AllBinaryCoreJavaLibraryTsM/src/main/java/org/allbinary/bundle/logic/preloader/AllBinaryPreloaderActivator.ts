@@ -90,7 +90,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public start(context: BundleContext){
-var context = context
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "start");
@@ -145,7 +144,6 @@ serviceReference= AllBinaryPreloaderActivator.context.getServiceReference(CRYPT_
                 //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
-var context = context
 this.logUtil!.putF(this.commonStrings!.START, this, "stop");
     
 }

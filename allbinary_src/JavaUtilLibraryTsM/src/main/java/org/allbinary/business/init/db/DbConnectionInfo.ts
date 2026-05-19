@@ -228,14 +228,12 @@ this.host= stringBuffer!.toString();
 
 
     public setJdbcDriver(value: string){
-var value = value
 this.jdbcDriver= value;
     
 }
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 this.updateUrl();
@@ -244,7 +242,6 @@ this.updateUrl();
 
 
     public setUserName(value: string){
-var value = value
 this.userName= value;
     
 this.updateUrl();
@@ -253,7 +250,6 @@ this.updateUrl();
 
 
     public setPassword(value: string){
-var value = value
 this.password= value;
     
 this.updateUrl();
@@ -262,7 +258,6 @@ this.updateUrl();
 
 
     public setSchema(value: string){
-var value = value
 this.schema= value;
     
 this.updateUrl();
@@ -271,7 +266,6 @@ this.updateUrl();
 
 
     public setServer(value: string){
-var value = value
 this.server= value;
     
 this.updateUrl();
@@ -280,7 +274,6 @@ this.updateUrl();
 
 
     public setPort(value: string){
-var value = value
 this.port= value;
     
 this.updateUrl();

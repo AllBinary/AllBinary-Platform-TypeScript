@@ -59,7 +59,6 @@ export class DamageFloaters extends Paintable {
 
 
     public add(damage: number){
-var damage = damage
 }
 
 

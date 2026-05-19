@@ -55,8 +55,7 @@ export class AbFileInputStream extends FileInputStream {
         
 public constructor (name: string){
             super(name);
-                    var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,8 +63,7 @@ public constructor (name: string){
 
 public constructor (file: AbFile){
             super(AbFileNativeUtil.get(file));
-                    var file = file
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -73,8 +71,7 @@ public constructor (file: AbFile){
 
 protected constructor (file: File){
             super(file);
-                    var file = file
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

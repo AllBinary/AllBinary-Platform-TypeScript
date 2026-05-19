@@ -58,10 +58,7 @@ export class ArrayAI extends BasicAI {
     private readonly artificialIntelligenceInterfaceArray: ArtificialIntelligenceInterface[]
 public constructor (artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var artificialIntelligenceInterface = artificialIntelligenceInterface
-var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -73,7 +70,6 @@ this.artificialIntelligenceInterfaceArray= artificialIntelligenceInterface;
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
     var size: number = this.artificialIntelligenceInterfaceArray!.length
                 ;

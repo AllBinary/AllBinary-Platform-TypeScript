@@ -67,17 +67,12 @@ protected constructor (){
 
 
     public setBasicColorP(graphics: Graphics, basicColor: BasicColor){
-var graphics = graphics
-var basicColor = basicColor
 graphics.setColor(basicColor!.intValue());
     
 }
 
 
     public setBasicColorP3(graphics: Graphics, basicColor: BasicColor, value: number){
-var graphics = graphics
-var basicColor = basicColor
-var value = value
 graphics.setColor(value);
     
 }

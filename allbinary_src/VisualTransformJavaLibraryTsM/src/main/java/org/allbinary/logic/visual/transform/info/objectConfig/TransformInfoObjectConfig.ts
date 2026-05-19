@@ -100,8 +100,7 @@ export class TransformInfoObjectConfig
 public constructor (transformInfoInterface: Object){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-this.ownerTransformInfoInterface= transformInfoInterface;
+        this.ownerTransformInfoInterface= transformInfoInterface;
     
 this.createDocument();
     
@@ -146,9 +145,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 public constructor (transformInfoInterface: Object, document: Object){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-var document = document
-this.ownerTransformInfoInterface= transformInfoInterface;
+        this.ownerTransformInfoInterface= transformInfoInterface;
     
 this.document= document;
     
@@ -208,10 +205,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "Constructor(TransformInfoInt
 public constructor (transformInfoInterface: Object, name: string, type: string){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-var name = name
-var type = type
-this.ownerTransformInfoInterface= transformInfoInterface;
+        this.ownerTransformInfoInterface= transformInfoInterface;
     
 this.createDocument();
     
@@ -301,14 +295,12 @@ this.document.appendChild(objectConfigNode);
 
 
     setDocument(document: Document){
-var document = document
 this.document= document;
     
 }
 
 
     public containsView(transformInfoInterface: TransformInfoInterface): boolean{
-var transformInfoInterface = transformInfoInterface
 
     var objectConfigNode: Node = this.document.getElementsByTagName(TransformInfoObjectConfigData.getInstance()!.NAME)!.item(0)!;
 ;
@@ -342,7 +334,7 @@ index < numberOfViews; index++)
 ;
     
 
-                        if(transformInfoInterface!.getName()!.localeCompare(attrNode!.getValue()) == 0)
+                        if(transformInfoInterface!.getName()!.compareTo(attrNode!.getValue()) == 0)
                         
                                     {
                                     
@@ -400,7 +392,6 @@ index < numberOfViews; index++)
                 //@Throws(Exception.constructor)
             
     public setName(name: string){
-var name = name
 
     var attrNode: Attr = this.getTemplateAttributes()!.getNamedItem(TransformInfoObjectConfigData.getInstance()!.NAME) as Attr;
 ;
@@ -413,7 +404,6 @@ attrNode!.setValue(name);
                 //@Throws(Exception.constructor)
             
     getNodeVector(nodeName: string): Vector{
-var nodeName = nodeName
 
     var componentsNodeList: NodeList = this.document.getElementsByTagName(nodeName)!;
 ;
@@ -474,7 +464,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "getNodeVector(nodename)");
                 //@Throws(Exception.constructor)
             
     getTransformDomNodes(nodeName: string): Vector{
-var nodeName = nodeName
 
     var viewVector: Vector = new Vector();
 ;
@@ -515,7 +504,6 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
                 //@Throws(Exception.constructor)
             
     public getTransforms(nodeName: string): Vector{
-var nodeName = nodeName
 
     var viewVector: Vector = new Vector();
 ;
@@ -557,7 +545,6 @@ viewVector!.add(new TransformInfoDomNode(viewNode).
                 //@Throws(Exception.constructor)
             
     public getTransformsGroup(group: string): Vector{
-var group = group
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
@@ -618,7 +605,7 @@ index < length; index++)
 ;
     
 
-                        if(value.localeCompare(group) == 0)
+                        if(value.compareTo(group) == 0)
                         
                                     {
                                     componentsNode= node;
@@ -767,7 +754,6 @@ viewVector!.add(new TransformInfoDomNode(viewNode));
 
 
     public setOutputTypeName(outputTypeName: string){
-var outputTypeName = outputTypeName
 this.outputTypeName= outputTypeName;
     
 }

@@ -65,9 +65,7 @@ export class CategoryHierarchy
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface){
 
             super();
-        var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-this.level= 0;
+        this.level= 0;
     
 this.setRoot(rootCategoryInterface);
     
@@ -78,10 +76,7 @@ this.setParent(parentCategoryInterface);
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, level: number){
 
             super();
-        var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var level = level
-this.level= level;
+        this.level= level;
     
 this.setRoot(rootCategoryInterface);
     
@@ -92,10 +87,7 @@ this.setParent(parentCategoryInterface);
 public constructor (rootCategoryInterface: CategoryInterface, parentCategoryInterface: CategoryInterface, categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-        var rootCategoryInterface = rootCategoryInterface
-var parentCategoryInterface = parentCategoryInterface
-var categoryPropertiesHashMap = categoryPropertiesHashMap
-
+        
     var levelString: string = StringUtil.getInstance()!.getNonNull(categoryPropertiesHashMap!.get(CategoryData.getInstance()!.LEVEL) as string)!;
 ;
     
@@ -129,21 +121,18 @@ this.setParent(parentCategoryInterface);
 
 
     public setLevel(level: number){
-var level = level
 this.level= level;
     
 }
 
 
     public setParent(categoryInterface: CategoryInterface){
-var categoryInterface = categoryInterface
 this.parentCategoryInterface= categoryInterface;
     
 }
 
 
     public setRoot(categoryInterface: CategoryInterface){
-var categoryInterface = categoryInterface
 this.rootCategoryInterface= categoryInterface;
     
 }

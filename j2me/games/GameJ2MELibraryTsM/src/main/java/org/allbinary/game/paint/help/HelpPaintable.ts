@@ -66,10 +66,7 @@ export class HelpPaintable extends Paintable {
 public constructor (title: string, backgroundBasicColor: BasicColor, basicColor: BasicColor){
 
             super();
-            //var title = title
-    //var backgroundBasicColor = backgroundBasicColor
-    //var basicColor = basicColor
-this.title= title;
+        this.title= title;
     
 this.basicColor= basicColor;
     
@@ -77,7 +74,6 @@ this.basicColor= basicColor;
 
 
     public setInputInfoP(inputInfo: string[]){
-    //var inputInfo = inputInfo
 this.inputInfo= inputInfo;
     
 }
@@ -100,7 +96,6 @@ this.inputInfo= inputInfo;
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 
     var myFont: MyFont = MyFont.getInstance()!;
 ;

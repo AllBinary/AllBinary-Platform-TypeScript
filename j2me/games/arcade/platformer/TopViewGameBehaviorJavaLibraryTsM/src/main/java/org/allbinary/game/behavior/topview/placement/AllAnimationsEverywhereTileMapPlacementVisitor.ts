@@ -48,8 +48,6 @@ export class AllAnimationsEverywhereTileMapPlacementVisitor extends TileMapPlace
         
 
     public visit(lastMap: TiledMap, mapData: number[][]){
-    //var lastMap = lastMap
-    //var mapData = mapData
 
     var size: number = mapData!.length
                 ;

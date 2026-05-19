@@ -59,7 +59,6 @@ export class MotionEventCircularPool
         
 
     public static createPool(id: number): MotionEventCircularPool{
-var id = id
 
 
 
@@ -75,8 +74,7 @@ var id = id
 private constructor (id: number){
 
             super();
-        var id = id
-this.eventPool!.init(new MotionEventFactory(this.eventPool, id));
+        this.eventPool!.init(new MotionEventFactory(this.eventPool, id));
     
 }
 
@@ -85,7 +83,6 @@ this.eventPool!.init(new MotionEventFactory(this.eventPool, id));
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(motionGestureInput: MotionGestureInput): MotionGestureEvent{
-var motionGestureInput = motionGestureInput
 
 
 

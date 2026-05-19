@@ -88,8 +88,7 @@ public constructor (){
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var titleTextNode: Node = DomSearchHelper.getNode(TitleData.getInstance()!.TEXT, node.getChildNodes())!;
 ;
     
@@ -122,8 +121,7 @@ this.title= DomNodeHelper.getTextNodeValue(valueNode);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -148,7 +146,6 @@ this.getFormData(hashMap);
 
 
     public getFormData(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 this.title= hashMap!.get(TitleData.getInstance()!.TEXT) as string;
     
 
@@ -182,7 +179,6 @@ hashMap!.put(TitleData.getInstance()!.TEXT, this.getTitle());
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;

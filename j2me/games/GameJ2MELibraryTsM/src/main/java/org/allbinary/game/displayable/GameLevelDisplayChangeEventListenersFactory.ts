@@ -71,7 +71,6 @@ export class GameLevelDisplayChangeEventListenersFactory
     private readonly list: BasicArrayList = new BasicArrayListD();
 
     public add(displayChangeEventListener: DisplayChangeEventListener){
-var displayChangeEventListener = displayChangeEventListener
 this.list.add(displayChangeEventListener);
     
 DisplayChangeEventHandler.getInstance()!.addListenerInterface(displayChangeEventListener);

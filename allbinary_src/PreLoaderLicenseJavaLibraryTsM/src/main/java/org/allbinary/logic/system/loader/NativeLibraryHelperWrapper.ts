@@ -66,8 +66,7 @@ export class NativeLibraryHelperWrapper
 public constructor (libraryName: string){
 
             super();
-        var libraryName = libraryName
-this.setLibraryName(libraryName);
+        this.setLibraryName(libraryName);
     
 }
 
@@ -151,7 +150,6 @@ System.gc();
 
 
     public setLibraryName(libraryName: string){
-var libraryName = libraryName
 this.libraryName= libraryName;
     
 }

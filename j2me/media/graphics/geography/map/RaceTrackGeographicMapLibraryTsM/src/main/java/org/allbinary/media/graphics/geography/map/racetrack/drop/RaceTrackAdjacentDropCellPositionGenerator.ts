@@ -118,8 +118,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     getFirstNonRoadAdjacentCellPosition(column: number, row: number): GeographicMapCellPosition{
-    //var column = column
-    //var row = row
 
     var nonRoadGeographicMapCellPosition: GeographicMapCellPosition = SimpleGeographicMapCellPositionFactory.NULL_GEOGRAPHIC_MAP_CELL_POSITION;
 ;
@@ -193,8 +191,6 @@ break;
                 //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
-    //var geographicMapInterface = geographicMapInterface
 this.hashtable.put(AllBinaryGameLayerManager.ID, allBinaryGameLayerManager);
     
 super.update(allBinaryGameLayerManager, geographicMapInterface);
@@ -207,8 +203,6 @@ super.update(allBinaryGameLayerManager, geographicMapInterface);
                 //@Throws(Exception.constructor)
             
     drop(allBinaryLayerManager: AllBinaryLayerManager, index: number){
-    //var allBinaryLayerManager = allBinaryLayerManager
-    //var index = index
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.list.get(index) as GeographicMapCellPosition;
 ;

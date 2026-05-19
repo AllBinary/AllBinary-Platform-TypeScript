@@ -47,14 +47,12 @@ export class TerrainEventListener
     private readonly list: BasicArrayList = new BasicArrayListD();
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onTerrainEvent(terrainEvent: TerrainEvent){
-var terrainEvent = terrainEvent
 this.list.clear();
     
 this.list.add(terrainEvent);

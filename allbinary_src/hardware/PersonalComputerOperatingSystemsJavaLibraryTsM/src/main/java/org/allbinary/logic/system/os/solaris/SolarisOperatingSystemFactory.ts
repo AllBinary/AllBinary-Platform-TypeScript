@@ -100,7 +100,7 @@ private constructor (){
 ;
     
 
-                        if(osName!.localeCompare(operatingSystems!.SOLARIS) == 0)
+                        if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
                         
                                     {
                                     operatingSystemInterface= new SolarisOS();

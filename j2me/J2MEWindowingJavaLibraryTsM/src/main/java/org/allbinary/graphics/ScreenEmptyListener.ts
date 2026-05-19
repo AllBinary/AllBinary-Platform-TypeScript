@@ -48,7 +48,6 @@ export class ScreenEmptyListener
         
 
     public onFullScreen(isFullScreen: boolean){
-var isFullScreen = isFullScreen
 }
 
 

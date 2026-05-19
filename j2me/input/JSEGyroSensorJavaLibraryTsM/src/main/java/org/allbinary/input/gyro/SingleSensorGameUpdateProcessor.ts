@@ -58,7 +58,6 @@ export class SingleSensorGameUpdateProcessor extends SensorGameUpdateProcessor {
                 //@Throws(Exception.constructor)
             
     public process(anyType: any = {}){
-var anyType = anyType
 this.setNoSensors();
     
 }
@@ -67,7 +66,6 @@ this.setNoSensors();
                 //@Throws(Exception.constructor)
             
     public sendNotifications(anyType: any = {}){
-var anyType = anyType
 }
 
 

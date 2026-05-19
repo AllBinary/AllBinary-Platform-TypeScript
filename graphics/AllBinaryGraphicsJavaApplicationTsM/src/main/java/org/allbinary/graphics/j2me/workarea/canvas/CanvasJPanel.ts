@@ -162,11 +162,7 @@ export class CanvasJPanel extends javax.swing.JPanel implements java.awt.event.M
 public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, x: number, y: number){
 
             super();
-        var workAreaJTreeJPanel = workAreaJTreeJPanel
-var dimension = dimension
-var x = x
-var y = y
-this.grid= new Grid();
+        this.grid= new Grid();
     
 
         try {
@@ -200,10 +196,7 @@ this.setCanvasSize(x, y);
 public constructor (workAreaJTreeJPanel: WorkAreaJTreeJPanel, dimension: Dimension, canvasDom: CanvasDom){
 
             super();
-        var workAreaJTreeJPanel = workAreaJTreeJPanel
-var dimension = dimension
-var canvasDom = canvasDom
-this.grid= new Grid(canvasDom!.getGrid());
+        this.grid= new Grid(canvasDom!.getGrid());
     
 
         try {
@@ -324,8 +317,6 @@ setLayout(new java.awt.GridLayout(1, 1));
                 //@Throws(Exception.constructor)
             
     public setCanvasSize(x: number, y: number){
-var x = x
-var y = y
 this.grid.isGridPossible= true;
     
 
@@ -382,15 +373,12 @@ this.grid.isChanged= true;
 
 
     public setGrid(point: GPoint){
-var point = point
 this.setGrid(point.getX(), point.getY());
     
 }
 
 
     public setGrid(xSize: number, ySize: number){
-var xSize = xSize
-var ySize = ySize
 
         try {
             
@@ -459,14 +447,12 @@ this.grid.isChanged= true;
 
 
     public setAngle(angle: number){
-var angle = angle
 this.angle= angle;
     
 }
 
 
     public addAngle(angle: number){
-var angle = angle
 this.setAngle(this.angle +angle);
     
 }
@@ -579,8 +565,6 @@ this.workAreaJTreeJPanel!.repaint();
                 //@Throws(Exception.constructor)
             
     public explode(howMuch: number, explosionType: number){
-var howMuch = howMuch
-var explosionType = explosionType
 
     var graphicItemArray: any[] = this.getGraphicItemHashMap()!.keys.toTypedArray()!;
 ;
@@ -726,7 +710,6 @@ this.canvasTreeNode!.add(newNode);
                 //@Throws(Exception.constructor)
             
     public duplicateGraphicItem(graphicItem: GraphicItemInterface){
-var graphicItem = graphicItem
 
     var graphicItemClone: GraphicItemInterface = graphicItem!.duplicate()!;
 ;
@@ -741,7 +724,6 @@ this.canvasTreeNode!.add(graphicItemClone!.getTreeNode());
                 //@Throws(Exception.constructor)
             
     public duplicateGraphicItemHashMap(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
     var mutableTreeNodeArray: any[] = hashMap!.keys.toTypedArray()!;
 ;
@@ -857,7 +839,6 @@ this.duplicateGraphicItem(graphicItem);
 
 
     public drawItems(graphics: Graphics){
-var graphics = graphics
 
     var angleDouble: Double = new Double(this.angle);
 ;
@@ -891,7 +872,6 @@ item.paint(graphics, angleDouble, this.getCanvasDimension(), this.getXPixelsPerW
 
 
     public drawGrid(graphics: Graphics){
-var graphics = graphics
 
     var xAdjust: number = (this.getWidth() % this.getXPixelsPerWorkAreaPixel()) /2;
 ;
@@ -946,7 +926,6 @@ graphics.drawLine(value, yUpper, value, yLower);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
         try {
             
@@ -1024,7 +1003,6 @@ this.grid.isChanged= true;
 
 
     public mouseClicked(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_CLICKED_LABEL +this.logMouseEvent(mouseEvent));
     
 
@@ -1077,21 +1055,18 @@ this.workAreaJTreeJPanel!.repaint();
 
 
     public mouseEntered(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 StatusFactory.getInstance()!.setStatusNoLog(this.logMouseEvent(mouseEvent));
     
 }
 
 
     public mouseExited(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 StatusFactory.getInstance()!.setStatusNoLog(this.logMouseEvent(mouseEvent));
     
 }
 
 
     public mousePressed(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_PRESSED_LABEL +this.logMouseEvent(mouseEvent));
     
 
@@ -1119,7 +1094,6 @@ this.repaint();
 
 
     public mouseReleased(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_RELEASED_LABEL +this.logMouseEvent(mouseEvent));
     
 
@@ -1147,7 +1121,6 @@ this.repaint();
 
 
     public mouseDragged(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_DRAGGED_LABEL +this.logMouseEvent(mouseEvent));
     
 
@@ -1175,7 +1148,6 @@ this.repaint();
 
 
     public mouseMoved(mouseEvent: java.awt.event.MouseEvent){
-var mouseEvent = mouseEvent
 StatusFactory.getInstance()!.setStatusNoLog(MouseStrings.getInstance()!.MOUSE_MOVED_LABEL +this.logMouseEvent(mouseEvent));
     
 
@@ -1203,7 +1175,6 @@ this.repaint();
 
 
     logMouseEvent(mouseEvent: java.awt.event.MouseEvent): string{
-    //var mouseEvent = mouseEvent
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -1228,7 +1199,6 @@ stringBuffer!.appendint(mouseEvent!.getY() /this.getYPixelsPerWorkAreaPixel());
 
 
     public keyPressed(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 StatusFactory.getInstance()!.setStatus("Key Pressed");
     
 
@@ -1346,17 +1316,14 @@ this.repaint();
 
 
     public keyReleased(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 
     public keyTyped(keyEvent: java.awt.event.KeyEvent){
-var keyEvent = keyEvent
 }
 
 
     public delete(evt: MyGraphicItemEvent){
-var evt = evt
 this.getGraphicItemHashMap()!.remove(evt.getTreeNode());
     
 this.workAreaJTreeJPanel!.updateTree();
@@ -1369,7 +1336,6 @@ this.workAreaJTreeJPanel!.repaint();
 
 
     public deselect(evt: MyGraphicItemEvent){
-var evt = evt
 
     var graphicItemInterface: GraphicItemInterface = this.getGraphicItemHashMap()!.get(evt.getTreeNode()) as GraphicItemInterface;
 ;
@@ -1393,7 +1359,6 @@ this.workAreaJTreeJPanel!.repaint();
 
 
     public highlight(evt: MyGraphicItemEvent){
-var evt = evt
 
     var graphicItemInterface: GraphicItemInterface = this.getGraphicItemHashMap()!.get(evt.getTreeNode()) as GraphicItemInterface;
 ;
@@ -1447,7 +1412,6 @@ this.workAreaJTreeJPanel!.repaint();
                 //@Throws(Exception.constructor)
             
     public duplicate(event: MyGraphicItemEvent){
-var event = event
 
     var treeNode: MutableTreeNode = event.getTreeNode()!;
 ;
@@ -1477,7 +1441,6 @@ this.workAreaJTreeJPanel!.repaint();
 
 
     public rotate(event: MyGraphicItemEvent){
-var event = event
 
     var treeNode: MutableTreeNode = event.getTreeNode()!;
 ;
@@ -1511,7 +1474,6 @@ var event = event
 
 
     public setCanvasDimension(canvasDimension: IntegerDimension){
-var canvasDimension = canvasDimension
 this.canvasDimension= canvasDimension;
     
 }

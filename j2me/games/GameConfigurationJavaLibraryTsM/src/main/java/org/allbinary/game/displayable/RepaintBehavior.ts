@@ -81,14 +81,12 @@ export class RepaintBehavior
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     public repaint(canvas: Canvas){
-    //var canvas = canvas
 }
 
 
     private readonly NAME: string = "RepaintBehavior";
 
     public onChangeRepaint(canvas: Canvas){
-    //var canvas = canvas
 
     var features: Features = Features.getInstance()!;
 ;

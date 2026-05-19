@@ -75,8 +75,6 @@ export class SmallIntegerSingletonFactory
     public lastNegativeMin: number = 0;
 
     public initWithRange(value: number, negativeValue: number){
-var value = value
-var negativeValue = negativeValue
 
 
 
@@ -169,7 +167,6 @@ private constructor (){
 
 
     public getAt(index: number): Integer{
-var index = index
 
 
 
@@ -180,7 +177,6 @@ var index = index
 
 
     public getAtNoThrow(index: number): Integer{
-var index = index
 
                         if(index +this.NEGATIVE_MAX > this.INTEGER_ARRAY.length -1)
                         
@@ -204,7 +200,6 @@ var index = index
 
 
     public createInstance(index: number): Integer{
-var index = index
 
     var integer: Integer = this.getAt(index)!;
 ;
@@ -230,7 +225,6 @@ var index = index
 
 
     public getString(index: number): string{
-var index = index
 
     var i: number = index +this.NEGATIVE_MAX;
 ;

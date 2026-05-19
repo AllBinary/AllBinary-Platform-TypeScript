@@ -56,10 +56,7 @@ export class ImageAnimationSingletonInterfaceFactory extends SingletonAnimationI
         
 public constructor (animationInterface: Animation, width: number, height: number){
             super(new ImageAnimation(AnimationFrameToImageUtil.getInstance()!.getInstanceWH(width, height, animationInterface), AnimationBehavior.getInstance()));
-                        //var animationInterface = animationInterface
-    //var width = width
-    //var height = height
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

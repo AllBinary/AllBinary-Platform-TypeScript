@@ -58,8 +58,6 @@ public constructor (){
 
 
     public friction(velocityProperties: VelocityProperties, nominator: number){
-var velocityProperties = velocityProperties
-var nominator = nominator
 DragVelocityBehavior.instance.reduce(velocityProperties, nominator, FrictionData.getFrictionDenominator());
     
 }

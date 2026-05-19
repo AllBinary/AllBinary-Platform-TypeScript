@@ -64,9 +64,7 @@ export class TransformStoreDocument extends TransformHttpRequestDocument {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (pageContext: PageContext, weblisketSession: WeblisketSession){
             super(pageContext, weblisketSession);
-                    var pageContext = pageContext
-var weblisketSession = weblisketSession
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,8 +112,7 @@ this.getBaseNode()!.appendChild(new RequestParams(pageContext!.getRequest() as H
 
 public constructor (searchRequest: SearchRequest){
             super(searchRequest);
-                    var searchRequest = searchRequest
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

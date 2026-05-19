@@ -57,7 +57,6 @@ export class CategoryLoaderFactory
         
 
     public static getInstance(categoryFactoryInterface: CategoryFactoryInterface): CategoryLoaderInterface{
-var categoryFactoryInterface = categoryFactoryInterface
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

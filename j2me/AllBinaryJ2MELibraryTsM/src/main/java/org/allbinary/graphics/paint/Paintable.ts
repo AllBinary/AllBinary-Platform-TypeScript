@@ -52,17 +52,14 @@ export class Paintable
         
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 }
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 }
 
 
     public paintThreed(graphics: Graphics){
-    //var graphics = graphics
 }
 
 

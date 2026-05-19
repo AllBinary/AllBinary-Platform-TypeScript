@@ -61,8 +61,7 @@ export class LineAnimationFactory
 public constructor (basicColor: BasicColor){
 
             super();
-        var basicColor = basicColor
-this.basicColor= basicColor;
+        this.basicColor= basicColor;
     
 }
 
@@ -70,7 +69,6 @@ this.basicColor= basicColor;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -81,7 +79,6 @@ this.basicColor= basicColor;
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

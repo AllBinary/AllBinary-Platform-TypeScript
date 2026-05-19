@@ -81,10 +81,7 @@ export class CustomTextAnimationFactory
 public constructor (text: string, fontSize: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var text = text
-    //var fontSize = fontSize
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.scaleProperties= new ScaleProperties();
+        this.scaleProperties= new ScaleProperties();
     
 this.text= text;
     
@@ -102,7 +99,6 @@ this.font= Font.getFont(Font.FACE_SYSTEM, Font.STYLE_PLAIN, this.initScaleHeight
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var customTextAnimation: CustomTextAnimation
 ;
@@ -121,7 +117,6 @@ customTextAnimation!.setBasicColorP(this.basicColor);
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

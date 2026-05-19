@@ -54,9 +54,6 @@ export class BufferedImageInfoFactory
     private static hashMap: HashMap<any, any> = new HashMap<any, any>();
 
     public static getInstance(width: number, height: number, type: number): BufferedImageInfo{
-var width = width
-var height = height
-var type = type
 
     var stringbuffer: StringMaker = new StringMaker();
 ;

@@ -66,11 +66,7 @@ export class BasePathFinderGraphVisitor extends PathFinderGraphVisitorBase {
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
 
             super();
-            //var geographicMapInterface = geographicMapInterface
-    //var edgeMinimum = edgeMinimum
-    //var minPathWeight = minPathWeight
-    //var maxPathWeight = maxPathWeight
-this.geographicMapInterface= geographicMapInterface;
+        this.geographicMapInterface= geographicMapInterface;
     
 this.edgeMinimum= edgeMinimum;
     
@@ -84,18 +80,12 @@ this.maxPathWeight= maxPathWeight;
                 //@Throws(Exception.constructor)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
-    //var graph = graph
-    //var startPathFindingNodeList = startPathFindingNodeList
-    //var endPathFindingNodeList = endPathFindingNodeList
 }
 
 
                 //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
-    //var startPathFindingNodeList = startPathFindingNodeList
-    //var endPathFindingNodeList = endPathFindingNodeList
-    //var pathList = pathList
 
     var startPathFindingNode: PathFindingNode
 ;
@@ -120,7 +110,6 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
 
     public isValid(graphPath: any = {}): boolean{
-    //var graphPath = graphPath
 
 
 
@@ -131,7 +120,6 @@ pathList!.addAt(0, startPathFindingNode!.geographicMapCellPosition);
 
 
     public getInvalidReason(graphPath: any = {}): string{
-    //var graphPath = graphPath
 
 
 

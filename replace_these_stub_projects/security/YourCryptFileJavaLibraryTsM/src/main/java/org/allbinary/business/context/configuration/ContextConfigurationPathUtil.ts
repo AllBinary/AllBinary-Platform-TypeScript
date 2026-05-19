@@ -41,7 +41,6 @@ export class ContextConfigurationPathUtil
                 //@Throws(Exception.constructor)
             
     public static getAbFile(contextName: string): AbFile{
-var contextName = contextName
 
 
 
@@ -54,7 +53,6 @@ var contextName = contextName
                 //@Throws(Exception.constructor)
             
     public static getAbPath(contextName: string): AbPath{
-var contextName = contextName
 
 
 
@@ -77,7 +75,6 @@ var contextName = contextName
 
 
     static getFileName(contextName: string): string{
-var contextName = contextName
 
 
 

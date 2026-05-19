@@ -82,10 +82,7 @@ export class TransformInfoHttp extends TransformInfo implements TransformInfoHtt
     private readonly abContext: AbContext
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext, crud: boolean){
             super();
-                    var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-var crud = crud
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -106,10 +103,7 @@ this.override(propertiesHashMap);
 
 public constructor (request: HttpServletRequest, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
-                    var request = request
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -133,10 +127,7 @@ this.override(propertiesHashMap);
 
 public constructor (databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
-                    var databaseHashMap = databaseHashMap
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -157,9 +148,7 @@ this.set(databaseHashMap);
 
 public constructor (propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super();
-                    var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -180,8 +169,7 @@ this.set(propertiesHashMap);
 
 public constructor (parentViewOfThisTransformInfoInterface: TransformInfoHttp){
             super();
-                    var parentViewOfThisTransformInfoInterface = parentViewOfThisTransformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -193,7 +181,6 @@ this.abContext= new AbContext(parentViewOfThisTransformInfoInterface!.getPropert
                 //@Throws(Exception.constructor)
             
     set(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

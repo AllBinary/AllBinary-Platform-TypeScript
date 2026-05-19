@@ -101,7 +101,6 @@ ScreenCaptureImagesWorker.index= ProcessingFrameIndexFactory.next();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }
@@ -110,7 +109,6 @@ this.running= running;
                 //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
-var thread = thread
 }
 
 

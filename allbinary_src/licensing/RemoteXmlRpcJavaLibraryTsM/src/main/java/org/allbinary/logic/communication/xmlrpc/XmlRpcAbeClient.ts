@@ -118,9 +118,7 @@ export class XmlRpcAbeClient
 public constructor (clientInfo: AbeClientInformationInterface, remoteMethod: string){
 
             super();
-        var clientInfo = clientInfo
-var remoteMethod = remoteMethod
-this.remoteMethod= remoteMethod;
+        this.remoteMethod= remoteMethod;
     
 this.clientInfo= clientInfo;
     
@@ -170,7 +168,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.commonStrings!.CONSTRUCT
                 //@Throws(Exception.constructor)
             
     public get(anyType: any = {}): any{
-var anyType = anyType
 ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
     
 
@@ -185,7 +182,6 @@ ForcedLogUtil.log(this.commonStrings!.NOT_IMPLEMENTED, this);
                 //@Throws(Exception.constructor)
             
     tryAnother(anyType: any = {}): any{
-var anyType = anyType
 
                         if(getServer() < getMaxServers())
                         
@@ -249,7 +245,6 @@ var anyType = anyType
 
 
     setClient(client: XmlRpcClient){
-var client = client
 this.client= client;
     
 }
@@ -266,7 +261,6 @@ this.client= client;
 
 
     setServer(server: number){
-var server = server
 this.server= server;
     
 }
@@ -283,7 +277,6 @@ this.server= server;
 
 
     setStart(start: number){
-var start = start
 this.start= start;
     
 }
@@ -300,7 +293,6 @@ this.start= start;
 
 
     setMaxServers(maxServers: number){
-var maxServers = maxServers
 this.maxServers= maxServers;
     
 }
@@ -317,7 +309,6 @@ this.maxServers= maxServers;
 
 
     setIsDone(isDone: boolean){
-var isDone = isDone
 this.isDone= isDone;
     
 }

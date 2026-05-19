@@ -78,9 +78,6 @@ export class BasePathFindingInfoFactory
                 //@Throws(Exception.constructor)
             
     public init(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, mapArray: number[][]){
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var mapArray = mapArray
 
 //inner=true member= isStatic=
 class RaceTrackGeographicMapCellPositionFactoryInitVisitor
@@ -108,8 +105,6 @@ this.finishLineId= raceTrackGeographicMapCellTypeFactory!.getEndType();
                 //@Throws(Exception.constructor)
             
     public visit(tiledLayer: AllBinaryTiledLayer, cellPosition: GeographicMapCellPosition){
-    //var tiledLayer = tiledLayer
-    //var cellPosition = cellPosition
 
     var row: number = cellPosition!.getRow()!;
 ;
@@ -212,8 +207,6 @@ geographicMapInterface!.getGeographicMapCellPositionFactory()!.visit(new RaceTra
                 //@Throws(Exception.constructor)
             
     addStartPathFindingNode(pathFindingInfo: PathFindingInfo, startGeographicMapCellPosition: GeographicMapCellPosition){
-    //var pathFindingInfo = pathFindingInfo
-    //var startGeographicMapCellPosition = startGeographicMapCellPosition
 pathFindingInfo!.addStartPathFindingNode(new PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, startGeographicMapCellPosition));
     
 }
@@ -222,8 +215,6 @@ pathFindingInfo!.addStartPathFindingNode(new PathFindingNode(NullUtil.getInstanc
                 //@Throws(Exception.constructor)
             
     addEndPathFindingNode(pathFindingInfo: PathFindingInfo, endGeographicMapCellPosition: GeographicMapCellPosition){
-    //var pathFindingInfo = pathFindingInfo
-    //var endGeographicMapCellPosition = endGeographicMapCellPosition
 pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance()!.NULL_OBJECT, endGeographicMapCellPosition));
     
 }
@@ -232,8 +223,6 @@ pathFindingInfo!.addEndPathFindingNode(new PathFindingNode(NullUtil.getInstance(
                 //@Throws(Exception.constructor)
             
     public getInstancePathFindingInfo(geographicMapInterface: BasicGeographicMap, graphArray: number[][]): PathFindingInfo{
-    //var geographicMapInterface = geographicMapInterface
-    //var graphArray = graphArray
 
 
 

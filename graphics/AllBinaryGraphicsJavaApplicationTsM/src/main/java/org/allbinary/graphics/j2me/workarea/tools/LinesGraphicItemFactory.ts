@@ -52,7 +52,6 @@ export class LinesGraphicItemFactory
         
 
     public getInstance(canvasJPanel: CanvasJPanel): GraphicItemInterface{
-var canvasJPanel = canvasJPanel
 
 
 

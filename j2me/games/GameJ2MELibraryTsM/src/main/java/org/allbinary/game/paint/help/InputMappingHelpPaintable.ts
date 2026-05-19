@@ -113,10 +113,7 @@ export class InputMappingHelpPaintable extends HelpPaintable {
     private readonly basicColorFactory: BasicColorFactory = BasicColorFactory.getInstance()!;
 protected constructor (gameInputMappingArray: GameInputMapping[], backgroundBasicColor: BasicColor, basicColor: BasicColor){
             super("Input Mapping", backgroundBasicColor, basicColor);
-                        //var gameInputMappingArray = gameInputMappingArray
-    //var backgroundBasicColor = backgroundBasicColor
-    //var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -143,8 +140,6 @@ this.update(this.NONE, this.NONE);
 
 
     public update(selectedGameKey: GameKey, selectedInput: Input){
-    //var selectedGameKey = selectedGameKey
-    //var selectedInput = selectedInput
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -275,7 +270,6 @@ super.setInputInfoP(keyInfo);
 
 
     get(keyList: BasicArrayList): string{
-var keyList = keyList
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -371,7 +365,6 @@ stringBuffer!.append(key.getName());
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 
     var font: Font = graphics.getFont()!;
 ;

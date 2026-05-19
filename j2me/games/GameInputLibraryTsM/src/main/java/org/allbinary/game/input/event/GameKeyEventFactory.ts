@@ -124,8 +124,6 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
                 //@Throws(Exception.constructor)
             
     public getInstanceForKey(anyType: GameKeyEventSourceInterface, key: number): GameKeyEvent{
-    //var anyType = anyType
-    //var key = key
 
     var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![key]!;
 ;
@@ -142,8 +140,6 @@ this.ARRAY[index]![index2]= GameKeyEvent.createEvent(nullUtil!.NULL_OBJECT, inde
                 //@Throws(Exception.constructor)
             
     public getInstanceForInput(anyType: GameKeyEventSourceInterface, input: Input): GameKeyEvent{
-    //var anyType = anyType
-    //var input = input
 
     var gameKeyEvent: GameKeyEvent = this.ARRAY[anyType!.getSourceId()]![input.getId()]!;
 ;

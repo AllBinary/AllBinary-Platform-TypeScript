@@ -65,14 +65,6 @@ export class CommandCurrentSelectionFormFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(title: string, items: ABCustomItem[], rectangle: Rectangle, formType: FormType, border: number, moveForSmallScreen: boolean, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
-    //var title = title
-    //var items = items
-    //var rectangle = rectangle
-    //var formType = formType
-    //var border = border
-    //var moveForSmallScreen = moveForSmallScreen
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
 
                         if(Features.getInstance()!.isFeature(TouchFeatureFactory.getInstance()!.TOUCH_ENABLED))
                         

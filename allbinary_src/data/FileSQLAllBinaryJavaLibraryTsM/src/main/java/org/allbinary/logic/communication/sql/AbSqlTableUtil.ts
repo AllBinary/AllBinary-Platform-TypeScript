@@ -157,8 +157,6 @@ export class AbSqlTableUtil
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getOutputStream(backupPath: string, tableName: string): OutputStream{
-var backupPath = backupPath
-var tableName = tableName
 
         try {
             
@@ -231,9 +229,6 @@ backupFile!.createNewFile();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     backupFile(path: AbPath, backupPath: string, tableName: string): boolean{
-var path = path
-var backupPath = backupPath
-var tableName = tableName
 
         try {
             
@@ -326,7 +321,6 @@ FileUtil.getInstance()!.copy(path, backupAbPath);
 
 
     convertNewLines(value: string): string{
-var value = value
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -390,7 +384,6 @@ lastIndex= index +1;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public backupTable(abSqlTable: AbSqlTable): string{
-var abSqlTable = abSqlTable
 
     var tableName: string = abSqlTable!.getTableName()!;
 ;
@@ -530,8 +523,6 @@ StreamUtil.getInstance()!.close(outputStream);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public restoreTable(abSqlTable: AbSqlTable, portion: Portion): string{
-var abSqlTable = abSqlTable
-var portion = portion
 
     var tableName: string = abSqlTable!.getTableName()!;
 ;

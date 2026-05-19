@@ -75,10 +75,6 @@ export class NumberOnOwnGroupSequenceAIFactory
                 //@Throws(Exception.constructor)
             
     public getInstance(hashtable: Hashtable<any, any>, artificialIntelligenceInterface: ArtificialIntelligenceInterface[], ownerLayerInterface: AllBinaryLayer, gameInput: GameInput): ArtificialIntelligenceInterface{
-    //var hashtable = hashtable
-    //var artificialIntelligenceInterface = artificialIntelligenceInterface
-    //var ownerLayerInterface = ownerLayerInterface
-    //var gameInput = gameInput
 
     var integerArray: Integer[] = NumberInSameGroupSequence.getInstance()!.NUMBER_ON_SAME_TEAM_SEQUENCE;
 ;

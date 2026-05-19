@@ -70,9 +70,6 @@ export class ModDomHelper
                 //@Throws(Exception.constructor)
             
     public static createTextNode(document: Document, name: string, text: string): Node{
-var document = document
-var name = name
-var text = text
 
     var newValueNode: Node = document.createElement(name)!;
 ;
@@ -95,8 +92,6 @@ newValueNode!.appendChild(newValueTextNode);
                 //@Throws(Exception.constructor)
             
     public static createValueNode(document: Document, text: string): Node{
-var document = document
-var text = text
 
 
 
@@ -109,8 +104,6 @@ var text = text
                 //@Throws(Exception.constructor)
             
     public static createNameNode(document: Document, text: string): Node{
-var document = document
-var text = text
 
 
 
@@ -123,8 +116,6 @@ var text = text
                 //@Throws(Exception.constructor)
             
     public static createIndexNode(document: Document, index: number): Node{
-var document = document
-var index = index
 
 
 
@@ -138,10 +129,6 @@ var index = index
                 //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, elementName: string, nameText: string, valueText: string): Node{
-var document = document
-var elementName = elementName
-var nameText = nameText
-var valueText = valueText
 
     var newNode: Node = document.createElement(elementName)!;
 ;
@@ -162,9 +149,6 @@ newNode!.appendChild(ModDomHelper.createValueNode(document, valueText));
                 //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, elementNameAndNameText: string, valueText: string): Node{
-var document = document
-var elementNameAndNameText = elementNameAndNameText
-var valueText = valueText
 
     var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, elementNameAndNameText, valueText)!;
 ;
@@ -181,10 +165,6 @@ var valueText = valueText
                 //@Throws(Exception.constructor)
             
     public static createNameValueIndexNodes(document: Document, elementNameAndNameText: string, index: number, valueText: string): Node{
-var document = document
-var elementNameAndNameText = elementNameAndNameText
-var index = index
-var valueText = valueText
 
     var newNode: Node = ModDomHelper.createNameValueNodes(document, elementNameAndNameText, valueText)!;
 ;
@@ -203,9 +183,6 @@ newNode!.appendChild(ModDomHelper.createIndexNode(document, index));
                 //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
-var document = document
-var rootNode = rootNode
-var hashMap = hashMap
 
     var node: Node = document.createElement(rootNode)!;
 ;
@@ -222,9 +199,6 @@ var hashMap = hashMap
                 //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
-var document = document
-var node = node
-var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
@@ -322,10 +296,6 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, name, value));
                 //@Throws(Exception.constructor)
             
     public static createNameValueNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
-var document = document
-var rootNodeName = rootNodeName
-var duplicateNodeName = duplicateNodeName
-var valueVector = valueVector
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
@@ -366,10 +336,6 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, duplicateNodeName, 
                 //@Throws(Exception.constructor)
             
     public static createNameValueIndexNodes(document: Document, rootNodeName: string, duplicateNodeName: string, valueVector: Vector): Node{
-var document = document
-var rootNodeName = rootNodeName
-var duplicateNodeName = duplicateNodeName
-var valueVector = valueVector
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;
@@ -410,9 +376,6 @@ node.appendChild(ModDomHelper.createNameValueIndexNodes(document, duplicateNodeN
                 //@Throws(Exception.constructor)
             
     public static createNodeWithValueNodes(document: Document, rootNode: string, hashMap: HashMap<any, any>): Node{
-var document = document
-var rootNode = rootNode
-var hashMap = hashMap
 
     var node: Node = document.createElement(rootNode)!;
 ;
@@ -429,9 +392,6 @@ var hashMap = hashMap
                 //@Throws(Exception.constructor)
             
     public static createNodeWithValueNodes(document: Document, node: Node, hashMap: HashMap<any, any>): Node{
-var document = document
-var node = node
-var hashMap = hashMap
 
     var stringUtil: StringUtil = StringUtil.getInstance()!;
 ;

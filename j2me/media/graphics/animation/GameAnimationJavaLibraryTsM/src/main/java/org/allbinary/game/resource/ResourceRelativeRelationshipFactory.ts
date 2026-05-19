@@ -68,7 +68,6 @@ export class ResourceRelativeRelationshipFactory
                 //@Throws(Exception.constructor)
             
     public init(level: number){
-var level = level
 this.setInitialized(true);
     
 }
@@ -77,7 +76,6 @@ this.setInitialized(true);
                 //@Throws(Exception.constructor)
             
     public getResourceRelativeRelationshipList(resource: string): BasicArrayList{
-var resource = resource
 
     var listCanBeNull: any = this.hashtable.get(resource);
 ;
@@ -109,8 +107,6 @@ var resource = resource
                 //@Throws(Exception.constructor)
             
     public addResourceRelativeRelationship(resource: string, hardPoint: RelativeRelationship){
-var resource = resource
-var hardPoint = hardPoint
 
     var list: BasicArrayList = this.getResourceRelativeRelationshipList(resource)!;
 ;
@@ -132,7 +128,6 @@ this.hashtable.put(resource, list);
 
 
     public isLoadingLevel(level: number): boolean{
-var level = level
 
 
 
@@ -153,7 +148,6 @@ var level = level
 
 
     public setInitialized(initialized: boolean){
-var initialized = initialized
 this.initialized= initialized;
     
 }

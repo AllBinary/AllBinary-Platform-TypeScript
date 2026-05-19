@@ -77,7 +77,6 @@ private constructor (){
 
 
     /*actual*/ public putL(log: Log){
-    //var log = log
 
                         if(log == 
                                     null
@@ -115,9 +114,6 @@ this.put(specialMessage, anyType, functionName, exception);
 
 
     /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
 
     var className: string = PreLogUtil.getClassName(anyType)!;
 ;
@@ -143,10 +139,6 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
 
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-    //var exception = exception
 
     var className: string = PreLogUtil.getClassName(anyType)!;
 ;

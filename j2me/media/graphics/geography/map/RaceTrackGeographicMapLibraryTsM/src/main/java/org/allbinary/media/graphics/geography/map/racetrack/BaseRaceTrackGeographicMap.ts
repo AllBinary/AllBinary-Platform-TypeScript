@@ -74,14 +74,7 @@ export class BaseRaceTrackGeographicMap extends BasicGeographicMap implements Ra
     private miniGeographicMap: BasicGeographicMap
 public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayer: AllBinaryTiledLayer, miniGeographicMap: BasicGeographicMap, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory){
             super(raceTrackInfo!.getId(), raceTrackInfo!.getName(), raceTrackData!.getCellTypeIdToGeographicMapCellTypeArray(), tiledLayer, raceTrackInfo!.getForegroundBasicColor(), raceTrackInfo!.getBackgroundBasicColor(), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory);
-                        //var raceTrackInfo = raceTrackInfo
-    //var raceTrackData = raceTrackData
-    //var tiledLayer = tiledLayer
-    //var miniGeographicMap = miniGeographicMap
-    //var geographicMapCellPositionFactoryInterface = geographicMapCellPositionFactoryInterface
-    //var geographicMapCellPositionBaseFactory = geographicMapCellPositionBaseFactory
-    //var geographicMapCellTypeFactory = geographicMapCellTypeFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -154,14 +147,12 @@ this.logUtil!.putF(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR);
 
 
     public setRaceTrackInfo(aRaceTrackInfo: RaceTrackInfo){
-var aRaceTrackInfo = aRaceTrackInfo
 this.raceTrackInfo= aRaceTrackInfo;
     
 }
 
 
     public setMiniBasicGeographicMap(miniBasicGeographicMap: BasicGeographicMap){
-var miniBasicGeographicMap = miniBasicGeographicMap
 this.miniGeographicMap= miniBasicGeographicMap;
     
 }
@@ -188,7 +179,6 @@ this.miniGeographicMap= miniBasicGeographicMap;
 
 
     public setRaceTrackData(raceTrackData: RaceTrackData){
-var raceTrackData = raceTrackData
 this.raceTrackData= raceTrackData;
     
 }

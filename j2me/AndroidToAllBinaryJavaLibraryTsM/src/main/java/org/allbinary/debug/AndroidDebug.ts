@@ -90,7 +90,6 @@ this.setRunning(false);
 
 
     setStartTime(startTime: number){
-var startTime = startTime
 this.startTime= startTime;
     
 }
@@ -107,7 +106,6 @@ this.startTime= startTime;
 
 
     setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }

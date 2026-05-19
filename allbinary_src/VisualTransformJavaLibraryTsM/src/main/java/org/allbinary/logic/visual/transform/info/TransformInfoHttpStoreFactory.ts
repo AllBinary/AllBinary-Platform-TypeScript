@@ -75,9 +75,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(databaseHashMap: HashMap<any, any>, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInfoInterface{
-var databaseHashMap = databaseHashMap
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
 
 
 

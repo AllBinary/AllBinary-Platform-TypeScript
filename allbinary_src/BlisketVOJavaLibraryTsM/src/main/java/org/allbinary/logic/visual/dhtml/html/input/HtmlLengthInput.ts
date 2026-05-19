@@ -56,12 +56,7 @@ export class HtmlLengthInput extends HtmlValueInput {
     private size: string
 public constructor (before: string, type: string, name: string, value: string, after: string){
             super(before, type, name, value, after);
-                    var before = before
-var type = type
-var name = name
-var value = value
-var after = after
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -69,7 +64,6 @@ var after = after
 
 
     public setMaxLength(length: Integer){
-var length = length
 this.length= length.toString();
     
 addAttribute(this.MAXLENGTH, this.length);
@@ -78,7 +72,6 @@ addAttribute(this.MAXLENGTH, this.length);
 
 
     public setSize(size: Integer){
-var size = size
 this.size= size.toString();
     
 addAttribute(this.MAXLENGTH, this.size);

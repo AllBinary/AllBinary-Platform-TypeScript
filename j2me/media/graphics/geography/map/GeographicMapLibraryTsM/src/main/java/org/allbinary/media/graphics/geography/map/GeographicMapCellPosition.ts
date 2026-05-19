@@ -55,13 +55,7 @@ export class GeographicMapCellPosition extends CellPosition {
     private midPoint: GPoint
 public constructor (column: number, row: number, columns: number, rows: number, width: number, height: number){
             super(column, row, columns, rows);
-                    var column = column
-var row = row
-var columns = columns
-var rows = rows
-var width = width
-var height = height
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -105,7 +99,6 @@ this.midPoint= pointFactory!.createXY(x +(width>>1), y +(height>>1));
 
 
     public setMidPoint(midPoint: GPoint){
-var midPoint = midPoint
 this.midPoint= midPoint;
     
 }

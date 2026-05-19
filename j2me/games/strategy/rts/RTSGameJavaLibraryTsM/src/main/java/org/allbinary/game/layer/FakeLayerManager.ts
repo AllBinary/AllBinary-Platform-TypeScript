@@ -59,8 +59,7 @@ export class FakeLayerManager extends AllBinaryGameLayerManager implements Geogr
     private geographicMapCellTypeArray: GeographicMapCellType[] = GeographicMapCellType.NULL_GEOGRAPHIC_MAP_CELL_TYPE_ARRAY;
 public constructor (gameInfo: GameInfo){
             super(BasicColorFactory.getInstance()!.BLACK, BasicColorFactory.getInstance()!.WHITE, gameInfo);
-                    var gameInfo = gameInfo
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,7 +77,6 @@ public constructor (gameInfo: GameInfo){
 
 
     public setGeographicMapInterface(geographicMapInterfaceArray: BasicGeographicMap[]){
-    //var geographicMapInterfaceArray = geographicMapInterfaceArray
 this.geographicMapInterfaceArray= geographicMapInterfaceArray;
     
 this.geographicMapCellTypeArray= new Array(this.geographicMapInterfaceArray!.length);

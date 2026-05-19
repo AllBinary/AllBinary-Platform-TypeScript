@@ -58,10 +58,7 @@ export class BufferedImageInfo
 public constructor (width: number, height: number, type: number){
 
             super();
-        var width = width
-var height = height
-var type = type
-this.width= width;
+        this.width= width;
     
 this.height= height;
     
@@ -81,7 +78,6 @@ this.type= type;
 
 
     public setWidth(width: number){
-var width = width
 this.width= width;
     
 }
@@ -98,7 +94,6 @@ this.width= width;
 
 
     public setHeight(height: number){
-var height = height
 this.height= height;
     
 }
@@ -115,7 +110,6 @@ this.height= height;
 
 
     public setType(type: number){
-var type = type
 this.type= type;
     
 }

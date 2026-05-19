@@ -73,7 +73,7 @@ this.setObjectFile("views.generic.order.ValidationView");
                         
                                     {
                                     
-                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     

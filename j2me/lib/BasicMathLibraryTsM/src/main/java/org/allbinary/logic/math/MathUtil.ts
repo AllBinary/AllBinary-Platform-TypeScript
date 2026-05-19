@@ -45,7 +45,6 @@ export class MathUtil
 
 
     public getTotalDigits(digits: number): number{
-var digits = digits
 
     var total: number = 0;
 ;
@@ -69,7 +68,6 @@ total++;
 
 
     public sqrt(value: number): number{
-    //var value = value
 
                         if(value <= 1)
                         
@@ -112,7 +110,6 @@ result= (accumulated +(value /accumulated))>>1;
 
 
     public abs(value: number): number{
-var value = value
 
 
 
@@ -130,7 +127,6 @@ var value = value
 
 
     public abslong(value: number): number{
-var value = value
 
 
 
@@ -148,8 +144,6 @@ var value = value
 
 
     public min(value: number, value2: number): number{
-var value = value
-var value2 = value2
 
 
 
@@ -167,8 +161,6 @@ var value2 = value2
 
 
     public max(value: number, value2: number): number{
-var value = value
-var value2 = value2
 
 
 

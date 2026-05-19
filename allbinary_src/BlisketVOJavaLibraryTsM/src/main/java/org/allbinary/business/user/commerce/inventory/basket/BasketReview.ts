@@ -85,7 +85,6 @@ public constructor (){
 
 
     public addItem(item: Item){
-var item = item
 this.items.add(item);
     
 }
@@ -102,7 +101,6 @@ this.items.add(item);
 
 
     public removeItem(id: string){
-var id = id
 
     var itemArray: any[] = this.items.toArray()!;
 ;
@@ -125,7 +123,7 @@ index < size; index++)
 ;
     
 
-                        if(item.getId()!.localeCompare(id) == 0)
+                        if(item.getId()!.compareTo(id) == 0)
                         
                                     {
                                     this.items.remove(item);
@@ -139,8 +137,6 @@ index < size; index++)
 
 
     public adjustItem(id: string, num: string){
-var id = id
-var num = num
 
     var itemArray: any[] = this.items.toArray()!;
 ;
@@ -163,7 +159,7 @@ index < size; index++)
 ;
     
 
-                        if(item.getId()!.localeCompare(id) == 0)
+                        if(item.getId()!.compareTo(id) == 0)
                         
                                     {
                                     item.setNumber(num);
@@ -267,7 +263,6 @@ idSet!.add(item.getId());
 
 
     public getNumberOf(id: string): Integer{
-var id = id
 
     var itemArray: any[] = this.items.toArray()!;
 ;
@@ -290,7 +285,7 @@ index < size; index++)
 ;
     
 
-                        if(item.getId()!.localeCompare(id) == 0)
+                        if(item.getId()!.compareTo(id) == 0)
                         
                                     {
                                     
@@ -316,7 +311,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(BasketData.BASKET)!;
 ;

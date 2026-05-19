@@ -60,7 +60,6 @@ export class StupidTimer
     private readonly threadObjectUtil: ThreadObjectUtil = ThreadObjectUtil.getInstance()!;
 
     visitBool(visitorInterface: Visitor): boolean{
-    //var visitorInterface = visitorInterface
 
     var result: Boolean = visitorInterface!.visit(this.nullUtil!.NULL_OBJECT) as Boolean;
 ;
@@ -81,8 +80,6 @@ export class StupidTimer
                 //@Throws(Exception.constructor)
             
     public visit(visitorInterface: Visitor, timeDelayHelper: TimeDelayHelper){
-    //var visitorInterface = visitorInterface
-    //var timeDelayHelper = timeDelayHelper
 
     var tookTooLong: boolean = false;
 ;

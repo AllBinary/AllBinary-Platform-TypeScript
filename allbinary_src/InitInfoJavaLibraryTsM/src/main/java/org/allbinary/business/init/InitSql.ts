@@ -136,28 +136,24 @@ export class InitSql
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
             super();
-        var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-this.setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface);
+        this.setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface);
     
 }
 
 
     public setTable(tableName: string){
-var tableName = tableName
 this.tableName= tableName;
     
 }
 
 
     public setDatabaseConnectionInfoInterface(databaseConnectionInfoInterface: DbConnectionInfo){
-var databaseConnectionInfoInterface = databaseConnectionInfoInterface
 this.databaseConnectionInfoInterface= databaseConnectionInfoInterface;
     
 }
 
 
     public createTable(tableData: string): boolean{
-var tableData = tableData
 
         try {
             
@@ -242,7 +238,6 @@ this.executeSQLStatement(tableData);
 
 
     public getRow(keysAndValues: HashMap<any, any>): HashMap<any, any>{
-var keysAndValues = keysAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -417,9 +412,6 @@ result.put(columnName, field);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public updateWhere(key: string, value: string, updatedKeyValuePairs: HashMap<any, any>){
-var key = key
-var value = value
-var updatedKeyValuePairs = updatedKeyValuePairs
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -537,7 +529,6 @@ this.executeSQLStatement(sqlStatement);
 
 
     public insert(values: Vector){
-var values = values
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -615,7 +606,6 @@ this.executeSQLStatement(sqlStatement);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     getValue(value: string): string{
-var value = value
 
                         if(StringValidationUtil.getInstance()!.isEmpty(value))
                         
@@ -645,7 +635,6 @@ var value = value
                 //@Throws(Exception.constructor, SQLException.constructor)
             
     public executeSQLStatement(statement: string): ResultSet{
-var statement = statement
 
         try {
             

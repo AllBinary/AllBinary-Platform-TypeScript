@@ -78,11 +78,6 @@ export class InGameOptionsFormFactory
     private SINGLETON: CommandForm = CommandForm.NULL_COMMAND_FORM;
 
     public init(commandListener: CommandListener, initInterface: Init, title: string, backgrounBasicColor: BasicColor, foregroundBasicColor: BasicColor){
-var commandListener = commandListener
-var initInterface = initInterface
-var title = title
-var backgrounBasicColor = backgrounBasicColor
-var foregroundBasicColor = foregroundBasicColor
 
         try {
             

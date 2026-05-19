@@ -64,9 +64,7 @@ export class UpDownVectorAI extends BasicAI {
     private index: number = 0;
 public constructor (ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(ownerLayerInterface, gameInput);
-                    var ownerLayerInterface = ownerLayerInterface
-var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -84,7 +82,6 @@ this.velocityInterface!.getVelocityYBasicDecimalP()!.setint(0);
                 //@Throws(Exception.constructor)
             
     public processAI(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
     var y: number = this.getOwnerLayerInterface()!.getHeight() *270;
 ;

@@ -146,10 +146,6 @@ this.widthScale= (this.scale == 2)
 
 
     public getFontBitmapGL(gl: GL10, filename: string, cellSize: number, basicColor: BasicColor): Image{
-    //var gl = gl
-    //var filename = filename
-    //var cellSize = cellSize
-    //var basicColor = basicColor
 
         try {
             
@@ -286,9 +282,6 @@ imageLoader!.save(CommonSeps.getInstance()!.PERIOD +CanvasStrings.getInstance()!
 
 
     public getFontBitmap(filename: string, cellSize: number, basicColor: BasicColor): Image{
-    //var filename = filename
-    //var cellSize = cellSize
-    //var basicColor = basicColor
 
     var cellsPerRow2: number = CELLS_PER_ROW *2;
 ;
@@ -401,8 +394,6 @@ graphics.drawChar(characterArray[0]!, x, y, 0);
 
 
     public getFontWidths(filename: string, fontSize: number): number[]{
-var filename = filename
-var fontSize = fontSize
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

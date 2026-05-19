@@ -55,10 +55,7 @@ export class BasicLayerPlacement
 public constructor (layerType: LayerPlacementType, width: number, height: number){
 
             super();
-        var layerType = layerType
-var width = width
-var height = height
-this.layerType= layerType;
+        this.layerType= layerType;
     
 this.width= width;
     
@@ -98,7 +95,6 @@ this.height= height;
 
 
     setLayerType(layerType: LayerPlacementType){
-var layerType = layerType
 this.layerType= layerType;
     
 }

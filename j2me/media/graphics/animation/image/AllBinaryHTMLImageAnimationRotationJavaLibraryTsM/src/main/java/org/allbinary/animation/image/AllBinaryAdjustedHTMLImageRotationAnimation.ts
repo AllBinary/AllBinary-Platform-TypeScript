@@ -60,14 +60,7 @@ export class AllBinaryAdjustedHTMLImageRotationAnimation extends AllBinaryHTMLIm
     private dy: number= 0
 public constructor (originalImage: Image, image: Image, angleInfo: AngleInfo, totalAngle: number, dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(originalImage, image, angleInfo, totalAngle, animationBehavior);
-                        //var originalImage = originalImage
-    //var image = image
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var dx = dx
-    //var dy = dy
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -79,8 +72,6 @@ this.init(dx, dy);
                 //@Throws(Exception.constructor)
             
     public init(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.dx= dx;
     
 this.dy= dy;
@@ -89,7 +80,6 @@ this.dy= dy;
 
 
     public setDx(dx: number){
-    //var dx = dx
 this.dx= dx;
     
 }
@@ -106,7 +96,6 @@ this.dx= dx;
 
 
     public setDy(dy: number){
-    //var dy = dy
 this.dy= dy;
     
 }
@@ -123,9 +112,6 @@ this.dy= dy;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 super.paintXY(graphics, x +this.dx, y +this.dy);
     
 }

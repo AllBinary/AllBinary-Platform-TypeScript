@@ -51,8 +51,7 @@ export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
         
  constructor (isCollidable: boolean){
             super(isCollidable);
-                    var isCollidable = isCollidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -60,8 +59,6 @@ export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
 
 
     public isCollision(ownerLayer: CollidableCompositeLayer, allbinaryCollidableLayer: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
-    //var allbinaryCollidableLayer = allbinaryCollidableLayer
 
 
 
@@ -74,20 +71,14 @@ export class CollidableNeverCollideBehavior extends CollidableBaseBehavior {
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, allbinaryCollidableLayer: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-    //var allbinaryCollidableLayer = allbinaryCollidableLayer
 }
 
 
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 }
 
 
     public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
 
 

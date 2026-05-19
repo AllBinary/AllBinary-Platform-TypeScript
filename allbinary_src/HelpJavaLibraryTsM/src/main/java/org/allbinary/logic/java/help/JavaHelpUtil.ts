@@ -87,7 +87,6 @@ export class JavaHelpUtil
 
 
     public static main(args: string[]){
-var args = args
 
         try {
             
@@ -122,7 +121,6 @@ private constructor (){
 
 
     public getHelpSet(filePath: string): HelpSet{
-var filePath = filePath
 
         try {
             
@@ -158,7 +156,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
 
 
     public getHelpSet(url: URL): HelpSet{
-var url = url
 
         try {
             
@@ -186,7 +183,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, getInstance(), "set", e);
 
 
     public show(helpSet: HelpSet){
-var helpSet = helpSet
 
         try {
             

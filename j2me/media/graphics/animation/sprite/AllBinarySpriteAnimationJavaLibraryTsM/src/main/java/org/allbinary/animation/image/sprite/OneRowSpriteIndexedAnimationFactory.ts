@@ -67,9 +67,6 @@ export class OneRowSpriteIndexedAnimationFactory extends BaseImageAnimationFacto
                 //@Throws(Exception.constructor)
             
     public static createFactoryDX(image: Image, dx: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
 ;
@@ -88,10 +85,6 @@ oneRowSpriteIndexedAnimationFactory!.initW(dx);
                 //@Throws(Exception.constructor)
             
     public static createFactoryDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var oneRowSpriteIndexedAnimationFactory: OneRowSpriteIndexedAnimationFactory = new OneRowSpriteIndexedAnimationFactory(image, PrimitiveIntUtil.getArrayInstance(), image.getHeight(), image.getHeight(), 0, 0, animationBehaviorFactory);
 ;
@@ -110,10 +103,6 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createFactoryWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
-    //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -126,8 +115,6 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): OneRowSpriteIndexedAnimationFactory{
-    //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -140,14 +127,7 @@ oneRowSpriteIndexedAnimationFactory!.init(dx, dy);
     private readonly animationFactorySpriteScaleUtil: AnimationFactorySpriteScaleUtil = AnimationFactorySpriteScaleUtil.getInstance()!;
 public constructor (image: Image, sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
-                        //var image = image
-    //var sequenceArray = sequenceArray
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -155,8 +135,6 @@ public constructor (image: Image, sequenceArray: number[], width: number, height
 
 
     public init(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.animationFactoryInitializationVisitor!.dx= dx;
     
 this.animationFactoryInitializationVisitor!.dy= dy;
@@ -165,7 +143,6 @@ this.animationFactoryInitializationVisitor!.dy= dy;
 
 
     public initW(dx: number){
-    //var dx = dx
 this.init(dx, 0);
     
 this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitializationVisitor!.width>>2);
@@ -176,7 +153,6 @@ this.animationFactoryInitializationVisitor!.dx +=  -(this.animationFactoryInitia
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;

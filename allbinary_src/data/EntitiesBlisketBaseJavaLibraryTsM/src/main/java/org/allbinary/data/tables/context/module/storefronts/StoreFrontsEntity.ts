@@ -80,7 +80,6 @@ this.setTableName(this.tableName);
 
 
     public insert(values: Vector){
-var values = values
 
         try {
             super.insert(values);
@@ -113,7 +112,6 @@ var values = values
 
 
     public delete(value: string){
-var value = value
 
         try {
             super.deleteWhere(StoreFrontData.getInstance()!.NAME, value);
@@ -148,7 +146,6 @@ var value = value
                 //@Throws(Exception.constructor)
             
     public getStoreFrontInterface(name: string): StoreFront{
-var name = name
 
     var keysAndValues: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -202,7 +199,6 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, name);
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 super.updateWhere(StoreFrontData.getInstance()!.NAME, updatedValues!.get(StoreFrontData.getInstance()!.NAME) as string, updatedValues);
     
 }

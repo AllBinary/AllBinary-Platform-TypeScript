@@ -60,9 +60,7 @@ export class RTSLayerTextAnimation extends Animation {
 public constructor (text: string, image: Image){
 
             super();
-            //var text = text
-    //var image = image
-this.text= text;
+        this.text= text;
     
 this.image= image;
     
@@ -70,9 +68,6 @@ this.image= image;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 super.paintXY(graphics, x, y);
     
 

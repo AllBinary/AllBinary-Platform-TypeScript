@@ -67,7 +67,6 @@ export class OpenGLESImageExclusionUtil
     public readonly list: BasicArrayList = new BasicArrayListD();
 
     public isCustomScaling(image: Image): boolean{
-    //var image = image
 
 
 

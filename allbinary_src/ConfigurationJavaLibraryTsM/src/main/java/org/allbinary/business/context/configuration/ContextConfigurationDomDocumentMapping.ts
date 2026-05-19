@@ -62,8 +62,7 @@ export class ContextConfigurationDomDocumentMapping
 public constructor (contextConfigurationInterface: ContextConfigurationInterface){
 
             super();
-        var contextConfigurationInterface = contextConfigurationInterface
-this.contextConfigurationInterface= contextConfigurationInterface;
+        this.contextConfigurationInterface= contextConfigurationInterface;
     
 }
 

@@ -77,8 +77,7 @@ export class RealTimeStoreFrontStatistics
 public constructor (storeFrontInterface: StoreFrontInterface){
 
             super();
-        var storeFrontInterface = storeFrontInterface
-this.storeFrontAdvertisementsStatisticsInterface= new StoreFrontAdvertisementsStatistics(storeFrontInterface) as StoreFrontAdvertisementsStatisticsInterface;
+        this.storeFrontAdvertisementsStatisticsInterface= new StoreFrontAdvertisementsStatistics(storeFrontInterface) as StoreFrontAdvertisementsStatisticsInterface;
     
 this.storeFrontUsersStatisticsInterface= new StoreFrontUsersStatistics(storeFrontInterface) as StoreFrontUsersStatisticsInterface;
     

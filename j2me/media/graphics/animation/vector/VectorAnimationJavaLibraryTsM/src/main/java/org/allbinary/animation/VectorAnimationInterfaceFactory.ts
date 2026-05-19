@@ -66,10 +66,7 @@ export class VectorAnimationInterfaceFactory
 public constructor (currentPoints: number[][][], basicColor: BasicColor, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.currentPoints= currentPoints;
+        this.currentPoints= currentPoints;
     
 this.setBasicColorP(basicColor);
     
@@ -81,7 +78,6 @@ this.animationBehaviorFactory= animationBehaviorFactory;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -92,7 +88,6 @@ this.animationBehaviorFactory= animationBehaviorFactory;
 
 
     setBasicColorP(basicColor: BasicColor){
-var basicColor = basicColor
 this.basicColor= basicColor;
     
 }
@@ -109,7 +104,6 @@ this.basicColor= basicColor;
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

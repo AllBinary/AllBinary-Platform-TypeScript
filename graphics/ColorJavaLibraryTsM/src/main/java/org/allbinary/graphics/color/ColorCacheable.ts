@@ -59,8 +59,7 @@ export class ColorCacheable
 public constructor (key: any = {}){
 
             super();
-        var key = key
-this.key= key;
+        this.key= key;
     
 this.color= new Color(
 
@@ -90,7 +89,6 @@ this.color= new Color(
 
 
     public setColor(color: Color){
-var color = color
 this.color= color;
     
 }

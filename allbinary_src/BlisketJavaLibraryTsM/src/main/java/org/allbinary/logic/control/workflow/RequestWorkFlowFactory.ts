@@ -75,10 +75,6 @@ export class RequestWorkFlowFactory
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public static getInstance(request: ServletRequest, response: ServletResponse, servletConfig: ServletConfig, servletContext: ServletContext): WorkFlowInterface{
-var request = request
-var response = response
-var servletConfig = servletConfig
-var servletContext = servletContext
 
     var httpRequest: HttpServletRequest = request as HttpServletRequest;
 ;
@@ -111,8 +107,6 @@ var servletContext = servletContext
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public static getInstance(hashMap: HashMap<any, any>, pageContext: PageContext): WorkFlowInterface{
-var hashMap = hashMap
-var pageContext = pageContext
 
     var workFlowName: string = pageContext!.getRequest()!.getParameter(WorkFlowData.getInstance()!.NAME) as string;
 ;

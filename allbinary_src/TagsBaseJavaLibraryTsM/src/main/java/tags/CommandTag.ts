@@ -56,7 +56,6 @@ public constructor (){
 
 
     public setCommand(command: string){
-var command = command
 this.command= command;
     
 }

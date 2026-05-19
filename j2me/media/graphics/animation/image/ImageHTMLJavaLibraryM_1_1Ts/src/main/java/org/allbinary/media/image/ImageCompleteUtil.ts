@@ -75,8 +75,6 @@ export class ImageCompleteUtil
                 //@Throws(Exception.constructor)
             
     public waitForImage(image: Image, name: string){
-var image = image
-var name = name
 }
 
 
@@ -85,9 +83,6 @@ var name = name
                 //@Throws(Exception.constructor)
             
     public isReady(image: Image, name: string, timeDelayHelper: TimeDelayHelper): boolean{
-    //var image = image
-    //var name = name
-    //var timeDelayHelper = timeDelayHelper
 
     var playnImage: PlaynImage = image as PlaynImage;
 ;
@@ -147,7 +142,6 @@ PreLogUtil.put(this.COMPLETE +image.getName(), this, commonStrings!.SUCCESS);
                 //@Throws(Exception.constructor)
             
     public handleTimeout(name: string){
-    //var name = name
 }
 
 

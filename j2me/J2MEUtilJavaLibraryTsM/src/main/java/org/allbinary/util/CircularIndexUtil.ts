@@ -53,7 +53,6 @@ export class CircularIndexUtil
     public static readonly NULL_CIRCULAR_INDEX_UTIL: CircularIndexUtil = new CircularIndexUtil(0, 0);
 
     public static createInstance(max: number): CircularIndexUtil{
-var max = max
 
 
 
@@ -64,8 +63,6 @@ var max = max
 
 
     public static createInstanceAt(index: number, max: number): CircularIndexUtil{
-var index = index
-var max = max
 
 
 
@@ -83,9 +80,7 @@ var max = max
 private constructor (index: number, size: number){
 
             super();
-        var index = index
-var size = size
-this.setSize(size);
+        this.setSize(size);
     
 this.setIndex(index);
     
@@ -143,7 +138,6 @@ this.setIndex(index);
 
 
     public setIndex(index: number){
-var index = index
 
                         if(index > this.lastIndex)
                         
@@ -173,7 +167,6 @@ this.index= index;
 
 
     public setSize(size: number){
-var size = size
 this.size= size;
     
 this.lastIndex= size -1;

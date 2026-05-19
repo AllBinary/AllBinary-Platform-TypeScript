@@ -85,7 +85,6 @@ export class DestroyableBaseBehavior
 
 
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 }
 
 

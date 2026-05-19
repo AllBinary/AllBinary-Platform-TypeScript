@@ -54,9 +54,6 @@ export class Orientation
     private static SINGLETON: Orientation = new Orientation(0, 0, 0);
 
     public static getInstance(yaw: number, pitch: number, roll: number): Orientation{
-var yaw = yaw
-var pitch = pitch
-var roll = roll
 Orientation.SINGLETON.yaw.setint(yaw);
     
 Orientation.SINGLETON.pitch.setint(pitch);
@@ -80,10 +77,7 @@ Orientation.SINGLETON.roll.setint(roll);
 private constructor (yaw: number, pitch: number, roll: number){
 
             super();
-        var yaw = yaw
-var pitch = pitch
-var roll = roll
-this.yaw.setint(yaw);
+        this.yaw.setint(yaw);
     
 this.pitch.setint(pitch);
     

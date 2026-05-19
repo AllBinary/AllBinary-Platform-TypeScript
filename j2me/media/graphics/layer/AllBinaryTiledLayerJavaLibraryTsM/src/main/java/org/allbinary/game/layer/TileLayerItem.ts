@@ -58,13 +58,7 @@ export class TileLayerItem extends ABCustomItem implements ABCustomItemInterface
     private readonly tiledLayer: AllBinaryTiledLayer
 public constructor (label: string, tiledLayer: AllBinaryTiledLayer, layout: number, altText: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(label, backgroundBasicColor, foregroundBasicColor);
-                    var label = label
-var tiledLayer = tiledLayer
-var layout = layout
-var altText = altText
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,7 +68,6 @@ this.tiledLayer= tiledLayer;
 
 
     public setOwner(owner: Screen){
-var owner = owner
 }
 
 
@@ -119,7 +112,6 @@ var owner = owner
 
 
     getPrefContentHeight(width: number): number{
-var width = width
 
 
 
@@ -130,7 +122,6 @@ var width = width
 
 
     getPrefContentWidth(height: number): number{
-var height = height
 
 
 
@@ -141,9 +132,6 @@ var height = height
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.tiledLayer!.setPosition(x, y, this.tiledLayer!.getZP());
     
 this.tiledLayer!.paint(graphics);
@@ -152,9 +140,6 @@ this.tiledLayer!.paint(graphics);
 
 
     public paintUnselected(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 }
 
 

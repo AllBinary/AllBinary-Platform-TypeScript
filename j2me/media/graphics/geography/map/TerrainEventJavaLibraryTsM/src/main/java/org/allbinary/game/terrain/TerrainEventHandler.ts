@@ -74,7 +74,6 @@ TerrainEventHandler.hashtable= new Hashtable<any, any>();
 
 
     public static getInstance(anyType: any = {}): TerrainEventHandler{
-    //var anyType = anyType
 
     var eventHandlerCanBeNull: any = TerrainEventHandler.hashtable.get(anyType);
 ;
@@ -109,7 +108,6 @@ private constructor (){
 
 
     public addListener(terrainEventListener: TerrainEventListener){
-    //var terrainEventListener = terrainEventListener
 
                         if(!this.list.contains(terrainEventListener))
                         
@@ -131,7 +129,6 @@ super.removeAllListeners();
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-    //var eventListenerInterface = eventListenerInterface
 this.list.remove(eventListenerInterface);
     
 super.removeListener(eventListenerInterface);
@@ -142,7 +139,6 @@ super.removeListener(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 
 
 
@@ -177,8 +173,6 @@ super.fireEvent(eventObject);
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-    //var eventObject = eventObject
-    //var eventListenerInterface = eventListenerInterface
 
     var terrainEventListenerInterface: TerrainEventListenerInterface = eventListenerInterface as TerrainEventListenerInterface;
 ;

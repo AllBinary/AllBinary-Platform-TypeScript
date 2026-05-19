@@ -60,8 +60,7 @@ export class IIOImageCacheable
 public constructor (key: string){
 
             super();
-        var key = key
-this.key= key;
+        this.key= key;
     
 }
 
@@ -77,7 +76,6 @@ this.key= key;
 
 
     public setBufferedImage(bufferedImage: BufferedImage){
-var bufferedImage = bufferedImage
 this.setIioImage(new IIOImage(bufferedImage, 
                             null, 
                             null));
@@ -96,7 +94,6 @@ this.setIioImage(new IIOImage(bufferedImage,
 
 
     setIioImage(iioImage: IIOImage){
-var iioImage = iioImage
 this.iioImage= iioImage;
     
 }

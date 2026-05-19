@@ -65,9 +65,6 @@ export class AboutCommandProcessor
 
 
     public process(midletCommandListener: CommandListener, command: Command, canvas: Canvas){
-    //var midletCommandListener = midletCommandListener
-    //var command = command
-    //var canvas = canvas
 midletCommandListener!.commandAction(command, canvas);
     
 }

@@ -65,20 +65,10 @@ export class ModifierBaseProcessor
 
 
     public updateColor(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, basicColor: BasicColor){
-    //var imageModifierUtil = imageModifierUtil
-    //var originalImage = originalImage
-    //var imageToShow = imageToShow
-    //var index = index
-    //var basicColor = basicColor
 }
 
 
     public updateAlpha(imageModifierUtil: ImageModifierUtil, originalImage: Image, imageToShow: Image, index: number, alpha: number){
-    //var imageModifierUtil = imageModifierUtil
-    //var originalImage = originalImage
-    //var imageToShow = imageToShow
-    //var index = index
-    //var alpha = alpha
 }
 
 

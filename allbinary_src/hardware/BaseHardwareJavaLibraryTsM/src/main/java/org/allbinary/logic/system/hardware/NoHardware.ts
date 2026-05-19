@@ -68,7 +68,6 @@ export class NoHardware
 
 
     public getComponent(index: number): HardwareComponentInterface{
-var index = index
 
 
 
@@ -88,8 +87,7 @@ var index = index
 }
 
 
-    public localeCompare(hardwareInterface: HardwareInterface): boolean{
-var hardwareInterface = hardwareInterface
+    public compareTo(hardwareInterface: HardwareInterface): boolean{
 
 
 
@@ -100,7 +98,6 @@ var hardwareInterface = hardwareInterface
 
 
     public difference(hardwareInterface: HardwareInterface): Hashtable<any, any>{
-var hardwareInterface = hardwareInterface
 
 
 

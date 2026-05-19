@@ -72,8 +72,7 @@ export class MineLayer extends SimpleWeaponLayer {
     private static readonly NAME: string = "MineLayer";
 public constructor (viewPosition: ViewPosition){
             super(MineLayer.NAME, RemoteInfo.REMOTE_INFO,  -1, NoMovementFactory.getInstance()!.getMovmentInstance(), FeaturedAnimationInterfaceFactoryInterfaceFactory.getInstance()!.get(MineWeaponResources.getInstance()!.RESOURCE)!.getInstance(0), SimpleWeaponLayer.createDestroyed(), new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 10, 10), viewPosition);
-                    var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -83,9 +82,6 @@ public constructor (viewPosition: ViewPosition){
     private readonly viewPositionEventHandler: ViewPositionEventHandler = ViewPositionEventHandler.getInstance()!;
 
     public initXYZ(x: number, y: number, z: number){
-var x = x
-var y = y
-var z = z
 this.setPosition(x +5, y +5, z);
     
 this.viewPositionEventHandler!.addListener(this as AllBinaryLayer);
@@ -96,15 +92,12 @@ SecondaryPlayerQueueFactory.getInstance()!.add(DropWeaponSound.getInstance());
 
 
     public damage(damage: number, damageType: number){
-var damage = damage
-var damageType = damageType
 this.totalDamage= this.getInitDamage() +1;
     
 }
 
 
     public getDamage(damageType: number): number{
-var damageType = damageType
 super.getDamage(damageType);
     
 
@@ -117,7 +110,6 @@ super.getDamage(damageType);
 
 
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 super.setDestroyed(destroyed);
     
 

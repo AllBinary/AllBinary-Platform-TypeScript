@@ -63,7 +63,6 @@ export class AllBinaryRendererBase3
                 //@Throws(Exception.constructor)
             
     update(gl: GL10){
-    //var gl = gl
 
         while(this.list.size() > 0)
         {
@@ -88,7 +87,6 @@ export class AllBinaryRendererBase3
 
 
     public add(image: Image){
-    //var image = image
 this.list.add(image);
     
 }

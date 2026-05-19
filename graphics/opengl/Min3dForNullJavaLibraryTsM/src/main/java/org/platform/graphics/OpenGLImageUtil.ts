@@ -57,7 +57,6 @@ export class OpenGLImageUtil
                 //@Throws(IOException.constructor)
             
     public static createImage(inputStream: InputStream): OpenGLBitmap{
-    //var inputStream = inputStream
 
 
 
@@ -67,9 +66,6 @@ export class OpenGLImageUtil
 
 
     public paint(alphaBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, index: number): OpenGLBitmap{
-    //var alphaBitmap = alphaBitmap
-    //var originalBitmap = originalBitmap
-    //var index = index
 
 
 
@@ -79,10 +75,6 @@ export class OpenGLImageUtil
 
 
     public paint(colorBitmap: OpenGLBitmap, originalBitmap: OpenGLBitmap, alpha: number, basicColor: BasicColor): OpenGLBitmap{
-    //var colorBitmap = colorBitmap
-    //var originalBitmap = originalBitmap
-    //var alpha = alpha
-    //var basicColor = basicColor
 
 
 
@@ -94,7 +86,6 @@ export class OpenGLImageUtil
                 //@Throws(IOException.constructor)
             
     public createImage(name: string): OpenGLBitmap{
-    //var name = name
 
 
 

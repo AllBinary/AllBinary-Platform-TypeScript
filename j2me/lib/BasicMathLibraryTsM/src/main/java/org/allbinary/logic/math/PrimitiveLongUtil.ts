@@ -57,7 +57,6 @@ export class PrimitiveLongUtil
         
 
     public static createPowerOfTen(powerOfTen: number): PrimitiveLongUtil{
-var powerOfTen = powerOfTen
 
     var primitiveLongUtil: PrimitiveLongUtil = new PrimitiveLongUtil(powerOfTen, NullUtil.getInstance()!.NULL_OBJECT);
 ;
@@ -104,9 +103,7 @@ logUtil!.put(commonStrings!.EXCEPTION, primitiveLongUtil, commonStrings!.CONSTRU
 public constructor (powerOfTen: number, unused: any = {}){
 
             super();
-        var powerOfTen = powerOfTen
-var unused = unused
-this.maxDigits= MathUtil.getInstance()!.getTotalDigits(powerOfTen);
+        this.maxDigits= MathUtil.getInstance()!.getTotalDigits(powerOfTen);
     
 this.powerOfTen= powerOfTen;
     
@@ -118,7 +115,6 @@ this.charArray= new Array(this.maxDigits);
 
 
     public getCharArray(value: number): string[]{
-var value = value
 
                         if(value < 10)
                         
@@ -206,7 +202,6 @@ this.setCurrentTotalDigits(index);
 
 
     setCurrentTotalDigits(currentTotalDigits: number){
-var currentTotalDigits = currentTotalDigits
 this.currentTotalDigits= currentTotalDigits;
     
 }

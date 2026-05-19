@@ -176,7 +176,6 @@ private constructor (){
 
 
     public initCapabilities(gl: GL10){
-var gl = gl
 
     var METHOD_NAME: string = "initGLCapabilities";
 ;
@@ -508,7 +507,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, METHOD_NAME, e);
 
 
     isExtension(gameFeature: OpenGLFeature): boolean{
-var gameFeature = gameFeature
 
     var index: number = this.glExtensions!.indexOf(gameFeature!.getName())!;
 ;
@@ -646,7 +644,6 @@ this.requireInitialization();
 
 
     public isTextureSizeValid(widthAndHeight: number): boolean{
-    //var widthAndHeight = widthAndHeight
 this.requireInitialization();
     
 

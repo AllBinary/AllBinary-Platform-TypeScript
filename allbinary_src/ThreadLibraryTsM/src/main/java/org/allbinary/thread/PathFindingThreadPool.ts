@@ -61,10 +61,7 @@ export class PathFindingThreadPool extends ThreadPool {
 
 public constructor (poolName: string, numThreads: number, priority: number){
             super(poolName, numThreads, ThreadPool.NORMAL_PRIORITY);
-                        //var poolName = poolName
-    //var numThreads = numThreads
-    //var priority = priority
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -72,26 +69,22 @@ public constructor (poolName: string, numThreads: number, priority: number){
 
 
     public runTaskWithPriority(task: PriorityRunnable){
-    //var task = task
 super.runTaskWithPriority(task);
     
 }
 
 
     public runTask(task: Runnable){
-var task = task
 super.runTask(task);
     
 }
 
 
     startTask(task: Runnable){
-var task = task
 }
 
 
     completedTask(task: Runnable){
-var task = task
 }
 
 

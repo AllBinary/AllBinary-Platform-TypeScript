@@ -131,12 +131,7 @@ export class SelectedRTSLayersPlayerGameInput extends PlayerGameInput {
     private readonly downgradeGameNotificationEvent: GameNotificationEvent
 public constructor (towerInfoPaintable: RTSLayerInfoPaintable, rtsPlayerLayerInterface: RTSPlayerLayerInterface, list: BasicArrayList, playerInputId: number, selectRTSLayerVisitorFactoryInterface: SelectRTSLayerVisitorFactoryInterface){
             super(list, new BasicArrayListD(), playerInputId);
-                    var towerInfoPaintable = towerInfoPaintable
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
-var list = list
-var playerInputId = playerInputId
-var selectRTSLayerVisitorFactoryInterface = selectRTSLayerVisitorFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -168,7 +163,6 @@ this.downgradeGameNotificationEvent= new GameNotificationEvent(this, RTSGameStri
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 
     var geographicMapCompositeInterface: GeographicMapCompositeInterface = allBinaryGameLayerManager as GeographicMapCompositeInterface;
 ;
@@ -187,7 +181,6 @@ this.downgradeGameNotificationEvent!.setBasicColorP(geographicMapInterface!.getF
 
 
     public isSelected(rtsLayer: RTSLayer): boolean{
-var rtsLayer = rtsLayer
 
                         if(this.selectedRTSLayersList!.contains(rtsLayer))
                         
@@ -387,7 +380,6 @@ GameInputProcessorUtil.init(this.inputProcessorArray);
                 //@Throws(Exception.constructor)
             
     public processInputKey(key: number){
-var key = key
 
                         if(this.selectedRTSLayersList != 
                                     null
@@ -405,7 +397,6 @@ var key = key
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 
         try {
             
@@ -471,7 +462,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.gameInputStrings!.PR
 
 
     public addSelectedRTSLayer(selectedLayer: RTSLayer){
-var selectedLayer = selectedLayer
 this.paintSelectedRTSLayersList= BasicArrayListUtil.getInstance()!.getImmutableInstance();
     
 
@@ -504,7 +494,6 @@ this.paintSelectedRTSLayersList= this.selectedRTSLayersList;
 
 
     public setSelectedRTSLayer(selectedLayer: CollidableDestroyableDamageableLayer){
-var selectedLayer = selectedLayer
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

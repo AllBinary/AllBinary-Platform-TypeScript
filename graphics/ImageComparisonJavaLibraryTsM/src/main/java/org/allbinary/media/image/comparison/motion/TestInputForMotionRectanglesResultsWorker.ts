@@ -108,7 +108,6 @@ public constructor (){
 
 
     public onMotionRectanglesImageComparisonResultsEvent(motionRectanglesImageComparisonResultsEvent: MotionRectanglesResultsEvent){
-var motionRectanglesImageComparisonResultsEvent = motionRectanglesImageComparisonResultsEvent
 this.getMotionRectanglesVector()!.add(motionRectanglesImageComparisonResultsEvent!.getMotionRectangles());
     
 this.run();
@@ -117,7 +116,6 @@ this.run();
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
-var allBinaryEventObject = allBinaryEventObject
 this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as MotionRectanglesResultsEvent);
     
 }
@@ -136,7 +134,6 @@ this.onMotionRectanglesImageComparisonResultsEvent(allBinaryEventObject as Motio
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }
@@ -203,7 +200,7 @@ index < size; index++)
 inputRobotInterface!.mouseMoveToTarget(rectangle);
     
 
-                        if(inputRobotInterface!.getName()!.localeCompare(TempInputRobotNames.DX_NAME) == 0)
+                        if(inputRobotInterface!.getName()!.compareTo(TempInputRobotNames.DX_NAME) == 0)
                         
                                     {
                                     inputRobotInterface!.mousePress(InputEvent.BUTTON1_MASK);

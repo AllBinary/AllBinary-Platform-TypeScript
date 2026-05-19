@@ -59,13 +59,7 @@ export class PreGameScrollSelectionForm extends ScrollCurrentSelectionForm {
         
 public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, formPaintableFactory, rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM, 0, false, backgroundBasicColor, foregroundBasicColor);
-                    var title = title
-var items = items
-var formPaintableFactory = formPaintableFactory
-var rectangle = rectangle
-var backgroundBasicColor = backgroundBasicColor
-var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -75,7 +69,6 @@ var foregroundBasicColor = foregroundBasicColor
                 //@Throws(Exception.constructor)
             
     public init(rectangle: Rectangle){
-var rectangle = rectangle
 super.init(rectangle, FormTypeFactory.getInstance()!.TEMP_HORIZONTAL_FORM);
     
 }

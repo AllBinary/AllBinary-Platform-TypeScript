@@ -66,12 +66,10 @@ private constructor (){
 
 
     public addPoints(points: number){
-var points = points
 }
 
 
     public removePoints(points: number){
-var points = points
 }
 
 

@@ -49,7 +49,6 @@ export class KeyUtil
         
 
     public static isNormallyDisplayed(keyCode: number): boolean{
-var keyCode = keyCode
 
 
 

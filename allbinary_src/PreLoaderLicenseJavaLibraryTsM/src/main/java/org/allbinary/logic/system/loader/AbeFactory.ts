@@ -92,8 +92,6 @@ private constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(abeClientInformation: AbeClientInformationInterface, className: string): any{
-    //var abeClientInformation = abeClientInformation
-    //var className = className
 
         try {
             
@@ -149,10 +147,6 @@ private constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getInstance(abeClientInformation: AbeClientInformationInterface, className: string, classes: Function[], params: any[]): any{
-    //var abeClientInformation = abeClientInformation
-var className = className
-var classes = classes
-var params = params
 
     var constructor: Constructor = 
                 null
@@ -275,8 +269,6 @@ this.logUtil!.put(stringBuffer!.toString(), this, "getInstance(className,params)
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public constructor(abeClientInformation: AbeClientInformationInterface, className: string): Function{
-    //var abeClientInformation = abeClientInformation
-    //var className = className
 
         try {
             

@@ -88,8 +88,7 @@ export class DirectionalAnalogLocationInputProcessor extends AnalogLocationInput
 public constructor (inputProcessorArray: GameInputProcessor[]){
 
             super();
-        var inputProcessorArray = inputProcessorArray
-this.inputProcessorArray= inputProcessorArray;
+        this.inputProcessorArray= inputProcessorArray;
     
 
         try {
@@ -121,8 +120,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.CONSTRUCTOR, e)
 
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInput: AnalogLocationInput){
-var allbinaryLayerManager = allbinaryLayerManager
-var analogLocationInput = analogLocationInput
 
         try {
             

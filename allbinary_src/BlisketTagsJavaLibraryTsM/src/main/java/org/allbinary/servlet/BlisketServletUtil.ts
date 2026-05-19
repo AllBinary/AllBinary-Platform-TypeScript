@@ -69,7 +69,6 @@ export class BlisketServletUtil
 
 
     public init(request: HttpServletRequest){
-var request = request
 
     var urlGlobals: AppUrlGlobals = new AppUrlGlobals();
 ;

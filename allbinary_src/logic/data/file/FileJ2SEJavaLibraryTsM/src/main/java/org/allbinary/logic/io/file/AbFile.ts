@@ -71,34 +71,28 @@ export class AbFile
  constructor (filePath: string, unknown: boolean){
 
             super();
-            //var filePath = filePath
-    //var unknown = unknown
-this.file= new File(filePath);
+        this.file= new File(filePath);
     
 }
 
  constructor (file: File){
 
             super();
-            //var file = file
-this.file= file;
+        this.file= file;
     
 }
 
 public constructor (file: AbFile, childPathName: string){
 
             super();
-            //var file = file
-    //var childPathName = childPathName
-this.file= new File(file.getFile(), childPathName);
+        this.file= new File(file.getFile(), childPathName);
     
 }
 
 public constructor (filePath: string){
 
             super();
-            //var filePath = filePath
-this.file= new File(new AbPath(filePath).
+        this.file= new File(new AbPath(filePath).
                             toFileSystemString());
     
 }
@@ -106,9 +100,7 @@ this.file= new File(new AbPath(filePath).
 public constructor (filePath: string, fileName: string){
 
             super();
-            //var filePath = filePath
-    //var fileName = fileName
-this.file= new File(new AbPath(filePath).
+        this.file= new File(new AbPath(filePath).
                             toFileSystemString(), fileName);
     
 }
@@ -116,8 +108,7 @@ this.file= new File(new AbPath(filePath).
 public constructor (abPath: AbPath){
 
             super();
-            //var abPath = abPath
-this.file= new File(abPath!.toFileSystemString());
+        this.file= new File(abPath!.toFileSystemString());
     
 }
 
@@ -357,7 +348,6 @@ this.file.deleteOnExit();
 
 
     public list(filter: FilenameFilter): string[]{
-    //var filter = filter
 
 
 
@@ -378,7 +368,6 @@ this.file.deleteOnExit();
 
 
     public listFiles(filter: FilenameFilter): any[]{
-    //var filter = filter
 
 
 
@@ -389,7 +378,6 @@ this.file.deleteOnExit();
 
 
     public listFiles(filter: FileFilter): any[]{
-    //var filter = filter
 
 
 
@@ -420,7 +408,6 @@ this.file.deleteOnExit();
 
 
     public renameTo(dest: AbFile): boolean{
-    //var dest = dest
 
 
 
@@ -431,7 +418,6 @@ this.file.deleteOnExit();
 
 
     public setLastModified(time: number): boolean{
-    //var time = time
 
 
 
@@ -452,8 +438,6 @@ this.file.deleteOnExit();
 
 
     public setWritable(writable: boolean, ownerOnly: boolean): boolean{
-    //var writable = writable
-    //var ownerOnly = ownerOnly
 
 
 
@@ -464,7 +448,6 @@ this.file.deleteOnExit();
 
 
     public setWritable(writable: boolean): boolean{
-    //var writable = writable
 
 
 
@@ -475,8 +458,6 @@ this.file.deleteOnExit();
 
 
     public setReadable(readable: boolean, ownerOnly: boolean): boolean{
-    //var readable = readable
-    //var ownerOnly = ownerOnly
 
 
 
@@ -487,7 +468,6 @@ this.file.deleteOnExit();
 
 
     public setReadable(readable: boolean): boolean{
-    //var readable = readable
 
 
 
@@ -498,8 +478,6 @@ this.file.deleteOnExit();
 
 
     public setExecutable(executable: boolean, ownerOnly: boolean): boolean{
-    //var executable = executable
-    //var ownerOnly = ownerOnly
 
 
 
@@ -510,7 +488,6 @@ this.file.deleteOnExit();
 
 
     public setExecutable(executable: boolean): boolean{
-    //var executable = executable
 
 
 
@@ -560,19 +537,17 @@ this.file.deleteOnExit();
 }
 
 
-    public localeCompare(pathname: File): number{
-var pathname = pathname
+    public compareTo(pathname: File): number{
 
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return this.file.localeCompare(pathname);;
+                        return this.file.compareTo(pathname);;
     
 }
 
 
     public  === (obj: any = {}): boolean{
-var obj = obj
 
 
 

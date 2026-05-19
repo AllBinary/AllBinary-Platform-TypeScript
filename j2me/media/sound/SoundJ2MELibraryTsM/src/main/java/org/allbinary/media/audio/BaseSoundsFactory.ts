@@ -69,7 +69,6 @@ export class BaseSoundsFactory
 
 
     public setInitialized(initialized: boolean){
-var initialized = initialized
 this.initialized= initialized;
     
 }

@@ -65,8 +65,7 @@ export class WorkFlowWrapper
 public constructor (anyType: any = {}){
 
             super();
-        var anyType = anyType
-this.anyType= anyType;
+        this.anyType= anyType;
     
 }
 

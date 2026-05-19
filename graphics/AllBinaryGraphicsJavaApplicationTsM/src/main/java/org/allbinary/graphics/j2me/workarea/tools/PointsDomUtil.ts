@@ -93,8 +93,6 @@ export class PointsDomUtil
                 //@Throws(Exception.constructor)
             
     public toDom(canvasDom: CanvasDom, pointVector: BasicArrayList): Node{
-var canvasDom = canvasDom
-var pointVector = pointVector
 
     var tempPointVector: BasicArrayList = PointsUtil.getInstance()!.doTransforms(pointVector, new Double(canvasDom!.getAngle()), PointFactory.getInstance()!.createXY(canvasDom!.getDimension()!.getWidth(), canvasDom!.getDimension()!.getHeight()))!;
 ;
@@ -203,8 +201,6 @@ index++;
 
 
     getPointNode(point: GPoint, pointName: string): Node{
-var point = point
-var pointName = pointName
 
     var document: org.w3c.dom.Document = WorkAreaJPanel.getDocument()!;
 ;

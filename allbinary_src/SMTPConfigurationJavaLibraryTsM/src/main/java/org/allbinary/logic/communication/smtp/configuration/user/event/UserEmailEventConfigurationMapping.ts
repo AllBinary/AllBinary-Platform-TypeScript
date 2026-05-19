@@ -60,8 +60,7 @@ export class UserEmailEventConfigurationMapping
 public constructor (userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 
             super();
-        var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface;
+        this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface;
     
 }
 

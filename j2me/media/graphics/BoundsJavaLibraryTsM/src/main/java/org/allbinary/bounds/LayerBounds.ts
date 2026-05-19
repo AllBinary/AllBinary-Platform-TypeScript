@@ -67,8 +67,7 @@ export class LayerBounds
 protected constructor (rectangle: Rectangle){
 
             super();
-        var rectangle = rectangle
-this.rectangle= rectangle;
+        this.rectangle= rectangle;
     
 }
 
@@ -84,19 +83,16 @@ this.rectangle= rectangle;
 
 
     public visit(boundsVisitorInterface: BoundsVisitorInterface){
-var boundsVisitorInterface = boundsVisitorInterface
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onBoundsChangeEvent(boundsChangeEvent: BoundsChangeEvent){
-var boundsChangeEvent = boundsChangeEvent
 this.rectangle= boundsChangeEvent!.getRectangle();
     
 }

@@ -93,8 +93,7 @@ export class InsertCustomizerValidationView extends HttpStoreComponentView imple
     private viewName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -415,7 +414,6 @@ stringBuffer!.append("Error: Template Name Is Empty.");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

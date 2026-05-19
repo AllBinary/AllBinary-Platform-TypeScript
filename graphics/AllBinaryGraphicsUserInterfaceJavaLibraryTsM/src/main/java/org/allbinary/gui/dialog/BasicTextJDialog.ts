@@ -57,7 +57,6 @@ export class BasicTextJDialog extends javax.swing.JDialog {
         
 
     public static main(args: string[]){
-var args = args
 java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
                                 
@@ -76,10 +75,7 @@ new BasicTextJDialog(new javax.swing.JFrame(), true, "Test").
     private closeListenerInterface: CloseJDialogListenerInterface
 public constructor (parent: java.awt.Frame, modal: boolean, text: string){
             super(parent, modal);
-                    var parent = parent
-var modal = modal
-var text = text
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -91,14 +87,12 @@ this.setText(text);
 
 
     public setText(text: string){
-var text = text
 this.textJLabel!.setText(text);
     
 }
 
 
     public addCloseListener(closeListenerInterface: CloseJDialogListenerInterface){
-var closeListenerInterface = closeListenerInterface
 this.closeListenerInterface= closeListenerInterface;
     
 }
@@ -106,8 +100,7 @@ this.closeListenerInterface= closeListenerInterface;
 public constructor (text: string){
 
             super();
-        var text = text
-this.initComponents();
+        this.initComponents();
     
 this.textJLabel!.setText(text);
     
@@ -127,7 +120,6 @@ jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jButton1ActionPerformed(evt);
     
 }
@@ -153,7 +145,6 @@ pack();
 
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.setVisible(false);
     
 

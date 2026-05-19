@@ -65,7 +65,6 @@ private constructor (){
 
 
     public notifyIntermission(enable: boolean){
-var enable = enable
 }
 
 

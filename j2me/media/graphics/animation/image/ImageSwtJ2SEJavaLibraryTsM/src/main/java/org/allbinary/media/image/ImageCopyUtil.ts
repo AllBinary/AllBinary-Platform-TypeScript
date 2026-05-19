@@ -120,7 +120,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createImageForRotation(originalImage: Image): Image{
-    //var originalImage = originalImage
 
                         if(this.features.isFeature(this.openGLFeatureFactory!.OPENGL))
                         
@@ -156,7 +155,6 @@ image= this.openGLUtil!.add(image);
                 //@Throws(Exception.constructor)
             
     public createImage(originalImage: Image): Image{
-    //var originalImage = originalImage
 
                         if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
@@ -239,10 +237,6 @@ image= this.openGLUtil!.add(image);
                 //@Throws(Exception.constructor)
             
     public createImageWH(originalImage: Image, width: number, height: number, mutable: boolean): Image{
-    //var originalImage = originalImage
-    //var width = width
-    //var height = height
-    //var mutable = mutable
 
     var originalImage2: Image = originalImage;
 ;
@@ -388,10 +382,6 @@ image= this.openGLUtil!.add(image);
                 //@Throws(Exception.constructor)
             
     public createImage2(originalImage: Image, width: number, height: number, mutable: boolean): Image{
-    //var originalImage = originalImage
-    //var width = width
-    //var height = height
-    //var mutable = mutable
 
     var originalImage2: Image = originalImage;
 ;
@@ -638,9 +628,6 @@ image= this.openGLUtil!.add(image);
                 //@Throws(Exception.constructor)
             
     public createImageScale(originalImage: Image, canvasScale: number, resize: boolean): Image{
-    //var originalImage = originalImage
-    //var canvasScale = canvasScale
-    //var resize = resize
 
                         if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         

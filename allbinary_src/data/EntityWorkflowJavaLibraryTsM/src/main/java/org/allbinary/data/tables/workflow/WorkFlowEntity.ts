@@ -98,7 +98,6 @@ this.setTableName(this.tableName);
 
 
     public insert(values: Vector){
-    //var values = values
 
         try {
             super.insert(values);
@@ -131,8 +130,6 @@ this.setTableName(this.tableName);
 
 
     public delete(name: string, storeName: string){
-    //var name = name
-    //var storeName = storeName
 
         try {
             
@@ -175,8 +172,6 @@ super.deleteWhere(keysAndValues);
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public get(name: string, storeName: string): WorkFlowInterface{
-    //var name = name
-    //var storeName = storeName
 
         try {
             
@@ -240,7 +235,6 @@ keysAndValues!.put(StoreFrontData.getInstance()!.NAME, storeName);
 
 
     public get(storeName: string): Vector{
-var storeName = storeName
 
         try {
             
@@ -317,7 +311,6 @@ i < size; i++)
 
 
     public update(updatedValues: HashMap<any, any>){
-var updatedValues = updatedValues
 
         try {
             

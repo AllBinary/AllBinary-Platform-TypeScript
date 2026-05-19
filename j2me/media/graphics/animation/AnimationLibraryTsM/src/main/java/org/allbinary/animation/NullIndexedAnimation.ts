@@ -35,8 +35,7 @@ export class NullIndexedAnimation extends IndexedAnimation {
         
 public constructor (animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

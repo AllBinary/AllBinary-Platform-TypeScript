@@ -76,8 +76,6 @@ export class AnalogInputBuilder
 
 
     public disable(inputProcessorArray: GameInputProcessor[], collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
-    //var inputProcessorArray = inputProcessorArray
-    //var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 inputProcessorArray[Canvas.UP]= new SpecialUpGameInputProcessor(collidableDestroyableDamageableLayer);
     
 inputProcessorArray[Canvas.DOWN]= new SpecialDownGameInputProcessor(collidableDestroyableDamageableLayer);
@@ -94,8 +92,6 @@ inputProcessorArray[Canvas.KEY_NUM5]= new Special3GameInputProcessor(collidableD
 
 
     public enable(inputProcessorArray: GameInputProcessor[], collidableDestroyableDamageableLayer: CollidableDestroyableDamageableLayer){
-    //var inputProcessorArray = inputProcessorArray
-    //var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
 inputProcessorArray[Canvas.UP]= new SpecialAnalogUpGameInputProcessor(collidableDestroyableDamageableLayer);
     
 inputProcessorArray[Canvas.DOWN]= new SpecialAnalogDownGameInputProcessor(collidableDestroyableDamageableLayer);

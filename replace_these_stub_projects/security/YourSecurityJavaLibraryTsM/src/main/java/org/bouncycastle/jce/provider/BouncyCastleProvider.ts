@@ -45,8 +45,6 @@ public constructor (){
 
 
     public setParameter(parameterName: string, parameter: any = {}){
-var parameterName = parameterName
-var parameter = parameter
 }
 
 

@@ -81,8 +81,7 @@ export class AddValidationStoreFrontView extends HttpContextView implements Vali
     newStoreFrontInterface: StoreFrontInterface
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -263,7 +262,6 @@ stringBuffer!.append(this.newStoreFrontInterface!.getName());
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

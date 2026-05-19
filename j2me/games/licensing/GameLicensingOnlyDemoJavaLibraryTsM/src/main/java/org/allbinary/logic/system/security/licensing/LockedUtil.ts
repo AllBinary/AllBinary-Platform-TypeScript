@@ -71,7 +71,6 @@ export class LockedUtil
 
 
     public isLockedFeature(lockableFeatrue: LockableFeature): boolean{
-var lockableFeatrue = lockableFeatrue
 
 
 

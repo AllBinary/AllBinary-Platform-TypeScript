@@ -71,8 +71,7 @@ export class AndroidMediaPlayerWrapperListener
 public constructor (androidMediaPlayerWrapper: AndroidMediaPlayerWrapper){
 
             super();
-            //var androidMediaPlayerWrapper = androidMediaPlayerWrapper
-
+        
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
@@ -110,8 +109,6 @@ MediaPlayerOnBufferingUpdateListener = class
 
 
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
-    //var mediaPlayer = mediaPlayer
-    //var i = i
 }
 
 
@@ -127,7 +124,6 @@ MediaPlayerOnPreparedListener = class
 
 
     public onPrepared(mp: MediaPlayer){
-    //var mp = mp
 }
 
 
@@ -143,9 +139,6 @@ MediaPlayerOnErrorListener = class
 
 
     public onError(mp: MediaPlayer, what: number, extra: number): boolean{
-    //var mp = mp
-    //var what = what
-    //var extra = extra
 
 
 
@@ -167,7 +160,6 @@ MediaPlayerOnCompletionListener = class
 
 
     public onCompletion(mp: MediaPlayer){
-    //var mp = mp
 }
 
 
@@ -178,8 +170,6 @@ MediaPlayerOnCompletionListener = class
                                 {
                                 
     public onBufferingUpdate(mediaPlayer: MediaPlayer, i: number){
-    //var mediaPlayer = mediaPlayer
-    //var i = i
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -198,7 +188,6 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
                                 {
                                 
     public onPrepared(mp: MediaPlayer){
-    //var mp = mp
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -220,9 +209,6 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
                                 {
                                 
     public onError(mp: MediaPlayer, what: number, extra: number): boolean{
-    //var mp = mp
-    //var what = what
-    //var extra = extra
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -247,7 +233,6 @@ AndroidMediaPlayerWrapperListener.prototype.androidMediaPlayerWrapper!.update(Pl
                                 {
                                 
     public onCompletion(mp: MediaPlayer){
-    //var mp = mp
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

@@ -52,7 +52,6 @@ export class DomNodeListHelper
         
 
     public static getVector(nodeList: NodeList): Vector{
-var nodeList = nodeList
 
     var vector: Vector = new Vector();
 ;

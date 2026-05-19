@@ -54,7 +54,6 @@ export class BasicArrayListCacheableInterfaceFactory
                 //@Throws(Exception.constructor)
             
     public getInstance(key: any = {}): CacheableInterface{
-var key = key
 
 
 

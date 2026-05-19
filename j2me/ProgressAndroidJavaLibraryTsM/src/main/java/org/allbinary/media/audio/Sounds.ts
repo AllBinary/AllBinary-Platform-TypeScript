@@ -79,8 +79,7 @@ export class Sounds
 public constructor (soundsFactoryInterface: SoundsFactoryInterface){
 
             super();
-        var soundsFactoryInterface = soundsFactoryInterface
-this.soundsFactoryInterface= soundsFactoryInterface;
+        this.soundsFactoryInterface= soundsFactoryInterface;
     
 }
 

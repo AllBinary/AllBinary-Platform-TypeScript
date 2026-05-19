@@ -128,10 +128,7 @@ export class ThemeValidation
 public constructor (transformInfoInterface: TransformInfoInterface, cssStyleValidation: CssStyleValidation, categoryThemePath: string){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-var cssStyleValidation = cssStyleValidation
-var categoryThemePath = categoryThemePath
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 
     var pathUtil: PathUtil = PathUtil.getInstance()!;
@@ -150,9 +147,7 @@ this.init();
 public constructor (transformInfoInterface: TransformInfoInterface, hashMap: HashMap<any, any>){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-var hashMap = hashMap
-this.transformInfoInterface= transformInfoInterface;
+        this.transformInfoInterface= transformInfoInterface;
     
 
     var categoryThemeAbPath: AbPath = new AbPath(hashMap!.get(ThemeData.getInstance()!.PATH) as string);
@@ -198,9 +193,7 @@ this.init();
 public constructor (storeThemeCategoryInterface: StoreThemeCategoryInterface, node: Node){
 
             super();
-        var storeThemeCategoryInterface = storeThemeCategoryInterface
-var node = node
-this.transformInfoInterface= storeThemeCategoryInterface!.getTransformInfoInterface();
+        this.transformInfoInterface= storeThemeCategoryInterface!.getTransformInfoInterface();
     
 this.categoryAbPath= storeThemeCategoryInterface!.getPath();
     
@@ -254,7 +247,6 @@ this.init(rootStoreThemeCategoryInterface);
                 //@Throws(Exception.constructor)
             
     init(storeThemeCategoryInterface: StoreThemeCategoryInterface){
-var storeThemeCategoryInterface = storeThemeCategoryInterface
 this.fileAbPath= new AbPath(storeThemeCategoryInterface!.getRootFilePath()!.toString() +this.categoryAbPath!.toString());
     
 this.webAppAbPath= storeThemeCategoryInterface!.getWebAppPath();
@@ -481,7 +473,6 @@ stringBuffer!.append("Theme Validation Error");
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -552,7 +543,6 @@ hashMap!.put(themeData!.PREVIEW_IMAGE_PATH, this.getPreviewImagePath());
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, ThemeData.getInstance()!.NAME, this.toHashMap())!;
 ;

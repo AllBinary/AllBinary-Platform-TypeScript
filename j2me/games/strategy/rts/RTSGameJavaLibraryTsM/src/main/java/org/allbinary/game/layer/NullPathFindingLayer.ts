@@ -127,7 +127,6 @@ export class NullPathFindingLayer
                 //@Throws(Exception.constructor)
             
     public handleCost(ownerLayer: PathFindingLayerInterface){
-var ownerLayer = ownerLayer
 
 
 
@@ -157,7 +156,6 @@ var ownerLayer = ownerLayer
                 //@Throws(Exception.constructor)
             
     public setTarget(targetGameLayer: PathFindingLayerInterface){
-    //var targetGameLayer = targetGameLayer
 
 
 
@@ -169,8 +167,6 @@ var ownerLayer = ownerLayer
                 //@Throws(Exception.constructor)
             
     public init(geographicMapCellHistory: GeographicMapCellHistory, geographicMapCellPositionBasicArrayList: BasicArrayList){
-    //var geographicMapCellHistory = geographicMapCellHistory
-    //var geographicMapCellPositionBasicArrayList = geographicMapCellPositionBasicArrayList
 
 
 
@@ -180,7 +176,6 @@ var ownerLayer = ownerLayer
 
 
     public getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -192,7 +187,6 @@ var ownerLayer = ownerLayer
                 //@Throws(Exception.constructor)
             
     public setClosestGeographicMapCellHistory(pathsList: BasicArrayList){
-    //var pathsList = pathsList
 
 
 
@@ -202,7 +196,6 @@ var ownerLayer = ownerLayer
 
 
     public teleportTo(geographicMapCellPosition: GeographicMapCellPosition){
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -214,7 +207,6 @@ var ownerLayer = ownerLayer
                 //@Throws(Exception.constructor)
             
     public setLoad(resource: number){
-var resource = resource
 
 
 
@@ -264,7 +256,6 @@ var resource = resource
                 //@Throws(Exception.constructor)
             
     public trackTo(reason: string){
-    //var reason = reason
 
 
 
@@ -276,8 +267,6 @@ var resource = resource
                 //@Throws(Exception.constructor)
             
     public trackToDXY(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 
 
 
@@ -289,8 +278,6 @@ var resource = resource
                 //@Throws(Exception.constructor)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
-    //var allbinaryLayer = allbinaryLayer
-    //var cellPosition = cellPosition
 
 
 

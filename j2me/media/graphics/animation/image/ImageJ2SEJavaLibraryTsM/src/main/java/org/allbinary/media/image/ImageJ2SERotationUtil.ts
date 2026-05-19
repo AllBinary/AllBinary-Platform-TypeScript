@@ -77,8 +77,6 @@ private constructor (){
 
 
     public getRotatedImage(bufferedImage: Image, totalAngle: number): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var totalAngle = totalAngle
 
 
 
@@ -89,8 +87,6 @@ private constructor (){
 
 
     public getRotatedImageRadians(bufferedImage: Image, radians: number): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var radians = radians
 
     var newBufferedImage: BufferedImage = this.imageUtil!.create(bufferedImage!.getWidth(
                             null), bufferedImage!.getHeight(
@@ -107,10 +103,6 @@ private constructor (){
 
 
     drawRotatedImageRadians(bufferedImage: Image, newBufferedImage: BufferedImage, g: Graphics2D, radians: number): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var newBufferedImage = newBufferedImage
-    //var g = g
-    //var radians = radians
 g.rotate(radians, newBufferedImage!.getWidth(
                             null) /2, newBufferedImage!.getHeight(
                             null) /2);
@@ -134,9 +126,6 @@ g.dispose();
     private readonly TWO_PIE: number = 2 *Math.PI;
 
     public rotateImage(bufferedImage: Image, newBufferedImage: BufferedImage, totalAngle: number): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var newBufferedImage = newBufferedImage
-    //var totalAngle = totalAngle
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
 ;
@@ -155,9 +144,6 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
 
     public createRotatedImage(bufferedImage: Image, newBufferedImage: BufferedImage, totalAngle: number): BufferedImage{
-    //var bufferedImage = bufferedImage
-    //var newBufferedImage = newBufferedImage
-    //var totalAngle = totalAngle
 
     var g: Graphics2D = newBufferedImage!.createGraphics()!;
 ;
@@ -172,9 +158,6 @@ g.clearRect(0, 0, newBufferedImage!.getWidth(), newBufferedImage!.getHeight());
 
 
     public getRotatedImages(bufferedImage: Image, numberOfFrames: number, totalAngle: number): BufferedImage[]{
-    //var bufferedImage = bufferedImage
-    //var numberOfFrames = numberOfFrames
-    //var totalAngle = totalAngle
 
     var bufferedImageArray: BufferedImage[] = new Array(numberOfFrames);
 ;
@@ -214,7 +197,6 @@ bufferedImageArray[index]= this.getRotatedImageRadians(bufferedImage, radians);
 
 
     public createSpriteImage(bufferedImageArray: BufferedImage[]): BufferedImage{
-    //var bufferedImageArray = bufferedImageArray
 
     var columns: number = 9;
 ;

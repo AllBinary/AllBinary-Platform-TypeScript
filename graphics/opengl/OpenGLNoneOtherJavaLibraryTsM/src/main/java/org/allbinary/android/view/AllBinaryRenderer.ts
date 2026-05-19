@@ -61,7 +61,6 @@ export class AllBinaryRenderer
 
 
     public setRunnable(runnable: Runnable){
-var runnable = runnable
 }
 
 

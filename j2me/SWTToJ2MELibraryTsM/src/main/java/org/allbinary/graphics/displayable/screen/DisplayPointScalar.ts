@@ -72,7 +72,6 @@ public constructor (){
 
 
     public processX(value: number): number{
-    //var value = value
 
 
 
@@ -83,7 +82,6 @@ public constructor (){
 
 
     public processY(value: number): number{
-    //var value = value
 
 
 
@@ -94,7 +92,6 @@ public constructor (){
 
 
     public process(point: GPoint): GPoint{
-    //var point = point
 
 
 

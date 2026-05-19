@@ -67,9 +67,7 @@ export class HtmlRow extends HtmlTag {
 public constructor (before: string, after: string){
 
             super();
-        var before = before
-var after = after
-this.before= before.toCharArray()
+        this.before= before.toCharArray()
                                         .slice(0, ).join('')
                                     ;
     
@@ -83,7 +81,6 @@ this.htmlCellsVector= new Vector();
 
 
     public addCell(htmlCell: HtmlCell){
-var htmlCell = htmlCell
 this.htmlCellsVector!.add(htmlCell);
     
 this.numberOfColumns++;
@@ -148,7 +145,7 @@ i < attributeSize; i++)
 
                         if(value != 
                                     null
-                                 && value.localeCompare(stringUtil!.EMPTY_STRING) != 0)
+                                 && value.compareTo(stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     result += key;

@@ -76,10 +76,7 @@ export class TerrainPatrolAI extends PacePatrolAI {
     private readonly CLIFF: BasicTerrainInfo = new BasicTerrainInfo(this.DOWN);
 public constructor (hashtable: Hashtable<any, any>, ownerLayerInterface: AllBinaryLayer, gameInput: GameInput){
             super(hashtable, ownerLayerInterface, gameInput);
-                        //var hashtable = hashtable
-    //var ownerLayerInterface = ownerLayerInterface
-    //var gameInput = gameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

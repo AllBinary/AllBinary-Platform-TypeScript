@@ -76,8 +76,6 @@ export class BasicCryptUtil
                 //@Throws(Exception.constructor)
             
     public getDecryptedInputStream(inputStream: InputStream, cryptInterface: CryptInterface): InputStream{
-var inputStream = inputStream
-var cryptInterface = cryptInterface
 
     var buffer: ByteArrayOutputStream = new ByteArrayOutputStream();
 ;

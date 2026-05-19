@@ -82,9 +82,7 @@ export class BasicTopViewGeographicMapCellTypeFactory extends GeographicMapCellT
 public constructor (tileTypeToTileIdsMap: Hashtable<any, any>, maxTileId: number){
 
             super();
-            //var tileTypeToTileIdsMap = tileTypeToTileIdsMap
-    //var maxTileId = maxTileId
-
+        
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
@@ -345,7 +343,6 @@ type= this.maxTileId -2;
 
 
     public isPath(cellType: GeographicMapCellType): boolean{
-var cellType = cellType
 
                         if(this.FLOOR_CELL_TYPE.isType(cellType))
                         

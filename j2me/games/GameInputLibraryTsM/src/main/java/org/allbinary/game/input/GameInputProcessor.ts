@@ -74,41 +74,30 @@ protected constructor (){
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processReleasedEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var gameKeyEvent = gameKeyEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processAnalog(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent, analogValue: number){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var gameKeyEvent = gameKeyEvent
-    //var analogValue = analogValue
 }
 
 
                 //@Throws(Exception.constructor)
             
     public process(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var keyAsInteger = keyAsInteger
 }
 
 
                 //@Throws(Exception.constructor)
             
     public processReleased(allbinaryLayerManager: AllBinaryLayerManager, keyAsInteger: Integer){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var keyAsInteger = keyAsInteger
 }
 
 

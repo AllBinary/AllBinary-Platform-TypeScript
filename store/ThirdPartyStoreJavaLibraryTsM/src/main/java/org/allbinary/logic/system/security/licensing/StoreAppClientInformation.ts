@@ -50,12 +50,7 @@ export class StoreAppClientInformation extends AbeClientInformation implements L
     private readonly longArrayIdentifier: number[]
 public constructor (name: string, version: string, specialName: string, shortName: string, longArrayIdentifier: number[]){
             super(name, version, specialName, shortName);
-                        //var name = name
-    //var version = version
-    //var specialName = specialName
-    //var shortName = shortName
-var longArrayIdentifier = longArrayIdentifier
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

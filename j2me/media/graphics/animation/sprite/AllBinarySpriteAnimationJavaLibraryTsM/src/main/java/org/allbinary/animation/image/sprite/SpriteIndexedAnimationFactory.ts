@@ -73,13 +73,6 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
                 //@Throws(Exception.constructor)
             
     public static createCWHDXY(image: Image, basicColorArray: BasicColor[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
-    //var image = image
-    //var basicColorArray = basicColorArray
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -92,11 +85,6 @@ export class SpriteIndexedAnimationFactory extends BaseImageAnimationFactory imp
                 //@Throws(Exception.constructor)
             
     public static createCWH(image: Image, basicColorArray: BasicColor[], width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
-    //var image = image
-    //var basicColorArray = basicColorArray
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var spriteIndexedAnimationFactory: SpriteIndexedAnimationFactory = new SpriteIndexedAnimationFactory(image, basicColorArray, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
 ;
@@ -115,10 +103,6 @@ spriteIndexedAnimationFactory!.initHWH();
                 //@Throws(Exception.constructor)
             
     public static createWH(image: Image, width: number, height: number, animationBehaviorFactory: AnimationBehaviorFactory): SpriteIndexedAnimationFactory{
-    //var image = image
-    //var width = width
-    //var height = height
-    //var animationBehaviorFactory = animationBehaviorFactory
 
 
 
@@ -133,15 +117,7 @@ spriteIndexedAnimationFactory!.initHWH();
     private basicColorArray: BasicColor[] = BasicColorUtil.getInstance()!.ZERO_ARRAY;
 private constructor (image: Image, basicColorArray: BasicColor[], sequenceArray: number[], width: number, height: number, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, sequenceArray, width, height, dx, dy, animationBehaviorFactory);
-                        //var image = image
-    //var basicColorArray = basicColorArray
-    //var sequenceArray = sequenceArray
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -170,7 +146,6 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var sprite: Sprite = this.animationFactorySpriteScaleUtil!.createImage(this.getImage(), this.animationFactoryInitializationVisitor!.width, this.animationFactoryInitializationVisitor!.height, this.scaleProperties!.scaleWidth, this.scaleProperties!.scaleHeight)!;
 ;
@@ -204,7 +179,6 @@ this.animationFactoryInitializationVisitor!.dy=  -(this.animationFactoryInitiali
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-    //var animationInterface = animationInterface
 
 
 

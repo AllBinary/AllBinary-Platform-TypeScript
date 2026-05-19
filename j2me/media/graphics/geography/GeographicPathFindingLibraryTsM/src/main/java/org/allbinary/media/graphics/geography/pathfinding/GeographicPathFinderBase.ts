@@ -62,9 +62,6 @@ export class GeographicPathFinderBase
                 //@Throws(Exception.constructor)
             
     public searchTotalPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number): BasicArrayList{
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
-var totalPaths = totalPaths
 
 
 
@@ -76,10 +73,6 @@ var totalPaths = totalPaths
                 //@Throws(Exception.constructor)
             
     public searchTotalPathN(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, totalPaths: number, multipassState: MultipassState): BasicArrayList{
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
-var totalPaths = totalPaths
-    //var multipassState = multipassState
 
 
 

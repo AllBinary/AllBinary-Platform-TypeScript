@@ -79,12 +79,6 @@ export class RemoteHighScores extends HighScores {
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstance(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean): HighScores{
-    //var abeClientInformation = abeClientInformation
-    //var softwareInformation = softwareInformation
-    //var gameInfo = gameInfo
-    //var heading = heading
-    //var columnTwoHeading = columnTwoHeading
-    //var isAscending = isAscending
 
 
 
@@ -96,13 +90,6 @@ export class RemoteHighScores extends HighScores {
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static getInstancePreload(abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, isAscending: Boolean, preload: boolean): HighScores{
-    //var abeClientInformation = abeClientInformation
-    //var softwareInformation = softwareInformation
-    //var gameInfo = gameInfo
-    //var heading = heading
-    //var columnTwoHeading = columnTwoHeading
-    //var isAscending = isAscending
-    //var preload = preload
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;
@@ -166,14 +153,7 @@ logUtil!.put(commonStrings!.EXCEPTION, RemoteErrorHighScoresSingletonFactory.get
     public readonly ASCENDING: string = "ASCENDING";
 private constructor (abeClientInformation: AbeClientInformationInterface, softwareInformation: SoftwareInformation, gameInfo: GameInfo, heading: string, columnTwoHeading: string, ascending: Boolean, preload: boolean){
             super(gameInfo!.toString(), heading, columnTwoHeading);
-                        //var abeClientInformation = abeClientInformation
-    //var softwareInformation = softwareInformation
-    //var gameInfo = gameInfo
-    //var heading = heading
-    //var columnTwoHeading = columnTwoHeading
-    //var ascending = ascending
-    //var preload = preload
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -196,14 +176,12 @@ this.setAscending(ascending);
 
 
     public addHighScore(newHighScore: HighScore){
-    //var newHighScore = newHighScore
 RemoteHighScoresSubmissionProcessorFactory.getInstance()!.process(this, this.abeClientInformation, newHighScore);
     
 }
 
 
     public update(hashtable: Hashtable<any, any>){
-    //var hashtable = hashtable
 this.getList()!.clear();
     
 
@@ -289,7 +267,6 @@ this.logUtil!.putF(NEXT_ELEMENT +nextElement, this, commonStrings!.PROCESS);
 
 
     setAscending(ascending: Boolean){
-    //var ascending = ascending
 this.ascending= ascending;
     
 }

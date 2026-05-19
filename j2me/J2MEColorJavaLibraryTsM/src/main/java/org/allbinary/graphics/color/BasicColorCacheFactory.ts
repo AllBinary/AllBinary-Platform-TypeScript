@@ -72,7 +72,6 @@ private constructor (){
 
 
     public add(basicDefaultColor: BasicColor){
-    //var basicDefaultColor = basicDefaultColor
 this.hashtable.put(new Integer(basicDefaultColor!.intValue()), basicDefaultColor);
     
 }
@@ -80,7 +79,6 @@ this.hashtable.put(new Integer(basicDefaultColor!.intValue()), basicDefaultColor
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public getAndOrCreate(integer: Integer): BasicColor{
-    //var integer = integer
 
     var basicColor: BasicColor = this.hashtable.get(integer) as BasicColor;
 ;

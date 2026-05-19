@@ -65,7 +65,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public init(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.INIT);
     
 PCKeyFactory.getInstance();
@@ -87,7 +86,6 @@ this.save(abeClientInformation);
 
 
     public isDelete(input: Input): boolean{
-var input = input
 
                         if(input == PCKeyFactory.getInstance()!.DEL)
                         
@@ -115,7 +113,6 @@ var input = input
 
 
     public isSystemInput(input: Input): boolean{
-var input = input
 
 
 

@@ -71,8 +71,6 @@ export class ShaderUpdater
     readonly rendererStrings: RendererStrings = RendererStrings.getInstance()!;
 
     public onSurfaceCreated(gl: GL10, eglConfig: EGLConfig){
-    //var gl = gl
-    //var eglConfig = eglConfig
 }
 
 

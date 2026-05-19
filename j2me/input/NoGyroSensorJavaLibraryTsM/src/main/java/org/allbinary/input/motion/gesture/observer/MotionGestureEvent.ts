@@ -77,10 +77,7 @@ export class MotionGestureEvent extends AllBinaryEventObject {
     private currentPoint: GPoint = PointFactory.getInstance()!.ZERO_ZERO;
 public constructor (source: any = {}, id: number, motionGesture: MotionGestureInput){
             super(source);
-                    var source = source
-var id = id
-var motionGesture = motionGesture
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -102,7 +99,6 @@ this.setMotionGesture(motionGesture);
 
 
     public setMotionGesture(motionGesture: MotionGestureInput){
-var motionGesture = motionGesture
 this.motionGesture= motionGesture;
     
 }
@@ -119,7 +115,6 @@ this.motionGesture= motionGesture;
 
 
     public setPreviousPoint(previousPoint: GPoint){
-var previousPoint = previousPoint
 this.previousPoint= previousPoint;
     
 }
@@ -136,7 +131,6 @@ this.previousPoint= previousPoint;
 
 
     public setCurrentPoint(currentPoint: GPoint){
-var currentPoint = currentPoint
 this.currentPoint= currentPoint;
     
 }

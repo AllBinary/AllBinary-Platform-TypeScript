@@ -56,15 +56,12 @@ export class SingleAnalogControllerVisitor extends AnalogControllerVisitor {
 public constructor (playerInputId: number){
 
             super();
-            //var playerInputId = playerInputId
-this.playerInputId= playerInputId;
+        this.playerInputId= playerInputId;
     
 }
 
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInputProcessor: AnalogLocationInputProcessor){
-    //var allbinaryLayerManager = allbinaryLayerManager
-    //var analogLocationInputProcessor = analogLocationInputProcessor
 
     var analogLocationInput: AnalogLocationInput = AnalogLocationInputFactory.getInstance()!.getInstanceForPlayer(this.playerInputId)!;
 ;

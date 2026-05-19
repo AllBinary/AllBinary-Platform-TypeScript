@@ -72,9 +72,6 @@ public constructor (){
 
 
     public paintXY(graphics: Graphics, unusedX: number, unusedY: number){
-    //var graphics = graphics
-    //var unusedX = unusedX
-    //var unusedY = unusedY
 graphics.fillRect(this.x, this.y, this.width, this.height);
     
 }

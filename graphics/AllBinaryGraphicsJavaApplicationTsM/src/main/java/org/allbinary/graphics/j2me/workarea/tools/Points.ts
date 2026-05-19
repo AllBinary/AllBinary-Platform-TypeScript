@@ -77,7 +77,6 @@ this.pointVector!.clear();
 
 
     public addPoints(vector: BasicArrayList){
-var vector = vector
 this.pointVector!.addAll2(vector);
     
 }

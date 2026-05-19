@@ -64,8 +64,7 @@ export class GeologicalGeographicMapCellPositionFactory
 public constructor (resourcePerMapCellType: number[]){
 
             super();
-        var resourcePerMapCellType = resourcePerMapCellType
-this.resourcePerMapCellType= resourcePerMapCellType;
+        this.resourcePerMapCellType= resourcePerMapCellType;
     
 }
 
@@ -73,13 +72,6 @@ this.resourcePerMapCellType= resourcePerMapCellType;
                 //@Throws(Exception.constructor)
             
     public getInstance(geographicMapInterface: BasicGeographicMap, i_column: number, i_row: number, columns: number, rows: number, width: number, height: number): GeographicMapCellPosition{
-    //var geographicMapInterface = geographicMapInterface
-var i_column = i_column
-var i_row = i_row
-var columns = columns
-var rows = rows
-var width = width
-var height = height
 
     var tiledLayer: AllBinaryTiledLayer = geographicMapInterface!.getAllBinaryTiledLayer()!;
 ;

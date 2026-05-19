@@ -110,8 +110,7 @@ export class InventoryItemView extends HttpStoreComponentView implements Request
     private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -123,9 +122,7 @@ this.getFormData();
 
 public constructor (transformInfoInterface: TransformInfoInterface, empty: string){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-var empty = empty
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -317,7 +314,7 @@ index < size; index++)
 ;
     
 
-                        if(fieldName!.localeCompare(BasicItemData.IMAGE) == 0)
+                        if(fieldName!.compareTo(BasicItemData.IMAGE) == 0)
                         
                                     {
                                     
@@ -343,7 +340,6 @@ this.itemInterface= inventoryUploadMediaUtil!.saveFiles(fileItem!.get(), this.im
 
 
     setRequestHashMap(requestHashMap: HashMap<any, any>){
-var requestHashMap = requestHashMap
 this.requestHashMap= requestHashMap;
     
 }

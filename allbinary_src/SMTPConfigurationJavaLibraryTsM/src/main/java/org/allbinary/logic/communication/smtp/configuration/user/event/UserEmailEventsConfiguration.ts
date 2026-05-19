@@ -80,8 +80,7 @@ public constructor (){
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-this.init();
+        this.init();
     
 }
 
@@ -112,7 +111,6 @@ this.emailEventHashMap= new HashMap<any, any>();
 
 
     public addUserEmailEventConfiguration(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
-var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         
@@ -130,9 +128,6 @@ this.emailEventHashMap!.put(userEmailEventConfigurationInterface!.getName(), use
                 //@Throws(Exception.constructor)
             
     public getEventListener(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): UserEmailEventListenerInterface{
-    //var abeClientInformation = abeClientInformation
-    //var userEmailEventNameData = userEmailEventNameData
-    //var userInterface = userInterface
 
     var userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface = this.emailEventHashMap!.get(userEmailEventNameData!.toString()) as UserEmailEventConfigurationInterface;
 ;

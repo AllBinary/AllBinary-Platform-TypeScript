@@ -75,11 +75,6 @@ export class LayerCoveringCellPositionsUtil
                 //@Throws(Exception.constructor)
             
     public getAllXY(geographicMapInterface: BasicGeographicMap, layerInterface: AllBinaryLayer, x: number, y: number, reusableList: BasicArrayList): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var layerInterface = layerInterface
-    //var x = x
-    //var y = y
-    //var reusableList = reusableList
 
     var topLeftGeographicMapCellPosition: GeographicMapCellPosition = geographicMapInterface!.getCellPositionAtXY(x, y)!;
 ;
@@ -96,10 +91,6 @@ export class LayerCoveringCellPositionsUtil
                 //@Throws(Exception.constructor)
             
     public getAll(geographicMapInterface: BasicGeographicMap, topLeftGeographicMapCellPosition: GeographicMapCellPosition, layerInterface: AllBinaryLayer, reusableList: BasicArrayList): BasicArrayList{
-    //var geographicMapInterface = geographicMapInterface
-    //var topLeftGeographicMapCellPosition = topLeftGeographicMapCellPosition
-    //var layerInterface = layerInterface
-    //var reusableList = reusableList
 reusableList!.clear();
     
 

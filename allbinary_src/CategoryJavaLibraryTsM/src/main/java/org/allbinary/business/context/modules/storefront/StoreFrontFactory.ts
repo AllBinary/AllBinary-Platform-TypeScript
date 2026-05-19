@@ -58,7 +58,6 @@ export class StoreFrontFactory
         
 
     public static getInstance(storeName: string): StoreFront{
-    //var storeName = storeName
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

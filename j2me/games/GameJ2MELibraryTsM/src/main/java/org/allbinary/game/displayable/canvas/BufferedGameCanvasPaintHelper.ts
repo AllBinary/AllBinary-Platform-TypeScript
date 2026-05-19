@@ -77,8 +77,7 @@ export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-        var gameCanvas = gameCanvas
-
+        
 
 
                             throw new Exception("No Longer Used");
@@ -103,7 +102,6 @@ this.drawCircularIndexUtil!.next();
     private anchor: number = Anchor.TOP_LEFT;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.previousImage= this.offScreenImage[this.drawCircularIndexUtil!.getIndex()]!;
     
 graphics.drawImage(this.previousImage, 0, 0, this.anchor);

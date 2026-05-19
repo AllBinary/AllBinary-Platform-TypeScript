@@ -67,14 +67,7 @@ export class RaceTrackGeographicMap extends BaseRaceTrackGeographicMap {
 public constructor (raceTrackInfo: RaceTrackInfo, raceTrackData: RaceTrackData, tiledLayerFactoryInterface: AllBinaryTiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory, customMapGeneratorBaseFactory: CustomMapGeneratorBaseFactory){
             super(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface!.getInstance(raceTrackInfo, raceTrackData), new BasicGeographicMapFactory().
                             getInstance(raceTrackInfo, raceTrackData, tiledLayerFactoryInterface, geographicMapCellPositionFactoryInterface, geographicMapCellTypeFactory), geographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory, geographicMapCellTypeFactory);
-                        //var raceTrackInfo = raceTrackInfo
-    //var raceTrackData = raceTrackData
-    //var tiledLayerFactoryInterface = tiledLayerFactoryInterface
-    //var geographicMapCellPositionFactoryInterface = geographicMapCellPositionFactoryInterface
-    //var geographicMapCellPositionBaseFactory = geographicMapCellPositionBaseFactory
-    //var geographicMapCellTypeFactory = geographicMapCellTypeFactory
-    //var customMapGeneratorBaseFactory = customMapGeneratorBaseFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -96,7 +89,6 @@ this.customMapGenerator= customMapGeneratorBaseFactory!.create(this);
                 //@Throws(Exception.constructor)
             
     public isValid(geographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var customMapArray: number[][] = this.customMapGenerator!.getCustomMapArray()!;
 ;

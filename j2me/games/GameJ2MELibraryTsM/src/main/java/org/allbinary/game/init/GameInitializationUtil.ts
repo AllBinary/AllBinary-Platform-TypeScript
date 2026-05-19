@@ -83,9 +83,6 @@ export class GameInitializationUtil
                 //@Throws(Exception.constructor)
             
     public initDemo(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
-    //var abeClientInformation = abeClientInformation
-    //var canvas = canvas
-    //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
 
     var mainFeatureFactory: MainFeatureFactory = MainFeatureFactory.getInstance()!;
 ;
@@ -146,9 +143,6 @@ GameInitializedEventHandler.getInstance()!.fireEvent(this.EVENT);
                 //@Throws(Exception.constructor)
             
     public initGame(abeClientInformation: AbeClientInformationInterface, canvas: MyCanvas, gameInitializationInterfaceFactoryInterface: BasicBuildGameInitializerFactory){
-    //var abeClientInformation = abeClientInformation
-    //var canvas = canvas
-    //var gameInitializationInterfaceFactoryInterface = gameInitializationInterfaceFactoryInterface
 
                         if(ChangedGameFeatureListener.getInstance()!.isChangedFeature(MainFeatureFactory.getInstance()!.STATIC))
                         

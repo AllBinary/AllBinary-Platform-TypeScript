@@ -65,8 +65,6 @@ export class GravityUtil
     public readonly MAX_GAME_VELOCITY: number = 18000;
 
     public process(velocityProperties: BasicVelocityProperties, customGravity: number){
-var velocityProperties = velocityProperties
-var customGravity = customGravity
 velocityProperties!.getVelocityYBasicDecimalP()!.addint(customGravity);
     
 }

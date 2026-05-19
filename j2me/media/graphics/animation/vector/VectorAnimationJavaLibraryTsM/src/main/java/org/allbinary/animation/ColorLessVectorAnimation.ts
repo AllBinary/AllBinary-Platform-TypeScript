@@ -51,9 +51,7 @@ export class ColorLessVectorAnimation extends VectorAnimation {
         
 public constructor (currentPoints: number[][][], animationBehavior: AnimationBehavior){
             super(currentPoints, BasicColorFactory.getInstance()!.WHITE, animationBehavior);
-                        //var currentPoints = currentPoints
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -61,9 +59,6 @@ public constructor (currentPoints: number[][][], animationBehavior: AnimationBeh
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.paintVectors(graphics, x, y);
     
 }

@@ -58,13 +58,10 @@ public constructor (){
 
 
     public setFullScreenMode(mode: boolean){
-var mode = mode
 }
 
 
     sizeChanged(w: number, h: number){
-var w = w
-var h = h
 }
 
 
@@ -78,7 +75,6 @@ var h = h
 
 
     public isCommand(command: Command): boolean{
-var command = command
 
 
 
@@ -88,12 +84,10 @@ var command = command
 
 
     public addCommand(command: Command){
-var command = command
 }
 
 
     public removeCommand(command: Command){
-var command = command
 }
 
 
@@ -102,7 +96,6 @@ var command = command
 
 
     public setCommandListener(l: CommandListener){
-var l = l
 }
 
 
@@ -143,7 +136,6 @@ var l = l
 
 
     paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
@@ -152,7 +144,6 @@ var graphics = graphics
 
 
     setPaused(isPaused: boolean){
-var isPaused = isPaused
 
 
 
@@ -162,20 +153,14 @@ var isPaused = isPaused
 
 
     pointerDragged(x: number, y: number){
-var x = x
-var y = y
 }
 
 
     pointerPressed(x: number, y: number){
-var x = x
-var y = y
 }
 
 
     pointerReleased(x: number, y: number){
-var x = x
-var y = y
 }
 
 

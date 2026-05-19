@@ -97,7 +97,6 @@ private constructor (){
                 //@Throws(LicensingException.constructor)
             
     public getLicenseInstance(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
-    //var abeClientInformation = abeClientInformation
 
                         if(isTimeToGetKey())
                         
@@ -127,7 +126,6 @@ private constructor (){
                 //@Throws(LicensingException.constructor)
             
     get(abeClientInformation: AbeClientInformationInterface): AbeLicenseInterface{
-    //var abeClientInformation = abeClientInformation
 
         try {
             this.logUtil!.putF("Getting Keys", this, this.commonStrings!.GET);
@@ -222,7 +220,6 @@ this.time= currentTime;
 
 
     public setCheck(check: boolean){
-var check = check
 this.check= check;
     
 }

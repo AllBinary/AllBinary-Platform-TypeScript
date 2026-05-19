@@ -53,8 +53,7 @@ export class RTSPlayerFireGameInputProcessor extends RTSPlayerGameInputProcessor
         
 public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
             super(rtsPlayerGameInput);
-                    var rtsPlayerGameInput = rtsPlayerGameInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -64,8 +63,6 @@ public constructor (rtsPlayerGameInput: RTSPlayerGameInput){
                 //@Throws(Exception.constructor)
             
     public processEvent(allbinaryLayerManager: AllBinaryLayerManager, gameKeyEvent: GameKeyEvent){
-var allbinaryLayerManager = allbinaryLayerManager
-var gameKeyEvent = gameKeyEvent
 this.rtsPlayerGameInput!.addForRemoval(gameKeyEvent);
     
 }

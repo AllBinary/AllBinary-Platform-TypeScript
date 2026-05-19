@@ -126,7 +126,6 @@ groupList!.clear();
 
 
     public getGroupSizeFromInterface(groupInterfaceCompositeInterface: GroupInterfaceCompositeInterface): number{
-    //var groupInterfaceCompositeInterface = groupInterfaceCompositeInterface
 
     var groupInterfaceArray: Group[] = groupInterfaceCompositeInterface!.getGroupInterface()!;
 ;
@@ -141,7 +140,6 @@ groupList!.clear();
 
 
     public getGroupSize(groupInterface: Group): number{
-    //var groupInterface = groupInterface
 
     var id: number = Math.round(groupInterface!.getGroupId());
 ;
@@ -156,7 +154,6 @@ groupList!.clear();
 
 
     public getList(groupInterface: Group): BasicArrayList{
-    //var groupInterface = groupInterface
 
     var id: number = Math.round(groupInterface!.getGroupId());
 ;
@@ -171,7 +168,6 @@ groupList!.clear();
 
 
     getListById(groupId: number): BasicArrayList{
-    //var groupId = groupId
 
     var groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;
 ;
@@ -186,7 +182,6 @@ groupList!.clear();
 
 
     getGroupSizeById(groupId: number): number{
-    //var groupId = groupId
 
     var groupList: BasicArrayList = this.list.objectArray[groupId]! as BasicArrayList;
 ;
@@ -205,7 +200,6 @@ groupList!.clear();
 
 
     public areAllOtherGroupsEmpty(groupInterface: Group): boolean{
-    //var groupInterface = groupInterface
 
     var id: number = Math.round(groupInterface!.getGroupId());
 ;
@@ -261,8 +255,6 @@ index >= 0; index--)
 
 
     isIdInList(id: number, excludeGroupList: BasicArrayList): boolean{
-    //var id = id
-    //var excludeGroupList = excludeGroupList
 
     var size: number = excludeGroupList!.size()!;
 ;
@@ -333,8 +325,6 @@ groupId= Math.round(groupInterface!.getGroupId());
 
 
     public areAllOtherGroupsLessThan(excludeGroupList: BasicArrayList, maxSize: number): boolean{
-    //var excludeGroupList = excludeGroupList
-    //var maxSize = maxSize
 
     var size: number = this.list.size()!;
 ;
@@ -383,7 +373,6 @@ index >= 0; index--)
 
 
     public init(total: number){
-var total = total
 
         while(this.list.size() <= total +1)
         {
@@ -395,7 +384,6 @@ this.list.add(new BasicArrayListD());
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -404,7 +392,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public onCreateLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
-    //var layerManagerEvent = layerManagerEvent
 
     var layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;
 ;
@@ -471,7 +458,6 @@ groupList= this.list.objectArray[id]! as BasicArrayList;
                 //@Throws(Exception.constructor)
             
     public onDeleteLayerManagerEvent(layerManagerEvent: LayerManagerEvent){
-    //var layerManagerEvent = layerManagerEvent
 
     var layerInterface: AllBinaryLayer = layerManagerEvent!.getLayerInterface()!;
 ;

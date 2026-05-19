@@ -69,40 +69,32 @@ export class MidletActivityBase extends Activity implements GameFeatureListenerI
         
 
     public onGameFeatureChange(gameFeatureEvent: GameFeatureEvent){
-var gameFeatureEvent = gameFeatureEvent
 }
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 }
 
 
     public onGameInitialized(gameInitializedEvent: GameInitializedEvent){
-var gameInitializedEvent = gameInitializedEvent
 }
 
 
                 //@Throws(Exception.constructor)
             
     public onSetProgress(value: number, text: string){
-var value = value
-var text = text
 }
 
 
                 //@Throws(Exception.constructor)
             
     public onDismissProgress(animationSequence: number[]){
-var animationSequence = animationSequence
 }
 
 
                 //@Throws(Exception.constructor)
             
     public onShowProgress(indeterminate: boolean, animationSequence: number[]){
-var indeterminate = indeterminate
-var animationSequence = animationSequence
 }
 
 
@@ -125,12 +117,10 @@ var animationSequence = animationSequence
 
 
     public setKeyInputView(keyInputView: View){
-var keyInputView = keyInputView
 }
 
 
     public onGenericMotionEvent(event: MotionEvent): boolean{
-var event = event
 
 
 

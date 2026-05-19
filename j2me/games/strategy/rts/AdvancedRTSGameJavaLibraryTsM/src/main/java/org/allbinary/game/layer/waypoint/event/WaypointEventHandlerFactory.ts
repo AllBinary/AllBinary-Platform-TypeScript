@@ -55,7 +55,6 @@ export class WaypointEventHandlerFactory
                                                         ];
 
     public static getInstance(groupInterface: Group): WaypointEventHandler{
-    //var groupInterface = groupInterface
 
 
 

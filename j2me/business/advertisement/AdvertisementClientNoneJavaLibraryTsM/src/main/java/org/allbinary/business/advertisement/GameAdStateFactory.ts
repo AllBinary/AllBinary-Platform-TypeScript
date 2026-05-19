@@ -72,7 +72,6 @@ export class GameAdStateFactory
                 //@Throws(Exception.constructor)
             
     public getInstanceForApp(softwareInformation: SoftwareInformation): GameAdState{
-    //var softwareInformation = softwareInformation
 this.gameAdState= this.gameAdStateArray[0]!;
     
 

@@ -76,8 +76,7 @@ export class InsertThemeValidationView extends ThemeCustomizerView implements Va
     private requestHashMap: HashMap<any, any>
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -237,7 +236,6 @@ isValid= this.validationInterface!.isValid();
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

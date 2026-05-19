@@ -91,11 +91,6 @@ export class AnimationFactorySpriteScaleUtil
                 //@Throws(Exception.constructor)
             
     public createImage(image: Image, width: number, height: number, scaleWidth: number, scaleHeight: number): Sprite{
-    //var image = image
-    //var width = width
-    //var height = height
-    //var scaleWidth = scaleWidth
-    //var scaleHeight = scaleHeight
 
     var spriteFactory: SpriteFactory = SpriteFactory.getInstance()!;
 ;

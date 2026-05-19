@@ -66,7 +66,6 @@ export class ImageTypes
         
 
     public static valueOf(anyType: any[]): ImageTypes{
-var anyType = anyType
 
     var imageTypes: ImageTypes = new ImageTypes();
 ;
@@ -105,8 +104,7 @@ public constructor (){
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var nodeList: NodeList = node.getChildNodes()!;
 ;
     
@@ -123,7 +121,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.localeCompare(ImageActionScriptOutputData.TYPE) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ImageActionScriptOutputData.TYPE) == 0)
                         
                                     {
                                     
@@ -162,7 +160,6 @@ this.getVector()!.add(InputImageType.getInstance(nextImageTypeString));
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var newNode: Node = document.createElement(ImageActionScriptOutputData.TYPES)!;
 ;

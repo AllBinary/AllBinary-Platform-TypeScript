@@ -62,12 +62,7 @@ export class RectangleFilledAdjustedAnimation extends Animation implements Color
 public constructor (width: number, height: number, offsetX: number, offsetY: number, basicColor: BasicColor){
 
             super();
-        var width = width
-var height = height
-var offsetX = offsetX
-var offsetY = offsetY
-var basicColor = basicColor
-this.width= width;
+        this.width= width;
     
 this.height= height;
     
@@ -85,9 +80,6 @@ this.setBasicColorP(basicColor);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 graphics.fillRect(x +this.offsetX, y +this.offsetY, this.width, this.height);
@@ -96,28 +88,24 @@ graphics.fillRect(x +this.offsetX, y +this.offsetY, this.width, this.height);
 
 
     public setWidth(width: number){
-var width = width
 this.width= width;
     
 }
 
 
     public setHeight(height: number){
-var height = height
 this.height= height;
     
 }
 
 
     public setOffsetX(offsetX: number){
-var offsetX = offsetX
 this.offsetX= offsetX;
     
 }
 
 
     public setOffsetY(offsetY: number){
-var offsetY = offsetY
 this.offsetY= offsetY;
     
 }

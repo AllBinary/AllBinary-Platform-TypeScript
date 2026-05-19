@@ -48,13 +48,10 @@ export class AbCrypt
 public constructor (algorithm: string, key: string){
 
             super();
-        var algorithm = algorithm
-var key = key
-}
+        }
 
 
     public encrypt(array: number[]): number[]{
-var array = array
 
 
 
@@ -65,7 +62,6 @@ var array = array
 
 
     public decrypt(array: number[]): number[]{
-var array = array
 
 
 
@@ -76,7 +72,6 @@ var array = array
 
 
     public mutilate(array: number[]): number[]{
-var array = array
 
 
 

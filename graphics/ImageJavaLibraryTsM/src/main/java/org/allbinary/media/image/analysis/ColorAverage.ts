@@ -110,7 +110,6 @@ stringBuffer!.append(CommonSeps.getInstance()!.NEW_LINE);
 
 
     public setAvgRed(avgRed: number){
-var avgRed = avgRed
 this.avgRed= avgRed;
     
 }
@@ -127,7 +126,6 @@ this.avgRed= avgRed;
 
 
     public setAvgGreen(avgGreen: number){
-var avgGreen = avgGreen
 this.avgGreen= avgGreen;
     
 }
@@ -144,7 +142,6 @@ this.avgGreen= avgGreen;
 
 
     public setAvgBlue(avgBlue: number){
-var avgBlue = avgBlue
 this.avgBlue= avgBlue;
     
 }

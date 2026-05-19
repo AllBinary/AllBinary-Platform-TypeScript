@@ -65,7 +65,6 @@ export class PrintLicenseInitInfo
                 //@Throws(Exception.constructor)
             
     public static main(args: string[]){
-var args = args
 
     var initInfo: PrintLicenseInitInfo = new PrintLicenseInitInfo(args);
 ;
@@ -77,8 +76,7 @@ initInfo!.printInitInfo();
 public constructor (options: string[]){
 
             super();
-        var options = options
-LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
+        LicenseInitInfoUtil.getInstance()!.setFilePath(PrintLicenseInitInfo.PATH +PATH_GLOBALS.getInstance()!.INIT_PATH);
     
 }
 

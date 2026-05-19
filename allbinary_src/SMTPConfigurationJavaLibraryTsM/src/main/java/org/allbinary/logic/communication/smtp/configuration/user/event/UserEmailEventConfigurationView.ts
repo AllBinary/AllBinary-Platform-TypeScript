@@ -70,8 +70,7 @@ export class UserEmailEventConfigurationView
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
     var childNodeList: NodeList = node.getChildNodes()!;
 ;
     
@@ -98,8 +97,7 @@ this.setUserEmailEventConfigurationInterface(new UserEmailEventConfiguration(has
 public constructor (userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
 
             super();
-        var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
-this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface);
+        this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface);
     
 }
 
@@ -107,7 +105,6 @@ this.setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterfac
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var userEmailEventConfigurationMapping: UserEmailEventConfigurationMapping = new UserEmailEventConfigurationMapping(this.getUserEmailEventConfigurationInterface());
 ;
@@ -140,7 +137,6 @@ var document = document
 
 
     public setUserEmailEventConfigurationInterface(userEmailEventConfigurationInterface: UserEmailEventConfigurationInterface){
-var userEmailEventConfigurationInterface = userEmailEventConfigurationInterface
 this.userEmailEventConfigurationInterface= userEmailEventConfigurationInterface;
     
 }

@@ -119,8 +119,6 @@ this.mappedList!.clear();
 
 
     public remove(input: Input, mappedToInput: Input){
-    //var input = input
-    //var mappedToInput = mappedToInput
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -188,7 +186,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
                 //@Throws(Exception.constructor)
             
     public addMapping(inputToGameKeyMapping: InputToGameKeyMapping){
-    //var inputToGameKeyMapping = inputToGameKeyMapping
 
 
 
@@ -198,8 +195,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "InputMapping::remove");
 
 
     public add(input: Input, mappedToInput: Input){
-    //var input = input
-    //var mappedToInput = mappedToInput
 
     var list: BasicArrayList = this.getMappedInput(input)!;
 ;
@@ -219,7 +214,6 @@ this.mappedList!.add(mappedToInput);
 
 
     public isMapped(input: Input): boolean{
-    //var input = input
 
 
 
@@ -230,7 +224,6 @@ this.mappedList!.add(mappedToInput);
 
 
     public getMappedInput(id: Input): BasicArrayList{
-    //var id = id
 
     var mappingInputCanBeNullList: any = this.hashtable.get(id);
 ;

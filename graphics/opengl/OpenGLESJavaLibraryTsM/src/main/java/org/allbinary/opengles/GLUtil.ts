@@ -72,9 +72,6 @@ export class GLUtil
     private readonly BYTES_PER_FLOAT: number = 4;
 
     public makeFloatBuffer3(p_a: number, p_b: number, p_c: number): FloatBuffer{
-var p_a = p_a
-var p_b = p_b
-var p_c = p_c
 
     var b: ByteBuffer = ByteBuffer.allocateDirect(3 *this.BYTES_PER_FLOAT)!;
 ;
@@ -103,10 +100,6 @@ this.position(buffer, 0);
 
 
     public makeFloatBuffer4(p_a: number, p_b: number, p_c: number, p_d: number): FloatBuffer{
-var p_a = p_a
-var p_b = p_b
-var p_c = p_c
-var p_d = p_d
 
     var b: ByteBuffer = ByteBuffer.allocateDirect(4 *this.BYTES_PER_FLOAT)!;
 ;
@@ -137,7 +130,6 @@ this.position(buffer, 0);
 
 
     public makeFloatBuffer(byteBuffer: ByteBuffer): FloatBuffer{
-    //var byteBuffer = byteBuffer
 
     var b: ByteBuffer = ByteBuffer.allocateDirect(byteBuffer!.limit() *this.BYTES_PER_FLOAT)!;
 ;
@@ -179,8 +171,6 @@ this.position(buffer, 0);
 
 
     public position(buffer: Buffer, newPosition: number): Buffer{
-    //var buffer = buffer
-    //var newPosition = newPosition
 
 
 
@@ -191,10 +181,6 @@ this.position(buffer, 0);
 
 
     public rotateUVs(uvs: number[], angleDegrees: number, pivotU: number, pivotV: number){
-    //var uvs = uvs
-    //var angleDegrees = angleDegrees
-    //var pivotU = pivotU
-    //var pivotV = pivotV
 
     var angleRad: number = Math.toRadians(angleDegrees)!;
 ;

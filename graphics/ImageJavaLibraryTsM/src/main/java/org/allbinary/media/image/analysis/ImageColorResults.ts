@@ -84,7 +84,6 @@ this.setColorAverage(new ColorAverage());
 
 
     public setColorRange(colorRange: ColorRange){
-var colorRange = colorRange
 this.colorRange= colorRange;
     
 }
@@ -101,7 +100,6 @@ this.colorRange= colorRange;
 
 
     public setColorAverage(colorAverage: ColorAverage){
-var colorAverage = colorAverage
 this.colorAverage= colorAverage;
     
 }

@@ -92,7 +92,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getRectangle(resource: string): Rectangle{
-var resource = resource
 
 
 
@@ -105,9 +104,6 @@ var resource = resource
                 //@Throws(Exception.constructor)
             
     public getRectangleXY(resource: string, x: number, y: number): Rectangle{
-    //var resource = resource
-    //var x = x
-    //var y = y
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
 ;
@@ -121,7 +117,7 @@ var resource = resource
 ;
     
 
-    var size: number = getList()!.size()!;
+    var size: number = this.getList()!.size()!;
 ;
     
 
@@ -174,7 +170,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public getProcedural(resource: string): ProceduralAnimationInterfaceFactoryInterface{
-var resource = resource
 
 
 
@@ -187,7 +182,6 @@ var resource = resource
                 //@Throws(Exception.constructor)
             
     public get(resource: string): AnimationInterfaceFactoryInterface{
-var resource = resource
 
 
 
@@ -200,7 +194,6 @@ var resource = resource
                 //@Throws(Exception.constructor)
             
     getBasicAnimationInterfaceFactoryInstance(resource: string): BasicAnimationInterfaceFactoryInterface{
-    //var resource = resource
 
     var list: BasicArrayList = this.getList()!;
 ;
@@ -210,7 +203,7 @@ var resource = resource
 ;
     
 
-    var size: number = getList()!.size()!;
+    var size: number = this.getList()!.size()!;
 ;
     
 

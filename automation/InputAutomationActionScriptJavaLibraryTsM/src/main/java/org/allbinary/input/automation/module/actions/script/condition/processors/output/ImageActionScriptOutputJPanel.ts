@@ -81,8 +81,7 @@ export class ImageActionScriptOutputJPanel extends javax.swing.JPanel {
 public constructor (capturedImageActionScriptOutputInterface: ImageActionScriptOutputInterface){
 
             super();
-        var capturedImageActionScriptOutputInterface = capturedImageActionScriptOutputInterface
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.initComponents();
     
@@ -246,7 +245,6 @@ this.itemTypesJList!.setModel(defaultListModel);
 
 
     public setCapturedImageActionJDialog(capturedImageActionJDialog: javax.swing.JDialog){
-var capturedImageActionJDialog = capturedImageActionJDialog
 this.capturedImageActionJDialog= capturedImageActionJDialog;
     
 }
@@ -281,7 +279,6 @@ this.okJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okJButtonActionPerformed(evt);
     
 }
@@ -305,7 +302,6 @@ this.displayJCheckBox!.addActionListener(new class extends java.awt.event.Action
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 displayJCheckBoxActionPerformed(evt);
     
 }
@@ -331,7 +327,6 @@ this.itemTypesJList!.setModel(new class extends javax.swing.AbstractListModel
 }
 
     public getElementAt(i: number): any{
-var i = i
 
 
 
@@ -363,7 +358,6 @@ this.capturedImageActionJButton!.addActionListener(new class extends java.awt.ev
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 capturedImageActionJButtonActionPerformed(evt);
     
 }
@@ -387,12 +381,10 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     displayJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.update();
     
 this.getCapturedImageActionJDialog()!.setVisible(false);
@@ -401,7 +393,6 @@ this.getCapturedImageActionJDialog()!.setVisible(false);
 
 
     capturedImageActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.getCapturedImageActionJDialog()!.setVisible(true);
     
 }

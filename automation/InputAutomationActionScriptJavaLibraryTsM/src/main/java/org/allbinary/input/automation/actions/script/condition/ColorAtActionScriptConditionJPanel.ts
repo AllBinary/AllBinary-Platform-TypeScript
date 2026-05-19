@@ -73,8 +73,7 @@ export class ColorAtActionScriptConditionJPanel extends javax.swing.JPanel {
 public constructor (colorAtActionScriptConditionInterface: ColorAtActionScriptConditionInterface){
 
             super();
-        var colorAtActionScriptConditionInterface = colorAtActionScriptConditionInterface
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.initComponents();
     
@@ -170,7 +169,6 @@ this.colorAtActionScriptConditionInterface!.log();
 
 
     public setColorAtXJTextField(colorAtXJTextField: javax.swing.JTextField){
-var colorAtXJTextField = colorAtXJTextField
 this.colorAtXJTextField= colorAtXJTextField;
     
 }
@@ -187,7 +185,6 @@ this.colorAtXJTextField= colorAtXJTextField;
 
 
     public setColorAtYJTextField(colorAtYJTextField: javax.swing.JTextField){
-var colorAtYJTextField = colorAtYJTextField
 this.colorAtYJTextField= colorAtYJTextField;
     
 }
@@ -204,7 +201,6 @@ this.colorAtYJTextField= colorAtYJTextField;
 
 
     public setMaxBlueJTextField(maxBlueJTextField: javax.swing.JTextField){
-var maxBlueJTextField = maxBlueJTextField
 this.maxBlueJTextField= maxBlueJTextField;
     
 }
@@ -221,7 +217,6 @@ this.maxBlueJTextField= maxBlueJTextField;
 
 
     public setMaxGreenJTextField(maxGreenJTextField: javax.swing.JTextField){
-var maxGreenJTextField = maxGreenJTextField
 this.maxGreenJTextField= maxGreenJTextField;
     
 }
@@ -238,7 +233,6 @@ this.maxGreenJTextField= maxGreenJTextField;
 
 
     public setMaxRedJTextField(maxRedJTextField: javax.swing.JTextField){
-var maxRedJTextField = maxRedJTextField
 this.maxRedJTextField= maxRedJTextField;
     
 }
@@ -255,7 +249,6 @@ this.maxRedJTextField= maxRedJTextField;
 
 
     public setMinBlueJTextField(minBlueJTextField: javax.swing.JTextField){
-var minBlueJTextField = minBlueJTextField
 this.minBlueJTextField= minBlueJTextField;
     
 }
@@ -272,7 +265,6 @@ this.minBlueJTextField= minBlueJTextField;
 
 
     public setMinGreenJTextField(minGreenJTextField: javax.swing.JTextField){
-var minGreenJTextField = minGreenJTextField
 this.minGreenJTextField= minGreenJTextField;
     
 }
@@ -289,7 +281,6 @@ this.minGreenJTextField= minGreenJTextField;
 
 
     public setMinRedJTextField(minRedJTextField: javax.swing.JTextField){
-var minRedJTextField = minRedJTextField
 this.minRedJTextField= minRedJTextField;
     
 }
@@ -306,7 +297,6 @@ this.minRedJTextField= minRedJTextField;
 
 
     public setYJLabel(yJLabel: javax.swing.JLabel){
-var yJLabel = yJLabel
 this.yJLabel= yJLabel;
     
 }
@@ -323,7 +313,6 @@ this.yJLabel= yJLabel;
 
 
     public setColorAtActionJDialog(colorAtActionJDialog: javax.swing.JDialog){
-var colorAtActionJDialog = colorAtActionJDialog
 this.colorAtActionJDialog= colorAtActionJDialog;
     
 }
@@ -402,7 +391,6 @@ this.okJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 okJButtonActionPerformed(evt);
     
 }
@@ -428,7 +416,6 @@ this.colorAtActionJButton!.addActionListener(new class extends java.awt.event.Ac
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 colorAtActionJButtonActionPerformed(evt);
     
 }
@@ -452,7 +439,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     okJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.update();
     
 this.getColorAtActionJDialog()!.setVisible(false);
@@ -461,7 +447,6 @@ this.getColorAtActionJDialog()!.setVisible(false);
 
 
     colorAtActionJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.getColorAtActionJDialog()!.setVisible(true);
     
 }

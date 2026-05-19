@@ -58,7 +58,6 @@ private constructor (){
     private readonly baseGameStatistics: BaseGameStatistics = GameStatisticsFactory.getInstance()!;
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.baseGameStatistics!.nextRefresh();
     
 }

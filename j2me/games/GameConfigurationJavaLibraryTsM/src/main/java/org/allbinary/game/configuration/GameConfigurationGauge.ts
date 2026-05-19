@@ -48,8 +48,7 @@ export class GameConfigurationGauge extends Gauge {
         
 public constructor (gameConfiguration: GameConfiguration){
             super(gameConfiguration!.getName(), gameConfiguration!.isModifiable().valueOf(), gameConfiguration!.getMaxValue()!.intValue() -gameConfiguration!.getMinValue()!.intValue(), gameConfiguration!.getValue()!.intValue() -gameConfiguration!.getMinValue()!.intValue());
-                    var gameConfiguration = gameConfiguration
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

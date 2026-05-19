@@ -57,7 +57,6 @@ private constructor (){
 
 
     public addPlayer(playerInputId: number){
-var playerInputId = playerInputId
 
     var analogLocationInput: AnalogLocationInput = AnalogLocationInput.NULL_ANALOG_LOCATION_INPUT;
 ;
@@ -86,7 +85,6 @@ this.list.add(analogLocationInput);
 
 
     public getInstanceForPlayer(playerInputId: number): AnalogLocationInput{
-var playerInputId = playerInputId
 
 
 

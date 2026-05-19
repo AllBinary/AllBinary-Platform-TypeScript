@@ -63,7 +63,6 @@ export class CssPropertiesValidationFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(nodeList: NodeList): Vector{
-var nodeList = nodeList
 
     var propertiesVector: Vector = new Vector();
 ;
@@ -81,7 +80,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(node.getNodeName()!.localeCompare(CssPropertyData.getInstance()!.NAME) == 0)
+                        if(node.getNodeName()!.compareTo(CssPropertyData.getInstance()!.NAME) == 0)
                         
                                     {
                                     
@@ -105,7 +104,6 @@ propertiesVector!.add(cssPropertyValidationInterface);
 
 
     public static getInstance(hashMap: HashMap<any, any>): Vector{
-var hashMap = hashMap
 
     var styles: Vector = new Vector();
 ;

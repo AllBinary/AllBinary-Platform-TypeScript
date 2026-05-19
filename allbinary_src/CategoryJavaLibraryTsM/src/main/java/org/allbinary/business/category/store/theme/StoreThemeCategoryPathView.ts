@@ -62,8 +62,7 @@ export class StoreThemeCategoryPathView extends CategoryView implements DomNodeI
         
 public constructor (categoryInterface: StoreThemeCategoryInterface){
             super(categoryInterface as StoreThemeCategoryInterface);
-                    var categoryInterface = categoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -73,7 +72,6 @@ public constructor (categoryInterface: StoreThemeCategoryInterface){
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = super.toXmlNode(document)!;
 ;

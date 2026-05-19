@@ -47,8 +47,7 @@ export class AllBinaryEventObject extends EventObject {
         
 public constructor (anyType: any = {}){
             super(anyType);
-                    var anyType = anyType
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

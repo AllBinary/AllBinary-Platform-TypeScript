@@ -64,13 +64,7 @@ export class AdjustedSpriteIndexedAnimation extends SpriteIndexedAnimation {
     private dy: number
 public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], dx: number, dy: number, animationBehavior: AnimationBehavior){
             super(sprite, image, basicColorArray, animationBehavior);
-                        //var sprite = sprite
-    //var image = image
-    //var basicColorArray = basicColorArray
-    //var dx = dx
-    //var dy = dy
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -82,10 +76,6 @@ this.dy= dy;
 
 
     public paintFrame(graphics: Graphics, frame: number, x: number, y: number){
-    //var graphics = graphics
-    //var frame = frame
-    //var x = x
-    //var y = y
 this.setFrame(frame);
     
 this.sprite.setPosition(x +this.dx, y +this.dy);
@@ -96,9 +86,6 @@ super.paint(graphics);
 
 
     public paintXY(g: Graphics, x: number, y: number){
-    //var g = g
-    //var x = x
-    //var y = y
 this.sprite.setPosition(x +this.dx, y +this.dy);
     
 super.paint(g);
@@ -107,7 +94,6 @@ super.paint(g);
 
 
     public paint(g: Graphics){
-    //var g = g
 this.sprite.setPosition(this.dx, this.dy);
     
 super.paint(g);

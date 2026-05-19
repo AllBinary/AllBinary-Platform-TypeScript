@@ -65,9 +65,6 @@ export class RaceTrackStartPointUtil
                 //@Throws(Exception.constructor)
             
     public static get(geographicMapInterface: BasicGeographicMap, pathFindingInfo: PathFindingInfo, index: number): GPoint{
-    //var geographicMapInterface = geographicMapInterface
-    //var pathFindingInfo = pathFindingInfo
-    //var index = index
 
     var list: BasicArrayList = pathFindingInfo!.getStartPathFindingNodeList()!;
 ;

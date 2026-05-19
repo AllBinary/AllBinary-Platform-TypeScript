@@ -51,7 +51,6 @@ export class Direction
     private static directionArray: Direction[] = new Array(13);
 
     public static getInstance(direction: number): Direction{
-var direction = direction
 
 
 
@@ -71,11 +70,7 @@ var direction = direction
  constructor (name: string, otherName: string, value: number, frameFactor: number){
 
             super();
-        var name = name
-var otherName = otherName
-var value = value
-var frameFactor = frameFactor
-this.name= name;
+        this.name= name;
     
 this.otherName= otherName;
     

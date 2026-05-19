@@ -49,7 +49,6 @@ export class IntArrayUtil
         
 
     public static toString(array: number[]): string{
-var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -85,7 +84,6 @@ stringBuffer!.appendint(array[index]!);
 
 
     public static toString(array: number[][]): string{
-var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -144,7 +142,6 @@ stringBuffer!.append("}");
 
 
     public static toString(array: number[][][]): string{
-var array = array
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

@@ -56,7 +56,6 @@ private constructor (){
 
 
     public init(total: number){
-var total = total
 this.currentReleaseIndex= 0;
     
 this.currentDestroyIndex= 0;

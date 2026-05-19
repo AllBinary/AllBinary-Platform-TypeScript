@@ -80,14 +80,6 @@ export class ScrollSelectionForm extends PaintableForm {
         
 
     static createForm(title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor): ScrollSelectionForm{
-    //var title = title
-    //var items = items
-    //var formPaintableFactory = formPaintableFactory
-    //var rectangle = rectangle
-    //var formType = formType
-    //var border = border
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
 
         try {
             
@@ -147,15 +139,7 @@ export class ScrollSelectionForm extends PaintableForm {
     paintable: ItemPaintable = ItemPaintableFactory.getInstance()!;
 public constructor (title: string, items: ABCustomItem[], formPaintableFactory: ItemPaintableFactory, rectangle: Rectangle, formType: FormType, border: number, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, items, rectangle, formType, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var items = items
-    //var formPaintableFactory = formPaintableFactory
-    //var rectangle = rectangle
-    //var formType = formType
-    //var border = border
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -171,7 +155,6 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
 
 
     public append(item: ABCustomItem): number{
-    //var item = item
 
 
 
@@ -184,7 +167,6 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
                 //@Throws(Exception.constructor)
             
     public getSelectedItem(point: GPoint): ABCustomItem{
-    //var point = point
 
     var index: number = this.getSelectedIndexForPoint(point)!;
 ;
@@ -218,7 +200,6 @@ this.paintable= formPaintableFactory!.getInstanceItemPaintable(this);
                 //@Throws(Exception.constructor)
             
     public getItemIndex(item: ABCustomItem): number{
-    //var item = item
 
     var size: number = this.size()!;
 ;
@@ -272,7 +253,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     public getSelectedIndexForPoint(point: GPoint): number{
-    //var point = point
 
     var start: number = this.getStartIndex()!;
 ;
@@ -458,7 +438,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                 //@Throws(Exception.constructor)
             
     public processInputKey(gameKeyCode: number): number{
-    //var gameKeyCode = gameKeyCode
 
     var formTypeFactory: FormTypeFactory = FormTypeFactory.getInstance()!;
 ;
@@ -577,7 +556,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
 
 
     public isInForm(point: GPoint): boolean{
-    //var point = point
 
                         if(this.rectangleCollisionUtil!.isInside(this.x, this.y -this.halfBorder, this.rectangle.getMaxX() +this.border, this.rectangle.getMaxY() +this.border, point.getX(), point.getY()))
                         
@@ -606,11 +584,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, ScrollSelectionForm.GET_SELEC
                 //@Throws(Exception.constructor)
             
     public paintItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
-    //var graphics = graphics
-    //var index = index
-    //var item = item
-    //var x = x
-    //var y = y
 
     var width: number = item.getMinimumWidth()!;
 ;
@@ -687,11 +660,6 @@ graphics.drawRect(x -this.halfBorder -adjustedBorder, y -this.halfBorder -adjust
                 //@Throws(Exception.constructor)
             
     public paintUnselectedItem(graphics: Graphics, index: number, item: ABCustomItem, x: number, y: number): number{
-    //var graphics = graphics
-    //var index = index
-    //var item = item
-    //var x = x
-    //var y = y
 
     var width: number = item.getMinimumWidth()!;
 ;
@@ -760,7 +728,6 @@ item.paintUnselected(graphics, x, y);
 
 
     getDiffX(item: ABCustomItem): number{
-    //var item = item
 
 
 
@@ -791,7 +758,6 @@ item.paintUnselected(graphics, x, y);
 
 
     public setButtonBasicColor(buttonBasicColor: BasicColor){
-    //var buttonBasicColor = buttonBasicColor
 this.buttonBasicColor= buttonBasicColor;
     
 }

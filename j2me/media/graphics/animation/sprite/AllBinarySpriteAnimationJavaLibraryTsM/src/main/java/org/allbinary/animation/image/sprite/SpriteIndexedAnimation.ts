@@ -77,11 +77,7 @@ export class SpriteIndexedAnimation extends IndexedAnimation implements ColorCom
     private readonly basicColorArray: BasicColor[]
 public constructor (sprite: Sprite, image: Image, basicColorArray: BasicColor[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var sprite = sprite
-    //var image = image
-    //var basicColorArray = basicColorArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -120,7 +116,6 @@ this.basicColorArray= basicColorArray;
 
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 
 
 
@@ -174,10 +169,6 @@ break;
 
 
     public paintFrame(graphics: Graphics, frame: number, x: number, y: number){
-    //var graphics = graphics
-    //var frame = frame
-    //var x = x
-    //var y = y
 this.setFrame(frame);
     
 this.sprite.setPosition(x, y);
@@ -188,9 +179,6 @@ this.sprite.paint(graphics);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.sprite.setPosition(x, y);
     
 this.sprite.paint(graphics);
@@ -199,7 +187,6 @@ this.sprite.paint(graphics);
 
 
     paint(graphics: Graphics){
-    //var graphics = graphics
 this.sprite.paint(graphics);
     
 }
@@ -228,7 +215,6 @@ this.sprite.prevFrame();
 
 
     public setFrame(frame: number){
-    //var frame = frame
 this.sprite.setFrame(frame);
     
 }
@@ -282,7 +268,6 @@ this.sprite.setFrame(frame);
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 

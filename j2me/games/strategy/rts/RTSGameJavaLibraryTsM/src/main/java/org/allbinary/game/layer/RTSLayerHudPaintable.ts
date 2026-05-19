@@ -115,7 +115,6 @@ this.costY1= (this.y +((this.weaponProperties!.length +1) *charHeight));
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paint(graphics);
     
 
@@ -143,7 +142,6 @@ graphics.drawString(weaponProperties[index]!, this.textX, y +((index +1) *charHe
 
 
     public setRtsLayer(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 this.rtsLayer= rtsLayer;
     
 }

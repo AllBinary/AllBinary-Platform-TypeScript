@@ -63,8 +63,7 @@ export class PointsLayer extends AllBinaryLayer {
     private readonly points: number
 public constructor (points: number){
             super(StringUtil.getInstance()!.EMPTY_STRING, new Rectangle(PointFactory.getInstance()!.ZERO_ZERO, 0, 0), ViewPosition.getInstanceD());
-                    var points = points
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -74,12 +73,10 @@ this.points= points;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 }
 
 
     public visit(scoreableInterface: ScoreableInterface){
-var scoreableInterface = scoreableInterface
 scoreableInterface!.addPoints(this.points);
     
 }

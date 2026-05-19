@@ -24,8 +24,6 @@
         
 import { GameKeyEvent } from '../../../../org/allbinary/game/input/event/GameKeyEvent.js';
       
-import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js';
-      
 import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.js';
       
 
@@ -73,13 +71,11 @@ private constructor (){
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onDownGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 }
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public onUpGameKeyEvent(gameKeyEvent: GameKeyEvent){
-var gameKeyEvent = gameKeyEvent
 }
 
 

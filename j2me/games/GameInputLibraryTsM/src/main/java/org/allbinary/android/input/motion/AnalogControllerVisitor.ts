@@ -50,8 +50,6 @@ export class AnalogControllerVisitor
         
 
     public process(allbinaryLayerManager: AllBinaryLayerManager, analogLocationInputProcessor: AnalogLocationInputProcessor){
-var allbinaryLayerManager = allbinaryLayerManager
-var analogLocationInputProcessor = analogLocationInputProcessor
 }
 
 

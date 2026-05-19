@@ -101,8 +101,7 @@ public constructor (){
 
 public constructor (httpServletRequest: HttpServletRequest){
             super(httpServletRequest);
-                    var httpServletRequest = httpServletRequest
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -119,8 +118,7 @@ public constructor (httpServletRequest: HttpServletRequest){
 
 public constructor (pageContext: PageContext){
             super(pageContext);
-                    var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -139,9 +137,6 @@ public constructor (pageContext: PageContext){
                 //@Throws(Exception.constructor)
             
     createPackageNode(document: Document, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
-var document = document
-var packageName = packageName
-var packagePropertiesHashMap = packagePropertiesHashMap
 
     var node: Node = document.createElement(packageName)!;
 ;
@@ -195,10 +190,6 @@ node.appendChild(propertyNode);
                 //@Throws(Exception.constructor)
             
     createPackageMultiNode(document: Document, nameSpaceRequestParam: NameSpaceRequestParam, packageName: string, packagePropertiesHashMap: HashMap<any, any>): Node{
-var document = document
-var nameSpaceRequestParam = nameSpaceRequestParam
-var packageName = packageName
-var packagePropertiesHashMap = packagePropertiesHashMap
 
     var beginIndex: number = packageName!.indexOf('[')!;
 ;
@@ -220,7 +211,7 @@ var packagePropertiesHashMap = packagePropertiesHashMap
 ;
     
 
-                        if(propertyValue!.localeCompare(NameSpaceRequestParamData.VALUE) != 0)
+                        if(propertyValue!.compareTo(NameSpaceRequestParamData.VALUE) != 0)
                         
                                     {
                                     selectedValue= propertyValue;
@@ -259,9 +250,6 @@ nextNode!.appendChild(indexNode);
                 //@Throws(Exception.constructor)
             
     getRootNode(rootElementPackage: string, packagePropertiesHashMap: HashMap<any, any>, document: Document): Node{
-var rootElementPackage = rootElementPackage
-var packagePropertiesHashMap = packagePropertiesHashMap
-var document = document
 
     var rootNode: Node = DomSearchHelper.getNodeNoThrow(rootElementPackage, document.getChildNodes())!;
 ;
@@ -330,9 +318,6 @@ document.appendChild(node);
                 //@Throws(Exception.constructor)
             
     addNewProperties(document: Document, node: Node, nextPackagePropertiesHashMap: HashMap<any, any>): Node{
-var document = document
-var node = node
-var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
@@ -396,7 +381,7 @@ index < size; index++)
                                     }
                                 
 
-                        if(propertyValue!.localeCompare(existingElementNodeTextNodeValue) != 0)
+                        if(propertyValue!.compareTo(existingElementNodeTextNodeValue) != 0)
                         
                                     {
                                     
@@ -452,8 +437,6 @@ node.appendChild(newPropertyNode);
                 //@Throws(Exception.constructor)
             
     isElementValueTextNodeEqual(nextPackagePropertiesHashMap: HashMap<any, any>, node: Node): boolean{
-var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
-var node = node
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
@@ -482,7 +465,7 @@ var node = node
 ;
     
 
-                        if(propertyValue!.localeCompare(existingElementNodeTextNodeValue) == 0)
+                        if(propertyValue!.compareTo(existingElementNodeTextNodeValue) == 0)
                         
                                     {
                                     
@@ -528,8 +511,6 @@ var node = node
                 //@Throws(Exception.constructor)
             
     isElementValueTextNodeUnique(nextPackagePropertiesHashMap: HashMap<any, any>, elementNodeVector: Vector): number{
-var nextPackagePropertiesHashMap = nextPackagePropertiesHashMap
-var elementNodeVector = elementNodeVector
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         
@@ -582,9 +563,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     addChildren(document: Document, rootNode: Node, nameSpaceRequestParam: NameSpaceRequestParam): Document{
-var document = document
-var rootNode = rootNode
-var nameSpaceRequestParam = nameSpaceRequestParam
 
     var node: Node = rootNode;
 ;
@@ -741,9 +719,6 @@ node= this.addNewProperties(document, nodeNameDuplicateNode, nextPackageProperti
                 //@Throws(Exception.constructor)
             
     addNameSpace(key: string, value: string, document: Document): Document{
-var key = key
-var value = value
-var document = document
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.HTTPREQUEST))
                         

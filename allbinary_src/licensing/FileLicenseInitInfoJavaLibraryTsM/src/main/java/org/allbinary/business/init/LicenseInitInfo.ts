@@ -76,7 +76,6 @@ public constructor (){
 
 
     public getServer(index: number): string{
-var index = index
 
 
 
@@ -97,7 +96,6 @@ var index = index
 
 
     public setLicenseId(value: string){
-var value = value
 this.id= value;
     
 }
@@ -110,15 +108,12 @@ this.serverVector= new BasicArrayListD();
 
 
     public setServer(value: string, index: number){
-var value = value
-var index = index
 this.serverVector!.addAt(index, value);
     
 }
 
 
     public addServer(value: string){
-var value = value
 this.serverVector!.add(value);
     
 }
@@ -135,7 +130,6 @@ this.serverVector!.add(value);
 
 
     public setServerList(servers: BasicArrayList){
-var servers = servers
 
                         if(DebugFactory.getInstance() == NoDebug.getInstance())
                         

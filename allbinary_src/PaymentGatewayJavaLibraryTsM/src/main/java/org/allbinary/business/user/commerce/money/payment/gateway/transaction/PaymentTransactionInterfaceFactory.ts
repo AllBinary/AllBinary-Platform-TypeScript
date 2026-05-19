@@ -82,7 +82,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(orderReview: OrderHistory): PaymentTransactionInterface{
-var orderReview = orderReview
 
         try {
             

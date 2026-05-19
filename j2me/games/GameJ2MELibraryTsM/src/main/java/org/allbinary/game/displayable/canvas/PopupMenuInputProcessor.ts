@@ -81,11 +81,7 @@ export class PopupMenuInputProcessor extends BasicMenuInputProcessor {
     private rectangle: Rectangle
 public constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: MyCanvas, rectangle: Rectangle){
             super(gameKeyEventList, playerInputId, gameCanvas);
-                        //var gameKeyEventList = gameKeyEventList
-    //var playerInputId = playerInputId
-    //var gameCanvas = gameCanvas
-    //var rectangle = rectangle
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -95,7 +91,6 @@ this.rectangle= rectangle;
 
 
     public init(rectangle: Rectangle){
-    //var rectangle = rectangle
 this.rectangle= rectangle;
     
 }
@@ -104,7 +99,6 @@ this.rectangle= rectangle;
                 //@Throws(Exception.constructor)
             
     public processInput(key: number): number{
-    //var key = key
 
                         if(key == Canvas.KEY_STAR)
                         
@@ -267,7 +261,6 @@ this.motionGestureEventList!.clear();
                 //@Throws(Exception.constructor)
             
     processMotionInput(motionGestureEvent: MotionGestureEvent){
-    //var motionGestureEvent = motionGestureEvent
 
                         if(motionGestureEvent == 
                                     null

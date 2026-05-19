@@ -99,9 +99,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, viewName: string, ownerTransformInfoInterface: TransformInfoInterface): TransformInterface{
-    //var abeClientInformation = abeClientInformation
-    //var viewName = viewName
-    //var ownerTransformInfoInterface = ownerTransformInfoInterface
 
         try {
             
@@ -186,9 +183,6 @@ transformInfoInterface!.setChild();
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): TransformInterface{
-    //var abeClientInformation = abeClientInformation
-    //var propertiesHashMap = propertiesHashMap
-    //var pageContext = pageContext
 
         try {
             
@@ -284,8 +278,6 @@ this.logUtil!.put(stringBuffer!.toString(), this, this.commonStrings!.GET_INSTAN
                 //@Throws(Exception.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, transformInfoInterface: TransformInfoInterface): TransformInterface{
-    //var abeClientInformation = abeClientInformation
-    //var transformInfoInterface = transformInfoInterface
 
         try {
             

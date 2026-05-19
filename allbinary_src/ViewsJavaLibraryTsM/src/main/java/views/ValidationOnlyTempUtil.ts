@@ -78,7 +78,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public view(validationComponentInterface: ValidationComponentInterface): string{
-var validationComponentInterface = validationComponentInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

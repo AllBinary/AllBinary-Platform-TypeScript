@@ -73,9 +73,7 @@ export class ItemView
 public constructor (itemInterface: OrderItemInterface, vector: Vector){
 
             super();
-        var itemInterface = itemInterface
-var vector = vector
-this.itemInterface= itemInterface;
+        this.itemInterface= itemInterface;
     
 this.vector= vector;
     
@@ -85,7 +83,6 @@ this.vector= vector;
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.itemInterface!.toHashMap()!;
 ;

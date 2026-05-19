@@ -89,9 +89,6 @@ private constructor (){
                 //@Throws(Exception.constructor, LicensingException.constructor)
             
     public getInstance(abeClientInformation: AbeClientInformationInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext): StoreWorkFlowInterface{
-    //var abeClientInformation = abeClientInformation
-    //var propertiesHashMap = propertiesHashMap
-    //var pageContext = pageContext
 
         try {
             

@@ -49,8 +49,7 @@ export class ShippingAddressesEntity extends StreetAddressesEntity {
     private readonly TABLENAME: string = "shipping";
 public constructor (userName: string){
             super(userName);
-                    var userName = userName
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

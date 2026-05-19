@@ -63,8 +63,6 @@ protected constructor (){
 
 
     public fetchHighScores(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener){
-    //var gameInfo = gameInfo
-    //var highScoresResultsListener = highScoresResultsListener
 
 
 
@@ -74,9 +72,6 @@ protected constructor (){
 
 
     public fetchHighScoresPreload(gameInfo: GameInfo, highScoresResultsListener: HighScoresResultsListener, preload: boolean){
-    //var gameInfo = gameInfo
-    //var highScoresResultsListener = highScoresResultsListener
-    //var preload = preload
 
 
 

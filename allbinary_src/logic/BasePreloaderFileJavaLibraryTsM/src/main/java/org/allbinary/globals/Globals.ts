@@ -80,8 +80,6 @@ private constructor (){
 
 
     public init(classLoader: ClassLoader, pathString: string){
-var classLoader = classLoader
-var pathString = pathString
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

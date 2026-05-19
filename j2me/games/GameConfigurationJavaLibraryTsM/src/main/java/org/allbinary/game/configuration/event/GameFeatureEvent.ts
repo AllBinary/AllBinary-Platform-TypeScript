@@ -49,9 +49,7 @@ export class GameFeatureEvent extends AllBinaryEventObject {
     private readonly whatChanged: string
 public constructor (anyType: any = {}, whatChanged: string){
             super(anyType);
-                    var anyType = anyType
-var whatChanged = whatChanged
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

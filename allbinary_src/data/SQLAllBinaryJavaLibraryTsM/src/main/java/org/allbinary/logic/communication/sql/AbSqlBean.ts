@@ -66,8 +66,7 @@ export class AbSqlBean extends AbSqlRow {
     private readonly METHOD_IS_SUBSET_OF_ENTRY: string = "isSubsetOfEntry";
 public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
             super(databaseConnectionInfoInterface);
-                        //var databaseConnectionInfoInterface = databaseConnectionInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -75,9 +74,6 @@ public constructor (databaseConnectionInfoInterface: DbConnectionInfo){
 
 
     public getField(key: string, value: string, requestedField: string): string{
-    //var key = key
-    //var value = value
-    //var requestedField = requestedField
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -177,8 +173,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
 
 
     public getField(keysAndValues: HashMap<any, any>, requestedField: string): string{
-    //var keysAndValues = keysAndValues
-    //var requestedField = requestedField
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -326,9 +320,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, this.METHOD_GET_FIELD);
 
 
     public isSubsetOfEntry(key: string, value: string, columnsAndValues: HashMap<any, any>): string{
-    //var key = key
-    //var value = value
-    //var columnsAndValues = columnsAndValues
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -419,7 +410,7 @@ columnName= keyArray2[i]!.toString();
 field= rset.getObject(columnName)!.toString();
     
 
-                        if(field.localeCompare(columnsAndValues!.get(columnName) as string) != 0)
+                        if(field.compareTo(columnsAndValues!.get(columnName) as string) != 0)
                         
                                     {
                                     

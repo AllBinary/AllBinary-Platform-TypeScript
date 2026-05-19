@@ -64,14 +64,12 @@ export class BasicGraphicsPipeline
 public constructor (points: BasicArrayList){
 
             super();
-        var points = points
-this.pointBasicArrayList= points;
+        this.pointBasicArrayList= points;
     
 }
 
 
     public setInitMatrix(points: BasicArrayList){
-var points = points
 this.pointBasicArrayList= points;
     
 }
@@ -84,8 +82,6 @@ this.pointBasicArrayList= points;
                 //@Throws(Exception.constructor)
             
     public translate(x: number, y: number){
-var x = x
-var y = y
 
     var newBasicArrayList: BasicArrayList = new BasicArrayListD();
 ;
@@ -137,7 +133,6 @@ this.pointBasicArrayList= newBasicArrayList;
                 //@Throws(Exception.constructor)
             
     public rotateToAngle(angle: Angle){
-var angle = angle
 this.rotate(Math.round(angle.getValue()));
     
 }
@@ -148,7 +143,6 @@ this.rotate(Math.round(angle.getValue()));
                 //@Throws(Exception.constructor)
             
     rotate(angle: number){
-var angle = angle
 
     var newBasicArrayList: BasicArrayList = new BasicArrayListD();
 ;
@@ -236,7 +230,6 @@ this.pointBasicArrayList= newBasicArrayList;
                 //@Throws(Exception.constructor)
             
     public mirror(width: number){
-var width = width
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
 ;

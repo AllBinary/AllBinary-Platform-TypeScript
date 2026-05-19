@@ -71,8 +71,7 @@ export class PooledThread extends Thread {
     private readonly threadPool: ThreadPool
 public constructor (threadPool: ThreadPool){
             super(threadPool!.createName());
-                        //var threadPool = threadPool
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

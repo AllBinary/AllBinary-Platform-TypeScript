@@ -58,7 +58,6 @@ export class TransformInfoObjectConfigGenerator
                 //@Throws(Exception.constructor)
             
     public process(input: string): string{
-var input = input
 
 
 

@@ -87,7 +87,6 @@ this.eventListenerInterfaceList= new BasicArrayListD();
 
 
     public addListeners(vector: BasicArrayList){
-    //var vector = vector
 
     var eventListenerInterface: EventListenerInterface
 ;
@@ -114,7 +113,6 @@ this.addListenerInterface(eventListenerInterface);
 
 
     public removeListeners(vector: BasicArrayList){
-    //var vector = vector
 
     var eventListenerInterface: EventListenerInterface
 ;
@@ -141,7 +139,6 @@ this.removeListener(eventListenerInterface);
 
 
     public addListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-    //var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
@@ -155,7 +152,6 @@ this.removeListener(eventListenerInterface);
 
 
     public addListenerInterface(eventListenerInterface: EventListenerInterface){
-    //var eventListenerInterface = eventListenerInterface
 
                         if(!this.eventListenerInterfaceList!.contains(eventListenerInterface))
                         
@@ -169,14 +165,12 @@ this.removeListener(eventListenerInterface);
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-    //var eventListenerInterface = eventListenerInterface
 this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 }
 
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-    //var eventListenerInterface = eventListenerInterface
 this.eventListenerInterfaceList!.remove(eventListenerInterface);
     
 }
@@ -185,7 +179,6 @@ this.eventListenerInterfaceList!.remove(eventListenerInterface);
                 //@Throws(Exception.constructor)
             
     public fireEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 
     var eventListenerInterface: EventListenerInterface
 ;
@@ -221,8 +214,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     process(eventObject: AllBinaryEventObject, eventListenerInterface: EventListenerInterface){
-    //var eventObject = eventObject
-    //var eventListenerInterface = eventListenerInterface
 eventListenerInterface!.onEvent(eventObject);
     
 }

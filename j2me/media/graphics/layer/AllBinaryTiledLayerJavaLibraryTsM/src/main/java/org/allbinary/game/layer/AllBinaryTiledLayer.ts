@@ -75,12 +75,7 @@ export class AllBinaryTiledLayer extends Layer implements NamedInterface, Painta
     private readonly dataId: Integer
 public constructor (dataId: Integer, width: number, height: number, cellWidth: number, cellHeight: number){
             super(0, 0);
-                        //var dataId = dataId
-    //var width = width
-    //var height = height
-    //var cellWidth = cellWidth
-    //var cellHeight = cellHeight
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -108,7 +103,6 @@ this.halfCellHeight= (cellHeight>>1);
 
 
     public setCells(mapTwoDArray: number[][]){
-    //var mapTwoDArray = mapTwoDArray
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -165,9 +159,6 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
     public updateCells(mapTwoDArray: number[][], fromTileId: number, toTileId: number){
-    //var mapTwoDArray = mapTwoDArray
-    //var fromTileId = fromTileId
-    //var toTileId = toTileId
 
     var rows: number = this.getRows()!;
 ;
@@ -221,12 +212,10 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 }
 
 
     public paintThreed(graphics: Graphics){
-    //var graphics = graphics
 }
 
 
@@ -281,8 +270,6 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
     public getCell(col: number, row: number): number{
-    //var col = col
-    //var row = row
 
 
 
@@ -313,9 +300,6 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
     public setCell(col: number, row: number, tileIndex: number){
-    //var col = col
-    //var row = row
-    //var tileIndex = tileIndex
 }
 
 
@@ -370,8 +354,6 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
     public isOnTileLayer(column: number, row: number): boolean{
-    //var column = column
-    //var row = row
 
                         if(this.getColumns() > column && this.getRows() > row && row >= 0 && column >= 0)
                         
@@ -399,7 +381,6 @@ this.setCell(col, row, mapTwoDArray[row]![col]!);
 
 
     public getAnimatedTile(animationTileIndex: number): number{
-    //var animationTileIndex = animationTileIndex
 
 
 

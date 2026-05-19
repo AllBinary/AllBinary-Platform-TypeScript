@@ -74,14 +74,6 @@ export class ScaleProcessor extends ScaleBaseProcessor {
     private readonly imageScaleUtil: ImageScaleUtil = ImageScaleUtil.getInstance()!;
 
     public update(originalImage: Image, originalImageArray: Image[], ximageToShowArray: Image[], unused: number, scaleX: number, scaleY: number, maxScaleX: number, maxScaleY: number){
-    //var originalImage = originalImage
-    //var originalImageArray = originalImageArray
-    //var ximageToShowArray = ximageToShowArray
-    //var unused = unused
-    //var scaleX = scaleX
-    //var scaleY = scaleY
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 
         try {
             this.imageScaleUtil!.scale2(originalImage, originalImageArray, ximageToShowArray, unused, scaleX, scaleY, maxScaleX, maxScaleY);

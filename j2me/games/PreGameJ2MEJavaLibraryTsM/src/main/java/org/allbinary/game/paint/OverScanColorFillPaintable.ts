@@ -50,8 +50,7 @@ export class OverScanColorFillPaintable extends ColorFillPaintable {
         
 public constructor (basicColor: BasicColor){
             super(basicColor);
-                    var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -59,7 +58,6 @@ public constructor (basicColor: BasicColor){
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.setColor(this.colorP);
     
 graphics.fillRect( -graphics.getClipX(),  -graphics.getClipY(), this.displayInfoSingleton!.getLastWidth() +(graphics.getClipX() *2), this.displayInfoSingleton!.getLastHeight() +(graphics.getClipY() *2));

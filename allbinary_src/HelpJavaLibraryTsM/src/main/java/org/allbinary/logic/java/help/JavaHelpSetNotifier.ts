@@ -65,7 +65,6 @@ export class JavaHelpSetNotifier
 
 
     public static isNotified(helpSet: HelpSet): boolean{
-var helpSet = helpSet
 
     var isNotified: boolean = false;
 ;
@@ -95,7 +94,7 @@ i < size; i++)
 ;
     
 
-                        if(url.toString()!.localeCompare(nextURL!.toString()) == 0)
+                        if(url.toString()!.compareTo(nextURL!.toString()) == 0)
                         
                                     {
                                     isNotified= true;

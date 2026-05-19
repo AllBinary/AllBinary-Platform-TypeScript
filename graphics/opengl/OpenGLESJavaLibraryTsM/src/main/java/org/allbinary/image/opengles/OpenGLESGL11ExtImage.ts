@@ -76,10 +76,7 @@ export class OpenGLESGL11ExtImage extends OpenGLESImage {
     private readonly rectangle: number[]
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image, bitmapFactory, textureFactory);
-                        //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -92,7 +89,6 @@ this.rectangle= [0,this.getHeight(), this.getWidth(),  -this.getHeight();;];
 
 
     public onDisplayChangeEvent(displayChangeEvent: DisplayChangeEvent){
-    //var displayChangeEvent = displayChangeEvent
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "onResize");
@@ -111,7 +107,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onResize", e);
 
 
     public set(gl: GL){
-    //var gl = gl
 this.onDisplayChangeEvent(
                             null);
     
@@ -138,10 +133,6 @@ OpenGLLogUtil.getInstance()!.logError(gl11, this);
 
 
     public draw(gl: GL10, x: number, y: number, z: number){
-    //var gl = gl
-    //var x = x
-    //var y = y
-    //var z = z
 gl.glEnable(GL10.GL_TEXTURE_2D);
     
 gl.glBindTexture(GL10.GL_TEXTURE_2D, this.openGLESImageProperties!.textureID);

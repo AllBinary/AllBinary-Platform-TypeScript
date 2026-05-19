@@ -74,7 +74,6 @@ private constructor (){
     private readonly NONE: string = "No Stack Trace";
 
     /*actual*/ public getStackTrace(e: Throwable): string{
-var e = e
 
     var bs: ByteArrayOutputStream = new ByteArrayOutputStream();
 ;

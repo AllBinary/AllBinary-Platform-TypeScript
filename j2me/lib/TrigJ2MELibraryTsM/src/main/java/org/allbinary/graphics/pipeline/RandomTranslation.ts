@@ -56,8 +56,6 @@ export class RandomTranslation
                 //@Throws(Exception.constructor)
             
     public static getInstance(vector: BasicArrayList, howMuch: number): BasicArrayList{
-var vector = vector
-var howMuch = howMuch
 
     var myRandomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
 ;

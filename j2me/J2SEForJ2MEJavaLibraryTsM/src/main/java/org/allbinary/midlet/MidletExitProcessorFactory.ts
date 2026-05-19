@@ -68,7 +68,6 @@ export class MidletExitProcessorFactory
 
 
     public getExitInstance(midlet: MIDlet): Processor{
-var midlet = midlet
 
                         if(AppletUtil.isAppletLoader(midlet) || J2MEUtil.isJ2ME())
                         

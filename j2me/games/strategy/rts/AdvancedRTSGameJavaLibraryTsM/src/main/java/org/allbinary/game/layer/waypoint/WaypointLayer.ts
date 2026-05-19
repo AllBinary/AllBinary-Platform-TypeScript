@@ -90,17 +90,7 @@ export class WaypointLayer extends AdvancedRTSGameLayer {
 
 protected constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, groupInterface: Group[], rootName: string, name: string, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
             super(remoteInfo, parentLayer, AdvancedRTSProperties.createProperties(), groupInterface, rootName, name, new Health(1000), NullRTSFormInputFactory.getInstance(), animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, animationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
-                        //var remoteInfo = remoteInfo
-    //var parentLayer = parentLayer
-    //var groupInterface = groupInterface
-    //var rootName = rootName
-    //var name = name
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var proceduralAnimationInterfaceFactoryInterface = proceduralAnimationInterfaceFactoryInterface
-    //var rectangle = rectangle
-    //var x = x
-    //var y = y
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -114,7 +104,6 @@ this.setAnimationInterface(this.indexedButShouldBeRotationAnimationInterface);
 
 
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 this.percentCompleteP= 100;
     
 this.initVisibility(rtsPlayerLayerInterface);
@@ -123,7 +112,6 @@ this.initVisibility(rtsPlayerLayerInterface);
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(this.isVisible())
                         
@@ -137,7 +125,6 @@ var graphics = graphics
 
 
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
         try {
             this.indexedButShouldBeRotationAnimationInterface!.nextFrame();
@@ -154,15 +141,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "processTick", e);
 
 
     public damage(damage: number, damageType: number){
-var damage = damage
-var damageType = damageType
 }
 
 
                 //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
-var damageType = damageType
 
 
 
@@ -175,7 +159,6 @@ var damageType = damageType
                 //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 super.setDestroyed(destroyed);
     
 

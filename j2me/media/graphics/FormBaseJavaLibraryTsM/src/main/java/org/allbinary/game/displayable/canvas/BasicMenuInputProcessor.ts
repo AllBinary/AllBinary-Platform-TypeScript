@@ -67,10 +67,7 @@ export class BasicMenuInputProcessor extends PlayerGameInput implements BaseMoti
     private canvas: Canvas = NullCanvas.NULL_CANVAS;
 protected constructor (gameKeyEventList: BasicArrayList, playerInputId: number, gameCanvas: Canvas){
             super(gameKeyEventList, new BasicArrayListD(), playerInputId);
-                    var gameKeyEventList = gameKeyEventList
-var playerInputId = playerInputId
-var gameCanvas = gameCanvas
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,14 +77,12 @@ this.canvas= gameCanvas;
 
 
     public onMotionGestureEvent(motionGestureEvent: MotionGestureEvent){
-var motionGestureEvent = motionGestureEvent
 this.motionGestureEventList!.add(motionGestureEvent);
     
 }
 
 
     setCanvas(canvas: MyCanvas){
-var canvas = canvas
 this.canvas= canvas;
     
 }

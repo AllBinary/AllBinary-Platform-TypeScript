@@ -92,8 +92,6 @@ private constructor (){
 
 
     public getRotatedImage(bufferedImage: org.eclipse.swt.graphics.Image, totalAngle: number): org.eclipse.swt.graphics.Image{
-    //var bufferedImage = bufferedImage
-    //var totalAngle = totalAngle
 
                         if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
@@ -119,10 +117,6 @@ private constructor (){
 
 
     getRotatedImage2(bufferedImage: org.eclipse.swt.graphics.Image, newBufferedImage: org.eclipse.swt.graphics.Image, gc: GC, angle: number): org.eclipse.swt.graphics.Image{
-    //var bufferedImage = bufferedImage
-    //var newBufferedImage = newBufferedImage
-    //var gc = gc
-    //var angle = angle
 
                         if(!this.features.isFeature(this.gameFeatureFactory!.POST_IMAGE_LOADING_MODIFICATION))
                         
@@ -148,10 +142,6 @@ private constructor (){
 
 
     public rotateImage(originalSwtImage: org.eclipse.swt.graphics.Image, newSwtImage: org.eclipse.swt.graphics.Image, gc: GC, totalAngle: number): org.eclipse.swt.graphics.Image{
-    //var originalSwtImage = originalSwtImage
-    //var newSwtImage = newSwtImage
-    //var gc = gc
-    //var totalAngle = totalAngle
 
 
 
@@ -162,10 +152,6 @@ private constructor (){
 
 
     public getRotatedImageSWT(bufferedImage: org.eclipse.swt.graphics.Image, newSwtImage: org.eclipse.swt.graphics.Image, gc: GC, totalAngle: number): org.eclipse.swt.graphics.Image{
-    //var bufferedImage = bufferedImage
-    //var newSwtImage = newSwtImage
-    //var gc = gc
-    //var totalAngle = totalAngle
 
 
 
@@ -176,9 +162,6 @@ private constructor (){
 
 
     public getRotatedImages(bufferedImage: org.eclipse.swt.graphics.Image, numberOfFrames: number, totalAngle: number): org.eclipse.swt.graphics.Image[]{
-    //var bufferedImage = bufferedImage
-    //var numberOfFrames = numberOfFrames
-    //var totalAngle = totalAngle
 
     var bufferedImageArray: org.eclipse.swt.graphics.Image[] = new Array(numberOfFrames);
 ;
@@ -216,7 +199,6 @@ bufferedImageArray[index]= this.getRotatedImage(bufferedImage, angle);
 
 
     public createSpriteImage(bufferedImageArray: org.eclipse.swt.graphics.Image[]): org.eclipse.swt.graphics.Image{
-    //var bufferedImageArray = bufferedImageArray
 
     var columns: number = 9;
 ;

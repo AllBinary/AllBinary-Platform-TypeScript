@@ -51,16 +51,12 @@ export class StringLocationPaintable extends LocationPaintable {
 public constructor (value: string){
 
             super();
-            //var value = value
-this.value= value;
+        this.value= value;
     
 }
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 graphics.drawString(this.value, x, y, 0);
     
 }

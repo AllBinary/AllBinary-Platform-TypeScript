@@ -70,10 +70,7 @@ export class IndependentVectorExplosionRotationAnimationFactory
 public constructor (vectorInfo: VectorInfo, basicColor: BasicColor, vectorAnimationFactoryInterface: VectorAnimationFactoryInterface){
 
             super();
-        var vectorInfo = vectorInfo
-var basicColor = basicColor
-var vectorAnimationFactoryInterface = vectorAnimationFactoryInterface
-this.vectorInfo= vectorInfo;
+        this.vectorInfo= vectorInfo;
     
 this.basicColor= basicColor;
     
@@ -97,7 +94,6 @@ this.framePoints= VectorRotationGenerator.getInstance()!.getInstance(this.vector
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-var animationInterface = animationInterface
 
     var frame: number = 0;
 ;

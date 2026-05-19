@@ -70,9 +70,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public scaleArray(images: Image[], width: number, height: number): Image[]{
-var images = images
-var width = width
-var height = height
 
     var scaledImages: Image[] = new Array(images.length);
 ;
@@ -102,9 +99,6 @@ scaledImages[index]= this.scale(images[index]!, width, height);
                 //@Throws(Exception.constructor)
             
     public scale(image: Image, width: number, height: number): Image{
-var image = image
-var width = width
-var height = height
 
 
 

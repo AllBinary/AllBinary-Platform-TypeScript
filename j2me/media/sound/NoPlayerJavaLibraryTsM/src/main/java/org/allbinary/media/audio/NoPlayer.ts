@@ -72,7 +72,6 @@ public constructor (){
 
 
     public getControl(controlType: string): Control{
-var controlType = controlType
 
 
 

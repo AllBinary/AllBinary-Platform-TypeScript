@@ -67,7 +67,6 @@ export class DocumentToNode
                 //@Throws(Exception.constructor)
             
     public static convertDocumentToNodeString(documentString: string): string{
-var documentString = documentString
 documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTSTART, DocumentToNode.XMLEND);
     
 documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTENDSTART, DocumentToNode.XMLEND);
@@ -86,7 +85,6 @@ documentString= DocumentToNode.remove(documentString, DocumentToNode.XMLJSPROOTE
 
 
     public static removeXmlDefinitionFromDocumentString(documentString: string): string{
-var documentString = documentString
 
 
 
@@ -97,9 +95,6 @@ var documentString = documentString
 
 
     public static remove(documentString: string, start: string, end: string): string{
-var documentString = documentString
-var start = start
-var end = end
 
     var startIndex: number= 0
 ;

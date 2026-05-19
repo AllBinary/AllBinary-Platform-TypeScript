@@ -58,8 +58,7 @@ export class UpgradableWideRTSLayerPaintable extends RTSLayerCompositePaintable 
     private cost: string = StringUtil.getInstance()!.EMPTY_STRING;
 public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintable){
             super(upgradableRTSLayerHudPaintable);
-                    var upgradableRTSLayerHudPaintable = upgradableRTSLayerHudPaintable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -67,7 +66,6 @@ public constructor (upgradableRTSLayerHudPaintable: UpgradableRTSLayerHudPaintab
 
 
     public update(rtsLayer: RTSLayer){
-var rtsLayer = rtsLayer
 super.update(rtsLayer);
     
 this.setCost(new StringMaker().
@@ -77,14 +75,12 @@ this.setCost(new StringMaker().
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 graphics.drawString(this.getCost(), this.upgradableRTSLayerHudPaintable!.textX, this.upgradableRTSLayerHudPaintable!.costY, 0);
     
 }
 
 
     setCost(cost: string){
-var cost = cost
 this.cost= cost;
     
 }

@@ -66,10 +66,7 @@ export class TransformInfoBasic extends AbContext implements TransformInfoHttpIn
     private storeFrontInterface: StoreFrontInterface
 public constructor (storeFrontInterface: StoreFrontInterface, propertiesHashMap: HashMap<any, any>, pageContext: PageContext){
             super(propertiesHashMap, pageContext);
-                    var storeFrontInterface = storeFrontInterface
-var propertiesHashMap = propertiesHashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -99,7 +96,6 @@ this.storeFrontInterface= storeFrontInterface;
 
 
     public override(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 }
 
 
@@ -144,7 +140,6 @@ var hashMap = hashMap
 
 
     public setObjectConfigInterface(transformInfoObjectConfigInterface: Object){
-var transformInfoObjectConfigInterface = transformInfoObjectConfigInterface
 }
 
 
@@ -210,47 +205,38 @@ var transformInfoObjectConfigInterface = transformInfoObjectConfigInterface
 
 
     public setName(value: string){
-var value = value
 }
 
 
     public setStoreName(value: string){
-var value = value
 }
 
 
     public setObjectFile(value: string){
-var value = value
 }
 
 
     public setObject(anyType: Object){
-var anyType = anyType
 }
 
 
     public setObjectConfigFile(value: string){
-var value = value
 }
 
 
     public setTemplateFile(value: string){
-var value = value
 }
 
 
     public setTemplate(value: string){
-var value = value
 }
 
 
     public setDataFile(value: string){
-var value = value
 }
 
 
     public setData(value: string){
-var value = value
 }
 
 
@@ -279,7 +265,6 @@ var value = value
 
 
     public setImportUriPath(importUriPath: string){
-var importUriPath = importUriPath
 }
 
 

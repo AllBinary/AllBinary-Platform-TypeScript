@@ -51,8 +51,7 @@ export class SpecialGameInputInterfaceProcessor extends GameInputProcessor {
 public constructor (collidableDestroyableDamageableLayer: SpecialGameInputInterface){
 
             super();
-        var collidableDestroyableDamageableLayer = collidableDestroyableDamageableLayer
-this.specialGameInputInterface= collidableDestroyableDamageableLayer;
+        this.specialGameInputInterface= collidableDestroyableDamageableLayer;
     
 }
 

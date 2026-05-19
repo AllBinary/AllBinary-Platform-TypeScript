@@ -68,9 +68,7 @@ export class CompleteMotionGestureInputEvent extends AllBinaryEventObject implem
     private motionGestureInput: MotionGestureInput = TouchMotionGestureFactory.getInstance()!.NO_MOTION;
 public constructor (name: string, motionGestureInput: MotionGestureInput){
             super(motionGestureInput);
-                    var name = name
-var motionGestureInput = motionGestureInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -96,7 +94,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "InputToGameKeyEventAction", e
 
 
     setName(name: string){
-var name = name
 this.name= name;
     
 }
@@ -113,7 +110,6 @@ this.name= name;
 
 
     public setMotionGestureInput(motionGestureInput: MotionGestureInput){
-var motionGestureInput = motionGestureInput
 this.motionGestureInput= motionGestureInput;
     
 }

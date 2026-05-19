@@ -81,8 +81,7 @@ export class TimeIntervalActionScriptCondition extends BasicProfileActionScriptC
     private timeHelper: TimeDelayHelper
 public constructor (node: Node){
             super(TimeIntervalActionScriptCondition.NAME, node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -113,7 +112,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.localeCompare(TimeIntervalActionScriptConditionData.TIME) == 0)
+                        if(childNode!.getNodeName()!.compareTo(TimeIntervalActionScriptConditionData.TIME) == 0)
                         
                                     {
                                     
@@ -198,7 +197,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = super.toXmlNode(document)!;
 ;
@@ -231,7 +229,6 @@ this.logUtil!.putF("Time Interval: " +this.timeHelper!.delay, this, "log");
 
 
     public setTimeDelayHelper(timeHelper: TimeDelayHelper){
-    //var timeHelper = timeHelper
 this.timeHelper= timeHelper;
     
 }
@@ -240,7 +237,6 @@ this.timeHelper= timeHelper;
                 //@Throws(Exception.constructor)
             
     public shouldProcess(frame: Long): boolean{
-var frame = frame
 
     var timeHelper: TimeDelayHelper = this.getTimeDelayHelper()!;
 ;

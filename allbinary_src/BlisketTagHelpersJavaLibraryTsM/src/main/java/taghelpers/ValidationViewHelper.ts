@@ -64,9 +64,7 @@ export class ValidationViewHelper extends ViewHelper implements ValidationCompon
     private viewInterface: ValidationComponentInterface
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
             super(hashMap, pageContext);
-                    var hashMap = hashMap
-var pageContext = pageContext
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -193,7 +191,6 @@ this.viewInterface= this.getViewObject() as ValidationComponentInterface;
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
         try {
             

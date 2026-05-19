@@ -64,9 +64,7 @@ export class KeyValueDrawString
 public constructor (label: string, x: number){
 
             super();
-        var label = label
-var x = x
-this.LABEL= label;
+        this.LABEL= label;
     
 this.labelWidth= MyFont.getInstance()!.stringWidth(this.LABEL) -this.LABEL.length;
     
@@ -78,8 +76,6 @@ this.valueX= this.labelWidth +x;
 
 
     public paint(graphics: Graphics, y: number){
-    //var graphics = graphics
-    //var y = y
 graphics.drawString(this.LABEL, this.labelX, y, 0);
     
 graphics.drawString(this.value, this.valueX, y, 0);
@@ -88,7 +84,6 @@ graphics.drawString(this.value, this.valueX, y, 0);
 
 
     public update(value: string){
-var value = value
 
                         if(value != 
                                     null

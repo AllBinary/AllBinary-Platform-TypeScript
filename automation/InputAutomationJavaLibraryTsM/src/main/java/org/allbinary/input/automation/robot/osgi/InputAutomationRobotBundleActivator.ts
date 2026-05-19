@@ -101,7 +101,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public registerAsService(bundleContext: BundleContext){
-var bundleContext = bundleContext
 OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAutomationRobotServiceInterface.constructor.toString()!);
     
 }
@@ -110,7 +109,6 @@ OSGIActivatorUtil.registerAsService(bundleContext, getServiceFactory(), InputAut
                 //@Throws(Exception.constructor)
             
     getInputAutomationRobotChangeListener(context: BundleContext): InputAutomationRobotChangeListener{
-var context = context
 
     var serviceReference: ServiceReference = context.getServiceReference(InputAutomationRobotChangeListener.constructor.toString()!)!;
 ;
@@ -157,7 +155,6 @@ var context = context
 
 
     addRobots(context: BundleContext){
-var context = context
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "addRobots");
@@ -203,7 +200,6 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "addModules");
 
 
     removeRobots(context: BundleContext){
-var context = context
 
         try {
             this.logUtil!.putF(this.commonStrings!.START, this, "removeRobots");
@@ -251,7 +247,6 @@ this.logUtil!.putF(this.commonStrings!.EXCEPTION, this, "removeRobots");
                 //@Throws(Exception.constructor)
             
     public start(context: BundleContext){
-var context = context
 this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.START);
     
 this.addRobots(context);
@@ -264,7 +259,6 @@ this.registerAsService(context);
                 //@Throws(Exception.constructor)
             
     public stop(context: BundleContext){
-var context = context
 this.logUtil!.putF("Stop", this, this.commonStrings!.START);
     
 this.removeRobots(context);
@@ -283,7 +277,6 @@ this.removeRobots(context);
 
 
     setServiceFactory(serviceObject: ServiceFactory){
-var serviceObject = serviceObject
 this.serviceFactory= serviceObject;
     
 }
@@ -300,7 +293,6 @@ this.serviceFactory= serviceObject;
 
 
     public setInputRobotInterface(inputRobotInterface: InputRobotInterface[]){
-var inputRobotInterface = inputRobotInterface
 this.inputRobotInterface= inputRobotInterface;
     
 }

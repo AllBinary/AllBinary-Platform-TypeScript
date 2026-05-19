@@ -81,7 +81,6 @@ export class PrimitiveLongSingleton
                 //@Throws(Exception.constructor)
             
     public getNumberFromChar(numberAsChar: string): number{
-var numberAsChar = numberAsChar
 
     var size: number = this.NUMBER_CHAR_ARRAY.length
                 ;

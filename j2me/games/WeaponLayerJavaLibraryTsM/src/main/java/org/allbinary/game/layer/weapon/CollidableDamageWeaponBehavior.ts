@@ -71,8 +71,7 @@ export class CollidableDamageWeaponBehavior extends CollidableDestroyableDamagea
     collisionHelper: CollisionHelper
 public constructor (collidable: boolean){
             super(collidable);
-                    var collidable = collidable
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -86,7 +85,6 @@ this.collisionHelper= CollidableHelperFactory.getInstance();
 
 
     public init(sourceLayerInterface: AllBinaryLayer){
-var sourceLayerInterface = sourceLayerInterface
 this.setCollided(false);
     
 this.collisionHelper!.setOwnerLayerInterface(sourceLayerInterface);
@@ -95,8 +93,6 @@ this.collisionHelper!.setOwnerLayerInterface(sourceLayerInterface);
 
 
     public isCollision(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer): boolean{
-    //var ownerLayer = ownerLayer
-var collisionLayer = collisionLayer
 
                         if(this.collisionHelper!.isCollidable(collisionLayer))
                         
@@ -129,8 +125,6 @@ var collisionLayer = collisionLayer
                 //@Throws(Exception.constructor)
             
     public collide(ownerLayer: CollidableCompositeLayer, collisionLayer: CollidableCompositeLayer){
-    //var ownerLayer = ownerLayer
-var collisionLayer = collisionLayer
 super.collide(ownerLayer, collisionLayer);
     
 this.collided= true;
@@ -141,8 +135,6 @@ this.collided= true;
     private readonly layerCollisionUtil: LayerCollisionUtil = LayerCollisionUtil.getInstance()!;
 
     public isCollisionInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface): boolean{
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 
                         if(this.collisionHelper!.isCollidable(collidableInterfaceCompositeInterface as CollidableCompositeLayer))
                         
@@ -186,8 +178,6 @@ var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterfac
                 //@Throws(Exception.constructor)
             
     public collideInterface(ownerLayer: CollidableCompositeLayer, collidableInterfaceCompositeInterface: CollidableInterfaceCompositeInterface){
-    //var ownerLayer = ownerLayer
-var collidableInterfaceCompositeInterface = collidableInterfaceCompositeInterface
 this.damageUtil!.process(ownerLayer as DamageableInterface, collidableInterfaceCompositeInterface as DamageableInterface);
     
 this.collided= true;
@@ -196,7 +186,6 @@ this.collided= true;
 
 
     public getCollisionTypeWith(layerInterface: AllBinaryLayer): CollisionType{
-var layerInterface = layerInterface
 
 
 
@@ -217,7 +206,6 @@ var layerInterface = layerInterface
 
 
     setCollided(collided: boolean){
-var collided = collided
 this.collided= collided;
     
 }

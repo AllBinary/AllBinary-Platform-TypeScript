@@ -60,9 +60,7 @@ export class BufferedImageFrameCacheable
 public constructor (bufferedImage: BufferedImage, frame: Long){
 
             super();
-        var bufferedImage = bufferedImage
-var frame = frame
-this.frame= frame;
+        this.frame= frame;
     
 this.setBufferedImage(bufferedImage);
     
@@ -90,7 +88,6 @@ this.setBufferedImage(bufferedImage);
 
 
     setBufferedImage(bufferedImage: BufferedImage){
-var bufferedImage = bufferedImage
 this.bufferedImage= bufferedImage;
     
 }
@@ -107,7 +104,6 @@ this.bufferedImage= bufferedImage;
 
 
     public setFrame(frame: Long){
-var frame = frame
 this.frame= frame;
     
 }

@@ -78,9 +78,6 @@ private constructor (){
 
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number): Image{
-    //var originalImage = originalImage
-    //var image = image
-    //var totalAngle = totalAngle
 
                         if(image.isMutable())
                         
@@ -128,10 +125,6 @@ this.drawImage(originalImage, image, canvasSurface);
 
 
     public rotateImageCanvasSurfaceClear(originalImage: Image, image: Image, canvasSurface: CanvasSurface, totalAngle: number): Image{
-    //var originalImage = originalImage
-    //var image = image
-    //var canvasSurface = canvasSurface
-    //var totalAngle = totalAngle
 
                         if(image.isMutable())
                         
@@ -165,10 +158,6 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
 
 
     public rotateImageCanvasSurface(originalImage: Image, image: Image, canvasSurface: CanvasSurface, totalAngle: number): Image{
-    //var originalImage = originalImage
-    //var image = image
-    //var canvasSurface = canvasSurface
-    //var totalAngle = totalAngle
 
                         if(image.isMutable())
                         
@@ -198,9 +187,6 @@ canvasSurface!.translate(originalImage!.getWidth() /2, originalImage!.getHeight(
 
 
     public drawImage(originalImage: Image, image: Image, canvasSurface: CanvasSurface){
-    //var originalImage = originalImage
-    //var image = image
-    //var canvasSurface = canvasSurface
 
     var originalPlayNImage: playn.core.Image = 
                 null
@@ -238,8 +224,6 @@ canvasSurface!.drawImage(originalPlayNImage,  -originalImage!.getWidth() /2,  -o
                 //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
-    //var originalImage = originalImage
-    //var rotationInDegrees = rotationInDegrees
 
     var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;

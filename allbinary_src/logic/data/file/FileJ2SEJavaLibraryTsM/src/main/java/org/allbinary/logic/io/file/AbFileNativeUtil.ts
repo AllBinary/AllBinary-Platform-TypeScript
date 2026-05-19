@@ -50,7 +50,6 @@ export class AbFileNativeUtil
         
 
     public static get(file: AbFile): File{
-var file = file
 
 
 

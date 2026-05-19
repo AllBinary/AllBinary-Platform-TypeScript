@@ -75,9 +75,7 @@ export class OrderItemsRequestHelper extends TagHelper {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest;
+        this.request= pageContext!.getRequest() as HttpServletRequest;
     
 this.getFormData();
     
@@ -95,7 +93,6 @@ this.status= this.request.getParameter(OrderHistoryData.STATUS);
 
 
     public setOrderStatus(newStatus: string): string{
-var newStatus = newStatus
 
         try {
             

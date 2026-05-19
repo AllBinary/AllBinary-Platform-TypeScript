@@ -62,12 +62,10 @@ export class ResizableListenerHandler
 
 
     public setListener(resizableListenerInterface: ResizableListenerInterface){
-var resizableListenerInterface = resizableListenerInterface
 }
 
 
     public fire(isFullScreen: boolean){
-var isFullScreen = isFullScreen
 }
 
 
@@ -75,7 +73,6 @@ var isFullScreen = isFullScreen
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public fireEvent(value: boolean){
-var value = value
 }
 
 

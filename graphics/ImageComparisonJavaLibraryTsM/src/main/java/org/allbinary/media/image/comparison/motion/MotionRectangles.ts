@@ -62,9 +62,7 @@ export class MotionRectangles
 public constructor (name: string, imageComparisonResult: ImageComparisonResult){
 
             super();
-        var name = name
-var imageComparisonResult = imageComparisonResult
-this.name= name;
+        this.name= name;
     
 this.setImageComparisonResult(imageComparisonResult);
     
@@ -84,7 +82,6 @@ this.setVector(new Vector());
 
 
     public setVector(rectangleVector: Vector){
-var rectangleVector = rectangleVector
 this.rectangleVector= rectangleVector;
     
 }
@@ -111,7 +108,6 @@ this.rectangleVector= rectangleVector;
 
 
     public setImageComparisonResult(imageComparisonResult: ImageComparisonResult){
-var imageComparisonResult = imageComparisonResult
 this.imageComparisonResult= imageComparisonResult;
     
 }

@@ -62,10 +62,6 @@ export class TimeHudWidget extends BasicHud {
                 //@Throws(Exception.constructor)
             
     public static getInstance(location: number, direction: number, basicColor: BasicColor, timer: Timer): TimeHudWidget{
-var location = location
-var direction = direction
-var basicColor = basicColor
-var timer = timer
 
 
 
@@ -88,14 +84,7 @@ var timer = timer
     private readonly timer: Timer
 public constructor (location: number, direction: number, maxHeight: number, maxWidth: number, bufferZone: number, basicColor: BasicColor, timer: Timer){
             super(location, direction, maxHeight, maxWidth, bufferZone, basicColor);
-                    var location = location
-var direction = direction
-var maxHeight = maxHeight
-var maxWidth = maxWidth
-var bufferZone = bufferZone
-var basicColor = basicColor
-var timer = timer
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -141,7 +130,6 @@ this.totalDigits= this.timer.getCurrentTotalDigits();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paintDX(graphics, this.TIME_CHAR_ARRAY, 0, this.TIME_CHAR_ARRAY.length, this.string, 0, this.totalDigits, this.offset);
     
 }

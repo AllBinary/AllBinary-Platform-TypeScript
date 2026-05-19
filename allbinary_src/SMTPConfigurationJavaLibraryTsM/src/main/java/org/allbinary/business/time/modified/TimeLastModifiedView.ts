@@ -65,16 +65,14 @@ export class TimeLastModifiedView
 public constructor (timeLastModified: TimeLastModified){
 
             super();
-        var timeLastModified = timeLastModified
-this.setTimeLastModified(timeLastModified);
+        this.setTimeLastModified(timeLastModified);
     
 }
 
 public constructor (node: Node){
 
             super();
-        var node = node
-this.setTimeLastModified(new TimeLastModified(DomNodeHelper.getTextNodeValue(node)));
+        this.setTimeLastModified(new TimeLastModified(DomNodeHelper.getTextNodeValue(node)));
     
 }
 
@@ -82,7 +80,6 @@ this.setTimeLastModified(new TimeLastModified(DomNodeHelper.getTextNodeValue(nod
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
 
 
@@ -103,7 +100,6 @@ var document = document
 
 
     public setTimeLastModified(timeLastModified: TimeLastModified){
-var timeLastModified = timeLastModified
 this.timeLastModified= timeLastModified;
     
 }

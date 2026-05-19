@@ -69,8 +69,7 @@ public constructor (){
 
 public constructor (document: Document){
             super(document);
-                    var document = document
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,8 +77,7 @@ public constructor (document: Document){
 
 public constructor (hashMap: HashMap<any, any>){
             super(hashMap);
-                    var hashMap = hashMap
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -117,7 +115,6 @@ public constructor (hashMap: HashMap<any, any>){
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -130,7 +127,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(StylesData.getInstance()!.NAME)!;
 ;

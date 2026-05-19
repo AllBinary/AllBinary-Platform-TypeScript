@@ -77,9 +77,6 @@ export class VectorCenterGenerator
                 //@Throws(Exception.constructor)
             
     public static translate(list: BasicArrayList, x: number, y: number): BasicArrayList{
-var list = list
-var x = x
-var y = y
 
     var graphicsPipe: BasicGraphicsPipeline = new BasicGraphicsPipeline(list);
 ;
@@ -125,7 +122,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public calculate(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 
     var graphicItemArray: any[] = hashMap!.keys.toTypedArray()!;
 ;
@@ -210,7 +206,6 @@ this.dy= middle -currentMiddleY;
                 //@Throws(Exception.constructor)
             
     public transform(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 this.calculate(hashMap);
     
 this.logUtil!.putF(new StringMaker().
@@ -257,7 +252,6 @@ item.setPointsInterface(newPoints);
                 //@Throws(Exception.constructor)
             
     getInstance(pointVector: BasicArrayList){
-var pointVector = pointVector
 
         try {
             
@@ -345,7 +339,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.GET_I
 
 
     public setWidth(width: number){
-var width = width
 this.width= width;
     
 }
@@ -362,7 +355,6 @@ this.width= width;
 
 
     public setHeight(height: number){
-var height = height
 this.height= height;
     
 }

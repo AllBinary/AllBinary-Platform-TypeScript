@@ -57,7 +57,6 @@ export class ProductListingFactory
         
 
     public static getInstance(searchRequest: SearchRequest): ProductListingInterface{
-var searchRequest = searchRequest
 
     var logUtil: LogUtil = LogUtil.getInstance()!;
 ;

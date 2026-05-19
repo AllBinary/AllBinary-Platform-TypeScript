@@ -84,9 +84,7 @@ export class PlayerComposite
 public constructor (player: Player, repeatTime: number){
 
             super();
-        var player = player
-var repeatTime = repeatTime
-this.player= player;
+        this.player= player;
     
 this.timeElapsedHelper!.delay= repeatTime;
     
@@ -95,14 +93,12 @@ this.timeElapsedHelper!.delay= repeatTime;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
-var playerListener = playerListener
 this.player.addPlayerListener(playerListener);
     
 }
 
 
     public removePlayerListener(playerListener: PlayerListener){
-var playerListener = playerListener
 this.player.removePlayerListener(playerListener);
     
 }
@@ -166,7 +162,6 @@ this.player.deallocate();
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setTimeBase(timeBase: TimeBase){
-var timeBase = timeBase
 player = this.playerplayer as TimeBaseInterface
 player.
                     setTimeBase(timeBase);
@@ -217,14 +212,12 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "realize", e);
 
 
     public setLoopCount(count: number){
-var count = count
 this.player.setLoopCount(count);
     
 }
 
 
     public setMediaTime(now: number): number{
-var now = now
 
         try {
             
@@ -292,7 +285,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "stop", e);
 
 
     public getControl(controlType: string): Control{
-var controlType = controlType
 
 
 
@@ -312,8 +304,6 @@ var controlType = controlType
 
 
     public setVolume(leftVolume: number, rightVolume: number){
-    //var leftVolume = leftVolume
-    //var rightVolume = rightVolume
 
     var controllable2: Controllable2 = (this.player as unknown as Controllable2);
 ;

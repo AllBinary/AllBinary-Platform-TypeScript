@@ -22,6 +22,8 @@
 
 
         
+import { TsUtil } from '../../../../org/allbinary/TsUtil.js';
+      
 
 
 
@@ -60,6 +62,8 @@ export class StringValidationUtil
 
 
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
+
+    private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 private constructor (){
 
             super();
@@ -67,7 +71,6 @@ private constructor (){
 
 
     public containsSpaces(value: string): boolean{
-var value = value
 
                         if(value.indexOf(' ') >= 0)
                         
@@ -91,7 +94,6 @@ var value = value
 
 
     public isNumber(value: string): boolean{
-var value = value
 
     var numberOfDecimalPoints: number = 0;
 ;
@@ -155,7 +157,6 @@ index < value.length; index++)
 
 
     public isNumberFromChar(digit: string): boolean{
-var digit = digit
 
                         if(digit != '0' && digit != '1' && digit != '2' && digit != '3' && digit != '4' && digit != '5' && digit != '6' && digit != '7' && digit != '8' && digit != '9')
                         
@@ -179,9 +180,6 @@ var digit = digit
 
 
     public isValidRequired(value: string, min: number, max: number): boolean{
-var value = value
-var min = min
-var max = max
 
                         if(value == 
                                     null
@@ -207,9 +205,6 @@ var max = max
 
 
     public isValidRequiredNumber(value: string, min: number, max: number): boolean{
-var value = value
-var min = min
-var max = max
 
                         if(this.isEmpty(value) || value.length < min || value.length > max)
                         
@@ -246,9 +241,6 @@ var max = max
 
 
     public isValidNotRequired(value: string, min: number, max: number): boolean{
-var value = value
-var min = min
-var max = max
 
                         if(value != 
                                     null
@@ -281,9 +273,6 @@ var max = max
 
 
     public isValidNotRequiredNumber(value: string, min: number, max: number): boolean{
-var value = value
-var min = min
-var max = max
 
                         if(value != 
                                     null
@@ -291,7 +280,7 @@ var max = max
                         
                                     {
                                     
-                        if(value.localeCompare(this.stringUtil!.NULL_STRING) == 0 || value.length < min || value.length > max)
+                        if(this.tsUtil!.compareTo(value, this.stringUtil!.NULL_STRING) == 0 || value.length < min || value.length > max)
                         
                                     {
                                     
@@ -329,11 +318,10 @@ var max = max
 
 
     public isEmpty(string: string): boolean{
-var string = string
 
                         if(string != 
                                     null
-                                 && string.localeCompare(this.stringUtil!.NULL_STRING) != 0 && string.localeCompare(this.stringUtil!.EMPTY_STRING) != 0)
+                                 && this.tsUtil!.compareTo(string, this.stringUtil!.NULL_STRING) != 0 && this.tsUtil!.compareTo(string, this.stringUtil!.EMPTY_STRING) != 0)
                         
                                     {
                                     

@@ -87,9 +87,7 @@ export class CompoundContextTransformInfoObjectConfig extends GenericStoreTransf
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (abeClientInformation: Object, transformInfoInterface: Object){
             super(abeClientInformation, transformInfoInterface);
-                        //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -97,10 +95,7 @@ var transformInfoInterface = transformInfoInterface
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, document: Object){
             super(abeClientInformation, transformInfoInterface, document);
-                        //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
-var document = document
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -110,11 +105,7 @@ this.setDocument(this.generate(this.toXmlDoc()));
 
 public constructor (abeClientInformation: Object, transformInfoInterface: Object, name: string, type: string){
             super(abeClientInformation, transformInfoInterface, name, type);
-                        //var abeClientInformation = abeClientInformation
-var transformInfoInterface = transformInfoInterface
-var name = name
-var type = type
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

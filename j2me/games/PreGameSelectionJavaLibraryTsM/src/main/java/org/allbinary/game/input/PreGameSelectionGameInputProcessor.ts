@@ -141,11 +141,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 public constructor (gameCanvas: AllBinaryGameCanvas, preGameSelectorPaintable: PreGameSelectorPaintable, nextGameState: GameState, lockedIndex: number){
 
             super();
-        var gameCanvas = gameCanvas
-var preGameSelectorPaintable = preGameSelectorPaintable
-var nextGameState = nextGameState
-var lockedIndex = lockedIndex
-this.gameCanvas= gameCanvas;
+        this.gameCanvas= gameCanvas;
     
 this.preGameSelectorPaintable= preGameSelectorPaintable;
     
@@ -169,7 +165,6 @@ this.getPlayerGameInput()!.update();
                 //@Throws(Exception.constructor)
             
     public onInput(list: BasicArrayList){
-var list = list
 
     var size: number = list.size()!;
 ;
@@ -273,7 +268,6 @@ list.clear();
                 //@Throws(Exception.constructor)
             
     public processInput(layerManager: AllBinaryLayerManager){
-var layerManager = layerManager
 }
 
 

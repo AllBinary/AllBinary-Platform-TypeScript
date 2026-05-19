@@ -76,7 +76,6 @@ export class GeographicMapCellPositionFactory extends GeographicMapCellPositionB
                 //@Throws(Exception.constructor)
             
     public getInstance(geographicMapInterface: BasicGeographicMap): BasicGeographicMapCellPositionFactory{
-    //var geographicMapInterface = geographicMapInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;

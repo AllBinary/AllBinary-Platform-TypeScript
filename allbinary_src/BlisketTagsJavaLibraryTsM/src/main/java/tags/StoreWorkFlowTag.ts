@@ -87,7 +87,6 @@ public constructor (){
 
 
     public setName(value: string){
-var value = value
 this.viewName= value;
     
 this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.NAME, this.viewName);

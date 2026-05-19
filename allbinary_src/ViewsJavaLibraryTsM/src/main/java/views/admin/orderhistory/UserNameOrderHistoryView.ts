@@ -99,8 +99,7 @@ export class UserNameOrderHistoryView extends HttpStoreComponentView implements 
     private readonly ON: string = "on";
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -164,7 +163,6 @@ this.addDomNodeInterface(this as DomNodeInterface);
 
 
     public toXmlNode(document: Document): Node{
-var document = document
 
         try {
             
@@ -301,7 +299,6 @@ node.appendChild(ModDomHelper.createNameValueNodes(document, GLOBALS2.VIEWNAME, 
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

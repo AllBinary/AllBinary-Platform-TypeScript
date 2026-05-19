@@ -144,8 +144,7 @@ export class BasicItem
 public constructor (itemHashMap: HashMap<any, any>){
 
             super();
-        var itemHashMap = itemHashMap
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.PRODUCTSEARCHLOGGING))
                         
                                     {
@@ -293,168 +292,144 @@ this.specials= EMPTY;
 
 
     public setId(itemId: string){
-var itemId = itemId
 this.itemId= itemId;
     
 }
 
 
     public setNumber(number: string){
-var number = number
 this.number= number;
     
 }
 
 
     public setInBaskets(value: string){
-var value = value
 this.inBaskets= value;
     
 }
 
 
     public setWeight(value: string){
-var value = value
 this.weight= value;
     
 }
 
 
     public setNewOrUsed(value: string){
-var value = value
 this.newOrUsed= value;
     
 }
 
 
     public setSummary(value: string){
-var value = value
 this.summary= value;
     
 }
 
 
     public setDistributor(value: string){
-var value = value
 this.distributor= value;
     
 }
 
 
     public setIdUsedByDistributor(value: string){
-var value = value
 this.idUsedByDistributor= value;
     
 }
 
 
     public setProducedBy(value: string){
-var value = value
 this.producedBy= value;
     
 }
 
 
     public setProductionDate(value: string){
-var value = value
 this.productionDate= value;
     
 }
 
 
     public setStartProductionDate(value: string){
-var value = value
 this.startProductionDate= value;
     
 }
 
 
     public setDescription(value: string){
-var value = value
 this.description= value;
     
 }
 
 
     public setKeywords(value: string){
-var value = value
 this.keywords= value;
     
 }
 
 
     public setCategory(value: string){
-var value = value
 this.category= value;
     
 }
 
 
     public setType(value: string){
-var value = value
 this.type= value;
     
 }
 
 
     public setSmallImage(value: string){
-var value = value
 this.smallImage= value;
     
 }
 
 
     public setMediumImage(value: string){
-var value = value
 this.mediumImage= value;
     
 }
 
 
     public setLargeImage(value: string){
-var value = value
 this.largeImage= value;
     
 }
 
 
     public setTimeEntered(value: string){
-var value = value
 this.timeEntered= value;
     
 }
 
 
     public setLastModified(value: string){
-var value = value
 this.lastModified= value;
     
 }
 
 
     public setPrice(value: Money){
-var value = value
 this.price= value;
     
 }
 
 
     public setComment(value: string){
-var value = value
 this.comment= value;
     
 }
 
 
     public setCustoms(value: string){
-var value = value
 this.customs= value;
     
 }
 
 
     public setDownloads(value: string){
-var value = value
 this.downloads= value;
     
 
@@ -481,35 +456,30 @@ this.downloads= value;
 
 
     public setGroups(value: string){
-var value = value
 this.groups= value;
     
 }
 
 
     public setOptions(value: string){
-var value = value
 this.options= value;
     
 }
 
 
     public setPermissions(value: string){
-var value = value
 this.permissions= value;
     
 }
 
 
     public setSpecials(value: string){
-var value = value
 this.specials= value;
     
 }
 
 
     public setEnabled(value: string){
-var value = value
 this.enabled= value;
     
 }
@@ -796,7 +766,6 @@ this.enabled= value;
 
 
     public setDownloadable(downloadable: boolean){
-var downloadable = downloadable
 this.downloadable= downloadable;
     
 }

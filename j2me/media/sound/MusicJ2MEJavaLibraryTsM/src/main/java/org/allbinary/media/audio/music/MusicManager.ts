@@ -86,9 +86,6 @@ export class MusicManager
                                 {
                                 
     public playerUpdate(player: Player, event: string, eventData: any = {}){
-    //var player = player
-    //var event = event
-    //var eventData = eventData
 PreLogUtil.put(event, this, commonStrings!.PROCESS);
     
 
@@ -135,9 +132,7 @@ PreLogUtil.put(event, this, commonStrings!.PROCESS);
 public constructor (musicServiceClass: Function, songList: BasicArrayList){
 
             super();
-            //var musicServiceClass = musicServiceClass
-    //var songList = songList
-this.songList= songList;
+        this.songList= songList;
     
 }
 
@@ -162,9 +157,6 @@ this.process();
 
 
     public nextSong(nextSongSound: Sound, leftVolume: number, rightVolume: number){
-    //var nextSongSound = nextSongSound
-    //var leftVolume = leftVolume
-    //var rightVolume = rightVolume
 PreLogUtil.put(new StringMaker().
                             append(NEXT_SONG)!.append(nextSongSound!.getResource())!.toString(), this, this.commonStrings!.PROCESS);
     
@@ -374,8 +366,6 @@ PreLogUtil.putOE(this.commonStrings!.EXCEPTION_LABEL +resource, this, this.commo
                 //@Throws(Exception.constructor)
             
     waitForStateChange(endingCurrentSongSound: Sound, startingCurrentSongSound: Sound){
-    //var endingCurrentSongSound = endingCurrentSongSound
-    //var startingCurrentSongSound = startingCurrentSongSound
 
         while(endingCurrentSongSound!.getPlayerP()!.getState() == PlayerI.STARTED)
         {

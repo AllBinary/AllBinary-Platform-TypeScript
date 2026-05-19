@@ -75,9 +75,6 @@ export class AndroidImageUtil
 
 
     public paintBitmap(bitmap: Bitmap, originalBitmap: Bitmap, paint: Paint){
-    //var bitmap = bitmap
-    //var originalBitmap = originalBitmap
-    //var paint = paint
 bitmap.eraseColor(Color.TRANSPARENT);
     
 
@@ -92,9 +89,6 @@ canvas.drawBitmap(originalBitmap, 0.0, 0.0, paint);
 
 
     public paint(image: Image, originalImage: Image, paint: Paint){
-    //var image = image
-    //var originalImage = originalImage
-    //var paint = paint
 
     var androidImage: AndroidImageInterface = image as AndroidImageInterface;
 ;
@@ -115,10 +109,6 @@ canvas.drawBitmap(originalAndroidImage!.getBitmap(), 0.0, 0.0, paint);
 
 
     public rotate(image: Image, originalImage: Image, matrix: Matrix, paint: Paint){
-    //var image = image
-    //var originalImage = originalImage
-    //var matrix = matrix
-    //var paint = paint
 
     var androidImage: AndroidImageInterface = image as AndroidImageInterface;
 ;

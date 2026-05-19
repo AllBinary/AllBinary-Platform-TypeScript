@@ -87,9 +87,6 @@ private constructor (){
     private readonly features: Features = Features.getInstance()!;
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number){
-    //var originalImage = originalImage
-    //var image = image
-    //var totalAngle = totalAngle
 
     var originalImage2: Image = originalImage;
 ;
@@ -171,8 +168,6 @@ this.imageSwtRotationUtil!.rotateImage(originalSwtImage, copySwtImage, gc, total
                 //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
-var originalImage = originalImage
-var rotationInDegrees = rotationInDegrees
 
 
 

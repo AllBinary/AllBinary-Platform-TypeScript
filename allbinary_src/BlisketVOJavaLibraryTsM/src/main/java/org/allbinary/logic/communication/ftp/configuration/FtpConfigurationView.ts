@@ -70,8 +70,7 @@ export class FtpConfigurationView
 public constructor (node: Node){
 
             super();
-        var node = node
-this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
+        this.setFtpConfigurationInterface(new FtpConfiguration() as FtpConfigurationInterface);
     
 
     var chileNodeList: NodeList = node.getChildNodes()!;
@@ -106,8 +105,7 @@ this.getFtpConfigurationInterface()!.setPath(path);
 public constructor (ftpConfigurationInterface: FtpConfigurationInterface){
 
             super();
-        var ftpConfigurationInterface = ftpConfigurationInterface
-this.setFtpConfigurationInterface(ftpConfigurationInterface);
+        this.setFtpConfigurationInterface(ftpConfigurationInterface);
     
 }
 
@@ -115,7 +113,6 @@ this.setFtpConfigurationInterface(ftpConfigurationInterface);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var ftpConfigurationMapping: FtpConfigurationMapping = new FtpConfigurationMapping(this.getFtpConfigurationInterface());
 ;
@@ -148,7 +145,6 @@ var document = document
 
 
     public setFtpConfigurationInterface(ftpConfigurationInterface: FtpConfigurationInterface){
-var ftpConfigurationInterface = ftpConfigurationInterface
 this.ftpConfigurationInterface= ftpConfigurationInterface;
     
 }

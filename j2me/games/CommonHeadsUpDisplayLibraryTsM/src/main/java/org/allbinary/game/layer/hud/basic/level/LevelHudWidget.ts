@@ -63,9 +63,6 @@ export class LevelHudWidget extends BasicHud implements PaintableInterface {
                 //@Throws(Exception.constructor)
             
     public static createHud(maxlevel: number, location: number, direction: number): LevelHudWidget{
-var maxlevel = maxlevel
-var location = location
-var direction = direction
 
 
 
@@ -90,11 +87,7 @@ var direction = direction
     private readonly primitiveLongUtil: PrimitiveLongUtil
 public constructor (maxlevel: number, location: number, direction: number, maxWidth: number){
             super(location, direction, 14, maxWidth, 2, BasicColorFactory.getInstance()!.GREY);
-                    var maxlevel = maxlevel
-var location = location
-var direction = direction
-var maxWidth = maxWidth
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -130,7 +123,6 @@ this.levelNumberTotalDigits= this.primitiveLongUtil!.getCurrentTotalDigits();
 
 
     public setLevel(level: number){
-var level = level
 this.level= level;
     
 this.update();
@@ -191,14 +183,12 @@ this.update();
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 super.paintDX(graphics, this.levelString, 0, this.levelString!.length, this.levelNumberCharArray, 0, this.levelNumberTotalDigits, this.offset);
     
 }
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

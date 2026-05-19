@@ -56,10 +56,7 @@ export class CharacterFrictionProperties extends FrictionProperties {
 public constructor (airFriction: number, waterFriction: number, collisionFriction: number){
 
             super();
-        var airFriction = airFriction
-var waterFriction = waterFriction
-var collisionFriction = collisionFriction
-this.AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
+        this.AIR_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -airFriction;
     
 this.COLLISION_FRICTION_NOMINATOR= FrictionData.getFrictionDenominator() -collisionFriction;
     

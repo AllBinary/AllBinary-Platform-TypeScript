@@ -125,8 +125,7 @@ export class ImageUnifierJPanel extends javax.swing.JPanel implements ImageProce
 public constructor (imageProcessorInput: ImageProcessorInput){
 
             super();
-            //var imageProcessorInput = imageProcessorInput
-this.initComponents();
+        this.initComponents();
     
 this.setImageProcessorInput(imageProcessorInput);
     
@@ -346,7 +345,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "updateImageWithFudgedIma
 
 
     updateImage(tempBufferedImageArray: BufferedImage[]){
-    //var tempBufferedImageArray = tempBufferedImageArray
 this.result= ImageUnifierUtil.getInstance()!.getImage(tempBufferedImageArray, this.imageUnifierProperties);
     
 
@@ -472,7 +470,6 @@ this.jButton1!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jButton1ActionPerformed(evt);
     
 }
@@ -486,7 +483,6 @@ this.upJButton!.addActionListener(new class extends java.awt.event.ActionListene
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 upJButtonActionPerformed(evt);
     
 }
@@ -500,7 +496,6 @@ this.downJButton!.addActionListener(new class extends java.awt.event.ActionListe
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 downJButtonActionPerformed(evt);
     
 }
@@ -514,7 +509,6 @@ this.fudgeItJButton!.addActionListener(new class extends java.awt.event.ActionLi
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 fudgeItJButtonActionPerformed(evt);
     
 }
@@ -530,7 +524,6 @@ this.columnsJTextField!.addActionListener(new class extends java.awt.event.Actio
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 columnsJTextFieldActionPerformed(evt);
     
 }
@@ -542,7 +535,6 @@ this.columnsJTextField!.addPropertyChangeListener(new class extends java.beans.P
                                 {
                                 
     public propertyChange(evt: java.beans.PropertyChangeEvent){
-var evt = evt
 columnsJTextFieldPropertyChange(evt);
     
 }
@@ -554,13 +546,11 @@ this.columnsJTextField!.addKeyListener(new class extends java.awt.event.KeyAdapt
                                 {
                                 
     public keyPressed(evt: java.awt.event.KeyEvent){
-var evt = evt
 columnsJTextFieldKeyPressed(evt);
     
 }
 
     public keyTyped(evt: java.awt.event.KeyEvent){
-var evt = evt
 columnsJTextFieldKeyTyped(evt);
     
 }
@@ -576,7 +566,6 @@ this.rowsJTextField!.addActionListener(new class extends java.awt.event.ActionLi
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 rowsJTextFieldActionPerformed(evt);
     
 }
@@ -592,7 +581,6 @@ this.cellWidthJTextField!.addActionListener(new class extends java.awt.event.Act
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 cellWidthJTextFieldActionPerformed(evt);
     
 }
@@ -608,7 +596,6 @@ this.cellHeightJTextField!.addActionListener(new class extends java.awt.event.Ac
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 cellHeightJTextFieldActionPerformed(evt);
     
 }
@@ -630,7 +617,6 @@ this.jButton2!.addActionListener(new class extends java.awt.event.ActionListener
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jButton2ActionPerformed(evt);
     
 }
@@ -644,7 +630,6 @@ this.jButtonOrder!.addActionListener(new class extends java.awt.event.ActionList
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 jButtonOrderActionPerformed(evt);
     
 }
@@ -676,64 +661,54 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     jButton2ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateOnPropertiesChange();
     
 }
 
 
     columnsJTextFieldKeyPressed(evt: java.awt.event.KeyEvent){
-var evt = evt
 }
 
 
     columnsJTextFieldKeyTyped(evt: java.awt.event.KeyEvent){
-var evt = evt
 }
 
 
     columnsJTextFieldPropertyChange(evt: java.beans.PropertyChangeEvent){
-var evt = evt
 }
 
 
     fudgeItJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateImageWithFudgedImages();
     
 }
 
 
     cellHeightJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateOnPropertiesChange();
     
 }
 
 
     cellWidthJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateOnPropertiesChange();
     
 }
 
 
     columnsJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateOnPropertiesChange();
     
 }
 
 
     rowsJTextFieldActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.updateOnPropertiesChange();
     
 }
 
 
     jButton1ActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
         try {
             
@@ -775,7 +750,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "jButton1ActionPerformed"
 
 
     downJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
     var index: number = this.imageJList!.getSelectedIndex()!;
 ;
@@ -805,7 +779,6 @@ this.updateImage();
 
 
     upJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
     var index: number = this.imageJList!.getSelectedIndex()!;
 ;
@@ -835,7 +808,6 @@ this.updateImage();
 
 
     jButtonOrderActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 
     var defaultListModel: DefaultListModel = this.imageJList!.getModel() as DefaultListModel;
 ;
@@ -933,7 +905,6 @@ this.updateImage();
 
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
-var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput;
     
 this.init();

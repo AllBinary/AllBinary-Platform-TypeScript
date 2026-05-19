@@ -47,8 +47,7 @@ export class TimeLastModified extends Time {
         
 public constructor (time: string){
             super(time);
-                    var time = time
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -56,8 +55,7 @@ public constructor (time: string){
 
 public constructor (time: number){
             super(time);
-                    var time = time
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

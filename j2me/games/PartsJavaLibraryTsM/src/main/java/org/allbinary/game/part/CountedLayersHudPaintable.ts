@@ -78,12 +78,7 @@ export class CountedLayersHudPaintable
 public constructor (partInterfaceArray: PartInterface[], dropSize: number, startIndex: number, countedTotalStringColor: number, countedPartsBorder: number){
 
             super();
-        var partInterfaceArray = partInterfaceArray
-var dropSize = dropSize
-var startIndex = startIndex
-var countedTotalStringColor = countedTotalStringColor
-var countedPartsBorder = countedPartsBorder
-this.partInterfaceArray= partInterfaceArray;
+        this.partInterfaceArray= partInterfaceArray;
     
 this.startIndex= startIndex;
     
@@ -97,7 +92,6 @@ this.dropSize= dropSize;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
     var height: number = this.myFont!.DEFAULT_CHAR_HEIGHT;
 ;
@@ -200,7 +194,6 @@ graphics.drawRect(lastWidth -(CountedLayersHudPaintable.XXStringWidth +this.drop
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

@@ -72,14 +72,12 @@ export class GameKeyFromMotionGestureEventListener extends CompleteMotionGesture
     private previousGameKeyEvent: GameKeyEvent = GameKeyEvent.NONE;
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent){
-var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 
         try {
             

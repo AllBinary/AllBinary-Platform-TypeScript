@@ -72,7 +72,6 @@ export class BasicArrayListUtil
 
 
     public static main(args: string[]){
-var args = args
 
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
 ;
@@ -114,7 +113,6 @@ console.log(list.toString());
     private readonly immutableInstance: BasicArrayList = new ImmutableBasicArrayList("Immutable", 0);
 
     public getRandom(list: BasicArrayList): any{
-var list = list
 
     var i_random: number = this.getRandomIndex(list)!;
 ;
@@ -129,7 +127,6 @@ var list = list
 
 
     public getRandomIndex(list: BasicArrayList): number{
-var list = list
 
 
 
@@ -140,7 +137,6 @@ var list = list
 
 
     public reverse(list: BasicArrayList){
-    //var list = list
 
     var lastMinusOneIndex: number = list.size() -2;
 ;
@@ -179,7 +175,6 @@ list.addAt(secondSwapIndex +1, temp);
 
 
     public log(list: BasicArrayList): string{
-    //var list = list
 
     var S_LABEL: string = " s: ";
 ;

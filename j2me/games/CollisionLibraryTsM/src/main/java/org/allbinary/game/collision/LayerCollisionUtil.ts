@@ -100,8 +100,6 @@ private constructor (){
 
 
     public isCollision(myLayer: AllBinaryLayer, myLayer2: AllBinaryLayer): boolean{
-var myLayer = myLayer
-var myLayer2 = myLayer2
 
 
 

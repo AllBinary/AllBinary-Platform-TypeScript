@@ -118,14 +118,7 @@ export class Email
 public constructor (from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
 
             super();
-        var from = from
-var to = to
-var subject = subject
-var server = server
-var textBody = textBody
-var htmlAttachment = htmlAttachment
-var contentBase = contentBase
-this.isDebug= false;
+        this.isDebug= false;
     
 this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
@@ -134,15 +127,7 @@ this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
 public constructor (from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string, isDebug: boolean){
 
             super();
-        var from = from
-var to = to
-var subject = subject
-var server = server
-var textBody = textBody
-var htmlAttachment = htmlAttachment
-var contentBase = contentBase
-var isDebug = isDebug
-this.isDebug= isDebug;
+        this.isDebug= isDebug;
     
 this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
     
@@ -152,13 +137,6 @@ this.init(from, to, subject, server, textBody, htmlAttachment, contentBase);
                 //@Throws(Exception.constructor)
             
     public init(from: string, to: string, subject: string, server: string, textBody: string, htmlAttachment: string, contentBase: string){
-var from = from
-var to = to
-var subject = subject
-var server = server
-var textBody = textBody
-var htmlAttachment = htmlAttachment
-var contentBase = contentBase
 
         try {
             
@@ -237,14 +215,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "emailConstructor", e);
                 //@Throws(MessagingException.constructor)
             
     public init(server: string, authenticator: Authenticator, addresses_from: InternetAddress[], addresses_to: InternetAddress[], addresses_cc: InternetAddress[], addresses_bcc: InternetAddress[], subject: string, mimeBodyParts: MimeBodyPart[]){
-var server = server
-var authenticator = authenticator
-var addresses_from = addresses_from
-var addresses_to = addresses_to
-var addresses_cc = addresses_cc
-var addresses_bcc = addresses_bcc
-var subject = subject
-var mimeBodyParts = mimeBodyParts
 this.properties= new Properties();
     
 this.properties.put(Email.SMTP_HOST, server);
@@ -572,7 +542,6 @@ hashMap!.put(EmailData.CONTENT, content);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, EmailData.NAME, this.toHashMap())!;
 ;

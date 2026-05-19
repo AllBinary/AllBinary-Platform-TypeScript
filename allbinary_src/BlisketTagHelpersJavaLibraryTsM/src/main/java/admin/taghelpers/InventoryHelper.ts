@@ -65,9 +65,7 @@ export class InventoryHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.portion= new Portion(hashMap);
+        this.portion= new Portion(hashMap);
     
 }
 

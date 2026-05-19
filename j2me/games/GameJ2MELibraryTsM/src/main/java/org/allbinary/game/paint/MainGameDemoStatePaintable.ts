@@ -54,9 +54,7 @@ export class MainGameDemoStatePaintable extends Paintable {
 public constructor (ownershipPaintableInterface: Paintable, menuPaintableInterface: Paintable){
 
             super();
-        var ownershipPaintableInterface = ownershipPaintableInterface
-var menuPaintableInterface = menuPaintableInterface
-this.ownershipPaintableInterface= ownershipPaintableInterface;
+        this.ownershipPaintableInterface= ownershipPaintableInterface;
     
 this.menuPaintableInterface= menuPaintableInterface;
     
@@ -64,7 +62,6 @@ this.menuPaintableInterface= menuPaintableInterface;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.menuPaintableInterface!.paint(graphics);
     
 this.ownershipPaintableInterface!.paint(graphics);

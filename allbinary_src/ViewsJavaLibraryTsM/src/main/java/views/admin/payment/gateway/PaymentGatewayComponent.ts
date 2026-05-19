@@ -67,9 +67,7 @@ export class PaymentGatewayComponent extends HttpStoreComponentView {
     private paymentGatewayInterface: PaymentGatewayInterface
 public constructor (transformInfoInterface: TransformInfoInterface, paymentGatewayInterface: PaymentGatewayInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-var paymentGatewayInterface = paymentGatewayInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

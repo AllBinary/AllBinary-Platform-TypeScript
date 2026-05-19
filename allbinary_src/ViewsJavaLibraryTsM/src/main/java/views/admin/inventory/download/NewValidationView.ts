@@ -64,8 +64,7 @@ export class NewValidationView extends DownloadableInventoryItemView implements 
         
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface, StringUtil.getInstance()!.EMPTY_STRING);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -111,7 +110,6 @@ this.downloadableItem= new DownloadableItem(this.itemInterface!.getId());
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

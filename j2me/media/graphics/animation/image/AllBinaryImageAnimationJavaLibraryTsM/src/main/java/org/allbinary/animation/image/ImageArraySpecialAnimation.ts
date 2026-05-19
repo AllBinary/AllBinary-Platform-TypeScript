@@ -64,9 +64,7 @@ export class ImageArraySpecialAnimation extends ImageArrayAnimation implements S
     private readonly timeDelayHelper: TimeDelayHelper = new TimeDelayHelper(270);
 public constructor (imageArray: Image[], animationBehavior: AnimationBehavior){
             super(imageArray, animationBehavior);
-                        //var imageArray = imageArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -160,9 +158,6 @@ this.loopCount= 0;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-var x = x
-var y = y
 x= DisplayInfoSingleton.getInstance()!.getLastHalfWidth() -(this.getImage(this.circularIndexUtil!.getIndex())!.getWidth()>>1);
     
 y= 5;

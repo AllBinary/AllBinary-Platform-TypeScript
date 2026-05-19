@@ -85,10 +85,6 @@ this.touchButtonRecognizer= new TouchButtonRecognizer();
                 //@Throws(Exception.constructor)
             
     public processStartMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-    //var x = x
-    //var y = y
-    //var deviceId = deviceId
-    //var modifiers = modifiers
 
                         if(this.touchButtonRecognizer!.pressTouchButtonInput(x, y, deviceId))
                         
@@ -121,10 +117,6 @@ this.motionGestureRecognizer!.processPressedMotionEvent(point, deviceId, modifie
                 //@Throws(Exception.constructor)
             
     public processEndMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-    //var x = x
-    //var y = y
-    //var deviceId = deviceId
-    //var modifiers = modifiers
 
                         if(this.touchButtonRecognizer!.releaseTouchButtonInput(x, y, deviceId))
                         
@@ -164,10 +156,6 @@ this.motionGestureRecognizer!.processReleasedMotionEvent(point, deviceId, modifi
                 //@Throws(Exception.constructor)
             
     public processDraggedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-    //var x = x
-    //var y = y
-    //var deviceId = deviceId
-    //var modifiers = modifiers
 
                         if(this.touchButtonProcessing)
                         
@@ -204,10 +192,6 @@ this.motionGestureRecognizer!.processDraggedMotionEvent(point, deviceId, modifie
                 //@Throws(Exception.constructor)
             
     public processMovedMotionEvent(x: number, y: number, deviceId: number, modifiers: number){
-    //var x = x
-    //var y = y
-    //var deviceId = deviceId
-    //var modifiers = modifiers
 
                         if(x != this.lastX || y != this.lastY)
                         

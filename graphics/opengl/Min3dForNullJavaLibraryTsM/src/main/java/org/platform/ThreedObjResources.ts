@@ -63,7 +63,6 @@ export class ThreedObjResources
     public readonly hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     public get(resourceName: string): string{
-    //var resourceName = resourceName
 
     var resourceName2: string = this.hashtable.get(resourceName) as string;
 ;

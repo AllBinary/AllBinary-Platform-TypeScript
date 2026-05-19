@@ -76,7 +76,6 @@ private constructor (){
 
 
     public add(basicDefaultColor: BasicColor){
-    //var basicDefaultColor = basicDefaultColor
 this.BASIC_COLOR_ARRAY[this.colorIndex]= basicDefaultColor;
     
 this.INDEX_TO_COLOR[this.colorIndex]= basicDefaultColor!.intValue();
@@ -87,7 +86,6 @@ this.colorIndex++;
 
 
     public getAndOrCreate(colorAsInt: number): BasicColor{
-    //var colorAsInt = colorAsInt
 
     var basicColor: BasicColor
 ;

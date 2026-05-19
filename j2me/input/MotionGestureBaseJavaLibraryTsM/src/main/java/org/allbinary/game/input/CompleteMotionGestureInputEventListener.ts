@@ -37,12 +37,10 @@ export class CompleteMotionGestureInputEventListener
         
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 }
 
 
     public onCompleteMotionGestureInputEvent(completeMotionGestureInputEvent: CompleteMotionGestureInputEvent){
-    //var completeMotionGestureInputEvent = completeMotionGestureInputEvent
 }
 
 

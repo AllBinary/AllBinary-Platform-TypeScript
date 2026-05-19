@@ -57,7 +57,6 @@ export class RaceTracksPathPrinter
         
 
     printPath(list: BasicArrayList){
-var list = list
 
     var size: number = list.size()!;
 ;
@@ -83,7 +82,6 @@ PreLogUtil.put(new StringMaker().
 
 
     printPaths(list: BasicArrayList){
-var list = list
 
     var size: number = list.size()!;
 ;

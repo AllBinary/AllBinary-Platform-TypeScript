@@ -98,9 +98,7 @@ export class InitializerDatabase
 public constructor (abeClientInformation: AbeClientInformationInterface, map: Map){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var map = map
-
+        
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
@@ -162,16 +160,12 @@ this.getFormData(abeClientInformation, hashMap);
 public constructor (abeClientInformation: AbeClientInformationInterface, initHashMap: HashMap<any, any>){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var initHashMap = initHashMap
-this.getFormData(abeClientInformation, initHashMap);
+        this.getFormData(abeClientInformation, initHashMap);
     
 }
 
 
     public getFormData(abeClientInformation: AbeClientInformationInterface, hashMap: HashMap<any, any>){
-    //var abeClientInformation = abeClientInformation
-    //var hashMap = hashMap
 
         try {
             
@@ -226,7 +220,6 @@ this.logUtil!.put("Unable to get form data", this, "getFormData()", e);
 
 
     isJdbcDriverValid(jdbcDriverClassPathString: string): boolean{
-var jdbcDriverClassPathString = jdbcDriverClassPathString
 
         try {
             Class.forName(jdbcDriverClassPathString)!.newInstance();
@@ -311,7 +304,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.IS_VALID, e);
 
 
     getJdbcDriverValidationInfo(jdbcDriver: string): string{
-var jdbcDriver = jdbcDriver
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -490,7 +482,6 @@ this.logUtil!.put("Unable to Create Tables", this, "createTables()", e);
 
 
     public setAdminDbUserName(adminDbUserName: string){
-var adminDbUserName = adminDbUserName
 this.adminDbUserName= adminDbUserName;
     
 }
@@ -507,7 +498,6 @@ this.adminDbUserName= adminDbUserName;
 
 
     public setAdminDbPassword(adminDbPassword: string){
-var adminDbPassword = adminDbPassword
 this.adminDbPassword= adminDbPassword;
     
 }
@@ -524,7 +514,6 @@ this.adminDbPassword= adminDbPassword;
 
 
     public setAdminJdbcDriver(adminJdbcDriver: string){
-var adminJdbcDriver = adminJdbcDriver
 this.adminJdbcDriver= adminJdbcDriver;
     
 }
@@ -541,7 +530,6 @@ this.adminJdbcDriver= adminJdbcDriver;
 
 
     public setAdminSchema(adminSchema: string){
-var adminSchema = adminSchema
 this.adminSchema= adminSchema;
     
 }
@@ -558,7 +546,6 @@ this.adminSchema= adminSchema;
 
 
     public setAdminServer(adminServer: string){
-var adminServer = adminServer
 this.adminServer= adminServer;
     
 }
@@ -575,7 +562,6 @@ this.adminServer= adminServer;
 
 
     public setAdminPort(adminPort: string){
-var adminPort = adminPort
 this.adminPort= adminPort;
     
 }

@@ -74,7 +74,6 @@ export class GameKeyCompleteMotionGestureInputEventFactory
     private readonly eventList: BasicArrayList = new BasicArrayListD();
 
     public add(gameKeyCompleteMotionGestureInputEvent: GameKeyCompleteMotionGestureInputEvent){
-var gameKeyCompleteMotionGestureInputEvent = gameKeyCompleteMotionGestureInputEvent
 this.eventList!.add(gameKeyCompleteMotionGestureInputEvent);
     
 }

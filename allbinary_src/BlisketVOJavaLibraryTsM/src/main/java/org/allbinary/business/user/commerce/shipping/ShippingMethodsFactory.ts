@@ -132,9 +132,7 @@ SHIPPINGMETHODSFILEPATHSTRING= stringBuffer!.toString();
 public constructor (abeClientInformation: AbeClientInformationInterface, storeFrontInterface: StoreFrontInterface){
 
             super();
-            //var abeClientInformation = abeClientInformation
-    //var storeFrontInterface = storeFrontInterface
-
+        
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
@@ -214,7 +212,7 @@ this.shippingVector!.add(shippingMethodInterface);
 
                         if(defaultShippingMethodNameNodeValue != 
                                     null
-                                 && defaultShippingMethodNameNodeValue!.localeCompare(ShippingMethodData.DEFAULT) == 0)
+                                 && defaultShippingMethodNameNodeValue!.compareTo(ShippingMethodData.DEFAULT) == 0)
                         this.defaultShippingMethodInterface= shippingMethodInterface
 }
 

@@ -58,8 +58,7 @@ export class BaseAnimationInterfaceFactoryInterfaceComposite
 public constructor (basicAnimationInterfaceFactoryInterfaceArray: BasicAnimationInterfaceFactoryInterface[]){
 
             super();
-        var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
-this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
+        this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
     
 }
 
@@ -67,7 +66,6 @@ this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactor
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -88,14 +86,12 @@ this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactor
 
 
     public setBasicAnimationInterfaceFactoryInterfaceArray(basicAnimationInterfaceFactoryInterfaceArray: BasicAnimationInterfaceFactoryInterface[]){
-var basicAnimationInterfaceFactoryInterfaceArray = basicAnimationInterfaceFactoryInterfaceArray
 this.basicAnimationInterfaceFactoryInterfaceArray= basicAnimationInterfaceFactoryInterfaceArray;
     
 }
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

@@ -51,7 +51,6 @@ export class CanvasUtil
         
 
     public static getKeyName(key: number): string{
-var key = key
 
     var commonPhoneStrings: CommonPhoneStrings = CommonPhoneStrings.getInstance()!;
 ;

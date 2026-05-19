@@ -43,7 +43,6 @@ export class TimeTypeTest
         
 
     static millisForHourLocal(hour: number): number{
-var hour = hour
 
     var cal: Calendar = Calendar.getInstance()!;
 ;
@@ -75,8 +74,7 @@ static TestableTimeTypeUtil = class extends TimeTypeUtil {
  constructor (hour: number){
 
             super();
-        var hour = hour
-this.hour= hour;
+        this.hour= hour;
     
 }
 

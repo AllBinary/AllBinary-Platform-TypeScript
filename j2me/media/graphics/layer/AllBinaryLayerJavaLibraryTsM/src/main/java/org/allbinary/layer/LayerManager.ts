@@ -63,8 +63,7 @@ export class LayerManager
 public constructor (layerManagerLogging: LayerManagerLoggingBase){
 
             super();
-            //var layerManagerLogging = layerManagerLogging
-this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
+        this.logUtil!.putF(this.commonStrings!.START, this, this.commonStrings!.CONSTRUCTOR);
     
 this.layerManagerLogging= layerManagerLogging;
     
@@ -72,7 +71,6 @@ this.layerManagerLogging= layerManagerLogging;
 
 
     public contains(layerInterface: AllBinaryLayer): boolean{
-    //var layerInterface = layerInterface
 
 
 
@@ -85,7 +83,6 @@ this.layerManagerLogging= layerManagerLogging;
                 //@Throws(Exception.constructor)
             
     public insert(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 
     var nextLayerInterface: AllBinaryLayer
 ;
@@ -129,7 +126,6 @@ this.append(layerInterface);
                 //@Throws(Exception.constructor)
             
     public append(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 this.layerManagerLogging!.append(layerInterface);
     
 this.list.add(layerInterface);
@@ -140,8 +136,6 @@ this.list.add(layerInterface);
                 //@Throws(Exception.constructor)
             
     public appendAt(layerInterface: AllBinaryLayer, index: number){
-    //var layerInterface = layerInterface
-    //var index = index
 this.layerManagerLogging!.appendAt(layerInterface, index);
     
 this.list.addAt(index, layerInterface);
@@ -152,7 +146,6 @@ this.list.addAt(index, layerInterface);
                 //@Throws(Exception.constructor)
             
     public remove(layerInterface: AllBinaryLayer){
-    //var layerInterface = layerInterface
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -174,7 +167,6 @@ this.layerManagerLogging!.removeResult(this, layerInterface, result);
 
 
     public getLayerAt(index: number): Layer{
-    //var index = index
 
 
 
@@ -218,9 +210,6 @@ System.gc();
 
 
     public paint(g: Graphics, x: number, y: number){
-var g = g
-var x = x
-var y = y
 
         
         //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.

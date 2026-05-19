@@ -74,8 +74,6 @@ export class AnyRandomDropCellPositionGenerator extends BaseDropCellPositionGene
                 //@Throws(Exception.constructor)
             
     public update(allBinaryGameLayerManager: AllBinaryGameLayerManager, geographicMapInterface: BasicGeographicMap){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
-    //var geographicMapInterface = geographicMapInterface
 this.geographicMapInterface= geographicMapInterface;
     
 
@@ -137,7 +135,6 @@ geographicMapCellPosition= basicGeographicMapCellPositionFactory!.getAt(randomCo
                 //@Throws(Exception.constructor)
             
     public processTick(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 }
 
 

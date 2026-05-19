@@ -74,7 +74,6 @@ export class AngleFactory
 
 
     public static main(args: string[]){
-var args = args
 
     var stringMaker: StringMaker = new StringMaker();
 ;
@@ -200,7 +199,6 @@ this.angleArray[index]= new Angle(index);
     private readonly frameUtil: FrameUtil = FrameUtil.getInstance()!;
 
     public getAt(index: number): Angle{
-    //var index = index
 
     var adjustedIndex: number = Math.round(this.frameUtil!.adjustAngleToFrameAngle(index));
 ;
@@ -215,7 +213,6 @@ this.angleArray[index]= new Angle(index);
 
 
     public getClosestDirection(angle: number): Angle{
-var angle = angle
 
                         if((angle >= 315 && angle < 360) || (angle >= 0 && angle < 45))
                         

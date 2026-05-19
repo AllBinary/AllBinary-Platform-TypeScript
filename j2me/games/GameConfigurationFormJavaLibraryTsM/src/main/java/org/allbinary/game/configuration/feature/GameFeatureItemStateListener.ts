@@ -78,7 +78,6 @@ export class GameFeatureItemStateListener
     private static toggleList: BasicArrayList = new BasicArrayListD();
 
     public static add(gameFeature: GameFeature){
-var gameFeature = gameFeature
 
                         if(!GameFeatureItemStateListener.toggleList!.contains(gameFeature))
                         
@@ -97,8 +96,7 @@ var gameFeature = gameFeature
 public constructor (gameOptionsForm: GameOptionsForm){
 
             super();
-        var gameOptionsForm = gameOptionsForm
-this.gameOptionsForm= gameOptionsForm;
+        this.gameOptionsForm= gameOptionsForm;
     
 
     var gameFeatureFactory: GameFeatureFactory = GameFeatureFactory.getInstance()!;
@@ -124,7 +122,6 @@ GameFeatureItemStateListener.add(gameFeatureFactory!.TICKABLE_LAYER_PROCESSOR);
 
 
     public itemStateChanged(item: Item){
-var item = item
 
         try {
             

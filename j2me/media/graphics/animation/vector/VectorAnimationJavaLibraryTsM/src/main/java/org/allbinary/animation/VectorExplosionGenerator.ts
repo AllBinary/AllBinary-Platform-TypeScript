@@ -90,9 +90,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public createList(list: BasicArrayList, howMuch: number, type: VectorExplosionType): BasicArrayList{
-    //var list = list
-    //var howMuch = howMuch
-    //var type = type
 
     var point: GPoint
 ;
@@ -125,7 +122,7 @@ points[index]![1]= point.getY();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return createListFromPoints(list, points, howMuch, type);;
+                        return this.createListFromPoints(list, points, howMuch, type);;
     
 }
 
@@ -133,9 +130,6 @@ points[index]![1]= point.getY();
                 //@Throws(Exception.constructor)
             
     public getInstance(points: number[][], howMuch: number, type: VectorExplosionType): number[][][]{
-    //var points = points
-    //var howMuch = howMuch
-    //var type = type
 
     var pointsBasicArrayList: BasicArrayList = this.getInstanceStartFrame(points, howMuch, type, true)!;
 ;
@@ -160,17 +154,13 @@ points[index]![1]= point.getY();
                 //@Throws(Exception.constructor)
             
     public getInstanceStartFrame(points: number[][], howMuch: number, type: VectorExplosionType, startFrame: boolean): BasicArrayList{
-    //var points = points
-    //var howMuch = howMuch
-    //var type = type
-    //var startFrame = startFrame
 
         try {
             
     var pointsBasicArrayList: BasicArrayList = new BasicArrayListS(howMuch);
 ;
     
-pointsBasicArrayList!.add(createPointsBasicArrayList(points));
+pointsBasicArrayList!.add(this.createPointsBasicArrayList(points));
     
 
     var frameIndex: number = 0;
@@ -231,10 +221,6 @@ frameIndex++;
                 //@Throws(Exception.constructor)
             
     createListFromPoints(tempBasicArrayList: BasicArrayList, points: number[][], howMuch: number, type: VectorExplosionType): BasicArrayList{
-    //var tempBasicArrayList = tempBasicArrayList
-    //var points = points
-    //var howMuch = howMuch
-    //var type = type
 
     var index: number = 0;
 ;
@@ -333,7 +319,6 @@ index++;
                 //@Throws(Exception.constructor)
             
     createPointsBasicArrayList(points: number[][]): BasicArrayList{
-    //var points = points
 
                         if(points.length == 0)
                         

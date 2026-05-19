@@ -79,15 +79,12 @@ export class CommandUriAction
     private hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 
     public add(command: Command, url: string){
-var command = command
-var url = url
 this.hashtable.put(command, url);
     
 }
 
 
     public process(command: Command){
-var command = command
 
         try {
             
@@ -112,7 +109,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.PROCESS, e);
 
 
     public getIntent(command: Command): Intent{
-var command = command
 
     var url: string = this.hashtable.get(command) as string;
 ;

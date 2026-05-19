@@ -72,7 +72,6 @@ export class DomDocumentFileHelper
                 //@Throws(Exception.constructor)
             
     public static createDocument(xmlFile: AbFile): Document{
-var xmlFile = xmlFile
 
         try {
             
@@ -98,8 +97,6 @@ var xmlFile = xmlFile
                 //@Throws(Exception.constructor)
             
     public static save(file: AbFile, document: Document){
-var file = file
-var document = document
 
     var dataOutputStream: AbDataOutputStream = 
                 null

@@ -91,7 +91,6 @@ public constructor (){
 
 
     public addListener(renderer: any = {}){
-var renderer = renderer
 this.renderer= renderer as AllBinaryRendererBase3;
     
 }
@@ -100,7 +99,6 @@ this.renderer= renderer as AllBinaryRendererBase3;
                 //@Throws(Exception.constructor)
             
     public update(gl: GL10){
-    //var gl = gl
 this.gl= gl;
     
 
@@ -141,9 +139,6 @@ index >= 0; index--)
                 //@Throws(Exception.constructor)
             
     createImage(caller: string, width: number, height: number): Image{
-    //var caller = caller
-var width = width
-var height = height
 
     var textureSize: number = width;
 ;
@@ -206,8 +201,6 @@ height= textureSize;
                 //@Throws(Exception.constructor)
             
     createImageFromInputStream(key: any = {}, inputStream: InputStream): Image{
-    //var key = key
-    //var inputStream = inputStream
 
     var cachedImage: Image = this.imageCache!.getWithKey(key)!;
 ;
@@ -254,7 +247,6 @@ height= textureSize;
 
 
     public init(image: Image){
-    //var image = image
 
         try {
             

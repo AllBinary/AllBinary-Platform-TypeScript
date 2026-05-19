@@ -62,8 +62,7 @@ export class UserConfigurationDomDocumentMapping
 public constructor (userConfigurationInterface: UserConfigurationInterface){
 
             super();
-        var userConfigurationInterface = userConfigurationInterface
-this.userConfigurationInterface= userConfigurationInterface;
+        this.userConfigurationInterface= userConfigurationInterface;
     
 }
 

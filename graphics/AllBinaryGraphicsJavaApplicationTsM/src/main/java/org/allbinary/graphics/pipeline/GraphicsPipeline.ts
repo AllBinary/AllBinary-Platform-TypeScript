@@ -57,8 +57,7 @@ export class GraphicsPipeline extends BasicGraphicsPipeline {
         
 public constructor (points: BasicArrayList){
             super(points);
-                    var points = points
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -68,7 +67,6 @@ public constructor (points: BasicArrayList){
                 //@Throws(Exception.constructor)
             
     public rotateTheta(aTheta: number){
-var aTheta = aTheta
 
     var newVector: BasicArrayList = new BasicArrayListD();
 ;

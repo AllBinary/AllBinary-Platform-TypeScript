@@ -51,8 +51,7 @@ export class BasicAdvertisementWebsite
 public constructor (websiteId: string){
 
             super();
-        var websiteId = websiteId
-this.websiteId= websiteId;
+        this.websiteId= websiteId;
     
 }
 

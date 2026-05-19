@@ -86,7 +86,6 @@ export class InstallerInfo
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setHasRead(value: boolean){
-var value = value
 InstallerInfo.hasRead= value;
     
 }
@@ -233,14 +232,12 @@ this.setPassword(new WeakCrypt(2).
 
 
     public setUserName(userName: string){
-var userName = userName
 InstallerInfo.userName= userName;
     
 }
 
 
     public setPassword(password: string){
-var password = password
 InstallerInfo.password= password;
     
 }
@@ -315,16 +312,14 @@ this.updateIfNeeded();
                 //@Throws(Exception.constructor)
             
     public isValid(userName: string, password: string): boolean{
-var userName = userName
-var password = password
 this.updateIfNeeded();
     
 
                         if(this.userName != 
                                     null
-                                 && this.userName!.localeCompare(userName) == 0 && this.password != 
+                                 && this.userName!.compareTo(userName) == 0 && this.password != 
                                     null
-                                 && this.password.localeCompare(password) == 0)
+                                 && this.password.compareTo(password) == 0)
                         
                                     {
                                     

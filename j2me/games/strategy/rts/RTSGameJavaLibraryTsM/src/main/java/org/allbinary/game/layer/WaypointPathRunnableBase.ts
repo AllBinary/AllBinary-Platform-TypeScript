@@ -83,7 +83,6 @@ export class WaypointPathRunnableBase
 
 
     public setRunning(isRunning: boolean){
-    //var isRunning = isRunning
 this.runningP= isRunning;
     
 }
@@ -92,12 +91,10 @@ this.runningP= isRunning;
                 //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
-    //var thread = thread
 }
 
 
     public setTargetLayer(waypointLayer: PathFindingLayerInterface){
-    //var waypointLayer = waypointLayer
 this.targetPathFindingLayer= waypointLayer;
     
 this.setPriority();
@@ -147,7 +144,6 @@ this.priorityP= distanceCategory;
 
 
     public setUnitLayer(unitLayer: PathFindingLayerInterface){
-var unitLayer = unitLayer
 this.pathFindingLayer= unitLayer;
     
 }

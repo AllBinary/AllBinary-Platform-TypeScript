@@ -68,8 +68,7 @@ export class ModifyTag extends HelperTag {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             super(tagHelperFactoryInterface);
-                    var tagHelperFactoryInterface = tagHelperFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -294,7 +293,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
 ;
     
 
-                        if(this.getCommand()!.localeCompare(commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.compareTo(commonStrings!.INSERT) == 0)
                         
                                     {
                                     
@@ -314,7 +313,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.compareTo(commonStrings!.DELETE) == 0)
                         
                                     {
                                     
@@ -334,7 +333,7 @@ this.logUtil!.putF(stringBuffer!.toString(), this, tagStrings!.DO_START_TAG);
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(commonStrings!.UPDATE) == 0)
+                        if(this.getCommand()!.compareTo(commonStrings!.UPDATE) == 0)
                         
                                     {
                                     

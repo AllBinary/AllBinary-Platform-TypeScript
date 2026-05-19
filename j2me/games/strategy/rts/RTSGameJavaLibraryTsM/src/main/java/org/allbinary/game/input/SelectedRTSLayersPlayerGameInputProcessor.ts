@@ -50,8 +50,7 @@ export class SelectedRTSLayersPlayerGameInputProcessor extends GameInputProcesso
 public constructor (selectedRTSLayersPlayerGameInput: SelectedRTSLayersPlayerGameInput){
 
             super();
-        var selectedRTSLayersPlayerGameInput = selectedRTSLayersPlayerGameInput
-this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
+        this.selectedRTSLayersPlayerGameInput= selectedRTSLayersPlayerGameInput;
     
 }
 

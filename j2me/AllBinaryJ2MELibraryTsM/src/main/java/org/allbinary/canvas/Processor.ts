@@ -69,7 +69,6 @@ export class Processor
                 //@Throws(Exception.constructor)
             
     public processt(timeDelta: number){
-    //var timeDelta = timeDelta
 }
 
 

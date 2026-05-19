@@ -112,8 +112,7 @@ this.titleValidation= new TitleNotRequiredValidation();
 public constructor (document: Document){
 
             super();
-        var document = document
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -173,8 +172,7 @@ this.titleValidation= new TitleNotRequiredValidation(titleNode);
 public constructor (hashMap: HashMap<any, any>){
 
             super();
-        var hashMap = hashMap
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -191,7 +189,6 @@ this.getFormData(hashMap);
                 //@Throws(Exception.constructor)
             
     public getFormData(hashMap: HashMap<any, any>){
-var hashMap = hashMap
 this.body= hashMap!.get(BodyData.getInstance()!.NAME) as string;
     
 this.titleValidation= new TitleNotRequiredValidation(hashMap);
@@ -334,7 +331,6 @@ stringBuffer!.appendint(AbSqlData.MAXBLOB);
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -347,7 +343,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

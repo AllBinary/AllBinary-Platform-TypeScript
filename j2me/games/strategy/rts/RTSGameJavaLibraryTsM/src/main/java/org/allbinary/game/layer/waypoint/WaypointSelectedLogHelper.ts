@@ -84,8 +84,6 @@ export class WaypointSelectedLogHelper extends WaypointLogHelper {
     private readonly stringUtil: StringUtil = StringUtil.getInstance()!;
 
     public onWaypointEvent(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var advancedRTSGameLayer = advancedRTSGameLayer
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -115,8 +113,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "onWaypointEvent");
 
 
     public addWaypointFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var advancedRTSGameLayer = advancedRTSGameLayer
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -146,9 +142,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 
 
     public addWaypointFromBuildingList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, advancedRTSGameLayer: PathFindingLayerInterface, list: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var advancedRTSGameLayer = advancedRTSGameLayer
-    //var list = list
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -165,10 +158,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: onWaypointEvent");
 
 
     public insertWaypoint(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var index = index
-var rtsLayer = rtsLayer
-    //var waypointName = waypointName
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -191,11 +180,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
 
 
     public insertWaypointList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, index: number, rtsLayer: CollidableDestroyableDamageableLayer, waypointName: string, list: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var index = index
-    //var rtsLayer = rtsLayer
-    //var waypointName = waypointName
-    //var list = list
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -220,8 +204,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: insertWaypoint");
 
 
     public setRandomGeographicMapCellHistoryList(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var pathsList = pathsList
 
     var size: number = pathsList!.size()!;
 ;
@@ -248,7 +230,6 @@ this.logUtil!.putF(stringBuffer!.toString(), this, "selected: setRandomGeographi
 
 
     public moveAwayFromBuilding(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" Trying to move away from building")!.toString(), this, "selected: moveAwayFromBuilding");
     
@@ -256,8 +237,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public needToMove(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, unitWaypointBehavior: WaypointBehaviorBase){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var unitWaypointBehavior = unitWaypointBehavior
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(unitWaypointBehavior!.getMovementLogicAsString())!.toString(), this, "needToMove");
     
@@ -265,7 +244,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public setRandomGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 this.logUtil!.putF(new StringMaker().
                             append(associatedAdvancedRTSGameLayer!.getName())!.append(" pathsList is null")!.toString(), this, "setRandomGeographicMapCellHistory");
     
@@ -273,9 +251,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public setCurrentPathGeographicMapCellPosition(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, existingCurrentPathGeographicMapCellPosition: GeographicMapCellPosition, currentPathGeographicMapCellPosition: GeographicMapCellPosition){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var existingCurrentPathGeographicMapCellPosition = existingCurrentPathGeographicMapCellPosition
-    //var currentPathGeographicMapCellPosition = currentPathGeographicMapCellPosition
 
                         if(existingCurrentPathGeographicMapCellPosition == 
                                     null
@@ -286,9 +261,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public setNextUnvisitedPathGeographicMapCellPosition(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, existingNextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition, nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var existingNextUnvisitedPathGeographicMapCellPosition = existingNextUnvisitedPathGeographicMapCellPosition
-    //var nextUnvisitedPathGeographicMapCellPosition = nextUnvisitedPathGeographicMapCellPosition
 
                         if(existingNextUnvisitedPathGeographicMapCellPosition != nextUnvisitedPathGeographicMapCellPosition)
                         this.logUtil!.putF(new StringMaker().

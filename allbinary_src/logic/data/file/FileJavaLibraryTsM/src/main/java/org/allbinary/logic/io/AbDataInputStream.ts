@@ -49,8 +49,7 @@ export class AbDataInputStream extends DataInputStream {
         
 public constructor (out: InputStream){
             super(out);
-                    var out = out
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

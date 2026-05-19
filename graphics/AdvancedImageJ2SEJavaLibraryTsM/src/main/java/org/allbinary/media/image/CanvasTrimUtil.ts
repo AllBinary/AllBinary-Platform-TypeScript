@@ -75,12 +75,6 @@ export class CanvasTrimUtil
                 //@Throws(IOException.constructor)
             
     public process(imageProcessorInput: ImageProcessorInput, cutCanvasFromLeftReduction: number, cutCanvasFromTopReduction: number, cutCanvasFromRightReduction: number, cutCanvasFromBottomReduction: number, visitor: ImageProcessedVisitor){
-    //var imageProcessorInput = imageProcessorInput
-    //var cutCanvasFromLeftReduction = cutCanvasFromLeftReduction
-    //var cutCanvasFromTopReduction = cutCanvasFromTopReduction
-    //var cutCanvasFromRightReduction = cutCanvasFromRightReduction
-    //var cutCanvasFromBottomReduction = cutCanvasFromBottomReduction
-    //var visitor = visitor
 
     var bufferedImageArray: BufferedImage[] = imageProcessorInput!.getBufferedImageArray()!;
 ;

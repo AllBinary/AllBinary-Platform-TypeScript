@@ -101,8 +101,7 @@ export class Order
 public constructor (basket: BasketInterface){
 
             super();
-        var basket = basket
-this.basket= basket;
+        this.basket= basket;
     
 this.id= 
                                         null
@@ -115,13 +114,7 @@ this.shippingType= StringUtil.getInstance()!.EMPTY_STRING;
 public constructor (storeName: string, basket: BasketInterface, id: string, shippingType: string, special: string, paymentMethod: string){
 
             super();
-        var storeName = storeName
-var basket = basket
-var id = id
-var shippingType = shippingType
-var special = special
-var paymentMethod = paymentMethod
-this.storeName= storeName;
+        this.storeName= storeName;
     
 this.basket= basket;
     
@@ -140,7 +133,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.localeCompare(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
+                                 || this.getId()!.compareTo(StringUtil.getInstance()!.EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
                         
                                     {
                                     
@@ -179,7 +172,7 @@ this.paymentMethod= paymentMethod;
 
                         if(this.getId() == 
                                     null
-                                 || this.getId()!.localeCompare(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
+                                 || this.getId()!.compareTo(EMPTY_STRING) == 0 || this.getId()!.length() > OrderHistoryData.MAXIDLEN || !StringValidationUtil.getInstance()!.isNumber(this.getId()))
                         
                                     {
                                     
@@ -201,63 +194,54 @@ this.paymentMethod= paymentMethod;
 
 
     public setShippingMethod(shippingType: string){
-var shippingType = shippingType
 this.shippingType= shippingType;
     
 }
 
 
     public setPaymentMethod(value: string){
-var value = value
 this.paymentMethod= value;
     
 }
 
 
     public setSpecial(special: string){
-var special = special
 this.special= special;
     
 }
 
 
     public setId(value: string){
-var value = value
 this.id= value;
     
 }
 
 
     public setStoreName(value: string){
-var value = value
 this.storeName= value;
     
 }
 
 
     public setUserComments(value: string){
-var value = value
 this.userComment= value;
     
 }
 
 
     public setUserCancelComments(value: string){
-var value = value
 this.userCancelComment= value;
     
 }
 
 
     public setStoreComments(value: string){
-var value = value
 this.storeComment= value;
     
 }
 
 
     public setStoreCancelComments(value: string){
-var value = value
 this.storeCancelComment= value;
     
 }
@@ -364,7 +348,6 @@ this.storeCancelComment= value;
 
 
     public reviewOrder(paymentMethod: string): string{
-var paymentMethod = paymentMethod
 
 
 
@@ -375,7 +358,6 @@ var paymentMethod = paymentMethod
 
 
     public viewOrder(paymentMethod: string): string{
-var paymentMethod = paymentMethod
 
 
 
@@ -386,9 +368,6 @@ var paymentMethod = paymentMethod
 
 
     public emailOrder(userName: string, paymentMethod: string, storeFrontInterface: StoreFrontInterface): string{
-var userName = userName
-var paymentMethod = paymentMethod
-var storeFrontInterface = storeFrontInterface
 
 
 
@@ -433,7 +412,6 @@ hashMap!.put(OrderData.STORECANCELCOMMENT, this.storeCancelComment);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.toHashMapOrder()!;
 ;

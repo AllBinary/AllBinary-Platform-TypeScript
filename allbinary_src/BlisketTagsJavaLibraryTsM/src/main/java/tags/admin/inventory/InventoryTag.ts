@@ -71,7 +71,7 @@ public constructor (){
                         
                                     {
                                     
-                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.VIEW) == 0)
+                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.VIEW) == 0)
                         
                                     {
                                     
@@ -83,7 +83,7 @@ public constructor (){
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(this.commonStrings!.INSERT) == 0)
+                        if(this.getCommand()!.compareTo(this.commonStrings!.INSERT) == 0)
                         
                                     {
                                     this.setName("Add Inventory Item Validation View");
@@ -94,7 +94,7 @@ this.setObjectFile("views.admin.inventory.AddFileValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(this.commonStrings!.DELETE) == 0)
+                        if(this.getCommand()!.compareTo(this.commonStrings!.DELETE) == 0)
                         
                                     {
                                     this.setName("Delete Inventory Item Validation View");
@@ -105,7 +105,7 @@ this.setObjectFile("views.admin.inventory.DeleteFileValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.EDIT) == 0)
+                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.EDIT) == 0)
                         
                                     {
                                     this.setName("Edit Inventory Item Validation View");
@@ -116,7 +116,7 @@ this.setObjectFile("views.admin.inventory.EditValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(org.allbinary.globals.GLOBALS2.NEW) == 0)
+                        if(this.getCommand()!.compareTo(org.allbinary.globals.GLOBALS2.NEW) == 0)
                         
                                     {
                                     this.setName("New Inventory Item Validation View");
@@ -127,7 +127,7 @@ this.setObjectFile("views.admin.inventory.NewValidationView");
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(this.commonStrings!.UPDATE) == 0)
+                        if(this.getCommand()!.compareTo(this.commonStrings!.UPDATE) == 0)
                         
                                     {
                                     this.setName("Update Inventory Item Validation View");

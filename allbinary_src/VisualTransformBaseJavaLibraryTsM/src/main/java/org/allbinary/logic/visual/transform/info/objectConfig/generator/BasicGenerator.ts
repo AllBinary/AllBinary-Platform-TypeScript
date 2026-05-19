@@ -55,7 +55,6 @@ public constructor (){
 
 
     public process(input: string): string{
-var input = input
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         

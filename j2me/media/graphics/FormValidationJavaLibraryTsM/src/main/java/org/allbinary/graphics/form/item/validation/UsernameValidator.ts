@@ -48,11 +48,7 @@ export class UsernameValidator extends TextFieldItemValidator {
         
 public constructor (textFieldItem: ABTextFieldItem, min: number, max: number, allowOnEmpty: boolean){
             super(textFieldItem, min, max, allowOnEmpty);
-                    var textFieldItem = textFieldItem
-var min = min
-var max = max
-var allowOnEmpty = allowOnEmpty
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

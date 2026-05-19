@@ -85,9 +85,7 @@ export class GenericProfileActionScript extends DefaultMutableTreeNode implement
     private profileActionConditionInterfaceVector: Vector
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel, node: Node){
             super(NAME);
-                    var genericProfileActionJPanel = genericProfileActionJPanel
-var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -149,8 +147,7 @@ index < nodeList!.getLength(); index++)
 public constructor (genericProfileActionJPanel: GenericProfileActionJPanel){
 
             super();
-        var genericProfileActionJPanel = genericProfileActionJPanel
-this.genericProfileActionJPanel= genericProfileActionJPanel;
+        this.genericProfileActionJPanel= genericProfileActionJPanel;
     
 this.setProfileActionConditionInterfaceVector(new Vector());
     
@@ -158,7 +155,6 @@ this.setProfileActionConditionInterfaceVector(new Vector());
 
 
     public addCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
-var profileActionScriptNodeInterface = profileActionScriptNodeInterface
 this.logUtil!.putF(this.commonStrings!.START, this, "addCondition");
     
 this.getProfileActionConditionInterfaceVector()!.add(profileActionScriptNodeInterface);
@@ -169,7 +165,6 @@ this.add(profileActionScriptNodeInterface);
 
 
     public removeCondition(profileActionScriptNodeInterface: ProfileActionScriptNodeInterface){
-var profileActionScriptNodeInterface = profileActionScriptNodeInterface
 this.logUtil!.putF(this.commonStrings!.START, this, "removeCondition");
     
 this.getProfileActionConditionInterfaceVector()!.remove(profileActionScriptNodeInterface);
@@ -206,7 +201,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
 
 
     public setProfileActionConditionInterfaceVector(profileActionConditionInterfaceVector: Vector){
-var profileActionConditionInterfaceVector = profileActionConditionInterfaceVector
 this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVector;
     
 }
@@ -215,7 +209,6 @@ this.profileActionConditionInterfaceVector= profileActionConditionInterfaceVecto
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = document.createElement(GenericProfileActionData.SCRIPT)!;
 ;

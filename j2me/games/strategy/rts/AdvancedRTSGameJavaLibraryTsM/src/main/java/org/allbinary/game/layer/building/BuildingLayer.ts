@@ -190,24 +190,7 @@ export class BuildingLayer extends AdvancedRTSGameLayer implements RotationAnima
     private readonly pathsHashtable: Hashtable<any, any>
 public constructor (remoteInfo: RemoteInfo, buildingPropertiesFactory: BuildingPropertiesFactory, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number){
             super(remoteInfo, NullPathFindingLayer.NULL_PATH_FINDING_LAYER, advancedRTSProperties, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, new TileLayerPositionIntoViewPosition());
-                        //var remoteInfo = remoteInfo
-    //var buildingPropertiesFactory = buildingPropertiesFactory
-    //var advancedRTSProperties = advancedRTSProperties
-    //var groupInterface = groupInterface
-    //var rootName = rootName
-    //var name = name
-    //var healthInterface = healthInterface
-    //var rtsFormInput = rtsFormInput
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var emptyAnimationInterfaceFactoryInterface = emptyAnimationInterfaceFactoryInterface
-    //var baseAnimationInterfaceFactoryInterface = baseAnimationInterfaceFactoryInterface
-    //var buildAnimationInterfaceFactoryInterface = buildAnimationInterfaceFactoryInterface
-    //var verticleBuildAnimationInterfaceFactoryInterface = verticleBuildAnimationInterfaceFactoryInterface
-    //var proceduralAnimationInterfaceFactoryInterface = proceduralAnimationInterfaceFactoryInterface
-    //var rectangle = rectangle
-    //var x = x
-    //var y = y
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -243,7 +226,6 @@ this.trackingEvent= buildingPropertiesFactory!.getTrackingEvent(this);
     local: boolean= false
 
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
 ;
@@ -273,7 +255,6 @@ super.initVisibility(rtsPlayerLayerInterface);
                 //@Throws(Exception.constructor)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
-    //var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 super.construct(rtsPlayerLayerInterface);
     
 TrackingEventHandler.getInstance()!.addListenerInterface(this);
@@ -282,7 +263,6 @@ TrackingEventHandler.getInstance()!.addListenerInterface(this);
 
 
     public onMovement(trackingEvent: TrackingEvent){
-    //var trackingEvent = trackingEvent
 
         try {
             
@@ -314,7 +294,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "onMovement", e);
                 //@Throws(Exception.constructor)
             
     public processBuiltTick(allBinaryLayerManager: AllBinaryLayerManager){
-var allBinaryLayerManager = allBinaryLayerManager
 
                         if(this.getHealthInterface()!.isDamaged())
                         
@@ -484,7 +463,6 @@ this.getHealthInterface()!.setMaxHealth(this.getHealthInterface()!.getMaxHealth(
 
 
     setBuildingLevelCost(buildingLevelCost: number){
-var buildingLevelCost = buildingLevelCost
 this.buildingLevelCost= buildingLevelCost;
     
 }
@@ -501,7 +479,6 @@ this.buildingLevelCost= buildingLevelCost;
 
 
     public setProductivity(productivity: number){
-var productivity = productivity
 this.productivity= productivity;
     
 }
@@ -518,7 +495,6 @@ this.productivity= productivity;
 
 
     public setEfficiency(efficiency: number){
-var efficiency = efficiency
 this.efficiency= efficiency;
     
 }
@@ -604,7 +580,6 @@ this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList);
 
 
     public getMoveOutOfBuildAreaPath(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var pathsList: BasicArrayList = this.pathsHashtable!.get(geographicMapCellPosition) as BasicArrayList;
 ;
@@ -639,7 +614,6 @@ this.pathsHashtable!.put(occupyGeographicMapCellPosition, pathsList);
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 
                         if(this.isVisible())
                         
@@ -659,8 +633,6 @@ this.healthBar!.paint(graphics);
                 //@Throws(Exception.constructor)
             
     public damage(damage: number, damageType: number){
-    //var damage = damage
-    //var damageType = damageType
 super.damage(damage, damageType);
     
 this.damageFloaters!.add(damage);
@@ -674,7 +646,6 @@ this.damageFloaters!.add(damage);
                 //@Throws(Exception.constructor)
             
     public getDamage(damageType: number): number{
-var damageType = damageType
 
 
 
@@ -723,7 +694,6 @@ VisibleCellPositionsSingleton.getInstance()!.removeStationaryCellPositions(surro
                 //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 super.setDestroyed(destroyed);
     
 

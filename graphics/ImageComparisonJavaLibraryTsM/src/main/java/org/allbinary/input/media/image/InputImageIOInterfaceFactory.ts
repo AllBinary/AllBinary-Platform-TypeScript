@@ -60,7 +60,6 @@ export class InputImageIOInterfaceFactory
                 //@Throws(Exception.constructor)
             
     public static getInstance(imageType: InputImageType): ImageIOInterface{
-var imageType = imageType
 
                         if(imageType == InputImageType.CAPTURE)
                         

@@ -79,8 +79,7 @@ export class SearchParams
 public constructor (request: HttpServletRequest){
 
             super();
-        var request = request
-this.columnsAndSearchValues= new HashMap<any, any>();
+        this.columnsAndSearchValues= new HashMap<any, any>();
     
 this.setLength(request.getParameter(SearchData.LENGTH));
     
@@ -127,43 +126,36 @@ columnValue= request.getParameter(SearchData.COLUMNVALUE +"[" +index +"]");
 
 
     public add(column: string, value: string){
-var column = column
-var value = value
 this.columnsAndSearchValues!.put(column, value);
     
 }
 
 
     public setOrder(value: string){
-var value = value
 this.order= value;
     
 }
 
 
     public setSortBy(value: string){
-var value = value
 this.sortBy= value;
     
 }
 
 
     public setLength(value: string){
-var value = value
 this.listLength= value;
     
 }
 
 
     public setStartPage(value: string){
-var value = value
 this.startPage= value;
     
 }
 
 
     public setEndPage(value: string){
-var value = value
 this.endPage= value;
     
 }
@@ -298,7 +290,6 @@ this.endPage= value;
                 //@Throws(Exception.constructor)
             
     public getParamsNode(document: Document): Node{
-var document = document
 
     var paramsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.PARAMS, SearchData.PARAMS)!;
 ;
@@ -323,7 +314,6 @@ paramsNode!.appendChild(this.getLengthNode(document));
                 //@Throws(Exception.constructor)
             
     getFieldsNode(document: Document): Node{
-var document = document
 
     var fieldsNode: Node = ModDomHelper.createNameValueNodes(document, SearchData.FIELDS, new Integer(this.columnsAndSearchValues!.size()).
                             toString())!;
@@ -374,7 +364,6 @@ fieldsNode!.appendChild(ModDomHelper.createNameValueNodes(document, SearchData.F
                 //@Throws(Exception.constructor)
             
     getOrderNode(document: Document): Node{
-var document = document
 
 
 
@@ -387,7 +376,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     getSortByNode(document: Document): Node{
-var document = document
 
 
 
@@ -400,7 +388,6 @@ var document = document
                 //@Throws(Exception.constructor)
             
     getLengthNode(document: Document): Node{
-var document = document
 
 
 

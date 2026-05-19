@@ -98,7 +98,6 @@ this.directionArray2[directionFactory!.DOWN.getValue()]= angleFactory!.DOWN;
 
 
     public getAngle(direction: Direction): Angle{
-var direction = direction
 
 
 
@@ -109,7 +108,6 @@ var direction = direction
 
 
     public getFrameAngle(direction: Direction): Angle{
-var direction = direction
 
 
 

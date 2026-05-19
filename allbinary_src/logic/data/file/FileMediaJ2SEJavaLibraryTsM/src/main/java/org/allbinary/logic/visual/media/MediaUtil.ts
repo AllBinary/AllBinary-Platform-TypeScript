@@ -69,7 +69,6 @@ export class MediaUtil
 
 
     static getImageBufferPropertyHashMap(bufferedImage: BufferedImage): HashMap<any, any>{
-    //var bufferedImage = bufferedImage
 
     var hashMap: HashMap<any, any> = new HashMap<any, any>();
 ;
@@ -122,12 +121,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public saveImageFile(originalImageFile: AbFile, newImageFileName: string, category: string, mediaData: MediaData, newWidth: number, newHeight: number){
-var originalImageFile = originalImageFile
-var newImageFileName = newImageFileName
-var category = category
-var mediaData = mediaData
-var newWidth = newWidth
-var newHeight = newHeight
 
                         if(originalImageFile == 
                                     null

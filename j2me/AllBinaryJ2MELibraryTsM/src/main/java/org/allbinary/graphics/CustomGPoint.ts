@@ -48,7 +48,6 @@ export class CustomGPoint extends GPoint {
     public static readonly NULL_CUSTOM_POINT: CustomGPoint = new CustomGPoint(0, 0, 0);
 
     public static getInstance(point: GPoint): CustomGPoint{
-    //var point = point
 
 
 
@@ -59,8 +58,6 @@ export class CustomGPoint extends GPoint {
 
 
     public static getInstance3(x: number, y: number): CustomGPoint{
-    //var x = x
-    //var y = y
 
 
 
@@ -77,10 +74,7 @@ export class CustomGPoint extends GPoint {
     private cz: number= 0
 public constructor (x: number, y: number, z: number){
             super(x, y, z);
-                    var x = x
-var y = y
-var z = z
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -88,7 +82,6 @@ var z = z
 
 
     public setX(x: number){
-var x = x
 this.cx= x;
     
 }
@@ -105,7 +98,6 @@ this.cx= x;
 
 
     public setY(y: number){
-var y = y
 this.cy= y;
     
 }
@@ -122,7 +114,6 @@ this.cy= y;
 
 
     public setZ(z: number){
-var z = z
 this.cz= z;
     
 }

@@ -87,8 +87,6 @@ this.toggle(false, this.LIST);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public toggle(save: boolean, list: BasicArrayList){
-var save = save
-var list = list
 
                         if(list != BasicArrayListUtil.getInstance()!.getImmutableInstance())
                         
@@ -149,7 +147,6 @@ this.saved= false;
                 //@Throws(Exception.constructor)
             
     public setList(list: BasicArrayList){
-var list = list
 
                         if(list == 
                                     null

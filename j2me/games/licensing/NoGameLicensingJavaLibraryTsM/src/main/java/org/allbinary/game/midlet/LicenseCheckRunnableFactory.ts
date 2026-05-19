@@ -52,7 +52,6 @@ export class LicenseCheckRunnableFactory
         
 
     public getInstance(specialDemoGameMidlet: SpecialDemoGameMidlet): ABRunnable{
-    //var specialDemoGameMidlet = specialDemoGameMidlet
 
 
 

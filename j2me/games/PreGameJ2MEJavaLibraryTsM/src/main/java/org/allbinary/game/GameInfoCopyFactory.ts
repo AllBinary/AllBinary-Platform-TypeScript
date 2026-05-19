@@ -48,8 +48,6 @@ export class GameInfoCopyFactory
         
 
     public static getInstanceMaxLevel(gameInfo: GameInfo, maxLevel: number): GameInfo{
-    //var gameInfo = gameInfo
-    //var maxLevel = maxLevel
 
 
 
@@ -60,7 +58,6 @@ export class GameInfoCopyFactory
 
 
     public static getInstance(gameInfo: GameInfo): GameInfo{
-    //var gameInfo = gameInfo
 
 
 

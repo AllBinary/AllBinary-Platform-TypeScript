@@ -53,7 +53,6 @@ export class WebappClassLoaderInfo
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static setLoader(classLoader: ClassLoader){
-var classLoader = classLoader
 WebappClassLoaderInfo.classLoader= classLoader;
     
 }

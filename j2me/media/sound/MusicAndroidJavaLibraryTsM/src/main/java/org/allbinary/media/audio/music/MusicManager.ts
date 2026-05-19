@@ -70,8 +70,6 @@ export class MusicManager
         
 
     public static pause(activity: Activity, musicServiceClass: Function){
-    //var activity = activity
-var musicServiceClass = musicServiceClass
 
     var commonStateStrings: CommonStateStrings = CommonStateStrings.getInstance()!;
 ;
@@ -88,8 +86,6 @@ activity.startService(musicPauseIntent);
 
 
     public static resume(activity: Activity, musicServiceClass: Function){
-    //var activity = activity
-var musicServiceClass = musicServiceClass
 
                         if(AndroidServicesUtil.getInstance()!.isServiceRunning(musicServiceClass!.toString()!))
                         
@@ -150,9 +146,7 @@ activity.startService(musicResumeIntent);
 public constructor (musicServiceClass: Function, songList: BasicArrayList){
 
             super();
-            //var musicServiceClass = musicServiceClass
-    //var songList = songList
-PreLogUtil.put(this.commonStateStrings!.CONTEXT +this.resourceUtil!.getContext(), this, this.commonStrings!.CONSTRUCTOR);
+        PreLogUtil.put(this.commonStateStrings!.CONTEXT +this.resourceUtil!.getContext(), this, this.commonStrings!.CONSTRUCTOR);
     
 this.musicServiceClass= musicServiceClass;
     
@@ -164,9 +158,6 @@ this.songList= songList;
 
 
     public nextSong(nextSongSound: Sound, leftVolume: number, rightVolume: number){
-var nextSongSound = nextSongSound
-    //var leftVolume = leftVolume
-    //var rightVolume = rightVolume
 
                         if(nextSongSound == 
                                     null

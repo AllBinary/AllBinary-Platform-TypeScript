@@ -79,8 +79,7 @@ export class OverrideObjectConfigRootContextView extends HttpStoreComponentView 
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (transformInfoInterface: Object){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

@@ -83,8 +83,7 @@ export class KeyValuePersistance extends BasicPersitance {
     private readonly tsUtil: TsUtil = TsUtil.getInstance()!;
 protected constructor (recordId: string){
             super(recordId);
-                        //var recordId = recordId
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -94,7 +93,6 @@ protected constructor (recordId: string){
                 //@Throws(Exception.constructor)
             
     public loadAll(abeClientInformation: AbeClientInformationInterface){
-    //var abeClientInformation = abeClientInformation
 this.loadAllSize(abeClientInformation, 1);
     
 }
@@ -103,8 +101,6 @@ this.loadAllSize(abeClientInformation, 1);
                 //@Throws(Exception.constructor)
             
     public loadAllSize(abeClientInformation: AbeClientInformationInterface, size: number){
-    //var abeClientInformation = abeClientInformation
-var size = size
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
 ;
@@ -235,8 +231,6 @@ recordStore!.closeRecordStore();
                 //@Throws(Exception.constructor)
             
     public save(abeClientInformation: AbeClientInformationInterface, hashtable: Hashtable<any, any>){
-    //var abeClientInformation = abeClientInformation
-    //var hashtable = hashtable
 
     var recordStore: RecordStore = NullRecordStore.NULL_RECORD_STORE;
 ;
@@ -335,7 +329,6 @@ recordStore!.closeRecordStore();
 
 
     public get(index: number): Hashtable<any, any>{
-var index = index
 
     var hashtable: Hashtable<any, any> = this.valueList!.objectArray[index]! as Hashtable<any, any>;
 ;

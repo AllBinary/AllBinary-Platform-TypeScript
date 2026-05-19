@@ -89,14 +89,12 @@ export class AbstractInputAutomationWorker
 public constructor (inputAutomationActionInterface: InputAutomationActionInterface){
 
             super();
-        var inputAutomationActionInterface = inputAutomationActionInterface
-}
+        }
 
 
                 //@Throws(Exception.constructor)
             
     public setThread(thread: Thread){
-var thread = thread
 }
 
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
@@ -113,7 +111,6 @@ var thread = thread
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }
@@ -252,7 +249,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.commonStrings!.RUN, 
 
 
     public setInputAutomationActionInterface(inputAutomationActionInterface: InputAutomationActionInterface){
-var inputAutomationActionInterface = inputAutomationActionInterface
 this.inputAutomationActionInterface= inputAutomationActionInterface;
     
 }
@@ -269,7 +265,6 @@ this.inputAutomationActionInterface= inputAutomationActionInterface;
 
 
     setCaptureWorker(captureWorkerInterface: CaptureWorkerInterface){
-var captureWorkerInterface = captureWorkerInterface
 this.captureWorkerInterface= captureWorkerInterface;
     
 }
@@ -286,7 +281,6 @@ this.captureWorkerInterface= captureWorkerInterface;
 
 
     setImageComparisonWorker(imageComparisonWorker: ImageComparisonWorker){
-var imageComparisonWorker = imageComparisonWorker
 this.imageComparisonWorker= imageComparisonWorker;
     
 }
@@ -303,7 +297,6 @@ this.imageComparisonWorker= imageComparisonWorker;
 
 
     setMotionRectanglesWorker(motionRectanglesWorker: MotionRectanglesWorker){
-var motionRectanglesWorker = motionRectanglesWorker
 this.motionRectanglesWorker= motionRectanglesWorker;
     
 }

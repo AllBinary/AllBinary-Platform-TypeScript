@@ -74,8 +74,7 @@ export class DeleteValidationUserView extends UserView implements ValidationComp
     private userName: string
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -238,7 +237,6 @@ this.userName= new UserName(hashMap).
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

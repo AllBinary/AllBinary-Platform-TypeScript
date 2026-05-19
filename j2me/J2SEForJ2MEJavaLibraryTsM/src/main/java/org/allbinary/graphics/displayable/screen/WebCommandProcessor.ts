@@ -86,9 +86,6 @@ export class WebCommandProcessor
     public readonly list: BasicArrayList = new BasicArrayListD();
 
     public process(midletCommandListener: CommandListener, command: Command, canvas: Canvas){
-    //var midletCommandListener = midletCommandListener
-    //var command = command
-    //var canvas = canvas
 
         try {
             

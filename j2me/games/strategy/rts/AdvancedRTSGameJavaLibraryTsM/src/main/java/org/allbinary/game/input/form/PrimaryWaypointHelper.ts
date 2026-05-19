@@ -84,7 +84,6 @@ private constructor (){
 
 
     public setWaypointLayer(waypointLayer: WaypointLayer){
-var waypointLayer = waypointLayer
 this.waypointLayer= waypointLayer;
     
 }

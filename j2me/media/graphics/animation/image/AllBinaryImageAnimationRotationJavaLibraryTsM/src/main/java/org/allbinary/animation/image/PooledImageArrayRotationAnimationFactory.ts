@@ -71,8 +71,6 @@ export class PooledImageArrayRotationAnimationFactory
                 //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
-    //var image = image
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 ;
@@ -93,10 +91,6 @@ export class PooledImageArrayRotationAnimationFactory
                 //@Throws(Exception.constructor)
             
     public static createDXY(image: Image, dx: number, dy: number, animationBehaviorFactory: AnimationBehaviorFactory): PooledImageArrayRotationAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var animationBehaviorFactory = animationBehaviorFactory
 
     var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
 ;
@@ -120,14 +114,7 @@ export class PooledImageArrayRotationAnimationFactory
 public constructor (image: Image, width: number, height: number, dx: number, dy: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
 
             super();
-            //var image = image
-    //var width = width
-    //var height = height
-    //var dx = dx
-    //var dy = dy
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-this.animationBehaviorFactory= animationBehaviorFactory;
+        this.animationBehaviorFactory= animationBehaviorFactory;
     
 
     var totalAngle: number = Math.round(AngleFactory.getInstance()!.TOTAL_ANGLE);
@@ -145,7 +132,6 @@ this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(im
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -156,7 +142,6 @@ this.allBinaryImageRotationAnimationInfo= new ImageArrayRotationAnimationInfo(im
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

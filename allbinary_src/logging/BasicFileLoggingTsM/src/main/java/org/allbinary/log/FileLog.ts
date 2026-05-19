@@ -229,9 +229,6 @@ console.log("Error Creating Backup: " +e);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, anyType: any = {}, functionName: string): string{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
 
 
 
@@ -244,10 +241,6 @@ var functionName = functionName
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, anyType: any = {}, functionName: string, exception: Throwable): string{
-var specialMessage = specialMessage
-var anyType = anyType
-var functionName = functionName
-var exception = exception
 
         try {
             
@@ -348,9 +341,6 @@ FileLog.fileOut!.flush();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, className: string, functionName: string): string{
-    //var specialMessage = specialMessage
-    //var className = className
-    //var functionName = functionName
 
 
 
@@ -363,10 +353,6 @@ FileLog.fileOut!.flush();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public static put(specialMessage: string, className: string, functionName: string, exception: Exception): string{
-var specialMessage = specialMessage
-    //var className = className
-var functionName = functionName
-    //var exception = exception
 
         try {
             

@@ -70,9 +70,6 @@ export class AllBinaryArrayImageRotationAnimationFactory extends BaseImageAnimat
                 //@Throws(Exception.constructor)
             
     public static createFactory(image: Image, dx: number, dy: number): AllBinaryArrayImageRotationAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
 
     var arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), AngleFactory.getInstance()!.TOTAL_ANGLE /GameConfigurationCentral.getInstance()!.getGameControlFidelity(), AnimationBehaviorFactory.getInstance());
 ;
@@ -91,10 +88,6 @@ arrayImageRotationAnimationFactory!.initDXY(dx, dy);
                 //@Throws(Exception.constructor)
             
     public static createFactoryA(image: Image, dx: number, dy: number, angleIncrement: number): AllBinaryArrayImageRotationAnimationFactory{
-    //var image = image
-    //var dx = dx
-    //var dy = dy
-    //var angleIncrement = angleIncrement
 
     var arrayImageRotationAnimationFactory: AllBinaryArrayImageRotationAnimationFactory = new AllBinaryArrayImageRotationAnimationFactory(image, image.getWidth(), image.getHeight(), angleIncrement, AnimationBehaviorFactory.getInstance());
 ;
@@ -115,12 +108,7 @@ arrayImageRotationAnimationFactory!.initDXY(dx, dy);
     private angleIncrement: number
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), width, height, 0, 0, animationBehaviorFactory);
-                        //var image = image
-    //var width = width
-    //var height = height
-    //var angleIncrement = angleIncrement
-    //var animationBehaviorFactory = animationBehaviorFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -140,8 +128,6 @@ this.setImageArray(ImageToRotationImageArrayUtil.getInstance()!.generate(this.ge
 
 
     initDXY(dx: number, dy: number){
-    //var dx = dx
-    //var dy = dy
 this.animationFactoryInitializationVisitor!.dx= dx;
     
 this.animationFactoryInitializationVisitor!.dy= dy;
@@ -156,7 +142,6 @@ this.animationFactoryInitializationVisitor!.originalDy= dy;
                 //@Throws(Exception.constructor)
             
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
     var scaledImageArray: Image[] = new Array(this.imageArray!.length);
 ;
@@ -211,7 +196,6 @@ scaledImageArray[index]= this.animationFactoryImageScaleUtil!.createImage(image,
 
 
     setImageArray(imageArray: Image[]){
-    //var imageArray = imageArray
 this.imageArray= imageArray;
     
 }

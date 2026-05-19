@@ -50,15 +50,10 @@ export class UniformTextureOpenGLProcessor extends OpenGLObject3dProcessor {
 public constructor (shaderComposite: ShaderComposite, handleIndex: number){
 
             super();
-            //var shaderComposite = shaderComposite
-    //var handleIndex = handleIndex
-}
+        }
 
 
     public process(gl: GL10, unused: any = {}, index: number){
-    //var gl = gl
-    //var unused = unused
-    //var index = index
 }
 
 

@@ -80,7 +80,6 @@ this.logic= true;
 
 
     public setXsl(value: string){
-var value = value
 this.xslFile= value;
     
 this.setTemplateFile(this.xslFile);
@@ -89,7 +88,6 @@ this.setTemplateFile(this.xslFile);
 
 
     public setLogic(logic: boolean){
-var logic = logic
 this.logic= logic;
     
 }

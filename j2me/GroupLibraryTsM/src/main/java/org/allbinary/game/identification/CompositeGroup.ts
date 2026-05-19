@@ -71,8 +71,7 @@ export class CompositeGroup
 public constructor (groupInterface: Group){
 
             super();
-            //var groupInterface = groupInterface
-this.groupInterface= groupInterface;
+        this.groupInterface= groupInterface;
     
 }
 
@@ -84,7 +83,6 @@ this.list.clear();
 
 
     public add(groupInterface: Group){
-    //var groupInterface = groupInterface
 
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
@@ -109,7 +107,6 @@ this.list.add(groupInterface);
 
 
     public isInGroup(groupInterface: Group): boolean{
-    //var groupInterface = groupInterface
 
                         if(this.list.contains(groupInterface))
                         

@@ -65,24 +65,21 @@ export class CategoryPropertiesFactory
 public constructor (name: string){
 
             super();
-        var name = name
-this.categoryPropertiesInterface= new CategoryProperties(name) as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= new CategoryProperties(name) as CategoryPropertiesInterface;
     
 }
 
 public constructor (node: Node){
 
             super();
-        var node = node
-this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= new CategoryProperties(node) as CategoryPropertiesInterface;
     
 }
 
 public constructor (categoryPropertiesHashMap: HashMap<any, any>){
 
             super();
-        var categoryPropertiesHashMap = categoryPropertiesHashMap
-this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface;
+        this.categoryPropertiesInterface= new CategoryProperties(categoryPropertiesHashMap) as CategoryPropertiesInterface;
     
 }
 

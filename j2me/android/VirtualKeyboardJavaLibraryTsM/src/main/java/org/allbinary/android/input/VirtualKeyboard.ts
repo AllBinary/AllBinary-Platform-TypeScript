@@ -57,14 +57,12 @@ export class VirtualKeyboard
     public static readonly NULL_VIRTUAL_KEYBOARD: VirtualKeyboard = new VirtualKeyboard();
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
 
 
     public onVirtualKeyboardEvent(virtualKeyboardEvent: VirtualKeyboardEvent){
-var virtualKeyboardEvent = virtualKeyboardEvent
 }
 
 

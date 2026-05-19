@@ -71,7 +71,6 @@ export class ColorFromEventUtil
     public readonly COLOR_INT: number = this.YELLOW.intValue()!;
 
     public getForegroundColor(gameCanvasInterface: AllBinaryGameCanvas): BasicColor{
-    //var gameCanvasInterface = gameCanvasInterface
 
     var color: BasicColor = this.YELLOW;
 ;

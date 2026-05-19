@@ -80,9 +80,6 @@ private constructor (){
 
 
     public rotateImage(originalImage: Image, image: Image, totalAngle: number){
-    //var originalImage = originalImage
-    //var image = image
-    //var totalAngle = totalAngle
 
                         if(image.isMutable())
                         
@@ -141,8 +138,6 @@ this.imageJ2SERotationUtil!.rotateImage(originalAwtImage, newBufferedImage, tota
                 //@Throws(Exception.constructor)
             
     public createRotatedImage(originalImage: Image, rotationInDegrees: number): Image{
-var originalImage = originalImage
-var rotationInDegrees = rotationInDegrees
 
     var image: Image = ImageCreationUtil.getInstance()!.createImageWH(originalImage!.getWidth(), originalImage!.getHeight())!;
 ;

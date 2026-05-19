@@ -86,10 +86,7 @@ export class ThreadPool
 public constructor (poolName: string, numThreads: number, priority: number){
 
             super();
-            //var poolName = poolName
-    //var numThreads = numThreads
-    //var priority = priority
-}
+        }
 
 
     private currentPriorityRunnable: PriorityRunnable = this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
@@ -181,7 +178,6 @@ this.taskQueue= new BasicArrayListD();
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public runTaskWithPriority(task: PriorityRunnable){
-    //var task = task
 
                         if(!this.isAlive)
                         
@@ -260,7 +256,6 @@ this.taskQueue!.addAt(index, task);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public runTask(task: Runnable){
-    //var task = task
 
                         if(!this.isAlive)
                         
@@ -416,12 +411,10 @@ this.currentPriorityRunnable= this.threadObjectUtil!.NULL_PRIORITY_RUNNABLE;
 
 
     startTask(task: Runnable){
-    //var task = task
 }
 
 
     completedTask(task: Runnable){
-    //var task = task
 }
 
 

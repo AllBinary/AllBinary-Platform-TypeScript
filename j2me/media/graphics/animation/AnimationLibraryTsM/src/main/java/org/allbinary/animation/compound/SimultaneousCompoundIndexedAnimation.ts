@@ -59,9 +59,7 @@ export class SimultaneousCompoundIndexedAnimation extends IndexedAnimation {
     private animationInterfaceArray: Animation[]
 public constructor (animationInterfaceArray: Animation[], animationBehavior: AnimationBehavior){
             super(animationBehavior);
-                        //var animationInterfaceArray = animationInterfaceArray
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -71,7 +69,6 @@ this.animationInterfaceArray= animationInterfaceArray;
 
 
     public setFrame(frameIndex: number){
-    //var frameIndex = frameIndex
 
     var indexedAnimation: IndexedAnimation
 ;
@@ -146,7 +143,6 @@ indexedAnimation!.previousFrame();
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 
@@ -180,9 +176,6 @@ this.animationInterfaceArray[index]!.nextFrame();
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 
     var size: number = this.animationInterfaceArray!.length
                 ;
@@ -204,10 +197,6 @@ this.animationInterfaceArray[index]!.paintXY(graphics, x, y);
 
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 
     var size: number = this.animationInterfaceArray!.length
                 ;
@@ -239,7 +228,6 @@ this.animationInterfaceArray[index]!.paintThreed(graphics, x, y, z);
 
 
     public setAnimationInterfaceArray(animationInterfaceArray: Animation[]){
-    //var animationInterfaceArray = animationInterfaceArray
 this.animationInterfaceArray= animationInterfaceArray;
     
 }

@@ -92,8 +92,7 @@ export class UnitItemArrayFactory
 protected constructor (resources: BasicGameResources[]){
 
             super();
-        var resources = resources
-this.resources= resources;
+        this.resources= resources;
     
 }
 
@@ -101,8 +100,6 @@ this.resources= resources;
                 //@Throws(Exception.constructor)
             
     createFlagItem(flagResources: FlagGameResources, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
-    //var flagResources = flagResources
-    //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 
     var name: string = flagResources!.NAME;
 ;
@@ -132,9 +129,6 @@ this.resources= resources;
                 //@Throws(Exception.constructor)
             
     createNamedFlagItem(flagResources: FlagGameResources, name: string, layerInterfaceFactoryInterface: LayerInterfaceFactoryInterface): ABCustomItem{
-    //var flagResources = flagResources
-    //var name = name
-    //var layerInterfaceFactoryInterface = layerInterfaceFactoryInterface
 
     var IMAGE_CACHE: ImageCache = GameFeatureImageCacheFactory.getInstance()!;
 ;
@@ -182,7 +176,6 @@ this.resources= resources;
 
 
     public indexOf(basicGameResources: BasicGameResources): number{
-    //var basicGameResources = basicGameResources
 
 
 

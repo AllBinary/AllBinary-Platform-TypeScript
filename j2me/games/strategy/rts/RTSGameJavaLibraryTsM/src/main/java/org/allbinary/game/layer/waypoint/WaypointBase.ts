@@ -86,8 +86,7 @@ export class WaypointBase
 public constructor (sound: Sound){
 
             super();
-            //var sound = sound
-this.sound= sound;
+        this.sound= sound;
     
 }
 
@@ -105,7 +104,6 @@ this.sound= sound;
                 //@Throws(Exception.constructor)
             
     public setAllBinaryGameLayerManager(allBinaryGameLayerManager: AllBinaryGameLayerManager){
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
 this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
     
 }
@@ -122,7 +120,6 @@ this.allBinaryGameLayerManagerP= allBinaryGameLayerManager;
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-    //var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -131,7 +128,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public getPathFindingInfo(geographicMapCellPosition: GeographicMapCellPosition): PathFindingInfo{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -143,9 +139,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public getPathsList(geographicMapCellPosition: GeographicMapCellPosition, pathFindingInfo: PathFindingInfo, multipassState: MultipassState): BasicArrayList{
-    //var geographicMapCellPosition = geographicMapCellPosition
-    //var pathFindingInfo = pathFindingInfo
-    //var multipassState = multipassState
 
 
 
@@ -157,7 +150,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public getPathsListRunnable(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -169,7 +161,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public getPathsListFromCacheOnly(geographicMapCellPosition: GeographicMapCellPosition): BasicArrayList{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
 
 
@@ -181,7 +172,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public visit(unitLayer: PathFindingLayerInterface){
-    //var unitLayer = unitLayer
 }
 
 

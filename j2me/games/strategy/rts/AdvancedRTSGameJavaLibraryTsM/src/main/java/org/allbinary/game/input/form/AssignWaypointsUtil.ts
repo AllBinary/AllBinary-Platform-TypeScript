@@ -88,8 +88,6 @@ export class AssignWaypointsUtil
     private readonly WAYPOINT_EVENT: RTSLayerEvent = new RTSLayerEvent(NullPathFindingLayer.NULL_PATH_FINDING_LAYER);
 
     public set(unitLayer: UnitLayer, ownerAdvancedRTSGameLayer: AdvancedRTSGameLayer){
-var unitLayer = unitLayer
-var ownerAdvancedRTSGameLayer = ownerAdvancedRTSGameLayer
 
         try {
             

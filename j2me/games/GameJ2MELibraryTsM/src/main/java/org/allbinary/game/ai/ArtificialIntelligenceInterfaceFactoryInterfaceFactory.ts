@@ -79,7 +79,6 @@ this.list= new BasicArrayListD();
 
 
     public getInstanceFromCollection(hashtable: Hashtable<any, any>): ArtificialIntelligenceInterfaceFactoryInterface{
-    //var hashtable = hashtable
 
     var typeInteger: Integer = hashtable.get(BasicAI.ID as Object) as Integer;
 ;
@@ -102,7 +101,6 @@ this.list= new BasicArrayListD();
 
 
     public add(artificialIntelligenceInterfaceFactoryInterface: ArtificialIntelligenceInterfaceFactoryInterface){
-    //var artificialIntelligenceInterfaceFactoryInterface = artificialIntelligenceInterfaceFactoryInterface
 this.list.add(artificialIntelligenceInterfaceFactoryInterface);
     
 }

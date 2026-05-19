@@ -117,8 +117,7 @@ this.value= stringUtil!.EMPTY_STRING;
 public constructor (node: Node){
 
             super();
-        var node = node
-
+        
         try {
             
     var valueNode: Node = DomSearchHelper.getNode(DomData.VALUE, node.getChildNodes())!;
@@ -260,7 +259,6 @@ hashMap!.put(this.DESCRIPTION, this.description);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var hashMap: HashMap<any, any> = this.toHashMap()!;
 ;

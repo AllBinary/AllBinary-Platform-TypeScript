@@ -70,7 +70,6 @@ export class OpenGLImageSpecificFactory
     public updating: boolean = false;
 
     public setImageFactory(imageFactory: OpenGLImageFactory){
-var imageFactory = imageFactory
 this.imageFactory= imageFactory;
     
 PreLogUtil.put(new StringMaker().

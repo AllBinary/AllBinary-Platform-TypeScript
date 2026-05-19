@@ -48,23 +48,14 @@ export class VelocityBehaviorBase
         
 
     public reduce(velocityProperties: BasicVelocityProperties, nominator: number, denominator: number){
-    //var velocityProperties = velocityProperties
-    //var nominator = nominator
-    //var denominator = denominator
 }
 
 
     public reduceX(velocityProperties: BasicVelocityProperties, nominator: number, denominator: number){
-    //var velocityProperties = velocityProperties
-    //var nominator = nominator
-    //var denominator = denominator
 }
 
 
     public reduceY(velocityProperties: BasicVelocityProperties, nominator: number, denominator: number){
-    //var velocityProperties = velocityProperties
-    //var nominator = nominator
-    //var denominator = denominator
 }
 
 

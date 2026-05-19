@@ -93,8 +93,7 @@ export class InventorySearch
     private readonly searchRequest: SearchRequest
 public constructor (searchRequest: SearchRequest){
             super();
-                    var searchRequest = searchRequest
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -260,7 +259,6 @@ stringBuffer!.append(InputOutputTypeData.getInstance()!.DEFAULT);
                 //@Throws(Exception.constructor)
             
     public getProduct(product: string): string{
-var product = product
 
     var abeClientInformation: AbeClientInformationInterface = ServiceClientInformationInterfaceFactory.getInstance()!;
 ;

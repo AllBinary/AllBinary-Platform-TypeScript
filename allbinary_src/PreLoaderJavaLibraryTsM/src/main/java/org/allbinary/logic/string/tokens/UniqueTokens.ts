@@ -127,7 +127,6 @@ this.specialCharacters!.add("`");
                 //@Throws(Exception.constructor)
             
     public getWhithoutDashesAndSkipNumberOnlyTokens(stringVector: Vector): HashSet{
-var stringVector = stringVector
 
         try {
             
@@ -242,7 +241,6 @@ index++;
 
 
     numberOnly(subCleaningString: string): boolean{
-    //var subCleaningString = subCleaningString
 
         try {
             Integer.parseInt(subCleaningString);
@@ -269,7 +267,6 @@ index++;
 
 
     isSpecialCharacter(subCleaningString: string): boolean{
-var subCleaningString = subCleaningString
 
 
 
@@ -279,7 +276,7 @@ var subCleaningString = subCleaningString
 index < this.specialCharacters!.length; index++)
         {
 
-                        if(subCleaningString!.localeCompare(this.specialCharacters!.elementAt(index) as string) == 0)
+                        if(subCleaningString!.compareTo(this.specialCharacters!.elementAt(index) as string) == 0)
                         
 
 

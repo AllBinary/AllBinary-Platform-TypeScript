@@ -73,8 +73,7 @@ export class LineReader
 public constructor (fileName: string){
 
             super();
-            //var fileName = fileName
-
+        
         try {
             
     var bytes: number[] = new Array(100000);

@@ -64,15 +64,12 @@ export class LineAnimation extends Animation implements ColorCompositeInterface,
 public constructor (basicColor: BasicColor){
 
             super();
-        var basicColor = basicColor
-this.setBasicColorP(basicColor);
+        this.setBasicColorP(basicColor);
     
 }
 
 
     public init(x: number, y: number){
-var x = x
-var y = y
 this.newLine[0]![0]= x;
     
 this.newLine[0]![1]= y;
@@ -91,9 +88,6 @@ this.newLine= this.tempLine;
 
 
     public setPosition(x: number, y: number, z: number){
-var x = x
-var y = y
-var z = z
 this.newLine[0]![0]= this.line[1]![0]!;
     
 this.newLine[0]![1]= this.line[1]![1]!;
@@ -112,9 +106,6 @@ this.newLine= this.tempLine;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-var graphics = graphics
-var x = x
-var y = y
 
     var currentLine: number[][] = this.line;
 ;

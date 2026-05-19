@@ -99,8 +99,7 @@ export class TouchButtonResourceAnimationInterfaceFactoryInterfaceFactory extend
 
 public constructor (name: string){
             super(name, new Hashtable<any, any>(), new Hashtable<any, any>(), new Hashtable<any, any>());
-                        //var name = name
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -110,7 +109,6 @@ public constructor (name: string){
                 //@Throws(Exception.constructor)
             
     public init(level: number){
-    //var level = level
 this.initImageCache(ImageCacheFactory.getInstance(), level);
     
 }
@@ -119,8 +117,6 @@ this.initImageCache(ImageCacheFactory.getInstance(), level);
                 //@Throws(Exception.constructor)
             
     initImageCache(imageCache: ImageCache, level: number){
-    //var imageCache = imageCache
-    //var level = level
 
                         if(this.isInitialized())
                         
@@ -339,7 +335,6 @@ super.init(level);
 
 
     public isLoadingLevel(level: number): boolean{
-    //var level = level
 
     var resourceLoadingLevelFactory: ResourceLoadingLevelFactory = ResourceLoadingLevelFactory.getInstance()!;
 ;

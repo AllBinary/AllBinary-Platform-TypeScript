@@ -78,16 +78,7 @@ export class BasicGeographicMap extends SimpleGeographicMap implements Geographi
     private readonly geographicMapCellTypeFactory: GeographicMapCellTypeFactory
 public constructor (id: Integer, name: string, cellTypeIdToGeographicMapCellType: number[], tiledLayer: AllBinaryTiledLayer, foregroundBasicColor: BasicColor, backgroundBasicColor: BasicColor, geographicMapCellPositionFactoryInterface: GeographicMapCellPositionFactoryInterface, geographicMapCellPositionBaseFactory: GeographicMapCellPositionBaseFactory, geographicMapCellTypeFactory: GeographicMapCellTypeFactory){
             super(id, name, cellTypeIdToGeographicMapCellType, tiledLayer, foregroundBasicColor, backgroundBasicColor);
-                        //var id = id
-    //var name = name
-    //var cellTypeIdToGeographicMapCellType = cellTypeIdToGeographicMapCellType
-    //var tiledLayer = tiledLayer
-    //var foregroundBasicColor = foregroundBasicColor
-    //var backgroundBasicColor = backgroundBasicColor
-    //var geographicMapCellPositionFactoryInterface = geographicMapCellPositionFactoryInterface
-    //var geographicMapCellPositionBaseFactory = geographicMapCellPositionBaseFactory
-    //var geographicMapCellTypeFactory = geographicMapCellTypeFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -103,8 +94,6 @@ this.geographicMapCellTypeFactory= geographicMapCellTypeFactory;
                 //@Throws(Exception.constructor)
             
     public getCellPosition(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
-    //var direction = direction
-    //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
 
 
@@ -153,8 +142,6 @@ default: {
                 //@Throws(Exception.constructor)
             
     public getCellPositionNoThrow(direction: number, oldGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
-    //var direction = direction
-    //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
 
 
 
@@ -272,8 +259,6 @@ default: {
                 //@Throws(Exception.constructor)
             
     public isOfFourDirections(oldGeographicMapCellPosition: GeographicMapCellPosition, newGeographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var oldGeographicMapCellPosition = oldGeographicMapCellPosition
-    //var newGeographicMapCellPosition = newGeographicMapCellPosition
 
 
 
@@ -309,8 +294,6 @@ index < 4; index++)
                 //@Throws(Exception.constructor)
             
     public getCellPositionAtXY(x: number, y: number): GeographicMapCellPosition{
-    //var x = x
-    //var y = y
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;
 ;
@@ -333,8 +316,6 @@ index < 4; index++)
 
 
     public getCellPositionAtXYNoThrow(x: number, y: number): GeographicMapCellPosition{
-    //var x = x
-    //var y = y
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;
 ;
@@ -390,7 +371,6 @@ index < 4; index++)
                 //@Throws(Exception.constructor)
             
     public isOnMap(geographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var allBinaryTiledLayer: AllBinaryTiledLayer = this.getAllBinaryTiledLayer()!;
 ;
@@ -432,11 +412,6 @@ index < 4; index++)
                 //@Throws(Exception.constructor)
             
     public getCellPositionAtNoThrow(x: number, y: number, x2: number, y2: number, geographicMapCellPositionList: BasicArrayList): BasicArrayList{
-    //var x = x
-    //var y = y
-    //var x2 = x2
-    //var y2 = y2
-    //var geographicMapCellPositionList = geographicMapCellPositionList
 geographicMapCellPositionList!.clear();
     
 
@@ -500,9 +475,6 @@ rowIndex < i_rowMax; rowIndex++)
                 //@Throws(Exception.constructor)
             
     public getCellPositionsAt(layer: Layer, currentCellPositionArray: GeographicMapCellPosition[][], cellPositionArray: GeographicMapCellPosition[][]): boolean{
-    //var layer = layer
-    //var currentCellPositionArray = currentCellPositionArray
-    //var cellPositionArray = cellPositionArray
 
     var hasChanged: boolean = false;
 ;
@@ -576,8 +548,6 @@ cellPositionArray[index]![index2]= this.getCellPositionAtXY(x, y);
                 //@Throws(Exception.constructor)
             
     public getCellTypeAtXY(x: number, y: number): GeographicMapCellType{
-var x = x
-var y = y
 
     var cellPosition: GeographicMapCellPosition = this.getCellPositionAtXY(x, y)!;
 ;

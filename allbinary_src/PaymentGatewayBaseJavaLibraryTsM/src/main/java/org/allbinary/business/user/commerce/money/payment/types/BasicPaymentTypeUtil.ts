@@ -79,7 +79,6 @@ private constructor (){
     private paymentTypeVector: Vector = new Vector();
 
     public add(paymentType: BasicPaymentType){
-var paymentType = paymentType
 this.paymentTypeVector!.add(paymentType);
     
 }
@@ -88,7 +87,6 @@ this.paymentTypeVector!.add(paymentType);
                 //@Throws(Exception.constructor)
             
     public get(paymentTypeString: string): BasicPaymentType{
-var paymentTypeString = paymentTypeString
 
     var size: number = this.paymentTypeVector!.length!;
 ;
@@ -106,7 +104,7 @@ i < size; i++)
 ;
     
 
-                        if(paymentType!.getName()!.localeCompare(paymentTypeString) == 0)
+                        if(paymentType!.getName()!.compareTo(paymentTypeString) == 0)
                         
                                     {
                                     
@@ -129,7 +127,6 @@ i < size; i++)
 
 
     public isContain(paymentType: BasicPaymentType): boolean{
-var paymentType = paymentType
 
 
 
@@ -140,7 +137,6 @@ var paymentType = paymentType
 
 
     public difference(a_PaymentTypeVector: Vector): Vector{
-var a_PaymentTypeVector = a_PaymentTypeVector
 
     var diff: Vector = new Vector();
 ;

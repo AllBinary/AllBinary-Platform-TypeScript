@@ -81,7 +81,6 @@ public constructor (){
     private readonly viewPositionEventHandler: ViewPositionEventHandler = ViewPositionEventHandler.getInstance()!;
 
     public setTiledLayer(tiledLayer: AllBinaryTiledLayer){
-var tiledLayer = tiledLayer
 
     var viewPosition: TileLayerPositionIntoViewPosition = this.getViewPosition() as TileLayerPositionIntoViewPosition;
 ;
@@ -94,7 +93,6 @@ this.viewPositionEventHandler!.addListener(this as AllBinaryLayer);
 
 
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 super.setDestroyed(destroyed);
     
 

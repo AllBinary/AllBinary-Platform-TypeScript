@@ -82,8 +82,7 @@ public constructor (){
 
 public constructor (tagHelperFactoryInterface: TagHelperFactoryInterface){
             super(tagHelperFactoryInterface);
-                    var tagHelperFactoryInterface = tagHelperFactoryInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

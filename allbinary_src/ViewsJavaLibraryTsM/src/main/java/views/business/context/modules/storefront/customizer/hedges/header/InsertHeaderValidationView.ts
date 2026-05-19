@@ -82,8 +82,7 @@ export class InsertHeaderValidationView extends TopBarView implements Validation
     private readonly LOGOPATH: string = "logo/";
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -224,7 +223,6 @@ stringBuffer!.append(this.heading.validationInfo());
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

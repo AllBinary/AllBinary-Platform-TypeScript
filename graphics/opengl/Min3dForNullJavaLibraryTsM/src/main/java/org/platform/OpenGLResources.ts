@@ -55,7 +55,6 @@ export class OpenGLResources
 
 
     public isExcluded(name: string): boolean{
-    //var name = name
 
 
 
@@ -65,9 +64,6 @@ export class OpenGLResources
 
 
     public getIdentifier(name: string, defType: string, defPackage: string): number{
-    //var name = name
-    //var defType = defType
-    //var defPackage = defPackage
 
 
 
@@ -79,7 +75,6 @@ export class OpenGLResources
                 //@Throws(Exception.constructor)
             
     public openRawResource(id: number): InputStream{
-    //var id = id
 
 
 
@@ -91,7 +86,6 @@ export class OpenGLResources
                 //@Throws(Exception.constructor)
             
     public openRawResourceFromName(resourceName: string): InputStream{
-    //var resourceName = resourceName
 
 
 
@@ -103,7 +97,6 @@ export class OpenGLResources
                 //@Throws(Exception.constructor)
             
     public getResourceAsStream(resourceName: string): InputStream{
-    //var resourceName = resourceName
 
 
 

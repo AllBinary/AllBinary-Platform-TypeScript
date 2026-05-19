@@ -173,25 +173,7 @@ export class AdvancedRTSGameLayer extends RTSLayer implements DestroyedEventList
     waypointBehaviorBase: TickableInterface = NullTickable.getInstance()!;
 public constructor (remoteInfo: RemoteInfo, parentLayer: PathFindingLayerInterface, advancedRTSProperties: AdvancedRTSProperties, groupInterface: Group[], rootName: string, name: string, healthInterface: Health, rtsFormInput: RTSFormInput, animationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface: AnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface: ProceduralAnimationInterfaceFactoryInterface, rectangle: Rectangle, x: number, y: number, viewPosition: ViewPosition){
             super(remoteInfo, groupInterface, rootName, name, healthInterface, rtsFormInput, animationInterfaceFactoryInterface, emptyAnimationInterfaceFactoryInterface, baseAnimationInterfaceFactoryInterface, buildAnimationInterfaceFactoryInterface, verticleBuildAnimationInterfaceFactoryInterface, proceduralAnimationInterfaceFactoryInterface, rectangle, x, y, viewPosition);
-                        //var remoteInfo = remoteInfo
-    //var parentLayer = parentLayer
-    //var advancedRTSProperties = advancedRTSProperties
-    //var groupInterface = groupInterface
-    //var rootName = rootName
-    //var name = name
-    //var healthInterface = healthInterface
-    //var rtsFormInput = rtsFormInput
-    //var animationInterfaceFactoryInterface = animationInterfaceFactoryInterface
-    //var emptyAnimationInterfaceFactoryInterface = emptyAnimationInterfaceFactoryInterface
-    //var baseAnimationInterfaceFactoryInterface = baseAnimationInterfaceFactoryInterface
-    //var buildAnimationInterfaceFactoryInterface = buildAnimationInterfaceFactoryInterface
-    //var verticleBuildAnimationInterfaceFactoryInterface = verticleBuildAnimationInterfaceFactoryInterface
-    //var proceduralAnimationInterfaceFactoryInterface = proceduralAnimationInterfaceFactoryInterface
-    //var rectangle = rectangle
-    //var x = x
-    //var y = y
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -213,7 +195,6 @@ this.setParentLayer(parentLayer);
                 //@Throws(Exception.constructor)
             
     public updateWaypointBehavior(geographicMapInterface: BasicGeographicMap){
-    //var geographicMapInterface = geographicMapInterface
 super.updateWaypointBehavior(geographicMapInterface);
     
 this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.allBinaryGameLayerManagerP);
@@ -222,7 +203,6 @@ this.getWaypointBehavior()!.getWaypoint()!.setAllBinaryGameLayerManager(this.all
 
 
     initVisibility(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 
     var advancedRTSPlayerLayerInterface: AdvancedRTSPlayerLayerInterface = rtsPlayerLayerInterface as AdvancedRTSPlayerLayerInterface;
 ;
@@ -248,7 +228,6 @@ var rtsPlayerLayerInterface = rtsPlayerLayerInterface
                 //@Throws(Exception.constructor)
             
     public construct(rtsPlayerLayerInterface: RTSPlayerLayerInterface){
-var rtsPlayerLayerInterface = rtsPlayerLayerInterface
 super.construct(rtsPlayerLayerInterface);
     
 this.initVisibility(rtsPlayerLayerInterface);
@@ -261,7 +240,6 @@ BuildingEventHandler.getInstance()!.addListenerInterface(this.getWaypointBehavio
                 //@Throws(Exception.constructor)
             
     public setDestroyed(destroyed: boolean){
-var destroyed = destroyed
 super.setDestroyed(destroyed);
     
 
@@ -293,7 +271,6 @@ RTSLayerUtil.getInstance()!.destroyAndClear(this.getWaypointBehavior()!.getOwned
 
 
     public setParentLayer(parentLayer: PathFindingLayerInterface){
-var parentLayer = parentLayer
 this.parentLayer= parentLayer;
     
 }
@@ -310,7 +287,6 @@ this.parentLayer= parentLayer;
 
 
     setWaypointBehavior(unitWaypointHelper: WaypointBehaviorBase){
-var unitWaypointHelper = unitWaypointHelper
 this.waypointBehaviorBase= unitWaypointHelper;
     
 }
@@ -406,8 +382,6 @@ this.waypointBehaviorBase= unitWaypointHelper;
                 //@Throws(Exception.constructor)
             
     public buildingChase(allbinaryLayer: AllBinaryLayer, cellPosition: GeographicMapCellPosition): boolean{
-    //var allbinaryLayer = allbinaryLayer
-    //var cellPosition = cellPosition
 
     var geographicMapCellPosition: GeographicMapCellPosition = this.getCurrentGeographicMapCellPosition()!;
 ;
@@ -686,7 +660,6 @@ this.geographicMapCellPositionAreaBase!.update(geographicMapInterface);
 
 
     setSelected(selected: boolean){
-var selected = selected
 super.setSelected(selected);
     
 
@@ -723,7 +696,6 @@ this.waypointRunnableLogHelperP= WaypointRunnableLogHelper.getInstance();
 
 
     public onDestroyed(destroyedEvent: DestroyedEvent){
-var destroyedEvent = destroyedEvent
 
         try {
             

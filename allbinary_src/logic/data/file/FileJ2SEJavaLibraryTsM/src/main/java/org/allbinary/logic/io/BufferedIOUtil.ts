@@ -65,8 +65,6 @@ export class BufferedIOUtil
                 //@Throws(Exception.constructor)
             
     public static copy(backupFile: AbFile, backupFileBak: AbFile){
-var backupFile = backupFile
-var backupFileBak = backupFileBak
 
     var line: string = StringUtil.getInstance()!.EMPTY_STRING;
 ;

@@ -62,7 +62,6 @@ export class OpenGLESGraphicsCompositeFactory
     private openGLESGraphicsFactory: OpenGLESGraphicsFactory = new OpenGLESGraphicsFactory();
 
     public set(openGLESGraphicsFactory: OpenGLESGraphicsFactory){
-var openGLESGraphicsFactory = openGLESGraphicsFactory
 this.openGLESGraphicsFactory= openGLESGraphicsFactory;
     
 }

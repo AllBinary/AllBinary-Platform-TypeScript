@@ -60,12 +60,10 @@ public constructor (){
 
 
     public updateGL(gl: GL){
-var gl = gl
 }
 
 
     public set(gl: GL){
-var gl = gl
 }
 
 
@@ -100,8 +98,6 @@ var gl = gl
 
 
     public setFontDebug(font: Font, fontDebug: FontDebugBase){
-    //var font = font
-    //var fontDebug = fontDebug
 
 
 

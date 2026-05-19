@@ -57,8 +57,6 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
                 //@Throws(Exception.constructor)
             
     static createAnimation(anyType: any = {}, animationBehavior: AnimationBehavior): ImageArrayRotationAnimation{
-    //var anyType = anyType
-    //var animationBehavior = animationBehavior
 
     var imageRotationAnimationInfo: ImageArrayRotationAnimationInfo = anyType as ImageArrayRotationAnimationInfo;
 ;
@@ -75,11 +73,7 @@ export class ImageArrayRotationAnimation extends ImageArrayBaseRotationAnimation
     private expectedTotalFrames: number= 0
 public constructor (imageArray: Image[], angleInfo: AngleInfo, totalAngle: number, animationBehavior: AnimationBehavior){
             super(imageArray, angleInfo, animationBehavior);
-                        //var imageArray = imageArray
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -91,9 +85,6 @@ this.init(imageArray, angleInfo, totalAngle);
                 //@Throws(Exception.constructor)
             
     init(imageArray: Image[], angleInfo: AngleInfo, totalAngle: number){
-    //var imageArray = imageArray
-    //var angleInfo = angleInfo
-    //var totalAngle = totalAngle
 this.expectedTotalFrames= totalAngle /this.angleInfo!.getAngleIncrementInfo()!.getAngleIncrement();
     
 this.angleInfo!.adjustAngle(0);
@@ -114,7 +105,6 @@ this.angleInfo!.adjustAngle(0);
 
 
     public setImageArray(imageArray: Image[]){
-    //var imageArray = imageArray
 super.setImageArray(imageArray);
     
 this.angleInfo!.adjustAngle(0);

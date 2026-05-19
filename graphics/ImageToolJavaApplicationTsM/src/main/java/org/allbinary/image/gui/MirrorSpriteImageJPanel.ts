@@ -93,8 +93,7 @@ export class MirrorSpriteImageJPanel extends javax.swing.JPanel implements Image
     private result: BufferedImage
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                    var imageProcessorInput = imageProcessorInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -201,7 +200,6 @@ this.jPanel1= new class extends javax.swing.JPanel
                                 {
                                 
     public paint(graphics: Graphics){
-var graphics = graphics
 
                         if(MirrorSpriteImageJPanel.prototype.result != 
                                     null
@@ -257,7 +255,6 @@ this.imageHeightIsFrameSizeJCheckBox!.addActionListener(new class extends java.a
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 imageHeightIsFrameSizeJCheckBoxActionPerformed(evt);
     
 }
@@ -283,7 +280,6 @@ this.generateJButton!.addActionListener(new class extends java.awt.event.ActionL
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 generateJButtonActionPerformed(evt);
     
 }
@@ -327,14 +323,12 @@ layout.setVerticalGroup(layout.createParallelGroup(org.jdesktop.layout.GroupLayo
 
 
     generateJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.process();
     
 }
 
 
     imageHeightIsFrameSizeJCheckBoxActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 }
 
 
@@ -369,7 +363,6 @@ var evt = evt
 
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
-var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput;
     
 }

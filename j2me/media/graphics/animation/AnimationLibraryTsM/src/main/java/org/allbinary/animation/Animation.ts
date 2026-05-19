@@ -79,7 +79,6 @@ public constructor (){
 
 
     public setAlpha(alpha: number){
-    //var alpha = alpha
 this.alphaP= alpha;
     
 }
@@ -92,19 +91,12 @@ this.alphaP= alpha;
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 }
 
 
     public paintThreed(graphics: Graphics, x: number, y: number, z: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
-    //var z = z
 }
 
 
@@ -129,7 +121,6 @@ this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.ge
 
 
     public setBasicColorP(basicColor: BasicColor){
-    //var basicColor = basicColor
 this.basicColor= basicColor;
     
 this.colorP= this.basicColor!.intValue();
@@ -148,7 +139,6 @@ this.colorP= this.basicColor!.intValue();
 
 
     public changeBasicColor(basicColor: BasicColor){
-    //var basicColor = basicColor
 this.changeBasicColorP= basicColor;
     
 this.changeColorP= this.changeBasicColorP!.intValue();
@@ -177,26 +167,20 @@ this.changeColorP= this.changeBasicColorP!.intValue();
 
 
     public setScale(scaleX: number, scaleY: number){
-    //var scaleX = scaleX
-    //var scaleY = scaleY
 }
 
 
     public setMaxScale(maxScaleX: number, maxScaleY: number){
-    //var maxScaleX = maxScaleX
-    //var maxScaleY = maxScaleY
 }
 
 
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-var gl = gl
 }
 
 
     public setDx(dx: number){
-    //var dx = dx
 }
 
 
@@ -211,7 +195,6 @@ var gl = gl
 
 
     public setDy(dy: number){
-    //var dy = dy
 }
 
 

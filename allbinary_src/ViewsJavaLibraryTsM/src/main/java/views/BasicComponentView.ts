@@ -84,8 +84,7 @@ export class BasicComponentView
 public constructor (transformInfoInterface: TransformInfoInterface){
 
             super();
-        var transformInfoInterface = transformInfoInterface
-
+        
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.VIEW))
                         
                                     {
@@ -124,7 +123,6 @@ this.setTransformDocumentInterface(TransformDocumentFactory.getInstance());
 
 
     public setTransformDocumentInterface(transformDocumentInterface: TransformDocumentInterface){
-var transformDocumentInterface = transformDocumentInterface
 this.transformDocumentInterface= transformDocumentInterface;
     
 }
@@ -141,7 +139,6 @@ this.transformDocumentInterface= transformDocumentInterface;
 
 
     public setTransformInfoInterface(transformInfoInterface: TransformInfoInterface){
-var transformInfoInterface = transformInfoInterface
 this.transformInfoInterface= transformInfoInterface;
     
 }

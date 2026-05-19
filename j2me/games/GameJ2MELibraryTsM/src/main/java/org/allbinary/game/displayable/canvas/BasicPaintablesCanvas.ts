@@ -64,11 +64,7 @@ export class BasicPaintablesCanvas extends GameCommandCanvas {
     private readonly colorFillPaintable: ColorFillBasePaintable
 public constructor (cmdListener: CommandListener, name: string, allBinaryGameLayerManager: AllBinaryGameLayerManager, paintableArray: Paintable[]){
             super(cmdListener, name, allBinaryGameLayerManager!.getBackgroundBasicColor(), allBinaryGameLayerManager!.getForegroundBasicColor());
-                        //var cmdListener = cmdListener
-    //var name = name
-    //var allBinaryGameLayerManager = allBinaryGameLayerManager
-    //var paintableArray = paintableArray
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -80,7 +76,6 @@ this.colorFillPaintable= ColorFillPaintableFactory.getInstance()!.getInstance(al
 
 
     public paint(graphics: Graphics){
-    //var graphics = graphics
 this.colorFillPaintable!.paint(graphics);
     
 graphics.setColor(this.foregroundColor);

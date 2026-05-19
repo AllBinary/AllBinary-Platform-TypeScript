@@ -68,8 +68,6 @@ private constructor (){
 
 
     public toAnimationArrayFromListOfPointListWithPointsPerFrame(vector: BasicArrayList, pointsPerFrame: number): number[][][]{
-    //var vector = vector
-    //var pointsPerFrame = pointsPerFrame
 
     var size: number = vector.size()!;
 ;
@@ -96,7 +94,7 @@ index < size; index++)
         {
 nextBasicArrayList= vector.objectArray[index]! as BasicArrayList;
     
-framePoints= toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
+framePoints= this.toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
     
 
 
@@ -124,7 +122,6 @@ points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
 
 
     public toAnimationArrayFromListOfPointList(vector: BasicArrayList): number[][][]{
-    //var vector = vector
 
     var size: number = vector.size()!;
 ;
@@ -151,7 +148,7 @@ index < size; index++)
         {
 nextBasicArrayList= vector.objectArray[index]! as BasicArrayList;
     
-framePoints= toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
+framePoints= this.toFrameArrayFromPointBasicArrayList(nextBasicArrayList);
     
 points[index]= new Array(framePoints!.length) [2];
     
@@ -181,7 +178,6 @@ points[index]![pointIndex]![1]= framePoints[pointIndex]![1]!;
 
 
     public toFrameArrayFromPointBasicArrayList(list: BasicArrayList): number[][]{
-var list = list
 
     var points: number[][] = new Array(list.size()) [2];
 ;

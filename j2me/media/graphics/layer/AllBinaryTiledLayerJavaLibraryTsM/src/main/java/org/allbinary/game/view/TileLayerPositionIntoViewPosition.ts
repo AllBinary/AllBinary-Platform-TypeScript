@@ -93,7 +93,6 @@ public constructor (){
 
 
     public setTiledLayer(tiledLayer: AllBinaryTiledLayer){
-var tiledLayer = tiledLayer
 this.tiledLayer= tiledLayer;
     
 }

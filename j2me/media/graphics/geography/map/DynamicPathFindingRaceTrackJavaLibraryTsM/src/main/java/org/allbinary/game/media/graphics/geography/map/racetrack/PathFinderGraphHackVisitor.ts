@@ -77,11 +77,7 @@ export class PathFinderGraphHackVisitor extends BasePathFinderGraphVisitor<V, E>
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (geographicMapInterface: BasicGeographicMap, edgeMinimum: number, minPathWeight: number, maxPathWeight: number){
             super(geographicMapInterface, edgeMinimum, minPathWeight, maxPathWeight);
-                        //var geographicMapInterface = geographicMapInterface
-var edgeMinimum = edgeMinimum
-var minPathWeight = minPathWeight
-var maxPathWeight = maxPathWeight
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -91,9 +87,6 @@ var maxPathWeight = maxPathWeight
                 //@Throws(Exception.constructor)
             
     public visit(graph: SimpleWeightedGraph, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
-var graph = graph
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
 this.fixStart(graph, startPathFindingNodeList);
     
 this.fixEnd(graph, endPathFindingNodeList);
@@ -106,8 +99,6 @@ this.fixOverPassEdges(graph);
                 //@Throws(Exception.constructor)
             
     fixStart(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, startPathFindingNodeList: BasicArrayList){
-var graph = graph
-var startPathFindingNodeList = startPathFindingNodeList
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
 ;
@@ -165,8 +156,6 @@ graph.removeEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
                 //@Throws(Exception.constructor)
             
     fixEnd(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>, endPathFindingNodeList: BasicArrayList){
-var graph = graph
-var endPathFindingNodeList = endPathFindingNodeList
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
 ;
@@ -226,7 +215,6 @@ graph.addEdge(geographicMapCellPosition, geographicMapCellPositionNeighbor);
                 //@Throws(Exception.constructor)
             
     fixOverPassEdges(graph: SimpleWeightedGraph<CellPosition, DefaultWeightedEdge>){
-var graph = graph
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
 ;
@@ -283,9 +271,6 @@ graph.addEdge(overPassGeographicMapCellPosition, leftUnderPassGeographicMapCellP
                 //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
-var startPathFindingNodeList = startPathFindingNodeList
-var endPathFindingNodeList = endPathFindingNodeList
-var pathList = pathList
 
 
 
@@ -330,7 +315,6 @@ this.removeOverPassEdges(pathList);
                 //@Throws(Exception.constructor)
             
     removeOverPassEdges(pathList: BasicArrayList){
-var pathList = pathList
 
     var geographicMapCellPositionFactory: BasicGeographicMapCellPositionFactory = this.geographicMapInterface!.getGeographicMapCellPositionFactory()!;
 ;
@@ -378,7 +362,6 @@ index >= 0; index--)
 
 
     public isValid(graphPath: GraphPath): boolean{
-var graphPath = graphPath
 
                         if(graphPath!.getEdgeList()!.size() > edgeMinimum && graphPath!.getWeight() < maxPathWeight && graphPath!.getWeight() > minPathWeight)
                         

@@ -79,7 +79,6 @@ this.setTagRequestHelperFactory(new CategoryRequestHelperFactory());
 
 
     public setXsl(value: string){
-var value = value
 this.xsl= value;
     
 }
@@ -239,7 +238,7 @@ this.xsl= value;
                                     this.getPropertiesHashMap()!.put(TransformInfoData.getInstance()!.TEMPLATEFILENAME, this.xsl);
     
 
-                        if(this.getCommand()!.localeCompare(CategoryData.getInstance()!.VIEW) == 0)
+                        if(this.getCommand()!.compareTo(CategoryData.getInstance()!.VIEW) == 0)
                         
                                     {
                                     
@@ -259,7 +258,7 @@ this.xsl= value;
                                     }
                                 
                              else 
-                        if(this.getCommand()!.localeCompare(CategoryData.getInstance()!.VIEW) == 0)
+                        if(this.getCommand()!.compareTo(CategoryData.getInstance()!.VIEW) == 0)
                         
                                     {
                                     

@@ -49,7 +49,6 @@ export class StringValidationJSEUtil
         
 
     public static isBlank(string: string): boolean{
-var string = string
 
     var len: number = string.length!;
 ;

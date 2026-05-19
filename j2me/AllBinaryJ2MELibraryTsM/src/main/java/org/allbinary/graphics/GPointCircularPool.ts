@@ -51,8 +51,7 @@ export class GPointCircularPool extends BaseCircularPool {
 public constructor (size: number){
 
             super();
-        var size = size
-this.circularIndexUtil= CircularIndexUtil.createInstance(size);
+        this.circularIndexUtil= CircularIndexUtil.createInstance(size);
     
 this.OBJECT_ARRAY= new Array(size);
     

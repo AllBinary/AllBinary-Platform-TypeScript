@@ -71,22 +71,14 @@ export class CompositeShaderUpdater extends ShaderUpdater {
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
 
             super();
-            //var uniformBlockArray = uniformBlockArray
-    //var uniformArray = uniformArray
-    //var attributeArray = attributeArray
-    //var attributeHandleArray = attributeHandleArray
-}
+        }
 
 
     public onSurfaceCreated(gl: GL10, eglConfig: EGLConfig, programHandle: number){
-    //var gl = gl
-    //var eglConfig = eglConfig
-    //var programHandle = programHandle
 }
 
 
     public onSurfaceDestroyed(gl: GL10){
-    //var gl = gl
 }
 
 

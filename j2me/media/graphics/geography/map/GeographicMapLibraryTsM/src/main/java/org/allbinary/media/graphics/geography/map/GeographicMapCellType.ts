@@ -65,9 +65,7 @@ export class GeographicMapCellType
 public constructor (type: number, reset: number){
 
             super();
-            //var type = type
-    //var reset = reset
-this.type= type;
+        this.type= type;
     
 
                         if(type != Integer.MIN_VALUE)

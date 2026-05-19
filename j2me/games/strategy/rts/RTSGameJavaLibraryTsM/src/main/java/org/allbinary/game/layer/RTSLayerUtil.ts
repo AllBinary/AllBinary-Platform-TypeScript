@@ -94,9 +94,6 @@ export class RTSLayerUtil
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 
     createWeaponProperties(weaponProperties: WeaponProperties, currentLevel: number, lastLevel: number): WeaponProperties{
-    //var weaponProperties = weaponProperties
-    //var currentLevel = currentLevel
-    //var lastLevel = lastLevel
 
     var reloadTime: number = weaponProperties!.getReloadTime()!;
 ;
@@ -133,7 +130,6 @@ export class RTSLayerUtil
 
 
     public downgrade(rtsLayer: RTSLayer){
-    //var rtsLayer = rtsLayer
 rtsLayer!.setLevel(rtsLayer!.getLevel() -1);
     
 
@@ -169,7 +165,6 @@ rtsLayer!.select();
 
 
     public upgrade(rtsLayer: RTSLayer){
-    //var rtsLayer = rtsLayer
 rtsLayer!.setLevel(rtsLayer!.getLevel() +1);
     
 
@@ -207,7 +202,6 @@ rtsLayer!.select();
     private readonly MAX_RELOAD_TIME: number = Integer.MAX_VALUE /100000;
 
     public getCostExponential(cost: number): number{
-    //var cost = cost
 
 
 
@@ -218,7 +212,6 @@ rtsLayer!.select();
 
 
     getWeaponPropertiesCost(weaponProperties: WeaponProperties): number{
-    //var weaponProperties = weaponProperties
 
     var cost: number = (weaponProperties!.getDamage() +weaponProperties!.getRange() +((this.MAX_RELOAD_TIME /weaponProperties!.getReloadTime())>>1));
 ;
@@ -235,7 +228,6 @@ cost= this.getCostExponential(cost);
 
 
     public getCost(rtsLayer: RTSLayer): number{
-var rtsLayer = rtsLayer
 
     var total: number = 0;
 ;
@@ -283,7 +275,6 @@ total += this.getWeaponPropertiesCost(weaponProperties);
 
 
     public getDowngradeCost(rtsLayer: RTSLayer): number{
-    //var rtsLayer = rtsLayer
 
     var partInterfaceArray: PartInterface[] = rtsLayer!.getPartInterfaceArray()!;
 ;
@@ -348,7 +339,6 @@ this.logUtil!.putF(new StringMaker().
 
 
     public getUpgradeCost(rtsLayer: RTSLayer): number{
-    //var rtsLayer = rtsLayer
 
     var upgradeCost: number = 0;
 ;
@@ -413,7 +403,6 @@ this.logUtil!.putF(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public destroyAndClear(list: BasicArrayList){
-var list = list
 
     var rtsLayer: RTSLayer
 ;
@@ -438,7 +427,6 @@ list.clear();
 
 
     public createFakeRTSLayerHashtable(baseRaceTrackGeographicMap: BaseRaceTrackGeographicMap): Hashtable<any, any>{
-    //var baseRaceTrackGeographicMap = baseRaceTrackGeographicMap
 
     var hashtable: Hashtable<any, any> = new Hashtable<any, any>();
 ;

@@ -115,9 +115,7 @@ export class QuoteHelper extends BasicTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-
+        
     var storeName: string = hashMap!.get(StoreFrontData.getInstance()!.NAME) as string;
 ;
     
@@ -148,7 +146,6 @@ this.portion= new Portion(hashMap);
                 //@Throws(Exception.constructor)
             
     emailUser(quoteRequest: QuoteRequest){
-var quoteRequest = quoteRequest
 
     var user: UserInterface = UserEntityFactory.getInstance()!.getUser(quoteRequest!.getUserName())!;
 ;
@@ -191,7 +188,6 @@ userEmailEventHandler!.receiveEmailInfo(UserEmailEventNameData.QUOTEREQUEST, ema
                 //@Throws(Exception.constructor)
             
     emailAdmins(quoteRequest: QuoteRequest){
-var quoteRequest = quoteRequest
 
     var adminEmailSubject: string = "Quote Request";
 ;

@@ -60,10 +60,6 @@ export class TiledLayerUtil
 
 
     public keepOnBorderdMapX(terrainTiledLayer: AllBinaryTiledLayer, x: number, width: number, mapBorderBufferWidth: number): number{
-var terrainTiledLayer = terrainTiledLayer
-var x = x
-var width = width
-var mapBorderBufferWidth = mapBorderBufferWidth
 
     var newX: number = x;
 ;
@@ -100,10 +96,6 @@ var mapBorderBufferWidth = mapBorderBufferWidth
 
 
     public keepOnBorderdMapY(terrainTiledLayer: AllBinaryTiledLayer, y: number, height: number, mapBorderBufferHeight: number): number{
-var terrainTiledLayer = terrainTiledLayer
-var y = y
-var height = height
-var mapBorderBufferHeight = mapBorderBufferHeight
 
     var newY: number = y;
 ;
@@ -140,9 +132,6 @@ var mapBorderBufferHeight = mapBorderBufferHeight
 
 
     public keepOnMapX(terrainTiledLayer: AllBinaryTiledLayer, x: number, width: number): number{
-var terrainTiledLayer = terrainTiledLayer
-var x = x
-var width = width
 
     var newX: number = x;
 ;
@@ -179,9 +168,6 @@ var width = width
 
 
     public keepOnMapY(terrainTiledLayer: AllBinaryTiledLayer, y: number, height: number): number{
-var terrainTiledLayer = terrainTiledLayer
-var y = y
-var height = height
 
     var newY: number = y;
 ;

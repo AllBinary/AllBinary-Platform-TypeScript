@@ -80,7 +80,6 @@ private constructor (){
     private readonly logFormatUtil: LogFormatUtil = LogFormatUtil.getInstance()!;
 
     /*actual*/ public putL(log: Log){
-var log = log
 
     var specialMessage: string = log.getSpecialMessage()!;
 ;
@@ -103,9 +102,6 @@ this.put(specialMessage, anyType, functionName, exception);
 
 
     /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
 
     var className: string = CommonStrings.getInstance()!.EMPTY;
 ;
@@ -134,10 +130,6 @@ console.log(this.LOG_SUCCESS + message);
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-    //var exception = exception
 
     var className: string = CommonStrings.getInstance()!.EMPTY;
 ;

@@ -71,7 +71,6 @@ export class DisposalUtil
     private readonly commonStrings: CommonStrings = CommonStrings.getInstance()!;
 
     public disposeImage(image: Image){
-    //var image = image
 
                         if(image == 
                                     null
@@ -108,7 +107,6 @@ this.disposeResource(mutableImage!.getImage() as Resource);
 
 
     public disposeResource(resource: Resource){
-    //var resource = resource
 
                         if(!resource.isDisposed())
                         

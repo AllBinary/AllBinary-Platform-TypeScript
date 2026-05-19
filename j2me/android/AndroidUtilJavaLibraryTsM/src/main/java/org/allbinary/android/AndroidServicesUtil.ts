@@ -38,8 +38,6 @@ import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.
       
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       
-import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
-      
 
 
 
@@ -87,7 +85,6 @@ export class AndroidServicesUtil
     private readonly SERVICE_NOT_FOUND_RUNNING: string = "Service not found Running: ";
 
     public isServiceRunning(name: string): boolean{
-var name = name
 
     var activityManager: ActivityManager = this.resourceUtil!.getContext()!.getSystemService(Context.ACTIVITY_SERVICE) as ActivityManager;
 ;

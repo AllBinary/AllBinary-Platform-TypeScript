@@ -46,11 +46,7 @@ export class SimpleCompositeShaderUpdater extends CompositeShaderUpdater {
         
 public constructor (uniformBlockArray: string[], uniformArray: string[], attributeArray: string[], attributeHandleArray: number[]){
             super(uniformBlockArray, uniformArray, attributeArray, attributeHandleArray);
-                        //var uniformBlockArray = uniformBlockArray
-    //var uniformArray = uniformArray
-    //var attributeArray = attributeArray
-    //var attributeHandleArray = attributeHandleArray
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

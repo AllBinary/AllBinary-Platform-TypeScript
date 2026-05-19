@@ -72,7 +72,6 @@ public constructor (){
 
 
     public setColorRangeInterface(colorRangeInterface: ColorRangeInterface){
-var colorRangeInterface = colorRangeInterface
 this.colorRangeInterface= colorRangeInterface;
     
 }
@@ -89,7 +88,6 @@ this.colorRangeInterface= colorRangeInterface;
 
 
     public setMatchingPixelsChecked(matchingPixelsChecked: number){
-var matchingPixelsChecked = matchingPixelsChecked
 this.matchingPixelsChecked= matchingPixelsChecked;
     
 }
@@ -118,7 +116,6 @@ this.totalPixelsChecked++;
 
 
     public setTotalPixelsChecked(totalPixelsChecked: number){
-var totalPixelsChecked = totalPixelsChecked
 this.totalPixelsChecked= totalPixelsChecked;
     
 }

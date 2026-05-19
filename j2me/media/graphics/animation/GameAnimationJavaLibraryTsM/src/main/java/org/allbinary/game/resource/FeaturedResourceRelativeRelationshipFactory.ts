@@ -86,14 +86,12 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getRelativeRelationshipList(resource: string, layer: AllBinaryLayer): BasicArrayList{
-var resource = resource
-var layer = layer
 
     var featureReleaseList: BasicArrayList = this.getList()!;
 ;
     
 
-    var size: number = getList()!.size()!;
+    var size: number = this.getList()!.size()!;
 ;
     
 
@@ -146,8 +144,6 @@ index < size; index++)
                 //@Throws(Exception.constructor)
             
     duplicate(list: BasicArrayList, layer: AllBinaryLayer): BasicArrayList{
-    //var list = list
-var layer = layer
 
     var pointFactory: PointFactory = PointFactory.getInstance()!;
 ;

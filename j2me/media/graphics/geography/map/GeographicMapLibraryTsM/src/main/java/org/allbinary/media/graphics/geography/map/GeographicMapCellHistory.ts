@@ -138,7 +138,6 @@ this.init();
 
 
     public trackAll(list: BasicArrayList){
-    //var list = list
 
     var size: number = list.size()!;
 ;
@@ -169,7 +168,6 @@ this.track(geographicMapCellPosition);
 
 
     public track(geographicMapCellPosition: GeographicMapCellPosition){
-    //var geographicMapCellPosition = geographicMapCellPosition
 
                         if(!this.list.contains(geographicMapCellPosition))
                         
@@ -205,7 +203,6 @@ this.visitedList!.add(this.booleanFactory!.FALSE);
 
 
     public getAfterIfNotLast(geographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
-var geographicMapCellPosition = geographicMapCellPosition
 
     var localList: BasicArrayList = this.list;
 ;
@@ -335,7 +332,6 @@ value= this.visitedList!.get(index) as Boolean;
 
 
     public getInPathButNotTracked(pathList: BasicArrayList): BasicArrayList{
-var pathList = pathList
 
     var inPathButNotTrackedList: BasicArrayList = new BasicArrayListD();
 ;
@@ -383,7 +379,6 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
 
 
     public isVisited(geographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var index: number = this.list.indexOf(geographicMapCellPosition)!;
 ;
@@ -426,7 +421,6 @@ geographicMapCellPosition= pathList!.get(index) as GeographicMapCellPosition;
 
 
     public visit(geographicMapCellPosition: GeographicMapCellPosition): boolean{
-    //var geographicMapCellPosition = geographicMapCellPosition
 
     var index: number = this.list.indexOf(geographicMapCellPosition)!;
 ;
@@ -539,7 +533,6 @@ this.totalVisited++;
                 //@Throws(Exception.constructor)
             
     public isPortionVisited(basicDecimal: BasicDecimal): boolean{
-    //var basicDecimal = basicDecimal
 
     var size: number = this.getSize()!;
 ;
@@ -611,9 +604,6 @@ this.totalVisited= 0;
 
 
     paintNotVisitedRelativeToPoint(graphics: Graphics, tiledLayer: AllBinaryTiledLayer, point: GPoint){
-    //var graphics = graphics
-    //var tiledLayer = tiledLayer
-    //var point = point
 
     var x: number = point.getX() -tiledLayer!.getXP();
 ;
@@ -647,8 +637,6 @@ this.animation.paintXY(graphics, x +halfWidth, y +(height));
     private readonly RED: number = BasicColorFactory.getInstance()!.RED.intValue()!;
 
     public paintNotVisited(graphics: Graphics, geographicMapInterface: BasicGeographicMap){
-    //var graphics = graphics
-    //var geographicMapInterface = geographicMapInterface
 
         try {
             graphics.setColor(this.RED);

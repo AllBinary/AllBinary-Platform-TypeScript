@@ -74,7 +74,6 @@ this.imageColorResults= new ImageColorResults();
 
 
     public setImageColorRangeResults(imageColorRangeResults: ImageColorRangeResults){
-var imageColorRangeResults = imageColorRangeResults
 this.imageColorRangeResults= imageColorRangeResults;
     
 }
@@ -91,7 +90,6 @@ this.imageColorRangeResults= imageColorRangeResults;
 
 
     public setAverageAmbientLevel(averageAmbientLevel: number){
-var averageAmbientLevel = averageAmbientLevel
 this.averageAmbientLevel= averageAmbientLevel;
     
 }
@@ -108,7 +106,6 @@ this.averageAmbientLevel= averageAmbientLevel;
 
 
     public setImageColorResults(imageColorResults: ImageColorResults){
-var imageColorResults = imageColorResults
 this.imageColorResults= imageColorResults;
     
 }

@@ -59,7 +59,6 @@ export class J2SEMath
 
 
     public round(value: number): number{
-var value = value
 
 
 
@@ -70,7 +69,6 @@ var value = value
 
 
     public abs(value: number): number{
-var value = value
 
 
 

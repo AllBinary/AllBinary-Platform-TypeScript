@@ -75,7 +75,6 @@ public constructor (){
 
 
     public getVariable(var: string): string{
-var var = var
 
     var environmentVariables: Properties = this.get()!;
 ;
@@ -125,7 +124,7 @@ var var = var
 ;
     
 
-                        if(osName!.localeCompare(operatingSystems!.LINUX) == 0)
+                        if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     process= Runtime.getRuntime()!.exec(linuxCommand);
@@ -143,7 +142,7 @@ var var = var
                                     }
                                 
                              else 
-                        if(osName!.localeCompare(operatingSystems!.SOLARIS) == 0)
+                        if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
                         
                                     {
                                     process= Runtime.getRuntime()!.exec(solarisCommand);
@@ -323,7 +322,6 @@ environmentVariables!.put(key, value);
 
 
     public updateLibraryPath(libPath: string){
-var libPath = libPath
 
         try {
             
@@ -438,8 +436,6 @@ System.setProperty("java.library.path", libPath +":" +existingPath);
 
 
     public setVariable(var: string, val: string){
-var var = var
-var val = val
 
         try {
             
@@ -463,7 +459,7 @@ var val = val
 ;
     
 
-                        if(osName!.localeCompare(operatingSystems!.LINUX) == 0)
+                        if(osName!.compareTo(operatingSystems!.LINUX) == 0)
                         
                                     {
                                     
@@ -484,7 +480,7 @@ var val = val
                                     }
                                 
                              else 
-                        if(osName!.localeCompare(operatingSystems!.SOLARIS) == 0)
+                        if(osName!.compareTo(operatingSystems!.SOLARIS) == 0)
                         
                                     {
                                     

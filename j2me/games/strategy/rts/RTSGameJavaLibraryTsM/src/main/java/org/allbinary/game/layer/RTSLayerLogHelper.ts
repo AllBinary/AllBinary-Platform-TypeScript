@@ -70,98 +70,66 @@ export class RTSLayerLogHelper
 
 
     public setClosestGeographicMapCellHistory(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, pathsList: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var pathsList = pathsList
 }
 
 
     public trackTo(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, nextUnvisitedPathGeographicMapCellPosition: GeographicMapCellPosition, dx: number, dy: number, reason: string){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var nextUnvisitedPathGeographicMapCellPosition = nextUnvisitedPathGeographicMapCellPosition
-    //var dx = dx
-    //var dy = dy
-    //var reason = reason
 }
 
 
     public turnTo(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, dx: number, dy: number, angleInfo: AngleInfo, angle: number, movementAngle: NamedAngle, evading: boolean, targetAngle: number){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var dx = dx
-    //var dy = dy
-    //var angleInfo = angleInfo
-    //var angle = angle
-    //var movementAngle = movementAngle
-    //var evading = evading
-var targetAngle = targetAngle
 }
 
 
     public doneMoving(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public closeEnough(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public movingLeft(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public movingRight(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public movingUp(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public movingDown(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public currentMoveEnded(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public evade(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public rotateLeft(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public rotateRight(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public handle(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, movementAngle: NamedAngle){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var movementAngle = movementAngle
 }
 
 
     public noRotation(associatedAdvancedRTSGameLayer: PathFindingLayerInterface){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
 }
 
 
     public notOnPath(associatedAdvancedRTSGameLayer: PathFindingLayerInterface, geographicMapCellHistory: GeographicMapCellHistory, currentGeographicMapCellPosition: GeographicMapCellPosition, pathList: BasicArrayList){
-    //var associatedAdvancedRTSGameLayer = associatedAdvancedRTSGameLayer
-    //var geographicMapCellHistory = geographicMapCellHistory
-    //var currentGeographicMapCellPosition = currentGeographicMapCellPosition
-    //var pathList = pathList
 }
 
 

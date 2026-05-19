@@ -91,7 +91,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getFileItemStreamList(httpServletRequest: HttpServletRequest): List{
-var httpServletRequest = httpServletRequest
 
         try {
             
@@ -159,7 +158,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "get()", e);
                 //@Throws(Exception.constructor)
             
     public getFileItemList(httpServletRequest: HttpServletRequest): List{
-var httpServletRequest = httpServletRequest
 
         try {
             

@@ -52,14 +52,7 @@ export class GeologicalGeographicMapCellPosition extends GeographicMapCellPositi
     private readonly geologicalResource: GeologicalResource
 public constructor (column: number, row: number, columns: number, rows: number, width: number, height: number, geologicalResource: GeologicalResource){
             super(column, row, columns, rows, width, height);
-                        //var column = column
-    //var row = row
-    //var columns = columns
-    //var rows = rows
-    //var width = width
-    //var height = height
-    //var geologicalResource = geologicalResource
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

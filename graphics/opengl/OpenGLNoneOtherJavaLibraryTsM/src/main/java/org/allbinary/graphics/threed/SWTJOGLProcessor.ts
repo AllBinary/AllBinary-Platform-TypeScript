@@ -65,8 +65,6 @@ export class SWTJOGLProcessor
     public glHolder: any = {};
 
     public init(display: any = {}, comp: any = {}){
-    //var display = display
-    //var comp = comp
 }
 
 
@@ -81,7 +79,6 @@ export class SWTJOGLProcessor
 
 
     public setRenderer(renderer: any = {}){
-    //var renderer = renderer
 }
 
 
@@ -104,7 +101,6 @@ export class SWTJOGLProcessor
 
 
     public onSurfaceChangedForEvent(event: any = {}){
-    //var event = event
 }
 
 
@@ -113,8 +109,6 @@ export class SWTJOGLProcessor
 
 
     public onSurfaceChangedWH(width: number, height: number){
-    //var width = width
-    //var height = height
 }
 
 
@@ -123,7 +117,6 @@ export class SWTJOGLProcessor
 
 
     public addListeners(midlet: MIDlet){
-    //var midlet = midlet
 }
 
 
@@ -136,9 +129,6 @@ export class SWTJOGLProcessor
 
 
     public setCustom(width: number, height: number, ratio: number){
-    //var width = width
-    //var height = height
-    //var ratio = ratio
 }
 
 

@@ -115,8 +115,7 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 public constructor (imageCache: ImageCache){
 
             super();
-            //var imageCache = imageCache
-this.imageCache= imageCache;
+        this.imageCache= imageCache;
     
 }
 

@@ -63,7 +63,6 @@ export class ColorUtil
 
 
     public isGreyishOrWhiteLike(color: Color): boolean{
-    //var color = color
 
                         if(Math.abs(color.getRed() -color.getGreen()) > 20 || Math.abs(color.getRed() -color.getBlue()) > 20 || Math.abs(color.getGreen() -color.getBlue()) > 20)
                         
@@ -87,7 +86,6 @@ export class ColorUtil
 
 
     public isDark(color: Color): boolean{
-    //var color = color
 
                         if(color.getRed() < 0x77 && color.getRed() < 0x77 && color.getRed() < 0x77)
                         

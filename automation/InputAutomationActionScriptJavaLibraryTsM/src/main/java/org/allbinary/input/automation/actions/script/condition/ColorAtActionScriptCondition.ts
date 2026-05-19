@@ -105,8 +105,7 @@ export class ColorAtActionScriptCondition extends BasicProfileActionScriptCondit
     private colorRangeInterface: ColorRangeInterface = new ColorRange() as ColorRangeInterface;
 public constructor (node: Node){
             super(ColorAtActionScriptCondition.NAME, node);
-                    var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -139,7 +138,7 @@ index < nodeList!.getLength(); index++)
 ;
     
 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.LOCATION_X) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_X) == 0)
                         
                                     {
                                     
@@ -152,7 +151,7 @@ this.point.x= Integer.valueOf(locationX);
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.LOCATION_Y) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.LOCATION_Y) == 0)
                         
                                     {
                                     
@@ -165,7 +164,7 @@ this.point.y= Integer.valueOf(locationY);
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MIN_RED) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_RED) == 0)
                         
                                     {
                                     
@@ -178,7 +177,7 @@ this.getColorRangeInterface()!.setMinRed(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MAX_RED) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_RED) == 0)
                         
                                     {
                                     
@@ -191,7 +190,7 @@ this.getColorRangeInterface()!.setMaxRed(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MIN_GREEN) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_GREEN) == 0)
                         
                                     {
                                     
@@ -204,7 +203,7 @@ this.getColorRangeInterface()!.setMinGreen(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MAX_GREEN) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_GREEN) == 0)
                         
                                     {
                                     
@@ -217,7 +216,7 @@ this.getColorRangeInterface()!.setMaxGreen(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MIN_BLUE) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MIN_BLUE) == 0)
                         
                                     {
                                     
@@ -230,7 +229,7 @@ this.getColorRangeInterface()!.setMinBlue(string.valueOf());
                                     }
                                 
                              else 
-                        if(childNode!.getNodeName()!.localeCompare(ColorAtActionScriptConditionData.MAX_BLUE) == 0)
+                        if(childNode!.getNodeName()!.compareTo(ColorAtActionScriptConditionData.MAX_BLUE) == 0)
                         
                                     {
                                     
@@ -290,7 +289,6 @@ this.colorAtActionScriptConditionJPanel= new ColorAtActionScriptConditionJPanel(
 
 
     public setPoint(point: Point){
-var point = point
 this.point= point;
     
 }
@@ -337,7 +335,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = super.toXmlNode(document)!;
 ;
@@ -356,7 +353,6 @@ node.appendChild(ModDomHelper.createNodeWithValueNodes(document, ColorAtActionSc
                 //@Throws(Exception.constructor)
             
     public shouldProcess(frame: number): boolean{
-var frame = frame
 
     var capturedBufferedImageCacheable: BufferedImageFrameCacheable = 
 
@@ -427,7 +423,6 @@ this.logUtil!.putF(message, this, "log");
 
 
     public setColorRangeInterface(colorRangeInterface: ColorRangeInterface){
-var colorRangeInterface = colorRangeInterface
 this.colorRangeInterface= colorRangeInterface;
     
 }

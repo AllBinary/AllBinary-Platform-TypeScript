@@ -68,7 +68,6 @@ export class DataOutputStreamFactory
                 //@Throws(Exception.constructor)
             
     public getInstance(file: AbFile): AbDataOutputStream{
-var file = file
 
     var idFileOutputStream: AbFileOutputStream = new AbFileOutputStream(file);
 ;
@@ -89,8 +88,6 @@ var file = file
                 //@Throws(Exception.constructor)
             
     public getInstance(filePath: string, fileName: string): AbDataOutputStream{
-var filePath = filePath
-var fileName = fileName
 
     var fileStreamFactory: FileStreamFactory = FileStreamFactory.getInstance()!;
 ;

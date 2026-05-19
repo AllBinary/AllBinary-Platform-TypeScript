@@ -82,11 +82,7 @@ export class MetaValidation extends Validation implements DomNodeInterface {
 public constructor (htmlMetaAttributeData: HtmlMetaAttributeData, label: string, attributeValue: string, contentValue: string){
 
             super();
-        var htmlMetaAttributeData = htmlMetaAttributeData
-var label = label
-var attributeValue = attributeValue
-var contentValue = contentValue
-this.label= label;
+        this.label= label;
     
 
                         if(htmlMetaAttributeData! === HtmlMetaAttributeDataFactory.getInstance()!.HTTP_EQUIV)
@@ -113,8 +109,7 @@ this.content= contentValue;
 public constructor (document: Document){
 
             super();
-        var document = document
-
+        
 
 
                             throw new Exception(CommonStrings.getInstance()!.NOT_IMPLEMENTED);
@@ -207,7 +202,6 @@ public constructor (document: Document){
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 
@@ -246,7 +240,6 @@ hashMap!.put(htmlMetaAttributeDataFactory!.CONTENT.toString(), this.content);
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNameValueNodes(document, HtmlMetaData.getInstance()!.NAME.toString(), this.toHashMap())!;
 ;

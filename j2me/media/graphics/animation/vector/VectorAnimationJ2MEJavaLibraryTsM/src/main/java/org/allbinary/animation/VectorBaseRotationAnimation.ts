@@ -68,11 +68,7 @@ export class VectorBaseRotationAnimation extends RotationAnimation implements Ve
     private currentPoints: number[][][] = NullUtil.getInstance()!.NULL_INT_ARRAY_ARRAY_ARRAY;
 public constructor (angleInfo: AngleInfo, currentPoints: number[][][], basicColor: BasicColor, animationBehavior: AnimationBehavior){
             super(angleInfo, CircularIndexUtil.createInstance(360 /angleInfo!.getAngleIncrementInfo()!.getAngleIncrement()), animationBehavior);
-                        //var angleInfo = angleInfo
-    //var currentPoints = currentPoints
-    //var basicColor = basicColor
-    //var animationBehavior = animationBehavior
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -106,7 +102,6 @@ this.setBasicColorP(basicColor);
 
 
     public setFrame(index: number){
-var index = index
 this.circularIndexUtil!.setIndex(index);
     
 }
@@ -135,7 +130,6 @@ this.circularIndexUtil!.previous();
 
 
     public setSequence(sequence: number[]){
-    //var sequence = sequence
 }
 
 
@@ -150,9 +144,6 @@ this.circularIndexUtil!.previous();
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.basicSetColorUtil!.setBasicColorP(graphics, this.basicColor);
     
 
@@ -226,7 +217,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "paintVectors", e);
 
 
     public getPoints(frame: number): number[][]{
-    //var frame = frame
 
 
 
@@ -237,7 +227,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "paintVectors", e);
 
 
     public setPoints(currentPoints: number[][][]){
-    //var currentPoints = currentPoints
 this.currentPoints= currentPoints;
     
 this.circularIndexUtil= CircularIndexUtil.createInstance(this.currentPoints!.length);

@@ -53,8 +53,7 @@ export class GameCanvasPaintHelper extends ProcessPaintable {
 public constructor (gameCanvas: AllBinaryGameCanvas){
 
             super();
-        var gameCanvas = gameCanvas
-this.gameCanvas= gameCanvas;
+        this.gameCanvas= gameCanvas;
     
 }
 
@@ -64,7 +63,6 @@ this.gameCanvas= gameCanvas;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.gameCanvas!.draw(graphics);
     
 }

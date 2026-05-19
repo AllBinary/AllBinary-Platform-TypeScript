@@ -51,7 +51,6 @@ export class LOGGING
     private static logging: Vector = new Vector();
 
     public static contains(logType: LOGGING): boolean{
-var logType = logType
 
 
 
@@ -103,8 +102,7 @@ var logType = logType
 private constructor (value: string){
 
             super();
-        var value = value
-this.name= value;
+        this.name= value;
     
 LOGGING.logging.add(value);
     

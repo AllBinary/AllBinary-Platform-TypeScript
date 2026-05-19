@@ -102,10 +102,7 @@ export class OpenGLESImage extends Image implements OpenGLSurfaceChangedInterfac
     public readonly openGLESImageProperties: OpenGLESImageProperties = new OpenGLESImageProperties();
 public constructor (image: Image, bitmapFactory: PlatformBitmapBaseFactory, textureFactory: PlatformTextureBaseFactory){
             super(image.getName(), PostLoadImageProcessor.NULL_POST_LOAD_IMAGE_PROCESSOR);
-                        //var image = image
-    //var bitmapFactory = bitmapFactory
-    //var textureFactory = textureFactory
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -143,7 +140,6 @@ this.platformImage= OpenGLESPostLoadPlatformImage.getInstance();
                 //@Throws(Exception.constructor)
             
     public set(gl: GL){
-var gl = gl
 
 
 
@@ -153,7 +149,6 @@ var gl = gl
 
 
     initTexture(gl: GL10): boolean{
-var gl = gl
 
                         if(!OpenGLESImage.texture2dList!.contains(this))
                         
@@ -208,23 +203,10 @@ gl.glTexParameterf(GL10.GL_TEXTURE_2D, GL10.GL_TEXTURE_WRAP_T, GL10.GL_CLAMP_TO_
 
 
     public drawRegion(gl: GL10, viewHeight: number, x_src: number, y_src: number, width: number, height: number, x: number, y: number, z: number){
-var gl = gl
-var viewHeight = viewHeight
-var x_src = x_src
-var y_src = y_src
-var width = width
-var height = height
-var x = x
-var y = y
-var z = z
 }
 
 
     public draw(gl: GL10, x: number, y: number, z: number){
-var gl = gl
-var x = x
-var y = y
-var z = z
 }
 
 

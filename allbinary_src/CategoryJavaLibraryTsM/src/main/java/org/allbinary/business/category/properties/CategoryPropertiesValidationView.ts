@@ -61,8 +61,7 @@ export class CategoryPropertiesValidationView extends CategoryPropertiesView imp
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 public constructor (categoryPropertiesInterface: CategoryPropertiesInterface){
             super(categoryPropertiesInterface);
-                    var categoryPropertiesInterface = categoryPropertiesInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -137,7 +136,6 @@ stringBuffer!.append(this.categoryPropertiesInterface!.validationInfo());
                 //@Throws(Exception.constructor)
             
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

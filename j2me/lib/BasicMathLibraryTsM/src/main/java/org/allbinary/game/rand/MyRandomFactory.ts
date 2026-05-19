@@ -73,7 +73,6 @@ export class MyRandomFactory
 
 
     public static main(args: string[]){
-    //var args = args
 
     var randomFactory: MyRandomFactory = MyRandomFactory.getInstance()!;
 ;
@@ -220,14 +219,12 @@ private constructor (){
 
 
     public setSeed(seed: number){
-var seed = seed
 this.rand= new Random(seed);
     
 }
 
 
     public getNextInt(range: number): number{
-var range = range
 
     var div: number = (Integer.MAX_VALUE /range) +1;
 ;
@@ -242,7 +239,6 @@ var range = range
 
 
     public getAbsoluteNextInt(range: number): number{
-var range = range
 
 
 
@@ -253,7 +249,6 @@ var range = range
 
 
     public getAbsoluteNextIntAllowZero(range: number): number{
-var range = range
 
                         if(range == 0)
                         
@@ -281,15 +276,12 @@ var range = range
 
 
     public shuffle(intArray: number[]){
-    //var intArray = intArray
 this.shuffleTotal(intArray, intArray!.length *7);
     
 }
 
 
     public shuffleTotal(intArray: number[], shuffleTotal: number){
-    //var intArray = intArray
-    //var shuffleTotal = shuffleTotal
 
     var size: number = intArray!.length
                 ;
@@ -331,17 +323,12 @@ intArray[randomIndex2]= value;
 
 
     public shuffle2(intArray: number[], intArray2: number[]){
-    //var intArray = intArray
-    //var intArray2 = intArray2
 this.shuffle2Total(intArray, intArray2, intArray!.length *7);
     
 }
 
 
     public shuffle2Total(intArray: number[], intArray2: number[], shuffleTotal: number){
-    //var intArray = intArray
-    //var intArray2 = intArray2
-    //var shuffleTotal = shuffleTotal
 
     var size: number = intArray!.length
                 ;

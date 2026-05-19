@@ -53,7 +53,6 @@ public constructor (){
 
 
     public setState(state: number){
-var state = state
 }
 
 

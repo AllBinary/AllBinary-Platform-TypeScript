@@ -76,8 +76,7 @@ export class BasicGeographicMapCellPositionFactory
 public constructor (geographicMapInterface: BasicGeographicMap){
 
             super();
-            //var geographicMapInterface = geographicMapInterface
-this.geographicMapInterface= geographicMapInterface;
+        this.geographicMapInterface= geographicMapInterface;
     
 this.geographicMapCellPositionFactoryInterface= this.geographicMapInterface!.getGeographicMapCellPositionFactoryInterface();
     
@@ -146,7 +145,6 @@ this.createInstance(column, row, width, height);
                 //@Throws(Exception.constructor)
             
     public visit(geographicMapCelPositionFactoryInitVisitorInterface: GeographicMapCellPositionFactoryInitVisitorInterface){
-    //var geographicMapCelPositionFactoryInitVisitorInterface = geographicMapCelPositionFactoryInitVisitorInterface
 
     var tiledLayer: AllBinaryTiledLayer = this.tiledLayer;
 ;
@@ -213,8 +211,6 @@ this.logUtil!.put(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public getAt(i_column: number, i_row: number): GeographicMapCellPosition{
-    //var i_column = i_column
-    //var i_row = i_row
 
 
 
@@ -227,7 +223,6 @@ this.logUtil!.put(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public getInstance(anotherMapGeographicMapCellPosition: GeographicMapCellPosition): GeographicMapCellPosition{
-    //var anotherMapGeographicMapCellPosition = anotherMapGeographicMapCellPosition
 
 
 
@@ -240,10 +235,6 @@ this.logUtil!.put(new StringMaker().
                 //@Throws(Exception.constructor)
             
     public createInstance(i_column: number, i_row: number, width: number, height: number): GeographicMapCellPosition{
-    //var i_column = i_column
-    //var i_row = i_row
-    //var width = width
-    //var height = height
 
     var cellPositionCanBeNull: any = this.geographicMapCellPositionArray[i_row]![i_column];
 ;

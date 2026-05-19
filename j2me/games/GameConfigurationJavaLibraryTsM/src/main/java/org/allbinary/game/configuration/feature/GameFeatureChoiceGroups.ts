@@ -92,8 +92,6 @@ private constructor (){
 
 
     public add(name: string, list: BasicArrayList){
-var name = name
-var list = list
 this.hashtable.put(name, list);
     
 }

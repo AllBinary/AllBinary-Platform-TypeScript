@@ -56,15 +56,12 @@ export class DemoCanvasProgressUtil
         
 
     public static showProgress(demoCanvas: DemoCanvas){
-var demoCanvas = demoCanvas
 DemoCanvasProgressUtil.showProgressOptionallyInTheBackground(demoCanvas, false);
     
 }
 
 
     public static showProgressOptionallyInTheBackground(demoCanvas: DemoCanvas, background: boolean){
-var demoCanvas = demoCanvas
-var background = background
 
     var progressCanvas: ProgressCanvas = ProgressCanvasFactory.getInstance()!;
 ;

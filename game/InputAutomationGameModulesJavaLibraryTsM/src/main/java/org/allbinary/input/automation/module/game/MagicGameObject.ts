@@ -59,11 +59,7 @@ export class MagicGameObject extends MeteredGameObject implements MagicGameObjec
     private readonly MP_LABEL: string = "MP:";
 public constructor (bufferedImage: BufferedImage[], minX: Integer, maxX: Integer, y: Integer){
             super(bufferedImage, minX, maxX, y);
-                    var bufferedImage = bufferedImage
-var minX = minX
-var maxX = maxX
-var y = y
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

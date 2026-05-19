@@ -56,8 +56,7 @@ export class ValidationView extends MiniBasketView implements ValidationComponen
         
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -85,7 +84,6 @@ public constructor (transformInfoInterface: TransformInfoInterface){
 
 
     public toValidationInfoNode(document: org.w3c.dom.Document): org.w3c.dom.Node{
-var document = document
 
 
 

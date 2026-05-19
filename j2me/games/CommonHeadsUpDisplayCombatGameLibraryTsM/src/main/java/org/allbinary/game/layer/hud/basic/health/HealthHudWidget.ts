@@ -81,11 +81,7 @@ export class HealthHudWidget extends BasicHud implements PaintableInterface, Hea
     private readonly gameTickTimeDelayHelper: GameTickTimeDelayHelper = GameTickTimeDelayHelperFactory.getInstance()!;
 public constructor (animationInterface: Animation, healthInterface: Health, location: number, direction: number){
             super(location, direction, 16, healthInterface!.getMaxHealth() *16, 2, BasicColorFactory.getInstance()!.WHITE);
-                    var animationInterface = animationInterface
-var healthInterface = healthInterface
-var location = location
-var direction = direction
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -132,7 +128,6 @@ this.xArray[index]= this.getX() +(index *16);
 
 
     public setX(x: number){
-var x = x
 super.setX(x);
     
 this.update();
@@ -190,7 +185,6 @@ this.timeDelayHelper= NoTimeDelayHelper.SINGLETON;
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 
 
 
@@ -214,7 +208,6 @@ index < this.max; index++)
 
 
     public paintThreed(graphics: Graphics){
-var graphics = graphics
 }
 
 

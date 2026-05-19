@@ -57,9 +57,7 @@ export class ImageProcessorInput
     private files: File[]
 public constructor (files: File[], bufferedImageArray: BufferedImage[]){
             super();
-                    var files = files
-var bufferedImageArray = bufferedImageArray
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

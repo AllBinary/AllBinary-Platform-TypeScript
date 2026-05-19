@@ -49,7 +49,6 @@ export class PrimitiveArrayToString
         
 
     public static toString(floats: number[]): string{
-var floats = floats
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

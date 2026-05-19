@@ -72,7 +72,6 @@ private constructor (){
     private readonly NONE: string = "No Stack Trace";
 
     /*actual*/ public getStackTrace(e: Throwable): string{
-var e = e
         //TypeScript
         if (e.stack) { //ArkTs
             return e.stack; //ArkTs

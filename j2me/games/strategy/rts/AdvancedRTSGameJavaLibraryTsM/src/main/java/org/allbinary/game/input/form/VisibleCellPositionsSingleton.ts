@@ -112,7 +112,6 @@ ScrollMapEventHandler.getInstance()!.addListenerInterface(this);
 
 
     public init(simpleTiledLayer: SimpleTiledLayer){
-var simpleTiledLayer = simpleTiledLayer
 this.paintSimpleTiledLayer= this.ALL_VISIBLE_TILEDLAYER;
     
 this.currentIndex= 0;
@@ -137,7 +136,6 @@ this.setSimpleTiledLayer(simpleTiledLayer);
 
 
     public onEvent(eventObject: AllBinaryEventObject){
-var eventObject = eventObject
 ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
     
 }
@@ -146,7 +144,6 @@ ForcedLogUtil.log(EventStrings.getInstance()!.PERFORMANCE_MESSAGE, this);
                 //@Throws(Exception.constructor)
             
     public onBuildingEvent(event: RTSLayerEvent){
-var event = event
 this.paintSimpleTiledLayer= this.simpleTiledLayer;
     
 }
@@ -155,14 +152,12 @@ this.paintSimpleTiledLayer= this.simpleTiledLayer;
                 //@Throws(Exception.constructor)
             
     public onMoveEvent(scrollMapEvent: ScrollMapEvent){
-var scrollMapEvent = scrollMapEvent
 this.move(scrollMapEvent!.getDx(), scrollMapEvent!.getDy());
     
 }
 
 
     public addStationaryCellPositions(list: BasicArrayList){
-var list = list
 
 
 
@@ -183,7 +178,6 @@ this.stationaryVisibleCellPositions[cellPosition!.getRow()]![cellPosition!.getCo
 
 
     public removeStationaryCellPositions(list: BasicArrayList){
-var list = list
 
 
 
@@ -283,7 +277,6 @@ this.currentIndex++;
 
 
     public addCellPositions(list: BasicArrayList){
-var list = list
 
 
 
@@ -304,7 +297,6 @@ this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()]++;
 
 
     public isVisible(cellPosition: CellPosition): boolean{
-var cellPosition = cellPosition
 
                         if(this.visibleCellPositions[cellPosition!.getRow()]![cellPosition!.getColumn()] > 0)
                         
@@ -332,22 +324,18 @@ var cellPosition = cellPosition
 
 
     public move(dx: number, dy: number){
-var dx = dx
-var dy = dy
 this.getSimpleTiledLayer()!.moveDXY(dx, dy);
     
 }
 
 
     public paint(graphics: Graphics){
-var graphics = graphics
 this.paintSimpleTiledLayer!.paint(graphics, this.currentlyVisibleCellPositions);
     
 }
 
 
     setSimpleTiledLayer(simpleTiledLayer: SimpleTiledLayer){
-var simpleTiledLayer = simpleTiledLayer
 this.simpleTiledLayer= simpleTiledLayer;
     
 }

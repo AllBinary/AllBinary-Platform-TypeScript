@@ -57,8 +57,6 @@ export class ArrayUtil
     private readonly mathUtil: MathUtil = MathUtil.getInstance()!;
 
     public copyOf(original: any[], newLength: number): any[]{
-    //var original = original
-    //var newLength = newLength
 
 
 
@@ -69,9 +67,6 @@ export class ArrayUtil
 
 
     public copyOfType(original: any[], newLength: number, newType: Function): any[]{
-    //var original = original
-    //var newLength = newLength
-    //var newType = newType
 
     var copy: any[] = new Array(newLength);
 ;
@@ -88,8 +83,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOfbyte(original: number[], newLength: number): number[]{
-    //var original = original
-    //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
 ;
@@ -106,8 +99,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOfshort(original: number[], newLength: number): number[]{
-var original = original
-var newLength = newLength
 
     var copy: number[] = new Array(newLength);
 ;
@@ -124,8 +115,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOfint(original: number[], newLength: number): number[]{
-    //var original = original
-    //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
 ;
@@ -142,8 +131,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOflong(original: number[], newLength: number): number[]{
-    //var original = original
-    //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
 ;
@@ -160,8 +147,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOfchar(original: string[], newLength: number): string[]{
-    //var original = original
-    //var newLength = newLength
 
     var copy: string[] = 
                                                         
@@ -181,8 +166,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOffloat(original: number[], newLength: number): number[]{
-    //var original = original
-    //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
 ;
@@ -199,8 +182,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOfdouble(original: number[], newLength: number): number[]{
-    //var original = original
-    //var newLength = newLength
 
     var copy: number[] = new Array(newLength);
 ;
@@ -217,8 +198,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public copyOfboolean(original: boolean[], newLength: number): boolean[]{
-    //var original = original
-    //var newLength = newLength
 
     var copy: boolean[] = new Array(newLength);
 ;
@@ -235,7 +214,6 @@ System.arraycopy(original, 0, copy, 0, this.mathUtil!.min(original.length, newLe
 
 
     public reverse(intArray: number[]){
-    //var intArray = intArray
 
     var length: number = intArray!.length -1;
 ;
@@ -268,9 +246,6 @@ intArray[length -index]= temp;
 
 
     public flip(intArray: number[], width: number, height: number){
-    //var intArray = intArray
-    //var width = width
-    //var height = height
 
     var length: number = height -1;
 ;
@@ -321,7 +296,6 @@ intArray[rowIndex +x]= temp;
 
 
     public toStringFromTwoDimensionaArray(twoDimensionalIntArray: number[][]): string{
-    //var twoDimensionalIntArray = twoDimensionalIntArray
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -380,7 +354,6 @@ stringBuffer!.append(commonSeps!.NEW_LINE);
 
 
     public toStringFromObjectArray(objectArray: any[]): string{
-    //var objectArray = objectArray
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -413,7 +386,6 @@ stringBuffer!.append(commonSeps!.COMMA_SEP);
 
 
     public toStringFromByteArray(byteArray: number[]): string{
-    //var byteArray = byteArray
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

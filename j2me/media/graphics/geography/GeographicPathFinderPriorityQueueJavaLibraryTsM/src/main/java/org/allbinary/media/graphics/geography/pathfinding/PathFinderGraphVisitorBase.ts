@@ -55,9 +55,6 @@ export class PathFinderGraphVisitorBase
                 //@Throws(Exception.constructor)
             
     public visit(graph: any = {}, startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList){
-    //var graph = graph
-    //var startPathFindingNodeList = startPathFindingNodeList
-    //var endPathFindingNodeList = endPathFindingNodeList
 
 
 
@@ -69,9 +66,6 @@ export class PathFinderGraphVisitorBase
                 //@Throws(Exception.constructor)
             
     public fixPath(startPathFindingNodeList: BasicArrayList, endPathFindingNodeList: BasicArrayList, pathList: BasicArrayList){
-    //var startPathFindingNodeList = startPathFindingNodeList
-    //var endPathFindingNodeList = endPathFindingNodeList
-    //var pathList = pathList
 
 
 
@@ -81,7 +75,6 @@ export class PathFinderGraphVisitorBase
 
 
     public isValid(graphPath: any = {}): boolean{
-    //var graphPath = graphPath
 
 
 
@@ -91,7 +84,6 @@ export class PathFinderGraphVisitorBase
 
 
     public getInvalidReason(graphPath: any = {}): string{
-    //var graphPath = graphPath
 
 
 

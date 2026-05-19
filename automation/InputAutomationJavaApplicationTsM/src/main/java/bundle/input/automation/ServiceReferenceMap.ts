@@ -57,7 +57,6 @@ export class ServiceReferenceMap
         
 
     public static toString(map: Map): string{
-var map = map
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -75,8 +74,7 @@ var map = map
 public constructor (serviceReference: ServiceReference){
 
             super();
-        var serviceReference = serviceReference
-this.serviceReference= serviceReference;
+        this.serviceReference= serviceReference;
     
 }
 
@@ -102,7 +100,6 @@ this.serviceReference= serviceReference;
 
 
     public containsKey(key: any = {}): boolean{
-var key = key
 
 
 
@@ -113,7 +110,6 @@ var key = key
 
 
     public containsValue(value: any = {}): boolean{
-var value = value
 
 
 
@@ -124,7 +120,6 @@ var value = value
 
 
     public get(key: any = {}): any{
-var key = key
 
 
 
@@ -135,8 +130,6 @@ var key = key
 
 
     public put(key: any = {}, value: any = {}): any{
-var key = key
-var value = value
 
 
 
@@ -147,7 +140,6 @@ var value = value
 
 
     public remove(key: any = {}): any{
-var key = key
 
 
 
@@ -158,7 +150,6 @@ var key = key
 
 
     public putAll(m: Map){
-var m = m
 }
 
 

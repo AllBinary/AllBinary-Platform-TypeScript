@@ -66,8 +66,7 @@ export class Money
 public constructor (money: Money){
 
             super();
-        var money = money
-this.units= new Long(money.getUnits());
+        this.units= new Long(money.getUnits());
     
 }
 
@@ -81,8 +80,7 @@ public constructor (){
 public constructor (usDollarStr: string){
 
             super();
-        var usDollarStr = usDollarStr
-
+        
                         if(usDollarStr != 
                                     null
                                  && StringValidationUtil.getInstance()!.isNumber(usDollarStr))
@@ -98,8 +96,7 @@ public constructor (usDollarStr: string){
 public constructor (units: number){
 
             super();
-        var units = units
-this.units= new Long(units);
+        this.units= new Long(units);
     
 }
 
@@ -134,28 +131,24 @@ this.units= new Long(units);
 
 
     public add(moreMoney: Money){
-var moreMoney = moreMoney
 this.add(moreMoney!.toString());
     
 }
 
 
     public add(usDollarStr: string){
-var usDollarStr = usDollarStr
 this.units= new Long(this.units.longValue() +convertUsdToUnits(usDollarStr));
     
 }
 
 
     public subtract(usDollarStr: string){
-var usDollarStr = usDollarStr
 this.units= new Long(this.units.longValue() -convertUsdToUnits(usDollarStr));
     
 }
 
 
     public multiply(multiplier: number){
-var multiplier = multiplier
 this.units= new Long(new number(this.units.longValue() *multiplier).
                             longValue());
     
@@ -163,20 +156,18 @@ this.units= new Long(new number(this.units.longValue() *multiplier).
 
 
     public multiply(multiplier: number){
-var multiplier = multiplier
 this.units= new Long(this.units.longValue() *multiplier);
     
 }
 
 
     convertUnitsTo(currency: string): string{
-var currency = currency
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
     
 
-                        if(currency.localeCompare(this.DEFAULT_CURRENCY) == 0)
+                        if(currency.compareTo(this.DEFAULT_CURRENCY) == 0)
                         
                                     {
                                     
@@ -217,7 +208,6 @@ stringBuffer!.append(new Long(cents).
 
 
     convertUsdToUnits(usDollarStr: string): number{
-var usDollarStr = usDollarStr
 
     var localUnit: number = 0;
 ;

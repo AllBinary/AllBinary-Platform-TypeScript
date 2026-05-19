@@ -87,9 +87,7 @@ export class BasicProfileActionScriptInput extends BasicProfileActionScriptProce
     private time: number= 0
 public constructor (label: string, node: Node){
             super(label, node);
-                        //var label = label
-    //var node = node
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -134,8 +132,7 @@ this.setInputRobotInterface(InputRobotFactory.getInstance()!.get(inputTypeString
 
 public constructor (label: string){
             super(label);
-                        //var label = label
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -175,7 +172,6 @@ this.setTime(0);
 
 
     public setTime(time: number){
-var time = time
 this.time= time;
     
 }
@@ -204,7 +200,6 @@ this.logUtil!.putF("HashMap: " +hashMap!.toString(), this, "toHashMap()");
                 //@Throws(Exception.constructor)
             
     public toXmlNode(document: Document): Node{
-var document = document
 
     var node: Node = ModDomHelper.createNodeWithValueNodes(document, GenericProfileActionScriptInputData.NAME, this.BasicProfileActionScriptInput_toHashMap())!;
 ;
@@ -219,7 +214,6 @@ var document = document
 
 
     public setInputRobotInterface(inputRobotInterface: InputRobotInterface){
-var inputRobotInterface = inputRobotInterface
 this.inputRobotInterface= inputRobotInterface;
     
 }

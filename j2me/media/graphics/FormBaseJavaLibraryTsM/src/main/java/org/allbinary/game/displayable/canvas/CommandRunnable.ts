@@ -71,9 +71,7 @@ export class CommandRunnable
 public constructor (commandFormInputProcessor: CommandFormInputProcessor, command: Command){
 
             super();
-        var commandFormInputProcessor = commandFormInputProcessor
-var command = command
-this.commandFormInputProcessor= commandFormInputProcessor;
+        this.commandFormInputProcessor= commandFormInputProcessor;
     
 this.command= command;
     

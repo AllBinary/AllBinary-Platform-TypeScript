@@ -116,7 +116,6 @@ public constructor (){
 
 
     public setInstalled(installed: boolean){
-var installed = installed
 this.installed= installed;
     
 this.logUtil!.putF("Installed: " +installed, this, "setIntalled");

@@ -75,8 +75,6 @@ public constructor (){
 
 
     public addItem(id: string, num: string){
-var id = id
-var num = num
 
                         if(this.items.containsKey(id))
                         
@@ -112,15 +110,12 @@ this.items.put(id, newNumInt!.toString());
 
 
     public removeItem(id: string){
-var id = id
 this.items.remove(id);
     
 }
 
 
     public adjustItem(id: string, num: string){
-var id = id
-var num = num
 
                         if(Integer.valueOf(num)!.intValue() > 0)
                         
@@ -239,7 +234,6 @@ totalWeight!.add(weightFloat!.toString());
 
 
     public getNumberOf(product: string): Integer{
-var product = product
 
     var numStr: string = this.items.get(product) as string;
 ;

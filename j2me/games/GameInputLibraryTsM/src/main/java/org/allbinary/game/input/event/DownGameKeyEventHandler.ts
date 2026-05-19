@@ -69,7 +69,6 @@ export class DownGameKeyEventHandler extends DownGameKeyEventHandlerBase {
     private readonly playerInputIdFactory: LocalPlayerInputIdFactory = LocalPlayerInputIdFactory.getInstance()!;
 
     public getInstanceForDevice(deviceId: number): DownGameKeyEventHandlerBase{
-var deviceId = deviceId
 
     var playerInputId: number = this.playerInputIdFactory!.getPlayerForDevice(deviceId)!;
 ;
@@ -84,7 +83,6 @@ var deviceId = deviceId
 
 
     public getInstanceForPlayer(playerInputId: number): DownGameKeyEventHandlerBase{
-var playerInputId = playerInputId
 
 
 
@@ -118,7 +116,6 @@ DownGameKeyEventHandler.instanceArray[index]!.removeAllListeners();
 
 
     public removeListenerSingleThreaded(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 super.removeListenerSingleThreaded(eventListenerInterface);
     
 
@@ -138,7 +135,6 @@ DownGameKeyEventHandler.instanceArray[index]!.removeListenerSingleThreaded(event
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public removeListener(eventListenerInterface: EventListenerInterface){
-var eventListenerInterface = eventListenerInterface
 super.removeListener(eventListenerInterface);
     
 

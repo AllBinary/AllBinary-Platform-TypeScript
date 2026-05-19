@@ -44,8 +44,7 @@ export class ObjectPermutationVisitor extends Visitor {
 public constructor (data: any[]){
 
             super();
-            //var data = data
-this.data= data;
+        this.data= data;
     
 }
 
@@ -53,7 +52,6 @@ this.data= data;
     private stringBuilder: StringMaker = new StringMaker();
 
     public visit(anyType: any = {}): any{
-    //var anyType = anyType
 this.stringBuilder!.delete(0, stringBuilder!.length());
     
 this.print(this.data, stringBuilder);
@@ -68,7 +66,6 @@ this.print(this.data, stringBuilder);
 
 
     public print(data: any[]){
-    //var data = data
 
     var stringBuilder: StringMaker = new StringMaker();
 ;
@@ -79,8 +76,6 @@ this.print(data, stringBuilder);
 
 
     public print(data: any[], stringBuilder: StringMaker){
-    //var data = data
-    //var stringBuilder = stringBuilder
 
     var tsUtil: TsUtil = TsUtil.getInstance()!;
 ;

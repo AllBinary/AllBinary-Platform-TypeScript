@@ -71,7 +71,6 @@ export class LicenseInitInfoUtil
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setFilePath(filePath: string){
-var filePath = filePath
 }
 
 private constructor (){
@@ -84,7 +83,6 @@ private constructor (){
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public write(initData: LicenseInitInfo){
-var initData = initData
 }
 
 
@@ -105,7 +103,6 @@ var initData = initData
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public readAgain(initializeCounter: number): LicenseInitInfo{
-var initializeCounter = initializeCounter
 
     var licenseInitInfo: LicenseInitInfo = new LicenseInitInfo();
 ;

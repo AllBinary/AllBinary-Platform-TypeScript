@@ -92,7 +92,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public setAvailable(available: boolean){
-var available = available
 this.available= available;
     
 AnalogControllerConfigurationEventHandler.getInstance()!.fireEvent(this.analogControllerConfigurationEvent);

@@ -57,10 +57,7 @@ export class CircleFilledAnimation extends Animation implements ColorCompositeIn
     private height: number
 public constructor (width: number, height: number, basicColor: BasicColor){
             super();
-                        //var width = width
-    //var height = height
-    //var basicColor = basicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -78,9 +75,6 @@ this.setBasicColorP(basicColor);
 
 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 this.basicSetColorUtil!.setBasicColorP3(graphics, this.getBasicColorP(), this.getColor());
     
 graphics.fillRect(x, y, this.width, this.height);

@@ -78,14 +78,12 @@ public constructor (){
 
 
     public setCommand(command: string){
-var command = command
 this.command= command;
     
 }
 
 
     public setStoreName(value: string){
-var value = value
 this.storeName= value;
     
 }
@@ -235,7 +233,7 @@ this.storeName= value;
 this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
     
 
-                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.GETCURRENTLOCATION) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTLOCATION) == 0)
                         
                                     {
                                     pageContext!.getOut()!.print(this.getCurrentLocation());
@@ -244,7 +242,7 @@ this.propertiesHashMap!.put(StoreFrontData.getInstance()!.NAME, this.storeName);
                                     }
                                 
                              else 
-                        if(this.command.localeCompare(org.allbinary.globals.GLOBALS2.GETCURRENTHOMELOCATION) == 0)
+                        if(this.command.compareTo(org.allbinary.globals.GLOBALS2.GETCURRENTHOMELOCATION) == 0)
                         
                                     {
                                     pageContext!.getOut()!.print(this.getCurrentHomeLocation());

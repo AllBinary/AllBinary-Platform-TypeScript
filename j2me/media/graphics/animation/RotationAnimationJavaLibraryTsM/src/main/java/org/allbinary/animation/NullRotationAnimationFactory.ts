@@ -82,9 +82,6 @@ export class NullRotationAnimationFactory
                                 {
                                 
     public paintXY(graphics: Graphics, x: number, y: number){
-    //var graphics = graphics
-    //var x = x
-    //var y = y
 }
 
                                 }
@@ -96,7 +93,6 @@ private constructor (){
 
 
     public getInstance(instanceId: number): Animation{
-    //var instanceId = instanceId
 
 
 
@@ -109,7 +105,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstanceAnimation(animationInterface: Animation): Animation{
-var animationInterface = animationInterface
 
 
 
@@ -120,7 +115,6 @@ var animationInterface = animationInterface
 
 
     public setInitialScale(scaleProperties: ScaleProperties){
-    //var scaleProperties = scaleProperties
 }
 
 

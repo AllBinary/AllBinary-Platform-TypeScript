@@ -74,11 +74,7 @@ export class NumberTextFieldItemValidator extends ValidatorBase {
 public constructor (textFieldItem: ABTextFieldItem, maxChars: number, min: number, max: number){
 
             super();
-        var textFieldItem = textFieldItem
-var maxChars = maxChars
-var min = min
-var max = max
-this.textFieldItem= textFieldItem;
+        this.textFieldItem= textFieldItem;
     
 this.min= min;
     
@@ -90,7 +86,6 @@ this.maxChars= maxChars;
 
 
     isNumberValid(value: Integer): Boolean{
-var value = value
 
 
 
@@ -101,7 +96,6 @@ var value = value
 
 
     toNumberVector(value: Integer): Vector<any>{
-var value = value
 
 
 

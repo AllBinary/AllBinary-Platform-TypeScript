@@ -61,8 +61,7 @@ export class HighScoreCommandsBaseFactory
 protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
             super();
-        var HIGH_SCORE_COMMANDS = HIGH_SCORE_COMMANDS
-
+        
                         if(J2MEUtil.isJ2ME())
                         
                                     {
@@ -84,7 +83,6 @@ protected constructor (HIGH_SCORE_COMMANDS: Command[]){
 
 
     public isHighScoreCommand(command: Command): boolean{
-var command = command
 
 
 
@@ -120,7 +118,6 @@ index >= 0; index--)
                 //@Throws(Exception.constructor)
             
     public getIndex(command: Command): number{
-var command = command
 
 
 

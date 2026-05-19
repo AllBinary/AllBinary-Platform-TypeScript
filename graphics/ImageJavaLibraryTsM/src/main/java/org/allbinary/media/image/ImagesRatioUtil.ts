@@ -81,8 +81,6 @@ private constructor (){
     private readonly imageUtil: ImageUtil = ImageUtil.getInstance()!;
 
     public isEqual(bufferedImageArray: BufferedImage[], totalImages: number): boolean{
-    //var bufferedImageArray = bufferedImageArray
-    //var totalImages = totalImages
 
     var end: number = totalImages;
 ;
@@ -127,8 +125,6 @@ index < end; index++)
 
 
     public getAverage(bufferedImageArray: BufferedImage[], totalImages: number): number{
-    //var bufferedImageArray = bufferedImageArray
-    //var totalImages = totalImages
 
     var ratio: number = 0;
 ;
@@ -164,8 +160,6 @@ ratio += (bufferedImageArray[index]!.getWidth() /bufferedImageArray[index]!.getH
                 //@Throws(Exception.constructor)
             
     public fudge(bufferedImage: BufferedImage, ratio: number): BufferedImage{
-var bufferedImage = bufferedImage
-var ratio = ratio
 
     var imageRatio: number = (bufferedImage!.getWidth() /bufferedImage!.getHeight());
 ;
@@ -296,9 +290,6 @@ g.drawImage(bufferedImage, point.x, point.y, bufferedImage!.getWidth(), buffered
                 //@Throws(Exception.constructor)
             
     public fudge(bufferedImageArray: BufferedImage[], totalImages: number, ratio: number): BufferedImage[]{
-    //var bufferedImageArray = bufferedImageArray
-    //var totalImages = totalImages
-    //var ratio = ratio
 
     var end: number = totalImages;
 ;

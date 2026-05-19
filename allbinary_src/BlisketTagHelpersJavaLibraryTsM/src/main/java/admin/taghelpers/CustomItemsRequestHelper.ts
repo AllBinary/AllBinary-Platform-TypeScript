@@ -91,9 +91,7 @@ export class CustomItemsRequestHelper extends ModifyTable {
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.request= pageContext!.getRequest() as HttpServletRequest;
+        this.request= pageContext!.getRequest() as HttpServletRequest;
     
 this.getFormData();
     

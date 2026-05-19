@@ -86,9 +86,6 @@ export class EmailEventHandlerUtil
                 //@Throws(Exception.constructor)
             
     public static getUserEmailEventListenerVector(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userInterface: UserInterface): Vector{
-    //var abeClientInformation = abeClientInformation
-    //var userEmailEventNameData = userEmailEventNameData
-    //var userInterface = userInterface
 
     var userConfigurationInterface: UserConfigurationInterface = userInterface!.getUserConfigurationInterface()!;
 ;
@@ -130,9 +127,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getEventHandler(abeClientInformation: AbeClientInformationInterface, userEmailEventNameData: UserEmailEventNameData, userVector: Vector): UserEmailEventHandler{
-    //var abeClientInformation = abeClientInformation
-    //var userEmailEventNameData = userEmailEventNameData
-    //var userVector = userVector
 
                         if(org.allbinary.logic.communication.log.config.type.LogConfigTypes.LOGGING.contains(org.allbinary.logic.communication.log.config.type.LogConfigTypeFactory.getInstance()!.EMAILLOGGING))
                         

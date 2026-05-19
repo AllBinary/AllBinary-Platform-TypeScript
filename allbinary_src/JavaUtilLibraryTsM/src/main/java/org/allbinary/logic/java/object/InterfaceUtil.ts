@@ -51,8 +51,6 @@ export class InterfaceUtil
         
 
     public static viewAll(myClass: Function, lineBreak: string): string{
-    //var myClass = myClass
-    //var lineBreak = lineBreak
 
     var stringBuffer: StringMaker = new StringMaker();
 ;
@@ -93,8 +91,6 @@ stringBuffer!.append(lineBreak);
 
 
     public static constructor(interfaceName: string, interfaces: Function[]): Function{
-    //var interfaceName = interfaceName
-    //var interfaces = interfaces
 
                         if(interfaceName != 
                                     null
@@ -139,8 +135,6 @@ index < interfaces.length; index++)
 
 
     public static isImplemented(clazz: Function, anyType: any = {}): boolean{
-var clazz = clazz
-var anyType = anyType
 
     var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
 ;
@@ -154,7 +148,7 @@ var anyType = anyType
 index < classes.length; index++)
         {
 
-                        if(clazz.toString()!.localeCompare(classes[index]!.getName()) == 0)
+                        if(clazz.toString()!.compareTo(classes[index]!.getName()) == 0)
                         
 
 
@@ -173,8 +167,6 @@ index < classes.length; index++)
 
 
     public static isImplemented(className: string, anyType: any = {}): boolean{
-var className = className
-var anyType = anyType
 
     var classes: Function[] = anyType!.constructor.name.getInterfaces()!;
 ;
@@ -212,8 +204,6 @@ index < classes.length; index++)
 
 
     public static isImplementedView(clazz: Function, anyType: any = {}): string{
-var clazz = clazz
-var anyType = anyType
 
     var stringBuffer: StringMaker = new StringMaker();
 ;

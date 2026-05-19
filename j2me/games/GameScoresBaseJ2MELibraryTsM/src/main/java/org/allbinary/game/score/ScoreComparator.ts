@@ -70,8 +70,7 @@ export class ScoreComparator
 public constructor (isHighestBest: boolean){
 
             super();
-            //var isHighestBest = isHighestBest
-this.isHighestBest= isHighestBest;
+        this.isHighestBest= isHighestBest;
     
 }
 
@@ -94,8 +93,6 @@ this.isHighestBest= isHighestBest;
 
 
     public compare(recordOne: number[], recordTwo: number[]): number{
-    //var recordOne = recordOne
-    //var recordTwo = recordTwo
 
     var byteArrayInputStreamOne: ByteArrayInputStream = new ByteArrayInputStream(recordOne);
 ;
@@ -191,8 +188,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
     public getHighTooLow(scoreOne: number, scoreTwo: number): number{
-    //var scoreOne = scoreOne
-    //var scoreTwo = scoreTwo
 
                         if(scoreOne > scoreTwo)
                         
@@ -233,8 +228,6 @@ this.logUtil!.put(commonStrings!.EXCEPTION, this, "compare", e);
 
 
     public getLowTooHigh(scoreOne: number, scoreTwo: number): number{
-    //var scoreOne = scoreOne
-    //var scoreTwo = scoreTwo
 
                         if(scoreOne < scoreTwo)
                         

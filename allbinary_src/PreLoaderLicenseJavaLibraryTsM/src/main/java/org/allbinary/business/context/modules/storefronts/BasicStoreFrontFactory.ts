@@ -76,7 +76,6 @@ private constructor (){
                 //@Throws(Exception.constructor)
             
     public getInstance(storeName: string): BasicStoreFrontInterface{
-var storeName = storeName
 
         try {
             

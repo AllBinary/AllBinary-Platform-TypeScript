@@ -62,8 +62,7 @@ export class TransformInfoHttpSearch extends TransformInfoHttp {
         
 public constructor (searchRequest: SearchRequest){
             super(searchRequest!.getPropertiesHashMap(), searchRequest!.getPageContext());
-                    var searchRequest = searchRequest
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

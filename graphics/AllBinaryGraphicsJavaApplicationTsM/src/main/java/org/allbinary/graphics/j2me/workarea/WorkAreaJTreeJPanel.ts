@@ -98,8 +98,7 @@ export class WorkAreaJTreeJPanel extends javax.swing.JPanel {
 public constructor (workAreaName: string){
 
             super();
-        var workAreaName = workAreaName
-this.initComponents();
+        this.initComponents();
     
 this.rootTreeNode= new DefaultMutableTreeNode(workAreaName);
     
@@ -113,7 +112,6 @@ this.highlightedBasicArrayList= new BasicArrayListD();
 
 
     public add(treeNode: MutableTreeNode){
-var treeNode = treeNode
 this.rootTreeNode!.add(treeNode);
     
 }
@@ -126,7 +124,6 @@ this.workAreaJTree!.addMouseListener(new class extends java.awt.event.MouseAdapt
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 workAreaJTreeMousePressed(evt);
     
 }
@@ -142,7 +139,6 @@ this.workAreaPropertiesJPanel!.add(this.workAreaJTree);
 
 
     public getNode(treePathArray: TreePath[]): BasicArrayList{
-var treePathArray = treePathArray
 
     var basicArrayList: BasicArrayList = new BasicArrayListD();
 ;
@@ -178,7 +174,6 @@ basicArrayList!.add(this.getNode(treePathArray[index]!));
 
 
     public getNode(treePath: TreePath): DefaultMutableTreeNode{
-var treePath = treePath
 
                         if(treePath != 
                                     null
@@ -253,7 +248,6 @@ this.highlightedBasicArrayList!.clear();
                 //@Throws(Exception.constructor)
             
     public selectGraphicItem(node: DefaultMutableTreeNode){
-var node = node
 this.highlightedBasicArrayList!.add(node);
     
 MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.SELECT, node) as Object));
@@ -264,7 +258,6 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
                 //@Throws(Exception.constructor)
             
     public removeGraphicItem(node: DefaultMutableTreeNode){
-var node = node
 MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSource(MyGraphicItemEventService.DELETE, node) as Object));
     
 }
@@ -273,7 +266,6 @@ MyGraphicItemEventService.fire(new MyGraphicItemEvent(new MyGraphicItemEventSour
                 //@Throws(Exception.constructor)
             
     public removeCanvas(node: DefaultMutableTreeNode){
-var node = node
 MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEventService.DELETE, node) as Object));
     
 }
@@ -282,7 +274,6 @@ MyCanvasEventService.fire(new MyCanvasEvent(new MyCanvasEventSource(MyCanvasEven
                 //@Throws(Exception.constructor)
             
     public remove(treePath: TreePath){
-var treePath = treePath
 
     var node: DefaultMutableTreeNode = this.getNode(treePath)!;
 ;
@@ -341,7 +332,6 @@ this.repaint();
                 //@Throws(Exception.constructor)
             
     copy(treePath: TreePath){
-var treePath = treePath
 
     var node: DefaultMutableTreeNode = this.getNode(treePath)!;
 ;
@@ -376,8 +366,6 @@ var treePath = treePath
                 //@Throws(Exception.constructor)
             
     public rotate(treePath: TreePath, angle: number){
-var treePath = treePath
-var angle = angle
 
     var node: DefaultMutableTreeNode = this.getNode(treePath)!;
 ;
@@ -428,7 +416,6 @@ this.workAreaJTree!.expandRow(1);
 
 
     public expand(treePath: TreePath){
-var treePath = treePath
 this.workAreaJTree!.expandPath(treePath);
     
 }
@@ -451,17 +438,14 @@ itemJPopupMenu!.addPopupMenuListener(new class extends javax.swing.event.PopupMe
                                 {
                                 
     public popupMenuCanceled(evt: javax.swing.event.PopupMenuEvent){
-var evt = evt
 }
 
     public popupMenuWillBecomeInvisible(evt: javax.swing.event.PopupMenuEvent){
-var evt = evt
 itemJPopupMenuPopupMenuWillBecomeInvisible(evt);
     
 }
 
     public popupMenuWillBecomeVisible(evt: javax.swing.event.PopupMenuEvent){
-var evt = evt
 itemJPopupMenuPopupMenuWillBecomeVisible(evt);
     
 }
@@ -475,7 +459,6 @@ this.deleteJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAda
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 deleteJMenuItemMousePressed(evt);
     
 }
@@ -491,7 +474,6 @@ this.copyJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAdapt
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 copyJMenuItemMousePressed(evt);
     
 }
@@ -507,7 +489,6 @@ this.rotateJMenuItem!.addMouseListener(new class extends java.awt.event.MouseAda
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 rotateJMenuItemMousePressed(evt);
     
 }
@@ -523,7 +504,6 @@ this.workAreaPropertiesJPanel!.addMouseListener(new class extends java.awt.event
                                 {
                                 
     public mousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 workAreaPropertiesJPanelMousePressed(evt);
     
 }
@@ -541,7 +521,6 @@ add(this.itemJScrollPane1);
 
 
     rotateJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 
         try {
             
@@ -568,7 +547,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "rotateJMenuItemMousePres
 
 
     workAreaJTreeMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 
         try {
             
@@ -672,17 +650,14 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "workAreaJTreeMousePresse
 
 
     itemJPopupMenuPopupMenuWillBecomeInvisible(evt: javax.swing.event.PopupMenuEvent){
-var evt = evt
 }
 
 
     itemJPopupMenuPopupMenuWillBecomeVisible(evt: javax.swing.event.PopupMenuEvent){
-var evt = evt
 }
 
 
     copyJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 
         try {
             this.copy();
@@ -699,7 +674,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "copyJMenuItemMousePresse
 
 
     deleteJMenuItemMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 
         try {
             
@@ -740,7 +714,6 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "deleteJMenuItemMousePres
 
 
     workAreaPropertiesJPanelMousePressed(evt: java.awt.event.MouseEvent){
-var evt = evt
 }
 
 

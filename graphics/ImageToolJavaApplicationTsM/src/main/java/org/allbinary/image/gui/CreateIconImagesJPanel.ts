@@ -93,8 +93,7 @@ export class CreateIconImagesJPanel extends javax.swing.JPanel implements ImageP
     private imageProcessorInput: ImageProcessorInput
 public constructor (imageProcessorInput: ImageProcessorInput){
             super();
-                        //var imageProcessorInput = imageProcessorInput
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -299,7 +298,6 @@ logUtil!.put(commonStrings!.EXCEPTION, this, commonStrings!.RUN, e);
 
 
     public setImageProcessorInput(imageProcessorInput: ImageProcessorInput){
-var imageProcessorInput = imageProcessorInput
 this.imageProcessorInput= imageProcessorInput;
     
 }
@@ -314,7 +312,6 @@ this.aboveJButton!.addActionListener(new class extends java.awt.event.ActionList
                                 {
                                 
     public actionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 aboveJButtonActionPerformed(evt);
     
 }
@@ -336,7 +333,6 @@ layout.setVerticalGroup(layout.createParallelGroup(javax.swing.GroupLayout.Align
 
 
     aboveJButtonActionPerformed(evt: java.awt.event.ActionEvent){
-var evt = evt
 this.process();
     
 }

@@ -103,7 +103,6 @@ export class SimpleFileUtil
                 //@Throws(IOException.constructor)
             
     public append(c: string): Writer{
-var c = c
 
 
 
@@ -115,7 +114,6 @@ var c = c
                 //@Throws(IOException.constructor)
             
     public append(csq: CharSequence): Writer{
-var csq = csq
 
 
 
@@ -127,9 +125,6 @@ var csq = csq
                 //@Throws(IOException.constructor)
             
     public append(csq: CharSequence, start: number, end: number): Writer{
-var csq = csq
-var start = start
-var end = end
 
 
 
@@ -141,29 +136,21 @@ var end = end
                 //@Throws(IOException.constructor)
             
     public write(c: number){
-var c = c
 }
 
                 //@Throws(IOException.constructor)
             
     public write(cbuf: string[], off: number, len: number){
-var cbuf = cbuf
-var off = off
-var len = len
 }
 
                 //@Throws(IOException.constructor)
             
     public write(str: string){
-var str = str
 }
 
                 //@Throws(IOException.constructor)
             
     public write(str: string, off: number, len: number){
-var str = str
-var off = off
-var len = len
 }
 
                 //@Throws(IOException.constructor)
@@ -202,9 +189,6 @@ var len = len
                 //@Throws(IOException.constructor)
             
     public read(cbuf: string[], off: number, len: number): number{
-var cbuf = cbuf
-var off = off
-var len = len
 
 
 
@@ -216,7 +200,6 @@ var len = len
                 //@Throws(IOException.constructor)
             
     public read(target: CharBuffer): number{
-var target = target
 
 
 
@@ -239,7 +222,6 @@ var target = target
                 //@Throws(IOException.constructor)
             
     public skip(n: number): number{
-var n = n
 
 
 
@@ -270,9 +252,6 @@ var n = n
     private readonly streamUtil: StreamUtil = StreamUtil.getInstance()!;
 
     public loadFileAsList(inputStream: InputStream, max: number, byteArray1: number[]): BasicArrayList{
-    //var inputStream = inputStream
-    //var max = max
-    //var byteArray1 = byteArray1
 
 
 
@@ -283,10 +262,6 @@ var n = n
 
 
     public loadFileAsList(inputStream: InputStream, max: number, byteArray1: number[], includeReturnLine: number): BasicArrayList{
-    //var inputStream = inputStream
-    //var max = max
-    //var byteArray1 = byteArray1
-    //var includeReturnLine = includeReturnLine
 
     var stringList: BasicArrayList = new BasicArrayListD();
 ;
@@ -416,7 +391,6 @@ index++;
 
 
     public createStringFromArrayOfStrings(stringArray: string[]): string{
-    //var stringArray = stringArray
 
     var stringMaker: StringMaker = new StringMaker();
 ;

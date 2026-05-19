@@ -54,7 +54,6 @@ export class IndexedBasicArrayListCache extends BaseBasicArrayListCache implemen
                 //@Throws(Exception.constructor)
             
     public static createCache(size: number): IndexedBasicArrayListCache{
-var size = size
 
     var indexedBasicArrayListCache: IndexedBasicArrayListCache = new IndexedBasicArrayListCache();
 ;
@@ -84,7 +83,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public init(size: number){
-var size = size
 
                         if(this.size < size)
                         
@@ -112,7 +110,6 @@ this.size= size;
 
 
     public getAt(index: number): any{
-var index = index
 
 
 
@@ -131,7 +128,6 @@ var index = index
                 //@Throws(Exception.constructor)
             
     public addObject(anyType: Object){
-var anyType = anyType
 this.list.add(anyType);
     
 }
@@ -140,7 +136,6 @@ this.list.add(anyType);
                 //@Throws(Exception.constructor)
             
     public add(cacheableInterface: CacheableInterface){
-var cacheableInterface = cacheableInterface
 this.list.add(cacheableInterface);
     
 }
@@ -149,7 +144,6 @@ this.list.add(cacheableInterface);
                 //@Throws(Exception.constructor)
             
     public addArray(cacheableInterfaces: CacheableInterface[]){
-var cacheableInterfaces = cacheableInterfaces
 
 
 

@@ -55,8 +55,7 @@ export class BasicColorArrayIndexer
 public constructor (basicColorArray: BasicColor[]){
 
             super();
-        var basicColorArray = basicColorArray
-this.basicColorArray= basicColorArray;
+        this.basicColorArray= basicColorArray;
     
 this.circularIndexUtil= CircularIndexUtil.createInstance(this.basicColorArray!.length);
     

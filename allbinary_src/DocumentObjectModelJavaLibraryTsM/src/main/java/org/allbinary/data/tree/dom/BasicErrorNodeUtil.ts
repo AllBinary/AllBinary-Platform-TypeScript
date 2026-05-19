@@ -58,8 +58,6 @@ export class BasicErrorNodeUtil
                 //@Throws(Exception.constructor)
             
     public static get(document: Document, errorText: string): Node{
-var document = document
-var errorText = errorText
 
         try {
             

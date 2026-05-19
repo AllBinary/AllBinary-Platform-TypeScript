@@ -65,22 +65,14 @@ private constructor (){
 
 
     /*actual*/ public putP(log: Log){
-var log = log
 }
 
 
     /*actual*/ public putF(specialMessage: string, anyType: any = {}, functionName: string){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
 }
 
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
-    //var specialMessage = specialMessage
-    //var anyType = anyType
-    //var functionName = functionName
-    //var exception = exception
 }
 
 

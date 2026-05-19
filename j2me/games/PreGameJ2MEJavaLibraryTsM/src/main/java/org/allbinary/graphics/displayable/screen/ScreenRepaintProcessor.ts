@@ -55,8 +55,7 @@ export class ScreenRepaintProcessor extends Processor {
 public constructor (displayable: Displayable){
 
             super();
-        var displayable = displayable
-this.displayable= displayable;
+        this.displayable= displayable;
     
 }
 

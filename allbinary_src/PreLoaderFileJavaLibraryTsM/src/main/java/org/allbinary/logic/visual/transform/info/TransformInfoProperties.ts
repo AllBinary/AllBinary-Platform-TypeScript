@@ -62,13 +62,7 @@ export class TransformInfoProperties
 public constructor (name: string, label: string, description: string, objectFileName: string, objectConfigFileName: string, templateFileName: string){
 
             super();
-        var name = name
-var label = label
-var description = description
-var objectFileName = objectFileName
-var objectConfigFileName = objectConfigFileName
-var templateFileName = templateFileName
-this.name= name;
+        this.name= name;
     
 this.label= label;
     
@@ -84,35 +78,30 @@ this.objectConfigFileName= objectConfigFileName;
 
 
     public setName(value: string){
-var value = value
 this.name= value;
     
 }
 
 
     public setDescription(value: string){
-var value = value
 this.description= value;
     
 }
 
 
     public setViewFile(value: string){
-var value = value
 this.objectFileName= value;
     
 }
 
 
     public setTemplateFile(value: string){
-var value = value
 this.templateFileName= value;
     
 }
 
 
     public setObjectConfigFile(value: string){
-var value = value
 this.objectConfigFileName= value;
     
 }

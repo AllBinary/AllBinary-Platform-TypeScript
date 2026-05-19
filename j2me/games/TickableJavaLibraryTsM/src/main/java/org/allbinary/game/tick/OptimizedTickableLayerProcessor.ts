@@ -66,9 +66,6 @@ public constructor (){
                 //@Throws(Exception.constructor)
             
     public processAt(allBinaryLayerManager: AllBinaryLayerManager, layerInterface: AllBinaryLayer, index: number){
-var allBinaryLayerManager = allBinaryLayerManager
-var layerInterface = layerInterface
-var index = index
 
     var tickableInterface: AllBinaryGameLayer = layerInterface as AllBinaryGameLayer;
 ;
@@ -79,7 +76,6 @@ tickableInterface!.processTick(allBinaryLayerManager);
 
 
     public isProcessorLayer(layerInterface: AllBinaryLayer): boolean{
-var layerInterface = layerInterface
 
                         if(layerInterface!.implmentsTickableInterface())
                         

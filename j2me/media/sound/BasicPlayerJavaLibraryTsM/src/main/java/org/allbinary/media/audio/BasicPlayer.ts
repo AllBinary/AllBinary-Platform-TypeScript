@@ -94,7 +94,6 @@ this.setState(PlayerI.UNREALIZED);
 
 
     public getControl(controlType: string): Control{
-var controlType = controlType
 
 
 
@@ -120,7 +119,6 @@ var controlType = controlType
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public addPlayerListener(playerListener: PlayerListener){
-var playerListener = playerListener
 
                         if(!this.listenersList!.contains(playerListener))
                         
@@ -134,7 +132,6 @@ var playerListener = playerListener
 
 
     public removePlayerListener(playerListener: PlayerListener){
-var playerListener = playerListener
 this.listenersList!.remove(playerListener);
     
 }
@@ -152,7 +149,6 @@ this.listenersList!.remove(playerListener);
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setState(state: number){
-var state = state
 this.stateP= state;
     
 }
@@ -196,7 +192,6 @@ this.stateP= state;
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setLoopCount(count: number){
-var count = count
 this.loopCountP= count;
     
 }
@@ -216,7 +211,6 @@ this.loopCountP= count;
             //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setMediaTime(now: number): number{
-var now = now
 
 
 
@@ -245,8 +239,6 @@ this.setState(PlayerI.PREFETCHED);
 
 
     public setVolume(leftVolume: number, rightVolume: number){
-    //var leftVolume = leftVolume
-    //var rightVolume = rightVolume
 }
 
 

@@ -80,9 +80,7 @@ export class ViewHelper
 public constructor (hashMap: HashMap<any, any>, pageContext: PageContext){
 
             super();
-        var hashMap = hashMap
-var pageContext = pageContext
-this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext);
+        this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeClientInformation, hashMap, pageContext);
     
 }
 
@@ -223,7 +221,6 @@ this.componentInterface= TransformFactory.getInstance()!.getInstance(this.abeCli
 
 
     public setTransformDocumentInterface(viewDocumentInterface: TransformDocumentInterface){
-var viewDocumentInterface = viewDocumentInterface
 
 
 

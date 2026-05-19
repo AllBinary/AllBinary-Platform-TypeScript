@@ -58,8 +58,6 @@ public constructor (){
 
 
     public addAttribute(key: string, value: string){
-var key = key
-var value = value
 this.otherAttributes!.put(key, value);
     
 }

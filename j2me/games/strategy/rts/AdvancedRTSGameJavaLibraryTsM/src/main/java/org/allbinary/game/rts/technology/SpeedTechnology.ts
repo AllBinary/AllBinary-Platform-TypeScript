@@ -55,8 +55,7 @@ export class SpeedTechnology
 public constructor (maxLevel: number){
 
             super();
-        var maxLevel = maxLevel
-this.maxLevel= maxLevel;
+        this.maxLevel= maxLevel;
     
 }
 

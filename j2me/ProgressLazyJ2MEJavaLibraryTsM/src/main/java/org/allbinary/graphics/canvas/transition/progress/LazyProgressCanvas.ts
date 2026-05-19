@@ -60,10 +60,7 @@ export class LazyProgressCanvas extends ProgressCanvas {
     readonly logUtil: LogUtil = LogUtil.getInstance()!;
 protected constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
             super(title, backgroundBasicColor, foregroundBasicColor);
-                        //var title = title
-    //var backgroundBasicColor = backgroundBasicColor
-    //var foregroundBasicColor = foregroundBasicColor
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     

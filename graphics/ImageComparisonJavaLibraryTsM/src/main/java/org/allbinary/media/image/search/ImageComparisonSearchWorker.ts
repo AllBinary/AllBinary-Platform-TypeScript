@@ -83,8 +83,7 @@ export class ImageComparisonSearchWorker extends BasicEventHandler implements Im
 public constructor (imageSearchConstraintsInterface: ImageComparisonSearchConstraintsInterface){
 
             super();
-        var imageSearchConstraintsInterface = imageSearchConstraintsInterface
-this.imageComparisonInfoVector= new Vector();
+        this.imageComparisonInfoVector= new Vector();
     
 this.imageSearchConstraintsInterface= imageSearchConstraintsInterface;
     
@@ -92,7 +91,6 @@ this.imageSearchConstraintsInterface= imageSearchConstraintsInterface;
 
 
     public onImageComparisonResultsEvent(imageComparisonResultsEvent: ImageComparisonResultsEvent){
-var imageComparisonResultsEvent = imageComparisonResultsEvent
 this.imageComparisonInfoVector!.add(imageComparisonResultsEvent!.getImageComparisonResult());
     
 this.run();
@@ -101,7 +99,6 @@ this.run();
 
 
     public onEvent(allBinaryEventObject: AllBinaryEventObject){
-var allBinaryEventObject = allBinaryEventObject
 this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResultsEvent);
     
 }
@@ -120,7 +117,6 @@ this.onImageComparisonResultsEvent(allBinaryEventObject as ImageComparisonResult
 //@Synchronized //TWB - This is not allowed for Typescript native. Instead use Coroutine logic instead.
 
     public setRunning(running: boolean){
-var running = running
 this.running= running;
     
 }

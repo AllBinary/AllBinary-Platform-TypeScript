@@ -95,10 +95,7 @@ export class AllBinaryLayer extends Layer implements LayerInterface {
     private viewPosition: ViewPosition = ViewPosition.NULL_VIEW_POSITION;
 public constructor (name: string, rectangle: Rectangle, viewPosition: ViewPosition){
             super(rectangle.getWidth(), rectangle.getHeight());
-                        //var name = name
-    //var rectangle = rectangle
-    //var viewPosition = viewPosition
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -146,12 +143,10 @@ this.viewPosition!.setAllbinaryLayer(this);
                 //@Throws(Exception.constructor)
             
     public onChangeEvent(layerManagerEvent: ViewPositionEvent){
-    //var layerManagerEvent = layerManagerEvent
 }
 
 
     public paintThreed(graphics: Graphics){
-    //var graphics = graphics
 }
 
 
@@ -196,7 +191,6 @@ this.viewPosition!.setAllbinaryLayer(this);
 
 
     setHalfWidth(halfWidth: number){
-    //var halfWidth = halfWidth
 this.halfWidth= halfWidth;
     
 }
@@ -213,7 +207,6 @@ this.halfWidth= halfWidth;
 
 
     setHalfHeight(halfHeight: number){
-    //var halfHeight = halfHeight
 this.halfHeight= halfHeight;
     
 }
@@ -250,7 +243,6 @@ this.halfHeight= halfHeight;
 
 
     public setViewPosition(viewPosition: ViewPosition){
-    //var viewPosition = viewPosition
 this.viewPosition= viewPosition;
     
 }
@@ -337,7 +329,6 @@ this.viewPosition= viewPosition;
 
 
     public toStringAppend(stringBuffer: StringMaker){
-    //var stringBuffer = stringBuffer
 
     var commonSeps: CommonSeps = CommonSeps.getInstance()!;
 ;

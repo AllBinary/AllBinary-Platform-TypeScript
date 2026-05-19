@@ -74,7 +74,6 @@ CapitalEventHandlerFactory.capitalEventHandlerArray[index]= new CapitalEventHand
                 }
             
     public static getInstance(groupInterface: Group): CapitalEventHandler{
-var groupInterface = groupInterface
 
 
 

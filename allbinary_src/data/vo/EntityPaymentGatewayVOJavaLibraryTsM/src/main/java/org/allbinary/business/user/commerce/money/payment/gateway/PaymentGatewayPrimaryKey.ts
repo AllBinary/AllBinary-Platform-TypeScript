@@ -60,9 +60,7 @@ export class PaymentGatewayPrimaryKey
 public constructor (storeName: string, gatewayName: string){
 
             super();
-        var storeName = storeName
-var gatewayName = gatewayName
-this.setStoreName(storeName);
+        this.setStoreName(storeName);
     
 this.setName(gatewayName);
     
@@ -80,7 +78,6 @@ this.setName(gatewayName);
 
 
     public setStoreName(storeName: string){
-var storeName = storeName
 this.storeName= storeName;
     
 }
@@ -97,7 +94,6 @@ this.storeName= storeName;
 
 
     public setName(name: string){
-var name = name
 this.name= name;
     
 }
