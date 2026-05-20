@@ -64,8 +64,7 @@ export class EditValidationView extends BillingAddressView implements Validation
     private value: string
 public constructor (transformInfoInterface: TransformInfoInterface){
             super(transformInfoInterface);
-                    var transformInfoInterface = transformInfoInterface
-
+                    
 
                             //For kotlin this is before the body of the constructor.
                     
@@ -141,7 +140,6 @@ this.streetAddress= billingAddressesEntity!.get(new Integer(this.value));
 
 
     public toValidationInfoNode(document: Document): Node{
-var document = document
 
 
 

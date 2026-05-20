@@ -24,6 +24,10 @@
         
             import { InterruptedException } from '../../java/lang/InterruptedException.js';
         
+import { Displayable } from '../../javax/microedition/lcdui/Displayable.js';
+      
+import { Form } from '../../javax/microedition/lcdui/Form.js';
+      
 import { InvalidRecordIDException } from '../../javax/microedition/rms/InvalidRecordIDException.js';
       
 import { RecordStore } from '../../javax/microedition/rms/RecordStore.js';
@@ -149,6 +153,33 @@ recordStore!.getRecord(recordId, data, 0);
                         //if statement needs to be on the same line and ternary does not work the same way.
                         return a.equalsIgnoreCase(b);;
     
+}
+
+
+    public isItemListener(owner: Displayable): boolean{
+
+                        if(owner instanceof Form)
+                        
+                                    {
+                                    
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return true;
+    
+
+                                    }
+                                
+                        else {
+                            
+
+
+                        //if statement needs to be on the same line and ternary does not work the same way.
+                        return false;
+    
+
+                        }
+                            
 }
 
 
