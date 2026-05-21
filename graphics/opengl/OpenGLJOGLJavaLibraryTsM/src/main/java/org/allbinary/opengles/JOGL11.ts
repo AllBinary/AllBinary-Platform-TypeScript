@@ -42,7 +42,7 @@ import { GL2 } from '../../../com/jogamp/opengl/GL2.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL11 } from './GL11.js';
 import { Buffer } from './Buffer.js';

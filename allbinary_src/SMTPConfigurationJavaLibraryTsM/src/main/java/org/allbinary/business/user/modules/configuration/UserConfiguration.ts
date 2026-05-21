@@ -50,7 +50,7 @@ import { UserEmailConfigurationInterface } from '../../../../../../org/allbinary
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserConfigurationInterface } from './UserConfigurationInterface.js';
 

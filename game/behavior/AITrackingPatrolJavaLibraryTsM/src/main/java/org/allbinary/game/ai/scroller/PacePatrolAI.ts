@@ -74,7 +74,7 @@ import { BasicArrayListD } from '../../../../../org/allbinary/util/BasicArrayLis
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasePatrolAI } from './BasePatrolAI.js';
 import { Math } from './Math.js';

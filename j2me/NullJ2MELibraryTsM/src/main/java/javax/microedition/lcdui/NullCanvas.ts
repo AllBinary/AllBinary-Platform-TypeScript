@@ -30,7 +30,7 @@ import { Stack } from '../../../java/util/Stack.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Canvas } from './Canvas.js';
 import { Command } from './Command.js';

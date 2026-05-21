@@ -48,7 +48,7 @@ import { PositionStrings } from '../../../../org/allbinary/math/PositionStrings.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class LayerUtil

@@ -40,7 +40,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintable } from './ItemPaintable.js';
 import { PaintableForm } from './PaintableForm.js';

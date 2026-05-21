@@ -80,7 +80,7 @@ import { ViewPositionEventListenerInterface } from '../../../../org/allbinary/vi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SWTUtil } from './SWTUtil.js';
 import { GameLayerUtil } from './GameLayerUtil.js';

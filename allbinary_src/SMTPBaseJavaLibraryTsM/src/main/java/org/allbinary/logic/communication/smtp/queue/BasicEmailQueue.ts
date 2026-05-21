@@ -48,7 +48,7 @@ import { BasicQueue } from '../../../../../../org/allbinary/logic/util/queue/Bas
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { EmailQueueInterface } from './EmailQueueInterface.js';
 

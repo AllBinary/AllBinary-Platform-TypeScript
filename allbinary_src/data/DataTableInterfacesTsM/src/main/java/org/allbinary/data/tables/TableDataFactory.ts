@@ -42,7 +42,7 @@ import { CommonPhoneStrings } from '../../../../org/allbinary/string/CommonPhone
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class TableDataFactory

@@ -54,7 +54,7 @@ import { StringMaker } from '../../../../../org/allbinary/logic/string/StringMak
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IdGeneratorEntityInterface } from './IdGeneratorEntityInterface.js';
 

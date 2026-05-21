@@ -40,7 +40,7 @@ import { VisitorInterface } from '../../../org/allbinary/logic/util/visitor/Visi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OSGIServiceInterface } from './OSGIServiceInterface.js';
 

@@ -46,7 +46,7 @@ import { VectorInfo } from '../../../org/allbinary/vector/VectorInfo.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
 import { VectorAnimationFactoryInterface } from './VectorAnimationFactoryInterface.js';

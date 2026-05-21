@@ -56,7 +56,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoInterface } from './TransformInfoInterface.js';
 import { TransformInfoData } from './TransformInfoData.js';

@@ -40,7 +40,7 @@ import { swing } from '../../../../../../javax/swing.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
 import { JButton } from './JButton.js';

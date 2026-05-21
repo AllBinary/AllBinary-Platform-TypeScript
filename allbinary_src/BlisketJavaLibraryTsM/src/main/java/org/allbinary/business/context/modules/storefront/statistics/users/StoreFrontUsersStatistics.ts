@@ -58,7 +58,7 @@ import { UserEntityInterface } from '../../../../../../../../org/allbinary/data/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontUsersStatisticsInterface } from './StoreFrontUsersStatisticsInterface.js';
 import { StoreFrontUsersStatisticsData } from './StoreFrontUsersStatisticsData.js';

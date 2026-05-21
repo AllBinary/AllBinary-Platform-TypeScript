@@ -54,7 +54,7 @@ import { AllBinaryVibrationME } from '../../../../org/allbinary/media/AllBinaryV
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointBehaviorBase } from './WaypointBehaviorBase.js';
 

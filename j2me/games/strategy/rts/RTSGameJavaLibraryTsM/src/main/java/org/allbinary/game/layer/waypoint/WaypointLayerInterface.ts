@@ -54,7 +54,7 @@ import { BasicArrayList } from '../../../../../org/allbinary/util/BasicArrayList
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { WaypointLogHelper } from './WaypointLogHelper.js';
 import { Waypoint2LogHelper } from './Waypoint2LogHelper.js';

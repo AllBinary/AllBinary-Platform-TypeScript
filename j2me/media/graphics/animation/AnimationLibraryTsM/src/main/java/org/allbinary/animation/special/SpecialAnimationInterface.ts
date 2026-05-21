@@ -40,7 +40,7 @@ import { IndexedAnimationInterface } from '../../../../org/allbinary/animation/I
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface SpecialAnimationInterface extends IndexedAnimationInterface {

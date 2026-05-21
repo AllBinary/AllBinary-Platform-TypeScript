@@ -106,7 +106,7 @@ import { RunnableInterface } from '../../../../org/allbinary/thread/RunnableInte
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JFrame } from './JFrame.js';
 import { ImageIcon } from './ImageIcon.js';
@@ -132,6 +132,7 @@ import { ListSelectionEvent } from './ListSelectionEvent.js';
 import { ActionListener } from './ActionListener.js';
 import { ActionEvent } from './ActionEvent.js';
 import { Desktop } from './Desktop.js';
+import { EventQueue } from './EventQueue.js';
 
 export class InputAutomationJFrame extends javax.swing.JFrame implements InputAutomationConfigurationModuleChangeListener, InputAutomationRobotChangeListener, HelpSetListener {
         

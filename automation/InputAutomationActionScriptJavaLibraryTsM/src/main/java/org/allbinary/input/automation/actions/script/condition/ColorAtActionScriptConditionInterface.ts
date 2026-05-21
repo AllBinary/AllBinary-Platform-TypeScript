@@ -42,7 +42,7 @@ import { ColorRangeInterface } from '../../../../../../../org/allbinary/media/im
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
 

@@ -42,7 +42,7 @@ import { LogConfigTypeFactory } from '../../../../../../../org/allbinary/logic/c
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigType } from './LogConfigType.js';
 

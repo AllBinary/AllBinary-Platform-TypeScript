@@ -70,7 +70,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class HorizontalScreenPatrolAI extends BasicAI {

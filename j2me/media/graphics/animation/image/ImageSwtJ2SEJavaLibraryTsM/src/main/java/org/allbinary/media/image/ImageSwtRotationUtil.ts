@@ -52,7 +52,7 @@ import { ImageData } from '../../../../org/eclipse/swt/graphics/ImageData.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
 import { Image } from './Image.js';

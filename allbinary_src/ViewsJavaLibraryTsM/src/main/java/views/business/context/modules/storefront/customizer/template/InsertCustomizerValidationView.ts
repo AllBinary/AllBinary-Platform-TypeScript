@@ -82,7 +82,7 @@ import { NoTemplateTransformInfoObjectConfig } from '../../../../../../../views/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //Sets Template Type
 export class InsertCustomizerValidationView extends HttpStoreComponentView implements ValidationComponentInterface {

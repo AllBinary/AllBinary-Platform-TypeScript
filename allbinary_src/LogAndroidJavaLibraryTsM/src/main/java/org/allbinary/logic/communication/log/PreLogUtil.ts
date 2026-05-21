@@ -44,9 +44,10 @@ import { LogFormatUtil } from '../../../../../org/allbinary/logic/communication/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        //ActualPlatform
+        import { Log } from './Log.js';
+//ActualPlatform
 /*actual*/ export class PreLogUtil
             extends Object
          {

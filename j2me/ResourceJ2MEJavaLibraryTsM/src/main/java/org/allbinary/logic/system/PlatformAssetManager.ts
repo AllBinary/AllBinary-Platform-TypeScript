@@ -44,7 +44,7 @@ import { ResourceUtil } from '../../../../org/allbinary/data/resource/ResourceUt
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class PlatformAssetManager

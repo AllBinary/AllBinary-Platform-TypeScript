@@ -46,7 +46,7 @@ import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabel
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Comparable } from './Comparable.js';
 import { PathFindingNodeCostInfoData } from './PathFindingNodeCostInfoData.js';

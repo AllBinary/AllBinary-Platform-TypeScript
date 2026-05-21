@@ -40,7 +40,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellType } from './GeographicMapCellType.js';
 import { BasicGeographicMap } from './BasicGeographicMap.js';

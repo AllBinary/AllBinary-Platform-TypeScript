@@ -44,7 +44,7 @@ import { AllBinaryEventObject } from '../../../../org/allbinary/logic/util/event
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTerrainInfo } from './BasicTerrainInfo.js';
 

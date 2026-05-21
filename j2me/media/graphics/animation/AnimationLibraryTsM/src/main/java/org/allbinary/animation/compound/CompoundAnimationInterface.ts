@@ -42,7 +42,7 @@ import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAni
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface CompoundAnimationInterface extends AnimationInterface {

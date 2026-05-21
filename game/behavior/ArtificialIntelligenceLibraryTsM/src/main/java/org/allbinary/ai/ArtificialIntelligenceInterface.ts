@@ -44,7 +44,7 @@ import { AllBinaryLayerManager } from '../../../org/allbinary/layer/AllBinaryLay
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface ArtificialIntelligenceInterface extends IdentifierInterface {

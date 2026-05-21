@@ -52,7 +52,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectanglesResultsListener } from './MotionRectanglesResultsListener.js';
 import { MotionRectanglesResultsEvent } from './MotionRectanglesResultsEvent.js';

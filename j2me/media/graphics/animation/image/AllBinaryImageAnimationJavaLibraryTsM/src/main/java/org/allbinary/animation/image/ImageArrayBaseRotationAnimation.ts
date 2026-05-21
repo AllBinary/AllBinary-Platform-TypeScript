@@ -64,7 +64,7 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class ImageArrayBaseRotationAnimation extends RotationAnimation {

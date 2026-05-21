@@ -44,7 +44,7 @@ import { LayerManagerEventHandler } from '../../../org/allbinary/layer/event/Lay
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerManager } from './LayerManager.js';
 import { LayerProcessor } from './LayerProcessor.js';

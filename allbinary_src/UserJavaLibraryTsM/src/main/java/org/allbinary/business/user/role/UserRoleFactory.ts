@@ -70,7 +70,7 @@ import { WholesaleUserFactory } from '../../../../../org/allbinary/business/user
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicUserRoleFactory } from './BasicUserRoleFactory.js';
 import { UserRoleB } from './UserRoleB.js';

@@ -50,7 +50,7 @@ import { CanvasSurface } from '../../../../playn/core/CanvasSurface.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageCreationUtil } from './ImageCreationUtil.js';
 import { Math } from './Math.js';

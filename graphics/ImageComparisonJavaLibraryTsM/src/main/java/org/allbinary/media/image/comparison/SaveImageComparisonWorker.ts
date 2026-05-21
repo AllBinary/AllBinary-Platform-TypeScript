@@ -52,7 +52,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResultsListener } from './ImageComparisonResultsListener.js';
 import { ImageComparisonResultsEvent } from './ImageComparisonResultsEvent.js';

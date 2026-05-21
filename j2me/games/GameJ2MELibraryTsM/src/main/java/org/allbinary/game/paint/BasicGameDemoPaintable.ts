@@ -46,7 +46,7 @@ import { StatePaintable } from '../../../../org/allbinary/graphics/paint/StatePa
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class BasicGameDemoPaintable extends StatePaintable {

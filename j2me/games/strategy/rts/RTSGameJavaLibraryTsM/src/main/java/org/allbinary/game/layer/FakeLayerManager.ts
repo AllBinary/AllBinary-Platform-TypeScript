@@ -47,7 +47,7 @@ import { GeographicMapCompositeInterface } from '../../../../org/allbinary/media
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayerManager } from './AllBinaryGameLayerManager.js';
 

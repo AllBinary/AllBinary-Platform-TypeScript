@@ -46,7 +46,7 @@ import { IndexedAnimation } from '../../../../org/allbinary/animation/IndexedAni
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CompoundAnimationInterfaceFactory } from './CompoundAnimationInterfaceFactory.js';
 import { SimultaneousCompoundIndexedAnimation } from './SimultaneousCompoundIndexedAnimation.js';

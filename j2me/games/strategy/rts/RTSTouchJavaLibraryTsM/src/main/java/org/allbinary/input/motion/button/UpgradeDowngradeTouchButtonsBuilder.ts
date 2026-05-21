@@ -54,7 +54,7 @@ import { CellPositionFactory } from '../../../../../org/allbinary/graphics/CellP
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseTouchInput } from './BaseTouchInput.js';
 import { TouchButtonLocationHelper } from './TouchButtonLocationHelper.js';

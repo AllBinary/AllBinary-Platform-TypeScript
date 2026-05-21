@@ -48,7 +48,7 @@ import { AngleInfo } from '../../../../org/allbinary/math/AngleInfo.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryHTMLImageRotationAnimation } from './AllBinaryHTMLImageRotationAnimation.js';
 

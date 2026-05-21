@@ -52,7 +52,7 @@ import { ImageCacheFactory } from '../../../../../../org/allbinary/image/ImageCa
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HealthGraphic } from './HealthGraphic.js';
 

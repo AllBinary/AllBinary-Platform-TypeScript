@@ -46,7 +46,7 @@ import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonS
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistory } from './OrderHistory.js';
 //Retrieves a single order for a user

@@ -48,7 +48,7 @@ import { AllBinaryEventCircularPool } from '../../../../../../org/allbinary/logi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionEventFactory } from './MotionEventFactory.js';
 import { MotionGestureEvent } from './MotionGestureEvent.js';

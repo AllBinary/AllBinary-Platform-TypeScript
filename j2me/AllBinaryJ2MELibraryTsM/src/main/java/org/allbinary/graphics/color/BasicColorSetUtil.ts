@@ -40,7 +40,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicColor } from './BasicColor.js';
 

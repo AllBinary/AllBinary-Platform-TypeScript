@@ -40,7 +40,7 @@ import { GLU } from '../../../com/jogamp/opengl/glu/GLU.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL10 } from './GL10.js';
 import { GL2 } from './GL2.js';

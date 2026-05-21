@@ -44,7 +44,7 @@ import { InputAutomationModuleBundleActivator } from '../../../../../org/allbina
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class InputAutomationGenericModuleBundleActivator extends InputAutomationModuleBundleActivator {

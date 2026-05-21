@@ -46,7 +46,7 @@ import { AllBinaryOrientationSensor } from '../../../../org/allbinary/input/gyro
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { NoAccelerometerSensor } from './NoAccelerometerSensor.js';
 

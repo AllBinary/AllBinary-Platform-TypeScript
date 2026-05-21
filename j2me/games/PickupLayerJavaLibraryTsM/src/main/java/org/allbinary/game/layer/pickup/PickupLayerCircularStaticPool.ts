@@ -42,7 +42,7 @@ import { AllBinaryLayerCircularPool } from '../../../../../org/allbinary/layer/A
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
 import { PickedUpLayerInterface } from './PickedUpLayerInterface.js';

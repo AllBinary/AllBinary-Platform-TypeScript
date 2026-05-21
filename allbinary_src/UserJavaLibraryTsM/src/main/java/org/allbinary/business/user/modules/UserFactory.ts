@@ -46,7 +46,7 @@ import { UserInterface } from '../../../../../org/allbinary/business/user/UserIn
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { User } from './User.js';
 

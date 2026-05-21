@@ -46,7 +46,7 @@ import { TransformInfoInterface } from '../../../org/allbinary/logic/visual/tran
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ShippingMethodsView } from './ShippingMethodsView.js';
 import { Document } from './Document.js';

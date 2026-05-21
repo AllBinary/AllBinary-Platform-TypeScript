@@ -44,7 +44,7 @@ import { BasicDataTableInterface } from '../../../../../../../org/allbinary/data
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface AdvertisementCampaignInternalEntityInterface extends BasicDataTableInterface {

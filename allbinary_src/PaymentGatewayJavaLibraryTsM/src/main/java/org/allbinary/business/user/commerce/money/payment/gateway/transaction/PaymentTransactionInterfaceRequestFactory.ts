@@ -90,7 +90,7 @@ import { CommonStrings } from '../../../../../../../../../org/allbinary/string/C
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentTransactionInterfaceFactory } from './PaymentTransactionInterfaceFactory.js';
 import { PaymentTransactionInterface } from './PaymentTransactionInterface.js';

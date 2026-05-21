@@ -50,7 +50,7 @@ import { PaymentTransactionInterfaceFactoryInterface } from '../../../../../../.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPaymentType } from './BasicPaymentType.js';
 import { PaymentTypeUtil } from './PaymentTypeUtil.js';

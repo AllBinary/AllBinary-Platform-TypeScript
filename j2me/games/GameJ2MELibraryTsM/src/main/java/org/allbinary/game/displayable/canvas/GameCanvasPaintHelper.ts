@@ -42,7 +42,7 @@ import { ProcessPaintable } from '../../../../../org/allbinary/graphics/paint/Pr
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 

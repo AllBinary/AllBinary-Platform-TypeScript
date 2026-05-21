@@ -42,7 +42,7 @@ import { LayerManagerNoDebug } from '../../../../../org/allbinary/layer/LayerMan
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class CollidableInterfaceLayerManager extends LayerManager {

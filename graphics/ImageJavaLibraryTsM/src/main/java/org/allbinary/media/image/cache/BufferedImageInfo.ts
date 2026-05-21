@@ -42,7 +42,7 @@ import { CommonLabels } from '../../../../../org/allbinary/string/CommonLabels.j
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class BufferedImageInfo

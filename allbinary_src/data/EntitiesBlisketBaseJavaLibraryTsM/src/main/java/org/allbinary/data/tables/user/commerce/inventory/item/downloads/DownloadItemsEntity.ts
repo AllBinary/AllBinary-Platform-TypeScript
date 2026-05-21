@@ -60,7 +60,7 @@ import { StringMaker } from '../../../../../../../../../org/allbinary/logic/stri
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DownloadItemsEntityInterface } from './DownloadItemsEntityInterface.js';
 

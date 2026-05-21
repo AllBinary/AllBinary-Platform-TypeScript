@@ -40,7 +40,7 @@ import { BasicEventHandler } from '../../../org/allbinary/logic/util/event/handl
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AnimationEventHandler extends BasicEventHandler {

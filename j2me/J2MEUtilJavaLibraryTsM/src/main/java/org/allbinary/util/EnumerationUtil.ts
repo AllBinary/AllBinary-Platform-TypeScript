@@ -40,7 +40,7 @@ import { Enumeration } from '../../../java/util/Enumeration.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //ArkTs does not have this.  So this is for the ArkTs build.
 export class EnumerationUtil

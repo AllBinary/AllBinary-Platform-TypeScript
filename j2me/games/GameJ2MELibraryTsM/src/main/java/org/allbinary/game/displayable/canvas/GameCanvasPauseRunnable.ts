@@ -50,7 +50,7 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameRunnable } from './GameRunnable.js';
 import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';

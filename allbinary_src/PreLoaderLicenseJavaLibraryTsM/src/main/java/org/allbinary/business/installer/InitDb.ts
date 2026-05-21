@@ -46,7 +46,7 @@ import { LicensingException } from '../../../../org/allbinary/logic/system/secur
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //Warning you must have sql root access
 export class InitDb

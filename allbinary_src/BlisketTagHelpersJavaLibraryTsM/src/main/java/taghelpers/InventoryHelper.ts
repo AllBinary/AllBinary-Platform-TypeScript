@@ -78,7 +78,7 @@ import { InventoryViewSearchInterface } from '../views/admin/inventory/listings/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class InventoryHelper extends TagHelper {

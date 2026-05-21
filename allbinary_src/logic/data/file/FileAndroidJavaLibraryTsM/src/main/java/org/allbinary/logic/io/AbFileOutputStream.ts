@@ -52,7 +52,7 @@ import { AbFileNativeUtil } from '../../../../org/allbinary/logic/io/file/AbFile
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AbFileOutputStream extends OutputStream {

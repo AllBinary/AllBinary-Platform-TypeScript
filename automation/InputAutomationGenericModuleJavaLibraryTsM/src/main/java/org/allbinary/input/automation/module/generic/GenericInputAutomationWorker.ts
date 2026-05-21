@@ -74,7 +74,7 @@ import { MotionRectanglesWorker } from '../../../../../../org/allbinary/media/im
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GenericProfileCaptureWorkerFactory } from './GenericProfileCaptureWorkerFactory.js';
 import { CaptureWorkerUtil } from './CaptureWorkerUtil.js';

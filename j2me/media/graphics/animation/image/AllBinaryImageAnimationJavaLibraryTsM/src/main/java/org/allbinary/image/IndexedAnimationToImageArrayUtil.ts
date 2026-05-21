@@ -44,7 +44,7 @@ import { IndexedAnimation } from '../../../org/allbinary/animation/IndexedAnimat
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationFrameToImageUtil } from './AnimationFrameToImageUtil.js';
 

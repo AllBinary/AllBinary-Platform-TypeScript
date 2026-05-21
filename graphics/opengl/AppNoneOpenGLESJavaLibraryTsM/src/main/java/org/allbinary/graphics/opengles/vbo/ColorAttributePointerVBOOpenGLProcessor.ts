@@ -44,7 +44,7 @@ import { ObjectThreedOpenGLProcessor } from '../../../../../org/allbinary/graphi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class ColorAttributePointerVBOOpenGLProcessor extends ObjectThreedOpenGLProcessor {

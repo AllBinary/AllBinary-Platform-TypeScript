@@ -40,7 +40,7 @@ import { AdvertisementInterface } from '../../../../../org/allbinary/business/ad
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface AdvertisementCampaignsInterface {

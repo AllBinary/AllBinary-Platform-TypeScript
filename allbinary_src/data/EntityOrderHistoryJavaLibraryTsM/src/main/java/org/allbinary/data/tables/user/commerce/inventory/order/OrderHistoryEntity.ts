@@ -122,7 +122,7 @@ import { ServiceClientInformationInterfaceFactory } from '../../../../../../../.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OrderHistoryEntityInterface } from './OrderHistoryEntityInterface.js';
 

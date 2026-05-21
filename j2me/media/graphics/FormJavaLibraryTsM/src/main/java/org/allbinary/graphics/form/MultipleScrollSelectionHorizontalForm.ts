@@ -44,7 +44,7 @@ import { StringMaker } from '../../../../org/allbinary/logic/string/StringMaker.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ScrollSelectionForm } from './ScrollSelectionForm.js';
 import { ItemPaintableFactory } from './ItemPaintableFactory.js';

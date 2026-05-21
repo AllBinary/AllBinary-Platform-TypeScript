@@ -78,7 +78,7 @@ import { TimeDelayHelper } from '../../../../../../../../org/allbinary/time/Time
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class RaceTrackDropCellPositionGenerator extends BaseDropCellPositionGenerator {

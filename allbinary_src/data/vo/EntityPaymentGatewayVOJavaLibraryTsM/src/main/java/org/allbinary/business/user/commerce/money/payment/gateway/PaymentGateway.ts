@@ -56,7 +56,7 @@ import { StringUtil } from '../../../../../../../../org/allbinary/logic/string/S
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';
 import { PaymentGatewayData } from './PaymentGatewayData.js';

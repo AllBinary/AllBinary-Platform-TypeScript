@@ -60,7 +60,7 @@ import { CssCustomizerView } from '../../../../../../../../../views/business/con
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class NewThemeValidationView extends CssCustomizerView implements ValidationComponentInterface {

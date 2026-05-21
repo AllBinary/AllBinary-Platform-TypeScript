@@ -42,7 +42,7 @@ import { AdvertisementSearchInterface } from '../../../../../org/allbinary/busin
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface AdvertisementCampaignInterface {

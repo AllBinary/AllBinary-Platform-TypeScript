@@ -40,7 +40,7 @@ import { CanvasJPanel } from '../../../../../../org/allbinary/graphics/j2me/work
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
 

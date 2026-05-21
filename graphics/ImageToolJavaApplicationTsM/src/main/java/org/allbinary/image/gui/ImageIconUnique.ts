@@ -42,7 +42,7 @@ import { swing } from '../../../../javax/swing.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageIcon } from './ImageIcon.js';
 

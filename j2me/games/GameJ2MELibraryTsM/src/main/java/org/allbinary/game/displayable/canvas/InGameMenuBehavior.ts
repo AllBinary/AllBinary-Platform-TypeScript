@@ -42,7 +42,7 @@ import { DisplayChangeEvent } from '../../../../../org/allbinary/graphics/displa
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseMenuBehavior } from './BaseMenuBehavior.js';
 import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';

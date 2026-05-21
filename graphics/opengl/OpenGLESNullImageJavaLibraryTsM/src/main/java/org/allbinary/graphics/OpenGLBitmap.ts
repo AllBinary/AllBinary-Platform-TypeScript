@@ -26,7 +26,7 @@ import { PlatformBitmapBase } from '../../../org/allbinary/platform/graphics/Pla
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class OpenGLBitmap extends PlatformBitmapBase {

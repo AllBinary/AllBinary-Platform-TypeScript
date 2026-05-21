@@ -42,7 +42,7 @@ import { TsUtil } from '../../../../../org/allbinary/TsUtil.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AcceptableResponseFactory } from './AcceptableResponseFactory.js';
 

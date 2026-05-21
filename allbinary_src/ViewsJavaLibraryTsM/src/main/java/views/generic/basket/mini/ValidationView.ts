@@ -46,7 +46,7 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MiniBasketView } from './MiniBasketView.js';
 import { Document } from './Document.js';

@@ -42,7 +42,7 @@ import { MyFont } from '../../../../org/allbinary/graphics/font/MyFont.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DrawStringUtil } from './DrawStringUtil.js';
 

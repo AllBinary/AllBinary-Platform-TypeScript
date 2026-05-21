@@ -60,7 +60,7 @@ import { BasicGeographicMap } from '../../../../../../../org/allbinary/media/gra
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseDropCellPositionGenerator } from './BaseDropCellPositionGenerator.js';
 

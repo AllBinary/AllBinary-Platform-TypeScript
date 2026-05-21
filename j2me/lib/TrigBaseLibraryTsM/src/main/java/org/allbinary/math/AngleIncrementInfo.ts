@@ -44,7 +44,7 @@ import { StringMaker } from '../../../org/allbinary/logic/string/StringMaker.js'
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AngleFactory } from './AngleFactory.js';
 import { FrameUtil } from './FrameUtil.js';

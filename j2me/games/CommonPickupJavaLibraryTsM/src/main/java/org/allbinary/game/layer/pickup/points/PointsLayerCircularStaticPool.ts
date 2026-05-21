@@ -48,7 +48,7 @@ import { AllBinaryLayerFactoryInterface } from '../../../../../../org/allbinary/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsLayer } from './PointsLayer.js';
 

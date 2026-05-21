@@ -42,7 +42,7 @@ import { LayerManagerNoDebug } from '../../../../org/allbinary/layer/LayerManage
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class OptimizedTickableLayerManager extends LayerManager {

@@ -46,7 +46,7 @@ import { CollidableInterfaceCompositeInterface } from '../../../../../org/allbin
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class CollidableWaypointBehavior extends CollidableRTSBehavior {

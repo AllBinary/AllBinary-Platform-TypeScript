@@ -42,7 +42,7 @@ import { LicenseServerInitFileUtil } from '../../../../org/allbinary/logic/syste
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameMidlet } from './DemoGameMidlet.js';
 import { LicenseLoadingType } from './LicenseLoadingType.js';

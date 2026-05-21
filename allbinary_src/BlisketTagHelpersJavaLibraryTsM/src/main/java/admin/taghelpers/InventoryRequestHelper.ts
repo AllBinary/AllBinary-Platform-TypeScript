@@ -64,7 +64,7 @@ import { InventoryItemView } from '../../views/admin/inventory/InventoryItemView
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
 import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';

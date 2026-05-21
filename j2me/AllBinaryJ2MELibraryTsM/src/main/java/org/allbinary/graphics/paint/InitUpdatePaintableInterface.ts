@@ -42,7 +42,7 @@ import { UpdateInterface } from '../../../../org/allbinary/init/UpdateInterface.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaintableInterface } from './PaintableInterface.js';
 

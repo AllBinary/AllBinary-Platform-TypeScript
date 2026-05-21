@@ -58,7 +58,7 @@ import { StringUtil } from '../../../../../../../org/allbinary/logic/string/Stri
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicItem } from './BasicItem.js';
 import { OrderItemInterface } from './OrderItemInterface.js';

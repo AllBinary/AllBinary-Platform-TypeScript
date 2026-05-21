@@ -56,7 +56,7 @@ import { CommonLabels } from '../../../../../../org/allbinary/string/CommonLabel
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class MotionGestureEvent extends AllBinaryEventObject {

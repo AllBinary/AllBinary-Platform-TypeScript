@@ -50,7 +50,7 @@ import { StoreValidationTransformTag } from '../../tags/StoreValidationTransform
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class UserTag extends StoreValidationTransformTag {

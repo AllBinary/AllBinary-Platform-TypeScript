@@ -52,9 +52,10 @@ import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AppUrlGlobals } from './AppUrlGlobals.js';
+import { URLGLOBALS } from './URLGLOBALS.js';
 
 export class Globals
             extends Object

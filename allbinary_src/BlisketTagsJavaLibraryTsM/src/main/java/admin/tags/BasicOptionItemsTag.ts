@@ -44,7 +44,7 @@ import { BasicOptionItemsRequestHelperFactory } from '../../admin/taghelpers/Bas
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 

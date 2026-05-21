@@ -52,7 +52,7 @@ import { CommonLabels } from '../../../../../../../org/allbinary/string/CommonLa
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RegistrationConfiguration } from './RegistrationConfiguration.js';
 import { XmlRpcRemoteLicenseRegistrationClient } from './XmlRpcRemoteLicenseRegistrationClient.js';

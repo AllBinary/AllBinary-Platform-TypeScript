@@ -58,7 +58,7 @@ import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementInterface } from './LayerPlacementInterface.js';
 import { LayerPlacementType } from './LayerPlacementType.js';

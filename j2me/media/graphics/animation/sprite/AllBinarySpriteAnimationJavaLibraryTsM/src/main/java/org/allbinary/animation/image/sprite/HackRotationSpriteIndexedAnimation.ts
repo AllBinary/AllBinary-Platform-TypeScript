@@ -56,7 +56,7 @@ import { CircularIndexUtil } from '../../../../../org/allbinary/util/CircularInd
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class HackRotationSpriteIndexedAnimation extends RotationAnimation {

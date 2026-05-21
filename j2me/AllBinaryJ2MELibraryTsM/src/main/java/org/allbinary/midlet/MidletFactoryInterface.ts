@@ -42,7 +42,7 @@ import { NullMIDlet } from '../../../javax/microedition/midlet/NullMIDlet.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class MidletFactoryInterface

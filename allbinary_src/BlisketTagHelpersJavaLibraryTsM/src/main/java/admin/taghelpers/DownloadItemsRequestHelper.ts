@@ -60,7 +60,7 @@ import { DownloadableInventoryItemView } from '../../views/admin/inventory/downl
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ModifyTable } from './ModifyTable.js';
 import { InventoryItemViewParentTagHelper } from './InventoryItemViewParentTagHelper.js';

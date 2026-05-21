@@ -128,7 +128,7 @@ import { ViewPosition } from '../../../../org/allbinary/view/ViewPosition.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSLayer } from './RTSLayer.js';
 import { NullPathFindingLayer } from './NullPathFindingLayer.js';

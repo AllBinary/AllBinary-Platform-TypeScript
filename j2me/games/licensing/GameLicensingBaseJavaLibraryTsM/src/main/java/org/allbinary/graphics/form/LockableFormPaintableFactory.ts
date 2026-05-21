@@ -40,7 +40,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ItemPaintableFactory } from './ItemPaintableFactory.js';
 import { LockablePaintable } from './LockablePaintable.js';

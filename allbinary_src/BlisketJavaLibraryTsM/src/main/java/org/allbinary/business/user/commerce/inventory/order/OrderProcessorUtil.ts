@@ -46,7 +46,7 @@ import { OrderItemsEntity } from '../../../../../../../org/allbinary/data/tables
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Order } from './Order.js';
 

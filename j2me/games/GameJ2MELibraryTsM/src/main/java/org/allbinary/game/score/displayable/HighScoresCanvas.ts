@@ -102,7 +102,7 @@ import { SecondaryThreadPool } from '../../../../../org/allbinary/thread/Seconda
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class HighScoresCanvas extends GameCommandCanvas implements HighScoresResultsListener {

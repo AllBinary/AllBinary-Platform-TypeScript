@@ -46,7 +46,7 @@ import { TableMappingInterface } from '../../../../../../../../org/allbinary/dat
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
 import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';

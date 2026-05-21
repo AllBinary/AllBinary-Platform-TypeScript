@@ -40,7 +40,7 @@ import { BooleanFactory } from '../../../../../../../org/allbinary/logic/java/bo
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HtmlValueInput } from './HtmlValueInput.js';
 import { HtmlInputData } from './HtmlInputData.js';

@@ -48,7 +48,7 @@ import { RaceTrackGeographicMapCellType } from '../../../../../../org/allbinary/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PathFindingNodeCostInfoFactoryBase } from './PathFindingNodeCostInfoFactoryBase.js';
 

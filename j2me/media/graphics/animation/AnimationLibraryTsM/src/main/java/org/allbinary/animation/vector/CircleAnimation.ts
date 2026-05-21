@@ -48,7 +48,7 @@ import { AngleFactory } from '../../../../org/allbinary/math/AngleFactory.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class CircleAnimation extends Animation implements ColorCompositeInterface {

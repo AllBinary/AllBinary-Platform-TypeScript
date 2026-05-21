@@ -58,7 +58,7 @@ import { PixelDelta } from '../../../../../org/allbinary/media/image/comparison/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparisonResult } from './ImageComparisonResult.js';
 

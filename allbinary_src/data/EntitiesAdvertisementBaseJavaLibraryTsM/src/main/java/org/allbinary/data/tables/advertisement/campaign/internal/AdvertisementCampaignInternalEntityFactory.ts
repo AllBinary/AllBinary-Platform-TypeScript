@@ -44,7 +44,7 @@ import { CommonStrings } from '../../../../../../../org/allbinary/string/CommonS
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementCampaignInternalEntity } from './AdvertisementCampaignInternalEntity.js';
 import { AdvertisementCampaignInternalEntityInterface } from './AdvertisementCampaignInternalEntityInterface.js';

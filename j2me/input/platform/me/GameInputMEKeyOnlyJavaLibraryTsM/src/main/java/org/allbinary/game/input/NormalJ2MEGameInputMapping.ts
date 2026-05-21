@@ -40,7 +40,7 @@ import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapp
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { J2MEGameInputMapping } from './J2MEGameInputMapping.js';
 import { NormalJ2MEDefaultGameInputMapping } from './NormalJ2MEDefaultGameInputMapping.js';

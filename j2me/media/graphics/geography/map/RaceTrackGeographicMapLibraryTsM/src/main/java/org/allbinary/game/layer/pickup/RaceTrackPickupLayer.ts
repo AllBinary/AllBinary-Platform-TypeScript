@@ -60,7 +60,7 @@ import { ViewPositionEventHandler } from '../../../../../org/allbinary/view/even
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickupLayer } from './PickupLayer.js';
 import { CountedPickedUpLayerInterfaceFactory } from './CountedPickedUpLayerInterfaceFactory.js';

@@ -58,7 +58,7 @@ import { StringMaker } from '../../../../../../../org/allbinary/logic/string/Str
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StoreFrontsEntityInterface } from './StoreFrontsEntityInterface.js';
 

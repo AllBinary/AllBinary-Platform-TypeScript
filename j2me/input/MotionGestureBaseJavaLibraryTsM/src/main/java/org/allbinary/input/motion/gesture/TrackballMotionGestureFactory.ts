@@ -40,7 +40,7 @@ import { InputFactory } from '../../../../../org/allbinary/game/input/InputFacto
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureInput } from './MotionGestureInput.js';
 

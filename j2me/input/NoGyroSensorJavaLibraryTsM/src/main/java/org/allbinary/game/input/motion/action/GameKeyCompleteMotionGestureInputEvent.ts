@@ -50,7 +50,7 @@ import { MotionGestureInput } from '../../../../../../org/allbinary/input/motion
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class GameKeyCompleteMotionGestureInputEvent extends CompleteMotionGestureInputEvent implements GameKeyEventSourceInterface {

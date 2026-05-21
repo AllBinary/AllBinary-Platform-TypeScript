@@ -62,7 +62,7 @@ import { TimeDelayHelper } from '../../../../../org/allbinary/time/TimeDelayHelp
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Log } from './Log.js';
 import { LogFormatUtil } from './LogFormatUtil.js';

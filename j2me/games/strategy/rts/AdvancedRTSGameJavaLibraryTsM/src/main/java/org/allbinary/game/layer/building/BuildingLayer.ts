@@ -132,7 +132,7 @@ import { RemoteInfo } from '../../../../../org/allbinary/game/multiplayer/layer/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimulatedBuildingPropertiesFactory } from './SimulatedBuildingPropertiesFactory.js';
 import { BuildingPropertiesFactory } from './BuildingPropertiesFactory.js';

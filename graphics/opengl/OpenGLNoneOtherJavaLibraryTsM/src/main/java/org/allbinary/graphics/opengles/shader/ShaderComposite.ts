@@ -46,7 +46,7 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Shader } from './Shader.js';
 import { ShaderInitializer } from './ShaderInitializer.js';

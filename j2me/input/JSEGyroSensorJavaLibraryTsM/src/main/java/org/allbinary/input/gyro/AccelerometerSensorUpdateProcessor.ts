@@ -52,7 +52,7 @@ import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/acce
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AccelerometerSensorUpdateProcessor extends Processor {

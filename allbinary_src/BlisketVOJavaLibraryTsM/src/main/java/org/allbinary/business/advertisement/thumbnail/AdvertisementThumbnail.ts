@@ -40,7 +40,7 @@ import { TwoDimensionalConstraintInterface } from '../../../../../org/allbinary/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdvertisementThumbnailInterface } from './AdvertisementThumbnailInterface.js';
 

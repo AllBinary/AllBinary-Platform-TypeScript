@@ -42,7 +42,7 @@ import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomGPoint } from './CustomGPoint.js';
 

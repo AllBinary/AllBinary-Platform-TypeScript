@@ -52,7 +52,7 @@ import { AbSqlTableUtil } from '../../org/allbinary/logic/communication/sql/AbSq
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicTable } from './BasicTable.js';
 

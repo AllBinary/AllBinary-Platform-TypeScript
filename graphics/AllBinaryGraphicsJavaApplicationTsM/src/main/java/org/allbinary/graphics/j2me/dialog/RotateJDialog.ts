@@ -54,7 +54,7 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JDialog } from './JDialog.js';
 import { Frame } from './Frame.js';
@@ -66,6 +66,7 @@ import { ActionListener } from './ActionListener.js';
 import { ActionEvent } from './ActionEvent.js';
 import { GroupLayout } from './GroupLayout.js';
 import { Short } from './Short.js';
+import { EventQueue } from './EventQueue.js';
 import { JFrame } from './JFrame.js';
 import { WindowAdapter } from './WindowAdapter.js';
 import { WindowEvent } from './WindowEvent.js';

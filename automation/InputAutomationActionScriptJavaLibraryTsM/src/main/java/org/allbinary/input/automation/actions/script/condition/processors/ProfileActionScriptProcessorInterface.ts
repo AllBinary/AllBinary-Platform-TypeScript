@@ -46,7 +46,7 @@ import { CustomTreeNodeInterface } from '../../../../../../../../org/allbinary/i
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface ProfileActionScriptProcessorInterface extends CustomTreeNodeInterface, DomNodeInterface, MutableTreeNode, ProfileActionScriptItemInterface {

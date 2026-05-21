@@ -46,7 +46,7 @@ import { BasicEventHandler } from '../../../../../org/allbinary/logic/util/event
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameFeatureListenerInterface } from './GameFeatureListenerInterface.js';
 import { GameFeatureEvent } from './GameFeatureEvent.js';

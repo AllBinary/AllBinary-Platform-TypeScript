@@ -44,7 +44,7 @@ import { OrderHistoryData } from '../../../../../../org/allbinary/business/user/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class UserEmailEventNameData

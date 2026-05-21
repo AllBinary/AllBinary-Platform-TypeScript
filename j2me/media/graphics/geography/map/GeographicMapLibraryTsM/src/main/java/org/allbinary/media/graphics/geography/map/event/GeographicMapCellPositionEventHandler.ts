@@ -54,7 +54,7 @@ import { BasicEventHandler } from '../../../../../../../org/allbinary/logic/util
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionEvent } from './GeographicMapCellPositionEvent.js';
 import { GeographicMapCellPositionEventListenerInterface } from './GeographicMapCellPositionEventListenerInterface.js';

@@ -40,7 +40,7 @@ import { BasicGroupFactory } from '../../../../../org/allbinary/game/identificat
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RTSFormInput } from './RTSFormInput.js';
 

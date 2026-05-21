@@ -42,7 +42,7 @@ import { PaintableInterface } from '../../../../org/allbinary/graphics/paint/Pai
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface PartInterface extends PaintableInterface, AnimationInterfaceCompositeInterface {

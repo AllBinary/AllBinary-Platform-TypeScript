@@ -40,7 +40,7 @@ import { DisplayInfoSingleton } from '../../../org/allbinary/graphics/displayabl
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { StaticViewPosition } from './StaticViewPosition.js';
 import { ViewPosition } from './ViewPosition.js';

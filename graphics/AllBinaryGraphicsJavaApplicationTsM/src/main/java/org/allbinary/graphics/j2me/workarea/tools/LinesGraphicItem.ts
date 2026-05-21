@@ -80,7 +80,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicItemInterface } from './GraphicItemInterface.js';
 import { Color } from './Color.js';

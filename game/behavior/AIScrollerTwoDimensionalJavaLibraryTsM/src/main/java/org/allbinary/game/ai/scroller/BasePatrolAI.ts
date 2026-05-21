@@ -60,7 +60,7 @@ import { SmallIntegerSingletonFactory } from '../../../../../org/allbinary/logic
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class BasePatrolAI extends BasicAI {

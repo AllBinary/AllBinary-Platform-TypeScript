@@ -64,7 +64,7 @@ import { PreLogUtil } from '../../../../../../../org/allbinary/logic/communicati
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class RegistrationConfiguration

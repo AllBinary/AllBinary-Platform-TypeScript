@@ -44,7 +44,7 @@ import { BasicDataTableInterface } from '../../../../../../../../../org/allbinar
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface DownloadItemsEntityInterface extends BasicDataTableInterface {

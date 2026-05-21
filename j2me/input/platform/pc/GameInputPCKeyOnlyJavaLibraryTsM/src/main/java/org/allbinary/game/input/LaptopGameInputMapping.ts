@@ -40,7 +40,7 @@ import { InputToGameKeyMapping } from '../../../../org/allbinary/game/input/mapp
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PCGameInputMapping } from './PCGameInputMapping.js';
 import { LaptopDefaultGameInputMapping } from './LaptopDefaultGameInputMapping.js';

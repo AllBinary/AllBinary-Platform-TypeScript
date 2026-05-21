@@ -52,7 +52,7 @@ import { BasicColorFactory } from '../../../../../org/allbinary/graphics/color/B
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class DecalAnimationInterfaceFactory

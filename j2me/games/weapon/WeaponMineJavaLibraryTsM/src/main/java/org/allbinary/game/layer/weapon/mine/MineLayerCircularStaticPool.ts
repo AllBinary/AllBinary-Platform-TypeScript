@@ -44,7 +44,7 @@ import { ViewPositionFactoryInterface } from '../../../../../../org/allbinary/vi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineCountedPickedUpLayerInterfaceFactory } from './MineCountedPickedUpLayerInterfaceFactory.js';
 import { MineLayerFactory } from './MineLayerFactory.js';

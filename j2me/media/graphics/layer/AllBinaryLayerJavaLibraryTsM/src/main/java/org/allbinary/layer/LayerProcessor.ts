@@ -42,7 +42,7 @@ import { CommonStrings } from '../../../org/allbinary/string/CommonStrings.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerProcessorInterface } from './LayerProcessorInterface.js';
 import { LayerManager } from './LayerManager.js';

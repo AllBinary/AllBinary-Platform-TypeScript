@@ -40,7 +40,7 @@ import { KeyEvent } from '../../../java/awt/event/KeyEvent.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class KeyUtil

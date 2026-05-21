@@ -50,7 +50,7 @@ import { MotionRectangleConstraintsInterface } from '../../../../../org/allbinar
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Dimension } from './Dimension.js';
 import { Rectangle } from './Rectangle.js';

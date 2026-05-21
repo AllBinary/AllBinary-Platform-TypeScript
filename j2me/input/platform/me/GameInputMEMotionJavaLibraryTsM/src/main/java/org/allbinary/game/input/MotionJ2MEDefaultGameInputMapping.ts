@@ -48,7 +48,7 @@ import { TouchMotionGestureFactory } from '../../../../org/allbinary/input/motio
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameKeyFactory } from './GameKeyFactory.js';
 

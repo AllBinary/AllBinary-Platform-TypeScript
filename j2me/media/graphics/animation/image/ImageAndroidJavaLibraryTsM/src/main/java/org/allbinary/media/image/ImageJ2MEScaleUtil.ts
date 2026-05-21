@@ -44,7 +44,7 @@ import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/Ga
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageScaleUtil } from './ImageScaleUtil.js';
 

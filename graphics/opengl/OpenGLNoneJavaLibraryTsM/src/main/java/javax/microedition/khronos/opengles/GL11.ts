@@ -30,7 +30,7 @@ import { IntBuffer } from '../../../../java/nio/IntBuffer.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GL10 } from './GL10.js';
 

@@ -60,7 +60,7 @@ import { GeographicMapCellPosition } from '../../../../../org/allbinary/media/gr
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
 

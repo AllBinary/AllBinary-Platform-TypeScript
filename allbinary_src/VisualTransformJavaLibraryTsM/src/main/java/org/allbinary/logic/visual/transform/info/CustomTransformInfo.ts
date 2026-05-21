@@ -40,7 +40,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfo } from './TransformInfo.js';
 import { TransformInfoInterface } from './TransformInfoInterface.js';

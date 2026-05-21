@@ -38,7 +38,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';
 import { TouchScreenType } from './TouchScreenType.js';

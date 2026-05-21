@@ -40,7 +40,7 @@ import { InputRobotInterface } from '../../../../org/allbinary/input/automation/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputAutomationRobotServiceInterface } from './InputAutomationRobotServiceInterface.js';
 

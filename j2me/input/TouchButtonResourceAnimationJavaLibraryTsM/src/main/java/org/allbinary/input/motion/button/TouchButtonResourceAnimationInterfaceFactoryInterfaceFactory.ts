@@ -72,7 +72,7 @@ import { ImageCompleteUtil } from '../../../../../org/allbinary/media/image/Imag
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchButtonBlankResource } from './TouchButtonBlankResource.js';
 import { TouchButtonResource } from './TouchButtonResource.js';

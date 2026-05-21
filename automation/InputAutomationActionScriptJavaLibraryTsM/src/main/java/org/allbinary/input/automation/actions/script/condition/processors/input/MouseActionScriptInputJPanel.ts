@@ -62,7 +62,7 @@ import { CommonStrings } from '../../../../../../../../../org/allbinary/string/C
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
 import { MouseActionScriptInputInterface } from './MouseActionScriptInputInterface.js';

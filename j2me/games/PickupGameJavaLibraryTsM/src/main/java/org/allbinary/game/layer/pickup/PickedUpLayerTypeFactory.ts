@@ -40,7 +40,7 @@ import { StringUtil } from '../../../../../org/allbinary/logic/string/StringUtil
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PickedUpLayerType } from './PickedUpLayerType.js';
 

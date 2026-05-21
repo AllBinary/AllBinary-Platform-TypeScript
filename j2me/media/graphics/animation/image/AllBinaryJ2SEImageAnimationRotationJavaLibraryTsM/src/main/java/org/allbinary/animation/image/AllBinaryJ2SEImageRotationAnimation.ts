@@ -62,7 +62,7 @@ import { ImageRotationUtil } from '../../../../org/allbinary/media/image/ImageRo
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageBaseRotationAnimation } from './ImageBaseRotationAnimation.js';
 import { ModifierBaseProcessor } from './ModifierBaseProcessor.js';

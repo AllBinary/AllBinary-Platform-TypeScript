@@ -56,7 +56,7 @@ import { TransformInfoHttpStoreNoManipulation } from '../../../org/allbinary/log
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class TransformInfoRequestHelper extends ModifyTable {

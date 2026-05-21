@@ -60,7 +60,7 @@ import { StaticViewPosition } from '../../../../org/allbinary/view/StaticViewPos
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameLayer } from './AllBinaryGameLayer.js';
 

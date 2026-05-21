@@ -52,7 +52,7 @@ import { OpenGLSurfaceChangedInterface } from '../../../org/allbinary/image/open
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AnimationInterface } from './AnimationInterface.js';
 

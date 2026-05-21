@@ -214,7 +214,7 @@ import { EnumerationUtil } from '../../../../org/allbinary/util/EnumerationUtil.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameMidletStateFactory } from './GameMidletStateFactory.js';
 import { GameMidletEventHandler } from './GameMidletEventHandler.js';

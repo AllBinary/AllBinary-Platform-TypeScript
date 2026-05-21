@@ -56,7 +56,7 @@ import { BasicArrayListS } from '../../../../../../../org/allbinary/util/BasicAr
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class BasicTopViewGeographicMapCellType

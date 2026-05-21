@@ -50,7 +50,7 @@ import { EventStrings } from '../../../../org/allbinary/logic/util/event/EventSt
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AdConfiguration } from './AdConfiguration.js';
 import { Advertisements } from './Advertisements.js';

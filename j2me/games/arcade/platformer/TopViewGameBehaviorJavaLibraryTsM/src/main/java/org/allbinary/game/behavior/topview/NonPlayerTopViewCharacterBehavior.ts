@@ -66,7 +66,7 @@ import { GeographicMapCellType } from '../../../../../org/allbinary/media/graphi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TopViewCharacterBehavior } from './TopViewCharacterBehavior.js';
 

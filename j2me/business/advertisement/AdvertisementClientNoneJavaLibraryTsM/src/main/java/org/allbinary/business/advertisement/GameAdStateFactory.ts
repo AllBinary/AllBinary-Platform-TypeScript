@@ -30,7 +30,7 @@ import { SoftwareInformation } from '../../../../org/allbinary/logic/system/Soft
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GameAdStateFactoryInterface } from './GameAdStateFactoryInterface.js';
 import { AppNameLicensingAdConfiguration } from './AppNameLicensingAdConfiguration.js';

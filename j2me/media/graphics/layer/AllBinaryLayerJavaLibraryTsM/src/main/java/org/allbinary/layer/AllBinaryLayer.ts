@@ -72,7 +72,7 @@ import { ViewPositionEvent } from '../../../org/allbinary/view/event/ViewPositio
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Layer } from './Layer.js';
 import { LayerInterface } from './LayerInterface.js';

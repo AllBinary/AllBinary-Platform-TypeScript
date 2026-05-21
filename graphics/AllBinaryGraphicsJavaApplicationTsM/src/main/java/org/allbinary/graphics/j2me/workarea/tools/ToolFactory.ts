@@ -46,7 +46,7 @@ import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStri
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GraphicsItemInterfaceFactoryInterface } from './GraphicsItemInterfaceFactoryInterface.js';
 import { GraphicItemFactory } from './GraphicItemFactory.js';

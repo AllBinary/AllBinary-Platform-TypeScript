@@ -50,7 +50,7 @@ import { MotionGestureEvent } from '../../../../../org/allbinary/input/motion/ge
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class MirrorMotionGestureEventUtil

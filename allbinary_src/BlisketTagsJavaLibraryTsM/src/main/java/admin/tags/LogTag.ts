@@ -40,7 +40,7 @@ import { LogHelperFactory } from '../../admin/taghelpers/LogHelperFactory.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 

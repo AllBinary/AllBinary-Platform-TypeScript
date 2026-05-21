@@ -52,7 +52,7 @@ import { AbeClientInformationInterface } from '../../../../../org/allbinary/logi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { DemoGameBehavior } from './DemoGameBehavior.js';
 import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';

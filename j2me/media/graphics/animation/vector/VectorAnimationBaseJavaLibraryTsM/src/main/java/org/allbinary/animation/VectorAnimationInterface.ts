@@ -40,7 +40,7 @@ import { ColorCompositeInterface } from '../../../org/allbinary/graphics/color/C
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimationInterface } from './IndexedAnimationInterface.js';
 

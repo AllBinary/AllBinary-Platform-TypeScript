@@ -66,7 +66,7 @@ import { TransformInfoTemplateData } from '../../../../../org/allbinary/logic/vi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { URIResolverStrings } from './URIResolverStrings.js';
 import { BasicUriResolver } from './BasicUriResolver.js';

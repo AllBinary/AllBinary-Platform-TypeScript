@@ -44,7 +44,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SimpleGeographicMapCellPositionFactory } from './SimpleGeographicMapCellPositionFactory.js';
 import { GeographicMapCellPosition } from './GeographicMapCellPosition.js';

@@ -66,7 +66,7 @@ import { NodeList } from '../../../../../../org/w3c/dom/NodeList.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LogConfigsData } from './LogConfigsData.js';
 import { LogConfigData } from './LogConfigData.js';

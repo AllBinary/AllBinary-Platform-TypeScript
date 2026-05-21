@@ -26,7 +26,7 @@ import { R } from '../../org/allbinary/game/testgamedemo/R.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AndroidResources

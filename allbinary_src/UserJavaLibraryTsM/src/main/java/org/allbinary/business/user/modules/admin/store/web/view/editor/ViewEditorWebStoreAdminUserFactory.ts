@@ -46,7 +46,7 @@ import { UserInterface } from '../../../../../../../../../../org/allbinary/busin
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewEditorWebStoreAdminUser } from './ViewEditorWebStoreAdminUser.js';
 

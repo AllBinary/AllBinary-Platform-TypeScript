@@ -54,7 +54,7 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ViewPositionEvent } from './ViewPositionEvent.js';
 import { ViewPositionEventListenerInterface } from './ViewPositionEventListenerInterface.js';

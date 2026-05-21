@@ -50,7 +50,7 @@ import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Point } from './Point.js';
 import { PointHelper } from './PointHelper.js';

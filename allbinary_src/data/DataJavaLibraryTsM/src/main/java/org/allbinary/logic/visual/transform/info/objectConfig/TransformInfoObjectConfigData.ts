@@ -40,7 +40,7 @@ import { DataFileData } from '../../../../../../../org/allbinary/data/file/DataF
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class TransformInfoObjectConfigData

@@ -42,7 +42,7 @@ import { TouchButtonRecognizer } from '../../../../org/allbinary/input/motion/bu
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRecognizer } from './MotionRecognizer.js';
 

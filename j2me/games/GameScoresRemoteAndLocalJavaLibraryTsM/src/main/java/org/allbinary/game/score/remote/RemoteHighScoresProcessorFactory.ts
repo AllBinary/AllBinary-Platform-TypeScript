@@ -38,7 +38,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RemoteHighScoresProcessor } from './RemoteHighScoresProcessor.js';
 import { RemoteHighScoresProcessorInterface } from './RemoteHighScoresProcessorInterface.js';

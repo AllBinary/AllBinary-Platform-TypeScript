@@ -54,7 +54,7 @@ import { BasicArrayListS } from '../../../org/allbinary/util/BasicArrayListS.js'
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { VectorAnimationUtil } from './VectorAnimationUtil.js';
 

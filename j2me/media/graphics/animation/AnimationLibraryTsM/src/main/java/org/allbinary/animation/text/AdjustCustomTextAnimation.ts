@@ -42,7 +42,7 @@ import { AnimationBehavior } from '../../../../org/allbinary/animation/Animation
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CustomTextAnimation } from './CustomTextAnimation.js';
 

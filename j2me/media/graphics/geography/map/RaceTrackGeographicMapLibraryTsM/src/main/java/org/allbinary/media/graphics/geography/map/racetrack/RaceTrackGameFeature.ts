@@ -40,7 +40,7 @@ import { GameFeature } from '../../../../../../../org/allbinary/game/configurati
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class RaceTrackGameFeature extends GameFeature {

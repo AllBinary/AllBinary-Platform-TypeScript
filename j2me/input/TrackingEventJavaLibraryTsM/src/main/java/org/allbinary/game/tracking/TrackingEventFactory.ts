@@ -42,7 +42,7 @@ import { AllBinaryEventObjectFactoryInterface } from '../../../../org/allbinary/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TrackingEvent } from './TrackingEvent.js';
 import { TrackingEventHandler } from './TrackingEventHandler.js';

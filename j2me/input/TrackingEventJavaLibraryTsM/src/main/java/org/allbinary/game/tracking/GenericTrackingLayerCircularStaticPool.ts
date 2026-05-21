@@ -40,7 +40,7 @@ import { AllBinaryLayerCircularPool } from '../../../../org/allbinary/layer/AllB
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class GenericTrackingLayerCircularStaticPool extends AllBinaryLayerCircularPool {

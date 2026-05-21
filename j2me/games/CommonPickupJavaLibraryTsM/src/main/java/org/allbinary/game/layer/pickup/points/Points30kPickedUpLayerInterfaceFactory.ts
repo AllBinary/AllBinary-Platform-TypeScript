@@ -58,7 +58,7 @@ import { AllBinaryLayer } from '../../../../../../org/allbinary/layer/AllBinaryL
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsLayerCircularStaticPool } from './PointsLayerCircularStaticPool.js';
 import { PointsLayerFactory } from './PointsLayerFactory.js';

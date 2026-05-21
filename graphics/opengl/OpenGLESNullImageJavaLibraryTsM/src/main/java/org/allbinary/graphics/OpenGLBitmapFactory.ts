@@ -36,7 +36,7 @@ import { PlatformBitmapBaseFactory } from '../../../org/allbinary/platform/graph
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //import { Config } from './Config.js';
 import { OpenGLBitmap } from './OpenGLBitmap.js';

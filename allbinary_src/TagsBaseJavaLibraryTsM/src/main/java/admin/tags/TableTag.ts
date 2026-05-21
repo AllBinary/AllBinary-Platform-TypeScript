@@ -66,7 +66,7 @@ import { PropertiesTag } from '../../tags/PropertiesTag.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class TableTag extends PropertiesTag {

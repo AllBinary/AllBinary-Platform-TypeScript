@@ -52,7 +52,7 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
 import { ImageUnifierProperties } from './ImageUnifierProperties.js';

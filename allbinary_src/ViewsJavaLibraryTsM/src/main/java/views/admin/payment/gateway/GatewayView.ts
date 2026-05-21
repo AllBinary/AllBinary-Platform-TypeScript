@@ -54,7 +54,7 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayViewAbstract } from './PaymentGatewayViewAbstract.js';
 import { PaymentGatewayComponent } from './PaymentGatewayComponent.js';

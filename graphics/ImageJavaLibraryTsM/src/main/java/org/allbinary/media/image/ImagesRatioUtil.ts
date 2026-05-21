@@ -48,7 +48,7 @@ import { CommonLabels } from '../../../../org/allbinary/string/CommonLabels.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
 import { Point } from './Point.js';

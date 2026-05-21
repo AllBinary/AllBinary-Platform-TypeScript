@@ -52,7 +52,7 @@ import { Visitor } from '../../../../org/allbinary/logic/util/visitor/Visitor.js
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
 import { BasicAI } from './BasicAI.js';

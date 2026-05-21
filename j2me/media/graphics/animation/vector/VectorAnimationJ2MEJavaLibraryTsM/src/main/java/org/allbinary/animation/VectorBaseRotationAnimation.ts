@@ -54,7 +54,7 @@ import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RotationAnimation } from './RotationAnimation.js';
 import { VectorAnimationInterface } from './VectorAnimationInterface.js';

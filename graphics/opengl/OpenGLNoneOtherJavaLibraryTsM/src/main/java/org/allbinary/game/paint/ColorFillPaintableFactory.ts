@@ -44,7 +44,7 @@ import { OperatingSystemFactory } from '../../../../org/allbinary/logic/system/o
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ColorFillPaintable } from './ColorFillPaintable.js';
 import { OverScanColorFillPaintable } from './OverScanColorFillPaintable.js';

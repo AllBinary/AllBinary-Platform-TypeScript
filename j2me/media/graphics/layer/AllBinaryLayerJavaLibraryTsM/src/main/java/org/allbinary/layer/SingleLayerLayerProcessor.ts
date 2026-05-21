@@ -40,7 +40,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerProcessor } from './LayerProcessor.js';
 import { SingleLayerLayerManager } from './SingleLayerLayerManager.js';

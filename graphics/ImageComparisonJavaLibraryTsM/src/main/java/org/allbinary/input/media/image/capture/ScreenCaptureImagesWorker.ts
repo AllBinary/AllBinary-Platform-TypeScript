@@ -58,7 +58,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CaptureWorkerInterface } from './CaptureWorkerInterface.js';
 import { ScreenScavangerRobot } from './ScreenScavangerRobot.js';

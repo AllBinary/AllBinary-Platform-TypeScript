@@ -34,7 +34,7 @@ import { BasicColor } from '../../../org/allbinary/graphics/color/BasicColor.js'
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class OpenGLImageUtil

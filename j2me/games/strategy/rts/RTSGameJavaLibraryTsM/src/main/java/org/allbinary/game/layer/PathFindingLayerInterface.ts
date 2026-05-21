@@ -50,7 +50,7 @@ import { BasicArrayList } from '../../../../org/allbinary/util/BasicArrayList.js
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GeographicMapCellPositionAreaBase } from './GeographicMapCellPositionAreaBase.js';
 import { SelectionHudPaintable } from './SelectionHudPaintable.js';

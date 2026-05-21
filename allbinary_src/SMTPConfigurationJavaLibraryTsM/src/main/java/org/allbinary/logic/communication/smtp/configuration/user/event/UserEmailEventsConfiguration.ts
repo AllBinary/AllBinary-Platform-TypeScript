@@ -54,7 +54,7 @@ import { CommonStrings } from '../../../../../../../../org/allbinary/string/Comm
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventsConfigurationInterface } from './UserEmailEventsConfigurationInterface.js';
 import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';

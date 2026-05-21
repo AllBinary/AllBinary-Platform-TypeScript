@@ -48,7 +48,7 @@ import { LogUtil } from '../../../../org/allbinary/logic/communication/log/LogUt
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageUtil } from './ImageUtil.js';
 import { Graphics2D } from './Graphics2D.js';

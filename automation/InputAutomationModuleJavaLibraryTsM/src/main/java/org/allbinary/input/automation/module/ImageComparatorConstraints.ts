@@ -56,7 +56,7 @@ import { ImageComparatorConstraintsInterface } from '../../../../../org/allbinar
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
 import { Rectangle } from './Rectangle.js';

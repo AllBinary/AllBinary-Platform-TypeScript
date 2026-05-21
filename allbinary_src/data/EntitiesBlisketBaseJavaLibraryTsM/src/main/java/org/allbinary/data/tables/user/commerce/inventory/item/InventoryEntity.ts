@@ -66,7 +66,7 @@ import { StringValidationUtil } from '../../../../../../../../org/allbinary/logi
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventoryEntityInterface } from './InventoryEntityInterface.js';
 

@@ -38,7 +38,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchFeature } from './TouchFeature.js';
 

@@ -50,7 +50,7 @@ import { ServiceRegistration } from '../../../org/osgi/framework/ServiceRegistra
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class OSGIActivatorUtil

@@ -48,7 +48,7 @@ import { ImageComparatorConstraints } from '../../../../../../../org/allbinary/i
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Color } from './Color.js';
 

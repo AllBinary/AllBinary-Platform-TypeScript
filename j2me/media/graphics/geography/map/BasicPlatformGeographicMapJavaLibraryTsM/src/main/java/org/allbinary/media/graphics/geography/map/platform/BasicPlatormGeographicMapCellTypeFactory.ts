@@ -52,7 +52,7 @@ import { EnumerationUtil } from '../../../../../../../org/allbinary/util/Enumera
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicPlatormGeographicMapCellType } from './BasicPlatormGeographicMapCellType.js';
 

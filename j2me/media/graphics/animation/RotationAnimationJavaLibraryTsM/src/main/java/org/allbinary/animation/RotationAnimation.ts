@@ -52,7 +52,7 @@ import { CircularIndexUtil } from '../../../org/allbinary/util/CircularIndexUtil
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { IndexedAnimation } from './IndexedAnimation.js';
 import { RotationAnimationInterface } from './RotationAnimationInterface.js';

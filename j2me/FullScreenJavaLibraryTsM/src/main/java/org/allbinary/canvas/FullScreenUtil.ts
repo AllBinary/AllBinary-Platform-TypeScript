@@ -48,7 +48,7 @@ import { CommandListener } from '../../../javax/microedition/lcdui/CommandListen
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RunnableCanvas } from './RunnableCanvas.js';
 

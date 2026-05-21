@@ -58,7 +58,7 @@ import { ScaleProperties } from '../../../../org/allbinary/media/ScaleProperties
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryFlickerAndroidImageRotationAnimation } from './AllBinaryFlickerAndroidImageRotationAnimation.js';
 

@@ -48,7 +48,7 @@ import { BasicArrayListD } from '../../../org/allbinary/util/BasicArrayListD.js'
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryLayer } from './AllBinaryLayer.js';
 import { AllBinaryLayerManager } from './AllBinaryLayerManager.js';

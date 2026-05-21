@@ -42,7 +42,7 @@ import { GeographicMapCellTypeFactory } from '../../../../../../../org/allbinary
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { RaceTrackGeographicMapCellType } from './RaceTrackGeographicMapCellType.js';
 import { RaceTrackGeographicMapCellTypes } from './RaceTrackGeographicMapCellTypes.js';

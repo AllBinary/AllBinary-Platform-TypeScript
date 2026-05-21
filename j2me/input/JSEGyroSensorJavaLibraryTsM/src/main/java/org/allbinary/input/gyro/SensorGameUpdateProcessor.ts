@@ -48,7 +48,7 @@ import { AccelerometerSensorFactory } from '../../../../org/allbinary/input/acce
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { GyroSensorFactory } from './GyroSensorFactory.js';
 

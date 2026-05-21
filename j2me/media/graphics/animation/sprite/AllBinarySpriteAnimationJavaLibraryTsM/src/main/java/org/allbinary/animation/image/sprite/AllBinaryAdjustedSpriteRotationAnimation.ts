@@ -46,7 +46,7 @@ import { AnimationBehavior } from '../../../../../org/allbinary/animation/Animat
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
 

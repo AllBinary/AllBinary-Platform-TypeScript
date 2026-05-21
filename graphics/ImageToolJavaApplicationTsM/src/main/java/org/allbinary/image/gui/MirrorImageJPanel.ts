@@ -64,7 +64,7 @@ import { CommonStrings } from '../../../../org/allbinary/string/CommonStrings.js
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { JPanel } from './JPanel.js';
 import { JLayeredPane } from './JLayeredPane.js';

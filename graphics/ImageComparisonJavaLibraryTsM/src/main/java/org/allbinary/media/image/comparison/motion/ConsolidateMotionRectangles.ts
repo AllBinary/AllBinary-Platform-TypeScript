@@ -46,7 +46,7 @@ import { LogUtil } from '../../../../../../org/allbinary/logic/communication/log
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
 import { MotionRectangle } from './MotionRectangle.js';

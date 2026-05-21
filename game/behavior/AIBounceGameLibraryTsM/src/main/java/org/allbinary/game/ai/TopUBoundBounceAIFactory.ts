@@ -62,7 +62,7 @@ import { AllBinaryLayer } from '../../../../org/allbinary/layer/AllBinaryLayer.j
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ArtificialIntelligenceInterfaceFactoryInterface } from './ArtificialIntelligenceInterfaceFactoryInterface.js';
 import { BoundBounceAI } from './BoundBounceAI.js';

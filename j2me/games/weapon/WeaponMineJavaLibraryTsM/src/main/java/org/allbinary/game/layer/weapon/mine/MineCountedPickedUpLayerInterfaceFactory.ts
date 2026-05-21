@@ -64,7 +64,7 @@ import { SmallIntegerSingletonFactory } from '../../../../../../org/allbinary/lo
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MineLayerCircularStaticPool } from './MineLayerCircularStaticPool.js';
 import { MineWeaponResources } from './MineWeaponResources.js';

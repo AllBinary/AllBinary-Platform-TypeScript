@@ -62,7 +62,7 @@ import { StringMaker } from '../../../../../../org/allbinary/logic/string/String
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { QuoteRequestEntityInterface } from './QuoteRequestEntityInterface.js';
 

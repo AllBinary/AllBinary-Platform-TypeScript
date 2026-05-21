@@ -62,7 +62,7 @@ import { PixelDeltaFactory } from '../../../../../org/allbinary/media/image/comp
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageComparatorConstraintsInterface } from './ImageComparatorConstraintsInterface.js';
 import { Color } from './Color.js';

@@ -42,7 +42,7 @@ import { GameStateFactory } from '../../../org/allbinary/game/state/GameStateFac
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class IntermissionFactory

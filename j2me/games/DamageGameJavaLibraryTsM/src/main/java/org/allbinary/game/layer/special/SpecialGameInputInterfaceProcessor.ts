@@ -40,7 +40,7 @@ import { GameInputProcessor } from '../../../../../org/allbinary/game/input/Game
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SpecialGameInputInterface } from './SpecialGameInputInterface.js';
 

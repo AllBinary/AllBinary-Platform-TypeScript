@@ -44,7 +44,7 @@ import { Display } from '../../../../org/eclipse/swt/widgets/Display.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class SWTProcessor

@@ -52,7 +52,7 @@ import { BooleanUtil } from '../../../../org/allbinary/logic/java/bool/BooleanUt
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InitInfoEntity } from './InitInfoEntity.js';
 

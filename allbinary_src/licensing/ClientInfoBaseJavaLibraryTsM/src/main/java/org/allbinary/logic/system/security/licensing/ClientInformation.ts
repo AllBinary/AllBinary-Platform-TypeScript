@@ -58,7 +58,7 @@ import { BasicArrayListUtil } from '../../../../../../org/allbinary/util/BasicAr
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AbeClientInformationInterface } from './AbeClientInformationInterface.js';
 import { AbeClientInformationData } from './AbeClientInformationData.js';

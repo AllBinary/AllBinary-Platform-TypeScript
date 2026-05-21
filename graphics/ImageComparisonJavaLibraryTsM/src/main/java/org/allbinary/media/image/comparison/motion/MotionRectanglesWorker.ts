@@ -60,7 +60,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangleConstraintsInterface } from './MotionRectangleConstraintsInterface.js';
 import { AllMotionRectangles } from './AllMotionRectangles.js';

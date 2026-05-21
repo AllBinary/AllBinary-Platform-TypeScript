@@ -40,7 +40,7 @@ import { Color } from '../../../../java/awt/Color.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class ImageJ2SEUtil

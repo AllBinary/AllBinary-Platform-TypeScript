@@ -42,7 +42,7 @@ import { DomNodeInterface } from '../../../../../../../../../../org/allbinary/da
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface PaymentGatewayDomNodeFactoryInterface {

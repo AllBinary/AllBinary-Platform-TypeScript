@@ -42,7 +42,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LifeInterface } from './LifeInterface.js';
 

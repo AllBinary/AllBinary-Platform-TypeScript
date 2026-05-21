@@ -42,7 +42,7 @@ import { FileFilter } from '../../../../../javax/swing/filechooser/FileFilter.js
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         //TWB - replace with file visitor version
 export class ImageFileFilter extends FileFilter {

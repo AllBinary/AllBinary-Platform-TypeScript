@@ -50,7 +50,7 @@ import { ImageJ2MEScaleUtil } from '../../../org/allbinary/media/image/ImageJ2ME
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AnimationFactoryImageScaleUtil

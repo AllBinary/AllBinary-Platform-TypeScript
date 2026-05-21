@@ -40,7 +40,7 @@ import { StateControlledInterface } from '../../../../org/allbinary/graphics/dis
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Paintable } from './Paintable.js';
 

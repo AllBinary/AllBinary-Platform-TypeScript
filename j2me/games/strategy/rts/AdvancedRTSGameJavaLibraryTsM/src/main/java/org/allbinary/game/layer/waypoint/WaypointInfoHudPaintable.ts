@@ -50,7 +50,7 @@ import { KeyValueDrawString } from '../../../../../org/allbinary/graphics/draw/K
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class WaypointInfoHudPaintable extends SelectionHudPaintable {

@@ -40,7 +40,7 @@ import { awt } from '../../../../java/awt.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointFactory } from './PointFactory.js';
 import { Point } from './Point.js';

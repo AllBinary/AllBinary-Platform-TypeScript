@@ -48,7 +48,7 @@ import { PixelDelta } from '../../../../../../org/allbinary/media/image/comparis
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionRectangles } from './MotionRectangles.js';
 import { MotionRectangle } from './MotionRectangle.js';

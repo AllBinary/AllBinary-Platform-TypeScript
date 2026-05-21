@@ -64,7 +64,7 @@ import { WeakCrypt } from '../../../../org/allbinary/logic/system/security/crypt
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class InstallerInfo

@@ -40,7 +40,7 @@ import { RecordStore } from '../../../../../javax/microedition/rms/RecordStore.j
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class NullRecordStore extends RecordStore {

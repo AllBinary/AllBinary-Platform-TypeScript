@@ -70,7 +70,7 @@ import { EnumerationUtil } from '../../../../../org/allbinary/util/EnumerationUt
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InputToGameKeyMapping } from './InputToGameKeyMapping.js';
 //GameInputNoPersistanceLibrary

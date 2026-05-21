@@ -58,7 +58,7 @@ import { TransformInfoData } from '../../org/allbinary/logic/visual/transform/in
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 

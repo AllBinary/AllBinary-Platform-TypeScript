@@ -40,7 +40,7 @@ import { NoDecimalTrigTable } from '../../../../../org/allbinary/math/NoDecimalT
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AxisMathVectorUtil

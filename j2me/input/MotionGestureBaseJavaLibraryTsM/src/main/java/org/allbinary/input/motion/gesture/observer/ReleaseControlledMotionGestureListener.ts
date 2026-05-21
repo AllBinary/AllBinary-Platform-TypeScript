@@ -60,7 +60,7 @@ import { BasicArrayListD } from '../../../../../../org/allbinary/util/BasicArray
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MotionGestureEventListener } from './MotionGestureEventListener.js';
 import { CompleteMotionGestureListenerInterface } from './CompleteMotionGestureListenerInterface.js';

@@ -72,7 +72,7 @@ import { NodeList } from '../../../../../../../../../org/w3c/dom/NodeList.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicProfileActionScriptInput } from './BasicProfileActionScriptInput.js';
 import { KeyboardActionScriptInputInterface } from './KeyboardActionScriptInputInterface.js';

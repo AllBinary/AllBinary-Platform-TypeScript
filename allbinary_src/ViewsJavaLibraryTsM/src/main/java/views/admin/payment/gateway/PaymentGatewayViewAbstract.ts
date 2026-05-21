@@ -48,7 +48,7 @@ import { TransformInfoInterface } from '../../../../org/allbinary/logic/visual/t
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class PaymentGatewayViewAbstract extends TransformInfoHttpComposite {

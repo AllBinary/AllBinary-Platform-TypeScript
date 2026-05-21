@@ -56,7 +56,7 @@ import { PrimitiveIntUtil } from '../../../../../org/allbinary/logic/math/Primit
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinarySpriteRotationAnimation } from './AllBinarySpriteRotationAnimation.js';
 import { AllBinaryAdjustedSpriteRotationAnimation } from './AllBinaryAdjustedSpriteRotationAnimation.js';

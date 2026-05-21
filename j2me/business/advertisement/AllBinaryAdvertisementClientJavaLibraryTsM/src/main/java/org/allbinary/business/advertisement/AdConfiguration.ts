@@ -42,7 +42,7 @@ import { GameState } from '../../../../org/allbinary/game/state/GameState.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AdConfiguration

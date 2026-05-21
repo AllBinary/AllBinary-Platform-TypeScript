@@ -42,7 +42,7 @@ import { Node } from '../../../../../../org/w3c/dom/Node.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PointsDomUtil } from './PointsDomUtil.js';
 import { LinesGraphicItem } from './LinesGraphicItem.js';

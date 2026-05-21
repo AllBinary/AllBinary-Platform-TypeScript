@@ -54,7 +54,7 @@ import { NodeList } from '../../../../../../../../org/w3c/dom/NodeList.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { UserEmailEventConfigurationInterface } from './UserEmailEventConfigurationInterface.js';
 import { UserEmailEventConfigurationData } from './UserEmailEventConfigurationData.js';

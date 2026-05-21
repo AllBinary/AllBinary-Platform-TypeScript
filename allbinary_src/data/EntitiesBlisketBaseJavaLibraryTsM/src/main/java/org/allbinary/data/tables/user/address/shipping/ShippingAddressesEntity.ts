@@ -40,7 +40,7 @@ import { StreetAddressesEntity } from '../../../../../../../org/allbinary/data/t
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class ShippingAddressesEntity extends StreetAddressesEntity {

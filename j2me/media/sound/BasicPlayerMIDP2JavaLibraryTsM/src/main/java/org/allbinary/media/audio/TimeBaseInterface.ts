@@ -42,7 +42,7 @@ import { TimeBase } from '../../../../javax/microedition/media/TimeBase.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface TimeBaseInterface {

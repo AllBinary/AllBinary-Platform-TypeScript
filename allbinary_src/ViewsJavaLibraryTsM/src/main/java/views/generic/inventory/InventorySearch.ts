@@ -76,7 +76,7 @@ import { InventoryViewSearchInterface } from '../../../views/admin/inventory/lis
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { InventorySearchUtil } from './InventorySearchUtil.js';
 import { InventorySearchProductUtil } from './InventorySearchProductUtil.js';

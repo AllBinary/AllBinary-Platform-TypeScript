@@ -48,7 +48,7 @@ import { GraphicsFeatureFactory } from '../../../../../org/allbinary/game/config
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class Unit2DecalGameResources extends BasicGameResources {

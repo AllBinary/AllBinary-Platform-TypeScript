@@ -44,7 +44,7 @@ import { TableMappingInterface } from '../../../../../../../../../org/allbinary/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export interface StoreFrontOrdersHistoryStatisticsInterface extends TableMappingInterface {

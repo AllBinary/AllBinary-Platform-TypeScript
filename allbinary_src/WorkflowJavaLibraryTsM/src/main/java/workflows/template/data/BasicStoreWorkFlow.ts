@@ -48,7 +48,7 @@ import { StoreWorkFlowInterface } from '../../../org/allbinary/logic/control/wor
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BasicWorkFlow } from './BasicWorkFlow.js';
 

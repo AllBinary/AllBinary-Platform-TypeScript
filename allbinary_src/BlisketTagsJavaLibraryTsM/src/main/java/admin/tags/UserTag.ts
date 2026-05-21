@@ -50,7 +50,7 @@ import { AbResponseHandler } from '../../org/allbinary/logic/communication/http/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TableTag } from './TableTag.js';
 

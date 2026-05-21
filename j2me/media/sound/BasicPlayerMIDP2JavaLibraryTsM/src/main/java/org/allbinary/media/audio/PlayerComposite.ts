@@ -64,7 +64,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TimeBaseInterface } from './TimeBaseInterface.js';
 import { Controllable2 } from './Controllable2.js';

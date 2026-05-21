@@ -40,7 +40,7 @@ import { StringUtil } from '../../../../../../../org/allbinary/logic/string/Stri
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { HardwareComponentInterface } from './HardwareComponentInterface.js';
 

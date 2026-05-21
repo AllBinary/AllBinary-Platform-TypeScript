@@ -48,7 +48,7 @@ import { NullPaintable } from '../../../../../org/allbinary/graphics/paint/NullP
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvas } from './AllBinaryGameCanvas.js';
 

@@ -60,7 +60,7 @@ import { BasicArrayListD } from '../../../../org/allbinary/util/BasicArrayListD.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { OpenGLSurfaceChangedInterface } from './OpenGLSurfaceChangedInterface.js';
 import { OpenGLESImageProperties } from './OpenGLESImageProperties.js';

@@ -44,7 +44,7 @@ import { BasicColorFactory } from '../../../org/allbinary/graphics/color/BasicCo
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProceduralAnimationInterfaceFactoryInterface } from './ProceduralAnimationInterfaceFactoryInterface.js';
 import { AnimationBehaviorFactory } from './AnimationBehaviorFactory.js';

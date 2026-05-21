@@ -42,7 +42,7 @@ import { DirectionFactory } from '../../../../org/allbinary/direction/DirectionF
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPlacementType } from './LayerPlacementType.js';
 

@@ -54,7 +54,7 @@ import { CommonStrings } from '../../../../../../../../org/allbinary/string/Comm
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { PaymentGatewayInterfaceFactoryInterface } from './PaymentGatewayInterfaceFactoryInterface.js';
 import { PaymentGatewayInterface } from './PaymentGatewayInterface.js';

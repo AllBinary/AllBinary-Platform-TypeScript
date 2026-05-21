@@ -54,7 +54,7 @@ import { TimeDelayHelper } from '../../../../org/allbinary/time/TimeDelayHelper.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ImageArrayAnimation } from './ImageArrayAnimation.js';
 

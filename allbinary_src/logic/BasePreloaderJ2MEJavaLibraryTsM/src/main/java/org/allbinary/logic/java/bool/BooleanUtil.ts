@@ -44,7 +44,7 @@ import { StringValidationUtil } from '../../../../../org/allbinary/logic/string/
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BooleanFactory } from './BooleanFactory.js';
 

@@ -38,7 +38,7 @@
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehaviorFactory } from './CollidableBaseBehaviorFactory.js';
 import { CollidableAlwaysPickupNeverCollideBehavior } from './CollidableAlwaysPickupNeverCollideBehavior.js';

@@ -48,7 +48,7 @@ import { Activity } from '../../../../../../android/app/Activity.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { ProgressRunnable } from './ProgressRunnable.js';
 import { ProgressCanvas } from './ProgressCanvas.js';

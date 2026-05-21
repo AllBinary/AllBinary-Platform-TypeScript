@@ -46,7 +46,7 @@ import { PreLogUtil } from '../../../../../org/allbinary/logic/communication/log
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TouchScreenFactory } from './TouchScreenFactory.js';
 import { TouchScreenTypesFactory } from './TouchScreenTypesFactory.js';

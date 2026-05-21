@@ -50,7 +50,7 @@ import { NullUtil } from '../../../../org/allbinary/logic/NullUtil.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class LineAnimation extends Animation implements ColorCompositeInterface, PositionInterface {

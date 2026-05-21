@@ -76,7 +76,7 @@ import { Memory } from '../../../org/allbinary/system/Memory.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         // MIDlet methods not overridden are final
 export class AllBinaryMidlet extends MIDlet implements CommandListener {

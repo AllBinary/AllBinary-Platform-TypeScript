@@ -42,7 +42,7 @@ import { CollidableCompositeLayer } from '../../../../org/allbinary/game/layer/C
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CollidableBaseBehavior } from './CollidableBaseBehavior.js';
 import { CollidableInterfaceCompositeInterface } from './CollidableInterfaceCompositeInterface.js';

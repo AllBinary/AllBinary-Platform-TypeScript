@@ -48,7 +48,7 @@ import { CommonStrings } from '../../../../../../../../org/allbinary/string/Comm
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoObjectConfigGeneratorFactoryInterface } from './TransformInfoObjectConfigGeneratorFactoryInterface.js';
 import { StoreFileGenerator } from './StoreFileGenerator.js';

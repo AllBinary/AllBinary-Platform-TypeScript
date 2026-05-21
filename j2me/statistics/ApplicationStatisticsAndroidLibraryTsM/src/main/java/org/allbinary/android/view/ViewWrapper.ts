@@ -40,7 +40,7 @@ import { View } from '../../../../android/view/View.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { BaseViewWrapper } from './BaseViewWrapper.js';
 

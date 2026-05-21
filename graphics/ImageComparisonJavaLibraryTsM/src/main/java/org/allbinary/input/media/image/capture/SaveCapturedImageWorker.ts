@@ -56,7 +56,7 @@ import { TimeDelayHelper } from '../../../../../../org/allbinary/time/TimeDelayH
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { CapturedImageWorkerResultsListener } from './CapturedImageWorkerResultsListener.js';
 import { CapturedImageWorkerResultsEvent } from './CapturedImageWorkerResultsEvent.js';

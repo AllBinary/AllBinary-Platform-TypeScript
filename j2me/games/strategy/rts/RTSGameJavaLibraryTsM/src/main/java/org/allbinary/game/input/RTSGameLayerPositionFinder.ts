@@ -44,7 +44,7 @@ import { DropCellPositionHistory } from '../../../../org/allbinary/media/graphic
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { LayerPositionFinderInterface } from './LayerPositionFinderInterface.js';
 

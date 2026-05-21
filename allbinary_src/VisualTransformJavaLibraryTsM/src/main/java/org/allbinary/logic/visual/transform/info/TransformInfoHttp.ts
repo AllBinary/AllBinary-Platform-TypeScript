@@ -68,7 +68,7 @@ import { TransformInfoObjectConfig } from '../../../../../../org/allbinary/logic
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfo } from './TransformInfo.js';
 import { TransformInfoHttpInterface } from './TransformInfoHttpInterface.js';

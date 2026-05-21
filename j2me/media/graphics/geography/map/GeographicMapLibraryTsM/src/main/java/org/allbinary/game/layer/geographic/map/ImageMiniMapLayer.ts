@@ -54,7 +54,7 @@ import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { MiniMapLayer } from './MiniMapLayer.js';
 

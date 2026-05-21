@@ -46,7 +46,7 @@ import { AllBinaryGameLayerManager } from '../../../../../org/allbinary/game/lay
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { AllBinaryGameCanvasInterface } from './AllBinaryGameCanvasInterface.js';
 

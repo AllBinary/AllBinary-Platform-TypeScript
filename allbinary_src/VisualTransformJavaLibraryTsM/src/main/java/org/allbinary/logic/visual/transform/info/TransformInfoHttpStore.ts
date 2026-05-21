@@ -60,7 +60,7 @@ import { StringMaker } from '../../../../../../org/allbinary/logic/string/String
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { TransformInfoHttp } from './TransformInfoHttp.js';
 import { TransformInfoHttpStoreInterface } from './TransformInfoHttpStoreInterface.js';

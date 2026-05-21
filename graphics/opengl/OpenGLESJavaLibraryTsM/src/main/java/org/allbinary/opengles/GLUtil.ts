@@ -48,7 +48,7 @@ import { OpenGLCapabilities } from '../../../org/allbinary/graphics/opengles/Ope
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { Math } from './Math.js';
 

@@ -40,7 +40,7 @@ import { EventObject } from '../../../../../java/util/EventObject.js';
 
 
 
-
+                                        
         //Current folder imports from return types, extended types, and scope (deduplicated)
         
 export class AllBinaryEventObject extends EventObject {
