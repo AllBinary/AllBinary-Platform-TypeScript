@@ -30,7 +30,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
       
@@ -74,7 +74,7 @@ export class ImageArrayBaseRotationAnimation extends RotationAnimation {
 
     private readonly originalImageArray: Image[]
 
-    private imageArray: Image[] = NullCanvas.NULL_IMAGE_ARRAY;
+    private imageArray: Image[] = NullImage.NULL_IMAGE_ARRAY;
 
     private currentImage: Image
 

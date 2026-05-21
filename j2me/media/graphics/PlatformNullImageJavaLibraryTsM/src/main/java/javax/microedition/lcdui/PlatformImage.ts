@@ -44,7 +44,7 @@ import { NullUtil } from '../../../org/allbinary/logic/NullUtil.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { NullCanvas } from './NullCanvas.js';
+        import { NullImage } from './NullImage.js';
 import { Image } from './Image.js';
 import { Graphics } from './Graphics.js';
 //PlatformNullImageJavaLibrary
@@ -58,7 +58,7 @@ export class PlatformImage
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullCanvas.NULL_IMAGE;
+                        return NullImage.NULL_IMAGE;
     
 }
 

@@ -32,7 +32,7 @@ import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { NullGL10 } from '../../../../org/allbinary/device/NullGL10.js';
       
@@ -179,7 +179,7 @@ height= textureSize;
         //mutex.withLock
         
 
-                        if(image != NullCanvas.NULL_IMAGE)
+                        if(image != NullImage.NULL_IMAGE)
                         
                                     {
                                     this.list.add(image);
@@ -217,7 +217,7 @@ height= textureSize;
         //mutex.withLock
         
 
-                        if(image != NullCanvas.NULL_IMAGE)
+                        if(image != NullImage.NULL_IMAGE)
                         
                                     {
                                     this.list.add(image);

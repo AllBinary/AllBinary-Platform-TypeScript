@@ -28,7 +28,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { AnimationBehavior } from '../../../../org/allbinary/animation/AnimationBehavior.js';
       
@@ -62,7 +62,7 @@ import { CircularIndexUtil } from '../../../../org/allbinary/util/CircularIndexU
 export class ImageArrayAnimation extends IndexedAnimation {
         
 
-    private imageArray: Image[] = NullCanvas.NULL_IMAGE_ARRAY;
+    private imageArray: Image[] = NullImage.NULL_IMAGE_ARRAY;
 
     private totalFrames: number= 0
 

@@ -28,7 +28,7 @@ import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js
       
 import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
       
 import { Anchor } from '../../../../../../org/allbinary/graphics/Anchor.js';
       
@@ -61,7 +61,7 @@ import { ViewPosition } from '../../../../../../org/allbinary/view/ViewPosition.
 export class ImageMiniMapLayer extends MiniMapLayer {
         
 
-    private image: Image = NullCanvas.NULL_IMAGE;
+    private image: Image = NullImage.NULL_IMAGE;
 public constructor (geographicMapInterface: BasicGeographicMap, viewPosition: ViewPosition){
             super(geographicMapInterface, viewPosition);
                     

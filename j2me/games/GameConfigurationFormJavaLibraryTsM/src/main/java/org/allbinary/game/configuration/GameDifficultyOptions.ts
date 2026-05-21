@@ -32,7 +32,7 @@ import { ChoiceGroup } from '../../../../javax/microedition/lcdui/ChoiceGroup.js
       
 import { CommandListener } from '../../../../javax/microedition/lcdui/CommandListener.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { GameCommandsFactory } from '../../../../org/allbinary/game/commands/GameCommandsFactory.js';
       
@@ -175,7 +175,7 @@ this.append(choiceGroup);
 ;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullCanvas.NULL_IMAGE_ARRAY);
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);
 ;
     
 
@@ -197,7 +197,7 @@ index < size; index++)
 this.logUtil!.putF(new StringMaker().
                             append(NAME)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
-choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
+choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
     
 }
 

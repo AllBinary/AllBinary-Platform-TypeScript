@@ -647,7 +647,7 @@ this.unPauseAppBackground(false);
                         if(GameMidletEventHandler.getInstance()!.getEventListenerInterfaceListP()!.size() == 0)
                         
                                     {
-                                    this.exit(true);
+                                    this.exitProgress(true);
     
 
                                     }
@@ -661,7 +661,7 @@ GameMidletEventHandler.getInstance()!.fireEvent(new DemoGameMidletEvent(this, De
                         if(command == gameCommandsFactory!.EXIT_WITHOUT_PROGRESS_COMMAND)
                         
                                     {
-                                    this.exit(false);
+                                    this.exitProgress(false);
     
 
                                     }
@@ -1332,7 +1332,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, this.midletStrings!.COMMA
                         if(command != GameCommandsFactory.getInstance()!.EXIT_COMMAND)
                         
                                     {
-                                    this.exit(false);
+                                    this.exitProgress(false);
     
 
                                     }

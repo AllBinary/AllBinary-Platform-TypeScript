@@ -30,7 +30,7 @@ import { ChoiceGroup } from '../../../../../javax/microedition/lcdui/ChoiceGroup
       
 import { Item } from '../../../../../javax/microedition/lcdui/Item.js';
       
-import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
       
 import { GameConfigurationGauge } from '../../../../../org/allbinary/game/configuration/GameConfigurationGauge.js';
       
@@ -95,7 +95,7 @@ export class GameFeatureFormUtil
 ;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullCanvas.NULL_IMAGE_ARRAY);
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);
 ;
     
 
@@ -134,7 +134,7 @@ stringMaker!.delete(0, stringMaker!.length());
     
 this.logUtil!.putF(stringMaker!.append(name)!.append(ADD_CHOICE)!.append(gameFeature!.toString())!.toString(), this, GET_CHOICE_GROUP);
     
-choiceGroup!.append(gameFeature!.toString(), NullCanvas.NULL_IMAGE);
+choiceGroup!.append(gameFeature!.toString(), NullImage.NULL_IMAGE);
     
 
                         if(features.isFeature(gameFeature))

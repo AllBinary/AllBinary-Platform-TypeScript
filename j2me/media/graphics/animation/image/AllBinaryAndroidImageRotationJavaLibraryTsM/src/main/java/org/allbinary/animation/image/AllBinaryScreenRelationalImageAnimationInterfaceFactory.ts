@@ -26,7 +26,7 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { GameFeatureImageCacheFactory } from '../../../../org/allbinary/image/GameFeatureImageCacheFactory.js';
       
@@ -66,7 +66,7 @@ import { ImageAnimation } from './ImageAnimation.js';
 export class AllBinaryScreenRelationalImageAnimationInterfaceFactory extends BaseImageAnimationFactory {
         
 
-    private lastImage: Image = NullCanvas.NULL_IMAGE;
+    private lastImage: Image = NullImage.NULL_IMAGE;
 public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFactory){
             super(image, PrimitiveIntUtil.getArrayInstance(), 0, 0, 0, 0, animationBehaviorFactory);
                     
@@ -74,7 +74,7 @@ public constructor (image: Image, animationBehaviorFactory: AnimationBehaviorFac
                             //For kotlin this is before the body of the constructor.
                     
 
-                        if(this.lastImage != NullCanvas.NULL_IMAGE)
+                        if(this.lastImage != NullImage.NULL_IMAGE)
                         
                                     {
                                     

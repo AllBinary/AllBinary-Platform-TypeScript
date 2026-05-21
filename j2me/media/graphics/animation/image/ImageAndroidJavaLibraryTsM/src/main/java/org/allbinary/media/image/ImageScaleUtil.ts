@@ -34,7 +34,7 @@ import { Matrix } from '../../../../android/graphics/Matrix.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { Anchor } from '../../../../org/allbinary/graphics/Anchor.js';
       
@@ -238,7 +238,7 @@ this.scaleYBasicArrayList!.add(scaleY);
             
     getScaledImage(imageCache: ImageCache, originalImage: Image, scaleX: number, scaleY: number, width: number, height: number, cached: boolean): Image{
 
-    var image: Image = NullCanvas.NULL_IMAGE;
+    var image: Image = NullImage.NULL_IMAGE;
 ;
     
 

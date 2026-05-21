@@ -12,7 +12,7 @@
         
 import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
       
 import { BasicColor } from '../../../../../org/allbinary/graphics/color/BasicColor.js';
       
@@ -54,7 +54,7 @@ public constructor (label: string, image: Image, layout: number, altText: string
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullCanvas.NULL_IMAGE;
+                        return NullImage.NULL_IMAGE;
     
 }
 

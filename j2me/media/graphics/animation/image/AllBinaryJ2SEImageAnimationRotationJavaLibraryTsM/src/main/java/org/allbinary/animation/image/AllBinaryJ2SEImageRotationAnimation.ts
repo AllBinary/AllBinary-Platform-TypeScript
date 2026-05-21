@@ -30,7 +30,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { DisposalUtil } from '../../../../org/allbinary/DisposalUtil.js';
       
@@ -275,11 +275,11 @@ this.updateImage();
     updateImage(){
 this.imageRotationUtil!.rotateImage(this.originalImageArray[0]!, this.twoImages[this.bufferedImageIndex]!, this.angleInfo!.getAngle() +90);
     
-this.alphaProcessor!.updateAlpha(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP);
+this.alphaProcessor!.updateAlpha(this.imageModifierUtil, NullImage.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.alphaP);
     
-this.setColorProcessor!.updateColor(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor);
+this.setColorProcessor!.updateColor(this.imageModifierUtil, NullImage.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.basicColor);
     
-this.changeColorProcessor!.updateColor(this.imageModifierUtil, NullCanvas.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP);
+this.changeColorProcessor!.updateColor(this.imageModifierUtil, NullImage.NULL_IMAGE, this.twoImages[this.bufferedImageIndex]!, 0, this.changeBasicColorP);
     
 this.swap();
     

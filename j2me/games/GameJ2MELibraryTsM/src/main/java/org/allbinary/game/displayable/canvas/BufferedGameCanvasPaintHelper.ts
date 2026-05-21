@@ -32,6 +32,8 @@ import { Image } from '../../../../../javax/microedition/lcdui/Image.js';
       
 import { NullCanvas } from '../../../../../javax/microedition/lcdui/NullCanvas.js';
       
+import { NullImage } from '../../../../../javax/microedition/lcdui/NullImage.js';
+      
 import { Anchor } from '../../../../../org/allbinary/graphics/Anchor.js';
       
 import { MyCanvas } from '../../../../../org/allbinary/graphics/displayable/MyCanvas.js';
@@ -69,7 +71,7 @@ export class BufferedGameCanvasPaintHelper extends ProcessPaintable {
 
     private readonly offScreenImage: Image[] = new Array(BufferedGameCanvasPaintHelper.MAX_IMAGES);
 
-    private previousImage: Image = NullCanvas.NULL_IMAGE;
+    private previousImage: Image = NullImage.NULL_IMAGE;
 
     private readonly circularIndexUtil: CircularIndexUtil = CircularIndexUtil.createInstance(BufferedGameCanvasPaintHelper.MAX_IMAGES)!;
 

@@ -2,7 +2,7 @@
         /*
                 *  
                 *  AllBinary Open License Version 1 
-                *  Copyright (c) 2022 AllBinary 
+                *  Copyright (c) 2025 AllBinary 
                 *   
                 *  By agreeing to this license you and any business entity you represent are 
                 *  legally bound to the AllBinary Open License Version 1 legal agreement. 
@@ -18,14 +18,10 @@
 
 
 
-            import { Object } from '../../../../java/lang/Object.js';
+            import { Object } from '../../../java/lang/Object.js';
 
 
         
-import { Image } from '../../../../javax/microedition/lcdui/Image.js';
-      
-import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
-      
 
 
 
@@ -44,21 +40,16 @@ import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        
-export class PlatformBitmapBase
+        import { Image } from './Image.js';
+
+export class NullImage
             extends Object
          {
         
 
-    public getImage(): Image{
+    public static readonly NULL_IMAGE_ARRAY: Image[] = [];
 
-
-
-                        //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullImage.NULL_IMAGE;
-    
-}
-
+    public static readonly NULL_IMAGE: Image = new Image();
 
 }
                 

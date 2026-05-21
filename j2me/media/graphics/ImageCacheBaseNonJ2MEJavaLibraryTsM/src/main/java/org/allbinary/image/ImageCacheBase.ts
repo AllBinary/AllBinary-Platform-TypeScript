@@ -32,7 +32,7 @@ import { Hashtable } from '../../../java/util/Hashtable.js';
       
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
       
 import { LogUtil } from '../../../org/allbinary/logic/communication/log/LogUtil.js';
       
@@ -135,7 +135,7 @@ this.availableListOfList[index]= new BasicArrayListD();
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullCanvas.NULL_IMAGE;
+                        return NullImage.NULL_IMAGE;
     
 
                                     }
@@ -243,7 +243,7 @@ index < size; index++)
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return NullCanvas.NULL_IMAGE;
+                        return NullImage.NULL_IMAGE;
     
 }
 

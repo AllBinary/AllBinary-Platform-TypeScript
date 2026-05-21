@@ -30,7 +30,7 @@ import { GL10 } from '../../../../javax/microedition/khronos/opengles/GL10.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { PlatformBitmapBase } from '../../../../org/allbinary/platform/graphics/PlatformBitmapBase.js';
       
@@ -70,7 +70,7 @@ export class OpenGLESImage
          implements OpenGLSurfaceChangedInterface {
         
 
-    public static readonly NULL_OPENGL_IMAGE: OpenGLESImage = new OpenGLESImage(NullCanvas.NULL_IMAGE, PlatformBitmapBaseFactory.NULL_PLATFORM_BITMAP_BASE_FACTORY, PlatformTextureBaseFactory.NULL_PLATFORM_TEXTURE_BASE_FACTORY);
+    public static readonly NULL_OPENGL_IMAGE: OpenGLESImage = new OpenGLESImage(NullImage.NULL_IMAGE, PlatformBitmapBaseFactory.NULL_PLATFORM_BITMAP_BASE_FACTORY, PlatformTextureBaseFactory.NULL_PLATFORM_TEXTURE_BASE_FACTORY);
 
     public static readonly texture2dList: BasicArrayList = new BasicArrayListD();
 

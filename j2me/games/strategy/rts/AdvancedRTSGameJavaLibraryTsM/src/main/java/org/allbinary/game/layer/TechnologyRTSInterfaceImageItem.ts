@@ -28,7 +28,7 @@ import { Graphics } from '../../../../javax/microedition/lcdui/Graphics.js';
       
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { ABCustomImageItem } from '../../../../org/allbinary/graphics/form/item/ABCustomImageItem.js';
       
@@ -113,7 +113,7 @@ this.rtsInterface= rtsInterface;
 ;
     
 
-                        if(image != NullCanvas.NULL_IMAGE)
+                        if(image != NullImage.NULL_IMAGE)
                         
                                     {
                                     imageHeight= image.getHeight();

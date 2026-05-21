@@ -26,7 +26,7 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
       
@@ -67,7 +67,7 @@ export class AllBinaryFlickerAndroidImageRotationAnimationFactory
          implements AnimationInterfaceFactoryInterface {
         
 
-    private image: Image = NullCanvas.NULL_IMAGE;
+    private image: Image = NullImage.NULL_IMAGE;
 
     private readonly angleIncrement: number
 

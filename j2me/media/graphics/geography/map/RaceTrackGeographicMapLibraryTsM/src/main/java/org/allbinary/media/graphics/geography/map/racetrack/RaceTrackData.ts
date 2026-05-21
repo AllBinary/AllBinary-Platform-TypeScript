@@ -26,7 +26,7 @@
         
 import { Image } from '../../../../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../../../../javax/microedition/lcdui/NullImage.js';
       
 import { CellPosition } from '../../../../../../../org/allbinary/graphics/CellPosition.js';
       
@@ -56,9 +56,9 @@ export class RaceTrackData
          {
         
 
-    private tileSetImage: Image = NullCanvas.NULL_IMAGE;
+    private tileSetImage: Image = NullImage.NULL_IMAGE;
 
-    private miniTileSetImage: Image = NullCanvas.NULL_IMAGE;
+    private miniTileSetImage: Image = NullImage.NULL_IMAGE;
 
     private cellWidth: number = 0;
 

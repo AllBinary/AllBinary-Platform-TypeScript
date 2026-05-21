@@ -34,7 +34,7 @@ import { CommandListener } from '../../../../javax/microedition/lcdui/CommandLis
       
 import { Item } from '../../../../javax/microedition/lcdui/Item.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { StringItem } from '../../../../javax/microedition/lcdui/StringItem.js';
       
@@ -170,7 +170,7 @@ this.append(choiceGroup);
 ;
     
 
-    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullCanvas.NULL_IMAGE_ARRAY);
+    var choiceGroup: ChoiceGroup = new ChoiceGroup(name, option, StringUtil.getInstance()!.getArrayInstance(), NullImage.NULL_IMAGE_ARRAY);
 ;
     
 
@@ -192,7 +192,7 @@ index < size; index++)
 this.logUtil!.putF(new StringMaker().
                             append(ADDING_CHOICE)!.append(anyType!.toString())!.toString(), this, METHOD_NAME);
     
-choiceGroup!.append(anyType!.toString(), NullCanvas.NULL_IMAGE);
+choiceGroup!.append(anyType!.toString(), NullImage.NULL_IMAGE);
     
 }
 

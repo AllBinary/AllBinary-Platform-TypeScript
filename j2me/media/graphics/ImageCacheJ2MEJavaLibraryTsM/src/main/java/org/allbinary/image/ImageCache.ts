@@ -34,7 +34,7 @@ import { InputStream } from '../../../java/io/InputStream.js';
       
 import { Image } from '../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../javax/microedition/lcdui/NullImage.js';
       
 import { ResourceUtil } from '../../../org/allbinary/data/resource/ResourceUtil.js';
       
@@ -144,7 +144,7 @@ this.logUtil!.putF(new StringMaker().
 ;
     
 
-                        if(image == NullCanvas.NULL_IMAGE)
+                        if(image == NullImage.NULL_IMAGE)
                         
                                     {
                                     this.volume += width *height;
@@ -210,7 +210,7 @@ this.listOfList[foundIndex]!.add(image);
 ;
     
 
-                        if(image == NullCanvas.NULL_IMAGE)
+                        if(image == NullImage.NULL_IMAGE)
                         
                                     {
                                     

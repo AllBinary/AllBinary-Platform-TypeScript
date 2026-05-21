@@ -32,7 +32,7 @@ import { Graphics } from '../../../../../../javax/microedition/lcdui/Graphics.js
       
 import { Image } from '../../../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../../../javax/microedition/lcdui/NullImage.js';
       
 import { Activity } from '../../../../../../android/app/Activity.js';
       
@@ -133,7 +133,7 @@ AndroidBasicTitleProgressBar.background= background;
 
     private readonly IMAGE: Image[] = new Array(4);
 
-    private image: Image = NullCanvas.NULL_IMAGE;
+    private image: Image = NullImage.NULL_IMAGE;
 
     private animation: Animation = NullAnimationFactory.getFactoryInstance()!.getInstance(0)!;
  constructor (title: string, backgroundBasicColor: BasicColor, foregroundBasicColor: BasicColor){
@@ -159,7 +159,7 @@ DisplayChangeEventHandler.getInstance()!.addListenerInterface(this);
     var index: number = 0;
 index < size; index++)
         {
-this.IMAGE[index]= NullCanvas.NULL_IMAGE;
+this.IMAGE[index]= NullImage.NULL_IMAGE;
     
 }
 
@@ -540,7 +540,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
 ;
     
 
-                        if(image != NullCanvas.NULL_IMAGE)
+                        if(image != NullImage.NULL_IMAGE)
                         
                                     {
                                     
@@ -548,7 +548,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
                         
                                     {
                                     
-                        if(this.IMAGE[index] == NullCanvas.NULL_IMAGE)
+                        if(this.IMAGE[index] == NullImage.NULL_IMAGE)
                         
                                     {
                                     this.IMAGE[index]= ImageScaleUtil.getInstance()!.createImage2(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -20, image.getHeight(), false);
@@ -565,7 +565,7 @@ this.logUtil!.put(this.commonStrings!.EXCEPTION, this, "setValue", e);
 ;
     
 
-                        if(this.IMAGE[nextIndex] == NullCanvas.NULL_IMAGE)
+                        if(this.IMAGE[nextIndex] == NullImage.NULL_IMAGE)
                         
                                     {
                                     this.IMAGE[nextIndex]= ImageScaleUtil.getInstance()!.createImage2(ImageCacheFactory.getInstance(), image, lastWidth, image.getWidth(), lastHeight -28, image.getHeight(), false);
@@ -607,7 +607,7 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicT
 index < size; index++)
         {
 
-                        if(this.IMAGE[index] != NullCanvas.NULL_IMAGE)
+                        if(this.IMAGE[index] != NullImage.NULL_IMAGE)
                         
                                     {
                                     this.IMAGE[index]= preResourceImageUtil!.encapsulate(this.IMAGE[index]!);
@@ -649,7 +649,7 @@ this.image= GameFeatureImageCacheFactory.getInstance()!.getWithKey(AndroidBasicT
 index < size; index++)
         {
 
-                        if(this.IMAGE[index] != NullCanvas.NULL_IMAGE)
+                        if(this.IMAGE[index] != NullImage.NULL_IMAGE)
                         
                                     {
                                     preResourceImageUtil!.update(graphics, this.IMAGE[index]!);
@@ -666,7 +666,7 @@ index < size; index++)
             
     getImage(index: number): Image{
 
-    var image: Image = NullCanvas.NULL_IMAGE;
+    var image: Image = NullImage.NULL_IMAGE;
 ;
     
 

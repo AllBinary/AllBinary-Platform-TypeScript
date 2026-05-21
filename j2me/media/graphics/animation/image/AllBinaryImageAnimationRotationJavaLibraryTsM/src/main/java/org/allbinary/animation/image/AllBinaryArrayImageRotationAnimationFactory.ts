@@ -26,7 +26,7 @@
         
 import { Image } from '../../../../javax/microedition/lcdui/Image.js';
       
-import { NullCanvas } from '../../../../javax/microedition/lcdui/NullCanvas.js';
+import { NullImage } from '../../../../javax/microedition/lcdui/NullImage.js';
       
 import { Animation } from '../../../../org/allbinary/animation/Animation.js';
       
@@ -103,7 +103,7 @@ arrayImageRotationAnimationFactory!.initDXY(dx, dy);
 }
 
 
-    private imageArray: Image[] = NullCanvas.NULL_IMAGE_ARRAY;
+    private imageArray: Image[] = NullImage.NULL_IMAGE_ARRAY;
 
     private angleIncrement: number
 public constructor (image: Image, width: number, height: number, angleIncrement: number, animationBehaviorFactory: AnimationBehaviorFactory){
