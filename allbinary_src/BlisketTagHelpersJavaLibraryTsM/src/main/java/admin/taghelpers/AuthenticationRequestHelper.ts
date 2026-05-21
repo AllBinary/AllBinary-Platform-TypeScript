@@ -496,7 +496,7 @@ index < size; index++)
 ;
     
 
-                        if(userInterface!.getRole()!.getBasicUserRole()!. === nextRole)
+                        if(userInterface!.getRole()!.getBasicUserRole()! === nextRole)
                         
                                     {
                                     userInterface!.validateSession(this.weblisketSession as WeblisketSessionInterface);

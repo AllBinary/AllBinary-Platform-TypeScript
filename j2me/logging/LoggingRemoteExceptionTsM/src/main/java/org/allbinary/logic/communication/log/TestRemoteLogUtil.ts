@@ -75,7 +75,7 @@ public constructor (){
     var commonStrings: CommonStrings = CommonStrings.getInstance()!;
 ;
     
-this.logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Exception("Pretend Exception"));
+logUtil!.put(commonStrings!.EXCEPTION, "Test", "TestClass", new Exception("Pretend Exception"));
     
 }
 

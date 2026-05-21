@@ -363,7 +363,7 @@ masterGainFloatControl!.setValue(20 *Math.log10(volume));
 
     public update(event: LineEvent){
 
-                        if(event.getType()!. === LineEvent.Type.STOP)
+                        if(event.getType()! === LineEvent.Type.STOP)
                         
                                     {
                                     

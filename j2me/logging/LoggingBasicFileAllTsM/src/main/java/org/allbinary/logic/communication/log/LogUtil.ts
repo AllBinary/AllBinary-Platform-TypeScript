@@ -102,6 +102,12 @@ FileLog.put(specialMessage, anyType, functionName);
 }
 
 
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
+FileLog.put(specialMessage, className, functionName);
+    
+}
+
+
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 FileLog.put(specialMessage, anyType, functionName, exception as Throwable);
     

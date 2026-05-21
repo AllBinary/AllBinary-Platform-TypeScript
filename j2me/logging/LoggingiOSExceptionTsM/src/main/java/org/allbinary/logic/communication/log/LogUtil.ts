@@ -128,6 +128,10 @@ this.put(specialMessage, anyType, functionName, exception);
 }
 
 
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
+}
+
+
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
     var className: string = CommonStrings.getInstance()!.EMPTY;

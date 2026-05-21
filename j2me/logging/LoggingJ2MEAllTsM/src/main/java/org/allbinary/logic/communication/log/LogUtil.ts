@@ -127,6 +127,16 @@ console.log(this.LOG_SUCCESS + message);
 }
 
 
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
+
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
+;
+    
+console.log(this.LOG_SUCCESS + message);
+    
+}
+
+
     private readonly LOG_SUCCESS: string = "org.allbinary: ";
 
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){

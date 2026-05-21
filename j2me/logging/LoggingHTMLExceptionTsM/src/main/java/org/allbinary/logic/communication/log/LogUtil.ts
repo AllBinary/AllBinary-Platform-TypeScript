@@ -138,6 +138,16 @@ PlayN.log()!.debug(this.LOG_SUCCESS +message);
 }
 
 
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
+
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
+;
+    
+PlayN.log()!.debug(this.LOG_SUCCESS +message);
+    
+}
+
+
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
     var className: string = PreLogUtil.getClassName(anyType)!;

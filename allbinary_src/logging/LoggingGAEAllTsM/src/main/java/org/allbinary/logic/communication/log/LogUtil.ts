@@ -107,6 +107,12 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
 }
 
 
+    /*actual*/ public putFS(specialMessage: string, className: string, functionName: string){
+this.putS(specialMessage, className, functionName, NullUtil.getInstance()!.NULL_OBJECT);
+    
+}
+
+
     /*actual*/ public put(specialMessage: string, anyType: any = {}, functionName: string, exception: any = {}){
 
         try {
@@ -130,6 +136,39 @@ this.put(specialMessage, anyType, functionName, NullUtil.getInstance()!.NULL_OBJ
                                     }
                                 
 
+    var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
+;
+    
+
+                        if(exception != 
+                                    null
+                                )
+                        
+                                    {
+                                    this.logger.log(Level.SEVERE, message, exception);
+    
+
+                                    }
+                                
+                        else {
+                            this.logger.log(Level.INFO, message);
+    
+
+                        }
+                            
+
+                //: 
+} catch(e) 
+            {
+}
+
+}
+
+
+    /*actual*/ public putS(specialMessage: string, className: string, functionName: string, exception: any = {}){
+
+        try {
+            
     var message: string = this.logFormatUtil!.getS(className, functionName, specialMessage)!;
 ;
     
