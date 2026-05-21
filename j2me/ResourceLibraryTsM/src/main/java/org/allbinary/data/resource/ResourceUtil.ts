@@ -22,6 +22,8 @@
 
 
         
+            import { ClassLoader } from '../../../../java/lang/ClassLoader.js';
+        
             import { Exception } from '../../../../java/lang/Exception.js';
         
             import { Integer } from '../../../../java/lang/Integer.js';
@@ -56,8 +58,7 @@ import { CommonSeps } from '../../../../org/allbinary/string/CommonSeps.js';
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ClassLoader } from './ClassLoader.js';
-
+        
 export class ResourceUtil
             extends Object
          {

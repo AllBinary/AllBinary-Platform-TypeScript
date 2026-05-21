@@ -22,6 +22,8 @@
 
 
         
+            import { ClassLoader } from '../../../../../java/lang/ClassLoader.js';
+        
 
 
 
@@ -40,8 +42,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ClassLoader } from './ClassLoader.js';
-
+        
 export class NativeLibraryClassLoader extends ClassLoader {
         
 

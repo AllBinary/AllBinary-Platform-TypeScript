@@ -22,6 +22,8 @@
 
 
         
+            import { ClassLoader } from '../../../../../java/lang/ClassLoader.js';
+        
             import { Exception } from '../../../../../java/lang/Exception.js';
         
             import { System } from '../../../../../java/lang/System.js';
@@ -50,8 +52,7 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ClassLoader } from './ClassLoader.js';
-import { NativeLibraryClassLoader } from './NativeLibraryClassLoader.js';
+        import { NativeLibraryClassLoader } from './NativeLibraryClassLoader.js';
 
 export class NativeLibraryHelperWrapper
             extends Object
@@ -86,7 +87,7 @@ params[0]= this.getLibraryName();
     
 classes[0]= this.getLibraryName()!.constructor;
     
-this.loader= new NativeLibraryClassLoader(this.constructor.name.java.classLoader);
+this.loader= new NativeLibraryClassLoader(this.constructor.name);
     
 
     var myClass: Function = this.loader.loadClass("dynamic.NativeLibraryHelper")!;

@@ -22,6 +22,8 @@
 
 
         
+            import { ClassLoader } from '../../../../../../../java/lang/ClassLoader.js';
+        
             import { Exception } from '../../../../../../../java/lang/Exception.js';
         
 
@@ -42,8 +44,7 @@
 
 
         //Current folder imports from return types, extended types, and scope (deduplicated)
-        import { ClassLoader } from './ClassLoader.js';
-
+        
 export class ClassLoaderUtil
             extends Object
          {
@@ -53,7 +54,7 @@ export class ClassLoaderUtil
             
     public static getName(anyType: any = {}): string{
 
-    var classLoader: ClassLoader = anyType!.constructor.name.java.classLoader!;
+    var classLoader: ClassLoader = anyType!.constructor.name!;
 ;
     
 

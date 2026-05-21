@@ -22,6 +22,8 @@
 
 
         
+            import { ClassLoader } from '../../../../../java/lang/ClassLoader.js';
+        
             import { Exception } from '../../../../../java/lang/Exception.js';
         
             import { Thread } from '../../../../../java/lang/Thread.js';
@@ -68,7 +70,6 @@ import { CommonStrings } from '../../../../../org/allbinary/string/CommonStrings
         //Current folder imports from return types, extended types, and scope (deduplicated)
         import { SqlTypeStrings } from './SqlTypeStrings.js';
 import { SqlStrings } from './SqlStrings.js';
-import { ClassLoader } from './ClassLoader.js';
 
 export class AbSqlBasic
             extends Object

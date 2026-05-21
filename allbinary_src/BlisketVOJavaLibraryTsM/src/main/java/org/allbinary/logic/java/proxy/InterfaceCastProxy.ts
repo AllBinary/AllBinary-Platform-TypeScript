@@ -58,7 +58,7 @@ export class InterfaceCastProxy
 
 
                         //if statement needs to be on the same line and ternary does not work the same way.
-                        return Proxy.newProxyInstance(anyType!.constructor.name.java.classLoader, anyType!.constructor.name.getInterfaces(), new InterfaceCastProxy(anyType));;
+                        return Proxy.newProxyInstance(anyType!.constructor.name, anyType!.constructor.name.getInterfaces(), new InterfaceCastProxy(anyType));;
     
 }
 

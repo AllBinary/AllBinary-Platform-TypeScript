@@ -76,7 +76,7 @@ this.abeClientInformation= clientInformationFactory!.getInstance();
 }
 
 
-    exit(isProgress: boolean){
+    exitProgress(isProgress: boolean){
 
     var processor: Processor = MidletExitProcessorFactory.getInstance()!.getExitInstance(this)!;
 ;

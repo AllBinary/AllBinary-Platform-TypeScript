@@ -165,7 +165,7 @@ appUrlGlobals!.setWebappPath("G:/mnt/bc/mydev/work_automation/automation/run/");
     
 URLGLOBALS.init(appUrlGlobals);
     
-WebappClassLoaderInfo.setLoader(appUrlGlobals!.constructor.name.java.classLoader);
+WebappClassLoaderInfo.setLoader(appUrlGlobals!.constructor.name);
     
 java.awt.EventQueue.invokeLater(new class extends ARunnable
                                 {
