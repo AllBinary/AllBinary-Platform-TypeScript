@@ -22,6 +22,8 @@
 
 
         
+            import { Class } from '../../../../../../java/lang/Class.js';
+        
 import { ConstructorUtil } from '../../../../../../org/allbinary/logic/java/anyType/ConstructorUtil.js';
       
 import { InterfaceUtil } from '../../../../../../org/allbinary/logic/java/anyType/InterfaceUtil.js';

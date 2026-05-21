@@ -22,6 +22,8 @@
 
 
         
+            import { Class } from '../../../../java/lang/Class.js';
+        
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { Connection } from '../../../../java/sql/Connection.js';

@@ -8,6 +8,8 @@
 
 
         
+            import { Class } from '../../../java/lang/Class.js';
+        
             import { System } from '../../../java/lang/System.js';
         
 import { MathUtil } from '../../../org/allbinary/logic/math/MathUtil.js';

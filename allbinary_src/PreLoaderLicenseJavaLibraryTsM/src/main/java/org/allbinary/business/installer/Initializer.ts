@@ -22,6 +22,8 @@
 
 
         
+            import { Class } from '../../../../java/lang/Class.js';
+        
             import { Exception } from '../../../../java/lang/Exception.js';
         
 import { HashMap } from '../../../../java/util/HashMap.js';

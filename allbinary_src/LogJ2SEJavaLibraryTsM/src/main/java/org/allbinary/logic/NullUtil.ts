@@ -22,6 +22,8 @@
 
 
         
+            import { Class } from '../../../java/lang/Class.js';
+        
 import { HashMap } from '../../../java/util/HashMap.js';
       
 import { Hashtable } from '../../../java/util/Hashtable.js';

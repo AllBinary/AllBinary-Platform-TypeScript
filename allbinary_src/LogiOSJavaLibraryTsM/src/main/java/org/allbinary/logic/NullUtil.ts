@@ -22,6 +22,8 @@
 
 
         
+            import { Class } from '../../../java/lang/Class.js';
+        
 import { Hashtable } from '../../../java/util/Hashtable.js';
       
 import { Vector } from '../../../java/util/Vector.js';

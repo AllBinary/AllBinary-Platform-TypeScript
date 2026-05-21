@@ -8,6 +8,8 @@
 
 
         
+            import { Class } from '../../../../../java/lang/Class.js';
+        
             import { Exception } from '../../../../../java/lang/Exception.js';
         
 import { Activity } from '../../../../../android/app/Activity.js';

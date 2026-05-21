@@ -8,6 +8,8 @@
 
 
         
+            import { Class } from '../../../java/lang/Class.js';
+        
 
 
 

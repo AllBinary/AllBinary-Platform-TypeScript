@@ -22,6 +22,8 @@
 
 
         
+            import { Class } from '../../../../../../java/lang/Class.js';
+        
 import { CommonStrings } from '../../../../../../org/allbinary/string/CommonStrings.js';
       
 
